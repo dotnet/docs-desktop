@@ -1,5 +1,20 @@
 {
-  "docsets_to_publish": [],
+  "docsets_to_publish": [
+    {
+      "docset_name": "dotnet-desktop-guide",
+      "build_source_folder": "dotnet-desktop-guide",
+      "build_output_subfolder": "dotnet-desktop-guide",
+      "locale": "en-us",
+      "monikers": [],
+      "moniker_ranges": [],
+      "open_to_public_contributors": true,
+      "type_mapping": {
+        "Conceptual": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes"
+    }
+  ],
   "notification_subscribers": [
     "adegeo@microsoft.com"
   ],
