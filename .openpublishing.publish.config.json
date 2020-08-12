@@ -7,6 +7,9 @@
       "locale": "en-us",
       "monikers": [],
       "moniker_ranges": [],
+      "filemap_share_depots": [
+        "VS.dotnet-api-docs"
+      ],
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content"
