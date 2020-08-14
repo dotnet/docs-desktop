@@ -10,6 +10,10 @@
       "filemap_share_depots": [
         "VS.dotnet-api-docs"
       ],
+      "xref_query_tags": [
+        "/dotnet",
+        "/uwp/api"
+      ],
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content"
