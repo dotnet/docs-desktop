@@ -1,0 +1,87 @@
+{
+  "version": 3,
+  "configRevision": 2,
+
+  "issue": {
+    "opened": {
+      "processor-default": {
+        "labels-add": [ ":watch: Not Triaged" ]
+      },
+      "processor-meta-docs": {
+        "technology": {
+          "(?i)dotnet-wpf$": {
+            "labels-add": ":card_file_box: Technology - WPF"
+          },
+          "(?i)dotnet-winforms$": {
+            "labels-add": ":card_file_box: Technology - WinForms"
+          }
+        },
+        "contentsource": {
+          "(?i).*master\/docs\/framework\/wpf.*": {
+            "labels-add": ":books: Area - Framework,:card_file_box: Technology - WPF"
+          },
+          "(?i).*master\/docs\/framework\/winforms.*": {
+            "labels-add": ":books: Area - Framework,:card_file_box: Technology - WinForms"
+          },
+          "(?i).*master\/docs\/net\/wpf.*": {
+            "labels-add": ":books: Area - NET,:card_file_box: Technology - WPF"
+          },
+          "(?i).*master\/docs\/net\/winforms.*": {
+            "labels-add": ":books: Area - NET,:card_file_box: Technology - WinForms"
+          }
+        }
+      }
+    },
+    "closed": {
+      "processor-default": {
+        "labels-remove": "in-progress"
+      }
+    }
+  },
+  "pullrequest": {
+    "opened": {
+      "processor-default": {
+        "milestone-set": "![sprint]"
+      },
+      "processor-conditional": {
+        "type": "query",
+        "value": "PullRequest.base.ref != 'live'",
+        "processors": {
+          "processor-files": {
+            "changedfile": {
+              "(?i).*docs\/framework\/wpf.*": {
+                "labels-add": ":books: Area - Framework,:card_file_box: Technology - WPF"
+              },
+              "(?i).*docs\/framework\/winforms.*": {
+                "labels-add": ":books: Area - Framework,:card_file_box: Technology - WinForms"
+              },
+              "(?i).*docs\/net\/wpf.*": {
+                "labels-add": ":books: Area - NET,:card_file_box: Technology - WPF"
+              },
+              "(?i).*docs\/net\/winforms.*": {
+                "labels-add": ":books: Area - NET,:card_file_box: Technology - WinForms"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "comment": {
+    "created": {
+      "processor-comment": {
+        "body": {
+          "^#please-review$": {
+            "condition-1": {
+              "type": "query",
+              "value": "Issue.state == 'open' && Issue.user.id == Comment.user.id",
+              "actions": {
+                "labels-add": "changes-addressed"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

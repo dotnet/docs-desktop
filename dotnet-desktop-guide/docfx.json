@@ -24,6 +24,7 @@
       {
         "files": [
           "**/*.png",
+          "**/*.gif",
           "**/*.jpg"
         ],
         "exclude": [
@@ -41,9 +42,18 @@
     "globalMetadata": {
       "breadcrumb_path": "/dotnet/desktop/breadcrumb/toc.json",
       "extendBreadcrumb": true,
-      "feedback_system": "None"
+      "feedback_system": "GitHub",
+      "feedback_github_repo": "dotnet/docs-desktop",
+      "feedback_product_url": "https://developercommunity.visualstudio.com/spaces/61/index.html"
     },
-    "fileMetadata": {},
+    "fileMetadata": {
+      "titleSuffix": {
+        "framework/winforms/**/**.md": "Windows Forms .NET Framework",
+        "net/winforms/**/**.md": "Windows Forms .NET",
+        "framework/wpf/**/**.md": "WPF .NET Framework",
+        "net/wpf/**/**.md": "WPF .NET"
+      }
+    },
     "template": [],
     "dest": "dotnet-desktop-guide",
     "markdownEngineName": "markdig"
