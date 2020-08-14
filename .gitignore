@@ -1,8 +1,46 @@
-log/
-obj/
-_site/
-.optemp/
-_themes*/
-_repo.*/
+docs/_build/
+.idea/
+*.swp
+rebuild.cmd
 
+# Business Intelligence projects
+*.rdl.data
+*.bim.layout
+*.bim_*.settings
+
+_site/
+api/
+_themes/
+_themes.pdf/
+_csharplang/
+_vblang/
+log/
+.optemp/
 .openpublishing.buildcore.ps1
+# Spelling add-on file for Visual Studio Code.
+spell.json
+samples/framework/docker/MVCRandomAnswerGenerator/containerImage
+.DS_Store
+_dependentPackages/
+!/xml/System.IO.Log/
+!/xml/System.Net.Cache/
+
+# Visual Studio Code
+.vscode/
+!.vscode/extensions.json
+
+# Visual Studio 2019
+.vs
+
+# Windows thumbnail cache files
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+
+# Windows shortcuts
+*.lnk
+
+[Bb]in/
+[Oo]bj/
+*.sln
+*.user
