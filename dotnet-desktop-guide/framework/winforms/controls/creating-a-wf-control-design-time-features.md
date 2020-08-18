@@ -601,7 +601,7 @@ The `MarqueeControlLibrary` demonstrates a simple implementation of custom contr
 
 - License the `MarqueeControl`.
 
-- Control how your controls are serialized and how code is generated for them. For more information, see [Dynamic Source Code Generation and Compilation](../../reflection-and-codedom/dynamic-source-code-generation-and-compilation.md).
+- Control how your controls are serialized and how code is generated for them. For more information, see [Dynamic Source Code Generation and Compilation](https://docs.microsoft.com/dotnet/framework/reflection-and-codedom/dynamic-source-code-generation-and-compilation).
 
 ## See also
 

@@ -23,7 +23,7 @@ The .NET Framework provides classes for displaying Web pages, downloading Web co
  A managed wrapper class for the `WebBrowser` control that is included with Windows.  
   
 ## Related Sections  
- [Network Programming in the .NET Framework](../../network-programming/index.md)  
+ [Network Programming in the .NET Framework](https://docs.microsoft.com/dotnet/framework/network-programming/index)  
  An introduction to networking in the .NET Framework.  
   
  [Windows Forms Data Binding](../windows-forms-data-binding.md)  

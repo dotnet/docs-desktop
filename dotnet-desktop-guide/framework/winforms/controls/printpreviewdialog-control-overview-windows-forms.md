@@ -34,7 +34,7 @@ For apps running on the .NET Framework 4.5.2, you can add the following key to t
 
 If the `EnablePrintPreviewOptimization` key is set to any other value, or if the key is not present, the optimization is not applied.
 
-For apps running on the .NET Framework 4.6 or later versions, you can add the following switch to the [\<AppContextSwitchOverrides>](../../configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md) element in the [\<runtime>](../../configure-apps/file-schema/runtime/index.md) section of your app config file:
+For apps running on the .NET Framework 4.6 or later versions, you can add the following switch to the [\<AppContextSwitchOverrides>](https://docs.microsoft.com/dotnet/framework/configure-apps/file-schema/runtime/appcontextswitchoverrides-element) element in the [\<runtime>](https://docs.microsoft.com/dotnet/framework/configure-apps/file-schema/runtime/index) section of your app config file:
 
 ```xml
 <runtime >

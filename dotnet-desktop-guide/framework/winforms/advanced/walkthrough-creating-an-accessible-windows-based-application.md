@@ -28,7 +28,7 @@ This walkthrough will address the five accessibility requirements for the Certif
 
 For more information, see [Resources for Designing Accessible Applications](/visualstudio/ide/reference/resources-for-designing-accessible-applications).
 
-For information on supporting varying keyboard layouts, see [Best Practices for Developing World-Ready Applications](../../../standard/globalization-localization/best-practices-for-developing-world-ready-apps.md).
+For information on supporting varying keyboard layouts, see [Best Practices for Developing World-Ready Applications](https://docs.microsoft.com/dotnet/standard/globalization-localization/best-practices-for-developing-world-ready-apps).
 
 ## Creating the Project
 
@@ -285,7 +285,7 @@ In this application, no information is conveyed by sound alone. If you use sound
 
 #### To supply information by some other means than sound
 
-1. Make the title bar flash by using the Windows API function FlashWindow. For an example of how to call Windows API functions, see [Walkthrough: Calling Windows APIs](../../../visual-basic/programming-guide/com-interop/walkthrough-calling-windows-apis.md).
+1. Make the title bar flash by using the Windows API function FlashWindow. For an example of how to call Windows API functions, see [Walkthrough: Calling Windows APIs](https://docs.microsoft.com/dotnet/visual-basic/programming-guide/com-interop/walkthrough-calling-windows-apis).
 
     > [!NOTE]
     > The user may have the Windows SoundSentry service enabled, which will also cause the window to flash when the system sounds are played through the computer's built-in speaker.

@@ -44,5 +44,5 @@ As forms are the base unit of your application, it is essential that you give so
  [First look at deployment in Visual Studio](/visualstudio/deployment/deploying-applications-services-and-components)  
  Describes the process by which you distribute a finished application or component to be installed on other computers.  
   
- [Building Console Applications](../../standard/building-console-apps.md)  
+ [Building Console Applications](https://docs.microsoft.com/dotnet/standard/building-console-apps)  
  Describes the basics of creating a console application using the <xref:System.Console> class.

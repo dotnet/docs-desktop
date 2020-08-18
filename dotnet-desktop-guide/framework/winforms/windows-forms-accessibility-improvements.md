@@ -95,4 +95,4 @@ UI Automation support is enabled for controls at runtime but isn't used during d
 
 ## See also
 
-- [Accessibility Best Practices](../ui-automation/accessibility-best-practices.md).
+- [Accessibility Best Practices](https://docs.microsoft.com/dotnet/framework/ui-automation/accessibility-best-practices).

@@ -90,9 +90,9 @@ To add a WPF control to a Windows Form:
 
 Windows Forms and WPF are different technologies, but they are designed to interoperate closely. To provide richer appearance and behavior in your applications, try the following:
 
-- Host a Windows Forms control in a WPF page. For more information, see [Walkthrough: Hosting a Windows Forms Control in WPF](../../wpf/advanced/walkthrough-hosting-a-windows-forms-control-in-wpf.md).
+- Host a Windows Forms control in a WPF page. For more information, see [Walkthrough: Hosting a Windows Forms Control in WPF](https://docs.microsoft.com/dotnet/framework/wpf/advanced/walkthrough-hosting-a-windows-forms-control-in-wpf).
 
-- Apply Windows Forms visual styles to your WPF content. For more information, see [How to: Enable Visual Styles in a Hybrid Application](../../wpf/advanced/how-to-enable-visual-styles-in-a-hybrid-application.md).
+- Apply Windows Forms visual styles to your WPF content. For more information, see [How to: Enable Visual Styles in a Hybrid Application](https://docs.microsoft.com/dotnet/framework/wpf/advanced/how-to-enable-visual-styles-in-a-hybrid-application).
 
 - Change the style of your WPF content. For more information, see [Walkthrough: Styling WPF Content](walkthrough-styling-wpf-content.md).
 
@@ -100,6 +100,6 @@ Windows Forms and WPF are different technologies, but they are designed to inter
 
 - <xref:System.Windows.Forms.Integration.ElementHost>
 - <xref:System.Windows.Forms.Integration.WindowsFormsHost>
-- [Migration and Interoperability](../../wpf/advanced/migration-and-interoperability.md)
+- [Migration and Interoperability](https://docs.microsoft.com/dotnet/framework/wpf/advanced/migration-and-interoperability)
 - [Using WPF Controls](using-wpf-controls.md)
 - [Design XAML in Visual Studio](/visualstudio/xaml-tools/designing-xaml-in-visual-studio)

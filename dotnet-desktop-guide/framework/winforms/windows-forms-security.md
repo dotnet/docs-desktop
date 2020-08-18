@@ -33,19 +33,19 @@ Windows Forms features a security model that is code-based (security levels are 
  [General Security Policy Administration](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ed5htz45(v=vs.100))  
  Gives information about the administering the .NET Framework security policy and elevating permissions.  
   
- [Dangerous Permissions and Policy Administration](../misc/dangerous-permissions-and-policy-administration.md)  
+ [Dangerous Permissions and Policy Administration](https://docs.microsoft.com/dotnet/framework/misc/dangerous-permissions-and-policy-administration)  
  Discusses some of the.NET Framework permissions that can potentially allow the security system to be circumvented.  
   
- [Secure Coding Guidelines](../../standard/security/secure-coding-guidelines.md)  
+ [Secure Coding Guidelines](https://docs.microsoft.com/dotnet/standard/security/secure-coding-guidelines)  
  Links to topics that explain the best practices for securely writing code against the .NET Framework.  
   
  [Requesting Permissions](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/yd267cce(v=vs.100))  
  Discusses the use of attributes to let the runtime know what permissions your code needs to run.  
   
- [Key Security Concepts](../../standard/security/key-security-concepts.md)  
+ [Key Security Concepts](https://docs.microsoft.com/dotnet/standard/security/key-security-concepts)  
  Links to topics that cover the basic aspects of code security.  
   
- [Code Access Security Basics](../misc/code-access-security-basics.md)  
+ [Code Access Security Basics](https://docs.microsoft.com/dotnet/framework/misc/code-access-security-basics)  
  Discusses the basics of working with the .NET Framework run time security policy.  
   
  [Determining When to Modify Security Policy](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/xky659fc(v=vs.100))  

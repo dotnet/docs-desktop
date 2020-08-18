@@ -25,7 +25,7 @@ Rendering refers to the process of creating a visual representation on a user's 
 - The procedure for freeing graphics resources.  
   
 ## Drawing Functionality Provided by Control  
- The base class <xref:System.Windows.Forms.Control> provides drawing functionality through its <xref:System.Windows.Forms.Control.Paint> event. A control raises the <xref:System.Windows.Forms.Control.Paint> event whenever it needs to update its display. For more information about events in the .NET Framework, see [Handling and Raising Events](../../../standard/events/index.md).  
+ The base class <xref:System.Windows.Forms.Control> provides drawing functionality through its <xref:System.Windows.Forms.Control.Paint> event. A control raises the <xref:System.Windows.Forms.Control.Paint> event whenever it needs to update its display. For more information about events in the .NET Framework, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/index).  
   
  The event data class for the <xref:System.Windows.Forms.Control.Paint> event, <xref:System.Windows.Forms.PaintEventArgs>, holds the data needed for drawing a control — a handle to a graphics object and a rectangle object that represents the region to draw in. These objects are shown in bold in the following code fragment.  
   

@@ -34,5 +34,5 @@ Describes techniques for creating custom controls through design and inheritance
 
 ## Related sections
 
-[Client Applications](../../develop-client-apps.md)\
+[Client Applications](https://docs.microsoft.com/dotnet/framework/develop-client-apps)\
 Provides an overview of developing Windows-based applications.

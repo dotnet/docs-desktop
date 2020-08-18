@@ -61,7 +61,7 @@ Common tasks in application development are adding controls to and removing cont
   
 ### To remove controls from a collection programmatically  
   
-1. Remove the event handler from the event. In Visual Basic, use the [RemoveHandler Statement](../../../visual-basic/language-reference/statements/removehandler-statement.md) keyword; in C#, use the [-= operator](../../../csharp/language-reference/operators/subtraction-operator.md).  
+1. Remove the event handler from the event. In Visual Basic, use the [RemoveHandler Statement](https://docs.microsoft.com/dotnet/visual-basic/language-reference/statements/removehandler-statement) keyword; in C#, use the [-= operator](https://docs.microsoft.com/dotnet/csharp/language-reference/operators/subtraction-operator).  
   
 2. Use the `Remove` method to delete the desired control from the panel's `Controls` collection.  
   

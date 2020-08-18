@@ -26,7 +26,7 @@ The following code example demonstrates how to validate data entered by a user i
 - References to the System, System.Data, System.Windows.Forms and System.XML assemblies.  
   
 ## .NET Framework Security  
- Storing sensitive information, such as a password, within the connection string can affect the security of your application. Using Windows Authentication (also known as integrated security) is a more secure way to control access to a database. For more information, see [Protecting Connection Information](../../data/adonet/protecting-connection-information.md).  
+ Storing sensitive information, such as a password, within the connection string can affect the security of your application. Using Windows Authentication (also known as integrated security) is a more secure way to control access to a database. For more information, see [Protecting Connection Information](https://docs.microsoft.com/dotnet/framework/data/adonet/protecting-connection-information).  
   
 ## See also
 
@@ -35,4 +35,4 @@ The following code example demonstrates how to validate data entered by a user i
 - [Walkthrough: Validating Data in the Windows Forms DataGridView Control](walkthrough-validating-data-in-the-windows-forms-datagridview-control.md)
 - [Data Entry in the Windows Forms DataGridView Control](data-entry-in-the-windows-forms-datagridview-control.md)
 - [Walkthrough: Handling Errors that Occur During Data Entry in the Windows Forms DataGridView Control](handling-errors-that-occur-during-data-entry-in-the-datagrid.md)
-- [Protecting Connection Information](../../data/adonet/protecting-connection-information.md)
+- [Protecting Connection Information](https://docs.microsoft.com/dotnet/framework/data/adonet/protecting-connection-information)

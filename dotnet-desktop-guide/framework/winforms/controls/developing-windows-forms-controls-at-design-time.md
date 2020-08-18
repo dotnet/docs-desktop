@@ -18,7 +18,7 @@ manager: jillfra
 For control authors, the .NET Framework provides a wealth of control authoring technology. Authors are no longer limited to designing composite controls that act as a collection of preexisting controls. Through inheritance, you can create your own controls from preexisting composite controls or preexisting Windows Forms controls. You can also design your own controls that implement custom painting. These options enable a great deal of flexibility to the design and functionality of the visual interface. To take advantage of these features, you should be familiar with object-based programming concepts.
 
 > [!NOTE]
-> It is not necessary to have a thorough understanding of inheritance, but you may find it useful to refer to [Inheritance basics (Visual Basic)](~/docs/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics.md).
+> It is not necessary to have a thorough understanding of inheritance, but you may find it useful to refer to [Inheritance basics (Visual Basic)](https://docs.microsoft.com/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics).
 
 If you want to create custom controls to use on Web Forms, see [Developing Custom ASP.NET Server Controls](https://docs.microsoft.com/previous-versions/aspnet/zt27tfhy(v=vs.100)).
 
@@ -86,7 +86,7 @@ Shows how to diagnose and fix common issues that can occur when you author a cus
 [Developing Custom Windows Forms Controls with the .NET Framework](developing-custom-windows-forms-controls.md)\
 Discusses how to create your own custom controls with the .NET Framework.
 
-[Language Independence and Language-Independent Components](../../../standard/language-independence-and-language-independent-components.md)\
+[Language Independence and Language-Independent Components](https://docs.microsoft.com/dotnet/standard/language-independence-and-language-independent-components)\
 Introduces the common language runtime, which is designed to simplify the creation and use of components. An important aspect of this simplification is enhanced interoperability between components written using different programming languages. The Common Language Specification (CLS) makes it possible to create tools and components that work with multiple programming languages.
 
 [Walkthrough: Automatically Populating the Toolbox with Custom Components](walkthrough-automatically-populating-the-toolbox-with-custom-components.md)\

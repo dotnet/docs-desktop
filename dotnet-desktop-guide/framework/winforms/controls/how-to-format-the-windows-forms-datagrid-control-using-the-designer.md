@@ -87,7 +87,7 @@ The following procedure requires a **Windows Application** project with a form c
      With the **DataGridColumnStyle Collection Editor**, you can add and remove column styles, set display and layout properties, and set the mapping name and formatting strings for the data columns.
 
     > [!NOTE]
-    > For more information about formatting strings, see [Formatting Types](../../../standard/base-types/formatting-types.md).
+    > For more information about formatting strings, see [Formatting Types](https://docs.microsoft.com/dotnet/standard/base-types/formatting-types).
 
 ## See also
 

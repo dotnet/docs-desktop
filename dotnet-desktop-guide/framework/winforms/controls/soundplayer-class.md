@@ -47,4 +47,4 @@ The `SoundPlayer` class enables you to easily include sounds in your application
   
 ## See also
 
-- [My.Computer Object](../../../visual-basic/language-reference/objects/my-computer-object.md)
+- [My.Computer Object](https://docs.microsoft.com/dotnet/visual-basic/language-reference/objects/my-computer-object)

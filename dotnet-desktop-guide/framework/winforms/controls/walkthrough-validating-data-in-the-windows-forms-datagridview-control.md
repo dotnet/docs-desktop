@@ -45,7 +45,7 @@ In order to complete this walkthrough, you will need:
     This code example uses a `GetData` method that returns a populated <xref:System.Data.DataTable> object. Be sure that you set the `connectionString` variable to a value that is appropriate for your database.
 
     > [!IMPORTANT]
-    > Storing sensitive information, such as a password, within the connection string can affect the security of your application. Using Windows Authentication, also known as integrated security, is a more secure way to control access to a database. For more information, see [Protecting Connection Information](../../data/adonet/protecting-connection-information.md).
+    > Storing sensitive information, such as a password, within the connection string can affect the security of your application. Using Windows Authentication, also known as integrated security, is a more secure way to control access to a database. For more information, see [Protecting Connection Information](https://docs.microsoft.com/dotnet/framework/data/adonet/protecting-connection-information).
 
     [!code-csharp[System.Windows.Forms.DataGridViewDataValidation#30](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewDataValidation/CS/datavalidation.cs#30)]
     [!code-vb[System.Windows.Forms.DataGridViewDataValidation#30](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewDataValidation/VB/datavalidation.vb#30)]
@@ -93,4 +93,4 @@ This application gives you a basic understanding of the <xref:System.Windows.For
 - [Data Entry in the Windows Forms DataGridView Control](data-entry-in-the-windows-forms-datagridview-control.md)
 - [How to: Validate Data in the Windows Forms DataGridView Control](how-to-validate-data-in-the-windows-forms-datagridview-control.md)
 - [Walkthrough: Handling Errors that Occur During Data Entry in the Windows Forms DataGridView Control](handling-errors-that-occur-during-data-entry-in-the-datagrid.md)
-- [Protecting Connection Information](../../data/adonet/protecting-connection-information.md)
+- [Protecting Connection Information](https://docs.microsoft.com/dotnet/framework/data/adonet/protecting-connection-information)

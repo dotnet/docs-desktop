@@ -17,7 +17,7 @@ Windows Forms applications and controls can interoperate with unmanaged applicat
   
  These constraints also apply to the use of Windows Forms controls through Component Object Model COM interop. The use of a Windows Forms control through a COM callable wrapper (CCW) is supported only in Internet Explorer. For more information about COM interop, see  
   
- [COM Interop](../../../visual-basic/programming-guide/com-interop/index.md).  
+ [COM Interop](https://docs.microsoft.com/dotnet/visual-basic/programming-guide/com-interop/index).  
   
  The following table shows the available ActiveX hosting support for Windows Forms controls.  
   
@@ -52,12 +52,12 @@ Windows Forms applications and controls can interoperate with unmanaged applicat
 ## See also
 
 - [Windows Forms and Unmanaged Applications](windows-forms-and-unmanaged-applications.md)
-- [COM Interop](../../../visual-basic/programming-guide/com-interop/index.md)
-- [COM Interoperability in .NET Framework Applications](../../../visual-basic/programming-guide/com-interop/com-interoperability-in-net-framework-applications.md)
+- [COM Interop](https://docs.microsoft.com/dotnet/visual-basic/programming-guide/com-interop/index)
+- [COM Interoperability in .NET Framework Applications](https://docs.microsoft.com/dotnet/visual-basic/programming-guide/com-interop/com-interoperability-in-net-framework-applications)
 - [COM Interoperability Samples](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/cxcz83xf(v=vs.90))
-- [Aximp.exe (Windows Forms ActiveX Control Importer)](../../tools/aximp-exe-windows-forms-activex-control-importer.md)
-- [Exposing .NET Framework Components to COM](../../interop/exposing-dotnet-components-to-com.md)
-- [Packaging an Assembly for COM](../../interop/packaging-an-assembly-for-com.md)
-- [Registering Assemblies with COM](../../interop/registering-assemblies-with-com.md)
+- [Aximp.exe (Windows Forms ActiveX Control Importer)](https://docs.microsoft.com/dotnet/framework/tools/aximp-exe-windows-forms-activex-control-importer)
+- [Exposing .NET Framework Components to COM](https://docs.microsoft.com/dotnet/framework/interop/exposing-dotnet-components-to-co)
+- [Packaging an Assembly for COM](https://docs.microsoft.com/dotnet/framework/interop/packaging-an-assembly-for-co)
+- [Registering Assemblies with COM](https://docs.microsoft.com/dotnet/framework/interop/registering-assemblies-with-co)
 - [How to: Support COM Interop by Displaying a Windows Form with the ShowDialog Method](com-interop-by-displaying-a-windows-form-shadow.md)
 - [How to: Support COM Interop by Displaying Each Windows Form on Its Own Thread](how-to-support-com-interop-by-displaying-each-windows-form-on-its-own-thread.md)

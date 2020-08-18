@@ -90,7 +90,7 @@ For a complete listing of the code used in this example, see [How to: Run an Ope
 
 - Implement a form that reports progress as an asynchronous operation proceeds. For more information, see [How to: Implement a Form That Uses a Background Operation](how-to-implement-a-form-that-uses-a-background-operation.md).
 
-- Implement a class that supports the Asynchronous Pattern for Components. For more information, see [Implementing the Event-based Asynchronous Pattern](../../../standard/asynchronous-programming-patterns/implementing-the-event-based-asynchronous-pattern.md).
+- Implement a class that supports the Asynchronous Pattern for Components. For more information, see [Implementing the Event-based Asynchronous Pattern](https://docs.microsoft.com/dotnet/standard/asynchronous-programming-patterns/implementing-the-event-based-asynchronous-pattern).
 
 ## See also
 

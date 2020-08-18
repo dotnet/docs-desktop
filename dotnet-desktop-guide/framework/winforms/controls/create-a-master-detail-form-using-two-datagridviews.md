@@ -27,7 +27,7 @@ The following code example creates a master/detail form using two <xref:System.W
  References to the System, System.Data, System.Windows.Forms, and System.XML assemblies.  
   
 ## .NET Framework Security  
- Storing sensitive information, such as a password, within the connection string can affect the security of your application. Using Windows Authentication (also known as integrated security) is a more secure way to control access to a database. For more information, see [Protecting Connection Information](../../data/adonet/protecting-connection-information.md).  
+ Storing sensitive information, such as a password, within the connection string can affect the security of your application. Using Windows Authentication (also known as integrated security) is a more secure way to control access to a database. For more information, see [Protecting Connection Information](https://docs.microsoft.com/dotnet/framework/data/adonet/protecting-connection-information).  
   
 ## See also
 
@@ -35,4 +35,4 @@ The following code example creates a master/detail form using two <xref:System.W
 - <xref:System.Windows.Forms.BindingSource>
 - [Walkthrough: Creating a Master/Detail Form Using Two Windows Forms DataGridView Controls](creating-a-master-detail-form-using-two-datagridviews.md)
 - [Displaying Data in the Windows Forms DataGridView Control](displaying-data-in-the-windows-forms-datagridview-control.md)
-- [Protecting Connection Information](../../data/adonet/protecting-connection-information.md)
+- [Protecting Connection Information](https://docs.microsoft.com/dotnet/framework/data/adonet/protecting-connection-information)

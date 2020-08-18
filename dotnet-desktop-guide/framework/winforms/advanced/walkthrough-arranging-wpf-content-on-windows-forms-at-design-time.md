@@ -130,6 +130,6 @@ A WPF control hosted on a form has the same anchoring and docking behavior as ot
 - [How to: Anchor and Dock Child Controls in a TableLayoutPanel Control](../controls/how-to-anchor-and-dock-child-controls-in-a-tablelayoutpanel-control.md)
 - [How to: Align a Control to the Edges of Forms at Design Time](../controls/how-to-align-a-control-to-the-edges-of-forms-at-design-time.md)
 - [Walkthrough: Arranging Controls on Windows Forms Using Snaplines](../controls/walkthrough-arranging-controls-on-windows-forms-using-snaplines.md)
-- [Migration and Interoperability](../../wpf/advanced/migration-and-interoperability.md)
+- [Migration and Interoperability](https://docs.microsoft.com/dotnet/framework/wpf/advanced/migration-and-interoperability)
 - [Using WPF Controls](using-wpf-controls.md)
 - [Design XAML in Visual Studio](/visualstudio/xaml-tools/designing-xaml-in-visual-studio)

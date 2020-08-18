@@ -35,5 +35,5 @@ Windows Forms applications and controls can interoperate with unmanaged applicat
  Marshals calls from an unmanaged application to a form.  
   
 ## Related Sections  
- [Exposing .NET Framework Components to COM](../../interop/exposing-dotnet-components-to-com.md)  
+ [Exposing .NET Framework Components to COM](https://docs.microsoft.com/dotnet/framework/interop/exposing-dotnet-components-to-co)  
  Offers general information about how to use .NET Framework types in unmanaged applications.

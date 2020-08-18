@@ -146,17 +146,17 @@ Now that you have implemented a form that uses a <xref:System.ComponentModel.Bac
 
 - To debug your multithreaded application, see [How to: Use the Threads Window](/visualstudio/debugger/how-to-use-the-threads-window).
 
-- Implement your own component that supports the asynchronous programming model. For more information, see [Event-based Asynchronous Pattern Overview](../../../standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview.md).
+- Implement your own component that supports the asynchronous programming model. For more information, see [Event-based Asynchronous Pattern Overview](https://docs.microsoft.com/dotnet/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview).
 
     > [!CAUTION]
-    > When using multithreading of any sort, you potentially expose yourself to very serious and complex bugs. Consult the [Managed Threading Best Practices](../../../standard/threading/managed-threading-best-practices.md) before implementing any solution that uses multithreading.
+    > When using multithreading of any sort, you potentially expose yourself to very serious and complex bugs. Consult the [Managed Threading Best Practices](https://docs.microsoft.com/dotnet/standard/threading/managed-threading-best-practices) before implementing any solution that uses multithreading.
 
 ## See also
 
 - <xref:System.ComponentModel.BackgroundWorker?displayProperty=nameWithType>
-- [Managed Threading](../../../standard/threading/index.md)
-- [Managed Threading Best Practices](../../../standard/threading/managed-threading-best-practices.md)
-- [Event-based Asynchronous Pattern Overview](../../../standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview.md)
+- [Managed Threading](https://docs.microsoft.com/dotnet/standard/threading/index)
+- [Managed Threading Best Practices](https://docs.microsoft.com/dotnet/standard/threading/managed-threading-best-practices)
+- [Event-based Asynchronous Pattern Overview](https://docs.microsoft.com/dotnet/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview)
 - [How to: Implement a Form That Uses a Background Operation](how-to-implement-a-form-that-uses-a-background-operation.md)
 - [Walkthrough: Running an Operation in the Background](walkthrough-running-an-operation-in-the-background.md)
 - [BackgroundWorker Component](backgroundworker-component.md)

@@ -58,4 +58,4 @@ This topic summarizes information about the `DataGridView` control and the class
 
 - [DataGridView Control Overview](datagridview-control-overview-windows-forms.md)
 - [DataGridView Control Architecture](datagridview-control-architecture-windows-forms.md)
-- [Protecting Connection Information](../../data/adonet/protecting-connection-information.md)
+- [Protecting Connection Information](https://docs.microsoft.com/dotnet/framework/data/adonet/protecting-connection-information)

@@ -97,7 +97,7 @@ For more information about debugging, see [Debugging in Visual Studio](/visualst
 
 ## Event Is Raised Twice in Inherited Control or Component
 
-This is likely due to a duplicated `Handles` clause. For more information, see [Troubleshooting Inherited Event Handlers in Visual Basic](~/docs/visual-basic/programming-guide/language-features/events/troubleshooting-inherited-event-handlers.md).
+This is likely due to a duplicated `Handles` clause. For more information, see [Troubleshooting Inherited Event Handlers in Visual Basic](https://docs.microsoft.com/dotnet/visual-basic/programming-guide/language-features/events/troubleshooting-inherited-event-handlers).
 
 ## Design-Time Error: "Failed to Create Component 'Component Name'"
 

@@ -28,5 +28,5 @@ Windows Forms includes a variety of mouse events and additional support for cust
  Describes how to implement drag-and-drop behavior.  
   
 ## Related Sections  
- [Accessing the Mouse](../../visual-basic/developing-apps/programming/computer-resources/accessing-the-mouse.md)  
+ [Accessing the Mouse](https://docs.microsoft.com/dotnet/visual-basic/developing-apps/programming/computer-resources/accessing-the-mouse)  
  Lists topics for accessing the mouse using Visual Basic.

@@ -83,6 +83,6 @@ You can assign different WPF content to an <xref:System.Windows.Forms.Integratio
 
 - <xref:System.Windows.Forms.Integration.ElementHost>
 - <xref:System.Windows.Forms.Integration.WindowsFormsHost>
-- [Migration and Interoperability](../../wpf/advanced/migration-and-interoperability.md)
+- [Migration and Interoperability](https://docs.microsoft.com/dotnet/framework/wpf/advanced/migration-and-interoperability)
 - [Using WPF Controls](using-wpf-controls.md)
 - [Design XAML in Visual Studio](/visualstudio/xaml-tools/designing-xaml-in-visual-studio)

@@ -29,13 +29,13 @@ This complete code example retrieves data from a database to populate a DataGrid
 
 This example requires:
 
-- Access to a Northwind SQL Server sample database. For more information about installing the Northwind sample database, see [Get the sample databases for ADO.NET code samples](../../data/adonet/sql/linq/downloading-sample-databases.md).
+- Access to a Northwind SQL Server sample database. For more information about installing the Northwind sample database, see [Get the sample databases for ADO.NET code samples](https://docs.microsoft.com/dotnet/framework/data/adonet/sql/linq/downloading-sample-databases).
 
 - References to the System, System.Windows.Forms, System.Data, and System.Xml assemblies.  
 
-To build and run this example, paste the code into the *Form1* code file in a new Windows Forms project. For information about building from the C# or Visual Basic command line, see [Command-line building with csc.exe](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md) or [Build from the command line](../../../visual-basic/reference/command-line-compiler/building-from-the-command-line.md).  
+To build and run this example, paste the code into the *Form1* code file in a new Windows Forms project. For information about building from the C# or Visual Basic command line, see [Command-line building with csc.exe](https://docs.microsoft.com/dotnet/csharp/language-reference/compiler-options/command-line-building-with-csc-exe) or [Build from the command line](https://docs.microsoft.com/dotnet/visual-basic/reference/command-line-compiler/building-from-the-command-line).  
   
-Populate the `connectionString` variable in the example with the values for your Northwind SQL Server sample database connection. Windows Authentication, also called integrated security, is a more secure way to connect to the database than storing a password in the connection string. For more information about connection security, see [Protect connection information](../../data/adonet/protecting-connection-information.md).  
+Populate the `connectionString` variable in the example with the values for your Northwind SQL Server sample database connection. Windows Authentication, also called integrated security, is a more secure way to connect to the database than storing a password in the connection string. For more information about connection security, see [Protect connection information](https://docs.microsoft.com/dotnet/framework/data/adonet/protecting-connection-information).  
 
 [!code-csharp[System.Windows.Forms.DataGridViewBoundEditable](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewBoundEditable/CS/datagridviewboundeditable.cs)]
 [!code-vb[System.Windows.Forms.DataGridViewBoundEditable](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewBoundEditable/VB/datagridviewboundeditable.vb)]  
@@ -46,4 +46,4 @@ Populate the `connectionString` variable in the example with the values for your
 - <xref:System.Windows.Forms.DataGridView.DataSource%2A?displayProperty=nameWithType>
 - <xref:System.Windows.Forms.BindingSource>
 - [Display data in the Windows Forms DataGridView control](displaying-data-in-the-windows-forms-datagridview-control.md)
-- [Protect connection information](../../data/adonet/protecting-connection-information.md)
+- [Protect connection information](https://docs.microsoft.com/dotnet/framework/data/adonet/protecting-connection-information)

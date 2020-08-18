@@ -71,5 +71,5 @@ public void Spin(Widget driver)
   
 ## See also
 
-- [Events](../../../standard/events/index.md)
+- [Events](https://docs.microsoft.com/dotnet/standard/events/index)
 - [Properties in Windows Forms Controls](properties-in-windows-forms-controls.md)

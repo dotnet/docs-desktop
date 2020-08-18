@@ -82,6 +82,6 @@ public class PaintEventArgs : EventArgs {
   
 ## See also
 
-- [Events](../../../standard/events/index.md)
+- [Events](https://docs.microsoft.com/dotnet/standard/events/index)
 - [Rendering a Windows Forms Control](rendering-a-windows-forms-control.md)
 - [Defining an Event](defining-an-event-in-windows-forms-controls.md)

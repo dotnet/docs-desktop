@@ -28,7 +28,7 @@ The following code example shows how to use virtual mode in the <xref:System.Win
 - Access to a server with the Northwind SQL Server sample database installed.  
   
 ## .NET Framework Security  
- Storing sensitive information, such as a password, within the connection string can affect the security of your application. Using Windows Authentication (also known as integrated security) is a more secure way to control access to a database. For more information, see [Protecting Connection Information](../../data/adonet/protecting-connection-information.md).  
+ Storing sensitive information, such as a password, within the connection string can affect the security of your application. Using Windows Authentication (also known as integrated security) is a more secure way to control access to a database. For more information, see [Protecting Connection Information](https://docs.microsoft.com/dotnet/framework/data/adonet/protecting-connection-information).  
   
 ## See also
 
