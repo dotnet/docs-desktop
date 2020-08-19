@@ -1,6 +1,6 @@
 - name: Index
   href: index.yml
 - name: Framework Content
-  href: framework/winforms/toc.yml
+  href: framework/winforms/
 - name: .NET 5 Content
   href: net5/winforms/index.md
