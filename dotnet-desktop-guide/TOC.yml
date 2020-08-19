@@ -1,6 +1,6 @@
 - name: Index
   href: index.yml
-- name: Framework Content
-  href: framework/winforms/
-- name: .NET 5 Content
-  href: net5/winforms/index.md
+- name: Windows Forms for .NET Framework
+  href: framework/winforms/?view=netframework-4-8
+- name: Windows Forms for .NET 5
+  href: net5/winforms/index.md?view=net-5-0
