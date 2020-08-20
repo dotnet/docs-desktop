@@ -146,11 +146,11 @@
     "groups": {
       "framework": {
         "dest": "framework-dest",
-        "moniker_range": ">= netframework-4.8"
+        "moniker_range": "netframework-4.8"
       },
       "net": {
         "dest": "net-dest",
-        "moniker_range": ">= net-5.0"
+        "moniker_range": "net-5.0"
       }
     }
   }
