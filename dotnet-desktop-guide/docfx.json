@@ -146,7 +146,7 @@
     "groups": {
       "framework": {
         "dest": "framework-dest",
-        "moniker_range": "netdesktop-4.8"
+        "moniker_range": "netframeworkdesktop-4.8"
       },
       "net": {
         "dest": "net-dest",
