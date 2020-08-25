@@ -7,6 +7,48 @@
           "**/*.yml"
         ],
         "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "_themes/**",
+          "_themes.pdf/**",
+          "**/docfx.json",
+          "_repo.en-us/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices.md",
+          "samples/**/*.*"
+        ],
+        "group": "framework",
+        "src": "framework"
+      },
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "_themes/**",
+          "_themes.pdf/**",
+          "**/docfx.json",
+          "_repo.en-us/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices.md",
+          "samples/**/*.*"
+        ],
+        "group": "net",
+        "src": "net5"
+      },
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "exclude": [
           "framework",
           "net5",
 
@@ -25,6 +67,42 @@
       }
     ],
     "resource": [
+      {
+        "files": [
+          "**/*.png",
+          "**/*.gif",
+          "**/*.jpg"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "_themes/**",
+          "_themes.pdf/**",
+          "**/docfx.json",
+          "_repo.en-us/**",
+          "samples/**/*.*"
+        ],
+        "group": "framework",
+        "src": "framework"
+      },
+      {
+        "files": [
+          "**/*.png",
+          "**/*.gif",
+          "**/*.jpg"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "_themes/**",
+          "_themes.pdf/**",
+          "**/docfx.json",
+          "_repo.en-us/**",
+          "samples/**/*.*"
+        ],
+        "group": "net",
+        "src": "net5"
+      },
       {
         "files": [
           "**/*.png",
@@ -64,6 +142,16 @@
     },
     "template": [],
     "dest": "dotnet-desktop-guide",
-    "markdownEngineName": "markdig"
+    "markdownEngineName": "markdig",
+    "groups": {
+      "framework": {
+        "dest": "framework-dest",
+        "moniker_range": "netframeworkdesktop-4.8"
+      },
+      "net": {
+        "dest": "net-dest",
+        "moniker_range": "netdesktop-5.0"
+      }
+    }
   }
 }
