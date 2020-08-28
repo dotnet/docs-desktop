@@ -1,8 +1,0 @@
-items:
-- name: Docs
-  tocHref: /
-  topicHref: /
-  items:
-  - name: .NET Desktop Guide
-    tocHref: /dotnet/desktop
-    topicHref: /dotnet/desktop/index
