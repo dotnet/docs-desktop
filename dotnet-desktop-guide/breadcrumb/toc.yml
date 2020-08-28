@@ -1,3 +1,15 @@
+items:
 - name: Docs
   tocHref: /
-  topicHref: /dotnet
+  topicHref: /
+  items:
+  - name: .NET Desktop Guide
+    tocHref: /dotnet/desktop
+    topicHref: /dotnet/desktop/index
+    items:
+    - name: .NET Framework
+      tocHref: /dotnet/desktop/
+      topicHref: /dotnet/framework/index
+    - name: .NET 5 and .NET Core 3.1
+      tocHref: /dotnet/desktop/
+      topicHref: /dotnet/net/index
