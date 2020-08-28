@@ -14,7 +14,7 @@ metadata:
 landingContent:
 
   # Card
-  - title: Learn about WinForms for .NET 5 (and .NET Core)
+  - title: WinForms for .NET 5 (and .NET Core)
     linkLists:
       - linkListType: overview
         links:
@@ -23,29 +23,14 @@ landingContent:
           - text: Getting Started
             url: net/winforms/windows-forms-overview.md?view=netdesktop-5.0
 
-  - title: Learn about WPF for .NET 5 (and .NET Core)
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Windows Presentation Foundation overview
-            url: net/wpf/windows-forms-overview.md?view=netdesktop-5.0
-          - text: Getting Started
-            url: net/wpf/windows-forms-overview.md?view=netdesktop-5.0
-
-  - title: Learn about WinForms for .NET Framework
+  - title: WinForms for .NET Framework
     linkLists:
       - linkListType: overview
         links:
           - text: Windows Forms overview
             url: framework/winforms/windows-forms-overview.md?view=netframeworkdesktop-4.8
-          - text: Getting Started
-            url: framework/winforms/getting-started-with-windows-forms.md?view=netframeworkdesktop-4.8
-
-  - title: Learn about WPF for .NET Framework
-    linkLists:
-      - linkListType: overview
+      - linkListType: get-started
         links:
-          - text: Windows Presentation Foundation overview
-            url: framework/wpf/windows-forms-overview.md?view=netframeworkdesktop-4.8
-          - text: Getting Started
-            url: framework/wpf/windows-forms-overview.md?view=netframeworkdesktop-4.8
+          - text: Create a WinForms app
+            url: framework/winforms/how-to-create-a-windows-forms-application-from-the-command-line.md?view=netframeworkdesktop-4.8
+            
