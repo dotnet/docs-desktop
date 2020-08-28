@@ -19,33 +19,33 @@ landingContent:
       - linkListType: overview
         links:
           - text: Windows Forms overview
-            url: net/winforms/windows-forms-overview.md
+            url: net/winforms/index.md?view=netdesktop-5.0
           - text: Getting Started
-            url: net/winforms/windows-forms-overview.md
+            url: net/winforms/windows-forms-overview.md?view=netdesktop-5.0
 
   - title: Learn about WPF for .NET 5 (and .NET Core)
     linkLists:
       - linkListType: overview
         links:
           - text: Windows Presentation Foundation overview
-            url: net/wpf/windows-forms-overview.md
+            url: net/wpf/windows-forms-overview.md?view=netdesktop-5.0
           - text: Getting Started
-            url: net/wpf/windows-forms-overview.md
+            url: net/wpf/windows-forms-overview.md?view=netdesktop-5.0
 
   - title: Learn about WinForms for .NET Framework
     linkLists:
       - linkListType: overview
         links:
           - text: Windows Forms overview
-            url: framework/winforms/windows-forms-overview.md
+            url: framework/winforms/windows-forms-overview.md?view=netframeworkdesktop-4.8
           - text: Getting Started
-            url: framework/winforms/getting-started-with-windows-forms.md
+            url: framework/winforms/getting-started-with-windows-forms.md?view=netframeworkdesktop-4.8
 
   - title: Learn about WPF for .NET Framework
     linkLists:
       - linkListType: overview
         links:
           - text: Windows Presentation Foundation overview
-            url: framework/wpf/windows-forms-overview.md
+            url: framework/wpf/windows-forms-overview.md?view=netframeworkdesktop-4.8
           - text: Getting Started
-            url: framework/wpf/windows-forms-overview.md
+            url: framework/wpf/windows-forms-overview.md?view=netframeworkdesktop-4.8

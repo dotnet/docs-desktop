@@ -8,9 +8,7 @@ items:
     topicHref: /dotnet/desktop/index
     items:
     - name: .NET Framework
-      tocHref: /dotnet/desktop/
-      topicHref: /dotnet/framework/index
       items:
       - name: Windows Forms
-        tocHref: /dotnet/desktop/
-        topicHref: /dotnet/framework/winforms/index
+        tocHref: /dotnet/desktop/winforms
+        topicHref: /dotnet/desktop/winforms/index
