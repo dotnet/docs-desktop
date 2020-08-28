@@ -101,7 +101,7 @@
           "samples/**/*.*"
         ],
         "group": "net",
-        "src": "net5"
+        "src": "net"
       },
       {
         "files": [
