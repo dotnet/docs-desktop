@@ -5,8 +5,7 @@
       "build_source_folder": "dotnet-desktop-guide",
       "build_output_subfolder": "dotnet-desktop-guide",
       "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
+      "moniker_ranges": ["netframeworkdesktop-4.8", "netdesktop-5.0"],
       "filemap_share_depots": [
         "VS.dotnet-api-docs"
       ],
