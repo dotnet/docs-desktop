@@ -41,7 +41,7 @@
           "samples/**/*.*"
         ],
         "group": "net",
-        "src": "net5"
+        "src": "net"
       },
       {
         "files": [
@@ -50,7 +50,7 @@
         ],
         "exclude": [
           "framework",
-          "net5",
+          "net",
 
           "**/obj/**",
           "**/includes/**",
