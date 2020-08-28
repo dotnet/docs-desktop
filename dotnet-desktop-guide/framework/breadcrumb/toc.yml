@@ -12,3 +12,10 @@ items:
       - name: Windows Forms
         tocHref: /dotnet/desktop/winforms
         topicHref: /dotnet/desktop/winforms/index
+        items:
+        - name: Enhance Windows Forms applications
+          tocHref: /dotnet/desktop/winforms/advanced/
+          topicHref: /dotnet/desktop/winforms/advanced/index
+        - name: Controls
+          tocHref: /dotnet/desktop/winforms/controls/
+          topicHref: /dotnet/desktop/winforms/controls/index
