@@ -1,4 +1,4 @@
 - name: Windows Forms for .NET Framework
-  href: framework/winforms/toc.yml?view=netframework-4-8
+  href: https://docs.microsoft.com/dotnet/desktop/winforms/?view=netframework-4-8
 - name: Windows Forms for .NET 5
-  href: net/winforms/toc.yml?view=netdesktop-5.0
+  href: https://docs.microsoft.com/dotnet/desktop/winforms/?view=netdesktop-5.0
