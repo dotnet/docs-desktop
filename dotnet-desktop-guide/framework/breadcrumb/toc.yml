@@ -3,19 +3,23 @@ items:
   tocHref: /
   topicHref: /
   items:
-  - name: .NET Desktop Guide
-    tocHref: /dotnet/desktop
-    topicHref: /dotnet/desktop/index
-    items:
-    - name: .NET Framework
+    - name: .NET
+      tocHref: /dotnet/
+      topicHref: /dotnet/index
       items:
-      - name: Windows Forms
-        tocHref: /dotnet/desktop/winforms
-        topicHref: /dotnet/desktop/winforms/index
+      - name: Desktop Guide
+        tocHref: /dotnet/desktop
+        topicHref: /dotnet/desktop/index
         items:
-        - name: Enhance Windows Forms applications
-          tocHref: /dotnet/desktop/winforms/advanced/
-          topicHref: /dotnet/desktop/winforms/advanced/index
-        - name: Controls
-          tocHref: /dotnet/desktop/winforms/controls/
-          topicHref: /dotnet/desktop/winforms/controls/index
+        - name: .NET Framework
+          items:
+          - name: Windows Forms
+            tocHref: /dotnet/desktop/winforms
+            topicHref: /dotnet/desktop/winforms/index
+            items:
+            - name: Enhance Windows Forms applications
+              tocHref: /dotnet/desktop/winforms/advanced/
+              topicHref: /dotnet/desktop/winforms/advanced/index
+            - name: Controls
+              tocHref: /dotnet/desktop/winforms/controls/
+              topicHref: /dotnet/desktop/winforms/controls/index
