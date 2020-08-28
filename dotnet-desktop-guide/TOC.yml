@@ -1,7 +1,4 @@
-items:
-- name: Index
-  href: index.yml
 - name: Windows Forms for .NET Framework
-  href: /dotnet/desktop/winforms/?view=netframeworkdesktop-4.8
+  href: framework/winforms/toc.yml?view=netframework-4-8
 - name: Windows Forms for .NET 5
-  href: /dotnet/desktop/winforms/?view=netdesktop-5.0
+  href: net/winforms/toc.yml?view=netdesktop-5.0
