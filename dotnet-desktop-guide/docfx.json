@@ -41,7 +41,7 @@
           "samples/**/*.*"
         ],
         "group": "net",
-        "src": "net5"
+        "src": "net"
       },
       {
         "files": [
@@ -50,7 +50,7 @@
         ],
         "exclude": [
           "framework",
-          "net5",
+          "net",
 
           "**/obj/**",
           "**/includes/**",
@@ -101,7 +101,7 @@
           "samples/**/*.*"
         ],
         "group": "net",
-        "src": "net5"
+        "src": "net"
       },
       {
         "files": [
@@ -127,7 +127,7 @@
     "externalReference": [],
     "globalMetadata": {
       "breadcrumb_path": "/dotnet/desktop/breadcrumb/toc.json",
-      "extendBreadcrumb": true,
+      "extendBreadcrumb": false,
       "feedback_system": "GitHub",
       "feedback_github_repo": "dotnet/docs-desktop",
       "feedback_product_url": "https://developercommunity.visualstudio.com/spaces/61/index.html"

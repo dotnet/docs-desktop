@@ -1,6 +1,8 @@
-- name: Index
-  href: index.yml
-- name: Windows Forms for .NET Framework
-  href: framework/winforms/?view=netframework-4-8
-- name: Windows Forms for .NET 5
-  href: net5/winforms/index.md?view=net-5.0
+items:
+- name: Windows Forms
+  expanded: true
+  items:
+  - name: ".NET 5 (and .NET Core 3.1)"
+    href: https://docs.microsoft.com/dotnet/desktop/winforms/?view=netdesktop-5.0
+  - name: .NET Framework
+    href: https://docs.microsoft.com/dotnet/desktop/winforms/?view=netframework-4-8
