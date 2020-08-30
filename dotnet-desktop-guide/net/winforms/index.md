@@ -2,11 +2,12 @@
 title: Windows Forms
 titleSuffix: ".NET"
 description: Learn what it takes to get started with Windows Forms and how to enhance your Windows Forms applications.
-ms.date: "10/31/2020"
+ms.date: "09/30/2020"
 helpviewer_keywords: 
   - "Windows Forms"
   - "user interface"
   - "user interface [Windows Forms], forms"
+  - ".NET 5"
 ---
 
 # Windows Forms for .NET 5 and .NET Core 3.1
