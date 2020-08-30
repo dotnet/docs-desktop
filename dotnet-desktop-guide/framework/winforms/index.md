@@ -1,6 +1,6 @@
 ---
 title: Windows Forms
-titleSuffix: ""
+titleSuffix: ".NET Framework"
 description: Learn what it takes to get started with Windows Forms and how to enhance your Windows Forms applications.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "user interface [Windows Forms], forms"
 ms.assetid: 627df1e9-b254-41af-bbac-9a4f02810c54
 ---
-# Windows Forms
+# Windows Forms for .NET Framework
 As forms are the base unit of your application, it is essential that you give some thought to their function and design. A form is ultimately a blank slate that you, as a developer, enhance with controls to create a user interface and with code to manipulate data. To that end, Visual Studio provides you with an integrated development environment (IDE) to aid in writing code, as well as a rich control set written with the .NET Framework. By complementing the functionality of these controls with your code, you can easily and quickly develop the solutions you need.  
   
 ## In This Section  

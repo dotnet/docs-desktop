@@ -130,7 +130,9 @@
       "extendBreadcrumb": false,
       "feedback_system": "GitHub",
       "feedback_github_repo": "dotnet/docs-desktop",
-      "feedback_product_url": "https://developercommunity.visualstudio.com/spaces/61/index.html"
+      "feedback_product_url": "https://developercommunity.visualstudio.com/spaces/61/index.html",
+      "author": "adegeo",
+      "ms.author": "adegeo"
     },
     "fileMetadata": {
       "titleSuffix": {
