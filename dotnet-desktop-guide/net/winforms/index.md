@@ -23,8 +23,8 @@ There are two implementations of Windows Forms:
 
     Even though this version of .NET is cross-platform, Windows Forms remains a Windows-only technology.
 
-01. The [.NET Framework 4 implementation](../../framework/winforms/index.md) that's supported by Visual Studio 2019 and Visual Studio 2017.
+01. The [.NET Framework 4 implementation](../../framework/winforms/index.md?view=netframeworkdesktop-4.8) that's supported by Visual Studio 2019 and Visual Studio 2017.
 
     .NET Framework 4 is a Windows-only version of .NET and is considered a Windows Operating System component. This version of Windows Forms is distributed with .NET Framework.
 
-This guide is written for Windows Forms on .NET 5 (and .NET Core 3.1) and later versions. For more information about the .NET Framework version of Windows Forms, see [Windows Forms for .NET Framework](../../framework/winforms/index.md).
+This guide is written for Windows Forms on .NET 5 (and .NET Core 3.1) and later versions. For more information about the .NET Framework version of Windows Forms, see [Windows Forms for .NET Framework](../../framework/winforms/index.md?view=netframeworkdesktop-4.8).

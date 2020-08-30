@@ -20,8 +20,6 @@ landingContent:
         links:
           - text: Windows Forms overview
             url: net/winforms/index.md?view=netdesktop-5.0
-          - text: Getting Started
-            url: net/winforms/windows-forms-overview.md?view=netdesktop-5.0
 
   - title: WinForms for .NET Framework
     linkLists:
