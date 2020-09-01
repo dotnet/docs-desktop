@@ -1,0 +1,62 @@
+### YamlMime:Landing
+
+title: .NET Desktop Guide for Windows Forms
+summary: Learn about using Windows Forms on Windows with either .NET Framework, .NET 5 and above, or .NET Core 3.1.
+
+metadata:
+  title: Windows Forms for .NET documentation
+  description: Learn about using Windows Forms (WinForms), a graphical user interface for Windows and .NET.
+  ms.topic: landing-page
+  ms.date: 08/30/2020
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart
+#               reference | sample | tutorial | video | whats-new
+
+landingContent:
+
+  # Card
+  - title: WinForms for .NET Framework
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Windows Forms overview
+            url: windows-forms-overview.md
+      - linkListType: get-started
+        links:
+          - text: Get started with Windows Forms Designer
+            url: /visualstudio/designers/walkthrough-windows-forms-designer
+          - text: Create a WinForms app from the command-line
+            url: how-to-create-a-windows-forms-application-from-the-command-line.md
+            
+  - title: Controls
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Developing your own controls
+            url: controls/developing-windows-forms-controls-at-design-time.md
+          - text: Developing controls
+            url: controls/developing-windows-forms-controls-at-design-time.md
+      - linkListType: how-to-guide
+        links:
+          - text: Add Controls to Windows Forms
+            url: controls/how-to-add-controls-to-windows-forms.md
+          - text: Position controls on Windows Forms
+            url: controls/how-to-position-controls-on-windows-forms.md
+      - linkListType: reference
+        links:
+          - text: Windows Forms Controls by Function
+            url: controls/windows-forms-controls-by-function.md
+
+  - title: Events
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Events in Windows Forms
+            url: events-overview-windows-forms.md
+          - text: Event handlers in Windows Forms
+            url: event-handlers-overview-windows-forms.md
+      - linkListType: concept
+        links:
+          - text: Order in which events are raised
+            url: order-of-events-in-windows-forms.md
+            

@@ -1,0 +1,18 @@
+items:
+- name: Docs
+  tocHref: /
+  topicHref: /
+  items:
+    - name: .NET
+      tocHref: /dotnet/
+      topicHref: /dotnet/index
+      items:
+      - name: Desktop Guide
+        tocHref: /dotnet/desktop
+        topicHref: /dotnet/desktop/index
+        items:
+        - name: ".NET 5 (and .NET Core 3.1)"
+          items:
+          - name: Windows Forms
+            tocHref: /dotnet/desktop/winforms
+            topicHref: /dotnet/desktop/winforms/index
