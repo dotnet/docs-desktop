@@ -1,13 +1,13 @@
 ### YamlMime:Landing
 
-title: .NET Desktop Guide for Windows
-summary: Learn about using Windows Forms and WPF on Windows with either .NET Framework, .NET 5 and above, or .NET Core 3.1.
+title: .NET Desktop Guide for Windows Forms
+summary: Learn about using Windows Forms on Windows with either .NET Framework, .NET 5 and above, or .NET Core 3.1.
 
 metadata:
-  title: Windows Forms and Windows WPF for .NET documentation
-  description: Learn about using Windows Forms (WinForms) and Windows Presentation Foundation (WPF), graphical user interfaces for Windows and .NET.
+  title: Windows Forms for .NET documentation
+  description: Learn about using Windows Forms (WinForms), a graphical user interface for Windows and .NET.
   ms.topic: landing-page
-  ms.date: 08/25/2020
+  ms.date: 08/30/2020
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart
 #               reference | sample | tutorial | video | whats-new
