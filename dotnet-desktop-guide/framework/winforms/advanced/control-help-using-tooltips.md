@@ -16,4 +16,4 @@ You can use the <xref:System.Windows.Forms.ToolTip> component to display a brief
 - [How to: Display Pop-up Help](how-to-display-pop-up-help.md)
 - [ToolTip Component](../controls/tooltip-component-windows-forms.md)
 - [Integrating User Help in Windows Forms](integrating-user-help-in-windows-forms.md)
-- [Windows Forms](../index.md)
+- [Windows Forms](../index.yml)

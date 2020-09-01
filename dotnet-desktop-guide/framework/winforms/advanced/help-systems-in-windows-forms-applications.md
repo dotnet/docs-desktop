@@ -23,4 +23,4 @@ One of the most important courtesies you, as a developer of applications, can fu
 - [HelpProvider Component](../controls/helpprovider-component-windows-forms.md)
 - [ToolTip Component](../controls/tooltip-component-windows-forms.md)
 - [Windows Forms Overview](../windows-forms-overview.md)
-- [Windows Forms](../index.md)
+- [Windows Forms](../index.yml)

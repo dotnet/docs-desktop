@@ -8,13 +8,17 @@ ms.date: "08/30/2020"
 
 Welcome to the Desktop Guide. The Desktop Guide is a set of documentation for .NET-based Windows UI technologies including Windows Presentation Foundation (WPF) and Windows Forms (WinForms). The Desktop Guide will cover both .NET 5 (and .NET Core 3.1) and later versions, along with .NET Framework.
 
-Historically, the .NET Framework documentation related to WPF and WinForms has been included in the [.NET Documentation](/dotnet). Windows Forms content has been migrated to this guide, while the migration of WPF content is ongoing.
+Historically, the .NET Framework-based documentation for WPF and WinForms has been included in the [.NET Documentation](/dotnet). Windows Forms content has been migrated to this guide, while the migration of WPF content is ongoing.
 
 ## Windows Forms
 
-There are two implementations of Windows Forms, and therefore two different sets of documentation:
+There are two implementations of Windows Forms, each with it's own documentation:
 
-Windows Forms is supported on .NET 5 (and .NET Core 3.1) and .NET Framework.
+01. The [.NET Framework 4 implementation](framework/winforms/index.yml?view=netframeworkdesktop-4.8) that's supported by Visual Studio 2019 and Visual Studio 2017.
+
+    .NET Framework 4 is a Windows-only version of .NET and is considered a Windows Operating System component. This version of Windows Forms is distributed with .NET Framework.
+
+    The documentation for this version of Windows Forms is available [here](framework/winforms/index.yml?view=netframeworkdesktop-4.8).
 
 01. The open-source implementation hosted on [GitHub](https://github.com/dotnet/winforms).
 
@@ -23,12 +27,6 @@ Windows Forms is supported on .NET 5 (and .NET Core 3.1) and .NET Framework.
     Even though this version of .NET is cross-platform, Windows Forms remains a Windows-only technology.
 
     The documentation for this version of Windows Forms is in progress and not yet available.
-
-01. The [.NET Framework 4 implementation](framework/winforms/index.md?view=netframeworkdesktop-4.8) that's supported by Visual Studio 2019 and Visual Studio 2017.
-
-    .NET Framework 4 is a Windows-only version of .NET and is considered a Windows Operating System component. This version of Windows Forms is distributed with .NET Framework.
-
-    The documentation for this version of Windows Forms is available [here](framework/winforms/index.md?view=netframeworkdesktop-4.8).
 
 ## Windows Presentation Foundation
 

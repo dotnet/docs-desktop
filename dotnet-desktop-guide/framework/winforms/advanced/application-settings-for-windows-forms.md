@@ -37,4 +37,4 @@ Documents the settings to enable High DPI support in Windows Forms Application s
 
 ## See also
 
-- [Windows Forms](../index.md)
+- [Windows Forms](../index.yml)
