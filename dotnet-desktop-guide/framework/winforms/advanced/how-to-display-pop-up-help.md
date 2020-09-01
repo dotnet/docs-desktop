@@ -38,4 +38,4 @@ You can also use the <xref:System.Windows.Forms.HelpProvider> component to link 
 
 - [Control Help Using ToolTips](control-help-using-tooltips.md)
 - [Integrating User Help in Windows Forms](integrating-user-help-in-windows-forms.md)
-- [Windows Forms](../index.md)
+- [Windows Forms](../index.yml)

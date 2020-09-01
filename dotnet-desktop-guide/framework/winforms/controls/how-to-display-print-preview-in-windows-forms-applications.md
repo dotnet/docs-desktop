@@ -81,4 +81,4 @@ You can use the <xref:System.Windows.Forms.PrintPreviewDialog> control to enable
 - [PrintDocument Component](printdocument-component-windows-forms.md)
 - [PrintPreviewDialog Control](printpreviewdialog-control-windows-forms.md)
 - [Windows Forms Print Support](../advanced/windows-forms-print-support.md)
-- [Windows Forms](../index.md)
+- [Windows Forms](../index.yml)

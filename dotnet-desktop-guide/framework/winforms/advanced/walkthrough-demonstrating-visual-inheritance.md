@@ -157,4 +157,4 @@ Inheritance for user controls works in much the same way. Open a new class libra
 
 - [How to: Inherit Windows Forms](how-to-inherit-windows-forms.md)
 - [Windows Forms Visual Inheritance](windows-forms-visual-inheritance.md)
-- [Windows Forms](../index.md)
+- [Windows Forms](../index.yml)

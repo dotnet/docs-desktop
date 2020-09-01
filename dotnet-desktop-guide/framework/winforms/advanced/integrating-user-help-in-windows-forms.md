@@ -35,5 +35,5 @@ An essential, but often overlooked, aspect of building Windows-based application
  [Windows Forms Overview](../windows-forms-overview.md)  
  Explains the basics of Windows Forms.  
   
- [Windows Forms](../index.md)  
+ [Windows Forms](../index.yml)  
  Provides an overview of Windows Forms.
