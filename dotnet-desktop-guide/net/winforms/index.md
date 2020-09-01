@@ -29,3 +29,16 @@ There are two implementations of Windows Forms:
     .NET Framework 4 is a Windows-only version of .NET and is considered a Windows Operating System component. This version of Windows Forms is distributed with .NET Framework.
 
 This guide is written for Windows Forms on .NET 5 (and .NET Core 3.1) and later versions. For more information about the .NET Framework version of Windows Forms, see [Windows Forms for .NET Framework](../../framework/winforms/index.md?view=netframeworkdesktop-4.8).
+
+Test columns
+
+:::columns count="2":::
+    :::column:::
+        markdown content goes here
+    :::column-end:::
+    :::column :::
+        markdown content goes here
+    :::column-end:::
+:::columns-end:::
+
+And end of test
