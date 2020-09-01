@@ -16,7 +16,53 @@
           "README.md",
           "LICENSE",
           "LICENSE-CODE",
-          "ThirdPartyNotices.md"
+          "ThirdPartyNotices.md",
+          "samples/**/*.*"
+        ],
+        "group": "framework",
+        "src": "framework"
+      },
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "_themes/**",
+          "_themes.pdf/**",
+          "**/docfx.json",
+          "_repo.en-us/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices.md",
+          "samples/**/*.*"
+        ],
+        "group": "net",
+        "src": "net"
+      },
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "exclude": [
+          "framework",
+          "net",
+
+          "**/obj/**",
+          "**/includes/**",
+          "_themes/**",
+          "_themes.pdf/**",
+          "**/docfx.json",
+          "_repo.en-us/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices.md",
+          "samples/**/*.*"
         ]
       }
     ],
@@ -33,7 +79,47 @@
           "_themes/**",
           "_themes.pdf/**",
           "**/docfx.json",
-          "_repo.en-us/**"
+          "_repo.en-us/**",
+          "samples/**/*.*"
+        ],
+        "group": "framework",
+        "src": "framework"
+      },
+      {
+        "files": [
+          "**/*.png",
+          "**/*.gif",
+          "**/*.jpg"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "_themes/**",
+          "_themes.pdf/**",
+          "**/docfx.json",
+          "_repo.en-us/**",
+          "samples/**/*.*"
+        ],
+        "group": "net",
+        "src": "net"
+      },
+      {
+        "files": [
+          "**/*.png",
+          "**/*.gif",
+          "**/*.jpg"
+        ],
+        "exclude": [
+          "framework",
+          "net",
+          
+          "**/obj/**",
+          "**/includes/**",
+          "_themes/**",
+          "_themes.pdf/**",
+          "**/docfx.json",
+          "_repo.en-us/**",
+          "samples/**/*.*"
         ]
       }
     ],
@@ -41,10 +127,12 @@
     "externalReference": [],
     "globalMetadata": {
       "breadcrumb_path": "/dotnet/desktop/breadcrumb/toc.json",
-      "extendBreadcrumb": true,
+      "extendBreadcrumb": false,
       "feedback_system": "GitHub",
       "feedback_github_repo": "dotnet/docs-desktop",
-      "feedback_product_url": "https://developercommunity.visualstudio.com/spaces/61/index.html"
+      "feedback_product_url": "https://developercommunity.visualstudio.com/spaces/61/index.html",
+      "author": "adegeo",
+      "ms.author": "adegeo"
     },
     "fileMetadata": {
       "titleSuffix": {
@@ -56,6 +144,16 @@
     },
     "template": [],
     "dest": "dotnet-desktop-guide",
-    "markdownEngineName": "markdig"
+    "markdownEngineName": "markdig",
+    "groups": {
+      "framework": {
+        "dest": "framework-dest",
+        "moniker_range": "netframeworkdesktop-4.8"
+      },
+      "net": {
+        "dest": "net-dest",
+        "moniker_range": "netdesktop-5.0"
+      }
+    }
   }
 }
