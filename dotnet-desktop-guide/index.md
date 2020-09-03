@@ -28,7 +28,6 @@ There are two implementations of WPF, each with it's own documentation:
 
     The documentation for this version of WPF is in progress and is hosted on the [.NET documentation](/dotnet/desktop-wpf/) site.
 
-
 ## Windows Forms
 
 There are two implementations of Windows Forms, each with it's own documentation:
