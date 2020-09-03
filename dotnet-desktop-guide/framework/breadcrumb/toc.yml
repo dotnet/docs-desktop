@@ -5,11 +5,11 @@ items:
   items:
     - name: .NET
       tocHref: /dotnet/
-      topicHref: /dotnet/index?view
+      topicHref: /dotnet/index?view=&preserve-view=true
       items:
       - name: Desktop Guide
         tocHref: /dotnet/desktop
-        topicHref: /dotnet/desktop/index?view
+        topicHref: /dotnet/desktop/index?view=&preserve-view=true
         items:
         - name: .NET Framework
           items:
