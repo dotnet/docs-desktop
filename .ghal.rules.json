@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "configRevision": 3,
+  "configRevision": 2,
 
   "issue": {
     "opened": {
@@ -17,16 +17,16 @@
           }
         },
         "contentsource": {
-          "(?i).*dotnet-desktop-guide\/framework\/wpf.*": {
+          "(?i).*master\/docs\/framework\/wpf.*": {
             "labels-add": ":books: Area - Framework,:card_file_box: Technology - WPF"
           },
-          "(?i).*dotnet-desktop-guide\/framework\/winforms.*": {
+          "(?i).*master\/docs\/framework\/winforms.*": {
             "labels-add": ":books: Area - Framework,:card_file_box: Technology - WinForms"
           },
-          "(?i).*dotnet-desktop-guide\/net\/wpf.*": {
+          "(?i).*master\/docs\/net\/wpf.*": {
             "labels-add": ":books: Area - NET,:card_file_box: Technology - WPF"
           },
-          "(?i).*dotnet-desktop-guide\/net\/winforms.*": {
+          "(?i).*master\/docs\/net\/winforms.*": {
             "labels-add": ":books: Area - NET,:card_file_box: Technology - WinForms"
           }
         }
@@ -49,16 +49,16 @@
         "processors": {
           "processor-files": {
             "changedfile": {
-              "(?i).*dotnet-desktop-guide\/framework\/wpf.*": {
+              "(?i).*docs\/framework\/wpf.*": {
                 "labels-add": ":books: Area - Framework,:card_file_box: Technology - WPF"
               },
-              "(?i).*dotnet-desktop-guide\/framework\/winforms.*": {
+              "(?i).*docs\/framework\/winforms.*": {
                 "labels-add": ":books: Area - Framework,:card_file_box: Technology - WinForms"
               },
-              "(?i).*dotnet-desktop-guide\/net\/wpf.*": {
+              "(?i).*docs\/net\/wpf.*": {
                 "labels-add": ":books: Area - NET,:card_file_box: Technology - WPF"
               },
-              "(?i).*dotnet-desktop-guide\/net\/winforms.*": {
+              "(?i).*docs\/net\/winforms.*": {
                 "labels-add": ":books: Area - NET,:card_file_box: Technology - WinForms"
               }
             }
