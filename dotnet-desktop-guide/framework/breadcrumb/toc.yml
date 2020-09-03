@@ -1,7 +1,7 @@
 items:
 - name: Docs
   tocHref: /
-  topicHref: /?view
+  topicHref: /?view=&preserve-view=true
   items:
     - name: .NET
       tocHref: /dotnet/
