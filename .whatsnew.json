@@ -1,0 +1,35 @@
+{
+  "$schema": "https://whatsnewapi.azurewebsites.net/schema",
+  "docSetProductName": ".NET Desktop",
+  "rootDirectory": "dotnet-desktop-guide/",
+  "docLinkSettings": {
+    "linkFormat": "relative",
+    "relativeLinkPrefix": "/dotnet/desktop/"
+  },
+  "areas": [
+    {
+        "name": ".",
+        "heading": "Home"
+    },
+    {
+      "name": "desktop-wpf",
+      "heading": ".NET 5/Core desktop"
+    },
+    {
+      "name": "framework/winforms",
+      "heading": "Windows Forms - .NET Framework"
+    },
+    {
+      "name": "framework/wpf",
+      "heading": "Windows Presentation Foundation - .NET Framework"
+    },
+    {
+      "name": "net/winforms",
+      "heading": "Windows Forms - .NET 5/Core"
+    },
+    {
+      "name": "net/wpf",
+      "heading": "Windows Presentation Foundation - .NET 5/Core"
+    }
+  ]
+}
