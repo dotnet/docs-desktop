@@ -12,10 +12,6 @@
         "heading": "Home"
     },
     {
-      "name": "desktop-wpf",
-      "heading": ".NET 5/Core desktop"
-    },
-    {
       "name": "framework/winforms",
       "heading": "Windows Forms - .NET Framework"
     },
