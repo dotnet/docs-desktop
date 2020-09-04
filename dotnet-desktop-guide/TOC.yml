@@ -6,3 +6,8 @@ items:
     href: https://docs.microsoft.com/dotnet/desktop/winforms/?view=netdesktop-5.0
   - name: .NET Framework
     href: https://docs.microsoft.com/dotnet/desktop/winforms/?view=netframeworkdesktop-4.8
+- name: Windows Presentation Foundation
+  expanded: true
+  items:
+  - name: .NET Framework
+    href: https://docs.microsoft.com/dotnet/desktop/wpf/?view=netframeworkdesktop-4.8
