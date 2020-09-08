@@ -1,14 +1,14 @@
 items:
 - name: Docs
-  tocHref: /
+  tocHref: /?view=&preserve-view=true
   topicHref: /?view=&preserve-view=true
   items:
     - name: .NET
-      tocHref: /dotnet/
+      tocHref: /dotnet/?view=&preserve-view=true
       topicHref: /dotnet/index?view=&preserve-view=true
       items:
       - name: Desktop Guide
-        tocHref: /dotnet/desktop
+        tocHref: /dotnet/desktop?view=&preserve-view=true
         topicHref: /dotnet/desktop/index?view=&preserve-view=true
         items:
         - name: ".NET 5 (and .NET Core 3.1)"
