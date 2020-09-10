@@ -132,8 +132,7 @@
       "feedback_github_repo": "dotnet/docs-desktop",
       "feedback_product_url": "https://developercommunity.visualstudio.com/spaces/61/index.html",
       "author": "adegeo",
-      "ms.author": "adegeo",
-      "ms.prod": "dotnet-desktop"
+      "ms.author": "adegeo"
     },
     "fileMetadata": {
       "titleSuffix": {
@@ -143,10 +142,16 @@
         "net/wpf/**/**.md": "WPF .NET"
       },
       "ms.technology": {
-        "framework/winforms/**/**.md": "framework-winforms",
+        "framework/winforms/**/**.md": "dotnet-winforms",
+        "framework/wpf/**/**.md": "dotnet-wpf",
         "net/winforms/**/**.md": "dotnet-winforms",
-        "framework/wpf/**/**.md": "framework-wpf",
         "net/wpf/**/**.md": "dotnet-wpf"
+      },
+      "ms.prod": {
+        "framework/winforms/**/**.md": "dotnet-framework",
+        "framework/wpf/**/**.md": "dotnet-framework",
+        "net/winforms/**/**.md": "dotnet-desktop",
+        "net/wpf/**/**.md": "dotnet-desktop"
       }
     },
     "template": [],
