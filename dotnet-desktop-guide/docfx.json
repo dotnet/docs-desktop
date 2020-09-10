@@ -140,6 +140,12 @@
         "net/winforms/**/**.md": "Windows Forms .NET",
         "framework/wpf/**/**.md": "WPF .NET Framework",
         "net/wpf/**/**.md": "WPF .NET"
+      },
+      "ms.technology": {
+        "framework/winforms/**/**.md": "dotnet-winforms",
+        "net/winforms/**/**.md": "dotnet-winforms",
+        "framework/wpf/**/**.md": "dotnet-wpf",
+        "net/wpf/**/**.md": "dotnet-wpf"
       }
     },
     "template": [],
