@@ -143,9 +143,9 @@
         "net/wpf/**/**.md": "WPF .NET"
       },
       "ms.technology": {
-        "framework/winforms/**/**.md": "dotnet-winforms",
+        "framework/winforms/**/**.md": "framework-winforms",
         "net/winforms/**/**.md": "dotnet-winforms",
-        "framework/wpf/**/**.md": "dotnet-wpf",
+        "framework/wpf/**/**.md": "framework-wpf",
         "net/wpf/**/**.md": "dotnet-wpf"
       }
     },
