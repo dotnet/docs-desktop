@@ -1,6 +1,7 @@
 ---
 title: Desktop Guide for WPF and Windows Forms
 description: Introduction to the Desktop Guide for WPF and Windows Forms for both .NET 5 and .NET Framework.
+ms.prod: dotnet-desktop
 ms.date: "08/30/2020"
 ---
 
