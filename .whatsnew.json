@@ -6,10 +6,13 @@
     "linkFormat": "relative",
     "relativeLinkPrefix": "/dotnet/desktop/"
   },
+  "inclusionCriteria": {
+    "minAdditionsToFile": 1
+  },
   "areas": [
     {
-        "name": ".",
-        "heading": "Home"
+      "name": ".",
+      "heading": "Home"
     },
     {
       "name": "framework/winforms",
