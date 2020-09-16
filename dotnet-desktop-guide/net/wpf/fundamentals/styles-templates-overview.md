@@ -19,7 +19,7 @@ This overview focuses on the styling and templating aspects of the app and doesn
 
 It's important to understand resources, which are what enable styles and templates to be reused. For more information about resources, see [XAML Resources](xaml-resources-define.md).
 
-[!INCLUDE [desktop guide under construction](../../../includes/desktop-guide-preview-note.md)]
+[!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
 
 ## Sample
 

@@ -18,7 +18,7 @@ helpviewer_keywords:
 
 With Windows Presentation Foundation (WPF), you can customize an existing control's visual structure and behavior with your own reusable template. Templates can be applied globally to your application, windows and pages, or directly to controls. Most scenarios that require you to create a new control can be covered by instead creating a new template for an existing control.
 
-[!INCLUDE [desktop guide under construction](../../../includes/desktop-guide-preview-note.md)]
+[!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
 
 In this article, you'll explore creating a new <xref:System.Windows.Controls.ControlTemplate> for the <xref:System.Windows.Controls.Button> control.
 

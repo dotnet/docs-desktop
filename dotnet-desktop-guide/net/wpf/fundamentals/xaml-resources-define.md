@@ -15,7 +15,7 @@ A resource is an object that can be reused in different places in your app. Exam
 
 <!-- TODO: File redirect from docs\framework\wpf\advanced\xaml-resources.md -->
 
-[!INCLUDE [desktop guide under construction](../../../includes/desktop-guide-preview-note.md)]
+[!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
 
 ## Using resources in XAML
 

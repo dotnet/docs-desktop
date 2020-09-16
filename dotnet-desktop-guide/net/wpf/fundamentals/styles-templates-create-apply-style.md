@@ -14,7 +14,7 @@ dev_langs:
 
 With Windows Presentation Foundation (WPF), you can customize an existing control's appearance with your own reusable style. Styles can be applied globally to your app, windows and pages, or directly to controls.
 
-[!INCLUDE [desktop guide under construction](../../../includes/desktop-guide-preview-note.md)]
+[!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
 
 ## Create a style
 

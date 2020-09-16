@@ -10,7 +10,7 @@ ms.author: mikerou
 
 This article covers the steps necessary to migrate a Windows Presentation Foundation (WPF) app from .NET Framework to .NET Core 3.0. If you don't have a WPF app on hand to port, but would like to try out the process, you can use the **Bean Trader** sample app available on [GitHub](https://github.com/dotnet/windows-desktop/tree/master/Samples/BeanTrader). The original app (targeting .NET Framework 4.7.2) is available in the NetFx\BeanTraderClient folder. First we'll explain the steps necessary to port apps in general, and then we'll walk through the specific changes that apply to the **Bean Trader** sample.
 
-[!INCLUDE [desktop guide under construction](../../../includes/desktop-guide-preview-note.md)]
+[!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
 
 To migrate to .NET Core, you must first:
 

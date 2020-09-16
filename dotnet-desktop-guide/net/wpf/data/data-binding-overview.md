@@ -17,7 +17,7 @@ The data binding functionality in WPF has several advantages over traditional mo
 
 This article first discusses concepts fundamental to WPF data binding and then covers the usage of the <xref:System.Windows.Data.Binding> class and other features of data binding.
 
-[!INCLUDE [desktop guide under construction](../../../includes/desktop-guide-preview-note.md)]
+[!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
 
 ## What is data binding?
 

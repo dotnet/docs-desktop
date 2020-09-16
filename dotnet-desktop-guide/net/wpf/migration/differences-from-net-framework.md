@@ -12,7 +12,7 @@ This article describes the differences between Windows Presentation Foundation (
 
 There are a few features of .NET Framework that .NET Core doesn't support. For more information on unsupported technologies, see [.NET Framework technologies unavailable on .NET Core](../../core/porting/net-framework-tech-unavailable.md).
 
-[!INCLUDE [desktop guide under construction](../../../includes/desktop-guide-preview-note.md)]
+[!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
 
 ## SDK-style projects
 
