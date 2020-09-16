@@ -3,11 +3,12 @@ items:
   expanded: true
   items:
   - name: ".NET 5 (and .NET Core 3.1)"
-    href: https://docs.microsoft.com/dotnet/desktop/winforms/?view=netdesktop-5.0
+    href: net/winforms/index.md?view=netdesktop-5.0&preserve-view=true
   - name: .NET Framework
-    href: https://docs.microsoft.com/dotnet/desktop/winforms/?view=netframeworkdesktop-4.8
+    href: framework/winforms/index.yml?view=netframeworkdesktop-4.8&preserve-view=true
 - name: Windows Presentation Foundation
   expanded: true
   items:
   - name: .NET Framework
-    href: https://docs.microsoft.com/dotnet/desktop/wpf/?view=netframeworkdesktop-4.8
+    href: framework/wpf/index.md?view=netframeworkdesktop-4.8&preserve-view=true
+    

@@ -18,10 +18,10 @@
         },
         "contentsource": {
           "(?i).*dotnet-desktop-guide\/framework\/wpf.*": {
-            "labels-add": ":books: Area - .Framework,:card_file_box: Technology - WPF"
+            "labels-add": ":books: Area - .NET Framework,:card_file_box: Technology - WPF"
           },
           "(?i).*dotnet-desktop-guide\/framework\/winforms.*": {
-            "labels-add": ":books: Area - .Framework,:card_file_box: Technology - WinForms"
+            "labels-add": ":books: Area - .NET Framework,:card_file_box: Technology - WinForms"
           },
           "(?i).*dotnet-desktop-guide\/net\/wpf.*": {
             "labels-add": ":books: Area - .NET,:card_file_box: Technology - WPF"
@@ -50,10 +50,10 @@
           "processor-files": {
             "changedfile": {
               "(?i).*dotnet-desktop-guide\/framework\/wpf.*": {
-                "labels-add": ":books: Area - .Framework,:card_file_box: Technology - WPF"
+                "labels-add": ":books: Area - .NET Framework,:card_file_box: Technology - WPF"
               },
               "(?i).*dotnet-desktop-guide\/framework\/winforms.*": {
-                "labels-add": ":books: Area - .Framework,:card_file_box: Technology - WinForms"
+                "labels-add": ":books: Area - .NET Framework,:card_file_box: Technology - WinForms"
               },
               "(?i).*dotnet-desktop-guide\/net\/wpf.*": {
                 "labels-add": ":books: Area - .NET,:card_file_box: Technology - WPF"

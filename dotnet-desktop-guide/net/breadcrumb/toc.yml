@@ -1,18 +1,18 @@
 items:
 - name: Docs
-  tocHref: /
-  topicHref: /
+  tocHref: /?view=&preserve-view=true
+  topicHref: /?view=&preserve-view=true
   items:
     - name: .NET
-      tocHref: /dotnet/
-      topicHref: /dotnet/index
+      tocHref: /dotnet/?view=&preserve-view=true
+      topicHref: /dotnet/index?view=&preserve-view=true
       items:
       - name: Desktop Guide
-        tocHref: /dotnet/desktop
-        topicHref: /dotnet/desktop/index
+        tocHref: /dotnet/desktop?view=&preserve-view=true
+        topicHref: /dotnet/desktop/index?view=&preserve-view=true
         items:
         - name: ".NET 5 (and .NET Core 3.1)"
           items:
           - name: Windows Forms
-            tocHref: /dotnet/desktop/winforms
+            tocHref: /dotnet/desktop/winforms/
             topicHref: /dotnet/desktop/winforms/index
