@@ -26,7 +26,7 @@ The `xml:lang` attribute is an XML-defined attribute that declares the language 
 
 ## Remarks
 
-The definition for the `xml:lang` attribute in [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] is derived from `xml:lang` as defined as a "special attribute" by the World Wide Web Consortium (W3C) for XML. Language and culture information is potentially processed in different ways by elements, depending on their implementations; however, there is no default [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] processing of the `xml:lang` attribute.
+The definition for the `xml:lang` attribute in [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] is derived from `xml:lang` as defined as a "special attribute" by the World Wide Web Consortium (W3C) for XML. Language and culture information is potentially processed in different ways by elements, depending on their implementations; however, there is no default [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] processing of the `xml:lang` attribute.
 
 The default value of the `xml:lang` attribute is an empty string at the attribute level.
 

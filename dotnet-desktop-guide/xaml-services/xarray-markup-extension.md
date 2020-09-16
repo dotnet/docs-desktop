@@ -48,7 +48,7 @@ In XAML 2009, `x:Array` is defined as a language primitive instead of a markup e
 
 ## WPF Usage Notes
 
-Typically, the object elements that populate an `x:Array` are not elements that exist in the [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] XAML namespace, and require a prefix mapping to a non-default XAML namespace.
+Typically, the object elements that populate an `x:Array` are not elements that exist in the [!INCLUDE[TLA2#tla_winclient](../includes/tla2sharptla-winclient-md.md)] XAML namespace, and require a prefix mapping to a non-default XAML namespace.
 
 For example, the following is a simple array of two strings, with the `sys` prefix (and also `x`) defined at the level of the array.
 
