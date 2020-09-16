@@ -14,11 +14,11 @@ Historically, the .NET Framework-based documentation for WPF and WinForms has be
 
 There are two implementations of WPF, each with it's own documentation:
 
-01. The [.NET Framework 4 implementation](framework/wpf/index.md?view=netframeworkdesktop-4.8) that's supported by Visual Studio 2019 and Visual Studio 2017.
+01. The [.NET Framework 4 implementation](framework/wpf/index.md?view=netframeworkdesktop-4.8&preserve-view=true) that's supported by Visual Studio 2019 and Visual Studio 2017.
 
     .NET Framework 4 is a Windows-only version of .NET and is considered a Windows Operating System component. This version of Windows Presentation Foundation is distributed with .NET Framework.
 
-    The documentation for this version of WPF is available [here](framework/wpf/index.md?view=netframeworkdesktop-4.8).
+    The documentation for this version of WPF is available [here](framework/wpf/index.md?view=netframeworkdesktop-4.8&preserve-view=true).
 
 01. The open-source implementation hosted on [GitHub](https://github.com/dotnet/wpf).
 
