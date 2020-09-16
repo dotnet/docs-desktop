@@ -18,7 +18,7 @@ There are two implementations of WPF:
 
 01. The .NET Framework implementation that's supported by Visual Studio 2019 and Visual Studio 2017.
 
-This Desktop Guide is written for .NET Core 3.0 and WPF. For more information about the existing documentation for WPF with the .NET Framework, see [Framework Windows Presentation Foundation](../../framework/wpf/index.md).
+This Desktop Guide is written for .NET Core 3.0 and WPF. For more information about the existing documentation for WPF with the .NET Framework, see [Framework Windows Presentation Foundation](../../../framework/wpf/index.md).
 
 ## XAML
 
@@ -48,7 +48,7 @@ For example, the previous XAML code defined a button with the visible content se
 
 WPF provides different markup extensions for XAML such as `{Binding}` for data binding.
 
-For more information, see [Markup Extensions and WPF XAML](../../framework/wpf/advanced/markup-extensions-and-wpf-xaml.md).
+For more information, see [Markup Extensions and WPF XAML](../../../framework/wpf/advanced/markup-extensions-and-wpf-xaml.md).
 
 ## Property system
 
