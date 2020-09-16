@@ -139,19 +139,25 @@
         "framework/winforms/**/**.md": "Windows Forms .NET Framework",
         "net/winforms/**/**.md": "Windows Forms .NET",
         "framework/wpf/**/**.md": "WPF .NET Framework",
-        "net/wpf/**/**.md": "WPF .NET"
+        "net/wpf/**/**.md": "WPF .NET",
+        "xaml-services/**/*.md": "XAML"
       },
       "ms.technology": {
         "framework/winforms/**/**.md": "dotnet-winforms",
         "framework/wpf/**/**.md": "dotnet-wpf",
         "net/winforms/**/**.md": "dotnet-winforms",
-        "net/wpf/**/**.md": "dotnet-wpf"
+        "net/wpf/**/**.md": "dotnet-wpf",
+        "xaml-services/**/*.md": "dotnet-wpf"
       },
       "ms.prod": {
         "framework/winforms/**/**.md": "dotnet-framework",
         "framework/wpf/**/**.md": "dotnet-framework",
         "net/winforms/**/**.md": "dotnet-desktop",
-        "net/wpf/**/**.md": "dotnet-desktop"
+        "net/wpf/**/**.md": "dotnet-desktop",
+        "xaml-services/**/*.md": "dotnet-desktop"
+      },
+      "ms.topic": {
+        "xaml-services/**/*.md": "reference"
       }
     },
     "template": [],
