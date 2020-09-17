@@ -135,6 +135,9 @@
       "ms.author": "adegeo"
     },
     "fileMetadata": {
+      "breadcrumb_path": {
+        "xaml-services/**/**.md": "/dotnet/desktop/xaml-services/breadcrumb/toc.json"
+      },
       "titleSuffix": {
         "framework/winforms/**/**.md": "Windows Forms .NET Framework",
         "net/winforms/**/**.md": "Windows Forms .NET",
