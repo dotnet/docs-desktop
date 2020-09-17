@@ -55,7 +55,7 @@ landingContent:
       - linkListType: reference
         links:
           - text: XAML language reference
-            url: xaml-services/index.md
+            url: ../../xaml-services/index.md
 
   - title: Fundamentals - Data
     linkLists:

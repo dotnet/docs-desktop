@@ -19,7 +19,7 @@ To migrate to .NET Core, you must first:
     01. Upgrade NuGet dependencies to use the `<PackageReference>` format.
     01. Review top-level NuGet dependencies for .NET Core or .NET Standard compatibility.
     01. Upgrade NuGet packages to newer versions.
-    01. Use the [.NET Portability Analyzer](../../standard/analyzers/portability-analyzer.md) to understand .NET dependencies.
+    01. Use the [.NET Portability Analyzer](/dotnet/standard/analyzers/portability-analyzer) to understand .NET dependencies.
 
 01. Migrate the project file to the new SDK-style format:
 
@@ -127,7 +127,7 @@ Once the NuGet packages are updated to recent versions, the `<PackageReference>`
 
 ### .NET Framework portability analysis
 
-Once you understand the state of your project's NuGet dependencies, the next thing to consider is .NET Framework API dependencies. The [.NET Portability Analyzer](../../standard/analyzers/portability-analyzer.md) tool is useful for understanding which of the .NET APIs your project uses are available on other .NET platforms.
+Once you understand the state of your project's NuGet dependencies, the next thing to consider is .NET Framework API dependencies. The [.NET Portability Analyzer](/dotnet/standard/analyzers/portability-analyzer) tool is useful for understanding which of the .NET APIs your project uses are available on other .NET platforms.
 
 The tool comes as a [Visual Studio plugin](https://marketplace.visualstudio.com/items?itemName=ConnieYau.NETPortabilityAnalyzer), a [command-line tool](https://github.com/Microsoft/dotnet-apiport/releases), or wrapped in a [simple GUI](https://github.com/Microsoft/dotnet-apiport-ui), which simplifies its options. You can read more about using the .NET Portability Analyzer (API Port) using the GUI in the [Porting desktop apps to .NET Core](https://devblogs.microsoft.com/dotnet/porting-desktop-apps-to-net-core/) blog post. If you prefer to use the command line, the necessary steps are:
 
@@ -155,7 +155,7 @@ Based on this report and the previous NuGet dependency analysis, it looks like t
 
 ## Migrating the project file
 
-If your app isn't using the new [SDK-style project file format](../../core/tools/csproj.md), you'll need a new project file to target .NET Core. You can replace the existing csproj file or, if you prefer to keep the existing project untouched in its current state, you can add a new csproj file targeting .NET Core. You can build versions of the app for .NET Framework and .NET Core with a single SDK-style project file with [multi-targeting](../../standard/library-guidance/cross-platform-targeting.md) (specifying multiple `<TargetFrameworks>` targets).
+If your app isn't using the new [SDK-style project file format](/dotnet/core/tools/csproj), you'll need a new project file to target .NET Core. You can replace the existing csproj file or, if you prefer to keep the existing project untouched in its current state, you can add a new csproj file targeting .NET Core. You can build versions of the app for .NET Framework and .NET Core with a single SDK-style project file with [multi-targeting](/dotnet/standard/library-guidance/cross-platform-targeting) (specifying multiple `<TargetFrameworks>` targets).
 
 To create the new project file, you can create a new WPF project in Visual Studio or use the `dotnet new wpf` command in a temporary directory to generate the project file and then copy/rename it to the correct location. There is also a community-created tool, [CsprojToVs2017](https://github.com/hvanbakel/CsprojToVs2017), that can automate some of the project file migration. The tool is helpful but still needs a human to review the results to make sure all the details of the migration are correct. One particular area that the tool doesn't handle optimally is migrating NuGet packages from *packages.config* files. If the tool runs on a project file that still uses a *packages.config* file to reference NuGet packages, it will migrate to `<PackageReference>` elements automatically, but will add `<PackageReference>` elements for *all* of the packages instead of just top-level ones. If you have already migrated to`<PackageReference>` elements with Visual Studio (as you've done in this sample), then the tool can help with the rest of the conversion. Like Scott Hanselman recommends in [his blog post on migrating csproj files](https://www.hanselman.com/blog/UpgradingAnExistingNETProjectFilesToTheLeanNewCSPROJFormatFromNETCore.aspx), porting by hand is educational and will give better results if you only have a few projects to port. But if you're porting dozens or hundreds of project files, then a tool like [CsprojToVs2017](https://github.com/hvanbakel/CsprojToVs2017) can be a help.
 
@@ -231,7 +231,7 @@ In this case, you see the following issues that need to be fixed:
 
 ### Updating WCF client usage
 
-Having fixed the `Castle.Windsor` differences, the last remaining build error in the .NET Core Bean Trader project is that `BeanTraderServiceClient` (which derives from `DuplexClientBase`) doesn't have an `Open` method. This isn't surprising since this is an API that was highlighted by the .NET Portability Analyzer at the beginning of this migration process. Looking at `BeanTraderServiceClient` draws our attention to a larger issue, though. This WCF client was autogenerated by the [Svcutil.exe](../../framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) tool.
+Having fixed the `Castle.Windsor` differences, the last remaining build error in the .NET Core Bean Trader project is that `BeanTraderServiceClient` (which derives from `DuplexClientBase`) doesn't have an `Open` method. This isn't surprising since this is an API that was highlighted by the .NET Portability Analyzer at the beginning of this migration process. Looking at `BeanTraderServiceClient` draws our attention to a larger issue, though. This WCF client was autogenerated by the [Svcutil.exe](/dotnet/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe) tool.
 
 **WCF clients generated by Svcutil are meant for use on .NET Framework.**
 
@@ -242,7 +242,7 @@ In fact, any WCF client usage that depends on the `<system.serviceModel>` app.co
 There are two ways to automatically generate .NET Standard-compatible WCF clients:
 
 - The `dotnet-svcutil` tool is a .NET tool that generates WCF clients in a way that is similar to how Svcutil worked previously.
-- Visual Studio can generate WCF clients using the [WCF Web Service Reference](../../core/additional-tools/wcf-web-service-reference-guide.md) option of its Connected Services feature.
+- Visual Studio can generate WCF clients using the [WCF Web Service Reference](/dotnet/core/additional-tools/wcf-web-service-reference-guide) option of its Connected Services feature.
 
 Either approach works well. Alternatively, of course, you could write the WCF client code yourself. For this sample, I chose to use the Visual Studio Connected Service feature. To do that, right-click on the *BeanTraderClient.Core* project in Visual Studio's solution explorer and select **Add** > **Connected Service**. Next, choose the WCF Web Service Reference Provider. This will bring up a dialog where you can specify the address of the backend Bean Trader web service (`localhost:8080` if you are running the server locally) and the namespace that generated types should use (**BeanTrader.Service**, for example).
 
