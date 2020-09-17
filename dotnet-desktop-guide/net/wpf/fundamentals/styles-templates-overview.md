@@ -39,11 +39,11 @@ The most common way to declare a style is as a resource in the `Resources` secti
 
 For example, the following XAML code declares two styles for a `TextBlock`, one automatically applied to all `TextBlock` elements, and another that must be explicitly referenced.
 
-[!code-xaml[SnippetDefaultTextBlockStyleBasedOn](~/samples/snippets/desktop-guide/wpf/styles-and-templates-intro/csharp/Window2.xaml#SnippetDefaultTextBlockStyleBasedOn)]
+[!code-xaml[SnippetDefaultTextBlockStyleBasedOn](./snippets/styles-templates-overview/csharp/Window2.xaml#SnippetDefaultTextBlockStyleBasedOn)]
 
 Here is an example of the styles declared above being used.
 
-[!code-xaml[SnippetTextBlocksExplicit](~/samples/snippets/desktop-guide/wpf/styles-and-templates-intro/csharp/Window2.xaml#SnippetTextBlocksExplicit)]
+[!code-xaml[SnippetTextBlocksExplicit](./snippets/styles-templates-overview/csharp/Window2.xaml#SnippetTextBlocksExplicit)]
 
 ![Styled textblocks](./media/styles-and-templates-overview/stylingintro-textblocks.png)
 
@@ -108,7 +108,7 @@ If a <xref:System.Windows.Controls.ContentPresenter> is declared in the <xref:Sy
 
 In this sample app, there is a <xref:System.Windows.Controls.ListBox> control that is bound to a list of photos.
 
-[!code-xaml[ListBox](~/samples/snippets/desktop-guide/wpf/styles-and-templates-intro/csharp/Window3.xaml#SnippetListBox)]
+[!code-xaml[ListBox](./snippets/styles-templates-overview/csharp/Window3.xaml#SnippetListBox)]
 
 This <xref:System.Windows.Controls.ListBox> currently looks like the following.
 
@@ -118,12 +118,12 @@ Most controls have some type of content, and that content often comes from data 
 
 In our sample app, each custom `Photo` object has a `Source` property of type string that specifies the file path of the image. Currently, the photo objects appear as file paths.
 
-[!code-csharp[PhotoClass](~/samples/snippets/desktop-guide/wpf/styles-and-templates-intro/csharp/Photo.cs#PhotoClass)]
-[!code-vb[PhotoClass](~/samples/snippets/desktop-guide/wpf/styles-and-templates-intro/vb/Photo.vb#PhotoClass)]
+[!code-csharp[PhotoClass](./snippets/styles-templates-overview/csharp/Photo.cs#PhotoClass)]
+[!code-vb[PhotoClass](./snippets/styles-templates-overview/vb/Photo.vb#PhotoClass)]
 
 For the photos to appear as images, you create a <xref:System.Windows.DataTemplate> as a resource.
 
-[!code-xaml[DataTemplate](~/samples/snippets/desktop-guide/wpf/styles-and-templates-intro/csharp/Window4.xaml#SnippetDataTemplate)]
+[!code-xaml[DataTemplate](./snippets/styles-templates-overview/csharp/Window4.xaml#SnippetDataTemplate)]
 
 Notice that the <xref:System.Windows.DataTemplate.DataType%2A> property is similar to the <xref:System.Windows.Style.TargetType%2A> property of the <xref:System.Windows.Style>. If your <xref:System.Windows.DataTemplate> is in the resources section, when you specify the <xref:System.Windows.DataTemplate.DataType%2A> property to a type and omit an `x:Key`, the <xref:System.Windows.DataTemplate> is applied whenever that type appears. You always have the option to assign the <xref:System.Windows.DataTemplate> with an `x:Key` and then set it as a `StaticResource` for properties that take <xref:System.Windows.DataTemplate> types, such as the <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A> property or the <xref:System.Windows.Controls.ContentControl.ContentTemplate%2A> property.
 
@@ -143,7 +143,7 @@ A <xref:System.Windows.Trigger> that sets property values or starts actions base
 
 To demonstrate how to use property triggers, you can make each <xref:System.Windows.Controls.ListBoxItem> partially transparent unless it is selected. The following style sets the <xref:System.Windows.UIElement.Opacity%2A> value of a <xref:System.Windows.Controls.ListBoxItem> to `0.5`. When the <xref:System.Windows.Controls.ListBoxItem.IsSelected%2A> property is `true`, however, the <xref:System.Windows.UIElement.Opacity%2A> is set to `1.0`.
 
-[!code-xaml[PropertyTrigger](~/samples/snippets/desktop-guide/wpf/styles-and-templates-intro/csharp/Window5.xaml#SnippetPropertyTrigger)]
+[!code-xaml[PropertyTrigger](./snippets/styles-templates-overview/csharp/Window5.xaml#SnippetPropertyTrigger)]
 
 This example uses a <xref:System.Windows.Trigger> to set a property value, but note that the <xref:System.Windows.Trigger> class also has the <xref:System.Windows.TriggerBase.EnterActions%2A> and <xref:System.Windows.TriggerBase.ExitActions%2A> properties that enable a trigger to perform actions.
 
@@ -155,7 +155,7 @@ Notice that the <xref:System.Windows.FrameworkElement.MaxHeight%2A> property of 
 
 Another type of trigger is the <xref:System.Windows.EventTrigger>, which starts a set of actions based on the occurrence of an event. For example, the following <xref:System.Windows.EventTrigger> objects specify that when the mouse pointer enters the <xref:System.Windows.Controls.ListBoxItem>, the <xref:System.Windows.FrameworkElement.MaxHeight%2A> property animates to a value of `90` over a `0.2` second period. When the mouse moves away from the item, the property returns to the original value over a period of `1` second. Note how it is not necessary to specify a <xref:System.Windows.Media.Animation.DoubleAnimation.To%2A> value for the <xref:System.Windows.ContentElement.MouseLeave> animation. This is because the animation is able to keep track of the original value.
 
-[!code-xaml[StyleEventTriggers](~/samples/snippets/desktop-guide/wpf/styles-and-templates-intro/csharp/Window6.xaml#SnippetStyleEventTriggers)]
+[!code-xaml[StyleEventTriggers](./snippets/styles-templates-overview/csharp/Window6.xaml#SnippetStyleEventTriggers)]
 
 For more information, see the [Storyboards overview](../../../framework/wpf/graphics-multimedia/storyboards-overview.md).
 
