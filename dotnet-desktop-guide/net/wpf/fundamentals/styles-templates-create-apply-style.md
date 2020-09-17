@@ -22,11 +22,11 @@ You can think of a <xref:System.Windows.Style> as a convenient way to apply a se
 
 The most common way to declare a style is as a resource in the `Resources` section in a XAML file. Because styles are resources, they obey the same scoping rules that apply to all resources. Put simply, where you declare a style affects where the style can be applied. For example, if you declare the style in the root element of your app definition XAML file, the style can be used anywhere in your app.
 
-[!code-xaml[AppResources](~/samples/snippets/desktop-guide/wpf/styles-and-templates-intro/csharp/App.xaml#AppResources)]
+[!code-xaml[AppResources](./snippets/styles-templates-create-apply-style/csharp/App.xaml#AppResources)]
 
 If you declare the style in one of the app's XAML files, the style can be used only in that XAML file. For more information about scoping rules for resources, see [XAML Resources](xaml-resources-define.md).
 
-[!code-xaml[AppResources](~/samples/snippets/desktop-guide/wpf/styles-and-templates-intro/csharp/WindowSingleResource.xaml#WindowResources)]
+[!code-xaml[AppResources](./snippets/styles-templates-create-apply-style/csharp/WindowSingleResource.xaml#WindowResources)]
 
 A style is made up of `<Setter>` child elements that set properties on the elements the style is applied to. In the example above, notice that the style is set to apply to `TextBlock` types through the `TargetType` attribute. The style will set the <xref:System.Windows.Controls.Control.FontSize%2A> to `15` and the <xref:System.Windows.Controls.Control.FontWeight%2A> to `ExtraBold`. Add a `<Setter>` for each property the style changes.
 
@@ -34,13 +34,13 @@ A style is made up of `<Setter>` child elements that set properties on the eleme
 
 A <xref:System.Windows.Style> is a convenient way to apply a set of property values to more than one element. For example, consider the following <xref:System.Windows.Controls.TextBlock> elements and their default appearance in a window.
 
-[!code-xaml[TextBlocks](~/samples/snippets/desktop-guide/wpf/styles-and-templates-intro/csharp/Window1.xaml#SnippetTextBlocks)]
+[!code-xaml[TextBlocks](./snippets/styles-templates-create-apply-style/csharp/Window1.xaml#SnippetTextBlocks)]
 
 ![Styling sample screenshot](./media/styles-and-templates-overview/stylingintro-textblocksbefore.png "StylingIntro_TextBlocksBefore")
 
 You can change the default appearance by setting properties, such as <xref:System.Windows.Controls.Control.FontSize%2A> and <xref:System.Windows.Controls.Control.FontFamily%2A>, on each <xref:System.Windows.Controls.TextBlock> element directly. However, if you want your <xref:System.Windows.Controls.TextBlock> elements to share some properties, you can create a <xref:System.Windows.Style> in the `Resources` section of your XAML file, as shown here.
 
-[!code-xaml[DefaultTextBlockStyle](~/samples/snippets/desktop-guide/wpf/styles-and-templates-intro/csharp/Window1.xaml#SnippetDefaultTextBlockStyle)]
+[!code-xaml[DefaultTextBlockStyle](./snippets/styles-templates-create-apply-style/csharp/Window1.xaml#SnippetDefaultTextBlockStyle)]
 
 When you set the <xref:System.Windows.Style.TargetType%2A> of your style to the <xref:System.Windows.Controls.TextBlock> type and omit the `x:Key` attribute, the style is applied to all the <xref:System.Windows.Controls.TextBlock> elements scoped to the style, which is generally the XAML file itself.
 
@@ -54,11 +54,11 @@ If you add an `x:Key` attribute with value to the style, the style is no longer 
 
 Here is the style from the previous section, but declared with the `x:Key` attribute.
 
-[!code-xaml[ExplicitStyleDeclare](~/samples/snippets/desktop-guide/wpf/styles-and-templates-intro/csharp/WindowExplicitStyle.xaml#ExplicitStyleDeclare)]
+[!code-xaml[ExplicitStyleDeclare](./snippets/styles-templates-create-apply-style/csharp/WindowExplicitStyle.xaml#ExplicitStyleDeclare)]
 
 To apply the style, set the <xref:System.Windows.FrameworkElement.Style%2A> property on the element to the `x:Key` value, using a [StaticResource markup extension](../../../framework/wpf/advanced/staticresource-markup-extension.md), as shown here.
 
-[!code-xaml[ExplicitStyleReference](~/samples/snippets/desktop-guide/wpf/styles-and-templates-intro/csharp/WindowExplicitStyle.xaml#ExplicitStyleReference)]
+[!code-xaml[ExplicitStyleReference](./snippets/styles-templates-create-apply-style/csharp/WindowExplicitStyle.xaml#ExplicitStyleReference)]
 
 Notice that the first <xref:System.Windows.Controls.TextBlock> element has the style applied to it while the second TextBlock element remains unchanged. The implicit style from the previous section was changed to a style that declared the `x:Key` attribute, meaning, the only element affected by the style is the one that referenced the style directly.
 
@@ -72,16 +72,16 @@ You can create an object that chooses a style to apply based on custom logic. Fo
 
 To assign a named style to an element programmatically, get the style from the resources collection and assign it to the element's <xref:System.Windows.FrameworkElement.Style%2A> property. The items in a resources collection are of type <xref:System.Object>. Therefore, you must cast the retrieved style to a <xref:System.Windows.Style?displayProperty=fullName> before assigning it to the `Style` property. For example, the following code sets the style of a `TextBlock` named `textblock1` to the defined style `TitleText`.
 
-[!code-csharp[SetStyleCode](~/samples/snippets/desktop-guide/wpf/styles-and-templates-intro/csharp/Window2.xaml.cs#SnippetSetStyleCode)]
-[!code-vb[SetStyleCode](~/samples/snippets/desktop-guide/wpf/styles-and-templates-intro/vb/MainWindow.xaml.vb#SnippetSetStyleCode)]
+[!code-csharp[SetStyleCode](./snippets/styles-templates-create-apply-style/csharp/Window2.xaml.cs#SnippetSetStyleCode)]
+[!code-vb[SetStyleCode](./snippets/styles-templates-create-apply-style/vb/MainWindow.xaml.vb#SnippetSetStyleCode)]
 
 ## Extend a style
 
 Perhaps you want your two <xref:System.Windows.Controls.TextBlock> elements to share some property values, such as the <xref:System.Windows.Controls.Control.FontFamily%2A> and the centered <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A>. But you also want the text **My Pictures** to have some additional properties. You can do that by creating a new style that is based on the first style, as shown here.
 
-[!code-xaml[DefaultTextBlockStyleBasedOn](~/samples/snippets/desktop-guide/wpf/styles-and-templates-intro/csharp/Window2.xaml#SnippetDefaultTextBlockStyleBasedOn)]
+[!code-xaml[DefaultTextBlockStyleBasedOn](./snippets/styles-templates-create-apply-style/csharp/Window2.xaml#SnippetDefaultTextBlockStyleBasedOn)]
 
-[!code-xaml[TextBlocksExplicit](~/samples/snippets/desktop-guide/wpf/styles-and-templates-intro/csharp/Window2.xaml#SnippetTextBlocksExplicit)]
+[!code-xaml[TextBlocksExplicit](./snippets/styles-templates-create-apply-style/csharp/Window2.xaml#SnippetTextBlocksExplicit)]
 
 This `TextBlock` style is now centered, uses a `Comic Sans MS` font with a size of `26`, and the foreground color set to the <xref:System.Windows.Media.LinearGradientBrush> shown in the example. Notice that it overrides the <xref:System.Windows.Controls.Control.FontSize%2A> value of the base style. If there's more than one <xref:System.Windows.Setter> pointing to the same property in a <xref:System.Windows.Style>, the `Setter` that is declared last takes precedence.
 
