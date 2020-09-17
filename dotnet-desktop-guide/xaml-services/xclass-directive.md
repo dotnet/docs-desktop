@@ -41,7 +41,7 @@ In existing programming models that use `x:Class`, `x:Class` is optional in the 
 
 The value of the `x:Class` directive must be a string that specifies the fully qualified name of a class but without any assembly information (equivalent to the <xref:System.Type.FullName%2A?displayProperty=nameWithType>). For simple applications, you can omit CLR namespace information if the code-behind is also structured in that manner (code definition starts at the class level).
 
-The code-behind file for a page or application definition must be within a code file that is included as part of the project that produces a compiled application and involves markup compilation. You must follow name rules for CLR classes. For more information, see [Framework Design Guidelines](../../../api/index.md). By default, the code-behind class must be `public`; however, you can define it at a different access level by using the [x:ClassModifier Directive](xclassmodifier-directive.md).
+The code-behind file for a page or application definition must be within a code file that is included as part of the project that produces a compiled application and involves markup compilation. You must follow name rules for CLR classes. For more information, see [Framework Design Guidelines](/dotnet/api/). By default, the code-behind class must be `public`; however, you can define it at a different access level by using the [x:ClassModifier Directive](xclassmodifier-directive.md).
 
 This interpretation of the `x:Class` attribute applies only to a CLR-based XAML implementation, in particular to .NET XAML Services. Other XAML implementations that are not based on CLR and that do not use .NET XAML Services might use a different resolution formula for connecting XAML markup and backing run-time code. For more information about more general interpretations of `x:Class`, see [\[MS-XAML\]](https://docs.microsoft.com/previous-versions/msp-n-p/ff650760(v=pandp.10)).
 
@@ -49,7 +49,7 @@ At a certain level of architecture, the meaning of `x:Class` is undefined in .NE
 
 ## x:Class in the WPF Programming Model
 
-In WPF applications and the WPF application model, `x:Class` can be declared as an attribute for any element that is the root of a XAML file and is being compiled (where the XAML is included in a WPF application project with `Page` build action), or for the <xref:System.Windows.Application> root in the application definition of a compiled WPF application. Declaring `x:Class` on an element other than a page root or application root, or on a WPF XAML file that is not compiled, causes a compile-time error under the .NET Framework 3.0 and .NET Framework 3.5 WPF XAML compiler. For information about other aspects of `x:Class` handling in WPF, see [Code-Behind and XAML in WPF](../../framework/wpf/advanced/code-behind-and-xaml-in-wpf.md).
+In WPF applications and the WPF application model, `x:Class` can be declared as an attribute for any element that is the root of a XAML file and is being compiled (where the XAML is included in a WPF application project with `Page` build action), or for the <xref:System.Windows.Application> root in the application definition of a compiled WPF application. Declaring `x:Class` on an element other than a page root or application root, or on a WPF XAML file that is not compiled, causes a compile-time error under the .NET Framework 3.0 and .NET Framework 3.5 WPF XAML compiler. For information about other aspects of `x:Class` handling in WPF, see [Code-Behind and XAML in WPF](../framework/wpf/advanced/code-behind-and-xaml-in-wpf.md).
 
 ## x:Class for Windows Workflow Foundation
 For Windows Workflow Foundation, `x:Class` names the class of a custom activity composed entirely in XAML, or names the partial class of the XAML page for  an activity designer with code-behind.
@@ -61,6 +61,6 @@ For Windows Workflow Foundation, `x:Class` names the class of a custom activity 
 ## See also
 
 - [x:Subclass Directive](xsubclass-directive.md)
-- [XAML and Custom Classes for WPF](../../framework/wpf/advanced/xaml-and-custom-classes-for-wpf.md)
+- [XAML and Custom Classes for WPF](../framework/wpf/advanced/xaml-and-custom-classes-for-wpf.md)
 - [x:ClassModifier Directive](xclassmodifier-directive.md)
-- [Types Migrated from WPF to System.Xaml](../../framework/wpf/advanced/types-migrated-from-wpf-to-system.md)
+- [Types Migrated from WPF to System.Xaml](../framework/wpf/advanced/types-migrated-from-wpf-to-system.md)

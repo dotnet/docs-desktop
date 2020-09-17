@@ -74,4 +74,4 @@ For operations that rely on examining each node in a XAML node stream, you typic
 
 - <xref:System.Xaml.XamlObjectWriter>
 - <xref:System.Xaml.XamlServices>
-- [XAML Services](../../../api/index.md)
+- [XAML Services](/dotnet/api/)

@@ -72,6 +72,6 @@ Also, certain inline elements that connote a line break in a flow document model
 
 ## See also
 
-- [XAML overview (WPF)](../fundamentals/xaml.md)
+- [XAML overview (WPF)](../net/wpf/fundamentals/xaml.md)
 - [XML character entities and XAML](xml-character-entities.md)
 - [xml:space handling in XAML](xml-space-handling.md)

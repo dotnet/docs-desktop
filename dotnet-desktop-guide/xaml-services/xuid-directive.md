@@ -36,10 +36,10 @@ Frameworks can specify a particular property in their object model to be an alia
 
 ## WPF Usage Notes
 
-For more information about the role of `x:Uid` in the WPF localization process and in the BAML form of XAML, see [Globalization for WPF](../../framework/wpf/advanced/globalization-for-wpf.md) or <xref:System.Windows.Markup.Localizer.BamlLocalizableResourceKey.Uid%2A>
+For more information about the role of `x:Uid` in the WPF localization process and in the BAML form of XAML, see [Globalization for WPF](../framework/wpf/advanced/globalization-for-wpf.md) or <xref:System.Windows.Markup.Localizer.BamlLocalizableResourceKey.Uid%2A>
 
 ## See also
 
 - <xref:System.Windows.Markup.Localizer.BamlLocalizableResourceKey.Uid%2A>
 - <xref:Microsoft.Build.Tasks.Windows.UidManager>
-- [Globalization for WPF](../../framework/wpf/advanced/globalization-for-wpf.md)
+- [Globalization for WPF](../framework/wpf/advanced/globalization-for-wpf.md)

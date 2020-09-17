@@ -130,7 +130,7 @@ The ambience concept in XAML is a technique for marking a particular member of a
 
 **Service API:**  <xref:System.Xaml.IXamlSchemaContextProvider.SchemaContext%2A>
 
-XAML schema context is necessary for any defer load operations, because the same schema context must act on the deferred area in order to integrate the deferred content. For more information about the role of the XAML schema context, see [XAML Services](../../../api/index.md).
+XAML schema context is necessary for any defer load operations, because the same schema context must act on the deferred area in order to integrate the deferred content. For more information about the role of the XAML schema context, see [XAML Services](/dotnet/api/).
 
 ### IRootObjectProvider
 

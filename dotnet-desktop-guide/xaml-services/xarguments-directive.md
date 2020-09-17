@@ -107,4 +107,4 @@ switch (name) {
 ## See also
 
 - [Defining Custom Types for Use with .NET XAML Services](define-custom-types.md)
-- [XAML Overview (WPF)](../fundamentals/xaml.md)
+- [XAML Overview (WPF)](../net/wpf/fundamentals/xaml.md)

@@ -58,7 +58,7 @@ The `x:Type` markup extension can also be used as a verbose attribute; however t
 
 ### Default XAML Namespace and Type Mapping
 
-The default XAML namespace for WPF programming contains most of the XAML types you need for typical XAML scenarios; therefore, you can often avoid prefixes when referencing XAML type values. You might need to map a prefix if you are referencing a type from a custom assembly or for types that exist in a WPF assembly but are from a CLR namespace that was not mapped to the default XAML namespace. For more information about prefixes, XAML namespaces, and mapping CLR namespaces, see [XAML Namespaces and Namespace Mapping for WPF XAML](../../framework/wpf/advanced/xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md).
+The default XAML namespace for WPF programming contains most of the XAML types you need for typical XAML scenarios; therefore, you can often avoid prefixes when referencing XAML type values. You might need to map a prefix if you are referencing a type from a custom assembly or for types that exist in a WPF assembly but are from a CLR namespace that was not mapped to the default XAML namespace. For more information about prefixes, XAML namespaces, and mapping CLR namespaces, see [XAML Namespaces and Namespace Mapping for WPF XAML](../framework/wpf/advanced/xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md).
 
 ### Type Properties That Support Typename-as-String
 
@@ -81,6 +81,6 @@ In WPF, you can use XAML 2009 features but only for loose XAML (XAML that is not
 ## See also
 
 - <xref:System.Windows.Style>
-- [Styling and Templating](../fundamentals/styles-templates-overview.md)
-- [XAML Overview (WPF)](../fundamentals/xaml.md)
-- [Markup Extensions and WPF XAML](../../framework/wpf/advanced/markup-extensions-and-wpf-xaml.md)
+- [Styling and Templating](../net/wpf/fundamentals/styles-templates-overview.md)
+- [XAML Overview (WPF)](../net/wpf/fundamentals/xaml.md)
+- [Markup Extensions and WPF XAML](../framework/wpf/advanced/markup-extensions-and-wpf-xaml.md)
