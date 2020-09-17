@@ -37,7 +37,7 @@
   #- name: Display a dialog popup
   #  href: fundamentals/display-dialog-popup.md
   - name: XAML Language Reference
-    href: xaml-services/
+    href: ../../xaml-services/
 - name: Work with data
   items:
   - name: Data binding overview
