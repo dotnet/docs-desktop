@@ -1,15 +1,15 @@
 items:
 - name: Docs
-  tocHref: /?view=&preserve-view=true
-  topicHref: /?view=&preserve-view=true
+  tocHref: /
+  topicHref: /
   items:
     - name: .NET
-      tocHref: /dotnet/?view=&preserve-view=true
-      topicHref: /dotnet/index?view=&preserve-view=true
+      tocHref: /dotnet/
+      topicHref: /dotnet/index
       items:
       - name: Desktop Guide
-        tocHref: /dotnet/desktop?view=&preserve-view=true
-        topicHref: /dotnet/desktop/index?view=&preserve-view=true
+        tocHref: /dotnet/desktop
+        topicHref: /dotnet/desktop/index
         items:
         - name: .NET Framework
           items:
