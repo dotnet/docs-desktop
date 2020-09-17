@@ -1,0 +1,16 @@
+items:
+- name: Docs
+  tocHref: /
+  topicHref: /
+  items:
+    - name: .NET
+      tocHref: /dotnet/
+      topicHref: /dotnet/index
+      items:
+      - name: Desktop Guide
+        tocHref: /dotnet/desktop
+        topicHref: /dotnet/desktop/index
+        items:
+        - name: XAML Language Reference
+          tocHref: /dotnet/desktop/xaml-services
+          topicHref: /dotnet/desktop/xaml-services/index
