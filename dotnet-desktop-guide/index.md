@@ -27,7 +27,7 @@ There are two implementations of WPF, each with it's own documentation:
 
     Even though this version of .NET is cross-platform, WPF remains a Windows-only technology.
 
-    The documentation for this version of WPF is in progress and is hosted on the [.NET documentation](/dotnet/desktop-wpf/) site.
+    The documentation for this version of WPF is in progress and is available [here](net/wpf/index.yml?view=netdesktop-5.0&preserve-view=true).
 
 ## Windows Forms
 
