@@ -1,3 +1,4 @@
+items:
 - name: Windows Presentation Foundation for .NET Core
   href: index.yml
 - name: Get started
@@ -5,7 +6,7 @@
   - name: Overview
     href: overview/index.md
   - name: Create a WPF application
-    href: https://docs.microsoft.com/visualstudio/get-started/csharp/tutorial-wpf
+    href: https://docs.microsoft.com/visualstudio/get-started/csharp/tutorial-wpf?view=vs-2019
   # - name: Create a control library
   #  href: getting-started/how-to-create-control-library.md
 - name: Migration
