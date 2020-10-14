@@ -59,7 +59,7 @@ Public Class PaintEventArgs
     Implements IDisposable
 
     Public ReadOnly Property ClipRectangle As System.Drawing.Rectangle
-    Public ReadOnly Property Graphics() As System.Drawing.Graphics
+    Public ReadOnly Property Graphics As System.Drawing.Graphics
 
     ' Other properties and methods.
 End Class
