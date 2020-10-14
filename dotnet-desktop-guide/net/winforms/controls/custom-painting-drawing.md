@@ -38,7 +38,7 @@ The following elements are involved in control rendering:
 
 ## Drawing provided by control
 
-The base class <xref:System.Windows.Forms.Control> provides drawing functionality through its <xref:System.Windows.Forms.Control.Paint> event. A control raises the <xref:System.Windows.Forms.Control.Paint> event whenever it needs to update its display. For more information about events in the .NET, see [Handling and raising events](../../standard/events/index.md).
+The base class <xref:System.Windows.Forms.Control> provides drawing functionality through its <xref:System.Windows.Forms.Control.Paint> event. A control raises the <xref:System.Windows.Forms.Control.Paint> event whenever it needs to update its display. For more information about events in the .NET, see [Handling and raising events](/dotnet/standard/events/index).
 
 The event data class for the <xref:System.Windows.Forms.Control.Paint> event, <xref:System.Windows.Forms.PaintEventArgs>, holds the data needed for drawing a control - a handle to a graphics object and a rectangle that represents the region to draw in.
 

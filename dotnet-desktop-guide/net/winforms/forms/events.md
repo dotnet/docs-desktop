@@ -23,13 +23,13 @@ The types of events raised by an object vary, but many types are common to most 
 > [!NOTE]
 > Many events occur in conjunction with other events. For example, in the course of the <xref:System.Windows.Forms.Control.DoubleClick> event occurring, the <xref:System.Windows.Forms.Control.MouseDown>, <xref:System.Windows.Forms.Control.MouseUp>, and <xref:System.Windows.Forms.Control.Click> events occur.
 
-For information about how to raise and consume an event, see [Handling and raising events](../../standard/events/index.md).
+For information about how to raise and consume an event, see [Handling and raising events](/dotnet/standard/events/index).
 
 ## Delegates and their role
 
 Delegates are classes commonly used within .NET to build event-handling mechanisms. Delegates roughly equate to function pointers, commonly used in Visual C++ and other object-oriented languages. Unlike function pointers however, delegates are object-oriented, type-safe, and secure. Also, where a function pointer contains only a reference to a particular function, a delegate consists of a reference to an object, and references to one or more methods within the object.
 
-This event model uses *delegates* to bind events to the methods that are used to handle them. The delegate enables other classes to register for event notification by specifying a handler method. When the event occurs, the delegate calls the bound method. For more information about how to define delegates, see [Handling and raising events](../../standard/events/index.md).
+This event model uses *delegates* to bind events to the methods that are used to handle them. The delegate enables other classes to register for event notification by specifying a handler method. When the event occurs, the delegate calls the bound method. For more information about how to define delegates, see [Handling and raising events](/dotnet/standard/events/index).
 
 Delegates can be bound to a single method or to multiple methods, referred to as multicasting. When creating a delegate for an event, you typically create a multicast event. A rare exception might be an event that results in a specific procedure (such as displaying a dialog box) that wouldn't logically repeat multiple times per event. For information about how to create a multicast delegate, see [How to combine delegates (Multicast Delegates)](../../csharp/programming-guide/delegates/how-to-combine-delegates-multicast-delegates.md).
 
