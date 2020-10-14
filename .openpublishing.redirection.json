@@ -1,0 +1,8 @@
+{
+    "redirections": [
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/windows-forms-overview",
+            "redirect_url": "/dotnet/desktop/winforms/overview/?view=netdesktop-5.0"
+        }
+    ]
+}
