@@ -7,18 +7,17 @@ dev_langs:
   - "csharp"
   - "vb"
 helpviewer_keywords: 
-  - "Windows Forms, controls"
-  - "controls [Windows Forms]"
-  - "custom controls [Windows Forms]"
+  - "Windows Forms, keyboard input"
+  - "keyboard [Windows Forms], input"
 ---
 
 # Overview of using the keyboard (Windows Forms .NET)
 
-In Windows Forms, user input is sent to applications in the form of [Windows messages](https://docs.microsoft.com/windows/win32/winmsg/about-messages-and-message-queues). A series of overridable methods process these messages at the application, form, and control level. When these methods receive mouse and keyboard messages, they raise events that can be handled to get information about the mouse or keyboard input. In many cases, Windows Forms applications will be able to process all user input simply by handling these events. In other cases, an application may need to override one of the methods that process messages in order to intercept a particular message before it is received by the application, form, or control.
+In Windows Forms, user input is sent to applications in the form of [Windows messages](https://docs.microsoft.com/windows/win32/winmsg/about-messages-and-message-queues). A series of overridable methods process these messages at the application, form, and control level. When these methods receive keyboard messages, they raise events that can be handled to get information about the keyboard input. In many cases, Windows Forms applications will be able to process all user input simply by handling these events. In other cases, an application may need to override one of the methods that process messages in order to intercept a particular message before it is received by the application, form, or control.
 
 ## Keyboard events
 
-All Windows Forms controls inherit a set of events related to mouse and keyboard input. For example, a control can handle the <xref:System.Windows.Forms.Control.KeyPress> event to determine the character code of a key that was pressed. For more information on the mouse events, see [Using keyboard events](events.md).
+All Windows Forms controls inherit a set of events related to mouse and keyboard input. For example, a control can handle the <xref:System.Windows.Forms.Control.KeyPress> event to determine the character code of a key that was pressed. For more information, see [Using keyboard events](events.md).
 
 ## Methods that process user input messages
 
