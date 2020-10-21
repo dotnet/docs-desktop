@@ -20,9 +20,9 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
   items:
     # Card
-    - title: "Download .NET"
+    - title: "Install Visual Studio 2019"
       itemType: download
-      url: https://dotnet.microsoft.com/download
+      url: /visualstudio/install/install-visual-studio?view=vs-2019
     # Card
     - title: "Create your first WPF app"
       itemType: get-started
@@ -37,8 +37,7 @@ highlightedContent:
 additionalContent:
   # Supports up to 3 sections
   sections:
-    - title: Desktop guide for .NET # < 60 chars (optional)
-      summary: Windows Presentation Foundation and Windows Forms for .NET 5 (and .NET Core 3.1). # < 160 chars (optional)
+    - title: .NET
       items:
         # Card
         - title: Windows Presentation Foundation
@@ -51,8 +50,7 @@ additionalContent:
             - text: Landing page
               url: net/winforms/index.md?view=netdesktop-5.0&preserve-view=true
 
-    - title: Desktop guide for .NET Framework # < 60 chars (optional)
-      summary: Windows Presentation Foundation and Windows Forms for .NET Framework. # < 160 chars (optional)
+    - title: .NET Framework # < 60 chars (optional)
       items:
         # Card
         - title: Windows Presentation Foundation
@@ -64,5 +62,15 @@ additionalContent:
           links:
             - text: Landing page
               url: framework/winforms/index.yml?view=netframeworkdesktop-4.8&preserve-view=true
+
+    - title: Other desktop technologies # < 60 chars (optional)
+      items:
+      - title: Universal Windows Apps
+        summary: Universal Windows apps for all devices that run Windows 10
+        url: /uwp
+      - title: Xamarin.Forms
+        summary: Xamarin.Forms lets you build native apps using a .NET cross-platform UI 
+        url: /xamarin/xamarin-forms/
+
   # footer (optional)
   footer: "Contribute to .NET docs. Read our [contributor guide](/contribute/dotnet/dotnet-contribute)."
