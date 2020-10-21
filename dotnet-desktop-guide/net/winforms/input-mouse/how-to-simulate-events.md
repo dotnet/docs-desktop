@@ -1,61 +1,68 @@
 ---
-title: "Simulate mouse events"
-description: Learn how to simulate mouse events with the 
-ms.date: "07/16/2020"
+title: "How to simulate mouse events"
+description: Learn how to simulate mouse events in Windows Forms for .NET.
+ms.date: "08/03/2020"
 ms.topic: how-to
 dev_langs: 
   - "csharp"
   - "vb"
 helpviewer_keywords: 
-  - "keyboards [Windows Forms], event simulation"
+  - "mouse [Windows Forms], event simulation"
   - "user input [Windows Forms], simulating"
   - "SendKeys [Windows Forms], using"
 ---
 # How to simulate mouse events (Windows Forms .NET)
 
-Windows Forms provides several options for programmatically simulating mouse and keyboard input. This topic provides an overview of these options.
+Simulating mouse events in Windows Forms isn't as straight forward as simulating keyboard events. Windows Forms doesn't provide a helper class to move the mouse and invoke mouse-click actions. The only option for controlling the mouse is to use native Windows methods. If you're working with a custom control or a form, you can simulate a mouse event, but you can't directly control the mouse.
 
-## Simulating Keyboard Input
+## Events
 
-Although you can simulate keyboard input by using the strategies discussed above for mouse input, Windows Forms also provides the <xref:System.Windows.Forms.SendKeys> class for sending keystrokes to the active application.
+Most events have a corresponding method that invokes them, named in the pattern of `On` followed by `EventName`, such as `OnMouseMove`. This option is only possible within custom controls or forms, because these methods are protected and can't be accessed from outside the context of the control or form. The disadvantage to using a method such as `OnMouseMove` is that it doesn't actually control the mouse or interact with the control, it simply raises the associated event. For example, if you wanted to simulate hovering over an item in a <xref:System.Windows.Forms.ListBox>, `OnMouseMove` and the `ListBox` doesn't visually react with a highlighted item under the cursor.
 
-> [!CAUTION]
-> If your application is intended for international use with a variety of keyboards, the use of <xref:System.Windows.Forms.SendKeys.Send%2A?displayProperty=nameWithType> could yield unpredictable results and should be avoided.
+These protected methods are available to simulate mouse events.
 
-## Behavior
+- `OnMouseDown`
+- `OnMouseEnter`
+- `OnMouseHover`
+- `OnMouseLeave`
+- `OnMouseMove`
+- `OnMouseUp`
+- `OnMouseWheel`
+- `OnMouseClick`
+- `OnMouseDoubleClick`
 
-Behind the scenes, the <xref:System.Windows.Forms.SendKeys> class is susceptible to timing issues, which some developers have had to work around. The default mode of `SendKeys` is to use an older Windows implementation for sending input. If that fails, a newer Windows implementation is used. 
+For more information about these events, see [Using mouse events (Windows Forms .NET)](events.md)
 
- is susceptible to timing issues, but is slightly faster than and may require changes to the workarounds. The <xref:System.Windows.Forms.SendKeys> class tries to use the previous implementation first, and if that fails, uses the new implementation. As a result, the <xref:System.Windows.Forms.SendKeys> class may behave differently on different operating systems. Additionally, when the <xref:System.Windows.Forms.SendKeys> class uses the new implementation, the <xref:System.Windows.Forms.SendKeys.SendWait%2A> method will not wait for messages to be processed when they are sent to another process.
->
-> If your application relies on consistent behavior regardless of the operating system, you can force the <xref:System.Windows.Forms.SendKeys> class to use the new implementation by adding the following application setting to your app.config file.
->
-> ```xml
-> <appSettings>
->  <add key="SendKeys" value="SendInput"/>
-> </appSettings>
-> ```
->
-> To force the <xref:System.Windows.Forms.SendKeys> class to use the previous implementation, use the value `"JournalHook"` instead.
+## Invoke a click
 
-## To send a keystroke to the same application
+Considering most controls do something when clicked, like a button calling user code, or checkbox change its checked state, Windows Forms provides an easy way to trigger the click. Some controls, such as a combobox, don't do anything special when clicked and simulating a click has no effect on the control.
 
-Call the <xref:System.Windows.Forms.SendKeys.Send%2A> or <xref:System.Windows.Forms.SendKeys.SendWait%2A> method of the <xref:System.Windows.Forms.SendKeys> class. The specified keystrokes will be received by the active control of the application. The following code example uses <xref:System.Windows.Forms.SendKeys.Send%2A> to simulate pressing the ENTER key when the user double-clicks the surface of the form. This example assumes a <xref:System.Windows.Forms.Form> with a single <xref:System.Windows.Forms.Button> control that has a tab index of 0.
+### PerformClick
 
-[!code-cpp[System.Windows.Forms.SimulateKeyPress#10](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.SimulateKeyPress/cpp/form1.cpp#10)]
-[!code-csharp[System.Windows.Forms.SimulateKeyPress#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.SimulateKeyPress/CS/form1.cs#10)]
-[!code-vb[System.Windows.Forms.SimulateKeyPress#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.SimulateKeyPress/VB/form1.vb#10)]
+The <xref:System.Windows.Forms.IButtonControl?displayProperty=nameWithType> interface provides the <xref:System.Windows.Forms.IButtonControl.PerformClick%2A> method which simulates a click on the control. Both the <xref:System.Windows.Forms.Button?displayProperty=nameWithType> and <xref:System.Windows.Forms.LinkLabel?displayProperty=nameWithType> controls implement this interface.
 
-## To send a keystroke to a different application
+:::code language="csharp" source="snippets/how-to-simulate-events/csharp/Form1.cs" id="PerformClick":::
+:::code language="vb" source="snippets/how-to-simulate-events/vb/Form1.vb" id="PerformClick":::
 
-Activate the application window that will receive the keystrokes, and then call the <xref:System.Windows.Forms.SendKeys.Send%2A> or <xref:System.Windows.Forms.SendKeys.SendWait%2A> method. Because there is no managed method to activate another application, you must use native Windows methods to force focus on other applications. The following code example uses platform invoke to call the `FindWindow` and `SetForegroundWindow` methods to activate the Calculator application window, and then calls <xref:System.Windows.Forms.SendKeys.SendWait%2A> to issue a series of calculations to the Calculator application.
+### InvokeClick
 
-> [!NOTE]
-> The correct parameters of the `FindWindow` call that locates the Calculator application vary based on your version of Windows.  The following code finds the Calculator application on Windows 7. On Windows Vista, change the first parameter to "SciCalc". You can use the Spy++ tool, included with Visual Studio, to determine the correct parameters.
+With a form a custom control, use the <xref:System.Windows.Forms.Control.InvokeOnClick%2A> method to simulate a mouse click. This is a protected method that can only be called from within the form or a derived custom control.
 
-[!code-cpp[System.Windows.Forms.SimulateKeyPress#5](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.SimulateKeyPress/cpp/form1.cpp#5)]
-[!code-csharp[System.Windows.Forms.SimulateKeyPress#5](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.SimulateKeyPress/CS/form1.cs#5)]
-[!code-vb[System.Windows.Forms.SimulateKeyPress#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.SimulateKeyPress/VB/form1.vb#5)]
+For example, the following code clicks a checkbox from `button1`.
 
+:::code language="csharp" source="snippets/how-to-simulate-events/csharp/Form1.cs" id="ClickCheckbox":::
+:::code language="vb" source="snippets/how-to-simulate-events/vb/Form1.vb" id="ClickCheckbox":::
+
+## Use native Windows methods
+
+Windows provides methods you can call to simulate mouse movements and clicks such as [`User32.dll SendInput`](/windows/win32/api/winuser/nf-winuser-sendinput) and [`User32.dll SetCursorPos`](/windows/win32/api/winuser/nf-winuser-setcursorpos). The following example moves the mouse cursor to the center of a control:
+
+:::code language="csharp" source="snippets/how-to-simulate-events/csharp/Form2.cs" id="MoveCursor":::
+:::code language="vb" source="snippets/how-to-simulate-events/vb/Form2.vb" id="MoveCursor":::
 
 ## See also
+
+- [Overview of using the mouse (Windows Forms .NET)](overview.md)
+- [Using mouse events (Windows Forms .NET)](events.md)
+- [How to distinguish between clicks and double-clicks (Windows Forms .NET)](how-to-distinguish-between-clicks-and-double-clicks.md)
+- [Manage mouse pointers (Windows Forms .NET)](how-to-manage-cursor-pointer.md)

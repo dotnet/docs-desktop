@@ -5,7 +5,6 @@ ms.date: 07/08/2019
 dev_langs:
   - "csharp"
   - "vb"
-  - "cpp"
 helpviewer_keywords:
   - "Windows Forms, captions"
   - "Button control [Windows Forms], button text"
@@ -21,7 +20,6 @@ helpviewer_keywords:
   - "text [Windows Forms], Windows Forms controls"
   - "controls [Windows Forms], captions"
   - "forms [Windows Forms], captions"
-ms.assetid: 36b95bff-8780-479d-b86a-f1a0673653aa
 ---
 # How to: Set the text displayed by a control (Windows Forms .NET)
 
@@ -63,11 +61,6 @@ You can also set the text by using the [designer](#designer).
     button1.Font = new Font("Arial", 10, FontStyle.Bold, GraphicsUnit.Point);
     ```
 
-    ```cpp
-    button1->Text = "Click here to save changes";
-    button1->Font = new System::Drawing::Font("Arial", 10, FontStyle::Bold, GraphicsUnit::Point);
-    ```
-
     > [!NOTE]
     > You can use an escape character to display a special character in user-interface elements that would normally interpret them differently, such as menu items. For example, the following line of code sets the menu item's text to read "& Now For Something Completely Different":
 
@@ -79,12 +72,8 @@ You can also set the text by using the [designer](#designer).
     mpMenuItem.Text = "&& Now For Something Completely Different";
     ```
 
-    ```cpp
-    mpMenuItem->Text = "&& Now For Something Completely Different";
-    ```
-
 ## See also
 
 - <xref:System.Windows.Forms.Control.Text%2A?displayProperty=nameWithType>
-- [How to: Create Access Keys for Windows Forms Controls](how-to-create-access-keys-for-windows-forms-controls.md)
+- [How to: Create Access Keys for Windows Forms Controls](how-to-create-access-keys.md)
 - [How to: Respond to Windows Forms Button Clicks](how-to-respond-to-windows-forms-button-clicks.md)

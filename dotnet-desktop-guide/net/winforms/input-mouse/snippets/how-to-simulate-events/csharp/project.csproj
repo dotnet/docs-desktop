@@ -7,12 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Update="Form2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Update="Form2.cs" />
+    <Compile Update="Form1.cs" />
   </ItemGroup>
 
 </Project>
