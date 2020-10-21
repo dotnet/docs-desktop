@@ -1,5 +1,6 @@
 ---
 title: "Using mouse events"
+description: Overview of using mouse events to handle mouse input. Each event may provide associated data. This article provides a list of mouse-related events.
 ms.date: "07/16/2020"
 ms.topic: conceptual
 dev_langs: 
@@ -142,4 +143,7 @@ Toggle controls, such as the controls deriving from the <xref:System.Windows.For
 
 ## See also
 
-<!-- TODO -->
+- [Overview of using the mouse (Windows Forms .NET)](overview.md)
+- [Manage mouse pointers (Windows Forms .NET)](how-to-manage-cursor-pointer.md)
+- [How to simulate mouse events (Windows Forms .NET)](how-to-simulate-events.md)
+- <xref:System.Windows.Forms.Control?displayProperty=nameWithType>

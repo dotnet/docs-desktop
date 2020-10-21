@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <StartupObject>Sub Main</StartupObject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Update="Form1.vb" />
+  </ItemGroup>
+
+</Project>

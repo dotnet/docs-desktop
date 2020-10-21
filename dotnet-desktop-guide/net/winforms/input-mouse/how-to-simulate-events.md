@@ -1,5 +1,5 @@
 ---
-title: "Simulate mouse events"
+title: "How to simulate mouse events"
 description: Learn how to simulate mouse events in Windows Forms for .NET.
 ms.date: "08/03/2020"
 ms.topic: how-to
@@ -64,7 +64,5 @@ Windows provides methods you can call to simulate mouse movements and clicks suc
 
 - [Overview of using the mouse (Windows Forms .NET)](overview.md)
 - [Using mouse events (Windows Forms .NET)](events.md)
-- <xref:System.Windows.Forms.SendKeys>
-- <xref:System.Windows.Forms.Keys>
-- <xref:System.Windows.Forms.Control.KeyDown>
-- <xref:System.Windows.Forms.Control.KeyPress>
+- [How to distinguish between clicks and double-clicks (Windows Forms .NET)](how-to-distinguish-between-clicks-and-double-clicks.md)
+- [Manage mouse pointers (Windows Forms .NET)](how-to-manage-cursor-pointer.md)

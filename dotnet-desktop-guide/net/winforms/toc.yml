@@ -104,25 +104,19 @@ items:
 - name: User input - Mouse
   items:
   - name: Overview
-    href: file.md
+    href: input-mouse/overview.md
   - name: Using mouse events
-    href: file.md
+    href: input-mouse/events.md
   - name: Drag-and-drop functionality
-    href: file.md
-  - name: Input validation
-    href: file.md
+    href: input-mouse/drag-and-drop.md
   - name: Common tasks
     items:
     - name: Distinguish between clicks and double-clicks
-      href: file.md
+      href: input-mouse/how-to-distinguish-between-clicks-and-double-clicks.md
     - name: Control and modify the mouse pointer
-      href: file.md
-    - name: Capture the mouse pointer
-      href: file.md
-    - name: Handle input at the control level
-      href: file.md
+      href: input-mouse/how-to-manage-cursor-pointer.md
     - name: Simulate mouse events
-      href: file.md
+      href: input-mouse/how-to-simulate-events.md
 - name: Dialog boxes and popups
   items:
   - name: Overview
