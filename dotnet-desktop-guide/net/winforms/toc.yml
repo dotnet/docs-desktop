@@ -56,7 +56,7 @@ items:
     - name: Add create access key shortcuts
       href: controls/how-to-create-access-keys.md
     - name: Set the text displayed by a control
-      href: controls/how-to-set-the-dipslay-text.md
+      href: controls/how-to-set-the-display-text.md
     - name: Set the image displayed by a control
       href: controls/how-to-add-a-picture-to-a-control.md
 - name: Custom controls

@@ -5,7 +5,6 @@ ms.date: 06/15/2020
 dev_langs:
   - "csharp"
   - "vb"
-  - "cpp"
 helpviewer_keywords:
   - "controls [Windows Forms], access keys"
   - "Button control [Windows Forms], access keys"
@@ -47,11 +46,6 @@ Button1.Text = "&Print"
 button1.Text = "&Print";
 ```
 
-```cpp
-// Set the letter "P" as an access key.
-button1->Text = "&Print";
-```
-
 ## Use a label to focus a control
 
 Even though a label cannot be focused, it has the ability to focus the next control in the tab order of the form. Each control is assigned a value to the <xref:System.Windows.Forms.Control.TabIndex> property, generally in ascending sequential order. When the access key is assigned to the [Label.Text](xref:System.Windows.Forms.Label.Text) property, the next control in the sequential tab order is focused.
@@ -72,13 +66,6 @@ label1.TabIndex = 9
 button1.TabIndex = 10
 ```
 
-```cpp
-// Set the letter "P" as an access key.
-label1->Text = "&Print";
-label1->TabIndex = 9
-button1->TabIndex = 10
-```
-
 ## Display an ampersand
 
 When setting the text or caption of a control that interprets an ampersand (&) as an access key, use two consecutive ampersands (&&) to display a single ampersand. For example, the text of a button set to `"Print && Close"` displays in the caption of `Print & Close`:
@@ -91,11 +78,6 @@ Button1.Text = "Print && Close"
 ```csharp
 // Set the letter "P" as an access key.
 button1.Text = "Print && Close";
-```
-
-```cpp
-// Set the letter "P" as an access key.
-button1->Text = "Print && Close";
 ```
 
 :::image type="content" source="media/how-to-create-access-keys/double-ampersand.png" alt-text="displaying an ampersand in a button":::

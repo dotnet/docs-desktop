@@ -12,7 +12,7 @@ helpviewer_keywords:
 
 Receiving and handling mouse input is an important part of every Windows application. You can handle mouse events to carry out an action in your application, or use mouse location information to perform hit testing or other actions. Also, you can change the way the controls in your application handle mouse input. This article describes these mouse events in detail, and how to obtain and change system settings for the mouse.
 
-In Windows Forms, user input is sent to applications in the form of [Windows messages](https://docs.microsoft.com/windows/win32/winmsg/about-messages-and-message-queues). A series of overridable methods process these messages at the application, form, and control level. When these methods receive mouse messages, they raise events that can be handled to get information about the mouse input. In many cases, Windows Forms applications can process all user input simply by handling these events. In other cases, an application may override one of the methods that process messages to intercept a particular message before it's received by the application, form, or control.
+In Windows Forms, user input is sent to applications in the form of [Windows messages](/windows/win32/winmsg/about-messages-and-message-queues). A series of overridable methods process these messages at the application, form, and control level. When these methods receive mouse messages, they raise events that can be handled to get information about the mouse input. In many cases, Windows Forms applications can process all user input simply by handling these events. In other cases, an application may override one of the methods that process messages to intercept a particular message before it's received by the application, form, or control.
 
 ## Mouse Events
 
@@ -60,6 +60,3 @@ Forms and controls have access to the <xref:System.Windows.Forms.IMessageFilter>
 
 <!-- TODO -->
 
-- [Position and layout of controls](layout.md)
-- [Label control overview (Windows Forms .NET)](labels.md)
-- [Add a control (Windows Forms .NET)](how-to-add-to-a-form.md)

@@ -3,6 +3,9 @@ title: "Drag-and-drop mouse behaviors"
 description: Learn about how drag-and-drop works on Windows Forms, including how to perform drag-and-drop with the mouse.
 ms.date: "10/14/2020"
 ms.topic: conceptual
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords:
 - "drag and drop [Windows Forms], Windows Forms"
 - "Windows Forms, drag and drop"
@@ -83,7 +86,7 @@ For more information about the drag effects, see <xref:System.Windows.Forms.Drag
 
 ## See also
 
-- [Mouse Input in a Windows Forms Application](mouse-input-in-a-windows-forms-application.md)
+- [Overview of using the mouse (Windows Forms .NET)](overview.md)
 - <xref:System.Windows.Forms.Control.DragDrop?displayProperty=nameWithType>
 - <xref:System.Windows.Forms.Control.DragEnter?displayProperty=nameWithType>
 - <xref:System.Windows.Forms.Control.DragLeave?displayProperty=nameWithType>
