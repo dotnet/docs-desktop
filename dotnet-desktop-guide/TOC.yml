@@ -15,3 +15,7 @@ items:
     href: framework/wpf/index.md?view=netframeworkdesktop-4.8&preserve-view=true
   - name: XAML language reference
     href: xaml-services/?view=&preserve-view=true
+- name: What's new
+  items:
+  - name: September 2020
+    href: whats-new/dotnet-docs-desktop-2020-09-01.md
