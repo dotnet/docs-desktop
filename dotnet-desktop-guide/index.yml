@@ -7,6 +7,9 @@ metadata:
   title: Desktop Guide for WPF and Windows Forms on .NET
   description: Introduction to the Desktop Guide for WPF and Windows Forms for both .NET 5 and .NET Framework.
   ms.topic: landing-page
+  ms.product: dotnet
+  author: adegeo
+  ms.author: adegeo 
   ms.date: 10/21/2020
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
