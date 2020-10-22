@@ -1,0 +1,8 @@
+{
+    "redirections": [
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/getting-started-with-windows-forms.md",
+            "redirect_url": "/dotnet/desktop/winforms/?view=netdesktop-5.0"
+        }
+    ]
+}
