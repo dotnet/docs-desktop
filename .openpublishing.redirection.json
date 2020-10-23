@@ -1,8 +1,12 @@
 {
     "redirections": [
         {
-            "source_path": "dotnet-desktop-guide/net/winforms/windows-forms-overview",
+            "source_path": "dotnet-desktop-guide/net/winforms/windows-forms-overview.md",
             "redirect_url": "/dotnet/desktop/winforms/overview/?view=netdesktop-5.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/winforms/overview/index.md",
+            "redirect_url": "/dotnet/desktop/winforms/windows-forms-overview/?view=netframeworkdesktop-4.8"
         }
     ]
 }
