@@ -133,7 +133,7 @@ Now that the form has all of it's controls laid out, you need to handle the even
 
     The code we'll add in this handler will add the name specified by the `txtName` textbox control to the `lstNames` listbox control. However, we'll want there to be two conditions to adding the name: First, the name provide must not be balnk, and second, the name must not already exist.
 
-01. The following code demonstrates adding a name to the `lstNames` control: 
+01. The following code demonstrates adding a name to the `lstNames` control:
 
     ```csharp
     private void btnAdd_Click(object sender, EventArgs e)
