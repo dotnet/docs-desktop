@@ -26,7 +26,7 @@ In this tutorial, you learn how to:
 ## Prerequisites
 
 - [Visual Studio 2019 16.8 Preview 5](https://visualstudio.microsoft.com/vs/preview/)
-- [Visual Studio Desktop workload](/visualstudio/install/modify-visual-studio?view=vs-2019)
+- [Visual Studio Desktop workload](/visualstudio/install/modify-visual-studio?view=vs-2019&preserve-view=true)
 
 ## Create a WinForms app
 
