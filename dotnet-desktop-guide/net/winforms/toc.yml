@@ -6,7 +6,7 @@ items:
   - name: Overview
     href: overview/index.md
   - name: Create an app
-    href: https://docs.microsoft.com/visualstudio/ide/create-csharp-winform-visual-studio?toc=/dotnet/desktop-winforms/toc.json&bc=/dotnet/breadcrumb/toc.json
+    href: get-started/create-app-visual-studio.md
 - name: Migration
   items:
   - name: Differences from .NET Framework
