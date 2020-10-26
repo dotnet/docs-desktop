@@ -1,8 +1,7 @@
 ---
 title: "Modify keyboard key events"
 description: Learn how to intercept a key press and modify which key is pressed on a Windows Forms .NET application.
-ms.date: "07/16/2020"
-ms.topic: how-to
+ms.date: 10/26/2020
 dev_langs: 
   - "csharp"
   - "vb"
@@ -15,6 +14,8 @@ helpviewer_keywords:
 # How to modify keyboard key events (Windows Forms .NET)
 
 Windows Forms provides the ability to consume and modify keyboard input. Consuming a key refers to handling a key within a method or event handler so that other methods and events further down the message queue don't receive the key value. And, modifying a key refers to modifying the value of a key so that methods and event handlers further down the message queue receive a different key value. This article shows how to accomplish these tasks.
+
+[!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
 
 ## Consume a key
 

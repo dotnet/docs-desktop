@@ -1,8 +1,7 @@
 ---
 title: "Simulate keyboard events"
 description: Learn how to simulate keyboard events in Windows Forms for .NET.
-ms.date: "08/03/2020"
-ms.topic: how-to
+ms.date: 10/26/2020
 dev_langs: 
   - "csharp"
   - "vb"
@@ -14,6 +13,8 @@ helpviewer_keywords:
 # How to simulate keyboard events (Windows Forms .NET)
 
 Windows Forms provides a few options for programmatically simulating keyboard input. This article provides an overview of these options.
+
+[!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
 
 ## Use SendKeys
 

@@ -1,7 +1,7 @@
 ---
 title: "Drag-and-drop mouse behaviors"
 description: Learn about how drag-and-drop works on Windows Forms, including how to perform drag-and-drop with the mouse.
-ms.date: "10/14/2020"
+ms.date: 10/26/2020
 ms.topic: conceptual
 dev_langs: 
   - "csharp"
@@ -13,7 +13,9 @@ helpviewer_keywords:
 
 # Drag-and-drop mouse behavior overview (Windows Forms .NET)
 
-Windows Forms includes a set of methods, events, and classes that implement drag-and-drop behavior. This topic provides an overview of the drag-and-drop support in Windows Forms. Also see [Drag-and-Drop Operations and Clipboard Support](./advanced/drag-and-drop-operations-and-clipboard-support.md).
+Windows Forms includes a set of methods, events, and classes that implement drag-and-drop behavior. This topic provides an overview of the drag-and-drop support in Windows Forms.<!-- TODO Also see [Drag-and-Drop Operations and Clipboard Support](./advanced/drag-and-drop-operations-and-clipboard-support.md).-->
+
+[!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
 
 ## Drag-and-drop events
 

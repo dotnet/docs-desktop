@@ -1,8 +1,7 @@
 ---
 title: "How to simulate mouse events"
 description: Learn how to simulate mouse events in Windows Forms for .NET.
-ms.date: "08/03/2020"
-ms.topic: how-to
+ms.date: 10/26/2020
 dev_langs: 
   - "csharp"
   - "vb"
@@ -14,6 +13,8 @@ helpviewer_keywords:
 # How to simulate mouse events (Windows Forms .NET)
 
 Simulating mouse events in Windows Forms isn't as straight forward as simulating keyboard events. Windows Forms doesn't provide a helper class to move the mouse and invoke mouse-click actions. The only option for controlling the mouse is to use native Windows methods. If you're working with a custom control or a form, you can simulate a mouse event, but you can't directly control the mouse.
+
+[!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
 
 ## Events
 

@@ -1,7 +1,7 @@
 ---
 title: Control layout options
 description: Learn about the different settings on a control that affect layout and positioning in Windows Forms for .NET. Learn about the different types of control containers that affect layout.
-ms.date: "07/06/2020"
+ms.date: 10/26/2020
 ms.topic: overview
 helpviewer_keywords: 
   - "forms [Windows Forms], aligning controls"
@@ -23,6 +23,8 @@ helpviewer_keywords:
 # Position and layout of controls (Windows Forms .NET)
 
 Control placement in Windows Forms is determined not only by the control, but also by the parent of the control. This article describes the different settings provided by controls and the different types of parent containers that affect layout.
+
+[!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
 
 ## Fixed position and size
 
@@ -74,7 +76,7 @@ Anchoring a control allows you to tie the control to one or more sides of the pa
 
 A control can be anchored to one or more sides, without restriction. The anchor is set with the <xref:System.Windows.Forms.Control.Anchor> property.
 
-:::image type="content" source="media/layout/anchor-resize.gif" alt-text="Animation showing how A Windows Form with buttons docked in all positions is resized.":::
+:::image type="content" source="media/layout/anchor-resize.gif" alt-text="Animation showing how A Windows Form with buttons anchored in all positions is resized.":::
 
 ### Automatic sizing
 

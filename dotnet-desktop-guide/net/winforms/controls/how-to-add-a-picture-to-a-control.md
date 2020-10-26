@@ -1,7 +1,7 @@
 ---
 title: Display an image on a control
 description: Learn how to display an image on a Windows Form control. Many controls, such as the PictureBox, can display an image.
-ms.date: 06/15/2020
+ms.date: 10/26/2020
 dev_langs:
   - "csharp"
   - "vb"
@@ -17,6 +17,8 @@ helpviewer_keywords:
 # How to display an image on a control (Windows Forms .NET)
 
 Several Windows Forms controls can display images. These images can be icons that clarify the purpose of the control, such as a diskette icon on a button denoting the Save command. Alternatively, the icons can be background images to give the control the appearance and behavior you want.
+
+[!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
 
 ## Designer
 

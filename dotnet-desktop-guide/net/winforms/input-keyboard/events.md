@@ -1,6 +1,7 @@
 ---
 title: "Using keyboard events"
-ms.date: "07/16/2020"
+description: Overview of using keyboard events to handle keyboard input. This article provides a list of keyboard-related events and when to use them.
+ms.date: 10/26/2020
 ms.topic: overview
 dev_langs: 
   - "csharp"
@@ -16,6 +17,8 @@ helpviewer_keywords:
 # Using keyboard events (Windows Forms .NET)
 
 Most Windows Forms programs process keyboard input by handling the keyboard events. This article provides an overview of the keyboard events, including details on when to use each event and the data that is supplied for each event. For more information about events in general, see [Events overview (Windows Forms .NET)](../forms/events.md).
+
+[!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
 
 ## Keyboard events
 

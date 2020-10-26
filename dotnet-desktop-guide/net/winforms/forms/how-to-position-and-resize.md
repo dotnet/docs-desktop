@@ -1,8 +1,7 @@
 ---
 title: "Position and resize a form"
 description: "Learn how to set the size and position of a form in .NET Windows Forms and Visual Studio. The size and location can either be set in the Visual Studio designer or through code."
-ms.date: "05/12/2020"
-ms.topic: conceptual
+ms.date: 10/26/2020
 helpviewer_keywords:
   - "positioning Windows Forms"
   - "resizing Windows Forms"
@@ -15,6 +14,8 @@ helpviewer_keywords:
 When a form is created, the size and location is initially set to a default value. The default size of a form is generally a width and height of _800x500_ pixels. The initial location, when the form is displayed, depends on a few different settings.
 
 You can change the size of a form at design time with Visual Studio, and at run time with code.
+
+[!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
 
 ## Resize with the designer
 

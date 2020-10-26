@@ -1,7 +1,7 @@
 ---
 title: "Overview of mouse input"
-description: Learn about how keyboard input works in Windows Forms for .NET. Keyboard events are raised by forms and controls and represent keys that are down, pressed, or up.
-ms.date: "07/16/2020"
+description: Learn about how mouse input works in Windows Forms for .NET. Mouse events are raised by forms and controls and represent the position and button state of the mouse.
+ms.date: 10/26/2020
 ms.topic: overview
 helpviewer_keywords:
   - "Windows Forms, mouse input"
@@ -11,6 +11,8 @@ helpviewer_keywords:
 # Overview of using the mouse (Windows Forms .NET)
 
 Receiving and handling mouse input is an important part of every Windows application. You can handle mouse events to carry out an action in your application, or use mouse location information to perform hit testing or other actions. Also, you can change the way the controls in your application handle mouse input. This article describes these mouse events in detail, and how to obtain and change system settings for the mouse.
+
+[!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
 
 In Windows Forms, user input is sent to applications in the form of [Windows messages](/windows/win32/winmsg/about-messages-and-message-queues). A series of overridable methods process these messages at the application, form, and control level. When these methods receive mouse messages, they raise events that can be handled to get information about the mouse input. In many cases, Windows Forms applications can process all user input simply by handling these events. In other cases, an application may override one of the methods that process messages to intercept a particular message before it's received by the application, form, or control.
 
@@ -58,4 +60,6 @@ Forms and controls have access to the <xref:System.Windows.Forms.IMessageFilter>
 
 ## See also
 
-<!-- TODO -->
+- [Using mouse events (Windows Forms .NET)](events.md)
+- [Drag-and-drop mouse behavior overview (Windows Forms .NET)](drag-and-drop.md)
+- [Manage mouse pointers (Windows Forms .NET)](how-to-manage-cursor-pointer.md)

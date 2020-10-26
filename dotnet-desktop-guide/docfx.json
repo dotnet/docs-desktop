@@ -160,7 +160,8 @@
         "xaml-services/**/*.md": "dotnet-desktop"
       },
       "ms.topic": {
-        "xaml-services/**/*.md": "reference"
+        "xaml-services/**/*.md": "reference",
+        "**/*how-to*.md": "how-to"
       }
     },
     "template": [],

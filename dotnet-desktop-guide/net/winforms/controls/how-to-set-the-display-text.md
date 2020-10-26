@@ -1,7 +1,7 @@
 ---
 title: Set the Text displayed by a Control
 description: Learn how to set the text displayed by a Windows Forms control. Set or return the text by using the Text property, or change the font by using the Font property.
-ms.date: 07/08/2019
+ms.date: 10/26/2020
 dev_langs:
   - "csharp"
   - "vb"
@@ -27,6 +27,8 @@ Windows Forms controls usually display some text that's related to the primary f
 
 You can also set the text by using the [designer](#designer).
 
+[!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
+
 ## Designer
 
 01. In the **Properties** window in Visual Studio, set the **Text** property of the control to an appropriate string.
@@ -37,11 +39,11 @@ You can also set the text by using the [designer](#designer).
 
 01. In the **Properties** window, select the ellipsis button (![Ellipsis button (...) in the Properties window of Visual Studio](../media/visual-studio-ellipsis-button.png)) next to the **Font** property.
 
-    :::image type="content" source="media/how-to-set-the-text-displayed-by-a-windows-forms-control/properties-font.png" alt-text="Visual Studio Properties pane for .NET Windows Forms with Text property shown.":::
+    :::image type="content" source="media/how-to-set-the-text-displayed-by-a-windows-forms-control/properties-font.png" alt-text="Visual Studio Properties pane for .NET Windows Forms with Font property shown.":::
 
     In the standard font dialog box, adjust the font with settings such as type, size, and style.
 
-    :::image type="content" source="media/how-to-set-the-text-displayed-by-a-windows-forms-control/font-window.png" alt-text="Visual Studio Properties pane for .NET Windows Forms with Text property shown.":::
+    :::image type="content" source="media/how-to-set-the-text-displayed-by-a-windows-forms-control/font-window.png" alt-text="Visual Studio Properties pane for .NET Windows Forms with Font settings window.":::
 
 ## Programmatic
 
@@ -76,4 +78,3 @@ You can also set the text by using the [designer](#designer).
 
 - <xref:System.Windows.Forms.Control.Text%2A?displayProperty=nameWithType>
 - [How to: Create Access Keys for Windows Forms Controls](how-to-create-access-keys.md)
-- [How to: Respond to Windows Forms Button Clicks](how-to-respond-to-windows-forms-button-clicks.md)

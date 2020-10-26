@@ -1,7 +1,7 @@
 ---
 title: Add Controls to a Form
 description: Learn how to add a control a form in Windows Forms for .NET
-ms.date: 07/15/2020
+ms.date: 10/26/2020
 dev_langs:
   - "csharp"
   - "vb"
@@ -12,9 +12,11 @@ helpviewer_keywords:
 
 # Add a control (Windows Forms .NET)
 
-Most forms are designed by adding controls to the surface of the form to define a user interface (UI). A *control* is a component on a form used to display information or accept user input. For more information about controls, see [Forms overview](..\forms\overview.md).
+Most forms are designed by adding controls to the surface of the form to define a user interface (UI). A *control* is a component on a form used to display information or accept user input.<!-- TODO For more information about controls, see [Forms overview](..\forms\overview.md). -->
 
 The primary way a control is added to a form is through the Visual Studio Designer, but you can also manage the controls on a form at run time through code.
+
+[!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
 
 ## Add with Designer
 
@@ -44,7 +46,6 @@ The following code adds and positions two controls, a [Label](xref:System.Window
 
 ## See also
 
-- [How to: Respond to Windows Forms Button Clicks](how-to-respond-to-windows-forms-button-clicks.md)
 - [How to: Set the Text Displayed by a Windows Forms Control](how-to-set-the-display-text.md)
 - [How to: Add an access key shortcut to a control](how-to-create-access-keys.md)
 - <xref:System.Windows.Forms.Label>

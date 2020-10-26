@@ -1,7 +1,7 @@
 ---
 title: Create Access Keys for Controls
 description: Learn how to set the access key shortcut on a control or label in Windows Forms for .NET.
-ms.date: 06/15/2020
+ms.date: 10/26/2020
 dev_langs:
   - "csharp"
   - "vb"
@@ -25,6 +25,8 @@ helpviewer_keywords:
 An *access key* is an underlined character in the text of a menu, menu item, or the label of a control such as a button. With an access key, the user can "click" a button by pressing the <kbd>Alt</kbd> key in combination with the predefined access key. For example, if a button runs a procedure to print a form, and therefore its `Text` property is set to "Print," adding an ampersand (&) before the letter "P" causes the letter "P" to be underlined in the button text at run time. The user can run the command associated with the button by pressing <kbd>Alt</kbd>.
 
 Controls that cannot receive focus can't have access keys, except label controls.
+
+[!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
 
 ## Designer
 
@@ -84,8 +86,6 @@ button1.Text = "Print && Close";
 
 ## See also
 
+- [How to: Set the text displayed by a Windows Forms control](how-to-set-the-display-text.md)
 - <xref:System.Windows.Forms.Button>
 - <xref:System.Windows.Forms.Label>
-- [How to: Respond to Windows Forms Button Clicks](how-to-respond-to-windows-forms-button-clicks.md)
-- [How to: Set the text displayed by a Windows Forms control](how-to-set-the-display-text.md)
-- [Labeling Individual Windows Forms Controls and Providing Shortcuts to Them](labeling-individual-windows-forms-controls-and-providing-shortcuts-to-them.md)
