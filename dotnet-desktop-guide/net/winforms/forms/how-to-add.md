@@ -17,11 +17,11 @@ Add a new form with Visual Studio.
 
 01. In Visual Studio, find the **Project Explorer** pane. Right-click on the project and choose **Add** > **Form (Windows Forms)...**.
 
-    :::image type="content" source="media/right-click.png" alt-text="Right click solution explorer to add new form to windows forms project":::
+    :::image type="content" source="media/how-to-add/right-click.png" alt-text="Right click solution explorer to add new form to windows forms project":::
 
 01. In the **Name** box, type a name for your form, such as *MyNewForm*. Visual Studio will provide a default and unique name that you may use.
 
-    :::image type="content" source="media/new-form-dialog.png" alt-text="Add item dialog in visual studio for windows forms":::
+    :::image type="content" source="media/how-to-add/new-form-dialog.png" alt-text="Add item dialog in visual studio for windows forms":::
 
 Once the form has been added, Visual Studio will open the form designer for the form.
 
@@ -35,7 +35,7 @@ Alternatively, you can use Visual Studio to import a file into your project. Whe
 
 01. In Visual Studio, find the **Project Explorer** pane. Right-click on the project and choose **Add** > **Existing Item...**.
 
-    :::image type="content" source="media/existing-right-click.png" alt-text="Right click solution explorer to add existing form to windows forms project":::
+    :::image type="content" source="media/how-to-add/existing-right-click.png" alt-text="Right click solution explorer to add existing form to windows forms project":::
 
 02. Navigate to the folder containing your form files.
 

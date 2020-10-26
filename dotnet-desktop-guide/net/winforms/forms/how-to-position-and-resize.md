@@ -20,11 +20,11 @@ You can change the size of a form at design time with Visual Studio, and at run 
 
 After [adding a new form](how-to-add.md) to the project, the size of a form is set in two different ways. First, you can set it is with the size grips in the designer. By dragging either the right edge, bottom edge, or the corner, you can resize the form.
 
-:::image type="content" source="media/designer-grips.png" alt-text="Right click solution explorer to add new form to windows forms project":::
+:::image type="content" source="media/how-to-position-and-resize/designer-grips.png" alt-text="Right click solution explorer to add new form to windows forms project with grips":::
 
 The second way you can resize the form while the designer is open, is through the properties pane. Select the form, then find the **Properties** pane in Visual Studio. Scroll down to **size** and expand it. You can set the **Width** and **Height** manually.
 
-:::image type="content" source="media/designer-properties-size.png" alt-text="Right click solution explorer to add new form to windows forms project":::
+:::image type="content" source="media/how-to-position-and-resize/designer-properties-size.png" alt-text="Right click solution explorer to add new form to windows forms project":::
 
 ## Resize in code
 
@@ -75,7 +75,7 @@ If the `Size` isn't manually set, the form's default size is what it was set to 
 
 When a form is displayed, the initial location of the form is determined by the <xref:System.Windows.Forms.Form.StartPosition%2A> property. When a form is displayed, the value of this property is determined and the location of the form is set. The <xref:System.Windows.Forms.Form.Location%2A> property holds the current location the form. Both properties can be set through the designer.
 
-:::image type="content" source="media/startposition.png" alt-text="visual studio properties pane with start position highlighted":::
+:::image type="content" source="media/how-to-position-and-resize/startposition.png" alt-text="visual studio properties pane with start position highlighted":::
 
 | FormStartPosition Enum | Description                                                                                                      |
 |------------------------|------------------------------------------------------------------------------------------------------------------|
@@ -147,6 +147,6 @@ If the `Size` isn't set, the form's default size is what it was set to at design
 
 ## See also
 
-- [How to position and size a form (Windows Forms .NET)](how-to-position-and-resize.md)
+- [How to add a form to a project (Windows Forms .NET)](how-to-add.md)
 - [Events overview (Windows Forms .NET)](events.md)
 - [Position and layout of controls (Windows Forms .NET)](../controls/layout.md)
