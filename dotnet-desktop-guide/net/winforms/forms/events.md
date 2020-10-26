@@ -31,7 +31,7 @@ Delegates are classes commonly used within .NET to build event-handling mechanis
 
 This event model uses *delegates* to bind events to the methods that are used to handle them. The delegate enables other classes to register for event notification by specifying a handler method. When the event occurs, the delegate calls the bound method. For more information about how to define delegates, see [Handling and raising events](/dotnet/standard/events/index).
 
-Delegates can be bound to a single method or to multiple methods, referred to as multicasting. When creating a delegate for an event, you typically create a multicast event. A rare exception might be an event that results in a specific procedure (such as displaying a dialog box) that wouldn't logically repeat multiple times per event. For information about how to create a multicast delegate, see [How to combine delegates (Multicast Delegates)](../../csharp/programming-guide/delegates/how-to-combine-delegates-multicast-delegates.md).
+Delegates can be bound to a single method or to multiple methods, referred to as multicasting. When creating a delegate for an event, you typically create a multicast event. A rare exception might be an event that results in a specific procedure (such as displaying a dialog box) that wouldn't logically repeat multiple times per event. For information about how to create a multicast delegate, see [How to combine delegates (Multicast Delegates)](/dotnet/csharp/programming-guide/delegates/how-to-combine-delegates-multicast-delegates).
 
 A multicast delegate maintains an invocation list of the methods it's bound to. The multicast delegate supports a <xref:System.Delegate.Combine%2A> method to add a method to the invocation list and a <xref:System.Delegate.Remove%2A> method to remove it.
 
@@ -43,5 +43,8 @@ The binding mechanism used with delegates is dynamic: a delegate can be bound at
 
 ## See also
 
+- [Handling and raising events](/dotnet/standard/events/index)
+
+<!-- TODO
 - [Creating Event Handlers in Windows Forms](creating-event-handlers-in-windows-forms.md)
-- [Event Handlers Overview](event-handlers-overview-windows-forms.md)
+- [Event Handlers Overview](event-handlers-overview-windows-forms.md)-->

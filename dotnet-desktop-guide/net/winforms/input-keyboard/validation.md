@@ -19,8 +19,8 @@ If you need to require users to enter data in a well-defined format, such as a t
 
 The masking language that is used by <xref:System.Windows.Forms.MaskedTextBox> is flexible. It allows you to specify required characters, optional characters, literal characters, such as hyphens and parentheses, currency characters, and date separators. The control also works well when bound to a data source. The <xref:System.Windows.Forms.Binding.Format> event on a data binding can be used to reformat incoming data to comply with the mask, and the <xref:System.Windows.Forms.Binding.Parse> event can be used to reformat outgoing data to comply with the specifications of the data field.
 
-<!-- TODO -->
-For more information, see [MaskedTextBox Control](./controls/maskedtextbox-control-windows-forms.md).
+<!-- TODO
+For more information, see [MaskedTextBox Control](./controls/maskedtextbox-control-windows-forms.md).-->
 
 ## Event-driven validation
 
@@ -28,7 +28,7 @@ If you want full programmatic control over validation, or need complex validatio
 
 - If the postal code must belong to a specific group of zip codes, you can do a string comparison on the input to validate the data entered by the user. For example, if the postal code must be in the set `{10001, 10002, 10003}`, then you can use a string comparison to validate the data.
 
-- If the postal code must be in a specific form, you can use regular expressions to validate the data entered by the user. For example, to validate the form `#####` or `#####-####`, you can use the regular expression `^(\d{5})(-\d{4})?$`. To validate the form `A#A #A#`, you can use the regular expression `[A-Z]\d[A-Z] \d[A-Z]\d`. For more information about regular expressions, see [.NET Regular Expressions](/dotnet/standard/base-types/regular-expressions.md) and [Regular Expression Examples](../../standard/base-types/regular-expression-example-scanning-for-hrefs).
+- If the postal code must be in a specific form, you can use regular expressions to validate the data entered by the user. For example, to validate the form `#####` or `#####-####`, you can use the regular expression `^(\d{5})(-\d{4})?$`. To validate the form `A#A #A#`, you can use the regular expression `[A-Z]\d[A-Z] \d[A-Z]\d`. For more information about regular expressions, see [.NET Regular Expressions](/dotnet/standard/base-types/regular-expressions) and [Regular Expression Examples](/dotnet/standard/base-types/regular-expression-example-scanning-for-hrefs).
 
 - If the postal code must be a valid United States Zip code, you could call a Zip code Web service to validate the data entered by the user.
 
@@ -93,8 +93,7 @@ However, in some cases, you might want to let the user close the form regardless
 
 ## See also
 
+- [Using keyboard events (Windows Forms .NET)](events.md)
 - <xref:System.Windows.Forms.Control.Validating?displayProperty=nameWithType>
 - <xref:System.Windows.Forms.Form.FormClosing?displayProperty=nameWithType>
 - <xref:System.Windows.Forms.FormClosingEventArgs?displayProperty=nameWithType>
-- [Using keyboard events (Windows Forms .NET)](events.md)
-- [MaskedTextBox Control](./controls/maskedtextbox-control-windows-forms.md)

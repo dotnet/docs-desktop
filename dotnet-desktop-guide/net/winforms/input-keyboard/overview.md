@@ -31,7 +31,7 @@ Forms and controls have access to the <xref:System.Windows.Forms.IMessageFilter>
 | <xref:System.Windows.Forms.Control.DefWndProc%2A>              | This method performs the default processing of Windows messages at the form and control level. This provides the minimal functionality of a window.|
 | <xref:System.Windows.Forms.Control.OnNotifyMessage%2A>         | This method intercepts messages at the form and control level, after they have been processed. The <xref:System.Windows.Forms.ControlStyles.EnableNotifyMessage> style bit must be set for this method to be called.|
 
-Keyboard and mouse messages are also processed by an additional set of overridable methods that are specific to those types of messages. For more information, see the [Preprocessing keys](#preprocessing-keys) section. <!-- todo mouse link -->.
+Keyboard and mouse messages are also processed by an additional set of overridable methods that are specific to those types of messages. For more information, see the [Preprocessing keys](#preprocessing-keys) section. <!-- TODO mouse link -->.
 
 ## Types of keys
 
@@ -77,7 +77,7 @@ After keyboard messages reach the <xref:System.Windows.Forms.Control.WndProc%2A>
 
 ## Overriding keyboard methods
 
-There are many methods available for overriding when a keyboard message is preprocessed and processed; however, some methods are much better choices than others. Following table shows tasks you might want to accomplish and the best way to override the keyboard methods. For more information on overriding methods, see [Inheritance (C# Programming Guide)](../../csharp/programming-guide/classes-and-structs/inheritance.md#abstract-and-virtual-methods) or [Inheritance (Visual Basic)](../../visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics.md#overriding-properties-and-methods-in-derived-classes)
+There are many methods available for overriding when a keyboard message is preprocessed and processed; however, some methods are much better choices than others. Following table shows tasks you might want to accomplish and the best way to override the keyboard methods. For more information on overriding methods, see [Inheritance (C# Programming Guide)](/dotnet/csharp/programming-guide/classes-and-structs/inheritance.md#abstract-and-virtual-methods) or [Inheritance (Visual Basic)](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics.md#overriding-properties-and-methods-in-derived-classes)
 
 |Task|Method|
 |----------|------------|
@@ -97,4 +97,4 @@ There are many methods available for overriding when a keyboard message is prepr
 - [How to Check for modifier key presses (Windows Forms .NET)](how-to-check-modifier-key.md)
 - [How to simulate keyboard events (Windows Forms .NET)](how-to-simulate-events.md)
 - [How to handle keyboard input messages in the form (Windows Forms .NET)](how-to-handle-forms.md)
-- [Add a control (Windows Forms .NET)](how-to-add-to-a-form.md)
+- [Add a control (Windows Forms .NET)](../controls/how-to-add-to-a-form.md)

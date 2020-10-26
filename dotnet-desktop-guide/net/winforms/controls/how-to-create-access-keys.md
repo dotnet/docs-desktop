@@ -84,8 +84,6 @@ button1.Text = "Print && Close";
 
 ## See also
 
+- [How to: Set the text displayed by a Windows Forms control](how-to-set-the-display-text.md)
 - <xref:System.Windows.Forms.Button>
 - <xref:System.Windows.Forms.Label>
-- [How to: Respond to Windows Forms Button Clicks](how-to-respond-to-windows-forms-button-clicks.md)
-- [How to: Set the text displayed by a Windows Forms control](how-to-set-the-display-text.md)
-- [Labeling Individual Windows Forms Controls and Providing Shortcuts to Them](labeling-individual-windows-forms-controls-and-providing-shortcuts-to-them.md)

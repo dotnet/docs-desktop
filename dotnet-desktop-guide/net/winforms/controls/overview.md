@@ -25,14 +25,13 @@ The position a control appears on a parent is determined by the value of the <xr
 Besides manual positioning and sizing, various container controls are provided that help with automatic placement of controls.
 
 For more information, see [Position and layout of controls](layout.md).
+<!-- TODO
 
 ## Control events
 
-<!-- TODO -->
+-->
 
 ## See also
-
-<!-- TODO -->
 
 - [Position and layout of controls](layout.md)
 - [Label control overview (Windows Forms .NET)](labels.md)
