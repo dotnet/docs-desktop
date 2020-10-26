@@ -30,7 +30,7 @@ items:
     - name: Respond to scale changes
       href: forms/how-to-respond-to-scale-changes.md
     - name: Resize a form
-      href: how-to-resize.md
+      href: how-to-position-and-resize.md
     - name: Change the border style
       href: how-to-change-border.md
 - name: Controls
