@@ -20,6 +20,8 @@ helpviewer_keywords:
 
 With Windows Forms, you can develop and implement new controls. You can create a new user control, modify existing controls through inheritance, and write a custom control that does its own painting.
 
+[!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
+
 Deciding which kind of control to create can be confusing. This article highlights the differences among the various kinds of controls from which you can inherit, and provides you with information about how to choose a particular type of control for your project.
 
 <table>
