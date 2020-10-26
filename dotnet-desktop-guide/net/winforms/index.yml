@@ -7,7 +7,7 @@ metadata:
   title: Windows Forms for .NET 5 documentation
   description: Learn about using Windows Forms, an open-source, graphical user interface for Windows, on .NET 5.
   ms.topic: landing-page
-  ms.date: 04/05/2020
+  ms.date: 10/26/2020
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
 
@@ -16,7 +16,68 @@ landingContent:
   # Card
   - title: Learn about Windows Forms
     linkLists:
+      - linkListType: download
+        links:
+          - text: Visual Studio 2019 16.8 Preview 5
+            url: https://visualstudio.microsoft.com/vs/preview/
       - linkListType: overview
         links:
           - text: Windows Forms overview
             url: overview/index.md
+      - linkListType: tutorial
+        links:
+          - text: Create a new app
+            url: get-started/create-app-visual-studio.md
+
+  - title: Controls
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: About controls
+            url: controls/overview.md
+      - linkListType: concept
+        links:
+          - text: Layout
+            url: controls/layout.md
+      - linkListType: how-to-guide
+        links:
+          - text: Add a control
+            url: controls/how-to-add-to-a-form.md
+          - text: Add access (shortcut) keys
+            url: controls/how-to-create-access-keys.md
+
+  - title: Keyboard input
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: About the keyboard
+            url: input-keyboard/overview.md
+      - linkListType: concept
+        links:
+          - text: Keyboard events
+            url: input-keyboard/events.md
+      - linkListType: how-to-guide
+        links:
+          - text: Handle keyboard input
+            url: input-keyboard/how-to-handle-forms.md
+          - text: Modify key events
+            url: input-keyboard/how-to-change-key-press.md
+          
+  - title: Mouse input
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: About the mouse
+            url: input-mouse/overview.md
+      - linkListType: concept
+        links:
+          - text: Mouse events
+            url: input-mouse/events.md
+          - text: Drag-and-drop
+            url: input-mouse/drag-and-drop.md
+      - linkListType: how-to-guide
+        links:
+          - text: Manage the cursor
+            url: input-mouse/how-to-manage-cursor-pointer.md
+          - text: Simulate mouse events
+            url: input-mouse/how-to-simulate-events.md
