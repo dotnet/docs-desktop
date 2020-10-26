@@ -2,7 +2,6 @@
 title: "How to distinguish between single and double clicks"
 description: Describes different ways to detect the difference between a single or double click with a control or form for Windows Forms for .NET.
 ms.date: 10/26/2020
-ms.topic: how-to
 dev_langs: 
   - "csharp"
   - "vb"

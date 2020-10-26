@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "Windows Forms, automatic scaling"
 ---
 
-# Automatic scaling in Windows Forms
+# Automatic scaling (Windows Forms .NET)
 
 Automatic scaling enables a form and its controls, designed on one machine with a certain display resolution or font, to be displayed appropriately on another machine with a different display resolution or font. It assures that the form and its controls will intelligently resize to be consistent with native windows and other applications on both the users' and other developers' machines. Automatic scaling and visual styles enable Windows Forms applications to maintain a consistent look-and-feel when compared to native Windows applications on each user's machine.
 

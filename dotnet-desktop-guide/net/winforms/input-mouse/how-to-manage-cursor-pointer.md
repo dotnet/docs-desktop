@@ -2,7 +2,6 @@
 title: "How to manage mouse pointer"
 description: Learn how to access, control, and change the mouse pointer in Windows Forms for .NET.
 ms.date: 10/26/2020
-ms.topic: how-to
 dev_langs: 
   - "csharp"
   - "vb"

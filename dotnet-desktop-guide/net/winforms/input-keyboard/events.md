@@ -1,5 +1,6 @@
 ---
 title: "Using keyboard events"
+description: Overview of using keyboard events to handle keyboard input. This article provides a list of keyboard-related events and when to use them.
 ms.date: 10/26/2020
 ms.topic: overview
 dev_langs: 

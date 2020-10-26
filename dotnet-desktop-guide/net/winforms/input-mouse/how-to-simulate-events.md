@@ -2,7 +2,6 @@
 title: "How to simulate mouse events"
 description: Learn how to simulate mouse events in Windows Forms for .NET.
 ms.date: 10/26/2020
-ms.topic: how-to
 dev_langs: 
   - "csharp"
   - "vb"
