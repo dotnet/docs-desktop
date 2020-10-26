@@ -1,6 +1,6 @@
 ---
 title: "Overview of mouse input"
-description: Learn about how keyboard input works in Windows Forms for .NET. Keyboard events are raised by forms and controls and represent keys that are down, pressed, or up.
+description: Learn about how mouse input works in Windows Forms for .NET. Mouse events are raised by forms and controls and represent the position and button state of the mouse.
 ms.date: 10/26/2020
 ms.topic: overview
 helpviewer_keywords:

@@ -1,5 +1,6 @@
 ---
 title: "Overview of Using Controls"
+description: Learn about how controls are used in Windows Forms for .NET. Controls are reusable components that provide functionality to the user. Many ready-to-use controls are provided. You can also make new controls.
 ms.date: 10/26/2020
 ms.topic: overview
 dev_langs: 

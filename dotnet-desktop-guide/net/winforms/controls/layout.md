@@ -74,7 +74,7 @@ Anchoring a control allows you to tie the control to one or more sides of the pa
 
 A control can be anchored to one or more sides, without restriction. The anchor is set with the <xref:System.Windows.Forms.Control.Anchor> property.
 
-:::image type="content" source="media/layout/anchor-resize.gif" alt-text="Animation showing how A Windows Form with buttons docked in all positions is resized.":::
+:::image type="content" source="media/layout/anchor-resize.gif" alt-text="Animation showing how A Windows Form with buttons anchored in all positions is resized.":::
 
 ### Automatic sizing
 

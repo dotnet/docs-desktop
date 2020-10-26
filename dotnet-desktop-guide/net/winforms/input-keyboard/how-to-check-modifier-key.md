@@ -1,6 +1,6 @@
 ---
 title: "Check which modifier key is pressed"
-description: Learn how to handle keyboard input for your Windows Forms at the form level, before messages reach a control.
+description: Learn how to detect when the SHIFT, ALT, or CTRL keys are pressed in Windows Forms for .NET.
 ms.date: 10/26/2020
 dev_langs: 
   - "csharp"

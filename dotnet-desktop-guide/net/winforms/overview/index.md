@@ -16,13 +16,13 @@ There are two implementations of Windows Forms:
 
 01. The open-source implementation hosted on [GitHub](https://github.com/dotnet/winforms).
 
-    This version runs on .NET 5 and .NET Core 3.1. The Windows Forms Visual Designer requires, at a minimum, [Visual Studio 2019 version 16.X](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+desktopguide+winforms).
+    This version runs on .NET 5 and .NET Core 3.1. The Windows Forms Visual Designer requires, at a minimum, [Visual Studio 2019 version 16.8 Preview](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+desktopguide+winforms).
 
 01. The .NET Framework 4 implementation that's supported by Visual Studio 2019 and Visual Studio 2017.
 
     .NET Framework 4 is a Windows-only version of .NET and is considered a Windows Operating System component. This version of Windows Forms is distributed with .NET Framework.
 
-This Desktop Guide is written for Windows Froms on .NET 5. For more information about the .NET Framework version of Windows Forms, see [Windows Forms for .NET Framework](todo-some-link).
+This Desktop Guide is written for Windows Forms on .NET 5. For more information about the .NET Framework version of Windows Forms, see [Windows Forms for .NET Framework](../../../framework/winforms/index.yml?view=netframeworkdesktop-4.8&preserve-view=true).
 
 ## Introduction
 
