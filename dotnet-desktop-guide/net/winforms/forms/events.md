@@ -1,7 +1,7 @@
 ---
 title: "Events Overview"
 description: "A brief overview about events with .NET Windows Forms."
-ms.date: "05/11/2020"
+ms.date: 10/26/2020
 ms.topic: overview
 helpviewer_keywords:
   - "Windows Forms, event handling"

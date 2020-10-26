@@ -1,7 +1,7 @@
 ---
 title: "Handle keyboard input at the Form level"
 description: Learn how to handle keyboard input for your Windows Forms at the form level, before messages reach a control.
-ms.date: "07/16/2020"
+ms.date: 10/26/2020
 ms.topic: how-to
 dev_langs: 
   - "csharp"

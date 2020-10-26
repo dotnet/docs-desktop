@@ -1,6 +1,6 @@
 ---
 title: "Overview of Using Controls"
-ms.date: "07/16/2020"
+ms.date: 10/26/2020
 ms.topic: overview
 dev_langs: 
   - "csharp"

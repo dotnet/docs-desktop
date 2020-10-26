@@ -1,7 +1,7 @@
 ---
 title: "Overview of keyboard input"
 description: Learn about how keyboard input works in Windows Forms for .NET. Keyboard events are raised by forms and controls and represent keys that are down, pressed, or up.
-ms.date: "07/16/2020"
+ms.date: 10/26/2020
 ms.topic: overview
 dev_langs: 
   - "csharp"

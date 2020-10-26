@@ -1,7 +1,7 @@
 ---
 title: "Using mouse events"
 description: Overview of using mouse events to handle mouse input. Each event may provide associated data. This article provides a list of mouse-related events.
-ms.date: "07/16/2020"
+ms.date: 10/26/2020
 ms.topic: conceptual
 dev_langs: 
   - "csharp"

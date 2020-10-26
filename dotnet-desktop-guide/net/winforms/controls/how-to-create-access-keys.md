@@ -1,7 +1,7 @@
 ---
 title: Create Access Keys for Controls
 description: Learn how to set the access key shortcut on a control or label in Windows Forms for .NET.
-ms.date: 06/15/2020
+ms.date: 10/26/2020
 dev_langs:
   - "csharp"
   - "vb"

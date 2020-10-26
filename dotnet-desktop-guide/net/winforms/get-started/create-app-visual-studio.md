@@ -1,7 +1,7 @@
 ---
 title: "Create a new app with Visual Studio tutorial"
 description: Follow this tutorial to learn how to create a new Windows Forms app for .NET with Visual Studio 2019.
-ms.date: "10/23/2020"
+ms.date: 10/26/2020
 ms.topic: tutorial
 dev_langs: 
   - "csharp"

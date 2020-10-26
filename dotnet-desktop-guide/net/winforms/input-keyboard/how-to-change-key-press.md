@@ -1,7 +1,7 @@
 ---
 title: "Modify keyboard key events"
 description: Learn how to intercept a key press and modify which key is pressed on a Windows Forms .NET application.
-ms.date: "07/16/2020"
+ms.date: 10/26/2020
 ms.topic: how-to
 dev_langs: 
   - "csharp"

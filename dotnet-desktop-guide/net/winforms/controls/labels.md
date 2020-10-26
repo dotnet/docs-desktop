@@ -1,7 +1,7 @@
 ---
 title: Label control
 description: Learn about the Label control in Windows Forms for .NET. Labels are used to identify visual elements to the user.
-ms.date: 06/15/2020
+ms.date: 10/26/2020
 ms.topic: overview
 f1_keywords: 
   - "Label"

@@ -1,8 +1,8 @@
 ---
 title: "Position and resize a form"
 description: "Learn how to set the size and position of a form in .NET Windows Forms and Visual Studio. The size and location can either be set in the Visual Studio designer or through code."
-ms.date: "05/12/2020"
-ms.topic: conceptual
+ms.date: 10/26/2020
+ms.topic: how-to
 helpviewer_keywords:
   - "positioning Windows Forms"
   - "resizing Windows Forms"

@@ -1,7 +1,7 @@
 ---
 title: Control layout options
 description: Learn about the different settings on a control that affect layout and positioning in Windows Forms for .NET. Learn about the different types of control containers that affect layout.
-ms.date: "07/06/2020"
+ms.date: 10/26/2020
 ms.topic: overview
 helpviewer_keywords: 
   - "forms [Windows Forms], aligning controls"

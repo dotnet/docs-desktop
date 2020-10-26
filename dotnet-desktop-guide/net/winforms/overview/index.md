@@ -1,7 +1,7 @@
 ---
 title: What is Windows Forms
 description: This article gives an overview of Windows Forms with .NET Core and .NET 5.
-ms.date: 05/07/2020
+ms.date: 10/26/2020
 ms.topic: overview
 #Customer intent: As a developer, I want to understand the components of Windows Forms so that I can understand the overall picture of Windows Forms.
 ---
