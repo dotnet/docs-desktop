@@ -19,6 +19,8 @@ items:
       href: forms/how-to-add.md
     - name: Resize a form
       href: forms/how-to-position-and-resize.md
+    - name: Position a form
+      href: forms/how-to-position-and-resize.md#position-with-the-designer
 - name: Controls
   items:
   - name: Overview
