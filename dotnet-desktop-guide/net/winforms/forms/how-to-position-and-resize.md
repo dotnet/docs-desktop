@@ -77,7 +77,7 @@ If the `Size` isn't manually set, the form's default size is what it was set to 
 
 ## Position with the designer
 
-When a form is displayed, the initial location of the form is determined by the <xref:System.Windows.Forms.Form.StartPosition%2A> property. When a form is displayed, the value of this property is determined and the location of the form is set. The <xref:System.Windows.Forms.Form.Location%2A> property holds the current location the form. Both properties can be set through the designer.
+When a form instance is created and displayed, the initial location of the form is determined by the <xref:System.Windows.Forms.Form.StartPosition%2A> property. The <xref:System.Windows.Forms.Form.Location%2A> property holds the current location the form. Both properties can be set through the designer.
 
 :::image type="content" source="media/how-to-position-and-resize/startposition.png" alt-text="visual studio properties pane with start position highlighted":::
 
