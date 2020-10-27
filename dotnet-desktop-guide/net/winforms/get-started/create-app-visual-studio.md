@@ -58,7 +58,9 @@ Once the app is generated, Visual Studio should open the designer pane for the d
 
 Support for WinForms in Visual Studio has four important components that you'll interact with as you create an app:
 
-01. Solution explorer
+:::image type="content" source="media/create-app-visual-studio/vs-main-window.png" alt-text="The important components of Visual Studio you should know when creating a Windows Forms project for .NET":::
+
+01. Solution Explorer
 
     All if your project files, code, forms, resources, will appear in this pane.
 
@@ -73,8 +75,6 @@ Support for WinForms in Visual Studio has four important components that you'll 
 04. Toolbox
 
     The toolbox contains all of the controls you can add to a form. To add a control to the current form, double-click a control or drag-and-drop the control.
-
-    :::image type="content" source="media/create-app-visual-studio/vs-main-window.png" alt-text="The important components of Visual Studio you should know when creating a Windows Forms project for .NET":::
 
 ## Add controls to the form
 
