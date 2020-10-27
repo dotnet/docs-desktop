@@ -9,7 +9,6 @@ helpviewer_keywords:
 dev_langs:
   - "csharp"
   - "vb"
-  - "cpp"
 ---
 
 # Providing Accessibility Information for Controls (Windows Forms .NET)

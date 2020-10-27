@@ -10,7 +10,7 @@ dev_langs:
 
 # Tutorial: Create a new WinForms app (Windows Forms .NET)
 
-In this short tutorial, you'll learn how to create a new Windows Forms (WinForms) app with Visual Studio. Once the initial app has been generated, you'll learn how to add controls and how to handle events. By the end of this tutorial you'll have a simple app that adds names to a list box.
+In this short tutorial, you'll learn how to create a new Windows Forms (WinForms) app with Visual Studio. Once the initial app has been generated, you'll learn how to add controls and how to handle events. By the end of this tutorial, you'll have a simple app that adds names to a list box.
 
 [!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
 
@@ -25,7 +25,7 @@ In this tutorial, you learn how to:
 
 ## Prerequisites
 
-- [Visual Studio 2019 16.8 Preview](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+desktopguide+winforms)
+- [Visual Studio 2019 version 16.8 Preview](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+desktopguide+winforms)
 - [Visual Studio Desktop workload](/visualstudio/install/modify-visual-studio?view=vs-2019&preserve-view=true)
 
 ## Create a WinForms app
@@ -39,7 +39,7 @@ The first step to creating a new app is opening Visual Studio and generating the
 
 01. In the **Search for templates** box, type **winforms**, and then press <kbd>Enter</kbd>.
 01. In the **code language** dropdown, choose **C#** or **Visual Basic**.
-01. The templates list, select **Windows Forms App (.NET)** and then click **Next**.
+01. In the templates list, select **Windows Forms App (.NET)** and then click **Next**.
 
     > [!IMPORTANT]
     > Don't select the **Windows Forms App (.NET _Framework_)** template.
@@ -52,7 +52,7 @@ The first step to creating a new app is opening Visual Studio and generating the
 
     :::image type="content" source="media/create-app-visual-studio/vs-config-new-project.png" alt-text="Configure new Windows Forms project in Visual Studio 2019 for .NET":::
 
-Once the app is generated, Visual Studio should open the designer pane for the default form, _Form1_. If the form designer isn't visible, double-click on the form in the **Solution explorer** pane to open the designer window.
+Once the app is generated, Visual Studio should open the designer pane for the default form, _Form1_. If the form designer isn't visible, double-click on the form in the **Solution Explorer** pane to open the designer window.
 
 ### Important parts of Visual Studio
 
@@ -64,7 +64,7 @@ Support for WinForms in Visual Studio has four important components that you'll 
 
 02. Properties
 
-    This pane shows property settings you can configure based on the item selected. For example, if you select an item from the **Solution explorer** you'll see property settings related to the file. If you select an object in the **Designer** you'll see settings for the control or form.
+    This pane shows property settings you can configure based on the item selected. For example, if you select an item from **Solution Explorer**, you'll see property settings related to the file. If you select an object in the **Designer**, you'll see settings for the control or form.
 
 03. Form Designer
 
@@ -85,7 +85,7 @@ With the _Form1_ form designer open, use the **Toolbox** pane to add the followi
 - Listbox
 - Textbox
 
-You can position and size the controls according to the following settings. Either visually move them to match the screenshot below, or click on each control and configure the settings in the **Properties** pane. You can also click on the form title area to select the form:
+You can position and size the controls according to the following settings. Either visually move them to match the screenshot that follows, or click on each control and configure the settings in the **Properties** pane. You can also click on the form title area to select the form:
 
 | Object  | Setting  | Value      |
 |---------|----------|------------|
@@ -110,13 +110,13 @@ You should have a form in the designer that looks similar to the following:
 
 ## Handle events
 
-Now that the form has all of it's controls laid out, you need to handle the events of the controls to respond to user input. With the form designer still open, perform the following:
+Now that the form has all of its controls laid out, you need to handle the events of the controls to respond to user input. With the form designer still open, perform the following steps:
 
 01. Select the button control on the form.
 01. In the **Properties** pane, click on the events icon :::image type="icon" source="media/create-app-visual-studio/icon-events.png" border="false"::: to list the events of the button.
 01. Find the **Click** event and double-click it to generate an event handler.
 
-    This action adds a the following code to the the form:
+    This action adds the following code to the the form:
 
     ```csharp
     private void btnAdd_Click(object sender, EventArgs e)
@@ -131,7 +131,7 @@ Now that the form has all of it's controls laid out, you need to handle the even
     End Sub
     ```
 
-    The code we'll add in this handler will add the name specified by the `txtName` textbox control to the `lstNames` listbox control. However, we'll want there to be two conditions to adding the name: First, the name provide must not be balnk, and second, the name must not already exist.
+    The code we'll put in this handler will add the name specified by the `txtName` textbox control to the `lstNames` listbox control. However, we want there to be two conditions to adding the name: the name provided must not be blank, and the name must not already exist.
 
 01. The following code demonstrates adding a name to the `lstNames` control:
 
@@ -153,7 +153,7 @@ Now that the form has all of it's controls laid out, you need to handle the even
 
 ## Run the app
 
-Now that the event has been coded, you can run the app by pressing the <kbd>F5</kbd> key or from the menu with **Debug** > **Start Debugging**. The form will displayed and you can add a name to the textbox and add it by clicking the button.
+Now that the event has been coded, you can run the app by pressing the <kbd>F5</kbd> key or by selecting **Debug** > **Start Debugging** from the menu. The form displays and you can enter a name in the textbox and then add it by clicking the button.
 
 :::image type="content" source="media/create-app-visual-studio/app-running.png" alt-text="Running a Windows Forms for .NET app.":::
 

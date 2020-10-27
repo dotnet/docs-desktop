@@ -8,7 +8,7 @@ helpviewer_keywords:
 
 # How to add a form to a project (Windows Forms .NET)
 
-Forms can be added to your project with Visual Studio. When your app has multiple forms, you can choose which is the startup form for your app, and you can display a multiple forms at the same time.
+Add forms to your project with Visual Studio. When your app has multiple forms, you can choose which is the startup form for your app, and you can display multiple forms at the same time.
 
 [!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
 
@@ -16,7 +16,7 @@ Forms can be added to your project with Visual Studio. When your app has multipl
 
 Add a new form with Visual Studio.
 
-01. In Visual Studio, find the **Project Explorer** pane. Right-click on the project and choose **Add** > **Form (Windows Forms)...**.
+01. In Visual Studio, find the **Project Explorer** pane. Right-click on the project and choose **Add** > **Form (Windows Forms)**.
 
     :::image type="content" source="media/how-to-add/right-click.png" alt-text="Right click solution explorer to add new form to windows forms project":::
 
@@ -24,17 +24,17 @@ Add a new form with Visual Studio.
 
     :::image type="content" source="media/how-to-add/new-form-dialog.png" alt-text="Add item dialog in visual studio for windows forms":::
 
-Once the form has been added, Visual Studio will open the form designer for the form.
+Once the form has been added, Visual Studio opens the form designer for the form.
 
 ## Add a project reference to a form
 
 If you have the source files to a form, you can add the form to your project by copying the files into the same folder as your project. The project automatically references any code files that are in the same folder or child folder of your project.
 
-Forms are made up of two files which share the same name: _form2.cs_ (_form2_ being an example of a file name) and _form2.Designer.cs_. Sometimes a resource file exists, sharing the same name, _form2.resx_. In in the previous example, _form2_ represents the base file name. You'll want to copy all related files to your project folder.
+Forms are made up of two files that share the same name: _form2.cs_ (_form2_ being an example of a file name) and _form2.Designer.cs_. Sometimes a resource file exists, sharing the same name, _form2.resx_. In in the previous example, _form2_ represents the base file name. You'll want to copy all related files to your project folder.
 
 Alternatively, you can use Visual Studio to import a file into your project. When you add an existing file to your project, the file is copied into the same folder as your project.
 
-01. In Visual Studio, find the **Project Explorer** pane. Right-click on the project and choose **Add** > **Existing Item...**.
+01. In Visual Studio, find the **Project Explorer** pane. Right-click on the project and choose **Add** > **Existing Item**.
 
     :::image type="content" source="media/how-to-add/existing-right-click.png" alt-text="Right click solution explorer to add existing form to windows forms project":::
 

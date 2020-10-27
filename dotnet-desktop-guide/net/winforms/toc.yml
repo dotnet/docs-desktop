@@ -37,19 +37,19 @@ items:
     items:
     - name: Add a control to a form
       href: controls/how-to-add-to-a-form.md
-    - name: Add create access key shortcuts
+    - name: Create access key shortcuts
       href: controls/how-to-create-access-keys.md
     - name: Set the text displayed by a control
       href: controls/how-to-set-the-display-text.md
     - name: Set the image displayed by a control
       href: controls/how-to-add-a-picture-to-a-control.md
-- name: User input - Keyboard
+- name: User input - keyboard
   items:
   - name: Overview
     href: input-keyboard/overview.md
-  - name: Using keyboard events
+  - name: Use keyboard events
     href: input-keyboard/events.md
-  - name: Input validation
+  - name: Validate input
     href: input-keyboard/validation.md
   - name: Common tasks
     items:
@@ -61,11 +61,11 @@ items:
       href: input-keyboard/how-to-handle-forms.md
     - name: Simulate keyboard events
       href: input-keyboard/how-to-simulate-events.md
-- name: User input - Mouse
+- name: User input - mouse
   items:
   - name: Overview
     href: input-mouse/overview.md
-  - name: Using mouse events
+  - name: Use mouse events
     href: input-mouse/events.md
   - name: Drag-and-drop functionality
     href: input-mouse/drag-and-drop.md

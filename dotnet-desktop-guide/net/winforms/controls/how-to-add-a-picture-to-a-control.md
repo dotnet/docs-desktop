@@ -5,7 +5,6 @@ ms.date: 10/26/2020
 dev_langs:
   - "csharp"
   - "vb"
-  - "cpp"
 helpviewer_keywords:
   - "Button control [Windows Forms], images"
   - "Windows Forms controls, images"
@@ -47,14 +46,6 @@ PictureBox1.Image = Image.FromFile _
    (System.Environment.GetFolderPath _
    (System.Environment.SpecialFolder.MyPictures) _
    & "\Image.gif")
-```
-
-```cpp
-// Replace the image named below with your own icon.
-pictureBox1->Image = Image::FromFile(String::Concat
-   (System::Environment::GetFolderPath
-   (System::Environment::SpecialFolder::MyPictures),
-   "\\Image.gif"));
 ```
 
 ## See also

@@ -26,9 +26,9 @@ This Desktop Guide is written for Windows Forms on .NET 5. For more information 
 
 ## Introduction
 
-Windows Forms also provides one of the most productive ways to create desktop apps based on the visual designer provided in Visual Studio. It is a UI framework for building Windows desktop apps. It enables drag-and-drop of visual controls and other similar functionality that makes it easy to build desktop apps.
+Windows Forms is a UI framework for building Windows desktop apps. It provides one of the most productive ways to create desktop apps based on the visual designer provided in Visual Studio. Functionality such as drag-and-drop placement of visual controls makes it easy to build desktop apps.
 
-With Windows Forms you develop graphically rich apps that are easy to deploy, update, and work while offline or while connected to the internet. Windows Forms apps can access the local hardware and filesystem of the computer where the app is running.
+With Windows Forms, you develop graphically rich apps that are easy to deploy, update, and work while offline or while connected to the internet. Windows Forms apps can access the local hardware and file system of the computer where the app is running.
 
 To learn how to create a Windows Forms app, see [Tutorial: Create a new WinForms app (Windows Forms .NET)](../get-started/create-app-visual-studio.md).
 
@@ -42,9 +42,9 @@ When a user does something to your form or one of its controls, the action gener
 
 Windows Forms contains a variety of controls that you can add to forms: controls that display text boxes, buttons, drop-down boxes, radio buttons, and even webpages.<!-- TODO For a list of all the controls you can use on a form, see [Controls to Use on Windows Forms](./controls/controls-to-use-on-windows-forms.md).--> If an existing control doesn't meet your needs, Windows Forms also supports creating your own custom controls using the <xref:System.Windows.Forms.UserControl> class.
 
-Windows Forms has rich UI controls that emulate features in high-end apps like Microsoft Office. When you use the <xref:System.Windows.Forms.ToolStrip> and <xref:System.Windows.Forms.MenuStrip> control, you can create toolbars and menus that contain text and images, display submenus, and host other controls such as text boxes and combo boxes.
+Windows Forms has rich UI controls that emulate features in high-end apps like Microsoft Office. When you use the <xref:System.Windows.Forms.ToolStrip> and <xref:System.Windows.Forms.MenuStrip> controls, you can create toolbars and menus that contain text and images, display submenus, and host other controls such as text boxes and combo boxes.
 
-With the drag-and-drop **Windows Forms Designer** in Visual Studio, you can easily create Windows Forms apps. Just select the controls with your cursor and add them where you want on the form. The designer provides tools such as gridlines and snap lines to take the hassle out of aligning controls. You can use the <xref:System.Windows.Forms.FlowLayoutPanel>, <xref:System.Windows.Forms.TableLayoutPanel>, and <xref:System.Windows.Forms.SplitContainer> controls to create advanced form layouts in less time.
+With the drag-and-drop **Windows Forms Designer** in Visual Studio, you can easily create Windows Forms apps. Just select the controls with your cursor and place them where you want on the form. The designer provides tools such as gridlines and snap lines to take the hassle out of aligning controls. You can use the <xref:System.Windows.Forms.FlowLayoutPanel>, <xref:System.Windows.Forms.TableLayoutPanel>, and <xref:System.Windows.Forms.SplitContainer> controls to create advanced form layouts in less time.
 
 Finally, if you must create your own custom UI elements, the <xref:System.Drawing> namespace contains a large selection of classes to render lines, circles, and other shapes directly on a form.
 
@@ -69,7 +69,7 @@ Many apps must display data from a database, XML or JSON file, web service, or o
 
 Connecting to data sources over a network is a simple task with Windows Forms. The <xref:System.Windows.Forms.BindingSource> component represents a connection to a data source, and exposes methods for binding data to controls, navigating to the previous and next records, editing records, and saving changes back to the original source. The <xref:System.Windows.Forms.BindingNavigator> control provides a simple interface over the <xref:System.Windows.Forms.BindingSource> component for users to navigate between records.
 
-You can create data-bound controls easily by using the Data Sources window. The window displays data sources such as databases, web services, and objects in your project. You can create data-bound controls by dragging items from this window onto forms in your project. You can also data-bind existing controls to data by dragging objects from the Data Sources window onto existing controls.
+You can create data-bound controls easily by using the Data Sources window in Visual Studio. The window displays data sources such as databases, web services, and objects in your project. You can create data-bound controls by dragging items from this window onto forms in your project. You can also data-bind existing controls to data by dragging objects from the Data Sources window onto existing controls.
 
 Another type of data binding you can manage in Windows Forms is *settings*. Most apps must retain some information about their run-time state, such as the last-known size of forms, and retain user preference data, such as default locations for saved files. The Application Settings feature addresses these requirements by providing an easy way to store both types of settings on the client computer. After you define these settings by using either Visual Studio or a code editor, the settings are persisted as XML and automatically read back into memory at run time.
 
@@ -93,7 +93,7 @@ After you have written your app, you must send the app to your users so that the
 
 ClickOnce apps can be configured to run only when the user is connected to the network, or to run both online and offline. When you specify that an app should support offline operation, ClickOnce adds a link to your app in the user's **Start** menu. The user can then open the app without using the URL.
 
-When you update your app, you publish a new deployment manifest and a new copy of your app to your web server. ClickOnce will detect that there is an update available and upgrade the user's installation; no custom programming is required to update old apps.
+When you update your app, you publish a new deployment manifest and a new copy of your app to your web server. ClickOnce will detect that there is an update available and upgrade the user's installation. No custom programming is required to update old apps.
 
 <!-- TODO
 
