@@ -1,0 +1,208 @@
+{
+    "redirections": [
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/windows-forms-overview.md",
+            "redirect_url": "/dotnet/desktop/winforms/overview/?view=netdesktop-5.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/winforms/overview/index.md",
+            "redirect_url": "/dotnet/desktop/winforms/windows-forms-overview?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/how-to-create-a-windows-forms-application-from-the-command-line.md",
+            "redirect_url": "/dotnet/desktop/winforms/get-started/create-app-visual-studio?view=netdesktop-5.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/winforms/get-started/create-app-visual-studio.md",
+            "redirect_url": "/dotnet/desktop/winforms/how-to-create-a-windows-forms-application-from-the-command-line?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/events-overview-windows-forms.md",
+            "redirect_url": "/dotnet/desktop/winforms/forms/events?view=netdesktop-5.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/winforms/forms/events.md",
+            "redirect_url": "/dotnet/desktop/winforms/creating-event-handlers-in-windows-forms?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/automatic-scaling-in-windows-forms.md",
+            "redirect_url": "/dotnet/desktop/winforms/forms/autoscale?view=netdesktop-5.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/winforms/forms/autoscale.md",
+            "redirect_url": "/dotnet/desktop/winforms/automatic-scaling-in-windows-forms?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/how-to-resize-windows-forms.md",
+            "redirect_url": "/dotnet/desktop/winforms/forms/how-to-position-and-resize?view=netdesktop-5.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/winforms/forms/how-to-position-and-resize.md",
+            "redirect_url": "/dotnet/desktop/winforms/how-to-resize-windows-forms?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/controls/layout-in-windows-forms-controls.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls/layout?view=netdesktop-5.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/winforms/controls/layout.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls/layout-in-windows-forms-controls?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/controls/label-control-overview-windows-forms.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls/labels?view=netdesktop-5.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/winforms/controls/labels.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls/label-control-overview-windows-forms?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/controls/varieties-of-custom-controls.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls/custom?view=netdesktop-5.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/winforms/controls/custom.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls/control-type-recommendations?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/controls/custom-control-painting-and-rendering.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls/custom-painting-drawing?view=netdesktop-5.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/winforms/controls/custom-painting-drawing.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls/user-drawn-controls?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/controls/how-to-add-controls-to-windows-forms.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-add-to-a-form?view=netdesktop-5.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/winforms/controls/how-to-add-to-a-form.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-add-controls-to-windows-forms?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/controls/how-to-create-access-keys-for-windows-forms-controls.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-create-access-keys?view=netdesktop-5.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/winforms/controls/how-to-create-access-keys.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-create-access-keys-for-windows-forms-controls?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/controls/how-to-set-the-text-displayed-by-a-windows-forms-control.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-set-the-display-text?view=netdesktop-5.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/winforms/controls/how-to-set-the-display-text.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-set-the-text-displayed-by-a-windows-forms-control?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/controls/how-to-set-the-image-displayed-by-a-windows-forms-control.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-add-a-picture-to-a-control?view=netdesktop-5.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/winforms/controls/how-to-add-a-picture-to-a-control.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-set-the-image-displayed-by-a-windows-forms-control?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/keyboard-input-in-a-windows-forms-application.md",
+            "redirect_url": "/dotnet/desktop/winforms/input-keyboard/overview?view=netdesktop-5.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/winforms/input-keyboard/overview.md",
+            "redirect_url": "/dotnet/desktop/winforms/how-keyboard-input-works?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/using-keyboard-events.md",
+            "redirect_url": "/dotnet/desktop/winforms/input-keyboard/events?view=netdesktop-5.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/winforms/input-keyboard/events.md",
+            "redirect_url": "/dotnet/desktop/winforms/using-keyboard-events?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/user-input-validation-in-windows-forms.md",
+            "redirect_url": "/dotnet/desktop/winforms/input-keyboard/validation?view=netdesktop-5.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/winforms/input-keyboard/validation.md",
+            "redirect_url": "/dotnet/desktop/winforms/user-input-validation-in-windows-forms?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/how-to-modify-keyboard-input-to-a-standard-control.md",
+            "redirect_url": "/dotnet/desktop/winforms/input-keyboard/how-to-change-key-press?view=netdesktop-5.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/winforms/input-keyboard/how-to-change-key-press.md",
+            "redirect_url": "/dotnet/desktop/winforms/how-to-modify-keyboard-input-to-a-standard-control?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/how-to-determine-which-modifier-key-was-pressed.md",
+            "redirect_url": "/dotnet/desktop/winforms/input-keyboard/how-to-check-modifier-key?view=netdesktop-5.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/winforms/input-keyboard/how-to-check-modifier-key.md",
+            "redirect_url": "/dotnet/desktop/winforms/how-to-determine-which-modifier-key-was-pressed?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/how-to-handle-keyboard-input-at-the-form-level.md",
+            "redirect_url": "/dotnet/desktop/winforms/input-keyboard/how-to-handle-forms?view=netdesktop-5.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/winforms/input-keyboard/how-to-handle-forms.md",
+            "redirect_url": "/dotnet/desktop/winforms/how-to-handle-keyboard-input-at-the-form-level?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/winforms/input-keyboard/how-to-simulate-events.md",
+            "redirect_url": "/dotnet/desktop/winforms/how-to-simulate-mouse-and-keyboard-events-in-code?view=netframeworkdesktop-4.8#simulating-keyboard-input"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/mouse-input-in-a-windows-forms-application.md",
+            "redirect_url": "/dotnet/desktop/winforms/input-mouse/overview?view=netdesktop-5.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/winforms/input-mouse/overview.md",
+            "redirect_url": "/dotnet/desktop/winforms/how-mouse-input-works-in-windows-forms?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/mouse-events-in-windows-forms.md",
+            "redirect_url": "/dotnet/desktop/winforms/input-mouse/events?view=netdesktop-5.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/winforms/input-mouse/events.md",
+            "redirect_url": "/dotnet/desktop/winforms/mouse-events-in-windows-forms?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/drag-and-drop-functionality-in-windows-forms.md",
+            "redirect_url": "/dotnet/desktop/winforms/input-mouse/drag-and-drop?view=netdesktop-5.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/winforms/input-mouse/drag-and-drop.md",
+            "redirect_url": "/dotnet/desktop/winforms/drag-and-drop-functionality-in-windows-forms?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/mouse-pointers-in-windows-forms.md",
+            "redirect_url": "/dotnet/desktop/winforms/input-mouse/how-to-manage-cursor-pointer?view=netdesktop-5.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/winforms/input-mouse/how-to-manage-cursor-pointer.md",
+            "redirect_url": "/dotnet/desktop/winforms/mouse-pointers-in-windows-forms?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/how-to-simulate-mouse-and-keyboard-events-in-code.md",
+            "redirect_url": "/dotnet/desktop/winforms/input-mouse/how-to-simulate-events?view=netdesktop-5.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/winforms/input-mouse/how-to-simulate-events.md",
+            "redirect_url": "/dotnet/desktop/winforms/how-to-simulate-mouse-and-keyboard-events-in-code?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/how-to-distinguish-between-clicks-and-double-clicks.md",
+            "redirect_url": "/dotnet/desktop/winforms/input-mouse/how-to-distinguish-between-clicks-and-double-clicks?view=netdesktop-5.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/winforms/input-mouse/how-to-distinguish-between-clicks-and-double-clicks.md",
+            "redirect_url": "/dotnet/desktop/winforms/how-to-distinguish-between-clicks-and-double-clicks?view=netframeworkdesktop-4.8"
+        }
+    ]
+}
