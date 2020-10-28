@@ -23,7 +23,7 @@ landingContent:
     - text: Windows Presentation Foundation (WPF)
       url: net/wpf/index.yml?view=netdesktop-5.0&preserve-view=true
     - text: Windows Forms (WinForms)
-      url: net/winforms/index.md?view=netdesktop-5.0&preserve-view=true
+      url: net/winforms/index.yml?view=netdesktop-5.0&preserve-view=true
 
 - title: .NET Framework
   linkLists:
