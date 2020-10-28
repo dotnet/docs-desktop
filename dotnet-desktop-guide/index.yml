@@ -1,0 +1,50 @@
+### YamlMime:Landing
+
+title: Desktop Guide for .NET, .NET Core, and .NET Framework
+summary: "Welcome to the Desktop Guide. The Desktop Guide is a set of documentation for .NET-based Windows UI technologies including Windows Presentation Foundation (WPF) and Windows Forms (WinForms). The Desktop Guide will cover both .NET 5 (and .NET Core 3.1) and later versions, along with .NET Framework."
+
+metadata:
+  title: Desktop Guide for WPF and Windows Forms on .NET
+  description: Introduction to the Desktop Guide for WPF and Windows Forms for both .NET 5 and .NET Framework.
+  ms.topic: landing-page
+  ms.product: dotnet
+  author: adegeo
+  ms.author: adegeo 
+  ms.date: 10/21/2020
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+
+- title: .NET 5 (and .NET Core 3.1)
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Windows Presentation Foundation (WPF)
+      url: net/wpf/index.yml?view=netdesktop-5.0&preserve-view=true
+    - text: Windows Forms (WinForms)
+      url: net/winforms/index.md?view=netdesktop-5.0&preserve-view=true
+
+- title: .NET Framework
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Windows Presentation Foundation (WPF)
+      url: framework/wpf/index.md?view=netframeworkdesktop-4.8&preserve-view=true
+    - text: Windows Forms (WinForms)
+      url: framework/winforms/index.yml?view=netframeworkdesktop-4.8&preserve-view=true
+  - linkListType: concept
+    links:
+    - text: Introduction to WPF
+      url: framework/wpf/introduction-to-wpf.md?view=netframeworkdesktop-4.8&preserve-view=true
+    - text: Introduction to WinForms
+      url: framework/winforms/windows-forms-overview.md?view=netframeworkdesktop-4.8&preserve-view=true
+
+- title: Other desktop technologies
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Universal Windows Apps
+      url: /uwp
+    - text: Xamarin Forms
+      url: /xamarin/xamarin-forms/
