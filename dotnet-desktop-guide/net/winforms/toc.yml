@@ -1,3 +1,81 @@
 items:
-- name: Windows Forms
-  href: index.md
+- name: Windows Forms for .NET
+  href: index.yml
+- name: Get started
+  items:
+  - name: Overview
+    href: overview/index.md
+  - name: Create an app
+    href: get-started/create-app-visual-studio.md
+- name: Forms
+  items:
+  - name: Event handlers
+    href: forms/events.md
+  - name: Automatic scaling
+    href: forms/autoscale.md
+  - name: Common tasks
+    items:
+    - name: Add a form
+      href: forms/how-to-add.md
+    - name: Resize a form
+      href: forms/how-to-position-and-resize.md
+    - name: Position a form
+      href: forms/how-to-position-and-resize.md#position-with-the-designer
+- name: Controls
+  items:
+  - name: Overview
+    href: controls/overview.md
+  - name: Layout options
+    href: controls/layout.md
+  - name: Labels
+    href: controls/labels.md
+  - name: Custom controls
+    href: controls/custom.md
+  - name: Custom painting and drawing
+    href: controls/custom-painting-drawing.md
+  - name: Apply accessibility information
+    href: controls/provide-accessibility-information.md
+  - name: Common tasks
+    items:
+    - name: Add a control to a form
+      href: controls/how-to-add-to-a-form.md
+    - name: Create access key shortcuts
+      href: controls/how-to-create-access-keys.md
+    - name: Set the text displayed by a control
+      href: controls/how-to-set-the-display-text.md
+    - name: Set the image displayed by a control
+      href: controls/how-to-add-a-picture-to-a-control.md
+- name: User input - keyboard
+  items:
+  - name: Overview
+    href: input-keyboard/overview.md
+  - name: Use keyboard events
+    href: input-keyboard/events.md
+  - name: Validate input
+    href: input-keyboard/validation.md
+  - name: Common tasks
+    items:
+    - name: Change the pressed key
+      href: input-keyboard/how-to-change-key-press.md
+    - name: Determine which modifier key is pressed
+      href: input-keyboard/how-to-check-modifier-key.md
+    - name: Handle input at the form level
+      href: input-keyboard/how-to-handle-forms.md
+    - name: Simulate keyboard events
+      href: input-keyboard/how-to-simulate-events.md
+- name: User input - mouse
+  items:
+  - name: Overview
+    href: input-mouse/overview.md
+  - name: Use mouse events
+    href: input-mouse/events.md
+  - name: Drag-and-drop functionality
+    href: input-mouse/drag-and-drop.md
+  - name: Common tasks
+    items:
+    - name: Distinguish between clicks and double-clicks
+      href: input-mouse/how-to-distinguish-between-clicks-and-double-clicks.md
+    - name: Control and modify the mouse pointer
+      href: input-mouse/how-to-manage-cursor-pointer.md
+    - name: Simulate mouse events
+      href: input-mouse/how-to-simulate-events.md
