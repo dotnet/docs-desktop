@@ -22,7 +22,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/forms/events.md",
-            "redirect_url": "/dotnet/desktop/winforms/creating-event-handlers-in-windows-forms?view=netframeworkdesktop-4.8"
+            "redirect_url": "/dotnet/desktop/winforms/events-overview-windows-forms?view=netframeworkdesktop-4.8"
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/automatic-scaling-in-windows-forms.md",
@@ -62,7 +62,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/controls/custom.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls/control-type-recommendations?view=netframeworkdesktop-4.8"
+            "redirect_url": "/dotnet/desktop/winforms/controls/varieties-of-custom-controls?view=netframeworkdesktop-4.8"
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/controls/custom-control-painting-and-rendering.md",
@@ -70,7 +70,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/controls/custom-painting-drawing.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls/user-drawn-controls?view=netframeworkdesktop-4.8"
+            "redirect_url": "/dotnet/desktop/winforms/controls/custom-control-painting-and-rendering?view=netframeworkdesktop-4.8"
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/controls/how-to-add-controls-to-windows-forms.md",
@@ -110,7 +110,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/input-keyboard/overview.md",
-            "redirect_url": "/dotnet/desktop/winforms/how-keyboard-input-works?view=netframeworkdesktop-4.8"
+            "redirect_url": "/dotnet/desktop/winforms/keyboard-input-in-a-windows-forms-application?view=netframeworkdesktop-4.8"
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/using-keyboard-events.md",
@@ -154,7 +154,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/input-keyboard/how-to-simulate-events.md",
-            "redirect_url": "/dotnet/desktop/winforms/how-to-simulate-mouse-and-keyboard-events-in-code?view=netframeworkdesktop-4.8#simulating-keyboard-input"
+            "redirect_url": "/dotnet/desktop/winforms/how-to-simulate-mouse-and-keyboard-events-in-code?view=netframeworkdesktop-4.8"
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/mouse-input-in-a-windows-forms-application.md",
@@ -162,7 +162,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/input-mouse/overview.md",
-            "redirect_url": "/dotnet/desktop/winforms/how-mouse-input-works-in-windows-forms?view=netframeworkdesktop-4.8"
+            "redirect_url": "/dotnet/desktop/winforms/mouse-input-in-a-windows-forms-application?view=netframeworkdesktop-4.8"
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/mouse-events-in-windows-forms.md",
@@ -203,6 +203,30 @@
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/input-mouse/how-to-distinguish-between-clicks-and-double-clicks.md",
             "redirect_url": "/dotnet/desktop/winforms/how-to-distinguish-between-clicks-and-double-clicks?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/creating-event-handlers-in-windows-forms.md",
+            "redirect_url": "/dotnet/desktop/winforms/forms/events?view=netdesktop-5.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/controls/control-type-recommendations.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls/custom?view=netdesktop-5.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/controls/rendering-a-windows-forms-control.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls/custom-painting-drawing?view=netdesktop-5.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/controls/user-drawn-controls.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls/custom-painting-drawing?view=netdesktop-5.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/how-keyboard-input-works.md",
+            "redirect_url": "/dotnet/desktop/winforms/input-keyboard/overview?view=netdesktop-5.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/how-mouse-input-works-in-windows-forms.md",
+            "redirect_url": "/dotnet/desktop/winforms/input-mouse/overview?view=netdesktop-5.0"
         }
     ]
 }
