@@ -46,7 +46,7 @@ The following procedures show how to test for a valid birth date using either th
   - If you created your settings using the Visual Studio Application Settings dialog box in the **Property Editor**, you can retrieve the default settings object generated for your language through the following expression.
 
     ```csharp
-    Configuration.Settings.Default
+    Properties.Settings.Default
     ```
 
     ```vb
