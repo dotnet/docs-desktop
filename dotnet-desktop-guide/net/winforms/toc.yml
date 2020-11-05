@@ -7,6 +7,10 @@ items:
     href: overview/index.md
   - name: Create an app
     href: get-started/create-app-visual-studio.md
+- name: Migration
+  items:
+  - name: Migrate to .NET 5
+    href: index.md
 - name: Forms
   items:
   - name: Event handlers
