@@ -140,6 +140,6 @@ Every framework-level element (<xref:System.Windows.FrameworkElement> or <xref:S
 
 ## Next steps
 
-- [Create a WPF application.](https://docs.microsoft.com/visualstudio/get-started/csharp/tutorial-wpf?toc=/dotnet/desktop-wpf/toc.json&bc=/dotnet/breadcrumb/toc.json)
+- [Create a WPF application.](/visualstudio/get-started/csharp/tutorial-wpf?bc=%252fdotnet%252fbreadcrumb%252ftoc.json&toc=%252fdotnet%252fdesktop-wpf%252ftoc.json)
 - [Explore the differences from .NET Framework.](../migration/differences-from-net-framework.md)
 - [Learn about XAML.](../fundamentals/xaml.md)
