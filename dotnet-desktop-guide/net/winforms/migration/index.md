@@ -25,11 +25,11 @@ To learn more about the benefits of .NET (not .NET Framework), see [Introduction
 
   To enable the designer, go to **Tools** > **Options** > **Environment** > **Preview Features** and select the **Use the preview Windows Forms designer for .NET Core apps** option.
 
-- This article uses the [Matching game]() sample app. If you want to follow along, download and open the application in Visual Studio. Otherwise, use your own app.
+- This article uses the [Matching game](https://github.com/dotnet/samples/tree/master/windowsforms/matching-game/net45/) sample app. If you want to follow along, download and open the application in Visual Studio. Otherwise, use your own app.
 
-- Backup your project!
+- Back up your project!
 
-  Before migrating your app to .NET 5, backup your project! Incase something goes wrong and you want to revert back to .NET Framework, you can easily go back by simply restoring your backed up project.
+  Before migrating your app to .NET 5, back up your project! If something goes wrong, you can restore your code to its original state by restoring your backup.
 
 ### Consider
 
@@ -53,15 +53,15 @@ When migrating a .NET Framework Windows Forms application, there are a few thing
 
 ## Portability analyzer
 
-It's best to use the .NET Portability Analyzer to scan your project for any issues you'll want to address before or after migrating your app to .NET 5. The .NET Portability Analyzer tool can be installed as a Visual Studio extension or used from the command line. For more information, see [.NET Portability Analyzer](/dotnet/standard/analyzers/portability-analyzer).
+It's best to use the .NET Portability Analyzer to scan your project and identify any issues that would prevent migration. The .NET Portability Analyzer tool can be installed as a Visual Studio extension or used from the command line. For more information, see [.NET Portability Analyzer](/dotnet/standard/analyzers/portability-analyzer).
 
 ## NuGet packages
 
-If your project is referencing NuGet packages, you probably have a **packages.config** file in your project folder. With SDK-style projects, NuGet package references are configured in the project file. Visual Studio project files can optionally define NuGet packages in the project file too. Since .NET 5 doesn't use **packages.config** for NuGet packages, these package references need to be migrated into the project file of the .NET Framework version of the app.
+If your project is referencing NuGet packages, you probably have a **packages.config** file in your project folder. With SDK-style projects, NuGet package references are configured in the project file. Visual Studio project files can optionally define NuGet packages in the project file too. .NET 5 doesn't use **packages.config** for NuGet packages. NuGet package references must be migrated into the project file before migration.
 
 To migrate the **packages.config** file, do the following:
 
-01. In **Solution explorer** find the project you're migrating.
+01. In **Solution explorer**, find the project you're migrating.
 02. Right-click on **packages.config** > **Migrate packages.config to ProjectReference**.
 03. Select all of the top-level packages.
 
@@ -69,15 +69,15 @@ A build report is generated to let you know of any issues migrating the NuGet pa
 
 ## Project file
 
-The next step in migrating your app is converting the project file. As previously stated, .NET 5 uses SDK-style project files and won't load the Visual Studio project files that .NET Framework uses. However, there is the possibility that you're already using SDK-style projects. You can easily spot the difference in Visual Studio. Right-click on the project file in **Solution explorer** and look for the **Edit Project File** menu option. If this menu item is missing, you're using the old Visual Studio project format and need to upgrade.
+The next step in migrating your app is converting the project file. As previously stated, .NET 5 uses SDK-style project files and won't load the Visual Studio project files that .NET Framework uses. However, there's the possibility that you're already using SDK-style projects. You can easily spot the difference in Visual Studio. Right-click on the project file in **Solution explorer** and look for the **Edit Project File** menu option. If this menu item is missing, you're using the old Visual Studio project format and need to upgrade.
 
 To upgrade, do the following:
 
-01. In **Solution explorer** find the project you're migrating.
+01. In Solution explorer,** find the project you're migrating.
 01. Right-click on the project and select **Unload Project**.
 01. Right-click on the project and select **Edit Project File**.
-01. Copy-and-paste the project XML into a text text editor. You'll want a copy so that it's easy move content into the new project.
-01. Erase the content of the file and paste in the the following:
+01. Copy-and-paste the project XML into a text editor. You'll want a copy so that it's easy move content into the new project.
+01. Erase the content of the file and paste in the following content:
 
     ```xml
     <Project Sdk="Microsoft.NET.Sdk">
@@ -95,7 +95,7 @@ To upgrade, do the following:
     > [!IMPORTANT]
     > Libraries don't need to define an `<OutputType>` setting. Remove that entry if you're upgrading a library project.
 
-This gives you the basic structure of the project, but it doesn't contain any of the settings from the old project file such as NuGet package references or project references. Using the old project information you copied to a text editor, copy the following:
+This XML gives you the basic structure of the project. However, it doesn't contain any of the settings from the old project file. Using the old project information you previously copied to a text editor, copy the following settings.
 
 01. With the `<PropertyGroup>` element in the new project, copy the following from the old project:
 
@@ -156,7 +156,9 @@ This gives you the basic structure of the project, but it doesn't contain any of
 
 ### Resources and settings
 
-There are some other default files that come with every Windows Forms for .NET Framework app that your project probably still has, such as the *properties/Settings.settings* file and any *resx* file. Copy those entries from the old project file into an `<ItemGroup>` entry in the new project. After you copy the entries, change any `<Compile Include="value">` or `<EmbeddedResource Include="value">` to instead use `Update` otherwise you'll get a compiler error.
+Windows Forms projects for .NET Framework typically include other files such as *Properties/Settings.settings* and *Properties/Resources.resx*. These files, and any *resx* file created for your app besides form *resx* files, would need to be migrated.
+
+Copy those entries from the old project file into an `<ItemGroup>` entry in the new project. After you copy the entries, change any `<Compile Include="value">` or `<EmbeddedResource Include="value">` to instead use `Update` instead of `Include`, otherwise you'll get a compile error.
 
 - Import the configuration for the *Settings.settings* file. Note that `Include` was changed to `Update` on the `<Compile>` element:
 
@@ -190,11 +192,11 @@ There are some other default files that come with every Windows Forms for .NET F
   </ItemGroup>
   ```
 
-Convert each project in your solution. In the case of this example, the **MatchingGame.Logic** project would also be converted.
+Convert each project in your solution. If you're using the sample app previously referenced, the **MatchingGame.Logic** project would be converted.
 
 ## Edit App.config
 
-If the *App.config* file, remove the `<supportedRuntime>` element.
+If your app has an *App.config* file, remove the `<supportedRuntime>` element.
 
 ```xml
 <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5" />
@@ -204,7 +206,12 @@ There are some things you should consider with the *App.config* file. The *App.c
 
 ## Add the compatibility package
 
-If you can't compile and receive errors similar to **The type or namespace \<some name> could not be found** or **The name \<some name> does not exist in the current context**, you may need to add the **Microsoft.Windows.Compatibility** package to your app. This package adds ~21K .NET APIs from .NET Framework, such as the `System.Configuration.ConfigurationManager` class and interacting with the Windows Registry.
+If you can't compile and receive errors similar to the following:
+
+- **The type or namespace \<some name> could not be found**
+- **The name \<some name> does not exist in the current context**
+
+You may need to add the [**Microsoft.Windows.Compatibility**](https://www.nuget.org/packages/Microsoft.Windows.Compatibility/) package to your app. This package adds ~21,000 .NET APIs from .NET Framework, such as the `System.Configuration.ConfigurationManager` class and interacting with the Windows Registry.
 
 ```xml
 <ItemGroup>
@@ -214,7 +221,7 @@ If you can't compile and receive errors similar to **The type or namespace \<som
 
 ## Test your app
 
-After you've finished migrating your app, test it! Testing is the best way to determine if there are behavior changes you need to address or if there are any bugs you need to fix.
+After you've finished migrating your app, test it! Testing is the best way to identify behavioral changes to your app or bugs you need to fix.
 
 ## Next steps
 
