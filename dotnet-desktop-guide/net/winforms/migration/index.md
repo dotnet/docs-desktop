@@ -1,25 +1,25 @@
 ---
 title: Migrate a Windows Forms app to .NET 5
-description: Teaches you how to port a .NET Framework Windows Forms application to .NET 5.
+description: Learn how to port a .NET Framework Windows Forms application to .NET 5.
 ms.date: 11/02/2020
 ms.topic: how-to
 ---
 
 # How to migrate a Windows Forms desktop app to .NET 5
 
-This article describes how to migrate your Windows Forms-based desktop app from .NET Framework to .NET 5 or later. The .NET SDK includes support for Windows Forms applications. Windows Forms is still a Windows-only framework and only runs on Windows.
+This article describes how to migrate a Windows Forms desktop app from .NET Framework to .NET 5 or later. The .NET SDK includes support for Windows Forms applications. Windows Forms is still a Windows-only framework and only runs on Windows.
 
-Migrating your app from .NET Framework to .NET 5 generally requires a new project file. .NET 5 uses SDK-style project files while .NET Framework typically uses the older Visual Studio project file. If you've ever opened a Visual Studio project file in a text editor, you know how verbose it is. SDK-style projects are smaller and don't require as many entries as their counterparts do.
+Migrating your app from .NET Framework to .NET 5 generally requires a new project file. .NET 5 uses SDK-style project files while .NET Framework typically uses the older Visual Studio project file. If you've ever opened a Visual Studio project file in a text editor, you know how verbose it is. SDK-style projects are smaller and don't require as many entries as the older project file format does.
 
-To learn more about the benefits of .NET (not .NET Framework), see [Introduction to .NET](/dotnet/core/introduction).
+To learn more about .NET 5, see [Introduction to .NET](/dotnet/core/introduction).
 
 ## Prerequisites
 
 - [Visual Studio 2019 version 16.8 Preview](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+desktopguide+winforms)
 
-  - Enable the [Visual Studio Desktop workload](/visualstudio/install/modify-visual-studio?view=vs-2019&preserve-view=true#modify-workloads).
+  - Select the [Visual Studio Desktop workload](/visualstudio/install/modify-visual-studio?view=vs-2019&preserve-view=true#modify-workloads).
 
-  - Enable the [.NET 5 individual component](/visualstudio/install/modify-visual-studio?view=vs-2019&preserve-view=true#modify-individual-components).
+  - Select the [.NET 5 individual component](/visualstudio/install/modify-visual-studio?view=vs-2019&preserve-view=true#modify-individual-components).
 
 - Preview WinForms designer in Visual Studio.
 
@@ -31,7 +31,7 @@ To learn more about the benefits of .NET (not .NET Framework), see [Introduction
 
   Before migrating your app to .NET 5, back up your project! If something goes wrong, you can restore your code to its original state by restoring your backup.
 
-### Consider
+## Prepare to migrate
 
 When migrating a .NET Framework Windows Forms application, there are a few things you must consider.
 
@@ -41,7 +41,7 @@ When migrating a .NET Framework Windows Forms application, there are a few thing
 
 01. You're using a different version of Windows Forms.
 
-    When .NET Core 3.0 was released, Windows Forms went [open source on GitHub](https://github.com/dotnet/winforms). The code for Windows Forms for .NET 5 is a fork of the .NET Framework Windows Forms codebase. It's possible some differences exist and your app won't migrate.
+    When .NET Core 3.0 was released, Windows Forms went [open source on GitHub](https://github.com/dotnet/winforms). The code for Windows Forms for .NET 5 is a fork of the .NET Framework Windows Forms codebase. It's possible some differences exist and your app will be difficult to migrate.
 
 01. The [Windows Compatibility Pack][compat-pack] may help you migrate.
 
@@ -73,10 +73,10 @@ The next step in migrating your app is converting the project file. As previousl
 
 To upgrade, do the following:
 
-01. In Solution explorer,** find the project you're migrating.
+01. In **Solution explorer**, find the project you're migrating.
 01. Right-click on the project and select **Unload Project**.
 01. Right-click on the project and select **Edit Project File**.
-01. Copy-and-paste the project XML into a text editor. You'll want a copy so that it's easy move content into the new project.
+01. Copy-and-paste the project XML into a text editor. You'll want a copy so that it's easy to move content into the new project.
 01. Erase the content of the file and paste in the following content:
 
     ```xml
@@ -95,9 +95,9 @@ To upgrade, do the following:
     > [!IMPORTANT]
     > Libraries don't need to define an `<OutputType>` setting. Remove that entry if you're upgrading a library project.
 
-This XML gives you the basic structure of the project. However, it doesn't contain any of the settings from the old project file. Using the old project information you previously copied to a text editor, copy the following settings.
+This XML gives you the basic structure of the project. However, it doesn't contain any of the settings from the old project file. Using the old project information you previously copied to a text editor, do the following:
 
-01. With the `<PropertyGroup>` element in the new project, copy the following from the old project:
+01. Copy the following elements from the old project file into the `<PropertyGroup>` element in the new project file: 
 
     - `<RootNamespace>`
     - `<AssemblyName>`
@@ -120,7 +120,7 @@ This XML gives you the basic structure of the project. However, it doesn't conta
     </Project>
     ```
 
-01. After the `</PropertyGroup>` element closure, copy the `<ItemGroup>` entries from the old project that contain `<ProjectReference>` or `<PackageReference>`.
+01. Copy the `<ItemGroup>` elements from the old project file that contain `<ProjectReference>` or `<PackageReference>` into the new file after the `</PropertyGroup>` closing tag.
 
     Your project file should look similar to the following:
 
@@ -146,7 +146,7 @@ This XML gives you the basic structure of the project. However, it doesn't conta
     </Project>
     ```
 
-    The `<ProjectReference>` elements don't need the `<Project>` and `<Name>` children, you can remove those:
+    The `<ProjectReference>` elements don't need the `<Project>` and `<Name>` children, so you can remove those:
 
     ```xml
     <ItemGroup>
@@ -158,7 +158,7 @@ This XML gives you the basic structure of the project. However, it doesn't conta
 
 Windows Forms projects for .NET Framework typically include other files such as *Properties/Settings.settings* and *Properties/Resources.resx*. These files, and any *resx* file created for your app besides form *resx* files, would need to be migrated.
 
-Copy those entries from the old project file into an `<ItemGroup>` entry in the new project. After you copy the entries, change any `<Compile Include="value">` or `<EmbeddedResource Include="value">` to instead use `Update` instead of `Include`, otherwise you'll get a compile error.
+Copy those entries from the old project file into an `<ItemGroup>` element in the new project. After you copy the entries, change any `<Compile Include="value">` or `<EmbeddedResource Include="value">` elements to instead use `Update` instead of `Include`.
 
 - Import the configuration for the *Settings.settings* file. Note that `Include` was changed to `Update` on the `<Compile>` element:
 
@@ -202,16 +202,16 @@ If your app has an *App.config* file, remove the `<supportedRuntime>` element.
 <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5" />
 ```
 
-There are some things you should consider with the *App.config* file. The *App.config* file in .NET Framework was used to not only configure the app, but to configure runtime settings and behavior, such as logging. The *App.config* file in .NET 5+ (and .NET Core) is no longer used for runtime configuration. If your *App.config* file has these sections, they either won't be respected.
+There are some things you should consider with the *App.config* file. The *App.config* file in .NET Framework was used not only to configure the app, but to configure runtime settings and behavior, such as logging. The *App.config* file in .NET 5+ (and .NET Core) is no longer used for runtime configuration. If your *App.config* file has these sections, they won't be respected.
 
 ## Add the compatibility package
 
-If you can't compile and receive errors similar to the following:
+If compilation fails and you receive errors similar to the following:
 
 - **The type or namespace \<some name> could not be found**
 - **The name \<some name> does not exist in the current context**
 
-You may need to add the [**Microsoft.Windows.Compatibility**](https://www.nuget.org/packages/Microsoft.Windows.Compatibility/) package to your app. This package adds ~21,000 .NET APIs from .NET Framework, such as the `System.Configuration.ConfigurationManager` class and interacting with the Windows Registry.
+You may need to add the [**Microsoft.Windows.Compatibility**](https://www.nuget.org/packages/Microsoft.Windows.Compatibility/) package to your app. This package adds ~21,000 .NET APIs from .NET Framework, such as the `System.Configuration.ConfigurationManager` class and APIs for interacting with the Windows Registry.
 
 ```xml
 <ItemGroup>
@@ -221,7 +221,7 @@ You may need to add the [**Microsoft.Windows.Compatibility**](https://www.nuget.
 
 ## Test your app
 
-After you've finished migrating your app, test it! Testing is the best way to identify behavioral changes to your app or bugs you need to fix.
+After you've finished migrating your app, test it!
 
 ## Next steps
 
