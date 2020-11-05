@@ -192,7 +192,7 @@ Image brushes can fill shapes, controls, text, and more
 
  A core feature of WPF Imaging is the extensibility model for new image codecs. These unmanaged interfaces enable codec developers to integrate codecs with WPF so new image formats can automatically be used by WPF applications.  
   
- For a sample of the extensibility API, see the [Win32 Sample Codec](/samples/browse/). This sample demonstrates how to create a decoder and encoder for a custom image format.  
+ For a sample of the extensibility API, see the [Win32 Sample Codec](https://github.com/microsoft/WPF-Samples/tree/master/Graphics/AITCodec). This sample demonstrates how to create a decoder and encoder for a custom image format.  
   
 > [!NOTE]
 > The codec must be digitally signed for the system to recognize it.  
@@ -204,4 +204,4 @@ Image brushes can fill shapes, controls, text, and more
 - <xref:System.Windows.Controls.Image>
 - <xref:System.Windows.Media.Imaging.BitmapMetadata>
 - [2D Graphics and Imaging](../advanced/optimizing-performance-2d-graphics-and-imaging.md)
-- [Win32 Sample Codec](/samples/browse/)
+- [Win32 Sample Codec](https://github.com/microsoft/WPF-Samples/tree/master/Graphics/AITCodec)

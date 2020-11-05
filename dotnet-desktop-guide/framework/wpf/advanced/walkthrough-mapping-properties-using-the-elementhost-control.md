@@ -23,8 +23,6 @@ Tasks illustrated in this walkthrough include:
 
 - Extending a default property mapping.
 
-For a complete code listing of the tasks illustrated in this walkthrough, see [Mapping Properties Using the ElementHost Control Sample](/samples/browse/).
-
 When you are finished, you will be able to map Windows Forms properties to corresponding [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] properties on a hosted element.
 
 ## Prerequisites

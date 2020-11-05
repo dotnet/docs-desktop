@@ -22,7 +22,7 @@ Tasks illustrated in this walkthrough include:
 
 - Using the LocBaml tool to produce a satellite assembly.
 
-For a complete code listing of the tasks illustrated in this walkthrough, see [Localizing a Hybrid Application Sample](/samples/browse/).
+For a complete code listing of the tasks illustrated in this walkthrough, see [Localizing a Hybrid Application Sample](https://github.com/microsoft/WPF-Samples/tree/master/Migration%20and%20Interoperability/LocalizingWpfInWf).
 
 When you are finished, you will have a localized hybrid application.
 
