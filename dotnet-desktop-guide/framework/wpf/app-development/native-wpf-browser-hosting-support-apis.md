@@ -9,11 +9,13 @@ helpviewer_keywords:
 ms.assetid: 82c133a8-d760-45fb-a2b9-3a997537f1d4
 ---
 # Native WPF Browser Hosting Support APIs
+
 Hosting of WPF applications in Web browsers is facilitated by an Active Document server (also known as a DocObject) registered out of the WPF Host. Internet Explorer can directly activate and integrate with an Active Document. For hosting of XBAPs and loose XAML documents in Mozilla browsers, WPF provides an NPAPI plugin, which provides a similar hosting environment to the WPF Active Document server as Internet Explorer does. However, the easiest practical way to host XBAPs and XAML documents in other browsers and standalone applications is via the Internet Explorer Web Browser control. The Web Browser control provides the complex Active Document server hosting environment, yet it enables its own host to customize and extend that environment and communicate directly with the current Active Document object.  
   
- The WPF Active Document server implements several common hosting interfaces, including [IOleObject](/windows/win32/api/oleidl/nn-oleidl-ioleobject), [IOleDocument](/windows/win32/api/docobj/nn-docobj-ioledocument), [IOleInPlaceActiveObject](/windows/win32/api/oleidl/nn-oleidl-ioleinplaceactiveobject), [IPersistMoniker](https://docs.microsoft.com/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms775042(v=vs.85)), [IOleCommandTarget](/windows/win32/api/docobj/nn-docobj-iolecommandtarget). When hosted in the Web Browser control, these interfaces can be queries from the object returned by the [IWebBrowser2::Document](https://docs.microsoft.com/previous-versions/aa752116(v=vs.85)) property.  
+ The WPF Active Document server implements several common hosting interfaces, including [IOleObject](/windows/win32/api/oleidl/nn-oleidl-ioleobject), [IOleDocument](/windows/win32/api/docobj/nn-docobj-ioledocument), [IOleInPlaceActiveObject](/windows/win32/api/oleidl/nn-oleidl-ioleinplaceactiveobject), [IPersistMoniker](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms775042(v=vs.85)), [IOleCommandTarget](/windows/win32/api/docobj/nn-docobj-iolecommandtarget). When hosted in the Web Browser control, these interfaces can be queries from the object returned by the [IWebBrowser2::Document](/previous-versions/aa752116(v=vs.85)) property.  
   
 ## IOleCommandTarget  
+
  WPF Active Document server's implementation of [IOleCommandTarget](/windows/win32/api/docobj/nn-docobj-iolecommandtarget) supports numerous navigation-related and browser-specific commands of the standard OLE command group (with a null command group GUID). In addition, it recognizes a custom command group called CGID_PresentationHost. Currently, there is only one command defined within this group.  
   
 ```cpp  
@@ -26,5 +28,6 @@ enum PresentationHostCommands {
  PHCMDID_TABINTO instructs PresentationHost to switch focus to the first or last focusable element in its content, depending on the state of the Shift key.  
   
 ## In This Section  
+
  [IEnumRAWINPUTDEVICE](ienumrawinputdevice.md)  
  [IWpfHostSupport](iwpfhostsupport.md)

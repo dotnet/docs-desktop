@@ -23,9 +23,11 @@ helpviewer_keywords:
 ms.assetid: 72aad87a-e6f3-4937-94cd-a18b7766e990
 ---
 # Imaging Overview
+
 This topic provides an introduction to the Microsoft Windows Presentation Foundation Imaging Component. WPF Imaging enables developers to display, transform, and format images.  
 
 ## WPF Imaging Component  
+
  WPF Imaging provides significant enhancements in imaging capabilities within Microsoft Windows. Imaging capabilities, such as displaying a bitmap or using an image on a common control were previously reliant upon the Microsoft Windows Graphics Device Interface (GDI) or Microsoft Windows GDI+ libraries. These API provide baseline imaging functionality, but lack features such as support for codec extensibility and high fidelity image support. WPF Imaging is designed to overcome the shortcomings of GDI and GDI+ and provide a new set of API to display and use images within your applications.  
   
  There are two ways to access the WPF Imaging API, a managed component and an unmanaged component. The unmanaged component provides the following features.  
@@ -49,6 +51,7 @@ This topic provides an introduction to the Microsoft Windows Presentation Founda
  This topic provides additional information about the managed component. For more information on the unmanaged API see the [Unmanaged WPF Imaging Component](/windows/desktop/wic/-wic-lh) documentation.  
   
 <a name="_imageformats"></a>
+
 ## WPF Image Formats  
 
  A codec is used to decode or encode a specific media format. WPF Imaging includes a codec  for BMP, JPEG, PNG, TIFF, Windows Media Photo, GIF, and ICON image formats. Each of these codecs enable applications to decode and, with the exception of ICON, encode their respective image formats.  
@@ -63,6 +66,7 @@ This topic provides an introduction to the Microsoft Windows Presentation Founda
  [!code-vb[BitmapFrameExample#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitmapFrameExample/VB/BitmapFrame.vb#10)]  
   
 ### Image Format Decoding  
+
  Image decoding is the translation of an image format to image data that can be used by the system. The image data can then be used to display, process, or encode to a different format. Decoder selection is based on the image format. Codec selection is automatic unless a specific decoder is specified. The examples in the [Displaying Images in WPF](#_displayingimages) section demonstrate automatic decoding. Custom format decoders developed using the unmanaged WPF Imaging interfaces and registered with the system automatically participate in decoder selection. This allows custom formats to be displayed automatically in WPF applications.  
   
  The following example demonstrates the use of a bitmap decoder to decode a BMP format image.  
@@ -72,6 +76,7 @@ This topic provides an introduction to the Microsoft Windows Presentation Founda
  [!code-vb[BmpBitmapDecoderEncoder#5](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BmpBitmapDecoderEncoder/VB/BitmapFrame.vb#5)]  
   
 ### Image Format Encoding  
+
  Image encoding is the translation of image data to a specific image format. The encoded image data can then be used to create new image files. WPF Imaging provides encoders for each of the image formats described above.  
   
  The following example demonstrates the use of an encoder to save a newly created bitmap image.  
@@ -81,10 +86,13 @@ This topic provides an introduction to the Microsoft Windows Presentation Founda
  [!code-vb[BmpBitmapDecoderEncoder#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BmpBitmapDecoderEncoder/VB/BitmapFrame.vb#3)]  
   
 <a name="_displayingimages"></a>
+
 ## Displaying Images in WPF  
+
  There are several ways to display an image in a Windows Presentation Foundation (WPF) application. Images can be displayed using an <xref:System.Windows.Controls.Image> control, painted on a visual using an <xref:System.Windows.Media.ImageBrush>, or drawn using an <xref:System.Windows.Media.ImageDrawing>.  
   
 ### Using the Image Control  
+
  <xref:System.Windows.Controls.Image> is a framework element and the primary way to display images in applications. In [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)], <xref:System.Windows.Controls.Image> can be used in two ways; attribute syntax or property syntax. The following example shows how to render an image 200 pixels wide using both attribute syntax and property tag syntax. For more information on attribute syntax and property syntax, see [Dependency Properties Overview](../advanced/dependency-properties-overview.md).  
   
  [!code-xaml[ImageElementExample_snip#ImageSimpleExampleInlineMarkup](~/samples/snippets/csharp/VS_Snippets_Wpf/ImageElementExample_snip/CSharp/ImageSimpleExample.xaml#imagesimpleexampleinlinemarkup)]  
@@ -100,6 +108,7 @@ This topic provides an introduction to the Microsoft Windows Presentation Founda
  [!code-vb[ImageElementExample_snip#ImageSimpleExampleInlineCode1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ImageElementExample_snip/VB/ImageSimpleExample.xaml.vb#imagesimpleexampleinlinecode1)]  
   
 #### Rotating, Converting, and Cropping Images  
+
  WPF enables users to transform images by using properties of <xref:System.Windows.Media.Imaging.BitmapImage> or by using additional <xref:System.Windows.Media.Imaging.BitmapSource> objects such as <xref:System.Windows.Media.Imaging.CroppedBitmap> or <xref:System.Windows.Media.Imaging.FormatConvertedBitmap>. These image transformations can scale or rotate an image, change the pixel format of an image, or crop an image.  
   
  Image rotations are performed using the <xref:System.Windows.Media.Imaging.BitmapImage.Rotation%2A> property of <xref:System.Windows.Media.Imaging.BitmapImage>. Rotations can only be done in 90 degree increments. In the following example, an image is rotated 90 degrees.  
@@ -124,6 +133,7 @@ This topic provides an introduction to the Microsoft Windows Presentation Founda
  [!code-vb[ImageElementExample_snip#CroppedCSharpUsingClip1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ImageElementExample_snip/VB/CroppedImageExample.xaml.vb#croppedcsharpusingclip1)]  
   
 #### Stretching Images  
+
  The <xref:System.Windows.Controls.Image.Stretch%2A> property controls how an image is stretched to fill its container. The <xref:System.Windows.Controls.Image.Stretch%2A> property accepts the following values, defined by the <xref:System.Windows.Media.Stretch> enumeration:  
   
 - <xref:System.Windows.Media.Stretch.None>: The image is not stretched to fill the output area. If the image is larger than the output area, the image is drawn to the output area, clipping what does not fit.  
@@ -144,6 +154,7 @@ Different stretch settings
  [!code-xaml[ImageElementExample_snip#ImageStretchExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/ImageElementExample_snip/CSharp/ImageStretchExample.xaml#imagestretchexamplewholepage)]  
   
 ### Painting with Images  
+
  Images can also be displayed in an application by painting with a <xref:System.Windows.Media.Brush>. Brushes enable you to paint [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] objects with anything from simple, solid colors to complex sets of patterns and images. To paint with images, use an <xref:System.Windows.Media.ImageBrush>. An <xref:System.Windows.Media.ImageBrush> is a type of <xref:System.Windows.Media.TileBrush> that defines its content as a bitmap image. An <xref:System.Windows.Media.ImageBrush> displays a single image, which is specified by its <xref:System.Windows.Media.ImageBrush.ImageSource%2A> property. You can control how the image is stretched, aligned, and tiled, enabling you to prevent distortion and produce patterns and other effects. The following illustration shows some effects that can be achieved with an <xref:System.Windows.Media.ImageBrush>.  
   
  ![ImageBrush output examples](./media/wcpsdk-mmgraphics-imagebrushexamples.gif "wcpsdk_mmgraphics_imagebrushexamples")  
@@ -156,7 +167,9 @@ Image brushes can fill shapes, controls, text, and more
  For additional information about <xref:System.Windows.Media.ImageBrush> and painting images see [Painting with Images, Drawings, and Visuals](painting-with-images-drawings-and-visuals.md).  
   
 <a name="_metadata"></a>
+
 ## Image Metadata  
+
  Some image files contain metadata that describes the content or the characteristics of the file. For example, most digital cameras create images that contain metadata about the make and model of the camera used to capture the image. Each image format handles metadata differently but WPF Imaging provides a uniform way of storing and retrieving metadata for each supported image format.  
   
  Access to metadata is provided through the <xref:System.Windows.Media.Imaging.BitmapSource.Metadata%2A> property of a <xref:System.Windows.Media.Imaging.BitmapSource> object. <xref:System.Windows.Media.Imaging.BitmapSource.Metadata%2A> returns a <xref:System.Windows.Media.Imaging.BitmapMetadata> object that includes all the metadata contained by the image. This data may be in one metadata schema or a combination of different schemes. WPF Imaging supports the following image metadata schemas: Exchangeable image file (Exif), tEXt (PNG Textual Data), image file directory (IFD), International Press Telecommunications Council (IPTC), and Extensible Metadata Platform (XMP).  
@@ -174,10 +187,12 @@ Image brushes can fill shapes, controls, text, and more
  [!code-vb[BitmapMetadata#SetQuery](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitMapMetadata/VB/BitmapMetadata.vb#setquery)]  
   
 <a name="_extensibility"></a>
+
 ## Codec Extensibility  
+
  A core feature of WPF Imaging is the extensibility model for new image codecs. These unmanaged interfaces enable codec developers to integrate codecs with WPF so new image formats can automatically be used by WPF applications.  
   
- For a sample of the extensibility API, see the [Win32 Sample Codec](https://go.microsoft.com/fwlink/?LinkID=160052). This sample demonstrates how to create a decoder and encoder for a custom image format.  
+ For a sample of the extensibility API, see the [Win32 Sample Codec](https://github.com/microsoft/WPF-Samples/tree/master/Graphics/AITCodec). This sample demonstrates how to create a decoder and encoder for a custom image format.  
   
 > [!NOTE]
 > The codec must be digitally signed for the system to recognize it.  
@@ -189,4 +204,4 @@ Image brushes can fill shapes, controls, text, and more
 - <xref:System.Windows.Controls.Image>
 - <xref:System.Windows.Media.Imaging.BitmapMetadata>
 - [2D Graphics and Imaging](../advanced/optimizing-performance-2d-graphics-and-imaging.md)
-- [Win32 Sample Codec](https://go.microsoft.com/fwlink/?LinkID=160052)
+- [Win32 Sample Codec](https://github.com/microsoft/WPF-Samples/tree/master/Graphics/AITCodec)

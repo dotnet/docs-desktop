@@ -8,9 +8,11 @@ helpviewer_keywords:
 ms.assetid: 7bf37ccb-5d09-4eae-9661-929582aeb259
 ---
 # Documents
+
 [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] provides a versatile set of components that enable developers to build applications with advanced document features and an improved reading experience. In addition to enhanced capabilities and quality, [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] also provides simplified management services for document packaging, security, and storage.  
   
 ## In This Section  
+
  [Documents in WPF](documents-in-wpf.md)  
  [Document Serialization and Storage](document-serialization-and-storage.md)  
  [Annotations](annotations.md)  
@@ -23,4 +25,4 @@ ms.assetid: 7bf37ccb-5d09-4eae-9661-929582aeb259
 - <xref:System.Windows.Controls.DocumentViewer>
 - <xref:System.Windows.Documents.FlowDocument>
 - <xref:System.Windows.Xps>
-- [isXPS.exe (isXPS Conformance Tool)](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/aa348104(v=vs.100))
+- [isXPS.exe (isXPS Conformance Tool)](/previous-versions/dotnet/netframework-4.0/aa348104(v=vs.100))

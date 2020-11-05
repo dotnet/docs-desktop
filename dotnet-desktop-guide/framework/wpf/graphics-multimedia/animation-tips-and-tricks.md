@@ -16,21 +16,27 @@ helpviewer_keywords:
 ms.assetid: e467796b-d5d4-45a6-a108-8c5d7ff69a0f
 ---
 # Animation Tips and Tricks
+
 When working with animations in WPF, there are a number of tips and tricks that can make your animations perform better and save you frustration.  
   
 <a name="generalissuessection"></a>
+
 ## General Issues  
   
 ### Animating the Position of a Scroll Bar or Slider Freezes It  
+
  If you animate the position of a scroll bar or slider using an animation that has a <xref:System.Windows.Media.Animation.FillBehavior> of <xref:System.Windows.Media.Animation.FillBehavior.HoldEnd> (the default value), the user will no longer be able to move the scroll bar or slider. That's because, even though the animation ended, it's still overriding the target property's base value. To stop the animation from overriding the property's current value, remove it, or give it a <xref:System.Windows.Media.Animation.FillBehavior> of <xref:System.Windows.Media.Animation.FillBehavior.Stop>. For more information and an example, see [Set a Property After Animating It with a Storyboard](how-to-set-a-property-after-animating-it-with-a-storyboard.md).  
   
 ### Animating the Output of an Animation Has No Effect  
+
  You can't animate an object that is the output of another animation. For example, if you use an <xref:System.Windows.Media.Animation.ObjectAnimationUsingKeyFrames> to animate the <xref:System.Windows.Shapes.Shape.Fill%2A> of a <xref:System.Windows.Shapes.Rectangle> from a <xref:System.Windows.Media.RadialGradientBrush> to a <xref:System.Windows.Media.SolidColorBrush>, you can't animate any properties of the <xref:System.Windows.Media.RadialGradientBrush> or <xref:System.Windows.Media.SolidColorBrush>.  
   
 ### Can't Change the Value of a Property after Animating it  
+
  In some cases, it might appear that you can't change the value of a property after it's been animated, even after the animation has ended. That's because, even though the animation ended, it's still overriding the property's base value. To stop the animation from overriding the property's current value, remove it, or give it a <xref:System.Windows.Media.Animation.FillBehavior> of <xref:System.Windows.Media.Animation.FillBehavior.Stop>. For more information and an example, see [Set a Property After Animating It with a Storyboard](how-to-set-a-property-after-animating-it-with-a-storyboard.md).  
   
 ### Changing a Timeline Has No Effect  
+
  Although most <xref:System.Windows.Media.Animation.Timeline> properties are animatable and can be data bound, changing the property values of an active <xref:System.Windows.Media.Animation.Timeline> seems to have no effect. That's because, when a <xref:System.Windows.Media.Animation.Timeline> is begun, the timing system makes a copy of the <xref:System.Windows.Media.Animation.Timeline> and uses it to create a <xref:System.Windows.Media.Animation.Clock> object. Modifying the original has no effect on the system's copy.  
   
  For a <xref:System.Windows.Media.Animation.Timeline> to reflect changes, its clock must be regenerated and used to replace the previously created clock. Clocks are not regenerated for you automatically. The following are several ways to apply timeline changes:  
@@ -44,6 +50,7 @@ When working with animations in WPF, there are a number of tips and tricks that 
  For more information about timelines and clocks, see [Animation and Timing System Overview](animation-and-timing-system-overview.md).  
   
 ### FillBehavior.Stop Doesn't Work as Expected  
+
  There are times when setting the <xref:System.Windows.Media.Animation.Timeline.FillBehavior%2A> property to <xref:System.Windows.Media.Animation.FillBehavior.Stop> seems to have no effect, such as when one animation "hands off" to another because it has a <xref:System.Windows.Media.Animation.BeginStoryboard.HandoffBehavior%2A> setting of <xref:System.Windows.Media.Animation.HandoffBehavior.SnapshotAndReplace>.  
   
  The following example creates a <xref:System.Windows.Controls.Canvas>, a <xref:System.Windows.Shapes.Rectangle> and a <xref:System.Windows.Media.TranslateTransform>. The <xref:System.Windows.Media.TranslateTransform> will be animated to move the <xref:System.Windows.Shapes.Rectangle> around the <xref:System.Windows.Controls.Canvas>.  
@@ -53,6 +60,7 @@ When working with animations in WPF, there are a number of tips and tricks that 
  The examples in this section use the preceding objects to demonstrate several cases where the <xref:System.Windows.Media.Animation.Timeline.FillBehavior%2A> property doesn't behave as you might expect it to.  
   
 #### FillBehavior="Stop" and HandoffBehavior with Multiple Animations  
+
  Sometimes it seems as though an animation ignores its <xref:System.Windows.Media.Animation.Timeline.FillBehavior%2A> property when it is replaced by a second animation. Take the following example, which creates two <xref:System.Windows.Media.Animation.Storyboard> objects and uses them to animate the same <xref:System.Windows.Media.TranslateTransform> shown in the preceding example.  
   
  The first <xref:System.Windows.Media.Animation.Storyboard>, `B1`, animates the <xref:System.Windows.Media.TranslateTransform.X%2A> property of the <xref:System.Windows.Media.TranslateTransform> from 0 to 350, which moves the rectangle 350 pixels to the right. When the animation reaches the end of its duration and stops playing, the <xref:System.Windows.Media.TranslateTransform.X%2A> property reverts to its original value, 0. As a result, the rectangle moves to the right 350 pixels and then jumps back to its original position.  
@@ -72,6 +80,7 @@ When working with animations in WPF, there are a number of tips and tricks that 
  **But that's not what happens.** Instead, the rectangle does not jump back; it continues moving to the right. That's because the second animation uses the current value of the first animation as its starting value and animates from that value to 500. When the second animation replaces the first because the <xref:System.Windows.Media.Animation.HandoffBehavior.SnapshotAndReplace><xref:System.Windows.Media.Animation.HandoffBehavior> is used, the <xref:System.Windows.Media.Animation.FillBehavior> of the first animation does not matter.  
   
 #### FillBehavior and the Completed Event  
+
  The next examples demonstrate another scenario in which the <xref:System.Windows.Media.Animation.FillBehavior.Stop><xref:System.Windows.Media.Animation.Timeline.FillBehavior%2A> seems to have no effect. Again, the example uses a Storyboard to animate the <xref:System.Windows.Media.TranslateTransform.X%2A> property of the <xref:System.Windows.Media.TranslateTransform> from 0 to 350. However, this time the example registers for the <xref:System.Windows.Media.Animation.Timeline.Completed> event.  
   
  [!code-xaml[AnimationTipsAndTricksSample_snip#FillBehaviorTipStoryboardCButton](~/samples/snippets/csharp/VS_Snippets_Wpf/AnimationTipsAndTricksSample_snip/CSharp/FillBehaviorTip.xaml#fillbehaviortipstoryboardcbutton)]  
@@ -90,16 +99,18 @@ When working with animations in WPF, there are a number of tips and tricks that 
  That's because of the order in which WPF raises events and because property values are cached and are not recalculated unless the property is invalidated. The <xref:System.Windows.Media.Animation.Timeline.Completed> event is processed first because it was triggered by the root timeline (the first <xref:System.Windows.Media.Animation.Storyboard>). At this time, the <xref:System.Windows.Media.TranslateTransform.X%2A> property still returns its animated value because it hasn't been invalidated yet. The second <xref:System.Windows.Media.Animation.Storyboard> uses the cached value as its starting value and begins animating.  
   
 <a name="performancesection"></a>
+
 ## Performance  
   
 ### Animations Continue to Run After Navigating Away from a Page  
+
  When you navigate away from a <xref:System.Windows.Controls.Page> that contains running animations, those animations will continue to play until the <xref:System.Windows.Controls.Page> is garbage collected. Depending on the navigation system you're using, a page that you navigate away from might stay in memory for an indefinite amount of time, all the while consuming resources with its animations. This is most noticeable when a page contains constantly running ("ambient") animations.  
   
  For this reason, it's a good idea to use the <xref:System.Windows.FrameworkElement.Unloaded> event to remove animations when you navigate away from a page.  
   
  There are different ways to remove an animation. The following techniques can be used to remove animations that belong to a <xref:System.Windows.Media.Animation.Storyboard>.  
   
-- To remove a <xref:System.Windows.Media.Animation.Storyboard> you started with an event trigger, see [How to: Remove a Storyboard](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms749412(v=vs.90)).  
+- To remove a <xref:System.Windows.Media.Animation.Storyboard> you started with an event trigger, see [How to: Remove a Storyboard](/previous-versions/dotnet/netframework-3.5/ms749412(v=vs.90)).  
   
 - To use code to remove a <xref:System.Windows.Media.Animation.Storyboard>, see the <xref:System.Windows.Media.Animation.Storyboard.Remove%2A> method.  
   
@@ -110,6 +121,7 @@ When working with animations in WPF, there are a number of tips and tricks that 
  For more information about the different ways to animate properties, see [Property Animation Techniques Overview](property-animation-techniques-overview.md).  
   
 ### Using the Compose HandoffBehavior Consumes System Resources  
+
  When you apply a <xref:System.Windows.Media.Animation.Storyboard>, <xref:System.Windows.Media.Animation.AnimationTimeline>, or <xref:System.Windows.Media.Animation.AnimationClock> to a property using the <xref:System.Windows.Media.Animation.HandoffBehavior.Compose><xref:System.Windows.Media.Animation.HandoffBehavior>, any <xref:System.Windows.Media.Animation.Clock> objects previously associated with that property continue to consume system resources; the timing system will not remove these clocks automatically.  
   
  To avoid performance issues when you apply a large number of clocks using <xref:System.Windows.Media.Animation.HandoffBehavior.Compose>, you should remove composing clocks from the animated property after they complete. There are several ways to remove a clock.  
