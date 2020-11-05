@@ -27,17 +27,13 @@ To learn more about the benefits of .NET (not .NET Framework), see [Introduction
 
 - This article uses the [Matching game](https://github.com/dotnet/samples/tree/master/windowsforms/matching-game/net45/) sample app. If you want to follow along, download and open the application in Visual Studio. Otherwise, use your own app.
 
-- Back up your project!
-
-  Before migrating your app to .NET 5, back up your project! If something goes wrong, you can restore your code to its original state by restoring your backup.
-
 ### Consider
 
 When migrating a .NET Framework Windows Forms application, there are a few things you must consider.
 
 01. Check that your application is a good candidate for migration.
 
-    Use the [.NET Portability Analyzer](/dotnet/standard/analyzers/portability-analyzer) to determine if your project will migrate to .NET 5. If your project has issues with .NET 5, the analyzer helps you identify those problems.
+    Use the [.NET Portability Analyzer](/dotnet/standard/analyzers/portability-analyzer) to determine if your project will migrate to .NET 5. If your project has issues with .NET 5, the analyzer helps you identify those problems. The .NET Portability Analyzer tool can be installed as a Visual Studio extension or used from the command line. For more information, see [.NET Portability Analyzer](/dotnet/standard/analyzers/portability-analyzer).
 
 01. You're using a different version of Windows Forms.
 
@@ -51,9 +47,9 @@ When migrating a .NET Framework Windows Forms application, there are a few thing
 
     It's always a good practice to use the latest versions of NuGet packages before any migration. If your application is referencing any NuGet packages, update them to the latest version. Ensure your application builds successfully. After upgrading, if there are any package errors, downgrade the package to the latest version that doesn't break your code.
 
-## Portability analyzer
+## Back up your projects
 
-It's best to use the .NET Portability Analyzer to scan your project and identify any issues that would prevent migration. The .NET Portability Analyzer tool can be installed as a Visual Studio extension or used from the command line. For more information, see [.NET Portability Analyzer](/dotnet/standard/analyzers/portability-analyzer).
+The first step to migrating a project is to back up your project! If something goes wrong, you can restore your code to its original state by restoring your backup. Don't rely on tools such as the .NET Portability Analyzer to back up your project, even if they seem to. It's better to have a copy of the original project safely stored in the cloud or elsewhere on your computer.
 
 ## NuGet packages
 
