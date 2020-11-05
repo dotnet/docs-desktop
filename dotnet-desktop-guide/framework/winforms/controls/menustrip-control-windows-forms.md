@@ -7,9 +7,11 @@ helpviewer_keywords:
 ms.assetid: e361bf98-eed8-4ed3-9dfb-5a2e865e3ce6
 ---
 # MenuStrip Control (Windows Forms)
+
 This control groups application commands and makes them easily accessible.  
   
 ## In This Section  
+
  [MenuStrip Control Overview](menustrip-control-overview-windows-forms.md)  
  Explains what the control is and its key features and properties.  
   
@@ -49,7 +51,7 @@ This control groups application commands and makes them easily accessible.
  [How to: Set Up Automatic Menu Merging for MDI Applications](how-to-set-up-automatic-menu-merging-for-mdi-applications.md)  
  Describes how to merge menu items automatically at run time.  
   
-- [MenuStrip Items Collection Editor](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms233625(v=vs.100))  
+- [MenuStrip Items Collection Editor](/previous-versions/visualstudio/visual-studio-2010/ms233625(v=vs.100))  
   
 - [How to: Copy ToolStripMenuItems](how-to-copy-toolstripmenuitems.md)  
   
@@ -61,9 +63,10 @@ This control groups application commands and makes them easily accessible.
   
 - [Walkthrough: Providing Standard Menu Items to a Form](walkthrough-providing-standard-menu-items-to-a-form.md)  
   
-- [MenuStrip Tasks Dialog Box](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms233645(v=vs.100))  
+- [MenuStrip Tasks Dialog Box](/previous-versions/visualstudio/visual-studio-2010/ms233645(v=vs.100))  
   
 ## Reference  
+
  <xref:System.Windows.Forms.MenuStrip>  
  Describes the features of the <xref:System.Windows.Forms.MenuStrip> class, which provides a menu system for a form.  
   
@@ -74,5 +77,6 @@ This control groups application commands and makes them easily accessible.
  Describes the features of the <xref:System.Windows.Forms.ToolStripMenuItem> class, which represents a selectable option displayed on a <xref:System.Windows.Forms.MenuStrip> or <xref:System.Windows.Forms.ContextMenuStrip>.  
   
 ## Related Sections  
+
  [Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)  
  Provides a complete list of Windows Forms controls, with links to information on their use.

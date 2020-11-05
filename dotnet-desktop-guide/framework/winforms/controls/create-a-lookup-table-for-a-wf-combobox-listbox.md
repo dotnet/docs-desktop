@@ -16,6 +16,7 @@ helpviewer_keywords:
 ms.assetid: 4ce35f12-1f4e-4317-92d1-af8686a8cfaa
 ---
 # How to: Create a Lookup Table for a Windows Forms ComboBox, ListBox, or CheckedListBox Control
+
 Sometimes it is useful to display data in a user-friendly format on a Windows Form, but store the data in a format that is more meaningful to your program. For example, an order form for food might display the menu items by name in a list box. However, the data table recording the order would contain the unique ID numbers representing the food. The following tables show an example of how to store and display order-form data for food.  
   
 ### OrderDetailsTable  
@@ -44,7 +45,7 @@ Sometimes it is useful to display data in a user-friendly format on a Windows Fo
   
 2. Connect to your data source.  
   
-3. Establish a data relation between the two tables. See [Introduction to DataRelation Objects](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/0k21zcyx(v=vs.120)).  
+3. Establish a data relation between the two tables. See [Introduction to DataRelation Objects](/previous-versions/visualstudio/visual-studio-2013/0k21zcyx(v=vs.120)).  
   
 4. Set the following properties. They can be set in code or in the designer.  
   

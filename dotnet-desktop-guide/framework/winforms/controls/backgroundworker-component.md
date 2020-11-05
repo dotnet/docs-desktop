@@ -13,9 +13,11 @@ helpviewer_keywords:
 ms.assetid: bef7b0ab-ce57-475a-a2d6-fb8a702a9417
 ---
 # BackgroundWorker Component
+
 The `BackgroundWorker` component enables your form or control to run an operation asynchronously.  
   
 ## In This Section  
+
  [BackgroundWorker Component Overview](backgroundworker-component-overview.md)  
  Describes the `BackgroundWorker` component, which gives you the ability to execute time-consuming operations asynchronously ("in the background"), on a thread different from your application's main UI thread.  
   
@@ -35,6 +37,7 @@ The `BackgroundWorker` component enables your form or control to run an operatio
  Demonstrates how to use the `BackgroundWorker` component to download a file on a separate thread.  
   
 ## Reference  
+
  <xref:System.ComponentModel.BackgroundWorker>  
  Describes this class and has links to all its members.  
   
@@ -45,5 +48,6 @@ The `BackgroundWorker` component enables your form or control to run an operatio
  Describes the type that holds data for the <xref:System.ComponentModel.BackgroundWorker.ProgressChanged> event.  
   
 ## Related Sections  
- [Event-based Asynchronous Pattern Overview](https://docs.microsoft.com/dotnet/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview)  
+
+ [Event-based Asynchronous Pattern Overview](/dotnet/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview)  
  Describes how the asynchronous pattern makes available the advantages of multithreaded applications while hiding many of the complex issues inherent in multithreaded design.

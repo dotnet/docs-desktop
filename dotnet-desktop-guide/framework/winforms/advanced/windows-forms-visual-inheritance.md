@@ -12,11 +12,13 @@ helpviewer_keywords:
 ms.assetid: 857eb737-3602-4d49-bd8b-f70d33ace345
 ---
 # Windows Forms Visual Inheritance
+
 Occasionally, you may decide that a project calls for a form similar to one that you have created in a previous project. Or, you may want to create a basic form with settings such as a watermark or certain control layout that you will then use again within a project, with each iteration containing modifications to the original form template. Form inheritance enables you to create a base form and then inherit from it and make modifications while preserving whatever original settings you need.  
   
  You can create derived-class forms programmatically or by using the Visual Inheritance picker.  
   
 ## In This Section  
+
  [How to: Inherit Windows Forms](how-to-inherit-windows-forms.md)  
  Gives directions for creating inherited forms in code.  
   
@@ -33,11 +35,12 @@ Occasionally, you may decide that a project calls for a form similar to one that
  Gives directions for using the `GenerateMember` and `Modifiers` properties, which are relevant when the Windows Forms Designer generates a member variable for a component.  
   
 ## Related Sections  
- [Inheritance basics (Visual Basic)](https://docs.microsoft.com/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics)  
+
+ [Inheritance basics (Visual Basic)](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics)  
  Describes how to define Visual Basic classes that serve as the basis for other classes.  
   
- [class](https://docs.microsoft.com/dotnet/csharp/language-reference/keywords/class)  
+ [class](/dotnet/csharp/language-reference/keywords/class)  
  Describes the C# approach of classes, in which single inheritance is allowed.  
   
- [Troubleshooting Inherited Event Handlers in Visual Basic](https://docs.microsoft.com/dotnet/visual-basic/programming-guide/language-features/events/troubleshooting-inherited-event-handlers)  
+ [Troubleshooting Inherited Event Handlers in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/events/troubleshooting-inherited-event-handlers)  
  Lists common issues that arise with event handlers in inherited components

@@ -15,6 +15,7 @@ helpviewer_keywords:
 ms.assetid: 3cd3e55b-2f5e-40dd-835d-f50f7ce08967
 ---
 # More Secure File and Data Access in Windows Forms
+
 The .NET Framework uses permissions to help protect resources and data. Where your application can read or write data depends on the permissions granted to the application. When your application runs in a partial trust environment, you might not have access to your data or you might have to change the way you access the data.  
   
  When you encounter a security restriction, you have two options: assert the permission (assuming it has been granted to your application), or use a version of the feature written to work in partial trust. The following sections discuss how to work with file, database, and registry access from applications that are running in a partial trust environment.  
@@ -23,9 +24,11 @@ The .NET Framework uses permissions to help protect resources and data. Where yo
 > By default, tools that generate ClickOnce deployments default these deployments to requesting Full Trust from the computers on which they run. If you decide you want the added security benefits of running in partial trust, you must change this default in either Visual Studio or one of the Windows SDK tools (Mage.exe or MageUI.exe). For more information about Windows Forms security, and on how to determine the appropriate trust level for your application, see [Security in Windows Forms Overview](security-in-windows-forms-overview.md).  
   
 ## File Access  
+
  The <xref:System.Security.Permissions.FileIOPermission> class controls file and folder access in the .NET Framework. By default, the security system does not grant the <xref:System.Security.Permissions.FileIOPermission> to partial trust environments such as the local intranet and Internet zones. However, an application that requires file access can still function in these environments if you modify the design of your application or use different methods to access files. By default, the local intranet zone is granted the right to have same site access and same directory access, to connect back to the site of its origin, and to read from its installation directory. By default, the Internet zone, is only granted the right to connect back to the site of its origin.  
   
 ### User-Specified Files  
+
  One way to deal with not having file access permission is to prompt the user to provide specific file information by using the <xref:System.Windows.Forms.OpenFileDialog> or <xref:System.Windows.Forms.SaveFileDialog> class. This user interaction helps provide some assurance that the application cannot maliciously load private files or overwrite important files. The <xref:System.Windows.Forms.OpenFileDialog.OpenFile%2A> and <xref:System.Windows.Forms.SaveFileDialog.OpenFile%2A> methods provide read and write file access by opening the file stream for the file that the user specified. The methods also help protect the user's file by obscuring the file's path.  
   
 > [!NOTE]
@@ -130,7 +133,8 @@ private void ButtonOpen_Click(object sender, System.EventArgs e)
 > In Visual C#, ensure that you add code to enable the event handler. By using the code from the previous example, the following code shows how to enable the event handler.`this.ButtonOpen.Click += newSystem.Windows.Forms.EventHandler(this.ButtonOpen_Click);`  
   
 ### Other Files  
- Sometimes you will need to read or write to files that the user does not specify, such as when you must persist application settings. In the local intranet and Internet zones, your application will not have permission to store data in a local file. However, your application will be able to store data in isolated storage. Isolated storage is an abstract data compartment (not a specific storage location) that contains one or more isolated storage files, called stores, that contain the actual directory locations where data is stored. File access permissions like <xref:System.Security.Permissions.FileIOPermission> are not required; instead, the <xref:System.Security.Permissions.IsolatedStoragePermission> class controls the permissions for isolated storage. By default, applications that are running in the local intranet and Internet zones can store data using isolated storage; however, settings like disk quota can vary. For more information about isolated storage, see [Isolated Storage](https://docs.microsoft.com/dotnet/standard/io/isolated-storage).  
+
+ Sometimes you will need to read or write to files that the user does not specify, such as when you must persist application settings. In the local intranet and Internet zones, your application will not have permission to store data in a local file. However, your application will be able to store data in isolated storage. Isolated storage is an abstract data compartment (not a specific storage location) that contains one or more isolated storage files, called stores, that contain the actual directory locations where data is stored. File access permissions like <xref:System.Security.Permissions.FileIOPermission> are not required; instead, the <xref:System.Security.Permissions.IsolatedStoragePermission> class controls the permissions for isolated storage. By default, applications that are running in the local intranet and Internet zones can store data using isolated storage; however, settings like disk quota can vary. For more information about isolated storage, see [Isolated Storage](/dotnet/standard/io/isolated-storage).  
   
  The following example uses isolated storage to write data to a file located in a store. The example requires <xref:System.Security.Permissions.IsolatedStorageFilePermission> and the <xref:System.Security.Permissions.IsolatedStorageContainment.DomainIsolationByUser> enumeration value. The example demonstrates reading and writing certain property values of the <xref:System.Windows.Forms.Button> control to a file in isolated storage. The `Read` function would be called after the application starts and the `Write` function would be called before the application ends. The example requires that the `Read` and `Write` functions exist as members of a <xref:System.Windows.Forms.Form> that contains a <xref:System.Windows.Forms.Button> control named `MainButton`.  
   
@@ -343,11 +347,13 @@ public void Write()
 ```  
   
 ## Database Access  
- The permissions required to access a database vary based on the database provider; however, only applications that are running with the appropriate permissions can access a database through a data connection. For more information about the permissions that are required to access a database, see [Code Access Security and ADO.NET](https://docs.microsoft.com/dotnet/framework/data/adonet/code-access-security).  
+
+ The permissions required to access a database vary based on the database provider; however, only applications that are running with the appropriate permissions can access a database through a data connection. For more information about the permissions that are required to access a database, see [Code Access Security and ADO.NET](/dotnet/framework/data/adonet/code-access-security).  
   
- If you cannot directly access a database because you want your application to run in partial trust, you can use a Web service as an alternative means to access your data. A Web service is a piece of software that can be programmatically accessed over a network. With Web services, applications can share data across code group zones. By default, applications in the local intranet and Internet zones are granted the right to access their sites of origin, which enables them to call a Web service hosted on the same server. For more information see [Web Services in ASP.NET AJAX](https://docs.microsoft.com/previous-versions/aspnet/bb398785(v=vs.100)) or [Windows Communication Foundation](https://docs.microsoft.com/dotnet/framework/wcf/index).  
+ If you cannot directly access a database because you want your application to run in partial trust, you can use a Web service as an alternative means to access your data. A Web service is a piece of software that can be programmatically accessed over a network. With Web services, applications can share data across code group zones. By default, applications in the local intranet and Internet zones are granted the right to access their sites of origin, which enables them to call a Web service hosted on the same server. For more information see [Web Services in ASP.NET AJAX](/previous-versions/aspnet/bb398785(v=vs.100)) or [Windows Communication Foundation](/dotnet/framework/wcf/index).  
   
 ## Registry Access  
+
  The <xref:System.Security.Permissions.RegistryPermission> class controls access to the operating system registry. By default, only applications that are running locally can access the registry.  <xref:System.Security.Permissions.RegistryPermission> only grants an application the right to try registry access; it does not guarantee access will succeed, because the operating system still enforces security on the registry.  
   
  Because you cannot access the registry under partial trust, you may need to find other methods of storing your data. When you store application settings, use isolated storage instead of the registry. Isolated storage can also be used to store other application-specific files. You can also store global application information about the server or site of origin, because by default an application is granted the right to access the site of its origin.  
@@ -358,5 +364,5 @@ public void Write()
 - [Additional Security Considerations in Windows Forms](additional-security-considerations-in-windows-forms.md)
 - [Security in Windows Forms Overview](security-in-windows-forms-overview.md)
 - [Windows Forms Security](windows-forms-security.md)
-- [Mage.exe (Manifest Generation and Editing Tool)](https://docs.microsoft.com/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)
-- [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](https://docs.microsoft.com/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)
+- [Mage.exe (Manifest Generation and Editing Tool)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)
+- [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)

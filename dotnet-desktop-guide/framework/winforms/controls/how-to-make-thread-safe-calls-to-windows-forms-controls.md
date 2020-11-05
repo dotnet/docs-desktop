@@ -19,7 +19,7 @@ ms.assetid: 138f38b6-1099-4fd5-910c-390b41cbad35
 ---
 # How to: Make thread-safe calls to Windows Forms controls
 
-Multithreading can improve the performance of Windows Forms apps, but access to Windows Forms controls isn't inherently thread-safe. Multithreading can expose your code to very serious and complex bugs. Two or more threads manipulating a control can force the control into an inconsistent state and lead to race conditions, deadlocks, and freezes or hangs. If you implement multithreading in your app, be sure to call cross-thread controls in a thread-safe way. For more information, see [Managed threading best practices](https://docs.microsoft.com/dotnet/standard/threading/managed-threading-best-practices).
+Multithreading can improve the performance of Windows Forms apps, but access to Windows Forms controls isn't inherently thread-safe. Multithreading can expose your code to very serious and complex bugs. Two or more threads manipulating a control can force the control into an inconsistent state and lead to race conditions, deadlocks, and freezes or hangs. If you implement multithreading in your app, be sure to call cross-thread controls in a thread-safe way. For more information, see [Managed threading best practices](/dotnet/standard/threading/managed-threading-best-practices).
 
 There are two ways to safely call a Windows Forms control from a thread that didn't create that control. You can use the <xref:System.Windows.Forms.Control.Invoke%2A?displayProperty=fullName> method to call a delegate created in the main thread, which in turn calls the control. Or, you can implement a <xref:System.ComponentModel.BackgroundWorker?displayProperty=nameWithType>, which uses an event-driven model to separate work done in the background thread from reporting on the results.
 
@@ -61,7 +61,7 @@ The following code examples demonstrate two ways to safely call a Windows Forms 
 
 In both examples, the background thread sleeps for one second to simulate work being done in that thread.
 
-You can build and run these examples as .NET Framework apps from the C# or Visual Basic command line. For more information, see [Command-line building with csc.exe](https://docs.microsoft.com/dotnet/csharp/language-reference/compiler-options/command-line-building-with-csc-exe) or [Build from the command line (Visual Basic)](https://docs.microsoft.com/dotnet/visual-basic/reference/command-line-compiler/building-from-the-command-line).
+You can build and run these examples as .NET Framework apps from the C# or Visual Basic command line. For more information, see [Command-line building with csc.exe](/dotnet/csharp/language-reference/compiler-options/command-line-building-with-csc-exe) or [Build from the command line (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/building-from-the-command-line).
 
 Starting with .NET Core 3.0, you can also build and run the examples as Windows .NET Core apps from a folder that has a .NET Core Windows Forms *\<folder name>.csproj* project file.
 

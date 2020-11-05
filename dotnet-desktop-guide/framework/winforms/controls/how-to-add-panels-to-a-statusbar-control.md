@@ -12,6 +12,7 @@ helpviewer_keywords:
 ms.assetid: 835e3902-288c-4c38-9d69-0696d8695009
 ---
 # How to: Add Panels to a StatusBar Control
+
 > [!IMPORTANT]
 > The <xref:System.Windows.Forms.StatusStrip> and <xref:System.Windows.Forms.ToolStripStatusLabel> controls replace and add functionality to the <xref:System.Windows.Forms.StatusBar> and <xref:System.Windows.Forms.StatusBarPanel> controls; however, the <xref:System.Windows.Forms.StatusBar> and <xref:System.Windows.Forms.StatusBarPanel> controls are retained for both backward compatibility and future use, if you choose.  
   
@@ -118,7 +119,7 @@ ms.assetid: 835e3902-288c-4c38-9d69-0696d8695009
 
 - <xref:System.Windows.Forms.StatusBar>
 - <xref:System.Windows.Forms.ToolStripStatusLabel>
-- [Collection Editor Dialog Box](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/xc4yyekt(v=vs.100))
+- [Collection Editor Dialog Box](/previous-versions/visualstudio/visual-studio-2010/xc4yyekt(v=vs.100))
 - [How to: Set the Size of Status-Bar Panels](how-to-set-the-size-of-status-bar-panels.md)
 - [Walkthrough: Updating Status Bar Information at Run Time](walkthrough-updating-status-bar-information-at-run-time.md)
 - [How to: Determine Which Panel in the Windows Forms StatusBar Control Was Clicked](determine-which-panel-wf-statusbar-control-was-clicked.md)

@@ -91,8 +91,8 @@ The following changes apply to the <xref:System.Windows.Forms.MonthCalendar> con
 
 ## UI automation support for DataGridView, PropertyGrid, ListBox, ComboBox, ToolStrip, and other controls
 
-UI Automation support is enabled for controls at runtime but isn't used during design time. For an overview of UI automation, see the [UI Automation Overview](https://docs.microsoft.com/dotnet/framework/ui-automation/ui-automation-overview).
+UI Automation support is enabled for controls at runtime but isn't used during design time. For an overview of UI automation, see the [UI Automation Overview](/dotnet/framework/ui-automation/ui-automation-overview).
 
 ## See also
 
-- [Accessibility Best Practices](https://docs.microsoft.com/dotnet/framework/ui-automation/accessibility-best-practices).
+- [Accessibility Best Practices](/dotnet/framework/ui-automation/accessibility-best-practices).

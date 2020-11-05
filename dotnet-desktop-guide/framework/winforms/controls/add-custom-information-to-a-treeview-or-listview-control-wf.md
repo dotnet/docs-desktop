@@ -15,6 +15,7 @@ helpviewer_keywords:
 ms.assetid: 68be11de-1d5b-430e-901f-cfbe48d14b19
 ---
 # How to: Add Custom Information to a TreeView or ListView Control (Windows Forms)
+
 You can create a derived node in a Windows Forms <xref:System.Windows.Forms.TreeView> control or a derived item in a <xref:System.Windows.Forms.ListView> control. Derivation allows you to add any fields you require, as well as custom methods and constructors for handling them. One use of this feature is to attach a Customer object to each tree node or list item. The examples here are for a <xref:System.Windows.Forms.TreeView> control, but the same approach can be used for a <xref:System.Windows.Forms.ListView> control.  
   
 ### To derive a tree node  
@@ -94,7 +95,7 @@ You can create a derived node in a Windows Forms <xref:System.Windows.Forms.Tree
        "\\TextFile.txt")));  
     ```  
   
-2. If you are passed the tree node and it is typed as a <xref:System.Windows.Forms.TreeNode> class, then you will need to cast to your derived class. Casting is an explicit conversion from one type of object to another. For more information on casting, see [Implicit and Explicit Conversions](https://docs.microsoft.com/dotnet/visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions) (Visual Basic), [Casting and type conversions](https://docs.microsoft.com/dotnet/csharp/programming-guide/types/casting-and-type-conversions) (Visual C#), or [Cast Operator: ()](/cpp/cpp/cast-operator-parens) (Visual C++).  
+2. If you are passed the tree node and it is typed as a <xref:System.Windows.Forms.TreeNode> class, then you will need to cast to your derived class. Casting is an explicit conversion from one type of object to another. For more information on casting, see [Implicit and Explicit Conversions](/dotnet/visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions) (Visual Basic), [Casting and type conversions](/dotnet/csharp/programming-guide/types/casting-and-type-conversions) (Visual C#), or [Cast Operator: ()](/cpp/cpp/cast-operator-parens) (Visual C++).  
   
     ```vb  
     Public Sub TreeView1_AfterSelect(ByVal sender As Object, ByVal e As System.Windows.Forms.TreeViewEventArgs) Handles TreeView1.AfterSelect  

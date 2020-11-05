@@ -169,7 +169,7 @@ Visual Studio attempted to wire up an event-handling method and could not find o
 
 The templates for inherited forms in Visual Studio are not available. If you see this error, please log an issue by using [Report a Problem](/visualstudio/ide/how-to-report-a-problem-with-visual-studio).
 
-### Delegate class '\<class name>' has no invoke method. Is this class a delegate?
+### Delegate class '\<class name>' has no invoke method. Is this class a delegate
 
 Visual Studio has tried to create an event handler, but there is something wrong with the event type. This can happen if the event was created by a non-CLS-compliant language. Contact the component vendor.
 
@@ -209,7 +209,7 @@ You've tried to rename a component to an invalid value for that language. To cor
 
 ### The type '\<class name>' is made of several partial classes in the same file
 
-When you define a class in multiple files by using the [partial](https://docs.microsoft.com/dotnet/csharp/language-reference/keywords/partial-type) keyword, you can only have one partial definition in each file.
+When you define a class in multiple files by using the [partial](/dotnet/csharp/language-reference/keywords/partial-type) keyword, you can only have one partial definition in each file.
 
 To correct this error, remove all but one of the partial definitions of your class from the file.
 
@@ -257,7 +257,7 @@ Visual Studio could not load the designer for the class. If you see this error, 
 
 ### The designer must create an instance of type '\<type name>', but it can't because the type is declared as abstract
 
-This error occurred because the base class of the object being passed to the designer is [abstract](https://docs.microsoft.com/dotnet/csharp/language-reference/keywords/abstract), which is not allowed.
+This error occurred because the base class of the object being passed to the designer is [abstract](/dotnet/csharp/language-reference/keywords/abstract), which is not allowed.
 
 ### The file could not be loaded in the designer
 
@@ -359,7 +359,7 @@ This message is similar to "The language for this file does not support the nece
 
 ### Type '\<type name\>' does not have a constructor with parameters of types '\<parameter type names>'
 
-Visual Studio could not find a [constructor](https://docs.microsoft.com/dotnet/csharp/programming-guide/classes-and-structs/constructors) that had matching parameters. This may be the result of supplying a constructor with types other than those that are required. For example, a **Point** constructor might take two integers. If you provided floats, this error is raised.
+Visual Studio could not find a [constructor](/dotnet/csharp/programming-guide/classes-and-structs/constructors) that had matching parameters. This may be the result of supplying a constructor with types other than those that are required. For example, a **Point** constructor might take two integers. If you provided floats, this error is raised.
 
 To correct this error, use a different constructor or explicitly cast the parameter types such that they match those provided by the constructor.
 

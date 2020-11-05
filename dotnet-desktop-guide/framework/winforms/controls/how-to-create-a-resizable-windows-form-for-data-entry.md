@@ -13,9 +13,11 @@ helpviewer_keywords:
 ms.assetid: babdf198-404c-485d-a914-ed370c6ecd99
 ---
 # How to: Create a Resizable Windows Form for Data Entry
-A good layout responds well to changes in the dimensions of its parent form. You can use the <xref:System.Windows.Forms.TableLayoutPanel> control to arrange the layout of your form to resize and position your controls in a consistent way as the form's dimensions change. The <xref:System.Windows.Forms.TableLayoutPanel> control is also useful when changes in the contents of your controls cause changes in the layout. The process covered in this procedure can be done within the Visual Studio environment.  Also see [Walkthrough: Creating a Resizable Windows Form for Data Entry](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/991eahec(v=vs.100)).  
+
+A good layout responds well to changes in the dimensions of its parent form. You can use the <xref:System.Windows.Forms.TableLayoutPanel> control to arrange the layout of your form to resize and position your controls in a consistent way as the form's dimensions change. The <xref:System.Windows.Forms.TableLayoutPanel> control is also useful when changes in the contents of your controls cause changes in the layout. The process covered in this procedure can be done within the Visual Studio environment.  Also see [Walkthrough: Creating a Resizable Windows Form for Data Entry](/previous-versions/visualstudio/visual-studio-2010/991eahec(v=vs.100)).  
   
 ## Example  
+
  The following example demonstrates how to use a <xref:System.Windows.Forms.TableLayoutPanel> control to build a layout that responds well when the user resizes the form. It also demonstrates a layout that responds well to localization.  
   
  [!code-cpp[System.Windows.Forms.TableLayoutPanel.DataEntryForm#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.TableLayoutPanel.DataEntryForm/cpp/basicdataentryform.cpp#1)]
@@ -23,6 +25,7 @@ A good layout responds well to changes in the dimensions of its parent form. You
  [!code-vb[System.Windows.Forms.TableLayoutPanel.DataEntryForm#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TableLayoutPanel.DataEntryForm/VB/basicdataentryform.vb#1)]  
   
 ## Compiling the Code  
+
  This example requires:  
   
 - References to the System, System.Data, System.Drawing and System.Windows.Forms assemblies.  

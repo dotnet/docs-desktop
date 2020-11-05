@@ -15,6 +15,7 @@ helpviewer_keywords:
 ms.assetid: 18ca41d0-68a5-4660-985e-a6c1fbc01d76
 ---
 # How to: Set Pictures at Run Time (Windows Forms)
+
 You can programmatically set the image displayed by a Windows Forms <xref:System.Windows.Forms.PictureBox> control.  
   
 ### To set a picture programmatically  
@@ -87,7 +88,7 @@ You can programmatically set the image displayed by a Windows Forms <xref:System
     ```  
   
     > [!NOTE]
-    > For more information on why you should use the <xref:System.Drawing.Image.Dispose%2A> method in this way, see [Cleaning Up Unmanaged Resources](https://docs.microsoft.com/dotnet/standard/garbage-collection/unmanage).  
+    > For more information on why you should use the <xref:System.Drawing.Image.Dispose%2A> method in this way, see [Cleaning Up Unmanaged Resources](/dotnet/standard/garbage-collection/unmanage).  
   
      This code will clear the image even if a graphic was loaded into the control at design time.  
   

@@ -7,9 +7,11 @@ helpviewer_keywords:
 ms.assetid: babf8af3-8000-46e2-8c68-a42127efabba
 ---
 # Networking in Windows Forms Applications
+
 The .NET Framework provides classes for displaying Web pages, downloading Web content, interacting with file transfer protocol (FTP) sites, and consuming Web Services, making it easy to build network functionality into your application. The following resources will help you understand the networking technologies of the .NET Framework and how you can integrate them into Windows Forms.  
   
 ## Reference  
+
  <xref:System.Net>  
  The root namespace for classes in the .NET Framework that handle network connectivity.  
   
@@ -23,7 +25,8 @@ The .NET Framework provides classes for displaying Web pages, downloading Web co
  A managed wrapper class for the `WebBrowser` control that is included with Windows.  
   
 ## Related Sections  
- [Network Programming in the .NET Framework](https://docs.microsoft.com/dotnet/framework/network-programming/index)  
+
+ [Network Programming in the .NET Framework](/dotnet/framework/network-programming/index)  
  An introduction to networking in the .NET Framework.  
   
  [Windows Forms Data Binding](../windows-forms-data-binding.md)  

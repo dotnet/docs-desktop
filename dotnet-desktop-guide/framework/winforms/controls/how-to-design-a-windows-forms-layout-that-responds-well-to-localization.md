@@ -12,12 +12,14 @@ helpviewer_keywords:
 ms.assetid: d13eff2d-701c-4b6e-8838-3885cbfb7223
 ---
 # How to: Design a Windows Forms Layout that Responds Well to Localization
+
 Creating forms that are ready to be localized greatly speeds development for international markets. You can use the <xref:System.Windows.Forms.TableLayoutPanel> control to implement layouts that respond gracefully as controls resize due to changes in their <xref:System.Windows.Forms.Control.Text%2A> property values.
 
 ## Example
- This form demonstrates how to create a layout that proportionally adjusts when you translate displayed string values into other languages. This process of translation is called *localization*. For more information, see [Localization](https://docs.microsoft.com/dotnet/standard/globalization-localization/localization).
 
- There is extensive support for this task in Visual Studio.  See also [Walkthrough: Creating a Layout That Adjusts Proportion for Localization](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/7k9fa71y(v=vs.100)).
+ This form demonstrates how to create a layout that proportionally adjusts when you translate displayed string values into other languages. This process of translation is called *localization*. For more information, see [Localization](/dotnet/standard/globalization-localization/localization).
+
+ There is extensive support for this task in Visual Studio.  See also [Walkthrough: Creating a Layout That Adjusts Proportion for Localization](/previous-versions/visualstudio/visual-studio-2010/7k9fa71y(v=vs.100)).
 
  [!code-csharp[System.Windows.Forms.TableLayoutPanel.LocalizableForm#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TableLayoutPanel.LocalizableForm/CS/localizableform.cs#1)]
  [!code-vb[System.Windows.Forms.TableLayoutPanel.LocalizableForm#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TableLayoutPanel.LocalizableForm/VB/localizableform.vb#1)]
@@ -38,11 +40,12 @@ Creating forms that are ready to be localized greatly speeds development for int
 
 7. [Walkthrough: Laying Out Windows Forms Controls with Padding, Margins, and the AutoSize Property](windows-forms-controls-padding-autosize.md)
 
-8. [How to: Support Localization on Windows Forms Using AutoSize and the TableLayoutPanel Control](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/1zkt8b33(v=vs.100))
+8. [How to: Support Localization on Windows Forms Using AutoSize and the TableLayoutPanel Control](/previous-versions/visualstudio/visual-studio-2010/1zkt8b33(v=vs.100))
 
-9. [Walkthrough: Creating a Resizable Windows Form for Data Entry](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/991eahec(v=vs.100))
+9. [Walkthrough: Creating a Resizable Windows Form for Data Entry](/previous-versions/visualstudio/visual-studio-2010/991eahec(v=vs.100))
 
 ## Compiling the Code
+
  This example requires:
 
 - References to the System, System.Data, System.Drawing and System.Windows.Forms assemblies.
@@ -51,4 +54,4 @@ Creating forms that are ready to be localized greatly speeds development for int
 
 - <xref:System.Windows.Forms.TableLayoutPanel>
 - <xref:System.Windows.Forms.FlowLayoutPanel>
-- [Localization](https://docs.microsoft.com/dotnet/standard/globalization-localization/localization)
+- [Localization](/dotnet/standard/globalization-localization/localization)

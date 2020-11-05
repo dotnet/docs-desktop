@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: 53db79fa-8a5e-448e-88c2-f54ace3860b6
 ---
 # How to: Access the HTML Source in the Managed HTML Document Object Model
+
 The <xref:System.Windows.Forms.WebBrowser.DocumentStream%2A> and <xref:System.Windows.Forms.WebBrowser.DocumentText%2A> properties on the <xref:System.Windows.Forms.WebBrowser> control return the HTML of the current document as it existed when it was first displayed. However, if you modify the page using method and property calls such as <xref:System.Windows.Forms.HtmlElement.AppendChild%2A> and <xref:System.Windows.Forms.HtmlElement.InnerHtml%2A>, these changes will not appear when you call <xref:System.Windows.Forms.WebBrowser.DocumentStream%2A> and <xref:System.Windows.Forms.WebBrowser.DocumentText%2A>. To obtain the most up-to-date HTML source for the DOM, you must call the <xref:System.Windows.Forms.HtmlElement.OuterHtml%2A> property on the HTML element.  
   
  The following procedure shows how to retrieve the dynamic source and display it in a separate shortcut menu.  
@@ -29,7 +30,7 @@ The <xref:System.Windows.Forms.WebBrowser.DocumentStream%2A> and <xref:System.Wi
      [!code-csharp[DisplayWebBrowserCode#1](~/samples/snippets/csharp/VS_Snippets_Winforms/DisplayWebBrowserCode/CS/CodeForm.cs#1)]
      [!code-vb[DisplayWebBrowserCode#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/DisplayWebBrowserCode/VB/CodeForm.vb#1)]  
   
-6. Add a <xref:System.Windows.Forms.Button> control named `Button1` to your <xref:System.Windows.Forms.Form>, and monitor for the <xref:System.Windows.Forms.Control.Click> event. For details on monitoring events, see [Events](https://docs.microsoft.com/dotnet/standard/events/index).  
+6. Add a <xref:System.Windows.Forms.Button> control named `Button1` to your <xref:System.Windows.Forms.Form>, and monitor for the <xref:System.Windows.Forms.Control.Click> event. For details on monitoring events, see [Events](/dotnet/standard/events/index).  
   
 7. Add the following code to the <xref:System.Windows.Forms.Control.Click> event handler.  
   
@@ -37,6 +38,7 @@ The <xref:System.Windows.Forms.WebBrowser.DocumentStream%2A> and <xref:System.Wi
      [!code-vb[DisplayWebBrowserCode#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/DisplayWebBrowserCode/VB/Form1.vb#2)]  
   
 ## Robust Programming  
+
  Always test the value of <xref:System.Windows.Forms.WebBrowser.Document%2A> before attempting to retrieve it. If the current page is not finished loading, <xref:System.Windows.Forms.WebBrowser.Document%2A> or one or more of its child objects may not be initialized.  
   
 ## See also

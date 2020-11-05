@@ -27,7 +27,7 @@ Introduces the `ImeMode` property, which is used to control the type of input a 
 
 ## Related sections
 
-- [Globalizing and localizing .NET applications](https://docs.microsoft.com/dotnet/standard/globalization-localization/index)
+- [Globalizing and localizing .NET applications](/dotnet/standard/globalization-localization/index)
 
 - [Walkthrough: Downloading Satellite Assemblies on Demand with the ClickOnce Deployment API Using the Designer](/visualstudio/deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer)
 
@@ -35,12 +35,12 @@ Introduces the `ImeMode` property, which is used to control the type of input a 
 
 - [Walkthrough: Downloading Satellite Assemblies on Demand with the ClickOnce Deployment API](/visualstudio/deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api)
 
-- [How to: Set the Culture and UI Culture for Windows Forms Globalization](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/b28bx3bh(v=vs.100))
+- [How to: Set the Culture and UI Culture for Windows Forms Globalization](/previous-versions/visualstudio/visual-studio-2010/b28bx3bh(v=vs.100))
 
-- [How to: Create Mirrored Windows Forms and Controls](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/xwbz5ws0(v=vs.100))
+- [How to: Create Mirrored Windows Forms and Controls](/previous-versions/visualstudio/visual-studio-2010/xwbz5ws0(v=vs.100))
 
-- [How to: Support Localization on Windows Forms Using AutoSize and the TableLayoutPanel Control](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/1zkt8b33(v=vs.100))
+- [How to: Support Localization on Windows Forms Using AutoSize and the TableLayoutPanel Control](/previous-versions/visualstudio/visual-studio-2010/1zkt8b33(v=vs.100))
 
-- [Walkthrough: Localizing Windows Forms](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/y99d1cd3(v=vs.100))
+- [Walkthrough: Localizing Windows Forms](/previous-versions/visualstudio/visual-studio-2010/y99d1cd3(v=vs.100))
 
-- [Walkthrough: Creating a Layout That Adjusts Proportion for Localization](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/7k9fa71y(v=vs.100))
+- [Walkthrough: Creating a Layout That Adjusts Proportion for Localization](/previous-versions/visualstudio/visual-studio-2010/7k9fa71y(v=vs.100))

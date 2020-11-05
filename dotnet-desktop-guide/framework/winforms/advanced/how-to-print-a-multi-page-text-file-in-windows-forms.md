@@ -12,6 +12,7 @@ helpviewer_keywords:
 ms.assetid: 362427f8-03d4-4826-b49f-60ab066ad322
 ---
 # How to: Print a Multi-Page Text File in Windows Forms
+
 It is very common for Windows-based applications to print text. The <xref:System.Drawing.Graphics> class provides methods for drawing objects (graphics or text) to a device, such as a screen or printer.  
   
 > [!NOTE]
@@ -42,17 +43,19 @@ It is very common for Windows-based applications to print text. The <xref:System
      [!code-vb[System.Drawing.Printing.PrintExamples#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Printing.PrintExamples/VB/Form1.vb#5)]  
   
 ## Example  
+
  [!code-csharp[System.Drawing.Printing.PrintExamples#0](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Printing.PrintExamples/CS/Form1.cs#0)]
  [!code-vb[System.Drawing.Printing.PrintExamples#0](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Printing.PrintExamples/VB/Form1.vb#0)]  
   
 ## Compiling the Code  
+
  This example requires:  
   
 - A text file named testPage.txt containing the text to print, located in the root of drive C:\\. Edit the code to print a different file.  
   
 - References to the System, System.Windows.Forms, System.Drawing assemblies.  
   
-- For information about building this example from the command line for Visual Basic or Visual C#, see [Building from the Command Line](https://docs.microsoft.com/dotnet/visual-basic/reference/command-line-compiler/building-from-the-command-line) or [Command-line Building With csc.exe](https://docs.microsoft.com/dotnet/csharp/language-reference/compiler-options/command-line-building-with-csc-exe). You can also build this example in Visual Studio by pasting the code into a new project.  
+- For information about building this example from the command line for Visual Basic or Visual C#, see [Building from the Command Line](/dotnet/visual-basic/reference/command-line-compiler/building-from-the-command-line) or [Command-line Building With csc.exe](/dotnet/csharp/language-reference/compiler-options/command-line-building-with-csc-exe). You can also build this example in Visual Studio by pasting the code into a new project.  
   
 ## See also
 

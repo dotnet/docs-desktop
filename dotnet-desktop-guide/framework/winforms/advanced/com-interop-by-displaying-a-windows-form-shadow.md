@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: 87aac8ad-3c04-43b3-9b0c-d0b00df9ee74
 ---
 # How to: Support COM Interop by Displaying a Windows Form with the ShowDialog Method
+
 You can resolve Component Object Model (COM) interoperability problems by displaying your Windows Form on a .NET Framework message loop, which is created by using the <xref:System.Windows.Forms.Application.Run%2A?displayProperty=nameWithType> method.  
   
  To make a form work correctly from a COM client application, you must run it on a Windows Forms message loop. To do this, use one of the following approaches:  
@@ -19,6 +20,7 @@ You can resolve Component Object Model (COM) interoperability problems by displa
 - Display each Windows Form on a separate thread. For more information, see [How to: Support COM Interop by Displaying Each Windows Form on Its Own Thread](how-to-support-com-interop-by-displaying-each-windows-form-on-its-own-thread.md).  
   
 ## Procedure  
+
  Using the <xref:System.Windows.Forms.Form.ShowDialog%2A?displayProperty=nameWithType> method can be the easiest way to display a form on a .NET Framework message loop because, of all the approaches, it requires the least code to implement.  
   
  The <xref:System.Windows.Forms.Form.ShowDialog%2A?displayProperty=nameWithType> method suspends the unmanaged application's message loop and displays the form as a dialog box. Because the host application's message loop has been suspended, the <xref:System.Windows.Forms.Form.ShowDialog%2A?displayProperty=nameWithType> method creates a new .NET Framework message loop to process the form's messages.  
@@ -33,6 +35,6 @@ You can resolve Component Object Model (COM) interoperability problems by displa
   
 ## See also
 
-- [Exposing .NET Framework Components to COM](https://docs.microsoft.com/dotnet/framework/interop/exposing-dotnet-components-to-co)
+- [Exposing .NET Framework Components to COM](/dotnet/framework/interop/exposing-dotnet-components-to-co)
 - [How to: Support COM Interop by Displaying Each Windows Form on Its Own Thread](how-to-support-com-interop-by-displaying-each-windows-form-on-its-own-thread.md)
 - [Windows Forms and Unmanaged Applications](windows-forms-and-unmanaged-applications.md)

@@ -92,7 +92,7 @@ In this procedure, you will define a separate child form class that has its own 
 
 1. Add a new form named `ChildForm` to the project.
 
-     For more information, see [How to: Add Windows Forms to a Project](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/y2xxdce3(v=vs.100)).
+     For more information, see [How to: Add Windows Forms to a Project](/previous-versions/visualstudio/visual-studio-2010/y2xxdce3(v=vs.100)).
 
 2. From the **Toolbox**, drag a <xref:System.Windows.Forms.MenuStrip> control onto the child form.
 
@@ -100,7 +100,7 @@ In this procedure, you will define a separate child form class that has its own 
 
 4. In the **Items Collection Editor** dialog box, add a new <xref:System.Windows.Forms.ToolStripMenuItem> named **ChildMenuItem** to the child menu.
 
-     For more information, see [ToolStrip Items Collection Editor](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms233643(v=vs.100)).
+     For more information, see [ToolStrip Items Collection Editor](/previous-versions/visualstudio/visual-studio-2010/ms233643(v=vs.100)).
 
 ## Test the form
 
