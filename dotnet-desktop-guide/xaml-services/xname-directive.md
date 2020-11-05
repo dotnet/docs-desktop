@@ -63,7 +63,7 @@ If <xref:System.Windows.FrameworkElement.Name%2A> is available as a property on 
 
 ## Silverlight Usage Notes
 
-`x:Name` for Silverlight is documented separately. For more information, see [XAML Namespace (x:) Language Features (Silverlight)](https://docs.microsoft.com/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc188995(v=vs.95)).
+`x:Name` for Silverlight is documented separately. For more information, see [XAML Namespace (x:) Language Features (Silverlight)](/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc188995(v=vs.95)).
 
 ## See also
 
