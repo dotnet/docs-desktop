@@ -12,6 +12,7 @@ helpviewer_keywords:
 ms.assetid: ef30ab78-d334-4668-917d-c9f66c3b6aea
 ---
 # x:ClassModifier Directive
+
 Modifies XAML compilation behavior when `x:Class` is also provided. Specifically, instead of creating a partial `class` that has a `Public` access level (the default), the provided `x:Class` is created with a `NotPublic` access level. This behavior affects the access level for the class in the generated assemblies.
 
 ## XAML Attribute Usage
@@ -30,7 +31,7 @@ Modifies XAML compilation behavior when `x:Class` is also provided. Specifically
 
 ## Dependencies
 
-[x:Class](xclass-directive.md) must also be provided on the same element, and that element must be the root element in a page. For more information, see [\[MS-XAML\] Section 4.3.1.8](https://docs.microsoft.com/previous-versions/msp-n-p/ff650760(v=pandp.10)).
+[x:Class](xclass-directive.md) must also be provided on the same element, and that element must be the root element in a page. For more information, see [\[MS-XAML\] Section 4.3.1.8](/previous-versions/msp-n-p/ff650760(v=pandp.10)).
 
 ## Remarks
 

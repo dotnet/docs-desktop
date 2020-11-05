@@ -12,6 +12,7 @@ helpviewer_keywords:
 ms.assetid: 1985cd45-f197-42d5-b75e-886add64b248
 ---
 # x:Key Directive
+
 Uniquely identifies elements that are created and referenced in a XAML-defined dictionary. Adding an `x:Key` value to a XAML object element is the most common way to identify a resource in a resource dictionary, for example in a WPF <xref:System.Windows.ResourceDictionary>.  
   
 ## XAML Attribute Usage  
@@ -42,6 +43,7 @@ Uniquely identifies elements that are created and referenced in a XAML-defined d
 |`markupExtensionUsage`|Within the markup extension delimiters {}, a markup extension usage that provides an object to use as a key. See Remarks.|  
   
 ## Remarks  
+
  `x:Key` supports the XAML resource dictionary concept. XAML as a language doesn't define a resource dictionary implementation, that is left to specific UI frameworks. To learn more about how XAML resource dictionaries are implemented in WPF, see [XAML Resources](../net/wpf/fundamentals/xaml-resources-define.md).  
   
  In XAML 2006 and WPF, `x:Key` must be provided as an attribute. You can still use nonstring keys, but this requires a markup extension usage in order to provide the nonstring value in attribute form. If you are using XAML 2009, `x:Key` can be specified as an element, to explicitly support dictionaries keyed by object types other than strings without requiring a markup extension intermediate. See the "XAML 2009" section in this topic. The remainder of the Remarks section applies specifically to the XAML 2006 implementation.  
@@ -53,6 +55,7 @@ Uniquely identifies elements that are created and referenced in a XAML-defined d
  The code equivalent of specifying `x:Key` is the key that is used for the underlying <xref:System.Collections.IDictionary>. For example, an `x:Key` that is applied in markup for a resource in WPF is equivalent to the value of the `key` parameter of <xref:System.Windows.ResourceDictionary.Add%2A?displayProperty=nameWithType> when you add the resource to a WPF <xref:System.Windows.ResourceDictionary> in code.  
   
 ## WPF Usage Notes  
+
  Child objects of a parent object that is an <xref:System.Collections.IDictionary> implementation, such as the WPF <xref:System.Windows.ResourceDictionary>, must typically include an `x:Key` attribute, and the key value must be unique within that dictionary. There are two notable exceptions:  
   
 - Some WPF types declare an implicit key for dictionary usage. For example, a <xref:System.Windows.Style> with a <xref:System.Windows.Style.TargetType%2A>, or a <xref:System.Windows.DataTemplate> with a <xref:System.Windows.DataTemplate.DataType%2A>, can be  in a <xref:System.Windows.ResourceDictionary> and use the implicit key.  
@@ -72,6 +75,7 @@ Uniquely identifies elements that are created and referenced in a XAML-defined d
  The WPF merged dictionary feature introduces additional considerations for key uniqueness and key lookup behavior. For more information, see [Merged Resource Dictionaries](../framework/wpf/advanced/merged-resource-dictionaries.md).  
   
 ## XAML 2009  
+
  XAML 2009 relaxes the restriction that `x:Key` always be provided in attribute form.  
   
  In WPF, you can use XAML 2009 features, but only for XAML that is not markup-compiled. Markup-compiled XAML for WPF and the BAML form of XAML do not currently support the XAML 2009 keywords and features.  
@@ -102,7 +106,8 @@ keyObject
 - `keyObject` could also be a markup extension usage in object element form, rather than a direct object instance.  
   
 ## Silverlight Usage Notes  
- `x:Key` for Silverlight is documented separately. For more information, see [XAML Namespace (x:) Language Features (Silverlight)](https://docs.microsoft.com/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc188995(v=vs.95)).  
+
+ `x:Key` for Silverlight is documented separately. For more information, see [XAML Namespace (x:) Language Features (Silverlight)](/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc188995(v=vs.95)).  
   
 ## See also
 
