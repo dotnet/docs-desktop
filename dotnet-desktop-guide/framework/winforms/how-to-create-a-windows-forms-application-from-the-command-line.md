@@ -14,7 +14,7 @@ ms.assetid: 45ad3f8b-1c26-4c9f-91a9-3bb0759a47a4
 ---
 # How to: Create a Windows Forms application from the command line
 
-The following procedures describe the basic steps that you must complete to create and run a Windows Forms application from the command line. There is extensive support for these procedures in Visual Studio.  Also see [Walkthrough: Hosting a Windows Forms Control in WPF](https://docs.microsoft.com/dotnet/framework/wpf/advanced/walkthrough-hosting-a-windows-forms-control-in-wpf).
+The following procedures describe the basic steps that you must complete to create and run a Windows Forms application from the command line. There is extensive support for these procedures in Visual Studio.  Also see [Walkthrough: Hosting a Windows Forms Control in WPF](/dotnet/framework/wpf/advanced/walkthrough-hosting-a-windows-forms-control-in-wpf).
   
 ## Procedure  
   

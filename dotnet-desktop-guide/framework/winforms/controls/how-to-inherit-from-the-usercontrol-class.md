@@ -35,5 +35,5 @@ To combine the functionality of one or more Windows Forms controls with custom c
 - [How to: Inherit from the Control Class](how-to-inherit-from-the-control-class.md)
 - [How to: Inherit from Existing Windows Forms Controls](how-to-inherit-from-existing-windows-forms-controls.md)
 - [How to: Author Controls for Windows Forms](how-to-author-controls-for-windows-forms.md)
-- [Troubleshoot Inherited Event Handlers in Visual Basic](https://docs.microsoft.com/dotnet/visual-basic/programming-guide/language-features/events/troubleshooting-inherited-event-handlers)
+- [Troubleshoot Inherited Event Handlers in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/events/troubleshooting-inherited-event-handlers)
 - [How to: Test the Run-Time Behavior of a UserControl](how-to-test-the-run-time-behavior-of-a-usercontrol.md)

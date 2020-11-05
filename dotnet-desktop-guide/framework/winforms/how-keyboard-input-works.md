@@ -8,12 +8,15 @@ helpviewer_keywords:
 ms.assetid: 9a29433c-a180-49bb-b74c-d187786584c8
 ---
 # How Keyboard Input Works
+
 Windows Forms processes keyboard input by raising keyboard events in response to Windows messages. Most Windows Forms applications process keyboard input exclusively by handling the keyboard events. However, you need to understand how keyboard messages work so you can implement more advanced keyboard-input scenarios, such as intercepting keys before they reach a control. This topic describes the types of key data that Windows Forms recognizes and provides an overview of how keyboard messages are routed. For information about keyboard events, see [Using Keyboard Events](using-keyboard-events.md).  
   
 ## Types of Keys  
- Windows Forms identifies keyboard input as virtual-key codes that are represented by the bitwise <xref:System.Windows.Forms.Keys> enumeration. With the <xref:System.Windows.Forms.Keys> enumeration, you can combine a series of pressed keys to result in a single value. These values correspond to the values that accompany the WM_KEYDOWN and WM_SYSKEYDOWN Windows messages. You can detect most physical key presses by handling the <xref:System.Windows.Forms.Control.KeyDown> or <xref:System.Windows.Forms.Control.KeyUp> events. Character keys are a subset of the <xref:System.Windows.Forms.Keys> enumeration and correspond to the values that accompany the WM_CHAR and WM_SYSCHAR Windows messages. If the combination of pressed keys results in a character, you can detect the character by handling the <xref:System.Windows.Forms.Control.KeyPress> event. Alternatively, you can use <xref:Microsoft.VisualBasic.Devices.Keyboard>, exposed by Visual Basic programming interface, to discover which keys were pressed and send keys. For more information, see [Accessing the Keyboard](https://docs.microsoft.com/dotnet/visual-basic/developing-apps/programming/computer-resources/accessing-the-keyboar).  
+
+ Windows Forms identifies keyboard input as virtual-key codes that are represented by the bitwise <xref:System.Windows.Forms.Keys> enumeration. With the <xref:System.Windows.Forms.Keys> enumeration, you can combine a series of pressed keys to result in a single value. These values correspond to the values that accompany the WM_KEYDOWN and WM_SYSKEYDOWN Windows messages. You can detect most physical key presses by handling the <xref:System.Windows.Forms.Control.KeyDown> or <xref:System.Windows.Forms.Control.KeyUp> events. Character keys are a subset of the <xref:System.Windows.Forms.Keys> enumeration and correspond to the values that accompany the WM_CHAR and WM_SYSCHAR Windows messages. If the combination of pressed keys results in a character, you can detect the character by handling the <xref:System.Windows.Forms.Control.KeyPress> event. Alternatively, you can use <xref:Microsoft.VisualBasic.Devices.Keyboard>, exposed by Visual Basic programming interface, to discover which keys were pressed and send keys. For more information, see [Accessing the Keyboard](/dotnet/visual-basic/developing-apps/programming/computer-resources/accessing-the-keyboar).  
   
 ## Order of Keyboard Events  
+
  As listed previously, there are 3 keyboard related events that can occur on a control. The following sequence shows the general order of the events:  
   
 1. The user pushes the "a" key, the key is preprocessed, dispatched, and a <xref:System.Windows.Forms.Control.KeyDown> event occurs.  
@@ -25,6 +28,7 @@ Windows Forms processes keyboard input by raising keyboard events in response to
 3. The user releases the "a" key, the key is preprocessed, dispatched and a <xref:System.Windows.Forms.Control.KeyUp> event occurs.  
   
 ## Preprocessing Keys  
+
  Like other messages, keyboard messages are processed in the <xref:System.Windows.Forms.Control.WndProc%2A> method of a form or control. However, before keyboard messages are processed, the <xref:System.Windows.Forms.Control.PreProcessMessage%2A> method calls one or more methods that can be overridden to handle special character keys and physical keys. You can override these methods to detect and filter certain keys before the messages are processed by the control. The following table shows the action that is being performed and the related method that occurs, in the order that the method occurs.  
   
 ### Preprocessing for a KeyDown event  
@@ -43,6 +47,7 @@ Windows Forms processes keyboard input by raising keyboard events in response to
 |Check to see if the character is a mnemonic (such as &OK on a button)|<xref:System.Windows.Forms.Control.ProcessDialogChar%2A>|This method, similar to <xref:System.Windows.Forms.Control.ProcessDialogKey%2A>, will be called up the control hierarchy. If the control is a container control, it checks for mnemonics by calling <xref:System.Windows.Forms.Control.ProcessMnemonic%2A> on itself and its child controls. If <xref:System.Windows.Forms.Control.ProcessDialogChar%2A> returns `true`, a <xref:System.Windows.Forms.Control.KeyPress> event does not occur.|  
   
 ## Processing Keyboard Messages  
+
  After keyboard messages reach the <xref:System.Windows.Forms.Control.WndProc%2A> method of a form or control, they are processed by a set of methods that can be overridden. Each of these methods returns a <xref:System.Boolean> value specifying whether the keyboard message has been processed and consumed by the control. If one of the methods returns `true`, then the message is considered handled, and it is not passed to the control's base or parent for further processing. Otherwise, the message stays in the message queue and may be processed in another method in the control's base or parent. The following table presents the methods that process keyboard messages.  
   
 |Method|Notes|  
@@ -52,7 +57,8 @@ Windows Forms processes keyboard input by raising keyboard events in response to
 |<xref:System.Windows.Forms.Control.ProcessKeyEventArgs%2A>|This method raises the <xref:System.Windows.Forms.Control.KeyDown>, <xref:System.Windows.Forms.Control.KeyPress>, and <xref:System.Windows.Forms.Control.KeyUp> events, as appropriate.|  
   
 ## Overriding Keyboard Methods  
- There are many methods available for overriding when a keyboard message is preprocessed and processed; however, some methods are much better choices than others. Following table shows tasks you might want to accomplish and the best way to override the keyboard methods. For more information on overriding methods, see [Overriding properties and methods in derived classes](https://docs.microsoft.com/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics#overriding-properties-and-methods-in-derived-classes).  
+
+ There are many methods available for overriding when a keyboard message is preprocessed and processed; however, some methods are much better choices than others. Following table shows tasks you might want to accomplish and the best way to override the keyboard methods. For more information on overriding methods, see [Overriding properties and methods in derived classes](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics#overriding-properties-and-methods-in-derived-classes).  
   
 |Task|Method|  
 |----------|------------|  
@@ -67,6 +73,6 @@ Windows Forms processes keyboard input by raising keyboard events in response to
 - <xref:System.Windows.Forms.Keys>
 - <xref:System.Windows.Forms.Control.WndProc%2A>
 - <xref:System.Windows.Forms.Control.PreProcessMessage%2A>
-- [My.Computer.Keyboard Object](https://docs.microsoft.com/dotnet/visual-basic/language-reference/objects/my-computer-keyboard-object)
-- [Accessing the Keyboard](https://docs.microsoft.com/dotnet/visual-basic/developing-apps/programming/computer-resources/accessing-the-keyboar)
+- [My.Computer.Keyboard Object](/dotnet/visual-basic/language-reference/objects/my-computer-keyboard-object)
+- [Accessing the Keyboard](/dotnet/visual-basic/developing-apps/programming/computer-resources/accessing-the-keyboar)
 - [Using Keyboard Events](using-keyboard-events.md)

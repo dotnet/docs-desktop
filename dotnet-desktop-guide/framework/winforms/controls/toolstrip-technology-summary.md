@@ -9,14 +9,17 @@ helpviewer_keywords:
 ms.assetid: e8d61973-7af9-429f-9df5-05a899c15a7b
 ---
 # ToolStrip Technology Summary
+
 This topic summarizes information about the `ToolStrip` control and the classes that support its use.  
   
  The `ToolStrip` control and its associated classes provide a complete solution for creating toolbars, status bars, and menus.  
   
 ## Namespaces  
+
  <xref:System.Windows.Forms?displayProperty=nameWithType>  
   
 ## Background  
+
  With the `ToolStrip` control and its associated classes, you can create advanced toolbar functionality that has consistent and professional appearance and behavior. The `ToolStrip` control and classes offer the following improvements over previous controls:  
   
 - A more consistent event model.  
@@ -42,6 +45,7 @@ This topic summarizes information about the `ToolStrip` control and the classes 
  The `ToolStrip`, `MenuStrip`, `ContextMenuStrip`, and `StatusStrip` controls replace the previous toolbar, menu, shortcut menu, and status bar controls, although those controls are retained for backward compatibility.  
   
 ## ToolStrip Classes at a Glance  
+
  The following table shows the ToolStrip classes grouped by technology area.  
   
 |Technology area|Class|  
@@ -52,38 +56,43 @@ This topic summarizes information about the `ToolStrip` control and the classes 
 |Presentation and rendering|<xref:System.Windows.Forms.ToolStripManager><br /><br /> <xref:System.Windows.Forms.ToolStripRenderer><br /><br /> <xref:System.Windows.Forms.ToolStripProfessionalRenderer><br /><br /> <xref:System.Windows.Forms.ToolStripRenderMode><br /><br /> <xref:System.Windows.Forms.ToolStripManagerRenderMode>|  
   
 ## ToolStrip Design-Time Features  
+
  The <xref:System.Windows.Forms.ToolStrip> family of controls provides a rich set of tools and templates for in-place editing and defining the foundation of the user interface so that you can quickly create a working application.  
   
 ### Task Dialog Boxes  
+
  In Visual Studio, clicking the smart tag on a control in the designer displays a task list for convenient access to many frequently used commands.  
   
-- [MenuStrip Tasks Dialog Box](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms233645(v=vs.100))  
+- [MenuStrip Tasks Dialog Box](/previous-versions/visualstudio/visual-studio-2010/ms233645(v=vs.100))  
   
-- [ToolStrip Tasks Dialog Box](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms233648(v=vs.100))  
+- [ToolStrip Tasks Dialog Box](/previous-versions/visualstudio/visual-studio-2010/ms233648(v=vs.100))  
   
-- [ContextMenuStrip Tasks Dialog Box](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms233646(v=vs.100))  
+- [ContextMenuStrip Tasks Dialog Box](/previous-versions/visualstudio/visual-studio-2010/ms233646(v=vs.100))  
   
-- [StatusStrip Tasks Dialog Box](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms233642(v=vs.100))  
+- [StatusStrip Tasks Dialog Box](/previous-versions/visualstudio/visual-studio-2010/ms233642(v=vs.100))  
   
-- [ToolStripContainer Tasks Dialog Box](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms233647(v=vs.100))  
+- [ToolStripContainer Tasks Dialog Box](/previous-versions/visualstudio/visual-studio-2010/ms233647(v=vs.100))  
   
 ### Items Collection Editors  
+
  In Visual Studio, when you click **Edit Items** on the task list or right-click the control and select **Edit Items** in the shortcut menu, the collection editor for the control is displayed. Collection editors let you add, remove, and reorder items that the control contains. You can also view and change the properties for the control and the control's items.  
   
-- [MenuStrip Items Collection Editor](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms233625(v=vs.100))  
+- [MenuStrip Items Collection Editor](/previous-versions/visualstudio/visual-studio-2010/ms233625(v=vs.100))  
   
-- [StatusStrip Items Collection Editor](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms233631(v=vs.100))  
+- [StatusStrip Items Collection Editor](/previous-versions/visualstudio/visual-studio-2010/ms233631(v=vs.100))  
   
-- [ContextMenuStrip Items Collection Editor](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms233641(v=vs.100))  
+- [ContextMenuStrip Items Collection Editor](/previous-versions/visualstudio/visual-studio-2010/ms233641(v=vs.100))  
   
-- [ToolStrip Items Collection Editor](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms233643(v=vs.100))  
+- [ToolStrip Items Collection Editor](/previous-versions/visualstudio/visual-studio-2010/ms233643(v=vs.100))  
   
 ## Hosting Controls  
+
  The <xref:System.Windows.Forms.ToolStripControlHost> class provides built-in wrappers for <xref:System.Windows.Forms.ToolStripComboBox>, <xref:System.Windows.Forms.ToolStripTextBox>, and <xref:System.Windows.Forms.ToolStripProgressBar> controls. You can also host any other existing or COM control in a <xref:System.Windows.Forms.ToolStripControlHost>.  
   
  For an example of control hosting, see [How to: Wrap a Windows Forms Control with ToolStripControlHost](how-to-wrap-a-windows-forms-control-with-toolstripcontrolhost.md).  
   
 ## Rendering  
+
  <xref:System.Windows.Forms.ToolStrip> classes implement a rendering scheme that is significantly different from other Windows Forms controls. With this scheme, you can easily apply styles and themes.  
   
  To apply a style to a <xref:System.Windows.Forms.ToolStrip> and all the <xref:System.Windows.Forms.ToolStripItem> objects it contains, you do not have to handle the <xref:System.Windows.Forms.ToolStripItem.Paint> event for each item. Instead, you can set the <xref:System.Windows.Forms.ToolStrip.RenderMode%2A> property to one of the <xref:System.Windows.Forms.ToolStripRenderMode> values other than <xref:System.Windows.Forms.ToolStripRenderMode.Custom>. Alternatively, you can set the <xref:System.Windows.Forms.ToolStrip.Renderer%2A> directly to any class that inherits from the <xref:System.Windows.Forms.ToolStripRenderer> class. Setting this property automatically sets the <xref:System.Windows.Forms.ToolStrip.RenderMode%2A>.  
@@ -93,9 +102,11 @@ This topic summarizes information about the `ToolStrip` control and the classes 
  For examples of rendering, see [How to: Create and Set a Custom Renderer for the ToolStrip Control in Windows Forms](create-and-set-a-custom-renderer-for-the-toolstrip-control-in-wf.md).  
   
 ## Styles and Themes  
+
  <xref:System.Windows.Forms.ToolStrip> and associated classes provide an easy way to support visual styles and custom appearance that do not require overriding the <xref:System.Windows.Forms.ToolStripItem.OnPaint%2A> methods for each item. Use the <xref:System.Windows.Forms.ToolStripItem.DisplayStyle%2A> and the <xref:System.Windows.Forms.ToolStrip.RenderMode%2A> and <xref:System.Windows.Forms.ToolStrip.Renderer%2A> properties.  
   
 ## Rafting and Docking  
+
  You can raft, dock, or absolutely position <xref:System.Windows.Forms.ToolStrip> controls. <xref:System.Windows.Forms.ToolStrip> items are laid out by the <xref:System.Windows.Forms.ToolStrip.LayoutEngine%2A> of the container.  
   
  *Rafting* is the ability of toolbars to share horizontal or vertical space. A Windows form can have a <xref:System.Windows.Forms.ToolStripContainer> that in turn has panels on the form's left, right, top, and bottom sides for positioning and rafting <xref:System.Windows.Forms.ToolStrip>, <xref:System.Windows.Forms.MenuStrip>, and <xref:System.Windows.Forms.StatusStrip> controls. Multiple <xref:System.Windows.Forms.ToolStrip> controls stack vertically if you put them in the left or right <xref:System.Windows.Forms.ToolStripContainer>. They stack horizontally if you put them in the top or bottom <xref:System.Windows.Forms.ToolStripContainer>. You can use the central <xref:System.Windows.Forms.ToolStripContentPanel> of the <xref:System.Windows.Forms.ToolStripContainer> to position traditional controls on the form.  

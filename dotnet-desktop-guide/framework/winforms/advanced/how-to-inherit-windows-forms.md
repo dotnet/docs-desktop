@@ -34,12 +34,12 @@ For more information about inheriting forms at design time using the **Inheritan
     public class Form2 : Namespace1.Form1
     ```
 
- When inheriting forms, keep in mind that issues may arise with regard to event handlers being called twice, because each event is being handled by both the base class and the inherited class. For more information on how to avoid this problem, see [Troubleshooting Inherited Event Handlers in Visual Basic](https://docs.microsoft.com/dotnet/visual-basic/programming-guide/language-features/events/troubleshooting-inherited-event-handlers).
+ When inheriting forms, keep in mind that issues may arise with regard to event handlers being called twice, because each event is being handled by both the base class and the inherited class. For more information on how to avoid this problem, see [Troubleshooting Inherited Event Handlers in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/events/troubleshooting-inherited-event-handlers).
 
 ## See also
 
-- [Inherits Statement](https://docs.microsoft.com/dotnet/visual-basic/language-reference/statements/inherits-statement)
-- [Imports Statement (.NET Namespace and Type)](https://docs.microsoft.com/dotnet/visual-basic/language-reference/statements/imports-statement-net-namespace-and-type)
-- [using](https://docs.microsoft.com/dotnet/csharp/language-reference/keywords/using)
+- [Inherits Statement](/dotnet/visual-basic/language-reference/statements/inherits-statement)
+- [Imports Statement (.NET Namespace and Type)](/dotnet/visual-basic/language-reference/statements/imports-statement-net-namespace-and-type)
+- [using](/dotnet/csharp/language-reference/keywords/using)
 - [Effects of Modifying a Base Form's Appearance](effects-of-modifying-base-form-appearance.md)
 - [Windows Forms Visual Inheritance](windows-forms-visual-inheritance.md)

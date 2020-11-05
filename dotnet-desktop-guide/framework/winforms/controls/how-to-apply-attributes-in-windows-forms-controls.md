@@ -11,9 +11,11 @@ helpviewer_keywords:
 ms.assetid: af0a3f7f-155b-4ba1-83c4-9cf721331a06
 ---
 # How to: Apply Attributes in Windows Forms Controls
+
 To develop components and controls that interact correctly with the design environment and execute correctly at run time, you need to apply attributes correctly to classes and members.  
   
 ## Example  
+
  The following code example demonstrates how to use several attributes on a custom control. The control demonstrates a simple logging capability. When the control is bound to a data source, it displays the values sent by the data source in a <xref:System.Windows.Forms.DataGridView> control. If a value exceeds the value specified by the `Threshold` property, a `ThresholdExceeded` event is raised.  
   
  The `AttributesDemoControl` logs values with a `LogEntry` class. The `LogEntry` class is a template class, which means it is parameterized on the type that it logs. For example, if the `AttributesDemoControl` is logging values of type `float`, each `LogEntry` instance is declared and used as follows.  
@@ -35,30 +37,35 @@ To develop components and controls that interact correctly with the design envir
  The first code example is the `AttributesDemoControl` implementation. The second code example demonstrates a form that uses the `AttributesDemoControl`.  
   
 ## Class-level Attributes  
+
  Some attributes are applied at the class level. The following code example shows the attributes that are commonly applied to a Windows Forms control.  
   
  [!code-csharp[System.ComponentModel.AttributesDemoControl#20](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.AttributesDemoControl/CS/attributesdemocontrol.cs#20)]
  [!code-vb[System.ComponentModel.AttributesDemoControl#20](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.AttributesDemoControl/VB/attributesdemocontrol.vb#20)]  
   
 ### TypeConverter Attribute  
+
  <xref:System.ComponentModel.TypeConverterAttribute> is another commonly used class-level attribute. The following code example shows its use for the `LogEntry` class. This example also shows an implementation of a <xref:System.ComponentModel.TypeConverter> for the `LogEntry` type, called `LogEntryTypeConverter`.  
   
  [!code-csharp[System.ComponentModel.AttributesDemoControl#5](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.AttributesDemoControl/CS/attributesdemocontrol.cs#5)]
  [!code-vb[System.ComponentModel.AttributesDemoControl#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.AttributesDemoControl/VB/attributesdemocontrol.vb#5)]  
   
 ## Member-level Attributes  
+
  Some attributes are applied at the member level. The following code examples show some attributes that are commonly applied to properties of Windows Forms controls.  
   
  [!code-csharp[System.ComponentModel.AttributesDemoControl#21](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.AttributesDemoControl/CS/attributesdemocontrol.cs#21)]
  [!code-vb[System.ComponentModel.AttributesDemoControl#21](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.AttributesDemoControl/VB/attributesdemocontrol.vb#21)]  
   
 ### AmbientValue Attribute  
+
  The following example demonstrates the <xref:System.ComponentModel.AmbientValueAttribute> and shows code that supports its interaction with the design environment. This interaction is called *ambience*.  
   
  [!code-csharp[System.ComponentModel.AttributesDemoControl#23](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.AttributesDemoControl/CS/attributesdemocontrol.cs#23)]
  [!code-vb[System.ComponentModel.AttributesDemoControl#23](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.AttributesDemoControl/VB/attributesdemocontrol.vb#23)]  
   
 ### Databinding Attributes  
+
  The following examples demonstrate an implementation of complex data binding. The class-level <xref:System.ComponentModel.ComplexBindingPropertiesAttribute>, shown previously, specifies the `DataSource` and `DataMember` properties to use for data binding. The <xref:System.ComponentModel.AttributeProviderAttribute> specifies the type to which the `DataSource` property will bind.  
   
  [!code-csharp[System.ComponentModel.AttributesDemoControl#25](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.AttributesDemoControl/CS/attributesdemocontrol.cs#25)]
@@ -77,4 +84,4 @@ To develop components and controls that interact correctly with the design envir
 - <xref:System.Windows.Forms.DataGridView>
 - [Developing Custom Windows Forms Controls with the .NET Framework](developing-custom-windows-forms-controls.md)
 - [Attributes in Windows Forms Controls](attributes-in-windows-forms-controls.md)
-- [How to: Serialize Collections of Standard Types with the DesignerSerializationVisibilityAttribute](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ms171833(v=vs.120))
+- [How to: Serialize Collections of Standard Types with the DesignerSerializationVisibilityAttribute](/previous-versions/visualstudio/visual-studio-2013/ms171833(v=vs.120))

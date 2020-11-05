@@ -8,9 +8,11 @@ helpviewer_keywords:
 ms.assetid: 76e070b2-65d7-457f-8300-d104e4e01e5e
 ---
 # ContextMenuStrip Control
+
 The <xref:System.Windows.Forms.ContextMenuStrip> control provides a shortcut menu that you associate with a control.  
   
 ## In This Section  
+
  [ContextMenuStrip Control Overview](contextmenustrip-control-overview.md)  
  Explains what the control is and its key features and properties.  
   
@@ -29,9 +31,10 @@ The <xref:System.Windows.Forms.ContextMenuStrip> control provides a shortcut men
  [How to: Handle the ContextMenuStrip Opening Event](how-to-handle-the-contextmenustrip-opening-event.md)  
  Describes how to customize the behavior of a <xref:System.Windows.Forms.ContextMenuStrip> control by handling the <xref:System.Windows.Forms.ToolStripDropDown.Opening> event.  
   
- Also see [ContextMenuStrip Tasks Dialog Box](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms233646(v=vs.100)) or [ContextMenuStrip Items Collection Editor](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms233641(v=vs.100)).  
+ Also see [ContextMenuStrip Tasks Dialog Box](/previous-versions/visualstudio/visual-studio-2010/ms233646(v=vs.100)) or [ContextMenuStrip Items Collection Editor](/previous-versions/visualstudio/visual-studio-2010/ms233641(v=vs.100)).  
   
 ## Reference  
+
  <xref:System.Windows.Forms.MenuStrip>  
  Describes the features of the <xref:System.Windows.Forms.MenuStrip> class, which provides a menu system for a form.  
   
@@ -42,5 +45,6 @@ The <xref:System.Windows.Forms.ContextMenuStrip> control provides a shortcut men
  Describes the features of the <xref:System.Windows.Forms.ToolStripMenuItem> class, which represents a selectable option displayed on a <xref:System.Windows.Forms.MenuStrip> or <xref:System.Windows.Forms.ContextMenuStrip>.  
   
 ## Related Sections  
+
  [Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)  
  Provides a complete list of Windows Forms controls, with links to information on their use.

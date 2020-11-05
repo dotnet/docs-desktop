@@ -19,6 +19,7 @@ helpviewer_keywords:
 ms.assetid: 64e9b3ab-7443-4a77-ab17-b8b8c0cb3f62
 ---
 # BackgroundWorker Component Overview
+
 There are many commonly performed operations that can take a long time to execute. For example:  
   
 - Image downloads  
@@ -47,15 +48,15 @@ There are many commonly performed operations that can take a long time to execut
  [!code-csharp[System.ComponentModel.BackgroundWorker#5](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/CS/fibonacciform.cs#5)]
  [!code-vb[System.ComponentModel.BackgroundWorker#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/VB/fibonacciform.vb#5)]  
   
- For more information on using event handlers, see [Events](https://docs.microsoft.com/dotnet/standard/events/index).  
+ For more information on using event handlers, see [Events](/dotnet/standard/events/index).  
   
 > [!CAUTION]
-> When using multithreading of any sort, you potentially expose yourself to very serious and complex bugs. Consult the [Managed Threading Best Practices](https://docs.microsoft.com/dotnet/standard/threading/managed-threading-best-practices) before implementing any solution that uses multithreading.  
+> When using multithreading of any sort, you potentially expose yourself to very serious and complex bugs. Consult the [Managed Threading Best Practices](/dotnet/standard/threading/managed-threading-best-practices) before implementing any solution that uses multithreading.  
   
  For more information on using the <xref:System.ComponentModel.BackgroundWorker> class, see [How to: Run an Operation in the Background](how-to-run-an-operation-in-the-background.md).  
   
 ## See also
 
-- [Managed Threading](https://docs.microsoft.com/dotnet/standard/threading/index)
-- [Event-based Asynchronous Pattern Overview](https://docs.microsoft.com/dotnet/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview)
+- [Managed Threading](/dotnet/standard/threading/index)
+- [Event-based Asynchronous Pattern Overview](/dotnet/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview)
 - [How to: Implement a Form That Uses a Background Operation](how-to-implement-a-form-that-uses-a-background-operation.md)

@@ -8,11 +8,13 @@ helpviewer_keywords:
 ms.assetid: f3945af9-045c-4e2d-b251-377c37ca2d77
 ---
 # SoundPlayer Class
+
 The `SoundPlayer` class enables you to easily include sounds in your applications.  
   
  You can also use the <xref:System.Media.SystemSounds> class to play common system sounds, including a beep.  
   
 ## In This Section  
+
  [SoundPlayer Class Overview](soundplayer-class-overview.md)  
  Introduces the class and its commonly used properties, methods, and events.  
   
@@ -35,10 +37,12 @@ The `SoundPlayer` class enables you to easily include sounds in your application
  Provides code that plays a sound repeatedly.  
   
 ## Reference  
+
  <xref:System.Media.SoundPlayer>  
  Describes this class and has links to all its members.  
   
 ## Related Sections  
+
  [Windows Forms Controls](index.md)  
  Provides links to topics about the controls designed specifically to work with Windows Forms.  
   
@@ -47,4 +51,4 @@ The `SoundPlayer` class enables you to easily include sounds in your application
   
 ## See also
 
-- [My.Computer Object](https://docs.microsoft.com/dotnet/visual-basic/language-reference/objects/my-computer-object)
+- [My.Computer Object](/dotnet/visual-basic/language-reference/objects/my-computer-object)

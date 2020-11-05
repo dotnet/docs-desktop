@@ -6,9 +6,11 @@ helpviewer_keywords:
 ms.assetid: 743c2f3c-219e-4a52-b6b8-2657096a2da6
 ---
 # Mouse Input in a Windows Forms Application
+
 Windows Forms includes a variety of mouse events and additional support for customized mouse cursors, mouse capture, and drag-and-drop behavior.  
   
 ## In This Section  
+
  [How Mouse Input Works in Windows Forms](how-mouse-input-works-in-windows-forms.md)  
  Provides information about the mouse events and how to get current information and system settings for the mouse.  
   
@@ -28,5 +30,6 @@ Windows Forms includes a variety of mouse events and additional support for cust
  Describes how to implement drag-and-drop behavior.  
   
 ## Related Sections  
- [Accessing the Mouse](https://docs.microsoft.com/dotnet/visual-basic/developing-apps/programming/computer-resources/accessing-the-mouse)  
+
+ [Accessing the Mouse](/dotnet/visual-basic/developing-apps/programming/computer-resources/accessing-the-mouse)  
  Lists topics for accessing the mouse using Visual Basic.

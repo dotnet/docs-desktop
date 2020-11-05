@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: e9ca2723-0107-4540-bb21-4f5ffb4a9906
 ---
 # Overriding the OnPaint Method
+
 The basic steps for overriding any event defined in the .NET Framework are identical and are summarized in the following list.  
   
 #### To override an inherited event  
@@ -82,6 +83,6 @@ public class PaintEventArgs : EventArgs {
   
 ## See also
 
-- [Events](https://docs.microsoft.com/dotnet/standard/events/index)
+- [Events](/dotnet/standard/events/index)
 - [Rendering a Windows Forms Control](rendering-a-windows-forms-control.md)
 - [Defining an Event](defining-an-event-in-windows-forms-controls.md)

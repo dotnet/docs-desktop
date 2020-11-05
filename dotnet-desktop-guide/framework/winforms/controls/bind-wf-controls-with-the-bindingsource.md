@@ -8,6 +8,7 @@ helpviewer_keywords:
 ms.assetid: 391ae170-de5c-40f8-8233-91cb2ee4683a
 ---
 # How to: Bind Windows Forms Controls with the BindingSource Component Using the Designer
+
 After you have added controls to your form and determined the user interface for your application, you can bind the controls to a data source, so that, at run time, users can alter and save data related to the application.
 
  Binding a control or series of controls in Windows Forms is most easily accomplished using the <xref:System.Windows.Forms.BindingSource> control as a bridge between the controls on the form and the data source.
@@ -55,4 +56,4 @@ After you have added controls to your form and determined the user interface for
 - <xref:System.Windows.Forms.BindingSource>
 - <xref:System.Windows.Forms.BindingNavigator>
 - [Add new data sources](/visualstudio/data-tools/add-new-data-sources)
-- [Data Sources Window](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/6ckyxa83(v=vs.120))
+- [Data Sources Window](/previous-versions/visualstudio/visual-studio-2013/6ckyxa83(v=vs.120))
