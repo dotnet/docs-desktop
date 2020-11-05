@@ -9,8 +9,10 @@ items:
     href: get-started/create-app-visual-studio.md
 - name: Migration
   items:
+  - name: Differences from .NET Framework
+    href: file.md
   - name: Migrate to .NET 5
-    href: index.md
+    href: migration/index.md
 - name: Forms
   items:
   - name: Event handlers
