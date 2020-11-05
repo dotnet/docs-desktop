@@ -13,7 +13,7 @@ ms.assetid: 0b1c0a3f-b19e-43d6-bcc9-eb3ec4e555ad
 
 You can use one overload of the <xref:System.Printing.PrintQueue.AddJob%2A> method to print XML Paper Specification (XPS) files without opening a <xref:System.Windows.Controls.PrintDialog> or, in principle, any [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)] at all.
 
-You can also print XPS files using the many <xref:System.Windows.Xps.XpsDocumentWriter.Write%2A?displayProperty=nameWithType> and <xref:System.Windows.Xps.XpsDocumentWriter.WriteAsync%2A?displayProperty=nameWithType> methods. For more information, see [Printing an XPS Document](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms771525(v=vs.90)).
+You can also print XPS files using the many <xref:System.Windows.Xps.XpsDocumentWriter.Write%2A?displayProperty=nameWithType> and <xref:System.Windows.Xps.XpsDocumentWriter.WriteAsync%2A?displayProperty=nameWithType> methods. For more information, see [Printing an XPS Document](/previous-versions/dotnet/netframework-3.5/ms771525(v=vs.90)).
 
 Another way of printing XPS is to use the <xref:System.Windows.Controls.PrintDialog.PrintDocument%2A?displayProperty=nameWithType> or <xref:System.Windows.Controls.PrintDialog.PrintVisual%2A?displayProperty=nameWithType> methods. See [Invoke a Print Dialog](how-to-invoke-a-print-dialog.md).
 
@@ -53,7 +53,7 @@ where *\<PseudoXPSPrinter>* is any print queue. The machine must then be reboote
 This disguise will enable you to pass `true` as the final parameter of <xref:System.Printing.PrintQueue.AddJob%28System.String%2CSystem.String%2CSystem.Boolean%29> without causing an exception, but since *\<PseudoXPSPrinter>* is not really an XPSDrv printer, only garbage will print.
 
 > [!NOTE]
-> For simplicity, the example above uses the presence of an \*.xps extension as its test that a file is XPS. However, XPS files do not have to have this extension. The [isXPS.exe (isXPS Conformance Tool)](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/aa348104(v=vs.100)) is one way of testing a file for XPS validity.
+> For simplicity, the example above uses the presence of an \*.xps extension as its test that a file is XPS. However, XPS files do not have to have this extension. The [isXPS.exe (isXPS Conformance Tool)](/previous-versions/dotnet/netframework-4.0/aa348104(v=vs.100)) is one way of testing a file for XPS validity.
 
 ## See also
 
@@ -62,8 +62,8 @@ This disguise will enable you to pass `true` as the final parameter of <xref:Sys
 - <xref:System.Threading.ApartmentState>
 - <xref:System.STAThreadAttribute>
 - [XPS Documents](/windows/desktop/printdocs/documents)
-- [Printing an XPS Document](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms771525(v=vs.90))
-- [Managed and Unmanaged Threading](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/5s8ee185(v=vs.100))
-- [isXPS.exe (isXPS Conformance Tool)](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/aa348104(v=vs.100))
+- [Printing an XPS Document](/previous-versions/dotnet/netframework-3.5/ms771525(v=vs.90))
+- [Managed and Unmanaged Threading](/previous-versions/dotnet/netframework-4.0/5s8ee185(v=vs.100))
+- [isXPS.exe (isXPS Conformance Tool)](/previous-versions/dotnet/netframework-4.0/aa348104(v=vs.100))
 - [Documents in WPF](documents-in-wpf.md)
 - [Printing Overview](printing-overview.md)

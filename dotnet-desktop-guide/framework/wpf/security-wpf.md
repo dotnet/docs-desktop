@@ -15,6 +15,7 @@ helpviewer_keywords:
 ms.assetid: ee1baea0-3611-4e36-9ad6-fcd5205376fb
 ---
 # Security (WPF)
+
 <a name="introduction"></a> When developing Windows Presentation Foundation (WPF) standalone and browser-hosted applications, you must consider the security model. WPF standalone applications execute with unrestricted permissions ( CAS**FullTrust** permission set), whether deployed using Windows Installer (.msi), XCopy, or ClickOnce. Deploying partial-trust, standalone WPF applications with ClickOnce is unsupported. However, a full-trust host application can create a partial-trust <xref:System.AppDomain> using the .NET Framework Add-in model. For more information, see [WPF Add-Ins Overview](./app-development/wpf-add-ins-overview.md).  
   
  WPF browser-hosted applications are hosted by Windows Internet Explorer or Firefox, and can be either XAML browser applications (XBAPs) or loose [!INCLUDE[TLA#tla_xaml](../../includes/tlasharptla-xaml-md.md)] documents For more information, see [WPF XAML Browser Applications Overview](./app-development/wpf-xaml-browser-applications-overview.md).  
@@ -38,7 +39,9 @@ ms.assetid: ee1baea0-3611-4e36-9ad6-fcd5205376fb
 - [Resources for Developing WPF Applications that Promote Security](#BestPractices)  
   
 <a name="SafeTopLevelNavigation"></a>
+
 ## Safe Navigation  
+
  For XBAPs, WPF distinguishes two types of navigation: application and browser.  
   
  *Application navigation* is navigation between items of content within an application that is hosted by a browser. *Browser navigation* is navigation that changes the content and location URL of a browser itself. The relationship between application navigation (typically XAML) and browser navigation (typically HTML) is shown in the following illustration:
@@ -48,7 +51,9 @@ ms.assetid: ee1baea0-3611-4e36-9ad6-fcd5205376fb
  The type of content that is considered safe for an XBAP to navigate to is primarily determined by whether application navigation or browser navigation is used.  
   
 <a name="Application_Navigation_Security"></a>
+
 ### Application Navigation Security  
+
  Application navigation is considered safe if it can be identified with a pack URI, which supports four types of content:  
   
 |Content Type|Description|URI Example|  
@@ -68,7 +73,9 @@ ms.assetid: ee1baea0-3611-4e36-9ad6-fcd5205376fb
 - **Programmatic Navigation**. The application navigates without involving the user, for example, by setting the <xref:System.Windows.Navigation.NavigationWindow.Source%2A?displayProperty=nameWithType> property.  
   
 <a name="Browser_Navigation_Security"></a>
+
 ### Browser Navigation Security  
+
  Browser navigation is considered safe only under the following conditions:  
   
 - **User Navigation**. The user navigates by clicking a <xref:System.Windows.Documents.Hyperlink> element that is within the main <xref:System.Windows.Navigation.NavigationWindow>, not in a nested <xref:System.Windows.Controls.Frame>.  
@@ -80,8 +87,10 @@ ms.assetid: ee1baea0-3611-4e36-9ad6-fcd5205376fb
  If an XBAP attempts to navigate to content in a manner that does not comply with these conditions, a <xref:System.Security.SecurityException> is thrown.  
   
 <a name="InternetExplorerSecuritySettings"></a>
+
 ## Web Browsing Software Security Settings  
- The security settings on your computer determine the access that any Web browsing software is granted. Web browsing software includes any application or component that uses the [WinINet](/windows/win32/wininet/portal) or [UrlMon](https://docs.microsoft.com/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa767916(v=vs.85)) APIs, including Internet Explorer and PresentationHost.exe.  
+
+ The security settings on your computer determine the access that any Web browsing software is granted. Web browsing software includes any application or component that uses the [WinINet](/windows/win32/wininet/portal) or [UrlMon](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa767916(v=vs.85)) APIs, including Internet Explorer and PresentationHost.exe.  
   
  Internet Explorer provides a mechanism by which you can configure the functionality that is allowed to be executed by or from Internet Explorer, including the following:  
   
@@ -123,7 +132,9 @@ ms.assetid: ee1baea0-3611-4e36-9ad6-fcd5205376fb
  By default, these settings are all enabled for the **Internet**, **Local intranet**, and **Trusted sites** zones, and disabled for the **Restricted sites** zone.  
   
 <a name="Security_Settings_for_IE6_and_Below"></a>
+
 ### Security-related WPF Registry Settings  
+
  In addition to the security settings available through the Internet Options, the following registry values are available for selectively blocking a number of security-sensitive WPF features. The values are defined under the following key:  
   
  `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\Windows Presentation Foundation\Features`  
@@ -141,15 +152,17 @@ ms.assetid: ee1baea0-3611-4e36-9ad6-fcd5205376fb
 |ScriptInteropDisallow|REG_DWORD|1 to disallow; 0 to allow.|  
   
 <a name="webbrowser_control_and_feature_controls"></a>
+
 ## WebBrowser Control and Feature Controls  
- The WPF <xref:System.Windows.Controls.WebBrowser> control can be used to host Web content. The WPF <xref:System.Windows.Controls.WebBrowser> control wraps the underlying WebBrowser ActiveX control. WPF provides some support for securing your application when you use the WPF <xref:System.Windows.Controls.WebBrowser> control to host untrusted Web content. However, some security features must be applied directly by the applications using the <xref:System.Windows.Controls.WebBrowser> control. For more information about the WebBrowser ActiveX control, see [WebBrowser Control Overviews and Tutorials](https://docs.microsoft.com/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752041(v=vs.85)).  
+
+ The WPF <xref:System.Windows.Controls.WebBrowser> control can be used to host Web content. The WPF <xref:System.Windows.Controls.WebBrowser> control wraps the underlying WebBrowser ActiveX control. WPF provides some support for securing your application when you use the WPF <xref:System.Windows.Controls.WebBrowser> control to host untrusted Web content. However, some security features must be applied directly by the applications using the <xref:System.Windows.Controls.WebBrowser> control. For more information about the WebBrowser ActiveX control, see [WebBrowser Control Overviews and Tutorials](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752041(v=vs.85)).  
   
 > [!NOTE]
 > This section also applies to the <xref:System.Windows.Controls.Frame> control since it uses the <xref:System.Windows.Controls.WebBrowser> to navigate to HTML content.  
   
  If the WPF <xref:System.Windows.Controls.WebBrowser> control is used to host untrusted Web content, your application should use a partial-trust <xref:System.AppDomain> to help insulate your application code from potentially malicious HTML script code. This is especially true if your application is interacting with the hosted script by using the <xref:System.Windows.Controls.WebBrowser.InvokeScript%2A> method and the <xref:System.Windows.Controls.WebBrowser.ObjectForScripting%2A> property. For more information, see [WPF Add-Ins Overview](./app-development/wpf-add-ins-overview.md).  
   
- If your application uses the WPF <xref:System.Windows.Controls.WebBrowser> control, another way to increase security and mitigate attacks is to enable Internet Explorer feature controls. Feature controls are additions to Internet Explorer that allow administrators and developers to configure features of Internet Explorer and applications that host the WebBrowser ActiveX control, which the WPF <xref:System.Windows.Controls.WebBrowser> control wraps. Feature controls can be configured by using the [CoInternetSetFeatureEnabled](https://docs.microsoft.com/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms537168(v=vs.85)) function or by changing values in the registry. For more information about feature controls, see [Introduction to Feature Controls](https://docs.microsoft.com/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms537184(v=vs.85)) and [Internet Feature Controls](https://docs.microsoft.com/previous-versions/windows/internet-explorer/ie-developer/general-info/ee330720(v=vs.85)).  
+ If your application uses the WPF <xref:System.Windows.Controls.WebBrowser> control, another way to increase security and mitigate attacks is to enable Internet Explorer feature controls. Feature controls are additions to Internet Explorer that allow administrators and developers to configure features of Internet Explorer and applications that host the WebBrowser ActiveX control, which the WPF <xref:System.Windows.Controls.WebBrowser> control wraps. Feature controls can be configured by using the [CoInternetSetFeatureEnabled](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms537168(v=vs.85)) function or by changing values in the registry. For more information about feature controls, see [Introduction to Feature Controls](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms537184(v=vs.85)) and [Internet Feature Controls](/previous-versions/windows/internet-explorer/ie-developer/general-info/ee330720(v=vs.85)).  
   
  If you are developing a standalone WPF application that uses the WPF <xref:System.Windows.Controls.WebBrowser> control, WPF automatically enables the following feature controls for your application.  
   
@@ -203,13 +216,15 @@ ms.assetid: ee1baea0-3611-4e36-9ad6-fcd5205376fb
   
  If you run a partial-trust XAML browser application (XBAP) that includes a WPF <xref:System.Windows.Controls.WebBrowser> control in Windows Internet Explorer, WPF hosts the WebBrowser ActiveX control in the address space of the Internet Explorer process. Since the WebBrowser ActiveX control is hosted in the Internet Explorer process, all of the feature controls for Internet Explorer are also enabled for the WebBrowser ActiveX control.  
   
- XBAPs running in Internet Explorer also get an additional level of security compared to normal standalone applications. This additional security is because Internet Explorer, and therefore the WebBrowser ActiveX control, runs in protected mode by default on Windows Vista and Windows 7. For more information about protected mode, see [Understanding and Working in Protected Mode Internet Explorer](https://docs.microsoft.com/previous-versions/windows/internet-explorer/ie-developer/).  
+ XBAPs running in Internet Explorer also get an additional level of security compared to normal standalone applications. This additional security is because Internet Explorer, and therefore the WebBrowser ActiveX control, runs in protected mode by default on Windows Vista and Windows 7. For more information about protected mode, see [Understanding and Working in Protected Mode Internet Explorer](/previous-versions/windows/internet-explorer/ie-developer/).  
   
 > [!NOTE]
 > If you try to run an XBAP that includes a WPF <xref:System.Windows.Controls.WebBrowser> control in Firefox, while in the Internet zone, a <xref:System.Security.SecurityException> will be thrown. This is due to WPF security policy.  
   
 <a name="APTCA"></a>
+
 ## Disabling APTCA Assemblies for Partially Trusted Client Applications  
+
  When managed assemblies are installed into the global assembly cache (GAC), they become fully trusted because the user must provide explicit permission to install them. Because they are fully trusted, only fully trusted managed client applications can use them. To allow partially trusted applications to use them, they must be marked with the <xref:System.Security.AllowPartiallyTrustedCallersAttribute> (APTCA). Only assemblies that have been tested to be safe for execution in partial trust should be marked with this attribute.  
   
  However, it is possible for an APTCA assembly to exhibit a security flaw after being installed into the  GAC . Once a security flaw is discovered, assembly publishers can produce a security update to fix the problem on existing installations, and to protect against installations that may occur after the problem is discovered. One option for the update is to uninstall the assembly, although that may break other fully trusted client applications that use the assembly.  
@@ -238,7 +253,9 @@ ms.assetid: ee1baea0-3611-4e36-9ad6-fcd5205376fb
 > Core .NET Framework assemblies are not affected by disabling them in this way because they are required for managed applications to run. Support for disabling APTCA assemblies is primarily targeted to third-party applications.  
   
 <a name="LooseContentSandboxing"></a>
+
 ## Sandbox Behavior for Loose XAML Files  
+
  Loose [!INCLUDE[TLA2#tla_xaml](../../includes/tla2sharptla-xaml-md.md)] files are markup-only XAML files that do not depend on any code-behind, event handler, or application-specific assembly. When loose [!INCLUDE[TLA2#tla_xaml](../../includes/tla2sharptla-xaml-md.md)] files are navigated to directly from the browser, they are loaded in a security sandbox based on the default Internet zone permission set.  
   
  However, the security behavior is different when loose [!INCLUDE[TLA2#tla_xaml](../../includes/tla2sharptla-xaml-md.md)] files are navigated to from either a <xref:System.Windows.Navigation.NavigationWindow> or <xref:System.Windows.Controls.Frame> in a standalone application.  
@@ -255,12 +272,14 @@ ms.assetid: ee1baea0-3611-4e36-9ad6-fcd5205376fb
 > Even though navigation to loose [!INCLUDE[TLA2#tla_xaml](../../includes/tla2sharptla-xaml-md.md)] files from either a <xref:System.Windows.Navigation.NavigationWindow> or <xref:System.Windows.Controls.Frame> in a standalone application is implemented based on the WPF browser hosting infrastructure, involving the PresentationHost process, the security level is slightly less than when the content is loaded directly in Internet Explorer on Windows Vista and Windows 7 (which would still be through PresentationHost). This is because a standalone WPF application using a Web browser does not provide the additional Protected Mode security feature of Internet Explorer.  
   
 <a name="BestPractices"></a>
+
 ## Resources for Developing WPF Applications that Promote Security  
+
  The following are some additional resources to help develop WPF applications that promote security:  
   
 |Area|Resource|  
 |----------|--------------|  
-|Managed code|[Patterns and Practices Security Guidance for Applications](https://docs.microsoft.com/previous-versions/msp-n-p/ff650760(v=pandp.10))|  
+|Managed code|[Patterns and Practices Security Guidance for Applications](/previous-versions/msp-n-p/ff650760(v=pandp.10))|  
 |CAS|[Code Access Security](/dotnet/framework/misc/code-access-security)|  
 |ClickOnce|[ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment)|  
 |WPF|[WPF Partial Trust Security](wpf-partial-trust-security.md)|  
@@ -270,7 +289,7 @@ ms.assetid: ee1baea0-3611-4e36-9ad6-fcd5205376fb
 - [WPF Partial Trust Security](wpf-partial-trust-security.md)
 - [WPF Security Strategy - Platform Security](wpf-security-strategy-platform-security.md)
 - [WPF Security Strategy - Security Engineering](wpf-security-strategy-security-engineering.md)
-- [Patterns and Practices Security Guidance for Applications](https://docs.microsoft.com/previous-versions/msp-n-p/ff650760(v=pandp.10))
+- [Patterns and Practices Security Guidance for Applications](/previous-versions/msp-n-p/ff650760(v=pandp.10))
 - [Code Access Security](/dotnet/framework/misc/code-access-security)
 - [ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment)
 - [XAML Overview (WPF)](/dotnet/desktop-wpf/fundamentals/xaml)

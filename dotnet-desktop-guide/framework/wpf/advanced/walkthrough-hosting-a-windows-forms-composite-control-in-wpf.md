@@ -11,6 +11,7 @@ helpviewer_keywords:
 ms.assetid: 96fcd78d-1c77-4206-8928-3a0579476ef4
 ---
 # Walkthrough: Hosting a Windows Forms Composite Control in WPF
+
 [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] provides a rich environment for creating applications. However, when you have a substantial investment in Windows Forms code, it can be more effective to reuse at least some of that code in your [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] application rather than to rewrite it from scratch. The most common scenario is when you have existing Windows Forms controls. In some cases, you might not even have access to the source code for these controls. [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] provides a straightforward procedure for hosting such controls in a [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] application. For example, you can use [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] for most of your programming while hosting your specialized <xref:System.Windows.Forms.DataGridView> controls.  
   
  This walkthrough steps you through an application that hosts a Windows Forms composite control to perform data entry in a [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] application. The composite control is packaged in a DLL. This general procedure can be extended to more complex applications and controls. This walkthrough is designed to be nearly identical in appearance and functionality to [Walkthrough: Hosting a WPF Composite Control in Windows Forms](walkthrough-hosting-a-wpf-composite-control-in-windows-forms.md). The primary difference is that the hosting scenario is reversed.  
@@ -23,13 +24,14 @@ ms.assetid: 96fcd78d-1c77-4206-8928-3a0579476ef4
   
 - Implementing the WPF host application.  
   
- For a complete code listing of the tasks illustrated in this walkthrough, see [Hosting a Windows Forms Composite Control in WPF Sample](https://go.microsoft.com/fwlink/?LinkID=159999).  
+ For a complete code listing of the tasks illustrated in this walkthrough, see [Hosting a Windows Forms Composite Control in WPF Sample](/samples/browse/).  
   
 ## Prerequisites  
 
 You need Visual Studio to complete this walkthrough.
   
 ## Implementing the Windows Forms Composite Control  
+
  The Windows Forms composite control used in this example is a simple data-entry form. This form takes the user's name and address and then uses a custom event to return that information to the host. The following illustration shows the rendered control.  
 
  The following image shows a Windows Forms composite control:  
@@ -37,6 +39,7 @@ You need Visual Studio to complete this walkthrough.
  ![Screenshot that shows a simple Windows Forms control.](./media/walkthrough-hosting-a-windows-forms-composite-control-in-wpf/windows-forms-control.gif)  
   
 ### Creating the Project  
+
  To start the project:  
   
 1. Launch Visual Studio, and open the **New Project** dialog box.  
@@ -64,6 +67,7 @@ You need Visual Studio to complete this walkthrough.
 - System.Xml  
   
 ### Adding Controls to the Form  
+
  To add controls to the form:  
   
 - Open `MyControl1` in the designer.  
@@ -83,6 +87,7 @@ You need Visual Studio to complete this walkthrough.
  Add two <xref:System.Windows.Forms.Button> controls labeled **OK** and **Cancel**. In the example, the button names are `btnOK` and `btnCancel`, respectively.  
   
 ### Implementing the Supporting Code  
+
  Open the form in code view. The control returns the collected data to its host by raising the custom `OnButtonClick` event. The data is contained in the event argument object. The following code shows the event and delegate declaration.  
   
  Add the following code to the `MyControl1` class.  
@@ -105,6 +110,7 @@ You need Visual Studio to complete this walkthrough.
  [!code-vb[WpfHostingWindowsFormsControl#4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/WpfHostingWindowsFormsControl/VisualBasic/MyControls/MyControl1.vb#4)]
 
 ### Giving the Assembly a Strong Name and Building the Assembly
+
  For this assembly to be referenced by a [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] application, it must have a strong name. To create a strong name, create a key file with Sn.exe and add it to your project.
 
 1. Open a Visual Studio command prompt. To do so, click the **Start** menu, and then select **All Programs/Microsoft Visual Studio 2010/Visual Studio Tools/Visual Studio Command Prompt**. This launches a console window with customized environment variables.
@@ -122,6 +128,7 @@ You need Visual Studio to complete this walkthrough.
 5. Build the solution. The build will produce a DLL named MyControls.dll.
 
 ## Implementing the WPF Host Application
+
  The [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] host application uses the <xref:System.Windows.Forms.Integration.WindowsFormsHost> control to host `MyControl1`. The application handles the `OnButtonClick` event to receive the data from the control. It also has a collection of option buttons that enable you to change some of the control's properties from the [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] application. The following illustration shows the finished application.
 
 The following image shows the complete application, including the control embedded in the WPF application:
@@ -129,6 +136,7 @@ The following image shows the complete application, including the control embedd
  ![Screenshot that shows a control embedded in a WPF page.](./media/walkthrough-hosting-a-windows-forms-composite-control-in-wpf/windows-presentation-foundation-page-control.gif)
 
 ### Creating the Project
+
  To start the project:
 
 1. Open Visual Studio, and select **New Project**.
@@ -152,6 +160,7 @@ The following image shows the complete application, including the control embedd
 4. Add a reference to the WindowsFormsIntegration assembly, which is named WindowsFormsIntegration.dll.
 
 ### Implementing the Basic Layout
+
  The [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)] of the host application is implemented in MainWindow.xaml. This file contains [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)] markup that defines the layout, and hosts the Windows Forms control. The application is divided into three regions:
 
 - The **Control Properties** panel, which contains a collection of option buttons that you can use to modify various properties of the hosted control.
@@ -169,6 +178,7 @@ The following image shows the complete application, including the control embedd
  The first <xref:System.Windows.Controls.StackPanel> element contains several sets of <xref:System.Windows.Controls.RadioButton> controls that enable you to modify various default properties of the hosted control. That is followed by a <xref:System.Windows.Forms.Integration.WindowsFormsHost> element, which hosts `MyControl1`. The final <xref:System.Windows.Controls.StackPanel> element contains several <xref:System.Windows.Controls.TextBlock> elements that display the data that is returned by the hosted control. The ordering of the elements and the <xref:System.Windows.Controls.DockPanel.Dock%2A> and <xref:System.Windows.FrameworkElement.Height%2A> attribute settings embed the hosted control into the window with no gaps or distortion.
 
 #### Hosting the Control
+
  The following edited version of the previous XAML focuses on the elements that are needed to host `MyControl1`.
 
  [!code-xaml[WpfHostingWindowsFormsControl#101](~/samples/snippets/csharp/VS_Snippets_Wpf/WpfHostingWindowsFormsControl/CSharp/WpfHost/Page1.xaml#101)]
@@ -183,6 +193,7 @@ The following image shows the complete application, including the control embedd
 - `mcl:MyControl1`, which represents `MyControl1`, is added to the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element's child collection. As a result, this Windows Forms control is rendered as part of the [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] window, and you can communicate with the control from the application.
 
 ### Implementing the Code-Behind File
+
  The code-behind file, MainWindow.xaml.vb or MainWindow.xaml.cs, contains the procedural code that implements the functionality of the [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] discussed in the preceding section. The primary tasks are:
 
 - Attaching an event handler to `MyControl1`'s `OnButtonClick` event.
@@ -192,6 +203,7 @@ The following image shows the complete application, including the control embedd
 - Displaying the data collected by the control.
 
 #### Initializing the Application
+
  The initialization code is contained in an event handler for the window's <xref:System.Windows.FrameworkElement.Loaded> event and attaches an event handler to the control's `OnButtonClick` event.
 
  In MainWindow.xaml.vb or MainWindow.xaml.cs, add the following code to the `MainWindow` class.
@@ -214,6 +226,7 @@ using MyControls;
 ```
 
 #### Handling the OnButtonClick Event
+
  `MyControl1` raises the `OnButtonClick` event when the user clicks either of the control's buttons.
 
  Add the following code to the `MainWindow` class.
@@ -224,6 +237,7 @@ using MyControls;
  The data in the text boxes is packed into the `MyControlEventArgs` object. If the user clicks the **OK** button, the event handler extracts the data and displays it in the panel below `MyControl1`.
 
 #### Modifying the Control’s Properties
+
  The <xref:System.Windows.Forms.Integration.WindowsFormsHost> element exposes several of the hosted control's default properties. As a result, you can change the appearance of the control to match the style of your application more closely. The sets of option buttons in the left panel enable the user to modify several color and font properties. Each set of buttons has a handler for the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event, which detects the user's option button selections and changes the corresponding property on the control.
 
  Add the following code to the `MainWindow` class.

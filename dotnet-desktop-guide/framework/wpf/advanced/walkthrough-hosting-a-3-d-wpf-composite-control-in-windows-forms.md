@@ -31,6 +31,7 @@ You need the following components to complete this walkthrough:
 - Visual Studio 2017
 
 <a name="To_Create_the_UserControl"></a>
+
 ## Create the UserControl
 
 1. Create a **WPF User Control Library** project named `HostingWpfUserControlInWf`.
@@ -44,6 +45,7 @@ You need the following components to complete this walkthrough:
      This code defines a <xref:System.Windows.Controls.UserControl?displayProperty=nameWithType> that contains two child controls. The first child control is a <xref:System.Windows.Controls.Label?displayProperty=nameWithType> control; the second is a <xref:System.Windows.Controls.Viewport3D> control that displays a 3D cone.
 
 <a name="To_Create_the_Windows_Forms_Host_Project"></a>
+
 ## Create the host project
 
 1. Add a **Windows Forms App (.NET Framework)** project named `WpfUserControlHost` to the solution.
@@ -63,6 +65,7 @@ You need the following components to complete this walkthrough:
 5. In Solution Explorer, set the `WpfUserControlHost` project to be the startup project.
 
 <a name="To_Host_the_Windows_Presentation_Foundation"></a>
+
 ## Host the UserControl
 
 1. In the Windows Forms Designer, open Form1.
@@ -87,4 +90,4 @@ You need the following components to complete this walkthrough:
 - [Design XAML in Visual Studio](/visualstudio/xaml-tools/designing-xaml-in-visual-studio)
 - [Walkthrough: Hosting a WPF Composite Control in Windows Forms](walkthrough-hosting-a-wpf-composite-control-in-windows-forms.md)
 - [Walkthrough: Hosting a Windows Forms Composite Control in WPF](walkthrough-hosting-a-windows-forms-composite-control-in-wpf.md)
-- [Hosting a WPF Composite Control in Windows Forms Sample](https://go.microsoft.com/fwlink/?LinkID=160001)
+- [Hosting a WPF Composite Control in Windows Forms Sample](/samples/browse/)

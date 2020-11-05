@@ -11,9 +11,11 @@ helpviewer_keywords:
 ms.assetid: 205099d9-2551-4302-a25e-a15af9f67e04
 ---
 # How to: Create a Control That Has an Access Key and Text Wrapping
+
 This example shows how to create a control that has an access key and supports text wrapping. The example uses a <xref:System.Windows.Controls.Label> control to illustrate these concepts.  
   
 ## Example  
+
  **Add Text Wrapping to Your Label**  
   
  The <xref:System.Windows.Controls.Label> control does not support text wrapping. If you need a label that wraps across multiple lines, you can nest another element that does support text wrapping and put the element inside the label. The following example shows how to use a <xref:System.Windows.Controls.TextBlock> to make a label that wraps several lines of text.  
@@ -32,4 +34,4 @@ This example shows how to create a control that has an access key and supports t
   
 ## See also
 
-- [How to: Set the Target Property of a Label](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms752101(v=vs.90))
+- [How to: Set the Target Property of a Label](/previous-versions/dotnet/netframework-3.5/ms752101(v=vs.90))

@@ -7,6 +7,7 @@ helpviewer_keywords:
 ms.assetid: 2689b2c8-b4dc-4b71-b9bd-f95e619122d7
 ---
 # mc:ProcessContent Attribute
+
 Specifies which [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] elements should still have content processed by relevant parent elements, even if the immediate parent element may be ignored by a [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] processor due to specifying [mc:Ignorable Attribute](mc-ignorable-attribute.md). The `mc:ProcessContent` attribute supports markup compatibility both for custom namespace mapping and for [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] versioning.  
   
 ## XAML Attribute Usage  
@@ -34,11 +35,12 @@ Specifies which [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.
 |*[content]*|*ThisElementCanBeIgnored* is marked ignorable. If the processor ignores that element, *[content]* is processed by *object*.|  
   
 ## Remarks  
+
  By default, a [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] processor will ignore content within an ignored element. You can specify a specific element by `mc:ProcessContent`, and a [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] processor will continue to process the content within the ignored element. This would typically be used if the content is nested within several tags, at least one of which is ignorable and at least one of which is not ignorable.  
   
  Multiple prefixes may be specified in the attribute, using a space separator, for example: `mc:ProcessContent="ignore:Element1 ignore:Element2"`.  
   
- The `http://schemas.openxmlformats.org/markup-compatibility/2006` namespace defines other elements and attributes that are not documented within this area of the SDK. For more information, see [XML Markup Compatibility Specification](https://docs.microsoft.com/office/open-xml/introduction-to-markup-compatibility#markup-compatibility-in-the-open-xml-file-formats-specification).  
+ The `http://schemas.openxmlformats.org/markup-compatibility/2006` namespace defines other elements and attributes that are not documented within this area of the SDK. For more information, see [XML Markup Compatibility Specification](/office/open-xml/introduction-to-markup-compatibility#markup-compatibility-in-the-open-xml-file-formats-specification).  
   
 ## See also
 

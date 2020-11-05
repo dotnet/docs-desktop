@@ -23,7 +23,7 @@ Tasks illustrated in this walkthrough include:
 
 - Extending a default property mapping.
 
-For a complete code listing of the tasks illustrated in this walkthrough, see [Mapping Properties Using the ElementHost Control Sample](https://go.microsoft.com/fwlink/?LinkID=160018).
+For a complete code listing of the tasks illustrated in this walkthrough, see [Mapping Properties Using the ElementHost Control Sample](/samples/browse/).
 
 When you are finished, you will be able to map Windows Forms properties to corresponding [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] properties on a hosted element.
 
@@ -56,7 +56,7 @@ You need the following components to complete this walkthrough:
 
 4. Open `Form1` in the Windows Forms Designer. Double-click the form to add an event handler for the <xref:System.Windows.Forms.Form.Load> event.
 
-5. Return to the Windows Forms Designer and add an event handler for the form's <xref:System.Windows.Forms.Control.Resize> event. For more information, see [How to: Create Event Handlers Using the Designer](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/zwwsdtbk(v=vs.100)).
+5. Return to the Windows Forms Designer and add an event handler for the form's <xref:System.Windows.Forms.Control.Resize> event. For more information, see [How to: Create Event Handlers Using the Designer](/previous-versions/visualstudio/visual-studio-2010/zwwsdtbk(v=vs.100)).
 
 6. Declare an <xref:System.Windows.Forms.Integration.ElementHost> field in the `Form1` class.
 

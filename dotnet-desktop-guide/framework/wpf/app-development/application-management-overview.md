@@ -109,7 +109,7 @@ The resulting code augments your application definition with additional infrastr
 
 ## Getting the Current Application
 
-Because the functionality of the <xref:System.Windows.Application> class are shared across an application, there can be only one instance of the <xref:System.Windows.Application> class per <xref:System.AppDomain>. To enforce this, the <xref:System.Windows.Application> class is implemented as a singleton class (see [Implementing Singleton in C#](https://docs.microsoft.com/previous-versions/msp-n-p/ff650316(v=pandp.10))), which creates a single instance of itself and provides shared access to it with the `static`<xref:System.Windows.Application.Current%2A> property.
+Because the functionality of the <xref:System.Windows.Application> class are shared across an application, there can be only one instance of the <xref:System.Windows.Application> class per <xref:System.AppDomain>. To enforce this, the <xref:System.Windows.Application> class is implemented as a singleton class (see [Implementing Singleton in C#](/previous-versions/msp-n-p/ff650316(v=pandp.10))), which creates a single instance of itself and provides shared access to it with the `static`<xref:System.Windows.Application.Current%2A> property.
 
 The following code shows how to acquire a reference to the <xref:System.Windows.Application> object for the current <xref:System.AppDomain>.
 
@@ -387,5 +387,5 @@ Likewise, the following figure illustrates the key events in the lifetime of an 
 - [Navigation Overview](navigation-overview.md)
 - [WPF Application Resource, Content, and Data Files](wpf-application-resource-content-and-data-files.md)
 - [Pack URIs in WPF](pack-uris-in-wpf.md)
-- [Application Model: How-to Topics](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms749013(v=vs.100))
+- [Application Model: How-to Topics](/previous-versions/dotnet/netframework-4.0/ms749013(v=vs.100))
 - [Application Development](index.md)
