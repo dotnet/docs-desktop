@@ -11,9 +11,11 @@ helpviewer_keywords:
 ms.assetid: f55175c6-424e-4782-a86e-3f79c1550235
 ---
 # TableLayoutPanel Control (Windows Forms)
+
 The <xref:System.Windows.Forms.TableLayoutPanel> control arranges its contents in a grid. Because the layout is performed both at design time and run time, it can change dynamically as the application environment changes. This gives the controls in the panel the ability to proportionally resize, so it can respond to changes such as the parent control resizing or text length changing due to localization.  
   
 ## In This Section  
+
  [TableLayoutPanel Control Overview](tablelayoutpanel-control-overview.md)  
  Introduces the general concepts of the <xref:System.Windows.Forms.TableLayoutPanel> control, which allows you to create a layout with rows and columns.  
   
@@ -41,6 +43,7 @@ The <xref:System.Windows.Forms.TableLayoutPanel> control arranges its contents i
 4. [Walkthrough: Arranging Controls on Windows Forms Using a TableLayoutPanel](walkthrough-arranging-controls-on-windows-forms-using-a-tablelayoutpanel.md)  
   
 ## Reference  
+
  <xref:System.Windows.Forms.TableLayoutPanel>  
  Provides reference documentation for the <xref:System.Windows.Forms.TableLayoutPanel> control.  
   
@@ -51,7 +54,8 @@ The <xref:System.Windows.Forms.TableLayoutPanel> control arranges its contents i
  Provides reference documentation for the <xref:System.Windows.Forms.FlowLayoutPanel> control.  
   
 ## Related Sections  
- [Localization](https://docs.microsoft.com/dotnet/standard/globalization-localization/localization)  
+
+ [Localization](/dotnet/standard/globalization-localization/localization)  
  Provides an overview of topics relating to localization.  
   
- Also see [Localizing Applications](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/z68135h5(v=vs.120)).
+ Also see [Localizing Applications](/previous-versions/visualstudio/visual-studio-2013/z68135h5(v=vs.120)).

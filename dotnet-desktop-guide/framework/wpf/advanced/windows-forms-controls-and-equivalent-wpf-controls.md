@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 8a157e6b-8054-46db-a5cf-a78966acc7a1
 ---
 # Windows Forms Controls and Equivalent WPF Controls
+
 Many Windows Forms controls have equivalent [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] controls, but some Windows Forms controls have no equivalents in [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)]. This topic compares control types provided by the two technologies.  
   
  You can always use interoperation to host Windows Forms controls that do not have equivalents in your [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)]-based applications.  
@@ -83,7 +84,7 @@ Many Windows Forms controls have equivalent [!INCLUDE[TLA2#tla_winclient](../../
 
 - <xref:System.Windows.Forms.Integration.ElementHost>
 - <xref:System.Windows.Forms.Integration.WindowsFormsHost>
-- [WPF Designer for Windows Forms Developers](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/cc165605(v=vs.100))
+- [WPF Designer for Windows Forms Developers](/previous-versions/visualstudio/visual-studio-2010/cc165605(v=vs.100))
 - [Walkthrough: Hosting a Windows Forms Control in WPF](walkthrough-hosting-a-windows-forms-control-in-wpf.md)
 - [Walkthrough: Hosting a WPF Composite Control in Windows Forms](walkthrough-hosting-a-wpf-composite-control-in-windows-forms.md)
 - [Migration and Interoperability](migration-and-interoperability.md)

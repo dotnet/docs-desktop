@@ -15,7 +15,7 @@ manager: jillfra
 ---
 # How to: Provide a Toolbox Bitmap for a Control
 
-If you want to have a special icon for your control appear in the **Toolbox** of Visual Studio, you can specify a particular image by using the <xref:System.Drawing.ToolboxBitmapAttribute>. This class is an *attribute*, a special kind of class you can attach to other classes. For more information about attributes, see [Attributes overview (Visual Basic)](https://docs.microsoft.com/dotnet/visual-basic/programming-guide/concepts/attributes/index) for Visual Basic or [Attributes (C#)](https://docs.microsoft.com/dotnet/csharp/programming-guide/concepts/attributes/index) for C#.
+If you want to have a special icon for your control appear in the **Toolbox** of Visual Studio, you can specify a particular image by using the <xref:System.Drawing.ToolboxBitmapAttribute>. This class is an *attribute*, a special kind of class you can attach to other classes. For more information about attributes, see [Attributes overview (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/attributes/index) for Visual Basic or [Attributes (C#)](/dotnet/csharp/programming-guide/concepts/attributes/index) for C#.
 
 Using the <xref:System.Drawing.ToolboxBitmapAttribute>, you can specify a string that indicates the path and file name for a 16 by 16 pixel bitmap. This bitmap then appears next to your control when added to the **Toolbox**. You can also specify a <xref:System.Type>, in which case the bitmap associated with that type is loaded. If you specify both a <xref:System.Type> and a string, the control searches for an image resource with the name specified by the string parameter in the assembly containing the type specified by the <xref:System.Type> parameter.
 
@@ -66,5 +66,5 @@ Using the <xref:System.Drawing.ToolboxBitmapAttribute>, you can specify a string
 - <xref:System.Drawing.ToolboxBitmapAttribute>
 - [Walkthrough: Automatically Populating the Toolbox with Custom Components](walkthrough-automatically-populating-the-toolbox-with-custom-components.md)
 - [Developing Windows Forms Controls at Design Time](developing-windows-forms-controls-at-design-time.md)
-- [Attributes overview (Visual Basic)](https://docs.microsoft.com/dotnet/visual-basic/programming-guide/concepts/attributes/index)
-- [Attributes (C#)](https://docs.microsoft.com/dotnet/csharp/programming-guide/concepts/attributes/index)
+- [Attributes overview (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/attributes/index)
+- [Attributes (C#)](/dotnet/csharp/programming-guide/concepts/attributes/index)

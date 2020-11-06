@@ -13,14 +13,16 @@ helpviewer_keywords:
 ms.assetid: 3cea09e5-4344-4ccb-9858-b66ccac210ff
 ---
 # Varieties of Custom Controls
+
 With the .NET Framework, you can develop and implement new controls. You can extend the functionality of the familiar user control as well as existing controls through inheritance. You can also write custom controls that perform their own painting.  
   
  Deciding which kind of control to create can be confusing. This topic highlights the differences among the various kinds of controls from which you can inherit, and provides you with information about how to choose a particular kind of control for your project.  
   
 > [!NOTE]
-> For information about authoring a control to use on Web Forms, see [Developing Custom ASP.NET Server Controls](https://docs.microsoft.com/previous-versions/aspnet/zt27tfhy(v=vs.100)).  
+> For information about authoring a control to use on Web Forms, see [Developing Custom ASP.NET Server Controls](/previous-versions/aspnet/zt27tfhy(v=vs.100)).  
   
 ## Base Control Class  
+
  The <xref:System.Windows.Forms.Control> class is the base class for Windows Forms controls. It provides the infrastructure required for visual display in Windows Forms applications.  
   
  The <xref:System.Windows.Forms.Control> class performs the following tasks to provide visual display in Windows Forms applications:  
@@ -40,9 +42,11 @@ With the .NET Framework, you can develop and implement new controls. You can ext
  Because so much of the infrastructure is provided by the base class, it is relatively easy to develop your own Windows Forms controls.  
   
 ## Kinds of Controls  
+
  Windows Forms supports three kinds of user-defined controls: *composite*, *extended*, and *custom*. The following sections describe each kind of control and give recommendations for choosing the kind to use in your projects.  
   
 ### Composite Controls  
+
  A composite control is a collection of Windows Forms controls encapsulated in a common container. This kind of control is sometimes called a *user control*. The contained controls are called *constituent controls*.  
   
  A composite control holds all of the inherent functionality associated with each of the contained Windows Forms controls and enables you to selectively expose and bind their properties. A composite control also provides a great deal of default keyboard handling functionality with no extra development effort on your part.  
@@ -58,6 +62,7 @@ With the .NET Framework, you can develop and implement new controls. You can ext
 - You want to combine the functionality of several Windows Forms controls into a single reusable unit.  
   
 ### Extended Controls  
+
  You can derive an inherited control from any existing Windows Forms control. With this approach, you can retain all of the inherent functionality of a Windows Forms control, and then extend that functionality by adding custom properties, methods, or other features. With this option, you can override the base control's paint logic, and then extend its user interface by changing its appearance.  
   
  For example, you can create a control derived from the <xref:System.Windows.Forms.Button> control that tracks how many times a user has clicked it.  
@@ -73,6 +78,7 @@ With the .NET Framework, you can develop and implement new controls. You can ext
 - You do not need a custom graphical user interface, or you want to design a new graphical user interface for an existing control.  
   
 ### Custom Controls  
+
  Another way to create a control is to create one substantially from the beginning by inheriting from <xref:System.Windows.Forms.Control>. The <xref:System.Windows.Forms.Control> class provides all of the basic functionality required by controls, including mouse and keyboard handling events, but no control-specific functionality or graphical interface.  
   
  Creating a control by inheriting from the <xref:System.Windows.Forms.Control> class requires much more thought and effort than inheriting from <xref:System.Windows.Forms.UserControl> or an existing Windows Forms control. Because a great deal of implementation is left for you, your control can have greater flexibility than a composite or extended control, and you can tailor your control to suit your exact needs.  
@@ -90,20 +96,23 @@ With the .NET Framework, you can develop and implement new controls. You can ext
 - You need to implement custom functionality that is not available through standard controls.  
   
 ### ActiveX Controls  
+
  Although the Windows Forms infrastructure has been optimized to host Windows Forms controls, you can still use ActiveX controls. There is support for this task in Visual Studio. For more information, see [How to: Add ActiveX Controls to Windows Forms](how-to-add-activex-controls-to-windows-forms.md).  
   
 ### Windowless Controls  
+
  The Microsoft Visual Basic® 6.0and ActiveX technologies support *windowless* controls. Windowless controls are not supported in Windows Forms.  
   
 ## Custom Design Experience  
+
  If you need to implement a custom design-time experience, you can author your own designer. For composite controls, derive your custom designer class from the <xref:System.Windows.Forms.Design.ParentControlDesigner> or the <xref:System.Windows.Forms.Design.DocumentDesigner> classes. For extended and custom controls, derive your custom designer class from the <xref:System.Windows.Forms.Design.ControlDesigner> class.  
   
- Use the <xref:System.ComponentModel.DesignerAttribute> to associate your control with your designer. For more information, see [Extending Design-Time Support](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/37899azc(v=vs.120)) and [How to: Create a Windows Forms Control That Takes Advantage of Design-Time Features](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/307hck25(v=vs.120)).  
+ Use the <xref:System.ComponentModel.DesignerAttribute> to associate your control with your designer. For more information, see [Extending Design-Time Support](/previous-versions/visualstudio/visual-studio-2013/37899azc(v=vs.120)) and [How to: Create a Windows Forms Control That Takes Advantage of Design-Time Features](/previous-versions/visualstudio/visual-studio-2013/307hck25(v=vs.120)).  
   
 ## See also
 
 - [Developing Custom Windows Forms Controls with the .NET Framework](developing-custom-windows-forms-controls.md)
 - [How to: Develop a Simple Windows Forms Control](how-to-develop-a-simple-windows-forms-control.md)
 - [Developing a Composite Windows Forms Control](developing-a-composite-windows-forms-control.md)
-- [Extending Design-Time Support](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/37899azc(v=vs.120))
-- [How to: Create a Windows Forms Control That Takes Advantage of Design-Time Features](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/307hck25(v=vs.120))
+- [Extending Design-Time Support](/previous-versions/visualstudio/visual-studio-2013/37899azc(v=vs.120))
+- [How to: Create a Windows Forms Control That Takes Advantage of Design-Time Features](/previous-versions/visualstudio/visual-studio-2013/307hck25(v=vs.120))

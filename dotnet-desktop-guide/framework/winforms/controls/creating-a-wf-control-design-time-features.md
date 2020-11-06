@@ -29,7 +29,7 @@ When you're finished with this walkthrough, your custom control will look someth
 
 ![The app showing a marquee saying Text and a Start and Stop buttons.](./media/creating-a-wf-control-design-time-features/demo-marquee-control.gif)
 
-For the complete code listing, see [How to: Create a Windows Forms Control That Takes Advantage of Design-Time Features](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/307hck25(v=vs.120)).
+For the complete code listing, see [How to: Create a Windows Forms Control That Takes Advantage of Design-Time Features](/previous-versions/visualstudio/visual-studio-2013/307hck25(v=vs.120)).
 
 ## Prerequisites
 
@@ -601,7 +601,7 @@ The `MarqueeControlLibrary` demonstrates a simple implementation of custom contr
 
 - License the `MarqueeControl`.
 
-- Control how your controls are serialized and how code is generated for them. For more information, see [Dynamic Source Code Generation and Compilation](https://docs.microsoft.com/dotnet/framework/reflection-and-codedom/dynamic-source-code-generation-and-compilation).
+- Control how your controls are serialized and how code is generated for them. For more information, see [Dynamic Source Code Generation and Compilation](/dotnet/framework/reflection-and-codedom/dynamic-source-code-generation-and-compilation).
 
 ## See also
 

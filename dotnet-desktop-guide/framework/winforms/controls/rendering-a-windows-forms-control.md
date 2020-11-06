@@ -12,6 +12,7 @@ helpviewer_keywords:
 ms.assetid: aae8e1e6-4786-432b-a15e-f4c44760d302
 ---
 # Rendering a Windows Forms Control
+
 Rendering refers to the process of creating a visual representation on a user's screen. Windows Forms uses GDI (the new Windows graphics library) for rendering. The managed classes that provide access to GDI are in the <xref:System.Drawing?displayProperty=nameWithType> namespace and its subnamespaces.  
   
  The following elements are involved in control rendering:  
@@ -25,7 +26,8 @@ Rendering refers to the process of creating a visual representation on a user's 
 - The procedure for freeing graphics resources.  
   
 ## Drawing Functionality Provided by Control  
- The base class <xref:System.Windows.Forms.Control> provides drawing functionality through its <xref:System.Windows.Forms.Control.Paint> event. A control raises the <xref:System.Windows.Forms.Control.Paint> event whenever it needs to update its display. For more information about events in the .NET Framework, see [Handling and Raising Events](https://docs.microsoft.com/dotnet/standard/events/index).  
+
+ The base class <xref:System.Windows.Forms.Control> provides drawing functionality through its <xref:System.Windows.Forms.Control.Paint> event. A control raises the <xref:System.Windows.Forms.Control.Paint> event whenever it needs to update its display. For more information about events in the .NET Framework, see [Handling and Raising Events](/dotnet/standard/events/index).  
   
  The event data class for the <xref:System.Windows.Forms.Control.Paint> event, <xref:System.Windows.Forms.PaintEventArgs>, holds the data needed for drawing a control — a handle to a graphics object and a rectangle object that represents the region to draw in. These objects are shown in bold in the following code fragment.  
   
@@ -87,9 +89,11 @@ protected virtual void OnPaintBackground(PaintEventArgs pevent);
  While <xref:System.Windows.Forms.Control.OnPaintBackground%2A> has an event-like nomenclature and takes the same argument as the `OnPaint` method, <xref:System.Windows.Forms.Control.OnPaintBackground%2A> is not a true event method. There is no `PaintBackground` event and <xref:System.Windows.Forms.Control.OnPaintBackground%2A> does not invoke event delegates. When overriding the <xref:System.Windows.Forms.Control.OnPaintBackground%2A> method, a derived class is not required to invoke the <xref:System.Windows.Forms.Control.OnPaintBackground%2A> method of its base class.  
   
 ## GDI+ Basics  
+
  The <xref:System.Drawing.Graphics> class provides methods for drawing various shapes such as circles, triangles, arcs, and ellipses, as well as methods for displaying text. The <xref:System.Drawing?displayProperty=nameWithType> namespace and its subnamespaces contain classes that encapsulate graphics elements such as shapes (circles, rectangles, arcs, and others), colors, fonts, brushes, and so on. For more information about GDI, see [Using Managed Graphics Classes](../advanced/using-managed-graphics-classes.md). The essentials of GDI are also described in the [How to: Create a Windows Forms Control That Shows Progress](how-to-create-a-windows-forms-control-that-shows-progress.md).  
   
 ## Geometry of the Drawing Region  
+
  The <xref:System.Windows.Forms.Control.ClientRectangle%2A> property of a control specifies the rectangular region available to the control on the user's screen, while the <xref:System.Windows.Forms.PaintEventArgs.ClipRectangle%2A> property of <xref:System.Windows.Forms.PaintEventArgs> specifies the area that is actually painted. (Remember that painting is done in the <xref:System.Windows.Forms.Control.Paint> event method that takes a <xref:System.Windows.Forms.PaintEventArgs> instance as its argument). A control might need to paint only a portion of its available area, as is the case when a small section of the control's display changes. In those situations, a control developer must compute the actual rectangle to draw in and pass that to <xref:System.Windows.Forms.Control.Invalidate%2A>. The overloaded versions of <xref:System.Windows.Forms.Control.Invalidate%2A> that take a <xref:System.Drawing.Rectangle> or <xref:System.Drawing.Region> as an argument use that argument to generate the <xref:System.Windows.Forms.PaintEventArgs.ClipRectangle%2A> property of <xref:System.Windows.Forms.PaintEventArgs>.  
   
  The following code fragment shows how the `FlashTrackBar` custom control computes the rectangular area to draw in. The `client` variable denotes the <xref:System.Windows.Forms.PaintEventArgs.ClipRectangle%2A> property. For a complete sample, see [How to: Create a Windows Forms Control That Shows Progress](how-to-create-a-windows-forms-control-that-shows-progress.md).  
@@ -98,6 +102,7 @@ protected virtual void OnPaintBackground(PaintEventArgs pevent);
  [!code-vb[System.Windows.Forms.FlashTrackBar#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.FlashTrackBar/VB/FlashTrackBar.vb#6)]  
   
 ## Freeing Graphics Resources  
+
  Graphics objects are expensive because they use system resources. Such objects include instances of the <xref:System.Drawing.Graphics?displayProperty=nameWithType> class as well as instances of <xref:System.Drawing.Brush?displayProperty=nameWithType>, <xref:System.Drawing.Pen?displayProperty=nameWithType>, and other graphics classes. It is important that you create a graphics resource only when you need it and release it soon as you are finished using it. If you create a type that implements the <xref:System.IDisposable> interface, call its <xref:System.IDisposable.Dispose%2A> method when you are finished with it in order to free resources.  
   
  The following code fragment shows how the `FlashTrackBar` custom control creates and releases a <xref:System.Drawing.Brush> resource. For the complete source code, see [How to: Create a Windows Forms Control That Shows Progress](how-to-create-a-windows-forms-control-that-shows-progress.md).  

@@ -18,7 +18,7 @@ As you develop and distribute controls, you may want those controls to appear in
 
 To display your control in the Choose Toolbox Items dialog box:
 
-- Install your control assembly to the global assembly cache. For more information, see [How to: Install an Assembly into the Global Assembly Cache](https://docs.microsoft.com/dotnet/framework/app-domains/install-assembly-into-gac).
+- Install your control assembly to the global assembly cache. For more information, see [How to: Install an Assembly into the Global Assembly Cache](/dotnet/framework/app-domains/install-assembly-into-gac).
 
   -or-
 
@@ -27,5 +27,5 @@ To display your control in the Choose Toolbox Items dialog box:
 ## See also
 
 - [Developing Windows Forms Controls at Design Time](developing-windows-forms-controls-at-design-time.md)
-- [How to: Install an Assembly into the Global Assembly Cache](https://docs.microsoft.com/dotnet/framework/app-domains/install-assembly-into-gac)
+- [How to: Install an Assembly into the Global Assembly Cache](/dotnet/framework/app-domains/install-assembly-into-gac)
 - [Walkthrough: Automatically Populating the Toolbox with Custom Components](walkthrough-automatically-populating-the-toolbox-with-custom-components.md)

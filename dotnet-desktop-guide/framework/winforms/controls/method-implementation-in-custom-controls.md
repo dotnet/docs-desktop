@@ -13,6 +13,7 @@ helpviewer_keywords:
 ms.assetid: 35d14fca-4bb4-4a27-8211-1f7a98ea27de
 ---
 # Method Implementation in Custom Controls
+
 A method is implemented in a control in the same manner a method would be implemented in any other component.  
   
  In Visual Basic, if a method is required to return a value, it is implemented as a `Public Function`. If no value is returned, it is implemented as a `Public Sub`. Methods are declared using the following syntax:  
@@ -39,6 +40,7 @@ public int ConvertMatterToEnergy(int matter)
  Typed arguments allow many developer errors to be caught by the compiler, rather than at run time. The compiler always catches errors, whereas run-time testing is only as good as the test suite.  
   
 ## Overloaded Methods  
+
  If you want to allow users of your control to supply different combinations of parameters to a method, provide multiple overloads of the method, using explicit data types. Avoid creating parameters declared `As Object` that can contain any data type, as this can lead to errors that might not be caught in testing.  
   
 > [!NOTE]
@@ -71,5 +73,5 @@ public void Spin(Widget driver)
   
 ## See also
 
-- [Events](https://docs.microsoft.com/dotnet/standard/events/index)
+- [Events](/dotnet/standard/events/index)
 - [Properties in Windows Forms Controls](properties-in-windows-forms-controls.md)

@@ -13,6 +13,7 @@ helpviewer_keywords:
 ms.assetid: 3a7a86a8-75d5-4898-96b9-73da151e5e16
 ---
 # WPF XAML Browser Applications Overview
+
 <a name="introduction"></a>
 XAML browser applications (XBAPs) combines features of both Web applications and rich-client applications. Like Web applications, XBAPs can be deployed to a Web server and started from Internet Explorer or Firefox. Like rich-client applications, XBAPs can take advantage of the capabilities of WPF. Developing XBAPs is also similar to rich-client development. This topic provides a simple, high-level introduction to XBAP development and describes where XBAP development differs from standard rich-client development.
 
@@ -29,8 +30,10 @@ XAML browser applications (XBAPs) combines features of both Web applications and
 - [XBAP Start Time Performance Considerations](#xbap_start_time_performance_considerations)
 
 <a name="creating_a_new_xaml_browser_application_xbap"></a>
+
 ## Creating a New XAML Browser Application (XBAP)
- The simplest way to create a new XBAP project is with Visual Studio. When creating a new project, select **WPF Browser Application** from the list of templates. For more information, see [How to: Create a New WPF Browser Application Project](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb628663(v=vs.100)).
+
+ The simplest way to create a new XBAP project is with Visual Studio. When creating a new project, select **WPF Browser Application** from the list of templates. For more information, see [How to: Create a New WPF Browser Application Project](/previous-versions/visualstudio/visual-studio-2010/bb628663(v=vs.100)).
 
  When you run the XBAP project, it opens in a browser window instead of a stand-alone window. When you debug the XBAP from Visual Studio, the application runs with Internet zone permission and will therefore throw security exceptions if those permissions are exceeded. For more information, see [Security](../security-wpf.md) and [WPF Partial Trust Security](../wpf-partial-trust-security.md).
 
@@ -38,7 +41,9 @@ XAML browser applications (XBAPs) combines features of both Web applications and
 > If you are not developing with Visual Studio or want to learn more about the project files, see [Building a WPF Application](building-a-wpf-application-wpf.md).
 
 <a name="deploying_a_xbap"></a>
+
 ## Deploying an XBAP
+
  When you build an XBAP, the output includes the following three files:
 
 |File|Description|
@@ -75,6 +80,7 @@ XAML browser applications (XBAPs) combines features of both Web applications and
 ```
 
 ### Clearing Cached XBAPs
+
  In some situations after rebuilding and starting your XBAP, you may find that an earlier version of the XBAP is opened. For example, this behavior may occur when your XBAP assembly version number is static and you start the XBAP from the command line. In this case, because the version number between the cached version (the version that was previously started) and the new version remains the same, the new version of the XBAP is not downloaded. Instead, the cached version is loaded.
 
  In these situations, you can remove the cached version by using the **Mage** command (installed with Visual Studio or the Windows SDK) at the command prompt. The following command clears the application cache.
@@ -86,13 +92,16 @@ XAML browser applications (XBAPs) combines features of both Web applications and
  This command guarantees that the latest version of your XBAP is started. When you debug your application in Visual Studio, the latest version of your XBAP should be started. In general, you should update your deployment version number with each build. For more information about Mage, see [Mage.exe (Manifest Generation and Editing Tool)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool).
 
 <a name="communicating_with_the_host_web_page"></a>
+
 ## Communicating with the Host Web Page
+
  When the application is hosted in an HTML frame, you can communicate with the Web page that contains the XBAP. You do this by retrieving the <xref:System.Windows.Interop.BrowserInteropHelper.HostScript%2A> property of <xref:System.Windows.Interop.BrowserInteropHelper>. This property returns a script object that represents the HTML window. You can then access the properties, methods, and events on the [window object](https://developer.mozilla.org/en-US/docs/Web/API/Window) by using regular dot syntax. You can also access script methods and global variables. The following example shows how to retrieve the script object and close the browser.
 
  [!code-csharp[XbapBrowserInterop#10](~/samples/snippets/csharp/VS_Snippets_Wpf/xbapbrowserinterop/cs/page1.xaml.cs#10)]
  [!code-vb[XbapBrowserInterop#10](~/samples/snippets/visualbasic/VS_Snippets_Wpf/xbapbrowserinterop/vb/page1.xaml.vb#10)]
 
 ### Debugging XBAPs that Use HostScript
+
  If your XBAP uses the <xref:System.Windows.Interop.BrowserInteropHelper.HostScript%2A> object to communicate with the HTML window, there are two settings that you must specify to run and debug the application in Visual Studio. The application must have access to its site of origin and you must start the application with the HTML page that contains the XBAP. The following steps describe how to check these two settings:
 
 1. In Visual Studio, open the project properties.
@@ -121,7 +130,9 @@ XAML browser applications (XBAPs) combines features of both Web applications and
 > Enabling active content in Internet Explorer may put your computer at risk. If you do not want to change your Internet Explorer security settings, you can launch the HTML page from a server and attach the Visual Studio debugger to the process.
 
 <a name="xbap_security_considerations"></a>
+
 ## XBAP Security Considerations
+
  XBAPs typically execute in a partial-trust security sandbox that is restricted to the Internet zone permission set. Consequently, your implementation must support the subset of WPF elements that are supported in the Internet zone or you must elevate the permissions of your application. For more information, see [Security](../security-wpf.md).
 
  When you use a <xref:System.Windows.Controls.WebBrowser> control in your application, WPF internally instantiates the native WebBrowser ActiveX control. When your application is a partial-trust XBAP running in Internet Explorer, the ActiveX control runs in a dedicated thread of the Internet Explorer process. Therefore, the following limitations apply:
@@ -139,6 +150,7 @@ XAML browser applications (XBAPs) combines features of both Web applications and
 - <xref:System.Windows.Interop.HwndHost.MessageHook> does not get raised because <xref:System.Windows.Interop.HwndHost> cannot subclass a window running in another thread or process.
 
 ### Creating a Full-Trust XBAP
+
  If your XBAP requires full trust, you can change your project to enable this permission. The following steps describe how to enable full trust:
 
 1. In Visual Studio, open the project properties.
@@ -160,6 +172,7 @@ XAML browser applications (XBAPs) combines features of both Web applications and
     ```
 
 ### Deploying a Full-Trust XBAP
+
  When you deploy a full-trust XBAP that does not follow the ClickOnce Trusted Deployment model, the behavior when the user runs the application will depend on the security zone. In some cases, the user will receive a warning when they attempt to install it. The user can choose to continue or cancel the installation. The following table describes the behavior of the application for each security zone and what you have to do for the application to receive full trust.
 
 |Security Zone|Behavior|Getting Full Trust|
@@ -171,10 +184,12 @@ XAML browser applications (XBAPs) combines features of both Web applications and
 > [!NOTE]
 > The behavior described in the previous table is for full-trust XBAPs that do not follow the ClickOnce Trusted Deployment model.
 
- It is recommended that you use the ClickOnce Trusted Deployment model for deploying a full-trust XBAP. This model allows your XBAP to be granted full trust automatically, regardless of the security zone, so that the user is not prompted. As part of this model, you must sign your application with a certificate from a trusted publisher. For more information, see [Trusted Application Deployment Overview](/visualstudio/deployment/trusted-application-deployment-overview) and [Introduction to Code Signing](https://docs.microsoft.com/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms537361(v=vs.85)).
+ It is recommended that you use the ClickOnce Trusted Deployment model for deploying a full-trust XBAP. This model allows your XBAP to be granted full trust automatically, regardless of the security zone, so that the user is not prompted. As part of this model, you must sign your application with a certificate from a trusted publisher. For more information, see [Trusted Application Deployment Overview](/visualstudio/deployment/trusted-application-deployment-overview) and [Introduction to Code Signing](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms537361(v=vs.85)).
 
 <a name="xbap_start_time_performance_considerations"></a>
+
 ## XBAP Start Time Performance Considerations
+
  An important aspect of XBAP performance is its start time. If an XBAP is the first WPF application to load, the *cold start* time can be ten seconds or more. This is because the progress page is rendered by WPF, and both the CLR and WPF must be cold-started to display the application.
 
  Starting in .NET Framework 3.5 SP1, XBAP cold-start time is mitigated by displaying an unmanaged progress page early in the deployment cycle. The progress page appears almost immediately after the application is started, because it is displayed by native hosting code and rendered in HTML.

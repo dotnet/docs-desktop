@@ -118,7 +118,7 @@ WPF provides a set of 3D rendering capabilities that integrate with 2D graphics 
 
 ![Screenshot of a sample showing 3D shapes with different textures.](./media/index/visual-three-dimensional-shape.png)
 
-For more information, see [3D Graphics Overview](3-d-graphics-overview.md). For an introductory sample, see [3D Solids Sample](https://go.microsoft.com/fwlink/?LinkID=159964).
+For more information, see [3D Graphics Overview](3-d-graphics-overview.md). For an introductory sample, see [3D Solids Sample](https://github.com/microsoft/WPF-Samples/tree/master/Animation/AnimationExamples).
 
 <a name="animation"></a>
 

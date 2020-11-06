@@ -11,14 +11,19 @@ helpviewer_keywords:
 ms.assetid: 74f61413-f8c0-4e75-bf04-951886426c8b
 ---
 # Property Animation Techniques Overview
+
 This topic describes the different approaches for animating properties: storyboards, local animations, clocks, and per-frame animations.  
   
 <a name="prerequisites"></a>
+
 ## Prerequisites  
+
  To understand this topic, you should be familiar with the basic animation features described in the [Animation Overview](animation-overview.md).  
   
 <a name="summary"></a>
+
 ## Different Ways to Animate  
+
  Because there are many different scenarios for animating properties, [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] provides several approaches for animating properties.  
   
  For each approach, the following table indicates whether it can be used per-instance, in styles, in control templates, or in data templates; whether it can be used in [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)]; and whether the approach enables you to interactively control the animation.  "Per-Instance" refers to the technique of applying an animation or storyboard directly to instances of an object, rather than in a style, control template, or data template.  
@@ -31,7 +36,9 @@ This topic describes the different approaches for animating properties: storyboa
 |Per-frame animation|Per-instance|No|N/A|  
   
 <a name="storyboard_animations"></a>
+
 ## Storyboard Animations  
+
  Use a <xref:System.Windows.Media.Animation.Storyboard> when you want to define and apply your animations in [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)], interactively control your animations after they start, create a complex tree of animations, or animate in a <xref:System.Windows.Style>, <xref:System.Windows.Controls.ControlTemplate> or <xref:System.Windows.DataTemplate>. For an object to be animated by a <xref:System.Windows.Media.Animation.Storyboard>, it must be a <xref:System.Windows.FrameworkElement> or <xref:System.Windows.FrameworkContentElement>, or it must be used to set a <xref:System.Windows.FrameworkElement> or <xref:System.Windows.FrameworkContentElement>. For more details, see the [Storyboards Overview](storyboards-overview.md).  
   
  A <xref:System.Windows.Media.Animation.Storyboard> is a special type of container <xref:System.Windows.Media.Animation.Timeline> that provides targeting information for the animations it contains. To animate with a <xref:System.Windows.Media.Animation.Storyboard>, you complete the following three steps.  
@@ -52,12 +59,13 @@ This topic describes the different approaches for animating properties: storyboa
 |--------------------------------|-------------------|-----------|----------------------|-------------------|-------------|  
 |<xref:System.Windows.Media.Animation.BeginStoryboard> and an <xref:System.Windows.EventTrigger>|Yes|Yes|Yes|Yes|[Animate a Property by Using a Storyboard](how-to-animate-a-property-by-using-a-storyboard.md)|  
 |<xref:System.Windows.Media.Animation.BeginStoryboard> and a property <xref:System.Windows.Trigger>|No|Yes|Yes|Yes|[Trigger an Animation When a Property Value Changes](how-to-trigger-an-animation-when-a-property-value-changes.md)|  
-|<xref:System.Windows.Media.Animation.BeginStoryboard> and a <xref:System.Windows.DataTrigger>|No|Yes|Yes|Yes|[How to: Trigger an Animation When Data Changes](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/aa970679(v=vs.90))|  
+|<xref:System.Windows.Media.Animation.BeginStoryboard> and a <xref:System.Windows.DataTrigger>|No|Yes|Yes|Yes|[How to: Trigger an Animation When Data Changes](/previous-versions/dotnet/netframework-3.5/aa970679(v=vs.90))|  
 |<xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method|Yes|No|No|No|[Animate a Property by Using a Storyboard](how-to-animate-a-property-by-using-a-storyboard.md)|  
   
  For more information about <xref:System.Windows.Media.Animation.Storyboard> objects, see the [Storyboards Overview](storyboards-overview.md).  
   
 ## Local Animations  
+
  Local animations provide a convenient way to animate a dependency property of any <xref:System.Windows.Media.Animation.Animatable> object. Use local animations when you want to apply a single animation to a property and you don't need to interactively control the animation after it starts. Unlike a <xref:System.Windows.Media.Animation.Storyboard> animation, a local animation can animate an object that isn't associated with a <xref:System.Windows.FrameworkElement> or a <xref:System.Windows.FrameworkContentElement>. You also don't have to define a <xref:System.Windows.NameScope> for this type of animation.  
   
  Local animations may only be used in code, and cannot be defined in styles, control templates, or data templates. A local animation cannot be interactively controlled after it is started.  
@@ -75,6 +83,7 @@ This topic describes the different approaches for animating properties: storyboa
  [!code-vb[animateproperty#11](~/samples/snippets/visualbasic/VS_Snippets_Wpf/animateproperty/VisualBasic/LocalAnimationExample.vb#11)]  
   
 ## Clock Animations  
+
  Use <xref:System.Windows.Media.MediaPlayer.Clock%2A> objects when you want to animate without using a <xref:System.Windows.Media.Animation.Storyboard> and you want to create complex timing trees or interactively control animations after they start. You can use Clock objects to animate a dependency property of any <xref:System.Windows.Media.Animation.Animatable> object.  
   
  You cannot use <xref:System.Windows.Media.Animation.Clock> objects directly to animate in styles, control templates, or data templates. (The animation and timing system actually does use <xref:System.Windows.Media.Animation.Clock> objects to animate in styles, control templates, and data templates, but it must create those <xref:System.Windows.Media.Animation.Clock> objects for you from a <xref:System.Windows.Media.Animation.Storyboard>. For more information about the relationship between <xref:System.Windows.Media.Animation.Storyboard> objects and <xref:System.Windows.Media.Animation.Clock> objects, see the [Animation and Timing System Overview](animation-and-timing-system-overview.md).)  
@@ -103,6 +112,7 @@ This topic describes the different approaches for animating properties: storyboa
  For more information about Clock objects, see the [Animation and Timing System Overview](animation-and-timing-system-overview.md).  
   
 ## Per-Frame Animation: Bypass the Animation and Timing System  
+
  Use this approach when you need to completely bypass the [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] animation system. One scenario for this approach is physics animations, where each step in the animation requires objects to be recomputed based on the last set of object interactions.  
   
  Per-frame animations cannot be defined inside styles, control templates, or data templates.  

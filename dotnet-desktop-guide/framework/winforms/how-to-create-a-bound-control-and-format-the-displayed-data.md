@@ -13,7 +13,7 @@ With Windows Forms data binding, you can format the data displayed in a data-bou
 
 ## To bind a control and format the displayed data
 
-1. Connect to a data source. For more information, see [Connecting to a Data Source](https://docs.microsoft.com/dotnet/framework/data/adonet/connecting-to-a-data-source).
+1. Connect to a data source. For more information, see [Connecting to a Data Source](/dotnet/framework/data/adonet/connecting-to-a-data-source).
 
 2. In Visual Studio, select the control on the form, and then open the **Properties** window.
 
@@ -40,7 +40,7 @@ With Windows Forms data binding, you can format the data displayed in a data-bou
     |Currency|Specify number of decimal places by using **Decimal places** up-down control.|
     |Date Time|Select how the date and time should be displayed by selecting one of the items in the **Type** selection box.|
     |Scientific|Specify number of decimal places by using **Decimal places** up-down control.|
-    |Custom|Specify a custom format string using.<br /><br /> For more information, see [Formatting Types](https://docs.microsoft.com/dotnet/standard/base-types/formatting-types). **Note:**  Custom format strings are not guaranteed to successfully round trip between the data source and bound control. Instead handle the <xref:System.Windows.Forms.Binding.Parse> or <xref:System.Windows.Forms.Binding.Format> event for the binding and apply custom formatting in the event-handling code.|
+    |Custom|Specify a custom format string using.<br /><br /> For more information, see [Formatting Types](/dotnet/standard/base-types/formatting-types). **Note:**  Custom format strings are not guaranteed to successfully round trip between the data source and bound control. Instead handle the <xref:System.Windows.Forms.Binding.Parse> or <xref:System.Windows.Forms.Binding.Format> event for the binding and apply custom formatting in the event-handling code.|
 
 8. Select **OK** to close the **Formatting and Advanced Binding** dialog box and return to the Properties window.
 

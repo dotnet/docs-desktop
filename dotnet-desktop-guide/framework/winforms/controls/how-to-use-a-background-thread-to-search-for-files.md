@@ -12,9 +12,10 @@ helpviewer_keywords:
 ms.assetid: 7fe3956f-5b8f-4f78-8aae-c9eb0b28f13a
 ---
 # How to: Use a Background Thread to Search for Files
+
 The <xref:System.ComponentModel.BackgroundWorker> component replaces and adds functionality to the <xref:System.Threading> namespace; however, the <xref:System.Threading> namespace is retained for both backward compatibility and future use, if you choose. For more information, see [BackgroundWorker Component Overview](backgroundworker-component-overview.md).
 
- Windows Forms uses the single-threaded apartment (STA) model because Windows Forms is based on native Win32 windows that are inherently apartment-threaded. The STA model implies that a window can be created on any thread, but it cannot switch threads once created, and all function calls to it must occur on its creation thread. Outside Windows Forms, classes in the .NET Framework use the free threading model. For information about threading in the .NET Framework, see [Threading](https://docs.microsoft.com/dotnet/standard/threading/index).
+ Windows Forms uses the single-threaded apartment (STA) model because Windows Forms is based on native Win32 windows that are inherently apartment-threaded. The STA model implies that a window can be created on any thread, but it cannot switch threads once created, and all function calls to it must occur on its creation thread. Outside Windows Forms, classes in the .NET Framework use the free threading model. For information about threading in the .NET Framework, see [Threading](/dotnet/standard/threading/index).
 
  The STA model requires that any methods on a control that need to be called from outside the control's creation thread must be marshaled to (executed on) the control's creation thread. The base class <xref:System.Windows.Forms.Control> provides several methods (<xref:System.Windows.Forms.Control.Invoke%2A>, <xref:System.Windows.Forms.Control.BeginInvoke%2A>, and <xref:System.Windows.Forms.Control.EndInvoke%2A>) for this purpose. <xref:System.Windows.Forms.Control.Invoke%2A> makes synchronous method calls; <xref:System.Windows.Forms.Control.BeginInvoke%2A> makes asynchronous method calls.
 
@@ -563,6 +564,7 @@ namespace Microsoft.Samples.DirectorySearcher
 ```
 
 ## Using the Multithreaded Control on a Form
+
  The following example shows how the multithreaded `DirectorySearcher` control can be used on a form.
 
 ```vb
@@ -758,4 +760,4 @@ namespace SampleUsage
 
 - <xref:System.ComponentModel.BackgroundWorker>
 - [Developing Custom Windows Forms Controls with the .NET Framework](developing-custom-windows-forms-controls.md)
-- [Event-based Asynchronous Pattern Overview](https://docs.microsoft.com/dotnet/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview)
+- [Event-based Asynchronous Pattern Overview](/dotnet/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview)

@@ -9,9 +9,11 @@ helpviewer_keywords:
 ms.assetid: d63b65ab-b3e9-4322-9aa8-1450f8d89532
 ---
 # How to: Implement PriorityBinding
+
 <xref:System.Windows.Data.PriorityBinding> in [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] works by specifying a list of bindings. The list of bindings is ordered from highest priority to lowest priority. If the highest priority binding returns a value successfully when it is processed then there is never a need to process the other bindings in the list. It could be the case that the highest priority binding takes a long time to be evaluated, the next highest priority that returns a value successfully will be used until a binding of a higher priority returns a value successfully.  
   
 ## Example  
+
  To demonstrate how <xref:System.Windows.Data.PriorityBinding> works, the `AsyncDataSource` object has been created with the following three properties: `FastDP`, `SlowerDP`, and `SlowestDP`.  
   
  The get accessor of `FastDP` returns the value of the `_fastDP` data member.  
@@ -21,7 +23,7 @@ ms.assetid: d63b65ab-b3e9-4322-9aa8-1450f8d89532
  The get accessor of `SlowestDP` waits for 5 seconds before returning the value of the `_slowestDP` data member.  
   
 > [!NOTE]
-> This example is for demonstration purposes only. The .NET guidelines recommend against defining properties that are orders of magnitude slower than a field set would be. For more information, see [Choosing Between Properties and Methods](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms229054(v=vs.100)).  
+> This example is for demonstration purposes only. The .NET guidelines recommend against defining properties that are orders of magnitude slower than a field set would be. For more information, see [Choosing Between Properties and Methods](/previous-versions/dotnet/netframework-4.0/ms229054(v=vs.100)).  
   
  [!code-csharp[PriorityBinding#1](~/samples/snippets/csharp/VS_Snippets_Wpf/PriorityBinding/CSharp/Window1.xaml.cs#1)]
  [!code-vb[PriorityBinding#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PriorityBinding/VisualBasic/AsyncDataSource.vb#1)]  

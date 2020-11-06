@@ -11,12 +11,14 @@ helpviewer_keywords:
 ms.assetid: d9b12787-86f6-4022-8e0f-e12d312c4af2
 ---
 # Handling User Input
-This topic describes the main keyboard and mouse events provided by <xref:System.Windows.Forms.Control?displayProperty=nameWithType>. When handling an event, control authors should override the protected `On`*EventName* method rather than attaching a delegate to the event. For a review of events, see [Raising Events from a Component](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/sh2e3k5z(v=vs.120)).  
+
+This topic describes the main keyboard and mouse events provided by <xref:System.Windows.Forms.Control?displayProperty=nameWithType>. When handling an event, control authors should override the protected `On`*EventName* method rather than attaching a delegate to the event. For a review of events, see [Raising Events from a Component](/previous-versions/visualstudio/visual-studio-2013/sh2e3k5z(v=vs.120)).  
   
 > [!NOTE]
 > If there is no data associated with an event, an instance of the base class <xref:System.EventArgs> is passed as an argument to the `On`*EventName* method.  
   
 ## Keyboard Events  
+
  The common keyboard events that your control can handle are <xref:System.Windows.Forms.Control.KeyDown>, <xref:System.Windows.Forms.Control.KeyPress>, and <xref:System.Windows.Forms.Control.KeyUp>.  
   
 |Event Name|Method to Override|Description of Event|  
@@ -29,6 +31,7 @@ This topic describes the main keyboard and mouse events provided by <xref:System
 > Handling keyboard input is considerably more complex than overriding the events in the preceding table and is beyond the scope of this topic. For more information, see [User Input in Windows Forms](../user-input-in-windows-forms.md).  
   
 ## Mouse Events  
+
  The mouse events that your control can handle are <xref:System.Windows.Forms.Control.MouseDown>, <xref:System.Windows.Forms.Control.MouseEnter>, <xref:System.Windows.Forms.Control.MouseHover>, <xref:System.Windows.Forms.Control.MouseLeave>, <xref:System.Windows.Forms.Control.MouseMove>, and <xref:System.Windows.Forms.Control.MouseUp>.  
   
 |Event Name|Method to Override|Description of Event|  
@@ -61,5 +64,5 @@ This topic describes the main keyboard and mouse events provided by <xref:System
 
 - [Events in Windows Forms Controls](events-in-windows-forms-controls.md)
 - [Defining an Event](defining-an-event-in-windows-forms-controls.md)
-- [Events](https://docs.microsoft.com/dotnet/standard/events/index)
+- [Events](/dotnet/standard/events/index)
 - [User Input in Windows Forms](../user-input-in-windows-forms.md)

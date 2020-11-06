@@ -15,7 +15,9 @@ ms.assetid: 4061a9d1-fe8b-4921-9e17-18ec7d2e3ea2
 This topic provides an overview of some of the key features of OpenType font technology in [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)].  
   
 <a name="overview"></a>
+
 ## OpenType Font Format  
+
  The OpenType font format is an extension of the TrueType® font format, adding support for PostScript font data. The OpenType font format was developed jointly by Microsoft and Adobe Corporation. OpenType fonts and the operating system services which support OpenType fonts provide users with a simple way to install and use fonts, whether the fonts contain TrueType outlines or CFF (PostScript) outlines.  
   
  The OpenType font format addresses the following developer challenges:  
@@ -33,9 +35,10 @@ This topic provides an overview of some of the key features of OpenType font tec
 > [!NOTE]
 > The Windows SDK contains a set of sample OpenType fonts that you can use with [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] applications. These fonts provide most of the features illustrated in the rest of this topic. For more information, see [Sample OpenType Font Pack](sample-opentype-font-pack.md).  
   
-For details of the OpenType font format, see the [OpenType specification](https://docs.microsoft.com/typography/opentype/spec/).  
+For details of the OpenType font format, see the [OpenType specification](/typography/opentype/spec/).  
   
 ### Advanced Typographic Extensions  
+
  The Advanced Typographic tables (OpenType Layout tables) extend the functionality of fonts with either TrueType or CFF outlines. OpenType Layout fonts contain additional information that extends the capabilities of the fonts to support high-quality international typography. Most OpenType fonts expose only a subset of the total OpenType features available. OpenType fonts provide the following features.  
   
 - Rich mapping between characters and glyphs that support ligatures, positional forms, alternates, and other font substitutions.  
@@ -49,10 +52,13 @@ For details of the OpenType font format, see the [OpenType specification](https:
  The remainder of this overview introduces the breadth and flexibility of some of the visually-interesting OpenType features that are exposed by the properties of the <xref:System.Windows.Documents.Typography> object. For more information on this object, see [Typography Class](#typography_class).  
   
 <a name="variants"></a>
+
 ## Variants  
+
  Variants are used to render different typographic styles, such as superscripts and subscripts.  
   
 ### Superscripts and Subscripts  
+
  The <xref:System.Windows.Documents.Typography.Variants%2A> property allows you to set superscript and subscript values for an OpenType font.  
   
  The following text displays superscripts for the Palatino Linotype font.  
@@ -72,6 +78,7 @@ For details of the OpenType font format, see the [OpenType specification](https:
  [!code-xaml[OpenTypeFontSamples#13](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSamples/CS/PageOne.xaml#13)]  
   
 ### Decorative Uses of Superscripts and Subscripts  
+
  You can also use superscripts and subscripts to create decorative effects of mixed case text. The following text displays superscript and subscript text for the Palatino Linotype font. Note that the capitals are not affected.  
   
  ![Text using OpenType superscripts and subscripts](./media/opentype-font-features/opentype-superscripts-subscripts.gif "Text using OpenType superscripts and subscripts")  
@@ -81,7 +88,9 @@ For details of the OpenType font format, see the [OpenType specification](https:
  [!code-xaml[OpenTypeFontSamples#14](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSamples/CS/PageOne.xaml#14)]  
   
 <a name="capitals"></a>
+
 ## Capitals  
+
  Capitals are a set of typographical forms that render text in capital-styled glyphs. Typically, when text is rendered as all capitals, the spacing between letters can appear too tight, and the weight and proportion of the letters too heavy. OpenType supports a number of styling formats for capitals, including small capitals, petite capitals, titling, and capital spacing. These styling formats allow you to control the appearance of capitals.  
   
  The following text displays standard capital letters for the Pescadero font, followed by the letters styled as "SmallCaps" and "AllSmallCaps". In this case, the same font size is used for all three words.  
@@ -93,6 +102,7 @@ For details of the OpenType font format, see the [OpenType specification](https:
  [!code-xaml[OpenTypeFontSamples#9](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSamples/CS/PageOne.xaml#9)]  
   
 ### Titling Capitals  
+
  Titling capitals are lighter in weight and proportion and designed to give a more elegant look than normal capitals. Titling capitals are typically used in larger font sizes as headings. The following text displays normal and titling capitals for the Pescadero font. Notice the narrower stem widths of the text on the second line.  
   
  ![Text using OpenType titling capitals](./media/opentype-font-features/opentype-titling-capitals.gif "Text using OpenType titling capitals")  
@@ -102,6 +112,7 @@ For details of the OpenType font format, see the [OpenType specification](https:
  [!code-xaml[OpenTypeFontSamples#OpenTypeFontSnippet17](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSamples/CS/PageOne.xaml#opentypefontsnippet17)]  
   
 ### Capital Spacing  
+
  Capital spacing is a feature that allows you to provide more spacing when using all capitals in text. Capital letters are typically designed to blend with lowercase letters. Spacing that appears attractive between and a capital letter and a lowercase letter may look too tight when all capital letters are used. The following text displays normal and capital spacing for the Pescadero font.  
   
  ![Text using OpenType capital spacing](./media/opentype-font-features/opentype-capital-spacing.gif "Text using OpenType capital spacing ")  
@@ -111,7 +122,9 @@ For details of the OpenType font format, see the [OpenType specification](https:
  [!code-xaml[OpenTypeFontSamples#OpenTypeFontSnippet18](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSamples/CS/PageOne.xaml#opentypefontsnippet18)]  
   
 <a name="ligatures"></a>
+
 ## Ligatures  
+
  Ligatures are two or more glyphs that are formed into a single glyph in order to create more readable or attractive text. OpenType fonts support four types of ligatures:  
   
 - **Standard ligatures**. Designed to enhance readability. Standard ligatures include "fi", "fl", and "ff".  
@@ -151,7 +164,9 @@ For details of the OpenType font format, see the [OpenType specification](https:
  [!code-xaml[OpenTypeFontSamples#6](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSamples/CS/PageOne.xaml#6)]  
   
 <a name="swashes"></a>
+
 ## Swashes  
+
  Swashes are decorative glyphs that use elaborate ornamentation often associated with calligraphy. The following text displays standard and swash glyphs for the Pescadero font.  
   
  ![Text using OpenType standard and swash glyphs](./media/opentype-font-features/opentype-standard-swash-glyphs.gif "Text using OpenType standard and swash glyphs")  
@@ -165,6 +180,7 @@ For details of the OpenType font format, see the [OpenType specification](https:
  [!code-xaml[OpenTypeFontSamples#7](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSamples/CS/PageOne.xaml#7)]  
   
 ### Contextual Swashes  
+
  Certain combinations of swash glyphs can cause an unattractive appearance, such as overlapping descenders on adjacent letters. Using a contextual swash allows you to use a substitute swash glyph that produces a better appearance. The following text shows the same word before and after a contextual swash is applied.  
   
  ![Text using OpenType contextual swashes](./media/opentype-font-features/opentype-contextual-swashes.gif "Text using OpenType contextual swashes")  
@@ -174,7 +190,9 @@ For details of the OpenType font format, see the [OpenType specification](https:
  [!code-xaml[OpenTypeFontSamples#OpenTypeFontSnippet16](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSamples/CS/PageOne.xaml#opentypefontsnippet16)]  
   
 <a name="alternates"></a>
+
 ## Alternates  
+
  Alternates are glyphs that can be substituted for a standard glyph. OpenType fonts, such as the Pericles font used in the following examples, can contain alternate glyphs that you can use to create different appearances for text. The following text displays standard glyphs for the Pericles font.  
   
  ![Text using OpenType standard glyphs](./media/opentype-font-features/opentype-standard-glyphs.gif "Text using OpenType standard glyphs")  
@@ -196,6 +214,7 @@ For details of the OpenType font format, see the [OpenType specification](https:
  [!code-xaml[OpenTypeFontSamples#3](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSamples/CS/PageOne.xaml#3)]  
   
 ### Random Contextual Alternates  
+
  Random contextual alternates provide multiple substitute glyphs for a single character. When implemented with script-type fonts, this feature can simulate handwriting by using of a set of randomly chosen glyphs with slight differences in appearance. The following text uses random contextual alternates for the Lindsey font. Notice that the letter "a" varies slightly in appearance  
   
  ![Text using OpenType random contextual alternates](./media/opentype-font-features/opentype-random-contextual-alternates.gif "Text using OpenType random contextual alternates")  
@@ -205,6 +224,7 @@ For details of the OpenType font format, see the [OpenType specification](https:
  [!code-xaml[OpenTypeFontSamples#OpenTypeFontSnippet20](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSamples/CS/Window1.xaml#opentypefontsnippet20)]  
   
 ### Historical Forms  
+
  Historical forms are typographic conventions that were common in the past. The following text displays the phrase, "Boston, Massachusetts", using an historical form of glyphs for the Palatino Linotype font.  
   
  ![Text using OpenType historical forms](./media/opentype-font-features/opentype-historical-forms.gif "Text using OpenType historical forms")  
@@ -214,10 +234,13 @@ For details of the OpenType font format, see the [OpenType specification](https:
  [!code-xaml[OpenTypeFontSamples#8](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSamples/CS/PageOne.xaml#8)]  
   
 <a name="numerical_styles"></a>
+
 ## Numerical Styles  
+
  OpenType fonts support a large number of features that can be used with numerical values in text.  
   
 ### Fractions  
+
  OpenType fonts support styles for fractions, including slashed and stacked.  
   
  The following text displays fraction styles for the Palatino Linotype font.  
@@ -229,6 +252,7 @@ For details of the OpenType font format, see the [OpenType specification](https:
  [!code-xaml[OpenTypeFontSamples#10](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSamples/CS/PageOne.xaml#10)]  
   
 ### Old Style Numerals  
+
  OpenType fonts support an old style numeral format. This format is useful for displaying numerals in styles that are no longer standard. The following text displays an 18th century date in standard and old style numeral formats for the Palatino Linotype font.  
   
  ![Text using OpenType old style numerals](./media/opentype-font-features/opentype-old-style-numerals.gif "Text using OpenType old style numerals")  
@@ -242,6 +266,7 @@ For details of the OpenType font format, see the [OpenType specification](https:
  [!code-xaml[OpenTypeFontSamples#11](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSamples/CS/PageOne.xaml#11)]  
   
 ### Proportional and Tabular Figures  
+
  OpenType fonts support a proportional and tabular figure feature to control the alignment of widths when using numerals. Proportional figures treat each numeral as having a different width—"1" is narrower than "5". Tabular figures are treated as equal-width numerals so that they align vertically, which increases the readability of financial type information.  
   
  The following text displays two proportional figures in the first column using the Miramonte font. Note the difference in width between the numerals "5" and "1". The second column shows the same two numeric values with the widths adjusted by using the tabular figure feature.  
@@ -253,6 +278,7 @@ For details of the OpenType font format, see the [OpenType specification](https:
  [!code-xaml[OpenTypeFontSamples#OpenTypeFontSnippet19](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSamples/CS/Window1.xaml#opentypefontsnippet19)]  
   
 ### Slashed Zero  
+
  OpenType fonts support a slashed zero numeral format to emphasize the difference between the letter "O" and the numeral "0". The slashed zero numeral is often used for identifiers in financial and business information.  
   
  The following text displays a sample order identifier using the Miramonte font. The first line uses standard numerals. The second line used slashed zero numerals to provide better contrast with the uppercase "O" letter.  
@@ -264,7 +290,9 @@ For details of the OpenType font format, see the [OpenType specification](https:
  [!code-xaml[OpenTypeFontSamples#OpenTypeFontSnippet15](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSamples/CS/PageOne.xaml#opentypefontsnippet15)]  
   
 <a name="typography_class"></a>
+
 ## Typography Class  
+
  The <xref:System.Windows.Documents.Typography> object exposes the set of features that an OpenType font supports. By setting the properties of <xref:System.Windows.Documents.Typography> in markup, you can easily author documents that take advantage of OpenType features.  
   
  The following text displays standard capital letters for the Pescadero font, followed by the letters styled as "SmallCaps" and "AllSmallCaps". In this case, the same font size is used for all three words.  
@@ -281,6 +309,7 @@ For details of the OpenType font format, see the [OpenType specification](https:
  [!code-vb[TypographyCodeSnippets#TypographyCodeSnippet1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TypographyCodeSnippets/visualbasic/page1.xaml.vb#typographycodesnippet1)]  
   
 ### Typography Class Properties  
+
  The following table lists the properties, values, and default settings of the <xref:System.Windows.Documents.Typography> object.  
   
 |Property|Value(s)|Default Value|  
@@ -332,7 +361,7 @@ For details of the OpenType font format, see the [OpenType specification](https:
 ## See also
 
 - <xref:System.Windows.Documents.Typography>
-- [OpenType specification](https://docs.microsoft.com/typography/opentype/spec/)
+- [OpenType specification](/typography/opentype/spec/)
 - [Typography in WPF](typography-in-wpf.md)
 - [Sample OpenType Font Pack](sample-opentype-font-pack.md)
 - [Packaging Fonts with Applications](packaging-fonts-with-applications.md)

@@ -10,9 +10,11 @@ helpviewer_keywords:
 ms.assetid: 81bc100c-fa49-4614-85a6-0f7ab59eac8a
 ---
 # Windows Forms and Unmanaged Applications
+
 Windows Forms applications and controls can interoperate with unmanaged applications, with some caveats. The following sections describe the scenarios and configurations that Windows Forms applications and controls support and those that they do not support.  
   
 ## In This Section  
+
  [Windows Forms and Unmanaged Applications Overview](windows-forms-and-unmanaged-applications-overview.md)  
  Offers general information about how to use and implement Windows Forms controls that work with unmanaged applications.  
   
@@ -22,9 +24,10 @@ Windows Forms applications and controls can interoperate with unmanaged applicat
  [How to: Support COM Interop by Displaying Each Windows Form on Its Own Thread](how-to-support-com-interop-by-displaying-each-windows-form-on-its-own-thread.md)  
  Provides a code example that shows how to run a Windows Form on its own thread.  
   
- Also see [Walkthrough: Supporting COM Interop by Displaying Each Windows Form on Its Own Thread](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms233639(v=vs.100)).  
+ Also see [Walkthrough: Supporting COM Interop by Displaying Each Windows Form on Its Own Thread](/previous-versions/visualstudio/visual-studio-2010/ms233639(v=vs.100)).  
   
 ## Reference  
+
  <xref:System.Windows.Forms.Form.ShowDialog%2A?displayProperty=nameWithType>  
  Used to create a separate thread for a Windows Form.  
   
@@ -35,5 +38,6 @@ Windows Forms applications and controls can interoperate with unmanaged applicat
  Marshals calls from an unmanaged application to a form.  
   
 ## Related Sections  
- [Exposing .NET Framework Components to COM](https://docs.microsoft.com/dotnet/framework/interop/exposing-dotnet-components-to-co)  
+
+ [Exposing .NET Framework Components to COM](/dotnet/framework/interop/exposing-dotnet-components-to-co)  
  Offers general information about how to use .NET Framework types in unmanaged applications.

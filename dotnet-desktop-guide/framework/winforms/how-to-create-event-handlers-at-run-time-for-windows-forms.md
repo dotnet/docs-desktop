@@ -72,4 +72,4 @@ In addition to creating events using the Windows Forms Designer in Visual Studio
 
 - [Creating Event Handlers in Windows Forms](creating-event-handlers-in-windows-forms.md)
 - [Event Handlers Overview](event-handlers-overview-windows-forms.md)
-- [Troubleshooting Inherited Event Handlers in Visual Basic](https://docs.microsoft.com/dotnet/visual-basic/programming-guide/language-features/events/troubleshooting-inherited-event-handlers)
+- [Troubleshooting Inherited Event Handlers in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/events/troubleshooting-inherited-event-handlers)
