@@ -1,6 +1,6 @@
 ---
 title: What's new in Windows Forms
-description: Learn about what is new in Windows Forms for .NET. Windows Forms for .NET has many different features and enhancements over .NET Framework.
+description: Learn about what is new in Windows Forms for .NET. Windows Forms for .NET provides new features and enhancements over .NET Framework.
 ms.date: 11/05/2020
 ms.topic: conceptual
 ---
@@ -27,7 +27,7 @@ The following new controls have been added since .NET Framework:
 
 - <xref:System.Windows.Forms.TaskDialog?displayProperty=fullName>
   
-  A task dialog is a dialog box that can be used to display information and receive simple input from the user. Like a message box, it is formatted by the operating system according to parameters you set. However, a task dialog has many more features than a message box. For more information, see the [Task dialog sample](https://github.com/dotnet/samples/tree/master/windowsforms/TaskDialogDemo).
+  A task dialog is a dialog box that can be used to display information and receive simple input from the user. Like a message box, it is formatted by the operating system according to parameters you set. However, a task dialog has more features than a message box. For more information, see the [Task dialog sample](https://github.com/dotnet/samples/tree/master/windowsforms/TaskDialogDemo).
 
 - <xref:Microsoft.Web.WebView2.WinForms.WebView2?displayProperty=fullName>
 
