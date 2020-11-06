@@ -93,7 +93,7 @@ To upgrade, do the following:
 
 This XML gives you the basic structure of the project. However, it doesn't contain any of the settings from the old project file. Using the old project information you previously copied to a text editor, do the following:
 
-01. Copy the following elements from the old project file into the `<PropertyGroup>` element in the new project file: 
+01. Copy the following elements from the old project file into the `<PropertyGroup>` element in the new project file:
 
     - `<RootNamespace>`
     - `<AssemblyName>`
