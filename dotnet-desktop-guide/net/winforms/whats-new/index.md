@@ -57,5 +57,6 @@ The following new controls have been added since .NET Framework:
 
 ## See also
 
-- [Breaking changes in Windows Forms](/dotnet/core/compatibility/winforms).
-- [How to migrate a Windows Forms desktop app to .NET 5](../migration/index.md).
+- [Breaking changes in Windows Forms](/dotnet/core/compatibility/winforms)
+- [Tutorial: Create a new WinForms app (Windows Forms .NET)](../get-started/create-app-visual-studio.md)
+- [How to migrate a Windows Forms desktop app to .NET 5](../migration/index.md)
