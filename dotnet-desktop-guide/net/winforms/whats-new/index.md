@@ -7,14 +7,14 @@ ms.topic: conceptual
 
 # What's new (Windows Forms.NET)
 
-Windows Forms for .NET adds the following features and enhancements over .NET Framework.
+Windows Forms for .NET 5.0 adds the following features and enhancements over .NET Framework.
 
-There are a few breaking changes you should be aware of when migrating from .NET Framework to .NET. For more information, see [Breaking changes in Windows Forms](/dotnet/core/compatibility/winforms).
+There are a few breaking changes you should be aware of when migrating from .NET Framework to .NET 5.0. For more information, see [Breaking changes in Windows Forms](/dotnet/core/compatibility/winforms).
 
 ## Enhanced features
 
 - Microsoft UI Automation patterns work better with accessibility tools like Narrator and Jaws.
-- Significant work on performance and reliability.
+- Improved performance and reliability.
 - Better support for high DPI resolutions such as 4k monitors.
 - The default font matches the current Windows design recommendations.
 
@@ -23,7 +23,7 @@ There are a few breaking changes you should be aware of when migrating from .NET
 
 ## New controls
 
-The following new controls have been added since .NET Framework:
+The following controls have been added since Windows Forms was ported to .NET Framework:
 
 - <xref:System.Windows.Forms.TaskDialog?displayProperty=fullName>
   
