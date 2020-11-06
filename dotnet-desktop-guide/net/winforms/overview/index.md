@@ -32,9 +32,9 @@ With Windows Forms, you develop graphically rich apps that are easy to deploy, u
 
 To learn how to create a Windows Forms app, see [Tutorial: Create a new WinForms app (Windows Forms .NET)](../get-started/create-app-visual-studio.md).
 
-## Why migrate from .NET Framework?
+## Why migrate from .NET Framework
 
-
+Windows Forms for .NET has many different features and enhancements over .NET Framework. For more information, see [What's new (Windows Forms.NET)](../whats-new/index.md). To learn how to migrate an app, see [How to migrate a Windows Forms desktop app to .NET 5](../migration/index.md).
 
 ## Build rich, interactive user interfaces
 
