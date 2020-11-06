@@ -1,6 +1,6 @@
 ---
 title: What's new in Windows Forms
-description: Learn about what is new in Windows Forms for .NET. Windows Forms for .NET provides new features and enhancements over .NET Framework.
+description: Learn about what's new in Windows Forms for .NET. Windows Forms. .NET provides new features and enhancements over .NET Framework.
 ms.date: 11/05/2020
 ms.topic: conceptual
 ---
@@ -27,7 +27,7 @@ The following new controls have been added since .NET Framework:
 
 - <xref:System.Windows.Forms.TaskDialog?displayProperty=fullName>
   
-  A task dialog is a dialog box that can be used to display information and receive simple input from the user. Like a message box, it is formatted by the operating system according to parameters you set. However, a task dialog has more features than a message box. For more information, see the [Task dialog sample](https://github.com/dotnet/samples/tree/master/windowsforms/TaskDialogDemo).
+  A task dialog is a dialog box that can be used to display information and receive simple input from the user. Like a message box, it's formatted by the operating system according to parameters you set. Task dialog has more features than a message box. For more information, see the [Task dialog sample](https://github.com/dotnet/samples/tree/master/windowsforms/TaskDialogDemo).
 
 - <xref:Microsoft.Web.WebView2.WinForms.WebView2?displayProperty=fullName>
 
@@ -49,7 +49,7 @@ The following new controls have been added since .NET Framework:
 
   - Added support for <xref:System.Windows.Forms.FileDialog.ClientGuid>.
 
-    This property enables a calling application to associate a GUID with a dialog's persisted state. A dialog's state can include factors such as the last visited folder and the position and size of the dialog. Typically, this state is persisted based on the name of the executable file. By specifying a GUID, an application can have different persisted states for different versions of the dialog within the same application (for example, an import dialog and an open dialog).
+    `ClientGuid` enables a calling application to associate a GUID with a dialog's persisted state. A dialog's state can include factors such as the last visited folder and the position and size of the dialog. Typically, this state is persisted based on the name of the executable file. With `ClientGuid`, an application can persist  different states of the dialog within the same application.
 
 - <xref:System.Windows.Forms.TextRenderer?displayProperty=fullName>
 
