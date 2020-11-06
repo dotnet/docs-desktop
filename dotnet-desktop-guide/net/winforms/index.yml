@@ -28,8 +28,6 @@ landingContent:
         links:
           - text: Create a new app
             url: get-started/create-app-visual-studio.md
-      - linkListType: how-to-guide
-        links:
           - text: Migrate from .NET Framework
             url: migration/index.md
       - linkListType: download
