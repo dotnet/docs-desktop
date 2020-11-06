@@ -24,7 +24,7 @@ When you create a new project, you specify its name in order to set the root nam
 
 1. In Visual Studio, create a new **Windows Forms Control Library** project, and name it **ValueButtonLib**.
 
-     The project name, `ValueButtonLib`, is also assigned to the root namespace by default. The root namespace is used to qualify the names of components in the assembly. For example, if two assemblies provide components named `ValueButton`, you can specify your `ValueButton` component using `ValueButtonLib.ValueButton`. For more information, see [Namespaces](https://docs.microsoft.com/dotnet/csharp/programming-guide/namespaces/index).
+     The project name, `ValueButtonLib`, is also assigned to the root namespace by default. The root namespace is used to qualify the names of components in the assembly. For example, if two assemblies provide components named `ValueButton`, you can specify your `ValueButton` component using `ValueButtonLib.ValueButton`. For more information, see [Namespaces](/dotnet/csharp/programming-guide/namespaces/index).
 
 2. In **Solution Explorer**, right-click **UserControl1.cs**, then choose **Rename** from the shortcut menu. Change the file name to **ValueButton.cs**. Click the **Yes** button when you are asked if you want to rename all references to the code element '`UserControl1`'.
 

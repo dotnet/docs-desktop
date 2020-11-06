@@ -12,7 +12,7 @@ With *simple binding*, you can display a single data element, such as a column v
 
 ## To simple-bind a control
 
-1. Connect to a data source. For more information, see [Connecting to a Data Source](https://docs.microsoft.com/dotnet/framework/data/adonet/connecting-to-a-data-source).
+1. Connect to a data source. For more information, see [Connecting to a Data Source](/dotnet/framework/data/adonet/connecting-to-a-data-source).
 
 2. In Visual Studio, select the control on the form and display the **Properties** window.
 

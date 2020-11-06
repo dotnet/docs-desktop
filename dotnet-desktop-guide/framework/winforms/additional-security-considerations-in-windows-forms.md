@@ -9,11 +9,13 @@ helpviewer_keywords:
 ms.assetid: 15abda8b-0527-47c7-aedb-77ab595f2bf1
 ---
 # Additional Security Considerations in Windows Forms
+
 .NET Framework security settings might cause your application to run differently in a partial trust environment than on your local computer. The .NET Framework restricts access to such critical local resources as the file system, network, and unmanaged APIs, among other things. The security settings affect the ability to call the Microsoft Windows API or other APIs that cannot be verified by the security system. Security also affects other aspects of your application, including file and data access, and printing. For more information about file and data access in a partial trust environment, see [More Secure File and Data Access in Windows Forms](more-secure-file-and-data-access-in-windows-forms.md). For more information about printing in a partial trust environment, see [More Secure Printing in Windows Forms](more-secure-printing-in-windows-forms.md).  
   
  The following sections discuss how to work with the Clipboard, perform window manipulation, and call the Windows API from applications that are running in a partial trust environment.  
   
 ## Clipboard Access  
+
  The <xref:System.Security.Permissions.UIPermission> class controls access to the Clipboard, and the associated <xref:System.Security.Permissions.UIPermissionClipboard> enumeration value indicates the level of access. The following table shows the possible permission levels.  
   
 |UIPermissionClipboard value|Description|  
@@ -22,9 +24,10 @@ ms.assetid: 15abda8b-0527-47c7-aedb-77ab595f2bf1
 |<xref:System.Security.Permissions.UIPermissionClipboard.OwnClipboard>|The Clipboard can be used with some restrictions. The ability to put data on the Clipboard (Copy or Cut command operations) is unrestricted. Intrinsic controls that accept paste, such as a text box, can accept Clipboard data, but user controls cannot programmatically read from the Clipboard.|  
 |<xref:System.Security.Permissions.UIPermissionClipboard.NoClipboard>|The Clipboard cannot be used.|  
   
- By default, the Local Intranet zone receives <xref:System.Security.Permissions.UIPermissionClipboard.AllClipboard> access and the Internet zone receives <xref:System.Security.Permissions.UIPermissionClipboard.OwnClipboard> access. This means that the application can copy data to the Clipboard, but the application cannot programmatically paste to or read from the Clipboard. These restrictions prevent programs without full trust from reading content copied to the Clipboard by another application. If your application requires full Clipboard access but you do not have the permissions, you will have to elevate the permissions for your application. For more information about elevating permissions, see [General Security Policy Administration](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ed5htz45(v=vs.100)).  
+ By default, the Local Intranet zone receives <xref:System.Security.Permissions.UIPermissionClipboard.AllClipboard> access and the Internet zone receives <xref:System.Security.Permissions.UIPermissionClipboard.OwnClipboard> access. This means that the application can copy data to the Clipboard, but the application cannot programmatically paste to or read from the Clipboard. These restrictions prevent programs without full trust from reading content copied to the Clipboard by another application. If your application requires full Clipboard access but you do not have the permissions, you will have to elevate the permissions for your application. For more information about elevating permissions, see [General Security Policy Administration](/previous-versions/dotnet/netframework-4.0/ed5htz45(v=vs.100)).  
   
 ## Window Manipulation  
+
  The <xref:System.Security.Permissions.UIPermission> class also controls permission to perform window manipulation and other UI-related actions, and the associated <xref:System.Security.Permissions.UIPermissionWindow> enumeration value indicates the level of access. The following table shows the possible permission levels.  
   
  By default, the Local Intranet zone receives <xref:System.Security.Permissions.UIPermissionWindow.AllWindows> access and the Internet zone receives <xref:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows> access. This means that in the Internet zone, the application can perform most windowing and UI actions, but the window's appearance will be modified. The modified window displays a balloon notification when first run, contains modified title bar text, and requires a close button on the title bar. The balloon notification and the title bar identify to the user of the application that the application is running under partial trust.  
@@ -59,11 +62,13 @@ ms.assetid: 15abda8b-0527-47c7-aedb-77ab595f2bf1
 |<xref:System.Windows.Forms.MessageBox>|-   Calling the <xref:System.Windows.Forms.Form.Show%2A> method.|  
   
 ### Hosting Third-Party Controls  
+
  Another kind of window manipulation can occur if your forms host third-party controls. A third-party control is any custom <xref:System.Windows.Forms.UserControl> that you have not developed and compiled yourself. Although the hosting scenario is hard to exploit, it is theoretically possible for a third-party control to expand its rendering surface to cover the entire area of your form. This control could then mimic a critical dialog box, and request information such as username/password combinations or bank account numbers from your users.  
   
  To limit this potential risk, use third-party controls only from vendors you can trust. If you use third-party controls you have downloaded from an unverifiable source, we recommend that you review the source code for potential exploits. After you've verified that the source is non-malicious, you should compile the assembly yourself to ensure that the source matches the assembly.  
   
 ## Windows API Calls  
+
  If your application design requires calling a function from the Windows API, you are accessing unmanaged code. In this case the code's actions to the window or operating system cannot be determined when you are working with Windows API calls or values. The <xref:System.Security.Permissions.SecurityPermission> class and the <xref:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode> value of the <xref:System.Security.Permissions.SecurityPermissionFlag> enumeration control access to unmanaged code. An application can access unmanaged code only when it is granted the <xref:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode> permission. By default, only applications that are running locally can call unmanaged code.  
   
  Some Windows Forms members provide unmanaged access that requires the <xref:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode> permission. The following table lists the members in the <xref:System.Windows.Forms> namespace that require the permission. For more information about the permissions that are required for a member, see the .NET Framework class library documentation.  
@@ -80,7 +85,7 @@ ms.assetid: 15abda8b-0527-47c7-aedb-77ab595f2bf1
   
  If your application does not have permission to call unmanaged code, your application must request <xref:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode> permission, or you must consider alternative ways of implementing features; in many cases, Windows Forms provides a managed alternative to Windows API functions. If no alternative means exist and the application must access unmanaged code, you will have to elevate the permissions for the application.  
   
- Permission to call unmanaged code allows an application to perform most anything. Therefore, permission to call unmanaged code should only be granted for applications that come from a trusted source. Alternatively, depending on the application, the piece of application functionality that makes the call to unmanaged code could be optional, or enabled in the full trust environment only. For more information about dangerous permissions, see [Dangerous Permissions and Policy Administration](https://docs.microsoft.com/dotnet/framework/misc/dangerous-permissions-and-policy-administration). For more information about elevating permissions, see [General Security Policy Administration](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ed5htz45(v=vs.100)).  
+ Permission to call unmanaged code allows an application to perform most anything. Therefore, permission to call unmanaged code should only be granted for applications that come from a trusted source. Alternatively, depending on the application, the piece of application functionality that makes the call to unmanaged code could be optional, or enabled in the full trust environment only. For more information about dangerous permissions, see [Dangerous Permissions and Policy Administration](/dotnet/framework/misc/dangerous-permissions-and-policy-administration). For more information about elevating permissions, see [General Security Policy Administration](/previous-versions/dotnet/netframework-4.0/ed5htz45(v=vs.100)).  
   
 ## See also
 

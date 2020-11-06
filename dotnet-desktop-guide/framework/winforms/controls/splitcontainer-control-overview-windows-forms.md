@@ -8,6 +8,7 @@ helpviewer_keywords:
 ms.assetid: 6de5a5f7-97a5-402d-be6d-7e2785483db5
 ---
 # SplitContainer Control Overview (Windows Forms)
+
 The Windows Forms <xref:System.Windows.Forms.SplitContainer> control can be thought of as a composite; it is two panels separated by a movable bar. When the mouse pointer is over the bar, the pointer changes shape to show that the bar is movable.  
   
 > [!IMPORTANT]
@@ -47,4 +48,4 @@ The Windows Forms <xref:System.Windows.Forms.SplitContainer> control can be thou
 
 - <xref:System.Windows.Forms.SplitContainer>
 - [SplitContainer Control](splitcontainer-control-windows-forms.md)
-- [SplitContainer Control Sample](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/0ffz7d1b(v=vs.90))
+- [SplitContainer Control Sample](/previous-versions/visualstudio/visual-studio-2008/0ffz7d1b(v=vs.90))

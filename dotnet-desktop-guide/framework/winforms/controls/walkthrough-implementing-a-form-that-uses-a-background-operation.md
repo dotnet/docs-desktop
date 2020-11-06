@@ -46,7 +46,7 @@ For a complete listing of the code used in this example, see [How to: Implement 
 
 5. Rename the first <xref:System.Windows.Forms.Button> control `startAsyncButton` and set the <xref:System.Windows.Forms.Control.Text%2A> property to `Start Async`. Rename the second <xref:System.Windows.Forms.Button> control `cancelAsyncButton`, and set the <xref:System.Windows.Forms.Control.Text%2A> property to `Cancel Async`. Set its <xref:System.Windows.Forms.Control.Enabled%2A> property to `false`.
 
-6. Create an event handler for both of the <xref:System.Windows.Forms.Button> controls' <xref:System.Windows.Forms.Control.Click> events. For details, see [How to: Create Event Handlers Using the Designer](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/zwwsdtbk(v=vs.100)).
+6. Create an event handler for both of the <xref:System.Windows.Forms.Button> controls' <xref:System.Windows.Forms.Control.Click> events. For details, see [How to: Create Event Handlers Using the Designer](/previous-versions/visualstudio/visual-studio-2010/zwwsdtbk(v=vs.100)).
 
 7. Drag a <xref:System.Windows.Forms.Label> control from the **Toolbox** onto the form and rename it `resultLabel`.
 
@@ -62,7 +62,7 @@ From the **Components** tab of the **Toolbox**, drag a <xref:System.ComponentMod
 
 You are now ready to add event handlers for the <xref:System.ComponentModel.BackgroundWorker> component's asynchronous events. The time-consuming operation that will run in the background, which computes Fibonacci numbers, is called by one of these event handlers.
 
-1. In the **Properties** window, with the <xref:System.ComponentModel.BackgroundWorker> component still selected, click the **Events** button. Double-click the <xref:System.ComponentModel.BackgroundWorker.DoWork> and <xref:System.ComponentModel.BackgroundWorker.RunWorkerCompleted> events to create event handlers. For more information about how to use event handlers, see [How to: Create Event Handlers Using the Designer](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/zwwsdtbk(v=vs.100)).
+1. In the **Properties** window, with the <xref:System.ComponentModel.BackgroundWorker> component still selected, click the **Events** button. Double-click the <xref:System.ComponentModel.BackgroundWorker.DoWork> and <xref:System.ComponentModel.BackgroundWorker.RunWorkerCompleted> events to create event handlers. For more information about how to use event handlers, see [How to: Create Event Handlers Using the Designer](/previous-versions/visualstudio/visual-studio-2010/zwwsdtbk(v=vs.100)).
 
 2. Create a new method, called `ComputeFibonacci`, in your form. This method does the actual work, and it will run in the background. This code demonstrates the recursive implementation of the Fibonacci algorithm, which is notably inefficient, taking exponentially longer time to complete for larger numbers. It is used here for illustrative purposes, to show an operation that can introduce long delays in your application.
 
@@ -146,17 +146,17 @@ Now that you have implemented a form that uses a <xref:System.ComponentModel.Bac
 
 - To debug your multithreaded application, see [How to: Use the Threads Window](/visualstudio/debugger/how-to-use-the-threads-window).
 
-- Implement your own component that supports the asynchronous programming model. For more information, see [Event-based Asynchronous Pattern Overview](https://docs.microsoft.com/dotnet/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview).
+- Implement your own component that supports the asynchronous programming model. For more information, see [Event-based Asynchronous Pattern Overview](/dotnet/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview).
 
     > [!CAUTION]
-    > When using multithreading of any sort, you potentially expose yourself to very serious and complex bugs. Consult the [Managed Threading Best Practices](https://docs.microsoft.com/dotnet/standard/threading/managed-threading-best-practices) before implementing any solution that uses multithreading.
+    > When using multithreading of any sort, you potentially expose yourself to very serious and complex bugs. Consult the [Managed Threading Best Practices](/dotnet/standard/threading/managed-threading-best-practices) before implementing any solution that uses multithreading.
 
 ## See also
 
 - <xref:System.ComponentModel.BackgroundWorker?displayProperty=nameWithType>
-- [Managed Threading](https://docs.microsoft.com/dotnet/standard/threading/index)
-- [Managed Threading Best Practices](https://docs.microsoft.com/dotnet/standard/threading/managed-threading-best-practices)
-- [Event-based Asynchronous Pattern Overview](https://docs.microsoft.com/dotnet/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview)
+- [Managed Threading](/dotnet/standard/threading/index)
+- [Managed Threading Best Practices](/dotnet/standard/threading/managed-threading-best-practices)
+- [Event-based Asynchronous Pattern Overview](/dotnet/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview)
 - [How to: Implement a Form That Uses a Background Operation](how-to-implement-a-form-that-uses-a-background-operation.md)
 - [Walkthrough: Running an Operation in the Background](walkthrough-running-an-operation-in-the-background.md)
 - [BackgroundWorker Component](backgroundworker-component.md)

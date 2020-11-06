@@ -21,7 +21,7 @@ To understand this topic, you should be familiar with the different animation ty
 
 <a name="whatisatimeline"></a>
 
-## What Is a Storyboard?
+## What Is a Storyboard
 
 Animations are not the only useful type of timeline. Other timeline classes are provided to help you organize sets of timelines, and to apply timelines to properties. Container timelines derive from the <xref:System.Windows.Media.Animation.TimelineGroup> class, and include <xref:System.Windows.Media.Animation.ParallelTimeline> and <xref:System.Windows.Media.Animation.Storyboard>.
 
@@ -37,7 +37,7 @@ In this case, you have multiple sets of animations that apply to the same object
 
 <a name="wherecanyouuseastoryboard"></a>
 
-## Where Can You Use a Storyboard?
+## Where Can You Use a Storyboard
 
 A <xref:System.Windows.Media.Animation.Storyboard> can be used to animate dependency properties of animatable classes (for more information about what makes a class animatable, see the [Animation Overview](animation-overview.md)). However, because storyboarding is a framework-level feature, the object must belong to the <xref:System.Windows.NameScope> of a <xref:System.Windows.FrameworkElement> or a <xref:System.Windows.FrameworkContentElement>.
 
@@ -65,7 +65,7 @@ The following table shows the different places where each  <xref:System.Windows.
 |--------------------------------|-------------------|-----------|----------------------|-------------------|-------------|
 |<xref:System.Windows.Media.Animation.BeginStoryboard> and an <xref:System.Windows.EventTrigger>|Yes|Yes|Yes|Yes|[Animate a Property by Using a Storyboard](how-to-animate-a-property-by-using-a-storyboard.md)|
 |<xref:System.Windows.Media.Animation.BeginStoryboard> and a property <xref:System.Windows.Trigger>|No|Yes|Yes|Yes|[Trigger an Animation When a Property Value Changes](how-to-trigger-an-animation-when-a-property-value-changes.md)|
-|<xref:System.Windows.Media.Animation.BeginStoryboard> and a <xref:System.Windows.DataTrigger>|No|Yes|Yes|Yes|[How to: Trigger an Animation When Data Changes](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/aa970679(v=vs.90))|
+|<xref:System.Windows.Media.Animation.BeginStoryboard> and a <xref:System.Windows.DataTrigger>|No|Yes|Yes|Yes|[How to: Trigger an Animation When Data Changes](/previous-versions/dotnet/netframework-3.5/aa970679(v=vs.90))|
 |<xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method|Yes|No|No|No|[Animate a Property by Using a Storyboard](how-to-animate-a-property-by-using-a-storyboard.md)|
 
 The following example uses a <xref:System.Windows.Media.Animation.Storyboard> to animate the <xref:System.Windows.FrameworkElement.Width%2A> of a <xref:System.Windows.Shapes.Rectangle> element and the <xref:System.Windows.Media.SolidColorBrush.Color%2A> of a <xref:System.Windows.Media.SolidColorBrush> used to paint that <xref:System.Windows.Shapes.Rectangle>.

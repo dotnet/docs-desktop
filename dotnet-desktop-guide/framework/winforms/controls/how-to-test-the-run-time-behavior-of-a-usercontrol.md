@@ -18,7 +18,6 @@ When you develop a <xref:System.Windows.Forms.UserControl>, you need to test its
 
 > [!IMPORTANT]
 > For the test container to load your <xref:System.Windows.Forms.UserControl>, the control must have at least one public constructor.
-
 > [!NOTE]
 > A Visual C++ control cannot be tested using the **UserControl Test Container**.
 
@@ -65,4 +64,4 @@ You can test user controls from other projects in your current project's test co
 - <xref:System.Windows.Forms.UserControl>
 - [How to: Author Composite Controls](how-to-author-composite-controls.md)
 - [Walkthrough: Authoring a Composite Control](walkthrough-authoring-a-composite-control-with-visual-csharp.md)
-- [User Control Designer](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/183c3hth(v=vs.100))
+- [User Control Designer](/previous-versions/visualstudio/visual-studio-2010/183c3hth(v=vs.100))

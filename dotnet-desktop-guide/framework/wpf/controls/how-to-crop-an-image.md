@@ -10,11 +10,13 @@ helpviewer_keywords:
 ms.assetid: c6bba109-c6e7-4cf8-bfe6-9cf8d01bb4fc
 ---
 # How to: Crop an Image
+
 This example shows how to crop an image using <xref:System.Windows.Media.Imaging.CroppedBitmap>.  
   
- <xref:System.Windows.Media.Imaging.CroppedBitmap> is primarily used when encoding a cropped version of an image to save out to a file. To crop an image for display purposes see the [How to: Create a Clip Region](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms746710(v=vs.90)) topic.  
+ <xref:System.Windows.Media.Imaging.CroppedBitmap> is primarily used when encoding a cropped version of an image to save out to a file. To crop an image for display purposes see the [How to: Create a Clip Region](/previous-versions/dotnet/netframework-3.5/ms746710(v=vs.90)) topic.  
   
 ## Example  
+
  The following [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)] defines resources used within the samples below.  
   
  [!code-xaml[imageelementexample#CroppedXAML1](~/samples/snippets/csharp/VS_Snippets_Wpf/ImageElementExample/CSharp/CroppedImageExample.xaml#croppedxaml1)]  
@@ -35,4 +37,4 @@ This example shows how to crop an image using <xref:System.Windows.Media.Imaging
   
 ## See also
 
-- [How to: Create a Clip Region](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms746710(v=vs.90))
+- [How to: Create a Clip Region](/previous-versions/dotnet/netframework-3.5/ms746710(v=vs.90))

@@ -12,6 +12,7 @@ helpviewer_keywords:
 ms.assetid: 427f8928-ebcf-4beb-887f-695b905d5134
 ---
 # How to: Iterate Through All Nodes of a Windows Forms TreeView Control
+
 It is sometimes useful to examine every node in a Windows Forms <xref:System.Windows.Forms.TreeView> control in order to perform some calculation on the node values. This operation can be done using a recursive procedure (recursive method in C# and C++) that iterates through each node in each collection of the tree.  
   
  Each <xref:System.Windows.Forms.TreeNode> object in a tree view has properties that you can use to navigate the tree view: <xref:System.Windows.Forms.TreeNode.FirstNode%2A>, <xref:System.Windows.Forms.TreeNode.LastNode%2A>, <xref:System.Windows.Forms.TreeNode.NextNode%2A>, <xref:System.Windows.Forms.TreeNode.PrevNode%2A>, and <xref:System.Windows.Forms.TreeNode.Parent%2A>. The value of the <xref:System.Windows.Forms.TreeNode.Parent%2A> property is the parent node of the current node. The child nodes of the current node, if there are any, are listed in its <xref:System.Windows.Forms.TreeNode.Nodes%2A> property. The <xref:System.Windows.Forms.TreeView> control itself has the <xref:System.Windows.Forms.TreeView.TopNode%2A> property, which is the root node of the entire tree view.  
@@ -120,4 +121,4 @@ It is sometimes useful to examine every node in a Windows Forms <xref:System.Win
 ## See also
 
 - [TreeView Control](treeview-control-windows-forms.md)
-- [Recursive Procedures](https://docs.microsoft.com/dotnet/visual-basic/programming-guide/language-features/procedures/recursive-procedures)
+- [Recursive Procedures](/dotnet/visual-basic/programming-guide/language-features/procedures/recursive-procedures)

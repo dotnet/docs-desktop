@@ -8,6 +8,7 @@ helpviewer_keywords:
 ms.assetid: c29bde96-0389-4aff-a9fb-cd678f66b7f7
 ---
 # WPF Walkthroughs
+
 Walkthroughs give step-by-step instructions for common scenarios. This makes them a good place to start learning about the product or a particular feature area.
 
  This topic contains links to Windows Presentation Foundation (WPF) walkthroughs.
@@ -16,11 +17,11 @@ Walkthroughs give step-by-step instructions for common scenarios. This makes the
 
 |Title|Description|
 |-----------|-----------------|
-|[Walkthrough: Building a Simple WPF Application with the WPF Designer](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb546972(v=vs.100))|Demonstrates how to build a simple WPF application with the WPF Designer.|
-|[Walkthrough: Constructing a Dynamic Layout](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb514519(v=vs.100))|Demonstrates creating a dynamic layout by using a <xref:System.Windows.Controls.Grid> panel control.|
-|[Walkthrough: Creating a Resizable Application by Using the WPF Designer](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb546954(v=vs.100))|Demonstrates how to create window layouts that are resizable by the user at run time.|
-|[Walkthrough: Creating a Data Binding by Using the WPF Designer](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/dd434207(v=vs.100))|Demonstrates how to use the WPF Designer to create data bindings that connect data to a control.|
-|[Walkthrough: Using a DesignInstance to Bind to Data in the Designer](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/dd490796(v=vs.100))|Demonstrates how to use the WPF Designer to create data bindings at design time for a data context that is assigned at run time.|
+|[Walkthrough: Building a Simple WPF Application with the WPF Designer](/previous-versions/visualstudio/visual-studio-2010/bb546972(v=vs.100))|Demonstrates how to build a simple WPF application with the WPF Designer.|
+|[Walkthrough: Constructing a Dynamic Layout](/previous-versions/visualstudio/visual-studio-2010/bb514519(v=vs.100))|Demonstrates creating a dynamic layout by using a <xref:System.Windows.Controls.Grid> panel control.|
+|[Walkthrough: Creating a Resizable Application by Using the WPF Designer](/previous-versions/visualstudio/visual-studio-2010/bb546954(v=vs.100))|Demonstrates how to create window layouts that are resizable by the user at run time.|
+|[Walkthrough: Creating a Data Binding by Using the WPF Designer](/previous-versions/visualstudio/visual-studio-2010/dd434207(v=vs.100))|Demonstrates how to use the WPF Designer to create data bindings that connect data to a control.|
+|[Walkthrough: Using a DesignInstance to Bind to Data in the Designer](/previous-versions/visualstudio/visual-studio-2010/dd490796(v=vs.100))|Demonstrates how to use the WPF Designer to create data bindings at design time for a data context that is assigned at run time.|
 
 ## WPF Walkthroughs
 
@@ -45,4 +46,4 @@ Walkthroughs give step-by-step instructions for common scenarios. This makes the
 
 |Title|Description|
 |-----------|-----------------|
-|[Visual Studio Walkthroughs](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/szatc41e(v=vs.100))|Gives a related list of walkthroughs for all areas of programming in Visual Studio.|
+|[Visual Studio Walkthroughs](/previous-versions/visualstudio/visual-studio-2010/szatc41e(v=vs.100))|Gives a related list of walkthroughs for all areas of programming in Visual Studio.|

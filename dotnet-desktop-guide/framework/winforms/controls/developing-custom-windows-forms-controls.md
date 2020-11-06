@@ -8,9 +8,11 @@ helpviewer_keywords:
 ms.assetid: 236cebc0-bd71-4f18-9fd6-5d0e592375df
 ---
 # Developing Custom Windows Forms Controls with the .NET Framework
+
 Windows Forms controls are reusable components that encapsulate user interface functionality and are used in client-side Windows-based applications. Not only does Windows Forms provide many ready-to-use controls, it also provides the infrastructure for developing your own controls. You can combine existing controls, extend existing controls, or author your own custom controls. This section provides background information and samples to help you develop Windows Forms controls.  
   
 ## In This Section  
+
  [Overview of Using Controls in Windows Forms](overview-of-using-controls-in-windows-forms.md)  
  Highlights the essential elements of using controls in Windows Forms applications.  
   
@@ -39,6 +41,7 @@ Windows Forms controls are reusable components that encapsulate user interface f
  Shows how to implement multithreaded controls.  
   
 ## Reference  
+
  <xref:System.Windows.Forms.Control?displayProperty=nameWithType>  
  Describes this class and has links to all of its members.  
   
@@ -46,13 +49,14 @@ Windows Forms controls are reusable components that encapsulate user interface f
  Describes this class and has links to all of its members.  
   
 ## Related Sections  
- [Design-Time Attributes for Components](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/tk67c2t8(v=vs.120))  
+
+ [Design-Time Attributes for Components](/previous-versions/visualstudio/visual-studio-2013/tk67c2t8(v=vs.120))  
  Lists metadata attributes to apply to components and controls so that they are displayed correctly at design time in visual designers.  
   
- [Extending Design-Time Support](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/37899azc(v=vs.120))  
+ [Extending Design-Time Support](/previous-versions/visualstudio/visual-studio-2013/37899azc(v=vs.120))  
  Describes how to implement classes such as editors and designers that provide design-time support.  
   
- [How to: License Components and Controls](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/fe8b1eh9(v=vs.120))  
+ [How to: License Components and Controls](/previous-versions/visualstudio/visual-studio-2013/fe8b1eh9(v=vs.120))  
  Describes how to implement licensing in your control or component.  
   
  Also see [Developing Windows Forms Controls at Design Time](developing-windows-forms-controls-at-design-time.md).

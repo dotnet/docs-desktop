@@ -12,6 +12,7 @@ helpviewer_keywords:
 ms.assetid: 24c5a2e3-058c-4b8d-a217-c06e6a130c2f
 ---
 # How to: Create a Windows Forms Control That Shows Progress
+
 The following code example shows a custom control called `FlashTrackBar` that can be used to show the user the level or the progress of an application. It uses a gradient to visually represent progress.  
   
  The `FlashTrackBar` control illustrates the following concepts:  
@@ -72,6 +73,7 @@ The following code example shows a custom control called `FlashTrackBar` that ca
 - <xref:System.Windows.Forms.Control.OnTextChanged%2A>  
   
 ## Example  
+
  The `FlashTrackBar` control defines two UI type editors, `FlashTrackBarValueEditor` and `FlashTrackBarDarkenByEditor`, which are shown in the following code listings. The `HostApp` class uses the `FlashTrackBar` control on a Windows Form.  
   
  [!code-csharp[System.Windows.Forms.FlashTrackBar#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.FlashTrackBar/CS/FlashTrackBar.cs#1)]
@@ -88,5 +90,5 @@ The following code example shows a custom control called `FlashTrackBar` that ca
   
 ## See also
 
-- [Extending Design-Time Support](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/37899azc(v=vs.120))
+- [Extending Design-Time Support](/previous-versions/visualstudio/visual-studio-2013/37899azc(v=vs.120))
 - [Windows Forms Control Development Basics](windows-forms-control-development-basics.md)

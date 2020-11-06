@@ -18,7 +18,7 @@ The <xref:System.Windows.Forms.FlowLayoutPanel> arranges its contents in a speci
 
 The <xref:System.Windows.Forms.TableLayoutPanel> arranges its contents in a grid, providing functionality similar to the HTML \<table> element. The <xref:System.Windows.Forms.TableLayoutPanel> control allows you to place controls in a grid layout without requiring you to precisely specify the position of each individual control. Its cells are arranged in rows and columns, and these can have different sizes. Cells can be merged across rows and columns. Cells can contain anything a form can contain and behave in most other respects as containers.
 
-The <xref:System.Windows.Forms.TableLayoutPanel> control also provides a proportional resizing capability at run time, so your layout can change smoothly as your form is resized. This makes the <xref:System.Windows.Forms.TableLayoutPanel> control well suited for purposes such as data-entry forms and localized applications. For more information, see [Walkthrough: Creating a Resizable Windows Form for Data Entry](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/991eahec(v=vs.100)) and [Walkthrough: Creating a Localizable Windows Form](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/7k9fa71y(v=vs.100)).
+The <xref:System.Windows.Forms.TableLayoutPanel> control also provides a proportional resizing capability at run time, so your layout can change smoothly as your form is resized. This makes the <xref:System.Windows.Forms.TableLayoutPanel> control well suited for purposes such as data-entry forms and localized applications. For more information, see [Walkthrough: Creating a Resizable Windows Form for Data Entry](/previous-versions/visualstudio/visual-studio-2010/991eahec(v=vs.100)) and [Walkthrough: Creating a Localizable Windows Form](/previous-versions/visualstudio/visual-studio-2010/7k9fa71y(v=vs.100)).
 
 In general, you should not use a <xref:System.Windows.Forms.TableLayoutPanel> control as a container for the whole layout. Use <xref:System.Windows.Forms.TableLayoutPanel> controls to provide proportional resizing capabilities to parts of the layout.
 
@@ -188,8 +188,8 @@ You can achieve a complex layout using a combination of layout panels and contro
 - <xref:System.Windows.Forms.TableLayoutPanel>
 - [Walkthrough: Arranging Controls on Windows Forms Using a FlowLayoutPanel](walkthrough-arranging-controls-on-windows-forms-using-a-flowlayoutpanel.md)
 - [Walkthrough: Arranging Controls on Windows Forms Using Snaplines](walkthrough-arranging-controls-on-windows-forms-using-snaplines.md)
-- [Walkthrough: Creating a Resizable Windows Form for Data Entry](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/991eahec(v=vs.100))
-- [Walkthrough: Creating a Localizable Windows Form](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/7k9fa71y(v=vs.100))
+- [Walkthrough: Creating a Resizable Windows Form for Data Entry](/previous-versions/visualstudio/visual-studio-2010/991eahec(v=vs.100))
+- [Walkthrough: Creating a Localizable Windows Form](/previous-versions/visualstudio/visual-studio-2010/7k9fa71y(v=vs.100))
 - [Best Practices for the TableLayoutPanel Control](best-practices-for-the-tablelayoutpanel-control.md)
 - [AutoSize Property Overview](autosize-property-overview.md)
 - [How to: Dock Controls on Windows Forms](how-to-dock-controls-on-windows-forms.md)

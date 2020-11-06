@@ -18,7 +18,8 @@ This article discusses how to create and store settings data on behalf of your a
 
  Application settings enables developers to save state in their application using very little custom code, and is a replacement for dynamic properties in previous versions of the .NET Framework. Application settings contains many improvements over dynamic properties, which are read-only, late-bound, and require more custom programming. The dynamic property classes have been retained in .NET Framework 2.0, but they are just shell classes that thinly wrap the application settings classes.
 
-## What Are Application Settings?
+## What Are Application Settings
+
  Your Windows Forms applications will often require data that's critical to running the application, but which you don't want to include directly in the application's code. If your application uses a Web Service or a database server, you may want to store this information in a separate file, so that you can change it in the future without recompiling. Similarly, your applications may require storing data that is specific to the current user. Most applications, for example, have user preferences that customize the application's appearance and behavior.
 
  Application settings addresses both needs by providing an easy way to store both application-scoped and user-scoped settings on the client computer. Using Visual Studio or a code editor, you define a setting for a given property by specifying its name, data type, and scope (application or user). You can even place related settings into named groups for easier use and readability. Once defined, these settings are persisted and read back into memory automatically at run time. A pluggable architecture enables the persistence mechanism to be changed, but by default, the local file system is used.
@@ -30,13 +31,15 @@ This article discusses how to create and store settings data on behalf of your a
  Custom controls can also save their own settings by implementing the <xref:System.Configuration.IPersistComponentSettings> interface, which exposes the <xref:System.Configuration.IPersistComponentSettings.SaveSettings%2A> method. The Windows Forms <xref:System.Windows.Forms.ToolStrip> control implements this interface to save the position of toolbars and toolbar items between application sessions. For more information about custom controls and application settings, see [Application Settings for Custom Controls](application-settings-for-custom-controls.md).
 
 ## Limitations of Application Settings
+
  You cannot use application settings in an unmanaged application that hosts the .NET Framework. Settings will not work in such environments as Visual Studio add-ins, C++ for Microsoft Office, control hosting in Internet Explorer, or Microsoft Outlook add-ins and projects.
 
  You currently cannot bind to some properties in Windows Forms. The most notable example is the <xref:System.Windows.Forms.Form.ClientSize%2A> property, as binding to this property would cause unpredictable behavior at run time. You can usually work around these issues by saving and loading these settings programmatically.
 
- Application settings has no built-in facility for encrypting information automatically. You should never store security-related information, such as database passwords, in clear text. If you want to store such sensitive information, you as the application developer are responsible for making sure it is secure. If you want to store connection strings, we recommend that you use Windows Integrated Security and not resort to hard-coding passwords into the URL. For more information, see [Code Access Security and ADO.NET](https://docs.microsoft.com/dotnet/framework/data/adonet/code-access-security).
+ Application settings has no built-in facility for encrypting information automatically. You should never store security-related information, such as database passwords, in clear text. If you want to store such sensitive information, you as the application developer are responsible for making sure it is secure. If you want to store connection strings, we recommend that you use Windows Integrated Security and not resort to hard-coding passwords into the URL. For more information, see [Code Access Security and ADO.NET](/dotnet/framework/data/adonet/code-access-security).
 
 ## Getting Started with Application Settings
+
  If you use Visual Studio, you can define settings within the Windows Forms Designer using the **(ApplicationSettings)** property in the **Properties** window. When you define settings this way, Visual Studio automatically creates a custom managed wrapper class that associates each setting with a class property. Visual Studio also takes care of binding the setting to a property on a form or control so that the control's settings are restored automatically when its form is displayed, and saved automatically when the form is closed.
 
  If you want more detailed control over your settings, you can define your own custom applications settings wrapper class. This is accomplished by deriving a class from <xref:System.Configuration.ApplicationSettingsBase>, adding a property that corresponds to each setting, and applying special attributes to these properties. For details about creating wrapper classes, see [Application Settings Architecture](application-settings-architecture.md).

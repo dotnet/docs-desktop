@@ -123,7 +123,7 @@ With Visual Studio, you can easily add a data source to your project. This proce
 
 1. From the **Data** menu, select **Add New Data Source**.
 
-2. In the **Data Source Configuration Wizard**, create a connection to the Northwind database by using a dataset. For more information, see [How to: Connect to Data in a Database](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/fxk9yw1t(v=vs.120)).
+2. In the **Data Source Configuration Wizard**, create a connection to the Northwind database by using a dataset. For more information, see [How to: Connect to Data in a Database](/previous-versions/visualstudio/visual-studio-2013/fxk9yw1t(v=vs.120)).
 
 3. When you are prompted by the **Data Source Configuration Wizard**, save the connection string as `NorthwindConnectionString`.
 

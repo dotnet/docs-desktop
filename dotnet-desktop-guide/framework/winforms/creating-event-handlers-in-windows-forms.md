@@ -31,13 +31,13 @@ An event handler is a procedure in your code that determines what actions are pe
  [Order of Events in Windows Forms](order-of-events-in-windows-forms.md)\
  Describes the order in which events are raised in Windows Forms controls.
 
- [How to: Create Event Handlers Using the Designer](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/zwwsdtbk(v=vs.100))
+ [How to: Create Event Handlers Using the Designer](/previous-versions/visualstudio/visual-studio-2010/zwwsdtbk(v=vs.100))
  Describes how to use the Windows Forms Designer to create event handlers.
 
 ## Related Sections
 
- [Events](https://docs.microsoft.com/dotnet/standard/events/index)\
+ [Events](/dotnet/standard/events/index)\
  Provides links to topics on handling and raising events using the .NET Framework.
 
- [Troubleshooting Inherited Event Handlers in Visual Basic](https://docs.microsoft.com/dotnet/visual-basic/programming-guide/language-features/events/troubleshooting-inherited-event-handlers)\
+ [Troubleshooting Inherited Event Handlers in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/events/troubleshooting-inherited-event-handlers)\
  Lists common issues that occur with event handlers in inherited components.

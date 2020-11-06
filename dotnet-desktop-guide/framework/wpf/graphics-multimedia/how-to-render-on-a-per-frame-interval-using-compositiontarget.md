@@ -10,14 +10,16 @@ helpviewer_keywords:
 ms.assetid: 701246cd-66b7-4d69-ada9-17b3b433d95d
 ---
 # How to: Render on a Per Frame Interval Using CompositionTarget
+
 The [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] animation engine provides many features for creating frame-based animation. However, there are application scenarios in which you need finer-grained control over rendering on a per frame basis. The <xref:System.Windows.Media.CompositionTarget> object provides the ability to create custom animations based on a per-frame callback.  
   
  <xref:System.Windows.Media.CompositionTarget> is a static class which represents the display surface on which your application is being drawn. The <xref:System.Windows.Media.CompositionTarget.Rendering> event is raised each time the application's scene is drawn. The rendering frame rate is the number of times the scene is drawn per second.  
   
 > [!NOTE]
-> For a complete code sample using <xref:System.Windows.Media.CompositionTarget>, see [Using the CompositionTarget Sample](https://go.microsoft.com/fwlink/?LinkID=160045).  
+> For a complete code sample using <xref:System.Windows.Media.CompositionTarget>, see [Using the CompositionTarget Sample](https://github.com/microsoft/WPF-Samples/tree/master/Visual%20Layer/CompositionTarget).  
   
 ## Example  
+
  The <xref:System.Windows.Media.CompositionTarget.Rendering> event fires during the [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] rendering process. The following example shows how you register an <xref:System.EventHandler> delegate to the static <xref:System.Windows.Media.CompositionTarget.Rendering> method on <xref:System.Windows.Media.CompositionTarget>.  
   
  [!code-csharp[CompositionTargetSample#CompositionTarget1](~/samples/snippets/csharp/VS_Snippets_Wpf/CompositionTargetSample/CSharp/Window1.xaml.cs#compositiontarget1)]

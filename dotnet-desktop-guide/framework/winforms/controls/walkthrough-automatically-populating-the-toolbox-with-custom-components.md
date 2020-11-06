@@ -9,7 +9,7 @@ ms.assetid: 2fa1e3e8-6b9f-42b2-97c0-2be57444dba4
 ---
 # Walkthrough: Automatically Populating the Toolbox with Custom Components
 
-If your components are defined by a project in the currently open solution, they will automatically appear in the **Toolbox**, with no action required by you. You can also manually populate the **Toolbox** with your custom components by using the [Choose Toolbox Items Dialog Box (Visual Studio)](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/dyca0t6t(v=vs.100)), but the **Toolbox** takes account of items in your solution's build outputs with all the following characteristics:
+If your components are defined by a project in the currently open solution, they will automatically appear in the **Toolbox**, with no action required by you. You can also manually populate the **Toolbox** with your custom components by using the [Choose Toolbox Items Dialog Box (Visual Studio)](/previous-versions/visualstudio/visual-studio-2010/dyca0t6t(v=vs.100)), but the **Toolbox** takes account of items in your solution's build outputs with all the following characteristics:
 
 - Implements <xref:System.ComponentModel.IComponent>;
 
@@ -38,7 +38,7 @@ When you are finished, you will see that the **Toolbox** is populated with a com
 
 2. Add a new component to the project. Call it `DemoComponent`.
 
-     For more information, see [How to: Add New Project Items](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/w0572c5b(v=vs.100)).
+     For more information, see [How to: Add New Project Items](/previous-versions/visualstudio/visual-studio-2010/w0572c5b(v=vs.100)).
 
 3. Build the project.
 
@@ -67,7 +67,7 @@ The **Toolbox** takes account of the components in each loaded project, and when
 
 1. Unload the project from the solution.
 
-     For more information about unloading projects, see [How to: Unload and Reload Projects](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/tt479x1t(v=vs.100)). If you are prompted to save, choose **Yes**.
+     For more information about unloading projects, see [How to: Unload and Reload Projects](/previous-versions/visualstudio/visual-studio-2010/tt479x1t(v=vs.100)). If you are prompted to save, choose **Yes**.
 
 2. Add a new **Windows Application** project to the solution. Open the form in the **Designer**.
 
@@ -83,7 +83,7 @@ This walkthrough demonstrates that the **Toolbox** takes account of a project's 
 
 ## See also
 
-- [General, Windows Forms Designer, Options Dialog Box](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/5aazxs78(v=vs.100))
-- [How to: Manipulate Toolbox Tabs](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/66kwe227(v=vs.100))
-- [Choose Toolbox Items Dialog Box (Visual Studio)](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/dyca0t6t(v=vs.100))
+- [General, Windows Forms Designer, Options Dialog Box](/previous-versions/visualstudio/visual-studio-2010/5aazxs78(v=vs.100))
+- [How to: Manipulate Toolbox Tabs](/previous-versions/visualstudio/visual-studio-2010/66kwe227(v=vs.100))
+- [Choose Toolbox Items Dialog Box (Visual Studio)](/previous-versions/visualstudio/visual-studio-2010/dyca0t6t(v=vs.100))
 - [Putting Controls on Windows Forms](putting-controls-on-windows-forms.md)

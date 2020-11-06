@@ -39,6 +39,6 @@ This procedure shows you how to copy a Windows Presentation Foundation (WPF) con
 
 - <xref:System.Windows.Forms.Integration.ElementHost>
 - <xref:System.Windows.Forms.Integration.WindowsFormsHost>
-- [Migration and Interoperability](https://docs.microsoft.com/dotnet/framework/wpf/advanced/migration-and-interoperability)
+- [Migration and Interoperability](/dotnet/framework/wpf/advanced/migration-and-interoperability)
 - [Using WPF Controls](using-wpf-controls.md)
 - [Design XAML in Visual Studio](/visualstudio/xaml-tools/designing-xaml-in-visual-studio)

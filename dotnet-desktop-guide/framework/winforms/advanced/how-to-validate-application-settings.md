@@ -55,7 +55,7 @@ The following procedures show how to test for a valid birth date using either th
 
     -or-
 
-  - If you are a Visual Basic developer and you created your application settings using the Project Designer, you can retrieve your settings by using the [My.Settings Object](https://docs.microsoft.com/dotnet/visual-basic/language-reference/objects/my-settings-object).
+  - If you are a Visual Basic developer and you created your application settings using the Project Designer, you can retrieve your settings by using the [My.Settings Object](/dotnet/visual-basic/language-reference/objects/my-settings-object).
 
     -or-
 

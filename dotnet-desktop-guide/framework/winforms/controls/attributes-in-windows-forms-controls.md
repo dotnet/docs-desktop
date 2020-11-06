@@ -9,9 +9,11 @@ helpviewer_keywords:
 ms.assetid: 2c5640e9-6c6c-49d7-a5e4-a768f6be7853
 ---
 # Attributes in Windows Forms Controls
+
 The .NET Framework provides a variety of attributes you can apply to the members of your custom controls and components. Some of these attributes affect the run-time behavior of a class, and others affect the design-time behavior.  
   
 ## Attributes for Control and Component Properties  
+
  The following table shows the attributes you can apply to properties or other members of your custom controls and components. For an example that uses many of these attributes, see [How to: Apply Attributes in Windows Forms Controls](how-to-apply-attributes-in-windows-forms-controls.md).  
   
 |Attribute|Description|  
@@ -32,6 +34,7 @@ The .NET Framework provides a variety of attributes you can apply to the members
 |<xref:System.ComponentModel.TypeConverterAttribute>|Specifies what type to use as a converter for the object this attribute is bound to.|  
   
 ## Attributes for Data Binding Properties  
+
  The following table shows the attributes you can apply to specify how your custom controls and components interact with data binding.  
   
 |Attribute|Description|  
@@ -43,6 +46,7 @@ The .NET Framework provides a variety of attributes you can apply to the members
 |<xref:System.ComponentModel.AttributeProviderAttribute>|Enables attribute redirection.|  
   
 ## Attributes for Classes  
+
  The following table shows the attributes you can apply to specify the behavior of your custom controls and components at design time.  
   
 |Attribute|Description|  
@@ -58,5 +62,5 @@ The .NET Framework provides a variety of attributes you can apply to the members
 
 - <xref:System.Attribute>
 - [How to: Apply Attributes in Windows Forms Controls](how-to-apply-attributes-in-windows-forms-controls.md)
-- [Extending Design-Time Support](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/37899azc(v=vs.120))
+- [Extending Design-Time Support](/previous-versions/visualstudio/visual-studio-2013/37899azc(v=vs.120))
 - [Developing Custom Windows Forms Controls with the .NET Framework](developing-custom-windows-forms-controls.md)

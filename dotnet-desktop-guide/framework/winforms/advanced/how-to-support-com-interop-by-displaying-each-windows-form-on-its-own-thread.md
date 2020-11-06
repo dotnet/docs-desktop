@@ -23,7 +23,7 @@ To make a Windows Form work correctly from a COM client application, you must ru
 
 There is extensive support for this feature in Visual Studio.
 
-Also see [Walkthrough: Supporting COM Interop by Displaying Each Windows Form on Its Own Thread](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms233639(v=vs.100)).
+Also see [Walkthrough: Supporting COM Interop by Displaying Each Windows Form on Its Own Thread](/previous-versions/visualstudio/visual-studio-2010/ms233639(v=vs.100)).
 
 ## Example
 
@@ -39,12 +39,12 @@ This approach requires that each instance of a form runs on its own thread by us
 
 ## Compile the code
 
-Compile the `COMForm`, `Form1`, and `FormManager` types into an assembly called `COMWinform.dll`. Register the assembly for COM interop by using one of the methods described in [Packaging an Assembly for COM](https://docs.microsoft.com/dotnet/framework/interop/packaging-an-assembly-for-co). You can now use the assembly and its corresponding type library (.tlb) file in unmanaged applications. For example, you can use the type library as a reference in a Visual Basic 6.0 executable project.
+Compile the `COMForm`, `Form1`, and `FormManager` types into an assembly called `COMWinform.dll`. Register the assembly for COM interop by using one of the methods described in [Packaging an Assembly for COM](/dotnet/framework/interop/packaging-an-assembly-for-co). You can now use the assembly and its corresponding type library (.tlb) file in unmanaged applications. For example, you can use the type library as a reference in a Visual Basic 6.0 executable project.
 
 ## See also
 
-- [Exposing .NET Framework Components to COM](https://docs.microsoft.com/dotnet/framework/interop/exposing-dotnet-components-to-co)
-- [Packaging an Assembly for COM](https://docs.microsoft.com/dotnet/framework/interop/packaging-an-assembly-for-co)
-- [Registering Assemblies with COM](https://docs.microsoft.com/dotnet/framework/interop/registering-assemblies-with-co)
+- [Exposing .NET Framework Components to COM](/dotnet/framework/interop/exposing-dotnet-components-to-co)
+- [Packaging an Assembly for COM](/dotnet/framework/interop/packaging-an-assembly-for-co)
+- [Registering Assemblies with COM](/dotnet/framework/interop/registering-assemblies-with-co)
 - [How to: Support COM Interop by Displaying a Windows Form with the ShowDialog Method](com-interop-by-displaying-a-windows-form-shadow.md)
 - [Windows Forms and Unmanaged Applications Overview](windows-forms-and-unmanaged-applications-overview.md)
