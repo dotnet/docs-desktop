@@ -16,10 +16,10 @@ landingContent:
   # Card
   - title: Learn about Windows Forms
     linkLists:
-      - linkListType: download
+      - linkListType: whats-new
         links:
-          - text: Visual Studio 2019 version 16.8 Preview
-            url: https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+desktopguide+winforms
+          - text: What's new
+            url: whats-new/index.md
       - linkListType: overview
         links:
           - text: Windows Forms overview
@@ -28,6 +28,10 @@ landingContent:
         links:
           - text: Create a new app
             url: get-started/create-app-visual-studio.md
+      - linkListType: download
+        links:
+          - text: Visual Studio 2019 version 16.8
+            url: https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+desktopguide+winforms
 
   - title: Controls
     linkLists:

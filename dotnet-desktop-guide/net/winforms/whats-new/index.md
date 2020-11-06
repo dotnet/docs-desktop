@@ -53,7 +53,7 @@ The following new controls have been added since .NET Framework:
 
 - <xref:System.Windows.Forms.TextRenderer?displayProperty=fullName>
 
-  Support added for <xref:System.ReadOnlySpan%601> types to enhance performance of rendering text.
+  Support added for <xref:System.ReadOnlySpan%601> to enhance performance of rendering text.
 
 ## See also
 
