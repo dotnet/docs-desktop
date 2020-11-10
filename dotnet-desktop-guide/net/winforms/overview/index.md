@@ -32,6 +32,10 @@ With Windows Forms, you develop graphically rich apps that are easy to deploy, u
 
 To learn how to create a Windows Forms app, see [Tutorial: Create a new WinForms app (Windows Forms .NET)](../get-started/create-app-visual-studio.md).
 
+## Why migrate from .NET Framework
+
+Windows Forms for .NET 5.0 provides new features and enhancements over .NET Framework. For more information, see [What's new (Windows Forms.NET)](../whats-new/index.md). To learn how to migrate an app, see [How to migrate a Windows Forms desktop app to .NET 5](../migration/index.md).
+
 ## Build rich, interactive user interfaces
 
 Windows Forms is a UI technology for .NET, a set of managed libraries that simplify common app tasks such as reading and writing to the file system. When you use a development environment like Visual Studio, you can create Windows Forms smart-client apps that display information, request input from users, and communicate with remote computers over a network.

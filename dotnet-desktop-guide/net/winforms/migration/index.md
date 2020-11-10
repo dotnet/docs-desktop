@@ -221,7 +221,7 @@ After you've finished migrating your app, test it!
 
 ## Next steps
 
-- Learn about [breaking changes from .NET Framework to .NET Core](/dotnet/core/compatibility/fx-core#windows-forms).
+- Learn about [breaking changes in Windows Forms](/dotnet/core/compatibility/winforms).
 - Read more about the [Windows Compatibility Pack][compat-pack].
 
 [compat-pack]: /dotnet/core/porting/windows-compat-pack
