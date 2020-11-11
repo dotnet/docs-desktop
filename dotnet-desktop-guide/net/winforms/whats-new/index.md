@@ -14,6 +14,7 @@ There are a few breaking changes you should be aware of when migrating from .NET
 ## Enhanced features
 
 - Microsoft UI Automation patterns work better with accessibility tools like Narrator and Jaws.
+- Improved performance.
 - The VB.NET project template defaults to DPI SystemAware settings for high DPI resolutions such as 4k monitors.
 - The default font matches the current Windows design recommendations.
 
