@@ -5,7 +5,7 @@ ms.date: 11/05/2020
 ms.topic: conceptual
 ---
 
-# What's new (Windows Forms.NET)
+# What's new (Windows Forms .NET)
 
 Windows Forms for .NET 5.0 adds the following features and enhancements over .NET Framework.
 
@@ -14,8 +14,7 @@ There are a few breaking changes you should be aware of when migrating from .NET
 ## Enhanced features
 
 - Microsoft UI Automation patterns work better with accessibility tools like Narrator and Jaws.
-- Improved performance and reliability.
-- Better support for high DPI resolutions such as 4k monitors.
+- The VB.NET project template defaults to DPI SystemAware settings for high DPI resolutions such as 4k monitors.
 - The default font matches the current Windows design recommendations.
 
   > [!CAUTION]
@@ -37,9 +36,9 @@ The following controls have been added since Windows Forms was ported to .NET Fr
 
 - <xref:System.Windows.Forms.ListView?displayProperty=fullName>
 
-  - Supports collapsible groups.
+  - Supports collapsible groups
   - Footers
-  - Group subtitle, task, title images, and collapse/expand functionality.
+  - Group subtitle, task, and title images
 
 - <xref:System.Windows.Forms.FolderBrowserDialog?displayProperty=fullName>
 
