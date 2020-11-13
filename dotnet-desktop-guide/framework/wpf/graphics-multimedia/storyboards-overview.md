@@ -65,7 +65,9 @@ The following table shows the different places where each  <xref:System.Windows.
 |--------------------------------|-------------------|-----------|----------------------|-------------------|-------------|
 |<xref:System.Windows.Media.Animation.BeginStoryboard> and an <xref:System.Windows.EventTrigger>|Yes|Yes|Yes|Yes|[Animate a Property by Using a Storyboard](how-to-animate-a-property-by-using-a-storyboard.md)|
 |<xref:System.Windows.Media.Animation.BeginStoryboard> and a property <xref:System.Windows.Trigger>|No|Yes|Yes|Yes|[Trigger an Animation When a Property Value Changes](how-to-trigger-an-animation-when-a-property-value-changes.md)|
+|<xref:System.Windows.Media.Animation.BeginStoryboard> and a property <xref:System.Windows.MultiTrigger>|No|Yes|Yes|Yes|[MultiTrigger class example](/dotnet/api/system.windows.multitrigger#examples)|
 |<xref:System.Windows.Media.Animation.BeginStoryboard> and a <xref:System.Windows.DataTrigger>|No|Yes|Yes|Yes|[How to: Trigger an Animation When Data Changes](/previous-versions/dotnet/netframework-3.5/aa970679(v=vs.90))|
+|<xref:System.Windows.Media.Animation.BeginStoryboard> and a <xref:System.Windows.MultiDataTrigger>|No|Yes|Yes|Yes|[MultiDataTrigger class example](/dotnet/api/system.windows.multidatatrigger#examples)|
 |<xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method|Yes|No|No|No|[Animate a Property by Using a Storyboard](how-to-animate-a-property-by-using-a-storyboard.md)|
 
 The following example uses a <xref:System.Windows.Media.Animation.Storyboard> to animate the <xref:System.Windows.FrameworkElement.Width%2A> of a <xref:System.Windows.Shapes.Rectangle> element and the <xref:System.Windows.Media.SolidColorBrush.Color%2A> of a <xref:System.Windows.Media.SolidColorBrush> used to paint that <xref:System.Windows.Shapes.Rectangle>.
@@ -80,7 +82,10 @@ The following sections describe the <xref:System.Windows.Media.Animation.Storybo
 
 ## Targeting Framework Elements, Framework Content Elements, and Freezables
 
-The previous section mentioned that, for an animation to find its target, it must know the target's name and the property to animate. Specifying the property to animate is straight forward: simply set <xref:System.Windows.Media.Animation.Storyboard.TargetProperty?displayProperty=nameWithType> with the name of the property to animate.  You specify the name of the object whose property you want to animate by setting the <xref:System.Windows.Media.Animation.Storyboard.TargetName%2A?displayProperty=nameWithType> property on the animation.
+The previous section mentioned that, for an animation to find its target, it must know the target's name and the property to animate. Specifying the property to animate is straight forward: simply set `TargetProperty` with the name of the property to animate.  You specify the name of the object whose property you want to animate by setting the <xref:System.Windows.Media.Animation.Storyboard.TargetName%2A?displayProperty=nameWithType> property on the animation.
+
+> [!CAUTION]
+> While you can use the `Target` property to bind directly to an object as an alternative to `TargetName`, it isn't serializable. There is no guaranteed that the `Target` object can be correctly referenced in XAML.
 
 For the <xref:System.Windows.Setter.TargetName%2A> property to work, the targeted object must have a name. Assigning a name to a <xref:System.Windows.FrameworkElement> or a <xref:System.Windows.FrameworkContentElement> in [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] is different than assigning a name to a <xref:System.Windows.Freezable> object.
 
