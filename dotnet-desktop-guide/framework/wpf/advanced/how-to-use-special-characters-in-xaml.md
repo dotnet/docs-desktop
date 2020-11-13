@@ -17,11 +17,11 @@ The following table shows the syntax for encoding this set of special characters
 
 | Character | Syntax   | Description          |
 |-----------|----------|----------------------|
-| <         | `&lt;`   | Less than symbol.    |
-| >         | `&gt;`   | Greater than sign.   |
-| &         | `&amp;`  | Ampersand symbol.    |
-| "         | `&quot;` | Double quote symbol. |
-| '         | `&apos;` | Single quote symbol. |
+| `<`       | `&lt;`   | Less than symbol.    |
+| `>`       | `&gt;`   | Greater than sign.   |
+| `&`       | `&amp;`  | Ampersand symbol.    |
+| `"`       | `&quot;` | Double quote symbol. |
+| `'`       | `&apos;` | Single quote symbol. |
 
 > [!NOTE]
 > If you create a markup file using a text editor, such as Windows Notepad, you must save the file in the Unicode UTF-8 file format in order to preserve any encoded special characters.

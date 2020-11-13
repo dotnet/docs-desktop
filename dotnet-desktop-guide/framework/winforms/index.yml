@@ -1,11 +1,11 @@
 ### YamlMime:Landing
 
 title: .NET Desktop Guide for Windows Forms
-summary: Learn about using Windows Forms (WinForms), a graphical user interface for Windows and .NET Framework.
+summary: Learn about Windows Forms (WinForms), a graphical user interface for Windows and .NET Framework.
 
 metadata:
   title: Windows Forms for .NET documentation
-  description: Learn about using Windows Forms (WinForms), a graphical user interface for Windows and .NET Framework.
+  description: Learn about Windows Forms (WinForms), a graphical user interface for Windows and .NET Framework.
   ms.topic: landing-page
   ms.date: 08/30/2020
 
