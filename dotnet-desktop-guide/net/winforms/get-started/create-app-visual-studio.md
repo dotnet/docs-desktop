@@ -88,22 +88,26 @@ With the _Form1_ form designer open, use the **Toolbox** pane to add the followi
 
 You can position and size the controls according to the following settings. Either visually move them to match the screenshot that follows, or click on each control and configure the settings in the **Properties** pane. You can also click on the form title area to select the form:
 
-| Object  | Setting  | Value      |
-|---------|----------|------------|
-| Form    | Text     | `Names`    |
-|         | Size     | `268, 180` |
-| Label   | Location | `12, 9`    |
-|         | Text     | `Names`    |
-| Listbox | Name     | `lstNames` |
-|         | Location | `12, 27`   |
-|         | Size     | `120, 94`  |
-| Textbox | Name     | `txtName`  |
-|         | Location | `138, 26`  |
-|         | Size     | `100, 23`  |
-| Button  | Name     | `btnAdd`   |
-|         | Location | `138, 55`  |
-|         | Size     | `100, 23`  |
-|         | Text     | `Add Name` |
+| Object      | Setting  | Value      |
+|-------------|----------|------------|
+| **Form**    | Text     | `Names`    |
+|             | Size     | `268, 180` |
+|             |          |            |
+| **Label**   | Location | `12, 9`    |
+|             | Text     | `Names`    |
+|             |          |            |
+| **Listbox** | Name     | `lstNames` |
+|             | Location | `12, 27`   |
+|             | Size     | `120, 94`  |
+|             |          |            |
+| **Textbox** | Name     | `txtName`  |
+|             | Location | `138, 26`  |
+|             | Size     | `100, 23`  |
+|             |          |            |
+| **Button**  | Name     | `btnAdd`   |
+|             | Location | `138, 55`  |
+|             | Size     | `100, 23`  |
+|             | Text     | `Add Name` |
 
 You should have a form in the designer that looks similar to the following:
 

@@ -1,5 +1,6 @@
 ---
 title: "Defining Default Values with the ShouldSerialize and Reset Methods"
+description: "Learn how to use the ShouldSerialize and Reset property methods to control the Windows Forms designer behavior."
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"
@@ -10,7 +11,7 @@ helpviewer_keywords:
 ms.assetid: 7b6c5e00-3771-46b4-9142-5a80d5864a5e
 ---
 # Defining Default Values with the ShouldSerialize and Reset Methods
-`ShouldSerialize` and `Reset` are optional methods that you can provide for a property, if the property does not a have simple default value. If the property has a simple default value, you should apply the <xref:System.ComponentModel.DefaultValueAttribute> and supply the default value to the attribute class constructor instead. Either of these mechanisms enables the following features in the designer:
+`ShouldSerialize` and `Reset` are optional methods that you can provide for a property, if the property does not have a simple default value. If the property has a simple default value, you should apply the <xref:System.ComponentModel.DefaultValueAttribute> and supply the default value to the attribute class constructor instead. Either of these mechanisms enables the following features in the designer:
 
 - The property provides visual indication in the property browser if it has been modified from its default value.
 
@@ -55,6 +56,9 @@ public bool ShouldSerializeMyFont() {
    return thefont != null;
 }
 ```
+
+> [!TIP]
+> If you want to permanently prevent a property from being serialized by the designer, add the [DesignerSerializationVisibility](xref:System.ComponentModel.DesignerSerializationVisibilityAttribute) attribute with the value of `Hidden`.
 
  A complete code example follows.
 
@@ -141,3 +145,4 @@ public class MyControl : Control {
 - [Properties in Windows Forms Controls](properties-in-windows-forms-controls.md)
 - [Defining a Property](defining-a-property-in-windows-forms-controls.md)
 - [Property-Changed Events](property-changed-events.md)
+- <xref:System.ComponentModel.DesignerSerializationVisibilityAttribute?displayProperty=fullName>
