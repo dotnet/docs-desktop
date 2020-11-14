@@ -49,10 +49,10 @@ namespace SDKSample
             myStackPanel.Children.Add(myTextBlock);
             myStackPanel.Children.Add(myRectangle);
 
-            // Add the StackPanel as the lone Child of the Border
+            // Add the StackPanel as the lone child of the ScrollViewer
             myScrollViewer.Content = myStackPanel;
 
-            // Add the Border as the Content of the Parent Window Object
+            // Add the ScrollViewer as the Content of the parent Window object
             mainWindow.Content = myScrollViewer;
             mainWindow.Show ();
 

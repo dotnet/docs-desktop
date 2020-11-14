@@ -220,7 +220,7 @@
                      Value="True">
               <Setter TargetName="ContentRow"
                       Property="Height"
-                      Value="{Binding DesiredHeight, ElementName=Content}" />
+                      Value="{Binding Height, ElementName=Content}" />
             </Trigger>
           </ControlTemplate.Triggers>
         </ControlTemplate>
