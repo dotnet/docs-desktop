@@ -58,7 +58,7 @@ If your project is referencing NuGet packages, you probably have a **packages.co
 To migrate the **packages.config** file, do the following:
 
 01. In **Solution explorer**, find the project you're migrating.
-02. Right-click on **packages.config** > **Migrate packages.config to ProjectReference**.
+02. Right-click on **packages.config** > **Migrate packages.config to PackageReference**.
 03. Select all of the top-level packages.
 
 A build report is generated to let you know of any issues migrating the NuGet packages.
