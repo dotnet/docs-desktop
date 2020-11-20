@@ -154,7 +154,10 @@ This XML gives you the basic structure of the project. However, it doesn't conta
 
 ### Resources and settings
 
-Windows Forms projects for .NET Framework typically include other files such as *Properties/Settings.settings* and *Properties/Resources.resx* for C#. Visual Basic uses *My Project* folder instead of the *Properties* folder. These files, and any *resx* file created for your app besides form *resx* files, would need to be migrated.
+Windows Forms projects for .NET Framework typically include other files such as *Properties/Settings.settings* and *Properties/Resources.resx* for C#. These files, and any *resx* file created for your app besides form *resx* files, would need to be migrated.
+
+> [!IMPORTANT]
+> Visual Basic uses the *My Project* folder instead of the *Properties* folder.
 
 Copy those entries from the old project file into an `<ItemGroup>` element in the new project. After you copy the entries, change any `<Compile Include="value">` or `<EmbeddedResource Include="value">` elements to instead use `Update` instead of `Include`.
 
