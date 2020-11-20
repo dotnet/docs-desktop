@@ -200,7 +200,7 @@ Copy those entries from the old project file into an `<ItemGroup>` element in th
 
 Visual Basic language projects require extra configuration.
 
-01. Import the configuration file *My Project\Application.myapp* setting. Notice that the `<None>` and `<Compile>` elements use the `Update` attribute instead of `Include` as the original project file used.
+01. Import the configuration file *My Project\Application.myapp* setting. Notice that the `<None>` and `<Compile>` elements use the `Update` attribute instead of the `Include` attribute.
 
     ```xml
     <ItemGroup>
@@ -226,11 +226,11 @@ Visual Basic language projects require extra configuration.
     </PropertyGroup>
     ```
 
-    This setting imports the `My` namespace members Visual Basic programmers are familiar with among other things.
+    This setting imports the `My` namespace members Visual Basic programmers are familiar with.
 
 01. Import the namespaces defined by your project.
 
-    Visual Basic projects can automatically import namespaces into every code file. Copy the `<ItemGroup>` elements from the old project file that contain `<Import>` elements into the new file after the `</PropertyGroup>` closing tag.
+    Visual Basic projects can automatically import namespaces into every code file. Copy the `<ItemGroup>` elements from the old project file that contain `<Import>` into the new file after the `</PropertyGroup>` closing tag.
 
     ```xml
     <ItemGroup>
