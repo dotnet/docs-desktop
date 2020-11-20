@@ -67,7 +67,9 @@ A build report is generated to let you know of any issues migrating the NuGet pa
 
 The next step in migrating your app is converting the project file. As previously stated, .NET 5 uses SDK-style project files and won't load the Visual Studio project files that .NET Framework uses. However, there's the possibility that you're already using SDK-style projects. You can easily spot the difference in Visual Studio. Right-click on the project file in **Solution explorer** and look for the **Edit Project File** menu option. If this menu item is missing, you're using the old Visual Studio project format and need to upgrade.
 
-To upgrade, do the following:
+Convert each project in your solution. If you're using the sample app previously referenced, both the **MatchingGame** and **MatchingGame.Logic** projects would be converted.
+
+To convert a project, do the following:
 
 01. In **Solution explorer**, find the project you're migrating.
 01. Right-click on the project and select **Unload Project**.
@@ -152,7 +154,7 @@ This XML gives you the basic structure of the project. However, it doesn't conta
 
 ### Resources and settings
 
-Windows Forms projects for .NET Framework typically include other files such as *Properties/Settings.settings* and *Properties/Resources.resx*. These files, and any *resx* file created for your app besides form *resx* files, would need to be migrated.
+Windows Forms projects for .NET Framework typically include other files such as *Properties/Settings.settings* and *Properties/Resources.resx* for C# and *My Project/Settings.settings* and *My Project/Resources.resx* in Visual Basic. These files, and any *resx* file created for your app besides form *resx* files, would need to be migrated.
 
 Copy those entries from the old project file into an `<ItemGroup>` element in the new project. After you copy the entries, change any `<Compile Include="value">` or `<EmbeddedResource Include="value">` elements to instead use `Update` instead of `Include`.
 
@@ -172,6 +174,9 @@ Copy those entries from the old project file into an `<ItemGroup>` element in th
   </ItemGroup>
   ```
 
+  > [!IMPORTANT]
+  > **Visual Basic** projects typically use the folder *My Project* while C# projects typically use the folder *Properties* for the default project settings file.
+  
 - Import the configuration for any *resx* file, such as the *properties/Resources.resx* file. Note that `Include` was changed to `Update` on both the `<Compile>` and `<EmbeddedResource>` elements, and `<SubType>` was removed from `<EmbeddedResource>`:
 
   ```xml
@@ -188,11 +193,67 @@ Copy those entries from the old project file into an `<ItemGroup>` element in th
   </ItemGroup>
   ```
 
-Convert each project in your solution. If you're using the sample app previously referenced, the **MatchingGame.Logic** project would be converted.
+  > [!IMPORTANT]
+  > **Visual Basic** projects typically use the folder *My Project* while C# projects typically use the folder *Properties* for the default project resource file.
+
+### Visual Basic
+
+Visual Basic language projects require extra configuration.
+
+01. Import the configuration file *My Project\Application.myapp* setting. Note that both elements use the `Update` attribute instead of `Include` as the original project file used.
+
+    ```xml
+    <ItemGroup>
+      <None Update="My Project\Application.myapp">
+        <Generator>MyApplicationCodeGenerator</Generator>
+        <LastGenOutput>Application.Designer.vb</LastGenOutput>
+      </None>
+      <Compile Update="My Project\Application.Designer.vb">
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Application.myapp</DependentUpon>
+        <DesignTime>True</DesignTime>
+      </Compile>
+    </ItemGroup>
+    ```
+
+01. Add the `<MyType>WindowsForms</MyType>` setting to the `<PropertyGroup>` element:
+
+    ```xml
+    <PropertyGroup>
+      (contains settings previously described)
+
+      <MyType>WindowsForms</MyType>
+    </PropertyGroup>
+    ```
+
+    This setting imports the `My` namespace members Visual Basic programmers are familiar with.
+
+01. From the original project, copy the `<Option*` and `<StartupObject>` settings to the `<PropertyGroup>` element:
+
+    ```xml
+    <PropertyGroup>
+      (contains settings previously described)
+
+      <OptionExplicit>On</OptionExplicit>
+      <OptionCompare>Binary</OptionCompare>
+      <OptionStrict>Off</OptionStrict>
+      <OptionInfer>On</OptionInfer>
+      <StartupObject>MatchingGame.My.MyApplication</StartupObject>
+    </PropertyGroup>
+    ```
+
+### Reload the project
+
+After you convert a project to the new SDK-style format, reload the project in Visual Studio:
+
+01. In **Solution explorer**, find the project you converted.
+01. Right-click on the project and select **Reload Project**.
+
+    If the project fails to load, you may have introduced a mistake in the XML of the project. Open the project file for editing and try to identify and fix the mistake. If you can't find a mistake, try starting over.
 
 ## Edit App.config
 
-If your app has an *App.config* file, remove the `<supportedRuntime>` element.
+If your app has an *App.config* file, remove the `<supportedRuntime>` element:
 
 ```xml
 <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5" />
@@ -202,16 +263,18 @@ There are some things you should consider with the *App.config* file. The *App.c
 
 ## Add the compatibility package
 
-If compilation fails and you receive errors similar to the following:
+If your project file is loading correctly, but compilation fails for your project and you receive errors similar to the following:
 
 - **The type or namespace \<some name> could not be found**
 - **The name \<some name> does not exist in the current context**
 
-You may need to add the [**Microsoft.Windows.Compatibility**](https://www.nuget.org/packages/Microsoft.Windows.Compatibility/) package to your app. This package adds ~21,000 .NET APIs from .NET Framework, such as the `System.Configuration.ConfigurationManager` class and APIs for interacting with the Windows Registry.
+You may need to add the [`Microsoft.Windows.Compatibility`](https://www.nuget.org/packages/Microsoft.Windows.Compatibility/) package to your app. This package adds ~21,000 .NET APIs from .NET Framework, such as the `System.Configuration.ConfigurationManager` class and APIs for interacting with the Windows Registry. Add the `Microsoft.Windows.Compatibility`.
+
+Edit your project file and add the following `<ItemGroup>` element:
 
 ```xml
 <ItemGroup>
-  <PackageReference Include="Microsoft.Windows.Compatibility" Version="5.0.0-rc.2.20475.5" />
+  <PackageReference Include="Microsoft.Windows.Compatibility" Version="5.0.0" />
 </ItemGroup>
 ```
 
