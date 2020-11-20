@@ -49,13 +49,13 @@ When migrating a .NET Framework Windows Forms application, there are a few thing
 
 ## Back up your projects
 
-The first step to migrating a project is to back up your project! If something goes wrong, you can restore your code to its original state by restoring your backup. Don't rely on tools such as the .NET Portability Analyzer to back up your project, even if they seem to. It's better to have a copy of the original project safely stored in the cloud or elsewhere on your computer.
+The first step to migrating a project is to back up your project! If something goes wrong, you can restore your code to its original state by restoring your backup. Don't rely on tools such as the .NET Portability Analyzer to back up your project, even if they seem to. It's best to personally create a copy of the original project.
 
 ## NuGet packages
 
 If your project is referencing NuGet packages, you probably have a **packages.config** file in your project folder. With SDK-style projects, NuGet package references are configured in the project file. Visual Studio project files can optionally define NuGet packages in the project file too. .NET 5 doesn't use **packages.config** for NuGet packages. NuGet package references must be migrated into the project file before migration.
 
-To migrate the **packages.config** file, do the following:
+To migrate the **packages.config** file, do the following steps:
 
 01. In **Solution explorer**, find the project you're migrating.
 02. Right-click on **packages.config** > **Migrate packages.config to PackageReference**.
@@ -69,13 +69,13 @@ The next step in migrating your app is converting the project file. As previousl
 
 Convert each project in your solution. If you're using the sample app previously referenced, both the **MatchingGame** and **MatchingGame.Logic** projects would be converted.
 
-To convert a project, do the following:
+To convert a project, do the following steps:
 
 01. In **Solution explorer**, find the project you're migrating.
 01. Right-click on the project and select **Unload Project**.
 01. Right-click on the project and select **Edit Project File**.
 01. Copy-and-paste the project XML into a text editor. You'll want a copy so that it's easy to move content into the new project.
-01. Erase the content of the file and paste in the following content:
+01. Erase the content of the file and paste the following XML:
 
     ```xml
     <Project Sdk="Microsoft.NET.Sdk">
@@ -93,14 +93,14 @@ To convert a project, do the following:
     > [!IMPORTANT]
     > Libraries don't need to define an `<OutputType>` setting. Remove that entry if you're upgrading a library project.
 
-This XML gives you the basic structure of the project. However, it doesn't contain any of the settings from the old project file. Using the old project information you previously copied to a text editor, do the following:
+This XML gives you the basic structure of the project. However, it doesn't contain any of the settings from the old project file. Using the old project information you previously copied to a text editor, do the following steps:
 
 01. Copy the following elements from the old project file into the `<PropertyGroup>` element in the new project file:
 
     - `<RootNamespace>`
     - `<AssemblyName>`
 
-    Your project file should look similar to the following:
+    Your project file should look similar to the following XML:
 
     ```xml
     <Project Sdk="Microsoft.NET.Sdk">
@@ -120,7 +120,7 @@ This XML gives you the basic structure of the project. However, it doesn't conta
 
 01. Copy the `<ItemGroup>` elements from the old project file that contain `<ProjectReference>` or `<PackageReference>` into the new file after the `</PropertyGroup>` closing tag.
 
-    Your project file should look similar to the following:
+    Your project file should look similar to the following XML:
 
     ```xml
     <Project Sdk="Microsoft.NET.Sdk">
@@ -144,7 +144,7 @@ This XML gives you the basic structure of the project. However, it doesn't conta
     </Project>
     ```
 
-    The `<ProjectReference>` elements don't need the `<Project>` and `<Name>` children, so you can remove those:
+    The `<ProjectReference>` elements don't need the `<Project>` and `<Name>` children, so you can remove those settings:
 
     ```xml
     <ItemGroup>
@@ -154,11 +154,11 @@ This XML gives you the basic structure of the project. However, it doesn't conta
 
 ### Resources and settings
 
-Windows Forms projects for .NET Framework typically include other files such as *Properties/Settings.settings* and *Properties/Resources.resx* for C# and *My Project/Settings.settings* and *My Project/Resources.resx* in Visual Basic. These files, and any *resx* file created for your app besides form *resx* files, would need to be migrated.
+Windows Forms projects for .NET Framework typically include other files such as *Properties/Settings.settings* and *Properties/Resources.resx* for C#. Visual Basic uses *My Project* folder instead of the *Properties* folder. These files, and any *resx* file created for your app besides form *resx* files, would need to be migrated.
 
 Copy those entries from the old project file into an `<ItemGroup>` element in the new project. After you copy the entries, change any `<Compile Include="value">` or `<EmbeddedResource Include="value">` elements to instead use `Update` instead of `Include`.
 
-- Import the configuration for the *Settings.settings* file. Note that `Include` was changed to `Update` on the `<Compile>` element:
+- Import the configuration for the *Settings.settings* file. Notice that the `Include` was changed to `Update` on the `<Compile>` element:
 
   ```xml
   <ItemGroup>
@@ -177,7 +177,7 @@ Copy those entries from the old project file into an `<ItemGroup>` element in th
   > [!IMPORTANT]
   > **Visual Basic** projects typically use the folder *My Project* while C# projects typically use the folder *Properties* for the default project settings file.
   
-- Import the configuration for any *resx* file, such as the *properties/Resources.resx* file. Note that `Include` was changed to `Update` on both the `<Compile>` and `<EmbeddedResource>` elements, and `<SubType>` was removed from `<EmbeddedResource>`:
+- Import the configuration for any *resx* file, such as the *properties/Resources.resx* file. Notice that the `Include` was changed to `Update` on both the `<Compile>` and `<EmbeddedResource>` elements, and `<SubType>` was removed from `<EmbeddedResource>`:
 
   ```xml
   <ItemGroup>
@@ -200,7 +200,7 @@ Copy those entries from the old project file into an `<ItemGroup>` element in th
 
 Visual Basic language projects require extra configuration.
 
-01. Import the configuration file *My Project\Application.myapp* setting. Note that both elements use the `Update` attribute instead of `Include` as the original project file used.
+01. Import the configuration file *My Project\Application.myapp* setting. Notice that the `<None>` and `<Compile>` elements use the `Update` attribute instead of `Include` as the original project file used.
 
     ```xml
     <ItemGroup>
@@ -226,7 +226,37 @@ Visual Basic language projects require extra configuration.
     </PropertyGroup>
     ```
 
-    This setting imports the `My` namespace members Visual Basic programmers are familiar with.
+    This setting imports the `My` namespace members Visual Basic programmers are familiar with among other things.
+
+01. Import the namespaces defined by your project.
+
+    Visual Basic projects can automatically import namespaces into every code file. Copy the `<ItemGroup>` elements from the old project file that contain `<Import>` elements into the new file after the `</PropertyGroup>` closing tag.
+
+    ```xml
+    <ItemGroup>
+      <Import Include="Microsoft.VisualBasic" />
+      <Import Include="System" />
+      <Import Include="System.Collections" />
+      <Import Include="System.Collections.Generic" />
+      <Import Include="System.Data" />
+      <Import Include="System.Drawing" />
+      <Import Include="System.Diagnostics" />
+      <Import Include="System.Windows.Forms" />
+      <Import Include="System.Linq" />
+      <Import Include="System.Xml.Linq" />
+      <Import Include="System.Threading.Tasks" />
+    </ItemGroup>
+    ```
+
+    If you can't find any `<Import>` statements, or your project fails to compile, make sure you at least have the following `<Import>` statements defined in your project:
+
+    ```xml
+    <ItemGroup>
+      <Import Include="System.Data" />
+      <Import Include="System.Drawing" />
+      <Import Include="System.Windows.Forms" />
+    </ItemGroup>
+    ```
 
 01. From the original project, copy the `<Option*` and `<StartupObject>` settings to the `<PropertyGroup>` element:
 
