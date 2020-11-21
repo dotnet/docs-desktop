@@ -66,8 +66,6 @@ In addition to creating events using the Windows Forms Designer in Visual Studio
     button1->Click += gcnew System::EventHandler(this, &Form1::button1_Click);
     ```
 
-     The <xref:System.ComponentModel.EventHandlerList.AddHandler%2A> method demonstrated in the Visual Basic code above establishes a click event handler for the button.
-
 ## See also
 
 - [Creating Event Handlers in Windows Forms](creating-event-handlers-in-windows-forms.md)
