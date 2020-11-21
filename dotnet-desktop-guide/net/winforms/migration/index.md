@@ -258,7 +258,7 @@ Visual Basic language projects require extra configuration.
     </ItemGroup>
     ```
 
-01. From the original project, copy the `<Option*` and `<StartupObject>` settings to the `<PropertyGroup>` element:
+01. From the original project, copy the `<Option*>` and `<StartupObject>` settings to the `<PropertyGroup>` element:
 
     ```xml
     <PropertyGroup>
@@ -276,7 +276,7 @@ Visual Basic language projects require extra configuration.
 
 After you convert a project to the new SDK-style format, reload the project in Visual Studio:
 
-01. In **Solution explorer**, find the project you converted.
+01. In **Solution Explorer**, find the project you converted.
 01. Right-click on the project and select **Reload Project**.
 
     If the project fails to load, you may have introduced a mistake in the XML of the project. Open the project file for editing and try to identify and fix the mistake. If you can't find a mistake, try starting over.
@@ -298,7 +298,7 @@ If your project file is loading correctly, but compilation fails for your projec
 - **The type or namespace \<some name> could not be found**
 - **The name \<some name> does not exist in the current context**
 
-You may need to add the [`Microsoft.Windows.Compatibility`](https://www.nuget.org/packages/Microsoft.Windows.Compatibility/) package to your app. This package adds ~21,000 .NET APIs from .NET Framework, such as the `System.Configuration.ConfigurationManager` class and APIs for interacting with the Windows Registry. Add the `Microsoft.Windows.Compatibility`.
+You may need to add the [`Microsoft.Windows.Compatibility`](https://www.nuget.org/packages/Microsoft.Windows.Compatibility/) package to your app. This package adds ~21,000 .NET APIs from .NET Framework, such as the `System.Configuration.ConfigurationManager` class and APIs for interacting with the Windows Registry. Add the `Microsoft.Windows.Compatibility` package.
 
 Edit your project file and add the following `<ItemGroup>` element:
 
