@@ -1,11 +1,11 @@
 ### YamlMime:Landing
 
 title: .NET Desktop Guide for Windows Forms
-summary: Learn about using Windows Forms on Windows with either .NET Framework, .NET 5 and above, or .NET Core 3.1.
+summary: Learn about Windows Forms (WinForms), a graphical user interface for Windows and .NET Framework.
 
 metadata:
   title: Windows Forms for .NET documentation
-  description: Learn about using Windows Forms (WinForms), a graphical user interface for Windows and .NET.
+  description: Learn about Windows Forms (WinForms), a graphical user interface for Windows and .NET Framework.
   ms.topic: landing-page
   ms.date: 08/30/2020
 
@@ -27,7 +27,7 @@ landingContent:
             url: /visualstudio/designers/walkthrough-windows-forms-designer
           - text: Create a WinForms app from the command-line
             url: how-to-create-a-windows-forms-application-from-the-command-line.md
-            
+
   - title: Controls
     linkLists:
       - linkListType: overview
@@ -59,4 +59,28 @@ landingContent:
         links:
           - text: Order in which events are raised
             url: order-of-events-in-windows-forms.md
-            
+
+  - title: Input
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: About keyboard input
+            url: how-keyboard-input-works.md
+          - text: About mouse input
+            url: how-mouse-input-works-in-windows-forms.md
+      - linkListType: concept
+        links:
+          - text: Keyboard events
+            url: using-keyboard-events.md
+          - text: Mouse events
+            url: mouse-events-in-windows-forms.md
+          - text: Mouse pointers
+            url: mouse-pointers-in-windows-forms.md
+      - linkListType: how-to-guide
+        links:
+          - text: Modify keyboard input
+            url: how-to-modify-keyboard-input-to-a-standard-control.md
+          - text: Detect modifier keyboard keys
+            url: how-to-determine-which-modifier-key-was-pressed.md
+          - text: Distinguish between single/double clicks
+            url: how-to-distinguish-between-clicks-and-double-clicks.md
