@@ -4,6 +4,7 @@ description: Describes the differences between the .NET Framework implementation
 author: adegeo
 ms.date: 09/21/2019
 ms.author: adegeo
+ms.topic: conceptual
 ---
 
 # Differences in WPF

@@ -4,6 +4,7 @@ description: Learn about the different data sources you can add to your project 
 author: adegeo
 ms.date: 09/19/2019
 ms.author: adegeo
+ms.topic: overview
 dev_langs:
   - "csharp"
   - "vb"
