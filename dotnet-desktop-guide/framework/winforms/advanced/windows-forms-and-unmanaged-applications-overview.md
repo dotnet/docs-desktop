@@ -1,6 +1,7 @@
 ---
 title: Unmanaged apps overview
 ms.date: "03/30/2017"
+ms.topic: overview
 helpviewer_keywords: 
   - "COM [Windows Forms]"
   - "Windows Forms, unmanaged"

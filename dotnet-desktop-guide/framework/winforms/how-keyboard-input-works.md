@@ -1,6 +1,7 @@
 ---
 title: "How Keyboard Input Works"
 ms.date: "03/30/2017"
+ms.topic: overview
 helpviewer_keywords: 
   - "keyboard input [Windows Forms], about keyboard input"
   - "keyboards [Windows Forms], keyboard input"
