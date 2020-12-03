@@ -2,6 +2,7 @@
 title: "Custom Dependency Properties"
 description: Learn about steps to implement a property in Windows Presentation Foundation, and options to improve performance, usability, or versatility of the property.
 ms.date: "03/30/2017"
+ms.topic: overview
 dev_langs:
   - "csharp"
   - "vb"

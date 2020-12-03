@@ -2,6 +2,7 @@
 title: "Drawing Objects Overview"
 description: Get acquainted with objects and how to use them to efficiently draw shapes, bitmaps, text, and media in Windows Presentation Foundation (WPF).
 ms.date: "03/30/2017"
+ms.topic: overview
 helpviewer_keywords: 
   - "ImageDrawing objects [WPF]"
   - "GlyphRunDrawing objects [WPF]"

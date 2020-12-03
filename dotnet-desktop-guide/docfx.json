@@ -162,7 +162,8 @@
       "ms.topic": {
         "framework/wpf/**/**.md": "conceptual",
         "xaml-services/**/*.md": "reference",
-        "**/*how-to*.md": "how-to"
+        "**/*how-to*.md": "how-to",
+        "**/*overview*.md": "overview"
       }
     },
     "template": [],
