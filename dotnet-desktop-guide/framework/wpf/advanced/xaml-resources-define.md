@@ -1,9 +1,9 @@
 ---
 title: Define XAML resources
-description: Learn about XAML resources in WPF for .NET Core. Understand the types of XAML resources and learn how to define XAML resources.
+description: Learn about XAML resources in WPF for .NET Framework. Understand the types of XAML resources and learn how to define XAML resources.
 author: adegeo
 ms.author: adegeo
-ms.date: 08/21/2019
+ms.date: 12/03/2020
 ms.topic: overview
 ---
 
@@ -13,8 +13,6 @@ A resource is an object that can be reused in different places in your app. Exam
 
 > [!NOTE]
 > XAML resources described in this article are different from *app resources* which are generally files added to an app, such as content, data, or embedded files.
-
-[!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
 
 ## Using resources in XAML
 
@@ -34,9 +32,9 @@ In the preceding example, when the XAML loader processes the value `{StaticResou
 
 ## Static and dynamic resources
 
-A resource can be referenced as either static or dynamic. References are created by using either the [StaticResource Markup Extension](../../../framework/wpf/advanced/staticresource-markup-extension.md) or the [DynamicResource Markup Extension](../../../framework/wpf/advanced/dynamicresource-markup-extension.md). A markup extension is a XAML feature that lets you specify an object reference by having the markup extension process the attribute string and return the object to a XAML loader. For more information about markup extension behavior, see [Markup Extensions and WPF XAML](../../../framework/wpf/advanced/markup-extensions-and-wpf-xaml.md).
+A resource can be referenced as either static or dynamic. References are created by using either the [StaticResource Markup Extension](staticresource-markup-extension.md) or the [DynamicResource Markup Extension](dynamicresource-markup-extension.md). A markup extension is a XAML feature that lets you specify an object reference by having the markup extension process the attribute string and return the object to a XAML loader. For more information about markup extension behavior, see [Markup Extensions and WPF XAML](markup-extensions-and-wpf-xaml.md).
 
-When you use a markup extension, you typically provide one or more parameters in string form that are processed by that particular markup extension. The [StaticResource Markup Extension](../../../framework/wpf/advanced/staticresource-markup-extension.md) processes a key by looking up the value for that key in all available resource dictionaries. Processing happens during load, which is when the loading process needs to assign the property value. The [DynamicResource Markup Extension](../../../framework/wpf/advanced/dynamicresource-markup-extension.md) instead processes a key by creating an expression, and that expression remains unevaluated until the app runs, at which time the expression is evaluated and provides a value.
+When you use a markup extension, you typically provide one or more parameters in string form that are processed by that particular markup extension. The [StaticResource Markup Extension](staticresource-markup-extension.md) processes a key by looking up the value for that key in all available resource dictionaries. Processing happens during load, which is when the loading process needs to assign the property value. The [DynamicResource Markup Extension](dynamicresource-markup-extension.md) instead processes a key by creating an expression, and that expression remains unevaluated until the app runs, at which time the expression is evaluated and provides a value.
 
 When you reference a resource, the following considerations can influence whether you use a static resource reference or a dynamic resource reference:
 
@@ -132,7 +130,7 @@ Dynamic resource references have some notable restrictions. At least one of the 
 
 - The property being set must be a property on a <xref:System.Windows.Freezable> that is provided as a value of either a <xref:System.Windows.FrameworkElement> or <xref:System.Windows.FrameworkContentElement> property, or a <xref:System.Windows.Setter> value.
 
-Because the property being set must be a <xref:System.Windows.DependencyProperty> or <xref:System.Windows.Freezable> property, most property changes can propagate to the UI because a property change (the changed dynamic resource value) is acknowledged by the property system. Most controls include logic that will force another layout of a control if a <xref:System.Windows.DependencyProperty> changes and that property might affect layout. However, not all properties that have a [DynamicResource Markup Extension](../../../framework/wpf/advanced/dynamicresource-markup-extension.md) as their value are guaranteed to provide real time updates in the UI. That functionality still might vary depending on the property, as well as depending on the type that owns the property, or even the logical structure of your app.
+Because the property being set must be a <xref:System.Windows.DependencyProperty> or <xref:System.Windows.Freezable> property, most property changes can propagate to the UI because a property change (the changed dynamic resource value) is acknowledged by the property system. Most controls include logic that will force another layout of a control if a <xref:System.Windows.DependencyProperty> changes and that property might affect layout. However, not all properties that have a [DynamicResource Markup Extension](dynamicresource-markup-extension.md) as their value are guaranteed to provide real time updates in the UI. That functionality still might vary depending on the property, as well as depending on the type that owns the property, or even the logical structure of your app.
 
 ## Styles, DataTemplates, and implicit keys
 
@@ -155,10 +153,10 @@ Implicit keys for styles do not apply on a control if <xref:System.Windows.Frame
 ## See also
 
 - <xref:System.Windows.ResourceDictionary>
-- [Application resources](../../../framework/wpf/advanced/optimizing-performance-application-resources.md)
-- [Resources and code](../../../framework/wpf/advanced/resources-and-code.md)
-- [Define and reference a resource](../../../framework/wpf/advanced/how-to-define-and-reference-a-resource.md)
+- [Application resources](optimizing-performance-application-resources.md)
+- [Resources and code](resources-and-code.md)
+- [Define and reference a resource](how-to-define-and-reference-a-resource.md)
 - [Application management overview](../../../framework/wpf/app-development/application-management-overview.md)
 - [x:Type markup extension](../../../xaml-services/xtype-markup-extension.md)
-- [StaticResource markup extension](../../../framework/wpf/advanced/staticresource-markup-extension.md)
-- [DynamicResource markup extension](../../../framework/wpf/advanced/dynamicresource-markup-extension.md)
+- [StaticResource markup extension](staticresource-markup-extension.md)
+- [DynamicResource markup extension](dynamicresource-markup-extension.md)

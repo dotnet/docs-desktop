@@ -1,6 +1,6 @@
 ---
 title: XAML overview
-description: Learn how the XAML language is structured and implemented by Windows Presentation Foundation (WPF) for .NET Core.
+description: Learn how the XAML language is structured and implemented by Windows Presentation Foundation (WPF) for .NET Framework.
 author: adegeo
 ms.date: 12/03/2020
 ms.author: adegeo
@@ -28,8 +28,6 @@ helpviewer_keywords:
 
 This article describes the features of the XAML language and demonstrates how you can use XAML to write Windows Presentation Foundation (WPF) apps. This article specifically describes XAML as implemented by WPF. XAML itself is a larger language concept than WPF.
 
-[!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
-
 ## What is XAML
 
 XAML is a declarative markup language. As applied to the .NET Core programming model, XAML simplifies creating a UI for a .NET Core app. You can create visible UI elements in the declarative XAML markup, and then separate the UI definition from the run-time logic by using code-behind files that are joined to the markup through partial class definitions. XAML directly represents the instantiation of objects in a specific set of backing types defined in assemblies. This is unlike most other markup languages, which are typically an interpreted language without such a direct tie to a backing type system. XAML enables a workflow where separate parties can work on the UI and the logic of an app, using potentially different tools.
@@ -42,7 +40,7 @@ The following example shows how you might create a button as part of a UI. This 
 
 ## XAML syntax in brief
 
-The following sections explain the basic forms of XAML syntax, and give a short markup example. These sections are not intended to provide complete information about each syntax form, such as how these are represented in the backing type system. For more information about the specifics of XAML syntax, see [XAML Syntax In Detail](../../../framework/wpf/advanced/xaml-syntax-in-detail.md).
+The following sections explain the basic forms of XAML syntax, and give a short markup example. These sections are not intended to provide complete information about each syntax form, such as how these are represented in the backing type system. For more information about the specifics of XAML syntax, see [XAML Syntax In Detail](xaml-syntax-in-detail.md).
 
 Much of the material in the next few sections will be elementary to you if you have previous familiarity with the XML language. This is a consequence of one of the basic design principles of XAML. The XAML language defines concepts of its own, but these concepts work within the XML language and markup form.
 
@@ -116,7 +114,7 @@ As a rule of the XAML language, the value of a XAML content property must be giv
   blue button</Button>
 ```
 
-For more information about the specifics of XAML syntax, see [XAML Syntax In Detail](../../../framework/wpf/advanced/xaml-syntax-in-detail.md).
+For more information about the specifics of XAML syntax, see [XAML Syntax In Detail](xaml-syntax-in-detail.md).
 
 ### Text content
 
@@ -174,7 +172,7 @@ WPF XAML processors and serializers will ignore or drop all nonsignificant white
 
 Markup extensions are a XAML language concept. When used to provide the value of an attribute syntax, curly braces (`{` and `}`) indicate a markup extension usage. This usage directs the XAML processing to escape from the general treatment of attribute values as either a literal string or a string-convertible value.
 
-The most common markup extensions used in WPF app programming are [`Binding`](../../../framework/wpf/advanced/binding-markup-extension.md), used for data binding expressions, and the resource references [`StaticResource`](../../../framework/wpf/advanced/staticresource-markup-extension.md) and [`DynamicResource`](../../../framework/wpf/advanced/dynamicresource-markup-extension.md). By using markup extensions, you can use attribute syntax to provide values for properties even if that property does not support an attribute syntax in general. Markup extensions often use intermediate expression types to enable features such as deferring values or referencing other objects that are only present at run-time.
+The most common markup extensions used in WPF app programming are [`Binding`](binding-markup-extension.md), used for data binding expressions, and the resource references [`StaticResource`](staticresource-markup-extension.md) and [`DynamicResource`](dynamicresource-markup-extension.md). By using markup extensions, you can use attribute syntax to provide values for properties even if that property does not support an attribute syntax in general. Markup extensions often use intermediate expression types to enable features such as deferring values or referencing other objects that are only present at run-time.
 
 For example, the following markup sets the value of the <xref:System.Windows.FrameworkElement.Style%2A> property using attribute syntax. The <xref:System.Windows.FrameworkElement.Style%2A> property takes an instance of the <xref:System.Windows.Style> class, which by default could not be instantiated by an attribute syntax string. But in this case, the attribute references a particular markup extension, `StaticResource`. When that markup extension is processed, it returns a reference to a style that was previously instantiated as a keyed resource in a resource dictionary.
 
@@ -182,7 +180,7 @@ For example, the following markup sets the value of the <xref:System.Windows.Fra
 [!code-xaml[FEResourceSH_snip#XAMLOvwShortResources2](~/samples/snippets/csharp/VS_Snippets_Wpf/FEResourceSH_snip/CS/page1.xaml#xamlovwshortresources2)]
 [!code-xaml[FEResourceSH_snip#XAMLOvwShortResources3](~/samples/snippets/csharp/VS_Snippets_Wpf/FEResourceSH_snip/CS/page1.xaml#xamlovwshortresources3)]
 
-For a reference listing of all markup extensions for XAML implemented specifically in WPF, see [WPF XAML Extensions](../../../framework/wpf/advanced/wpf-xaml-extensions.md). For a reference listing of the markup extensions that are defined by System.Xaml and are more widely available for .NET Core XAML implementations, see [XAML Namespace (x:) Language Features](../../../xaml-services/namespace-language-features.md). For more information about markup extension concepts, see [Markup Extensions and WPF XAML](../../../framework/wpf/advanced/markup-extensions-and-wpf-xaml.md).
+For a reference listing of all markup extensions for XAML implemented specifically in WPF, see [WPF XAML Extensions](wpf-xaml-extensions.md). For a reference listing of the markup extensions that are defined by System.Xaml and are more widely available for .NET Core XAML implementations, see [XAML Namespace (x:) Language Features](../../../xaml-services/namespace-language-features.md). For more information about markup extension concepts, see [Markup Extensions and WPF XAML](markup-extensions-and-wpf-xaml.md).
 
 ## Type converters
 
@@ -199,7 +197,7 @@ The previous attribute syntax example is equivalent to the following more verbos
 > [!NOTE]
 > There are also a limited number of objects where the type conversion is the only public way to set a property to that type without involving a subclass, because the type itself does not have a parameterless constructor. An example is <xref:System.Windows.Input.Cursor>.
 
-For more information on type conversion, see [TypeConverters and XAML](../../../framework/wpf/advanced/typeconverters-and-xaml.md).
+For more information on type conversion, see [TypeConverters and XAML](typeconverters-and-xaml.md).
 
 ## XAML root elements and XAML namespaces
 
@@ -251,9 +249,9 @@ The following is a basic example of how custom prefixes work in XAML markup. The
 </Page>
 ```
 
-For more information about custom types in XAML, see [XAML and Custom Classes for WPF](../../../framework/wpf/advanced/xaml-and-custom-classes-for-wpf.md).
+For more information about custom types in XAML, see [XAML and Custom Classes for WPF](xaml-and-custom-classes-for-wpf.md).
 
-For more information about how XML namespaces and code namespaces in assemblies are related, see [XAML Namespaces and Namespace Mapping for WPF XAML](../../../framework/wpf/advanced/xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md).
+For more information about how XML namespaces and code namespaces in assemblies are related, see [XAML Namespaces and Namespace Mapping for WPF XAML](xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md).
 
 ## Events and XAML code-behind
 
@@ -268,13 +266,13 @@ In the examples so far, you have seen several buttons, but none of these buttons
 
 Notice that the code-behind file uses the CLR namespace `ExampleNamespace` and declares `ExamplePage` as a partial class within that namespace. This parallels the `x:Class` attribute value of `ExampleNamespace`.`ExamplePage` that was provided in the markup root. The WPF markup compiler will create a partial class for any compiled XAML file, by deriving a class from the root element type. When you provide code-behind that also defines the same partial class, the resulting code is combined within the same namespace and class of the compiled app.
 
-For more information about requirements for code-behind programming in WPF, see [Code-behind, Event Handler, and Partial Class Requirements in WPF](../../../framework/wpf/advanced/code-behind-and-xaml-in-wpf.md#code-behind-event-handler-and-partial-class-requirements-in-wpf).
+For more information about requirements for code-behind programming in WPF, see [Code-behind, Event Handler, and Partial Class Requirements in WPF](code-behind-and-xaml-in-wpf.md#code-behind-event-handler-and-partial-class-requirements-in-wpf).
 
-If you do not want to create a separate code-behind file, you can also inline your code in a XAML file. However, inline code is a less versatile technique that has substantial limitations. For more informaiton, see [Code-Behind and XAML in WPF](../../../framework/wpf/advanced/code-behind-and-xaml-in-wpf.md).
+If you do not want to create a separate code-behind file, you can also inline your code in a XAML file. However, inline code is a less versatile technique that has substantial limitations. For more informaiton, see [Code-Behind and XAML in WPF](code-behind-and-xaml-in-wpf.md).
 
 ### Routed events
 
-A particular event feature that is fundamental to WPF is a routed event. Routed events enable an element to handle an event that was raised by a different element, as long as the elements are connected through a tree relationship. When specifying event handling with a XAML attribute, the routed event can be listened for and handled on any element, including elements that do not list that particular event in the class members table. This is accomplished by qualifying the event name attribute with the owning class name. For instance, the parent `StackPanel` in the ongoing `StackPanel` / `Button` example could register a handler for the child element button's <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event by specifying the attribute `Button.Click` on the `StackPanel` object element, with your handler name as the attribute value. For more information, see [Routed Events Overview](../../../framework/wpf/advanced/routed-events-overview.md).
+A particular event feature that is fundamental to WPF is a routed event. Routed events enable an element to handle an event that was raised by a different element, as long as the elements are connected through a tree relationship. When specifying event handling with a XAML attribute, the routed event can be listened for and handled on any element, including elements that do not list that particular event in the class members table. This is accomplished by qualifying the event name attribute with the owning class name. For instance, the parent `StackPanel` in the ongoing `StackPanel` / `Button` example could register a handler for the child element button's <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event by specifying the attribute `Button.Click` on the `StackPanel` object element, with your handler name as the attribute value. For more information, see [Routed Events Overview](routed-events-overview.md).
 
 ## XAML named elements
 
@@ -290,7 +288,7 @@ The following example sets <xref:System.Windows.FrameworkElement.Name%2A> on a <
 [!code-csharp[XAMLOvwSupport#NameCode](~/samples/snippets/csharp/VS_Snippets_Wpf/XAMLOvwSupport/CSharp/page7.xaml.cs#namecode)]
 [!code-vb[XAMLOvwSupport#NameCode](~/samples/snippets/visualbasic/VS_Snippets_Wpf/XAMLOvwSupport/VisualBasic/Page1.xaml.vb#namecode)]
 
-Just like a variable, the XAML name for an instance is governed by a concept of scope, so that names can be enforced to be unique within a certain scope that is predictable. The primary markup that defines a page denotes one unique XAML namescope, with the XAML namescope boundary being the root element of that page. However, other markup sources can interact with a page at run-time, such as styles or templates within styles, and such markup sources often have their own XAML namescopes that do not necessarily connect with the XAML namescope of the page. For more information on `x:Name` and XAML namescopes, see <xref:System.Windows.FrameworkElement.Name%2A>, [x:Name Directive](../../../xaml-services/xname-directive.md), or [WPF XAML Namescopes](../../../framework/wpf/advanced/wpf-xaml-namescopes.md).
+Just like a variable, the XAML name for an instance is governed by a concept of scope, so that names can be enforced to be unique within a certain scope that is predictable. The primary markup that defines a page denotes one unique XAML namescope, with the XAML namescope boundary being the root element of that page. However, other markup sources can interact with a page at run-time, such as styles or templates within styles, and such markup sources often have their own XAML namescopes that do not necessarily connect with the XAML namescope of the page. For more information on `x:Name` and XAML namescopes, see <xref:System.Windows.FrameworkElement.Name%2A>, [x:Name Directive](../../../xaml-services/xname-directive.md), or [WPF XAML Namescopes](wpf-xaml-namescopes.md).
 
 ## Attached properties and attached events
 
@@ -306,9 +304,9 @@ The following example illustrates the <xref:System.Windows.Controls.DockPanel.Do
 
 [!code-xaml[XAMLOvwSupport#DockAP](~/samples/snippets/csharp/VS_Snippets_Wpf/XAMLOvwSupport/CSharp/page8.xaml#dockap)]
 
-In WPF, most or all the attached properties are also implemented as dependency properties. For more information, see [Attached Properties Overview](../../../framework/wpf/advanced/attached-properties-overview.md).
+In WPF, most or all the attached properties are also implemented as dependency properties. For more information, see [Attached Properties Overview](attached-properties-overview.md).
 
-Attached events use a similar `ownerType.eventName` form of attribute syntax. Just like the non-attached events, the attribute value for an attached event in XAML specifies the name of the handler method that is invoked when the event is handled on the element. Attached event usages in WPF XAML are less common. For more information, see [Attached Events Overview](../../../framework/wpf/advanced/attached-events-overview.md).
+Attached events use a similar `ownerType.eventName` form of attribute syntax. Just like the non-attached events, the attribute value for an attached event in XAML specifies the name of the handler method that is invoked when the event is handled on the element. Attached event usages in WPF XAML are less common. For more information, see [Attached Events Overview](attached-events-overview.md).
 
 ## Base types and XAML
 
@@ -320,17 +318,17 @@ XAML is a markup language that directly represents object instantiation and exec
 
 ### Code Access Security (CAS) in WPF
 
-Unlike .NET Framework, WPF for .NET doesn't support CAS. For more information, see [Code Access Security differences](../migration/differences-from-net-framework.md#code-access-security).
+WPF for .NET Framework supports Code Access Security (CAS). This means that WPF content running in the internet zone has reduced execution permissions. "Loose XAML" (pages of noncompiled XAML interpreted at load time by a XAML viewer) and XBAP are usually run in this internet zone and use the same permission set. However, XAML loaded in to a fully trusted application has the same access to the system resources as the hosting application does. For more information, see [WPF Partial Trust Security](../wpf-partial-trust-security.md).
 
 ## Loading XAML from code
 
-XAML can be used to define all of the UI, but it is sometimes also appropriate to define just a piece of the UI in XAML. This capability could be used to enable partial customization, local storage of information, using XAML to provide a business object, or a variety of possible scenarios. The key to these scenarios is the <xref:System.Windows.Markup.XamlReader> class and its <xref:System.Windows.Markup.XamlReader.Load%2A> method. The input is a XAML file, and the output is an object that represents all of the run-time tree of objects that was created from that markup. You then can insert the object to be a property of another object that already exists in the app. So long as the property is an appropriate property in the content model that has eventual display capabilities and that will notify the execution engine that new content has been added into the app, you can modify a running app's contents easily by loading in XAML.
+XAML can be used to define all of the UI, but it is sometimes also appropriate to define just a piece of the UI in XAML. This capability could be used to enable partial customization, local storage of information, using XAML to provide a business object, or a variety of possible scenarios. The key to these scenarios is the <xref:System.Windows.Markup.XamlReader> class and its <xref:System.Windows.Markup.XamlReader.Load%2A> method. The input is a XAML file, and the output is an object that represents all of the run-time tree of objects that was created from that markup. You then can insert the object to be a property of another object that already exists in the app. So long as the property is an appropriate property in the content model that has eventual display capabilities and that will notify the execution engine that new content has been added into the app, you can modify a running app's contents easily by loading in XAML. For .NET Framework, this capability is generally only available in full-trust applications, because of the obvious security implications of loading files into applications as they run.
 
 ## See also
 
-- [XAML Syntax In Detail](../../../framework/wpf/advanced/xaml-syntax-in-detail.md)
-- [XAML and Custom Classes for WPF](../../../framework/wpf/advanced/xaml-and-custom-classes-for-wpf.md)
+- [XAML Syntax In Detail](xaml-syntax-in-detail.md)
+- [XAML and Custom Classes for WPF](xaml-and-custom-classes-for-wpf.md)
 - [XAML Namespace (x:) Language Features](../../../xaml-services/namespace-language-features.md)
-- [WPF XAML Extensions](../../../framework/wpf/advanced/wpf-xaml-extensions.md)
-- [Base Elements Overview](../../../framework/wpf/advanced/base-elements-overview.md)
-- [Trees in WPF](../../../framework/wpf/advanced/trees-in-wpf.md)
+- [WPF XAML Extensions](wpf-xaml-extensions.md)
+- [Base Elements Overview](base-elements-overview.md)
+- [Trees in WPF](trees-in-wpf.md)
