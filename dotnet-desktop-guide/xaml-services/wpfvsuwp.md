@@ -4,13 +4,13 @@ The Universal Windows Platform (UWP) has its roots in SilverLight instead of bei
 
 ## XAML / Object Model
 
-This section lists the main differences (primarily from a XAML viewpoint) between UWP and WPF. 
+This section lists the main differences (primarily from a XAML viewpoint) between UWP and WPF.
 
 Legend:
 
- * ✔ Indicates the platform (defined by the WPF or UWP column) has the feature
- * ❌ Indicates the feature is generally missing in the platform
- * ⚡ Indicates the feature is only partially implemented compared to other platforms
+* ✔ Indicates the platform (defined by the WPF or UWP column) has the feature
+* ❌ Indicates the feature is generally missing in the platform
+* ⚡ Indicates the feature is only partially implemented compared to other platforms
 
 ### Markup Extensions & Directives
 
@@ -76,9 +76,9 @@ Legend:
   <td>UWP only implements a subset of the full markup extension support in WPF. This area needs to be expanded upon in the future.</td>
  </tr>
 </table>
- 
+
 ### Binding / Dependency Property System
- 
+
 <table>
  <tr>
    <th>Item</th>
@@ -186,9 +186,6 @@ This section primarily describes differences in properties at the object or clas
 
 **Grid**
 
-<details>
-  <summary>Differences</summary>
-
 <table>
  <tr>
    <th>Item</th>
@@ -234,14 +231,11 @@ This section primarily describes differences in properties at the object or clas
  </tr>
 </table>
 
-</details>
 
 **StackPanel**
 
 Additional properties such as WPF's `HasLogicalOrientation`, `HorizontalOffset` and `VerticalOffset` are purposely excluded from this section as they aren't considered useful.
 
-<details>
-  <summary>Differences</summary>
 
 <table>
  <tr>
@@ -306,12 +300,9 @@ Additional properties such as WPF's `HasLogicalOrientation`, `HorizontalOffset` 
  </tr>
 </table>
 
-</details>
 
 **UIElement**
 
-<details>
-  <summary>Differences</summary>
 
 <table>
  <tr>
@@ -364,7 +355,6 @@ Additional properties such as WPF's `HasLogicalOrientation`, `HorizontalOffset` 
  </tr>
 </table>
 
-</details>
 
 **Minor Changes**
 
@@ -593,16 +583,3 @@ This section describes the differences in controls in vanilla WPF and UWP (with 
 | &#10006;                 | WebView	               | |
 | WrapPanel		              | &#10006;               | Available for UWP in the Windows Community Toolkit |
 | Window	                  | &#10006;               |	There is no top-level window concept in UWP |
-
-## References
-
- 1. http://dansuleski.com/so-what-else-could-be-missing-in-uwp/
- 2. https://github.com/microsoft/microsoft-ui-xaml/issues/719
-
-## Additional Resources
-
- * https://github.com/jbe2277/waf/wiki/UWP-vs.-WPF
-
-## License
-
-This document is licensed [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). For full text see: https://creativecommons.org/licenses/by-sa/4.0/legalcode
