@@ -1,12 +1,12 @@
 ---
 title: What is Windows Presentation Foundation
-description: This article gives an overview about what Windows Presentation Foundation (WPF) is as it relates to .NET Core and what features are provided.
+description: This article gives an overview about what Windows Presentation Foundation (WPF) is as it relates to .NET and what features are provided.
 ms.date: 07/18/2019
 ms.topic: overview
 #Customer intent: As a developer, I want to understand the components of WPF so that I can understand the overall picture of WPF.
 ---
 
-# What is Windows Presentation Foundation
+# What is Windows Presentation Foundation (WPF .NET)
 
 Welcome to the Desktop Guide for Windows Presentation Foundation (WPF), a UI framework that creates desktop client applications for Windows. The WPF development platform supports a broad set of application development features, including an application model, controls, graphics, and data binding. WPF uses Extensible Application Markup Language (XAML) to provide a declarative model for application programming.
 

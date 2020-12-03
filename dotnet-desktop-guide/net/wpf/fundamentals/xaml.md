@@ -1,6 +1,6 @@
 ---
 title: XAML overview
-description: Learn how the XAML language is structured and implemented by Windows Presentation Foundation (WPF) for .NET Core.
+description: Learn how the XAML language is structured and implemented by Windows Presentation Foundation (WPF) for .NET.
 author: adegeo
 ms.date: 12/03/2020
 ms.author: adegeo
@@ -24,7 +24,7 @@ helpviewer_keywords:
   - "attribute syntax [XAML]"
 ---
 
-# XAML overview in WPF
+# XAML overview (WPF .NET)
 
 This article describes the features of the XAML language and demonstrates how you can use XAML to write Windows Presentation Foundation (WPF) apps. This article specifically describes XAML as implemented by WPF. XAML itself is a larger language concept than WPF.
 

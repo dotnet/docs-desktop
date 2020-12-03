@@ -1,13 +1,13 @@
 ---
 title: Define XAML resources
-description: Learn about XAML resources in WPF for .NET Core. Understand the types of XAML resources and learn how to define XAML resources.
+description: Learn about XAML resources in WPF for .NET. Understand the types of XAML resources and learn how to define XAML resources.
 author: adegeo
 ms.author: adegeo
 ms.date: 08/21/2019
 ms.topic: overview
 ---
 
-# Overview of XAML resources
+# Overview of XAML resources (WPF .NET)
 
 A resource is an object that can be reused in different places in your app. Examples of resources include brushes and styles. This overview describes how to use resources in Extensible Application Markup Language (XAML). You can also create and access resources by using code.
 
