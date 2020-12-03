@@ -1,6 +1,7 @@
 ---
 title: Attributes in Controls
 ms.date: "03/30/2017"
+ms.topic: overview
 helpviewer_keywords: 
   - "attributes [Windows Forms]"
   - "attributes [Windows Forms], data binding properties"

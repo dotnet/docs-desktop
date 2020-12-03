@@ -1,6 +1,7 @@
 ---
 title: "Interfaces Related to Data Binding"
 ms.date: "03/30/2017"
+ms.topic: overview
 helpviewer_keywords:
   - "data [Windows Forms], data-binding interfaces"
   - "INotifyPropertyChanged interface"

@@ -1,6 +1,7 @@
 ---
 title: "Controls with Built-In Owner-Drawing Support"
 ms.date: "03/30/2017"
+ms.topic: overview
 helpviewer_keywords: 
   - "drawing [Windows Forms], owner"
   - "drawing [Windows Forms], custom"

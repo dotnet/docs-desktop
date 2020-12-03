@@ -2,6 +2,7 @@
 title: "Routed Events Overview"
 description: Learn about routed events in Windows Presentation Foundation, including how they are routed through an element tree and how to create custom routed events.
 ms.date: "03/30/2017"
+ms.topic: overview
 dev_langs:
   - "csharp"
   - "vb"

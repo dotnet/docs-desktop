@@ -4,6 +4,7 @@ description: Learn how to migrate a Windows Presentation Foundation (WPF) app to
 author: mjrousos
 ms.date: 09/12/2019
 ms.author: mikerou
+ms.topic: how-to
 ---
 
 # Migrating WPF apps to .NET Core

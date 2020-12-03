@@ -1,6 +1,7 @@
 ---
 title: "Base Elements Overview"
 ms.date: "03/30/2017"
+ms.topic: overview
 helpviewer_keywords: 
   - "base elements [WPF]"
 ms.assetid: 2c997092-72c6-4767-bc84-74267f4eee72

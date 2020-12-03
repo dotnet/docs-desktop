@@ -4,6 +4,7 @@ description: Learn about XAML resources in WPF for .NET Core. Understand the typ
 author: adegeo
 ms.author: adegeo
 ms.date: 08/21/2019
+ms.topic: overview
 ---
 
 # Overview of XAML resources

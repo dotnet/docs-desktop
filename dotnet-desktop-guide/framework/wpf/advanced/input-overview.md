@@ -1,6 +1,7 @@
 ---
 title: "Input Overview"
 ms.date: "03/30/2017"
+ms.topic: overview
 dev_langs:
   - "csharp"
   - "vb"
