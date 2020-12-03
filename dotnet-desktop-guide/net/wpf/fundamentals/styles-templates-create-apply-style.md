@@ -37,7 +37,7 @@ A <xref:System.Windows.Style> is a convenient way to apply a set of property val
 
 [!code-xaml[TextBlocks](./snippets/styles-templates-create-apply-style/csharp/Window1.xaml#SnippetTextBlocks)]
 
-![Styling sample screenshot](./media/styles-and-templates-overview/stylingintro-textblocksbefore.png "StylingIntro_TextBlocksBefore")
+![Styling sample screenshot before](./media/styles-and-templates-overview/stylingintro-textblocksbefore.png "StylingIntro_TextBlocksBefore")
 
 You can change the default appearance by setting properties, such as <xref:System.Windows.Controls.Control.FontSize%2A> and <xref:System.Windows.Controls.Control.FontFamily%2A>, on each <xref:System.Windows.Controls.TextBlock> element directly. However, if you want your <xref:System.Windows.Controls.TextBlock> elements to share some properties, you can create a <xref:System.Windows.Style> in the `Resources` section of your XAML file, as shown here.
 
@@ -47,7 +47,7 @@ When you set the <xref:System.Windows.Style.TargetType%2A> of your style to the 
 
 Now the <xref:System.Windows.Controls.TextBlock> elements appear as follows.
 
-![Styling sample screenshot](./media/styles-and-templates-overview/stylingintro-textblocksbasestyle.png "StylingIntro_TextBlocksBaseStyle")
+![Styling sample screenshot base style](./media/styles-and-templates-overview/stylingintro-textblocksbasestyle.png "StylingIntro_TextBlocksBaseStyle")
 
 ## Apply a style explicitly
 
@@ -63,7 +63,7 @@ To apply the style, set the <xref:System.Windows.FrameworkElement.Style%2A> prop
 
 Notice that the first <xref:System.Windows.Controls.TextBlock> element has the style applied to it while the second TextBlock element remains unchanged. The implicit style from the previous section was changed to a style that declared the `x:Key` attribute, meaning, the only element affected by the style is the one that referenced the style directly.
 
-![Styling sample screenshot](./media/styles-and-templates-overview/create-a-style-explicit-textblock.png "create-a-style-explicit-textblock")
+![Styling sample screenshot textblock](./media/styles-and-templates-overview/create-a-style-explicit-textblock.png "create-a-style-explicit-textblock")
 
 Once a style is applied, explicitly or implicitly, it becomes sealed and can't be changed. If you want to change a style that has been applied, create a new style to replace the existing one. For more information, see the <xref:System.Windows.Style.IsSealed%2A> property.
 

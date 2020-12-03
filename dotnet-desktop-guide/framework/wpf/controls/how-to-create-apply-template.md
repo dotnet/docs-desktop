@@ -146,7 +146,7 @@ Run the project. Notice that when you move the mouse over the button, the color 
 
 ## Use a VisualState
 
-Visual states are defined and triggered by a control. For example, when the mouse is moved on top of the control, the `CommonStates.MouseOver` state is triggered. You can animate property changes based on the current state of the control. In the previous section, a **\<PropertyTrigger>** was used to change the foreground of the button to `AliceBlue` when the `IsMouseOver` property was `true`. Instead, create a visual state that animates the change of this color, providing a smooth transition. For more information about *VisualStates*, see [Styles and templates in WPF](../fundamentals/styles-templates-overview.md#visual-states).
+Visual states are defined and triggered by a control. For example, when the mouse is moved on top of the control, the `CommonStates.MouseOver` state is triggered. You can animate property changes based on the current state of the control. In the previous section, a **\<PropertyTrigger>** was used to change the foreground of the button to `AliceBlue` when the `IsMouseOver` property was `true`. Instead, create a visual state that animates the change of this color, providing a smooth transition. For more information about *VisualStates*, see [Styles and templates in WPF](styles-templates-overview.md#visual-states).
 
 To convert the **\<PropertyTrigger>** to an animated visual state, First, remove the **\<ControlTemplate.Triggers>** element from your template.
 
@@ -176,10 +176,9 @@ The **\<ControlTemplate>** should now look like the following.
 
 Run the project. Notice that when you move the mouse over the button, the color of the **\<Ellipse>** animates.
 
-![mouse moves over WPF button to change the fill color](media/how-to-create-apply-template/mouse-move-over-button-visualstate.gif)
+![mouse moves over WPF button to change visual state](media/how-to-create-apply-template/mouse-move-over-button-visualstate.gif)
 
 ## Next steps
 
-- [Create a style for a control in WPF](../fundamentals/styles-templates-create-apply-style.md)
-- [Styles and templates in WPF](../fundamentals/styles-templates-overview.md)
-- [Overview of XAML Resources](../fundamentals/xaml-resources-define.md)
+- [Styles and templates in WPF](styles-templates-overview.md)
+- [Overview of XAML Resources](../advanced/xaml-resources-define.md)

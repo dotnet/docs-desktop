@@ -18,7 +18,7 @@ Another feature of the WPF styling model is the separation of presentation and l
 
 This overview focuses on the styling and templating aspects of the app and doesn't discuss any data-binding concepts. For information about data binding, see [Data Binding Overview](../data/data-binding-overview.md).
 
-It's important to understand resources, which are what enable styles and templates to be reused. For more information about resources, see [XAML Resources](xaml-resources-define.md).
+It's important to understand resources, which are what enable styles and templates to be reused. For more information about resources, see [XAML Resources](../advanced/xaml-resources-define.md).
 
 ## Sample
 
@@ -45,8 +45,6 @@ Here is an example of the styles declared above being used.
 [!code-xaml[SnippetTextBlocksExplicit](./snippets/styles-templates-overview/csharp/Window2.xaml#SnippetTextBlocksExplicit)]
 
 ![Styled textblocks](./media/styles-and-templates-overview/stylingintro-textblocks.png)
-
-For more information, see [Create a style for a control](styles-templates-create-apply-style.md).
 
 ## ControlTemplates
 
@@ -93,7 +91,7 @@ Designers generally allow you to create a copy of an existing template and modif
 
 Editing a copy of a template is a great way to learn how templates work. Instead of creating a new blank template, it's easier to edit a copy and change a few aspects of the visual presentation.
 
-For an example, see [Create a template for a control](../themes/how-to-create-apply-template.md).
+For an example, see [Create a template for a control](how-to-create-apply-template.md).
 
 ### TemplateBinding
 
