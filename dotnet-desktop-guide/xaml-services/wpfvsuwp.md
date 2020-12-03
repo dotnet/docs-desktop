@@ -231,11 +231,9 @@ This section primarily describes differences in properties at the object or clas
  </tr>
 </table>
 
-
 **StackPanel**
 
 Additional properties such as WPF's `HasLogicalOrientation`, `HorizontalOffset` and `VerticalOffset` are purposely excluded from this section as they aren't considered useful.
-
 
 <table>
  <tr>
@@ -300,9 +298,7 @@ Additional properties such as WPF's `HasLogicalOrientation`, `HorizontalOffset` 
  </tr>
 </table>
 
-
 **UIElement**
-
 
 <table>
  <tr>
@@ -354,7 +350,6 @@ Additional properties such as WPF's `HasLogicalOrientation`, `HorizontalOffset` 
   <td>Use the Transform3D property to apply a 3-D transform matrix to a XAML element. This lets you create effects where two-dimensional UI appears to exist in 3-D space relative to the user. Transform3D behaves much like RenderTransform, but allows transforms in three-dimensional space and not just two dimensions. It also support animations.</td>
  </tr>
 </table>
-
 
 **Minor Changes**
 
@@ -463,17 +458,17 @@ Additional properties such as WPF's `HasLogicalOrientation`, `HorizontalOffset` 
 
 ## Quirks
 
- * Several UWP controls have reentrancy issues. For example, changing the selected item while in a ComboBox SelectionChanged event is largely not possible and will result in a crash. This makes validation directly in the event handler nearly impossible.
- * UWP controls are generally not as powerful as the WPF counterparts. For example, for several years the ComboBox in UWP was not editable. The UWP DatePicker also does not allow typing in a specific date.
- * UWP has no support for data (input) validation. This is a large issue for line-of-business apps migrating from WPF to UWP that heavily use this feature in view models or binding.
- * The UWP styling system is different enough from WPF to require extra effort during porting. UWP uses the VistualStateManger instead of concepts like DataTriggers or EventTriggers from WPF. Styling/Templating are one of the main differences.
- * The ResourceDictionary XAML markup in UWP supports far fewer features than in WPF.
- * UWP seems to follow only the XAML/2006 spec instead of [XAML/2009]((https://docs.microsoft.com/en-us/dotnet/desktop-wpf/xaml-services/xaml-2009-language-features)) supported by WPF 
- * Several UWP controls are sealed and new controls cannot derive from them
- * For advanced rendering, UWP has fewer features built in. This requires falling back to Win2D or composition more often.
- * There are several namespaces differences in UWP and WPF. For example, WPF has System.Windows.Media.Colors while UWP moves this to Windows.UI.Colors.
- * TextBlock and TextBox, for example, do not allow 'null' values for string-type Text properties. Setting null to `Text` will crash the app at runtime. This is one of the largest concerns when porting over from WPF as WPF accepts null without an issue; yet the same code may crash in UWP. The solution is to use `.Text = stringValue ?? string.Empty;` for all controls instead of setting a string directly.
- * In WPF it was possible to build templates using the [FrameworkElementFactory Class](https://docs.microsoft.com/en-us/dotnet/api/system.windows.frameworkelementfactory?view=netcore-3.1) without using XAML. This allowed for entire UI's to be created without markup (since instantiating controls is already possible in C# directly). However, the burden of maintaining two different ways of doing things became too much and Microsoft dropped this ability in UWP and deprecated it for WPF. Instead, it's necessary to write template XAML as a string in code then pass it to XamlReader.Load().
+* Several UWP controls have reentrancy issues. For example, changing the selected item while in a ComboBox SelectionChanged event is largely not possible and will result in a crash. This makes validation directly in the event handler nearly impossible.
+* UWP controls are generally not as powerful as the WPF counterparts. For example, for several years the ComboBox in UWP was not editable. The UWP DatePicker also does not allow typing in a specific date.
+* UWP has no support for data (input) validation. This is a large issue for line-of-business apps migrating from WPF to UWP that heavily use this feature in view models or binding.
+* The UWP styling system is different enough from WPF to require extra effort during porting. UWP uses the VistualStateManger instead of concepts like DataTriggers or EventTriggers from WPF. Styling/Templating are one of the main differences.
+* The ResourceDictionary XAML markup in UWP supports far fewer features than in WPF.
+* UWP seems to follow only the XAML/2006 spec instead of [XAML/2009]((https://docs.microsoft.com/en-us/dotnet/desktop-wpf/xaml-services/xaml-2009-language-features)) supported by WPF 
+* Several UWP controls are sealed and new controls cannot derive from them
+* For advanced rendering, UWP has fewer features built in. This requires falling back to Win2D or composition more often.
+* There are several namespaces differences in UWP and WPF. For example, WPF has System.Windows.Media.Colors while UWP moves this to Windows.UI.Colors.
+* TextBlock and TextBox, for example, do not allow 'null' values for string-type Text properties. Setting null to `Text` will crash the app at runtime. This is one of the largest concerns when porting over from WPF as WPF accepts null without an issue; yet the same code may crash in UWP. The solution is to use `.Text = stringValue ?? string.Empty;` for all controls instead of setting a string directly.
+* In WPF it was possible to build templates using the [FrameworkElementFactory Class](https://docs.microsoft.com/en-us/dotnet/api/system.windows.frameworkelementfactory?view=netcore-3.1) without using XAML. This allowed for entire UI's to be created without markup (since instantiating controls is already possible in C# directly). However, the burden of maintaining two different ways of doing things became too much and Microsoft dropped this ability in UWP and deprecated it for WPF. Instead, it's necessary to write template XAML as a string in code then pass it to XamlReader.Load().
 
 ## Controls
 
