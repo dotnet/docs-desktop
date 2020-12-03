@@ -91,3 +91,5 @@
     href: white-space-processing.md
   - name: XML Character Entities and XAML
     href: xml-character-entities.md
+  - name: Differences between WPF XAML and UWP XAML
+    href: wpfvsuwp.md
