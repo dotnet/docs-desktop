@@ -2,6 +2,7 @@
 title: "User Input Validation"
 description: Learn about several ways that you can use Windows Forms to validate user input in your applications.
 ms.date: "03/30/2017"
+ms.topic: overview
 helpviewer_keywords: 
   - "Windows Forms, validating user input"
   - "validation [Windows Forms], Windows Forms user input"

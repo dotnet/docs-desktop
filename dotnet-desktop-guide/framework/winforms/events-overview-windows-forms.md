@@ -1,6 +1,7 @@
 ---
 title: "Events Overview"
 ms.date: "03/30/2017"
+ms.topic: overview
 helpviewer_keywords:
   - "Windows Forms, event handling"
   - "events [Windows Forms], about events"

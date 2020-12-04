@@ -1,6 +1,7 @@
 ---
 title: "Alignment, Margins, and Padding Overview"
 description: Learn about HorizontalAlignment, Margin, Padding, and VerticalAlignment, which control child element position in Windows Presentation Foundation applications.
+ms.topic: overview
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

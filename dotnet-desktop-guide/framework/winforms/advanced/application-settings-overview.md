@@ -2,6 +2,7 @@
 title: "Application Settings Overview"
 description: Learn about the Application Settings feature of Windows Forms, for example how to create and store settings data on behalf of your application and your users.
 ms.date: "03/30/2017"
+ms.topic: overview
 f1_keywords:
   - "ApplicationsSettingsOverview"
 helpviewer_keywords:

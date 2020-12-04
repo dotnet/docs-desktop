@@ -1,6 +1,7 @@
 ---
 title: "Control Type Recommendations"
 ms.date: "03/30/2017"
+ms.topic: overview
 helpviewer_keywords:
   - "inheritance [Windows Forms], Windows Forms custom controls"
   - "user controls [Windows Forms], when to use"

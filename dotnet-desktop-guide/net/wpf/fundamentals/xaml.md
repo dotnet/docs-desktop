@@ -4,6 +4,7 @@ description: Learn how the XAML language is structured and implemented by Window
 author: adegeo
 ms.date: 08/08/2019
 ms.author: adegeo
+ms.topic: overview
 dev_langs:
   - "csharp"
   - "vb"

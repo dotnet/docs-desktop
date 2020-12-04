@@ -2,6 +2,7 @@
 title: "3D Graphics Overview"
 description: Get acquainted with 3D graphics in Windows Presentation Foundation (WPF) to draw, transform, and animate 3D graphics in both markup and procedural code.
 ms.date: "03/30/2017"
+ms.topic: overview
 dev_langs: 
   - "csharp"
   - "vb"

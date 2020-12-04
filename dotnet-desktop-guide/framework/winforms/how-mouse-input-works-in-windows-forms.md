@@ -1,6 +1,7 @@
 ---
 title: "How Mouse Input Works"
 ms.date: "03/30/2017"
+ms.topic: overview
 helpviewer_keywords: 
   - "Windows Forms, mouse input"
   - "mouse [Windows Forms], input"
