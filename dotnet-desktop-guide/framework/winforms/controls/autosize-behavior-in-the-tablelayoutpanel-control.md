@@ -1,6 +1,7 @@
 ---
 title: "AutoSize Behavior in the TableLayoutPanel Control"
 ms.date: "03/30/2017"
+ms.topic: overview
 helpviewer_keywords: 
   - "AutoSize property [Windows Forms], tableLayoutPanel control"
   - "controls [Windows Forms], sizing"

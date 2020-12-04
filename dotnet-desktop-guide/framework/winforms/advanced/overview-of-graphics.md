@@ -1,6 +1,7 @@
 ---
 title: "Overview of Graphics"
 ms.date: "03/30/2017"
+ms.topic: overview
 helpviewer_keywords: 
   - "graphics [Windows Forms], using managed interface"
   - "graphics [Windows Forms], about graphics"

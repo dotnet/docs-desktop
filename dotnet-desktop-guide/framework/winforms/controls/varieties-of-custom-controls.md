@@ -1,6 +1,7 @@
 ---
 title: "Varieties of Custom Controls"
 ms.date: "03/30/2017"
+ms.topic: overview
 helpviewer_keywords: 
   - "controls [Windows Forms], user controls"
   - "controls [Windows Forms], types of"

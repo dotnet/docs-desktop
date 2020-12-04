@@ -1,6 +1,7 @@
 ---
 title: "Documents"
 ms.date: "03/30/2017"
+ms.topic: overview
 helpviewer_keywords: 
   - "documents [WPF], packaging"
   - "documents [WPF], text layout"
