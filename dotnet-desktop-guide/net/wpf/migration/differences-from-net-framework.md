@@ -1,13 +1,13 @@
 ---
-title: Differences between .NET Framework and .NET Core
-description: Describes the differences between the .NET Framework implementation of Windows Presentation Foundation (WPF) and .NET Core WPF. When migrating your app, you should consider these incompatibilities.
+title: Differences between .NET Framework and .NET
+description: Describes the differences between the .NET Framework implementation of Windows Presentation Foundation (WPF) and .NET WPF. When migrating your app, you should consider these incompatibilities.
 author: adegeo
 ms.date: 09/21/2019
 ms.author: adegeo
 ms.topic: conceptual
 ---
 
-# Differences in WPF
+# Differences in WPF .NET
 
 This article describes the differences between Windows Presentation Foundation (WPF) on .NET Core and .NET Framework. WPF for .NET Core is an [open-source framework](https://github.com/dotnet/wpf) forked from the original WPF for .NET Framework source code.
 

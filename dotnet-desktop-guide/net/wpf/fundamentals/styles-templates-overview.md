@@ -1,6 +1,6 @@
 ---
 title: Styles and templates
-description: Learn about XAML resources in Windows Presentation Foundation (WPF) for .NET Core. Understand the types of XAML resources related to styles and themes.
+description: Learn about XAML resources in Windows Presentation Foundation (WPF) for .NET. Understand the types of XAML resources related to styles and themes.
 author: adegeo
 ms.author: adegeo
 ms.date: 09/09/2019
@@ -10,7 +10,7 @@ dev_langs:
   - "vb"
 ---
 
-# Styles and templates in WPF
+# Styles and templates (WPF .NET)
 
 Windows Presentation Foundation (WPF) styling and templating refer to a suite of features that let developers and designers create visually compelling effects and a consistent appearance for their product. When customizing the appearance of an app, you want a strong styling and templating model that enables maintenance and sharing of appearance within and among apps. WPF provides that model.
 
