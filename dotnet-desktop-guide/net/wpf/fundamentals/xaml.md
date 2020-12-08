@@ -1,8 +1,8 @@
 ---
 title: XAML overview
-description: Learn how the XAML language is structured and implemented by Windows Presentation Foundation (WPF) for .NET Core.
+description: Learn how the XAML language is structured and implemented by Windows Presentation Foundation (WPF) for .NET.
 author: adegeo
-ms.date: 08/08/2019
+ms.date: 12/03/2020
 ms.author: adegeo
 ms.topic: overview
 dev_langs:
@@ -24,7 +24,7 @@ helpviewer_keywords:
   - "attribute syntax [XAML]"
 ---
 
-# XAML overview in WPF
+# XAML overview (WPF .NET)
 
 This article describes the features of the XAML language and demonstrates how you can use XAML to write Windows Presentation Foundation (WPF) apps. This article specifically describes XAML as implemented by WPF. XAML itself is a larger language concept than WPF.
 
@@ -320,13 +320,11 @@ XAML is a markup language that directly represents object instantiation and exec
 
 ### Code Access Security (CAS) in WPF
 
-**This section only applies to .NET Framework. WPF for .NET Core doesn't support CAS. For more information, see [Code Access Security differences](../migration/differences-from-net-framework.md#code-access-security).**
-
-WPF for .NET Framework supports Code Access Security (CAS). This means that WPF content running in the internet zone has reduced execution permissions. "Loose XAML" (pages of noncompiled XAML interpreted at load time by a XAML viewer) and XBAP are usually run in this internet zone and use the same permission set. However, XAML loaded in to a fully trusted application has the same access to the system resources as the hosting application does. For more information, see [WPF Partial Trust Security](../../../framework/wpf/wpf-partial-trust-security.md).
+Unlike .NET Framework, WPF for .NET doesn't support CAS. For more information, see [Code Access Security differences](../migration/differences-from-net-framework.md#code-access-security).
 
 ## Loading XAML from code
 
-XAML can be used to define all of the UI, but it is sometimes also appropriate to define just a piece of the UI in XAML. This capability could be used to enable partial customization, local storage of information, using XAML to provide a business object, or a variety of possible scenarios. The key to these scenarios is the <xref:System.Windows.Markup.XamlReader> class and its <xref:System.Windows.Markup.XamlReader.Load%2A> method. The input is a XAML file, and the output is an object that represents all of the run-time tree of objects that was created from that markup. You then can insert the object to be a property of another object that already exists in the app. So long as the property is an appropriate property in the content model that has eventual display capabilities and that will notify the execution engine that new content has been added into the app, you can modify a running app's contents easily by loading in XAML. For .NET Framework, this capability is generally only available in full-trust applications, because of the obvious security implications of loading files into applications as they run.
+XAML can be used to define all of the UI, but it is sometimes also appropriate to define just a piece of the UI in XAML. This capability could be used to enable partial customization, local storage of information, using XAML to provide a business object, or a variety of possible scenarios. The key to these scenarios is the <xref:System.Windows.Markup.XamlReader> class and its <xref:System.Windows.Markup.XamlReader.Load%2A> method. The input is a XAML file, and the output is an object that represents all of the run-time tree of objects that was created from that markup. You then can insert the object to be a property of another object that already exists in the app. So long as the property is an appropriate property in the content model that has eventual display capabilities and that will notify the execution engine that new content has been added into the app, you can modify a running app's contents easily by loading in XAML.
 
 ## See also
 
