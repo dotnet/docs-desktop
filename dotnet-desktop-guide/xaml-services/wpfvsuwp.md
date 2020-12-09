@@ -1,6 +1,11 @@
+---
+title: "Differences between WPF/UWP XAML"
+description: "Learn about the differences between XAML in WPF and XAML in UWP.
+ms.date: "12/09/2020"
+---
 # Overview of WPF & UWP Differences
 
-The Universal Windows Platform (UWP) has its roots in SilverLight instead of being based on the Windows Presentation Foundation (WPF). UWP is implemented natively in C++ instead of WPF which was written in C# and C++ for lower-level functions. Due to being a completely different imlementation of XAML, designed to include more resource constrained devices, and support for more programming languages, there are several differences in UWP compared to WPF. These differences may be new functionality in UWP, slightly different ways of doing things or, more commonly, WPF features missing in UWP. These differences are not summarized by Microsoft which is prohibitive for developers familiar with WPF and that have to port existing code. This document is intended to provide an overview of the differences.
+The Universal Windows Platform (UWP) has its roots in SilverLight instead of being based on the Windows Presentation Foundation (WPF). UWP is implemented natively in C++ instead of WPF which was written in C# and C++ for lower-level functions. Due to being a completely different implementation of XAML, designed to include more resource constrained devices, and support for more programming languages, there are several differences in UWP compared to WPF. These differences may be new functionality in UWP, slightly different ways of doing things or, more commonly, WPF features missing in UWP. These differences are not summarized by Microsoft which is prohibitive for developers familiar with WPF and that have to port existing code. This document is intended to provide an overview of the differences.
 
 ## XAML / Object Model
 
