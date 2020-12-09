@@ -1,35 +1,53 @@
 {
   "version": 3,
-  "configRevision": 2,
+  "configRevision": 3,
 
   "issue": {
+    "labeled": {
+      "processor-conditional": {
+        "type": "query",
+        "value": "length(Issue.labels[?contains(name, '/prod') || contains(name, '/tech')]) != `0`",
+        "processors": {
+          "processor-conditional": {
+            "type": "query",
+            "value": "length(Issue.labels[?name == 'doc-enhancement' || name == 'product-question' || name == 'in-progress' || name == 'test-issue' || name == 'kudos' || name == 'loc' || name == 'doc-bug' || name == 'product-feedback' || name == 'code-of-conduct' || name == 'support-request' || name == 'duplicate' || name == 'resolved-by-customer' || name == 'docs-experience' || name == 'doc-provided' || name == 'doc-idea' || name == 'needs-more-info']) != `0`",
+            "actions": {
+              "labels-remove": ":watch: Not Triaged"
+            },
+            "actions-failed": {
+              "labels-add": ":watch: Not Triaged"
+            }
+          },
+          "processor-meta-docs": {
+            "technology": {
+              "(?i)dotnet-wpf$": {
+                "labels-add": ":card_file_box: Technology - WPF"
+              },
+              "(?i)dotnet-winforms$": {
+                "labels-add": ":card_file_box: Technology - WinForms"
+              }
+            },
+            "contentsource": {
+              "(?i).*dotnet-desktop-guide\/framework\/wpf.*": {
+                "labels-add": ":books: Area - .NET Framework,:card_file_box: Technology - WPF"
+              },
+              "(?i).*dotnet-desktop-guide\/framework\/winforms.*": {
+                "labels-add": ":books: Area - .NET Framework,:card_file_box: Technology - WinForms"
+              },
+              "(?i).*dotnet-desktop-guide\/net\/wpf.*": {
+                "labels-add": ":books: Area - .NET,:card_file_box: Technology - WPF"
+              },
+              "(?i).*dotnet-desktop-guide\/net\/winforms.*": {
+                "labels-add": ":books: Area - .NET,:card_file_box: Technology - WinForms"
+              }
+            }
+          }
+        }
+      }
+    },
     "opened": {
       "processor-default": {
         "labels-add": [ ":watch: Not Triaged" ]
-      },
-      "processor-meta-docs": {
-        "technology": {
-          "(?i)dotnet-wpf$": {
-            "labels-add": ":card_file_box: Technology - WPF"
-          },
-          "(?i)dotnet-winforms$": {
-            "labels-add": ":card_file_box: Technology - WinForms"
-          }
-        },
-        "contentsource": {
-          "(?i).*dotnet-desktop-guide\/framework\/wpf.*": {
-            "labels-add": ":books: Area - .NET Framework,:card_file_box: Technology - WPF"
-          },
-          "(?i).*dotnet-desktop-guide\/framework\/winforms.*": {
-            "labels-add": ":books: Area - .NET Framework,:card_file_box: Technology - WinForms"
-          },
-          "(?i).*dotnet-desktop-guide\/net\/wpf.*": {
-            "labels-add": ":books: Area - .NET,:card_file_box: Technology - WPF"
-          },
-          "(?i).*dotnet-desktop-guide\/net\/winforms.*": {
-            "labels-add": ":books: Area - .NET,:card_file_box: Technology - WinForms"
-          }
-        }
       }
     },
     "closed": {
