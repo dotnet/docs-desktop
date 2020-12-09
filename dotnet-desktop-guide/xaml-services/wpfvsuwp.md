@@ -126,7 +126,7 @@ Additional properties such as WPF's `HasLogicalOrientation`, `HorizontalOffset` 
 * UWP has no support for data (input) validation. This is a large issue for line-of-business apps migrating from WPF to UWP that heavily use this feature in view models or binding.
 * The UWP styling system is different enough from WPF to require extra effort during porting. UWP uses the VistualStateManger instead of concepts like DataTriggers or EventTriggers from WPF. Styling/Templating are one of the main differences.
 * The ResourceDictionary XAML markup in UWP supports far fewer features than in WPF.
-* UWP seems to follow only the XAML/2006 spec instead of [XAML/2009](xaml-2009-language-features.md) supported by WPF 
+* UWP seems to follow only the XAML/2006 spec instead of [XAML/2009](xaml-2009-language-features.md) supported by WPF
 * Several UWP controls are sealed and new controls cannot derive from them
 * For advanced rendering, UWP has fewer features built in. This requires falling back to Win2D or composition more often.
 * There are several namespaces differences in UWP and WPF. For example, WPF has System.Windows.Media.Colors while UWP moves this to Windows.UI.Colors.
