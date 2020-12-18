@@ -154,7 +154,7 @@ This XML gives you the basic structure of the project. However, it doesn't conta
 
 ### Resources and settings
 
-One thing to note about the difference between .NET Framework projects and the SDK-style projects used by .NET 5 is that .NET Framework projects use an opt-in model for code files. Any code file you wanted to compile needed to be explicitly defined in your project file. SDK-style projects are reverse, they default to opt-out behavior: All code files starting from the project's directory and below are automatically included in your project. You don't need to migrate these entries if they are simple and without settings. This is the same for other common files such as _resx_.
+One thing to note about the difference between .NET Framework projects and the SDK-style projects used by .NET 5 is that .NET Framework projects use an opt-in model for code files. Any code file you want to compile needs to be explicitly defined in your project file. SDK-style projects are reverse, they default to opt-out behavior: All code files starting from the project's directory and below are automatically included in your project. You don't need to migrate these entries if they are simple and without settings. This is the same for other common files such as _resx_.
 
 Windows Forms projects also include Windows Form project specific files, such as _Properties/Settings.settings_ and _Properties/Resources.resx_. These files may need to be migrated they are declared in your original project.
 
