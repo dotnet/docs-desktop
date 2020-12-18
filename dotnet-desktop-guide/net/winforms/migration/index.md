@@ -154,11 +154,13 @@ This XML gives you the basic structure of the project. However, it doesn't conta
 
 ### Resources and settings
 
-Windows Forms projects for .NET Framework typically include other files such as *Properties/Settings.settings* and *Properties/Resources.resx*. These files, and any *resx* file created for your app besides form *resx* files, would need to be migrated.
+One thing to note about the difference between .NET Framework projects and the SDK-style projects used by .NET 5 is that .NET Framework projects use an opt-in model for code files. Any code file you want to compile needs to be explicitly defined in your project file. SDK-style projects are reverse, they default to opt-out behavior: All code files starting from the project's directory and below are automatically included in your project. You don't need to migrate these entries if they are simple and without settings. This is the same for other common files such as _resx_.
+
+Windows Forms projects also include Windows Form project specific files, such as _Properties/Settings.settings_ and _Properties/Resources.resx_. These files may need to be migrated they are declared in your original project.
 
 Copy those entries from the old project file into an `<ItemGroup>` element in the new project. After you copy the entries, change any `<Compile Include="value">` or `<EmbeddedResource Include="value">` elements to instead use `Update` instead of `Include`.
 
-- Import the configuration for the *Settings.settings* file. Notice that the `Include` was changed to `Update` on the `<Compile>` element:
+- Import the configuration for the _Settings.settings_ file. Notice that the `<Compile>` entry's `Update` attribute was changed from `Include` to `Update` because code files are already included:
 
   ```xml
   <ItemGroup>
@@ -174,14 +176,16 @@ Copy those entries from the old project file into an `<ItemGroup>` element in th
   </ItemGroup>
   ```
 
+  Notice that the _Properties\Settings.settings_ entry remained `Include`. The project doesn't automatically include _settings_ files.
+
   > [!IMPORTANT]
-  > **Visual Basic** projects typically use the folder *My Project* while C# projects typically use the folder *Properties* for the default project settings file.
+  > **Visual Basic** projects typically use the folder _My Project_ while C# projects typically use the folder _Properties_ for the default project settings file.
   
-- Import the configuration for any *resx* file, such as the *properties/Resources.resx* file. Notice that the `Include` was changed to `Update` on both the `<Compile>` and `<EmbeddedResource>` elements, and `<SubType>` was removed from `<EmbeddedResource>`:
+- Import the configuration for any _resx_ file, such as the _properties/Resources.resx_ file. Notice that the `Include` was changed to `Update` on both the `<Compile>` and `<EmbeddedResource>` elements, and `<SubType>` was removed from `<EmbeddedResource>`:
 
   ```xml
   <ItemGroup>
-    <EmbeddedResource Update="Properties\Resources.resx">
+    <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
@@ -194,17 +198,17 @@ Copy those entries from the old project file into an `<ItemGroup>` element in th
   ```
 
   > [!IMPORTANT]
-  > **Visual Basic** projects typically use the folder *My Project* while C# projects typically use the folder *Properties* for the default project resource file.
+  > **Visual Basic** projects typically use the folder _My Project_ while C# projects typically use the folder _Properties_ for the default project resource file.
 
 ### Visual Basic
 
 Visual Basic language projects require extra configuration.
 
-01. Import the configuration file *My Project\Application.myapp* setting. Notice that the `<None>` and `<Compile>` elements use the `Update` attribute instead of the `Include` attribute.
+01. Import the configuration file _My Project\Application.myapp_ setting. Notice that the `<Compile>` element uses the `Update` attribute instead of the `Include` attribute.
 
     ```xml
     <ItemGroup>
-      <None Update="My Project\Application.myapp">
+      <None Include="My Project\Application.myapp">
         <Generator>MyApplicationCodeGenerator</Generator>
         <LastGenOutput>Application.Designer.vb</LastGenOutput>
       </None>
@@ -283,7 +287,7 @@ After you convert a project to the new SDK-style format, reload the project in V
 
 ## Edit App.config
 
-If your app has an *App.config* file, remove the `<supportedRuntime>` element:
+If your app has an _App.config_ file, remove the `<supportedRuntime>` element:
 
 ```xml
 <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5" />
