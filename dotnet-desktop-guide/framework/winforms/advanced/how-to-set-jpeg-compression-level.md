@@ -88,7 +88,7 @@ End Sub
 ```csharp  
 private ImageCodecInfo GetEncoder(ImageFormat format)  
 {  
-    ImageCodecInfo[] codecs = ImageCodecInfo.GetImageDecoders();  
+    ImageCodecInfo[] codecs = ImageCodecInfo.GetImageEncoders();  
     foreach (ImageCodecInfo codec in codecs)  
     {  
         if (codec.FormatID == format.Guid)  
@@ -103,7 +103,7 @@ private ImageCodecInfo GetEncoder(ImageFormat format)
 ```vb  
 Private Function GetEncoder(ByVal format As ImageFormat) As ImageCodecInfo  
   
-    Dim codecs As ImageCodecInfo() = ImageCodecInfo.GetImageDecoders()  
+    Dim codecs As ImageCodecInfo() = ImageCodecInfo.GetImageEncoders()  
     Dim codec As ImageCodecInfo  
     For Each codec In codecs  
         If codec.FormatID = format.Guid Then  
