@@ -40,7 +40,6 @@ This example shows how to define and use an application-scope custom resource di
 
 Some resource types may automatically use a property defined by the type as an explicit key, such as the <xref:System.Windows.Style> and <xref:System.Windows.DataTemplate> types. This may override your `x:Key` value. To guarantee that your `x:Key` key is respected, declare it before the explicit key property. For more information, see [Styles, DataTemplates, and implicit keys](../advanced/xaml-resources-define.md#styles-datatemplates-and-implicit-keys).
 
-
 ## See also
 
 - <xref:System.Windows.ResourceDictionary>
