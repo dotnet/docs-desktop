@@ -224,7 +224,7 @@ The `<Button>` we created has a `Click` event that is raised when the user press
 Now you need to generate the handler code. Right-click on `ButtonAddName_Click` and select **Go To Definition**. This will generate a method in the code behind for you that matches the handler name you've entered.
 
 :::code language="csharp" source="snippets/create-app-visual-studio/csharp/MoreControls3.xaml.cs" id="ButtonEvent":::
-:::code language="vb" source="snippets/create-app-visual-studio/vb/MoreControls3.xaml.vb" id="FinalCode":::
+:::code language="vb" source="snippets/create-app-visual-studio/vb/MoreControls3.xaml.vb" id="ButtonEvent":::
 
 Next, add the following code to do these three steps:
 
