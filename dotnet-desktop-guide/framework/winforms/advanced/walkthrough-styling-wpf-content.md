@@ -6,9 +6,6 @@ helpviewer_keywords:
   - "interoperability [WDF]"
   - "styles [Windows Forms], WPF content"
 ms.assetid: e574aac7-7ea4-4cdb-8034-bab541f000df
-author: jillre
-ms.author: jillfra
-manager: jillfra
 ---
 # Walkthrough: Style WPF content
 

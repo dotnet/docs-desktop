@@ -9,9 +9,6 @@ helpviewer_keywords:
   - "user controls [Windows Forms]"
   - "custom controls [Windows Forms]"
 ms.assetid: e5a8e088-7ec8-4fd9-bcb3-9078fd134829
-author: jillre
-ms.author: jillfra
-manager: jillfra
 ---
 # Develop Windows Forms controls at design time
 
