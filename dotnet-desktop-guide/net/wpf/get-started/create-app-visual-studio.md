@@ -244,4 +244,3 @@ Now that the event has been coded, you can run the app by pressing the <kbd>F5</
 
 > [!div class="nextstepaction"]
 > [Learn more about Windows Presentation Foundation](../overview/index.md)
-
