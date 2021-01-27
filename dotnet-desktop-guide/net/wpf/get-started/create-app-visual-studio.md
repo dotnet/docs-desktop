@@ -23,7 +23,7 @@ In this tutorial, you learn how to:
 > - Handle control events to provide app functionality
 > - Run the app
 
-Here is a preview of the app you'll build while following this tutorial:
+Here's a preview of the app you'll build while following this tutorial:
 
 :::image type="content" source="media/create-app-visual-studio/app-finished.png" alt-text="Finished sample app for WPF tutorial":::
 
@@ -44,14 +44,14 @@ The first step to creating a new app is opening Visual Studio and generating the
 
 01. In the **Search for templates** box, type **wpf**, and then press <kbd>Enter</kbd>.
 01. In the **code language** dropdown, choose **C#** or **Visual Basic**.
-01. In the templates list, select **WPF Application** and then click **Next**.
+01. In the templates list, select **WPF Application** and then select **Next**.
 
     > [!IMPORTANT]
     > Don't select the **Windows Forms App (.NET _Framework_)** template.
 
     :::image type="content" source="media/create-app-visual-studio/vs-template-search.png" alt-text="Search for the Windows Forms template in Visual Studio 2019 for .NET":::
 
-01. In the **Configure your new project** window, perform the following:
+01. In the **Configure your new project** window, do the following:
 
     01. In the **Project name** box, enter **Names**.
     01. Select the **Place solution and project in the same directory** check box.
@@ -92,7 +92,7 @@ Support for WPF in Visual Studio has five important components that you'll inter
 
 05. XAML code editor
 
-    This is the XAML code editor for a XAML document. This is a way to craft your UI by hand without a designer. A designer implies a lot of settings and default values when you add controls via the designer. The XAML code editor gives you a lot more control.
+    This is the XAML code editor for a XAML document. The XAML code editor is a way to craft your UI by hand without a designer. The designer may infer the values of properties on a control when the control is added in the designer. The XAML code editor gives you a lot more control.
 
     When both the designer and editor are visible, changes to one is reflected in the other. As you navigate the text caret in the code editor, the **Properties** pane displays the properties and attributes about that object.
 
@@ -115,13 +115,13 @@ When your project is opened, the XAML code editor is visible with a minimal amou
 </Window>
 ```
 
-Let's break down this XAML code to understand it better. XAML is simply XML that can be processed by the compilers and frameworks that WPF utilizes. It describes the WPF UI and interacts with .NET code. To understand XAML, you should, at a minimum, be familiar with the basics of XML.
+Let's break down this XAML code to understand it better. XAML is simply XML that can be processed by the compilers that WPF uses. It describes the WPF UI and interacts with .NET code. To understand XAML, you should, at a minimum, be familiar with the basics of XML.
 
 The document root `<Window>` represents the type of object being described by the XAML file. There are eight attributes declared, and they generally belong to three categories:
 
 - Namespaces
 
-  An XML namespace provides structure to the XML, determining what is or isn't allowed to be declared in the file at a specific element within the file.
+  An XML namespace provides structure to the XML, determining what is or isn't allowed to be declared in the file.
 
   The main `xmlns` attribute imports the XML namespace for the entire file, and in this case, maps to the types declared by WPF. The other XML namespaces declare a prefix and import other types and objects for the XAML file. For example, the `xmlns:local` namespace declares the `local` prefix and maps to the objects declared by your project, the ones declared in the `Names` code namespace.
 
@@ -135,21 +135,21 @@ The document root `<Window>` represents the type of object being described by th
 
 ## Change the window
 
-First, let's run the project and see the default output. You see that there is a window that pops up, without any controls, and a title of **MainWindow**:
+First, let's run the project and see the default output. You'll see that a window that pops up, without any controls, and a title of **MainWindow**:
 
 :::image type="content" source="media/create-app-visual-studio/app-default.png" alt-text="A blank WPF app":::
 
-For our example app, this window is too big, and the title bar isn't really descriptive. Change the title and size of the window by changing the appropriate attributes in the XAML.
+For our example app, this window is too large, and the title bar isn't descriptive. Change the title and size of the window by changing the appropriate attributes in the XAML.
 
 :::code language="xaml" source="snippets/create-app-visual-studio/csharp/Start.xaml" highlight="8":::
 
 ## Prepare the layout
 
-WPF provides a very powerful layout system with many different layout controls. Layout controls help place and size child controls, and can even do so automatically. The default layout control provided to you in this XAML is the `<Grid>` control.
+WPF provides a powerful layout system with many different layout controls. Layout controls help place and size child controls, and can even do so automatically. The default layout control provided to you in this XAML is the `<Grid>` control.
 
-The `Grid` control lets you define rows and columns, much like a table, and place controls within the bounds of a specific row and column combination. You can have any number of child controls or other layout controls added to the `Grid`. For example, you can place another `Grid` control inside of a specific row and column combination, and that new `Grid` can then define more rows and columns and have it's own children.
+The `Grid` control lets you define rows and columns, much like a table, and place controls within the bounds of a specific row and column combination. You can have any number of child controls or other layout controls added to the `Grid`. For example, you can place another `Grid` control in a specific row and column combination, and that new `Grid` can then define more rows and columns and have its own children.
 
-The `<Grid>` control defines rows and columns in which your controls will reside. A grid always has a single row and column declared, meaning, the grid by default is a single cell. That doesn't really give you much flexibility in placing controls.
+The `<Grid>` control defines rows and columns in which your controls will be. A grid always has a single row and column declared, meaning, the grid by default is a single cell. That doesn't really give you much flexibility in placing controls.
 
 Before we add the new rows and columns, add a new attribute to the `<Grid>` element: `Margin="10"`. This insets the grid from the window and makes it look a little nicer.
 
@@ -173,23 +173,23 @@ We have a problem though, the label takes up half the window as it was automatic
 
 :::code language="xaml" source="snippets/create-app-visual-studio/csharp/LayoutStep4.xaml" range="11-14" highlight="2":::
 
-Notice that the designer now shows the label occupying a small amount of the available height. There is now more room for the next row to occupy. Most controls define some sort of height and width value that they should occupy that looks best for them. In the case of the label control, it has a height value that ensures that you can read it.
+Notice that the designer now shows the label occupying a small amount of the available height. There's now more room for the next row to occupy. Most controls define some sort of height and width value that they should occupy that looks best for them. In the case of the label control, it has a height value that ensures that you can read it.
 
 :::image type="content" source="media/create-app-visual-studio/vs-designer-grid-rows-columns-label.png" alt-text="A WPF app with the margin set on a grid and a label control in the first row":::
 
 ### Control placement
 
-Let's talk about control placement. The label created in the section above was automatically placed in row 0 and column 0 of the grid. The numbering for rows and columns starts at 0 and increments by 1 for each new row or column. The control doesn't know anything about the grid, and the control doesn't define any properties to control it's placement within the grid. The control could have even been placed within some other layout control which has it's own set of rules defining how to place controls.
+Let's talk about control placement. The label created in the section above was automatically placed in row 0 and column 0 of the grid. The numbering for rows and columns starts at 0 and increments by 1 for each new row or column. The control doesn't know anything about the grid, and the control doesn't define any properties to control its placement within the grid. The control could have even been placed within some other layout control which has its own set of rules defining how to place controls.
 
-How do you tell a control to use a different row or column when the control has no knowledge of the grid? Attached properties! The grid takes advantage of the powerful property system provided by WPF. The grid defines new properties that the child controls can declare and use. The properties don't actually exist on the control itself, they are attached by the grid when the control is added to the grid.
+How do you tell a control to use a different row or column when the control has no knowledge of the grid? Attached properties! The grid takes advantage of the powerful property system provided by WPF. The grid defines new properties that the child controls can declare and use. The properties don't actually exist on the control itself, they're attached by the grid when the control is added to the grid.
 
-The grid defines two properties to determine the row and column placement of a child control: `Grid.Row` and `Grid.Column`. If these properties are omitted from the control, it's implied that they have the default values of 0, hence, the control is placed in row `0` and column `0` of the grid. Try changing the placement of the `<Label>` control by setting the `Grid.Column` attribute to `1`:
+The grid defines two properties to determine the row and column placement of a child control: `Grid.Row` and `Grid.Column`. If these properties are omitted from the control, it's implied that they have the default values of 0, so, the control is placed in row `0` and column `0` of the grid. Try changing the placement of the `<Label>` control by setting the `Grid.Column` attribute to `1`:
 
 ```xaml
 <Label Grid.Column="1">Names</Label>
 ```
 
-Notice how your label now moved to the 2nd column. You can use the `Grid.Row` and `Grid.Column` attached properties to place the next controls we'll create. For now though, restore the label to row 0.
+Notice how your label now moved to the second column. You can use the `Grid.Row` and `Grid.Column` attached properties to place the next controls we'll create. For now though, restore the label to row 0.
 
 ## Create the name list box
 
@@ -199,7 +199,7 @@ Now that the grid is correctly sized and the label created, add a list box contr
 
 ## Add the remaining controls
 
-The last two controls we'll add are a text box which is used to type in a name, and a button to add the name to the list box. However, instead of trying to create more rows and columns for the grid, we'll put these controls into the `<StackPanel>` layout control.
+The last two controls we'll add are a text box and a button, which the user will use to write and a name to the list box. However, instead of trying to create more rows and columns for the grid, we'll put these controls into the `<StackPanel>` layout control.
 
 The stack panel differs from the grid in how the controls are placed. While you tell the grid where you want the controls to be with the `Grid.Row` and `Grid.Column` attached properties, the stack panel works automatically by placing the first control, then placing the next control after it, continuing until all controls have been placed. It "stacks" each control below the other.
 
@@ -217,7 +217,7 @@ The layout for the window is complete. However, our app doesn't have any logic i
 
 ## Add code for the Click event
 
-The `<Button>` we just created has a `Click` event that is raised when the user presses the button. You can subscribe to this event and add code to add a name to the list box. Just like you set a property on a control by adding a XAML attribute, you can use a XAML attribute to subscribe to an event. Set the `Click` attribute to `ButtonAddName_Click`
+The `<Button>` we created has a `Click` event that is raised when the user presses the button. You can subscribe to this event and add code to add a name to the list box. Just like you set a property on a control by adding a XAML attribute, you can use a XAML attribute to subscribe to an event. Set the `Click` attribute to `ButtonAddName_Click`
 
 :::code language="xaml" source="snippets/create-app-visual-studio/csharp/MoreControls3.xaml" id="ButtonEvent" highlight="3":::
 
@@ -225,7 +225,7 @@ Now you need to generate the handler code. Right-click on `ButtonAddName_Click` 
 
 :::code language="cs" source="snippets/create-app-visual-studio/csharp/MoreControls3.xaml.cs" id="ButtonEvent":::
 
-Next, add the following code to perform these three steps:
+Next, add the following code to do these three steps:
 
 01. Make sure that the text box contains a name.
 01. Validate that the name entered in the text box doesn't already exist.
