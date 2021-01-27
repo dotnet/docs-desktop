@@ -38,7 +38,7 @@ The <xref:System.Windows.Forms.WebBrowser> control lets you implement two-way co
      [!code-csharp[System.Windows.Forms.WebBrowser.ObjectForScripting#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.WebBrowser.ObjectForScripting/CS/form1.cs#3)]
      [!code-vb[System.Windows.Forms.WebBrowser.ObjectForScripting#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.WebBrowser.ObjectForScripting/vb/form1.vb#3)]
 
-4. Set the <xref:System.Windows.Forms.WebBrowser.ObjectForScripting%2A> property in the form's constructor or override the <xref:System.Windows.Forms.Form.OnLoad> method.
+4. Set the <xref:System.Windows.Forms.WebBrowser.ObjectForScripting%2A> property in the form's constructor or override the <xref:System.Windows.Forms.Form.OnLoad%2A> method.
 
      The following code uses the form class itself for the scripting object.
 
