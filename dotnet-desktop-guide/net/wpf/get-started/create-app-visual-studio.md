@@ -40,16 +40,16 @@ The first step to creating a new app is opening Visual Studio and generating the
 01. Open Visual Studio.
 01. Select **Create a new project**.
 
-    :::image type="content" source="media/create-app-visual-studio/vs-create-new-project.png" alt-text="Create a new Windows Forms project in Visual Studio 2019 for .NET":::
+    :::image type="content" source="media/create-app-visual-studio/vs-create-new-project.png" alt-text="Create a new WPF project in Visual Studio 2019 for .NET":::
 
 01. In the **Search for templates** box, type **wpf**, and then press <kbd>Enter</kbd>.
 01. In the **code language** dropdown, choose **C#** or **Visual Basic**.
 01. In the templates list, select **WPF Application** and then select **Next**.
 
     > [!IMPORTANT]
-    > Don't select the **Windows Forms App (.NET _Framework_)** template.
+    > Don't select the **WPF Application (.NET _Framework_)** template.
 
-    :::image type="content" source="media/create-app-visual-studio/vs-template-search.png" alt-text="Search for the Windows Forms template in Visual Studio 2019 for .NET":::
+    :::image type="content" source="media/create-app-visual-studio/vs-template-search.png" alt-text="Search for the WPF template in Visual Studio 2019 for .NET":::
 
 01. In the **Configure your new project** window, do the following:
 
@@ -58,11 +58,11 @@ The first step to creating a new app is opening Visual Studio and generating the
     01. Optionally, choose a different **Location** to save your code.
     01. Select the **Next** button.
 
-    :::image type="content" source="media/create-app-visual-studio/vs-config-new-project.png" alt-text="Configure new Windows Forms project in Visual Studio 2019 for .NET":::
+    :::image type="content" source="media/create-app-visual-studio/vs-config-new-project.png" alt-text="Configure new WPF project in Visual Studio 2019 for .NET":::
 
 01. In the **Additional information** window, select **.NET 5.0 (Current)** for **Target Framework** and make sure that the **Run on .NET Framework** check box is cleared. Select the **Create** button.
 
-    :::image type="content" source="media/create-app-visual-studio/vs-config-new-project-next.png" alt-text="Configure new Windows Forms project in Visual Studio 2019 for .NET":::
+    :::image type="content" source="media/create-app-visual-studio/vs-config-new-project-next.png" alt-text="Select target framework for new WPF project in Visual Studio 2019 for .NET":::
 
 Once the app is generated, Visual Studio should open the XAML designer pane for the default window, _MainWindow_. If the designer isn't visible, double-click on the _MainWindow.xaml_ file in the **Solution Explorer** pane to open the designer.
 
@@ -70,11 +70,11 @@ Once the app is generated, Visual Studio should open the XAML designer pane for 
 
 Support for WPF in Visual Studio has five important components that you'll interact with as you create an app:
 
-:::image type="content" source="media/create-app-visual-studio/vs-main-window.png" alt-text="The important components of Visual Studio you should know when creating a Windows Forms project for .NET":::
+:::image type="content" source="media/create-app-visual-studio/vs-main-window.png" alt-text="The important components of Visual Studio you should know when creating a WPF project for .NET":::
 
 01. Solution Explorer
 
-    All of your project files, code, forms, resources, will appear in this pane.
+    All of your project files, code, windows, resources, will appear in this pane.
 
 02. Properties
 
