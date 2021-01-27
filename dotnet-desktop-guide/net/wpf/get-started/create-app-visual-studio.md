@@ -139,7 +139,7 @@ First, let's run the project and see the default output. You'll see that a windo
 
 :::image type="content" source="media/create-app-visual-studio/app-default.png" alt-text="A blank WPF app":::
 
-For our example app, this window is too large, and the title bar isn't descriptive. Change the title and size of the window by changing the appropriate attributes in the XAML.
+For our example app, this window is too large, and the title bar isn't descriptive. Change the title and size of the window by changing the appropriate attributes in the XAML to the following values:
 
 :::code language="xaml" source="snippets/create-app-visual-studio/csharp/Start.xaml" highlight="8":::
 
@@ -195,11 +195,11 @@ Notice how your label now moved to the second column. You can use the `Grid.Row`
 
 Now that the grid is correctly sized and the label created, add a list box control on the row below the label. The list box will be in row `1` and column `0`. We'll also give this control the name of `lstNames`. Once a control is named, it can be referenced in the code behind. The name is assigned to the control with the `x:Name` attribute.
 
-:::code language="xaml" source="snippets/create-app-visual-studio/csharp/MoreControls1.xaml" range="9-24" highlight="2":::
+:::code language="xaml" source="snippets/create-app-visual-studio/csharp/MoreControls1.xaml" range="9-24" highlight="14":::
 
 ## Add the remaining controls
 
-The last two controls we'll add are a text box and a button, which the user will use to write and a name to the list box. However, instead of trying to create more rows and columns for the grid, we'll put these controls into the `<StackPanel>` layout control.
+The last two controls we'll add are a text box and a button, which the user will use to enter a name to add to the list box. However, instead of trying to create more rows and columns for the grid, we'll put these controls into the `<StackPanel>` layout control.
 
 The stack panel differs from the grid in how the controls are placed. While you tell the grid where you want the controls to be with the `Grid.Row` and `Grid.Column` attached properties, the stack panel works automatically by placing the first control, then placing the next control after it, continuing until all controls have been placed. It "stacks" each control below the other.
 
@@ -223,7 +223,8 @@ The `<Button>` we created has a `Click` event that is raised when the user press
 
 Now you need to generate the handler code. Right-click on `ButtonAddName_Click` and select **Go To Definition**. This will generate a method in the code behind for you that matches the handler name you've entered.
 
-:::code language="cs" source="snippets/create-app-visual-studio/csharp/MoreControls3.xaml.cs" id="ButtonEvent":::
+:::code language="csharp" source="snippets/create-app-visual-studio/csharp/MoreControls3.xaml.cs" id="ButtonEvent":::
+:::code language="vb" source="snippets/create-app-visual-studio/vb/MoreControls3.xaml.vb" id="FinalCode":::
 
 Next, add the following code to do these three steps:
 
@@ -231,7 +232,7 @@ Next, add the following code to do these three steps:
 01. Validate that the name entered in the text box doesn't already exist.
 01. Add the name to the list box.
 
-:::code language="cs" source="snippets/create-app-visual-studio/csharp/Final.xaml.cs" id="FinalCode":::
+:::code language="csharp" source="snippets/create-app-visual-studio/csharp/Final.xaml.cs" id="FinalCode":::
 :::code language="vb" source="snippets/create-app-visual-studio/vb/Final.xaml.vb" id="FinalCode":::
 
 ## Run the app
