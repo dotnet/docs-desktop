@@ -4,9 +4,6 @@ ms.date: "02/13/2019"
 helpviewer_keywords:
   - "designer actions"
 ms.assetid: cac337e6-00f6-4584-80f4-75728f5ea113
-author: jillre
-ms.author: jillfra
-manager: jillfra
 ---
 # Walkthrough: Perform common tasks using designer actions
 

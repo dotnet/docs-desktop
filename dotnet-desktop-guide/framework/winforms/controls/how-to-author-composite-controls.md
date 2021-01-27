@@ -7,9 +7,6 @@ helpviewer_keywords:
   - "user controls [Windows Forms], inheriting from"
   - "composite controls [Windows Forms], creating"
 ms.assetid: 79c9cf05-5ab6-4a18-886d-88a64748b098
-author: jillre
-ms.author: jillfra
-manager: jillfra
 ---
 # How to: Author composite controls
 
