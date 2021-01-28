@@ -11,9 +11,6 @@ helpviewer_keywords:
   - "collections [Windows Forms], serializing"
   - "collections [Windows Forms], standard types"
 ms.assetid: 020c9df4-fdc5-4dae-815a-963ecae5668c
-author: jillre
-ms.author: jillfra
-manager: jillfra
 ---
 # Walkthrough: Serialize collections of standard types
 

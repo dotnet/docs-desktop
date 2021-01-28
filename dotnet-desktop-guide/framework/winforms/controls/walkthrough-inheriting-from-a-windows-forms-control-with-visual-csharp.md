@@ -8,9 +8,6 @@ helpviewer_keywords:
   - "inheritance [Windows Forms], walkthroughs"
   - "custom controls [Windows Forms], inheritance"
 ms.assetid: 09476da0-8d4c-4a4c-b969-649519dfb438
-author: jillre
-ms.author: jillfra
-manager: jillfra
 ---
 # Walkthrough: Inherit from a Windows Forms Control with C\#
 

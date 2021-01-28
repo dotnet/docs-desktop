@@ -1,10 +1,7 @@
 ﻿//<snippet0>
 using System;
 using System.Windows.Forms;
-using System.Security.Permissions;
 
-[PermissionSet(SecurityAction.Demand, Name="FullTrust")]
-[System.Runtime.InteropServices.ComVisibleAttribute(true)]
 public class Form1 : Form
 {
     private WebBrowser webBrowser1 = new WebBrowser();
@@ -25,11 +22,12 @@ public class Form1 : Form
         webBrowser1.Dock = DockStyle.Fill;
         Controls.Add(webBrowser1);
         Controls.Add(button1);
-        Load += new EventHandler(Form1_Load);
     }
 
-    private void Form1_Load(object sender, EventArgs e)
+    protected override void OnLoad(EventArgs e)
     {
+        base.OnLoad(e);
+
         //<snippet1>
         webBrowser1.AllowWebBrowserDrop = false;
         //</snippet1>
@@ -40,7 +38,7 @@ public class Form1 : Form
         webBrowser1.WebBrowserShortcutsEnabled = false;
         //</snippet3>
         //<snippet4>
-        webBrowser1.ObjectForScripting = this;
+        webBrowser1.ObjectForScripting = new MyScriptObject(this);
         //</snippet4>
         //<snippet9>
         // Uncomment the following line when you are finished debugging.
@@ -56,13 +54,6 @@ public class Form1 : Form
             "</body></html>";
     }
 
-    //<snippet5>
-    public void Test(String message)
-    {
-        MessageBox.Show(message, "client code");
-    }
-    //</snippet5>
-
     private void button1_Click(object sender, EventArgs e)
     {
         //<snippet8>
@@ -71,4 +62,21 @@ public class Form1 : Form
         //</snippet8>
     }
 }
+
+//<snippet5>
+public class MyScriptObject
+{
+    private Form1 _form;
+
+    public MyScriptObject(Form1 form)
+    {
+        _form = form;
+    }
+
+    public void Test(string message)
+    {
+        MessageBox.Show(message, "client code");
+    }
+}
+//</snippet5>
 //</snippet0>

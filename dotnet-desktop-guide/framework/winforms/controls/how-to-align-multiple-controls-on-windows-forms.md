@@ -9,9 +9,6 @@ helpviewer_keywords:
   - "controls [Windows Forms], positioning"
   - "controls [Windows Forms], aligning"
 ms.assetid: b7175656-f532-49e9-b0b1-177d1b40af3e
-author: jillre
-ms.author: jillfra
-manager: jillfra
 ---
 # How to: Align Multiple Controls on Windows Forms
 
