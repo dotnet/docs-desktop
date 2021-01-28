@@ -6,9 +6,6 @@ helpviewer_keywords:
   - "layout [Windows Forms], resizing"
   - "layout [Windows Forms], child controls"
 ms.assetid: 5a5723ff-34e0-4b6f-a57b-be4ebe35cb34
-author: jillre
-ms.author: jillfra
-manager: jillfra
 ---
 # How to: Reassign existing controls to a different parent
 

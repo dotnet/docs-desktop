@@ -9,9 +9,6 @@ helpviewer_keywords:
   - "Windows Forms, content assignments"
   - "WPF user control [Windows Forms], hosting in Windows Forms"
 ms.assetid: b3e9ef93-7e0f-4a2f-8f1e-3437609a1eb7
-author: jillre
-ms.author: jillfra
-manager: jillfra
 ---
 # Walkthrough: Assign WPF content on Windows Forms at design time
 

@@ -1,9 +1,6 @@
 ﻿'<snippet0>
 Imports System.Windows.Forms
-Imports System.Security.Permissions
 
-<PermissionSet(SecurityAction.Demand, Name:="FullTrust")> _
-<System.Runtime.InteropServices.ComVisibleAttribute(True)> _
 Public Class Form1
     Inherits Form
 
@@ -24,8 +21,8 @@ Public Class Form1
         Controls.Add(button1)
     End Sub
 
-    Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs) _
-        Handles Me.Load
+    Protected Overrides Sub OnLoad(e As EventArgs)
+        MyBase.OnLoad(e)
 
         '<snippet1>
         webBrowser1.AllowWebBrowserDrop = False
@@ -37,7 +34,7 @@ Public Class Form1
         webBrowser1.WebBrowserShortcutsEnabled = False
         '</snippet3>
         '<snippet4>
-        webBrowser1.ObjectForScripting = Me
+        webBrowser1.ObjectForScripting = New MyScriptObject(Me)
         '</snippet4>
         '<snippet9>
         ' Uncomment the following line when you are finished debugging.
@@ -53,12 +50,6 @@ Public Class Form1
             "</body></html>"
     End Sub
 
-    '<snippet5>
-    Public Sub Test(ByVal message As String)
-        MessageBox.Show(message, "client code")
-    End Sub
-    '</snippet5>
-
     Private Sub button1_Click(ByVal sender As Object, ByVal e As EventArgs) _
         Handles button1.Click
 
@@ -70,4 +61,19 @@ Public Class Form1
     End Sub
 
 End Class
+
+'<snippet5>
+Public Class MyScriptObject
+    Private _form As Form1
+
+    Public Sub New(ByVal form As Form1)
+        _form = form
+    End Sub
+
+    Public Sub Test(ByVal message As String)
+        MessageBox.Show(message, "client code")
+    End Sub
+
+End Class
+'</snippet5>
 '</snippet0>
