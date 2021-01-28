@@ -23,8 +23,8 @@ There are a few features of .NET Framework that .NET 5 doesn't support. For more
 
 If your .NET Framework app lists its NuGet dependencies in a *packages.config* file, migrate to the [`<PackageReference>`](/nuget/consume-packages/package-references-in-project-files) format:
 
-1. In Visual Studio, open the **Solution Explorer** pane.
-1. In your WPF project, right-click **packages.config** > **Migrate packages.config to PackageReference**.
+01. In Visual Studio, open the **Solution Explorer** pane.
+01. In your WPF project, right-click **packages.config** > **Migrate packages.config to PackageReference**.
 
 ![Upgrading to PackageReference](media/differences-from-net-framework/package-reference-migration.png)
 
