@@ -3,6 +3,9 @@ title: What is Windows Presentation Foundation
 description: This article gives an overview of WPF with .NET Core and .NET 5.
 ms.date: 01/14/2021
 ms.topic: overview
+dev_langs: 
+  - "csharp"
+  - "vb"
 #Customer intent: As a developer, I want to understand the components of WPF so that I can understand the overall picture of WPF.
 ---
 
