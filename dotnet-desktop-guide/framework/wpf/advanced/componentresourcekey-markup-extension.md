@@ -21,7 +21,7 @@ Defines and references keys for resources that are loaded from external assembli
 ## XAML Attribute Usage (setting key, verbose)  
   
 ```xml  
-<object x:Key="{ComponentResourceKey TypeInTargetAssembly={x:Type targetTypeName}, ResourceID=targetID}" ... />  
+<object x:Key="{ComponentResourceKey TypeInTargetAssembly={x:Type targetTypeName}, ResourceId=targetID}" ... />  
 ```  
   
 ## XAML Attribute Usage (requesting resource, compact)  
@@ -33,7 +33,7 @@ Defines and references keys for resources that are loaded from external assembli
 ## XAML Attribute Usage (requesting resource, verbose)  
   
 ```xml  
-<object property="{DynamicResource {ComponentResourceKey TypeInTargetAssembly={x:Type targetTypeName}, ResourceID=targetID}}" ... />  
+<object property="{DynamicResource {ComponentResourceKey TypeInTargetAssembly={x:Type targetTypeName}, ResourceId=targetID}}" ... />  
 ```  
   
 ## XAML Values  
