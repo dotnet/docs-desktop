@@ -158,9 +158,9 @@ One thing to note about the difference between .NET Framework projects and the S
 
 Windows Forms projects also include Windows Form project specific files, such as _Properties/Settings.settings_ and _Properties/Resources.resx_. These files may need to be migrated they are declared in your original project.
 
-Copy those entries from the old project file into an `<ItemGroup>` element in the new project. After you copy the entries, change any `<Compile Include="value">` or `<EmbeddedResource Include="value">` elements to instead use `Update` instead of `Include`.
+Copy those entries from the old project file into an `<ItemGroup>` element in the new project. After you copy the entries, change all `<Compile Include="value">` elements to instead use the `Update` attribute instead of `Include`.
 
-- Import the configuration for the _Settings.settings_ file. Notice that the `<Compile>` entry's `Update` attribute was changed from `Include` to `Update` because code files are already included:
+- Import the configuration for the _Settings.settings_ file.
 
   ```xml
   <ItemGroup>
@@ -181,7 +181,7 @@ Copy those entries from the old project file into an `<ItemGroup>` element in th
   > [!IMPORTANT]
   > **Visual Basic** projects typically use the folder _My Project_ while C# projects typically use the folder _Properties_ for the default project settings file.
   
-- Import the configuration for any _resx_ file, such as the _properties/Resources.resx_ file. Notice that the `Include` was changed to `Update` on both the `<Compile>` and `<EmbeddedResource>` elements, and `<SubType>` was removed from `<EmbeddedResource>`:
+- Import the configuration for any _resx_ file, such as the _properties/Resources.resx_ file. Notice that the `Include` attribute was changed to `Update` on the `<Compile>` element, and `<SubType>` was removed from `<EmbeddedResource>`:
 
   ```xml
   <ItemGroup>
