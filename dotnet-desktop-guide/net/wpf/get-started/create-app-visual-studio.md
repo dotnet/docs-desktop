@@ -29,7 +29,7 @@ Here's a preview of the app you'll build while following this tutorial:
 
 ## Prerequisites
 
-- [Visual Studio 2019 version 16.9 or later versions](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+desktopguide+wpf)
+- [Visual Studio 2019 version 16.8.4 or later versions](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+desktopguide+wpf)
   - Select the [Visual Studio Desktop workload](/visualstudio/install/modify-visual-studio?view=vs-2019&preserve-view=true#modify-workloads)
   - Select the [.NET 5 individual component](/visualstudio/install/modify-visual-studio?view=vs-2019&preserve-view=true#modify-individual-components)
 
@@ -49,20 +49,23 @@ The first step to creating a new app is opening Visual Studio and generating the
     > [!IMPORTANT]
     > Don't select the **WPF Application (.NET _Framework_)** template.
 
-    :::image type="content" source="media/create-app-visual-studio/vs-template-search.png" alt-text="Search for the WPF template in Visual Studio 2019 for .NET":::
+    :::image type="content" source="media/create-app-visual-studio/vs-template-search-16.8.png" alt-text="Search for the WPF template in Visual Studio 2019 for .NET":::
 
 01. In the **Configure your new project** window, do the following:
 
     01. In the **Project name** box, enter **Names**.
     01. Select the **Place solution and project in the same directory** check box.
     01. Optionally, choose a different **Location** to save your code.
-    01. Select the **Next** button.
+    01. Select the **Create** button.
 
-    :::image type="content" source="media/create-app-visual-studio/vs-config-new-project.png" alt-text="Configure new WPF project in Visual Studio 2019 for .NET":::
+    :::image type="content" source="media/create-app-visual-studio/vs-config-new-project-16.8.png" alt-text="Configure new WPF project in Visual Studio 2019 for .NET":::
+
+<!-- THIS IS FOR 16.9 when it's released. Also, change the last child step of the previous step to **Next**
 
 01. In the **Additional information** window, select **.NET 5.0 (Current)** for **Target Framework** and make sure that the **Run on .NET Framework** check box is cleared. Select the **Create** button.
 
     :::image type="content" source="media/create-app-visual-studio/vs-config-new-project-next.png" alt-text="Select target framework for new WPF project in Visual Studio 2019 for .NET":::
+-->
 
 Once the app is generated, Visual Studio should open the XAML designer pane for the default window, _MainWindow_. If the designer isn't visible, double-click on the _MainWindow.xaml_ file in the **Solution Explorer** pane to open the designer.
 
@@ -96,9 +99,19 @@ Support for WPF in Visual Studio has five important components that you'll inter
 
     When both the designer and editor are visible, changes to one is reflected in the other. As you navigate the text caret in the code editor, the **Properties** pane displays the properties and attributes about that object.
 
+## Target .NET 5.0
+
+After you create your project, change the target framework to .NET 5.0. Double-click on the _Names_ project file in the **Solution Explorer**. This opens up the project file for editing. Set the `<TargetFramework>` element to `net5.0-windows`:
+
+```xml
+<TargetFramework>net5.0-windows</TargetFramework>
+```
+
+Save the project file and then close the editor tab.
+
 ## Examine the XAML
 
-When your project is opened, the XAML code editor is visible with a minimal amount of XAML code to display the window:
+After your project is created, the XAML code editor is visible with a minimal amount of XAML code to display the window. If the editor isn't open, double-click the _MainWindow.xaml_ item in the **Solution Explorer**. You should see XAML similar to the following:
 
 ```xaml
 <Window x:Class="Names.MainWindow"
