@@ -111,7 +111,7 @@ Save the project file and then close the editor tab.
 
 ## Examine the XAML
 
-After your project is created, the XAML code editor is visible with a minimal amount of XAML code to display the window. If the editor isn't opened, double-click the _MainWindow.xaml_ item in the **Solution Explorer**. You should see XAML similar to the following:
+After your project is created, the XAML code editor is visible with a minimal amount of XAML code to display the window. If the editor isn't open, double-click the _MainWindow.xaml_ item in the **Solution Explorer**. You should see XAML similar to the following:
 
 ```xaml
 <Window x:Class="Names.MainWindow"
