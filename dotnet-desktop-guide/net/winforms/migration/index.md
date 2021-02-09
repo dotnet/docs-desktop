@@ -181,7 +181,7 @@ Copy those entries from the old project file into an `<ItemGroup>` element in th
   > [!IMPORTANT]
   > **Visual Basic** projects typically use the folder _My Project_ while C# projects typically use the folder _Properties_ for the default project settings file.
   
-- Import the configuration for any _resx_ file, such as the _properties/Resources.resx_ file. Notice that the `Include` attribute was changed to `Update` on the `<Compile>` element, and `<SubType>` was removed from `<EmbeddedResource>`:
+- Import the configuration for any _resx_ file, such as the _properties/Resources.resx_ file. Notice that the `Include` attribute was set to `Update` on the `<Compile>` and `<EmbeddedResource>` element, and `<SubType>` was removed from `<EmbeddedResource>`:
 
   ```xml
   <ItemGroup>
