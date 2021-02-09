@@ -401,23 +401,28 @@ Styles enable developers and designers to standardize on a particular appearance
     x:Class="SDKSample.StyleWindow"
     Title="Styles">
 
-  <!-- Style that will be applied to all buttons for this window -->
-  <Style TargetType="{x:Type Button}">
-    <Setter Property="Background" Value="Orange" />
-    <Setter Property="BorderBrush" Value="Crimson" />
-    <Setter Property="FontSize" Value="20" />
-    <Setter Property="FontWeight" Value="Bold" />
-    <Setter Property="Margin" Value="5" />
-  </Style>
+    <Window.Resources>
+        <!-- Style that will be applied to all buttons for this window -->
+        <Style TargetType="{x:Type Button}">
+            <Setter Property="Background" Value="Orange" />
+            <Setter Property="BorderBrush" Value="Crimson" />
+            <Setter Property="FontSize" Value="20" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="Margin" Value="5" />
+        </Style>
+    </Window.Resources>
+    <StackPanel>
 
-  <!-- This button will have the style applied to it -->
-  <Button>Click Me!</Button>
+        <!-- This button will have the style applied to it -->
+        <Button>Click Me!</Button>
 
-  <!-- This label will not have the style applied to it -->
-  <Label>Don't Click Me!</Label>
+        <!-- This label will not have the style applied to it -->
+        <Label>Don't Click Me!</Label>
 
-  <!-- This button will have the style applied to it -->
-  <Button>Click Me!</Button>
+        <!-- This button will have the style applied to it -->
+        <Button>Click Me!</Button>
+        
+    </StackPanel>
 </Window>
 ```
 
