@@ -270,7 +270,7 @@ Notice that the code-behind file uses the CLR namespace `ExampleNamespace` and d
 
 For more information about requirements for code-behind programming in WPF, see [Code-behind, Event Handler, and Partial Class Requirements in WPF](../../../framework/wpf/advanced/code-behind-and-xaml-in-wpf.md#code-behind-event-handler-and-partial-class-requirements-in-wpf).
 
-If you do not want to create a separate code-behind file, you can also inline your code in a XAML file. However, inline code is a less versatile technique that has substantial limitations. For more informaiton, see [Code-Behind and XAML in WPF](../../../framework/wpf/advanced/code-behind-and-xaml-in-wpf.md).
+If you do not want to create a separate code-behind file, you can also inline your code in a XAML file. However, inline code is a less versatile technique that has substantial limitations. For more information, see [Code-Behind and XAML in WPF](../../../framework/wpf/advanced/code-behind-and-xaml-in-wpf.md).
 
 ### Routed events
 
