@@ -13,13 +13,11 @@ This example shows how to create a quadratic Bezier curve.  To create a quadrati
 ## Example  
  In the following examples, a quadratic Bezier curve is drawn from (10,100) to (300,100). The curve has a control point of (200,200).  
   
- [xaml]  
   
  In [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)], you can use attribute syntax to describe a path.  
   
  [!code-xaml[GeometrySample#54](~/samples/snippets/csharp/VS_Snippets_Wpf/GeometrySample/CS/geometryattributesyntaxexample.xaml#54)]  
-  
- [xaml]  
+ 
   
  (Note that this attribute syntax actually creates a <xref:System.Windows.Media.StreamGeometry>, a lighter-weight version of a <xref:System.Windows.Media.PathGeometry>. For more information, see the [Path Markup Syntax](path-markup-syntax.md) page.)  
   
