@@ -21,17 +21,12 @@ The following examples draw a <xref:System.Windows.Media.LineSegment> from (10, 
 ![A LineSegment in a PathFigure](./media/graphicsmm-pathgeometrylinesegment.png "graphicsmm_pathgeometrylinesegment")
 A LineSegment drawn from (10,50) to (200,70)
 
-[xaml]
-
 In [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)], you may use attribute syntax to describe a path.
 
 ```xaml
 <Path Stroke="Black" StrokeThickness="1"
   Data="M 10,50 L 200,70" />
 ```
-
-[xaml]
-
 (Note that this attribute syntax actually creates a <xref:System.Windows.Media.StreamGeometry>, a lighter-weight version of a <xref:System.Windows.Media.PathGeometry>. For more information, see the [Path Markup Syntax](path-markup-syntax.md) page.)
 
 In [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)], you may also draw a line segment by using object element syntax. The following is equivalent to the previous [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] example.
