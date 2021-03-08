@@ -1,6 +1,6 @@
 # .NET Desktop Guide docs
 
-![Markdownlint](https://github.com/dotnet/docs-desktop/workflows/Markdownlint/badge.svg)
+![Markdownlint](https://github.com/dotnet/docs-desktop/workflows/Markdownlint/badge.svg) [![target supported version](https://github.com/dotnet/docs-desktop/actions/workflows/version-sweep.yml/badge.svg)](https://github.com/dotnet/docs-desktop/actions/workflows/version-sweep.yml)
 
 This repository contains the conceptual documentation for .NET desktop technologies, such as Windows Presentation Foundation (WPF) and Windows Forms (WinForms). It's published at the [.NET Desktop Guide documentation site](https://docs.microsoft.com/dotnet/desktop).
 
