@@ -9,7 +9,7 @@ ms.topic: how-to
 
 # Migrating WPF apps to .NET Core
 
-This article covers the steps necessary to migrate a Windows Presentation Foundation (WPF) app from .NET Framework to .NET Core 3.0. If you don't have a WPF app on hand to port, but would like to try out the process, you can use the **Bean Trader** sample app available on [GitHub](https://github.com/dotnet/windows-desktop/tree/master/Samples/BeanTrader). The original app (targeting .NET Framework 4.7.2) is available in the NetFx\BeanTraderClient folder. First we'll explain the steps necessary to port apps in general, and then we'll walk through the specific changes that apply to the **Bean Trader** sample.
+This article covers the steps necessary to migrate a Windows Presentation Foundation (WPF) app from .NET Framework to .NET Core 3.0. If you don't have a WPF app on hand to port, but would like to try out the process, you can use the **Bean Trader** sample app available on [GitHub](https://github.com/dotnet/windows-desktop/tree/main/Samples/BeanTrader). The original app (targeting .NET Framework 4.7.2) is available in the NetFx\BeanTraderClient folder. First we'll explain the steps necessary to port apps in general, and then we'll walk through the specific changes that apply to the **Bean Trader** sample.
 
 [!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
 
@@ -41,7 +41,7 @@ To migrate to .NET Core, you must first:
 
 ## About the sample
 
-This article references the [Bean Trader sample app](https://github.com/dotnet/windows-desktop/tree/master/Samples/BeanTrader) because it uses a variety of dependencies similar to those that real-world WPF apps might have. The app isn't large, but is meant to be a step up from 'Hello World' in terms of complexity. The app demonstrates some issues users may encounter while porting real apps. The app communicates with a WCF service, so for it to run properly, you'll also need to run the BeanTraderServer project (available in the same GitHub repository) and make sure the BeanTraderClient configuration points to the correct endpoint. (By default, the sample assumes the server is running on the same machine at `http://localhost:8090`, which will be true if you launch BeanTraderServer locally.)
+This article references the [Bean Trader sample app](https://github.com/dotnet/windows-desktop/tree/main/Samples/BeanTrader) because it uses a variety of dependencies similar to those that real-world WPF apps might have. The app isn't large, but is meant to be a step up from 'Hello World' in terms of complexity. The app demonstrates some issues users may encounter while porting real apps. The app communicates with a WCF service, so for it to run properly, you'll also need to run the BeanTraderServer project (available in the same GitHub repository) and make sure the BeanTraderClient configuration points to the correct endpoint. (By default, the sample assumes the server is running on the same machine at `http://localhost:8090`, which will be true if you launch BeanTraderServer locally.)
 
 Keep in mind that this sample app is meant to demonstrate .NET Core porting challenges and solutions. It's not meant to demonstrate WPF best practices. In fact, it deliberately includes some anti-patterns to make sure you come across at least a couple of interesting challenges while porting.
 
