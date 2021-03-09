@@ -139,7 +139,7 @@ Public Class RangePeer2
 End Class  
 ```  
   
-For an example implementation, see the [C#](https://github.com/dotnet/docs/tree/master/samples/snippets/csharp/VS_Snippets_Wpf/CustomControlNumericUpDown/CSharp) or [Visual Basic](https://github.com/dotnet/docs/tree/master/samples/snippets/visualbasic/VS_Snippets_Wpf/CustomControlNumericUpDown/visualbasic) source code that implements and consumes a NumericUpDown custom control.  
+For an example implementation, see the [C#](https://github.com/dotnet/docs-desktop/tree/main/dotnet-desktop-guide/samples/snippets/csharp/VS_Snippets_Wpf/CustomControlNumericUpDown/CSharp) or [Visual Basic](https://github.com/dotnet/docs-desktop/tree/main/dotnet-desktop-guide/samples/snippets/visualbasic/VS_Snippets_Wpf/CustomControlNumericUpDown/visualbasic) source code that implements and consumes a NumericUpDown custom control.  
   
 ### Raise Events  
  Automation clients can subscribe to automation events. Custom controls must report changes to control state by calling the <xref:System.Windows.Automation.Peers.AutomationPeer.RaiseAutomationEvent%2A> method. Similarly, when a property value changes, call the <xref:System.Windows.Automation.Peers.AutomationPeer.RaisePropertyChangedEvent%2A> method. The following code shows how to get the peer object from within the control code and call a method to raise an event. As an optimization, the code determines if there are any listeners for this event type. Raising the event only when there are listeners avoids unnecessary overhead and helps the control remain responsive.  
@@ -151,5 +151,5 @@ For an example implementation, see the [C#](https://github.com/dotnet/docs/tree/
 
 - [UI Automation Overview](/dotnet/framework/ui-automation/ui-automation-overview)
 - [Server-Side UI Automation Provider Implementation](/dotnet/framework/ui-automation/server-side-ui-automation-provider-implementation)
-- [NumericUpDown custom control (C#) on GitHub](https://github.com/dotnet/docs/tree/master/samples/snippets/csharp/VS_Snippets_Wpf/CustomControlNumericUpDown/CSharp)  
-- [NumericUpDown custom control (Visual Basic) on GitHub](https://github.com/dotnet/docs/tree/master/samples/snippets/visualbasic/VS_Snippets_Wpf/CustomControlNumericUpDown/visualbasic)
+- [NumericUpDown custom control (C#) on GitHub](https://github.com/dotnet/docs-desktop/tree/main/dotnet-desktop-guide/samples/snippets/csharp/VS_Snippets_Wpf/CustomControlNumericUpDown/CSharp)  
+- [NumericUpDown custom control (Visual Basic) on GitHub](https://github.com/dotnet/docs-desktop/tree/main/dotnet-desktop-guide/samples/snippets/visualbasic/VS_Snippets_Wpf/CustomControlNumericUpDown/visualbasic)
