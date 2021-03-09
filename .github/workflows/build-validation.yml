@@ -2,7 +2,6 @@
 name: Snippets 5000
 
 # Controls when the action will run. Triggers the workflow on push or pull request
-# events but only for the master branch
 on:
   pull_request:
     paths:
@@ -42,7 +41,7 @@ jobs:
       if: ${{ env.DOTNET_DO_INSTALL == 'true' }}
       run: |
         echo "Downloading dotnet-install.ps1"
-        Invoke-WebRequest https://raw.githubusercontent.com/dotnet/install-scripts/master/src/dotnet-install.ps1 -OutFile dotnet-install.ps1
+        Invoke-WebRequest https://raw.githubusercontent.com/dotnet/install-scripts/main/src/dotnet-install.ps1 -OutFile dotnet-install.ps1
         echo "Installing dotnet version ${{ env.DOTNET_INSTALLER_CHANNEL }}"
         .\dotnet-install.ps1 -InstallDir "c:\program files\dotnet" -Channel "${{ env.DOTNET_INSTALLER_CHANNEL }}"
       
