@@ -9,9 +9,6 @@ helpviewer_keywords:
   - "custom controls [Windows Forms], Toolbox bitmaps"
   - "bitmaps [Windows Forms], custom controls"
 ms.assetid: 0ed0840a-616d-41ba-a27d-3573241932ad
-author: jillre
-ms.author: jillfra
-manager: jillfra
 ---
 # How to: Provide a Toolbox Bitmap for a Control
 

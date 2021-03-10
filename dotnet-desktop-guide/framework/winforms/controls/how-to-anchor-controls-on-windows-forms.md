@@ -12,9 +12,6 @@ helpviewer_keywords:
   - "Windows Forms, resizing"
   - "controls [Windows Forms], positioning"
 ms.assetid: 59ea914f-fbd3-427a-80fe-decd02f7ae6d
-author: jillre
-ms.author: jillfra
-manager: jillfra
 ---
 # How to: Anchor controls on Windows Forms
 
