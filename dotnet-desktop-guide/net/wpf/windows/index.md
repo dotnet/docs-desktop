@@ -33,16 +33,6 @@ helpviewer_keywords:
 
 # WPF Windows Overview (WPF .NET)
 
-DELETE ME
-Snippet examples
-<!--
-::code language="xaml" source="snippets/create-app-visual-studio/csharp/LayoutStep3.xaml" range="9-23" highlight="13":::
-::code language="xaml" source="snippets/create-app-visual-studio/csharp/MoreControls2.xaml" id="StackPanel1":::
-::code language="xaml" source="snippets/create-app-visual-studio/csharp/MoreControls3.xaml" id="ButtonEvent" highlight="3":::
-::code language="csharp" source="snippets/create-app-visual-studio/csharp/MoreControls3.xaml.cs" id="ButtonEvent":::
-::code language="vb" source="snippets/create-app-visual-studio/vb/MoreControls3.xaml.vb" id="ButtonEvent":::
--->
-
 Users interact with Windows Presentation Foundation (WPF) applications through windows. The primary purpose of a window is to host content that visualizes data and enables users to interact with data. WPF applications provide their own windows by using the <xref:System.Windows.Window> class. This article introduces <xref:System.Windows.Window> before covering the fundamentals of creating and managing windows in applications.
 
 > [!IMPORTANT]
