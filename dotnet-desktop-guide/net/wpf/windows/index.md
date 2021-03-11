@@ -31,7 +31,7 @@ helpviewer_keywords:
   - "displaying XAML pages [WPF]"
 ---
 
-# WPF Windows Overview (WPF .NET)
+# WPF windows overview (WPF .NET)
 
 Users interact with Windows Presentation Foundation (WPF) applications through windows. The primary purpose of a window is to host content that visualizes data and enables users to interact with data. WPF applications provide their own windows by using the <xref:System.Windows.Window> class. This article introduces <xref:System.Windows.Window> before covering the fundamentals of creating and managing windows in applications.
 
@@ -173,7 +173,7 @@ Public Class Window1
 End Class
 ```
 
-## Configuring a Window for MSBuild
+## Configuring a window for MSBuild
 
 How you implement your window determines how it's configured for MSBuild. For a window that is defined using both XAML markup and code-behind:
 
@@ -228,7 +228,7 @@ The previous example used the `Startup` event to run code that displayed the ini
 
 :::code language="xaml" source="snippets/index/csharp/App.xaml" highlight="5":::
 
-#### Window Ownership
+#### Window ownership
 
 A window that is opened by using the <xref:System.Windows.Window.Show%2A> method doesn't have an implicit relationship with the window that created it. Users can interact with either window independently of the other, which means that either window can do the following:
 
@@ -245,7 +245,7 @@ After ownership is established:
 - The owned window can reference its owner window by inspecting the value of its <xref:System.Windows.Window.Owner%2A> property.
 - The owner window can discover all the windows it owns by inspecting the value of its <xref:System.Windows.Window.OwnedWindows%2A> property.
 
-### Window Activation
+### Window activation
 
 When a window is first opened, it becomes the active window. The _active window_ is the window that is currently capturing user input, such as key strokes and mouse clicks. When a window becomes active, it raises the <xref:System.Windows.Window.Activated> event.
 
@@ -270,7 +270,7 @@ If a background task completes, a window may want to notify the user more urgent
 > [!NOTE]
 > You can handle application-scope activation using the <xref:System.Windows.Application.Activated?displayProperty=nameWithType> and <xref:System.Windows.Application.Deactivated?displayProperty=nameWithType> events.
 
-#### Preventing Window Activation
+#### Preventing window activation
 
 There are scenarios where windows shouldn't be activated when shown, such as conversation windows of a chat application or notification windows of an email application.
 
@@ -287,7 +287,7 @@ If your application has a window that shouldn't be activated when shown, you can
 - The previously activated window is deactivated.
 - The window's <xref:System.Windows.Window.Deactivated> and <xref:System.Windows.Window.Activated> events are then raised as expected in response to user actions.
 
-### Closing a Window
+### Closing a window
 
 The life of a window starts coming to an end when a user closes it. A window can be closed by using elements in the non-client area, including the following:
 
@@ -339,7 +339,7 @@ While a window can be explicitly closed through mechanisms provided in the non-c
 > [!NOTE]
 > A window can't be reopened after it's closed.
 
-### Window Lifetime Events
+### Window lifetime events
 
 The following illustration shows the sequence of the principal events in the lifetime of a window:
 
@@ -349,7 +349,7 @@ The following illustration shows the sequence of the principal events in the lif
 
 :::image type="content" source="./media/index/window-lifetime-no-activation.png" alt-text="Diagram that shows events in a window's lifetime without activation.":::
 
-## Window Location
+## Window location
 
 While a window is open, it has a location in the x and y dimensions relative to the desktop. This location can be determined by inspecting the <xref:System.Windows.Window.Left%2A> and <xref:System.Windows.Window.Top%2A> properties, respectively. Set these properties to change the location of the window.
 
@@ -361,13 +361,13 @@ You can also specify the initial location of a <xref:System.Windows.Window> when
 
 If the startup location is specified as <xref:System.Windows.WindowStartupLocation.Manual>, and the <xref:System.Windows.Window.Left%2A> and <xref:System.Windows.Window.Top%2A> properties have not been set, <xref:System.Windows.Window> will ask the operating system for a location to appear in.
 
-### Topmost Windows and Z-Order
+### Topmost windows and z-order
 
 Besides having an x and y location, a window also has a location in the z dimension, which determines its vertical position with respect to other windows. This is known as the window's z-order, and there are two types: **normal** z-order and **topmost** z-order. The location of a window in the *normal z-order* is determined by whether it's currently active or not. By default, a window is located in the normal z-order. The location of a window in the *topmost z-order* is also determined by whether it's currently active or not. Furthermore, windows in the topmost z-order are always located above windows in the normal z-order. A window is located in the topmost z-order by setting its <xref:System.Windows.Window.Topmost%2A> property to `true`.
 
 Within each z-order type, the currently active window appears above all other windows in the same z-order.
 
-## Window Size
+## Window size
 
 Besides having a desktop location, a window has a size that is determined by several properties, including the various width and height properties and <xref:System.Windows.Window.SizeToContent%2A>.
 
@@ -441,7 +441,7 @@ Me.SizeToContent = SizeToContent.Height
 Me.SizeToContent = SizeToContent.WidthAndHeight
 ```
 
-## Order of Precedence for Sizing Properties
+## Order of precedence for sizing properties
 
 Essentially, the various sizes properties of a window combine to define the range of width and height for a resizable window. To ensure a valid range is maintained, <xref:System.Windows.Window> evaluates the values of the size properties using the following orders of precedence.
 
@@ -461,7 +461,7 @@ Essentially, the various sizes properties of a window combine to define the rang
 
 The order of precedence can also determine the size of a window when it's maximized, which is managed with the <xref:System.Windows.Window.WindowState%2A> property.
 
-## Window State
+## Window state
 
 During the lifetime of a resizable window, it can have three states: normal, minimized, and maximized. A window with a _normal_ state is the default state of a window. A window with this state allows a user to move and resize it by using a resize grip or the border, if it's resizable.
 
@@ -489,13 +489,13 @@ The following example shows how to create a window that is shown as maximized wh
 
 In general, you should set <xref:System.Windows.Window.WindowState%2A> to configure the initial state of a window. Once a _resizable_ window is shown, users can press the minimize, maximize, and restore buttons on the window's title bar to change the window state.
 
-## Window Appearance
+## Window appearance
 
 You change the appearance of the client area of a window by adding window-specific content to it, such as buttons, labels, and text boxes. To configure the non-client area, <xref:System.Windows.Window> provides several properties, which include <xref:System.Windows.Window.Icon%2A> to set a window's icon and <xref:System.Windows.Window.Title%2A> to set its title.
 
 You can also change the appearance and behavior of non-client area border by configuring a window's resize mode, window style, and whether it appears as a button in the desktop task bar.
 
-### Resize Mode
+### Resize mode
 
 Depending on the <xref:System.Windows.Window.WindowStyle%2A> property, you can control if, and how, users resize the window. The window style affects the following:
 
@@ -521,7 +521,7 @@ As with <xref:System.Windows.Window.WindowStyle%2A>, the resize mode of a window
 
 Note that you can detect whether a window is maximized, minimized, or restored by inspecting the <xref:System.Windows.Window.WindowState%2A> property.
 
-### Window Style
+### Window style
 
 The border that is exposed from the non-client area of a window is suitable for most applications. However, there are circumstances where different types of borders are needed, or no borders are needed at all, depending on the type of window.
 
@@ -547,7 +547,7 @@ You can set <xref:System.Windows.Window.WindowStyle%2A> using either XAML markup
 </Window>
 ```
 
-#### Non-Rectangular Window Style
+#### Non-rectangular window style
 
 There are also situations where the border styles that <xref:System.Windows.Window.WindowStyle%2A> allows you to have aren't sufficient. For example, you may want to create an application with a non-rectangular border, like Microsoft Windows Media Player uses.
 
@@ -561,7 +561,7 @@ This type of window can be created by setting the <xref:System.Windows.Window.Wi
 
 This combination of values instructs the window to render transparent. In this state, the window's non-client area adornment buttons can't be used and you need to provide your own.
 
-### Task Bar Presence
+### Task bar presence
 
 The default appearance of a window includes a taskbar button. Some types of windows don't have a task bar button, such as message boxes, [dialog boxes](dialog-boxes-overview.md), or windows with the <xref:System.Windows.Window.WindowStyle%2A> property set to <xref:System.Windows.WindowStyle.ToolWindow>. You can control whether the task bar button for a window is shown by setting the <xref:System.Windows.Window.ShowInTaskbar%2A> property, which is `true` by default.
 
@@ -572,7 +572,7 @@ The default appearance of a window includes a taskbar button. Some types of wind
 </Window>
 ```
 
-## Other Types of Windows
+## Other types of windows
 
 <xref:System.Windows.Navigation.NavigationWindow> is a window that is designed to host navigable content.<!-- For more information, see [Navigation Overview](navigation-overview.md)).-->
 
