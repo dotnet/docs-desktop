@@ -1,0 +1,9 @@
+﻿<Window x:Class="WindowsOverview.DataWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="DataWindow" Height="450" Width="800"
+        Closing="Window_Closing">
+    <Grid>
+        <TextBox x:Name="documentTextBox" TextChanged="documentTextBox_TextChanged" />
+    </Grid>
+</Window>
