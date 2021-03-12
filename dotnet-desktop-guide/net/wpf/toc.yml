@@ -17,5 +17,7 @@ items:
     items:
     - name: Overview
       href: windows/index.md
+    - name: Dialogs and message boxes
+      href: windows/dialog-boxes-overview.md
   - name: XAML Language Reference
     href: ../../xaml-services/
