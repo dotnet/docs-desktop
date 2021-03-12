@@ -36,80 +36,64 @@ A *message box* is a dialog box that can be used to display textual information 
 
 :::image type="content" source="media/dialog-boxes-overview/word-processor-dialog.png" alt-text="Word processor dialog box asking if you want to save the changes to the document before the application closes.":::
 
-To create a message box, you use the <xref:System.Windows.MessageBox> class. <xref:System.Windows.MessageBox> lets you configure the message box text, title, icon, and buttons, using code like the following.
+To create a message box, you use the <xref:System.Windows.MessageBox> class. <xref:System.Windows.MessageBox> lets you configure the message box text, title, icon, and buttons, shown in the following code:
 
 :::code language="csharp" source="snippets/dialog-boxes-overview/csharp/Window1.xaml.cs" id="YesNoCancel":::
 :::code language="vb" source="snippets/dialog-boxes-overview/vb/Window1.xaml.vb" id="YesNoCancel":::
 
-As demonstrated in the previous code, the <xref:System.Windows.MessageBox.Show%2A?displayProperty=nameWithType> method displays the message box. Inspect the user's decision by inspecting the `result` variable:
+The <xref:System.Windows.MessageBox.Show%2A?displayProperty=nameWithType> method displays the message box. Inspect the user's decision by inspecting the `result` variable:
 
 :::code language="csharp" source="snippets/dialog-boxes-overview/csharp/Window1.xaml.cs" id="MessageBoxShow":::
 :::code language="vb" source="snippets/dialog-boxes-overview/vb/Window1.xaml.vb" id="MessageBoxShow":::
 
-To show a message box, you call the `static` method, as demonstrated in the following code.
+For more information on using message boxes, see <xref:System.Windows.MessageBox>, [MessageBox Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Windows/MessageBox), and [Dialog Box Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Windows/DialogBox).
 
- [!code-csharp[DialogBoxesOverviewSnippets#MsgBoxShowCODEBEHIND](~/samples/snippets/csharp/VS_Snippets_Wpf/DialogBoxesOverviewSnippets/CSharp/Window1.xaml.cs#msgboxshowcodebehind)]
- [!code-vb[DialogBoxesOverviewSnippets#MsgBoxShowCODEBEHIND](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DialogBoxesOverviewSnippets/VisualBasic/window1.xaml.vb#msgboxshowcodebehind)]
+For presenting an gathering complex data, a dialog box might be more suitable than a message box. There are two types of dialog boxes, [Common dialog boxes](#common-dialog-boxes) provided by the operating system, and [Custom dialog boxes](#custom-dialog-boxes) created for your application.
 
- When code that shows a message box needs to detect and process the user's decision (which button was pressed), the code can inspect the message box result, as shown in the following code.
-
- [!code-csharp[DialogBoxesOverviewSnippets#MsgBoxShowAndResultCODEBEHIND1](~/samples/snippets/csharp/VS_Snippets_Wpf/DialogBoxesOverviewSnippets/CSharp/Window1.xaml.cs#msgboxshowandresultcodebehind1)]
- [!code-vb[DialogBoxesOverviewSnippets#MsgBoxShowAndResultCODEBEHIND1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DialogBoxesOverviewSnippets/VisualBasic/window1.xaml.vb#msgboxshowandresultcodebehind1)]
-
- For more information on using message boxes, see <xref:System.Windows.MessageBox>, [MessageBox Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Windows/MessageBox), and [Dialog Box Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Windows/DialogBox).
-
- Although <xref:System.Windows.MessageBox> may offer a simple dialog box user experience, the advantage of using <xref:System.Windows.MessageBox> is that is the only type of window that can be shown by applications that run within a partial trust security sandbox (see [Security](../security-wpf.md)), such as XAML browser applications (XBAPs).
-
- Most dialog boxes display and gather more complex data than the result of a message box, including text, selection (check boxes), mutually exclusive selection (radio buttons), and list selection (list boxes, combo boxes, drop-down list boxes). For these, Windows Presentation Foundation (WPF) provides several common dialog boxes and allows you to create your own dialog boxes, although the use of either is limited to applications running with full trust.
-
-<a name="Common_Dialogs"></a>
 ## Common dialog boxes
- Windows implements a variety of reusable dialog boxes that are common to all applications, including dialog boxes for opening files, saving files, and printing. Since these dialog boxes are implemented by the operating system, they can be shared among all the applications that run on the operating system, which helps user experience consistency; when users are familiar with the use of an operating system-provided dialog box in one application, they don't need to learn how to use that dialog box in other applications. Because these dialog boxes are available to all applications and because they help provide a consistent user experience, they are known as *common dialog boxes*.
 
- Windows Presentation Foundation (WPF) encapsulates the open file, save file, and print common dialog boxes and exposes them as managed classes for you to use in standalone applications. This article provides a brief overview of each.
+Windows implements a variety of reusable dialog boxes that are common to all applications, including dialog boxes for selecting files and printing. Since these dialog boxes are implemented by the operating system, they can be shared among all the applications that run on the operating system, which helps user experience consistency. As a user uses operating system-provided dialog boxes in one application, they don't need to learn how to use that dialog box in other applications. Because these dialog boxes are available to all applications and because they help provide a consistent user experience, they are known as *common dialog boxes*.
 
-<a name="Open_File_Dialog"></a>
+WPF encapsulates the open file, save file, and print common dialog boxes and exposes them as managed classes for you to use in standalone applications. This article provides a brief overview of each.
+
 ### Open File dialog
- The open file dialog box, shown in the following figure, is used by file opening functionality to retrieve the name of a file to open.
 
- ![An Open dialog box showing the location to retrieve the file.](./media/dialog-boxes-overview/open-file-dialog-box.png)
+The open file dialog box, shown in the following figure, is used by file opening functionality to retrieve the name of a file to open.
 
- The common open file dialog box is implemented as the <xref:Microsoft.Win32.OpenFileDialog> class and is located in the <xref:Microsoft.Win32> namespace. The following code shows how to create, configure, and show one, and how to process the result.
+:::image type="content" source="media/dialog-boxes-overview/open-file-dialog-box.png" alt-text="An Open dialog box showing the location to retrieve the fileshown from a WPF application.":::
 
- [!code-csharp[DialogBoxesOverviewSnippets#OpenFileDialogBoxCODEBEHIND](~/samples/snippets/csharp/VS_Snippets_Wpf/DialogBoxesOverviewSnippets/CSharp/Window1.xaml.cs#openfiledialogboxcodebehind)]
- [!code-vb[DialogBoxesOverviewSnippets#OpenFileDialogBoxCODEBEHIND](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DialogBoxesOverviewSnippets/VisualBasic/window1.xaml.vb#openfiledialogboxcodebehind)]
+The common open file dialog box is implemented as the <xref:Microsoft.Win32.OpenFileDialog> class and is located in the <xref:Microsoft.Win32> namespace. The following code shows how to create, configure, and show one, and how to process the result.
 
- For more information on the open file dialog box, see <xref:Microsoft.Win32.OpenFileDialog?displayProperty=nameWithType>.
+:::code language="csharp" source="snippets/dialog-boxes-overview/csharp/Window1.xaml.cs" id="OpenFile":::
+:::code language="vb" source="snippets/dialog-boxes-overview/vb/Window1.xaml.vb" id="OpenFile":::
 
-> [!NOTE]
-> <xref:Microsoft.Win32.OpenFileDialog> can be used to safely retrieve file names by applications running with partial trust (see [Security](../security-wpf.md)).
+For or more information on the open file dialog box, see <xref:Microsoft.Win32.OpenFileDialog?displayProperty=nameWithType>.
 
-<a name="Save_File_Dialog"></a>
 ### Save File dialog box
- The save file dialog box, shown in the following figure, is used by file saving functionality to retrieve the name of a file to save.
 
- ![A Save As dialog box showing the location to save the file.](./media/dialog-boxes-overview/save-file-dialog-box.png)
+The save file dialog box, shown in the following figure, is used by file saving functionality to retrieve the name of a file to save.
 
- The common save file dialog box is implemented as the <xref:Microsoft.Win32.SaveFileDialog> class, and is located in the <xref:Microsoft.Win32> namespace. The following code shows how to create, configure, and show one, and how to process the result.
+:::image type="content" source="media/dialog-boxes-overview/save-file-dialog-box.png" alt-text="A Save As dialog box showing the location to save the file shown from a WPF application.":::
 
- [!code-csharp[DialogBoxesOverviewSnippets#SaveFileDialogBoxCODEBEHIND](~/samples/snippets/csharp/VS_Snippets_Wpf/DialogBoxesOverviewSnippets/CSharp/Window1.xaml.cs#savefiledialogboxcodebehind)]
- [!code-vb[DialogBoxesOverviewSnippets#SaveFileDialogBoxCODEBEHIND](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DialogBoxesOverviewSnippets/VisualBasic/window1.xaml.vb#savefiledialogboxcodebehind)]
+The common save file dialog box is implemented as the <xref:Microsoft.Win32.SaveFileDialog> class, and is located in the <xref:Microsoft.Win32> namespace. The following code shows how to create, configure, and show one, and how to process the result.
 
- For more information on the save file dialog box, see <xref:Microsoft.Win32.SaveFileDialog?displayProperty=nameWithType>.
+:::code language="csharp" source="snippets/dialog-boxes-overview/csharp/Window1.xaml.cs" id="SaveFile":::
+:::code language="vb" source="snippets/dialog-boxes-overview/vb/Window1.xaml.vb" id="SaveFile":::
 
-<a name="Print_Dialog"></a>
+For more information on the save file dialog box, see <xref:Microsoft.Win32.SaveFileDialog?displayProperty=nameWithType>.
+
 ### Print dialog box
 
 The print dialog box, shown in the following figure, is used by printing functionality to choose and configure the printer that a user would like to print data to.
 
-![Screenshot that shows a Print dialog box.](./media/dialog-boxes-overview/print-data-dialog-box.png)
+:::image type="content" source="media/dialog-boxes-overview/print-data-dialog-box.png" alt-text="A print dialog box shown from a WPF application.":::
 
 The common print dialog box is implemented as the <xref:System.Windows.Controls.PrintDialog> class, and is located in the <xref:System.Windows.Controls> namespace. The following code shows how to create, configure, and show one.
 
- [!code-csharp[DialogBoxesOverviewSnippets#PrintDialogBoxCODEBEHIND](~/samples/snippets/csharp/VS_Snippets_Wpf/DialogBoxesOverviewSnippets/CSharp/Window1.xaml.cs#printdialogboxcodebehind)]
- [!code-vb[DialogBoxesOverviewSnippets#PrintDialogBoxCODEBEHIND](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DialogBoxesOverviewSnippets/VisualBasic/window1.xaml.vb#printdialogboxcodebehind)]
+:::code language="csharp" source="snippets/dialog-boxes-overview/csharp/Window1.xaml.cs" id="Print":::
+:::code language="vb" source="snippets/dialog-boxes-overview/vb/Window1.xaml.vb" id="Print":::
 
- For more information on the print dialog box, see <xref:System.Windows.Controls.PrintDialog?displayProperty=nameWithType>. For detailed discussion of printing in WPF, see [Printing Overview](../advanced/printing-overview.md).
+For more information on the print dialog box, see <xref:System.Windows.Controls.PrintDialog?displayProperty=nameWithType>. For detailed discussion of printing in WPF, see [Printing overview](../advanced/printing-overview.md).
 
 <a name="Custom_Dialog_Boxes"></a>
 ## Custom dialog boxes
