@@ -1,0 +1,21 @@
+items:
+- name: Windows Presentation Foundation for .NET Core
+  href: index.yml
+- name: Get started
+  items:
+  - name: Overview
+    href: overview/index.md
+  - name: Create a WPF application
+    href: get-started/create-app-visual-studio.md
+- name: Migration
+  items:
+  - name: Differences from .NET Framework
+    href: migration/differences-from-net-framework.md
+- name: Fundamentals
+  items:
+  - name: Windows
+    items:
+    - name: Overview
+      href: windows/index.md
+  - name: XAML Language Reference
+    href: ../../xaml-services/

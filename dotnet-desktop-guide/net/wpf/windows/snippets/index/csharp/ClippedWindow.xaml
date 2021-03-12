@@ -1,0 +1,23 @@
+﻿<Window x:Class="WindowsOverview.ClippedWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ClippedWindow" SizeToContent="WidthAndHeight"
+        WindowStyle="None" AllowsTransparency="True" Background="Transparent">
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="20"/>
+        </Grid.RowDefinitions>
+
+        <Rectangle Stroke="#FF000000" RadiusX="10" RadiusY="10"/>
+        <Path Fill="White" Stretch="Fill" Stroke="#FF000000" HorizontalAlignment="Left" Margin="15,-5.597,0,-0.003" Width="30" Grid.Row="1" Data="M22.166642,154.45381 L29.999666,187.66699 40.791059,154.54395"/>
+        <Rectangle Fill="White" RadiusX="10" RadiusY="10" Margin="1"/>
+        
+        <TextBlock HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="25" Text="Greetings!" TextWrapping="Wrap" Margin="5,5,50,5"/>
+        <Button HorizontalAlignment="Right" VerticalAlignment="Top" Background="Transparent" BorderBrush="{x:Null}" Foreground="Red" Content="❌" FontSize="15" />
+
+        <Grid.Effect>
+            <DropShadowEffect BlurRadius="10" ShadowDepth="3" Color="LightBlue"/>
+        </Grid.Effect>
+    </Grid>
+</Window>
