@@ -107,4 +107,3 @@ When a menu item or button runs a function that displays a dialog box that **doe
 - [Dialog Box Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Windows/DialogBox)
 - <xref:System.Windows.Window?displayProperty=fullName>
 - <xref:System.Windows.MessageBox?displayProperty=fullName>
-- 
