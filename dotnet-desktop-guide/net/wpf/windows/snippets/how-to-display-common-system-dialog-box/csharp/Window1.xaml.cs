@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace Dialogs
+namespace WindowsOverview
 {
     public partial class Window1 : Window
     {
@@ -93,15 +93,9 @@ namespace Dialogs
             // Process save file dialog box results
             if (result == true)
             {
-                // Print document
+                // Document was printed
             }
             //</Print>
-        }
-
-        private void formatMarginsButton_Click(object sender, RoutedEventArgs e)
-        {
-            new Margins().ShowDialog();
-
         }
     }
 }

@@ -72,7 +72,7 @@
 
         ' Process save file dialog box results
         If result = True Then
-            ' Print document
+            ' Document was printed
         End If
         '</Print>
     End Sub

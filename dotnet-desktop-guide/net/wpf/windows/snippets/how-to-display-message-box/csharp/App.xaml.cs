@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace Dialogs
+namespace WindowsOverview
 {
     public partial class App : Application
     {

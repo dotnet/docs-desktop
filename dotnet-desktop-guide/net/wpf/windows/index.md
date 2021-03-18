@@ -1,5 +1,5 @@
 ---
-title: Windows overview
+title: Windows in WPF overview
 description: Learn about the basics of how Window objects work in WPF. Learn how to create and manage a window for a Windows Presentation Foundation (WPF) app.
 ms.date: "03/11/2021"
 ms.topic: overview
@@ -31,7 +31,7 @@ helpviewer_keywords:
   - "displaying XAML pages [WPF]"
 ---
 
-# WPF windows overview (WPF .NET)
+# Overview of WPF windows (WPF .NET)
 
 Users interact with Windows Presentation Foundation (WPF) applications through windows. The primary purpose of a window is to host content that visualizes data and enables users to interact with data. WPF applications provide their own windows by using the <xref:System.Windows.Window> class. This article introduces <xref:System.Windows.Window> before covering the fundamentals of creating and managing windows in applications.
 
@@ -580,9 +580,11 @@ Dialog boxes are windows that are often used to gather information from a user t
 
 ## See also
 
-- <xref:System.Windows.Window>
-- <xref:System.Windows.MessageBox>
-- <xref:System.Windows.Navigation.NavigationWindow>
-- <xref:System.Windows.Application>
 - [Dialog Boxes Overview](dialog-boxes-overview.md)
-- [Building a WPF Application](building-a-wpf-application-wpf.md)
+- [How to display a common dialog box](how-to-display-common-system-dialog-box.md)
+- [How to display and manage a window or dialog box](how-to-display-window-dialog-box.md)
+- [How to use a message box](how-to-display-message-box.md)
+- <xref:System.Windows.Window?displayProperty=fullName>
+- <xref:System.Windows.MessageBox?displayProperty=fullName>
+- <xref:System.Windows.Navigation.NavigationWindow?displayProperty=fullName>
+- <xref:System.Windows.Application?displayProperty=fullName>
