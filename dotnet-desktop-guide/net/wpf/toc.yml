@@ -17,7 +17,13 @@ items:
     items:
     - name: Overview
       href: windows/index.md
-    - name: Dialogs and message boxes
+    - name: Dialogs boxes
       href: windows/dialog-boxes-overview.md
+    - name: Common tasks
+      items:
+      - name: Display a system dialog box
+        href: windows/how-to-display-common-system-dialog-box.md
+      - name: Display a message box
+        href: windows/how-to-display-message-box.md
   - name: XAML Language Reference
     href: ../../xaml-services/
