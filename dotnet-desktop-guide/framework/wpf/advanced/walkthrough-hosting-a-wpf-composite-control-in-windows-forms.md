@@ -177,7 +177,7 @@ namespace MyControls
 ## Implementing the Windows Forms Host Application  
  The Windows Forms host application uses an <xref:System.Windows.Forms.Integration.ElementHost> object to host the [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] composite control. The application handles the `OnButtonClick` event to receive the data from the composite control. The application also has a set of option buttons that you can use to modify the control's appearance. The following illustration shows the application.  
 
-The following image shows a WPF composite control hosted in a Windows Forms application"  
+The following image shows a WPF composite control hosted in a Windows Forms application
 
  ![Screenshot that shows a Windows Form Hosting Avalon control.](./media/walkthrough-hosting-a-wpf-composite-control-in-windows-forms/windows-form-hosting-avalon-control.png)  
   
