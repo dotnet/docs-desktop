@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Dialogs"
         Title="Margins"
+        Closing="Window_Closing"
         MinHeight="200"
         MinWidth="300"
         SizeToContent="WidthAndHeight"
