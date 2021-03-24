@@ -12,6 +12,7 @@
         ShowInTaskbar="False"
         WindowStartupLocation="CenterOwner"
         WindowStyle="ToolWindow"
+        Closing="Window_Closing"
         FocusManager.FocusedElement="{Binding ElementName=leftMarginTextBox}">
     <Grid>
 

@@ -13,6 +13,7 @@ namespace DisplayWindows
         {
             // <ShowDialog>
             var window = new Margins();
+
             window.Owner = this;
             window.ShowDialog();
             // </ShowDialog>
@@ -20,7 +21,12 @@ namespace DisplayWindows
 
         private void showMenus_Click(object sender, RoutedEventArgs e)
         {
-            new Menus().ShowDialog();
+            // <ShowNormal>
+            var window = new Margins();
+
+            window.Owner = this;
+            window.Show();
+            // </ShowNormal>
         }
 
         // <DialogResultButtons>

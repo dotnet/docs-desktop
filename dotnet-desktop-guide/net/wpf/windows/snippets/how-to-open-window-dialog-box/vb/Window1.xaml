@@ -7,9 +7,13 @@
         mc:Ignorable="d"
         Title="Names" Height="180" Width="260">
     <StackPanel>
-        <Button Click="Button_Click">Message Box</Button>
-        <Button Click="Save_Click">Save file</Button>
-        <Button Click="Open_Click">Open file</Button>
-        <Button Click="Print_Click">Print</Button>
+        <Button Click="formatMarginsButton_Click" Content="_Margins..."/>
+        <Button Click="showMenus_Click" Content="Menus" />
+        <StackPanel Orientation="Horizontal">
+            <Button Name="okButton" Click="okButton_Click">OK</Button>
+            <!-- <CancelButton> -->
+            <Button Name="cancelButton" IsCancel="True">Cancel</Button>
+            <!-- </CancelButton> -->
+        </StackPanel>
     </StackPanel>
 </Window>

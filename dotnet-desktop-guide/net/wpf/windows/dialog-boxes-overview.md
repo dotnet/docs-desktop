@@ -116,7 +116,7 @@ This design technique is an easy way for you to communicate to your users what t
 
 You can follow the same principle described in the [Menu items](#menu-items) section. Use an ellipsis on the button text to indicate that when the user presses the button, a modal dialog will appear. In the following image, there are two buttons and it's easy to understand which button displays a dialog box:
 
-:::image type="content" source="media/dialog-boxes-overview/simple-text-editor.png" alt-text="A WPF window that shows menu items with an ellipsis to indicate which item shows a dialog box.":::
+:::image type="content" source="media/dialog-boxes-overview/simple-text-editor.png" alt-text="A WPF window that shows buttons with an ellipsis to indicate which item shows a dialog box.":::
 
 ## Return a result
 

@@ -28,5 +28,16 @@ namespace CloseWindows
         {
             DialogResult = true;
         }
+
+        // <CancelAndHide>
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            // Cancel the closure
+            e.Cancel = true;
+
+            // Hide the window
+            Hide();
+        }
+        // </CancelAndHide>
     }
 }

@@ -206,7 +206,7 @@ To open a window, you first create an instance of it, which is demonstrated in t
 :::code language="csharp" source="snippets/index_2/csharp/App.xaml.cs":::
 :::code language="vb" source="snippets/index_2/vb/Application.xaml.vb":::
 
-In this example `Window1` is instantiated when the application starts, which occurs when the <xref:System.Windows.Application.Startup> event is raised. For more information about the startup window, see [How to: Get and Set the Main Application Window](../../../framework/wpf/app-development/how-to-get-and-set-the-main-application-window.md)
+In this example `Window1` is instantiated when the application starts, which occurs when the <xref:System.Windows.Application.Startup> event is raised. For more information about the startup window, see [How to get or set the main application window](how-to-get-set-main-application-window.md).
 
 When a window is instantiated, a reference to it's automatically added to a [list of windows](xref:System.Windows.Application.Windows%2A) that is managed by the <xref:System.Windows.Application> object. The first window to be instantiated is automatically set by <xref:System.Windows.Application> as the [main application window](xref:System.Windows.Application.MainWindow%2A).
 
