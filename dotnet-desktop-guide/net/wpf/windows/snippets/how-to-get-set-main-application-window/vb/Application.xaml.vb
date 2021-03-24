@@ -1,11 +1,17 @@
 ﻿Class Application
 
     Private Sub Application_Startup(sender As Object, e As StartupEventArgs)
-        ' Create the window
-        Dim window As New Window1
+        '<MainWindowDirect>
+        Application.Current.MainWindow = New Window2()
 
-        ' Open the window
-        window.Show()
+        Application.Current.MainWindow.Show()
+        '</MainWindowDirect>
+
+        '<MainWindowIndirect>
+        Dim appWindow As New Window2()
+
+        appWindow.Show()
+        '</MainWindowIndirect>
     End Sub
 
 End Class
