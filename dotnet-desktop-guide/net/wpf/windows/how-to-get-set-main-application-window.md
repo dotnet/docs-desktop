@@ -44,13 +44,13 @@ Also, you can use the <xref:System.Windows.Application.Startup?displayProperty=n
 
 The first window instantiated by your application automatically becomes the main window and is set to the <xref:System.Windows.Application.MainWindow%2A?displayProperty=nameWithType> property. To set a different main window, change this property to a window:
 
-:::code language="csharp" source="snippets/dhow-to-get-set-main-application-window/csharp/App.xaml.cs" id="MainWindowDirect":::
-:::code language="vb" source="snippets/how-to-get-set-main-application-window/vb/App.xaml.vb" id="MainWindowDirect":::
+:::code language="csharp" source="snippets/how-to-get-set-main-application-window/csharp/App.xaml.cs" id="MainWindowDirect":::
+:::code language="vb" source="snippets/how-to-get-set-main-application-window/vb/Application.xaml.vb" id="MainWindowDirect":::
 
 If your application has never created an instance of a window, the following code is functionally equivalent to the previous code:
 
-:::code language="csharp" source="snippets/dhow-to-get-set-main-application-window/csharp/App.xaml.cs" id="MainWindowIndirect":::
-:::code language="vb" source="snippets/how-to-get-set-main-application-window/vb/App.xaml.vb" id="MainWindowIndirect":::
+:::code language="csharp" source="snippets/how-to-get-set-main-application-window/csharp/App.xaml.cs" id="MainWindowIndirect":::
+:::code language="vb" source="snippets/how-to-get-set-main-application-window/vb/Application.xaml.vb" id="MainWindowIndirect":::
 
 As soon as the window object instance is created, it's assigned to <xref:System.Windows.Application.MainWindow%2A?displayProperty=nameWithType>.
 
