@@ -173,7 +173,7 @@ Public Class Window1
 End Class
 ```
 
-## Configuring a window for MSBuild
+### Configuring a window for MSBuild
 
 How you implement your window determines how it's configured for MSBuild. For a window that is defined using both XAML markup and code-behind:
 
@@ -203,24 +203,22 @@ As with any class, a window has a lifetime that begins when it's first instantia
 
 To open a window, you first create an instance of it, which is demonstrated in the following example:
 
-:::code language="xaml" source="snippets/index_2/csharp/App.xaml":::
-
-The following code is the code-behind for the XAML.
-
 :::code language="csharp" source="snippets/index_2/csharp/App.xaml.cs":::
 :::code language="vb" source="snippets/index_2/vb/Application.xaml.vb":::
 
-In this example `Window1` is instantiated when the application starts, which occurs when the <xref:System.Windows.Application.Startup> event is raised.
+In this example `Window1` is instantiated when the application starts, which occurs when the <xref:System.Windows.Application.Startup> event is raised. For more information about the startup window, see [How to: Get and Set the Main Application Window](../../../framework/wpf/app-development/how-to-get-and-set-the-main-application-window.md)
 
 When a window is instantiated, a reference to it's automatically added to a [list of windows](xref:System.Windows.Application.Windows%2A) that is managed by the <xref:System.Windows.Application> object. The first window to be instantiated is automatically set by <xref:System.Windows.Application> as the [main application window](xref:System.Windows.Application.MainWindow%2A).
 
-The window is finally opened by calling the <xref:System.Windows.Window.Show%2A> method as shown in the following figure:
+The window is finally opened by calling the <xref:System.Windows.Window.Show%2A> method as shown in the following image:
 
 :::image type="content" source="./media/index/window-with-button.png" alt-text="WPF Window with a single button inside.":::
 
-A window that is opened by calling <xref:System.Windows.Window.Show%2A> is a _modeless_ window, and the application doesn't prevent users from interacting with other windows in the application. Opening a window with <xref:System.Windows.Window.ShowDialog%2A> restricts user interaction to a specific window. For more information, see [Dialog Boxes Overview](dialog-boxes-overview.md).
+A window that is opened by calling <xref:System.Windows.Window.Show%2A> is a _modeless_ window, and the application doesn't prevent users from interacting with other windows in the application. Opening a window with <xref:System.Windows.Window.ShowDialog%2A> opens a window as _modal_ and restricts user interaction to the specific window. For more information, see [Dialog Boxes Overview](dialog-boxes-overview.md).
 
 When <xref:System.Windows.Window.Show%2A> is called, a window does initialization work before it's shown to establish infrastructure that allows it to receive user input. When the window is initialized, the <xref:System.Windows.Window.SourceInitialized> event is raised and the window is shown.
+
+For more information, see [How to open a window or dialog box](how-to-open-window-dialog-box.md).
 
 #### Startup window
 
@@ -289,11 +287,12 @@ If your application has a window that shouldn't be activated when shown, you can
 
 ### Closing a window
 
-The life of a window starts coming to an end when a user closes it. A window can be closed by using elements in the non-client area, including the following:
+The life of a window starts coming to an end when a user closes it. Once a window is closed, it can't be reopened. A window can be closed by using elements in the non-client area, including the following:
 
 - The **Close** item of the **System** menu.
 - Pressing <kbd>ALT + F4</kbd>.
 - Pressing the **Close** button.
+- Pressing <kbd>ESC</kbd> when a button has the <xref:System.Windows.Controls.Button.IsCancel%2A> property set to `true` on a modal window.
 
  You can provide more mechanisms to the client area to close a window, the more common of which include the following:
 
@@ -302,7 +301,7 @@ The life of a window starts coming to an end when a user closes it. A window can
 - A **Cancel** button, typically on a modal dialog box.
 - A **Close** button, typically on a modeless dialog box.
 
-To close a window in response to one of these custom mechanisms, you need to call the <xref:System.Windows.Window.Close%2A> method. The following example implements the ability to close a window by choosing the **Exit** on the **File** menu.
+To close a window in response to one of these custom mechanisms, you need to call the <xref:System.Windows.Window.Close%2A> method. The following example implements the ability to close a window by choosing **Exit** from a **File** menu.
 
 :::code language="xaml" source="snippets/index/csharp/ClosingWindow.xaml":::
 
@@ -310,6 +309,21 @@ The following code is the code-behind for the XAML.
 
 :::code language="csharp" source="snippets/index/csharp/ClosingWindow.xaml.cs":::
 :::code language="vb" source="snippets/index/vb/ClosingWindow.xaml.vb":::
+
+> [!NOTE]
+> An application can be configured to shut down automatically when either the main application window closes (see <xref:System.Windows.Application.MainWindow%2A>) or the last window closes. For more information, see <xref:System.Windows.Application.ShutdownMode%2A>.
+
+While a window can be explicitly closed through mechanisms provided in the non-client and client areas, a window can also be implicitly closed as a result of behavior in other parts of the application or Windows, including the following:
+
+- A user logs off or shuts down Windows.
+- A window's <xref:System.Windows.Window.Owner%2A> closes.
+- The main application window is closed and <xref:System.Windows.Application.ShutdownMode%2A> is <xref:System.Windows.ShutdownMode.OnMainWindowClose>.
+- <xref:System.Windows.Application.Shutdown%2A> is called.
+
+> [!IMPORTANT]
+> A window can't be reopened after it's closed.
+
+#### Cancel window closure
 
 When a window closes, it raises two events: <xref:System.Windows.Window.Closing> and <xref:System.Windows.Window.Closed>.
 
@@ -325,19 +339,6 @@ The following code is the code-behind for the XAML.
 The <xref:System.Windows.Window.Closing> event handler is passed a <xref:System.ComponentModel.CancelEventArgs>, which implements the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property that you set to `true` to prevent a window from closing.
 
 If <xref:System.Windows.Window.Closing> isn't handled, or it's handled but not canceled, the window will close. Just before a window actually closes, <xref:System.Windows.Window.Closed> is raised. At this point, a window can't be prevented from closing.
-
-> [!NOTE]
-> An application can be configured to shut down automatically when either the main application window closes (see <xref:System.Windows.Application.MainWindow%2A>) or the last window closes. For more information, see <xref:System.Windows.Application.ShutdownMode%2A>.
-
-While a window can be explicitly closed through mechanisms provided in the non-client and client areas, a window can also be implicitly closed as a result of behavior in other parts of the application or Windows, including the following:
-
-- A user logs off or shuts down Windows.
-- A window's <xref:System.Windows.Window.Owner%2A> closes.
-- The main application window is closed and <xref:System.Windows.Application.ShutdownMode%2A> is <xref:System.Windows.ShutdownMode.OnMainWindowClose>.
-- <xref:System.Windows.Application.Shutdown%2A> is called.
-
-> [!NOTE]
-> A window can't be reopened after it's closed.
 
 ### Window lifetime events
 
@@ -532,11 +533,11 @@ To control what type of border a window gets, you set its <xref:System.Windows.W
 - <xref:System.Windows.WindowStyle.ThreeDBorderWindow>
 - <xref:System.Windows.WindowStyle.ToolWindow>
 
-The effect of applying a window style is illustrated in the following figure:
+The effect of applying a window style is illustrated in the following image:
 
 :::image type="content" source="./media/index/window-styles.png" alt-text="Screenshot that shows how WindowStyle affects a window in WPF.":::
 
-Notice that the figure above doesn't show any noticeable difference between `SingleBorderWindow` and `ThreeDBorderWindow`. Back in Windows XP, `ThreeDBorderWindow` did affect how the window was drawn, adding a 3D border to the client area. Starting with Windows 7, the differences between the two styles are minimal.
+Notice that the image above doesn't show any noticeable difference between `SingleBorderWindow` and `ThreeDBorderWindow`. Back in Windows XP, `ThreeDBorderWindow` did affect how the window was drawn, adding a 3D border to the client area. Starting with Windows 7, the differences between the two styles are minimal.
 
 You can set <xref:System.Windows.Window.WindowStyle%2A> using either XAML markup or code. Because it's unlikely to change during the lifetime of a window, you'll most likely configure it using XAML markup.
 
@@ -551,7 +552,7 @@ You can set <xref:System.Windows.Window.WindowStyle%2A> using either XAML markup
 
 There are also situations where the border styles that <xref:System.Windows.Window.WindowStyle%2A> allows you to have aren't sufficient. For example, you may want to create an application with a non-rectangular border, like Microsoft Windows Media Player uses.
 
-For example, consider the speech bubble window shown in the following figure:
+For example, consider the speech bubble window shown in the following image:
 
 :::image type="content" source="./media/index/window-transparent.png" alt-text="Screenshot of a WPF window that has a clipped area and custom shape.":::
 
@@ -580,10 +581,11 @@ Dialog boxes are windows that are often used to gather information from a user t
 
 ## See also
 
-- [Dialog Boxes Overview](dialog-boxes-overview.md)
-- [How to display a common dialog box](how-to-display-common-system-dialog-box.md)
-- [How to display and manage a window or dialog box](how-to-display-window-dialog-box.md)
-- [How to use a message box](how-to-display-message-box.md)
+- [Dialog boxes overview](dialog-boxes-overview.md)
+- [How to open a window or dialog box](how-to-open-window-dialog-box.md)
+- [How to open a common dialog box](how-to-open-common-system-dialog-box.md)
+- [How to open a message box](how-to-open-message-box.md)
+- [How to close a window or dialog box](how-to-close-window-dialog-box.md)
 - <xref:System.Windows.Window?displayProperty=fullName>
 - <xref:System.Windows.MessageBox?displayProperty=fullName>
 - <xref:System.Windows.Navigation.NavigationWindow?displayProperty=fullName>

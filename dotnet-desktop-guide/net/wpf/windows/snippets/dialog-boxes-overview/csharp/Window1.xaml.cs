@@ -11,97 +11,71 @@ namespace Dialogs
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            //<YesNoCancel>
-            string messageBoxText = "Do you want to save changes?";
-            string caption = "Word Processor";
-            MessageBoxButton button = MessageBoxButton.YesNoCancel;
-            MessageBoxImage icon = MessageBoxImage.Warning;
-            MessageBoxResult result;
 
-            //<MessageBoxShow>
-            result = MessageBox.Show(messageBoxText, caption, button, icon);
-            //</YesNoCancel>
-
-            switch (result)
-            {
-                case MessageBoxResult.Cancel:
-                    // User pressed Cancel
-                    break;
-                case MessageBoxResult.Yes:
-                    // User pressed Yes
-                    break;
-                case MessageBoxResult.No:
-                    // User pressed No
-                    break;
-            }
-            //</MessageBoxShow>
         }
 
         private void Save_Click(object sender, RoutedEventArgs e)
         {
-            //<SaveFile>
-            // Configure save file dialog box
-            var dialog = new Microsoft.Win32.SaveFileDialog();
-            dialog.FileName = "Document"; // Default file name
-            dialog.DefaultExt = ".txt"; // Default file extension
-            dialog.Filter = "Text documents (.txt)|*.txt"; // Filter files by extension
 
-            // Show save file dialog box
-            bool? result = dialog.ShowDialog();
-
-            // Process save file dialog box results
-            if (result == true)
-            {
-                // Save document
-                string filename = dialog.FileName;
-            }
-            //</SaveFile>
         }
 
         private void Open_Click(object sender, RoutedEventArgs e)
         {
-            //<OpenFile>
-            // Configure open file dialog box
-            var dialog = new Microsoft.Win32.OpenFileDialog();
-            dialog.FileName = "Document"; // Default file name
-            dialog.DefaultExt = ".txt"; // Default file extension
-            dialog.Filter = "Text documents (.txt)|*.txt"; // Filter files by extension
 
-            // Show open file dialog box
-            bool? result = dialog.ShowDialog();
-
-            // Process open file dialog box results
-            if (result == true)
-            {
-                // Open document
-                string filename = dialog.FileName;
-            }
-            //</OpenFile>
         }
 
         private void Print_Click(object sender, RoutedEventArgs e)
         {
-            //<Print>
-            // Configure printer dialog box
-            var dialog = new System.Windows.Controls.PrintDialog();
-            dialog.PageRangeSelection = System.Windows.Controls.PageRangeSelection.AllPages;
-            dialog.UserPageRangeEnabled = true;
 
-            // Show save file dialog box
-            bool? result = dialog.ShowDialog();
-
-            // Process save file dialog box results
-            if (result == true)
-            {
-                // Print document
-            }
-            //</Print>
         }
 
         private void formatMarginsButton_Click(object sender, RoutedEventArgs e)
         {
-            new Margins().ShowDialog();
+            Method2();
 
+        }
+
+        // <DialogResultButtons>
+        private void okButton_Click(object sender, RoutedEventArgs e) =>
+            DialogResult = true;
+
+        private void cancelButton_Click(object sender, RoutedEventArgs e) =>
+            DialogResult = false;
+        // </DialogResultButtons>
+
+        private void Method()
+        {
+            // <HandleClosing>
+            var marginsWindow = new Margins();
+
+            marginsWindow.Closed += (sender, eventArgs) =>
+            {
+                MessageBox.Show($"You closed the margins window! It had the title of {marginsWindow.Title}");
+            };
+
+            marginsWindow.Show();
+            // </HandleClosing>
+        }
+
+        private void Method2()
+        {
+            // <HandleDialogResponse>
+            var dialog = new Margins();
+
+            // Display the dialog box and read the response
+            bool? result = dialog.ShowDialog();
+
+            if (result == true)
+            {
+                // User accepted the dialog box
+                MessageBox.Show("Your request will be processed.");
+            }
+            else
+            {
+                // User cancelled the dialog box
+                MessageBox.Show("Sorry it didn't work out, we'll try again later.");
+            }
+            // </HandleDialogResponse>
         }
     }
 }

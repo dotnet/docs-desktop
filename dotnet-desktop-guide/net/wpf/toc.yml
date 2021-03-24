@@ -21,9 +21,13 @@ items:
       href: windows/dialog-boxes-overview.md
     - name: Common tasks
       items:
-      - name: Display a system dialog box
-        href: windows/how-to-display-common-system-dialog-box.md
       - name: Display a message box
-        href: windows/how-to-display-message-box.md
+        href: windows/how-to-open-message-box.md
+      - name: Open a window
+        href: windows/how-to-open-window-dialog-box.md
+      - name: Close a window
+        href: windows/how-to-close-window-dialog-box.md
+      - name: Display a system dialog box
+        href: windows/how-to-open-common-system-dialog-box.md
   - name: XAML Language Reference
     href: ../../xaml-services/

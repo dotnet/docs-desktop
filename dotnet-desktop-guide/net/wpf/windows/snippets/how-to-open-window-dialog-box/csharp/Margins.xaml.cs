@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace Dialogs
+namespace DisplayWindows
 {
     /// <summary>
     /// Interaction logic for Margins.xaml
@@ -28,16 +28,5 @@ namespace Dialogs
         {
             DialogResult = true;
         }
-
-        // <CancelAndHide>
-        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
-        {
-            // First, cancel the window closure
-            e.Cancel = true;
-
-            // Next, hide the window
-            Hide();
-        }
-        // </CancelAndHide>
     }
 }

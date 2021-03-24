@@ -2,6 +2,7 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Change Margins"
+        Closing="Window_Closing"
         MinHeight="200"
         MinWidth="300"
         SizeToContent="WidthAndHeight"
