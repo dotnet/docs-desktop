@@ -485,6 +485,6 @@ For more information on custom controls, see [Control authoring overview](contro
 
 ## See also
 
-- [Tutorial: Create a new WPF app (WPF .NET)](../get-started/create-app-visual-studio.md)
-- [How to add a window to a project (WPF .NET)](../forms/how-to-add.md)
-- [Add a control (WPF .NET)](../controls/how-to-add-to-a-form.md)
+- [Tutorial: Create a new WPF app](../get-started/create-app-visual-studio.md)
+- [How to add a window to a project](../forms/how-to-add.md)
+- [Add a control](../controls/how-to-add-to-a-form.md)
