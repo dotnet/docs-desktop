@@ -24,7 +24,7 @@ If you're interested in opening operating system dialog boxes, see [How to open 
 
 When a modal window is opened, it generally represents a dialog box. WPF restricts interaction to the modal window, and the code that opened the window pauses until the window closes. This mechanism provides an easy way for you to prompt the user with data and wait for their response.
 
-Use the <xref:System.Windows.Window.ShowDialog> method to open a window. The following code instantiates the window, and opens it modally. The code opening the window pauses, waiting for the window to be closed:
+Use the <xref:System.Windows.Window.ShowDialog%2A> method to open a window. The following code instantiates the window, and opens it modally. The code opening the window pauses, waiting for the window to be closed:
 
 :::code language="csharp" source="snippets/how-to-open-window-dialog-box/csharp/Window1.xaml.cs" id="ShowDialog":::
 :::code language="vb" source="snippets/how-to-open-window-dialog-box/vb/Window1.xaml.vb" id="ShowDialog":::
@@ -38,7 +38,7 @@ For more information about how to handle the user response to a dialog box, see 
 
 Opening a window modeless means displaying it as a normal window. The code that opens the window continues to run as the window becomes visible. You can focus and interact with all modeless windows displayed by your application, without restriction.
 
-Use the <xref:System.Windows.Window.Show> method to open a window. The following code instantiates the window, and opens it modeless. The code opening the window continues to run:
+Use the <xref:System.Windows.Window.Show%2A> method to open a window. The following code instantiates the window, and opens it modeless. The code opening the window continues to run:
 
 :::code language="csharp" source="snippets/how-to-open-window-dialog-box/csharp/Window1.xaml.cs" id="ShowNormal":::
 :::code language="vb" source="snippets/how-to-open-window-dialog-box/vb/Window1.xaml.vb" id="ShowNormal":::
@@ -53,3 +53,7 @@ Use the <xref:System.Windows.Window.Show> method to open a window. The following
 - [How to close a window or dialog box](how-to-close-window-dialog-box.md)
 - [How to open a common dialog box](how-to-open-common-system-dialog-box.md)
 - [How to open a message box](how-to-open-message-box.md)
+- <xref:System.Windows.Window?displayProperty=fullName>
+- <xref:System.Windows.Window.DialogResult?displayProperty=fullName>
+- <xref:System.Windows.Window.Show?displayProperty=fullName>
+- <xref:System.Windows.Window.ShowDialog?displayProperty=fullName>

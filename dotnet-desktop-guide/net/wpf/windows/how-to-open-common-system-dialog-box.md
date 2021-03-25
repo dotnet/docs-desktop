@@ -63,3 +63,6 @@ For more information on the print dialog box, see <xref:System.Windows.Controls.
 - [How to open a message box](how-to-open-message-box.md)
 - [Dialog boxes overview](dialog-boxes-overview.md)
 - [Overview of WPF windows](index.md)
+- <xref:Microsoft.Win32.OpenFileDialog?displayProperty=fullName>
+- <xref:Microsoft.Win32.SaveFileDialog?displayProperty=fullName>
+- <xref:System.Windows.Controls.PrintDialog?displayProperty=fullName>

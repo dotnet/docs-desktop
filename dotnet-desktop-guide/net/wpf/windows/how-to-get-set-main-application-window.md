@@ -66,3 +66,7 @@ You can access the window chosen as the main window by inspecting the <xref:Syst
 - [Overview of WPF windows](index.md)
 - [Use the Startup event to open a window](index.md#opening-a-window)
 - [How to open a window or dialog box](how-to-open-window-dialog-box.md)
+- <xref:System.Windows.Application?displayProperty=fullName>
+- <xref:System.Windows.Application.MainWindow?displayProperty=fullName>
+- <xref:System.Windows.Application.StartupUri?displayProperty=fullName>
+- <xref:System.Windows.Application.ShutdownMode?displayProperty=fullName>
