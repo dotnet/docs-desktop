@@ -103,5 +103,5 @@ For more information on using message boxes, see <xref:System.Windows.MessageBox
 - [How to display a common dialog box](how-to-open-common-system-dialog-box.md)
 - [MessageBox sample](https://github.com/Microsoft/WPF-Samples/tree/master/Windows/MessageBox)
 - <xref:System.Windows.MessageBox?displayProperty=fullName>
-- <xref:System.Windows.MessageBox.Show?displayProperty=fullName>
+- <xref:System.Windows.MessageBox.Show%2A?displayProperty=fullName>
 - <xref:System.Windows.MessageBoxResult?displayProperty=fullName>
