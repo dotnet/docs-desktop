@@ -31,5 +31,9 @@ items:
         href: windows/how-to-open-common-system-dialog-box.md
       - name: Get or set the main window
         href: windows/how-to-get-set-main-application-window.md
-  - name: XAML Language Reference
-    href: ../../xaml-services/
+  - name: Data binding
+    items:
+    - name: Overview
+      href: data/index.md
+- name: XAML Language Reference
+  href: ../../xaml-services/
