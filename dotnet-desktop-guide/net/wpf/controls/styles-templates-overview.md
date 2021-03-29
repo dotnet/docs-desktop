@@ -48,7 +48,7 @@ Here is an example of the styles declared above being used.
 
 :::image type="content" source="./media/styles-and-templates-overview/stylingintro-textblocks.png" alt-text="Styled textblocks":::
 
-For more information, see [Create a style for a control](how-to-styles-templates-create-apply-style.md).
+For more information, see [Create a style for a control](how-to-create-apply-style.md).
 
 ## ControlTemplates
 
@@ -95,7 +95,7 @@ Designers generally allow you to create a copy of an existing template and modif
 
 Editing a copy of a template is a great way to learn how templates work. Instead of creating a new blank template, it's easier to edit a copy and change a few aspects of the visual presentation.
 
-For an example, see [Create a template for a control](../themes/how-to-create-apply-template.md).
+For an example, see [Create a template for a control](how-to-create-apply-template.md).
 
 ### TemplateBinding
 

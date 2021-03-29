@@ -53,7 +53,7 @@ In the end, the *MainWindow.xaml* file should look similar to the following:
 
 If you run the application, it looks like the following:
 
-:::image type="content" source="media/create-apply-template/unstyled-button.png" alt-text="WPF window with two unstyled buttons":::
+:::image type="content" source="media/how-to-create-apply-template/unstyled-button.png" alt-text="WPF window with two unstyled buttons":::
 
 ## Create a ControlTemplate
 
@@ -116,13 +116,13 @@ Set the second button's <xref:System.Windows.Controls.Control.Template> property
 
 If you run the project and look at the result, you'll see that the button has a rounded background.
 
-:::image type="content" source="media/create-apply-template/styled-button.png" alt-text="WPF window with one template oval button":::
+:::image type="content" source="media/how-to-create-apply-template/styled-button.png" alt-text="WPF window with one template oval button":::
 
 You may have noticed that the button isn't a circle but is skewed. Because of the way the **\<Ellipse>** element works, it always expands to fill the available space. Make the circle uniform by changing the button's  **:::no-loc text="width":::** and **:::no-loc text="height":::** properties to the same value:
 
 :::code language="xaml" source="./snippets/how-to-create-apply-template/csharp/Window3.xaml" id="StyledButtonSize":::
 
-:::image type="content" source="media/create-apply-template/styled-uniform-button.png" alt-text="WPF window with one template circular button":::
+:::image type="content" source="media/how-to-create-apply-template/styled-uniform-button.png" alt-text="WPF window with one template circular button":::
 
 ## Add a Trigger
 
@@ -144,7 +144,7 @@ Next, add a **\<Setter>** to the **\<Trigger>** that changes the **Fill** proper
 
 Run the project. Notice that when you move the mouse over the button, the color of the **\<Ellipse>** changes.
 
-:::image type="content" source="media/create-apply-template/mouse-move-over-button.gif" alt-text="mouse moves over WPF button to change the fill color":::
+:::image type="content" source="media/how-to-create-apply-template/mouse-move-over-button.gif" alt-text="mouse moves over WPF button to change the fill color":::
 
 ## Use a VisualState
 
@@ -178,7 +178,7 @@ The **\<ControlTemplate>** should now look like the following.
 
 Run the project. Notice that when you move the mouse over the button, the color of the **\<Ellipse>** animates.
 
-:::image type="content" source="media/create-apply-template/mouse-move-over-button-visualstate.gif" alt-text="mouse moves over WPF button to change the fill color":::
+:::image type="content" source="media/how-to-create-apply-template/mouse-move-over-button-visualstate.gif" alt-text="mouse moves over WPF button to change the fill color":::
 
 ## Next steps
 
