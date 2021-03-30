@@ -31,6 +31,18 @@ items:
         href: windows/how-to-open-common-system-dialog-box.md
       - name: Get or set the main window
         href: windows/how-to-get-set-main-application-window.md
+  - name: Controls
+    items:
+    - name: Styles and templates
+      items:
+      - name: Overview
+        href: controls/styles-templates-overview.md
+      - name: Common tasks
+        items:
+        - name: Create and apply a style
+          href: controls/how-to-create-apply-style.md
+        - name: Create and apply a template
+          href: controls/how-to-create-apply-template.md
   - name: Data binding
     items:
     - name: Overview
