@@ -1,9 +1,9 @@
 ---
-title: 
-description: Learn about XAML resources in Windows Presentation Foundation (WPF) for .NET. Understand the types of XAML resources related to styles and themes.
+title: XAML resources overview
+description: Learn about what a Windows Presentation Foundation (WPF) resource is. WPF provides a resource system, both in XAML and in code, that allows to you create, reference, and reuse resources.
 author: adegeo
 ms.author: adegeo
-ms.date: 
+ms.date: 03/31/2021
 ms.topic: overview
 dev_langs: 
   - "csharp"
@@ -150,7 +150,7 @@ Because the property being set must be a <xref:System.Windows.DependencyProperty
 
 Although all items in a <xref:System.Windows.ResourceDictionary> must have a key, that doesn't mean that all resources must have an explicit `x:Key`. Several object types support an implicit key when defined as a resource, where the key value is tied to the value of another property. This type of key is known as an implicit key, and an `x:Key` attribute is an explicit key. You can overwrite any implicit key by specifying an explicit key.
 
-One important scenario for resources is when you define a <xref:System.Windows.Style>. In fact, a <xref:System.Windows.Style> is almost always defined as an entry in a resource dictionary, because styles are inherently intended for reuse. For more information about styles, see [Styling and Templating](styles-templates-overview.md).
+One important scenario for resources is when you define a <xref:System.Windows.Style>. In fact, a <xref:System.Windows.Style> is almost always defined as an entry in a resource dictionary, because styles are inherently intended for reuse. For more information about styles, see [Styles and templates (WPF .NET)](../controls/styles-templates-overview.md).
 
 Styles for controls can be both created with and referenced with an implicit key. The theme styles that define the default appearance of a control rely on this implicit key. From the standpoint of requesting it, the implicit key is the <xref:System.Type> of the control itself. From the standpoint of defining the resources, the implicit key is the <xref:System.Windows.Style.TargetType%2A> of the style. As such, if you're creating themes for custom controls or creating styles that interact with existing theme styles, you don't need to specify an [x:Key Directive](../../../xaml-services/xkey-directive.md) for that <xref:System.Windows.Style>. And if you want to use the themed styles, you don't need to specify any style at all. For instance, the following style definition works, even though the <xref:System.Windows.Style> resource doesn't appear to have a key:
 
@@ -170,7 +170,6 @@ Implicit keys for styles don't apply on a control if <xref:System.Windows.Framew
 - [Merged resource dictionaries](xaml-resources-merged-dictionaries.md)
 - [x:Type markup extension](../../../xaml-services/xtype-markup-extension.md)
 - <xref:System.Windows.ResourceDictionary>
-- 
 - [Application resources](../../../framework/wpf/advanced/optimizing-performance-application-resources.md)
 - [Define and reference a resource](../../../framework/wpf/advanced/how-to-define-and-reference-a-resource.md)
 - [Application management overview](../../../framework/wpf/app-development/application-management-overview.md)

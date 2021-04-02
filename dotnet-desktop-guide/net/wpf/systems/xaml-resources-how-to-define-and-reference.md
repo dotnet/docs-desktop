@@ -1,6 +1,6 @@
 ---
 title: "How to define and reference a resource"
-description: 
+description: Learn how to define and reference Windows Presentation Foundation (WPF) resources through XAML and code.
 author: adegeo
 ms.author: adegeo
 ms.date: 04/02/2021
@@ -38,9 +38,9 @@ In the previous example, the `MyBrush` resource is accessed with the [StaticReso
 
 All resources in a resource diction must provide a key. When styles are defined though, they can omit the key, as explained in the [next section](#style-resources).
 
-Resources are also requested by the order found within the dictionary if you use the [StaticResource Markup Extension](staticresource-markup-extension.md) to reference them from within another resource. Make sure that any resource that you reference is defined in the collection earlier than where that resource is requested. For more information, see [Static resources](xaml-resources-overview.md#static-resources).
+Resources are also requested by the order found within the dictionary if you use the [StaticResource Markup Extension](../../../framework/wpf/advanced/staticresource-markup-extension.md) to reference them from within another resource. Make sure that any resource that you reference is defined in the collection earlier than where that resource is requested. For more information, see [Static resources](xaml-resources-overview.md#static-resources).
 
-If necessary, you can work around the strict creation order of resource references by using a [DynamicResource Markup Extension](dynamicresource-markup-extension.md) to reference the resource at runtime instead, but you should be aware that this `DynamicResource` technique has performance consequences. For more information, see [Dynamic resources](xaml-resources-overview.md#dynamic-resources).
+If necessary, you can work around the strict creation order of resource references by using a [DynamicResource Markup Extension](../../../framework/wpf/advanced/dynamicresource-markup-extension.md) to reference the resource at runtime instead, but you should be aware that this `DynamicResource` technique has performance consequences. For more information, see [Dynamic resources](xaml-resources-overview.md#dynamic-resources).
 
 ### Style resources
 
@@ -81,7 +81,7 @@ After the code runs, the window is updated:
 
 :::image type="content" source="media/xaml-resources-how-to-define-and-reference/after.png" alt-text="A window after a style is applied to a button":::
 
-Notice that the forth button's style was updated. The style was automatically applied because the button used the [DynamicResource Markup Extension](dynamicresource-markup-extension.md) to reference a style that didn't yet exist. Once the style was created and added to the resources of the window, it was applied to the button. For more information, see [Dynamic resources](xaml-resources-overview.md#dynamic-resources).
+Notice that the forth button's style was updated. The style was automatically applied because the button used the [DynamicResource Markup Extension](../../../framework/wpf/advanced/dynamicresource-markup-extension.md) to reference a style that didn't yet exist. Once the style was created and added to the resources of the window, it was applied to the button. For more information, see [Dynamic resources](xaml-resources-overview.md#dynamic-resources).
 
 ### Find a resource
 
