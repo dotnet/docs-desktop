@@ -15,11 +15,11 @@ dev_langs:
 A resource is an object that can be reused in different places in your app. Examples of resources include brushes and styles. This overview describes how to use resources in Extensible Application Markup Language (XAML). You can also create and access resources by using code.
 
 > [!NOTE]
-> XAML resources described in this article are different from *app resources* which are generally files added to an app, such as content, data, or embedded files.
+> XAML resources described in this article are different from *app resources*, which are generally files added to an app, such as content, data, or embedded files.
 
 [!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
 
-## Using resources in XAML
+## Use resources in XAML
 
 The following example defines a <xref:System.Windows.Media.SolidColorBrush> as a resource on the root element of a page. The example then references the resource and uses it to set properties of several child elements, including an <xref:System.Windows.Shapes.Ellipse>, a <xref:System.Windows.Controls.TextBlock>, and a <xref:System.Windows.Controls.Button>.
 
