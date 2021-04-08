@@ -17,7 +17,7 @@ helpviewer_keywords:
 ms.assetid: c1cfcddb-e39c-41c8-a7f3-60984914dfae
 ---
 
-# Resources and code (WPF .NET)
+# Resources in code (WPF .NET)
 
 This overview concentrates on how Windows Presentation Foundation (WPF) resources can be accessed or created using code rather than XAML syntax. For more information on general resource usage and resources from a XAML syntax perspective, see [Overview of XAML resources](xaml-resources-overview.md).
 
@@ -25,7 +25,7 @@ This overview concentrates on how Windows Presentation Foundation (WPF) resource
 
 The keys that identify XAML defined resources are also used to retrieve specific resources if you request the resource in code. The simplest way to retrieve a resource from code is to call either the <xref:System.Windows.FrameworkElement.FindResource%2A> or the <xref:System.Windows.FrameworkElement.TryFindResource%2A> method from framework-level objects in your application. The behavioral difference between these methods is what happens if the requested key isn't found. <xref:System.Windows.FrameworkElement.FindResource%2A> raises an exception. <xref:System.Windows.FrameworkElement.TryFindResource%2A> won't raise an exception but returns `null`. Each method takes the resource key as an input parameter, and returns a loosely typed object.
 
-Typically, a resource key is a string, but there are [occasional nonstring usages](#using-objects-as-keys). Typically you would cast the returned object to the type required by the property that you're setting when requesting the resource. The lookup logic for code resource resolution is the same as the dynamic resource reference XAML case. The search for resources starts from the calling element, then continues through parent elements in the logical tree. The lookup continues onwards into application resources, themes, and system resources if necessary. A code request for a resource will properly account for changes to those resources that happened during runtime.
+Typically, a resource key is a string, but there are [occasional nonstring usages](#using-objects-as-keys). The lookup logic for code resource resolution is the same as the dynamic resource reference XAML case. The search for resources starts from the calling element, then continues through parent elements in the logical tree. The lookup continues onwards into application resources, themes, and system resources if necessary. A code request for a resource will properly account for changes to those resources that happened during runtime.
 
 The following code example demonstrates a <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event handler that finds a resource by key, and uses the returned value to set a property.
 
