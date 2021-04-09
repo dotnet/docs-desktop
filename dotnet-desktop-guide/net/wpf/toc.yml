@@ -60,7 +60,7 @@ items:
       - name: Define and reference resources
         href: systems/xaml-resources-how-to-define-and-reference.md
       - name: Use application resources
-        href: systems/xaml-resources-how-to-define-and-reference.md
+        href: systems/xaml-resources-how-to-use-application.md
       - name: Use system resources
         href: systems/xaml-resources-how-to-use-system.md
 - name: XAML Language Reference
