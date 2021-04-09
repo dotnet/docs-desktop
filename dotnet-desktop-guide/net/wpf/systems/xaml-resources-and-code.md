@@ -53,3 +53,6 @@ For more information, see [Styles, DataTemplates, and implicit keys](xaml-resour
 ## See also
 
 - [Overview of XAML resources](xaml-resources-overview.md)
+- [How to define and reference a WPF resource](xaml-resources-how-to-define-and-reference.md)
+- [How to use system resources](xaml-resources-how-to-use-system.md)
+- [How to use application resources](xaml-resources-how-to-use-application.md)

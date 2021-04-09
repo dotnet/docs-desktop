@@ -59,6 +59,9 @@ items:
       items:
       - name: Define and reference resources
         href: systems/xaml-resources-how-to-define-and-reference.md
-      
+      - name: Define and reference resources
+        href: systems/xaml-resources-how-to-define-and-reference.md
+      - name: Define and reference resources
+        href: systems/xaml-resources-how-to-define-and-reference.md
 - name: XAML Language Reference
   href: ../../xaml-services/

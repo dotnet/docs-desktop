@@ -101,3 +101,5 @@ When you have reference to a resource, either by searching for it or by creating
 
 - [Overview of XAML resources](xaml-resources-overview.md)
 - [Styles and templates](../controls/styles-templates-overview.md)
+- [How to use system resources](xaml-resources-how-to-use-system.md)
+- [How to use application resources](xaml-resources-how-to-use-application.md)

@@ -30,4 +30,6 @@ The following example shows a XAML page that references an application-level res
 ## See also
 
 - [Overview of XAML resources](xaml-resources-overview.md)
+- [Resources in code](xaml-resources-and-code.md)
 - [How to define and reference a WPF resource](xaml-resources-how-to-define-and-reference.md)
+- [How to use system resources](xaml-resources-how-to-use-system.md)

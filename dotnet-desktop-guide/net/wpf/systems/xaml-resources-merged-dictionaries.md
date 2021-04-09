@@ -77,6 +77,6 @@ If resources that need to be localized are isolated to dictionaries that are mer
 
 - <xref:System.Windows.ResourceDictionary>
 - [Overview of XAML resources](xaml-resources-overview.md)
-- [Resources and code](xaml-resources-and-code.md)
+- [Resources in code](xaml-resources-and-code.md)
 - [WPF Application Resource, Content, and Data Files](../../../framework/wpf/app-development/wpf-application-resource-content-and-data-files.md)
 - [WPF Globalization and Localization Overview](../../../framework/wpf/advanced/wpf-globalization-and-localization-overview.md)
