@@ -24,7 +24,7 @@ This example demonstrates how to use system-defined resources. System resources 
 
 ## Fonts
 
-Use the <xref:System.Windows.SystemFonts> class to reference the fonts used by the operating system. This class contains both system font values as static properties, and properties that reference resource keys that can be used to access those values dynamically at run-time. For example, <xref:System.Windows.SystemFonts.CaptionFontFamily%2A> is a <xref:System.Windows.SystemFonts> value, and <xref:System.Windows.SystemFonts.CaptionFontFamilyKey%2A> is a corresponding resource key.
+Use the <xref:System.Windows.SystemFonts> class to reference the fonts used by the operating system. This class contains system font values as static properties, and properties that reference resource keys that can be used to access those values dynamically at run time. For example, <xref:System.Windows.SystemFonts.CaptionFontFamily%2A> is a <xref:System.Windows.SystemFonts> value, and <xref:System.Windows.SystemFonts.CaptionFontFamilyKey%2A> is a corresponding resource key.
 
 The following example shows how to access and use the properties of <xref:System.Windows.SystemFonts> as static values to style or customize a text block:
 
@@ -37,10 +37,10 @@ To use the values of <xref:System.Windows.SystemFonts> in code, you don't have t
 
 ### Dynamic fonts in XAML
 
-System font metrics can be used as either static or dynamic resources. Use a dynamic resource if you want the font metric to update automatically while the application runs; otherwise use a static resource.
+System font metrics can be used as either static or dynamic resources. Use a dynamic resource if you want the font metric to update automatically while the application runs; otherwise, use a static resource.
 
 > [!NOTE]
-> Dynamic resources have the keyword _Key_ appended to the property name.
+> Dynamic resources have the keyword `Key` appended to the property name.
 
 The following example shows how to access and use system font dynamic resources to style or customize a text block:
 
@@ -54,17 +54,17 @@ The following example shows how to access and use the static values of <xref:Sys
 
 :::code language="xaml" source="./snippets/xaml-resources-how-to-use-system/csharp/MainWindow.xaml" id="SystemParams":::
 
-To use the values of <xref:System.Windows.SystemParameters> in code, you don't have to use either static references or dynamic resource references. Instead, use the values of the <xref:System.Windows.SystemParameters> class. Although the non-key properties are apparently defined as static properties, the runtime behavior of WPF as hosted by the system will reevaluate the properties in real time, and will properly account for user-driven changes to system values. The following example shows how to set the width and height of a button by using <xref:System.Windows.SystemParameters> values:
+To use the values of <xref:System.Windows.SystemParameters> in code, you don't have to use either static references or dynamic resource references. Instead, use the values of the <xref:System.Windows.SystemParameters> class. Although the non-key properties are apparently defined as static properties, the run-time behavior of WPF as hosted by the system will reevaluate the properties in real time, and will properly account for user-driven changes to system values. The following example shows how to set the width and height of a button by using <xref:System.Windows.SystemParameters> values:
 
 :::code language="csharp" source="./snippets/xaml-resources-how-to-use-system/csharp/MainWindow.xaml.cs" id="SystemParams":::
 :::code language="vb" source="./snippets/xaml-resources-how-to-use-system/vb/MainWindow.xaml.vb" id="SystemParams":::
 
 ### Dynamic parameters in XAML
 
-System parameter metrics can be used as either static or dynamic resources. Use a dynamic resource if you want the parameter metric to update automatically while the application runs; otherwise use a static resource.
+System parameter metrics can be used as either static or dynamic resources. Use a dynamic resource if you want the parameter metric to update automatically while the application runs; otherwise, use a static resource.
 
 > [!NOTE]
-> Dynamic resources have the keyword _Key_ appended to the property name.
+> Dynamic resources have the keyword `Key` appended to the property name.
 
 The following example shows how to access and use system parameter dynamic resources to style or customize a button. This XAML example sizes a button by assigning <xref:System.Windows.SystemParameters> values to the button's width and height.
 
