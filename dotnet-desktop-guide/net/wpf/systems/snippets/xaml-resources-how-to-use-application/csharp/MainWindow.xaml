@@ -1,0 +1,15 @@
+﻿<Window x:Class="SampleApplication.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="200" Width="200">
+    <!--<AppResourcesExample>-->
+    <Border Style="{StaticResource FancyBorder}">
+        <StackPanel Margin="5">
+            <Button>Button 1</Button>
+            <Button>Button 2</Button>
+            <Button>Button 3</Button>
+            <Button>Button 4</Button>
+        </StackPanel>
+    </Border>
+    <!--</AppResourcesExample>-->
+</Window>
