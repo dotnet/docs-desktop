@@ -227,6 +227,94 @@
     {
       "source_path": "dotnet-desktop-guide/net/winforms/how-mouse-input-works-in-windows-forms.md",
       "redirect_url": "/dotnet/desktop/winforms/input-mouse/overview?view=netdesktop-5.0"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/net/wpf/introduction-to-wpf.md",
+      "redirect_url": "/dotnet/desktop/wpf/overview/?view=netdesktop-5.0"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/framework/wpf/overview/index.md",
+      "redirect_url": "/dotnet/desktop/wpf/introduction-to-wpf?view=netframeworkdesktop-4.8"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/net/wpf/getting-started/walkthrough-my-first-wpf-desktop-application.md",
+      "redirect_url": "/dotnet/desktop/wpf/get-started/create-app-visual-studio?view=netdesktop-5.0"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/framework/wpf/get-started/create-app-visual-studio.md",
+      "redirect_url": "/dotnet/desktop/wpf/getting-started/walkthrough-my-first-wpf-desktop-application?view=netframeworkdesktop-4.8"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/net/wpf/app-development/wpf-windows-overview.md",
+      "redirect_url": "/dotnet/desktop/wpf/windows/index?view=netdesktop-5.0"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/framework/wpf/windows/index.md",
+      "redirect_url": "/dotnet/desktop/wpf/app-development/wpf-windows-overview?view=netframeworkdesktop-4.8"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/net/wpf/app-development/dialog-boxes-overview.md",
+      "redirect_url": "/dotnet/desktop/wpf/windows/dialog-boxes-overview?view=netdesktop-5.0"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/framework/wpf/windows/dialog-boxes-overview.md",
+      "redirect_url": "/dotnet/desktop/wpf/app-development/dialog-boxes-overview?view=netframeworkdesktop-4.8"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/net/wpf/app-development/how-to-open-a-window.md",
+      "redirect_url": "/dotnet/desktop/wpf/windows/how-to-open-window-dialog-box?view=netdesktop-5.0"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/framework/wpf/windows/how-to-open-window-dialog-box.md",
+      "redirect_url": "/dotnet/desktop/wpf/app-development/how-to-open-a-window?view=netframeworkdesktop-4.8"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/net/wpf/app-development/how-to-open-a-dialog-box.md",
+      "redirect_url": "/dotnet/desktop/wpf/windows/how-to-open-window-dialog-box?view=netdesktop-5.0"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/net/wpf/how-to-return-a-dialog-box-result.md",
+      "redirect_url": "/dotnet/desktop/wpf/windows/how-to-open-window-dialog-box?view=netdesktop-5.0"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/net/wpf/app-development/how-to-open-a-message-box.md",
+      "redirect_url": "/dotnet/desktop/wpf/windows/how-to-open-message-box?view=netdesktop-5.0"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/framework/wpf/windows/how-to-open-message-box.md",
+      "redirect_url": "/dotnet/desktop/wpf/app-development/how-to-open-a-message-box?view=netframeworkdesktop-4.8"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/net/wpf/app-development/how-to-get-and-set-the-main-application-window.md",
+      "redirect_url": "/dotnet/desktop/wpf/windows/how-to-get-set-main-application-window?view=netdesktop-5.0"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/framework/wpf/windows/how-to-get-set-main-application-window.md",
+      "redirect_url": "/dotnet/desktop/wpf/app-development/how-to-get-and-set-the-main-application-window?view=netframeworkdesktop-4.8"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/framework/wpf/fundamentals/xaml.md",
+      "redirect_url": "/dotnet/desktop/wpf/xaml/overview?view=netdesktop-5.0"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/framework/wpf/fundamentals/xaml-resources-define.md",
+      "redirect_url": "/dotnet/desktop/wpf/systems/xaml-resources-overview?view=netdesktop-5.0"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/framework/wpf/fundamentals/styles-templates-overview.md",
+      "redirect_url": "/dotnet/desktop/wpf/controls/styles-templates-overview?view=netdesktop-5.0"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/framework/wpf/fundamentals/styles-templates-create-apply-style.md",
+      "redirect_url": "/dotnet/desktop/wpf/controls/how-to-create-apply-style?view=netdesktop-5.0"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/framework/wpf/themes/how-to-create-apply-template.md",
+      "redirect_url": "/dotnet/desktop/wpf/controls/how-to-create-apply-template?view=netdesktop-5.0"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/framework/wpf/data/data-binding-overview.md",
+      "redirect_url": "/dotnet/desktop/wpf/data/overview?view=netdesktop-5.0"
     }
   ]
 }
