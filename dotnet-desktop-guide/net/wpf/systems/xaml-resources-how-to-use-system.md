@@ -45,13 +45,11 @@ The following example shows how to access and use system font dynamic resources 
 
 Use the <xref:System.Windows.SystemParameters> class to reference system-level properties, such as the size of the primary display. This class contains both system parameter value properties, and resource keys that bind to the values. For example, <xref:System.Windows.SystemParameters.FullPrimaryScreenHeight%2A> is a <xref:System.Windows.SystemParameters> property value and <xref:System.Windows.SystemParameters.FullPrimaryScreenHeightKey%2A> is the corresponding resource key.
 
-In XAML, you can use the members of <xref:System.Windows.SystemParameters> as either a static property usage, or a dynamic resource references (with the static property value as the key). Use a dynamic resource reference if you want the system based value to update automatically while the application runs; otherwise, use a static reference. Resource keys have the suffix `Key` appended to the property name.
-
 The following example shows how to access and use the static values of <xref:System.Windows.SystemParameters> to style or customize a button. This markup example sizes a button by applying <xref:System.Windows.SystemParameters> values to a button:
 
 :::code language="xaml" source="./snippets/xaml-resources-how-to-use-system/csharp/MainWindow.xaml" id="SystemParams":::
 
-To use the values of <xref:System.Windows.SystemParameters> in code, you don't have to use either static references or dynamic resource references. Instead, use the values of the <xref:System.Windows.SystemParameters> class. Although the non-key properties are apparently defined as static properties, the runtime behavior of WPF as hosted by the system will reevaluate the properties in realtime, and will properly account for user-driven changes to system values. The following example shows how to set the width and height of a button by using <xref:System.Windows.SystemParameters> values:
+To use the values of <xref:System.Windows.SystemParameters> in code, you don't have to use either static references or dynamic resource references. Instead, use the values of the <xref:System.Windows.SystemParameters> class. Although the non-key properties are apparently defined as static properties, the runtime behavior of WPF as hosted by the system will reevaluate the properties in real time, and will properly account for user-driven changes to system values. The following example shows how to set the width and height of a button by using <xref:System.Windows.SystemParameters> values:
 
 :::code language="csharp" source="./snippets/xaml-resources-how-to-use-system/csharp/MainWindow.xaml.cs" id="SystemParams":::
 :::code language="vb" source="./snippets/xaml-resources-how-to-use-system/vb/MainWindow.xaml.vb" id="SystemParams":::
