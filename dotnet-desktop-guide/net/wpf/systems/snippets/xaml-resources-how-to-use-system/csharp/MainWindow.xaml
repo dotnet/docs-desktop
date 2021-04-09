@@ -1,0 +1,40 @@
+﻿<Window x:Class="SampleApplication.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="200" Width="200">
+    <!--<AppResourcesExample>-->
+    <Border>
+        <StackPanel Margin="5" x:Name="mainStackPanel">
+            <!--<SystemFont>-->
+            <TextBlock FontSize="{x:Static SystemFonts.SmallCaptionFontSize}"
+                       FontWeight="{x:Static SystemFonts.SmallCaptionFontWeight}"
+                       FontFamily="{x:Static SystemFonts.SmallCaptionFontFamily}"
+                       Text="Small Caption Font">
+            </TextBlock>
+            <!--</SystemFont>-->
+            <!--<SystemFontDynamic>-->
+            <TextBlock FontSize="{DynamicResource {x:Static SystemFonts.SmallCaptionFontSize}}"
+                       FontWeight="{DynamicResource {x:Static SystemFonts.SmallCaptionFontWeight}}"
+                       FontFamily="{DynamicResource {x:Static SystemFonts.SmallCaptionFontFamily}}"
+                       Text="Small Caption Font">
+            </TextBlock>
+            <!--</SystemFontDynamic>-->
+            <Button Click="Button_Click_1">Test</Button>
+            <!--<SystemParams>-->
+            <Button FontSize="8" 
+                    Height="{x:Static SystemParameters.CaptionHeight}"
+                    Width="{x:Static SystemParameters.IconGridWidth}"
+                    Content="System Parameters">
+            </Button>
+            <!--</SystemParams>-->
+            <!--<SystemParamsDynamic>-->
+            <Button FontSize="8" 
+                    Height="{DynamicResource {x:Static SystemParameters.CaptionHeightKey}}"
+                    Width="{DynamicResource {x:Static SystemParameters.IconGridWidthKey}}"
+                    Content="System Parameters">
+            </Button>
+            <!--</SystemParamsDynamic>-->
+        </StackPanel>
+    </Border>
+    <!--</AppResourcesExample>-->
+</Window>

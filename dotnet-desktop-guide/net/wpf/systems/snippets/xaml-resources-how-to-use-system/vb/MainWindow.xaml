@@ -1,0 +1,28 @@
+﻿<Window x:Class="MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SampleApplication"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="200" Width="200">
+    <Border>
+        <StackPanel Margin="5" x:Name="mainStackPanel">
+            <!--<SystemFont>-->
+            <TextBlock FontSize="{x:Static SystemFonts.SmallCaptionFontSize}"
+                       FontWeight="{x:Static SystemFonts.SmallCaptionFontWeight}"
+                       FontFamily="{x:Static SystemFonts.SmallCaptionFontFamily}"
+                       Text="Small Caption Font">
+            </TextBlock>
+            <!--</SystemFont>-->
+            <!--<SystemFontDynamic>-->
+            <TextBlock FontSize="{DynamicResource {x:Static SystemFonts.SmallCaptionFontSize}}"
+                       FontWeight="{DynamicResource {x:Static SystemFonts.SmallCaptionFontWeight}}"
+                       FontFamily="{DynamicResource {x:Static SystemFonts.SmallCaptionFontFamily}}"
+                       Text="Small Caption Font">
+            </TextBlock>
+            <!--</SystemFontDynamic>-->
+            <Button Click="Button_Click_1">Test</Button>
+        </StackPanel>
+    </Border>
+</Window>
