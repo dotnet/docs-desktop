@@ -284,7 +284,7 @@ WPF supports declaring bindings in the XAML markup directly. For example, the fo
 
 The WPF data binding engine provides more than just binding, it provides validation, sorting, filtering, and grouping. Furthermore, data binding supports the use of data templates to create custom user interface for bound data.
 
-For more information, see [Data binding overview](/dotnet/desktop-wpf/data/data-binding-overview).
+For more information, see [Data binding overview](../data/index.md).
 
 ## Graphics & animation
 
