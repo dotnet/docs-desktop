@@ -4,7 +4,7 @@ description: Learn about Windows Presentation Foundation (WPF) for .NET merged r
 author: adegeo
 ms.author: adegeo
 ms.date: 03/30/2021
-ms.topic: overview
+ms.topic: conceptual
 helpviewer_keywords: 
   - "merged resource dictionaries [WPF]"
   - "dictionaries [WPF], merged resources"

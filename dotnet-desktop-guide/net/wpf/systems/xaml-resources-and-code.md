@@ -14,7 +14,6 @@ helpviewer_keywords:
   - "procedural code [WPF], creating resources with"
   - "procedural code [WPF], accessing resources from"
   - "resources [WPF], creating with procedural code"
-ms.assetid: c1cfcddb-e39c-41c8-a7f3-60984914dfae
 ---
 
 # Resources in code (WPF .NET)

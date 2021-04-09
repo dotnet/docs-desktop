@@ -4,7 +4,6 @@ description: Learn how to define and reference Windows Presentation Foundation (
 author: adegeo
 ms.author: adegeo
 ms.date: 04/08/2021
-ms.topic: conceptual
 helpviewer_keywords:
   - "application resources [WPF]"
   - "resources [WPF], application resources"

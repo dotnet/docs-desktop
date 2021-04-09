@@ -4,7 +4,6 @@ description: Learn how to define and reference Windows Presentation Foundation (
 author: adegeo
 ms.author: adegeo
 ms.date: 04/02/2021
-ms.topic: conceptual
 dev_langs:
   - "csharp"
   - "vb"

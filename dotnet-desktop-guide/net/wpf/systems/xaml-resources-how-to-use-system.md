@@ -1,13 +1,18 @@
 ---
 title: "How to use system resources"
-description: Learn how to define and reference Windows Presentation Foundation (WPF) application-scoped resources in XAML.
+description: Learn how to define and reference Windows Presentation Foundation (WPF) Windows Operating System resources in XAML.
 author: adegeo
 ms.author: adegeo
-ms.date: 04/08/2021
-ms.topic: conceptual
+ms.date: 04/09/2021
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords:
-  - "application resources [WPF]"
-  - "resources [WPF], application resources"
+  - "resource keys [WPF], SystemFonts class"
+  - "resource keys [WPF], SystemParameters class"
+  - "system fonts [WPF]"
+  - "classes [WPF], SystemParameters"
+  - "classes [WPF], SystemFonts"
 #no-loc: [App.xaml, Application.xaml]
 ---
 
