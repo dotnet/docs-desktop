@@ -169,7 +169,7 @@ The previous attribute syntax example is equivalent to the following more verbos
 
 For more information on type conversion, see [TypeConverters and XAML](../../../framework/wpf/advanced/typeconverters-and-xaml.md).
 
-## XAML root elements and XAML namespaces
+## Root elements and namespaces
 
 A XAML file must have only one root element, to be both a well-formed XML file and a valid XAML file. For typical WPF scenarios, you use a root element that has a prominent meaning in the WPF app model (for example, <xref:System.Windows.Window> or <xref:System.Windows.Controls.Page> for a page, <xref:System.Windows.ResourceDictionary> for an external dictionary, or <xref:System.Windows.Application> for the app definition). The following example shows the root element of a typical XAML file for a WPF page, with the root element of <xref:System.Windows.Controls.Page>.
 
@@ -199,7 +199,7 @@ In the previous root element example, the prefix `x:` was used to map the XAML n
 
 There are additional programming constructs in the `x:` prefix/XAML namespace, which aren't as common. For details, see [XAML Namespace (x:) Language Features](../../../xaml-services/namespace-language-features.md).
 
-## Custom prefixes and custom types in XAML
+## Custom prefixes and custom types
 
 For your own custom assemblies, or for assemblies outside the WPF core of **PresentationCore**, **PresentationFramework** and **WindowsBase**, you can specify the assembly as part of a custom `xmlns` mapping. You can then reference types from that assembly in your XAML, so long as that type is correctly implemented to support the XAML usages you are attempting.
 
@@ -243,7 +243,7 @@ If you don't want to create a separate code-behind file, you can also inline you
 
 A particular event feature that is fundamental to WPF is a routed event. Routed events enable an element to handle an event that was raised by a different element, as long as the elements are connected through a tree relationship. When specifying event handling with a XAML attribute, the routed event can be listened for and handled on any element, including elements that don't list that particular event in the class members table. This is accomplished by qualifying the event name attribute with the owning class name. For instance, the parent `StackPanel` in the ongoing `StackPanel` / `Button` example could register a handler for the child element button's <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event by specifying the attribute `Button.Click` on the `StackPanel` object element, with your handler name as the attribute value. For more information, see [Routed Events Overview](../../../framework/wpf/advanced/routed-events-overview.md).
 
-## XAML named elements
+## Named elements
 
 By default, the object instance that is created in an object graph by processing a XAML object element doesn't have a unique identifier or object reference. In contrast, if you call a constructor in code, you almost always use the constructor result to set a variable to the constructed instance, so that you can reference the instance later in your code. To provide standardized access to objects that were created through a markup definition, XAML defines the [x:Name attribute](../../../xaml-services/xname-directive.md). You can set the value of the `x:Name` attribute on any object element. In your code-behind, the identifier you choose is equivalent to an instance variable that refers to the constructed instance. In all respects, named elements function as if they were object instances (the name references that instance), and your code-behind can reference the named elements to handle run-time interactions within the app. This connection between instances and variables is accomplished by the WPF XAML markup compiler, and more specifically involve features and patterns such as <xref:System.Windows.Markup.IComponentConnector.InitializeComponent%2A> that won't be discussed in detail in this article.
 
@@ -276,11 +276,11 @@ In WPF, most or all the attached properties are also implemented as dependency p
 
 Attached events use a similar `ownerType.eventName` form of attribute syntax. Just like the non-attached events, the attribute value for an attached event in XAML specifies the name of the handler method that is invoked when the event is handled on the element. Attached event usages in WPF XAML are less common. For more information, see [Attached Events Overview](../../../framework/wpf/advanced/attached-events-overview.md).
 
-## Base types and XAML
+## Base types
 
 Underlying WPF XAML and its XAML namespace is a collection of types that correspond to CLR objects and markup elements for XAML. However, not all classes can be mapped to elements. Abstract classes, such as <xref:System.Windows.Controls.Primitives.ButtonBase>, and certain non-abstract base classes, are used for inheritance in the CLR objects model. Base classes, including abstract ones, are still important to XAML development because each of the concrete XAML elements inherits members from some base class in its hierarchy. Often these members include properties that can be set as attributes on the element, or events that can be handled. <xref:System.Windows.FrameworkElement> is the concrete base UI class of WPF at the WPF framework level. When designing UI, you will use various shape, panel, decorator, or control classes, which all derive from <xref:System.Windows.FrameworkElement>. A related base class, <xref:System.Windows.FrameworkContentElement>, supports document-oriented elements that work well for a flow layout presentation, using APIs that deliberately mirror the APIs in <xref:System.Windows.FrameworkElement>. The combination of attributes at the element level and a CLR object model provides you with a set of common properties that are settable on most concrete XAML elements, regardless of the specific XAML element and its underlying type.
 
-## XAML security
+## Security
 
 XAML is a markup language that directly represents object instantiation and execution. That's why elements created in XAML have the same ability to interact with system resources (network access, file system IO, for example) as your app code does. XAML also has the same access to the system resources as the hosting app does.
 
@@ -288,7 +288,7 @@ XAML is a markup language that directly represents object instantiation and exec
 
 Unlike .NET Framework, WPF for .NET doesn't support CAS. For more information, see [Code Access Security differences](../migration/differences-from-net-framework.md#code-access-security).
 
-## Loading XAML from code
+## Load XAML from code
 
 XAML can be used to define all of the UI, but it's sometimes also appropriate to define just a piece of the UI in XAML. This capability could be used to:
 
