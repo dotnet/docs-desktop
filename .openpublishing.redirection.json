@@ -293,6 +293,22 @@
       "redirect_url": "/dotnet/desktop/wpf/app-development/how-to-get-and-set-the-main-application-window?view=netframeworkdesktop-4.8"
     },
     {
+      "source_path": "dotnet-desktop-guide/net/wpf/data/data-binding-overview.md",
+      "redirect_url": "/dotnet/desktop/wpf/data/index?view=netdesktop-5.0"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/framework/wpf/data/index.md",
+      "redirect_url": "/dotnet/desktop/wpf/data/data-binding-overview?view=netframeworkdesktop-4.8"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/net/wpf/advanced/xaml-in-wpf.md",
+      "redirect_url": "/dotnet/desktop/wpf/xaml/index?view=netdesktop-5.0"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/framework/wpf/xaml/index.md",
+      "redirect_url": "/dotnet/desktop/wpf/advanced/xaml-in-wpf?view=netframeworkdesktop-4.8"
+    },
+    {
       "source_path": "dotnet-desktop-guide/framework/wpf/fundamentals/xaml.md",
       "redirect_url": "/dotnet/desktop/wpf/xaml/overview?view=netdesktop-5.0"
     },
@@ -313,8 +329,64 @@
       "redirect_url": "/dotnet/desktop/wpf/controls/how-to-create-apply-template?view=netdesktop-5.0"
     },
     {
-      "source_path": "dotnet-desktop-guide/framework/wpf/data/data-binding-overview.md",
-      "redirect_url": "/dotnet/desktop/wpf/data/overview?view=netdesktop-5.0"
+      "source_path": "dotnet-desktop-guide/net/wpf/advanced/xaml-resources-define.md",
+      "redirect_url": "/dotnet/desktop/wpf/systems/xaml-resources-overview?view=netdesktop-5.0"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/framework/wpf/systems/xaml-resources-overview.md",
+      "redirect_url": "/dotnet/desktop/wpf/advanced/xaml-resources-define?view=netframeworkdesktop-4.8"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/net/wpf/advanced/resources-and-code.md",
+      "redirect_url": "/dotnet/desktop/wpf/systems/xaml-resources-and-code?view=netdesktop-5.0"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/framework/wpf/systems/xaml-resources-and-code.md",
+      "redirect_url": "/dotnet/desktop/wpf/advanced/resources-and-code?view=netframeworkdesktop-4.8"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/net/wpf/advanced/merged-resource-dictionaries.md",
+      "redirect_url": "/dotnet/desktop/wpf/systems/xaml-resources-merged-dictionaries?view=netdesktop-5.0"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/framework/wpf/systems/xaml-resources-merged-dictionaries.md",
+      "redirect_url": "/dotnet/desktop/wpf/advanced/merged-resource-dictionaries?view=netframeworkdesktop-4.8"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/net/wpf/advanced/how-to-define-and-reference-a-resource.md",
+      "redirect_url": "/dotnet/desktop/wpf/systems/xaml-resources-how-to-define-and-reference?view=netdesktop-5.0"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/framework/wpf/systems/xaml-resources-how-to-define-and-reference.md",
+      "redirect_url": "/dotnet/desktop/wpf/advanced/how-to-define-and-reference-a-resource?view=netframeworkdesktop-4.8"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/net/wpf/advanced/how-to-use-application-resources.md",
+      "redirect_url": "/dotnet/desktop/wpf/systems/xaml-resources-how-to-use-application?view=netdesktop-5.0"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/framework/wpf/systems/xaml-resources-how-to-use-application.md",
+      "redirect_url": "/dotnet/desktop/wpf/advanced/how-to-use-application-resources?view=netframeworkdesktop-4.8"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/net/wpf/advanced/how-to-use-systemfonts.md",
+      "redirect_url": "/dotnet/desktop/wpf/systems/xaml-resources-how-to-use-system?view=netdesktop-5.0"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/framework/wpf/systems/xaml-resources-how-to-use-system.md",
+      "redirect_url": "/dotnet/desktop/wpf/advanced/how-to-use-systemfonts?view=netframeworkdesktop-4.8"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/net/wpf/advanced/how-to-use-system-fonts-keys.md",
+      "redirect_url": "/dotnet/desktop/wpf/systems/xaml-resources-how-to-use-system?view=netdesktop-5.0"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/net/wpf/advanced/how-to-use-systemparameters.md",
+      "redirect_url": "/dotnet/desktop/wpf/systems/xaml-resources-how-to-use-system?view=netdesktop-5.0"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/net/wpf/advanced/how-to-use-system-parameters-keys.md",
+      "redirect_url": "/dotnet/desktop/wpf/systems/xaml-resources-how-to-use-system?view=netdesktop-5.0"
     }
   ]
 }
