@@ -7,5 +7,5 @@
             buttonContainer.Children.Remove(element)
         End If
     End Sub
-    '<RemoveControl>
+    '</RemoveControl>
 End Class

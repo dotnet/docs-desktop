@@ -158,11 +158,11 @@ In the [XAML Syntax in Brief](#xaml-syntax-in-brief) section, it was stated that
 
 The <xref:System.Windows.Thickness> structure is an example of a type that has a type conversion enabled for XAML usages. <xref:System.Windows.Thickness> indicates measurements within a nested rectangle and is used as the value for properties such as <xref:System.Windows.FrameworkElement.Margin%2A>. By placing a type converter on <xref:System.Windows.Thickness>, all properties that use a <xref:System.Windows.Thickness> are easier to specify in XAML because they can be specified as attributes. The following example uses a type conversion and attribute syntax to provide a value for a <xref:System.Windows.FrameworkElement.Margin%2A>:
 
-:::code language="xaml" source="./snippets/index/csharp/Window1.xaml" id="TypeConverter1" :::
+:::code language="xaml" source="./snippets/index/csharp/MainWindow.xaml" id="TypeConverter1" :::
 
 The previous attribute syntax example is equivalent to the following more verbose syntax example, where the <xref:System.Windows.FrameworkElement.Margin%2A> is instead set through property element syntax containing a <xref:System.Windows.Thickness> object element. The four key properties of <xref:System.Windows.Thickness> are set as attributes on the new instance:
 
-:::code language="xaml" source="./snippets/index/csharp/Window1.xaml" id="TypeConverter1" :::
+:::code language="xaml" source="./snippets/index/csharp/MainWindow.xaml" id="TypeConverter2" :::
 
 > [!NOTE]
 > There are also a limited number of objects where the type conversion is the only public way to set a property to that type without involving a subclass, because the type itself doesn't have a parameterless constructor. An example is <xref:System.Windows.Input.Cursor>.
