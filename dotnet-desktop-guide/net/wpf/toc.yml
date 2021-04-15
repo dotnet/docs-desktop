@@ -49,28 +49,28 @@ items:
     items:
     - name: Overview
       href: data/index.md
-  - name: Systems
-    expanded: true
-    items:
-    - name: Resources
-      items:
-      - name: Overview
-        href: systems/xaml-resources-overview.md
-      - name: Merged dictionaries
-        href: systems/xaml-resources-merged-dictionaries.md
-      - name: Resources in code
-        href: systems/xaml-resources-and-code.md
-      - name: Common tasks
-        items:
-        - name: Define and reference resources
-          href: systems/xaml-resources-how-to-define-and-reference.md
-        - name: Use application resources
-          href: systems/xaml-resources-how-to-use-application.md
-        - name: Use system resources
-          href: systems/xaml-resources-how-to-use-system.md
-  - name: XAML with WPF
+- name: Systems
+  expanded: true
+  items:
+  - name: Resources
     items:
     - name: Overview
-      href: xaml/index.md
+      href: systems/xaml-resources-overview.md
+    - name: Merged dictionaries
+      href: systems/xaml-resources-merged-dictionaries.md
+    - name: Resources in code
+      href: systems/xaml-resources-and-code.md
+    - name: Common tasks
+      items:
+      - name: Define and reference resources
+        href: systems/xaml-resources-how-to-define-and-reference.md
+      - name: Use application resources
+        href: systems/xaml-resources-how-to-use-application.md
+      - name: Use system resources
+        href: systems/xaml-resources-how-to-use-system.md
+- name: XAML with WPF
+  items:
+  - name: Overview
+    href: xaml/index.md
 - name: XAML Language Reference 
   href: ../../xaml-services/
