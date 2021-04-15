@@ -7,53 +7,65 @@ items:
     href: overview/index.md
   - name: Create a WPF application
     href: get-started/create-app-visual-studio.md
-  # - name: Create a control library
-  #  href: getting-started/how-to-create-control-library.md
 - name: Migration
   items:
   - name: Differences from .NET Framework
     href: migration/differences-from-net-framework.md
-  - name: Migrate from Framework to Core
-    href: migration/convert-project-from-net-framework.md
 - name: Fundamentals
   items:
-  - name: XAML
-    href: fundamentals/xaml.md
-  - name: Define resources
-    href: fundamentals/xaml-resources-define.md
-  - name: Styles and templates
+  - name: Windows
     items:
     - name: Overview
-      href: fundamentals/styles-templates-overview.md
-    - name: Create and apply a style
-      href: fundamentals/styles-templates-create-apply-style.md
-    - name: Create and apply a template
-      href: themes/how-to-create-apply-template.md
-  #- name: Accessibility overview
-  #  href: fundamentals/accessibility.md
-  #- name: Localize your app
-  #  href: fundamentals/localize-app.md
-  #- name: Draw shapes
-  #  href: fundamentals/draw-shapes.md
-  #- name: Display a dialog popup
-  #  href: fundamentals/display-dialog-popup.md
-  - name: XAML Language Reference
-    href: ../../xaml-services/
-- name: Work with data
-  items:
-  - name: Data binding overview
-    href: data/data-binding-overview.md
-  # - name: Add data binding to a control
-  #   href: data/databind-control.md
-  # - name: Add validation to a control
-  #   href: data/validate-control-input.md
-  # - name: Display data in a grid control
-  #   href: data/use-datagrid-control.md
-#  - name: Package and distribute
-#    items:
-#    - name: Package your app with MSIX
-#      href: publishing/package-app-msix.md
-#    - name: Publish a library to NuGet
-#      href: publishing/create-nuget-package.md
-#    - name: Publish to the Microsoft Store
-#      href: publishing/publish-microsoft-store.md
+      href: windows/index.md
+    - name: Dialogs boxes
+      href: windows/dialog-boxes-overview.md
+    - name: Common tasks
+      items:
+      - name: Display a message box
+        href: windows/how-to-open-message-box.md
+      - name: Open a window
+        href: windows/how-to-open-window-dialog-box.md
+      - name: Close a window
+        href: windows/how-to-close-window-dialog-box.md
+      - name: Display a system dialog box
+        href: windows/how-to-open-common-system-dialog-box.md
+      - name: Get or set the main window
+        href: windows/how-to-get-set-main-application-window.md
+  - name: Controls
+    items:
+    - name: Styles and templates
+      items:
+      - name: Overview
+        href: controls/styles-templates-overview.md
+      - name: Common tasks
+        items:
+        - name: Create and apply a style
+          href: controls/how-to-create-apply-style.md
+        - name: Create and apply a template
+          href: controls/how-to-create-apply-template.md
+  - name: Data binding
+    items:
+    - name: Overview
+      href: data/index.md
+  - name: WPF resource system
+    items:
+    - name: Overview
+      href: systems/xaml-resources-overview.md
+    - name: Merged dictionaries
+      href: systems/xaml-resources-merged-dictionaries.md
+    - name: Resources in code
+      href: systems/xaml-resources-and-code.md
+    - name: Common tasks
+      items:
+      - name: Define and reference resources
+        href: systems/xaml-resources-how-to-define-and-reference.md
+      - name: Use application resources
+        href: systems/xaml-resources-how-to-use-application.md
+      - name: Use system resources
+        href: systems/xaml-resources-how-to-use-system.md
+  - name: XAML with WPF
+    items:
+    - name: Overview
+      href: xaml/index.md
+- name: XAML Language Reference 
+  href: ../../xaml-services/

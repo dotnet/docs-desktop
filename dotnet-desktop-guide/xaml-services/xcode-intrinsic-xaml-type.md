@@ -1,5 +1,6 @@
 ---
 title: "x:Code Intrinsic XAML Type"
+description: "Describes how the x:Code XML type allows code to be compiled by the XAML processor."
 ms.date: "03/30/2017"
 f1_keywords: 
   - "Code"
@@ -48,4 +49,4 @@ Code declared within `x:Code` for WPF has several notable limitations:
 
 - [x:Class Directive](xclass-directive.md)
 - [Code-Behind and XAML in WPF](../framework/wpf/advanced/code-behind-and-xaml-in-wpf.md)
-- [XAML Overview (WPF)](../net/wpf/fundamentals/xaml.md)
+- [XAML overview (WPF .NET)](../net/wpf/xaml/index.md)

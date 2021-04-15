@@ -1,5 +1,6 @@
 ---
 title: "Type Converters for XAML Overview"
+description: "Type converters provide logic for an object writer that converts a string value in XAML markup into particular objects in an object graph."
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "XAML [XAML Services], type converters"
@@ -115,4 +116,4 @@ If you are working with a XAML node stream, the action or end result of a type c
 
 - <xref:System.ComponentModel.TypeConverterAttribute>
 - [Type Converters and Markup Extensions for XAML](type-converters-and-markup-extensions.md)
-- [XAML Overview (WPF)](../net/wpf/fundamentals/xaml.md)
+- [XAML overview (WPF .NET)](../net/wpf/xaml/index.md)

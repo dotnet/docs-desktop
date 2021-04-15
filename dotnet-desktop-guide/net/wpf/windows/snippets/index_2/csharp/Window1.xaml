@@ -1,0 +1,12 @@
+﻿<Window x:Class="WindowsOverview.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WindowsOverview"
+        Width="500" Height="165">
+
+    <!-- Client area containing the content of the window -->
+    <Button Click="Button_Click">Click This Button</Button>
+
+</Window>

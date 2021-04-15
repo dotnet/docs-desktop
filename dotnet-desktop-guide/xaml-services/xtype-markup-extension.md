@@ -1,5 +1,6 @@
 ---
 title: "x:Type Markup Extension"
+description: "Describes how the x:Type markup extension is used in XAML. The x:Type markup extension specifies a CLR object."
 ms.date: "03/30/2017"
 f1_keywords: 
   - "x:TypeExtension"
@@ -33,7 +34,7 @@ Supplies the CLR <xref:System.Type> object that is the underlying type for a spe
 
 ## XAML Values
 
-|||
+| Value | Description |
 |-|-|
 |`prefix`|Optional. A prefix that maps a non-default XAML namespace. Specifying a prefix is frequently not necessary. See Remarks.|
 |`typeNameValue`|Required. A type name resolvable to the current default XAML namespace; or the specified mapped prefix if `prefix` is supplied.|
@@ -81,6 +82,6 @@ In WPF, you can use XAML 2009 features but only for loose XAML (XAML that is not
 ## See also
 
 - <xref:System.Windows.Style>
-- [Styling and Templating](../net/wpf/fundamentals/styles-templates-overview.md)
-- [XAML Overview (WPF)](../net/wpf/fundamentals/xaml.md)
+- [Styles and templates (WPF .NET)](../net/wpf/controls/styles-templates-overview.md)
+- [XAML overview (WPF .NET)](../net/wpf/xaml/index.md)
 - [Markup Extensions and WPF XAML](../framework/wpf/advanced/markup-extensions-and-wpf-xaml.md)

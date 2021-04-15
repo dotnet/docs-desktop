@@ -2,29 +2,29 @@
 title: Differences between .NET Framework and .NET
 description: Describes the differences between the .NET Framework implementation of Windows Presentation Foundation (WPF) and .NET WPF. When migrating your app, you should consider these incompatibilities.
 author: adegeo
-ms.date: 09/21/2019
+ms.date: 01/29/2021
 ms.author: adegeo
 ms.topic: conceptual
 ---
 
 # Differences in WPF .NET
 
-This article describes the differences between Windows Presentation Foundation (WPF) on .NET Core and .NET Framework. WPF for .NET Core is an [open-source framework](https://github.com/dotnet/wpf) forked from the original WPF for .NET Framework source code.
+This article describes the differences between Windows Presentation Foundation (WPF) on .NET 5 (or .NET Core 3.1) and .NET Framework. WPF for .NET 5 is an [open-source framework](https://github.com/dotnet/wpf) forked from the original WPF for .NET Framework source code.
 
-There are a few features of .NET Framework that .NET Core doesn't support. For more information on unsupported technologies, see [.NET Framework technologies unavailable on .NET Core](/dotnet/core/porting/net-framework-tech-unavailable).
+There are a few features of .NET Framework that .NET 5 doesn't support. For more information on unsupported technologies, see [.NET Framework technologies unavailable on .NET 5 and .NET Core](/dotnet/core/porting/net-framework-tech-unavailable).
 
 [!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
 
 ## SDK-style projects
 
-.NET Core uses SDK-style project files. These project files are different from the traditional .NET Framework project files managed by Visual Studio. To migrate your .NET Framework WPF apps to .NET Core, you must convert your projects. For more information, see [Migrate WPF apps to .NET Core 3.0](convert-project-from-net-framework.md).
+.NET 5 uses SDK-style project files. These project files are different from the traditional .NET Framework project files managed by Visual Studio. To migrate your .NET Framework WPF apps to .NET 5, you must convert your projects. For more information, see [Migrate WPF apps to .NET 5](convert-project-from-net-framework.md).
 
 ## NuGet package references
 
 If your .NET Framework app lists its NuGet dependencies in a *packages.config* file, migrate to the [`<PackageReference>`](/nuget/consume-packages/package-references-in-project-files) format:
 
-1. In Visual Studio, open the **Solution Explorer** pane.
-1. In your WPF project, right-click **packages.config** > **Migrate packages.config to PackageReference**.
+01. In Visual Studio, open the **Solution Explorer** pane.
+01. In your WPF project, right-click **packages.config** > **Migrate packages.config to PackageReference**.
 
 ![Upgrading to PackageReference](media/differences-from-net-framework/package-reference-migration.png)
 
@@ -34,7 +34,7 @@ When your project uses `<PackageReference>`, packages aren't stored locally in a
 
 ## Code Access Security
 
-Code Access Security (CAS) is not supported by .NET Core or WPF for .NET Core. All CAS-related functionality is treated under the assumption of full-trust. WPF for .NET Core removes CAS-related code. The public API surface of these types still exists to ensure that calls into these types succeed.
+Code Access Security (CAS) is not supported by .NET 5. All CAS-related functionality is treated under the assumption of full-trust. WPF for .NET 5 removes CAS-related code. The public API surface of these types still exists to ensure that calls into these types succeed.
 
 Publicly defined CAS-related types were moved out of the WPF assemblies and into the Core .NET library assemblies. The WPF assemblies have type-forwarding set to the new location of the moved types.
 
@@ -52,4 +52,4 @@ Publicly defined CAS-related types were moved out of the WPF assemblies and into
 
 ## Next steps
 
-- [Learn how to port a .NET Framework WPF app to .NET Core.](convert-project-from-net-framework.md)
+- [Migrate WPF apps to .NET 5](convert-project-from-net-framework.md)

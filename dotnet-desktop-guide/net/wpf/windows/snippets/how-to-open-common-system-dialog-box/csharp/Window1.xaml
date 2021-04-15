@@ -1,0 +1,16 @@
+﻿<Window x:Class="WindowsOverview.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WindowsOverview"
+        Width="500" Height="165">
+
+    <StackPanel>
+        <Button Click="Button_Click">Message Box</Button>
+        <Button Click="Save_Click">Save file</Button>
+        <Button Click="Open_Click">Open file</Button>
+        <Button Click="Print_Click">Print</Button>
+    </StackPanel>
+
+</Window>

@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Update="ResExample - Copy - Copy.xaml.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>ResExample - Copy.xaml.cs</DependentUpon>
+    </Compile>
+    <Compile Update="ResExample - Copy.xaml.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>ResExample.xaml.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+</Project>
