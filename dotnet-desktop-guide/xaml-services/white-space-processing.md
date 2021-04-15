@@ -1,5 +1,6 @@
 ---
 title: "White-space processing in XAML"
+description: "This article describes the XAML language rules regarding how white space is handled."
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "East Asian characters [XAML Services]"
@@ -72,6 +73,6 @@ Also, certain inline elements that connote a line break in a flow document model
 
 ## See also
 
-- [XAML overview (WPF)](../net/wpf/fundamentals/xaml.md)
+- [XAML overview (WPF .NET)](../net/wpf/xaml/index.md)
 - [XML character entities and XAML](xml-character-entities.md)
 - [xml:space handling in XAML](xml-space-handling.md)

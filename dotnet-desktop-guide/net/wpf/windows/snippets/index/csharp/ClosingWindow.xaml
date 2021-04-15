@@ -1,0 +1,12 @@
+﻿<Window x:Class="WindowsOverview.ClosingWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ClosingWindow" Height="450" Width="800">
+    <StackPanel>
+        <Menu>
+            <MenuItem Header="_File">
+                <MenuItem Header="E_xit" Click="fileExitMenuItem_Click" />
+            </MenuItem>
+        </Menu>
+    </StackPanel>
+</Window>

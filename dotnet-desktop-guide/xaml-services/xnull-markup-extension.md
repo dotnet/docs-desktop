@@ -1,5 +1,6 @@
 ---
 title: "x:Null Markup Extension"
+description: "Describes how the x:Null markup extension is handled by XAML."
 ms.date: "03/30/2017"
 f1_keywords: 
   - "NullExtension"
@@ -44,5 +45,5 @@ Note that `null` is not necessarily the initial unset value for a reference-type
 ## See also
 
 - <xref:System.Windows.DependencyProperty.UnsetValue>
-- [XAML Overview (WPF)](../net/wpf/fundamentals/xaml.md)
+- [XAML overview (WPF .NET)](../net/wpf/xaml/index.md)
 - [Markup Extensions and WPF XAML](../framework/wpf/advanced/markup-extensions-and-wpf-xaml.md)
