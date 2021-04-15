@@ -2,6 +2,7 @@ items:
 - name: Windows Presentation Foundation for .NET Core
   href: index.yml
 - name: Get started
+  expanded: true
   items:
   - name: Overview
     href: overview/index.md
@@ -12,6 +13,7 @@ items:
   - name: Differences from .NET Framework
     href: migration/differences-from-net-framework.md
 - name: Fundamentals
+  expanded: true
   items:
   - name: Windows
     items:
@@ -47,22 +49,25 @@ items:
     items:
     - name: Overview
       href: data/index.md
-  - name: WPF resource system
+  - name: Systems
+    expanded: true
     items:
-    - name: Overview
-      href: systems/xaml-resources-overview.md
-    - name: Merged dictionaries
-      href: systems/xaml-resources-merged-dictionaries.md
-    - name: Resources in code
-      href: systems/xaml-resources-and-code.md
-    - name: Common tasks
+    - name: Resources
       items:
-      - name: Define and reference resources
-        href: systems/xaml-resources-how-to-define-and-reference.md
-      - name: Use application resources
-        href: systems/xaml-resources-how-to-use-application.md
-      - name: Use system resources
-        href: systems/xaml-resources-how-to-use-system.md
+      - name: Overview
+        href: systems/xaml-resources-overview.md
+      - name: Merged dictionaries
+        href: systems/xaml-resources-merged-dictionaries.md
+      - name: Resources in code
+        href: systems/xaml-resources-and-code.md
+      - name: Common tasks
+        items:
+        - name: Define and reference resources
+          href: systems/xaml-resources-how-to-define-and-reference.md
+        - name: Use application resources
+          href: systems/xaml-resources-how-to-use-application.md
+        - name: Use system resources
+          href: systems/xaml-resources-how-to-use-system.md
   - name: XAML with WPF
     items:
     - name: Overview
