@@ -124,8 +124,6 @@ For an example, see [How to: Control when the TextBox text updates the source](.
 
 To restate some of the concepts discussed in the previous sections, you establish a binding using the <xref:System.Windows.Data.Binding> object, and each binding usually has four components: a binding target, a target property, a binding source, and a path to the source value to use. This section discusses how to set up a binding.
 
-Let's dive right into some code and XAML examples. Take a simple 
-
 When a databinding Binding sources are tied to the active <xref:System.Windows.FrameworkElement.DataContext%2A> for the element. Elements automatically inherit their `DataContext` if they've not explicitly defined one.
 
 Consider the following example, in which the binding source object is a class named *MyData* that is defined in the *SDKSample* namespace. For demonstration purposes, *MyData* has a string property named *ColorName* whose value is set to "Red". Thus, this example generates a button with a red background.
