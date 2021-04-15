@@ -7,83 +7,79 @@ metadata:
   title: Windows Presentation Foundation for .NET 5 documentation
   description: Learn about using Windows Presentation Foundation (WPF), an open-source, graphical user interface for Windows, on .NET 5.
   ms.topic: landing-page
-  ms.date: 01/14/2021
+  ms.date: 04/15/2021
 
-# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview
+#               quickstart | reference | sample | tutorial | video | whats-new
 
 landingContent:
 
   # Card
   - title: Learn about WPF
     linkLists:
-      - linkListType: whats-new
-        links:
-          - text: What's new
-            url: whats-new/index.md
       - linkListType: overview
         links:
           - text: WPF overview
             url: overview/index.md
+      - linkListType: whats-new
+        links:
+          - text: Differences from .NET Framework
+            url: migration/differences-from-net-framework.md
       - linkListType: tutorial
         links:
           - text: Create a new app
             url: get-started/create-app-visual-studio.md
           - text: Migrate from .NET Framework
-            url: migration/index.md
+            url: /dotnet/core/porting/upgrade-assistant-wpf-framework
       - linkListType: download
         links:
-          - text: Visual Studio 2019 version 16.8
-            url: https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+desktopguide+winforms
+          - text: Visual Studio 2019 version 16.9
+            url: https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+desktopguide+wpf
 
-  - title: Controls
+  - title: WPF windows
     linkLists:
       - linkListType: overview
         links:
-          - text: About controls
-            url: controls/overview.md
+          - text: About WPF windows
+            url: windows/index.md
+          - text: About dialog boxes
+            url: windows/dialog-boxes-overview.md
+      - linkListType: how-to-guide
+        links:
+          - text: Open a message box
+            url: windows/how-to-open-message-box.md
+          - text: Open a common dialog box
+            url: windows/how-to-open-common-system-dialog-box.md
+          - text: Get or set the main app window
+            url: windows/how-to-open-common-system-dialog-box.md
+
+  - title: Control styles and templates
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: About styles and templates
+            url: controls/styles-templates-overview.md
       - linkListType: concept
         links:
           - text: Layout
             url: controls/layout.md
       - linkListType: how-to-guide
         links:
-          - text: Add a control
-            url: controls/how-to-add-to-a-form.md
-          - text: Add access (shortcut) keys
-            url: controls/how-to-create-access-keys.md
+          - text: Create a style
+            url: controls/how-to-create-apply-style.md
+          - text: Create a template
+            url: controls/how-to-create-apply-template.md
 
-  - title: Keyboard input
+  - title: Data binding
     linkLists:
       - linkListType: overview
         links:
-          - text: About the keyboard
-            url: input-keyboard/overview.md
-      - linkListType: concept
-        links:
-          - text: Keyboard events
-            url: input-keyboard/events.md
-      - linkListType: how-to-guide
-        links:
-          - text: Handle keyboard input
-            url: input-keyboard/how-to-handle-forms.md
-          - text: Modify key events
-            url: input-keyboard/how-to-change-key-press.md
-          
-  - title: Mouse input
+          - text: About data binding
+            url: data/index.md
+
+  - title: XAML in WPF
     linkLists:
       - linkListType: overview
         links:
-          - text: About the mouse
-            url: input-mouse/overview.md
-      - linkListType: concept
-        links:
-          - text: Mouse events
-            url: input-mouse/events.md
-          - text: Drag-and-drop
-            url: input-mouse/drag-and-drop.md
-      - linkListType: how-to-guide
-        links:
-          - text: Manage the cursor
-            url: input-mouse/how-to-manage-cursor-pointer.md
-          - text: Simulate mouse events
-            url: input-mouse/how-to-simulate-events.md
+          - text: About XAML
+            url: xaml/index.md

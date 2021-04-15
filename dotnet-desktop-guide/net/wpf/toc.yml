@@ -46,7 +46,7 @@ items:
   - name: Data binding
     items:
     - name: Overview
-      href: data/overview.md
+      href: data/index.md
   - name: WPF resource system
     items:
     - name: Overview
