@@ -3,7 +3,7 @@ title: How to create a template
 description: Learn how to create and reference a control template in Windows Presentation Foundation and .NET Core.
 author: adegeo
 ms.author: adegeo
-ms.date: 11/15/2019
+ms.date: 04/15/2021
 no-loc: ["<Window>", "<ControlTemplate>", "<Ellipse>", "<ContentPresenter>", "<Trigger>", "<Setter>", "<PropertyTrigger>", "<Grid>", "<VisualStateManager.VisualStateGroups>", "<VisualStateGroup>", "<VisualState>", "<Storyboard>", "SizeToContent", "MinWidth", "TargetType", "Title"]
 ms.topic: how-to
 helpviewer_keywords: 
@@ -37,11 +37,11 @@ On the other hand, if you need a control with new functionality, different prope
 
 Create a new WPF application and in *MainWindow.xaml* (or another window of your choice) set the following properties on the **\<Window>** element:
 
-|     |     |
-| --- | --- |
+| Property          | Value                   |
+|-------------------|-------------------------|
 | **Title**         | `Template Intro Sample` |
-| **SizeToContent** | `WidthAndHeight` |
-| **MinWidth**      | `250` |
+| **SizeToContent** | `WidthAndHeight`        |
+| **MinWidth**      | `250`                   |
 
 Set the content of the **\<Window>** element to the following XAML:
 
@@ -65,10 +65,10 @@ To start with, add a `Window.Resources` element to your *MainWindow.xaml* file:
 
 Create a new **\<ControlTemplate>** with the following properties set:
 
-|     |     |
-| --- | --- |
-| **x:Key**         | `roundbutton` |
-| **TargetType**    | `Button` |
+| Property       | Value         |
+|----------------|---------------|
+| **x:Key**      | `roundbutton` |
+| **TargetType** | `Button`      |
 
 This control template will be simple:
 
@@ -184,4 +184,4 @@ Run the project. Notice that when you move the mouse over the button, the color 
 
 - [Create a style for a control](how-to-create-apply-style.md)
 - [Styles and templates](styles-templates-overview.md)
-- [Overview of XAML Resources](../fundamentals/xaml-resources-define.md)
+- [Overview of XAML resources](../systems/xaml-resources-overview.md)

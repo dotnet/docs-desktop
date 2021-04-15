@@ -3,7 +3,7 @@ title: Styles and templates
 description: Learn about XAML resources in Windows Presentation Foundation (WPF) for .NET. Understand the types of XAML resources related to styles and themes.
 author: adegeo
 ms.author: adegeo
-ms.date: 
+ms.date: 04/15/2021
 ms.topic: overview
 dev_langs: 
   - "csharp"
@@ -18,7 +18,7 @@ Another feature of the WPF styling model is the separation of presentation and l
 
 This overview focuses on the styling and templating aspects of the app and doesn't discuss any data-binding concepts. For information about data binding, see [Data Binding Overview](../data/index.md).
 
-It's important to understand resources, which are what enable styles and templates to be reused. For more information about resources, see [XAML Resources](xaml-resources-define.md).
+It's important to understand resources, which are what enable styles and templates to be reused. For more information about resources, see [Overview of XAML resources](../systems/xaml-resources-overview.md).
 
 [!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
 

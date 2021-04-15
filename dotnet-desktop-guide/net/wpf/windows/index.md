@@ -116,7 +116,7 @@ To enable a XAML markup file and code-behind file to work together, the followin
 
 - In markup, the `Window` element must include the `x:Class` attribute. When the application is built, the existence of `x:Class` attribute causes Microsoft build engine (MSBuild) to generate a `partial` class that derives from <xref:System.Windows.Window> with the name that is specified by the `x:Class` attribute. This requires the addition of an XML namespace declaration for the XAML schema (`xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"`). The generated `partial` class implements the `InitializeComponent` method, which is called to register the events and set the properties that are implemented in markup.
 
-- In code-behind, the class must be a `partial` class with the same name that is specified by the `x:Class` attribute in markup, and it must derive from <xref:System.Windows.Window>. This allows the code-behind file to be associated with the `partial` class that is generated for the markup file when the application is built, for more information, see [Building a WPF Application](building-a-wpf-application-wpf.md).
+- In code-behind, the class must be a `partial` class with the same name that is specified by the `x:Class` attribute in markup, and it must derive from <xref:System.Windows.Window>. This allows the code-behind file to be associated with the `partial` class that is generated for the markup file when the application is built, for more information, see [Compile a WPF Application](../../../framework/wpf/app-development/building-a-wpf-application-wpf.md).
 
 - In code-behind, the <xref:System.Windows.Window> class must implement a constructor that calls the `InitializeComponent` method. `InitializeComponent` is implemented by the markup file's generated `partial` class to register events and set properties that are defined in markup.
 
@@ -193,7 +193,7 @@ MSBuild projects won't automatically import the types and you must declare them 
 </Project>
 ```
 
-For information about building WPF applications, see [Building a WPF Application](building-a-wpf-application-wpf.md).
+For information about building WPF applications, see [Compile a WPF Application](../../../framework/wpf/app-development/building-a-wpf-application-wpf.md).
 
 ## Window lifetime
 

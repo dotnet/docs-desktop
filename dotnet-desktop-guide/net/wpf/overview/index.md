@@ -33,7 +33,7 @@ This overview is intended for newcomers and covers the key capabilities and conc
 
 ## Why migrate from .NET Framework
 
-WPF for .NET 5.0 provides new features and enhancements over .NET Framework. For more information, see [What's new in WPF for .NET 5](../whats-new/index.md). To learn how to migrate an app, see [How to migrate a WPF desktop app to .NET 5](../migration/index.md).
+WPF for .NET 5.0 provides new features and enhancements over .NET Framework. To learn how to migrate an app, see [How to migrate a WPF desktop app to .NET 5](../migration/convert-project-from-net-framework.md).
 
 ## Program with WPF
 
@@ -44,7 +44,7 @@ WPF exists as a subset of .NET types that are, mostly located in the <xref:Syste
 - Call methods
 - Handle events
 
-WPF includes more programming constructs that enhance properties and events: [dependency properties](advanced/dependency-properties-overview.md) and [routed events](advanced/routed-events-overview.md).
+WPF includes more programming constructs that enhance properties and events: [dependency properties](../../../framework/wpf/advanced/dependency-properties-overview.md) and [routed events](../../../framework/wpf/advanced/routed-events-overview.md).
 
 ## Markup and code-behind
 
@@ -54,7 +54,7 @@ WPF lets you develop an application using both *markup* and *code-behind*, an ex
 
 - Development is more efficient because designers can implement an application's appearance simultaneously with developers who are implementing the application's behavior.
 
-- [Globalization and localization](advanced/wpf-globalization-and-localization-overview.md) for WPF applications is simplified.
+- [Globalization and localization](../../../framework/wpf/advanced/wpf-globalization-and-localization-overview.md) for WPF applications is simplified.
 
 ### Markup
 
@@ -80,7 +80,7 @@ The following figure shows the user interface (UI) that is defined by the XAML i
 
 :::image type="content" source="media/index/markup-window-button.png" alt-text="A window that contains a button":::
 
-Since XAML is XML-based, the UI that you compose with it's assembled in a hierarchy of nested elements that is known as an [element tree](advanced/trees-in-wpf.md). The element tree provides a logical and intuitive way to create and manage UIs.
+Since XAML is XML-based, the UI that you compose with it's assembled in a hierarchy of nested elements that is known as an [element tree](../../../framework/wpf/advanced/trees-in-wpf.md). The element tree provides a logical and intuitive way to create and manage UIs.
 
 ### Code-behind
 
@@ -175,7 +175,7 @@ The user experiences that are delivered by the application model are constructed
 - Have a user interface.
 - Implement some behavior.
 
-For more information, see [Controls](controls/index.md).
+For more information, see [Controls](../../../framework/wpf/controls/index.md).
 
 ### WPF controls by function
 
@@ -250,7 +250,7 @@ The following example uses a <xref:System.Windows.Controls.DockPanel> to lay out
 The <xref:System.Windows.Controls.DockPanel> allows the child <xref:System.Windows.Controls.TextBox> controls to tell it how to arrange them. To do this, the <xref:System.Windows.Controls.DockPanel> implements a `Dock` attached property that is exposed to the child controls to allow each of them to specify a dock style.
 
 > [!NOTE]
-> A property that's implemented by a parent control for use by child controls is a WPF construct called an [attached property](advanced/attached-properties-overview.md).
+> A property that's implemented by a parent control for use by child controls is a WPF construct called an [attached property](../../../framework/wpf/advanced/attached-properties-overview.md).
 
 The following figure shows the result of the XAML markup in the preceding example:
 
@@ -304,13 +304,13 @@ WPF provides a library of common vector-drawn 2D shapes, such as the rectangles 
 
 The 2D shapes provided by WPF cover the standard set of basic shapes. However, you may need to create custom shapes to help the design of a customized user interface. WPF provides geometries to create a custom shape that can be drawn directly, used as a brush, or used to clip other shapes and controls.
 
-For more information, see [Geometry overview](graphics-multimedia/geometry-overview.md).
+For more information, see [Geometry overview](../../../framework/wpf/graphics-multimedia/geometry-overview.md).
 
 A subset of WPF 2D capabilities includes visual effects, such as gradients, bitmaps, drawings, painting with videos, rotation, scaling, and skewing. These effects are all achieved with brushes. The following figure shows some examples:
 
 :::image type="content" source="media/index/graphics-brushes.png" alt-text="Illustration of different brushes":::
 
-For more information, see [WPF brushes overview](graphics-multimedia/wpf-brushes-overview.md).
+For more information, see [WPF brushes overview](../../../framework/wpf/graphics-multimedia/wpf-brushes-overview.md).
 
 ### 3D rendering
 
@@ -318,7 +318,7 @@ WPF also includes 3D rendering capabilities that integrate with 2D graphics to a
 
 :::image type="content" source="media/index/graphics-3d.png" alt-text="Visual3D sample screen shot":::
 
-For more information, see [3D graphics overview](graphics-multimedia/3-d-graphics-overview.md).
+For more information, see [3D graphics overview](../../../framework/wpf/graphics-multimedia/3-d-graphics-overview.md).
 
 ### Animation
 
@@ -326,7 +326,7 @@ WPF animation support lets you make controls grow, shake, spin, and fade, to cre
 
 :::image type="content" source="media/index/animation-cube.gif" alt-text="Images of an animated cube":::
 
-For more information, see [Animation overview](graphics-multimedia/animation-overview.md).
+For more information, see [Animation overview](../../../framework/wpf/graphics-multimedia/animation-overview.md).
 
 ## Text and typography
 
@@ -342,7 +342,7 @@ As a demonstration of text integration with graphics, the following figure shows
 
 :::image type="content" source="media/index/text.png" alt-text="Text with various text decorations":::
 
-For more information, see [Typography in Windows Presentation Foundation](advanced/typography-in-wpf.md).
+For more information, see [Typography in Windows Presentation Foundation](../../../framework/wpf/advanced/typography-in-wpf.md).
 
 ## Customize WPF apps
 
@@ -363,11 +363,11 @@ The main purpose of most of the WPF controls is to display content. In WPF, the 
 
 Other controls, however, can contain multiple items of different types of content; the content of a <xref:System.Windows.Controls.Button>, specified by the <xref:System.Windows.Controls.ContentControl.Content%2A> property, can contain various items including layout controls, text, images, and shapes.
 
-For more information on the kinds of content that is supported by various controls, see [WPF content model](controls/wpf-content-model.md).
+For more information on the kinds of content that is supported by various controls, see [WPF content model](../../../framework/wpf/controls/wpf-content-model.md).
 
 ### Triggers
 
-Although the main purpose of XAML markup is to implement an application's appearance, you can also use XAML to implement some aspects of an application's behavior. One example is the use of triggers to change an application's appearance based on user interactions. For more information, see [Styles and templates](/dotnet/desktop-wpf/fundamentals/styles-templates-overview).
+Although the main purpose of XAML markup is to implement an application's appearance, you can also use XAML to implement some aspects of an application's behavior. One example is the use of triggers to change an application's appearance based on user interactions. For more information, see [Styles and templates](../controls/styles-templates-overview.md).
 
 ### Templates
 
@@ -391,7 +391,7 @@ The default appearance is what you would expect from a <xref:System.Windows.Cont
 
 The <xref:System.Windows.Controls.ListBox> retains its behavior and overall appearance and only the appearance of the content being displayed by the list box has changed.
 
-For more information, see [Data templating overview](data/data-templating-overview.md).
+For more information, see [Data templating overview](../../../framework/wpf/data/data-templating-overview.md).
 
 ### Styles
 
@@ -433,7 +433,7 @@ Because this style targets all <xref:System.Windows.Controls.Button> controls, t
 
 :::image type="content" source="media/index/styles-buttons.png" alt-text="Two orange buttons":::
 
-For more information, see [Styles and templates](/dotnet/desktop-wpf/fundamentals/styles-templates-overview).
+For more information, see [Styles and templates](../controls/styles-templates-overview.md).
 
 ### Resources
 
@@ -461,7 +461,7 @@ The following example defines a common background color that is shared by a <xre
 </Window>
 ```
 
-For more information, see [Resources](/dotnet/desktop-wpf/fundamentals/xaml-resources-define).
+For more information, see [How to define and reference a WPF resource](../systems/xaml-resources-how-to-define-and-reference.md).
 
 ### Custom controls
 
@@ -481,7 +481,7 @@ A custom control derives from <xref:System.Windows.Controls.Control> and is used
 - **Framework Element Model**.\
 A custom control derives from <xref:System.Windows.FrameworkElement> when its appearance is defined by custom rendering logic (not templates).
 
-For more information on custom controls, see [Control authoring overview](controls/control-authoring-overview.md).
+For more information on custom controls, see [Control authoring overview](../../../framework/wpf/controls/control-authoring-overview.md).
 
 ## See also
 

@@ -1,5 +1,6 @@
 ---
 title: "XAML 2009 Language Features"
+description: "Describes the language features specific to the XAML 2009 specification."
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "XAML 2009 [XAML Services]"
@@ -31,4 +32,4 @@ For attributes that are backed by events, XAML 2006 presumes that markup compila
 
 ## See also
 
-- [XAML Overview (WPF)](../net/wpf/fundamentals/xaml.md)
+- [XAML overview (WPF .NET)](../net/wpf/xaml/index.md)

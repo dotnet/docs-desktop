@@ -1,5 +1,6 @@
 ---
 title: "x:Arguments Directive"
+description: "The x:Arguments directive packages construction arguments for non-parameterless constructor object elements in XAML."
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "x:Arguments directive [XAML Services]"
@@ -33,7 +34,7 @@ Packages construction arguments for a non-parameterless constructor object eleme
 
 ## XAML Values
 
-|||
+| Value | Description |
 |-|-|
 |`oneOrMoreObjectElements`|One or more object elements that specify arguments to be passed to the backing non-parameterless constructor or factory method.<br /><br /> Typical usage is to use initialization text within the object elements to specify the actual argument values. See Examples section.<br /><br /> The order of the elements is significant. The XAML types in order must match the types and type order of the backing constructor or factory method overload.|
 |`methodName`|The name of the factory method that should process any `x:Arguments` arguments.|
@@ -107,4 +108,4 @@ switch (name) {
 ## See also
 
 - [Defining Custom Types for Use with .NET XAML Services](define-custom-types.md)
-- [XAML Overview (WPF)](../net/wpf/fundamentals/xaml.md)
+- [XAML overview (WPF .NET)](../net/wpf/xaml/index.md)

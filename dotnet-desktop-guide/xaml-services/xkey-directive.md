@@ -1,6 +1,7 @@
 ---
 title: "x:Key Directive"
 ms.date: "03/30/2017"
+description: "The x:Key directive identifies elements that are created and referenced in a XAML-defined dictionary."
 f1_keywords: 
   - "xKey"
   - "Key"
@@ -37,14 +38,14 @@ Uniquely identifies elements that are created and referenced in a XAML-defined d
   
 ## XAML Values  
   
-|||  
+| Value | Description |  
 |-|-|  
 |`stringKeyValue`|A text string to use as a key. The text string must conform to the [XamlName Grammar](xamlname-grammar.md).|  
 |`markupExtensionUsage`|Within the markup extension delimiters {}, a markup extension usage that provides an object to use as a key. See Remarks.|  
   
 ## Remarks  
 
- `x:Key` supports the XAML resource dictionary concept. XAML as a language doesn't define a resource dictionary implementation, that is left to specific UI frameworks. To learn more about how XAML resource dictionaries are implemented in WPF, see [XAML Resources](../net/wpf/fundamentals/xaml-resources-define.md).  
+ `x:Key` supports the XAML resource dictionary concept. XAML as a language doesn't define a resource dictionary implementation, that is left to specific UI frameworks. To learn more about how XAML resource dictionaries are implemented in WPF, see [Overview of XAML resources (WPF .NET)](../net/wpf/systems/xaml-resources-overview.md).  
   
  In XAML 2006 and WPF, `x:Key` must be provided as an attribute. You can still use nonstring keys, but this requires a markup extension usage in order to provide the nonstring value in attribute form. If you are using XAML 2009, `x:Key` can be specified as an element, to explicitly support dictionaries keyed by object types other than strings without requiring a markup extension intermediate. See the "XAML 2009" section in this topic. The remainder of the Remarks section applies specifically to the XAML 2006 implementation.  
   
@@ -60,7 +61,7 @@ Uniquely identifies elements that are created and referenced in a XAML-defined d
   
 - Some WPF types declare an implicit key for dictionary usage. For example, a <xref:System.Windows.Style> with a <xref:System.Windows.Style.TargetType%2A>, or a <xref:System.Windows.DataTemplate> with a <xref:System.Windows.DataTemplate.DataType%2A>, can be  in a <xref:System.Windows.ResourceDictionary> and use the implicit key.  
   
-- WPF supports a merged resource dictionary concept. Keys can be shared between the merged dictionaries, and the shared key behavior can be accessed using <xref:System.Windows.FrameworkContentElement.FindResource%2A>. For more information, see [Merged Resource Dictionaries](../framework/wpf/advanced/merged-resource-dictionaries.md).  
+- WPF supports a merged resource dictionary concept. Keys can be shared between the merged dictionaries, and the shared key behavior can be accessed using <xref:System.Windows.FrameworkContentElement.FindResource%2A>. For more information, see [Merged resource dictionaries](../net/wpf/systems/xaml-resources-merged-dictionaries.md).
   
  In the overall WPF XAML implementation and application model, key uniqueness is not checked by the XAML markup compiler. Instead, missing or nonunique `x:Key` values cause load-time XAML parser errors. However, Visual Studio handling of dictionaries for WPF can often note such errors in the design phase.  
   
@@ -72,7 +73,7 @@ Uniquely identifies elements that are created and referenced in a XAML-defined d
   
  As stated previously, the value of a key can be supplied through a markup extension and can be other than a string value. An example WPF scenario is that the value of `x:Key` may be a [ComponentResourceKey](../framework/wpf/advanced/componentresourcekey-markup-extension.md). Certain controls expose a style key of that type for a custom style resource that influences part of the appearance and behavior of that control without totally replacing the style. An example of such a key is <xref:System.Windows.Controls.ToolBar.ButtonStyleKey%2A>.  
   
- The WPF merged dictionary feature introduces additional considerations for key uniqueness and key lookup behavior. For more information, see [Merged Resource Dictionaries](../framework/wpf/advanced/merged-resource-dictionaries.md).  
+ The WPF merged dictionary feature introduces additional considerations for key uniqueness and key lookup behavior. For more information, see [Merged resource dictionaries](../net/wpf/systems/xaml-resources-merged-dictionaries.md).  
   
 ## XAML 2009  
 
@@ -111,6 +112,6 @@ keyObject
   
 ## See also
 
-- [XAML Resources](../net/wpf/fundamentals/xaml-resources-define.md)
-- [Resources and Code](../framework/wpf/advanced/resources-and-code.md)
+- [Overview of XAML resources (WPF .NET)](../net/wpf/systems/xaml-resources-overview.md)
+- [Resources in code (WPF .NET)](../net/wpf/systems/xaml-resources-and-code.md)
 - [StaticResource Markup Extension](../framework/wpf/advanced/staticresource-markup-extension.md)

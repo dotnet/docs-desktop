@@ -1,5 +1,6 @@
 ---
 title: "XAML Services"
+description: "Describes the capabilities of a .NET XAML Services. Services include readers and writers, schema classes and schema support factories, attributing of classes, XAML language support, and other XAML language features."
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "XAML [XAML Services], System.Xaml concepts"
@@ -29,7 +30,7 @@ Conceptual documentation for .NET XAML Services assumes that you have previous e
 
 - Using the `Lookup` or `Invoker` techniques to influence the XAML type system and how type backings are evaluated.
 
-If you are looking for introductory material on XAML as a language, you might try [XAML Overview (WPF)](../net/wpf/fundamentals/xaml.md). That topic discusses XAML for an audience that is new both to Windows Presentation Foundation (WPF) and also to using XAML markup and XAML language features. Another useful document is the introductory material in the [XAML language specification](/previous-versions/msp-n-p/ff650760(v=pandp.10)).
+If you are looking for introductory material on XAML as a language, you might try [XAML overview (WPF .NET)](../net/wpf/xaml/index.md). That topic discusses XAML for an audience that is new both to Windows Presentation Foundation (WPF) and also to using XAML markup and XAML language features. Another useful document is the introductory material in the [XAML language specification](/previous-versions/msp-n-p/ff650760(v=pandp.10)).
 
 ## .NET XAML Services and `System.Xaml` in the .NET Architecture
 

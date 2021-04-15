@@ -1,5 +1,6 @@
 ---
 title: "xml:space Handling in XAML"
+description: "Describes the xml:space attribute and how it affects white-space processing behavior within an object element."
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "XAML [XAML Services], xml:space attribute"
@@ -39,4 +40,4 @@ For a complete discussion of white-space processing in XAML, see [White-space pr
 ## See also
 
 - [White-space processing in XAML](white-space-processing.md)
-- [XAML Overview (WPF)](../net/wpf/fundamentals/xaml.md)
+- [XAML overview (WPF .NET)](../net/wpf/xaml/index.md)

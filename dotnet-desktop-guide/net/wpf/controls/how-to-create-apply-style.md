@@ -3,7 +3,7 @@ title: How to create a style for a control
 description: Learn how to create and reference a control style in Windows Presentation Foundation and .NET.
 author: adegeo
 ms.author: adegeo
-ms.date: 09/12/2019
+ms.date: 04/15/2021
 ms.topic: conceptual
 dev_langs:
   - "csharp"
@@ -25,7 +25,7 @@ The most common way to declare a style is as a resource in the `Resources` secti
 
 :::code language="xaml" source="./snippets/how-to-create-apply-style/csharp/App.xaml" id="AppResources":::
 
-If you declare the style in one of the app's XAML files, the style can be used only in that XAML file. For more information about scoping rules for resources, see [XAML Resources](xaml-resources-define.md).
+If you declare the style in one of the app's XAML files, the style can be used only in that XAML file. For more information about scoping rules for resources, see [Overview of XAML resources](../systems/xaml-resources-overview.md).
 
 :::code language="xaml" source="./snippets/how-to-create-apply-style/csharp/WindowSingleResource.xaml" id="WindowResources":::
 
@@ -102,6 +102,6 @@ Also note that many WPF controls consist of a combination of other WPF controls.
 
 ## See also
 
-<!-- - [Create a style for a control](styles-templates-create-apply-template.md) -->
-- [Overview of XAML Resources](xaml-resources-define.md)
-- [XAML overview (WPF & .NET Core)](xaml.md)
+- [How to create a template for a control](how-to-create-apply-template.md)
+- [Overview of XAML resources](../systems/xaml-resources-overview.md)
+- [XAML overview](../xaml/index.md)

@@ -56,7 +56,7 @@ The common print dialog box is implemented as the <xref:System.Windows.Controls.
 :::code language="csharp" source="snippets/how-to-open-common-system-dialog-box/csharp/Window1.xaml.cs" id="Print":::
 :::code language="vb" source="snippets/how-to-open-common-system-dialog-box/vb/Window1.xaml.vb" id="Print":::
 
-For more information on the print dialog box, see <xref:System.Windows.Controls.PrintDialog?displayProperty=nameWithType>. For detailed discussion of printing in WPF, see [Printing overview](../advanced/printing-overview.md).
+For more information on the print dialog box, see <xref:System.Windows.Controls.PrintDialog?displayProperty=nameWithType>. For detailed discussion of printing in WPF, see [Printing overview](../../../framework/wpf/advanced/printing-overview.md).
 
 ## See also
 
