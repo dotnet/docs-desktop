@@ -12,6 +12,8 @@ items:
   items:
   - name: Differences from .NET Framework
     href: migration/differences-from-net-framework.md
+  - name: Migrate from .NET Framework
+    href: migration/convert-project-from-net-framework.md
 - name: Fundamentals
   expanded: true
   items:
