@@ -96,7 +96,7 @@ keyObject
   
 ### XAML Values  
   
-|||  
+| Value | Description |
 |-|-|  
 |`keyObject`|Object element for the object that is used as the key for a given `object` in a specialized dictionary.|  
   
