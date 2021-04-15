@@ -2,6 +2,7 @@ items:
 - name: Windows Presentation Foundation for .NET Core
   href: index.yml
 - name: Get started
+  expanded: true
   items:
   - name: Overview
     href: overview/index.md
@@ -11,7 +12,10 @@ items:
   items:
   - name: Differences from .NET Framework
     href: migration/differences-from-net-framework.md
+  - name: Migrate from .NET Framework
+    href: migration/convert-project-from-net-framework.md
 - name: Fundamentals
+  expanded: true
   items:
   - name: Windows
     items:
@@ -47,7 +51,10 @@ items:
     items:
     - name: Overview
       href: data/index.md
-  - name: WPF resource system
+- name: Systems
+  expanded: true
+  items:
+  - name: Resources
     items:
     - name: Overview
       href: systems/xaml-resources-overview.md
@@ -63,9 +70,9 @@ items:
         href: systems/xaml-resources-how-to-use-application.md
       - name: Use system resources
         href: systems/xaml-resources-how-to-use-system.md
-  - name: XAML with WPF
-    items:
-    - name: Overview
-      href: xaml/index.md
+- name: XAML with WPF
+  items:
+  - name: Overview
+    href: xaml/index.md
 - name: XAML Language Reference 
   href: ../../xaml-services/
