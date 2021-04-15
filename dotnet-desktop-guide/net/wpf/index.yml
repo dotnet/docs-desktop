@@ -59,10 +59,6 @@ landingContent:
         links:
           - text: About styles and templates
             url: controls/styles-templates-overview.md
-      - linkListType: concept
-        links:
-          - text: Layout
-            url: controls/layout.md
       - linkListType: how-to-guide
         links:
           - text: Create a style

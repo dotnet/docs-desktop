@@ -297,10 +297,6 @@
       "redirect_url": "/dotnet/desktop/wpf/data/index?view=netdesktop-5.0"
     },
     {
-      "source_path": "dotnet-desktop-guide/framework/wpf/data/index.md",
-      "redirect_url": "/dotnet/desktop/wpf/data/data-binding-overview?view=netframeworkdesktop-4.8"
-    },
-    {
       "source_path": "dotnet-desktop-guide/net/wpf/advanced/xaml-in-wpf.md",
       "redirect_url": "/dotnet/desktop/wpf/xaml/index?view=netdesktop-5.0"
     },
