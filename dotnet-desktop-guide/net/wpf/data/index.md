@@ -120,9 +120,13 @@ The following table provides an example scenario for each <xref:System.Windows.D
 
 For an example, see [How to: Control when the TextBox text updates the source](../../../framework/wpf/data/how-to-control-when-the-textbox-text-updates-the-source.md).
 
-## Creating a binding
+## Create a binding
 
 To restate some of the concepts discussed in the previous sections, you establish a binding using the <xref:System.Windows.Data.Binding> object, and each binding usually has four components: a binding target, a target property, a binding source, and a path to the source value to use. This section discusses how to set up a binding.
+
+Let's dive right into some code and XAML examples. Take a simple 
+
+When a databinding Binding sources are tied to the active <xref:System.Windows.FrameworkElement.DataContext%2A> for the element. Elements automatically inherit their `DataContext` if they've not explicitly defined one.
 
 Consider the following example, in which the binding source object is a class named *MyData* that is defined in the *SDKSample* namespace. For demonstration purposes, *MyData* has a string property named *ColorName* whose value is set to "Red". Thus, this example generates a button with a red background.
 
@@ -181,9 +185,9 @@ A <xref:System.Windows.Data.BindingExpression> object is returned by calling <xr
 
 ## Data conversion
 
-In the [Creating a binding](#creating-a-binding) section, the button is red because its <xref:System.Windows.Controls.Control.Background%2A> property is bound to a string property with the value "Red". This string value works because a type converter is present on the <xref:System.Windows.Media.Brush> type to convert the string value to a <xref:System.Windows.Media.Brush>.
+In the [Create a binding](#create-a-binding) section, the button is red because its <xref:System.Windows.Controls.Control.Background%2A> property is bound to a string property with the value "Red". This string value works because a type converter is present on the <xref:System.Windows.Media.Brush> type to convert the string value to a <xref:System.Windows.Media.Brush>.
 
-Adding this information to the figure in the [Creating a Binding](#creating-a-binding) section looks like this.
+Adding this information to the figure in the [Create a binding](#create-a-binding) section looks like this.
 
 :::image type="content" source="./media/index/data-binding-button-default-conversion.png" alt-text="Diagram that shows the data binding Default property.":::
 
