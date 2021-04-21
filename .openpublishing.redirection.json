@@ -306,7 +306,7 @@
     },
     {
       "source_path": "dotnet-desktop-guide/framework/wpf/fundamentals/xaml.md",
-      "redirect_url": "/dotnet/desktop/wpf/xaml/overview?view=netdesktop-5.0"
+      "redirect_url": "/dotnet/desktop/wpf/xaml/index?view=netdesktop-5.0"
     },
     {
       "source_path": "dotnet-desktop-guide/framework/wpf/fundamentals/xaml-resources-define.md",
