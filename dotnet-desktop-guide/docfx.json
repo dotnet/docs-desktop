@@ -160,7 +160,10 @@
         "xaml-services/**/*.md": "dotnet-desktop"
       },
       "ms.topic": {
+        "framework/winforms/**/**.md": "conceptual",
         "framework/wpf/**/**.md": "conceptual",
+        "net/winforms/**/**.md": "conceptual",
+        "net/wpf/**/**.md": "conceptual",
         "xaml-services/**/*.md": "reference",
         "**/*how-to*.md": "how-to",
         "**/*overview*.md": "overview"
