@@ -65,7 +65,7 @@ To establish a binding, you use the <xref:System.Windows.Data.Binding> object. T
 
 When data binding is declared on XAML elements, they resolve data binding by looking at their immediate <xref:System.Windows.FrameworkElement.DataContext%2A> property. The data context is typically the **binding source object** for the **binding source value path** evaluation. You can override this behavior in the binding and set a specific **binding source object** value. If the `DataContext` property for the object hosting the binding isn't set, the parent element's `DataContext` property is checked, and so on, up until the root of the XAML object tree. In short, the data context used to resolve binding is inherited from the parent unless explicitly set on the object.
 
-Bindings can be configured to resolved with a specific object, as opposed to using the data context for binding resolution. Specifying a source object directly is used when, for example, you bind the foreground color of an object to the background color of another object. Data context isn't needed since the binding is resolved between those two objects. Inversely, binding that isn't bound to specific source object use data context resolution.
+Bindings can be configured to resolve with a specific object, as opposed to using the data context for binding resolution. Specifying a source object directly is used when, for example, you bind the foreground color of an object to the background color of another object. Data context isn't needed since the binding is resolved between those two objects. Inversely, bindings that aren't bound to specific source objects use data-context resolution.
 
 When the `DataContext` property changes, all bindings that could be affected by the data context are reevaluated.
 
@@ -121,7 +121,7 @@ For an example of data binding, take a look at the following app UI from the [Da
 
 The app demonstrates the following features of data binding:
 
-- The content of the ListBox is bound to a collection of *AuctionItem* objects. An *AuctionItem* object has properties such as *Description*, *StartPrice*, *StartDate*, *Category*, *SpecialFeatures*, and so on.
+- The content of the ListBox is bound to a collection of *AuctionItem* objects. An *AuctionItem* object has properties such as *Description*, *StartPrice*, *StartDate*, *Category*, and *SpecialFeatures*.
 
 - The data (*AuctionItem* objects) displayed in the `ListBox` is templated so that the description and the current price are shown for each item. The template is created by using a <xref:System.Windows.DataTemplate>. In addition, the appearance of each item depends on the *SpecialFeatures* value of the *AuctionItem* being displayed. If the *SpecialFeatures* value of the *AuctionItem* is *Color*, the item has a blue border. If the value is *Highlight*, the item has an orange border and a star. The [Data Templating](#data-templating) section provides information about data templating.
 
