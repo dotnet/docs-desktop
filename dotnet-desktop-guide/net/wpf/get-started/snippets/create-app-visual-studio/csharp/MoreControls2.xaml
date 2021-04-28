@@ -8,6 +8,7 @@
         Title="Names" Height="180" Width="260">
     <Grid Margin="10">
 
+        <!--<StackPanel1>-->
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
@@ -18,7 +19,6 @@
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
 
-        <!--<StackPanel1>-->
         <Label>Names</Label>
         <ListBox Grid.Row="1" x:Name="lstNames" />
 

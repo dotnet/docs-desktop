@@ -49,23 +49,20 @@ The first step to creating a new app is opening Visual Studio and generating the
     > [!IMPORTANT]
     > Don't select the **WPF Application (.NET _Framework_)** template.
 
-    :::image type="content" source="media/create-app-visual-studio/vs-template-search-16.8.png" alt-text="Search for the WPF template in Visual Studio 2019 for .NET":::
+    :::image type="content" source="media/create-app-visual-studio/vs-template-search.png" alt-text="Search for the WPF template in Visual Studio 2019 for .NET":::
 
 01. In the **Configure your new project** window, do the following:
 
     01. In the **Project name** box, enter **Names**.
     01. Select the **Place solution and project in the same directory** check box.
     01. Optionally, choose a different **Location** to save your code.
-    01. Select the **Create** button.
+    01. Select the **Next** button.
 
-    :::image type="content" source="media/create-app-visual-studio/vs-config-new-project-16.8.png" alt-text="Configure new WPF project in Visual Studio 2019 for .NET":::
+    :::image type="content" source="media/create-app-visual-studio/vs-config-new-project.png" alt-text="Configure new WPF project in Visual Studio 2019 for .NET":::
 
-<!-- THIS IS FOR 16.9 when it's released. Also, change the last child step of the previous step to **Next**
-
-01. In the **Additional information** window, select **.NET 5.0 (Current)** for **Target Framework** and make sure that the **Run on .NET Framework** check box is cleared. Select the **Create** button.
+01. In the **Additional information** window, select **.NET 5.0 (Current)** for **Target Framework**. Select the **Create** button.
 
     :::image type="content" source="media/create-app-visual-studio/vs-config-new-project-next.png" alt-text="Select target framework for new WPF project in Visual Studio 2019 for .NET":::
--->
 
 Once the app is generated, Visual Studio should open the XAML designer pane for the default window, _MainWindow_. If the designer isn't visible, double-click on the _MainWindow.xaml_ file in the **Solution Explorer** pane to open the designer.
 
@@ -98,16 +95,6 @@ Support for WPF in Visual Studio has five important components that you'll inter
     This is the XAML code editor for a XAML document. The XAML code editor is a way to craft your UI by hand without a designer. The designer may infer the values of properties on a control when the control is added in the designer. The XAML code editor gives you a lot more control.
 
     When both the designer and editor are visible, changes to one is reflected in the other. As you navigate the text caret in the code editor, the **Properties** pane displays the properties and attributes about that object.
-
-## Target .NET 5.0
-
-After you create your project, change the target framework to .NET 5.0. Double-click on the _Names_ project file in the **Solution Explorer**. This opens up the project file for editing. Set the `<TargetFramework>` element to `net5.0-windows`:
-
-```xml
-<TargetFramework>net5.0-windows</TargetFramework>
-```
-
-Save the project file and then close the editor tab.
 
 ## Examine the XAML
 
@@ -218,7 +205,7 @@ The stack panel differs from the grid in how the controls are placed. While you 
 
 Create the `<StackPanel>` control after the list box and put it in grid row `1` column `1`. Add another attribute named `Margin` with a value of `5,0,0,0`:
 
-:::code language="xaml" source="snippets/create-app-visual-studio/csharp/MoreControls2.xaml" id="StackPanel1":::
+:::code language="xaml" source="snippets/create-app-visual-studio/csharp/MoreControls2.xaml" id="StackPanel1" highlight="14-16":::
 
 The `Margin` attribute was previously used on the grid, but we only put in a single value, `10`. Now we've used a value of `5,0,0,0` on the stack panel. The margin is a `Thickness` type and can interpret both values. A thickness defines the space around each side of a rectangular frame, **left**, **top**, **right**, **bottom**, respectively. If the value for the margin is a single value, it uses that value for all four sides.
 
