@@ -12,7 +12,7 @@ namespace CSharp
         Success = 0,
         Failure = 1,
         CantWriteToApplicationLog = 2,
-        CantPersistApplicationState = 3
+        CantPersistApplicationState =
     }
 
     public partial class App : Application
