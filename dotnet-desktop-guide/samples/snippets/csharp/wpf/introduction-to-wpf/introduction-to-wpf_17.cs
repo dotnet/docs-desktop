@@ -13,6 +13,7 @@ namespace SDKSample
         {
             // Show message box when button is clicked
             MessageBox.Show("Hello, Windows Presentation Foundation!");
+            MessageBox.Show("Hello, a second time!");
         }
     }
 }
