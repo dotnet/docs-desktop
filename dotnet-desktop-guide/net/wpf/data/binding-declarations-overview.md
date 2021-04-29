@@ -1,7 +1,6 @@
 ---
 title: Binding declarations overview
 description: Learn how to declare a data binding in XAML or code for your application development in Windows Presentation Foundation (WPF).
-author: adegeo
 ms.date: 04/27/2021
 author: adegeo
 ms.author: adegeo
@@ -33,23 +32,23 @@ This article doesn't cover data binding concepts. For a discussion of data bindi
 
 When creating binding declaration strings in markup, they must be attached to the specific dependency property of a target object. The following example shows how to bind the <xref:System.Windows.Controls.TextBox.Text%2A?displayProperty=nameWithType> property using the binding extension, specifying the <xref:System.Windows.Data.Binding.Source%2A> and <xref:System.Windows.Data.Binding.Path%2A> properties.
 
-:::code language="xaml" source="./snippets/binding-declarations-overview/csharp/MainWindow.xaml" range="38":::
+:::code language="xaml" source="./snippets/binding-declarations-overview/csharp/ExampleBinding.xaml" range="38":::
 
-You can specify most of the properties of the <xref:System.Windows.Data.Binding> class this way. For more information about the binding extension and for a list of <xref:System.Windows.Data.Binding> properties that cannot be set using the binding extension, see the [Binding Markup Extension](../advanced/binding-markup-extension.md) overview.
+You can specify most of the properties of the <xref:System.Windows.Data.Binding> class this way. For more information about the binding extension and for a list of <xref:System.Windows.Data.Binding> properties that cannot be set using the binding extension, see the [Binding Markup Extension (.NET Framework)](../../../framework/wpf/advanced/binding-markup-extension.md) overview.
 
 ### Object element syntax
 
 Object element syntax is an alternative to creating the binding declaration. In most cases, there's no particular advantage to using either the markup extension or the object element syntax. However, when the markup extension doesn't support your scenario, such as when your property value is of a non-string type for which no type conversion exists, you need to use the object element syntax.
 
-The previous section demonstrated how to bind with a XAML extension, the following example demonstrates performing the same binding but uses object element syntax:
+The previous section demonstrated how to bind with a XAML extension, the following example demonstrates doing the same binding but uses object element syntax:
 
 :::code language="xaml" source="./snippets/binding-declarations-overview/csharp/ExampleBinding.xaml" range="40-44":::
 
-For more information about the different terms, see [XAML Syntax In Detail](../advanced/xaml-syntax-in-detail.md).
+For more information about the different terms, see [XAML Syntax In Detail (.NET Framework)](../../../framework/wpf/advanced/xaml-syntax-in-detail.md).
 
 ### MultiBinding and PriorityBinding
 
-<xref:System.Windows.Data.MultiBinding> and <xref:System.Windows.Data.PriorityBinding> don't support the XAML extension syntax. Therefore, you must use the object element syntax if you're declaring a <xref:System.Windows.Data.MultiBinding> or a <xref:System.Windows.Data.PriorityBinding> in XAML.
+<xref:System.Windows.Data.MultiBinding> and <xref:System.Windows.Data.PriorityBinding> don't support the XAML extension syntax. That's why you must use the object element syntax if you're declaring a <xref:System.Windows.Data.MultiBinding> or a <xref:System.Windows.Data.PriorityBinding> in XAML.
 
 ## Create a binding in code
 
@@ -64,7 +63,7 @@ The previous code set the following on the binding:
 - The data source, in this case, a simple object instance representing a person.
 - An optional converter that processes the value coming in from the data source object before it's assigned to the target property.
 
-If the object you're binding is a <xref:System.Windows.FrameworkElement> or a <xref:System.Windows.FrameworkContentElement> you can call the `SetBinding` method on your object directly instead of using <xref:System.Windows.Data.BindingOperations.SetBinding%2A?displayProperty=nameWithType>. For an example, see [How to: Create a Binding in Code](../../../framework/wpf/data/how-to-create-a-binding-in-code.md).
+When the object you're binding is a <xref:System.Windows.FrameworkElement> or a <xref:System.Windows.FrameworkContentElement> you can call the `SetBinding` method on your object directly instead of using <xref:System.Windows.Data.BindingOperations.SetBinding%2A?displayProperty=nameWithType>. For an example, see [How to: Create a Binding in Code](../../../framework/wpf/data/how-to-create-a-binding-in-code.md).
 
 ## Binding path syntax
 
