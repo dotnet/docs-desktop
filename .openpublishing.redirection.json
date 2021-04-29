@@ -383,6 +383,14 @@
     {
       "source_path": "dotnet-desktop-guide/net/wpf/advanced/how-to-use-system-parameters-keys.md",
       "redirect_url": "/dotnet/desktop/wpf/systems/xaml-resources-how-to-use-system?view=netdesktop-5.0"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/net/wpf/migration/index.md",
+      "redirect_url": "/dotnet/desktop/wpf/migration/differences-from-net-framework?view=netdesktop-5.0"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/net/wpf/data/how-to-specify-the-direction-of-the-binding.md",
+      "redirect_url": "/dotnet/desktop/wpf/data/binding-declarations-overview?view=netdesktop-5.0#binding-direction"
     }
   ]
 }
