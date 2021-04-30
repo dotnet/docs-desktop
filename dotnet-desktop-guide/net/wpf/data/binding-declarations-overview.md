@@ -26,9 +26,9 @@ Before reading this article, it's important that you're familiar with the concep
 
 This article doesn't cover data binding concepts. For a discussion of data binding concepts, see [Data binding overview](index.md#basic-data-binding-concepts).
 
-## Declaring a binding in XAML
+## Declare a binding in XAML
 
-<xref:System.Windows.Data.Binding> is a markup extension. When you use the binding extension to declare a binding, the declaration consists of a series of clauses following the `Binding` keyword and separated by commas (,). The clauses in the binding declaration can be in any order and there are many possible combinations. The clauses are *Name*=*Value* pairs where *Name* is the name of the <xref:System.Windows.Data.Binding> property and *Value* is the value you're setting for the property.
+<xref:System.Windows.Data.Binding> is a markup extension. When you use the binding extension to declare a binding, the declaration consists of a series of clauses following the `Binding` keyword and separated by commas (,). The clauses in the binding declaration can be in any order and there are many possible combinations. The clauses are *Name*=*Value* pairs, where *Name* is the name of the <xref:System.Windows.Data.Binding> property and *Value* is the value you're setting for the property.
 
 When creating binding declaration strings in markup, they must be attached to the specific dependency property of a target object. The following example shows how to bind the <xref:System.Windows.Controls.TextBox.Text%2A?displayProperty=nameWithType> property using the binding extension, specifying the <xref:System.Windows.Data.Binding.Source%2A> and <xref:System.Windows.Data.Binding.Path%2A> properties.
 
@@ -40,7 +40,7 @@ You can specify most of the properties of the <xref:System.Windows.Data.Binding>
 
 Object element syntax is an alternative to creating the binding declaration. In most cases, there's no particular advantage to using either the markup extension or the object element syntax. However, when the markup extension doesn't support your scenario, such as when your property value is of a non-string type for which no type conversion exists, you need to use the object element syntax.
 
-The previous section demonstrated how to bind with a XAML extension, the following example demonstrates doing the same binding but uses object element syntax:
+The previous section demonstrated how to bind with a XAML extension. The following example demonstrates doing the same binding but uses object element syntax:
 
 :::code language="xaml" source="./snippets/binding-declarations-overview/csharp/ExampleBinding.xaml" range="40-44":::
 
@@ -63,7 +63,7 @@ The previous code set the following on the binding:
 - The data source, in this case, a simple object instance representing a person.
 - An optional converter that processes the value coming in from the data source object before it's assigned to the target property.
 
-When the object you're binding is a <xref:System.Windows.FrameworkElement> or a <xref:System.Windows.FrameworkContentElement> you can call the `SetBinding` method on your object directly instead of using <xref:System.Windows.Data.BindingOperations.SetBinding%2A?displayProperty=nameWithType>. For an example, see [How to: Create a Binding in Code](../../../framework/wpf/data/how-to-create-a-binding-in-code.md).
+When the object you're binding is a <xref:System.Windows.FrameworkElement> or a <xref:System.Windows.FrameworkContentElement>, you can call the `SetBinding` method on your object directly instead of using <xref:System.Windows.Data.BindingOperations.SetBinding%2A?displayProperty=nameWithType>. For an example, see [How to: Create a Binding in Code](../../../framework/wpf/data/how-to-create-a-binding-in-code.md).
 
 ## Binding path syntax
 
@@ -139,7 +139,7 @@ The default behavior is as follows if not specified in the declaration:
 
 - If you don't set <xref:System.Windows.Data.Binding.ConverterCulture%2A>, the binding engine uses the `Language` property of the binding target object. In XAML, this defaults to `en-US` or inherits the value from the root element (or any element) of the page, if one has been explicitly set.
 
-- As long as the binding already has a data context (for instance, the inherited data context coming from a parent element), and whatever item or collection being returned by that context is appropriate for binding without requiring further path modification, a binding declaration can have no clauses at all: `{Binding}` This is often the way a binding is specified for data styling, where the binding acts upon a collection. For more information, see [Using Entire Objects as a Binding Source](../../../framework/wpf/data/binding-sources-overview.md#using-entire-objects-as-a-binding-source).
+- As long as the binding already has a data context (for example, the inherited data context coming from a parent element), and whatever item or collection being returned by that context is appropriate for binding without requiring further path modification, a binding declaration can have no clauses at all: `{Binding}`. This is often the way a binding is specified for data styling, where the binding acts upon a collection. For more information, see [Using Entire Objects as a Binding Source](../../../framework/wpf/data/binding-sources-overview.md#using-entire-objects-as-a-binding-source).
 
 - The default <xref:System.Windows.Data.Binding.Mode%2A> varies between one-way and two-way depending on the dependency property that is being bound. You can always declare the binding mode explicitly to ensure that your binding has the desired behavior. In general, user-editable control properties, such as <xref:System.Windows.Controls.TextBox.Text%2A?displayProperty=nameWithType> and <xref:System.Windows.Controls.Primitives.RangeBase.Value%2A?displayProperty=nameWithType>, default to two-way bindings, but most other properties default to one-way bindings.
 
