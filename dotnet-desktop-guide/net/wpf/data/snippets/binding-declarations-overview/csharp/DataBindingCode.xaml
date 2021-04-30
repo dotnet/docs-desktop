@@ -1,0 +1,12 @@
+﻿<Window x:Class="ArticleExample.DataBindingCode"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="DataBinding in code" SizeToContent="WidthAndHeight"
+        Loaded="Window_Loaded">
+    <Border>
+        <StackPanel Width="300" Margin="35">
+            <Label>Person name:</Label>
+            <TextBlock x:Name="NameBlock" Margin="10,0,0,0" />
+        </StackPanel>
+    </Border>
+</Window>

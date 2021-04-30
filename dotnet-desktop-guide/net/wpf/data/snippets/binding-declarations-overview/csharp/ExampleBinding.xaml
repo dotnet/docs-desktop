@@ -1,0 +1,47 @@
+﻿<Window x:Class="ArticleExample.ExampleBinding"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ArticleExample"
+        mc:Ignorable="d"
+          SizeToContent="WidthAndHeight"
+  Title="Simple Data Binding Sample">
+
+    <Window.Resources>
+        <local:Person x:Key="myDataSource" Name="Joe" Birthdate="2000-02-03"/>
+        <Style TargetType="{x:Type Label}">
+            <Setter Property="FontSize" Value="12"/>
+        </Style>
+        <Style TargetType="{x:Type TextBox}">
+            <Setter Property="Width" Value="100"/>
+            <Setter Property="Height" Value="25"/>
+        </Style>
+        <Style TargetType="{x:Type TextBlock}">
+            <Setter Property="Width" Value="100"/>
+            <Setter Property="Height" Value="25"/>
+            <Setter Property="Padding" Value="3"/>
+        </Style>
+    </Window.Resources>
+    <Border Margin="5" BorderBrush="Aqua" BorderThickness="1" Padding="8" CornerRadius="3">
+        <StackPanel Width="200" Margin="35">
+            <Label>Enter a Name:</Label>
+            <TextBox>
+                <TextBox.Text>
+                    <Binding Source="{StaticResource myDataSource}"
+                             Path="PersonName"
+                             UpdateSourceTrigger="PropertyChanged"/>
+                </TextBox.Text>
+            </TextBox>
+
+            <Label>The name you entered:</Label>
+            <TextBlock Text="{Binding Source={StaticResource myDataSource}, Path=Name}"/>
+            <Label>The name you entered:</Label>
+            <TextBlock>
+                <TextBlock.Text>
+                    <Binding Source="{StaticResource myDataSource}" Path="Name"/>
+                </TextBlock.Text>
+            </TextBlock>
+        </StackPanel>
+    </Border>
+</Window>
