@@ -23,9 +23,9 @@ namespace ArticleExample
         // <Converter>
         private class NameConverter : IValueConverter
         {
-            private static NameConverter _instance;
-            public static NameConverter Instance => //_instance ??= new NameConverter();
-                                                    _instance ?? (_instance = new NameConverter());
+            private static NameConverter _instance = new();
+
+            public static NameConverter Instance => _instance;
 
             public object Convert(object value, Type targetType, object parameter, CultureInfo culture) =>
                 $"[[ {value} ]]";
