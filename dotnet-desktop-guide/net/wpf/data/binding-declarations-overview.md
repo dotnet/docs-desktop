@@ -55,6 +55,7 @@ For more information about the different terms, see [XAML Syntax In Detail (.NET
 Another way to specify a binding is to set properties directly on a <xref:System.Windows.Data.Binding> object in code, and then assign the binding to a property. The following example shows how to create a <xref:System.Windows.Data.Binding> object in code.
 
 :::code language="csharp" source="./snippets/binding-declarations-overview/csharp/DataBindingCode.xaml.cs" id="SetBinding":::
+:::code language="vb" source="./snippets/binding-declarations-overview/vb/DataBindingCode.xaml.vb" id="SetBinding":::
 
 The previous code set the following on the binding:
 
@@ -64,6 +65,11 @@ The previous code set the following on the binding:
 - An optional converter that processes the value coming in from the data source object before it's assigned to the target property.
 
 When the object you're binding is a <xref:System.Windows.FrameworkElement> or a <xref:System.Windows.FrameworkContentElement>, you can call the `SetBinding` method on your object directly instead of using <xref:System.Windows.Data.BindingOperations.SetBinding%2A?displayProperty=nameWithType>. For an example, see [How to: Create a Binding in Code](../../../framework/wpf/data/how-to-create-a-binding-in-code.md).
+
+The previous example uses a simple data object type of `Person`. The following is the code for that object:
+
+:::code language="csharp" source="./snippets/binding-declarations-overview/csharp/Person.cs" id="Person":::
+:::code language="vb" source="./snippets/binding-declarations-overview/vb/Person.vb" id="Person":::
 
 ## Binding path syntax
 
