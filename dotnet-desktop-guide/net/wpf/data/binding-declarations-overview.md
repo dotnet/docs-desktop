@@ -127,7 +127,7 @@ The following example shows how to set the <xref:System.Windows.Data.Binding.Mod
 <TextBlock Name="IncomeText" Text="{Binding Path=TotalIncome, Mode=OneTime}" />
 ```
 
-To detect source changes (applicable to <xref:System.Windows.Data.BindingMode.OneWay> and <xref:System.Windows.Data.BindingMode.TwoWay> bindings), the source must implement a suitable property change notification mechanism such as <xref:System.ComponentModel.INotifyPropertyChanged>. For more information, see [Providing change notifications](binding-sources-overview.md#providing-change-notifications).
+To detect source changes (applicable to <xref:System.Windows.Data.BindingMode.OneWay> and <xref:System.Windows.Data.BindingMode.TwoWay> bindings), the source must implement a suitable property change notification mechanism such as <xref:System.ComponentModel.INotifyPropertyChanged>. For more information, see [Providing change notifications](binding-sources-overview.md#provide-change-notifications).
 
 For <xref:System.Windows.Data.BindingMode.TwoWay> or <xref:System.Windows.Data.BindingMode.OneWayToSource> bindings, you can control the timing of the source updates by setting the <xref:System.Windows.Data.Binding.UpdateSourceTrigger%2A> property. For more information, see <xref:System.Windows.Data.Binding.UpdateSourceTrigger%2A>.
 

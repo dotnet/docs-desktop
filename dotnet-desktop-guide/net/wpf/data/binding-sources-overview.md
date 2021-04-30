@@ -22,7 +22,7 @@ Windows Presentation Foundation (WPF) data binding supports the following bindin
 
   You can bind to public properties, sub-properties, and indexers of any common language runtime (CLR) object. The binding engine uses CLR reflection to get the values of the properties. Objects that implement <xref:System.ComponentModel.ICustomTypeDescriptor> or have a registered <xref:System.ComponentModel.TypeDescriptionProvider> also work with the binding engine.
 
-  For more information about how to implement a class that can serve as a binding source, see [Implementing a binding source on your objects](#implementing-a-binding-source-on-your-objects) later in this article.
+  For more information about how to implement a class that can serve as a binding source, see [Implementing a binding source on your objects](#implement-a-binding-source-on-your-objects) later in this article.
 
 - **Dynamic objects**
 
