@@ -72,6 +72,8 @@ landingContent:
         links:
           - text: About data binding
             url: data/index.md
+          - text: Declare bindings
+            url: data/binding-declarations-overview.md
 
   - title: XAML in WPF
     linkLists:
