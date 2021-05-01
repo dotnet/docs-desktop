@@ -51,6 +51,10 @@ items:
     items:
     - name: Overview
       href: data/index.md
+    - name: Declare a binding
+      href: data/binding-declarations-overview.md
+    - name: Binding sources
+      href: data/binding-sources-overview.md
 - name: Systems
   expanded: true
   items:
