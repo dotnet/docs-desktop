@@ -4,6 +4,9 @@ description: Learn how to use data binding to bind an enumeration to a collectio
 author: adegeo
 ms.author: adegeo
 ms.date: 04/30/2021
+dev_langs:
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "binding data [WPF], enumeration"
   - "data binding [WPF], enumeration"
@@ -51,7 +54,7 @@ The following XAML code represents a simple window that does the following:
 01. Provides a <xref:System.Windows.Controls.ListBox> control to list all enumeration values.
 01. Binds a <xref:System.Windows.Controls.Button> control's <xref:System.Windows.FrameworkElement.HorizontalAlignment> property to the selected item in the `ListBox`.
 
-:::code language="xaml" source="./snippets/how-to-bind-to-an-enumeration/csharp/BindEnum.xaml":::
+:::code language="xaml" source="./snippets/how-to-bind-to-an-enumeration/csharp/BindEnumFull.xaml":::
 
 ## See also
 
