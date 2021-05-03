@@ -14,7 +14,7 @@ helpviewer_keywords:
 
 This example shows how to bind to an enumeration. Unfortunately there isn't a direct way to use an enumeration as a data binding source. However, the <xref:System.Enum.GetValues(System.Type)?displayProperty=nameWithType> method returns a collection of values. These values can be wrapped in a <xref:System.Windows.Data.ObjectDataProvider> and used as a data source.
 
-The <xref:System.Windows.Data.ObjectDataProvider> type provides a convenient way to create an object in XAML and use it as a data source. 
+The <xref:System.Windows.Data.ObjectDataProvider> type provides a convenient way to create an object in XAML and use it as a data source.
 
 [!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
 
