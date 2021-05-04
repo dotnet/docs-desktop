@@ -126,7 +126,7 @@ Recursive code may lead to stack overflow errors or out of memory exceptions due
 
 The following example is an alternate iterative approach to traversing the nodes of the tree using a <xref:System.Collections.Generic.Queue> data structure. This approach does not follow any ordering and only ensures all the nodes are printed. If we wish to follow a pre-order or post-order approach then we can use a <xref:System.Collections.Generic.Stack> data structure to ensure that a node and its children are processed before subsequent nodes.
 
-    ```csharp  
+```csharp  
     private void PrintNodeValues(TreeNode treeNode)
     { 
         if (treeNode != null)
@@ -160,7 +160,7 @@ The following example is an alternate iterative approach to traversing the nodes
             PrintNodeValues(n);
         }
     }
-    ```  
+```  
 ## See also
 
 - [TreeView Control](treeview-control-windows-forms.md)
