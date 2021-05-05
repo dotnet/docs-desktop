@@ -29,54 +29,7 @@ It is sometimes useful to examine every node in a Windows Forms <xref:System.Win
   
     :::code languauge="vb" source="snippets/how-to-iterate-through-all-nodes-of-a-windows-forms-treeview-control/vb/Form1.vb" id="PrintRecursive":::  
   
-    ```cpp  
-    private:  
-       void PrintRecursive( TreeNode^ treeNode )  
-       {  
-          // Print the node.  
-          System::Diagnostics::Debug::WriteLine( treeNode->Text );  
-          MessageBox::Show( treeNode->Text );  
-  
-          // Print each node recursively.  
-          System::Collections::IEnumerator^ myNodes = (safe_cast<System::Collections::IEnumerable^>(treeNode->Nodes))->GetEnumerator();  
-          try  
-          {  
-             while ( myNodes->MoveNext() )  
-             {  
-                TreeNode^ tn = safe_cast<TreeNode^>(myNodes->Current);  
-                PrintRecursive( tn );  
-             }  
-          }  
-          finally  
-          {  
-             IDisposable^ disposable = dynamic_cast<System::IDisposable^>(myNodes);  
-             if ( disposable != nullptr )  
-                      disposable->Dispose();  
-          }  
-       }  
-  
-       // Call the procedure using the TreeView.  
-       void CallRecursive( TreeView^ treeView )  
-       {  
-          // Print each node recursively.  
-          TreeNodeCollection^ nodes = treeView->Nodes;  
-          System::Collections::IEnumerator^ myNodes = (safe_cast<System::Collections::IEnumerable^>(nodes))->GetEnumerator();  
-          try  
-          {  
-             while ( myNodes->MoveNext() )  
-             {  
-                TreeNode^ n = safe_cast<TreeNode^>(myNodes->Current);  
-                PrintRecursive( n );  
-             }  
-          }  
-          finally  
-          {  
-             IDisposable^ disposable = dynamic_cast<System::IDisposable^>(myNodes);  
-             if ( disposable != nullptr )  
-                      disposable->Dispose();  
-          }  
-       }  
-    ```  
+    :::code languauge="cpp" source="snippets/how-to-iterate-through-all-nodes-of-a-windows-forms-treeview-control/cpp/MyForm.h" id="PrintRecursive":::  
   
 ## Non-recursive approach
 
@@ -87,6 +40,8 @@ The following example is an alternate iterative approach to traversing the nodes
 :::code languauge="csharp" source="snippets/how-to-iterate-through-all-nodes-of-a-windows-forms-treeview-control/cs/Form1.cs" id="PrintNonRecursive":::
 
 :::code languauge="vb" source="snippets/how-to-iterate-through-all-nodes-of-a-windows-forms-treeview-control/vb/Form1.vb" id="PrintNonRecursive":::
+
+:::code languauge="cpp" source="snippets/how-to-iterate-through-all-nodes-of-a-windows-forms-treeview-control/cpp/MyForm.h" id="PrintNonRecursive":::
 
 ## See also
 
