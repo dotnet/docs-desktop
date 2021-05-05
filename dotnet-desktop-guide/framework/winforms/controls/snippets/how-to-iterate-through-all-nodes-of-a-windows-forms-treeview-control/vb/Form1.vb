@@ -11,9 +11,12 @@ Public Class Form1
         'Loading the TreeView with data
         PopulateTreeView()
 
+        'Below method implementations will start printing node values to MessageBoxes and can be time consuming.
+        'An alternate way to check is adding two labels and printing the values of the total nodes in each using both the below traversal methods.
+         
         'Print all the nodes recursively
-        CallRecursive(trvTest)
-        CallNonRecursive(trvTest)
+        'CallRecursive(trvTest)
+        'CallNonRecursive(trvTest)
     End Sub
 
     '<PrintRecursive>
