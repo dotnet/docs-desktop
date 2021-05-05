@@ -10,12 +10,6 @@ namespace project
         //List of all students
         private ArrayList studentArray = new ArrayList();
 
-        //Total number of nodes obtained by recursive traversal
-        //private int recursiveTotalNodes = 0;
-        
-        //Total number of nodes obtained by non recursive traversal
-        //private int nonRecursiveTotalNodes = 0;
-
         //Windows Form application
         public Form1()
         {
@@ -24,17 +18,13 @@ namespace project
             //Loading the TreeView with data
             PopulateTreeView();
 
+            //Below method implementations will start printing node values to MessageBoxes and can be time consuming.
+            //An alternate way to check is adding two labels and printing the values of the total nodes in each using both the below traversal methods.
+            
             //Printing the total number of nodes recursively
-            CallRecursive(trvTest);
+            //CallRecursive(trvTest);
 
-            CallNonRecursive(trvTest);
-
-            //Calculating the total number of nodes non-recursively
-
-            //lblRecResult.Text = recursiveTotalNodes.ToString();
-
-            //lblNonRecResult.Text = nonRecursiveTotalNodes.ToString();
-
+            //CallNonRecursive(trvTest);
         }
 
         // <PrintRecursive>
