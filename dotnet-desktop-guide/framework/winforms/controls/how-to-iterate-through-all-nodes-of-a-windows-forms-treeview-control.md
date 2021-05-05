@@ -124,41 +124,7 @@ Recursive code may lead to stack overflow errors or out of memory exceptions due
 
 The following example is an alternate iterative approach to traversing the nodes of the tree using a <xref:System.Collections.Generic.Queue%601> data structure. This approach does not follow any ordering and only ensures all the nodes are printed. If we wish to follow a pre-order or post-order approach then we can use a <xref:System.Collections.Generic.Stack%601> data structure to ensure that a node and its children are processed before subsequent nodes.
 
-```csharp  
-private void PrintNodeValues(TreeNode treeNode)
-{ 
-    if (treeNode != null)
-    {
-        Queue<TreeNode> staging = new Queue<TreeNode>();
-        staging.Enqueue(treeNode);
-
-        while(staging.Count>0)
-        {  
-            treeNode = staging.Dequeue();
-              
-            // Print the node.  
-            System.Diagnostics.Debug.WriteLine(treeNode.Text);
-            MessageBox.Show(treeNode.Text);
-
-            foreach(TreeNode node in treeNode.Nodes)
-            {
-                staging.Enqueue(node);
-            }
-        }
-    }
-}
-
-// Call the procedure using the TreeView.  
-private void CallProc(TreeView treeView)
-{
-    // Print each node.  
-    TreeNodeCollection nodes = treeView.Nodes;
-    foreach (TreeNode n in nodes)
-    {
-        PrintNodeValues(n);
-    }
-}
-```
+:::code languauge="csharp" source="snippets/how-to-iterate-through-all-nodes-of-a-windows-forms-treeview-control/cs/Form1.cs" id="PrintNonRecursive":::
 
 ## See also
 
