@@ -18,8 +18,6 @@ It is sometimes useful to examine every node in a Windows Forms <xref:System.Win
  Each <xref:System.Windows.Forms.TreeNode> object in a tree view has properties that you can use to navigate the tree view: <xref:System.Windows.Forms.TreeNode.FirstNode%2A>, <xref:System.Windows.Forms.TreeNode.LastNode%2A>, <xref:System.Windows.Forms.TreeNode.NextNode%2A>, <xref:System.Windows.Forms.TreeNode.PrevNode%2A>, and <xref:System.Windows.Forms.TreeNode.Parent%2A>. The value of the <xref:System.Windows.Forms.TreeNode.Parent%2A> property is the parent node of the current node. The child nodes of the current node, if there are any, are listed in its <xref:System.Windows.Forms.TreeNode.Nodes%2A> property. The <xref:System.Windows.Forms.TreeView> control itself has the <xref:System.Windows.Forms.TreeView.TopNode%2A> property, which is the root node of the entire tree view.  
   
 ## Recursive approach
-
-### To iterate through all nodes of the TreeView control  
   
 1. Create a recursive procedure (recursive method in C# and C++) that tests each node.  
   
@@ -127,39 +125,39 @@ Recursive code may lead to stack overflow errors or out of memory exceptions due
 The following example is an alternate iterative approach to traversing the nodes of the tree using a <xref:System.Collections.Generic.Queue> data structure. This approach does not follow any ordering and only ensures all the nodes are printed. If we wish to follow a pre-order or post-order approach then we can use a <xref:System.Collections.Generic.Stack> data structure to ensure that a node and its children are processed before subsequent nodes.
 
 ```csharp  
-    private void PrintNodeValues(TreeNode treeNode)
-    { 
-        if (treeNode != null)
-        {
-            Queue<TreeNode> staging = new Queue<TreeNode>();
-            staging.Enqueue(treeNode);
+private void PrintNodeValues(TreeNode treeNode)
+{ 
+    if (treeNode != null)
+    {
+        Queue<TreeNode> staging = new Queue<TreeNode>();
+        staging.Enqueue(treeNode);
 
-            while(staging.Count>0)
-            {  
-                treeNode = staging.Dequeue();
-                
-                // Print the node.  
-                System.Diagnostics.Debug.WriteLine(treeNode.Text);
-                MessageBox.Show(treeNode.Text);
+        while(staging.Count>0)
+        {  
+            treeNode = staging.Dequeue();
+              
+            // Print the node.  
+            System.Diagnostics.Debug.WriteLine(treeNode.Text);
+            MessageBox.Show(treeNode.Text);
 
-                foreach(TreeNode node in treeNode.Nodes)
-                {
-                    staging.Enqueue(node);
-                }
+            foreach(TreeNode node in treeNode.Nodes)
+            {
+                staging.Enqueue(node);
             }
         }
     }
+}
 
-    // Call the procedure using the TreeView.  
-    private void CallProc(TreeView treeView)
+// Call the procedure using the TreeView.  
+private void CallProc(TreeView treeView)
+{
+    // Print each node.  
+    TreeNodeCollection nodes = treeView.Nodes;
+    foreach (TreeNode n in nodes)
     {
-        // Print each node.  
-        TreeNodeCollection nodes = treeView.Nodes;
-        foreach (TreeNode n in nodes)
-        {
-            PrintNodeValues(n);
-        }
+        PrintNodeValues(n);
     }
+}
 ```
 
 ## See also
