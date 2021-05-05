@@ -49,8 +49,7 @@ namespace project
             {
                 PrintRecursive(tn);
             }
-        }
-        // </PrintRecursive>
+        }       
 
         // Call the procedure using the TreeView.  
         private void CallRecursive(TreeView treeView)
@@ -62,6 +61,7 @@ namespace project
                 PrintRecursive(n);
             }
         }
+        // </PrintRecursive>
 
         // <PrintNonRecursive>
         private void PrintNonRecursive(TreeNode treeNode)
