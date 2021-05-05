@@ -24,7 +24,7 @@ namespace project
             //Loading the TreeView with data
             PopulateTreeView();
 
-            //Calculating the total number of nodes recursively
+            //Printing the total number of nodes recursively
             CallRecursive(trvTest);
 
             CallNonRecursive(trvTest);
