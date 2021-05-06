@@ -8,6 +8,8 @@ on:
       - "**.cs"
       - "**.vb"
       - "**.fs"
+      - "**.cpp"
+      - "**.h"
       - "**.xaml"
       - "**.razor"
       - "**.cshtml"
@@ -15,6 +17,7 @@ on:
       - "**.csproj"
       - "**.vbproj"
       - "**.fsproj"
+      - "**.vcxproj"
       - "**global.json"
       - "**snippets.5000.json"
     branches: '*'
