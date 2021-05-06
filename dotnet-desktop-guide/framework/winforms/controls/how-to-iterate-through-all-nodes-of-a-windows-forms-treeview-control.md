@@ -18,8 +18,6 @@ It is sometimes useful to examine every node in a Windows Forms <xref:System.Win
  Each <xref:System.Windows.Forms.TreeNode> object in a tree view has properties that you can use to navigate the tree view: <xref:System.Windows.Forms.TreeNode.FirstNode%2A>, <xref:System.Windows.Forms.TreeNode.LastNode%2A>, <xref:System.Windows.Forms.TreeNode.NextNode%2A>, <xref:System.Windows.Forms.TreeNode.PrevNode%2A>, and <xref:System.Windows.Forms.TreeNode.Parent%2A>. The value of the <xref:System.Windows.Forms.TreeNode.Parent%2A> property is the parent node of the current node. The child nodes of the current node, if there are any, are listed in its <xref:System.Windows.Forms.TreeNode.Nodes%2A> property. The <xref:System.Windows.Forms.TreeView> control itself has the <xref:System.Windows.Forms.TreeView.TopNode%2A> property, which is the root node of the entire tree view.  
   
 ## Recursive approach
-
-### To iterate through all nodes of the TreeView control  
   
 1. Create a recursive procedure (recursive method in C# and C++) that tests each node.  
   
@@ -27,140 +25,23 @@ It is sometimes useful to examine every node in a Windows Forms <xref:System.Win
   
      The following example shows how to print each <xref:System.Windows.Forms.TreeNode> object's <xref:System.Windows.Forms.TreeNode.Text%2A> property:  
   
-    ```vb  
-    Private Sub PrintRecursive(ByVal n As TreeNode)  
-       System.Diagnostics.Debug.WriteLine(n.Text)  
-       MessageBox.Show(n.Text)  
-       Dim aNode As TreeNode  
-       For Each aNode In n.Nodes  
-          PrintRecursive(aNode)  
-       Next  
-    End Sub  
+    :::code languauge="csharp" source="snippets/how-to-iterate-through-all-nodes-of-a-windows-forms-treeview-control/cs/Form1.cs" id="PrintRecursive":::
   
-    ' Call the procedure using the top nodes of the treeview.  
-    Private Sub CallRecursive(ByVal aTreeView As TreeView)  
-       Dim n As TreeNode  
-       For Each n In aTreeView.Nodes  
-          PrintRecursive(n)  
-       Next  
-    End Sub  
-    ```  
+    :::code languauge="vb" source="snippets/how-to-iterate-through-all-nodes-of-a-windows-forms-treeview-control/vb/Form1.vb" id="PrintRecursive":::  
   
-    ```csharp  
-    private void PrintRecursive(TreeNode treeNode)  
-    {  
-       // Print the node.  
-       System.Diagnostics.Debug.WriteLine(treeNode.Text);  
-       MessageBox.Show(treeNode.Text);  
-       // Print each node recursively.  
-       foreach (TreeNode tn in treeNode.Nodes)  
-       {  
-          PrintRecursive(tn);  
-       }  
-    }  
-  
-    // Call the procedure using the TreeView.  
-    private void CallRecursive(TreeView treeView)  
-    {  
-       // Print each node recursively.  
-       TreeNodeCollection nodes = treeView.Nodes;  
-       foreach (TreeNode n in nodes)  
-       {  
-          PrintRecursive(n);  
-       }  
-    }  
-    ```  
-  
-    ```cpp  
-    private:  
-       void PrintRecursive( TreeNode^ treeNode )  
-       {  
-          // Print the node.  
-          System::Diagnostics::Debug::WriteLine( treeNode->Text );  
-          MessageBox::Show( treeNode->Text );  
-  
-          // Print each node recursively.  
-          System::Collections::IEnumerator^ myNodes = (safe_cast<System::Collections::IEnumerable^>(treeNode->Nodes))->GetEnumerator();  
-          try  
-          {  
-             while ( myNodes->MoveNext() )  
-             {  
-                TreeNode^ tn = safe_cast<TreeNode^>(myNodes->Current);  
-                PrintRecursive( tn );  
-             }  
-          }  
-          finally  
-          {  
-             IDisposable^ disposable = dynamic_cast<System::IDisposable^>(myNodes);  
-             if ( disposable != nullptr )  
-                      disposable->Dispose();  
-          }  
-       }  
-  
-       // Call the procedure using the TreeView.  
-       void CallRecursive( TreeView^ treeView )  
-       {  
-          // Print each node recursively.  
-          TreeNodeCollection^ nodes = treeView->Nodes;  
-          System::Collections::IEnumerator^ myNodes = (safe_cast<System::Collections::IEnumerable^>(nodes))->GetEnumerator();  
-          try  
-          {  
-             while ( myNodes->MoveNext() )  
-             {  
-                TreeNode^ n = safe_cast<TreeNode^>(myNodes->Current);  
-                PrintRecursive( n );  
-             }  
-          }  
-          finally  
-          {  
-             IDisposable^ disposable = dynamic_cast<System::IDisposable^>(myNodes);  
-             if ( disposable != nullptr )  
-                      disposable->Dispose();  
-          }  
-       }  
-    ```  
+    :::code languauge="cpp" source="snippets/how-to-iterate-through-all-nodes-of-a-windows-forms-treeview-control/cpp/MyForm.h" id="PrintRecursive":::  
   
 ## Non-recursive approach
 
 Recursive code may lead to stack overflow errors or out of memory exceptions due to there being too many frames on the stack.
 
-The following example is an alternate iterative approach to traversing the nodes of the tree using a <xref:System.Collections.Generic.Queue> data structure. This approach does not follow any ordering and only ensures all the nodes are printed. If we wish to follow a pre-order or post-order approach then we can use a <xref:System.Collections.Generic.Stack> data structure to ensure that a node and its children are processed before subsequent nodes.
+The following example is an alternate iterative approach to traversing the nodes of the tree using a <xref:System.Collections.Generic.Queue%601> data structure. This approach does not follow any ordering and only ensures all the nodes are printed. If we wish to follow a pre-order or post-order approach then we can use a <xref:System.Collections.Generic.Stack%601> data structure to ensure that a node and its children are processed before subsequent nodes.
 
-```csharp  
-    private void PrintNodeValues(TreeNode treeNode)
-    { 
-        if (treeNode != null)
-        {
-            Queue<TreeNode> staging = new Queue<TreeNode>();
-            staging.Enqueue(treeNode);
+:::code languauge="csharp" source="snippets/how-to-iterate-through-all-nodes-of-a-windows-forms-treeview-control/cs/Form1.cs" id="PrintNonRecursive":::
 
-            while(staging.Count>0)
-            {  
-                treeNode = staging.Dequeue();
-                
-                // Print the node.  
-                System.Diagnostics.Debug.WriteLine(treeNode.Text);
-                MessageBox.Show(treeNode.Text);
+:::code languauge="vb" source="snippets/how-to-iterate-through-all-nodes-of-a-windows-forms-treeview-control/vb/Form1.vb" id="PrintNonRecursive":::
 
-                foreach(TreeNode node in treeNode.Nodes)
-                {
-                    staging.Enqueue(node);
-                }
-            }
-        }
-    }
-
-    // Call the procedure using the TreeView.  
-    private void CallProc(TreeView treeView)
-    {
-        // Print each node.  
-        TreeNodeCollection nodes = treeView.Nodes;
-        foreach (TreeNode n in nodes)
-        {
-            PrintNodeValues(n);
-        }
-    }
-```
+:::code languauge="cpp" source="snippets/how-to-iterate-through-all-nodes-of-a-windows-forms-treeview-control/cpp/MyForm.h" id="PrintNonRecursive":::
 
 ## See also
 
