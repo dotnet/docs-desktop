@@ -55,6 +55,11 @@ items:
       href: data/binding-declarations-overview.md
     - name: Binding sources
       href: data/binding-sources-overview.md
+      items:
+      - name: Common tasks
+        items:
+        - name: Bind to an enumeration
+          href: data/how-to-bind-to-an-enumeration.md
 - name: Systems
   expanded: true
   items:
