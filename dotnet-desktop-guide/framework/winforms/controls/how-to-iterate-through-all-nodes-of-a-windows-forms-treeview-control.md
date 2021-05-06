@@ -1,6 +1,7 @@
 ---
 title: Iterate Through All Nodes of TreeView Control
-ms.date: "03/30/2017"
+ms.date: "05/06/2021"
+description: Learn how to interate through the nodes of a Windows Forms TreeView control. TreeView Nodes provide properties that navigate through the TreeView control.
 dev_langs: 
   - "csharp"
   - "vb"
