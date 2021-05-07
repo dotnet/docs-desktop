@@ -32,9 +32,7 @@ The following example shows how to print each <xref:System.Windows.Forms.TreeNod
   
 ## Non-recursive approach
 
-Recursive code may lead to stack overflow errors or out of memory exceptions due to there being too many frames on the call stack.
-
-The following example is an alternate iterative approach to traversing the nodes of the tree using a <xref:System.Collections.Generic.Queue%601> data structure. This approach does not follow any ordering and only ensures all the nodes are printed. If we wish to follow a pre-order or post-order approach then we can use a <xref:System.Collections.Generic.Stack%601> data structure to ensure that a node and its children are processed before subsequent nodes.
+The following example is an alternate iterative approach to traversing the nodes of the tree using a <xref:System.Collections.Generic.Queue%601> collection. This approach doesn't follow the parent-child relationship of a node only ensures every node is printed. If you want to process each tree node and its children, first, use the <xref:System.Collections.Generic.Stack%601> collection
 
 :::code language="csharp" source="snippets/how-to-iterate-through-all-nodes-of-a-windows-forms-treeview-control/cs/Form1.cs" id="PrintNonRecursive":::
 
