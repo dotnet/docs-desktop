@@ -1,0 +1,31 @@
+﻿<Window x:Class="ArticleExample.BindEnum"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib" 
+        SizeToContent="WidthAndHeight"
+        Title="Enum binding">
+    <!--<Resources>-->
+    <Window.Resources>
+        <ObjectDataProvider x:Key="EnumDataSource"
+                            ObjectType="{x:Type sys:Enum}"
+                            MethodName="GetValues">
+            <ObjectDataProvider.MethodParameters>
+                <x:Type TypeName="HorizontalAlignment" />
+            </ObjectDataProvider.MethodParameters>
+        </ObjectDataProvider>
+    </Window.Resources>
+    <!--</Resources>-->
+    <!--<Content>-->
+    <StackPanel Width="300" Margin="10">
+        <TextBlock>Choose the HorizontalAlignment value of the Button:</TextBlock>
+
+        <!--<ListBox>-->
+        <ListBox Name="myComboBox" SelectedIndex="0"
+                 ItemsSource="{Binding Source={StaticResource EnumDataSource}}"/>
+        <!--</ListBox>-->
+
+        <Button Content="I'm a button"
+                HorizontalAlignment="{Binding ElementName=myComboBox, Path=SelectedItem}" />
+    </StackPanel>
+    <!--</Content>-->
+</Window>
