@@ -20,7 +20,7 @@ It is sometimes useful to examine every node in a Windows Forms <xref:System.Win
   
 ## Recursive approach
   
-The recursive approach is creating a method in such a way that the solution depends on solutions to smaller instances of the same problem. The method tests each node, and then calls the same method for each of the nodes children.  
+The recursive approach uses a method that processes a tree node, and then calls the same method for each child node. This repeats until every node in the tree is processed. The drawback to this approach is that if the tree is big, you may run into a stack overflow error and run out of memory.
   
 The following example shows how to print each <xref:System.Windows.Forms.TreeNode> object's <xref:System.Windows.Forms.TreeNode.Text%2A> property:  
   
