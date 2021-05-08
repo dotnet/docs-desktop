@@ -44,3 +44,27 @@ ehthumbs_vista.db
 [Oo]bj/
 *.sln
 *.user
+
+# C++
+# Compiled Object files
+*.slo
+*.lo
+*.o
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+
+# Visual Studio Files
+Debug
+Release
+*.suo
+*.csproj.user
+*.vbproj.user
+ipch
+*sdf
