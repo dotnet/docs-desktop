@@ -15,7 +15,7 @@ ms.assetid: c19049bb-5ceb-492d-afd2-751dca0ed8e3
 # Control Styles and Templates
 Controls in Windows Presentation Foundation (WPF) have a <xref:System.Windows.Controls.ControlTemplate> that contains the visual tree of that control. You can change the structure and appearance of a control by modifying the <xref:System.Windows.Controls.ControlTemplate> of that control. There is no way to replace only part of the visual tree of a control; to change the visual tree of a control you must set the <xref:System.Windows.Controls.Control.Template%2A> property of the control to its new and complete <xref:System.Windows.Controls.ControlTemplate>.  
   
- The desktop themes determine which resource dictionary is used. The resource dictionaries for the desktop themes are included with your Visual Studio installation. That folder is generally located at _C:\Program Files (x86)\Microsoft Visual Studio\2019\\\<visual studio edition>\DesignTools\SystemThemes\wpf_, where _\<visual studio edition>_ represents the edition of Visual Studio.
+ The desktop themes determine which resource dictionary is used. The resource dictionaries for the desktop themes are included with your Visual Studio installation. That folder is generally located at _C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\\<visual studio edition>\\DesignTools\\SystemThemes\\wpf_, where _\<visual studio edition>_ represents the edition of Visual Studio.
   
  The following table describes the resource dictionary file names and their corresponding desktop themes.  
   
