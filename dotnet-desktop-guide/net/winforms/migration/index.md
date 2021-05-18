@@ -9,6 +9,9 @@ ms.topic: how-to
 
 This article describes how to migrate a Windows Forms desktop app from .NET Framework to .NET 5 or later. The .NET SDK includes support for Windows Forms applications. Windows Forms is still a Windows-only framework and only runs on Windows.
 
+> [!TIP]
+> Try the [.NET Upgrade Assistant](/dotnet/core/porting/upgrade-assistant-winforms-framework) to help migrate your project.
+
 Migrating your app from .NET Framework to .NET 5 generally requires a new project file. .NET 5 uses SDK-style project files while .NET Framework typically uses the older Visual Studio project file. If you've ever opened a Visual Studio project file in a text editor, you know how verbose it is. SDK-style projects are smaller and don't require as many entries as the older project file format does.
 
 To learn more about .NET 5, see [Introduction to .NET](/dotnet/core/introduction).
@@ -156,9 +159,15 @@ This XML gives you the basic structure of the project. However, it doesn't conta
 
 One thing to note about the difference between .NET Framework projects and the SDK-style projects used by .NET 5 is that .NET Framework projects use an opt-in model for code files. Any code file you want to compile needs to be explicitly defined in your project file. SDK-style projects are reverse, they default to opt-out behavior: All code files starting from the project's directory and below are automatically included in your project. You don't need to migrate these entries if they are simple and without settings. This is the same for other common files such as _resx_.
 
-Windows Forms projects also include Windows Form project specific files, such as _Properties/Settings.settings_ and _Properties/Resources.resx_. These files may need to be migrated they are declared in your original project.
+Windows Forms projects may also reference the following files:
 
-Copy those entries from the old project file into an `<ItemGroup>` element in the new project. After you copy the entries, change all `<Compile Include="value">` elements to instead use the `Update` attribute instead of `Include`.
+- _Properties\\Settings.settings_
+- _Properties\\Resources.resx_
+- _Properties\\app.manifest_
+
+The _app.manifest_ file is automatically referenced by your project and you don't need to do anything special to migrate it.
+
+Any _*.resx_ and _*.settings_ files in the _Properties_ folder need to be migrated in the project. Copy those entries from the old project file into an `<ItemGroup>` element in the new project. After you copy the entries, change all `<Compile Include="value">` elements to instead use the `Update` attribute instead of `Include`.
 
 - Import the configuration for the _Settings.settings_ file.
 
@@ -181,7 +190,7 @@ Copy those entries from the old project file into an `<ItemGroup>` element in th
   > [!IMPORTANT]
   > **Visual Basic** projects typically use the folder _My Project_ while C# projects typically use the folder _Properties_ for the default project settings file.
   
-- Import the configuration for any _resx_ file, such as the _properties/Resources.resx_ file. Notice that the `Include` attribute was set to `Update` on the `<Compile>` and `<EmbeddedResource>` element, and `<SubType>` was removed from `<EmbeddedResource>`:
+- Import the configuration for any _resx_ file, such as the _properties\\Resources.resx_ file. Notice that the `Include` attribute was set to `Update` on the `<Compile>` and `<EmbeddedResource>` element, and `<SubType>` was removed from `<EmbeddedResource>`:
 
   ```xml
   <ItemGroup>
@@ -204,7 +213,7 @@ Copy those entries from the old project file into an `<ItemGroup>` element in th
 
 Visual Basic language projects require extra configuration.
 
-01. Import the configuration file _My Project\Application.myapp_ setting. Notice that the `<Compile>` element uses the `Update` attribute instead of the `Include` attribute.
+01. Import the configuration file _My Project\\Application.myapp_ setting. Notice that the `<Compile>` element uses the `Update` attribute instead of the `Include` attribute.
 
     ```xml
     <ItemGroup>
@@ -318,6 +327,7 @@ After you've finished migrating your app, test it!
 
 ## Next steps
 
+- Try the [.NET Upgrade Assistant](/dotnet/core/porting/upgrade-assistant-winforms-framework) to migrate your app.
 - Learn about [breaking changes in Windows Forms](/dotnet/core/compatibility/winforms).
 - Read more about the [Windows Compatibility Pack][compat-pack].
 
