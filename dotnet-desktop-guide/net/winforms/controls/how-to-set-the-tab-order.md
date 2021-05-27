@@ -15,7 +15,7 @@ helpviewer_keywords:
 
 The tab order is the order in which a user moves focus from one control to another by pressing the <kbd>Tab</kbd> key. Each form has its own tab order. By default, the tab order is the same as the order in which you created the controls. Tab-order numbering begins with zero and ascends in value, and is set with the <xref:System.Windows.Forms.Control.TabIndex%2A> property.
 
-You can also set the text by using the [designer](#designer).
+You can also set the tab order by using the [designer](#designer).
 
 [!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
 
