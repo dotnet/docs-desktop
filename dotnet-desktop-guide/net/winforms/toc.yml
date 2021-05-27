@@ -51,6 +51,8 @@ items:
       href: controls/how-to-set-the-display-text.md
     - name: Set the the tab order of a control
       href: controls/how-to-set-the-tab-order.md
+    - name: Dock and anchor controls
+      href: controls/how-to-dock-and-anchor.md
     - name: Set the image displayed by a control
       href: controls/how-to-add-a-picture-to-a-control.md
 - name: User input - keyboard
