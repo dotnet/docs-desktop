@@ -27,7 +27,7 @@ Any control of the many on your form can be skipped in the tab order. Usually, p
 
 ## Designer
 
-The Visual Studio designer provides two ways to set the tab order of a control.
+Use the Visual Studio designer **Properties** window to set the tab order of a control.
 
 01. Select the control in the designer.
 
