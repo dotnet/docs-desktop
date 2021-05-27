@@ -95,5 +95,6 @@ Button1.TabStop = False
 
 ## See also
 
-- <xref:System.Windows.Forms.Control.Text%2A?displayProperty=nameWithType>
-- [How to: Create Access Keys for Windows Forms Controls](how-to-create-access-keys.md)
+- [Add a control to a form](how-to-add-to-a-form.md)
+- <xref:System.Windows.Forms.Control.TabIndex%2A?displayProperty=fullName>
+- <xref:System.Windows.Forms.Control.TabStop%2A?displayProperty=fullName>
