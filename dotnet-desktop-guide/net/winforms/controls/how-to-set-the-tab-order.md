@@ -86,11 +86,11 @@ You can prevent a control from receiving focus when the <kbd>Tab</kbd> key is pr
 ### Set TabStop in code
 
 01. Set the `TabStop` property to `false`.
-    
+
     ```csharp
     Button1.TabStop = false;
     ```
-    
+
     ```vb
     Button1.TabStop = False
     ```
