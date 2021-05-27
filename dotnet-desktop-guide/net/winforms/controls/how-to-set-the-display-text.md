@@ -76,5 +76,5 @@ You can also set the text by using the [designer](#designer).
 
 ## See also
 
-- <xref:System.Windows.Forms.Control.Text%2A?displayProperty=nameWithType>
-- [How to: Create Access Keys for Windows Forms Controls](how-to-create-access-keys.md)
+- [Create Access Keys for Windows Forms Controls](how-to-create-access-keys.md)
+- <xref:System.Windows.Forms.Control.Text%2A?displayProperty=fullName>
