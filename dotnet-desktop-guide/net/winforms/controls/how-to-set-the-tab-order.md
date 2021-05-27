@@ -75,7 +75,7 @@ You can prevent a control from receiving focus when the <kbd>Tab</kbd> key is pr
 > [!NOTE]
 > A radio button group has a single tab stop at run-time. The selected button, the button with its <xref:System.Windows.Forms.RadioButton.Checked%2A> property set to `true`, has its <xref:System.Windows.Forms.Control.TabStop%2A> property automatically set to `true`. Other buttons in the radio button group have their `TabStop` property set to `false`.<!-- LINK For more information about grouping <xref:System.Windows.Forms.RadioButton> controls, see [Grouping Windows Forms RadioButton Controls to Function as a Set](how-to-group-windows-forms-radiobutton-controls-to-function-as-a-set.md). -->
 
-### Set TabStop programmatically
+### Set TabStop with the designer
 
 01. Select the control in the designer.
 
@@ -83,7 +83,7 @@ You can prevent a control from receiving focus when the <kbd>Tab</kbd> key is pr
 
     :::image type="content" source="media/how-to-set-the-tab-order/properties-tabstop.png" alt-text="Visual Studio Properties pane for .NET Windows Forms with TabStop property shown.":::
 
-### Set TabStop in code
+### Set TabStop programmatically
 
 01. Set the `TabStop` property to `false`.
 
