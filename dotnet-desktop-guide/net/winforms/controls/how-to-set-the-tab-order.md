@@ -70,7 +70,7 @@ Visual Studio has a Tab Order tool which works in the Visual Designer. Once star
 
 ## Remove a control from the tab order
 
-You can prevent a control from receiving focus when the <kbd>Tab</kbd> key is pressed, by setting the <xref:System.Windows.Forms.Control.TabStop%2A> property to `false`. This control is skipped when you cycle through the controls with the <kbd>Tab</kbd> key. The control doesn't lose its tab order when this property is set to `false`.
+You can prevent a control from receiving focus when the <kbd>Tab</kbd> key is pressed, by setting the <xref:System.Windows.Forms.Control.TabStop%2A> property to `false`. The control is skipped when you cycle through the controls with the <kbd>Tab</kbd> key. The control doesn't lose its tab order when this property is set to `false`.
 
 > [!NOTE]
 > A radio button group has a single tab stop at run-time. The selected button, the button with its <xref:System.Windows.Forms.RadioButton.Checked%2A> property set to `true`, has its <xref:System.Windows.Forms.Control.TabStop%2A> property automatically set to `true`. Other buttons in the radio button group have their `TabStop` property set to `false`.<!-- LINK For more information about grouping <xref:System.Windows.Forms.RadioButton> controls, see [Grouping Windows Forms RadioButton Controls to Function as a Set](how-to-group-windows-forms-radiobutton-controls-to-function-as-a-set.md). -->
