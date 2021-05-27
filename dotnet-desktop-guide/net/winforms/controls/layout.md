@@ -94,6 +94,82 @@ Only some controls support the <xref:System.Windows.Forms.Control.AutoSize%2A> p
 | If a control does not implement the <xref:System.Windows.Forms.Control.GetPreferredSize%2A> method, the <xref:System.Windows.Forms.Control.GetPreferredSize%2A> method returns last value assigned to the <xref:System.Windows.Forms.Control.Size%2A> property. | This means that setting <xref:System.Windows.Forms.Control.AutoSize%2A> to `true` will have no effect. |
 | A control in a <xref:System.Windows.Forms.TableLayoutPanel> cell always shrinks to fit in the cell until its <xref:System.Windows.Forms.Control.MinimumSize%2A> is reached. | This size is enforced as a maximum size. This is not the case when the cell is part of an <xref:System.Windows.Forms.SizeType.AutoSize> row or column. |
 
+#### AutoSizeMode property
+
+The <xref:System.Windows.Forms.AutoSizeMode> property provides more fine-grained control over the default <xref:System.Windows.Forms.Control.AutoSize%2A> behavior. The `AutoSizeMode` property specifies how a control sizes itself to its content. The content, for example, could be the text for a <xref:System.Windows.Forms.Button> control or the child controls for a container.
+
+The following list shows the `AutoSizeMode` values and its behavior.
+
+- <xref:System.Windows.Forms.AutoSizeMode.GrowAndShrink?displayProperty=nameWithType>
+
+  The control grows or shrinks to encompass its contents.
+
+  The <xref:System.Windows.Forms.Control.MinimumSize%2A> and <xref:System.Windows.Forms.Control.MaximumSize%2A> values are honored, but the current value of the <xref:System.Windows.Forms.Control.Size%2A> property is ignored.
+
+  This is the same behavior as controls with the <xref:System.Windows.Forms.Control.AutoSize%2A> property and no `AutoSizeMode` property.
+
+- <xref:System.Windows.Forms.AutoSizeMode.GrowOnly?displayProperty=nameWithType>
+
+  The control grows as much as necessary to encompass its contents, but it will not shrink smaller than the value specified by its <xref:System.Windows.Forms.Control.Size%2A> property.
+
+  This is the default value for `AutoSizeMode`.
+
+#### Controls that support the AutoSize property
+
+The following table describes the level of auto sizing support by control:
+
+| Control                                      | `AutoSize` supported | `AutoSizeMode` supported |
+|----------------------------------------------|----------------------|--------------------------|
+| <xref:System.Windows.Forms.Button>           | ✔️                  | ✔️                       |
+| <xref:System.Windows.Forms.CheckedListBox>   | ✔️                  | ✔️                       |
+| <xref:System.Windows.Forms.FlowLayoutPanel>  | ✔️                  | ✔️                       |
+| <xref:System.Windows.Forms.Form>             | ✔️                  | ✔️                       |
+| <xref:System.Windows.Forms.GroupBox>         | ✔️                  | ✔️                       |
+| <xref:System.Windows.Forms.Panel>            | ✔️                  | ✔️                       |
+| <xref:System.Windows.Forms.TableLayoutPanel> | ✔️                  | ✔️                       |
+| <xref:System.Windows.Forms.CheckBox>         | ✔️                  | ❌                        |
+| <xref:System.Windows.Forms.DomainUpDown>     | ✔️                  | ❌                        |
+| <xref:System.Windows.Forms.Label>            | ✔️                  | ❌                        |
+| <xref:System.Windows.Forms.LinkLabel>        | ✔️                  | ❌                        |
+| <xref:System.Windows.Forms.MaskedTextBox>    | ✔️                  | ❌                        |
+| <xref:System.Windows.Forms.NumericUpDown>    | ✔️                  | ❌                        |
+| <xref:System.Windows.Forms.RadioButton>      | ✔️                  | ❌                        |
+| <xref:System.Windows.Forms.TextBox>          | ✔️                  | ❌                        |
+| <xref:System.Windows.Forms.TrackBar>         | ✔️                  | ❌                        |
+| <xref:System.Windows.Forms.CheckedListBox>   | ❌                   | ❌                        |
+| <xref:System.Windows.Forms.ComboBox>         | ❌                   | ❌                        |
+| <xref:System.Windows.Forms.DataGridView>     | ❌                   | ❌                        |
+| <xref:System.Windows.Forms.DateTimePicker>   | ❌                   | ❌                        |
+| <xref:System.Windows.Forms.ListBox>          | ❌                   | ❌                        |
+| <xref:System.Windows.Forms.ListView>         | ❌                   | ❌                        |
+| <xref:System.Windows.Forms.MaskedTextBox>    | ❌                   | ❌                        |
+| <xref:System.Windows.Forms.MonthCalendar>    | ❌                   | ❌                        |
+| <xref:System.Windows.Forms.ProgressBar>      | ❌                   | ❌                        |
+| <xref:System.Windows.Forms.PropertyGrid>     | ❌                   | ❌                        |
+| <xref:System.Windows.Forms.RichTextBox>      | ❌                   | ❌                        |
+| <xref:System.Windows.Forms.SplitContainer>   | ❌                   | ❌                        |
+| <xref:System.Windows.Forms.TabControl>       | ❌                   | ❌                        |
+| <xref:System.Windows.Forms.TabPage>          | ❌                   | ❌                        |
+| <xref:System.Windows.Forms.TreeView>         | ❌                   | ❌                        |
+| <xref:System.Windows.Forms.WebBrowser>       | ❌                   | ❌                        |
+| <xref:System.Windows.Forms.ScrollBar>        | ❌                   | ❌                        |
+
+#### AutoSize in the design environment
+
+The following table describes the sizing behavior of a control at design time, based on the value of its <xref:System.Windows.Forms.Control.AutoSize%2A> and `AutoSizeMode` properties.
+
+Override the <xref:System.Windows.Forms.Design.ControlDesigner.SelectionRules%2A> property to determine whether a given control is in a user-resizable state. In the following table, "can't" means <xref:System.Windows.Forms.Design.SelectionRules.Moveable> only, "can" means <xref:System.Windows.Forms.Design.SelectionRules.AllSizeable> and <xref:System.Windows.Forms.Design.SelectionRules.Moveable>.
+
+| `AutoSize` setting | `AutoSizeMode` setting                                 | Behavior |
+|--------------------|--------------------------------------------------------|----------|
+| `true`             | Property not available.                                | The user can't resize the control at design time, except for the following controls:<br /><br /> -   <xref:System.Windows.Forms.TextBox><br />-   <xref:System.Windows.Forms.MaskedTextBox><br />-   <xref:System.Windows.Forms.RichTextBox><br />-   <xref:System.Windows.Forms.TrackBar> |
+| `true`             | <xref:System.Windows.Forms.AutoSizeMode.GrowAndShrink> | The user can't resize the control at design time.                                                                                                                                                                                                                                          |
+| `true`             | <xref:System.Windows.Forms.AutoSizeMode.GrowOnly>      | The user can resize the control at design time. When the <xref:System.Windows.Forms.Control.Size%2A> property is set, the user can only increase the size of the control.                                                                                                                   |
+| `false` or `AutoSize` is hidden | Not applicable.                           | User can resize the control at design time.                                                                                                                                                                                                                                                 |
+
+> [!NOTE]
+> To maximize productivity, the Windows Forms Designer in Visual Studio shadows the <xref:System.Windows.Forms.Control.AutoSize%2A> property for the <xref:System.Windows.Forms.Form> class. At design time, the form behaves as though the <xref:System.Windows.Forms.Control.AutoSize%2A> property is set to `false`, regardless of its actual setting. At runtime, no special accommodation is made, and the <xref:System.Windows.Forms.Control.AutoSize%2A> property is applied as specified by the property setting.
+
 ## Container: Form
 
 The <xref:System.Windows.Forms.Form> is the main object of Windows Forms. A Windows Forms application will usually have a form displayed at all times. Forms contain controls and respect  the <xref:System.Windows.Forms.Control.Location> and <xref:System.Windows.Forms.Control.Size> properties of the control for manual placement. Forms also respond to the [Dock](#dock) property for automatic placement.
