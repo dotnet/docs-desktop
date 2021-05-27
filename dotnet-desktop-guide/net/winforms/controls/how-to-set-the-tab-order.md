@@ -58,7 +58,7 @@ Visual Studio has a Tab Order tool which works in the Visual Designer. Once star
 
 ## Programmatic
 
-01. Set the <xref:System.Windows.Forms.Control.TabIndex%2A> property to a numerical value.
+01. Set the `TabIndex` property to a numerical value.
 
     ```vb
     Button1.TabIndex = 1
@@ -85,13 +85,15 @@ You can prevent a control from receiving focus when the <kbd>Tab</kbd> key is pr
 
 ### Set TabStop in code
 
-```csharp
-Button1.TabStop = false;
-```
-
-```vb
-Button1.TabStop = False
-```
+01. Set the `TabStop` property to `false`.
+    
+    ```csharp
+    Button1.TabStop = false;
+    ```
+    
+    ```vb
+    Button1.TabStop = False
+    ```
 
 ## See also
 
