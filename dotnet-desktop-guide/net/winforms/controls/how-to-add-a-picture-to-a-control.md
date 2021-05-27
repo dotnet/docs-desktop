@@ -50,6 +50,6 @@ PictureBox1.Image = Image.FromFile _
 
 ## See also
 
-- <xref:System.Drawing.Image.FromFile%2A>
-- <xref:System.Drawing.Image>
-- <xref:System.Windows.Forms.Control.BackgroundImage%2A>
+- <xref:System.Drawing.Image.FromFile%2A?displayProperty=fullName>
+- <xref:System.Drawing.Image?displayProperty=fullName>
+- <xref:System.Windows.Forms.Control.BackgroundImage%2A?displayProperty=fullName>
