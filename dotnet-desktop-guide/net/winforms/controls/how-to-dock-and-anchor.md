@@ -54,11 +54,11 @@ Use the Visual Studio designer **Properties** window to set the docking mode of 
 
 01. Select the control in the designer.
 
-01. In the **Properties** window, press the arrow to the right of the **Dock** property.
+01. In the **Properties** window, select the arrow to the right of the **Dock** property.
 
     :::image type="content" source="media/how-to-dock-and-anchor/vs-dock-property.png" alt-text="Visual Studio Properties pane for .NET Windows Forms with Dock property shown.":::
 
-01. Press the button that represents the edge of the container where you want to dock the control. To fill the contents of the control's form or container control, press the center box. Press **(none)** to disable docking.
+01. Select the button that represents the edge of the container where you want to dock the control. To fill the contents of the control's form or container control, press the center box. Press **(none)** to disable docking.
 
     :::image type="content" source="media/how-to-dock-and-anchor/vs-dock-property-expanded.png" alt-text="Visual Studio Properties pane for .NET Windows Forms with Dock property expanded.":::
 
@@ -66,7 +66,7 @@ Use the Visual Studio designer **Properties** window to set the docking mode of 
 
 ### Set Dock programmatically
 
-01. Set the `Dock` property on a control. In this example, a button is docked to the right-side of its container:
+01. Set the `Dock` property on a control. In this example, a button is docked to the right side of its container:
 
     ```csharp
     button1.Dock = DockStyle.Right;
@@ -91,11 +91,11 @@ Use the Visual Studio designer **Properties** window to set the anchored edges o
 
 01. Select the control in the designer.
 
-01. In the **Properties** window, press the arrow to the right of the **Anchor** property.
+01. In the **Properties** window, select the arrow to the right of the **Anchor** property.
 
     :::image type="content" source="media/how-to-dock-and-anchor/vs-anchor-property.png" alt-text="Visual Studio Properties pane for .NET Windows Forms with Anchor property shown.":::
 
-01. To set or unset an anchor, press the top, left, right, or bottom arm of the cross.
+01. To set or unset an anchor, select the top, left, right, or bottom arm of the cross.
 
     :::image type="content" source="media/how-to-dock-and-anchor/vs-anchor-property-expanded.png" alt-text="Visual Studio Properties pane for .NET Windows Forms with Anchor property expanded.":::
 

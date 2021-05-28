@@ -158,7 +158,7 @@ The following table describes the level of auto sizing support by control:
 
 The following table describes the sizing behavior of a control at design time, based on the value of its <xref:System.Windows.Forms.Control.AutoSize%2A> and `AutoSizeMode` properties.
 
-Override the <xref:System.Windows.Forms.Design.ControlDesigner.SelectionRules%2A> property to determine whether a given control is in a user-resizable state. In the following table, "can't" means <xref:System.Windows.Forms.Design.SelectionRules.Moveable> only, "can" means <xref:System.Windows.Forms.Design.SelectionRules.AllSizeable> and <xref:System.Windows.Forms.Design.SelectionRules.Moveable>.
+Override the <xref:System.Windows.Forms.Design.ControlDesigner.SelectionRules%2A> property to determine whether a given control is in a user-resizable state. In the following table, "can't resize" means <xref:System.Windows.Forms.Design.SelectionRules.Moveable> only, "can resize" means <xref:System.Windows.Forms.Design.SelectionRules.AllSizeable> and <xref:System.Windows.Forms.Design.SelectionRules.Moveable>.
 
 | `AutoSize` setting | `AutoSizeMode` setting                                 | Behavior |
 |--------------------|--------------------------------------------------------|----------|
