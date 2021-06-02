@@ -399,6 +399,30 @@
     {
       "source_path": "dotnet-desktop-guide/framework/winforms/controls/how-to-set-the-tab-order.md",
       "redirect_url": "/dotnet/desktop/winforms/controls/how-to-set-the-tab-order-on-windows-forms?view=netframeworkdesktop-4.8"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/net/winforms/controls/index.md",
+      "redirect_url": "/dotnet/desktop/winforms/controls/overview?view=netdesktop-5.0"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/framework/winforms/controls/overview.md",
+      "redirect_url": "/dotnet/desktop/winforms/controls/index?view=netframeworkdesktop-4.8"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/net/winforms/controls/autosize-property-overview.md",
+      "redirect_url": "/dotnet/desktop/winforms/controls/layout?view=netdesktop-5.0#automatic-sizing"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/net/winforms/controls/how-to-anchor-controls-on-windows-forms.md",
+      "redirect_url": "/dotnet/desktop/winforms/controls/how-to-dock-and-anchor?view=netdesktop-5.0"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/framework/winforms/controls/how-to-dock-and-anchor.md",
+      "redirect_url": "/dotnet/desktop/winforms/controls/how-to-anchor-controls-on-windows-forms?view=netframeworkdesktop-4.8"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/net/winforms/controls/how-to-dock-controls-on-windows-forms.md",
+      "redirect_url": "/dotnet/desktop/winforms/controls/how-to-dock-and-anchor?view=netdesktop-5.0"
     }
   ]
 }
