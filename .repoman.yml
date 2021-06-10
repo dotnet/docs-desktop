@@ -9,8 +9,9 @@ config:
 
     ParserRegex: "^\\* (.*): (.*)$"
 
-
 issues:
+
+  unlabeled: "labeled"
 
   labeled:
 
