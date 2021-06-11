@@ -1,5 +1,6 @@
 {
     "ignore":[
-        "dotnet-desktop-guide/samples/**/*.*"
+        "dotnet-desktop-guide/samples/**/*.*",
+        "dotnet-desktop-guide/framework/**/*.*"
     ]
 }
