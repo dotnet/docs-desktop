@@ -19,7 +19,7 @@ As an implementer of a value converter, you often need access to some type of co
 ```csharp
 public override object ProvideValue(IServiceProvider serviceProvider)
 {
-...
+//...
     // Get the IXamlTypeResolver from the service provider
     if (serviceProvider == null)
     {
@@ -27,10 +27,10 @@ public override object ProvideValue(IServiceProvider serviceProvider)
     }
     IXamlTypeResolver xamlTypeResolver = serviceProvider.GetService(typeof(IXamlTypeResolver)) as IXamlTypeResolver;
     if (xamlTypeResolver == null)
-   {
-        throw new ArgumentException("IXamlTypeResolver"));
+    {
+        throw new ArgumentException("IXamlTypeResolver");
     }
-...
+//...
 }
 ```
 
