@@ -23,7 +23,7 @@
               <Border.BorderBrush>
                 <SolidColorBrush Color="{DynamicResource BorderMediumColor}" />
               </Border.BorderBrush>
-              <ScrollContentPresenter />
+              <ScrollContentPresenter CanContentScroll="{TemplateBinding CanContentScroll}" />
             </Border>
             <ScrollBar x:Name="PART_VerticalScrollBar"
                        Value="{TemplateBinding VerticalOffset}"
