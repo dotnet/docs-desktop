@@ -124,8 +124,8 @@ Now you are ready to debug your custom control as it runs in design mode. When y
 
 3. In the new instance of Visual Studio, open the "DebuggingExample" solution. You can easily find the solution by selecting **Recent Projects** from the **File** menu. The "DebuggingExample.sln" solution file will be listed as the most recently used file.
 
-   > ![IMPORTANT]
-   > If you're debugging a .NET 5 or later (including .NET Core), attach this instance of Visual Studio to the *DesignToolsServer.exe* process. Select the **Debug** > **Attach to process** menu item. Find *DesignToolsServer.exe* in the list of processes and press **Attach**.
+   > [!IMPORTANT]
+   > If you're debugging a .NET 5 (.NET Core 3.1) or later, use this instance of Visual Studio to attach a debugger to the the *DesignToolsServer.exe* process. Select the **Debug** > **Attach to process** menu item. Find *DesignToolsServer.exe* in the list of processes and press **Attach**.
 
 4. Open Form1 in the **Forms Designer** and select the **DebugControl** control.
 
