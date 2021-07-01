@@ -51,7 +51,7 @@ landingContent:
           - text: Open a common dialog box
             url: windows/how-to-open-common-system-dialog-box.md
           - text: Get or set the main app window
-            url: windows/how-to-open-common-system-dialog-box.md
+            url: windows/how-to-get-set-main-application-window.md
 
   - title: Control styles and templates
     linkLists:
