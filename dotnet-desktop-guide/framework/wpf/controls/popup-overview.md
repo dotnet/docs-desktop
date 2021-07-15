@@ -1,7 +1,7 @@
 ---
 title: "Popup Overview"
 description: Learn about the Windows Presentation Foundation Popup control, which provides a way to display content in a window that floats over the current application.
-ms.date: "03/30/2017"
+ms.date: "07/14/2021"
 helpviewer_keywords: 
   - "controls [WPF], Popup"
   - "Popup control [WPF], about Popup control"
@@ -19,12 +19,11 @@ The <xref:System.Windows.Controls.Primitives.Popup> control provides a way to di
   
 <a name="APopupExample"></a>
 ## Creating a Popup  
- The following example shows how to define a <xref:System.Windows.Controls.Primitives.Popup> control that is the child element of a <xref:System.Windows.Controls.Button> control. Because a <xref:System.Windows.Controls.Button> can have only one child element, this example places the text for the <xref:System.Windows.Controls.Button> and the <xref:System.Windows.Controls.Primitives.Popup> controls in a <xref:System.Windows.Controls.StackPanel>. The content of the <xref:System.Windows.Controls.Primitives.Popup> appears in a <xref:System.Windows.Controls.TextBlock> control, which displays its text in a separate window that floats over the application window near the related <xref:System.Windows.Controls.Button> control.  
+
+The following example shows how to define a <xref:System.Windows.Controls.Primitives.Popup> control that is the child element of a <xref:System.Windows.Controls.ToggleButton> control. Because a `ToggleButton` can have only one child element, this example places the text for the `ToggleButton` and the `Popup` controls in a <xref:System.Windows.Controls.StackPanel>. The content of the `Popup` is displayed in a separate window that floats over the application window near the related `ToggleButton` control.  
   
- [!code-xaml[PopupSimple#1](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupSimple/CSharp/Window1.xaml#1)]  
-  
- [!code-xaml[PopupSimple#CreatePopupCodeXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/PopupSimple/CSharp/Window1.xaml#createpopupcodexaml)]  
-  
+:::code language="xaml" source="snippets/popup-overview/csharp/Window1.xaml" id="ToggleButtonCodeless":::
+
 <a name="PopupUses"></a>
 ## Controls That Implement a Popup  
  You can build <xref:System.Windows.Controls.Primitives.Popup> controls into other controls. The following controls implement the <xref:System.Windows.Controls.Primitives.Popup> control for specific uses:  
