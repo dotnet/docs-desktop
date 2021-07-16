@@ -36,20 +36,20 @@ namespace Popup_Properties_Sample
         }
         //</SnippetIsFocused>
 
-        //<SnippetCreatePopupCode>
+        //<CreatePopup>
         private void CreatePopup(object sender, RoutedEventArgs e)
         {
-            //<SnippetCreatePopup>
             Popup codePopup = new Popup();
-            TextBlock popupText = new TextBlock();
-            popupText.Text = "Popup Text";
-            popupText.Background = Brushes.LightBlue;
-            popupText.Foreground = Brushes.Blue;
+            TextBlock popupText = new()
+            {
+                Text = "Popup Text",
+                Background = Brushes.LightBlue,
+                Foreground = Brushes.Blue
+            };
             codePopup.Child = popupText;
-            //</SnippetCreatePopup>
-            aStackPanel.Children.Add(codePopup);
+            ButtonContentContainer.Children.Add(codePopup);
             codePopup.IsOpen = true;
         }
-        //</SnippetCreatePopupCode>
+        //</CreatePopup>
     }
 }
