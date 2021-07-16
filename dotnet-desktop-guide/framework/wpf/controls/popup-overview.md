@@ -20,7 +20,7 @@ The <xref:System.Windows.Controls.Primitives.Popup> control provides a way to di
 <a name="APopupExample"></a>
 ## Creating a Popup  
 
-The following example shows how to define a <xref:System.Windows.Controls.Primitives.Popup> control that is the child element of a <xref:System.Windows.Controls.ToggleButton> control. Because a `ToggleButton` can have only one child element, this example places the text for the `ToggleButton` and the `Popup` controls in a <xref:System.Windows.Controls.StackPanel>. The content of the `Popup` is displayed in a separate window that floats over the application window near the related `ToggleButton` control.  
+The following example shows how to define a <xref:System.Windows.Controls.Primitives.Popup> control that is the child element of a <xref:System.Windows.Controls.Primitives.ToggleButton> control. Because a `ToggleButton` can have only one child element, this example places the text for the `ToggleButton` and the `Popup` controls in a <xref:System.Windows.Controls.StackPanel>. The content of the `Popup` is displayed in a separate window that floats over the application window near the related `ToggleButton` control.  
   
 :::code language="xaml" source="snippets/popup-overview/csharp/Window1.xaml" id="ToggleButtonCodeless":::
 
