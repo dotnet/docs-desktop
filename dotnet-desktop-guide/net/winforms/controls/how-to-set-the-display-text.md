@@ -37,7 +37,7 @@ You can also set the text by using the [designer](#designer).
 
     :::image type="content" source="media/how-to-set-the-text-displayed-by-a-windows-forms-control/properties-text.png" alt-text="Visual Studio Properties pane for .NET Windows Forms with Text property shown.":::
 
-01. In the **Properties** window, select the ellipsis button (![Ellipsis button (...) in the Properties window of Visual Studio](../media/visual-studio-ellipsis-button.png)) next to the **Font** property.
+01. In the **Properties** window, select the ellipsis button (:::image type="icon" source="../media/shared/visual-studio-ellipsis-button.png" border="false":::) next to the **Font** property.
 
     :::image type="content" source="media/how-to-set-the-text-displayed-by-a-windows-forms-control/properties-font.png" alt-text="Visual Studio Properties pane for .NET Windows Forms with Font property shown.":::
 

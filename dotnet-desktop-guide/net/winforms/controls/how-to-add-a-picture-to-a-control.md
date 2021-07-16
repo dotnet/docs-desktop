@@ -21,7 +21,7 @@ Several Windows Forms controls can display images. These images can be icons tha
 
 ## Designer
 
-In the **Properties** window of Visual Studio, select the **Image** or **BackgroundImage** property of the control, and then select the ellipsis (![Ellipsis button in Visual Studio](../media/visual-studio-ellipsis-button.png)) to display the **Select Resource** dialog box and then select the image you want to display.
+In the **Properties** window of Visual Studio, select the **Image** or **BackgroundImage** property of the control, and then select the ellipsis (:::image type="icon" source="../media/shared/visual-studio-ellipsis-button.png" border="false":::) to display the **Select Resource** dialog box and then select the image you want to display.
 
 :::image type="content" source="media/how-to-add-a-picture-to-a-control/properties-image.png" alt-text="Properties dialog with image property selected":::
 
