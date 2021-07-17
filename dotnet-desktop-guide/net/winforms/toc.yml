@@ -35,6 +35,8 @@ items:
     href: controls/layout.md
   - name: Labels
     href: controls/labels.md
+  - name: Events
+    href: controls/events.md
   - name: Custom controls
     href: controls/custom.md
   - name: Custom painting and drawing
@@ -55,6 +57,8 @@ items:
       href: controls/how-to-dock-and-anchor.md
     - name: Set the image displayed by a control
       href: controls/how-to-add-a-picture-to-a-control.md
+    - name: Add or remove event handlers
+      href: controls/how-to-add-an-event-handler.md
 - name: User input - keyboard
   items:
   - name: Overview
