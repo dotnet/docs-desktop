@@ -25,7 +25,7 @@ Controls provide events that are raised when the user interacts with the control
 
 ## Common events
 
-Controls provide a set of common events through the base class: <xref:System.Windows.Forms.Control>. Not every control responds to every event. For example, the <xref:System.Windows.Forms.Label> control doesn't respond to keyboard input, so the <xref:System.Windows.Forms.Control.PreviewKeyDown?displayProperty=nameWithType> event isn't raised. The majority of shared events fall under these categories:
+Controls provide a set of common events through the base class: <xref:System.Windows.Forms.Control>. Not every control responds to every event. For example, the <xref:System.Windows.Forms.Label> control doesn't respond to keyboard input, so the <xref:System.Windows.Forms.Control.PreviewKeyDown?displayProperty=nameWithType> event isn't raised. Most shared events fall under these categories:
 
 - Mouse events
 - Keyboard events
@@ -67,7 +67,7 @@ This pattern implements the following rules, using the property `FirstName` as a
 
 - Name your property: `FirstName`.
 - Create an event for the property using the pattern `PropertyNameChanged`: `FirstNameChanged`.
-- Create a private or protected ( in Visual Basic) method using the pattern `OnPropertyNameChanged`: `OnFirstNameChanged`.
+- Create a private or protected method using the pattern `OnPropertyNameChanged`: `OnFirstNameChanged`.
 
 If the `FirstName` property set modifies the backing value, the `OnFirstNameChanged` method is called. The `OnFirstNameChanged` method raises the `FirstNameChanged` event.
 
