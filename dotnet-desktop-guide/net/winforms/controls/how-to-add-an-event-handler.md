@@ -20,26 +20,24 @@ helpviewer_keywords:
 
 # How to handle an event (Windows Forms .NET)
 
-Events for controls (and for forms) are generally set through the Visual Studio Visual Designer for Windows Forms. Setting an event through the Visual Designer is known as handling an event at design-time. You can also handle events dynamically in code, known as handling events at run-time.
-
-In addition to handling events using the Windows Forms Designer in Visual Studio, you can also create an event handler at run-time. An event created at run-time allows you to connect event handlers dynamically based on what your app is currently doing.
+Events for controls (and for forms) are generally set through the Visual Studio Visual Designer for Windows Forms. Setting an event through the Visual Designer is known as handling an event at design-time. You can also handle events dynamically in code, known as handling events at run-time. An event created at run-time allows you to connect event handlers dynamically based on what your app is currently doing.
 
 [!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
 
-## Designer
+## Handle an event - designer
 
 In Visual Studio, use the Visual Designer to manage handlers for control events. The Visual Designer will generate the handler code and add it to the event for you.
 
 ### Set the handler
 
-Use the **Properties** toolbox to add or set the handler of an event:
+Use the **Properties** pane to add or set the handler of an event:
 
 01. Open the Visual Designer of the form containing the control to change.
 01. Select the control.
-01. Change the **Properties** toolbox mode to **Events** by pressing the events button (:::image type="icon" source="../media/shared/visual-studio-events-button.png" border="false":::).
+01. Change the **Properties** pane mode to **Events** by pressing the events button (:::image type="icon" source="../media/shared/visual-studio-events-button.png" border="false":::).
 01. Find the event you want to add a handler to, for example, the **Click** event:
 
-    :::image type="content" source="media/how-to-add-an-event-handler/visual-studio-properties-events-click.png" alt-text="Visual Studio properties toolbox shown with the events mode enabled and the click event.":::
+    :::image type="content" source="media/how-to-add-an-event-handler/visual-studio-properties-events-click.png" alt-text="Visual Studio properties pane shown with the events mode enabled and the click event.":::
 
 01. Do one of the following:
 
@@ -51,18 +49,18 @@ Use the **Properties** toolbox to add or set the handler of an event:
 
 ### Clear the handler
 
-To remove an event handler, you can't just delete handler code that is in the form's code-behind file, it's still referenced by the event. Use the **Properties** toolbox to remove the handler of an event:
+To remove an event handler, you can't just delete handler code that is in the form's code-behind file, it's still referenced by the event. Use the **Properties** pane to remove the handler of an event:
 
 01. Open the Visual Designer of the form containing the control to change.
 01. Select the control.
-01. Change the **Properties** toolbox mode to **Events** by pressing the events button (:::image type="icon" source="../media/shared/visual-studio-events-button.png" border="false":::).
+01. Change the **Properties** pane mode to **Events** by pressing the events button (:::image type="icon" source="../media/shared/visual-studio-events-button.png" border="false":::).
 01. Find the event containing the handler you want to remove, for example, the **Click** event:
 
-    :::image type="content" source="media/how-to-add-an-event-handler/visual-studio-properties-events-click.png" alt-text="Visual Studio properties toolbox shown with the events mode enabled and the click event.":::
+    :::image type="content" source="media/how-to-add-an-event-handler/visual-studio-properties-events-click.png" alt-text="Visual Studio properties pane shown with the events mode enabled and the click event.":::
 
 01. Right-click on the event and choose **Reset**.
 
-## Programmatic
+## Handle an event - code
 
 You typically add event handlers to controls at design-time through the Visual Designer. You can, though, create controls at run-time, which requires you to add event handlers in code. Adding handlers in code also gives you the chance to add multiple handlers to the same event.
 
@@ -76,7 +74,7 @@ The following example shows how to create a control and add an event handler. Th
 To run this code, do the following to a form with the Visual Studio Visual Designer:
 
 01. Add a new button to the form and name it **Button1**.
-01. Change the **Properties** toolbox mode to **Events** by pressing the event button (:::image type="icon" source="../media/shared/visual-studio-events-button.png" border="false":::).
+01. Change the **Properties** pane mode to **Events** by pressing the event button (:::image type="icon" source="../media/shared/visual-studio-events-button.png" border="false":::).
 01. Double-click the **Click** event to generate a handler. This action opens the code window and generates a blank `Button1_Click` method.
 01. Replace the method code with the previous code above.
 
@@ -97,13 +95,15 @@ For more information about Visual Basic events, see [Events (Visual Basic)](/dot
 
 ## How to use multiple events with the same handler
 
-With the Visual Studio Visual Designer's **Properties** toolbox, you can select the same handler already in use by a different event. Follow the directions in the [Set the handler](#set-the-handler) section to select an existing handler instead of creating a new one.
+With the Visual Studio Visual Designer's **Properties** pane, you can select the same handler already in use by a different event. Follow the directions in the [Set the handler](#set-the-handler) section to select an existing handler instead of creating a new one.
 
 In C#, the handler is attached to a control's event in the form's designer code, which changed through the Visual Designer. For more information about C# events, see [Events (C#)](/dotnet/csharp/programming-guide/events/)
 
+### Visual Basic
+
 In Visual Basic, the handler is attached to a control's event in the form's code-behind file, where the event handler code is declared. Multiple `Handles` keywords can be added to the event handler code to use it with multiple events. The Visual Designer will generate the `Handles` keyword for you and add it to the event handler. However, you can easily do this yourself to any control's event and event handler, as long as the signature of the handler method matches the event. For more information about Visual Basic events, see [Events (Visual Basic)](/dotnet/visual-basic/programming-guide/language-features/events/)
 
-The following code is for Visual Basic. If you're viewing this article in C# language mode, you may not see the code below. This code demonstrates how the same method can be used as a handler for two different [`Button.Click`](xref:System.Windows.Forms.Control.Click) events:
+This code demonstrates how the same method can be used as a handler for two different [`Button.Click`](xref:System.Windows.Forms.Control.Click) events:
 
 :::code language="vb" source="snippets/how-to-add-an-event-handler/vb/Form2.vb" id="MultipleHandlers":::
 
