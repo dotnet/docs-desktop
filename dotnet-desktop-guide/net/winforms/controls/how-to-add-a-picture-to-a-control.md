@@ -19,15 +19,20 @@ Several Windows Forms controls can display images. These images can be icons tha
 
 [!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
 
-## Designer
+## Display an image - designer
 
-In the **Properties** window of Visual Studio, select the **Image** or **BackgroundImage** property of the control, and then select the ellipsis (![Ellipsis button in Visual Studio](../media/visual-studio-ellipsis-button.png)) to display the **Select Resource** dialog box and then select the image you want to display.
+In Visual Studio, use the Visual Designer to display an image.
 
-:::image type="content" source="media/how-to-add-a-picture-to-a-control/properties-image.png" alt-text="Properties dialog with image property selected":::
+01. Open the Visual Designer of the form containing the control to change.
+01. Select the control.
+01. In the **Properties** pane, select the **Image** or **BackgroundImage** property of the control.
+01. Select the ellipsis (:::image type="icon" source="../media/shared/visual-studio-ellipsis-button.png" border="false":::) to display the **Select Resource** dialog box and then select the image you want to display.
 
-## Programmatic
+    :::image type="content" source="media/how-to-add-a-picture-to-a-control/properties-image.png" alt-text="Properties dialog with image property selected":::
 
-Set the control's `Image` or `BackgroundImage` property to an object of type <xref:System.Drawing.Image>. Generally, you'll be loading the image from a file by using the <xref:System.Drawing.Image.FromFile%2A> method.
+## Display an image - code
+
+Set the control's `Image` or `BackgroundImage` property to an object of type <xref:System.Drawing.Image>. Generally, you'll load the image from a file by using the <xref:System.Drawing.Image.FromFile%2A> method.
 
 In the following code example, the path set for the location of the image is the **My Pictures** folder. Most computers running the Windows operating system include this directory. This also enables users with minimal system access levels to run the application safely. The following code example requires that you already have a form with a <xref:System.Windows.Forms.PictureBox> control added.
 
