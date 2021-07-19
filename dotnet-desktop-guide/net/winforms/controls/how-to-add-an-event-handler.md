@@ -70,8 +70,8 @@ You typically add event handlers to controls at design-time through the Visual D
 
 The following example shows how to create a control and add an event handler. This control is created in the [`Button.Click`](xref:System.Windows.Forms.Control.Click) event handler a different button. When **Button1** is pressed. The code moves and sizes a new button. The new button's `Click` event is handled by the `MyNewButton_Click` method. To get the new button to appear, it's added to the form's `Controls` collection. There's also code to remove the `Button1.Click` event's handler, this is discussed in the [Remove the handler](#remove-the-handler) section.
 
-:::code language="csharp" source="snippets/how-to-add-an-event-handler/cs/Form1.cs" id="HandlerViaCode":::
-:::code language="vb" source="snippets/how-to-add-an-event-handler/vb/Form1.vb" id="HandlerViaCode":::
+:::code language="csharp" source="snippets/how-to-add-an-event-handler/cs/Form1.cs" id="HandlerViaCode" highlight="12":::
+:::code language="vb" source="snippets/how-to-add-an-event-handler/vb/Form1.vb" id="HandlerViaCode" highlight="8":::
 
 To run this code, do the following to a form with the Visual Studio Visual Designer:
 
@@ -95,7 +95,7 @@ This syntax can be used to remove any event handler from any event.
 For more information about C# events, see [Events (C#)](/dotnet/csharp/programming-guide/events/)
 For more information about Visual Basic events, see [Events (Visual Basic)](/dotnet/visual-basic/programming-guide/language-features/events/)
 
-## How to use multiple events with the same event handler
+## How to use multiple events with the same handler
 
 With the Visual Studio Visual Designer's **Properties** toolbox, you can select the same handler already in use by a different event. Follow the directions in the [Set the handler](#set-the-handler) section to select an existing handler instead of creating a new one.
 

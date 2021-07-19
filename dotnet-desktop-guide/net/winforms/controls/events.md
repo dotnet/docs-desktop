@@ -19,9 +19,11 @@ helpviewer_keywords:
 
 # Control events (Windows Forms .NET)
 
-Controls provide events that are raised when the user interacts with the control or when the state of the control changes. This article describes the common events shared by most controls, events raised by user interaction, and events unique to specific controls. For more information about events in Windows Forms, see [Events overview (Windows Forms .NET)](../forms/events.md) and [Handling and raising events](/dotnet/standard/events/index).
+Controls provide events that are raised when the user interacts with the control or when the state of the control changes. This article describes the common events shared by most controls, events raised by user interaction, and events unique to specific controls. For more information about events in Windows Forms, see [Events overview](../forms/events.md) and [Handling and raising events](/dotnet/standard/events/index).
 
 [!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
+
+For more information about how to add or remove a control event handler, see [How to handle an event](how-to-add-an-event-handler.md).
 
 ## Common events
 
