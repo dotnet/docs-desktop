@@ -423,6 +423,18 @@
     {
       "source_path": "dotnet-desktop-guide/net/winforms/controls/how-to-dock-controls-on-windows-forms.md",
       "redirect_url": "/dotnet/desktop/winforms/controls/how-to-dock-and-anchor?view=netdesktop-5.0"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/net/winforms/how-to-create-event-handlers-at-run-time-for-windows-forms.md",
+      "redirect_url": "/dotnet/desktop/winforms/controls/how-to-add-an-event-handler?view=netdesktop-5.0"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/framework/winforms/controls/how-to-add-an-event-handler.md",
+      "redirect_url": "/dotnet/desktop/winforms/how-to-create-event-handlers-at-run-time-for-windows-forms?view=netframeworkdesktop-4.8"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/net/winforms/how-to-connect-multiple-events-to-a-single-event-handler-in-windows-forms.md",
+      "redirect_url": "/dotnet/desktop/winforms/controls/how-to-add-an-event-handler?view=netdesktop-5.0#how-to-use-multiple-events-with-the-same-handler"
     }
   ]
 }
