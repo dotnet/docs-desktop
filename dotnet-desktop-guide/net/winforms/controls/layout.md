@@ -1,7 +1,7 @@
 ---
 title: Control layout options
 description: Learn about the different settings on a control that affect layout and positioning in Windows Forms for .NET. Learn about the different types of control containers that affect layout.
-ms.date: 10/26/2020
+ms.date: 07/19/2021
 ms.topic: overview
 helpviewer_keywords: 
   - "forms [Windows Forms], aligning controls"
@@ -35,6 +35,22 @@ The position a control appears on a parent is determined by the value of the <xr
 When a control is added to a parent that enforces automatic placement, the position and size of the control is changed. In this case, the position and size of the control may not be manually adjusted, depending on the type of parent.
 
 The <xref:System.Windows.Forms.Control.MaximumSize%2A> and <xref:System.Windows.Forms.Control.MinimumSize%2A> properties help set the minimum and maximum space a control can use.
+
+## Margin and Padding
+
+There are two control properties that help with precise placement of controls: <xref:System.Windows.Forms.Control.Margin%2A> and <xref:System.Windows.Forms.Control.Padding%2A>.
+
+The <xref:System.Windows.Forms.Control.Margin%2A> property defines the space around the control that keeps other controls a specified distance from the control's borders.
+
+The <xref:System.Windows.Forms.Control.Padding%2A> property defines the space in the interior of a control that keeps the control's content (for example, the value of its <xref:System.Windows.Forms.Control.Text%2A> property) a specified distance from the control's borders.
+
+The following figure shows the <xref:System.Windows.Forms.Control.Padding%2A> and <xref:System.Windows.Forms.Control.Margin%2A> properties on a control.
+
+:::image type="content" source="media/layout/margin-padding.png" alt-text="Padding and Margin properties for Windows Forms Controls":::
+
+The Visual Studio Designer will respect these properties when you're positioning and resizing controls. Snaplines appear as guides to help you remain outside the specified margin of a control. For example, Visual Studio displays the snapline when you drag a control next to another control:
+
+:::image type="content" source="media/layout/margins.gif" alt-text="Animated image demonstrating the snaplines with margin properties for Windows Forms .NET in Visual Studio":::
 
 ## Automatic placement and size
 
