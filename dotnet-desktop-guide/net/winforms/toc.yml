@@ -59,6 +59,8 @@ items:
       href: controls/how-to-add-a-picture-to-a-control.md
     - name: Add or remove event handlers
       href: controls/how-to-add-an-event-handler.md
+    - name: Make thread-safe calls to controls
+      href: controls/how-to-make-thread-safe-calls.md
 - name: User input - keyboard
   items:
   - name: Overview
