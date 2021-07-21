@@ -44,7 +44,7 @@ The <xref:System.Windows.Forms.Control.Margin%2A> property defines the space aro
 
 The <xref:System.Windows.Forms.Control.Padding%2A> property defines the space in the interior of a control that keeps the control's content (for example, the value of its <xref:System.Windows.Forms.Control.Text%2A> property) a specified distance from the control's borders.
 
-The following figure shows the <xref:System.Windows.Forms.Control.Padding%2A> and <xref:System.Windows.Forms.Control.Margin%2A> properties on a control.
+The following figure shows the <xref:System.Windows.Forms.Control.Margin%2A> and <xref:System.Windows.Forms.Control.Padding%2A> properties on a control.
 
 :::image type="content" source="media/layout/margin-padding.png" alt-text="Padding and Margin properties for Windows Forms Controls":::
 
