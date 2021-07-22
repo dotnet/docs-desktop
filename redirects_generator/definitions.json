@@ -1,0 +1,399 @@
+{
+    "Moniker1": "netframeworkdesktop-4.8",
+    "RepoPath1": "dotnet-desktop-guide/framework/",
+    "Moniker2": "netdesktop-5.0",
+    "RepoPath2": "dotnet-desktop-guide/net/",
+    "PublishRoot": "/dotnet/desktop/",
+    "Entries": [
+
+    // ========
+    // WinForms
+    // ========
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/winforms/how-to-create-a-windows-forms-application-from-the-command-line?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/winforms/get-started/create-app-visual-studio?view=netdesktop-5.0"
+        },
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/winforms/windows-forms-overview?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/winforms/overview/?view=netdesktop-5.0"
+        },
+
+        // Events
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/winforms/events-overview-windows-forms?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/winforms/forms/events?view=netdesktop-5.0"
+        },
+        {
+            "Redirect": "OneWay",
+            "SourceUrl": "/dotnet/desktop/winforms/creating-event-handlers-in-windows-forms?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/winforms/forms/events?view=netdesktop-5.0"
+        },
+
+
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/winforms/automatic-scaling-in-windows-forms?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/winforms/forms/autoscale?view=netdesktop-5.0"
+        },
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/winforms/how-to-resize-windows-forms?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/winforms/forms/how-to-position-and-resize?view=netdesktop-5.0"
+        },
+
+        // Controls
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/winforms/controls/index?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/winforms/controls/overview?view=netdesktop-5.0"
+        },
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/winforms/controls/layout-in-windows-forms-controls?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/winforms/controls/layout?view=netdesktop-5.0"
+        },
+        {
+            "Redirect": "OneWay",
+            "SourceUrl": "/dotnet/desktop/winforms/controls/autosize-property-overview?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/winforms/controls/layout?view=netdesktop-5.0#automatic-sizing"
+        },
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/winforms/controls/label-control-overview-windows-forms?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/winforms/controls/labels?view=netdesktop-5.0"
+        },
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/winforms/controls/how-to-set-the-tab-order-on-windows-forms?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/winforms/controls/how-to-set-the-tab-order?view=netdesktop-5.0"
+        },
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/winforms/controls/how-to-anchor-controls-on-windows-forms?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/winforms/controls/how-to-dock-and-anchor?view=netdesktop-5.0"
+        },
+        {
+            "Redirect": "OneWay",
+            "SourceUrl": "/dotnet/desktop/winforms/controls/how-to-dock-controls-on-windows-forms?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/winforms/controls/how-to-dock-and-anchor?view=netdesktop-5.0"
+        },
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/winforms/how-to-create-event-handlers-at-run-time-for-windows-forms?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/winforms/controls/how-to-add-an-event-handler?view=netdesktop-5.0"
+        },
+        {
+            "Redirect": "OneWay",
+            "SourceUrl": "/dotnet/desktop/winforms/how-to-connect-multiple-events-to-a-single-event-handler-in-windows-forms?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/winforms/controls/how-to-add-an-event-handler?view=netdesktop-5.0#how-to-use-multiple-events-with-the-same-handler"
+        },
+
+        // Custom controls
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/winforms/controls/varieties-of-custom-controls?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/winforms/controls/custom?view=netdesktop-5.0"
+        },
+        {
+            "Redirect": "OneWay",
+            "SourceUrl": "/dotnet/desktop/winforms/controls/control-type-recommendations?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/winforms/controls/custom?view=netdesktop-5.0"
+        },
+        
+        // Custom painting and drawing
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/winforms/controls/custom-control-painting-and-rendering?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/winforms/controls/custom-painting-drawing?view=netdesktop-5.0"
+        },
+        {
+            "Redirect": "OneWay",
+            "SourceUrl": "/dotnet/desktop/winforms/controls/rendering-a-windows-forms-control?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/winforms/controls/custom-painting-drawing?view=netdesktop-5.0"
+        },
+        {
+            "Redirect": "OneWay",
+            "SourceUrl": "/dotnet/desktop/winforms/controls/user-drawn-controls?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/winforms/controls/custom-painting-drawing?view=netdesktop-5.0"
+        },
+
+        
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/winforms/controls/how-to-add-controls-to-windows-forms?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/winforms/controls/how-to-add-to-a-form?view=netdesktop-5.0"
+        },
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/winforms/controls/how-to-create-access-keys-for-windows-forms-controls?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/winforms/controls/how-to-create-access-keys?view=netdesktop-5.0"
+        },
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/winforms/controls/how-to-set-the-text-displayed-by-a-windows-forms-control?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/winforms/controls/how-to-set-the-display-text?view=netdesktop-5.0"
+        },
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/winforms/controls/how-to-set-the-image-displayed-by-a-windows-forms-control?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/winforms/controls/how-to-add-a-picture-to-a-control?view=netdesktop-5.0"
+        },
+
+        // Keyboard overview
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/winforms/keyboard-input-in-a-windows-forms-application?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/winforms/input-keyboard/overview?view=netdesktop-5.0"
+        },
+        {
+            "Redirect": "OneWay",
+            "SourceUrl": "/dotnet/desktop/winforms/how-keyboard-input-works?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/winforms/input-keyboard/overview?view=netdesktop-5.0"
+        },
+
+
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/winforms/using-keyboard-events?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/winforms/input-keyboard/events?view=netdesktop-5.0"
+        },
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/winforms/user-input-validation-in-windows-forms?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/winforms/input-keyboard/validation?view=netdesktop-5.0"
+        },
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/winforms/how-to-modify-keyboard-input-to-a-standard-control?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/winforms/input-keyboard/how-to-change-key-press?view=netdesktop-5.0"
+        },
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/winforms/how-to-determine-which-modifier-key-was-pressed?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/winforms/input-keyboard/how-to-check-modifier-key?view=netdesktop-5.0"
+        },
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/winforms/how-to-handle-keyboard-input-at-the-form-level?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/winforms/input-keyboard/how-to-handle-forms?view=netdesktop-5.0"
+        },
+        {
+            "Redirect": "OneWay",
+            "SourceUrl": "/dotnet/desktop/winforms/input-keyboard/how-to-simulate-events?view=netdesktop-5.0",
+            "TargetUrl": "/dotnet/desktop/winforms/how-to-simulate-mouse-and-keyboard-events-in-code?view=netframeworkdesktop-4.8"
+        },
+
+        // Mouse overview
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/winforms/mouse-input-in-a-windows-forms-application?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/winforms/input-mouse/overview?view=netdesktop-5.0"
+        },
+        {
+            "Redirect": "OneWay",
+            "SourceUrl": "/dotnet/desktop/winforms/how-mouse-input-works-in-windows-forms?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/winforms/input-mouse/overview?view=netdesktop-5.0"
+        },
+
+
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/winforms/mouse-events-in-windows-forms?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/winforms/input-mouse/events?view=netdesktop-5.0"
+        },
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/winforms/drag-and-drop-functionality-in-windows-forms?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/winforms/input-mouse/drag-and-drop?view=netdesktop-5.0"
+        },
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/winforms/mouse-pointers-in-windows-forms?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/winforms/input-mouse/how-to-manage-cursor-pointer?view=netdesktop-5.0"
+        },
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/winforms/how-to-simulate-mouse-and-keyboard-events-in-code?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/winforms/input-mouse/how-to-simulate-events?view=netdesktop-5.0"
+        },
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/winforms/how-to-distinguish-between-clicks-and-double-clicks?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/winforms/input-mouse/how-to-distinguish-between-clicks-and-double-clicks?view=netdesktop-5.0"
+        },
+
+
+    // ========
+    // WPF 4.0 -> 5/6
+    // ========
+
+        // Main
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/wpf/introduction-to-wpf?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/wpf/overview/?view=netdesktop-5.0"
+        },
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/wpf/getting-started/walkthrough-my-first-wpf-desktop-application?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/wpf/get-started/create-app-visual-studio?view=netdesktop-5.0"
+        },
+
+        // Windows
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/wpf/app-development/wpf-windows-overview?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/wpf/windows/index?view=netdesktop-5.0"
+        },
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/wpf/app-development/dialog-boxes-overview?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/wpf/windows/dialog-boxes-overview?view=netdesktop-5.0"
+        },
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/wpf/app-development/how-to-open-a-window?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/wpf/windows/how-to-open-window-dialog-box?view=netdesktop-5.0"
+        },
+        {
+            "Redirect": "OneWay",
+            "SourceUrl": "/dotnet/desktop/wpf/app-development/how-to-open-a-dialog-box?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/wpf/windows/how-to-open-window-dialog-box?view=netdesktop-5.0"
+        },
+        {
+            "Redirect": "OneWay",
+            "SourceUrl": "/dotnet/desktop/wpf/how-to-return-a-dialog-box-result?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/wpf/windows/how-to-open-window-dialog-box?view=netdesktop-5.0"
+        },
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/wpf/app-development/how-to-open-a-message-box?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/wpf/windows/how-to-open-message-box?view=netdesktop-5.0"
+        },
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/wpf/app-development/how-to-get-and-set-the-main-application-window?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/wpf/windows/how-to-get-set-main-application-window?view=netdesktop-5.0"
+        },
+
+        // Data
+        {
+            "Redirect": "OneWay",
+            "SourceUrl": "/dotnet/desktop/wpf/data/data-binding-overview?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/wpf/data/index?view=netdesktop-5.0"
+        },
+        {
+            "Redirect": "OneWay",
+            "SourceUrl": "/dotnet/desktop/wpf/data/how-to-specify-the-direction-of-the-binding?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/wpf/data/binding-declarations-overview?view=netdesktop-5.0#binding-direction"
+        },
+
+        // Systems - XAML
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/wpf/advanced/xaml-resources-define?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/wpf/systems/xaml-resources-overview?view=netdesktop-5.0"
+        },
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/wpf/advanced/resources-and-code?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/wpf/systems/xaml-resources-and-code?view=netdesktop-5.0"
+        },
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/wpf/advanced/merged-resource-dictionaries?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/wpf/systems/xaml-resources-merged-dictionaries?view=netdesktop-5.0"
+        },
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/wpf/advanced/how-to-define-and-reference-a-resource?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/wpf/systems/xaml-resources-how-to-define-and-reference?view=netdesktop-5.0"
+        },
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/wpf/advanced/how-to-use-application-resources?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/wpf/systems/xaml-resources-how-to-use-application?view=netdesktop-5.0"
+        },
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/wpf/advanced/how-to-use-systemfonts?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/wpf/systems/xaml-resources-how-to-use-system?view=netdesktop-5.0"
+        },
+        {
+            "Redirect": "OneWay",
+            "SourceUrl": "/dotnet/desktop/wpf/advanced/how-to-use-system-fonts-keys?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/wpf/systems/xaml-resources-how-to-use-system?view=netdesktop-5.0"
+        },
+        {
+            "Redirect": "OneWay",
+            "SourceUrl": "/dotnet/desktop/wpf/advanced/how-to-use-systemparameters?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/wpf/systems/xaml-resources-how-to-use-system?view=netdesktop-5.0"
+        },
+        {
+            "Redirect": "OneWay",
+            "SourceUrl": "/dotnet/desktop/wpf/advanced/how-to-use-system-parameters-keys?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/wpf/systems/xaml-resources-how-to-use-system?view=netdesktop-5.0"
+        },
+
+        // XAML
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/wpf/advanced/xaml-in-wpf?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/wpf/xaml/index?view=netdesktop-5.0"
+        },
+
+        // section?
+        //{
+        //    "Redirect": "TwoWay",
+        //    "SourceUrl": "/dotnet/desktop/wpf/aaaaaa?view=netframeworkdesktop-4.8",
+        //    "TargetUrl": "/dotnet/desktop/wpf/aaaaaa?view=netdesktop-5.0"
+        //},
+
+    // ========
+    // WPF 3.1 -> 5/6
+    // ========
+        {
+            "Redirect": "OneWay",
+            "SourceUrl": "/dotnet/desktop/wpf/fundamentals/xaml?view=netdesktop-5.0",
+            "TargetUrl": "/dotnet/desktop/wpf/xaml/index?view=netdesktop-5.0"
+        },
+        {
+            "Redirect": "OneWay",
+            "SourceUrl": "/dotnet/desktop/wpf/fundamentals/xaml-resources-define?view=netdesktop-5.0",
+            "TargetUrl": "/dotnet/desktop/wpf/systems/xaml-resources-overview?view=netdesktop-5.0"
+        },
+        {
+            "Redirect": "OneWay",
+            "SourceUrl": "/dotnet/desktop/wpf/fundamentals/styles-templates-overview?view=netdesktop-5.0",
+            "TargetUrl": "/dotnet/desktop/wpf/controls/styles-templates-overview?view=netdesktop-5.0"
+        },
+        {
+            "Redirect": "OneWay",
+            "SourceUrl": "/dotnet/desktop/wpf/fundamentals/styles-templates-create-apply-style?view=netdesktop-5.0",
+            "TargetUrl": "/dotnet/desktop/wpf/controls/how-to-create-apply-style?view=netdesktop-5.0"
+        },
+        {
+            "Redirect": "OneWay",
+            "SourceUrl": "/dotnet/desktop/wpf/themes/how-to-create-apply-template?view=netdesktop-5.0",
+            "TargetUrl": "/dotnet/desktop/wpf/controls/how-to-create-apply-template?view=netdesktop-5.0"
+        },
+        {
+            "Redirect": "NormalDocId",
+            "SourceUrl": "/dotnet/desktop/wpf/data/data-binding-overview?view=netdesktop-5.0",
+            "TargetUrl": "/dotnet/desktop/wpf/data/index?view=netdesktop-5.0"
+        },
+
+    // ========
+    // WPF Index mappings
+    // ========
+        {
+            "Redirect": "Normal",
+            "SourceUrl": "/dotnet/desktop/wpf/migration/index?view=netdesktop-5.0",
+            "TargetUrl": "/dotnet/desktop/wpf/migration/differences-from-net-framework?view=netdesktop-5.0"
+        }
+
+    ]
+}
