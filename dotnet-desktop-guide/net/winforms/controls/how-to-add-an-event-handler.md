@@ -1,6 +1,6 @@
 ---
 title: How to add or remove an event handler
-description: Learn how to create an event handler at design-time with the Windows Forms Designer in Visual Studio or at run-time.
+description: Learn how to create an event handler for a control at design-time with the Windows Forms Designer in Visual Studio or at run-time.
 ms.date: 07/16/2021
 dev_langs:
   - "csharp"
@@ -18,7 +18,7 @@ helpviewer_keywords:
   - "menu items [Windows Forms], multicasting event-handling methods"
 ---
 
-# How to handle an event (Windows Forms .NET)
+# How to handle a control event (Windows Forms .NET)
 
 Events for controls (and for forms) are generally set through the Visual Studio Visual Designer for Windows Forms. Setting an event through the Visual Designer is known as handling an event at design-time. You can also handle events dynamically in code, known as handling events at run-time. An event created at run-time allows you to connect event handlers dynamically based on what your app is currently doing.
 
