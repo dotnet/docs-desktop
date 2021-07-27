@@ -61,6 +61,11 @@
             "TargetUrl": "/dotnet/desktop/winforms/controls/layout?view=netdesktop-5.0#automatic-sizing"
         },
         {
+            "Redirect": "OneWay",
+            "SourceUrl": "/dotnet/desktop/winforms/controls/margin-and-padding-in-windows-forms-controls?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/winforms/controls/layout?view=netdesktop-5.0#margin-and-padding"
+        },
+        {
             "Redirect": "TwoWay",
             "SourceUrl": "/dotnet/desktop/winforms/controls/label-control-overview-windows-forms?view=netframeworkdesktop-4.8",
             "TargetUrl": "/dotnet/desktop/winforms/controls/labels?view=netdesktop-5.0"
@@ -89,6 +94,11 @@
             "Redirect": "OneWay",
             "SourceUrl": "/dotnet/desktop/winforms/how-to-connect-multiple-events-to-a-single-event-handler-in-windows-forms?view=netframeworkdesktop-4.8",
             "TargetUrl": "/dotnet/desktop/winforms/controls/how-to-add-an-event-handler?view=netdesktop-5.0#how-to-use-multiple-events-with-the-same-handler"
+        },
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/winforms/controls/how-to-make-thread-safe-calls-to-windows-forms-controls?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/winforms/controls/how-to-make-thread-safe-calls?view=netdesktop-5.0"
         },
 
         // Custom controls
