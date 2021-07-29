@@ -159,11 +159,10 @@ An uppercase `V` indicates that `y` is an absolute value; a lowercase `v` indica
   
 |Syntax|  
 |------------|  
-|`T` `controlPoint` `endPoint`<br /><br /> - or -<br /><br /> `t` `controlPoint` `endPoint`|  
+|`T` `endPoint`<br /><br /> - or -<br /><br /> `t` `endPoint`|  
   
 |Term|Description|  
 |----------|-----------------|  
-|`controlPoint`|<xref:System.Windows.Point?displayProperty=nameWithType><br /><br /> The control point of the curve, which determines the starting and tangent of the curve.|  
 |`endPoint`|<xref:System.Windows.Point?displayProperty=nameWithType><br /><br /> The point to which the curve is drawn.|  
   
 ### Elliptical Arc Command  
