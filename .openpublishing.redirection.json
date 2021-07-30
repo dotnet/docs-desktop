@@ -294,7 +294,8 @@
     },
     {
       "source_path": "dotnet-desktop-guide/net/wpf/data/data-binding-overview.md",
-      "redirect_url": "/dotnet/desktop/wpf/data/index?view=netdesktop-5.0"
+      "redirect_url": "/dotnet/desktop/wpf/data/index?view=netdesktop-5.0",
+      "redirect_document_id": true
     },
     {
       "source_path": "dotnet-desktop-guide/net/wpf/advanced/xaml-in-wpf.md",
@@ -435,6 +436,18 @@
     {
       "source_path": "dotnet-desktop-guide/net/winforms/how-to-connect-multiple-events-to-a-single-event-handler-in-windows-forms.md",
       "redirect_url": "/dotnet/desktop/winforms/controls/how-to-add-an-event-handler?view=netdesktop-5.0#how-to-use-multiple-events-with-the-same-handler"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/net/winforms/controls/margin-and-padding-in-windows-forms-controls.md",
+      "redirect_url": "/dotnet/desktop/winforms/controls/layout?view=netdesktop-5.0#margin-and-padding"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/net/winforms/controls/how-to-make-thread-safe-calls-to-windows-forms-controls.md",
+      "redirect_url": "/dotnet/desktop/winforms/controls/how-to-make-thread-safe-calls?view=netdesktop-5.0"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/framework/winforms/controls/how-to-make-thread-safe-calls.md",
+      "redirect_url": "/dotnet/desktop/winforms/controls/how-to-make-thread-safe-calls-to-windows-forms-controls?view=netframeworkdesktop-4.8"
     }
   ]
 }
