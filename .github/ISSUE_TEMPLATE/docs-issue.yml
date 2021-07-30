@@ -8,17 +8,13 @@ body:
   - type: markdown
     attributes:
       value: |
-        > \=============
-        > **IMPORTANT**
-        > \=============
-
-        > ```
-        > ┌───────────────┬───────────────────┐
-        > │!! IMPORTANT !!│                   │
-        > ├───────────────┘                   │
-        > │PLEASE READ THE FOLLOWING STATEMENT│
-        > └───────────────────────────────────┘
-        > ```
+        ```
+         ┌──────────┐
+         │IMPORTANT ├──────────────────────────┐
+         └───────┬──┘ Please read the          │
+                 │       following statement   │
+                 └─────────────────────────────┘
+        ```
 
         If you're reporting a general product usage question (ex: how do I set the text of a button?), it's better to use Q&A forum like:
         
