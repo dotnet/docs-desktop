@@ -11,7 +11,17 @@ body:
         > \=============
         > **IMPORTANT**
         > \=============
-        
+
+        ┌───────────────┬───────────────────────────┐
+        │!! IMPORTANT !!│                           │
+        ├───────────────┘                           │
+        │                                           │
+        │                                           │
+        │                                           │
+        │                                           │
+        └───────────────────────────────────────────┘
+
+
         If you're reporting a general product usage question (ex: how do I set the text of a button?), it's better to use Q&A forum like:
         
         - [Stack Overflow](https://stackoverflow.com/)
