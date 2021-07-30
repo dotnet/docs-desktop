@@ -8,7 +8,9 @@ body:
   - type: markdown
     attributes:
       value: |
-        **If** you're reporting a general product usage question (ex: how do I set the text of a button?), it's better to use Q&A forum like:
+        > **IMPORTANT**
+        
+        If you're reporting a general product usage question (ex: how do I set the text of a button?), it's better to use Q&A forum like:
         
         - [Stack Overflow](https://stackoverflow.com/)
         - [Microsoft Q&A](https://docs.microsoft.com/answers/products/)
@@ -27,8 +29,8 @@ body:
       label: Technology
       description: Which desktop technology are you using?
       options:
-        - Windows Presentation Foundation (WPF)
-        - Windows Forms (WinForms)
+        - WPF (Windows Presentation Foundation)
+        - Windows Forms
     validations:
       required: true
 
