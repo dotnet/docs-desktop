@@ -1,0 +1,52 @@
+name: "Desktop doc problem"
+description: Report a problem in the WPF/Windows Forms documentation.
+title: "[doc bug]: "
+labels: Pri1,doc-bug
+assignees:
+ - adegeo
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **If** you're reporting a general product usage question (ex: how do I set the text of a button?), it's better to use Q&A forum like:
+        
+        - [Stack Overflow](https://stackoverflow.com/)
+        - [Microsoft Q&A](https://docs.microsoft.com/answers/products/)
+        
+  - type: input
+    id: url
+    attributes:
+      label: Article URL
+      description: "Which article has the problem?"
+    validations:
+      required: true
+      
+  - type: dropdown
+    id: technology
+    attributes:
+      label: Technology
+      description: Which desktop technology are you using?
+      options:
+        - Windows Presentation Foundation (WPF)
+        - Windows Forms (WinForms)
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: platform
+    attributes:
+      label: Version
+      description: Which .NET version did you notice this problem with?
+      options:
+        - label: ".NET 5 or later (also .NET Core)"
+        - label: ".NET Framework 4"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What is the problem you had with the documentation (markdown allowed)
+    validations:
+      required: true
