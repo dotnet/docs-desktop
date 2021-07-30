@@ -21,6 +21,8 @@ body:
         - [Stack Overflow](https://stackoverflow.com/)
         - [Microsoft Q&A](https://docs.microsoft.com/answers/products/)
         
+        If your question is related to documentation, please fill out the following information.
+        
   - type: input
     id: url
     attributes:
@@ -55,6 +57,6 @@ body:
     id: description
     attributes:
       label: Description
-      description: What is the problem you had with the documentation (markdown allowed)
+      description: What's the problem you had with the documentation (markdown allowed)
     validations:
       required: true
