@@ -57,6 +57,6 @@ body:
     id: description
     attributes:
       label: Description
-      description: What's the problem you had with the documentation (markdown allowed)
+      description: What's the problem you had with the documentation? (markdown allowed)
     validations:
       required: true
