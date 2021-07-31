@@ -173,7 +173,7 @@ Any _*.resx_ and _*.settings_ files in the _Properties_ folder need to be migrat
 
   ```xml
   <ItemGroup>
-    <None Include="Properties\Settings.settings">
+    <None Update="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
@@ -184,8 +184,6 @@ Any _*.resx_ and _*.settings_ files in the _Properties_ folder need to be migrat
     </Compile>
   </ItemGroup>
   ```
-
-  Notice that the _Properties\Settings.settings_ entry remained `Include`. The project doesn't automatically include _settings_ files.
 
   > [!IMPORTANT]
   > **Visual Basic** projects typically use the folder _My Project_ while C# projects typically use the folder _Properties_ for the default project settings file.
