@@ -9,12 +9,15 @@ ms.topic: how-to
 
 This article describes how to migrate a Windows Forms desktop app from .NET Framework to .NET 5 or later. The .NET SDK includes support for Windows Forms applications. Windows Forms is still a Windows-only framework and only runs on Windows.
 
-> [!TIP]
-> Try the [.NET Upgrade Assistant](/dotnet/core/porting/upgrade-assistant-winforms-framework) to help migrate your project.
-
 Migrating your app from .NET Framework to .NET 5 generally requires a new project file. .NET 5 uses SDK-style project files while .NET Framework typically uses the older Visual Studio project file. If you've ever opened a Visual Studio project file in a text editor, you know how verbose it is. SDK-style projects are smaller and don't require as many entries as the older project file format does.
 
 To learn more about .NET 5, see [Introduction to .NET](/dotnet/core/introduction).
+
+## Try the upgrade assistant
+
+The .NET Upgrade Assistant is a command-line tool that can be run on different kinds of .NET Framework apps. It's designed to assist with upgrading .NET Framework apps to .NET 5. After running the tool, in most cases the app will require additional effort to complete the migration. The tool includes the installation of analyzers that can assist with completing the migration.
+
+For more information, see [Upgrade a WPF App to .NET 5 with the .NET Upgrade Assistant](/dotnet/core/porting/upgrade-assistant-wpf-framework).
 
 ## Prerequisites
 
