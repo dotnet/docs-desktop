@@ -11,7 +11,7 @@ helpviewer_keywords:
 ms.assetid: d89aa97b-075a-4752-9c41-9679df65c491
 ---
 # Slider Styles and Templates
-This topic describes the styles and templates for the <xref:System.Windows.Controls.Slider> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [Create a template for a control](/dotnet/desktop-wpf/themes/how-to-create-apply-template).  
+This topic describes the styles and templates for the <xref:System.Windows.Controls.Slider> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [Create a template for a control](how-to-create-apply-template.md).  
   
 ## Slider Parts  
  The following table lists the named parts for the <xref:System.Windows.Controls.Slider> control.  
@@ -53,4 +53,4 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 - [Control Styles and Templates](control-styles-and-templates.md)
 - [Control Customization](control-customization.md)
 - [Styling and Templating](/dotnet/desktop-wpf/fundamentals/styles-templates-overview)
-- [Create a template for a control](/dotnet/desktop-wpf/themes/how-to-create-apply-template)
+- [Create a template for a control](how-to-create-apply-template.md)

@@ -11,7 +11,7 @@ helpviewer_keywords:
 ms.assetid: dffdd822-ae69-4946-abaf-710860cd65b2
 ---
 # ScrollViewer Styles and Templates
-This topic describes the styles and templates for the <xref:System.Windows.Controls.ScrollViewer> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [Create a template for a control](/dotnet/desktop-wpf/themes/how-to-create-apply-template).  
+This topic describes the styles and templates for the <xref:System.Windows.Controls.ScrollViewer> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [Create a template for a control](how-to-create-apply-template.md).  
   
 ## ScrollViewer Parts  
  The following table lists the named parts for the <xref:System.Windows.Controls.ScrollViewer> control.  
@@ -49,4 +49,4 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 - [Control Styles and Templates](control-styles-and-templates.md)
 - [Control Customization](control-customization.md)
 - [Styling and Templating](/dotnet/desktop-wpf/fundamentals/styles-templates-overview)
-- [Create a template for a control](/dotnet/desktop-wpf/themes/how-to-create-apply-template)
+- [Create a template for a control](how-to-create-apply-template.md)

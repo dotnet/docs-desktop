@@ -12,7 +12,7 @@ helpviewer_keywords:
 ms.assetid: 9cb31d63-f148-4d25-b079-816e73f988c7
 ---
 # DataGrid Styles and Templates
-This topic describes the styles and templates for the <xref:System.Windows.Controls.DataGrid> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [Create a template for a control](/dotnet/desktop-wpf/themes/how-to-create-apply-template).  
+This topic describes the styles and templates for the <xref:System.Windows.Controls.DataGrid> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [Create a template for a control](how-to-create-apply-template.md).  
   
 ## DataGrid Parts  
  The following table lists the named parts for the <xref:System.Windows.Controls.DataGrid> control.  
@@ -171,4 +171,4 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 - [Control Styles and Templates](control-styles-and-templates.md)
 - [Control Customization](control-customization.md)
 - [Styling and Templating](/dotnet/desktop-wpf/fundamentals/styles-templates-overview)
-- [Create a template for a control](/dotnet/desktop-wpf/themes/how-to-create-apply-template)
+- [Create a template for a control](how-to-create-apply-template.md)
