@@ -65,7 +65,7 @@ Specifies properties of a <xref:System.Windows.Data.RelativeSource> binding sour
 
 `{RelativeSource FindAncestor}` is mainly used in control templates or predictable self-contained UI compositions, for cases where a control is always expected to be in a visual tree of a certain ancestor type. For example, items of an items control might use `FindAncestor` usages to bind to properties of their items control parent ancestor. Or, elements that are part of control composition in a template can use `FindAncestor` bindings to the parent elements in that same composition structure.
 
-In the object element syntax for `FindAncestor` mode shown in the XAML Syntax sections, the second object element syntax is used specifically for `FindAncestor` mode. `FindAncestor` mode requires an <xref:System.Windows.Data.RelativeSource.AncestorType%2A> value. You must set <xref:System.Windows.Data.RelativeSource.AncestorType%2A> as an attribute using an [x:Type Markup Extension](/dotnet/desktop-wpf/xaml-services/xtype-markup-extension) reference to the type of ancestor to look for. The <xref:System.Windows.Data.RelativeSource.AncestorType%2A> value is used when the binding request is processed at run-time.
+In the object element syntax for `FindAncestor` mode shown in the XAML Syntax sections, the second object element syntax is used specifically for `FindAncestor` mode. `FindAncestor` mode requires an <xref:System.Windows.Data.RelativeSource.AncestorType%2A> value. You must set <xref:System.Windows.Data.RelativeSource.AncestorType%2A> as an attribute using an [x:Type Markup Extension](/dotnet/desktop/xaml-services/xtype-markup-extension) reference to the type of ancestor to look for. The <xref:System.Windows.Data.RelativeSource.AncestorType%2A> value is used when the binding request is processed at run-time.
 
 For `FindAncestor` mode, the optional property <xref:System.Windows.Data.RelativeSource.AncestorLevel%2A> can help disambiguate the ancestor lookup in cases where there is possibly more than one ancestor of that type existing in the element tree.
 
@@ -114,4 +114,4 @@ In the [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md
 - [Markup Extensions and WPF XAML](markup-extensions-and-wpf-xaml.md)
 - [Data Binding Overview](/dotnet/desktop-wpf/data/data-binding-overview)
 - [Binding Declarations Overview](../data/binding-declarations-overview.md)
-- [x:Type Markup Extension](/dotnet/desktop-wpf/xaml-services/xtype-markup-extension)
+- [x:Type Markup Extension](/dotnet/desktop/xaml-services/xtype-markup-extension)

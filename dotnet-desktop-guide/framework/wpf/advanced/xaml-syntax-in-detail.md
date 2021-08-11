@@ -82,7 +82,7 @@ This topic defines the terms that are used to describe the elements of XAML synt
  Attribute syntax is the XAML markup syntax that sets a value for a property by declaring an attribute on an existing object element. The attribute name must match the CLR member name of the property of the class that backs the relevant object element. The attribute name is followed by an assignment operator (=). The attribute value must be a string enclosed within quotes.  
   
 > [!NOTE]
-> You can use alternating quotes to place a literal quotation mark within an attribute. For instance you can use single quotes as a means to declare a string that contains a double quote character within it. Whether you use single or double quotes, you should use a matching pair for opening and closing the attribute value string. There are also escape sequences or other techniques available for working around character restrictions imposed by any particular XAML syntax. See [XML Character Entities and XAML](/dotnet/desktop-wpf/xaml-services/xml-character-entities).  
+> You can use alternating quotes to place a literal quotation mark within an attribute. For instance you can use single quotes as a means to declare a string that contains a double quote character within it. Whether you use single or double quotes, you should use a matching pair for opening and closing the attribute value string. There are also escape sequences or other techniques available for working around character restrictions imposed by any particular XAML syntax. See [XML Character Entities and XAML](/dotnet/desktop/xaml-services/xml-character-entities).  
   
  In order to be set through attribute syntax, a property must be public and must be writeable. The value of the property in the backing type system must be a value type, or must be a reference type that can be instantiated or referenced by a XAML processor when accessing the relevant backing type.  
   
@@ -140,7 +140,7 @@ This topic defines the terms that are used to describe the elements of XAML synt
   
  [!code-xaml[XAMLOvwSupport#ContextMenu](~/samples/snippets/csharp/VS_Snippets_Wpf/XAMLOvwSupport/CSharp/Page1.xaml#contextmenu)]  
   
- The value within a property element can also be given as inner text, in cases where the property type being specified is a primitive value type, such as <xref:System.String>, or an enumeration where a name is specified. These two usages are somewhat uncommon, because each of these cases could also use a simpler attribute syntax. One scenario for filling a property element with a string is for properties that are not the XAML content property but still are used for representation of UI text, and particular white-space elements such as linefeeds are required to appear in that UI text. Attribute syntax cannot preserve linefeeds, but property element syntax can, so long as significant white-space preservation is active (for details, see [White space processing in XAML](/dotnet/desktop-wpf/xaml-services/white-space-processing)). Another scenario is so that [x:Uid Directive](/dotnet/desktop-wpf/xaml-services/xuid-directive) can be applied to the property element and thus mark the value within as a value that should be localized in the WPF output BAML or by other techniques.  
+ The value within a property element can also be given as inner text, in cases where the property type being specified is a primitive value type, such as <xref:System.String>, or an enumeration where a name is specified. These two usages are somewhat uncommon, because each of these cases could also use a simpler attribute syntax. One scenario for filling a property element with a string is for properties that are not the XAML content property but still are used for representation of UI text, and particular white-space elements such as linefeeds are required to appear in that UI text. Attribute syntax cannot preserve linefeeds, but property element syntax can, so long as significant white-space preservation is active (for details, see [White space processing in XAML](/dotnet/desktop/xaml-services/white-space-processing)). Another scenario is so that [x:Uid Directive](/dotnet/desktop/xaml-services/xuid-directive) can be applied to the property element and thus mark the value within as a value that should be localized in the WPF output BAML or by other techniques.  
   
  A property element is not represented in the WPF logical tree. A property element is just a particular syntax for setting a property, and is not an element that has an instance or object backing it. (For details on the logical tree concept, see [Trees in WPF](trees-in-wpf.md).)  
   
@@ -154,7 +154,7 @@ This topic defines the terms that are used to describe the elements of XAML synt
   
 - Type implements <xref:System.Collections.IDictionary>.  
   
-- Type derives from <xref:System.Array> (for more information about arrays in XAML, see [x:Array Markup Extension](/dotnet/desktop-wpf/xaml-services/xarray-markup-extension).)  
+- Type derives from <xref:System.Array> (for more information about arrays in XAML, see [x:Array Markup Extension](/dotnet/desktop/xaml-services/xarray-markup-extension).)  
   
  If the type of a property is a collection, then the inferred collection type does not need to be specified in the markup as an object element. Instead, the elements that are intended to become the items in the collection are specified as one or more child elements of the property element. Each such item is evaluated to an object during loading and added to the collection by calling the `Add` method of the implied collection. For example, the <xref:System.Windows.Style.Triggers%2A> property of <xref:System.Windows.Style> takes the specialized collection type <xref:System.Windows.TriggerCollection>, which implements <xref:System.Collections.IList>. It is not necessary to instantiate a <xref:System.Windows.TriggerCollection> object element in the markup. Instead, you specify one or more <xref:System.Windows.Trigger> items as elements within the `Style.Triggers` property element, where <xref:System.Windows.Trigger> (or a derived class) is the type expected as the item type for the strongly typed and implicit <xref:System.Windows.TriggerCollection>.  
   
@@ -250,9 +250,9 @@ This topic defines the terms that are used to describe the elements of XAML synt
   
  `<Button Style="{StaticResource MyStyle}">My button</Button>`  
   
- Here, `StaticResource` identifies the <xref:System.Windows.StaticResourceExtension> class providing the markup extension implementation. The next string `MyStyle` is used as the input for the non-default <xref:System.Windows.StaticResourceExtension> constructor, where the parameter as taken from the extension string declares the requested <xref:System.Windows.ResourceKey>. `MyStyle` is expected to be the [x:Key](/dotnet/desktop-wpf/xaml-services/xkey-directive) value of a <xref:System.Windows.Style> defined as a resource. The [StaticResource Markup Extension](staticresource-markup-extension.md) usage requests that the resource be used to provide the <xref:System.Windows.Style> property value through static resource lookup logic at load time.  
+ Here, `StaticResource` identifies the <xref:System.Windows.StaticResourceExtension> class providing the markup extension implementation. The next string `MyStyle` is used as the input for the non-default <xref:System.Windows.StaticResourceExtension> constructor, where the parameter as taken from the extension string declares the requested <xref:System.Windows.ResourceKey>. `MyStyle` is expected to be the [x:Key](/dotnet/desktop/xaml-services/xkey-directive) value of a <xref:System.Windows.Style> defined as a resource. The [StaticResource Markup Extension](staticresource-markup-extension.md) usage requests that the resource be used to provide the <xref:System.Windows.Style> property value through static resource lookup logic at load time.  
   
- For more information about markup extensions, see [Markup Extensions and WPF XAML](markup-extensions-and-wpf-xaml.md). For a reference of markup extensions and other XAML programming features enabled in the general .NET XAML implementation, see [XAML Namespace (x:) Language Features](/dotnet/desktop-wpf/xaml-services/namespace-language-features). For WPF-specific markup extensions, see [WPF XAML Extensions](wpf-xaml-extensions.md).  
+ For more information about markup extensions, see [Markup Extensions and WPF XAML](markup-extensions-and-wpf-xaml.md). For a reference of markup extensions and other XAML programming features enabled in the general .NET XAML implementation, see [XAML Namespace (x:) Language Features](/dotnet/desktop/xaml-services/namespace-language-features). For WPF-specific markup extensions, see [WPF XAML Extensions](wpf-xaml-extensions.md).  
   
 <a name="attached_properties"></a>
 ## Attached Properties  
@@ -312,7 +312,7 @@ This topic defines the terms that are used to describe the elements of XAML synt
 ## See also
 
 - [XAML Overview (WPF)](/dotnet/desktop-wpf/fundamentals/xaml)
-- [XAML Namespace (x:) Language Features](/dotnet/desktop-wpf/xaml-services/namespace-language-features)
+- [XAML Namespace (x:) Language Features](/dotnet/desktop/xaml-services/namespace-language-features)
 - [WPF XAML Extensions](wpf-xaml-extensions.md)
 - [Dependency Properties Overview](dependency-properties-overview.md)
 - [TypeConverters and XAML](typeconverters-and-xaml.md)
