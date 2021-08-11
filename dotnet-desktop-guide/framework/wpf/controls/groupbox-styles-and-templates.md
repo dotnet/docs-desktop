@@ -11,7 +11,7 @@ helpviewer_keywords:
 ms.assetid: 33df7037-0a1b-476f-b9d0-41566a777699
 ---
 # GroupBox Styles and Templates
-<a name="introduction"></a> This topic describes the styles and templates for the <xref:System.Windows.Controls.GroupBox> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [Create a template for a control](/dotnet/desktop-wpf/themes/how-to-create-apply-template).  
+<a name="introduction"></a> This topic describes the styles and templates for the <xref:System.Windows.Controls.GroupBox> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [Create a template for a control](how-to-create-apply-template.md).  
   
 <a name="groupbox_parts"></a>
 ## GroupBox Parts  
@@ -45,5 +45,5 @@ ms.assetid: 33df7037-0a1b-476f-b9d0-41566a777699
 - <xref:System.Windows.Controls.ControlTemplate>
 - [Control Styles and Templates](control-styles-and-templates.md)
 - [Control Customization](control-customization.md)
-- [Styling and Templating](/dotnet/desktop-wpf/fundamentals/styles-templates-overview)
-- [Create a template for a control](/dotnet/desktop-wpf/themes/how-to-create-apply-template)
+- [Styling and Templating](styles-templates-overview.md)
+- [Create a template for a control](how-to-create-apply-template.md)

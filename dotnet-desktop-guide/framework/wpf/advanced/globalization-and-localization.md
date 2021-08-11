@@ -30,6 +30,6 @@ ms.assetid: e96f9764-4e3f-4d1c-bf20-3fb890118aae
   
  <xref:System.Resources.NeutralResourcesLanguageAttribute>  
   
- [xml:lang Handling in XAML](/dotnet/desktop-wpf/xaml-services/xml-language-handling)  
+ [xml:lang Handling in XAML](/dotnet/desktop/xaml-services/xml-language-handling)  
   
 ## Related Sections

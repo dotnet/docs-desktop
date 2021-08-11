@@ -37,5 +37,5 @@ This example shows how to create and set a <xref:System.Windows.Data.Binding> in
   
 ## See also
 
-- [Data Binding Overview](/dotnet/desktop-wpf/data/data-binding-overview)
+- [Data Binding Overview](data-binding-overview.md)
 - [How-to Topics](data-binding-how-to-topics.md)
