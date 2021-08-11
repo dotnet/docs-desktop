@@ -58,5 +58,5 @@ This example shows how to bind to XML data using an <xref:System.Windows.Data.Xm
 - [Bind to XDocument, XElement, or LINQ for XML Query Results](how-to-bind-to-xdocument-xelement-or-linq-for-xml-query-results.md)
 - [Use the Master-Detail Pattern with Hierarchical XML Data](how-to-use-the-master-detail-pattern-with-hierarchical-xml-data.md)
 - [Binding Sources Overview](binding-sources-overview.md)
-- [Data Binding Overview](/dotnet/desktop-wpf/data/data-binding-overview)
+- [Data Binding Overview](data-binding-overview.md)
 - [How-to Topics](data-binding-how-to-topics.md)
