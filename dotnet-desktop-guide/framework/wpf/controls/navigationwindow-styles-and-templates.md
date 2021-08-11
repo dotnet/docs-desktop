@@ -47,5 +47,5 @@ This topic describes the styles and templates for the <xref:System.Windows.Navig
 - <xref:System.Windows.Controls.ControlTemplate>
 - [Control Styles and Templates](control-styles-and-templates.md)
 - [Control Customization](control-customization.md)
-- [Styling and Templating](/dotnet/desktop-wpf/fundamentals/styles-templates-overview)
+- [Styling and Templating](styles-templates-overview.md)
 - [Create a template for a control](how-to-create-apply-template.md)

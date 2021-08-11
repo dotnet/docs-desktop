@@ -129,7 +129,7 @@ The following example creates a simple style (which would be defined inside a <x
 
 [!code-xaml[PropertiesOvwSupport#SimpleStyle](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertiesOvwSupport/CSharp/page3.xaml#simplestyle)]
 
-For more information, see [Styling and Templating](/dotnet/desktop-wpf/fundamentals/styles-templates-overview).
+For more information, see [Styling and Templating](../controls/styles-templates-overview.md).
 
 ### Animations
 Dependency properties can be animated. When an animation is applied and is running, the animated value operates at a higher precedence than any value (such as a local value) that the property otherwise has.

@@ -353,7 +353,7 @@ The following illustration shows the UI elements added to *ExpenseReportPage.xam
 
 ## Style controls
 
-The appearance of various elements is often the same for all elements of the same type in a UI. UI uses [styles](/dotnet/desktop-wpf/fundamentals/styles-templates-overview) to make appearances reusable across multiple elements. The reusability of styles helps to simplify XAML creation and management. This section replaces the per-element attributes that were defined in previous steps with styles.
+The appearance of various elements is often the same for all elements of the same type in a UI. UI uses [styles](../controls/styles-templates-overview.md) to make appearances reusable across multiple elements. The reusability of styles helps to simplify XAML creation and management. This section replaces the per-element attributes that were defined in previous steps with styles.
 
 1. Open *Application.xaml* or *App.xaml*.
 

@@ -419,7 +419,7 @@ For more information on the kinds of content that is supported by various contro
 
 ### Triggers
 
-Although the main purpose of XAML markup is to implement an application's appearance, you can also use XAML to implement some aspects of an application's behavior. One example is the use of triggers to change an application's appearance based on user interactions. For more information, see [Styles and templates](/dotnet/desktop-wpf/fundamentals/styles-templates-overview).
+Although the main purpose of XAML markup is to implement an application's appearance, you can also use XAML to implement some aspects of an application's behavior. One example is the use of triggers to change an application's appearance based on user interactions. For more information, see [Styles and templates](controls/styles-templates-overview.md).
 
 ### Control templates
 
