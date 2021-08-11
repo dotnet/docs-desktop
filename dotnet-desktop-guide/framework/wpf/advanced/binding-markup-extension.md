@@ -120,5 +120,5 @@ Defers a property value to be a data-bound value, creating an intermediate expre
 
 - <xref:System.Windows.Data.Binding>
 - [Data Binding Overview](/dotnet/desktop-wpf/data/data-binding-overview)
-- [XAML Overview (WPF)](/dotnet/desktop-wpf/fundamentals/xaml)
+- [XAML in WPF](xaml-in-wpf.md)
 - [Markup Extensions and WPF XAML](markup-extensions-and-wpf-xaml.md)

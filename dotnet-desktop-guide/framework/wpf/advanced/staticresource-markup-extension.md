@@ -65,7 +65,7 @@ Provides a value for any [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla
 ## See also
 
 - [Styling and Templating](/dotnet/desktop-wpf/fundamentals/styles-templates-overview)
-- [XAML Overview (WPF)](/dotnet/desktop-wpf/fundamentals/xaml)
+- [XAML in WPF](xaml-in-wpf.md)
 - [Markup Extensions and WPF XAML](markup-extensions-and-wpf-xaml.md)
 - [XAML Resources](/dotnet/desktop-wpf/fundamentals/xaml-resources-define)
 - [Resources and Code](resources-and-code.md)

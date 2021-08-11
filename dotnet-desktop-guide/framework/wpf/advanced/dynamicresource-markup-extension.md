@@ -71,7 +71,7 @@ Provides a value for any [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla
 - [XAML Resources](/dotnet/desktop-wpf/fundamentals/xaml-resources-define)
 - [Resources and Code](resources-and-code.md)
 - [x:Key Directive](/dotnet/desktop/xaml-services/xkey-directive)
-- [XAML Overview (WPF)](/dotnet/desktop-wpf/fundamentals/xaml)
+- [XAML in WPF](xaml-in-wpf.md)
 - [Markup Extensions and WPF XAML](markup-extensions-and-wpf-xaml.md)
 - [StaticResource Markup Extension](staticresource-markup-extension.md)
 - [Markup Extensions and WPF XAML](markup-extensions-and-wpf-xaml.md)

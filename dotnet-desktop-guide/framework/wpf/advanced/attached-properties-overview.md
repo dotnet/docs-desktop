@@ -142,5 +142,5 @@ WPF defines several .NET attributes that are intended to provide information abo
 - <xref:System.Windows.DependencyProperty>
 - [Dependency Properties Overview](dependency-properties-overview.md)
 - [Custom Dependency Properties](custom-dependency-properties.md)
-- [XAML Overview (WPF)](/dotnet/desktop-wpf/fundamentals/xaml)
+- [XAML in WPF](xaml-in-wpf.md)
 - [Register an Attached Property](how-to-register-an-attached-property.md)

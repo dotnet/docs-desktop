@@ -476,7 +476,7 @@ The following illustration shows both pages of the `ExpenseIt` application with 
 In this walkthrough you learned a number of techniques for creating a UI using Windows Presentation Foundation (WPF). You should now have a basic understanding of the building blocks of a data-bound .NET app. For more information about the WPF architecture and programming models, see the following topics:
 
 - [WPF architecture](../advanced/wpf-architecture.md)
-- [XAML overview (WPF)](/dotnet/desktop-wpf/fundamentals/xaml)
+- [XAML in WPF](../advanced/xaml-in-wpf.md)
 - [Dependency properties overview](../advanced/dependency-properties-overview.md)
 - [Layout](../advanced/layout.md)
 
