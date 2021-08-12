@@ -11,7 +11,7 @@ helpviewer_keywords:
 ms.assetid: da2e5a1c-5230-4c21-98a5-59c7895facd7
 ---
 # Expander Styles and Templates
-This topic describes the styles and templates for the <xref:System.Windows.Controls.Expander> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [Create a template for a control](/dotnet/desktop-wpf/themes/how-to-create-apply-template).  
+This topic describes the styles and templates for the <xref:System.Windows.Controls.Expander> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [Create a template for a control](how-to-create-apply-template.md).  
   
 ## Expander Parts  
  The <xref:System.Windows.Controls.Expander> control does not have any named parts.  
@@ -53,5 +53,5 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 - <xref:System.Windows.Controls.ControlTemplate>
 - [Control Styles and Templates](control-styles-and-templates.md)
 - [Control Customization](control-customization.md)
-- [Styling and Templating](/dotnet/desktop-wpf/fundamentals/styles-templates-overview)
-- [Create a template for a control](/dotnet/desktop-wpf/themes/how-to-create-apply-template)
+- [Styling and Templating](styles-templates-overview.md)
+- [Create a template for a control](how-to-create-apply-template.md)

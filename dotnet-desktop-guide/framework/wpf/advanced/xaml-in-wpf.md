@@ -14,7 +14,7 @@ ms.assetid: 5d858575-a83b-42df-ad3f-047ed2d6e3c8
   
 ## In This Section  
 
-[XAML Overview (WPF)](/dotnet/desktop-wpf/fundamentals/xaml)  
+[XAML in WPF](xaml-in-wpf.md)  
 [XAML Syntax In Detail](xaml-syntax-in-detail.md)  
 [Code-Behind and XAML in WPF](code-behind-and-xaml-in-wpf.md)  
 [XAML and Custom Classes for WPF](xaml-and-custom-classes-for-wpf.md)  
@@ -22,10 +22,10 @@ ms.assetid: 5d858575-a83b-42df-ad3f-047ed2d6e3c8
 [XAML Namespaces and Namespace Mapping for WPF XAML](xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md)  
 [WPF XAML Namescopes](wpf-xaml-namescopes.md)  
 [Inline Styles and Templates](inline-styles-and-templates.md)  
-[White-space Processing in XAML](/dotnet/desktop-wpf/xaml-services/white-space-processing)  
+[White-space Processing in XAML](/dotnet/desktop/xaml-services/white-space-processing)  
 [TypeConverters and XAML](typeconverters-and-xaml.md)  
-[XML Character Entities and XAML](/dotnet/desktop-wpf/xaml-services/xml-character-entities)  
-[XAML Namespace (x:) Language Features](/dotnet/desktop-wpf/xaml-services/namespace-language-features)  
+[XML Character Entities and XAML](/dotnet/desktop/xaml-services/xml-character-entities)  
+[XAML Namespace (x:) Language Features](/dotnet/desktop/xaml-services/namespace-language-features)  
 [WPF XAML Extensions](wpf-xaml-extensions.md)  
 [Markup Compatibility (mc:) Language Features](markup-compatibility-mc-language-features.md)  
   
@@ -38,5 +38,5 @@ ms.assetid: 5d858575-a83b-42df-ad3f-047ed2d6e3c8
 [Events](events-wpf.md)  
 [Input](input-wpf.md)  
 [Resources](resources-wpf.md)  
-[Styling and Templating](/dotnet/desktop-wpf/fundamentals/styles-templates-overview)  
+[Styling and Templating](../controls/styles-templates-overview.md)  
 [Threading Model](threading-model.md)

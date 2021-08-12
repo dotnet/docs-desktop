@@ -11,7 +11,7 @@ helpviewer_keywords:
 ms.assetid: 405fe385-4de9-49ee-a448-d8f4d1f740dd
 ---
 # ToolTip Styles and Templates
-This topic describes the styles and templates for the <xref:System.Windows.Controls.ToolTip> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [Create a template for a control](/dotnet/desktop-wpf/themes/how-to-create-apply-template).  
+This topic describes the styles and templates for the <xref:System.Windows.Controls.ToolTip> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [Create a template for a control](how-to-create-apply-template.md).  
   
 ## ToolTip Parts  
  The <xref:System.Windows.Controls.ToolTip> control does not have any named parts.  
@@ -44,5 +44,5 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 - <xref:System.Windows.Controls.ControlTemplate>
 - [Control Styles and Templates](control-styles-and-templates.md)
 - [Control Customization](control-customization.md)
-- [Styling and Templating](/dotnet/desktop-wpf/fundamentals/styles-templates-overview)
-- [Create a template for a control](/dotnet/desktop-wpf/themes/how-to-create-apply-template)
+- [Styling and Templating](styles-templates-overview.md)
+- [Create a template for a control](how-to-create-apply-template.md)

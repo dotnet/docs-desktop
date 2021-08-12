@@ -292,4 +292,4 @@ ms.assetid: ee1baea0-3611-4e36-9ad6-fcd5205376fb
 - [Patterns and Practices Security Guidance for Applications](/previous-versions/msp-n-p/ff650760(v=pandp.10))
 - [Code Access Security](/dotnet/framework/misc/code-access-security)
 - [ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment)
-- [XAML Overview (WPF)](/dotnet/desktop-wpf/fundamentals/xaml)
+- [XAML in WPF](advanced/xaml-in-wpf.md)
