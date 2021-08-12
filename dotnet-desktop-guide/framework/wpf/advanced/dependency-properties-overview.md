@@ -56,7 +56,7 @@ The following XAML example specifies the background color of a button as red. Th
 
 [!code-xaml[PropertiesOvwSupport#MostBasicProperty](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertiesOvwSupport/CSharp/Page1.xaml#mostbasicproperty)]
 
-XAML supports a variety of syntax forms for setting properties. Which syntax to use for a particular property will depend on the value type that a property uses, as well as other factors such as the presence of a type converter. For more information on XAML syntax for property setting, see [XAML Overview (WPF)](/dotnet/desktop-wpf/fundamentals/xaml) and [XAML Syntax In Detail](xaml-syntax-in-detail.md).
+XAML supports a variety of syntax forms for setting properties. Which syntax to use for a particular property will depend on the value type that a property uses, as well as other factors such as the presence of a type converter. For more information on XAML syntax for property setting, see [XAML in WPF](xaml-in-wpf.md) and [XAML Syntax In Detail](xaml-syntax-in-detail.md).
 
 As an example of non-attribute syntax, the following XAML example shows another button background. This time rather than setting a simple solid color, the background is set to an image, with an element representing that image and the source of that image specified as an attribute of the nested element. This is an example of property element syntax.
 
@@ -118,7 +118,7 @@ The following example sets the <xref:System.Windows.Controls.ContentControl.Cont
 > [!NOTE]
 > Bindings are treated as a local value, which means that if you set another local value, you will eliminate the binding. For details, see [Dependency Property Value Precedence](dependency-property-value-precedence.md).
 
-Dependency properties, or the <xref:System.Windows.DependencyObject> class, do not natively support <xref:System.ComponentModel.INotifyPropertyChanged> for purposes of producing notifications of changes in <xref:System.Windows.DependencyObject> source property value for data binding operations. For more information on how to create properties for use in data binding that can report changes to a data binding target, see [Data Binding Overview](/dotnet/desktop-wpf/data/data-binding-overview).
+Dependency properties, or the <xref:System.Windows.DependencyObject> class, do not natively support <xref:System.ComponentModel.INotifyPropertyChanged> for purposes of producing notifications of changes in <xref:System.Windows.DependencyObject> source property value for data binding operations. For more information on how to create properties for use in data binding that can report changes to a data binding target, see [Data Binding Overview](../data/data-binding-overview.md).
 
 ### Styles
 Styles and templates are two of the chief motivating scenarios for using dependency properties. Styles are particularly useful for setting properties that define application [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)]. Styles are typically defined as resources in XAML. Styles interact with the property system because they typically contain "setters" for particular properties, as well as "triggers" that change a property value based on the real-time value for another property.
@@ -129,7 +129,7 @@ The following example creates a simple style (which would be defined inside a <x
 
 [!code-xaml[PropertiesOvwSupport#SimpleStyle](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertiesOvwSupport/CSharp/page3.xaml#simplestyle)]
 
-For more information, see [Styling and Templating](/dotnet/desktop-wpf/fundamentals/styles-templates-overview).
+For more information, see [Styling and Templating](../controls/styles-templates-overview.md).
 
 ### Animations
 Dependency properties can be animated. When an animation is applied and is running, the animated value operates at a higher precedence than any value (such as a local value) that the property otherwise has.
@@ -195,5 +195,5 @@ Typically, you would not want styles to always apply and to obscure even a local
 
 - [Custom Dependency Properties](custom-dependency-properties.md)
 - [Read-Only Dependency Properties](read-only-dependency-properties.md)
-- [XAML Overview (WPF)](/dotnet/desktop-wpf/fundamentals/xaml)
+- [XAML in WPF](xaml-in-wpf.md)
 - [WPF Architecture](wpf-architecture.md)

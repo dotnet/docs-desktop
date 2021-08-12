@@ -42,7 +42,7 @@ A high percentage of classes in [!INCLUDE[TLA#tla_winclient](../../../includes/t
   
 - Support for styling and storyboards. For more information, see <xref:System.Windows.Style> and [Storyboards Overview](../graphics-multimedia/storyboards-overview.md).  
   
-- Support for data binding. For more information, see [Data Binding Overview](/dotnet/desktop-wpf/data/data-binding-overview).  
+- Support for data binding. For more information, see [Data Binding Overview](../data/data-binding-overview.md).  
   
 - Support for dynamic resource references. For more information, see [XAML Resources](/dotnet/desktop-wpf/fundamentals/xaml-resources-define).  
   
@@ -62,7 +62,7 @@ A high percentage of classes in [!INCLUDE[TLA#tla_winclient](../../../includes/t
   
 - Support for styling and storyboards. For more information, see <xref:System.Windows.Style> and [Animation Overview](../graphics-multimedia/animation-overview.md).  
   
-- Support for data binding. For more information, see [Data Binding Overview](/dotnet/desktop-wpf/data/data-binding-overview).  
+- Support for data binding. For more information, see [Data Binding Overview](../data/data-binding-overview.md).  
   
 - Support for dynamic resource references. For more information, see [XAML Resources](/dotnet/desktop-wpf/fundamentals/xaml-resources-define).  
   

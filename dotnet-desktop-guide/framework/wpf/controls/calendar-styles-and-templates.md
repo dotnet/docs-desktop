@@ -11,7 +11,7 @@ helpviewer_keywords:
 ms.assetid: f4fcf046-7a8f-41b8-b5a8-534b64e0345c
 ---
 # Calendar Styles and Templates
-This topic describes the styles and templates for the <xref:System.Windows.Controls.Calendar> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [Create a template for a control](/dotnet/desktop-wpf/themes/how-to-create-apply-template).  
+This topic describes the styles and templates for the <xref:System.Windows.Controls.Calendar> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [Create a template for a control](how-to-create-apply-template.md).  
   
 ## Calendar Parts  
  The following table lists the named parts for the <xref:System.Windows.Controls.Calendar> control.  
@@ -127,5 +127,5 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 - <xref:System.Windows.Controls.ControlTemplate>
 - [Control Styles and Templates](control-styles-and-templates.md)
 - [Control Customization](control-customization.md)
-- [Styling and Templating](/dotnet/desktop-wpf/fundamentals/styles-templates-overview)
-- [Create a template for a control](/dotnet/desktop-wpf/themes/how-to-create-apply-template)
+- [Styling and Templating](styles-templates-overview.md)
+- [Create a template for a control](how-to-create-apply-template.md)

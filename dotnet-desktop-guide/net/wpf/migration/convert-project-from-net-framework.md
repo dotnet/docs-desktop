@@ -11,10 +11,15 @@ ms.topic: how-to
 
 This article covers the steps necessary to migrate a Windows Presentation Foundation (WPF) app from .NET Framework to .NET Core 3.0. If you don't have a WPF app on hand to port, but would like to try out the process, you can use the **Bean Trader** sample app available on [GitHub](https://github.com/dotnet/windows-desktop/tree/main/Samples/BeanTrader). The original app (targeting .NET Framework 4.7.2) is available in the NetFx\BeanTraderClient folder. First we'll explain the steps necessary to port apps in general, and then we'll walk through the specific changes that apply to the **Bean Trader** sample.
 
-> [!TIP]
-> Try the [.NET Upgrade Assistant](/dotnet/core/porting/upgrade-assistant-wpf-framework) to help migrate your own project.
-
 [!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
+
+## Try the upgrade assistant
+
+The .NET Upgrade Assistant is a command-line tool that can be run on different kinds of .NET Framework apps. It's designed to assist with upgrading .NET Framework apps to .NET 5. After running the tool, in most cases the app will require additional effort to complete the migration. The tool includes the installation of analyzers that can assist with completing the migration.
+
+For more information, see [Upgrade a Windows Forms App to .NET 5 with the .NET Upgrade Assistant](/dotnet/core/porting/upgrade-assistant-winforms-framework).
+
+## Prerequisites
 
 To migrate to .NET Core, you must first:
 

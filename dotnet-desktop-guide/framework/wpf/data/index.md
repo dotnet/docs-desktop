@@ -13,7 +13,7 @@ ms.assetid: dea454e2-abd8-4c53-ba37-d3ed53187d64
 [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] data binding provides a simple and consistent way for applications to present and interact with data. Elements can be bound to data from a variety of data sources in the form of common language runtime (CLR) objects and XML. [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] also provides a mechanism for the transfer of data through drag-and-drop operations.  
   
 ## In This Section  
- [Data Binding](/dotnet/desktop-wpf/data/data-binding-overview)  
+ [Data Binding](data-binding-overview.md)  
  [Drag and Drop](../advanced/drag-and-drop.md)  
   
 ## Reference  
@@ -28,7 +28,7 @@ ms.assetid: dea454e2-abd8-4c53-ba37-d3ed53187d64
 ## Related Sections  
  [Controls](../controls/index.md)  
   
- [Styling and Templating](/dotnet/desktop-wpf/fundamentals/styles-templates-overview)  
+ [Styling and Templating](../controls/styles-templates-overview.md)  
   
  [Data Binding](../advanced/optimizing-performance-data-binding.md)  
   

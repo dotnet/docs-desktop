@@ -39,5 +39,5 @@ This topic discusses various ways you can make data available for binding in [!I
   
 ## See also
 
-- [Data Binding Overview](/dotnet/desktop-wpf/data/data-binding-overview)
+- [Data Binding Overview](data-binding-overview.md)
 - [How-to Topics](data-binding-how-to-topics.md)

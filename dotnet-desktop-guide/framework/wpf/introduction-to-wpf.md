@@ -249,7 +249,7 @@ In this example, the `Person` class is instantiated in code-behind and is set as
 
 The WPF data binding engine provides additional support that includes validation, sorting, filtering, and grouping. Furthermore, data binding supports the use of data templates to create custom user interface for bound data when the user interface displayed by the standard WPF controls is not appropriate.
 
-For more information, see [Data binding overview](/dotnet/desktop-wpf/data/data-binding-overview).
+For more information, see [Data binding overview](data/data-binding-overview.md).
 
 ## Graphics
 
@@ -280,7 +280,7 @@ The following figure shows what is produced by the preceding code:
 
 ![A window with the text "you clicked the ellipse&#33;"](media/introduction-to-wpf/wpfintrofigure12.png)
 
-For more information, see [Shapes and basic drawing in WPF overview](/dotnet/desktop-wpf/data/data-binding-overview).
+For more information, see [Shapes and basic drawing in WPF overview](data/data-binding-overview.md).
 
 ### 2D geometries
 
@@ -419,7 +419,7 @@ For more information on the kinds of content that is supported by various contro
 
 ### Triggers
 
-Although the main purpose of XAML markup is to implement an application's appearance, you can also use XAML to implement some aspects of an application's behavior. One example is the use of triggers to change an application's appearance based on user interactions. For more information, see [Styles and templates](/dotnet/desktop-wpf/fundamentals/styles-templates-overview).
+Although the main purpose of XAML markup is to implement an application's appearance, you can also use XAML to implement some aspects of an application's behavior. One example is the use of triggers to change an application's appearance based on user interactions. For more information, see [Styles and templates](controls/styles-templates-overview.md).
 
 ### Control templates
 
