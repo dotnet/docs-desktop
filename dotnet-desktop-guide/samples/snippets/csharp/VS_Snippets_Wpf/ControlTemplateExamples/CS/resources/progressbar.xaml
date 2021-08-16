@@ -65,7 +65,7 @@
                 <Rectangle x:Name="PART_GlowRect"
                            Width="100"
                            HorizontalAlignment="Left"
-                           Fill="{StaticResource ProgressBarIndicatorAnimatedFill}"
+                           Fill="{DynamicResource ProgressBarIndicatorAnimatedFill}"
                            Margin="-100,0,0,0" />
               </Grid>
             </Border>
