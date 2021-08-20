@@ -76,7 +76,7 @@ namespace CodeSampleCsharp
                 FixedDocumentSequence fixedDocSeq = xpsDocument.GetFixedDocumentSequence();
 
                 // Launch a 'Save Print Output As' dialog, and then print to the specified output file
-                printDialog.PrintDocument(null, $"Printing {Path.GetFileName(txtXpsFilePath.Text)}");
+                printDialog.PrintDocument(fixedDocSeq.DocumentPaginator, $"Printing {Path.GetFileName(txtXpsFilePath.Text)}");
             }
             catch (Exception e2)
             {
