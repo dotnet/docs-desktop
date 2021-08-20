@@ -35,6 +35,6 @@ You can even use the <xref:System.Windows.Controls.PrintDialog.PrintDocument%2A>
 ## See also
 
 - <xref:System.Windows.Controls.PrintDialog>
-- [Documents in WPF](documents-in-wpf.md)
+- [Documents in WPF](/framework/wpf/advanced/documents-in-wpf.md)
 - [Printing Overview](printing-overview.md)
 - [Microsoft XPS Document Writer](/windows/win32/printdocs/microsoft-xps-document-writer)
