@@ -14,7 +14,7 @@ ms.assetid: 241c1ce2-60f8-4613-a0ec-9b9bb25fb6af
   
  A <xref:System.Windows.Controls.Label> provides both functional and visual support for access keys. It is frequently used to enable quick keyboard access to controls such as a <xref:System.Windows.Controls.TextBox>. To assign a <xref:System.Windows.Controls.Label> to a <xref:System.Windows.Controls.Control>, set the <xref:System.Windows.Controls.Label.Target%2A?displayProperty=nameWithType> property to the control that should get focus when the user presses the access key.  
   
- The following image shows a <xref:System.Windows.Controls.Label> "Themes" that targets a <xref:System.Windows.Controls.ComboBox>.  When the user presses , the <xref:System.Windows.Controls.ComboBox> receives focus.  For more information, see [How to: Set the Target Property of a Label](/previous-versions/dotnet/netframework-3.5/ms752101(v=vs.90)).  
+ The following image shows a <xref:System.Windows.Controls.Label> "Theme" that targets a <xref:System.Windows.Controls.ComboBox>.  When the user presses <kbd>T</kbd>, the <xref:System.Windows.Controls.ComboBox> receives focus.  For more information, see [How to: Set the Target Property of a Label](/previous-versions/dotnet/netframework-3.5/ms752101(v=vs.90)).  
   
  ![Screenshot of Display Properties dialog showing labeled by usage.](./media/label/display-properties-labeled-by.png "LabeledBy")  
   
