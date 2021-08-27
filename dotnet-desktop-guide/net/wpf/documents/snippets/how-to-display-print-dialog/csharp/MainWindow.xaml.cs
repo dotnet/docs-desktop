@@ -40,7 +40,7 @@ namespace CodeSampleCsharp
                 Filter = "Text documents (.xps)|*.xps" // Filter files by extension
             };
 
-            // Show open file dialog box.
+            // Show open file dialog box
             bool? result = openFileDialog.ShowDialog();
 
             // Process open file dialog box results
@@ -70,8 +70,8 @@ namespace CodeSampleCsharp
         }
 
         /// <summary>
-        /// Print an XPS document to OXPS format. Optionally, print all pages 
-        /// without showing a print dialog window.
+        /// Print an XPS document to OXPS format.
+        /// Optionally, print all pages without showing a print dialog window.
         /// </summary>
         /// <param name="xpsFilePath">Path to source XPS file</param>
         /// <param name="hidePrintDialog">Whether to hide the print dialog window (shown by default)</param>
