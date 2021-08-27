@@ -74,16 +74,16 @@ namespace CodeSampleCsharp
         /// without showing a print dialog window.
         /// </summary>
         /// <param name="xpsFilePath">Path to source XPS file</param>
-        /// <param name="hidePrintDialog">Whether to hide the Print Dialog</param>
+        /// <param name="hidePrintDialog">Whether to hide the print dialog window (shown by default)</param>
         // <SampleCode>
-        private static void PrintFile(string xpsFilePath, bool hidePrintDialog)
+        private static void PrintFile(string xpsFilePath, bool hidePrintDialog = false)
         {
             // Create the print dialog object and set options
             PrintDialog printDialog = new();
 
-            // Display the dialog. This returns true if the user presses the Print button
             if (!hidePrintDialog)
             {
+                // Display the dialog. This returns true if the user presses the Print button
                 bool? isPrinted = printDialog.ShowDialog();
                 if (isPrinted != true)
                     return;
