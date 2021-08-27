@@ -54,22 +54,25 @@ namespace CodeSampleCsharp
                 return;
             }
 
-            PrintFile(txtXpsFilePath.Text);
+            PrintFile(txtXpsFilePath.Text, useDialog: cbxUsePrintDialog.IsChecked == true);
         }
 
         // <SampleCode>
-        private static void PrintFile(string xpsFilePath)
+        private static void PrintFile(string xpsFilePath, bool useDialog)
         {
             // Create the print dialog object and set options
             PrintDialog printDialog = new()
             {
-                UserPageRangeEnabled = true
+                UserPageRangeEnabled = useDialog
             };
 
             // Display the dialog. This returns true if the user presses the Print button
-            bool? isPrinted = printDialog.ShowDialog();
-            if (isPrinted != true)
-                return;
+            if (useDialog)
+            {
+                bool? isPrinted = printDialog.ShowDialog();
+                if (isPrinted != true)
+                    return;
+            }
 
             // Print the document to an XPS or OXPS file
             try
@@ -84,11 +87,11 @@ namespace CodeSampleCsharp
                 DocumentPaginator docPaginator = fixedDocSeq.DocumentPaginator;
 
                 // Check whether a page range was specified in the print dialog
-                //if (printDialog.PageRangeSelection == PageRangeSelection.UserPages)
-                //{
-                //    // Create a document paginator for the specified range of pages
-                //    docPaginator = new DocPaginator(fixedDocSeq.DocumentPaginator, printDialog.PageRange);
-                //}
+                if (printDialog.PageRangeSelection == PageRangeSelection.UserPages)
+                {
+                    // Create a document paginator for the specified range of pages
+                    docPaginator = new DocPaginator(fixedDocSeq.DocumentPaginator, printDialog.PageRange);
+                }
 
                 // Print to a new file
                 printDialog.PrintDocument(docPaginator, $"Printing {Path.GetFileName(xpsFilePath)}");
