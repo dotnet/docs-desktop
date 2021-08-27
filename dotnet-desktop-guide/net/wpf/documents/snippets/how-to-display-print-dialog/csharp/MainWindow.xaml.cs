@@ -24,6 +24,12 @@ namespace CodeSampleCsharp
             btnPrint.Click += BtnPrint_Click;
         }
 
+        /// <summary>
+        /// Browse button click event handler
+        /// Gets the path to a source XPS file
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void BtnBrowse_Click(object sender, RoutedEventArgs e)
         {
             // Configure an open file dialog box
@@ -45,6 +51,12 @@ namespace CodeSampleCsharp
             }
         }
 
+
+        /// <summary>
+        /// Print button click event handler
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void BtnPrint_Click(object sender, RoutedEventArgs e)
         {
             // Check the file exists
@@ -54,11 +66,58 @@ namespace CodeSampleCsharp
                 return;
             }
 
-            PrintFile(txtXpsFilePath.Text, useDialog: cbxUsePrintDialog.IsChecked == true);
+            PrintFile(txtXpsFilePath.Text, hidePrintDialog: cbxUsePrintDialog.IsChecked != true);
         }
 
+        /// <summary>
+        /// Print an XPS document to OXPS format. Optionally, print all pages 
+        /// without showing a print dialog window.
+        /// </summary>
+        /// <param name="xpsFilePath">Path to source XPS file</param>
+        /// <param name="hidePrintDialog">Whether to hide the Print Dialog</param>
         // <SampleCode>
-        private static void PrintFile(string xpsFilePath, bool useDialog)
+        private static void PrintFile(string xpsFilePath, bool hidePrintDialog)
+        {
+            // Create the print dialog object and set options
+            PrintDialog printDialog = new();
+
+            // Display the dialog. This returns true if the user presses the Print button
+            if (!hidePrintDialog)
+            {
+                bool? isPrinted = printDialog.ShowDialog();
+                if (isPrinted != true)
+                    return;
+            }
+
+            // Print the document to an XPS or OXPS file
+            try
+            {
+                // Open the selected file
+                XpsDocument xpsDocument = new(xpsFilePath, FileAccess.Read);
+
+                // Get a fixed document sequence for the selected file
+                FixedDocumentSequence fixedDocSeq = xpsDocument.GetFixedDocumentSequence();
+
+                // Create a paginator for all pages in the selected file
+                DocumentPaginator docPaginator = fixedDocSeq.DocumentPaginator;
+
+                // Print to a new file
+                printDialog.PrintDocument(docPaginator, $"Printing {Path.GetFileName(xpsFilePath)}");
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
+        }
+        // </SampleCode>
+
+        /// <summary>
+        /// Print an XPS document to OXPS format. Optionally, print a specific range
+        /// of pages using a print dialog window, or all pages without the dialog.
+        /// </summary>
+        /// <param name="xpsFilePath">Path to source XPS file</param>
+        /// <param name="useDialog">Whether to launch a Print Dialog</param>
+        private static void PrintFileWithSpecificPages(string xpsFilePath, bool useDialog)
         {
             // Create the print dialog object and set options
             PrintDialog printDialog = new()
@@ -101,8 +160,10 @@ namespace CodeSampleCsharp
                 MessageBox.Show(e2.Message);
             }
         }
-        // </SampleCode>
 
+        /// <summary>
+        /// Extend the abstract DocumentPaginator to support printing specific page ranges
+        /// </summary>
         public class DocPaginator : DocumentPaginator
         {
             private readonly DocumentPaginator _documentPaginator;
