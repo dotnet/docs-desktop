@@ -66,7 +66,7 @@ namespace CodeSampleCsharp
                 return;
             }
 
-            PrintFile(txtXpsFilePath.Text, hidePrintDialog: cbxUsePrintDialog.IsChecked != true);
+            PrintFile(txtXpsFilePath.Text, hidePrintDialog: cbxHidePrintDialog.IsChecked == true);
         }
 
         /// <summary>
