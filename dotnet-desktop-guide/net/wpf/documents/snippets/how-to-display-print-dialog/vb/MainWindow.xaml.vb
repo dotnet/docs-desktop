@@ -11,10 +11,12 @@ Namespace CodeSampleVb
         ''' Interaction logic for MainWindow.xaml
         ''' </summary>
         Public Sub New()
+
             InitializeComponent()
 
             AddHandler btnBrowse.Click, AddressOf BtnBrowse_Click
             AddHandler btnPrint.Click, AddressOf BtnPrint_Click
+
         End Sub
 
         ''' <summary>
@@ -24,6 +26,7 @@ Namespace CodeSampleVb
         ''' <param name="sender"></param>
         ''' <param name="e"></param>
         Private Sub BtnBrowse_Click(sender As Object, e As RoutedEventArgs)
+
             ' Configure an open file dialog box
             Dim openFileDialog As New OpenFileDialog()
             openFileDialog.FileName = "Document"    ' Default file name
@@ -37,6 +40,7 @@ Namespace CodeSampleVb
             If result = True Then
                 txtXpsFilePath.Text = openFileDialog.FileName
             End If
+
         End Sub
 
         ''' <summary>
@@ -45,6 +49,7 @@ Namespace CodeSampleVb
         ''' <param name="sender"></param>
         ''' <param name="e"></param>
         Private Sub BtnPrint_Click(sender As Object, e As RoutedEventArgs)
+
             ' Check the file exists
             If Not File.Exists(txtXpsFilePath.Text) Then
                 MessageBox.Show("First select an XPS file.")
@@ -52,6 +57,7 @@ Namespace CodeSampleVb
             End If
 
             PrintFile(txtXpsFilePath.Text, hidePrintDialog:=cbxHidePrintDialog.IsChecked = True)
+
         End Sub
 
         ''' <summary>
@@ -62,10 +68,12 @@ Namespace CodeSampleVb
         ''' <param name="hidePrintDialog">Whether to hide the print dialog window (shown by default)</param>
         ' <SampleCode>
         Private Shared Sub PrintFile(xpsFilePath As String, Optional hidePrintDialog As Boolean = False)
+
             ' Create the print dialog object and set options
             Dim printDialog As New PrintDialog
 
             If Not hidePrintDialog Then
+                ' Display the dialog. This returns true if the user presses the Print button
                 Dim isPrinted As Boolean? = printDialog.ShowDialog()
                 If isPrinted <> True Then Return
             End If
@@ -85,6 +93,7 @@ Namespace CodeSampleVb
             Catch e As Exception
                 MessageBox.Show(e.Message)
             End Try
+
         End Sub
         ' </SampleCode>
     End Class
