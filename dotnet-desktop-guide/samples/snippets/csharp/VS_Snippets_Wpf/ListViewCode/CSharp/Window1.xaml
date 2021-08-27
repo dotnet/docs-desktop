@@ -16,7 +16,7 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <TextBlock Grid.Row="0" Grid.Column="0" FontSize="14" HorizontalAlignment="Center">
-      ListView created with XAML
+            ListView created with XAML
         </TextBlock>
         <StackPanel Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center">
             <!--<SnippetListViewEmployee>-->
