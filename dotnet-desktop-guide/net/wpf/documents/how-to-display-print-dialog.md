@@ -18,11 +18,11 @@ Want to print from your application? You can use the <xref:System.Windows.Contro
 
 ## Examples
 
-The <xref:System.Windows.Controls.PrintDialog> class provides a single control for print configuration and XPS job submission. The control is easy to use and can be instantiated by using XAML markup or code. These examples create and display a `PrintDialog` instance by using code.
+The <xref:System.Windows.Controls.PrintDialog> class provides a single control for print configuration and XPS job submission. The control is easy to use and can be instantiated by using XAML markup or code. These examples create and display a `PrintDialog` instance using code.
 
 ### Print the whole document
 
-This example prints all pages of an XPS document.
+Here's how to print all pages of an XPS document.
 
 :::code language="csharp" source="./snippets/how-to-display-print-dialog/csharp/MainWindow.xaml.cs" id="SampleCode1":::
 :::code language="vb" source="./snippets/how-to-display-print-dialog/vb/MainWindow.xaml.vb" id="SampleCode1":::
