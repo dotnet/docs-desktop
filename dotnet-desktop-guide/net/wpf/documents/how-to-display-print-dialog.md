@@ -1,6 +1,6 @@
 ---
 title: How to display a print dialog
-description: Learn how to print from your application using the System.Windows.Controls.PrintDialog class to open a standard Microsoft Windows print dialog box.
+description: Learn how to print from your application by using the System.Windows.Controls.PrintDialog class to open a standard Microsoft Windows print dialog box.
 ms.date: 08/20/2021
 dev_langs: 
   - "csharp"
@@ -16,23 +16,36 @@ Want to print from your application? You can use the <xref:System.Windows.Contro
 
 [!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
 
-## Example
+## Examples
 
-The <xref:System.Windows.Controls.PrintDialog> class provides a single control for print configuration and XPS job submission. The control is easy to use and can be instantiated using XAML markup or code. This example creates and displays a `PrintDialog` instance using code.
+The <xref:System.Windows.Controls.PrintDialog> class provides a single control for print configuration and XPS job submission. The control is easy to use and can be instantiated by using XAML markup or code. These examples create and display a `PrintDialog` instance by using code.
 
-:::code language="csharp" source="./snippets/how-to-display-print-dialog/csharp/MainWindow.xaml.cs" id="SampleCode":::
-:::code language="vb" source="./snippets/how-to-display-print-dialog/vb/MainWindow.xaml.vb" id="SampleCode":::
+### Print the whole document
+
+This example prints all pages of an XPS document.
+
+:::code language="csharp" source="./snippets/how-to-display-print-dialog/csharp/MainWindow.xaml.cs" id="SampleCode1":::
+:::code language="vb" source="./snippets/how-to-display-print-dialog/vb/MainWindow.xaml.vb" id="SampleCode1":::
+
+### Print a page range
+
+Sometimes you'll only want to print a specific range of pages within an XPS document. To do this, we extend the abstract DocumentPaginator class to add support for page ranges.
+
+:::code language="csharp" source="./snippets/how-to-display-print-dialog/csharp/MainWindow.xaml.cs" id="SampleCode2":::
+:::code language="vb" source="./snippets/how-to-display-print-dialog/vb/MainWindow.xaml.vb" id="SampleCode2":::
 
 > [!NOTE]
 > The <xref:System.Windows.Controls.PrintDialog?displayProperty=nameWithType> control used for WPF and discussed here, should not be confused with the <xref:System.Windows.Forms.PrintDialog?displayProperty=nameWithType> component of Windows Forms.
 
-Users can use the print dialog to:
+You can use the print dialog to configure print options, such as:
 
-- Select from the printers installed on their computer. The **Microsoft XPS Document Writer** option creates an XML Paper Specification (XPS) file.
 - Print only a specific range of pages.
+- Select from printers installed on your computer. You can use the **Microsoft XPS Document Writer** option to create these document types:
+  - XML Paper Specification (XPS)
+  - Open XML Paper Specification (OpenXPS)
 
 You can even use the <xref:System.Windows.Controls.PrintDialog.PrintDocument%2A> method to print without opening the print dialog. But for performance reasons, it's better to use the <xref:System.Printing.PrintQueue.AddJob%2A> method, or one of the many <xref:System.Windows.Xps.XpsDocumentWriter.Write%2A> and <xref:System.Windows.Xps.XpsDocumentWriter.WriteAsync%2A> methods of the <xref:System.Windows.Xps.XpsDocumentWriter>. For more about this, see [Programmatically Print XPS Files](\how-to-print-xps-files.md).
-  
+
 ## See also
 
 - <xref:System.Windows.Controls.PrintDialog>

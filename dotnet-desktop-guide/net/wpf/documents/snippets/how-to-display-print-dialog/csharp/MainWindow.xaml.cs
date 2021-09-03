@@ -11,7 +11,7 @@ using Microsoft.Win32;
 namespace CodeSampleCsharp
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for MainWindow.xaml.
     /// </summary>
     public partial class MainWindow : Window
     {
@@ -19,150 +19,163 @@ namespace CodeSampleCsharp
         {
             InitializeComponent();
 
-            // Events
+            // Events.
             btnBrowse.Click += BtnBrowse_Click;
             btnPrint.Click += BtnPrint_Click;
         }
 
-        /// <summary>
-        /// Browse button click event handler
-        /// Gets the path to a source XPS file
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
         private void BtnBrowse_Click(object sender, RoutedEventArgs e)
         {
-            // Configure an open file dialog box
+            // Configure an open file dialog box.
             OpenFileDialog openFileDialog = new()
             {
-                FileName = "Document", // Default file name
-                DefaultExt = ".xps", // Default file extension
-                Filter = "Text documents (.xps)|*.xps" // Filter files by extension
+                FileName = "Document",
+                DefaultExt = ".xps",
+                Filter = "Text documents (.xps)|*.xps"
             };
 
-            // Show open file dialog box
+            // Show open file dialog box.
             bool? result = openFileDialog.ShowDialog();
 
-            // Process open file dialog box results
+            // Process open file dialog box results.
             if (result == true)
             {
-                // Show selected XPS file path
+                // Show selected XPS file path.
                 txtXpsFilePath.Text = openFileDialog.FileName;
             }
         }
 
-
-        /// <summary>
-        /// Print button click event handler
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
         private void BtnPrint_Click(object sender, RoutedEventArgs e)
         {
-            // Check the file exists
+            // Check the file exists.
             if (!File.Exists(txtXpsFilePath.Text))
             {
                 MessageBox.Show("First select an XPS file.");
                 return;
             }
 
-            PrintFile(txtXpsFilePath.Text, hidePrintDialog: cbxHidePrintDialog.IsChecked == true);
+            // Get the print dialog visibility.
+            bool hidePrintDialog = cbxHidePrintDialog.IsChecked == true;
+
+            // Print whole document.
+            bool isPrinted = PrintWholeDocument(txtXpsFilePath.Text, hidePrintDialog);
+            MessageBox.Show($"PrintWholeDocument {(isPrinted ? "printed" : "failed to print")}.");
+
+            // Print a specific range of document pages as specified in the print dialog.
+            if (!hidePrintDialog)
+            {
+                isPrinted = PrintDocumentPageRange(txtXpsFilePath.Text);
+                MessageBox.Show($"PrintDocumentPageRange {(isPrinted ? "printed" : "failed to print")}.");
+            }
         }
 
+        // <SampleCode1>
         /// <summary>
-        /// Print an XPS document to OXPS format.
-        /// Optionally, print all pages without showing a print dialog window.
+        /// Print all pages of an XPS document.
+        /// Optionally, hide the print dialog window.
         /// </summary>
         /// <param name="xpsFilePath">Path to source XPS file</param>
         /// <param name="hidePrintDialog">Whether to hide the print dialog window (shown by default)</param>
-        // <SampleCode>
-        private static void PrintFile(string xpsFilePath, bool hidePrintDialog = false)
+        /// <returns>Whether the document printed</returns>
+        public static bool PrintWholeDocument(string xpsFilePath, bool hidePrintDialog = false)
         {
-            // Create the print dialog object and set options
+            // Create the print dialog object and set options.
             PrintDialog printDialog = new();
 
             if (!hidePrintDialog)
             {
-                // Display the dialog. This returns true if the user presses the Print button
+                // Display the dialog. This returns true if the user presses the Print button.
                 bool? isPrinted = printDialog.ShowDialog();
                 if (isPrinted != true)
-                    return;
+                    return false;
             }
 
-            // Print the document to an XPS or OXPS file
+            // Print the whole document.
             try
             {
-                // Open the selected file
+                // Open the selected document.
                 XpsDocument xpsDocument = new(xpsFilePath, FileAccess.Read);
 
-                // Get a fixed document sequence for the selected file
+                // Get a fixed document sequence for the selected document.
                 FixedDocumentSequence fixedDocSeq = xpsDocument.GetFixedDocumentSequence();
 
-                // Create a paginator for all pages in the selected file
+                // Create a paginator for all pages in the selected document.
                 DocumentPaginator docPaginator = fixedDocSeq.DocumentPaginator;
 
-                // Print to a new file
+                // Print to a new file.
                 printDialog.PrintDocument(docPaginator, $"Printing {Path.GetFileName(xpsFilePath)}");
+
+                return true;
             }
             catch (Exception e)
             {
                 MessageBox.Show(e.Message);
+
+                return false;
             }
         }
-        // </SampleCode>
+        // </SampleCode1>
 
+        // <SampleCode2>
         /// <summary>
-        /// Print an XPS document to OXPS format. Optionally, print a specific range
-        /// of pages using a print dialog window, or all pages without the dialog.
+        /// Print a specific range of pages within an XPS document.
         /// </summary>
         /// <param name="xpsFilePath">Path to source XPS file</param>
-        /// <param name="useDialog">Whether to launch a Print Dialog</param>
-        private static void PrintFileWithSpecificPages(string xpsFilePath, bool useDialog)
+        /// <returns>Whether the document printed</returns>
+        public static bool PrintDocumentPageRange(string xpsFilePath)
         {
-            // Create the print dialog object and set options
+            // Create the print dialog object and set options.
             PrintDialog printDialog = new()
             {
-                UserPageRangeEnabled = useDialog
+                UserPageRangeEnabled = true
             };
 
-            // Display the dialog. This returns true if the user presses the Print button
-            if (useDialog)
-            {
-                bool? isPrinted = printDialog.ShowDialog();
-                if (isPrinted != true)
-                    return;
-            }
+            // Display the dialog. This returns true if the user presses the Print button.
+            bool? isPrinted = printDialog.ShowDialog();
+            if (isPrinted != true)
+                return false;
 
-            // Print the document to an XPS or OXPS file
+            // Print a specific page range within the document.
             try
             {
-                // Open the selected file
+                // Open the selected document.
                 XpsDocument xpsDocument = new(xpsFilePath, FileAccess.Read);
 
-                // Get a fixed document sequence for the selected file
+                // Get a fixed document sequence for the selected document.
                 FixedDocumentSequence fixedDocSeq = xpsDocument.GetFixedDocumentSequence();
 
-                // Create a paginator for all pages in the selected file
+                // Create a paginator for all pages in the selected document.
                 DocumentPaginator docPaginator = fixedDocSeq.DocumentPaginator;
 
-                // Check whether a page range was specified in the print dialog
+                // Check whether a page range was specified in the print dialog.
                 if (printDialog.PageRangeSelection == PageRangeSelection.UserPages)
                 {
-                    // Create a document paginator for the specified range of pages
+                    // Create a document paginator for the specified range of pages.
                     docPaginator = new DocPaginator(fixedDocSeq.DocumentPaginator, printDialog.PageRange);
                 }
 
-                // Print to a new file
+                // Print to a new file.
                 printDialog.PrintDocument(docPaginator, $"Printing {Path.GetFileName(xpsFilePath)}");
+
+                return true;
             }
-            catch (Exception e2)
+            catch (Exception e)
             {
-                MessageBox.Show(e2.Message);
+                MessageBox.Show(e.Message);
+
+                return false;
             }
         }
 
         /// <summary>
-        /// Extend the abstract DocumentPaginator to support printing specific page ranges
+        /// Extend the abstract DocumentPaginator class to support page range printing.
+        /// This class is based on the following online resources:
+        /// https://www.thomasclaudiushuber.com/2009/11/24/wpf-printing-how-to-print-a-pagerange-with-wpfs-printdialog-
+        /// that-means-the-user-can-select-specific-pages-and-only-these-pages-are-printed/
+        /// https://social.msdn.microsoft.com/Forums/vstudio/en-US/9180e260-0791-4f2d-962d-abcb22ba8d09/how-to-print-
+        /// multiple-page-ranges-with-wpf-printdialog
+        /// https://social.msdn.microsoft.com/Forums/en-US/841e804b-9130-4476-8709-0d2854c11582/exception-quotfixedpage-
+        /// cannot-contain-another-fixedpagequot-when-printing-to-the-xps-document?forum=wpf
         /// </summary>
         public class DocPaginator : DocumentPaginator
         {
@@ -173,14 +186,14 @@ namespace CodeSampleCsharp
 
             public DocPaginator(DocumentPaginator documentPaginator, PageRange pageRange)
             {
-                // Set document paginator
+                // Set document paginator.
                 _documentPaginator = documentPaginator;
 
-                // Set page indices
+                // Set page indices.
                 _startPageIndex = pageRange.PageFrom - 1;
                 _endPageIndex = pageRange.PageTo - 1;
 
-                // Validate and set page count
+                // Validate and set page count.
                 if (_startPageIndex >= 0 &&
                     _endPageIndex >= 0 &&
                     _startPageIndex <= _documentPaginator.PageCount - 1 &&
@@ -201,7 +214,7 @@ namespace CodeSampleCsharp
             {
                 DocumentPage documentPage = _documentPaginator.GetPage(_startPageIndex + pageNumber);
 
-                // Workaround for "FixedPageInPage" exception
+                // Workaround for "FixedPageInPage" exception.
                 if (documentPage.Visual is FixedPage fixedPage)
                 {
                     var containerVisual = new ContainerVisual();
@@ -223,5 +236,6 @@ namespace CodeSampleCsharp
                 return documentPage;
             }
         }
+        // </SampleCode2>
     }
 }
