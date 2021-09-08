@@ -29,7 +29,7 @@ Here's how to print all pages of an XPS document.
 
 ### Print a page range
 
-Sometimes you'll only want to print a specific range of pages within an XPS document. To do this, we extend the abstract DocumentPaginator class to add support for page ranges.
+Sometimes you'll only want to print a specific range of pages within an XPS document. To do this, we extend the abstract <xref:System.Windows.Documents.DocumentPaginator> class to add support for page ranges.
 
 :::code language="csharp" source="./snippets/how-to-display-print-dialog/csharp/MainWindow.xaml.cs" id="SampleCode2":::
 :::code language="vb" source="./snippets/how-to-display-print-dialog/vb/MainWindow.xaml.vb" id="SampleCode2":::
