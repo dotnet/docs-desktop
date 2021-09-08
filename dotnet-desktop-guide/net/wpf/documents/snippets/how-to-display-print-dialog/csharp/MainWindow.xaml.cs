@@ -168,14 +168,13 @@ namespace CodeSampleCsharp
         }
 
         /// <summary>
-        /// Extend the abstract DocumentPaginator class to support page range printing.
-        /// This class is based on the following online resources:
-        /// https://www.thomasclaudiushuber.com/2009/11/24/wpf-printing-how-to-print-a-pagerange-with-wpfs-printdialog-
-        /// that-means-the-user-can-select-specific-pages-and-only-these-pages-are-printed/
-        /// https://social.msdn.microsoft.com/Forums/vstudio/en-US/9180e260-0791-4f2d-962d-abcb22ba8d09/how-to-print-
-        /// multiple-page-ranges-with-wpf-printdialog
-        /// https://social.msdn.microsoft.com/Forums/en-US/841e804b-9130-4476-8709-0d2854c11582/exception-quotfixedpage-
-        /// cannot-contain-another-fixedpagequot-when-printing-to-the-xps-document?forum=wpf
+        /// Extend the abstract DocumentPaginator class to support page range printing. This class is based on the following online resources:
+        ///
+        /// https://www.thomasclaudiushuber.com/2009/11/24/wpf-printing-how-to-print-a-pagerange-with-wpfs-printdialog-that-means-the-user-can-select-specific-pages-and-only-these-pages-are-printed/
+        ///
+        /// https://social.msdn.microsoft.com/Forums/vstudio/en-US/9180e260-0791-4f2d-962d-abcb22ba8d09/how-to-print-multiple-page-ranges-with-wpf-printdialog
+        ///
+        /// https://social.msdn.microsoft.com/Forums/en-US/841e804b-9130-4476-8709-0d2854c11582/exception-quotfixedpage-cannot-contain-another-fixedpagequot-when-printing-to-the-xps-document?forum=wpf
         /// </summary>
         public class DocPaginator : DocumentPaginator
         {
