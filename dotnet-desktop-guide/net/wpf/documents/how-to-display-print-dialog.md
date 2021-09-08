@@ -16,18 +16,16 @@ Want to print from your application? You can use the <xref:System.Windows.Contro
 
 [!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
 
-## Examples
-
 The <xref:System.Windows.Controls.PrintDialog> class provides a single control for print configuration and XPS job submission. The control is easy to use and can be instantiated by using XAML markup or code. These examples create and display a `PrintDialog` instance using code.
 
-### Print the whole document
+## Print the whole document
 
 Here's how to print all pages of an XPS document.
 
 :::code language="csharp" source="./snippets/how-to-display-print-dialog/csharp/MainWindow.xaml.cs" id="SampleCode1":::
 :::code language="vb" source="./snippets/how-to-display-print-dialog/vb/MainWindow.xaml.vb" id="SampleCode1":::
 
-### Print a page range
+## Print a page range
 
 Sometimes you'll only want to print a specific range of pages within an XPS document. To do this, we extend the abstract DocumentPaginator class to add support for page ranges.
 
