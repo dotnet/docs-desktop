@@ -48,8 +48,8 @@ Sometimes you'll only want to print a specific range of pages within an XPS docu
 
 - Launch a print dialog window that prompts a user to select a printer, specify a range of pages, and then start a print job.
 - Instantiate an <xref:System.Windows.Xps.Packaging.XpsDocument> object with the content of the XPS document.
-- Use the `XpsDocument` object to generate a <xref:System.Windows.Documents.DocumentPaginator> object that holds all pages of the XPS document.
-- Create an instance of an extended `DocumentPaginator` class that supports page ranges, passing in the default `DocumentPaginator` object and the <xref:System.Windows.Controls.PrintDialog.PageRange> returned by the <xref:System.Windows.Controls.PrintDialog>.
+- Use the `XpsDocument` object to generate a default <xref:System.Windows.Documents.DocumentPaginator> object that holds all pages of the XPS document.
+- Create an instance of an extended `DocumentPaginator` class that supports page ranges, passing in the default `DocumentPaginator` object and the <xref:System.Windows.Controls.PrintDialog.PageRange> struct returned by the <xref:System.Windows.Controls.PrintDialog>.
 - Call the <xref:System.Windows.Controls.PrintDialog.PrintDocument%2A> method, passing in the instance of the extended `DocumentPaginator` class, to send the specified page range to the specified printer.
 
 :::code language="csharp" source="./snippets/how-to-display-print-dialog/csharp/MainWindow.xaml.cs" id="SampleCode2":::
