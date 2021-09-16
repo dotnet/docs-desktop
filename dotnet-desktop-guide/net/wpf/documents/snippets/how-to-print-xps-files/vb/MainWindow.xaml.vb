@@ -13,9 +13,6 @@ Namespace CodeSampleVb
 
             InitializeComponent()
 
-            ' Events.
-            AddHandler btnPrint.Click, AddressOf BtnPrint_Click
-
         End Sub
 
         Private Async Sub BtnPrint_Click(sender As Object, e As RoutedEventArgs)

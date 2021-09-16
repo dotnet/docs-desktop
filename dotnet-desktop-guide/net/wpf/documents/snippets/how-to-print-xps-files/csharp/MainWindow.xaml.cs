@@ -16,9 +16,6 @@ namespace CodeSampleCsharp
         public MainWindow()
         {
             InitializeComponent();
-
-            // Events.
-            btnPrint.Click += BtnPrint_Click;
         }
 
         private async void BtnPrint_Click(object sender, RoutedEventArgs e)
@@ -66,9 +63,7 @@ namespace CodeSampleCsharp
             await Task.Run(() =>
             {
                 if (fastCopy)
-                {
                     allAdded = BatchAddToPrintQueue(xpsFilePaths, fastCopy);
-                }
                 else
                 {
                     // Create a thread to call the PrintQueue.AddJob method.
