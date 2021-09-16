@@ -97,7 +97,7 @@ Namespace CodeSampleVb
                     newThread.Start()
 
                     ' Wait for thread completion. Blocks the calling thread,
-                    ' which is we're running this on a ThreadPool thread.
+                    ' which is a ThreadPool thread.
                     newThread.Join()
                 End Sub
             )
