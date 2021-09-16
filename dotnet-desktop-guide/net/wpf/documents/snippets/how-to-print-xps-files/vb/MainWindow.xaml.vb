@@ -33,9 +33,12 @@ Namespace CodeSampleVb
                 Return
             End If
 
+            ' Determine whether XPS validation is needed.
+            Dim fastCopy As Boolean = cbxValidateXps.IsChecked = False
+
             ' Batch add a collection of XPS files to the print queue.
             ' Run asynchronously to avoid blocking the UI thread.
-            Dim isAllPrinted As Boolean = Await BatchAddToPrintQueueAsync(xpsFilePaths)
+            Dim isAllPrinted As Boolean = Await BatchAddToPrintQueueAsync(xpsFilePaths, fastCopy)
 
             ' Show result message.
             MessageBox.Show($"{If(isAllPrinted, "Added", "Failed to add")} all documents to the print queue.")
@@ -46,11 +49,10 @@ Namespace CodeSampleVb
         ' <SampleCode1>
         ''' <summary>
         ''' Batch print a collection of XPS documents using the PrintQueue.AddJob method.
-        ''' The thread that calls PrintQueue.AddJob must have a single-threaded apartment state.
         ''' </summary>
         ''' <param name="xpsFilePaths">A collection of XPS documents.</param>
         ''' <returns>Whether all documents were added to the print queue.</returns>
-        Public Shared Async Function BatchAddToPrintQueueAsync(xpsFilePaths As IEnumerable(Of String)) As Task(Of Boolean)
+        Public Shared Async Function BatchAddToPrintQueueAsync(xpsFilePaths As IEnumerable(Of String), Optional fastCopy As Boolean = False) As Task(Of Boolean)
 
             Dim isAllPrinted As Boolean = True
 
@@ -58,47 +60,26 @@ Namespace CodeSampleVb
             ' Wait for completion without blocking the calling thread.
             Await Task.Run(
                 Sub()
-                    ' Create a thread (single-threaded apartment) to call the PrintQueue.AddJob method.
-                    Dim newThread As New Thread(
-                        Sub()
-                            ' To batch print without getting the "Save Output File As" dialog,
-                            ' ensure that your default printer Is Not Microsoft XPS Document Writer,
-                            ' Microsoft Print to PDF, Or other print-to-file option.
+                    If fastCopy Then
+                        isAllPrinted = BatchPrint(xpsFilePaths, fastCopy)
+                    Else
+                        ' Create a thread (single-threaded apartment) to call the PrintQueue.AddJob method.
+                        Dim newThread As New Thread(
+                            Sub()
+                                isAllPrinted = BatchPrint(xpsFilePaths, fastCopy)
+                            End Sub
+                        )
 
-                            ' Get the default print queue.
-                            Dim defaultPrintQueue As PrintQueue = LocalPrintServer.GetDefaultPrintQueue()
+                        ' Set the thread to single-threaded apartment state.
+                        newThread.SetApartmentState(ApartmentState.STA)
 
-                            ' Iterate through the document collection.
-                            For Each xpsFilePath As String In xpsFilePaths
+                        ' Start the thread.
+                        newThread.Start()
 
-                                ' Get document name.
-                                Dim xpsFileName As String = Path.GetFileName(xpsFilePath)
-
-                                Try
-                                    ' The AddJob method adds a New print job for an XPS
-                                    ' document into the print queue, And assigns a job name.
-                                    ' Use fastCopy to skip XPS validation And progress notifications.
-                                    ' The thread that calls PrintQueue.AddJob must have a single-threaded apartment state.
-                                    Dim xpsPrintJob As PrintSystemJobInfo = defaultPrintQueue.AddJob(jobName:=xpsFileName, documentPath:=xpsFilePath, fastCopy:=False)
-                                    Console.WriteLine($"Added {xpsFileName} to the print queue.")
-                                Catch e As PrintJobException
-                                    isAllPrinted = False
-                                    ' If the queue is not paused and the printer is working, then jobs will automatically begin printing.
-                                    Console.WriteLine($"Failed to add {xpsFileName} to the print queue: {e.Message}")
-                                End Try
-                            Next
-                        End Sub
-                    )
-
-                    ' Set the thread to single-threaded apartment state.
-                    newThread.SetApartmentState(ApartmentState.STA)
-
-                    ' Start the thread.
-                    newThread.Start()
-
-                    ' Wait for thread completion. Blocks the calling thread,
-                    ' which is a ThreadPool thread.
-                    newThread.Join()
+                        ' Wait for thread completion. Blocks the calling thread,
+                        ' which is a ThreadPool thread.
+                        newThread.Join()
+                    End If
                 End Sub
             )
 
@@ -106,6 +87,43 @@ Namespace CodeSampleVb
 
         End Function
 
+        Private Shared Function BatchPrint(xpsFilePaths As IEnumerable(Of String), fastCopy As Boolean) As Boolean
+
+            Dim isAllPrinted As Boolean = True
+
+            ' To batch print without getting the "Save Output File As" dialog,
+            ' ensure that your default printer is not Microsoft XPS Document Writer,
+            ' Microsoft Print to PDF, or other print-to-file option.
+
+            ' Get the default print queue.
+            Dim defaultPrintQueue As PrintQueue = LocalPrintServer.GetDefaultPrintQueue()
+
+            ' Iterate through the document collection.
+            For Each xpsFilePath As String In xpsFilePaths
+
+                ' Get document name.
+                Dim xpsFileName As String = Path.GetFileName(xpsFilePath)
+
+                Try
+                    ' The AddJob method adds a new print job for an XPS
+                    ' document into the print queue, and assigns a job name.
+                    ' Use fastCopy to skip XPS validation and progress notifications.
+                    ' If fastCopy is false, the thread that calls PrintQueue.AddJob
+                    ' must have a single-threaded apartment state.
+                    Dim xpsPrintJob As PrintSystemJobInfo = defaultPrintQueue.AddJob(jobName:=xpsFileName, documentPath:=xpsFilePath, fastCopy)
+
+                    ' If the queue is not paused and the printer is working, then jobs will automatically begin printing.
+                    Debug.WriteLine($"Added {xpsFileName} to the print queue.")
+                Catch e As PrintJobException
+                    isAllPrinted = False
+                    Debug.WriteLine($"Failed to add {xpsFileName} to the print queue: {e.Message}\r\n{e.InnerException}")
+                End Try
+            Next
+
+            Return isAllPrinted
+
+        End Function
+        ' </SampleCode1>
     End Class
 
 End Namespace
