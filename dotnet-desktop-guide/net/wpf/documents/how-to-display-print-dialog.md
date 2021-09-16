@@ -34,10 +34,10 @@ You can even use the <xref:System.Windows.Controls.PrintDialog.PrintDocument%2A>
 
 This example prints all pages of an XPS document. By default, the code will:
 
-- Open a print dialog window that prompts the user to select a printer and then start a print job.
-- Instantiate an <xref:System.Windows.Xps.Packaging.XpsDocument> object with the content of the XPS document.
-- Use the `XpsDocument` object to generate a <xref:System.Windows.Documents.DocumentPaginator> object that holds all pages of the XPS document.
-- Call the <xref:System.Windows.Controls.PrintDialog.PrintDocument%2A> method, passing in the `DocumentPaginator` object, to send all pages to the specified printer.
+1. Open a print dialog window that prompts the user to select a printer and start a print job.
+1. Instantiate an <xref:System.Windows.Xps.Packaging.XpsDocument> object with the content of the XPS document.
+1. Use the `XpsDocument` object to generate a <xref:System.Windows.Documents.DocumentPaginator> object that holds all pages of the XPS document.
+1. Call the <xref:System.Windows.Controls.PrintDialog.PrintDocument%2A> method, passing in the `DocumentPaginator` object, to send all pages to the specified printer.
 
 :::code language="csharp" source="./snippets/how-to-display-print-dialog/csharp/MainWindow.xaml.cs" id="SampleCode1":::
 :::code language="vb" source="./snippets/how-to-display-print-dialog/vb/MainWindow.xaml.vb" id="SampleCode1":::
@@ -46,11 +46,11 @@ This example prints all pages of an XPS document. By default, the code will:
 
 Sometimes you'll only want to print a specific range of pages within an XPS document. To do this, we extend the abstract <xref:System.Windows.Documents.DocumentPaginator> class to add support for page ranges. By default, the code will:
 
-- Open a print dialog window that prompts the user to select a printer, specify a range of pages, and then start a print job.
-- Instantiate an <xref:System.Windows.Xps.Packaging.XpsDocument> object with the content of the XPS document.
-- Use the `XpsDocument` object to generate a default <xref:System.Windows.Documents.DocumentPaginator> object that holds all pages of the XPS document.
-- Create an instance of an extended `DocumentPaginator` class that supports page ranges, passing in the default `DocumentPaginator` object and the <xref:System.Windows.Controls.PrintDialog.PageRange> struct returned by the <xref:System.Windows.Controls.PrintDialog>.
-- Call the <xref:System.Windows.Controls.PrintDialog.PrintDocument%2A> method, passing in the instance of the extended `DocumentPaginator` class, to send the specified page range to the specified printer.
+1. Open a print dialog window that prompts the user to select a printer, specify a range of pages, and start a print job.
+1. Instantiate an <xref:System.Windows.Xps.Packaging.XpsDocument> object with the content of the XPS document.
+1. Use the `XpsDocument` object to generate a default <xref:System.Windows.Documents.DocumentPaginator> object that holds all pages of the XPS document.
+1. Create an instance of an extended `DocumentPaginator` class that supports page ranges, passing in the default `DocumentPaginator` object and the <xref:System.Windows.Controls.PrintDialog.PageRange> struct returned by the <xref:System.Windows.Controls.PrintDialog>.
+1. Call the <xref:System.Windows.Controls.PrintDialog.PrintDocument%2A> method, passing in the instance of the extended `DocumentPaginator` class, to send the specified page range to the specified printer.
 
 :::code language="csharp" source="./snippets/how-to-display-print-dialog/csharp/MainWindow.xaml.cs" id="SampleCode2":::
 :::code language="vb" source="./snippets/how-to-display-print-dialog/vb/MainWindow.xaml.vb" id="SampleCode2":::
