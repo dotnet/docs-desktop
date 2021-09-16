@@ -63,7 +63,7 @@ Namespace CodeSampleVb
                     If fastCopy Then
                         isAllPrinted = BatchPrint(xpsFilePaths, fastCopy)
                     Else
-                        ' Create a thread (single-threaded apartment) to call the PrintQueue.AddJob method.
+                        ' Create a thread to call the PrintQueue.AddJob method.
                         Dim newThread As New Thread(
                             Sub()
                                 isAllPrinted = BatchPrint(xpsFilePaths, fastCopy)
@@ -95,7 +95,7 @@ Namespace CodeSampleVb
             ' ensure that your default printer is not Microsoft XPS Document Writer,
             ' Microsoft Print to PDF, or other print-to-file option.
 
-            ' Get the default print queue.
+            ' Get a reference to the default print queue.
             Dim defaultPrintQueue As PrintQueue = LocalPrintServer.GetDefaultPrintQueue()
 
             ' Iterate through the document collection.

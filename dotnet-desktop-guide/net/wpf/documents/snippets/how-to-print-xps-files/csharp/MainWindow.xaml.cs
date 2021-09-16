@@ -69,7 +69,7 @@ namespace CodeSampleCsharp
                 }
                 else
                 {
-                    // Create a thread (single-threaded apartment) to call the PrintQueue.AddJob method.
+                    // Create a thread to call the PrintQueue.AddJob method.
                     Thread newThread = new(() =>
                     {
                         isAllPrinted = BatchPrint(xpsFilePaths, fastCopy);
@@ -98,7 +98,7 @@ namespace CodeSampleCsharp
             // ensure that your default printer is not Microsoft XPS Document Writer,
             // Microsoft Print to PDF, or other print-to-file option.
 
-            // Get the default print queue.
+            // Get a reference to the default print queue.
             PrintQueue defaultPrintQueue = LocalPrintServer.GetDefaultPrintQueue();
 
             // Iterate through the document collection.
