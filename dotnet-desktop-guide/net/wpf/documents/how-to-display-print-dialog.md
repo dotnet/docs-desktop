@@ -28,7 +28,7 @@ You can use the print dialog to configure print options, such as:
   - XML Paper Specification (XPS)
   - Open XML Paper Specification (OpenXPS)
 
-You can even use the <xref:System.Windows.Controls.PrintDialog.PrintDocument%2A> method to print without opening the print dialog. But for performance reasons, it's better to use the <xref:System.Printing.PrintQueue.AddJob%2A> method, or one of the many <xref:System.Windows.Xps.XpsDocumentWriter.Write%2A> and <xref:System.Windows.Xps.XpsDocumentWriter.WriteAsync%2A> methods of the <xref:System.Windows.Xps.XpsDocumentWriter>. For more about this, see [Programmatically Print XPS Files](\how-to-print-xps-files.md).
+You can even use the <xref:System.Windows.Controls.PrintDialog.PrintDocument%2A> method to print without opening the print dialog. But for performance reasons, it's better to use the <xref:System.Printing.PrintQueue.AddJob%2A> method, or one of the many <xref:System.Windows.Xps.XpsDocumentWriter.Write%2A> and <xref:System.Windows.Xps.XpsDocumentWriter.WriteAsync%2A> methods of the <xref:System.Windows.Xps.XpsDocumentWriter>. For more about this, see [How to print an XPS file](how-to-print-xps-files.md) and [Printing documents overview](printing-overview.md).
 
 ## Print the whole document
 
@@ -59,5 +59,6 @@ Sometimes you'll only want to print a specific range of pages within an XPS docu
 
 - <xref:System.Windows.Controls.PrintDialog>
 - [Documents in WPF](/dotnet/desktop/wpf/advanced/documents-in-wpf?view=netframeworkdesktop-4.8&preserve-view=true)
-- [Printing Overview](printing-overview.md)
+- [How to print an XPS file](how-to-print-xps-files.md)
+- [Printing documents overview](printing-overview.md)
 - [Microsoft XPS Document Writer](/windows/win32/printdocs/microsoft-xps-document-writer)
