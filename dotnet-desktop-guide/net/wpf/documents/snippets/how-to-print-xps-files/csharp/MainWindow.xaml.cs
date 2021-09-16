@@ -51,13 +51,15 @@ namespace CodeSampleCsharp
 
         // <SampleCode1>
         /// <summary>
-        /// Batch add a collection of XPS documents to the print queue using the PrintQueue.AddJob method.
+        /// Asyncronously, add a batch of XPS documents to the print queue using a PrintQueue.AddJob method.
+        /// Handle the thread apartment state required by the PrintQueue.AddJob method.
         /// </summary>
         /// <param name="xpsFilePaths">A collection of XPS documents.</param>
+        /// <param name="fastCopy">Whether to validate the XPS documents.</param>
         /// <returns>Whether all documents were added to the print queue.</returns>
         public static async Task<bool> BatchAddToPrintQueueAsync(IEnumerable<string> xpsFilePaths, bool fastCopy = false)
         {
-            bool isAllPrinted = true;
+            bool allAdded = true;
 
             // Queue some work to run on the ThreadPool.
             // Wait for completion without blocking the calling thread.
@@ -65,14 +67,14 @@ namespace CodeSampleCsharp
             {
                 if (fastCopy)
                 {
-                    isAllPrinted = BatchPrint(xpsFilePaths, fastCopy);
+                    allAdded = BatchAddToPrintQueue(xpsFilePaths, fastCopy);
                 }
                 else
                 {
                     // Create a thread to call the PrintQueue.AddJob method.
                     Thread newThread = new(() =>
                     {
-                        isAllPrinted = BatchPrint(xpsFilePaths, fastCopy);
+                        allAdded = BatchAddToPrintQueue(xpsFilePaths, fastCopy);
                     });
 
                     // Set the thread to single-threaded apartment state.
@@ -87,15 +89,21 @@ namespace CodeSampleCsharp
                 }
             });
 
-            return isAllPrinted;
+            return allAdded;
         }
 
-        static bool BatchPrint(IEnumerable<string> xpsFilePaths, bool fastCopy)
+        /// <summary>
+        /// Add a batch of XPS documents to the print queue using a PrintQueue.AddJob method.
+        /// </summary>
+        /// <param name="xpsFilePaths">A collection of XPS documents.</param>
+        /// <param name="fastCopy">Whether to validate the XPS documents.</param>
+        /// <returns>Whether all documents were added to the print queue.</returns>
+        public static bool BatchAddToPrintQueue(IEnumerable<string> xpsFilePaths, bool fastCopy)
         {
-            bool isAllPrinted = true;
+            bool allAdded = true;
 
-            // To batch print without getting the "Save Output File As" dialog,
-            // ensure that your default printer is not Microsoft XPS Document Writer,
+            // To print without getting the "Save Output File As" dialog, ensure
+            // that your default printer is not the Microsoft XPS Document Writer,
             // Microsoft Print to PDF, or other print-to-file option.
 
             // Get a reference to the default print queue.
@@ -122,12 +130,12 @@ namespace CodeSampleCsharp
                 }
                 catch (PrintJobException e)
                 {
-                    isAllPrinted = false;
+                    allAdded = false;
                     Debug.WriteLine($"Failed to add {xpsFileName} to the print queue: {e.Message}\r\n{e.InnerException}");
                 }
             }
 
-            return isAllPrinted;
+            return allAdded;
         }
         // </SampleCode1>
     }

@@ -45,12 +45,13 @@ Namespace CodeSampleVb
 
         End Sub
 
-
         ' <SampleCode1>
         ''' <summary>
-        ''' Batch print a collection of XPS documents using the PrintQueue.AddJob method.
+        ''' Asyncronously, add a batch of XPS documents to the print queue using a PrintQueue.AddJob method.
+        ''' Handle the thread apartment state required by the PrintQueue.AddJob method.
         ''' </summary>
         ''' <param name="xpsFilePaths">A collection of XPS documents.</param>
+        ''' <param name="fastCopy">Whether to validate the XPS documents.</param>
         ''' <returns>Whether all documents were added to the print queue.</returns>
         Public Shared Async Function BatchAddToPrintQueueAsync(xpsFilePaths As IEnumerable(Of String), Optional fastCopy As Boolean = False) As Task(Of Boolean)
 
@@ -61,12 +62,12 @@ Namespace CodeSampleVb
             Await Task.Run(
                 Sub()
                     If fastCopy Then
-                        isAllPrinted = BatchPrint(xpsFilePaths, fastCopy)
+                        isAllPrinted = BatchAddToPrintQueue(xpsFilePaths, fastCopy)
                     Else
                         ' Create a thread to call the PrintQueue.AddJob method.
                         Dim newThread As New Thread(
                             Sub()
-                                isAllPrinted = BatchPrint(xpsFilePaths, fastCopy)
+                                isAllPrinted = BatchAddToPrintQueue(xpsFilePaths, fastCopy)
                             End Sub
                         )
 
@@ -87,12 +88,18 @@ Namespace CodeSampleVb
 
         End Function
 
-        Private Shared Function BatchPrint(xpsFilePaths As IEnumerable(Of String), fastCopy As Boolean) As Boolean
+        ''' <summary>
+        ''' Add a batch of XPS documents to the print queue using a PrintQueue.AddJob method.
+        ''' </summary>
+        ''' <param name="xpsFilePaths">A collection of XPS documents.</param>
+        ''' <param name="fastCopy">Whether to validate the XPS documents.</param>
+        ''' <returns>Whether all documents were added to the print queue.</returns>
+        Public Shared Function BatchAddToPrintQueue(xpsFilePaths As IEnumerable(Of String), fastCopy As Boolean) As Boolean
 
             Dim isAllPrinted As Boolean = True
 
-            ' To batch print without getting the "Save Output File As" dialog,
-            ' ensure that your default printer is not Microsoft XPS Document Writer,
+            ' To print without getting the "Save Output File As" dialog, ensure
+            ' that your default printer is not the Microsoft XPS Document Writer,
             ' Microsoft Print to PDF, or other print-to-file option.
 
             ' Get a reference to the default print queue.
