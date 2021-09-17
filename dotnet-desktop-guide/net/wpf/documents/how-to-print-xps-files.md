@@ -1,8 +1,8 @@
 ---
 title: How to print an XPS file
 description: Learn how to print an XPS file from your application by using the System.Printing.PrintQueue.AddJob method.
-ms.date: 
-dev_langs: 
+ms.date: 09/16/2021
+dev_langs:
   - "csharp"
   - "vb"
 helpviewer_keywords:
@@ -21,19 +21,19 @@ In the following example, we use the <xref:System.Printing.PrintQueue.AddJob%28S
 - Name the new job.
 - Specify whether or not the XPS document should be validated (by using the `fastCopy` parameter).
 
-When using the `AddJob(String, String, Boolean)` method, the value of `fastCopy` parameter is a key consideration:
+When using the `AddJob(String, String, Boolean)` method, the value of the `fastCopy` parameter is a key consideration:
 
-- If the `fastCopy` parameter of the `AddJob(String, String, Boolean)` method is set to `true`, then XPS validation is skipped and the print job will spool quickly without page-by-page progress feedback.
-- If the `fastCopy` parameter is false, then the thread that calls the `AddJob` method must have a [single-threaded apartment state](/dotnet/api/system.threading.apartmentstate), otherwise an exception will be thrown. For more about this, see the **Remarks** section for <xref:System.Printing.PrintQueue.AddJob%28System.String%2CSystem.String%2CSystem.Boolean%29>.
+- If you set the `fastCopy` parameter to `true`, then XPS validation is skipped and the print job will spool quickly without page-by-page progress feedback.
+- If you set the `fastCopy` parameter to `false`, then the thread that calls the `AddJob` method must have a [single-threaded apartment state](/dotnet/api/system.threading.apartmentstate), otherwise an exception will be thrown. For more about this, see the **Remarks** section for <xref:System.Printing.PrintQueue.AddJob%28System.String%2CSystem.String%2CSystem.Boolean%29>.
 
 ## Add new print jobs to the queue
 
 This example adds one or more XPS documents to the default queue. The code will:
 
-1. Use [Task.Run](/dotnet/api/system.threading.tasks.task.run) to avoid blocking the UI thread&mdash;since there's no async version of the `AddJob` methods.
-1. If the `fastCopy` parameter is false, run `AddJob(String, String, Boolean)` on a thread with [single-threaded apartment state](/dotnet/api/system.threading.apartmentstate).
+1. Use [Task.Run](/dotnet/api/system.threading.tasks.task.run) to avoid blocking the UI thread&mdash;since there is no async version of `AddJob`.
+1. If the `fastCopy` parameter value is `false`, run <xref:System.Printing.PrintQueue.AddJob%28System.String%2CSystem.String%2CSystem.Boolean%29> on a thread with [single-threaded apartment state](/dotnet/api/system.threading.apartmentstate).
 1. Get a reference to the default <xref:System.Printing.PrintQueue> of the <xref:System.Printing.LocalPrintServer>.
-1. Call the `AddJob(String, String, Boolean)` method on the print queue reference, passing in a job name, an XPS document path, and the `fastCopy` parameter value.
+1. Call `AddJob(String, String, Boolean)` on the print queue reference, passing in a job name, an XPS document path, and the `fastCopy` parameter.
 
 If the queue is not paused and the printer is working, then a print job will automatically begin printing when it reaches the top of the print queue.
 
@@ -50,3 +50,10 @@ If the queue is not paused and the printer is working, then a print job will aut
 > - <xref:System.Windows.Xps.XpsDocumentWriter.Write%2A?displayProperty=nameWithType> and <xref:System.Windows.Xps.XpsDocumentWriter.WriteAsync%2A?displayProperty=nameWithType> methods.
 >
 > For more information, see [How to display a print dialog box](how-to-display-print-dialog.md) and [Printing documents overview](printing-overview.md).
+
+## See also
+
+- [PrintQueue.AddJob](/dotnet/api/system.printing.printqueue.addjob)
+- [Documents in WPF](/dotnet/desktop/wpf/advanced/documents-in-wpf?view=netframeworkdesktop-4.8&preserve-view=true)
+- [How to display a print dialog box](how-to-display-print-dialog.md)
+- [Printing documents overview](printing-overview.md)
