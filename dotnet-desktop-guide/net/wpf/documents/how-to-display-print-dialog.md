@@ -19,7 +19,7 @@ Want to print from your application? You can use the <xref:System.Windows.Contro
 > [!NOTE]
 > The <xref:System.Windows.Controls.PrintDialog?displayProperty=nameWithType> control used for WPF and discussed here, should not be confused with the <xref:System.Windows.Forms.PrintDialog?displayProperty=nameWithType> component of Windows Forms.
 
-The <xref:System.Windows.Controls.PrintDialog> class provides a single control for print configuration and XPS job submission. The control is easy to use and can be instantiated by using XAML markup or code. The following examples create and display a `PrintDialog` instance using code.
+The <xref:System.Windows.Controls.PrintDialog> class provides a single control for print configuration and print job submission. The control is easy to use and can be instantiated by using XAML markup or code. The following examples create and display a `PrintDialog` instance using code.
 
 You can use the print dialog to configure print options, such as:
 
