@@ -74,7 +74,6 @@ namespace CodeSampleCsharp
             PrintXpsDocumentAsync(txtXpsFilePath.Text, selectedPrintQueue, printTicket);
 
             // Show modified print options.
-            lblPrintTicketOptions.Content = "";
             List<string> optionList = new();
             if (printTicket.Collation == Collation.Collated)
                 optionList.Add("Collated");
@@ -82,13 +81,13 @@ namespace CodeSampleCsharp
                 optionList.Add("TwoSidedLongEdge");
             if (printTicket.Stapling == Stapling.StapleDualLeft)
                 optionList.Add("StapleDualLeft");
-            lblPrintTicketOptions.Content = string.Join(", ", optionList);
+            var options = optionList.Count > 0 ? string.Join(", ", optionList) : "None";
 
             // Show result message.
-            MessageBox.Show($"Sent {Path.GetFileName(txtXpsFilePath.Text)} to the printer.");
+            MessageBox.Show($"Sent {Path.GetFileName(txtXpsFilePath.Text)} to the printer.\r\nPrint options: {options}");
         }
 
-        // <SampleCode2>
+        // <GetPrintQueues>
         /// <summary>
         /// Return a collection of print queues, which individually hold the features or states
         /// of a printer as well as common properties for all print queues.
@@ -100,6 +99,9 @@ namespace CodeSampleCsharp
             // the print server for the local computer.
             LocalPrintServer localPrintServer = new();
 
+            // Get the default print queue on the local computer.
+            //PrintQueue printQueue = localPrintServer.DefaultPrintQueue;
+
             // Get all print queues on the local computer.
             PrintQueueCollection printQueueCollection = localPrintServer.GetPrintQueues();
 
@@ -107,9 +109,9 @@ namespace CodeSampleCsharp
             // of a printer as well as common properties for all print queues.
             return printQueueCollection;
         }
-        // </SampleCode2>
+        // </GetPrintQueues>
 
-        // <SampleCode1>
+        // <GetPrintTicket>
         /// <summary>
         /// Returns a print ticket, which is a set of instructions telling a printer how
         /// to set its various features, such as duplexing, collating, and stapling.
@@ -135,9 +137,9 @@ namespace CodeSampleCsharp
             // to set its various features, such as duplexing, collating, and stapling.
             return printTicket;
         }
-        // </SampleCode1>
+        // </GetPrintTicket>
 
-        // <SampleCode3>
+        // <PrintXpsDocument>
         /// <summary>
         /// Asynchronously, add the XPS document together with a print ticket to the print queue.
         /// </summary>
@@ -155,12 +157,30 @@ namespace CodeSampleCsharp
             // Get a fixed document sequence for the selected document.
             FixedDocumentSequence fixedDocSeq = xpsDocument.GetFixedDocumentSequence();
 
-            // Synchronously, add the XPS document together with a print ticket to the print queue.
-            //xpsDocumentWriter.Write(fixedDocSeq, printTicket);
-
             // Asynchronously, add the XPS document together with a print ticket to the print queue.
             xpsDocumentWriter.WriteAsync(fixedDocSeq, printTicket);
         }
-        // </SampleCode3>
+
+        /// <summary>
+        /// Synchronously, add the XPS document together with a print ticket to the print queue.
+        /// </summary>
+        /// <param name="xpsFilePath">Path to source XPS file.</param>
+        /// <param name="printQueue">The print queue to print to.</param>
+        /// <param name="printTicket">The print ticket for the selected print queue.</param>
+        public static void PrintXpsDocument(string xpsFilePath, PrintQueue printQueue, PrintTicket printTicket)
+        {
+            // Create an XpsDocumentWriter object for the print queue.
+            XpsDocumentWriter xpsDocumentWriter = PrintQueue.CreateXpsDocumentWriter(printQueue);
+
+            // Open the selected document.
+            XpsDocument xpsDocument = new(xpsFilePath, FileAccess.Read);
+
+            // Get a fixed document sequence for the selected document.
+            FixedDocumentSequence fixedDocSeq = xpsDocument.GetFixedDocumentSequence();
+
+            // Synchronously, add the XPS document together with a print ticket to the print queue.
+            xpsDocumentWriter.Write(fixedDocSeq, printTicket);
+        }
+        // </PrintXpsDocument>
     }
 }

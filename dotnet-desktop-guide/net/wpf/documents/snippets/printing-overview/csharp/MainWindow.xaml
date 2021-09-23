@@ -10,7 +10,6 @@
         <Button Content="Print" HorizontalAlignment="Left" Margin="32,148,0,0" FontSize="14" Width="51" x:Name="btnPrint" Height="28" VerticalAlignment="Top" Click="BtnPrint_Click"/>
         <ComboBox x:Name="cmbPrinters" HorizontalAlignment="Left" Margin="32,90,0,0" VerticalAlignment="Top" Width="372"/>
         <Label Content="Select a printer" HorizontalAlignment="Left" Margin="27,66,0,0" VerticalAlignment="Top" FontSize="11" Height="25" Width="339"/>
-        <Label x:Name="lblPrintTicketOptions" Content="" HorizontalAlignment="Left" Margin="99,148,0,0" VerticalAlignment="Top" Width="380" BorderBrush="{DynamicResource {x:Static SystemColors.GradientActiveCaptionBrushKey}}" BorderThickness="1,1,1,1"/>
         <Button Content="Browse" HorizontalAlignment="Left" Margin="428,35,0,0" VerticalAlignment="Top" Width="48" x:Name="btnBrowse" Height="20" Click="BtnBrowse_Click"/>
         <TextBox HorizontalAlignment="Left" Margin="32,35,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="391" FontSize="14" x:Name="txtXpsFilePath" Height="21"/>
     </Grid>
