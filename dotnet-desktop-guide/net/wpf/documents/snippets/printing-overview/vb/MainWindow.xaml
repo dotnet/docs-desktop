@@ -1,0 +1,16 @@
+﻿<Window x:Class="CodeSampleVb.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Print an XPS file" Height="234" Width="509">
+    <Grid Margin="0,0,0,-6" Loaded="Grid_Loaded">
+        <Label Content="Select an XPS file" HorizontalAlignment="Left" Margin="27,12,0,0" VerticalAlignment="Top" FontSize="11" Height="25" Width="339"/>
+        <Button Content="Print" HorizontalAlignment="Left" Margin="32,148,0,0" FontSize="14" Width="51" x:Name="btnPrint" Height="28" VerticalAlignment="Top" Click="BtnPrint_Click"/>
+        <ComboBox x:Name="cmbPrinters" HorizontalAlignment="Left" Margin="32,90,0,0" VerticalAlignment="Top" Width="372"/>
+        <Label Content="Select a printer" HorizontalAlignment="Left" Margin="27,66,0,0" VerticalAlignment="Top" FontSize="11" Height="25" Width="339"/>
+        <Button Content="Browse" HorizontalAlignment="Left" Margin="428,35,0,0" VerticalAlignment="Top" Width="48" x:Name="btnBrowse" Height="20" Click="BtnBrowse_Click"/>
+        <TextBox HorizontalAlignment="Left" Margin="32,35,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="391" FontSize="14" x:Name="txtXpsFilePath" Height="21"/>
+    </Grid>
+</Window>
