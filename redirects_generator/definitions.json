@@ -301,6 +301,23 @@
             "TargetUrl": "/dotnet/desktop/wpf/data/binding-declarations-overview?view=netdesktop-5.0#binding-direction"
         },
 
+        // Documents/Printing
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/wpf/advanced/printing-overview?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/wpf/documents/printing-overview?view=netdesktop-5.0"
+        },
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/wpf/advanced/how-to-invoke-a-print-dialog?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/wpf/documents/how-to-display-print-dialog?view=netdesktop-5.0"
+        },
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/wpf/advanced/how-to-programmatically-print-xps-files?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/wpf/documents/how-to-print-xps-files?view=netdesktop-5.0"
+        },
+
         // Systems - XAML
         {
             "Redirect": "TwoWay",
@@ -363,7 +380,7 @@
         //},
 
     // ========
-    // WPF 3.1 -> 5/6
+    // WPF Core -> 5/6
     // ========
         {
             "Redirect": "OneWay",
