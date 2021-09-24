@@ -18,7 +18,8 @@
         End Sub
 
         ' <DefineDependencyProperty>
-        Public Shared ReadOnly IsSpinningProperty As DependencyProperty = DependencyProperty.Register("IsSpinning", GetType(Boolean), GetType(MainWindow))
+        Public Shared ReadOnly IsSpinningProperty As DependencyProperty =
+            DependencyProperty.Register("IsSpinning", GetType(Boolean), GetType(MainWindow))
 
         Public Property IsSpinning As Boolean
             Get
@@ -35,7 +36,6 @@
     ' <OverrideMetadata>
     Public Class SpinnerControl
         Inherits ItemsControl
-
         Shared Sub New()
             DefaultStyleKeyProperty.OverrideMetadata(GetType(SpinnerControl), New FrameworkPropertyMetadata(GetType(SpinnerControl)))
         End Sub

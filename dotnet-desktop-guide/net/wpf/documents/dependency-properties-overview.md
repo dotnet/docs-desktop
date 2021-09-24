@@ -23,7 +23,7 @@ Windows Presentation Foundation (WPF) provides a set of services that can be use
 
 ## Prerequisites
 
-This article assumes basic knowledge of the .NET type system and object-oriented programming. To follow the examples in this article, it helps to understand XAML and know how to write WPF applications. For more information, see [Walkthrough: My first WPF desktop application](/dotnet/desktop/wpf/getting-started/walkthrough-my-first-wpf-desktop-application?view=netframeworkdesktop-4.8&preserve-view=true).
+This article assumes basic knowledge of the .NET type system and object-oriented programming. To follow the examples in this article, it helps to understand XAML and know how to write WPF applications. For more information, see [Walkthrough: My first WPF desktop application](/dotnet/desktop/wpf/get-started/create-app-visual-studio?view=netdesktop-5.0&preserve-view=true).
 
 ## Dependency properties and CLR properties
 
@@ -76,9 +76,9 @@ The following XAML example sets the background color of a button to red. The str
 
 :::code language="xaml" source="./snippets/dependency-properties-overview/csharp/MainWindow.xaml" id="BasicPropertySyntax":::
 
-XAML supports several syntax forms for setting properties. Which syntax to use for a particular property depends on the value type that a property uses, and other factors, such as the presence of a type converter. For more information on XAML syntax for setting properties, see [XAML in WPF](/dotnet/desktop/wpf/advanced/xaml-in-wpf?view=netframeworkdesktop-4.8&preserve-view=true) and [XAML syntax In detail](/dotnet/desktop/wpf/advanced/xaml-syntax-in-detail?view=netframeworkdesktop-4.8&preserve-view=true).
+XAML supports several syntax forms for setting properties. Which syntax to use for a particular property depends on the value type that a property uses, and other factors, such as the presence of a type converter. For more information on XAML syntax for setting properties, see [XAML in WPF](/dotnet/desktop/wpf/xaml/?view=netdesktop-5.0&preserve-view=true) and [XAML syntax In detail](/dotnet/desktop/wpf/advanced/xaml-syntax-in-detail?view=netframeworkdesktop-4.8&preserve-view=true).
 
-The following XAML example shows another button background that uses property element syntax instead of attribute syntax. Rather than setting a simple solid color, the XAML sets the button background to an image. An element represents that image, and an attribute of the nested element specifies the source of the image.
+The following XAML example shows another button background that uses property element syntax instead of attribute syntax. Rather than setting a simple solid color, the XAML sets the button `Background` property to an image. An element represents that image, and an attribute of the nested element specifies the source of the image.
 
 :::code language="xaml" source="./snippets/dependency-properties-overview/csharp/MainWindow.xaml" id="PropertyElementSyntax":::
 
@@ -126,7 +126,7 @@ Now that the resource is defined, we can reference the resource to provide a val
 
 :::code language="xaml" source="./snippets/dependency-properties-overview/csharp/MainWindow.xaml" id="ResourceReference":::
 
-In WPF XAML, you can use either a static or dynamic resource reference. This particular resource is referenced as a [DynamicResource](/dotnet/desktop/wpf/advanced/dynamicresource-markup-extension?view=netframeworkdesktop-4.8&preserve-view=true). A dynamic resource reference can only be used to set a dependency property, so it's specifically the dynamic resource reference usage that's enabled by the WPF property system. For more information, see [XAML resources](/dotnet/desktop-wpf/fundamentals/xaml-resources-define).
+In WPF XAML, you can use either a static or dynamic resource reference. This particular resource is referenced as a [DynamicResource](/dotnet/desktop/wpf/advanced/dynamicresource-markup-extension?view=netframeworkdesktop-4.8&preserve-view=true). A dynamic resource reference can only be used to set a dependency property, so it's specifically the dynamic resource reference usage that's enabled by the WPF property system. For more information, see [XAML resources](/dotnet/desktop/wpf/systems/xaml-resources-overview).
 
 > [!NOTE]
 > Resources are treated as a local value, which means that if you set another local value, you'll eliminate the resource reference. For more information, see [Dependency property value precedence](/dotnet/desktop/wpf/advanced/dependency-property-value-precedence?view=netframeworkdesktop-4.8&preserve-view=true).
@@ -148,19 +148,19 @@ Dependency properties, or the <xref:System.Windows.DependencyObject> class, don'
 
 Styles and templates are compelling reasons to use dependency properties. Styles are particularly useful for setting properties that define the application UI. Styles are typically defined as resources in XAML. Styles interact with the property system because they typically contain "setters" for particular properties, and "triggers" that change a property value based on the runtime value for another property.
 
-The following example creates a simple style, which would be defined inside a <xref:System.Windows.FrameworkElement.Resources%2A> dictionary (not shown). Then that style is applied directly to the <xref:System.Windows.FrameworkElement.Style%2A> property for a <xref:System.Windows.Controls.Button>. The setter within the style sets the <xref:System.Windows.Controls.Control.Background%2A> property for a styled <xref:System.Windows.Controls.Button> to green.
+The following example creates a simple style, which would be defined inside a <xref:System.Windows.FrameworkElement.Resources%2A> dictionary (not shown). Then that style is applied directly to the <xref:System.Windows.FrameworkElement.Style%2A> property for a <xref:System.Windows.Controls.Button>. The setter within the style sets the <xref:System.Windows.Controls.Control.Background%2A> property for a styled `Button` to green.
 
 :::code language="xaml" source="./snippets/dependency-properties-overview/csharp/MainWindow.xaml" id="SimpleStyleDefinition":::
 
 :::code language="xaml" source="./snippets/dependency-properties-overview/csharp/MainWindow.xaml" id="SimpleStyle":::
 
-For more information, see [Styling and templating](/dotnet/desktop/wpf/controls/styles-templates-overview?view=netframeworkdesktop-4.8&preserve-view=true).
+For more information, see [Styling and templating](/dotnet/desktop/wpf/controls/styles-templates-overview?view=netdesktop-5.0).
 
 ### Animations
 
 Dependency properties can be animated. When an applied animation runs, the animated value has higher precedence than any other property value, including a local value.
 
-The following example animates the <xref:System.Windows.Controls.Control.Background%2A> property of a <xref:System.Windows.Controls.Button>. Technically, the property element syntax sets a blank <xref:System.Windows.Media.SolidColorBrush> as the <xref:System.Windows.Controls.Control.Background%2A>, and the <xref:System.Windows.Media.SolidColorBrush.Color%2A> property of the `SolidColorBrush` is animated.
+The following example animates the <xref:System.Windows.Controls.Control.Background%2A> property of a <xref:System.Windows.Controls.Button>. Technically, the property element syntax sets a blank <xref:System.Windows.Media.SolidColorBrush> as the `Background`, and the <xref:System.Windows.Media.SolidColorBrush.Color%2A> property of the `SolidColorBrush` is animated.
 
 :::code language="xaml" source="./snippets/dependency-properties-overview/csharp/MainWindow.xaml" id="Animate":::
 
@@ -201,7 +201,7 @@ Any of the property-based inputs within the WPF property system can set the valu
 > [!NOTE]
 > The SDK documentation sometimes uses the term "local value" or "locally set value" when discussing dependency properties. A locally set value is a property value that's set directly on an object instance in code, or as an element attribute in XAML.
 
-The next example includes a style that applies to the <xref:System.Windows.Controls.Control.Background%2A> property of any button, but specifies one button with a locally set <xref:System.Windows.Controls.Control.Background%2A> value. Technically, that button has its background property set twice, although only one value applies&mdash;the value with the highest precedence. A locally set value has the highest precedence, except for a running animation, which doesn't exist here. So, the first button uses the locally set value for the background, instead of the style setter value. The second button has no local value, or other value with higher precedence than a style setter, and so uses the style setter value for the background.
+The next example includes a style that applies to the <xref:System.Windows.Controls.Control.Background%2A> property of any button, but specifies one button with a locally set `Background` property. Technically, that button has its `Background` property set twice, although only one value applies&mdash;the value with the highest precedence. A locally set value has the highest precedence, except for a running animation, which doesn't exist here. So, the first button uses the locally set value for the `Background` property, instead of the style setter value. The second button has no local value, or other value with higher precedence than a style setter, and so uses the style setter value for the `Background` property.
 
 :::code language="xaml" source="./snippets/dependency-properties-overview/csharp/MainWindow.xaml" id="PropertyValuePrecedence":::
 
@@ -218,11 +218,11 @@ Locally set values have precedence over style setter values, which supports loca
 
 - Consider dependency properties to be public properties, accessible or discoverable by any caller with access to an instance. For more information, see [Dependency property security](/dotnet/desktop/wpf/advanced/dependency-property-security?view=netframeworkdesktop-4.8&preserve-view=true).
 
-- An [attached property](/dotnet/desktop/wpf/advanced/attached-properties-overview?view=netframeworkdesktop-4.8&preserve-view=true) is a type of property that supports a specialized syntax in XAML. An attached property often doesn't have a 1:1 correspondence with a common language runtime property and isn't necessarily a dependency property. The main purpose of an attached property is to allow child elements to report property values to a parent element, even if the parent element and child element don't include that property as part of the class members listings. One primary scenario is to enable a child element to inform parent elements how to present them in the UI. For examples, see <xref:System.Windows.Controls.DockPanel.Dock%2A> and <xref:System.Windows.Controls.Canvas.Left%2A>. For more information, see [Attached properties overview](/dotnet/desktop/wpf/advanced/attached-properties-overview?view=netframeworkdesktop-4.8&preserve-view=true).
+- An attached property is a type of property that supports a specialized syntax in XAML. An attached property often doesn't have a 1:1 correspondence with a common language runtime property and isn't necessarily a dependency property. The main purpose of an attached property is to allow child elements to report property values to a parent element, even if the parent element and child element don't include that property as part of the class members listings. One primary scenario is to enable a child element to inform parent elements how to present them in the UI. For examples, see <xref:System.Windows.Controls.DockPanel.Dock%2A> and <xref:System.Windows.Controls.Canvas.Left%2A>. For more information, see [Attached properties overview](/dotnet/desktop/wpf/advanced/attached-properties-overview?view=netframeworkdesktop-4.8&preserve-view=true).
 
 ## See also
 
 - [Custom dependency properties](/dotnet/desktop/wpf/advanced/custom-dependency-properties?view=netframeworkdesktop-4.8&preserve-view=true)
 - [Read-only dependency properties](/dotnet/desktop/wpf/advanced/read-only-dependency-properties?view=netframeworkdesktop-4.8&preserve-view=true)
-- [XAML in WPF](/dotnet/desktop/wpf/advanced/xaml-in-wpf?view=netframeworkdesktop-4.8&preserve-view=true)
+- [XAML in WPF](/dotnet/desktop/wpf/xaml/?view=netdesktop-5.0&preserve-view=true)
 - [WPF architecture](/dotnet/desktop/wpf/advanced/wpf-architecture?view=netframeworkdesktop-4.8&preserve-view=true)

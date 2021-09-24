@@ -40,7 +40,7 @@
         <!--</ResourceReference>-->
 
         <!--<BasicInlineBinding>-->
-        <Button Content="{Binding Source={StaticResource TestData}, XPath=testdata[1]/@text}"/>
+        <Button Content="{Binding Source={StaticResource TestData}, XPath=test[1]/@text}"/>
         <!--</BasicInlineBinding>-->
 
         <!--<SimpleStyle>-->
@@ -70,7 +70,7 @@
 
         <!--<InheritanceBindingContext>-->
         <StackPanel Canvas.Top="50" DataContext="{Binding Source={StaticResource TestData}}">
-            <Button Content="{Binding XPath=testdata[2]/@text}"/>
+            <Button Content="{Binding XPath=test[2]/@text}"/>
         </StackPanel>
         <!--</InheritanceBindingContext>-->
 
