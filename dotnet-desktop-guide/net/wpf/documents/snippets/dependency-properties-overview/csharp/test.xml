@@ -1,0 +1,4 @@
+<tests>
+    <testdata text="I have data binding content"/>
+    <testdata text="I have inherited data binding context"/>
+</tests>
