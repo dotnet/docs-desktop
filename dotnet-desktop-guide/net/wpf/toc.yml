@@ -47,6 +47,20 @@ items:
           href: controls/how-to-create-apply-style.md
         - name: Create and apply a template
           href: controls/how-to-create-apply-template.md
+  - name: Documents & Printing
+    items:
+    - name: Printing
+      expanded: true
+      items:
+      - name: Overview
+        href: documents/printing-overview.md
+      - name: Common tasks
+        items:
+        - name: Display the print dialog
+          href: documents/how-to-display-print-dialog.md
+        - name: Programmatically print XPS files
+          href: documents/how-to-print-xps-files.md
+    
   - name: Data binding
     items:
     - name: Overview
