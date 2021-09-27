@@ -38,6 +38,7 @@ items:
   - name: Controls
     items:
     - name: Styles and templates
+      expanded: true
       items:
       - name: Overview
         href: controls/styles-templates-overview.md
@@ -77,6 +78,10 @@ items:
 - name: Systems
   expanded: true
   items:
+  - name: Properties
+    items:
+    - name: Dependency properties
+      href: properties/dependency-properties-overview.md
   - name: Resources
     items:
     - name: Overview
@@ -93,6 +98,7 @@ items:
         href: systems/xaml-resources-how-to-use-application.md
       - name: Use system resources
         href: systems/xaml-resources-how-to-use-system.md
+  
 - name: XAML with WPF
   items:
   - name: Overview
