@@ -98,7 +98,7 @@ items:
         href: systems/xaml-resources-how-to-use-application.md
       - name: Use system resources
         href: systems/xaml-resources-how-to-use-system.md
-  
+
 - name: XAML with WPF
   items:
   - name: Overview
