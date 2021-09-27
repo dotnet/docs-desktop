@@ -1,0 +1,90 @@
+﻿<Window x:Class="CodeSampleVb.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Title="Dependency Properties" Height="220" Width="300">
+    <Window.Resources>
+        <XmlDataProvider x:Key="TestData" Source="test.xml" XPath="tests"/>
+
+        <!--<SimpleStyleDefinition>-->
+        <Style x:Key="GreenButtonStyle">
+            <Setter Property="Control.Background" Value="Green"/>
+        </Style>
+        <!--</SimpleStyleDefinition>-->
+
+    </Window.Resources>
+    <StackPanel>
+
+        <!--<Resource>-->
+        <StackPanel.Resources>
+            <SolidColorBrush x:Key="MyBrush" Color="Gold"/>
+        </StackPanel.Resources>
+        <!--</Resource>-->
+
+        <!--<BasicPropertySyntax>-->
+        <Button Content="I am red" Background="Red"/>
+        <!--</BasicPropertySyntax>-->
+
+        <!--<PropertyElementSyntax>-->
+        <Button Content="I have an image background">
+            <Button.Background>
+                <ImageBrush ImageSource="stripes.jpg"/>
+            </Button.Background>
+        </Button>
+        <!--</PropertyElementSyntax>-->
+
+        <!--<ResourceReference>-->
+        <Button Background="{DynamicResource MyBrush}" Content="I am gold" />
+        <!--</ResourceReference>-->
+
+        <!--<BasicInlineBinding>-->
+        <Button Content="{Binding Source={StaticResource TestData}, XPath=test[1]/@text}"/>
+        <!--</BasicInlineBinding>-->
+
+        <!--<SimpleStyle>-->
+        <Button Style="{StaticResource GreenButtonStyle}" Content="I am green"/>
+        <!--</SimpleStyle>-->
+
+        <!--<Animate>-->
+        <Button Content="I am animated">
+            <Button.Background>
+                <SolidColorBrush x:Name="AnimBrush"/>
+            </Button.Background>
+            <Button.Triggers>
+                <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <ColorAnimation
+                                Storyboard.TargetName="AnimBrush" 
+                                Storyboard.TargetProperty="(SolidColorBrush.Color)"
+                                From="Blue" To="White" Duration="0:0:1" 
+                                AutoReverse="True" RepeatBehavior="Forever" />
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Button.Triggers>
+        </Button>
+        <!--</Animate>-->
+
+        <!--<InheritanceBindingContext>-->
+        <StackPanel Canvas.Top="50" DataContext="{Binding Source={StaticResource TestData}}">
+            <Button Content="{Binding XPath=test[2]/@text}"/>
+        </StackPanel>
+        <!--</InheritanceBindingContext>-->
+
+        <!--<PropertyValuePrecedence>-->
+        <StackPanel>
+            <StackPanel.Resources>
+                <Style x:Key="{x:Type Button}" TargetType="{x:Type Button}">
+                    <Setter Property="Background" Value="Orange"/>
+                </Style>
+            </StackPanel.Resources>
+            <Button>I am styled orange</Button>
+            <Button Background="Pink">I am locally set to pink (not styled orange)</Button>
+        </StackPanel>
+        <!--</PropertyValuePrecedence>-->
+
+    </StackPanel>
+</Window>
