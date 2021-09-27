@@ -23,7 +23,7 @@ Windows Presentation Foundation (WPF) provides a set of services that can be use
 
 ## Prerequisites
 
-This article assumes basic knowledge of the .NET type system and object-oriented programming. To follow the examples in this article, it helps to understand XAML and know how to write WPF applications. For more information, see [Walkthrough: My first WPF desktop application](/dotnet/desktop/wpf/get-started/create-app-visual-studio?view=netdesktop-5.0&preserve-view=true).
+This article assumes basic knowledge of the .NET type system and object-oriented programming. To follow the examples in this article, it helps to understand XAML and know how to write WPF applications. For more information, see [Walkthrough: My first WPF desktop application](/dotnet/desktop/wpf/get-started/create-app-visual-studio).
 
 ## Dependency properties and CLR properties
 
@@ -76,7 +76,7 @@ The following XAML example sets the background color of a button to red. The str
 
 :::code language="xaml" source="./snippets/dependency-properties-overview/csharp/MainWindow.xaml" id="BasicPropertySyntax":::
 
-XAML supports several syntax forms for setting properties. Which syntax to use for a particular property depends on the value type that a property uses, and other factors, such as the presence of a type converter. For more information on XAML syntax for setting properties, see [XAML in WPF](/dotnet/desktop/wpf/xaml/?view=netdesktop-5.0&preserve-view=true) and [XAML syntax In detail](/dotnet/desktop/wpf/advanced/xaml-syntax-in-detail?view=netframeworkdesktop-4.8&preserve-view=true).
+XAML supports several syntax forms for setting properties. Which syntax to use for a particular property depends on the value type that a property uses, and other factors, such as the presence of a type converter. For more information on XAML syntax for setting properties, see [XAML in WPF](/dotnet/desktop/wpf/xaml/) and [XAML syntax In detail](/dotnet/desktop/wpf/advanced/xaml-syntax-in-detail?view=netframeworkdesktop-4.8&preserve-view=true).
 
 The following XAML example shows another button background that uses property element syntax instead of attribute syntax. Rather than setting a simple solid color, the XAML sets the button `Background` property to an image. An element represents that image, and an attribute of the nested element specifies the source of the image.
 
@@ -224,5 +224,5 @@ Locally set values have precedence over style setter values, which supports loca
 
 - [Custom dependency properties](/dotnet/desktop/wpf/advanced/custom-dependency-properties?view=netframeworkdesktop-4.8&preserve-view=true)
 - [Read-only dependency properties](/dotnet/desktop/wpf/advanced/read-only-dependency-properties?view=netframeworkdesktop-4.8&preserve-view=true)
-- [XAML in WPF](/dotnet/desktop/wpf/xaml/?view=netdesktop-5.0&preserve-view=true)
+- [XAML in WPF](/dotnet/desktop/wpf/xaml/)
 - [WPF architecture](/dotnet/desktop/wpf/advanced/wpf-architecture?view=netframeworkdesktop-4.8&preserve-view=true)
