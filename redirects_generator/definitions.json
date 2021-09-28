@@ -318,6 +318,13 @@
             "TargetUrl": "/dotnet/desktop/wpf/documents/how-to-print-xps-files?view=netdesktop-5.0"
         },
 
+        // Systems - Properties
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/wpf/advanced/dependency-properties-overview?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/wpf/properties/dependency-properties-overview?view=netdesktop-5.0"
+        },
+
         // Systems - XAML
         {
             "Redirect": "TwoWay",

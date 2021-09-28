@@ -472,6 +472,14 @@
         {
             "source_path": "dotnet-desktop-guide/framework/wpf/documents/how-to-print-xps-files.md",
             "redirect_url": "/dotnet/desktop/wpf/advanced/how-to-programmatically-print-xps-files?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/advanced/dependency-properties-overview.md",
+            "redirect_url": "/dotnet/desktop/wpf/properties/dependency-properties-overview?view=netdesktop-5.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/properties/dependency-properties-overview.md",
+            "redirect_url": "/dotnet/desktop/wpf/advanced/dependency-properties-overview?view=netframeworkdesktop-4.8"
         }
     ]
 }
