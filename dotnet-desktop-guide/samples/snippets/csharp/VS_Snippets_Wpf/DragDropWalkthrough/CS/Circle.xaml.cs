@@ -40,7 +40,7 @@ namespace DragDropWalkthrough
                 data.SetData("Double", circleUI.Height);
                 data.SetData("Object", this);
 
-                // Inititate the drag-and-drop operation.
+                // Initiate the drag-and-drop operation.
                 DragDrop.DoDragDrop(this, data, DragDropEffects.Copy | DragDropEffects.Move);
             }
         }
