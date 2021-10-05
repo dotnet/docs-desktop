@@ -29,7 +29,7 @@ The WPF property system uses a variety of factors to determine the value of depe
 
 The following XAML example shows how three different "set" operations on the button's <xref:System.Windows.Controls.Control.Background%2A> property can influence its value.
 
-:::code language="xaml" source="./snippets/dependency-properties-overview/csharp/MainWindow.xaml" id="DependencyPropertyValuePrecedence":::
+:::code language="xaml" source="./snippets/dependency-property-value-precedence/csharp/MainWindow.xaml" id="DependencyPropertyValuePrecedence":::
 
 In the example, the `Background` property is locally set to `Red`. However, the implicit style declared in the button's scope, attempts to set the `Background` property to `Blue`. And, when the mouse is over the button, the trigger in the implicit style attempts to set the `Background` property to `Yellow`. Except for coercion and animation, a locally set property value has the highest precedence, so the button will be red&mdash;even on mouseover. But, if you remove the locally set value from the button, then it will get its `Background` value from the style. Within a style, triggers take precedence, so the button will be yellow on mouseover, and blue otherwise. The example replaces the button's default <xref:System.Windows.Controls.ControlTemplate> because the default template has a hard-coded mouseover `Background` value.
 
