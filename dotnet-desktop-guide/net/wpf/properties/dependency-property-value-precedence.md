@@ -45,7 +45,7 @@ In the example, the `Background` property is locally set to `Red`. However, the 
 
 The following list is the definitive order of precedence that the property system uses when assigning runtime values to dependency properties. Highest precedence is listed first.
 
-1. **Property system coercion**. For more on coercion, see [Coercion, animation, and base value](#animations).
+1. **Property system coercion**. For more information about coercion, see [Coercion, animation, and base value](#animations).
 
 2. **Active animations, or animations with a Hold behavior**. To have a practical effect, an animation value must have precedence over the base (unanimated) value, even if the base value was set locally. For more information, see [Coercion, animation, and base value](#animations).
 
