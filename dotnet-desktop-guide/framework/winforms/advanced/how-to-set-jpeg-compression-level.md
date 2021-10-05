@@ -56,7 +56,7 @@ private void VaryQualityLevel()
 Private Sub VaryQualityLevel()  
     ' Get a bitmap. The Using statement ensures objects  
     ' are automatically disposed from memory after use.  
-    Using bmp1 As New Bitmap("C:\test\TestPhoto.jpg")  
+    Using bmp1 As New Bitmap("C:\TestPhoto.jpg")  
         Dim jpgEncoder As ImageCodecInfo = GetEncoder(ImageFormat.Jpeg)  
   
         ' Create an Encoder object based on the GUID  
@@ -71,16 +71,16 @@ Private Sub VaryQualityLevel()
   
         Dim myEncoderParameter As New EncoderParameter(myEncoder, 50L)  
         myEncoderParameters.Param(0) = myEncoderParameter  
-        bmp1.Save("c:\test\TestPhotoQualityFifty.jpg", jpgEncoder, myEncoderParameters)  
+        bmp1.Save("c:\TestPhotoQualityFifty.jpg", jpgEncoder, myEncoderParameters)  
   
         myEncoderParameter = New EncoderParameter(myEncoder, 100L)  
         myEncoderParameters.Param(0) = myEncoderParameter  
-        bmp1.Save("C:\test\TestPhotoQualityHundred.jpg", jpgEncoder, myEncoderParameters)  
+        bmp1.Save("C:\TestPhotoQualityHundred.jpg", jpgEncoder, myEncoderParameters)  
   
         ' Save the bitmap as a JPG file with zero quality level compression.  
         myEncoderParameter = New EncoderParameter(myEncoder, 0L)  
         myEncoderParameters.Param(0) = myEncoderParameter  
-        bmp1.Save("C:\test\TestPhotoQualityZero.jpg", jpgEncoder, myEncoderParameters)  
+        bmp1.Save("C:\TestPhotoQualityZero.jpg", jpgEncoder, myEncoderParameters)  
     End Using  
 End Sub  
 ```  
