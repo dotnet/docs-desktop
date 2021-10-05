@@ -82,6 +82,8 @@ items:
     items:
     - name: Dependency properties
       href: properties/dependency-properties-overview.md
+    - name: Dependency property value precedence
+      href: properties/dependency-property-value-precedence.md
   - name: Resources
     items:
     - name: Overview
