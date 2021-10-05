@@ -4,13 +4,13 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Title="Dependency Properties" Height="250" Width="300">
+    Title="Dependency Properties" Height="220" Width="300">
     <Window.Resources>
         <XmlDataProvider x:Key="TestData" Source="test.xml" XPath="tests"/>
 
         <!--<SimpleStyleDefinition>-->
         <Style x:Key="GreenButtonStyle">
-            <Setter Property="Control.Background" Value="LightGreen"/>
+            <Setter Property="Control.Background" Value="Green"/>
         </Style>
         <!--</SimpleStyleDefinition>-->
 
@@ -86,31 +86,5 @@
         </StackPanel>
         <!--</PropertyValuePrecedence>-->
 
-        <!--<DependencyPropertyValuePrecedence>-->
-        <StackPanel>
-            <StackPanel.Resources>
-                <ControlTemplate x:Key="ButtonTemplate" TargetType="{x:Type Button}">
-                    <Border Background="{TemplateBinding Background}" BorderThickness="{TemplateBinding BorderThickness}" 
-                            BorderBrush="{TemplateBinding BorderBrush}">
-                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
-                    </Border>
-                </ControlTemplate>
-            </StackPanel.Resources>
-
-            <Button Template="{StaticResource ButtonTemplate}" Background="Red">
-                <Button.Style>
-                    <Style TargetType="{x:Type Button}">
-                        <Setter Property="Background" Value="Blue"/>
-                        <Style.Triggers>
-                            <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="Background" Value="Yellow" />
-                            </Trigger>
-                        </Style.Triggers>
-                    </Style>
-                </Button.Style>
-                Which color do you expect?
-            </Button>
-        </StackPanel>
-        <!--</DependencyPropertyValuePrecedence>-->
     </StackPanel>
 </Window>
