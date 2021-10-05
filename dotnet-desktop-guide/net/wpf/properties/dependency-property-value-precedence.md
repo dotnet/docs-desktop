@@ -37,9 +37,9 @@ In the example, the `Background` property is locally set to `Red`. However, the 
 
 The following list is the definitive order of precedence that the property system uses when assigning runtime values to dependency properties. Highest precedence is listed first.
 
-1. **Property system coercion**. For more information about coercion, see [Coercion and animations](#coercion-and-animations).
+1. **Property system coercion**. For more information about coercion, see [Coercion and animations](#coercion-and-animation).
 
-2. **Active animations, or animations with a Hold behavior**. To have a practical effect, an animation value must have precedence over the base (unanimated) value, even if the base value was set locally. For more information, see [Coercion and animations](#coercion-and-animations).
+2. **Active animations, or animations with a Hold behavior**. To have a practical effect, an animation value must have precedence over the base (unanimated) value, even if the base value was set locally. For more information, see [Coercion and animations](#coercion-and-animation).
 
 3. **Local values**. You can set a local value through a "wrapper" property, which equates to setting an attribute or property element in XAML, or by a call to the <xref:System.Windows.DependencyObject.SetValue%2A> API using a property of a specific instance. A local value set through a binding or resource will have the same precedence as a value that's directly set.
 
@@ -103,7 +103,7 @@ Although dynamic resource references and bindings have the precedence of the loc
 
 The <xref:System.Windows.DependencyObject.SetCurrentValue%2A> method is another way to set a property, but it's not in the [precedence list](#dependency-property-precedence-list). `SetCurrentValue` lets you change the value of a property without overwriting the source of a previous value. For example, if a property is set by a trigger, and then you assign another value using `SetCurrentValue`, the next trigger action will set the property back to the trigger value. You can use `SetCurrentValue` whenever you want to set a property value without giving that value the precedence level of a local value. Similarly, you can use `SetCurrentValue` to change the value of a property without overwriting a binding.
 
-## Coercion and animations
+## Coercion and animation
 
 Coercion and animation both act on a *base value*. The *base value* is the dependency property value with the highest precedence, determined by evaluating upwards through the [precedence list](#dependency-property-precedence-list) until item 2 is reached.
 
