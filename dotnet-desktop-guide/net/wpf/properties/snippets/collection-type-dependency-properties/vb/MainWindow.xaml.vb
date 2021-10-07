@@ -1,4 +1,8 @@
 ﻿Namespace CodeSampleVb
+
+    ' <summary>
+    ' Interaction logic for MainWindow.xaml.
+    ' </summary>
     Partial Public Class MainWindow
         Inherits Window
 
@@ -6,38 +10,43 @@
             InitializeComponent()
         End Sub
 
-        '<AddToCollectionTest>
-        Private Sub BtnInitializeAquariumA(ByVal sender As Object, ByVal e As RoutedEventArgs)
-            Dim aquarium1 As New AquariumA()
-            Dim aquarium2 As New AquariumA()
-            Dim fish1 As New Fish()
-            Dim fish2 As New Fish()
-            aquarium1.AquariumContents.Add(fish1)
-            aquarium2.AquariumContents.Add(fish2)
-            MessageBox.Show($"Aquarium1 contains {aquarium1.AquariumContents.Count} fish\r\n" & $"Aquarium2 contains {aquarium2.AquariumContents.Count} fish")
+        '<InitializeAquariums>
+        Private Sub InitializeAquariums(sender As Object, e As RoutedEventArgs)
+            Dim aquarium1 As New Aquarium()
+            Dim aquarium2 As New Aquarium()
+            aquarium1.AquariumContents.Add(New Fish())
+            aquarium2.AquariumContents.Add(New Fish())
+            MessageBox.Show($"
+Aquarium1 contains {aquarium1.AquariumContents.Count} fish
+Aquarium2 contains {aquarium2.AquariumContents.Count} fish")
         End Sub
-        '</AddToCollectionTest>
-
-        Private Sub BtnInitializeAquariumB(ByVal sender As Object, ByVal e As RoutedEventArgs)
-            Dim aquarium1 As New AquariumB()
-            Dim aquarium2 As New AquariumB()
-            Dim fish1 As New Fish()
-            Dim fish2 As New Fish()
-            aquarium1.AquariumContents.Add(fish1)
-            aquarium2.AquariumContents.Add(fish2)
-            MessageBox.Show($"Aquarium1 contains {aquarium1.AquariumContents.Count} fish\r\n" & $"Aquarium2 contains {aquarium2.AquariumContents.Count} fish")
-        End Sub
+        '</InitializeAquariums>
 
     End Class
 
-    '<SetCollectionDefaultValueInMetadata>
-    Public Class AquariumA
+    '<SetCollectionDefaultValueInConstructor>
+    Public Class Aquarium
         Inherits DependencyObject
 
-        Private Shared ReadOnly s_aquariumContentsPropertyKey As DependencyPropertyKey = DependencyProperty.RegisterReadOnly("AquariumContents", GetType(List(Of FrameworkElement)), GetType(AquariumA), New FrameworkPropertyMetadata(New List(Of FrameworkElement)()))
+        ' Register a dependency property with the specified property name,
+        ' property type, owner type, and property metadata.
+        Private Shared ReadOnly s_aquariumContentsPropertyKey As DependencyPropertyKey =
+            DependencyProperty.RegisterReadOnly(
+                "AquariumContents",
+                GetType(List(Of FrameworkElement)),
+                GetType(Aquarium),
+                New FrameworkPropertyMetadata())
 
-        Public Shared ReadOnly AquariumContentsProperty As DependencyProperty = s_aquariumContentsPropertyKey.DependencyProperty
+        ' Store the dependency property identifier as a static member of the class.
+        Public Shared ReadOnly AquariumContentsProperty As DependencyProperty =
+            s_aquariumContentsPropertyKey.DependencyProperty
 
+        ' Set the default collection value in a class constructor.
+        Public Sub New()
+            SetValue(s_aquariumContentsPropertyKey, New List(Of FrameworkElement)())
+        End Sub
+
+        ' Declare a read-only property.
         Public ReadOnly Property AquariumContents As List(Of FrameworkElement)
             Get
                 Return CType(GetValue(AquariumContentsProperty), List(Of FrameworkElement))
@@ -48,26 +57,58 @@
     Public Class Fish
         Inherits FrameworkElement
     End Class
-    '</SetCollectionDefaultValueInMetadata>
+    '</SetCollectionDefaultValueInConstructor>
 
-    Public Class AquariumB
-        Inherits DependencyObject
+    Public Class ReadWriteAquariumContents
 
-        Private Shared ReadOnly s_aquariumContentsPropertyKey As DependencyPropertyKey = DependencyProperty.RegisterReadOnly("AquariumContents", GetType(List(Of FrameworkElement)), GetType(AquariumB), Nothing)
-
-        Public Shared ReadOnly AquariumContentsProperty As DependencyProperty = s_aquariumContentsPropertyKey.DependencyProperty
-
-        '<SetCollectionDefaultValueInConstructor>
-        Public Sub New()
-            SetValue(s_aquariumContentsPropertyKey, New List(Of FrameworkElement)())
+        Public Shared Sub InitializeAquariums()
+            Dim aquarium1 As New Aquarium()
+            Dim aquarium2 As New Aquarium()
+            aquarium1.AquariumContents.Add(New Fish())
+            aquarium2.AquariumContents.Add(New Fish())
+            aquarium2.AquariumContents = New List(Of FrameworkElement)()
+            MessageBox.Show($"
+Aquarium1 contains {aquarium1.AquariumContents.Count} fish
+Aquarium2 contains {aquarium2.AquariumContents.Count} fish")
         End Sub
-        '</SetCollectionDefaultValueInConstructor>
 
-        Public ReadOnly Property AquariumContents As List(Of FrameworkElement)
-            Get
-                Return CType(GetValue(AquariumContentsProperty), List(Of FrameworkElement))
-            End Get
-        End Property
+        '<ReadWriteDependencyProperty>
+        Public Class Aquarium
+            Inherits DependencyObject
+
+            ' Register a dependency property with the specified property name,
+            ' property type, and owner type.
+            Private Shared ReadOnly s_aquariumContentsProperty As DependencyProperty =
+                DependencyProperty.Register(
+                    "AquariumContents",
+                    GetType(List(Of FrameworkElement)),
+                    GetType(Aquarium))
+
+            ' Store the dependency property identifier as a static member of the class.
+            Public Shared ReadOnly AquariumContentsProperty As DependencyProperty =
+                s_aquariumContentsProperty
+
+            ' Set the default collection value in a class constructor.
+            Public Sub New()
+                SetValue(s_aquariumContentsProperty, New List(Of FrameworkElement)())
+            End Sub
+
+            ' Declare a read-write property.
+            Public Property AquariumContents As List(Of FrameworkElement)
+                Get
+                    Return CType(GetValue(AquariumContentsProperty), List(Of FrameworkElement))
+                End Get
+                Set
+                    SetValue(AquariumContentsProperty, Value)
+                End Set
+            End Property
+        End Class
+        '</ReadWriteDependencyProperty>
+
+        Public Class Fish
+            Inherits FrameworkElement
+        End Class
+
     End Class
 
 End Namespace

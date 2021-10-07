@@ -1,12 +1,11 @@
 ﻿<Window x:Class="CodeSampleCsharp.MainWindow"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:src="clr-namespace:CodeSampleCsharp"
-        Title="Collection-Type Dependency Properties" Height="200" Width="400">
+        Title="Collection-Type Dependency Properties" Height="100" Width="400">
 
     <StackPanel>
 
-        <Button Click="BtnInitializeAquariumA">Default value from property metadata</Button>
-        <Button Click="BtnInitializeAquariumB">Default value from constructor call</Button>
+        <Button Click="InitializeAquariums">Set collection default value in class constructor</Button>
 
     </StackPanel>
 </Window>
