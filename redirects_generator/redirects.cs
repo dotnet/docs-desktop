@@ -11,16 +11,28 @@ JsonSerializerOptions options = new JsonSerializerOptions
     ReadCommentHandling = JsonCommentHandling.Skip
 };
 
+// Load the definitions
+Console.WriteLine("Loading 'definitions.json'");
 Document document = JsonSerializer.Deserialize<Document>(System.IO.File.ReadAllText("definitions.json"), options);
 RedirectsFile redirects = new RedirectsFile();
 
+Console.WriteLine($"Checking for existing '{OutputFile}'");
 if (System.IO.File.Exists(OutputFile))
     redirects = JsonSerializer.Deserialize<RedirectsFile>(System.IO.File.ReadAllText(OutputFile), options);
 
+Console.WriteLine("Reading all entries");
 foreach (Entry item in document.Entries)
 {
     if (item.Redirect == RedirectType.Normal)
-        CreateNormalEntry(item.SourceUrl, item.TargetUrl, false);
+    {
+        if (item.SourceUrls == null)
+            CreateNormalEntry(item.SourceUrl, item.TargetUrl, false);
+        else
+        {
+            foreach (var sourceUrl in item.SourceUrls)
+                CreateNormalEntry(sourceUrl, item.TargetUrl, false);
+        }
+    }
 
     else if (item.Redirect == RedirectType.NormalDocId)
         CreateNormalEntry(item.SourceUrl, item.TargetUrl, true);
@@ -43,8 +55,12 @@ foreach (Entry item in document.Entries)
 }
 
 if (System.IO.File.Exists(OutputFile))
+{
+    Console.WriteLine($"Erasing '{OutputFile}'");
     System.IO.File.Delete(OutputFile);
+}
 
+Console.WriteLine($"Writing '{OutputFile}'");
 System.IO.File.WriteAllText(OutputFile, JsonSerializer.Serialize(redirects));
 
 void CreateEntry(string sourceMoniker, string sourceUrl, string targetUrl)
@@ -97,6 +113,7 @@ class Entry
     public RedirectType Redirect { get; set; }
     public string SourceUrl { get; set; }
     public string TargetUrl { get; set; }
+    public string[] SourceUrls { get; set; }
 }
 
 class RedirectsFile
@@ -133,7 +150,7 @@ class RedirectEntry
     public RedirectEntry() { }
 
     public RedirectEntry(string source, string targetUrl) =>
-        (source_path, redirect_url) = (source, targetUrl);
+        (source_path, redirect_url, redirect_document_id) = (source, targetUrl, false);
     
     public RedirectEntry(string source, string targetUrl, bool redirectId) =>
         (source_path, redirect_url, redirect_document_id) = (source, targetUrl, redirectId ? true : default);
