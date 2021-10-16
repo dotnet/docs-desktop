@@ -1,4 +1,6 @@
-This tool uses the _definitions.json_ file to generate a _.openpublishing.redirection_ file. If a _.openpublishing.redirection_ file exists in the folder, it's updated and appended to.
+This tool uses the _definitions.json_ file to generate a _.openpublishing.redirection_ file. If a _.openpublishing.redirection_ file exists in the folder, it's copied to the output folder and updated and appended to there.
+
+Pass in the file path of a _.openpublishing.redirection_ file, and it'll be  updated in-place. e.g. redirs.exe "c:\repos\dotnet\docs-desktop\.openpublishing.redirection.json"
 
 The definitions generate two-way redirects between versioned content. The definition file is a json file that has some config at the start:
 
