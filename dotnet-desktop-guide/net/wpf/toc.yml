@@ -84,6 +84,8 @@ items:
       href: properties/dependency-properties-overview.md
     - name: Dependency property value precedence
       href: properties/dependency-property-value-precedence.md
+    - name: Implement a dependency property
+      href: properties/how-to-implement-a-dependency-property.md
   - name: Resources
     items:
     - name: Overview
