@@ -329,6 +329,11 @@
             "SourceUrl": "/dotnet/desktop/wpf/advanced/dependency-property-value-precedence?view=netframeworkdesktop-4.8",
             "TargetUrl": "/dotnet/desktop/wpf/properties/dependency-property-value-precedence?view=netdesktop-5.0"
         },
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/wpf/advanced/attached-properties-overview?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/wpf/properties/attached-properties-overview?view=netdesktop-5.0"
+        },
 
         // Systems - XAML
         {

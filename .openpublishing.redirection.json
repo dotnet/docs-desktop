@@ -488,6 +488,14 @@
         {
             "source_path": "dotnet-desktop-guide/framework/wpf/properties/dependency-property-value-precedence.md",
             "redirect_url": "/dotnet/desktop/wpf/advanced/dependency-property-value-precedence?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/advanced/attached-properties-overview.md",
+            "redirect_url": "/dotnet/desktop/wpf/properties/attached-properties-overview?view=netdesktop-5.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/properties/attached-properties-overview.md",
+            "redirect_url": "/dotnet/desktop/wpf/advanced/attached-properties-overview?view=netframeworkdesktop-4.8"
         }
     ]
 }
