@@ -190,11 +190,6 @@
             "SourceUrl": "/dotnet/desktop/winforms/how-to-handle-keyboard-input-at-the-form-level?view=netframeworkdesktop-4.8",
             "TargetUrl": "/dotnet/desktop/winforms/input-keyboard/how-to-handle-forms?view=netdesktop-5.0"
         },
-        {
-            "Redirect": "OneWay",
-            "SourceUrl": "/dotnet/desktop/winforms/input-keyboard/how-to-simulate-events?view=netdesktop-5.0",
-            "TargetUrl": "/dotnet/desktop/winforms/how-to-simulate-mouse-and-keyboard-events-in-code?view=netframeworkdesktop-4.8"
-        },
 
         // Mouse overview
         {
