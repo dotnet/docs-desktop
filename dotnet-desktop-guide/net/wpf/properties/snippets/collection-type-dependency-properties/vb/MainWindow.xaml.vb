@@ -17,7 +17,7 @@
             aquarium1.AquariumContents.Add(New Fish())
             aquarium2.AquariumContents.Add(New Fish())
             MessageBox.Show($"
-Aquarium1 contains {aquarium1.AquariumContents.Count} fish
+Aquarium1 contains {aquarium1.AquariumContents.Count} fish{Environment.NewLine}
 Aquarium2 contains {aquarium2.AquariumContents.Count} fish")
         End Sub
         '</InitializeAquariums>
