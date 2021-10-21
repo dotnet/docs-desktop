@@ -29,10 +29,11 @@ namespace CodeSampleCsharp
         // property type, owner type, and property metadata.
         private static readonly DependencyPropertyKey s_aquariumContentsPropertyKey =
             DependencyProperty.RegisterReadOnly(
-              "AquariumContents",
-              typeof(List<FrameworkElement>),
-              typeof(Aquarium),
-              new FrameworkPropertyMetadata()
+              name: "AquariumContents",
+              propertyType: typeof(List<FrameworkElement>),
+              ownerType: typeof(Aquarium),
+              typeMetadata: new FrameworkPropertyMetadata()
+              //typeMetadata: new FrameworkPropertyMetadata(new List<FrameworkElement>())
             );
 
         // Store the dependency property identifier as a static member of the class.
@@ -71,9 +72,9 @@ namespace CodeSampleCsharp
             // property type, and owner type.
             private static readonly DependencyProperty s_aquariumContentsProperty =
                 DependencyProperty.Register(
-                  "AquariumContents",
-                  typeof(List<FrameworkElement>),
-                  typeof(Aquarium)
+                  name: "AquariumContents",
+                  propertyType: typeof(List<FrameworkElement>),
+                  ownerType: typeof(Aquarium)
                 );
 
             // Store the dependency property identifier as a static member of the class.

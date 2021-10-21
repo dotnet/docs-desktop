@@ -32,10 +32,11 @@ Aquarium2 contains {aquarium2.AquariumContents.Count} fish")
         ' property type, owner type, and property metadata.
         Private Shared ReadOnly s_aquariumContentsPropertyKey As DependencyPropertyKey =
             DependencyProperty.RegisterReadOnly(
-                "AquariumContents",
-                GetType(List(Of FrameworkElement)),
-                GetType(Aquarium),
-                New FrameworkPropertyMetadata())
+                name:="AquariumContents",
+                propertyType:=GetType(List(Of FrameworkElement)),
+                ownerType:=GetType(Aquarium),
+                typeMetadata:=New FrameworkPropertyMetadata())
+                'typeMetadata:=New FrameworkPropertyMetadata(New List(Of FrameworkElement)))
 
         ' Store the dependency property identifier as a static member of the class.
         Public Shared ReadOnly AquariumContentsProperty As DependencyProperty =
@@ -80,9 +81,9 @@ Aquarium2 contains {aquarium2.AquariumContents.Count} fish")
             ' property type, and owner type.
             Private Shared ReadOnly s_aquariumContentsProperty As DependencyProperty =
                 DependencyProperty.Register(
-                    "AquariumContents",
-                    GetType(List(Of FrameworkElement)),
-                    GetType(Aquarium))
+                    name:="AquariumContents",
+                    propertyType:=GetType(List(Of FrameworkElement)),
+                    ownerType:=GetType(Aquarium))
 
             ' Store the dependency property identifier as a static member of the class.
             Public Shared ReadOnly AquariumContentsProperty As DependencyProperty =
