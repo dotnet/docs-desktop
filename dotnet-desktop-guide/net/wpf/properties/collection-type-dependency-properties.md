@@ -30,10 +30,12 @@ The following example declares an `Aquarium` class that contains a collection of
 :::code language="csharp" source="./snippets/collection-type-dependency-properties/csharp/MainWindow.xaml.cs" id="SetCollectionDefaultValueInConstructor":::
 :::code language="vb" source="./snippets/collection-type-dependency-properties/vb/MainWindow.xaml.vb" id="SetCollectionDefaultValueInConstructor":::
 
-The following test code instantiates two separate `Aquarium` instances and adds a different `Fish` item to each collection. If you run the code, you'll see that each `Aquarium` instance has a single collection item, as expected. But, if you comment out the class constructor and pass the default collection value as <xref:System.Windows.PropertyMetadata> to the <xref:System.Windows.DependencyProperty.RegisterReadOnly%28System.String%2CSystem.Type%2CSystem.Type%2CSystem.Windows.PropertyMetadata%29> method, you'll see that each `Aquarium` instance gets two collection items!
+The following test code instantiates two separate `Aquarium` instances and adds a different `Fish` item to each collection. If you run the code, you'll see that each `Aquarium` instance has a single collection item, as expected.
 
 :::code language="csharp" source="./snippets/collection-type-dependency-properties/csharp/MainWindow.xaml.cs" id="InitializeAquariums":::
 :::code language="vb" source="./snippets/collection-type-dependency-properties/vb/MainWindow.xaml.vb" id="InitializeAquariums":::
+
+But, if you comment out the class constructor and pass the default collection value as <xref:System.Windows.PropertyMetadata> to the <xref:System.Windows.DependencyProperty.RegisterReadOnly%28System.String%2CSystem.Type%2CSystem.Type%2CSystem.Windows.PropertyMetadata%29> method, you'll see that each `Aquarium` instance gets two collection items! This is because both `Fish` instances are added to the same list, which is shared by all instances of the Aquarium class. So, when the intent is for each object instance to have its own list, the default value should be set in the class constructor.
 
 ### Initialize a read-write collection
 
