@@ -50,6 +50,11 @@ A collection-type dependency property doesn't automatically report changes in it
 
 To enable subproperty binding in a collection of dependency objects, use the collection type `FreezableCollection`, with a type constraint of any <xref:System.Windows.DependencyObject> derived class.
 
+The following example declares an `Aquarium` class that contains a `FreezableCollection` with a type constraint of <xref:System.Windows.FrameworkElement>. A default collection value isn't included in the <xref:System.Windows.PropertyMetadata> passed to the <xref:System.Windows.DependencyProperty.RegisterReadOnly%28System.String%2CSystem.Type%2CSystem.Type%2CSystem.Windows.PropertyMetadata%29> method, and instead the class constructor is used to set the default collection value to a new `FreezableCollection`.
+
+:::code language="csharp" source="./snippets/collection-type-dependency-properties/csharp/MainWindow.xaml.cs" id="FreezableCollectionAquarium":::
+:::code language="vb" source="./snippets/collection-type-dependency-properties/vb/MainWindow.xaml.vb" id="FreezableCollectionAquarium":::
+
 ## See also
 
 - <xref:System.Windows.FreezableCollection%601>

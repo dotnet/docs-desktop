@@ -112,4 +112,53 @@ Aquarium2 contains {aquarium2.AquariumContents.Count} fish")
 
     End Class
 
+    Public Class FreezableCollectionAquarium
+
+        Public Shared Sub InitializeAquariums()
+            Dim aquarium1 As New Aquarium()
+            Dim aquarium2 As New Aquarium()
+            aquarium1.AquariumContents.Add(New Fish())
+            aquarium2.AquariumContents.Add(New Fish())
+            MessageBox.Show($"
+Aquarium1 contains {aquarium1.AquariumContents.Count} fish{Environment.NewLine}
+Aquarium2 contains {aquarium2.AquariumContents.Count} fish")
+        End Sub
+
+        '<FreezableCollectionAquarium>
+        Public Class Aquarium
+            Inherits DependencyObject
+
+            ' Register a dependency property with the specified property name,
+            ' property type, and owner type.
+            Private Shared ReadOnly s_aquariumContentsPropertyKey As DependencyPropertyKey =
+                DependencyProperty.RegisterReadOnly(
+                    name:="AquariumContents",
+                    propertyType:=GetType(FreezableCollection(Of FrameworkElement)),
+                    ownerType:=GetType(Aquarium),
+                    typeMetadata:=New FrameworkPropertyMetadata())
+
+            ' Store the dependency property identifier as a static member of the class.
+            Public Shared ReadOnly AquariumContentsProperty As DependencyProperty =
+                s_aquariumContentsPropertyKey.DependencyProperty
+
+            ' Set the default collection value in a class constructor.
+            Public Sub New()
+                SetValue(s_aquariumContentsPropertyKey, New FreezableCollection(Of FrameworkElement)())
+            End Sub
+
+            ' Declare a read-only property.
+            Public ReadOnly Property AquariumContents As FreezableCollection(Of FrameworkElement)
+                Get
+                    Return CType(GetValue(AquariumContentsProperty), FreezableCollection(Of FrameworkElement))
+                End Get
+            End Property
+        End Class
+        '</FreezableCollectionAquarium>
+
+        Public Class Fish
+            Inherits FrameworkElement
+        End Class
+
+    End Class
+
 End Namespace

@@ -95,4 +95,47 @@ namespace CodeSampleCsharp
 
         public class Fish : FrameworkElement { }
     }
+
+    public class FreezableCollectionAquarium
+    {
+        public static void InitializeAquariums()
+        {
+            Aquarium aquarium1 = new();
+            Aquarium aquarium2 = new();
+            aquarium1.AquariumContents.Add(new Fish());
+            aquarium2.AquariumContents.Add(new Fish());
+            MessageBox.Show(
+                $"Aquarium1 contains {aquarium1.AquariumContents.Count} fish\r\n" +
+                $"Aquarium2 contains {aquarium2.AquariumContents.Count} fish");
+        }
+
+        //<FreezableCollectionAquarium>
+        public class Aquarium : DependencyObject
+        {
+            // Register a dependency property with the specified property name,
+            // property type, and owner type.
+            private static readonly DependencyPropertyKey s_aquariumContentsPropertyKey =
+                DependencyProperty.RegisterReadOnly(
+                  name: "AquariumContents",
+                  propertyType: typeof(FreezableCollection<FrameworkElement>),
+                  ownerType: typeof(Aquarium),
+                  typeMetadata: new FrameworkPropertyMetadata()
+                );
+
+            // Store the dependency property identifier as a static member of the class.
+            public static readonly DependencyProperty AquariumContentsProperty =
+                s_aquariumContentsPropertyKey.DependencyProperty;
+
+            // Set the default collection value in a class constructor.
+            public Aquarium() => SetValue(s_aquariumContentsPropertyKey, new FreezableCollection<FrameworkElement>());
+
+            // Declare a read-only property.
+            public FreezableCollection<FrameworkElement> AquariumContents =>
+                (FreezableCollection<FrameworkElement>)GetValue(AquariumContentsProperty);
+        }
+
+        //</FreezableCollectionAquarium>
+
+        public class Fish : FrameworkElement { }
+    }
 }
