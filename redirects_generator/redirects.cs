@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
@@ -7,9 +8,21 @@ const string OutputFile = ".openpublishing.redirection.json";
 
 JsonSerializerOptions options = new JsonSerializerOptions
 {
-    Converters = { new System.Text.Json.Serialization.JsonStringEnumConverter() },
-    ReadCommentHandling = JsonCommentHandling.Skip
+    Converters = { new JsonStringEnumConverter() },
+    ReadCommentHandling = JsonCommentHandling.Skip,
+    WriteIndented = true
 };
+
+// If a .openpublishing.redirection.json path is provided,
+// then copy that file to the output folder.
+if (args.Length == 1 && File.Exists(args[0]))
+{
+    // Get passed in .openpublishing.redirection.json path.
+    string srcRedirectFilePath = args[0];
+
+    // Copy .openpublishing.redirection.json to output folder.
+    File.Copy(srcRedirectFilePath, OutputFile, overwrite: true);
+}
 
 // Load the definitions
 Console.WriteLine("Loading 'definitions.json'");
@@ -62,6 +75,22 @@ if (System.IO.File.Exists(OutputFile))
 
 Console.WriteLine($"Writing '{OutputFile}'");
 System.IO.File.WriteAllText(OutputFile, JsonSerializer.Serialize(redirects));
+
+// If a .openpublishing.redirection.json path is provided,
+// then overwrite it with the formatted new content.
+if (args.Length == 1 && File.Exists(args[0]))
+{
+    // Get passed in .openpublishing.redirection.json path.
+    string srcRedirectFilePath = args[0];
+
+    // Format new json content.
+    string formattedJson = JsonSerializer.Serialize(redirects, options);
+    formattedJson = formattedJson.Replace("  ", "    ");    // match existing indent.
+    formattedJson += "\r\n";    // add newline at end.
+
+    // Save new content to source path.
+    File.WriteAllText(srcRedirectFilePath, formattedJson);
+}
 
 void CreateEntry(string sourceMoniker, string sourceUrl, string targetUrl)
 {
