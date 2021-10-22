@@ -490,6 +490,14 @@
             "redirect_url": "/dotnet/desktop/wpf/advanced/dependency-property-value-precedence?view=netframeworkdesktop-4.8"
         },
         {
+            "source_path": "dotnet-desktop-guide/net/wpf/advanced/how-to-implement-a-dependency-property.md",
+            "redirect_url": "/dotnet/desktop/wpf/properties/how-to-implement-a-dependency-property?view=netdesktop-5.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/properties/how-to-implement-a-dependency-property.md",
+            "redirect_url": "/dotnet/desktop/wpf/advanced/how-to-implement-a-dependency-property?view=netframeworkdesktop-4.8"
+        },
+        {
             "source_path": "dotnet-desktop-guide/net/wpf/advanced/attached-properties-overview.md",
             "redirect_url": "/dotnet/desktop/wpf/properties/attached-properties-overview?view=netdesktop-5.0"
         },

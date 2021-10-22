@@ -344,6 +344,11 @@
             "SourceUrl": "/dotnet/desktop/wpf/advanced/how-to-register-an-attached-property?view=netframeworkdesktop-4.8",
             "TargetUrl": "/dotnet/desktop/wpf/properties/how-to-register-an-attached-property?view=netdesktop-5.0"
         },
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/wpf/advanced/how-to-implement-a-dependency-property?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/wpf/properties/how-to-implement-a-dependency-property?view=netdesktop-5.0"
+        },
 
         // Systems - XAML
         {

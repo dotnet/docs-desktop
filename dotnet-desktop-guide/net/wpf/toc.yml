@@ -84,14 +84,16 @@ items:
       href: properties/dependency-properties-overview.md
     - name: Dependency property value precedence
       href: properties/dependency-property-value-precedence.md
-    - name: Register an attached property
-      href: properties/how-to-register-an-attached-property.md
+    - name: Attached properties
+      href: properties/attached-properties-overview.md
     - name: Collection-type dependency properties
       href: properties/collection-type-dependency-properties.md
     - name: Common tasks
       items:
-      - name: Attached properties
-        href: properties/attached-properties-overview.md
+      - name: Implement a dependency property
+        href: properties/how-to-implement-a-dependency-property.md
+      - name: Register an attached property
+        href: properties/how-to-register-an-attached-property.md
   - name: Resources
     items:
     - name: Overview
