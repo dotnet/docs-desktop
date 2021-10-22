@@ -86,6 +86,8 @@ items:
       href: properties/dependency-property-value-precedence.md
     - name: Register an attached property
       href: properties/how-to-register-an-attached-property.md
+    - name: Collection-type dependency properties
+      href: properties/collection-type-dependency-properties.md
   - name: Resources
     items:
     - name: Overview
