@@ -1,1 +1,1 @@
-.\bin\Debug\net5.0\redirs.exe "..\.openpublishing.redirection.json"
+dotnet run -- "..\.openpublishing.redirection.json"
