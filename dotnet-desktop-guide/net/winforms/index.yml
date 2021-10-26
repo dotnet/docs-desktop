@@ -7,7 +7,6 @@ metadata:
   title: Windows Forms for .NET 5 documentation
   description: Learn about using Windows Forms, an open-source, graphical user interface for Windows, on .NET 5.
   ms.topic: landing-page
-  ms.prod: dotnet-desktop
   ms.date: 10/26/2020
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
