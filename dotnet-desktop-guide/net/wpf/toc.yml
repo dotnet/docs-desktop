@@ -88,6 +88,8 @@ items:
       href: properties/attached-properties-overview.md
     - name: Collection-type dependency properties
       href: properties/collection-type-dependency-properties.md
+    - name: Custom dependency properties
+      href: properties/custom-dependency-properties.md
     - name: Common tasks
       items:
       - name: Implement a dependency property
