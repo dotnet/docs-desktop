@@ -488,6 +488,38 @@
         {
             "source_path": "dotnet-desktop-guide/framework/wpf/properties/dependency-property-value-precedence.md",
             "redirect_url": "/dotnet/desktop/wpf/advanced/dependency-property-value-precedence?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/advanced/how-to-implement-a-dependency-property.md",
+            "redirect_url": "/dotnet/desktop/wpf/properties/how-to-implement-a-dependency-property?view=netdesktop-5.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/properties/how-to-implement-a-dependency-property.md",
+            "redirect_url": "/dotnet/desktop/wpf/advanced/how-to-implement-a-dependency-property?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/advanced/attached-properties-overview.md",
+            "redirect_url": "/dotnet/desktop/wpf/properties/attached-properties-overview?view=netdesktop-5.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/properties/attached-properties-overview.md",
+            "redirect_url": "/dotnet/desktop/wpf/advanced/attached-properties-overview?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/advanced/how-to-register-an-attached-property.md",
+            "redirect_url": "/dotnet/desktop/wpf/properties/how-to-register-an-attached-property?view=netdesktop-5.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/properties/how-to-register-an-attached-property.md",
+            "redirect_url": "/dotnet/desktop/wpf/advanced/how-to-register-an-attached-property?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/advanced/collection-type-dependency-properties.md",
+            "redirect_url": "/dotnet/desktop/wpf/properties/collection-type-dependency-properties?view=netdesktop-5.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/properties/collection-type-dependency-properties.md",
+            "redirect_url": "/dotnet/desktop/wpf/advanced/collection-type-dependency-properties?view=netframeworkdesktop-4.8"
         }
     ]
 }
