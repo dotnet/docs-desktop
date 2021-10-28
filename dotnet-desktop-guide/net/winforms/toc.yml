@@ -3,6 +3,9 @@ items:
   href: index.yml
 - name: What's new
   href: whats-new/index.md
+  items:
+  - name: What's new in .NET 5.0
+    href: what-new/net50.md
 - name: Get started
   items:
   - name: Overview
