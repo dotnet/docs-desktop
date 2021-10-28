@@ -164,7 +164,7 @@ There's a general principle in managed code programming, often enforced by code 
 - [Dependency properties overview](dependency-properties-overview.md)
 - [Dependency property metadata](/dotnet/desktop/wpf/advanced/dependency-property-metadata?view=netframeworkdesktop-4.8&preserve-view=true)
 - [Control authoring overview](/dotnet/desktop/wpf/controls/control-authoring-overview?view=netframeworkdesktop-4.8&preserve-view=true)
-- [Collection-type dependency properties](/dotnet/desktop/wpf/advanced/collection-type-dependency-properties?view=netframeworkdesktop-4.8&preserve-view=true)
+- [Collection-type dependency properties](collection-type-dependency-properties.md)
 - [Dependency property security](/dotnet/desktop/wpf/advanced/dependency-property-security?view=netframeworkdesktop-4.8&preserve-view=true)
 - [XAML loading and dependency properties](/dotnet/desktop/wpf/advanced/xaml-loading-and-dependency-properties?view=netframeworkdesktop-4.8&preserve-view=true)
 - [Safe constructor patterns for DependencyObjects](/dotnet/desktop/wpf/advanced/safe-constructor-patterns-for-dependencyobjects?view=netframeworkdesktop-4.8&preserve-view=true)
