@@ -42,7 +42,7 @@ WPF dependency properties that aren't attached properties are exposed by a CLR w
 
 When you implement a property on a class that derives from <xref:System.Windows.DependencyObject>, you make it a dependency property by backing your property with a <xref:System.Windows.DependencyProperty> identifier. Whether it's beneficial to create a dependency property depends on your scenario. Although backing your property with a private field is adequate for some scenarios, consider implementing a dependency property if you want your property to support one or more of the following WPF capabilities:
 
-- Properties that are settable within a style. For more information, see [Styling and templates](/dotnet/desktop/wpf/controls/styles-templates-overview).
+- Properties that are settable within a style. For more information, see [Styles and templates](../controls/styles-templates-overview.md).
 
 - Properties that support data binding. For more information about data binding dependency properties, see [Bind the properties of two controls](/dotnet/desktop/wpf/data/how-to-bind-the-properties-of-two-controls?view=netframeworkdesktop-4.8&preserve-view=true).
 
