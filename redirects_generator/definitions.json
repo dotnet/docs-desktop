@@ -349,6 +349,11 @@
             "SourceUrl": "/dotnet/desktop/wpf/advanced/how-to-implement-a-dependency-property?view=netframeworkdesktop-4.8",
             "TargetUrl": "/dotnet/desktop/wpf/properties/how-to-implement-a-dependency-property?view=netdesktop-5.0"
         },
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/wpf/advanced/custom-dependency-properties?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/wpf/properties/custom-dependency-properties?view=netdesktop-5.0"
+        },
 
         // Systems - XAML
         {
