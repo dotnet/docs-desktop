@@ -1,11 +1,11 @@
 ### YamlMime:Landing
 
 title: Windows Forms documentation
-summary: Learn about using Windows Forms, an open-source, graphical user interface for Windows, on .NET 6.0.
+summary: Learn about using Windows Forms, an open-source, graphical user interface for Windows, on .NET 6.
 
 metadata:
-  title: Windows Forms for .NET 6.0 documentation
-  description: Learn about using Windows Forms, an open-source, graphical user interface for Windows, on .NET 6.0.
+  title: Windows Forms for .NET 6 documentation
+  description: Learn about using Windows Forms, an open-source, graphical user interface for Windows, on .NET 6.
   ms.topic: landing-page
   ms.date: 10/26/2020
 
