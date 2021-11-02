@@ -15,14 +15,8 @@ JsonSerializerOptions options = new JsonSerializerOptions
 
 // If a .openpublishing.redirection.json path is provided,
 // then copy that file to the output folder.
-if (args.Length == 1)
+if (args.Length == 1 && File.Exists(args[0]))
 {
-    if (!File.Exists(args[0]))
-    {
-        Console.WriteLine("ERROR: The file provided doesn't exist");
-        return;
-    }
-
     // Get passed in .openpublishing.redirection.json path.
     string srcRedirectFilePath = args[0];
 
