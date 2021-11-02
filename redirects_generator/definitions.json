@@ -354,6 +354,11 @@
             "SourceUrl": "/dotnet/desktop/wpf/advanced/custom-dependency-properties?view=netframeworkdesktop-4.8",
             "TargetUrl": "/dotnet/desktop/wpf/properties/custom-dependency-properties?view=netdesktop-5.0"
         },
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/wpf/advanced/dependency-property-metadata?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/wpf/properties/dependency-property-metadata?view=netdesktop-5.0"
+        },
 
         // Systems - XAML
         {
