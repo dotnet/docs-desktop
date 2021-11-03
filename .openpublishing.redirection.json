@@ -528,6 +528,14 @@
         {
             "source_path": "dotnet-desktop-guide/framework/wpf/properties/custom-dependency-properties.md",
             "redirect_url": "/dotnet/desktop/wpf/advanced/custom-dependency-properties?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/advanced/dependency-property-metadata.md",
+            "redirect_url": "/dotnet/desktop/wpf/properties/dependency-property-metadata?view=netdesktop-5.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/properties/dependency-property-metadata.md",
+            "redirect_url": "/dotnet/desktop/wpf/advanced/dependency-property-metadata?view=netframeworkdesktop-4.8"
         }
     ]
 }
