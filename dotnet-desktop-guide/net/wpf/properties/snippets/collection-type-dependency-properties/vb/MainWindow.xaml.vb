@@ -76,20 +76,17 @@
             Inherits DependencyObject
 
             ' Register a dependency property with the specified property name,
-            ' property type, and owner type.
-            Private Shared ReadOnly s_aquariumContentsProperty As DependencyProperty =
+            ' property type, and owner type. Store the dependency property
+            ' identifier as a static member of the class.
+            Public Shared ReadOnly AquariumContentsProperty As DependencyProperty =
                 DependencyProperty.Register(
                     name:="AquariumContents",
                     propertyType:=GetType(List(Of FrameworkElement)),
                     ownerType:=GetType(Aquarium))
 
-            ' Store the dependency property identifier as a static member of the class.
-            Public Shared ReadOnly AquariumContentsProperty As DependencyProperty =
-                s_aquariumContentsProperty
-
             ' Set the default collection value in a class constructor.
             Public Sub New()
-                SetValue(s_aquariumContentsProperty, New List(Of FrameworkElement)())
+                SetValue(AquariumContentsProperty, New List(Of FrameworkElement)())
             End Sub
 
             ' Declare a read-write property.
