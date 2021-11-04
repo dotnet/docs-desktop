@@ -36,7 +36,7 @@ namespace CodeSampleCsharp
         //</RegisterDependencyProperty>
 
         // Declare a read-write property.
-        public Uri AquariumContents
+        public Uri AquariumGraphic
         {
             get => (Uri)GetValue(AquariumGraphicProperty);
             set => SetValue(AquariumGraphicProperty, value);
