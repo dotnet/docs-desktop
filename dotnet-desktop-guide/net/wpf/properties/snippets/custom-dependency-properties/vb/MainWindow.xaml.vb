@@ -17,8 +17,9 @@
         '<RegisterDependencyPropertyWithWrapper>
         '<RegisterDependencyProperty>
         ' Register a dependency property with the specified property name,
-        ' property type, owner type, and property metadata.
-        Private Shared ReadOnly s_aquariumGraphicProperty As DependencyProperty =
+        ' property type, owner type, and property metadata. Store the dependency
+        ' property identifier as a public static readonly member of the class.
+        Public Shared ReadOnly AquariumGraphicProperty As DependencyProperty =
             DependencyProperty.Register(
                 name:="AquariumGraphic",
                 propertyType:=GetType(Uri),
@@ -27,10 +28,6 @@
                     defaultValue:=New Uri("http://www.contoso.com/aquarium-graphic.jpg"),
                     flags:=FrameworkPropertyMetadataOptions.AffectsRender,
                     propertyChangedCallback:=New PropertyChangedCallback(AddressOf OnUriChanged)))
-
-        ' Store the dependency property identifier as a static member of the class.
-        Public Shared ReadOnly AquariumGraphicProperty As DependencyProperty =
-            s_aquariumGraphicProperty
         '</RegisterDependencyProperty>
 
         ' Declare a read-write property.

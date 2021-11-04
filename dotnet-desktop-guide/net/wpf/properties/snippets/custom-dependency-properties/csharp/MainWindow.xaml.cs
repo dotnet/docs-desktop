@@ -18,8 +18,9 @@ namespace CodeSampleCsharp
         //<RegisterDependencyPropertyWithWrapper>
         //<RegisterDependencyProperty>
         // Register a dependency property with the specified property name,
-        // property type, owner type, and property metadata.
-        private static readonly DependencyProperty s_aquariumGraphicProperty =
+        // property type, owner type, and property metadata. Store the dependency
+        // property identifier as a public static readonly member of the class.
+        public static readonly DependencyProperty AquariumGraphicProperty =
             DependencyProperty.Register(
               name: "AquariumGraphic",
               propertyType: typeof(Uri),
@@ -29,10 +30,6 @@ namespace CodeSampleCsharp
                   flags: FrameworkPropertyMetadataOptions.AffectsRender,
                   propertyChangedCallback: new PropertyChangedCallback(OnUriChanged))
             );
-
-        // Store the dependency property identifier as a static member of the class.
-        public static readonly DependencyProperty AquariumGraphicProperty =
-            s_aquariumGraphicProperty;
         //</RegisterDependencyProperty>
 
         // Declare a read-write property.
