@@ -37,4 +37,3 @@ In the following example, the derived class `TropicalAquarium` overrides the met
 - [Dependency property metadata](dependency-property-metadata.md)
 - [Dependency properties overview](dependency-properties-overview.md)
 - [Custom dependency properties](custom-dependency-properties.md)
-- [How-to topics](/dotnet/desktop/wpf/advanced/properties-how-to-topics?view=netframeworkdesktop-4.8&preserve-view=true)
