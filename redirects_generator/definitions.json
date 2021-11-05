@@ -359,6 +359,11 @@
             "SourceUrl": "/dotnet/desktop/wpf/advanced/dependency-property-metadata?view=netframeworkdesktop-4.8",
             "TargetUrl": "/dotnet/desktop/wpf/properties/dependency-property-metadata?view=netdesktop-5.0"
         },
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/wpf/advanced/how-to-override-metadata-for-a-dependency-property?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/wpf/properties/how-to-override-metadata-for-a-dependency-property?view=netdesktop-5.0"
+        },
 
         // Systems - XAML
         {

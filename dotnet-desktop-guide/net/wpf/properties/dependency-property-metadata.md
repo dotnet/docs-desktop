@@ -38,7 +38,7 @@ The <xref:System.Windows.PropertyMetadata> class stores most of the metadata use
 
 - Types that add themselves as an owner of a dependency property.
 
-If a type registers a dependency property without specifying metadata, the property system assigns a default `PropertyMetadata` object with default values for that type to the dependency property.
+If a type registers a dependency property without specifying metadata, the property system assigns a `PropertyMetadata` object with default values for that type to the dependency property.
 
 To retrieve metadata for a dependency property, call one of the <xref:System.Windows.DependencyProperty.GetMetadata%2A> overloads on the <xref:System.Windows.DependencyProperty> identifier. The metadata is returned as a `PropertyMetadata` object.
 
