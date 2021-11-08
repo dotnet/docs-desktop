@@ -30,17 +30,40 @@ static void Main()
 }
 ```
 
-## Minimal applications
+## New application bootstrap
 
 The change of the default font has also meant the designer was no longer able to provide a true WYSIWYG experience, because Visual Studio process is run under .NET Framework 4.7.2 and uses the old default font, whereas a .NET application at runtime uses the new font.
 
-To make the designer the default font aware, and to simplify the `Main` method we have 
+To make the designer the default font aware, and to simplify the `Main` method we have re-designed [the application bootstrap](https://github.com/dotnet/designs/blob/main/accepted/2021/winforms/streamline-application-bootstrap.md):
 
+```csharp
+class Program
+{
+    [STAThread]
+    static void Main()
+    {
+        ApplicationConfiguration.Initialize();
+        Application.Run(new Form1());
+    }
+}
+```
 
+However, there is more a play than immediately meets the eye.
+`ApplicationConfiguration.Initialize()` is a source generated API that behind the scenes emits the following calls:
+```csharp
+Application.EnableVisualStyles();
+Application.SetCompatibleTextRenderingDefault(false);
+Application.SetDefaultFont(new Font(...));
+Application.SetHighDpiMode(HighDpiMode.SystemAware);
+```
+The parameters of these calls are configurable via [MSBuild properties](https://docs.microsoft.com/dotnet/core/project-sdk/msbuild-props-desktop#windows-forms-settings) in csproj or props files.
+The Windows Forms designer in Visual Studio 2022 is also aware of these properties (for now it only reads the default font), and can show you your application as it would look at runtime:
+
+<TODO: image goes here>
 
 ## Updated templates for C#
 
-In line with [related changes in .NET workloads](../../sdk/6.0/csharp-template-code.md), Windows Forms templates for C# have been updated to support `global using` directives, file-scoped namespaces, and nullable reference types. Because a typical Windows Forms app consist of multiple types split across multiple files, for example, Form1.cs and Form1.Designer.cs, top-level statements are notably absent from the Windows Forms templates. However, the updated templates do include application bootstrap code. This can cause incompatibility if you target an earlier version of .NET.
+In line with [related changes in .NET workloads](../../sdk/6.0/csharp-template-code.md), Windows Forms templates for C# have been updated to support `global using` directives, file-scoped namespaces, and nullable reference types. Because a typical Windows Forms app requires a `[STAThread]` attribute and consist of multiple types split across multiple files, for example, Form1.cs and Form1.Designer.cs, top-level statements are notably absent from the Windows Forms templates. However, the updated templates do include the new application bootstrap code.
 
 ## New API
 
