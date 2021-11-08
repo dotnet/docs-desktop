@@ -11,15 +11,36 @@ Windows Forms for .NET 6 adds the following features and enhancements over .NET 
 
 There are a few breaking changes you should be aware of when migrating from .NET Framework to .NET 6. For more information, see [Breaking changes in Windows Forms](/dotnet/core/compatibility/winforms).
 
-## New application bootstrap
+## New application default font
 
-TODO
+[`Control.DefaultFont`](https://docs.microsoft.com/dotnet/api/system.windows.forms.control.defaultfont?view=windowsdesktop-5.0) in .NET Framework is set to Microsoft Sans Serif, 8.25pt. In .NET Core 3.0 the value of the default font has been changed to Segoe UI, 9pt align with [Windows user experience (UX) guidelines](https://docs.microsoft.com/windows/win32/uxguide/vis-fonts#fonts-and-colors). This change, however, made harder for some customers to migrate their large applications with pixel-perfect layouts.
+
+To make it easier to migrate those pixel-perfect appslications we added a new [`Application.SetDefaultFont`](https://docs.microsoft.com/dotnet/api/system.windows.forms.application.setdefaultfont) API to our toolkit:
+
+```csharp
+[STAThread]
+static void Main()
+{
+    Application.EnableVisualStyles();
+    Application.SetHighDpiMode(HighDpiMode.PerMonitorV2);
+
+    Application.SetDefaultFont(new Font(new FontFamily("Microsoft Sans Serif"), 8.25f));
+
+    Application.Run(new Form1());
+}
+```
+
+## Minimal applications
+
+The change of the default font has also meant the designer was no longer able to provide a true WYSIWYG experience, because Visual Studio process is run under .NET Framework 4.7.2 and uses the old default font, whereas a .NET application at runtime uses the new font.
+
+To make the designer the default font aware, and to simplify the `Main` method we have 
+
+
 
 ## Updated templates for C#
 
 In line with [related changes in .NET workloads](../../sdk/6.0/csharp-template-code.md), Windows Forms templates for C# have been updated to support `global using` directives, file-scoped namespaces, and nullable reference types. Because a typical Windows Forms app consist of multiple types split across multiple files, for example, Form1.cs and Form1.Designer.cs, top-level statements are notably absent from the Windows Forms templates. However, the updated templates do include application bootstrap code. This can cause incompatibility if you target an earlier version of .NET.
-
-TODO: note about .NET Framework templates. @OliaG to provide text.
 
 ## New API
 
@@ -74,7 +95,6 @@ TODO: note about .NET Framework templates. @OliaG to provide text.
 - High DPI improvements.
 TODO: @dreddy-work to provide text.
 - Windows 11 style default tooltip behavior makes the tooltip remain open when mouse hovers over it, and not disappear automatically. The tooltip can be dismissed by CONTROL or ESCAPE keys.
-TODO: @mmcgaw to provide text.
 - Microsoft UI Automation patterns work better with accessibility tools like Narrator and Jaws.
 
 
