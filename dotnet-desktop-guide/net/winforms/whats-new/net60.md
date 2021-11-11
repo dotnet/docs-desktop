@@ -34,7 +34,7 @@ class Program
 }
 ```
 
-In .NET 6, these templates have been modified to use the new bootstrap system, invoked by the `ApplicationConfiguration.Initialize` method.
+In .NET 6, these templates have been modified to use the new bootstrap code, invoked by the `ApplicationConfiguration.Initialize` method.
 
 ```csharp
 class Program
@@ -59,7 +59,44 @@ public static void Initialize()
 }
 ```
 
-## Project-level application settings
+The new bootstrap code is used by Visual Studio to configure the Windows Forms Visual Designer. If you opt-out of using the new bootstrap code, by restoring the old code and bypassing the `ApplicationConfiguration.Initialize` method, the Windows Forms Visual Designer won't respect the bootstrap settings you set.
+
+The settings generated in the `Initialize` method are controlled by the project file.
+
+### Project-level application settings
+
+To complement the [new application bootstrap](#new-application-bootstrap) feature of Windows Forms, a few `Application` settings previously set in the startup code of the application should be set in the project file. The project file can configure the following application settings:
+
+| Project setting                                                                                                               | Default value | API                                                                                    |
+|-------------------------------------------------------------------------------------------------------------------------------|-- |----------------------------------------------------------------------------------------|
+| [ApplicationVisualStyles](/dotnet/core/project-sdk/msbuild-props-desktop#applicationvisualstyles)                             | `true` | `Application.EnableVisualStyles();`                                                    |
+| [ApplicationUseCompatibleTextRendering](/dotnet/core/project-sdk/msbuild-props-desktop#applicationusecompatibletextrendering) | `false` | `Application.SetCompatibleTextRenderingDefault(false);`                                |
+| [ApplicationHighDpiMode](/dotnet/core/project-sdk/msbuild-props-desktop#applicationhighdpimode)                               | `SystemAware` | `Application.SetHighDpiMode(HighDpiMode.SystemAware);`                                 |
+| [ApplicationDefaultFont](/dotnet/core/project-sdk/msbuild-props-desktop#applicationdefaultfont)                               | `Segoe UI, 9pt` | `Application.SetDefaultFont(new Font(new FontFamily("Microsoft Sans Serif"), 8.25f));` |
+
+The following example demonstrates a project file that sets these application-related properties:
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+
+    <ApplicationVisualStyles>true</ApplicationVisualStyles>
+    <ApplicationUseCompatibleTextRendering>false</ApplicationUseCompatibleTextRendering>
+    <ApplicationHighDpiMode>SystemAware</ApplicationHighDpiMode>
+    <ApplicationDefaultFont>Segoe UI, 9pt</ApplicationDefaultFont>
+
+  </PropertyGroup>
+
+</Project>
+```
+
+The Windows Forms Visual Designer uses these settings. For more information, see the [Visual Studio designer improvements section](#visual-studio-designer-improvements).
 
 ## Change the default font
 
@@ -71,6 +108,11 @@ The default font can now be set in two ways:
 
 - Set the default font in the project file to be used by the [application bootstrap](#new-application-bootstrap) code:
 
+  > [!IMPORTANT]
+  > This is the preferred way. Using the project to configure the new application bootstrap system allows Visual Studio to use these settings in the designer.
+  
+  In the following example, the project file configures Windows Forms to use the same font that .NET Framework uses.
+
   ```xml
   <Project Sdk="Microsoft.NET.Sdk">
   
@@ -81,12 +123,13 @@ The default font can now be set in two ways:
     </PropertyGroup>
   
   </Project>
+  ```
   
  \- or -
- 
- - Call the the <xref:System.Windows.Forms.Application.SetDefaultFont%2A?displayProperty=nameWithType> API in the old way (but with no designer support):
 
- ````csharp
+- Call the the <xref:System.Windows.Forms.Application.SetDefaultFont%2A?displayProperty=nameWithType> API in the old way (but with no designer support):
+
+  ```csharp
   class Program
   {
       [STAThread]
@@ -99,31 +142,79 @@ The default font can now be set in two ways:
           Application.Run(new Form1());
       }
   }
+  ```
 
 ## Visual Studio designer improvements
 
-TODO: Text
-TODO: Image comparing differences
+The Windows Forms Visual Designer now accurately reflects the default font. Previous versions of Windows Forms for .NET didn't properly display the **Segoe UI** font in the Visual Designer, and was actually designing the form with the .NET Framework's default font. Because of the new [new application bootstrap](#new-application-bootstrap) feature, the Visual Designer accurately reflects the default font. Additionally, the Visual Designer respects the default font that's set in the project file.
 
-## New API
+:::image type="content" source="media/net60/appbootstrap.png" alt-text="Windows Forms designer is using the default font setting in Visual Studio":::
 
-- <xref:System.Windows.Forms.Application.SetDefaultFont?displayProperty=fullName>
-- <xref:System.Windows.Forms.Control.IsAncestorSiteInDesignMode?displayProperty=fullName>
-- <xref:System.Windows.Forms.ProfessionalColors.StatusStripBorder?displayProperty=fullName>
-- <xref:System.Windows.Forms.ProfessionalColorTable.StatusStripBorder?displayProperty=fullName>
-- <xref:Microsoft.VisualBasic.ApplicationServices?displayProperty=fullName> introduces the following API:
+### More runtime designers
 
-  - <xref:Microsoft.VisualBasic.ApplicationServices.ApplyApplicationDefaultsEventArgs?displayProperty=fullName>
-  - <xref:Microsoft.VisualBasic.ApplicationServices.ApplyApplicationDefaultsEventHandler?displayProperty=fullName>
-  - <xref:Microsoft.VisualBasic.ApplicationServices.ApplyApplicationDefaultsEventArgs.MinimumSplashScreenDisplayTime?displayProperty=fullName>
-  - <xref:Microsoft.VisualBasic.ApplicationServices.ApplyApplicationDefaultsEventArgs.MinimumSplashScreenDisplayTime?displayProperty=fullName>
-  - <xref:Microsoft.VisualBasic.ApplicationServices.ApplyApplicationDefaultsEventArgs.Font?displayProperty=fullName>
-  - <xref:Microsoft.VisualBasic.ApplicationServices.ApplyApplicationDefaultsEventArgs.Font?displayProperty=fullName>
-  - <xref:Microsoft.VisualBasic.ApplicationServices.ApplyApplicationDefaultsEventArgs.HighDpiMode?displayProperty=fullName>
-  - <xref:Microsoft.VisualBasic.ApplicationServices.ApplyApplicationDefaultsEventArgs.HighDpiMode?displayProperty=fullName>
-  - <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.ApplyApplicationDefaults?displayProperty=fullName>
-  - <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.HighDpiMode?displayProperty=fullName>
-  - <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.HighDpiMode?displayProperty=fullName>
+Designers that existed in the .NET Framework and enabled building a general-purpose designer, for example building a report designer, have been added to .NET 6:
+
+- <xref:System.ComponentModel.Design.ComponentDesigner?displayProperty=fullName>
+- <xref:System.Windows.Forms.Design.ButtonBaseDesigner?displayProperty=fullName>
+- <xref:System.Windows.Forms.Design.ComboBoxDesigner?displayProperty=fullName>
+- <xref:System.Windows.Forms.Design.ControlDesigner?displayProperty=fullName>
+- <xref:System.Windows.Forms.Design.DocumentDesigner?displayProperty=fullName>
+- <xref:System.Windows.Forms.Design.DocumentDesigner?displayProperty=fullName>
+- <xref:System.Windows.Forms.Design.FormDocumentDesigner?displayProperty=fullName>
+- <xref:System.Windows.Forms.Design.GroupBoxDesigner?displayProperty=fullName>
+- <xref:System.Windows.Forms.Design.LabelDesigner?displayProperty=fullName>
+- <xref:System.Windows.Forms.Design.ListBoxDesigner?displayProperty=fullName>
+- <xref:System.Windows.Forms.Design.ListViewDesigner?displayProperty=fullName>
+- <xref:System.Windows.Forms.Design.MaskedTextBoxDesigner?displayProperty=fullName>
+- <xref:System.Windows.Forms.Design.PanelDesigner?displayProperty=fullName>
+- <xref:System.Windows.Forms.Design.ParentControlDesigner?displayProperty=fullName>
+- <xref:System.Windows.Forms.Design.ParentControlDesigner?displayProperty=fullName>
+- <xref:System.Windows.Forms.Design.PictureBoxDesigner?displayProperty=fullName>
+- <xref:System.Windows.Forms.Design.RadioButtonDesigner?displayProperty=fullName>
+- <xref:System.Windows.Forms.Design.RichTextBoxDesigner?displayProperty=fullName>
+- <xref:System.Windows.Forms.Design.ScrollableControlDesigner?displayProperty=fullName>
+- <xref:System.Windows.Forms.Design.ScrollableControlDesigner?displayProperty=fullName>
+- <xref:System.Windows.Forms.Design.TextBoxBaseDesigner?displayProperty=fullName>
+- <xref:System.Windows.Forms.Design.TextBoxDesigner?displayProperty=fullName>
+- <xref:System.Windows.Forms.Design.ToolStripDesigner?displayProperty=fullName>
+- <xref:System.Windows.Forms.Design.ToolStripDropDownDesigner?displayProperty=fullName>
+- <xref:System.Windows.Forms.Design.ToolStripItemDesigner?displayProperty=fullName>
+- <xref:System.Windows.Forms.Design.ToolStripMenuItemDesigner?displayProperty=fullName>
+- <xref:System.Windows.Forms.Design.TreeViewDesigner?displayProperty=fullName>
+- <xref:System.Windows.Forms.Design.UpDownBaseDesigner?displayProperty=fullName>
+- <xref:System.Windows.Forms.Design.UserControlDocumentDesigner?displayProperty=fullName>
+
+## High DPI improvements for PerMonitorV2
+
+High DPI rendering with <xref:System.Windows.Forms.HighDpiMode.PerMonitorV2> have been improved:
+
+- Controls are created with the same DPI awareness as the application.
+- Container controls and MDI child windows now scale correctly.
+
+  For example, in .NET 5, moving a Windows Forms app from a monitor with 200% scaling to a monitor with 100% scaling would result in misplaced controls. This has been greatly improved in .NET 6:
+
+  :::image type="content" source="media/net60/highdpi.png" alt-text="High DPI improvements in .NET 6 for Windows Forms":::
+
+## New APIs
+
+- <xref:System.Windows.Forms.Application.SetDefaultFont%2A?displayProperty=fullName>
+- <xref:System.Windows.Forms.Control.IsAncestorSiteInDesignMode%2A?displayProperty=fullName>
+- <xref:System.Windows.Forms.ProfessionalColors.StatusStripBorder%2A?displayProperty=fullName>
+- <xref:System.Windows.Forms.ProfessionalColorTable.StatusStripBorder%2A?displayProperty=fullName>
+
+### New Visual Basic APIs
+
+- <xref:Microsoft.VisualBasic.ApplicationServices.ApplyApplicationDefaultsEventArgs?displayProperty=fullName>
+- <xref:Microsoft.VisualBasic.ApplicationServices.ApplyApplicationDefaultsEventHandler?displayProperty=fullName>
+- <xref:Microsoft.VisualBasic.ApplicationServices.ApplyApplicationDefaultsEventArgs.MinimumSplashScreenDisplayTime?displayProperty=fullName>
+- <xref:Microsoft.VisualBasic.ApplicationServices.ApplyApplicationDefaultsEventArgs.MinimumSplashScreenDisplayTime?displayProperty=fullName>
+- <xref:Microsoft.VisualBasic.ApplicationServices.ApplyApplicationDefaultsEventArgs.Font?displayProperty=fullName>
+- <xref:Microsoft.VisualBasic.ApplicationServices.ApplyApplicationDefaultsEventArgs.Font?displayProperty=fullName>
+- <xref:Microsoft.VisualBasic.ApplicationServices.ApplyApplicationDefaultsEventArgs.HighDpiMode?displayProperty=fullName>
+- <xref:Microsoft.VisualBasic.ApplicationServices.ApplyApplicationDefaultsEventArgs.HighDpiMode?displayProperty=fullName>
+- <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.ApplyApplicationDefaults?displayProperty=fullName>
+- <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.HighDpiMode?displayProperty=fullName>
+- <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.HighDpiMode?displayProperty=fullName>
 
 ## Updated APIs
 
@@ -134,10 +225,7 @@ TODO: Image comparing differences
   - `TryAgain`
   - `Continue`
 
-- <xref:System.Windows.Forms.Form?displayProperty=fullName> is extended with the following property:
-
-  - <xref:System.Windows.Forms.Form.MdiChildrenMinimizedAnchorBottom?displayProperty=fullName>
-
+- <xref:System.Windows.Forms.Form?displayProperty=fullName> has a new property: <xref:System.Windows.Forms.Form.MdiChildrenMinimizedAnchorBottom>
 - <xref:System.Windows.Forms.MessageBoxButtons?displayProperty=fullName> is extended with the following member:
 
   - `CancelTryContinue`
@@ -152,48 +240,6 @@ TODO: Image comparing differences
   - <xref:System.Windows.Forms.LinkClickedEventArgs.LinkStart?displayProperty=fullName>
 
 - <xref:System.Windows.Forms.NotifyIcon.Text?displayProperty=fullName> is now limited to 127 characters (from 63).
-
-## Enhanced features
-
-- High DPI improvements.
-TODO: @dreddy-work to provide text.
-- Windows 11 style default tooltip behavior makes the tooltip remain open when mouse hovers over it, and not disappear automatically. The tooltip can be dismissed by CONTROL or ESCAPE keys.
-- Microsoft UI Automation patterns work better with accessibility tools like Narrator and Jaws.
-
-
-## More runtime designers
-
-The missing designers and designer-related infrastructure that existed in .NET Framework and enable building a general-purpose designer (e.g., a report designer) have been added:
-
-- System.ComponentModel.Design.ComponentDesigner
-- System.Windows.Forms.Design.ButtonBaseDesigner
-- System.Windows.Forms.Design.ComboBoxDesigner
-- System.Windows.Forms.Design.ControlDesigner
-- System.Windows.Forms.Design.DocumentDesigner
-- System.Windows.Forms.Design.DocumentDesigner
-- System.Windows.Forms.Design.FormDocumentDesigner
-- System.Windows.Forms.Design.GroupBoxDesigner
-- System.Windows.Forms.Design.LabelDesigner
-- System.Windows.Forms.Design.ListBoxDesigner
-- System.Windows.Forms.Design.ListViewDesigner
-- System.Windows.Forms.Design.MaskedTextBoxDesigner
-- System.Windows.Forms.Design.PanelDesigner
-- System.Windows.Forms.Design.ParentControlDesigner
-- System.Windows.Forms.Design.ParentControlDesigner
-- System.Windows.Forms.Design.PictureBoxDesigner
-- System.Windows.Forms.Design.RadioButtonDesigner
-- System.Windows.Forms.Design.RichTextBoxDesigner
-- System.Windows.Forms.Design.ScrollableControlDesigner
-- System.Windows.Forms.Design.ScrollableControlDesigner
-- System.Windows.Forms.Design.TextBoxBaseDesigner
-- System.Windows.Forms.Design.TextBoxDesigner
-- System.Windows.Forms.Design.ToolStripDesigner
-- System.Windows.Forms.Design.ToolStripDropDownDesigner
-- System.Windows.Forms.Design.ToolStripItemDesigner
-- System.Windows.Forms.Design.ToolStripMenuItemDesigner
-- System.Windows.Forms.Design.TreeViewDesigner
-- System.Windows.Forms.Design.UpDownBaseDesigner
-- System.Windows.Forms.Design.UserControlDocumentDesigner
 
 ## See also
 
