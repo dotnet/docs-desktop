@@ -11,30 +11,30 @@ Windows Forms for .NET 6 adds the following features and enhancements over .NET 
 
 There are a few breaking changes you should be aware of when migrating from .NET Framework to .NET 6. For more information, see [Breaking changes in Windows Forms](/dotnet/core/compatibility/winforms).
 
-## New application default font
+## Updated templates for C\#
 
-[`Control.DefaultFont`](https://docs.microsoft.com/dotnet/api/system.windows.forms.control.defaultfont?view=windowsdesktop-5.0) in .NET Framework is set to Microsoft Sans Serif, 8.25pt. In .NET Core 3.0 the value of the default font has been changed to Segoe UI, 9pt align with [Windows user experience (UX) guidelines](https://docs.microsoft.com/windows/win32/uxguide/vis-fonts#fonts-and-colors). This change, however, made harder for some customers to migrate their large applications with pixel-perfect layouts.
+.NET 6 introduced many [changes to the standard console application templates](/dotnet/core/whats-new/dotnet-6#c-10-and-templates). In line with those changes, the Windows Forms templates for C# have been updated to enable [`global using` directives](/dotnet/core/project-sdk/overview#implicit-using-directives), [file-scoped namespaces](/dotnet/csharp/fundamentals/types/namespaces), and [nullable reference types](/dotnet/csharp/nullable-references) by default.
 
-To make it easier to migrate those pixel-perfect appslications we added a new [`Application.SetDefaultFont`](https://docs.microsoft.com/dotnet/api/system.windows.forms.application.setdefaultfont) API to our toolkit:
-
-```csharp
-[STAThread]
-static void Main()
-{
-    Application.EnableVisualStyles();
-    Application.SetHighDpiMode(HighDpiMode.PerMonitorV2);
-
-    Application.SetDefaultFont(new Font(new FontFamily("Microsoft Sans Serif"), 8.25f));
-
-    Application.Run(new Form1());
-}
-```
+One feature of the new C# templates that has not been carried forward with Windows Forms is [top-level statements](/dotnet/csharp/fundamentals/program-structure/top-level-statements). The typical Windows Forms application requires the `[STAThread]` attribute and consists of multiple types split across multiple files, such as the designer code files, so using **top-level statements** doesn't make sense.
 
 ## New application bootstrap
 
-The change of the default font has also meant the designer was no longer able to provide a true WYSIWYG experience, because Visual Studio process is run under .NET Framework 4.7.2 and uses the old default font, whereas a .NET application at runtime uses the new font.
+The templates that generate a new Windows Forms application create a `Main` method which serves as the entry point for your application when it runs. This method contains code that configures Windows Forms and displays the first form, known as the bootstrap code:
 
-To make the designer the default font aware, and to simplify the `Main` method we have re-designed [the application bootstrap](https://github.com/dotnet/designs/blob/main/accepted/2021/winforms/streamline-application-bootstrap.md):
+```csharp
+class Program
+{
+    [STAThread]
+    static void Main()
+    {
+        Application.EnableVisualStyles();
+        Application.SetCompatibleTextRenderingDefault(false);
+        Application.Run(new Form1());
+    }
+}
+```
+
+In .NET 6, these templates have been modified to use the new bootstrap system, invoked by the `ApplicationConfiguration.Initialize` method.
 
 ```csharp
 class Program
@@ -48,22 +48,62 @@ class Program
 }
 ```
 
-However, there is more a play than immediately meets the eye.
-`ApplicationConfiguration.Initialize()` is a source generated API that behind the scenes emits the following calls:
+This method is automatically generated at compile time and contains the code to configure Windows Forms. The project file can control these settings now too, and you can avoid configuring it in code. For example, the generated method looks similar to the following code:
+
 ```csharp
-Application.EnableVisualStyles();
-Application.SetCompatibleTextRenderingDefault(false);
-Application.SetDefaultFont(new Font(...));
-Application.SetHighDpiMode(HighDpiMode.SystemAware);
+public static void Initialize()
+{
+    Application.EnableVisualStyles();
+    Application.SetCompatibleTextRenderingDefault(false);
+    Application.SetHighDpiMode(HighDpiMode.SystemAware);
+}
 ```
-The parameters of these calls are configurable via [MSBuild properties](https://docs.microsoft.com/dotnet/core/project-sdk/msbuild-props-desktop#windows-forms-settings) in csproj or props files.
-The Windows Forms designer in Visual Studio 2022 is also aware of these properties (for now it only reads the default font), and can show you your application as it would look at runtime:
 
-<TODO: image goes here>
+## Project-level application settings
 
-## Updated templates for C#
+## Change the default font
 
-In line with [related changes in .NET workloads](../../sdk/6.0/csharp-template-code.md), Windows Forms templates for C# have been updated to support `global using` directives, file-scoped namespaces, and nullable reference types. Because a typical Windows Forms app requires a `[STAThread]` attribute and consist of multiple types split across multiple files, for example, Form1.cs and Form1.Designer.cs, top-level statements are notably absent from the Windows Forms templates. However, the updated templates do include the new application bootstrap code.
+The default font used by Windows Forms, represented by the read-only [`Control.DefaultFont`](https://docs.microsoft.com/dotnet/api/system.windows.forms.control.defaultfont?view=windowsdesktop-6.0) property, can now be changed.
+
+Windows Forms on .NET Core 3.0 introduced a new default font for Windows Forms: **Segoe UI, 9pt**. This font better aligned to the [Windows user experience (UX) guidelines](https://docs.microsoft.com/windows/win32/uxguide/vis-fonts#fonts-and-colors). However, .NET Framework uses **Microsoft Sans Serif, 8.25pt** as the default font. This change made it harder for some customers to migrate their large applications that utilized a pixel-perfect layout from .NET Framework to .NET. The only way to change the font for the whole application was to edit every form in the project, setting the <xref:System.Windows.Forms.Control.Font> property to an alternate font.
+
+The default font can now be set in two ways:
+
+- Call the the <xref:System.Windows.Forms.Application.SetDefaultFont%2A?displayProperty=nameWithType> API in the [application bootstrap](#new-application-bootstrap) code:
+
+  ```csharp
+  class Program
+  {
+      [STAThread]
+      static void Main()
+      {
+          ApplicationConfiguration.Initialize();
+          Application.SetDefaultFont(new Font(new FontFamily("Microsoft Sans Serif"), 8.25f));
+          Application.Run(new Form1());
+      }
+  }
+  ```
+
+  \- or -
+
+- Set the default font in the project file:
+
+  ```xml
+  <Project Sdk="Microsoft.NET.Sdk">
+  
+    <!-- other settings -->
+  
+    <PropertyGroup>
+      <ApplicationDefaultFont>Microsoft Sans Serif, 8.25pt</ApplicationDefaultFont>
+    </PropertyGroup>
+  
+  </Project>
+  ```
+
+## Visual Studio designer improvements
+
+TODO: Text
+TODO: Image comparing differences
 
 ## New API
 
@@ -158,5 +198,5 @@ The missing designers and designer-related infrastructure that existed in .NET F
 ## See also
 
 - [Breaking changes in Windows Forms](/dotnet/core/compatibility/winforms)
-- [Tutorial: Create a new WinForms app (Windows Forms .NET)](../get-started/create-app-visual-studio.md)
+- [Tutorial: Create a new WinForms app](../get-started/create-app-visual-studio.md)
 - [How to migrate a Windows Forms desktop app to .NET 6](../migration/index.md)
