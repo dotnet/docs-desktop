@@ -1,7 +1,7 @@
 ---
 title: What's new in Windows Forms .NET 6
 description: Learn about what's new in Windows Forms for .NET 6. Windows Forms. .NET provides new features and enhancements over .NET Framework.
-ms.date: 10/28/2021
+ms.date: 11/11/2021
 ms.topic: conceptual
 ---
 
@@ -217,7 +217,7 @@ High DPI rendering with <xref:System.Windows.Forms.HighDpiMode.PerMonitorV2> hav
 ## Updated APIs
 
 - <xref:System.Windows.Forms.Control.Invoke%2A?displayProperty=fullName> now accepts <xref:System.Action?displayProperty=fullName> and <xref:System.Func%601?displayProperty=fullName> as input parameters.
-- <xref:System.Windows.Forms.Control.BeingInvoke%2A?displayProperty=fullName> now accepts <xref:System.Action?displayProperty=fullName> as an input parameter.
+- <xref:System.Windows.Forms.Control.BeginInvoke%2A?displayProperty=fullName> now accepts <xref:System.Action?displayProperty=fullName> as an input parameter.
 - <xref:System.Windows.Forms.DialogResult?displayProperty=fullName> is extended with the following members:
 
   - `TryAgain`
