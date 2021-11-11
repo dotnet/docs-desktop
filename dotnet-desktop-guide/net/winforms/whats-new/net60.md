@@ -69,24 +69,7 @@ Windows Forms on .NET Core 3.0 introduced a new default font for Windows Forms: 
 
 The default font can now be set in two ways:
 
-- Call the the <xref:System.Windows.Forms.Application.SetDefaultFont%2A?displayProperty=nameWithType> API in the [application bootstrap](#new-application-bootstrap) code:
-
-  ```csharp
-  class Program
-  {
-      [STAThread]
-      static void Main()
-      {
-          ApplicationConfiguration.Initialize();
-          Application.SetDefaultFont(new Font(new FontFamily("Microsoft Sans Serif"), 8.25f));
-          Application.Run(new Form1());
-      }
-  }
-  ```
-
-  \- or -
-
-- Set the default font in the project file:
+- Set the default font in the project file to be used by the [application bootstrap](#new-application-bootstrap) code:
 
   ```xml
   <Project Sdk="Microsoft.NET.Sdk">
@@ -98,7 +81,24 @@ The default font can now be set in two ways:
     </PropertyGroup>
   
   </Project>
-  ```
+  
+ \- or -
+ 
+ - Call the the <xref:System.Windows.Forms.Application.SetDefaultFont%2A?displayProperty=nameWithType> API in the old way (but with no designer support):
+
+ ````csharp
+  class Program
+  {
+      [STAThread]
+      static void Main()
+      {
+          Application.EnableVisualStyles();
+          Application.SetCompatibleTextRenderingDefault(false);
+          Application.SetHighDpiMode(HighDpiMode.SystemAware);
+          Application.SetDefaultFont(new Font(new FontFamily("Microsoft Sans Serif"), 8.25f));
+          Application.Run(new Form1());
+      }
+  }
 
 ## Visual Studio designer improvements
 
