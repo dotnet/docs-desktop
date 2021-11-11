@@ -100,9 +100,7 @@ The Windows Forms Visual Designer uses these settings. For more information, see
 
 ## Change the default font
 
-The default font used by Windows Forms, represented by the read-only [`Control.DefaultFont`](https://docs.microsoft.com/dotnet/api/system.windows.forms.control.defaultfont?view=windowsdesktop-6.0) property, can now be changed.
-
-Windows Forms on .NET Core 3.0 introduced a new default font for Windows Forms: **Segoe UI, 9pt**. This font better aligned to the [Windows user experience (UX) guidelines](https://docs.microsoft.com/windows/win32/uxguide/vis-fonts#fonts-and-colors). However, .NET Framework uses **Microsoft Sans Serif, 8.25pt** as the default font. This change made it harder for some customers to migrate their large applications that utilized a pixel-perfect layout from .NET Framework to .NET. The only way to change the font for the whole application was to edit every form in the project, setting the <xref:System.Windows.Forms.Control.Font> property to an alternate font.
+Windows Forms on .NET Core 3.0 introduced a new default font for Windows Forms: **Segoe UI, 9pt**. This font better aligned to the [Windows user experience (UX) guidelines](/windows/win32/uxguide/vis-fonts#fonts-and-colors). However, .NET Framework uses **Microsoft Sans Serif, 8.25pt** as the default font. This change made it harder for some customers to migrate their large applications that utilized a pixel-perfect layout from .NET Framework to .NET. The only way to change the font for the whole application was to edit every form in the project, setting the <xref:System.Windows.Forms.Control.Font> property to an alternate font.
 
 The default font can now be set in two ways:
 
@@ -155,34 +153,34 @@ The Windows Forms Visual Designer now accurately reflects the default font. Prev
 Designers that existed in the .NET Framework and enabled building a general-purpose designer, for example building a report designer, have been added to .NET 6:
 
 - <xref:System.ComponentModel.Design.ComponentDesigner?displayProperty=fullName>
-- <xref:System.Windows.Forms.Design.ButtonBaseDesigner?displayProperty=fullName>
-- <xref:System.Windows.Forms.Design.ComboBoxDesigner?displayProperty=fullName>
+- System.Windows.Forms.Design.ButtonBaseDesigner
+- System.Windows.Forms.Design.ComboBoxDesigner
 - <xref:System.Windows.Forms.Design.ControlDesigner?displayProperty=fullName>
 - <xref:System.Windows.Forms.Design.DocumentDesigner?displayProperty=fullName>
 - <xref:System.Windows.Forms.Design.DocumentDesigner?displayProperty=fullName>
-- <xref:System.Windows.Forms.Design.FormDocumentDesigner?displayProperty=fullName>
-- <xref:System.Windows.Forms.Design.GroupBoxDesigner?displayProperty=fullName>
-- <xref:System.Windows.Forms.Design.LabelDesigner?displayProperty=fullName>
-- <xref:System.Windows.Forms.Design.ListBoxDesigner?displayProperty=fullName>
-- <xref:System.Windows.Forms.Design.ListViewDesigner?displayProperty=fullName>
-- <xref:System.Windows.Forms.Design.MaskedTextBoxDesigner?displayProperty=fullName>
-- <xref:System.Windows.Forms.Design.PanelDesigner?displayProperty=fullName>
+- System.Windows.Forms.Design.FormDocumentDesigner
+- System.Windows.Forms.Design.GroupBoxDesigner
+- System.Windows.Forms.Design.LabelDesigner
+- System.Windows.Forms.Design.ListBoxDesigner
+- System.Windows.Forms.Design.ListViewDesigner
+- System.Windows.Forms.Design.MaskedTextBoxDesigner
+- System.Windows.Forms.Design.PanelDesigner
 - <xref:System.Windows.Forms.Design.ParentControlDesigner?displayProperty=fullName>
 - <xref:System.Windows.Forms.Design.ParentControlDesigner?displayProperty=fullName>
-- <xref:System.Windows.Forms.Design.PictureBoxDesigner?displayProperty=fullName>
-- <xref:System.Windows.Forms.Design.RadioButtonDesigner?displayProperty=fullName>
-- <xref:System.Windows.Forms.Design.RichTextBoxDesigner?displayProperty=fullName>
+- System.Windows.Forms.Design.PictureBoxDesigner
+- System.Windows.Forms.Design.RadioButtonDesigner
+- System.Windows.Forms.Design.RichTextBoxDesigner
 - <xref:System.Windows.Forms.Design.ScrollableControlDesigner?displayProperty=fullName>
 - <xref:System.Windows.Forms.Design.ScrollableControlDesigner?displayProperty=fullName>
-- <xref:System.Windows.Forms.Design.TextBoxBaseDesigner?displayProperty=fullName>
-- <xref:System.Windows.Forms.Design.TextBoxDesigner?displayProperty=fullName>
-- <xref:System.Windows.Forms.Design.ToolStripDesigner?displayProperty=fullName>
-- <xref:System.Windows.Forms.Design.ToolStripDropDownDesigner?displayProperty=fullName>
-- <xref:System.Windows.Forms.Design.ToolStripItemDesigner?displayProperty=fullName>
-- <xref:System.Windows.Forms.Design.ToolStripMenuItemDesigner?displayProperty=fullName>
-- <xref:System.Windows.Forms.Design.TreeViewDesigner?displayProperty=fullName>
-- <xref:System.Windows.Forms.Design.UpDownBaseDesigner?displayProperty=fullName>
-- <xref:System.Windows.Forms.Design.UserControlDocumentDesigner?displayProperty=fullName>
+- System.Windows.Forms.Design.TextBoxBaseDesigner
+- System.Windows.Forms.Design.TextBoxDesigner
+- System.Windows.Forms.Design.ToolStripDesigner
+- System.Windows.Forms.Design.ToolStripDropDownDesigner
+- System.Windows.Forms.Design.ToolStripItemDesigner
+- System.Windows.Forms.Design.ToolStripMenuItemDesigner
+- System.Windows.Forms.Design.TreeViewDesigner
+- System.Windows.Forms.Design.UpDownBaseDesigner
+- System.Windows.Forms.Design.UserControlDocumentDesigner
 
 ## High DPI improvements for PerMonitorV2
 
@@ -218,8 +216,8 @@ High DPI rendering with <xref:System.Windows.Forms.HighDpiMode.PerMonitorV2> hav
 
 ## Updated APIs
 
-- <xref:System.Windows.Forms.Control.Invoke?displayProperty=fullName> now accepts <xref:System.Action?displayProperty=fullName> and <xref:System.Func%601?displayProperty=fullName> as input parameters.
-- <xref:System.Windows.Forms.Control.BeingInvoke?displayProperty=fullName> now accepts <xref:System.Action?displayProperty=fullName> as an input parameter.
+- <xref:System.Windows.Forms.Control.Invoke%2A?displayProperty=fullName> now accepts <xref:System.Action?displayProperty=fullName> and <xref:System.Func%601?displayProperty=fullName> as input parameters.
+- <xref:System.Windows.Forms.Control.BeingInvoke%2A?displayProperty=fullName> now accepts <xref:System.Action?displayProperty=fullName> as an input parameter.
 - <xref:System.Windows.Forms.DialogResult?displayProperty=fullName> is extended with the following members:
 
   - `TryAgain`
