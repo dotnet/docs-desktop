@@ -69,20 +69,17 @@ namespace CodeSampleCsharp
         public class Aquarium : DependencyObject
         {
             // Register a dependency property with the specified property name,
-            // property type, and owner type.
-            private static readonly DependencyProperty s_aquariumContentsProperty =
+            // property type, and owner type. Store the dependency property
+            // identifier as a public static readonly member of the class.
+            public static readonly DependencyProperty AquariumContentsProperty =
                 DependencyProperty.Register(
                   name: "AquariumContents",
                   propertyType: typeof(List<FrameworkElement>),
                   ownerType: typeof(Aquarium)
                 );
 
-            // Store the dependency property identifier as a static member of the class.
-            public static readonly DependencyProperty AquariumContentsProperty =
-                s_aquariumContentsProperty;
-
             // Set the default collection value in a class constructor.
-            public Aquarium() => SetValue(s_aquariumContentsProperty, new List<FrameworkElement>());
+            public Aquarium() => SetValue(AquariumContentsProperty, new List<FrameworkElement>());
 
             // Declare a read-write property.
             public List<FrameworkElement> AquariumContents

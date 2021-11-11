@@ -90,12 +90,16 @@ items:
       href: properties/collection-type-dependency-properties.md
     - name: Custom dependency properties
       href: properties/custom-dependency-properties.md
+    - name: Dependency property metadata
+      href: properties/dependency-property-metadata.md
     - name: Common tasks
       items:
       - name: Implement a dependency property
         href: properties/how-to-implement-a-dependency-property.md
       - name: Register an attached property
         href: properties/how-to-register-an-attached-property.md
+      - name: Override dependency property metadata
+        href: properties/how-to-override-metadata-for-a-dependency-property.md
   - name: Resources
     items:
     - name: Overview
