@@ -67,12 +67,12 @@ The settings generated in the `Initialize` method are controlled by the project 
 
 To complement the [new application bootstrap](#new-application-bootstrap) feature of Windows Forms, a few `Application` settings previously set in the startup code of the application should be set in the project file. The project file can configure the following application settings:
 
-| Project setting                                                                                                               | Default value | API                                                                                    |
-|-------------------------------------------------------------------------------------------------------------------------------|-- |----------------------------------------------------------------------------------------|
-| [ApplicationVisualStyles](/dotnet/core/project-sdk/msbuild-props-desktop#applicationvisualstyles)                             | `true` | `Application.EnableVisualStyles();`                                                    |
-| [ApplicationUseCompatibleTextRendering](/dotnet/core/project-sdk/msbuild-props-desktop#applicationusecompatibletextrendering) | `false` | `Application.SetCompatibleTextRenderingDefault(false);`                                |
-| [ApplicationHighDpiMode](/dotnet/core/project-sdk/msbuild-props-desktop#applicationhighdpimode)                               | `SystemAware` | `Application.SetHighDpiMode(HighDpiMode.SystemAware);`                                 |
-| [ApplicationDefaultFont](/dotnet/core/project-sdk/msbuild-props-desktop#applicationdefaultfont)                               | `Segoe UI, 9pt` | `Application.SetDefaultFont(new Font(new FontFamily("Microsoft Sans Serif"), 8.25f));` |
+| Project setting                                                                                                               | Default value   | Corresponding API                                                                                    |
+|-------------------------------------------------------------------------------------------------------------------------------|-----------------|----------------------------------------------------------------------------------------|
+| [ApplicationVisualStyles](/dotnet/core/project-sdk/msbuild-props-desktop#applicationvisualstyles)                             | `true`          | `Application.EnableVisualStyles`                                                    |
+| [ApplicationUseCompatibleTextRendering](/dotnet/core/project-sdk/msbuild-props-desktop#applicationusecompatibletextrendering) | `false`         | `Application.SetCompatibleTextRenderingDefault`                                |
+| [ApplicationHighDpiMode](/dotnet/core/project-sdk/msbuild-props-desktop#applicationhighdpimode)                               | `SystemAware`   | `Application.SetHighDpiMode`                                 |
+| [ApplicationDefaultFont](/dotnet/core/project-sdk/msbuild-props-desktop#applicationdefaultfont)                               | `Segoe UI, 9pt` | `Application.SetDefaultFont` |
 
 The following example demonstrates a project file that sets these application-related properties:
 
@@ -89,7 +89,7 @@ The following example demonstrates a project file that sets these application-re
     <ApplicationVisualStyles>true</ApplicationVisualStyles>
     <ApplicationUseCompatibleTextRendering>false</ApplicationUseCompatibleTextRendering>
     <ApplicationHighDpiMode>SystemAware</ApplicationHighDpiMode>
-    <ApplicationDefaultFont>Segoe UI, 9pt</ApplicationDefaultFont>
+    <ApplicationDefaultFont>Microsoft Sans Serif, 8.25pt</ApplicationDefaultFont>
 
   </PropertyGroup>
 
