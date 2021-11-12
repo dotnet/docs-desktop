@@ -187,7 +187,7 @@ Designers that existed in the .NET Framework and enabled building a general-purp
 High DPI rendering with <xref:System.Windows.Forms.HighDpiMode.PerMonitorV2> have been improved:
 
 - Controls are created with the same DPI awareness as the application.
-- Container controls and MDI child windows now scale correctly.
+- Container controls and MDI child windows have improved scaling behaviors.
 
   For example, in .NET 5, moving a Windows Forms app from a monitor with 200% scaling to a monitor with 100% scaling would result in misplaced controls. This has been greatly improved in .NET 6:
 
