@@ -7,7 +7,7 @@ ms.topic: conceptual
 
 # What's new for .NET 6 (Windows Forms .NET)
 
-Windows Forms for .NET 6 adds the following features and enhancements over .NET Framework.
+This article describes some of the new Windows Forms features and enhancements in .NET 6.
 
 There are a few breaking changes you should be aware of when migrating from .NET Framework to .NET 6. For more information, see [Breaking changes in Windows Forms](/dotnet/core/compatibility/winforms).
 
@@ -238,6 +238,10 @@ High DPI rendering with <xref:System.Windows.Forms.HighDpiMode.PerMonitorV2> hav
   - <xref:System.Windows.Forms.LinkClickedEventArgs.LinkStart?displayProperty=fullName>
 
 - <xref:System.Windows.Forms.NotifyIcon.Text?displayProperty=fullName> is now limited to 127 characters (from 63).
+
+## Improved accessibility
+
+Microsoft UI Automation patterns work better with accessibility tools like Narrator and Jaws.
 
 ## See also
 
