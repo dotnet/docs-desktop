@@ -307,9 +307,11 @@
         '<GetValueSourceScenario>
         ' Coerce-value callback.
         Private Shared Function CoerceCurrentReading(depObj As DependencyObject, value As Object) As Object
+            ' Get value source.
             Dim valueSource As ValueSource =
                 DependencyPropertyHelper.GetValueSource(depObj, CurrentReadingProperty)
 
+            ' Reject any property value that's a locally set value.
             Return If(valueSource.BaseValueSource = BaseValueSource.Local, DependencyProperty.UnsetValue, value)
         End Function
         '</GetValueSourceScenario>
