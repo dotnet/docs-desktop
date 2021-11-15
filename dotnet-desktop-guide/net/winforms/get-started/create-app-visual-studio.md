@@ -1,7 +1,7 @@
 ---
 title: "Create a new app with Visual Studio tutorial"
 description: Follow this tutorial to learn how to create a new Windows Forms app for .NET with Visual Studio 2019.
-ms.date: 10/26/2020
+ms.date: 11/15/2021
 ms.topic: tutorial
 dev_langs: 
   - "csharp"
@@ -25,18 +25,32 @@ In this tutorial, you learn how to:
 
 ## Prerequisites
 
+:::moniker range="netdesktop-5.0"
+
 - [Visual Studio 2019 version 16.8 or later versions](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+desktopguide+winforms)
   - Select the [Visual Studio Desktop workload](/visualstudio/install/modify-visual-studio?view=vs-2019&preserve-view=true#modify-workloads)
   - Select the [.NET 5 individual component](/visualstudio/install/modify-visual-studio?view=vs-2019&preserve-view=true#modify-individual-components)
+
+:::moniker-end
+
+:::moniker range="netdesktop-6.0"
+
+- [Visual Studio 2022 version 17.0 or later versions](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&0utm_content=download+vs2022+desktopguide+winforms)
+  - Select the [.NET desktop development workload](/visualstudio/install/modify-visual-studio?view=vs-2019&preserve-view=true#modify-workloads)
+  - Select the [.NET 6 individual component](/visualstudio/install/modify-visual-studio?view=vs-2019&preserve-view=true#modify-individual-components)
+
+:::moniker-end
 
 ## Create a WinForms app
 
 The first step to creating a new app is opening Visual Studio and generating the app from a template.
 
+:::moniker range="netdesktop-5.0"
+
 01. Open Visual Studio.
 01. Select **Create a new project**.
 
-    :::image type="content" source="media/create-app-visual-studio/vs-create-new-project.png" alt-text="Create a new Windows Forms project in Visual Studio 2019 for .NET":::
+    :::image type="content" source="media/create-app-visual-studio/netdesktop-5.0/vs-create-new-project.png" alt-text="Create a new Windows Forms project in Visual Studio 2019 for .NET":::
 
 01. In the **Search for templates** box, type **winforms**, and then press <kbd>Enter</kbd>.
 01. In the **code language** dropdown, choose **C#** or **Visual Basic**.
@@ -45,13 +59,45 @@ The first step to creating a new app is opening Visual Studio and generating the
     > [!IMPORTANT]
     > Don't select the **Windows Forms App (.NET _Framework_)** template.
 
-    :::image type="content" source="media/create-app-visual-studio/vs-template-search.png" alt-text="Search for the Windows Forms template in Visual Studio 2019 for .NET":::
+    :::image type="content" source="media/create-app-visual-studio/netdesktop-5.0/vs-template-search.png" alt-text="Search for the Windows Forms template in Visual Studio 2019 for .NET":::
 
 01. In the **Configure your new project** window, set the **Project name** to **Names** and click **Create**.
 
     You can also save your project to a different folder by adjusting the **Location** setting.
 
-    :::image type="content" source="media/create-app-visual-studio/vs-config-new-project.png" alt-text="Configure new Windows Forms project in Visual Studio 2019 for .NET":::
+    :::image type="content" source="media/create-app-visual-studio/netdesktop-5.0/vs-config-new-project.png" alt-text="Configure new Windows Forms project in Visual Studio 2019 for .NET":::
+
+:::moniker-end
+
+:::moniker range="netdesktop-6.0"
+
+01. Open Visual Studio.
+01. Select **Create a new project**.
+
+    :::image type="content" source="media/create-app-visual-studio/netdesktop-6.0/vs-create-new-project.png" alt-text="Create a new Windows Forms project in Visual Studio 2022 for .NET":::
+
+01. In the **Search for templates** box, type **winforms**, and wait for the search results to appear.
+01. In the **code language** dropdown, choose **C#** or **Visual Basic**.
+01. In the list of templates, select **Windows Forms App** and then click **Next**.
+
+    > [!IMPORTANT]
+    > Don't select the **Windows Forms App (.NET _Framework_)** template.
+
+    The following image shows both C# and Visual Basic .NET project templates. If you applied the **code language** filter, you'll see the corresponding template.
+
+    :::image type="content" source="media/create-app-visual-studio/netdesktop-6.0/vs-template-search.png" alt-text="Search for the Windows Forms template in Visual Studio 2022 for .NET":::
+
+01. In the **Configure your new project** window, set the **Project name** to **Names** and click **Next**.
+
+    You can also save your project to a different folder by adjusting the **Location** path.
+
+    :::image type="content" source="media/create-app-visual-studio/netdesktop-6.0/vs-config-new-project.png" alt-text="Configure new Windows Forms project in Visual Studio 2022 for .NET":::
+
+01. Finally, in the **Additional information** window, select **.NET 6.0 (Long-term support)** for the **Framework** setting, and click **Create**.
+
+    :::image type="content" source="media/create-app-visual-studio/netdesktop-6.0/vs-select-framework.png" alt-text="Select the target framework for a Windows Forms project in Visual Studio 2022":::
+
+:::moniker-end
 
 Once the app is generated, Visual Studio should open the designer pane for the default form, _Form1_. If the form designer isn't visible, double-click on the form in the **Solution Explorer** pane to open the designer window.
 
@@ -59,7 +105,17 @@ Once the app is generated, Visual Studio should open the designer pane for the d
 
 Support for WinForms in Visual Studio has four important components that you'll interact with as you create an app:
 
-:::image type="content" source="media/create-app-visual-studio/vs-main-window.png" alt-text="The important components of Visual Studio you should know when creating a Windows Forms project for .NET":::
+:::moniker range="netdesktop-5.0"
+
+:::image type="content" source="media/create-app-visual-studio/netdesktop-5.0/vs-main-window.png" alt-text="The important components of Visual Studio 2019 you should know when creating a Windows Forms project for .NET":::
+
+:::moniker-end
+
+:::moniker range="netdesktop-6.0"
+
+:::image type="content" source="media/create-app-visual-studio/netdesktop-6.0/vs-main-window.png" alt-text="The important components of Visual Studio 2022 you should know when creating a Windows Forms project for .NET":::
+
+:::moniker-end
 
 01. Solution Explorer
 
@@ -111,7 +167,17 @@ You can position and size the controls according to the following settings. Eith
 
 You should have a form in the designer that looks similar to the following:
 
-:::image type="content" source="media/create-app-visual-studio/vs-form-preview.png" alt-text="Visual Studio 2019 designer with the form open for Windows Forms for .NET":::
+:::moniker range="netdesktop-5.0"
+
+:::image type="content" source="media/create-app-visual-studio/netdesktop-5.0/vs-form-preview.png" alt-text="Visual Studio 2019 designer with the form open for Windows Forms for .NET":::
+
+:::moniker-end
+
+:::moniker range="netdesktop-6.0"
+
+:::image type="content" source="media/create-app-visual-studio/netdesktop-6.0/vs-form-preview.png" alt-text="Visual Studio 2022 designer with the form open for Windows Forms for .NET":::
+
+:::moniker-end
 
 ## Handle events
 
@@ -140,27 +206,25 @@ Now that the form has all of its controls laid out, you need to handle the event
 
 01. The following code demonstrates adding a name to the `lstNames` control:
 
-    ```csharp
-    private void btnAdd_Click(object sender, EventArgs e)
-    {
-        if (!string.IsNullOrWhiteSpace(txtName.Text) && !lstNames.Items.Contains(txtName.Text))
-            lstNames.Items.Add(txtName.Text);
-    }
-    ```
+    :::code language="csharp" source="snippets/create-app-visual-studio/csharp/Form1.cs" id="buttonClick":::
 
-    ```vb
-    Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
-        If Not String.IsNullOrWhiteSpace(txtName.Text) And Not lstNames.Items.Contains(txtName.Text) Then
-            lstNames.Items.Add(txtName.Text)
-        End If
-    End Sub
-    ```
+    :::code language="vb" source="snippets/create-app-visual-studio/vb/Form1.vb" id="buttonClick":::
 
 ## Run the app
 
 Now that the event has been coded, you can run the app by pressing the <kbd>F5</kbd> key or by selecting **Debug** > **Start Debugging** from the menu. The form displays and you can enter a name in the textbox and then add it by clicking the button.
 
-:::image type="content" source="media/create-app-visual-studio/app-running.png" alt-text="Running a Windows Forms for .NET app.":::
+:::moniker range="netdesktop-5.0"
+
+:::image type="content" source="media/create-app-visual-studio/netdesktop-5.0/app-running.png" alt-text="Running a Windows Forms for a. NET app in Visual Studio 2019.":::
+
+:::moniker-end
+
+:::moniker range="netdesktop-6.0"
+
+:::image type="content" source="media/create-app-visual-studio/netdesktop-6.0/app-running.png" alt-text="Running a Windows Forms for a. NET app in Visual Studio 2022.":::
+
+:::moniker-end
 
 ## Next steps
 
