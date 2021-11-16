@@ -548,6 +548,14 @@
         {
             "source_path": "dotnet-desktop-guide/framework/wpf/properties/how-to-override-metadata-for-a-dependency-property.md",
             "redirect_url": "/dotnet/desktop/wpf/advanced/how-to-override-metadata-for-a-dependency-property?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/advanced/dependency-property-callbacks-and-validation.md",
+            "redirect_url": "/dotnet/desktop/wpf/properties/dependency-property-callbacks-and-validation?view=netdesktop-6.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/properties/dependency-property-callbacks-and-validation.md",
+            "redirect_url": "/dotnet/desktop/wpf/advanced/dependency-property-callbacks-and-validation?view=netframeworkdesktop-4.8"
         }
     ]
 }
