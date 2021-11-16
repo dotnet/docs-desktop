@@ -92,6 +92,8 @@ items:
       href: properties/custom-dependency-properties.md
     - name: Dependency property metadata
       href: properties/dependency-property-metadata.md
+    - name: Dependency property callbacks and validation
+      href: properties/dependency-property-callbacks-and-validation.md
     - name: Common tasks
       items:
       - name: Implement a dependency property
