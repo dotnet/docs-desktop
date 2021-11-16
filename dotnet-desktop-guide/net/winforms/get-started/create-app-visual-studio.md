@@ -8,9 +8,9 @@ dev_langs:
   - "vb"
 ---
 
-# Tutorial: Create a new WinForms app (Windows Forms .NET)
+# Tutorial: Create a Windows Forms app (Windows Forms .NET)
 
-In this short tutorial, you'll learn how to create a new Windows Forms (WinForms) app with Visual Studio. Once the initial app has been generated, you'll learn how to add controls and how to handle events. By the end of this tutorial, you'll have a simple app that adds names to a list box.
+In this short tutorial, you'll learn how to create a new Windows Forms app with Visual Studio. Once the initial app has been generated, you'll learn how to add controls and how to handle events. By the end of this tutorial, you'll have a simple app that adds names to a list box.
 
 [!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
 
@@ -18,7 +18,7 @@ In this tutorial, you learn how to:
 
 > [!div class="checklist"]
 >
-> - Create a new WinForms app
+> - Create a new Windows Forms app
 > - Add controls to a form
 > - Handle control events to provide app functionality
 > - Run the app
@@ -41,7 +41,7 @@ In this tutorial, you learn how to:
 
 :::moniker-end
 
-## Create a WinForms app
+## Create a Windows Forms app
 
 The first step to creating a new app is opening Visual Studio and generating the app from a template.
 
@@ -103,7 +103,7 @@ Once the app is generated, Visual Studio should open the designer pane for the d
 
 ### Important parts of Visual Studio
 
-Support for WinForms in Visual Studio has four important components that you'll interact with as you create an app:
+Support for Windows Forms in Visual Studio has four important components that you'll interact with as you create an app:
 
 :::moniker range="netdesktop-5.0"
 
