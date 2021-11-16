@@ -24,7 +24,7 @@ There are two implementations of Windows Forms:
 
     .NET Framework 4 is a Windows-only version of .NET and is considered a Windows Operating System component. This version of Windows Forms is distributed with .NET Framework.
 
-This Desktop Guide is written for Windows Forms on .NET 6. For more information about the .NET Framework version of Windows Forms, see [Windows Forms for .NET Framework](../../../framework/winforms/index.yml?view=netframeworkdesktop-4.8&preserve-view=true).
+This Desktop Guide is written for Windows Forms on .NET 5 and later versions. For more information about the .NET Framework version of Windows Forms, see [Windows Forms for .NET Framework](../../../framework/winforms/index.yml?view=netframeworkdesktop-4.8&preserve-view=true).
 
 ## Introduction
 
