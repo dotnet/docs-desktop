@@ -74,7 +74,7 @@ The first step to creating a new app is opening Visual Studio and generating the
 01. Open Visual Studio.
 01. Select **Create a new project**.
 
-    :::image type="content" source="media/create-app-visual-studio/netdesktop-6.0/vs-create-new-project.png" alt-text="Create a new Windows Forms project in Visual Studio 2022 for .NET":::
+    :::image type="content" source="media/create-app-visual-studio/netdesktop-6.0/vs-create-new-project.png" alt-text="Create a new Windows Forms project in Visual Studio 2022 for .NET.":::
 
 01. In the **Search for templates** box, type **winforms**, and wait for the search results to appear.
 01. In the **code language** dropdown, choose **C#** or **Visual Basic**.
