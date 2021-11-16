@@ -222,7 +222,7 @@ Now that the event has been coded, you can run the app by pressing the <kbd>F5</
 
 :::moniker range="netdesktop-6.0"
 
-:::image type="content" source="media/create-app-visual-studio/netdesktop-6.0/app-running.png" alt-text="Running a Windows Forms for a. NET app in Visual Studio 2022.":::
+:::image type="content" source="media/create-app-visual-studio/netdesktop-6.0/app-running.png" alt-text="Running a Windows Forms for .NET app in Visual Studio 2022.":::
 
 :::moniker-end
 
