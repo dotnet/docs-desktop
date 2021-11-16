@@ -1,7 +1,7 @@
 ---
 title: What is Windows Forms
 description: This article gives an overview of Windows Forms with .NET Core and .NET 5.
-ms.date: 10/26/2020
+ms.date: 11/15/2021
 ms.topic: overview
 #Customer intent: As a developer, I want to understand the components of Windows Forms so that I can understand the overall picture of Windows Forms.
 ---
@@ -16,13 +16,15 @@ There are two implementations of Windows Forms:
 
 01. The open-source implementation hosted on [GitHub](https://github.com/dotnet/winforms).
 
-    This version runs on .NET 5 and .NET Core 3.1. The Windows Forms Visual Designer requires, at a minimum, [Visual Studio 2019 version 16.8 Preview](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+desktopguide+winforms).
+    This version runs on .NET 5+ (and .NET Core 3.1). The Windows Forms Visual Designer requires, at a minimum, [Visual Studio 2019 version 16.8](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+desktopguide+winforms).
 
-01. The .NET Framework 4 implementation that's supported by Visual Studio 2019 and Visual Studio 2017.
+    The latest version of Windows Forms is for .NET 6 using [Visual Studio 2022 version 17.0](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2022+desktopguide+winforms).
+
+01. The .NET Framework 4 implementation that's supported by Visual Studio 2022, Visual Studio 2019, and Visual Studio 2017.
 
     .NET Framework 4 is a Windows-only version of .NET and is considered a Windows Operating System component. This version of Windows Forms is distributed with .NET Framework.
 
-This Desktop Guide is written for Windows Forms on .NET 5. For more information about the .NET Framework version of Windows Forms, see [Windows Forms for .NET Framework](../../../framework/winforms/index.yml?view=netframeworkdesktop-4.8&preserve-view=true).
+This Desktop Guide is written for Windows Forms on .NET 5 and later versions. For more information about the .NET Framework version of Windows Forms, see [Windows Forms for .NET Framework](../../../framework/winforms/index.yml?view=netframeworkdesktop-4.8&preserve-view=true).
 
 ## Introduction
 
@@ -30,11 +32,11 @@ Windows Forms is a UI framework for building Windows desktop apps. It provides o
 
 With Windows Forms, you develop graphically rich apps that are easy to deploy, update, and work while offline or while connected to the internet. Windows Forms apps can access the local hardware and file system of the computer where the app is running.
 
-To learn how to create a Windows Forms app, see [Tutorial: Create a new WinForms app (Windows Forms .NET)](../get-started/create-app-visual-studio.md).
+To learn how to create a Windows Forms app, see [Tutorial: Create a new WinForms app](../get-started/create-app-visual-studio.md).
 
 ## Why migrate from .NET Framework
 
-Windows Forms for .NET 5.0 provides new features and enhancements over .NET Framework. For more information, see [What's new in Windows Forms for .NET 5](../whats-new/index.md). To learn how to migrate an app, see [How to migrate a Windows Forms desktop app to .NET 5](../migration/index.md).
+Windows Forms for .NET 6.0 provides new features and enhancements over .NET Framework. For more information, see [What's new in Windows Forms for .NET 6](../whats-new/net60.md) and [.NET 5](../whats-new/net50.md). To learn how to migrate an app, see [How to migrate a Windows Forms desktop app to .NET 5](../migration/index.md).
 
 ## Build rich, interactive user interfaces
 
@@ -127,6 +129,6 @@ For step-by-step information about how to use these features, see the following 
 
 ## See also
 
-- [Tutorial: Create a new WinForms app (Windows Forms .NET)](../get-started/create-app-visual-studio.md)
-- [How to add a form to a project (Windows Forms .NET)](../forms/how-to-add.md)
-- [Add a control (Windows Forms .NET)](../controls/how-to-add-to-a-form.md)
+- [Tutorial: Create a new WinForms app](../get-started/create-app-visual-studio.md)
+- [How to add a form to a project](../forms/how-to-add.md)
+- [Add a control](../controls/how-to-add-to-a-form.md)
