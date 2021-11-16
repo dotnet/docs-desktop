@@ -119,7 +119,7 @@ Support for Windows Forms in Visual Studio has four important components that yo
 
 01. Solution Explorer
 
-    All if your project files, code, forms, resources, will appear in this pane.
+    All of your project files, code, forms, resources, will appear in this pane.
 
 02. Properties
 
