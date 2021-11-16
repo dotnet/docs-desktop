@@ -216,7 +216,7 @@ Now that the event has been coded, you can run the app by pressing the <kbd>F5</
 
 :::moniker range="netdesktop-5.0"
 
-:::image type="content" source="media/create-app-visual-studio/netdesktop-5.0/app-running.png" alt-text="Running a Windows Forms for a. NET app in Visual Studio 2019.":::
+:::image type="content" source="media/create-app-visual-studio/netdesktop-5.0/app-running.png" alt-text="Running a Windows Forms for .NET app in Visual Studio 2019.":::
 
 :::moniker-end
 
