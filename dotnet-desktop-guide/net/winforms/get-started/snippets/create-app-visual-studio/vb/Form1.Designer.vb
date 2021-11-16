@@ -22,20 +22,27 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.lstNames = New System.Windows.Forms.ListBox()
-        Me.txtName = New System.Windows.Forms.TextBox()
         Me.btnAdd = New System.Windows.Forms.Button()
+        Me.txtName = New System.Windows.Forms.TextBox()
+        Me.lstNames = New System.Windows.Forms.ListBox()
+        Me.label1 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
-        'Label1
+        'btnAdd
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(12, 9)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(44, 15)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Names"
+        Me.btnAdd.Location = New System.Drawing.Point(138, 55)
+        Me.btnAdd.Name = "btnAdd"
+        Me.btnAdd.Size = New System.Drawing.Size(100, 23)
+        Me.btnAdd.TabIndex = 7
+        Me.btnAdd.Text = "Add Name"
+        Me.btnAdd.UseVisualStyleBackColor = True
+        '
+        'txtName
+        '
+        Me.txtName.Location = New System.Drawing.Point(138, 26)
+        Me.txtName.Name = "txtName"
+        Me.txtName.Size = New System.Drawing.Size(100, 23)
+        Me.txtName.TabIndex = 6
         '
         'lstNames
         '
@@ -44,23 +51,16 @@ Partial Class Form1
         Me.lstNames.Location = New System.Drawing.Point(12, 27)
         Me.lstNames.Name = "lstNames"
         Me.lstNames.Size = New System.Drawing.Size(120, 94)
-        Me.lstNames.TabIndex = 1
+        Me.lstNames.TabIndex = 5
         '
-        'txtName
+        'label1
         '
-        Me.txtName.Location = New System.Drawing.Point(138, 26)
-        Me.txtName.Name = "txtName"
-        Me.txtName.Size = New System.Drawing.Size(100, 23)
-        Me.txtName.TabIndex = 2
-        '
-        'btnAdd
-        '
-        Me.btnAdd.Location = New System.Drawing.Point(138, 55)
-        Me.btnAdd.Name = "btnAdd"
-        Me.btnAdd.Size = New System.Drawing.Size(100, 23)
-        Me.btnAdd.TabIndex = 3
-        Me.btnAdd.Text = "Add Name"
-        Me.btnAdd.UseVisualStyleBackColor = True
+        Me.label1.AutoSize = True
+        Me.label1.Location = New System.Drawing.Point(12, 9)
+        Me.label1.Name = "label1"
+        Me.label1.Size = New System.Drawing.Size(44, 15)
+        Me.label1.TabIndex = 4
+        Me.label1.Text = "Names"
         '
         'Form1
         '
@@ -70,7 +70,7 @@ Partial Class Form1
         Me.Controls.Add(Me.btnAdd)
         Me.Controls.Add(Me.txtName)
         Me.Controls.Add(Me.lstNames)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.label1)
         Me.Name = "Form1"
         Me.Text = "Names"
         Me.ResumeLayout(False)
@@ -78,8 +78,8 @@ Partial Class Form1
 
     End Sub
 
-    Friend WithEvents Label1 As Windows.Forms.Label
-    Friend WithEvents lstNames As Windows.Forms.ListBox
-    Friend WithEvents txtName As Windows.Forms.TextBox
-    Friend WithEvents btnAdd As Windows.Forms.Button
+    Private WithEvents btnAdd As Button
+    Private WithEvents txtName As TextBox
+    Private WithEvents lstNames As ListBox
+    Private WithEvents label1 As Label
 End Class
