@@ -8,7 +8,7 @@ dev_langs:
   - "vb"
 ---
 
-# Tutorial: Create a Windows Forms app for .NET
+# Tutorial: Create a Windows Forms app with .NET
 
 In this short tutorial, you'll learn how to create a new Windows Forms app with Visual Studio. Once the initial app has been generated, you'll learn how to add controls and how to handle events. By the end of this tutorial, you'll have a simple app that adds names to a list box.
 
