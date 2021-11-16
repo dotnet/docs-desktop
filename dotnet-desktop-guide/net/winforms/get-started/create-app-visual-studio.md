@@ -87,7 +87,7 @@ The first step to creating a new app is opening Visual Studio and generating the
 
     :::image type="content" source="media/create-app-visual-studio/netdesktop-6.0/vs-template-search.png" alt-text="Search for the Windows Forms template in Visual Studio 2022 for .NET":::
 
-01. In the **Configure your new project** window, set the **Project name** to **Names** and click **Next**.
+01. In the **Configure your new project** window, set the **Project name** to _Names_ and click **Next**.
 
     You can also save your project to a different folder by adjusting the **Location** path.
 
