@@ -126,7 +126,7 @@ To enable a XAML markup file and code-behind file to work together, the followin
 With this configuration in place, you can focus on defining the appearance of the window in XAML markup and implementing its behavior in code-behind. The following example shows a window with a button that defines an event handler for the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event. This is implemented in the XAML and the handler is implemented in code-behind.
 
 ```xaml
-<Window x:Class="WindowsOverview.Final"
+<Window x:Class="WindowsOverview.Window1"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
