@@ -427,7 +427,7 @@ For an example of how to provide logic to validate all controls in a dialog box,
 
 Validation usually occurs when the value of a target is transferred to the binding source property. This transfer occurs on <xref:System.Windows.Data.BindingMode.TwoWay> and <xref:System.Windows.Data.BindingMode.OneWayToSource> bindings. To reiterate, what causes a source update depends on the value of the <xref:System.Windows.Data.Binding.UpdateSourceTrigger%2A> property, as described in the [What triggers source updates](#what-triggers-source-updates) section.
 
-The following items describe the *validation* process. If a validation error or other type of error occurs at any time during this process, the process is halted:
+The following items elaborate the *validation* process. If a validation error or other type of error occurs at any time during this process, the process is halted:
 
 1. The binding engine checks if there are any custom <xref:System.Windows.Controls.ValidationRule> objects defined whose <xref:System.Windows.Controls.ValidationRule.ValidationStep%2A> is set to <xref:System.Windows.Controls.ValidationStep.RawProposedValue> for that <xref:System.Windows.Data.Binding>, in which case it calls the <xref:System.Windows.Controls.ValidationRule.Validate%2A> method on each <xref:System.Windows.Controls.ValidationRule> until one of them runs into an error or until all of them pass.
 
