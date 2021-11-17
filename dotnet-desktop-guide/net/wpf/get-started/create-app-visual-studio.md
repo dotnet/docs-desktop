@@ -1,14 +1,14 @@
 ---
 title: "Create a new app with Visual Studio tutorial"
 description: Follow this tutorial to learn how to create a new WPF app for .NET with Visual Studio 2019.
-ms.date: 01/18/2021
+ms.date: 11/16/2021
 ms.topic: tutorial
 dev_langs: 
   - "csharp"
   - "vb"
 ---
 
-# Tutorial: Create a new WPF app (WPF .NET)
+# Tutorial: Create a new WPF app with .NET
 
 In this short tutorial, you'll learn how to create a new Windows Presentation Foundation (WPF) app with Visual Studio. Once the initial app has been generated, you'll learn how to add controls and how to handle events. By the end of this tutorial, you'll have a simple app that adds names to a list box.
 
@@ -29,18 +29,32 @@ Here's a preview of the app you'll build while following this tutorial:
 
 ## Prerequisites
 
-- [Visual Studio 2019 version 16.9 or later versions](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+desktopguide+wpf)
+:::moniker range="netdesktop-5.0"
+
+- [Visual Studio 2019 version 16.8 or later versions](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+desktopguide+winforms)
   - Select the [Visual Studio Desktop workload](/visualstudio/install/modify-visual-studio?view=vs-2019&preserve-view=true#modify-workloads)
   - Select the [.NET 5 individual component](/visualstudio/install/modify-visual-studio?view=vs-2019&preserve-view=true#modify-individual-components)
+
+:::moniker-end
+
+:::moniker range="netdesktop-6.0"
+
+- [Visual Studio 2022 version 17.0 or later versions](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&0utm_content=download+vs2022+desktopguide+winforms)
+  - Select the [.NET desktop development workload](/visualstudio/install/modify-visual-studio?view=vs-2019&preserve-view=true#modify-workloads)
+  - Select the [.NET 6 individual component](/visualstudio/install/modify-visual-studio?view=vs-2019&preserve-view=true#modify-individual-components)
+
+:::moniker-end
 
 ## Create a WPF app
 
 The first step to creating a new app is opening Visual Studio and generating the app from a template.
 
+:::moniker range="netdesktop-5.0"
+
 01. Open Visual Studio.
 01. Select **Create a new project**.
 
-    :::image type="content" source="media/create-app-visual-studio/vs-create-new-project.png" alt-text="Create a new WPF project in Visual Studio 2019 for .NET":::
+    :::image type="content" source="media/create-app-visual-studio/netdesktop-5.0/vs-create-new-project.png" alt-text="Create a new WPF project in Visual Studio 2019 for .NET.":::
 
 01. In the **Search for templates** box, type **wpf**, and then press <kbd>Enter</kbd>.
 01. In the **code language** dropdown, choose **C#** or **Visual Basic**.
@@ -49,7 +63,7 @@ The first step to creating a new app is opening Visual Studio and generating the
     > [!IMPORTANT]
     > Don't select the **WPF Application (.NET _Framework_)** template.
 
-    :::image type="content" source="media/create-app-visual-studio/vs-template-search.png" alt-text="Search for the WPF template in Visual Studio 2019 for .NET":::
+    :::image type="content" source="media/create-app-visual-studio/netdesktop-5.0/vs-template-search.png" alt-text="Search for the WPF template in Visual Studio 2019 for .NET.":::
 
 01. In the **Configure your new project** window, do the following:
 
@@ -58,11 +72,46 @@ The first step to creating a new app is opening Visual Studio and generating the
     01. Optionally, choose a different **Location** to save your code.
     01. Select the **Next** button.
 
-    :::image type="content" source="media/create-app-visual-studio/vs-config-new-project.png" alt-text="Configure new WPF project in Visual Studio 2019 for .NET":::
+    :::image type="content" source="media/create-app-visual-studio/netdesktop-5.0/vs-config-new-project.png" alt-text="Configure new WPF project in Visual Studio 2019 for .NET":::
 
 01. In the **Additional information** window, select **.NET 5.0 (Current)** for **Target Framework**. Select the **Create** button.
 
-    :::image type="content" source="media/create-app-visual-studio/vs-config-new-project-next.png" alt-text="Select target framework for new WPF project in Visual Studio 2019 for .NET":::
+    :::image type="content" source="media/create-app-visual-studio/netdesktop-5.0/vs-config-new-project-next.png" alt-text="Select target framework for new WPF project in Visual Studio 2019 for .NET":::
+
+:::moniker-end
+
+:::moniker range="netdesktop-6.0"
+
+01. Open Visual Studio.
+01. Select **Create a new project**.
+
+    :::image type="content" source="media/create-app-visual-studio/netdesktop-6.0/vs-create-new-project.png" alt-text="Create a new WPF project in Visual Studio 2022 for .NET.":::
+
+01. In the **Search for templates** box, type _wpf_, and then press <kbd>Enter</kbd>.
+01. In the **code language** dropdown, choose **C#** or **Visual Basic**.
+01. In the templates list, select **WPF Application** and then select **Next**.
+
+    > [!IMPORTANT]
+    > Don't select the **WPF Application (.NET _Framework_)** template.
+
+    The following image shows both C# and Visual Basic .NET project templates. If you applied the **code language** filter, you'll see the corresponding template.
+
+    :::image type="content" source="media/create-app-visual-studio/netdesktop-6.0/vs-template-search.png" alt-text="Search for the WPF template in Visual Studio 2022 for .NET.":::
+
+01. In the **Configure your new project** window, do the following:
+
+    01. In the **Project name** box, enter _Names_.
+    01. Select the **Place solution and project in the same directory** check box.
+    01. Optionally, choose a different **Location** to save your code.
+    01. Select the **Next** button.
+
+    :::image type="content" source="media/create-app-visual-studio/netdesktop-6.0/vs-config-new-project.png" alt-text="Configure new WPF project in Visual Studio 2022 for .NET":::
+
+01. In the **Additional information** window, select **.NET 6.0 (Long-term support)** for **Target Framework**. Select the **Create** button.
+
+    :::image type="content" source="media/create-app-visual-studio/netdesktop-6.0/vs-config-new-project-next.png" alt-text="Select target framework for new WPF project in Visual Studio 2022 for .NET":::
+
+:::moniker-end
 
 Once the app is generated, Visual Studio should open the XAML designer pane for the default window, _MainWindow_. If the designer isn't visible, double-click on the _MainWindow.xaml_ file in the **Solution Explorer** pane to open the designer.
 
@@ -70,7 +119,17 @@ Once the app is generated, Visual Studio should open the XAML designer pane for 
 
 Support for WPF in Visual Studio has five important components that you'll interact with as you create an app:
 
-:::image type="content" source="media/create-app-visual-studio/vs-main-window.png" alt-text="The important components of Visual Studio you should know when creating a WPF project for .NET":::
+:::moniker range="netdesktop-5.0"
+
+:::image type="content" source="media/create-app-visual-studio/netdesktop-5.0/vs-main-window.png" alt-text="The important components of Visual Studio you should know when creating a WPF project for .NET":::
+
+:::moniker-end
+
+:::moniker range="netdesktop-6.0"
+
+:::image type="content" source="media/create-app-visual-studio/netdesktop-6.0/vs-main-window.png" alt-text="The important components of Visual Studio you should know when creating a WPF project for .NET":::
+
+:::moniker-end
 
 01. Solution Explorer
 
@@ -137,7 +196,7 @@ The document root `<Window>` represents the type of object being described by th
 
 First, let's run the project and see the default output. You'll see that a window that pops up, without any controls, and a title of **MainWindow**:
 
-:::image type="content" source="media/create-app-visual-studio/app-default.png" alt-text="A blank WPF app":::
+:::image type="content" source="media/create-app-visual-studio/app-default.png" alt-text="A blank WPF app" :::
 
 For our example app, this window is too large, and the title bar isn't descriptive. Change the title and size of the window by changing the appropriate attributes in the XAML to the following values:
 
