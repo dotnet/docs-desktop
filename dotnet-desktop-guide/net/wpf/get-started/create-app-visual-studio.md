@@ -8,6 +8,8 @@ dev_langs:
   - "vb"
 ---
 
+<!-- Acrolinx score of 97 -->
+
 # Tutorial: Create a new WPF app with .NET
 
 In this short tutorial, you'll learn how to create a new Windows Presentation Foundation (WPF) app with Visual Studio. Once the initial app has been generated, you'll learn how to add controls and how to handle events. By the end of this tutorial, you'll have a simple app that adds names to a list box.
@@ -157,7 +159,7 @@ Support for WPF in Visual Studio has five important components that you'll inter
 
 ## Examine the XAML
 
-After your project is created, the XAML code editor is visible with a minimal amount of XAML code to display the window. If the editor isn't open, double-click the _MainWindow.xaml_ item in the **Solution Explorer**. You should see XAML similar to the following:
+After your project is created, the XAML code editor is visible with a minimal amount of XAML code to display the window. If the editor isn't open, double-click the _MainWindow.xaml_ item in the **Solution Explorer**. You should see XAML similar to the following example:
 
 ```xaml
 <Window x:Class="Names.MainWindow"
@@ -180,7 +182,7 @@ The document root `<Window>` represents the type of object being described by th
 
 - Namespaces
 
-  An XML namespace provides structure to the XML, determining what is or isn't allowed to be declared in the file.
+  An XML namespace provides structure to the XML, determining XML content can be declared in the file.
 
   The main `xmlns` attribute imports the XML namespace for the entire file, and in this case, maps to the types declared by WPF. The other XML namespaces declare a prefix and import other types and objects for the XAML file. For example, the `xmlns:local` namespace declares the `local` prefix and maps to the objects declared by your project, the ones declared in the `Names` code namespace.
 
@@ -190,7 +192,7 @@ The document root `<Window>` represents the type of object being described by th
 
 - `Title` attribute
 
-  Any normal attribute declared on the XAML object sets a property of that object. In this case the `Title` attribute sets the `Window.Title` property.
+  Any normal attribute declared on the XAML object sets a property of that object. In this case, the `Title` attribute sets the `Window.Title` property.
 
 ## Change the window
 
@@ -200,7 +202,7 @@ First, let's run the project and see the default output. You'll see that a windo
 
 For our example app, this window is too large, and the title bar isn't descriptive. Change the title and size of the window by changing the appropriate attributes in the XAML to the following values:
 
-:::code language="xaml" source="snippets/create-app-visual-studio/csharp/Start.xaml" highlight="8":::
+:::code language="xaml" source="snippets/create-app-visual-studio/netdesktop-5.0/csharp/Start.xaml" highlight="8":::
 
 ## Prepare the layout
 
@@ -214,7 +216,7 @@ Before we add the new rows and columns, add a new attribute to the `<Grid>` elem
 
 Next, define two rows and two columns, dividing the grid into four cells:
 
-:::code language="xaml" source="snippets/create-app-visual-studio/csharp/LayoutStep2.xaml" highlight="9-21":::
+:::code language="xaml" source="snippets/create-app-visual-studio/netdesktop-5.0/csharp/LayoutStep2.xaml" highlight="9-21":::
 
 Select the grid in either the XAML code editor or XAML designer, you'll see that the XAML designer shows each row and column:
 
@@ -224,21 +226,21 @@ Select the grid in either the XAML code editor or XAML designer, you'll see that
 
 Now that the grid has been created, we can start adding controls to it. First, start with the label control. Create a new `<Label>` element inside the `<Grid>` element, after the row and column definitions, and give it a string value of `Names`:
 
-:::code language="xaml" source="snippets/create-app-visual-studio/csharp/LayoutStep3.xaml" range="9-23" highlight="13":::
+:::code language="xaml" source="snippets/create-app-visual-studio/netdesktop-5.0/csharp/LayoutStep3.xaml" range="9-23" highlight="13":::
 
 The `<Label>Names</Label>` defines the content `Names`. Some controls understand how to handle content, others don't. The content of a control maps to the `Content` property. Setting the content through XAML attribute syntax, you would use this format: `<Label Content="Names" />`. Both ways accomplish the same thing, setting the content of the label to display the text `Names`.
 
 We have a problem though, the label takes up half the window as it was automatically assigned to the first row and column of the grid. For our first row, we don't need that much space because we're only going to use that row for the label. Change the `Height` attribute of the first `<RowDefinition>` from `*` to `Auto`. The `Auto` value automatically sizes the grid row to the size of its contents, in this case, the label control.
 
-:::code language="xaml" source="snippets/create-app-visual-studio/csharp/LayoutStep4.xaml" range="11-14" highlight="2":::
+:::code language="xaml" source="snippets/create-app-visual-studio/netdesktop-5.0/csharp/LayoutStep4.xaml" range="11-14" highlight="2":::
 
-Notice that the designer now shows the label occupying a small amount of the available height. There's now more room for the next row to occupy. Most controls define some sort of height and width value that they should occupy that looks best for them. In the case of the label control, it has a height value that ensures that you can read it.
+Notice that the designer now shows the label occupying a small amount of the available height. There's now more room for the next row to occupy. Most controls define some sort of height and width value that they should occupy that looks best for them. For example, the label control has a height value that ensures that you can read it.
 
 :::image type="content" source="media/create-app-visual-studio/vs-designer-grid-rows-columns-label.png" alt-text="A WPF app with the margin set on a grid and a label control in the first row":::
 
 ### Control placement
 
-Let's talk about control placement. The label created in the section above was automatically placed in row 0 and column 0 of the grid. The numbering for rows and columns starts at 0 and increments by 1 for each new row or column. The control doesn't know anything about the grid, and the control doesn't define any properties to control its placement within the grid. The control could have even been placed within some other layout control which has its own set of rules defining how to place controls.
+Let's talk about control placement. The label created in the section above was automatically placed in row 0 and column 0 of the grid. The numbering for rows and columns starts at 0 and increments by 1 for each new row or column. The control doesn't know anything about the grid, and the control doesn't define any properties to control its placement within the grid. The control could have even been placed within some other layout control that has its own set of rules defining how to place controls.
 
 How do you tell a control to use a different row or column when the control has no knowledge of the grid? Attached properties! The grid takes advantage of the powerful property system provided by WPF. The grid defines new properties that the child controls can declare and use. The properties don't actually exist on the control itself, they're attached by the grid when the control is added to the grid.
 
@@ -252,9 +254,9 @@ Notice how your label now moved to the second column. You can use the `Grid.Row`
 
 ## Create the name list box
 
-Now that the grid is correctly sized and the label created, add a list box control on the row below the label. The list box will be in row `1` and column `0`. We'll also give this control the name of `lstNames`. Once a control is named, it can be referenced in the code behind. The name is assigned to the control with the `x:Name` attribute.
+Now that the grid is correctly sized and the label created, add a list box control on the row below the label. The list box will be in row `1` and column `0`. We'll also give this control the name of `lstNames`. Once a control is named, it can be referenced in the code-behind. The name is assigned to the control with the `x:Name` attribute.
 
-:::code language="xaml" source="snippets/create-app-visual-studio/csharp/MoreControls1.xaml" range="9-24" highlight="14":::
+:::code language="xaml" source="snippets/create-app-visual-studio/netdesktop-5.0/csharp/MoreControls1.xaml" range="9-24" highlight="14":::
 
 ## Add the remaining controls
 
@@ -264,13 +266,13 @@ The stack panel differs from the grid in how the controls are placed. While you 
 
 Create the `<StackPanel>` control after the list box and put it in grid row `1` column `1`. Add another attribute named `Margin` with a value of `5,0,0,0`:
 
-:::code language="xaml" source="snippets/create-app-visual-studio/csharp/MoreControls2.xaml" id="StackPanel1" highlight="14-16":::
+:::code language="xaml" source="snippets/create-app-visual-studio/netdesktop-5.0/csharp/MoreControls2.xaml" id="StackPanel1" highlight="14-16":::
 
 The `Margin` attribute was previously used on the grid, but we only put in a single value, `10`. Now we've used a value of `5,0,0,0` on the stack panel. The margin is a `Thickness` type and can interpret both values. A thickness defines the space around each side of a rectangular frame, **left**, **top**, **right**, **bottom**, respectively. If the value for the margin is a single value, it uses that value for all four sides.
 
 Next, create a `<TextBox>` and `<Button>` control in the `<StackPanel>`.
 
-:::code language="xaml" source="snippets/create-app-visual-studio/csharp/MoreControls2.xaml" id="StackPanel2":::
+:::code language="xaml" source="snippets/create-app-visual-studio/netdesktop-5.0/csharp/MoreControls2.xaml" id="StackPanel2":::
 
 The layout for the window is complete. However, our app doesn't have any logic in it to actually be functional. Next, we need to hook up the control events to code and get the app to actually do something.
 
@@ -278,12 +280,12 @@ The layout for the window is complete. However, our app doesn't have any logic i
 
 The `<Button>` we created has a `Click` event that is raised when the user presses the button. You can subscribe to this event and add code to add a name to the list box. Just like you set a property on a control by adding a XAML attribute, you can use a XAML attribute to subscribe to an event. Set the `Click` attribute to `ButtonAddName_Click`
 
-:::code language="xaml" source="snippets/create-app-visual-studio/csharp/MoreControls3.xaml" id="ButtonEvent" highlight="3":::
+:::code language="xaml" source="snippets/create-app-visual-studio/netdesktop-5.0/csharp/MoreControls3.xaml" id="ButtonEvent" highlight="3":::
 
-Now you need to generate the handler code. Right-click on `ButtonAddName_Click` and select **Go To Definition**. This will generate a method in the code behind for you that matches the handler name you've entered.
+Now you need to generate the handler code. Right-click on `ButtonAddName_Click` and select **Go To Definition**. This action generates a method in the code-behind for you that matches the handler name you've entered.
 
-:::code language="csharp" source="snippets/create-app-visual-studio/csharp/MoreControls3.xaml.cs" id="ButtonEvent":::
-:::code language="vb" source="snippets/create-app-visual-studio/vb/MoreControls3.xaml.vb" id="ButtonEvent":::
+:::code language="csharp" source="snippets/create-app-visual-studio/netdesktop-5.0/csharp/MoreControls3.xaml.cs" id="ButtonEvent":::
+:::code language="vb" source="snippets/create-app-visual-studio/netdesktop-5.0/vb/MoreControls3.xaml.vb" id="ButtonEvent":::
 
 Next, add the following code to do these three steps:
 
@@ -291,8 +293,8 @@ Next, add the following code to do these three steps:
 01. Validate that the name entered in the text box doesn't already exist.
 01. Add the name to the list box.
 
-:::code language="csharp" source="snippets/create-app-visual-studio/csharp/Final.xaml.cs" id="FinalCode":::
-:::code language="vb" source="snippets/create-app-visual-studio/vb/Final.xaml.vb" id="FinalCode":::
+:::code language="csharp" source="snippets/create-app-visual-studio/netdesktop-5.0/csharp/Final.xaml.cs" id="FinalCode":::
+:::code language="vb" source="snippets/create-app-visual-studio/netdesktop-5.0/vb/Final.xaml.vb" id="FinalCode":::
 
 ## Run the app
 
