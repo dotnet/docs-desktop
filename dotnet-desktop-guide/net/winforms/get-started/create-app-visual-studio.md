@@ -50,7 +50,7 @@ The first step to creating a new app is opening Visual Studio and generating the
 01. Open Visual Studio.
 01. Select **Create a new project**.
 
-    :::image type="content" source="media/create-app-visual-studio/netdesktop-5.0/vs-create-new-project.png" alt-text="Create a new Windows Forms project in Visual Studio 2019 for .NET":::
+    :::image type="content" source="media/create-app-visual-studio/netdesktop-5.0/vs-create-new-project.png" alt-text="Create a new Windows Forms project in Visual Studio 2019 for .NET.":::
 
 01. In the **Search for templates** box, type **winforms**, and then press <kbd>Enter</kbd>.
 01. In the **code language** dropdown, choose **C#** or **Visual Basic**.
@@ -59,13 +59,13 @@ The first step to creating a new app is opening Visual Studio and generating the
     > [!IMPORTANT]
     > Don't select the **Windows Forms App (.NET _Framework_)** template.
 
-    :::image type="content" source="media/create-app-visual-studio/netdesktop-5.0/vs-template-search.png" alt-text="Search for the Windows Forms template in Visual Studio 2019 for .NET":::
+    :::image type="content" source="media/create-app-visual-studio/netdesktop-5.0/vs-template-search.png" alt-text="Search for the Windows Forms template in Visual Studio 2019 for .NET.":::
 
 01. In the **Configure your new project** window, set the **Project name** to **Names** and click **Create**.
 
     You can also save your project to a different folder by adjusting the **Location** setting.
 
-    :::image type="content" source="media/create-app-visual-studio/netdesktop-5.0/vs-config-new-project.png" alt-text="Configure new Windows Forms project in Visual Studio 2019 for .NET":::
+    :::image type="content" source="media/create-app-visual-studio/netdesktop-5.0/vs-config-new-project.png" alt-text="Configure new Windows Forms project in Visual Studio 2019 for .NET.":::
 
 :::moniker-end
 
@@ -85,17 +85,17 @@ The first step to creating a new app is opening Visual Studio and generating the
 
     The following image shows both C# and Visual Basic .NET project templates. If you applied the **code language** filter, you'll see the corresponding template.
 
-    :::image type="content" source="media/create-app-visual-studio/netdesktop-6.0/vs-template-search.png" alt-text="Search for the Windows Forms template in Visual Studio 2022 for .NET":::
+    :::image type="content" source="media/create-app-visual-studio/netdesktop-6.0/vs-template-search.png" alt-text="Search for the Windows Forms template in Visual Studio 2022 for .NET.":::
 
 01. In the **Configure your new project** window, set the **Project name** to _Names_ and click **Next**.
 
     You can also save your project to a different folder by adjusting the **Location** path.
 
-    :::image type="content" source="media/create-app-visual-studio/netdesktop-6.0/vs-config-new-project.png" alt-text="Configure new Windows Forms project in Visual Studio 2022 for .NET":::
+    :::image type="content" source="media/create-app-visual-studio/netdesktop-6.0/vs-config-new-project.png" alt-text="Configure new Windows Forms project in Visual Studio 2022 for .NET.":::
 
 01. Finally, in the **Additional information** window, select **.NET 6.0 (Long-term support)** for the **Framework** setting, and then click **Create**.
 
-    :::image type="content" source="media/create-app-visual-studio/netdesktop-6.0/vs-select-framework.png" alt-text="Select the target framework for a Windows Forms project in Visual Studio 2022":::
+    :::image type="content" source="media/create-app-visual-studio/netdesktop-6.0/vs-select-framework.png" alt-text="Select the target framework for a Windows Forms project in Visual Studio 2022.":::
 
 :::moniker-end
 
@@ -107,13 +107,13 @@ Support for Windows Forms in Visual Studio has four important components that yo
 
 :::moniker range="netdesktop-5.0"
 
-:::image type="content" source="media/create-app-visual-studio/netdesktop-5.0/vs-main-window.png" alt-text="The important components of Visual Studio 2019 you should know when creating a Windows Forms project for .NET":::
+:::image type="content" source="media/create-app-visual-studio/netdesktop-5.0/vs-main-window.png" alt-text="The important components of Visual Studio 2019 you should know when creating a Windows Forms project for .NET.":::
 
 :::moniker-end
 
 :::moniker range="netdesktop-6.0"
 
-:::image type="content" source="media/create-app-visual-studio/netdesktop-6.0/vs-main-window.png" alt-text="The important components of Visual Studio 2022 you should know when creating a Windows Forms project for .NET":::
+:::image type="content" source="media/create-app-visual-studio/netdesktop-6.0/vs-main-window.png" alt-text="The important components of Visual Studio 2022 you should know when creating a Windows Forms project for .NET.":::
 
 :::moniker-end
 
@@ -169,13 +169,13 @@ You should have a form in the designer that looks similar to the following:
 
 :::moniker range="netdesktop-5.0"
 
-:::image type="content" source="media/create-app-visual-studio/netdesktop-5.0/vs-form-preview.png" alt-text="Visual Studio 2019 designer with the form open for Windows Forms for .NET":::
+:::image type="content" source="media/create-app-visual-studio/netdesktop-5.0/vs-form-preview.png" alt-text="Visual Studio 2019 designer with the form open for Windows Forms for .NET.":::
 
 :::moniker-end
 
 :::moniker range="netdesktop-6.0"
 
-:::image type="content" source="media/create-app-visual-studio/netdesktop-6.0/vs-form-preview.png" alt-text="Visual Studio 2022 designer with the form open for Windows Forms for .NET":::
+:::image type="content" source="media/create-app-visual-studio/netdesktop-6.0/vs-form-preview.png" alt-text="Visual Studio 2022 designer with the form open for Windows Forms for .NET.":::
 
 :::moniker-end
 
