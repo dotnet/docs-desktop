@@ -182,7 +182,7 @@ The document root `<Window>` represents the type of object being described by th
 
 - Namespaces
 
-  An XML namespace provides structure to the XML, determining XML content can be declared in the file.
+  An XML namespace provides structure to the XML, determining what XML content can be declared in the file.
 
   The main `xmlns` attribute imports the XML namespace for the entire file, and in this case, maps to the types declared by WPF. The other XML namespaces declare a prefix and import other types and objects for the XAML file. For example, the `xmlns:local` namespace declares the `local` prefix and maps to the objects declared by your project, the ones declared in the `Names` code namespace.
 
@@ -196,7 +196,7 @@ The document root `<Window>` represents the type of object being described by th
 
 ## Change the window
 
-First, let's run the project and see the default output. You'll see that a window that pops up, without any controls, and a title of **MainWindow**:
+First, run the project and see the default output. You'll see a window that pops up, without any controls, and a title of **MainWindow**:
 
 :::image type="content" source="media/create-app-visual-studio/app-default.png" alt-text="A blank WPF app" :::
 
