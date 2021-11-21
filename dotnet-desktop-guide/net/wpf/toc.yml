@@ -96,6 +96,8 @@ items:
       href: properties/dependency-property-callbacks-and-validation.md
     - name: Read-only dependency properties
       href: properties/read-only-dependency-properties.md
+    - name: Framework-property-metadata
+      href: properties/framework-property-metadata.md
     - name: Common tasks
       items:
       - name: Implement a dependency property
