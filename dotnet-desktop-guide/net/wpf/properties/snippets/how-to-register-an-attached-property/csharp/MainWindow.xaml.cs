@@ -1,5 +1,5 @@
-﻿using System.Windows;
-using System.Windows.Controls;
+﻿using System.Diagnostics;
+using System.Windows;
 
 namespace CodeSampleCsharp
 {
@@ -8,11 +8,20 @@ namespace CodeSampleCsharp
     /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow() => InitializeComponent();
+        public MainWindow()
+        {
+            InitializeComponent();
+
+            // Test get/set accessors.
+            Aquarium aquarium = new();
+            Aquarium.SetHasFish(aquarium, true);
+            bool hasFish = Aquarium.GetHasFish(aquarium);
+            Debug.WriteLine($"Has fish: {hasFish}");
+        }
     }
 
     //<RegisterAttachedProperty>
-    public class Aquarium : DependencyObject
+    public class Aquarium : UIElement
     {
         // Register an attached dependency property with the specified
         // property name, property type, owner type, and property metadata.

@@ -8,13 +8,19 @@
 
         Public Sub New()
             InitializeComponent()
+
+            ' Test get/set accessors.
+            Dim aquarium As New Aquarium()
+            Aquarium.SetHasFish(aquarium, True)
+            Dim hasFish As Boolean = Aquarium.GetHasFish(aquarium)
+            Debug.WriteLine($"Has fish: {hasFish}")
         End Sub
 
     End Class
 
     '<RegisterAttachedProperty>
-    Public Class Aquarium 
-        Inherits DependencyObject
+    Public Class Aquarium
+        Inherits UIElement
 
         ' Register an attached dependency property with the specified
         ' property name, property type, owner type, and property metadata.
