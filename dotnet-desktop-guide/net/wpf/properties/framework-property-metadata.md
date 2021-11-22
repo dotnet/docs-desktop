@@ -31,11 +31,11 @@ The article assumes a basic knowledge of dependency properties, and that you've 
   > [!NOTE]
   > The term "inherits" in the context of property values is specific to dependency properties, and doesn't directly relate to managed code types and member inheritance through derived types. In the context of dependency properties, it means that child elements can inherit dependency property values from parent elements.
 
-- Data binding metadata, specifically the <xref:System.Windows.FrameworkPropertyMetadata.BindsTwoWayByDefault%2A> and <xref:System.Windows.FrameworkPropertyMetadata.IsNotDataBindable%2A> metadata flags. By default, dependency properties in the WPF framework support one-way binding. Consider setting two-way binding as the default for properties that report state *and* are modifiable by user action, for example <xref:System.Windows.Controls.Primitives.Selector.IsSelected>. Also, consider setting two-way binding when users of a control expect a property to implement it, for example [TextBox.Text](<xref:System.Windows.Controls.TextBox.Text>). `BindsTwoWayByDefault` only affects the default binding mode. To edit the data flow direction of a binding, set [Binding.Mode](<xref:System.Windows.Data.Binding.Mode>). You can use `IsNotDataBindable` to disable data binding when there's no use case for it. For more information on data bindings, see [Data binding overview](/dotnet/desktop/wpf/advanced/data-binding-overview?view=netframeworkdesktop-4.8&preserve-view=true).
+- Data binding metadata, specifically the <xref:System.Windows.FrameworkPropertyMetadata.BindsTwoWayByDefault%2A> and <xref:System.Windows.FrameworkPropertyMetadata.IsNotDataBindable%2A> metadata flags. By default, dependency properties in the WPF framework support one-way binding. Consider setting two-way binding as the default for properties that report state *and* are modifiable by user action, for example <xref:System.Windows.Controls.Primitives.Selector.IsSelected>. Also, consider setting two-way binding as the default when users of a control expect a property to implement it, for example [TextBox.Text](<xref:System.Windows.Controls.TextBox.Text>). `BindsTwoWayByDefault` only affects the default binding mode. To edit the data flow direction of a binding, set [Binding.Mode](<xref:System.Windows.Data.Binding.Mode>). You can use `IsNotDataBindable` to disable data binding when there's no use case for it. For more information on data bindings, see [Data binding overview](/dotnet/desktop/wpf/advanced/data-binding-overview?view=netframeworkdesktop-4.8&preserve-view=true).
 
-- Journaling metadata, specifically the <xref:System.Windows.FrameworkPropertyMetadata.Journal%2A> metadata flag. The default value of the `Journal` flag is `true` only for specific dependency properties, such as <xref:System.Windows.Controls.Primitives.Selector.SelectedIndex>. User input controls should set the `Journal` flag for properties whose values hold user selections that need to be stored. The `Journal` flag is read by applications or services, including WPF journaling services. For information on storing navigation steps, see [Navigation overview](/dotnet/desktop/wpf/app-development/navigation-overview?view=netframeworkdesktop-4.8&preserve-view=true).
+- Journaling metadata, specifically the <xref:System.Windows.FrameworkPropertyMetadata.Journal%2A> metadata flag. The default value of the `Journal` flag is only `true` for a some dependency properties, such as <xref:System.Windows.Controls.Primitives.Selector.SelectedIndex>. User input controls should set the `Journal` flag for properties whose values hold user selections that need to be stored. The `Journal` flag is read by applications or services that support journaling, including WPF journaling services. For information on storing navigation steps, see [Navigation overview](/dotnet/desktop/wpf/app-development/navigation-overview?view=netframeworkdesktop-4.8&preserve-view=true).
 
-<xref:System.Windows.FrameworkPropertyMetadata> derives directly from <xref:System.Windows.UIPropertyMetadata>, and adds the flags discussed here. Unless specifically set, the flags have a default value of `false`.
+<xref:System.Windows.FrameworkPropertyMetadata> derives directly from <xref:System.Windows.UIPropertyMetadata>, and implements the flags discussed here. Unless specifically set, `FrameworkPropertyMetadata` flags have a default value of `false`.
 
 ## Reading FrameworkPropertyMetadata
 
@@ -45,7 +45,7 @@ To retrieve metadata for a dependency property, call <xref:System.Windows.Depend
 
 When you register a dependency property, you have the option to create and assign metadata to it. The metadata object that you assign can be <xref:System.Windows.PropertyMetadata> or one of its derived classes, like <xref:System.Windows.FrameworkPropertyMetadata>. Choose `FrameworkPropertyMetadata` for dependency properties that rely on WPF presentation APIs and executables for rendering and data binding. A more advanced option is to derive from `FrameworkPropertyMetadata` to create a custom metadata reporting class with more flags. Or, you might use <xref:System.Windows.UIPropertyMetadata> for non-framework properties that affect UI rendering.
 
-Although metadata options are typically set during registration of a new dependency property, but you can respecify them in <xref:System.Windows.DependencyProperty.OverrideMetadata%2A> or <xref:System.Windows.DependencyProperty.AddOwner%2A> calls. When overriding metadata, always override with the same metadata type that was used during property registration.
+Although metadata options are typically set during registration of a new dependency property, you can respecify them in <xref:System.Windows.DependencyProperty.OverrideMetadata%2A> or <xref:System.Windows.DependencyProperty.AddOwner%2A> calls. When overriding metadata, always override with the same metadata type that was used during property registration.
 
 The property characteristics that are exposed by `FrameworkPropertyMetadata` are sometimes referred to as *flags*. If you're creating a `FrameworkPropertyMetadata` instance, there are two ways to populate flag values:
 
@@ -68,7 +68,10 @@ When you override framework property metadata, changed metadata values either re
 
 ## See also
 
+- <xref:System.Windows.PropertyMetadata>
 - <xref:System.Windows.DependencyProperty.GetMetadata%2A>
+- <xref:System.Windows.DependencyProperty.OverrideMetadata%2A>
+- <xref:System.Windows.DependencyProperty.AddOwner%2A>
 - [Dependency Property Metadata](dependency-property-metadata.md)
 - [Dependency Properties Overview](dependency-properties-overview.md)
 - [Custom Dependency Properties](custom-dependency-properties.md)
