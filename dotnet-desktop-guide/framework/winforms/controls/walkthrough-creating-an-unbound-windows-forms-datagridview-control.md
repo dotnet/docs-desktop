@@ -1,5 +1,5 @@
 ---
-title: Create an Unbound DataGridView Control
+title: Walkthrough Creating an Unbound Windows Forms DataGridView Control
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
