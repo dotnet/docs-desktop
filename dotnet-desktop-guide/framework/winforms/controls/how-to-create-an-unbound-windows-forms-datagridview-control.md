@@ -1,5 +1,6 @@
 ---
 title: How to Create an Unbound Windows Forms DataGridView Control
+description: This topic demonstrates on how to create a Windows Forms DataGridView Control. You can use this control to display a small amount of data in a table format without binding it to a data source   
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

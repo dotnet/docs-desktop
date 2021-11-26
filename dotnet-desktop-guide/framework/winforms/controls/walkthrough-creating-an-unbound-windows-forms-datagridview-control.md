@@ -1,5 +1,6 @@
 ---
-title: Walkthrough Creating an Unbound Windows Forms DataGridView Control
+title: Creating an Unbound Windows Forms DataGridView Control
+description: This topic guides you on how to populate a DataGridView Control and display a small amount of data without binding it to a data source
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
