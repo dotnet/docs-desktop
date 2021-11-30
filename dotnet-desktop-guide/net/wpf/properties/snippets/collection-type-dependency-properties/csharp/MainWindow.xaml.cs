@@ -16,10 +16,15 @@ namespace CodeSampleCsharp
             aquarium1.AquariumContents.Add(new Fish());
             aquarium2.AquariumContents.Add(new Fish());
             MessageBox.Show(
-                $"Aquarium1 contains {aquarium1.AquariumContents.Count} fish\r\n" +
-                $"Aquarium2 contains {aquarium2.AquariumContents.Count} fish");
+                $"aquarium1 contains {aquarium1.AquariumContents.Count} fish\r\n" +
+                $"aquarium2 contains {aquarium2.AquariumContents.Count} fish");
         }
         //</InitializeAquariums>
+
+        private void InitializeFreezableAquariums(object sender, RoutedEventArgs e)
+        {
+            FreezableCollectionAquarium.InitializeAquariums();
+        }
     }
 
     //<SetCollectionDefaultValueInConstructor>
@@ -36,16 +41,12 @@ namespace CodeSampleCsharp
               //typeMetadata: new FrameworkPropertyMetadata(new List<FrameworkElement>())
             );
 
-        // Store the dependency property identifier as a static member of the class.
-        public static readonly DependencyProperty AquariumContentsProperty =
-            s_aquariumContentsPropertyKey.DependencyProperty;
-
         // Set the default collection value in a class constructor.
         public Aquarium() => SetValue(s_aquariumContentsPropertyKey, new List<FrameworkElement>());
 
-        // Declare a read-only property.
+        // Declare a public get accessor.
         public List<FrameworkElement> AquariumContents =>
-            (List<FrameworkElement>)GetValue(AquariumContentsProperty);
+            (List<FrameworkElement>)GetValue(s_aquariumContentsPropertyKey.DependencyProperty);
     }
 
     public class Fish : FrameworkElement { }
@@ -61,8 +62,8 @@ namespace CodeSampleCsharp
             aquarium2.AquariumContents.Add(new Fish());
             aquarium2.AquariumContents = new List<FrameworkElement>();
             MessageBox.Show(
-                $"Aquarium1 contains {aquarium1.AquariumContents.Count} fish\r\n" +
-                $"Aquarium2 contains {aquarium2.AquariumContents.Count} fish");
+                $"aquarium1 contains {aquarium1.AquariumContents.Count} fish\r\n" +
+                $"aquarium2 contains {aquarium2.AquariumContents.Count} fish");
         }
 
         //<ReadWriteDependencyProperty>
@@ -81,7 +82,7 @@ namespace CodeSampleCsharp
             // Set the default collection value in a class constructor.
             public Aquarium() => SetValue(AquariumContentsProperty, new List<FrameworkElement>());
 
-            // Declare a read-write property.
+            // Declare public get and set accessors.
             public List<FrameworkElement> AquariumContents
             {
                 get => (List<FrameworkElement>)GetValue(AquariumContentsProperty);
@@ -102,8 +103,8 @@ namespace CodeSampleCsharp
             aquarium1.AquariumContents.Add(new Fish());
             aquarium2.AquariumContents.Add(new Fish());
             MessageBox.Show(
-                $"Aquarium1 contains {aquarium1.AquariumContents.Count} fish\r\n" +
-                $"Aquarium2 contains {aquarium2.AquariumContents.Count} fish");
+                $"FreezableCollection aquarium1 contains {aquarium1.AquariumContents.Count} fish\r\n" +
+                $"FreezableCollection aquarium2 contains {aquarium2.AquariumContents.Count} fish");
         }
 
         //<FreezableCollectionAquarium>
@@ -126,11 +127,10 @@ namespace CodeSampleCsharp
             // Set the default collection value in a class constructor.
             public Aquarium() => SetValue(s_aquariumContentsPropertyKey, new FreezableCollection<FrameworkElement>());
 
-            // Declare a read-only property.
+            // Declare a public get accessor.
             public FreezableCollection<FrameworkElement> AquariumContents =>
                 (FreezableCollection<FrameworkElement>)GetValue(AquariumContentsProperty);
         }
-
         //</FreezableCollectionAquarium>
 
         public class Fish : FrameworkElement { }
