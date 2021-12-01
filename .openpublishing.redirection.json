@@ -556,6 +556,14 @@
         {
             "source_path": "dotnet-desktop-guide/framework/wpf/properties/dependency-property-callbacks-and-validation.md",
             "redirect_url": "/dotnet/desktop/wpf/advanced/dependency-property-callbacks-and-validation?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/advanced/read-only-dependency-properties.md",
+            "redirect_url": "/dotnet/desktop/wpf/properties/read-only-dependency-properties?view=netdesktop-6.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/properties/read-only-dependency-properties.md",
+            "redirect_url": "/dotnet/desktop/wpf/advanced/read-only-dependency-properties?view=netframeworkdesktop-4.8"
         }
     ]
 }
