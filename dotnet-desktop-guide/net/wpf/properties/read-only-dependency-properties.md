@@ -42,7 +42,7 @@ The process of creating a read-only dependency property is in many ways similar 
 
 - When implementing the CLR property wrapper, make sure it doesn't have a public `set` accessor.
 
-- `RegisterReadOnly` returns a <xref:System.Windows.DependencyPropertyKey> instead of <xref:System.Windows.DependencyProperty>. Store the `DependencyPropertyKey` in a nonpublic class member.
+- `RegisterReadOnly` returns <xref:System.Windows.DependencyPropertyKey> instead of <xref:System.Windows.DependencyProperty>. Store the `DependencyPropertyKey` in a nonpublic class member.
 
 You can determine the value of your read-only dependency property using whatever logic you choose. The recommended way to set the property value, either initially or as part of runtime logic, is to use the overload of <xref:System.Windows.DependencyObject.SetValue%2A> that accepts a parameter of type `DependencyPropertyKey`. Using `SetValue` is preferable to circumventing the property system and setting the backing field directly.
 
