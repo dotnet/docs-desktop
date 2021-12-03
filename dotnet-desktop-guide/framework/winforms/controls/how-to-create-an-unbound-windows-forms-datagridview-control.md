@@ -26,7 +26,7 @@ The following code example demonstrates how to populate a <xref:System.Windows.F
 
  This example requires:  
   
-- References to the System, System.Drawing, and System.Windows.Forms assemblies.  
+- References to the System, System.Drawing, and System.Windows.Forms assemblies.-   
   
 ## See also
 
