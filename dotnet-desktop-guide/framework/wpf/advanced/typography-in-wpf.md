@@ -1,5 +1,6 @@
 ---
-title: "Typography"
+title: Typography in WPF
+description: Introduces to typographic features that include improved quality and performance of text rendering, OpenType typography support, enhanced international text, enhanced font support, and new text application programming interfaces (APIs)
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "typography [WPF], about typography"

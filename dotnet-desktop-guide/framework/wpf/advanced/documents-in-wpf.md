@@ -1,5 +1,6 @@
 ---
-title: "Documents"
+title: Documents in WPF
+description: Includes a wide range of document features that enable the creation of high-fidelity content that is designed to be more easily accessed and read for Windows unlike in previous generations of Windows. Offers integrated services for document display, packaging, and security
 ms.date: "03/30/2017"
 ms.topic: overview
 helpviewer_keywords: 
@@ -13,6 +14,7 @@ helpviewer_keywords:
 ms.assetid: 6e8db7bc-050a-4070-aa72-bb8c46e87ff8
 ---
 # Documents in WPF
+
 [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] offers a wide range of document features that enable the creation of high-fidelity content that is designed to be more easily accessed and read than in previous generations of Windows. In addition to enhanced capabilities and quality, [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] also provides integrated services for document display, packaging, and security. This topic provides an introduction to [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] document types and document packaging.  
 
 <a name="types_of_documents"></a>
@@ -27,7 +29,8 @@ ms.assetid: 6e8db7bc-050a-4070-aa72-bb8c46e87ff8
 ## Document Controls and Text Layout  
  The .NET Framework provides a set of pre-built controls that simplify using fixed documents, flow documents, and general text within your application.  The display of fixed document content is supported using the <xref:System.Windows.Controls.DocumentViewer> control.  Display of flow document content is supported by three different controls: <xref:System.Windows.Controls.FlowDocumentReader>, <xref:System.Windows.Controls.FlowDocumentPageViewer>, and <xref:System.Windows.Controls.FlowDocumentScrollViewer> which map to different user scenarios (see sections below).  Other [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] controls provide simplified layout to support general text uses (see [Text in the User Interface](#text_in_the_user_interface), below).  
   
-### Fixed Document Control - DocumentViewer  
+### Fixed Document Control - DocumentViewer
+ 
  The <xref:System.Windows.Controls.DocumentViewer> control is designed to display <xref:System.Windows.Documents.FixedDocument> content. The <xref:System.Windows.Controls.DocumentViewer> control provides an intuitive user interface that provides built-in support for common operations including print output, copy to clipboard, zoom, and text search features. The control provides access to pages of content through a familiar scrolling mechanism. Like all [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] controls, <xref:System.Windows.Controls.DocumentViewer> supports complete or partial restyling, which enables the control to be visually integrated into virtually any application or environment.  
   
  <xref:System.Windows.Controls.DocumentViewer> is designed to display content in a read-only manner; editing or modification of content is not available and is not supported.  
@@ -40,10 +43,12 @@ ms.assetid: 6e8db7bc-050a-4070-aa72-bb8c46e87ff8
   
  Display of flow document content is supported by three controls: <xref:System.Windows.Controls.FlowDocumentReader>, <xref:System.Windows.Controls.FlowDocumentPageViewer>, and <xref:System.Windows.Controls.FlowDocumentScrollViewer>.  
   
-#### FlowDocumentReader  
+#### FlowDocumentReader
+ 
  <xref:System.Windows.Controls.FlowDocumentReader> includes features that enable the user to dynamically choose between various viewing modes, including a single-page (page-at-a-time) viewing mode, a two-page-at-a-time (book reading format) viewing mode, and a continuous scrolling (bottomless) viewing mode.  For more information about these viewing modes, see <xref:System.Windows.Controls.FlowDocumentReaderViewingMode>.  If you do not need the ability to dynamically switch between different viewing modes, <xref:System.Windows.Controls.FlowDocumentPageViewer> and <xref:System.Windows.Controls.FlowDocumentScrollViewer> provide lighter-weight flow content viewers that are fixed in a particular viewing mode.  
   
-#### FlowDocumentPageViewer and FlowDocumentScrollViewer  
+#### FlowDocumentPageViewer and FlowDocumentScrollViewer
+  
  <xref:System.Windows.Controls.FlowDocumentPageViewer> shows content in page-at-a-time viewing mode, while <xref:System.Windows.Controls.FlowDocumentScrollViewer> shows content in continuous scrolling mode.  Both <xref:System.Windows.Controls.FlowDocumentPageViewer> and <xref:System.Windows.Controls.FlowDocumentScrollViewer> are fixed to a particular viewing mode. Compare to <xref:System.Windows.Controls.FlowDocumentReader>, which includes features that enable the user to dynamically choose between various viewing modes (as provided by the <xref:System.Windows.Controls.FlowDocumentReaderViewingMode> enumeration), at the cost of being more resource intensive than <xref:System.Windows.Controls.FlowDocumentPageViewer> or <xref:System.Windows.Controls.FlowDocumentScrollViewer>.  
   
  By default, a vertical scrollbar is always shown, and a horizontal scrollbar becomes visible if needed. The default [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] for <xref:System.Windows.Controls.FlowDocumentScrollViewer> does not include a toolbar; however, the <xref:System.Windows.Controls.FlowDocumentScrollViewer.IsToolBarVisible%2A> property can be used to enable a built-in toolbar.  
