@@ -1,5 +1,5 @@
 ---
-title: Walk-through to Populate an Unbound Windows Forms DataGridView Control
+title: Walkthrough to Populate an Unbound Windows Forms DataGridView Control
 description: You can populate an Unbound Windows Forms DataGridView Control and display a small amount of data without binding it to a data source
 ms.date: "03/30/2017"
 dev_langs: 
@@ -13,7 +13,7 @@ helpviewer_keywords:
   - "walkthroughs [Windows Forms], DataGridView control"
 ms.assetid: 5a8d6afa-1b4b-4b24-8db8-501086ffdebe
 ---
-# Walk-through: Creating an Unbound Windows Forms DataGridView Control
+# Walkthrough: Creating an Unbound Windows Forms DataGridView Control
 
 You may frequently want to display tabular data that does not originate from a database. For example, you may want to show the contents of a two-dimensional array of strings. The <xref:System.Windows.Forms.DataGridView> class provides an easy and highly customizable way to display data without binding to a data source. This walk-through shows how to populate a <xref:System.Windows.Forms.DataGridView> control and manage the addition and deletion of rows in "unbound" mode. By default, the user can add new rows. To prevent row addition, set the <xref:System.Windows.Forms.DataGridView.AllowUserToAddRows%2A> property is `false`.
   
