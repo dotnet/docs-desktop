@@ -53,7 +53,7 @@ The property characteristics that are exposed by `FrameworkPropertyMetadata` are
 
 1. Instantiate `FrameworkPropertyMetadata` using a constructor that doesn't have a `FrameworkPropertyMetadataOptions` parameter, and then set the applicable <xref:System.Boolean> flags on `FrameworkPropertyMetadata`. Set flag values before associating your `FrameworkPropertyMetadata` instance with a dependency property, otherwise you'll get an <xref:System.InvalidOperationException>.
 
-## Metadata merge behavior
+## Metadata override behavior
 
 When you override framework property metadata, changed metadata values either replace or are merged with the original values:
 
