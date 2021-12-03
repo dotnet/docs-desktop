@@ -16,10 +16,14 @@
             Dim aquarium2 As New Aquarium()
             aquarium1.AquariumContents.Add(New Fish())
             aquarium2.AquariumContents.Add(New Fish())
-            MessageBox.Show($"Aquarium1 contains {aquarium1.AquariumContents.Count} fish{Environment.NewLine}" +
-                            $"Aquarium2 contains {aquarium2.AquariumContents.Count} fish")
+            MessageBox.Show($"aquarium1 contains {aquarium1.AquariumContents.Count} fish{Environment.NewLine}" +
+                            $"aquarium2 contains {aquarium2.AquariumContents.Count} fish")
         End Sub
         '</InitializeAquariums>
+
+        Private Sub InitializeFreezableAquariums(sender As Object, e As RoutedEventArgs)
+            FreezableCollectionAquarium.InitializeAquariums()
+        End Sub
 
     End Class
 
@@ -37,19 +41,15 @@
                 typeMetadata:=New FrameworkPropertyMetadata())
                 'typeMetadata:=New FrameworkPropertyMetadata(New List(Of FrameworkElement)))
 
-        ' Store the dependency property identifier as a static member of the class.
-        Public Shared ReadOnly AquariumContentsProperty As DependencyProperty =
-            s_aquariumContentsPropertyKey.DependencyProperty
-
         ' Set the default collection value in a class constructor.
         Public Sub New()
             SetValue(s_aquariumContentsPropertyKey, New List(Of FrameworkElement)())
         End Sub
 
-        ' Declare a read-only property.
+        ' Declare a public get accessor.
         Public ReadOnly Property AquariumContents As List(Of FrameworkElement)
             Get
-                Return CType(GetValue(AquariumContentsProperty), List(Of FrameworkElement))
+                Return CType(GetValue(s_aquariumContentsPropertyKey.DependencyProperty), List(Of FrameworkElement))
             End Get
         End Property
     End Class
@@ -67,8 +67,8 @@
             aquarium1.AquariumContents.Add(New Fish())
             aquarium2.AquariumContents.Add(New Fish())
             aquarium2.AquariumContents = New List(Of FrameworkElement)()
-            MessageBox.Show($"Aquarium1 contains {aquarium1.AquariumContents.Count} fish{Environment.NewLine}" +
-                            $"Aquarium2 contains {aquarium2.AquariumContents.Count} fish")
+            MessageBox.Show($"aquarium1 contains {aquarium1.AquariumContents.Count} fish{Environment.NewLine}" +
+                            $"aquarium2 contains {aquarium2.AquariumContents.Count} fish")
         End Sub
 
         '<ReadWriteDependencyProperty>
@@ -89,7 +89,7 @@
                 SetValue(AquariumContentsProperty, New List(Of FrameworkElement)())
             End Sub
 
-            ' Declare a read-write property.
+            ' Declare public get and set accessors.
             Public Property AquariumContents As List(Of FrameworkElement)
                 Get
                     Return CType(GetValue(AquariumContentsProperty), List(Of FrameworkElement))
@@ -114,8 +114,8 @@
             Dim aquarium2 As New Aquarium()
             aquarium1.AquariumContents.Add(New Fish())
             aquarium2.AquariumContents.Add(New Fish())
-            MessageBox.Show($"Aquarium1 contains {aquarium1.AquariumContents.Count} fish{Environment.NewLine}" +
-                            $"Aquarium2 contains {aquarium2.AquariumContents.Count} fish")
+            MessageBox.Show($"FreezableCollection aquarium1 contains {aquarium1.AquariumContents.Count} fish{Environment.NewLine}" +
+                            $"FreezableCollection aquarium2 contains {aquarium2.AquariumContents.Count} fish")
         End Sub
 
         '<FreezableCollectionAquarium>
@@ -131,19 +131,15 @@
                     ownerType:=GetType(Aquarium),
                     typeMetadata:=New FrameworkPropertyMetadata())
 
-            ' Store the dependency property identifier as a static member of the class.
-            Public Shared ReadOnly AquariumContentsProperty As DependencyProperty =
-                s_aquariumContentsPropertyKey.DependencyProperty
-
             ' Set the default collection value in a class constructor.
             Public Sub New()
                 SetValue(s_aquariumContentsPropertyKey, New FreezableCollection(Of FrameworkElement)())
             End Sub
 
-            ' Declare a read-only property.
+            ' Declare a public get accessor.
             Public ReadOnly Property AquariumContents As FreezableCollection(Of FrameworkElement)
                 Get
-                    Return CType(GetValue(AquariumContentsProperty), FreezableCollection(Of FrameworkElement))
+                    Return CType(GetValue(s_aquariumContentsPropertyKey.DependencyProperty), FreezableCollection(Of FrameworkElement))
                 End Get
             End Property
         End Class
