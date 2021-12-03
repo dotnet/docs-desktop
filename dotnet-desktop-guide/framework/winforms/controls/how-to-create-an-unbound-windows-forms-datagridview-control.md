@@ -15,7 +15,7 @@ ms.assetid: b5d4b47d-9a28-4d88-9dba-0a3c90fba71d
 
 The following code example demonstrates how to populate a <xref:System.Windows.Forms.DataGridView> control programmatically without binding it to a data source. This is useful when you have a small amount of data that you want to display in a table format.  
   
- For a complete explanation of this code example, see [Walkthrough: Creating an Unbound Windows Forms DataGridView Control](walkthrough-creating-an-unbound-windows-forms-datagridview-control.md).  
+ For a complete explanation of this code example, see [Walk-through: Creating an Unbound Windows Forms DataGridView Control](walkthrough-creating-an-unbound-windows-forms-datagridview-control.md).  
   
 ## Example
   
@@ -31,6 +31,6 @@ The following code example demonstrates how to populate a <xref:System.Windows.F
 ## See also
 
 - <xref:System.Windows.Forms.DataGridView>
-- [Walkthrough: Creating an Unbound Windows Forms DataGridView Control](walkthrough-creating-an-unbound-windows-forms-datagridview-control.md)
+- [Walk-through: Creating an Unbound Windows Forms DataGridView Control](walkthrough-creating-an-unbound-windows-forms-datagridview-control.md)
 - [Displaying Data in the Windows Forms DataGridView Control](displaying-data-in-the-windows-forms-datagridview-control.md)
 - [Data Display Modes in the Windows Forms DataGridView Control](data-display-modes-in-the-windows-forms-datagridview-control.md)
