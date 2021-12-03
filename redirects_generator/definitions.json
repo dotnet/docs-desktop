@@ -383,6 +383,10 @@
             "SourceUrl": "/dotnet/desktop/wpf/advanced/read-only-dependency-properties?view=netframeworkdesktop-4.8",
             "TargetUrl": "/dotnet/desktop/wpf/properties/read-only-dependency-properties?view=netdesktop-6.0"
         },
+        {
+            "SourceUrl": "/dotnet/desktop/wpf/advanced/dependency-property-security?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/wpf/properties/dependency-property-security?view=netdesktop-6.0"
+        },
 
         // Systems - XAML
         {

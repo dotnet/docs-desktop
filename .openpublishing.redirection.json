@@ -564,6 +564,14 @@
         {
             "source_path": "dotnet-desktop-guide/framework/wpf/properties/read-only-dependency-properties.md",
             "redirect_url": "/dotnet/desktop/wpf/advanced/read-only-dependency-properties?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/advanced/dependency-property-security.md",
+            "redirect_url": "/dotnet/desktop/wpf/properties/dependency-property-security?view=netdesktop-6.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/properties/dependency-property-security.md",
+            "redirect_url": "/dotnet/desktop/wpf/advanced/dependency-property-security?view=netframeworkdesktop-4.8"
         }
     ]
 }
