@@ -10,7 +10,7 @@ helpviewer_keywords:
   - "DataGridView control [Windows Forms], unbound data"
   - "DataGridView control [Windows Forms], displaying data without binding to a data source"
   - "data [Windows Forms], unbound"
-  - "walk-throughs [Windows Forms], DataGridView control"
+  - "walkthroughs [Windows Forms], DataGridView control"
 ms.assetid: 5a8d6afa-1b4b-4b24-8db8-501086ffdebe
 ---
 # Walk-through: Creating an Unbound Windows Forms DataGridView Control
