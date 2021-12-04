@@ -13,20 +13,31 @@ ms.assetid: 19a3b49b-60a2-4c11-a786-e26b4c965588
 ---
 # How-to: Alter the Typography of Text
 
+<<<<<<< HEAD
 The following example shows how to set the <xref:System.Windows.Documents.TextElement.Typography%2A> attribute, using <xref:System.Windows.Documents.Paragraph> as the example
   
 ## Example 1: To show how altered and default typographic properties of text render on scre
+=======
+The following example shows how to set the <xref:System.Windows.Documents.TextElement.Typography%2A> attribute, using <xref:System.Windows.Documents.Paragraph> as the example element.  
 
- [!code-xaml[TextElementSnippets#_TextElement_TypogXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/TextElementSnippets/CSharp/Window1.xaml#_textelement_typogxaml)]
+## Example 1: To show how altered and default typographic properties of text render on screen
+>>>>>>> e405f2e4e1dea5cad82d7a4921414fe6e7f662c3
+
+  [!code-xaml[TextElementSnippets#_TextElement_TypogXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/TextElementSnippets/CSharp/Window1.xaml#_textelement_typogxaml)]
   
 The following figure shows how this example renders.
   
- ![Screenshot: Text element with altered typography](./media/textelement-typog.png "TextElement_Typog")
+  ![Screenshot: Text element with altered typography](./media/textelement-typog.png "TextElement_Typog")
   
 In contrast, the following figure shows how a similar example with default typographic properties renders.
   
- ![Screenshot: Text element with default typography](./media/textelement-typog-default.png "TextElement_Typog_Default")
+<<<<<<< HEAD
+  ![Screenshot: Text element with default typography](./media/textelement-typog-default.png "TextElement_Typog_Default")
   
+  ![Screenshot: Text element with default typography](./media/textelement-typog-default.png "TextElement_Typog_Default") 
+
+
+>>>>>>> e405f2e4e1dea5cad82d7a4921414fe6e7f662c3
 ## Example 2: To show how to set typographic property of text programmatically
 
  The following example shows how to set the <xref:System.Windows.Controls.TextBox.Typography%2A> property programmatically.
