@@ -13,38 +13,21 @@ ms.assetid: 19a3b49b-60a2-4c11-a786-e26b4c965588
 ---
 # How-to: Alter the Typography of Text
 
-The following example shows how to set the <xref:System.Windows.Documents.TextElement.Typography%2A> attribute, using <xref:System.Windows.Documents.Paragraph> as the example element.
-<<<<<<< HEAD
+The following example shows how to set the <xref:System.Windows.Documents.TextElement.Typography%2A> attribute, using <xref:System.Windows.Documents.Paragraph> as the example
   
-<<<<<<< HEAD
-## Example to show how altered and default typographic properties of text render on screen
-=======
-## Example 1: To show how altered and default typographic properties of text render on screen
->>>>>>> c37bd7c99bcd5b0a59d4f70aff94cab301d53a02
-=======
-
-## Example 1: To show how altered and default typographic properties of text render on screen
->>>>>>> 2b986b11dbdb8aeea83bd22cdba6fa055a9cf6f7
+## Example 1: To show how altered and default typographic properties of text render on scre
 
  [!code-xaml[TextElementSnippets#_TextElement_TypogXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/TextElementSnippets/CSharp/Window1.xaml#_textelement_typogxaml)]
   
- The following figure shows how this example renders.
+The following figure shows how this example renders.
   
  ![Screenshot: Text element with altered typography](./media/textelement-typog.png "TextElement_Typog")
   
- In contrast, the following figure shows how a similar example with default typographic properties renders.
+In contrast, the following figure shows how a similar example with default typographic properties renders.
   
  ![Screenshot: Text element with default typography](./media/textelement-typog-default.png "TextElement_Typog_Default")
   
-<<<<<<< HEAD
-<<<<<<< HEAD
-## Example to show how to set typographic property of text programmatically
-=======
 ## Example 2: To show how to set typographic property of text programmatically
->>>>>>> c37bd7c99bcd5b0a59d4f70aff94cab301d53a02
-=======
-## Example 2: To show how to set typographic property of text programmatically
->>>>>>> 2b986b11dbdb8aeea83bd22cdba6fa055a9cf6f7
 
  The following example shows how to set the <xref:System.Windows.Controls.TextBox.Typography%2A> property programmatically.
   
