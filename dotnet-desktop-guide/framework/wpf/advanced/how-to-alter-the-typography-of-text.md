@@ -31,7 +31,7 @@ In contrast, the following figure shows how a similar example with default typog
   
   ![Screenshot: Text element with default typography](./media/textelement-typog-default.png "TextElement_Typog_Default")
   
-  ![Screenshot: Text element with default typography](./media/textelement-typog-default.png "TextElement_Typog_Default") 
+  ![Screenshot: Text element with default typography](./media/textelement-typog-default.png "TextElement_Typog_Default")
 
 ## Example 2: To show how to set typographic property of text programmatically
 
