@@ -15,7 +15,7 @@ ms.assetid: 5a8d6afa-1b4b-4b24-8db8-501086ffdebe
 ---
 # Walkthrough: Creating an Unbound Windows Forms DataGridView Control
 
-You may frequently want to display tabular data that does not originate from a database. For example, you may want to show the contents of a two-dimensional array of strings. The <xref:System.Windows.Forms.DataGridView> class provides an easy and highly customizable way to display data without binding to a data source. This walk-through shows how to populate a <xref:System.Windows.Forms.DataGridView> control and manage the addition and deletion of rows in "unbound" mode. By default, the user can add new rows. To prevent row addition, set the <xref:System.Windows.Forms.DataGridView.AllowUserToAddRows%2A> property is `false`.
+You may frequently want to display tabular data that does not originate from a database. For example, you may want to show the contents of a two-dimensional array of strings. The <xref:System.Windows.Forms.DataGridView> class provides an easy and highly customizable way to display data without binding to a data source. This walk-through shows how to populate a <xref:System.Windows.Forms.DataGridView> control and manage the addition and deletion of rows in "unbound" mode. By default, the user can add new rows. To prevent row addition, set the <xref:System.Windows.Forms.DataGridView.AllowUserToAddRows%2A> property to `false`.
   
  To copy the code in this topic as a single listing, see [How to: Create an Unbound Windows Forms DataGridView Control](how-to-create-an-unbound-windows-forms-datagridview-control.md).
   
@@ -72,9 +72,9 @@ You may frequently want to display tabular data that does not originate from a d
   
 ### To test the form
   
-- Press F5 to run the application.
+Press F5 to run the application.
   
-     You will see a <xref:System.Windows.Forms.DataGridView> control that displays the songs listed in `PopulateDataGridView`. You can add new rows with the **Add Row** button, and you can delete selected rows with the **Delete Row** button. The unbound <xref:System.Windows.Forms.DataGridView> control is the data store, and its data is independent of any external source, such as a <xref:System.Data.DataSet> or an array.
+You will see a <xref:System.Windows.Forms.DataGridView> control that displays the songs listed in `PopulateDataGridView`. You can add new rows with the **Add Row** button, and you can delete selected rows with the **Delete Row** button. The unbound <xref:System.Windows.Forms.DataGridView> control is the data store, and its data is independent of any external source, such as a <xref:System.Data.DataSet> or an array.
   
 ## Next Steps
   
