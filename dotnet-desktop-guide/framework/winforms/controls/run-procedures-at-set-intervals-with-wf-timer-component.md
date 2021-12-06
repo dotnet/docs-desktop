@@ -26,7 +26,7 @@ You can create a procedure that runs at specific time intervals until a loop has
   
 ## To run a procedure at set intervals with the Timer component  
   
-1. Add a <xref:System.Windows.Forms.Timer> to your form. See []()for an illustration on how to do this programmatically. 
+1. Add a <xref:System.Windows.Forms.Timer> to your form. See [[Example 2: To show how to set typographic property of text programmatically](../../wpf/advanced/how-to-alter-the-typography-of-text.md#example-2-to-show-how-to-set-typographic-property-of-text-programmatically).
    Visual Studio also has support for adding components to a form. See [How to: Add Controls Without a User Interface to Windows Forms](how-to-add-controls-without-a-user-interface-to-windows-forms.md).  
   
 1. Set the <xref:System.Windows.Forms.Timer.Interval%2A> property (in milliseconds) for the timer. This property determines how much time will pass before the procedure is run again.  
