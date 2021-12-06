@@ -1,5 +1,5 @@
 ---
-title: How-to Alter the Typography of Text
+title: How to Alter the Typography of Text
 description: To alter the telegraphy of text, set the telegraphy attribute. You can set the typographic property of text programmatically. 
 
 ms.date: "03/30/2017"
@@ -13,9 +13,9 @@ ms.assetid: 19a3b49b-60a2-4c11-a786-e26b4c965588
 ---
 # How-to: Alter the Typography of Text
 
-The following example shows how to set the <xref:System.Windows.Documents.TextElement.Typography%2A> attribute, using <xref:System.Windows.Documents.Paragraph> as the example
+The following example shows how to set the <xref:System.Windows.Documents.TextElement.Typography%2A> attribute, using <xref:System.Windows.Documents.Paragraph> as the example element.
   
-## Example 1: To show how altered and default typographic properties of text render on scre
+## Example 1: To show how altered and default typographic properties of text render on screen
 
 The following example shows how to set the <xref:System.Windows.Documents.TextElement.Typography%2A> attribute, using <xref:System.Windows.Documents.Paragraph> as the example element.  
 
