@@ -1,5 +1,5 @@
 ---
-title: Data Binding
+title: Windows Forms Data Binding
 description: Learn how to use data binding in Windows Forms to display and make changes to information from a data source in controls on the form.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
@@ -10,9 +10,11 @@ helpviewer_keywords:
 ms.assetid: c3826d8e-ea25-4ad4-a669-45bfb19192aa
 ---
 # Windows Forms Data Binding
+
 Data binding in Windows Forms gives you the means to display and make changes to information from a data source in controls on the form. You can bind to both traditional data sources as well as almost any structure that contains data.  
   
-## In This Section  
+## In This Section
+  
  [Data Binding and Windows Forms](data-binding-and-windows-forms.md)  
  Provides an overview of data binding in Windows Forms.  
   
@@ -48,14 +50,16 @@ Data binding in Windows Forms gives you the means to display and make changes to
   
  Also see [Interfaces Related to Data Binding](interfaces-related-to-data-binding.md), [How to: Navigate Data in Windows Forms](how-to-navigate-data-in-windows-forms.md), and [How to: Create a Simple-Bound Control on a Windows Form](how-to-create-a-simple-bound-control-on-a-windows-form.md).  
   
-## Reference  
+## Reference
+  
  <xref:System.Windows.Forms.Binding?displayProperty=nameWithType>  
  Describes the class that represents the binding between a bindable component and a data source.  
   
  <xref:System.Windows.Forms.BindingSource?displayProperty=nameWithType>  
  Describes the class that encapsulates a data source for binding to controls.  
   
-## Related Sections  
+## Related Sections
+  
  [BindingSource Component](./controls/bindingsource-component.md)  
  Contains a list of topics that demonstrate how to use the <xref:System.Windows.Forms.BindingSource> component.  
   
