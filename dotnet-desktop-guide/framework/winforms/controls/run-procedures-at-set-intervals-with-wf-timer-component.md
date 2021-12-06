@@ -17,7 +17,7 @@ ms.assetid: 8025247a-2de4-4d86-b8ab-a8cb8aeab2ea
 ---
 # How to: Run Procedures at Set Intervals with the Windows Forms Timer Component
 
-You might sometimes want to create a procedure that runs at specific time intervals until a loop has finished or that runs when a set time interval has elapsed. The <xref:System.Windows.Forms.Timer> component makes such a procedure possible.  
+You can create a procedure that runs at specific time intervals until a loop has finished  or that runs when a set time interval has elapsed. The <xref:System.Windows.Forms.Timer> component makes such a procedure possible.  
   
  This component is designed for a Windows Forms environment. If you need a timer that is suitable for a server environment, see [Introduction to Server-Based Timers](/previous-versions/visualstudio/visual-studio-2008/tb9yt5e6(v=vs.90)).  
   
@@ -26,18 +26,19 @@ You might sometimes want to create a procedure that runs at specific time interv
   
 ## To run a procedure at set intervals with the Timer component  
   
-1. Add a <xref:System.Windows.Forms.Timer> to your form. See the following Example section for an illustration of how to do this programmatically. Visual Studio also has support for adding components to a form. Also see [How to: Add Controls Without a User Interface to Windows Forms](how-to-add-controls-without-a-user-interface-to-windows-forms.md).  
+1. Add a <xref:System.Windows.Forms.Timer> to your form. See []()for an illustration on how to do this programmatically. 
+   Visual Studio also has support for adding components to a form. See [How to: Add Controls Without a User Interface to Windows Forms](how-to-add-controls-without-a-user-interface-to-windows-forms.md).  
   
-2. Set the <xref:System.Windows.Forms.Timer.Interval%2A> property (in milliseconds) for the timer. This property determines how much time will pass before the procedure is run again.  
+1. Set the <xref:System.Windows.Forms.Timer.Interval%2A> property (in milliseconds) for the timer. This property determines how much time will pass before the procedure is run again.  
   
     > [!NOTE]
     > The more often a timer event occurs, the more processor time is used in responding to the event. This can slow down overall performance. Do not set a smaller interval than you need.  
   
-3. Write appropriate code in the <xref:System.Windows.Forms.Timer.Tick> event handler. The code you write in this event will run at the interval specified in the <xref:System.Windows.Forms.Timer.Interval%2A> property.  
+1. Write appropriate code in the <xref:System.Windows.Forms.Timer.Tick> event handler. The code you write in this event will run at the interval specified in the <xref:System.Windows.Forms.Timer.Interval%2A> property.  
   
-4. Set the <xref:System.Windows.Forms.Timer.Enabled%2A> property to `true` to start the timer. The <xref:System.Windows.Forms.Timer.Tick> event will begin to occur, running your procedure at the set interval.  
+1. Set the <xref:System.Windows.Forms.Timer.Enabled%2A> property to `true` to start the timer. The <xref:System.Windows.Forms.Timer.Tick> event will begin to occur, running your procedure at the set interval.  
   
-5. At the appropriate time, set the <xref:System.Windows.Forms.Timer.Enabled%2A> property to `false` to stop the procedure from running again. Setting the interval to `0` does not cause the timer to stop.  
+1. At the appropriate time, set the <xref:System.Windows.Forms.Timer.Enabled%2A> property to `false` to stop the procedure from running again. Setting the interval to `0` does not cause the timer to stop.  
   
 ## Example  
 
