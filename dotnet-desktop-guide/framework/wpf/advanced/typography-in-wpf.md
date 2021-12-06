@@ -10,8 +10,6 @@ ms.assetid: 06cbf17b-6eff-4fe5-949d-2dd533e4e1f4
 
 This topic introduces the major typographic features of [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)]. These features include improved quality and performance of text rendering, OpenType typography support, enhanced international text, enhanced font support, and new text application programming interfaces (APIs).  
   
-<a name="Improved_Quality_and_Performance_of_Text"></a>
-
 ## Improved Quality and Performance of Text  
 
  Text in [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] is rendered using Microsoft ClearType, which enhances the clarity and readability of text. ClearType is a software technology developed by Microsoft that improves the readability of text on existing LCDs (Liquid Crystal Displays), such as laptop screens, Pocket PC screens and flat panel monitors. ClearType uses sub-pixel rendering which allows text to be displayed with a greater fidelity to its true shape by aligning characters on a fractional part of a pixel. The extra resolution increases the sharpness of the tiny details in text display, making it much easier to read over long durations. Another improvement of ClearType in [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] is y-direction anti-aliasing, which smoothes the tops and bottoms of shallow curves in text characters. For more details on ClearType features, see [ClearType Overview](cleartype-overview.md).  
@@ -25,8 +23,6 @@ Text with ClearType y-direction antialiasing
   
  In addition, animated text, whether by character or glyph, takes full advantage of the graphics hardware capability enabled by [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)]. This results in smooth text animation.  
   
-<a name="Rich_Typography"></a>
-
 ## Rich Typography  
 
  The OpenType font format is an extension of the TrueType® font format. The OpenType font format was developed jointly by Microsoft and Adobe, and provides a rich assortment of advanced typographic features. The <xref:System.Windows.Documents.Typography> object exposes many of the advanced features of OpenType fonts, such as stylistic alternates and swashes. The Windows SDK provides a set of sample OpenType fonts that are designed with rich features, such as the Pericles and Pescadero fonts. For more information, see [Sample OpenType Font Pack](sample-opentype-font-pack.md).  
@@ -41,8 +37,6 @@ Text with ClearType y-direction antialiasing
   
  For more details on OpenType features, see [OpenType Font Features](opentype-font-features.md).  
   
-<a name="Enhanced_International_Text_Support"></a>
-
 ## Enhanced International Text Support  
 
  [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] provides enhanced international text support by providing the following features:  
@@ -52,8 +46,6 @@ Text with ClearType y-direction antialiasing
 - Broad support for international text. For more information, see [Globalization for WPF](globalization-for-wpf.md).  
   
 - Language-guided line breaking, hyphenation, and justification.  
-  
-<a name="Enhanced_Font_Support"></a>
 
 ## Enhanced Font Support  
 
@@ -73,13 +65,11 @@ Text with ClearType y-direction antialiasing
   
 - Composite fonts embedded in a document, thereby providing document portability. For more information, see the remarks in the <xref:System.Windows.Media.FontFamily> class.  
   
-<a name="New_Text_APIs"></a>
-
 ## New Text Application Programming Interfaces (APIs)  
 
  [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] provides several text APIs for developers to use when including text in their applications. These APIs are grouped into three categories:  
   
-- **Layout and user interface**. The common text controls for the graphical user interface (GUI).  
+- **Layout and user interface**. The common text controls for the graphical user interface (GUI)  
   
 - **Lightweight text drawing**. Allows you to draw text directly to objects.  
   
