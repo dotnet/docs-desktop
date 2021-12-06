@@ -76,7 +76,7 @@ ms.assetid: 6e8db7bc-050a-4070-aa72-bb8c46e87ff8
 
  The [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] packaging APIs allow application data and documents to be organized into a single portable unit. A ZIP file is one of the most common types of packages and is the default package type provided with [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)].  <xref:System.IO.Packaging.Package> itself is an abstract class from which <xref:System.IO.Packaging.ZipPackage> is implemented using an open standard XML and ZIP file architecture.  The <xref:System.IO.Packaging.Package.Open%2A> method uses <xref:System.IO.Packaging.ZipPackage> to create and use ZIP files by default. A package can contain three basic types of items:  
   
-|Three Basic Items Type in a Package|Description|  
+|Three Basic Items Type in a Package|Description||Three Basic Items Type in a Package|Description|
 |-|-|  
 |<xref:System.IO.Packaging.PackagePart>|Application content, data, documents, and resource files.|  
 |<xref:System.IO.Packaging.PackageDigitalSignature>|[X.509 Certificate] for identification, authentication and validation.|  
