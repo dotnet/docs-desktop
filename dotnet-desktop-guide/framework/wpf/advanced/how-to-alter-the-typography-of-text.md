@@ -1,5 +1,5 @@
 ---
-title: How-to Alter the Typography of Text
+title: How to Alter the Typography of Text
 description: This topic demonstrates how altered and default typographic properties of text render on screen and show how to set typographic property of text programmatically
 ms.date: "03/30/2017"
 dev_langs: 
