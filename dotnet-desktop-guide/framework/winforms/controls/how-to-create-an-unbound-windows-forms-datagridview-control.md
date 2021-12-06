@@ -25,9 +25,9 @@ For a complete explanation of this code example, see [Walkthrough: Creating an U
   
 ## Compiling the Code
 
- This example requires:  
+This example requires:  
   
-- References to the System, System.Drawing, and System.Windows.Forms assemblies.  
+References to the System, System.Drawing, and System.Windows.Forms assemblies.  
   
 ## See also
 
