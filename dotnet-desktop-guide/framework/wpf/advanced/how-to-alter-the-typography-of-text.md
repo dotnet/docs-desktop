@@ -15,7 +15,7 @@ ms.assetid: 19a3b49b-60a2-4c11-a786-e26b4c965588
 
 The following example shows how to set the <xref:System.Windows.Documents.TextElement.Typography%2A> attribute, using <xref:System.Windows.Documents.Paragraph> as the example element.
   
-## Example 1: To show how altered and default typographic properties of text render on screen
+## Example to show how altered and default typographic properties of text render on screen
 
  [!code-xaml[TextElementSnippets#_TextElement_TypogXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/TextElementSnippets/CSharp/Window1.xaml#_textelement_typogxaml)]
   
@@ -27,7 +27,7 @@ The following example shows how to set the <xref:System.Windows.Documents.TextEl
   
  ![Screenshot: Text element with default typography](./media/textelement-typog-default.png "TextElement_Typog_Default")
   
-## Example 2: To show how to set typographic property of text programmatically
+## Example to show how to set typographic property of text programmatically
 
  The following example shows how to set the <xref:System.Windows.Controls.TextBox.Typography%2A> property programmatically.
   
