@@ -572,6 +572,14 @@
         {
             "source_path": "dotnet-desktop-guide/framework/wpf/properties/framework-property-metadata.md",
             "redirect_url": "/dotnet/desktop/wpf/advanced/framework-property-metadata?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/advanced/dependency-property-security.md",
+            "redirect_url": "/dotnet/desktop/wpf/properties/dependency-property-security?view=netdesktop-6.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/properties/dependency-property-security.md",
+            "redirect_url": "/dotnet/desktop/wpf/advanced/dependency-property-security?view=netframeworkdesktop-4.8"
         }
     ]
 }
