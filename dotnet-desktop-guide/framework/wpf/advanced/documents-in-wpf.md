@@ -1,6 +1,6 @@
 ---
 title: Documents in WPF
-description: Includes a wide range of document features allow to create high-fidelity content. In addition to enhanced capabilities and quality, provides integrated services for document display, packaging, and security. 
+description: Includes a wide range of document features that allows to create high-fidelity content. In addition to enhanced capabilities and quality, provides integrated services for document display, packaging, and security. 
 ms.date: "03/30/2017"
 ms.topic: overview
 helpviewer_keywords: 
