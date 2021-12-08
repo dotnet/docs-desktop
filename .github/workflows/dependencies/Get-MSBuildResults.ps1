@@ -135,7 +135,7 @@ foreach ($item in $workingSet) {
             $configFile = [System.IO.Path]::Combine([System.IO.Path]::GetDirectoryName($projectFile), "snippets.5000.json")
             
             # Create the default build command
-            "dotnet build `"$projectFile`"" | Out-File ".\run.bat"
+            "dotnet build `"$projectFile`" /p:UseWPF=True" | Out-File ".\run.bat"
 
             # Check for config file
             if ([System.IO.File]::Exists($configFile) -eq $true) {
