@@ -26,7 +26,7 @@ This component is designed for a Windows Forms environment. If you need a timer 
   
 ## To run a procedure at set intervals with the Timer component  
   
-1. Add a <xref:System.Windows.Forms.Timer> to your form. See the Example section for an illustration on how to do this programmatically in the Desktop Guide in How-to: Alter the Typography of Text.
+1. Add a <xref:System.Windows.Forms.Timer> to your form. See [Example to show how to set typographic property of text programmatically](../../wpf/advanced/how-to-alter-the-typography-of-text.md#example-to-show-how-to-set-typographic-property-of-text-programmatically).
 Visual Studio also has support for adding components to a form. See [How to: Add Controls Without a User Interface to Windows Forms](how-to-add-controls-without-a-user-interface-to-windows-forms.md).  
   
 1. Set the <xref:System.Windows.Forms.Timer.Interval%2A> property (in milliseconds) for the timer. This property determines how much time will pass before the procedure is run again.  
@@ -146,7 +146,7 @@ private:
    }  
 ```  
   
-## Example to run a procedure every 600 milliseconds until a loop is complete
+## Example to run a procedure every 600 milliseconds until a loop completes
 
  This second code example runs a procedure every 600 milliseconds until a loop has finished. The following code example requires that you have a form with a <xref:System.Windows.Forms.Button> control named `Button1`, a <xref:System.Windows.Forms.Timer> control named `Timer1`, and a <xref:System.Windows.Forms.Label> control named `Label1`.  
   
