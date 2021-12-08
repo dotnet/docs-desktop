@@ -41,7 +41,7 @@ namespace SDKSample
                     FlowDirection.LeftToRight,
                     new Typeface("Comic Sans MS Bold"),
                     48,
-                    System.Windows.Media.Brushes.Black // This brush does not matter since we use the geometry of the text.
+                    System.Windows.Media.Brushes.Black, // This brush does not matter since we use the geometry of the text.
                     VisualTreeHelper.GetDpi(this).PixelsPerDip);
 
                 // Build the geometry object that represents the text.
