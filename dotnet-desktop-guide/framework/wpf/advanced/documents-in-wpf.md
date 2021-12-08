@@ -16,7 +16,7 @@ ms.assetid: 6e8db7bc-050a-4070-aa72-bb8c46e87ff8
 # Documents in WPF
 
 [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)]
-offers a wide range of document features allow to create high-fidelity content that can be designed to be more easily accessible and read than in previous generations of Windows. In addition to enhanced capabilities and quality, [!INCLUDE[[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] also provides integrated services for document display, packaging, and security. This topic provides an introduction to [!INCLUDE[TLA2#tla_winclient](../../../includes/totla2sharptla-winclient-md.md)] document types and document packaging.
+offers a wide range of document features allow to create high-fidelity content that can be designed to be more easily accessible and read than in previous generations of Windows. In addition to enhanced capabilities and quality, [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] also provides integrated services for document display, packaging, and security. This topic provides an introduction to [!INCLUDE[TLA2#tla_winclient](../../../includes/totla2sharptla-winclient-md.md)] document types and document packaging.
 
 ## Types of Documents
   
