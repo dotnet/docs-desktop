@@ -75,7 +75,7 @@ Since most existing dependency properties aren't virtual properties, their inher
 
 - For a <xref:System.Windows.PropertyMetadata.DefaultValue%2A>, the new value will replace the existing default value. If you don't specify a `DefaultValue` in the override metadata, the value comes from the nearest ancestor that specified `DefaultValue` in metadata.
 
-- For a <xref:System.Windows.PropertyMetadata.PropertyChangedCallback%2A>, the default merge logic stores all `PropertyChangedCallback` values in a table, and all are invoked on a property change. The callback order is determined by class depth, where the callback registered by the base class in the hierarchy runs first.
+- For a <xref:System.Windows.PropertyMetadata.PropertyChangedCallback%2A>, the default merge logic stores all `PropertyChangedCallback` values in a table, and all are invoked on a property change. The callback order is determined by class depth, where a callback registered by the base class in the hierarchy would run first.
 
 - For a <xref:System.Windows.PropertyMetadata.CoerceValueCallback%2A>, the new value will replace the existing `CoerceValueCallback` value. If you don't specify a `CoerceValueCallback` in the override metadata, the value comes from the nearest ancestor that specified `CoerceValueCallback` in metadata.
 
