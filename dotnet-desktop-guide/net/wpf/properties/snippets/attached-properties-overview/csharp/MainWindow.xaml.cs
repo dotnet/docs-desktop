@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using System.Diagnostics;
+using System.Windows;
 using System.Windows.Controls;
 
 namespace CodeSampleCsharp
@@ -13,6 +14,12 @@ namespace CodeSampleCsharp
             InitializeComponent();
 
             SetAttachedPropertyInCode();
+
+            // Test get/set accessors.
+            Aquarium aquarium = new();
+            Aquarium.SetHasFish(aquarium, true);
+            bool hasFish = Aquarium.GetHasFish(aquarium);
+            Debug.WriteLine($"Has fish: {hasFish}");
         }
 
         public static void SetAttachedPropertyInCode()
@@ -32,7 +39,7 @@ namespace CodeSampleCsharp
     }
 
     //<RegisterAttachedProperty>
-    public class Aquarium : DependencyObject
+    public class Aquarium : UIElement
     {
         // Register an attached dependency property with the specified
         // property name, property type, owner type, and property metadata.

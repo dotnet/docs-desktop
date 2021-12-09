@@ -16,7 +16,7 @@ Windows Presentation Foundation (WPF) provides ways for you to design your own d
 - Display specific information to users.
 - Gather information from users.
 - Both display and gather information.
-- Display an operating system prompt, such a print window.
+- Display an operating system prompt, such as print window.
 - Select a file or folder.
 
 These types of windows are known as _dialog boxes_. A dialog box can be displayed in two ways: modal and modeless.
