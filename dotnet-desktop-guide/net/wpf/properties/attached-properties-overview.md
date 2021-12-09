@@ -95,9 +95,9 @@ The following example shows how to register a dependency property using the <xre
 
 #### The Get accessor
 
-The `get` accessor method signature is `public static object Get<property name>(object target)`, where:
+The `get` accessor method signature is `public static object Get<property name>(DependencyObject target)`, where:
 
-- `target` is the object from which the attached property is read. The `target` type can be more specific than `object`. For example, the <xref:System.Windows.Controls.DockPanel.GetDock%2A?displayProperty=nameWithType> accessor method types the `target` as <xref:System.Windows.UIElement> because the attached property is intended to be set on `UIElement` instances.
+- `target` is the <xref:System.Windows.DependencyObject> from which the attached property is read. The `target` type can be more specific than `DependencyObject`. For example, the <xref:System.Windows.Controls.DockPanel.GetDock%2A?displayProperty=nameWithType> accessor method types the `target` as <xref:System.Windows.UIElement> because the attached property is intended to be set on `UIElement` instances. `UiElement` indirectly derives from `DependencyObject`.
 - The return type can be more specific than `object`. For example, the <xref:System.Windows.Controls.DockPanel.GetDock%2A> method types the returned value as <xref:System.Windows.Controls.Dock> because the return value should be a `Dock` enumeration.
 
 > [!NOTE]
@@ -105,9 +105,9 @@ The `get` accessor method signature is `public static object Get<property name>(
 
 #### The Set accessor
 
-The `set` accessor method signature is `public static void Set<property name>(object target, object value)`, where:
+The `set` accessor method signature is `public static void Set<property name>(DependencyObject target, object value)`, where:
 
-- `target` is the object on which the attached property is written. The `target` type can be more specific than `object`. For example, the <xref:System.Windows.Controls.DockPanel.SetDock%2A> method types the `target` as <xref:System.Windows.UIElement> because the attached property is intended to be set on <xref:System.Windows.UIElement> instances.
+- `target` is the <xref:System.Windows.DependencyObject> on which the attached property is written. The `target` type can be more specific than `DependencyObject`. For example, the <xref:System.Windows.Controls.DockPanel.SetDock%2A> method types the `target` as <xref:System.Windows.UIElement> because the attached property is intended to be set on <xref:System.Windows.UIElement> instances. `UiElement` indirectly derives from `DependencyObject`.
 - The `value` type can be more specific than `object`. For example, the <xref:System.Windows.Controls.DockPanel.SetDock%2A> method requires a <xref:System.Windows.Controls.Dock> value. The XAML loader needs to be able to generate the `value` type from the markup string that represents the attached property value. So, there must be type conversion, value serializer, or markup extension support for the type you use.
 
 ### Attached property attributes

@@ -10,6 +10,12 @@
             InitializeComponent()
 
             SetAttachedPropertyInCode()
+
+            ' Test get/set accessors.
+            Dim aquarium As New Aquarium()
+            aquarium.SetHasFish(aquarium, True)
+            Dim hasFish As Boolean = aquarium.GetHasFish(aquarium)
+            Debug.WriteLine($"Has fish: {hasFish}")
         End Sub
 
         Public Shared Sub SetAttachedPropertyInCode()
@@ -30,7 +36,7 @@
 
     '<RegisterAttachedProperty>
     Public Class Aquarium
-        Inherits DependencyObject
+        Inherits UIElement
 
         ' Register an attached dependency property with the specified
         ' property name, property type, owner type, and property metadata.
