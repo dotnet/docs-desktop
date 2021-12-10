@@ -22,7 +22,7 @@ This example shows how to programmatically change the <xref:System.Windows.Frame
   
 ## Example to show events that are associated with the button clicks
   
- The events associated with the button clicks defined above are handled in a C# code-behind file.
+A C# code-behind file handle the events associated with the button clicks defined above.
   
  [!code-csharp[FlowDirectionSnippets#_FlowDirection](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowDirectionSnippets/CSharp/Window1.xaml.cs#_flowdirection)]
  [!code-vb[FlowDirectionSnippets#_FlowDirection](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FlowDirectionSnippets/VisualBasic/Window1.xaml.vb#_flowdirection)]
