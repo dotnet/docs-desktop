@@ -1,5 +1,6 @@
 ---
-title: "How to: Change the FlowDirection of Content Programmatically"
+title: How to Change the FlowDirection of Content Programmatically
+description: This topic shows examples on how to change the FlowDirection of content programmatically 
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -10,15 +11,18 @@ helpviewer_keywords:
 ms.assetid: 02f5a8ba-f8c0-4e5a-84b9-4c5bf12922a2
 ---
 # How to: Change the FlowDirection of Content Programmatically
+
 This example shows how to programmatically change the <xref:System.Windows.FrameworkElement.FlowDirection%2A> property of a <xref:System.Windows.Controls.FlowDocumentReader>.  
   
-## Example  
- Two <xref:System.Windows.Controls.Button> elements are created, each representing one of the possible values of <xref:System.Windows.FlowDirection>. When a button is clicked, the associated property value is applied to the contents of a <xref:System.Windows.Controls.FlowDocumentReader> named `tf1`.  The property value is also written to a <xref:System.Windows.Controls.TextBlock> named `txt1`.  
+## Example to show on how the property value applies to FlowDocumentReader and TextBlock
+  
+ Create two <xref:System.Windows.Controls.Button> elements, each representing one of the possible values of <xref:System.Windows.FlowDirection>. Click a button that applies the associated property value to the contents of a <xref:System.Windows.Controls.FlowDocumentReader> named `tf1`. The property value also applies to a <xref:System.Windows.Controls.TextBlock> named `txt1`.  
   
  [!code-xaml[FlowDirectionSnippets#_FlowDirectionXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowDirectionSnippets/CSharp/Window1.xaml#_flowdirectionxaml)]  
   
-## Example  
- The events associated with the button clicks defined above are handled in a C# code-behind file.  
+## Example to show events that are associated with the button clicks
+  
+ The events associated with the button clicks defined above are handled in a C# code-behind file.
   
  [!code-csharp[FlowDirectionSnippets#_FlowDirection](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowDirectionSnippets/CSharp/Window1.xaml.cs#_flowdirection)]
  [!code-vb[FlowDirectionSnippets#_FlowDirection](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FlowDirectionSnippets/VisualBasic/Window1.xaml.vb#_flowdirection)]
