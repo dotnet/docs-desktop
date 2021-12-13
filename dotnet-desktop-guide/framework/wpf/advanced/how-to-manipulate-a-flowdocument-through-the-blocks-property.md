@@ -1,6 +1,6 @@
 ---
 title: How to Manipulate a FlowDocument through the Blocks Property
-description: Shows how to use the Blocks property in a Flow Document
+description: Shows how to use the Blocks property to manipulate elements in a FlowDocument
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -12,7 +12,7 @@ ms.assetid: cbb7291e-3f1b-433e-9e16-f4d93ced14e8
 ---
 # How to: Manipulate a FlowDocument through the Blocks Property
 
-These examples demonstrate some of the more common operations that can be performed on a <xref:System.Windows.Documents.FlowDocument> through the <xref:System.Windows.Documents.FlowDocument.Blocks%2A> property.  
+These examples demonstrate some of the more common operations that you can be perform on a <xref:System.Windows.Documents.FlowDocument> through the <xref:System.Windows.Documents.FlowDocument.Blocks%2A> property.  
   
 ## Example to create a new and append an element to the FlowDocument
   
@@ -28,14 +28,14 @@ These examples demonstrate some of the more common operations that can be perfor
  [!code-csharp[FlowDocumentSnippets#_FlowDocumentBlocksInsert](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowDocumentSnippets/CSharp/Window1.xaml.cs#_flowdocumentblocksinsert)]
  [!code-vb[FlowDocumentSnippets#_FlowDocumentBlocksInsert](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FlowDocumentSnippets/visualbasic/window1.xaml.vb#_flowdocumentblocksinsert)]  
   
-## Example to get the number of  top level elements contained in the FlowDocument
+## Example to get the number of top-level elements contained in the FlowDocument
   
  The following example gets the number of top-level <xref:System.Windows.Documents.Block> elements contained in the <xref:System.Windows.Documents.FlowDocument>.  
   
  [!code-csharp[FlowDocumentSnippets#_FlowDocumentBlocksCount](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowDocumentSnippets/CSharp/Window1.xaml.cs#_flowdocumentblockscount)]
  [!code-vb[FlowDocumentSnippets#_FlowDocumentBlocksCount](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FlowDocumentSnippets/visualbasic/window1.xaml.vb#_flowdocumentblockscount)]  
   
-## Example o delete the last element in the FlowDocument
+## Example to delete the last element in the FlowDocument
   
  The following example deletes the last <xref:System.Windows.Documents.Block> element in the <xref:System.Windows.Documents.FlowDocument>.  
   
