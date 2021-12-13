@@ -34,7 +34,7 @@ offers a wide range of document features allow to create high-fidelity content t
   
  The <xref:System.Windows.Controls.DocumentViewer> control is designed to display <xref:System.Windows.Documents.FixedDocument> content. The <xref:System.Windows.Controls.DocumentViewer> control provides an intuitive user interface that provides built-in support for common operations including print output, copy to clipboard, zoom, and text search features. The control provides access to pages of content through a familiar scrolling mechanism. Like all [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] controls, <xref:System.Windows.Controls.DocumentViewer> supports complete or partial restyling, which enables the control to be visually integrated into virtually any application or environment.  
   
- <xref:System.Windows.Controls.DocumentViewer> is designed to display content in a read-only manner; editing or modification of content is not available and is not supported.  
+ <xref:System.Windows.Controls.DocumentViewer> is designed to display content in a read-only manner; editing or modification of content isn't available and isn't supported.  
   
 ### Flow Document Controls  
 
@@ -45,13 +45,13 @@ offers a wide range of document features allow to create high-fidelity content t
   
 #### FlowDocumentReader
 
- <xref:System.Windows.Controls.FlowDocumentReader> includes features that enable the user to dynamically choose between various viewing modes, including a single-page (page-at-a-time) viewing mode, a two-page-at-a-time (book reading format) viewing mode, and a continuous scrolling (bottomless) viewing mode.  For more information about these viewing modes, see <xref:System.Windows.Controls.FlowDocumentReaderViewingMode>.  If you do not need the ability to dynamically switch between different viewing modes, <xref:System.Windows.Controls.FlowDocumentPageViewer> and <xref:System.Windows.Controls.FlowDocumentScrollViewer> provide lighter-weight flow content viewers that are fixed in a particular viewing mode.  
+ <xref:System.Windows.Controls.FlowDocumentReader> includes features that enable the user to dynamically choose between various viewing modes, including a single-page (page-at-a-time) viewing mode, a two-page-at-a-time (book reading format) viewing mode, and a continuous scrolling (bottomless) viewing mode.  For more information about these viewing modes, see <xref:System.Windows.Controls.FlowDocumentReaderViewingMode>.  If you don't need the ability to dynamically switch between different viewing modes, <xref:System.Windows.Controls.FlowDocumentPageViewer> and <xref:System.Windows.Controls.FlowDocumentScrollViewer> provide lighter-weight flow content viewers that are fixed in a particular viewing mode.  
   
 #### FlowDocumentPageViewer and FlowDocumentScrollViewer
   
  <xref:System.Windows.Controls.FlowDocumentPageViewer> shows content in page-at-a-time viewing mode, while <xref:System.Windows.Controls.FlowDocumentScrollViewer> shows content in continuous scrolling mode.  Both <xref:System.Windows.Controls.FlowDocumentPageViewer> and <xref:System.Windows.Controls.FlowDocumentScrollViewer> are fixed to a particular viewing mode. Compare to <xref:System.Windows.Controls.FlowDocumentReader>, which includes features that enable the user to dynamically choose between various viewing modes (as provided by the <xref:System.Windows.Controls.FlowDocumentReaderViewingMode> enumeration), at the cost of being more resource intensive than <xref:System.Windows.Controls.FlowDocumentPageViewer> or <xref:System.Windows.Controls.FlowDocumentScrollViewer>.  
   
- By default, a vertical scrollbar is always shown, and a horizontal scrollbar becomes visible if needed. The default [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] for <xref:System.Windows.Controls.FlowDocumentScrollViewer> does not include a toolbar; however, the <xref:System.Windows.Controls.FlowDocumentScrollViewer.IsToolBarVisible%2A> property can be used to enable a built-in toolbar.  
+ By default, a vertical scrollbar is always shown, and a horizontal scrollbar becomes visible if needed. The default [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] for <xref:System.Windows.Controls.FlowDocumentScrollViewer> doesn't include a toolbar; however, the <xref:System.Windows.Controls.FlowDocumentScrollViewer.IsToolBarVisible%2A> property can be used to enable a built-in toolbar.  
   
 ### Text in the User Interface
 
@@ -59,7 +59,7 @@ offers a wide range of document features allow to create high-fidelity content t
   
 ## Document Packaging
 
- The <xref:System.IO.Packaging> APIs provide an efficient means to organize application data, document content, and related resources in a single container that is simple to access, portable, and easy to distribute. A ZIP file is an example of a <xref:System.IO.Packaging.Package> type capable of holding multiple objects as a single unit. The packaging APIs provide a default <xref:System.IO.Packaging.ZipPackage> implementation designed using an Open Packaging Conventions standard with XML and ZIP file architecture. The [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] packaging APIs make it simple to create packages, and to store and access objects within them. An object stored in a <xref:System.IO.Packaging.Package> is referred to as a <xref:System.IO.Packaging.PackagePart> ("part"). Packages can also include signed digital certificates that can be used to identify the originator of a part and to validate that the contents of a package have not been modified.  Packages also include a <xref:System.IO.Packaging.PackageRelationship> feature that allows additional information to be added to a package or associated with specific parts without actually modifying the content of existing parts.  Package services also support Microsoft Windows Rights Management (RM).  
+ The <xref:System.IO.Packaging> APIs provide an efficient means to organize application data, document content, and related resources in a single container that is simple to access, portable, and easy to distribute. A ZIP file is an example of a <xref:System.IO.Packaging.Package> type capable of holding multiple objects as a single unit. The packaging APIs provide a default <xref:System.IO.Packaging.ZipPackage> implementation designed using an Open Packaging Conventions standard with XML and ZIP file architecture. The [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] packaging APIs make it simple to create packages, and to store and access objects within them. An object stored in a <xref:System.IO.Packaging.Package> is referred to as a <xref:System.IO.Packaging.PackagePart> ("part"). Packages can also include signed digital certificates that can be used to identify the originator of a part and to validate that the contents of a package haven't been modified.  Packages also include a <xref:System.IO.Packaging.PackageRelationship> feature that allows additional information to be added to a package or associated with specific parts without actually modifying the content of existing parts.  Package services also support Microsoft Windows Rights Management (RM).  
   
  The [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] Package architecture serves as the foundation for a number of key technologies:  
   
@@ -93,15 +93,15 @@ offers a wide range of document features allow to create high-fidelity content t
   
 1. Identifies and authenticates the originator of the part.  
   
-2. Validates that the part has not been modified.  
+2. Validates that the part hasn't been modified.  
   
- The digital signature does not preclude a part from being modified, but a validation check against the digital signature will fail if the part is altered in any way. The application can then take appropriate action—for example, block opening the part or notify the user that the part has been modified and is not secure.  
+ The digital signature doesn't preclude a part from being modified, but a validation check against the digital signature will fail if the part is altered in any way. The application can then take appropriate action—for example, block opening the part or notify the user that the part has been modified and isn't secure.  
   
 #### PackageRelationships
 
  A <xref:System.IO.Packaging.PackageRelationship> ("relationship") provides a mechanism for associating additional information with the package or a part within the package. A relationship is a package-level facility that can associate additional information with a part without modifying the actual part content. Inserting new data directly into the part content of is usually not practical in many cases:  
   
-- The actual type of the part and its content schema is not known.  
+- The actual type of the part and its content schema isn't known.  
   
 - Even if known, the content schema might not provide a means for adding new information.  
   
