@@ -1,7 +1,8 @@
 ---
 title: Documents in WPF
 description: Offers a wide range of document features that enable the creation of high-fidelity content and provides integrated services for document display, packaging, and security
-ms.date: "03/30/2017"
+ms.date: "12/16/2021"
+ms.custom: devdivchpfy22
 ms.topic: overview
 helpviewer_keywords: 
   - "documents [WPF], packaging"
