@@ -16,20 +16,20 @@ ms.assetid: 6e8db7bc-050a-4070-aa72-bb8c46e87ff8
 ---
 # Documents in WPF
 
-  [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] offers a wide range of document features that enable the creation of high-fidelity content that   is designed to be more easily accessed and read than in previous generations of Windows. 
-  In addition to enhanced capabilities and quality, [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] also provides integrated services for         document display, packaging, and security. This topic provides an introduction to [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)]               document types and document packaging. 
+[!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] offers a wide range of document features that enable the creation of high-fidelity content that   is designed to be more easily accessed and read than in previous generations of Windows. 
+In addition to enhanced capabilities and quality, [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] also provides integrated services for document display, packaging, and security. This topic provides an introduction to [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] document types and document packaging. 
 
 ## Types of Documents
   
- [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] divides documents into two broad categories based on their intended use; these document categories are termed "fixed documents" and "flow documents."  
+[!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] divides documents into two broad categories based on their intended use; these document categories are termed "fixed documents" and "flow documents."  
   
 Fixed documents are intended for applications that require a precise "what you see is what you get" (WYSIWYG) presentation, independent of the display or printer hardware used. Typical uses for fixed documents include desktop publishing, word processing, and form layout, where adherence to the original page design is critical. As part of its layout, a fixed document maintains the precise positional placement of content elements independent of the display or print device in use. For example, a fixed document page viewed on 96 dpi display will appear exactly the same when it is output to a 600 dpi laser printer as when it is output to a 4800 dpi phototypesetter. The page layout remains the same in all cases, while the document quality maximizes to the capabilities of each device.  
   
- By comparison, flow documents are designed to optimize viewing and readability and are best utilized when ease of reading is the primary document consumption scenario. Rather than being set to one predefined layout, flow documents dynamically adjust and reflow their content based on run-time variables such as window size, device resolution, and optional user preferences. A Web page is a simple example of a flow document where the page content is dynamically formatted to fit the current window. Flow documents optimize the viewing and reading experience for the user, based on the runtime environment. For example, the same flow document will dynamically reformat for optimal readability on either high-resolution 19-inch display or a small 2x3-inch PDA screen. In addition, flow documents have a number of built in features including search, viewing modes that optimize readability, and the ability to change the size and appearance of fonts.  See [Flow Document Overview](flow-document-overview.md) for illustrations, examples, and in-depth information on flow documents.  
+By comparison, flow documents are designed to optimize viewing and readability and are best utilized when ease of reading is the primary document consumption scenario. Rather than being set to one predefined layout, flow documents dynamically adjust and reflow their content based on run-time variables such as window size, device resolution, and optional user preferences. A Web page is a simple example of a flow document where the page content is dynamically formatted to fit the current window. Flow documents optimize the viewing and reading experience for the user, based on the runtime environment. For example, the same flow document will dynamically reformat for optimal readability on either high-resolution 19-inch display or a small 2x3-inch PDA screen. In addition, flow documents have a number of built in features including search, viewing modes that optimize readability, and the ability to change the size and appearance of fonts.  See [Flow Document Overview](flow-document-overview.md) for illustrations, examples, and in-depth information on flow documents.  
   
 ## Document Controls and Text Layout
 
- The .NET Framework provides a set of pre-built controls that simplify using fixed documents, flow documents, and general text within your application.  The display of fixed document content is supported using the <xref:System.Windows.Controls.DocumentViewer> control.  Display of flow document content is supported by three different controls: <xref:System.Windows.Controls.FlowDocumentReader>, <xref:System.Windows.Controls.FlowDocumentPageViewer>, and <xref:System.Windows.Controls.FlowDocumentScrollViewer> which map to different user scenarios (see sections below).  Other [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] controls provide simplified layout to support general text uses (see [Text in the User Interface](#text_in_the_user_interface), below).  
+The .NET Framework provides a set of pre-built controls that simplify using fixed documents, flow documents, and general text within your application.  The display of fixed document content is supported using the <xref:System.Windows.Controls.DocumentViewer> control.  Display of flow document content is supported by three different controls: <xref:System.Windows.Controls.FlowDocumentReader>, <xref:System.Windows.Controls.FlowDocumentPageViewer>, and <xref:System.Windows.Controls.FlowDocumentScrollViewer> which map to different user scenarios (see sections below).  Other [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] controls provide simplified layout to support general text uses (see [Text in the User Interface](#text_in_the_user_interface), below).  
   
 ### Fixed Document Control - DocumentViewer
   
@@ -44,7 +44,7 @@ The <xref:System.Windows.Controls.DocumentViewer> control is designed to display
   
 #### FlowDocumentReader
 
- <xref:System.Windows.Controls.FlowDocumentReader> includes features that enable the user to dynamically choose between various viewing modes, including a single-page (page-  at-a-time) viewing mode, a two-page-at-a-time (book reading format) viewing mode, and a continuous scrolling (bottomless) viewing mode.  For more information about these viewing modes, see <xref:System.Windows.Controls.FlowDocumentReaderViewingMode>.  If you do not need the ability to dynamically switch between different viewing modes, <xref:System.Windows.Controls.FlowDocumentPageViewer> and <xref:System.Windows.Controls.FlowDocumentScrollViewer> provide lighter-weight flow content viewers that are fixed in a particular viewing mode.  
+<xref:System.Windows.Controls.FlowDocumentReader> includes features that enable the user to dynamically choose between various viewing modes, including a single-page (page-  at-a-time) viewing mode, a two-page-at-a-time (book reading format) viewing mode, and a continuous scrolling (bottomless) viewing mode.  For more information about these viewing modes, see <xref:System.Windows.Controls.FlowDocumentReaderViewingMode>.  If you do not need the ability to dynamically switch between different viewing modes, <xref:System.Windows.Controls.FlowDocumentPageViewer> and <xref:System.Windows.Controls.FlowDocumentScrollViewer> provide lighter-weight flow content viewers that are fixed in a particular viewing mode.  
   
 #### FlowDocumentPageViewer and FlowDocumentScrollViewer
 
@@ -58,9 +58,9 @@ Besides adding text to documents, text can obviously be used in application UI s
 
 ## Document Packaging
   
- The <xref:System.IO.Packaging> APIs provide an efficient means to organize application data, document content, and related resources in a single container that is simple to access, portable, and easy to distribute. A ZIP file is an example of a <xref:System.IO.Packaging.Package> type capable of holding multiple objects as a single unit. The packaging APIs provide a default <xref:System.IO.Packaging.ZipPackage> implementation designed using an Open Packaging Conventions standard with XML and ZIP file architecture. The [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] packaging APIs make it simple to create packages, and to store and access objects within them. An object stored in a <xref:System.IO.Packaging.Package> is referred to as a <xref:System.IO.Packaging.PackagePart> ("part"). Packages can also include signed digital certificates that can be used to identify the originator of a part and to validate that the contents of a package have not been modified.  Packages also include a <xref:System.IO.Packaging.PackageRelationship> feature that allows additional information to be added to a package or associated with specific parts without actually modifying the content of existing parts.  Package services also support Microsoft Windows Rights Management (RM).  
+The <xref:System.IO.Packaging> APIs provide an efficient means to organize application data, document content, and related resources in a single container that is simple to access, portable, and easy to distribute. A ZIP file is an example of a <xref:System.IO.Packaging.Package> type capable of holding multiple objects as a single unit. The packaging APIs provide a default <xref:System.IO.Packaging.ZipPackage> implementation designed using an Open Packaging Conventions standard with XML and ZIP file architecture. The [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] packaging APIs make it simple to create packages, and to store and access objects within them. An object stored in a <xref:System.IO.Packaging.Package> is referred to as a <xref:System.IO.Packaging.PackagePart> ("part"). Packages can also include signed digital certificates that can be used to identify the originator of a part and to validate that the contents of a package have not been modified.  Packages also include a <xref:System.IO.Packaging.PackageRelationship> feature that allows additional information to be added to a package or associated with specific parts without actually modifying the content of existing parts.  Package services also support Microsoft Windows Rights Management (RM).  
   
- The [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] Package architecture serves as the foundation for a number of key technologies:  
+The [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] Package architecture serves as the foundation for a number of key technologies:  
   
 - XPS documents conforming to the XML Paper Specification (XPS).  
   
@@ -68,13 +68,13 @@ Besides adding text to documents, text can obviously be used in application UI s
   
 - Custom storage formats for your own application design.  
   
- Based on the packaging APIs, an <xref:System.Windows.Xps.Packaging.XpsDocument> is specifically designed for storing [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] fixed content documents. An <xref:System.Windows.Xps.Packaging.XpsDocument> is a self-contained document that can be opened in a viewer, displayed in a <xref:System.Windows.Controls.DocumentViewer> control, routed to a print spool, or output directly to an XPS-compatible printer.  
+Based on the packaging APIs, an <xref:System.Windows.Xps.Packaging.XpsDocument> is specifically designed for storing [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] fixed content documents. An <xref:System.Windows.Xps.Packaging.XpsDocument> is a self-contained document that can be opened  in a viewer, displayed in a <xref:System.Windows.Controls.DocumentViewer> control, routed to a print spool, or output directly to an XPS-compatible printer.  
   
- The following sections provide additional information on the <xref:System.IO.Packaging.Package> and <xref:System.Windows.Xps.Packaging.XpsDocument> APIs provided with [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)].  
+The following sections provide additional information on the <xref:System.IO.Packaging.Package> and <xref:System.Windows.Xps.Packaging.XpsDocument> APIs provided with [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)].  
   
 ### Package Components
 
- The [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] packaging APIs allow application data and documents to be organized into a single portable unit. A ZIP file is one of the most common types of packages and is the default package type provided with [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)].  <xref:System.IO.Packaging.Package> itself is an abstract class from which <xref:System.IO.Packaging.ZipPackage> is implemented using an open standard XML and ZIP file architecture.  The <xref:System.IO.Packaging.Package.Open%2A> method uses <xref:System.IO.Packaging.ZipPackage> to create and use ZIP files by default. A package can contain three basic types of items:  
+The [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] packaging APIs allow application data and documents to be organized into a single portable unit. A ZIP file is one of the most common types of packages and is the default package type provided with [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)].  <xref:System.IO.Packaging.Package> itself is an abstract class from which <xref:System.IO.Packaging.ZipPackage> is implemented using an open standard XML and ZIP file architecture.  The <xref:System.IO.Packaging.Package.Open%2A> method uses <xref:System.IO.Packaging.ZipPackage> to create and use ZIP files by default. A package can contain three basic types of items:  
   
 |Three Basic Items Type|Description|  
 |-|-|  
@@ -84,11 +84,11 @@ Besides adding text to documents, text can obviously be used in application UI s
   
 #### PackageParts
 
- A <xref:System.IO.Packaging.PackagePart> ("part") is an abstract class that refers to an object stored in a <xref:System.IO.Packaging.Package>. In a ZIP file, the package parts correspond to the individual files stored within the ZIP file.  <xref:System.IO.Packaging.ZipPackagePart> provides the default implementation for serializable objects stored in a <xref:System.IO.Packaging.ZipPackage>.  Like a file system, parts contained in the package are stored in hierarchical directory or "folder-style" organization.  Using the [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] packaging APIs, applications can write, store, and read multiple <xref:System.IO.Packaging.PackagePart> objects using a single ZIP file container.  
+A <xref:System.IO.Packaging.PackagePart> ("part") is an abstract class that refers to an object stored in a <xref:System.IO.Packaging.Package>. In a ZIP file, the package parts correspond to the individual files stored within the ZIP file.  <xref:System.IO.Packaging.ZipPackagePart> provides the default implementation for serializable objects stored in a <xref:System.IO.Packaging.ZipPackage>.  Like a file system, parts contained in the package are stored in hierarchical directory or "folder-style" organization.  Using the [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] packaging APIs, applications can write, store, and read multiple <xref:System.IO.Packaging.PackagePart> objects using a single ZIP file container.  
 
 #### PackageDigitalSignatures
   
- For security, a <xref:System.IO.Packaging.PackageDigitalSignature> ("digital signature") can be associated with parts within a package. A <xref:System.IO.Packaging.PackageDigitalSignature> incorporates a [509] that provides two features:  
+For security, a <xref:System.IO.Packaging.PackageDigitalSignature> ("digital signature") can be associated with parts within a package. A <xref:System.IO.Packaging.PackageDigitalSignature> incorporates a [509] that provides two features:  
   
 1. Identifies and authenticates the originator of the part.  
   
@@ -98,7 +98,7 @@ Besides adding text to documents, text can obviously be used in application UI s
   
 #### PackageRelationships
   
- A <xref:System.IO.Packaging.PackageRelationship> ("relationship") provides a mechanism for associating additional information with the package or a part within the package. A relationship is a package-level facility that can associate additional information with a part without modifying the actual part content. Inserting new data directly into the part content of is usually not practical in many cases:  
+A <xref:System.IO.Packaging.PackageRelationship> ("relationship") provides a mechanism for associating additional information with the package or a part within the package. A relationship is a package-level facility that can associate additional information with a part without modifying the actual part content. Inserting new data directly into the part content of is usually not practical in many cases:  
   
 - The actual type of the part and its content schema is not known.  
   
@@ -106,7 +106,7 @@ Besides adding text to documents, text can obviously be used in application UI s
   
 - The part might be digitally signed or encrypted, precluding any modification.  
   
- Package relationships provide a discoverable means for adding and associating additional information with individual parts or with the entire package. Package relationships are used for two primary functions:  
+Package relationships provide a discoverable means for adding and associating additional information with individual parts or with the entire package. Package relationships are used for two primary functions:  
   
 1. Defining dependency relationships from one part to another part.  
   
@@ -120,7 +120,7 @@ Dependency relationships are used to describe dependencies that one part makes t
 
 ##### Information Relationships 
 
- Similar to a note or annotation, a <xref:System.IO.Packaging.PackageRelationship> can also be used to store other types of information to be associated with a part without having to actually modify the part content itself.  
+Similar to a note or annotation, a <xref:System.IO.Packaging.PackageRelationship> can also be used to store other types of information to be associated with a part without having to actually modify the part content itself.  
   
 ## XPS Documents
 
