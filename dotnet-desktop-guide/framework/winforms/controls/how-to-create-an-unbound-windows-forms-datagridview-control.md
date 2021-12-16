@@ -1,7 +1,8 @@
 ---
 title: How to Create an Unbound Windows Forms DataGridView Control
 description: Populate an unbound Windows Forms DataGridView Control programmatically and display a small amount of data in a table format without binding it to a data source
-ms.date: "12/16/2017"
+ms.date: "12/16/2021"
+ms.custom: devdivchpfy22
 dev_langs: 
   - "csharp"
   - "vb"
@@ -25,8 +26,7 @@ For a complete explanation of this code example, see [Walkthrough: Creating an U
 ## Compiling the Code
 
 This example requires:  
-References to the System, System.Drawing, and System.Windows.Forms assemblies.  
-
+References to the System, System.Drawing, and System.Windows.Forms assemblies.
   
 ## See also
 
