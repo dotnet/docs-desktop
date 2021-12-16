@@ -16,12 +16,8 @@ ms.assetid: 6e8db7bc-050a-4070-aa72-bb8c46e87ff8
 ---
 # Documents in WPF
 
-<<<<<<< HEAD
-[!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] offers a wide range of document features that enable the creation of high-fidelity content that is designed to be more easily accessed and read than in previous generations of Windows. In addition to enhanced capabilities and quality, [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] also provides integrated services for document display, packaging, and security. This topic provides an introduction to [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] document types and document packaging.  
-=======
 [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] offers a wide range of document features that enable the creation of high-fidelity content that   is designed to be more easily accessed and read than in previous generations of Windows. 
 In addition to enhanced capabilities and quality, [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] also provides integrated services for document display, packaging, and security. This topic provides an introduction to [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] document types and document packaging. 
->>>>>>> 088fbd7855fb7189f989ea1700558a4a5e696ec7
 
 ## Types of Documents
   
@@ -33,11 +29,7 @@ By comparison, flow documents are designed to optimize viewing and readability a
   
 ## Document Controls and Text Layout
 
-<<<<<<< HEAD
- The .NET Framework provides a set of pre-built controls that simplify using fixed documents, flow documents, and general text within your application.  The display of fixed document content is supported using the <xref:System.Windows.Controls.DocumentViewer> control.  Display of flow document content is supported by three different controls: <xref:System.Windows.Controls.FlowDocumentReader>, <xref:System.Windows.Controls.FlowDocumentPageViewer>, and <xref:System.Windows.Controls.FlowDocumentScrollViewer> which map to different user scenarios (see sections below).  Other [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] controls provide simplified layout to support general text uses (see [Text in the User Interface](#text-in-the-user-interface), below).  
-=======
 The .NET Framework provides a set of pre-built controls that simplify using fixed documents, flow documents, and general text within your application.  The display of fixed document content is supported using the <xref:System.Windows.Controls.DocumentViewer> control.  Display of flow document content is supported by three different controls: <xref:System.Windows.Controls.FlowDocumentReader>, <xref:System.Windows.Controls.FlowDocumentPageViewer>, and <xref:System.Windows.Controls.FlowDocumentScrollViewer> which map to different user scenarios (see sections below).  Other [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] controls provide simplified layout to support general text uses (see [Text in the User Interface](#text-in-the-user-interface), below).  
->>>>>>> 088fbd7855fb7189f989ea1700558a4a5e696ec7
   
 ### Fixed Document Control - DocumentViewer
   
@@ -58,15 +50,11 @@ The <xref:System.Windows.Controls.DocumentViewer> control is designed to display
 
 <xref:System.Windows.Controls.FlowDocumentPageViewer> shows content in page-at-a-time viewing mode, while <xref:System.Windows.Controls.FlowDocumentScrollViewer> shows content in continuous scrolling mode.  Both <xref:System.Windows.Controls.FlowDocumentPageViewer> and <xref:System.Windows.Controls.FlowDocumentScrollViewer> are fixed to a particular viewing mode. Compare to <xref:System.Windows.Controls.FlowDocumentReader>, which includes features that enable the user to dynamically choose between various viewing modes (as provided by the <xref:System.Windows.Controls.FlowDocumentReaderViewingMode> enumeration), at the cost of being more resource intensive than <xref:System.Windows.Controls.FlowDocumentPageViewer> or <xref:System.Windows.Controls.FlowDocumentScrollViewer>.  
   
-<<<<<<< HEAD
- Besides adding text to documents, text can obviously be used in application UI such as forms. [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] includes multiple controls for drawing text to the screen. Each control is targeted to a different scenario and has its own list of features and limitations. In general, the <xref:System.Windows.Controls.TextBlock> element should be used when limited text support is required, such as a brief sentence in a [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)]. <xref:System.Windows.Controls.Label> can be used when minimal text support is required. For more information, see [TextBlock Overview](../controls/textblock-overview.md).
-=======
  By default, a vertical scrollbar is always shown, and a horizontal scrollbar becomes visible if needed. The default [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] for <xref:System.Windows.Controls.FlowDocumentScrollViewer> does not include a toolbar; however, the <xref:System.Windows.Controls.FlowDocumentScrollViewer.IsToolBarVisible%2A> property can be used to enable a built-in toolbar.
  
 ### Text in the User Interface
 
 Besides adding text to documents, text can obviously be used in application UI such as forms. [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] includes multiple controls for drawing text to the screen. Each control is targeted to a different scenario and has its own list of features and limitations. In general, the <xref:System.Windows.Controls.TextBlock> element should be used when limited text support is required, such as a brief sentence in a [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)]. <xref:System.Windows.Controls.Label> can be used when minimal text support is required. For more information, see [TextBlock Overview](../controls/textblock-overview.md).
->>>>>>> 088fbd7855fb7189f989ea1700558a4a5e696ec7
 
 ## Document Packaging
   
@@ -128,25 +116,15 @@ Package relationships provide a discoverable means for adding and associating ad
 
 ##### Dependency Relationships
   
-<<<<<<< HEAD
- Dependency relationships are used to describe dependencies that one part makes to other parts. For example, a package might contain an HTML part that includes one or more \<img> image tags. The image tags refer to images that are located either as other parts internal to the package or external to the package (such as accessible over the Internet). Creating a <xref:System.IO.Packaging.PackageRelationship> associated with HTML file makes discovering and accessing the dependent resources quick and easy. A browser or viewer application can directly access the part relationships and immediately begin assembling the dependent resources without knowing the schema or parsing the document.  
-  
-##### Information Relationships
-=======
 Dependency relationships are used to describe dependencies that one part makes to other parts. For example, a package might contain an HTML part that includes one or more \<img> image tags. The image tags refer to images that are located either as other parts internal to the package or external to the package (such as accessible over the Internet). Creating a <xref:System.IO.Packaging.PackageRelationship> associated with HTML file makes discovering and accessing the dependent resources quick and easy. A browser or viewer application can directly access the part relationships and immediately begin assembling the dependent resources without knowing the schema or parsing the document.
 
 ##### Information Relationships
 
 Similar to a note or annotation, a <xref:System.IO.Packaging.PackageRelationship> can also be used to store other types of information to be associated with a part without having to actually modify the part content itself.
->>>>>>> 088fbd7855fb7189f989ea1700558a4a5e696ec7
 
 ## XPS Documents
 
-<<<<<<< HEAD
- XML Paper Specification (XPS) document is a package that contains one or more fixed-documents along with all the resources and information required for rendering.  XPS is also the native Windows Vista print spool file format.  An <xref:System.Windows.Xps.Packaging.XpsDocument> is stored in standard ZIP dataset, and can include a combination of XML and binary components, such as image and font files. [PackageRelationships](#packagerelationships) are used to define the dependencies between the content and the resources required to fully render the document.  The <xref:System.Windows.Xps.Packaging.XpsDocument> design provides a single, high-fidelity document solution that supports multiple uses:  
-=======
 XML Paper Specification (XPS) document is a package that contains one or more fixed-documents along with all the resources and information required for rendering.  XPS is also the native Windows Vista print spool file format.  An <xref:System.Windows.Xps.Packaging.XpsDocument> is stored in standard ZIP dataset, and can include a combination of XML and binary components, such as image and font files. [PackageRelationships](#packagerelationships) are used to define the dependencies between the content and the resources required to fully render the document.  The <xref:System.Windows.Xps.Packaging.XpsDocument> design provides a single, high-fidelity document solution that supports multiple uses:  
->>>>>>> 088fbd7855fb7189f989ea1700558a4a5e696ec7
   
 - Reading, writing, and storing fixed-document content and resources as a single, portable, and easy-to-distribute file.  
   
