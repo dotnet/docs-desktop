@@ -16,8 +16,7 @@ ms.assetid: 6e8db7bc-050a-4070-aa72-bb8c46e87ff8
 ---
 # Documents in WPF
 
-[!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] offers a wide range of document features that enable the creation of high-fidelity content that is designed to be more easily accessed and read than in previous generations of Windows. In addition to enhanced capabilities and quality, [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] also provides integrated services for document display, packaging, and security. This topic provides an introduction to [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] document types and document packaging.  
-
+[!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] offers a wide range of document features that enable the creation of high-fidelity content that is designed to be more easily accessed and read than in previous generations of Windows. In addition to enhanced capabilities and quality, [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] also provides integrated services for document display, packaging, and security. This topic provides an introduction to [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] document types and document packaging. 
 
 ## Types of Documents
   
@@ -35,7 +34,7 @@ ms.assetid: 6e8db7bc-050a-4070-aa72-bb8c46e87ff8
   
  The <xref:System.Windows.Controls.DocumentViewer> control is designed to display <xref:System.Windows.Documents.FixedDocument> content. The <xref:System.Windows.Controls.DocumentViewer> control provides an intuitive user interface that provides built-in support for common operations including print output, copy to clipboard, zoom, and text search features. The control provides access to pages of content through a familiar scrolling mechanism. Like all [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] controls, <xref:System.Windows.Controls.DocumentViewer> supports complete or partial restyling, which enables the control to be visually integrated into virtually any application or environment.  
   
- <xref:System.Windows.Controls.DocumentViewer> is designed to display content in a read-only manner; editing or modification of content is not available and is not supported.  
+ <xref:System.Windows.Controls.DocumentViewer> is designed to display content in a read-only manner; editing or modification of content is not available and is not supported.
   
 ### Flow Document Controls  
 
