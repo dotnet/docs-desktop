@@ -1,14 +1,8 @@
 ---
 title: How to Create an Unbound Windows Forms DataGridView Control
-<<<<<<< HEAD
-description:  Create an unbound Windows Forms DataGridView Control. This control can display a small amount of data in a table format without binding it to a data source   
-
-=======
-
 description: Populate an unbound Windows Forms DataGridView Control programmatically and display a small amount of data in a table format without binding it to a data source
-   
->>>>>>> c37bd7c99bcd5b0a59d4f70aff94cab301d53a02
-ms.date: "03/30/2017"
+ms.date: "12/16/2021"
+ms.custom: devdivchpfy22
 dev_langs: 
   - "csharp"
   - "vb"
@@ -20,15 +14,9 @@ ms.assetid: b5d4b47d-9a28-4d88-9dba-0a3c90fba71d
 ---
 # How to: Create an Unbound Windows Forms DataGridView Control
 
-<<<<<<< HEAD
-The following code example demonstrates how to populate a <xref:System.Windows.Forms.DataGridView> control programmatically without binding it to a data source. This is useful when you have a small amount of data that you want to display in a table format.  
-  
-For a complete explanation of this code example, see [Walkthrough: Creating an Unbound Windows Forms DataGridView Control](walkthrough-creating-an-unbound-windows-forms-datagridview-control.md).  
-=======
 The following code example demonstrates how to populate a <xref:System.Windows.Forms.DataGridView> control programmatically without binding it to a data source. This is useful when you have a small amount of data that you want to display in a table format.
   
- For a complete explanation of this code example, see [Walkthrough: Creating an Unbound Windows Forms DataGridView Control](walkthrough-creating-an-unbound-windows-forms-datagridview-control.md).
->>>>>>> c37bd7c99bcd5b0a59d4f70aff94cab301d53a02
+For a complete explanation of this code example, see [Walkthrough: Creating an Unbound Windows Forms DataGridView Control](walkthrough-creating-an-unbound-windows-forms-datagridview-control.md).
   
 ## Example
   
@@ -37,15 +25,8 @@ The following code example demonstrates how to populate a <xref:System.Windows.F
   
 ## Compiling the Code
 
-<<<<<<< HEAD
 This example requires:  
-  
-References to the System, System.Drawing, and System.Windows.Forms assemblies.  
-=======
- This example requires:
-  
-- References to the System, System.Drawing, and System.Windows.Forms assemblies.
->>>>>>> c37bd7c99bcd5b0a59d4f70aff94cab301d53a02
+References to the System, System.Drawing, and System.Windows.Forms assemblies.
   
 ## See also
 

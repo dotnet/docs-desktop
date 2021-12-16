@@ -1,7 +1,8 @@
 ---
 title: Run Procedures at Set Intervals with Timer Component
 description: Learn how use the Windows Form Timer component to run procedures at set intervals or when a set time interval has elapsed.
-ms.date: "03/30/2017"
+ms.date: "12/16/2021"
+ms.custom: devdivchpfy22
 dev_langs: 
   - "csharp"
   - "vb"
