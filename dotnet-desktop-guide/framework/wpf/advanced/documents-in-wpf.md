@@ -16,7 +16,8 @@ ms.assetid: 6e8db7bc-050a-4070-aa72-bb8c46e87ff8
 ---
 # Documents in WPF
 
-[!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] offers a wide range of document features that enable the creation of high-fidelity content that   is designed to be more easily accessed and read than in previous generations of Windows. In addition to enhanced capabilities and quality, [!INCLUDE[TLA2#tla_winclient]  (../../../includes/tla2sharptla-winclient-md.md)] also provides integrated services for document display, packaging, and security. This topic provides an introduction to  [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] document types and document packaging. 
+  [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] offers a wide range of document features that enable the creation of high-fidelity content that   is designed to be more easily accessed and read than in previous generations of Windows. 
+  In addition to enhanced capabilities and quality, [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] also provides integrated services for         document display, packaging, and security. This topic provides an introduction to [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)]               document types and document packaging. 
 
 ## Types of Documents
   
@@ -75,7 +76,7 @@ Besides adding text to documents, text can obviously be used in application UI s
 
  The [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] packaging APIs allow application data and documents to be organized into a single portable unit. A ZIP file is one of the most common types of packages and is the default package type provided with [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)].  <xref:System.IO.Packaging.Package> itself is an abstract class from which <xref:System.IO.Packaging.ZipPackage> is implemented using an open standard XML and ZIP file architecture.  The <xref:System.IO.Packaging.Package.Open%2A> method uses <xref:System.IO.Packaging.ZipPackage> to create and use ZIP files by default. A package can contain three basic types of items:  
   
-|||  
+|Three Basic Items Type|Description|  
 |-|-|  
 |<xref:System.IO.Packaging.PackagePart>|Application content, data, documents, and resource files.|  
 |<xref:System.IO.Packaging.PackageDigitalSignature>|[X.509 Certificate] for identification, authentication and validation.|  
@@ -115,8 +116,8 @@ Besides adding text to documents, text can obviously be used in application UI s
 
 ##### Dependency Relationships
   
- Dependency relationships are used to describe dependencies that one part makes to other parts. For example, a package might contain an HTML part that includes one or more \<img> image tags. The image tags refer to images that are located either as other parts internal to the package or external to the package (such as accessible over the Internet). Creating a <xref:System.IO.Packaging.PackageRelationship> associated with HTML file makes discovering and accessing the dependent resources quick and easy. A browser or viewer application can directly access the part relationships and immediately begin assembling the dependent resources without knowing the schema or parsing the document.  
-  
+Dependency relationships are used to describe dependencies that one part makes to other parts. For example, a package might contain an HTML part that includes one or more \<img> image tags. The image tags refer to images that are located either as other parts internal to the package or external to the package (such as accessible over the Internet). Creating a <xref:System.IO.Packaging.PackageRelationship> associated with HTML file makes discovering and accessing the dependent resources quick and easy. A browser or viewer application can directly access the part relationships and immediately begin assembling the dependent resources without knowing the schema or parsing the document.
+
 ##### Information Relationships 
 
  Similar to a note or annotation, a <xref:System.IO.Packaging.PackageRelationship> can also be used to store other types of information to be associated with a part without having to actually modify the part content itself.  
