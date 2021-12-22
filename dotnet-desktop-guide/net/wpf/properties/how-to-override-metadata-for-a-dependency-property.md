@@ -16,6 +16,8 @@ helpviewer_keywords:
 
 When you derive from a class that defines a dependency property, you inherit the dependency property and its metadata. This article describes how you can override the metadata of an inherited dependency property by calling the <xref:System.Windows.DependencyProperty.OverrideMetadata%2A> method. Overriding the metadata lets you modify characteristics of the inherited dependency property to match subclass-specific requirements.
 
+[!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
+
 ## Background
 
 A class that defines a dependency property can specify its characteristics in <xref:System.Windows.PropertyMetadata> or one of its derived types, such as <xref:System.Windows.FrameworkPropertyMetadata>. One of those characteristics is the default value of a dependency property. Many classes that define dependency properties, specify property metadata during dependency property registration. When metadata isn't specified during registration, the WPF property system assigns a `PropertyMetadata` object with default values. Derived classes that inherit dependency properties through class inheritance have the option to override the original metadata of any dependency property. In this way, derived classes can selectively modify dependency property characteristics to meet class requirements. When calling <xref:System.Windows.DependencyProperty.OverrideMetadata(System.Type,System.Windows.PropertyMetadata)>, a derived class specifies its own type as the first parameter, and a metadata instance as the second parameter.
