@@ -1,6 +1,6 @@
 ---
 title: "Matrix Representation of Transformations"
-description: Describes matrix representation of transformations such as linear transformation and composite transformations in matrices
+description: Describes matrix representation of transformations such as linear transformations and composite transformations in matrices
 ms.date: "03/30/2017"
 ms.custom: devdivchpfy22
 dev_langs: 
@@ -29,7 +29,7 @@ An m×n matrix is a set of numbers arranged in m rows and n columns. The followi
   
  ![Transformations-art05](./media/aboutgdip05-art05.gif "AboutGdip05_art05")
   
- You can multiply an m×n matrix with an n×p matrix, and the result is an m×p matrix. The number of columns in the first matrix must be the same as the number of rows in the second matrix. For example, a 4×2 matrix can be multiplied by a 2×3 matrix to produce a 4×3 matrix.
+ You can multiply an m×n matrix with an n×p matrix, and the result is an m×p matrix. The number of columns in the first matrix must be the same as the number of rows in the second matrix. For example, you can multiply a 4×2 matrix with a 2×3 matrix to produce a 4×3 matrix.
   
  Points in the plane and rows and columns of a matrix can be thought of as vectors. For example, (2, 5) is a vector with two components, and (3, 7, 1) is a vector with three components. The dot product of two vectors is defined as follows:
   
@@ -51,7 +51,7 @@ An m×n matrix is a set of numbers arranged in m rows and n columns. The followi
   
  ![Transformations-art07](./media/aboutgdip05-art07.gif "AboutGdip05_art07")
   
- All of the transformations shown in the preceding figure are linear transformations. Certain other transformations, such as translation, aren't linear, and can't be expressed as multiplication by a 2×2 matrix. Suppose you want to start with the point (2, 1), rotate it 90 degrees, translate it 3 units in the x direction, and translate it 4 units in the y direction. You can accomplish this by using a matrix multiplication followed by a matrix addition.  
+ All of the transformations shown in the preceding figure are linear transformations. Certain other transformations, such as translation, aren't linear, and can't be expressed as multiplication by a 2×2 matrix. Assume that you want to start with the point (2, 1), rotate it 90 degrees, translate it 3 units in the x direction, and translate it 4 units in the y direction. You can accomplish this by using a matrix multiplication followed by a matrix addition.  
   
  ![Transformations-art08](./media/aboutgdip05-art08.gif "AboutGdip05_art08")
   
@@ -75,7 +75,7 @@ An m×n matrix is a set of numbers arranged in m rows and n columns. The followi
 |Matrix B|Scale by a factor of 2 in the x direction|
 |Matrix C|Translate 3 units in the y direction|
   
- If we start with the point (2, 1) — represented by the matrix [2 1 1] — and multiply by A, then B, then C, the point (2, 1) will undergo the three transformations in the order listed.
+ If you start with the point (2, 1) — represented by the matrix [2 1 1] — and multiply by A, then B, then C, the point (2, 1) will undergo the three transformations in the order listed.
   
  [2 1 1]ABC = [-2 5 1]
   
