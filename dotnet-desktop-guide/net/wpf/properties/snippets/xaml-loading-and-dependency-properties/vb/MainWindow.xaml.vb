@@ -24,8 +24,7 @@
     Public Class Aquarium
         Inherits DependencyObject
 
-        '<RegisterDependencyPropertyWithWrapper>
-        '<RegisterDependencyProperty>
+        '<DependencyPropertyWithWrapper>
         ' Register a dependency property with the specified property name,
         ' property type, owner type, and property metadata. Store the dependency
         ' property identifier as a public static readonly member of the class.
@@ -38,9 +37,8 @@
                     defaultValue:=New Uri("http://www.contoso.com/aquarium-graphic.jpg"),
                     flags:=FrameworkPropertyMetadataOptions.AffectsRender,
                     propertyChangedCallback:=New PropertyChangedCallback(AddressOf OnUriChanged)))
-        '</RegisterDependencyProperty>
 
-        ' Declare a read-write property wrapper.
+        ' Property wrapper with get & set accessors.
         Public Property AquariumGraphic As Uri
             Get
                 Return CType(GetValue(AquariumGraphicProperty), Uri)
@@ -49,7 +47,7 @@
                 SetValue(AquariumGraphicProperty, Value)
             End Set
         End Property
-        '</RegisterDependencyPropertyWithWrapper>
+        '</DependencyPropertyWithWrapper>
 
         Private Shared Sub OnUriChanged(dependencyObject As DependencyObject, e As DependencyPropertyChangedEventArgs)
             Dim value As Uri = CType(dependencyObject.GetValue(AquariumGraphicProperty), Uri)

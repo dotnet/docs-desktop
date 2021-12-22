@@ -26,8 +26,7 @@ namespace CodeSampleCsharp
 
     public class Aquarium : DependencyObject
     {
-        //<RegisterDependencyPropertyWithWrapper>
-        //<RegisterDependencyProperty>
+        //<DependencyPropertyWithWrapper>
         // Register a dependency property with the specified property name,
         // property type, owner type, and property metadata. Store the dependency
         // property identifier as a public static readonly member of the class.
@@ -41,15 +40,14 @@ namespace CodeSampleCsharp
                   flags: FrameworkPropertyMetadataOptions.AffectsRender,
                   propertyChangedCallback: new PropertyChangedCallback(OnUriChanged))
             );
-        //</RegisterDependencyProperty>
 
-        // Declare a read-write property wrapper.
+        // Property wrapper with get & set accessors.
         public Uri AquariumGraphic
         {
             get => (Uri)GetValue(AquariumGraphicProperty);
             set => SetValue(AquariumGraphicProperty, value);
         }
-        //</RegisterDependencyPropertyWithWrapper>
+        //</DependencyPropertyWithWrapper>
 
         private static void OnUriChanged(DependencyObject dependencyObject, DependencyPropertyChangedEventArgs e)
         {
