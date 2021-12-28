@@ -1,6 +1,8 @@
 ---
 title: "Matrix Representation of Transformations"
+description: Describes matrix representation of transformations such as linear transformations and composite transformations in matrices
 ms.date: "03/30/2017"
+ms.custom: devdivchpfy22
 dev_langs: 
   - "csharp"
   - "vb"
@@ -18,13 +20,14 @@ helpviewer_keywords:
 ms.assetid: 0659fe00-9e0c-41c4-9118-016f2404c905
 ---
 # Matrix Representation of Transformations
+
 An m×n matrix is a set of numbers arranged in m rows and n columns. The following illustration shows several matrices.  
   
- ![Transformations](./media/aboutgdip05-art04.gif "AboutGdip05_art04")  
+ ![Transformations-art-04](./media/aboutgdip05-art04.gif "AboutGdip05_art04")  
   
  You can add two matrices of the same size by adding individual elements. The following illustration shows two examples of matrix addition.  
   
- ![Transformations](./media/aboutgdip05-art05.gif "AboutGdip05_art05")  
+ ![Transformations-art-05](./media/aboutgdip05-art05.gif "AboutGdip05_art05")  
   
  An m×n matrix can be multiplied by an n×p matrix, and the result is an m×p matrix. The number of columns in the first matrix must be the same as the number of rows in the second matrix. For example, a 4×2 matrix can be multiplied by a 2×3 matrix to produce a 4×3 matrix.  
   
@@ -42,30 +45,31 @@ An m×n matrix is a set of numbers arranged in m rows and n columns. The followi
   
  The following illustration shows several examples of matrix multiplication.  
   
- ![Transformations](./media/aboutgdip05-art06.gif "AboutGdip05_art06")  
+ ![Transformations-art-06](./media/aboutgdip05-art06.gif "AboutGdip05_art06")  
   
  If you think of a point in a plane as a 1×2 matrix, you can transform that point by multiplying it by a 2×2 matrix. The following illustration shows several transformations applied to the point (2, 1).  
   
- ![Transformations](./media/aboutgdip05-art07.gif "AboutGdip05_art07")  
+ ![Transformations-art-07](./media/aboutgdip05-art07.gif "AboutGdip05_art07")  
   
  All of the transformations shown in the preceding figure are linear transformations. Certain other transformations, such as translation, are not linear, and cannot be expressed as multiplication by a 2×2 matrix. Suppose you want to start with the point (2, 1), rotate it 90 degrees, translate it 3 units in the x direction, and translate it 4 units in the y direction. You can accomplish this by using a matrix multiplication followed by a matrix addition.  
   
- ![Transformations](./media/aboutgdip05-art08.gif "AboutGdip05_art08")  
+ ![Transformations-art-08](./media/aboutgdip05-art08.gif "AboutGdip05_art08")  
   
  A linear transformation (multiplication by a 2×2 matrix) followed by a translation (addition of a 1×2 matrix) is called an affine transformation. An alternative to storing an affine transformation in a pair of matrices (one for the linear part and one for the translation) is to store the entire transformation in a 3×3 matrix. To make this work, a point in the plane must be stored in a 1×3 matrix with a dummy 3rd coordinate. The usual technique is to make all 3rd coordinates equal to 1. For example, the point (2, 1) is represented by the matrix [2 1 1]. The following illustration shows an affine transformation (rotate 90 degrees; translate 3 units in the x direction, 4 units in the y direction) expressed as multiplication by a single 3×3 matrix.  
   
- ![Transformations](./media/aboutgdip05-art09.gif "AboutGdip05_art09")  
+ ![Transformations-art-09](./media/aboutgdip05-art09.gif "AboutGdip05_art09")  
   
  In the preceding example, the point (2, 1) is mapped to the point (2, 6). Note that the third column of the 3×3 matrix contains the numbers 0, 0, 1. This will always be the case for the 3×3 matrix of an affine transformation. The important numbers are the six numbers in columns 1 and 2. The upper-left 2×2 portion of the matrix represents the linear part of the transformation, and the first two entries in the 3rd row represent the translation.  
   
- ![Transformations](./media/aboutgdip05-art10.gif "AboutGdip05_art10")  
+ ![Transformations-art-10](./media/aboutgdip05-art10.gif "AboutGdip05_art10")  
   
  In GDI+ you can store an affine transformation in a <xref:System.Drawing.Drawing2D.Matrix> object. Because the third column of a matrix that represents an affine transformation is always (0, 0, 1), you specify only the six numbers in the first two columns when you construct a <xref:System.Drawing.Drawing2D.Matrix> object. The statement `Matrix myMatrix = new Matrix(0, 1, -1, 0, 3, 4)` constructs the matrix shown in the preceding figure.  
   
-## Composite Transformations  
+## Composite Transformations
+  
  A composite transformation is a sequence of transformations, one followed by the other. Consider the matrices and transformations in the following list:  
   
-|||  
+|Name of Matrix|List of Composite Transformations|  
 |-|-|  
 |Matrix A|Rotate 90 degrees|  
 |Matrix B|Scale by a factor of 2 in the x direction|  
@@ -81,7 +85,7 @@ An m×n matrix is a set of numbers arranged in m rows and n columns. The followi
   
  The following illustration shows the matrices A, B, C, and D.  
   
- ![Transformations](./media/aboutgdip05-art12.gif "AboutGdip05_art12")  
+ ![Transformations-art-12](./media/aboutgdip05-art12.gif "AboutGdip05_art12")  
   
  The fact that the matrix of a composite transformation can be formed by multiplying the individual transformation matrices means that any sequence of affine transformations can be stored in a single <xref:System.Drawing.Drawing2D.Matrix> object.  
   
@@ -95,7 +99,7 @@ An m×n matrix is a set of numbers arranged in m rows and n columns. The followi
   
  The following illustration shows the matrix.  
   
- ![Transformations](./media/aboutgdip05-art13.gif "AboutGdip05_art13")  
+ ![Transformations-art-13](./media/aboutgdip05-art13.gif "AboutGdip05_art13")  
   
 ## See also
 
