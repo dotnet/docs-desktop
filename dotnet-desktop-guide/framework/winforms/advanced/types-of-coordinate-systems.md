@@ -2,7 +2,6 @@
 title: "Types of Coordinate Systems"
 description: Describes the types of coordinate systems for the world, page, and device. Explains about various transformations with coordinate systems
 ms.date: "03/30/2017"
-ms.custom: devdivchpfy22
 ms.topic: overview
 dev_langs: 
   - "csharp"
