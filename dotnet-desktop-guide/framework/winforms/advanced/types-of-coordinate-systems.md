@@ -1,6 +1,8 @@
 ---
 title: "Types of Coordinate Systems"
+description: Describes the types of coordinate systems for the world, page, and device spaces. Explains about various transformations with coordinate systems
 ms.date: "03/30/2017"
+ms.custom: devdivchpfy22
 ms.topic: overview
 dev_langs: 
   - "csharp"
@@ -18,20 +20,22 @@ helpviewer_keywords:
 ms.assetid: c61ff50a-eb1d-4e6c-83cd-f7e9764cfa9f
 ---
 # Types of Coordinate Systems
+
 GDI+ uses three coordinate spaces: world, page, and device. World coordinates are the coordinates used to model a particular graphic world and are the coordinates you pass to methods in the .NET Framework. Page coordinates refer to the coordinate system used by a drawing surface, such as a form or control. Device coordinates are the coordinates used by the physical device being drawn on, such as a screen or sheet of paper. When you make the call `myGraphics.DrawLine(myPen, 0, 0, 160, 80)`, the points that you pass to the <xref:System.Drawing.Graphics.DrawLine%2A> method—`(0, 0)` and `(160, 80)`—are in the world coordinate space. Before GDI+ can draw the line on the screen, the coordinates pass through a sequence of transformations. One transformation, called the world transformation, converts world coordinates to page coordinates, and another transformation, called the page transformation, converts page coordinates to device coordinates.  
   
-## Transforms and Coordinate Systems  
+## Transforms and Coordinate Systems
+  
  Suppose you want to work with a coordinate system that has its origin in the body of the client area rather than the upper-left corner. Say, for example, that you want the origin to be 100 pixels from the left edge of the client area and 50 pixels from the top of the client area. The following illustration shows such a coordinate system.  
   
- ![Coordinate System](./media/aboutgdip05-art01.gif "AboutGdip05_art01")  
+ ![Coordinate System-art-01](./media/aboutgdip05-art01.gif "AboutGdip05_art01")  
   
  When you make the call `myGraphics.DrawLine(myPen, 0, 0, 160, 80)`, you get the line shown in the following illustration.  
   
- ![Coordinate System](./media/aboutgdip05-art02.gif "AboutGdip05_art02")  
+ ![Coordinate System-art-02](./media/aboutgdip05-art02.gif "AboutGdip05_art02")  
   
  The coordinates of the endpoints of your line in the three coordinate spaces are as follows:  
   
-|||  
+|Coordinate Systems Types|Coordinates of the Endpoints|  
 |-|-|  
 |World|(0, 0) to (160, 80)|  
 |Page|(100, 50) to (260, 130)|  
@@ -64,7 +68,7 @@ GDI+ uses three coordinate spaces: world, page, and device. World coordinates ar
   
  If we assume that the display device has 96 dots per inch in the horizontal direction and 96 dots per inch in the vertical direction, the endpoints of the line in the preceding example have the following coordinates in the three coordinate spaces:  
   
-|||  
+|Coordinate Systems Types|Coordinates of the Endpoints|  
 |-|-|  
 |World|(0, 0) to (2, 1)|  
 |Page|(0, 0) to (2, 1)|  
@@ -79,11 +83,11 @@ GDI+ uses three coordinate spaces: world, page, and device. World coordinates ar
   
  The following illustration shows the line and coordinate system.  
   
- ![Coordinate System](./media/aboutgdip05-art03.gif "AboutGdip05_art03")  
+ ![Coordinate System-art-03](./media/aboutgdip05-art03.gif "AboutGdip05_art03")  
   
  If we assume that the display device has 96 dots per inch in the horizontal direction and 96 dots per inch in the vertical direction, the endpoints of the line in the preceding example have the following coordinates in the three coordinate spaces:  
   
-|||  
+|Coordinate Systems Types|Coordinates of the Endpoints|  
 |-|-|  
 |World|(0, 0) to (2, 1)|  
 |Page|(2, 0.5) to (4, 1.5)|  
