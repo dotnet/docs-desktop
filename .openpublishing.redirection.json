@@ -588,6 +588,14 @@
         {
             "source_path": "dotnet-desktop-guide/framework/wpf/properties/safe-constructor-patterns-for-dependencyobjects.md",
             "redirect_url": "/dotnet/desktop/wpf/advanced/safe-constructor-patterns-for-dependencyobjects?view=netframeworkdesktop-4.8"
+        },
+        {
+          "source_path": "dotnet-desktop-guide/net/wpf/advanced/property-value-inheritance.md",
+          "redirect_url": "/dotnet/desktop/wpf/properties/property-value-inheritance?view=netdesktop-6.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/properties/property-value-inheritance.md",
+            "redirect_url": "/dotnet/desktop/wpf/advanced/property-value-inheritance?view=netframeworkdesktop-4.8"
         }
     ]
 }
