@@ -1,6 +1,5 @@
 ---
 title: "Matrix Representation of Transformations"
-description: Describes a linear transformation, an affine transformation, and a composite transformation using matrices.
 ms.date: "03/30/2017"
 ms.custom: devdivchpfy22
 dev_langs: 
