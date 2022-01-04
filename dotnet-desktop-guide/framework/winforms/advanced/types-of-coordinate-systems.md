@@ -1,6 +1,5 @@
 ---
 title: "Types of Coordinate Systems"
-description: Describes three types of coordinate systems and transformations that happen in the world, page, and device coordinate systems types.
 ms.date: "03/30/2017"
 ms.custom: devdivchpfy22
 ms.topic: overview 
