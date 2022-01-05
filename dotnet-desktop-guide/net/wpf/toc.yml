@@ -100,6 +100,8 @@ items:
       href: properties/framework-property-metadata.md
     - name: Dependency property security
       href: properties/dependency-property-security.md
+    - name: Safe constructor patterns for DependencyObjects
+      href: properties/safe-constructor-patterns-for-dependencyobjects.md
     - name: Common tasks
       items:
       - name: Implement a dependency property
