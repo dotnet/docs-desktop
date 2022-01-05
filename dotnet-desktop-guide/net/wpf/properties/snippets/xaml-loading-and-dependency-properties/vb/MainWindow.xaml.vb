@@ -47,12 +47,15 @@
                 SetValue(AquariumGraphicProperty, Value)
             End Set
         End Property
-        '</DependencyPropertyWithWrapper>
 
-        Private Shared Sub OnUriChanged(dependencyObject As DependencyObject, e As DependencyPropertyChangedEventArgs)
-            Dim value As Uri = CType(dependencyObject.GetValue(AquariumGraphicProperty), Uri)
-            Debug.WriteLine($"OnUriChanged: {value}")
+        ' Property-changed callback.
+        Private Shared Sub OnUriChanged(dependencyObject As DependencyObject,
+                                        e As DependencyPropertyChangedEventArgs)
+            ' Some custom logic that runs on effective property value change.
+            Dim newValue As Uri = CType(dependencyObject.GetValue(AquariumGraphicProperty), Uri)
+            Debug.WriteLine($"OnUriChanged: {newValue}")
         End Sub
+        '</DependencyPropertyWithWrapper>
 
     End Class
 

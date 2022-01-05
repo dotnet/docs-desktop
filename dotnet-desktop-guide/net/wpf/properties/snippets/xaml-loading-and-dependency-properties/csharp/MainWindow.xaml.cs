@@ -47,12 +47,15 @@ namespace CodeSampleCsharp
             get => (Uri)GetValue(AquariumGraphicProperty);
             set => SetValue(AquariumGraphicProperty, value);
         }
-        //</DependencyPropertyWithWrapper>
 
-        private static void OnUriChanged(DependencyObject dependencyObject, DependencyPropertyChangedEventArgs e)
+        // Property-changed callback.
+        private static void OnUriChanged(DependencyObject dependencyObject, 
+            DependencyPropertyChangedEventArgs e)
         {
-            Uri value = (Uri)dependencyObject.GetValue(AquariumGraphicProperty);
-            Debug.WriteLine($"OnUriChanged: {value}");
+            // Some custom logic that runs on effective property value change.
+            Uri newValue = (Uri)dependencyObject.GetValue(AquariumGraphicProperty);
+            Debug.WriteLine($"OnUriChanged: {newValue}");
         }
+        //</DependencyPropertyWithWrapper>
     }
 }

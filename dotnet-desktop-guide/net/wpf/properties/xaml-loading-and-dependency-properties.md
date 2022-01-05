@@ -40,7 +40,7 @@ Similarly, aspects of the WPF XAML processor that get property values bypass the
 
 ## Dependency property with wrapper example
 
-The following example shows a recommended dependency property definition with property wrappers. The dependency property identifier is stored as a `public static readonly` field, and the `get` and `set` accessors contain no code beyond the necessary WPF property system methods that back the dependency property value.
+The following example shows a recommended dependency property definition with property wrappers. The dependency property identifier is stored as a `public static readonly` field, and the `get` and `set` accessors contain no code beyond the necessary WPF property system methods that back the dependency property value. If you have code that needs to run when the value of your dependency property changes, consider putting that code in the <xref:System.Windows.PropertyChangedCallback> for your dependency property. For more information, see [Property-changed callbacks](/dotnet/desktop/wpf/properties/dependency-property-callbacks-and-validation?preserve-view=true#property-changed-callbacks).
 
 :::code language="csharp" source="./snippets/xaml-loading-and-dependency-properties/csharp/MainWindow.xaml.cs" id="DependencyPropertyWithWrapper":::
 :::code language="vb" source="./snippets/xaml-loading-and-dependency-properties/vb/MainWindow.xaml.vb" id="DependencyPropertyWithWrapper":::
