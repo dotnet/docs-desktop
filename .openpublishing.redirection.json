@@ -580,6 +580,14 @@
         {
             "source_path": "dotnet-desktop-guide/framework/wpf/properties/dependency-property-security.md",
             "redirect_url": "/dotnet/desktop/wpf/advanced/dependency-property-security?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/advanced/safe-constructor-patterns-for-dependencyobjects.md",
+            "redirect_url": "/dotnet/desktop/wpf/properties/safe-constructor-patterns-for-dependencyobjects?view=netdesktop-6.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/properties/safe-constructor-patterns-for-dependencyobjects.md",
+            "redirect_url": "/dotnet/desktop/wpf/advanced/safe-constructor-patterns-for-dependencyobjects?view=netframeworkdesktop-4.8"
         }
     ]
 }
