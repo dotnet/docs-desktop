@@ -102,6 +102,8 @@ items:
       href: properties/dependency-property-security.md
     - name: Safe constructor patterns for DependencyObjects
       href: properties/safe-constructor-patterns-for-dependencyobjects.md
+    - name: Property value inheritance
+      href: properties/property-value-inheritance.md
     - name: XAML loading and dependency properties
       href: properties/xaml-loading-and-dependency-properties.md
     - name: Common tasks
