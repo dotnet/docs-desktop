@@ -1,5 +1,6 @@
 ---
 title: "Types of Coordinate Systems"
+description: Describes how the three coordinate systems such as world, page, and device coordinate systems pass through a sequence of transformations..  
 ms.date: "03/30/2017"
 ms.custom: devdivchpfy22
 ms.topic: overview 
@@ -26,11 +27,11 @@ GDI+ uses three coordinate spaces: world, page, and device. World coordinates ar
   
  Suppose you want to work with a coordinate system that has its origin in the body of the client area rather than the upper-left corner. Say, for example, that you want the origin to be 100 pixels from the left edge of the client area and 50 pixels from the top of the client area. The following illustration shows such a coordinate system.  
   
- ![An-illustration-of-a-coordinate-system-in-pixels](./media/aboutgdip05-art01.gif "AboutGdip05_art01")  
+ ![An-illustration-of-a-coordinate-system-in-pixels.](./media/aboutgdip05-art01.gif "AboutGdip05_art01")  
   
  When you make the call `myGraphics.DrawLine(myPen, 0, 0, 160, 80)`, you get the line shown in the following illustration.  
   
- ![An-illustration-of-a-line-drawn-in-a-coordinate-system-in-pixels](./media/aboutgdip05-art02.gif "AboutGdip05_art02")  
+ ![An-illustration-of-a-line-drawn-in-a-coordinate-system-in-pixels.](./media/aboutgdip05-art02.gif "AboutGdip05_art02")  
   
  The coordinates of the endpoints of your line in the three coordinate spaces are as follows:  
   
@@ -82,7 +83,7 @@ GDI+ uses three coordinate spaces: world, page, and device. World coordinates ar
   
  The following illustration shows the line and coordinate system.  
   
- ![An-illustration-of-a-line-drawn-in-a-coordinate-system-in-inches](./media/aboutgdip05-art03.gif "AboutGdip05_art03")  
+ ![An-illustration-of-a-line-drawn-in-a-coordinate-system-in-inches.](./media/aboutgdip05-art03.gif "AboutGdip05_art03")  
   
  If we assume that the display device has 96 dots per inch in the horizontal direction and 96 dots per inch in the vertical direction, the endpoints of the line in the preceding example have the following coordinates in the three coordinate spaces:  
   
