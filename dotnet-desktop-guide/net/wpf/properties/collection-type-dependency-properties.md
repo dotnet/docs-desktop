@@ -17,6 +17,12 @@ helpviewer_keywords:
 
 This article provides guidance and suggested patterns for implementing a dependency property that's a collection type.
 
+[!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
+
+## Prerequisites
+
+The article assumes a basic knowledge of dependency properties, and that you've read [Dependency properties overview](dependency-properties-overview.md). To follow the examples in this article, it helps if you're familiar with Extensible Application Markup Language (XAML) and know how to write WPF applications.
+
 ## Implement a collection-type dependency property
 
 In general, the implementation pattern for a dependency property is a CLR property wrapper backed by a <xref:System.Windows.DependencyProperty> identifier instead of a field or other construct. You can follow the same pattern when you implement a collection-type dependency property. The pattern is more complex if the collection element type is a <xref:System.Windows.DependencyObject> or a <xref:System.Windows.Freezable> derived class.
