@@ -1,5 +1,5 @@
 ﻿<Window x:Class="CodeSampleVb.MainWindow"
-    xmlns:local="clr-namespace:CodeSampleVb"
+    xmlns:local="clr-namespace:CodeSampleVb.CodeSampleVb"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Property value inheritance" Height="200" Width="400" Background="Yellow">
@@ -18,11 +18,11 @@
         </Canvas>
         <!--</XamlElementTree>-->
 
-        <!--local:Canvas_AllowDropInheritDisabled x:Name="canvas11" Grid.Column="1" Margin="20" Background="Orange" AllowDrop="True">
+        <local:Canvas_AllowDropInheritDisabled Grid.Column="1" Margin="20" Background="Orange" AllowDrop="True">
             <StackPanel Name="stackPanel11" Margin="20" Background="Green">
                 <Label Name="label11" Margin="20" Height="40" Width="40" Background="Blue"/>
             </StackPanel>
-        </local:Canvas_AllowDropInheritDisabled-->
+        </local:Canvas_AllowDropInheritDisabled>
 
     </Grid>
 

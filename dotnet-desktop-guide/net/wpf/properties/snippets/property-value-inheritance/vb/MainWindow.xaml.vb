@@ -24,13 +24,13 @@
             Debug.Assert(label1.AllowDrop = True)
 
             ' Test disabled property value inheritance.
-            'Dim fpm11 As FrameworkPropertyMetadata =
-            '    CType(AllowDropProperty.
-            '    GetMetadata(GetType(Canvas_AllowDropInheritDisabled)), FrameworkPropertyMetadata)
-            'Debug.Assert(fpm11.[Inherits] = False)
-            'Debug.Assert(canvas11.AllowDrop = True)
-            'Debug.Assert(stackPanel11.AllowDrop = False)
-            'Debug.Assert(label11.AllowDrop = False)
+            Dim fpm11 As FrameworkPropertyMetadata =
+                CType(AllowDropProperty.
+                GetMetadata(GetType(Canvas_AllowDropInheritDisabled)), FrameworkPropertyMetadata)
+            Debug.Assert(fpm11.[Inherits] = False)
+            ' Debug.Assert(canvas11.AllowDrop = True)
+            Debug.Assert(stackPanel11.AllowDrop = False)
+            Debug.Assert(label11.AllowDrop = False)
         End Sub
 
         Private Shared Sub TestAllowDropInheritanceInCode()
