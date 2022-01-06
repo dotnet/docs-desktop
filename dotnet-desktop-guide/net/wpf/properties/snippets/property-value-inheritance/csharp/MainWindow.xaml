@@ -1,0 +1,29 @@
+﻿<Window x:Class="CodeSampleCsharp.MainWindow"
+    xmlns:local="clr-namespace:CodeSampleCsharp"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Property value inheritance" Height="200" Width="400" Background="Yellow">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="260*"></ColumnDefinition>
+            <ColumnDefinition Width="260*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <!--<XamlElementTree>-->
+        <Canvas x:Name="canvas1" Grid.Column="0" Margin="20" Background="Orange" AllowDrop="True">
+            <StackPanel Name="stackPanel1" Margin="20" Background="Green">
+                <Label Name="label1" Margin="20" Height="40" Width="40" Background="Blue"/>
+            </StackPanel>
+        </Canvas>
+        <!--</XamlElementTree>-->
+
+        <local:Canvas_AllowDropInheritDisabled x:Name="canvas11" Grid.Column="1" Margin="20" Background="Orange" AllowDrop="True">
+            <StackPanel Name="stackPanel11" Margin="20" Background="Green">
+                <Label Name="label11" Margin="20" Height="40" Width="40" Background="Blue"/>
+            </StackPanel>
+        </local:Canvas_AllowDropInheritDisabled>
+
+    </Grid>
+
+</Window>

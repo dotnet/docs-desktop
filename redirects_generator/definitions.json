@@ -395,6 +395,14 @@
             "SourceUrl": "/dotnet/desktop/wpf/advanced/safe-constructor-patterns-for-dependencyobjects?view=netframeworkdesktop-4.8",
             "TargetUrl": "/dotnet/desktop/wpf/properties/safe-constructor-patterns-for-dependencyobjects?view=netdesktop-6.0"
         },
+        {
+            "SourceUrl": "/dotnet/desktop/wpf/advanced/property-value-inheritance?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/wpf/properties/property-value-inheritance?view=netdesktop-6.0"
+        },
+        {
+            "SourceUrl": "/dotnet/desktop/wpf/advanced/xaml-loading-and-dependency-properties?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/wpf/properties/xaml-loading-and-dependency-properties?view=netdesktop-6.0"
+        },
 
         // Systems - XAML
         {
