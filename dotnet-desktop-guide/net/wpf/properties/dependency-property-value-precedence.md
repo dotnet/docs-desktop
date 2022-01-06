@@ -14,6 +14,8 @@ helpviewer_keywords:
 
 The workings of the Windows Presentation Foundation (WPF) property system affect the value of a dependency property. This article explains how the precedence of different property-based inputs within the WPF property system determines the effective value of a dependency property.
 
+[!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
+
 ## Prerequisites
 
 The article assumes a basic knowledge of dependency properties, and that you've read [Dependency properties overview](dependency-properties-overview.md). To follow the examples in this article, it helps if you're familiar with Extensible Application Markup Language (XAML) and know how to write WPF applications.
