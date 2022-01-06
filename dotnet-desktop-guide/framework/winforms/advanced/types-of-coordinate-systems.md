@@ -1,6 +1,7 @@
 ---
 title: "Types of Coordinate Systems"
-ms.date: "03/30/2017"
+ms.date: "01/06/2022"
+ms.custom: devdivchpfy22
 ms.topic: overview
 dev_langs: 
   - "csharp"
@@ -31,8 +32,8 @@ GDI+ uses three coordinate spaces: world, page, and device. World coordinates ar
   
  The coordinates of the endpoints of your line in the three coordinate spaces are as follows:  
   
-|||  
-|-|-|  
+| Coordinate space | Endpoint coordinates |  
+|------------------|----------------------|  
 |World|(0, 0) to (160, 80)|  
 |Page|(100, 50) to (260, 130)|  
 |Device|(100, 50) to (260, 130)|  
@@ -64,8 +65,8 @@ GDI+ uses three coordinate spaces: world, page, and device. World coordinates ar
   
  If we assume that the display device has 96 dots per inch in the horizontal direction and 96 dots per inch in the vertical direction, the endpoints of the line in the preceding example have the following coordinates in the three coordinate spaces:  
   
-|||  
-|-|-|  
+| Coordinate space | Endpoint coordinates |  
+|------------------|----------------------|  
 |World|(0, 0) to (2, 1)|  
 |Page|(0, 0) to (2, 1)|  
 |Device|(0, 0) to (192, 96)|  
@@ -83,8 +84,8 @@ GDI+ uses three coordinate spaces: world, page, and device. World coordinates ar
   
  If we assume that the display device has 96 dots per inch in the horizontal direction and 96 dots per inch in the vertical direction, the endpoints of the line in the preceding example have the following coordinates in the three coordinate spaces:  
   
-|||  
-|-|-|  
+|Coordinate space | Endpoint coordinates |  
+|-----------------|----------------------|  
 |World|(0, 0) to (2, 1)|  
 |Page|(2, 0.5) to (4, 1.5)|  
 |Device|(192, 48) to (384, 144)|  

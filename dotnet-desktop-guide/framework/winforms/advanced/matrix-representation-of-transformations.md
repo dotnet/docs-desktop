@@ -1,6 +1,7 @@
 ---
 title: "Matrix Representation of Transformations"
-ms.date: "03/30/2017"
+ms.date: "01/06/2022"
+ms.custom: devdivchpfy22
 dev_langs: 
   - "csharp"
   - "vb"
@@ -65,8 +66,8 @@ An m×n matrix is a set of numbers arranged in m rows and n columns. The followi
 ## Composite Transformations  
  A composite transformation is a sequence of transformations, one followed by the other. Consider the matrices and transformations in the following list:  
   
-|||  
-|-|-|  
+| Matrix | Transformation |  
+|----------|----------------|  
 |Matrix A|Rotate 90 degrees|  
 |Matrix B|Scale by a factor of 2 in the x direction|  
 |Matrix C|Translate 3 units in the y direction|  
