@@ -1,5 +1,6 @@
 ---
 title: "Types of Coordinate Systems"
+description: Learn about transformations and coordinate systems, including world, page, and device.
 ms.date: "01/06/2022"
 ms.custom: devdivchpfy22
 ms.topic: overview
@@ -23,13 +24,13 @@ GDI+ uses three coordinate spaces: world, page, and device. World coordinates ar
   
 ## Transforms and Coordinate Systems  
  Suppose you want to work with a coordinate system that has its origin in the body of the client area rather than the upper-left corner. Say, for example, that you want the origin to be 100 pixels from the left edge of the client area and 50 pixels from the top of the client area. The following illustration shows such a coordinate system.  
-  
- ![Coordinate System](./media/aboutgdip05-art01.gif "AboutGdip05_art01")  
+
+:::image type="content" source="media/aboutgdip05-art01.gif" alt-text="Illustration of a coordinate system.":::
   
  When you make the call `myGraphics.DrawLine(myPen, 0, 0, 160, 80)`, you get the line shown in the following illustration.  
   
- ![Coordinate System](./media/aboutgdip05-art02.gif "AboutGdip05_art02")  
-  
+:::image type="content" source="media/aboutgdip05-art02.gif" alt-text="Illustration of a line in the coordinate system.":::
+
  The coordinates of the endpoints of your line in the three coordinate spaces are as follows:  
   
 | Coordinate space | Endpoint coordinates |  
@@ -79,9 +80,9 @@ GDI+ uses three coordinate spaces: world, page, and device. World coordinates ar
  [!code-vb[System.Drawing.CoordinateSystems#34](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.CoordinateSystems/VB/Class1.vb#34)]  
   
  The following illustration shows the line and coordinate system.  
-  
- ![Coordinate System](./media/aboutgdip05-art03.gif "AboutGdip05_art03")  
-  
+
+:::image type="content" source="media/aboutgdip05-art03.gif" alt-text="Illustration of a line and coordinate system.":::
+
  If we assume that the display device has 96 dots per inch in the horizontal direction and 96 dots per inch in the vertical direction, the endpoints of the line in the preceding example have the following coordinates in the three coordinate spaces:  
   
 |Coordinate space | Endpoint coordinates |  
