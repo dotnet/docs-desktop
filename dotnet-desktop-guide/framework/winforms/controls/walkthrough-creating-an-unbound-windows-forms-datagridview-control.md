@@ -3,7 +3,7 @@ title: Walkthrough to create an Unbound Windows Forms DataGridView Control
 
 description: You can create an Unbound Windows Forms DataGridView Control and display a small amount of data without binding it to a data source.
 
-ms.date: "01/17/2022"
+ms.date: "01/18/2022"
 ms.custom: devdivchpfy22
 dev_langs: 
   - "csharp"
