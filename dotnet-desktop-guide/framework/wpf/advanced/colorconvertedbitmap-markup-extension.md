@@ -1,6 +1,7 @@
 ---
 title: "ColorConvertedBitmap Markup Extension"
-ms.date: "03/30/2017"
+ms.date: "01/17/2022"
+ms.custom: devdivchpfy22
 helpviewer_keywords: 
   - "XAML [WPF], ColorConvertedBitmap markup extension"
   - "ColorConvertedBitmap markup extension [WPF]"
@@ -17,8 +18,8 @@ Provides a way to specify a bitmap source that does not have an embedded profile
   
 ## XAML Values  
   
-|||  
-|-|-|  
+| Value | Description |  
+|-------|-------------|  
 |`imageSource`|The URI of the nonprofiled bitmap.|  
 |`sourceIIC`|The URI of the source profile configuration.|  
 |`destinationIIC`|The URI of the destination profile configuration|  
