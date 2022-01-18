@@ -28,7 +28,11 @@ In XAML, you set attached properties by using the syntax *AttachedPropertyProvid
 
 The following is an example of how you can set <xref:System.Windows.Controls.DockPanel.Dock%2A?displayProperty=nameWithType> in XAML:
 
-[!code-xaml[PropertiesOvwSupport#APBasicUsage](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertiesOvwSupport/CSharp/page4.xaml#apbasicusage)]
+```xaml
+<DockPanel>
+    <TextBox DockPanel.Dock="Top">Enter text</TextBox>
+</DockPanel>
+```
 
 The usage is somewhat similar to a static property; you always reference the type <xref:System.Windows.Controls.DockPanel> that owns and registers the attached property, rather than referring to any instance specified by name.
 
