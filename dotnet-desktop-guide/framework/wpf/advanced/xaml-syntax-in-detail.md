@@ -33,6 +33,7 @@ helpviewer_keywords:
 ms.assetid: 67cce290-ca26-4c41-a797-b68aabc45479
 ---
 # XAML Syntax In Detail
+
 This topic defines the terms that are used to describe the elements of XAML syntax. These terms are used frequently throughout the remainder of this documentation, both for WPF documentation specifically and for the other frameworks that use XAML or the basic XAML concepts enabled by the XAML language support at the System.Xaml level. This topic expands on the basic terminology introduced in the topic [XAML in WPF](xaml-in-wpf.md).  
 
 This topic defines the terms that are used to describe the elements of XAML syntax. These terms are used frequently throughout the remainder of this documentation, both for WPF documentation specifically and for the other frameworks that use XAML or the basic XAML concepts enabled by the XAML language support at the System.Xaml level. This topic expands on the basic terminology introduced in the topic [XAML Overview (WPF)](/dotnet/desktop-wpf/fundamentals/xaml).
@@ -69,7 +70,47 @@ For example, the following example is object element syntax that instantiates a 
 
 The following example is object element syntax that also includes XAML content property syntax. The inner text contained within will be used to set the <xref:System.Windows.Controls.TextBox> XAML content property, <xref:System.Windows.Controls.TextBox.Text%2A>.
   
-[!code-xaml[XAMLOvwSupport#ThisIsATextBox](~/samples/snippets/csharp/VS_Snippets_Wpf/XAMLOvwSupport/CSharp/Page1.xaml#thisisatextbox)]  
+ For more information about the XAML language specification, download [\[MS-XAML\]](https://download.microsoft.com/download/0/A/6/0A6F7755-9AF5-448B-907D-13985ACCF53E/[MS-XAML].pdf) from the Microsoft Download Center.  
+  
+<a name="xaml_and_clr"></a>
+## XAML and CLR  
+ XAML is a markup language. The common language runtime (CLR), as implied by its name, enables runtime execution. XAML is not by itself one of the common languages that is directly consumed by the CLR runtime. Instead, you can think of XAML as supporting its own type system. The particular XAML parsing system that is used by WPF is built on the CLR and the CLR type system. XAML types are mapped to CLR types to instantiate a run time representation when the XAML for WPF is parsed. For this reason, the remainder of discussion of syntax in this document will include references to the CLR type system, even though the equivalent syntax discussions in the XAML language specification do not. (Per the XAML language specification level, XAML types could be mapped to any other type system, which does not have to be the CLR, but that would require the creation and use of a different XAML parser.)  
+  
+#### Members of Types and Class Inheritance  
+ Properties and events as they appear as XAML members of a WPF type are often inherited from base types. For example, consider this example: `<Button Background="Blue" .../>`. The <xref:System.Windows.Controls.Control.Background%2A> property is not an immediately declared property on the <xref:System.Windows.Controls.Button> class, if you were to look at the class definition, reflection results, or the documentation. Instead, <xref:System.Windows.Controls.Control.Background%2A> is inherited from the base <xref:System.Windows.Controls.Control> class.  
+  
+ The class inheritance behavior of WPF XAML elements is a significant departure from a schema-enforced interpretation of XML markup. Class inheritance can become complex, particularly when intermediate base classes are abstract, or when interfaces are involved. This is one reason that the set of XAML elements and their permissible attributes is difficult to represent accurately and completely using the schema types that are typically used for XML programming, such as DTD or XSD format. Another reason is that extensibility and type-mapping features of the XAML language itself preclude completeness of any fixed representation of the permissible types and members.  
+  
+<a name="object_element_syntax"></a>
+## Object Element Syntax  
+ *Object element syntax* is the XAML markup syntax that instantiates a CLR class or structure by declaring an XML element. This syntax resembles the element syntax of other markup languages such as HTML. Object element syntax begins with a left angle bracket (\<), followed immediately by the type name of the class or structure being instantiated. Zero or more spaces can follow the type name, and zero or more attributes may also be declared on the object element, with one or more spaces separating each attribute name="value" pair. Finally, one of the following must be true:  
+  
+- The element and tag must be closed by a forward slash (/) followed immediately by a right angle bracket (>).  
+  
+- The opening tag must be completed by a right angle bracket (>). Other object elements, property elements, or inner text, can follow the opening tag. Exactly what content may be contained here is typically constrained by the object model of the element. The equivalent closing tag for the object element must also exist, in proper nesting and balance with other opening and closing tag pairs.  
+  
+ XAML as implemented by .NET has a set of rules that map object elements into types, attributes into properties or events, and XAML namespaces to CLR namespaces plus assembly. For WPF and .NET, XAML object elements map to .NET types as defined in referenced assemblies, and the attributes map to members of those types. When you reference a CLR type in XAML, you have access to the inherited members of that type as well.  
+  
+ For example, the following example is object element syntax that instantiates a new instance of the <xref:System.Windows.Controls.Button> class, and also specifies a <xref:System.Windows.FrameworkElement.Name%2A> attribute and a value for that attribute:  
+  
+ [!code-xaml[XAMLOvwSupport#SyntaxOE](~/samples/snippets/csharp/VS_Snippets_Wpf/XAMLOvwSupport/CSharp/Page1.xaml#syntaxoe)]  
+  
+ The following example is object element syntax that also includes XAML content property syntax. The inner text contained within will be used to set the <xref:System.Windows.Controls.TextBox> XAML content property, <xref:System.Windows.Controls.TextBox.Text%2A>.  
+  
+ [!code-xaml[XAMLOvwSupport#ThisIsATextBox](~/samples/snippets/csharp/VS_Snippets_Wpf/XAMLOvwSupport/CSharp/Page1.xaml#thisisatextbox)]  
+  
+### Content Models  
+ A class might support a usage as a XAML object element in terms of the syntax, but that element will only function properly in an application or page when it is placed in an expected position of an overall content model or element tree. For example, a <xref:System.Windows.Controls.MenuItem> should typically only be placed as a child of a <xref:System.Windows.Controls.Primitives.MenuBase> derived class such as <xref:System.Windows.Controls.Menu>. Content models for specific elements are documented as part of the remarks on the class pages for controls and other WPF classes that can be used as XAML elements.  
+  
+<a name="properties_of_object_elements"></a>
+## Properties of Object Elements  
+ Properties in XAML are set by a variety of possible syntaxes. Which syntax can be used for a particular property will vary, based on the underlying type system characteristics of the property that you are setting.  
+  
+ By setting values of properties, you add features or characteristics to objects as they exist in the run time object graph. The initial state of the created object from a object element is based on the parameterless constructor behavior. Typically, your application will use something other than a completely default instance of any given object.  
+  
+<a name="attribute_syntax_properties"></a>
+## Attribute Syntax (Properties)  
+ Attribute syntax is the XAML markup syntax that sets a value for a property by declaring an attribute on an existing object element. The attribute name must match the CLR member name of the property of the class that backs the relevant object element. The attribute name is followed by an assignment operator (=). The attribute value must be a string enclosed within quotes.  
   
 ### Content Models
 
@@ -232,10 +273,10 @@ The value of a XAML content property must be given either entirely before or ent
   
  [!code-xaml[XAMLOvwSupport#SyntaxContent](~/samples/snippets/csharp/VS_Snippets_Wpf/XAMLOvwSupport/CSharp/page5.xaml#syntaxcontent)]  
   
- Note that neither the property element for <xref:System.Windows.Controls.Panel.Children%2A> nor the element for the <xref:System.Windows.Controls.UIElementCollection> is required in the markup. This is a design feature of XAML so that recursively contained elements that define a [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] are more intuitively represented as a tree of nested elements with immediate parent-child element relationships, without intervening property element tags or collection objects. In fact, <xref:System.Windows.Controls.UIElementCollection> cannot be specified explicitly in markup as an object element, by design. Because its only intended use is as an implicit collection, <xref:System.Windows.Controls.UIElementCollection> does not expose a public parameterless constructor and thus cannot be instantiated as an object element.  
+ Note that neither the property element for <xref:System.Windows.Controls.Panel.Children%2A> nor the element for the <xref:System.Windows.Controls.UIElementCollection> is required in the markup. This is a design feature of XAML so that recursively contained elements that define a UI are more intuitively represented as a tree of nested elements with immediate parent-child element relationships, without intervening property element tags or collection objects. In fact, <xref:System.Windows.Controls.UIElementCollection> cannot be specified explicitly in markup as an object element, by design. Because its only intended use is as an implicit collection, <xref:System.Windows.Controls.UIElementCollection> does not expose a public parameterless constructor and thus cannot be instantiated as an object element.  
   
 ### Mixing Property Elements and Object Elements in an Object with a Content Property  
- The XAML specification declares that a XAML processor can enforce that object elements that are used to fill the XAML content property within an object element must be contiguous, and must not be mixed. This restriction against mixing property elements and content is enforced by the [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] XAML processors.  
+ The XAML specification declares that a XAML processor can enforce that object elements that are used to fill the XAML content property within an object element must be contiguous, and must not be mixed. This restriction against mixing property elements and content is enforced by the WPF XAML processors.  
   
  You can have a child object element as the first immediate markup within an object element. Then you can introduce property elements. Or, you can specify one or more property elements, then content, then more property elements. But once a property element follows content, you cannot introduce any further content, you can only add property elements.  
   
@@ -243,7 +284,7 @@ The value of a XAML content property must be given either entirely before or ent
   
 <a name="xaml_namespaces"></a>
 ## XAML Namespaces  
- None of the preceding syntax examples specified a XAML namespace other than the default XAML namespace. In typical [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] applications, the default XAML namespace is specified to be the [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] namespace. You can specify XAML namespaces other than the default XAML namespace and still use similar syntax. But then, anywhere where a class is named that is not accessible within the default XAML namespace, that class name must be preceded with the prefix of the XAML namespace as mapped to the corresponding CLR namespace. For example, `<custom:Example/>` is object element syntax to instantiate an instance of the `Example` class, where the CLR namespace containing that class (and possibly the external assembly information that contains backing types) was previously mapped to the `custom` prefix.  
+ None of the preceding syntax examples specified a XAML namespace other than the default XAML namespace. In typical WPF applications, the default XAML namespace is specified to be the WPF namespace. You can specify XAML namespaces other than the default XAML namespace and still use similar syntax. But then, anywhere where a class is named that is not accessible within the default XAML namespace, that class name must be preceded with the prefix of the XAML namespace as mapped to the corresponding CLR namespace. For example, `<custom:Example/>` is object element syntax to instantiate an instance of the `Example` class, where the CLR namespace containing that class (and possibly the external assembly information that contains backing types) was previously mapped to the `custom` prefix.  
   
  For more information about XAML namespaces, see [XAML Namespaces and Namespace Mapping for WPF XAML](xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md).  
   
@@ -251,7 +292,7 @@ The value of a XAML content property must be given either entirely before or ent
 ## Markup Extensions  
  XAML defines a markup extension programming entity that enables an escape from the normal XAML processor handling of string attribute values or object elements, and defers the processing to a backing class. The character that identifies a markup extension to a XAML processor when using attribute syntax is the opening curly brace ({), followed by any character other than a closing curly brace (}). The first string following the opening curly brace must reference the class that provides the particular extension behavior, where the reference may omit the substring "Extension" if that substring is part of the true class name. Thereafter, a single space may appear, and then each succeeding character is used as input by the extension implementation, up until the closing curly brace is encountered.  
   
- The .NET XAML implementation uses the <xref:System.Windows.Markup.MarkupExtension> abstract class as the basis for all of the markup extensions supported by [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] as well as other frameworks or technologies. The markup extensions that [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] specifically implements are often intended to provide a means to reference other existing objects, or to make deferred references to objects that will be evaluated at run time. For example, a simple WPF data binding is accomplished by specifying the `{Binding}` markup extension in place of the value that a particular property would ordinarily take. Many of the WPF markup extensions enable an attribute syntax for properties where an attribute syntax would not otherwise be possible. For example, a <xref:System.Windows.Style> object is a relatively complex type that contains a nested series of objects and properties. Styles in WPF are typically defined as a resource in a <xref:System.Windows.ResourceDictionary>, and then referenced through one of the two WPF markup extensions that request a resource. The markup extension defers the evaluation of the property value to a resource lookup and enables providing the value of the <xref:System.Windows.FrameworkElement.Style%2A> property, taking type <xref:System.Windows.Style>, in attribute syntax as in the following example:  
+ The .NET XAML implementation uses the <xref:System.Windows.Markup.MarkupExtension> abstract class as the basis for all of the markup extensions supported by WPF as well as other frameworks or technologies. The markup extensions that WPF specifically implements are often intended to provide a means to reference other existing objects, or to make deferred references to objects that will be evaluated at run time. For example, a simple WPF data binding is accomplished by specifying the `{Binding}` markup extension in place of the value that a particular property would ordinarily take. Many of the WPF markup extensions enable an attribute syntax for properties where an attribute syntax would not otherwise be possible. For example, a <xref:System.Windows.Style> object is a relatively complex type that contains a nested series of objects and properties. Styles in WPF are typically defined as a resource in a <xref:System.Windows.ResourceDictionary>, and then referenced through one of the two WPF markup extensions that request a resource. The markup extension defers the evaluation of the property value to a resource lookup and enables providing the value of the <xref:System.Windows.FrameworkElement.Style%2A> property, taking type <xref:System.Windows.Style>, in attribute syntax as in the following example:  
   
  `<Button Style="{StaticResource MyStyle}">My button</Button>`  
   
@@ -280,7 +321,7 @@ The value of a XAML content property must be given either entirely before or ent
 |||  
 |-|-|  
 |`<Page`|Opening object element of the root element|  
-|`xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"`|The default ([!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)]) XAML namespace|  
+|`xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"`|The default (WPF) XAML namespace|  
 |`xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"`|The XAML language XAML namespace|  
 |`x:Class="ExampleNamespace.ExampleCode"`|The partial class declaration that connects markup to any code-behind defined for the partial class|  
 |`>`|End of object element for the root. Object is not closed yet because the element contains child elements|  
