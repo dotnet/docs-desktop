@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Controls.Primitives;
 using System.Windows.Media;
 
 namespace CodeSampleCsharp
@@ -18,7 +19,7 @@ namespace CodeSampleCsharp
         }
 
         //<ButtonEventHandlers>
-        // The event handler for the existing button 'ButtonCreatedByXaml'.
+        // The click event handler for the existing button 'ButtonCreatedByXaml'.
         private void ButtonCreatedByXaml_Click(object sender, RoutedEventArgs e)
         {
             // Create a new button.
@@ -31,11 +32,17 @@ namespace CodeSampleCsharp
             // Add the new button to the StackPanel.
             stackPanel.Children.Add(ButtonCreatedByCode);
 
-            // Assign an event handler to the new button.
+            // Assign an event handler to the new button using the '+=' operator.
             ButtonCreatedByCode.Click += new RoutedEventHandler(ButtonCreatedByCode_Click);
+
+            // Assign an event handler to the new button using the AddHandler method.
+            // AddHandler(ButtonBase.ClickEvent, new RoutedEventHandler(ButtonCreatedByCode_Click);
+
+            // Assign an event handler to the StackPanel using the AddHandler method.
+            // stackPanel.AddHandler(ButtonBase.ClickEvent, new RoutedEventHandler(ButtonCreatedByCode_Click));
         }
 
-        // The event handler for the new button 'ButtonCreatedByCode'.
+        // The click event handler for the new button 'ButtonCreatedByCode'.
         private void ButtonCreatedByCode_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("Click event handler");
