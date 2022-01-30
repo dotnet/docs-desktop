@@ -34,9 +34,6 @@ VB supports event handler assignment using:
 - The [Handles](/dotnet/visual-basic/language-reference/statements/handles-clause) keyword in the event handler definition. For more information, see [Visual Basic and WPF event handling](/dotnet/desktop/wpf/advanced/visual-basic-and-wpf-event-handling?view=netframeworkdesktop-4.8&preserve-view=true).
 - The <xref:System.Windows.UIElement.AddHandler%2A?displayProperty=nameWithType> method, together with the [AddressOf](/dotnet/visual-basic/language-reference/operators/addressof-operator) operator to reference the event handler.
 
-> [!NOTE]
-> In the following example, the C# code uses the `+=` operator, and the VB code uses the `AddHandler` method with `AddressOf` operator. Choose the language selector at the top of the page to select either C# or VB for the code sample.
-
 ## Example
 
 The following example has a <xref:System.Windows.Controls.Button> named `ButtonCreatedByXaml` defined in XAML. The button's XAML attribute `Click="ButtonCreatedByXaml_Click"` specifies the event handler for the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event. That attribute is in the form of `<event name>="<event handler name>"`.
