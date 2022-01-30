@@ -30,8 +30,9 @@ C# supports event handler assignment using:
 
 VB supports event handler assignment using:
 
-- The <xref:System.Windows.UIElement.AddHandler%2A> method, together with the [AddressOf](/dotnet/visual-basic/language-reference/operators/addressof-operator) operator to reference the event handler.
+- The [AddHandler](/dotnet/visual-basic/language-reference/statements/addhandler-statement) statement with the [AddressOf](/dotnet/visual-basic/language-reference/operators/addressof-operator) operator, which is also used in the CLR event handling model.
 - The [Handles](/dotnet/visual-basic/language-reference/statements/handles-clause) keyword in the event handler definition. For more information, see [Visual Basic and WPF event handling](/dotnet/desktop/wpf/advanced/visual-basic-and-wpf-event-handling?view=netframeworkdesktop-4.8&preserve-view=true).
+- The <xref:System.Windows.UIElement.AddHandler%2A?displayProperty=nameWithType> method, together with the [AddressOf](/dotnet/visual-basic/language-reference/operators/addressof-operator) operator to reference the event handler.
 
 > [!NOTE]
 > In the following example, the C# code uses the `+=` operator, and the VB code uses the `AddHandler` method with `AddressOf` operator. Choose the language selector at the top of the page to select either C# or VB for the code sample.
