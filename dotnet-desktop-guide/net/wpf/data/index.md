@@ -360,7 +360,7 @@ You may have noticed that the above example uses a template. In fact, the data w
 
 ## Data templating
 
-Without the use of data templates, our app UI in the [What is data binding](#what-is-data-binding) section would look like the following.
+Without the use of data templates, our app UI in the [Example of data binding](#example-of-data-binding) section would look like the following:
 
 :::image type="content" source="./media/index/demo-no-template.png" alt-text="Data Binding Demo without Data Templates":::
 
