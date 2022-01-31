@@ -13,6 +13,9 @@ ms.assetid: 989e12b0-260e-4570-95c6-489284003ce2
 # ListView Overview
 The <xref:System.Windows.Controls.ListView> control provides the infrastructure to display a set of data items in different layouts or views. For example, a user may want to display data items in a table and also to sort its columns.  
 
+> [!NOTE]
+> The types referenced in this article are available in the [Code reference](#code-reference) section.
+
 <a name="WhatisaListView"></a>
 ## What Is a ListView?  
  The <xref:System.Windows.Controls.ListView> control is an <xref:System.Windows.Controls.ItemsControl> that is derived from <xref:System.Windows.Controls.ListBox>. Typically, its items are members of a data collection and are represented as <xref:System.Windows.Controls.ListViewItem> objects. A <xref:System.Windows.Controls.ListViewItem> is a <xref:System.Windows.Controls.ContentControl> and can contain only a single child element. However, that child element can be any visual element.  
@@ -74,7 +77,20 @@ The <xref:System.Windows.Controls.ListView> control provides the infrastructure 
 <a name="CreatingaCustomView"></a>
 ## Creating a Custom View Mode  
  Customized views like <xref:System.Windows.Controls.GridView> are derived from the <xref:System.Windows.Controls.ViewBase> abstract class, which provides the tools to display data items that are represented as <xref:System.Windows.Controls.ListViewItem> objects.
-  
+
+## Code reference
+
+The following objects are referenced in this article:
+
+- `EmployeeInfoDataSource` data collection. If you're using Visual Basic .NET, the `Window` element is declared slightly different from what you see in the example code:
+
+  :::code language="xaml" source="~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewCode/CSharp/Window1.xaml" range="1-8" highlight="4,6-8" :::
+
+- `EmployeeInfo` class, which is used as the type for the `EmployeeInfoDataSource` data collection.
+
+  :::code language="csharp" source="~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewCode/CSharp/Window1.xaml.cs" range="66-96" :::
+  :::code language="vb" source="~/samples/snippets/visualbasic/VS_Snippets_Wpf/ListViewCode/visualbasic/window1.xaml.vb" range="63-100" :::
+
 ## See also
 
 - <xref:System.Windows.Controls.GridView>
