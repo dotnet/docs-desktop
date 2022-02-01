@@ -25,12 +25,13 @@ namespace CodeSampleCsharp
             // Create a new button.
             Button ButtonCreatedByCode = new();
 
-            // Specify the button text and background color.
+            // Specify button properties.
+            ButtonCreatedByCode.Name = "ButtonCreatedByCode";
             ButtonCreatedByCode.Content = "New button and event handler created in code";
             ButtonCreatedByCode.Background = Brushes.Yellow;
 
             // Add the new button to the StackPanel.
-            stackPanel.Children.Add(ButtonCreatedByCode);
+            StackPanel1.Children.Add(ButtonCreatedByCode);
 
             // Assign an event handler to the new button using the '+=' operator.
             ButtonCreatedByCode.Click += new RoutedEventHandler(ButtonCreatedByCode_Click);
@@ -39,14 +40,22 @@ namespace CodeSampleCsharp
             // AddHandler(ButtonBase.ClickEvent, new RoutedEventHandler(ButtonCreatedByCode_Click);
 
             // Assign an event handler to the StackPanel using the AddHandler method.
-            // stackPanel.AddHandler(ButtonBase.ClickEvent, new RoutedEventHandler(ButtonCreatedByCode_Click));
+            StackPanel1.AddHandler(ButtonBase.ClickEvent, new RoutedEventHandler(ButtonCreatedByCode_Click));
         }
 
-        // The click event handler for the new button 'ButtonCreatedByCode'.
+        // The Click event handler for the new button 'ButtonCreatedByCode'.
         private void ButtonCreatedByCode_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Click event handler");
+            string sourceName = ((FrameworkElement)e.Source).Name;
+            string senderName = ((FrameworkElement)sender).Name;
+
+            Debug.WriteLine($"Routed event handler attached to {senderName}, " +
+                $"triggered by the Click routed event raised by {sourceName}.");
         }
         //</ButtonEventHandlers>
+
+        // Debug output when ButtonCreatedByCode is clicked:
+        // Routed event handler attached to ButtonCreatedByCode, triggered by the Click routed event raised by ButtonCreatedByCode.
+        // Routed event handler attached to StackPanel1, triggered by the Click routed event raised by ButtonCreatedByCode.
     }
 }

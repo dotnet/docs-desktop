@@ -82,7 +82,7 @@ items:
     items:
     - name: Common tasks
       items:
-      - name: Add an Event Handler Using Code
+      - name: Add an event handler using code
         href: events/how-to-add-an-event-handler-using-code.md
   - name: Properties
     items:
