@@ -1,0 +1,16 @@
+﻿<Window x:Class="CodeSampleCsharp.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="How to add an event handler using code" Height="100" Width="300">
+
+    <!--<ButtonCreatedByXaml>-->
+    <StackPanel Name="StackPanel1">
+        <Button
+            Name="ButtonCreatedByXaml" 
+            Click="ButtonCreatedByXaml_Click"
+            Content="Create a new button with an event handler"
+            Background="LightGray">
+        </Button>
+    </StackPanel>
+    <!--</ButtonCreatedByXaml>-->
+</Window>
