@@ -78,6 +78,12 @@ items:
 - name: Systems
   expanded: true
   items:
+  - name: Events
+    items:
+    - name: Common tasks
+      items:
+      - name: Add an event handler using code
+        href: events/how-to-add-an-event-handler-using-code.md
   - name: Properties
     items:
     - name: Dependency properties
