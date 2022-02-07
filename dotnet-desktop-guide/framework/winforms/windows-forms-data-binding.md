@@ -1,5 +1,5 @@
 ---
-title: Data Binding in Windows Forms
+title: Data Binding
 description: Learn how to use data binding in Windows Forms to display and make changes to information from a data source in controls on the form.
 ms.date: "01/17/2022"
 ms.custom: devdivchpfy22
