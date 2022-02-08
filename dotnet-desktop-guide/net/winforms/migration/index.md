@@ -303,7 +303,7 @@ If your app has an _App.config_ file, remove the `<supportedRuntime>` element:
 <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5" />
 ```
 
-There are some things you should consider with the *App.config* file. The *App.config* file in .NET Framework was used not only to configure the app, but to configure runtime settings and behavior, such as logging. The *App.config* file in .NET 5+ (and .NET Core) is no longer used for runtime configuration. If your *App.config* file has these sections, they won't be respected.
+There are some things you should consider with the _App.config_ file. The _App.config_ file in .NET Framework was used not only to configure the app, but to configure runtime settings and behavior, such as logging. The _App.config_ file in .NET 5+ (and .NET Core) is no longer used for runtime configuration. If your _App.config_ file has these sections, they won't be respected.
 
 ## Add the compatibility package
 

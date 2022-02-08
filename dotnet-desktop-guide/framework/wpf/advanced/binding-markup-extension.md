@@ -1,6 +1,7 @@
 ---
 title: "Binding Markup Extension"
-ms.date: "03/30/2017"
+ms.date: "01/17/2022"
+ms.custom: devdivchpfy22
 f1_keywords: 
   - "Binding"
 helpviewer_keywords: 
@@ -31,8 +32,8 @@ Defers a property value to be a data-bound value, creating an intermediate expre
   
 ## XAML Values  
   
-|||  
-|-|-|  
+| Value | Description |  
+|-------|-------------|  
 |`bindProp1, bindPropN`|The name of the <xref:System.Windows.Data.Binding> or <xref:System.Windows.Data.BindingBase> property to set. Not all <xref:System.Windows.Data.Binding> properties can be set with the `Binding` extension, and some properties are settable within a `Binding` expression only by using further nested markup extensions. See "Binding Properties That Can Be Set with the Binding Extension" section.|  
 |`value1, valueN`|The value to set the property to. The handling of the attribute value is ultimately specific to the type and logic of the specific <xref:System.Windows.Data.Binding> property being set.|  
 |`path`|The path string that sets the implicit <xref:System.Windows.Data.Binding.Path%2A?displayProperty=nameWithType> property. See also [PropertyPath XAML Syntax](propertypath-xaml-syntax.md).|  
