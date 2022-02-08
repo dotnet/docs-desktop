@@ -1,6 +1,7 @@
 ---
 title: "ComponentResourceKey Markup Extension"
-ms.date: "03/30/2017"
+ms.date: "02/08/2022"
+ms.custom: devdivchpfy22
 f1_keywords: 
   - "ComponentResourceKey"
   - "ComponentResourceKeyExtension"
@@ -38,8 +39,8 @@ Defines and references keys for resources that are loaded from external assembli
   
 ## XAML Values  
   
-|||  
-|-|-|  
+| Value | Description |  
+|-------|-------------|  
 |`targetTypeName`|The name of the public common language runtime (CLR) type that is defined in the resource assembly.|  
 |`targetID`|The key for the resource. When resources are looked up, `targetID` will be analogous to the [x:Key Directive](/dotnet/desktop/xaml-services/xkey-directive) of the resource.|  
   
