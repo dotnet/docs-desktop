@@ -84,7 +84,7 @@ This topic describes the different approaches for animating properties: storyboa
   
 ## Clock Animations  
 
- Use <xref:System.Windows.Media.MediaPlayer.Clock%2A> objects when you want to animate without using a <xref:System.Windows.Media.Animation.Storyboard> and you want to create complex timing trees or interactively control animations after they start. You can use Clock objects to animate a dependency property of any <xref:System.Windows.Media.Animation.Animatable> object.  
+ Use <xref:System.Windows.Media.Animation.Clock> objects when you want to animate without using a <xref:System.Windows.Media.Animation.Storyboard> and you want to create complex timing trees or interactively control animations after they start. You can use Clock objects to animate a dependency property of any <xref:System.Windows.Media.Animation.Animatable> object.  
   
  You cannot use <xref:System.Windows.Media.Animation.Clock> objects directly to animate in styles, control templates, or data templates. (The animation and timing system actually does use <xref:System.Windows.Media.Animation.Clock> objects to animate in styles, control templates, and data templates, but it must create those <xref:System.Windows.Media.Animation.Clock> objects for you from a <xref:System.Windows.Media.Animation.Storyboard>. For more information about the relationship between <xref:System.Windows.Media.Animation.Storyboard> objects and <xref:System.Windows.Media.Animation.Clock> objects, see the [Animation and Timing System Overview](animation-and-timing-system-overview.md).)  
   

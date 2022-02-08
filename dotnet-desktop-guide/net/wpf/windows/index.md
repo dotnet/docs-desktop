@@ -55,7 +55,7 @@ The following figure illustrates the constituent parts of a window:
 
 A window is divided into two areas: the non-client area and client area.
 
-The *non-client area* of a window is implemented by WPF and includes the parts of a window that are common to most windows, including the following:
+The _non-client area_ of a window is implemented by WPF and includes the parts of a window that are common to most windows, including the following:
 
 - A title bar (1-5).
 - An icon (1).
@@ -64,14 +64,14 @@ The *non-client area* of a window is implemented by WPF and includes the parts o
 - System menu (6) with menu items. Appears when clicking on the icon (1).
 - Border (7).
 
-The *client area* of a window is the area within a window's non-client area and is used by developers to add application-specific content, such as menu bars, tool bars, and controls.
+The _client area_ of a window is the area within a window's non-client area and is used by developers to add application-specific content, such as menu bars, tool bars, and controls.
 
 - Client area (8).
 - Resize grip (9). This is a control added to the Client area (8).
 
 ## Implementing a window
 
-The implementation of a typical window includes both appearance and behavior, where *appearance* defines how a window looks to users and *behavior* defines the way a window functions as users interact with it. In WPF, you can implement the appearance and behavior of a window using either code or XAML markup.
+The implementation of a typical window includes both appearance and behavior, where _appearance_ defines how a window looks to users and _behavior_ defines the way a window functions as users interact with it. In WPF, you can implement the appearance and behavior of a window using either code or XAML markup.
 
 In general, however, the appearance of a window is implemented using XAML markup, and its behavior is implemented using code-behind, as shown in the following example.
 
@@ -233,7 +233,7 @@ A window that is opened by using the <xref:System.Windows.Window.Show%2A> method
 - Cover the other (unless one of the windows has its <xref:System.Windows.Window.Topmost%2A> property set to `true`).
 - Be minimized, maximized, and restored without affecting the other.
 
-Some windows require a relationship with the window that opens them. For example, an Integrated Development Environment (IDE) application may open property windows and tool windows whose typical behavior is to cover the window that creates them. Furthermore, such windows should always close, minimize, maximize, and restore in concert with the window that created them. Such a relationship can be established by making one window *own* another, and is achieved by setting the <xref:System.Windows.Window.Owner%2A> property of the *owned window* with a reference to the *owner window*. This is shown in the following example.
+Some windows require a relationship with the window that opens them. For example, an Integrated Development Environment (IDE) application may open property windows and tool windows whose typical behavior is to cover the window that creates them. Furthermore, such windows should always close, minimize, maximize, and restore in concert with the window that created them. Such a relationship can be established by making one window _own_ another, and is achieved by setting the <xref:System.Windows.Window.Owner%2A> property of the _owned window_ with a reference to the _owner window_. This is shown in the following example.
 
 :::code language="csharp" source="snippets/index/csharp/ChildWindow1.xaml.cs" range="12-18":::
 :::code language="vb" source="snippets/index/vb/ChildWindow1.xaml.vb" range="2-7":::
@@ -364,7 +364,7 @@ If the startup location is specified as <xref:System.Windows.WindowStartupLocati
 
 ### Topmost windows and z-order
 
-Besides having an x and y location, a window also has a location in the z dimension, which determines its vertical position with respect to other windows. This is known as the window's z-order, and there are two types: **normal** z-order and **topmost** z-order. The location of a window in the *normal z-order* is determined by whether it's currently active or not. By default, a window is located in the normal z-order. The location of a window in the *topmost z-order* is also determined by whether it's currently active or not. Furthermore, windows in the topmost z-order are always located above windows in the normal z-order. A window is located in the topmost z-order by setting its <xref:System.Windows.Window.Topmost%2A> property to `true`.
+Besides having an x and y location, a window also has a location in the z dimension, which determines its vertical position with respect to other windows. This is known as the window's z-order, and there are two types: **normal** z-order and **topmost** z-order. The location of a window in the _normal z-order_ is determined by whether it's currently active or not. By default, a window is located in the normal z-order. The location of a window in the _topmost z-order_ is also determined by whether it's currently active or not. Furthermore, windows in the topmost z-order are always located above windows in the normal z-order. A window is located in the topmost z-order by setting its <xref:System.Windows.Window.Topmost%2A> property to `true`.
 
 Within each z-order type, the currently active window appears above all other windows in the same z-order.
 
@@ -466,9 +466,9 @@ The order of precedence can also determine the size of a window when it's maximi
 
 During the lifetime of a resizable window, it can have three states: normal, minimized, and maximized. A window with a _normal_ state is the default state of a window. A window with this state allows a user to move and resize it by using a resize grip or the border, if it's resizable.
 
-A window with a *minimized* state collapses to its task bar button if <xref:System.Windows.Window.ShowInTaskbar%2A> is set to `true`; otherwise, it collapses to the smallest possible size it can be and moves itself to the bottom-left corner of the desktop. Neither type of minimized window can be resized using a border or resize grip, although a minimized window that isn't shown in the task bar can be dragged around the desktop.
+A window with a _minimized_ state collapses to its task bar button if <xref:System.Windows.Window.ShowInTaskbar%2A> is set to `true`; otherwise, it collapses to the smallest possible size it can be and moves itself to the bottom-left corner of the desktop. Neither type of minimized window can be resized using a border or resize grip, although a minimized window that isn't shown in the task bar can be dragged around the desktop.
 
-A window with a *maximized* state expands to the maximum size it can be, which will only be as large as its <xref:System.Windows.FrameworkElement.MaxWidth%2A>, <xref:System.Windows.FrameworkElement.MaxHeight%2A>, and <xref:System.Windows.Window.SizeToContent%2A> properties dictate. Like a minimized window, a maximized window can't be resized by using a resize grip or by dragging the border.
+A window with a _maximized_ state expands to the maximum size it can be, which will only be as large as its <xref:System.Windows.FrameworkElement.MaxWidth%2A>, <xref:System.Windows.FrameworkElement.MaxHeight%2A>, and <xref:System.Windows.Window.SizeToContent%2A> properties dictate. Like a minimized window, a maximized window can't be resized by using a resize grip or by dragging the border.
 
 > [!NOTE]
 > The values of the <xref:System.Windows.Window.Top%2A>, <xref:System.Windows.Window.Left%2A>, <xref:System.Windows.FrameworkElement.Width%2A>, and <xref:System.Windows.FrameworkElement.Height%2A> properties of a window always represent the values for the normal state, even when the window is currently maximized or minimized.

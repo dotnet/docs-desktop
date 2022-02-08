@@ -604,6 +604,14 @@
         {
             "source_path": "dotnet-desktop-guide/framework/wpf/properties/xaml-loading-and-dependency-properties.md",
             "redirect_url": "/dotnet/desktop/wpf/advanced/xaml-loading-and-dependency-properties?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/advanced/how-to-add-an-event-handler-using-code.md",
+            "redirect_url": "/dotnet/desktop/wpf/events/how-to-add-an-event-handler-using-code?view=netdesktop-6.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/events/how-to-add-an-event-handler-using-code.md",
+            "redirect_url": "/dotnet/desktop/wpf/advanced/how-to-add-an-event-handler-using-code?view=netframeworkdesktop-4.8"
         }
     ]
 }
