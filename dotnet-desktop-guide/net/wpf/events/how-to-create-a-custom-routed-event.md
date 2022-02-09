@@ -70,7 +70,7 @@ The `Handler_ConditionalClick` event handler obtains the following information a
 - The <xref:System.Windows.RoutedEventArgs.Source?displayProperty=nameWithType> object, which is the element that originally raised the event. In this example, the `Source` is always `CustomButton`.
 
 > [!NOTE]
-> A key difference between a routed event and a CLR event is that a routed event traverses the element tree, whereas a CLR event occurs only on the `sender`. As a result, a routed event `sender` can be any traversed element in the element tree.
+> A key difference between a routed event and a CLR event is that a routed event traverses the element tree, looking for handlers, whereas a CLR event is created by a source object and handled by an event subscriber. As a result, a routed event `sender` can be any traversed element in the element tree.
 
 You can create a tunneling event the same way as a bubbling event, except you'll set the routing strategy in the event registration call to <xref:System.Windows.RoutingStrategy.Tunnel>. For more information on tunneling events, see [WPF input events](/dotnet/desktop/wpf/advanced/routed-events-overview?view=netframeworkdesktop-4.8&preserve-view=true#wpf-input-events).
 
