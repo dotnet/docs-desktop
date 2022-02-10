@@ -1,5 +1,5 @@
 ---
-title: "How to Alter the Typography of Text"
+title: "How to alter the typography of text"
 description: To alter the telegraphy of text, set the telegraphy attribute. You can set the typographic property of text programmatically. You can see how altered and default telegraphy properties of text render on screen each with an example.
 ms.date: "02/08/2022"
 ms.custom: devdivchpfy22
