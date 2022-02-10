@@ -21,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\WpfControlLibraryCsharp\WpfControlLibrary.csproj" />
+    <ProjectReference Include="..\WpfControlLibraryVb\WpfControlLibraryVb.vbproj" />
   </ItemGroup>
 
 </Project>
