@@ -12,7 +12,7 @@ ms.assetid: 75928354-dc01-47e8-a018-8409aec1f32d
 ---
 # Attached Properties Overview
 
-An attached property is a concept defined by XAML. An attached property is intended to be used as a type of global property that is settable on any object. In [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)], attached properties are typically defined as a specialized form of dependency property that does not have the conventional property "wrapper".
+An attached property is a concept defined by XAML. An attached property is intended to be used as a type of global property that is settable on any dependency object. In [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)], attached properties are typically defined as a specialized form of dependency property that does not have the conventional property "wrapper".
 
 ## Prerequisites <a name="prerequisites"></a>
 
