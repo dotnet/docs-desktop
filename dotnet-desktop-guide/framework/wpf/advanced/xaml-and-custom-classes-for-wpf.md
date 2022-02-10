@@ -77,7 +77,7 @@ XAML as implemented in common language runtime (CLR) frameworks supports the abi
   
 - Implements <xref:System.Collections.IList>.  
   
-- Implements <xref:System.Collections.IDictionary> or the generic equivalent (<xref:System.Collections.Generic.IDictionary%602>).  
+- Implements <xref:System.Collections.IDictionary>.  
   
 - Derives from <xref:System.Array> (for more information about arrays in XAML, see [x:Array Markup Extension](/dotnet/desktop/xaml-services/xarray-markup-extension).)  
   
