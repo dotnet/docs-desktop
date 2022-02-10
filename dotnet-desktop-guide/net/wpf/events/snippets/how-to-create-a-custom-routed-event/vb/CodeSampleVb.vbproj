@@ -21,9 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="WpfControlLibraryVb">
-      <HintPath>WpfControlLibraryVb.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\WpfControlLibraryCsharp\WpfControlLibrary.csproj" />
   </ItemGroup>
 
 </Project>
