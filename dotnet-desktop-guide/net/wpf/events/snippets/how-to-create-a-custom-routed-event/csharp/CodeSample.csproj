@@ -8,9 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Reference Include="WpfControlLibrary">
-      <HintPath>WpfControlLibrary.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\WpfControlLibraryCsharp\WpfControlLibrary.csproj" />
   </ItemGroup>
 
   <ItemGroup>
