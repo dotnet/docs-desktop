@@ -1,6 +1,6 @@
 ---
 title: "ComponentResourceKey Markup Extension"
-ms.date: "02/08/2022"
+ms.date: "03/30/2017"
 ms.custom: devdivchpfy22
 f1_keywords: 
   - "ComponentResourceKey"
