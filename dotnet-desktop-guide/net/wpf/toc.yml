@@ -84,6 +84,8 @@ items:
       items:
       - name: Add an event handler using code
         href: events/how-to-add-an-event-handler-using-code.md
+      - name: Create a custom routed event
+        href: events/how-to-create-a-custom-routed-event.md
   - name: Properties
     items:
     - name: Dependency properties

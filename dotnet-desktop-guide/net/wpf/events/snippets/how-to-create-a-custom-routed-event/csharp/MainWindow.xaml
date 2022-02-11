@@ -1,0 +1,17 @@
+﻿<!--<MainWindowXaml>-->
+<Window x:Class="CodeSample.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:custom="clr-namespace:WpfControl;assembly=WpfControlLibrary"
+        Title="How to create a custom routed event" Height="100" Width="300">
+
+    <StackPanel Name="StackPanel1" custom:CustomButton.ConditionalClick="Handler_ConditionalClick">
+        <custom:CustomButton
+            Name="customButton"
+            ConditionalClick="Handler_ConditionalClick"
+            Content="Click to trigger a custom routed event"
+            Background="LightGray">
+        </custom:CustomButton>
+    </StackPanel>
+</Window>
+<!--</MainWindowXaml>-->
