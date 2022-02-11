@@ -612,6 +612,14 @@
         {
             "source_path": "dotnet-desktop-guide/framework/wpf/events/how-to-add-an-event-handler-using-code.md",
             "redirect_url": "/dotnet/desktop/wpf/advanced/how-to-add-an-event-handler-using-code?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/advanced/how-to-create-a-custom-routed-event.md",
+            "redirect_url": "/dotnet/desktop/wpf/events/how-to-create-a-custom-routed-event?view=netdesktop-6.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/events/how-to-create-a-custom-routed-event.md",
+            "redirect_url": "/dotnet/desktop/wpf/advanced/how-to-create-a-custom-routed-event?view=netframeworkdesktop-4.8"
         }
     ]
 }
