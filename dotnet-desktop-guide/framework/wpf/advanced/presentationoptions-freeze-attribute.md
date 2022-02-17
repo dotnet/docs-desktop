@@ -1,6 +1,7 @@
 ---
 title: "PresentationOptions:Freeze Attribute"
 ms.date: "03/30/2017"
+ms.custom: devdivchpfy22
 helpviewer_keywords: 
   - "Freeze attribute [WPF]"
   - "Freezable elements [WPF]"
@@ -23,8 +24,8 @@ Sets the <xref:System.Windows.Freezable.IsFrozen%2A> state to `true` on the cont
   
 ## XAML Values  
   
-|||  
-|-|-|  
+| Value| Description|  
+|------|------------|  
 |`PresentationOptions`|An XML namespace prefix, which can be any valid prefix string, per the XML 1.0 specification. The prefix `PresentationOptions` is used for identification purposes in this documentation.|  
 |`freezableElement`|An element that instantiates any derived class of <xref:System.Windows.Freezable>.|  
   

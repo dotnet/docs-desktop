@@ -1,6 +1,7 @@
 ---
 title: "mc:Ignorable Attribute"
 ms.date: "03/30/2017"
+ms.custom: devdivchpfy22
 helpviewer_keywords: 
   - "mc XML namespace prefix [WPF]"
   - "mc:Ignorable attribute"
@@ -38,8 +39,8 @@ Specifies which XML namespace prefixes encountered in a markup file may be ignor
   
 ## XAML Values  
   
-|||  
-|-|-|  
+| Value | Description |  
+|-------|-------------|  
 |*ignorablePrefix, ignorablePrefix1, etc.*|Any valid prefix string, per the XML 1.0 specification.|  
 |*ignorableUri*|Any valid URI for designating a namespace, per the XML 1.0 specification.|  
 |*ThisElementCanBeIgnored*|An element that can be ignored by [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)] processor implementations, if the underlying type cannot be resolved.|  

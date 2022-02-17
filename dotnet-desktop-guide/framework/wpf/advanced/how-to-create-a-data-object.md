@@ -1,6 +1,7 @@
 ---
 title: "How to: Create a Data Object"
 ms.date: "03/30/2017"
+ms.custom: devdivchpfy22
 dev_langs: 
   - "csharp"
   - "vb"
@@ -13,7 +14,7 @@ ms.assetid: 022fa142-717d-4fea-a53c-3b52e9d91aff
 # How to: Create a Data Object
 The following examples show various ways to create a data object using the constructors provided by the <xref:System.Windows.DataObject> class.  
   
-## Example  
+## DataObject(Object) constructor
   
 ### Description  
  The following example code creates a new data object and uses one of the overloaded constructors (<xref:System.Windows.DataObject.%23ctor%28System.Object%29>) to initialize the data object with a string.  In this case, an appropriate data format is determined automatically according to the stored data's type, and auto-converting of the stored data is allowed by default.  
@@ -29,7 +30,7 @@ The following examples show various ways to create a data object using the const
  [!code-csharp[DragDrop_DragDropMiscCode#_DragDrop_CreateDataObject_Simple_Condensed](~/samples/snippets/csharp/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/CSharp/Window1.xaml.cs#_dragdrop_createdataobject_simple_condensed)]
  [!code-vb[DragDrop_DragDropMiscCode#_DragDrop_CreateDataObject_Simple_Condensed](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/visualbasic/window1.xaml.vb#_dragdrop_createdataobject_simple_condensed)]  
   
-## Example  
+## DataObject(String, Object) constructor  
   
 ### Description  
  The following example code creates a new data object and uses one of the overloaded constructors (<xref:System.Windows.DataObject.%23ctor%28System.String%2CSystem.Object%29>) to initialize the data object with a string and a specified data format.  In this case the data format is specified by a string; the <xref:System.Windows.DataFormats> class provides a set of pre-defined type strings. Auto-converting of the stored data is allowed by default.  
@@ -45,7 +46,7 @@ The following examples show various ways to create a data object using the const
  [!code-csharp[DragDrop_DragDropMiscCode#_DragDrop_CreateDataObject_TypeString_Condensed](~/samples/snippets/csharp/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/CSharp/Window1.xaml.cs#_dragdrop_createdataobject_typestring_condensed)]
  [!code-vb[DragDrop_DragDropMiscCode#_DragDrop_CreateDataObject_TypeString_Condensed](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/visualbasic/window1.xaml.vb#_dragdrop_createdataobject_typestring_condensed)]  
   
-## Example  
+## DataObject() constructor
   
 ### Description  
  The following example code creates a new data object and uses one of the overloaded constructors (<xref:System.Windows.DataObject.%23ctor%2A>) to initialize the data object with a string and a specified data format.  In this case the data format is specified by a <xref:System.Type> parameter.  Auto-converting of the stored data is allowed by default.  
@@ -61,7 +62,7 @@ The following examples show various ways to create a data object using the const
  [!code-csharp[DragDrop_DragDropMiscCode#_DragDrop_CreateDataObject_Type_Condensed](~/samples/snippets/csharp/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/CSharp/Window1.xaml.cs#_dragdrop_createdataobject_type_condensed)]
  [!code-vb[DragDrop_DragDropMiscCode#_DragDrop_CreateDataObject_Type_Condensed](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DragDrop_DragDropMiscCode/visualbasic/window1.xaml.vb#_dragdrop_createdataobject_type_condensed)]  
   
-## Example  
+## DataObject(String, Object, Boolean) constructor  
   
 ### Description  
  The following example code creates a new data object and uses one of the overloaded constructors (<xref:System.Windows.DataObject.%23ctor%28System.String%2CSystem.Object%2CSystem.Boolean%29>) to initialize the data object with a string and a specified data format.  In this case the data format is specified by a string; the <xref:System.Windows.DataFormats> class provides a set of pre-defined type strings. This particular constructor overload enables the caller to specify whether auto-converting is allowed.  
