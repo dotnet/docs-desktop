@@ -59,18 +59,18 @@ In code-behind, the WPF application defines the `Handler_ConditionalClick` event
 When `CustomButton` is clicked:
 
 1. The `ConditionalClick` routed event is raised on `CustomButton`.
-1. The `Handler_ConditionalClick` event handler assigned to `CustomButton` is triggered.
+1. The `Handler_ConditionalClick` event handler attached to `CustomButton` is triggered.
 1. The `ConditionalClick` routed event traverses up the element tree to `StackPanel1`.
-1. The `Handler_ConditionalClick` event handler assigned to `StackPanel1` is triggered.
-1. The `ConditionalClick` routed event continues up the element tree potentially triggering other `ConditionalClick` event handlers assigned to other traversed elements.
+1. The `Handler_ConditionalClick` event handler attached to `StackPanel1` is triggered.
+1. The `ConditionalClick` routed event continues up the element tree potentially triggering other `ConditionalClick` event handlers attached to other traversed elements.
 
 The `Handler_ConditionalClick` event handler obtains the following information about the event that triggered it:
 
-- The [sender](xref:System.Windows.RoutedEventHandler) object, which is the element that the event handler is assigned to. The `sender` will be `CustomButton` the first time the handler runs, and `StackPanel1` the second time.
+- The [sender](xref:System.Windows.RoutedEventHandler) object, which is the element that the event handler is attached to. The `sender` will be `CustomButton` the first time the handler runs, and `StackPanel1` the second time.
 - The <xref:System.Windows.RoutedEventArgs.Source?displayProperty=nameWithType> object, which is the element that originally raised the event. In this example, the `Source` is always `CustomButton`.
 
 > [!NOTE]
-> A key difference between a routed event and a CLR event is that a routed event traverses the element tree, looking for handlers, whereas a CLR event is created by a source object and handled by an event subscriber. As a result, a routed event `sender` can be any traversed element in the element tree.
+> A key difference between a routed event and a CLR event is that a routed event traverses the element tree, looking for handlers, whereas a CLR event doesn't traverse the element tree and handlers can only attach to the source object that raised the event. As a result, a routed event `sender` can be any traversed element in the element tree.
 
 You can create a tunneling event the same way as a bubbling event, except you'll set the routing strategy in the event registration call to <xref:System.Windows.RoutingStrategy.Tunnel>. For more information on tunneling events, see [WPF input events](/dotnet/desktop/wpf/advanced/routed-events-overview?view=netframeworkdesktop-4.8&preserve-view=true#wpf-input-events).
 
