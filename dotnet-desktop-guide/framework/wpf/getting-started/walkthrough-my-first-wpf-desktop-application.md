@@ -211,6 +211,8 @@ In this section, you'll add two pages and an image to the application.
 
     2. In the **Add Existing Item** dialog, set the file filter to either **All Files** or **Image Files**, browse to the image file you want to use, and then select **Add**.
 
+    3. Select the image file in **Solution Explorer**, then in the **Properties** window, set **Build Action** to **Resource**.
+
 ## Build and run the application
 
 1. To build and run the application, press **F5** or select **Start Debugging** from the **Debug** menu.
