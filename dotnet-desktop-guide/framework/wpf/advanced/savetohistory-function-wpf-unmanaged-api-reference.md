@@ -1,7 +1,7 @@
 ---
 title: "SaveToHistory Function - WPF unmanaged API reference"
 titleSuffix: ""
-ms.date: "03/30/2017"
+ms.date: "02/18/2022"
 ms.custom: devdivchpfy22
 dev_langs: 
   - "cpp"

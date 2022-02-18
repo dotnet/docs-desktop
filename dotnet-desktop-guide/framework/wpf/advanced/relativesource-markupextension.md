@@ -1,7 +1,7 @@
 ---
 title: "RelativeSource MarkupExtension"
 description: Specifies properties of a RelativeSource binding source, within a Binding Markup Extension, or when setting the RelativeSource property of a Binding in XAML.
-ms.date: "03/30/2017"
+ms.date: "02/18/2022"
 ms.custom: devdivchpfy22
 f1_keywords:
   - "RelativeSource"

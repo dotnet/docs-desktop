@@ -1,6 +1,6 @@
 ---
 title: "How to: Create a Data Object"
-ms.date: "03/30/2017"
+ms.date: "02/18/2022"
 ms.custom: devdivchpfy22
 dev_langs: 
   - "csharp"

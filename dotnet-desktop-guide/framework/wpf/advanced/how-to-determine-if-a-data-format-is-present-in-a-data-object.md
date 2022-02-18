@@ -1,6 +1,6 @@
 ---
 title: "How to: Determine if a Data Format is Present in a Data Object"
-ms.date: "03/30/2017"
+ms.date: "02/18/2022"
 ms.custom: devdivchpfy22
 dev_langs: 
   - "csharp"
@@ -14,7 +14,7 @@ ms.assetid: e487a454-c9fc-4e53-aeaa-c458d059ad4c
 # How to: Determine if a Data Format is Present in a Data Object
 The following examples show how to use the various <xref:System.Windows.DataObject.GetDataPresent%2A> method overloads to query whether a particular data format is present in a data object.  
   
-##  GetDataPresent(String) overload 
+## GetDataPresent(String) overload
   
 ### Description  
  The following example code uses the <xref:System.Windows.DataObject.GetDataPresent%28System.String%29> overload to query for the presence of a particular data format by descriptor string.  

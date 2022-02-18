@@ -1,6 +1,6 @@
 ---
 title: "How to: Rotate Ink"
-ms.date: "03/30/2017"
+ms.date: "02/18/2022"
 ms.custom: devdivchpfy22
 dev_langs: 
   - "csharp"
@@ -11,7 +11,7 @@ helpviewer_keywords:
 ms.assetid: fac36cc9-dd01-41ca-9bde-9d33e3790bbe
 ---
 # How to: Rotate Ink
-## Code example to rotate Ink
+## Example to rotate Ink
  The following example copies the ink from an <xref:System.Windows.Controls.InkCanvas> to a <xref:System.Windows.Controls.Canvas> that contains an <xref:System.Windows.Controls.InkPresenter>.  When the application copies the ink, it also rotates the ink 90 degrees clockwise.  
   
  [!code-xaml[HowToRotateInk#1](~/samples/snippets/csharp/VS_Snippets_Wpf/HowToRotateInk/CSharp/Window1.xaml#1)]  

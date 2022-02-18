@@ -1,6 +1,6 @@
 ---
 title: "How to: Manipulate a Table's Row Groups through the RowGroups Property"
-ms.date: "03/30/2017"
+ms.date: "02/18/2022"
 ms.custom: devdivchpfy22
 dev_langs: 
   - "csharp"
@@ -15,7 +15,7 @@ ms.assetid: ea61440f-08ae-44ed-b314-5716aaaae3ed
 # How to: Manipulate a Table's Row Groups through the RowGroups Property
 This example demonstrates some of the more common operations that can be performed on a table's row groups through the <xref:System.Windows.Documents.Table.RowGroups%2A> property.  
   
-## Create a new table
+## Create a new table using Add method
  The following example creates a new table and then uses the <xref:System.Windows.Documents.TableRowGroupCollection.Add%2A> method to add columns to the table's <xref:System.Windows.Documents.Table.RowGroups%2A> collection.  
   
  [!code-csharp[TableSnippets2#_Table_RowGroups_Add](~/samples/snippets/csharp/VS_Snippets_Wpf/TableSnippets2/CSharp/Window1.xaml.cs#_table_rowgroups_add)]
@@ -30,7 +30,7 @@ This example demonstrates some of the more common operations that can be perform
  [!code-csharp[TableSnippets2#_Table_RowGroups_Insert](~/samples/snippets/csharp/VS_Snippets_Wpf/TableSnippets2/CSharp/Window1.xaml.cs#_table_rowgroups_insert)]
  [!code-vb[TableSnippets2#_Table_RowGroups_Insert](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TableSnippets2/visualbasic/window1.xaml.vb#_table_rowgroups_insert)]  
   
-## Add rows to a TableRowGroup
+## Add rows to the TableRowGroup
  The following example adds several rows to a particular <xref:System.Windows.Documents.TableRowGroup> (specified by index) in the table.  
   
  [!code-csharp[TableSnippets2#_Table_RowGroups_AddRows](~/samples/snippets/csharp/VS_Snippets_Wpf/TableSnippets2/CSharp/Window1.xaml.cs#_table_rowgroups_addrows)]

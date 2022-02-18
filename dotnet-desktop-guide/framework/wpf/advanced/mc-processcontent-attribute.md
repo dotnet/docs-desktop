@@ -1,6 +1,6 @@
 ---
 title: "mc:ProcessContent Attribute"
-ms.date: "03/30/2017"
+ms.date: "02/18/2022"
 ms.custom: devdivchpfy22
 helpviewer_keywords: 
   - "mc:ProcessContent attribute"
