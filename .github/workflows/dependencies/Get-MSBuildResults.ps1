@@ -31,10 +31,11 @@
     None
 
 .NOTES
-    Version:        1.3
+    Version:        1.5
     Author:         adegeo@microsoft.com
-    Creation Date:  07/02/2020
-    Purpose/Change: Add support for config file. Select distinct on project files.
+    Creation Date:  12/11/2020
+    Update Date:    02/17/2022
+    Purpose/Change: Move to VS 2022.
 #>
 
 [CmdletBinding()]
@@ -133,7 +134,7 @@ foreach ($item in $workingSet) {
         if ([int]$data[0] -eq 0) {
             $projectFile = Resolve-Path "$RepoRootDir\$($data[2])"
             $configFile = [System.IO.Path]::Combine([System.IO.Path]::GetDirectoryName($projectFile), "snippets.5000.json")
-            
+
             # Create the default build command
             "dotnet build `"$projectFile`"" | Out-File ".\run.bat"
 
@@ -147,13 +148,30 @@ foreach ($item in $workingSet) {
                     Write-Host "- Using visual studio as build host"
 
                     # Create the visual studio build command
-                    "CALL `"C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\Tools\VsDevCmd.bat`"`n" +
+                    "CALL `"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\Tools\VsDevCmd.bat`"`n" +
                     "msbuild.exe `"$projectFile`" -restore:True" `
                     | Out-File ".\run.bat"
                 }
+                elseif ($settings.host -eq "custom") {
+                  Write-Host "- Using custom build host: $($settings.command)"
+
+                  $ExecutionContext.InvokeCommand.ExpandString($settings.command) | Out-File ".\run.bat"
+                }
+                elseif ($settings.host -eq "dotnet") {
+                  Write-Host "- Using dotnet build host"
+
+                  "dotnet build `"$projectFile`"" | Out-File ".\run.bat"
+                }
+                else {
+                  throw "snippets.5000.json file isn't valid."
+                }
             }
 
-            $result = Invoke-Expression ".\run.bat" | Out-String
+            Write-Host "run.bat contents: "
+            Get-Content .\run.bat | Write-Host
+            Write-Host
+
+            Invoke-Expression ".\run.bat" | Tee-Object -Variable "result"
             $thisExitCode = 0
 
             if ($LASTEXITCODE -ne 0) {
@@ -172,7 +190,7 @@ foreach ($item in $workingSet) {
 
         # Too many projects found
         elseif ([int]$data[0] -eq 2) {
-            New-Result $data[1] $data[2] 2 "😕 Too many projects found. A single project or solution must existing in this directory or one of the parent directories."
+            New-Result $data[1] $data[2] 2 "😕 Too many projects found. A single project or solution must exist in this directory or one of the parent directories."
 
             $thisExitCode = 2
         }
