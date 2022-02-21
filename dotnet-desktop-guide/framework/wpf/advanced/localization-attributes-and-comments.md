@@ -89,7 +89,6 @@ ms.assetid: ead2d9ac-b709-4ec1-a924-39927a29d02f
 |NeverLocalize|Current value cannot be localized. This category is inherited by the children of an element.|  
   
 <a name="Localization_Comments"></a>
-
 ## Localization Comments  
  Localization.Comments contains free-form strings concerning the targeted value. Application developers can add information to give localizers hints about how the applications text should be translated. The format of the comments can be any string surrounded by "()". Use '\\' to escape characters.  
   
