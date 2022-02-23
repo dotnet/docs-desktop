@@ -1,7 +1,8 @@
 ---
 title: Localize an app
-ms.date: "02/18/2022"
+ms.date: "03/30/2017"
 ms.custom: devdivchpfy22
+description: Learn how to localize an application.
 dev_langs: 
   - "csharp"
   - "vb"

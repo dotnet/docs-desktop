@@ -1,7 +1,8 @@
 ---
 title: "How to: Retrieve Data in a Particular Data Format"
-ms.date: "02/18/2022"
+ms.date: "03/30/2017"
 ms.custom: devdivchpfy22
+description: Learn how to retrieve Data in a particular Data Format.
 dev_langs: 
   - "csharp"
   - "vb"

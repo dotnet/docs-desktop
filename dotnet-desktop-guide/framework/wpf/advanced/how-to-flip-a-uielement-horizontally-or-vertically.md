@@ -1,7 +1,8 @@
 ---
 title: "How to: Flip a UIElement Horizontally or Vertically"
-ms.date: "02/18/2022"
+ms.date: "03/30/2017"
 ms.custom: devdivchpfy22
+description: Learn how to flip a UIElement horizontally or vertically.
 helpviewer_keywords: 
   - "flipping UIElements [WPF]"
   - "UIElements [WPF], flipping"

@@ -1,7 +1,8 @@
 ---
 title: "How to: Manipulate a Table's Row Groups through the RowGroups Property"
-ms.date: "02/18/2022"
+ms.date: "03/30/2017"
 ms.custom: devdivchpfy22
+description: Learn how to manipulate a Table's Row Groups through the RowGroups property.
 dev_langs: 
   - "csharp"
   - "vb"

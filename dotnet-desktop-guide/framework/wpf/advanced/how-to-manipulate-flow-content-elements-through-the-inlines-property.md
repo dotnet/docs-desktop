@@ -1,7 +1,8 @@
 ---
 title: "How to: Manipulate Flow Content Elements through the Inlines Property"
-ms.date: "02/18/2022"
+ms.date: "03/30/2017"
 ms.custom: devdivchpfy22
+description: Learn how to manipulate Flow Content Elements through the Inlines property.
 dev_langs: 
   - "csharp"
   - "vb"

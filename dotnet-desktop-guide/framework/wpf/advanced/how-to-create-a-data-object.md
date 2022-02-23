@@ -1,7 +1,8 @@
 ---
 title: "How to: Create a Data Object"
-ms.date: "02/18/2022"
+ms.date: "03/30/2017"
 ms.custom: devdivchpfy22
+description: Learn how to create a Data Object.
 dev_langs: 
   - "csharp"
   - "vb"

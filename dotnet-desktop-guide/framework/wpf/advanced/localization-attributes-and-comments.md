@@ -1,7 +1,8 @@
 ---
 title: "Localization Attributes and Comments"
-ms.date: "02/18/2022"
+ms.date: "03/30/2017"
 ms.custom: devdivchpfy22
+description: Learn how to use localization attributes and comments.
 helpviewer_keywords: 
   - "localization [WPF], attributes"
   - "localization [WPF], comments"

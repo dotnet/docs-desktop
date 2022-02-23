@@ -1,7 +1,8 @@
 ---
 title: "How to: Change the FlowDirection of Content Programmatically"
-ms.date: "02/18/2022"
+ms.date: "03/30/2017"
 ms.custom: devdivchpfy22
+description: Learn how to change the FlowDirection of content programmatically.
 dev_langs: 
   - "csharp"
   - "vb"
