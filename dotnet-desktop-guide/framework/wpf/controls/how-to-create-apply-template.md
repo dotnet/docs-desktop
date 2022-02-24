@@ -4,6 +4,7 @@ description: Learn how to create and reference a control template in Windows Pre
 author: adegeo
 ms.author: adegeo
 ms.date: 12/03/2020
+ms.custom: devdivchpfy22
 no-loc: ["<Window>", "<ControlTemplate>", "<Ellipse>", "<ContentPresenter>", "<Trigger>", "<Setter>", "<PropertyTrigger>", "<Grid>", "<VisualStateManager.VisualStateGroups>", "<VisualStateGroup>", "<VisualState>", "<Storyboard>", "SizeToContent", "MinWidth", "TargetType", "Title"]
 ms.topic: how-to
 helpviewer_keywords: 
@@ -35,11 +36,9 @@ On the other hand, if you need a control with new functionality, different prope
 
 Create a new WPF application and in *MainWindow.xaml* (or another window of your choice) set the following properties on the **\<Window>** element:
 
-|     |     |
-| --- | --- |
-| **Title**         | `Template Intro Sample` |
-| **SizeToContent** | `WidthAndHeight` |
-| **MinWidth**      | `250` |
+| Title | SizeToContent | MinWidth |
+|-------|---------------|----------|
+| `Template Intro Sample` | `WidthAndHeight` | `250` |
 
 Set the content of the **\<Window>** element to the following XAML:
 
@@ -63,10 +62,9 @@ To start with, add a `Window.Resources` element to your *MainWindow.xaml* file:
 
 Create a new **\<ControlTemplate>** with the following properties set:
 
-|     |     |
-| --- | --- |
-| **x:Key**         | `roundbutton` |
-| **TargetType**    | `Button` |
+| x:Key | TargetType |
+| ----- | ---------- |
+| `roundbutton` | `Button` |
 
 This control template will be simple:
 

@@ -1,6 +1,8 @@
 ---
 title: "How to: Remove an Adorner from an Element"
 ms.date: "03/30/2017"
+ms.custom: devdivchpfy22
+description: Learn how to remove an Adorner from an Element.
 dev_langs: 
   - "csharp"
   - "vb"

@@ -1,6 +1,8 @@
 ---
 title: "How to: Position a Custom Context Menu in a RichTextBox"
 ms.date: "03/30/2017"
+ms.custom: devdivchpfy22
+description: Learn how to position a Custom Context Menu in a RichTextBox.
 dev_langs: 
   - "csharp"
   - "vb"

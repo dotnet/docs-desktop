@@ -1,6 +1,8 @@
 ---
 title: "How to: Save, Load, and Print RichTextBox Content"
 ms.date: "03/30/2017"
+ms.custom: devdivchpfy22
+description: Learn how to Save, Load, and Print RichTextBox content.
 dev_langs: 
   - "csharp"
   - "vb"

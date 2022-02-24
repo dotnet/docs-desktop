@@ -2,6 +2,7 @@
 title: "Adorners Overview"
 description: Learn about Windows Presentation Foundation Adorners, a special type of FrameworkElement that provides cues to a user, such as functional handles for elements.
 ms.date: "03/30/2017"
+ms.custom: devdivchpfy22
 ms.topic: overview
 dev_langs:
   - "csharp"
@@ -27,8 +28,8 @@ Common applications for adorners include:
 
 [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] provides a basic framework for adorning visual elements. The following table lists the primary types used when adorning objects, and their purpose. Several usage examples follow:
 
-|||
-|-|-|
+| Type | Description |
+|------|-------------|
 |<xref:System.Windows.Documents.Adorner>|An abstract base class from which all concrete adorner implementations inherit.|
 |<xref:System.Windows.Documents.AdornerLayer>|A class representing a rendering layer for the adorner(s) of one or more adorned elements.|
 |<xref:System.Windows.Documents.AdornerDecorator>|A class that enables an adorner layer to be associated with a collection of elements.|

@@ -2,6 +2,7 @@
 title: "StaticResource Markup Extension"
 description: Provides a value for any XAML property attribute by looking up a reference to an already defined resource.
 ms.date: "03/30/2017"
+ms.custom: devdivchpfy22
 f1_keywords: 
   - "StaticResource"
   - "StaticResourceExtension"
@@ -31,8 +32,8 @@ Provides a value for any [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla
   
 ## XAML Values  
   
-|||  
-|-|-|  
+| Value | Description |  
+|-------|-------------|  
 |`key`|The key for the requested resource. This key was initially assigned by the [x:Key Directive](/dotnet/desktop/xaml-services/xkey-directive) if a resource was created in markup, or was provided as the `key` parameter when calling <xref:System.Windows.ResourceDictionary.Add%2A?displayProperty=nameWithType> if the resource was created in code.|  
   
 ## Remarks  
