@@ -2,6 +2,8 @@
 title: "SaveToHistory Function - WPF unmanaged API reference"
 titleSuffix: ""
 ms.date: "03/30/2017"
+ms.custom: devdivchpfy22
+description: Learn about the SaveToHistory function.
 dev_langs: 
   - "cpp"
 api_name: 
@@ -26,8 +28,6 @@ HRESULT SaveToHistory(
 ## Parameters  
  pHistoryStream  
  A pointer to the history stream.  
-  
-## Requirements  
   
 ## Requirements  
  **Platforms:** See [.NET Framework System Requirements](/dotnet/framework/get-started/system-requirements).  

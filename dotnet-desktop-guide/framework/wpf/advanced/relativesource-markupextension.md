@@ -2,6 +2,7 @@
 title: "RelativeSource MarkupExtension"
 description: Specifies properties of a RelativeSource binding source, within a Binding Markup Extension, or when setting the RelativeSource property of a Binding in XAML.
 ms.date: "03/30/2017"
+ms.custom: devdivchpfy22
 f1_keywords:
   - "RelativeSource"
 helpviewer_keywords:
@@ -52,8 +53,8 @@ Specifies properties of a <xref:System.Windows.Data.RelativeSource> binding sour
 
 ## XAML Values
 
-|||
-|-|-|
+| Value | Description |
+|-------|-------------|
 |`modeEnumValue`|One of the following:<br /><br /> -   The string token `Self`; corresponds to a <xref:System.Windows.Data.RelativeSource> as created with its <xref:System.Windows.Data.RelativeSource.Mode%2A> property set to <xref:System.Windows.Data.RelativeSourceMode.Self>.<br />-   The string token `TemplatedParent`; corresponds to a <xref:System.Windows.Data.RelativeSource> as created with its <xref:System.Windows.Data.RelativeSource.Mode%2A> property set to <xref:System.Windows.Data.RelativeSourceMode.TemplatedParent>.<br />-   The string token `PreviousData`; corresponds to a <xref:System.Windows.Data.RelativeSource> as created with its <xref:System.Windows.Data.RelativeSource.Mode%2A> property set to <xref:System.Windows.Data.RelativeSourceMode.PreviousData>.<br />-   See below for information on `FindAncestor` mode.|
 |`FindAncestor`|The string token `FindAncestor`. Using this token enters a mode whereby a `RelativeSource` specifies an ancestor type and optionally an ancestor level. This corresponds to a <xref:System.Windows.Data.RelativeSource> as created with its <xref:System.Windows.Data.RelativeSource.Mode%2A> property set to <xref:System.Windows.Data.RelativeSourceMode.FindAncestor>.|
 |`typeName`|Required for `FindAncestor` mode. The name of a type, which fills the <xref:System.Windows.Data.RelativeSource.AncestorType%2A> property.|

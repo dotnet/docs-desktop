@@ -1,6 +1,8 @@
 ---
 title: "mc:ProcessContent Attribute"
 ms.date: "03/30/2017"
+ms.custom: devdivchpfy22
+description: Learn about the mc ProcessContent attribute.
 helpviewer_keywords: 
   - "mc:ProcessContent attribute"
   - "XAML [WPF], mc:ProcessContent attribute"
@@ -27,8 +29,8 @@ Specifies which [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.
   
 ## XAML Values  
   
-|||  
-|-|-|  
+| Value | Description |  
+|-------|-------------|  
 |*ignorablePrefix*|Any valid prefix string, per the XML 1.0 specification.|  
 |*ignorableUri*|Any valid URI for designating a namespace, per the XML 1.0 specification.|  
 |*ThisElementCanBeIgnored*|An element that can be ignored by [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)] processor implementations, if the underlying type cannot be resolved.|  

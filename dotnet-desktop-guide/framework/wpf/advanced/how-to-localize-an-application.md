@@ -1,6 +1,8 @@
 ---
 title: Localize an app
 ms.date: 03/30/2017
+ms.custom: devdivchpfy22
+description: Learn how to localize an application.
 dev_langs: 
   - "csharp"
   - "vb"
@@ -103,8 +105,8 @@ Now that you have created the LocBaml tool, you are ready to use it to parse Hel
   
 3. When you run LocBaml to parse files, the output consists of seven fields delimited by commas (.csv files) or tabs (.txt files). The following shows the parsed .csv file for the HelloApp.resources.dll:
 
-   | |
-   |-|
+   | Parsed .csv file |
+   |------------------|
    |HelloApp.g.en-US.resources:window1.baml,Stack1:System.Windows.Controls.StackPanel.$Content,Ignore,FALSE, FALSE,,#Text1;#Text2;|
    |HelloApp.g.en-US.resources:window1.baml,Text1:System.Windows.Controls.TextBlock.$Content,None,TRUE, TRUE,,Hello World|
    |HelloApp.g.en-US.resources:window1.baml,Text2:System.Windows.Controls.TextBlock.$Content,None,TRUE, TRUE,,Goodbye World|
