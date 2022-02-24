@@ -21,7 +21,7 @@ This overview discusses the order of precedence for properties that you use to c
   
  **Related properties for column headers in a GridView**  
   
-|||||  
+|  |  | ||  
 |-|-|-|-|  
 |**Classes**|<xref:System.Windows.Controls.GridView>|<xref:System.Windows.Controls.GridViewColumn>|<xref:System.Windows.Controls.GridViewColumnHeader>|  
 |**Context Menu Properties**|<xref:System.Windows.Controls.GridView.ColumnHeaderContextMenu%2A>|Not applicable|<xref:System.Windows.FrameworkElement.ContextMenu%2A>|  

@@ -13,7 +13,7 @@ ms.assetid: 97cf4d9f-0596-429e-8526-32a30aa4ae99
 # How to: Remove an Adorner from an Element
 This example shows how to programmatically remove a specific adorner from a specified <xref:System.Windows.UIElement>.  
   
-## Example  
+## Retrieve an adorner on a UIElement
  This verbose code example removes the first adorner in the array of adorners returned by <xref:System.Windows.Documents.AdornerLayer.GetAdorners%2A>.  This example happens to retrieve the adorners on a <xref:System.Windows.UIElement> named *myTextBox*.  If the element specified in the call to <xref:System.Windows.Documents.AdornerLayer.GetAdorners%2A> has no adorners, `null` is returned.  This code explicitly checks for a null array, and is best suited for applications where a null array is expected to be relatively common.  
   
  [!code-csharp[AdornersMiscCode#_RemoveSpecificAdornerLong](~/samples/snippets/csharp/VS_Snippets_Wpf/AdornersMiscCode/CSharp/Window1.xaml.cs#_removespecificadornerlong)]

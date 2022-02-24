@@ -274,7 +274,7 @@ This topic defines the terms that are used to describe the elements of XAML synt
  The following table shows a typical XAML root element broken down, showing the specific attributes of a root element:  
   
 | Attribute | Description |  
-|-----------------------------|-------------|  
+|-----------|-------------|  
 |`<Page`|Opening object element of the root element|  
 |`xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"`|The default ([!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)]) XAML namespace|  
 |`xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"`|The XAML language XAML namespace|  
