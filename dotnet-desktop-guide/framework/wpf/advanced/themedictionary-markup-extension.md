@@ -1,6 +1,8 @@
 ---
 title: "ThemeDictionary Markup Extension"
 ms.date: "03/30/2017"
+ms.custom: devdivchpfy22
+description: Learn about the ThemeDictionary Markup Extension.
 f1_keywords: 
   - "ThemeDictionaryExtension"
   - "ThemeDictionary"
@@ -30,8 +32,8 @@ Provides a way for custom control authors or applications that integrate third-p
   
 ## XAML Values  
   
-|||  
-|-|-|  
+| Value | Description |  
+|-------|-------------|  
 |`assemblyUri`|The uniform resource identifier (URI) of the assembly that contains theme information. Typically, this is a pack URI that references an assembly in the larger package. Assembly resources and pack URIs simplify deployment issues. For more information see [Pack URIs in WPF](../app-development/pack-uris-in-wpf.md).|  
   
 ## Remarks  
