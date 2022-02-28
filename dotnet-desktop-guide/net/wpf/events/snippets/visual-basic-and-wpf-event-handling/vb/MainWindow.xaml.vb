@@ -33,8 +33,7 @@ Namespace CodeSampleVb
         '<CodeButton_Click>
         ' Declare a new button using WithEvents.
         Dim WithEvents CodeButton As New Button With {
-            .Name = "CodeButton",
-            .Content = "New button and event handler created in code",
+            .Content = "New button",
             .Background = Brushes.Yellow
         }
 
