@@ -36,9 +36,11 @@ On the other hand, if you need a control with new functionality, different prope
 
 Create a new WPF application and in *MainWindow.xaml* (or another window of your choice) set the following properties on the **\<Window>** element:
 
-| Title | SizeToContent | MinWidth |
-|-------|---------------|----------|
-| `Template Intro Sample` | `WidthAndHeight` | `250` |
+| Property | Value |
+|----------|-------|
+| **Title**         | `Template Intro Sample` |
+| **SizeToContent** | `WidthAndHeight` |
+| **MinWidth**      |  `250` |
 
 Set the content of the **\<Window>** element to the following XAML:
 
@@ -62,9 +64,10 @@ To start with, add a `Window.Resources` element to your *MainWindow.xaml* file:
 
 Create a new **\<ControlTemplate>** with the following properties set:
 
-| x:Key | TargetType |
+| Property | Value |
 | ----- | ---------- |
-| `roundbutton` | `Button` |
+| **x:Key** | `roundbutton` |
+| **TargetType** | `Button` |
 
 This control template will be simple:
 
