@@ -28,7 +28,8 @@ To use the same handler for multiple events, comma-separate the `<object name>.<
 
 You can assign different handlers for the same event with multiple `Handles` statements. The order of the `Handles` statements doesn't determine the order in which handlers are invoked when the event occurs.
 
-To remove a handler that was added with `Handles`, call <xref:System.Windows.UIElement.RemoveHandler%2A>. For example, `RemoveHandler Button1.Click, AddressOf Button1_Click`.
+> [!TIP]
+> To remove a handler that was added with `Handles`, call [RemoveHandler](/dotnet/visual-basic/language-reference/statements/removehandler-statement). For example, `RemoveHandler Button1.Click, AddressOf Button1_Click`.
 
 ## Using 'Handles' in a WPF application
 
