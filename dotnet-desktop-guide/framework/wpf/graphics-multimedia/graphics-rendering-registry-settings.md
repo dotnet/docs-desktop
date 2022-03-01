@@ -2,6 +2,7 @@
 title: "Graphics Rendering Registry Settings"
 description: Find out how to use registry settings for troubleshooting, debugging, and product support purposes in the Windows Presentation Foundation (WPF).
 ms.date: "03/30/2017"
+ms.custom: devdivchpfy22
 helpviewer_keywords: 
   - "rendering graphics [WPF], registry settings"
   - "rendering graphics [WPF]"
@@ -71,8 +72,8 @@ This topic provides an overview of the [!INCLUDE[TLA2#tla_winclient](../../../in
   
  The required video driver setting takes a string of the following format:  
   
-| |  
-|-|  
+| String format |  
+|---------------|  
 |*YYYY* `/` *MM* `/` *DD*|  
   
  Where *YYYY* is the four-digit year, *MM* is the two-digit month, and *DD* is the two digit day. When this value is unset, [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] uses November, 2004 as its required video driver date.  

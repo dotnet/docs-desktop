@@ -1,6 +1,8 @@
 ---
 title: "StatusBar Styles and Templates"
+description: Learn about the StatusBar Styles and Templates.
 ms.date: "03/30/2017"
+ms.custom: devdivchpfy22
 helpviewer_keywords: 
   - "ControlTemplate [WPF], StatusBar"
   - "styles [WPF], StatusBar"

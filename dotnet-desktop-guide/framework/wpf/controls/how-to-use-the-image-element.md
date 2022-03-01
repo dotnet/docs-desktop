@@ -1,6 +1,8 @@
 ---
 title: "How to: Use the Image Element"
+description: Learn how to use the Image Element.
 ms.date: "03/30/2017"
+ms.custom: devdivchpfy22
 dev_langs: 
   - "csharp"
   - "vb"
@@ -13,7 +15,7 @@ ms.assetid: 5b92e74b-1b56-4756-ac64-d5e9e08d9854
 # How to: Use the Image Element
 This example shows how to include images in an application by using the <xref:System.Windows.Controls.Image> element.  
   
-## Example  
+## Define an image
  The following example shows how to render an image 200 pixels wide. In this [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)] example, both attribute syntax and property tag syntax are used to define the image. For more information on attribute syntax and property syntax, see [Dependency Properties Overview](../advanced/dependency-properties-overview.md). A <xref:System.Windows.Media.Imaging.BitmapImage> is used to define the image's source data and is explicitly defined for the property tag syntax example. In addition, the <xref:System.Windows.Media.Imaging.BitmapImage.DecodePixelWidth%2A> of the <xref:System.Windows.Media.Imaging.BitmapImage> is set to the same width as the <xref:System.Windows.FrameworkElement.Width%2A> of the <xref:System.Windows.Controls.Image>. This is done to ensure that the minimum amount of memory is used rendering the image.  
   
 > [!NOTE]
@@ -26,7 +28,7 @@ This example shows how to include images in an application by using the <xref:Sy
   
  [!code-xaml[ImageElementExample_snip#ImageSimpleExampleInlineMarkup](~/samples/snippets/csharp/VS_Snippets_Wpf/ImageElementExample_snip/CSharp/ImageSimpleExample.xaml#imagesimpleexampleinlinemarkup)]  
   
-## Example  
+## Code example to render an image 200 pixels wide
  The following example shows how to render an image 200 pixels wide using code.  
   
 > [!NOTE]
