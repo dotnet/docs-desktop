@@ -30,7 +30,7 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 ## StatusBarItem Parts  
  The <xref:System.Windows.Controls.Primitives.StatusBarItem> control does not have any named parts.  
   
-## StatusBar States  
+## StatusBarItem States
  The following table lists the visual states for the <xref:System.Windows.Controls.Primitives.StatusBarItem> control.  
   
 |VisualState Name|VisualStateGroup Name|Description|  
