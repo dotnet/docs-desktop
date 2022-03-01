@@ -1,6 +1,8 @@
 ---
 title: "TemplateBinding Markup Extension"
 ms.date: "03/30/2017"
+ms.custom: devdivchpfy22
+description: Learn about the TemplateBinding Markup Extension.
 f1_keywords: 
   - "TemplateBinding"
   - "TemplateBindingExtension"
@@ -26,8 +28,8 @@ Links the value of a property in a control template to be the value of another p
   
 ## XAML Values  
   
-|||  
-|-|-|  
+| Value | Description |  
+|-------|-------------|  
 |`propertyName`|<xref:System.Windows.DependencyProperty.Name%2A?displayProperty=nameWithType> of the property being set in the setter syntax.|  
 |`sourceProperty`|Another dependency property that exists on the type being templated, specified by its <xref:System.Windows.DependencyProperty.Name%2A?displayProperty=nameWithType>.<br /><br /> - or -<br /><br /> A "dotted-down" property name that is defined by a different type than the target type being templated. This is actually a <xref:System.Windows.PropertyPath>. See [PropertyPath XAML Syntax](propertypath-xaml-syntax.md).|  
   

@@ -2,6 +2,7 @@
 title: "XAML Syntax In Detail"
 description: Learn about terms that are used to describe the elements of XAML syntax for Windows Presentation Foundation and other frameworks that use XAML.
 ms.date: "03/30/2017"
+ms.custom: devdivchpfy22
 ms.topic: overview
 helpviewer_keywords: 
   - "XML [WPF], namespaces"
@@ -273,8 +274,8 @@ This topic defines the terms that are used to describe the elements of XAML synt
 ## Anatomy of a XAML Root Element  
  The following table shows a typical XAML root element broken down, showing the specific attributes of a root element:  
   
-|||  
-|-|-|  
+| Attribute | Description |  
+|-----------|-------------|  
 |`<Page`|Opening object element of the root element|  
 |`xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"`|The default (WPF) XAML namespace|  
 |`xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"`|The XAML language XAML namespace|  

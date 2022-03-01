@@ -1,6 +1,8 @@
 ---
 title: "GridView Column Header Styles and Templates Overview"
 ms.date: "03/30/2017"
+ms.custom: devdivchpfy22
+description: Learn about the GridView column header styles and templates.
 helpviewer_keywords: 
   - "column headers [WPF], customizing"
   - "ListView controls [WPF], GridView column header styles"
@@ -19,9 +21,8 @@ This overview discusses the order of precedence for properties that you use to c
   
  **Related properties for column headers in a GridView**  
   
-|||||  
+|  | <xref:System.Windows.Controls.GridView> | <xref:System.Windows.Controls.GridViewColumn> |<xref:System.Windows.Controls.GridViewColumnHeader>|  
 |-|-|-|-|  
-|**Classes**|<xref:System.Windows.Controls.GridView>|<xref:System.Windows.Controls.GridViewColumn>|<xref:System.Windows.Controls.GridViewColumnHeader>|  
 |**Context Menu Properties**|<xref:System.Windows.Controls.GridView.ColumnHeaderContextMenu%2A>|Not applicable|<xref:System.Windows.FrameworkElement.ContextMenu%2A>|  
 |**ToolTip**<br /><br /> **Properties**|<xref:System.Windows.Controls.GridView.ColumnHeaderToolTip%2A>|Not applicable|<xref:System.Windows.FrameworkElement.ToolTip%2A>|  
 |**Header Template**<br /><br /> **Properties**|<xref:System.Windows.Controls.GridView.ColumnHeaderTemplate%2A> <sup>1</sup>/<br /><br /> <xref:System.Windows.Controls.GridView.ColumnHeaderTemplateSelector%2A>|<xref:System.Windows.Controls.GridViewColumn.HeaderTemplate%2A> <sup>1</sup>/<br /><br /> <xref:System.Windows.Controls.GridViewColumn.HeaderTemplateSelector%2A>|<xref:System.Windows.Controls.ContentControl.ContentTemplate%2A> <sup>1</sup>/<br /><br /> <xref:System.Windows.Controls.ContentControl.ContentTemplateSelector%2A>|  
