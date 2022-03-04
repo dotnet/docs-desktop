@@ -16,7 +16,7 @@ ms.assetid: 6885a730-e054-4c16-8c1e-ffe17b1f7c32
 # How to: Control a MediaElement (Play, Pause, Stop, Volume, and Speed)
 The following example shows how to control playback of media using a <xref:System.Windows.Controls.MediaElement>. The example creates a simple media player that allows you to play, pause, stop, and skip back and forth in the media as well as adjust the volume and speed ratio.  
   
-## Create a UI
+## Create the UI
  The code below creates the UI.  
   
 > [!NOTE]

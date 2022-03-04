@@ -28,7 +28,7 @@ This example shows how to include images in an application by using the <xref:Sy
   
  [!code-xaml[ImageElementExample_snip#ImageSimpleExampleInlineMarkup](~/samples/snippets/csharp/VS_Snippets_Wpf/ImageElementExample_snip/CSharp/ImageSimpleExample.xaml#imagesimpleexampleinlinemarkup)]  
   
-## Code example to render an image 200 pixels wide
+## Render an image
  The following example shows how to render an image 200 pixels wide using code.  
   
 > [!NOTE]
