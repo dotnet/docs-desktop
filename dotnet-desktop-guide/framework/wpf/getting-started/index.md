@@ -2,6 +2,7 @@
 title: "Getting Started"
 description: Create desktop client applications with the UI framework of Windows Presentation Foundation (WPF), a subset of the .NET Framework.
 ms.date: "01/26/2018"
+ms.custom: devdivchpfy22
 helpviewer_keywords: 
   - "getting started [WPF]"
   - "introduction [WPF]"
@@ -14,8 +15,8 @@ Windows Presentation Foundation (WPF) is a UI framework that creates desktop cli
   
 ## Where should I start?  
   
-|||  
-|-|-|  
+| Action | Go to |  
+|--------|-------|  
 |I want to jump right in…|[Walkthrough: My first WPF desktop application](walkthrough-my-first-wpf-desktop-application.md)|  
 |How do I design the application UI?|[Designing XAML in Visual Studio](/visualstudio/designers/designing-xaml-in-visual-studio)|  
 |New to .NET?|[Overview of the .NET Framework](/dotnet/framework/get-started/overview)<br /><br /> [Getting Started with Visual C# and Visual Basic](/visualstudio/ide/quickstart-visual-basic-console)|  

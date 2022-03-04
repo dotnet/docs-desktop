@@ -1,6 +1,8 @@
 ---
 title: "StatusBar Styles and Templates"
+description: Learn about the StatusBar Styles and Templates.
 ms.date: "03/30/2017"
+ms.custom: devdivchpfy22
 helpviewer_keywords: 
   - "ControlTemplate [WPF], StatusBar"
   - "styles [WPF], StatusBar"
@@ -28,7 +30,7 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 ## StatusBarItem Parts  
  The <xref:System.Windows.Controls.Primitives.StatusBarItem> control does not have any named parts.  
   
-## StatusBar States  
+## StatusBarItem States
  The following table lists the visual states for the <xref:System.Windows.Controls.Primitives.StatusBarItem> control.  
   
 |VisualState Name|VisualStateGroup Name|Description|  
