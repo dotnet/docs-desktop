@@ -1,7 +1,9 @@
 ---
 title: "Extend Glass Frame Into a WPF app"
 titleSuffix: ""
+description: Learn about how to Extend Glass Frame into a WPF app.
 ms.date: "03/30/2017"
+ms.custom: devdivchpfy22
 dev_langs:
   - "csharp"
   - "vb"
@@ -20,7 +22,7 @@ This topic demonstrates how to extend the Windows Vista glass frame into the cli
 > [!NOTE]
 > This example will only work on a Windows Vista machine running the Desktop Window Manager (DWM) with glass enabled. Windows Vista Home Basic edition does not support the transparent glass effect. Areas that would typically render with the transparent glass effect on other editions of Windows Vista are rendered opaque.
 
-## Example
+## Extended Glass Frame in an address bar
 
 The following image illustrates the glass frame extended into the address bar of Internet Explorer 7:
 
@@ -60,7 +62,7 @@ End Function
 
 [DwmExtendFrameIntoClientArea](/windows/desktop/api/dwmapi/nf-dwmapi-dwmextendframeintoclientarea) is the DWM function that extends the frame into the client area. It takes two parameters; a window handle and a [MARGINS](/windows/win32/api/uxtheme/ns-uxtheme-margins) structure. [MARGINS](/windows/win32/api/uxtheme/ns-uxtheme-margins) is used to tell the DWM how much extra the frame should be extended into the client area.
 
-## Example
+## Extended Glass Frame on the Loaded event
 
 To use the [DwmExtendFrameIntoClientArea](/windows/desktop/api/dwmapi/nf-dwmapi-dwmextendframeintoclientarea) function, a window handle must be obtained. In WPF, the window handle can be obtained from the <xref:System.Windows.Interop.HwndSource.Handle%2A> property of an <xref:System.Windows.Interop.HwndSource>. In the following example, the frame is extended into the client area on the <xref:System.Windows.FrameworkElement.Loaded> event of the window.
 
@@ -105,7 +107,7 @@ void OnLoaded(object sender, RoutedEventArgs e)
 }
 ```
 
-## Example
+## Extended Glass Frame in client area
 
 The following example shows a simple window in which the frame is extended into the client area. The frame is extended behind the top border that contains the two <xref:System.Windows.Controls.TextBox> objects.
 

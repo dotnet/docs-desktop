@@ -338,6 +338,11 @@
             "SourceUrl": "/dotnet/desktop/wpf/advanced/how-to-create-a-custom-routed-event?view=netframeworkdesktop-4.8",
             "TargetUrl": "/dotnet/desktop/wpf/events/how-to-create-a-custom-routed-event?view=netdesktop-6.0"
         },
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/wpf/advanced/visual-basic-and-wpf-event-handling?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/wpf/events/visual-basic-and-wpf-event-handling?view=netdesktop-6.0"
+        },
 
         // Systems - Properties
         {
