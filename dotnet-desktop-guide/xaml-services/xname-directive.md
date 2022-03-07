@@ -1,6 +1,8 @@
 ---
 title: "x:Name Directive"
+description: Learn about the x:Name Directive.
 ms.date: "03/30/2017"
+ms.custom: devdivchpfy22
 f1_keywords: 
   - "x:Name"
   - "xName"
@@ -23,8 +25,8 @@ Uniquely identifies XAML-defined elements in a XAML namescope. XAML namescopes a
 
 ## XAML Values
 
-|||
-|-|-|
+| Value | Description |
+|-------|-------------|
 |`XAMLNameValue`|A string that conforms to the restrictions of the [XamlName Grammar](xamlname-grammar.md).|
 
 ## Remarks
