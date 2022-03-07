@@ -38,7 +38,7 @@ This topic describes the timing behaviors of animations and other <xref:System.W
 |----------|-----------------|----------------|  
 |Simple duration|The length of time a timeline takes to make a single forward iteration.|<xref:System.Windows.Media.Animation.Timeline.Duration%2A>|
 |One repetition|The length of time it takes for a timeline to play forward once and, if the <xref:System.Windows.Media.Animation.Timeline.AutoReverse%2A> property is true, play backwards once.|<xref:System.Windows.Media.Animation.Timeline.Duration%2A>, <xref:System.Windows.Media.Animation.Timeline.AutoReverse%2A>|
-|Active period|The length of time it takes for a timeline to complete all the repetitions specified by its <xref:System.Windows.Media.Animation.RepeatBehavior> property.|<xref:System.Windows.Media.Animation.Timeline.Duration%2A>, <xref:System.Windows.Media.Animation.Timeline.AutoReverse%2A>, <xref:System.Windows.Media.Animation.RepeatBehavior>| 
+|Active period|The length of time it takes for a timeline to complete all the repetitions specified by its <xref:System.Windows.Media.Animation.RepeatBehavior> property.|<xref:System.Windows.Media.Animation.Timeline.Duration%2A>, <xref:System.Windows.Media.Animation.Timeline.AutoReverse%2A>, <xref:System.Windows.Media.Animation.RepeatBehavior>|
   
 <a name="duration"></a>
 ### The Duration Property  
