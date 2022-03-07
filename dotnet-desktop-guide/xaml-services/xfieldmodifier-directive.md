@@ -1,6 +1,8 @@
 ---
 title: "x:FieldModifier Directive"
+description: Learn about the x:FieldModifier Directive.
 ms.date: "03/30/2017"
+ms.custom: devdivchpfy22
 helpviewer_keywords: 
   - "FieldModifier attribute in XAML [XAML Services]"
   - "x:FieldModifier attribute [XAML Services]"
@@ -18,8 +20,8 @@ Modifies XAML compilation behavior so that fields for named object references ar
 
 ## XAML Values
 
-|||
-|-|-|
+| Value | Description |
+|-------|-------------|
 |*Public*|The exact string you pass to specify <xref:System.Reflection.TypeAttributes.Public?displayProperty=nameWithType> versus <xref:System.Reflection.TypeAttributes.NotPublic?displayProperty=nameWithType> varies, depending on the code-behind programming language that is used. See Remarks.|
 
 ## Dependencies

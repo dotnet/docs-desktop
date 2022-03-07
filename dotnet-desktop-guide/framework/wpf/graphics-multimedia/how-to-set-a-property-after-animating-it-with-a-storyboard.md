@@ -1,6 +1,8 @@
 ---
 title: "How to: Set a Property After Animating It with a Storyboard"
+description: Learn how to set a Property after animating it with a Storyboard.
 ms.date: "03/30/2017"
+ms.custom: devdivchpfy22v
 dev_langs: 
   - "csharp"
   - "vb"
@@ -11,12 +13,12 @@ ms.assetid: 79466556-4dbf-40bd-9c1e-a77613b07077
 # How to: Set a Property After Animating It with a Storyboard
 In some cases, it might appear that you can't change the value of a property after it has been animated.  
   
-## Example  
+## Animate the color of a SolidColorBrush
  In the following example, a <xref:System.Windows.Media.Animation.Storyboard> is used to animate the color of a <xref:System.Windows.Media.SolidColorBrush>. The storyboard is triggered when the button is clicked. The <xref:System.Windows.Media.Animation.Timeline.Completed> event is handled so that the program is notified when the <xref:System.Windows.Media.Animation.ColorAnimation> completes.  
   
  [!code-xaml[timingbehaviors_snip#GraphicsMMButton1Declaration](~/samples/snippets/csharp/VS_Snippets_Wpf/timingbehaviors_snip/CSharp/AnimateThenSetPropertyExample.xaml#graphicsmmbutton1declaration)]  
   
-## Example  
+## Change the brush color
  After the <xref:System.Windows.Media.Animation.ColorAnimation> completes, the program attempts to change the brush's color to blue.  
   
  [!code-csharp[timingbehaviors_snip#GraphicsMMButton1Handler](~/samples/snippets/csharp/VS_Snippets_Wpf/timingbehaviors_snip/CSharp/AnimateThenSetPropertyExample.xaml.cs#graphicsmmbutton1handler)]

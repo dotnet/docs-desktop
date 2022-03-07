@@ -1,6 +1,8 @@
 ---
 title: "How to: Seek a Storyboard"
+description: Learn how to seek a Storyboard.
 ms.date: "03/30/2017"
+ms.custom: devdivchpfy22
 dev_langs: 
   - "csharp"
   - "vb"
@@ -12,12 +14,12 @@ ms.assetid: 887bb39a-0c2a-4ae8-956d-1d9f6f8ebbfc
 # How to: Seek a Storyboard
 The following example shows how to use the <xref:System.Windows.Media.Animation.Storyboard.Seek%2A> method of a <xref:System.Windows.Media.Animation.Storyboard> to jump to any position in a storyboard animation.  
   
-## Example  
+## Sample XAML markup
  Below is the XAML markup for the sample.  
   
  [!code-xaml[SeekStoryboard_snip#SeekStoryboardExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/SeekStoryboard_snip/CSharp/SeekStoryboardExample.xaml#seekstoryboardexamplewholepage)]  
   
-## Example  
+## Code with XAML
  Below is the code used with the XAML code above.  
   
  [!code-csharp[SeekStoryboard_snip#SeekStoryboardCodeBehindExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/SeekStoryboard_snip/CSharp/SeekStoryboardExample.xaml.cs#seekstoryboardcodebehindexamplewholepage)]

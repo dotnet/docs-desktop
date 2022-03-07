@@ -1,6 +1,8 @@
 ---
 title: "x:Member Directive"
+description: Learn about the x:Member Directive.
 ms.date: "03/30/2017"
+ms.custom: devdivchpfy22
 ms.assetid: 4d8394ef-644c-4331-b6c5-be855d392980
 ---
 # x:Member Directive
@@ -20,8 +22,8 @@ Declares a XAML member in markup.
 
 ## XAML Values
 
-|||
-|-|-|
+| Value | Description |
+|-------|-------------|
 |`className`|Name of the backing class or partial class for the XAML production.|
 |`memberName`|Member name of the property being defined.|
 

@@ -1,6 +1,8 @@
 ---
 title: "x:Array Markup Extension"
+description: Learn about the x:Array Markup Extension.
 ms.date: "03/30/2017"
+ms.custom: devdivchpfy22
 f1_keywords: 
   - "x:Array"
   - "xArray"
@@ -23,8 +25,8 @@ Provides general support for arrays of objects in XAML through a markup extensio
 
 ## XAML Values
 
-|||
-|-|-|
+| Value | Description |
+|-------|-------------|
 |`typeName`|The name of the type that your `x:Array` will contain. `typeName` may be (and often is) prefixed for a XAML namespace that contains the XAML type definitions.|
 |`arrayContents`|The items content that is assigned to the intrinsic `ArrayExtension.Items` property. Typically, these items are specified as one or more object elements contained within the `x:Array` opening and closing tags. Objects specified here are expected to be assignable to the XAML type specified in `typeName`.|
 

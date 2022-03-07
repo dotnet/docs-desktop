@@ -2,6 +2,7 @@
 title: "Storyboards Overview"
 description: Organize and apply animations in storyboards. Use property-targeting syntax and combine timelines in Windows Presentation Foundation (WPF).
 ms.date: "03/30/2017"
+ms.custom: devdivchpfy22
 dev_langs:
   - "csharp"
   - "vb"
@@ -147,8 +148,8 @@ The following sections describe indirect property targeting syntax in more detai
 
 To target a property of a freezable in [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)], use the following syntax.
 
-| |
-|-|
+| Property syntax |
+|-----------------|
 |*ElementPropertyName* `.` *FreezablePropertyName*|
 
 Where
@@ -165,8 +166,8 @@ Sometimes you need to target a freezable contained in a collection or array.
 
 To target a freezable contained in a collection, you use the following path syntax.
 
-| |
-|-|
+| Path syntax |
+|-------------|
 |*ElementPropertyName* `.Children[` *CollectionIndex* `].` *FreezablePropertyName*|
 
 Where *CollectionIndex* is the index of the object in its array or collection.
@@ -193,8 +194,8 @@ The following is an example of a dependency property chain that targets the <xre
 
 You also need to specify a <xref:System.Windows.PropertyPath.Path%2A>. A <xref:System.Windows.PropertyPath.Path%2A> is a <xref:System.String> that tells the <xref:System.Windows.PropertyPath.Path%2A> how to interpret its <xref:System.Windows.PropertyPath.PathParameters%2A>. It uses the following syntax.
 
-| |
-|-|
+| Property path syntax |
+|----------------------|
 |`(` *OwnerPropertyArrayIndex* `).(` *FreezablePropertyArrayIndex* `)`|
 
 Where
@@ -217,8 +218,8 @@ Sometimes you need to target a freezable contained in a collection or array. For
 
 To target a <xref:System.Windows.Freezable> contained in a collection, you use the following path syntax.
 
-| |
-|-|
+| Path syntax |
+|-------------|
 |`(` *OwnerPropertyArrayIndex* `).(` *CollectionChildrenPropertyArrayIndex* `)` `[` *CollectionIndex* `].(` *FreezablePropertyArrayIndex* `)`|
 
 Where *CollectionIndex* is the index of the object in its array or collection.

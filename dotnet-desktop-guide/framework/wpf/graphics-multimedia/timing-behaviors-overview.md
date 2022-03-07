@@ -1,6 +1,8 @@
 ---
 title: "Timing Behaviors Overview"
+description: Learn more about the Timing Behaviors Overview.
 ms.date: "03/30/2017"
+ms.custom: devdivchpfy22
 helpviewer_keywords: 
   - "timing behaviors [WPF]"
   - "behaviors [WPF], timing"
@@ -32,11 +34,11 @@ This topic describes the timing behaviors of animations and other <xref:System.W
 ## Properties that Control the Length of a Timeline  
  A <xref:System.Windows.Media.Animation.Timeline> represents a segment of time, and the length of a timeline can be described in different ways. The following table defines several terms for describing the length of a timeline.  
   
-|Term|Description|Properties||||  
-|----------|-----------------|----------------|-|-|-|  
-|Simple duration|The length of time a timeline takes to make a single forward iteration.|<xref:System.Windows.Media.Animation.Timeline.Duration%2A>||||  
-|One repetition|The length of time it takes for a timeline to play forward once and, if the <xref:System.Windows.Media.Animation.Timeline.AutoReverse%2A> property is true, play backwards once.|<xref:System.Windows.Media.Animation.Timeline.Duration%2A>, <xref:System.Windows.Media.Animation.Timeline.AutoReverse%2A>||||  
-|Active period|The length of time it takes for a timeline to complete all the repetitions specified by its <xref:System.Windows.Media.Animation.RepeatBehavior> property.|<xref:System.Windows.Media.Animation.Timeline.Duration%2A>, <xref:System.Windows.Media.Animation.Timeline.AutoReverse%2A>, <xref:System.Windows.Media.Animation.RepeatBehavior>||||  
+|Term|Description|Properties|  
+|----------|-----------------|----------------|  
+|Simple duration|The length of time a timeline takes to make a single forward iteration.|<xref:System.Windows.Media.Animation.Timeline.Duration%2A>|
+|One repetition|The length of time it takes for a timeline to play forward once and, if the <xref:System.Windows.Media.Animation.Timeline.AutoReverse%2A> property is true, play backwards once.|<xref:System.Windows.Media.Animation.Timeline.Duration%2A>, <xref:System.Windows.Media.Animation.Timeline.AutoReverse%2A>|
+|Active period|The length of time it takes for a timeline to complete all the repetitions specified by its <xref:System.Windows.Media.Animation.RepeatBehavior> property.|<xref:System.Windows.Media.Animation.Timeline.Duration%2A>, <xref:System.Windows.Media.Animation.Timeline.AutoReverse%2A>, <xref:System.Windows.Media.Animation.RepeatBehavior>| 
   
 <a name="duration"></a>
 ### The Duration Property  
