@@ -1,6 +1,6 @@
 ---
 title: "Transforms Overview"
-description: Learn more about the transformations.
+description: Learn about the transformations.
 ms.date: "03/30/2017"
 ms.custom: devdivchpfy22
 helpviewer_keywords: 

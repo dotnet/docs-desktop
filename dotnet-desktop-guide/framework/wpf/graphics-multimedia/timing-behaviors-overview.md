@@ -1,6 +1,6 @@
 ---
 title: "Timing Behaviors Overview"
-description: Learn more about the Timing Behaviors Overview.
+description: Learn about the Timing Behaviors Overview.
 ms.date: "03/30/2017"
 ms.custom: devdivchpfy22
 helpviewer_keywords: 
