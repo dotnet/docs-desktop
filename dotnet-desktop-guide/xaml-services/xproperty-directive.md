@@ -1,6 +1,8 @@
 ---
 title: "x:Property Directive"
+description: Learn about the x:Property Directive.
 ms.date: "03/30/2017"
+ms.custom: devdivchpfy22
 ms.assetid: 618555a8-c893-455c-810f-ac54cd24ef10
 ---
 # x:Property Directive
@@ -20,8 +22,8 @@ Declares a XAML property in markup.
 
 ## XAML Values
 
-|||
-|-|-|
+| Value | Description |
+|-------|-------------|
 |`className`|Name of the backing class or partial class for the XAML production.|
 |`propertyName`|Member name of the property being defined.|
 |`propertyType`|Type name (or other string form, framework-specific) that specifies the type of this property.|
