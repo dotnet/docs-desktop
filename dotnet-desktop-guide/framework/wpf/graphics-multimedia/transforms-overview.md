@@ -1,6 +1,8 @@
 ---
 title: "Transforms Overview"
+description: Learn about the transformations.
 ms.date: "03/30/2017"
+ms.custom: devdivchpfy22
 helpviewer_keywords: 
   - "transformations [WPF], about transformations"
   - "classes [WPF], 2D transform"
@@ -27,8 +29,8 @@ This topic describes how to use the 2D <xref:System.Windows.Media.Transform> cla
   
 ### A 2D transformation matrix  
   
-||||  
-|-|-|-|  
+| X-axis| Y-axis| Affine transformation |  
+|-------|-------|-----------------------|  
 |<xref:System.Windows.Media.Matrix.M11%2A><br /><br /> Default: 1.0|<xref:System.Windows.Media.Matrix.M12%2A><br /><br /> Default: 0.0|0.0|  
 |<xref:System.Windows.Media.Matrix.M21%2A><br /><br /> Default: 0.0|<xref:System.Windows.Media.Matrix.M22%2A><br /><br /> Default: 1.0|0.0|  
 |<xref:System.Windows.Media.Matrix.OffsetX%2A><br /><br /> Default: 0.0|<xref:System.Windows.Media.Matrix.OffsetY%2A><br /><br /> Default: 0.0|1.0|  

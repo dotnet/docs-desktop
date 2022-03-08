@@ -1,6 +1,8 @@
 ---
 title: "x:Members Directive"
+description: Learn about the x:Members Directive.
 ms.date: "03/30/2017"
+ms.custom: devdivchpfy22
 ms.assetid: 155b393d-3b49-4c5a-8c9e-b3d9893af4e4
 ---
 # x:Members Directive
@@ -18,8 +20,8 @@ Holds a set of members that are defined in markup, which apply to the x:Class of
 
 ## XAML Values
 
-|||
-|-|-|
+| Value | Description |
+|-------|-------------|
 |`className`|Name of the backing class or partial class for the XAML production. See Remarks.|
 |`oneOrMoreMembers`|One or more object elements that represent member definitions. Typically, these are `x:Property` object elements. See Remarks.|
 
