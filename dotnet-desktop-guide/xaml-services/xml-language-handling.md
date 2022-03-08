@@ -1,6 +1,8 @@
 ---
 title: "xml:lang Handling in XAML"
+description: Learn about the xml:lang Handling in XAML.
 ms.date: "03/30/2017"
+ms.custom: devdivchpfy22
 helpviewer_keywords: 
   - "XAML [XAML Services], xml:lang attribute"
   - "xml:lang attribute [XAML Services]"
@@ -20,8 +22,8 @@ The `xml:lang` attribute is an XML-defined attribute that declares the language 
 
 ## XAML Values
 
-|||
-|-|-|
+| Value | Description |
+|-------|-------------|
 |*rfc3066lang*|A string that is derived from the [RFC 3066](https://www.ietf.org/rfc/rfc3066.txt) standard and identifies either a language or a language-region. When it is the latter, the language and region are separated by a single hyphen. See <xref:System.Windows.Markup.XmlLanguage> for more information about the values and format.|
 
 ## Remarks

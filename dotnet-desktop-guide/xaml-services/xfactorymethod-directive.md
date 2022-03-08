@@ -1,6 +1,8 @@
 ---
 title: "x:FactoryMethod Directive"
+description: Learn about the x:FactoryMethod Directive.
 ms.date: "03/30/2017"
+ms.custom: devdivchpfy22
 helpviewer_keywords: 
   - "XAML. x:FactoryMethod directive [XAML Services]"
   - "FactoryMethod directive in XAML [XAML Services]"
@@ -30,8 +32,8 @@ Specifies a method other than a constructor that a XAML processor should use to 
   
 ## XAML Values  
   
-|||  
-|-|-|  
+| Value | Description |  
+|-------|-------------|  
 |`methodname`|The string method name of a method that XAML processors call to initialize the instance specified as `object`. See Remarks.|  
 |`oneOrMoreObjectElements`|One or more object elements for objects that specify factory method parameters. Order is significant; it signifies the order in which arguments should be passed to the factory method.|  
   

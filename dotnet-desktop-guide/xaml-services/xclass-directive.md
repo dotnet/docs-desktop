@@ -1,6 +1,8 @@
 ---
 title: "x:Class Directive"
+description: Learn about the x:Class Directive.
 ms.date: "03/30/2017"
+ms.custom: devdivchpfy22
 f1_keywords: 
   - "x:Class"
   - "xClass"
@@ -25,8 +27,8 @@ Configures XAML markup compilation to join partial classes between markup and co
 
 ## XAML Values
 
-|||
-|-|-|
+| Value | Description |
+|-------|-------------|
 |`namespace`|Optional. Specifies a CLR namespace that contains the partial class identified by `classname`. If `namespace` is specified, a dot (.) separates `namespace` and `classname`. See Remarks.|
 |`classname`|Required. Specifies the CLR name of the partial class that connects the loaded XAML and your code-behind for that XAML.|
 

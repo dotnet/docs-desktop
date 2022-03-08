@@ -1,6 +1,8 @@
 ---
 title: "{} Escape Sequence - Markup Extension"
+description: Learn about the Escape Sequence.
 ms.date: "03/30/2017"
+ms.custom: devdivchpfy22
 f1_keywords: 
   - "{}"
 helpviewer_keywords: 
@@ -34,8 +36,8 @@ Provides the XAML escape sequence for attribute values. The escape sequence allo
 
 ## XAML Values
 
-|||
-|-|-|
+| Value | Description |
+|-------|-------------|
 |*literalValue*|The literal string that follows the escape sequence. Typically this string contains an open or close brace ({ or }).|
 
 ## Remarks

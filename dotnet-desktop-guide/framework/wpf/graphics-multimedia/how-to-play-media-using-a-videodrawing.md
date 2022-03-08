@@ -1,6 +1,8 @@
 ---
 title: "How to: Play Media using a VideoDrawing"
+description: Learn how to play Media using a VideoDrawing.
 ms.date: "03/30/2017"
+ms.custom: devdivchpfy22
 helpviewer_keywords: 
   - "playback of media [WPF]"
   - "classes [WPF], MediaPlayer"
@@ -12,14 +14,14 @@ To play an audio or video file, you use a <xref:System.Windows.Media.VideoDrawin
 > [!NOTE]
 > When distributing media with your application, you cannot use a media file as a project resource, like you would an image. In your project file, you must instead set the media type to `Content` and set `CopyToOutputDirectory` to `PreserveNewest` or `Always`.  
   
-## Example  
+## Use a VideoDrawing and a MediaPlayer
  The following example uses a <xref:System.Windows.Media.VideoDrawing> and a <xref:System.Windows.Media.MediaPlayer> to play a video file once.  
   
  [!code-csharp[DrawingMiscSnippets_snip#VideoDrawingExampleInline](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingMiscSnippets_snip/CSharp/VideoDrawingExample.cs#videodrawingexampleinline)]  
   
  To gain additional timing control over the media, use a <xref:System.Windows.Media.MediaTimeline> with the <xref:System.Windows.Media.MediaPlayer> and <xref:System.Windows.Media.VideoDrawing> objects. The <xref:System.Windows.Media.MediaTimeline> enables you to specify whether the video should repeat.  
   
-## Example  
+## Use a MediaTimeline
  The following example uses a <xref:System.Windows.Media.MediaTimeline> with the <xref:System.Windows.Media.MediaPlayer> and <xref:System.Windows.Media.VideoDrawing> objects to play a video repeatedly.  
   
  [!code-csharp[DrawingMiscSnippets_snip#RepeatingVideoDrawingExampleInline](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingMiscSnippets_snip/CSharp/VideoDrawingExample.cs#repeatingvideodrawingexampleinline)]  

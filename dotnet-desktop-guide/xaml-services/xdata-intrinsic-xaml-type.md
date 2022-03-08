@@ -1,6 +1,8 @@
 ---
 title: "x:XData Intrinsic XAML Type"
+description: Learn about the x:XData Intrinsic XAML type.
 ms.date: "03/30/2017"
+ms.custom: devdivchpfy22
 f1_keywords: 
   - "x:XData"
   - "XData"
@@ -26,8 +28,8 @@ Enables placement of XML data islands within a XAML production. XML elements wit
 
 ## XAML Values
 
-|||
-|-|-|
+| Value | Description |
+|-------|-------------|
 |`elementDataRoot`|The single root element of the enclosed data island. For most eventual consumers, XML that does not have a single root is considered invalid. In particular, a single root is required if the `x:XData` is intended as an XML data source for WPF or many other technologies that use XML sources for data binding.|
 |`[elementData]`|Optional. XML that represents the XML data. Any number of elements can be contained as element data and nested elements can be contained in other elements; however, the general rules of XML apply.|
 
