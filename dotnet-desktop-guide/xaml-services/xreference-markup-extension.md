@@ -1,6 +1,8 @@
 ---
 title: "x:Reference Markup Extension"
+description: Learn about the x:Reference Markup Extension.
 ms.date: "03/30/2017"
+ms.custom: devdivchpfy22
 helpviewer_keywords: 
   - "x:Reference markup extension [XAML Services]"
   - "XAML [XAML Services], x:Reference Markup Extension"
@@ -29,8 +31,8 @@ References an instance that is declared elsewhere in XAML markup. The reference 
 
 ## XAML Values
 
-|||
-|-|-|
+| Value | Description |
+|-------|-------------|
 |`instancexName`|The `x:Name` value (or value of the <xref:System.Windows.Markup.RuntimeNamePropertyAttribute>-identified property) of the referenced instance.|
 
 ## Remarks
