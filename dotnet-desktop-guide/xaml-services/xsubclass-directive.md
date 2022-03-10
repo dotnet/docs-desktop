@@ -1,6 +1,8 @@
 ---
 title: "x:Subclass Directive"
+description: Learn about the x:Subclass Directive.
 ms.date: "03/30/2017"
+ms.custom: devdivchpfy22
 f1_keywords: 
   - "Subclass"
   - "xSubclass"
@@ -25,8 +27,8 @@ Modifies XAML markup compile behavior when `x:Class` is also provided. Instead o
 
 ## XAML Values
 
-|||
-|-|-|
+| Value | Description |
+|-------|-------------|
 |`namespace`|Optional. Specifies a CLR namespace that contains `classname`. If `namespace` is specified, a dot (.) separates `namespace` and `classname`.|
 |`classname`|Required. Specifies the CLR name of the partial class that connects the loaded XAML and your code-behind for that XAML. See Remarks.|
 |`subclassNamespace`|Optional. Can be different from `namespace` if each namespace can resolve the other. Specifies a CLR namespace that contains `subclassName`. If `subclassName` is specified, a dot (.) separates `subclassNamespace` and `subclassName`.|

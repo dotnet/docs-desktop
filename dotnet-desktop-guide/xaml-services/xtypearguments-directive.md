@@ -1,6 +1,8 @@
 ---
 title: "x:TypeArguments Directive"
+description: Learn about the x:TypeArguments Directive.
 ms.date: "03/30/2017"
+ms.custom: devdivchpfy22
 f1_keywords: 
   - "x:TypeArguments"
   - "xTypeArguments"
@@ -23,8 +25,8 @@ Passes constraining type arguments of a generic to the constructor of the generi
 
 ## XAML Values
 
-|||
-|-|-|
+| Value | Description |
+|-------|-------------|
 |`object`|An object element declaration of a XAML type, which is backed by a CLR generic type. If `object` refers to a XAML type that is not from the default XAML namespace, `object` requires a prefix to indicate the XAML namespace where `object` exists.|
 |`typeString`|A string that declares one or more XAML type names as strings, which supplies the type arguments for the CLR generic type. See Remarks for additional syntax notes.|
 
