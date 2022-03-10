@@ -1,6 +1,8 @@
 ---
 title: "x:Static Markup Extension"
+description: Learn about the x:Static Markup Extension.
 ms.date: "03/30/2017"
+ms.custom: devdivchpfy22
 f1_keywords: 
   - "StaticExtension"
   - "xStatic"
@@ -23,8 +25,8 @@ References any static by-value code entity that is defined in a Common Language 
 
 ## XAML Values
 
-| | |
-|-|-|
+| Value | Description |
+|-------|-------------|
 |`prefix`|Optional. A prefix that refers to a mapped, non-default XAML namespace. `prefix` is shown explicitly in the usage because you rarely reference static properties that come from a default XAML namespace. See Remarks.|
 |`typeName`|Required. The name of the type that defines the desired static member.|
 |`staticMemberName`|Required. The name of the desired static value member (a constant, a static property, a field, or an enumeration value).|
