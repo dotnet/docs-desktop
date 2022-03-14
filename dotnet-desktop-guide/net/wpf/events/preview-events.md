@@ -57,7 +57,7 @@ The `componentWrapper` control listens for the <xref:System.Windows.UIElement.Ke
 
 The example demonstrates two workarounds for getting the suppressed `KeyDown` routed event to invoke an event handler attached to the `outerStackPanel`:
 
-- Attach a <xref:System.Windows.UIElement.PreviewKeyDown> event handler to the `outerStackPanel`. Since preview events are invoked before non-preview events, the `PreviewKeyDown` handler will be invoked before the `KeyDown` event is suppressed.
+- Attach a <xref:System.Windows.UIElement.PreviewKeyDown> event handler to the `outerStackPanel`. Since a preview input routed event precedes the equivalent bubbling routed event, the `PreviewKeyDown` handler in the example runs ahead of the `KeyDown` handler that suppresses both preview and bubbling events through their shared event data.
 
 - Attach a `KeyDown` event handler to the `outerStackPanel` by using the <xref:System.Windows.UIElement.AddHandler(System.Windows.RoutedEvent,System.Delegate,System.Boolean)?displayProperty=nameWithType> method in code-behind, with the `handledEventsToo` parameter set to `true`.
 
