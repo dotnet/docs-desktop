@@ -35,7 +35,7 @@ C# supports event handler assignment using:
 VB supports event handler assignment using:
 
 - The [AddHandler](/dotnet/visual-basic/language-reference/statements/addhandler-statement) statement with the [AddressOf](/dotnet/visual-basic/language-reference/operators/addressof-operator) operator, which is also used in the CLR event handling model.
-- The [Handles](/dotnet/visual-basic/language-reference/statements/handles-clause) keyword in the event handler definition. For more information, see [Visual Basic and WPF event handling](/dotnet/desktop/wpf/advanced/visual-basic-and-wpf-event-handling?view=netframeworkdesktop-4.8&preserve-view=true).
+- The [Handles](/dotnet/visual-basic/language-reference/statements/handles-clause) keyword in the event handler definition. For more information, see [Visual Basic and WPF event handling](visual-basic-and-wpf-event-handling.md).
 - The <xref:System.Windows.UIElement.AddHandler%2A?displayProperty=nameWithType> method, together with the `AddressOf` operator to reference the event handler.
 
 ## Example
@@ -72,7 +72,7 @@ The `ButtonCreatedByCode_Click` event handler obtains the following information 
 > [!NOTE]
 > A key difference between a routed event and a CLR event is that a routed event traverses the element tree, looking for handlers, whereas a CLR event doesn't traverse the element tree and handlers can only attach to the source object that raised the event. As a result, a routed event `sender` can be any traversed element in the element tree.
 
-For more information on how to create and handle routed events, see [How to create a custom routed event](/dotnet/desktop/wpf/advanced/how-to-create-a-custom-routed-event?view=netframeworkdesktop-4.8&preserve-view=true) and [Handle a routed event](/dotnet/desktop/wpf/advanced/how-to-handle-a-routed-event?view=netframeworkdesktop-4.8&preserve-view=true).
+For more information on how to create and handle routed events, see [How to create a custom routed event](how-to-create-a-custom-routed-event.md) and [Handle a routed event](/dotnet/desktop/wpf/advanced/how-to-handle-a-routed-event?view=netframeworkdesktop-4.8&preserve-view=true).
 
 ## See also
 
