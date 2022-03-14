@@ -80,10 +80,10 @@ items:
   items:
   - name: Events
     items:
-    - name: Visual Basic and WPF event handling
-      href: events/visual-basic-and-wpf-event-handling.md
     - name: Preview events
       href: events/preview-events.md
+    - name: Visual Basic and WPF event handling
+      href: events/visual-basic-and-wpf-event-handling.md
     - name: Common tasks
       items:
       - name: Add an event handler using code
