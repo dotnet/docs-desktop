@@ -15,7 +15,7 @@ helpviewer_keywords:
 
 # Preview events (WPF .NET)
 
-Preview events, also known as tunneling events, are routed events that traverse downward through the element tree from the application root element to the element that raised the event. The element that raises an event is reported as the <xref:System.Windows.RoutedEventArgs.Source> in the event data. Not all event scenarios support or require preview events. This article describes where preview events exist and how applications or components can interact with them.
+Preview events, also known as tunneling events, are routed events that traverse downward through the element tree from the application root element to the element that raised the event. The element that raises an event is reported as the <xref:System.Windows.RoutedEventArgs.Source> in the event data. Not all event scenarios support or require preview events. This article describes where preview events exist and how applications or components can interact with them. For information on how to create a preview event, see [How to create a custom routed event](how-to-create-a-custom-routed-event.md).
 
 [!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
 
@@ -40,7 +40,7 @@ If you want other elements toward the root of your application to handle a route
 
 - Attach handlers by calling the <xref:System.Windows.UIElement.AddHandler(System.Windows.RoutedEvent,System.Delegate,System.Boolean)?displayProperty=nameWithType> method and setting the parameter `handledEventsToo` to `true`. This approach requires attaching the event handler in code-behind, after obtaining an object reference to the element that it will attach to.
 
-- If the event marked as handled is a bubbling event, attach handlers for the preview equivalent (if available) of the event. For instance, if a control suppresses the <xref:System.Windows.UIElement.MouseLeftButtonDown> event, you can attach a handler for the <xref:System.Windows.UIElement.PreviewMouseLeftButtonDown> event instead. This approach only works for base element input events that implement both [tunneling](<xref:System.Windows.RoutingStrategy.Tunnel>) and [bubbling](<xref:System.Windows.RoutingStrategy.Bubble>) routing strategies and share event data.
+- If the event marked as handled is a bubbling event, attach handlers for the equivalent preview event if available. For instance, if a control suppresses the <xref:System.Windows.UIElement.MouseLeftButtonDown> event, you can attach a handler for the <xref:System.Windows.UIElement.PreviewMouseLeftButtonDown> event instead. This approach only works for base element input events that implement both [tunneling](<xref:System.Windows.RoutingStrategy.Tunnel>) and [bubbling](<xref:System.Windows.RoutingStrategy.Bubble>) routing strategies and share event data.
 
 The following example implements a rudimentary custom control named `componentWrapper` that contains a <xref:System.Windows.Controls.TextBox>. The control is added to a <xref:System.Windows.Controls.StackPanel> named `outerStackPanel`.
 
