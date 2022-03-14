@@ -1,0 +1,23 @@
+﻿<Window x:Class="CodeSampleCsharp.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    xmlns:custom="clr-namespace:CodeSampleCsharp"
+    Title="Preview events" Height="100" Width="300">
+
+    <!--<CustomControlEventSuppression>-->
+    <StackPanel Name="outerStackPanel"
+        VerticalAlignment="Center"
+        custom:ComponentWrapper.CustomKey="Handler_PrintEventInfo"
+        TextBox.KeyDown="Handler_PrintEventInfo"
+        TextBox.PreviewKeyDown="Handler_PrintEventInfo" >
+        <custom:ComponentWrapper
+            x:Name="componentWrapper"
+            TextBox.KeyDown="ComponentWrapper_KeyDown"
+            custom:ComponentWrapper.CustomKey="Handler_PrintEventInfo"
+            HorizontalAlignment="Center">
+            <TextBox Name="componentTextBox" Width="200" KeyDown="Handler_PrintEventInfo" />
+        </custom:ComponentWrapper>
+    </StackPanel>
+    <!--</CustomControlEventSuppression>-->
+
+</Window>
