@@ -104,7 +104,7 @@ For more information, see [Geometry Overview](geometry-overview.md). For an intr
 
 ### 2D Effects
 
-WPF provides a library of 2D classes that you can use to create a variety of effects. The 2D rendering capability of WPF provides the ability to paint [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] elements that have gradients, bitmaps, drawings, and videos; and to manipulate them by using rotation, scaling, and skewing. The following illustration gives an example of the many effects you can achieve by using WPF brushes.
+WPF provides a library of 2D classes that you can use to create a variety of effects. The 2D rendering capability of WPF provides the ability to paint UI elements that have gradients, bitmaps, drawings, and videos; and to manipulate them by using rotation, scaling, and skewing. The following illustration gives an example of the many effects you can achieve by using WPF brushes.
 
 ![Illustration showing the different WPF brushes and paint elements.](./media/index/brushes-paint-elements.png)
 
@@ -114,7 +114,7 @@ For more information, see [WPF Brushes Overview](wpf-brushes-overview.md). For a
 
 ## 3D Rendering
 
-WPF provides a set of 3D rendering capabilities that integrate with 2D graphics support in WPF in order for you to create more exciting layout, [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)], and data visualization. At one end of the spectrum, WPF enables you to render 2D images onto the surfaces of 3D shapes, which the following illustration demonstrates.
+WPF provides a set of 3D rendering capabilities that integrate with 2D graphics support in WPF in order for you to create more exciting layout, UI, and data visualization. At one end of the spectrum, WPF enables you to render 2D images onto the surfaces of 3D shapes, which the following illustration demonstrates.
 
 ![Screenshot of a sample showing 3D shapes with different textures.](./media/index/visual-three-dimensional-shape.png)
 

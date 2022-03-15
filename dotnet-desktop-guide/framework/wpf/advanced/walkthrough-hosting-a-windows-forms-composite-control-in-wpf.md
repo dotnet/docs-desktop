@@ -194,7 +194,7 @@ The following image shows the complete application, including the control embedd
 
 ### Implementing the Code-Behind File
 
- The code-behind file, MainWindow.xaml.vb or MainWindow.xaml.cs, contains the procedural code that implements the functionality of the [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] discussed in the preceding section. The primary tasks are:
+ The code-behind file, MainWindow.xaml.vb or MainWindow.xaml.cs, contains the procedural code that implements the functionality of the UI discussed in the preceding section. The primary tasks are:
 
 - Attaching an event handler to `MyControl1`'s `OnButtonClick` event.
 

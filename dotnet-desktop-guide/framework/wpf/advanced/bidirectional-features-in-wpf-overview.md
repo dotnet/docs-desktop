@@ -50,7 +50,7 @@ The following graphic shows the output of the previous example:
 
 Many development platforms such as HTML, Win32 and Java provide special support for bidirectional content development. Markup languages such as HTML give content writers the necessary markup to display text in any required direction, for example the HTML 4.0 tag, "dir" that takes "rtl" or "ltr" as values. This tag is similar to the <xref:System.Windows.FrameworkElement.FlowDirection%2A> property, but the <xref:System.Windows.FrameworkElement.FlowDirection%2A> property works in a more advanced way to layout textual content and can be used for content other than text.
 
-In [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)], a <xref:System.Windows.Documents.FlowDocument> is a versatile [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] element that can host a combination of text, tables, images and other elements. The samples in the following sections use this element.
+In UI element that can host a combination of text, tables, images and other elements. The samples in the following sections use this element.
 
 Adding text to a <xref:System.Windows.Documents.FlowDocument> can be done in more that one way. A simple way to do so is through a <xref:System.Windows.Documents.Paragraph> which is a block-level element used to group content such as text. To add text to inline-level elements the samples use <xref:System.Windows.Documents.Span> and <xref:System.Windows.Documents.Run>. <xref:System.Windows.Documents.Span> is an inline-level flow content element used for grouping other inline elements, while a <xref:System.Windows.Documents.Run> is an inline-level flow content element intended to contain a run of unformatted text. A <xref:System.Windows.Documents.Span> can contain multiple <xref:System.Windows.Documents.Run> elements.
 
@@ -108,7 +108,7 @@ Be aware that many languages have different `xml:lang` values depending on the t
 
 ## FlowDirection with Non-text Elements
 
-<xref:System.Windows.FlowDirection> defines not only how text flows in a textual element but also the flow direction of almost every other [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] element. The following graphic shows a <xref:System.Windows.Controls.ToolBar> that uses a horizontal <xref:System.Windows.Media.LinearGradientBrush> to draw its background with a left to right gradient.
+<xref:System.Windows.FlowDirection> defines not only how text flows in a textual element but also the flow direction of almost every other UI element. The following graphic shows a <xref:System.Windows.Controls.ToolBar> that uses a horizontal <xref:System.Windows.Media.LinearGradientBrush> to draw its background with a left to right gradient.
 
 ![Graphic that shows a toolbar with a left to right gradient.](./media/bidirectional-features-in-wpf-overview/toolbar-left-right-gradient.png)
 
@@ -132,7 +132,7 @@ There are a few cases where <xref:System.Windows.FlowDirection> does not behave 
 
 An <xref:System.Windows.Controls.Image> represents a control that displays an image. In XAML it can be used with a <xref:System.Windows.Controls.Image.Source%2A> property that defines the uniform resource identifier (URI) of the <xref:System.Windows.Controls.Image> to display.
 
-Unlike other [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] elements, an <xref:System.Windows.Controls.Image> does not inherit the <xref:System.Windows.FlowDirection> from the container. However, if the <xref:System.Windows.FlowDirection> is set explicitly to <xref:System.Windows.FlowDirection.RightToLeft>, an <xref:System.Windows.Controls.Image> is displayed flipped horizontally. This is implemented as a convenient feature for developers of bidirectional content; because in some cases, horizontally flipping the image produces the desired effect.
+Unlike other UI elements, an <xref:System.Windows.Controls.Image> does not inherit the <xref:System.Windows.FlowDirection> from the container. However, if the <xref:System.Windows.FlowDirection> is set explicitly to <xref:System.Windows.FlowDirection.RightToLeft>, an <xref:System.Windows.Controls.Image> is displayed flipped horizontally. This is implemented as a convenient feature for developers of bidirectional content; because in some cases, horizontally flipping the image produces the desired effect.
 
 The following graphic shows a flipped <xref:System.Windows.Controls.Image>.
 
@@ -160,7 +160,7 @@ The following graphic shows the output of the previous example with arrows drawn
 
 ![Graphic that illustrates arrows drawn using the Path element.](./media/bidirectional-features-in-wpf-overview/arrows-drawn-path-element.png)
 
-The <xref:System.Windows.Controls.Image> and <xref:System.Windows.Shapes.Path> are two examples of a how [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] uses <xref:System.Windows.FlowDirection>. Beside laying out [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] elements in a specific direction within a container, <xref:System.Windows.FlowDirection> can be used with elements such as <xref:System.Windows.Controls.InkPresenter> which renders ink on a surface, <xref:System.Windows.Media.LinearGradientBrush>, <xref:System.Windows.Media.RadialGradientBrush>. Whenever you need a right to left behavior for your content that mimics a left to right behavior, or vice versa, [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] provides that capability.
+The <xref:System.Windows.Controls.Image> and <xref:System.Windows.Shapes.Path> are two examples of a how UI elements in a specific direction within a container, <xref:System.Windows.FlowDirection> can be used with elements such as <xref:System.Windows.Controls.InkPresenter> which renders ink on a surface, <xref:System.Windows.Media.LinearGradientBrush>, <xref:System.Windows.Media.RadialGradientBrush>. Whenever you need a right to left behavior for your content that mimics a left to right behavior, or vice versa, [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] provides that capability.
 
 <a name="NumberSubstitution"></a>
 
@@ -202,7 +202,7 @@ This property specifies the type of number substitution to perform. It takes one
 
 - <xref:System.Windows.Media.NumberSubstitutionMethod.Traditional>: Numbers are rendered using the traditional digits for the number culture. For most cultures, this is the same as <xref:System.Windows.Media.NumberSubstitutionMethod.NativeNational>. However, <xref:System.Windows.Media.NumberSubstitutionMethod.NativeNational> results in Latin digits for some Arabic cultures, whereas this value results in Arabic digits for all Arabic cultures.
 
-What do those values mean for a bidirectional content developer? In most cases, the developer might need only to define <xref:System.Windows.FlowDirection> and the language of each textual [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] element, for example `Language="ar-SA"` and the <xref:System.Windows.Media.NumberSubstitution> logic takes care of displaying the numbers according to the correct [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)]. The following example demonstrates using Arabic and English numbers in a [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] application running in an Arabic version of Windows.
+What do those values mean for a bidirectional content developer? In most cases, the developer might need only to define <xref:System.Windows.FlowDirection> and the language of each textual UI element, for example `Language="ar-SA"` and the <xref:System.Windows.Media.NumberSubstitution> logic takes care of displaying the numbers according to the correct UI. The following example demonstrates using Arabic and English numbers in a [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] application running in an Arabic version of Windows.
 
 [!code-xaml[Numbers#Numbers](~/samples/snippets/csharp/VS_Snippets_Wpf/Numbers/CS/Window1.xaml#numbers)]
 
@@ -214,11 +214,11 @@ The <xref:System.Windows.FlowDirection> was important in this case because setti
 
 **Defining Substitution Rules**
 
-In a real application you might need to set the Language programmatically. For example, you want to set the `xml:lang` attribute to be the same as the one used by the system’s [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)], or maybe change the language depending on the application state.
+In a real application you might need to set the Language programmatically. For example, you want to set the `xml:lang` attribute to be the same as the one used by the system’s UI, or maybe change the language depending on the application state.
 
 If you want to make changes based on the application's state, make use of other features provided by [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)].
 
-First, set the application component’s `NumberSubstitution.CultureSource="Text"`. Using this setting makes sure that the settings do not come from the [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] for text elements that have "User" as the default, such as <xref:System.Windows.Controls.TextBlock>.
+First, set the application component’s `NumberSubstitution.CultureSource="Text"`. Using this setting makes sure that the settings do not come from the UI for text elements that have "User" as the default, such as <xref:System.Windows.Controls.TextBlock>.
 
 For example:
 

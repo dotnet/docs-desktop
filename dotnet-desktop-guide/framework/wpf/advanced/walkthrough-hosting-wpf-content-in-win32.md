@@ -143,7 +143,7 @@ ms.assetid: 38ce284a-4303-46dd-b699-c9365b22a7dc
 
 <a name="communicating_with_the_page"></a>
 ### Communicating with the WPF Content
- There are two types of communication with the [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] content. The application receives information from the [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] content when the user clicks the **OK** or **Cancel** buttons. The application also has a [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] that allows the user to change various [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] content properties, such as the background color or default font size.
+ There are two types of communication with the UI that allows the user to change various [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] content properties, such as the background color or default font size.
 
  As mentioned above, when the user clicks either button the [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] content raises an `OnButtonClicked` event. The application attaches a handler to this event to receive these notifications. If the **OK** button was clicked, the handler gets the user information from the [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] content and displays it in a set of static controls.
 
@@ -153,7 +153,7 @@ ms.assetid: 38ce284a-4303-46dd-b699-c9365b22a7dc
 
  If the **OK** button was clicked, the handler gets a reference to the [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] content from the container class. It then collects the user information that is held by the associated [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] content properties and uses the static controls to display the information on the parent window. Because the [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] content data is in the form of a managed string, it has to be marshaled for use by a Win32 control. If the **Cancel** button was clicked, the handler clears the data from the static controls.
 
- The application [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] provides a set of radio buttons that allow the user to modify the background color of the [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] content, and several font-related properties. The following example is an excerpt from the application's window procedure (WndProc) and its message handling that sets various properties on different messages, including the background color. The others are similar, and are not shown. See the complete sample for details and context.
+ The application UI provides a set of radio buttons that allow the user to modify the background color of the [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] content, and several font-related properties. The following example is an excerpt from the application's window procedure (WndProc) and its message handling that sets various properties on different messages, including the background color. The others are similar, and are not shown. See the complete sample for details and context.
 
  [!code-cpp[Win32HostingWPFPage#WMCommandToBG](~/samples/snippets/cpp/VS_Snippets_Wpf/Win32HostingWPFPage/CPP/Win32HostingWPFPage.cpp#wmcommandtobg)]
 
@@ -171,7 +171,7 @@ ms.assetid: 38ce284a-4303-46dd-b699-c9365b22a7dc
 
 <a name="page_layout"></a>
 ### Layout
- The [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] elements in the [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] content consist of five <xref:System.Windows.Controls.TextBox> controls, with associated <xref:System.Windows.Controls.Label> controls: Name, Address, City, State, and Zip. There are also two <xref:System.Windows.Controls.Button> controls, **OK** and **Cancel**
+ The UI elements in the [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] content consist of five <xref:System.Windows.Controls.TextBox> controls, with associated <xref:System.Windows.Controls.Label> controls: Name, Address, City, State, and Zip. There are also two <xref:System.Windows.Controls.Button> controls, **OK** and **Cancel**
 
  The [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] content is implemented in the `WPFPage` class. Layout is handled with a <xref:System.Windows.Controls.Grid> layout element. The class inherits from <xref:System.Windows.Controls.Grid>, which effectively makes it the [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] content root element.
 
@@ -179,7 +179,7 @@ ms.assetid: 38ce284a-4303-46dd-b699-c9365b22a7dc
 
  [!code-cpp[Win32HostingWPFPage#WPFPageCtorToGridDef](~/samples/snippets/cpp/VS_Snippets_Wpf/Win32HostingWPFPage/CPP/WPFPage.cpp#wpfpagectortogriddef)]
 
- Next, the constructor adds the [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] elements to the <xref:System.Windows.Controls.Grid>. The first element is the title text, which is a <xref:System.Windows.Controls.Label> control that is centered in the first row of the grid.
+ Next, the constructor adds the UI elements to the <xref:System.Windows.Controls.Grid>. The first element is the title text, which is a <xref:System.Windows.Controls.Label> control that is centered in the first row of the grid.
 
  [!code-cpp[Win32HostingWPFPage#WPFPageCtorTitle](~/samples/snippets/cpp/VS_Snippets_Wpf/Win32HostingWPFPage/CPP/WPFPage.cpp#wpfpagectortitle)]
 

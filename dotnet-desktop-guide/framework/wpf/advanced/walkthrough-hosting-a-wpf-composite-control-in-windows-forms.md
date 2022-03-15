@@ -58,10 +58,10 @@ You need Visual Studio to complete this walkthrough.
 - WindowsBase  
   
 ### Creating the User Interface  
- The [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)] for the composite control is implemented with [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)]. The composite control [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] consists of five <xref:System.Windows.Controls.TextBox> elements. Each <xref:System.Windows.Controls.TextBox> element has an associated <xref:System.Windows.Controls.TextBlock> element that serves as a label. There are two <xref:System.Windows.Controls.Button> elements at the bottom, **OK** and **Cancel**. When the user clicks either button, the control raises a custom event to return the information to the host.  
+ The UI consists of five <xref:System.Windows.Controls.TextBox> elements. Each <xref:System.Windows.Controls.TextBox> element has an associated <xref:System.Windows.Controls.TextBlock> element that serves as a label. There are two <xref:System.Windows.Controls.Button> elements at the bottom, **OK** and **Cancel**. When the user clicks either button, the control raises a custom event to return the information to the host.  
   
 #### Basic Layout  
- The various [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] elements are contained in a <xref:System.Windows.Controls.Grid> element. You can use <xref:System.Windows.Controls.Grid> to arrange the contents of the composite control in much the same way you would use a `Table` element in HTML. [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] also has a <xref:System.Windows.Documents.Table> element, but <xref:System.Windows.Controls.Grid> is more lightweight and better suited for simple layout tasks.  
+ The various UI elements are contained in a <xref:System.Windows.Controls.Grid> element. You can use <xref:System.Windows.Controls.Grid> to arrange the contents of the composite control in much the same way you would use a `Table` element in HTML. [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] also has a <xref:System.Windows.Documents.Table> element, but <xref:System.Windows.Controls.Grid> is more lightweight and better suited for simple layout tasks.  
   
  The following XAML shows the basic layout. This XAML defines the overall structure of the control by specifying the number of columns and rows in the <xref:System.Windows.Controls.Grid> element.  
   
@@ -71,7 +71,7 @@ You need Visual Studio to complete this walkthrough.
 [!code-xaml[WindowsFormsHostingWpfControl#102](~/samples/snippets/csharp/VS_Snippets_Wpf/WindowsFormsHostingWpfControl/CSharp/MyControls/Page1.xaml#102)]  
   
 #### Adding TextBlock and TextBox Elements to the Grid  
- You place a [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] element in the grid by setting the element's <xref:System.Windows.Controls.Grid.RowProperty> and <xref:System.Windows.Controls.Grid.ColumnProperty> attributes to the appropriate row and column number. Remember that row and column numbering are zero-based. You can have an element span multiple columns by setting its <xref:System.Windows.Controls.Grid.ColumnSpanProperty> attribute. For more information about <xref:System.Windows.Controls.Grid> elements, see [Create a Grid Element](../controls/how-to-create-a-grid-element.md).  
+ You place a UI element in the grid by setting the element's <xref:System.Windows.Controls.Grid.RowProperty> and <xref:System.Windows.Controls.Grid.ColumnProperty> attributes to the appropriate row and column number. Remember that row and column numbering are zero-based. You can have an element span multiple columns by setting its <xref:System.Windows.Controls.Grid.ColumnSpanProperty> attribute. For more information about <xref:System.Windows.Controls.Grid> elements, see [Create a Grid Element](../controls/how-to-create-a-grid-element.md).  
   
  The following XAML shows the composite control's <xref:System.Windows.Controls.TextBox> and <xref:System.Windows.Controls.TextBlock> elements with their <xref:System.Windows.Controls.Grid.RowProperty> and <xref:System.Windows.Controls.Grid.ColumnProperty> attributes, which are set to place the elements properly in the grid.  
   
@@ -125,7 +125,7 @@ namespace MyControls
 }  
 ```  
   
- The first class, `MyControl1`, is a partial class containing the code that implements the functionality of the [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] defined in MyControl1.xaml. When MyControl1.xaml is parsed, the [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] is converted to the same partial class, and the two partial classes are merged to form the compiled control. For this reason, the class name in the code-behind file must match the class name assigned to MyControl1.xaml, and it must inherit from the root element of the control. The second class, `MyControlEventArgs`, is an event arguments class that is used to send the data back to the host.  
+ The first class, `MyControl1`, is a partial class containing the code that implements the functionality of the UI defined in MyControl1.xaml. When MyControl1.xaml is parsed, the [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] is converted to the same partial class, and the two partial classes are merged to form the compiled control. For this reason, the class name in the code-behind file must match the class name assigned to MyControl1.xaml, and it must inherit from the root element of the control. The second class, `MyControlEventArgs`, is an event arguments class that is used to send the data back to the host.  
   
  Open MyControl1.xaml.cs. Change the existing class declaration so that it has the following name and inherits from <xref:System.Windows.Controls.Grid>.  
   

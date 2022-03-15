@@ -136,9 +136,9 @@ For <xref:System.Windows.FrameworkPropertyMetadata>, you can also specify metada
 
 - If your property (or changes in its value) affects the [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)], and in particular affects how the layout system should size or render your element in a page, set one or more of the following flags: <xref:System.Windows.FrameworkPropertyMetadataOptions.AffectsMeasure>, <xref:System.Windows.FrameworkPropertyMetadataOptions.AffectsArrange>, <xref:System.Windows.FrameworkPropertyMetadataOptions.AffectsRender>.
 
-  - <xref:System.Windows.FrameworkPropertyMetadataOptions.AffectsMeasure> indicates that a change to this property requires a change to [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] rendering where the containing object might require more or less space within the parent. For example, a "Width" property should have this flag set.
+  - <xref:System.Windows.FrameworkPropertyMetadataOptions.AffectsMeasure> indicates that a change to this property requires a change to UI rendering where the containing object might require more or less space within the parent. For example, a "Width" property should have this flag set.
 
-  - <xref:System.Windows.FrameworkPropertyMetadataOptions.AffectsArrange> indicates that a change to this property requires a change to [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] rendering that typically does not require a change in the dedicated space, but does indicate that the positioning within the space has changed. For example, an "Alignment" property should have this flag set.
+  - <xref:System.Windows.FrameworkPropertyMetadataOptions.AffectsArrange> indicates that a change to this property requires a change to UI rendering that typically does not require a change in the dedicated space, but does indicate that the positioning within the space has changed. For example, an "Alignment" property should have this flag set.
 
   - <xref:System.Windows.FrameworkPropertyMetadataOptions.AffectsRender> indicates that some other change has occurred that will not affect layout and measure, but does require another render. An example would be a property that changes a color of an existing element, such as "Background".
 

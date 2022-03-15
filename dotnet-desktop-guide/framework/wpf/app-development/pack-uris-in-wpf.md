@@ -398,7 +398,7 @@ The preceding sections have discussed how to construct pack URIs to identify res
 
 #### Specifying the UI to Show When an Application Starts
 
-<xref:System.Windows.Application.StartupUri%2A> specifies the first [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] to show when a WPF application is launched. For standalone applications, the [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] can be a window, as shown in the following example.
+<xref:System.Windows.Application.StartupUri%2A> specifies the first UI to show when a WPF application is launched. For standalone applications, the UI can be a window, as shown in the following example.
 
 [!code-xaml[PackURIOverviewSnippets#StartupUriWindow](~/samples/snippets/csharp/VS_Snippets_Wpf/PackURIOverviewSnippets/CS/Copy of App.xaml#startupuriwindow)]
 

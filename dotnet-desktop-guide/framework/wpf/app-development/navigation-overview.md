@@ -367,7 +367,7 @@ Conceptually, the journal operates the same way that the **Back** and **Forward*
 
 ![Back and Forward buttons](./media/navigation-overview/back-and-forward-navigation.png "Navigate with the back and forward buttons.")
 
-For XBAPs that are hosted by Internet Explorer, WPF integrates the journal into the navigation [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] of Internet Explorer. This allows users to navigate pages in an XBAP by using the **Back**, **Forward**, and **Recent Pages** buttons in Internet Explorer.
+For XBAPs that are hosted by Internet Explorer, WPF integrates the journal into the navigation UI of Internet Explorer. This allows users to navigate pages in an XBAP by using the **Back**, **Forward**, and **Recent Pages** buttons in Internet Explorer.
 
 > [!IMPORTANT]
 > In Internet Explorer, when a user navigates away from and back to an XBAP, only the journal entries for pages that were not kept alive are retained in the journal. For discussion on keeping pages alive, see [Page Lifetime and the Journal](#PageLifetime) later in this topic.
@@ -608,7 +608,7 @@ As you can see, <xref:System.Windows.Navigation.NavigationWindow> displays Inter
 
 If your pages provide their own journal navigation support and UI, you can hide the **Back** and **Forward** buttons displayed by <xref:System.Windows.Navigation.NavigationWindow> by setting the value of the <xref:System.Windows.Navigation.NavigationWindow.ShowsNavigationUI%2A> property to `false`.
 
-Alternatively, you can use customization support in WPF to replace the [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] of the <xref:System.Windows.Navigation.NavigationWindow> itself.
+Alternatively, you can use customization support in WPF to replace the UI of the <xref:System.Windows.Navigation.NavigationWindow> itself.
 
 <a name="Frame_in_Standalone_Applications"></a>
 
@@ -642,12 +642,12 @@ The following figure illustrates the effect of navigating within a <xref:System.
 
 ![A frame that uses its own journal](./media/navigation-overview/frame-uses-its-own-journal.png "This shows the effect of navigating within a frame that uses its own journal.")
 
-Notice that the journal entries are shown by the navigation [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] in the <xref:System.Windows.Controls.Frame>, rather than by Internet Explorer.
+Notice that the journal entries are shown by the navigation UI in the <xref:System.Windows.Controls.Frame>, rather than by Internet Explorer.
 
 > [!NOTE]
-> If a <xref:System.Windows.Controls.Frame> is part of content that is hosted in a <xref:System.Windows.Window>, <xref:System.Windows.Controls.Frame> uses its own journal and, consequently, displays its own navigation [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)].
+> If a <xref:System.Windows.Controls.Frame> is part of content that is hosted in a <xref:System.Windows.Window>, <xref:System.Windows.Controls.Frame> uses its own journal and, consequently, displays its own navigation UI.
 
-If your user experience requires a <xref:System.Windows.Controls.Frame> to provide its own journal without showing the navigation [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)], you can hide the navigation [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] by setting the <xref:System.Windows.Controls.Frame.NavigationUIVisibility%2A> to <xref:System.Windows.Visibility.Hidden>. This is shown in the following markup.
+If your user experience requires a <xref:System.Windows.Controls.Frame> to provide its own journal without showing the navigation UI, you can hide the navigation UI by setting the <xref:System.Windows.Controls.Frame.NavigationUIVisibility%2A> to <xref:System.Windows.Visibility.Hidden>. This is shown in the following markup.
 
 [!code-xaml[NavigationOverviewSnippets#FrameHostPageHidesUIXAML1](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationOverviewSnippets/CSharp/FrameHostPageOwnHiddenJournal.xaml#framehostpagehidesuixaml1)]
 [!code-xaml[NavigationOverviewSnippets#FrameHostPageHidesUIXAML2](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationOverviewSnippets/CSharp/FrameHostPageOwnHiddenJournal.xaml#framehostpagehidesuixaml2)]
@@ -667,7 +667,7 @@ Besides using <xref:System.Windows.Navigation.NavigationService> and a journal, 
 
 ![A journal in a Frame and in a NavigationWindow](./media/navigation-overview/navigation-window-and-frame.png "Navigation Window and Frame")
 
-This allows you to program navigation support directly against them. You may consider this if you need to provide a custom navigation [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] for a <xref:System.Windows.Controls.Frame> that is hosted in a <xref:System.Windows.Window>. Furthermore, both types implement additional, navigation-related members, including `BackStack` (<xref:System.Windows.Navigation.NavigationWindow.BackStack%2A?displayProperty=nameWithType>, <xref:System.Windows.Controls.Frame.BackStack%2A?displayProperty=nameWithType>) and `ForwardStack` (<xref:System.Windows.Navigation.NavigationWindow.ForwardStack%2A?displayProperty=nameWithType>, <xref:System.Windows.Controls.Frame.ForwardStack%2A?displayProperty=nameWithType>), which allow you to enumerate the journal entries in the back stack and forward stack, respectively.
+This allows you to program navigation support directly against them. You may consider this if you need to provide a custom navigation UI for a <xref:System.Windows.Controls.Frame> that is hosted in a <xref:System.Windows.Window>. Furthermore, both types implement additional, navigation-related members, including `BackStack` (<xref:System.Windows.Navigation.NavigationWindow.BackStack%2A?displayProperty=nameWithType>, <xref:System.Windows.Controls.Frame.BackStack%2A?displayProperty=nameWithType>) and `ForwardStack` (<xref:System.Windows.Navigation.NavigationWindow.ForwardStack%2A?displayProperty=nameWithType>, <xref:System.Windows.Controls.Frame.ForwardStack%2A?displayProperty=nameWithType>), which allow you to enumerate the journal entries in the back stack and forward stack, respectively.
 
 As mentioned earlier, more than one journal can exist within an application. The following figure provides an example of when this can happen.
 

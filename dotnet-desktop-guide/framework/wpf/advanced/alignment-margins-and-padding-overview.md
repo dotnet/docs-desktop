@@ -141,7 +141,7 @@ The <xref:System.Windows.FrameworkElement> class exposes several properties that
  [!code-vb[MarginPaddingAlignmentSample#4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MarginPaddingAlignmentSample/VisualBasic/MarginPaddingAlignment.vb#4)]
  [!code-xaml[MarginPaddingAlignmentSample#4](~/samples/snippets/xaml/VS_Snippets_Wpf/MarginPaddingAlignmentSample/XAML/default.xaml#4)]  
   
- When compiled, the preceding application yields a [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] that looks like the following illustration. The effects of the various property values are evident in the spacing between elements, and significant property values for elements in each column are shown within <xref:System.Windows.Controls.TextBlock> elements.  
+ When compiled, the preceding application yields a UI that looks like the following illustration. The effects of the various property values are evident in the spacing between elements, and significant property values for elements in each column are shown within <xref:System.Windows.Controls.TextBlock> elements.  
   
  ![Several positioning properties in one application](./media/layout-margins-padding-aligment-graphic3.PNG "layout_margins_padding_aligment_graphic3")  
   

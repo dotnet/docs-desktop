@@ -47,7 +47,7 @@ ms.assetid: 6e8db7bc-050a-4070-aa72-bb8c46e87ff8
 #### FlowDocumentPageViewer and FlowDocumentScrollViewer  
  <xref:System.Windows.Controls.FlowDocumentPageViewer> shows content in page-at-a-time viewing mode, while <xref:System.Windows.Controls.FlowDocumentScrollViewer> shows content in continuous scrolling mode.  Both <xref:System.Windows.Controls.FlowDocumentPageViewer> and <xref:System.Windows.Controls.FlowDocumentScrollViewer> are fixed to a particular viewing mode. Compare to <xref:System.Windows.Controls.FlowDocumentReader>, which includes features that enable the user to dynamically choose between various viewing modes (as provided by the <xref:System.Windows.Controls.FlowDocumentReaderViewingMode> enumeration), at the cost of being more resource intensive than <xref:System.Windows.Controls.FlowDocumentPageViewer> or <xref:System.Windows.Controls.FlowDocumentScrollViewer>.  
   
- By default, a vertical scrollbar is always shown, and a horizontal scrollbar becomes visible if needed. The default [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] for <xref:System.Windows.Controls.FlowDocumentScrollViewer> does not include a toolbar; however, the <xref:System.Windows.Controls.FlowDocumentScrollViewer.IsToolBarVisible%2A> property can be used to enable a built-in toolbar.  
+ By default, a vertical scrollbar is always shown, and a horizontal scrollbar becomes visible if needed. The default UI for <xref:System.Windows.Controls.FlowDocumentScrollViewer> does not include a toolbar; however, the <xref:System.Windows.Controls.FlowDocumentScrollViewer.IsToolBarVisible%2A> property can be used to enable a built-in toolbar.  
   
 <a name="text_in_the_user_interface"></a>
 ### Text in the User Interface  
