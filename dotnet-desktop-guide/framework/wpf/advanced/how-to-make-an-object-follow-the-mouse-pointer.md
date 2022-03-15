@@ -13,7 +13,7 @@ ms.assetid: 50b20415-14bc-405c-baf3-2fb254fffde3
 # How to: Make an Object Follow the Mouse Pointer
 This example shows how to change the dimensions of an object when the mouse pointer moves on the screen.  
   
- The example includes an [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)] file that creates the [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)] and a code-behind file that creates the event handler.  
+ The example includes an user interface (UI) and a code-behind file that creates the event handler.  
   
 ## Example  
  The following XAML creates the UI, which consists of an <xref:System.Windows.Shapes.Ellipse> inside of a <xref:System.Windows.Controls.StackPanel>, and attaches the event handler for the <xref:System.Windows.UIElement.MouseMove> event.  

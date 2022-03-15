@@ -24,7 +24,7 @@ WPF functionality to your application rather than rewrite your code. To provide 
   
 <a name="creating_the_host_win32_window"></a>
 ## Creating the Host Win32 Window  
- The key to hosting WPF objects in a Win32 window is the <xref:System.Windows.Interop.HwndSource> class. This class wraps the WPF objects in a Win32 window, allowing them to be incorporated into your [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)] as a child window.  
+ The key to hosting WPF objects in a Win32 window is the <xref:System.Windows.Interop.HwndSource> class. This class wraps the WPF objects in a Win32 window, allowing them to be incorporated into your user interface (UI) as a child window.  
   
  The following example shows the code for creating the <xref:System.Windows.Interop.HwndSource> object as the Win32 container window for the visual objects. To set the window style, position, and other parameters for the Win32 window, use the <xref:System.Windows.Interop.HwndSourceParameters> object.  
   

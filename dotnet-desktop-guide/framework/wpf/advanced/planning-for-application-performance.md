@@ -24,7 +24,7 @@ The success of achieving your performance goals depends on how well you develop 
 ## Build Towards Graphical Richness  
  A key technique for creating a scalable approach towards achieving WPF application performance is to build towards graphical richness and complexity. Always start with using the least performance intensive resources to achieve your scenario goals. Once you achieve these goals, build towards graphic richness by using more performance intensive features, always keeping your scenario goals in mind. Remember, WPF is a very rich platform and provides very rich graphic features. Using performance intensive features without thinking can negatively impact your overall application performance.  
   
- WPF controls are inherently extensible by allowing for wide-spread customization of their appearance, while not altering their control behavior. By taking advantage of styles, data templates, and control templates, you can create and incrementally evolve a customizable [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)] that adapts to your performance requirements.  
+ WPF controls are inherently extensible by allowing for wide-spread customization of their appearance, while not altering their control behavior. By taking advantage of styles, data templates, and control templates, you can create and incrementally evolve a customizable user interface (UI) that adapts to your performance requirements.  
   
 ## See also
 

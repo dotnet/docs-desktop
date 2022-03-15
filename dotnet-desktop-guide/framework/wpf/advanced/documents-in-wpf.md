@@ -51,7 +51,7 @@ WPF also provides integrated services for document display, packaging, and secur
   
 <a name="text_in_the_user_interface"></a>
 ### Text in the User Interface  
- Besides adding text to documents, text can obviously be used in application UI such as forms. WPF includes multiple controls for drawing text to the screen. Each control is targeted to a different scenario and has its own list of features and limitations. In general, the <xref:System.Windows.Controls.TextBlock> element should be used when limited text support is required, such as a brief sentence in a [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)]. <xref:System.Windows.Controls.Label> can be used when minimal text support is required. For more information, see [TextBlock Overview](../controls/textblock-overview.md).  
+ Besides adding text to documents, text can obviously be used in application UI such as forms. WPF includes multiple controls for drawing text to the screen. Each control is targeted to a different scenario and has its own list of features and limitations. In general, the <xref:System.Windows.Controls.TextBlock> element should be used when limited text support is required, such as a brief sentence in a user interface (UI). <xref:System.Windows.Controls.Label> can be used when minimal text support is required. For more information, see [TextBlock Overview](../controls/textblock-overview.md).  
   
 <a name="packaging"></a>
 ## Document Packaging  

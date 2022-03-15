@@ -134,7 +134,7 @@ For <xref:System.Windows.FrameworkPropertyMetadata>, you can also specify metada
 
 #### Setting Appropriate Metadata Flags
 
-- If your property (or changes in its value) affects the [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)], and in particular affects how the layout system should size or render your element in a page, set one or more of the following flags: <xref:System.Windows.FrameworkPropertyMetadataOptions.AffectsMeasure>, <xref:System.Windows.FrameworkPropertyMetadataOptions.AffectsArrange>, <xref:System.Windows.FrameworkPropertyMetadataOptions.AffectsRender>.
+- If your property (or changes in its value) affects the user interface (UI), and in particular affects how the layout system should size or render your element in a page, set one or more of the following flags: <xref:System.Windows.FrameworkPropertyMetadataOptions.AffectsMeasure>, <xref:System.Windows.FrameworkPropertyMetadataOptions.AffectsArrange>, <xref:System.Windows.FrameworkPropertyMetadataOptions.AffectsRender>.
 
   - <xref:System.Windows.FrameworkPropertyMetadataOptions.AffectsMeasure> indicates that a change to this property requires a change to UI rendering where the containing object might require more or less space within the parent. For example, a "Width" property should have this flag set.
 

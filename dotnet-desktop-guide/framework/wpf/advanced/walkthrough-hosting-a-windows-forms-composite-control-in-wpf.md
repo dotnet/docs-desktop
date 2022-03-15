@@ -161,7 +161,7 @@ The following image shows the complete application, including the control embedd
 
 ### Implementing the Basic Layout
 
- The [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)] of the host application is implemented in MainWindow.xaml. This file contains [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)] markup that defines the layout, and hosts the Windows Forms control. The application is divided into three regions:
+ The user interface (UI) of the host application is implemented in MainWindow.xaml. This file contains [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)] markup that defines the layout, and hosts the Windows Forms control. The application is divided into three regions:
 
 - The **Control Properties** panel, which contains a collection of option buttons that you can use to modify various properties of the hosted control.
 

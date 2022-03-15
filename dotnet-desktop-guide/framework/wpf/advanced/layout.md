@@ -133,7 +133,7 @@ Layout is a recursive process. Each child element in a <xref:System.Windows.Cont
 
 - When possible, use a <xref:System.Windows.UIElement.RenderTransform%2A> instead of a <xref:System.Windows.FrameworkElement.LayoutTransform%2A>.
 
-  A <xref:System.Windows.FrameworkElement.LayoutTransform%2A> can be a very useful way to affect the content of a [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)]. However, if the effect of the transform does not have to impact the position of other elements, it is best to use a <xref:System.Windows.UIElement.RenderTransform%2A> instead, because <xref:System.Windows.UIElement.RenderTransform%2A> does not invoke the layout system. <xref:System.Windows.FrameworkElement.LayoutTransform%2A> applies its transformation and forces a recursive layout update to account for the new position of the affected element.
+  A <xref:System.Windows.FrameworkElement.LayoutTransform%2A> can be a very useful way to affect the content of a user interface (UI). However, if the effect of the transform does not have to impact the position of other elements, it is best to use a <xref:System.Windows.UIElement.RenderTransform%2A> instead, because <xref:System.Windows.UIElement.RenderTransform%2A> does not invoke the layout system. <xref:System.Windows.FrameworkElement.LayoutTransform%2A> applies its transformation and forces a recursive layout update to account for the new position of the affected element.
 
 - Avoid unnecessary calls to <xref:System.Windows.UIElement.UpdateLayout%2A>.
 

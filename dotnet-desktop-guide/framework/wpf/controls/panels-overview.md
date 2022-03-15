@@ -37,7 +37,7 @@ ms.assetid: f73644af-9941-4611-8754-6d4cef03fc44
 
  <xref:System.Windows.Controls.Panel> is the base class for all elements that provide layout support in [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)]. Derived <xref:System.Windows.Controls.Panel> elements are used to position and arrange elements in [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)] and code.  
   
- The WPF includes a comprehensive suite of derived panel implementations that enable many complex layouts. These derived classes expose properties and methods that enable most standard [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)] scenarios. Developers who are unable to find a child arrangement behavior that meets their needs can create new layouts by overriding the <xref:System.Windows.FrameworkElement.ArrangeOverride%2A> and <xref:System.Windows.FrameworkElement.MeasureOverride%2A> methods. For more information on custom layout behaviors, see [Custom Panel Elements](#Panels_custom_panel_elements).  
+ The WPF includes a comprehensive suite of derived panel implementations that enable many complex layouts. These derived classes expose properties and methods that enable most standard user interface (UI) scenarios. Developers who are unable to find a child arrangement behavior that meets their needs can create new layouts by overriding the <xref:System.Windows.FrameworkElement.ArrangeOverride%2A> and <xref:System.Windows.FrameworkElement.MeasureOverride%2A> methods. For more information on custom layout behaviors, see [Custom Panel Elements](#Panels_custom_panel_elements).  
   
 <a name="Panels_declared_members"></a>
 
@@ -55,7 +55,7 @@ ms.assetid: f73644af-9941-4611-8754-6d4cef03fc44
 
  Derived panel elements make extensive use of attached properties. An attached property is a specialized form of dependency property that does not have the conventional common language runtime (CLR) property "wrapper". Attached properties have a specialized syntax in [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)], which can be seen in several of the examples that follow.  
   
- One purpose of an attached property is to allow child elements to store unique values of a property that is actually defined by a parent element. An application of this functionality is having child elements inform the parent how they wish to be presented in the [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)], which is extremely useful for application layout. For more information, see [Attached Properties Overview](../advanced/attached-properties-overview.md).  
+ One purpose of an attached property is to allow child elements to store unique values of a property that is actually defined by a parent element. An application of this functionality is having child elements inform the parent how they wish to be presented in the user interface (UI), which is extremely useful for application layout. For more information, see [Attached Properties Overview](../advanced/attached-properties-overview.md).  
   
 <a name="Panels_derived_elements"></a>
 
@@ -225,7 +225,7 @@ ms.assetid: f73644af-9941-4611-8754-6d4cef03fc44
 
 ### WrapPanel  
 
- <xref:System.Windows.Controls.WrapPanel> is used to position child elements in sequential position from left to right, breaking content to the next line when it reaches the edge of its parent container. Content can be oriented horizontally or vertically. <xref:System.Windows.Controls.WrapPanel> is useful for simple flowing [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)] scenarios. It can also be used to apply uniform sizing to all of its child elements.  
+ <xref:System.Windows.Controls.WrapPanel> is used to position child elements in sequential position from left to right, breaking content to the next line when it reaches the edge of its parent container. Content can be oriented horizontally or vertically. <xref:System.Windows.Controls.WrapPanel> is useful for simple flowing user interface (UI) scenarios. It can also be used to apply uniform sizing to all of its child elements.  
   
  The following example demonstrates how to create a <xref:System.Windows.Controls.WrapPanel> to display <xref:System.Windows.Controls.Button> controls that wrap when they reach the edge of their container.  
   

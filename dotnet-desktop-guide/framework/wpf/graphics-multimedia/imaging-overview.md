@@ -44,7 +44,7 @@ This topic provides an introduction to the Microsoft Windows Presentation Founda
   
 - Support for in-file, proprietary metadata.  
   
-- The managed component utilizes the unmanaged infrastructure to provide seamless integration of images with other WPF features such as [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)], animation, and graphics. The managed component also benefits from the Windows Presentation Foundation (WPF) imaging codec extensibility model which enables automatic recognition of new image formats in WPF applications.  
+- The managed component utilizes the unmanaged infrastructure to provide seamless integration of images with other WPF features such as user interface (UI), animation, and graphics. The managed component also benefits from the Windows Presentation Foundation (WPF) imaging codec extensibility model which enables automatic recognition of new image formats in WPF applications.  
   
  The majority of the managed WPF Imaging API reside in the <xref:System.Windows.Media.Imaging?displayProperty=nameWithType> namespace, though several important types, such as <xref:System.Windows.Media.ImageBrush> and <xref:System.Windows.Media.ImageDrawing> reside in the <xref:System.Windows.Media?displayProperty=nameWithType> namespace and <xref:System.Windows.Controls.Image> resides in the <xref:System.Windows.Controls?displayProperty=nameWithType> namespace.  
   

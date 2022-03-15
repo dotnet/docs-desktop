@@ -13,7 +13,7 @@ helpviewer_keywords:
 ms.assetid: 0d23d544-a393-4a02-a3aa-d8cd5d3d6511
 ---
 # Dialog boxes overview
-Standalone applications typically have a main window that both displays the main data over which the application operates and exposes the functionality to process that data through [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)] mechanisms like menu bars, tool bars, and status bars. A non-trivial application may also display additional windows to do the following:  
+Standalone applications typically have a main window that both displays the main data over which the application operates and exposes the functionality to process that data through user interface (UI) mechanisms like menu bars, tool bars, and status bars. A non-trivial application may also display additional windows to do the following:  
   
 - Display specific information to users.  
   

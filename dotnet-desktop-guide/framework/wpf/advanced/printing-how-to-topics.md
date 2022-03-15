@@ -29,7 +29,7 @@ The topics in this section demonstrate how to use the printing and print system 
  Instructions for how to discover at runtime print system object's properties and their types.  
   
  [Programmatically Print XPS Files](how-to-programmatically-print-xps-files.md)  
- Instructions for rapid printing of XML Paper Specification (XPS) files without the need for a [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)].  
+ Instructions for rapid printing of XML Paper Specification (XPS) files without the need for a user interface (UI).  
   
  [Remotely Survey the Status of Printers](how-to-remotely-survey-the-status-of-printers.md)  
  Instructions for creating a utility that will survey printers to discover those experiencing a paper jam or other problem.  

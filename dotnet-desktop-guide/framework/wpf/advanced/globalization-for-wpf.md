@@ -55,7 +55,7 @@ The following example shows a hexadecimal character reference. Notice that it ha
 
 <a name="design_intl_ui_with_xaml"></a>
 ## Designing an International User Interface with XAML
- This section describes [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)] features that you should consider when writing an application.
+ This section describes user interface (UI) features that you should consider when writing an application.
 
 <a name="intl_text"></a>
 ### International Text

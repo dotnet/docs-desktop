@@ -16,7 +16,7 @@ helpviewer_keywords:
 ms.assetid: 1a5b27b0-0ac5-4cdf-86c0-86ac0271fa64
 ---
 # Drag and Drop Overview
-This topic provides an overview of drag-and-drop support in [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] applications. Drag-and-drop commonly refers to a method of data transfer that involves using a mouse (or some other pointing device) to select one or more objects, dragging these objects over some desired drop target in the [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)], and dropping them.  
+This topic provides an overview of drag-and-drop support in user interface (UI), and dropping them.  
 
 <a name="Drag_and_Drop_Support"></a>
 ## Drag-and-Drop Support in WPF  

@@ -26,7 +26,7 @@ This topic provides an overview of the features of the <xref:System.Windows.Medi
   
 ### Reasons for Using Formatted Text  
 
- WPF includes multiple controls for drawing text to the screen. Each control is targeted to a different scenario and has its own list of features and limitations. In general, the <xref:System.Windows.Controls.TextBlock> element should be used when limited text support is required, such as a brief sentence in a [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)]. <xref:System.Windows.Controls.Label> can be used when minimal text support is required. For more information, see [Documents in WPF](documents-in-wpf.md).  
+ WPF includes multiple controls for drawing text to the screen. Each control is targeted to a different scenario and has its own list of features and limitations. In general, the <xref:System.Windows.Controls.TextBlock> element should be used when limited text support is required, such as a brief sentence in a user interface (UI). <xref:System.Windows.Controls.Label> can be used when minimal text support is required. For more information, see [Documents in WPF](documents-in-wpf.md).  
   
  The <xref:System.Windows.Media.FormattedText> object provides greater text formatting features than [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] text controls, and can be useful in cases where you want to use text as a decorative element. For more information, see the following section [Converting Formatted Text to a Geometry](#converting_formatted_text).  
   

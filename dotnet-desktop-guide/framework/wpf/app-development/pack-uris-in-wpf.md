@@ -15,7 +15,7 @@ ms.assetid: 43adb517-21a7-4df3-98e8-09e9cdf764c4
 
 In Windows Presentation Foundation (WPF), uniform resource identifiers (URIs) are used to identify and load files in many ways, including the following:
 
-- Specifying the [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)] to show when an application first starts.
+- Specifying the user interface (UI) to show when an application first starts.
 
 - Loading images.
 

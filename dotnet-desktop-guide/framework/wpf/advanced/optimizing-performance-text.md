@@ -14,7 +14,7 @@ ms.assetid: 66b1b9a7-8618-48db-b616-c57ea4327b98
 ---
 # Optimizing Performance: Text
 
-WPF includes support for the presentation of text content through the use of feature-rich [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)] controls. In general you can divide text rendering in three layers:
+WPF includes support for the presentation of text content through the use of feature-rich user interface (UI) controls. In general you can divide text rendering in three layers:
 
 1. Using the <xref:System.Windows.Documents.Glyphs> and <xref:System.Windows.Media.GlyphRun> objects directly.
 
@@ -80,7 +80,7 @@ WPF includes multiple controls for drawing text to the screen. Each control is t
 
 ### FlowDocument Impacts Performance More than TextBlock or Label
 
-In general, the <xref:System.Windows.Controls.TextBlock> element should be used when limited text support is required, such as a brief sentence in a [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)]. <xref:System.Windows.Controls.Label> can be used when minimal text support is required. The <xref:System.Windows.Documents.FlowDocument> element is a container for re-flowable documents that support rich presentation of content, and therefore, has a greater performance impact than using the <xref:System.Windows.Controls.TextBlock> or <xref:System.Windows.Controls.Label> controls.
+In general, the <xref:System.Windows.Controls.TextBlock> element should be used when limited text support is required, such as a brief sentence in a user interface (UI). <xref:System.Windows.Controls.Label> can be used when minimal text support is required. The <xref:System.Windows.Documents.FlowDocument> element is a container for re-flowable documents that support rich presentation of content, and therefore, has a greater performance impact than using the <xref:System.Windows.Controls.TextBlock> or <xref:System.Windows.Controls.Label> controls.
 
 For more information on <xref:System.Windows.Documents.FlowDocument>, see [Flow Document Overview](flow-document-overview.md).
 
