@@ -14,6 +14,10 @@ If you're coding in Visual Basic .NET, you can use the language-specific [Handle
 
 [!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
 
+## Prerequisites
+
+The article assumes a basic knowledge of routed events, and that you've read [Routed events overview](/dotnet/desktop/wpf/advanced/routed-events-overview?view=netframeworkdesktop-4.8&preserve-view=true). To follow the examples in this article, it helps if you're familiar with Extensible Application Markup Language (XAML) and know how to write Windows Presentation Foundation (WPF) applications.
+
 ## Syntax
 
 The syntax for a `Sub` declaration that uses the [Handles](/dotnet/visual-basic/language-reference/statements/handles-clause) keyword is: `Sub <procedure name> Handles <object name>.<event name>`. That syntax designates a procedure as the event handler that will run when an event specified by `<event name>` is raised on an object specified by `<object name>`. The event must be a member of the object's class or base class. The following example shows how to attach an event handler to a XAML element using `Handles`.
