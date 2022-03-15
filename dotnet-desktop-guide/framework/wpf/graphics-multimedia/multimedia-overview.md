@@ -7,7 +7,7 @@ helpviewer_keywords:
 ms.assetid: feb25b15-d741-4ac3-818f-1b19f63a3562
 ---
 # Multimedia Overview
-The multimedia features in [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] enable you to integrate audio and video into your applications to enhance the user experience. This topic introduces the multimedia features of [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)].  
+The multimedia features in WPF.  
 
 <a name="mediaapi"></a>
 ## Media API  

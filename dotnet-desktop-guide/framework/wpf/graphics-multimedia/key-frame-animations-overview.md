@@ -44,7 +44,7 @@ This topic introduces you to key-frame animations. Key-frame animations enable y
   
  Where *\<Type>* is the type of value that the class animates.  
   
- [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] provides the following key-frame animation classes.  
+ WPF provides the following key-frame animation classes.  
   
 |Property type|Corresponding from/to/by animation class|Interpolation methods supported|  
 |-------------------|------------------------------------------------|-------------------------------------|  

@@ -25,7 +25,7 @@ This topic describes how to use the 2D <xref:System.Windows.Media.Transform> cla
 > [!NOTE]
 > Windows Presentation Foundation (WPF) uses row-major matrices. Vectors are expressed as row-vectors, not column vectors.  
   
- The following table shows the structure of a [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] matrix.  
+ The following table shows the structure of a WPF matrix.  
   
 ### A 2D transformation matrix  
   

@@ -14,7 +14,7 @@ ms.assetid: 66b1b9a7-8618-48db-b616-c57ea4327b98
 ---
 # Optimizing Performance: Text
 
-[!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] includes support for the presentation of text content through the use of feature-rich [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)] controls. In general you can divide text rendering in three layers:
+WPF includes support for the presentation of text content through the use of feature-rich [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)] controls. In general you can divide text rendering in three layers:
 
 1. Using the <xref:System.Windows.Documents.Glyphs> and <xref:System.Windows.Media.GlyphRun> objects directly.
 
@@ -55,7 +55,7 @@ The following examples show how to define properties for a <xref:System.Windows.
 
 If you have custom control and you want to render glyphs, use the <xref:System.Windows.Media.DrawingContext.DrawGlyphRun%2A> method.
 
-[!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] also provides lower-level services for custom text formatting through the use of the <xref:System.Windows.Media.FormattedText> object. The most efficient way of rendering text in [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] is by generating text content at the glyph level using <xref:System.Windows.Documents.Glyphs> and <xref:System.Windows.Media.GlyphRun>. However, the cost of this efficiency is the loss of easy to use rich text formatting, which are built-in features of [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] controls, such as <xref:System.Windows.Controls.TextBlock> and <xref:System.Windows.Documents.FlowDocument>.
+WPF also provides lower-level services for custom text formatting through the use of the <xref:System.Windows.Media.FormattedText> object. The most efficient way of rendering text in [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] is by generating text content at the glyph level using <xref:System.Windows.Documents.Glyphs> and <xref:System.Windows.Media.GlyphRun>. However, the cost of this efficiency is the loss of easy to use rich text formatting, which are built-in features of [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] controls, such as <xref:System.Windows.Controls.TextBlock> and <xref:System.Windows.Documents.FlowDocument>.
 
 <a name="FormattedText_Object"></a>
 
@@ -76,7 +76,7 @@ The following code example creates a <xref:System.Windows.Media.FormattedText> o
 
 ## FlowDocument, TextBlock, and Label Controls
 
-[!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] includes multiple controls for drawing text to the screen. Each control is targeted to a different scenario and has its own list of features and limitations.
+WPF includes multiple controls for drawing text to the screen. Each control is targeted to a different scenario and has its own list of features and limitations.
 
 ### FlowDocument Impacts Performance More than TextBlock or Label
 
@@ -161,11 +161,11 @@ The following table shows the performance cost of displaying 1000 <xref:System.W
 
 ## Text Formatting Features
 
-[!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] provides rich text formatting services, such as automatic hyphenations. These services may impact application performance and should only be used when needed.
+WPF provides rich text formatting services, such as automatic hyphenations. These services may impact application performance and should only be used when needed.
 
 ### Avoid Unnecessary Use of Hyphenation
 
-Automatic hyphenation finds hyphen breakpoints for lines of text, and allows additional break positions for lines in <xref:System.Windows.Controls.TextBlock> and <xref:System.Windows.Documents.FlowDocument> objects. By default, the automatic hyphenation feature is disabled in these objects. You can enable this feature by setting the object's IsHyphenationEnabled property to `true`. However, enabling this feature causes [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] to initiate Component Object Model (COM) interoperability, which can impact application performance. It is recommended that you do not use automatic hyphenation unless you need it.
+Automatic hyphenation finds hyphen breakpoints for lines of text, and allows additional break positions for lines in <xref:System.Windows.Controls.TextBlock> and <xref:System.Windows.Documents.FlowDocument> objects. By default, the automatic hyphenation feature is disabled in these objects. You can enable this feature by setting the object's IsHyphenationEnabled property to `true`. However, enabling this feature causes WPF to initiate Component Object Model (COM) interoperability, which can impact application performance. It is recommended that you do not use automatic hyphenation unless you need it.
 
 ### Use Figures Carefully
 

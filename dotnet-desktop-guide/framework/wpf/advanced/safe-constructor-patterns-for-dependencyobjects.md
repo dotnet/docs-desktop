@@ -15,7 +15,7 @@ Generally, class constructors should not call callbacks such as virtual methods 
  The following virtual methods or callbacks are potentially called during the computations of the <xref:System.Windows.DependencyObject.SetValue%2A> call that sets a dependency property value: <xref:System.Windows.ValidateValueCallback>, <xref:System.Windows.PropertyChangedCallback>, <xref:System.Windows.CoerceValueCallback>, <xref:System.Windows.DependencyObject.OnPropertyChanged%2A>. Each of these virtual methods or callbacks serves a particular purpose in expanding the versatility of the [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] property system and dependency properties. For more information on how to use these virtuals to customize property value determination, see [Dependency Property Callbacks and Validation](dependency-property-callbacks-and-validation.md).  
   
 ### FXCop Rule Enforcement vs. Property System Virtuals  
- If you use the Microsoft tool FXCop as part of your build process, and you either derive from certain [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] framework classes calling the base constructor, or implement your own dependency properties on derived classes, you might encounter a particular FXCop rule violation. The name string for this violation is:  
+ If you use the Microsoft tool FXCop as part of your build process, and you either derive from certain WPF framework classes calling the base constructor, or implement your own dependency properties on derived classes, you might encounter a particular FXCop rule violation. The name string for this violation is:  
   
  `DoNotCallOverridableMethodsInConstructors`  
   

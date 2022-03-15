@@ -14,7 +14,7 @@ ms.assetid: 979c732c-df74-47a6-be96-8e07b3707d53
   
 <a name="prerequisites"></a>
 ## Prerequisites  
- To understand this topic, you should be familiar with [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] animations features. For an introduction to animation features, see the [Animation Overview](animation-overview.md).  
+ To understand this topic, you should be familiar with WPF animations features. For an introduction to animation features, see the [Animation Overview](animation-overview.md).  
   
  Because you use a <xref:System.Windows.Media.PathGeometry> object to define a path animation, you should also be familiar with <xref:System.Windows.Media.PathGeometry> and the different types of <xref:System.Windows.Media.PathSegment> objects. For more information, see the [Geometry Overview](geometry-overview.md).  
   
@@ -43,7 +43,7 @@ ms.assetid: 979c732c-df74-47a6-be96-8e07b3707d53
   
  Where *\<Type>* is the type of value that the class animates.  
   
- [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] provides the following path animation classes.  
+ WPF provides the following path animation classes.  
   
 |Property type|Corresponding path animation class|Example|  
 |-------------------|----------------------------------------|-------------|  

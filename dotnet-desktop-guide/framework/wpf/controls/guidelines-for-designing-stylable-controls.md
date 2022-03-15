@@ -8,7 +8,7 @@ ms.assetid: c52dde45-a311-4531-af4c-853371c4d5f4
 ---
 # Guidelines for Designing Stylable Controls
 
-This document summarizes a set of best practices to consider when designing a control which you intend to be easily stylable and templatable. We came to this set of best practices through a lot of trial and error while working on the theme control styles for the built-in [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] control set. We learned that successful styling is as much a function of a well-designed object model as it is of the style itself. The intended audience for this document is the control author, not the style author.
+This document summarizes a set of best practices to consider when designing a control which you intend to be easily stylable and templatable. We came to this set of best practices through a lot of trial and error while working on the theme control styles for the built-in WPF control set. We learned that successful styling is as much a function of a well-designed object model as it is of the style itself. The intended audience for this document is the control author, not the style author.
 
 <a name="Terminology"></a>
 
@@ -42,7 +42,7 @@ To understand your control's common usage, it's good to think about the value pr
 
   - Minimize contracts as much as possible.
 
-  - Design around the expectation that during design time (that is, when using a design tool) it is common for a control template to be in an incomplete state. [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] does not offer a "composing" state infrastructure, so controls have to be built with the expectation that such a state might be valid.
+  - Design around the expectation that during design time (that is, when using a design tool) it is common for a control template to be in an incomplete state. WPF does not offer a "composing" state infrastructure, so controls have to be built with the expectation that such a state might be valid.
 
   - Do not throw exceptions when any aspect of a template contract is not followed. Along these lines, panels should not throw exceptions if they have too many or too few children.
 
@@ -101,7 +101,7 @@ To understand your control's common usage, it's good to think about the value pr
 
 - **Be consistent with existing styling patterns.** Many times there are multiple ways to solve a problem. Be aware of and, when possible, consistent with existing control styling patterns. This is especially important for controls that derive from the same base type (for example, <xref:System.Windows.Controls.ContentControl>, <xref:System.Windows.Controls.ItemsControl>, <xref:System.Windows.Controls.Primitives.RangeBase>, and so on).
 
-- **Expose properties to enable common customization scenarios without retemplating**. [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] does not support pluggable/customizable parts, so a control user is left with only two methods of customization: setting properties directly or setting properties using styles. With that in mind, it is appropriate to surface a limited number of properties targeted at very common, high-priority customization scenarios which would otherwise require the retemplating. Here are best practices for when and how to enable customization scenarios:
+- **Expose properties to enable common customization scenarios without retemplating**. WPF does not support pluggable/customizable parts, so a control user is left with only two methods of customization: setting properties directly or setting properties using styles. With that in mind, it is appropriate to surface a limited number of properties targeted at very common, high-priority customization scenarios which would otherwise require the retemplating. Here are best practices for when and how to enable customization scenarios:
 
   - Very common customizations should be exposed as properties on the control and consumed by the template.
 

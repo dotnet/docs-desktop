@@ -12,17 +12,17 @@ ms.assetid: 486369a9-606a-4a3b-b086-a06f2119c7b0
 ---
 # Walkthrough: Host a 3D WPF Composite Control in Windows Forms
 
-This walkthrough demonstrates how you can create a [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] composite control and host it in Windows Forms controls and forms by using the <xref:System.Windows.Forms.Integration.ElementHost> control.
+This walkthrough demonstrates how you can create a WPF composite control and host it in Windows Forms controls and forms by using the <xref:System.Windows.Forms.Integration.ElementHost> control.
 
-In this walkthrough, you will implement a [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] <xref:System.Windows.Controls.UserControl> that contains two child controls. The <xref:System.Windows.Controls.UserControl> displays a three-dimensional (3D) cone. Rendering 3D objects is much easier with the [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] than with Windows Forms. Therefore, it makes sense to host a [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] <xref:System.Windows.Controls.UserControl> class to create 3D graphics in Windows Forms.
+In this walkthrough, you will implement a WPF <xref:System.Windows.Controls.UserControl> that contains two child controls. The <xref:System.Windows.Controls.UserControl> displays a three-dimensional (3D) cone. Rendering 3D objects is much easier with the WPF than with Windows Forms. Therefore, it makes sense to host a WPF <xref:System.Windows.Controls.UserControl> class to create 3D graphics in Windows Forms.
 
 Tasks illustrated in this walkthrough include:
 
-- Creating the [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] <xref:System.Windows.Controls.UserControl>.
+- Creating the WPF <xref:System.Windows.Controls.UserControl>.
 
 - Creating the Windows Forms host project.
 
-- Hosting the [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] <xref:System.Windows.Controls.UserControl>.
+- Hosting the WPF <xref:System.Windows.Controls.UserControl>.
 
 ## Prerequisites
 
@@ -52,7 +52,7 @@ You need the following components to complete this walkthrough:
 
 2. In **Solution Explorer**, add a reference to the WindowsFormsIntegration assembly, which is named WindowsFormsIntegration.dll.
 
-3. Add references to the following [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] assemblies:
+3. Add references to the following WPF assemblies:
 
     - PresentationCore
 

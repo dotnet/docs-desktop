@@ -18,7 +18,7 @@ Paths are discussed in [Shapes and Basic Drawing in WPF Overview](shapes-and-bas
   
 <a name="abouthisdocument"></a>
 ## StreamGeometry and PathFigureCollection Mini-Languages  
- [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] provides two classes that provide mini-languages for describing geometric paths: <xref:System.Windows.Media.StreamGeometry> and <xref:System.Windows.Media.PathFigureCollection>.  
+ WPF provides two classes that provide mini-languages for describing geometric paths: <xref:System.Windows.Media.StreamGeometry> and <xref:System.Windows.Media.PathFigureCollection>.  
   
 - You use the <xref:System.Windows.Media.StreamGeometry> mini-language when setting a property of type <xref:System.Windows.Media.Geometry>, such as the <xref:System.Windows.UIElement.Clip%2A> property of a <xref:System.Windows.UIElement> or the <xref:System.Windows.Shapes.Path.Data%2A> property of a <xref:System.Windows.Shapes.Path> element. The following example uses attribute syntax to create a <xref:System.Windows.Media.StreamGeometry>.  
   

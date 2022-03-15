@@ -24,7 +24,7 @@ This topic describes the different approaches for animating properties: storyboa
 
 ## Different Ways to Animate  
 
- Because there are many different scenarios for animating properties, [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] provides several approaches for animating properties.  
+ Because there are many different scenarios for animating properties, WPF provides several approaches for animating properties.  
   
  For each approach, the following table indicates whether it can be used per-instance, in styles, in control templates, or in data templates; whether it can be used in [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)]; and whether the approach enables you to interactively control the animation.  "Per-Instance" refers to the technique of applying an animation or storyboard directly to instances of an object, rather than in a style, control template, or data template.  
   
@@ -113,11 +113,11 @@ This topic describes the different approaches for animating properties: storyboa
   
 ## Per-Frame Animation: Bypass the Animation and Timing System  
 
- Use this approach when you need to completely bypass the [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] animation system. One scenario for this approach is physics animations, where each step in the animation requires objects to be recomputed based on the last set of object interactions.  
+ Use this approach when you need to completely bypass the WPF animation system. One scenario for this approach is physics animations, where each step in the animation requires objects to be recomputed based on the last set of object interactions.  
   
  Per-frame animations cannot be defined inside styles, control templates, or data templates.  
   
- To animate frame-by-frame, you register for the <xref:System.Windows.Media.CompositionTarget.Rendering> event of the object that contains the objects you want to animate. This event handler method gets called once per frame. Each time that [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] marshals the persisted rendering data in the visual tree across to the composition tree, your event handler method is called.  
+ To animate frame-by-frame, you register for the <xref:System.Windows.Media.CompositionTarget.Rendering> event of the object that contains the objects you want to animate. This event handler method gets called once per frame. Each time that WPF marshals the persisted rendering data in the visual tree across to the composition tree, your event handler method is called.  
   
  In your event handler, perform whatever calculations are necessary for your animation effect and set the properties of the objects you want to animate with these values.  
   

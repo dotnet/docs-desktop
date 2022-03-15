@@ -10,7 +10,7 @@ helpviewer_keywords:
 ms.assetid: eb47bd94-0451-4f8d-8fb6-95f7812ac05b
 ---
 # How to: Register an Attached Property
-This example shows how to register an attached property and provide public accessors so that you can use the property in both [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)] and code. Attached properties are a syntax concept defined by [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)]. Most attached properties for [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] types are also implemented as dependency properties. You can use dependency properties on any <xref:System.Windows.DependencyObject> types.  
+This example shows how to register an attached property and provide public accessors so that you can use the property in both WPF types are also implemented as dependency properties. You can use dependency properties on any <xref:System.Windows.DependencyObject> types.  
   
 ## Example  
  The following example shows how to register an attached property as a dependency property, by using the <xref:System.Windows.DependencyProperty.RegisterAttached%2A> method. The provider class has the option of providing default metadata for the property that is applicable when the property is used on another class, unless that class overrides the metadata. In this example, the default value of the `IsBubbleSource` property is set to `false`.  

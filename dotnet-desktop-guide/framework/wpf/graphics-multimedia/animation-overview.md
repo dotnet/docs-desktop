@@ -16,7 +16,7 @@ ms.assetid: bd9ce563-725d-4385-87c9-d7ee38cf79ea
 <a name="introduction"></a>
 [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] provides a powerful set of graphics and layout features that enable you to create attractive user interfaces and appealing documents. Animation can make an attractive user interface even more spectacular and usable. By just animating a background color or applying an animated <xref:System.Windows.Media.Transform>, you can create dramatic screen transitions or provide helpful visual cues.
 
-This overview provides an introduction to the [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] animation and timing system. It focuses on the animation of [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] objects by using storyboards.
+This overview provides an introduction to the WPF animation and timing system. It focuses on the animation of WPF objects by using storyboards.
 
 <a name="introducinganimations"></a>
 
@@ -34,15 +34,15 @@ Animation on a computer is similar. For example, a program that makes a drawing 
 
 - The program then updates the rectangle with the new value and redraws it.
 
-Prior to [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)], Microsoft Windows developers had to create and manage their own timing systems or use special custom libraries. [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] includes an efficient timing system that is exposed through managed code and [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)] and that is deeply integrated into the [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] framework. [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] animation makes it easy to animate controls and other graphical objects.
+Prior to WPF, Microsoft Windows developers had to create and manage their own timing systems or use special custom libraries. WPF includes an efficient timing system that is exposed through managed code and WPF framework. WPF animation makes it easy to animate controls and other graphical objects.
 
-[!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] handles all the behind-the-scenes work of managing a timing system and redrawing the screen efficiently. It provides timing classes that enable you to focus on the effects you want to create, instead of the mechanics of achieving those effects. [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] also makes it easy to create your own animations by exposing animation base classes from which your classes can inherit, to produce customized animations. These custom animations gain many of the performance benefits of the standard animation classes.
+WPF handles all the behind-the-scenes work of managing a timing system and redrawing the screen efficiently. It provides timing classes that enable you to focus on the effects you want to create, instead of the mechanics of achieving those effects. WPF also makes it easy to create your own animations by exposing animation base classes from which your classes can inherit, to produce customized animations. These custom animations gain many of the performance benefits of the standard animation classes.
 
 <a name="thewpftimingsystem"></a>
 
 ## WPF Property Animation System
 
-If you understand a few important concepts about the timing system, [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] animations can be easier to use. Most important is that, in [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)], you animate objects by applying animation to their individual properties. For example, to make a framework element grow, you animate its <xref:System.Windows.FrameworkElement.Width%2A> and <xref:System.Windows.FrameworkElement.Height%2A> properties. To make an object fade from view, you animate its <xref:System.Windows.UIElement.Opacity%2A> property.
+If you understand a few important concepts about the timing system, WPF animations can be easier to use. Most important is that, in WPF, you animate objects by applying animation to their individual properties. For example, to make a framework element grow, you animate its <xref:System.Windows.FrameworkElement.Width%2A> and <xref:System.Windows.FrameworkElement.Height%2A> properties. To make an object fade from view, you animate its <xref:System.Windows.UIElement.Opacity%2A> property.
 
 For a property to have animation capabilities, it must meet the following three requirements:
 
@@ -50,9 +50,9 @@ For a property to have animation capabilities, it must meet the following three 
 
 - It must belong to a class that inherits from <xref:System.Windows.DependencyObject> and implements the <xref:System.Windows.Media.Animation.IAnimatable> interface.
 
-- There must be a compatible animation type available. (If [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] does not provide one, you can create your own. See the [Custom Animations Overview](custom-animations-overview.md).)
+- There must be a compatible animation type available. (If WPF does not provide one, you can create your own. See the [Custom Animations Overview](custom-animations-overview.md).)
 
-[!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] contains many objects that have <xref:System.Windows.Media.Animation.IAnimatable> properties. Controls such as <xref:System.Windows.Controls.Button> and <xref:System.Windows.Controls.TabControl>, and also <xref:System.Windows.Controls.Panel> and <xref:System.Windows.Shapes.Shape> objects inherit from <xref:System.Windows.DependencyObject>. Most of their properties are dependency properties.
+WPF contains many objects that have <xref:System.Windows.Media.Animation.IAnimatable> properties. Controls such as <xref:System.Windows.Controls.Button> and <xref:System.Windows.Controls.TabControl>, and also <xref:System.Windows.Controls.Panel> and <xref:System.Windows.Shapes.Shape> objects inherit from <xref:System.Windows.DependencyObject>. Most of their properties are dependency properties.
 
 You can use animations almost anywhere, which includes in styles and control templates. Animations do not have to be visual; you can animate objects that are not part of the user interface if they meet the criteria that are described in this section.
 
@@ -60,7 +60,7 @@ You can use animations almost anywhere, which includes in styles and control tem
 
 ## Example: Make an Element Fade In and Out of View
 
-This example shows how to use a [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] animation to animate the value of a dependency property. It uses a <xref:System.Windows.Media.Animation.DoubleAnimation>, which is a type of animation that generates <xref:System.Double> values, to animate the <xref:System.Windows.UIElement.Opacity%2A> property of a <xref:System.Windows.Shapes.Rectangle>. As a result, the <xref:System.Windows.Shapes.Rectangle> fades in and out of view.
+This example shows how to use a WPF animation to animate the value of a dependency property. It uses a <xref:System.Windows.Media.Animation.DoubleAnimation>, which is a type of animation that generates <xref:System.Double> values, to animate the <xref:System.Windows.UIElement.Opacity%2A> property of a <xref:System.Windows.Shapes.Rectangle>. As a result, the <xref:System.Windows.Shapes.Rectangle> fades in and out of view.
 
 The first part of the example creates a <xref:System.Windows.Shapes.Rectangle> element. The steps that follow show how to create an animation and apply it to the rectangle's <xref:System.Windows.UIElement.Opacity%2A> property.
 

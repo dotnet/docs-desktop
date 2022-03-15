@@ -51,7 +51,7 @@ The following example shows a hexadecimal character reference. Notice that it ha
 
 <a name="unicode"></a>
 ### Unicode
- [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] supports all Unicode features including surrogates. As long as the character set can be mapped to Unicode, it is supported. For example, GB18030 introduces some characters that are mapped to the Chinese, Japanese, and Korean (CFK) extension A and B and surrogate pairs, therefore it is fully supported. A [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] application can use <xref:System.Globalization.StringInfo> to manipulate strings without understanding whether they have surrogate pairs or combining characters.
+ WPF application can use <xref:System.Globalization.StringInfo> to manipulate strings without understanding whether they have surrogate pairs or combining characters.
 
 <a name="design_intl_ui_with_xaml"></a>
 ## Designing an International User Interface with XAML
@@ -59,7 +59,7 @@ The following example shows a hexadecimal character reference. Notice that it ha
 
 <a name="intl_text"></a>
 ### International Text
- [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] includes built-in processing for all Microsoft .NET Framework supported writing systems.
+ WPF includes built-in processing for all Microsoft .NET Framework supported writing systems.
 
  The following scripts are currently supported:
 
@@ -121,11 +121,11 @@ The following example shows a hexadecimal character reference. Notice that it ha
 
  OpenType fonts allow the handling of large glyph sets using Unicode encoding. Such encoding enables broad international support as well as for typographic glyph variants.
 
- [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] text rendering is powered by Microsoft ClearType sub-pixel technology that supports resolution independence. This significantly improves legibility and provides the ability to support high quality magazine style documents for all scripts.
+ WPF text rendering is powered by Microsoft ClearType sub-pixel technology that supports resolution independence. This significantly improves legibility and provides the ability to support high quality magazine style documents for all scripts.
 
 <a name="intl_layout"></a>
 ### International Layout
- [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] provides a very convenient way to support horizontal, bidirectional, and vertical layouts. In presentation framework the <xref:System.Windows.FrameworkElement.FlowDirection%2A> property can be used to define layout. The flow direction patterns are:
+ WPF provides a very convenient way to support horizontal, bidirectional, and vertical layouts. In presentation framework the <xref:System.Windows.FrameworkElement.FlowDirection%2A> property can be used to define layout. The flow direction patterns are:
 
 - *LeftToRight* - horizontal layout for Latin, East Asian and so forth.
 
@@ -137,7 +137,7 @@ The following example shows a hexadecimal character reference. Notice that it ha
 
 <a name="mui"></a>
 ### Multilingual User Interface
- Multilingual User Interfaces (MUI) is a Microsoft support for switching UIs from one language to another. A [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] application uses the assembly model to support MUI. One application contains language-neutral assemblies as well as language-dependent satellite resource assemblies. The entry point is a managed .EXE in the main assembly.  [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] resource loader takes advantage of the Framework's resource manager to support resource lookup and fallback. Multiple language satellite assemblies work with the same main assembly. The resource assembly that is loaded depends on the <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> of the current thread.
+ Multilingual User Interfaces (MUI) is a Microsoft support for switching UIs from one language to another. A WPF application uses the assembly model to support MUI. One application contains language-neutral assemblies as well as language-dependent satellite resource assemblies. The entry point is a managed .EXE in the main assembly.  WPF resource loader takes advantage of the Framework's resource manager to support resource lookup and fallback. Multiple language satellite assemblies work with the same main assembly. The resource assembly that is loaded depends on the <xref:System.Globalization.CultureInfo.CurrentUICulture%2A> of the current thread.
 
 <a name="localizable_ui"></a>
 ### Localizable User Interface
@@ -146,11 +146,11 @@ The following example shows a hexadecimal character reference. Notice that it ha
  From a resource point of view, a UI is a resource element and therefore its final distribution format must be localizable to support international languages. Because [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] cannot handle events many [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] applications contain blocks of code to do this. For more information, see [XAML in WPF](xaml-in-wpf.md). Code is stripped out and compiled into different binaries when a [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] file is tokenized into the BAML form of XAML. The BAML form of XAML files, images, and other types of managed resource objects are embedded in the satellite resource assembly, which can be localized into other languages, or the main assembly when localization is not required.
 
 > [!NOTE]
-> [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] applications support all the FrameworkCLR resources including string tables, images, and so forth.
+> WPF applications support all the FrameworkCLR resources including string tables, images, and so forth.
 
 <a name="building_localizable_apps"></a>
 ### Building Localizable Applications
- Localization means to adapt a UI to different cultures. To make a [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] application localizable, developers need to build all the localizable resources into a resource assembly. The resource assembly is localized into different languages, and the code-behind uses resource management API to load. One of the files required for a [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] application is a project file (.proj). All resources that you use in your application should be included in the project file. The following example from a .csproj file shows how to do this.
+ Localization means to adapt a UI to different cultures. To make a WPF application localizable, developers need to build all the localizable resources into a resource assembly. The resource assembly is localized into different languages, and the code-behind uses resource management API to load. One of the files required for a WPF application is a project file (.proj). All resources that you use in your application should be included in the project file. The following example from a .csproj file shows how to do this.
 
 ```xml
 <Resource Include="data\picture1.jpg"/>

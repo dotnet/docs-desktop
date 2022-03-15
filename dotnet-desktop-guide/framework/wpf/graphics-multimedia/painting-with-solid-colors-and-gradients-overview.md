@@ -65,7 +65,7 @@ For additional ways to specify color, see the <xref:System.Windows.Media.Color> 
 
 ## Painting an Area with a Gradient
 
-A gradient brush paints an area with multiple colors that blend into each other along an axis. You can use them to create impressions of light and shadow, giving your controls a three-dimensional feel. You can also use them to simulate glass, chrome, water, and other smooth surfaces.  [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] provides two types of gradient brushes: <xref:System.Windows.Media.LinearGradientBrush> and <xref:System.Windows.Media.RadialGradientBrush>.
+A gradient brush paints an area with multiple colors that blend into each other along an axis. You can use them to create impressions of light and shadow, giving your controls a three-dimensional feel. You can also use them to simulate glass, chrome, water, and other smooth surfaces.  WPF provides two types of gradient brushes: <xref:System.Windows.Media.LinearGradientBrush> and <xref:System.Windows.Media.RadialGradientBrush>.
 
 <a name="lineargradientbrush"></a>
 

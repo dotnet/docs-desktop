@@ -21,7 +21,7 @@ This topic gives an overview of how to draw with <xref:System.Windows.Shapes.Sha
 
 <a name="shapes"></a>
 ## Shape Objects  
- [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] provides a number of ready-to-use <xref:System.Windows.Shapes.Shape> objects.  All shape objects inherit from the <xref:System.Windows.Shapes.Shape> class. Available shape objects include <xref:System.Windows.Shapes.Ellipse>, <xref:System.Windows.Shapes.Line>, <xref:System.Windows.Shapes.Path>, <xref:System.Windows.Shapes.Polygon>, <xref:System.Windows.Shapes.Polyline>, and <xref:System.Windows.Shapes.Rectangle>. <xref:System.Windows.Shapes.Shape> objects share the following common properties.  
+ WPF provides a number of ready-to-use <xref:System.Windows.Shapes.Shape> objects.  All shape objects inherit from the <xref:System.Windows.Shapes.Shape> class. Available shape objects include <xref:System.Windows.Shapes.Ellipse>, <xref:System.Windows.Shapes.Line>, <xref:System.Windows.Shapes.Path>, <xref:System.Windows.Shapes.Polygon>, <xref:System.Windows.Shapes.Polyline>, and <xref:System.Windows.Shapes.Rectangle>. <xref:System.Windows.Shapes.Shape> objects share the following common properties.  
   
 - <xref:System.Windows.Shapes.Shape.Stroke%2A>: Describes how the shape's outline is painted.  
   

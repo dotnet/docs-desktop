@@ -21,7 +21,7 @@ The <xref:System.Windows.FrameworkElement> class exposes several properties that
 
 ## Introduction to Element Positioning  
 
- There are numerous ways to position elements using [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)]. However, achieving ideal layout goes beyond simply choosing the right <xref:System.Windows.Controls.Panel> element. Fine control of positioning requires an understanding of the <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A>, <xref:System.Windows.FrameworkElement.Margin%2A>, <xref:System.Windows.Controls.Border.Padding%2A>, and <xref:System.Windows.FrameworkElement.VerticalAlignment%2A> properties.  
+ There are numerous ways to position elements using WPF. However, achieving ideal layout goes beyond simply choosing the right <xref:System.Windows.Controls.Panel> element. Fine control of positioning requires an understanding of the <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A>, <xref:System.Windows.FrameworkElement.Margin%2A>, <xref:System.Windows.Controls.Border.Padding%2A>, and <xref:System.Windows.FrameworkElement.VerticalAlignment%2A> properties.  
   
  The following illustration shows a layout scenario that utilizes several positioning properties.  
   
@@ -149,9 +149,9 @@ The <xref:System.Windows.FrameworkElement> class exposes several properties that
 
 ## What's Next  
 
- Positioning properties defined by the <xref:System.Windows.FrameworkElement> class enable fine control of element placement within [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] applications. You now have several techniques you can use to better position elements using [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)].  
+ Positioning properties defined by the <xref:System.Windows.FrameworkElement> class enable fine control of element placement within WPF applications. You now have several techniques you can use to better position elements using WPF.  
   
- Additional resources are available that explain [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] layout in greater detail. The [Panels Overview](../controls/panels-overview.md) topic contains more detail about the various <xref:System.Windows.Controls.Panel> elements. The topic [Walkthrough: My first WPF desktop application](../getting-started/walkthrough-my-first-wpf-desktop-application.md) introduces advanced techniques that use layout elements to position components and bind their actions to data sources.  
+ Additional resources are available that explain WPF layout in greater detail. The [Panels Overview](../controls/panels-overview.md) topic contains more detail about the various <xref:System.Windows.Controls.Panel> elements. The topic [Walkthrough: My first WPF desktop application](../getting-started/walkthrough-my-first-wpf-desktop-application.md) introduces advanced techniques that use layout elements to position components and bind their actions to data sources.  
   
 ## See also
 

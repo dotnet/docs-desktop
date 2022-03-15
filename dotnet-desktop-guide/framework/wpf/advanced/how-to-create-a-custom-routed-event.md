@@ -24,7 +24,7 @@ For your custom event to support event routing, you need to register a <xref:Sys
   
  [!code-xaml[RoutedEventCustom#Page](~/samples/snippets/csharp/VS_Snippets_Wpf/RoutedEventCustom/CSharp/RoutedEventCustomApp/default.xaml#page)]  
   
- Tunneling events are created the same way, but with <xref:System.Windows.RoutedEvent.RoutingStrategy%2A> set to <xref:System.Windows.RoutingStrategy.Tunnel> in the registration call. By convention, tunneling events in [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] are prefixed with the word "Preview".  
+ Tunneling events are created the same way, but with <xref:System.Windows.RoutedEvent.RoutingStrategy%2A> set to <xref:System.Windows.RoutingStrategy.Tunnel> in the registration call. By convention, tunneling events in WPF are prefixed with the word "Preview".  
   
  To see an example of how bubbling events work, see [Handle a Routed Event](how-to-handle-a-routed-event.md).  
   

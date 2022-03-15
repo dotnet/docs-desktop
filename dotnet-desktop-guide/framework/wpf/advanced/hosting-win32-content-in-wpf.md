@@ -16,7 +16,7 @@ See [WPF and Win32 Interoperation](wpf-and-win32-interoperation.md).
 
 ## A Walkthrough of Win32 Inside Windows Presentation Framework (HwndHost)
 
-To reuse Win32 content inside [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] applications, use <xref:System.Windows.Interop.HwndHost>, which is a control that makes HWNDs look like [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] content. Like <xref:System.Windows.Interop.HwndSource>, <xref:System.Windows.Interop.HwndHost> is straightforward to use: derive from <xref:System.Windows.Interop.HwndHost> and implement `BuildWindowCore` and `DestroyWindowCore` methods, then instantiate your <xref:System.Windows.Interop.HwndHost> derived class and place it inside your [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] application.
+To reuse Win32 content inside WPF applications, use <xref:System.Windows.Interop.HwndHost>, which is a control that makes HWNDs look like WPF content. Like <xref:System.Windows.Interop.HwndSource>, <xref:System.Windows.Interop.HwndHost> is straightforward to use: derive from <xref:System.Windows.Interop.HwndHost> and implement `BuildWindowCore` and `DestroyWindowCore` methods, then instantiate your <xref:System.Windows.Interop.HwndHost> derived class and place it inside your WPF application.
 
 If your Win32 logic is already packaged as a control, then your `BuildWindowCore` implementation is little more than a call to `CreateWindow`. For example, to create a Win32 LISTBOX control in C++:
 
@@ -41,11 +41,11 @@ virtual void DestroyWindowCore(HandleRef hwnd) override {
 }
 ```
 
-But suppose the Win32 code is not quite so self-contained? If so, you can create a Win32 dialog box and embed its contents into a larger [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] application. The sample shows this in Visual Studio and C++, although it is also possible to do this in a different language or at the command line.
+But suppose the Win32 code is not quite so self-contained? If so, you can create a Win32 dialog box and embed its contents into a larger WPF application. The sample shows this in Visual Studio and C++, although it is also possible to do this in a different language or at the command line.
 
 Start with a simple dialog, which is compiled into a C++ DLL project.
 
-Next, introduce the dialog into the larger [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] application:
+Next, introduce the dialog into the larger WPF application:
 
 - Compile the DLL as managed (`/clr`)
 
@@ -59,7 +59,7 @@ Next, introduce the dialog into the larger [!INCLUDE[TLA2#tla_winclient](../../.
 
 - Override `OnMnemonic` method to support mnemonics
 
-- Instantiate the <xref:System.Windows.Interop.HwndHost> subclass and put it under the right [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] element
+- Instantiate the <xref:System.Windows.Interop.HwndHost> subclass and put it under the right WPF element
 
 ### Turn the Dialog into a Control
 
@@ -227,7 +227,7 @@ Both MSGs have the same data, but sometimes it is easier to work with the unmana
 }
 ```
 
-Back to `TranslateAccelerator`. The basic principle is to call the Win32 function `IsDialogMessage` to do as much work as possible, but `IsDialogMessage` does not have access to anything outside the dialog. As a user tab around the dialog, when tabbing runs past the last control in our dialog, you need to set focus to the [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] portion by calling `IKeyboardInputSite::OnNoMoreStops`.
+Back to `TranslateAccelerator`. The basic principle is to call the Win32 function `IsDialogMessage` to do as much work as possible, but `IsDialogMessage` does not have access to anything outside the dialog. As a user tab around the dialog, when tabbing runs past the last control in our dialog, you need to set focus to the WPF portion by calling `IKeyboardInputSite::OnNoMoreStops`.
 
 ```cpp
 // Win32's IsDialogMessage() will handle most of the tabbing, but doesn't know
@@ -249,7 +249,7 @@ if (m.message == WM_KEYDOWN && m.wParam == VK_TAB) {
 }
 ```
 
-Finally, call `IsDialogMessage`. But one of the responsibilities of a `TranslateAccelerator` method is telling [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] whether you handled the keystroke or not. If you did not handle it, the input event can tunnel and bubble through the rest of the application. Here, you will expose a quirk of keyboard messange handling and the nature of the input architecture in Win32. Unfortunately, `IsDialogMessage` does not return in any way whether it handles a particular keystroke. Even worse, it will call `DispatchMessage()` on keystrokes it should not handle!  So you will have to reverse-engineer `IsDialogMessage`, and only call it for the keys you know it will handle:
+Finally, call `IsDialogMessage`. But one of the responsibilities of a `TranslateAccelerator` method is telling WPF whether you handled the keystroke or not. If you did not handle it, the input event can tunnel and bubble through the rest of the application. Here, you will expose a quirk of keyboard messange handling and the nature of the input architecture in Win32. Unfortunately, `IsDialogMessage` does not return in any way whether it handles a particular keystroke. Even worse, it will call `DispatchMessage()` on keystrokes it should not handle!  So you will have to reverse-engineer `IsDialogMessage`, and only call it for the keys you know it will handle:
 
 ```cpp
 // Only call IsDialogMessage for keys it will do something with.
@@ -274,7 +274,7 @@ if (msg.message == WM_SYSKEYDOWN || msg.message == WM_KEYDOWN) {
 
 ### Override TabInto Method to Support Tabbing
 
-Now that you have implemented `TranslateAccelerator`, a user can tab around inside the dialog box and tab out of it into the greater [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] application. But a user cannot tab back into the dialog box. To solve that, you override `TabInto`:
+Now that you have implemented `TranslateAccelerator`, a user can tab around inside the dialog box and tab out of it into the greater WPF application. But a user cannot tab back into the dialog box. To solve that, you override `TabInto`:
 
 ```cpp
 public:
@@ -325,11 +325,11 @@ virtual bool OnMnemonic(System::Windows::Interop::MSG% msg, ModifierKeys modifie
 };
 ```
 
-Why not call `IsDialogMessage` here?  You have the same issue as before--you need to be able to inform [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] code whether your code handled the keystroke or not, and `IsDialogMessage` cannot do that. There is also a second issue, because `IsDialogMessage` refuses to process the mnemonic if the focused HWND is not inside the dialog box.
+Why not call `IsDialogMessage` here?  You have the same issue as before--you need to be able to inform WPF code whether your code handled the keystroke or not, and `IsDialogMessage` cannot do that. There is also a second issue, because `IsDialogMessage` refuses to process the mnemonic if the focused HWND is not inside the dialog box.
 
 ### Instantiate the HwndHost Derived Class
 
-Finally, now that all the key and tab support is in place, you can put your <xref:System.Windows.Interop.HwndHost> into the larger [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] application. If the main application is written in [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)], the easiest way to put it in the right place is to leave an empty <xref:System.Windows.Controls.Border> element where you want to put the <xref:System.Windows.Interop.HwndHost>. Here you create a <xref:System.Windows.Controls.Border> named `insertHwndHostHere`:
+Finally, now that all the key and tab support is in place, you can put your <xref:System.Windows.Interop.HwndHost> into the larger WPF application. If the main application is written in [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)], the easiest way to put it in the right place is to leave an empty <xref:System.Windows.Controls.Border> element where you want to put the <xref:System.Windows.Interop.HwndHost>. Here you create a <xref:System.Windows.Controls.Border> named `insertHwndHostHere`:
 
 ```xaml
 <Window x:Class="WPFApplication1.Window1"

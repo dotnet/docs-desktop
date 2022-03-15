@@ -59,11 +59,11 @@ ms.assetid: 1506a35d-c009-43db-9f1e-4e230ad5be73
   
 <a name="Binding_IList_to_ItemsControl_not_IEnumerable"></a>
 ## Bind IList to ItemsControl not IEnumerable  
- If you have a choice between binding an <xref:System.Collections.Generic.IList%601> or an <xref:System.Collections.IEnumerable> to an <xref:System.Windows.Controls.ItemsControl> object, choose the <xref:System.Collections.Generic.IList%601> object. Binding <xref:System.Collections.IEnumerable> to an <xref:System.Windows.Controls.ItemsControl> forces [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] to create a wrapper <xref:System.Collections.Generic.IList%601> object, which means your performance is impacted by the unnecessary overhead of a second object.  
+ If you have a choice between binding an <xref:System.Collections.Generic.IList%601> or an <xref:System.Collections.IEnumerable> to an <xref:System.Windows.Controls.ItemsControl> object, choose the <xref:System.Collections.Generic.IList%601> object. Binding <xref:System.Collections.IEnumerable> to an <xref:System.Windows.Controls.ItemsControl> forces WPF to create a wrapper <xref:System.Collections.Generic.IList%601> object, which means your performance is impacted by the unnecessary overhead of a second object.  
   
 <a name="Do_not_Convert_CLR_objects_to_Xml_Just_For_Data_Binding"></a>
 ## Do not Convert CLR objects to XML Just for Data Binding.  
- [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] allows you to data bind to XML content; however, data binding to XML content is slower than data binding to CLR objects. Do not convert CLR object data to XML if the only purpose is for data binding.  
+ WPF allows you to data bind to XML content; however, data binding to XML content is slower than data binding to CLR objects. Do not convert CLR object data to XML if the only purpose is for data binding.  
   
 ## See also
 

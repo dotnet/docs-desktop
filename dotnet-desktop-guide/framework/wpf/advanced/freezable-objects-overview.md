@@ -32,7 +32,7 @@ For example, suppose you create a <xref:System.Windows.Media.SolidColorBrush> br
 [!code-csharp[freezablesample_procedural#FrozenExamplePart1](~/samples/snippets/csharp/VS_Snippets_Wpf/freezablesample_procedural/CSharp/freezablesample.cs#frozenexamplepart1)]
 [!code-vb[freezablesample_procedural#FrozenExamplePart1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/freezablesample_procedural/visualbasic/freezablesample.vb#frozenexamplepart1)]
 
-When the button is rendered, the [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] graphics sub-system uses the information you provided to paint a group of pixels to create the appearance of a button. Although you used a solid color brush to describe how the button should be painted, your solid color brush doesn't actually do the painting. The graphics system generates fast, low-level objects for the button and the brush, and it is those objects that actually appear on the screen.
+When the button is rendered, the WPF graphics sub-system uses the information you provided to paint a group of pixels to create the appearance of a button. Although you used a solid color brush to describe how the button should be painted, your solid color brush doesn't actually do the painting. The graphics system generates fast, low-level objects for the button and the brush, and it is those objects that actually appear on the screen.
 
 If you were to modify the brush, those low-level objects would have to be regenerated. The freezable class is what gives a brush the ability to find its corresponding generated, low-level objects and to update them when it changes. When this ability is enabled, the brush is said to be "unfrozen."
 

@@ -28,7 +28,7 @@ This example shows how to bind to XML data using an <xref:System.Windows.Data.Xm
   
  In this example, the book titles are displayed because the <xref:System.Windows.Data.Binding.XPath%2A> of the <xref:System.Windows.Controls.TextBlock> binding in the <xref:System.Windows.DataTemplate> is set to "*Title*". If you want to display the value of an attribute, such as the *ISBN*, you would set that <xref:System.Windows.Data.Binding.XPath%2A> value to "`@ISBN`".  
   
- The **XPath** properties in [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] are handled by the XmlNode.SelectNodes method. You can modify the **XPath** queries to get different results. Here are some examples for the <xref:System.Windows.Data.Binding.XPath%2A> query on the bound <xref:System.Windows.Controls.ListBox> from the previous example:  
+ The **XPath** properties in WPF are handled by the XmlNode.SelectNodes method. You can modify the **XPath** queries to get different results. Here are some examples for the <xref:System.Windows.Data.Binding.XPath%2A> query on the bound <xref:System.Windows.Controls.ListBox> from the previous example:  
   
 - `XPath="Book[1]"` will return the first book element ("XML in Action"). Note that **XPath** indexes are based on 1, not 0.  
   

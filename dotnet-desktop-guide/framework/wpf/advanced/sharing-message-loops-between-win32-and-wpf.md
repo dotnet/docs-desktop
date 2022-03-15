@@ -33,7 +33,7 @@ This topic describes how to implement a message loop for interoperation with [!I
 - <xref:System.Windows.Interop.ComponentDispatcher.RaiseThreadMessage%2A>: your message loop should call this to indicate that a new message is available. The return value indicates whether a listener to a <xref:System.Windows.Interop.ComponentDispatcher> event handled the message. If <xref:System.Windows.Interop.ComponentDispatcher.RaiseThreadMessage%2A> returns `true` (handled), the dispatcher should do nothing further with the message. If the return value is `false`, the dispatcher is expected to call the Win32 function `TranslateMessage`, then call `DispatchMessage`.  
   
 ## Using ComponentDispatcher and Existing Message Handling  
- The following is a checklist of <xref:System.Windows.Interop.ComponentDispatcher> members you will use if you rely on the inherent [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] message loop.  
+ The following is a checklist of <xref:System.Windows.Interop.ComponentDispatcher> members you will use if you rely on the inherent WPF message loop.  
   
 - <xref:System.Windows.Interop.ComponentDispatcher.IsThreadModal%2A>: returns whether the application has gone modal (e.g., a modal message loop has been pushed). <xref:System.Windows.Interop.ComponentDispatcher> can track this state because the class maintains a count of <xref:System.Windows.Interop.ComponentDispatcher.PushModal%2A> and <xref:System.Windows.Interop.ComponentDispatcher.PopModal%2A> calls from the message loop.  
   

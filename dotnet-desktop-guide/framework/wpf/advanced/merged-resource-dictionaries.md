@@ -7,7 +7,7 @@ helpviewer_keywords:
 ms.assetid: d159531f-05d4-49fd-b951-c332de51e5bc
 ---
 # Merged Resource Dictionaries
-[!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] resources support a merged resource dictionary feature. This feature provides a way to define the resources portion of a [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] application outside of the compiled [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] application. Resources can then be shared across applications and are also more conveniently isolated for localization.  
+WPF application outside of the compiled [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] application. Resources can then be shared across applications and are also more conveniently isolated for localization.  
   
 ## Introducing a Merged Resource Dictionary  
  In markup, you use the following syntax to introduce a merged resource dictionary into a page:  
@@ -31,7 +31,7 @@ ms.assetid: d159531f-05d4-49fd-b951-c332de51e5bc
  For resources that are compiled as part of the project, you can use a relative path that refers to the resource location. The relative path is evaluated during compilation. Your resource must be defined as part of the project as a Resource build action. If you include a resource .xaml file in the project as Resource, you do not need to copy the resource file to the output directory, the resource is already included within the compiled application. You can also use Content build action, but you must then copy the files to the output directory and also deploy the resource files in the same path relationship to the executable.  
   
 > [!NOTE]
-> Do not use the Embedded Resource build action. The build action itself is supported for [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] applications, but the resolution of <xref:System.Windows.ResourceDictionary.Source%2A> does not incorporate <xref:System.Resources.ResourceManager>, and thus cannot separate the individual resource out of the stream. You could still use Embedded Resource for other purposes so long as you also used <xref:System.Resources.ResourceManager> to access the resources.  
+> Do not use the Embedded Resource build action. The build action itself is supported for WPF applications, but the resolution of <xref:System.Windows.ResourceDictionary.Source%2A> does not incorporate <xref:System.Resources.ResourceManager>, and thus cannot separate the individual resource out of the stream. You could still use Embedded Resource for other purposes so long as you also used <xref:System.Resources.ResourceManager> to access the resources.  
   
  A related technique is to use a Pack URI to a [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] file, and refer to it as Source. Pack URI enables references to components of referenced assemblies and other techniques. For more information on Pack URIs, see [WPF Application Resource, Content, and Data Files](../app-development/wpf-application-resource-content-and-data-files.md).  
   

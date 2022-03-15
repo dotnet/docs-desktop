@@ -11,35 +11,35 @@ ms.assetid: 0ffbde0d-701d-45a3-a6fa-dd71f4d9772e
 ---
 # WPF and Win32 Interoperation
 
-This topic provides an overview of how to interoperate [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] and Win32 code. [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] provides a rich environment for creating applications. However, when you have a substantial investment in Win32 code, it might be more effective to reuse some of that code.
+This topic provides an overview of how to interoperate WPF and Win32 code. [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] provides a rich environment for creating applications. However, when you have a substantial investment in Win32 code, it might be more effective to reuse some of that code.
 
 <a name="basics"></a>
 
 ## WPF and Win32 Interoperation Basics
 
-There are two basic techniques for interoperation between [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] and Win32 code.
+There are two basic techniques for interoperation between WPF and Win32 code.
 
-- Host [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] content in a Win32 window. With this technique, you can use the advanced graphics capabilities of [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] within the framework of a standard Win32 window and application.
+- Host WPF content in a Win32 window. With this technique, you can use the advanced graphics capabilities of WPF within the framework of a standard Win32 window and application.
 
-- Host a Win32 window in [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] content. With this technique, you can use an existing custom Win32 control in the context of other [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] content, and pass data across the boundaries.
+- Host a Win32 window in WPF content. With this technique, you can use an existing custom Win32 control in the context of other WPF content, and pass data across the boundaries.
 
-Each of these techniques is conceptually introduced in this topic. For a more code-oriented illustration of hosting [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] in Win32, see [Walkthrough: Hosting WPF Content in Win32](walkthrough-hosting-wpf-content-in-win32.md). For a more code-oriented illustration of hosting Win32 in [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)], see [Walkthrough: Hosting a Win32 Control in WPF](walkthrough-hosting-a-win32-control-in-wpf.md).
+Each of these techniques is conceptually introduced in this topic. For a more code-oriented illustration of hosting WPF in Win32, see [Walkthrough: Hosting WPF Content in Win32](walkthrough-hosting-wpf-content-in-win32.md). For a more code-oriented illustration of hosting Win32 in WPF, see [Walkthrough: Hosting a Win32 Control in WPF](walkthrough-hosting-a-win32-control-in-wpf.md).
 
 <a name="projects"></a>
 
 ## WPF Interoperation Projects
 
-[!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] APIs are managed code, but most existing Win32 programs are written in unmanaged C++.  You cannot call [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] APIs from a true unmanaged program. However, by using the `/clr` option with the Microsoft Visual C++ compiler, you can create a mixed managed-unmanaged program where you can seamlessly mix managed and unmanaged API calls.
+WPF APIs are managed code, but most existing Win32 programs are written in unmanaged C++.  You cannot call WPF APIs from a true unmanaged program. However, by using the `/clr` option with the Microsoft Visual C++ compiler, you can create a mixed managed-unmanaged program where you can seamlessly mix managed and unmanaged API calls.
 
 One project-level complication is that you cannot compile [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)] files into a C++ project.  There are several project division techniques to compensate for this.
 
 - Create a C# DLL that contains all your [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] pages as a compiled assembly, and then have your C++ executable include that DLL as a reference.
 
-- Create a C# executable for the [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] content, and have it reference a C++ DLL that contains the Win32 content.
+- Create a C# executable for the WPF content, and have it reference a C++ DLL that contains the Win32 content.
 
 - Use <xref:System.Windows.Markup.XamlReader.Load%2A> to load any [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] at run time, instead of compiling your [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)].
 
-- Do not use [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] at all, and write all your [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] in code, building up the element tree from <xref:System.Windows.Application>.
+- Do not use WPF in code, building up the element tree from <xref:System.Windows.Application>.
 
 Use whatever approach works best for you.
 
@@ -50,9 +50,9 @@ Use whatever approach works best for you.
 
 ## How WPF Uses Hwnds
 
-To make the most of [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] "HWND interop", you need to understand how [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] uses HWNDs. For any HWND, you cannot mix [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] rendering with DirectX rendering or GDI / GDI+ rendering. This has a number of implications. Primarily, in order to mix these rendering models at all, you must create an interoperation solution, and use designated segments of interoperation for each rendering model that you choose to use. Also, the rendering behavior creates an "airspace" restriction for what your interoperation solution can accomplish. The "airspace" concept is explained in greater detail in the topic [Technology Regions Overview](technology-regions-overview.md).
+To make the most of WPF "HWND interop", you need to understand how WPF uses HWNDs. For any HWND, you cannot mix WPF rendering with DirectX rendering or GDI / GDI+ rendering. This has a number of implications. Primarily, in order to mix these rendering models at all, you must create an interoperation solution, and use designated segments of interoperation for each rendering model that you choose to use. Also, the rendering behavior creates an "airspace" restriction for what your interoperation solution can accomplish. The "airspace" concept is explained in greater detail in the topic [Technology Regions Overview](technology-regions-overview.md).
 
-All [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] elements on the screen are ultimately backed by a HWND. When you create a [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] <xref:System.Windows.Window>, [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] creates a top-level HWND, and uses an <xref:System.Windows.Interop.HwndSource> to put the <xref:System.Windows.Window> and its [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] content inside the HWND.  The rest of your [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] content in the application shares that singular HWND. An exception is menus, combo box drop downs, and other pop-ups. These elements create their own top-level window, which is why a [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] menu can potentially go past the edge of the window HWND that contains it. When you use <xref:System.Windows.Interop.HwndHost> to put an HWND inside [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)], [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] informs Win32 how to position the new child HWND relative to the [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] <xref:System.Windows.Window> HWND.
+All WPF elements on the screen are ultimately backed by a HWND. When you create a WPF <xref:System.Windows.Window>, WPF creates a top-level HWND, and uses an <xref:System.Windows.Interop.HwndSource> to put the <xref:System.Windows.Window> and its WPF content inside the HWND.  The rest of your WPF content in the application shares that singular HWND. An exception is menus, combo box drop downs, and other pop-ups. These elements create their own top-level window, which is why a WPF menu can potentially go past the edge of the window HWND that contains it. When you use <xref:System.Windows.Interop.HwndHost> to put an HWND inside WPF, WPF informs Win32 how to position the new child HWND relative to the WPF <xref:System.Windows.Window> HWND.
 
 A related concept to HWND is transparency within and between each HWND. This is also discussed in the topic [Technology Regions Overview](technology-regions-overview.md).
 
@@ -60,13 +60,13 @@ A related concept to HWND is transparency within and between each HWND. This is 
 
 ## Hosting WPF Content in a Microsoft Win32 Window
 
-The key to hosting a [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] on a Win32 window is the <xref:System.Windows.Interop.HwndSource> class. This class wraps the [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] content in a Win32 window, so that the [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] content can be incorporated into your [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)] as a child window. The following approach combines the Win32 and [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] in a single application.
+The key to hosting a WPF on a Win32 window is the <xref:System.Windows.Interop.HwndSource> class. This class wraps the WPF content in a Win32 window, so that the WPF content can be incorporated into your WPF in a single application.
 
-1. Implement your [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] content (the content root element) as a managed class. Typically, the class inherits from one of the classes that can contain multiple child elements and/or used as a root element, such as <xref:System.Windows.Controls.DockPanel> or <xref:System.Windows.Controls.Page>. In subsequent steps, this class is referred to as the [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] content class, and instances of the class are referred to as [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] content objects.
+1. Implement your WPF content (the content root element) as a managed class. Typically, the class inherits from one of the classes that can contain multiple child elements and/or used as a root element, such as <xref:System.Windows.Controls.DockPanel> or <xref:System.Windows.Controls.Page>. In subsequent steps, this class is referred to as the WPF content class, and instances of the class are referred to as WPF content objects.
 
 2. Implement a Windows application with C++/CLI. If you are starting with an existing unmanaged C++ application, you can usually enable it to call managed code by changing your project settings to include the `/clr` compiler flag (the full scope of what might be necessary to support `/clr` compilation is not described in this topic).
 
-3. Set the threading model to Single Threaded Apartment (STA). [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] uses this threading model.
+3. Set the threading model to Single Threaded Apartment (STA). WPF uses this threading model.
 
 4. Handle the WM_CREATE notification in your window procedure.
 
@@ -74,20 +74,20 @@ The key to hosting a [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptl
 
     1. Create a new <xref:System.Windows.Interop.HwndSource> object with the parent window HWND as its `parent` parameter.
 
-    2. Create an instance of your [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] content class.
+    2. Create an instance of your WPF content class.
 
-    3. Assign a reference to the [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] content object to the <xref:System.Windows.Interop.HwndSource> object <xref:System.Windows.Interop.HwndSource.RootVisual%2A> property.
+    3. Assign a reference to the WPF content object to the <xref:System.Windows.Interop.HwndSource> object <xref:System.Windows.Interop.HwndSource.RootVisual%2A> property.
 
     4. The <xref:System.Windows.Interop.HwndSource> object <xref:System.Windows.Interop.HwndSource.Handle%2A> property contains the window handle (HWND). To get an HWND that you can use in the unmanaged part of your application, cast `Handle.ToPointer()` to an HWND.
 
-6. Implement a managed class that contains a static field that holds a reference to your [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] content object. This class allows you to get a reference to the [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] content object from your Win32 code, but more importantly it prevents your <xref:System.Windows.Interop.HwndSource> from being inadvertently garbage collected.
+6. Implement a managed class that contains a static field that holds a reference to your WPF content object. This class allows you to get a reference to the WPF content object from your Win32 code, but more importantly it prevents your <xref:System.Windows.Interop.HwndSource> from being inadvertently garbage collected.
 
-7. Receive notifications from the [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] content object by attaching a handler to one or more of the [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] content object events.
+7. Receive notifications from the WPF content object by attaching a handler to one or more of the WPF content object events.
 
-8. Communicate with the [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] content object by using the reference that you stored in the static field to set properties, call methods, etc.
+8. Communicate with the WPF content object by using the reference that you stored in the static field to set properties, call methods, etc.
 
 > [!NOTE]
-> You can do some or all of the [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] content class definition for Step One in [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] using the default partial class of the content class, if you produce a separate assembly and then reference it. Although you typically include an <xref:System.Windows.Application> object as part of compiling the [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] into an assembly, you do not end up using that <xref:System.Windows.Application> as part of the interoperation, you just use one or more of the root classes for [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] files referred to by the application and reference their partial classes. The remainder of the procedure is essentially similar to that outlined above.
+> You can do some or all of the WPF content class definition for Step One in [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] using the default partial class of the content class, if you produce a separate assembly and then reference it. Although you typically include an <xref:System.Windows.Application> object as part of compiling the [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] into an assembly, you do not end up using that <xref:System.Windows.Application> as part of the interoperation, you just use one or more of the root classes for [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] files referred to by the application and reference their partial classes. The remainder of the procedure is essentially similar to that outlined above.
 >
 > Each of these steps is illustrated through code in the topic [Walkthrough: Hosting WPF Content in Win32](walkthrough-hosting-wpf-content-in-win32.md).
 
@@ -95,13 +95,13 @@ The key to hosting a [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptl
 
 ## Hosting a Microsoft Win32 Window in WPF
 
-The key to hosting a Win32 window within other [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] content is the <xref:System.Windows.Interop.HwndHost> class. This class wraps the window in a [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] element which can be added to a [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] element tree. <xref:System.Windows.Interop.HwndHost> also supports APIs that allow you to do such tasks as process messages for the hosted window. The basic procedure is:
+The key to hosting a Win32 window within other WPF content is the <xref:System.Windows.Interop.HwndHost> class. This class wraps the window in a WPF element which can be added to a WPF element tree. <xref:System.Windows.Interop.HwndHost> also supports APIs that allow you to do such tasks as process messages for the hosted window. The basic procedure is:
 
-1. Create an element tree for a [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] application (can be through code or markup). Find an appropriate and permissible point in the element tree where the <xref:System.Windows.Interop.HwndHost> implementation can be added as a child element. In the remainder of these steps, this element is referred to as the reserving element.
+1. Create an element tree for a WPF application (can be through code or markup). Find an appropriate and permissible point in the element tree where the <xref:System.Windows.Interop.HwndHost> implementation can be added as a child element. In the remainder of these steps, this element is referred to as the reserving element.
 
 2. Derive from <xref:System.Windows.Interop.HwndHost> to create an object that holds your Win32 content.
 
-3. In that host class, override the <xref:System.Windows.Interop.HwndHost> method <xref:System.Windows.Interop.HwndHost.BuildWindowCore%2A>. Return the HWND of the hosted window. You might want to wrap the actual control(s) as a child window of the returned window; wrapping the controls in a host window provides a simple way for your [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] content to receive notifications from the controls. This technique helps correct for some Win32 issues regarding message handling at the hosted control boundary.
+3. In that host class, override the <xref:System.Windows.Interop.HwndHost> method <xref:System.Windows.Interop.HwndHost.BuildWindowCore%2A>. Return the HWND of the hosted window. You might want to wrap the actual control(s) as a child window of the returned window; wrapping the controls in a host window provides a simple way for your WPF content to receive notifications from the controls. This technique helps correct for some Win32 issues regarding message handling at the hosted control boundary.
 
 4. Override the <xref:System.Windows.Interop.HwndHost> methods <xref:System.Windows.Interop.HwndHost.DestroyWindowCore%2A> and <xref:System.Windows.Interop.HwndHost.WndProc%2A>. The intention here is to process cleanup and remove references to the hosted content, particularly if you created references to unmanaged objects.
 
@@ -111,7 +111,7 @@ The key to hosting a Win32 window within other [!INCLUDE[TLA2#tla_winclient](../
 
     - Implement message processing for all messages (not just shutdown messages) in your override of the <xref:System.Windows.Interop.HwndHost> method <xref:System.Windows.Interop.HwndHost.WndProc%2A>.
 
-    - Have the hosting [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] element process the messages by handling the <xref:System.Windows.Interop.HwndHost.MessageHook> event. This event is raised for every message that is sent to the main window procedure of the hosted window.
+    - Have the hosting WPF element process the messages by handling the <xref:System.Windows.Interop.HwndHost.MessageHook> event. This event is raised for every message that is sent to the main window procedure of the hosted window.
 
     - You cannot process messages from windows that are out of process using <xref:System.Windows.Interop.HwndHost.WndProc%2A>.
 
@@ -123,7 +123,7 @@ Each of these steps is illustrated through code in the topic [Walkthrough: Hosti
 
 ### Hwnds Inside WPF
 
-You can think of <xref:System.Windows.Interop.HwndHost> as a special control. (Technically, <xref:System.Windows.Interop.HwndHost> is a <xref:System.Windows.FrameworkElement> derived class, not a <xref:System.Windows.Controls.Control> derived class, but it can be considered a control for purposes of interoperation.) <xref:System.Windows.Interop.HwndHost> abstracts the underlying Win32 nature of the hosted content such that the remainder of [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] considers the hosted content to be another control-like object, which should render and process input. <xref:System.Windows.Interop.HwndHost> generally behaves like any other [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] <xref:System.Windows.FrameworkElement>, although there are some important differences around output (drawing and graphics) and input (mouse and keyboard) based on limitations of what the underlying HWNDs can support.
+You can think of <xref:System.Windows.Interop.HwndHost> as a special control. (Technically, <xref:System.Windows.Interop.HwndHost> is a <xref:System.Windows.FrameworkElement> derived class, not a <xref:System.Windows.Controls.Control> derived class, but it can be considered a control for purposes of interoperation.) <xref:System.Windows.Interop.HwndHost> abstracts the underlying Win32 nature of the hosted content such that the remainder of WPF considers the hosted content to be another control-like object, which should render and process input. <xref:System.Windows.Interop.HwndHost> generally behaves like any other WPF <xref:System.Windows.FrameworkElement>, although there are some important differences around output (drawing and graphics) and input (mouse and keyboard) based on limitations of what the underlying HWNDs can support.
 
 #### Notable Differences in Output Behavior
 
@@ -133,7 +133,7 @@ You can think of <xref:System.Windows.Interop.HwndHost> as a special control. (T
 
 - <xref:System.Windows.Interop.HwndHost> does not support the <xref:System.Windows.UIElement.Opacity%2A> property (alpha blending). If content inside the <xref:System.Windows.Interop.HwndHost> performs <xref:System.Drawing> operations that include alpha information, that is itself not a violation, but the <xref:System.Windows.Interop.HwndHost> as a whole only supports Opacity = 1.0 (100%).
 
-- <xref:System.Windows.Interop.HwndHost> will appear on top of other [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] elements in the same top-level window. However, a <xref:System.Windows.Controls.ToolTip> or <xref:System.Windows.Controls.ContextMenu> generated menu is a separate top-level window, and so will behave correctly with <xref:System.Windows.Interop.HwndHost>.
+- <xref:System.Windows.Interop.HwndHost> will appear on top of other WPF elements in the same top-level window. However, a <xref:System.Windows.Controls.ToolTip> or <xref:System.Windows.Controls.ContextMenu> generated menu is a separate top-level window, and so will behave correctly with <xref:System.Windows.Interop.HwndHost>.
 
 - <xref:System.Windows.Interop.HwndHost> does not respect the clipping region of its parent <xref:System.Windows.UIElement>. This is potentially an issue if you attempt to put an <xref:System.Windows.Interop.HwndHost> class inside a scrolling region or <xref:System.Windows.Controls.Canvas>.
 
@@ -141,11 +141,11 @@ You can think of <xref:System.Windows.Interop.HwndHost> as a special control. (T
 
 - In general, while input devices are scoped within the <xref:System.Windows.Interop.HwndHost> hosted Win32 region, input events go directly to Win32.
 
-- While the mouse is over the <xref:System.Windows.Interop.HwndHost>, your application does not receive [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] mouse events, and the value of the [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] property <xref:System.Windows.UIElement.IsMouseOver%2A> will be `false`.
+- While the mouse is over the <xref:System.Windows.Interop.HwndHost>, your application does not receive WPF mouse events, and the value of the WPF property <xref:System.Windows.UIElement.IsMouseOver%2A> will be `false`.
 
-- While the <xref:System.Windows.Interop.HwndHost> has keyboard focus, your application will not receive [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] keyboard events and the value of the [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] property <xref:System.Windows.UIElement.IsKeyboardFocusWithin%2A> will be `false`.
+- While the <xref:System.Windows.Interop.HwndHost> has keyboard focus, your application will not receive WPF keyboard events and the value of the WPF property <xref:System.Windows.UIElement.IsKeyboardFocusWithin%2A> will be `false`.
 
-- When focus is within the <xref:System.Windows.Interop.HwndHost> and changes to another control inside the <xref:System.Windows.Interop.HwndHost>, your application will not receive the [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] events <xref:System.Windows.UIElement.GotFocus> or <xref:System.Windows.UIElement.LostFocus>.
+- When focus is within the <xref:System.Windows.Interop.HwndHost> and changes to another control inside the <xref:System.Windows.Interop.HwndHost>, your application will not receive the WPF events <xref:System.Windows.UIElement.GotFocus> or <xref:System.Windows.UIElement.LostFocus>.
 
 - Related stylus properties and events are analogous, and do not report information while the stylus is over <xref:System.Windows.Interop.HwndHost>.
 
@@ -153,15 +153,15 @@ You can think of <xref:System.Windows.Interop.HwndHost> as a special control. (T
 
 ## Tabbing, Mnemonics, and Accelerators
 
-The <xref:System.Windows.Interop.IKeyboardInputSink> and <xref:System.Windows.Interop.IKeyboardInputSite> interfaces allow you to create a seamless keyboard experience for mixed [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] and Win32 applications:
+The <xref:System.Windows.Interop.IKeyboardInputSink> and <xref:System.Windows.Interop.IKeyboardInputSite> interfaces allow you to create a seamless keyboard experience for mixed WPF and Win32 applications:
 
-- Tabbing between Win32 and [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] components
+- Tabbing between Win32 and WPF components
 
 - Mnemonics and accelerators that work both when focus is within a Win32 component and when it is within a WPF component.
 
 The <xref:System.Windows.Interop.HwndHost> and <xref:System.Windows.Interop.HwndSource> classes both provide implementations of <xref:System.Windows.Interop.IKeyboardInputSink>, but they may not handle all the input messages that you want for more advanced scenarios. Override the appropriate methods to get the keyboard behavior you want.
 
-The interfaces only provide support for what happens on the transition between the [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] and Win32 regions. Within the Win32 region, tabbing behavior is entirely controlled by the Win32 implemented logic for tabbing, if any.
+The interfaces only provide support for what happens on the transition between the WPF and Win32 regions. Within the Win32 region, tabbing behavior is entirely controlled by the Win32 implemented logic for tabbing, if any.
 
 ## See also
 

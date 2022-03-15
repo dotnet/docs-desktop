@@ -37,7 +37,7 @@ ms.assetid: f73644af-9941-4611-8754-6d4cef03fc44
 
  <xref:System.Windows.Controls.Panel> is the base class for all elements that provide layout support in [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)]. Derived <xref:System.Windows.Controls.Panel> elements are used to position and arrange elements in [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)] and code.  
   
- The [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] includes a comprehensive suite of derived panel implementations that enable many complex layouts. These derived classes expose properties and methods that enable most standard [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)] scenarios. Developers who are unable to find a child arrangement behavior that meets their needs can create new layouts by overriding the <xref:System.Windows.FrameworkElement.ArrangeOverride%2A> and <xref:System.Windows.FrameworkElement.MeasureOverride%2A> methods. For more information on custom layout behaviors, see [Custom Panel Elements](#Panels_custom_panel_elements).  
+ The WPF includes a comprehensive suite of derived panel implementations that enable many complex layouts. These derived classes expose properties and methods that enable most standard [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)] scenarios. Developers who are unable to find a child arrangement behavior that meets their needs can create new layouts by overriding the <xref:System.Windows.FrameworkElement.ArrangeOverride%2A> and <xref:System.Windows.FrameworkElement.MeasureOverride%2A> methods. For more information on custom layout behaviors, see [Custom Panel Elements](#Panels_custom_panel_elements).  
   
 <a name="Panels_declared_members"></a>
 
@@ -213,7 +213,7 @@ ms.assetid: f73644af-9941-4611-8754-6d4cef03fc44
 
 #### VirtualizingStackPanel  
 
- [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] also provides a variation of the <xref:System.Windows.Controls.StackPanel> element that automatically "virtualizes" data-bound child content. In this context, the word virtualize refers to a technique by which a subset of elements are generated from a larger number of data items based upon which items are visible on-screen. It is intensive, both in terms of memory and processor, to generate a large number of UI elements when only a few may be on the screen at a given time. <xref:System.Windows.Controls.VirtualizingStackPanel> (through functionality provided by <xref:System.Windows.Controls.VirtualizingPanel>) calculates visible items and works with the <xref:System.Windows.Controls.ItemContainerGenerator> from an <xref:System.Windows.Controls.ItemsControl> (such as <xref:System.Windows.Controls.ListBox> or <xref:System.Windows.Controls.ListView>) to only create elements for visible items.  
+ WPF also provides a variation of the <xref:System.Windows.Controls.StackPanel> element that automatically "virtualizes" data-bound child content. In this context, the word virtualize refers to a technique by which a subset of elements are generated from a larger number of data items based upon which items are visible on-screen. It is intensive, both in terms of memory and processor, to generate a large number of UI elements when only a few may be on the screen at a given time. <xref:System.Windows.Controls.VirtualizingStackPanel> (through functionality provided by <xref:System.Windows.Controls.VirtualizingPanel>) calculates visible items and works with the <xref:System.Windows.Controls.ItemContainerGenerator> from an <xref:System.Windows.Controls.ItemsControl> (such as <xref:System.Windows.Controls.ListBox> or <xref:System.Windows.Controls.ListView>) to only create elements for visible items.  
   
  The <xref:System.Windows.Controls.VirtualizingStackPanel> element is automatically set as the items host for controls such as the <xref:System.Windows.Controls.ListBox>. When hosting a data bound collection, content is automatically virtualized, as long as the content is within the bounds of a <xref:System.Windows.Controls.ScrollViewer>. This greatly improves performance when hosting many child items.  
   
@@ -259,7 +259,7 @@ ms.assetid: f73644af-9941-4611-8754-6d4cef03fc44
 
 ## Custom Panel Elements  
 
- While [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] provides an array of flexible layout controls, custom layout behaviors can also be achieved by overriding the <xref:System.Windows.FrameworkElement.ArrangeOverride%2A> and <xref:System.Windows.FrameworkElement.MeasureOverride%2A> methods. Custom sizing and positioning can be accomplished by defining new positioning behaviors within these override methods.  
+ While WPF provides an array of flexible layout controls, custom layout behaviors can also be achieved by overriding the <xref:System.Windows.FrameworkElement.ArrangeOverride%2A> and <xref:System.Windows.FrameworkElement.MeasureOverride%2A> methods. Custom sizing and positioning can be accomplished by defining new positioning behaviors within these override methods.  
   
  Similarly, custom layout behaviors based on derived classes (such as <xref:System.Windows.Controls.Canvas> or <xref:System.Windows.Controls.Grid>) can be defined by overriding their <xref:System.Windows.FrameworkElement.ArrangeOverride%2A> and <xref:System.Windows.FrameworkElement.MeasureOverride%2A> methods.  
   
@@ -283,7 +283,7 @@ ms.assetid: f73644af-9941-4611-8754-6d4cef03fc44
   
  <xref:System.Windows.Controls.DockPanel>, <xref:System.Windows.Controls.Grid>, and <xref:System.Windows.Controls.StackPanel> are all good choices for localizable UI. <xref:System.Windows.Controls.Canvas> is not a good choice, however, because it positions content absolutely, making it difficult to localize.  
   
- For additional information on creating [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] applications with localizable user interfaces (UIs)s, see the [Use Automatic Layout Overview](../advanced/use-automatic-layout-overview.md).  
+ For additional information on creating WPF applications with localizable user interfaces (UIs)s, see the [Use Automatic Layout Overview](../advanced/use-automatic-layout-overview.md).  
   
 ## See also
 
