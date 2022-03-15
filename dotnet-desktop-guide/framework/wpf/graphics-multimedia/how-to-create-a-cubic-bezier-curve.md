@@ -13,7 +13,7 @@ This example shows how to create a cubic Bezier curve. To create a cubic Bezier 
   
 ## Example  
 
- In [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)], you may use abbreviated markup syntax to describe a path.  
+ In Extensible Application Markup Language (XAML), you may use abbreviated markup syntax to describe a path.  
   
  [!code-xaml[GeometrySample#53](~/samples/snippets/csharp/VS_Snippets_Wpf/GeometrySample/CS/geometryattributesyntaxexample.xaml#53)]
   

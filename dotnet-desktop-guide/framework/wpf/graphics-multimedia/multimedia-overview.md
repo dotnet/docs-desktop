@@ -13,7 +13,7 @@ The multimedia features in WPF.
 ## Media API  
  The <xref:System.Windows.Controls.MediaElement> and <xref:System.Windows.Media.MediaPlayer> classes are used to present audio or video content. These classes can be controlled interactively or by a clock. These classes can use on the Microsoft Windows Media Player 10 control for media playback. Which class you use, depends on the scenario.  
   
- <xref:System.Windows.Controls.MediaElement> is a <xref:System.Windows.UIElement> that is supported by the [Layout](../advanced/layout.md) and can be consumed as the content of many controls. It is also usable in [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)] as well as code. <xref:System.Windows.Media.MediaPlayer>, on the other hand, is designed for <xref:System.Windows.Media.Drawing> objects and lacks layout support. Media loaded using a <xref:System.Windows.Media.MediaPlayer> can only be presented using a <xref:System.Windows.Media.VideoDrawing> or by directly interacting with a <xref:System.Windows.Media.DrawingContext>. <xref:System.Windows.Media.MediaPlayer> cannot be used in XAML.  
+ <xref:System.Windows.Controls.MediaElement> is a <xref:System.Windows.UIElement> that is supported by the [Layout](../advanced/layout.md) and can be consumed as the content of many controls. It is also usable in Extensible Application Markup Language (XAML) as well as code. <xref:System.Windows.Media.MediaPlayer>, on the other hand, is designed for <xref:System.Windows.Media.Drawing> objects and lacks layout support. Media loaded using a <xref:System.Windows.Media.MediaPlayer> can only be presented using a <xref:System.Windows.Media.VideoDrawing> or by directly interacting with a <xref:System.Windows.Media.DrawingContext>. <xref:System.Windows.Media.MediaPlayer> cannot be used in XAML.  
   
  For more information about drawing objects and drawing context, see [Drawing Objects Overview](drawing-objects-overview.md).  
   
@@ -60,7 +60,7 @@ The multimedia features in WPF.
   
 <a name="mediaelement"></a>
 ## MediaElement Class  
- Adding media to an application is as simple as adding a <xref:System.Windows.Controls.MediaElement> control to the user interface (UI) of the application and providing a <xref:System.Uri> to the media you wish to include. All media types supported by Microsoft Windows Media Player 10 are supported in Windows Presentation Foundation (WPF). The following example shows a simple usage of the <xref:System.Windows.Controls.MediaElement> in [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)].  
+ Adding media to an application is as simple as adding a <xref:System.Windows.Controls.MediaElement> control to the user interface (UI) of the application and providing a <xref:System.Uri> to the media you wish to include. All media types supported by Microsoft Windows Media Player 10 are supported in Windows Presentation Foundation (WPF). The following example shows a simple usage of the <xref:System.Windows.Controls.MediaElement> in Extensible Application Markup Language (XAML).  
   
  [!code-xaml[MediaElement_snip#SimpleMediaElementUsageWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/MediaElement_snip/CSharp/SimpleUsage.xaml#simplemediaelementusagewholepage)]  
   

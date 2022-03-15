@@ -35,7 +35,7 @@ ms.assetid: f73644af-9941-4611-8754-6d4cef03fc44
 
 ## The Panel Class  
 
- <xref:System.Windows.Controls.Panel> is the base class for all elements that provide layout support in Windows Presentation Foundation (WPF). Derived <xref:System.Windows.Controls.Panel> elements are used to position and arrange elements in [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)] and code.  
+ <xref:System.Windows.Controls.Panel> is the base class for all elements that provide layout support in Windows Presentation Foundation (WPF). Derived <xref:System.Windows.Controls.Panel> elements are used to position and arrange elements in Extensible Application Markup Language (XAML) and code.  
   
  The WPF includes a comprehensive suite of derived panel implementations that enable many complex layouts. These derived classes expose properties and methods that enable most standard user interface (UI) scenarios. Developers who are unable to find a child arrangement behavior that meets their needs can create new layouts by overriding the <xref:System.Windows.FrameworkElement.ArrangeOverride%2A> and <xref:System.Windows.FrameworkElement.MeasureOverride%2A> methods. For more information on custom layout behaviors, see [Custom Panel Elements](#Panels_custom_panel_elements).  
   
@@ -53,7 +53,7 @@ ms.assetid: f73644af-9941-4611-8754-6d4cef03fc44
   
 #### Attached Properties  
 
- Derived panel elements make extensive use of attached properties. An attached property is a specialized form of dependency property that does not have the conventional common language runtime (CLR) property "wrapper". Attached properties have a specialized syntax in [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)], which can be seen in several of the examples that follow.  
+ Derived panel elements make extensive use of attached properties. An attached property is a specialized form of dependency property that does not have the conventional common language runtime (CLR) property "wrapper". Attached properties have a specialized syntax in Extensible Application Markup Language (XAML), which can be seen in several of the examples that follow.  
   
  One purpose of an attached property is to allow child elements to store unique values of a property that is actually defined by a parent element. An application of this functionality is having child elements inform the parent how they wish to be presented in the user interface (UI), which is extremely useful for application layout. For more information, see [Attached Properties Overview](../advanced/attached-properties-overview.md).  
   
@@ -113,7 +113,7 @@ ms.assetid: f73644af-9941-4611-8754-6d4cef03fc44
   
 #### Defining and Using a Canvas  
 
- A <xref:System.Windows.Controls.Canvas> can be instantiated simply by using [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)] or code. The following example demonstrates how to use <xref:System.Windows.Controls.Canvas> to absolutely position content. This code produces three 100-pixel squares. The first square is red, and its top-left (*x, y*) position is specified as (0, 0). The second square is green, and its top-left position is (100, 100), just below and to the right of the first square. The third square is blue, and its top-left position is (50, 50), thus encompassing the lower-right quadrant of the first square and the upper-left quadrant of the second. Because the third square is laid out last, it appears to be on top of the other two squares—that is, the overlapping portions assume the color of the third box.  
+ A <xref:System.Windows.Controls.Canvas> can be instantiated simply by using Extensible Application Markup Language (XAML) or code. The following example demonstrates how to use <xref:System.Windows.Controls.Canvas> to absolutely position content. This code produces three 100-pixel squares. The first square is red, and its top-left (*x, y*) position is specified as (0, 0). The second square is green, and its top-left position is (100, 100), just below and to the right of the first square. The third square is blue, and its top-left position is (50, 50), thus encompassing the lower-right quadrant of the first square and the upper-left quadrant of the second. Because the third square is laid out last, it appears to be on top of the other two squares—that is, the overlapping portions assume the color of the third box.  
   
  [!code-csharp[CanvasOvwSample#1](~/samples/snippets/csharp/VS_Snippets_Wpf/CanvasOvwSample/CSharp/Canvas_Ovw_Sample.cs#1)]
  [!code-vb[CanvasOvwSample#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CanvasOvwSample/VisualBasic/canvas_vb.vb#1)]
@@ -164,7 +164,7 @@ ms.assetid: f73644af-9941-4611-8754-6d4cef03fc44
   
 #### Sizing Behavior of Columns and Rows  
 
- Columns and rows defined within a <xref:System.Windows.Controls.Grid> can take advantage of <xref:System.Windows.GridUnitType.Star> sizing in order to distribute remaining space proportionally. When <xref:System.Windows.GridUnitType.Star> is selected as the Height or Width of a row or column, that column or row receives a weighted proportion of remaining available space. This is in contrast to <xref:System.Windows.GridUnitType.Auto>, which will distribute space evenly based on the size of the content within a column or row. This value is expressed as `*` or `2*` when using [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)]. In the first case, the row or column would receive one times the available space, in the second case, two times, and so on. By combining this technique to proportionally distribute space with a <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A> and <xref:System.Windows.FrameworkElement.VerticalAlignment%2A> value of `Stretch` it is possible to partition layout space by percentage of screen space. <xref:System.Windows.Controls.Grid> is the only layout panel that can distribute space in this manner.  
+ Columns and rows defined within a <xref:System.Windows.Controls.Grid> can take advantage of <xref:System.Windows.GridUnitType.Star> sizing in order to distribute remaining space proportionally. When <xref:System.Windows.GridUnitType.Star> is selected as the Height or Width of a row or column, that column or row receives a weighted proportion of remaining available space. This is in contrast to <xref:System.Windows.GridUnitType.Auto>, which will distribute space evenly based on the size of the content within a column or row. This value is expressed as `*` or `2*` when using Extensible Application Markup Language (XAML). In the first case, the row or column would receive one times the available space, in the second case, two times, and so on. By combining this technique to proportionally distribute space with a <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A> and <xref:System.Windows.FrameworkElement.VerticalAlignment%2A> value of `Stretch` it is possible to partition layout space by percentage of screen space. <xref:System.Windows.Controls.Grid> is the only layout panel that can distribute space in this manner.  
   
 #### Defining and Using a Grid  
 

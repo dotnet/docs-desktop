@@ -66,7 +66,7 @@ When you localize WPF–based applications, consider implementing these best pra
 
 ## Localize a WPF Application
 
-When you localize a WPF application, you have several options. For example, you can bind the localizable resources in your application to an XML file, store localizable text in resx tables, or have your localizer use [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)] files. This section describes a localization workflow that uses the BAML form of XAML, which provides several benefits:
+When you localize a WPF application, you have several options. For example, you can bind the localizable resources in your application to an XML file, store localizable text in resx tables, or have your localizer use Extensible Application Markup Language (XAML) files. This section describes a localization workflow that uses the BAML form of XAML, which provides several benefits:
 
 - You can localize after you build.
 

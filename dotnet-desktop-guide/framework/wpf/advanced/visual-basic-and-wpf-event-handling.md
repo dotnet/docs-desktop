@@ -31,7 +31,7 @@ For the Microsoft Visual Basic .NET language specifically, you can use the langu
 > Do not use the `Handles` syntax in Visual Basic code when you specify an event handler for the same event in XAML. In this case, the event handler is called twice.  
   
 ## How WPF Implements "Handles" Functionality  
- When a [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)] page is compiled, the intermediate file declares `Friend` `WithEvents` references to every element on the page that has a <xref:System.Windows.FrameworkContentElement.Name%2A> property set (or [x:Name Directive](/dotnet/desktop/xaml-services/xname-directive) declared). Each named instance is potentially an element that can be assigned to a handler through `Handles`.  
+ When a Extensible Application Markup Language (XAML) page is compiled, the intermediate file declares `Friend` `WithEvents` references to every element on the page that has a <xref:System.Windows.FrameworkContentElement.Name%2A> property set (or [x:Name Directive](/dotnet/desktop/xaml-services/xname-directive) declared). Each named instance is potentially an element that can be assigned to a handler through `Handles`.  
   
 > [!NOTE]
 > Within Visual Studio, IntelliSense can show you completion for which elements are available for a `Handles` reference in a page. However, this might take one compile pass so that the intermediate file can populate all the `Friends` references.  

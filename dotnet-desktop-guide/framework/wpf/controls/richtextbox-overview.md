@@ -12,7 +12,7 @@ ms.assetid: c94548b2-c1e9-4b62-b10c-dd8740eb23d8
 ---
 # RichTextBox Overview
 
-The <xref:System.Windows.Controls.RichTextBox> control enables you to display or edit flow content including paragraphs, images, tables, and more. This topic introduces the <xref:System.Windows.Controls.TextBox> class and provides examples of how to use it in both [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)] and C#.
+The <xref:System.Windows.Controls.RichTextBox> control enables you to display or edit flow content including paragraphs, images, tables, and more. This topic introduces the <xref:System.Windows.Controls.TextBox> class and provides examples of how to use it in both Extensible Application Markup Language (XAML) and C#.
 
 <a name="textbox_or_richtextbox"></a>
 

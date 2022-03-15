@@ -43,7 +43,7 @@ In WPF there are two main concepts that pertain to focus: keyboard focus and log
   
  An element that has keyboard focus has logical focus for the focus scope it belongs to.  
   
- An element can be turned into a focus scope in [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)] by setting the <xref:System.Windows.Input.FocusManager> attached property <xref:System.Windows.Input.FocusManager.IsFocusScope%2A> to `true`.  In code, an element can be turned into a focus scope by calling <xref:System.Windows.Input.FocusManager.SetIsFocusScope%2A>.  
+ An element can be turned into a focus scope in Extensible Application Markup Language (XAML) by setting the <xref:System.Windows.Input.FocusManager> attached property <xref:System.Windows.Input.FocusManager.IsFocusScope%2A> to `true`.  In code, an element can be turned into a focus scope by calling <xref:System.Windows.Input.FocusManager.SetIsFocusScope%2A>.  
   
  The following example makes a <xref:System.Windows.Controls.StackPanel> into a focus scope by setting the <xref:System.Windows.Input.FocusManager.IsFocusScope%2A> attached property.  
   

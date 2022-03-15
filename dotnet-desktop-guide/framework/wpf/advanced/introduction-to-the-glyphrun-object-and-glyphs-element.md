@@ -21,7 +21,7 @@ This topic describes the <xref:System.Windows.Media.GlyphRun> object and the <xr
   
 2. Print scenarios.  
   
-    - [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)] as a device printer language.  
+    - Extensible Application Markup Language (XAML) as a device printer language.  
   
     - Microsoft XPS Document Writer.  
   

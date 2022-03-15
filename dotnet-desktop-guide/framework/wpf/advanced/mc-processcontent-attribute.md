@@ -33,7 +33,7 @@ Specifies which XAML elements should still have content processed by relevant pa
 |-------|-------------|  
 |*ignorablePrefix*|Any valid prefix string, per the XML 1.0 specification.|  
 |*ignorableUri*|Any valid URI for designating a namespace, per the XML 1.0 specification.|  
-|*ThisElementCanBeIgnored*|An element that can be ignored by [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)] processor implementations, if the underlying type cannot be resolved.|  
+|*ThisElementCanBeIgnored*|An element that can be ignored by Extensible Application Markup Language (XAML) processor implementations, if the underlying type cannot be resolved.|  
 |*[content]*|*ThisElementCanBeIgnored* is marked ignorable. If the processor ignores that element, *[content]* is processed by *object*.|  
   
 ## Remarks  

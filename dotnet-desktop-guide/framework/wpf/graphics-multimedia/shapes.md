@@ -16,7 +16,7 @@ helpviewer_keywords:
 ms.assetid: 893253b8-c2df-4f22-961d-cbc533d64c79
 ---
 # Shapes
-Windows Presentation Foundation (WPF) provides support for drawing basic shapes using the <xref:System.Windows.Shapes.Shape> class. Shape objects derive from <xref:System.Windows.FrameworkElement> and as such, participate in the layout system and can be drawn simply using [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)].  
+Windows Presentation Foundation (WPF) provides support for drawing basic shapes using the <xref:System.Windows.Shapes.Shape> class. Shape objects derive from <xref:System.Windows.FrameworkElement> and as such, participate in the layout system and can be drawn simply using Extensible Application Markup Language (XAML).  
   
 ## In This Section  
  [Shapes and Basic Drawing in WPF Overview](shapes-and-basic-drawing-in-wpf-overview.md)  

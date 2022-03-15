@@ -31,7 +31,7 @@ Each of these techniques is conceptually introduced in this topic. For a more co
 
 WPF APIs are managed code, but most existing Win32 programs are written in unmanaged C++.  You cannot call WPF APIs from a true unmanaged program. However, by using the `/clr` option with the Microsoft Visual C++ compiler, you can create a mixed managed-unmanaged program where you can seamlessly mix managed and unmanaged API calls.
 
-One project-level complication is that you cannot compile [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)] files into a C++ project.  There are several project division techniques to compensate for this.
+One project-level complication is that you cannot compile Extensible Application Markup Language (XAML) files into a C++ project.  There are several project division techniques to compensate for this.
 
 - Create a C# DLL that contains all your XAML pages as a compiled assembly, and then have your C++ executable include that DLL as a reference.
 

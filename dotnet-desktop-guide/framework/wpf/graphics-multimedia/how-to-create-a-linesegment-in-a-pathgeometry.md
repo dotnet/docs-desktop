@@ -21,7 +21,7 @@ The following examples draw a <xref:System.Windows.Media.LineSegment> from (10, 
 ![A LineSegment in a PathFigure](./media/graphicsmm-pathgeometrylinesegment.png "graphicsmm_pathgeometrylinesegment")
 A LineSegment drawn from (10,50) to (200,70)
 
-In [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)], you may use attribute syntax to describe a path.
+In Extensible Application Markup Language (XAML), you may use attribute syntax to describe a path.
 
 ```xaml
 <Path Stroke="Black" StrokeThickness="1"

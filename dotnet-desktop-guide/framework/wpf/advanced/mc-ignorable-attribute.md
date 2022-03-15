@@ -44,7 +44,7 @@ Specifies which XML namespace prefixes encountered in a markup file may be ignor
 |-------|-------------|  
 |*ignorablePrefix, ignorablePrefix1, etc.*|Any valid prefix string, per the XML 1.0 specification.|  
 |*ignorableUri*|Any valid URI for designating a namespace, per the XML 1.0 specification.|  
-|*ThisElementCanBeIgnored*|An element that can be ignored by [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)] processor implementations, if the underlying type cannot be resolved.|  
+|*ThisElementCanBeIgnored*|An element that can be ignored by Extensible Application Markup Language (XAML) processor implementations, if the underlying type cannot be resolved.|  
   
 ## Remarks  
  The `mc` XML namespace prefix is the recommended prefix convention to use when mapping the XAML compatibility namespace `http://schemas.openxmlformats.org/markup-compatibility/2006`.  

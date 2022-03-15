@@ -31,7 +31,7 @@ ms.assetid: 86ad2143-606a-4e34-bf7e-51a2594248b8
 
 Windows Presentation Foundation (WPF) supports browser-style navigation that can be used in two types of applications: standalone applications and XAML browser applications (XBAPs). To package content for navigation, WPF provides the <xref:System.Windows.Controls.Page> class. You can navigate from one <xref:System.Windows.Controls.Page> to another declaratively, by using a <xref:System.Windows.Documents.Hyperlink>, or programmatically, by using the <xref:System.Windows.Navigation.NavigationService>. WPF uses the journal to remember pages that have been navigated from and to navigate back to them.
 
-<xref:System.Windows.Controls.Page>, <xref:System.Windows.Documents.Hyperlink>, <xref:System.Windows.Navigation.NavigationService>, and the journal form the core of the navigation support offered by WPF. This overview explores these features in detail before covering advanced navigation support that includes navigation to loose [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)] files, HTML files, and objects.
+<xref:System.Windows.Controls.Page>, <xref:System.Windows.Documents.Hyperlink>, <xref:System.Windows.Navigation.NavigationService>, and the journal form the core of the navigation support offered by WPF. This overview explores these features in detail before covering advanced navigation support that includes navigation to loose Extensible Application Markup Language (XAML) files, HTML files, and objects.
 
 > [!NOTE]
 > In this topic, the term "browser" refers only to browsers that can host WPF applications, which currently includes Microsoft Internet Explorer and Firefox. Where specific WPF features are supported only by a particular browser, the browser version is referred to.

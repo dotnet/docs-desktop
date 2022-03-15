@@ -77,7 +77,7 @@ To bind an adorner to a particular <xref:System.Windows.UIElement>, follow these
  [!code-vb[Adorners_SimpleCircleAdorner#_AdornSingleElement](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Adorners_SimpleCircleAdorner/VisualBasic/Window1.xaml.vb#_adornsingleelement)]
 
 > [!NOTE]
-> Using [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)] to bind an adorner to another element is currently not supported.
+> Using Extensible Application Markup Language (XAML) to bind an adorner to another element is currently not supported.
 
 ## Adorning the Children of a Panel
 

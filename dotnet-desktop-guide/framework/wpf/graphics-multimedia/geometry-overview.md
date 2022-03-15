@@ -163,7 +163,7 @@ A PathGeometry with multiple figures
  For an example, see [Create a Shape Using a StreamGeometry](how-to-create-a-shape-using-a-streamgeometry.md).  
   
 ### Path Markup Syntax  
- The <xref:System.Windows.Media.PathGeometry> and <xref:System.Windows.Media.StreamGeometry> types support a [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)] attribute syntax using a special series of move and draw commands. For more information, see [Path Markup Syntax](path-markup-syntax.md).  
+ The <xref:System.Windows.Media.PathGeometry> and <xref:System.Windows.Media.StreamGeometry> types support a Extensible Application Markup Language (XAML) attribute syntax using a special series of move and draw commands. For more information, see [Path Markup Syntax](path-markup-syntax.md).  
   
 <a name="wcpsdk_graphics_geometry_introduction2"></a>
 ## Composite Geometries  

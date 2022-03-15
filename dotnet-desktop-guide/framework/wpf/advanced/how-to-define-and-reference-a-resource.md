@@ -11,7 +11,7 @@ ms.assetid: b86b876b-0a10-489b-9a5d-581ea9b32406
 
 # How to: Define and Reference a Resource
 
-This example shows how to define a resource and reference it by using an attribute in [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)].
+This example shows how to define a resource and reference it by using an attribute in Extensible Application Markup Language (XAML).
 
 ## Example
 

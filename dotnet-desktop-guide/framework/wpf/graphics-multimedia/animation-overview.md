@@ -248,7 +248,7 @@ As previously mentioned, a timeline represents a segment of time. The length of 
 
 An animation uses its <xref:System.Windows.Media.Animation.Timeline.Duration%2A> property to determine its current value. If you do not specify a <xref:System.Windows.Media.Animation.Timeline.Duration%2A> value for an animation, it uses 1 second, which is the default.
 
-The following syntax shows a simplified version of the [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)] attribute syntax for the <xref:System.Windows.Media.Animation.Timeline.Duration%2A> property.
+The following syntax shows a simplified version of the Extensible Application Markup Language (XAML) attribute syntax for the <xref:System.Windows.Media.Animation.Timeline.Duration%2A> property.
 
 *hours* `:` *minutes* `:` *seconds*
 
@@ -262,7 +262,7 @@ The following table shows several <xref:System.Windows.Duration> settings and th
 
 One way to specify a <xref:System.Windows.Duration> in code is to use the <xref:System.TimeSpan.FromSeconds%2A> method to create a <xref:System.TimeSpan>, then declare a new <xref:System.Windows.Duration> structure using that <xref:System.TimeSpan>.
 
-For more information about <xref:System.Windows.Duration> values and the complete [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)] syntax, see the <xref:System.Windows.Duration> structure.
+For more information about <xref:System.Windows.Duration> values and the complete Extensible Application Markup Language (XAML) syntax, see the <xref:System.Windows.Duration> structure.
 
 #### AutoReverse
 

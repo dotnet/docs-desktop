@@ -43,7 +43,7 @@ The following example shows a hexadecimal character reference. Notice that it ha
 
  The language attribute is very useful for specifying dialects. For example, French has different spelling, vocabulary, and pronunciation in France, Quebec, Belgium, and Switzerland. Also Chinese, Japanese, and Korean share code points in Unicode, but the ideographic shapes are different and they use totally different fonts.
 
- The following [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)] example uses the `fr-CA` language attribute to specify Canadian French.
+ The following Extensible Application Markup Language (XAML) example uses the `fr-CA` language attribute to specify Canadian French.
 
 ```xaml
 <TextBlock xml:lang="fr-CA">Découvrir la France</TextBlock>

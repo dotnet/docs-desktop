@@ -34,7 +34,7 @@ Windows Presentation Foundation (WPF) provides advanced text support including g
 
 - Print scenarios.
 
-  - [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)] as a device printer language.
+  - Extensible Application Markup Language (XAML) as a device printer language.
 
   - Microsoft XPS Document Writer.
 

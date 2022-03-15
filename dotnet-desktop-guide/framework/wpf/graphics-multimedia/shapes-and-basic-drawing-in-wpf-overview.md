@@ -80,7 +80,7 @@ This topic gives an overview of how to draw with <xref:System.Windows.Shapes.Sha
   
 <a name="pathdatastring"></a>
 ### XAML Abbreviated Syntax  
- In [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)], you may also use a special abbreviated syntax to describe a <xref:System.Windows.Shapes.Path>. In the following example, abbreviated syntax is used to draw a complex shape.  
+ In Extensible Application Markup Language (XAML), you may also use a special abbreviated syntax to describe a <xref:System.Windows.Shapes.Path>. In the following example, abbreviated syntax is used to draw a complex shape.  
   
 ```xaml  
       <Path Stroke="DarkGoldenRod" StrokeThickness="3"

@@ -34,7 +34,7 @@ WPF and Windows Forms present two different architectures for creating applicati
   
 - It may host one or more composite controls.  
   
-- It may host hybrid controls using [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)].  
+- It may host hybrid controls using Extensible Application Markup Language (XAML).  
   
 - It may host hybrid controls using code.  
   

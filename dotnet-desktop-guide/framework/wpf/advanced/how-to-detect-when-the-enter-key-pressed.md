@@ -13,7 +13,7 @@ ms.assetid: a66f39d2-ef4a-43a5-b454-a4ea0fe88655
 # How to: Detect When the Enter Key Pressed
 This example shows how to detect when the <xref:System.Windows.Input.Key.Enter> key is pressed on the keyboard.  
   
- This example consists of a [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)] file and a code-behind file.  
+ This example consists of a Extensible Application Markup Language (XAML) file and a code-behind file.  
   
 ## Example  
  When the user presses the <xref:System.Windows.Input.Key.Enter> key in the <xref:System.Windows.Controls.TextBox>, the input in the text box appears in another area of the user interface (UI).  
