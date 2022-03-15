@@ -48,7 +48,7 @@ WPF provides a wide range of 2D graphics and imaging functionality that can be o
 ## StreamGeometry Objects  
  The <xref:System.Windows.Media.StreamGeometry> object is a lightweight alternative to <xref:System.Windows.Media.PathGeometry> for creating geometric shapes. Use a <xref:System.Windows.Media.StreamGeometry> when you need to describe a complex geometry. <xref:System.Windows.Media.StreamGeometry> is optimized for handling many <xref:System.Windows.Media.PathGeometry> objects and performs better when compared to using many individual <xref:System.Windows.Media.PathGeometry> objects.  
   
- The following example uses attribute syntax to create a triangular <xref:System.Windows.Media.StreamGeometry> in [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)].  
+ The following example uses attribute syntax to create a triangular <xref:System.Windows.Media.StreamGeometry> in XAML.  
   
  [!code-xaml[GeometriesMiscSnippets_snip#StreamGeometryTriangleExampleWholePage](~/samples/snippets/xaml/VS_Snippets_Wpf/GeometriesMiscSnippets_snip/XAML/StreamGeometryExample.xaml#streamgeometrytriangleexamplewholepage)]  
   

@@ -9,10 +9,10 @@ helpviewer_keywords:
 ms.assetid: 2403403b-9b14-48e9-b70d-fa288a3c9081
 ---
 # Firefox Add-ons to Support .NET Application Deployment
-The Windows Presentation Foundation (WPF) plug-in for Firefox and the .NET Framework Assistant for Firefox enable XAML browser applications (XBAPs), loose [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)], and ClickOnce applications to work with the Mozilla Firefox browser.  
+The Windows Presentation Foundation (WPF) plug-in for Firefox and the .NET Framework Assistant for Firefox enable XAML browser applications (XBAPs), loose XAML, and ClickOnce applications to work with the Mozilla Firefox browser.  
   
 ## WPF Plug-in for Firefox  
- The WPF plug-in for Firefox enables XBAPs and loose [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] files to be navigated to and run at the top-level or in an HTML IFRAME in the Firefox browser. An XBAP is a WPF application that can be published to a Web server and launched within supported browsers. Loose [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] is a XAML-only file that can be navigated to and displayed in supported browsers, much like an XML file.  
+ The WPF plug-in for Firefox enables XBAPs and loose XAML files to be navigated to and run at the top-level or in an HTML IFRAME in the Firefox browser. An XBAP is a WPF application that can be published to a Web server and launched within supported browsers. Loose XAML is a XAML-only file that can be navigated to and displayed in supported browsers, much like an XML file.  
   
  The WPF plug-in for Firefox is installed with the .NET Framework 3.5. Window 7 includes the .NET Framework 3.5, but does not include the WPF plug-in for Firefox. You cannot install the WPF plug-in for Firefox on Windows 7.  
   

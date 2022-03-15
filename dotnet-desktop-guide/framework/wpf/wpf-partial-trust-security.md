@@ -46,7 +46,7 @@ ms.assetid: ef2c0810-1dbf-4511-babd-1fab95b523b5
   
  This table covers the WPF features at a high level. For more detailed information, the Windows SDK documents the permissions that are required by each member in WPF. Additionally, the following features have more detailed information regarding partial trust execution, including special considerations.  
   
-- [!INCLUDE[TLA2#tla_xaml](../../includes/tla2sharptla-xaml-md.md)] (see [XAML in WPF](advanced/xaml-in-wpf.md)).  
+- XAML (see [XAML in WPF](advanced/xaml-in-wpf.md)).  
   
 - Popups (see <xref:System.Windows.Controls.Primitives.Popup?displayProperty=nameWithType>).  
   

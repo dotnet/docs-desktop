@@ -40,11 +40,11 @@ This topic describes the <xref:System.Windows.Media.GlyphRun> object and the <xr
   
  <xref:System.Windows.Media.GlyphRun> includes both font details such as glyph <xref:System.Windows.Documents.Glyphs.Indices%2A> and individual glyph positions. It also includes the original Unicode code points the run was generated from, character-to-glyph buffer offset mapping information, and per-character and per-glyph flags.  
   
- <xref:System.Windows.Media.GlyphRun> has a corresponding high-level <xref:System.Windows.FrameworkElement>, <xref:System.Windows.Documents.Glyphs>. <xref:System.Windows.Documents.Glyphs> can be used in the element tree and in [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] markup to represent <xref:System.Windows.Media.GlyphRun> output.  
+ <xref:System.Windows.Media.GlyphRun> has a corresponding high-level <xref:System.Windows.FrameworkElement>, <xref:System.Windows.Documents.Glyphs>. <xref:System.Windows.Documents.Glyphs> can be used in the element tree and in XAML markup to represent <xref:System.Windows.Media.GlyphRun> output.  
   
 <a name="text_glyphrunovw_glyphselement"></a>
 ## The Glyphs Element  
- The <xref:System.Windows.Documents.Glyphs> element represents the output of a <xref:System.Windows.Media.GlyphRun> in [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)]. The following markup syntax is used to describe the <xref:System.Windows.Documents.Glyphs> element.  
+ The <xref:System.Windows.Documents.Glyphs> element represents the output of a <xref:System.Windows.Media.GlyphRun> in XAML. The following markup syntax is used to describe the <xref:System.Windows.Documents.Glyphs> element.  
   
  [!code-xaml[GlyphsOvwSample1#1](~/samples/snippets/csharp/VS_Snippets_Wpf/GlyphsOvwSample1/CS/default.xaml#1)]  
   
@@ -83,7 +83,7 @@ This topic describes the <xref:System.Windows.Media.GlyphRun> object and the <xr
   
 <a name="text_glyphrunovw_glyphsmarkup"></a>
 ## Glyphs Markup  
- The following code example shows how to use various properties of the <xref:System.Windows.Documents.Glyphs> element in [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)].  
+ The following code example shows how to use various properties of the <xref:System.Windows.Documents.Glyphs> element in XAML.  
   
  [!code-xaml[GlyphsOvwSamp2#1](~/samples/snippets/csharp/VS_Snippets_Wpf/GlyphsOvwSamp2/CS/default.xaml#1)]  
   

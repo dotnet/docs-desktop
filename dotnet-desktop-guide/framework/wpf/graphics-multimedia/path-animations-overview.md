@@ -29,9 +29,9 @@ ms.assetid: 979c732c-df74-47a6-be96-8e07b3707d53
  [!code-csharp[PathAnimationGallery_procedural_snip#MatrixAnimationUsingPathDoesRotateWithTangentWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/PathAnimationGallery_procedural_snip/CSharp/MatrixAnimationUsingPathDoesRotateWithTangentExample.cs#matrixanimationusingpathdoesrotatewithtangentwholepage)]
  [!code-vb[PathAnimationGallery_procedural_snip#MatrixAnimationUsingPathDoesRotateWithTangentWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PathAnimationGallery_procedural_snip/VisualBasic/MatrixAnimationUsingPathDoesRotateWithTangentExample.vb#matrixanimationusingpathdoesrotatewithtangentwholepage)]  
   
- For more information about the path syntax that is used in the [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] example, see the [Path Markup Syntax](path-markup-syntax.md) overview. For the complete sample, see [Path Animation Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Animation/PathAnimations).  
+ For more information about the path syntax that is used in the XAML example, see the [Path Markup Syntax](path-markup-syntax.md) overview. For the complete sample, see [Path Animation Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Animation/PathAnimations).  
   
- You can apply a path animation to a property by using a <xref:System.Windows.Media.Animation.Storyboard> in [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] and code, or by using the <xref:System.Windows.Media.Animation.Animatable.BeginAnimation%2A> method in code. You can also use a path animation to create an <xref:System.Windows.Media.Animation.AnimationClock> and apply it to one or more properties. For more information about the different methods for applying animations, see [Property Animation Techniques Overview](property-animation-techniques-overview.md).  
+ You can apply a path animation to a property by using a <xref:System.Windows.Media.Animation.Storyboard> in XAML and code, or by using the <xref:System.Windows.Media.Animation.Animatable.BeginAnimation%2A> method in code. You can also use a path animation to create an <xref:System.Windows.Media.Animation.AnimationClock> and apply it to one or more properties. For more information about the different methods for applying animations, see [Property Animation Techniques Overview](property-animation-techniques-overview.md).  
   
 <a name="animation_types"></a>
 ## Path Animation Types  
@@ -79,9 +79,9 @@ ms.assetid: 979c732c-df74-47a6-be96-8e07b3707d53
   
  For more information about <xref:System.Windows.Media.PathGeometry> objects, see the [Geometry Overview](geometry-overview.md).  
   
- In [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)], you can also use a special abbreviated syntax to set the <xref:System.Windows.Media.PathGeometry.Figures%2A> property of a <xref:System.Windows.Media.PathGeometry>. For more information, see [Path Markup Syntax](path-markup-syntax.md) overview.  
+ In XAML, you can also use a special abbreviated syntax to set the <xref:System.Windows.Media.PathGeometry.Figures%2A> property of a <xref:System.Windows.Media.PathGeometry>. For more information, see [Path Markup Syntax](path-markup-syntax.md) overview.  
   
- For more information about the path syntax that is used in the [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] example, see the [Path Markup Syntax](path-markup-syntax.md) overview.  
+ For more information about the path syntax that is used in the XAML example, see the [Path Markup Syntax](path-markup-syntax.md) overview.  
   
 ## See also
 

@@ -93,7 +93,7 @@ You need Visual Studio to complete this walkthrough.
 #### Adding the OK and Cancel Buttons  
  The final elements on the composite control are the **OK** and **Cancel**<xref:System.Windows.Controls.Button> elements, which occupy the first two columns of the last row of the <xref:System.Windows.Controls.Grid>. These elements use a common event handler, `ButtonClicked`, and the default <xref:System.Windows.Controls.Button> style defined in the previous XAML.  
   
- In MyControl1.xaml, add the following XAML after the last <xref:System.Windows.Controls.TextBox> element. The [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] part of the composite control is now complete.  
+ In MyControl1.xaml, add the following XAML after the last <xref:System.Windows.Controls.TextBox> element. The XAML part of the composite control is now complete.  
   
  [!code-xaml[WindowsFormsHostingWpfControl#105](~/samples/snippets/csharp/VS_Snippets_Wpf/WindowsFormsHostingWpfControl/CSharp/MyControls/Page1.xaml#105)]  
   
@@ -125,7 +125,7 @@ namespace MyControls
 }  
 ```  
   
- The first class, `MyControl1`, is a partial class containing the code that implements the functionality of the UI defined in MyControl1.xaml. When MyControl1.xaml is parsed, the [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] is converted to the same partial class, and the two partial classes are merged to form the compiled control. For this reason, the class name in the code-behind file must match the class name assigned to MyControl1.xaml, and it must inherit from the root element of the control. The second class, `MyControlEventArgs`, is an event arguments class that is used to send the data back to the host.  
+ The first class, `MyControl1`, is a partial class containing the code that implements the functionality of the UI defined in MyControl1.xaml. When MyControl1.xaml is parsed, the XAML is converted to the same partial class, and the two partial classes are merged to form the compiled control. For this reason, the class name in the code-behind file must match the class name assigned to MyControl1.xaml, and it must inherit from the root element of the control. The second class, `MyControlEventArgs`, is an event arguments class that is used to send the data back to the host.  
   
  Open MyControl1.xaml.cs. Change the existing class declaration so that it has the following name and inherits from <xref:System.Windows.Controls.Grid>.  
   

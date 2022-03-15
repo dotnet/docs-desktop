@@ -42,7 +42,7 @@ The following illustration shows a simple layout.
 
 ![Screenshot that shows a typical grid, no bounding box superimposed.](./media/layout/grid-no-bounding-box-superimpose.png)
 
-This layout can be achieved by using the following [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)].
+This layout can be achieved by using the following XAML.
 
 [!code-xaml[LayoutInformation#1](~/samples/snippets/csharp/VS_Snippets_Wpf/LayoutInformation/CSharp/Window1.xaml#1)]
 

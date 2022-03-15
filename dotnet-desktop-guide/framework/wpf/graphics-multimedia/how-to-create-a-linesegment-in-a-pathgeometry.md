@@ -30,7 +30,7 @@ In [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)], you may u
 
 (Note that this attribute syntax actually creates a <xref:System.Windows.Media.StreamGeometry>, a lighter-weight version of a <xref:System.Windows.Media.PathGeometry>. For more information, see the [Path Markup Syntax](path-markup-syntax.md) page.)
 
-In [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)], you may also draw a line segment by using object element syntax. The following is equivalent to the previous [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] example.
+In XAML, you may also draw a line segment by using object element syntax. The following is equivalent to the previous XAML example.
 
 ```xaml
 <Path Stroke="Black" StrokeThickness="1">

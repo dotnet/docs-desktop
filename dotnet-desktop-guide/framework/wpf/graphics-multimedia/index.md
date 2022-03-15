@@ -88,7 +88,7 @@ Partial Public Class Window1
 End Class
 ```
 
-The following illustration shows the output for the preceding [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] markup and code-behind.
+The following illustration shows the output for the preceding XAML markup and code-behind.
 
 ![A message box saying "You clicked the ellipse!"](./media/index/messagebox-text-output.png)
 

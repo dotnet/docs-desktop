@@ -19,7 +19,7 @@ This example shows how to draw an elliptical arc. To create an elliptical arc, u
 
  (Note that this attribute syntax actually creates a <xref:System.Windows.Media.StreamGeometry>, a lighter-weight version of a <xref:System.Windows.Media.PathGeometry>. For more information, see the [Path Markup Syntax](path-markup-syntax.md) page.)  
   
- In [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)], you can also draw an elliptical arc by explicitly using object tags. The following is equivalent to the preceding [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] markup.  
+ In XAML, you can also draw an elliptical arc by explicitly using object tags. The following is equivalent to the preceding XAML markup.  
   
  [!code-xaml[GeometrySample#36](~/samples/snippets/csharp/VS_Snippets_Wpf/GeometrySample/CS/pathgeometryexample.xaml#36)]  
   

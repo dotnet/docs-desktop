@@ -329,7 +329,7 @@ Why not call `IsDialogMessage` here?  You have the same issue as before--you nee
 
 ### Instantiate the HwndHost Derived Class
 
-Finally, now that all the key and tab support is in place, you can put your <xref:System.Windows.Interop.HwndHost> into the larger WPF application. If the main application is written in [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)], the easiest way to put it in the right place is to leave an empty <xref:System.Windows.Controls.Border> element where you want to put the <xref:System.Windows.Interop.HwndHost>. Here you create a <xref:System.Windows.Controls.Border> named `insertHwndHostHere`:
+Finally, now that all the key and tab support is in place, you can put your <xref:System.Windows.Interop.HwndHost> into the larger WPF application. If the main application is written in XAML, the easiest way to put it in the right place is to leave an empty <xref:System.Windows.Controls.Border> element where you want to put the <xref:System.Windows.Interop.HwndHost>. Here you create a <xref:System.Windows.Controls.Border> named `insertHwndHostHere`:
 
 ```xaml
 <Window x:Class="WPFApplication1.Window1"

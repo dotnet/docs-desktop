@@ -55,7 +55,7 @@ The following example shows the data items that are defined as an <xref:System.C
 </ListView.ItemsSource>
 ```
 
-The `s` and `p` identifiers in the [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] tags refer to namespace mappings that are defined in the metadata of the [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] page. The following example shows the metadata definition.
+The `s` and `p` identifiers in the XAML tags refer to namespace mappings that are defined in the metadata of the XAML page. The following example shows the metadata definition.
 
 ```xaml
 <Window

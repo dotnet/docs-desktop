@@ -16,7 +16,7 @@ This example shows how to use the static resources of the <xref:System.Windows.S
 ## Example  
  System resources expose several system-determined values as both resources and properties in order to help you create visuals that are consistent with system settings. <xref:System.Windows.SystemFonts> is a class that contains both system font values as static properties, and properties that reference resource keys that can be used to access those values dynamically at run time. For example, <xref:System.Windows.SystemFonts.CaptionFontFamily%2A> is a <xref:System.Windows.SystemFonts> value, and <xref:System.Windows.SystemFonts.CaptionFontFamilyKey%2A> is a corresponding resource key.  
   
- In [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)], you can use the members of <xref:System.Windows.SystemFonts> as either static properties or dynamic resource references (with the static property value as the key). Use a dynamic resource reference if you want the font metric to automatically update while the application runs; otherwise, use a static value reference.  
+ In XAML, you can use the members of <xref:System.Windows.SystemFonts> as either static properties or dynamic resource references (with the static property value as the key). Use a dynamic resource reference if you want the font metric to automatically update while the application runs; otherwise, use a static value reference.  
   
 > [!NOTE]
 > The resource keys have the suffix "Key" appended to the property name.  

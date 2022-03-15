@@ -106,10 +106,10 @@ Microsoft Windows applications often depend on files that contain non-executable
 > [!NOTE]
 > In Visual Studio, you add a new <xref:System.Windows.Window>, <xref:System.Windows.Navigation.NavigationWindow>, <xref:System.Windows.Controls.Page>, <xref:System.Windows.Documents.FlowDocument>, or <xref:System.Windows.ResourceDictionary> to a project, the `Build Action` for the markup file will default to `Page`.  
   
- When a project with `Page` items is compiled, the [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] items are converted to binary format and compiled into the associated assembly. Consequently, these files can be used in the same way as typical resource files.  
+ When a project with `Page` items is compiled, the XAML items are converted to binary format and compiled into the associated assembly. Consequently, these files can be used in the same way as typical resource files.  
   
 > [!NOTE]
-> If a [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] file is configured as a `Resource` item, and does not have a code-behind file, the raw [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] is compiled into an assembly rather than a binary version of the raw [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)].  
+> If a XAML file is configured as a `Resource` item, and does not have a code-behind file, the raw XAML is compiled into an assembly rather than a binary version of the raw XAML.  
   
 <a name="Content_Files"></a>
 ## Content Files  

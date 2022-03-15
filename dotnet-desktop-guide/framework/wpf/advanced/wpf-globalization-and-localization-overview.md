@@ -24,7 +24,7 @@ You can make the most of the globalization and localization functionality that i
 
 When you design a UI, consider implementing these best practices:
 
-- Write your UI in UI in code. When you create your UI by using [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)], you expose it through built-in localization APIs.
+- Write your UI in UI in code. When you create your UI by using XAML, you expose it through built-in localization APIs.
 
 - Avoid using absolute positions and fixed sizes to lay out content; instead, use relative or automatic sizing.
 
@@ -72,7 +72,7 @@ When you localize a WPF application, you have several options. For example, you 
 
 - You can update to a newer version of the BAML form of XAML with localizations from an older version of the BAML form of XAML so that you can localize at the same time that you develop.
 
-- You can validate original source elements and semantics at compile time because the BAML form of XAML is the compiled form of [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)].
+- You can validate original source elements and semantics at compile time because the BAML form of XAML is the compiled form of XAML.
 
 ### Localization Build Process
 
@@ -80,11 +80,11 @@ When you develop a WPF application, the build process for localization is as fol
 
 - The developer creates and globalizes the WPF application. In the project file the developer sets `<UICulture>en-US</UICulture>` so that when the application is compiled, a language-neutral main assembly is generated. This assembly has a satellite .resources.dll file that contains all the localizable resources. Optionally, you can keep the source language in the main assembly because our localization APIs support extraction from the main assembly.
 
-- When the file is compiled into the build, the [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] is converted to the BAML form of XAML. The culturally neutral `MyDialog.exe` and the culturally dependent (English) `MyDialog.resources.dll` files are released to the English-speaking customer.
+- When the file is compiled into the build, the XAML is converted to the BAML form of XAML. The culturally neutral `MyDialog.exe` and the culturally dependent (English) `MyDialog.resources.dll` files are released to the English-speaking customer.
 
 ### Localization Workflow
 
-The localization process begins after the unlocalized `MyDialog.resources.dll` file is built. The UI elements and properties in your original [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] are extracted from the BAML form of XAML into key-value pairs by using the APIs under <xref:System.Windows.Markup.Localizer>. Localizers use the key-value pairs to localize the application. You can generate a new .resource.dll from the new values after localization is complete.
+The localization process begins after the unlocalized `MyDialog.resources.dll` file is built. The UI elements and properties in your original XAML are extracted from the BAML form of XAML into key-value pairs by using the APIs under <xref:System.Windows.Markup.Localizer>. Localizers use the key-value pairs to localize the application. You can generate a new .resource.dll from the new values after localization is complete.
 
 The keys of the key-value pairs are `x:Uid` values that are placed by the developer in the original UI after the localizer begins localizing, you can merge the development change with the already completed localization work so that minimal translation work is lost.
 
@@ -112,7 +112,7 @@ The following graphics show the output of the **Run** dialog box sample.
 
 **Designing a Global Run Dialog Box**
 
-This example produces a **Run** dialog box by using WPF and [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)]. This dialog box is equivalent to the **Run** dialog box that is available from the Microsoft Windows Start menu.
+This example produces a **Run** dialog box by using WPF and XAML. This dialog box is equivalent to the **Run** dialog box that is available from the Microsoft Windows Start menu.
 
 Some highlights for making global dialog boxes are:
 
@@ -277,7 +277,7 @@ Often the developer or localization manager needs control of what localizers can
 
 [!code-xaml[LocalizationComAtt#LocalizationAttributes](~/samples/snippets/csharp/VS_Snippets_Wpf/LocalizationComAtt/CSharp/Attributes.xaml#localizationattributes)]
 
-In addition to the readability and modifiability attributes, WPF provides an enumeration of common UI categories (<xref:System.Windows.LocalizationCategory>) that can be used to give localizers more context. The WPF default categories for platform controls can be overridden in [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] as well:
+In addition to the readability and modifiability attributes, WPF provides an enumeration of common UI categories (<xref:System.Windows.LocalizationCategory>) that can be used to give localizers more context. The WPF default categories for platform controls can be overridden in XAML as well:
 
 [!code-xaml[LocalizationComAtt#LocalizationAttributesOverridden](~/samples/snippets/csharp/VS_Snippets_Wpf/LocalizationComAtt/CSharp/Attributes.xaml#localizationattributesoverridden)]
 
@@ -291,7 +291,7 @@ public class CorporateLogo : TextBlock
 }
 ```
 
-The per instance attributes set in [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] will take precedence over the values set in code on custom controls. For more information on attributes and comments, see [Localization Attributes and Comments](localization-attributes-and-comments.md).
+The per instance attributes set in XAML will take precedence over the values set in code on custom controls. For more information on attributes and comments, see [Localization Attributes and Comments](localization-attributes-and-comments.md).
 
 **Font Fallback and Composite Fonts**
 

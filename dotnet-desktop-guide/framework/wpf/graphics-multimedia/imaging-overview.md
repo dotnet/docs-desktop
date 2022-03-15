@@ -93,7 +93,7 @@ This topic provides an introduction to the Microsoft Windows Presentation Founda
   
 ### Using the Image Control  
 
- <xref:System.Windows.Controls.Image> is a framework element and the primary way to display images in applications. In [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)], <xref:System.Windows.Controls.Image> can be used in two ways; attribute syntax or property syntax. The following example shows how to render an image 200 pixels wide using both attribute syntax and property tag syntax. For more information on attribute syntax and property syntax, see [Dependency Properties Overview](../advanced/dependency-properties-overview.md).  
+ <xref:System.Windows.Controls.Image> is a framework element and the primary way to display images in applications. In XAML, <xref:System.Windows.Controls.Image> can be used in two ways; attribute syntax or property syntax. The following example shows how to render an image 200 pixels wide using both attribute syntax and property tag syntax. For more information on attribute syntax and property syntax, see [Dependency Properties Overview](../advanced/dependency-properties-overview.md).  
   
  [!code-xaml[ImageElementExample_snip#ImageSimpleExampleInlineMarkup](~/samples/snippets/csharp/VS_Snippets_Wpf/ImageElementExample_snip/CSharp/ImageSimpleExample.xaml#imagesimpleexampleinlinemarkup)]  
   

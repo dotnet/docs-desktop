@@ -21,7 +21,7 @@ ms.assetid: 1fbada8e-4867-4ed1-8d97-62c07dad7ebc
   
 <a name="multiple_sets"></a>
 ## Dependency Properties Might Be "Set" in Multiple Places  
- The following is example [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] where the same property (<xref:System.Windows.Controls.Control.Background%2A>) has three different "set" operations that might influence the value.  
+ The following is example XAML where the same property (<xref:System.Windows.Controls.Control.Background%2A>) has three different "set" operations that might influence the value.  
   
  :::code language="xaml" source="./snippets/dependency-property-value-precedence/xaml/MainWindow.xaml" id="DependencyPropertyValuePrecedence":::
   
@@ -37,13 +37,13 @@ ms.assetid: 1fbada8e-4867-4ed1-8d97-62c07dad7ebc
   
 2. **Active animations, or animations with a Hold behavior.** In order to have any practical effect, an animation of a property must be able to have precedence over the base (unanimated) value, even if that value was set locally. For details, see [Coercion, Animation, and Base Value](#animations) later in this topic.  
   
-3. **Local value.** A local value might be set through the convenience of the "wrapper" property, which also equates to setting as an attribute or property element in [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)], or by a call to the <xref:System.Windows.DependencyObject.SetValue%2A> API using a property of a specific instance. If you set a local value by using a binding or a resource, these each act in the precedence as if a direct value was set.  
+3. **Local value.** A local value might be set through the convenience of the "wrapper" property, which also equates to setting as an attribute or property element in XAML, or by a call to the <xref:System.Windows.DependencyObject.SetValue%2A> API using a property of a specific instance. If you set a local value by using a binding or a resource, these each act in the precedence as if a direct value was set.  
   
 4. **TemplatedParent template properties.** An element has a <xref:System.Windows.FrameworkElement.TemplatedParent%2A> if it was created as part of a template (a <xref:System.Windows.Controls.ControlTemplate> or <xref:System.Windows.DataTemplate>). For details on when this applies, see [TemplatedParent](#templatedparent) later in this topic. Within the template, the following precedence applies:  
   
     1. Triggers from the <xref:System.Windows.FrameworkElement.TemplatedParent%2A> template.  
   
-    2. Property sets (typically through [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] attributes) in the <xref:System.Windows.FrameworkElement.TemplatedParent%2A> template.  
+    2. Property sets (typically through XAML attributes) in the <xref:System.Windows.FrameworkElement.TemplatedParent%2A> template.  
   
 5. **Implicit style.** Applies only to the `Style` property. The `Style` property is filled by any style resource with a key that matches the type of that element. That style resource must exist either in the page or the application; lookup for an implicit style resource does not proceed into the themes.  
   

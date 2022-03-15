@@ -13,7 +13,7 @@ This topic introduces issues that you should be aware of when writing [!INCLUDE[
 
 <a name="xaml_globalization"></a>
 ## XAML Globalization
- Extensible Application Markup Language (XAML) is based on XML and takes advantage of the globalization support defined in the XML specification. The following sections describe some [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] features that you should be aware of.
+ Extensible Application Markup Language (XAML) is based on XML and takes advantage of the globalization support defined in the XML specification. The following sections describe some XAML features that you should be aware of.
 
 <a name="char_reference"></a>
 ### Character References
@@ -31,7 +31,7 @@ The following example shows a hexadecimal character reference. Notice that it ha
 
 <a name="encoding"></a>
 ### Encoding
- The encoding supported by [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] are ASCII, Unicode UTF-16, and UTF-8. The encoding statement is at the beginning of [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] document. If no encoding attribute exists and there is no byte-order, the parser defaults to UTF-8. UTF-8 and UTF-16 are the preferred encodings. UTF-7 is not supported. The following example demonstrates how to specify a UTF-8 encoding in a [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] file.
+ The encoding supported by XAML are ASCII, Unicode UTF-16, and UTF-8. The encoding statement is at the beginning of XAML document. If no encoding attribute exists and there is no byte-order, the parser defaults to UTF-8. UTF-8 and UTF-16 are the preferred encodings. UTF-7 is not supported. The following example demonstrates how to specify a UTF-8 encoding in a XAML file.
 
 ```xaml
 ?xml encoding="UTF-8"?
@@ -39,7 +39,7 @@ The following example shows a hexadecimal character reference. Notice that it ha
 
 <a name="lang_attrib"></a>
 ### Language Attribute
- [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] uses [xml:lang](/dotnet/desktop/xaml-services/xml-language-handling) to represent the language attribute of an element.  To take advantage of the <xref:System.Globalization.CultureInfo> class, the language attribute value needs to be one of the culture names predefined by <xref:System.Globalization.CultureInfo>. [xml:lang](/dotnet/desktop/xaml-services/xml-language-handling) is inheritable in the element tree (by XML rules, not necessarily because of dependency property inheritance) and its default value is an empty string if it is not assigned explicitly.
+ XAML uses [xml:lang](/dotnet/desktop/xaml-services/xml-language-handling) to represent the language attribute of an element.  To take advantage of the <xref:System.Globalization.CultureInfo> class, the language attribute value needs to be one of the culture names predefined by <xref:System.Globalization.CultureInfo>. [xml:lang](/dotnet/desktop/xaml-services/xml-language-handling) is inheritable in the element tree (by XML rules, not necessarily because of dependency property inheritance) and its default value is an empty string if it is not assigned explicitly.
 
  The language attribute is very useful for specifying dialects. For example, French has different spelling, vocabulary, and pronunciation in France, Quebec, Belgium, and Switzerland. Also Chinese, Japanese, and Korean share code points in Unicode, but the ideographic shapes are different and they use totally different fonts.
 
@@ -143,7 +143,7 @@ The following example shows a hexadecimal character reference. Notice that it ha
 ### Localizable User Interface
  UI. UI and use a programming language such as C# to react to user interaction.
 
- From a resource point of view, a UI is a resource element and therefore its final distribution format must be localizable to support international languages. Because [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] cannot handle events many [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] applications contain blocks of code to do this. For more information, see [XAML in WPF](xaml-in-wpf.md). Code is stripped out and compiled into different binaries when a [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] file is tokenized into the BAML form of XAML. The BAML form of XAML files, images, and other types of managed resource objects are embedded in the satellite resource assembly, which can be localized into other languages, or the main assembly when localization is not required.
+ From a resource point of view, a UI is a resource element and therefore its final distribution format must be localizable to support international languages. Because XAML cannot handle events many XAML applications contain blocks of code to do this. For more information, see [XAML in WPF](xaml-in-wpf.md). Code is stripped out and compiled into different binaries when a XAML file is tokenized into the BAML form of XAML. The BAML form of XAML files, images, and other types of managed resource objects are embedded in the satellite resource assembly, which can be localized into other languages, or the main assembly when localization is not required.
 
 > [!NOTE]
 > WPF applications support all the FrameworkCLR resources including string tables, images, and so forth.

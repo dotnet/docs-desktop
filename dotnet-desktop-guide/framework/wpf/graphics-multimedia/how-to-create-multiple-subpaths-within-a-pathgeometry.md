@@ -15,7 +15,7 @@ This example shows how to create multiple subpaths in a <xref:System.Windows.Med
   
  [!code-xaml[GeometrySample#38](~/samples/snippets/csharp/VS_Snippets_Wpf/GeometrySample/CS/pathgeometryexample.xaml#38)]  
   
- The following example shows how to create multiple subpaths by using a <xref:System.Windows.Shapes.Path> and [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] attribute syntax. Each `M` creates a new subpath so that the example creates two subpaths that each draw a triangle.  
+ The following example shows how to create multiple subpaths by using a <xref:System.Windows.Shapes.Path> and XAML attribute syntax. Each `M` creates a new subpath so that the example creates two subpaths that each draw a triangle.  
   
  [!code-xaml[GeometrySample#58](~/samples/snippets/csharp/VS_Snippets_Wpf/GeometrySample/CS/geometryattributesyntaxexample.xaml#58)]  
   

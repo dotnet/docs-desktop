@@ -12,14 +12,14 @@ As its name suggests, Windows Presentation Foundation (WPF) is great for making 
 
  ![The customized button that you will create](./media/custom-button-blend-intro.jpg "custom_button_blend_Intro")
 
- The vector graphics that make up the appearance of the button are created by using [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)]. [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] is similar to HTML except it is more powerful and extensible. [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)] can be typed in manually using Visual Studio or Notepad, or you can use a visual design tool such as Blend for Visual Studio. Blend works by creating underlying XAML code, so both methods create the same graphics.
+ The vector graphics that make up the appearance of the button are created by using XAML is similar to HTML except it is more powerful and extensible. [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)] can be typed in manually using Visual Studio or Notepad, or you can use a visual design tool such as Blend for Visual Studio. Blend works by creating underlying XAML code, so both methods create the same graphics.
 
 ## In This Section
  [Create a Button by Using Microsoft Expression Blend](walkthrough-create-a-button-by-using-microsoft-expression-blend.md)
  Demonstrates how to create buttons with custom behavior by using the designer features of Expression Blend.
 
  [Create a Button by Using XAML](walkthrough-create-a-button-by-using-xaml.md)
- Demonstrates how to create buttons with custom behavior by using [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] and Visual Studio.
+ Demonstrates how to create buttons with custom behavior by using XAML and Visual Studio.
 
 ## Related Sections
  [Styling and Templating](styles-templates-overview.md)

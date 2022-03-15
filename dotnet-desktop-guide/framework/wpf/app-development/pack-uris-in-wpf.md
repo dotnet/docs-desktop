@@ -92,11 +92,11 @@ The pack URI for a resource file that is compiled into the local assembly uses t
 
 - **Path**: The name of the resource file, including its path, relative to the local assembly project folder root.
 
-The following example shows the pack URI for a [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] resource file that is located in the root of the local assembly's project folder.
+The following example shows the pack URI for a XAML resource file that is located in the root of the local assembly's project folder.
 
 `pack://application:,,,/ResourceFile.xaml`
 
-The following example shows the pack URI for a [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] resource file that is located in a subfolder of the local assembly's project folder.
+The following example shows the pack URI for a XAML resource file that is located in a subfolder of the local assembly's project folder.
 
 `pack://application:,,,/Subfolder/ResourceFile.xaml`
 
@@ -122,15 +122,15 @@ The pack URI for a resource file that is compiled into a referenced assembly use
 
   - **/Path**: the name of the resource file, including its path, relative to the root of the referenced assembly's project folder.
 
-The following example shows the pack URI for a [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] resource file that is located in the root of the referenced assembly's project folder.
+The following example shows the pack URI for a XAML resource file that is located in the root of the referenced assembly's project folder.
 
 `pack://application:,,,/ReferencedAssembly;component/ResourceFile.xaml`
 
-The following example shows the pack URI for a [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] resource file that is located in a subfolder of the referenced assembly's project folder.
+The following example shows the pack URI for a XAML resource file that is located in a subfolder of the referenced assembly's project folder.
 
 `pack://application:,,,/ReferencedAssembly;component/Subfolder/ResourceFile.xaml`
 
-The following example shows the pack URI for a [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] resource file that is located in the root folder of a referenced, version-specific assembly's project folder.
+The following example shows the pack URI for a XAML resource file that is located in the root folder of a referenced, version-specific assembly's project folder.
 
 `pack://application:,,,/ReferencedAssembly;v1.0.0.1;component/ResourceFile.xaml`
 
@@ -148,11 +148,11 @@ The pack URI for a content file uses the following authority and path:
 
 - **Path**: The name of the content file, including its path relative to the file system location of the application's main executable assembly.
 
-The following example shows the pack URI for a [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] content file, located in the same folder as the executable assembly.
+The following example shows the pack URI for a XAML content file, located in the same folder as the executable assembly.
 
 `pack://application:,,,/ContentFile.xaml`
 
-The following example shows the pack URI for a [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] content file, located in a subfolder that is relative to the application's executable assembly.
+The following example shows the pack URI for a XAML content file, located in a subfolder that is relative to the application's executable assembly.
 
 `pack://application:,,,/Subfolder/ContentFile.xaml`
 
@@ -169,11 +169,11 @@ The pack URI for a site of origin file uses the following authority and path:
 
 - **Path**: The name of the site of origin file, including its path relative to the location from which the executable assembly was launched.
 
-The following example shows the pack URI for a [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] site of origin file, stored in the location from which the executable assembly is launched.
+The following example shows the pack URI for a XAML site of origin file, stored in the location from which the executable assembly is launched.
 
 `pack://siteoforigin:,,,/SiteOfOriginFile.xaml`
 
-The following example shows the pack URI for a [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] site of origin file, stored in subfolder that is relative to the location from which the application's executable assembly is launched.
+The following example shows the pack URI for a XAML site of origin file, stored in subfolder that is relative to the location from which the application's executable assembly is launched.
 
 `pack://siteoforigin:,,,/Subfolder/SiteOfOriginFile.xaml`
 
@@ -183,7 +183,7 @@ The following example shows the pack URI for a [!INCLUDE[TLA2#tla_xaml](../../..
 
 XAML files that are configured as MSBuild `Page` items are compiled into assemblies in the same way as resource files. Consequently, MSBuild `Page` items can be identified using pack URIs for resource files.
 
-The types of [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] files that are commonly configured as MSBuild`Page` items have one of the following as their root element:
+The types of XAML files that are commonly configured as MSBuild`Page` items have one of the following as their root element:
 
 - <xref:System.Windows.Window?displayProperty=nameWithType>
 
@@ -201,7 +201,7 @@ The types of [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)
 
 ## Absolute vs. Relative Pack URIs
 
-A fully qualified pack URI includes the scheme, the authority, and the path, and it is considered an absolute pack URI. As a simplification for developers, [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] elements typically allow you to set appropriate attributes with a relative pack URI, which includes only the path.
+A fully qualified pack URI includes the scheme, the authority, and the path, and it is considered an absolute pack URI. As a simplification for developers, XAML elements typically allow you to set appropriate attributes with a relative pack URI, which includes only the path.
 
 For example, consider the following absolute pack URI for a resource file in the local assembly.
 

@@ -75,13 +75,13 @@ This section explains and demonstrates the following aspects of navigation:
 
 ### Implementing a Page
 
-In WPF, you can navigate to several content types that include .NET Framework objects, custom objects, enumeration values, user controls, [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] files, and HTML files. However, you'll find that the most common and convenient way to package content is by using <xref:System.Windows.Controls.Page>. Furthermore, <xref:System.Windows.Controls.Page> implements navigation-specific features to enhance their appearance and simplify development.
+In WPF, you can navigate to several content types that include .NET Framework objects, custom objects, enumeration values, user controls, XAML files, and HTML files. However, you'll find that the most common and convenient way to package content is by using <xref:System.Windows.Controls.Page>. Furthermore, <xref:System.Windows.Controls.Page> implements navigation-specific features to enhance their appearance and simplify development.
 
-Using <xref:System.Windows.Controls.Page>, you can declaratively implement a navigable page of [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] content by using markup like the following.
+Using <xref:System.Windows.Controls.Page>, you can declaratively implement a navigable page of XAML content by using markup like the following.
 
 [!code-xaml[NavigationOverviewSnippets#Page1XAML](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationOverviewSnippets/CSharp/Page1.xaml#page1xaml)]
 
-A <xref:System.Windows.Controls.Page> that is implemented in [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] markup has `Page` as its root element and requires the WPF XML namespace declaration. The `Page` element contains the content that you want to navigate to and display. You add content by setting the `Page.Content` property element, as shown in the following markup.
+A <xref:System.Windows.Controls.Page> that is implemented in XAML markup has `Page` as its root element and requires the WPF XML namespace declaration. The `Page` element contains the content that you want to navigate to and display. You add content by setting the `Page.Content` property element, as shown in the following markup.
 
 [!code-xaml[NavigationOverviewSnippets#Page2XAML](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationOverviewSnippets/CSharp/Page2.xaml#page2xaml)]
 
@@ -102,7 +102,7 @@ A markup-only <xref:System.Windows.Controls.Page> is useful for displaying conte
 
 To allow a markup file and code-behind file to work together, the following configuration is required:
 
-- In markup, the `Page` element must include the `x:Class` attribute. When the application is built, the existence of `x:Class` in the markup file causes Microsoft build engine (MSBuild) to create a `partial` class that derives from <xref:System.Windows.Controls.Page> and has the name that is specified by the `x:Class` attribute. This requires the addition of an XML namespace declaration for the [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] schema ( `xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"` ). The generated `partial` class implements `InitializeComponent`, which is called to register the events and set the properties that are implemented in markup.
+- In markup, the `Page` element must include the `x:Class` attribute. When the application is built, the existence of `x:Class` in the markup file causes Microsoft build engine (MSBuild) to create a `partial` class that derives from <xref:System.Windows.Controls.Page> and has the name that is specified by the `x:Class` attribute. This requires the addition of an XML namespace declaration for the XAML schema ( `xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"` ). The generated `partial` class implements `InitializeComponent`, which is called to register the events and set the properties that are implemented in markup.
 
 - In code-behind, the class must be a `partial` class with the same name that is specified by the `x:Class` attribute in markup, and it must derive from <xref:System.Windows.Controls.Page>. This allows the code-behind file to be associated with the `partial` class that is generated for the markup file when the application is built (see [Building a WPF Application](building-a-wpf-application-wpf.md)).
 
@@ -214,9 +214,9 @@ The following shows an example of a `Hyperlink` that is configured to navigate t
 > This section describes the default fragment navigation implementation in WPF. WPF also allows you to implement your own fragment navigation scheme which, in part, requires handling the <xref:System.Windows.Navigation.NavigationService.FragmentNavigation?displayProperty=nameWithType> event.
 
 > [!IMPORTANT]
-> You can navigate to fragments in loose [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] pages (markup-only [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] files with `Page` as the root element) only if the pages can be browsed via HTTP.
+> You can navigate to fragments in loose XAML pages (markup-only XAML files with `Page` as the root element) only if the pages can be browsed via HTTP.
 >
-> However, a loose [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] page can navigate to its own fragments.
+> However, a loose XAML page can navigate to its own fragments.
 
 <a name="NavigationService"></a>
 
@@ -537,7 +537,7 @@ The following are some of the ways that cookies are supported in WPF:
 
 - XBAPs and HTML pages from the same domain can create and share cookies.
 
-- Cookies are dispatched when XBAPs and loose [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] pages make Web requests.
+- Cookies are dispatched when XBAPs and loose XAML pages make Web requests.
 
 - Both top-level XBAPs and XBAPs hosted in IFRAMES can access cookies.
 
@@ -679,21 +679,21 @@ As mentioned earlier, more than one journal can exist within an application. The
 
 Throughout this topic, <xref:System.Windows.Controls.Page> and pack XBAPs have been used to demonstrate the various navigation capabilities of WPF. However, a <xref:System.Windows.Controls.Page> that is compiled into an application is not the only type of content that can be navigated to, and pack XBAPs aren't the only way to identify content.
 
-As this section demonstrates, you can also navigate to loose [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] files, HTML files, and objects.
+As this section demonstrates, you can also navigate to loose XAML files, HTML files, and objects.
 
 <a name="Navigating_to_Loose_XAML_Files"></a>
 
 ### Navigating to Loose XAML Files
 
-A loose [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] file is a file with the following characteristics:
+A loose XAML file is a file with the following characteristics:
 
-- Contains only [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] (that is, no code).
+- Contains only XAML (that is, no code).
 
 - Has an appropriate namespace declaration.
 
 - Has the .xaml file name extension.
 
-For example, consider the following content that is stored as a loose [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] file, Person.xaml.
+For example, consider the following content that is stored as a loose XAML file, Person.xaml.
 
 [!code-xaml[NavigationOverviewSnippets#LooseXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationOverviewSnippets/CSharp/Person.xaml#loosexaml)]
 
@@ -701,7 +701,7 @@ When you double-click the file, the browser opens and navigates to and displays 
 
 ![Display of the content in the Person.XAML file](./media/navigation-overview/contents-of-person-xaml-file.png "Shows the contents of the Person.XAML file.")
 
-You can display a loose [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] file from the following:
+You can display a loose XAML file from the following:
 
 - A Web site on the local machine, the intranet, or the Internet.
 
@@ -709,18 +709,18 @@ You can display a loose [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-
 
 - The local disk.
 
-A loose [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] file can be added to the browser's favorites, or be the browser's home page.
+A loose XAML file can be added to the browser's favorites, or be the browser's home page.
 
 > [!NOTE]
-> For more information about publishing and launching loose [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] pages, see [Deploying a WPF Application](deploying-a-wpf-application-wpf.md).
+> For more information about publishing and launching loose XAML pages, see [Deploying a WPF Application](deploying-a-wpf-application-wpf.md).
 
-One limitation with respect to loose [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] is that you can only host content that is safe to run in partial trust. For example, `Window` cannot be the root element of a loose [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] file. For more information, see [WPF Partial Trust Security](../wpf-partial-trust-security.md).
+One limitation with respect to loose XAML is that you can only host content that is safe to run in partial trust. For example, `Window` cannot be the root element of a loose XAML file. For more information, see [WPF Partial Trust Security](../wpf-partial-trust-security.md).
 
 <a name="Navigating_to_HTML_Files_Using_Frame"></a>
 
 ### Navigating to HTML Files by Using Frame
 
-As you might expect, you can also navigate to HTML. You simply need to provide a URI that uses the http scheme. For example, the following [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] shows a <xref:System.Windows.Controls.Frame> that navigates to an HTML page.
+As you might expect, you can also navigate to HTML. You simply need to provide a URI that uses the http scheme. For example, the following XAML shows a <xref:System.Windows.Controls.Frame> that navigates to an HTML page.
 
 [!code-xaml[NavigationOverviewSnippets#FrameHtmlNavMARKUP](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationOverviewSnippets/CSharp/FrameHTMLNavPage.xaml#framehtmlnavmarkup)]
 

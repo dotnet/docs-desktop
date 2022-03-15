@@ -33,11 +33,11 @@ WPF APIs are managed code, but most existing Win32 programs are written in unman
 
 One project-level complication is that you cannot compile [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)] files into a C++ project.  There are several project division techniques to compensate for this.
 
-- Create a C# DLL that contains all your [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] pages as a compiled assembly, and then have your C++ executable include that DLL as a reference.
+- Create a C# DLL that contains all your XAML pages as a compiled assembly, and then have your C++ executable include that DLL as a reference.
 
 - Create a C# executable for the WPF content, and have it reference a C++ DLL that contains the Win32 content.
 
-- Use <xref:System.Windows.Markup.XamlReader.Load%2A> to load any [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] at run time, instead of compiling your [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)].
+- Use <xref:System.Windows.Markup.XamlReader.Load%2A> to load any XAML at run time, instead of compiling your XAML.
 
 - Do not use WPF in code, building up the element tree from <xref:System.Windows.Application>.
 
@@ -87,7 +87,7 @@ The key to hosting a WPF on a Win32 window is the <xref:System.Windows.Interop.H
 8. Communicate with the WPF content object by using the reference that you stored in the static field to set properties, call methods, etc.
 
 > [!NOTE]
-> You can do some or all of the WPF content class definition for Step One in [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] using the default partial class of the content class, if you produce a separate assembly and then reference it. Although you typically include an <xref:System.Windows.Application> object as part of compiling the [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] into an assembly, you do not end up using that <xref:System.Windows.Application> as part of the interoperation, you just use one or more of the root classes for [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] files referred to by the application and reference their partial classes. The remainder of the procedure is essentially similar to that outlined above.
+> You can do some or all of the WPF content class definition for Step One in XAML using the default partial class of the content class, if you produce a separate assembly and then reference it. Although you typically include an <xref:System.Windows.Application> object as part of compiling the XAML into an assembly, you do not end up using that <xref:System.Windows.Application> as part of the interoperation, you just use one or more of the root classes for XAML files referred to by the application and reference their partial classes. The remainder of the procedure is essentially similar to that outlined above.
 >
 > Each of these steps is illustrated through code in the topic [Walkthrough: Hosting WPF Content in Win32](walkthrough-hosting-wpf-content-in-win32.md).
 

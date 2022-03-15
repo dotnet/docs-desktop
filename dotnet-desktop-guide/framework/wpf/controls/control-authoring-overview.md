@@ -139,7 +139,7 @@ Just as dependency properties extend the notion of CLR properties with additiona
 
 - Routed events can be used in an <xref:System.Windows.EventSetter>, which enables application developers to specify the handler of an event within a style.
 
-- Routed events can be used in an <xref:System.Windows.EventTrigger>, which is useful for animating properties by using [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)]. For more information, see [Animation Overview](../graphics-multimedia/animation-overview.md).
+- Routed events can be used in an <xref:System.Windows.EventTrigger>, which is useful for animating properties by using XAML. For more information, see [Animation Overview](../graphics-multimedia/animation-overview.md).
 
 The following example defines a routed event by doing the following:
 
@@ -227,9 +227,9 @@ You can define shared resources at the element level by creating a custom resour
 
 [!code-xaml[SharedResources#1](~/samples/snippets/csharp/VS_Snippets_Wpf/SharedResources/CS/Dictionary1.xaml#1)]
 
-Once you have defined your dictionary, you need to merge it with your control's resource dictionary.  You can do this by using [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] or code.
+Once you have defined your dictionary, you need to merge it with your control's resource dictionary.  You can do this by using XAML or code.
 
-The following example merges a resource dictionary by using [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)].
+The following example merges a resource dictionary by using XAML.
 
 [!code-xaml[SharedResources#2](~/samples/snippets/csharp/VS_Snippets_Wpf/SharedResources/CS/ShapeResizer.xaml#2)]
 
@@ -239,7 +239,7 @@ The following example creates a class that returns a shared <xref:System.Windows
 
 [!code-csharp[SharedResources#3](~/samples/snippets/csharp/VS_Snippets_Wpf/SharedResources/CS/SharedDictionaryManager.cs#3)]
 
-The following example merges the shared resource with the resources of a custom control in the control's constructor before it calls `InitializeComponent`.  Because the `SharedDictionaryManager.SharedDictionary` is a static property, the <xref:System.Windows.ResourceDictionary> is created only once. Because the resource dictionary was merged before `InitializeComponent` was called, the resources are available to the control in its [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] file.
+The following example merges the shared resource with the resources of a custom control in the control's constructor before it calls `InitializeComponent`.  Because the `SharedDictionaryManager.SharedDictionary` is a static property, the <xref:System.Windows.ResourceDictionary> is created only once. Because the resource dictionary was merged before `InitializeComponent` was called, the resources are available to the control in its XAML file.
 
 [!code-csharp[SharedResources#4](~/samples/snippets/csharp/VS_Snippets_Wpf/SharedResources/CS/ShapeResizer.xaml.cs#4)]
 

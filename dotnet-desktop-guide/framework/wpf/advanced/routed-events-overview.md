@@ -38,7 +38,7 @@ Functional definition: A routed event is a type of event that can invoke handler
 
 Implementation definition: A routed event is a CLR event that is backed by an instance of the <xref:System.Windows.RoutedEvent> class and is processed by the [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] event system.
 
-A typical WPF application contains many elements. Whether created in code or declared in [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)], these elements exist in an element tree relationship to each other. The event route can travel in one of two directions depending on the event definition, but generally the route travels from the source element and then "bubbles" upward through the element tree until it reaches the element tree root (typically a page or a window). This bubbling concept might be familiar to you if you have worked with the DHTML object model previously.
+A typical WPF application contains many elements. Whether created in code or declared in XAML, these elements exist in an element tree relationship to each other. The event route can travel in one of two directions depending on the event definition, but generally the route travels from the source element and then "bubbles" upward through the element tree until it reaches the element tree root (typically a page or a window). This bubbling concept might be familiar to you if you have worked with the DHTML object model previously.
 
 Consider the following simple element tree:
 
@@ -60,7 +60,7 @@ The following is a brief summary of the scenarios that motivated the routed even
 
 **Control composition and encapsulation:** Various controls in WPF have a rich content model. For example, you can place an image inside of a <xref:System.Windows.Controls.Button>, which effectively extends the visual tree of the button. However, the added image must not break the hit-testing behavior that causes a button to respond to a <xref:System.Windows.Controls.Primitives.ButtonBase.Click> of its content, even if the user clicks on pixels that are technically part of the image.
 
-**Singular handler attachment points:** In Windows Forms, you would have to attach the same handler multiple times to process events that could be raised from multiple elements. Routed events enable you to attach that handler only once, as was shown in the previous example, and use handler logic to determine where the event came from if necessary. For instance, this might be the handler for the previously shown [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)]:
+**Singular handler attachment points:** In Windows Forms, you would have to attach the same handler multiple times to process events that could be raised from multiple elements. Routed events enable you to attach that handler only once, as was shown in the previous example, and use handler logic to determine where the event came from if necessary. For instance, this might be the handler for the previously shown XAML:
 
 [!code-csharp[EventOvwSupport#GroupButtonCodeBehind](~/samples/snippets/csharp/VS_Snippets_Wpf/EventOvwSupport/CSharp/default.xaml.cs#groupbuttoncodebehind)]
 [!code-vb[EventOvwSupport#GroupButtonCodeBehind](~/samples/snippets/visualbasic/VS_Snippets_Wpf/EventOvwSupport/visualbasic/default.xaml.vb#groupbuttoncodebehind)]
@@ -80,11 +80,11 @@ The following example shows the declaration for a custom `Tap` routed event, inc
 
 ### Routed Event Handlers and XAML
 
-To add a handler for an event using [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)], you declare the event name as an attribute on the element that is an event listener. The value of the attribute is the name of your implemented handler method, which must exist in the partial class of the code-behind file.
+To add a handler for an event using XAML, you declare the event name as an attribute on the element that is an event listener. The value of the attribute is the name of your implemented handler method, which must exist in the partial class of the code-behind file.
 
 [!code-xaml[EventOvwSupport#SimplestSyntax](~/samples/snippets/csharp/VS_Snippets_Wpf/EventOvwSupport/CSharp/default.xaml#simplestsyntax)]
 
-The [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] syntax for adding standard CLR event handlers is the same for adding routed event handlers, because you are really adding handlers to the CLR event wrapper, which has a routed event implementation underneath. For more information about adding event handlers in [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)], see [XAML in WPF](xaml-in-wpf.md).
+The XAML syntax for adding standard CLR event handlers is the same for adding routed event handlers, because you are really adding handlers to the CLR event wrapper, which has a routed event implementation underneath. For more information about adding event handlers in XAML, see [XAML in WPF](xaml-in-wpf.md).
 
 <a name="routing_strategies"></a>
 
@@ -122,7 +122,7 @@ Each of the above considerations is discussed in a separate section of this topi
 
 ## Adding and Implementing an Event Handler for a Routed Event
 
-To add an event handler in [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)], you simply add the event name to an element as an attribute and set the attribute value as the name of the event handler that implements an appropriate delegate, as in the following example.
+To add an event handler in XAML, you simply add the event name to an element as an attribute and set the attribute value as the name of the event handler that implements an appropriate delegate, as in the following example.
 
 [!code-xaml[EventOvwSupport#SimplestSyntax](~/samples/snippets/csharp/VS_Snippets_Wpf/EventOvwSupport/CSharp/default.xaml#simplestsyntax)]
 
@@ -133,7 +133,7 @@ To add an event handler in [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharpt
 
 <xref:System.Windows.RoutedEventHandler> is the basic routed event handler delegate. For routed events that are specialized for certain controls or scenarios, the delegates to use for the routed event handlers also might become more specialized, so that they can transmit specialized event data. For instance, in a common input scenario, you might handle a <xref:System.Windows.UIElement.DragEnter> routed event. Your handler should implement the <xref:System.Windows.DragEventHandler> delegate. By using the most specific delegate, you can process the <xref:System.Windows.DragEventArgs> in the handler and read the <xref:System.Windows.DragEventArgs.Data%2A> property, which contains the clipboard payload of the drag operation.
 
-For a complete example of how to add an event handler to an element using [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)], see [Handle a Routed Event](how-to-handle-a-routed-event.md).
+For a complete example of how to add an event handler to an element using XAML, see [Handle a Routed Event](how-to-handle-a-routed-event.md).
 
 Adding a handler for a routed event in an application that is created in code is straightforward. Routed event handlers can always be added through a helper method <xref:System.Windows.UIElement.AddHandler%2A> (which is the same method that the existing backing calls for `add`.) However, existing WPF routed events generally have backing implementations of `add` and `remove` logic that allow the handlers for routed events to be added by a language-specific event syntax, which is more intuitive syntax than the helper method. The following is an example usage of the helper method:
 
@@ -155,7 +155,7 @@ If you are using Visual Basic, you can also use the `Handles` keyword to add han
 
 All routed events share a common event data base class, <xref:System.Windows.RoutedEventArgs>. <xref:System.Windows.RoutedEventArgs> defines the <xref:System.Windows.RoutedEventArgs.Handled%2A> property, which takes a Boolean value. The purpose of the <xref:System.Windows.RoutedEventArgs.Handled%2A> property is to enable any event handler along the route to mark the routed event as *handled*, by setting the value of <xref:System.Windows.RoutedEventArgs.Handled%2A> to `true`. After being processed by the handler at one element along the route, the shared event data is again reported to each listener along the route.
 
-The value of <xref:System.Windows.RoutedEventArgs.Handled%2A> affects how a routed event is reported or processed as it travels further along the route. If <xref:System.Windows.RoutedEventArgs.Handled%2A> is `true` in the event data for a routed event, then handlers that listen for that routed event on other elements are generally no longer invoked for that particular event instance. This is true both for handlers attached in [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] and for handlers added by language-specific event handler attachment syntaxes such as `+=` or `Handles`. For most common handler scenarios, marking an event as handled by setting <xref:System.Windows.RoutedEventArgs.Handled%2A> to `true` will "stop" routing for either a tunneling route or a bubbling route, and also for any event that is handled at a point in the route by a class handler.
+The value of <xref:System.Windows.RoutedEventArgs.Handled%2A> affects how a routed event is reported or processed as it travels further along the route. If <xref:System.Windows.RoutedEventArgs.Handled%2A> is `true` in the event data for a routed event, then handlers that listen for that routed event on other elements are generally no longer invoked for that particular event instance. This is true both for handlers attached in XAML and for handlers added by language-specific event handler attachment syntaxes such as `+=` or `Handles`. For most common handler scenarios, marking an event as handled by setting <xref:System.Windows.RoutedEventArgs.Handled%2A> to `true` will "stop" routing for either a tunneling route or a bubbling route, and also for any event that is handled at a point in the route by a class handler.
 
 However, there is a "handledEventsToo" mechanism whereby listeners can still run handlers in response to routed events where <xref:System.Windows.RoutedEventArgs.Handled%2A> is `true` in the event data. In other words, the event route is not truly stopped by marking the event data as handled. You can only use the handledEventsToo mechanism in code, or in an <xref:System.Windows.EventSetter>:
 
@@ -193,9 +193,9 @@ Some WPF controls have inherent class handling for certain routed events. This m
 
 ## Attached Events in WPF
 
-The [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] language also defines a special type of event called an *attached event*. An attached event enables you to add a handler for a particular event to an arbitrary element. The element handling the event need not define or inherit the attached event, and neither the object potentially raising the event nor the destination handling instance must define or otherwise "own" that event as a class member.
+The XAML language also defines a special type of event called an *attached event*. An attached event enables you to add a handler for a particular event to an arbitrary element. The element handling the event need not define or inherit the attached event, and neither the object potentially raising the event nor the destination handling instance must define or otherwise "own" that event as a class member.
 
-The WPF input system uses attached events extensively. However, nearly all of these attached events are forwarded through base elements. The input events then appear as equivalent non-attached routed events that are members of the base element class. For instance, the underlying attached event <xref:System.Windows.Input.Mouse.MouseDown?displayProperty=nameWithType> can more easily be handled on any given <xref:System.Windows.UIElement> by using <xref:System.Windows.UIElement.MouseDown> on that <xref:System.Windows.UIElement> rather than dealing with attached event syntax either in [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] or code.
+The WPF input system uses attached events extensively. However, nearly all of these attached events are forwarded through base elements. The input events then appear as equivalent non-attached routed events that are members of the base element class. For instance, the underlying attached event <xref:System.Windows.Input.Mouse.MouseDown?displayProperty=nameWithType> can more easily be handled on any given <xref:System.Windows.UIElement> by using <xref:System.Windows.UIElement.MouseDown> on that <xref:System.Windows.UIElement> rather than dealing with attached event syntax either in XAML or code.
 
 For more information about attached events in WPF, see [Attached Events Overview](attached-events-overview.md).
 
@@ -253,7 +253,7 @@ For more information on input and how input and events interact in typical appli
 
 ## EventSetters and EventTriggers
 
-In styles, you can include some pre-declared [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] event handling syntax in the markup by using an <xref:System.Windows.EventSetter>. When the style is applied, the referenced handler is added to the styled instance. You can declare an <xref:System.Windows.EventSetter> only for a routed event. The following is an example. Note that the `b1SetColor` method referenced here is in a code-behind file.
+In styles, you can include some pre-declared XAML event handling syntax in the markup by using an <xref:System.Windows.EventSetter>. When the style is applied, the referenced handler is added to the styled instance. You can declare an <xref:System.Windows.EventSetter> only for a routed event. The following is an example. Note that the `b1SetColor` method referenced here is in a code-behind file.
 
 [!code-xaml[EventOvwSupport#XAML2](~/samples/snippets/csharp/VS_Snippets_Wpf/EventOvwSupport/CSharp/page2.xaml#xaml2)]
 

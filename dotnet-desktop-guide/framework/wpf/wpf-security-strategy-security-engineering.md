@@ -53,7 +53,7 @@ Trustworthy Computing is a Microsoft initiative for ensuring the production of s
   
  Threat modeling is applied throughout WPF and includes the following:  
   
-- How the [!INCLUDE[TLA2#tla_xaml](../../includes/tla2sharptla-xaml-md.md)] parser reads files, maps text to corresponding object model classes, and creates the actual code.  
+- How the XAML parser reads files, maps text to corresponding object model classes, and creates the actual code.  
   
 - How a window handle (hWnd) is created, sends messages, and is used for rendering the contents of a window.  
   

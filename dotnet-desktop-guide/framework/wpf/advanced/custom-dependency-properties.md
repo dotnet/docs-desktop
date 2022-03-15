@@ -96,7 +96,7 @@ There are established naming conventions regarding dependency properties that yo
 
 The dependency property itself will have a basic name, "AquariumGraphic" as in this example, which is given as the first parameter of <xref:System.Windows.DependencyProperty.Register%2A>. That name must be unique within each registering type. Dependency properties inherited through base types are considered to be already part of the registering type; names of inherited properties cannot be registered again. However, there is a technique for adding a class as owner of a dependency property even when that dependency property is not inherited; for details, see [Dependency Property Metadata](dependency-property-metadata.md).
 
-When you create the identifier field, name this field by the name of the property as you registered it, plus the suffix `Property`. This field is your identifier for the dependency property, and it will be used later as an input for the <xref:System.Windows.DependencyObject.SetValue%2A> and <xref:System.Windows.DependencyObject.GetValue%2A> calls you will make in the wrappers, by any other code access to the property by your own code, by any external code access you allow, by the property system, and potentially by [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] processors.
+When you create the identifier field, name this field by the name of the property as you registered it, plus the suffix `Property`. This field is your identifier for the dependency property, and it will be used later as an input for the <xref:System.Windows.DependencyObject.SetValue%2A> and <xref:System.Windows.DependencyObject.GetValue%2A> calls you will make in the wrappers, by any other code access to the property by your own code, by any external code access you allow, by the property system, and potentially by XAML processors.
 
 > [!NOTE]
 > Defining the dependency property in the class body is the typical implementation, but it is also possible to define a dependency property in the class static constructor. This approach might make sense if you need more than one line of code to initialize the dependency property.
@@ -118,9 +118,9 @@ Again, by convention, the name of the wrapper property must be the same as the n
 
 - Certain aspects of styles and templates will not work.
 
-- Most tools and designers must rely on the naming conventions to properly serialize [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)], or to provide designer environment assistance at a per-property level.
+- Most tools and designers must rely on the naming conventions to properly serialize XAML, or to provide designer environment assistance at a per-property level.
 
-- The current implementation of the WPF [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] loader bypasses the wrappers entirely, and relies on the naming convention when processing attribute values. For more information, see [XAML Loading and Dependency Properties](xaml-loading-and-dependency-properties.md).
+- The current implementation of the WPF XAML loader bypasses the wrappers entirely, and relies on the naming convention when processing attribute values. For more information, see [XAML Loading and Dependency Properties](xaml-loading-and-dependency-properties.md).
 
 <a name="metadata"></a>
 

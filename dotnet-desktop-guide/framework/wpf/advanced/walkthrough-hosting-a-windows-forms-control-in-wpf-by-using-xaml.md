@@ -9,7 +9,7 @@ ms.assetid: 1aef42cb-4cfb-44b4-9a7a-c02632d3d9c7
 # Walkthrough: Hosting a Windows Forms Control in WPF by Using XAML
 WPF provides many controls with a rich feature set. However, you may sometimes want to use Windows Forms controls on your WPF pages. For example, you may have a substantial investment in existing Windows Forms controls, or you may have a Windows Forms control that provides unique functionality.  
   
- This walkthrough shows you how to host a Windows Forms <xref:System.Windows.Forms.MaskedTextBox?displayProperty=nameWithType> control on a WPF page by using [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)].  
+ This walkthrough shows you how to host a Windows Forms <xref:System.Windows.Forms.MaskedTextBox?displayProperty=nameWithType> control on a WPF page by using XAML.  
   
  For a complete code listing of the tasks shown in this walkthrough, see [Hosting a Windows Forms Control in WPF by Using XAML Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Migration%20and%20Interoperability/HostingWfInWpfWithXaml).
   

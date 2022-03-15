@@ -150,7 +150,7 @@ For more information about <xref:System.Windows.Media.Animation.Storyboard.Targe
 
 ### Part 3 (XAML): Associate the Storyboard with a Trigger
 
-The easiest way to apply and start a <xref:System.Windows.Media.Animation.Storyboard> in [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] is to use an event trigger. This section shows how to associate the <xref:System.Windows.Media.Animation.Storyboard> with a trigger in XAML.
+The easiest way to apply and start a <xref:System.Windows.Media.Animation.Storyboard> in XAML is to use an event trigger. This section shows how to associate the <xref:System.Windows.Media.Animation.Storyboard> with a trigger in XAML.
 
 1. Create a <xref:System.Windows.Media.Animation.BeginStoryboard> object and associate your storyboard with it. A <xref:System.Windows.Media.Animation.BeginStoryboard> is a type of <xref:System.Windows.TriggerAction> that applies and starts a <xref:System.Windows.Media.Animation.Storyboard>.
 
@@ -288,13 +288,13 @@ Assigning a name to a <xref:System.Windows.FrameworkElement> differs from assign
 
 - To make a <xref:System.Windows.FrameworkElement> an animation target, you give it a name by setting its <xref:System.Windows.FrameworkElement.Name%2A> property. In code, you must also use the <xref:System.Windows.FrameworkElement.RegisterName%2A> method to register the element name with the page to which it belongs.
 
-- To make a <xref:System.Windows.Freezable> object an animation target in [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)], you use the [x:Name Directive](/dotnet/desktop/xaml-services/xname-directive) to assign it a name. In code, you just use the <xref:System.Windows.FrameworkElement.RegisterName%2A> method to register the object with the page to which it belongs.
+- To make a <xref:System.Windows.Freezable> object an animation target in XAML, you use the [x:Name Directive](/dotnet/desktop/xaml-services/xname-directive) to assign it a name. In code, you just use the <xref:System.Windows.FrameworkElement.RegisterName%2A> method to register the object with the page to which it belongs.
 
-The sections that follow provide an example of naming an element in [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] and code. For more detailed information about naming and targeting, see the [Storyboards Overview](storyboards-overview.md).
+The sections that follow provide an example of naming an element in XAML and code. For more detailed information about naming and targeting, see the [Storyboards Overview](storyboards-overview.md).
 
 ### Applying and Starting Storyboards
 
-To start a storyboard in [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)], you associate it with an <xref:System.Windows.EventTrigger>. An <xref:System.Windows.EventTrigger> is an object that describes what actions to take when a specified event occurs. One of those actions can be a <xref:System.Windows.Media.Animation.BeginStoryboard> action, which you use to start your storyboard. Event triggers are similar in concept to event handlers because they enable you to specify how your application responds to a particular event. Unlike event handlers, event triggers can be fully described in [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)]; no other code is required.
+To start a storyboard in XAML, you associate it with an <xref:System.Windows.EventTrigger>. An <xref:System.Windows.EventTrigger> is an object that describes what actions to take when a specified event occurs. One of those actions can be a <xref:System.Windows.Media.Animation.BeginStoryboard> action, which you use to start your storyboard. Event triggers are similar in concept to event handlers because they enable you to specify how your application responds to a particular event. Unlike event handlers, event triggers can be fully described in XAML; no other code is required.
 
 To start a <xref:System.Windows.Media.Animation.Storyboard> in code, you can use an <xref:System.Windows.EventTrigger> or use the <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method of the <xref:System.Windows.Media.Animation.Storyboard> class.
 

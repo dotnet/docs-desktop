@@ -184,7 +184,7 @@ The following image shows the complete application, including the control embedd
  [!code-xaml[WpfHostingWindowsFormsControl#101](~/samples/snippets/csharp/VS_Snippets_Wpf/WpfHostingWindowsFormsControl/CSharp/WpfHost/Page1.xaml#101)]
 [!code-xaml[WpfHostingWindowsFormsControl#102](~/samples/snippets/csharp/VS_Snippets_Wpf/WpfHostingWindowsFormsControl/CSharp/WpfHost/Page1.xaml#102)]
 
- The `xmlns` namespace mapping attribute creates a reference to the `MyControls` namespace that contains the hosted control. This mapping enables you to represent `MyControl1` in [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] as `<mcl:MyControl1>`.
+ The `xmlns` namespace mapping attribute creates a reference to the `MyControls` namespace that contains the hosted control. This mapping enables you to represent `MyControl1` in XAML as `<mcl:MyControl1>`.
 
  Two elements in the XAML handle the hosting:
 
@@ -211,7 +211,7 @@ The following image shows the complete application, including the control embedd
  [!code-csharp[WpfHostingWindowsFormsControl#11](~/samples/snippets/csharp/VS_Snippets_Wpf/WpfHostingWindowsFormsControl/CSharp/WpfHost/Page1.xaml.cs#11)]
  [!code-vb[WpfHostingWindowsFormsControl#11](~/samples/snippets/visualbasic/VS_Snippets_Wpf/WpfHostingWindowsFormsControl/VisualBasic/WpfHost/Page1.xaml.vb#11)]
 
- Because the [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] discussed previously added `MyControl1` to the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element's child element collection, you can cast the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element's <xref:System.Windows.Forms.Integration.WindowsFormsHost.Child%2A> to get the reference to `MyControl1`. You can then use that reference to attach an event handler to `OnButtonClick`.
+ Because the XAML discussed previously added `MyControl1` to the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element's child element collection, you can cast the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element's <xref:System.Windows.Forms.Integration.WindowsFormsHost.Child%2A> to get the reference to `MyControl1`. You can then use that reference to attach an event handler to `OnButtonClick`.
 
  In addition to providing a reference to the control itself, <xref:System.Windows.Forms.Integration.WindowsFormsHost> exposes a number of the control's properties, which you can manipulate from the application. The initialization code assigns those values to private global variables for later use in the application.
 

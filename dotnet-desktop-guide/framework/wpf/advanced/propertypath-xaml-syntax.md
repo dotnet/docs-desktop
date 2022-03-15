@@ -8,7 +8,7 @@ ms.assetid: 0e3cdf07-abe6-460a-a9af-3764b4fd707f
 ---
 # PropertyPath XAML Syntax
 
-The <xref:System.Windows.PropertyPath> object supports a complex inline [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] syntax for setting various properties that take the <xref:System.Windows.PropertyPath> type as their value. This topic documents the <xref:System.Windows.PropertyPath> syntax as applied to binding and animation syntaxes.
+The <xref:System.Windows.PropertyPath> object supports a complex inline XAML syntax for setting various properties that take the <xref:System.Windows.PropertyPath> type as their value. This topic documents the <xref:System.Windows.PropertyPath> syntax as applied to binding and animation syntaxes.
 
 <a name="where"></a>
 
@@ -18,7 +18,7 @@ The <xref:System.Windows.PropertyPath> object supports a complex inline [!INCLUD
 
 Primarily, WPF uses <xref:System.Windows.PropertyPath> to describe object-model paths for traversing the properties of an object data source, and to describe the target path for targeted animations.
 
-Some style and template properties such as <xref:System.Windows.Setter.Property%2A?displayProperty=nameWithType> take a qualified property name that superficially resembles a <xref:System.Windows.PropertyPath>. But this is not a true <xref:System.Windows.PropertyPath>; instead it is a qualified *owner.property* string format usage that is enabled by the WPF [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] processor in combination with the type converter for <xref:System.Windows.DependencyProperty>.
+Some style and template properties such as <xref:System.Windows.Setter.Property%2A?displayProperty=nameWithType> take a qualified property name that superficially resembles a <xref:System.Windows.PropertyPath>. But this is not a true <xref:System.Windows.PropertyPath>; instead it is a qualified *owner.property* string format usage that is enabled by the WPF XAML processor in combination with the type converter for <xref:System.Windows.DependencyProperty>.
 
 <a name="databinding_s"></a>
 
@@ -70,9 +70,9 @@ You can specify the type of the index if necessary. For details on this aspect o
 <object property="(ownerType.propertyName)" ... />
 ```
 
-The parentheses indicate that this property in a <xref:System.Windows.PropertyPath> should be constructed using a partial qualification. It can use an XML namespace to find the type with an appropriate mapping. The `ownerType` searches types that a [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] processor has access to, through the <xref:System.Windows.Markup.XmlnsDefinitionAttribute> declarations in each assembly. Most applications have the default XML namespace mapped to the `http://schemas.microsoft.com/winfx/2006/xaml/presentation` namespace, so a prefix is usually only necessary for custom types or types otherwise outside that namespace.  `propertyName` must resolve to be the name of a property existing on the `ownerType`. This syntax is generally used for one of the following cases:
+The parentheses indicate that this property in a <xref:System.Windows.PropertyPath> should be constructed using a partial qualification. It can use an XML namespace to find the type with an appropriate mapping. The `ownerType` searches types that a XAML processor has access to, through the <xref:System.Windows.Markup.XmlnsDefinitionAttribute> declarations in each assembly. Most applications have the default XML namespace mapped to the `http://schemas.microsoft.com/winfx/2006/xaml/presentation` namespace, so a prefix is usually only necessary for custom types or types otherwise outside that namespace.  `propertyName` must resolve to be the name of a property existing on the `ownerType`. This syntax is generally used for one of the following cases:
 
-- The path is specified in [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] that is in a style or template that does not have a specified Target Type. A qualified usage is generally not valid for cases other than this, because in non-style, non-template cases, the property exists on an instance, not a type.
+- The path is specified in XAML that is in a style or template that does not have a specified Target Type. A qualified usage is generally not valid for cases other than this, because in non-style, non-template cases, the property exists on an instance, not a type.
 
 - The property is an attached property.
 

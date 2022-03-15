@@ -190,7 +190,7 @@ ms.assetid: bc208dfe-367d-426a-99de-52b7e7511e81
   
  Many of these commands include a set of default input bindings.  For example, if you specify that your application handles the copy command, you automatically get the keyboard binding "CTRL+C" You also get bindings for other input devices, such as Tablet PC pen gestures and speech information.  
   
- When you reference commands in the various command libraries using WPF WPF [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] processor references at load time).  
+ When you reference commands in the various command libraries using WPF WPF XAML processor references at load time).  
   
 <a name="creating_commands"></a>
 

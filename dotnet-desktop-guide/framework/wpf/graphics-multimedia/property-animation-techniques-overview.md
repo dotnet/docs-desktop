@@ -26,7 +26,7 @@ This topic describes the different approaches for animating properties: storyboa
 
  Because there are many different scenarios for animating properties, WPF provides several approaches for animating properties.  
   
- For each approach, the following table indicates whether it can be used per-instance, in styles, in control templates, or in data templates; whether it can be used in [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)]; and whether the approach enables you to interactively control the animation.  "Per-Instance" refers to the technique of applying an animation or storyboard directly to instances of an object, rather than in a style, control template, or data template.  
+ For each approach, the following table indicates whether it can be used per-instance, in styles, in control templates, or in data templates; whether it can be used in XAML; and whether the approach enables you to interactively control the animation.  "Per-Instance" refers to the technique of applying an animation or storyboard directly to instances of an object, rather than in a style, control template, or data template.  
   
 |Animation technique|Scenarios|Supports XAML|Interactively controllable|  
 |-------------------------|---------------|-------------------|--------------------------------|  
@@ -39,7 +39,7 @@ This topic describes the different approaches for animating properties: storyboa
 
 ## Storyboard Animations  
 
- Use a <xref:System.Windows.Media.Animation.Storyboard> when you want to define and apply your animations in [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)], interactively control your animations after they start, create a complex tree of animations, or animate in a <xref:System.Windows.Style>, <xref:System.Windows.Controls.ControlTemplate> or <xref:System.Windows.DataTemplate>. For an object to be animated by a <xref:System.Windows.Media.Animation.Storyboard>, it must be a <xref:System.Windows.FrameworkElement> or <xref:System.Windows.FrameworkContentElement>, or it must be used to set a <xref:System.Windows.FrameworkElement> or <xref:System.Windows.FrameworkContentElement>. For more details, see the [Storyboards Overview](storyboards-overview.md).  
+ Use a <xref:System.Windows.Media.Animation.Storyboard> when you want to define and apply your animations in XAML, interactively control your animations after they start, create a complex tree of animations, or animate in a <xref:System.Windows.Style>, <xref:System.Windows.Controls.ControlTemplate> or <xref:System.Windows.DataTemplate>. For an object to be animated by a <xref:System.Windows.Media.Animation.Storyboard>, it must be a <xref:System.Windows.FrameworkElement> or <xref:System.Windows.FrameworkContentElement>, or it must be used to set a <xref:System.Windows.FrameworkElement> or <xref:System.Windows.FrameworkContentElement>. For more details, see the [Storyboards Overview](storyboards-overview.md).  
   
  A <xref:System.Windows.Media.Animation.Storyboard> is a special type of container <xref:System.Windows.Media.Animation.Timeline> that provides targeting information for the animations it contains. To animate with a <xref:System.Windows.Media.Animation.Storyboard>, you complete the following three steps.  
   
@@ -51,7 +51,7 @@ This topic describes the different approaches for animating properties: storyboa
   
 4. Begin the <xref:System.Windows.Media.Animation.Storyboard>.  
   
- Beginning a <xref:System.Windows.Media.Animation.Storyboard> applies animations to the properties they animate and starts them. There are two ways to begin a <xref:System.Windows.Media.Animation.Storyboard>: you can use the <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method provided by the <xref:System.Windows.Media.Animation.Storyboard> class, or you can use a <xref:System.Windows.Media.Animation.BeginStoryboard> action. The only way to animate in [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] is to use a <xref:System.Windows.Media.Animation.BeginStoryboard> action. A <xref:System.Windows.Media.Animation.BeginStoryboard> action can be used in an <xref:System.Windows.EventTrigger>, property <xref:System.Windows.Trigger>, or a <xref:System.Windows.DataTrigger>.  
+ Beginning a <xref:System.Windows.Media.Animation.Storyboard> applies animations to the properties they animate and starts them. There are two ways to begin a <xref:System.Windows.Media.Animation.Storyboard>: you can use the <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method provided by the <xref:System.Windows.Media.Animation.Storyboard> class, or you can use a <xref:System.Windows.Media.Animation.BeginStoryboard> action. The only way to animate in XAML is to use a <xref:System.Windows.Media.Animation.BeginStoryboard> action. A <xref:System.Windows.Media.Animation.BeginStoryboard> action can be used in an <xref:System.Windows.EventTrigger>, property <xref:System.Windows.Trigger>, or a <xref:System.Windows.DataTrigger>.  
   
  The following table shows the different places where each <xref:System.Windows.Media.Animation.Storyboard> begin technique is supported: per-instance, style, control template, and data template.  
   

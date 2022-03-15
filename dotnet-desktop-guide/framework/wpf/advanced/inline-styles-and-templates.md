@@ -9,7 +9,7 @@ helpviewer_keywords:
 ms.assetid: 69a1a3f9-acb5-4e2c-9c43-2e376c055ac4
 ---
 # Inline Styles and Templates
-[!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] provides <xref:System.Windows.Style> objects and template objects (<xref:System.Windows.FrameworkTemplate> subclasses) as a way to define the visual appearance of an element in resources, so that they can be used multiple times. For this reason, attributes in [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] that take the types <xref:System.Windows.Style> and <xref:System.Windows.FrameworkTemplate> almost always make resource references to existing styles and templates rather than define new ones inline.  
+XAML that take the types <xref:System.Windows.Style> and <xref:System.Windows.FrameworkTemplate> almost always make resource references to existing styles and templates rather than define new ones inline.  
   
 ## Limitations of Inline Styles and Templates  
  In [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)], style and template properties can technically be set in one of two ways. You can use attribute syntax to reference a style that was defined within a resource, for example `<`*object*`Style="{StaticResource`*myResourceKey*`}" .../>`. Or you can use property element syntax to define a style inline, for instance:  

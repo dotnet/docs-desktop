@@ -125,7 +125,7 @@ ms.assetid: ee1baea0-3611-4e36-9ad6-fcd5205376fb
   
  Starting with Windows Internet Explorer 7, the following security settings specifically for .NET Framework are included:  
   
-- **Loose XAML**. Controls whether Internet Explorer can navigate to and loose [!INCLUDE[TLA2#tla_xaml](../../includes/tla2sharptla-xaml-md.md)] files. (Enable, Disable, and Prompt options).  
+- **Loose XAML**. Controls whether Internet Explorer can navigate to and loose XAML files. (Enable, Disable, and Prompt options).  
   
 - **XAML browser applications**. Controls whether Internet Explorer can navigate to and run XBAPs. (Enable, Disable, and Prompt options).  
   
@@ -256,11 +256,11 @@ ms.assetid: ee1baea0-3611-4e36-9ad6-fcd5205376fb
 
 ## Sandbox Behavior for Loose XAML Files  
 
- Loose [!INCLUDE[TLA2#tla_xaml](../../includes/tla2sharptla-xaml-md.md)] files are markup-only XAML files that do not depend on any code-behind, event handler, or application-specific assembly. When loose [!INCLUDE[TLA2#tla_xaml](../../includes/tla2sharptla-xaml-md.md)] files are navigated to directly from the browser, they are loaded in a security sandbox based on the default Internet zone permission set.  
+ Loose XAML files are markup-only XAML files that do not depend on any code-behind, event handler, or application-specific assembly. When loose XAML files are navigated to directly from the browser, they are loaded in a security sandbox based on the default Internet zone permission set.  
   
- However, the security behavior is different when loose [!INCLUDE[TLA2#tla_xaml](../../includes/tla2sharptla-xaml-md.md)] files are navigated to from either a <xref:System.Windows.Navigation.NavigationWindow> or <xref:System.Windows.Controls.Frame> in a standalone application.  
+ However, the security behavior is different when loose XAML files are navigated to from either a <xref:System.Windows.Navigation.NavigationWindow> or <xref:System.Windows.Controls.Frame> in a standalone application.  
   
- In both cases, the loose [!INCLUDE[TLA2#tla_xaml](../../includes/tla2sharptla-xaml-md.md)] file that is navigated to inherits the permissions of its host application. However, this behavior may be undesirable from a security perspective, particularly if a loose [!INCLUDE[TLA2#tla_xaml](../../includes/tla2sharptla-xaml-md.md)] file was produced by an entity that is either not trusted or unknown. This type of content is known as *external content*, and both <xref:System.Windows.Controls.Frame> and <xref:System.Windows.Navigation.NavigationWindow> can be configured to isolate it when navigated to. Isolation is achieved by setting the **SandboxExternalContent** property to true, as shown in the following examples for <xref:System.Windows.Controls.Frame> and <xref:System.Windows.Navigation.NavigationWindow>:  
+ In both cases, the loose XAML file that is navigated to inherits the permissions of its host application. However, this behavior may be undesirable from a security perspective, particularly if a loose XAML file was produced by an entity that is either not trusted or unknown. This type of content is known as *external content*, and both <xref:System.Windows.Controls.Frame> and <xref:System.Windows.Navigation.NavigationWindow> can be configured to isolate it when navigated to. Isolation is achieved by setting the **SandboxExternalContent** property to true, as shown in the following examples for <xref:System.Windows.Controls.Frame> and <xref:System.Windows.Navigation.NavigationWindow>:  
   
  [!code-xaml[SecurityOverviewSnippets#FrameMARKUP](~/samples/snippets/csharp/VS_Snippets_Wpf/SecurityOverviewSnippets/CS/Window2.xaml#framemarkup)]  
   
@@ -269,7 +269,7 @@ ms.assetid: ee1baea0-3611-4e36-9ad6-fcd5205376fb
  With this setting, external content will be loaded into a process that is separate from the process that is hosting the application. This process is restricted to the default Internet zone permission set, effectively isolating it from the hosting application and the client computer.  
   
 > [!NOTE]
-> Even though navigation to loose [!INCLUDE[TLA2#tla_xaml](../../includes/tla2sharptla-xaml-md.md)] files from either a <xref:System.Windows.Navigation.NavigationWindow> or <xref:System.Windows.Controls.Frame> in a standalone application is implemented based on the WPF browser hosting infrastructure, involving the PresentationHost process, the security level is slightly less than when the content is loaded directly in Internet Explorer on Windows Vista and Windows 7 (which would still be through PresentationHost). This is because a standalone WPF application using a Web browser does not provide the additional Protected Mode security feature of Internet Explorer.  
+> Even though navigation to loose XAML files from either a <xref:System.Windows.Navigation.NavigationWindow> or <xref:System.Windows.Controls.Frame> in a standalone application is implemented based on the WPF browser hosting infrastructure, involving the PresentationHost process, the security level is slightly less than when the content is loaded directly in Internet Explorer on Windows Vista and Windows 7 (which would still be through PresentationHost). This is because a standalone WPF application using a Web browser does not provide the additional Protected Mode security feature of Internet Explorer.  
   
 <a name="BestPractices"></a>
 
