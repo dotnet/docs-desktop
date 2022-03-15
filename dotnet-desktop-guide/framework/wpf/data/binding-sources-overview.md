@@ -13,7 +13,7 @@ In data binding, the binding source object refers to the object you obtain data 
 
 <a name="binding_sources"></a>
 ## Binding Source Types
- [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] data binding supports the following binding source types:
+ Windows Presentation Foundation (WPF) data binding supports the following binding source types:
 
 |Binding Source|Description|
 |--------------------|-----------------|

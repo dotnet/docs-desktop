@@ -13,7 +13,7 @@ helpviewer_keywords:
 ms.assetid: e96f9764-4e3f-4d1c-bf20-3fb890118aae
 ---
 # Globalization and Localization
-[!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] provides extensive support for the development of world-ready applications.  
+Windows Presentation Foundation (WPF) provides extensive support for the development of world-ready applications.  
   
 ## In This Section  
  [WPF Globalization and Localization Overview](wpf-globalization-and-localization-overview.md)  

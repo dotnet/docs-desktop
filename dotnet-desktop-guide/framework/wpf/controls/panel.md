@@ -10,7 +10,7 @@ helpviewer_keywords:
 ms.assetid: 792943c5-335d-49dd-aa5b-ec1582a10088
 ---
 # Panel
-<xref:System.Windows.Controls.Panel> is the base class for all elements that support application layout in [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)].  
+<xref:System.Windows.Controls.Panel> is the base class for all elements that support application layout in Windows Presentation Foundation (WPF).  
   
 ## In This Section  
  [Panels Overview](panels-overview.md)  

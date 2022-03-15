@@ -13,7 +13,7 @@ ms.assetid: 3d864748-cff0-4e63-9b23-d8e5a635b28f
 ---
 # Control authoring overview
 
-The extensibility of the [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] control model greatly reduces the need to create a new control. However, in certain cases you may still need to create a custom control. This topic discusses the features that minimize your need to create a custom control and the different control authoring models in [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)]. This topic also demonstrates how to create a new control.
+The extensibility of the Windows Presentation Foundation (WPF) control model greatly reduces the need to create a new control. However, in certain cases you may still need to create a custom control. This topic discusses the features that minimize your need to create a custom control and the different control authoring models in Windows Presentation Foundation (WPF). This topic also demonstrates how to create a new control.
 
 <a name="when_to_write_a_new_control"></a>
 

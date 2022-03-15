@@ -17,7 +17,7 @@ ms.assetid: 66d7a6d6-e3b6-47bc-8dfe-8a1b26f7d901
 # Shapes and Basic Drawing in WPF Overview
 This topic gives an overview of how to draw with <xref:System.Windows.Shapes.Shape> objects. A <xref:System.Windows.Shapes.Shape> is a type of <xref:System.Windows.UIElement> that enables you to draw a shape to the screen. Because they are UI elements, <xref:System.Windows.Shapes.Shape> objects can be used inside <xref:System.Windows.Controls.Panel> elements and most controls.  
   
- [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] offers several layers of access to graphics and rendering services. At the top layer, <xref:System.Windows.Shapes.Shape> objects are easy to use and provide many useful features, such as layout and participation in the [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] event system.  
+ Windows Presentation Foundation (WPF) offers several layers of access to graphics and rendering services. At the top layer, <xref:System.Windows.Shapes.Shape> objects are easy to use and provide many useful features, such as layout and participation in the Windows Presentation Foundation (WPF) event system.  
 
 <a name="shapes"></a>
 ## Shape Objects  

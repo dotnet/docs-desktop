@@ -20,7 +20,7 @@ ms.assetid: 1a2189ae-13b4-45b0-b12c-8de2e49c29d2
 ---
 # Routed Events Overview
 
-This topic describes the concept of routed events in [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)]. The topic defines routed events terminology, describes how routed events are routed through a tree of elements, summarizes how you handle routed events, and introduces how to create your own custom routed events.
+This topic describes the concept of routed events in Windows Presentation Foundation (WPF). The topic defines routed events terminology, describes how routed events are routed through a tree of elements, summarizes how you handle routed events, and introduces how to create your own custom routed events.
 
 <a name="prerequisites"></a>
 
@@ -36,7 +36,7 @@ You can think about routed events either from a functional or implementation per
 
 Functional definition: A routed event is a type of event that can invoke handlers on multiple listeners in an element tree, rather than just on the object that raised the event.
 
-Implementation definition: A routed event is a CLR event that is backed by an instance of the <xref:System.Windows.RoutedEvent> class and is processed by the [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] event system.
+Implementation definition: A routed event is a CLR event that is backed by an instance of the <xref:System.Windows.RoutedEvent> class and is processed by the Windows Presentation Foundation (WPF) event system.
 
 A typical WPF application contains many elements. Whether created in code or declared in XAML, these elements exist in an element tree relationship to each other. The event route can travel in one of two directions depending on the event definition, but generally the route travels from the source element and then "bubbles" upward through the element tree until it reaches the element tree root (typically a page or a window). This bubbling concept might be familiar to you if you have worked with the DHTML object model previously.
 

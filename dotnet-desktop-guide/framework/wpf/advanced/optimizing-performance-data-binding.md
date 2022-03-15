@@ -7,21 +7,21 @@ helpviewer_keywords:
 ms.assetid: 1506a35d-c009-43db-9f1e-4e230ad5be73
 ---
 # Optimizing Performance: Data Binding
-[!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] data binding provides a simple and consistent way for applications to present and interact with data. Elements can be bound to data from a variety of data sources in the form of CLR objects and XML.  
+Windows Presentation Foundation (WPF) data binding provides a simple and consistent way for applications to present and interact with data. Elements can be bound to data from a variety of data sources in the form of CLR objects and XML.  
   
  This topic provides data binding performance recommendations.  
 
 <a name="HowDataBindingReferencesAreResolved"></a>
 ## How Data Binding References are Resolved  
- Before discussing data binding performance issues, it is worthwhile to explore how the [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] data binding engine resolves object references for binding.  
+ Before discussing data binding performance issues, it is worthwhile to explore how the Windows Presentation Foundation (WPF) data binding engine resolves object references for binding.  
   
- The source of a [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] data binding can be any CLR object. You can bind to properties, sub-properties, or indexers of a CLR object. The binding references are resolved by using either Microsoft .NET Framework reflection or an <xref:System.ComponentModel.ICustomTypeDescriptor>. Here are three methods for resolving object references for binding.  
+ The source of a Windows Presentation Foundation (WPF) data binding can be any CLR object. You can bind to properties, sub-properties, or indexers of a CLR object. The binding references are resolved by using either Microsoft .NET Framework reflection or an <xref:System.ComponentModel.ICustomTypeDescriptor>. Here are three methods for resolving object references for binding.  
   
  The first method involves using reflection. In this case, the <xref:System.Reflection.PropertyInfo> object is used to discover the attributes of the property and provides access to property metadata. When using the <xref:System.ComponentModel.ICustomTypeDescriptor> interface, the data binding engine uses this interface to access the property values. The <xref:System.ComponentModel.ICustomTypeDescriptor> interface is especially useful in cases where the object does not have a static set of properties.  
   
  Property change notifications can be provided either by implementing the <xref:System.ComponentModel.INotifyPropertyChanged> interface or by using the change notifications associated with the <xref:System.ComponentModel.TypeDescriptor>. However, the preferred strategy for implementing property change notifications is to use <xref:System.ComponentModel.INotifyPropertyChanged>.  
   
- If the source object is a CLR object and the source property is a CLR property, the [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] data binding engine has to first use reflection on the source object to get the <xref:System.ComponentModel.TypeDescriptor>, and then query for a <xref:System.ComponentModel.PropertyDescriptor>. This sequence of reflection operations is potentially very time-consuming from a performance perspective.  
+ If the source object is a CLR object and the source property is a CLR property, the Windows Presentation Foundation (WPF) data binding engine has to first use reflection on the source object to get the <xref:System.ComponentModel.TypeDescriptor>, and then query for a <xref:System.ComponentModel.PropertyDescriptor>. This sequence of reflection operations is potentially very time-consuming from a performance perspective.  
   
  The second method for resolving object references involves a CLR source object that implements the <xref:System.ComponentModel.INotifyPropertyChanged> interface, and a source property that is a CLR property. In this case, the data binding engine uses reflection directly on the source type and gets the required property. This is still not the optimal method, but it will cost less in working set requirements than the first method.  
   

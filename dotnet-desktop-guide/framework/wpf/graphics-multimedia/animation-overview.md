@@ -14,7 +14,7 @@ ms.assetid: bd9ce563-725d-4385-87c9-d7ee38cf79ea
 # Animation Overview
 
 <a name="introduction"></a>
-[!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] provides a powerful set of graphics and layout features that enable you to create attractive user interfaces and appealing documents. Animation can make an attractive user interface even more spectacular and usable. By just animating a background color or applying an animated <xref:System.Windows.Media.Transform>, you can create dramatic screen transitions or provide helpful visual cues.
+Windows Presentation Foundation (WPF) provides a powerful set of graphics and layout features that enable you to create attractive user interfaces and appealing documents. Animation can make an attractive user interface even more spectacular and usable. By just animating a background color or applying an animated <xref:System.Windows.Media.Transform>, you can create dramatic screen transitions or provide helpful visual cues.
 
 This overview provides an introduction to the WPF animation and timing system. It focuses on the animation of WPF objects by using storyboards.
 

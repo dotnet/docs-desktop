@@ -11,7 +11,7 @@ ms.assetid: 6ee04a9d-63f0-4f5b-a406-0a8cd4c35729
 ---
 # How to: Set the Width Properties of an Element
 ## Example  
- This example visually shows the differences in rendering behavior among the four width-related properties in [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)].  
+ This example visually shows the differences in rendering behavior among the four width-related properties in Windows Presentation Foundation (WPF).  
   
  The <xref:System.Windows.FrameworkElement> class exposes four properties that describe the width characteristics of an element. These four properties can conflict, and when they do, the value that takes precedence is determined as follows: the <xref:System.Windows.FrameworkElement.MinWidth%2A> value takes precedence over the <xref:System.Windows.FrameworkElement.MaxWidth%2A> value, which in turn takes precedence over the <xref:System.Windows.FrameworkElement.Width%2A> value. A fourth property, <xref:System.Windows.FrameworkElement.ActualWidth%2A>, is read-only, and reports the actual width as determined by interactions with the layout process.  
   

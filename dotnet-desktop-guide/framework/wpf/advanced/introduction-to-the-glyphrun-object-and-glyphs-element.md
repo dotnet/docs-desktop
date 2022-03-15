@@ -15,7 +15,7 @@ This topic describes the <xref:System.Windows.Media.GlyphRun> object and the <xr
 
 <a name="text_glyphrunovw_intro"></a>
 ## Introduction to GlyphRun  
- [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] provides advanced text support including glyph-level markup with direct access to <xref:System.Windows.Documents.Glyphs> for customers who want to intercept and persist text after formatting. These features provide critical support for the different text rendering requirements in each of the following scenarios.  
+ Windows Presentation Foundation (WPF) provides advanced text support including glyph-level markup with direct access to <xref:System.Windows.Documents.Glyphs> for customers who want to intercept and persist text after formatting. These features provide critical support for the different text rendering requirements in each of the following scenarios.  
   
 1. Screen display of fixed-format documents.  
   

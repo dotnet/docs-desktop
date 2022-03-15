@@ -13,7 +13,7 @@ ms.assetid: 94a13b94-cfdf-4b12-a1aa-90cb50c6e9b9
 ---
 # ScrollViewer Overview
 
-Content within a user interface is often larger than a computer screen's display area. The <xref:System.Windows.Controls.ScrollViewer> control provides a convenient way to enable scrolling of content in [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] applications. This topic introduces the <xref:System.Windows.Controls.ScrollViewer> element and provides several usage examples.  
+Content within a user interface is often larger than a computer screen's display area. The <xref:System.Windows.Controls.ScrollViewer> control provides a convenient way to enable scrolling of content in Windows Presentation Foundation (WPF) applications. This topic introduces the <xref:System.Windows.Controls.ScrollViewer> element and provides several usage examples.  
   
 <a name="what_is_a_scrollviewer_element"></a>
 

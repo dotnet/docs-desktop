@@ -14,7 +14,7 @@ The <xref:System.Windows.PropertyPath> object supports a complex inline XAML syn
 
 ## Where PropertyPath Is Used
 
-<xref:System.Windows.PropertyPath> is a common object that is used in several [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] features. Despite using the common <xref:System.Windows.PropertyPath> to convey property path information, the usages for each feature area where <xref:System.Windows.PropertyPath> is used as a type vary. Therefore, it is more practical to document the syntaxes on a per-feature basis.
+<xref:System.Windows.PropertyPath> is a common object that is used in several Windows Presentation Foundation (WPF) features. Despite using the common <xref:System.Windows.PropertyPath> to convey property path information, the usages for each feature area where <xref:System.Windows.PropertyPath> is used as a type vary. Therefore, it is more practical to document the syntaxes on a per-feature basis.
 
 Primarily, WPF uses <xref:System.Windows.PropertyPath> to describe object-model paths for traversing the properties of an object data source, and to describe the target path for targeted animations.
 

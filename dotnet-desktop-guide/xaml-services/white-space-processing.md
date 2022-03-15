@@ -11,7 +11,7 @@ ms.assetid: cc9cc377-7544-4fd0-b65b-117b90bb0b23
 ---
 # White-space processing in XAML
 
-The language rules for XAML state that significant white space must be processed by a XAML processor implementation. This article documents these XAML language rules. It also documents additional white-space handling that is defined by the [!INCLUDE[TLA#tla_winclient](../includes/tlasharptla-winclient-md.md)] implementation of the XAML processor and the XAML writer for serialization.
+The language rules for XAML state that significant white space must be processed by a XAML processor implementation. This article documents these XAML language rules. It also documents additional white-space handling that is defined by the Windows Presentation Foundation (WPF) implementation of the XAML processor and the XAML writer for serialization.
 
 ## White-space definition
 

@@ -26,7 +26,7 @@ The multimedia features in WPF.
 > [!NOTE]
 > Both <xref:System.Windows.Controls.MediaElement> and <xref:System.Windows.Media.MediaPlayer> have similar members. The links in this section refer to the <xref:System.Windows.Controls.MediaElement> class members. Unless specifically noted, members linked to in the <xref:System.Windows.Controls.MediaElement> class can also be found in the <xref:System.Windows.Media.MediaPlayer> class.  
   
- To understand media playback in [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)], an understanding of the different modes in which media can be played is required. Both <xref:System.Windows.Controls.MediaElement> and <xref:System.Windows.Media.MediaPlayer> can be used in two different media modes, independent mode and clock mode. The media mode is determined by the <xref:System.Windows.Controls.MediaElement.Clock%2A> property. When <xref:System.Windows.Controls.MediaElement.Clock%2A> is `null`, the media object is in independent mode. When the <xref:System.Windows.Controls.MediaElement.Clock%2A> is non-null, the media object is in clock mode. By default, media objects are in independent mode.  
+ To understand media playback in Windows Presentation Foundation (WPF), an understanding of the different modes in which media can be played is required. Both <xref:System.Windows.Controls.MediaElement> and <xref:System.Windows.Media.MediaPlayer> can be used in two different media modes, independent mode and clock mode. The media mode is determined by the <xref:System.Windows.Controls.MediaElement.Clock%2A> property. When <xref:System.Windows.Controls.MediaElement.Clock%2A> is `null`, the media object is in independent mode. When the <xref:System.Windows.Controls.MediaElement.Clock%2A> is non-null, the media object is in clock mode. By default, media objects are in independent mode.  
   
 ### Independent Mode  
  In independent mode, the media content drives media playback. Independent mode enables the following options:  
@@ -60,7 +60,7 @@ The multimedia features in WPF.
   
 <a name="mediaelement"></a>
 ## MediaElement Class  
- Adding media to an application is as simple as adding a <xref:System.Windows.Controls.MediaElement> control to the user interface (UI) of the application and providing a <xref:System.Uri> to the media you wish to include. All media types supported by Microsoft Windows Media Player 10 are supported in [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)]. The following example shows a simple usage of the <xref:System.Windows.Controls.MediaElement> in [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)].  
+ Adding media to an application is as simple as adding a <xref:System.Windows.Controls.MediaElement> control to the user interface (UI) of the application and providing a <xref:System.Uri> to the media you wish to include. All media types supported by Microsoft Windows Media Player 10 are supported in Windows Presentation Foundation (WPF). The following example shows a simple usage of the <xref:System.Windows.Controls.MediaElement> in [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)].  
   
  [!code-xaml[MediaElement_snip#SimpleMediaElementUsageWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/MediaElement_snip/CSharp/SimpleUsage.xaml#simplemediaelementusagewholepage)]  
   
@@ -84,7 +84,7 @@ The multimedia features in WPF.
   
  Setting both the <xref:System.Windows.FrameworkElement.Width%2A> and <xref:System.Windows.FrameworkElement.Height%2A> properties will cause the media to stretch to fill the area provided for the <xref:System.Windows.Controls.MediaElement>. To preserve the media's original aspect ratio, either the <xref:System.Windows.FrameworkElement.Width%2A> or <xref:System.Windows.FrameworkElement.Height%2A> property should be set but not both. Setting both the <xref:System.Windows.FrameworkElement.Width%2A> and <xref:System.Windows.FrameworkElement.Height%2A> properties will cause the media to present in a fixed element size that may not be desirable.  
   
- To avoid having a fixed size element which, [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] can preroll the media. This is done by setting the <xref:System.Windows.Controls.MediaElement.LoadedBehavior%2A> to either <xref:System.Windows.Controls.MediaState.Play> or <xref:System.Windows.Controls.MediaState.Pause>. In a <xref:System.Windows.Controls.MediaState.Pause> state, the media will preroll and will present the first frame. In a <xref:System.Windows.Controls.MediaState.Play> state, the media will preroll and begin to play.  
+ To avoid having a fixed size element which, Windows Presentation Foundation (WPF) can preroll the media. This is done by setting the <xref:System.Windows.Controls.MediaElement.LoadedBehavior%2A> to either <xref:System.Windows.Controls.MediaState.Play> or <xref:System.Windows.Controls.MediaState.Pause>. In a <xref:System.Windows.Controls.MediaState.Pause> state, the media will preroll and will present the first frame. In a <xref:System.Windows.Controls.MediaState.Play> state, the media will preroll and begin to play.  
   
 <a name="mediaplayer"></a>
 ## MediaPlayer Class  

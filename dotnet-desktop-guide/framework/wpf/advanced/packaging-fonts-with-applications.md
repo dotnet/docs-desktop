@@ -14,7 +14,7 @@ ms.assetid: db15ee48-4d24-49f5-8b9d-a64460865286
 ---
 # Packaging Fonts with Applications
 
-This topic provides an overview of how to package fonts with your [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] application.  
+This topic provides an overview of how to package fonts with your Windows Presentation Foundation (WPF) application.  
   
 > [!NOTE]
 > As with most types of software, font files are licensed, rather than sold. Licenses that govern the use of fonts vary from vendor to vendor but in general most licenses, including those covering the fonts Microsoft supplies with applications and Windows, do not allow the fonts to be embedded within applications or otherwise redistributed. Therefore, as a developer it is your responsibility to ensure that you have the required license rights for any font you embed within an application or otherwise redistribute.  

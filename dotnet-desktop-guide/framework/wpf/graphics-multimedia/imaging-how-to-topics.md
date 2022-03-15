@@ -9,7 +9,7 @@ helpviewer_keywords:
 ms.assetid: 96834ee4-a5fc-4dd0-9948-b9bbc9437a5c
 ---
 # Imaging How-to Topics
-The topics in this section demonstrate how to use [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] in order to display or alter bitmap images.  
+The topics in this section demonstrate how to use Windows Presentation Foundation (WPF) in order to display or alter bitmap images.  
   
 ## In This Section  
  [Use a BitmapImage in XAML](how-to-use-a-bitmapimage.md)  

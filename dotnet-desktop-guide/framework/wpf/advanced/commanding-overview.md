@@ -18,7 +18,7 @@ ms.assetid: bc208dfe-367d-426a-99de-52b7e7511e81
 ---
 # Commanding Overview
 
-<a name="introduction"></a> Commanding is an input mechanism in [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] which provides input handling at a more semantic level than device input. Examples of commands are the **Copy**, **Cut**, and **Paste** operations found on many applications.  
+<a name="introduction"></a> Commanding is an input mechanism in Windows Presentation Foundation (WPF) which provides input handling at a more semantic level than device input. Examples of commands are the **Copy**, **Cut**, and **Paste** operations found on many applications.  
   
  This overview defines what commands are in WPF, which classes are part of the commanding model, and how to use and create commands in your applications.  
   

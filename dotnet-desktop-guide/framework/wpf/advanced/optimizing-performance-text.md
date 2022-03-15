@@ -28,7 +28,7 @@ This topic provides text rendering performance recommendations.
 
 ## Rendering Text at the Glyph Level
 
-[!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] provides advanced text support including glyph-level markup with direct access to <xref:System.Windows.Documents.Glyphs> for customers who want to intercept and persist text after formatting. These features provide critical support for the different text rendering requirements in each of the following scenarios.
+Windows Presentation Foundation (WPF) provides advanced text support including glyph-level markup with direct access to <xref:System.Windows.Documents.Glyphs> for customers who want to intercept and persist text after formatting. These features provide critical support for the different text rendering requirements in each of the following scenarios.
 
 - Screen display of fixed-format documents.
 
@@ -55,7 +55,7 @@ The following examples show how to define properties for a <xref:System.Windows.
 
 If you have custom control and you want to render glyphs, use the <xref:System.Windows.Media.DrawingContext.DrawGlyphRun%2A> method.
 
-WPF also provides lower-level services for custom text formatting through the use of the <xref:System.Windows.Media.FormattedText> object. The most efficient way of rendering text in [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] is by generating text content at the glyph level using <xref:System.Windows.Documents.Glyphs> and <xref:System.Windows.Media.GlyphRun>. However, the cost of this efficiency is the loss of easy to use rich text formatting, which are built-in features of [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] controls, such as <xref:System.Windows.Controls.TextBlock> and <xref:System.Windows.Documents.FlowDocument>.
+WPF also provides lower-level services for custom text formatting through the use of the <xref:System.Windows.Media.FormattedText> object. The most efficient way of rendering text in Windows Presentation Foundation (WPF) is by generating text content at the glyph level using <xref:System.Windows.Documents.Glyphs> and <xref:System.Windows.Media.GlyphRun>. However, the cost of this efficiency is the loss of easy to use rich text formatting, which are built-in features of Windows Presentation Foundation (WPF) controls, such as <xref:System.Windows.Controls.TextBlock> and <xref:System.Windows.Documents.FlowDocument>.
 
 <a name="FormattedText_Object"></a>
 

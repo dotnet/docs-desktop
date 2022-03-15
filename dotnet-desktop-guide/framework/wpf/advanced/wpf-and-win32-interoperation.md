@@ -11,7 +11,7 @@ ms.assetid: 0ffbde0d-701d-45a3-a6fa-dd71f4d9772e
 ---
 # WPF and Win32 Interoperation
 
-This topic provides an overview of how to interoperate WPF and Win32 code. [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] provides a rich environment for creating applications. However, when you have a substantial investment in Win32 code, it might be more effective to reuse some of that code.
+This topic provides an overview of how to interoperate WPF and Win32 code. Windows Presentation Foundation (WPF) provides a rich environment for creating applications. However, when you have a substantial investment in Win32 code, it might be more effective to reuse some of that code.
 
 <a name="basics"></a>
 

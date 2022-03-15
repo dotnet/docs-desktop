@@ -9,7 +9,7 @@ helpviewer_keywords:
 ms.assetid: 1fbada8e-4867-4ed1-8d97-62c07dad7ebc
 ---
 # Dependency Property Value Precedence
-<a name="introduction"></a> This topic explains how the workings of the [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] property system can affect the value of a dependency property, and describes the precedence by which aspects of the property system apply to the effective value of a property.  
+<a name="introduction"></a> This topic explains how the workings of the Windows Presentation Foundation (WPF) property system can affect the value of a dependency property, and describes the precedence by which aspects of the property system apply to the effective value of a property.  
 
 <a name="prerequisites"></a>
 ## Prerequisites  

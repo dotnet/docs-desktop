@@ -19,7 +19,7 @@ This topic describes how to use <xref:System.Windows.Media.SolidColorBrush>, <xr
 
 ## Painting an Area with a Solid Color
 
-One of the most common operations in any platform is to paint an area with a solid <xref:System.Windows.Media.Color>. To accomplish this task, [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] provides the <xref:System.Windows.Media.SolidColorBrush> class. The following sections describe the different ways to paint with a <xref:System.Windows.Media.SolidColorBrush>.
+One of the most common operations in any platform is to paint an area with a solid <xref:System.Windows.Media.Color>. To accomplish this task, Windows Presentation Foundation (WPF) provides the <xref:System.Windows.Media.SolidColorBrush> class. The following sections describe the different ways to paint with a <xref:System.Windows.Media.SolidColorBrush>.
 
 <a name="solidcolorinxaml"></a>
 

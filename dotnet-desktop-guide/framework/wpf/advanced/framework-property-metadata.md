@@ -11,7 +11,7 @@ Framework property metadata options are reported for the properties of object el
 
 <a name="prerequisites"></a>
 ## Prerequisites  
- This topic assumes that you understand dependency properties from the perspective of a consumer of existing dependency properties on [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] classes, and have read the [Dependency Properties Overview](dependency-properties-overview.md). You should also have read [Dependency Property Metadata](dependency-property-metadata.md).  
+ This topic assumes that you understand dependency properties from the perspective of a consumer of existing dependency properties on Windows Presentation Foundation (WPF) classes, and have read the [Dependency Properties Overview](dependency-properties-overview.md). You should also have read [Dependency Property Metadata](dependency-property-metadata.md).  
   
 <a name="What_Is_Communicated_by_Framework_Property"></a>
 ## What Is Communicated by Framework Property Metadata  

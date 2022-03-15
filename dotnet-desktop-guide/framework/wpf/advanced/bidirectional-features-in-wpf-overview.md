@@ -92,7 +92,7 @@ The following graphic shows another example that uses numbers and arithmetic exp
 
 Users of this application will be disappointed by the output, even though the <xref:System.Windows.FlowDirection> is correct the numbers are not shaped as Arabic numbers should be shaped.
 
-XAML elements can include an XML attribute (`xml:lang`) that defines the language of each element. XAML also supports a XML language principle whereby `xml:lang` values applied to parent elements in the tree are used by child elements. In the previous example, because a language was not defined for the <xref:System.Windows.Documents.Run> element or any of its top level elements, the default `xml:lang` was used, which is `en-US` for XAML. The internal number shaping algorithm of [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] selects numbers in the corresponding language – in this case English. To make the Arabic numbers render correctly `xml:lang` needs to be set.
+XAML elements can include an XML attribute (`xml:lang`) that defines the language of each element. XAML also supports a XML language principle whereby `xml:lang` values applied to parent elements in the tree are used by child elements. In the previous example, because a language was not defined for the <xref:System.Windows.Documents.Run> element or any of its top level elements, the default `xml:lang` was used, which is `en-US` for XAML. The internal number shaping algorithm of Windows Presentation Foundation (WPF) selects numbers in the corresponding language – in this case English. To make the Arabic numbers render correctly `xml:lang` needs to be set.
 
 The following graphic shows the example with `xml:lang` added.
 
@@ -160,7 +160,7 @@ The following graphic shows the output of the previous example with arrows drawn
 
 ![Graphic that illustrates arrows drawn using the Path element.](./media/bidirectional-features-in-wpf-overview/arrows-drawn-path-element.png)
 
-The <xref:System.Windows.Controls.Image> and <xref:System.Windows.Shapes.Path> are two examples of a how UI elements in a specific direction within a container, <xref:System.Windows.FlowDirection> can be used with elements such as <xref:System.Windows.Controls.InkPresenter> which renders ink on a surface, <xref:System.Windows.Media.LinearGradientBrush>, <xref:System.Windows.Media.RadialGradientBrush>. Whenever you need a right to left behavior for your content that mimics a left to right behavior, or vice versa, [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] provides that capability.
+The <xref:System.Windows.Controls.Image> and <xref:System.Windows.Shapes.Path> are two examples of a how UI elements in a specific direction within a container, <xref:System.Windows.FlowDirection> can be used with elements such as <xref:System.Windows.Controls.InkPresenter> which renders ink on a surface, <xref:System.Windows.Media.LinearGradientBrush>, <xref:System.Windows.Media.RadialGradientBrush>. Whenever you need a right to left behavior for your content that mimics a left to right behavior, or vice versa, Windows Presentation Foundation (WPF) provides that capability.
 
 <a name="NumberSubstitution"></a>
 
@@ -170,9 +170,9 @@ Historically, Windows has supported number substitution by allowing the represen
 
 This has allowed applications to process numerical values without the need to convert them from one language to another, for example a user can open an Microsoft Excel spreadsheet in a localized Arabic Windows and see the numbers shaped in Arabic, but open it in a European version of Windows and see European representation of the same numbers. This is also necessary for other symbols such as comma separators and percentage symbol because they usually accompany numbers in the same document.
 
-[!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] continues the same tradition, and adds further support for this feature that allows more user control over when and how substitution is used. While this feature is designed for any language, it is particularly useful in bidirectional content where shaping digits for a specific language is usually a challenge for application developers because of the various cultures an application might run on.
+Windows Presentation Foundation (WPF) continues the same tradition, and adds further support for this feature that allows more user control over when and how substitution is used. While this feature is designed for any language, it is particularly useful in bidirectional content where shaping digits for a specific language is usually a challenge for application developers because of the various cultures an application might run on.
 
-The core property controlling how number substitution works in [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] is the <xref:System.Windows.Media.NumberSubstitution.Substitution%2A> dependency property. The <xref:System.Windows.Media.NumberSubstitution> class specifies how numbers in text are to be displayed. It has three public properties that define its behavior. The following is a summary of each of the properties:
+The core property controlling how number substitution works in Windows Presentation Foundation (WPF) is the <xref:System.Windows.Media.NumberSubstitution.Substitution%2A> dependency property. The <xref:System.Windows.Media.NumberSubstitution> class specifies how numbers in text are to be displayed. It has three public properties that define its behavior. The following is a summary of each of the properties:
 
 **CultureSource:**
 
@@ -202,7 +202,7 @@ This property specifies the type of number substitution to perform. It takes one
 
 - <xref:System.Windows.Media.NumberSubstitutionMethod.Traditional>: Numbers are rendered using the traditional digits for the number culture. For most cultures, this is the same as <xref:System.Windows.Media.NumberSubstitutionMethod.NativeNational>. However, <xref:System.Windows.Media.NumberSubstitutionMethod.NativeNational> results in Latin digits for some Arabic cultures, whereas this value results in Arabic digits for all Arabic cultures.
 
-What do those values mean for a bidirectional content developer? In most cases, the developer might need only to define <xref:System.Windows.FlowDirection> and the language of each textual UI element, for example `Language="ar-SA"` and the <xref:System.Windows.Media.NumberSubstitution> logic takes care of displaying the numbers according to the correct UI. The following example demonstrates using Arabic and English numbers in a [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] application running in an Arabic version of Windows.
+What do those values mean for a bidirectional content developer? In most cases, the developer might need only to define <xref:System.Windows.FlowDirection> and the language of each textual UI element, for example `Language="ar-SA"` and the <xref:System.Windows.Media.NumberSubstitution> logic takes care of displaying the numbers according to the correct UI. The following example demonstrates using Arabic and English numbers in a Windows Presentation Foundation (WPF) application running in an Arabic version of Windows.
 
 [!code-xaml[Numbers#Numbers](~/samples/snippets/csharp/VS_Snippets_Wpf/Numbers/CS/Window1.xaml#numbers)]
 
@@ -216,7 +216,7 @@ The <xref:System.Windows.FlowDirection> was important in this case because setti
 
 In a real application you might need to set the Language programmatically. For example, you want to set the `xml:lang` attribute to be the same as the one used by the system’s UI, or maybe change the language depending on the application state.
 
-If you want to make changes based on the application's state, make use of other features provided by [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)].
+If you want to make changes based on the application's state, make use of other features provided by Windows Presentation Foundation (WPF).
 
 First, set the application component’s `NumberSubstitution.CultureSource="Text"`. Using this setting makes sure that the settings do not come from the UI for text elements that have "User" as the default, such as <xref:System.Windows.Controls.TextBlock>.
 
@@ -257,7 +257,7 @@ The following graphic shows what the window looks like for either programming la
 
 **Using the Substitution Property**
 
-The way number substitution works in [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] depends on both the Language of the text element and its <xref:System.Windows.FlowDirection>. If the <xref:System.Windows.FlowDirection> is left to right, then European digits are rendered. However if it is preceded by Arabic text, or has the language set to "ar" and the <xref:System.Windows.FlowDirection> is <xref:System.Windows.FlowDirection.RightToLeft>, Arabic digits are rendered instead.
+The way number substitution works in Windows Presentation Foundation (WPF) depends on both the Language of the text element and its <xref:System.Windows.FlowDirection>. If the <xref:System.Windows.FlowDirection> is left to right, then European digits are rendered. However if it is preceded by Arabic text, or has the language set to "ar" and the <xref:System.Windows.FlowDirection> is <xref:System.Windows.FlowDirection.RightToLeft>, Arabic digits are rendered instead.
 
 In some cases, however, you might want to create a unified application, for example European digits for all users. Or Arabic digits in <xref:System.Windows.Documents.Table> cells with a specific <xref:System.Windows.Style>. One easy way to do that is using the <xref:System.Windows.Media.NumberSubstitution.Substitution%2A> property.
 

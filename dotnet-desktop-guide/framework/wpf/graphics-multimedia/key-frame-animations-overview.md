@@ -12,7 +12,7 @@ This topic introduces you to key-frame animations. Key-frame animations enable y
   
 <a name="prerequisites"></a>
 ## Prerequisites  
- To understand this overview, you should be familiar with [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] animations and timelines. For an introduction to animations, see the [Animation Overview](animation-overview.md). It also helps to be familiar with From/To/By animations. For more information, see the From/To/By Animations Overview.  
+ To understand this overview, you should be familiar with Windows Presentation Foundation (WPF) animations and timelines. For an introduction to animations, see the [Animation Overview](animation-overview.md). It also helps to be familiar with From/To/By animations. For more information, see the From/To/By Animations Overview.  
   
 <a name="whatisakeyframeanimation"></a>
 ## What is a Key-Frame Animation?  

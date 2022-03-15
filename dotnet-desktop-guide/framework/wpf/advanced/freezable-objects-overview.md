@@ -23,7 +23,7 @@ A <xref:System.Windows.Freezable> is a special type of object that has two state
 
 A <xref:System.Windows.Freezable> provides a <xref:System.Windows.Freezable.Changed> event to notify observers of any modifications to the object. Freezing a <xref:System.Windows.Freezable> can improve its performance, because it no longer needs to spend resources on change notifications. A frozen <xref:System.Windows.Freezable> can also be shared across threads, while an unfrozen <xref:System.Windows.Freezable> cannot.
 
-Although the <xref:System.Windows.Freezable> class has many applications, most <xref:System.Windows.Freezable> objects in [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] are related to the graphics sub-system.
+Although the <xref:System.Windows.Freezable> class has many applications, most <xref:System.Windows.Freezable> objects in Windows Presentation Foundation (WPF) are related to the graphics sub-system.
 
 The <xref:System.Windows.Freezable> class makes it easier to use certain graphics system objects and can help improve application performance. Examples of types that inherit from <xref:System.Windows.Freezable> include the <xref:System.Windows.Media.Brush>, <xref:System.Windows.Media.Transform>, and <xref:System.Windows.Media.Geometry> classes. Because they contain unmanaged resources, the system must monitor these objects for modifications, and then update their corresponding unmanaged resources when there is a change to the original object. Even if you don't actually modify a graphics system object, the system must still spend some of its resources monitoring the object, in case you do change it.
 

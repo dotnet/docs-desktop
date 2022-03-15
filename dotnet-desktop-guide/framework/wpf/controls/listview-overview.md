@@ -22,7 +22,7 @@ The <xref:System.Windows.Controls.ListView> control provides the infrastructure 
   
 <a name="DefiningaListViewView"></a>
 ## Defining a View Mode for a ListView  
- To specify a view mode for the content of a <xref:System.Windows.Controls.ListView> control, you set the <xref:System.Windows.Controls.ListView.View%2A> property. One view mode that [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] provides is <xref:System.Windows.Controls.GridView>, which displays a collection of data items in a table that has customizable columns.  
+ To specify a view mode for the content of a <xref:System.Windows.Controls.ListView> control, you set the <xref:System.Windows.Controls.ListView.View%2A> property. One view mode that Windows Presentation Foundation (WPF) provides is <xref:System.Windows.Controls.GridView>, which displays a collection of data items in a table that has customizable columns.  
   
  The following example shows how to define a <xref:System.Windows.Controls.GridView> for a <xref:System.Windows.Controls.ListView> control that displays employee information.  
   

@@ -13,7 +13,7 @@ helpviewer_keywords:
 ms.assetid: 214da5ef-547a-4cf8-9b07-4aa8a0e52cdd
 ---
 # WPF Content Model
-[!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] is a presentation platform that provides many controls and control-like types whose primary purpose is to display different types of content. To determine which control to use or which control to derive from, you should understand the kinds of objects a particular control can best display.  
+Windows Presentation Foundation (WPF) is a presentation platform that provides many controls and control-like types whose primary purpose is to display different types of content. To determine which control to use or which control to derive from, you should understand the kinds of objects a particular control can best display.  
   
  This topic summarizes the content model for WPF control and control-like types. The content model describes what content can be used in a control. This topic also lists the content properties for each content model. A content property is a property that is used to store the content of the object.  
 

@@ -10,7 +10,7 @@ helpviewer_keywords:
 ms.assetid: 9fba8934-98b7-4af6-82f6-f4ef887f963a
 ---
 # Geometry Overview
-This overview describes how to use the [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] <xref:System.Windows.Media.Geometry> classes to describe shapes. This topic also contrasts the differences between <xref:System.Windows.Media.Geometry> objects and <xref:System.Windows.Shapes.Shape> elements.  
+This overview describes how to use the Windows Presentation Foundation (WPF) <xref:System.Windows.Media.Geometry> classes to describe shapes. This topic also contrasts the differences between <xref:System.Windows.Media.Geometry> objects and <xref:System.Windows.Shapes.Shape> elements.  
 
 <a name="wcpsdk_graphics_geometry_introduction"></a>
 ## What Is a Geometry?  

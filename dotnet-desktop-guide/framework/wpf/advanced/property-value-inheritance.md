@@ -8,7 +8,7 @@ helpviewer_keywords:
 ms.assetid: d7c338f9-f2bf-48ed-832c-7be58ac390e4
 ---
 # Property Value Inheritance
-Property value inheritance is a feature of the [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] property system. Property value inheritance enables child elements in a tree of elements to obtain the value of a particular property from parent elements, inheriting that value as it was set anywhere in the nearest parent element. The parent element might also have obtained its value through property value inheritance, so the system potentially recurses all the way to the page root. Property value inheritance is not the default property system behavior; a property must be established with a particular metadata setting in order to cause that property to initiate property value inheritance on child elements.  
+Property value inheritance is a feature of the Windows Presentation Foundation (WPF) property system. Property value inheritance enables child elements in a tree of elements to obtain the value of a particular property from parent elements, inheriting that value as it was set anywhere in the nearest parent element. The parent element might also have obtained its value through property value inheritance, so the system potentially recurses all the way to the page root. Property value inheritance is not the default property system behavior; a property must be established with a particular metadata setting in order to cause that property to initiate property value inheritance on child elements.  
 
 <a name="Property_Value_Inheritance_is_Containment_Inheritance"></a>
 ## Property Value Inheritance Is Containment Inheritance  

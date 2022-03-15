@@ -12,7 +12,7 @@ ms.assetid: cc844419-1a77-4906-95d9-060d79107fc7
 ---
 # Walkthrough: Enabling Drag and Drop on a User Control
 
-This walkthrough demonstrates how to create a custom user control that can participate in drag-and-drop data transfer in [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)].
+This walkthrough demonstrates how to create a custom user control that can participate in drag-and-drop data transfer in Windows Presentation Foundation (WPF).
 
 In this walkthrough, you will create a custom WPF <xref:System.Windows.Controls.UserControl> that represents a circle shape. You will implement functionality on the control to enable data transfer through drag-and-drop. For example, if you drag from one Circle control to another, the Fill color data is copied from the source Circle to the target. If you drag from a Circle control to a <xref:System.Windows.Controls.TextBox>, the string representation of the Fill color is copied to the <xref:System.Windows.Controls.TextBox>. You will also create a small application that contains two panel controls and a <xref:System.Windows.Controls.TextBox> to test the drag-and-drop functionality. You will write code that enables the panels to process dropped Circle data, which will enable you to move or copy Circles from the Children collection of one panel to the other.
 

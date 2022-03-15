@@ -24,7 +24,7 @@ XAML that take the types <xref:System.Windows.Style> and <xref:System.Windows.Fr
   
  `</` *object* `>`  
   
- The attribute usage is much more common. A style that is defined inline and not defined in resources is necessarily scoped to the containing element only, and cannot be re-used as easily because it has no resource key. In general a resource-defined style is more versatile and useful, and is more in keeping with the general [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] programming model principle of separating program logic in code from design in markup.  
+ The attribute usage is much more common. A style that is defined inline and not defined in resources is necessarily scoped to the containing element only, and cannot be re-used as easily because it has no resource key. In general a resource-defined style is more versatile and useful, and is more in keeping with the general Windows Presentation Foundation (WPF) programming model principle of separating program logic in code from design in markup.  
   
  Usually there is no reason to set a style or template inline, even if you only intend to use that style or template in that location. Most elements that can take a style or template also support a content property and a content model. If you are only using whatever logical tree you create through styling or templating once, it would be even easier to just fill that content property with the equivalent child elements in direct markup. This would bypass the style and template mechanisms altogether.  
   
