@@ -140,7 +140,7 @@ Order of DrawingGroup operations
   
  If you were to enumerate the visual objects that comprise the <xref:System.Windows.Controls.StackPanel> element in the markup example, you would find the hierarchy of visual objects illustrated below:  
   
- ![Diagram of visual tree hierarchy](./media/wpf-graphics-rendering-overview/visual-tree-hierarchy.gif)  
+ ![Diagram of visual tree hierarchy of a StackPanel control.](./media/wpf-graphics-rendering-overview/visual-tree-hierarchy.gif)  
   
 ### Rendering Order  
  The visual tree determines the rendering order of WPF visual and drawing objects. The order of traversal starts with the root visual, which is the top-most node in the visual tree. The root visual’s children are then traversed, left to right. If a visual has children, its children are traversed before the visual’s siblings. This means that the content of a child visual is rendered in front of the visual's own content.  

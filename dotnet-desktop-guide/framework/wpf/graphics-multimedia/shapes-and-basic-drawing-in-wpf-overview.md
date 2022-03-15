@@ -89,7 +89,7 @@ Data="M 100,200 C 100,25 400,350 400,175 H 280" />
   
  The following image shows a rendered <xref:System.Windows.Shapes.Path>.  
   
- ![Path illustration](./media/shape-ovw-path.PNG "shape_ovw_path")  
+ ![A second Path illustration.](./media/shape-ovw-path.PNG "shape_ovw_path")  
   
  The <xref:System.Windows.Shapes.Path.Data%2A> attribute string begins with the "moveto" command, indicated by M, which establishes a start point for the path in the coordinate system of the <xref:System.Windows.Controls.Canvas>. <xref:System.Windows.Shapes.Path> data parameters are case-sensitive. The capital M indicates an absolute location for the new current point. A lowercase m would indicate relative coordinates. The first segment is a cubic Bezier curve beginning at (100,200) and ending at (400,175), drawn using the two control points (100,25) and (400,350). This segment is indicated by the C command in the <xref:System.Windows.Shapes.Path.Data%2A> attribute string. Again, the capital C indicates an absolute path; the lowercase c would indicate a relative path.  
   
