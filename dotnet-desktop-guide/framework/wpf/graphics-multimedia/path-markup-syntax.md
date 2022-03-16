@@ -10,7 +10,7 @@ helpviewer_keywords:
 ms.assetid: b8586241-a02d-486e-9223-e1e98e047f41
 ---
 # Path Markup Syntax
-Paths are discussed in [Shapes and Basic Drawing in WPF Overview](shapes-and-basic-drawing-in-wpf-overview.md) and the [Geometry Overview](geometry-overview.md), however, this topic describes in detail the powerful and complex mini-language you can use to specify path geometries more compactly using [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)].  
+Paths are discussed in [Shapes and Basic Drawing in WPF Overview](shapes-and-basic-drawing-in-wpf-overview.md) and the [Geometry Overview](geometry-overview.md), however, this topic describes in detail the powerful and complex mini-language you can use to specify path geometries more compactly using Extensible Application Markup Language (XAML).  
   
 <a name="prerequisites"></a>
 ## Prerequisites  
@@ -18,7 +18,7 @@ Paths are discussed in [Shapes and Basic Drawing in WPF Overview](shapes-and-bas
   
 <a name="abouthisdocument"></a>
 ## StreamGeometry and PathFigureCollection Mini-Languages  
- [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] provides two classes that provide mini-languages for describing geometric paths: <xref:System.Windows.Media.StreamGeometry> and <xref:System.Windows.Media.PathFigureCollection>.  
+ WPF provides two classes that provide mini-languages for describing geometric paths: <xref:System.Windows.Media.StreamGeometry> and <xref:System.Windows.Media.PathFigureCollection>.  
   
 - You use the <xref:System.Windows.Media.StreamGeometry> mini-language when setting a property of type <xref:System.Windows.Media.Geometry>, such as the <xref:System.Windows.UIElement.Clip%2A> property of a <xref:System.Windows.UIElement> or the <xref:System.Windows.Shapes.Path.Data%2A> property of a <xref:System.Windows.Shapes.Path> element. The following example uses attribute syntax to create a <xref:System.Windows.Media.StreamGeometry>.  
   
@@ -38,13 +38,13 @@ Paths are discussed in [Shapes and Basic Drawing in WPF Overview](shapes-and-bas
  Two numbers don’t actually have to be separated by a comma or white space, but this can only be done when the resulting string is unambiguous. For instance, `2..3` is actually two numbers: "2." And ".3". Similarly, `2-3` is "2" and "-3". Spaces are not required before or after commands, either.  
   
 ### Syntax  
- The [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)] attribute usage syntax for a <xref:System.Windows.Media.StreamGeometry> is composed of an optional <xref:System.Windows.Media.FillRule> value and one or more figure descriptions.  
+ The Extensible Application Markup Language (XAML) attribute usage syntax for a <xref:System.Windows.Media.StreamGeometry> is composed of an optional <xref:System.Windows.Media.FillRule> value and one or more figure descriptions.  
   
 |StreamGeometry XAML Attribute Usage|  
 |-----------------------------------------|  
 |`<` *object* *property* `="`[ `fillRule`] `figureDescription`[ `figureDescription`]* `" ... />`|  
   
- The [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)] attribute usage syntax for a <xref:System.Windows.Media.PathFigureCollection> is composed of one or more figure descriptions.  
+ The Extensible Application Markup Language (XAML) attribute usage syntax for a <xref:System.Windows.Media.PathFigureCollection> is composed of one or more figure descriptions.  
   
 |PathFigureCollection XAML Attribute Usage|  
 |-----------------------------------------------|  

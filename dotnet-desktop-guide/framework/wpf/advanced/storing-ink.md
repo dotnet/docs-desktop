@@ -16,7 +16,7 @@ ms.assetid: a3f6d16b-d682-4680-9965-907332b4d2b8
 The <xref:System.Windows.Ink.StrokeCollection.Save%2A> methods provide support for storing ink as Ink Serialized Format (ISF). Constructors for the <xref:System.Windows.Ink.StrokeCollection> class provide support for reading ink data.  
   
 ## Ink Storage and Retrieval  
- This section discusses how to store and retrieve ink in the [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] platform.  
+ This section discusses how to store and retrieve ink in the WPF platform.  
   
  The following example implements a button-click event handler that presents the user with a File Save dialog box and saves the ink from an <xref:System.Windows.Controls.InkCanvas> out to a file.  
   

@@ -16,7 +16,7 @@ ms.assetid: 02e055a0-54df-499a-b8b6-ab6ff7535cff
 The following examples show how to load an <xref:System.Windows.Controls.Image> as a thumbnail to conserve application memory.  
   
 ## Set the DecodePixelWidth property in XAML
- The following example sets the <xref:System.Windows.Media.Imaging.BitmapImage.DecodePixelWidth%2A> property of a <xref:System.Windows.Media.Imaging.BitmapImage> in [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)] to reduce the memory required to load the image.  
+ The following example sets the <xref:System.Windows.Media.Imaging.BitmapImage.DecodePixelWidth%2A> property of a <xref:System.Windows.Media.Imaging.BitmapImage> in Extensible Application Markup Language (XAML) to reduce the memory required to load the image.  
   
  [!code-xaml[ImageElementExample_snip#ImageSimpleExampleInlineMarkup](~/samples/snippets/csharp/VS_Snippets_Wpf/ImageElementExample_snip/CSharp/ImageSimpleExample.xaml#imagesimpleexampleinlinemarkup)]  
   

@@ -9,7 +9,7 @@ helpviewer_keywords:
 ms.assetid: 4f091835-28d1-498c-b660-9b3acf34ed13
 ---
 # 3D Graphics How-to Topics
-The topics in this section demonstrate how to use 3D graphics in [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] applications.  
+The topics in this section demonstrate how to use 3D graphics in Windows Presentation Foundation (WPF) applications.  
   
 ## In This Section  
  [Create a 3D Scene](how-to-create-a-3-d-scene.md)  

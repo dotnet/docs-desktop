@@ -15,13 +15,13 @@ This topic describes the <xref:System.Windows.Media.GlyphRun> object and the <xr
 
 <a name="text_glyphrunovw_intro"></a>
 ## Introduction to GlyphRun  
- [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] provides advanced text support including glyph-level markup with direct access to <xref:System.Windows.Documents.Glyphs> for customers who want to intercept and persist text after formatting. These features provide critical support for the different text rendering requirements in each of the following scenarios.  
+ Windows Presentation Foundation (WPF) provides advanced text support including glyph-level markup with direct access to <xref:System.Windows.Documents.Glyphs> for customers who want to intercept and persist text after formatting. These features provide critical support for the different text rendering requirements in each of the following scenarios.  
   
 1. Screen display of fixed-format documents.  
   
 2. Print scenarios.  
   
-    - [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)] as a device printer language.  
+    - Extensible Application Markup Language (XAML) as a device printer language.  
   
     - Microsoft XPS Document Writer.  
   
@@ -32,7 +32,7 @@ This topic describes the <xref:System.Windows.Media.GlyphRun> object and the <xr
 3. Fixed-format document representation, including clients for previous versions of Windows and other computing devices.  
   
 > [!NOTE]
-> <xref:System.Windows.Documents.Glyphs> and <xref:System.Windows.Media.GlyphRun> are designed for fixed-format document presentation and print scenarios. [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] provides several elements for general layout and [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)] scenarios such as <xref:System.Windows.Controls.Label> and <xref:System.Windows.Controls.TextBlock>. For more information on layout and [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] scenarios, see the [Typography in WPF](typography-in-wpf.md).  
+> <xref:System.Windows.Documents.Glyphs> and <xref:System.Windows.Media.GlyphRun> are designed for fixed-format document presentation and print scenarios. UI scenarios, see the [Typography in WPF](typography-in-wpf.md).  
   
 <a name="text_glyphrunovw_glyphrunobject"></a>
 ## The GlyphRun Object  
@@ -40,11 +40,11 @@ This topic describes the <xref:System.Windows.Media.GlyphRun> object and the <xr
   
  <xref:System.Windows.Media.GlyphRun> includes both font details such as glyph <xref:System.Windows.Documents.Glyphs.Indices%2A> and individual glyph positions. It also includes the original Unicode code points the run was generated from, character-to-glyph buffer offset mapping information, and per-character and per-glyph flags.  
   
- <xref:System.Windows.Media.GlyphRun> has a corresponding high-level <xref:System.Windows.FrameworkElement>, <xref:System.Windows.Documents.Glyphs>. <xref:System.Windows.Documents.Glyphs> can be used in the element tree and in [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] markup to represent <xref:System.Windows.Media.GlyphRun> output.  
+ <xref:System.Windows.Media.GlyphRun> has a corresponding high-level <xref:System.Windows.FrameworkElement>, <xref:System.Windows.Documents.Glyphs>. <xref:System.Windows.Documents.Glyphs> can be used in the element tree and in XAML markup to represent <xref:System.Windows.Media.GlyphRun> output.  
   
 <a name="text_glyphrunovw_glyphselement"></a>
 ## The Glyphs Element  
- The <xref:System.Windows.Documents.Glyphs> element represents the output of a <xref:System.Windows.Media.GlyphRun> in [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)]. The following markup syntax is used to describe the <xref:System.Windows.Documents.Glyphs> element.  
+ The <xref:System.Windows.Documents.Glyphs> element represents the output of a <xref:System.Windows.Media.GlyphRun> in XAML. The following markup syntax is used to describe the <xref:System.Windows.Documents.Glyphs> element.  
   
  [!code-xaml[GlyphsOvwSample1#1](~/samples/snippets/csharp/VS_Snippets_Wpf/GlyphsOvwSample1/CS/default.xaml#1)]  
   
@@ -83,7 +83,7 @@ This topic describes the <xref:System.Windows.Media.GlyphRun> object and the <xr
   
 <a name="text_glyphrunovw_glyphsmarkup"></a>
 ## Glyphs Markup  
- The following code example shows how to use various properties of the <xref:System.Windows.Documents.Glyphs> element in [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)].  
+ The following code example shows how to use various properties of the <xref:System.Windows.Documents.Glyphs> element in XAML.  
   
  [!code-xaml[GlyphsOvwSamp2#1](~/samples/snippets/csharp/VS_Snippets_Wpf/GlyphsOvwSamp2/CS/default.xaml#1)]  
   

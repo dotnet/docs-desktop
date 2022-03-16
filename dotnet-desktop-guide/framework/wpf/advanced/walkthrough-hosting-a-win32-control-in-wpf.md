@@ -54,7 +54,7 @@ Windows Presentation Foundation (WPF) provides a rich environment for creating a
   
 <a name="page_layout"></a>
 ## Implement the Page Layout  
- The layout for the WPF page that hosts the ListBox Control consists of two regions. The left side of the page hosts several WPF controls that provide a [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)] that allows you to manipulate the Win32 control. The upper right corner of the page has a square region for the hosted ListBox Control.  
+ The layout for the WPF page that hosts the ListBox Control consists of two regions. The left side of the page hosts several WPF controls that provide a user interface (UI) that allows you to manipulate the Win32 control. The upper right corner of the page has a square region for the hosted ListBox Control.  
   
  The code to implement this layout is quite simple. The root element is a <xref:System.Windows.Controls.DockPanel> that has two child elements. The first is a <xref:System.Windows.Controls.Border> element that hosts the ListBox Control. It occupies a 200x200 square in the upper right corner of the page. The second is a <xref:System.Windows.Controls.StackPanel> element that contains a set of WPF controls that display information and allow you to manipulate the ListBox Control by setting exposed interoperation properties. For each of the elements that are children of the <xref:System.Windows.Controls.StackPanel>, see the reference material for the various elements used for details on what these elements are or what they do, these are listed in the example code below but will not be explained here (the basic interoperation model does not require any of them, they are provided to add some interactivity to the sample).  
   

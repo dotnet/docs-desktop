@@ -17,7 +17,7 @@ This example shows how to crop an image using <xref:System.Windows.Media.Imaging
   
 ## Example  
 
- The following [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)] defines resources used within the samples below.  
+ The following Extensible Application Markup Language (XAML) defines resources used within the samples below.  
   
  [!code-xaml[imageelementexample#CroppedXAML1](~/samples/snippets/csharp/VS_Snippets_Wpf/ImageElementExample/CSharp/CroppedImageExample.xaml#croppedxaml1)]  
   

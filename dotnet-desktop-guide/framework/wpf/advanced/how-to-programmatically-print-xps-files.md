@@ -11,7 +11,7 @@ ms.assetid: 0b1c0a3f-b19e-43d6-bcc9-eb3ec4e555ad
 ---
 # How to: Programmatically Print XPS Files
 
-You can use one overload of the <xref:System.Printing.PrintQueue.AddJob%2A> method to print XML Paper Specification (XPS) files without opening a <xref:System.Windows.Controls.PrintDialog> or, in principle, any [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)] at all.
+You can use one overload of the <xref:System.Printing.PrintQueue.AddJob%2A> method to print XML Paper Specification (XPS) files without opening a <xref:System.Windows.Controls.PrintDialog> or, in principle, any user interface (UI) at all.
 
 You can also print XPS files using the many <xref:System.Windows.Xps.XpsDocumentWriter.Write%2A?displayProperty=nameWithType> and <xref:System.Windows.Xps.XpsDocumentWriter.WriteAsync%2A?displayProperty=nameWithType> methods. For more information, see [Printing an XPS Document](/previous-versions/dotnet/netframework-3.5/ms771525(v=vs.90)).
 
@@ -29,7 +29,7 @@ The main steps to using the three-parameter <xref:System.Printing.PrintQueue.Add
 
 4. Call the method, specifying a job name, the file to be printed, and a <xref:System.Boolean> flag indicating whether or not the printer is an XPSDrv printer.
 
-The example below shows how to batch print all XPS files in a directory. Although the application prompts the user to specify the directory, the three-parameter <xref:System.Printing.PrintQueue.AddJob%28System.String%2CSystem.String%2CSystem.Boolean%29> method does not require a [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)]. It can be used in any code path where you have an XPS file name and path that you can pass to it.
+The example below shows how to batch print all XPS files in a directory. Although the application prompts the user to specify the directory, the three-parameter <xref:System.Printing.PrintQueue.AddJob%28System.String%2CSystem.String%2CSystem.Boolean%29> method does not require a user interface (UI). It can be used in any code path where you have an XPS file name and path that you can pass to it.
 
 The three-parameter <xref:System.Printing.PrintQueue.AddJob%28System.String%2CSystem.String%2CSystem.Boolean%29> overload of <xref:System.Printing.PrintQueue.AddJob%2A> must run in a single thread apartment whenever the <xref:System.Boolean> parameter is `false`, which it must be when a non-XPSDrv printer is being used. However, the default apartment state for .NET is multiple thread. This default must be reversed since the example assumes a non-XPSDrv printer.
 

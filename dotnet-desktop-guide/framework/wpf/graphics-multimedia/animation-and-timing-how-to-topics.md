@@ -9,7 +9,7 @@ helpviewer_keywords:
 ms.assetid: 587e36f6-1957-424e-9d89-c43724f26d84
 ---
 # Animation and Timing How-to Topics
-The following topics demonstrate how to use the [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] animation and timing system in your applications.  
+The following topics demonstrate how to use the Windows Presentation Foundation (WPF) animation and timing system in your applications.  
   
 ## In This Section  
  [Accelerate or Decelerate an Animation](how-to-accelerate-or-decelerate-an-animation.md)  

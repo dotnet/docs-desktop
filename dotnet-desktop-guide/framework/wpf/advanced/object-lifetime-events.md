@@ -26,15 +26,15 @@ helpviewer_keywords:
 ms.assetid: face6fc7-465b-4502-bfe5-e88d2e729a78
 ---
 # Object Lifetime Events
-This topic describes the specific [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] events that signify stages in an object lifetime of creation, use, and destruction.  
+This topic describes the specific WPF events that signify stages in an object lifetime of creation, use, and destruction.  
 
 <a name="prerequisites"></a>
 ## Prerequisites  
- This topic assumes that you understand dependency properties from the perspective of a consumer of existing dependency properties on [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] classes, and have read the [Dependency Properties Overview](dependency-properties-overview.md) topic. In order to follow the examples in this topic, you should also understand [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)] (see [XAML in WPF](xaml-in-wpf.md)) and know how to write [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] applications.  
+ This topic assumes that you understand dependency properties from the perspective of a consumer of existing dependency properties on WPF applications.  
   
 <a name="intro"></a>
 ## Object Lifetime Events  
- All objects in Microsoft .NET Framework managed code go through a similar set of stages of life, creation, use, and destruction. Many objects also have a finalization stage of life that occurs as part of the destruction phase. [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] objects, more specifically the visual objects that [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] identifies as elements, also have a set of common stages of object life. The [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] programming and application models expose these stages as a series of events. There are four main types of objects in [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] with respect to lifetime events; elements in general, window elements, navigation hosts, and application objects. Windows and navigation hosts are also within the larger grouping of visual objects (elements). This topic describes the lifetime events that are common to all elements and then introduces the more specific ones that apply to application definitions, windows or navigation hosts.  
+ All objects in Microsoft .NET Framework managed code go through a similar set of stages of life, creation, use, and destruction. Many objects also have a finalization stage of life that occurs as part of the destruction phase. WPF objects, more specifically the visual objects that WPF identifies as elements, also have a set of common stages of object life. The WPF programming and application models expose these stages as a series of events. There are four main types of objects in WPF with respect to lifetime events; elements in general, window elements, navigation hosts, and application objects. Windows and navigation hosts are also within the larger grouping of visual objects (elements). This topic describes the lifetime events that are common to all elements and then introduces the more specific ones that apply to application definitions, windows or navigation hosts.  
   
 <a name="common_events"></a>
 ## Common Lifetime Events for Elements  

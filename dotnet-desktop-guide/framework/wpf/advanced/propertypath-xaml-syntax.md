@@ -8,23 +8,23 @@ ms.assetid: 0e3cdf07-abe6-460a-a9af-3764b4fd707f
 ---
 # PropertyPath XAML Syntax
 
-The <xref:System.Windows.PropertyPath> object supports a complex inline [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] syntax for setting various properties that take the <xref:System.Windows.PropertyPath> type as their value. This topic documents the <xref:System.Windows.PropertyPath> syntax as applied to binding and animation syntaxes.
+The <xref:System.Windows.PropertyPath> object supports a complex inline XAML syntax for setting various properties that take the <xref:System.Windows.PropertyPath> type as their value. This topic documents the <xref:System.Windows.PropertyPath> syntax as applied to binding and animation syntaxes.
 
 <a name="where"></a>
 
 ## Where PropertyPath Is Used
 
-<xref:System.Windows.PropertyPath> is a common object that is used in several [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] features. Despite using the common <xref:System.Windows.PropertyPath> to convey property path information, the usages for each feature area where <xref:System.Windows.PropertyPath> is used as a type vary. Therefore, it is more practical to document the syntaxes on a per-feature basis.
+<xref:System.Windows.PropertyPath> is a common object that is used in several Windows Presentation Foundation (WPF) features. Despite using the common <xref:System.Windows.PropertyPath> to convey property path information, the usages for each feature area where <xref:System.Windows.PropertyPath> is used as a type vary. Therefore, it is more practical to document the syntaxes on a per-feature basis.
 
-Primarily, [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] uses <xref:System.Windows.PropertyPath> to describe object-model paths for traversing the properties of an object data source, and to describe the target path for targeted animations.
+Primarily, WPF uses <xref:System.Windows.PropertyPath> to describe object-model paths for traversing the properties of an object data source, and to describe the target path for targeted animations.
 
-Some style and template properties such as <xref:System.Windows.Setter.Property%2A?displayProperty=nameWithType> take a qualified property name that superficially resembles a <xref:System.Windows.PropertyPath>. But this is not a true <xref:System.Windows.PropertyPath>; instead it is a qualified *owner.property* string format usage that is enabled by the WPF [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] processor in combination with the type converter for <xref:System.Windows.DependencyProperty>.
+Some style and template properties such as <xref:System.Windows.Setter.Property%2A?displayProperty=nameWithType> take a qualified property name that superficially resembles a <xref:System.Windows.PropertyPath>. But this is not a true <xref:System.Windows.PropertyPath>; instead it is a qualified *owner.property* string format usage that is enabled by the WPF XAML processor in combination with the type converter for <xref:System.Windows.DependencyProperty>.
 
 <a name="databinding_s"></a>
 
 ## PropertyPath for Objects in Data Binding
 
-Data binding is a [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] feature whereby you can bind to the target value of any dependency property. However, the source of such a data binding need not be a dependency property; it can be any property type that is recognized by the applicable data provider. Property paths are particularly used for the <xref:System.Windows.Data.ObjectDataProvider>, which is used for obtaining binding sources from common language runtime (CLR) objects and their properties.
+Data binding is a WPF feature whereby you can bind to the target value of any dependency property. However, the source of such a data binding need not be a dependency property; it can be any property type that is recognized by the applicable data provider. Property paths are particularly used for the <xref:System.Windows.Data.ObjectDataProvider>, which is used for obtaining binding sources from common language runtime (CLR) objects and their properties.
 
 Note that data binding to XML does not use <xref:System.Windows.PropertyPath>, because it does not use <xref:System.Windows.Data.Binding.Path%2A> in the <xref:System.Windows.Data.Binding>. Instead, you use <xref:System.Windows.Data.Binding.XPath%2A> and specify valid XPath syntax into the XML Document Object Model (DOM) of the data. <xref:System.Windows.Data.Binding.XPath%2A> is also specified as a string, but is not documented here; see [Bind to XML Data Using an XMLDataProvider and XPath Queries](../data/how-to-bind-to-xml-data-using-an-xmldataprovider-and-xpath-queries.md).
 
@@ -70,9 +70,9 @@ You can specify the type of the index if necessary. For details on this aspect o
 <object property="(ownerType.propertyName)" ... />
 ```
 
-The parentheses indicate that this property in a <xref:System.Windows.PropertyPath> should be constructed using a partial qualification. It can use an XML namespace to find the type with an appropriate mapping. The `ownerType` searches types that a [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] processor has access to, through the <xref:System.Windows.Markup.XmlnsDefinitionAttribute> declarations in each assembly. Most applications have the default XML namespace mapped to the `http://schemas.microsoft.com/winfx/2006/xaml/presentation` namespace, so a prefix is usually only necessary for custom types or types otherwise outside that namespace.  `propertyName` must resolve to be the name of a property existing on the `ownerType`. This syntax is generally used for one of the following cases:
+The parentheses indicate that this property in a <xref:System.Windows.PropertyPath> should be constructed using a partial qualification. It can use an XML namespace to find the type with an appropriate mapping. The `ownerType` searches types that a XAML processor has access to, through the <xref:System.Windows.Markup.XmlnsDefinitionAttribute> declarations in each assembly. Most applications have the default XML namespace mapped to the `http://schemas.microsoft.com/winfx/2006/xaml/presentation` namespace, so a prefix is usually only necessary for custom types or types otherwise outside that namespace.  `propertyName` must resolve to be the name of a property existing on the `ownerType`. This syntax is generally used for one of the following cases:
 
-- The path is specified in [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] that is in a style or template that does not have a specified Target Type. A qualified usage is generally not valid for cases other than this, because in non-style, non-template cases, the property exists on an instance, not a type.
+- The path is specified in XAML that is in a style or template that does not have a specified Target Type. A qualified usage is generally not valid for cases other than this, because in non-style, non-template cases, the property exists on an instance, not a type.
 
 - The property is an attached property.
 
@@ -198,7 +198,7 @@ For instance, the <xref:System.Windows.Controls.Panel.Background%2A> property of
 <animation Storyboard.TargetProperty="(ownerType.propertyName)" ... />
 ```
 
-The parentheses indicate that this property in a <xref:System.Windows.PropertyPath> should be constructed using a partial qualification. It can use an XML namespace to find the type. The `ownerType` searches types that a [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] processor has access to, through the <xref:System.Windows.Markup.XmlnsDefinitionAttribute> declarations in each assembly. Most applications have the default XML namespace mapped to the `http://schemas.microsoft.com/winfx/2006/xaml/presentation` namespace, so a prefix is usually only necessary for custom types or types otherwise outside that namespace. `propertyName` must resolve to be the name of a property existing on the `ownerType`. The property specified as `propertyName` must be a <xref:System.Windows.DependencyProperty>. (All [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] attached properties are implemented as dependency properties, so this issue is only of concern for custom attached properties.)
+The parentheses indicate that this property in a <xref:System.Windows.PropertyPath> should be constructed using a partial qualification. It can use an XML namespace to find the type. The `ownerType` searches types that a WPF attached properties are implemented as dependency properties, so this issue is only of concern for custom attached properties.)
 
 <a name="indexanim"></a>
 

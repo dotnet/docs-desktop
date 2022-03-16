@@ -16,7 +16,7 @@ ms.assetid: c771a0b8-c6b4-4240-aecd-a21d0ba51a2e
 This example shows how to position the cursor at the beginning or end of the text contents of a <xref:System.Windows.Controls.TextBox> control.  
   
 ## Define a TextBox control
- The following [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)] code describes a <xref:System.Windows.Controls.TextBox> control and assigns it a Name.  
+ The following Extensible Application Markup Language (XAML) code describes a <xref:System.Windows.Controls.TextBox> control and assigns it a Name.  
   
  [!code-xaml[TextBox_MiscCode#_MoveCursorXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBox_MiscCode/CSharp/Window1.xaml#_movecursorxaml)]  
   

@@ -15,7 +15,7 @@ This topic describes how to use the five timing events available on <xref:System
 ## Prerequisites  
  To understand this topic, you should understand how to create and use animations. To get started with animation, see the [Animation Overview](animation-overview.md).  
   
- There are multiple ways to animate properties in [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)]:  
+ There are multiple ways to animate properties in WPF:  
   
 - **Using storyboard objects** (markup and code): You can use <xref:System.Windows.Media.Animation.Storyboard> objects to arrange and distribute animations to one or more objects. For an example, see [Animate a Property by Using a Storyboard](how-to-animate-a-property-by-using-a-storyboard.md).  
   
@@ -57,7 +57,7 @@ This topic describes how to use the five timing events available on <xref:System
 |**RemoveRequested**|Remove||  
   
 ## Ticking and Event Consolidation  
- When you animate objects in [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)], it’s the timing engine that manages your animations. The timing engine tracks the progression of time and computes the state of each animation. It makes many such evaluation passes in a second. These evaluation passes are known as "ticks."  
+ When you animate objects in WPF, it’s the timing engine that manages your animations. The timing engine tracks the progression of time and computes the state of each animation. It makes many such evaluation passes in a second. These evaluation passes are known as "ticks."  
   
  While ticks occur frequently, it's possible for a lot of things to happen between ticks. For example, a timeline might be stopped, started, and stopped again, in which case its current state will have changed three times. In theory, the event could be raised multiple times in a single tick; however, the timing engine consolidates events, so that each event can be raised at most once per tick.  
   
@@ -68,7 +68,7 @@ This topic describes how to use the five timing events available on <xref:System
 ## Registering for Clock Events with a Timeline  
  Although a timeline's <xref:System.Windows.Media.Animation.Timeline.Completed>, <xref:System.Windows.Media.Animation.Timeline.CurrentGlobalSpeedInvalidated>, <xref:System.Windows.Media.Animation.Timeline.CurrentStateInvalidated>, <xref:System.Windows.Media.Animation.Timeline.CurrentTimeInvalidated>, and <xref:System.Windows.Media.Animation.Timeline.RemoveRequested> events appear to be associated with the timeline, registering for these events actually associates an event handler with the <xref:System.Windows.Media.Animation.Clock> created for the timeline.  
   
- When you register for the <xref:System.Windows.Media.Animation.Timeline.Completed> event on a timeline, for example, you're actually telling the system to register for the <xref:System.Windows.Media.Animation.Clock.Completed> event of each clock that is created for the timeline. In code, you must register for this event before the <xref:System.Windows.Media.Animation.Clock> is created for this timeline; otherwise, you won't receive notification. This happens automatically in [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)]; the parser automatically registers for the event before the <xref:System.Windows.Media.Animation.Clock> is created.  
+ When you register for the <xref:System.Windows.Media.Animation.Timeline.Completed> event on a timeline, for example, you're actually telling the system to register for the <xref:System.Windows.Media.Animation.Clock.Completed> event of each clock that is created for the timeline. In code, you must register for this event before the <xref:System.Windows.Media.Animation.Clock> is created for this timeline; otherwise, you won't receive notification. This happens automatically in XAML; the parser automatically registers for the event before the <xref:System.Windows.Media.Animation.Clock> is created.  
   
 ## See also
 

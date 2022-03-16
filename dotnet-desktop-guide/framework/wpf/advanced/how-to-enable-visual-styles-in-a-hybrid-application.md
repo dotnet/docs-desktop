@@ -11,7 +11,7 @@ ms.assetid: 95de9b9c-d804-405c-b2d1-49a88c1e0fe1
 ---
 # How to: Enable Visual Styles in a Hybrid Application
 
-This topic shows how to enable visual styles on a Windows Forms control hosted in a [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)]-based application.  
+This topic shows how to enable visual styles on a Windows Forms control hosted in a WPF-based application.  
   
  If your application calls the <xref:System.Windows.Forms.Application.EnableVisualStyles%2A> method, most of your Windows Forms controls will automatically use visual styles. For more information, see [Rendering Controls with Visual Styles](/dotnet/framework/winforms/controls/rendering-controls-with-visual-styles).  
   
@@ -21,7 +21,7 @@ This topic shows how to enable visual styles on a Windows Forms control hosted i
   
 #### To enable Windows Forms visual styles  
   
-1. Create a [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] Application project named `HostingWfWithVisualStyles`.  
+1. Create a WPF Application project named `HostingWfWithVisualStyles`.  
   
 2. In Solution Explorer, add references to the following assemblies.  
   

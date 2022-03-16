@@ -27,7 +27,7 @@ Trustworthy Computing is a Microsoft initiative for ensuring the production of s
   
 ## WPF Specifics  
 
- The [!INCLUDE[TLA2#tla_winclient](../../includes/tla2sharptla-winclient-md.md)] engineering team both applies and extends the SDL, the combination of which includes the following key aspects:  
+ The WPF engineering team both applies and extends the SDL, the combination of which includes the following key aspects:  
   
  [Threat Modeling](#threat_modeling)  
   
@@ -51,9 +51,9 @@ Trustworthy Computing is a Microsoft initiative for ensuring the production of s
   
 3. **Investigating Attacks against Assets using Entry Points**. One possible attack could target a grocery store's *safe* asset through the *air conditioning* entry point; the air conditioning unit could be unscrewed to allow the safe to be pulled up through it and out of the store.  
   
- Threat modeling is applied throughout [!INCLUDE[TLA2#tla_winclient](../../includes/tla2sharptla-winclient-md.md)] and includes the following:  
+ Threat modeling is applied throughout WPF and includes the following:  
   
-- How the [!INCLUDE[TLA2#tla_xaml](../../includes/tla2sharptla-xaml-md.md)] parser reads files, maps text to corresponding object model classes, and creates the actual code.  
+- How the XAML parser reads files, maps text to corresponding object model classes, and creates the actual code.  
   
 - How a window handle (hWnd) is created, sends messages, and is used for rendering the contents of a window.  
   
@@ -65,7 +65,7 @@ Trustworthy Computing is a Microsoft initiative for ensuring the production of s
 
 ### Source Analysis and Editing Tools  
 
- In addition to the manual security code review elements of the SDL, the [!INCLUDE[TLA2#tla_winclient](../../includes/tla2sharptla-winclient-md.md)] team uses several tools for source analysis and associated edits to decrease security vulnerabilities. A wide range of source tools are used, and include the following:  
+ In addition to the manual security code review elements of the SDL, the WPF team uses several tools for source analysis and associated edits to decrease security vulnerabilities. A wide range of source tools are used, and include the following:  
   
 - **FXCop**: Finds common security issues in managed code ranging from inheritance rules to code access security usage to how to safely interoperate with unmanaged code. See [FXCop](/previous-versions/dotnet/netframework-3.0/bb429476%28v=vs.80%29).  
   
@@ -77,21 +77,21 @@ Trustworthy Computing is a Microsoft initiative for ensuring the production of s
 
 ### Testing Techniques  
 
- [!INCLUDE[TLA2#tla_winclient](../../includes/tla2sharptla-winclient-md.md)] uses a variety of security testing techniques that include:  
+ WPF uses a variety of security testing techniques that include:  
   
 - **Whitebox Testing**: Testers view source code, and then build exploit tests.
   
 - **Blackbox Testing**: Testers try to find security exploits by examining the API and features, and then try to attack the product.  
   
-- **Regressing Security Issues from other Products**: Where relevant, security issues from related products are tested. For example, appropriate variants of approximately sixty security issues for Internet Explorer have been identified and tried for their applicability to [!INCLUDE[TLA2#tla_winclient](../../includes/tla2sharptla-winclient-md.md)].  
+- **Regressing Security Issues from other Products**: Where relevant, security issues from related products are tested. For example, appropriate variants of approximately sixty security issues for Internet Explorer have been identified and tried for their applicability to WPF.  
   
-- **Tools-Based Penetration Testing through File Fuzzing**: File fuzzing is the exploitation of a file reader's input range through a variety of inputs. One example in [!INCLUDE[TLA2#tla_winclient](../../includes/tla2sharptla-winclient-md.md)] where this technique is used is to check for failure in image decoding code.  
+- **Tools-Based Penetration Testing through File Fuzzing**: File fuzzing is the exploitation of a file reader's input range through a variety of inputs. One example in WPF where this technique is used is to check for failure in image decoding code.  
   
 <a name="critical_code"></a>
 
 ### Critical Code Management  
 
- For XAML browser applications (XBAPs), [!INCLUDE[TLA2#tla_winclient](../../includes/tla2sharptla-winclient-md.md)] builds a security sandbox by using .NET Framework support for marking and tracking security-critical code that elevates privileges (see **Security-Critical Methodology** in [WPF Security Strategy - Platform Security](wpf-security-strategy-platform-security.md)). Given the high security quality requirements on security critical code, such code receives an additional level of source management control and security audit. Approximately 5% to 10% of [!INCLUDE[TLA2#tla_winclient](../../includes/tla2sharptla-winclient-md.md)] consists of security-critical code, which is reviewed by a dedicated reviewing team. The source code and check-in process is managed by tracking security critical code and mapping each critical entity (i.e. a method that contains critical code) to its sign off state. The sign off state includes the names of one or more reviewers. Each daily build of [!INCLUDE[TLA2#tla_winclient](../../includes/tla2sharptla-winclient-md.md)] compares the critical code to that in previous builds to check for unapproved changes. If an engineer modifies critical code without approval from the reviewing team, it is identified and fixed immediately. This process enables the application and maintenance of an especially high level of scrutiny over [!INCLUDE[TLA2#tla_winclient](../../includes/tla2sharptla-winclient-md.md)] sandbox code.  
+ For XAML browser applications (XBAPs), WPF builds a security sandbox by using .NET Framework support for marking and tracking security-critical code that elevates privileges (see **Security-Critical Methodology** in [WPF Security Strategy - Platform Security](wpf-security-strategy-platform-security.md)). Given the high security quality requirements on security critical code, such code receives an additional level of source management control and security audit. Approximately 5% to 10% of WPF consists of security-critical code, which is reviewed by a dedicated reviewing team. The source code and check-in process is managed by tracking security critical code and mapping each critical entity (i.e. a method that contains critical code) to its sign off state. The sign off state includes the names of one or more reviewers. Each daily build of WPF compares the critical code to that in previous builds to check for unapproved changes. If an engineer modifies critical code without approval from the reviewing team, it is identified and fixed immediately. This process enables the application and maintenance of an especially high level of scrutiny over WPF sandbox code.  
   
 ## See also
 

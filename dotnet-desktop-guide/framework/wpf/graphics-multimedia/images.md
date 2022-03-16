@@ -11,7 +11,7 @@ helpviewer_keywords:
 ms.assetid: 2fe21d59-b444-4786-b68d-35d94e18ce0d
 ---
 # Images
-[!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] provides built-in support for multiple image formats, high fidelity image rendering, and codec extensibility.  
+Windows Presentation Foundation (WPF) provides built-in support for multiple image formats, high fidelity image rendering, and codec extensibility.  
   
 ## In This Section  
  [Imaging Overview](imaging-overview.md)  

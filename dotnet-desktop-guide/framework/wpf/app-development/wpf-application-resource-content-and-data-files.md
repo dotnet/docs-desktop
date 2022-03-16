@@ -20,7 +20,7 @@ helpviewer_keywords:
 ms.assetid: 7ad2943b-3961-41d3-8fc6-1582d43f5d99
 ---
 # WPF Application Resource, Content, and Data Files
-Microsoft Windows applications often depend on files that contain non-executable data, such as [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)], images, video, and audio. Windows Presentation Foundation (WPF) offers special support for configuring, identifying, and using these types of data files, which are called application data files. This support revolves around a specific set of application data file types, including:  
+Microsoft Windows applications often depend on files that contain non-executable data, such as Extensible Application Markup Language (XAML), images, video, and audio. Windows Presentation Foundation (WPF) offers special support for configuring, identifying, and using these types of data files, which are called application data files. This support revolves around a specific set of application data file types, including:  
   
 - **Resource Files**: Data files that are compiled into either an executable or library WPF assembly.  
   
@@ -106,10 +106,10 @@ Microsoft Windows applications often depend on files that contain non-executable
 > [!NOTE]
 > In Visual Studio, you add a new <xref:System.Windows.Window>, <xref:System.Windows.Navigation.NavigationWindow>, <xref:System.Windows.Controls.Page>, <xref:System.Windows.Documents.FlowDocument>, or <xref:System.Windows.ResourceDictionary> to a project, the `Build Action` for the markup file will default to `Page`.  
   
- When a project with `Page` items is compiled, the [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] items are converted to binary format and compiled into the associated assembly. Consequently, these files can be used in the same way as typical resource files.  
+ When a project with `Page` items is compiled, the XAML items are converted to binary format and compiled into the associated assembly. Consequently, these files can be used in the same way as typical resource files.  
   
 > [!NOTE]
-> If a [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] file is configured as a `Resource` item, and does not have a code-behind file, the raw [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] is compiled into an assembly rather than a binary version of the raw [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)].  
+> If a XAML file is configured as a `Resource` item, and does not have a code-behind file, the raw XAML is compiled into an assembly rather than a binary version of the raw XAML.  
   
 <a name="Content_Files"></a>
 ## Content Files  

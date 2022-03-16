@@ -11,7 +11,7 @@ helpviewer_keywords:
 ms.assetid: 1931d292-0dd1-434f-963c-dcda7638d75a
 ---
 # Walkthrough: Hosting an ActiveX Control in WPF
-To enable improved interaction with browsers, you can use Microsoft ActiveX controls in your [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)]-based application. This walkthrough demonstrates how you can host the Microsoft Windows Media Player as a control on a [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] page.
+To enable improved interaction with browsers, you can use Microsoft ActiveX controls in your WPF-based application. This walkthrough demonstrates how you can host the Microsoft Windows Media Player as a control on a WPF page.
 
  Tasks illustrated in this walkthrough include:
 
@@ -21,7 +21,7 @@ To enable improved interaction with browsers, you can use Microsoft ActiveX cont
 
 - Hosting the ActiveX control on a WPF Page.
 
- When you have completed this walkthrough, you will understand how to use Microsoft ActiveX controls in your [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)]-based application.
+ When you have completed this walkthrough, you will understand how to use Microsoft ActiveX controls in your WPF-based application.
 
 ## Prerequisites
  You need the following components to complete this walkthrough:

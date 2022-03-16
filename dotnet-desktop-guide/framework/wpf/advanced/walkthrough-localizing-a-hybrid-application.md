@@ -8,7 +8,7 @@ ms.assetid: fbc0c54e-930a-4c13-8e9c-27b83665010a
 ---
 # Walkthrough: Localizing a Hybrid Application
 
-This walkthrough shows you how to localize [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] elements in a Windows Forms-based hybrid application.
+This walkthrough shows you how to localize WPF elements in a Windows Forms-based hybrid application.
 
 Tasks illustrated in this walkthrough include:
 
@@ -34,19 +34,19 @@ You need the following components to complete this walkthrough:
 
 ## Creating the Windows Forms Host Project
 
-The first step is to create the Windows Forms application project and add a [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] element with content that you will localize.
+The first step is to create the Windows Forms application project and add a WPF element with content that you will localize.
 
 ### To create the host project
 
 1. Create a **WPF App** project named `LocalizingWpfInWf`.  (**File** > **New** > **Project** > **Visual C#** or **Visual Basic** > **Classic Desktop** > **WPF Application**).
 
-2. Add a [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)]<xref:System.Windows.Controls.UserControl> element called `SimpleControl` to the project.
+2. Add a WPF<xref:System.Windows.Controls.UserControl> element called `SimpleControl` to the project.
 
 3. Use the <xref:System.Windows.Forms.Integration.ElementHost> control to place a `SimpleControl` element on the form. For more information, see [Walkthrough: Hosting a 3D WPF Composite Control in Windows Forms](walkthrough-hosting-a-3-d-wpf-composite-control-in-windows-forms.md).
 
 ## Adding Localizable Content
 
-Next, you will add a Windows Forms label control and set the [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] element's content to a localizable string.
+Next, you will add a Windows Forms label control and set the WPF element's content to a localizable string.
 
 ### To add localizable content
 
@@ -128,7 +128,7 @@ You can map your localizable content to resource assemblies by using resource id
 
 ## Using LocBaml to Produce a Satellite Assembly
 
-Your localized content is stored in a resource-only *satellite assembly*. Use the command-line tool LocBaml.exe to produce a localized assembly for your [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] content.
+Your localized content is stored in a resource-only *satellite assembly*. Use the command-line tool LocBaml.exe to produce a localized assembly for your WPF content.
 
 ### To produce a satellite assembly
 

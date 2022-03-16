@@ -16,7 +16,7 @@ This example shows how to bind to XML data using an <xref:System.Windows.Data.Xm
  In the following example, the data is embedded directly as an XML *data island* within the <xref:System.Windows.FrameworkElement.Resources%2A> section. An XML data island must be wrapped in `<x:XData>` tags and always have a single root node, which is *Inventory* in this example.  
   
 > [!NOTE]
-> The root node of the XML data has an **xmlns** attribute that sets the XML namespace to an empty string. This is a requirement for applying XPath queries to a data island that is inline within the [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] page. In this inline case, the [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)], and thus the data island, inherits the <xref:System.Windows> namespace. Because of this, you need to set the namespace blank to keep XPath queries from being qualified by the <xref:System.Windows> namespace, which would misdirect the queries.  
+> The root node of the XML data has an **xmlns** attribute that sets the XML namespace to an empty string. This is a requirement for applying XPath queries to a data island that is inline within the XAML page. In this inline case, the XAML, and thus the data island, inherits the <xref:System.Windows> namespace. Because of this, you need to set the namespace blank to keep XPath queries from being qualified by the <xref:System.Windows> namespace, which would misdirect the queries.  
   
  [!code-xaml[XMLDataSource#1](~/samples/snippets/csharp/VS_Snippets_Wpf/XmlDataSource/CS/Window1.xaml#1)]  
   
@@ -28,7 +28,7 @@ This example shows how to bind to XML data using an <xref:System.Windows.Data.Xm
   
  In this example, the book titles are displayed because the <xref:System.Windows.Data.Binding.XPath%2A> of the <xref:System.Windows.Controls.TextBlock> binding in the <xref:System.Windows.DataTemplate> is set to "*Title*". If you want to display the value of an attribute, such as the *ISBN*, you would set that <xref:System.Windows.Data.Binding.XPath%2A> value to "`@ISBN`".  
   
- The **XPath** properties in [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] are handled by the XmlNode.SelectNodes method. You can modify the **XPath** queries to get different results. Here are some examples for the <xref:System.Windows.Data.Binding.XPath%2A> query on the bound <xref:System.Windows.Controls.ListBox> from the previous example:  
+ The **XPath** properties in WPF are handled by the XmlNode.SelectNodes method. You can modify the **XPath** queries to get different results. Here are some examples for the <xref:System.Windows.Data.Binding.XPath%2A> query on the bound <xref:System.Windows.Controls.ListBox> from the previous example:  
   
 - `XPath="Book[1]"` will return the first book element ("XML in Action"). Note that **XPath** indexes are based on 1, not 0.  
   
@@ -42,7 +42,7 @@ This example shows how to bind to XML data using an <xref:System.Windows.Data.Xm
   
  [!code-xaml[XmlDataSourceVariation#XmlNodePath](~/samples/snippets/csharp/VS_Snippets_Wpf/XmlDataSourceVariation/CS/Page1.xaml#xmlnodepath)]  
   
- In some applications, embedding the XML as a data island within the source of the [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] page can be inconvenient because the exact content of the data must be known at compile time. Therefore, obtaining the data from an external XML file is also supported, as in the following example:  
+ In some applications, embedding the XML as a data island within the source of the XAML page can be inconvenient because the exact content of the data must be known at compile time. Therefore, obtaining the data from an external XML file is also supported, as in the following example:  
   
  [!code-xaml[XMLDataSource2#XmlFileExample](~/samples/snippets/csharp/VS_Snippets_Wpf/XmlDataSource2/CS/Window1.xaml#xmlfileexample)]  
   

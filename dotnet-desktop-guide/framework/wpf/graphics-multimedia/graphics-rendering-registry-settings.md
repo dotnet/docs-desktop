@@ -12,11 +12,11 @@ helpviewer_keywords:
 ms.assetid: f4b41b42-327d-407c-b398-3ed5f505df8b
 ---
 # Graphics Rendering Registry Settings
-This topic provides an overview of the [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] graphics rendering registry settings that affect [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] applications.  
+This topic provides an overview of the WPF graphics rendering registry settings that affect WPF applications.  
 
 <a name="overview"></a>
 ## When to Use Graphics Rendering Registry Settings  
- These registry settings are provided for troubleshooting, debugging, and product support purposes. Because changes to the registry affect all [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] applications, your application should never alter these registry keys automatically, or during installation.  
+ These registry settings are provided for troubleshooting, debugging, and product support purposes. Because changes to the registry affect all WPF applications, your application should never alter these registry keys automatically, or during installation.  
   
 <a name="xpdmandwddm"></a>
 ## What are XPDM and WDDM?  
@@ -24,16 +24,16 @@ This topic provides an overview of the [!INCLUDE[TLA2#tla_winclient](../../../in
   
 <a name="registry_settings"></a>
 ## Registry Settings  
- [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] provides four registry settings for controlling [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] rendering:  
+ WPF provides four registry settings for controlling WPF rendering:  
   
 |Setting|Description|  
 |-------------|-----------------|  
 |**Disable Hardware Acceleration Option**|Specifies whether hardware acceleration should be enabled.|  
 |**Maximum Multisample Value**|Specifies the degree of multisampling for antialiasing 3D content.|  
 |**Required Video Driver Date Setting**|Specifies whether the system disables hardware acceleration for drivers released before November 2004.|  
-|**Use Reference Rasterizer Option**|Specifies whether [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] should use the reference rasterizer.|  
+|**Use Reference Rasterizer Option**|Specifies whether WPF should use the reference rasterizer.|  
   
- These settings can be accessed by any external configuration utility that knows how to reference the [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] registry settings. These settings can also be created or modified by accessing the values directly by using the Windows Registry Editor.  
+ These settings can be accessed by any external configuration utility that knows how to reference the WPF registry settings. These settings can also be created or modified by accessing the values directly by using the Windows Registry Editor.  
   
 <a name="disablehardwareacceleration"></a>
 ## Disable Hardware Acceleration Option  
@@ -57,7 +57,7 @@ This topic provides an overview of the [!INCLUDE[TLA2#tla_winclient](../../../in
   
  The **maximum multisample value** is a DWORD value that ranges from 0 to 16. A value of 0 specifies that multisample antialiasing of 3D content should be disabled, and a value of 16 will attempt to use up to 16x multisample antialiasing, if supported by the video card. Beware that setting this registry key value on computers using XPDM drivers will cause applications to use a large amount of additional video memory, decrease the performance of 3D rendering, and has the potential to introduce rendering errors and stability problems.  
   
- When this registry key is not set, [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] defaults to 0 for XPDM drivers and 4 for WDDM drivers.  
+ When this registry key is not set, WPF defaults to 0 for XPDM drivers and 4 for WDDM drivers.  
   
 <a name="requiredvideodriverdatesetting"></a>
 ## Required Video Driver Date Setting  
@@ -66,9 +66,9 @@ This topic provides an overview of the [!INCLUDE[TLA2#tla_winclient](../../../in
 |------------------|----------------|  
 |`HKEY_CURRENT_USER\SOFTWARE\Microsoft\Avalon.Graphics\RequiredVideoDriverDate`|String|  
   
- In November, 2004, Microsoft released a new version of the driver testing guidelines; the drivers written after this date offer better stability. By default, [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] will use the hardware acceleration pipeline for these drivers and will fall back to software rendering for XPDM drivers published before this date.  
+ In November, 2004, Microsoft released a new version of the driver testing guidelines; the drivers written after this date offer better stability. By default, WPF will use the hardware acceleration pipeline for these drivers and will fall back to software rendering for XPDM drivers published before this date.  
   
- The **required video driver date setting** enables you to specify an alternate minimum date for XPDM drivers. You should only specify a date earlier than November, 2004 if you are confident that your video driver is stable enough to support [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)].  
+ The **required video driver date setting** enables you to specify an alternate minimum date for XPDM drivers. You should only specify a date earlier than November, 2004 if you are confident that your video driver is stable enough to support WPF.  
   
  The required video driver setting takes a string of the following format:  
   
@@ -76,7 +76,7 @@ This topic provides an overview of the [!INCLUDE[TLA2#tla_winclient](../../../in
 |---------------|  
 |*YYYY* `/` *MM* `/` *DD*|  
   
- Where *YYYY* is the four-digit year, *MM* is the two-digit month, and *DD* is the two digit day. When this value is unset, [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] uses November, 2004 as its required video driver date.  
+ Where *YYYY* is the four-digit year, *MM* is the two-digit month, and *DD* is the two digit day. When this value is unset, WPF uses November, 2004 as its required video driver date.  
   
 <a name="usereferencerasterizeroption"></a>
 ## Use Reference Rasterizer Option  
@@ -85,11 +85,11 @@ This topic provides an overview of the [!INCLUDE[TLA2#tla_winclient](../../../in
 |------------------|----------------|  
 |`HKEY_CURRENT_USER\SOFTWARE\Microsoft\Avalon.Graphics\UseReferenceRasterizer`|DWORD|  
   
- The **use reference rasterizer option** enables you to force [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] into a simulated hardware rendering mode for debugging: [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] goes into hardware mode, but uses the Microsoft Direct3D reference software rasterizer, d3dref9.dll, instead of an actual hardware device.  
+ The **use reference rasterizer option** enables you to force WPF into a simulated hardware rendering mode for debugging: WPF goes into hardware mode, but uses the Microsoft Direct3D reference software rasterizer, d3dref9.dll, instead of an actual hardware device.  
   
  The reference rasterizer is very slow, but bypasses your video driver to avoid any rendering issues caused by driver problems. For this reason, you can use the reference rasterizer to determine if rendering issues are caused by the video driver. The d3dref9.dll file must be in a location where the application can access it, such as in any location in the system path or in the local directory of the application.  
   
- The **use reference rasterizer option** takes a DWORD value. A value of 0 indicates that the reference rasterizer is not used. Any other non-zero value forces [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] to use the reference rasterizer.  
+ The **use reference rasterizer option** takes a DWORD value. A value of 0 indicates that the reference rasterizer is not used. Any other non-zero value forces WPF to use the reference rasterizer.  
   
 ## See also
 

@@ -10,7 +10,7 @@ helpviewer_keywords:
 ms.assetid: 959cb1cc-d26c-4bbc-b637-251091987288
 ---
 # Graphics How-to Topics
-The following topics demonstrate how to use the graphic capabilities of the [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)].  
+The following topics demonstrate how to use the graphic capabilities of the Windows Presentation Foundation (WPF).  
   
 ## In This Section  
  [Animate a Rectangle](how-to-animate-a-rectangle.md)  

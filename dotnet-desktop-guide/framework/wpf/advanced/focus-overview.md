@@ -12,7 +12,7 @@ helpviewer_keywords:
 ms.assetid: 0230c4eb-0c8a-462b-ac4b-ae3e511659f4
 ---
 # Focus Overview
-In [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] there are two main concepts that pertain to focus: keyboard focus and logical focus.  Keyboard focus refers to the element that receives keyboard input and logical focus refers to the element in a focus scope that has focus.  These concepts are discussed in detail in this overview.  Understanding the difference in these concepts is important for creating complex applications that have multiple regions where focus can be obtained.  
+In WPF there are two main concepts that pertain to focus: keyboard focus and logical focus.  Keyboard focus refers to the element that receives keyboard input and logical focus refers to the element in a focus scope that has focus.  These concepts are discussed in detail in this overview.  Understanding the difference in these concepts is important for creating complex applications that have multiple regions where focus can be obtained.  
   
  The major classes that participate in focus management are the <xref:System.Windows.Input.Keyboard> class, the <xref:System.Windows.Input.FocusManager> class, and the base element classes, such as <xref:System.Windows.UIElement> and <xref:System.Windows.ContentElement>.  For more information about the base elements, see the [Base Elements Overview](base-elements-overview.md).  
   
@@ -20,11 +20,11 @@ In [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)
 
 <a name="Keyboard_Focus"></a>
 ## Keyboard Focus  
- Keyboard focus refers to the element that is currently receiving keyboard input.  There can be only one element on the whole desktop that has keyboard focus.  In [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)], the element that has keyboard focus will have <xref:System.Windows.IInputElement.IsKeyboardFocused%2A> set to `true`.  The static property <xref:System.Windows.Input.Keyboard.FocusedElement%2A> on the <xref:System.Windows.Input.Keyboard> class gets the element that currently has keyboard focus.  
+ Keyboard focus refers to the element that is currently receiving keyboard input.  There can be only one element on the whole desktop that has keyboard focus.  In WPF, the element that has keyboard focus will have <xref:System.Windows.IInputElement.IsKeyboardFocused%2A> set to `true`.  The static property <xref:System.Windows.Input.Keyboard.FocusedElement%2A> on the <xref:System.Windows.Input.Keyboard> class gets the element that currently has keyboard focus.  
   
  In order for an element to obtain keyboard focus, the <xref:System.Windows.UIElement.Focusable%2A> and the <xref:System.Windows.UIElement.IsVisible%2A> properties on the base elements must be set to `true`.  Some classes, such as the <xref:System.Windows.Controls.Panel> base class, have <xref:System.Windows.UIElement.Focusable%2A> set to `false` by default; therefore, you must set <xref:System.Windows.UIElement.Focusable%2A> to `true` if you want such an element to be able to obtain keyboard focus.  
   
- Keyboard focus can be obtained through user interaction with the [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)], such as tabbing to an element or clicking the mouse on certain elements.  Keyboard focus can also be obtained programmatically by using the <xref:System.Windows.Input.Keyboard.Focus%2A> method on the <xref:System.Windows.Input.Keyboard> class.  The <xref:System.Windows.Input.Keyboard.Focus%2A> method attempts to give the specified element keyboard focus.  The returned element is the element that has keyboard focus, which might be a different element than requested if either the old or new focus object block the request.  
+ Keyboard focus can be obtained through user interaction with the UI, such as tabbing to an element or clicking the mouse on certain elements.  Keyboard focus can also be obtained programmatically by using the <xref:System.Windows.Input.Keyboard.Focus%2A> method on the <xref:System.Windows.Input.Keyboard> class.  The <xref:System.Windows.Input.Keyboard.Focus%2A> method attempts to give the specified element keyboard focus.  The returned element is the element that has keyboard focus, which might be a different element than requested if either the old or new focus object block the request.  
   
  The following example uses the <xref:System.Windows.Input.Keyboard.Focus%2A> method to set keyboard focus on a <xref:System.Windows.Controls.Button>.  
   
@@ -43,7 +43,7 @@ In [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)
   
  An element that has keyboard focus has logical focus for the focus scope it belongs to.  
   
- An element can be turned into a focus scope in [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)] by setting the <xref:System.Windows.Input.FocusManager> attached property <xref:System.Windows.Input.FocusManager.IsFocusScope%2A> to `true`.  In code, an element can be turned into a focus scope by calling <xref:System.Windows.Input.FocusManager.SetIsFocusScope%2A>.  
+ An element can be turned into a focus scope in Extensible Application Markup Language (XAML) by setting the <xref:System.Windows.Input.FocusManager> attached property <xref:System.Windows.Input.FocusManager.IsFocusScope%2A> to `true`.  In code, an element can be turned into a focus scope by calling <xref:System.Windows.Input.FocusManager.SetIsFocusScope%2A>.  
   
  The following example makes a <xref:System.Windows.Controls.StackPanel> into a focus scope by setting the <xref:System.Windows.Input.FocusManager.IsFocusScope%2A> attached property.  
   
@@ -54,7 +54,7 @@ In [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)
   
  <xref:System.Windows.Input.FocusManager.GetFocusScope%2A> returns the focus scope for the specified element.  
   
- Classes in [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] which are focus scopes by default are <xref:System.Windows.Window>, <xref:System.Windows.Controls.MenuItem>, <xref:System.Windows.Controls.ToolBar>, and <xref:System.Windows.Controls.ContextMenu>.  
+ Classes in WPF which are focus scopes by default are <xref:System.Windows.Window>, <xref:System.Windows.Controls.MenuItem>, <xref:System.Windows.Controls.ToolBar>, and <xref:System.Windows.Controls.ContextMenu>.  
   
  <xref:System.Windows.Input.FocusManager.GetFocusedElement%2A> gets the focused element for the specified focus scope.  <xref:System.Windows.Input.FocusManager.SetFocusedElement%2A> sets the focused element in the specified focus scope.  <xref:System.Windows.Input.FocusManager.SetFocusedElement%2A> is typically used to set the initial focused element.  
   

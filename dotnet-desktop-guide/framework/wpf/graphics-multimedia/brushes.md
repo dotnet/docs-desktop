@@ -10,7 +10,7 @@ helpviewer_keywords:
 ms.assetid: 26710879-12ad-4c63-9bc6-a1834bb4243b
 ---
 # Brushes
-The following topics describe how to use [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] brushes to "paint" content to the screen  
+The following topics describe how to use Windows Presentation Foundation (WPF) brushes to "paint" content to the screen  
   
 ## In This Section  
  [WPF Brushes Overview](wpf-brushes-overview.md)  

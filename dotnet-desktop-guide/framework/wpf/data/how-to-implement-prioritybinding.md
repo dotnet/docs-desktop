@@ -10,7 +10,7 @@ ms.assetid: d63b65ab-b3e9-4322-9aa8-1450f8d89532
 ---
 # How to: Implement PriorityBinding
 
-<xref:System.Windows.Data.PriorityBinding> in [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] works by specifying a list of bindings. The list of bindings is ordered from highest priority to lowest priority. If the highest priority binding returns a value successfully when it is processed then there is never a need to process the other bindings in the list. It could be the case that the highest priority binding takes a long time to be evaluated, the next highest priority that returns a value successfully will be used until a binding of a higher priority returns a value successfully.  
+<xref:System.Windows.Data.PriorityBinding> in Windows Presentation Foundation (WPF) works by specifying a list of bindings. The list of bindings is ordered from highest priority to lowest priority. If the highest priority binding returns a value successfully when it is processed then there is never a need to process the other bindings in the list. It could be the case that the highest priority binding takes a long time to be evaluated, the next highest priority that returns a value successfully will be used until a binding of a higher priority returns a value successfully.  
   
 ## Example  
 

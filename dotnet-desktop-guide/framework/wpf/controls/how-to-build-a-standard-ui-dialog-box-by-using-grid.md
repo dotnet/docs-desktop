@@ -10,7 +10,7 @@ helpviewer_keywords:
 ms.assetid: d6ac3d51-844b-4d29-96d8-81a696a7b960
 ---
 # How to: Build a Standard UI Dialog Box by Using Grid
-This example shows how to create a standard [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)] dialog box by using the <xref:System.Windows.Controls.Grid> element.  
+This example shows how to create a standard user interface (UI) dialog box by using the <xref:System.Windows.Controls.Grid> element.  
   
 ## Example  
  The following example creates a dialog box like the **Run** dialog box in the Windows operating system.  

@@ -10,7 +10,7 @@ ms.assetid: 241c1ce2-60f8-4613-a0ec-9b9bb25fb6af
 ---
 # Label
 
-<xref:System.Windows.Controls.Label> controls usually provide information in the [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)].  Historically, a <xref:System.Windows.Controls.Label> has contained only text, but because the <xref:System.Windows.Controls.Label> that ships with [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] is a <xref:System.Windows.Controls.ContentControl>, it can contain either text or a <xref:System.Windows.UIElement>.  
+<xref:System.Windows.Controls.Label> controls usually provide information in the user interface (UI).  Historically, a <xref:System.Windows.Controls.Label> has contained only text, but because the <xref:System.Windows.Controls.Label> that ships with Windows Presentation Foundation (WPF) is a <xref:System.Windows.Controls.ContentControl>, it can contain either text or a <xref:System.Windows.UIElement>.  
   
  A <xref:System.Windows.Controls.Label> provides both functional and visual support for access keys. It is frequently used to enable quick keyboard access to controls such as a <xref:System.Windows.Controls.TextBox>. To assign a <xref:System.Windows.Controls.Label> to a <xref:System.Windows.Controls.Control>, set the <xref:System.Windows.Controls.Label.Target%2A?displayProperty=nameWithType> property to the control that should get focus when the user presses the access key.  
   
