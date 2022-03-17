@@ -30,7 +30,7 @@ In WPF, the default `x:Shared` condition for resources is `true`. This condition
 
 Modifying an object that is returned through a resource API, such as <xref:System.Windows.FrameworkElement.FindResource%2A>, or modifying an object directly within a <xref:System.Windows.ResourceDictionary>, changes the original resource. If references to that resource were dynamic resource references, the consumers of that resource get the changed resource.
 
-If references to the resource were static resource references, changes to the resource after [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] processing time are irrelevant. For more information about static versus dynamic resource references, see [Overview of XAML resources (WPF .NET)](../net/wpf/systems/xaml-resources-overview.md).
+If references to the resource were static resource references, changes to the resource after XAML processing time are irrelevant. For more information about static versus dynamic resource references, see [Overview of XAML resources (WPF .NET)](../net/wpf/systems/xaml-resources-overview.md).
 
 Explicitly specifying `x:Shared="true"` is rarely done, because that is already the default. There is no direct code equivalent for `x:Shared` in the WPF object model; it can only be specified in a XAML usage and must be processed either by the default WPF behavior or in an intermediate XAML node stream on the load path if processed using .NET XAML Services and its XAML readers.
 

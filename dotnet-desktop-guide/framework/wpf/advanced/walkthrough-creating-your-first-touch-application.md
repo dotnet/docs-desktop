@@ -12,7 +12,7 @@ helpviewer_keywords:
 ms.assetid: d69e602e-9a25-4e24-950b-e89eaa2a906b
 ---
 # Walkthrough: Creating Your First Touch Application
-[!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] enables applications to respond to touch. For example, you can interact with an application by using one or more fingers on a touch-sensitive device, such as a touchscreen This walkthrough creates an application that enables the user to move, resize, or rotate a single object by using touch.  
+WPF enables applications to respond to touch. For example, you can interact with an application by using one or more fingers on a touch-sensitive device, such as a touchscreen This walkthrough creates an application that enables the user to move, resize, or rotate a single object by using touch.  
   
 ## Prerequisites  
  You need the following components to complete this walkthrough:  
@@ -21,7 +21,7 @@ ms.assetid: d69e602e-9a25-4e24-950b-e89eaa2a906b
   
 - A device that accepts touch input, such as a touchscreen, that supports Windows Touch.  
   
- Additionally, you should have a basic understanding of how to create an application in [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)], especially how to subscribe to and handle an event. For more information, see [Walkthrough: My first WPF desktop application](../getting-started/walkthrough-my-first-wpf-desktop-application.md).  
+ Additionally, you should have a basic understanding of how to create an application in WPF, especially how to subscribe to and handle an event. For more information, see [Walkthrough: My first WPF desktop application](../getting-started/walkthrough-my-first-wpf-desktop-application.md).  
   
 ## Creating the Application  
   
@@ -39,7 +39,7 @@ ms.assetid: d69e602e-9a25-4e24-950b-e89eaa2a906b
   
 4. In the `MainWindow` class, add the following <xref:System.Windows.UIElement.ManipulationStarting> event handler.  
   
-     The <xref:System.Windows.UIElement.ManipulationStarting> event occurs when [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] detects that touch input begins to manipulate an object. The code specifies that the position of the manipulation should be relative to the <xref:System.Windows.Window> by setting the <xref:System.Windows.Input.ManipulationStartingEventArgs.ManipulationContainer%2A> property.  
+     The <xref:System.Windows.UIElement.ManipulationStarting> event occurs when WPF detects that touch input begins to manipulate an object. The code specifies that the position of the manipulation should be relative to the <xref:System.Windows.Window> by setting the <xref:System.Windows.Input.ManipulationStartingEventArgs.ManipulationContainer%2A> property.  
   
      [!code-csharp[BasicManipulation#ManipulationStarting](~/samples/snippets/csharp/VS_Snippets_Wpf/basicmanipulation/csharp/mainwindow.xaml.cs#manipulationstarting)]
      [!code-vb[BasicManipulation#ManipulationStarting](~/samples/snippets/visualbasic/VS_Snippets_Wpf/basicmanipulation/visualbasic/mainwindow.xaml.vb#manipulationstarting)]

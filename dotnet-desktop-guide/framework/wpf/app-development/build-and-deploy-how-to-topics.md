@@ -10,7 +10,7 @@ ms.assetid: 88952ad2-5b74-48ca-a4c5-3f4fbb53ce12
 ---
 # Build and deploy how-to topics
 
-The following topics show how to create project files for the various [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] application types.
+The following topics show how to create project files for the various WPF application types.
 
 ## In this section
 

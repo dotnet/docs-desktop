@@ -8,7 +8,7 @@ helpviewer_keywords:
 ms.assetid: 232ad0d7-2264-4bed-aae3-10dfde116a9c
 ---
 # Annotations
-[!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] provides document viewing controls that support annotating document content.  
+Windows Presentation Foundation (WPF) provides document viewing controls that support annotating document content.  
   
 ## In This Section  
  [Annotations Overview](annotations-overview.md)  

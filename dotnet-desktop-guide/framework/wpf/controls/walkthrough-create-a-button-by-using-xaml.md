@@ -8,10 +8,10 @@ ms.assetid: 138c41c4-1759-4bbf-8d77-77031a06a8a0
 ---
 # Walkthrough: Create a Button by Using XAML
 
-The objective of this walkthrough is to learn how to create an animated button for use in a Windows Presentation Foundation (WPF) application. This walkthrough uses styles and a template to create a customized button resource that allows reuse of code and separation of button logic from the button declaration. This walkthrough is written entirely in [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)].
+The objective of this walkthrough is to learn how to create an animated button for use in a Windows Presentation Foundation (WPF) application. This walkthrough uses styles and a template to create a customized button resource that allows reuse of code and separation of button logic from the button declaration. This walkthrough is written entirely in Extensible Application Markup Language (XAML).
 
 > [!IMPORTANT]
-> This walkthrough guides you through the steps for creating the application by typing or copying and pasting [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)] into Visual Studio. If you would prefer to learn how to use a designer to create the same application, see [Create a Button by Using Microsoft Expression Blend](walkthrough-create-a-button-by-using-microsoft-expression-blend.md).
+> This walkthrough guides you through the steps for creating the application by typing or copying and pasting Extensible Application Markup Language (XAML) into Visual Studio. If you would prefer to learn how to use a designer to create the same application, see [Create a Button by Using Microsoft Expression Blend](walkthrough-create-a-button-by-using-microsoft-expression-blend.md).
 
 The following figure shows the finished buttons.
 
@@ -27,7 +27,7 @@ Let's start by creating a new project and adding a few buttons to the window.
 
 2. **Create a new WPF project:** On the **File** menu, point to **New**, and then click **Project**. Find the **Windows Application (WPF)** template and name the project "AnimatedButton". This will create the skeleton for the application.
 
-3. **Add basic default buttons:** All the files you need for this walkthrough are provided by the template. Open the Window1.xaml file by double clicking it in Solution Explorer. By default, there is a <xref:System.Windows.Controls.Grid> element in Window1.xaml. Remove the <xref:System.Windows.Controls.Grid> element and add a few buttons to the [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)] page by typing or copy and pasting the following highlighted code to Window1.xaml:
+3. **Add basic default buttons:** All the files you need for this walkthrough are provided by the template. Open the Window1.xaml file by double clicking it in Solution Explorer. By default, there is a <xref:System.Windows.Controls.Grid> element in Window1.xaml. Remove the <xref:System.Windows.Controls.Grid> element and add a few buttons to the Extensible Application Markup Language (XAML) page by typing or copy and pasting the following highlighted code to Window1.xaml:
 
     ```xaml
     <Window x:Class="AnimatedButton.Window1"

@@ -45,7 +45,7 @@ With Microsoft .NET Framework, application developers using Windows Presentation
   
 - Industry standard XPS format.  
   
- For basic print scenarios, a simple and intuitive API is available with a single entry point for user interface, configuration and job submission. For advanced scenarios, an additional support is added for [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)] customization (or no [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] at all), synchronous or asynchronous printing, and batch printing capabilities. Both options provide print support in full or partial trust mode.  
+ For basic print scenarios, a simple and intuitive API is available with a single entry point for user interface, configuration and job submission. For advanced scenarios, an additional support is added for UI at all), synchronous or asynchronous printing, and batch printing capabilities. Both options provide print support in full or partial trust mode.  
   
  XPS was designed with extensibility in mind. By using the extensibility framework, features and capabilities can be added to XPS in a modular manner. Extensibility features include:  
   
@@ -63,10 +63,10 @@ With Microsoft .NET Framework, application developers using Windows Presentation
  ![Screenshot shows the XPS print system.](./media/printing-overview/xml-paper-specification-print-system.png)  
   
 ### Basic XPS Printing  
- WPF defines both a basic and advanced API. For those applications that do not require extensive print customization or access to the complete XPS feature set, basic print support is available. Basic print support is exposed through a print dialog control that requires minimal configuration and features a familiar [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)]. Many XPS features are available using this simplified print model.  
+ WPF defines both a basic and advanced API. For those applications that do not require extensive print customization or access to the complete XPS feature set, basic print support is available. Basic print support is exposed through a print dialog control that requires minimal configuration and features a familiar UI. Many XPS features are available using this simplified print model.  
   
 #### PrintDialog  
- The <xref:System.Windows.Controls.PrintDialog?displayProperty=nameWithType> control provides a single entry point for [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)], configuration, and XPS job submission. For information about how to instantiate and use the control, see [Invoke a Print Dialog](how-to-invoke-a-print-dialog.md).  
+ The <xref:System.Windows.Controls.PrintDialog?displayProperty=nameWithType> control provides a single entry point for UI, configuration, and XPS job submission. For information about how to instantiate and use the control, see [Invoke a Print Dialog](how-to-invoke-a-print-dialog.md).  
   
 ### Advanced XPS Printing  
  To access the complete set of XPS features, the advanced print API must be used. Several relevant API are described in greater detail below. For a complete list of XPS print path APIs, see the <xref:System.Windows.Xps> and <xref:System.Printing> namespace references.  

@@ -13,7 +13,7 @@ ms.assetid: b1d851c1-331c-4814-9964-6fe769db6f1f
 ---
 # Drawing Formatted Text
 
-This topic provides an overview of the features of the <xref:System.Windows.Media.FormattedText> object. This object provides low-level control for drawing text in [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] applications.  
+This topic provides an overview of the features of the <xref:System.Windows.Media.FormattedText> object. This object provides low-level control for drawing text in Windows Presentation Foundation (WPF) applications.  
 
 ## Technology Overview  
 
@@ -22,13 +22,13 @@ This topic provides an overview of the features of the <xref:System.Windows.Medi
  ![Text displayed using FormattedText object](./media/typography-in-wpf/text-formatted-linear-gradient.jpg)  
   
 > [!NOTE]
-> For those developers migrating from the Win32 API, the table in the [Win32 Migration](#win32_migration) section lists the Win32 DrawText flags and the approximate equivalent in [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)].  
+> For those developers migrating from the Win32 API, the table in the [Win32 Migration](#win32_migration) section lists the Win32 DrawText flags and the approximate equivalent in Windows Presentation Foundation (WPF).  
   
 ### Reasons for Using Formatted Text  
 
- [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] includes multiple controls for drawing text to the screen. Each control is targeted to a different scenario and has its own list of features and limitations. In general, the <xref:System.Windows.Controls.TextBlock> element should be used when limited text support is required, such as a brief sentence in a [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)]. <xref:System.Windows.Controls.Label> can be used when minimal text support is required. For more information, see [Documents in WPF](documents-in-wpf.md).  
+ WPF includes multiple controls for drawing text to the screen. Each control is targeted to a different scenario and has its own list of features and limitations. In general, the <xref:System.Windows.Controls.TextBlock> element should be used when limited text support is required, such as a brief sentence in a user interface (UI). <xref:System.Windows.Controls.Label> can be used when minimal text support is required. For more information, see [Documents in WPF](documents-in-wpf.md).  
   
- The <xref:System.Windows.Media.FormattedText> object provides greater text formatting features than [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] text controls, and can be useful in cases where you want to use text as a decorative element. For more information, see the following section [Converting Formatted Text to a Geometry](#converting_formatted_text).  
+ The <xref:System.Windows.Media.FormattedText> object provides greater text formatting features than Windows Presentation Foundation (WPF) text controls, and can be useful in cases where you want to use text as a decorative element. For more information, see the following section [Converting Formatted Text to a Geometry](#converting_formatted_text).  
   
  In addition, the <xref:System.Windows.Media.FormattedText> object is useful for creating text-oriented <xref:System.Windows.Media.DrawingVisual>-derived objects. <xref:System.Windows.Media.DrawingVisual> is a lightweight drawing class that is used to render shapes, images, or text. For more information, see [Hit Test Using DrawingVisuals Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Visual%20Layer/DrawingVisual).  
   
@@ -49,7 +49,7 @@ This topic provides an overview of the features of the <xref:System.Windows.Medi
   
 ### Font Size Unit of Measure  
 
- As with other text objects in [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] applications, the <xref:System.Windows.Media.FormattedText> object uses device-independent pixels as the unit of measure. However, most Win32 applications use points as the unit of measure. If you want to use display text in units of points in [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] applications, you need to convert device-independent units (1/96th inch per unit) to points. The following code example shows how to perform this conversion.  
+ As with other text objects in Windows Presentation Foundation (WPF) applications, the <xref:System.Windows.Media.FormattedText> object uses device-independent pixels as the unit of measure. However, most Win32 applications use points as the unit of measure. If you want to use display text in units of points in Windows Presentation Foundation (WPF) applications, you need to convert device-independent units (1/96th inch per unit) to points. The following code example shows how to perform this conversion.  
   
  [!code-csharp[FormattedTextSnippets#FormattedTextSnippets2](~/samples/snippets/csharp/VS_Snippets_Wpf/FormattedTextSnippets/CSharp/Window1.xaml.cs#formattedtextsnippets2)]
  [!code-vb[FormattedTextSnippets#FormattedTextSnippets2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FormattedTextSnippets/visualbasic/window1.xaml.vb#formattedtextsnippets2)]  
@@ -89,7 +89,7 @@ Sphere following the path geometry of text
 
 ## Win32 Migration  
 
- The features of <xref:System.Windows.Media.FormattedText> for drawing text are similar to the features of the Win32 DrawText function. For those developers migrating from the Win32 API, the following table lists the Win32 DrawText flags and the approximate equivalent in [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)].  
+ The features of <xref:System.Windows.Media.FormattedText> for drawing text are similar to the features of the Win32 DrawText function. For those developers migrating from the Win32 API, the following table lists the Win32 DrawText flags and the approximate equivalent in Windows Presentation Foundation (WPF).  
   
 |DrawText flag|WPF equivalent|Notes|  
 |-------------------|--------------------|-----------|  

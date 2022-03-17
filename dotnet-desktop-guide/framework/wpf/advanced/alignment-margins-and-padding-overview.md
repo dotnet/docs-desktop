@@ -15,13 +15,13 @@ ms.assetid: 9c6a2009-9b86-4e40-8605-0a2664dc3973
 ---
 # Alignment, Margins, and Padding Overview
 
-The <xref:System.Windows.FrameworkElement> class exposes several properties that are used to precisely position child elements. This topic discusses four of the most important properties: <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A>, <xref:System.Windows.FrameworkElement.Margin%2A>, <xref:System.Windows.Controls.Border.Padding%2A>, and <xref:System.Windows.FrameworkElement.VerticalAlignment%2A>. The effects of these properties are important to understand, because they provide the basis for controlling the position of elements in [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] applications.  
+The <xref:System.Windows.FrameworkElement> class exposes several properties that are used to precisely position child elements. This topic discusses four of the most important properties: <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A>, <xref:System.Windows.FrameworkElement.Margin%2A>, <xref:System.Windows.Controls.Border.Padding%2A>, and <xref:System.Windows.FrameworkElement.VerticalAlignment%2A>. The effects of these properties are important to understand, because they provide the basis for controlling the position of elements in Windows Presentation Foundation (WPF) applications.  
 
 <a name="wcpsdk_layout_amp_introduction"></a>
 
 ## Introduction to Element Positioning  
 
- There are numerous ways to position elements using [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)]. However, achieving ideal layout goes beyond simply choosing the right <xref:System.Windows.Controls.Panel> element. Fine control of positioning requires an understanding of the <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A>, <xref:System.Windows.FrameworkElement.Margin%2A>, <xref:System.Windows.Controls.Border.Padding%2A>, and <xref:System.Windows.FrameworkElement.VerticalAlignment%2A> properties.  
+ There are numerous ways to position elements using WPF. However, achieving ideal layout goes beyond simply choosing the right <xref:System.Windows.Controls.Panel> element. Fine control of positioning requires an understanding of the <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A>, <xref:System.Windows.FrameworkElement.Margin%2A>, <xref:System.Windows.Controls.Border.Padding%2A>, and <xref:System.Windows.FrameworkElement.VerticalAlignment%2A> properties.  
   
  The following illustration shows a layout scenario that utilizes several positioning properties.  
   
@@ -132,7 +132,7 @@ The <xref:System.Windows.FrameworkElement> class exposes several properties that
 
 ## Using Alignment, Margins, and Padding in an Application  
 
- <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A>, <xref:System.Windows.FrameworkElement.Margin%2A>, <xref:System.Windows.Controls.Border.Padding%2A>, and <xref:System.Windows.FrameworkElement.VerticalAlignment%2A> provide the positioning control necessary to create a complex [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)]. You can use the effects of each property to change child-element positioning, enabling flexibility in creating dynamic applications and user experiences.  
+ <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A>, <xref:System.Windows.FrameworkElement.Margin%2A>, <xref:System.Windows.Controls.Border.Padding%2A>, and <xref:System.Windows.FrameworkElement.VerticalAlignment%2A> provide the positioning control necessary to create a complex user interface (UI). You can use the effects of each property to change child-element positioning, enabling flexibility in creating dynamic applications and user experiences.  
   
  The following example demonstrates each of the concepts that are detailed in this topic. Building on the infrastructure found in the first sample in this topic, this example adds a <xref:System.Windows.Controls.Grid> element as a child of the <xref:System.Windows.Controls.Border> in the first sample. <xref:System.Windows.Controls.Border.Padding%2A> is applied to the parent <xref:System.Windows.Controls.Border> element. The <xref:System.Windows.Controls.Grid> is used to partition space between three child <xref:System.Windows.Controls.StackPanel> elements. <xref:System.Windows.Controls.Button> elements are again used to show the various effects of <xref:System.Windows.FrameworkElement.Margin%2A> and <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A>. <xref:System.Windows.Controls.TextBlock> elements are added to each <xref:System.Windows.Controls.ColumnDefinition> to better define the various properties applied to the <xref:System.Windows.Controls.Button> elements in each column.  
   
@@ -141,7 +141,7 @@ The <xref:System.Windows.FrameworkElement> class exposes several properties that
  [!code-vb[MarginPaddingAlignmentSample#4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MarginPaddingAlignmentSample/VisualBasic/MarginPaddingAlignment.vb#4)]
  [!code-xaml[MarginPaddingAlignmentSample#4](~/samples/snippets/xaml/VS_Snippets_Wpf/MarginPaddingAlignmentSample/XAML/default.xaml#4)]  
   
- When compiled, the preceding application yields a [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] that looks like the following illustration. The effects of the various property values are evident in the spacing between elements, and significant property values for elements in each column are shown within <xref:System.Windows.Controls.TextBlock> elements.  
+ When compiled, the preceding application yields a UI that looks like the following illustration. The effects of the various property values are evident in the spacing between elements, and significant property values for elements in each column are shown within <xref:System.Windows.Controls.TextBlock> elements.  
   
  ![Several positioning properties in one application](./media/layout-margins-padding-aligment-graphic3.PNG "layout_margins_padding_aligment_graphic3")  
   
@@ -149,9 +149,9 @@ The <xref:System.Windows.FrameworkElement> class exposes several properties that
 
 ## What's Next  
 
- Positioning properties defined by the <xref:System.Windows.FrameworkElement> class enable fine control of element placement within [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] applications. You now have several techniques you can use to better position elements using [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)].  
+ Positioning properties defined by the <xref:System.Windows.FrameworkElement> class enable fine control of element placement within WPF applications. You now have several techniques you can use to better position elements using WPF.  
   
- Additional resources are available that explain [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] layout in greater detail. The [Panels Overview](../controls/panels-overview.md) topic contains more detail about the various <xref:System.Windows.Controls.Panel> elements. The topic [Walkthrough: My first WPF desktop application](../getting-started/walkthrough-my-first-wpf-desktop-application.md) introduces advanced techniques that use layout elements to position components and bind their actions to data sources.  
+ Additional resources are available that explain WPF layout in greater detail. The [Panels Overview](../controls/panels-overview.md) topic contains more detail about the various <xref:System.Windows.Controls.Panel> elements. The topic [Walkthrough: My first WPF desktop application](../getting-started/walkthrough-my-first-wpf-desktop-application.md) introduces advanced techniques that use layout elements to position components and bind their actions to data sources.  
   
 ## See also
 

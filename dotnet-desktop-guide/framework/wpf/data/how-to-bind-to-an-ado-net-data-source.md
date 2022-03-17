@@ -13,7 +13,7 @@ ms.assetid: a70c6d7b-7b38-4fdf-b655-4804db7c8315
 
 # How to: Bind to an ADO.NET Data Source
 
-This example shows how to bind a [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] <xref:System.Windows.Controls.ListBox> control to an ADO.NET `DataSet`.
+This example shows how to bind a Windows Presentation Foundation (WPF) <xref:System.Windows.Controls.ListBox> control to an ADO.NET `DataSet`.
 
 ## Example
 

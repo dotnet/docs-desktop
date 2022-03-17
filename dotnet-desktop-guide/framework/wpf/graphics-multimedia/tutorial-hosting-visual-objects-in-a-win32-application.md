@@ -11,20 +11,20 @@ helpviewer_keywords:
 ms.assetid: f0e1600c-3217-43d5-875d-1864fa7fe628
 ---
 # Tutorial: Hosting Visual Objects in a Win32 Application
-[!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] provides a rich environment for creating applications. However, when you have a substantial investment in Win32 code, it might be more effective to add [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] functionality to your application rather than rewrite your code. To provide support for Win32 and [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] graphics subsystems used concurrently in an application, [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] provides a mechanism for hosting objects in a Win32 window.  
+WPF functionality to your application rather than rewrite your code. To provide support for Win32 and WPF graphics subsystems used concurrently in an application, WPF provides a mechanism for hosting objects in a Win32 window.  
   
- This tutorial describes how to write a sample application, [Hit Test with Win32 Interoperation Sample](https://github.com/microsoft/WPF-Samples/tree/master/Visual%20Layer/VisualsHitTesting), that hosts [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] visual objects in a Win32 window.  
+ This tutorial describes how to write a sample application, [Hit Test with Win32 Interoperation Sample](https://github.com/microsoft/WPF-Samples/tree/master/Visual%20Layer/VisualsHitTesting), that hosts WPF visual objects in a Win32 window.  
 
 <a name="requirements"></a>
 ## Requirements  
- This tutorial assumes a basic familiarity with both [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] and Win32 programming. For a basic introduction to [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] programming, see [Walkthrough: My first WPF desktop application](../getting-started/walkthrough-my-first-wpf-desktop-application.md). For an introduction to Win32 programming, see any of the numerous books on the subject, in particular *Programming Windows* by Charles Petzold.  
+ This tutorial assumes a basic familiarity with both WPF and Win32 programming. For a basic introduction to WPF programming, see [Walkthrough: My first WPF desktop application](../getting-started/walkthrough-my-first-wpf-desktop-application.md). For an introduction to Win32 programming, see any of the numerous books on the subject, in particular *Programming Windows* by Charles Petzold.  
   
 > [!NOTE]
 > This tutorial includes a number of code examples from the associated sample. However, for readability, it does not include the complete sample code. For the complete sample code, see [Hit Test with Win32 Interoperation Sample](https://github.com/microsoft/WPF-Samples/tree/master/Visual%20Layer/VisualsHitTesting).  
   
 <a name="creating_the_host_win32_window"></a>
 ## Creating the Host Win32 Window  
- The key to hosting [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] objects in a Win32 window is the <xref:System.Windows.Interop.HwndSource> class. This class wraps the [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] objects in a Win32 window, allowing them to be incorporated into your [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)] as a child window.  
+ The key to hosting WPF objects in a Win32 window is the <xref:System.Windows.Interop.HwndSource> class. This class wraps the WPF objects in a Win32 window, allowing them to be incorporated into your user interface (UI) as a child window.  
   
  The following example shows the code for creating the <xref:System.Windows.Interop.HwndSource> object as the Win32 container window for the visual objects. To set the window style, position, and other parameters for the Win32 window, use the <xref:System.Windows.Interop.HwndSourceParameters> object.  
   

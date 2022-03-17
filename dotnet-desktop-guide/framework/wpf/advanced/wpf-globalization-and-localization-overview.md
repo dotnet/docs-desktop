@@ -12,25 +12,25 @@ ms.assetid: 56e5a5c8-6c96-4d19-b8e1-a5be1dc564af
 
 When you limit your product's availability to only one language, you limit your potential customer base to a fraction of our world's 7.5 billion population. If you want your applications to reach a global audience, cost-effective localization of your product is one of the best and most economical ways to reach more customers.
 
-This overview introduces globalization and localization in [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)]. Globalization is the design and development of applications that perform in multiple locations. For example, globalization supports localized user interfaces and regional data for users in different cultures. [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] provides globalized design features, including automatic layout, satellite assemblies, and localized attributes and commenting.
+This overview introduces globalization and localization in WPF provides globalized design features, including automatic layout, satellite assemblies, and localized attributes and commenting.
 
-Localization is the translation of application resources into localized versions for the specific cultures that the application supports. When you localize in [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)], you use the APIs in the <xref:System.Windows.Markup.Localizer> namespace. These APIs power the [LocBaml Tool Sample](https://github.com/microsoft/WPF-Samples/tree/master/Tools/LocBaml) command-line tool. For information about how to build and use LocBaml, see [Localize an Application](how-to-localize-an-application.md).
+Localization is the translation of application resources into localized versions for the specific cultures that the application supports. When you localize in WPF, you use the APIs in the <xref:System.Windows.Markup.Localizer> namespace. These APIs power the [LocBaml Tool Sample](https://github.com/microsoft/WPF-Samples/tree/master/Tools/LocBaml) command-line tool. For information about how to build and use LocBaml, see [Localize an Application](how-to-localize-an-application.md).
 
 ## Best Practices for Globalization and Localization in WPF
 
-You can make the most of the globalization and localization functionality that is built into [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] by following the UI design and localization-related tips that this section provides.
+You can make the most of the globalization and localization functionality that is built into WPF by following the UI design and localization-related tips that this section provides.
 
 ### Best Practices for WPF UI Design
 
-When you design a [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)]–based [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)], consider implementing these best practices:
+When you design a UI, consider implementing these best practices:
 
-- Write your [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] in [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)]; avoid creating [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] in code. When you create your [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] by using [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)], you expose it through built-in localization APIs.
+- Write your UI in UI in code. When you create your UI by using XAML, you expose it through built-in localization APIs.
 
 - Avoid using absolute positions and fixed sizes to lay out content; instead, use relative or automatic sizing.
 
   - Use <xref:System.Windows.Window.SizeToContent%2A> and keep widths and heights set to `Auto`.
 
-  - Avoid using <xref:System.Windows.Controls.Canvas> to lay out [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)]s.
+  - Avoid using <xref:System.Windows.Controls.Canvas> to lay out UIs.
 
   - Use <xref:System.Windows.Controls.Grid> and its size-sharing feature.
 
@@ -38,9 +38,9 @@ When you design a [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-w
 
 - Enable <xref:System.Windows.Controls.TextBlock.TextWrapping%2A> on <xref:System.Windows.Controls.TextBlock> to avoid clipping.
 
-- Set the `xml:lang` attribute. This attribute describes the culture of a specific element and its child elements. The value of this property changes the behavior of several features in [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)]. For example, it changes the behavior of hyphenation, spell checking, number substitution, complex script shaping, and font fallback. See [Globalization for WPF](globalization-for-wpf.md) for more information about setting the [xml:lang Handling in XAML](/dotnet/desktop/xaml-services/xml-language-handling).
+- Set the `xml:lang` attribute. This attribute describes the culture of a specific element and its child elements. The value of this property changes the behavior of several features in WPF. For example, it changes the behavior of hyphenation, spell checking, number substitution, complex script shaping, and font fallback. See [Globalization for WPF](globalization-for-wpf.md) for more information about setting the [xml:lang Handling in XAML](/dotnet/desktop/xaml-services/xml-language-handling).
 
-- Create a customized composite font to obtain better control of fonts that are used for different languages. By default, [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] uses the GlobalUserInterface.composite font in your Windows\Fonts directory.
+- Create a customized composite font to obtain better control of fonts that are used for different languages. By default, WPF uses the GlobalUserInterface.composite font in your Windows\Fonts directory.
 
 - When you create navigation applications that may be localized in a culture that presents text in a right-to-left format, explicitly set the <xref:System.Windows.FlowDirection> of every page to ensure the page does not inherit <xref:System.Windows.FlowDirection> from the <xref:System.Windows.Navigation.NavigationWindow>.
 
@@ -48,13 +48,13 @@ When you design a [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-w
 
 ### Best Practices for WPF Localization
 
-When you localize [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)]–based applications, consider implementing these best practices:
+When you localize WPF–based applications, consider implementing these best practices:
 
 - Use localization comments to provide extra context for localizers.
 
 - Use localization attributes to control localization instead of selectively omitting <xref:System.Windows.Markup.Localizer.BamlLocalizableResourceKey.Uid%2A> properties on elements. See [Localization Attributes and Comments](localization-attributes-and-comments.md) for more information.
 
-- Use `msbuild -t:updateuid` and `-t:checkuid` to add and check <xref:System.Windows.Markup.Localizer.BamlLocalizableResourceKey.Uid%2A> properties in your [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)]. Use <xref:System.Windows.Markup.Localizer.BamlLocalizableResourceKey.Uid%2A> properties to track changes between development and localization. <xref:System.Windows.Markup.Localizer.BamlLocalizableResourceKey.Uid%2A> properties help you localize new development changes. If you manually add <xref:System.Windows.Markup.Localizer.BamlLocalizableResourceKey.Uid%2A> properties to a [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)], the task is typically tedious and less accurate.
+- Use `msbuild -t:updateuid` and `-t:checkuid` to add and check <xref:System.Windows.Markup.Localizer.BamlLocalizableResourceKey.Uid%2A> properties in your UI, the task is typically tedious and less accurate.
 
   - Do not edit or change <xref:System.Windows.Markup.Localizer.BamlLocalizableResourceKey.Uid%2A> properties after you begin localization.
 
@@ -66,27 +66,27 @@ When you localize [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-w
 
 ## Localize a WPF Application
 
-When you localize a [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] application, you have several options. For example, you can bind the localizable resources in your application to an XML file, store localizable text in resx tables, or have your localizer use [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)] files. This section describes a localization workflow that uses the BAML form of XAML, which provides several benefits:
+When you localize a WPF application, you have several options. For example, you can bind the localizable resources in your application to an XML file, store localizable text in resx tables, or have your localizer use Extensible Application Markup Language (XAML) files. This section describes a localization workflow that uses the BAML form of XAML, which provides several benefits:
 
 - You can localize after you build.
 
 - You can update to a newer version of the BAML form of XAML with localizations from an older version of the BAML form of XAML so that you can localize at the same time that you develop.
 
-- You can validate original source elements and semantics at compile time because the BAML form of XAML is the compiled form of [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)].
+- You can validate original source elements and semantics at compile time because the BAML form of XAML is the compiled form of XAML.
 
 ### Localization Build Process
 
-When you develop a [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] application, the build process for localization is as follows:
+When you develop a WPF application, the build process for localization is as follows:
 
-- The developer creates and globalizes the [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] application. In the project file the developer sets `<UICulture>en-US</UICulture>` so that when the application is compiled, a language-neutral main assembly is generated. This assembly has a satellite .resources.dll file that contains all the localizable resources. Optionally, you can keep the source language in the main assembly because our localization APIs support extraction from the main assembly.
+- The developer creates and globalizes the WPF application. In the project file the developer sets `<UICulture>en-US</UICulture>` so that when the application is compiled, a language-neutral main assembly is generated. This assembly has a satellite .resources.dll file that contains all the localizable resources. Optionally, you can keep the source language in the main assembly because our localization APIs support extraction from the main assembly.
 
-- When the file is compiled into the build, the [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] is converted to the BAML form of XAML. The culturally neutral `MyDialog.exe` and the culturally dependent (English) `MyDialog.resources.dll` files are released to the English-speaking customer.
+- When the file is compiled into the build, the XAML is converted to the BAML form of XAML. The culturally neutral `MyDialog.exe` and the culturally dependent (English) `MyDialog.resources.dll` files are released to the English-speaking customer.
 
 ### Localization Workflow
 
-The localization process begins after the unlocalized `MyDialog.resources.dll` file is built. The [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] elements and properties in your original [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] are extracted from the BAML form of XAML into key-value pairs by using the APIs under <xref:System.Windows.Markup.Localizer>. Localizers use the key-value pairs to localize the application. You can generate a new .resource.dll from the new values after localization is complete.
+The localization process begins after the unlocalized `MyDialog.resources.dll` file is built. The UI elements and properties in your original XAML are extracted from the BAML form of XAML into key-value pairs by using the APIs under <xref:System.Windows.Markup.Localizer>. Localizers use the key-value pairs to localize the application. You can generate a new .resource.dll from the new values after localization is complete.
 
-The keys of the key-value pairs are `x:Uid` values that are placed by the developer in the original [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)]. These `x:Uid` values enable the API to track and merge changes that happen between the developer and the localizer during localization. For example, if the developer changes the [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] after the localizer begins localizing, you can merge the development change with the already completed localization work so that minimal translation work is lost.
+The keys of the key-value pairs are `x:Uid` values that are placed by the developer in the original UI after the localizer begins localizing, you can merge the development change with the already completed localization work so that minimal translation work is lost.
 
 The following graphic shows a typical localization workflow that is based on the BAML form of XAML. This diagram assumes the developer writes the application in English. The developer creates and globalizes the WPF application. In the project file the developer sets `<UICulture>en-US</UICulture>` so that on build, a language neutral main assembly gets generated with a satellite .resources.dll containing all localizable resources. Alternately, one could keep the source language in the main assembly because WPF localization APIs support extraction from the main assembly. After the build process, the XAML get compiled into BAML. The culturally neutral MyDialog.exe.resources.dll get shipped to the English speaking customer.
 
@@ -96,7 +96,7 @@ The following graphic shows a typical localization workflow that is based on the
 
 ## Examples of WPF Localization
 
-This section contains examples of localized applications to help you understand how to build and localize [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] applications.
+This section contains examples of localized applications to help you understand how to build and localize WPF applications.
 
 ### Run Dialog Box Example
 
@@ -112,7 +112,7 @@ The following graphics show the output of the **Run** dialog box sample.
 
 **Designing a Global Run Dialog Box**
 
-This example produces a **Run** dialog box by using [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] and [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)]. This dialog box is equivalent to the **Run** dialog box that is available from the Microsoft Windows Start menu.
+This example produces a **Run** dialog box by using WPF and XAML. This dialog box is equivalent to the **Run** dialog box that is available from the Microsoft Windows Start menu.
 
 Some highlights for making global dialog boxes are:
 
@@ -126,15 +126,15 @@ The previous Window property automatically resizes the window according to the s
 
 `<Grid x:Uid="Grid_1">`
 
-<xref:System.Windows.Markup.Localizer.BamlLocalizableResourceKey.Uid%2A> properties are needed in order for [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] localization APIs to work correctly.
+<xref:System.Windows.Markup.Localizer.BamlLocalizableResourceKey.Uid%2A> properties are needed in order for WPF localization APIs to work correctly.
 
-They are used by [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] localization APIs to track changes between the development and localization of the [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)]. <xref:System.Windows.Markup.Localizer.BamlLocalizableResourceKey.Uid%2A> properties enable you to merge a newer version of the [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] with an older localization of the [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)]. You add a <xref:System.Windows.Markup.Localizer.BamlLocalizableResourceKey.Uid%2A> property by running `msbuild -t:updateuid RunDialog.csproj` in a command shell. This is the recommended method of adding <xref:System.Windows.Markup.Localizer.BamlLocalizableResourceKey.Uid%2A> properties because manually adding them is typically time-consuming and less accurate. You can check that <xref:System.Windows.Markup.Localizer.BamlLocalizableResourceKey.Uid%2A> properties are correctly set by running `msbuild -t:checkuid RunDialog.csproj`.
+They are used by UI with an older localization of the UI. You add a <xref:System.Windows.Markup.Localizer.BamlLocalizableResourceKey.Uid%2A> property by running `msbuild -t:updateuid RunDialog.csproj` in a command shell. This is the recommended method of adding <xref:System.Windows.Markup.Localizer.BamlLocalizableResourceKey.Uid%2A> properties because manually adding them is typically time-consuming and less accurate. You can check that <xref:System.Windows.Markup.Localizer.BamlLocalizableResourceKey.Uid%2A> properties are correctly set by running `msbuild -t:checkuid RunDialog.csproj`.
 
-The [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] is structured by using the <xref:System.Windows.Controls.Grid> control, which is a useful control for taking advantage of the automatic layout in [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)]. Note that the dialog box is split into three rows and five columns. Not one of the row and column definitions has a fixed size; hence, the [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] elements that are positioned in each cell can adapt to increases and decreases in size during localization.
+The UI is structured by using the <xref:System.Windows.Controls.Grid> control, which is a useful control for taking advantage of the automatic layout in UI elements that are positioned in each cell can adapt to increases and decreases in size during localization.
 
 [!code-xaml[GlobalizationRunDialog#GridColumnDef](~/samples/snippets/csharp/VS_Snippets_Wpf/GlobalizationRunDialog/CS/Window1.xaml#gridcolumndef)]
 
-The first two columns where the **Open:** label and <xref:System.Windows.Controls.ComboBox> are placed use 10 percent of the [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] total width.
+The first two columns where the **Open:** label and <xref:System.Windows.Controls.ComboBox> are placed use 10 percent of the UI total width.
 
 [!code-xaml[GlobalizationRunDialog#GridColumnDef2](~/samples/snippets/csharp/VS_Snippets_Wpf/GlobalizationRunDialog/CS/Window1.xaml#gridcolumndef2)]
 
@@ -144,7 +144,7 @@ Note that of the example uses the shared-sizing feature of <xref:System.Windows.
 
 `xml:lang="en-US"`
 
-Notice the [xml:lang Handling in XAML](/dotnet/desktop/xaml-services/xml-language-handling) placed at the root element of the [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)]. This property describes the culture of a given element and its children. This value is used by several features in [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] and should be changed appropriately during localization. This value changes what language dictionary is use to hyphenate and spell check words. It also affects the display of digits and how the font fallback system selects which font to use. Finally, the property affects the way numbers are displayed and the way texts written in complex scripts are shaped. The default value is "en-US".
+Notice the [xml:lang Handling in XAML](/dotnet/desktop/xaml-services/xml-language-handling) placed at the root element of the UI. This property describes the culture of a given element and its children. This value is used by several features in WPF and should be changed appropriately during localization. This value changes what language dictionary is use to hyphenate and spell check words. It also affects the display of digits and how the font fallback system selects which font to use. Finally, the property affects the way numbers are displayed and the way texts written in complex scripts are shaped. The default value is "en-US".
 
 **Building a Satellite Resource Assembly**
 
@@ -231,7 +231,7 @@ The following graphics show an English and Arabic Homepage. For the complete sam
 
 ### Designing a Global Microsoft home page
 
-This mock up of the Microsoft Saudi Arabia web site illustrates the globalization features provided for RightToLeft languages. Languages such as Hebrew and Arabic have a right-to-left reading order so the layout of [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] must often be laid out quite differently than it would be in left-to-right languages such as English. Localizing from a left-to-right language to a right-to-left language or vice versa can be quite challenging. [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] has been designed to make such localizations much easier.
+This mock up of the Microsoft Saudi Arabia web site illustrates the globalization features provided for RightToLeft languages. Languages such as Hebrew and Arabic have a right-to-left reading order so the layout of UI must often be laid out quite differently than it would be in left-to-right languages such as English. Localizing from a left-to-right language to a right-to-left language or vice versa can be quite challenging. WPF has been designed to make such localizations much easier.
 
 **FlowDirection**
 
@@ -239,7 +239,7 @@ This mock up of the Microsoft Saudi Arabia web site illustrates the globalizatio
 
 [!code-xaml[GlobalizationHomepage#Homepage](~/samples/snippets/csharp/VS_Snippets_Wpf/GlobalizationHomepage/CS/Homepage.xaml#homepage)]
 
-Notice the <xref:System.Windows.FrameworkElement.FlowDirection%2A> property on <xref:System.Windows.Controls.Page>. Changing this property to <xref:System.Windows.FlowDirection.RightToLeft> will change the <xref:System.Windows.FrameworkElement.FlowDirection%2A> of the <xref:System.Windows.Controls.Page> and its children elements so that the layout of this [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] is flipped to become right-to-left as an Arabic user would expect. One can override the inheritance behavior by specifying an explicit <xref:System.Windows.FrameworkElement.FlowDirection%2A> on any element. The <xref:System.Windows.FrameworkElement.FlowDirection%2A> property is available on any <xref:System.Windows.FrameworkElement> or document related element and has an implicit value of <xref:System.Windows.FlowDirection.LeftToRight>.
+Notice the <xref:System.Windows.FrameworkElement.FlowDirection%2A> property on <xref:System.Windows.Controls.Page>. Changing this property to <xref:System.Windows.FlowDirection.RightToLeft> will change the <xref:System.Windows.FrameworkElement.FlowDirection%2A> of the <xref:System.Windows.Controls.Page> and its children elements so that the layout of this UI is flipped to become right-to-left as an Arabic user would expect. One can override the inheritance behavior by specifying an explicit <xref:System.Windows.FrameworkElement.FlowDirection%2A> on any element. The <xref:System.Windows.FrameworkElement.FlowDirection%2A> property is available on any <xref:System.Windows.FrameworkElement> or document related element and has an implicit value of <xref:System.Windows.FlowDirection.LeftToRight>.
 
 Observe that even the background gradient brushes are flipped correctly when the root <xref:System.Windows.FrameworkElement.FlowDirection%2A> is changed:
 
@@ -253,7 +253,7 @@ Observe that even the background gradient brushes are flipped correctly when the
 
 **Avoid Using Fixed Dimensions for Panels and Controls**
 
-Take a look through Homepage.xaml, notice that aside from the fixed width and height specified for the entire [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] on the top <xref:System.Windows.Controls.DockPanel>, there are no other fixed dimensions. Avoid using fixed dimensions to prevent clipping localized text that may be longer than the source text. [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] panels and controls will automatically resize based on the content that they contain. Most controls also have minimum and maximum dimensions that you can set for more control (for example, MinWidth="20"). With <xref:System.Windows.Controls.Grid>, you can also set relative widths and heights by using '\*' (for example, `Width="0.25*"`) or use its cell size sharing feature.
+Take a look through Homepage.xaml, notice that aside from the fixed width and height specified for the entire UI on the top <xref:System.Windows.Controls.DockPanel>, there are no other fixed dimensions. Avoid using fixed dimensions to prevent clipping localized text that may be longer than the source text. WPF panels and controls will automatically resize based on the content that they contain. Most controls also have minimum and maximum dimensions that you can set for more control (for example, MinWidth="20"). With <xref:System.Windows.Controls.Grid>, you can also set relative widths and heights by using '\*' (for example, `Width="0.25*"`) or use its cell size sharing feature.
 
 **Localization Comments**
 
@@ -273,15 +273,15 @@ Comments can be placed on the content or property of any element using the follo
 
 **Localization Attributes**
 
-Often the developer or localization manager needs control of what localizers can read and modify. For example, you might not want the localizer to translate the name of your company or legal wording. [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] provides attributes that enable you to set the readability, modifiability, and category of an element's content or property which your localization tool can use to lock, hide, or sort elements. For more information, see <xref:System.Windows.Localization.Attributes%2A>. For the purposes of this sample, the LocBaml Tool just outputs the values of these attributes. [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] controls all have default values for these attributes, but you the can override them. For example, the following example overrides the default localization attributes for `TextBlock_1` and sets the content to be readable but unmodifiable for localizers.
+Often the developer or localization manager needs control of what localizers can read and modify. For example, you might not want the localizer to translate the name of your company or legal wording. WPF provides attributes that enable you to set the readability, modifiability, and category of an element's content or property which your localization tool can use to lock, hide, or sort elements. For more information, see <xref:System.Windows.Localization.Attributes%2A>. For the purposes of this sample, the LocBaml Tool just outputs the values of these attributes. WPF controls all have default values for these attributes, but you the can override them. For example, the following example overrides the default localization attributes for `TextBlock_1` and sets the content to be readable but unmodifiable for localizers.
 
 [!code-xaml[LocalizationComAtt#LocalizationAttributes](~/samples/snippets/csharp/VS_Snippets_Wpf/LocalizationComAtt/CSharp/Attributes.xaml#localizationattributes)]
 
-In addition to the readability and modifiability attributes, [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] provides an enumeration of common UI categories (<xref:System.Windows.LocalizationCategory>) that can be used to give localizers more context. The [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] default categories for platform controls can be overridden in [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] as well:
+In addition to the readability and modifiability attributes, WPF provides an enumeration of common UI categories (<xref:System.Windows.LocalizationCategory>) that can be used to give localizers more context. The WPF default categories for platform controls can be overridden in XAML as well:
 
 [!code-xaml[LocalizationComAtt#LocalizationAttributesOverridden](~/samples/snippets/csharp/VS_Snippets_Wpf/LocalizationComAtt/CSharp/Attributes.xaml#localizationattributesoverridden)]
 
-The default localization attributes that [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] provides can also be overridden through code, so you can correctly set the right default values for custom controls. For example:
+The default localization attributes that WPF provides can also be overridden through code, so you can correctly set the right default values for custom controls. For example:
 
 ```csharp
 [Localizability(Readability = Readability.Readable, Modifiability=Modifiability.Unmodifiable, LocalizationCategory.None)]
@@ -291,11 +291,11 @@ public class CorporateLogo : TextBlock
 }
 ```
 
-The per instance attributes set in [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] will take precedence over the values set in code on custom controls. For more information on attributes and comments, see [Localization Attributes and Comments](localization-attributes-and-comments.md).
+The per instance attributes set in XAML will take precedence over the values set in code on custom controls. For more information on attributes and comments, see [Localization Attributes and Comments](localization-attributes-and-comments.md).
 
 **Font Fallback and Composite Fonts**
 
-If you specify a font that does not support a given codepoint range, [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] will automatically fallback to one that does by using the Global User Interface.compositefont that is located in your Windows\Fonts directory. Composite fonts work just as any other font and can be used explicitly by setting an element's `FontFamily` (for instance, `FontFamily="Global User Interface"`). You can specify your own font fallback preference by creating your own composite font and specifying what font to use for specific codepoint ranges and languages.
+If you specify a font that does not support a given codepoint range, WPF will automatically fallback to one that does by using the Global User Interface.compositefont that is located in your Windows\Fonts directory. Composite fonts work just as any other font and can be used explicitly by setting an element's `FontFamily` (for instance, `FontFamily="Global User Interface"`). You can specify your own font fallback preference by creating your own composite font and specifying what font to use for specific codepoint ranges and languages.
 
 For more information on composite fonts see <xref:System.Windows.Media.FontFamily>.
 

@@ -8,7 +8,7 @@ helpviewer_keywords:
 ms.assetid: db086ae4-70bb-4862-95db-2eaca5216bc3
 ---
 # What's New in WPF Version 4.5
-<a name="introduction"></a> This topic contains information about new and enhanced features in [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] version 4.5.  
+<a name="introduction"></a> This topic contains information about new and enhanced features in Windows Presentation Foundation (WPF) version 4.5.  
   
  This topic contains the following sections:  
   

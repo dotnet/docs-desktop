@@ -12,7 +12,7 @@ This topic introduces you to key-frame animations. Key-frame animations enable y
   
 <a name="prerequisites"></a>
 ## Prerequisites  
- To understand this overview, you should be familiar with [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] animations and timelines. For an introduction to animations, see the [Animation Overview](animation-overview.md). It also helps to be familiar with From/To/By animations. For more information, see the From/To/By Animations Overview.  
+ To understand this overview, you should be familiar with Windows Presentation Foundation (WPF) animations and timelines. For an introduction to animations, see the [Animation Overview](animation-overview.md). It also helps to be familiar with From/To/By animations. For more information, see the From/To/By Animations Overview.  
   
 <a name="whatisakeyframeanimation"></a>
 ## What is a Key-Frame Animation?  
@@ -44,7 +44,7 @@ This topic introduces you to key-frame animations. Key-frame animations enable y
   
  Where *\<Type>* is the type of value that the class animates.  
   
- [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] provides the following key-frame animation classes.  
+ WPF provides the following key-frame animation classes.  
   
 |Property type|Corresponding from/to/by animation class|Interpolation methods supported|  
 |-------------------|------------------------------------------------|-------------------------------------|  
@@ -166,7 +166,7 @@ A key spline with control points (0.0, 1.0) and (1.0, 0.0)
   
  The following example specifies a <xref:System.Windows.Media.Animation.KeySpline> of 0.5,0.25 0.75,1.0, which creates the following Bezier curve.  
   
- ![A Bezier curve](./media/graphicsmm-keyspline-025-050-075-10.png "graphicsmm_keyspline_025_050_075_10")  
+ ![A second Bezier curve example.](./media/graphicsmm-keyspline-025-050-075-10.png "graphicsmm_keyspline_025_050_075_10")  
 A key spline with control points (0.25, 0.5) and (0.75, 1.0)  
   
  [!code-xaml[keyframes_ovw_snippet#SingleSplineKeyFrameExampleInline3](~/samples/snippets/csharp/VS_Snippets_Wpf/keyframes_ovw_snippet/CS/InterpolationMethodsExample.xaml#singlesplinekeyframeexampleinline3)]  
@@ -209,7 +209,7 @@ A key spline with control points (0.25, 0.5) and (0.75, 1.0)
  [!code-xaml[keyframes_ovw_snippet#TimeSpanKeyTimeExample](~/samples/snippets/csharp/VS_Snippets_Wpf/keyframes_ovw_snippet/CS/KeyTimesExample.xaml#timespankeytimeexample)]  
   
 ### Percentage Values  
- A percentage value specifies that the key frame ends at some percentage of the animation's <xref:System.Windows.Media.Animation.Timeline.Duration%2A>. In [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)], you specify the percentage as a number followed by the `%` symbol. In code, you use the <xref:System.Windows.Media.Animation.KeyTime.FromPercent%2A> method and pass it a <xref:System.Double> indicating the percentage. The value must be greater than or equal to 0 and less than or equal to 100 percent. The following example shows an animation with a duration of 10 seconds and four key frames whose key times are specified as percentages.  
+ A percentage value specifies that the key frame ends at some percentage of the animation's <xref:System.Windows.Media.Animation.Timeline.Duration%2A>. In XAML, you specify the percentage as a number followed by the `%` symbol. In code, you use the <xref:System.Windows.Media.Animation.KeyTime.FromPercent%2A> method and pass it a <xref:System.Double> indicating the percentage. The value must be greater than or equal to 0 and less than or equal to 100 percent. The following example shows an animation with a duration of 10 seconds and four key frames whose key times are specified as percentages.  
   
 - The first key frame animates from the base value to 100 over the first 3 seconds, ending at time = 0:0:3.  
   

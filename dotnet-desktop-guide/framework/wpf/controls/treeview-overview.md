@@ -21,7 +21,7 @@ The <xref:System.Windows.Controls.TreeView> control provides a way to display in
 ## Creating a TreeView  
  The <xref:System.Windows.Controls.TreeView> control contains a hierarchy of <xref:System.Windows.Controls.TreeViewItem> controls. A <xref:System.Windows.Controls.TreeViewItem> control is a <xref:System.Windows.Controls.HeaderedItemsControl> that has a <xref:System.Windows.Controls.HeaderedItemsControl.Header%2A> and an <xref:System.Windows.Controls.ItemsControl.Items%2A> collection.  
   
- If you are defining a <xref:System.Windows.Controls.TreeView> by using [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)], you can explicitly define the <xref:System.Windows.Controls.HeaderedItemsControl.Header%2A> content of a <xref:System.Windows.Controls.TreeViewItem> control and the items that make up its collection. The previous illustration demonstrates this method.  
+ If you are defining a <xref:System.Windows.Controls.TreeView> by using Extensible Application Markup Language (XAML), you can explicitly define the <xref:System.Windows.Controls.HeaderedItemsControl.Header%2A> content of a <xref:System.Windows.Controls.TreeViewItem> control and the items that make up its collection. The previous illustration demonstrates this method.  
   
  You can also specify an <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> as a data source and then specify a <xref:System.Windows.Controls.HeaderedItemsControl.HeaderTemplate%2A> and <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A> to define the <xref:System.Windows.Controls.TreeViewItem> content.  
   

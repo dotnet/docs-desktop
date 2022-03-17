@@ -7,7 +7,7 @@ ms.assetid: cc5a0281-de81-4cc1-87e4-0e46b1a811e9
 ---
 # IWpfHostSupport
 
-Applications that host [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] content via PresentationHost.exe implement this interface to provide a point of integration between the host and PresentationHost.exe.  
+Applications that host Windows Presentation Foundation (WPF) content via PresentationHost.exe implement this interface to provide a point of integration between the host and PresentationHost.exe.  
   
 ## Remarks  
 

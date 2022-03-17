@@ -10,7 +10,7 @@ helpviewer_keywords:
 ms.assetid: 5a5733aa-396d-4d72-b0c3-77f8c25d9a42
 ---
 # How to: Use a BitmapImage
-This example shows how to use a <xref:System.Windows.Media.Imaging.BitmapImage> as the source of an <xref:System.Windows.Controls.Image> control in [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)].  
+This example shows how to use a <xref:System.Windows.Media.Imaging.BitmapImage> as the source of an <xref:System.Windows.Controls.Image> control in Extensible Application Markup Language (XAML).  
   
 ## Example  
  [!code-xaml[ImageElementExample_snip#ImageSimpleExampleInlineMarkup](~/samples/snippets/csharp/VS_Snippets_Wpf/ImageElementExample_snip/CSharp/ImageSimpleExample.xaml#imagesimpleexampleinlinemarkup)]  

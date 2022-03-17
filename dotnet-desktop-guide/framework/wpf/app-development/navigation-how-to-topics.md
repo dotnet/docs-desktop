@@ -8,7 +8,7 @@ helpviewer_keywords:
 ms.assetid: f804648e-558c-4f60-8e48-d11f4a23c436
 ---
 # Navigation How-to Topics
-The following topics show how to use [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] navigation.  
+The following topics show how to use Windows Presentation Foundation (WPF) navigation.  
   
 ## In This Section  
  [Call a Page Function](how-to-call-a-page-function.md)  

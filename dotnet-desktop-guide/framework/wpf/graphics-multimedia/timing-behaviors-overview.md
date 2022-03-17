@@ -19,7 +19,7 @@ This topic describes the timing behaviors of animations and other <xref:System.W
 ## Timeline Types  
  A <xref:System.Windows.Media.Animation.Timeline> represents a segment of time. It provides properties that enable you to specify the length of that segment, when it should start, how many times it will repeat, how fast time progresses in that segment, and more.  
   
- Classes that inherit from the timeline class provide additional functionality, such as animation and media playback. [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] provides the following <xref:System.Windows.Media.Animation.Timeline> types.  
+ Classes that inherit from the timeline class provide additional functionality, such as animation and media playback. WPF provides the following <xref:System.Windows.Media.Animation.Timeline> types.  
   
 |Timeline type|Description|  
 |-------------------|-----------------|  
@@ -88,7 +88,7 @@ This topic describes the timing behaviors of animations and other <xref:System.W
   
 <a name="timelinebegin"></a>
 ## The BeginTime Property  
- The <xref:System.Windows.Media.Animation.Timeline.BeginTime%2A> property enables you to specify when a timeline starts.  A timeline's begin time is relative to its parent timeline. A begin time of zero seconds means the timeline starts as soon as it parent starts; any other value creates an offset between when the parent timeline starts playing and when the child timeline plays. For example, a begin time of two seconds means the timeline starts playing when its parent has reached a time of two seconds. By default, all timelines have a begin time of zero seconds. You may also set a timeline's begin time to `null`, which prevents the timeline from starting. In [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)], you specify null using the [x:Null Markup Extension](/dotnet/desktop/xaml-services/xnull-markup-extension).  
+ The <xref:System.Windows.Media.Animation.Timeline.BeginTime%2A> property enables you to specify when a timeline starts.  A timeline's begin time is relative to its parent timeline. A begin time of zero seconds means the timeline starts as soon as it parent starts; any other value creates an offset between when the parent timeline starts playing and when the child timeline plays. For example, a begin time of two seconds means the timeline starts playing when its parent has reached a time of two seconds. By default, all timelines have a begin time of zero seconds. You may also set a timeline's begin time to `null`, which prevents the timeline from starting. In WPF, you specify null using the [x:Null Markup Extension](/dotnet/desktop/xaml-services/xnull-markup-extension).  
   
  Note that the begin time is not applied each time a timeline repeats because of its <xref:System.Windows.Media.Animation.Timeline.RepeatBehavior%2A> setting. If you were to create an animation with a <xref:System.Windows.Media.Animation.Timeline.BeginTime%2A> of 10 seconds and a <xref:System.Windows.Media.Animation.RepeatBehavior> of <xref:System.Windows.Media.Animation.RepeatBehavior.Forever%2A>, there would be a 10-second delay before the animation played for the first time, but not for each successive repetition. However, if the animation's parent timeline were to restart or repeat, the 10-second delay would occur.  
   

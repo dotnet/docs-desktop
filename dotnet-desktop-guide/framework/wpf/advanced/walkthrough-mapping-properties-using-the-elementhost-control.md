@@ -11,7 +11,7 @@ ms.assetid: bccd6e0d-2272-4924-9107-ff8ed58b88aa
 ---
 # Walkthrough: Mapping Properties Using the ElementHost Control
 
-This walkthrough shows you how to use the <xref:System.Windows.Forms.Integration.ElementHost.PropertyMap%2A> property to map Windows Forms properties to corresponding properties on a hosted [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] element.
+This walkthrough shows you how to use the <xref:System.Windows.Forms.Integration.ElementHost.PropertyMap%2A> property to map Windows Forms properties to corresponding properties on a hosted WPF element.
 
 Tasks illustrated in this walkthrough include:
 
@@ -23,7 +23,7 @@ Tasks illustrated in this walkthrough include:
 
 - Extending a default property mapping.
 
-When you are finished, you will be able to map Windows Forms properties to corresponding [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] properties on a hosted element.
+When you are finished, you will be able to map Windows Forms properties to corresponding WPF properties on a hosted element.
 
 ## Prerequisites
 
@@ -37,7 +37,7 @@ You need the following components to complete this walkthrough:
 
 1. Create a **Windows Forms App** project named `PropertyMappingWithElementHost`.
 
-2. In **Solution Explorer**, add references to the following [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] assemblies.
+2. In **Solution Explorer**, add references to the following WPF assemblies.
 
     - PresentationCore
 
@@ -74,7 +74,7 @@ The <xref:System.Windows.Forms.Integration.ElementHost> control provides several
 
      The `AddMarginMapping` method adds a new mapping for the <xref:System.Windows.Forms.Control.Margin%2A> property.
 
-     The `OnMarginChange` method translates the <xref:System.Windows.Forms.Control.Margin%2A> property to the [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] <xref:System.Windows.FrameworkElement.Margin%2A> property.
+     The `OnMarginChange` method translates the <xref:System.Windows.Forms.Control.Margin%2A> property to the WPF <xref:System.Windows.FrameworkElement.Margin%2A> property.
 
 2. Copy the following code into the definition for the `Form1` class.
 
@@ -83,7 +83,7 @@ The <xref:System.Windows.Forms.Integration.ElementHost> control provides several
 
      The `AddRegionMapping` method adds a new mapping for the <xref:System.Windows.Forms.Control.Region%2A> property.
 
-     The `OnRegionChange` method translates the <xref:System.Windows.Forms.Control.Region%2A> property to the [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] <xref:System.Windows.UIElement.Clip%2A> property.
+     The `OnRegionChange` method translates the <xref:System.Windows.Forms.Control.Region%2A> property to the WPF <xref:System.Windows.UIElement.Clip%2A> property.
 
      The `Form1_Resize` method handles the form's <xref:System.Windows.Forms.Control.Resize> event and sizes the clipping region to fit the hosted element.
 
@@ -124,7 +124,7 @@ You can use a default property mapping and also extend it with your own mapping.
 
      The `Form1_Load` method handles the <xref:System.Windows.Forms.Form.Load> event and performs the following initialization.
 
-    - Creates a [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] <xref:System.Windows.Controls.Button> element.
+    - Creates a WPF <xref:System.Windows.Controls.Button> element.
 
     - Calls the methods you defined earlier in the walkthrough to set up the property mappings.
 

@@ -38,7 +38,7 @@ ms.assetid: 5d5ee837-629a-4933-869a-186dc22ac43d
   
  These pages are arranged in a *navigation topology* whose structure is determined by how you can navigate between the pages. This particular navigation topology is suitable in simple scenarios, although navigation can require more complex topologies, some of which can only be defined when an application is running.  
   
- This topic covers three common navigation topologies: *fixed linear*, *fixed hierarchical*, and *dynamically generated*. Each navigation topology is demonstrated with a sample that has a [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] like the one that is shown in the following figure:  
+ This topic covers three common navigation topologies: *fixed linear*, *fixed hierarchical*, and *dynamically generated*. Each navigation topology is demonstrated with a sample that has a UI like the one that is shown in the following figure:  
   
  ![Task pages with data items and navigation buttons.](./media/navigation-topologies-overview/navigation-topology-data-items.png)  
   
@@ -60,7 +60,7 @@ ms.assetid: 5d5ee837-629a-4933-869a-186dc22ac43d
   
  The typical behaviors for navigating over a fixed linear topology include the following:  
   
-- Navigating from the calling page to a launcher page that initializes the wizard and navigates to the first wizard page. A launcher page (a [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)]-less <xref:System.Windows.Navigation.PageFunction%601>) is not required, since a calling page can call the first wizard page directly. Using a launcher page, however, can simplify wizard initialization, particularly if initialization is complex.  
+- Navigating from the calling page to a launcher page that initializes the wizard and navigates to the first wizard page. A launcher page (a UI-less <xref:System.Windows.Navigation.PageFunction%601>) is not required, since a calling page can call the first wizard page directly. Using a launcher page, however, can simplify wizard initialization, particularly if initialization is complex.  
   
 - Users can navigate between pages by using Back and Forward buttons (or hyperlinks).  
   
@@ -88,7 +88,7 @@ ms.assetid: 5d5ee837-629a-4933-869a-186dc22ac43d
   
  Even though the sequence in which pages in a fixed hierarchical structure are navigated is determined at run time, the user experience is the same as the user experience for a fixed linear topology:  
   
-- Navigating from the calling page to a launcher page that initializes the wizard and navigates to the first wizard page. A launcher page (a [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)]-less <xref:System.Windows.Navigation.PageFunction%601>) is not required, since a calling page can call the first wizard page directly. Using a launcher page, however, can simplify wizard initialization, particularly if initialization is complex.  
+- Navigating from the calling page to a launcher page that initializes the wizard and navigates to the first wizard page. A launcher page (a UI-less <xref:System.Windows.Navigation.PageFunction%601>) is not required, since a calling page can call the first wizard page directly. Using a launcher page, however, can simplify wizard initialization, particularly if initialization is complex.  
   
 - Users can navigate between pages by using Back and Forward buttons (or hyperlinks).  
   
@@ -118,7 +118,7 @@ ms.assetid: 5d5ee837-629a-4933-869a-186dc22ac43d
   
  The navigation sequence is known as a dynamically generated topology. For the user, as with the other navigation topologies, the user experience is the same as it is for the previous topologies:  
   
-- Navigating from the calling page to a launcher page that initializes the wizard and navigates to the first wizard page. A launcher page (a [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)]-less <xref:System.Windows.Navigation.PageFunction%601>) is not required, since a calling page can call the first wizard page directly. Using a launcher page, however, can simplify wizard initialization, particularly if initialization is complex.  
+- Navigating from the calling page to a launcher page that initializes the wizard and navigates to the first wizard page. A launcher page (a UI-less <xref:System.Windows.Navigation.PageFunction%601>) is not required, since a calling page can call the first wizard page directly. Using a launcher page, however, can simplify wizard initialization, particularly if initialization is complex.  
   
 - Users can navigate between pages by using Back and Forward buttons (or hyperlinks).  
   
