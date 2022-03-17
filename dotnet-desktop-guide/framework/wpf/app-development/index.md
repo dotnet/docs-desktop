@@ -34,7 +34,7 @@ Windows Presentation Foundation (WPF) is a presentation framework that can be us
   
 - Retrieving and processing command-line parameters.  
   
-- Sharing application-scope properties and [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] resources.  
+- Sharing application-scope properties and UI resources.  
   
 - Detecting and processing unhandled exceptions.  
   

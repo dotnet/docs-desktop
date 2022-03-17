@@ -112,7 +112,7 @@ This topic provides a guided tour of the Windows Presentation Foundation (WPF) c
   
  The two most critical things that <xref:System.Windows.FrameworkElement> introduces are data binding and styles.  
   
- The data binding subsystem in WPF should be relatively familiar to anyone that has used Windows Forms or ASP.NET for creating an application [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)]. In each of these systems, there is a simple way to express that you want one or more properties from a given element to be bound to a piece of data. WPF has full support for property binding, transformation, and list binding.  
+ The data binding subsystem in WPF should be relatively familiar to anyone that has used Windows Forms or ASP.NET for creating an application user interface (UI). In each of these systems, there is a simple way to express that you want one or more properties from a given element to be bound to a piece of data. WPF has full support for property binding, transformation, and list binding.  
   
  One of the most interesting features of data binding in WPF is the introduction of data templates. Data templates allow you to declaratively specify how a piece of data should be visualized. Instead of creating a custom user interface that can be bound to data, you can instead turn the problem around and let the data determine the display that will be created.  
   

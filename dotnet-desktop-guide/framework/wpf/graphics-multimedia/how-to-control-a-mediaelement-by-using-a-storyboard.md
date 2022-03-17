@@ -21,7 +21,7 @@ This example shows how to control a <xref:System.Windows.Controls.MediaElement> 
   
  This example shows how to create a simple media player that uses a <xref:System.Windows.Media.MediaTimeline> to control playback. The media player includes play, pause, resume, and stop buttons. The player also has a <xref:System.Windows.Controls.Slider> control that acts as a progress bar.  
   
- The following example creates the [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)] for the media player.  
+ The following example creates the user interface (UI) for the media player.  
   
  [!code-xaml[MediaGallery_snip#MediaTimelineExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/MediaGallery_snip/VB/MediaTimelineExample.xaml#mediatimelineexamplewholepage)]  
   

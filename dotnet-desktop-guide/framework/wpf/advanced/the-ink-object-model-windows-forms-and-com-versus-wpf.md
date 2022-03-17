@@ -41,7 +41,7 @@ There are essentially three platforms that support digital ink: the Tablet PC Wi
   
  ![Diagram of the Ink Object Model for COM&#47;Winforms.](./media/ink-inkownsstrokes.png "Ink_InkOwnsStrokes")  
   
- On the [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)], each <xref:System.Windows.Ink.Stroke?displayProperty=nameWithType> is a common language runtime object that exists as long as something has a reference to it.  Each <xref:System.Windows.Ink.Stroke> references a <xref:System.Windows.Input.StylusPointCollection> and <xref:System.Windows.Ink.DrawingAttributes?displayProperty=nameWithType> object, which are also common language runtime objects.  
+ On the WPF, each <xref:System.Windows.Ink.Stroke?displayProperty=nameWithType> is a common language runtime object that exists as long as something has a reference to it.  Each <xref:System.Windows.Ink.Stroke> references a <xref:System.Windows.Input.StylusPointCollection> and <xref:System.Windows.Ink.DrawingAttributes?displayProperty=nameWithType> object, which are also common language runtime objects.  
   
  ![Diagram of the Ink Object Model for WPF.](./media/ink-wpfinkobjectmodel.png "Ink_WPFInkObjectModel")  
   

@@ -12,15 +12,15 @@ ms.assetid: 75928354-dc01-47e8-a018-8409aec1f32d
 ---
 # Attached Properties Overview
 
-An attached property is a concept defined by XAML. An attached property is intended to be used as a type of global property that is settable on any dependency object. In [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)], attached properties are typically defined as a specialized form of dependency property that does not have the conventional property "wrapper".
+An attached property is a concept defined by XAML. An attached property is intended to be used as a type of global property that is settable on any dependency object. In Windows Presentation Foundation (WPF), attached properties are typically defined as a specialized form of dependency property that does not have the conventional property "wrapper".
 
 ## Prerequisites <a name="prerequisites"></a>
 
-This article assumes that you understand dependency properties from the perspective of a consumer of existing dependency properties on [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] classes, and have read the [Dependency Properties Overview](dependency-properties-overview.md). To follow the examples in this article, you should also understand XAML and know how to write WPF applications.
+This article assumes that you understand dependency properties from the perspective of a consumer of existing dependency properties on Windows Presentation Foundation (WPF) classes, and have read the [Dependency Properties Overview](dependency-properties-overview.md). To follow the examples in this article, you should also understand XAML and know how to write WPF applications.
 
 ## Why Use Attached Properties <a name="attached_properties_usage"></a>
 
-One purpose of an attached property is to allow different child elements to specify unique values for a property that's defined in a parent element. A specific application of this scenario is having child elements inform the parent element of how they are to be presented in the [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)]. One example is the <xref:System.Windows.Controls.DockPanel.Dock%2A?displayProperty=nameWithType> property. The <xref:System.Windows.Controls.DockPanel.Dock%2A?displayProperty=nameWithType> property is created as an attached property because it is designed to be set on elements that are contained within a <xref:System.Windows.Controls.DockPanel> rather than on <xref:System.Windows.Controls.DockPanel> itself. The <xref:System.Windows.Controls.DockPanel> class defines the static <xref:System.Windows.DependencyProperty> field named <xref:System.Windows.Controls.DockPanel.DockProperty>, and then provides the <xref:System.Windows.Controls.DockPanel.GetDock%2A> and <xref:System.Windows.Controls.DockPanel.SetDock%2A> methods as public accessors for the attached property.
+One purpose of an attached property is to allow different child elements to specify unique values for a property that's defined in a parent element. A specific application of this scenario is having child elements inform the parent element of how they are to be presented in the user interface (UI). One example is the <xref:System.Windows.Controls.DockPanel.Dock%2A?displayProperty=nameWithType> property. The <xref:System.Windows.Controls.DockPanel.Dock%2A?displayProperty=nameWithType> property is created as an attached property because it is designed to be set on elements that are contained within a <xref:System.Windows.Controls.DockPanel> rather than on <xref:System.Windows.Controls.DockPanel> itself. The <xref:System.Windows.Controls.DockPanel> class defines the static <xref:System.Windows.DependencyProperty> field named <xref:System.Windows.Controls.DockPanel.DockProperty>, and then provides the <xref:System.Windows.Controls.DockPanel.GetDock%2A> and <xref:System.Windows.Controls.DockPanel.SetDock%2A> methods as public accessors for the attached property.
 
 ## Attached Properties in XAML <a name="attached_properties_xaml"></a>
 
@@ -40,7 +40,7 @@ Also, because an attached property in XAML is an attribute that you set in marku
 
 ### Attached Property Implementation in WPF
 
-In [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)], most of the UI-related attached properties on WPF types are implemented as dependency properties. Attached properties are a XAML concept, whereas dependency properties are a WPF concept. Because WPF attached properties are dependency properties, they support dependency property concepts such as property metadata, and default values from that property metadata.
+In Windows Presentation Foundation (WPF), most of the UI-related attached properties on WPF types are implemented as dependency properties. Attached properties are a XAML concept, whereas dependency properties are a WPF concept. Because WPF attached properties are dependency properties, they support dependency property concepts such as property metadata, and default values from that property metadata.
 
 ## How Attached Properties Are Used by the Owning Type <a name="howused"></a>
 

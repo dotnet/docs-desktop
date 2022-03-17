@@ -38,7 +38,7 @@ Diagram of valid hit test region
   
 <a name="hit_testing_and_z-order"></a>
 ## Hit Testing and Z-Order  
- The [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] visual layer supports hit testing against all objects under a point or geometry, not just the top-most object. Results are returned in z-order. However, the visual object that you pass as the parameter to the <xref:System.Windows.Media.VisualTreeHelper.HitTest%2A> method determines which portion of the visual tree that will be hit test. You can hit test against the entire visual tree, or any portion of it.  
+ The Windows Presentation Foundation (WPF) visual layer supports hit testing against all objects under a point or geometry, not just the top-most object. Results are returned in z-order. However, the visual object that you pass as the parameter to the <xref:System.Windows.Media.VisualTreeHelper.HitTest%2A> method determines which portion of the visual tree that will be hit test. You can hit test against the entire visual tree, or any portion of it.  
   
  In the following illustration, the circle object is on top of both the square and triangle objects. If you are only interested in hit testing the visual object whose z-order value is top-most, you can set the visual hit test enumeration to return <xref:System.Windows.Media.HitTestResultBehavior.Stop> from the <xref:System.Windows.Media.HitTestResultCallback> to stop the hit test traversal after the first item.  
   

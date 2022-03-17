@@ -11,7 +11,7 @@ ms.assetid: 18997e71-745a-4425-9c69-2cbce1d8669e
 ---
 # Walkthrough: Binding to Data in Hybrid Applications
 
-Binding a data source to a control is essential for providing users with access to underlying data, whether you are using Windows Forms or [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)]. This walkthrough shows how you can use data binding in hybrid applications that include both Windows Forms and [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] controls.
+Binding a data source to a control is essential for providing users with access to underlying data, whether you are using Windows Forms or WPF. This walkthrough shows how you can use data binding in hybrid applications that include both Windows Forms and WPF controls.
 
 Tasks illustrated in this walkthrough include:
 

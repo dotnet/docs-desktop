@@ -13,13 +13,13 @@ ms.assetid: 94a13b94-cfdf-4b12-a1aa-90cb50c6e9b9
 ---
 # ScrollViewer Overview
 
-Content within a user interface is often larger than a computer screen's display area. The <xref:System.Windows.Controls.ScrollViewer> control provides a convenient way to enable scrolling of content in [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] applications. This topic introduces the <xref:System.Windows.Controls.ScrollViewer> element and provides several usage examples.  
+Content within a user interface is often larger than a computer screen's display area. The <xref:System.Windows.Controls.ScrollViewer> control provides a convenient way to enable scrolling of content in Windows Presentation Foundation (WPF) applications. This topic introduces the <xref:System.Windows.Controls.ScrollViewer> element and provides several usage examples.  
   
 <a name="what_is_a_scrollviewer_element"></a>
 
 ## The ScrollViewer Control  
 
- There are two predefined elements that enable scrolling in [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] applications: <xref:System.Windows.Controls.Primitives.ScrollBar> and <xref:System.Windows.Controls.ScrollViewer>. The <xref:System.Windows.Controls.ScrollViewer> control encapsulates horizontal and vertical <xref:System.Windows.Controls.Primitives.ScrollBar> elements and a content container (such as a <xref:System.Windows.Controls.Panel> element) in order to display other visible elements in a scrollable area. You must build a custom object in order to use the <xref:System.Windows.Controls.Primitives.ScrollBar> element for content scrolling. However, you can use the <xref:System.Windows.Controls.ScrollViewer> element by itself because it is a composite control that encapsulates <xref:System.Windows.Controls.Primitives.ScrollBar> functionality.  
+ There are two predefined elements that enable scrolling in WPF applications: <xref:System.Windows.Controls.Primitives.ScrollBar> and <xref:System.Windows.Controls.ScrollViewer>. The <xref:System.Windows.Controls.ScrollViewer> control encapsulates horizontal and vertical <xref:System.Windows.Controls.Primitives.ScrollBar> elements and a content container (such as a <xref:System.Windows.Controls.Panel> element) in order to display other visible elements in a scrollable area. You must build a custom object in order to use the <xref:System.Windows.Controls.Primitives.ScrollBar> element for content scrolling. However, you can use the <xref:System.Windows.Controls.ScrollViewer> element by itself because it is a composite control that encapsulates <xref:System.Windows.Controls.Primitives.ScrollBar> functionality.  
   
  The <xref:System.Windows.Controls.ScrollViewer> control responds to both mouse and keyboard commands, and defines numerous methods with which to scroll content by predetermined increments. You can use the <xref:System.Windows.Controls.ScrollViewer.ScrollChanged> event to detect a change in a <xref:System.Windows.Controls.ScrollViewer> state.  
   
@@ -29,7 +29,7 @@ Content within a user interface is often larger than a computer screen's display
 
 ## Physical vs. Logical Scrolling  
 
- Physical scrolling is used to scroll content by a predetermined physical increment, typically by a value that is declared in pixels. Logical scrolling is used to scroll to the next item in the logical tree. Physical scrolling is the default scroll behavior for most <xref:System.Windows.Controls.Panel> elements. [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] supports both types of scrolling.  
+ Physical scrolling is used to scroll content by a predetermined physical increment, typically by a value that is declared in pixels. Logical scrolling is used to scroll to the next item in the logical tree. Physical scrolling is the default scroll behavior for most <xref:System.Windows.Controls.Panel> elements. WPF supports both types of scrolling.  
   
 #### The IScrollInfo Interface  
 

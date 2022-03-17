@@ -44,7 +44,7 @@ This topic provides an introduction to the Microsoft Windows Presentation Founda
   
 - Support for in-file, proprietary metadata.  
   
-- The managed component utilizes the unmanaged infrastructure to provide seamless integration of images with other WPF features such as [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)], animation, and graphics. The managed component also benefits from the Windows Presentation Foundation (WPF) imaging codec extensibility model which enables automatic recognition of new image formats in WPF applications.  
+- The managed component utilizes the unmanaged infrastructure to provide seamless integration of images with other WPF features such as user interface (UI), animation, and graphics. The managed component also benefits from the Windows Presentation Foundation (WPF) imaging codec extensibility model which enables automatic recognition of new image formats in WPF applications.  
   
  The majority of the managed WPF Imaging API reside in the <xref:System.Windows.Media.Imaging?displayProperty=nameWithType> namespace, though several important types, such as <xref:System.Windows.Media.ImageBrush> and <xref:System.Windows.Media.ImageDrawing> reside in the <xref:System.Windows.Media?displayProperty=nameWithType> namespace and <xref:System.Windows.Controls.Image> resides in the <xref:System.Windows.Controls?displayProperty=nameWithType> namespace.  
   
@@ -93,11 +93,11 @@ This topic provides an introduction to the Microsoft Windows Presentation Founda
   
 ### Using the Image Control  
 
- <xref:System.Windows.Controls.Image> is a framework element and the primary way to display images in applications. In [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)], <xref:System.Windows.Controls.Image> can be used in two ways; attribute syntax or property syntax. The following example shows how to render an image 200 pixels wide using both attribute syntax and property tag syntax. For more information on attribute syntax and property syntax, see [Dependency Properties Overview](../advanced/dependency-properties-overview.md).  
+ <xref:System.Windows.Controls.Image> is a framework element and the primary way to display images in applications. In XAML, <xref:System.Windows.Controls.Image> can be used in two ways; attribute syntax or property syntax. The following example shows how to render an image 200 pixels wide using both attribute syntax and property tag syntax. For more information on attribute syntax and property syntax, see [Dependency Properties Overview](../advanced/dependency-properties-overview.md).  
   
  [!code-xaml[ImageElementExample_snip#ImageSimpleExampleInlineMarkup](~/samples/snippets/csharp/VS_Snippets_Wpf/ImageElementExample_snip/CSharp/ImageSimpleExample.xaml#imagesimpleexampleinlinemarkup)]  
   
- Many of the examples use a <xref:System.Windows.Media.Imaging.BitmapImage> object to reference an image file. <xref:System.Windows.Media.Imaging.BitmapImage> is a specialized <xref:System.Windows.Media.Imaging.BitmapSource> that is optimized for [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)] loading and is an easy way to display images as the <xref:System.Windows.Controls.Image.Source%2A> of an <xref:System.Windows.Controls.Image> control.  
+ Many of the examples use a <xref:System.Windows.Media.Imaging.BitmapImage> object to reference an image file. <xref:System.Windows.Media.Imaging.BitmapImage> is a specialized <xref:System.Windows.Media.Imaging.BitmapSource> that is optimized for Extensible Application Markup Language (XAML) loading and is an easy way to display images as the <xref:System.Windows.Controls.Image.Source%2A> of an <xref:System.Windows.Controls.Image> control.  
   
  The following example shows how to render an image 200 pixels wide using code.  
   
@@ -155,7 +155,7 @@ Different stretch settings
   
 ### Painting with Images  
 
- Images can also be displayed in an application by painting with a <xref:System.Windows.Media.Brush>. Brushes enable you to paint [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] objects with anything from simple, solid colors to complex sets of patterns and images. To paint with images, use an <xref:System.Windows.Media.ImageBrush>. An <xref:System.Windows.Media.ImageBrush> is a type of <xref:System.Windows.Media.TileBrush> that defines its content as a bitmap image. An <xref:System.Windows.Media.ImageBrush> displays a single image, which is specified by its <xref:System.Windows.Media.ImageBrush.ImageSource%2A> property. You can control how the image is stretched, aligned, and tiled, enabling you to prevent distortion and produce patterns and other effects. The following illustration shows some effects that can be achieved with an <xref:System.Windows.Media.ImageBrush>.  
+ Images can also be displayed in an application by painting with a <xref:System.Windows.Media.Brush>. Brushes enable you to paint UI objects with anything from simple, solid colors to complex sets of patterns and images. To paint with images, use an <xref:System.Windows.Media.ImageBrush>. An <xref:System.Windows.Media.ImageBrush> is a type of <xref:System.Windows.Media.TileBrush> that defines its content as a bitmap image. An <xref:System.Windows.Media.ImageBrush> displays a single image, which is specified by its <xref:System.Windows.Media.ImageBrush.ImageSource%2A> property. You can control how the image is stretched, aligned, and tiled, enabling you to prevent distortion and produce patterns and other effects. The following illustration shows some effects that can be achieved with an <xref:System.Windows.Media.ImageBrush>.  
   
  ![ImageBrush output examples](./media/wcpsdk-mmgraphics-imagebrushexamples.gif "wcpsdk_mmgraphics_imagebrushexamples")  
 Image brushes can fill shapes, controls, text, and more  

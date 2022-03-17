@@ -19,13 +19,13 @@ This topic describes how to use <xref:System.Windows.Media.SolidColorBrush>, <xr
 
 ## Painting an Area with a Solid Color
 
-One of the most common operations in any platform is to paint an area with a solid <xref:System.Windows.Media.Color>. To accomplish this task, [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] provides the <xref:System.Windows.Media.SolidColorBrush> class. The following sections describe the different ways to paint with a <xref:System.Windows.Media.SolidColorBrush>.
+One of the most common operations in any platform is to paint an area with a solid <xref:System.Windows.Media.Color>. To accomplish this task, Windows Presentation Foundation (WPF) provides the <xref:System.Windows.Media.SolidColorBrush> class. The following sections describe the different ways to paint with a <xref:System.Windows.Media.SolidColorBrush>.
 
 <a name="solidcolorinxaml"></a>
 
 ### Using a SolidColorBrush in "XAML"
 
-To paint an area with a solid color in [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)], use one of the following options.
+To paint an area with a solid color in XAML, use one of the following options.
 
 - Select a predefined solid color brush by name.  For example, you can set a button's <xref:System.Windows.Controls.Control.Background%2A> to "Red" or "MediumBlue".  For a list of other predefined solid color brushes, see the static properties of the <xref:System.Windows.Media.Brushes> class. The following is an example.
 
@@ -65,7 +65,7 @@ For additional ways to specify color, see the <xref:System.Windows.Media.Color> 
 
 ## Painting an Area with a Gradient
 
-A gradient brush paints an area with multiple colors that blend into each other along an axis. You can use them to create impressions of light and shadow, giving your controls a three-dimensional feel. You can also use them to simulate glass, chrome, water, and other smooth surfaces.  [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] provides two types of gradient brushes: <xref:System.Windows.Media.LinearGradientBrush> and <xref:System.Windows.Media.RadialGradientBrush>.
+A gradient brush paints an area with multiple colors that blend into each other along an axis. You can use them to create impressions of light and shadow, giving your controls a three-dimensional feel. You can also use them to simulate glass, chrome, water, and other smooth surfaces.  WPF provides two types of gradient brushes: <xref:System.Windows.Media.LinearGradientBrush> and <xref:System.Windows.Media.RadialGradientBrush>.
 
 <a name="lineargradientbrush"></a>
 
@@ -88,7 +88,7 @@ This code produces the following gradient:
 
 The <xref:System.Windows.Media.GradientStop> is the basic building block of a gradient brush.  A gradient stop specifies a <xref:System.Windows.Media.GradientStop.Color%2A> at an <xref:System.Windows.Media.GradientStop.Offset%2A> along the gradient axis.
 
-- The gradient stop's <xref:System.Windows.Media.GradientStop.Color%2A> property specifies the color of the gradient stop. You may set the color by using a predefined color (provided by the <xref:System.Windows.Media.Colors> class) or by specifying ScRGB or ARGB values. In [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)], you may also use hexadecimal notation to describe a color. For more information, see the <xref:System.Windows.Media.Color> structure.
+- The gradient stop's <xref:System.Windows.Media.GradientStop.Color%2A> property specifies the color of the gradient stop. You may set the color by using a predefined color (provided by the <xref:System.Windows.Media.Colors> class) or by specifying ScRGB or ARGB values. In XAML, you may also use hexadecimal notation to describe a color. For more information, see the <xref:System.Windows.Media.Color> structure.
 
 - The gradient stop's <xref:System.Windows.Media.GradientStop.Offset%2A> property specifies the position of the gradient stop's color on the gradient axis. The offset is a <xref:System.Double> that ranges from 0 to 1. The closer a gradient stop's offset value is to 0, the closer the color is to the start of the gradient. The closer the gradient's offset value is to 1, the closer the color is to the end of the gradient.
 
@@ -155,13 +155,13 @@ RadialGradientBrushes with different GradientOrigin, Center, RadiusX, and Radius
 
 ## Specifying Transparent or Partially-Transparent Gradient Stops
 
-Because gradient stops do not provide an opacity property, you must specify the alpha channel of colors using  ARGB hexadecimal notation in markup or use the <xref:System.Windows.Media.Color.FromScRgb%2A?displayProperty=nameWithType> method to create gradient stops that are transparent or partially transparent. The following sections explain how to create partially transparent gradient stops in [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] and code.
+Because gradient stops do not provide an opacity property, you must specify the alpha channel of colors using  ARGB hexadecimal notation in markup or use the <xref:System.Windows.Media.Color.FromScRgb%2A?displayProperty=nameWithType> method to create gradient stops that are transparent or partially transparent. The following sections explain how to create partially transparent gradient stops in XAML and code.
 
 <a name="argbsyntax"></a>
 
 ### Specifying Color Opacity in "XAML"
 
-In [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)], you use  ARGB hexadecimal notation to specify the opacity of individual colors. ARGB hexadecimal notation uses the following syntax:
+In XAML, you use  ARGB hexadecimal notation to specify the opacity of individual colors. ARGB hexadecimal notation uses the following syntax:
 
 `#` **aa** *rrggbb*
 

@@ -17,11 +17,11 @@ ms.assetid: 66d7a6d6-e3b6-47bc-8dfe-8a1b26f7d901
 # Shapes and Basic Drawing in WPF Overview
 This topic gives an overview of how to draw with <xref:System.Windows.Shapes.Shape> objects. A <xref:System.Windows.Shapes.Shape> is a type of <xref:System.Windows.UIElement> that enables you to draw a shape to the screen. Because they are UI elements, <xref:System.Windows.Shapes.Shape> objects can be used inside <xref:System.Windows.Controls.Panel> elements and most controls.  
   
- [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] offers several layers of access to graphics and rendering services. At the top layer, <xref:System.Windows.Shapes.Shape> objects are easy to use and provide many useful features, such as layout and participation in the [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] event system.  
+ Windows Presentation Foundation (WPF) offers several layers of access to graphics and rendering services. At the top layer, <xref:System.Windows.Shapes.Shape> objects are easy to use and provide many useful features, such as layout and participation in the Windows Presentation Foundation (WPF) event system.  
 
 <a name="shapes"></a>
 ## Shape Objects  
- [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] provides a number of ready-to-use <xref:System.Windows.Shapes.Shape> objects.  All shape objects inherit from the <xref:System.Windows.Shapes.Shape> class. Available shape objects include <xref:System.Windows.Shapes.Ellipse>, <xref:System.Windows.Shapes.Line>, <xref:System.Windows.Shapes.Path>, <xref:System.Windows.Shapes.Polygon>, <xref:System.Windows.Shapes.Polyline>, and <xref:System.Windows.Shapes.Rectangle>. <xref:System.Windows.Shapes.Shape> objects share the following common properties.  
+ WPF provides a number of ready-to-use <xref:System.Windows.Shapes.Shape> objects.  All shape objects inherit from the <xref:System.Windows.Shapes.Shape> class. Available shape objects include <xref:System.Windows.Shapes.Ellipse>, <xref:System.Windows.Shapes.Line>, <xref:System.Windows.Shapes.Path>, <xref:System.Windows.Shapes.Polygon>, <xref:System.Windows.Shapes.Polyline>, and <xref:System.Windows.Shapes.Rectangle>. <xref:System.Windows.Shapes.Shape> objects share the following common properties.  
   
 - <xref:System.Windows.Shapes.Shape.Stroke%2A>: Describes how the shape's outline is painted.  
   
@@ -80,7 +80,7 @@ This topic gives an overview of how to draw with <xref:System.Windows.Shapes.Sha
   
 <a name="pathdatastring"></a>
 ### XAML Abbreviated Syntax  
- In [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)], you may also use a special abbreviated syntax to describe a <xref:System.Windows.Shapes.Path>. In the following example, abbreviated syntax is used to draw a complex shape.  
+ In Extensible Application Markup Language (XAML), you may also use a special abbreviated syntax to describe a <xref:System.Windows.Shapes.Path>. In the following example, abbreviated syntax is used to draw a complex shape.  
   
 ```xaml  
       <Path Stroke="DarkGoldenRod" StrokeThickness="3"
@@ -89,7 +89,7 @@ Data="M 100,200 C 100,25 400,350 400,175 H 280" />
   
  The following image shows a rendered <xref:System.Windows.Shapes.Path>.  
   
- ![Path illustration](./media/shape-ovw-path.PNG "shape_ovw_path")  
+ ![A second Path illustration.](./media/shape-ovw-path.PNG "shape_ovw_path")  
   
  The <xref:System.Windows.Shapes.Path.Data%2A> attribute string begins with the "moveto" command, indicated by M, which establishes a start point for the path in the coordinate system of the <xref:System.Windows.Controls.Canvas>. <xref:System.Windows.Shapes.Path> data parameters are case-sensitive. The capital M indicates an absolute location for the new current point. A lowercase m would indicate relative coordinates. The first segment is a cubic Bezier curve beginning at (100,200) and ending at (400,175), drawn using the two control points (100,25) and (400,350). This segment is indicated by the C command in the <xref:System.Windows.Shapes.Path.Data%2A> attribute string. Again, the capital C indicates an absolute path; the lowercase c would indicate a relative path.  
   

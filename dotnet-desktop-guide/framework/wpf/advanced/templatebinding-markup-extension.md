@@ -53,7 +53,7 @@ Links the value of a property in a control template to be the value of another p
   
  The verbose usage is often useful for extensions that have more than one settable property, or if some properties are optional. Because `TemplateBinding` has only one settable property, which is required, this verbose usage is not typical.  
   
- In the [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] XAML processor implementation, the handling for this markup extension is defined by the <xref:System.Windows.TemplateBindingExtension> class.  
+ In the WPF XAML processor implementation, the handling for this markup extension is defined by the <xref:System.Windows.TemplateBindingExtension> class.  
   
  `TemplateBinding` is a markup extension. Markup extensions are typically implemented when there is a requirement to escape attribute values to be other than literal values or handler names, and the requirement is more global than just putting type converters on certain types or properties. All markup extensions in XAML use the `{` and `}` characters in their attribute syntax, which is the convention by which a XAML processor recognizes that a markup extension must process the attribute. For more information, see [Markup Extensions and WPF XAML](markup-extensions-and-wpf-xaml.md).  
   

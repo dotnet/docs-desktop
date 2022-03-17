@@ -17,7 +17,7 @@ ms.assetid: f13c093f-1a05-45b3-ac8f-c9ea5e4a11c5
 This example shows how to extract the contents of a <xref:System.Windows.Controls.RichTextBox> as plain text.  
   
 ## Describe a RichTextBox control
- The following [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)] code describes a named <xref:System.Windows.Controls.RichTextBox> control with simple content.  
+ The following Extensible Application Markup Language (XAML) code describes a named <xref:System.Windows.Controls.RichTextBox> control with simple content.  
   
  [!code-xaml[RichTextBoxSnippets#_RTB_XAML](~/samples/snippets/csharp/VS_Snippets_Wpf/RichTextBoxSnippets/CSharp/Window1.xaml#_rtb_xaml)]  
   

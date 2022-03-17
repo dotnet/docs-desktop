@@ -12,7 +12,7 @@ ms.assetid: a1db8049-15c7-45d6-ae3d-36a6735cb848
 ---
 # Walkthrough: Arranging Windows Forms Controls in WPF
 
-This walkthrough shows you how to use [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] layout features to arrange Windows Forms controls in a hybrid application.
+This walkthrough shows you how to use WPF layout features to arrange Windows Forms controls in a hybrid application.
 
 Tasks illustrated in this walkthrough include:
 
@@ -33,7 +33,7 @@ Tasks illustrated in this walkthrough include:
 
 For a complete code listing of the tasks illustrated in this walkthrough, see [Arranging Windows Forms Controls in WPF Sample](https://github.com/microsoft/WPF-Samples/tree/master/Migration%20and%20Interoperability/WpfLayoutHostingWfWithXaml).
 
-When you are finished, you will have an understanding of Windows Forms layout features in [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)]-based applications.
+When you are finished, you will have an understanding of Windows Forms layout features in WPF-based applications.
 
 ## Prerequisites
 
@@ -115,7 +115,7 @@ To specify size explicitly, follow these steps:
 
 Always set layout-related properties on the hosted control by using the properties of the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element. Setting layout properties directly on the hosted control will yield unintended results.
 
- Setting layout-related properties on the hosted control in [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] has no effect.
+ Setting layout-related properties on the hosted control in XAML has no effect.
 
 To see the effects of setting properties on the hosted control, follow these steps:
 
@@ -146,7 +146,7 @@ Visible <xref:System.Windows.Forms.Integration.WindowsFormsHost> elements are al
 
 ## Docking
 
-<xref:System.Windows.Forms.Integration.WindowsFormsHost> element supports [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] docking. Set the <xref:System.Windows.Controls.DockPanel.Dock%2A> attached property to dock the hosted control in a <xref:System.Windows.Controls.DockPanel> element.
+<xref:System.Windows.Forms.Integration.WindowsFormsHost> element supports WPF docking. Set the <xref:System.Windows.Controls.DockPanel.Dock%2A> attached property to dock the hosted control in a <xref:System.Windows.Controls.DockPanel> element.
 
 To dock a hosted control, follow these steps:
 
@@ -187,7 +187,7 @@ To host a control that does not stretch, follow these steps:
 
      [!code-xaml[WpfLayoutHostingWfWithXaml#11](~/samples/snippets/csharp/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/CSharp/Window1.xaml#11)]
 
-2. Press <kbd>F5</kbd> to build and run the application. The <xref:System.Windows.Forms.Integration.WindowsFormsHost> element is centered in the grid row, but it is not stretched to fill the available space. If the window is large enough, you may see two or more months displayed by the hosted <xref:System.Windows.Forms.MonthCalendar> control, but these are centered in the row. The [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] layout engine centers elements that cannot be sized to fill the available space.
+2. Press <kbd>F5</kbd> to build and run the application. The <xref:System.Windows.Forms.Integration.WindowsFormsHost> element is centered in the grid row, but it is not stretched to fill the available space. If the window is large enough, you may see two or more months displayed by the hosted <xref:System.Windows.Forms.MonthCalendar> control, but these are centered in the row. The WPF layout engine centers elements that cannot be sized to fill the available space.
 
 ## Scaling
 
@@ -217,7 +217,7 @@ To see the effect of rotation in a hybrid application, follow these steps:
 
 ## Setting Padding and Margins
 
-Padding and margins in [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] layout are similar to padding and margins in Windows Forms. Simply set the <xref:System.Windows.Controls.Control.Padding%2A> and <xref:System.Windows.FrameworkElement.Margin%2A> properties on the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element.
+Padding and margins in WPF layout are similar to padding and margins in Windows Forms. Simply set the <xref:System.Windows.Controls.Control.Padding%2A> and <xref:System.Windows.FrameworkElement.Margin%2A> properties on the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element.
 
 To set padding and margins for a hosted control, follow these steps:
 
@@ -230,7 +230,7 @@ To set padding and margins for a hosted control, follow these steps:
 
 ## Using Dynamic Layout Containers
 
-Windows Forms provides two dynamic layout containers, <xref:System.Windows.Forms.FlowLayoutPanel> and <xref:System.Windows.Forms.TableLayoutPanel>. You can also use these containers in [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] layouts.
+Windows Forms provides two dynamic layout containers, <xref:System.Windows.Forms.FlowLayoutPanel> and <xref:System.Windows.Forms.TableLayoutPanel>. You can also use these containers in WPF layouts.
 
 To use a dynamic layout container, follow these steps:
 

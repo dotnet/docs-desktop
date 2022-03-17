@@ -10,10 +10,10 @@ helpviewer_keywords:
 ms.assetid: 39ee888c-e5ec-41c8-b11f-7b851a554442
 ---
 # Sharing Message Loops Between Win32 and WPF
-This topic describes how to implement a message loop for interoperation with [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)], either by using existing message loop exposure in <xref:System.Windows.Threading.Dispatcher> or by creating a separate message loop on the Win32 side of your interoperation code.  
+This topic describes how to implement a message loop for interoperation with Windows Presentation Foundation (WPF), either by using existing message loop exposure in <xref:System.Windows.Threading.Dispatcher> or by creating a separate message loop on the Win32 side of your interoperation code.  
   
 ## ComponentDispatcher and the Message Loop  
- A normal scenario for interoperation and keyboard event support is to implement <xref:System.Windows.Interop.IKeyboardInputSink>, or to subclass from classes that already implement <xref:System.Windows.Interop.IKeyboardInputSink>, such as <xref:System.Windows.Interop.HwndSource> or <xref:System.Windows.Interop.HwndHost>. However, keyboard sink support does not address all possible message loop needs you might have when sending and receiving messages across your interoperation boundaries. To help formalize an application message loop architecture, [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] provides the <xref:System.Windows.Interop.ComponentDispatcher> class, which defines a simple protocol for a message loop to follow.  
+ A normal scenario for interoperation and keyboard event support is to implement <xref:System.Windows.Interop.IKeyboardInputSink>, or to subclass from classes that already implement <xref:System.Windows.Interop.IKeyboardInputSink>, such as <xref:System.Windows.Interop.HwndSource> or <xref:System.Windows.Interop.HwndHost>. However, keyboard sink support does not address all possible message loop needs you might have when sending and receiving messages across your interoperation boundaries. To help formalize an application message loop architecture, Windows Presentation Foundation (WPF) provides the <xref:System.Windows.Interop.ComponentDispatcher> class, which defines a simple protocol for a message loop to follow.  
   
  <xref:System.Windows.Interop.ComponentDispatcher> is a static class that exposes several members. The scope of each method is implicitly tied to the calling thread. A message loop must call some of those APIs at critical times (as defined in the next section).  
   
@@ -33,7 +33,7 @@ This topic describes how to implement a message loop for interoperation with [!I
 - <xref:System.Windows.Interop.ComponentDispatcher.RaiseThreadMessage%2A>: your message loop should call this to indicate that a new message is available. The return value indicates whether a listener to a <xref:System.Windows.Interop.ComponentDispatcher> event handled the message. If <xref:System.Windows.Interop.ComponentDispatcher.RaiseThreadMessage%2A> returns `true` (handled), the dispatcher should do nothing further with the message. If the return value is `false`, the dispatcher is expected to call the Win32 function `TranslateMessage`, then call `DispatchMessage`.  
   
 ## Using ComponentDispatcher and Existing Message Handling  
- The following is a checklist of <xref:System.Windows.Interop.ComponentDispatcher> members you will use if you rely on the inherent [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] message loop.  
+ The following is a checklist of <xref:System.Windows.Interop.ComponentDispatcher> members you will use if you rely on the inherent WPF message loop.  
   
 - <xref:System.Windows.Interop.ComponentDispatcher.IsThreadModal%2A>: returns whether the application has gone modal (e.g., a modal message loop has been pushed). <xref:System.Windows.Interop.ComponentDispatcher> can track this state because the class maintains a count of <xref:System.Windows.Interop.ComponentDispatcher.PushModal%2A> and <xref:System.Windows.Interop.ComponentDispatcher.PopModal%2A> calls from the message loop.  
   

@@ -13,7 +13,7 @@ ms.assetid: 3b20d028-6f1c-4b25-95d2-fa68cefbdb4c
 # How to: Create a Rollover Effect Using Events
 This example shows how to change the color of an element as the mouse pointer enters and leaves the area occupied by the element.  
   
- This example consists of a [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)] file and a code-behind file.  
+ This example consists of a Extensible Application Markup Language (XAML) file and a code-behind file.  
   
 > [!NOTE]
 > This example demonstrates how to use events, but the recommended way to achieve this same effect is to use a <xref:System.Windows.Trigger> in a style. For more information, see [Styling and Templating](../controls/styles-templates-overview.md).  

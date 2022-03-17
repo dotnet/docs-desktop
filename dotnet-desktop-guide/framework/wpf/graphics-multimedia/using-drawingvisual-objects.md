@@ -10,7 +10,7 @@ helpviewer_keywords:
 ms.assetid: 0b4e711d-e640-40cb-81c3-8f5c59909b7d
 ---
 # Using DrawingVisual Objects
-This topic provides an overview of how to use <xref:System.Windows.Media.DrawingVisual> objects in the [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] visual layer.  
+This topic provides an overview of how to use <xref:System.Windows.Media.DrawingVisual> objects in the WPF visual layer.  
   
 <a name="drawingvisual_object"></a>
 ## DrawingVisual Object  

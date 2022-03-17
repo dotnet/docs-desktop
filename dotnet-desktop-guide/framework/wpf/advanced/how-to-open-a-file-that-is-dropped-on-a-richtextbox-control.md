@@ -12,7 +12,7 @@ ms.assetid: 6bb8bb54-f576-41db-a9a7-24102ddeb490
 ---
 # How to: Open a File That is Dropped on a RichTextBox Control
 
-In [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)], the <xref:System.Windows.Controls.TextBox>, <xref:System.Windows.Controls.RichTextBox>, and <xref:System.Windows.Documents.FlowDocument> controls all have built-in drag-and-drop functionality. The built-in functionality enables drag-and-drop of text within and between the controls. However, it does not enable opening a file by dropping the file on the control. These controls also mark the drag-and-drop events as handled. As a result, by default, you cannot add your own event handlers to provide functionality to open dropped files.
+In Windows Presentation Foundation (WPF), the <xref:System.Windows.Controls.TextBox>, <xref:System.Windows.Controls.RichTextBox>, and <xref:System.Windows.Documents.FlowDocument> controls all have built-in drag-and-drop functionality. The built-in functionality enables drag-and-drop of text within and between the controls. However, it does not enable opening a file by dropping the file on the control. These controls also mark the drag-and-drop events as handled. As a result, by default, you cannot add your own event handlers to provide functionality to open dropped files.
 
 To add additional handling for drag-and-drop events in these controls, use the <xref:System.Windows.UIElement.AddHandler%28System.Windows.RoutedEvent%2CSystem.Delegate%2CSystem.Boolean%29> method to add your event handlers for the drag-and-drop events. Set the `handledEventsToo` parameter to `true` to have the specified handler be invoked for a routed event that has already been marked as handled by another element along the event route.
 

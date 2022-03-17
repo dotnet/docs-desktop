@@ -10,7 +10,7 @@ helpviewer_keywords:
 ms.assetid: d3b93c6f-aa6b-486d-a010-d097ea8a516b
 ---
 # Events (WPF)
-[!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] introduces routed events that can invoke handlers that exist on various listeners in the element tree of an application.  
+Windows Presentation Foundation (WPF) introduces routed events that can invoke handlers that exist on various listeners in the element tree of an application.  
   
 ## In This Section  
  [Routed Events Overview](routed-events-overview.md)  

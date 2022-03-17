@@ -35,7 +35,7 @@ ms.assetid: 737d04ec-8861-46c3-8d44-fa11d3528d23
 Users interact with Windows Presentation Foundation (WPF) standalone applications through windows. The primary purpose of a window is to host content that visualizes data and enables users to interact with data. Standalone WPF applications provide their own windows by using the <xref:System.Windows.Window> class. This topic introduces <xref:System.Windows.Window> before covering the fundamentals of creating and managing windows in standalone applications.  
   
 > [!NOTE]
-> Browser-hosted WPF applications, including XAML browser applications (XBAPs) and loose [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)] pages, don't provide their own windows. Instead, they are hosted in windows provided by Windows Internet Explorer. See [WPF XAML Browser Applications Overview](wpf-xaml-browser-applications-overview.md).  
+> Browser-hosted WPF applications, including XAML browser applications (XBAPs) and loose Extensible Application Markup Language (XAML) pages, don't provide their own windows. Instead, they are hosted in windows provided by Windows Internet Explorer. See [WPF XAML Browser Applications Overview](wpf-xaml-browser-applications-overview.md).  
 
 <a name="TheWindowClass"></a>
 ## The Window Class  
@@ -73,18 +73,18 @@ Users interact with Windows Presentation Foundation (WPF) standalone application
   
 <a name="DefiningAWindow"></a>
 ## Implementing a Window  
- The implementation of a typical window comprises both appearance and behavior, where *appearance* defines how a window looks to users and *behavior* defines the way a window functions as users interact with it. In WPF, you can implement the appearance and behavior of a window using either code or [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] markup.  
+ The implementation of a typical window comprises both appearance and behavior, where *appearance* defines how a window looks to users and *behavior* defines the way a window functions as users interact with it. In WPF, you can implement the appearance and behavior of a window using either code or XAML markup.  
   
- In general, however, the appearance of a window is implemented using [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] markup, and its behavior is implemented using code-behind, as shown in the following example.  
+ In general, however, the appearance of a window is implemented using XAML markup, and its behavior is implemented using code-behind, as shown in the following example.  
   
  [!code-xaml[WindowsOverviewSnippets#MarkupAndCodeBehindWindowMARKUP](~/samples/snippets/csharp/VS_Snippets_Wpf/WindowsOverviewSnippets/CSharp/MarkupAndCodeBehindWindow.xaml#markupandcodebehindwindowmarkup)]  
   
  [!code-csharp[WindowsOverviewSnippets#MarkupAndCodeBehindWindowCODEBEHIND](~/samples/snippets/csharp/VS_Snippets_Wpf/WindowsOverviewSnippets/CSharp/MarkupAndCodeBehindWindow.xaml.cs#markupandcodebehindwindowcodebehind)]
  [!code-vb[WindowsOverviewSnippets#MarkupAndCodeBehindWindowCODEBEHIND](~/samples/snippets/visualbasic/VS_Snippets_Wpf/WindowsOverviewSnippets/VisualBasic/MarkupAndCodeBehindWindow.xaml.vb#markupandcodebehindwindowcodebehind)]  
   
- To enable a [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] markup file and code-behind file to work together, the following are required:  
+ To enable a XAML markup file and code-behind file to work together, the following are required:  
   
-- In markup, the `Window` element must include the `x:Class` attribute. When the application is built, the existence of `x:Class` in the markup file causes Microsoft build engine (MSBuild) to create a `partial` class that derives from <xref:System.Windows.Window> and has the name that is specified by the `x:Class` attribute. This requires the addition of an XML namespace declaration for the [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] schema ( `xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"` ). The generated `partial` class implements the `InitializeComponent` method, which is called to register the events and set the properties that are implemented in markup.  
+- In markup, the `Window` element must include the `x:Class` attribute. When the application is built, the existence of `x:Class` in the markup file causes Microsoft build engine (MSBuild) to create a `partial` class that derives from <xref:System.Windows.Window> and has the name that is specified by the `x:Class` attribute. This requires the addition of an XML namespace declaration for the XAML schema ( `xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"` ). The generated `partial` class implements the `InitializeComponent` method, which is called to register the events and set the properties that are implemented in markup.  
   
 - In code-behind, the class must be a `partial` class with the same name that is specified by the `x:Class` attribute in markup, and it must derive from <xref:System.Windows.Window>. This allows the code-behind file to be associated with the `partial` class that is generated for the markup file when the application is built (see [Building a WPF Application](building-a-wpf-application-wpf.md)).  
   
@@ -93,7 +93,7 @@ Users interact with Windows Presentation Foundation (WPF) standalone application
 > [!NOTE]
 > When you add a new <xref:System.Windows.Window> to your project by using Visual Studio, the <xref:System.Windows.Window> is implemented using both markup and code-behind, and includes the necessary configuration to create the association between the markup and code-behind files as described here.  
   
- With this configuration in place, you can focus on defining the appearance of the window in [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] markup and implementing its behavior in code-behind. The following example shows a window with a button, implemented in [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] markup, and an event handler for the button's <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event, implemented in code-behind.  
+ With this configuration in place, you can focus on defining the appearance of the window in XAML markup and implementing its behavior in code-behind. The following example shows a window with a button, implemented in XAML markup, and an event handler for the button's <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event, implemented in code-behind.  
   
  [!code-xaml[WindowsOverviewWindowWithButtonSnippets#MarkupAndCodeBehindWindowMARKUP](~/samples/snippets/csharp/VS_Snippets_Wpf/WindowsOverviewWindowWithButtonSnippets/CSharp/MarkupAndCodeBehindWindow.xaml#markupandcodebehindwindowmarkup)]  
   
@@ -102,7 +102,7 @@ Users interact with Windows Presentation Foundation (WPF) standalone application
   
 <a name="ConfiguringWindowForMSBuild"></a>
 ## Configuring a Window Definition for MSBuild  
- How you implement your window determines how it is configured for MSBuild. For a window that is defined using both [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] markup and code-behind:  
+ How you implement your window determines how it is configured for MSBuild. For a window that is defined using both XAML markup and code-behind:  
   
 - XAML markup files are configured as MSBuild `Page` items.  
   
@@ -408,7 +408,7 @@ Users interact with Windows Presentation Foundation (WPF) standalone application
   
 - <xref:System.Windows.ResizeMode.CanResizeWithGrip>  
   
- As with <xref:System.Windows.Window.WindowStyle%2A>, the resize mode of a window is unlikely to change during its lifetime, which means that you'll most likely set it from [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] markup.  
+ As with <xref:System.Windows.Window.WindowStyle%2A>, the resize mode of a window is unlikely to change during its lifetime, which means that you'll most likely set it from XAML markup.  
   
  [!code-xaml[WindowsOverviewSnippets#ResizeModeWindowMARKUP1](~/samples/snippets/csharp/VS_Snippets_Wpf/WindowsOverviewSnippets/CSharp/ResizeModeWindow.xaml#resizemodewindowmarkup1)]  
   
@@ -432,7 +432,7 @@ Users interact with Windows Presentation Foundation (WPF) standalone application
   
  ![Illustration of window border styles.](./media/wpf-windows-overview/window-border-styles.png)  
   
- You can set <xref:System.Windows.Window.WindowStyle%2A> using either [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] markup or code; because it is unlikely to change during the lifetime of a window, you will most likely configure it using [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] markup.  
+ You can set <xref:System.Windows.Window.WindowStyle%2A> using either XAML markup or code; because it is unlikely to change during the lifetime of a window, you will most likely configure it using XAML markup.  
   
  [!code-xaml[WindowsOverviewSnippets#WindowStyleWindowMARKUP1](~/samples/snippets/csharp/VS_Snippets_Wpf/WindowsOverviewSnippets/CSharp/WindowStyleWindow.xaml#windowstylewindowmarkup1)]  
   

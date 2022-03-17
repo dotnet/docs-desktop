@@ -9,7 +9,7 @@ ms.assetid: 3b115594-6a93-4972-b24d-61aa16f1c15f
 ---
 # How to: Use Event Triggers to Control a Storyboard After It Starts
 
-This example shows how to control a <xref:System.Windows.Media.Animation.Storyboard> after it starts. To start a <xref:System.Windows.Media.Animation.Storyboard> by using [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)], use <xref:System.Windows.Media.Animation.BeginStoryboard>, which distributes the animations to the objects and properties they animate and then starts the storyboard. If you give <xref:System.Windows.Media.Animation.BeginStoryboard> a name by specifying its <xref:System.Windows.Media.Animation.BeginStoryboard.Name%2A> property, you make it a controllable storyboard. You can then interactively control the storyboard after it starts.
+This example shows how to control a <xref:System.Windows.Media.Animation.Storyboard> after it starts. To start a <xref:System.Windows.Media.Animation.Storyboard> by using XAML, use <xref:System.Windows.Media.Animation.BeginStoryboard>, which distributes the animations to the objects and properties they animate and then starts the storyboard. If you give <xref:System.Windows.Media.Animation.BeginStoryboard> a name by specifying its <xref:System.Windows.Media.Animation.BeginStoryboard.Name%2A> property, you make it a controllable storyboard. You can then interactively control the storyboard after it starts.
 
 Use the following storyboard actions together with <xref:System.Windows.EventTrigger> objects to control a storyboard.
 

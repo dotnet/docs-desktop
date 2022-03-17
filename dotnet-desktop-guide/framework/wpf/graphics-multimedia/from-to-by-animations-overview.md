@@ -14,7 +14,7 @@ This topic describes how to use From/To/By animations to animate dependency prop
   
 <a name="prereq"></a>
 ## Prerequisites  
- To understand this topic, you should be familiar with [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] animations features. For an introduction to animation features, see the [Animation Overview](animation-overview.md).  
+ To understand this topic, you should be familiar with WPF animations features. For an introduction to animation features, see the [Animation Overview](animation-overview.md).  
   
 <a name="whatisanimation"></a>
 ## What Is a From/To/By Animation?  
@@ -34,7 +34,7 @@ This topic describes how to use From/To/By animations to animate dependency prop
   
  Where *\<Type>* is the type of value that the class animates.  
   
- [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] provides the following From/To/By animation classes.  
+ WPF provides the following From/To/By animation classes.  
   
 |Property type|Corresponding From/To/By animation class|  
 |-------------------|------------------------------------------------|  
@@ -126,13 +126,13 @@ This topic describes how to use From/To/By animations to animate dependency prop
   
 <a name="otheranimationtypes"></a>
 ## Other Animation Types  
- From/To/By animations are not the only type of animations that [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] provides: it also provides key-frame animations and path animations.  
+ From/To/By animations are not the only type of animations that WPF provides: it also provides key-frame animations and path animations.  
   
 - A key-frame animation animates along any number of destination values, described using key frames. For more information, see the [Key-Frame Animations Overview](key-frame-animations-overview.md).  
   
 - A path animation generates output values from a <xref:System.Windows.Media.PathGeometry>. For more information, see the [Path Animations Overview](path-animations-overview.md).  
   
- [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] also enables you to create your own custom animation types. For more information, see the [Custom Animations Overview](custom-animations-overview.md).  
+ WPF also enables you to create your own custom animation types. For more information, see the [Custom Animations Overview](custom-animations-overview.md).  
   
 ## See also
 

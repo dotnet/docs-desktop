@@ -32,7 +32,7 @@ void __stdcall SetFakeActiveWindow(
   
  **DLL:** PresentationHost_v0400.dll  
   
- **.NET Framework Version:** [!INCLUDE[net_current_v40plus](../../../includes/net-current-v40plus-md.md)]  
+ **.NET Framework Version:** Available since 4  
   
 ## See also
 

@@ -8,7 +8,7 @@ helpviewer_keywords:
 ms.assetid: 559c0804-c62a-4640-b6b9-cbd2aa9fb99c
 ---
 # Drag and Drop How-to Topics
-The following examples demonstrate how to accomplish common tasks using the [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] drag-and-drop framework.  
+The following examples demonstrate how to accomplish common tasks using the Windows Presentation Foundation (WPF) drag-and-drop framework.  
   
 ## In This Section  
  [Open a File That is Dropped on a RichTextBox Control](how-to-open-a-file-that-is-dropped-on-a-richtextbox-control.md)  

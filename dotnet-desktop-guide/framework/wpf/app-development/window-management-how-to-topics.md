@@ -8,7 +8,7 @@ helpviewer_keywords:
 ms.assetid: 3090b408-94e4-446a-92ca-50f1fd36e5d8
 ---
 # Window Management How-to Topics
-The following topics show how to manage [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] windows.  
+The following topics show how to manage Windows Presentation Foundation (WPF) windows.  
   
 ## In This Section  
  [Automatically Size a Window to Fit Its Content](how-to-automatically-size-a-window-to-fit-its-content.md)  

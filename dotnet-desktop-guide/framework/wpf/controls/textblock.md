@@ -9,7 +9,7 @@ helpviewer_keywords:
 ms.assetid: ea5f7826-7a92-4de9-9eee-10ef700ce7b6
 ---
 # TextBlock
-The <xref:System.Windows.Controls.TextBlock> control provides flexible text support for [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] applications. The element is targeted primarily toward basic [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] scenarios that do not require more than one paragraph of text.  
+The <xref:System.Windows.Controls.TextBlock> control provides flexible text support for UI scenarios that do not require more than one paragraph of text.  
   
 ## In This Section  
  [TextBlock Overview](textblock-overview.md)  

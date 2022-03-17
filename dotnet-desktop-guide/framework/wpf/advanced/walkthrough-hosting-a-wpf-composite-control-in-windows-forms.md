@@ -7,11 +7,11 @@ helpviewer_keywords:
 ms.assetid: 0ac41286-4c1b-4b17-9196-d985cb844ce1
 ---
 # Walkthrough: Hosting a WPF Composite Control in Windows Forms
-[!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] provides a rich environment for creating applications. However, when you have a substantial investment in Windows Forms code, it can be more effective to extend your existing Windows Forms application with [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] rather than to rewrite it from scratch. A common scenario is when you want to embed one or more controls implemented with [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] within your Windows Forms application. For more information about customizing WPF controls, see [Control Customization](../controls/control-customization.md).  
+WPF rather than to rewrite it from scratch. A common scenario is when you want to embed one or more controls implemented with WPF within your Windows Forms application. For more information about customizing WPF controls, see [Control Customization](../controls/control-customization.md).  
   
- This walkthrough steps you through an application that hosts a [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] composite control to perform data-entry in a Windows Forms application. The composite control is packaged in a DLL. This general procedure can be extended to more complex applications and controls. This walkthrough is designed to be nearly identical in appearance and functionality to [Walkthrough: Hosting a Windows Forms Composite Control in WPF](walkthrough-hosting-a-windows-forms-composite-control-in-wpf.md). The primary difference is that the hosting scenario is reversed.  
+ This walkthrough steps you through an application that hosts a WPF composite control to perform data-entry in a Windows Forms application. The composite control is packaged in a DLL. This general procedure can be extended to more complex applications and controls. This walkthrough is designed to be nearly identical in appearance and functionality to [Walkthrough: Hosting a Windows Forms Composite Control in WPF](walkthrough-hosting-a-windows-forms-composite-control-in-wpf.md). The primary difference is that the hosting scenario is reversed.  
   
- The walkthrough is divided into two sections. The first section briefly describes the implementation of the [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] composite control. The second section discusses in detail how to host the composite control in a Windows Forms application, receive events from the control, and access some of the control's properties.  
+ The walkthrough is divided into two sections. The first section briefly describes the implementation of the WPF composite control. The second section discusses in detail how to host the composite control in a Windows Forms application, receive events from the control, and access some of the control's properties.  
   
  Tasks illustrated in this walkthrough include:  
   
@@ -26,7 +26,7 @@ ms.assetid: 0ac41286-4c1b-4b17-9196-d985cb844ce1
 You need Visual Studio to complete this walkthrough.  
   
 ## Implementing the WPF Composite Control  
- The [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] composite control used in this example is a simple data-entry form that takes the user's name and address. When the user clicks one of two buttons to indicate that the task is finished, the control raises a custom event to return that information to the host. The following illustration shows the rendered control.
+ The WPF composite control used in this example is a simple data-entry form that takes the user's name and address. When the user clicks one of two buttons to indicate that the task is finished, the control raises a custom event to return that information to the host. The following illustration shows the rendered control.
 
  The following image shows a WPF composite control:
 
@@ -58,10 +58,10 @@ You need Visual Studio to complete this walkthrough.
 - WindowsBase  
   
 ### Creating the User Interface  
- The [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)] for the composite control is implemented with [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)]. The composite control [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] consists of five <xref:System.Windows.Controls.TextBox> elements. Each <xref:System.Windows.Controls.TextBox> element has an associated <xref:System.Windows.Controls.TextBlock> element that serves as a label. There are two <xref:System.Windows.Controls.Button> elements at the bottom, **OK** and **Cancel**. When the user clicks either button, the control raises a custom event to return the information to the host.  
+ The UI consists of five <xref:System.Windows.Controls.TextBox> elements. Each <xref:System.Windows.Controls.TextBox> element has an associated <xref:System.Windows.Controls.TextBlock> element that serves as a label. There are two <xref:System.Windows.Controls.Button> elements at the bottom, **OK** and **Cancel**. When the user clicks either button, the control raises a custom event to return the information to the host.  
   
 #### Basic Layout  
- The various [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] elements are contained in a <xref:System.Windows.Controls.Grid> element. You can use <xref:System.Windows.Controls.Grid> to arrange the contents of the composite control in much the same way you would use a `Table` element in HTML. [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] also has a <xref:System.Windows.Documents.Table> element, but <xref:System.Windows.Controls.Grid> is more lightweight and better suited for simple layout tasks.  
+ The various UI elements are contained in a <xref:System.Windows.Controls.Grid> element. You can use <xref:System.Windows.Controls.Grid> to arrange the contents of the composite control in much the same way you would use a `Table` element in HTML. WPF also has a <xref:System.Windows.Documents.Table> element, but <xref:System.Windows.Controls.Grid> is more lightweight and better suited for simple layout tasks.  
   
  The following XAML shows the basic layout. This XAML defines the overall structure of the control by specifying the number of columns and rows in the <xref:System.Windows.Controls.Grid> element.  
   
@@ -71,7 +71,7 @@ You need Visual Studio to complete this walkthrough.
 [!code-xaml[WindowsFormsHostingWpfControl#102](~/samples/snippets/csharp/VS_Snippets_Wpf/WindowsFormsHostingWpfControl/CSharp/MyControls/Page1.xaml#102)]  
   
 #### Adding TextBlock and TextBox Elements to the Grid  
- You place a [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] element in the grid by setting the element's <xref:System.Windows.Controls.Grid.RowProperty> and <xref:System.Windows.Controls.Grid.ColumnProperty> attributes to the appropriate row and column number. Remember that row and column numbering are zero-based. You can have an element span multiple columns by setting its <xref:System.Windows.Controls.Grid.ColumnSpanProperty> attribute. For more information about <xref:System.Windows.Controls.Grid> elements, see [Create a Grid Element](../controls/how-to-create-a-grid-element.md).  
+ You place a UI element in the grid by setting the element's <xref:System.Windows.Controls.Grid.RowProperty> and <xref:System.Windows.Controls.Grid.ColumnProperty> attributes to the appropriate row and column number. Remember that row and column numbering are zero-based. You can have an element span multiple columns by setting its <xref:System.Windows.Controls.Grid.ColumnSpanProperty> attribute. For more information about <xref:System.Windows.Controls.Grid> elements, see [Create a Grid Element](../controls/how-to-create-a-grid-element.md).  
   
  The following XAML shows the composite control's <xref:System.Windows.Controls.TextBox> and <xref:System.Windows.Controls.TextBlock> elements with their <xref:System.Windows.Controls.Grid.RowProperty> and <xref:System.Windows.Controls.Grid.ColumnProperty> attributes, which are set to place the elements properly in the grid.  
   
@@ -82,7 +82,7 @@ You need Visual Studio to complete this walkthrough.
 #### Styling the UI Elements  
  Many of the elements on the data-entry form have a similar appearance, which means that they have identical settings for several of their properties. Rather than setting each element's attributes separately, the previous XAML uses <xref:System.Windows.Style> elements to define standard property settings for classes of elements. This approach reduces the complexity of the control and enables you to change the appearance of multiple elements through a single style attribute.  
   
- The <xref:System.Windows.Style> elements are contained in the <xref:System.Windows.Controls.Grid> element's <xref:System.Windows.FrameworkElement.Resources%2A> property, so they can be used by all elements in the control. If a style is named, you apply it to an element by adding a <xref:System.Windows.Style> element set to the style's name. Styles that are not named become the default style for the element. For more information about [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] styles, see [Styling and Templating](../controls/styles-templates-overview.md).  
+ The <xref:System.Windows.Style> elements are contained in the <xref:System.Windows.Controls.Grid> element's <xref:System.Windows.FrameworkElement.Resources%2A> property, so they can be used by all elements in the control. If a style is named, you apply it to an element by adding a <xref:System.Windows.Style> element set to the style's name. Styles that are not named become the default style for the element. For more information about WPF styles, see [Styling and Templating](../controls/styles-templates-overview.md).  
   
  The following XAML shows the <xref:System.Windows.Style> elements for the composite control. To see how the styles are applied to elements, see the previous XAML. For example, the last <xref:System.Windows.Controls.TextBlock> element has the `inlineText` style, and the last <xref:System.Windows.Controls.TextBox> element uses the default style.  
   
@@ -93,7 +93,7 @@ You need Visual Studio to complete this walkthrough.
 #### Adding the OK and Cancel Buttons  
  The final elements on the composite control are the **OK** and **Cancel**<xref:System.Windows.Controls.Button> elements, which occupy the first two columns of the last row of the <xref:System.Windows.Controls.Grid>. These elements use a common event handler, `ButtonClicked`, and the default <xref:System.Windows.Controls.Button> style defined in the previous XAML.  
   
- In MyControl1.xaml, add the following XAML after the last <xref:System.Windows.Controls.TextBox> element. The [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] part of the composite control is now complete.  
+ In MyControl1.xaml, add the following XAML after the last <xref:System.Windows.Controls.TextBox> element. The XAML part of the composite control is now complete.  
   
  [!code-xaml[WindowsFormsHostingWpfControl#105](~/samples/snippets/csharp/VS_Snippets_Wpf/WindowsFormsHostingWpfControl/CSharp/MyControls/Page1.xaml#105)]  
   
@@ -125,7 +125,7 @@ namespace MyControls
 }  
 ```  
   
- The first class, `MyControl1`, is a partial class containing the code that implements the functionality of the [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] defined in MyControl1.xaml. When MyControl1.xaml is parsed, the [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] is converted to the same partial class, and the two partial classes are merged to form the compiled control. For this reason, the class name in the code-behind file must match the class name assigned to MyControl1.xaml, and it must inherit from the root element of the control. The second class, `MyControlEventArgs`, is an event arguments class that is used to send the data back to the host.  
+ The first class, `MyControl1`, is a partial class containing the code that implements the functionality of the UI defined in MyControl1.xaml. When MyControl1.xaml is parsed, the XAML is converted to the same partial class, and the two partial classes are merged to form the compiled control. For this reason, the class name in the code-behind file must match the class name assigned to MyControl1.xaml, and it must inherit from the root element of the control. The second class, `MyControlEventArgs`, is an event arguments class that is used to send the data back to the host.  
   
  Open MyControl1.xaml.cs. Change the existing class declaration so that it has the following name and inherits from <xref:System.Windows.Controls.Grid>.  
   
@@ -175,7 +175,7 @@ namespace MyControls
   
 <a name="winforms_host_section"></a>
 ## Implementing the Windows Forms Host Application  
- The Windows Forms host application uses an <xref:System.Windows.Forms.Integration.ElementHost> object to host the [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] composite control. The application handles the `OnButtonClick` event to receive the data from the composite control. The application also has a set of option buttons that you can use to modify the control's appearance. The following illustration shows the application.  
+ The Windows Forms host application uses an <xref:System.Windows.Forms.Integration.ElementHost> object to host the WPF composite control. The application handles the `OnButtonClick` event to receive the data from the composite control. The application also has a set of option buttons that you can use to modify the control's appearance. The following illustration shows the application.  
 
 The following image shows a WPF composite control hosted in a Windows Forms application
 
@@ -221,7 +221,7 @@ The following image shows a WPF composite control hosted in a Windows Forms appl
   
 2. Enlarge the form to accommodate the controls.  
   
-3. In the upper-right corner of the form, add a <xref:System.Windows.Forms.Panel?displayProperty=nameWithType> control to hold the [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] composite control.  
+3. In the upper-right corner of the form, add a <xref:System.Windows.Forms.Panel?displayProperty=nameWithType> control to hold the WPF composite control.  
   
 4. Add the following <xref:System.Windows.Forms.GroupBox?displayProperty=nameWithType> controls to the form.  
   
@@ -256,7 +256,7 @@ The following image shows a WPF composite control hosted in a Windows Forms appl
     |groupBox6|radioWeightOriginal|Original|  
     |groupBox6|radioWeightBold|Bold|  
   
-6. Add the following <xref:System.Windows.Forms.Label?displayProperty=nameWithType> controls to the last <xref:System.Windows.Forms.GroupBox?displayProperty=nameWithType>. These controls display the data returned by the [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] composite control.  
+6. Add the following <xref:System.Windows.Forms.Label?displayProperty=nameWithType> controls to the last <xref:System.Windows.Forms.GroupBox?displayProperty=nameWithType>. These controls display the data returned by the WPF composite control.  
   
     |GroupBox|Name|Text|  
     |--------------|----------|----------|  
@@ -267,7 +267,7 @@ The following image shows a WPF composite control hosted in a Windows Forms appl
     |groupBox7|lblZip|Zip:|  
   
 ### Initializing the Form  
- You generally implement the hosting code in the form's <xref:System.Windows.Forms.Form.Load> event handler. The following code shows the <xref:System.Windows.Forms.Form.Load> event handler, a handler for the [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] composite control's <xref:System.Windows.FrameworkElement.Loaded> event, and declarations for several global variables that are used later.  
+ You generally implement the hosting code in the form's <xref:System.Windows.Forms.Form.Load> event handler. The following code shows the <xref:System.Windows.Forms.Form.Load> event handler, a handler for the WPF composite control's <xref:System.Windows.FrameworkElement.Loaded> event, and declarations for several global variables that are used later.  
   
  In the Windows Forms Designer, double-click the form to create a <xref:System.Windows.Forms.Form.Load> event handler. At the top of Form1.cs, add the following `using` statements.  
   
@@ -277,7 +277,7 @@ The following image shows a WPF composite control hosted in a Windows Forms appl
   
  [!code-csharp[WindowsFormsHostingWpfControl#2](~/samples/snippets/csharp/VS_Snippets_Wpf/WindowsFormsHostingWpfControl/CSharp/WFHost/Form1.cs#2)]  
   
- The `Form1_Load` method in the preceding code shows the general procedure for hosting a [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] control:  
+ The `Form1_Load` method in the preceding code shows the general procedure for hosting a WPF control:  
   
 1. Create a new <xref:System.Windows.Forms.Integration.ElementHost> object.  
   
@@ -285,7 +285,7 @@ The following image shows a WPF composite control hosted in a Windows Forms appl
   
 3. Add the <xref:System.Windows.Forms.Integration.ElementHost> control to the <xref:System.Windows.Forms.Panel> control's <xref:System.Windows.Forms.Control.Controls%2A> collection.  
   
-4. Create an instance of the [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] control.  
+4. Create an instance of the WPF control.  
   
 5. Host the composite control on the form by assigning the control to the <xref:System.Windows.Forms.Integration.ElementHost> control's <xref:System.Windows.Forms.Integration.ElementHost.Child%2A> property.  
   
@@ -293,7 +293,7 @@ The following image shows a WPF composite control hosted in a Windows Forms appl
   
 - `OnButtonClick` is a custom event that is fired by the composite control when the user clicks the **OK** or **Cancel** button. You handle the event to get the user's response and to collect any data that the user specified.  
   
-- <xref:System.Windows.FrameworkElement.Loaded> is a standard event that is raised by a [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] control when it is fully loaded. The event is used here because the example needs to initialize several global variables using properties from the control. At the time of the form's <xref:System.Windows.Forms.Form.Load> event, the control is not fully loaded and those values are still set to `null`. You need to wait until the control's <xref:System.Windows.FrameworkElement.Loaded> event occurs before you can access those properties.  
+- <xref:System.Windows.FrameworkElement.Loaded> is a standard event that is raised by a WPF control when it is fully loaded. The event is used here because the example needs to initialize several global variables using properties from the control. At the time of the form's <xref:System.Windows.Forms.Form.Load> event, the control is not fully loaded and those values are still set to `null`. You need to wait until the control's <xref:System.Windows.FrameworkElement.Loaded> event occurs before you can access those properties.  
   
  The <xref:System.Windows.FrameworkElement.Loaded> event handler is shown in the preceding code. The `OnButtonClick` handler is discussed in the next section.  
   
@@ -309,7 +309,7 @@ The following image shows a WPF composite control hosted in a Windows Forms appl
  Build and run the application. Add some text in the WPF composite control and then click **OK**. The text appears in the labels. At this point, code has not been added to handle the radio buttons.  
   
 ### Modifying the Appearance of the Control  
- The <xref:System.Windows.Forms.RadioButton> controls on the form will enable the user to change the [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] composite control's foreground and background colors as well as several font properties. The background color is exposed by the <xref:System.Windows.Forms.Integration.ElementHost> object. The remaining properties are exposed as custom properties of the control.  
+ The <xref:System.Windows.Forms.RadioButton> controls on the form will enable the user to change the WPF composite control's foreground and background colors as well as several font properties. The background color is exposed by the <xref:System.Windows.Forms.Integration.ElementHost> object. The remaining properties are exposed as custom properties of the control.  
   
  Double-click each <xref:System.Windows.Forms.RadioButton> control on the form to create <xref:System.Windows.Forms.RadioButton.CheckedChanged> event handlers. Replace the <xref:System.Windows.Forms.RadioButton.CheckedChanged> event handlers with the following code.  
   

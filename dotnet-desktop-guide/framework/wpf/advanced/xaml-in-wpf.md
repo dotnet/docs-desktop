@@ -10,7 +10,7 @@ ms.assetid: 5d858575-a83b-42df-ad3f-047ed2d6e3c8
 ---
 # XAML in WPF
 
-[!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)] is a markup language for declarative application programming. [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] implements a XAML processor implementation and provides XAML language support. The [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] types are implemented such that they can provide the required type backing for a XAML representation. In general, you can create the majority of your [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] application UI in XAML markup.  
+WPF types are implemented such that they can provide the required type backing for a XAML representation. In general, you can create the majority of your WPF application UI in XAML markup.  
   
 ## In This Section  
 

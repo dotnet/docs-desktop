@@ -9,19 +9,19 @@ helpviewer_keywords:
 ms.assetid: 1fbada8e-4867-4ed1-8d97-62c07dad7ebc
 ---
 # Dependency Property Value Precedence
-<a name="introduction"></a> This topic explains how the workings of the [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] property system can affect the value of a dependency property, and describes the precedence by which aspects of the property system apply to the effective value of a property.  
+<a name="introduction"></a> This topic explains how the workings of the Windows Presentation Foundation (WPF) property system can affect the value of a dependency property, and describes the precedence by which aspects of the property system apply to the effective value of a property.  
 
 <a name="prerequisites"></a>
 ## Prerequisites  
- This topic assumes that you understand dependency properties from the perspective of a consumer of existing dependency properties on [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] classes, and have read [Dependency Properties Overview](dependency-properties-overview.md). To follow the examples in this topic, you should also understand [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)] and know how to write [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] applications.  
+ This topic assumes that you understand dependency properties from the perspective of a consumer of existing dependency properties on WPF classes, and have read [Dependency Properties Overview](dependency-properties-overview.md). To follow the examples in this topic, you should also understand WPF applications.  
   
 <a name="intro"></a>
 ## The WPF Property System  
- The [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] property system offers a powerful way to have the value of dependency properties be determined by a variety of factors, enabling features such as real-time property validation, late binding, and notifying related properties of changes to values for other properties. The exact order and logic that is used to determine dependency property values is reasonably complex. Knowing this order will help you avoid unnecessary property setting, and might also clear up confusion over exactly why some attempt to influence or anticipate a dependency property value did not end up resulting in the value you expected.  
+ The WPF property system offers a powerful way to have the value of dependency properties be determined by a variety of factors, enabling features such as real-time property validation, late binding, and notifying related properties of changes to values for other properties. The exact order and logic that is used to determine dependency property values is reasonably complex. Knowing this order will help you avoid unnecessary property setting, and might also clear up confusion over exactly why some attempt to influence or anticipate a dependency property value did not end up resulting in the value you expected.  
   
 <a name="multiple_sets"></a>
 ## Dependency Properties Might Be "Set" in Multiple Places  
- The following is example [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] where the same property (<xref:System.Windows.Controls.Control.Background%2A>) has three different "set" operations that might influence the value.  
+ The following is example XAML where the same property (<xref:System.Windows.Controls.Control.Background%2A>) has three different "set" operations that might influence the value.  
   
  :::code language="xaml" source="./snippets/dependency-property-value-precedence/xaml/MainWindow.xaml" id="DependencyPropertyValuePrecedence":::
   
@@ -37,13 +37,13 @@ ms.assetid: 1fbada8e-4867-4ed1-8d97-62c07dad7ebc
   
 2. **Active animations, or animations with a Hold behavior.** In order to have any practical effect, an animation of a property must be able to have precedence over the base (unanimated) value, even if that value was set locally. For details, see [Coercion, Animation, and Base Value](#animations) later in this topic.  
   
-3. **Local value.** A local value might be set through the convenience of the "wrapper" property, which also equates to setting as an attribute or property element in [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)], or by a call to the <xref:System.Windows.DependencyObject.SetValue%2A> API using a property of a specific instance. If you set a local value by using a binding or a resource, these each act in the precedence as if a direct value was set.  
+3. **Local value.** A local value might be set through the convenience of the "wrapper" property, which also equates to setting as an attribute or property element in XAML, or by a call to the <xref:System.Windows.DependencyObject.SetValue%2A> API using a property of a specific instance. If you set a local value by using a binding or a resource, these each act in the precedence as if a direct value was set.  
   
 4. **TemplatedParent template properties.** An element has a <xref:System.Windows.FrameworkElement.TemplatedParent%2A> if it was created as part of a template (a <xref:System.Windows.Controls.ControlTemplate> or <xref:System.Windows.DataTemplate>). For details on when this applies, see [TemplatedParent](#templatedparent) later in this topic. Within the template, the following precedence applies:  
   
     1. Triggers from the <xref:System.Windows.FrameworkElement.TemplatedParent%2A> template.  
   
-    2. Property sets (typically through [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] attributes) in the <xref:System.Windows.FrameworkElement.TemplatedParent%2A> template.  
+    2. Property sets (typically through XAML attributes) in the <xref:System.Windows.FrameworkElement.TemplatedParent%2A> template.  
   
 5. **Implicit style.** Applies only to the `Style` property. The `Style` property is filled by any style resource with a key that matches the type of that element. That style resource must exist either in the page or the application; lookup for an implicit style resource does not proceed into the themes.  
   
@@ -75,13 +75,13 @@ ms.assetid: 1fbada8e-4867-4ed1-8d97-62c07dad7ebc
   
 - **Implicit style.** The <xref:System.Windows.FrameworkElement.Style%2A> property is not set directly. However, the <xref:System.Windows.FrameworkElement.Style%2A> exists at some level in the resource lookup sequence (page, application) and is keyed using a resource key that matches the type the style is to be applied to. In this case, the <xref:System.Windows.FrameworkElement.Style%2A> property itself acts by a precedence identified in the sequence as item 5. This condition can be detected by using <xref:System.Windows.DependencyPropertyHelper> against the <xref:System.Windows.FrameworkElement.Style%2A> property and looking for <xref:System.Windows.BaseValueSource.ImplicitStyleReference> in the results.  
   
-- **Default style**, also known as **theme style.** The <xref:System.Windows.FrameworkElement.Style%2A> property is not set directly, and in fact will read as `null` up until run time. In this case, the style comes from the run-time theme evaluation that is part of the [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] presentation engine.  
+- **Default style**, also known as **theme style.** The <xref:System.Windows.FrameworkElement.Style%2A> property is not set directly, and in fact will read as `null` up until run time. In this case, the style comes from the run-time theme evaluation that is part of the WPF presentation engine.  
   
  For implicit styles not in themes, the type must match exactly - a `MyButton` `Button`-derived class will not implicitly use a style for `Button`.  
   
 <a name="themestyles"></a>
 ## Default (Theme) Styles  
- Every control that ships with [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] has a default style. That default style potentially varies by theme, which is why this default style is sometimes referred to as a theme style.  
+ Every control that ships with WPF has a default style. That default style potentially varies by theme, which is why this default style is sometimes referred to as a theme style.  
   
  The most important information that is found within a default style for a control is its control template, which exists in the theme style as a setter for its <xref:System.Windows.Controls.Control.Template%2A> property. If there were no template from default styles, a control without a custom template as part of a custom style would have no visual appearance at all. The template from the default style gives the visual appearance of each control a basic structure, and also defines the connections between properties defined in the visual tree of the template and the corresponding control class. Each control exposes a set of properties that can influence the visual appearance of the control without completely replacing the template. For example, consider the default visual appearance of a <xref:System.Windows.Controls.Primitives.Thumb> control, which is a component of a <xref:System.Windows.Controls.Primitives.ScrollBar>.  
   
@@ -109,7 +109,7 @@ ms.assetid: 1fbada8e-4867-4ed1-8d97-62c07dad7ebc
   
  Multiple animations might be applied to a single property, with each of these animations possibly having been defined from different points in the value precedence. However, these animations will potentially composite their values, rather than just applying the animation from the higher precedence. This depends on exactly how the animations are defined, and the type of the value that is being animated. For more information about animating properties, see [Animation Overview](../graphics-multimedia/animation-overview.md).  
   
- Coercion applies at the highest level of all. Even an already running animation is subject to value coercion. Certain existing dependency properties in [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] have built-in coercion. For a custom dependency property, you define the coercion behavior for a custom dependency property by writing a <xref:System.Windows.CoerceValueCallback> and passing the callback as part of metadata when you create the property. You can also override coercion behavior of existing properties by overriding the metadata on that property in a derived class. Coercion interacts with the base value in such a way that the constraints on coercion are applied as those constraints exist at the time, but the base value is still retained. Therefore, if constraints in coercion are later lifted, the coercion will return the closest value possible to that base value, and potentially the coercion influence on a property will cease as soon as all constraints are lifted. For more information about coercion behavior, see [Dependency Property Callbacks and Validation](dependency-property-callbacks-and-validation.md).  
+ Coercion applies at the highest level of all. Even an already running animation is subject to value coercion. Certain existing dependency properties in WPF have built-in coercion. For a custom dependency property, you define the coercion behavior for a custom dependency property by writing a <xref:System.Windows.CoerceValueCallback> and passing the callback as part of metadata when you create the property. You can also override coercion behavior of existing properties by overriding the metadata on that property in a derived class. Coercion interacts with the base value in such a way that the constraints on coercion are applied as those constraints exist at the time, but the base value is still retained. Therefore, if constraints in coercion are later lifted, the coercion will return the closest value possible to that base value, and potentially the coercion influence on a property will cease as soon as all constraints are lifted. For more information about coercion behavior, see [Dependency Property Callbacks and Validation](dependency-property-callbacks-and-validation.md).  
   
 <a name="triggers"></a>
 ## Trigger Behaviors  

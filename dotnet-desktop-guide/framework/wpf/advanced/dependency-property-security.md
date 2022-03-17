@@ -12,7 +12,7 @@ helpviewer_keywords:
 ms.assetid: d10150ec-90c5-4571-8d35-84bafa2429a4
 ---
 # Dependency Property Security
-Dependency properties should generally be considered to be public properties. The nature of the [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] property system prevents the ability to make security guarantees about a dependency property value.  
+Dependency properties should generally be considered to be public properties. The nature of the Windows Presentation Foundation (WPF) property system prevents the ability to make security guarantees about a dependency property value.  
 
 <a name="AccessSecurity"></a>
 ## Access and Security of Wrappers and Dependency Properties  
