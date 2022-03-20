@@ -32,9 +32,9 @@ For [input events](/dotnet/desktop/wpf/advanced/input-overview), event data is s
 > [!NOTE]
 > Not all preview events are [tunneling](<xref:System.Windows.RoutingStrategy.Tunnel>) events. For example, the <xref:System.Windows.UIElement.PreviewMouseLeftButtonDown> input event follows a downward route through the element tree, but is a [direct](<xref:System.Windows.RoutingStrategy.Direct>) routed event that's raised and reraised by each <xref:System.Windows.UIElement> in the route.
 
-## Preview events in composite controls
+## Working around event suppression by controls
 
-Preview events are commonly used by composite controls to handle input events raised by their components. For example, a composite control may suppress input events at the component level and replace them with one or more events that provide customized event data. For example, the WPF <xref:System.Windows.Controls.Primitives.ButtonBase> marks the <xref:System.Windows.UIElement.MouseLeftButtonDown> input event as handled in its <xref:System.Windows.UIElement.OnMouseLeftButtonDown%2A> method and raises the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event. The `MouseLeftButtonDown` event and its event data still continue along the element tree route, but because the event is marked as <xref:System.Windows.RoutedEventArgs.Handled%2A> in event data, only handlers that are configured to respond to handled events are invoked.
+Some composite controls suppress input events at the component-level in order to replace them with a customized high-level event. For example, the WPF <xref:System.Windows.Controls.Primitives.ButtonBase> marks the <xref:System.Windows.UIElement.MouseLeftButtonDown> bubbling input event as handled in its <xref:System.Windows.UIElement.OnMouseLeftButtonDown%2A> method and raises the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event. The `MouseLeftButtonDown` event and its event data still continue along the element tree route, but because the event is marked as <xref:System.Windows.RoutedEventArgs.Handled%2A> in event data, only handlers that are configured to respond to handled events are invoked.
 
 If you want other elements toward the root of your application to handle a routed event that's marked as handled, you can either:
 
