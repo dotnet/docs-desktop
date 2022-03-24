@@ -636,6 +636,14 @@
         {
             "source_path": "dotnet-desktop-guide/framework/wpf/events/preview-events.md",
             "redirect_url": "/dotnet/desktop/wpf/advanced/preview-events?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/advanced/marking-routed-events-as-handled-and-class-handling.md",
+            "redirect_url": "/dotnet/desktop/wpf/events/marking-routed-events-as-handled-and-class-handling?view=netdesktop-6.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/events/marking-routed-events-as-handled-and-class-handling.md",
+            "redirect_url": "/dotnet/desktop/wpf/advanced/marking-routed-events-as-handled-and-class-handling?view=netframeworkdesktop-4.8"
         }
     ]
 }
