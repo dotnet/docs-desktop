@@ -1,0 +1,18 @@
+﻿<Window x:Class="CodeSampleCsharp.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    xmlns:custom="clr-namespace:CodeSampleCsharp"
+    Title="Preview events" Height="100" Width="300">
+
+    <!--<InstanceEventHandling>-->
+    <StackPanel Name="outerStackPanel" VerticalAlignment="Center">
+        <custom:ComponentWrapper
+            x:Name="componentWrapper"
+            TextBox.PreviewKeyDown="HandlerInstanceEventInfo"
+            HorizontalAlignment="Center">
+            <TextBox Name="componentTextBox" Width="200" />
+        </custom:ComponentWrapper>
+    </StackPanel>
+    <!--</InstanceEventHandling>-->
+
+</Window>
