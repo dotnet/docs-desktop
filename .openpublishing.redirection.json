@@ -644,6 +644,14 @@
         {
             "source_path": "dotnet-desktop-guide/framework/wpf/events/marking-routed-events-as-handled-and-class-handling.md",
             "redirect_url": "/dotnet/desktop/wpf/advanced/marking-routed-events-as-handled-and-class-handling?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/advanced/object-lifetime-events.md",
+            "redirect_url": "/dotnet/desktop/wpf/events/object-lifetime-events?view=netdesktop-6.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/events/object-lifetime-events.md",
+            "redirect_url": "/dotnet/desktop/wpf/advanced/object-lifetime-events?view=netframeworkdesktop-4.8"
         }
     ]
 }
