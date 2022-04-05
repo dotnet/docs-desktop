@@ -353,6 +353,11 @@
             "SourceUrl": "/dotnet/desktop/wpf/advanced/marking-routed-events-as-handled-and-class-handling?view=netframeworkdesktop-4.8",
             "TargetUrl": "/dotnet/desktop/wpf/events/marking-routed-events-as-handled-and-class-handling?view=netdesktop-6.0"
         },
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/wpf/advanced/object-lifetime-events?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/wpf/events/object-lifetime-events?view=netdesktop-6.0"
+        },
 
         // Systems - Properties
         {
