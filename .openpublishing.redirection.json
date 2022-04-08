@@ -652,6 +652,14 @@
         {
             "source_path": "dotnet-desktop-guide/framework/wpf/events/object-lifetime-events.md",
             "redirect_url": "/dotnet/desktop/wpf/advanced/object-lifetime-events?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/advanced/property-change-events.md",
+            "redirect_url": "/dotnet/desktop/wpf/events/property-change-events?view=netdesktop-6.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/events/property-change-events.md",
+            "redirect_url": "/dotnet/desktop/wpf/advanced/property-change-events?view=netframeworkdesktop-4.8"
         }
     ]
 }
