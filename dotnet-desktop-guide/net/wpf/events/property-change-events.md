@@ -48,7 +48,7 @@ DependencyPropertyChanged events have <xref:System.Windows.DependencyPropertyCha
 
 One example of a `DependencyPropertyChanged` event is <xref:System.Windows.UIElement.IsMouseCapturedChanged>. `DependencyPropertyChanged` events are slightly more common than `RoutedPropertyChanged` events.
 
-Similar to RoutedPropertyChanged event data, DependencyPropertyChanged event data contains the <xref:System.Windows.RoutedPropertyChangedEventArgs%601.OldValue%2A> and <xref:System.Windows.RoutedPropertyChangedEventArgs%601.NewValue%2A> properties. For the reasons mentioned previously, avoid using a property changed event handler to change the property value again.
+Similar to RoutedPropertyChanged event data, DependencyPropertyChanged event data contains the <xref:System.Windows.RoutedPropertyChangedEventArgs%601.OldValue%2A> and <xref:System.Windows.RoutedPropertyChangedEventArgs%601.NewValue%2A> properties. For the reasons [mentioned previously](#routedpropertychanged-events), avoid using a property changed event handler to change the property value again.
 
 ## Property triggers
 
