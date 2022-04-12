@@ -652,6 +652,14 @@
         {
             "source_path": "dotnet-desktop-guide/framework/wpf/events/object-lifetime-events.md",
             "redirect_url": "/dotnet/desktop/wpf/advanced/object-lifetime-events?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/advanced/weak-event-patterns.md",
+            "redirect_url": "/dotnet/desktop/wpf/events/weak-event-patterns?view=netdesktop-6.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/events/weak-event-patterns.md",
+            "redirect_url": "/dotnet/desktop/wpf/advanced/weak-event-patterns?view=netframeworkdesktop-4.8"
         }
     ]
 }

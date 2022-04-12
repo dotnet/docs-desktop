@@ -88,6 +88,8 @@ items:
       href: events/preview-events.md
     - name: Visual Basic and WPF event handling
       href: events/visual-basic-and-wpf-event-handling.md
+    - name: Weak event patterns
+      href: events/weak-event-patterns.md
     - name: Common tasks
       items:
       - name: Add an event handler using code
