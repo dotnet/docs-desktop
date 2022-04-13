@@ -54,9 +54,9 @@ The following sections describe how to implement the weak event pattern. For the
 
 ### Use an existing weak event manager class
 
-1. Find an existing weak event manager. For a list of weak event managers included with WPF, see the inheritance hierarchy of the <xref:System.Windows.WeakEventManager> class.
+01. Find an existing weak event manager. For a list of weak event managers included with WPF, see the inheritance hierarchy of the <xref:System.Windows.WeakEventManager> class.
 
-1. Use the new weak event manager instead of the normal event hookup.
+01. Use the new weak event manager instead of the normal event hookup.
 
     For example, if your code uses the following pattern to subscribe to an event:
 
@@ -80,25 +80,25 @@ The following sections describe how to implement the weak event pattern. For the
 
 ### Use the generic weak event manager class
 
-1. Use the generic <xref:System.Windows.WeakEventManager%602> class instead of the normal event hookup.
+Use the generic <xref:System.Windows.WeakEventManager%602> class instead of the normal event hookup.
 
-    When you use `WeakEventManager<TEventSource,TEventArgs>` to register event listeners, you supply the event source and <xref:System.EventArgs> type as the type parameters to the class. Call <xref:System.Windows.WeakEventManager%602.AddHandler%2A> as shown in the following code:
+When you use `WeakEventManager<TEventSource,TEventArgs>` to register event listeners, you supply the event source and <xref:System.EventArgs> type as the type parameters to the class. Call <xref:System.Windows.WeakEventManager%602.AddHandler%2A> as shown in the following code:
 
-    :::code language="csharp" source="./snippets/weak-event-patterns/csharp/MainWindow.xaml.cs" id="AddGenericWeakEventHandler":::
-    :::code language="vb" source="./snippets/weak-event-patterns/vb/MainWindow.xaml.vb" id="AddGenericWeakEventHandler":::
+:::code language="csharp" source="./snippets/weak-event-patterns/csharp/MainWindow.xaml.cs" id="AddGenericWeakEventHandler":::
+:::code language="vb" source="./snippets/weak-event-patterns/vb/MainWindow.xaml.vb" id="AddGenericWeakEventHandler":::
 
 ### Create a custom weak event manager class
 
-1. Copy the following class template to your project. The following class inherits from the <xref:System.Windows.WeakEventManager> class:
+01. Copy the following class template to your project. The following class inherits from the <xref:System.Windows.WeakEventManager> class:
 
     :::code language="csharp" source="./snippets/weak-event-patterns/csharp/WeakEventManagerTemplate.cs" id="WeakEventManagerTemplate":::
     :::code language="vb" source="./snippets/weak-event-patterns/vb/WeakEventManagerTemplate.vb" id="WeakEventManagerTemplate":::
 
-1. Rename `SomeEventWeakEventManager`, `SomeEvent`, `SomeEventSource`, and `SomeEventArgs` to match your event name.
+01. Rename `SomeEventWeakEventManager`, `SomeEvent`, `SomeEventSource`, and `SomeEventArgs` to match your event name.
 
-1. Set the [access modifiers](/dotnet/csharp/language-reference/keywords/access-modifiers) for the weak event manager class to match the accessibility of the event it manages.
+01. Set the [access modifiers](/dotnet/csharp/language-reference/keywords/access-modifiers) for the weak event manager class to match the accessibility of the event it manages.
 
-1. Use the new weak event manager instead of the normal event hookup.
+01. Use the new weak event manager instead of the normal event hookup.
 
     For example, if your code uses the following pattern to subscribe to an event:
 
