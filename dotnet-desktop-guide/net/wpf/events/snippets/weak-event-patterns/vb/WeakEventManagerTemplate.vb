@@ -8,7 +8,8 @@ Class SomeEventWeakEventManager
     ''' <summary>
     ''' Add a handler for the given source's event.
     ''' </summary>
-    Public Shared Sub [AddHandler](source As SomeEventSource, handler As EventHandler(Of SomeEventArgs))
+    Public Shared Sub [AddHandler](source As SomeEventSource,
+                                   handler As EventHandler(Of SomeEventArgs))
         If source Is Nothing Then Throw New ArgumentNullException(NameOf(source))
         If handler Is Nothing Then Throw New ArgumentNullException(NameOf(handler))
         CurrentManager.ProtectedAddHandler(source, handler)
@@ -17,7 +18,8 @@ Class SomeEventWeakEventManager
     ''' <summary>
     ''' Remove a handler for the given source's event.
     ''' </summary>
-    Public Shared Sub [RemoveHandler](source As SomeEventSource, handler As EventHandler(Of SomeEventArgs))
+    Public Shared Sub [RemoveHandler](source As SomeEventSource,
+                                      handler As EventHandler(Of SomeEventArgs))
         If source Is Nothing Then Throw New ArgumentNullException(NameOf(source))
         If handler Is Nothing Then Throw New ArgumentNullException(NameOf(handler))
         CurrentManager.ProtectedRemoveHandler(source, handler)
@@ -29,7 +31,8 @@ Class SomeEventWeakEventManager
     Private Shared ReadOnly Property CurrentManager As SomeEventWeakEventManager
         Get
             Dim managerType As Type = GetType(SomeEventWeakEventManager)
-            Dim manager As SomeEventWeakEventManager = CType(GetCurrentManager(managerType), SomeEventWeakEventManager)
+            Dim manager As SomeEventWeakEventManager =
+                CType(GetCurrentManager(managerType), SomeEventWeakEventManager)
 
             If manager Is Nothing Then
                 manager = New SomeEventWeakEventManager()

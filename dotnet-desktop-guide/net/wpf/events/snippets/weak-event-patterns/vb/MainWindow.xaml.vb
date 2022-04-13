@@ -21,11 +21,13 @@
         '</RemoveExistingStrongEventHandler>
 
         '<AddExistingWeakEventHandler>
-        LostFocusEventManager.AddHandler(source, New EventHandler(Of RoutedEventArgs)(AddressOf Source_LostFocus))
+        LostFocusEventManager.AddHandler(
+            source, New EventHandler(Of RoutedEventArgs)(AddressOf Source_LostFocus))
         '</AddExistingWeakEventHandler>
 
         '<RemoveExistingWeakEventHandler>
-        LostFocusEventManager.RemoveHandler(source, New EventHandler(Of RoutedEventArgs)(AddressOf Source_LostFocus))
+        LostFocusEventManager.RemoveHandler(
+            source, New EventHandler(Of RoutedEventArgs)(AddressOf Source_LostFocus))
         '</RemoveExistingWeakEventHandler>
     End Sub
 
@@ -41,11 +43,13 @@
         '</RemoveGenericStrongEventHandler>
 
         '<AddGenericWeakEventHandler>
-        WeakEventManager(Of SomeEventSource, SomeEventArgs).AddHandler(source, "SomeEvent", New EventHandler(Of SomeEventArgs)(AddressOf Source_SomeEvent))
+        WeakEventManager(Of SomeEventSource, SomeEventArgs).AddHandler(
+            source, "SomeEvent", New EventHandler(Of SomeEventArgs)(AddressOf Source_SomeEvent))
         '</AddGenericWeakEventHandler>
 
         '<RemoveGenericWeakEventHandler>
-        WeakEventManager(Of SomeEventSource, SomeEventArgs).RemoveHandler(source, "SomeEvent", New EventHandler(Of SomeEventArgs)(AddressOf Source_SomeEvent))
+        WeakEventManager(Of SomeEventSource, SomeEventArgs).RemoveHandler(
+            source, "SomeEvent", New EventHandler(Of SomeEventArgs)(AddressOf Source_SomeEvent))
         '</RemoveGenericWeakEventHandler>
     End Sub
 
@@ -61,11 +65,13 @@
         '</RemoveCustomStrongEventHandler>
 
         '<AddCustomWeakEventHandler>
-        SomeEventWeakEventManager.AddHandler(source, New EventHandler(Of SomeEventArgs)(AddressOf Source_SomeEvent))
+        SomeEventWeakEventManager.AddHandler(
+            source, New EventHandler(Of SomeEventArgs)(AddressOf Source_SomeEvent))
         '</AddCustomWeakEventHandler>
 
         '<RemoveCustomWeakEventHandler>
-        SomeEventWeakEventManager.RemoveHandler(source, New EventHandler(Of SomeEventArgs)(AddressOf Source_SomeEvent))
+        SomeEventWeakEventManager.RemoveHandler(
+            source, New EventHandler(Of SomeEventArgs)(AddressOf Source_SomeEvent))
         '</RemoveCustomWeakEventHandler>
     End Sub
 
