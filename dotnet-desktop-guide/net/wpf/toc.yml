@@ -86,6 +86,8 @@ items:
       href: events/marking-routed-events-as-handled-and-class-handling.md
     - name: Preview events
       href: events/preview-events.md
+    - name: Property change events
+      href: events/property-change-events.md
     - name: Visual Basic and WPF event handling
       href: events/visual-basic-and-wpf-event-handling.md
     - name: Weak event patterns
