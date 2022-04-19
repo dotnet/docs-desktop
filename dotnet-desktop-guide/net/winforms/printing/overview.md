@@ -15,7 +15,7 @@ ms.custom: devdivchpfy22
 
 # PrintDialog Component Overview (Windows Forms .NET)
 
-Printing in Windows Forms consists primarily of using the [PrintDocument Component](../../../framework/winforms/controls/printdocument-component-windows-forms.md) component to enable the user to print. The [PrintPreviewDialog Control](../../../framework/winforms/controls/printpreviewdialog-control-windows-forms.md) control, [PrintDialog Component](../../../framework/winforms/controls/printdialog-component-windows-forms.md) and [PageSetupDialog Component](../../../framework/winforms/controls/pagesetupdialog-component-windows-forms.md) components provides a familiar graphical interface to Windows operating system users.
+Printing in Windows Forms consists primarily of using the [PrintDocument](../../../framework/winforms/controls/printdocument-component-windows-forms.md) component to enable the user to print. The [PrintPreviewDialog](../../../framework/winforms/controls/printpreviewdialog-control-windows-forms.md) control, [PrintDialog](../../../framework/winforms/controls/printdialog-component-windows-forms.md) and [PageSetupDialog](../../../framework/winforms/controls/pagesetupdialog-component-windows-forms.md) components provide a familiar graphical interface to Windows operating system users.
   
 Typically, you create a new instance of the <xref:System.Drawing.Printing.PrintDocument> component and set the properties that describe what to print using the <xref:System.Drawing.Printing.PrinterSettings> and <xref:System.Drawing.Printing.PageSettings> classes. Call to the <xref:System.Drawing.Printing.PrintDocument.Print%2A> method actually prints the document.
 
@@ -23,9 +23,9 @@ The Windows Forms [PrintDialog](../../../framework/winforms/controls/printdialog
 
 ## Working with the Component
 
-Use the <xref:System.Windows.Forms.CommonDialog.ShowDialog%2A> method to display the dialog box at run time. This component has properties that relate to either a single print job (<xref:System.Drawing.Printing.PrintDocument> class) or the settings of an individual printer (<xref:System.Drawing.Printing.PrinterSettings> class). One of the two, in turn, may be shared by multiple printers.
+Use the <xref:System.Windows.Forms.CommonDialog.ShowDialog%2A> method to display the dialog at run time. This component has properties that relate to either a single print job (<xref:System.Drawing.Printing.PrintDocument> class) or the settings of an individual printer (<xref:System.Drawing.Printing.PrinterSettings> class). One of the two, in turn, may be shared by multiple printers.
 
- The show dialog method helps you to add print dialog to the form. The <xref:System.Windows.Forms.PrintDialog> component appears in the tray at the bottom of the Windows Forms Designer in Visual Studio.
+ The show dialog box method helps you to add print dialog box to the form. The <xref:System.Windows.Forms.PrintDialog> component appears in the tray at the bottom of the Windows Forms Designer in Visual Studio.
 
 ## How to: Capture User Input from a PrintDialog at Run Time
 
@@ -105,7 +105,7 @@ The foundation of printing in Windows Forms is the <xref:System.Drawing.Printing
 
 Frequently, word processors and other applications that involve printing will provide the option to display a message to users that a print job is complete. You can provide this functionality in your Windows Forms by handling the <xref:System.Drawing.Printing.PrintDocument.EndPrint> event of the <xref:System.Drawing.Printing.PrintDocument> component.  
   
- The following procedure requires that you've created a Windows-based application with a <xref:System.Drawing.Printing.PrintDocument> component on it. Following procedure is the standard way of enabling printing from a Windows-based application. For more information about printing from Windows Forms using the <xref:System.Drawing.Printing.PrintDocument> component, see [How to: Create Standard Windows Forms Print Jobs](../../../framework/winforms/advanced/how-to-create-standard-windows-forms-print-jobs.md).  
+ The following procedure requires that you've created a Windows-based application with a <xref:System.Drawing.Printing.PrintDocument> component on it. The procedure given below is the standard way of enabling printing from a Windows-based application. For more information about printing from Windows Forms using the <xref:System.Drawing.Printing.PrintDocument> component, see [How to: Create Standard Windows Forms Print Jobs](../../../framework/winforms/advanced/how-to-create-standard-windows-forms-print-jobs.md).  
   
 ### To complete a print job  
   
