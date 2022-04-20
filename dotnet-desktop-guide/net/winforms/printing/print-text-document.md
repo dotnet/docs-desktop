@@ -1,6 +1,6 @@
 ---
 title: "How to: Print a Multi-Page Text File"
-ms.date: "04/19/2022"
+ms.date: "04/20/2022"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -26,15 +26,15 @@ It's common for Windows-based applications to print text. The <xref:System.Drawi
 
     :::code language="vb" source="snippets/print-text-document/visualbasic/Form1.vb" range="12-13":::
   
-2. To print a document, set the <xref:System.Drawing.Printing.PrintDocument.DocumentName%2A> property to the document you wish to print. Then open and read the documents contents to the string you added previously.  
+2. To print a document, set the <xref:System.Drawing.Printing.PrintDocument.DocumentName%2A> property to the document you wish to print. Then open and read the document content to the string you added previously.  
   
     :::code language="csharp" source="snippets/print-text-document/csharp/Form1.cs" range="35-42":::
 
     :::code language="vb" source="snippets/print-text-document/visualbasic/Form1.vb" range="26-39":::
 
-3. In the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event handler, use the <xref:System.Drawing.Printing.PrintPageEventArgs.Graphics%2A> property of the <xref:System.Drawing.Printing.PrintPageEventArgs> class and the document contents to calculate line length and lines per page. After each page is drawn, check to see if it's the last page, and set the <xref:System.Drawing.Printing.PrintPageEventArgs.HasMorePages%2A> property of the <xref:System.Drawing.Printing.PrintPageEventArgs> accordingly. The <xref:System.Drawing.Printing.PrintDocument.PrintPage> event is raised until <xref:System.Drawing.Printing.PrintPageEventArgs.HasMorePages%2A> is `false`. Also, make sure the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event is associated with its event-handling method.  
+3. In the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event handler, use the <xref:System.Drawing.Printing.PrintPageEventArgs.Graphics%2A> property of the <xref:System.Drawing.Printing.PrintPageEventArgs> class and the document contents to calculate line length and lines per page. After each page is drawn, check if it's the last page, and set the <xref:System.Drawing.Printing.PrintPageEventArgs.HasMorePages%2A> property of the <xref:System.Drawing.Printing.PrintPageEventArgs> accordingly. The <xref:System.Drawing.Printing.PrintDocument.PrintPage> event is raised until <xref:System.Drawing.Printing.PrintPageEventArgs.HasMorePages%2A> is `false`. Also, make sure the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event is associated with its event-handling method.  
   
-    In the following code example, the event handler is used to print the contents of the "testPage.txt" file in the same font as is used on the form.  
+    In the following code example, the event handler is used to print the contents of the "testPage.txt" file in the same font as it's used on the form.  
 
     :::code language="csharp" source="snippets/print-text-document/csharp/Form1.cs" range="47-67":::
 
