@@ -20,7 +20,7 @@ As part of the development process, you typically will want to print a copy of y
 
 :::code language="csharp" source="snippets/how-to-print-windows-form/csharp/form1.cs":::
 
-:::code language="csharp" source="snippets/how-to-print-windows-form/vb/form1.vb":::
+:::code language="vb" source="snippets/how-to-print-windows-form/vb/form1.vb":::
 
 ## Robust Programming
 
