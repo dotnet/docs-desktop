@@ -37,5 +37,5 @@ In order to run this code example, you must have permission to access the printe
 ## See also
 
 - <xref:System.Drawing.Printing.PrintDocument>
-- [How to: Render Images with GDI+](how-to-render-images-with-gdi.md)
-- [How to: Print Graphics in Windows Forms](how-to-print-graphics-in-windows-forms.md)
+- [How to: Render Images with GDI+](/dotnet/desktop/winforms/advanced/how-to-render-images-with-gdi?view=netframeworkdesktop-4.8&preserve-view=true)
+- [How to: Print Graphics in Windows Forms](/dotnet/desktop/winforms/advanced/how-to-print-graphics-in-windows-forms?view=netframeworkdesktop-4.8&preserve-view=true)
