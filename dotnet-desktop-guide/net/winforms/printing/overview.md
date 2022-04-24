@@ -81,6 +81,7 @@ The foundation of printing in Windows Forms is the <xref:System.Drawing.Printing
          new Rectangle(500, 500, 500, 500));
     }
     ```
+
     (Visual C#) Place the following code in the form's constructor to register the event handler.
 
     ```csharp
