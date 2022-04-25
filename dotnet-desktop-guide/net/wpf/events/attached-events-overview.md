@@ -88,7 +88,7 @@ When defining a custom attached event using the WPF model of basing attached eve
 
 :::code language="vb" source="./snippets/attached-events-overview/vb/MainWindow.xaml.vb" id="RaiseAttachedEvent":::
 
-Your code is responsible for determining which element is reported as the source in the element tree. In the preceding example, `aquarium1` is the event source.
+In the preceding example, `aquarium1` is the event source.
 
 ## See also
 
