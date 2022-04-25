@@ -62,7 +62,7 @@ The [Handles](/dotnet/visual-basic/language-reference/statements/handles-clause)
 ## See also
 
 - <xref:System.Windows.UIElement.AddHandler%2A>
-- [Marking routed events as handled, and class handling](/dotnet/desktop/wpf/advanced/marking-routed-events-as-handled-and-class-handling?view=netframeworkdesktop-4.8&preserve-view=true)
+- [Marking routed events as handled, and class handling](/dotnet/desktop/wpf/events/marking-routed-events-as-handled-and-class-handling?view=netdesktop-6.0&preserve-view=true)
 - [Routed events overview](/dotnet/desktop/wpf/advanced/routed-events-overview?view=netframeworkdesktop-4.8&preserve-view=true)
 - [Attached events overview](/dotnet/desktop/wpf/advanced/attached-events-overview?view=netframeworkdesktop-4.8&preserve-view=true)
 - [XAML in WPF](/dotnet/desktop/wpf/xaml/index?view=netframeworkdesktop-4.8&preserve-view=true)
