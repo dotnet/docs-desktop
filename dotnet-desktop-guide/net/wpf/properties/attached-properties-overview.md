@@ -70,7 +70,7 @@ From a code perspective, an attached property is like a backing field that has m
 
 Metadata for an attached property is generally no different than for a dependency property. When registering an attached property, use <xref:System.Windows.FrameworkPropertyMetadata> to specify characteristics of the property, such as whether the property affects rendering or measurement. When you specify a default value by overriding attached property metadata, that value becomes the default for the implicit attached property on instances of the overriding class. If an attached property value isn't otherwise set, the default value is reported when the property is queried by using the `Get<property name>` accessor with an instance of the class where you specified the metadata.
 
-To enable property value inheritance on a property, use attached properties instead of non-attached dependency properties. For more information, see [Property value inheritance](/dotnet/desktop/wpf/advanced/property-value-inheritance?view=netframeworkdesktop-4.8&preserve-view=true).
+To enable property value inheritance on a property, use attached properties instead of non-attached dependency properties. For more information, see [Property value inheritance](/dotnet/desktop/wpf/properties/property-value-inheritance?view=netdesktop-6.0&preserve-view=true).
 
 ## Custom attached properties
 
@@ -123,14 +123,14 @@ WPF defines several .NET attributes that provide information about attached prop
 
 ## Learn more
 
-- For more information about creating an attached property, see [Register an attached property](/dotnet/desktop/wpf/advanced/how-to-register-an-attached-property?view=netframeworkdesktop-4.8&preserve-view=true).
-- For more advanced usage scenarios for dependency properties and attached properties, see [Custom dependency properties](/dotnet/desktop/wpf/advanced/custom-dependency-properties?view=netframeworkdesktop-4.8&preserve-view=true).
+- For more information about creating an attached property, see [Register an attached property](/dotnet/desktop/wpf/properties/how-to-register-an-attached-property?view=netdesktop-6.0&preserve-view=true).
+- For more advanced usage scenarios for dependency properties and attached properties, see [Custom dependency properties](/dotnet/desktop/wpf/properties/custom-dependency-properties?view=netdesktop-6.0&preserve-view=true).
 - You can register a property as both an attached property and a dependency property, and include conventional property wrappers. In this way, a property can be set on an element by using property wrappers, and also on any other element by using XAML attached property syntax. For an example, see <xref:System.Windows.FrameworkElement.FlowDirection%2A?displayProperty=nameWithType>.
 
 ## See also
 
 - <xref:System.Windows.DependencyProperty>
 - [Dependency properties overview](dependency-properties-overview.md)
-- [Custom dependency properties](/dotnet/desktop/wpf/advanced/custom-dependency-properties?view=netframeworkdesktop-4.8&preserve-view=true)
-- [XAML in WPF](/dotnet/desktop/wpf/xaml/)
-- [How to: Register an attached property](/dotnet/desktop/wpf/advanced/how-to-register-an-attached-property?view=netframeworkdesktop-4.8&preserve-view=true)
+- [Custom dependency properties](/dotnet/desktop/wpf/properties/custom-dependency-properties?view=netdesktop-6.0&preserve-view=true)
+- [XAML in WPF](/dotnet/desktop/wpf/xaml/index)
+- [How to: Register an attached property](/dotnet/desktop/wpf/properties/how-to-register-an-attached-property?view=netdesktop-6.0&preserve-view=true)

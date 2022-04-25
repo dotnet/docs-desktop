@@ -48,9 +48,9 @@ The following example shows a recommended dependency property definition with pr
 ## See also
 
 - [Dependency properties overview](dependency-properties-overview.md)
-- [XAML in WPF](/dotnet/desktop/wpf/advanced/xaml-in-wpf?view=netframeworkdesktop-4.8&preserve-view=true)
+- [XAML in WPF](/dotnet/desktop/wpf/xaml/index?view=netdesktop-6.0&preserve-view=true)
 - [Custom dependency properties](custom-dependency-properties.md)
 - [Dependency property metadata](dependency-property-metadata.md)
 - [Collection-type dependency properties](collection-type-dependency-properties.md)
 - [Dependency property security](dependency-property-security.md)
-- [Safe constructor patterns for DependencyObjects](/dotnet/desktop/wpf/advanced/safe-constructor-patterns-for-dependencyobjects?view=netframeworkdesktop-4.8&preserve-view=true)
+- [Safe constructor patterns for DependencyObjects](/dotnet/desktop/wpf/properties/safe-constructor-patterns-for-dependencyobjects?view=netdesktop-6.0&preserve-view=true)
