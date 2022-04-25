@@ -55,7 +55,7 @@ If you need to change the value of a read-only dependency property from outside 
 
 Because the WPF property system doesn't propagate the <xref:System.Windows.DependencyPropertyKey> outside your code, read-only dependency properties have better write security than read-write dependency properties. Use a read-only dependency property when you want to limit write-access to those who have a reference to the `DependencyPropertyKey`.
 
-In contrast, the dependency property identifier for read-write dependency properties is accessible through the property system, no matter what access modifier you assign it. For more information, see [Dependency property security](/dotnet/desktop/wpf/properties/dependency-property-security?view=netdesktop-6.0&preserve-view=true).
+In contrast, the dependency property identifier for read-write dependency properties is accessible through the property system, no matter what access modifier you assign it. For more information, see [Dependency property security](/dotnet/desktop/wpf/properties/dependency-property-security).
 
 ## See also
 
@@ -63,5 +63,5 @@ In contrast, the dependency property identifier for read-write dependency proper
 - [Implement a Dependency property](how-to-implement-a-dependency-property.md)
 - [Custom dependency properties](custom-dependency-properties.md)
 - [Collection-type dependency properties](collection-type-dependency-properties.md)
-- [Dependency property security](/dotnet/desktop/wpf/properties/dependency-property-security?view=netdesktop-6.0&preserve-view=true)
+- [Dependency property security](/dotnet/desktop/wpf/properties/dependency-property-security)
 - [Styles and templates in WPF](/dotnet/desktop/wpf/controls/styles-templates-overview)

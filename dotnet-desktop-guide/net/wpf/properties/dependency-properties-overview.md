@@ -66,7 +66,7 @@ The following example defines the `IsSpinning` dependency property to show the r
 :::code language="csharp" source="./snippets/dependency-properties-overview/csharp/MainWindow.xaml.cs" id="DefineDependencyProperty":::
 :::code language="vb" source="./snippets/dependency-properties-overview/vb/MainWindow.xaml.vb" id="DefineDependencyProperty":::
 
-The naming convention of the property and its backing <xref:System.Windows.DependencyProperty> field is important. The name of the field is always the name of the property, with the suffix `Property` appended. For more information about this convention and the reasons for it, see [Custom dependency properties](/dotnet/desktop/wpf/properties/custom-dependency-properties?view=netdesktop-6.0&preserve-view=true).
+The naming convention of the property and its backing <xref:System.Windows.DependencyProperty> field is important. The name of the field is always the name of the property, with the suffix `Property` appended. For more information about this convention and the reasons for it, see [Custom dependency properties](/dotnet/desktop/wpf/properties/custom-dependency-properties).
 
 ## Setting property values
 
@@ -131,7 +131,7 @@ Now that the resource is defined, we can reference the resource to provide a val
 In WPF XAML, you can use either a static or dynamic resource reference. This particular resource is referenced as a [DynamicResource](/dotnet/desktop/wpf/advanced/dynamicresource-markup-extension?view=netframeworkdesktop-4.8&preserve-view=true). A dynamic resource reference can only be used to set a dependency property, so it's specifically the dynamic resource reference usage that's enabled by the WPF property system. For more information, see [XAML resources](/dotnet/desktop/wpf/systems/xaml-resources-overview).
 
 > [!NOTE]
-> Resources are treated as a local value, which means that if you set another local value, you'll eliminate the resource reference. For more information, see [Dependency property value precedence](/dotnet/desktop/wpf/properties/dependency-property-value-precedence?view=netdesktop-6.0&preserve-view=true).
+> Resources are treated as a local value, which means that if you set another local value, you'll eliminate the resource reference. For more information, see [Dependency property value precedence](/dotnet/desktop/wpf/properties/dependency-property-value-precedence).
 
 ### Data binding
 
@@ -142,7 +142,7 @@ The following example sets the <xref:System.Windows.Controls.ContentControl.Cont
 :::code language="xaml" source="./snippets/dependency-properties-overview/csharp/MainWindow.xaml" id="BasicInlineBinding":::
 
 > [!NOTE]
-> Bindings are treated as a local value, which means that if you set another local value, you'll eliminate the binding. For details, see [Dependency property value precedence](/dotnet/desktop/wpf/properties/dependency-property-value-precedence?view=netdesktop-6.0&preserve-view=true).
+> Bindings are treated as a local value, which means that if you set another local value, you'll eliminate the binding. For details, see [Dependency property value precedence](/dotnet/desktop/wpf/properties/dependency-property-value-precedence).
 
 Dependency properties, or the <xref:System.Windows.DependencyObject> class, don't natively support <xref:System.ComponentModel.INotifyPropertyChanged> for notification of changes in `DependencyObject` source property value for data binding operations. For more about how to create properties for use in data binding that can report changes to a data binding target, see [Data binding overview](/dotnet/desktop/wpf/data/data-binding-overview?view=netframeworkdesktop-4.8&preserve-view=true).
 
@@ -156,7 +156,7 @@ The following example creates a simple style, which would be defined inside a <x
 
 :::code language="xaml" source="./snippets/dependency-properties-overview/csharp/MainWindow.xaml" id="SimpleStyle":::
 
-For more information, see [Styling and templating](/dotnet/desktop/wpf/controls/styles-templates-overview?view=netdesktop-5.0).
+For more information, see [Styling and templating](/dotnet/desktop/wpf/controls/styles-templates-overview).
 
 ### Animations
 
@@ -177,7 +177,7 @@ The following example overrides metadata for a <xref:System.Windows.FrameworkEle
 :::code language="csharp" source="./snippets/dependency-properties-overview/csharp/MainWindow.xaml.cs" id="overridemetadata":::
 :::code language="vb" source="./snippets/dependency-properties-overview/vb/MainWindow.xaml.vb" id="overridemetadata":::
 
-For more about overriding or accessing metadata for dependency properties, see [Override metadata for a dependency property](/dotnet/desktop/wpf/properties/how-to-override-metadata-for-a-dependency-property?view=netdesktop-6.0&preserve-view=true).
+For more about overriding or accessing metadata for dependency properties, see [Override metadata for a dependency property](/dotnet/desktop/wpf/properties/how-to-override-metadata-for-a-dependency-property).
 
 ### Property value inheritance
 
@@ -190,7 +190,7 @@ The following example shows a binding that includes the <xref:System.Windows.Fra
 
 :::code language="xaml" source="./snippets/dependency-properties-overview/csharp/MainWindow.xaml" id="InheritanceBindingContext":::
 
-For more information, see [Property value inheritance](/dotnet/desktop/wpf/properties/property-value-inheritance?view=netdesktop-6.0&preserve-view=true).
+For more information, see [Property value inheritance](/dotnet/desktop/wpf/properties/property-value-inheritance).
 
 ### WPF designer integration
 
@@ -198,7 +198,7 @@ Custom controls with properties implemented as dependency properties integrate w
 
 ## Dependency property value precedence
 
-Any of the property-based inputs within the WPF property system can set the value of a dependency property. [Dependency property value precedence](/dotnet/desktop/wpf/properties/dependency-property-value-precedence?view=netdesktop-6.0&preserve-view=true) exists so that the various scenarios for how properties obtain their values interact in a predictable way.
+Any of the property-based inputs within the WPF property system can set the value of a dependency property. [Dependency property value precedence](/dotnet/desktop/wpf/properties/dependency-property-value-precedence) exists so that the various scenarios for how properties obtain their values interact in a predictable way.
 
 > [!NOTE]
 > The SDK documentation sometimes uses the term "local value" or "locally set value" when discussing dependency properties. A locally set value is a property value that's set directly on an object instance in code, or as an element attribute in XAML.
@@ -209,22 +209,22 @@ The next example includes a style that applies to the <xref:System.Windows.Contr
 
 ### Why does dependency property precedence exist?
 
-Locally set values have precedence over style setter values, which supports local control of element properties. For details, see [Dependency property value precedence](/dotnet/desktop/wpf/properties/dependency-property-value-precedence?view=netdesktop-6.0&preserve-view=true).
+Locally set values have precedence over style setter values, which supports local control of element properties. For details, see [Dependency property value precedence](/dotnet/desktop/wpf/properties/dependency-property-value-precedence).
 
 > [!NOTE]
 > A number of properties defined on WPF elements aren't dependency properties, because dependency properties were typically implemented only when a feature of the WPF property system was required. The features include data binding, styling, animation, default value support, inheritance, attached properties, and invalidation.
 
 ## Learning more about dependency properties
 
-- Component developers or application developers might wish to create their own dependency property to add capabilities, such as data binding or styles support, or invalidation and value coercion support. For more information, see [Custom dependency properties](/dotnet/desktop/wpf/properties/custom-dependency-properties?view=netdesktop-6.0&preserve-view=true).
+- Component developers or application developers might wish to create their own dependency property to add capabilities, such as data binding or styles support, or invalidation and value coercion support. For more information, see [Custom dependency properties](/dotnet/desktop/wpf/properties/custom-dependency-properties).
 
-- Consider dependency properties to be public properties, accessible or discoverable by any caller with access to an instance. For more information, see [Dependency property security](/dotnet/desktop/wpf/properties/dependency-property-security?view=netdesktop-6.0&preserve-view=true).
+- Consider dependency properties to be public properties, accessible or discoverable by any caller with access to an instance. For more information, see [Dependency property security](/dotnet/desktop/wpf/properties/dependency-property-security).
 
-- An attached property is a type of property that supports a specialized syntax in XAML. An attached property often doesn't have a 1:1 correspondence with a common language runtime property and isn't necessarily a dependency property. The main purpose of an attached property is to allow child elements to report property values to a parent element, even if the parent element and child element don't include that property as part of the class members listings. One primary scenario is to enable a child element to inform parent elements how to present them in the UI. For examples, see <xref:System.Windows.Controls.DockPanel.Dock%2A> and <xref:System.Windows.Controls.Canvas.Left%2A>. For more information, see [Attached properties overview](/dotnet/desktop/wpf/properties/attached-properties-overview?view=netdesktop-6.0&preserve-view=true).
+- An attached property is a type of property that supports a specialized syntax in XAML. An attached property often doesn't have a 1:1 correspondence with a common language runtime property and isn't necessarily a dependency property. The main purpose of an attached property is to allow child elements to report property values to a parent element, even if the parent element and child element don't include that property as part of the class members listings. One primary scenario is to enable a child element to inform parent elements how to present them in the UI. For examples, see <xref:System.Windows.Controls.DockPanel.Dock%2A> and <xref:System.Windows.Controls.Canvas.Left%2A>. For more information, see [Attached properties overview](/dotnet/desktop/wpf/properties/attached-properties-overview).
 
 ## See also
 
-- [Custom dependency properties](/dotnet/desktop/wpf/properties/custom-dependency-properties?view=netdesktop-6.0&preserve-view=true)
-- [Read-only dependency properties](/dotnet/desktop/wpf/properties/read-only-dependency-properties?view=netdesktop-6.0&preserve-view=true)
+- [Custom dependency properties](/dotnet/desktop/wpf/properties/custom-dependency-properties)
+- [Read-only dependency properties](/dotnet/desktop/wpf/properties/read-only-dependency-properties)
 - [XAML in WPF](/dotnet/desktop/wpf/xaml/index)
 - [WPF architecture](/dotnet/desktop/wpf/advanced/wpf-architecture?view=netframeworkdesktop-4.8&preserve-view=true)

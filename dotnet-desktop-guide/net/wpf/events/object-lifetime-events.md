@@ -97,7 +97,7 @@ When the `Unloaded` event is raised on an element, it's [parent](<xref:System.Wi
 From the lifetime events perspective, there are four main types of WPF objects: elements in general, window elements, navigation hosts, and application objects. The <xref:System.Windows.FrameworkElement.Initialized>, <xref:System.Windows.FrameworkElement.Loaded>, and <xref:System.Windows.FrameworkElement.Unloaded> lifetime events apply to all framework-level elements. Other lifetime events specifically apply to window elements, navigation hosts, or application objects. For information about those other lifetime events, see:
 
 - [Application management overview](/dotnet/desktop/wpf/app-development/application-management-overview?view=netframeworkdesktop-4.8&preserve-view=true) for <xref:System.Windows.Application> objects.
-- [Overview of WPF windows](/dotnet/desktop/wpf/windows/index?view=netdesktop-6.0&preserve-view=true) for <xref:System.Windows.Window> elements.
+- [Overview of WPF windows](/dotnet/desktop/wpf/windows/index) for <xref:System.Windows.Window> elements.
 - [Navigation overview](/dotnet/desktop/wpf/app-development/navigation-overview?view=netframeworkdesktop-4.8&preserve-view=true) for <xref:System.Windows.Controls.Page>, <xref:System.Windows.Navigation.NavigationWindow>, and <xref:System.Windows.Controls.Frame> elements.
 
 ## See also
