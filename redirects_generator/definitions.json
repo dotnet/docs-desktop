@@ -360,8 +360,17 @@
         },
         {
             "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/wpf/advanced/weak-event-patterns?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/wpf/events/weak-event-patterns?view=netdesktop-6.0"
+        },
+        {
             "SourceUrl": "/dotnet/desktop/wpf/advanced/property-change-events?view=netframeworkdesktop-4.8",
             "TargetUrl": "/dotnet/desktop/wpf/events/property-change-events?view=netdesktop-6.0"
+        },
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/wpf/advanced/attached-events-overview?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/wpf/events/attached-events-overview?view=netdesktop-6.0"
         },
 
         // Systems - Properties
