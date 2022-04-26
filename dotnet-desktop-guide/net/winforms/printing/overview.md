@@ -1,7 +1,7 @@
 ---
 title: "PrintDialog Component Overview"
 ms.description: "Learn about print related settings in Windows-based applications."
-ms.date: "04/21/2022"
+ms.date: "04/26/2022"
 f1_keywords:
   - "PrintDialog"
 helpviewer_keywords:
@@ -40,18 +40,13 @@ You can set options related to printing at design time. Sometimes you may want t
     ```
 
     ```csharp
-    printDialog1.Document = PrintDocument1;
+    printDialog1.Document = printDocument1;
     ```
 
 01. Display the <xref:System.Windows.Forms.PrintDialog> component by using the <xref:System.Windows.Forms.CommonDialog.ShowDialog%2A> method.
 
-    ```vb
-    PrintDialog1.ShowDialog()
-    ```
-
-    ```csharp
-    printDialog1.ShowDialog();
-    ```
+:::code language="vb" source="snippets/overview/vb/Form1.vb" id="show-dialog":::
+:::code language="csharp" source="snippets/overview/csharp/Form1.cs" id="show-dialog":::
 
 01. The user's printing choices from the dialog will be copied to the <xref:System.Drawing.Printing.PrinterSettings> property of the <xref:System.Drawing.Printing.PrintDocument> component.
 
@@ -63,33 +58,14 @@ The foundation of printing in Windows Forms is the <xref:System.Drawing.Printing
 
 01. Write code to handle the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event.
 
-     You'll have to code your own printing logic. Additionally, you'll have to specify the material to be printed.
+    You'll have to code your own printing logic. Additionally, you'll have to specify the material to be printed.
 
-     As a material to print, in the following code example, a sample graphic in the shape of a red rectangle is created in the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event handler.
+    As a material to print, in the following code example, a sample graphic in the shape of a red rectangle is created in the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event handler.
 
-    ```vb
-    Private Sub PrintDocument1_PrintPage(ByVal sender As Object, ByVal e As System.Drawing.Printing.PrintPageEventArgs) Handles PrintDocument1.PrintPage
-       e.Graphics.FillRectangle(Brushes.Red, New Rectangle(500, 500, 500, 500))
-    End Sub
-    ```
+    :::code language="vb" source="snippets/overview/vb/Form1.vb" id="specify-the-material-to-be-printed":::
+    :::code language="csharp" source="snippets/overview/csharp/Form1.cs" id="specify-the-material-to-be-printed":::
 
-    ```csharp
-    private void printDocument1_PrintPage(object sender,
-    System.Drawing.Printing.PrintPageEventArgs e)
-    {
-       e.Graphics.FillRectangle(Brushes.Red,
-         new Rectangle(500, 500, 500, 500));
-    }
-    ```
-    (Visual C#) Place the following code in the form's constructor to register the event handler.
-
-    ```csharp
-    this.printDocument1.PrintPage += new
-       System.Drawing.Printing.PrintPageEventHandler
-       (this.printDocument1_PrintPage);
-    ```
-
-     You may also want to write code for the <xref:System.Drawing.Printing.PrintDocument.BeginPrint> and <xref:System.Drawing.Printing.PrintDocument.EndPrint> events. It will help to include an integer representing the total number of pages to print that is decremented as each page prints.
+    You may also want to write code for the <xref:System.Drawing.Printing.PrintDocument.BeginPrint> and <xref:System.Drawing.Printing.PrintDocument.EndPrint> events. It will help to include an integer representing the total number of pages to print that is decremented as each page prints.
 
     > [!NOTE]
     > You can add a <xref:System.Windows.Forms.PrintDialog> component to your form to provide a clean and efficient user interface (UI) to your users. Setting the <xref:System.Windows.Forms.PrintDialog.Document%2A> property of the <xref:System.Windows.Forms.PrintDialog> component enables you to set properties related to the print document you're working with on your form. For more information about the <xref:System.Windows.Forms.PrintDialog> component, see [PrintDialog Component](/dotnet/desktop/winforms/controls/printdialog-component-windows-forms?view=netframeworkdesktop-4.8&preserve-view=true).
@@ -105,38 +81,24 @@ Frequently, word processors and other applications that involve printing will pr
 01. Set the <xref:System.Drawing.Printing.PrintDocument.DocumentName%2A> property of the <xref:System.Drawing.Printing.PrintDocument> component.
 
     ```vb
-    PrintDocument1.DocumentName = "MyTextFile"
+    PrintDocument1.DocumentName = "SamplePrintApp"
     ```
 
     ```csharp
-    printDocument1.DocumentName = "MyTextFile";
+    printDocument1.DocumentName = "SamplePrintApp";
     ```
 
 01. Write code to handle the <xref:System.Drawing.Printing.PrintDocument.EndPrint> event.
 
      In the following code example, a message box is displayed, indicating that the document has finished printing.
 
-    ```vb
-    Private Sub PrintDocument1_EndPrint(ByVal sender As Object, ByVal e As System.Drawing.Printing.PrintEventArgs) Handles PrintDocument1.EndPrint
-       MessageBox.Show(PrintDocument1.DocumentName + " has finished printing.")
-    End Sub
-    ```
+    :::code language="vb" source="snippets/overview/vb/Form1.vb" id="message-box-indicating-document-has-finished-printing":::
+    :::code language="csharp" source="snippets/overview/csharp/Form1.cs" id="message-box-indicating-document-has-finished-printing":::
+
+    (Visual C#) Place the following code in the form's constructor to register the event handler.
 
     ```csharp
-    private void printDocument1_EndPrint(object sender,
-    System.Drawing.Printing.PrintEventArgs e)
-    {
-       MessageBox.Show(printDocument1.DocumentName +
-          " has finished printing.");
-    }
-    ```
-
-     (Visual C#) Place the following code in the form's constructor to register the event handler.
-
-    ```csharp
-    this.printDocument1.EndPrint += new
-       System.Drawing.Printing.PrintEventHandler
-       (this.printDocument1_EndPrint);
+    this.printDocument1.EndPrint += new System.Drawing.Printing.PrintEventHandler (this.printDocument1_EndPrint);
     ```
 
 ## See also
