@@ -27,7 +27,7 @@ There are two implementations of WPF:
 
     The .NET Framework implementation of WPF that's supported by Visual Studio 2019 and Visual Studio 2017.
 
-    .NET Framework 4 is a Windows-only version of .NET and is considered a Windows Operating System component. This version of WPF is distributed with .NET Framework. For more information about the .NET Framework version of WPF, see [Introduction to WPF for .NET Framework](../../../framework/wpf/introduction-to-wpf.md?view=netframeworkdesktop-4.8&preserve-view=true).
+    .NET Framework 4 is a Windows-only version of .NET and is considered a Windows Operating System component. This version of WPF is distributed with .NET Framework. For more information about the .NET Framework version of WPF, see [Introduction to WPF for .NET Framework](index.md).
 
 This overview is intended for newcomers and covers the key capabilities and concepts of WPF. To learn how to create a WPF app, see [Tutorial: Create a new WPF app](../get-started/create-app-visual-studio.md).
 
@@ -44,7 +44,7 @@ WPF exists as a subset of .NET types that are, mostly located in the <xref:Syste
 - Call methods
 - Handle events
 
-WPF includes more programming constructs that enhance properties and events: [dependency properties](../../../framework/wpf/advanced/dependency-properties-overview.md) and [routed events](../../../framework/wpf/advanced/routed-events-overview.md).
+WPF includes more programming constructs that enhance properties and events: [dependency properties](../properties/dependency-properties-overview.md) and [routed events](../../../framework/wpf/advanced/routed-events-overview.md).
 
 ## Markup and code-behind
 
@@ -250,7 +250,7 @@ The following example uses a <xref:System.Windows.Controls.DockPanel> to lay out
 The <xref:System.Windows.Controls.DockPanel> allows the child <xref:System.Windows.Controls.TextBox> controls to tell it how to arrange them. To do this, the <xref:System.Windows.Controls.DockPanel> implements a `Dock` attached property that is exposed to the child controls to allow each of them to specify a dock style.
 
 > [!NOTE]
-> A property that's implemented by a parent control for use by child controls is a WPF construct called an [attached property](../../../framework/wpf/advanced/attached-properties-overview.md).
+> A property that's implemented by a parent control for use by child controls is a WPF construct called an [attached property](../properties/attached-properties-overview.md).
 
 The following figure shows the result of the XAML markup in the preceding example:
 
