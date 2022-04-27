@@ -1,7 +1,7 @@
 ---
 title: "PrintDialog Component Overview"
 ms.description: "Learn about print related settings in Windows-based applications."
-ms.date: "04/26/2022"
+ms.date: "04/27/2022"
 f1_keywords:
   - "PrintDialog"
 helpviewer_keywords:

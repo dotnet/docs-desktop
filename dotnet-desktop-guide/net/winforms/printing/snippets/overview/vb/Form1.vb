@@ -4,7 +4,7 @@
         '<show_dialog>
         If PrintDialog1.ShowDialog() = DialogResult.OK Then
             PrintDocument1.Print()
-        End 
+        End If
         '</show_dialog>
     End Sub
     '<specify_the_material_to_be_printed>
