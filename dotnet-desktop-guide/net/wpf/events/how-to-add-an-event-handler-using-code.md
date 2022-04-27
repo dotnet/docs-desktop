@@ -77,4 +77,4 @@ For more information on how to create and handle routed events, see [How to crea
 ## See also
 
 - [Routed events overview](/dotnet/desktop/wpf/advanced/routed-events-overview?view=netframeworkdesktop-4.8&preserve-view=true)
-- [XAML in WPF](/dotnet/desktop/wpf/advanced/xaml-in-wpf?view=netframeworkdesktop-4.8&preserve-view=true)
+- [XAML in WPF](../xaml/index.md)

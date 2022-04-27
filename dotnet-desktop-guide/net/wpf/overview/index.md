@@ -44,7 +44,7 @@ WPF exists as a subset of .NET types that are, mostly located in the <xref:Syste
 - Call methods
 - Handle events
 
-WPF includes more programming constructs that enhance properties and events: [dependency properties](../../../framework/wpf/advanced/dependency-properties-overview.md) and [routed events](../../../framework/wpf/advanced/routed-events-overview.md).
+WPF includes more programming constructs that enhance properties and events: [dependency properties](../properties/dependency-properties-overview.md) and [routed events](../../../framework/wpf/advanced/routed-events-overview.md).
 
 ## Markup and code-behind
 
@@ -250,7 +250,7 @@ The following example uses a <xref:System.Windows.Controls.DockPanel> to lay out
 The <xref:System.Windows.Controls.DockPanel> allows the child <xref:System.Windows.Controls.TextBox> controls to tell it how to arrange them. To do this, the <xref:System.Windows.Controls.DockPanel> implements a `Dock` attached property that is exposed to the child controls to allow each of them to specify a dock style.
 
 > [!NOTE]
-> A property that's implemented by a parent control for use by child controls is a WPF construct called an [attached property](../../../framework/wpf/advanced/attached-properties-overview.md).
+> A property that's implemented by a parent control for use by child controls is a WPF construct called an [attached property](../properties/attached-properties-overview.md).
 
 The following figure shows the result of the XAML markup in the preceding example:
 
