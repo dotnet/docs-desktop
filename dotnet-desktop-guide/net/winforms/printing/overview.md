@@ -63,15 +63,15 @@ You'll have to code your own printing logic. Additionally, you'll have to specif
 
 As a material to print, in the following code example, a sample graphic in the shape of a red rectangle is created in the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event handler.
 
-    :::code language="vb" source="snippets/overview/vb/Form1.vb" id="specify_the_material_to_be_printed":::
+  :::code language="vb" source="snippets/overview/vb/Form1.vb" id="specify_the_material_to_be_printed":::
 
-    :::code language="csharp" source="snippets/overview/csharp/Form1.cs" id="specify_the_material_to_be_printed":::
+  :::code language="csharp" source="snippets/overview/csharp/Form1.cs" id="specify_the_material_to_be_printed":::
 
 For Visual C#, place the following code in the form's constructor to register the event handler.
 
-    ```csharp
-    this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler (this.printDocument1_PrintPage);  
-    ```
+  ```csharp
+  this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler (this.printDocument1_PrintPage);  
+  ```
 
 You may also want to write code for the <xref:System.Drawing.Printing.PrintDocument.BeginPrint> and <xref:System.Drawing.Printing.PrintDocument.EndPrint> events. It will help to include an integer representing the total number of pages to print that is decremented as each page prints.
 
