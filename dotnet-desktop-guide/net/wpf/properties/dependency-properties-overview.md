@@ -25,7 +25,7 @@ Windows Presentation Foundation (WPF) provides a set of services that can be use
 
 ## Prerequisites
 
-This article assumes basic knowledge of the .NET type system and object-oriented programming. To follow the examples in this article, it helps to understand XAML and know how to write WPF applications. For more information, see [Walkthrough: My first WPF desktop application](../get-started/create-app-visual-studio.md).
+This article assumes basic knowledge of the .NET type system and object-oriented programming. To follow the examples in this article, it helps to understand XAML and know how to write WPF applications. For more information, see [Tutorial: Create a new WPF app with .NET](../get-started/create-app-visual-studio.md).
 
 ## Dependency properties and CLR properties
 
