@@ -682,6 +682,10 @@
             "redirect_url": "/dotnet/desktop/winforms/printing/overview?view=netdesktop-6.0"
         },
         {
+            "source_path": "dotnet-desktop-guide/net/winforms/controls/printdialog-component-windows-forms.md",
+            "redirect_url": "/dotnet/desktop/winforms/printing/overview?view=netdesktop-6.0"
+        },
+        {
             "source_path": "dotnet-desktop-guide/framework/winforms/printing/overview.md",
             "redirect_url": "/dotnet/desktop/winforms/controls/printdialog-component-overview-windows-forms?view=netframeworkdesktop-4.8"
         },
