@@ -20,11 +20,13 @@ namespace Sample_Print_Application
 
 
         //<specify_the_material_to_be_printed>
-        private void PrintDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e) => e.Graphics.FillRectangle(Brushes.Red, new Rectangle(100, 100, 100, 100));
+        private void PrintDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e) =>
+            e.Graphics.FillRectangle(Brushes.Red, new Rectangle(100, 100, 100, 100));
         //</specify_the_material_to_be_printed>
 
         //<message_box_indicating_document_has_finished_printing>
-        private void PrintDocument1_EndPrint(object sender, System.Drawing.Printing.PrintEventArgs e) => MessageBox.Show(printDocument1.DocumentName + " has finished printing.");
+        private void PrintDocument1_EndPrint(object sender, System.Drawing.Printing.PrintEventArgs e) =>
+            MessageBox.Show(printDocument1.DocumentName + " has finished printing.");
         //</message_box_indicating_document_has_finished_printing>
 
     }
