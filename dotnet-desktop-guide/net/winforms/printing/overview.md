@@ -27,7 +27,7 @@ Use the [PrintDialog.ShowDialog](xref:System.Windows.Forms.CommonDialog.ShowDial
 
 The show dialog box method helps you to add print dialog box to the form. The <xref:System.Windows.Forms.PrintDialog> component appears in the tray at the bottom of the Windows Forms Designer in Visual Studio.
 
-## How to: capture user input from a PrintDialog at run time
+## How to capture user input from a PrintDialog at run time
 
 You can set options related to printing at design time. Sometimes you may want to change these options at run time, most likely because of choices made by the user. You can capture user input for printing a document using the <xref:System.Windows.Forms.PrintDialog> and the <xref:System.Drawing.Printing.PrintDocument> components. The following steps demonstrate displaying the print dialog for a document:
 
