@@ -700,10 +700,6 @@
         {
             "source_path": "dotnet-desktop-guide/net/winforms/advanced/how-to-complete-windows-forms-print-jobs.md",
             "redirect_url": "/dotnet/desktop/winforms/printing/overview?view=netdesktop-6.0"
-        },
-        {
-            "source_path": "/dotnet/desktop/winforms/whats-new/index?view=netdesktop-5.0",
-            "redirect_url": "/dotnet/desktop/winforms/whats-new/net60?view=netdesktop-5.0"
         }
     ]
 }
