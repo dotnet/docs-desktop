@@ -45,9 +45,9 @@ You can set options related to printing at design time. Sometimes you may want t
 
 01. Display the <xref:System.Windows.Forms.PrintDialog> component by using the <xref:System.Windows.Forms.CommonDialog.ShowDialog%2A> method.
 
-  :::code language="vb" source="snippets/overview/vb/Form1.vb" id="show_dialog":::
+    :::code language="vb" source="snippets/overview/vb/Form1.vb" id="show_dialog":::
 
-  :::code language="csharp" source="snippets/overview/csharp/Form1.cs" id="show_dialog":::
+    :::code language="csharp" source="snippets/overview/csharp/Form1.cs" id="show_dialog":::
 
 01. The user's printing choices from the dialog will be copied to the <xref:System.Drawing.Printing.PrinterSettings> property of the <xref:System.Drawing.Printing.PrintDocument> component.
 
@@ -63,15 +63,15 @@ You'll have to code your own printing logic. Additionally, you'll have to specif
 
 As a material to print, in the following code example, a sample graphic in the shape of a red rectangle is created in the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event handler.
 
-  :::code language="vb" source="snippets/overview/vb/Form1.vb" id="specify_the_material_to_be_printed":::
+    :::code language="vb" source="snippets/overview/vb/Form1.vb" id="specify_the_material_to_be_printed":::
 
-  :::code language="csharp" source="snippets/overview/csharp/Form1.cs" id="specify_the_material_to_be_printed":::
+    :::code language="csharp" source="snippets/overview/csharp/Form1.cs" id="specify_the_material_to_be_printed":::
 
 For Visual C#, place the following code in the form's constructor to register the event handler.
 
-  ```csharp
-  this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler (this.printDocument1_PrintPage);  
-  ```
+    ```csharp
+    this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler (this.printDocument1_PrintPage);  
+    ```
 
 You may also want to write code for the <xref:System.Drawing.Printing.PrintDocument.BeginPrint> and <xref:System.Drawing.Printing.PrintDocument.EndPrint> events. It will help to include an integer representing the total number of pages to print that is decremented as each page prints.
 
@@ -88,27 +88,27 @@ The following procedure requires that you've created a Windows-based application
 
 01. Set the <xref:System.Drawing.Printing.PrintDocument.DocumentName%2A> property of the <xref:System.Drawing.Printing.PrintDocument> component.
 
-  ```vb
-  PrintDocument1.DocumentName = "SamplePrintApp"
-  ```
+    ```vb
+    PrintDocument1.DocumentName = "SamplePrintApp"
+    ```
 
-  ```csharp
-  printDocument1.DocumentName = "SamplePrintApp";
-  ```
+    ```csharp
+    printDocument1.DocumentName = "SamplePrintApp";
+    ```
 
 01. Write code to handle the <xref:System.Drawing.Printing.PrintDocument.EndPrint> event.
 
-In the following code example, a message box is displayed, indicating that the document has finished printing.
+    In the following code example, a message box is displayed, indicating that the document has finished printing.
 
-  :::code language="vb" source="snippets/overview/vb/Form1.vb" id="message_box_indicating_document_has_finished_printing":::
+    :::code language="vb" source="snippets/overview/vb/Form1.vb" id="message_box_indicating_document_has_finished_printing":::
   
-  :::code language="csharp" source="snippets/overview/csharp/Form1.cs" id="message_box_indicating_document_has_finished_printing":::
+    :::code language="csharp" source="snippets/overview/csharp/Form1.cs" id="message_box_indicating_document_has_finished_printing":::
 
-For Visual C#, place the following code in the form's constructor to register the event handler.
+    For Visual C#, place the following code in the form's constructor to register the event handler.
 
-  ```csharp
-  this.printDocument1.EndPrint += new System.Drawing.Printing.PrintEventHandler (this.printDocument1_EndPrint);  
-  ```
+    ```csharp
+    this.printDocument1.EndPrint += new System.Drawing.Printing.PrintEventHandler (this.printDocument1_EndPrint);  
+    ```
 
 ## See also
 
