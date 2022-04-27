@@ -59,19 +59,13 @@ The foundation of printing in Windows Forms is the <xref:System.Drawing.Printing
 
 01. Write code to handle the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event.
 
-You'll have to code your own printing logic. Additionally, you'll have to specify the material to be printed.
+    You'll have to code your own printing logic. Additionally, you'll have to specify the material to be printed.
 
-As a material to print, in the following code example, a sample graphic in the shape of a red rectangle is created in the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event handler.
+    As a material to print, in the following code example, a sample graphic in the shape of a red rectangle is created in the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event handler.
 
-  :::code language="vb" source="snippets/overview/vb/Form1.vb" id="specify_the_material_to_be_printed":::
+    :::code language="vb" source="snippets/overview/vb/Form1.vb" id="specify_the_material_to_be_printed":::
 
-  :::code language="csharp" source="snippets/overview/csharp/Form1.cs" id="specify_the_material_to_be_printed":::
-
-For Visual C#, place the following code in the form's constructor to register the event handler.
-
-  ```csharp
-  this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler (this.printDocument1_PrintPage);  
-  ```
+    :::code language="csharp" source="snippets/overview/csharp/Form1.cs" id="specify_the_material_to_be_printed":::
 
 You may also want to write code for the <xref:System.Drawing.Printing.PrintDocument.BeginPrint> and <xref:System.Drawing.Printing.PrintDocument.EndPrint> events. It will help to include an integer representing the total number of pages to print that is decremented as each page prints.
 
@@ -103,12 +97,6 @@ The following procedure requires that you've created a Windows-based application
     :::code language="vb" source="snippets/overview/vb/Form1.vb" id="message_box_indicating_document_has_finished_printing":::
   
     :::code language="csharp" source="snippets/overview/csharp/Form1.cs" id="message_box_indicating_document_has_finished_printing":::
-
-    For Visual C#, place the following code in the form's constructor to register the event handler.
-
-    ```csharp
-    this.printDocument1.EndPrint += new System.Drawing.Printing.PrintEventHandler (this.printDocument1_EndPrint);  
-    ```
 
 ## See also
 
