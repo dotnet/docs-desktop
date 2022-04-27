@@ -35,8 +35,8 @@
             this.SuspendLayout();
 
             // Register the event handlers
-            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
-            this.printDocument1.EndPrint += new System.Drawing.Printing.PrintEventHandler(this.printDocument1_EndPrint);
+            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.PrintDocument1_PrintPage);
+            this.printDocument1.EndPrint += new System.Drawing.Printing.PrintEventHandler(this.PrintDocument1_EndPrint);
 
             // 
             // button1
