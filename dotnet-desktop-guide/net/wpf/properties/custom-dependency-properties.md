@@ -92,7 +92,7 @@ In order for your property to be a dependency property, you must register it wit
 
 The established naming convention for dependency properties is mandatory for normal behavior of the property system. The name of the identifier field that you create must be the registered name of the property with the suffix `Property`.
 
-A dependency property name must be unique within the registering class. Dependency properties that are inherited through a base type have already been registered, and cannot be registered by a derived type. However, you can use a dependency property that was registered by a different type, even a type your class doesn't inherit from, by adding your class as an owner of the dependency property. For more information on adding a class as owner, see [Dependency property metadata](dependency-property-metadata.md#adding-a-class-as-an-owner-of-an-existing-dependency-property).
+A dependency property name must be unique within the registering class. Dependency properties that are inherited through a base type have already been registered, and cannot be registered by a derived type. However, you can use a dependency property that was registered by a different type, even a type your class doesn't inherit from, by adding your class as an owner of the dependency property. For more information on adding a class as owner, see [Dependency property metadata](dependency-property-metadata.md#add-a-class-as-an-owner).
 
 ### Implementing a property wrapper
 

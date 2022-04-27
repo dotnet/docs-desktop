@@ -62,10 +62,10 @@ Example scenarios for overriding existing dependency property metadata are:
 
 - Changing or adding property-change callbacks, which might be necessary if an inherited dependency property interacts with other dependency properties differently than its base implementation does. One of the characteristics of a programming model that supports both code and markup, is that property values might be set in any order. This factor can affect how you implement property-change callbacks. For more information, see [Dependency property callbacks and validation](dependency-property-callbacks-and-validation.md).
 
-- Changing WPF [framework property metadata](<xref:System.Windows.FrameworkPropertyMetadata>) options. Typically, metadata options are set during registration of a new dependency property, but you can respecify them in <xref:System.Windows.DependencyProperty.OverrideMetadata%2A> or <xref:System.Windows.DependencyProperty.AddOwner%2A> calls. For more information about overriding framework property metadata, see [Specifying metadata](framework-property-metadata.md#specifying-metadata). For how to set framework property metadata options when registering a dependency property, see [Custom dependency properties](custom-dependency-properties.md).
+- Changing WPF [framework property metadata](<xref:System.Windows.FrameworkPropertyMetadata>) options. Typically, metadata options are set during registration of a new dependency property, but you can respecify them in <xref:System.Windows.DependencyProperty.OverrideMetadata%2A> or <xref:System.Windows.DependencyProperty.AddOwner%2A> calls. For more information about overriding framework property metadata, see [Specifying FrameworkPropertyMetadata](framework-property-metadata.md#specifying-frameworkpropertymetadata). For how to set framework property metadata options when registering a dependency property, see [Custom dependency properties](custom-dependency-properties.md).
 
 > [!NOTE]
-> Since validation callbacks aren't part of metadata, they can't be changed by overriding metadata. For more information, see [Validation callbacks](dependency-property-callbacks-and-validation.md#validation-callbacks).
+> Since validation callbacks aren't part of metadata, they can't be changed by overriding metadata. For more information, see [Validation value callbacks](dependency-property-callbacks-and-validation.md#validate-value-callbacks).
 
 ## Overriding metadata
 
