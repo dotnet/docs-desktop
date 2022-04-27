@@ -69,9 +69,9 @@ As a material to print, in the following code example, a sample graphic in the s
 
 For Visual C#, place the following code in the form's constructor to register the event handler.
 
-    ```csharp
-    this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler (this.printDocument1_PrintPage);  
-    ```
+  ```csharp
+  this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler (this.printDocument1_PrintPage);  
+  ```
 
 You may also want to write code for the <xref:System.Drawing.Printing.PrintDocument.BeginPrint> and <xref:System.Drawing.Printing.PrintDocument.EndPrint> events. It will help to include an integer representing the total number of pages to print that is decremented as each page prints.
 
@@ -88,13 +88,13 @@ The following procedure requires that you've created a Windows-based application
 
 01. Set the <xref:System.Drawing.Printing.PrintDocument.DocumentName%2A> property of the <xref:System.Drawing.Printing.PrintDocument> component.
 
-    ```vb
-    PrintDocument1.DocumentName = "SamplePrintApp"
-    ```
+  ```vb
+  PrintDocument1.DocumentName = "SamplePrintApp"
+  ```
 
-    ```csharp
-    printDocument1.DocumentName = "SamplePrintApp";
-    ```
+  ```csharp
+  printDocument1.DocumentName = "SamplePrintApp";
+  ```
 
 01. Write code to handle the <xref:System.Drawing.Printing.PrintDocument.EndPrint> event.
 
@@ -106,9 +106,9 @@ In the following code example, a message box is displayed, indicating that the d
 
 For Visual C#, place the following code in the form's constructor to register the event handler.
 
-    ```csharp
-    this.printDocument1.EndPrint += new System.Drawing.Printing.PrintEventHandler (this.printDocument1_EndPrint);  
-    ```
+  ```csharp
+  this.printDocument1.EndPrint += new System.Drawing.Printing.PrintEventHandler (this.printDocument1_EndPrint);  
+  ```
 
 ## See also
 
