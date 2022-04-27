@@ -243,6 +243,11 @@
         },
         {
             "Redirect": "OneWay",
+            "SourceUrl": "/dotnet/desktop/winforms/controls/printdialog-component-windows-forms?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/winforms/printing/overview?view=netdesktop-6.0"
+        },
+        {
+            "Redirect": "OneWay",
             "SourceUrl": "/dotnet/desktop/winforms/advanced/how-to-capture-user-input-from-a-printdialog-at-run-time?view=netframeworkdesktop-4.8",
             "TargetUrl": "/dotnet/desktop/winforms/printing/overview?view=netdesktop-6.0"
         },
@@ -267,8 +272,8 @@
     // ========
         {
             "Redirect": "Normal",
-            "SourceUrl": "/dotnet/desktop/winforms/whats-new/index?view=netdesktop-5.0",
-            "TargetUrl": "/dotnet/desktop/winforms/whats-new/net60?view=netdesktop-5.0"
+            "SourceUrl": "/dotnet/desktop/winforms/whats-new/index?view=netdesktop-6.0",
+            "TargetUrl": "/dotnet/desktop/winforms/whats-new/net60?view=netdesktop-6.0"
         },
 
 
