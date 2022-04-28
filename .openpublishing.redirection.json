@@ -676,6 +676,34 @@
         {
             "source_path": "dotnet-desktop-guide/framework/wpf/events/attached-events-overview.md",
             "redirect_url": "/dotnet/desktop/wpf/advanced/attached-events-overview?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/controls/printdialog-component-overview-windows-forms.md",
+            "redirect_url": "/dotnet/desktop/winforms/printing/overview?view=netdesktop-6.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/controls/printdialog-component-windows-forms.md",
+            "redirect_url": "/dotnet/desktop/winforms/printing/overview?view=netdesktop-6.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/winforms/printing/overview.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls/printdialog-component-overview-windows-forms?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/advanced/how-to-capture-user-input-from-a-printdialog-at-run-time.md",
+            "redirect_url": "/dotnet/desktop/winforms/printing/overview?view=netdesktop-6.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/advanced/how-to-create-standard-windows-forms-print-jobs.md",
+            "redirect_url": "/dotnet/desktop/winforms/printing/overview?view=netdesktop-6.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/advanced/windows-forms-print-support.md",
+            "redirect_url": "/dotnet/desktop/winforms/printing/overview?view=netdesktop-6.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/advanced/how-to-complete-windows-forms-print-jobs.md",
+            "redirect_url": "/dotnet/desktop/winforms/printing/overview?view=netdesktop-6.0"
         }
     ]
 }
