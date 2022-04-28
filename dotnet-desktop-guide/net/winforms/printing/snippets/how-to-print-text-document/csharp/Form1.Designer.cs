@@ -31,7 +31,6 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
-            this.printDialog1 = new System.Windows.Forms.PrintDialog();
             this.SuspendLayout();
             //register event for PrintDocument1_PrintPage
             this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler (PrintDocument1_PrintPage);
@@ -57,10 +56,7 @@
             this.label1.Size = new System.Drawing.Size(285, 65);
             this.label1.TabIndex = 1;
             this.label1.Text = "Print Demo";
-            // 
-            // printDialog1
-            // 
-            this.printDialog1.UseEXDialog = true;
+            
             // 
             // Form1
             // 
@@ -81,6 +77,5 @@
         private Button button1;
         private Label label1;
         private System.Drawing.Printing.PrintDocument printDocument1;
-        private PrintDialog printDialog1;
     }
 }

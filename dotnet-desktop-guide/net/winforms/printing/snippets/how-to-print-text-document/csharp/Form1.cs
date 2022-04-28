@@ -1,10 +1,10 @@
-namespace Sample_Print_Application
+﻿namespace Sample_Print_Application
 {
     public partial class Form1 : Form
     {
-        //<add_string_ to_your_form>
-        private string stringToPrint;
-        //</add_string_ to_your_form>
+        //<add_string_to_your_form>
+        private string stringToPrint="";
+        //</add_string_to_your_form>
 
         public Form1()
         {
@@ -16,8 +16,8 @@ namespace Sample_Print_Application
             string docName = "testPage.txt";
             string docPath = @"C:\";
             printDocument1.DocumentName = docName;
-            using (FileStream stream = new FileStream(docPath + docName, FileMode.Open))
-            using (StreamReader reader = new StreamReader(stream))
+            using FileStream stream = new (docPath + docName, FileMode.Open);
+            using StreamReader reader = new (stream);
             {
                 stringToPrint = reader.ReadToEnd();
             }
