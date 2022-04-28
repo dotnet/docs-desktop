@@ -36,9 +36,9 @@ It's common for Windows-based applications to print text. The <xref:System.Drawi
 
   In the following code example, the event handler is used to print the contents of the "testPage.txt" file in the same font as it's used on the form.
 
-  :::code language="csharp" source="snippets/ho-to-print-text-document/csharp/Form1.cs" id="print_contents_of_the_file_using_event_handler":::
+  :::code language="csharp" source="snippets/how-to-print-text-document/csharp/Form1.cs" id="print_contents_of_the_file_using_event_handler":::
 
-  :::code language="vb" source="snippets/how-to-print-text-document/vb/Form1.vb" print_contents_of_the_file_using_event_handler":::
+  :::code language="vb" source="snippets/how-to-print-text-document/vb/Form1.vb" id="print_contents_of_the_file_using_event_handler":::
 
 01. Call the <xref:System.Drawing.Printing.PrintDocument.Print%2A> method to raise the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event.
 

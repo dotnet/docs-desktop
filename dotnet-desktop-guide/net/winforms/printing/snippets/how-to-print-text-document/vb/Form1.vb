@@ -37,7 +37,7 @@ Public Class Form1
 
     Private Sub ReadFile()
 
-        '<set_DocumentName_then_open_and_read_contents_to_the_string>
+        '<set_DocumentName_then_open_and_read_document_to_the_string">
         Dim docName As String = "testPage.txt"
         Dim docPath As String = "C:\"
         PrintDocument1.DocumentName = docName
@@ -53,7 +53,7 @@ Public Class Form1
         Finally
             stream.Dispose()
         End Try
-        '</set_DocumentName_then_open_and_read_contents_to_the_string>
+        '</set_DocumentName_then_open_and_read_document_to_the_string">
 
     End Sub
 
