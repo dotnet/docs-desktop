@@ -36,7 +36,7 @@ Public Class Form1
     '</print_contents_of_the_file_using_event_handler>
 
     Private Sub ReadFile()
-
+          
         '<set_DocumentName_then_open_and_read_document_to_the_string">
         Dim docName As String = "testPage.txt"
         Dim docPath As String = "C:\"
@@ -54,7 +54,7 @@ Public Class Form1
             stream.Dispose()
         End Try
         '</set_DocumentName_then_open_and_read_document_to_the_string">
-
+           
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
