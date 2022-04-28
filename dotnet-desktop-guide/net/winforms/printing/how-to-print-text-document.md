@@ -34,11 +34,11 @@ It's common for Windows-based applications to print text. The <xref:System.Drawi
 
 01. In the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event handler, use the <xref:System.Drawing.Printing.PrintPageEventArgs.Graphics%2A> property of the <xref:System.Drawing.Printing.PrintPageEventArgs> class and the document contents to calculate line length and lines per page. After each page is drawn, check if it's the last page, and set the <xref:System.Drawing.Printing.PrintPageEventArgs.HasMorePages%2A> property of the <xref:System.Drawing.Printing.PrintPageEventArgs> accordingly. The <xref:System.Drawing.Printing.PrintDocument.PrintPage> event is raised until <xref:System.Drawing.Printing.PrintPageEventArgs.HasMorePages%2A> is `false`. Also, make sure the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event is associated with its event-handling method.
 
-In the following code example, the event handler is used to print the contents of the "testPage.txt" file in the same font as it's used on the form.
+    In the following code example, the event handler is used to print the contents of the "testPage.txt" file in the same font as it's used on the form.
 
-  :::code language="csharp" source="snippets/how-to-print-text-document/csharp/Form1.cs" id="print_contents_using_event_handler":::
+    :::code language="csharp" source="snippets/how-to-print-text-document/csharp/Form1.cs" id="print_contents_using_event_handler":::
 
-  :::code language="vb" source="snippets/how-to-print-text-document/vb/Form1.vb" id="print_contents_using_event_handler":::
+    :::code language="vb" source="snippets/how-to-print-text-document/vb/Form1.vb" id="print_contents_using_event_handler":::
 
 01. Call the <xref:System.Drawing.Printing.PrintDocument.Print%2A> method to raise the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event.
 
