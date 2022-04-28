@@ -174,7 +174,7 @@ Implicit keys for styles don't apply on a control if <xref:System.Windows.Framew
 - [x:Type markup extension](../../../xaml-services/xtype-markup-extension.md)
 - <xref:System.Windows.ResourceDictionary>
 - [Application resources](../../../framework/wpf/advanced/optimizing-performance-application-resources.md)
-- [Define and reference a resource](../../../framework/wpf/advanced/how-to-define-and-reference-a-resource.md)
+- [Define and reference a resource](xaml-resources-how-to-define-and-reference.md)
 - [Application management overview](../../../framework/wpf/app-development/application-management-overview.md)
 - [StaticResource markup extension](../../../framework/wpf/advanced/staticresource-markup-extension.md)
 - [DynamicResource markup extension](../../../framework/wpf/advanced/dynamicresource-markup-extension.md)
