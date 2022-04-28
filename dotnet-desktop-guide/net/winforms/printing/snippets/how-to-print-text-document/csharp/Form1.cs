@@ -12,7 +12,7 @@
         }
         private void ReadFile()
         {
-            //<set_DocumentName_then_open_and_read_document_to_the_string>
+            //<set_DocumentName_and_string>
             string docName = "testPage.txt";
             string docPath = @"C:\";
             printDocument1.DocumentName = docName;
@@ -21,10 +21,10 @@
             {
                 stringToPrint = reader.ReadToEnd();
             }
-            //</set_DocumentName_then_open_and_read_document_to_the_string>
+            //</set_DocumentName_and_string>
         }
 
-        //<print_contents_of_the_file_using_event_handler>
+        //<print_contents_using_event_handler>
         private void PrintDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
             int charactersOnPage = 0;
@@ -46,7 +46,7 @@
             // Check to see if more pages are to be printed.
             e.HasMorePages = (stringToPrint.Length > 0);
         }
-        //</print_contents_of_the_file_using_event_handler>
+        //</print_contents_using_event_handler>
         
         private void button1_Click(object sender, EventArgs e)
         {

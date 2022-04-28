@@ -10,7 +10,7 @@ Public Class Form1
     Private stringToPrint As String
     '</add_string_to_your_form>
 
-    '<print_contents_of_the_file_using_event_handler>
+    '<print_contents_using_event_handler>
     Private Sub PrintDocument1_PrintPage(ByVal sender As Object,
     ByVal e As PrintPageEventArgs) Handles PrintDocument1.PrintPage
 
@@ -33,11 +33,11 @@ Public Class Form1
         e.HasMorePages = stringToPrint.Length > 0
 
     End Sub
-    '</print_contents_of_the_file_using_event_handler>
+    '</print_contents_using_event_handler>
 
     Private Sub ReadFile()
           
-        '<set_DocumentName_then_open_and_read_document_to_the_string">
+        '<set_DocumentName_and_string">
         Dim docName As String = "testPage.txt"
         Dim docPath As String = "C:\"
         PrintDocument1.DocumentName = docName
@@ -53,7 +53,7 @@ Public Class Form1
         Finally
             stream.Dispose()
         End Try
-        '</set_DocumentName_then_open_and_read_document_to_the_string">
+        '</set_DocumentName_and_string">
            
     End Sub
 
