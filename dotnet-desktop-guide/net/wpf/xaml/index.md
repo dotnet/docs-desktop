@@ -272,9 +272,9 @@ The following example illustrates the <xref:System.Windows.Controls.DockPanel.Do
 
 :::code language="xaml" source="./snippets/index/csharp/Window3.xaml" id="DockPanel" :::
 
-In WPF, most or all the attached properties are also implemented as dependency properties. For more information, see [Attached Properties Overview](../../../framework/wpf/advanced/attached-properties-overview.md).
+In WPF, most or all the attached properties are also implemented as dependency properties. For more information, see [Attached Properties Overview](../properties/attached-properties-overview.md).
 
-Attached events use a similar `ownerType.eventName` form of attribute syntax. Just like the non-attached events, the attribute value for an attached event in XAML specifies the name of the handler method that is invoked when the event is handled on the element. Attached event usages in WPF XAML are less common. For more information, see [Attached Events Overview](../../../framework/wpf/advanced/attached-events-overview.md).
+Attached events use a similar `ownerType.eventName` form of attribute syntax. Just like the non-attached events, the attribute value for an attached event in XAML specifies the name of the handler method that is invoked when the event is handled on the element. Attached event usages in WPF XAML are less common. For more information, see [Attached Events Overview](../events/attached-events-overview.md).
 
 ## Base types
 
