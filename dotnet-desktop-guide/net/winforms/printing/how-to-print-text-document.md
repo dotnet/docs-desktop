@@ -1,19 +1,21 @@
 ---
-title: "How to: Print a Multi-Page Text File"
-ms.date: "04/28/2022"
+title: "How to print multi-page text file"
+description: Learn how to print multiple page text file (Windows Forms .NET).
+ms.date: "04/29/2022"
 dev_langs: 
   - "csharp"
   - "vb"
 helpviewer_keywords: 
-  - "printing [Windows Forms], printing multiple pages"
-  - "text [Windows Forms], printing Windows Forms"
-  - "Windows Forms, printing text"
-  - "printing [Windows Forms], text"
+  - "printing [Windows Forms .NET], printing multiple pages"
+  - "text [Windows Forms .NET], printing Windows Forms"
+  - "Windows Forms .NET, printing text"
+  - "printing [Windows Forms .NET], text"
 ms.custom: devdivchpfy22
 ---
-# How to: Print a Multi-Page Text File in Windows Forms .NET
 
-It's common for Windows-based applications to print text. The <xref:System.Drawing.Graphics> class provides methods for drawing objects (graphics or text) to a device, such as a screen or printer. The following section describes in detail the process to print text file. This method doesn't support print of word and pdf files.
+# How to print a multi-page text file (Windows Forms .NET)
+
+It's common for Windows-based applications to print text. The <xref:System.Drawing.Graphics> class provides methods for drawing objects (graphics or text) to a device, such as a screen or printer. The following section describes in detail the process to print text file. This method doesn't support printing non-plain text files, such as an Office Word document or a _PDF_ file.
 
 > [!NOTE]
 > The <xref:System.Windows.Forms.TextRenderer.DrawText%2A> methods of <xref:System.Windows.Forms.TextRenderer> are not supported for printing. You should always use the <xref:System.Drawing.Graphics.DrawString%2A> methods of <xref:System.Drawing.Graphics>, as shown in the following code example, to draw text for printing purposes.
@@ -32,7 +34,9 @@ It's common for Windows-based applications to print text. The <xref:System.Drawi
 
     :::code language="vb" source="snippets/how-to-print-text-document/vb/Form1.vb" id="set_DocumentName_and_string":::
 
-01. In the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event handler, use the <xref:System.Drawing.Printing.PrintPageEventArgs.Graphics%2A> property of the <xref:System.Drawing.Printing.PrintPageEventArgs> class and the document contents to calculate line length and lines per page. After each page is drawn, check if it's the last page, and set the <xref:System.Drawing.Printing.PrintPageEventArgs.HasMorePages%2A> property of the <xref:System.Drawing.Printing.PrintPageEventArgs> accordingly. The <xref:System.Drawing.Printing.PrintDocument.PrintPage> event is raised until <xref:System.Drawing.Printing.PrintPageEventArgs.HasMorePages%2A> is `false`. Also, make sure the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event is associated with its event-handling method.
+01. Select the `PrintDocument` component in the Visual Designer. On the **Properties** pane, select the **Event** filter and then double-click the `PrintPage` event to generate an event handler.
+
+01. In the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event handler, use the <xref:System.Drawing.Printing.PrintPageEventArgs.Graphics%2A> property of the <xref:System.Drawing.Printing.PrintPageEventArgs> class and the document contents to calculate line length and lines per page. After each page is drawn, check if it's the last page, and set the <xref:System.Drawing.Printing.PrintPageEventArgs.HasMorePages%2A> property of the `PrintPageEventArgs` accordingly. The `PrintPage` event is raised until `HasMorePages` is `false`. Also, make sure the `PrintPage` event is associated with its event-handling method.
 
     In the following code example, the event handler is used to print the contents of the "testPage.txt" file in the same font as it's used on the form.
 
