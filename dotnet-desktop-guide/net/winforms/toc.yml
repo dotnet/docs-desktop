@@ -99,3 +99,7 @@ items:
       href: input-mouse/how-to-manage-cursor-pointer.md
     - name: Simulate mouse events
       href: input-mouse/how-to-simulate-events.md
+- name: Printing
+  items:
+  - name: Overview
+    href: printing/overview.md
