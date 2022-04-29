@@ -704,6 +704,14 @@
         {
             "source_path": "dotnet-desktop-guide/net/winforms/advanced/how-to-complete-windows-forms-print-jobs.md",
             "redirect_url": "/dotnet/desktop/winforms/printing/overview?view=netdesktop-6.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/advanced/routed-events-overview.md",
+            "redirect_url": "/dotnet/desktop/wpf/events/routed-events-overview?view=netdesktop-6.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/events/routed-events-overview.md",
+            "redirect_url": "/dotnet/desktop/wpf/advanced/routed-events-overview?view=netframeworkdesktop-4.8"
         }
     ]
 }
