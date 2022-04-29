@@ -17,13 +17,15 @@ ms.custom: devdivchpfy22
 
 As part of the development process, you typically will want to print a copy of your Windows Form. The following code example shows how to print a copy of the current form by using the <xref:System.Drawing.Graphics.CopyFromScreen%2A> method.
 
+In the following example, a button named **Print** is added to the form. When the **Print** button is clicked, it saves the form to an image in memory, and then sends it to the print object.
+
 ## Example
 
-:::code language="csharp" source="snippets/how-to-print-windows-form/csharp/form1.cs":::
+:::code language="csharp" source="snippets/how-to-print-windows-form/csharp/Form1.cs":::
 
-:::code language="vb" source="snippets/how-to-print-windows-form/vb/form1.vb":::
+:::code language="vb" source="snippets/how-to-print-windows-form/vb/Form1.vb":::
 
-## Robust Programming
+## Robust programming
 
 The following conditions may cause an exception:
 
@@ -31,7 +33,7 @@ The following conditions may cause an exception:
 
 - There's no printer installed.
 
-## .NET Security
+## .NET security
 
 In order to run this code example, you must have permission to access the printer you use with your computer.
 

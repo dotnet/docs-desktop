@@ -1,50 +1,30 @@
-﻿//<snippet1>
-
-using System;
-using System.Windows.Forms;
-using System.Drawing;
-using System.Drawing.Printing;
-
-public class Form1 :
-    Form
+namespace Sample_print_win_form1
 {
-    private Button printButton = new Button();
-    private PrintDocument printDocument1 = new PrintDocument();
-
-    public Form1()
+    public partial class Form1 : Form
     {
-        printButton.Text = "Print Form";
-        printButton.Click += new EventHandler(printButton_Click);
-        printDocument1.PrintPage += new PrintPageEventHandler(printDocument1_PrintPage);
-        this.Controls.Add(printButton);
-    }
+        Bitmap memoryImage;
+        public Form1()
+        {
+            InitializeComponent();
+        }
 
-    void printButton_Click(object sender, EventArgs e)
-    {
-        CaptureScreen();
-        printDocument1.Print();
-    }
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            //<capture_screen>
+            Graphics myGraphics = this.CreateGraphics();
+            Size s = this.Size;
+            memoryImage = new Bitmap(s.Width, s.Height, myGraphics);
+            Graphics memoryGraphics = Graphics.FromImage(memoryImage);
+            memoryGraphics.CopyFromScreen(this.Location.X, this.Location.Y, 0, 0, s);
+            //</capture_screen>
 
-    Bitmap memoryImage;
-
-    private void CaptureScreen()
-    {
-        Graphics myGraphics = this.CreateGraphics();
-        Size s = this.Size;
-        memoryImage = new Bitmap(s.Width, s.Height, myGraphics);
-        Graphics memoryGraphics = Graphics.FromImage(memoryImage);
-        memoryGraphics.CopyFromScreen(this.Location.X, this.Location.Y, 0, 0, s);
-    }
-
-    private void printDocument1_PrintPage(System.Object sender,
-           System.Drawing.Printing.PrintPageEventArgs e)
-    {
-        e.Graphics.DrawImage(memoryImage, 0, 0);
-    }
-
-    public static void Main()
-    {
-        Application.Run(new Form1());
+            //<call_print_method_to_print_form>
+            printDocument1.Print();
+            //</call_print_method_to_print_form>
+        }
+        private void PrintDocument1_PrintPage(System.Object sender,
+           System.Drawing.Printing.PrintPageEventArgs e) =>
+               e.Graphics.DrawImage(memoryImage, 0, 0);
+        
     }
 }
-//</snippet1>
