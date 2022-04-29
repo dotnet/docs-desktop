@@ -1,7 +1,7 @@
 ---
-title: "How to: Print a Windows Form"
+title: "How to print a Windows Form"
 description: Learn how to programmatically print a copy of the current Windows Form by using the CopyFromScreen method.
-ms.date: "04/22/2022"
+ms.date: "04/29/2022"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -12,7 +12,8 @@ helpviewer_keywords:
   - "printing [Windows Forms], printing a form"
 ms.custom: devdivchpfy22
 ---
-# How to: Print a Windows Form
+
+# How to print a Windows Form
 
 As part of the development process, you typically will want to print a copy of your Windows Form. The following code example shows how to print a copy of the current form by using the <xref:System.Drawing.Graphics.CopyFromScreen%2A> method.
 
