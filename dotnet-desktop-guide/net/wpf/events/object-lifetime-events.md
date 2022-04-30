@@ -38,7 +38,7 @@ During their lifetime, all objects in Microsoft .NET managed code go through _cr
 
 ## Prerequisites
 
-This article assumes a basic knowledge of how WPF element layout can be conceptualized as a tree, and that you've read [Routed events overview](/dotnet/desktop/wpf/advanced/routed-events-overview?view=netframeworkdesktop-4.8&preserve-view=true). To follow the examples in this article, it helps if you're familiar with Extensible Application Markup Language (XAML) and know how to write WPF applications.
+This article assumes a basic knowledge of how WPF element layout can be conceptualized as a tree, and that you've read [Routed events overview](routed-events-overview.md). To follow the examples in this article, it helps if you're familiar with Extensible Application Markup Language (XAML) and know how to write WPF applications.
 
 ## Lifetime events for visual objects
 
@@ -108,4 +108,4 @@ From the lifetime events perspective, there are four main types of WPF objects: 
 - [Handle a Loaded Event](/dotnet/desktop/wpf/advanced/how-to-handle-a-loaded-event?view=netframeworkdesktop-4.8&preserve-view=true)
 - [The Loaded event and the Initialized event](/archive/blogs/mikehillberg/the-loaded-event-and-the-initialized-event)
 - [Trees in WPF](/dotnet/desktop/wpf/advanced/trees-in-wpf)
-- [Routed events overview](/dotnet/desktop/wpf/advanced/routed-events-overview?view=netframeworkdesktop-4.8&preserve-view=true)
+- [Routed events overview](routed-events-overview.md)
