@@ -35,8 +35,8 @@ Public Class Form1
     End Sub
     '</print_contents_using_event_handler>
 
-    Private Sub ReadFile()
-          
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+
         '<set_DocumentName_and_string>
         Dim docName As String = "testPage.txt"
         Dim docPath As String = "C:\"
@@ -53,17 +53,12 @@ Public Class Form1
         Finally
             stream.Dispose()
         End Try
-        '</set_DocumentName_and_string>
-           
-    End Sub
-
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-
-        ReadFile()
-
+        
         '<call_print_method_to_print_file>
         PrintDocument1.Print()
         '</call_print_method_to_print_file>
+
+        '</set_DocumentName_and_string>
 
     End Sub
 

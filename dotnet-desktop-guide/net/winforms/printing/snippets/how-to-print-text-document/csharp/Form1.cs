@@ -10,20 +10,7 @@
         {
             InitializeComponent();
         }
-        private void ReadFile()
-        {
-            //<set_DocumentName_and_string>
-            string docName = "testPage.txt";
-            string docPath = @"C:\";
-            printDocument1.DocumentName = docName;
-            using FileStream stream = new (docPath + docName, FileMode.Open);
-            using StreamReader reader = new (stream);
-            {
-                stringToPrint = reader.ReadToEnd();
-            }
-            //</set_DocumentName_and_string>
-        }
-
+        
         //<print_contents_using_event_handler>
         private void PrintDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
@@ -50,10 +37,22 @@
         
         private void button1_Click(object sender, EventArgs e)
         {
-            ReadFile();
+            //<set_DocumentName_and_string>
+            string docName = "testPage.txt";
+            string docPath = @"C:\";
+            printDocument1.DocumentName = docName;
+            using FileStream stream = new (docPath + docName, FileMode.Open);
+            using StreamReader reader = new (stream);
+            {
+                stringToPrint = reader.ReadToEnd();
+            }
+            
             //<call_print_method_to_print_file>
             printDocument1.Print();
             //</call_print_method_to_print_file>
+
+            //</set_DocumentName_and_string>
+
         }
     }
 }
