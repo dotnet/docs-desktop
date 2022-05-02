@@ -24,13 +24,13 @@ It's common in Windows Forms programming to offer print preview in addition to p
 
      :::code language="csharp" source="snippets/how-to-print-in-windows-forms-using-print-preview/csharp/Form1.cs" id="string_declaration":::
 
-     :::code language="csharp" source="snippets/how-to-print-in-windows-forms-using-print-preview/vb/Form1.vb" id="string_declaration":::
+     :::code language="vb" source="snippets/how-to-print-in-windows-forms-using-print-preview/vb/Form1.vb" id="string_declaration":::
 
 01. Set the <xref:System.Drawing.Printing.PrintDocument.DocumentName%2A> property to the document you wish to print, and open and read the document's contents to the string you added previously.
 
      :::code language="csharp" source="snippets/how-to-print-in-windows-forms-using-print-preview/csharp/Form1.cs" id="open_and_read_document_contents_the_string":::
 
-     :::code language="csharp" source="snippets/how-to-print-in-windows-forms-using-print-preview/vb/Form1.vb" id="open_and_read_document_contents_the_string":::
+     :::code language="vb" source="snippets/how-to-print-in-windows-forms-using-print-preview/vb/Form1.vb" id="open_and_read_document_contents_the_string":::
 
 01. As you would for printing the document, in the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event handler, use the <xref:System.Drawing.Printing.PrintPageEventArgs.Graphics%2A> property of the <xref:System.Drawing.Printing.PrintPageEventArgs> class and the file contents to calculate lines per page and render the document's contents. After each page is drawn, check to see if it's the last page, and set the <xref:System.Drawing.Printing.PrintPageEventArgs.HasMorePages%2A> property of the `PrintPageEventArgs` accordingly. The `PrintPage` event is raised until `HasMorePages` is `false`. When the document has finished rendering, reset the string to be rendered. Also, make sure the `PrintPage` event is associated with its event-handling method.
 
@@ -41,13 +41,13 @@ It's common in Windows Forms programming to offer print preview in addition to p
 
      :::code language="csharp" source="snippets/how-to-print-in-windows-forms-using-print-preview/csharp/Form1.cs" id="print_file_using_event_handler":::
 
-     :::code language="csharp" source="snippets/how-to-print-in-windows-forms-using-print-preview/vb/Form1.vb" id="print_file_using_event_handler":::
+     :::code language="vb" source="snippets/how-to-print-in-windows-forms-using-print-preview/vb/Form1.vb" id="print_file_using_event_handler":::
 
 01. Set the <xref:System.Windows.Forms.PrintPreviewDialog.Document%2A> property of the <xref:System.Windows.Forms.PrintPreviewDialog> control to the <xref:System.Drawing.Printing.PrintDocument> component on the form.
 
      :::code language="csharp" source="snippets/how-to-print-in-windows-forms-using-print-preview/csharp/Form1.cs" id="set_the_document_property":::
 
-     :::code language="csharp" source="snippets/how-to-print-in-windows-forms-using-print-preview/vb/Form1.vb" id="set_the_document_property":::
+     :::code language="vb" source="snippets/how-to-print-in-windows-forms-using-print-preview/vb/Form1.vb" id="set_the_document_property":::
 
 01. Call the <xref:System.Windows.Forms.CommonDialog.ShowDialog%2A> method on the <xref:System.Windows.Forms.PrintPreviewDialog> control. Note the highlighted code give below, you would typically call <xref:System.Windows.Forms.CommonDialog.ShowDialog%2A> from the <xref:System.Windows.Forms.Control.Click> event-handling method of a button. Calling <xref:System.Windows.Forms.CommonDialog.ShowDialog%2A> raises the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event and renders the output to the <xref:System.Windows.Forms.PrintPreviewDialog> control. When the user selects the print icon on the dialog, the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event is raised again, sending the output to the printer instead of the preview dialog. Hence the string is reset at the end of the rendering process in step 4.
 
@@ -55,7 +55,7 @@ It's common in Windows Forms programming to offer print preview in addition to p
 
      :::code language="csharp" source="snippets/how-to-print-in-windows-forms-using-print-preview/csharp/Form1.cs" id="read_document_and_show_print_preview_dialog" highlight="20":::
 
-     :::code language="csharp" source="snippets/how-to-print-in-windows-forms-using-print-preview/vb/Form1.vb" id="read_document_and_show_print_preview_dialog" highlight="25":::
+     :::code language="vb" source="snippets/how-to-print-in-windows-forms-using-print-preview/vb/Form1.vb" id="read_document_and_show_print_preview_dialog" highlight="25":::
 
 ## See also
 

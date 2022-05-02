@@ -36,7 +36,9 @@ Public Class Form1
         End If
 
     End Sub
+    '</print_file_using_event_handler>
 
+    '<read_document_and_show_print_preview_dialog>
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
     
         '<open_and_read_document_contents_the_string>
@@ -66,6 +68,6 @@ Public Class Form1
         '</set_property_of_dialog>
 
     End Sub
-    '</print_file_using_event_handler>
+    '</read_document_and_show_print_preview_dialog>
 
 End Class
