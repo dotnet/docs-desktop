@@ -32,7 +32,7 @@ It's common for Windows-based applications to print text. The <xref:System.Drawi
 
 01. To print a document, set the <xref:System.Drawing.Printing.PrintDocument.DocumentName%2A> property to the document you wish to print. Then open and read the document content to the string you added previously. Code to open and read document can be added to the button click event handler.
 
-Call the <xref:System.Drawing.Printing.PrintDocument.Print%2A> method to raise the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event. As shown in the highlighted code below, the method `.Print()` will start printing and method raise the `PrintPage` event.
+    Call the <xref:System.Drawing.Printing.PrintDocument.Print%2A> method to raise the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event. As shown in the highlighted code below, the method `.Print()` will start printing and method raise the `PrintPage` event.
 
     :::code language="csharp" source="snippets/how-to-print-text-document/csharp/Form1.cs" id="set_DocumentName_and_string" highlight= "10-12":::
 
