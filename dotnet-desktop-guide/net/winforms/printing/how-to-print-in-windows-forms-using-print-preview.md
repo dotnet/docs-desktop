@@ -53,9 +53,9 @@ It's common in Windows Forms programming to offer print preview in addition to p
 
      The following code example shows the <xref:System.Windows.Forms.Control.Click> event-handling method for a button on the form. This event-handling method calls the methods to read the document and show the print preview dialog.
 
-     :::code language="csharp" source="snippets/how-to-print-in-windows-forms-using-print-preview/csharp/Form1.cs" id="read_document_and_show_print_preview_dialog" highlight="20":::
+     :::code language="csharp" source="snippets/how-to-print-in-windows-forms-using-print-preview/csharp/Form1.cs" id="read_document_and_show_print_preview_dialog" highlight="15":::
 
-     :::code language="vb" source="snippets/how-to-print-in-windows-forms-using-print-preview/vb/Form1.vb" id="read_document_and_show_print_preview_dialog" highlight="25":::
+     :::code language="vb" source="snippets/how-to-print-in-windows-forms-using-print-preview/vb/Form1.vb" id="read_document_and_show_print_preview_dialog" highlight="21":::
 
 ## See also
 
