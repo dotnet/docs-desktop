@@ -34,9 +34,9 @@ It's common for Windows-based applications to print text. The <xref:System.Drawi
 
 Call the <xref:System.Drawing.Printing.PrintDocument.Print%2A> method to raise the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event. As shown in the highlighted code below, the method `.Print()` will start printing and method raise the `PrintPage` event.
 
-    :::code language="csharp" source="snippets/how-to-print-text-document/csharp/Form1.cs" id="set_DocumentName_and_string" highlight= 10-12:::
+    :::code language="csharp" source="snippets/how-to-print-text-document/csharp/Form1.cs" id="set_DocumentName_and_string" highlight= "10-12":::
 
-    :::code language="vb" source="snippets/how-to-print-text-document/vb/Form1.vb" id="set_DocumentName_and_string" highlight= 17-19:::
+    :::code language="vb" source="snippets/how-to-print-text-document/vb/Form1.vb" id="set_DocumentName_and_string" highlight= "17-19":::
 
 01. Select the `PrintDocument` component in the Visual Designer. On the **Properties** pane, select the **Event** filter and then double-click the `PrintPage` event to generate an event handler.
 
