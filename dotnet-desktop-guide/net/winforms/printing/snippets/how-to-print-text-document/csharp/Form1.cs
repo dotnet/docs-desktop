@@ -35,24 +35,21 @@
         }
         //</print_contents_using_event_handler>
         
+        //<set_DocumentName_and_string>
         private void button1_Click(object sender, EventArgs e)
         {
-            //<set_DocumentName_and_string>
             string docName = "testPage.txt";
             string docPath = @"C:\";
+            string fullPath = System.IO.Path.Combine(docPath, docName);
+
             printDocument1.DocumentName = docName;
-            using FileStream stream = new (docPath + docName, FileMode.Open);
-            using StreamReader reader = new (stream);
-            {
-                stringToPrint = reader.ReadToEnd();
-            }
+
+            stringToPrint = System.IO.File.ReadAllText(fullPath);
             
             //<call_print_method_to_print_file>
             printDocument1.Print();
             //</call_print_method_to_print_file>
-
-            //</set_DocumentName_and_string>
-
         }
+        //</set_DocumentName_and_string>
     }
 }

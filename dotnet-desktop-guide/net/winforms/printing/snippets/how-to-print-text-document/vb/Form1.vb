@@ -35,31 +35,22 @@ Public Class Form1
     End Sub
     '</print_contents_using_event_handler>
 
+    '<set_DocumentName_and_string>
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
 
-        '<set_DocumentName_and_string>
         Dim docName As String = "testPage.txt"
         Dim docPath As String = "C:\"
+        Dim fullPath As String = System.IO.Path.Combine(docPath, docName)
+
         PrintDocument1.DocumentName = docName
 
-        Dim stream As New FileStream(docPath + docName, FileMode.Open)
-        Try
-            Dim reader As New StreamReader(stream)
-            Try
-                stringToPrint = reader.ReadToEnd()
-            Finally
-                reader.Dispose()
-            End Try
-        Finally
-            stream.Dispose()
-        End Try
+        stringToPrint = System.IO.File.ReadAllText(fullPath)
         
         '<call_print_method_to_print_file>
         PrintDocument1.Print()
         '</call_print_method_to_print_file>
 
-        '</set_DocumentName_and_string>
-
     End Sub
+    '</set_DocumentName_and_string>
 
 End Class
