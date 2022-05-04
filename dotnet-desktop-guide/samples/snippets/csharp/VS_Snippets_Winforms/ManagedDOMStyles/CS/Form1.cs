@@ -9,10 +9,8 @@ using System.Security.Permissions;
 
 namespace ManagedDOMStyles
 {
-    [PermissionSet(SecurityAction.Demand, Name="FullTrust")]
     public partial class Form1 : Form
     {
-
         public Form1()
         {
             InitializeComponent();

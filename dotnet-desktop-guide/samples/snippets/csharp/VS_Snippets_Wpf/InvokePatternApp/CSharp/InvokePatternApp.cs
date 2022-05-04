@@ -176,13 +176,12 @@ namespace SDKSample
         /// <summary>
         /// Start the target application.
         /// </summary>
-        /// <param name="app">The target appliation.</param>
+        /// <param name="app">The target application.</param>
         /// <remarks>
         /// Starts the application that we are going to use for as our
         /// root element for this sample.
         /// </remarks>
         ///--------------------------------------------------------------------
-        [SecurityPermission(SecurityAction.Demand, Flags=SecurityPermissionFlag.UnmanagedCode)]
         private AutomationElement StartApp(string app)
         {
             if (File.Exists(app))

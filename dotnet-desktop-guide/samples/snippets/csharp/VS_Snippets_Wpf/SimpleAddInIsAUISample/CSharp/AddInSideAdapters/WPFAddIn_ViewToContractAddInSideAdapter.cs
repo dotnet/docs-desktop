@@ -45,7 +45,7 @@ namespace AddInSideAdapters
         /// GetHandle is called by the WPF add-in model from the host application's
         /// application domain to get the window handle for an add-in UI from the
         /// add-in's application domain. GetHandle is called if a window handle isn't
-        /// returned by other means ie overriding ContractBase.QueryContract,
+        /// returned by other means, that is, overriding ContractBase.QueryContract,
         /// as shown above.
         /// NOTE: This method requires UnmanagedCodePermission to be called
         ///       (full-trust by default), to prevent illegal window handle
@@ -54,7 +54,6 @@ namespace AddInSideAdapters
         ///       (eg AddInSecurityLevel.Internet), you can safely return a window
         ///       handle by overriding ContractBase.QueryContract, as shown above.
         /// </summary>
-        [SecurityPermissionAttribute(SecurityAction.Demand, Flags = SecurityPermissionFlag.UnmanagedCode)]
         public IntPtr GetHandle()
         {
             return FrameworkElementAdapters.ViewToContractAdapter(this.wpfAddInView).GetHandle();

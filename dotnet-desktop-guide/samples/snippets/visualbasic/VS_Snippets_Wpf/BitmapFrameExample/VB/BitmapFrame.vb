@@ -16,14 +16,13 @@ Namespace SDKSample
 
         Private theWindow As Window
 
-
         Protected Overrides Sub OnStartup(ByVal e As StartupEventArgs)
             MyBase.OnStartup(e)
             CreateAndShowMainWindow()
 
         End Sub
 
-        <SecurityPermissionAttribute(SecurityAction.Demand, Flags:=SecurityPermissionFlag.UnmanagedCode)> Private Sub CreateAndShowMainWindow()
+        Private Sub CreateAndShowMainWindow()
 
             ' Create the application's main window
             theWindow = New Window()
