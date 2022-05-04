@@ -59,7 +59,7 @@ Here are some of the scenarios that motivated the routed event concept, and dist
 
 - **Control composition and encapsulation**: Various controls in WPF have a rich content model. For example, you can place an image inside a <xref:System.Windows.Controls.Button>, which effectively extends the visual tree of the button. But, the added image mustn't break the hit-test behavior of the button, which needs to respond when a user clicks the image pixels.
 
-- **Singular handler attachment points**: In Windows Forms, you have to attach the same handler multiple times to process events raised on multiple elements. Routed events enable you to attach that handler only once, as shown in the previous XAML example. Event handler logic can determine where the event came from. For example, this handler is applicable to the previously shown XAML element tree:
+- **Singular handler attachment points**: You could register a handler with each button's `Click` event, but, routed events enables you to attach a single handler. This enables you to change element tree under the singular handler, such as adding or removing more buttons, without having to register each button's `Click` event. When the `Click` event is raised, handler logic can determine where the event came from. For example, this handler is applicable to the previously shown XAML element tree:
 
   :::code language="csharp" source="./snippets/routed-events-overview/csharp/MainWindow.xaml.cs" id="ButtonsParentHandler":::
   :::code language="vb" source="./snippets/routed-events-overview/vb/MainWindow.xaml.vb" id="ButtonsParentHandler":::
