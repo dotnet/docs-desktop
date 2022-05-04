@@ -103,3 +103,5 @@ items:
   items:
   - name: Overview
     href: printing/overview.md
+  - name: Print a multi-page text file
+    href: printing/how-to-print-text-document.md
