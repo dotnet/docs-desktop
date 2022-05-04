@@ -53,6 +53,9 @@ The element tree renders as shown:
 
 Each of the three buttons is a potential <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event source. When one of the buttons is clicked, it raises the `Click` event that bubbles up from the button to the root element. The <xref:System.Windows.Controls.Button> and <xref:System.Windows.Controls.Border> elements don't have event handlers attached, but the <xref:System.Windows.Controls.StackPanel> does. Possibly other elements higher up in the tree that aren't shown also have `Click` event handlers attached. When the `Click` event reaches the `StackPanel` element, the WPF event system invokes the `YesNoCancelButton_Click` handler. The event route for the `Click` event in the example is: `Button` -> `StackPanel` -> `Border` -> successive parent elements.
 
+> [!NOTE]
+> The element that originally raised a routed event is identified as the <xref:System.Windows.RoutedEventArgs.Source?displayProperty=nameWithType> in the event handler parameters. The event listener is the element where the event handler is attached and invoked, and is identified as the [sender](xref:System.Windows.RoutedEventHandler) in the event handler parameters.
+
 ### Top-level scenarios for routed events
 
 Here are some of the scenarios that motivated the routed event concept, and distinguish it from a typical CLR event:
@@ -76,21 +79,6 @@ The following example registers the `Tap` routed event, stores the returned `Rou
 
 :::code language="csharp" source="./snippets/routed-events-overview/WpfControlLibraryCsharp/CustomButton.cs" id="RegisterRouteEventAndClrAccessors":::
 :::code language="vb" source="./snippets/routed-events-overview/WpfControlLibraryVb/CustomButton.vb" id="RegisterRouteEventAndClrAccessors":::
-
-### Routed event handlers and XAML
-
-To add an event handler in XAML, you declare the event name as an attribute on the event listener element. The attribute value is your handler method name. The handler must be implemented in the code-behind partial class for the XAML page. The event listener is the element where the event handler is attached and invoked. For an event that's a member (inherited or otherwise) of the listener class, you can attach a handler as follows:
-
-:::code language="xaml" source="./snippets/routed-events-overview/csharp/MainWindow.xaml" id="AddHandler_UnqualifiedEventName":::
-
-If the listener is a different element than the element that raised the event, it's possible that the event isn't a member of the listener's class. In that case, you must use the qualified event name, in the form of `<owner type>.<event name>`. For example, because the <xref:System.Windows.Controls.StackPanel> class doesn't implement the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event, you'll need to use the qualified event name:
-
-:::code language="xaml" source="./snippets/routed-events-overview/csharp/MainWindow.xaml" id="AddHandler_QualifiedEventName":::
-
-The XAML syntax for adding routed event handlers is the same as for standard CLR event handlers. For more information about adding event handlers in XAML, see [XAML in WPF](../xaml/index.md).
-
-> [!NOTE]
-> The element that originally raised a routed event is identified as the <xref:System.Windows.RoutedEventArgs.Source?displayProperty=nameWithType> in the event handler parameters. The event listener is the element where the event handler is attached and invoked, and is identified as the [sender](xref:System.Windows.RoutedEventHandler) in the event handler parameters.
 
 ## Routing strategies
 
@@ -118,11 +106,11 @@ Apart from the routing aspect, you might choose to implement a routed event inst
 
 ## Attach and implement a routed event handler
 
-In XAML, to attach an event handler to an element that implements the event as a class member, you can use this simplified event name syntax:
+In XAML, to attach an event handler to an element that implements the event as a class member, you declare the event name as an attribute on the event listener element. The attribute value is your handler method name. The handler method must be implemented in the code-behind partial class for the XAML page. The event listener is the element where the event handler is attached and invoked. For an event that's a member (inherited or otherwise) of the listener class, you can attach a handler as follows:
 
 :::code language="xaml" source="./snippets/routed-events-overview/csharp/MainWindow.xaml" id="AddHandler_UnqualifiedEventName":::
 
-For an event that's not a member of the event listener class, such as a `Click` event that bubbles up to a <xref:System.Windows.Controls.StackPanel>, you can attach a handler to the `StackPanel` using this qualified event name syntax:
+If the listener is a different element than the element that raised the event, it's possible that the event isn't a member of the listener's class. In that case, you must use the qualified event name, in the form of `<owner type>.<event name>`. For example, because the <xref:System.Windows.Controls.StackPanel> class doesn't implement the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event, to attach a handler to a `StackPanel` for a `Click` event that bubbles up to that element, you'll need to use the qualified event name syntax:
 
 :::code language="xaml" source="./snippets/routed-events-overview/csharp/MainWindow.xaml" id="AddHandler_QualifiedEventName":::
 
@@ -133,7 +121,7 @@ The signature of the event handler method in code-behind must match the delegate
 
 Although <xref:System.Windows.RoutedEventHandler> is the basic routed event handler delegate, some controls or implementation scenarios require different delegates that support more specialized event data. As an example, for the <xref:System.Windows.UIElement.DragEnter> routed event, your handler should implement the <xref:System.Windows.DragEventHandler> delegate. By doing so, your handler code can access the <xref:System.Windows.DragEventArgs.Data?displayProperty=nameWithType> property in event data, which contains the clipboard payload from the drag operation.
 
-For a complete example of how to attach an event handler to an element using XAML, see [How to handle a routed event](/dotnet/desktop/wpf/advanced/how-to-handle-a-routed-event?view=netframeworkdesktop-4.8&preserve-view=true).
+The XAML syntax for adding routed event handlers is the same as for standard CLR event handlers. For more information about adding event handlers in XAML, see [XAML in WPF](../xaml/index.md). For a complete example of how to attach an event handler to an element using XAML, see [How to handle a routed event](/dotnet/desktop/wpf/advanced/how-to-handle-a-routed-event?view=netframeworkdesktop-4.8&preserve-view=true).
 
 To attach an event handler for a routed event to an element using code, you generally have two options:
 
@@ -142,7 +130,7 @@ To attach an event handler for a routed event to an element using code, you gene
   :::code language="csharp" source="./snippets/routed-events-overview/csharp/MainWindow.xaml.cs" id="AddHandlerToButton":::
   :::code language="vb" source="./snippets/routed-events-overview/vb/MainWindow.xaml.vb" id="AddHandlerToButton":::
 
-  Or, to attach a handler for the button's `Click` event to a different element in the event route, such as a <xref:System.Windows.Controls.StackPanel> named `StackPanel1`:
+  To attach a handler for the button's `Click` event to a different element in the event's route, such as a <xref:System.Windows.Controls.StackPanel> named `StackPanel1`:
 
   :::code language="csharp" source="./snippets/routed-events-overview/csharp/MainWindow.xaml.cs" id="AddHandlerToStackPanel":::
   :::code language="vb" source="./snippets/routed-events-overview/vb/MainWindow.xaml.vb" id="AddHandlerToStackPanel":::
