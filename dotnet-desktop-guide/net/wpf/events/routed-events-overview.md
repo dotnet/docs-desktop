@@ -171,7 +171,7 @@ The concept of `Handled` might affect how you design your application and code y
 
   - Run code in response to the event, to an extent that justifies marking the event as handled. Mark the event as handled in the event data. The event still routes to the next listener in the tree, but most listeners won't invoke further handlers. The exception is listeners with handlers that were specifically registered with `handledEventsToo` set to `true`.
 
-For more information about marking an event as handled and class handling of routed events, see [Marking routed events as handled, and class handling](marking-routed-events-as-handled-and-class-handling.md).
+For more information about handling routed events, see [Marking routed events as handled, and class handling](marking-routed-events-as-handled-and-class-handling.md).
 
 Although developers who only handle a bubbling routed event on the object that raised it might not be concerned about other listeners, it's good practice to mark the event as handled anyway. Doing so prevents unanticipated side effects if an element further along the event route has a handler for the same routed event.
 
