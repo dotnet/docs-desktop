@@ -167,9 +167,9 @@ The concept of `Handled` might affect how you design your application and code y
 
   - Take no action at all. The event remains unhandled and routes to the next listener in the tree.
 
-  - Execute code in response to the event, but not to an extent that justifies marking the event as handled. The event remains unhandled and routes to the next listener in the tree.
+  - Run code in response to the event, but not to an extent that justifies marking the event as handled. The event remains unhandled and routes to the next listener in the tree.
 
-  - Execute code in response to the event, to an extent that justifies marking the event as handled. Mark the event as handled in the event data. The event still routes to the next listener in the tree, but most listeners won't invoke further handlers. The exception is listeners with handlers that were specifically registered with `handledEventsToo` set to `true`.
+  - Run code in response to the event, to an extent that justifies marking the event as handled. Mark the event as handled in the event data. The event still routes to the next listener in the tree, but most listeners won't invoke further handlers. The exception is listeners with handlers that were specifically registered with `handledEventsToo` set to `true`.
 
 For more information about marking an event as handled and class handling of routed events, see [Marking routed events as handled, and class handling](marking-routed-events-as-handled-and-class-handling.md).
 
