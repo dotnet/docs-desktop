@@ -15,9 +15,13 @@ namespace CodeSampleCsharp
             Button1.Click += Button_Click;
             //</LanguageSpecificSyntax_ToAttachHandler>
 
-            //<AddHandler_ToAttachHandler>
+            //<AddHandlerToButton>
             Button1.AddHandler(ButtonBase.ClickEvent, new RoutedEventHandler(Button_Click));
-            //</AddHandler_ToAttachHandler>
+            //</AddHandlerToButton>
+
+            //<AddHandlerToStackPanel>
+            StackPanel1.AddHandler(ButtonBase.ClickEvent, new RoutedEventHandler(Button_Click));
+            //</AddHandlerToStackPanel>
         }
 
         //<ButtonsParentHandler>

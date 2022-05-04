@@ -10,9 +10,13 @@ Partial Public Class MainWindow
         AddHandler Button1.Click, AddressOf Button_Click
         '</LanguageSpecificSyntax_ToAttachHandler>
 
-        '<AddHandler_ToAttachHandler>
+        '<AddHandlerToButton>
         Button1.[AddHandler](ButtonBase.ClickEvent, New RoutedEventHandler(AddressOf Button_Click))
-        '</AddHandler_ToAttachHandler>
+        '</AddHandlerToButton>
+
+        '<AddHandlerToStackPanel>
+        StackPanel1.[AddHandler](ButtonBase.ClickEvent, New RoutedEventHandler(AddressOf Button_Click))
+        '</AddHandlerToStackPanel>
     End Sub
 
     '<ButtonsParentHandler>

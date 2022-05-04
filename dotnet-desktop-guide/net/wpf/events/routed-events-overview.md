@@ -139,8 +139,13 @@ To attach an event handler for a routed event to an element using code, you gene
 
 - Directly call the <xref:System.Windows.UIElement.AddHandler%2A> method. Routed event handlers can always be attached this way. This example attaches a `Click` event handler to a button using the `AddHandler` method:
 
-  :::code language="csharp" source="./snippets/routed-events-overview/csharp/MainWindow.xaml.cs" id="AddHandler_ToAttachHandler":::
-  :::code language="vb" source="./snippets/routed-events-overview/vb/MainWindow.xaml.vb" id="AddHandler_ToAttachHandler":::
+  :::code language="csharp" source="./snippets/routed-events-overview/csharp/MainWindow.xaml.cs" id="AddHandlerToButton":::
+  :::code language="vb" source="./snippets/routed-events-overview/vb/MainWindow.xaml.vb" id="AddHandlerToButton":::
+
+  Or, to attach a handler for the button's `Click` event to a different element in the event route, such as a <xref:System.Windows.Controls.StackPanel> named `StackPanel1`:
+
+  :::code language="csharp" source="./snippets/routed-events-overview/csharp/MainWindow.xaml.cs" id="AddHandlerToStackPanel":::
+  :::code language="vb" source="./snippets/routed-events-overview/vb/MainWindow.xaml.vb" id="AddHandlerToStackPanel":::
 
 - If the routed event implements a CLR event wrapper, use language-specific event syntax to add event handlers just as you would for a standard CLR event. Most existing WPF routed events implement the CLR wrapper, thus enabling language-specific event syntax. This example attaches a `Click` event handler to a button using language specific syntax:
 
