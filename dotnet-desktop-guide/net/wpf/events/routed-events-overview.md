@@ -216,12 +216,12 @@ To illustrate how input event processing works, consider the following input eve
 
 The order of event processing following a mouse-down action on leaf element #2 is:
 
-1. `PreviewMouseDown` tunneling event on the root element.
-1. `PreviewMouseDown` tunneling event on intermediate element #1.
-1. `PreviewMouseDown` tunneling event on leaf element #2, which is the source element.
-1. `MouseDown` bubbling event on leaf element #2, which is the source element.
-1. `MouseDown` bubbling event on intermediate element #1.
-1. `MouseDown` bubbling event on the root element.
+01. `PreviewMouseDown` tunneling event on the root element.
+01. `PreviewMouseDown` tunneling event on intermediate element #1.
+01. `PreviewMouseDown` tunneling event on leaf element #2, which is the source element.
+01. `MouseDown` bubbling event on leaf element #2, which is the source element.
+01. `MouseDown` bubbling event on intermediate element #1.
+01. `MouseDown` bubbling event on the root element.
 
 The routed event handler delegate provides references to both the object that raised the event and the object where the handler was invoked. The object that originally raised the event is reported by the <xref:System.Windows.RoutedEventArgs.Source%2A> property in the event data. The object where the handler was invoked is reported by the [sender](xref:System.Windows.RoutedEventHandler) parameter. For any given routed event instance, the object that raised the event doesn't change as the event travels through the element tree, but the `sender` does. In steps 3 and 4 of the preceding diagram, the `Source` and `sender` are the same object.
 
