@@ -1,7 +1,7 @@
 ---
 title: "How to print a Windows Form"
 description: Learn how to programmatically print a copy of the current Windows Form by using the CopyFromScreen method.
-ms.date: "04/29/2022"
+ms.date: "05/04/2022"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -35,7 +35,7 @@ The following conditions may cause an exception:
 
 ## .NET security
 
-In order to run this code example, you must have permission to access the printer you use with your computer.
+To run this code example, you must have permission to access the printer you use with your computer.
 
 ## See also
 
