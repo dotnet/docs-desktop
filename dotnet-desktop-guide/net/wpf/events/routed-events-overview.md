@@ -51,7 +51,7 @@ The element tree renders as shown:
 
 :::image type="content" source="./media/routed-events-overview/yes-no-cancel.png" border="true" alt-text="Yes, No, and Cancel buttons.":::
 
-Each of the three buttons is a potential <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event source. When one of the buttons is clicked, it raises the `Click` event that bubbles up from the button to the root element. The <xref:System.Windows.Controls.Button> and <xref:System.Windows.Controls.Border> elements don't have event handlers attached, but the <xref:System.Windows.Controls.StackPanel> does. Possibly other elements higher up in the tree that aren't shown also have `Click` event handlers attached. When the `Click` event reaches the `StackPanel` element, the WPF event system invokes the `YesNoCancelButton_Click` handler. The event route for the `Click` event in the example is: `Button` -> `StackPanel` -> `Border` -> successive parent elements.
+Each of the three buttons is a potential <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event source. When one of the buttons is clicked, it raises the `Click` event that bubbles up from the button to the root element. The <xref:System.Windows.Controls.Button> and <xref:System.Windows.Controls.Border> elements don't have event handlers attached, but the <xref:System.Windows.Controls.StackPanel> does. Possibly other elements higher up in the tree that aren't shown also have `Click` event handlers attached. When the `Click` event reaches the `StackPanel` element, the WPF event system invokes the `YesNoCancelButton_Click` handler that's attached to it. The event route for the `Click` event in the example is: `Button` -> `StackPanel` -> `Border` -> successive parent elements.
 
 > [!NOTE]
 > The element that originally raised a routed event is identified as the <xref:System.Windows.RoutedEventArgs.Source?displayProperty=nameWithType> in the event handler parameters. The event listener is the element where the event handler is attached and invoked, and is identified as the [sender](xref:System.Windows.RoutedEventHandler) in the event handler parameters.
@@ -62,7 +62,7 @@ Here are some of the scenarios that motivated the routed event concept, and dist
 
 - **Control composition and encapsulation**: Various controls in WPF have a rich content model. For example, you can place an image inside a <xref:System.Windows.Controls.Button>, which effectively extends the visual tree of the button. But, the added image mustn't break the hit-test behavior of the button, which needs to respond when a user clicks the image pixels.
 
-- **Singular handler attachment points**: You could register a handler with each button's `Click` event, but, routed events enables you to attach a single handler, as shown in the previous XAML example. This enables you to change the element tree under the singular handler, such as adding or removing more buttons, without having to register each button's `Click` event. When the `Click` event is raised, handler logic can determine where the event came from. For example, this handler is applicable to the previously shown XAML element tree:
+- **Singular handler attachment points**: You could register a handler for each button's `Click` event, but with routed events you can attach a single handler as shown in the previous XAML example. This enables you to change the element tree under the singular handler, such as adding or removing more buttons, without having to register each button's `Click` event. When the `Click` event is raised, handler logic can determine where the event came from. The following handler, specified in the previously shown XAML element tree, contains that logic:
 
   :::code language="csharp" source="./snippets/routed-events-overview/csharp/MainWindow.xaml.cs" id="ButtonsParentHandler":::
   :::code language="vb" source="./snippets/routed-events-overview/vb/MainWindow.xaml.vb" id="ButtonsParentHandler":::
@@ -106,11 +106,13 @@ Apart from the routing aspect, you might choose to implement a routed event inst
 
 ## Attach and implement a routed event handler
 
-In XAML, to attach an event handler to an element that implements the event as a class member, you declare the event name as an attribute on the event listener element. The attribute value is your handler method name. The handler method must be implemented in the code-behind partial class for the XAML page. The event listener is the element where the event handler is attached and invoked. For an event that's a member (inherited or otherwise) of the listener class, you can attach a handler as follows:
+In XAML, you attach an event handler to an element by declaring the event name as an attribute on the event listener element. The attribute value is your handler method name. The handler method must be implemented in the code-behind partial class for the XAML page. The event listener is the element where the event handler is attached and invoked.
+
+For an event that's a member (inherited or otherwise) of the listener class, you can attach a handler as follows:
 
 :::code language="xaml" source="./snippets/routed-events-overview/csharp/MainWindow.xaml" id="AddHandler_UnqualifiedEventName":::
 
-If the listener is a different element than the element that raised the event, it's possible that the event isn't a member of the listener's class. In that case, you must use the qualified event name, in the form of `<owner type>.<event name>`. For example, because the <xref:System.Windows.Controls.StackPanel> class doesn't implement the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event, to attach a handler to a `StackPanel` for a `Click` event that bubbles up to that element, you'll need to use the qualified event name syntax:
+If the event isn't a member of the listener's class, you must use the qualified event name in the form of `<owner type>.<event name>`. For example, because the <xref:System.Windows.Controls.StackPanel> class doesn't implement the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event, to attach a handler to a `StackPanel` for a `Click` event that bubbles up to that element, you'll need to use the qualified event name syntax:
 
 :::code language="xaml" source="./snippets/routed-events-overview/csharp/MainWindow.xaml" id="AddHandler_QualifiedEventName":::
 
