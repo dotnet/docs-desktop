@@ -1,7 +1,7 @@
 ---
 title: "How to print multi-page text file"
 description: Learn how to print multiple page text file (Windows Forms .NET).
-ms.date: "04/29/2022"
+ms.date: "05/04/2022"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -38,9 +38,9 @@ It's common for Windows-based applications to print text. The <xref:System.Drawi
 
 01. Back in the `Click` event handler code, set the <xref:System.Drawing.Printing.PrintDocument.DocumentName%2A> property to the name of the document. This information is sent to the printer. Next, read the document text content and store it in the `stringToPrint` string. Finally, call the <xref:System.Drawing.Printing.PrintDocument.Print%2A> method to raise the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event. The `Print` method is highlighted below.
 
-    :::code language="csharp" source="snippets/how-to-print-text-document/csharp/Form1.cs" id="set_DocumentName_and_string" highlight= "12":::
+    :::code language="csharp" source="snippets/how-to-print-text-document/csharp/Form1.cs" id="set_DocumentName_and_string" highlight= "11":::
 
-    :::code language="vb" source="snippets/how-to-print-text-document/vb/Form1.vb" id="set_DocumentName_and_string" highlight= "12":::
+    :::code language="vb" source="snippets/how-to-print-text-document/vb/Form1.vb" id="set_DocumentName_and_string" highlight= "11":::
 
 01. Go back to the Visual Designer of the form and select the `PrintDocument` component. On the **Properties** pane, select the **Event** filter and then double-click the `PrintPage` event to generate an event handler.
 
