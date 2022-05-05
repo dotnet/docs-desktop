@@ -39,12 +39,6 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AddInViews">
-      <HintPath>..\AddInViews\obj\Debug\AddInViews.dll</HintPath>
-    </Reference>
-    <Reference Include="Contracts">
-      <HintPath>..\Contracts\obj\Debug\Contracts.dll</HintPath>
-    </Reference>
     <Reference Include="PresentationCore">
       <RequiredTargetFramework>3.0</RequiredTargetFramework>
     </Reference>
@@ -73,6 +67,16 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="My Project\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AddInViews\AddInViews.vbproj">
+      <Project>{75cca4c0-cdcc-4779-9617-3817be939f60}</Project>
+      <Name>AddInViews</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Contracts\Contracts.vbproj">
+      <Project>{e808f287-31d1-4f2b-8ea9-3f027bf8c51b}</Project>
+      <Name>Contracts</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

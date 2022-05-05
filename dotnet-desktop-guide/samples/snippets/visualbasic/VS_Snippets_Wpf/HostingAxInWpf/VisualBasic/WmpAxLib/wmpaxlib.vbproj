@@ -38,12 +38,12 @@
   <ItemGroup>
     <Reference Include="AxInterop.WMPLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\..\..\docs\samples\snippets\csharp\VS_Snippets_Wpf\HostingAxInWpf\CSharp\AxControl\bin\Debug\AxInterop.WMPLib.dll</HintPath>
+      <HintPath>.\AxInterop.WMPLib.dll</HintPath>
     </Reference>
     <Reference Include="Interop.WMPLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <EmbedInteropTypes>True</EmbedInteropTypes>
-      <HintPath>..\..\..\..\..\..\..\..\..\docs\samples\snippets\csharp\VS_Snippets_Wpf\HostingAxInWpf\CSharp\AxControl\bin\Debug\Interop.WMPLib.dll</HintPath>
+      <HintPath>.\Interop.WMPLib.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
