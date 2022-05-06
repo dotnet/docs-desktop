@@ -13,11 +13,11 @@ helpviewer_keywords:
 ms.custom: devdivchpfy22
 ---
 
-# How to print a Windows Form
+# How to print a Form (Windows Forms .NET)
 
 As part of the development process, you typically will want to print a copy of your Windows Form. The following code example shows how to print a copy of the current form by using the <xref:System.Drawing.Graphics.CopyFromScreen%2A> method.
 
-In the following example, a button named **Print** is added to the form. When the **Print** button is clicked, it saves the form to an image in memory, and then sends it to the print object.
+In the following example, a button named **Button1** is added to the form. When the **Button1** button is clicked, it saves the form to an image in memory, and then sends it to the print object.
 
 ## Example
 
