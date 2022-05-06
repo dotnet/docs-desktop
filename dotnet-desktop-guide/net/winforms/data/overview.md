@@ -36,7 +36,7 @@ ADO.NET allows you to create many different data structures to suit the binding 
 
 ### Consumers of data binding interfaces
 
-The following sections describe two groups of interface objects. The first group of interfaces are implemented on data sources by data source authors. The data source consumers such as the Windows Forms controls or components implements these interfaces. The second group of interfaces are designed to use by component authors. Component authors use these interfaces when they're creating a component that supports data binding to be consumed by the Windows Forms data binding engine. You can implement these interfaces within classes associated with your form to enable data binding. Each case presents a class that implements an interface that enables interaction with data. Visual Studio rapid application development (RAD) data design experience tools already take advantage of this functionality.
+The following sections describe two groups of interface objects. The first group of interface is implemented on data sources by data source authors. The data source consumers such as the Windows Forms controls or components implements these interfaces. The second group of interface is designed to use by component authors. Component authors use these interfaces when they're creating a component that supports data binding to be consumed by the Windows Forms data binding engine. You can implement these interfaces within classes associated with your form to enable data binding. Each case presents a class that implements an interface that enables interaction with data. Visual Studio rapid application development (RAD) data design experience tools already take advantage of this functionality.
 
 #### Interfaces for implementation by data source authors
 
@@ -67,7 +67,7 @@ The Windows Forms controls implements following interfaces:
 
 - <xref:System.ComponentModel.IEditableObject> interface
 
-  A class that implements the <xref:System.ComponentModel.IEditableObject> interface allows an object to control when changes to that object are made permanent. This implementation affords you the <xref:System.ComponentModel.IEditableObject.BeginEdit%2A>, <xref:System.ComponentModel.IEditableObject.EndEdit%2A>, and <xref:System.ComponentModel.IEditableObject.CancelEdit%2A> methods, which enable you to roll back changes made to the object. Following is a brief explanation of the functioning of the <xref:System.ComponentModel.IEditableObject.BeginEdit%2A>, <xref:System.ComponentModel.IEditableObject.EndEdit%2A>, and <xref:System.ComponentModel.IEditableObject.CancelEdit%2A> methods and how they work with one another to enable a possible rollback of changes made to the data:
+  A class that implements the <xref:System.ComponentModel.IEditableObject> interface allows an object to control when changes to that object are made permanent. This implementation supports the <xref:System.ComponentModel.IEditableObject.BeginEdit%2A>, <xref:System.ComponentModel.IEditableObject.EndEdit%2A>, and <xref:System.ComponentModel.IEditableObject.CancelEdit%2A> methods, which enable you to roll back changes made to the object. Following is a brief explanation of the functioning of the <xref:System.ComponentModel.IEditableObject.BeginEdit%2A>, <xref:System.ComponentModel.IEditableObject.EndEdit%2A>, and <xref:System.ComponentModel.IEditableObject.CancelEdit%2A> methods and how they work with one another to enable a possible rollback of changes made to the data:
 
   - The <xref:System.ComponentModel.IEditableObject.BeginEdit%2A> method signals the start of an edit on an object. An object that implements this interface will need to store any updates after the <xref:System.ComponentModel.IEditableObject.BeginEdit%2A> method call in such a way that the updates can be discarded if the <xref:System.ComponentModel.IEditableObject.CancelEdit%2A> method is called. In data binding Windows Forms, you can call <xref:System.ComponentModel.IEditableObject.BeginEdit%2A> multiple times within the scope of a single edit transaction (for example, <xref:System.ComponentModel.IEditableObject.BeginEdit%2A>, <xref:System.ComponentModel.IEditableObject.BeginEdit%2A>, <xref:System.ComponentModel.IEditableObject.EndEdit%2A>). Implementations of <xref:System.ComponentModel.IEditableObject> should keep track of whether <xref:System.ComponentModel.IEditableObject.BeginEdit%2A> has already been called and ignore subsequent calls to <xref:System.ComponentModel.IEditableObject.BeginEdit%2A>. Because this method can be called multiple times, it's important that subsequent calls to it are nondestructive. Subsequent <xref:System.ComponentModel.IEditableObject.BeginEdit%2A> calls can't destroy the updates that have been made or change the data that was saved on the first <xref:System.ComponentModel.IEditableObject.BeginEdit%2A> call.
 
@@ -144,7 +144,7 @@ The Windows Forms controls implements following interfaces:
   A class that implements this interface is a type that raises an event when any of its property values change. This interface is designed to replace the pattern of having a change event for each property of a control. When used in a <xref:System.ComponentModel.BindingList%601>, a business object should implement the <xref:System.ComponentModel.INotifyPropertyChanged> interface and the BindingList\`1 will convert <xref:System.ComponentModel.INotifyPropertyChanged.PropertyChanged> events to <xref:System.ComponentModel.BindingList%601.ListChanged> events of type <xref:System.ComponentModel.ListChangedType.ItemChanged>.
 
   > [!NOTE]
-  > For change notification to occur in a binding between a bound client and a data source your bound data-source type should either implement the <xref:System.ComponentModel.INotifyPropertyChanged> interface (preferred) or you can provide *propertyName*`Changed` events for the bound type, but you shouldn't do both.
+  > For change notification to occur in a binding between a bound client and a data source, your bound data-source type should either implement the <xref:System.ComponentModel.INotifyPropertyChanged> interface (preferred) or you can provide *propertyName*`Changed` events for the bound type, but you shouldn't do both.
 
 #### Interfaces for implementation by component authors
 
@@ -174,32 +174,47 @@ Traditionally, data binding has been used within applications to take advantage 
 
 The following list shows the structures you can bind to in Windows Forms.
 
- <xref:System.Windows.Forms.BindingSource>
- A <xref:System.Windows.Forms.BindingSource> is the most common Windows Forms data source and acts a proxy between a data source and Windows Forms controls. The general <xref:System.Windows.Forms.BindingSource> usage pattern is to bind your controls to the <xref:System.Windows.Forms.BindingSource> and bind the <xref:System.Windows.Forms.BindingSource> to the data source (for example, an ADO.NET data table or a business object). The <xref:System.Windows.Forms.BindingSource> provides services that enable and improve the level of data binding support. For example, Windows Forms list based controls such as the <xref:System.Windows.Forms.DataGridView> and <xref:System.Windows.Forms.ComboBox> don't directly support binding to <xref:System.Collections.IEnumerable> data sources however, you can enable this scenario by binding through a <xref:System.Windows.Forms.BindingSource>. In this case, the <xref:System.Windows.Forms.BindingSource> will convert the data source to an <xref:System.Collections.IList>.
+- <xref:System.Windows.Forms.BindingSource>
 
- Simple objects
- Windows Forms support data binding control properties to public properties on the instance of an object using the <xref:System.Windows.Forms.Binding> type. Windows Forms also support binding list based controls, such as a <xref:System.Windows.Forms.ListControl> to an object instance when a <xref:System.Windows.Forms.BindingSource> is used.
+  A <xref:System.Windows.Forms.BindingSource> is the most common Windows Forms data source and acts a proxy between a data source and Windows Forms controls. The general <xref:System.Windows.Forms.BindingSource> usage pattern is to bind your controls to the <xref:System.Windows.Forms.BindingSource> and bind the <xref:System.Windows.Forms.BindingSource> to the data source (for example, an ADO.NET data table or a business object). The <xref:System.Windows.Forms.BindingSource> provides services that enable and improve the level of data binding support. For example, Windows Forms list based controls such as the <xref:System.Windows.Forms.DataGridView> and <xref:System.Windows.Forms.ComboBox> don't directly support binding to <xref:System.Collections.IEnumerable> data sources however, you can enable this scenario by binding through a <xref:System.Windows.Forms.BindingSource>. In this case, the <xref:System.Windows.Forms.BindingSource> will convert the data source to an <xref:System.Collections.IList>.
 
- array or collection
- To act as a data source, a list must implement the <xref:System.Collections.IList> interface; one example would be an array that is an instance of the <xref:System.Array> class. For more information on arrays, see [How to: Create an Array of Objects (Visual Basic)](/previous-versions/visualstudio/visual-studio-2010/487y7874(v=vs.100)).
+- Simple objects
 
- In general, you should use <xref:System.ComponentModel.BindingList%601> when you create lists of objects for data binding. <xref:System.ComponentModel.BindingList%601> is a generic version of the <xref:System.ComponentModel.IBindingList> interface. The <xref:System.ComponentModel.IBindingList> interface extends the <xref:System.Collections.IList> interface by adding properties, methods and events necessary for two-way data binding.
+  Windows Forms support data binding control properties to public properties on the instance of an object using the <xref:System.Windows.Forms.Binding> type. Windows Forms also support binding list based controls, such as a <xref:System.Windows.Forms.ListControl> to an object instance when a <xref:System.Windows.Forms.BindingSource> is used.
 
- <xref:System.Collections.IEnumerable>
- Windows Forms controls can be bound to data sources that only support the <xref:System.Collections.IEnumerable> interface if they're bound through a <xref:System.Windows.Forms.BindingSource> component.
+- Array or Collection
 
- ADO.NET data objects
- ADO.NET provides many data structures suitable for binding to. Each varies in its sophistication and complexity.
+  To act as a data source, a list must implement the <xref:System.Collections.IList> interface; one example would be an array that is an instance of the <xref:System.Array> class. For more information on arrays, see [How to: Create an Array of Objects (Visual Basic)](/previous-versions/visualstudio/visual-studio-2010/487y7874(v=vs.100)).
 
-- <xref:System.Data.DataColumn>. A <xref:System.Data.DataColumn> is the essential building block of a <xref:System.Data.DataTable>, in that multiple columns comprise a table. Each <xref:System.Data.DataColumn> has a <xref:System.Data.DataColumn.DataType%2A> property that determines the kind of data the column holds (for example, the make of an automobile in a table describing cars). You can simple-bind a control (such as a <xref:System.Windows.Forms.TextBox> control's <xref:System.Windows.Forms.Control.Text%2A> property) to a column within a data table.
+  In general, you should use <xref:System.ComponentModel.BindingList%601> when you create lists of objects for data binding. <xref:System.ComponentModel.BindingList%601> is a generic version of the <xref:System.ComponentModel.IBindingList> interface. The <xref:System.ComponentModel.IBindingList> interface extends the <xref:System.Collections.IList> interface by adding properties, methods and events necessary for two-way data binding.
 
-- <xref:System.Data.DataTable>. A <xref:System.Data.DataTable> is the representation of a table, with rows and columns, in ADO.NET. A data table contains two collections: <xref:System.Data.DataColumn>, representing the columns of data in a given table (which ultimately determine the kinds of data that can be entered into that table), and <xref:System.Data.DataRow>, representing the rows of data in a given table. You can complex-bind a control to the information contained in a data table (such as binding the <xref:System.Windows.Forms.DataGridView> control to a data table). However, when you bind to a <xref:System.Data.DataTable>, you're a binding to the table's default view.
+- <xref:System.Collections.IEnumerable>
 
-- <xref:System.Data.DataView>. A <xref:System.Data.DataView> is a customized view of a single data table that may be filtered or sorted. A data view is the data "snapshot" used by complex-bound controls. You can simple-bind or complex-bind to the data within a data view, but note that you're binding to a fixed "picture" of the data rather than a clean, updating data source.
+  Windows Forms controls can be bound to data sources that only support the <xref:System.Collections.IEnumerable> interface if they're bound through a <xref:System.Windows.Forms.BindingSource> component.
 
-- <xref:System.Data.DataSet>. A <xref:System.Data.DataSet> is a collection of tables, relationships, and constraints of the data in a database. You can simple-bind or complex-bind to the data within a dataset, but note that you're binding to the default <xref:System.Data.DataViewManager> for the <xref:System.Data.DataSet> (see the next bullet point).
+- ADO.NET data objects
 
-- <xref:System.Data.DataViewManager>. A <xref:System.Data.DataViewManager> is a customized view of the entire <xref:System.Data.DataSet>, analogous to a <xref:System.Data.DataView>, but with relations included. With a <xref:System.Data.DataViewManager.DataViewSettings%2A> collection, you can set default filters and sort options for any views that the <xref:System.Data.DataViewManager> has for a given table.
+  ADO.NET provides many data structures suitable for binding to. Each varies in its sophistication and complexity.
+
+  - <xref:System.Data.DataColumn>
+
+    A <xref:System.Data.DataColumn> is the essential building block of a <xref:System.Data.DataTable>, in that multiple columns comprise a table. Each <xref:System.Data.DataColumn> has a <xref:System.Data.DataColumn.DataType%2A> property that determines the kind of data the column holds (for example, the make of an automobile in a table describing cars). You can simple-bind a control (such as a <xref:System.Windows.Forms.TextBox> control's <xref:System.Windows.Forms.Control.Text%2A> property) to a column within a data table.
+
+  - <xref:System.Data.DataTable>
+
+    A <xref:System.Data.DataTable> is the representation of a table, with rows and columns, in ADO.NET. A data table contains two collections: <xref:System.Data.DataColumn>, representing the columns of data in a given table (which ultimately determine the kinds of data that can be entered into that table), and <xref:System.Data.DataRow>, representing the rows of data in a given table. You can complex-bind a control to the information contained in a data table (such as binding the <xref:System.Windows.Forms.DataGridView> control to a data table). However, when you bind to a <xref:System.Data.DataTable>, you're a binding to the table's default view.
+
+  - <xref:System.Data.DataView>
+
+    A <xref:System.Data.DataView> is a customized view of a single data table that may be filtered or sorted. A data view is the data "snapshot" used by complex-bound controls. You can simple-bind or complex-bind to the data within a data view, but note that you're binding to a fixed "picture" of the data rather than a clean, updating data source.
+
+  - <xref:System.Data.DataSet>
+
+    A <xref:System.Data.DataSet> is a collection of tables, relationships, and constraints of the data in a database. You can simple-bind or complex-bind to the data within a dataset, but note that you're binding to the default <xref:System.Data.DataViewManager> for the <xref:System.Data.DataSet> (see the next bullet point).
+
+  - <xref:System.Data.DataViewManager>
+  
+    A <xref:System.Data.DataViewManager> is a customized view of the entire <xref:System.Data.DataSet>, analogous to a <xref:System.Data.DataView>, but with relations included. With a <xref:System.Data.DataViewManager.DataViewSettings%2A> collection, you can set default filters and sort options for any views that the <xref:System.Data.DataViewManager> has for a given table.
 
 ## Types of data binding
 
