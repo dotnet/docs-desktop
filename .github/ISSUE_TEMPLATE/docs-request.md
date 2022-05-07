@@ -1,6 +1,10 @@
 ---
-name: .NET doc request
+name: ".NET doc request"
 about: Request a new article to provide missing information
+title: ''
+labels: ''
+assignees: ''
+
 ---
 
 **Help us make content visible**
