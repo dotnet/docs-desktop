@@ -20,7 +20,7 @@ ms.custom: devdivchpfy22
 
 In Windows Forms, you can bind to not just traditional data sources, but also to almost any structure that contains data. You can bind to an array of values that you calculate at run time, read from a file, or derive from the values of other controls.
 
- In addition, you can bind any property of any control to the data source. In traditional data binding, you typically bind the display property—for example, the <xref:System.Windows.Forms.Control.Text%2A> property of a <xref:System.Windows.Forms.TextBox> control—to the data source. With the .NET, you also have the option of setting other properties through binding as well. You might use binding to perform the following tasks:
+ In addition, you can bind any property of any control to the data source. In traditional data binding, you typically bind the display property—for example, the <xref:System.Windows.Forms.Control.Text%2A> property of a <xref:System.Windows.Forms.TextBox> control—to the data source. With .NET, you also have the option of setting other properties through binding. You might use binding to perform the following tasks:
 
 - Setting the graphic of an image control.
 
@@ -32,15 +32,15 @@ In Windows Forms, you can bind to not just traditional data sources, but also to
 
 ## Interfaces related to data binding
 
-ADO.NET allows you to create many different data structures to suit the binding needs of your application and the data you're working with. You may want to create your own classes that provide or consume data in Windows Forms. These objects can offer varying levels of functionality and complexity. From basic data binding, to providing design-time support, error checking, change notification, or even support for a structured rollback of the changes made to the data itself.
+ADO.NET lets you create many different data structures to suit the binding needs of your application and the data you're working with. You might want to create your own classes that provide or consume data in Windows Forms. These objects can offer varying levels of functionality and complexity. From basic data binding, to providing design-time support, error checking, change notification, or even support for a structured rollback of the changes made to the data itself.
 
 ### Consumers of data binding interfaces
 
-The following sections describe two groups of interface objects. The first group of interface is implemented on data sources by data source authors. The data source consumers such as the Windows Forms controls or components implements these interfaces. The second group of interface is designed to use by component authors. Component authors use these interfaces when they're creating a component that supports data binding to be consumed by the Windows Forms data binding engine. You can implement these interfaces within classes associated with your form to enable data binding. Each case presents a class that implements an interface that enables interaction with data. Visual Studio rapid application development (RAD) data design experience tools already take advantage of this functionality.
+The following sections describe two groups of interface objects. The first group of interface is implemented on data sources by data source authors. The data source consumers such as the Windows Forms controls or components implement these interfaces. The second group of interface is designed to use by component authors. Component authors use these interfaces when they're creating a component that supports data binding to be consumed by the Windows Forms data binding engine. You can implement these interfaces within classes associated with your form to enable data binding. Each case presents a class that implements an interface that enables interaction with data. Visual Studio rapid application development (RAD) data design experience tools already take advantage of this functionality.
 
 #### Interfaces for implementation by data source authors
 
-The Windows Forms controls implements following interfaces:
+The Windows Forms controls implement following interfaces:
 
 - <xref:System.Collections.IList> interface
 
@@ -63,7 +63,7 @@ The Windows Forms controls implements following interfaces:
 
 - <xref:System.ComponentModel.IBindingListView> interface
 
-  A class that implements the <xref:System.ComponentModel.IBindingListView> interface provides all the functionality of an implementation of <xref:System.ComponentModel.IBindingList>, along with filtering and advanced sorting functionality. This implementation offers string-based filtering, and multi column sorting with property descriptor-direction pairs.
+  A class that implements the <xref:System.ComponentModel.IBindingListView> interface provides all the functionality of an implementation of <xref:System.ComponentModel.IBindingList>, along with filtering and advanced sorting functionality. This implementation offers string-based filtering, and multi-column sorting with property descriptor-direction pairs.
 
 - <xref:System.ComponentModel.IEditableObject> interface
 
@@ -155,7 +155,7 @@ The following interfaces are designed for consumption by the Windows Forms data-
   A class that implements this interface is a non-control component that supports data binding. This class returns the data bindings and binding context of the component through the <xref:System.Windows.Forms.IBindableComponent.DataBindings%2A> and <xref:System.Windows.Forms.IBindableComponent.BindingContext%2A> properties of this interface.
 
   > [!NOTE]
-  > If your component inherits from <xref:System.Windows.Forms.Control>, you do not need to implement the <xref:System.Windows.Forms.IBindableComponent> interface.
+  > If your component inherits from <xref:System.Windows.Forms.Control>, you don't need to implement the <xref:System.Windows.Forms.IBindableComponent> interface.
 
 - <xref:System.Windows.Forms.ICurrencyManagerProvider> interface
 
@@ -237,7 +237,7 @@ The following list shows the structures you can bind to in Windows Forms.
 |--------------|-----------------|
 |Reporting|Reports provide a flexible way for you to display and summarize your data in a printed document. It's common to create a report that prints selected contents of a data source either to the screen or to a printer. Common reports include lists, invoices, and summaries. Items are formatted into columns of lists, with subitems organized under each list item, but you should choose the layout that best suits the data.|
 |Data entry|A common way to enter large amounts of related data or to prompt users for information is through a data entry form. Users can enter information or select choices using text boxes, option buttons, drop-down lists, and check boxes. Information is then submitted and stored in a database, whose structure is based on the information entered.|
-|Master/detail relationship|A master/detail application is one format for looking at related data. Specifically, there are two tables of data with a relation connecting them—in the classic business example, a "Customers" table and an "Orders" table with a relationship between them linking customers and their respective orders. For more information about creating a master/detail application with two Windows Forms <xref:System.Windows.Forms.DataGridView> controls, see [How to: Create a Master/Detail Form Using Two Windows Forms DataGridView Controls](/dotnet/desktop/winforms/controls/create-a-master-detail-form-using-two-datagridviews?view=netframeworkdesktop-4.8&preserve-view=true)|
+|Master/detail relationship|A master/detail application is one format for looking at related data. Specifically, there are two tables of data with a relation connecting in the classic business example, a "Customers" table and an "Orders" table with a relationship between them linking customers and their respective orders. For more information about creating a master/detail application with two Windows Forms <xref:System.Windows.Forms.DataGridView> controls, see [How to: Create a Master/Detail Form Using Two Windows Forms DataGridView Controls](/dotnet/desktop/winforms/controls/create-a-master-detail-form-using-two-datagridviews?view=netframeworkdesktop-4.8&preserve-view=true)|
 |Lookup Table|Another common data presentation/manipulation scenario is the table lookup. Often, as part of a larger data display, a <xref:System.Windows.Forms.ComboBox> control is used to display and manipulate data. The key is that the data displayed in the <xref:System.Windows.Forms.ComboBox> control is different than the data written to the database. For example, if you have a <xref:System.Windows.Forms.ComboBox> control displaying the items available from a grocery store, you would probably like to see the names of the products (bread, milk, eggs). However, to ease information retrieval within the database and for database normalization, you would probably store the information for the specific items of a given order as item numbers (#501, #603, and so on). Thus, there's an implicit connection between the "friendly name" of the grocery item in the <xref:System.Windows.Forms.ComboBox> control on your form and the related item number that is present in an order. It's the essence of a table lookup. For more information, see [How to: Create a Lookup Table with the Windows Forms BindingSource Component](/dotnet/desktop/winforms/controls/how-to-create-a-lookup-table-with-the-windows-forms-bindingsource-component?view=netframeworkdesktop-4.8&preserve-view=true).|
 
 ## See also
