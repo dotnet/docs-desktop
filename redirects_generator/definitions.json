@@ -274,7 +274,7 @@
         {
             "Redirect": "TwoWay",
             "SourceUrl": "/dotnet/desktop/winforms/advanced/how-to-print-a-multi-page-text-file-in-windows-forms?view=netframeworkdesktop-4.8",
-            "TargetUrl": "/dotnet/desktop/winforms/printing/how-to-print-a-text-document?view=netdesktop-6.0"
+            "TargetUrl": "/dotnet/desktop/winforms/printing/how-to-print-text-document?view=netdesktop-6.0"
         },
 
     // ========

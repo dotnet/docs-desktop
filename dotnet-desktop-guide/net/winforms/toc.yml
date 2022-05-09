@@ -106,6 +106,6 @@ items:
   - name: Common tasks
     items:
     - name: Print a text document
-      href: printing/how-to-print-a-text-document.md
+      href: printing/how-to-print-text-document.md
     - name: Print a form
       href: printing/how-to-print-windows-form.md
