@@ -704,6 +704,22 @@
         {
             "source_path": "dotnet-desktop-guide/net/winforms/advanced/how-to-complete-windows-forms-print-jobs.md",
             "redirect_url": "/dotnet/desktop/winforms/printing/overview?view=netdesktop-6.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/advanced/how-to-print-a-windows-form.md",
+            "redirect_url": "/dotnet/desktop/winforms/printing/how-to-print-windows-form?view=netdesktop-6.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/winforms/printing/how-to-print-windows-form.md",
+            "redirect_url": "/dotnet/desktop/winforms/advanced/how-to-print-a-windows-form?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/advanced/how-to-print-a-multi-page-text-file-in-windows-forms.md",
+            "redirect_url": "/dotnet/desktop/winforms/printing/how-to-print-a-text-document?view=netdesktop-6.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/winforms/printing/how-to-print-a-text-document.md",
+            "redirect_url": "/dotnet/desktop/winforms/advanced/how-to-print-a-multi-page-text-file-in-windows-forms?view=netframeworkdesktop-4.8"
         }
     ]
 }
