@@ -1,0 +1,56 @@
+﻿<Window x:Class="MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Routed events overview" Height="200" Width="300">
+
+    <Window.Resources>
+        <Style TargetType="{x:Type Button}">
+            <Setter Property="Height" Value="20"/>
+            <Setter Property="Width" Value="60"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="Control.Margin" Value="4,4,0,4"/>
+            <Setter Property="Control.FontSize" Value="14"/>
+        </Style>
+        <Style x:Key="Style1">
+        </Style>
+    </Window.Resources>
+    <StackPanel>
+
+        <!--<EventSetter>-->
+        <StackPanel>
+            <StackPanel.Resources>
+                <Style TargetType="{x:Type Button}">
+                    <EventSetter Event="Click" Handler="ApplyButtonStyle"/>
+                </Style>
+            </StackPanel.Resources>
+            <Button>Click me</Button>
+            <Button Click="Button_Click">Click me</Button>
+        </StackPanel>
+        <!--</EventSetter>-->
+
+        <StackPanel>
+            <!--<AddHandler_UnqualifiedEventName>-->
+            <Button Name="Button1" Click="Button_Click">Click me</Button>
+            <!--</AddHandler_UnqualifiedEventName>-->
+        </StackPanel>
+
+        <!--<AddHandler_QualifiedEventName>-->
+        <StackPanel Name="StackPanel1" Button.Click="Button_Click">
+            <Button>Click me</Button>
+        </StackPanel>
+        <!--</AddHandler_QualifiedEventName>-->
+
+        <StackPanel>
+            <!--<YesNoCancelButtons>-->
+            <Border Height="30" Width="200" BorderBrush="Gray" BorderThickness="1">
+                <StackPanel Background="LightBlue" Orientation="Horizontal" Button.Click="YesNoCancelButton_Click">
+                    <Button Name="YesButton">Yes</Button>
+                    <Button Name="NoButton">No</Button>
+                    <Button Name="CancelButton">Cancel</Button>
+                </StackPanel>
+            </Border>
+            <!--</YesNoCancelButtons>-->
+        </StackPanel>
+    </StackPanel>
+
+</Window>

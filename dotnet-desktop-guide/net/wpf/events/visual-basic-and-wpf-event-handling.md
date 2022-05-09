@@ -10,13 +10,13 @@ helpviewer_keywords:
 
 # Visual Basic and WPF event handling (WPF .NET)
 
-If you're coding in Visual Basic .NET, you can use the language-specific [Handles](/dotnet/visual-basic/language-reference/statements/handles-clause) keyword to attach an event handler to an object. The object can be an instance in code-behind or an element in Extensible Application Markup Language (XAML). `Handles` can be used to assign event handlers for common language runtime (CLR) events or Windows Presentation Foundation (WPF) [routed events](/dotnet/desktop/wpf/advanced/routed-events-overview?view=netframeworkdesktop-4.8&preserve-view=true). However, `Handles` has some usage [limitations](#limitations) when used to attach event handlers for routed events.
+If you're coding in Visual Basic .NET, you can use the language-specific [Handles](/dotnet/visual-basic/language-reference/statements/handles-clause) keyword to attach an event handler to an object. The object can be an instance in code-behind or an element in Extensible Application Markup Language (XAML). `Handles` can be used to assign event handlers for common language runtime (CLR) events or Windows Presentation Foundation (WPF) [routed events](routed-events-overview.md). However, `Handles` has some usage [limitations](#limitations) when used to attach event handlers for routed events.
 
 [!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
 
 ## Prerequisites
 
-The article assumes a basic knowledge of routed events, and that you've read [Routed events overview](/dotnet/desktop/wpf/advanced/routed-events-overview?view=netframeworkdesktop-4.8&preserve-view=true). To follow the examples in this article, it helps if you're familiar with Extensible Application Markup Language (XAML) and know how to write Windows Presentation Foundation (WPF) applications.
+The article assumes a basic knowledge of routed events, and that you've read [Routed events overview](routed-events-overview.md). To follow the examples in this article, it helps if you're familiar with Extensible Application Markup Language (XAML) and know how to write Windows Presentation Foundation (WPF) applications.
 
 ## Syntax
 
@@ -55,7 +55,7 @@ Regardless whether you attach an event handler using `Handles`, XAML attribute s
 
 The [Handles](/dotnet/visual-basic/language-reference/statements/handles-clause) keyword has these usage limitations:
 
-- You can only use `Handles` to attach an event handler to an object if the event is a member of the object's class or base class. For example, you can use `Handles` to attach a <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event handler to a button whose base class <xref:System.Windows.Forms.ButtonBase> raises the `Click` routed event. However, one of the features of [routed events](/dotnet/desktop/wpf/advanced/routed-events-overview?view=netframeworkdesktop-4.8&preserve-view=true) is that they traverse the element tree, which makes it possible to listen for and handle a `Click` event at a higher level than the element that raised it. A routed event that a parent element listens for and handles is called an _attached event_. `Handles` can't be used for attached events because its syntax doesn't support specifying a different listener in the XAML element tree than the element that raised the event. To assign event handlers for attached events, you'll need to use either XAML attribute syntax or the <xref:System.Windows.UIElement.AddHandler%2A> method. For more information on attached events, see [Attached events overview](attached-events-overview.md) and [Attached events in WPF](/dotnet/desktop/wpf/advanced/routed-events-overview?view=netframeworkdesktop-4.8&preserve-view=true#attached-events-in-wpf).
+- You can only use `Handles` to attach an event handler to an object if the event is a member of the object's class or base class. For example, you can use `Handles` to attach a <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event handler to a button whose base class <xref:System.Windows.Forms.ButtonBase> raises the `Click` routed event. However, one of the features of [routed events](routed-events-overview.md) is that they traverse the element tree, which makes it possible to listen for and handle a `Click` event at a higher level than the element that raised it. A routed event that a parent element listens for and handles is called an _attached event_. `Handles` can't be used for attached events because its syntax doesn't support specifying a different listener in the XAML element tree than the element that raised the event. To assign event handlers for attached events, you'll need to use either XAML attribute syntax or the <xref:System.Windows.UIElement.AddHandler%2A> method. For more information on attached events, see [Attached events overview](attached-events-overview.md) and [Attached events in WPF](routed-events-overview.md#attached-events-in-wpf).
 
 - `Handles` syntax doesn't support event handler invocation for <xref:System.Windows.RoutedEventArgs.Handled> events. To enable your event handler to be invoked for `Handled` events, attach the event handler using the <xref:System.Windows.UIElement.AddHandler%28System.Windows.RoutedEvent%2CSystem.Delegate%2CSystem.Boolean%29> method and set its `handledEventsToo` parameter to `true`.
 
@@ -63,6 +63,6 @@ The [Handles](/dotnet/visual-basic/language-reference/statements/handles-clause)
 
 - <xref:System.Windows.UIElement.AddHandler%2A>
 - [Marking routed events as handled, and class handling](marking-routed-events-as-handled-and-class-handling.md)
-- [Routed events overview](/dotnet/desktop/wpf/advanced/routed-events-overview?view=netframeworkdesktop-4.8&preserve-view=true)
+- [Routed events overview](routed-events-overview.md)
 - [Attached events overview](attached-events-overview.md)
 - [XAML in WPF](/dotnet/desktop/wpf/advanced/xaml/index?view=netframeworkdesktop-4.8&preserve-view=true)

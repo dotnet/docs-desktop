@@ -80,6 +80,8 @@ items:
   items:
   - name: Events
     items:
+    - name: Routed events overview
+      href: events/routed-events-overview.md
     - name: Attached events overview
       href: events/attached-events-overview.md
     - name: Object lifetime events
