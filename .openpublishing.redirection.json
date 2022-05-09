@@ -720,6 +720,14 @@
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/printing/how-to-print-a-text-document.md",
             "redirect_url": "/dotnet/desktop/winforms/advanced/how-to-print-a-multi-page-text-file-in-windows-forms?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/advanced/routed-events-overview.md",
+            "redirect_url": "/dotnet/desktop/wpf/events/routed-events-overview?view=netdesktop-6.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/events/routed-events-overview.md",
+            "redirect_url": "/dotnet/desktop/wpf/advanced/routed-events-overview?view=netframeworkdesktop-4.8"
         }
     ]
 }
