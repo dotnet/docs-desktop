@@ -8,6 +8,7 @@ Imports System.Windows.Media.Imaging
 Imports System.Threading
 Imports System.Security.Permissions
 Imports System.Collections.ObjectModel
+Imports System
 
 Namespace SDKSample
 
@@ -16,14 +17,13 @@ Namespace SDKSample
 
         Private theWindow As Window
 
-
         Protected Overrides Sub OnStartup(ByVal e As StartupEventArgs)
             MyBase.OnStartup(e)
             CreateAndShowMainWindow()
 
         End Sub
 
-        <SecurityPermissionAttribute(SecurityAction.Demand, Flags:=SecurityPermissionFlag.UnmanagedCode)> Private Sub CreateAndShowMainWindow()
+        Private Sub CreateAndShowMainWindow()
 
             ' Create the application's main window
             theWindow = New Window()
@@ -140,10 +140,10 @@ Namespace SDKSample
 
             ' Create a new frame that is identical to the one 
             ' from the original image, except for the new metadata. 
-            encoder3.Frames.Add( _
-                BitmapFrame.Create(decoder2.Frames(0), _
-                decoder2.Frames(0).Thumbnail, _
-                myBitmapMetadata, _
+            encoder3.Frames.Add(
+                BitmapFrame.Create(decoder2.Frames(0),
+                decoder2.Frames(0).Thumbnail,
+                myBitmapMetadata,
                 decoder2.Frames(0).ColorContexts))
 
             encoder3.Save(stream3)
@@ -182,7 +182,7 @@ Namespace SDKSample
 
     Public NotInheritable Class EntryClass
 
-        <System.STAThread()> _
+        <System.STAThread()>
         Public Shared Sub Main()
             Dim app As New MyApp()
             app.Run()

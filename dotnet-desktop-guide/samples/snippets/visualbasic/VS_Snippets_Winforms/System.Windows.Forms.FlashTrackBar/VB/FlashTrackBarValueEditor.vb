@@ -11,7 +11,6 @@ Imports System.Windows.Forms.Design
 
 Namespace Microsoft.Samples.WinForms.VB.FlashTrackBar
 
-    <System.Security.Permissions.PermissionSetAttribute(System.Security.Permissions.SecurityAction.Demand, Name:="FullTrust")> _
     Public Class FlashTrackBarValueEditor
         Inherits UITypeEditor
 
