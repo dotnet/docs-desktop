@@ -44,7 +44,7 @@ WPF exists as a subset of .NET types that are, mostly located in the <xref:Syste
 - Call methods
 - Handle events
 
-WPF includes more programming constructs that enhance properties and events: [dependency properties](../properties/dependency-properties-overview.md) and [routed events](../../../framework/wpf/advanced/routed-events-overview.md).
+WPF includes more programming constructs that enhance properties and events: [dependency properties](../properties/dependency-properties-overview.md) and [routed events](../events/routed-events-overview.md).
 
 ## Markup and code-behind
 
