@@ -21,7 +21,7 @@ Preview events, also known as tunneling events, are routed events that traverse 
 
 ## Prerequisites
 
-The article assumes a basic knowledge of routed events, and that you've read [Routed events overview](/dotnet/desktop/wpf/advanced/routed-events-overview?view=netframeworkdesktop-4.8&preserve-view=true). To follow the examples in this article, it helps if you're familiar with Extensible Application Markup Language (XAML) and know how to write Windows Presentation Foundation (WPF) applications.
+The article assumes a basic knowledge of routed events, and that you've read [Routed events overview](routed-events-overview.md). To follow the examples in this article, it helps if you're familiar with Extensible Application Markup Language (XAML) and know how to write Windows Presentation Foundation (WPF) applications.
 
 ## Preview events marked as handled
 
@@ -67,5 +67,5 @@ The example demonstrates two workarounds for getting the suppressed `KeyDown` ro
 ## See also
 
 - [Marking routed events as handled, and class handling](marking-routed-events-as-handled-and-class-handling.md)
-- [Routed events overview](/dotnet/desktop/wpf/advanced/routed-events-overview?view=netframeworkdesktop-4.8&preserve-view=true)
+- [Routed events overview](routed-events-overview.md)
 - [How to create a custom routed event](how-to-create-a-custom-routed-event.md)
