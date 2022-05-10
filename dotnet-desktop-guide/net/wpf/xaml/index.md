@@ -241,7 +241,7 @@ If you don't want to create a separate code-behind file, you can also inline you
 
 ### Routed events
 
-A particular event feature that is fundamental to WPF is a routed event. Routed events enable an element to handle an event that was raised by a different element, as long as the elements are connected through a tree relationship. When specifying event handling with a XAML attribute, the routed event can be listened for and handled on any element, including elements that don't list that particular event in the class members table. This is accomplished by qualifying the event name attribute with the owning class name. For instance, the parent `StackPanel` in the ongoing `StackPanel` / `Button` example could register a handler for the child element button's <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event by specifying the attribute `Button.Click` on the `StackPanel` object element, with your handler name as the attribute value. For more information, see [Routed Events Overview](../../../framework/wpf/advanced/routed-events-overview.md).
+A particular event feature that is fundamental to WPF is a routed event. Routed events enable an element to handle an event that was raised by a different element, as long as the elements are connected through a tree relationship. When specifying event handling with a XAML attribute, the routed event can be listened for and handled on any element, including elements that don't list that particular event in the class members table. This is accomplished by qualifying the event name attribute with the owning class name. For instance, the parent `StackPanel` in the ongoing `StackPanel` / `Button` example could register a handler for the child element button's <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event by specifying the attribute `Button.Click` on the `StackPanel` object element, with your handler name as the attribute value. For more information, see [Routed Events Overview](../events/routed-events-overview.md).
 
 ## Named elements
 
@@ -272,9 +272,9 @@ The following example illustrates the <xref:System.Windows.Controls.DockPanel.Do
 
 :::code language="xaml" source="./snippets/index/csharp/Window3.xaml" id="DockPanel" :::
 
-In WPF, most or all the attached properties are also implemented as dependency properties. For more information, see [Attached Properties Overview](../../../framework/wpf/advanced/attached-properties-overview.md).
+In WPF, most or all the attached properties are also implemented as dependency properties. For more information, see [Attached Properties Overview](../properties/attached-properties-overview.md).
 
-Attached events use a similar `ownerType.eventName` form of attribute syntax. Just like the non-attached events, the attribute value for an attached event in XAML specifies the name of the handler method that is invoked when the event is handled on the element. Attached event usages in WPF XAML are less common. For more information, see [Attached Events Overview](../../../framework/wpf/advanced/attached-events-overview.md).
+Attached events use a similar `ownerType.eventName` form of attribute syntax. Just like the non-attached events, the attribute value for an attached event in XAML specifies the name of the handler method that is invoked when the event is handled on the element. Attached event usages in WPF XAML are less common. For more information, see [Attached Events Overview](../events/attached-events-overview.md).
 
 ## Base types
 
