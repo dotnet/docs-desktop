@@ -18,9 +18,15 @@ It's common in Windows Forms programming to offer print preview in addition to p
 
 ## To preview a text document with a PrintPreviewDialog control
 
-01. Add a <xref:System.Windows.Forms.PrintPreviewDialog> and <xref:System.Drawing.Printing.PrintDocument>.
+01. In Visual Studio, use the **Solution Explorer** pane and double-click the form you want to print from. This opens the Visual Designer.
 
-01. Add two strings to your form.
+01. From the **Toolbox** pane, double-click both the <xref:System.Drawing.Printing.PrintDocument> component and the <xref:System.Windows.Forms.PrintPreviewDialog> component, to add them to the form.
+
+01. Either add a `Button` to the form, or use a button that is already on the form.
+
+01. In the Visual Designer of the form, select the button. In the **Properties** pane, select the **Event** filter button and then double-click the `Click` event to generate an event handler.
+
+01. The `Click` event code should be visible. Outside the scope of the event handler, add two private string variables to the class named `documentContents` and `stringToPrint`:
 
      :::code language="csharp" source="snippets/how-to-print-in-windows-forms-using-print-preview/csharp/Form1.cs" id="string_declaration":::
 
