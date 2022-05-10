@@ -1,4 +1,4 @@
-using System.Drawing.Printing;
+﻿using System.Drawing.Printing;
 
 namespace Sample_print_winform_print_preview
 {
@@ -11,11 +11,11 @@ namespace Sample_print_winform_print_preview
 
         //<string_declaration>
         // Declare a string to hold the entire document contents.
-        private string DocumentContents="";
+        private string documentContents="";
 
         // Declare a variable to hold the portion of the document that
         // is not printed.
-        private string StringToPrint="";
+        private string stringToPrint="";
         //</string_declaration>
 
         //<print_file_using_event_handler>
@@ -26,40 +26,36 @@ namespace Sample_print_winform_print_preview
 
             // Sets the value of charactersOnPage to the number of characters
             // of stringToPrint that will fit within the bounds of the page.
-            e.Graphics.MeasureString(StringToPrint, this.Font,
+            e.Graphics.MeasureString(stringToPrint, this.Font,
                 e.MarginBounds.Size, StringFormat.GenericTypographic,
                 out charactersOnPage, out linesPerPage);
 
             // Draws the string within the bounds of the page.
-            e.Graphics.DrawString(StringToPrint, this.Font, Brushes.Black,
+            e.Graphics.DrawString(stringToPrint, this.Font, Brushes.Black,
             e.MarginBounds, StringFormat.GenericTypographic);
 
             // Remove the portion of the string that has been printed.
-            StringToPrint = StringToPrint.Substring(charactersOnPage);
+            stringToPrint = stringToPrint.Substring(charactersOnPage);
 
             // Check to see if more pages are to be printed.
-            e.HasMorePages = (StringToPrint.Length > 0);
+            e.HasMorePages = (stringToPrint.Length > 0);
 
             // If there are no more pages, reset the string to be printed.
             if (!e.HasMorePages)
-                StringToPrint = DocumentContents;
+                stringToPrint = documentContents;
         }
         //</print_file_using_event_handler>
 
         //<read_document_and_show_print_preview_dialog>
         private void Button1_Click(object sender, EventArgs e)
         {
-            //<open_and_read_document_contents_the_string>
+            //<open_and_read_document_contents_to_the_string>
             string docName = "testPage.txt";
             string docPath = @"C:\";
+            string fullPath = System.IO.Path.Combine(docPath, docName);
             printDocument1.DocumentName = docName;
-            using (FileStream stream = new (docPath + docName, FileMode.Open))
-            using (StreamReader reader = new (stream))
-            {
-                DocumentContents = reader.ReadToEnd();
-            }
-            StringToPrint = DocumentContents;
-            //</open_and_read_document_contents_the_string>
+            stringToPrint = System.IO.File.ReadAllText(fullPath);
+            //</open_and_read_document_contents_to_the_string>
 
             //<set_the_document_property>
             printPreviewDialog1.Document = printDocument1;

@@ -34,9 +34,9 @@ It's common in Windows Forms programming to offer print preview in addition to p
 
 01. Back in the `Click` event handler code, set the <xref:System.Drawing.Printing.PrintDocument.DocumentName%2A> property to the document you wish to print, and open and read the document's contents to the string you added previously.
 
-    :::code language="csharp" source="snippets/how-to-print-in-windows-forms-using-print-preview/csharp/Form1.cs" id="open_and_read_document_contents_the_string":::
+    :::code language="csharp" source="snippets/how-to-print-in-windows-forms-using-print-preview/csharp/Form1.cs" id="open_and_read_document_contents_to_the_string":::
 
-    :::code language="vb" source="snippets/how-to-print-in-windows-forms-using-print-preview/vb/Form1.vb" id="open_and_read_document_contents_the_string":::
+    :::code language="vb" source="snippets/how-to-print-in-windows-forms-using-print-preview/vb/Form1.vb" id="open_and_read_document_contents_to_the_string":::
 
 01. As you would for printing the document, in the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event handler, use the <xref:System.Drawing.Printing.PrintPageEventArgs.Graphics%2A> property of the <xref:System.Drawing.Printing.PrintPageEventArgs> class and the file contents to calculate lines per page and render the document's contents. After each page is drawn, check to see if it's the last page, and set the <xref:System.Drawing.Printing.PrintPageEventArgs.HasMorePages%2A> property of the `PrintPageEventArgs` accordingly. The `PrintPage` event is raised until `HasMorePages` is `false`. When the document has finished rendering, reset the string to be rendered. Also, ensure that the `PrintPage` event is associated with its event-handling method.
 
@@ -57,7 +57,7 @@ It's common in Windows Forms programming to offer print preview in addition to p
 
 01. Call the <xref:System.Windows.Forms.CommonDialog.ShowDialog%2A> method on the <xref:System.Windows.Forms.PrintPreviewDialog> control. Note the highlighted code given below, you would typically call <xref:System.Windows.Forms.CommonDialog.ShowDialog%2A> from the <xref:System.Windows.Forms.Control.Click> event-handling method of a button. Calling <xref:System.Windows.Forms.CommonDialog.ShowDialog%2A> raises the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event and renders the output to the `PrintPreviewDialog` control. When the user selects the print icon on the dialog, the `PrintPage` event is raised again, sending the output to the printer instead of the preview dialog. Hence, the string is reset at the end of the rendering process in step 4.
 
-    The following code example shows the <xref:System.Windows.Forms.Control.Click> event-handling method for a button on the form. This event-handling method calls the methods to read the document and show the print preview dialog.
+    The following code example shows the <xref:System.Windows.Forms.Control.Click> event-handling method for a button on the form. The event-handling method calls the methods to read the document and show the print preview dialog.
 
     :::code language="csharp" source="snippets/how-to-print-in-windows-forms-using-print-preview/csharp/Form1.cs" id="read_document_and_show_print_preview_dialog" highlight="15":::
 
