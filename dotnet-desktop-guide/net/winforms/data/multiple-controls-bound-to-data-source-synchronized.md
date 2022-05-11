@@ -27,8 +27,9 @@ The following code example demonstrates how to bind three controls—two text-bo
 
 The example uses a <xref:System.Windows.Forms.BindingSource> to bind the data source and the controls. Alternatively, you can bind the controls directly to the data source and retrieve the <xref:System.Windows.Forms.BindingManagerBase> for the binding from the form's <xref:System.Windows.Forms.Control.BindingContext%2A> and then handle the <xref:System.Windows.Forms.BindingManagerBase.BindingComplete> event for the `BindingManagerBase`. For more information on bind the data source and the controls, see the help page about the `BindingComplete` event of `BindingManagerBase`.
 
- [!code-csharp[System.Windows.Forms.BindingSourceMultipleControls#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.BindingSourceMultipleControls/CS/Form1.cs#1)]
- [!code-vb[System.Windows.Forms.BindingSourceMultipleControls#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.BindingSourceMultipleControls/VB/Form1.vb#1)]
+:::code language="csharp" source="snippets/multiple-controls-bound-to-data-source-synchronized/example1/csharp/form1.cs" id="bind_controls_using_BindingSource":::
+
+:::code language="vb" source="snippets/multiple-controls-bound-to-data-source-synchronized/example1/vb/form1.cs" id="bind_controls_using_BindingSource":::
 
 ## How to apply the PropertyNameChanged pattern
 
