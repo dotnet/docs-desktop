@@ -214,7 +214,6 @@ namespace D3DHost
 
     public static class HRESULT
     {
-        [SecurityPermissionAttribute(SecurityAction.Demand, Flags = SecurityPermissionFlag.UnmanagedCode)]
         public static void Check(int hr)
         {
             Marshal.ThrowExceptionForHR(hr);
