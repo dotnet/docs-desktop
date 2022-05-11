@@ -1,7 +1,6 @@
 ﻿Public Class Form1
     Private Sub InitializeControlsAndDataSource()
         '<bind_controls_using_BindingSource>
-
         ' Add a table and column to DataSet.
         set1.Tables.Add("Menu")
         set1.Tables(0).Columns.Add("Beverages")
@@ -25,7 +24,7 @@
             True, DataSourceUpdateMode.OnPropertyChanged)
         TextBox2.DataBindings.Add("Text", BindingSource1, "Beverages",
             True, DataSourceUpdateMode.OnPropertyChanged)
-            
+
         '</bind_controls_using_BindingSource>
 
     End Sub

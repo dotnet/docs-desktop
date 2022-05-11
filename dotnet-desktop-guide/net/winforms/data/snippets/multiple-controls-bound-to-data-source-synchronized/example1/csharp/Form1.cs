@@ -5,7 +5,6 @@ namespace binding_control_example
         public Form1()
         {
             InitializeComponent();
-
             //<bind_controls_using_BindingSource>
             // Add the table to DataSet
             set1.Tables.Add("Menu");
