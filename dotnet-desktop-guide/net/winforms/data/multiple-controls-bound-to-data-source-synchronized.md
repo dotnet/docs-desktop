@@ -29,7 +29,7 @@ The example uses a <xref:System.Windows.Forms.BindingSource> to bind the data so
 
 :::code language="csharp" source="snippets/multiple-controls-bound-to-data-source-synchronized/example1/csharp/form1.cs" id="bind_controls_using_BindingSource":::
 
-:::code language="vb" source="snippets/multiple-controls-bound-to-data-source-synchronized/example1/vb/form1.cs" id="bind_controls_using_BindingSource":::
+:::code language="vb" source="snippets/multiple-controls-bound-to-data-source-synchronized/example1/vb/form1.vb" id="bind_controls_using_BindingSource":::
 
 ## How to apply the PropertyNameChanged pattern
 
