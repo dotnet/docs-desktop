@@ -9,7 +9,6 @@ Imports System.Diagnostics
 
 Namespace Microsoft.Samples.WinForms.VB.FlashTrackBar
 
-    <System.Security.Permissions.PermissionSetAttribute(System.Security.Permissions.SecurityAction.Demand, Name:="FullTrust")> _
     Public Class FlashTrackBar
         Inherits System.Windows.Forms.Control
 
