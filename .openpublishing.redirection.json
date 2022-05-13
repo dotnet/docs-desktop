@@ -715,10 +715,10 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/advanced/how-to-print-a-multi-page-text-file-in-windows-forms.md",
-            "redirect_url": "/dotnet/desktop/winforms/printing/how-to-print-a-text-document?view=netdesktop-6.0"
+            "redirect_url": "/dotnet/desktop/winforms/printing/how-to-print-text-document?view=netdesktop-6.0"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/printing/how-to-print-a-text-document.md",
+            "source_path": "dotnet-desktop-guide/framework/winforms/printing/how-to-print-text-document.md",
             "redirect_url": "/dotnet/desktop/winforms/advanced/how-to-print-a-multi-page-text-file-in-windows-forms?view=netframeworkdesktop-4.8"
         },
         {
@@ -728,6 +728,14 @@
         {
             "source_path": "dotnet-desktop-guide/framework/wpf/events/routed-events-overview.md",
             "redirect_url": "/dotnet/desktop/wpf/advanced/routed-events-overview?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/advanced/how-to-print-in-windows-forms-using-print-preview.md",
+            "redirect_url": "/dotnet/desktop/winforms/printing/how-to-print-in-windows-forms-using-print-preview?view=netdesktop-6.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/winforms/printing/how-to-print-in-windows-forms-using-print-preview.md",
+            "redirect_url": "/dotnet/desktop/winforms/advanced/how-to-print-in-windows-forms-using-print-preview?view=netframeworkdesktop-4.8"
         }
     ]
 }
