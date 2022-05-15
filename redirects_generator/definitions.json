@@ -276,6 +276,11 @@
             "SourceUrl": "/dotnet/desktop/winforms/advanced/how-to-print-a-multi-page-text-file-in-windows-forms?view=netframeworkdesktop-4.8",
             "TargetUrl": "/dotnet/desktop/winforms/printing/how-to-print-text-document?view=netdesktop-6.0"
         },
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/winforms/advanced/how-to-print-in-windows-forms-using-print-preview?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/winforms/printing/how-to-print-in-windows-forms-using-print-preview?view=netdesktop-6.0"
+        },
 
     // ========
     // WinForms Index mappings
