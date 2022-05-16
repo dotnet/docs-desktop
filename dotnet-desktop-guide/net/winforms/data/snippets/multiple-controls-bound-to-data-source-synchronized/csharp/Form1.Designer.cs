@@ -97,46 +97,6 @@ namespace binding_control_example
         private TextBox textBox2;
         private BindingSource bindingSource1;
         private DataGridView dataGridView1;
-        public DataSet set1;
-        void bindingSource1_BindingComplete(object sender, BindingCompleteEventArgs e)
-        {
-            // Check if the data source has been updated, and that no error has occurred.
-            if (e.BindingCompleteContext ==
-                BindingCompleteContext.DataSourceUpdate && e.Exception == null)
-
-                // If not, end the current edit.
-                e.Binding.BindingManagerBase.EndCurrentEdit();
-        }
-
-        private DataGridViewTextBoxColumn accessibleDescriptionDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn accessibleNameDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn accessibleRoleDataGridViewTextBoxColumn;
-        private DataGridViewCheckBoxColumn allowDropDataGridViewCheckBoxColumn;
-        private DataGridViewTextBoxColumn anchorDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn backColorDataGridViewTextBoxColumn;
-        private DataGridViewImageColumn backgroundImageDataGridViewImageColumn;
-        private DataGridViewTextBoxColumn backgroundImageLayoutDataGridViewTextBoxColumn;
-        private DataGridViewCheckBoxColumn causesValidationDataGridViewCheckBoxColumn;
-        private DataGridViewTextBoxColumn contextMenuStripDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn cursorDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn dataBindingsDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn dockDataGridViewTextBoxColumn;
-        private DataGridViewCheckBoxColumn enabledDataGridViewCheckBoxColumn;
-        private DataGridViewTextBoxColumn fontDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn foreColorDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn locationDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn marginDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn maximumSizeDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn minimumSizeDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn rightToLeftDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn sizeDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn tabIndexDataGridViewTextBoxColumn;
-        private DataGridViewCheckBoxColumn tabStopDataGridViewCheckBoxColumn;
-        private DataGridViewTextBoxColumn tagDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn textDataGridViewTextBoxColumn;
-        private DataGridViewCheckBoxColumn useWaitCursorDataGridViewCheckBoxColumn;
-        private DataGridViewCheckBoxColumn visibleDataGridViewCheckBoxColumn;
-        private DataGridViewTextBoxColumn paddingDataGridViewTextBoxColumn;
-        private DataGridViewTextBoxColumn imeModeDataGridViewTextBoxColumn;
+        public DataSet set1;                
     }
 }

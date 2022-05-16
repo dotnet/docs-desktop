@@ -1,4 +1,4 @@
-namespace binding_control_example
+﻿namespace binding_control_example
 {
     internal static class Program
     {

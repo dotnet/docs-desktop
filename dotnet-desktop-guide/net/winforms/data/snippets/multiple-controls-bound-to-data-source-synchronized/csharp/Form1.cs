@@ -1,12 +1,11 @@
-namespace binding_control_example
+﻿namespace binding_control_example
 {
     public partial class Form1 : Form
     {
         public Form1()
         {
-            InitializeComponent();
             //<bind_controls_using_BindingSource>
-            // Add the table to DataSet
+            InitializeComponent();
             set1.Tables.Add("Menu");
             set1.Tables[0].Columns.Add("Beverages");
 
@@ -31,10 +30,18 @@ namespace binding_control_example
                 "Beverages", true, DataSourceUpdateMode.OnPropertyChanged);
             bindingSource1.BindingComplete +=
                 new BindingCompleteEventHandler(bindingSource1_BindingComplete);
-
-            //</bind_controls_using_BindingSource>                  
+                                    
         }
-        
+        void bindingSource1_BindingComplete(object sender, BindingCompleteEventArgs e)
+        {
+            // Check if the data source has been updated, and that no error has occurred.
+            if (e.BindingCompleteContext ==
+                BindingCompleteContext.DataSourceUpdate && e.Exception == null)
+
+                // If not, end the current edit.
+                e.Binding.BindingManagerBase.EndCurrentEdit();
+        }
+        //</bind_controls_using_BindingSource>
 
     }
 }
