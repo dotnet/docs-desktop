@@ -31,7 +31,7 @@ The example uses a <xref:System.Windows.Forms.BindingSource> to bind the data so
 
 :::code language="vb" source="snippets/multiple-controls-bound-to-data-source-synchronized/vb/form1.vb" id="bind_controls_using_BindingSource":::
 
-## How to apply the PropertyNameChanged pattern
+## Apply the PropertyNameChanged pattern
 
 The following code example demonstrates how to apply the *PropertyName*Changed pattern to a custom control. Apply the pattern when you implement custom controls that are used with the Windows Forms data binding engine.
 
@@ -43,7 +43,7 @@ The following code example demonstrates how to apply the *PropertyName*Changed p
 
 One of the most important concepts of Windows Forms data binding is the *change notification*. To ensure that your data source and bound controls always have the most recent data, you must add change notification for data binding. Specifically, you want to ensure that bound controls are notified of changes that were made to their data source. The data source is notified of changes that were made to the bound properties of a control.
 
-There are different kinds of change notification, depending on the kind of data binding:
+There are different kinds of change notifications, depending on the kind of data binding:
 
 - Simple binding, in which a single control property is bound to a single instance of an object.
 
