@@ -232,7 +232,7 @@ To share a set of resources, including styles and templates, across apps, you ca
 
 It is the sharing of `shared.xaml`, which itself defines a <xref:System.Windows.ResourceDictionary> that contains a set of style and brush resources, that enables the controls in an app to have a consistent look.
 
-For more information, see [Merged resource dictionaries](../../../framework/wpf/advanced/merged-resource-dictionaries.md).
+For more information, see [Merged resource dictionaries](../systems/xaml-resources-merged-dictionaries.md).
 
 If you are creating a theme for your custom control, see the **Defining resources at the theme level** section of the [Control authoring overview](../../../framework/wpf/controls/control-authoring-overview.md#defining-resources-at-the-theme-level).
 

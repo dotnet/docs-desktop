@@ -24,19 +24,19 @@ Windows Presentation Foundation (WPF) provides two parallel mechanisms for chang
   
  In the themes, the default focus visual style is generally very simple. The following is a rough approximation:  
   
-```xaml  
-<Style x:Key="{x:Static SystemParameters.FocusVisualStyleKey}">  
-  <Setter Property="Control.Template">  
-    <Setter.Value>  
-      <ControlTemplate>  
-        <Rectangle StrokeThickness="1"  
-          Stroke="Black"  
-          StrokeDashArray="1 2"  
-          SnapsToDevicePixels="true"/>  
-      </ControlTemplate>  
-    </Setter.Value>  
-  </Setter>  
-</Style>  
+```xaml
+<Style x:Key="{x:Static SystemParameters.FocusVisualStyleKey}">
+  <Setter Property="Control.Template">
+    <Setter.Value>
+      <ControlTemplate>
+        <Rectangle StrokeThickness="1"
+          Stroke="Black"
+          StrokeDashArray="1 2"
+          SnapsToDevicePixels="true"/>
+      </ControlTemplate>
+    </Setter.Value>
+  </Setter>
+</Style>
 ```  
   
 <a name="When"></a>

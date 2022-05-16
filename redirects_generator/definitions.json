@@ -235,13 +235,60 @@
             "TargetUrl": "/dotnet/desktop/winforms/input-mouse/how-to-distinguish-between-clicks-and-double-clicks?view=netdesktop-6.0"
         },
 
+        // Printing
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/winforms/controls/printdialog-component-overview-windows-forms?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/winforms/printing/overview?view=netdesktop-6.0"
+        },
+        {
+            "Redirect": "OneWay",
+            "SourceUrl": "/dotnet/desktop/winforms/controls/printdialog-component-windows-forms?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/winforms/printing/overview?view=netdesktop-6.0"
+        },
+        {
+            "Redirect": "OneWay",
+            "SourceUrl": "/dotnet/desktop/winforms/advanced/how-to-capture-user-input-from-a-printdialog-at-run-time?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/winforms/printing/overview?view=netdesktop-6.0"
+        },
+        {
+            "Redirect": "OneWay",
+            "SourceUrl": "/dotnet/desktop/winforms/advanced/how-to-create-standard-windows-forms-print-jobs?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/winforms/printing/overview?view=netdesktop-6.0"
+        },
+        {
+            "Redirect": "OneWay",
+            "SourceUrl": "/dotnet/desktop/winforms/advanced/windows-forms-print-support?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/winforms/printing/overview?view=netdesktop-6.0"
+        },
+        {
+            "Redirect": "OneWay",
+            "SourceUrl": "/dotnet/desktop/winforms/advanced/how-to-complete-windows-forms-print-jobs?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/winforms/printing/overview?view=netdesktop-6.0"
+        },
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/winforms/advanced/how-to-print-a-windows-form?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/winforms/printing/how-to-print-windows-form?view=netdesktop-6.0"
+        },
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/winforms/advanced/how-to-print-a-multi-page-text-file-in-windows-forms?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/winforms/printing/how-to-print-text-document?view=netdesktop-6.0"
+        },
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/winforms/advanced/how-to-print-in-windows-forms-using-print-preview?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/winforms/printing/how-to-print-in-windows-forms-using-print-preview?view=netdesktop-6.0"
+        },
+
     // ========
     // WinForms Index mappings
     // ========
         {
             "Redirect": "Normal",
-            "SourceUrl": "/dotnet/desktop/winforms/whats-new/index?view=netdesktop-5.0",
-            "TargetUrl": "/dotnet/desktop/winforms/whats-new/net60?view=netdesktop-5.0"
+            "SourceUrl": "/dotnet/desktop/winforms/whats-new/index?view=netdesktop-6.0",
+            "TargetUrl": "/dotnet/desktop/winforms/whats-new/net60?view=netdesktop-6.0"
         },
 
 
@@ -357,6 +404,25 @@
             "Redirect": "TwoWay",
             "SourceUrl": "/dotnet/desktop/wpf/advanced/object-lifetime-events?view=netframeworkdesktop-4.8",
             "TargetUrl": "/dotnet/desktop/wpf/events/object-lifetime-events?view=netdesktop-6.0"
+        },
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/wpf/advanced/weak-event-patterns?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/wpf/events/weak-event-patterns?view=netdesktop-6.0"
+        },
+        {
+            "SourceUrl": "/dotnet/desktop/wpf/advanced/property-change-events?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/wpf/events/property-change-events?view=netdesktop-6.0"
+        },
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/wpf/advanced/attached-events-overview?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/wpf/events/attached-events-overview?view=netdesktop-6.0"
+        },
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/wpf/advanced/routed-events-overview?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/wpf/events/routed-events-overview?view=netdesktop-6.0"
         },
 
         // Systems - Properties

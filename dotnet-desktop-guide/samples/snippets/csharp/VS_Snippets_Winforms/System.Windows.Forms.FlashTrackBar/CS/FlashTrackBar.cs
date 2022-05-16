@@ -9,7 +9,6 @@ namespace Microsoft.Samples.WinForms.Cs.FlashTrackBar {
     using System.Windows.Forms;
     using System.Diagnostics;
 
-    [System.Security.Permissions.PermissionSet(System.Security.Permissions.SecurityAction.Demand, Name = "FullTrust")]
     public class FlashTrackBar : System.Windows.Forms.Control {
         /// <summary>
         ///    Required designer variable.

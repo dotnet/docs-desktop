@@ -8,7 +8,6 @@ using System.Windows.Forms;
 
 namespace KeyboardInput
 {
-[System.Security.Permissions.PermissionSet(System.Security.Permissions.SecurityAction.Demand, Name="FullTrust")]
     class Form1 : Form
     {
         // The following Windows message value is defined in Winuser.h.
@@ -67,7 +66,7 @@ namespace KeyboardInput
         }
         // </Snippet5>
     }
-[System.Security.Permissions.PermissionSet(System.Security.Permissions.SecurityAction.Demand, Name="FullTrust")]
+    
     public class CustomTextBox : TextBox
     {
         // The following Windows message value is defined in Winuser.h.

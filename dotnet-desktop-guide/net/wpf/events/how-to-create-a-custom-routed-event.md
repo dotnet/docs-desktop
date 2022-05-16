@@ -13,13 +13,13 @@ helpviewer_keywords:
 
 # How to create a custom routed event (WPF .NET)
 
-Windows Presentation Foundation (WPF) application developers and component authors can create custom routed events to extend the functionality of common language runtime (CLR) events. For information on routed event capabilities, see [Why use routed events](/dotnet/desktop/wpf/advanced/routed-events-overview?view=netframeworkdesktop-4.8&preserve-view=true#why-use-routed-events). This article covers the basics of creating a custom routed event.
+Windows Presentation Foundation (WPF) application developers and component authors can create custom routed events to extend the functionality of common language runtime (CLR) events. For information on routed event capabilities, see [Why use routed events](routed-events-overview.md#why-use-routed-events). This article covers the basics of creating a custom routed event.
 
 [!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
 
 ## Prerequisites
 
-The article assumes a basic knowledge of routed events, and that you've read [Routed events overview](/dotnet/desktop/wpf/advanced/routed-events-overview?view=netframeworkdesktop-4.8&preserve-view=true). To follow the examples in this article, it helps if you're familiar with Extensible Application Markup Language (XAML) and know how to write Windows Presentation Foundation (WPF) applications.
+The article assumes a basic knowledge of routed events, and that you've read [Routed events overview](routed-events-overview.md). To follow the examples in this article, it helps if you're familiar with Extensible Application Markup Language (XAML) and know how to write Windows Presentation Foundation (WPF) applications.
 
 ## Routed event steps
 
@@ -27,7 +27,7 @@ The basic steps to create a routed event are:
 
 1. Register a <xref:System.Windows.RoutedEvent> using the <xref:System.Windows.EventManager.RegisterRoutedEvent%2A> method.
 
-1. The registration call returns a `RoutedEvent` instance, known as a routed event identifier, which holds the registered event name, [routing strategy](/dotnet/desktop/wpf/advanced/routed-events-overview?view=netframeworkdesktop-4.8&preserve-view=true#routing-strategies), and other event details. Assign the identifier to a static readonly field. By convention:
+1. The registration call returns a `RoutedEvent` instance, known as a routed event identifier, which holds the registered event name, [routing strategy](routed-events-overview.md#routing-strategies), and other event details. Assign the identifier to a static readonly field. By convention:
     - The identifier for a routed event with a [bubbling](<xref:System.Windows.RoutingStrategy.Bubble>) strategy is named `<event name>Event`. For example, if the event name is `Tap` then the identifier should be named `TapEvent`.
     - The identifier for a routed event with a [tunneling](<xref:System.Windows.RoutingStrategy.Tunnel>) strategy is named `Preview<event name>Event`. For example, if the event name is `Tap` then the identifier should be named `PreviewTapEvent`.
 
@@ -76,11 +76,11 @@ The `Handler_ConditionalClick` event handler obtains the following information a
 > [!NOTE]
 > A key difference between a routed event and a CLR event is that a routed event traverses the element tree, looking for handlers, whereas a CLR event doesn't traverse the element tree and handlers can only attach to the source object that raised the event. As a result, a routed event `sender` can be any traversed element in the element tree.
 
-You can create a tunneling event the same way as a bubbling event, except you'll set the routing strategy in the event registration call to <xref:System.Windows.RoutingStrategy.Tunnel>. For more information on tunneling events, see [WPF input events](/dotnet/desktop/wpf/advanced/routed-events-overview?view=netframeworkdesktop-4.8&preserve-view=true#wpf-input-events).
+You can create a tunneling event the same way as a bubbling event, except you'll set the routing strategy in the event registration call to <xref:System.Windows.RoutingStrategy.Tunnel>. For more information on tunneling events, see [WPF input events](routed-events-overview.md#wpf-input-events).
 
 ## See also
 
-- [Routed events overview](/dotnet/desktop/wpf/advanced/routed-events-overview?view=netframeworkdesktop-4.8&preserve-view=true)
+- [Routed events overview](routed-events-overview.md)
 - [Input overview](/dotnet/desktop/wpf/advanced/input-overview?view=netframeworkdesktop-4.8&preserve-view=true)
 - [Control authoring overview](/dotnet/desktop/wpf/controls/control-authoring-overview?view=netframeworkdesktop-4.8&preserve-view=true)
 - [Handle a routed event](/dotnet/desktop/wpf/advanced/how-to-handle-a-routed-event?view=netframeworkdesktop-4.8&preserve-view=true).
