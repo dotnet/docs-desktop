@@ -1,7 +1,7 @@
 ---
 title: "How to ensure multiple controls bound to the same data source remain synchronized"
 description: Learn how to ensure multiple controls bound to the same data source remain synchronized.
-ms.date: "05/10/2022"
+ms.date: "05/16/2022"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -67,9 +67,9 @@ Finally, from the control side you must expose a *PropertyName*Changed event for
 
 The following code example demonstrates how to implement the <xref:System.ComponentModel.INotifyPropertyChanged> interface. Implement the interface on business objects that are used in Windows Forms data binding. When implemented, the interface  communicates to a bound control the property changes on a business object.
 
-:::code language="csharp" source="snippets/multiple-controls-bound-to-data-source-synchronized/csharp/form2.cs" id="implement_INotifyPropertyChanged_interface":::
+:::code language="csharp" source="snippets/multiple-controls-bound-to-data-source-synchronized/csharp/form3.cs" id="implement_INotifyPropertyChanged_interface":::
 
-:::code language="vb" source="snippets/multiple-controls-bound-to-data-source-synchronized/vb/form2.vb" id="implement_INotifyPropertyChanged_interface":::
+:::code language="vb" source="snippets/multiple-controls-bound-to-data-source-synchronized/vb/form3.vb" id="implement_INotifyPropertyChanged_interface":::
 
 ## See also
 
