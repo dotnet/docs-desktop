@@ -1,5 +1,6 @@
 ---
 title: "How to Navigate Data"
+description: Learn how to navigate data.
 ms.date: "05/16/2022"
 dev_langs:
   - "csharp"
@@ -103,9 +104,9 @@ When you display data in a parent/child view, you might have to take extra steps
 
 ## See also
 
-- [Data Sources Supported by Windows Forms](data-sources-supported-by-windows-forms.md)
-- [Change Notification in Windows Forms Data Binding](change-notification-in-windows-forms-data-binding.md)
-- [Windows Forms Data Binding](windows-forms-data-binding.md)
-- [How to: Ensure Multiple Controls Bound to the Same Data Source Remain Synchronized](multiple-controls-bound-to-data-source-synchronized.md)
-- [BindingSource Component](./controls/bindingsource-component.md)
-- [Data Binding and Windows Forms](data-binding-and-windows-forms.md)
+- [Data Sources Supported by Windows Forms](/dotnet/desktop/winforms/data-sources-supported-by-windows-forms?view=netframeworkdesktop-4.8&preserve-view=true)
+- [Change Notification in Windows Forms Data Binding](/dotnet/desktop/winforms/change-notification-in-windows-forms-data-binding?view=netframeworkdesktop-4.8&preserve-view=true)
+- [Windows Forms Data Binding](/dotnet/desktop/winforms/windows-forms-data-binding?view=netframeworkdesktop-4.8&preserve-view=true)
+- [How to: Ensure Multiple Controls Bound to the Same Data Source Remain Synchronized](/dotnet/desktop/winforms/multiple-controls-bound-to-data-source-synchronized?view=netframeworkdesktop-4.8&preserve-view=true)
+- [BindingSource Component](/dotnet/desktop/winforms//controls/bindingsource-component?view=netframeworkdesktop-4.8&preserve-view=true)
+- [Data Binding and Windows Forms](/dotnet/desktop/winforms/data-binding-and-windows-forms?view=netframeworkdesktop-4.8&preserve-view=true)
