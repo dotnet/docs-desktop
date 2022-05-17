@@ -24,7 +24,7 @@ Windows Presentation Foundation (WPF) defines several events that are raised in 
 
 ## Prerequisites
 
-This article assumes a basic knowledge of dependency properties, and that you've read [Routed events overview](/dotnet/desktop/wpf/advanced/routed-events-overview?view=netframeworkdesktop-4.8&preserve-view=true).
+This article assumes a basic knowledge of dependency properties, and that you've read [Routed events overview](routed-events-overview.md).
 
 ## Identifying a property changed event
 
@@ -74,5 +74,5 @@ To learn more about property triggers, see [Styling and Templating](/dotnet/desk
 
 ## See also
 
-- [Routed events overview](/dotnet/desktop/wpf/advanced/routed-events-overview?view=netframeworkdesktop-4.8&preserve-view=true)
+- [Routed events overview](routed-events-overview.md)
 - [Dependency properties overview](../properties/dependency-properties-overview.md)

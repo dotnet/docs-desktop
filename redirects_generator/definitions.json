@@ -266,6 +266,21 @@
             "SourceUrl": "/dotnet/desktop/winforms/advanced/how-to-complete-windows-forms-print-jobs?view=netframeworkdesktop-4.8",
             "TargetUrl": "/dotnet/desktop/winforms/printing/overview?view=netdesktop-6.0"
         },
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/winforms/advanced/how-to-print-a-windows-form?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/winforms/printing/how-to-print-windows-form?view=netdesktop-6.0"
+        },
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/winforms/advanced/how-to-print-a-multi-page-text-file-in-windows-forms?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/winforms/printing/how-to-print-text-document?view=netdesktop-6.0"
+        },
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/winforms/advanced/how-to-print-in-windows-forms-using-print-preview?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/winforms/printing/how-to-print-in-windows-forms-using-print-preview?view=netdesktop-6.0"
+        },
 
     // ========
     // WinForms Index mappings
@@ -403,6 +418,11 @@
             "Redirect": "TwoWay",
             "SourceUrl": "/dotnet/desktop/wpf/advanced/attached-events-overview?view=netframeworkdesktop-4.8",
             "TargetUrl": "/dotnet/desktop/wpf/events/attached-events-overview?view=netdesktop-6.0"
+        },
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/wpf/advanced/routed-events-overview?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/wpf/events/routed-events-overview?view=netdesktop-6.0"
         },
 
         // Systems - Properties

@@ -16,7 +16,6 @@ Namespace MarqueeControlLibrary.Design
     ToolboxItemFilterType.Require), _
     ToolboxItemFilter("MarqueeControlLibrary.MarqueeText", _
     ToolboxItemFilterType.Require)> _
-    <System.Security.Permissions.PermissionSetAttribute(System.Security.Permissions.SecurityAction.Demand, Name:="FullTrust")> _
     Public Class MarqueeControlRootDesigner
         Inherits DocumentDesigner
         ' </snippet530>

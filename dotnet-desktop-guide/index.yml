@@ -46,5 +46,7 @@ landingContent:
     links:
     - text: Universal Windows Apps
       url: /uwp
+    - text: .NET Multi-platform App UI (.NET MAUI)
+      url: /dotnet/maui
     - text: Xamarin Forms
       url: /xamarin/xamarin-forms/

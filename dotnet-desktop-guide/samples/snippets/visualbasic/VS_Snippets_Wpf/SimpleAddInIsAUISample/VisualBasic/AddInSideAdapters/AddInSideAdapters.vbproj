@@ -1,4 +1,4 @@
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -6,16 +6,18 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{D6B2D9E4-FFA9-4D82-B973-BB6792FDDDBB}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <AssemblyName>AddInSideAdapters</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <OptionExplicit>On</OptionExplicit>
     <OptionCompare>Binary</OptionCompare>
     <OptionStrict>Off</OptionStrict>
     <OptionInfer>On</OptionInfer>
     <FileAlignment>512</FileAlignment>
     <Nonshipping>true</Nonshipping>
-    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -25,6 +27,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -33,6 +36,7 @@
     <DefineDebug>false</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="PresentationCore">
@@ -62,19 +66,17 @@
     <Compile Include="WPFAddIn_ViewToContractAddInSideAdapter.vb" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AddInViews\AddInViews.vbproj">
-      <Project>{75CCA4C0-CDCC-4779-9617-3817BE939F60}</Project>
-      <Name>AddInViews</Name>
-      <Private>False</Private>
-    </ProjectReference>
-    <ProjectReference Include="..\Contracts\Contracts.vbproj">
-      <Project>{E808F287-31D1-4F2B-8EA9-3F027BF8C51B}</Project>
-      <Name>Contracts</Name>
-      <Private>False</Private>
-    </ProjectReference>
+    <Folder Include="My Project\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="My Project\" />
+    <ProjectReference Include="..\AddInViews\AddInViews.vbproj">
+      <Project>{75cca4c0-cdcc-4779-9617-3817be939f60}</Project>
+      <Name>AddInViews</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Contracts\Contracts.vbproj">
+      <Project>{e808f287-31d1-4f2b-8ea9-3f027bf8c51b}</Project>
+      <Name>Contracts</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

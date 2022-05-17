@@ -51,7 +51,6 @@ private:
    /// Required method for Designer support - do not modify
    /// the contents of this method with the code editor.
    /// </summary>
-   [SecurityPermission(SecurityAction::Demand, Flags=SecurityPermissionFlag::UnmanagedCode)]
    void InitializeComponent()
    {
       this->MainMenu1 = gcnew System::Windows::Forms::MainMenu;

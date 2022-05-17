@@ -24,7 +24,7 @@ Extensible Application Markup Language (XAML) defines a language component and e
 
 ## Prerequisites
 
-The article assumes a basic knowledge of Windows Presentation Foundation (WPF) routed events, and that you've read [Routed events overview](/dotnet/desktop/wpf/advanced/routed-events-overview?view=netframeworkdesktop-4.8&preserve-view=true) and [XAML in WPF](../xaml/index.md). To follow the examples in this article, it helps if you're familiar with XAML and know how to write WPF applications.
+The article assumes a basic knowledge of Windows Presentation Foundation (WPF) routed events, and that you've read [Routed events overview](routed-events-overview.md) and [XAML in WPF](../xaml/index.md). To follow the examples in this article, it helps if you're familiar with XAML and know how to write WPF applications.
 
 ## Attached event syntax
 
@@ -72,7 +72,7 @@ For example, the following code defines the `Clean` attached event on the `Aquar
 
 :::code language="vb" source="./snippets/attached-events-overview/WpfControlLibraryVb/AquariumFilter.vb" id="AddRemoveHandlersForAttachedEvent":::
 
-The <xref:System.Windows.EventManager.RegisterRoutedEvent%2A> method that returns the attached event identifier is the same method used to register non-attached routed events. Both attached and non-attached routed events are registered to a centralized internal store. This event store implementation enables the "events as an interface" concept that's discussed in [Routed events overview](/dotnet/desktop/wpf/advanced/routed-events-overview?view=netframeworkdesktop-4.8&preserve-view=true).
+The <xref:System.Windows.EventManager.RegisterRoutedEvent%2A> method that returns the attached event identifier is the same method used to register non-attached routed events. Both attached and non-attached routed events are registered to a centralized internal store. This event store implementation enables the "events as an interface" concept that's discussed in [Routed events overview](routed-events-overview.md).
 
 Unlike the CLR event "wrapper" used to back non-attached routed events, the attached event accessor methods can be implemented in classes that don't derive from <xref:System.Windows.UIElement> or <xref:System.Windows.ContentElement>. This is possible because the attached event backing code calls the <xref:System.Windows.UIElement.AddHandler%2A?displayProperty=nameWithType> and <xref:System.Windows.UIElement.RemoveHandler%2A?displayProperty=nameWithType> methods on a passed in `UIElement` instance. In contrast, the CLR wrapper for non-attached routed events calls those methods directly on the owning class, so that class must derive from `UIElement`.
 
@@ -92,6 +92,6 @@ In the preceding example, `aquarium1` is the event source.
 
 ## See also
 
-- [Routed events overview](/dotnet/desktop/wpf/advanced/routed-events-overview?view=netframeworkdesktop-4.8&preserve-view=true)
+- [Routed events overview](routed-events-overview.md)
 - [XAML syntax in detail](/dotnet/desktop/wpf/advanced/xaml-syntax-in-detail?view=netframeworkdesktop-4.8&preserve-view=true)
 - [XAML and custom classes for WPF](/dotnet/desktop/wpf/advanced/xaml-and-custom-classes-for-wpf?view=netframeworkdesktop-4.8&preserve-view=true)
