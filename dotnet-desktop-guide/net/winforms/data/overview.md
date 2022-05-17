@@ -16,7 +16,7 @@ helpviewer_keywords:
 ms.custom: devdivchpfy22
 ---
 
-# Data Binding and Windows Forms
+# Data Binding (Windows Forms .NET)
 
 In Windows Forms, you can bind to not just traditional data sources, but also to almost any structure that contains data. You can bind to an array of values that you calculate at run time, read from a file, or derive from the values of other controls.
 
@@ -44,10 +44,10 @@ The Windows Forms controls implement following interfaces:
 
 - <xref:System.Collections.IList> interface
 
-  A class that implements the <xref:System.Collections.IList> interface could be an <xref:System.Array>, <xref:System.Collections.ArrayList>, or <xref:System.Collections.CollectionBase>. These are indexed lists of items of type <xref:System.Object> and the lists must contain homogenous types, because the first item of the index determines the type. <xref:System.Collections.IList> would be available for binding only at run time.
+  A class that implements the <xref:System.Collections.IList> interface could be an <xref:System.Array>, <xref:System.Collections.ArrayList>, or <xref:System.Collections.CollectionBase>. These are indexed lists of items of type <xref:System.Object> and the lists must contain homogenous types, because the first item of the index determines the type. `IList` would be available for binding only at run time.
 
   > [!NOTE]
-  > If you want to create a list of business objects for binding with Windows Forms, you should consider using the <xref:System.ComponentModel.BindingList%601>. The <xref:System.ComponentModel.BindingList%601> is an extensible class that implements the primary interfaces required for two-way Windows Forms data binding.
+  > If you want to create a list of business objects for binding with Windows Forms, you should consider using the <xref:System.ComponentModel.BindingList%601>. The `BindingList` is an extensible class that implements the primary interfaces required for two-way Windows Forms data binding.
 
 - <xref:System.ComponentModel.IBindingList> interface
 
@@ -67,9 +67,9 @@ The Windows Forms controls implement following interfaces:
 
 - <xref:System.ComponentModel.IEditableObject> interface
 
-  A class that implements the <xref:System.ComponentModel.IEditableObject> interface allows an object to control when changes to that object are made permanent. This implementation supports the <xref:System.ComponentModel.IEditableObject.BeginEdit%2A>, <xref:System.ComponentModel.IEditableObject.EndEdit%2A>, and <xref:System.ComponentModel.IEditableObject.CancelEdit%2A> methods, which enable you to roll back changes made to the object. Following is a brief explanation of the functioning of the <xref:System.ComponentModel.IEditableObject.BeginEdit%2A>, <xref:System.ComponentModel.IEditableObject.EndEdit%2A>, and <xref:System.ComponentModel.IEditableObject.CancelEdit%2A> methods and how they work with one another to enable a possible rollback of changes made to the data:
+  A class that implements the <xref:System.ComponentModel.IEditableObject> interface allows an object to control when changes to that object are made permanent. This implementation supports the <xref:System.ComponentModel.IEditableObject.BeginEdit%2A>, <xref:System.ComponentModel.IEditableObject.EndEdit%2A>, and <xref:System.ComponentModel.IEditableObject.CancelEdit%2A> methods, which enable you to roll back changes made to the object. Following is a brief explanation of the functioning of the `BeginEdit`, `EndEdit`, and `CancelEdit` methods and how they work with one another to enable a possible rollback of changes made to the data:
 
-  - The <xref:System.ComponentModel.IEditableObject.BeginEdit%2A> method signals the start of an edit on an object. An object that implements this interface will need to store any updates after the <xref:System.ComponentModel.IEditableObject.BeginEdit%2A> method call in such a way that the updates can be discarded if the <xref:System.ComponentModel.IEditableObject.CancelEdit%2A> method is called. In data binding Windows Forms, you can call <xref:System.ComponentModel.IEditableObject.BeginEdit%2A> multiple times within the scope of a single edit transaction (for example, <xref:System.ComponentModel.IEditableObject.BeginEdit%2A>, <xref:System.ComponentModel.IEditableObject.BeginEdit%2A>, <xref:System.ComponentModel.IEditableObject.EndEdit%2A>). Implementations of <xref:System.ComponentModel.IEditableObject> should keep track of whether <xref:System.ComponentModel.IEditableObject.BeginEdit%2A> has already been called and ignore subsequent calls to <xref:System.ComponentModel.IEditableObject.BeginEdit%2A>. Because this method can be called multiple times, it's important that subsequent calls to it are nondestructive. Subsequent <xref:System.ComponentModel.IEditableObject.BeginEdit%2A> calls can't destroy the updates that have been made or change the data that was saved on the first <xref:System.ComponentModel.IEditableObject.BeginEdit%2A> call.
+  - The <xref:System.ComponentModel.IEditableObject.BeginEdit%2A> method signals the start of an edit on an object. An object that implements this interface will need to store any updates after the `BeginEdit` method call in such a way that the updates can be discarded if the <xref:System.ComponentModel.IEditableObject.CancelEdit%2A> method is called. In data binding Windows Forms, you can call `BeginEdit` multiple times within the scope of a single edit transaction (for example, `BeginEdit`, `BeginEdit`, <xref:System.ComponentModel.IEditableObject.EndEdit%2A>). Implementations of <xref:System.ComponentModel.IEditableObject> should keep track of whether `BeginEdit` has already been called and ignore subsequent calls to `BeginEdit`. Because this method can be called multiple times, it's important that subsequent calls to it are nondestructive. Subsequent `BeginEdit` calls can't destroy the updates that have been made or change the data that was saved on the first `BeginEdit` call.
 
   - The <xref:System.ComponentModel.IEditableObject.EndEdit%2A> method pushes any changes since <xref:System.ComponentModel.IEditableObject.BeginEdit%2A> was called into the underlying object, if the object is currently in edit mode.
 
@@ -81,7 +81,7 @@ The Windows Forms controls implement following interfaces:
 
 - <xref:System.ComponentModel.ICancelAddNew> interface
 
-  A class that implements the <xref:System.ComponentModel.ICancelAddNew> interface usually implements the <xref:System.ComponentModel.IBindingList> interface and allows you to roll back an addition made to the data source with the <xref:System.ComponentModel.IBindingList.AddNew%2A> method. If your data source implements the <xref:System.ComponentModel.IBindingList> interface, you should also have it implement the <xref:System.ComponentModel.ICancelAddNew> interface.
+  A class that implements the <xref:System.ComponentModel.ICancelAddNew> interface usually implements the <xref:System.ComponentModel.IBindingList> interface and allows you to roll back an addition made to the data source with the <xref:System.ComponentModel.IBindingList.AddNew%2A> method. If your data source implements the `IBindingList` interface, you should also have it implement the `ICancelAddNew` interface.
 
 - <xref:System.ComponentModel.IDataErrorInfo> interface
 
@@ -107,25 +107,25 @@ The Windows Forms controls implement following interfaces:
 
 - <xref:System.ComponentModel.ICustomTypeDescriptor> interface
 
-  A class that implements the <xref:System.ComponentModel.ICustomTypeDescriptor> interface provides dynamic information about itself. This interface is similar to <xref:System.ComponentModel.ITypedList> but is used for objects rather than lists. This interface is used by <xref:System.Data.DataRowView> to project the schema of the underlying rows. A simple implementation of <xref:System.ComponentModel.ICustomTypeDescriptor> is provided by the <xref:System.ComponentModel.CustomTypeDescriptor> class.
+  A class that implements the <xref:System.ComponentModel.ICustomTypeDescriptor> interface provides dynamic information about itself. This interface is similar to <xref:System.ComponentModel.ITypedList> but is used for objects rather than lists. This interface is used by <xref:System.Data.DataRowView> to project the schema of the underlying rows. A simple implementation of `ICustomTypeDescriptor` is provided by the <xref:System.ComponentModel.CustomTypeDescriptor> class.
 
   > [!NOTE]
   > To support design-time binding to types that implement <xref:System.ComponentModel.ICustomTypeDescriptor>, the type must also implement <xref:System.ComponentModel.IComponent> and exist as an instance on the Form.
 
 - <xref:System.ComponentModel.IListSource> interface
 
-  A class that implements the <xref:System.ComponentModel.IListSource> interface enables list-based binding on non-list objects. The <xref:System.ComponentModel.IListSource.GetList%2A> method of <xref:System.ComponentModel.IListSource> is used to return a bindable list from an object that doesn't inherit from <xref:System.Collections.IList>. <xref:System.ComponentModel.IListSource> is used by the <xref:System.Data.DataSet> class.
+  A class that implements the <xref:System.ComponentModel.IListSource> interface enables list-based binding on non-list objects. The <xref:System.ComponentModel.IListSource.GetList%2A> method of `IListSource` is used to return a bindable list from an object that doesn't inherit from <xref:System.Collections.IList>.`IListSource` is used by the <xref:System.Data.DataSet> class.
 
 - <xref:System.ComponentModel.IRaiseItemChangedEvents> interface
 
   A class that implements the <xref:System.ComponentModel.IRaiseItemChangedEvents> interface is a bindable list that also implements the <xref:System.ComponentModel.IBindingList> interface. This interface is used to indicate if your type raises <xref:System.ComponentModel.IBindingList.ListChanged> events of type <xref:System.ComponentModel.ListChangedType.ItemChanged> through its <xref:System.ComponentModel.IRaiseItemChangedEvents.RaisesItemChangedEvents%2A> property.
 
   > [!NOTE]
-  > You should implement the <xref:System.ComponentModel.IRaiseItemChangedEvents> if your data source provides the property to list event conversion described previously and is interacting with the <xref:System.Windows.Forms.BindingSource> component. Otherwise, the <xref:System.Windows.Forms.BindingSource> will also perform property to list event conversion resulting in slower performance.
+  > You should implement the <xref:System.ComponentModel.IRaiseItemChangedEvents> if your data source provides the property to list event conversion described previously and is interacting with the <xref:System.Windows.Forms.BindingSource> component. Otherwise, the `BindingSource` will also perform property to list event conversion resulting in slower performance.
 
 - <xref:System.ComponentModel.ISupportInitialize> interface
 
-  A component that implements the <xref:System.ComponentModel.ISupportInitialize> interface takes advantages of batch optimizations for setting properties and initializing co-dependent properties. The <xref:System.ComponentModel.ISupportInitialize> contains two methods:
+  A component that implements the <xref:System.ComponentModel.ISupportInitialize> interface takes advantages of batch optimizations for setting properties and initializing co-dependent properties. The `ISupportInitialize` contains two methods:
 
   - <xref:System.ComponentModel.ISupportInitialize.BeginInit%2A> signals that object initialization is starting.
 
@@ -133,7 +133,7 @@ The Windows Forms controls implement following interfaces:
 
 - <xref:System.ComponentModel.ISupportInitializeNotification> interface
 
-  A component that implements the <xref:System.ComponentModel.ISupportInitializeNotification> interface also implements the <xref:System.ComponentModel.ISupportInitialize> interface. This interface allows you to notify other <xref:System.ComponentModel.ISupportInitialize> components that initialization is complete. The <xref:System.ComponentModel.ISupportInitializeNotification> interface contains two members:
+  A component that implements the <xref:System.ComponentModel.ISupportInitializeNotification> interface also implements the <xref:System.ComponentModel.ISupportInitialize> interface. This interface allows you to notify other `ISupportInitialize` components that initialization is complete. The `ISupportInitializeNotification` interface contains two members:
 
   - <xref:System.ComponentModel.ISupportInitializeNotification.IsInitialized%2A> returns a `boolean` value indicating whether the component is initialized.
 
@@ -159,7 +159,7 @@ The following interfaces are designed for consumption by the Windows Forms data-
 
 - <xref:System.Windows.Forms.ICurrencyManagerProvider> interface
 
-  A class that implements the <xref:System.Windows.Forms.ICurrencyManagerProvider> interface is a component that provides its own <xref:System.Windows.Forms.CurrencyManager> to manage the bindings associated with this particular component. Access to the custom <xref:System.Windows.Forms.CurrencyManager> is provided by the <xref:System.Windows.Forms.ICurrencyManagerProvider.CurrencyManager%2A> property.
+  A class that implements the <xref:System.Windows.Forms.ICurrencyManagerProvider> interface is a component that provides its own <xref:System.Windows.Forms.CurrencyManager> to manage the bindings associated with this particular component. Access to the custom `CurrencyManager` is provided by the <xref:System.Windows.Forms.ICurrencyManagerProvider.CurrencyManager%2A> property.
 
   > [!NOTE]
   > A class that inherits from <xref:System.Windows.Forms.Control> manages bindings automatically through its <xref:System.Windows.Forms.Control.BindingContext%2A> property, so cases in which you need to implement the <xref:System.Windows.Forms.ICurrencyManagerProvider> are fairly rare.
@@ -176,7 +176,7 @@ The following list shows the structures you can bind to in Windows Forms.
 
 - <xref:System.Windows.Forms.BindingSource>
 
-  A <xref:System.Windows.Forms.BindingSource> is the most common Windows Forms data source and acts a proxy between a data source and Windows Forms controls. The general <xref:System.Windows.Forms.BindingSource> usage pattern is to bind your controls to the <xref:System.Windows.Forms.BindingSource> and bind the <xref:System.Windows.Forms.BindingSource> to the data source (for example, an ADO.NET data table or a business object). The <xref:System.Windows.Forms.BindingSource> provides services that enable and improve the level of data binding support. For example, Windows Forms list based controls such as the <xref:System.Windows.Forms.DataGridView> and <xref:System.Windows.Forms.ComboBox> don't directly support binding to <xref:System.Collections.IEnumerable> data sources however, you can enable this scenario by binding through a <xref:System.Windows.Forms.BindingSource>. In this case, the <xref:System.Windows.Forms.BindingSource> will convert the data source to an <xref:System.Collections.IList>.
+  A <xref:System.Windows.Forms.BindingSource> is the most common Windows Forms data source and acts a proxy between a data source and Windows Forms controls. The general `BindingSource` usage pattern is to bind your controls to the `BindingSource` and bind the `BindingSource` to the data source (for example, an ADO.NET data table or a business object). The `BindingSource` provides services that enable and improve the level of data binding support. For example, Windows Forms list based controls such as the <xref:System.Windows.Forms.DataGridView> and <xref:System.Windows.Forms.ComboBox> don't directly support binding to <xref:System.Collections.IEnumerable> data sources however, you can enable this scenario by binding through a `BindingSource`. In this case, the `BindingSource` will convert the data source to an <xref:System.Collections.IList>.
 
 - Simple objects
 
@@ -186,7 +186,7 @@ The following list shows the structures you can bind to in Windows Forms.
 
   To act as a data source, a list must implement the <xref:System.Collections.IList> interface; one example would be an array that is an instance of the <xref:System.Array> class. For more information on arrays, see [How to: Create an Array of Objects (Visual Basic)](/previous-versions/visualstudio/visual-studio-2010/487y7874(v=vs.100)).
 
-  In general, you should use <xref:System.ComponentModel.BindingList%601> when you create lists of objects for data binding. <xref:System.ComponentModel.BindingList%601> is a generic version of the <xref:System.ComponentModel.IBindingList> interface. The <xref:System.ComponentModel.IBindingList> interface extends the <xref:System.Collections.IList> interface by adding properties, methods and events necessary for two-way data binding.
+  In general, you should use <xref:System.ComponentModel.BindingList%601> when you create lists of objects for data binding. <xref:System.ComponentModel.BindingList%601> is a generic version of the <xref:System.ComponentModel.IBindingList> interface. The `IBindingList` interface extends the <xref:System.Collections.IList> interface by adding properties, methods and events necessary for two-way data binding.
 
 - <xref:System.Collections.IEnumerable>
 
@@ -202,7 +202,7 @@ The following list shows the structures you can bind to in Windows Forms.
 
   - <xref:System.Data.DataTable>
 
-    A <xref:System.Data.DataTable> is the representation of a table, with rows and columns, in ADO.NET. A data table contains two collections: <xref:System.Data.DataColumn>, representing the columns of data in a given table (which ultimately determine the kinds of data that can be entered into that table), and <xref:System.Data.DataRow>, representing the rows of data in a given table. You can complex-bind a control to the information contained in a data table (such as binding the <xref:System.Windows.Forms.DataGridView> control to a data table). However, when you bind to a <xref:System.Data.DataTable>, you're a binding to the table's default view.
+    A <xref:System.Data.DataTable> is the representation of a table, with rows and columns, in ADO.NET. A data table contains two collections: <xref:System.Data.DataColumn>, representing the columns of data in a given table (which ultimately determine the kinds of data that can be entered into that table), and <xref:System.Data.DataRow>, representing the rows of data in a given table. You can complex-bind a control to the information contained in a data table (such as binding the <xref:System.Windows.Forms.DataGridView> control to a data table). However, when you bind to a `DataTable`, you're a binding to the table's default view.
 
   - <xref:System.Data.DataView>
 
@@ -210,11 +210,11 @@ The following list shows the structures you can bind to in Windows Forms.
 
   - <xref:System.Data.DataSet>
 
-    A <xref:System.Data.DataSet> is a collection of tables, relationships, and constraints of the data in a database. You can simple-bind or complex-bind to the data within a dataset, but note that you're binding to the default <xref:System.Data.DataViewManager> for the <xref:System.Data.DataSet> (see the next bullet point).
+    A <xref:System.Data.DataSet> is a collection of tables, relationships, and constraints of the data in a database. You can simple-bind or complex-bind to the data within a dataset, but note that you're binding to the default <xref:System.Data.DataViewManager> for the `DataSet` (see the next bullet point).
 
   - <xref:System.Data.DataViewManager>
   
-    A <xref:System.Data.DataViewManager> is a customized view of the entire <xref:System.Data.DataSet>, analogous to a <xref:System.Data.DataView>, but with relations included. With a <xref:System.Data.DataViewManager.DataViewSettings%2A> collection, you can set default filters and sort options for any views that the <xref:System.Data.DataViewManager> has for a given table.
+    A <xref:System.Data.DataViewManager> is a customized view of the entire <xref:System.Data.DataSet>, analogous to a <xref:System.Data.DataView>, but with relations included. With a <xref:System.Data.DataViewManager.DataViewSettings%2A> collection, you can set default filters and sort options for any views that the `DataViewManager` has for a given table.
 
 ## Types of data binding
 
@@ -227,7 +227,7 @@ The following list shows the structures you can bind to in Windows Forms.
 
 ### Binding source component
 
- To simplify data binding, Windows Forms enables you to bind a data source to the <xref:System.Windows.Forms.BindingSource> component and then bind controls to the <xref:System.Windows.Forms.BindingSource>. You can use the <xref:System.Windows.Forms.BindingSource> in simple or complex binding scenarios. In either case, the <xref:System.Windows.Forms.BindingSource> acts as an intermediary between the data source and bound controls providing change notification currency management and other services.
+ To simplify data binding, Windows Forms enables you to bind a data source to the <xref:System.Windows.Forms.BindingSource> component and then bind controls to the `BindingSource`. You can use the `BindingSource` in simple or complex binding scenarios. In either case, the `BindingSource` acts as an intermediary between the data source and bound controls providing change notification currency management and other services.
 
 ### Common scenarios that employ data binding
 
@@ -238,7 +238,7 @@ The following list shows the structures you can bind to in Windows Forms.
 |Reporting|Reports provide a flexible way for you to display and summarize your data in a printed document. It's common to create a report that prints selected contents of a data source either to the screen or to a printer. Common reports include lists, invoices, and summaries. Items are formatted into columns of lists, with subitems organized under each list item, but you should choose the layout that best suits the data.|
 |Data entry|A common way to enter large amounts of related data or to prompt users for information is through a data entry form. Users can enter information or select choices using text boxes, option buttons, drop-down lists, and check boxes. Information is then submitted and stored in a database, whose structure is based on the information entered.|
 |Master/detail relationship|A master/detail application is one format for looking at related data. Specifically, there are two tables of data with a relation connecting in the classic business example, a "Customers" table and an "Orders" table with a relationship between them linking customers and their respective orders. For more information about creating a master/detail application with two Windows Forms <xref:System.Windows.Forms.DataGridView> controls, see [How to: Create a Master/Detail Form Using Two Windows Forms DataGridView Controls](/dotnet/desktop/winforms/controls/create-a-master-detail-form-using-two-datagridviews?view=netframeworkdesktop-4.8&preserve-view=true)|
-|Lookup Table|Another common data presentation/manipulation scenario is the table lookup. Often, as part of a larger data display, a <xref:System.Windows.Forms.ComboBox> control is used to display and manipulate data. The key is that the data displayed in the <xref:System.Windows.Forms.ComboBox> control is different than the data written to the database. For example, if you have a <xref:System.Windows.Forms.ComboBox> control displaying the items available from a grocery store, you would probably like to see the names of the products (bread, milk, eggs). However, to ease information retrieval within the database and for database normalization, you would probably store the information for the specific items of a given order as item numbers (#501, #603, and so on). Thus, there's an implicit connection between the "friendly name" of the grocery item in the <xref:System.Windows.Forms.ComboBox> control on your form and the related item number that is present in an order. It's the essence of a table lookup. For more information, see [How to: Create a Lookup Table with the Windows Forms BindingSource Component](/dotnet/desktop/winforms/controls/how-to-create-a-lookup-table-with-the-windows-forms-bindingsource-component?view=netframeworkdesktop-4.8&preserve-view=true).|
+|Lookup Table|Another common data presentation/manipulation scenario is the table lookup. Often, as part of a larger data display, a <xref:System.Windows.Forms.ComboBox> control is used to display and manipulate data. The key is that the data displayed in the `ComboBox` control is different than the data written to the database. For example, if you have a `ComboBox` control displaying the items available from a grocery store, you would probably like to see the names of the products (bread, milk, eggs). However, to ease information retrieval within the database and for database normalization, you would probably store the information for the specific items of a given order as item numbers (#501, #603, and so on). Thus, there's an implicit connection between the "friendly name" of the grocery item in the `ComboBox` control on your form and the related item number that is present in an order. It's the essence of a table lookup. For more information, see [How to: Create a Lookup Table with the Windows Forms BindingSource Component](/dotnet/desktop/winforms/controls/how-to-create-a-lookup-table-with-the-windows-forms-bindingsource-component?view=netframeworkdesktop-4.8&preserve-view=true).|
 
 ## See also
 
