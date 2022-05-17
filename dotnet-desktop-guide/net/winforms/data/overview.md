@@ -186,7 +186,7 @@ The following list shows the structures you can bind to in Windows Forms.
 
   To act as a data source, a list must implement the <xref:System.Collections.IList> interface; one example would be an array that is an instance of the <xref:System.Array> class. For more information on arrays, see [How to: Create an Array of Objects (Visual Basic)](/previous-versions/visualstudio/visual-studio-2010/487y7874(v=vs.100)).
 
-  In general, you should use <xref:System.ComponentModel.BindingList%601> when you create lists of objects for data binding. <xref:System.ComponentModel.BindingList%601> is a generic version of the <xref:System.ComponentModel.IBindingList> interface. The `IBindingList` interface extends the <xref:System.Collections.IList> interface by adding properties, methods and events necessary for two-way data binding.
+  In general, you should use <xref:System.ComponentModel.BindingList%601> when you create lists of objects for data binding. `BindingList` is a generic version of the <xref:System.ComponentModel.IBindingList> interface. The `IBindingList` interface extends the <xref:System.Collections.IList> interface by adding properties, methods and events necessary for two-way data binding.
 
 - <xref:System.Collections.IEnumerable>
 
@@ -198,7 +198,7 @@ The following list shows the structures you can bind to in Windows Forms.
 
   - <xref:System.Data.DataColumn>
 
-    A <xref:System.Data.DataColumn> is the essential building block of a <xref:System.Data.DataTable>, in that multiple columns comprise a table. Each <xref:System.Data.DataColumn> has a <xref:System.Data.DataColumn.DataType%2A> property that determines the kind of data the column holds (for example, the make of an automobile in a table describing cars). You can simple-bind a control (such as a <xref:System.Windows.Forms.TextBox> control's <xref:System.Windows.Forms.Control.Text%2A> property) to a column within a data table.
+    A <xref:System.Data.DataColumn> is the essential building block of a <xref:System.Data.DataTable>, in that multiple columns comprise a table. Each `DataColumn` has a <xref:System.Data.DataColumn.DataType%2A> property that determines the kind of data the column holds (for example, the make of an automobile in a table describing cars). You can simple-bind a control (such as a <xref:System.Windows.Forms.TextBox> control's <xref:System.Windows.Forms.Control.Text%2A> property) to a column within a data table.
 
   - <xref:System.Data.DataTable>
 
