@@ -282,6 +282,28 @@
             "TargetUrl": "/dotnet/desktop/winforms/printing/how-to-print-in-windows-forms-using-print-preview?view=netdesktop-6.0"
         },
 
+        // Data binding
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/winforms/windows-forms-data-binding?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/winforms/data/overview?view=netdesktop-6.0"
+        },
+        {
+            "Redirect": "OneWay",
+            "SourceUrl": "/dotnet/desktop/winforms/interfaces-related-to-data-binding?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/winforms/data/overview?view=netdesktop-6.0"
+        },
+        {
+            "Redirect": "OneWay",
+            "SourceUrl": "/dotnet/desktop/winforms/data-binding-and-windows-forms?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/winforms/data/overview?view=netdesktop-6.0"
+        },
+        {
+            "Redirect": "OneWay",
+            "SourceUrl": "/dotnet/desktop/winforms/data-sources-supported-by-windows-forms?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/winforms/data/overview?view=netdesktop-6.0"
+        },
+
     // ========
     // WinForms Index mappings
     // ========
