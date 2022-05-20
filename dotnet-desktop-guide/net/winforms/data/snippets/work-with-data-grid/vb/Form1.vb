@@ -1,4 +1,5 @@
-﻿Imports System.Collections.Generic
+﻿'<snippet1>
+Imports System.Collections.Generic
 Imports System.ComponentModel
 Imports System.Data
 Imports System.Data.SqlClient
@@ -34,16 +35,18 @@ Class Form1
         Me.Controls.Add(Me.customersDataGridView)
     End Sub
 
-    '<find_the_record>
+
+
+    '<snippet2>
     Sub findButton_Click(ByVal sender As Object, ByVal e As EventArgs) _
         Handles findButton.Click
         Dim foundIndex As Integer = customersBindingSource.Find("CustomerID",
             "ANTON")
         customersBindingSource.Position = foundIndex
     End Sub
-    '</find_the_record>
+    '</snippet2>
 
-    '<check_for_last_element>
+    '<snippet3>
     Sub customersBindingSource_PositionChanged(ByVal sender As Object,
         ByVal e As EventArgs)
 
@@ -54,15 +57,16 @@ Class Form1
             nextButton.Enabled = True
         End If
     End Sub
-    '</check_for_last_element>
+    '</snippet3>
 
-    '<increment_position_on_next_button_click>
+    '<snippet4>
     Private Sub nextButton_Click(ByVal sender As Object,
         ByVal e As System.EventArgs) Handles nextButton.Click
         Me.customersBindingSource.MoveNext()
     End Sub
-    '</increment_position_on_next_button_click>
+    '</snippet4>
 
+    '<snippet5>
     Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs) _
         Handles Me.Load
         ' Create the connection string, data adapter, data table and data view.
@@ -81,4 +85,6 @@ Class Form1
         customersBindingSource.DataSource = customerView
         customersDataGridView.DataSource = customersBindingSource
     End Sub
+    '</snippet5>
 End Class
+'</snippet1>

@@ -1,3 +1,5 @@
+//<snippet1>
+
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -41,15 +43,15 @@ namespace Navigate_data
             this.customersBindingSource.PositionChanged += new EventHandler(customersBindingSource_PositionChanged);
         }
         
-        //<find_the_record>
+        //<snippet2>
         void findButton_Click(object sender, EventArgs e)
         {
             int foundIndex = customersBindingSource.Find("CustomerID", "ANTON");
             customersBindingSource.Position = foundIndex;
         }
-        //</find_the_record>
+        //</snippet2>
 
-        //<check_for_last_element>
+        //<snippet3>
         void customersBindingSource_PositionChanged(object sender, EventArgs e)
         {
             if (customersBindingSource.Position == customersBindingSource.Count - 1)
@@ -57,15 +59,16 @@ namespace Navigate_data
             else
                 nextButton.Enabled = true;
         }
-        //</check_for_last_element>
+        //</snippet3>
 
-        //<increment_position_on_next_button_click>
+        //<snippet4>
         private void nextButton_Click(object sender, System.EventArgs e)
         {
             this.customersBindingSource.MoveNext();
         }
-        //</increment_position_on_next_button_click>
+        //</snippet4>
 
+        //<snippet5>
         private void Form1_Load(object sender, EventArgs e)
         {
             // Create the connection string, data adapter, data table and data view.
@@ -85,5 +88,7 @@ namespace Navigate_data
             customersBindingSource.DataSource = customerView;
             customersDataGridView.DataSource = customersBindingSource;
         }
+        //</snippet5>
     }
 }
+//</snippet1>
