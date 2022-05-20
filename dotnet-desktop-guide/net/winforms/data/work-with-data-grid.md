@@ -59,7 +59,7 @@ When you display data in a parent/child view, you might have to take extra steps
 
      :::code language="csharp" source="snippets/work-with-data-grid/csharp/form2.cs" id="store_the_child_list_pos":::
      :::code language="vb" source="snippets/work-with-data-grid/vb/form2.vb" id="store_the_child_list_pos":::
-s
+
 01. Handle the <xref:System.Windows.Forms.CurrencyManager.ListChanged> event for the binding's <xref:System.Windows.Forms.CurrencyManager> and check for a <xref:System.ComponentModel.ListChangedType> of <xref:System.ComponentModel.ListChangedType.Reset>.
 
 01. Check the current position of the <xref:System.Windows.Forms.CurrencyManager>. If it's greater than first entry in the list (typically 0), save it to a variable.
