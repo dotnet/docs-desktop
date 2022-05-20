@@ -40,7 +40,7 @@ Similarly, aspects of the WPF XAML processor that get property values bypass the
 
 ## Dependency property with wrapper example
 
-The following example shows a recommended dependency property definition with property wrappers. The dependency property identifier is stored as a `public static readonly` field, and the `get` and `set` accessors contain no code beyond the necessary WPF property system methods that back the dependency property value. If you have code that needs to run when the value of your dependency property changes, consider putting that code in the <xref:System.Windows.PropertyChangedCallback> for your dependency property. For more information, see [Property-changed callbacks](/dotnet/desktop/wpf/properties/dependency-property-callbacks-and-validation?preserve-view=true#property-changed-callbacks).
+The following example shows a recommended dependency property definition with property wrappers. The dependency property identifier is stored as a `public static readonly` field, and the `get` and `set` accessors contain no code beyond the necessary WPF property system methods that back the dependency property value. If you have code that needs to run when the value of your dependency property changes, consider putting that code in the <xref:System.Windows.PropertyChangedCallback> for your dependency property. For more information, see [Property-changed callbacks](dependency-property-callbacks-and-validation.md#property-changed-callbacks).
 
 :::code language="csharp" source="./snippets/xaml-loading-and-dependency-properties/csharp/MainWindow.xaml.cs" id="DependencyPropertyWithWrapper":::
 :::code language="vb" source="./snippets/xaml-loading-and-dependency-properties/vb/MainWindow.xaml.vb" id="DependencyPropertyWithWrapper":::
@@ -48,9 +48,9 @@ The following example shows a recommended dependency property definition with pr
 ## See also
 
 - [Dependency properties overview](dependency-properties-overview.md)
-- [XAML in WPF](/dotnet/desktop/wpf/advanced/xaml-in-wpf?view=netframeworkdesktop-4.8&preserve-view=true)
+- [XAML in WPF](../xaml/index.md)
 - [Custom dependency properties](custom-dependency-properties.md)
 - [Dependency property metadata](dependency-property-metadata.md)
 - [Collection-type dependency properties](collection-type-dependency-properties.md)
 - [Dependency property security](dependency-property-security.md)
-- [Safe constructor patterns for DependencyObjects](/dotnet/desktop/wpf/advanced/safe-constructor-patterns-for-dependencyobjects?view=netframeworkdesktop-4.8&preserve-view=true)
+- [Safe constructor patterns for DependencyObjects](safe-constructor-patterns-for-dependencyobjects.md)
