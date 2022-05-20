@@ -25,8 +25,8 @@ In a Windows application, the easiest way to navigate through records in a data 
     > [!NOTE]
     > Setting the <xref:System.Windows.Forms.BindingSource.Position%2A> property to a value beyond the first or last record does not result in an error, as the .NET Framework will not allow you to set the position to a value outside the bounds of the list. If it is important in your application to know whether you have gone past the first or last record, include logic to test whether you will exceed the data element count.
 
-     [!code-csharp[System.Windows.Forms.NavigatingData#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.NavigatingData/CS/Form1.cs#4)]
-     [!code-vb[System.Windows.Forms.NavigatingData#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.NavigatingData/VB/Form1.vb#4)]
+     :::code language="csharp" source="snippets/work-with-data-grid/csharp/form1.cs" id="increment_position_on_next_button_click":::
+     :::code language="vb" source="snippets/work-with-data-grid/vb/form1.vb" id="increment_position_on_next_button_click":::
 
 ## To check whether you've passed the end or beginning
 
@@ -37,15 +37,15 @@ In a Windows application, the easiest way to navigate through records in a data 
     > [!NOTE]
     > Be aware that, should you change the list you are navigating in code, you should re-enable the **Next** button, so that users may browse the entire length of the new list. Additionally, be aware that the above <xref:System.Windows.Forms.BindingSource.PositionChanged> event for the specific <xref:System.Windows.Forms.BindingSource> you are working with needs to be associated with its event-handling method. The following is an example of a method for handling the <xref:System.Windows.Forms.BindingSource.PositionChanged> event:
 
-     [!code-csharp[System.Windows.Forms.NavigatingData#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.NavigatingData/CS/Form1.cs#3)]
-     [!code-vb[System.Windows.Forms.NavigatingData#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.NavigatingData/VB/Form1.vb#3)]
+     :::code language="csharp" source="snippets/work-with-data-grid/csharp/form1.cs" id="check_for_last_element":::
+     :::code language="vb" source="snippets/work-with-data-grid/vb/form1.vb" id="check_for_last_element":::
 
 ## To find an item and set it as the current item
 
 01. Find the record you wish to set as the current item. Use the <xref:System.Windows.Forms.BindingSource.Find%2A> method of the <xref:System.Windows.Forms.BindingSource>, if your data source implements <xref:System.ComponentModel.IBindingList>. Some examples of data sources that implement `IBindingList` are <xref:System.ComponentModel.BindingList%601> and <xref:System.Data.DataView>.
 
-     [!code-csharp[System.Windows.Forms.NavigatingData#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.NavigatingData/CS/Form1.cs#2)]
-     [!code-vb[System.Windows.Forms.NavigatingData#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.NavigatingData/VB/Form1.vb#2)]
+     :::code language="csharp" source="snippets/work-with-data-grid/csharp/form1.cs" id="find_the_record":::
+     :::code language="vb" source="snippets/work-with-data-grid/vb/form1.vb" id="find_the_record":::
 
 ## How to Ensure the Selected Row in a Child Table Remains at the Correct Position
 
