@@ -93,7 +93,7 @@ namespace Navigate_data
             relatedCM.PositionChanged
                 += new EventHandler(relatedCM_PositionChanged);
 
-            // Set cacheing to true in case current changed event
+            // Set caching to true in case current changed event
             // occurred on set up.
             cacheChildPosition = true;
         }

@@ -20,7 +20,6 @@ Class Form1
         Me.nextButton = New Button()
         Me.findButton = New Button()
         Me.customersBindingSource = New BindingSource()
-
         Me.customersDataGridView.Location = New Point(23, 62)
         Me.customersDataGridView.Size = New Size(240, 150)
         Me.nextButton.Location = New Point(23, 22)
@@ -35,18 +34,16 @@ Class Form1
         Me.Controls.Add(Me.customersDataGridView)
     End Sub
 
-
-
-    '<snippet2>
+    '<find_the_record>
     Sub findButton_Click(ByVal sender As Object, ByVal e As EventArgs) _
         Handles findButton.Click
         Dim foundIndex As Integer = customersBindingSource.Find("CustomerID",
             "ANTON")
         customersBindingSource.Position = foundIndex
     End Sub
-    '</snippet2>
+    '</find_the_record>
 
-    '<snippet3>
+    '<check_for_last_element>
     Sub customersBindingSource_PositionChanged(ByVal sender As Object,
         ByVal e As EventArgs)
 
@@ -57,14 +54,14 @@ Class Form1
             nextButton.Enabled = True
         End If
     End Sub
-    '</snippet3>
+    '</check_for_last_element>
 
-    '<snippet4>
+    '<increment_position_on_next_button_click>
     Private Sub nextButton_Click(ByVal sender As Object,
         ByVal e As System.EventArgs) Handles nextButton.Click
         Me.customersBindingSource.MoveNext()
     End Sub
-    '</snippet4>
+    '</increment_position_on_next_button_click>
 
     '<snippet5>
     Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs) _
