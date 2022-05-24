@@ -108,7 +108,7 @@ The Windows Forms Designer provides settings for enabling localization in a sate
 
 ## Assigning Resource Identifiers
 
-You can map your localizable content to resource assemblies by using resource identifiers. The MsBuild.exe application automatically assigns resource identifiers when you specify the `updateuid` option.
+You can map your localizable content to resource assemblies by using resource identifiers. The MSBuild.exe application automatically assigns resource identifiers when you specify the `updateuid` option.
 
 ### To assign resource identifiers
 
