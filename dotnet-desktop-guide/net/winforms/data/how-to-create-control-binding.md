@@ -1,5 +1,6 @@
 ---
 title: "How to create a simple bound control on a Windows Form .NET"
+description: "Learn about how to create a simple bound control on a Windows Form .NET"
 ms.date: "05/24/2022"
 helpviewer_keywords:
   - "data binding [Windows Forms], simple data binding"
