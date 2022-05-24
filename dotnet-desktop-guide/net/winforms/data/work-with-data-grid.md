@@ -23,7 +23,7 @@ In a Windows application, the easiest way to navigate through records in a data 
 01. Set the <xref:System.Windows.Forms.BindingSource.Position%2A> property of the `BindingSource` for your bound data to the record position to go to. The following example illustrates using the <xref:System.Windows.Forms.BindingSource.MoveNext%2A> method of the `BindingSource` to increment the `Position` property when the `nextButton` is clicked. The `BindingSource` is associated with the `Customers` table of a dataset `Northwind`.
 
     > [!NOTE]
-    > Setting the <xref:System.Windows.Forms.BindingSource.Position%2A> property to a value beyond the first or last record does not result in an error, as the .NET will not allow you to set the position to a value outside the bounds of the list. If it is important in your application to know whether you have gone past the first or last record, include logic to test whether you will exceed the data element count.
+    > Setting the <xref:System.Windows.Forms.BindingSource.Position%2A> property to a value beyond the first or last record does not result in an error, as the .NET will not allow you to set the position to a value outside the bounds of the list. If it's important in your application to know whether you have gone past the first or last record, include logic to test whether you will exceed the data element count.
 
      :::code language="csharp" source="snippets/work-with-data-grid/csharp/form1.cs" id="increment_position_on_next_button_click":::
      :::code language="vb" source="snippets/work-with-data-grid/vb/form1.vb" id="increment_position_on_next_button_click":::
@@ -35,7 +35,7 @@ In a Windows application, the easiest way to navigate through records in a data 
      The following example illustrates how you can test whether you've reached the last data element. In the example, if you are at the last element, the **Next** button on the form is disabled.
 
     > [!NOTE]
-    > Be aware that, should you change the list you are navigating in code, you should re-enable the **Next** button, so that users may browse the entire length of the new list. Additionally, be aware that the above <xref:System.Windows.Forms.BindingSource.PositionChanged> event for the specific <xref:System.Windows.Forms.BindingSource> you are working with needs to be associated with its event-handling method. The following is an example of a method for handling the <xref:System.Windows.Forms.BindingSource.PositionChanged> event:
+    > Be aware that, should you change the list you are navigating in code, you should re-enable the **Next** button, so that users might browse the entire length of the new list. Additionally, be aware that the above <xref:System.Windows.Forms.BindingSource.PositionChanged> event for the specific <xref:System.Windows.Forms.BindingSource> you are working with needs to be associated with its event-handling method. The following is an example of a method for handling the <xref:System.Windows.Forms.BindingSource.PositionChanged> event:
 
      :::code language="csharp" source="snippets/work-with-data-grid/csharp/form1.cs" id="check_for_last_element":::
      :::code language="vb" source="snippets/work-with-data-grid/vb/form1.vb" id="check_for_last_element":::
@@ -49,9 +49,9 @@ In a Windows application, the easiest way to navigate through records in a data 
 
 ## How to ensure the selected row in a child table remains at the correct position
 
-When you work with data binding in Windows Forms, you'll display data in what is called a parent/child or master/details view. It's a data-binding scenario where data from the same source is displayed in two controls. Changing the selection in one control causes the data displayed in the second control to change. For example, the first control might contain a list of customers and the second a list of orders related to the selected customer in the first control.
+When you work with data binding in Windows Forms, you'll display data in a parent/child or master/details view. It's a data-binding scenario where data from the same source is displayed in two controls. Changing the selection in one control causes the data displayed in the second control to change. For example, the first control might contain a list of customers and the second a list of orders related to the selected customer in the first control.
 
-When you display data in a parent/child view, you might have to take extra steps to make sure that the currently selected row in the child table isn't reset to the first row of the table. In order to do this, you'll have to cache the child table position and reset it after the parent table changes. Typically the child reset occurs the first time a field in a row of the parent table changes.
+When you display data in a parent/child view, you might have to take extra steps to ensure that the currently selected row in the child table isn't reset to the first row of the table. In order to do this, you'll have to cache the child table position and reset it after the parent table changes. Typically the child reset occurs the first time a field in a row of the parent table changes.
 
 ### To cache the current child position
 
@@ -85,7 +85,7 @@ To test the code example, perform the following steps:
 
 01. Run the example.
 
-01. Make sure the **Cache and reset position** check box is selected.
+01. Ensure the **Cache and reset position** check box is selected.
 
 01. Select the **Clear parent field** button to cause a change in a field of the parent table. Notice that the selected row in the child table doesn't change.
 
