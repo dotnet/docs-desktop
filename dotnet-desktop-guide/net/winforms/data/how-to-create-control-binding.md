@@ -1,7 +1,7 @@
 ---
 title: "How to create a simple bound control on a Windows Form .NET"
-description: "Learn about how to create a simple bound control on a Windows Form .NET"
-ms.date: "05/24/2022"
+description: "Learn about how to create a simple bound control on a Windows Form .NET."
+ms.date: "05/25/2022"
 helpviewer_keywords:
   - "data binding [Windows Forms], simple data binding"
   - "Windows Forms controls, data binding"
@@ -20,9 +20,9 @@ With *simple binding*, you can display a single data element, such as a column v
 
 01. Expand the **(DataBindings)** property.
 
-     The properties most often bound are displayed underneath the **(DataBindings)** property. For example, in most controls, the **Text** property is most frequently bound.
+     The properties that bound are displayed underneath the **(DataBindings)** property. For example, in most controls, the **Text** property is frequently bound.
 
-01. If the property you want to bind isn't one of the commonly bound properties, select the **Ellipsis** button (:::image type="content" source="./media/how-to-create-control-binding/visual-studio-ellipsis-button.png" alt-text="The Ellipsis button in the Properties window of Visual Studio.":::) in the **(Advanced)** box to display the **Formatting and Advanced Binding** dialog box with a complete list of properties for that control.
+01. If the property you want to bind isn't one of the commonly bound properties, select the **Ellipsis** button (:::image type="content" source="./media/how-to-create-control-binding/visual-studio-ellipsis-button.png" alt-text="The Ellipsis button in the Properties window of Visual Studio.":::) in the **(Advanced)** box to display the **Formatting and Advanced Binding** dialog with a complete list of properties for that control.
 
 01. Select the property you want to bind and select the drop-down arrow under **Binding**.
 
@@ -32,16 +32,16 @@ With *simple binding*, you can display a single data element, such as a column v
 
 01. Select the name of an element to bind to.
 
-01. If you're working in the **Formatting and Advanced Binding** dialog box, select **OK** to return to the **Properties** window.
+01. If you're working in the **Formatting and Advanced Binding** dialog, select **OK** to return to the **Properties** window.
 
 01. If you want to bind more properties of the control, repeat steps 3 through 7.
 
     > [!NOTE]
-    > Because simple-bound controls show only a single data element, it is very typical to include navigation logic in a Windows Form with simple-bound controls.
+    > As simple-bound controls show only a single data element, it's very typical to include navigation logic in a Windows Form with simple-bound controls.
 
 ## How to Create a Bound Control and Format the Displayed Data
 
-With Windows Forms data binding, you can format the data displayed in a data-bound control by using the **Formatting and Advanced Binding** dialog box.
+With Windows Forms data binding, you can format the data displayed in a data-bound control by using the **Formatting and Advanced Binding** dialog.
 
 ### To bind a control and format the displayed data
 
@@ -49,7 +49,7 @@ With Windows Forms data binding, you can format the data displayed in a data-bou
 
 01. In Visual Studio, select the control on the form, and then open the **Properties** window.
 
-01. Expand the **(DataBindings)** property, and then in the **(Advanced)** box, select the ellipsis button (:::image type="content" source="./media/how-to-create-control-binding/visual-studio-ellipsis-button.png" alt-text="The Ellipsis button in the Properties window of Visual Studio.":::) to display the **Formatting and Advanced Binding** dialog box, which has a complete list of properties for that control.
+01. Expand the **(DataBindings)** property, and then in the **(Advanced)** box, select the ellipsis button (:::image type="content" source="./media/how-to-create-control-binding/visual-studio-ellipsis-button.png" alt-text="The Ellipsis button in the Properties window of Visual Studio.":::) to display the **Formatting and Advanced Binding** dialog, which has a complete list of properties for that control.
 
 01. Select the property you want to bind, and then select the **Binding** arrow.
 
@@ -63,7 +63,7 @@ With Windows Forms data binding, you can format the data displayed in a data-bou
 
 01. In the **Format type** box, select the format you want to apply to the data displayed in the control.
 
-     In every case, you can specify the value displayed in the control if the data source contains <xref:System.DBNull>. Otherwise, the options vary slightly, depending on the format type you choose. The following table shows the format types and options.
+     In every case, you can specify the value displayed in the control if the data source contains <xref:System.DBNull>. Otherwise, the options vary slightly, depending on the format type you select. The following table shows the format types and options.
 
     |Format type|Formatting option|
     |-----------------|-----------------------|
@@ -74,7 +74,7 @@ With Windows Forms data binding, you can format the data displayed in a data-bou
     |Scientific|Specify number of decimal places by using **Decimal places** up-down control.|
     |Custom|Specify a custom format string using.<br /><br /> For more information, see [Formatting Types](/dotnet/standard/base-types/formatting-types). **Note:**  Custom format strings aren't guaranteed to successfully round trip between the data source and bound control. Instead handle the <xref:System.Windows.Forms.Binding.Parse> or <xref:System.Windows.Forms.Binding.Format> event for the binding and apply custom formatting in the event-handling code.|
 
-01. Select **OK** to close the **Formatting and Advanced Binding** dialog box and return to the Properties window.
+01. Select **OK** to close the **Formatting and Advanced Binding** dialog and return to the Properties window.
 
 ## See also
 
