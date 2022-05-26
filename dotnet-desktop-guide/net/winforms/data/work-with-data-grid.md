@@ -20,7 +20,7 @@ In a Windows application, the easiest way to navigate through records in a data 
 
 ## To increment the position in a data source
 
-01. Set the <xref:System.Windows.Forms.BindingSource.Position%2A> property of the `BindingSource` for your bound data to the record position to go to. The following example illustrates using the <xref:System.Windows.Forms.BindingSource.MoveNext%2A> method of the `BindingSource` to increment the `Position` property when the `nextButton` is clicked. The `BindingSource` is associated with the `Customers` table of a dataset `Northwind`.
+01. Set the <xref:System.Windows.Forms.BindingSource.Position%2A> property of the <xref:System.Windows.Forms.BindingSource> for your bound data to the record position to go to. The following example illustrates using the <xref:System.Windows.Forms.BindingSource.MoveNext%2A> method of the `BindingSource` to increment the `Position` property when the `nextButton` is clicked. The `BindingSource` is associated with the `Customers` table of a dataset `Northwind`.
 
     > [!NOTE]
     > Setting the <xref:System.Windows.Forms.BindingSource.Position%2A> property to a value beyond the first or last record does not result in an error, as the .NET won't let you to set the position to a value outside the bounds of the list. If it's important in your application to know whether you have gone past the first or last record, include logic to test whether you will exceed the data element count.
