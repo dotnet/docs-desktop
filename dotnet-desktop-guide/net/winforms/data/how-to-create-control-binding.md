@@ -39,7 +39,7 @@ With *simple binding*, you can display a single data element, such as a column v
     > [!NOTE]
     > As simple-bound controls show only a single data element, it's very typical to include navigation logic in a Windows Form with simple-bound controls.
 
-## How to Create a Bound Control and Format the Displayed Data
+## How to create a bound control and format the displayed data
 
 With Windows Forms data binding, you can format the data displayed in a data-bound control by using the **Formatting and Advanced Binding** dialog.
 
@@ -74,7 +74,7 @@ With Windows Forms data binding, you can format the data displayed in a data-bou
     |Scientific|Specify number of decimal places by using **Decimal places** up-down control.|
     |Custom|Specify a custom format string using.<br /><br /> For more information, see [Formatting Types](/dotnet/standard/base-types/formatting-types). **Note:**  Custom format strings aren't guaranteed to successfully round trip between the data source and bound control. Instead handle the <xref:System.Windows.Forms.Binding.Parse> or <xref:System.Windows.Forms.Binding.Format> event for the binding and apply custom formatting in the event-handling code.|
 
-01. Select **OK** to close the **Formatting and Advanced Binding** dialog and return to the Properties window.
+01. Select **OK** to close the **Formatting and Advanced Binding** dialog and return to the **Properties** window.
 
 ## See also
 
