@@ -12,7 +12,7 @@ ms.custom: devdivchpfy22
 
 With *simple binding*, you can display a single data element, such as a column value from a dataset table, in a control. You can simple-bind any property of a control to a data value.
 
-## To simple bind a control
+## How to simple bind a control
 
 01. Connect to a data source. For more information, see [Connecting to a Data Source](/dotnet/framework/data/adonet/connecting-to-a-data-source).
 
@@ -42,8 +42,6 @@ With *simple binding*, you can display a single data element, such as a column v
 ## How to create a bound control and format the displayed data
 
 With Windows Forms data binding, you can format the data displayed in a data-bound control by using the **Formatting and Advanced Binding** dialog.
-
-### To bind a control and format the displayed data
 
 01. Connect to a data source. For more information, see [Connecting to a Data Source](/dotnet/framework/data/adonet/connecting-to-a-data-source).
 
