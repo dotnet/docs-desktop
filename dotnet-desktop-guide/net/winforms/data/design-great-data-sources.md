@@ -25,9 +25,9 @@ In the former case, you can use a <xref:System.Windows.Forms.BindingSource> to b
 
 The following code example demonstrates how to apply the *PropertyName*Changed pattern to a custom control. Apply the pattern when you implement custom controls that are used with the Windows Forms data binding engine.
 
-:::code language="csharp" source="snippets/multiple-controls-bound-to-data-source-synchronized/csharp/form2.cs" id="apply_propertyNameChanged_pattern":::
+:::code language="csharp" source="snippets/design-great-data-sources/csharp/form2.cs" id="apply_propertyNameChanged_pattern":::
 
-:::code language="vb" source="snippets/multiple-controls-bound-to-data-source-synchronized/vb/form2.vb" id="apply_propertyNameChanged_pattern":::
+:::code language="vb" source="snippets/design-great-data-sources/vb/form2.vb" id="apply_propertyNameChanged_pattern":::
 
 ## Change notification in Windows Forms data binding
 
@@ -57,9 +57,9 @@ Finally, from the control side you must expose a *PropertyName*Changed event for
 
 The following code example demonstrates how to implement the <xref:System.ComponentModel.INotifyPropertyChanged> interface. Implement the interface on business objects that are used in Windows Forms data binding. When implemented, the interface  communicates to a bound control the property changes on a business object.
 
-:::code language="csharp" source="snippets/multiple-controls-bound-to-data-source-synchronized/csharp/form3.cs" id="implement_INotifyPropertyChanged_interface":::
+:::code language="csharp" source="snippets/design-great-data-sources/csharp/form3.cs" id="implement_INotifyPropertyChanged_interface":::
 
-:::code language="vb" source="snippets/multiple-controls-bound-to-data-source-synchronized/vb/form3.vb" id="implement_INotifyPropertyChanged_interface":::
+:::code language="vb" source="snippets/design-great-data-sources/vb/form3.vb" id="implement_INotifyPropertyChanged_interface":::
 
 ## See also
 
