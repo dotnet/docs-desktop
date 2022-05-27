@@ -21,16 +21,6 @@ During implementation of data binding in Windows Forms, multiple controls are bo
 
 In the former case, you can use a <xref:System.Windows.Forms.BindingSource> to bind the data source to the controls. In the latter case, you use a `BindingSource` and handle the <xref:System.Windows.Forms.BindingSource.BindingComplete> event and call <xref:System.Windows.Forms.BindingManagerBase.EndCurrentEdit%2A> on the associated <xref:System.Windows.Forms.BindingManagerBase>.
 
-## Example to bind controls using BindingSource
-
-The following code example demonstrates how to bind three controls—two text-box controls and a <xref:System.Windows.Forms.DataGridView> control—to the same column in a <xref:System.Data.DataSet> using a <xref:System.Windows.Forms.BindingSource> component. The example demonstrates how to handle the <xref:System.Windows.Forms.BindingSource.BindingComplete> event. It ensures that when the text value of one text box is changed, the other text box and the `DataGridView` control are updated with the correct value.
-
-The example uses a <xref:System.Windows.Forms.BindingSource> to bind the data source and the controls. Alternatively, you can bind the controls directly to the data source and retrieve the <xref:System.Windows.Forms.BindingManagerBase> for the binding from the form's <xref:System.Windows.Forms.Control.BindingContext%2A> and then handle the <xref:System.Windows.Forms.BindingManagerBase.BindingComplete> event for the `BindingManagerBase`. For more information on bind the data source and the controls, see the help page about the `BindingComplete` event of `BindingManagerBase`.
-
-:::code language="csharp" source="snippets/multiple-controls-bound-to-data-source-synchronized/csharp/form1.cs" id="bind_controls_using_BindingSource":::
-
-:::code language="vb" source="snippets/multiple-controls-bound-to-data-source-synchronized/vb/form1.vb" id="bind_controls_using_BindingSource":::
-
 ## Apply the PropertyNameChanged pattern
 
 The following code example demonstrates how to apply the *PropertyName*Changed pattern to a custom control. Apply the pattern when you implement custom controls that are used with the Windows Forms data binding engine.
