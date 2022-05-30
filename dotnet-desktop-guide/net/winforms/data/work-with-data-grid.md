@@ -25,8 +25,8 @@ Set the <xref:System.Windows.Forms.BindingSource.Position%2A> property of the <x
 :::code language="csharp" source="snippets/work-with-data-grid/csharp/form1.cs" id="increment_position_on_next_button_click":::
 :::code language="vb" source="snippets/work-with-data-grid/vb/form1.vb" id="increment_position_on_next_button_click":::
 
-> [!NOTE]
-> Setting the <xref:System.Windows.Forms.BindingSource.Position%2A> property to a value beyond the first or last record does not result in an error, as the .NET won't set the position to a value outside the bounds of the list. If it's important to know whether you have gone past the first or last record, include logic to test whether you'll exceed the data element count.
+    > [!NOTE]
+    > Setting the <xref:System.Windows.Forms.BindingSource.Position%2A> property to a value beyond the first or last record does not result in an error, as the .NET won't set the position to a value outside the bounds of the list. If it's important to know whether you have gone past the first or last record, include logic to test whether you'll exceed the data element count.
 
 ## To check whether you've exceeded the first or last record
 
@@ -37,8 +37,8 @@ The following example illustrates how you can test whether you've reached the la
 :::code language="csharp" source="snippets/work-with-data-grid/csharp/form1.cs" id="check_for_last_element":::
 :::code language="vb" source="snippets/work-with-data-grid/vb/form1.vb" id="check_for_last_element":::
 
-> [!NOTE]
-> Be aware that, if you change the list you are navigating in code, you should re-enable the **Next** button so that users might browse the entire length of the new list. Additionally, be aware that the above <xref:System.Windows.Forms.BindingSource.PositionChanged> event for the specific <xref:System.Windows.Forms.BindingSource> you are working with needs to be associated with its event-handling method.
+    > [!NOTE]
+    > Be aware that, if you change the list you are navigating in code, you should re-enable the **Next** button so that users might browse the entire length of the new list. Additionally, be aware that the above <xref:System.Windows.Forms.BindingSource.PositionChanged> event for the specific <xref:System.Windows.Forms.BindingSource> you are working with needs to be associated with its event-handling method.
 
 ## To find a record and set it as the current item
 
