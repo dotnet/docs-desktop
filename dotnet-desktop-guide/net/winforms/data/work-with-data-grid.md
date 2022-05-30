@@ -22,30 +22,30 @@ In a Windows application, the easiest way to navigate through records in a data 
 
 Set the <xref:System.Windows.Forms.BindingSource.Position%2A> property of the <xref:System.Windows.Forms.BindingSource> for your bound data to the record position to go to the required record position. The following example illustrates using the <xref:System.Windows.Forms.BindingSource.MoveNext%2A> method of the `BindingSource` to increment the `Position` property when you select the `nextButton`. The `BindingSource` is associated with the `Customers` table of a dataset `Northwind`.
 
-    :::code language="csharp" source="snippets/work-with-data-grid/csharp/form1.cs" id="increment_position_on_next_button_click":::
-    :::code language="vb" source="snippets/work-with-data-grid/vb/form1.vb" id="increment_position_on_next_button_click":::
+:::code language="csharp" source="snippets/work-with-data-grid/csharp/form1.cs" id="increment_position_on_next_button_click":::
+:::code language="vb" source="snippets/work-with-data-grid/vb/form1.vb" id="increment_position_on_next_button_click":::
 
-    > [!NOTE]
-    > Setting the <xref:System.Windows.Forms.BindingSource.Position%2A> property to a value beyond the first or last record does not result in an error, as the .NET won't set the position to a value outside the bounds of the list. If it's important to know whether you have gone past the first or last record, include logic to test whether you'll exceed the data element count.
+> [!NOTE]
+> Setting the <xref:System.Windows.Forms.BindingSource.Position%2A> property to a value beyond the first or last record does not result in an error, as the .NET won't set the position to a value outside the bounds of the list. If it's important to know whether you have gone past the first or last record, include logic to test whether you'll exceed the data element count.
 
 ## To check whether you've exceeded the first or last record
 
 Create an event handler for the <xref:System.Windows.Forms.BindingSource.PositionChanged> event. In the handler, you can test whether the proposed position value has exceeded the actual data element count.
 
-     The following example illustrates how you can test whether you've reached the last data element. In the example, if you are at the last element, the **Next** button on the form is disabled.
+The following example illustrates how you can test whether you've reached the last data element. In the example, if you are at the last element, the **Next** button on the form is disabled.
 
-    :::code language="csharp" source="snippets/work-with-data-grid/csharp/form1.cs" id="check_for_last_element":::
-    :::code language="vb" source="snippets/work-with-data-grid/vb/form1.vb" id="check_for_last_element":::
+:::code language="csharp" source="snippets/work-with-data-grid/csharp/form1.cs" id="check_for_last_element":::
+:::code language="vb" source="snippets/work-with-data-grid/vb/form1.vb" id="check_for_last_element":::
 
-    > [!NOTE]
-    > Be aware that, if you change the list you are navigating in code, you should re-enable the **Next** button so that users might browse the entire length of the new list. Additionally, be aware that the above <xref:System.Windows.Forms.BindingSource.PositionChanged> event for the specific <xref:System.Windows.Forms.BindingSource> you are working with needs to be associated with its event-handling method.
+> [!NOTE]
+> Be aware that, if you change the list you are navigating in code, you should re-enable the **Next** button so that users might browse the entire length of the new list. Additionally, be aware that the above <xref:System.Windows.Forms.BindingSource.PositionChanged> event for the specific <xref:System.Windows.Forms.BindingSource> you are working with needs to be associated with its event-handling method.
 
 ## To find a record and set it as the current item
 
 Find the record you wish to set as the current item. Use the <xref:System.Windows.Forms.BindingSource.Find%2A> method of the <xref:System.Windows.Forms.BindingSource>as shown in the example, if your data source implements <xref:System.ComponentModel.IBindingList>. Some examples of data sources that implement `IBindingList` are <xref:System.ComponentModel.BindingList%601> and <xref:System.Data.DataView>.
 
-     :::code language="csharp" source="snippets/work-with-data-grid/csharp/form1.cs" id="find_the_record":::
-     :::code language="vb" source="snippets/work-with-data-grid/vb/form1.vb" id="find_the_record":::
+:::code language="csharp" source="snippets/work-with-data-grid/csharp/form1.cs" id="find_the_record":::
+:::code language="vb" source="snippets/work-with-data-grid/vb/form1.vb" id="find_the_record":::
 
 ## To ensure the selected row in a child table remains at the correct position
 
