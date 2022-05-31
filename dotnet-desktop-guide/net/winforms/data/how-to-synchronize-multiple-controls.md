@@ -1,0 +1,39 @@
+---
+title: "How to ensure multiple controls bound to the same data source remain synchronized"
+description: Learn how to ensure multiple controls bound to the same data source remain synchronized.
+ms.date: "05/31/2022"
+dev_langs: 
+  - "csharp"
+  - "vb"
+helpviewer_keywords: 
+  - "controls [Windows Forms], binding multiple"
+  - "controls [Windows Forms], synchronizing with data source"
+ms.custom: devdivchpfy22
+---
+
+# How to ensure multiple controls bound to the same data source remain synchronized
+
+During implementation of data binding in Windows Forms, multiple controls are bound to the same data source. In following situations, it's necessary to make sure the bound properties of the control remain synchronized with each other and the data source:
+
+- If the data source doesn't implement <xref:System.ComponentModel.IBindingList>, and therefore generate <xref:System.ComponentModel.IBindingList.ListChanged> events of type <xref:System.ComponentModel.ListChangedType.ItemChanged>.
+
+- If the data source implements <xref:System.ComponentModel.IEditableObject>.
+
+In the former case, you can use a <xref:System.Windows.Forms.BindingSource> to bind the data source to the controls. In the latter case, you use a `BindingSource` and handle the <xref:System.Windows.Forms.BindingSource.BindingComplete> event and call <xref:System.Windows.Forms.BindingManagerBase.EndCurrentEdit%2A> on the associated <xref:System.Windows.Forms.BindingManagerBase>.
+
+## Example to bind controls using BindingSource
+
+The following code example demonstrates how to bind three controls—two text-box controls and a <xref:System.Windows.Forms.DataGridView> control—to the same column in a <xref:System.Data.DataSet> using a <xref:System.Windows.Forms.BindingSource> component. The example demonstrates how to handle the <xref:System.Windows.Forms.BindingSource.BindingComplete> event. It ensures that when the text value of one text box is changed, the other text box and the `DataGridView` control are updated with the correct value.
+
+The example uses a <xref:System.Windows.Forms.BindingSource> to bind the data source and the controls. Alternatively, you can bind the controls directly to the data source and retrieve the <xref:System.Windows.Forms.BindingManagerBase> for the binding from the form's <xref:System.Windows.Forms.Control.BindingContext%2A> and then handle the <xref:System.Windows.Forms.BindingManagerBase.BindingComplete> event for the `BindingManagerBase`. For more information on bind the data source and the controls, see the help page about the `BindingComplete` event of `BindingManagerBase`.
+
+:::code language="csharp" source="snippets/how-to-synchronize-multiple-controls/csharp/form1.cs" id="bind_controls_using_BindingSource":::
+
+:::code language="vb" source="snippets/how-to-synchronize-multiple-controls/vb/form1.vb" id="bind_controls_using_BindingSource":::
+
+## See also
+
+- [How to: Share Bound Data Across Forms Using the BindingSource Component](/dotnet/desktop/winforms/controls/how-to-share-bound-data-across-forms-using-the-bindingsource-component?view=netframeworkdesktop-4.8&preserve-view=true)
+- [Change Notification in Windows Forms Data Binding](/dotnet/desktop/winforms/change-notification-in-windows-forms-data-binding?view=netframeworkdesktop-4.8&preserve-view=true)
+- [Interfaces Related to Data Binding](/dotnet/desktop/winforms/interfaces-related-to-data-binding?view=netframeworkdesktop-4.8&preserve-view=true)
+- [Windows Forms Data Binding](/dotnet/desktop/winforms/windows-forms-data-binding?view=netframeworkdesktop-4.8&preserve-view=true)
