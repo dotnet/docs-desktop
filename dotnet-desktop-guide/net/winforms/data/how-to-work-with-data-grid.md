@@ -42,7 +42,7 @@ The following example illustrates how you can test whether you've reached the la
 
 ## To find a record and set it as the current item
 
-Find the record you wish to set as the current item. Use the <xref:System.Windows.Forms.BindingSource.Find%2A> method of the <xref:System.Windows.Forms.BindingSource>as shown in the example, if your data source implements <xref:System.ComponentModel.IBindingList>. Some examples of data sources that implement `IBindingList` are <xref:System.ComponentModel.BindingList%601> and <xref:System.Data.DataView>.
+Find the record you wish to set as the current item. Use the <xref:System.Windows.Forms.BindingSource.Find%2A> method of the <xref:System.Windows.Forms.BindingSource> as shown in the example, if your data source implements <xref:System.ComponentModel.IBindingList>. Some examples of data sources that implement `IBindingList` are <xref:System.ComponentModel.BindingList%601> and <xref:System.Data.DataView>.
 
 :::code language="csharp" source="snippets/work-with-data-grid/csharp/form1.cs" id="find_the_record":::
 :::code language="vb" source="snippets/work-with-data-grid/vb/form1.vb" id="find_the_record":::
