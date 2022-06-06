@@ -11,7 +11,6 @@ Imports System.Windows.Forms.Design
 ' <snippet430>
 Namespace MarqueeControlLibrary.Design
 
-    <System.Security.Permissions.PermissionSetAttribute(System.Security.Permissions.SecurityAction.Demand, Name:="FullTrust")> _
     Public Class MarqueeBorderDesigner
         Inherits ParentControlDesigner
         ' </snippet430>

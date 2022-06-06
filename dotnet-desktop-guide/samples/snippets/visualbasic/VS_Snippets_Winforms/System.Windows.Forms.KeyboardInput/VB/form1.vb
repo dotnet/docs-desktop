@@ -7,9 +7,7 @@ Imports System.Security
 Imports System.Security.Permissions
 Imports System.Windows.Forms
 
-
 Namespace KeyboardInput
-<System.Security.Permissions.PermissionSetAttribute(System.Security.Permissions.SecurityAction.Demand, Name:="FullTrust")> _ 
     Class Form1
         Inherits Form
 
@@ -63,7 +61,6 @@ Namespace KeyboardInput
         ' </Snippet5>
     End Class
 
-<System.Security.Permissions.PermissionSetAttribute(System.Security.Permissions.SecurityAction.Demand, Name:="FullTrust")> _ 
     Public Class CustomTextBox
         Inherits TextBox
 

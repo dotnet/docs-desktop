@@ -44,8 +44,6 @@ namespace KeyboardInputForm
         // <Snippet5>
         // Detect all numeric characters at the
         // application level and consume 0.
-        [SecurityPermission(SecurityAction::LinkDemand,
-            Flags=SecurityPermissionFlag::UnmanagedCode)]
         virtual bool PreFilterMessage(Message% m)
         {
             // Detect key down messages.

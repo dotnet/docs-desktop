@@ -33,7 +33,7 @@ Routed event handlers can be either instance handlers or class handlers. Instanc
 
 ## Prerequisites
 
-The article assumes a basic knowledge of routed events, and that you've read [Routed events overview](/dotnet/desktop/wpf/advanced/routed-events-overview?view=netframeworkdesktop-4.8&preserve-view=true). To follow the examples in this article, it helps if you're familiar with Extensible Application Markup Language (XAML) and know how to write Windows Presentation Foundation (WPF) applications.
+The article assumes a basic knowledge of routed events, and that you've read [Routed events overview](routed-events-overview.md). To follow the examples in this article, it helps if you're familiar with Extensible Application Markup Language (XAML) and know how to write Windows Presentation Foundation (WPF) applications.
 
 ## When to mark routed events as handled
 
@@ -134,4 +134,4 @@ For an example of how to work around input event suppression, see [Working aroun
 - <xref:System.Windows.EventManager>
 - [Preview events](preview-events.md)
 - [Create a custom routed event](how-to-create-a-custom-routed-event.md)
-- [Routed events overview](/dotnet/desktop/wpf/advanced/routed-events-overview?view=netframeworkdesktop-4.8&preserve-view=true)
+- [Routed events overview](routed-events-overview.md)

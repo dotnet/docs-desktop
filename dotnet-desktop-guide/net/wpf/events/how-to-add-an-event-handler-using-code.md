@@ -23,7 +23,7 @@ You can assign an event handler to an element in Windows Presentation Foundation
 
 ## Prerequisites
 
-The article assumes a basic knowledge of routed events, and that you've read [Routed events overview](/dotnet/desktop/wpf/advanced/routed-events-overview?view=netframeworkdesktop-4.8&preserve-view=true). To follow the examples in this article, it helps if you're familiar with Extensible Application Markup Language (XAML) and know how to write Windows Presentation Foundation (WPF) applications.
+The article assumes a basic knowledge of routed events, and that you've read [Routed events overview](routed-events-overview.md). To follow the examples in this article, it helps if you're familiar with Extensible Application Markup Language (XAML) and know how to write Windows Presentation Foundation (WPF) applications.
 
 ## Syntax for event handler assignment
 
@@ -76,5 +76,5 @@ For more information on how to create and handle routed events, see [How to crea
 
 ## See also
 
-- [Routed events overview](/dotnet/desktop/wpf/advanced/routed-events-overview?view=netframeworkdesktop-4.8&preserve-view=true)
-- [XAML in WPF](/dotnet/desktop/wpf/advanced/xaml-in-wpf?view=netframeworkdesktop-4.8&preserve-view=true)
+- [Routed events overview](routed-events-overview.md)
+- [XAML in WPF](../xaml/index.md)
