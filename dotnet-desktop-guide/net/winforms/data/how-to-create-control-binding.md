@@ -1,7 +1,7 @@
 ---
 title: "How to create a simple-bound control on a Windows Form .NET"
 description: "Learn about how to create a simple-bound control on a Windows Form .NET."
-ms.date: "05/25/2022"
+ms.date: "06/06/2022"
 helpviewer_keywords:
   - "data binding [Windows Forms], simple data binding"
   - "Windows Forms controls, data binding"
@@ -19,7 +19,8 @@ With simple data binding, you can display a single data element, such as a colum
 01. In Visual Studio, select the control on the form and display the **Properties** window.
 
 01. Expand the **DataBindings** property.
-     The properties that are bound are displayed under the **DataBindings** property. For example, in most controls, the **Text** property is frequently bound.
+
+    The properties that are bound are displayed under the **DataBindings** property. For example, in most controls, the **Text** property is frequently bound.
 
 01. If the property you want to bind isn't one of the commonly bound properties, select the **Ellipsis** button (:::image type="content" source="./media/how-to-create-control-binding/visual-studio-ellipsis-button.png" alt-text="Screenshot of the Ellipsis button in the Properties window of Visual Studio.":::) in the **Advanced** box to display the **Formatting and Advanced Binding** dialog with a complete list of properties for that control.
 
@@ -48,17 +49,17 @@ With Windows Forms data binding, you can format the data displayed in a data-bou
 
 01. Select the property you want to bind, and then select the **Binding** arrow.
 
-     A list of available data sources is displayed.
+    A list of available data sources is displayed.
 
 01. Expand the data source you want to bind the property to until you find the single data element you want.
 
-     For example, if you're binding to a column value in a dataset's table, expand the name of the dataset, and then expand the table name to display column names.
+    For example, if you're binding to a column value in a dataset's table, expand the name of the dataset, and then expand the table name to display column names.
 
 01. Select the name of an element to bind to.
 
 01. In the **Format type** box, select the format you want to apply to the data displayed in the control.
 
-     In every case, you can specify the value displayed in the control if the data source contains <xref:System.DBNull>. Otherwise, the options vary slightly, depending on the format type you select. The following table shows the format types and options.
+    In every case, you can specify the value displayed in the control if the data source contains <xref:System.DBNull>. Otherwise, the options vary slightly, depending on the format type you select. The following table shows the format types and options.
 
     |Format type|Formatting option|
     |-----------------|-----------------------|
