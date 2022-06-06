@@ -115,3 +115,5 @@ items:
   items:
   - name: Overview
     href: data/overview.md
+  - name: Design great data sources
+    href: data/design-great-data-sources.md
