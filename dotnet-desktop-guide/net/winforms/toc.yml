@@ -123,5 +123,4 @@ items:
     items:
     - name: Create a control binding
       href: data/how-to-create-control-binding.md
-    - name: Synchronize multiple controls
-      href: data/how-to-synchronize-multiple-controls.md
+    
