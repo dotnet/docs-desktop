@@ -166,7 +166,7 @@ namespace child_table_example
                 // situation.
                 cacheChildPosition = false;
             }
-            //<handle_parent_list>
+            //</handle_parent_list>
 
             //<reset_child_tab_pos>
             void relatedCM_PositionChanged(object sender, EventArgs e)
@@ -187,7 +187,7 @@ namespace child_table_example
                     }
                 }
             }
-            //<reset_child_tab_pos>
+            //</reset_child_tab_pos>
             
             int count = 0;
             private void button1_Click(object sender, EventArgs e)
