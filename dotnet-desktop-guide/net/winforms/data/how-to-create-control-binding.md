@@ -22,7 +22,7 @@ With simple data binding, you can display a single data element, such as a colum
 
     The properties that are bound are displayed under the **DataBindings** property. For example, in most controls, the **Text** property is frequently bound.
 
-01. If the property you want to bind isn't one of the commonly bound properties, select the **Ellipsis** button (:::image type="content" source="./media/how-to-create-control-binding/visual-studio-ellipsis-button.png" alt-text="Screenshot of the Ellipsis button in the Properties window of Visual Studio.":::) in the **Advanced** box to display the **Formatting and Advanced Binding** dialog with a complete list of properties for that control.
+01. If the property you want to bind isn't one of the commonly bound properties, select the **Ellipsis** button (:::image type="content" source="../media/shared/visual-studio-ellipsis-button.png" alt-text="Screenshot of the Ellipsis button in the Properties window of Visual Studio.":::) in the **Advanced** box to display the **Formatting and Advanced Binding** dialog with a complete list of properties for that control.
 
 01. Select the property you want to bind and select the drop-down arrow under **Binding**. A list of available data sources is displayed.
 
@@ -79,4 +79,3 @@ With Windows Forms data binding, you can format the data displayed in a data-bou
 - [Data Binding and Windows Forms](/dotnet/desktop/winforms/data-binding-and-windows-forms?view=netframeworkdesktop-4.8&preserve-view=true)
 - [How to: Create a Simple-Bound Control on a Windows Form](/dotnet/desktop/winforms/how-to-create-a-simple-bound-control-on-a-windows-form?view=netframeworkdesktop-4.8&preserve-view=true)
 - [User Input Validation in Windows Forms](/dotnet/desktop/winforms/user-input-validation-in-windows-forms?view=netframeworkdesktop-4.8&preserve-view=true)
-- [Windows Forms Data Binding](/dotnet/desktop/winforms/windows-forms-data-binding?view=netframeworkdesktop-4.8&preserve-view=true)
