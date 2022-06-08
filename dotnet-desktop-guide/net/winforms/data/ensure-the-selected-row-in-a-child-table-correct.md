@@ -1,6 +1,6 @@
 ---
 title: "How to ensure the selected row in a child table remains at the correct position"
-ms.date: "06/02/2022"
+ms.date: "06/08/2022"
 dev_langs:
   - "csharp"
   - "vb"
@@ -28,20 +28,20 @@ Often when you work with data binding in Windows Forms, you'll display data in w
 
 01. Declare an integer variable to store the child list position and a Boolean variable to store whether to cache the child position.
 
-     [!code-csharp[System.Windows.Forms.CurrencyManagerReset#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.CurrencyManagerReset/CS/Form1.cs#4)]
-     [!code-vb[System.Windows.Forms.CurrencyManagerReset#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.CurrencyManagerReset/VB/Form1.vb#4)]
+     :::code language="csharp" source="snippets/ensure-the-selected-row-in-a-child-table-correct/csharp/form1.cs" id="store_child_list_position":::
+     :::code language="vb" source="snippets/ensure-the-selected-row-in-a-child-table-correct/vb/form1.vb" id="store_child_list_position":::
 
 01. Handle the <xref:System.Windows.Forms.CurrencyManager.ListChanged> event for the binding's <xref:System.Windows.Forms.CurrencyManager> and check for a <xref:System.ComponentModel.ListChangedType> of <xref:System.ComponentModel.ListChangedType.Reset>.
 
 01. Check the current position of the <xref:System.Windows.Forms.CurrencyManager>. If it's greater than first entry in the list (typically 0), save it to a variable.
 
-     [!code-csharp[System.Windows.Forms.CurrencyManagerReset#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.CurrencyManagerReset/CS/Form1.cs#2)]
-     [!code-vb[System.Windows.Forms.CurrencyManagerReset#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.CurrencyManagerReset/VB/Form1.vb#2)]
+     :::code language="csharp" source="snippets/ensure-the-selected-row-in-a-child-table-correct/csharp/form1.cs" id="check_current_pos":::
+     :::code language="vb" source="snippets/ensure-the-selected-row-in-a-child-table-correct/vb/form1.vb" id="check_current_pos":::
 
 01. Handle the parent list's <xref:System.Windows.Forms.BindingManagerBase.CurrentChanged> event for the parent currency manager. In the handler, set the Boolean value to indicate it isn't a caching scenario. If the `CurrentChanged` occurs, the change to the parent is a list position change and not an item value change.
 
-     [!code-csharp[System.Windows.Forms.CurrencyManagerReset#5](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.CurrencyManagerReset/CS/Form1.cs#5)]
-     [!code-vb[System.Windows.Forms.CurrencyManagerReset#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.CurrencyManagerReset/VB/Form1.vb#5)]
+     :::code language="csharp" source="snippets/ensure-the-selected-row-in-a-child-table-correct/csharp/form1.cs" id="handle_parent_list":::
+     :::code language="vb" source="snippets/ensure-the-selected-row-in-a-child-table-correct/vb/form1.vb" id="handle_parent_list":::
 
 ## To reset the child position
 
@@ -49,8 +49,8 @@ Often when you work with data binding in Windows Forms, you'll display data in w
 
 01. Reset the child table position to the cached position saved in the previous procedure.
 
-     [!code-csharp[System.Windows.Forms.CurrencyManagerReset#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.CurrencyManagerReset/CS/Form1.cs#3)]
-     [!code-vb[System.Windows.Forms.CurrencyManagerReset#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.CurrencyManagerReset/VB/Form1.vb#3)]
+     :::code language="csharp" source="snippets/ensure-the-selected-row-in-a-child-table-correct/csharp/form1.cs" id="reset_child_tab_pos":::
+     :::code language="vb" source="snippets/ensure-the-selected-row-in-a-child-table-correct/vb/form1.vb" id="reset_child_tab_pos":::
 
 ## See also
 
