@@ -45,7 +45,7 @@ With Windows Forms data binding, you can format the data displayed in a data-bou
 
 01. In Visual Studio, select the control on the form and then open the **Properties** window.
 
-01. Expand the **DataBindings** property, and then in the **Advanced** box, select the ellipsis button (:::image type="content" source="./media/how-to-create-control-binding/visual-studio-ellipsis-button.png" alt-text="The Ellipsis button in the Properties window of Visual Studio.":::) to display the **Formatting and Advanced Binding** dialog, which has a complete list of properties for that control.
+01. Expand the **DataBindings** property, and then in the **Advanced** box, select the ellipsis button (:::image type="content" source="../media/shared/visual-studio-ellipsis-button.png" alt-text="The Ellipsis button in the Properties window of Visual Studio.":::) to display the **Formatting and Advanced Binding** dialog, which has a complete list of properties for that control.
 
 01. Select the property you want to bind, and then select the **Binding** arrow.
 
