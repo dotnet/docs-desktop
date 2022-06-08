@@ -1,5 +1,6 @@
 ---
 title: "How to ensure the selected row in a child table remains at the correct position"
+description: "Learn about how to ensure the selected row in a child table remains at the correct position"
 ms.date: "06/08/2022"
 dev_langs:
   - "csharp"
@@ -24,7 +25,7 @@ Often when you work with data binding in Windows Forms, you'll display data in w
 
  To display data in a parent/child view, you might have to take extra steps to ensure that the currently selected row in the child table isn't reset to the first row of the table. You'll have to cache the child table position and reset it after the parent table changes to view the currently selected row in the child table. Typically the child reset occurs the first time a field in a row of the parent table changes.
 
-## To cache the current child position
+## To cache the current child table position
 
 01. Declare an integer variable to store the child list position and a Boolean variable to store whether to cache the child position.
 
@@ -43,7 +44,7 @@ Often when you work with data binding in Windows Forms, you'll display data in w
      :::code language="csharp" source="snippets/ensure-the-selected-row-in-a-child-table-correct/csharp/form1.cs" id="handle_parent_list":::
      :::code language="vb" source="snippets/ensure-the-selected-row-in-a-child-table-correct/vb/form1.vb" id="handle_parent_list":::
 
-## To reset the child position
+## To reset the child table position
 
 01. Handle the <xref:System.Windows.Forms.BindingManagerBase.PositionChanged> event for the child binding's <xref:System.Windows.Forms.CurrencyManager>.
 
