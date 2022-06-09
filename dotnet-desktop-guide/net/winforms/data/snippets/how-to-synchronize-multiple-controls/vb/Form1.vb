@@ -1,7 +1,7 @@
-﻿'<bind_controls_using_BindingSource>
+﻿
+'<bind_controls_using_BindingSource>
 Public Class Form1
     Private Sub InitializeControlsAndDataSource()
-
         ' Add a table and column to DataSet.
         set1.Tables.Add("Menu")
         set1.Tables(0).Columns.Add("Beverages")
@@ -25,7 +25,6 @@ Public Class Form1
             True, DataSourceUpdateMode.OnPropertyChanged)
         TextBox2.DataBindings.Add("Text", BindingSource1, "Beverages",
             True, DataSourceUpdateMode.OnPropertyChanged)
-
     End Sub
 
     Private Sub BindingSource1_BindingComplete(ByVal sender As Object,
@@ -39,9 +38,9 @@ Public Class Form1
             e.Binding.BindingManagerBase.EndCurrentEdit()
         End If
     End Sub
-    '</bind_controls_using_BindingSource>
-    
+        
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         InitializeControlsAndDataSource()
     End Sub
 End Class
+'</bind_controls_using_BindingSource>

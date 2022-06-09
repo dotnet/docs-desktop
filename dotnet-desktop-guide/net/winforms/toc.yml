@@ -121,6 +121,8 @@ items:
     href: data/how-to-work-with-data-grid.md
   - name: Common tasks
     items:
+    - name: Create a control binding
+      href: data/how-to-create-control-binding.md
     - name: Synchronize multiple controls
       href: data/how-to-synchronize-multiple-controls.md
  

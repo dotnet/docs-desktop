@@ -1,5 +1,5 @@
 ---
-title: "How to ensure multiple controls bound to the same data source remain synchronized"
+title: "How to synchronize multiple controls bound to the same data source"
 description: Learn how to ensure multiple controls bound to the same data source remain synchronized.
 ms.date: "06/06/2022"
 dev_langs: 
@@ -11,7 +11,7 @@ helpviewer_keywords:
 ms.custom: devdivchpfy22
 ---
 
-# How to ensure multiple controls bound to the same data source remain synchronized
+# How to synchronize multiple controls bound to the same data source in Windows Forms .NET
 
 During the implementation of data binding in Windows Forms, multiple controls are bound to the same data source. In the following situations, it's necessary to ensure that the bound properties of the control remain synchronized with each other and the data source:
 
