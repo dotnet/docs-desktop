@@ -756,6 +756,50 @@
         {
             "source_path": "dotnet-desktop-guide/net/winforms/data-sources-supported-by-windows-forms.md",
             "redirect_url": "/dotnet/desktop/winforms/data/overview?view=netdesktop-6.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/change-notification-in-windows-forms-data-binding.md",
+            "redirect_url": "/dotnet/desktop/winforms/data/design-great-data-sources?view=netdesktop-6.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/winforms/data/design-great-data-sources.md",
+            "redirect_url": "/dotnet/desktop/winforms/change-notification-in-windows-forms-data-binding?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/multiple-controls-bound-to-data-source-synchronized.md",
+            "redirect_url": "/dotnet/desktop/winforms/data/design-great-data-sources?view=netdesktop-6.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/how-to-apply-the-propertynamechanged-pattern.md",
+            "redirect_url": "/dotnet/desktop/winforms/data/design-great-data-sources?view=netdesktop-6.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/how-to-implement-the-inotifypropertychanged-interface.md",
+            "redirect_url": "/dotnet/desktop/winforms/data/design-great-data-sources?view=netdesktop-6.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/how-to-navigate-data-in-windows-forms.md",
+            "redirect_url": "/dotnet/desktop/winforms/data/how-to-work-with-data-grid?view=netdesktop-6.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/winforms/data/how-to-work-with-data-grid.md",
+            "redirect_url": "/dotnet/desktop/winforms/how-to-navigate-data-in-windows-forms?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/ensure-the-selected-row-in-a-child-table-correct.md",
+            "redirect_url": "/dotnet/desktop/winforms/data/how-to-work-with-data-grid?view=netdesktop-6.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/how-to-create-a-bound-control-and-format-the-displayed-data.md",
+            "redirect_url": "/dotnet/desktop/winforms/data/how-to-create-control-binding?view=netdesktop-6.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/winforms/data/how-to-create-control-binding.md",
+            "redirect_url": "/dotnet/desktop/winforms/how-to-create-a-bound-control-and-format-the-displayed-data?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/how-to-create-a-simple-bound-control-on-a-windows-form.md",
+            "redirect_url": "/dotnet/desktop/winforms/data/how-to-create-control-binding?view=netdesktop-6.0"
         }
     ]
 }
