@@ -1,6 +1,6 @@
 ---
 title: "How to ensure the selected row in a child table remains at the correct position"
-description: "Learn about how to ensure the selected row in a child table remains at the correct position"
+description: "Learn about how to ensure the selected row in a child table remains at the correct position."
 ms.date: "06/08/2022"
 dev_langs:
   - "csharp"
@@ -19,9 +19,9 @@ helpviewer_keywords:
 ms.custom: devdivchpfy22
 ---
 
-# How to ensure the selected row in a child table remains at the correct position
+# How to ensure the selected row in a child table remains at the correct position in Windows Forms .NET
 
-Often when you work with data binding in Windows Forms, you'll display data in what is called a parent/child or master/details view. The data from the same source is displayed in two controls is referred as data-binding. Changing the selection in one control causes the data displayed in the second control to change. For example, the first control might contain a list of customers and the second a list of orders related to the selected customer in the first control.
+Often when you work with data binding in Windows Forms, you'll display data in a parent/child or master/details view. The data from the same source is displayed in two controls is referred as data-binding. Changing the selection in one control causes the data displayed in the second control to change. For example, the first control might contain a list of customers and the second a list of orders related to the selected customer in the first control.
 
  To display data in a parent/child view, you might have to take extra steps to ensure that the currently selected row in the child table isn't reset to the first row of the table. You'll have to cache the child table position and reset it after the parent table changes to view the currently selected row in the child table. Typically the child reset occurs the first time a field in a row of the parent table changes.
 
