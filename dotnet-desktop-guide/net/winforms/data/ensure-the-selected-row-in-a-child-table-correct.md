@@ -21,7 +21,7 @@ ms.custom: devdivchpfy22
 
 # How to ensure the selected row in a child table remains at the correct position in Windows Forms .NET
 
-Often when you work with data binding in Windows Forms, you'll display data in a parent/child or master/details view. The data from the same source is displayed in two controls is referred as data-binding. Changing the selection in one control causes the data displayed in the second control to change. For example, the first control might contain a list of customers and the second a list of orders related to the selected customer in the first control.
+Often when you work with data binding in Windows Forms, you'll display data in a parent/child or master/details view. The data from the same source is displayed in two controls and is referred to as data-binding. Changing the selection in one control causes the data displayed in the second control to change. For example, the first control might contain a list of customers and the second a list of orders related to the selected customer in the first control.
 
  To display data in a parent/child view, you might have to take extra steps to ensure that the currently selected row in the child table isn't reset to the first row of the table. You'll have to cache the child table position and reset it after the parent table changes to view the currently selected row in the child table. Typically the child reset occurs the first time a field in a row of the parent table changes.
 
@@ -39,7 +39,7 @@ Often when you work with data binding in Windows Forms, you'll display data in a
      :::code language="csharp" source="snippets/ensure-the-selected-row-in-a-child-table-correct/csharp/form1.cs" id="check_current_pos":::
      :::code language="vb" source="snippets/ensure-the-selected-row-in-a-child-table-correct/vb/form1.vb" id="check_current_pos":::
 
-01. Handle the parent list's <xref:System.Windows.Forms.BindingManagerBase.CurrentChanged> event for the parent currency manager. In the handler, set the Boolean value to indicate it isn't a caching scenario. If the `CurrentChanged` occurs, the change to the parent is a list position change and not an item value change.
+01. Handle the parent list's <xref:System.Windows.Forms.BindingManagerBase.CurrentChanged> event for the parent currency manager. In the handler, set the Boolean value to indicate it isn't a caching scenario. If the `CurrentChanged` event occurs, the change to the parent is a list position change and not an item value change.
 
      :::code language="csharp" source="snippets/ensure-the-selected-row-in-a-child-table-correct/csharp/form1.cs" id="handle_parent_list":::
      :::code language="vb" source="snippets/ensure-the-selected-row-in-a-child-table-correct/vb/form1.vb" id="handle_parent_list":::
