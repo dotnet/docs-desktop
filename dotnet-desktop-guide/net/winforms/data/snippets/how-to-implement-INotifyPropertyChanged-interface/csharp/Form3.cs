@@ -1,4 +1,4 @@
-﻿// <snippet1>
+﻿//<implement_INotifyPropertyChanged_interface>
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -81,7 +81,6 @@ namespace binding_control_example
                 
     }
 
-    // <snippet9>
     // This is a simple customer class that
     // implements the IPropertyChange interface.
     public class DemoCustomer1 : INotifyPropertyChanged
@@ -161,6 +160,5 @@ namespace binding_control_example
             }
         }
     }
-    // </snippet9>
 }
-// </snippet1>
+//</implement_INotifyPropertyChanged_interface>
