@@ -45,11 +45,7 @@ The following code example demonstrates how to apply the *PropertyName*Changed p
 
 ## Implement the INotifyPropertyChanged interface
 
-The following code example demonstrates how to implement the <xref:System.ComponentModel.INotifyPropertyChanged> interface. Implement the interface on business objects that are used in Windows Forms data binding. When implemented, the interface  communicates to a bound control the property changes on a business object.
-
-:::code language="csharp" source="snippets/design-great-data-sources/csharp/form3.cs" id="implement_INotifyPropertyChanged_interface":::
-
-:::code language="vb" source="snippets/design-great-data-sources/vb/form3.vb" id="implement_INotifyPropertyChanged_interface":::
+The INotifyPropertyChanged interface notifies clients that a property value has changed. For more information on INotifyPropertyChanged interface, see <xref:System.ComponentModel.INotifyPropertyChanged>. Implement the interface on business objects that are used in Windows Forms data binding. When implemented, the interface  communicates to a bound control the property changes on a business object. For more information on how to implement INotifyPropertyChanged interface, see the [example](/how-to-implement-INotifyPropertyChanged-interface.md).
 
 ## Synchronize bindings
 

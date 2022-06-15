@@ -123,3 +123,5 @@ items:
       href: data/how-to-work-with-data-grid.md
     - name: Create a control binding
       href: data/how-to-create-control-binding.md
+    - name: Implement the INotifyPropertyChanged interface
+      href: data/how-to-implement-INotifyPropertyChanged-interface.md
