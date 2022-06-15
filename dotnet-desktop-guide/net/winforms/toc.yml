@@ -117,9 +117,12 @@ items:
     href: data/overview.md
   - name: Design great data sources
     href: data/design-great-data-sources.md
+  - name: Work with a data grid
+    href: data/how-to-work-with-data-grid.md
   - name: Common tasks
     items:
-    - name: Work with a data grid
-      href: data/how-to-work-with-data-grid.md
     - name: Create a control binding
       href: data/how-to-create-control-binding.md
+    - name: Synchronize multiple controls
+      href: data/how-to-synchronize-multiple-controls.md
+ 

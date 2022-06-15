@@ -343,6 +343,11 @@
             "SourceUrl": "/dotnet/desktop/winforms/how-to-create-a-simple-bound-control-on-a-windows-form?view=netframeworkdesktop-4.8",
             "TargetUrl": "/dotnet/desktop/winforms/data/how-to-create-control-binding?view=netdesktop-6.0"
         },
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/winforms/multiple-controls-bound-to-data-source-synchronized?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/winforms/data/how-to-synchronize-multiple-controls?view=netdesktop-6.0"
+        },
 
 
     // ========
