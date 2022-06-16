@@ -12,7 +12,7 @@ helpviewer_keywords:
 ms.custom: devdivchpfy22
 ---
 
-# How to print using print preview (Windows Forms .NET)
+# Print using print preview (Windows Forms .NET)
 
 It's common in Windows Forms programming to offer print preview in addition to printing services. An easy way to add print preview services to your application is to use a <xref:System.Windows.Forms.PrintPreviewDialog> control in combination with the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event-handling logic for printing a file.
 
@@ -65,6 +65,6 @@ It's common in Windows Forms programming to offer print preview in addition to p
 
 ## See also
 
-- [How to: Print a Multi-Page Text File in Windows Forms](how-to-print-text-document.md)
-- [Windows Forms Print Support](/dotnet/desktop/winforms/advanced/windows-forms-print-support?view=netframeworkdesktop-4.8&preserve-view=true)
+- [PrintDialog component overview](overview.md)
+- [Print a multi-page text file](how-to-print-text-document.md)
 - [More Secure Printing in Windows Forms](/desktop/winforms/advanced/more-secure-printing-in-windows-forms?view=netframeworkdesktop-4.8&preserve-view=true)
