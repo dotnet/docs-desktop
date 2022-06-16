@@ -16,7 +16,7 @@ helpviewer_keywords:
 ms.custom: devdivchpfy22
 ---
 
-# Data binding (Windows Forms .NET)
+# Data binding overview (Windows Forms .NET)
 
 In Windows Forms, you can bind to not just traditional data sources, but also to almost any structure that contains data. You can bind to an array of values that you calculate at run time, read from a file, or derive from the values of other controls.
 
@@ -222,7 +222,7 @@ The following list shows the structures you can bind to in Windows Forms.
 
 |Type of data binding|Description|
 |--------------------------|-----------------|
-|Simple data binding|The ability of a control to bind to a single data element, such as a value in a column in a dataset table. Simple data binding is the type of binding typical for controls such as a <xref:System.Windows.Forms.TextBox> control or <xref:System.Windows.Forms.Label> control, which are controls that typically only display a single value. In fact, any property on a control can be bound to a field in a database. There's extensive support for this feature in Visual Studio.<br /><br /> For more information, see:<br /><br /> - [How to: Navigate Data in Windows Forms](/dotnet/desktop/winforms/how-to-navigate-data-in-windows-forms?view=netframeworkdesktop-4.8&preserve-view=true)<br />-   [How to: Create a Simple-Bound Control on a Windows Form](/dotnet/desktop/winforms/how-to-create-a-simple-bound-control-on-a-windows-form?view=netframeworkdesktop-4.8&preserve-view=true)|
+|Simple data binding|The ability of a control to bind to a single data element, such as a value in a column in a dataset table. Simple data binding is the type of binding typical for controls such as a <xref:System.Windows.Forms.TextBox> control or <xref:System.Windows.Forms.Label> control, which are controls that typically only display a single value. In fact, any property on a control can be bound to a field in a database. There's extensive support for this feature in Visual Studio.<br /><br /> For more information, see [Navigate data](how-to-work-with-data-grid.md) and [Create a simple-bound control (Windows Forms .NET)](how-to-create-control-binding.md).|
 |Complex data binding|The ability of a control to bind to more than one data element, typically more than one record in a database. Complex binding is also called list-based binding. Examples of controls that support complex binding are the <xref:System.Windows.Forms.DataGridView>, <xref:System.Windows.Forms.ListBox>, and <xref:System.Windows.Forms.ComboBox> controls. For an example of complex data binding, see [How to: Bind a Windows Forms ComboBox or ListBox Control to Data](/dotnet/desktop/winforms/controls/how-to-bind-a-windows-forms-combobox-or-listbox-control-to-data?view=netframeworkdesktop-4.8&preserve-view=true).|
 
 ### Binding source component
@@ -243,8 +243,8 @@ The following list shows the structures you can bind to in Windows Forms.
 ## See also
 
 - <xref:System.Windows.Forms.Binding>
-- [Windows Forms Data Binding](/dotnet/desktop/winforms/windows-forms-data-binding?view=netframeworkdesktop-4.8&preserve-view=true)
-- [Change Notification in Windows Forms Data Binding](/dotnet/desktop/winforms/change-notification-in-windows-forms-data-binding?view=netframeworkdesktop-4.8&preserve-view=true)
+- [Data binding overview](overview.md)
+- [Design great data sources with change notification](design-great-data-sources.md)
+- [Create a simple-bound control (Windows Forms .NET)](how-to-create-control-binding.md)
 - [BindingSource Component](/dotnet/desktop/winforms/controls/bindingsource-component?view=netframeworkdesktop-4.8&preserve-view=true)
-- [How to: Create a Simple-Bound Control on a Windows Form](/dotnet/desktop/winforms/how-to-create-a-simple-bound-control-on-a-windows-form?view=netframeworkdesktop-4.8&preserve-view=true)
 - [How to: Bind the Windows Forms DataGrid Control to a Data Source](/dotnet/desktop/winforms/controls/how-to-bind-the-windows-forms-datagrid-control-to-a-data-source?view=netframeworkdesktop-4.8&preserve-view=true)
