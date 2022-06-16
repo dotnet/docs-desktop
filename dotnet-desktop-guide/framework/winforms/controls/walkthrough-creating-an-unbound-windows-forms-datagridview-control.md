@@ -1,6 +1,8 @@
 ---
-title: Create an Unbound DataGridView Control
-ms.date: "03/30/2017"
+title: Walkthrough to create an Unbound Windows Forms DataGridView Control
+description: You can create an Unbound Windows Forms DataGridView Control and display a small amount of data without binding it to a data source.
+ms.date: "01/18/2022"
+ms.custom: devdivchpfy22
 dev_langs: 
   - "csharp"
   - "vb"
@@ -13,13 +15,14 @@ helpviewer_keywords:
 ms.assetid: 5a8d6afa-1b4b-4b24-8db8-501086ffdebe
 ---
 # Walkthrough: Creating an Unbound Windows Forms DataGridView Control
+
 You may frequently want to display tabular data that does not originate from a database. For example, you may want to show the contents of a two-dimensional array of strings. The <xref:System.Windows.Forms.DataGridView> class provides an easy and highly customizable way to display data without binding to a data source. This walkthrough shows how to populate a <xref:System.Windows.Forms.DataGridView> control and manage the addition and deletion of rows in "unbound" mode. By default, the user can add new rows. To prevent row addition, set the <xref:System.Windows.Forms.DataGridView.AllowUserToAddRows%2A> property is `false`.  
   
  To copy the code in this topic as a single listing, see [How to: Create an Unbound Windows Forms DataGridView Control](how-to-create-an-unbound-windows-forms-datagridview-control.md).  
   
 ## Creating the Form  
   
-#### To use an unbound DataGridView control  
+### To use an unbound DataGridView control  
   
 1. Create a class that derives from <xref:System.Windows.Forms.Form> and contains the following variable declarations and `Main` method.  
   
@@ -64,16 +67,18 @@ You may frequently want to display tabular data that does not originate from a d
      [!code-csharp[System.Windows.Forms.DataGridViewSimpleUnbound#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewSimpleUnbound/CS/simpleunbound.cs#10)]
      [!code-vb[System.Windows.Forms.DataGridViewSimpleUnbound#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewSimpleUnbound/VB/simpleunbound.vb#10)]  
   
-## Testing the Application  
+## Testing the Application
+
  You can now test the form to make sure it behaves as expected.  
   
-#### To test the form  
+### To test the form  
   
 - Press F5 to run the application.  
   
      You will see a <xref:System.Windows.Forms.DataGridView> control that displays the songs listed in `PopulateDataGridView`. You can add new rows with the **Add Row** button, and you can delete selected rows with the **Delete Row** button. The unbound <xref:System.Windows.Forms.DataGridView> control is the data store, and its data is independent of any external source, such as a <xref:System.Data.DataSet> or an array.  
   
-## Next Steps  
+## Next Steps
+  
  This application gives you a basic understanding of the <xref:System.Windows.Forms.DataGridView> control's capabilities. You can customize the appearance and behavior of the <xref:System.Windows.Forms.DataGridView> control in several ways:  
   
 - Change border and header styles. For more information, see [How to: Change the Border and Gridline Styles in the Windows Forms DataGridView Control](change-the-border-and-gridline-styles-in-the-datagrid.md).  

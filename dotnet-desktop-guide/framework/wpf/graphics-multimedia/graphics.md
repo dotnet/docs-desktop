@@ -9,7 +9,7 @@ helpviewer_keywords:
 ms.assetid: 3bfc652e-91b7-4697-a4f4-83ff0e98327e
 ---
 # Graphics
-[!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] offers integrated support for multimedia, vector graphics, animation, and content composition, making it easy for developers to build interesting user interfaces and content.  
+Windows Presentation Foundation (WPF) offers integrated support for multimedia, vector graphics, animation, and content composition, making it easy for developers to build interesting user interfaces and content.  
   
 ## In This Section  
  [Bitmap Effects](bitmap-effects.md)  

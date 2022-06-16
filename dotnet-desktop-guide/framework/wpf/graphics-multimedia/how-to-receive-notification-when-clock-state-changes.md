@@ -1,6 +1,8 @@
 ---
 title: "How to: Receive Notification When a Clock's State Changes"
+description: Learn how to receive notification when a Clock's state changes.
 ms.date: "03/30/2017"
+ms.custom: devdivchpfy22
 dev_langs: 
   - "csharp"
   - "vb"
@@ -26,16 +28,26 @@ A clock's <xref:System.Windows.Media.Animation.Clock.CurrentStateInvalidated> ev
   
  The following table shows the times at which *Animation1*'s <xref:System.Windows.Media.Animation.Timeline.CurrentStateInvalidated> event fires:  
   
-||||||||  
-|-|-|-|-|-|-|-|  
-|Time (Seconds)|1|10|19|21|30|39|  
-|State|Active|Active|Stopped|Active|Active|Stopped|  
+| Time (Seconds) | State |
+|----------------|-------|
+|1|Active|
+|10|Active|
+|19|Stopped|
+|21|Active|
+|30|Active|
+|39|Stopped|
   
  The following table shows the times at which *Animation2*'s <xref:System.Windows.Media.Animation.Timeline.CurrentStateInvalidated> event fires:  
   
-||||||||||  
-|-|-|-|-|-|-|-|-|-|  
-|Time (Seconds)|1|9|11|19|21|29|31|39|  
-|State|Active|Filling|Active|Stopped|Active|Filling|Active|Stopped|  
-  
+| Time (Seconds) | State |
+|----------------|-------|
+|1|Active|
+|9|Filling|
+|11|Active|
+|19|Stopped|
+|21|Active|
+|29|Filling|
+|31|Active|
+|39|Stopped|
+
  Notice that *Animation1*'s  <xref:System.Windows.Media.Animation.Timeline.CurrentStateInvalidated> event fires at 10 seconds, even though its state remains <xref:System.Windows.Media.Animation.ClockState.Active>. That's because its state changed at 10 seconds, but it changed from <xref:System.Windows.Media.Animation.ClockState.Active> to <xref:System.Windows.Media.Animation.ClockState.Filling> and then back to <xref:System.Windows.Media.Animation.ClockState.Active> in the same tick.

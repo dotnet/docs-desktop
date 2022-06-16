@@ -1,28 +1,30 @@
 ---
-title: "Typography"
+title: "Typography in WPF"
 ms.date: "03/30/2017"
+ms.custom: devdivchpfy22
+description: Learn about the typography in WPF.
 helpviewer_keywords: 
   - "typography [WPF], about typography"
 ms.assetid: 06cbf17b-6eff-4fe5-949d-2dd533e4e1f4
 ---
 # Typography in WPF
 
-This topic introduces the major typographic features of [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)]. These features include improved quality and performance of text rendering, OpenType typography support, enhanced international text, enhanced font support, and new text application programming interfaces (APIs).  
+This topic introduces the major typographic features of WPF. These features include improved quality and performance of text rendering, OpenType typography support, enhanced international text, enhanced font support, and new text application programming interfaces (APIs).  
   
 <a name="Improved_Quality_and_Performance_of_Text"></a>
 
 ## Improved Quality and Performance of Text  
 
- Text in [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] is rendered using Microsoft ClearType, which enhances the clarity and readability of text. ClearType is a software technology developed by Microsoft that improves the readability of text on existing LCDs (Liquid Crystal Displays), such as laptop screens, Pocket PC screens and flat panel monitors. ClearType uses sub-pixel rendering which allows text to be displayed with a greater fidelity to its true shape by aligning characters on a fractional part of a pixel. The extra resolution increases the sharpness of the tiny details in text display, making it much easier to read over long durations. Another improvement of ClearType in [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] is y-direction anti-aliasing, which smoothes the tops and bottoms of shallow curves in text characters. For more details on ClearType features, see [ClearType Overview](cleartype-overview.md).  
+ Text in WPF is rendered using Microsoft ClearType, which enhances the clarity and readability of text. ClearType is a software technology developed by Microsoft that improves the readability of text on existing LCDs (Liquid Crystal Displays), such as laptop screens, Pocket PC screens and flat panel monitors. ClearType uses sub-pixel rendering which allows text to be displayed with a greater fidelity to its true shape by aligning characters on a fractional part of a pixel. The extra resolution increases the sharpness of the tiny details in text display, making it much easier to read over long durations. Another improvement of ClearType in WPF is y-direction anti-aliasing, which smoothes the tops and bottoms of shallow curves in text characters. For more details on ClearType features, see [ClearType Overview](cleartype-overview.md).  
   
  ![Text with ClearType y-direction anti-aliasing](./media/typography-in-wpf/text-y-direction-antialiasing.gif)  
 Text with ClearType y-direction antialiasing  
   
- The entire text rendering pipeline can be hardware-accelerated in [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] provided your machine meets the minimum level of hardware required. Rendering that cannot be performed using hardware falls back to software rendering. Hardware-acceleration affects all phases of the text rendering pipeline—from storing individual glyphs, compositing glyphs into glyph runs, applying effects, to applying the ClearType blending algorithm to the final displayed output. For more information on hardware acceleration, see [Graphics Rendering Tiers](graphics-rendering-tiers.md).  
+ The entire text rendering pipeline can be hardware-accelerated in WPF provided your machine meets the minimum level of hardware required. Rendering that cannot be performed using hardware falls back to software rendering. Hardware-acceleration affects all phases of the text rendering pipeline—from storing individual glyphs, compositing glyphs into glyph runs, applying effects, to applying the ClearType blending algorithm to the final displayed output. For more information on hardware acceleration, see [Graphics Rendering Tiers](graphics-rendering-tiers.md).  
   
  ![Diagram of the text rendering pipeline](./media/typography-in-wpf/text-rendering-pipeline.png)  
   
- In addition, animated text, whether by character or glyph, takes full advantage of the graphics hardware capability enabled by [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)]. This results in smooth text animation.  
+ In addition, animated text, whether by character or glyph, takes full advantage of the graphics hardware capability enabled by WPF. This results in smooth text animation.  
   
 <a name="Rich_Typography"></a>
 
@@ -44,7 +46,7 @@ Text with ClearType y-direction antialiasing
 
 ## Enhanced International Text Support  
 
- [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] provides enhanced international text support by providing the following features:  
+ WPF provides enhanced international text support by providing the following features:  
   
 - Automatic line-spacing in all writing systems, using adaptive measurement.  
   
@@ -56,7 +58,7 @@ Text with ClearType y-direction antialiasing
 
 ## Enhanced Font Support  
 
- [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] provides enhanced font support by providing the following features:  
+ WPF provides enhanced font support by providing the following features:  
   
 - Unicode for all text. Font behavior and selection no longer require charset or codepage.  
   
@@ -76,7 +78,7 @@ Text with ClearType y-direction antialiasing
 
 ## New Text Application Programming Interfaces (APIs)  
 
- [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] provides several text APIs for developers to use when including text in their applications. These APIs are grouped into three categories:  
+ WPF provides several text APIs for developers to use when including text in their applications. These APIs are grouped into three categories:  
   
 - **Layout and user interface**. The common text controls for the graphical user interface (GUI).  
   
@@ -86,11 +88,11 @@ Text with ClearType y-direction antialiasing
   
 ### Layout and User Interface  
 
- At the highest level of functionality, the text APIs provide common [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)] controls such as <xref:System.Windows.Controls.Label>, <xref:System.Windows.Controls.TextBlock>, and <xref:System.Windows.Controls.TextBox>. These controls provide the basic [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] elements within an application, and offer an easy way to present and interact with text. Controls such as <xref:System.Windows.Controls.RichTextBox> and <xref:System.Windows.Controls.PasswordBox> enable more advanced or specialized text-handling. And classes such as <xref:System.Windows.Documents.TextRange>, <xref:System.Windows.Documents.TextSelection>, and <xref:System.Windows.Documents.TextPointer> enable useful text manipulation. These [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] controls provide properties such as <xref:System.Windows.Controls.Control.FontFamily%2A>, <xref:System.Windows.Controls.Control.FontSize%2A>, and <xref:System.Windows.Controls.Control.FontStyle%2A>, which enable you to control the font that is used to render the text.  
+ At the highest level of functionality, the text APIs provide common UI elements within an application, and offer an easy way to present and interact with text. Controls such as <xref:System.Windows.Controls.RichTextBox> and <xref:System.Windows.Controls.PasswordBox> enable more advanced or specialized text-handling. And classes such as <xref:System.Windows.Documents.TextRange>, <xref:System.Windows.Documents.TextSelection>, and <xref:System.Windows.Documents.TextPointer> enable useful text manipulation. These UI controls provide properties such as <xref:System.Windows.Controls.Control.FontFamily%2A>, <xref:System.Windows.Controls.Control.FontSize%2A>, and <xref:System.Windows.Controls.Control.FontStyle%2A>, which enable you to control the font that is used to render the text.  
   
 #### Using Bitmap Effects, Transforms, and Text Effects  
 
- [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] allows you to create visually interesting uses of text by uses features such as bitmap effects, transforms, and text effects. The following example shows a typical type of a drop shadow effect applied to text.  
+ WPF allows you to create visually interesting uses of text by uses features such as bitmap effects, transforms, and text effects. The following example shows a typical type of a drop shadow effect applied to text.  
   
  ![Text shadow with Softness &#61; 0.25](./media/typography-in-wpf/drop-shadow-text-effect.jpg)
   
@@ -120,7 +122,7 @@ Text with ClearType y-direction antialiasing
   
 #### Using Flow Documents  
 
- In addition to the common [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] controls, [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] offers a layout control for text presentation—the <xref:System.Windows.Documents.FlowDocument> element. The <xref:System.Windows.Documents.FlowDocument> element, in conjunction with the <xref:System.Windows.Controls.DocumentViewer> element, provides a control for large amounts of text with varying layout requirements. Layout controls provide access to advanced typography through the <xref:System.Windows.Documents.Typography> object and font-related properties of other [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] controls.  
+ In addition to the common UI controls, UI controls.  
   
  The following example shows text content hosted in a <xref:System.Windows.Controls.FlowDocumentReader>, which provides search, navigation, pagination, and content scaling support.  
   
@@ -130,7 +132,7 @@ Text with ClearType y-direction antialiasing
   
 ### Lightweight Text Drawing  
 
- You can draw text directly to [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] objects by using the <xref:System.Windows.Media.DrawingContext.DrawText%2A> method of the <xref:System.Windows.Media.DrawingContext> object. To use this method, you create a <xref:System.Windows.Media.FormattedText> object. This object allows you to draw multi-line text, in which each character in the text can be individually formatted. The functionality of the <xref:System.Windows.Media.FormattedText> object contains much of the functionality of the DrawText flags in the Windows API. In addition, the <xref:System.Windows.Media.FormattedText> object contains functionality such as ellipsis support, in which an ellipsis is displayed when text exceeds its bounds. The following example shows text that has several formats applied to it, including a linear gradient on the second and third words.  
+ You can draw text directly to WPF objects by using the <xref:System.Windows.Media.DrawingContext.DrawText%2A> method of the <xref:System.Windows.Media.DrawingContext> object. To use this method, you create a <xref:System.Windows.Media.FormattedText> object. This object allows you to draw multi-line text, in which each character in the text can be individually formatted. The functionality of the <xref:System.Windows.Media.FormattedText> object contains much of the functionality of the DrawText flags in the Windows API. In addition, the <xref:System.Windows.Media.FormattedText> object contains functionality such as ellipsis support, in which an ellipsis is displayed when text exceeds its bounds. The following example shows text that has several formats applied to it, including a linear gradient on the second and third words.  
   
  ![Text displayed using FormattedText object](./media/typography-in-wpf/text-formatted-linear-gradient.jpg)
   
@@ -150,7 +152,7 @@ Text with ClearType y-direction antialiasing
   
 ### Advanced Text Formatting  
 
- At the most advanced level of the text APIs, [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] offers you the ability to create custom text layout by using the <xref:System.Windows.Media.TextFormatting.TextFormatter> object and other types in the <xref:System.Windows.Media.TextFormatting> namespace. The <xref:System.Windows.Media.TextFormatting.TextFormatter> and associated classes allow you to implement custom text layout that supports your own definition of character formats, paragraph styles, line breaking rules, and other layout features for international text. There are very few cases in which you would want to override the default implementation of the [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] text layout support. However, if you were creating a text editing control or application, you might require a different implementation than the default [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] implementation.  
+ At the most advanced level of the text APIs, WPF offers you the ability to create custom text layout by using the <xref:System.Windows.Media.TextFormatting.TextFormatter> object and other types in the <xref:System.Windows.Media.TextFormatting> namespace. The <xref:System.Windows.Media.TextFormatting.TextFormatter> and associated classes allow you to implement custom text layout that supports your own definition of character formats, paragraph styles, line breaking rules, and other layout features for international text. There are very few cases in which you would want to override the default implementation of the WPF text layout support. However, if you were creating a text editing control or application, you might require a different implementation than the default WPF implementation.  
   
  Unlike a traditional text API, the <xref:System.Windows.Media.TextFormatting.TextFormatter> interacts with a text layout client through a set of callback methods. It requires the client to provide these methods in an implementation of the <xref:System.Windows.Media.TextFormatting.TextSource> class. The following diagram illustrates the text layout interaction between the client application and <xref:System.Windows.Media.TextFormatting.TextFormatter>.  
   

@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 214da5ef-547a-4cf8-9b07-4aa8a0e52cdd
 ---
 # WPF Content Model
-[!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] is a presentation platform that provides many controls and control-like types whose primary purpose is to display different types of content. To determine which control to use or which control to derive from, you should understand the kinds of objects a particular control can best display.  
+Windows Presentation Foundation (WPF) is a presentation platform that provides many controls and control-like types whose primary purpose is to display different types of content. To determine which control to use or which control to derive from, you should understand the kinds of objects a particular control can best display.  
   
- This topic summarizes the content model for [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] control and control-like types. The content model describes what content can be used in a control. This topic also lists the content properties for each content model. A content property is a property that is used to store the content of the object.  
+ This topic summarizes the content model for WPF control and control-like types. The content model describes what content can be used in a control. This topic also lists the content properties for each content model. A content property is a property that is used to store the content of the object.  
 
 <a name="classes_that_contain_arbitrary_content"></a>
 ## Classes That Contain Arbitrary Content  
  Some controls can contain an object of any type, such as a string, a <xref:System.DateTime> object, or a <xref:System.Windows.UIElement> that is a container for additional items. For example, a <xref:System.Windows.Controls.Button> can contain an image and some text; or a <xref:System.Windows.Controls.CheckBox> can contain the value of <xref:System.DateTime.Now%2A?displayProperty=nameWithType>.  
   
- [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] has four classes that can contain arbitrary content. The following table lists the classes, which inherit from <xref:System.Windows.Controls.Control>.  
+ WPF has four classes that can contain arbitrary content. The following table lists the classes, which inherit from <xref:System.Windows.Controls.Control>.  
   
 |Class that contains arbitrary content|Content|  
 |-------------------------------------------|-------------|  
@@ -209,7 +209,7 @@ TextBlock that has a Border
   
 <a name="classes_that_provides_visual_feedback_about_a_uielement"></a>
 ## Classes That Provide Visual Feedback About a UIElement  
- The <xref:System.Windows.Documents.Adorner> class provides visual cues to a user. For example, use an <xref:System.Windows.Documents.Adorner> to add functional handles to elements or provide state information about a control. The <xref:System.Windows.Documents.Adorner> class provides a framework so that you can create your own adorners. [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] does not provide any implemented adorners. For more information, see [Adorners Overview](adorners-overview.md).  
+ The <xref:System.Windows.Documents.Adorner> class provides visual cues to a user. For example, use an <xref:System.Windows.Documents.Adorner> to add functional handles to elements or provide state information about a control. The <xref:System.Windows.Documents.Adorner> class provides a framework so that you can create your own adorners. WPF does not provide any implemented adorners. For more information, see [Adorners Overview](adorners-overview.md).  
   
 <a name="classes_that_enable_users_to_enter_text"></a>
 ## Classes That Enable Users to Enter Text  

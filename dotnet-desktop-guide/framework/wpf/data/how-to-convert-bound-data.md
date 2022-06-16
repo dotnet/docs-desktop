@@ -21,7 +21,7 @@ This example shows how to apply conversion to data that is used in bindings.
  [!code-csharp[DataBindingLab#18](~/samples/snippets/csharp/VS_Snippets_Wpf/DataBindingLab/CSharp/DateConverter.cs#18)]
  [!code-vb[DataBindingLab#18](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DataBindingLab/VisualBasic/DateConverter.vb#18)]  
   
- Once you have created a converter, you can add it as a resource in your [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)] file. In the following example, *src* maps to the namespace in which *DateConverter* is defined.  
+ Once you have created a converter, you can add it as a resource in your Extensible Application Markup Language (XAML) file. In the following example, *src* maps to the namespace in which *DateConverter* is defined.  
   
  [!code-xaml[DataBindingLab#15](~/samples/snippets/csharp/VS_Snippets_Wpf/DataBindingLab/CSharp/DataBindingLabApp.xaml#15)]  
   

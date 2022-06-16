@@ -9,7 +9,7 @@ helpviewer_keywords:
 ms.assetid: e7c62920-4812-4811-94d8-050a65c856f6
 ---
 # Weak Event Patterns
-In applications, it is possible that handlers that are attached to event sources will not be destroyed in coordination with the listener object that attached the handler to the source. This situation can lead to memory leaks. [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] introduces a design pattern that can be used to address this issue, by providing a dedicated manager class for particular events and implementing an interface on listeners for that event. This design pattern is known as the *weak event pattern*.  
+In applications, it is possible that handlers that are attached to event sources will not be destroyed in coordination with the listener object that attached the handler to the source. This situation can lead to memory leaks. Windows Presentation Foundation (WPF) introduces a design pattern that can be used to address this issue, by providing a dedicated manager class for particular events and implementing an interface on listeners for that event. This design pattern is known as the *weak event pattern*.  
   
 ## Why Implement the Weak Event Pattern?  
  Listening for events can lead to memory leaks. The typical technique for listening to an event is to use the language-specific syntax that attaches a handler to an event on a source. For example, in C#, that syntax is: `source.SomeEvent += new SomeEventHandler(MyEventHandler)`.  
@@ -21,7 +21,7 @@ In applications, it is possible that handlers that are attached to event sources
 ## Who Should Implement the Weak Event Pattern?  
  Implementing the weak event pattern is interesting primarily for control authors. As a control author, you are largely responsible for the behavior and containment of your control and the impact it has on applications in which it is inserted. This includes the control object lifetime behavior, in particular the handling of the described memory leak problem.  
   
- Certain scenarios inherently lend themselves to the application of the weak event pattern. One such scenario is data binding. In data binding, it is common for the source object to be completely independent of the listener object, which is a target of a binding. Many aspects of [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] data binding already have the weak event pattern applied in how the events are implemented.  
+ Certain scenarios inherently lend themselves to the application of the weak event pattern. One such scenario is data binding. In data binding, it is common for the source object to be completely independent of the listener object, which is a target of a binding. Many aspects of WPF data binding already have the weak event pattern applied in how the events are implemented.  
   
 ## How to Implement the Weak Event Pattern  
  There are three ways to implement weak event pattern. The following table lists the three approaches and provides some guidance for when you should use each.  

@@ -12,17 +12,17 @@ ms.assetid: f440c23f-fa5d-4d5a-852f-ba61150e6405
 ---
 # Troubleshooting Hybrid Applications
 
-<a name="introduction"></a> This topic lists some common problems that can occur when authoring hybrid applications, which use both [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] and Windows Forms technologies.  
+<a name="introduction"></a> This topic lists some common problems that can occur when authoring hybrid applications, which use both WPF and Windows Forms technologies.  
 
 <a name="overlapping_controls"></a>
 
 ## Overlapping Controls  
 
- Controls may not overlap as you would expect. Windows Forms uses a separate HWND for each control. [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] uses one HWND for all content on a page. This implementation difference causes unexpected overlapping behaviors.  
+ Controls may not overlap as you would expect. Windows Forms uses a separate HWND for each control. WPF uses one HWND for all content on a page. This implementation difference causes unexpected overlapping behaviors.  
   
- A Windows Forms control hosted in [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] always appears on top of the [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] content.  
+ A Windows Forms control hosted in WPF always appears on top of the WPF content.  
   
- [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] content hosted in an <xref:System.Windows.Forms.Integration.ElementHost> control appears at the z-order of the <xref:System.Windows.Forms.Integration.ElementHost> control. It is possible to overlap <xref:System.Windows.Forms.Integration.ElementHost> controls, but the hosted [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] content does not combine or interact.  
+ WPF content hosted in an <xref:System.Windows.Forms.Integration.ElementHost> control appears at the z-order of the <xref:System.Windows.Forms.Integration.ElementHost> control. It is possible to overlap <xref:System.Windows.Forms.Integration.ElementHost> controls, but the hosted WPF content does not combine or interact.  
   
 <a name="child_property"></a>
 
@@ -34,7 +34,7 @@ ms.assetid: f440c23f-fa5d-4d5a-852f-ba61150e6405
 
 ## Scaling  
 
- [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] and Windows Forms have different scaling models. Some [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] scaling transformations are meaningful to Windows Forms controls, but others are not. For example, scaling a Windows Forms control to 0 will work, but if you try to scale the same control back to a non-zero value, the control's size remains 0. For more information, see [Layout Considerations for the WindowsFormsHost Element](layout-considerations-for-the-windowsformshost-element.md).  
+ WPF and Windows Forms have different scaling models. Some WPF scaling transformations are meaningful to Windows Forms controls, but others are not. For example, scaling a Windows Forms control to 0 will work, but if you try to scale the same control back to a non-zero value, the control's size remains 0. For more information, see [Layout Considerations for the WindowsFormsHost Element](layout-considerations-for-the-windowsformshost-element.md).  
   
 <a name="adapter"></a>
 
@@ -52,7 +52,7 @@ ms.assetid: f440c23f-fa5d-4d5a-852f-ba61150e6405
 
 ## Focus  
 
- Focus works differently in [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] and Windows Forms, which means that focus issues may occur in a hybrid application. For example, if you have focus inside a <xref:System.Windows.Forms.Integration.WindowsFormsHost> element, and you either minimize and restore the page or show a modal dialog box, focus inside the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element may be lost. The <xref:System.Windows.Forms.Integration.WindowsFormsHost> element still has focus, but the control inside it may not.  
+ Focus works differently in WPF and Windows Forms, which means that focus issues may occur in a hybrid application. For example, if you have focus inside a <xref:System.Windows.Forms.Integration.WindowsFormsHost> element, and you either minimize and restore the page or show a modal dialog box, focus inside the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element may be lost. The <xref:System.Windows.Forms.Integration.WindowsFormsHost> element still has focus, but the control inside it may not.  
   
  Data validation is also affected by focus. Validation works in a <xref:System.Windows.Forms.Integration.WindowsFormsHost> element, but it does not work as you tab out of the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element, or between two different <xref:System.Windows.Forms.Integration.WindowsFormsHost> elements.  
   
@@ -60,7 +60,7 @@ ms.assetid: f440c23f-fa5d-4d5a-852f-ba61150e6405
 
 ## Property Mapping  
 
- Some property mappings require extensive interpretation to bridge dissimilar implementations between the [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] and Windows Forms technologies. Property mappings enable your code to react to changes in fonts, colors, and other properties. In general, property mappings work by listening for either *Property*Changed events or On*Property*Changed calls, and setting appropriate properties on either the child control or its adapter. For more information, see [Windows Forms and WPF Property Mapping](windows-forms-and-wpf-property-mapping.md).  
+ Some property mappings require extensive interpretation to bridge dissimilar implementations between the WPF and Windows Forms technologies. Property mappings enable your code to react to changes in fonts, colors, and other properties. In general, property mappings work by listening for either *Property*Changed events or On*Property*Changed calls, and setting appropriate properties on either the child control or its adapter. For more information, see [Windows Forms and WPF Property Mapping](windows-forms-and-wpf-property-mapping.md).  
   
 <a name="layoutrelated_properties_on_hosted_content"></a>
 
@@ -87,21 +87,21 @@ ms.assetid: f440c23f-fa5d-4d5a-852f-ba61150e6405
 
 ## Message Loop Interoperation  
 
- When working with Windows Forms message loops, messages may not be processed as expected. The <xref:System.Windows.Forms.Integration.WindowsFormsHost.EnableWindowsFormsInterop%2A> method is called by the <xref:System.Windows.Forms.Integration.WindowsFormsHost> constructor. This method adds a message filter to the [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] message loop. This filter calls the <xref:System.Windows.Forms.Control.PreProcessMessage%2A?displayProperty=nameWithType> method if a <xref:System.Windows.Forms.Control?displayProperty=nameWithType> was the target of the message and translates/dispatches the message.  
+ When working with Windows Forms message loops, messages may not be processed as expected. The <xref:System.Windows.Forms.Integration.WindowsFormsHost.EnableWindowsFormsInterop%2A> method is called by the <xref:System.Windows.Forms.Integration.WindowsFormsHost> constructor. This method adds a message filter to the WPF message loop. This filter calls the <xref:System.Windows.Forms.Control.PreProcessMessage%2A?displayProperty=nameWithType> method if a <xref:System.Windows.Forms.Control?displayProperty=nameWithType> was the target of the message and translates/dispatches the message.  
   
- If you show a <xref:System.Windows.Window> in a Windows Forms message loop with <xref:System.Windows.Forms.Application.Run%2A?displayProperty=nameWithType>, you cannot type anything unless you call the <xref:System.Windows.Forms.Integration.ElementHost.EnableModelessKeyboardInterop%2A> method. The <xref:System.Windows.Forms.Integration.ElementHost.EnableModelessKeyboardInterop%2A> method takes a <xref:System.Windows.Window> and adds a <xref:System.Windows.Forms.IMessageFilter?displayProperty=nameWithType>, which reroutes key-related messages to the [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] message loop. For more information, see [Windows Forms and WPF Interoperability Input Architecture](windows-forms-and-wpf-interoperability-input-architecture.md).  
+ If you show a <xref:System.Windows.Window> in a Windows Forms message loop with <xref:System.Windows.Forms.Application.Run%2A?displayProperty=nameWithType>, you cannot type anything unless you call the <xref:System.Windows.Forms.Integration.ElementHost.EnableModelessKeyboardInterop%2A> method. The <xref:System.Windows.Forms.Integration.ElementHost.EnableModelessKeyboardInterop%2A> method takes a <xref:System.Windows.Window> and adds a <xref:System.Windows.Forms.IMessageFilter?displayProperty=nameWithType>, which reroutes key-related messages to the WPF message loop. For more information, see [Windows Forms and WPF Interoperability Input Architecture](windows-forms-and-wpf-interoperability-input-architecture.md).  
   
 <a name="opacity_and_layering"></a>
 
 ## Opacity and Layering  
 
- The <xref:System.Windows.Interop.HwndHost> class does not support layering. This means that setting the <xref:System.Windows.UIElement.Opacity%2A> property on the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element has no effect, and no blending will occur with other [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] windows which have <xref:System.Windows.Window.AllowsTransparency%2A> set to `true`.  
+ The <xref:System.Windows.Interop.HwndHost> class does not support layering. This means that setting the <xref:System.Windows.UIElement.Opacity%2A> property on the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element has no effect, and no blending will occur with other WPF windows which have <xref:System.Windows.Window.AllowsTransparency%2A> set to `true`.  
   
 <a name="dispose"></a>
 
 ## Dispose  
 
- Not disposing classes properly can leak resources. In your hybrid applications, make sure that the <xref:System.Windows.Forms.Integration.WindowsFormsHost> and <xref:System.Windows.Forms.Integration.ElementHost> classes are disposed, or you could leak resources. Windows Forms disposes <xref:System.Windows.Forms.Integration.ElementHost> controls when its non-modal <xref:System.Windows.Forms.Form> parent closes. [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] disposes <xref:System.Windows.Forms.Integration.WindowsFormsHost> elements when your application shuts down. It is possible to show a <xref:System.Windows.Forms.Integration.WindowsFormsHost> element in a <xref:System.Windows.Window> in a Windows Forms message loop. In this case, your code may not receive notification that your application is shutting down.  
+ Not disposing classes properly can leak resources. In your hybrid applications, make sure that the <xref:System.Windows.Forms.Integration.WindowsFormsHost> and <xref:System.Windows.Forms.Integration.ElementHost> classes are disposed, or you could leak resources. Windows Forms disposes <xref:System.Windows.Forms.Integration.ElementHost> controls when its non-modal <xref:System.Windows.Forms.Form> parent closes. WPF disposes <xref:System.Windows.Forms.Integration.WindowsFormsHost> elements when your application shuts down. It is possible to show a <xref:System.Windows.Forms.Integration.WindowsFormsHost> element in a <xref:System.Windows.Window> in a Windows Forms message loop. In this case, your code may not receive notification that your application is shutting down.  
   
 <a name="enabling_visual_styles"></a>
 

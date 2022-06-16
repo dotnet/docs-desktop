@@ -16,20 +16,20 @@ Windows Presentation Foundation (WPF) provides ways for you to design your own d
 - Display specific information to users.
 - Gather information from users.
 - Both display and gather information.
-- Display an operating system prompt, such a print window.
+- Display an operating system prompt, such as print window.
 - Select a file or folder.
 
 These types of windows are known as _dialog boxes_. A dialog box can be displayed in two ways: modal and modeless.
 
 Displaying a _modal_ dialog box to the user is a technique with which the application interrupts what it was doing until the user closes the dialog box. This generally comes in the form of a prompt or alert. Other windows in the application can't be interacted with until the dialog box is closed. Once the _modal_ dialog box is closed, the application continues. The most common dialog boxes are used to show an open file or save file prompt, displaying the printer dialog, or messaging the user with some status.
 
-A *modeless* dialog box doesn't prevent a user from activating other windows while it's open. For example, if a user wants to find occurrences of a particular word in a document, a main window will often open a dialog box to ask a user what word they're looking for. Since the application doesn't want to prevent the user from editing the document, the dialog box doesn't need to be modal. A modeless dialog box at least provides a **Close** button to close the dialog box. Other buttons may be provided to run specific functions, such as a **Find Next** button to find the next word in a word search.
+A _modeless_ dialog box doesn't prevent a user from activating other windows while it's open. For example, if a user wants to find occurrences of a particular word in a document, a main window will often open a dialog box to ask a user what word they're looking for. Since the application doesn't want to prevent the user from editing the document, the dialog box doesn't need to be modal. A modeless dialog box at least provides a **Close** button to close the dialog box. Other buttons may be provided to run specific functions, such as a **Find Next** button to find the next word in a word search.
 
 With WPF you can create several types of dialog boxes, such as message boxes, common dialog boxes, and custom dialog boxes. This article discusses each, and the [Dialog Box Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Windows/DialogBox) provides matching examples.
 
 ## Message boxes
 
-A *message box* is a dialog box that can be used to display textual information and to allow users to make decisions with buttons. The following figure shows a message box that asks a question and provides the user with three buttons to answer the question.
+A _message box_ is a dialog box that can be used to display textual information and to allow users to make decisions with buttons. The following figure shows a message box that asks a question and provides the user with three buttons to answer the question.
 
 :::image type="content" source="media/dialog-boxes-overview/word-processor-dialog.png" alt-text="Word processor dialog box asking if you want to save the changes to the document before the application closes.":::
 
@@ -41,7 +41,7 @@ For more information, see [How to open a message box](how-to-open-message-box.md
 
 Windows implements different kinds of reusable dialog boxes that are common to all applications, including dialog boxes for selecting files and printing.
 
-Since these dialog boxes are provided by the operating system, they're shared among all the applications that run on the operating system. These dialog boxes provide a consistent user experience, and are known as *common dialog boxes*. As a user uses a common dialog box in one application, they don't need to learn how to use that dialog box in other applications.
+Since these dialog boxes are provided by the operating system, they're shared among all the applications that run on the operating system. These dialog boxes provide a consistent user experience, and are known as _common dialog boxes_. As a user uses a common dialog box in one application, they don't need to learn how to use that dialog box in other applications.
 
 WPF encapsulates the open file, save file, and print common dialog boxes and exposes them as managed classes for you to use in standalone applications.
 

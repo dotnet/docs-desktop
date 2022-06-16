@@ -2,6 +2,7 @@
 title: "How to: Set Focus in a TextBox Control"
 description: Learn how to use the Focus method to set focus on a Windows Presentation Foundation TextBox control.
 ms.date: "03/30/2017"
+ms.custom: devdivchpfy22
 dev_langs: 
   - "csharp"
   - "vb"
@@ -13,12 +14,12 @@ ms.assetid: 24b61b45-dc2d-425e-9839-b017af7ab86f
 # How to: Set Focus in a TextBox Control
 This example shows how to use the <xref:System.Windows.UIElement.Focus%2A> method to set focus on a <xref:System.Windows.Controls.TextBox> control.  
   
-## Example  
- The following [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)] example describes a simple <xref:System.Windows.Controls.TextBox> control named *tbFocusMe*  
+## Define a simple TextBox control
+ The following Extensible Application Markup Language (XAML) example describes a simple <xref:System.Windows.Controls.TextBox> control named *tbFocusMe*  
   
  [!code-xaml[TextBox_MiscCode#_TextBoxFocusXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBox_MiscCode/CSharp/Window1.xaml#_textboxfocusxaml)]  
   
-## Example  
+## Set the focus on the TextBox control
  The following example calls the <xref:System.Windows.UIElement.Focus%2A> method to set the focus on the <xref:System.Windows.Controls.TextBox> control with the Name *tbFocusMe*.  
   
  [!code-csharp[TextBox_MiscCode#_FocusTextBox](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBox_MiscCode/CSharp/Window1.xaml.cs#_focustextbox)]

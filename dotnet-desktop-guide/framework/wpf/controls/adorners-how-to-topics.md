@@ -8,7 +8,7 @@ helpviewer_keywords:
 ms.assetid: e29d7516-d5e6-4500-bd4f-775e6f830984
 ---
 # Adorners How-to Topics
-The following examples demonstrate how to accomplish common tasks using the [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] adorner framework.  
+The following examples demonstrate how to accomplish common tasks using the Windows Presentation Foundation (WPF) adorner framework.  
   
 ## In This Section  
  [Implement an Adorner](how-to-implement-an-adorner.md)  

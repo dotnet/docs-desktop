@@ -1,6 +1,8 @@
 ---
 title: "How to: Create a 3D Scene"
+description: Learn how to create a 3D scene.
 ms.date: "03/30/2017"
+ms.custom: devdivchpfy22
 dev_langs: 
   - "csharp"
   - "vb"
@@ -20,12 +22,12 @@ This example shows how to create a 3D object that looks like a flat sheet of pap
   
 - A light is created to shine on the object using <xref:System.Windows.Media.Media3D.DirectionalLight>.  
   
-## Example  
+## Create a 3D scene in XAML
  The code below shows how to create a 3D scene in XAML.  
   
  [!code-xaml[3DGallery_snip#Basic3DShapeExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/3DGallery_snip/CS/Basic3DShapeExample.xaml#basic3dshapeexamplewholepage)]  
   
-## Example  
+## Create a 3D scene in procedural code
  The code below shows how to create the same 3D scene in procedural code.  
   
  [!code-csharp[3DGallery_procedural_snip#Basic3DShapeCodeExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/3DGallery_procedural_snip/CSharp/Basic3DShapeExample.cs#basic3dshapecodeexamplewholepage)]

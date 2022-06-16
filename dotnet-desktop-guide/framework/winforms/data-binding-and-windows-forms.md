@@ -1,7 +1,8 @@
 ---
-title: Data Binding
+title: Data Binding Overview
 description: Learn how to bind to an array of values that you calculate at runtime, read from a file, or derive from the values of other controls in Windows Forms.
-ms.date: "03/30/2017"
+ms.date: "01/17/2022"
+ms.custom: devdivchpfy22
 ms.topic: overview
 helpviewer_keywords: 
   - "master-details lists"

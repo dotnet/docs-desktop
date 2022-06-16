@@ -20,7 +20,7 @@ This example shows how to draw a polyline, which is a series of connected lines,
  The following example draws two <xref:System.Windows.Shapes.Polyline> elements inside a <xref:System.Windows.Controls.Canvas>.  
   
 ## Example  
- In [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)], valid syntax for points is a space-delimited list of comma-separated x- and y-coordinate pairs.  
+ In Extensible Application Markup Language (XAML), valid syntax for points is a space-delimited list of comma-separated x- and y-coordinate pairs.  
   
  [!code-xaml[drawingwithshapeelements#PolylineExample1](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingWithShapeElements/CS/polylineexample.xaml#polylineexample1)]  
   

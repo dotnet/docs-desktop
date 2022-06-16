@@ -14,6 +14,8 @@ helpviewer_keywords:
 
 The Windows Presentation Foundation (WPF) property system includes a dependency property metadata reporting system. The information available through the metadata reporting system exceeds what is available through reflection or general common language runtime (CLR) characteristics. When you register a dependency property, you have the option to create and assign metadata to it. If you derive from a class that defines a dependency property, you can override the metadata for the inherited dependency property. And, if you add your class as an owner of a dependency property, you can override the metadata of the inherited dependency property.
 
+[!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
+
 ## Prerequisites
 
 The article assumes a basic knowledge of dependency properties, and that you've read [Dependency properties overview](dependency-properties-overview.md). To follow the examples in this article, it helps if you're familiar with Extensible Application Markup Language (XAML) and know how to write WPF applications.
@@ -24,9 +26,9 @@ You can query dependency property metadata to examine the characteristics of a d
 
 - The default value of the dependency property, which is set by the property system when no other value applies, such as a local, style, or inheritance value. For more information about value precedence during run-time assignment of dependency property values, see [Dependency property value precedence](dependency-property-value-precedence.md).
 
-- References to coercion value callbacks and property change callbacks on the owner type. You can only obtain references to callbacks that have a `public` access modifier or are within your permitted access scope. For more information about dependency property callbacks, see [Dependency property callbacks and validation](/dotnet/desktop/wpf/advanced/dependency-property-callbacks-and-validation?view=netframeworkdesktop-4.8&preserve-view=true).
+- References to coercion value callbacks and property change callbacks on the owner type. You can only obtain references to callbacks that have a `public` access modifier or are within your permitted access scope. For more information about dependency property callbacks, see [Dependency property callbacks and validation](dependency-property-callbacks-and-validation.md).
 
-- WPF framework-level dependency property characteristics (if the dependency property is a WPF framework property). WPF processes, such as the framework layout engine and the property inheritance logic, query WPF framework-level metadata. For more information, see [Framework property metadata](/dotnet/desktop/wpf/advanced/framework-property-metadata?view=netframeworkdesktop-4.8&preserve-view=true).
+- WPF framework-level dependency property characteristics (if the dependency property is a WPF framework property). WPF processes, such as the framework layout engine and the property inheritance logic, query WPF framework-level metadata. For more information, see [Framework property metadata](framework-property-metadata.md).
 
 ## Metadata APIs
 
@@ -58,16 +60,16 @@ Example scenarios for overriding existing dependency property metadata are:
 
 - Changing the default value, which is a common scenario.
 
-- Changing or adding property-change callbacks, which might be necessary if an inherited dependency property interacts with other dependency properties differently than its base implementation does. One of the characteristics of a programming model that supports both code and markup, is that property values might be set in any order. This factor can affect how you implement property-change callbacks. For more information, see [Dependency property callbacks and validation](/dotnet/desktop/wpf/advanced/dependency-property-callbacks-and-validation?view=netframeworkdesktop-4.8&preserve-view=true).
+- Changing or adding property-change callbacks, which might be necessary if an inherited dependency property interacts with other dependency properties differently than its base implementation does. One of the characteristics of a programming model that supports both code and markup, is that property values might be set in any order. This factor can affect how you implement property-change callbacks. For more information, see [Dependency property callbacks and validation](dependency-property-callbacks-and-validation.md).
 
-- Changing WPF [framework property metadata](<xref:System.Windows.FrameworkPropertyMetadata>) options. Typically, metadata options are set during registration of a new dependency property, but you can respecify them in <xref:System.Windows.DependencyProperty.OverrideMetadata%2A> or <xref:System.Windows.DependencyProperty.AddOwner%2A> calls. For more information about overriding framework property metadata, see [Specifying metadata](/dotnet/desktop/wpf/advanced/framework-property-metadata?view=netframeworkdesktop-4.8&preserve-view=true#specifying-metadata). For how to set framework property metadata options when registering a dependency property, see [Custom dependency properties](custom-dependency-properties.md).
+- Changing WPF [framework property metadata](<xref:System.Windows.FrameworkPropertyMetadata>) options. Typically, metadata options are set during registration of a new dependency property, but you can respecify them in <xref:System.Windows.DependencyProperty.OverrideMetadata%2A> or <xref:System.Windows.DependencyProperty.AddOwner%2A> calls. For more information about overriding framework property metadata, see [Specifying FrameworkPropertyMetadata](framework-property-metadata.md#specifying-frameworkpropertymetadata). For how to set framework property metadata options when registering a dependency property, see [Custom dependency properties](custom-dependency-properties.md).
 
 > [!NOTE]
-> Since validation callbacks aren't part of metadata, they can't be changed by overriding metadata. For more information, see [Validation callbacks](/dotnet/desktop/wpf/advanced/dependency-property-callbacks-and-validation?view=netframeworkdesktop-4.8&preserve-view=true#validation-callbacks).
+> Since validation callbacks aren't part of metadata, they can't be changed by overriding metadata. For more information, see [Validation value callbacks](dependency-property-callbacks-and-validation.md#validate-value-callbacks).
 
 ## Overriding metadata
 
-When implementing a new dependency property, you can set its metadata by using overloads of the <xref:System.Windows.DependencyProperty.Register%2A> method. If your class inherits a dependency property, you can override inherited metadata values using the <xref:System.Windows.DependencyProperty.OverrideMetadata%2A> method. For example, you might use `OverrideMetadata` to set type-specific values. For more information and code samples, see [Override metadata for a dependency property](/dotnet/desktop/wpf/advanced/how-to-override-metadata-for-a-dependency-property?view=netframeworkdesktop-4.8&preserve-view=true).
+When implementing a new dependency property, you can set its metadata by using overloads of the <xref:System.Windows.DependencyProperty.Register%2A> method. If your class inherits a dependency property, you can override inherited metadata values using the <xref:System.Windows.DependencyProperty.OverrideMetadata%2A> method. For example, you might use `OverrideMetadata` to set type-specific values. For more information and code samples, see [Override metadata for a dependency property](how-to-override-metadata-for-a-dependency-property.md).
 
 An example of a WPF dependency property, is <xref:System.Windows.UIElement.Focusable%2A>. The <xref:System.Windows.FrameworkElement> class registers `Focusable`. The <xref:System.Windows.Controls.Control> class derives from `FrameworkElement`, inherits the `Focusable` dependency property, and overrides the inherited property metadata. The override changes the default property value from `false` to `true`, but preserves other inherited metadata values.
 
@@ -75,7 +77,7 @@ Since most existing dependency properties aren't virtual properties, their inher
 
 - For a <xref:System.Windows.PropertyMetadata.DefaultValue%2A>, the new value will replace the existing default value. If you don't specify a `DefaultValue` in the override metadata, the value comes from the nearest ancestor that specified `DefaultValue` in metadata.
 
-- For a <xref:System.Windows.PropertyMetadata.PropertyChangedCallback%2A>, the default merge logic stores all `PropertyChangedCallback` values in a table, and all are invoked on a property change. The callback order is determined by class depth, where the callback registered by the base class in the hierarchy runs first.
+- For a <xref:System.Windows.PropertyMetadata.PropertyChangedCallback%2A>, the default merge logic stores all `PropertyChangedCallback` values in a table, and all are invoked on a property change. The callback order is determined by class depth, where a callback registered by the base class in the hierarchy would run first.
 
 - For a <xref:System.Windows.PropertyMetadata.CoerceValueCallback%2A>, the new value will replace the existing `CoerceValueCallback` value. If you don't specify a `CoerceValueCallback` in the override metadata, the value comes from the nearest ancestor that specified `CoerceValueCallback` in metadata.
 
@@ -117,4 +119,4 @@ To inherit an attached property from another class, but expose it as a nonattach
 - <xref:System.Windows.DependencyProperty.GetMetadata%2A>
 - <xref:System.Windows.DependencyProperty.AddOwner%2A>
 - [Dependency properties overview](dependency-properties-overview.md)
-- [Framework property metadata](/dotnet/desktop/wpf/advanced/framework-property-metadata?view=netframeworkdesktop-4.8&preserve-view=true)
+- [Framework property metadata](framework-property-metadata.md)

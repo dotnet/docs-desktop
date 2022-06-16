@@ -1,0 +1,15 @@
+﻿<Window x:Class="CodeSampleVb.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Visual Basic and WPF event handling" Height="100" Width="400">
+
+    <!--<ButtonCreatedByXaml>-->
+    <StackPanel Name="StackPanel1">
+        <Button
+            Name="XamlButton"
+            Content="Create a new button with an event handler"
+            Background="LightGray">
+        </Button>
+    </StackPanel>
+    <!--</ButtonCreatedByXaml>-->
+</Window>

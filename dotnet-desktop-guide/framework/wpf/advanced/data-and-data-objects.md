@@ -30,9 +30,9 @@ Data that is transferred as part of a drag-and-drop operation is stored in a dat
 |<xref:System.Windows.IDataObject.GetFormats%2A>|Returns a list of formats that the data in this data object is stored in, or can be converted to.|  
 |<xref:System.Windows.IDataObject.SetData%2A>|Stores the specified data in this data object.|  
   
- [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] provides a basic implementation of <xref:System.Windows.IDataObject> in the <xref:System.Windows.DataObject> class. The stock <xref:System.Windows.DataObject> class is sufficient for many common data transfer scenarios.  
+ WPF provides a basic implementation of <xref:System.Windows.IDataObject> in the <xref:System.Windows.DataObject> class. The stock <xref:System.Windows.DataObject> class is sufficient for many common data transfer scenarios.  
   
- There are several pre-defined formats, such as bitmap, CSV, file, HTML, RTF, string, text, and audio. For information about pre-defined data formats provided with [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)], see the <xref:System.Windows.DataFormats> class reference topic.  
+ There are several pre-defined formats, such as bitmap, CSV, file, HTML, RTF, string, text, and audio. For information about pre-defined data formats provided with WPF, see the <xref:System.Windows.DataFormats> class reference topic.  
   
  Data objects commonly include a facility for automatically converting data stored in one format to a different format while extracting data; this facility is referred to as auto-convert. When querying for the data formats available in a data object, auto-convertible data formats can be filtered from native data formats by calling the <xref:System.Windows.DataObject.GetFormats%28System.Boolean%29> or <xref:System.Windows.DataObject.GetDataPresent%28System.String%2CSystem.Boolean%29> method and specifying the `autoConvert` parameter as `false`.  When adding data to a data object with the <xref:System.Windows.DataObject.SetData%28System.String%2CSystem.Object%2CSystem.Boolean%29> method, auto-conversion of data can be prohibited by setting the `autoConvert` parameter to `false`.  
   

@@ -11,7 +11,7 @@ ms.assetid: 74809167-bf8e-48b7-a2e7-b4ea08bc7d8c
 ---
 # Walkthrough: Mapping Properties Using the WindowsFormsHost Element
 
-This walkthrough shows you how to use the <xref:System.Windows.Forms.Integration.WindowsFormsHost.PropertyMap%2A> property to map [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] properties to corresponding properties on a hosted Windows Forms control.
+This walkthrough shows you how to use the <xref:System.Windows.Forms.Integration.WindowsFormsHost.PropertyMap%2A> property to map WPF properties to corresponding properties on a hosted Windows Forms control.
 
 Tasks illustrated in this walkthrough include:
 
@@ -27,7 +27,7 @@ Tasks illustrated in this walkthrough include:
 
 - Extending a default property mapping.
 
-When you are finished, you will be able to map [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] properties to corresponding properties on a hosted Windows Forms control.
+When you are finished, you will be able to map WPF properties to corresponding properties on a hosted Windows Forms control.
 
 ## Prerequisites
 
@@ -45,7 +45,7 @@ You need the following components to complete this walkthrough:
 
 ## Defining the Application Layout
 
-The [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)]-based application uses the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element to host a Windows Forms control.
+The WPF-based application uses the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element to host a Windows Forms control.
 
 ### To define the application layout
 

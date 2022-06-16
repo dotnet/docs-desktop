@@ -1,8 +1,6 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Windows;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace CodeSampleCsharp
 {
@@ -11,6 +9,19 @@ namespace CodeSampleCsharp
     /// </summary>
     public partial class MainWindow : Window
     {
+        public MainWindow()
+        {
+            InitializeComponent();
+
+            // Test code.
+            Aquarium aquarium = new();
+            aquarium.AquariumGraphic = new Uri("http://www.contoso.com/aquarium-graphic-new.jpg");
+            Debug.WriteLine($"Aquarium graphic: {aquarium.AquariumGraphic}");
+
+            // Output:
+            // OnUriChanged: http://www.contoso.com/aquarium-graphic-new.jpg
+            // Aquarium graphic: http://www.contoso.com/aquarium-graphic-new.jpg
+        }
     }
 
     public class Aquarium : DependencyObject
@@ -32,7 +43,7 @@ namespace CodeSampleCsharp
             );
         //</RegisterDependencyProperty>
 
-        // Declare a read-write property.
+        // Declare a read-write property wrapper.
         public Uri AquariumGraphic
         {
             get => (Uri)GetValue(AquariumGraphicProperty);
@@ -42,8 +53,8 @@ namespace CodeSampleCsharp
 
         private static void OnUriChanged(DependencyObject dependencyObject, DependencyPropertyChangedEventArgs e)
         {
-            Shape shape = (Shape)dependencyObject;
-            shape.Fill = new ImageBrush(new BitmapImage((Uri)e.NewValue));
+            Uri value = (Uri)dependencyObject.GetValue(AquariumGraphicProperty);
+            Debug.WriteLine($"OnUriChanged: {value}");
         }
     }
 }

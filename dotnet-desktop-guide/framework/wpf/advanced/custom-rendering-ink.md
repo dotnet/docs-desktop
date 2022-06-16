@@ -39,7 +39,7 @@ The <xref:System.Windows.Ink.Stroke.DrawingAttributes%2A> property of a stroke a
   
 <a name="ImplementingADynamicRenderer"></a>
 ## Implementing a Dynamic Renderer  
- Although the <xref:System.Windows.Input.StylusPlugIns.DynamicRenderer> class is a standard part of [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)], to perform more specialized rendering, you must create a customized dynamic renderer that derives from the <xref:System.Windows.Input.StylusPlugIns.DynamicRenderer> and override the <xref:System.Windows.Input.StylusPlugIns.DynamicRenderer.OnDraw%2A> method.  
+ Although the <xref:System.Windows.Input.StylusPlugIns.DynamicRenderer> class is a standard part of WPF, to perform more specialized rendering, you must create a customized dynamic renderer that derives from the <xref:System.Windows.Input.StylusPlugIns.DynamicRenderer> and override the <xref:System.Windows.Input.StylusPlugIns.DynamicRenderer.OnDraw%2A> method.  
   
  The following example demonstrates a customized <xref:System.Windows.Input.StylusPlugIns.DynamicRenderer> that draws ink with a linear gradient brush effect.  
   

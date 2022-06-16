@@ -5,7 +5,11 @@
       "build_source_folder": "dotnet-desktop-guide",
       "build_output_subfolder": "dotnet-desktop-guide",
       "locale": "en-us",
-      "moniker_ranges": ["netframeworkdesktop-4.8", "netdesktop-5.0"],
+      "moniker_ranges": [
+        "netframeworkdesktop-4.8",
+        "netdesktop-5.0",
+        "netdesktop-6.0"
+      ],
       "filemap_share_depots": [
         "VS.dotnet-api-docs"
       ],
@@ -26,22 +30,22 @@
   ],
   "sync_notification_subscribers": [],
   "branches_to_filter": [],
+  "git_repository_branch_open_to_public_contributors": "main",
   "skip_source_output_uploading": false,
   "need_preview_pull_request": true,
   "need_pr_comments": false,
-  "git_repository_branch_open_to_public_contributors": "main",
   "contribution_branch_mappings": {},
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
       "url": "https://github.com/Microsoft/templates.docs.msft",
-      "branch": "master",
+      "branch": "main",
       "branch_mapping": {}
     },
     {
       "path_to_root": "_themes.pdf",
       "url": "https://github.com/Microsoft/templates.docs.msft.pdf",
-      "branch": "master",
+      "branch": "main",
       "branch_mapping": {}
     }
   ],

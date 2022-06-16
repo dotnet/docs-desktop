@@ -2,6 +2,7 @@
 title: "RelativeSource MarkupExtension"
 description: Specifies properties of a RelativeSource binding source, within a Binding Markup Extension, or when setting the RelativeSource property of a Binding in XAML.
 ms.date: "03/30/2017"
+ms.custom: devdivchpfy22
 f1_keywords:
   - "RelativeSource"
 helpviewer_keywords:
@@ -52,8 +53,8 @@ Specifies properties of a <xref:System.Windows.Data.RelativeSource> binding sour
 
 ## XAML Values
 
-|||
-|-|-|
+| Value | Description |
+|-------|-------------|
 |`modeEnumValue`|One of the following:<br /><br /> -   The string token `Self`; corresponds to a <xref:System.Windows.Data.RelativeSource> as created with its <xref:System.Windows.Data.RelativeSource.Mode%2A> property set to <xref:System.Windows.Data.RelativeSourceMode.Self>.<br />-   The string token `TemplatedParent`; corresponds to a <xref:System.Windows.Data.RelativeSource> as created with its <xref:System.Windows.Data.RelativeSource.Mode%2A> property set to <xref:System.Windows.Data.RelativeSourceMode.TemplatedParent>.<br />-   The string token `PreviousData`; corresponds to a <xref:System.Windows.Data.RelativeSource> as created with its <xref:System.Windows.Data.RelativeSource.Mode%2A> property set to <xref:System.Windows.Data.RelativeSourceMode.PreviousData>.<br />-   See below for information on `FindAncestor` mode.|
 |`FindAncestor`|The string token `FindAncestor`. Using this token enters a mode whereby a `RelativeSource` specifies an ancestor type and optionally an ancestor level. This corresponds to a <xref:System.Windows.Data.RelativeSource> as created with its <xref:System.Windows.Data.RelativeSource.Mode%2A> property set to <xref:System.Windows.Data.RelativeSourceMode.FindAncestor>.|
 |`typeName`|Required for `FindAncestor` mode. The name of a type, which fills the <xref:System.Windows.Data.RelativeSource.AncestorType%2A> property.|
@@ -102,7 +103,7 @@ In the following example, the first <xref:System.Windows.Controls.TextBlock> in 
 
 Describing data binding as a concept is not covered here, see [Data Binding Overview](../data/data-binding-overview.md).
 
-In the [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] XAML processor implementation, the handling for this markup extension is defined by the <xref:System.Windows.Data.RelativeSource> class.
+In the WPF XAML processor implementation, the handling for this markup extension is defined by the <xref:System.Windows.Data.RelativeSource> class.
 
 `RelativeSource` is a markup extension. Markup extensions are typically implemented when there is a requirement to escape attribute values to be other than literal values or handler names, and the requirement is more global than just putting type converters on certain types or properties. All markup extensions in XAML use the `{` and `}` characters in their attribute syntax, which is the convention by which a XAML processor recognizes that a markup extension must process the attribute. For more information, see [Markup Extensions and WPF XAML](markup-extensions-and-wpf-xaml.md).
 

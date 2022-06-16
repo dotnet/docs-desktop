@@ -1,6 +1,8 @@
 ---
 title: "x:ClassModifier Directive"
+description: Learn about the x:ClassModifier Directive.
 ms.date: "03/30/2017"
+ms.custom: devdivchpfy22
 f1_keywords: 
   - "xClassModifier"
   - "x:ClassModifier"
@@ -25,8 +27,8 @@ Modifies XAML compilation behavior when `x:Class` is also provided. Specifically
 
 ## XAML Values
 
-|||
-|-|-|
+| Value | Description |
+|-------|-------------|
 |*NotPublic*|The exact string to pass to specify <xref:System.Reflection.TypeAttributes.Public?displayProperty=nameWithType> versus <xref:System.Reflection.TypeAttributes.NotPublic?displayProperty=nameWithType> varies, depending on the code-behind programming language that you use. See Remarks.|
 
 ## Dependencies

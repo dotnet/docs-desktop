@@ -11,7 +11,7 @@ helpviewer_keywords:
 ms.assetid: 005f4cda-a849-448b-916b-38d14d9a96fe
 ---
 # Optimizing Performance: Layout and Design
-The design of your [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] application can impact its performance by creating unnecessary overhead in calculating layout and validating object references. The construction of objects, particularly at run time, can affect the performance characteristics of your application.  
+The design of your WPF application can impact its performance by creating unnecessary overhead in calculating layout and validating object references. The construction of objects, particularly at run time, can affect the performance characteristics of your application.  
   
  This topic provides performance recommendations in these areas.  
   

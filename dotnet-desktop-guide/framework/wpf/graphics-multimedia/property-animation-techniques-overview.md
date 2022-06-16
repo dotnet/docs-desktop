@@ -24,9 +24,9 @@ This topic describes the different approaches for animating properties: storyboa
 
 ## Different Ways to Animate  
 
- Because there are many different scenarios for animating properties, [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] provides several approaches for animating properties.  
+ Because there are many different scenarios for animating properties, WPF provides several approaches for animating properties.  
   
- For each approach, the following table indicates whether it can be used per-instance, in styles, in control templates, or in data templates; whether it can be used in [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)]; and whether the approach enables you to interactively control the animation.  "Per-Instance" refers to the technique of applying an animation or storyboard directly to instances of an object, rather than in a style, control template, or data template.  
+ For each approach, the following table indicates whether it can be used per-instance, in styles, in control templates, or in data templates; whether it can be used in XAML; and whether the approach enables you to interactively control the animation.  "Per-Instance" refers to the technique of applying an animation or storyboard directly to instances of an object, rather than in a style, control template, or data template.  
   
 |Animation technique|Scenarios|Supports XAML|Interactively controllable|  
 |-------------------------|---------------|-------------------|--------------------------------|  
@@ -39,7 +39,7 @@ This topic describes the different approaches for animating properties: storyboa
 
 ## Storyboard Animations  
 
- Use a <xref:System.Windows.Media.Animation.Storyboard> when you want to define and apply your animations in [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)], interactively control your animations after they start, create a complex tree of animations, or animate in a <xref:System.Windows.Style>, <xref:System.Windows.Controls.ControlTemplate> or <xref:System.Windows.DataTemplate>. For an object to be animated by a <xref:System.Windows.Media.Animation.Storyboard>, it must be a <xref:System.Windows.FrameworkElement> or <xref:System.Windows.FrameworkContentElement>, or it must be used to set a <xref:System.Windows.FrameworkElement> or <xref:System.Windows.FrameworkContentElement>. For more details, see the [Storyboards Overview](storyboards-overview.md).  
+ Use a <xref:System.Windows.Media.Animation.Storyboard> when you want to define and apply your animations in XAML, interactively control your animations after they start, create a complex tree of animations, or animate in a <xref:System.Windows.Style>, <xref:System.Windows.Controls.ControlTemplate> or <xref:System.Windows.DataTemplate>. For an object to be animated by a <xref:System.Windows.Media.Animation.Storyboard>, it must be a <xref:System.Windows.FrameworkElement> or <xref:System.Windows.FrameworkContentElement>, or it must be used to set a <xref:System.Windows.FrameworkElement> or <xref:System.Windows.FrameworkContentElement>. For more details, see the [Storyboards Overview](storyboards-overview.md).  
   
  A <xref:System.Windows.Media.Animation.Storyboard> is a special type of container <xref:System.Windows.Media.Animation.Timeline> that provides targeting information for the animations it contains. To animate with a <xref:System.Windows.Media.Animation.Storyboard>, you complete the following three steps.  
   
@@ -51,7 +51,7 @@ This topic describes the different approaches for animating properties: storyboa
   
 4. Begin the <xref:System.Windows.Media.Animation.Storyboard>.  
   
- Beginning a <xref:System.Windows.Media.Animation.Storyboard> applies animations to the properties they animate and starts them. There are two ways to begin a <xref:System.Windows.Media.Animation.Storyboard>: you can use the <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method provided by the <xref:System.Windows.Media.Animation.Storyboard> class, or you can use a <xref:System.Windows.Media.Animation.BeginStoryboard> action. The only way to animate in [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] is to use a <xref:System.Windows.Media.Animation.BeginStoryboard> action. A <xref:System.Windows.Media.Animation.BeginStoryboard> action can be used in an <xref:System.Windows.EventTrigger>, property <xref:System.Windows.Trigger>, or a <xref:System.Windows.DataTrigger>.  
+ Beginning a <xref:System.Windows.Media.Animation.Storyboard> applies animations to the properties they animate and starts them. There are two ways to begin a <xref:System.Windows.Media.Animation.Storyboard>: you can use the <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method provided by the <xref:System.Windows.Media.Animation.Storyboard> class, or you can use a <xref:System.Windows.Media.Animation.BeginStoryboard> action. The only way to animate in XAML is to use a <xref:System.Windows.Media.Animation.BeginStoryboard> action. A <xref:System.Windows.Media.Animation.BeginStoryboard> action can be used in an <xref:System.Windows.EventTrigger>, property <xref:System.Windows.Trigger>, or a <xref:System.Windows.DataTrigger>.  
   
  The following table shows the different places where each <xref:System.Windows.Media.Animation.Storyboard> begin technique is supported: per-instance, style, control template, and data template.  
   
@@ -84,7 +84,7 @@ This topic describes the different approaches for animating properties: storyboa
   
 ## Clock Animations  
 
- Use <xref:System.Windows.Media.MediaPlayer.Clock%2A> objects when you want to animate without using a <xref:System.Windows.Media.Animation.Storyboard> and you want to create complex timing trees or interactively control animations after they start. You can use Clock objects to animate a dependency property of any <xref:System.Windows.Media.Animation.Animatable> object.  
+ Use <xref:System.Windows.Media.Animation.Clock> objects when you want to animate without using a <xref:System.Windows.Media.Animation.Storyboard> and you want to create complex timing trees or interactively control animations after they start. You can use Clock objects to animate a dependency property of any <xref:System.Windows.Media.Animation.Animatable> object.  
   
  You cannot use <xref:System.Windows.Media.Animation.Clock> objects directly to animate in styles, control templates, or data templates. (The animation and timing system actually does use <xref:System.Windows.Media.Animation.Clock> objects to animate in styles, control templates, and data templates, but it must create those <xref:System.Windows.Media.Animation.Clock> objects for you from a <xref:System.Windows.Media.Animation.Storyboard>. For more information about the relationship between <xref:System.Windows.Media.Animation.Storyboard> objects and <xref:System.Windows.Media.Animation.Clock> objects, see the [Animation and Timing System Overview](animation-and-timing-system-overview.md).)  
   
@@ -113,11 +113,11 @@ This topic describes the different approaches for animating properties: storyboa
   
 ## Per-Frame Animation: Bypass the Animation and Timing System  
 
- Use this approach when you need to completely bypass the [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] animation system. One scenario for this approach is physics animations, where each step in the animation requires objects to be recomputed based on the last set of object interactions.  
+ Use this approach when you need to completely bypass the WPF animation system. One scenario for this approach is physics animations, where each step in the animation requires objects to be recomputed based on the last set of object interactions.  
   
  Per-frame animations cannot be defined inside styles, control templates, or data templates.  
   
- To animate frame-by-frame, you register for the <xref:System.Windows.Media.CompositionTarget.Rendering> event of the object that contains the objects you want to animate. This event handler method gets called once per frame. Each time that [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] marshals the persisted rendering data in the visual tree across to the composition tree, your event handler method is called.  
+ To animate frame-by-frame, you register for the <xref:System.Windows.Media.CompositionTarget.Rendering> event of the object that contains the objects you want to animate. This event handler method gets called once per frame. Each time that WPF marshals the persisted rendering data in the visual tree across to the composition tree, your event handler method is called.  
   
  In your event handler, perform whatever calculations are necessary for your animation effect and set the properties of the objects you want to animate with these values.  
   

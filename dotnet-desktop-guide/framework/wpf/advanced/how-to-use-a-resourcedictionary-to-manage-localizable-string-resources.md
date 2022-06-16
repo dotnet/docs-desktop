@@ -26,7 +26,7 @@ This example shows how to use a <xref:System.Windows.ResourceDictionary> to pack
   
      [!code-xaml[StringLocalizationSample#ReferencingStringResourceDictionary](~/samples/snippets/csharp/VS_Snippets_Wpf/StringLocalizationSample/CSharp/App.xaml#referencingstringresourcedictionary)]  
   
-3. Use the string resource from markup, using [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)] like the following.  
+3. Use the string resource from markup, using Extensible Application Markup Language (XAML) like the following.  
   
      [!code-xaml[StringLocalizationSample#GetLocalizedResourceFromMarkup](~/samples/snippets/csharp/VS_Snippets_Wpf/StringLocalizationSample/CSharp/MainWindow.xaml#getlocalizedresourcefrommarkup)]  
   

@@ -74,7 +74,7 @@ After Windows Presentation Foundation (WPF) applications are built, they need to
   
 - Standalone applications.  
   
-- Markup-only [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] applications.  
+- Markup-only XAML applications.  
   
 - XAML browser applications (XBAPs).  
   
@@ -88,11 +88,11 @@ After Windows Presentation Foundation (WPF) applications are built, they need to
 
 ### Deploying Markup-Only XAML Applications  
 
- Markup-only [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] pages are usually published to Web servers, like HTML pages, and can be viewed using Internet Explorer. Markup-only [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] pages run within a partial-trust security sandbox with restrictions that are defined by the Internet zone permission set. This provides an equivalent security sandbox to HTML-based Web applications.  
+ Markup-only XAML pages are usually published to Web servers, like HTML pages, and can be viewed using Internet Explorer. Markup-only XAML pages run within a partial-trust security sandbox with restrictions that are defined by the Internet zone permission set. This provides an equivalent security sandbox to HTML-based Web applications.  
   
  For more information about security for WPF applications, see [Security](../security-wpf.md).  
   
- Markup-only [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] pages can be installed to the local file system by using either XCopy or Windows Installer. These pages can be viewed using Internet Explorer or Windows Explorer.  
+ Markup-only XAML pages can be installed to the local file system by using either XCopy or Windows Installer. These pages can be viewed using Internet Explorer or Windows Explorer.  
   
  For more information about XAML, see [XAML in WPF](../advanced/xaml-in-wpf.md).  
   
@@ -111,7 +111,7 @@ After Windows Presentation Foundation (WPF) applications are built, they need to
 > [!NOTE]
 > For more information about deployment and application manifests, see [Building a WPF Application](building-a-wpf-application-wpf.md).  
   
- These files are produced when an XBAP is built. For more information, see [How to: Create a New WPF Browser Application Project](/previous-versions/visualstudio/visual-studio-2010/bb628663(v=vs.100)). Like markup-only [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] pages, XBAPs are typically published to a Web server and viewed using Internet Explorer.  
+ These files are produced when an XBAP is built. For more information, see [How to: Create a New WPF Browser Application Project](/previous-versions/visualstudio/visual-studio-2010/bb628663(v=vs.100)). Like markup-only XAML pages, XBAPs are typically published to a Web server and viewed using Internet Explorer.  
   
  XBAPs can be deployed to clients using any of the deployment techniques. However, ClickOnce is recommended since it provides the following capabilities:  
   

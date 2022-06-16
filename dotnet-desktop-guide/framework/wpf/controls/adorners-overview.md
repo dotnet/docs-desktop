@@ -2,6 +2,7 @@
 title: "Adorners Overview"
 description: Learn about Windows Presentation Foundation Adorners, a special type of FrameworkElement that provides cues to a user, such as functional handles for elements.
 ms.date: "03/30/2017"
+ms.custom: devdivchpfy22
 ms.topic: overview
 dev_langs:
   - "csharp"
@@ -25,17 +26,17 @@ Common applications for adorners include:
 - Overlay visual decorations on a <xref:System.Windows.UIElement>.
 - Visually mask or override part or all of a <xref:System.Windows.UIElement>.
 
-[!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] provides a basic framework for adorning visual elements. The following table lists the primary types used when adorning objects, and their purpose. Several usage examples follow:
+Windows Presentation Foundation (WPF) provides a basic framework for adorning visual elements. The following table lists the primary types used when adorning objects, and their purpose. Several usage examples follow:
 
-|||
-|-|-|
+| Class | Description |
+|------|-------------|
 |<xref:System.Windows.Documents.Adorner>|An abstract base class from which all concrete adorner implementations inherit.|
 |<xref:System.Windows.Documents.AdornerLayer>|A class representing a rendering layer for the adorner(s) of one or more adorned elements.|
 |<xref:System.Windows.Documents.AdornerDecorator>|A class that enables an adorner layer to be associated with a collection of elements.|
 
 ## Implementing a Custom Adorner
 
-The adorners framework provided by [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] is intended primarily to support the creation of custom adorners. A custom adorner is created by implementing a class that inherits from the abstract <xref:System.Windows.Documents.Adorner> class.
+The adorners framework provided by Windows Presentation Foundation (WPF) is intended primarily to support the creation of custom adorners. A custom adorner is created by implementing a class that inherits from the abstract <xref:System.Windows.Documents.Adorner> class.
 
 > [!NOTE]
 > The parent of an <xref:System.Windows.Documents.Adorner> is the <xref:System.Windows.Documents.AdornerLayer> that renders the <xref:System.Windows.Documents.Adorner>, not the element being adorned.
@@ -76,7 +77,7 @@ To bind an adorner to a particular <xref:System.Windows.UIElement>, follow these
  [!code-vb[Adorners_SimpleCircleAdorner#_AdornSingleElement](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Adorners_SimpleCircleAdorner/VisualBasic/Window1.xaml.vb#_adornsingleelement)]
 
 > [!NOTE]
-> Using [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)] to bind an adorner to another element is currently not supported.
+> Using Extensible Application Markup Language (XAML) to bind an adorner to another element is currently not supported.
 
 ## Adorning the Children of a Panel
 

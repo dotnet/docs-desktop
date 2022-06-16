@@ -1,6 +1,8 @@
 ---
 title: "Transforms Overview"
+description: Learn about the transformations.
 ms.date: "03/30/2017"
+ms.custom: devdivchpfy22
 helpviewer_keywords: 
   - "transformations [WPF], about transformations"
   - "classes [WPF], 2D transform"
@@ -23,12 +25,12 @@ This topic describes how to use the 2D <xref:System.Windows.Media.Transform> cla
 > [!NOTE]
 > Windows Presentation Foundation (WPF) uses row-major matrices. Vectors are expressed as row-vectors, not column vectors.  
   
- The following table shows the structure of a [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] matrix.  
+ The following table shows the structure of a WPF matrix.  
   
 ### A 2D transformation matrix  
   
-||||  
-|-|-|-|  
+| X-axis| Y-axis| Affine transformation |  
+|-------|-------|-----------------------|  
 |<xref:System.Windows.Media.Matrix.M11%2A><br /><br /> Default: 1.0|<xref:System.Windows.Media.Matrix.M12%2A><br /><br /> Default: 0.0|0.0|  
 |<xref:System.Windows.Media.Matrix.M21%2A><br /><br /> Default: 0.0|<xref:System.Windows.Media.Matrix.M22%2A><br /><br /> Default: 1.0|0.0|  
 |<xref:System.Windows.Media.Matrix.OffsetX%2A><br /><br /> Default: 0.0|<xref:System.Windows.Media.Matrix.OffsetY%2A><br /><br /> Default: 0.0|1.0|  
@@ -101,7 +103,7 @@ A Rectangle element rotated 45 degrees about the point (25, 25)
   
  Which property should you use? Because of the performance benefits that it provides, use the <xref:System.Windows.UIElement.RenderTransform%2A> property whenever possible, especially when you use animated <xref:System.Windows.Media.Transform> objects. Use the <xref:System.Windows.FrameworkElement.LayoutTransform%2A> property when scaling, rotating, or skewing and you need the  parent of the element to adjust to the transformed size of the element. Note that, when they are used with the <xref:System.Windows.FrameworkElement.LayoutTransform%2A> property, <xref:System.Windows.Media.TranslateTransform> objects appear to have no effect on elements. That is because the layout system returns the translated element to its original position as part of its processing.  
   
- For additional information about layout in [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)], see [Layout](../advanced/layout.md) overview.  
+ For additional information about layout in Windows Presentation Foundation (WPF), see [Layout](../advanced/layout.md) overview.  
   
 <a name="exampleRotateAnElement45degSection"></a>
 ## Example: Rotate a FrameworkElement 45 Degrees  

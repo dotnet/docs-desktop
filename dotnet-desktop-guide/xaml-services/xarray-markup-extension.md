@@ -1,6 +1,8 @@
 ---
 title: "x:Array Markup Extension"
+description: Learn about the x:Array Markup Extension.
 ms.date: "03/30/2017"
+ms.custom: devdivchpfy22
 f1_keywords: 
   - "x:Array"
   - "xArray"
@@ -23,8 +25,8 @@ Provides general support for arrays of objects in XAML through a markup extensio
 
 ## XAML Values
 
-|||
-|-|-|
+| Value | Description |
+|-------|-------------|
 |`typeName`|The name of the type that your `x:Array` will contain. `typeName` may be (and often is) prefixed for a XAML namespace that contains the XAML type definitions.|
 |`arrayContents`|The items content that is assigned to the intrinsic `ArrayExtension.Items` property. Typically, these items are specified as one or more object elements contained within the `x:Array` opening and closing tags. Objects specified here are expected to be assignable to the XAML type specified in `typeName`.|
 
@@ -48,7 +50,7 @@ In XAML 2009, `x:Array` is defined as a language primitive instead of a markup e
 
 ## WPF Usage Notes
 
-Typically, the object elements that populate an `x:Array` are not elements that exist in the [!INCLUDE[TLA2#tla_winclient](../includes/tla2sharptla-winclient-md.md)] XAML namespace, and require a prefix mapping to a non-default XAML namespace.
+Typically, the object elements that populate an `x:Array` are not elements that exist in the WPF XAML namespace, and require a prefix mapping to a non-default XAML namespace.
 
 For example, the following is a simple array of two strings, with the `sys` prefix (and also `x`) defined at the level of the array.
 

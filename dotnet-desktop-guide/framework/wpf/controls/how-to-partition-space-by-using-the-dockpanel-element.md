@@ -12,7 +12,7 @@ helpviewer_keywords:
 ms.assetid: a219b9e5-b205-4438-89b5-0a137ac463ab
 ---
 # How to: Partition Space by Using the DockPanel Element
-The following example creates a simple [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)] framework using a <xref:System.Windows.Controls.DockPanel> element. The <xref:System.Windows.Controls.DockPanel> partitions available space to its child elements.  
+The following example creates a simple user interface (UI) framework using a <xref:System.Windows.Controls.DockPanel> element. The <xref:System.Windows.Controls.DockPanel> partitions available space to its child elements.  
   
 ## Example  
  This example uses the <xref:System.Windows.Controls.DockPanel.Dock%2A> property, which is an attached property, to dock two identical <xref:System.Windows.Controls.Border> elements at the <xref:System.Windows.Controls.Dock.Top> of the partitioned space. A third <xref:System.Windows.Controls.Border> element is docked to the <xref:System.Windows.Controls.Dock.Left>, with its width set to 200 pixels. A fourth <xref:System.Windows.Controls.Border> is docked to the <xref:System.Windows.Controls.Dock.Bottom> of the screen. The last <xref:System.Windows.Controls.Border> element automatically fills the remaining space.  

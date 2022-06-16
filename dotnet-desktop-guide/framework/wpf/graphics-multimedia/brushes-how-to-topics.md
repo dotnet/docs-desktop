@@ -9,7 +9,7 @@ helpviewer_keywords:
 ms.assetid: 43e7f798-9558-4498-b5b6-4a4c6baf956b
 ---
 # Brushes How-to Topics
-The following topics demonstrate how to use [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] brushes in order to paint content to the screen.  
+The following topics demonstrate how to use Windows Presentation Foundation (WPF) brushes in order to paint content to the screen.  
   
 ## In This Section  
  [Animate the Color or Opacity of a SolidColorBrush](how-to-animate-the-color-or-opacity-of-a-solidcolorbrush.md)  

@@ -2,7 +2,7 @@
     "redirections": [
         {
             "source_path": "dotnet-desktop-guide/net/winforms/windows-forms-overview.md",
-            "redirect_url": "/dotnet/desktop/winforms/overview/?view=netdesktop-5.0"
+            "redirect_url": "/dotnet/desktop/winforms/overview/?view=netdesktop-6.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/overview/index.md",
@@ -10,7 +10,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/how-to-create-a-windows-forms-application-from-the-command-line.md",
-            "redirect_url": "/dotnet/desktop/winforms/get-started/create-app-visual-studio?view=netdesktop-5.0"
+            "redirect_url": "/dotnet/desktop/winforms/get-started/create-app-visual-studio?view=netdesktop-6.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/get-started/create-app-visual-studio.md",
@@ -18,7 +18,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/events-overview-windows-forms.md",
-            "redirect_url": "/dotnet/desktop/winforms/forms/events?view=netdesktop-5.0"
+            "redirect_url": "/dotnet/desktop/winforms/forms/events?view=netdesktop-6.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/forms/events.md",
@@ -26,7 +26,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/automatic-scaling-in-windows-forms.md",
-            "redirect_url": "/dotnet/desktop/winforms/forms/autoscale?view=netdesktop-5.0"
+            "redirect_url": "/dotnet/desktop/winforms/forms/autoscale?view=netdesktop-6.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/forms/autoscale.md",
@@ -34,7 +34,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/how-to-resize-windows-forms.md",
-            "redirect_url": "/dotnet/desktop/winforms/forms/how-to-position-and-resize?view=netdesktop-5.0"
+            "redirect_url": "/dotnet/desktop/winforms/forms/how-to-position-and-resize?view=netdesktop-6.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/forms/how-to-position-and-resize.md",
@@ -42,7 +42,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/controls/layout-in-windows-forms-controls.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls/layout?view=netdesktop-5.0"
+            "redirect_url": "/dotnet/desktop/winforms/controls/layout?view=netdesktop-6.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/controls/layout.md",
@@ -50,7 +50,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/controls/label-control-overview-windows-forms.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls/labels?view=netdesktop-5.0"
+            "redirect_url": "/dotnet/desktop/winforms/controls/labels?view=netdesktop-6.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/controls/labels.md",
@@ -58,7 +58,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/controls/varieties-of-custom-controls.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls/custom?view=netdesktop-5.0"
+            "redirect_url": "/dotnet/desktop/winforms/controls/custom?view=netdesktop-6.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/controls/custom.md",
@@ -66,7 +66,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/controls/custom-control-painting-and-rendering.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls/custom-painting-drawing?view=netdesktop-5.0"
+            "redirect_url": "/dotnet/desktop/winforms/controls/custom-painting-drawing?view=netdesktop-6.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/controls/custom-painting-drawing.md",
@@ -74,7 +74,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/controls/how-to-add-controls-to-windows-forms.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-add-to-a-form?view=netdesktop-5.0"
+            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-add-to-a-form?view=netdesktop-6.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/controls/how-to-add-to-a-form.md",
@@ -82,7 +82,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/controls/how-to-create-access-keys-for-windows-forms-controls.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-create-access-keys?view=netdesktop-5.0"
+            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-create-access-keys?view=netdesktop-6.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/controls/how-to-create-access-keys.md",
@@ -90,7 +90,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/controls/how-to-set-the-text-displayed-by-a-windows-forms-control.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-set-the-display-text?view=netdesktop-5.0"
+            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-set-the-display-text?view=netdesktop-6.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/controls/how-to-set-the-display-text.md",
@@ -98,7 +98,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/controls/how-to-set-the-image-displayed-by-a-windows-forms-control.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-add-a-picture-to-a-control?view=netdesktop-5.0"
+            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-add-a-picture-to-a-control?view=netdesktop-6.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/controls/how-to-add-a-picture-to-a-control.md",
@@ -106,7 +106,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/keyboard-input-in-a-windows-forms-application.md",
-            "redirect_url": "/dotnet/desktop/winforms/input-keyboard/overview?view=netdesktop-5.0"
+            "redirect_url": "/dotnet/desktop/winforms/input-keyboard/overview?view=netdesktop-6.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/input-keyboard/overview.md",
@@ -114,7 +114,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/using-keyboard-events.md",
-            "redirect_url": "/dotnet/desktop/winforms/input-keyboard/events?view=netdesktop-5.0"
+            "redirect_url": "/dotnet/desktop/winforms/input-keyboard/events?view=netdesktop-6.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/input-keyboard/events.md",
@@ -122,7 +122,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/user-input-validation-in-windows-forms.md",
-            "redirect_url": "/dotnet/desktop/winforms/input-keyboard/validation?view=netdesktop-5.0"
+            "redirect_url": "/dotnet/desktop/winforms/input-keyboard/validation?view=netdesktop-6.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/input-keyboard/validation.md",
@@ -130,7 +130,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/how-to-modify-keyboard-input-to-a-standard-control.md",
-            "redirect_url": "/dotnet/desktop/winforms/input-keyboard/how-to-change-key-press?view=netdesktop-5.0"
+            "redirect_url": "/dotnet/desktop/winforms/input-keyboard/how-to-change-key-press?view=netdesktop-6.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/input-keyboard/how-to-change-key-press.md",
@@ -138,7 +138,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/how-to-determine-which-modifier-key-was-pressed.md",
-            "redirect_url": "/dotnet/desktop/winforms/input-keyboard/how-to-check-modifier-key?view=netdesktop-5.0"
+            "redirect_url": "/dotnet/desktop/winforms/input-keyboard/how-to-check-modifier-key?view=netdesktop-6.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/input-keyboard/how-to-check-modifier-key.md",
@@ -146,7 +146,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/how-to-handle-keyboard-input-at-the-form-level.md",
-            "redirect_url": "/dotnet/desktop/winforms/input-keyboard/how-to-handle-forms?view=netdesktop-5.0"
+            "redirect_url": "/dotnet/desktop/winforms/input-keyboard/how-to-handle-forms?view=netdesktop-6.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/input-keyboard/how-to-handle-forms.md",
@@ -158,7 +158,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/mouse-input-in-a-windows-forms-application.md",
-            "redirect_url": "/dotnet/desktop/winforms/input-mouse/overview?view=netdesktop-5.0"
+            "redirect_url": "/dotnet/desktop/winforms/input-mouse/overview?view=netdesktop-6.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/input-mouse/overview.md",
@@ -166,7 +166,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/mouse-events-in-windows-forms.md",
-            "redirect_url": "/dotnet/desktop/winforms/input-mouse/events?view=netdesktop-5.0"
+            "redirect_url": "/dotnet/desktop/winforms/input-mouse/events?view=netdesktop-6.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/input-mouse/events.md",
@@ -174,7 +174,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/drag-and-drop-functionality-in-windows-forms.md",
-            "redirect_url": "/dotnet/desktop/winforms/input-mouse/drag-and-drop?view=netdesktop-5.0"
+            "redirect_url": "/dotnet/desktop/winforms/input-mouse/drag-and-drop?view=netdesktop-6.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/input-mouse/drag-and-drop.md",
@@ -182,7 +182,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/mouse-pointers-in-windows-forms.md",
-            "redirect_url": "/dotnet/desktop/winforms/input-mouse/how-to-manage-cursor-pointer?view=netdesktop-5.0"
+            "redirect_url": "/dotnet/desktop/winforms/input-mouse/how-to-manage-cursor-pointer?view=netdesktop-6.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/input-mouse/how-to-manage-cursor-pointer.md",
@@ -190,7 +190,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/how-to-simulate-mouse-and-keyboard-events-in-code.md",
-            "redirect_url": "/dotnet/desktop/winforms/input-mouse/how-to-simulate-events?view=netdesktop-5.0"
+            "redirect_url": "/dotnet/desktop/winforms/input-mouse/how-to-simulate-events?view=netdesktop-6.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/input-mouse/how-to-simulate-events.md",
@@ -198,7 +198,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/how-to-distinguish-between-clicks-and-double-clicks.md",
-            "redirect_url": "/dotnet/desktop/winforms/input-mouse/how-to-distinguish-between-clicks-and-double-clicks?view=netdesktop-5.0"
+            "redirect_url": "/dotnet/desktop/winforms/input-mouse/how-to-distinguish-between-clicks-and-double-clicks?view=netdesktop-6.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/input-mouse/how-to-distinguish-between-clicks-and-double-clicks.md",
@@ -206,31 +206,31 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/creating-event-handlers-in-windows-forms.md",
-            "redirect_url": "/dotnet/desktop/winforms/forms/events?view=netdesktop-5.0"
+            "redirect_url": "/dotnet/desktop/winforms/forms/events?view=netdesktop-6.0"
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/controls/control-type-recommendations.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls/custom?view=netdesktop-5.0"
+            "redirect_url": "/dotnet/desktop/winforms/controls/custom?view=netdesktop-6.0"
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/controls/rendering-a-windows-forms-control.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls/custom-painting-drawing?view=netdesktop-5.0"
+            "redirect_url": "/dotnet/desktop/winforms/controls/custom-painting-drawing?view=netdesktop-6.0"
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/controls/user-drawn-controls.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls/custom-painting-drawing?view=netdesktop-5.0"
+            "redirect_url": "/dotnet/desktop/winforms/controls/custom-painting-drawing?view=netdesktop-6.0"
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/how-keyboard-input-works.md",
-            "redirect_url": "/dotnet/desktop/winforms/input-keyboard/overview?view=netdesktop-5.0"
+            "redirect_url": "/dotnet/desktop/winforms/input-keyboard/overview?view=netdesktop-6.0"
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/how-mouse-input-works-in-windows-forms.md",
-            "redirect_url": "/dotnet/desktop/winforms/input-mouse/overview?view=netdesktop-5.0"
+            "redirect_url": "/dotnet/desktop/winforms/input-mouse/overview?view=netdesktop-6.0"
         },
         {
             "source_path": "dotnet-desktop-guide/net/wpf/introduction-to-wpf.md",
-            "redirect_url": "/dotnet/desktop/wpf/overview/?view=netdesktop-5.0"
+            "redirect_url": "/dotnet/desktop/wpf/overview/?view=netdesktop-6.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/wpf/overview/index.md",
@@ -238,7 +238,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/wpf/getting-started/walkthrough-my-first-wpf-desktop-application.md",
-            "redirect_url": "/dotnet/desktop/wpf/get-started/create-app-visual-studio?view=netdesktop-5.0"
+            "redirect_url": "/dotnet/desktop/wpf/get-started/create-app-visual-studio?view=netdesktop-6.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/wpf/get-started/create-app-visual-studio.md",
@@ -246,7 +246,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/wpf/app-development/wpf-windows-overview.md",
-            "redirect_url": "/dotnet/desktop/wpf/windows/index?view=netdesktop-5.0"
+            "redirect_url": "/dotnet/desktop/wpf/windows/index?view=netdesktop-6.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/wpf/windows/index.md",
@@ -254,7 +254,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/wpf/app-development/dialog-boxes-overview.md",
-            "redirect_url": "/dotnet/desktop/wpf/windows/dialog-boxes-overview?view=netdesktop-5.0"
+            "redirect_url": "/dotnet/desktop/wpf/windows/dialog-boxes-overview?view=netdesktop-6.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/wpf/windows/dialog-boxes-overview.md",
@@ -262,7 +262,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/wpf/app-development/how-to-open-a-window.md",
-            "redirect_url": "/dotnet/desktop/wpf/windows/how-to-open-window-dialog-box?view=netdesktop-5.0"
+            "redirect_url": "/dotnet/desktop/wpf/windows/how-to-open-window-dialog-box?view=netdesktop-6.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/wpf/windows/how-to-open-window-dialog-box.md",
@@ -270,15 +270,15 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/wpf/app-development/how-to-open-a-dialog-box.md",
-            "redirect_url": "/dotnet/desktop/wpf/windows/how-to-open-window-dialog-box?view=netdesktop-5.0"
+            "redirect_url": "/dotnet/desktop/wpf/windows/how-to-open-window-dialog-box?view=netdesktop-6.0"
         },
         {
             "source_path": "dotnet-desktop-guide/net/wpf/how-to-return-a-dialog-box-result.md",
-            "redirect_url": "/dotnet/desktop/wpf/windows/how-to-open-window-dialog-box?view=netdesktop-5.0"
+            "redirect_url": "/dotnet/desktop/wpf/windows/how-to-open-window-dialog-box?view=netdesktop-6.0"
         },
         {
             "source_path": "dotnet-desktop-guide/net/wpf/app-development/how-to-open-a-message-box.md",
-            "redirect_url": "/dotnet/desktop/wpf/windows/how-to-open-message-box?view=netdesktop-5.0"
+            "redirect_url": "/dotnet/desktop/wpf/windows/how-to-open-message-box?view=netdesktop-6.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/wpf/windows/how-to-open-message-box.md",
@@ -286,7 +286,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/wpf/app-development/how-to-get-and-set-the-main-application-window.md",
-            "redirect_url": "/dotnet/desktop/wpf/windows/how-to-get-set-main-application-window?view=netdesktop-5.0"
+            "redirect_url": "/dotnet/desktop/wpf/windows/how-to-get-set-main-application-window?view=netdesktop-6.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/wpf/windows/how-to-get-set-main-application-window.md",
@@ -294,12 +294,12 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/wpf/data/data-binding-overview.md",
-            "redirect_url": "/dotnet/desktop/wpf/data/index?view=netdesktop-5.0",
+            "redirect_url": "/dotnet/desktop/wpf/data/index?view=netdesktop-6.0",
             "redirect_document_id": true
         },
         {
             "source_path": "dotnet-desktop-guide/net/wpf/advanced/xaml-in-wpf.md",
-            "redirect_url": "/dotnet/desktop/wpf/xaml/index?view=netdesktop-5.0"
+            "redirect_url": "/dotnet/desktop/wpf/xaml/index?view=netdesktop-6.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/wpf/xaml/index.md",
@@ -307,27 +307,27 @@
         },
         {
             "source_path": "dotnet-desktop-guide/framework/wpf/fundamentals/xaml.md",
-            "redirect_url": "/dotnet/desktop/wpf/xaml/index?view=netdesktop-5.0"
+            "redirect_url": "/dotnet/desktop/wpf/xaml/index?view=netdesktop-6.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/wpf/fundamentals/xaml-resources-define.md",
-            "redirect_url": "/dotnet/desktop/wpf/systems/xaml-resources-overview?view=netdesktop-5.0"
+            "redirect_url": "/dotnet/desktop/wpf/systems/xaml-resources-overview?view=netdesktop-6.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/wpf/fundamentals/styles-templates-overview.md",
-            "redirect_url": "/dotnet/desktop/wpf/controls/styles-templates-overview?view=netdesktop-5.0"
+            "redirect_url": "/dotnet/desktop/wpf/controls/styles-templates-overview?view=netdesktop-6.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/wpf/fundamentals/styles-templates-create-apply-style.md",
-            "redirect_url": "/dotnet/desktop/wpf/controls/how-to-create-apply-style?view=netdesktop-5.0"
+            "redirect_url": "/dotnet/desktop/wpf/controls/how-to-create-apply-style?view=netdesktop-6.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/wpf/themes/how-to-create-apply-template.md",
-            "redirect_url": "/dotnet/desktop/wpf/controls/how-to-create-apply-template?view=netdesktop-5.0"
+            "redirect_url": "/dotnet/desktop/wpf/controls/how-to-create-apply-template?view=netdesktop-6.0"
         },
         {
             "source_path": "dotnet-desktop-guide/net/wpf/advanced/xaml-resources-define.md",
-            "redirect_url": "/dotnet/desktop/wpf/systems/xaml-resources-overview?view=netdesktop-5.0"
+            "redirect_url": "/dotnet/desktop/wpf/systems/xaml-resources-overview?view=netdesktop-6.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/wpf/systems/xaml-resources-overview.md",
@@ -335,7 +335,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/wpf/advanced/resources-and-code.md",
-            "redirect_url": "/dotnet/desktop/wpf/systems/xaml-resources-and-code?view=netdesktop-5.0"
+            "redirect_url": "/dotnet/desktop/wpf/systems/xaml-resources-and-code?view=netdesktop-6.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/wpf/systems/xaml-resources-and-code.md",
@@ -343,7 +343,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/wpf/advanced/merged-resource-dictionaries.md",
-            "redirect_url": "/dotnet/desktop/wpf/systems/xaml-resources-merged-dictionaries?view=netdesktop-5.0"
+            "redirect_url": "/dotnet/desktop/wpf/systems/xaml-resources-merged-dictionaries?view=netdesktop-6.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/wpf/systems/xaml-resources-merged-dictionaries.md",
@@ -351,7 +351,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/wpf/advanced/how-to-define-and-reference-a-resource.md",
-            "redirect_url": "/dotnet/desktop/wpf/systems/xaml-resources-how-to-define-and-reference?view=netdesktop-5.0"
+            "redirect_url": "/dotnet/desktop/wpf/systems/xaml-resources-how-to-define-and-reference?view=netdesktop-6.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/wpf/systems/xaml-resources-how-to-define-and-reference.md",
@@ -359,7 +359,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/wpf/advanced/how-to-use-application-resources.md",
-            "redirect_url": "/dotnet/desktop/wpf/systems/xaml-resources-how-to-use-application?view=netdesktop-5.0"
+            "redirect_url": "/dotnet/desktop/wpf/systems/xaml-resources-how-to-use-application?view=netdesktop-6.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/wpf/systems/xaml-resources-how-to-use-application.md",
@@ -367,7 +367,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/wpf/advanced/how-to-use-systemfonts.md",
-            "redirect_url": "/dotnet/desktop/wpf/systems/xaml-resources-how-to-use-system?view=netdesktop-5.0"
+            "redirect_url": "/dotnet/desktop/wpf/systems/xaml-resources-how-to-use-system?view=netdesktop-6.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/wpf/systems/xaml-resources-how-to-use-system.md",
@@ -375,27 +375,27 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/wpf/advanced/how-to-use-system-fonts-keys.md",
-            "redirect_url": "/dotnet/desktop/wpf/systems/xaml-resources-how-to-use-system?view=netdesktop-5.0"
+            "redirect_url": "/dotnet/desktop/wpf/systems/xaml-resources-how-to-use-system?view=netdesktop-6.0"
         },
         {
             "source_path": "dotnet-desktop-guide/net/wpf/advanced/how-to-use-systemparameters.md",
-            "redirect_url": "/dotnet/desktop/wpf/systems/xaml-resources-how-to-use-system?view=netdesktop-5.0"
+            "redirect_url": "/dotnet/desktop/wpf/systems/xaml-resources-how-to-use-system?view=netdesktop-6.0"
         },
         {
             "source_path": "dotnet-desktop-guide/net/wpf/advanced/how-to-use-system-parameters-keys.md",
-            "redirect_url": "/dotnet/desktop/wpf/systems/xaml-resources-how-to-use-system?view=netdesktop-5.0"
+            "redirect_url": "/dotnet/desktop/wpf/systems/xaml-resources-how-to-use-system?view=netdesktop-6.0"
         },
         {
             "source_path": "dotnet-desktop-guide/net/wpf/migration/index.md",
-            "redirect_url": "/dotnet/desktop/wpf/migration/differences-from-net-framework?view=netdesktop-5.0"
+            "redirect_url": "/dotnet/desktop/wpf/migration/differences-from-net-framework?view=netdesktop-6.0"
         },
         {
             "source_path": "dotnet-desktop-guide/net/wpf/data/how-to-specify-the-direction-of-the-binding.md",
-            "redirect_url": "/dotnet/desktop/wpf/data/binding-declarations-overview?view=netdesktop-5.0#binding-direction"
+            "redirect_url": "/dotnet/desktop/wpf/data/binding-declarations-overview?view=netdesktop-6.0#binding-direction"
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/controls/how-to-set-the-tab-order-on-windows-forms.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-set-the-tab-order?view=netdesktop-5.0"
+            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-set-the-tab-order?view=netdesktop-6.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/controls/how-to-set-the-tab-order.md",
@@ -403,7 +403,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/controls/index.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls/overview?view=netdesktop-5.0"
+            "redirect_url": "/dotnet/desktop/winforms/controls/overview?view=netdesktop-6.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/controls/overview.md",
@@ -411,11 +411,11 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/controls/autosize-property-overview.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls/layout?view=netdesktop-5.0#automatic-sizing"
+            "redirect_url": "/dotnet/desktop/winforms/controls/layout?view=netdesktop-6.0#automatic-sizing"
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/controls/how-to-anchor-controls-on-windows-forms.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-dock-and-anchor?view=netdesktop-5.0"
+            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-dock-and-anchor?view=netdesktop-6.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/controls/how-to-dock-and-anchor.md",
@@ -423,11 +423,11 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/controls/how-to-dock-controls-on-windows-forms.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-dock-and-anchor?view=netdesktop-5.0"
+            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-dock-and-anchor?view=netdesktop-6.0"
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/how-to-create-event-handlers-at-run-time-for-windows-forms.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-add-an-event-handler?view=netdesktop-5.0"
+            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-add-an-event-handler?view=netdesktop-6.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/controls/how-to-add-an-event-handler.md",
@@ -435,15 +435,15 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/how-to-connect-multiple-events-to-a-single-event-handler-in-windows-forms.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-add-an-event-handler?view=netdesktop-5.0#how-to-use-multiple-events-with-the-same-handler"
+            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-add-an-event-handler?view=netdesktop-6.0#how-to-use-multiple-events-with-the-same-handler"
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/controls/margin-and-padding-in-windows-forms-controls.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls/layout?view=netdesktop-5.0#margin-and-padding"
+            "redirect_url": "/dotnet/desktop/winforms/controls/layout?view=netdesktop-6.0#margin-and-padding"
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/controls/how-to-make-thread-safe-calls-to-windows-forms-controls.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-make-thread-safe-calls?view=netdesktop-5.0"
+            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-make-thread-safe-calls?view=netdesktop-6.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/controls/how-to-make-thread-safe-calls.md",
@@ -451,7 +451,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/wpf/advanced/printing-overview.md",
-            "redirect_url": "/dotnet/desktop/wpf/documents/printing-overview?view=netdesktop-5.0"
+            "redirect_url": "/dotnet/desktop/wpf/documents/printing-overview?view=netdesktop-6.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/wpf/documents/printing-overview.md",
@@ -459,7 +459,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/wpf/advanced/how-to-invoke-a-print-dialog.md",
-            "redirect_url": "/dotnet/desktop/wpf/documents/how-to-display-print-dialog?view=netdesktop-5.0"
+            "redirect_url": "/dotnet/desktop/wpf/documents/how-to-display-print-dialog?view=netdesktop-6.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/wpf/documents/how-to-display-print-dialog.md",
@@ -467,7 +467,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/wpf/advanced/how-to-programmatically-print-xps-files.md",
-            "redirect_url": "/dotnet/desktop/wpf/documents/how-to-print-xps-files?view=netdesktop-5.0"
+            "redirect_url": "/dotnet/desktop/wpf/documents/how-to-print-xps-files?view=netdesktop-6.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/wpf/documents/how-to-print-xps-files.md",
@@ -475,7 +475,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/wpf/advanced/dependency-properties-overview.md",
-            "redirect_url": "/dotnet/desktop/wpf/properties/dependency-properties-overview?view=netdesktop-5.0"
+            "redirect_url": "/dotnet/desktop/wpf/properties/dependency-properties-overview?view=netdesktop-6.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/wpf/properties/dependency-properties-overview.md",
@@ -483,7 +483,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/wpf/advanced/dependency-property-value-precedence.md",
-            "redirect_url": "/dotnet/desktop/wpf/properties/dependency-property-value-precedence?view=netdesktop-5.0"
+            "redirect_url": "/dotnet/desktop/wpf/properties/dependency-property-value-precedence?view=netdesktop-6.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/wpf/properties/dependency-property-value-precedence.md",
@@ -491,7 +491,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/wpf/advanced/how-to-implement-a-dependency-property.md",
-            "redirect_url": "/dotnet/desktop/wpf/properties/how-to-implement-a-dependency-property?view=netdesktop-5.0"
+            "redirect_url": "/dotnet/desktop/wpf/properties/how-to-implement-a-dependency-property?view=netdesktop-6.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/wpf/properties/how-to-implement-a-dependency-property.md",
@@ -499,7 +499,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/wpf/advanced/attached-properties-overview.md",
-            "redirect_url": "/dotnet/desktop/wpf/properties/attached-properties-overview?view=netdesktop-5.0"
+            "redirect_url": "/dotnet/desktop/wpf/properties/attached-properties-overview?view=netdesktop-6.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/wpf/properties/attached-properties-overview.md",
@@ -507,7 +507,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/wpf/advanced/how-to-register-an-attached-property.md",
-            "redirect_url": "/dotnet/desktop/wpf/properties/how-to-register-an-attached-property?view=netdesktop-5.0"
+            "redirect_url": "/dotnet/desktop/wpf/properties/how-to-register-an-attached-property?view=netdesktop-6.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/wpf/properties/how-to-register-an-attached-property.md",
@@ -515,7 +515,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/wpf/advanced/collection-type-dependency-properties.md",
-            "redirect_url": "/dotnet/desktop/wpf/properties/collection-type-dependency-properties?view=netdesktop-5.0"
+            "redirect_url": "/dotnet/desktop/wpf/properties/collection-type-dependency-properties?view=netdesktop-6.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/wpf/properties/collection-type-dependency-properties.md",
@@ -523,15 +523,19 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/wpf/advanced/custom-dependency-properties.md",
-            "redirect_url": "/dotnet/desktop/wpf/properties/custom-dependency-properties?view=netdesktop-5.0"
+            "redirect_url": "/dotnet/desktop/wpf/properties/custom-dependency-properties?view=netdesktop-6.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/wpf/properties/custom-dependency-properties.md",
             "redirect_url": "/dotnet/desktop/wpf/advanced/custom-dependency-properties?view=netframeworkdesktop-4.8"
         },
         {
+            "source_path": "dotnet-desktop-guide/net/winforms/whats-new/index.md",
+            "redirect_url": "/dotnet/desktop/winforms/whats-new/net60?view=netdesktop-6.0"
+        },
+        {
             "source_path": "dotnet-desktop-guide/net/wpf/advanced/dependency-property-metadata.md",
-            "redirect_url": "/dotnet/desktop/wpf/properties/dependency-property-metadata?view=netdesktop-5.0"
+            "redirect_url": "/dotnet/desktop/wpf/properties/dependency-property-metadata?view=netdesktop-6.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/wpf/properties/dependency-property-metadata.md",
@@ -539,11 +543,267 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/wpf/advanced/how-to-override-metadata-for-a-dependency-property.md",
-            "redirect_url": "/dotnet/desktop/wpf/properties/how-to-override-metadata-for-a-dependency-property?view=netdesktop-5.0"
+            "redirect_url": "/dotnet/desktop/wpf/properties/how-to-override-metadata-for-a-dependency-property?view=netdesktop-6.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/wpf/properties/how-to-override-metadata-for-a-dependency-property.md",
             "redirect_url": "/dotnet/desktop/wpf/advanced/how-to-override-metadata-for-a-dependency-property?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/advanced/dependency-property-callbacks-and-validation.md",
+            "redirect_url": "/dotnet/desktop/wpf/properties/dependency-property-callbacks-and-validation?view=netdesktop-6.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/properties/dependency-property-callbacks-and-validation.md",
+            "redirect_url": "/dotnet/desktop/wpf/advanced/dependency-property-callbacks-and-validation?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/advanced/read-only-dependency-properties.md",
+            "redirect_url": "/dotnet/desktop/wpf/properties/read-only-dependency-properties?view=netdesktop-6.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/properties/read-only-dependency-properties.md",
+            "redirect_url": "/dotnet/desktop/wpf/advanced/read-only-dependency-properties?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/advanced/framework-property-metadata.md",
+            "redirect_url": "/dotnet/desktop/wpf/properties/framework-property-metadata?view=netdesktop-6.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/properties/framework-property-metadata.md",
+            "redirect_url": "/dotnet/desktop/wpf/advanced/framework-property-metadata?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/advanced/dependency-property-security.md",
+            "redirect_url": "/dotnet/desktop/wpf/properties/dependency-property-security?view=netdesktop-6.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/properties/dependency-property-security.md",
+            "redirect_url": "/dotnet/desktop/wpf/advanced/dependency-property-security?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/advanced/safe-constructor-patterns-for-dependencyobjects.md",
+            "redirect_url": "/dotnet/desktop/wpf/properties/safe-constructor-patterns-for-dependencyobjects?view=netdesktop-6.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/properties/safe-constructor-patterns-for-dependencyobjects.md",
+            "redirect_url": "/dotnet/desktop/wpf/advanced/safe-constructor-patterns-for-dependencyobjects?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/advanced/property-value-inheritance.md",
+            "redirect_url": "/dotnet/desktop/wpf/properties/property-value-inheritance?view=netdesktop-6.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/properties/property-value-inheritance.md",
+            "redirect_url": "/dotnet/desktop/wpf/advanced/property-value-inheritance?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/advanced/xaml-loading-and-dependency-properties.md",
+            "redirect_url": "/dotnet/desktop/wpf/properties/xaml-loading-and-dependency-properties?view=netdesktop-6.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/properties/xaml-loading-and-dependency-properties.md",
+            "redirect_url": "/dotnet/desktop/wpf/advanced/xaml-loading-and-dependency-properties?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/advanced/how-to-add-an-event-handler-using-code.md",
+            "redirect_url": "/dotnet/desktop/wpf/events/how-to-add-an-event-handler-using-code?view=netdesktop-6.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/events/how-to-add-an-event-handler-using-code.md",
+            "redirect_url": "/dotnet/desktop/wpf/advanced/how-to-add-an-event-handler-using-code?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/advanced/how-to-create-a-custom-routed-event.md",
+            "redirect_url": "/dotnet/desktop/wpf/events/how-to-create-a-custom-routed-event?view=netdesktop-6.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/events/how-to-create-a-custom-routed-event.md",
+            "redirect_url": "/dotnet/desktop/wpf/advanced/how-to-create-a-custom-routed-event?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/advanced/visual-basic-and-wpf-event-handling.md",
+            "redirect_url": "/dotnet/desktop/wpf/events/visual-basic-and-wpf-event-handling?view=netdesktop-6.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/events/visual-basic-and-wpf-event-handling.md",
+            "redirect_url": "/dotnet/desktop/wpf/advanced/visual-basic-and-wpf-event-handling?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/advanced/preview-events.md",
+            "redirect_url": "/dotnet/desktop/wpf/events/preview-events?view=netdesktop-6.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/events/preview-events.md",
+            "redirect_url": "/dotnet/desktop/wpf/advanced/preview-events?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/advanced/marking-routed-events-as-handled-and-class-handling.md",
+            "redirect_url": "/dotnet/desktop/wpf/events/marking-routed-events-as-handled-and-class-handling?view=netdesktop-6.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/events/marking-routed-events-as-handled-and-class-handling.md",
+            "redirect_url": "/dotnet/desktop/wpf/advanced/marking-routed-events-as-handled-and-class-handling?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/advanced/object-lifetime-events.md",
+            "redirect_url": "/dotnet/desktop/wpf/events/object-lifetime-events?view=netdesktop-6.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/events/object-lifetime-events.md",
+            "redirect_url": "/dotnet/desktop/wpf/advanced/object-lifetime-events?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/advanced/weak-event-patterns.md",
+            "redirect_url": "/dotnet/desktop/wpf/events/weak-event-patterns?view=netdesktop-6.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/events/weak-event-patterns.md",
+            "redirect_url": "/dotnet/desktop/wpf/advanced/weak-event-patterns?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/advanced/property-change-events.md",
+            "redirect_url": "/dotnet/desktop/wpf/events/property-change-events?view=netdesktop-6.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/events/property-change-events.md",
+            "redirect_url": "/dotnet/desktop/wpf/advanced/property-change-events?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/advanced/attached-events-overview.md",
+            "redirect_url": "/dotnet/desktop/wpf/events/attached-events-overview?view=netdesktop-6.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/events/attached-events-overview.md",
+            "redirect_url": "/dotnet/desktop/wpf/advanced/attached-events-overview?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/controls/printdialog-component-overview-windows-forms.md",
+            "redirect_url": "/dotnet/desktop/winforms/printing/overview?view=netdesktop-6.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/controls/printdialog-component-windows-forms.md",
+            "redirect_url": "/dotnet/desktop/winforms/printing/overview?view=netdesktop-6.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/winforms/printing/overview.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls/printdialog-component-overview-windows-forms?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/advanced/how-to-capture-user-input-from-a-printdialog-at-run-time.md",
+            "redirect_url": "/dotnet/desktop/winforms/printing/overview?view=netdesktop-6.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/advanced/how-to-create-standard-windows-forms-print-jobs.md",
+            "redirect_url": "/dotnet/desktop/winforms/printing/overview?view=netdesktop-6.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/advanced/windows-forms-print-support.md",
+            "redirect_url": "/dotnet/desktop/winforms/printing/overview?view=netdesktop-6.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/advanced/how-to-complete-windows-forms-print-jobs.md",
+            "redirect_url": "/dotnet/desktop/winforms/printing/overview?view=netdesktop-6.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/advanced/how-to-print-a-windows-form.md",
+            "redirect_url": "/dotnet/desktop/winforms/printing/how-to-print-windows-form?view=netdesktop-6.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/winforms/printing/how-to-print-windows-form.md",
+            "redirect_url": "/dotnet/desktop/winforms/advanced/how-to-print-a-windows-form?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/advanced/how-to-print-a-multi-page-text-file-in-windows-forms.md",
+            "redirect_url": "/dotnet/desktop/winforms/printing/how-to-print-text-document?view=netdesktop-6.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/winforms/printing/how-to-print-text-document.md",
+            "redirect_url": "/dotnet/desktop/winforms/advanced/how-to-print-a-multi-page-text-file-in-windows-forms?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/advanced/routed-events-overview.md",
+            "redirect_url": "/dotnet/desktop/wpf/events/routed-events-overview?view=netdesktop-6.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/events/routed-events-overview.md",
+            "redirect_url": "/dotnet/desktop/wpf/advanced/routed-events-overview?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/advanced/how-to-print-in-windows-forms-using-print-preview.md",
+            "redirect_url": "/dotnet/desktop/winforms/printing/how-to-print-in-windows-forms-using-print-preview?view=netdesktop-6.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/winforms/printing/how-to-print-in-windows-forms-using-print-preview.md",
+            "redirect_url": "/dotnet/desktop/winforms/advanced/how-to-print-in-windows-forms-using-print-preview?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/windows-forms-data-binding.md",
+            "redirect_url": "/dotnet/desktop/winforms/data/overview?view=netdesktop-6.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/winforms/data/overview.md",
+            "redirect_url": "/dotnet/desktop/winforms/windows-forms-data-binding?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/interfaces-related-to-data-binding.md",
+            "redirect_url": "/dotnet/desktop/winforms/data/overview?view=netdesktop-6.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/data-binding-and-windows-forms.md",
+            "redirect_url": "/dotnet/desktop/winforms/data/overview?view=netdesktop-6.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/data-sources-supported-by-windows-forms.md",
+            "redirect_url": "/dotnet/desktop/winforms/data/overview?view=netdesktop-6.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/change-notification-in-windows-forms-data-binding.md",
+            "redirect_url": "/dotnet/desktop/winforms/data/design-great-data-sources?view=netdesktop-6.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/winforms/data/design-great-data-sources.md",
+            "redirect_url": "/dotnet/desktop/winforms/change-notification-in-windows-forms-data-binding?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/multiple-controls-bound-to-data-source-synchronized.md",
+            "redirect_url": "/dotnet/desktop/winforms/data/design-great-data-sources?view=netdesktop-6.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/how-to-apply-the-propertynamechanged-pattern.md",
+            "redirect_url": "/dotnet/desktop/winforms/data/design-great-data-sources?view=netdesktop-6.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/how-to-implement-the-inotifypropertychanged-interface.md",
+            "redirect_url": "/dotnet/desktop/winforms/data/design-great-data-sources?view=netdesktop-6.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/how-to-navigate-data-in-windows-forms.md",
+            "redirect_url": "/dotnet/desktop/winforms/data/how-to-work-with-data-grid?view=netdesktop-6.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/winforms/data/how-to-work-with-data-grid.md",
+            "redirect_url": "/dotnet/desktop/winforms/how-to-navigate-data-in-windows-forms?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/ensure-the-selected-row-in-a-child-table-correct.md",
+            "redirect_url": "/dotnet/desktop/winforms/data/how-to-work-with-data-grid?view=netdesktop-6.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/how-to-create-a-bound-control-and-format-the-displayed-data.md",
+            "redirect_url": "/dotnet/desktop/winforms/data/how-to-create-control-binding?view=netdesktop-6.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/winforms/data/how-to-create-control-binding.md",
+            "redirect_url": "/dotnet/desktop/winforms/how-to-create-a-bound-control-and-format-the-displayed-data?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/how-to-create-a-simple-bound-control-on-a-windows-form.md",
+            "redirect_url": "/dotnet/desktop/winforms/data/how-to-create-control-binding?view=netdesktop-6.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/winforms/data/how-to-synchronize-multiple-controls.md",
+            "redirect_url": "/dotnet/desktop/winforms/multiple-controls-bound-to-data-source-synchronized?view=netframeworkdesktop-4.8"
         }
     ]
 }

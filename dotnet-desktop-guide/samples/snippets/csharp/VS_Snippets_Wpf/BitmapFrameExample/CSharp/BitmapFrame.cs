@@ -20,7 +20,7 @@ namespace SDKSample
             base.OnStartup (e);
             CreateAndShowMainWindow ();
         }
-        [SecurityPermissionAttribute(SecurityAction.Demand, Flags = SecurityPermissionFlag.UnmanagedCode)]
+        
         private void CreateAndShowMainWindow ()
         {
 

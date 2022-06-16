@@ -1,6 +1,8 @@
 ---
 title: "xml:lang Handling in XAML"
+description: Learn about the xml:lang Handling in XAML.
 ms.date: "03/30/2017"
+ms.custom: devdivchpfy22
 helpviewer_keywords: 
   - "XAML [XAML Services], xml:lang attribute"
   - "xml:lang attribute [XAML Services]"
@@ -20,13 +22,13 @@ The `xml:lang` attribute is an XML-defined attribute that declares the language 
 
 ## XAML Values
 
-|||
-|-|-|
+| Value | Description |
+|-------|-------------|
 |*rfc3066lang*|A string that is derived from the [RFC 3066](https://www.ietf.org/rfc/rfc3066.txt) standard and identifies either a language or a language-region. When it is the latter, the language and region are separated by a single hyphen. See <xref:System.Windows.Markup.XmlLanguage> for more information about the values and format.|
 
 ## Remarks
 
-The definition for the `xml:lang` attribute in [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] is derived from `xml:lang` as defined as a "special attribute" by the World Wide Web Consortium (W3C) for XML. Language and culture information is potentially processed in different ways by elements, depending on their implementations; however, there is no default [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] processing of the `xml:lang` attribute.
+The definition for the `xml:lang` attribute in XAML is derived from `xml:lang` as defined as a "special attribute" by the World Wide Web Consortium (W3C) for XML. Language and culture information is potentially processed in different ways by elements, depending on their implementations; however, there is no default XAML processing of the `xml:lang` attribute.
 
 The default value of the `xml:lang` attribute is an empty string at the attribute level.
 

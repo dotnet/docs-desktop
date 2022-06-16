@@ -20,7 +20,7 @@ Add a new form with Visual Studio.
 
     :::image type="content" source="media/how-to-add/right-click.png" alt-text="Right click solution explorer to add new form to windows forms project":::
 
-01. In the **Name** box, type a name for your form, such as *MyNewForm*. Visual Studio will provide a default and unique name that you may use.
+01. In the **Name** box, type a name for your form, such as _MyNewForm_. Visual Studio will provide a default and unique name that you may use.
 
     :::image type="content" source="media/how-to-add/new-form-dialog.png" alt-text="Add item dialog in visual studio for windows forms":::
 

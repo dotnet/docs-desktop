@@ -42,7 +42,7 @@ HRESULT CreateIDispatchSTAForwarder(
   
  In the .NET Framework 4 and later: PresentationHost_v0400.dll  
   
- **.NET Framework Version:** [!INCLUDE[net_current_v30plus](../../../includes/net-current-v30plus-md.md)]  
+ **.NET Framework Version:** Available since 3.0  
   
 ## See also
 

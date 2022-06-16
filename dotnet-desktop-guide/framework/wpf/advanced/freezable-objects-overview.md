@@ -23,7 +23,7 @@ A <xref:System.Windows.Freezable> is a special type of object that has two state
 
 A <xref:System.Windows.Freezable> provides a <xref:System.Windows.Freezable.Changed> event to notify observers of any modifications to the object. Freezing a <xref:System.Windows.Freezable> can improve its performance, because it no longer needs to spend resources on change notifications. A frozen <xref:System.Windows.Freezable> can also be shared across threads, while an unfrozen <xref:System.Windows.Freezable> cannot.
 
-Although the <xref:System.Windows.Freezable> class has many applications, most <xref:System.Windows.Freezable> objects in [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] are related to the graphics sub-system.
+Although the <xref:System.Windows.Freezable> class has many applications, most <xref:System.Windows.Freezable> objects in Windows Presentation Foundation (WPF) are related to the graphics sub-system.
 
 The <xref:System.Windows.Freezable> class makes it easier to use certain graphics system objects and can help improve application performance. Examples of types that inherit from <xref:System.Windows.Freezable> include the <xref:System.Windows.Media.Brush>, <xref:System.Windows.Media.Transform>, and <xref:System.Windows.Media.Geometry> classes. Because they contain unmanaged resources, the system must monitor these objects for modifications, and then update their corresponding unmanaged resources when there is a change to the original object. Even if you don't actually modify a graphics system object, the system must still spend some of its resources monitoring the object, in case you do change it.
 
@@ -32,7 +32,7 @@ For example, suppose you create a <xref:System.Windows.Media.SolidColorBrush> br
 [!code-csharp[freezablesample_procedural#FrozenExamplePart1](~/samples/snippets/csharp/VS_Snippets_Wpf/freezablesample_procedural/CSharp/freezablesample.cs#frozenexamplepart1)]
 [!code-vb[freezablesample_procedural#FrozenExamplePart1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/freezablesample_procedural/visualbasic/freezablesample.vb#frozenexamplepart1)]
 
-When the button is rendered, the [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] graphics sub-system uses the information you provided to paint a group of pixels to create the appearance of a button. Although you used a solid color brush to describe how the button should be painted, your solid color brush doesn't actually do the painting. The graphics system generates fast, low-level objects for the button and the brush, and it is those objects that actually appear on the screen.
+When the button is rendered, the WPF graphics sub-system uses the information you provided to paint a group of pixels to create the appearance of a button. Although you used a solid color brush to describe how the button should be painted, your solid color brush doesn't actually do the painting. The graphics system generates fast, low-level objects for the button and the brush, and it is those objects that actually appear on the screen.
 
 If you were to modify the brush, those low-level objects would have to be regenerated. The freezable class is what gives a brush the ability to find its corresponding generated, low-level objects and to update them when it changes. When this ability is enabled, the brush is said to be "unfrozen."
 

@@ -59,17 +59,17 @@ The build process locates and binds the assemblies required to build the applica
 
 ### Markup Compilation—Pass 1
 
-In this step, [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] files are parsed and compiled so that the runtime does not spend time parsing XML and validating property values. The compiled [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] file is pre-tokenized so that, at run time, loading it should be much faster than loading a [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] file.
+In this step, XAML files are parsed and compiled so that the runtime does not spend time parsing XML and validating property values. The compiled XAML file is pre-tokenized so that, at run time, loading it should be much faster than loading a XAML file.
 
-During this step, the following activities take place for every [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] file that is a `Page` build item:
+During this step, the following activities take place for every XAML file that is a `Page` build item:
 
-1. The [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] file is parsed by the markup compiler.
+1. The XAML file is parsed by the markup compiler.
 
-2. A compiled representation is created for that [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] and copied to the obj\Release folder.
+2. A compiled representation is created for that XAML and copied to the obj\Release folder.
 
 3. A CodeDOM representation of a new partial class is created and copied to the obj\Release folder.
 
-In addition, a language-specific code file is generated for every [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] file. For example, for a Page1.xaml page in a Visual Basic project, a Page1.g.vb is generated; for a Page1.xaml page in a C# project, a Page1.g.cs is generated. The ".g" in the file name indicates the file is generated code that has a partial class declaration for the top-level element of the markup file (such as `Page` or `Window`). The class is declared with the `partial` modifier in C# (`Extends` in Visual Basic) to indicate there is another declaration for the class elsewhere, usually in the code-behind file Page1.xaml.cs.
+In addition, a language-specific code file is generated for every XAML file. For example, for a Page1.xaml page in a Visual Basic project, a Page1.g.vb is generated; for a Page1.xaml page in a C# project, a Page1.g.cs is generated. The ".g" in the file name indicates the file is generated code that has a partial class declaration for the top-level element of the markup file (such as `Page` or `Window`). The class is declared with the `partial` modifier in C# (`Extends` in Visual Basic) to indicate there is another declaration for the class elsewhere, usually in the code-behind file Page1.xaml.cs.
 
 The partial class extends from the appropriate base class (such as <xref:System.Windows.Controls.Page> for a page) and implements the <xref:System.Windows.Markup.IComponentConnector?displayProperty=nameWithType> interface. The <xref:System.Windows.Markup.IComponentConnector> interface has methods to initialize a component and connect names and events on elements in its content. Consequently, the generated code file has a method implementation like the following:
 
@@ -109,13 +109,13 @@ By default, markup compilation runs in the same <xref:System.AppDomain> as the M
 
 ### Markup Compilation—Pass 2
 
-Not all [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] pages are compiled at during pass 1 of markup compilation. [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] files that have locally defined type references (references to types defined in code elsewhere in the same project) are exempt from compilation at this time. This is because those locally defined types exist only in source and have not yet been compiled. In order to determine this, the parser uses heuristics that involve looking for items such as `x:Name` in the markup file. When such an instance is found, that markup file’s compilation is postponed until the code files have been compiled, after which, the second markup compilation pass processes these files.
+Not all XAML pages are compiled at during pass 1 of markup compilation. XAML files that have locally defined type references (references to types defined in code elsewhere in the same project) are exempt from compilation at this time. This is because those locally defined types exist only in source and have not yet been compiled. In order to determine this, the parser uses heuristics that involve looking for items such as `x:Name` in the markup file. When such an instance is found, that markup file’s compilation is postponed until the code files have been compiled, after which, the second markup compilation pass processes these files.
 
 <a name="File_Classification"></a>
 
 ### File Classification
 
-The build process puts output files into different resource groups based on which application assembly they will be placed in. In a typical nonlocalized application, all data files marked as `Resource` are placed in the main assembly (executable or library). When `UICulture` is set in the project, all compiled [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] files and those resources specifically marked as language-specific are placed in the satellite resource assembly. Furthermore, all language-neutral resources are placed in the main assembly. In this step of the build process, that determination is made.
+The build process puts output files into different resource groups based on which application assembly they will be placed in. In a typical nonlocalized application, all data files marked as `Resource` are placed in the main assembly (executable or library). When `UICulture` is set in the project, all compiled XAML files and those resources specifically marked as language-specific are placed in the satellite resource assembly. Furthermore, all language-neutral resources are placed in the main assembly. In this step of the build process, that determination is made.
 
 The `ApplicationDefinition`, `Page`, and `Resource` build actions in the project file can be augmented with the `Localizable` metadata (acceptable values are `true` and `false`), which dictates whether the file is language-specific or language-neutral.
 
@@ -123,7 +123,7 @@ The `ApplicationDefinition`, `Page`, and `Resource` build actions in the project
 
 ### Core Compilation
 
-The core compile step involves compilation of code files. This is orchestrated by logic in the language-specific targets files Microsoft.CSharp.targets and Microsoft.VisualBasic.targets. If heuristics have determined that a single pass of the markup compiler is sufficient, then the main assembly is generated. However, if one or more [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] files in the project have references to locally defined types, then a temporary .dll file is generated so the final application assemblies may be created after the second pass of markup compilation is complete.
+The core compile step involves compilation of code files. This is orchestrated by logic in the language-specific targets files Microsoft.CSharp.targets and Microsoft.VisualBasic.targets. If heuristics have determined that a single pass of the markup compiler is sufficient, then the main assembly is generated. However, if one or more XAML files in the project have references to locally defined types, then a temporary .dll file is generated so the final application assemblies may be created after the second pass of markup compilation is complete.
 
 <a name="Manifest_generation"></a>
 
@@ -147,29 +147,29 @@ The WPF build system provides support for incremental builds. It is fairly intel
 
 - An $(*AssemblyName*)_MarkupCompiler.Cache file to maintain current compiler state.
 
-- An $(*AssemblyName*)_MarkupCompiler.lref file to cache the [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] files with references to locally defined types.
+- An $(*AssemblyName*)_MarkupCompiler.lref file to cache the XAML files with references to locally defined types.
 
 The following is a set of rules governing incremental build:
 
 - The file is the smallest unit at which the build system detects change. So, for a code file, the build system cannot tell if a type was changed or if code was added. The same holds for project files.
 
-- The incremental build mechanism must be cognizant that a [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] page either defines a class or uses other classes.
+- The incremental build mechanism must be cognizant that a XAML page either defines a class or uses other classes.
 
 - If `Reference` entries change, then recompile all pages.
 
 - If a code file changes, recompile all pages with locally defined type references.
 
-- If a [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] file changes:
+- If a XAML file changes:
 
-  - If [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] is declared as `Page` in the project: if the [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] does not have locally defined type references, recompile that [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] plus all [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] pages with local references; if the [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] has local references, recompile all [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] pages with local references.
+  - If XAML is declared as `Page` in the project: if the XAML does not have locally defined type references, recompile that XAML plus all XAML pages with local references; if the XAML has local references, recompile all XAML pages with local references.
 
-  - If [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] is declared as `ApplicationDefinition` in the project: recompile all [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] pages (reason: each [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] has reference to an <xref:System.Windows.Application> type that may have changed).
+  - If XAML is declared as `ApplicationDefinition` in the project: recompile all XAML pages (reason: each XAML has reference to an <xref:System.Windows.Application> type that may have changed).
 
-- If the project file declares a code file as application definition instead of a [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] file:
+- If the project file declares a code file as application definition instead of a XAML file:
 
   - Check if the `ApplicationClassName` value in the project file has changed (is there a new application type?). If so, recompile the entire application.
 
-  - Otherwise, recompile all [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] pages with local references.
+  - Otherwise, recompile all XAML pages with local references.
 
 - If a project file changes: apply all preceding rules and see what needs to be recompiled. Changes to the following properties trigger a complete recompile: `AssemblyName`, `IntermediateOutputPath`, `RootNamespace`, and `HostInBrowser`.
 
@@ -177,7 +177,7 @@ The following recompile scenarios are possible:
 
 - The entire application is recompiled.
 
-- Only those [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] files that have locally defined type references are recompiled.
+- Only those XAML files that have locally defined type references are recompiled.
 
 - Nothing is recompiled (if nothing in the project has changed).
 

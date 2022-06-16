@@ -13,7 +13,7 @@ In data binding, the binding source object refers to the object you obtain data 
 
 <a name="binding_sources"></a>
 ## Binding Source Types
- [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] data binding supports the following binding source types:
+ Windows Presentation Foundation (WPF) data binding supports the following binding source types:
 
 |Binding Source|Description|
 |--------------------|-----------------|
@@ -28,7 +28,7 @@ In data binding, the binding source object refers to the object you obtain data 
  You can create your own binding sources. This section discusses the things you need to know if you are implementing a class to serve as a binding source.
 
 ### Providing Change Notifications
- If you are using either <xref:System.Windows.Data.BindingMode.OneWay> or <xref:System.Windows.Data.BindingMode.TwoWay> binding (because you want your [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] to update when the binding source properties change dynamically), you must implement a suitable property changed notification mechanism. The recommended mechanism is for the CLR or dynamic class to implement the <xref:System.ComponentModel.INotifyPropertyChanged> interface. For more information, see [Implement Property Change Notification](how-to-implement-property-change-notification.md).
+ If you are using either <xref:System.Windows.Data.BindingMode.OneWay> or <xref:System.Windows.Data.BindingMode.TwoWay> binding (because you want your UI to update when the binding source properties change dynamically), you must implement a suitable property changed notification mechanism. The recommended mechanism is for the CLR or dynamic class to implement the <xref:System.ComponentModel.INotifyPropertyChanged> interface. For more information, see [Implement Property Change Notification](how-to-implement-property-change-notification.md).
 
  If you create a CLR object that does not implement <xref:System.ComponentModel.INotifyPropertyChanged>, then you must arrange for your own notification system to make sure that the data used in a binding stays current. You can provide change notifications by supporting the `PropertyChanged` pattern for each property that you want change notifications for. To support this pattern, you define a *PropertyName*Changed event for each property, where *PropertyName* is the name of the property. You raise the event every time the property changes.
 
@@ -37,7 +37,7 @@ In data binding, the binding source object refers to the object you obtain data 
 ### Other Characteristics
  The following list provides other important points to note:
 
-- If you want to create the object in [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)], the class must have a parameterless constructor. In some .NET languages, such as C#, the parameterless constructor might be created for you.
+- If you want to create the object in XAML, the class must have a parameterless constructor. In some .NET languages, such as C#, the parameterless constructor might be created for you.
 
 - The properties you use as binding source properties for a binding must be public properties of your class. Explicitly defined interface properties cannot be accessed for binding purposes, nor can protected, private, internal, or virtual properties that have no base implementation.
 
@@ -55,7 +55,7 @@ In data binding, the binding source object refers to the object you obtain data 
 ## Using Collection Objects as a Binding Source
  Often, the object you want to use as the binding source is a collection of custom objects. Each object serves as the source for one instance of a repeated binding. For example, you might have a `CustomerOrders` collection that consists of `CustomerOrder` objects, where your application iterates over the collection to determine how many orders exist and the data contained in each.
 
- You can enumerate over any collection that implements the <xref:System.Collections.IEnumerable> interface. However, to set up dynamic bindings so that insertions or deletions in the collection update the [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] automatically, the collection must implement the <xref:System.Collections.Specialized.INotifyCollectionChanged> interface. This interface exposes an event that must be raised whenever the underlying collection changes.
+ You can enumerate over any collection that implements the <xref:System.Collections.IEnumerable> interface. However, to set up dynamic bindings so that insertions or deletions in the collection update the UI automatically, the collection must implement the <xref:System.Collections.Specialized.INotifyCollectionChanged> interface. This interface exposes an event that must be raised whenever the underlying collection changes.
 
  The <xref:System.Collections.ObjectModel.ObservableCollection%601> class is a built-in implementation of a data collection that exposes the <xref:System.Collections.Specialized.INotifyCollectionChanged> interface. The individual data objects within the collection must satisfy the requirements described in the preceding sections. For an example, see [Create and Bind to an ObservableCollection](how-to-create-and-bind-to-an-observablecollection.md). Before implementing your own collection, consider using <xref:System.Collections.ObjectModel.ObservableCollection%601> or one of the existing collection classes, such as <xref:System.Collections.Generic.List%601>, <xref:System.Collections.ObjectModel.Collection%601>, and <xref:System.ComponentModel.BindingList%601>, among many others.
 

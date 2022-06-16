@@ -2,6 +2,8 @@
 title: "SaveToHistory Function - WPF unmanaged API reference"
 titleSuffix: ""
 ms.date: "03/30/2017"
+ms.custom: devdivchpfy22
+description: Learn about the SaveToHistory function.
 dev_langs: 
   - "cpp"
 api_name: 
@@ -28,8 +30,6 @@ HRESULT SaveToHistory(
  A pointer to the history stream.  
   
 ## Requirements  
-  
-## Requirements  
  **Platforms:** See [.NET Framework System Requirements](/dotnet/framework/get-started/system-requirements).  
   
  **DLL:**  
@@ -38,7 +38,7 @@ HRESULT SaveToHistory(
   
  In the .NET Framework 4 and later: PresentationHost_v0400.dll  
   
- **.NET Framework Version:** [!INCLUDE[net_current_v30plus](../../../includes/net-current-v30plus-md.md)]  
+ **.NET Framework Version:** Available since 3.0  
   
 ## See also
 

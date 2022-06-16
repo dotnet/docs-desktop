@@ -12,7 +12,7 @@ ms.assetid: 4061a9d1-fe8b-4921-9e17-18ec7d2e3ea2
 ---
 # OpenType Font Features
 
-This topic provides an overview of some of the key features of OpenType font technology in [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)].  
+This topic provides an overview of some of the key features of OpenType font technology in Windows Presentation Foundation (WPF).  
   
 <a name="overview"></a>
 
@@ -33,7 +33,7 @@ This topic provides an overview of some of the key features of OpenType font tec
 - Broader support for advanced typographic control.  
   
 > [!NOTE]
-> The Windows SDK contains a set of sample OpenType fonts that you can use with [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] applications. These fonts provide most of the features illustrated in the rest of this topic. For more information, see [Sample OpenType Font Pack](sample-opentype-font-pack.md).  
+> The Windows SDK contains a set of sample OpenType fonts that you can use with Windows Presentation Foundation (WPF) applications. These fonts provide most of the features illustrated in the rest of this topic. For more information, see [Sample OpenType Font Pack](sample-opentype-font-pack.md).  
   
 For details of the OpenType font format, see the [OpenType specification](/typography/opentype/spec/).  
   
@@ -151,7 +151,7 @@ For details of the OpenType font format, see the [OpenType specification](/typog
   
  [!code-xaml[OpenTypeFontSamples#5](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontSamples/CS/PageOne.xaml#5)]  
   
- By default, OpenType fonts in [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] enable standard ligatures. For example, if you use the Palatino Linotype font, the standard ligatures "fi", "ff", and "fl" appear as a combined character glyph. Notice that the pair of characters for each standard ligature touch each other.  
+ By default, OpenType fonts in Windows Presentation Foundation (WPF) enable standard ligatures. For example, if you use the Palatino Linotype font, the standard ligatures "fi", "ff", and "fl" appear as a combined character glyph. Notice that the pair of characters for each standard ligature touch each other.  
   
  ![Text using OpenType standard ligatures with Palatino Linotype](./media/opentype-font-features/opentype-standard-ligatures-palatino.gif "Text using OpenType standard ligatures with Palatino Linotype")
 

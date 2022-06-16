@@ -8,7 +8,7 @@ helpviewer_keywords:
 ms.assetid: 82d50325-7cb2-4975-aea3-027c00e6bbfc
 ---
 # Typography How-to Topics
-The topics in this section describe how to use [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] support for rich presentation of text in your applications.  
+The topics in this section describe how to use Windows Presentation Foundation (WPF) support for rich presentation of text in your applications.  
   
 ## In This Section  
  [Create a Text Decoration](how-to-create-a-text-decoration.md)  

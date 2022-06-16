@@ -1,6 +1,7 @@
 ---
-title: "Documents"
+title: "Documents Overview"
 ms.date: "03/30/2017"
+ms.custom: devdivchpfy22
 ms.topic: overview
 helpviewer_keywords: 
   - "documents [WPF], packaging"
@@ -13,11 +14,11 @@ helpviewer_keywords:
 ms.assetid: 6e8db7bc-050a-4070-aa72-bb8c46e87ff8
 ---
 # Documents in WPF
-[!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] offers a wide range of document features that enable the creation of high-fidelity content that is designed to be more easily accessed and read than in previous generations of Windows. In addition to enhanced capabilities and quality, [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] also provides integrated services for document display, packaging, and security. This topic provides an introduction to [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] document types and document packaging.  
+WPF also provides integrated services for document display, packaging, and security. This topic provides an introduction to WPF document types and document packaging.  
 
 <a name="types_of_documents"></a>
 ## Types of Documents  
- [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] divides documents into two broad categories based on their intended use; these document categories are termed "fixed documents" and "flow documents."  
+ WPF divides documents into two broad categories based on their intended use; these document categories are termed "fixed documents" and "flow documents."  
   
  Fixed documents are intended for applications that require a precise "what you see is what you get" (WYSIWYG) presentation, independent of the display or printer hardware used. Typical uses for fixed documents include desktop publishing, word processing, and form layout, where adherence to the original page design is critical. As part of its layout, a fixed document maintains the precise positional placement of content elements independent of the display or print device in use. For example, a fixed document page viewed on 96 dpi display will appear exactly the same when it is output to a 600 dpi laser printer as when it is output to a 4800 dpi phototypesetter. The page layout remains the same in all cases, while the document quality maximizes to the capabilities of each device.  
   
@@ -25,10 +26,10 @@ ms.assetid: 6e8db7bc-050a-4070-aa72-bb8c46e87ff8
   
 <a name="document_viewer"></a>
 ## Document Controls and Text Layout  
- The .NET Framework provides a set of pre-built controls that simplify using fixed documents, flow documents, and general text within your application.  The display of fixed document content is supported using the <xref:System.Windows.Controls.DocumentViewer> control.  Display of flow document content is supported by three different controls: <xref:System.Windows.Controls.FlowDocumentReader>, <xref:System.Windows.Controls.FlowDocumentPageViewer>, and <xref:System.Windows.Controls.FlowDocumentScrollViewer> which map to different user scenarios (see sections below).  Other [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] controls provide simplified layout to support general text uses (see [Text in the User Interface](#text_in_the_user_interface), below).  
+ The .NET Framework provides a set of pre-built controls that simplify using fixed documents, flow documents, and general text within your application.  The display of fixed document content is supported using the <xref:System.Windows.Controls.DocumentViewer> control.  Display of flow document content is supported by three different controls: <xref:System.Windows.Controls.FlowDocumentReader>, <xref:System.Windows.Controls.FlowDocumentPageViewer>, and <xref:System.Windows.Controls.FlowDocumentScrollViewer> which map to different user scenarios (see sections below).  Other WPF controls provide simplified layout to support general text uses (see [Text in the User Interface](#text_in_the_user_interface), below).  
   
 ### Fixed Document Control - DocumentViewer  
- The <xref:System.Windows.Controls.DocumentViewer> control is designed to display <xref:System.Windows.Documents.FixedDocument> content. The <xref:System.Windows.Controls.DocumentViewer> control provides an intuitive user interface that provides built-in support for common operations including print output, copy to clipboard, zoom, and text search features. The control provides access to pages of content through a familiar scrolling mechanism. Like all [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] controls, <xref:System.Windows.Controls.DocumentViewer> supports complete or partial restyling, which enables the control to be visually integrated into virtually any application or environment.  
+ The <xref:System.Windows.Controls.DocumentViewer> control is designed to display <xref:System.Windows.Documents.FixedDocument> content. The <xref:System.Windows.Controls.DocumentViewer> control provides an intuitive user interface that provides built-in support for common operations including print output, copy to clipboard, zoom, and text search features. The control provides access to pages of content through a familiar scrolling mechanism. Like all WPF controls, <xref:System.Windows.Controls.DocumentViewer> supports complete or partial restyling, which enables the control to be visually integrated into virtually any application or environment.  
   
  <xref:System.Windows.Controls.DocumentViewer> is designed to display content in a read-only manner; editing or modification of content is not available and is not supported.  
   
@@ -46,17 +47,17 @@ ms.assetid: 6e8db7bc-050a-4070-aa72-bb8c46e87ff8
 #### FlowDocumentPageViewer and FlowDocumentScrollViewer  
  <xref:System.Windows.Controls.FlowDocumentPageViewer> shows content in page-at-a-time viewing mode, while <xref:System.Windows.Controls.FlowDocumentScrollViewer> shows content in continuous scrolling mode.  Both <xref:System.Windows.Controls.FlowDocumentPageViewer> and <xref:System.Windows.Controls.FlowDocumentScrollViewer> are fixed to a particular viewing mode. Compare to <xref:System.Windows.Controls.FlowDocumentReader>, which includes features that enable the user to dynamically choose between various viewing modes (as provided by the <xref:System.Windows.Controls.FlowDocumentReaderViewingMode> enumeration), at the cost of being more resource intensive than <xref:System.Windows.Controls.FlowDocumentPageViewer> or <xref:System.Windows.Controls.FlowDocumentScrollViewer>.  
   
- By default, a vertical scrollbar is always shown, and a horizontal scrollbar becomes visible if needed. The default [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] for <xref:System.Windows.Controls.FlowDocumentScrollViewer> does not include a toolbar; however, the <xref:System.Windows.Controls.FlowDocumentScrollViewer.IsToolBarVisible%2A> property can be used to enable a built-in toolbar.  
+ By default, a vertical scrollbar is always shown, and a horizontal scrollbar becomes visible if needed. The default UI for <xref:System.Windows.Controls.FlowDocumentScrollViewer> does not include a toolbar; however, the <xref:System.Windows.Controls.FlowDocumentScrollViewer.IsToolBarVisible%2A> property can be used to enable a built-in toolbar.  
   
 <a name="text_in_the_user_interface"></a>
 ### Text in the User Interface  
- Besides adding text to documents, text can obviously be used in application UI such as forms. [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] includes multiple controls for drawing text to the screen. Each control is targeted to a different scenario and has its own list of features and limitations. In general, the <xref:System.Windows.Controls.TextBlock> element should be used when limited text support is required, such as a brief sentence in a [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)]. <xref:System.Windows.Controls.Label> can be used when minimal text support is required. For more information, see [TextBlock Overview](../controls/textblock-overview.md).  
+ Besides adding text to documents, text can obviously be used in application UI such as forms. WPF includes multiple controls for drawing text to the screen. Each control is targeted to a different scenario and has its own list of features and limitations. In general, the <xref:System.Windows.Controls.TextBlock> element should be used when limited text support is required, such as a brief sentence in a user interface (UI). <xref:System.Windows.Controls.Label> can be used when minimal text support is required. For more information, see [TextBlock Overview](../controls/textblock-overview.md).  
   
 <a name="packaging"></a>
 ## Document Packaging  
- The <xref:System.IO.Packaging> APIs provide an efficient means to organize application data, document content, and related resources in a single container that is simple to access, portable, and easy to distribute. A ZIP file is an example of a <xref:System.IO.Packaging.Package> type capable of holding multiple objects as a single unit. The packaging APIs provide a default <xref:System.IO.Packaging.ZipPackage> implementation designed using an Open Packaging Conventions standard with XML and ZIP file architecture. The [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] packaging APIs make it simple to create packages, and to store and access objects within them. An object stored in a <xref:System.IO.Packaging.Package> is referred to as a <xref:System.IO.Packaging.PackagePart> ("part"). Packages can also include signed digital certificates that can be used to identify the originator of a part and to validate that the contents of a package have not been modified.  Packages also include a <xref:System.IO.Packaging.PackageRelationship> feature that allows additional information to be added to a package or associated with specific parts without actually modifying the content of existing parts.  Package services also support Microsoft Windows Rights Management (RM).  
+ The <xref:System.IO.Packaging> APIs provide an efficient means to organize application data, document content, and related resources in a single container that is simple to access, portable, and easy to distribute. A ZIP file is an example of a <xref:System.IO.Packaging.Package> type capable of holding multiple objects as a single unit. The packaging APIs provide a default <xref:System.IO.Packaging.ZipPackage> implementation designed using an Open Packaging Conventions standard with XML and ZIP file architecture. The WPF packaging APIs make it simple to create packages, and to store and access objects within them. An object stored in a <xref:System.IO.Packaging.Package> is referred to as a <xref:System.IO.Packaging.PackagePart> ("part"). Packages can also include signed digital certificates that can be used to identify the originator of a part and to validate that the contents of a package have not been modified.  Packages also include a <xref:System.IO.Packaging.PackageRelationship> feature that allows additional information to be added to a package or associated with specific parts without actually modifying the content of existing parts.  Package services also support Microsoft Windows Rights Management (RM).  
   
- The [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] Package architecture serves as the foundation for a number of key technologies:  
+ The WPF Package architecture serves as the foundation for a number of key technologies:  
   
 - XPS documents conforming to the XML Paper Specification (XPS).  
   
@@ -64,23 +65,23 @@ ms.assetid: 6e8db7bc-050a-4070-aa72-bb8c46e87ff8
   
 - Custom storage formats for your own application design.  
   
- Based on the packaging APIs, an <xref:System.Windows.Xps.Packaging.XpsDocument> is specifically designed for storing [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] fixed content documents. An <xref:System.Windows.Xps.Packaging.XpsDocument> is a self-contained document that can be opened in a viewer, displayed in a <xref:System.Windows.Controls.DocumentViewer> control, routed to a print spool, or output directly to an XPS-compatible printer.  
+ Based on the packaging APIs, an <xref:System.Windows.Xps.Packaging.XpsDocument> is specifically designed for storing WPF fixed content documents. An <xref:System.Windows.Xps.Packaging.XpsDocument> is a self-contained document that can be opened in a viewer, displayed in a <xref:System.Windows.Controls.DocumentViewer> control, routed to a print spool, or output directly to an XPS-compatible printer.  
   
- The following sections provide additional information on the <xref:System.IO.Packaging.Package> and <xref:System.Windows.Xps.Packaging.XpsDocument> APIs provided with [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)].  
+ The following sections provide additional information on the <xref:System.IO.Packaging.Package> and <xref:System.Windows.Xps.Packaging.XpsDocument> APIs provided with WPF.  
   
 <a name="packages"></a>
 ### Package Components  
- The [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] packaging APIs allow application data and documents to be organized into a single portable unit. A ZIP file is one of the most common types of packages and is the default package type provided with [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)].  <xref:System.IO.Packaging.Package> itself is an abstract class from which <xref:System.IO.Packaging.ZipPackage> is implemented using an open standard XML and ZIP file architecture.  The <xref:System.IO.Packaging.Package.Open%2A> method uses <xref:System.IO.Packaging.ZipPackage> to create and use ZIP files by default. A package can contain three basic types of items:  
+ The WPF packaging APIs allow application data and documents to be organized into a single portable unit. A ZIP file is one of the most common types of packages and is the default package type provided with WPF.  <xref:System.IO.Packaging.Package> itself is an abstract class from which <xref:System.IO.Packaging.ZipPackage> is implemented using an open standard XML and ZIP file architecture.  The <xref:System.IO.Packaging.Package.Open%2A> method uses <xref:System.IO.Packaging.ZipPackage> to create and use ZIP files by default. A package can contain three basic types of items:  
   
-|||  
-|-|-|  
+| Item | Description |  
+|------|-------------|  
 |<xref:System.IO.Packaging.PackagePart>|Application content, data, documents, and resource files.|  
 |<xref:System.IO.Packaging.PackageDigitalSignature>|[X.509 Certificate] for identification, authentication and validation.|  
 |<xref:System.IO.Packaging.PackageRelationship>|Added information related to the package or a specific part.|  
   
 <a name="PackageParts"></a>
 #### PackageParts  
- A <xref:System.IO.Packaging.PackagePart> ("part") is an abstract class that refers to an object stored in a <xref:System.IO.Packaging.Package>. In a ZIP file, the package parts correspond to the individual files stored within the ZIP file.  <xref:System.IO.Packaging.ZipPackagePart> provides the default implementation for serializable objects stored in a <xref:System.IO.Packaging.ZipPackage>.  Like a file system, parts contained in the package are stored in hierarchical directory or "folder-style" organization.  Using the [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] packaging APIs, applications can write, store, and read multiple <xref:System.IO.Packaging.PackagePart> objects using a single ZIP file container.  
+ A <xref:System.IO.Packaging.PackagePart> ("part") is an abstract class that refers to an object stored in a <xref:System.IO.Packaging.Package>. In a ZIP file, the package parts correspond to the individual files stored within the ZIP file.  <xref:System.IO.Packaging.ZipPackagePart> provides the default implementation for serializable objects stored in a <xref:System.IO.Packaging.ZipPackage>.  Like a file system, parts contained in the package are stored in hierarchical directory or "folder-style" organization.  Using the WPF packaging APIs, applications can write, store, and read multiple <xref:System.IO.Packaging.PackagePart> objects using a single ZIP file container.  
   
 <a name="PackageDigitalSignatures"></a>
 #### PackageDigitalSignatures  

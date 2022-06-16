@@ -8,7 +8,17 @@
 
         Public Sub New()
             InitializeComponent()
+
+            ' Test code.
+            Dim aquarium As New Aquarium With {
+                .AquariumGraphic = New Uri("http://www.contoso.com/aquarium-graphic-new.jpg")
+            }
+            Debug.WriteLine($"Aquarium graphic: {aquarium.AquariumGraphic}")
         End Sub
+
+        ' Output:
+        ' OnUriChanged http://www.contoso.com/aquarium-graphic-new.jpg
+        ' Aquarium graphic: http://www.contoso.com/aquarium-graphic-new.jpg
     End Class
 
     Public Class Aquarium
@@ -30,7 +40,7 @@
                     propertyChangedCallback:=New PropertyChangedCallback(AddressOf OnUriChanged)))
         '</RegisterDependencyProperty>
 
-        ' Declare a read-write property.
+        ' Declare a read-write property wrapper.
         Public Property AquariumGraphic As Uri
             Get
                 Return CType(GetValue(AquariumGraphicProperty), Uri)
@@ -42,8 +52,8 @@
         '</RegisterDependencyPropertyWithWrapper>
 
         Private Shared Sub OnUriChanged(dependencyObject As DependencyObject, e As DependencyPropertyChangedEventArgs)
-            Dim shape As Shape = CType(dependencyObject, Shape)
-            shape.Fill = New ImageBrush(New BitmapImage(CType(e.NewValue, Uri)))
+            Dim value As Uri = CType(dependencyObject.GetValue(AquariumGraphicProperty), Uri)
+            Debug.WriteLine($"OnUriChanged: {value}")
         End Sub
 
     End Class

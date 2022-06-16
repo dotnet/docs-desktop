@@ -42,7 +42,7 @@ The following illustration shows a simple layout.
 
 ![Screenshot that shows a typical grid, no bounding box superimposed.](./media/layout/grid-no-bounding-box-superimpose.png)
 
-This layout can be achieved by using the following [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)].
+This layout can be achieved by using the following XAML.
 
 [!code-xaml[LayoutInformation#1](~/samples/snippets/csharp/VS_Snippets_Wpf/LayoutInformation/CSharp/Window1.xaml#1)]
 
@@ -133,7 +133,7 @@ Layout is a recursive process. Each child element in a <xref:System.Windows.Cont
 
 - When possible, use a <xref:System.Windows.UIElement.RenderTransform%2A> instead of a <xref:System.Windows.FrameworkElement.LayoutTransform%2A>.
 
-  A <xref:System.Windows.FrameworkElement.LayoutTransform%2A> can be a very useful way to affect the content of a [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)]. However, if the effect of the transform does not have to impact the position of other elements, it is best to use a <xref:System.Windows.UIElement.RenderTransform%2A> instead, because <xref:System.Windows.UIElement.RenderTransform%2A> does not invoke the layout system. <xref:System.Windows.FrameworkElement.LayoutTransform%2A> applies its transformation and forces a recursive layout update to account for the new position of the affected element.
+  A <xref:System.Windows.FrameworkElement.LayoutTransform%2A> can be a very useful way to affect the content of a user interface (UI). However, if the effect of the transform does not have to impact the position of other elements, it is best to use a <xref:System.Windows.UIElement.RenderTransform%2A> instead, because <xref:System.Windows.UIElement.RenderTransform%2A> does not invoke the layout system. <xref:System.Windows.FrameworkElement.LayoutTransform%2A> applies its transformation and forces a recursive layout update to account for the new position of the affected element.
 
 - Avoid unnecessary calls to <xref:System.Windows.UIElement.UpdateLayout%2A>.
 

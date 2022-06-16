@@ -7,7 +7,7 @@ helpviewer_keywords:
 ms.assetid: 1ba6dc5b-11a7-4247-9213-36c6729ee35f
 ---
 # TextBox Overview
-The <xref:System.Windows.Controls.TextBox> class enables you to display or edit unformatted text. A common use of a <xref:System.Windows.Controls.TextBox> is editing unformatted text in a form. For example, a form asking for the user's name, phone number, etc would use <xref:System.Windows.Controls.TextBox> controls for text input. This topic introduces the <xref:System.Windows.Controls.TextBox> class and provides examples of how to use it in both [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)] and C#.  
+The <xref:System.Windows.Controls.TextBox> class enables you to display or edit unformatted text. A common use of a <xref:System.Windows.Controls.TextBox> is editing unformatted text in a form. For example, a form asking for the user's name, phone number, etc would use <xref:System.Windows.Controls.TextBox> controls for text input. This topic introduces the <xref:System.Windows.Controls.TextBox> class and provides examples of how to use it in both Extensible Application Markup Language (XAML) and C#.  
 
 <a name="textbox_or_richtextbox"></a>
 ## TextBox or RichTextBox?  
@@ -43,7 +43,7 @@ The <xref:System.Windows.Controls.TextBox> class enables you to display or edit 
   
  [!code-xaml[TextBoxMiscSnippets_snip#BasicTextBoxExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxMiscSnippets_snip/csharp/basictextboxexample.xaml#basictextboxexamplewholepage)]  
   
- You can also create a <xref:System.Windows.Controls.TextBox> that allows the user to enter multiple lines of text. For example, if your form asked for a biographical sketch of the user, you would want to use a <xref:System.Windows.Controls.TextBox> that supports multiple lines of text. The following example shows how to use [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)] to define a <xref:System.Windows.Controls.TextBox> control that automatically expands to accommodate multiple lines of text.  
+ You can also create a <xref:System.Windows.Controls.TextBox> that allows the user to enter multiple lines of text. For example, if your form asked for a biographical sketch of the user, you would want to use a <xref:System.Windows.Controls.TextBox> that supports multiple lines of text. The following example shows how to use Extensible Application Markup Language (XAML) to define a <xref:System.Windows.Controls.TextBox> control that automatically expands to accommodate multiple lines of text.  
   
  [!code-xaml[TextBox_MiscCode#_MultilineTextBoxXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBox_MiscCode/CSharp/Window1.xaml#_multilinetextboxxaml)]  
   

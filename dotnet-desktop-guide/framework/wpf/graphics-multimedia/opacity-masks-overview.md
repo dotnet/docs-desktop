@@ -67,7 +67,7 @@ DrawingBrush opacity masking example
   
 <a name="argbsyntax"></a>
 ### Specifying Color Opacity in "XAML"  
- In [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)], you use  ARGB hexadecimal notation to specify the opacity of individual colors. ARGB hexadecimal notation uses the following syntax:  
+ In Extensible Application Markup Language (XAML), you use  ARGB hexadecimal notation to specify the opacity of individual colors. ARGB hexadecimal notation uses the following syntax:  
   
  `#` **aa** *rrggbb*  
   
