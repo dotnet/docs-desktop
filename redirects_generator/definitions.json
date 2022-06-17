@@ -310,11 +310,6 @@
         },
         {
             "Redirect": "OneWay",
-            "SourceUrl": "/dotnet/desktop/winforms/multiple-controls-bound-to-data-source-synchronized?view=netframeworkdesktop-4.8",
-            "TargetUrl": "/dotnet/desktop/winforms/data/design-great-data-sources?view=netdesktop-6.0"
-        },
-        {
-            "Redirect": "OneWay",
             "SourceUrl": "/dotnet/desktop/winforms/how-to-apply-the-propertynamechanged-pattern?view=netframeworkdesktop-4.8",
             "TargetUrl": "/dotnet/desktop/winforms/data/design-great-data-sources?view=netdesktop-6.0"
         },

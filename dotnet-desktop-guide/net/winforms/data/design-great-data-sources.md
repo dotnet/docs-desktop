@@ -1,6 +1,6 @@
 ---
 title: "Design great data sources"
-description: Learn how to design great data sources.
+description: Learn how to design great data sources in Windows Forms .NET.
 ms.date: "05/31/2022"
 dev_langs: 
   - "csharp"
@@ -33,7 +33,7 @@ Windows Forms depends on a bound list to provide *property change* and *list cha
 
 ## Change notification for custom controls
 
-Finally, from the control side you must expose a *PropertyName*Changed event for each property designed to be bound to data. The changes to the control property are then propagated to the bound data source. For more information, see [How to: Apply the PropertyNameChanged Pattern](/dotnet/desktop/winforms/how-to-apply-the-propertynamechanged-pattern?view=netframeworkdesktop-4.8&preserve-view=true)
+Finally, from the control side you must expose a *PropertyName*Changed event for each property designed to be bound to data. The changes to the control property are then propagated to the bound data source. For more information, see [Apply the PropertyNameChanged pattern](design-great-data-sources.md#apply-the-propertynamechanged-pattern).
 
 ## Apply the PropertyNameChanged pattern
 
@@ -65,9 +65,7 @@ For more information on implementing this concept, see the [BindingComplete API 
 
 ## See also
 
+- [Data Binding](overview.md)
 - <xref:System.Windows.Forms.BindingSource>
 - <xref:System.ComponentModel.INotifyPropertyChanged>
 - <xref:System.ComponentModel.BindingList%601>
-- [How to: Share Bound Data Across Forms Using the BindingSource Component](/dotnet/desktop/winforms/controls/how-to-share-bound-data-across-forms-using-the-bindingsource-component?view=netframeworkdesktop-4.8&preserve-view=true)
-- [Windows Forms Data Binding](/dotnet/desktop/winforms/windows-forms-data-binding?view=netframeworkdesktop-4.8&preserve-view=true)
-- [How to: Raise Change Notifications Using a BindingSource and the INotifyPropertyChanged Interface](/dotnet/desktop/winforms/controls/raise-change-notifications--bindingsource?view=netframeworkdesktop-4.8&preserve-view=true)
