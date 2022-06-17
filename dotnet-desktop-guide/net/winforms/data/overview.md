@@ -164,7 +164,7 @@ The following interfaces are designed for consumption by the Windows Forms data-
   > [!NOTE]
   > A class that inherits from <xref:System.Windows.Forms.Control> manages bindings automatically through its <xref:System.Windows.Forms.Control.BindingContext%2A> property, so cases in which you need to implement the <xref:System.Windows.Forms.ICurrencyManagerProvider> are fairly rare.
 
-## Data sources supported by Windows forms
+## Data sources supported by Windows Forms
 
 Traditionally, data binding has been used within applications to take advantage of data stored in databases. With Windows Forms data binding, you can access data from databases and data in other structures, such as arrays and collections, so long as certain minimum requirements have been met.
 

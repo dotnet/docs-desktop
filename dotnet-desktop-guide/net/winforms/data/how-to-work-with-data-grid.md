@@ -98,7 +98,7 @@ To test the code example, perform the following steps:
 ## See also
 
 - [Data binding overview](overview.md)
-- [Data sources supported by Windows forms](overview.md#data-sources-supported-by-windows-forms)
+- [Data sources supported by Windows Forms](overview.md#data-sources-supported-by-windows-forms)
 - [Change Notification in Windows Forms Data Binding](design-great-data-sources.md)
 - [How to synchronize multiple controls to the same data source](how-to-synchronize-multiple-controls.md)
 - [BindingSource Component](/dotnet/desktop/winforms/controls/bindingsource-component?view=netframeworkdesktop-4.8&preserve-view=true)
