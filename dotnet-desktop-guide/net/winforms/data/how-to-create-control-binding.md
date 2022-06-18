@@ -1,6 +1,6 @@
 ---
-title: "How to create a simple-bound control on a Windows Form .NET"
-description: "Learn about how to create a simple-bound control on a Windows Form .NET."
+title: "How to create a simple-bound control on a Form"
+description: "Learn about how to create a simple-bound control on a Form in Windows Forms .NET."
 ms.date: "06/06/2022"
 helpviewer_keywords:
   - "data binding [Windows Forms], simple data binding"
@@ -8,7 +8,7 @@ helpviewer_keywords:
 ms.custom: devdivchpfy22
 ---
 
-# How to create a simple-bound control on a Windows Form .NET
+# Create a simple-bound control (Windows Forms .NET)
 
 With simple data binding, you can display a single data element, such as a column value from a dataset table to a control on a form. You can simple-bind any property of a control to a data value.
 
@@ -75,7 +75,5 @@ With Windows Forms data binding, you can format the data displayed in a data-bou
 ## See also
 
 - <xref:System.Windows.Forms.Binding>
-- [Windows Forms Data Binding](/dotnet/desktop/winforms/windows-forms-data-binding?view=netframeworkdesktop-4.8&preserve-view=true)
-- [Data Binding and Windows Forms](/dotnet/desktop/winforms/data-binding-and-windows-forms?view=netframeworkdesktop-4.8&preserve-view=true)
-- [How to: Create a Simple-Bound Control on a Windows Form](/dotnet/desktop/winforms/how-to-create-a-simple-bound-control-on-a-windows-form?view=netframeworkdesktop-4.8&preserve-view=true)
-- [User Input Validation in Windows Forms](/dotnet/desktop/winforms/user-input-validation-in-windows-forms?view=netframeworkdesktop-4.8&preserve-view=true)
+- [Data Binding](overview.md)
+- [User Input Validation in Windows Forms](../input-keyboard/validation.md)

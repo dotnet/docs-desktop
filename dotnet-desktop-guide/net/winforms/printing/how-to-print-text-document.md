@@ -13,7 +13,7 @@ helpviewer_keywords:
 ms.custom: devdivchpfy22
 ---
 
-# How to print a multi-page text file (Windows Forms .NET)
+# Print a multi-page text file (Windows Forms .NET)
 
 It's common for Windows-based applications to print text. The <xref:System.Drawing.Graphics> class provides methods for drawing objects (graphics or text) to a device, such as a screen or printer. The following section describes in detail the process to print text file. This method doesn't support printing non-plain text files, such as an Office Word document or a _PDF_ file.
 
@@ -56,4 +56,4 @@ It's common for Windows-based applications to print text. The <xref:System.Drawi
 
 - <xref:System.Drawing.Graphics>
 - <xref:System.Drawing.Brush>
-- [Windows Forms Print Support](/dotnet/desktop/winforms/advanced/windows-forms-print-support?view=netframeworkdesktop-4.8&preserve-view=true)
+- [PrintDialog component overview](overview.md)
