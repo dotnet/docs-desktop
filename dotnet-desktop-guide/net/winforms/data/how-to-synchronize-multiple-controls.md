@@ -33,7 +33,6 @@ The example uses a <xref:System.Windows.Forms.BindingSource> to bind the data so
 
 ## See also
 
+- [Design great data sources with change notification](design-great-data-sources.md)
+- [Data Binding](overview.md)
 - [How to: Share Bound Data Across Forms Using the BindingSource Component](/dotnet/desktop/winforms/controls/how-to-share-bound-data-across-forms-using-the-bindingsource-component?view=netframeworkdesktop-4.8&preserve-view=true)
-- [Change Notification in Windows Forms Data Binding](/dotnet/desktop/winforms/change-notification-in-windows-forms-data-binding?view=netframeworkdesktop-4.8&preserve-view=true)
-- [Interfaces Related to Data Binding](/dotnet/desktop/winforms/interfaces-related-to-data-binding?view=netframeworkdesktop-4.8&preserve-view=true)
-- [Windows Forms Data Binding](/dotnet/desktop/winforms/windows-forms-data-binding?view=netframeworkdesktop-4.8&preserve-view=true)
