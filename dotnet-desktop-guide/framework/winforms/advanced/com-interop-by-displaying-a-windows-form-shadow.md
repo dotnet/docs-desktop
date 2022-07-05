@@ -35,6 +35,6 @@ You can resolve Component Object Model (COM) interoperability problems by displa
   
 ## See also
 
-- [Exposing .NET Framework Components to COM](/dotnet/framework/interop/exposing-dotnet-components-to-co)
+- [Exposing .NET Framework Components to COM](/dotnet/framework/interop/exposing-dotnet-components-to-com)
 - [How to: Support COM Interop by Displaying Each Windows Form on Its Own Thread](how-to-support-com-interop-by-displaying-each-windows-form-on-its-own-thread.md)
 - [Windows Forms and Unmanaged Applications](windows-forms-and-unmanaged-applications.md)
