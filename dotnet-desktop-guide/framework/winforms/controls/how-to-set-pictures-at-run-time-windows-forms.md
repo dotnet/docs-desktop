@@ -88,7 +88,7 @@ You can programmatically set the image displayed by a Windows Forms <xref:System
     ```  
   
     > [!NOTE]
-    > For more information on why you should use the <xref:System.Drawing.Image.Dispose%2A> method in this way, see [Cleaning Up Unmanaged Resources](/dotnet/standard/garbage-collection/unmanage).  
+    > For more information on why you should use the <xref:System.Drawing.Image.Dispose%2A> method in this way, see [Cleaning Up Unmanaged Resources](/dotnet/standard/garbage-collection/unmanaged).  
   
      This code will clear the image even if a graphic was loaded into the control at design time.  
   

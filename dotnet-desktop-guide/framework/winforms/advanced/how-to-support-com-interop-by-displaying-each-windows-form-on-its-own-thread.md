@@ -43,8 +43,8 @@ Compile the `COMForm`, `Form1`, and `FormManager` types into an assembly called 
 
 ## See also
 
-- [Exposing .NET Framework Components to COM](/dotnet/framework/interop/exposing-dotnet-components-to-co)
-- [Packaging an Assembly for COM](/dotnet/framework/interop/packaging-an-assembly-for-co)
-- [Registering Assemblies with COM](/dotnet/framework/interop/registering-assemblies-with-co)
+- [Exposing .NET Framework Components to COM](/dotnet/framework/interop/exposing-dotnet-components-to-com)
+- [Packaging an Assembly for COM](/dotnet/framework/interop/packaging-an-assembly-for-com)
+- [Registering Assemblies with COM](/dotnet/framework/interop/registering-assemblies-with-com)
 - [How to: Support COM Interop by Displaying a Windows Form with the ShowDialog Method](com-interop-by-displaying-a-windows-form-shadow.md)
 - [Windows Forms and Unmanaged Applications Overview](windows-forms-and-unmanaged-applications-overview.md)

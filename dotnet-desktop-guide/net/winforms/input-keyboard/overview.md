@@ -79,7 +79,7 @@ After keyboard messages reach the <xref:System.Windows.Forms.Control.WndProc%2A>
 
 ## Overriding keyboard methods
 
-There are many methods available for overriding when a keyboard message is preprocessed and processed; however, some methods are much better choices than others. Following table shows tasks you might want to accomplish and the best way to override the keyboard methods. For more information on overriding methods, see [Inheritance (C# Programming Guide)](/dotnet/csharp/programming-guide/classes-and-structs/inheritance.md#abstract-and-virtual-methods) or [Inheritance (Visual Basic)](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics.md#overriding-properties-and-methods-in-derived-classes)
+There are many methods available for overriding when a keyboard message is preprocessed and processed; however, some methods are much better choices than others. Following table shows tasks you might want to accomplish and the best way to override the keyboard methods. For more information on overriding methods, see [Inheritance (C# Programming Guide)](/dotnet/csharp/programming-guide/classes-and-structs/inheritance#abstract-and-virtual-methods) or [Inheritance (Visual Basic)](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics#overriding-properties-and-methods-in-derived-classes)
 
 |Task|Method|
 |----------|------------|
