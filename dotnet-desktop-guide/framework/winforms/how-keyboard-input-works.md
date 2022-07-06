@@ -14,7 +14,7 @@ Windows Forms processes keyboard input by raising keyboard events in response to
   
 ## Types of Keys  
 
- Windows Forms identifies keyboard input as virtual-key codes that are represented by the bitwise <xref:System.Windows.Forms.Keys> enumeration. With the <xref:System.Windows.Forms.Keys> enumeration, you can combine a series of pressed keys to result in a single value. These values correspond to the values that accompany the WM_KEYDOWN and WM_SYSKEYDOWN Windows messages. You can detect most physical key presses by handling the <xref:System.Windows.Forms.Control.KeyDown> or <xref:System.Windows.Forms.Control.KeyUp> events. Character keys are a subset of the <xref:System.Windows.Forms.Keys> enumeration and correspond to the values that accompany the WM_CHAR and WM_SYSCHAR Windows messages. If the combination of pressed keys results in a character, you can detect the character by handling the <xref:System.Windows.Forms.Control.KeyPress> event. Alternatively, you can use <xref:Microsoft.VisualBasic.Devices.Keyboard>, exposed by Visual Basic programming interface, to discover which keys were pressed and send keys. For more information, see [Accessing the Keyboard](/dotnet/visual-basic/developing-apps/programming/computer-resources/accessing-the-keyboar).  
+ Windows Forms identifies keyboard input as virtual-key codes that are represented by the bitwise <xref:System.Windows.Forms.Keys> enumeration. With the <xref:System.Windows.Forms.Keys> enumeration, you can combine a series of pressed keys to result in a single value. These values correspond to the values that accompany the WM_KEYDOWN and WM_SYSKEYDOWN Windows messages. You can detect most physical key presses by handling the <xref:System.Windows.Forms.Control.KeyDown> or <xref:System.Windows.Forms.Control.KeyUp> events. Character keys are a subset of the <xref:System.Windows.Forms.Keys> enumeration and correspond to the values that accompany the WM_CHAR and WM_SYSCHAR Windows messages. If the combination of pressed keys results in a character, you can detect the character by handling the <xref:System.Windows.Forms.Control.KeyPress> event. Alternatively, you can use <xref:Microsoft.VisualBasic.Devices.Keyboard>, exposed by Visual Basic programming interface, to discover which keys were pressed and send keys. For more information, see [Accessing the Keyboard](/dotnet/visual-basic/developing-apps/programming/computer-resources/accessing-the-keyboard).  
   
 ## Order of Keyboard Events  
 
@@ -75,5 +75,5 @@ Windows Forms processes keyboard input by raising keyboard events in response to
 - <xref:System.Windows.Forms.Control.WndProc%2A>
 - <xref:System.Windows.Forms.Control.PreProcessMessage%2A>
 - [My.Computer.Keyboard Object](/dotnet/visual-basic/language-reference/objects/my-computer-keyboard-object)
-- [Accessing the Keyboard](/dotnet/visual-basic/developing-apps/programming/computer-resources/accessing-the-keyboar)
+- [Accessing the Keyboard](/dotnet/visual-basic/developing-apps/programming/computer-resources/accessing-the-keyboard)
 - [Using Keyboard Events](using-keyboard-events.md)

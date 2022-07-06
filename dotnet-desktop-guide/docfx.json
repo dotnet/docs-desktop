@@ -132,6 +132,7 @@
       "feedback_github_repo": "dotnet/docs-desktop",
       "feedback_product_url": "https://developercommunity.visualstudio.com/spaces/61/index.html",
       "author": "adegeo",
+      "uhfHeaderId": "MSDocsHeader-DotNet",
       "ms.author": "adegeo"
     },
     "fileMetadata": {
