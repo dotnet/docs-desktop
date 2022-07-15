@@ -48,6 +48,7 @@ In addition, to configure high DPI support in your Windows Forms application, yo
   ```xml
   <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
     <!-- ... other xml settings ... -->
+
     <System.Windows.Forms.ApplicationConfigurationSection>
       <add key="DpiAwareness" value="PerMonitorV2" />
     </System.Windows.Forms.ApplicationConfigurationSection>
