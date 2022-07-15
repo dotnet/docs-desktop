@@ -1,5 +1,6 @@
 ---
 title: "Global and Local Transformations"
+description: Learn how global transformations apply to every item drawn by a System.Drawing.Graphics object and local transformations apply to a specific item.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -21,7 +22,7 @@ A global transformation is a transformation that applies to every item drawn by 
   
  The following illustration shows the matrices involved in the transformation.  
   
- ![Transformations](./media/aboutgdip05-art14.gif "AboutGdip05_art14")  
+ ![Illustration of the Scale, Translate, and Rotate matrices combining to form the global transformation.](./media/aboutgdip05-art14.gif "AboutGdip05_art14")  
   
 > [!NOTE]
 > In the preceding example, the ellipse is rotated about the origin of the coordinate system, which is at the upper-left corner of the client area. This produces a different result than rotating the ellipse about its own center.  
@@ -36,7 +37,7 @@ A global transformation is a transformation that applies to every item drawn by 
   
  Suppose you want a coordinate system that has its origin 200 pixels from the left edge of the client area and 150 pixels from the top of the client area. Furthermore, assume that you want the unit of measure to be the pixel, with the x-axis pointing to the right and the y-axis pointing up. The default coordinate system has the y-axis pointing down, so you need to perform a reflection across the horizontal axis. The following illustration shows the matrix of such a reflection.  
   
- ![Transformations](./media/aboutgdip05-art15.gif "AboutGdip05_art15")  
+ ![Illustration of a matrix that reflects across the horizontal axis.](./media/aboutgdip05-art15.gif "AboutGdip05_art15")  
   
  Next, assume you need to perform a translation 200 units to the right and 150 units down.  
   
@@ -52,7 +53,7 @@ A global transformation is a transformation that applies to every item drawn by 
   
  The following illustration shows the new coordinate system and the two rectangles.  
   
- ![Transformations](./media/aboutgdip05-art16.gif "AboutGdip05_art16")  
+ ![Illustration of the new coordinate system and the two rectangles.](./media/aboutgdip05-art16.gif "AboutGdip05_art16")  
   
 ## See also
 

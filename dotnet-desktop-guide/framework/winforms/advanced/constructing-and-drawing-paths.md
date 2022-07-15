@@ -1,5 +1,6 @@
 ---
 title: "Constructing and Drawing Paths"
+description: Learn how to construct and draw paths, which are sequences of graphics primitives that can be manipulated and drawn as a single unit.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "paths [Windows Forms], drawing"

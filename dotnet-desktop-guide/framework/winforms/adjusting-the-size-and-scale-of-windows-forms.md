@@ -1,5 +1,6 @@
 ---
 title: "Adjust the size and scale"
+description: Learn how to adjust the size and scale of Windows Forms by reading the links provided in this topic.
 ms.date: "04/07/2017"
 helpviewer_keywords: 
   - "Windows Forms, changing size"
