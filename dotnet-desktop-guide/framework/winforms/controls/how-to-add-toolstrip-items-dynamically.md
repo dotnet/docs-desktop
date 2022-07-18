@@ -1,5 +1,6 @@
 ---
 title: "How to: Add ToolStrip Items Dynamically"
+description: Learn how to dynamically add ToolStrip items to a ContextMenuStrip control and reuse the same control for three different controls on the form.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

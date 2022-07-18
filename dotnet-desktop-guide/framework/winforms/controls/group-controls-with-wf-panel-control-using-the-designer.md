@@ -1,5 +1,6 @@
 ---
 title: Group Controls with Panel Control Using the Designer
+description: Learn how to group controls with the Windows Forms Panel Control by using the Designer and the reasons to group controls.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "Panel control [Windows Forms], grouping controls"

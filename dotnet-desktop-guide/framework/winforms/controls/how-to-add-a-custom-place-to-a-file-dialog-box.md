@@ -1,5 +1,6 @@
 ---
 title: "How To: Add a Custom Place to a File Dialog Box"
+description: The default open and save dialog boxes on Windows Vista have a custom places area. Learn how to add a custom place.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
