@@ -1,5 +1,6 @@
 ---
 title: "How to: Use Event Triggers to Control a Storyboard After It Starts"
+description: Learn how to use event triggers to interactively control a storyboard after it starts.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "triggers [WPF], controlling Storyboards"

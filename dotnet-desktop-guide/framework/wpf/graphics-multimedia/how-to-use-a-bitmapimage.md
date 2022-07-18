@@ -1,5 +1,6 @@
 ---
 title: "How to: Use a BitmapImage"
+description: Learn how to use a BitmapImage as the source of an Image control in Extensible Application Markup Language (XAML).
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

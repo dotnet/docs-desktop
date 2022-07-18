@@ -1,5 +1,6 @@
 ---
 title: "How to: Use System Colors in a Gradient"
+description: Learn how to use dynamic system color resources to create a gradient.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "gradients [WPF], system colors in"

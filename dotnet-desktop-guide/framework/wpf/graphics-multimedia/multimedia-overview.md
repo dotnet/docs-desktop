@@ -1,5 +1,6 @@
 ---
 title: "Multimedia Overview"
+description: Learn abut the multimedia features available in Windows Presentation Foundation (WPF).
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "multimedia [WPF]"
