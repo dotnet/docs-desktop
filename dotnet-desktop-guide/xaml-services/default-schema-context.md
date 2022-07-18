@@ -1,5 +1,6 @@
 ---
 title: "Default XAML Schema Context and WPF XAML Schema Context"
+description: Learn about the features of .NET XAML Services and the associated default XAML schema context used in Windows Presentation Foundation (WPF).
 ms.date: "03/30/2017"
 ms.assetid: 04e06a15-09b3-4210-9bdf-9a64c2eccb83
 ---
