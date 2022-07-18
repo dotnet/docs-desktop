@@ -1,5 +1,6 @@
 ---
 title: "How to: Convert a BitmapSource to an Indexed Pixel Format"
+description: Learn how to convert a BitmapSource to an indexed pixel format.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

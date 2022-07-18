@@ -1,5 +1,6 @@
 ---
 title: "How to: Create a Combined Geometry"
+description: Learn how to combine two geometries using a CombinedGeometry object.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "combining geometries [WPF]"
