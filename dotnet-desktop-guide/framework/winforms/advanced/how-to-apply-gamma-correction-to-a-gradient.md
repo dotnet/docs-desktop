@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "gradient brushes [Windows Forms], gamma correction"
   - "gradients [Windows Forms], gamma correction"
 ms.assetid: da4690e7-5fac-4fd2-b3f0-5cb35c165b92
+description: Learn how to apply gamma correction to a gradient with supporting examples, illustrations, explanations, and links.
 ---
 # How to: Apply Gamma Correction to a Gradient
 You can enable gamma correction for a linear gradient brush by setting the brush's <xref:System.Drawing.Drawing2D.LinearGradientBrush.GammaCorrection%2A> property to `true`. You can disable gamma correction by setting the <xref:System.Drawing.Drawing2D.LinearGradientBrush.GammaCorrection%2A> property to `false`. Gamma correction is disabled by default.  

@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "text [Windows Forms], aligning"
   - "Windows Forms, aligning drawn text"
 ms.assetid: 83c10a81-1a90-4b5c-98aa-2c6c4b280079
+description: Learn how to Align Drawn text in GDI and GDI+ as well as how to draw centered text and compile the code.
 ---
 # How to: Align Drawn Text
 When you perform custom drawing, you may often want to center drawn text on a form or control. You can easily align text drawn with the <xref:System.Drawing.Graphics.DrawString%2A> or <xref:System.Windows.Forms.TextRenderer.DrawText%2A> methods by creating the correct formatting object and setting the appropriate format flags.  

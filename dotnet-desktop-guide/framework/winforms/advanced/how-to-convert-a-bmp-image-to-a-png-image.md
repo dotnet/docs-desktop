@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "BMP images [Windows Forms], converting to PNG"
   - "image formats [Windows Forms], converting between"
 ms.assetid: 9d4a692d-73ac-4ce3-9e05-9ec321e8fbd6
+description: Learn how to convert a BMP image into a PNG image with a Windows Forms application and a reference to the System.Drawing.Imaging namespace.
 ---
 # How to: Convert a BMP image to a PNG image
 Oftentimes, you will want to convert from one image file format to another. You can do this conversion easily by calling the <xref:System.Drawing.Image.Save%2A> method of the <xref:System.Drawing.Image> class and specifying the <xref:System.Drawing.Imaging.ImageFormat> for the desired image file format.  

@@ -5,6 +5,7 @@ helpviewer_keywords:
   - "application settings [Windows Forms], changing"
   - "application settings [Windows Forms], between application sessions"
 ms.assetid: 1a85911f-97b2-476c-930b-83379edd890c
+description: Learn how to change the value of a setting between application sessions using Microsoft Notepad or another text or XML editor.
 ---
 # How To: Change the Value of a Setting Between Application Sessions
 At times, you might want to change the value of a setting between application sessions after the application has been compiled and deployed. For example, you might want to change a connection string to point to the correct database location. Since design-time tools are not available after the application has been compiled and deployed, you must change the setting value manually in the file.  

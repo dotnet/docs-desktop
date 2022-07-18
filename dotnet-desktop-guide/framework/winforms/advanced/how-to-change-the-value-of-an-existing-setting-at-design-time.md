@@ -5,6 +5,7 @@ helpviewer_keywords:
   - "application settings [Windows Forms], design time"
   - "application settings [Windows Forms], changing"
 ms.assetid: 5da91272-ad7e-49e7-9d1f-eb64439a1e4d
+description: Learn how to change the value of an existing setting at design time with Visual Studio in C# and in Visual Basic.
 ---
 # How To: Change the Value of an Existing Setting at Design Time
 You can use Visual Studio to edit the values of existing settings in your project.  

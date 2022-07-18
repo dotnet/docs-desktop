@@ -13,6 +13,7 @@ helpviewer_keywords:
   - "flicker"
   - "bit-block transfer"
 ms.assetid: 33b76910-13a3-4521-be98-5c097341ae3b
+description: Learn how to copy pixes for reducing flicker in Windows Forms by using the CopyFromScreen method of the graphics class to accomplish bitblt.
 ---
 # How to: Copy Pixels for Reducing Flicker in Windows Forms
 When you animate a simple graphic, users can sometimes encounter flicker or other undesirable visual effects. One way to limit this problem is to use a "bitblt" process on the graphic. Bitblt is the "bit-block transfer" of the color data from an origin rectangle of pixels to a destination rectangle of pixels.  

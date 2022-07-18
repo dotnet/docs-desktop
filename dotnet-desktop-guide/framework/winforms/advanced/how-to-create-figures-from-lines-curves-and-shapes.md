@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "figures [Windows Forms], creating from shapes"
   - "figures [Windows Forms], creating from lines"
 ms.assetid: 82fd56c7-b443-4765-9b7c-62ce030656ec
+description: Learn how to create figures from lines, curves, and shapes with a GraphicsPath, and then call methods to add primitives to the path.
 ---
 # How to: Create Figures from Lines, Curves, and Shapes
 To create a figure, construct a <xref:System.Drawing.Drawing2D.GraphicsPath>, and then call methods, such as <xref:System.Drawing.Drawing2D.GraphicsPath.AddLine%2A> and <xref:System.Drawing.Drawing2D.GraphicsPath.AddCurve%2A>, to add primitives to the path.  

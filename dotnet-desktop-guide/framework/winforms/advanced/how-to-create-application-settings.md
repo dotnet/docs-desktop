@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "application settings [Windows Forms], Windows Forms"
   - "application settings [Windows Forms], creating"
 ms.assetid: 1e7aa347-af75-41e5-89ca-f53cab704f72
+description: Learn how to create application settings and bind them to properties on your form or your form's controls.
 ---
 # How to: Create Application Settings
 
