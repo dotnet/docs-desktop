@@ -1,6 +1,6 @@
 ---
 title: Add and Remove Menu Items with ContextMenu Component
-description: Learn more about how to add and remove shortcut menu items with the WIndows Forms ContextMenu component.
+description: Learn more about how to add and remove shortcut menu items with the Windows Forms ContextMenu component.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
