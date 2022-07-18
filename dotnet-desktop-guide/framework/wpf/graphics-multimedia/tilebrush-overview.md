@@ -1,6 +1,6 @@
 ---
 title: "TileBrush Overview"
-description: Learn about how TileBrush objects provide control over how an area is painted with an image, drawing, or visual.
+description: Learn how the TileBrush objects provide control over how an area is painted with an image, drawing, or visual.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
