@@ -1,6 +1,6 @@
 ---
 title: "Handling User Input"
-description: Learn about the main keyboard and mouse events from System.Windows.Forms.Control. When handling an event, control authors should override the protected method.
+description: Learn about keyboard and mouse events from System.Windows.Forms.Control. When handling an event, control authors should override the protected method.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
