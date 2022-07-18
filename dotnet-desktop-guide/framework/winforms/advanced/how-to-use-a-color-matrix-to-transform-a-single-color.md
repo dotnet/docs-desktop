@@ -28,7 +28,7 @@ GDI+ provides the <xref:System.Drawing.Image> and <xref:System.Drawing.Bitmap> c
   
  ![Screenshot of a transformation multiplication matrix.](./media/how-to-use-a-color-matrix-to-transform-a-single-color/multiplication-color-matrix.gif)
   
- The elements of a color matrix are indexed (zero-based) by row and then column. For example, the entry in the fifth row and third column of matrix M is denoted by M[4][2].  
+ The elements of a color matrix are indexed (zero-based) by row and then column. For example, the entry in the fifth row and third column of matrix `M` is denoted by `M[4][2]`.  
   
  The 5×5 identity matrix (shown in the following illustration) has 1s on the diagonal and 0s everywhere else. If you multiply a color vector by the identity matrix, the color vector does not change. A convenient way to form the matrix of a color transformation is to start with the identity matrix and make a small change that produces the desired transformation.  
   
