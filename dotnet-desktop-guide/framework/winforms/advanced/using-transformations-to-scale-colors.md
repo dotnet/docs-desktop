@@ -46,7 +46,7 @@ A scaling transformation multiplies one or more of the four color components by 
   
  The following illustration shows the original image on the left and the scaled image on the right:  
   
- ![Screenshot that compares the original and scaled colors.](./media/using-transformations-to-scale-colors/four-bar-scale-multiple-colors.png)  
+ ![Screenshot that compares the original and scaled red, green, and blue components.](./media/using-transformations-to-scale-colors/four-bar-scale-multiple-colors.png)  
   
  The following table lists the color vectors for the four bars before and after the red, green and blue scaling.  
   
