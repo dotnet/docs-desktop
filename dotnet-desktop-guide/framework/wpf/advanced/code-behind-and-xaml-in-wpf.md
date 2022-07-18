@@ -1,5 +1,6 @@
 ---
 title: "Code-Behind and XAML"
+description: Learn about code-behind, which describes code that is joined with markup-defined objects when a XAML page is markup-compiled, in Windows Presentation Foundation (WPF).
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "XAML [WPF], code-behind"
