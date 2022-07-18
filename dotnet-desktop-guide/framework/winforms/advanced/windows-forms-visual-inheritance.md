@@ -1,5 +1,6 @@
 ---
 title: Visual Inheritance
+description: Form inheritance enables you to create a base form and then inherit from it and make modifications while preserving whatever original settings you need.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "base forms"

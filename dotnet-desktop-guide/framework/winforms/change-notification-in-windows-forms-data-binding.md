@@ -1,5 +1,6 @@
 ---
 title: Change Notification in Data Binding
+description: Learn more about change notification in Windows Forms data binding. One of the most important concepts of Windows Forms data binding is change notification.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Windows Forms, data binding"

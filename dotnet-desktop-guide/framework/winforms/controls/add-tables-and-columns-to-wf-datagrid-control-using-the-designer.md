@@ -1,5 +1,6 @@
 ---
 title: Add Tables and Columns to DataGrid Control Using the Designer
+description: Learn more about how to add tables and columns to the Windows Forms DataGrid control using the designer.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "columns [Windows Forms], adding to DataGrid control"
