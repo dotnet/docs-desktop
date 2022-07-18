@@ -11,6 +11,7 @@ helpviewer_keywords:
   - "print options"
   - "run time [Windows Forms], changing print options"
 ms.assetid: 438501d8-9a70-4fb3-aae6-e46579aba0c6
+description: Learn how to capture user input from a PrintDialog at Run Time with the supporting examples and supplemental links.
 ---
 # How to: Capture User Input from a PrintDialog at Run Time
 While you can set options related to printing at design time, you will sometimes want to change these options at run time, most likely because of choices made by the user. You can capture user input for printing a document using the <xref:System.Windows.Forms.PrintDialog> and the <xref:System.Drawing.Printing.PrintDocument> components.  

@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "font families [Windows Forms], constructing"
   - "fonts [Windows Forms], constructing"
 ms.assetid: d3a4a223-9492-4b54-9afd-db1c31c3cefd
+description: Learn how to construct font families and fonts and how to compile the code for them with the following examples and support links.
 ---
 # How to: Construct Font Families and Fonts
 GDI+ groups fonts with the same typeface but different styles into font families. For example, the Arial font family contains the following fonts:  

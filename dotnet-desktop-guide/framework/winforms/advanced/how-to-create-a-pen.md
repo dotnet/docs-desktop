@@ -10,6 +10,7 @@ helpviewer_keywords:
   - "pens [Windows Forms], creating"
   - "Pen object"
 ms.assetid: 7fbea8b7-7ac1-4413-9c17-733a850381e3
+description: Learn the process for how to create a Pen object, including details for robust programming and supporting links.
 ---
 # How to: Create a Pen
 This example creates a <xref:System.Drawing.Pen> object.  

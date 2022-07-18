@@ -7,6 +7,7 @@ dev_langs:
 helpviewer_keywords: 
   - "encoder parameters [Windows Forms], determining supported"
 ms.assetid: f47ae459-e3ce-4d41-a140-2f6c6aea3f44
+description: Learn how to determine the parameters supported by an Encoder using the GetEncoderParameterList method provided by the Image class.
 ---
 # How to: Determine the Parameters Supported by an Encoder
 You can adjust image parameters, such as quality and compression level, but you must know which parameters are supported by a given image encoder. The <xref:System.Drawing.Image> class provides the <xref:System.Drawing.Image.GetEncoderParameterList%2A> method so that you can determine which image parameters are supported for a particular encoder. You specify the encoder with a GUID. The <xref:System.Drawing.Image.GetEncoderParameterList%2A> method returns an array of <xref:System.Drawing.Imaging.EncoderParameter> objects.  

@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "ElementHost control [Windows Forms], copying and pasting at design time"
   - "WPF user control [Windows Forms], hosting in Windows Forms"
 ms.assetid: e570375d-2a68-44ba-b4f7-c781af2d20e8
+description: Learn how to copy and paste an ElementHost control from Windows Presentation Foundation onto a Windows Form in Visual Studio.
 ---
 # How to: Copy and paste an ElementHost control
 

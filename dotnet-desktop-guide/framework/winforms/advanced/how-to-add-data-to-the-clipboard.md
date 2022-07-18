@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "Clipboard [Windows Forms], copying data to"
   - "data [Windows Forms], copying to Clipboard"
 ms.assetid: 25152454-0e78-40a9-8a9e-a2a5a274e517
+description: Learn how to add data to the clipboard within many applications and transfer that data from one application to another.
 ---
 # How to: Add Data to the Clipboard
 

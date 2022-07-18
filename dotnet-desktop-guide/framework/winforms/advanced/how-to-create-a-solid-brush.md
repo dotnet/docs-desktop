@@ -10,6 +10,7 @@ helpviewer_keywords:
   - "brushes [Windows Forms], examples"
   - "brushes [Windows Forms], creating solid"
 ms.assetid: 85c3fe7d-fb1d-4591-8a9f-d75b556b90af
+description: Learn how to create a solid brush, with an example that creates a SolidBrush object that can be used by a Graphics object for filling shapes.
 ---
 # How to: Create a Solid Brush
 This example creates a <xref:System.Drawing.SolidBrush> object that can be used by a <xref:System.Drawing.Graphics> object for filling shapes.  
