@@ -15,6 +15,7 @@ helpviewer_keywords:
   - "shapes [Windows Forms], drawing"
   - "forms [Windows Forms], drawing ellipses"
 ms.assetid: 781db806-950d-4c5b-b022-493f7fd0c4a8
+description: Learn how to draw a filled ellipse on a Windows Form with the following information, examples and links.
 ---
 # How to: Draw a Filled Ellipse on a Windows Form
 This example draws a filled ellipse on a form.  

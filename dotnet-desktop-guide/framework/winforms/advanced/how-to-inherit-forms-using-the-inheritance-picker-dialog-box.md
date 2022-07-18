@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "Inheritance Picker dialog box"
   - "inherited forms [Windows Forms], creating"
 ms.assetid: 969b4c04-12aa-4297-93a2-0ae747447823
+description: Learn how to inherit forms using the inheritance picker which can take advantage of code or user interfaces that have already been created in other solutions.
 ---
 # How to: Inherit Forms Using the Inheritance Picker
 

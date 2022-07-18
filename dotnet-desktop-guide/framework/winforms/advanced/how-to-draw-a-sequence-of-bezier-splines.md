@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "splines [Windows Forms], drawing Bezier"
   - "Bezier splines [Windows Forms], drawing sequence of"
 ms.assetid: 37a0bedb-20c2-4cf0-91fa-a5509e826b30
+description: Learn how to use the DrawBeziers method of the Graphics class to draw a sequence of connected Bézier splines.
 ---
 # How to: Draw a Sequence of B&#233;zier Splines
 You can use the <xref:System.Drawing.Graphics.DrawBeziers%2A> method of the <xref:System.Drawing.Graphics> class to draw a sequence of connected Bézier splines.  

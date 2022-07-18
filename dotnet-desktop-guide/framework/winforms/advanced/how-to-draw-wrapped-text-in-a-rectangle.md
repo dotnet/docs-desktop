@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "text [Windows Forms], drawing in a rectangle"
   - "strings [Windows Forms], drawing in a rectangle"
 ms.assetid: e1fb432a-dc90-48b5-9b6b-acc14507133d
+description: Learn how to draw wrapped text in a rectangle by using the DrawString overloaded method of the Graphics class that takes a Rectangle or RectangleF parameter.
 ---
 # How to: Draw Wrapped Text in a Rectangle
 You can draw wrapped text in a rectangle by using the <xref:System.Drawing.Graphics.DrawString%2A> overloaded method of the <xref:System.Drawing.Graphics> class that takes a <xref:System.Drawing.Rectangle> or <xref:System.Drawing.RectangleF> parameter. You will also use a <xref:System.Drawing.Brush> and a <xref:System.Drawing.Font>.  

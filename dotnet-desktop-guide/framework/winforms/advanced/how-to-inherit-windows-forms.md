@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "inheritance [Windows Forms], forms"
   - "Windows Forms, inheritance"
 ms.assetid: cb3e1c0f-3d2a-4cdc-b0d1-c92eae567ffb
+description: Learn how to inherit Windows Forms in order to duplicate user actions without the need for recreating a form each time it is needed.
 ---
 # How to: Inherit Windows Forms
 

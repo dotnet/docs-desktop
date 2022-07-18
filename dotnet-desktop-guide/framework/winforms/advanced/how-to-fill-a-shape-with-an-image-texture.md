@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "bitmaps [Windows Forms], using texture"
   - "shapes [Windows Forms], filling with images"
 ms.assetid: 508da5a6-2433-4d2b-9680-eaeae4e96e3b
+description: Learn how to fill a shape with an image texture by using the Image class and the TextureBrush class.
 ---
 # How to: Fill a Shape with an Image Texture
 You can fill a closed shape with a texture by using the <xref:System.Drawing.Image> class and the <xref:System.Drawing.TextureBrush> class.  

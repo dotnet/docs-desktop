@@ -14,6 +14,7 @@ helpviewer_keywords:
   - "lines [Windows Forms], joining"
   - "graphics [Windows Forms], joining lines"
 ms.assetid: 9fc480c2-3c75-4fd1-8ab5-296a99e820e2
+description: Learn how to join lines with GDI+ to apply a join style, a property of the Pen class, to all connected lines in any GraphicsPath object drawn using that pen.
 ---
 # How to: Join Lines
 A line join is the common area that is formed by two lines whose ends meet or overlap. GDI+ provides three line join styles: miter, bevel, and round. Line join style is a property of the <xref:System.Drawing.Pen> class. When you specify a line join style for a <xref:System.Drawing.Pen> object, that join style will be applied to all the connected lines in any <xref:System.Drawing.Drawing2D.GraphicsPath> object drawn using that pen.  
