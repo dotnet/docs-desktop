@@ -1,5 +1,6 @@
 ---
 title: "How to: Manually Render Buffered Graphics"
+description: Learn how to manually render buffered graphics using instances of the System.Drawing.BufferedGraphics class.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
