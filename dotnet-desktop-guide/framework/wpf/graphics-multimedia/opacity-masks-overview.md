@@ -1,5 +1,6 @@
 ---
 title: "Opacity Masks Overview"
+description: Learn how the OpacityMask property enables you to make portions of an element or visual either transparent or partially transparent.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "brushes [WPF], opacity masks"
