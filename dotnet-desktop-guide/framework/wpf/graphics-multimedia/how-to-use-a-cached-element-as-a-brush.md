@@ -1,5 +1,6 @@
 ---
 title: "How to: Use a Cached Element as a Brush"
+description: Learn how to use the BitmapCacheBrush class to reuse a cached element.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "BitmapCache [WPF], using"

@@ -1,5 +1,6 @@
 ---
 title: "How to: Trigger an Animation When a Property Value Changes"
+description: Learn how to use a Trigger to start a Storyboard when a property value changes.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "animation [WPF], starting when property values change"

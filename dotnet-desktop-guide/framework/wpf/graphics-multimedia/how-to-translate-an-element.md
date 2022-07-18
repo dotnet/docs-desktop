@@ -1,5 +1,6 @@
 ---
 title: "How to: Translate an Element"
+description: Learn how to use TranslateTransform to move an element.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "graphics [WPF], translations"
