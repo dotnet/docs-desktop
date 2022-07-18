@@ -14,10 +14,10 @@ A scaling transformation multiplies one or more of the four color components by 
   
 |Component to be scaled|Matrix entry|  
 |----------------------------|------------------|  
-|Red|[0][0]|  
-|Green|[1][1]|  
-|Blue|[2][2]|  
-|Alpha|[3][3]|  
+|Red|`[0][0]`|  
+|Green|`[1][1]`|  
+|Blue|`[2][2]`|  
+|Alpha|`[3][3]`|  
   
 ## Scaling One Color  
  The following example constructs an <xref:System.Drawing.Image> object from the file ColorBars2.bmp. Then the code scales the blue component of each pixel in the image by a factor of 2. The original image is drawn alongside the transformed image.  
