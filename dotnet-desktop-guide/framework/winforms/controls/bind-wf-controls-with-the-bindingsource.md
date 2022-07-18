@@ -1,5 +1,6 @@
 ---
 title: Bind Controls with the BindingSource Component Using the Designer
+description: Learn more about how to bind Windows Forms controls with the BindingSource component using the designer.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "controls [Windows Forms], binding"

@@ -1,5 +1,6 @@
 ---
 title: Column Types in DataGridView Control
+description: Learn about column types in the Windows Forms DataGridView control, which uses several column types to display its information.  
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "columns [Windows Forms], types"

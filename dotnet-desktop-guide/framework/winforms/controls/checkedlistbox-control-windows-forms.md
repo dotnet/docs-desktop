@@ -1,5 +1,6 @@
 ---
 title: "CheckedListBox Control"
+description: Learn more about the CheckedListBox control in Windows Forms, which is similar to the ListBox control.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "CheckedListBox control [Windows Forms], reference"

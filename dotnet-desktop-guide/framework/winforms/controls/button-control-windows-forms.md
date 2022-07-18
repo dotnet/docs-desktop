@@ -1,5 +1,6 @@
 ---
 title: "Button Control"
+description: Learn about the button control in Windows forms, which allows the user te click a button in order to perform an action.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "buttons"
