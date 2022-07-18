@@ -10,7 +10,7 @@ helpviewer_keywords:
   - "paths [Windows Forms], drawing"
   - "drawing [Windows Forms], paths"
 ms.assetid: a5500dec-666c-41fd-9da3-2169dd89c5eb
-description: Learn how to create, navigate, and use graphics paths in GDI with supporting descriptions and links.
+description: Learn how to create, navigate, and use graphics paths in GDI+ with supporting descriptions and links.
 ---
 # Graphics Paths in GDI+
 Paths are formed by combining lines, rectangles, and simple curves. Recall from the [Vector Graphics Overview](vector-graphics-overview.md) that the following basic building blocks have proven to be the most useful for drawing pictures:  
