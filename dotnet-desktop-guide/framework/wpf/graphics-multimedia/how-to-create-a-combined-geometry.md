@@ -1,6 +1,6 @@
 ---
 title: "How to: Create a Combined Geometry"
-description: Learn how to create a CombinedGeometry object by setting its Geometry1 and Geometry2 properties, then setting the GeometryCombineMode property which determines how the geometries will be combined.
+description: Create a CombinedGeometry object by setting its Geometry1 and Geometry2 properties, then setting the GeometryCombineMode property which determines how the geometries will be combined.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "combining geometries [WPF]"
