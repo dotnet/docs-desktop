@@ -1,5 +1,6 @@
 ---
 title: "ErrorProvider Component"
+description: Learn more about the ErrorProvider component in Windows Forms, which is used to show the user in a non-intrusive way that something is wrong.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "error messages [Windows Forms], displaying"

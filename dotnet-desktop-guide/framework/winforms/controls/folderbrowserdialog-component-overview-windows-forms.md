@@ -1,5 +1,6 @@
 ---
 title: "FolderBrowserDialog Component Overview"
+description: Learn about an overview of the FolderBrowserDialog component in Windows Forms, which is a modal dialog box that is used for browsing and selecting folders.
 ms.date: "03/30/2017"
 f1_keywords:
   - "FolderBrowserDialog"

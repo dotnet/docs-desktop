@@ -1,5 +1,6 @@
 ---
 title: "FlowLayoutPanel Control Overview"
+description: Learn about an overview of the FlowLayoutPanel control, which arranges its contents in a horizontal or vertical flow direction.
 ms.date: "03/30/2017"
 f1_keywords: 
   - "FlowLayoutPanel"
