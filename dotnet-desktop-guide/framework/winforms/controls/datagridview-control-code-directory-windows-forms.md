@@ -1,5 +1,6 @@
 ---
 title: "DataGridView Control Code Directory"
+description: Learn more about the DataGridView control code directory in Windows Forms by viewing these links to related code examples.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "data grids [Windows Forms], examples"

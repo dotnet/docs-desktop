@@ -1,5 +1,6 @@
 ---
 title: Data Formatting in DataGridView Control
+description: Learn about data formatting in the DataGridView control, which provides automatic conversion between cell values and the data types that the parent columns display.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "DataGridView control [Windows Forms], formatting data"

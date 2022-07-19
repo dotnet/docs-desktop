@@ -1,5 +1,6 @@
 ---
 title: Data Entry in DataGridView Control
+description: Learn about data entry in the Windows Forms DataGridView control, which provides several features that let you change how users add or modify data in the control.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "DataGridView control [Windows Forms], data entry"

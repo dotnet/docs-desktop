@@ -1,5 +1,6 @@
 ---
 title: Define an event in controls
+description: Learn more about defining an event in WIndows Forms controls by using EventArgs and EventHandler.   
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

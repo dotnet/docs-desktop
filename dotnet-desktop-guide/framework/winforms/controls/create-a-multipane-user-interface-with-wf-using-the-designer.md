@@ -1,5 +1,6 @@
 ---
 title: Create a Multipane User Interface Using the Designer
+description: Learn more about how to create a multipane user interface (UI) with Windows Forms using the designer.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "user interface [Windows Forms], multipane"
