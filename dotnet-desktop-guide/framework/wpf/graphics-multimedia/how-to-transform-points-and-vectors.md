@@ -1,5 +1,6 @@
 ---
 title: "How to: Transform Points and Vectors"
+description: Learn how to use a Matrix to transform Point and Vector objects.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Vector objects [WPF], transforming"

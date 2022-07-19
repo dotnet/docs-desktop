@@ -15,10 +15,10 @@ A translation adds a value to one or more of the four color components. The colo
   
 |Component to be translated|Matrix entry|  
 |--------------------------------|------------------|  
-|Red|[4][0]|  
-|Green|[4][1]|  
-|Blue|[4][2]|  
-|Alpha|[4][3]|  
+|Red|`[4][0]`|  
+|Green|`[4][1]`|  
+|Blue|`[4][2]`|  
+|Alpha|`[4][3]`|  
   
 ## Example  
  The following example constructs an <xref:System.Drawing.Image> object from the file ColorBars.bmp. Then the code adds 0.75 to the red component of each pixel in the image. The original image is drawn alongside the transformed image.  

@@ -1,5 +1,6 @@
 ---
 title: "How to: Use a Drawing as an Image Source"
+description: Learn how utilize DrawingImage to use a drawing as the source for an Image control.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "graphics [WPF], drawings [WPF], as image sources"

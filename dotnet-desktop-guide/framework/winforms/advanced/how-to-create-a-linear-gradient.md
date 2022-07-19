@@ -10,6 +10,7 @@ helpviewer_keywords:
   - "colors [Windows Forms], creating linear gradients"
   - "gradients"
 ms.assetid: 6c88e1cc-1217-4399-ac12-cb37592b9f01
+description: Learn how to create and customize linear gradients with the supporting illustrations, descriptions and links.
 ---
 # How to: Create a Linear Gradient
 GDI+ provides horizontal, vertical, and diagonal linear gradients. By default, the color in a linear gradient changes uniformly. However, you can customize a linear gradient so that the color changes in a non-uniform fashion.  

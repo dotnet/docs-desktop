@@ -10,6 +10,7 @@ helpviewer_keywords:
   - "strings [Windows Forms], drawing vertical"
   - "vertical text [Windows Forms], drawing"
 ms.assetid: 50c69046-4188-47d9-b949-cc2610ffd337
+description: Learn how to create vertical text using a StringFormat with supporting illustrations, descriptions and links.
 ---
 # How to: Create Vertical Text
 You can use a <xref:System.Drawing.StringFormat> object to specify that text be drawn vertically rather than horizontally.  

@@ -1,5 +1,6 @@
 ---
 title: "How to: Skew an Element"
+description: Learn how to use System.Windows.Media SkewTransform to skew an element in Windows Presentation Foundation (WPF) applications.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "skewing elements [WPF]"

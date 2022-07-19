@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "Help [Windows Forms], Windows Forms"
   - "HelpProvider component [Windows Forms], providing Help in Windows applications"
 ms.assetid: 2a96a278-432c-41fc-9e3c-5bfedf5e1267
+description: Learn how the Windows Forms HelpProvider component is used to associate an HTML Help file with a Windows-based application.
 ---
 # Help Systems in Windows Forms Applications
 One of the most important courtesies you, as a developer of applications, can furnish your users with is a competent Help system. This is where they will turn when they become confused or disoriented. Providing a Help system in a Windows-based application is easily done by using the [HelpProvider Component](../controls/helpprovider-component-windows-forms.md).  

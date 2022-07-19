@@ -1,5 +1,6 @@
 ---
 title: "Imaging Overview"
+description: Learn how the Microsoft Windows Presentation Foundation Imaging Component enables developers to display, transform, and format images.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
