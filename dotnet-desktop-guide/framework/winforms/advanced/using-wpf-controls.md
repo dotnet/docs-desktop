@@ -1,5 +1,6 @@
 ---
 title: "Using WPF Controls"
+description: Learn how to use Windows Presentation Foundation (WPF) controls in Windows Forms applications using the Windows Forms Designer in Visual Studio.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "Windows Forms Designer [Windows Forms], interoperability with WPF"
