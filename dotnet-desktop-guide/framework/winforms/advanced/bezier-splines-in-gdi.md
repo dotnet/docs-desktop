@@ -1,5 +1,6 @@
 ---
 title: "B&#233;zier Splines in GDI+"
+description: Learn about Bézier splines, which are curves specified by two end points and two control points, in GDI+.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -13,7 +14,7 @@ ms.assetid: 5774ce1e-87d4-4bc7-88c4-4862052781b8
 # B&#233;zier Splines in GDI+
 A Bézier spline is a curve specified by four points: two end points (p1 and p2) and two control points (c1 and c2). The curve begins at p1 and ends at p2. The curve does not pass through the control points, but the control points act as magnets, pulling the curve in certain directions and influencing the way the curve bends. The following illustration shows a Bézier curve along with its endpoints and control points.  
   
- ![Bezier Splines](./media/aboutgdip02-art11a.gif "Aboutgdip02_art11a")  
+ ![Screenshot of a Bézier spline, which shows its endpoints and control points.](./media/aboutgdip02-art11a.gif "Aboutgdip02_art11a")  
   
  The curve starts at p1 and moves toward the control point c1. The tangent line to the curve at p1 is the line drawn from p1 to c1. The tangent line at the endpoint p2 is the line drawn from c2 to p2.  
   
@@ -25,7 +26,7 @@ A Bézier spline is a curve specified by four points: two end points (p1 and p2)
   
  The following illustration shows the curve, the control points, and two tangent lines.  
   
- ![Bezier Splines](./media/aboutgdip02-art12.gif "Aboutgdip02_art12")  
+ ![Screenshot of the Bézier spline, which shows the curve, the control points, and two tangent lines.](./media/aboutgdip02-art12.gif "Aboutgdip02_art12")  
   
  Bézier splines were originally developed by Pierre Bézier for design in the automotive industry. They have since proven to be useful in many types of computer-aided design and are also used to define the outlines of fonts. Bézier splines can yield a wide variety of shapes, some of which are shown in the following illustration.  
   

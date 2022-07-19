@@ -1,5 +1,6 @@
 ---
 title: "About GDI+ Managed Code"
+description: Learn about GDI+ managed code, which provides two-dimensional vector graphics, imaging, and typography.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "GDI+, about GDI+"
