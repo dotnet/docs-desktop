@@ -1,5 +1,6 @@
 ---
 title: Unmanaged apps
+description: This article provides an overview of Windows Forms and unmanaged applications, which can interoperate with some caveats.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "ActiveX controls [Windows Forms]"
