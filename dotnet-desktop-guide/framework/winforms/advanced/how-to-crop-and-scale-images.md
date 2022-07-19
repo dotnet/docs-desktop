@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "images [Windows Forms], cropping"
   - "images [Windows Forms], scaling"
 ms.assetid: 053e3360-bca0-4b25-9afa-0e77a6f17b03
+description: Learn how to crop and scale images with examples showing several DrawImage methods provided by the Graphics class.
 ---
 # How to: Crop and Scale Images
 The <xref:System.Drawing.Graphics> class provides several <xref:System.Drawing.Graphics.DrawImage%2A> methods, some of which have source and destination rectangle parameters that you can use to crop and scale images.  

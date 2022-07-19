@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "thumbnail images [Windows Forms], creating"
   - "images [Windows Forms], creating thumbnails"
 ms.assetid: e956242a-1e5b-4217-a3cf-5f3fb45d00ba
+description: Learn how to create a thumbnail by calling the GetThumbnailImage method of an Image object with supporting details and links.
 ---
 # How to: Create Thumbnail Images
 A thumbnail image is a small version of an image. You can create a thumbnail image by calling the <xref:System.Drawing.Image.GetThumbnailImage%2A> method of an <xref:System.Drawing.Image> object.  

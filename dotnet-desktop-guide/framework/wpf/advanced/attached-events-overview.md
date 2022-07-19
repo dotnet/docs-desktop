@@ -1,5 +1,6 @@
 ---
 title: "Attached Events Overview"
+description: Learn about using attached events with Windows Presentation Foundation (WPF).
 ms.date: "03/30/2017"
 ms.topic: overview
 dev_langs: 

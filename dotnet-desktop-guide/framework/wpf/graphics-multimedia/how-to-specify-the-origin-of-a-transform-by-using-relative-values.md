@@ -1,5 +1,6 @@
 ---
 title: "How to: Specify the Origin of a Transform by Using Relative Values"
+description: Learn how to use relative values to specify the origin of a RenderTransform that is applied to a FrameworkElement.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "origins of Transforms [WPF]"

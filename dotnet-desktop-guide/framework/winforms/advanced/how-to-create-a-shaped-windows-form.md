@@ -18,6 +18,7 @@ helpviewer_keywords:
   - "Windows Forms, circular"
   - "forms [Windows Forms], custom shapes"
 ms.assetid: 6e6041e0-8e67-4487-b1e9-e410dbd1ef6c
+description: Learn how to create a Shaped Windows Form, with an example that gives a form an elliptical shape and resizes that form.
 ---
 # How to: Create a Shaped Windows Form
 This example gives a form an elliptical shape that resizes with the form.  

@@ -1,5 +1,6 @@
 ---
 title: "Key-Frame Animations Overview"
+description: Learn how key-frame animations enable you to animate using more than two target values, and control an animation's interpolation method.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "animation [WPF], key-frame"

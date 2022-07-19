@@ -1,5 +1,6 @@
 ---
 title: "How to: Transform a Brush"
+description: Learn how to transform Brush objects by using their two transformation properties RelativeTransform and Transform.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
