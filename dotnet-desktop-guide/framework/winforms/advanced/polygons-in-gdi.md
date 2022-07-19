@@ -1,5 +1,6 @@
 ---
 title: "Polygons in GDI+"
+description: Learn about how to draw a polygon in GDI+ using a System.Drawing.Graphics object, a System.Drawing.Pen object, and an array of System.Drawing.Point objects.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

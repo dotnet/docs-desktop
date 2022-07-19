@@ -1,5 +1,6 @@
 ---
 title: "Overview of Graphics"
+description: Learn how the GDI+ application programming interface (API) forms the subsystem of the Microsoft Windows OS and displays information on screens and printers.
 ms.date: "03/30/2017"
 ms.topic: overview
 helpviewer_keywords: 

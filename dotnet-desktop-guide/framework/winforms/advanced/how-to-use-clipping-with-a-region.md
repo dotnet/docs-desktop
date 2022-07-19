@@ -1,5 +1,6 @@
 ---
 title: "How to: Use Clipping with a Region"
+description: Learn how to use the clip region property of the System.Drawing.Graphics class by using a code example that constructs a clip region based on a single polygon.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
