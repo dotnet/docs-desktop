@@ -1,5 +1,6 @@
 ---
 title: "Dependency Property Metadata"
+description: Learn about dependency property metadata in Windows Presentation Foundation (WPF) applications.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "APIs [WPF], metadata"

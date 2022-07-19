@@ -1,5 +1,6 @@
 ---
 title: "DateTime XAML Syntax"
+description: Learn about DateTime XAML syntax in Windows Presentation Foundation (WPF).
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "DateTime XAML syntax [WPF], strings for"
