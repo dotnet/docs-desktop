@@ -39,7 +39,7 @@ The <xref:System.Windows.Forms.FlowLayoutPanel> control supports the <xref:Syste
 
 The following illustration shows four buttons that are anchored and docked relative to the blue button in a <xref:System.Windows.Forms.FlowLayoutPanel>. The <xref:System.Windows.Forms.FlowLayoutPanel.FlowDirection%2A> is <xref:System.Windows.Forms.FlowDirection.LeftToRight>.
 
-![Illustration of horizontal FlowLayoutPanel, naming four buttons that anchored and docked to centered button.](./media/net-flpanchorexp.gif "NET_FLPanchorExp")
+![Illustration of horizontal FlowLayoutPanel, naming four buttons that are anchored and docked to centered button.](./media/net-flpanchorexp.gif "NET_FLPanchorExp")
 
 The following illustration shows four buttons that are anchored and docked relative to the blue button in a <xref:System.Windows.Forms.FlowLayoutPanel>. The <xref:System.Windows.Forms.FlowLayoutPanel.FlowDirection%2A> is <xref:System.Windows.Forms.FlowDirection.TopDown>.
 

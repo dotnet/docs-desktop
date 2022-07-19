@@ -57,15 +57,15 @@ The <xref:System.Windows.Forms.TableLayoutPanel> control supports the <xref:Syst
 ## Example  
  The following illustration shows five buttons anchored in five separate <xref:System.Windows.Forms.TableLayoutPanel> cells.  
   
- ![Illustration of TableLayoutPanel, naming five buttons anchored separately.](./media/vs-tlpanchor.gif "VS_TLPanchor")  
+ ![Illustration of the TableLayoutPanel, showing five buttons anchored in different locations in five separate cells.](./media/vs-tlpanchor.gif "VS_TLPanchor")  
   
  The following illustration shows four buttons anchored in the corners of four separate <xref:System.Windows.Forms.TableLayoutPanel> cells.  
   
- ![Illustration of TableLayoutPanel with four buttons, anchored in top left, top right, bottom right, and bottom left corners, respectively.](./media/vs-tlpanchor2.gif "VS_TLPanchor2")  
+ ![Illustration of the TableLayoutPanel with four buttons, anchored in top left, top right, bottom right, and bottom left corners, respectively.](./media/vs-tlpanchor2.gif "VS_TLPanchor2")  
   
  The following illustration shows three buttons stretched by anchoring in three separate <xref:System.Windows.Forms.TableLayoutPanel> cells.  
   
- ![Illustration of TableLayoutPanel, naming three buttons anchored separately.](./media/vs-tlpanchor3.gif "VS_TLPAnchor3")  
+ ![Illustration of the TableLayoutPanel, showing three buttons of different sizes and shapes anchored separately.](./media/vs-tlpanchor3.gif "VS_TLPAnchor3")  
   
  The following code example demonstrates all the combinations of <xref:System.Windows.Forms.Control.Anchor%2A> property values for a <xref:System.Windows.Forms.Button> control in a <xref:System.Windows.Forms.TableLayoutPanel> control.  
   
