@@ -13,7 +13,7 @@ helpviewer_keywords:
   - "ToolStrip control [Windows Forms], text"
   - "toolbars [Windows Forms], text"
 ms.assetid: d62dc9d1-2edd-4dfa-aed7-1335d6e13d86
-description: Learn how to change the appearance of ToolStrip text and images, as well as how they are displayed and aligned relative to each other, in Windows forms.
+description: Learn how to change the appearance of ToolStrip text and images, as well as how they are displayed and aligned relative to each other, in Windows Forms.
 ---
 # How to: Change the Appearance of ToolStrip Text and Images in Windows Forms
 You can control whether text and images are displayed on a <xref:System.Windows.Forms.ToolStripItem> and how they are aligned relative to each other and the <xref:System.Windows.Forms.ToolStrip>.  
