@@ -1,6 +1,6 @@
 ---
 title: "Working with Images, Bitmaps, Icons, and Metafiles"
-description: Learn more about working with images, bitmaps, icons, and metafiles in this article. Learn more about working with raster and vector images.
+description: Learn about which articles you can read to learn more about working with images, bitmaps, icons, and metafiles.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "metafiles [Windows Forms], working with"
