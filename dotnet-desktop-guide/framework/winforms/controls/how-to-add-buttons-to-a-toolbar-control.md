@@ -1,5 +1,6 @@
 ---
 title: "How to: Add Buttons to a ToolBar Control"
+description: Learn how to add buttons to a ToolBar control, which is an integral part of the using the ToolBar control.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

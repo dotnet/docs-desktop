@@ -1,5 +1,6 @@
 ---
 title: "HelpProvider Component"
+description: Learn how the Windows Forms HelpProvider component associates an HTML Help 1.x file with your Windows-based application.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "forms [Windows Forms], Help"
