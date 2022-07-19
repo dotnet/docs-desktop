@@ -1,5 +1,6 @@
 ---
 title: "Easing Functions"
+description: Learn how to use the EasingFunction property allowing you to apply custom mathematical formulas to animations.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

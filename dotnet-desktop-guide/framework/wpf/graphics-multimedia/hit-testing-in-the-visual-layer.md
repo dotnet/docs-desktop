@@ -1,5 +1,6 @@
 ---
 title: "Hit Testing in the Visual Layer"
+description: Learn about hit testing in the visual layer to determine whether a geometry or point value falls within the rendered content of a Visual.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

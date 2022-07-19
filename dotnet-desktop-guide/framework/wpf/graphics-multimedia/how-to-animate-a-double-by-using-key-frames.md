@@ -1,5 +1,6 @@
 ---
 title: "How to: Animate a Double by Using Key Frames"
+description: Learn how to use the DoubleAnimationUsingKeyFrames class to animate the value of a property that takes a Double by using key frames.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

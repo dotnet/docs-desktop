@@ -1,5 +1,6 @@
 ---
 title: "How to: Animate a Point by Using Key Frames"
+description: Learn about how to use the PointAnimationUsingKeyFrames class to animate a point by using key frames.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

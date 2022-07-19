@@ -1,5 +1,6 @@
 ---
 title: "How to: Animate an Object Along a Path (Matrix Animation)"
+description: Learn how to use the MatrixAnimationUsingPath class to animate an object along a path that is defined by a PathGeometry.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
