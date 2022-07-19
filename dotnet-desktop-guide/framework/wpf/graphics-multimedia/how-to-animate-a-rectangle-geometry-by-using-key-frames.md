@@ -1,5 +1,6 @@
 ---
 title: "How to: Animate a Rectangle Geometry by Using Key Frames"
+description: Learn how to use the RectAnimationUsingKeyFrames class to animate the Rect property of a RectangleGeometry using key frames.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
