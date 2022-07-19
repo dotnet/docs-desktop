@@ -1,6 +1,6 @@
 ---
 title: "Antialiasing with Lines and Curves"
-description: Learn how GDI+ works with the display driver software to apply antialiasing to pixels within lines and curves.
+description: Learn how to apply antialiasing to a line and curve in GDI+ for Windows Forms.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

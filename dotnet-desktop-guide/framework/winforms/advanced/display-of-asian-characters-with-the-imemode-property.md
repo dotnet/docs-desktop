@@ -1,6 +1,6 @@
 ---
 title: "Display of Asian Characters with the ImeMode Property"
-description: Learn how the System.Windows.Forms.Control.ImeMode property is used by forms and controls to force a mode for an IME used for writing Asian language scripts.
+description: Learn how the Control's ImeMode property is used by forms and controls to force a mode for an IME used for writing Asian language scripts.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Asian languages [Windows Forms], displaying with ImeMode"

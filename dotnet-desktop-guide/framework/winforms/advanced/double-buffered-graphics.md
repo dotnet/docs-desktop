@@ -1,6 +1,6 @@
 ---
 title: "Double Buffered Graphics"
-description: Learn how to use double buffered graphics in the .NET Framework to reduce flickering in programming graphics.
+description: Learn how to use double buffered graphics in Windows Forms to reduce flickering in programming graphics.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "double buffering"
