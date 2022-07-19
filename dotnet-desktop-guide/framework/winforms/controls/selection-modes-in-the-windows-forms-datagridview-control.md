@@ -5,6 +5,7 @@ helpviewer_keywords:
   - "selection [Windows Forms], modes in DataGridView control"
   - "DataGridView control [Windows Forms], selection mode"
 ms.assetid: a3ebfd3d-0525-479d-9d96-d9e017289b36
+description: Learn how to specify the selection modes in the Windows Forms DataGridView Control, including restricting the kinds of selection that are possible.
 ---
 # Selection Modes in the Windows Forms DataGridView Control
 

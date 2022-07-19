@@ -10,6 +10,7 @@ helpviewer_keywords:
   - "user controls [Windows Forms], painting"
   - "visual styles [Windows Forms], rendering Windows Forms controls"
 ms.assetid: a5b178ba-610e-46c4-a6c0-509c0886a744
+description: Learn the several levels of support in the .NET Framework for rendering controls and other UI elements with the current visual style of the operating system.
 ---
 # Rendering Controls with Visual Styles
 The .NET Framework provides support for rendering controls and other Windows user interface (UI) elements using visual styles in operating systems that support them. This topic discusses the several levels of support in the .NET Framework for rendering controls and other UI elements with the current visual style of the operating system.  
