@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "menus [Windows Forms], setting margins"
   - "MenuStrip control [Windows Forms], configuring check and image margins"
 ms.assetid: 45a9075d-4bea-4ce2-9b2c-7619aa39f8ce
+description: Learn how to configure MenuStrip check margins and image margins by setting the ShowImageMargin and ShowCheckMargin properties.
 ---
 # How to: Configure MenuStrip Check Margins and Image Margins
 You can customize a <xref:System.Windows.Forms.MenuStrip> by setting the <xref:System.Windows.Forms.ToolStripDropDownMenu.ShowImageMargin%2A> and <xref:System.Windows.Forms.ToolStripDropDownMenu.ShowCheckMargin%2A> properties in various combinations.  
