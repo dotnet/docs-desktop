@@ -5,6 +5,7 @@ helpviewer_keywords:
   - "custom controls [Windows Forms], docking using designer"
   - "Dock property [Windows Forms], aligning controls (using designer)"
 ms.assetid: 51f08998-5e3b-4330-be58-a4edd0eb60f4
+description: Learn how to align a control to the edges of forms at design time by setting the value of the Dock property.
 ---
 # How to: Align a Control to the Edges of Forms at Design Time
 

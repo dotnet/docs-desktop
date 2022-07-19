@@ -10,6 +10,7 @@ helpviewer_keywords:
   - "controls [Windows Forms], aligning on forms"
   - "custom controls [Windows Forms], docking using code"
 ms.assetid: 5994cb59-242b-4e75-bd0e-62879c34d702
+description: Learn how to align a control to the edges of forms by setting the doc property which designates where your control resides in the form.
 ---
 # How to: Align a Control to the Edges of Forms
 

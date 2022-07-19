@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "BindingSource component [Windows Forms], binding to a type"
   - "types [Windows Forms], binding controls to"
 ms.assetid: 5ab984b5-c2d0-4638-a572-1c84013e8746
+description: Learn how to create a new BindingSource that is bound to a type, and then how to bind one of the type's properties to the Text property of a TextBox.
 ---
 # How to: Bind a Windows Forms Control to a Type Using the Designer
 

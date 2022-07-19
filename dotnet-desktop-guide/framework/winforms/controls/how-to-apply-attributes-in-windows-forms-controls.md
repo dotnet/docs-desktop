@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "attributes [Windows Forms], applying"
   - "Windows Forms controls, applying attributes"
 ms.assetid: af0a3f7f-155b-4ba1-83c4-9cf721331a06
+description: Learn how to apply attributes in Windows Forms controls to develop components and controls that interact with the design environment and execute at run time.
 ---
 # How to: Apply Attributes in Windows Forms Controls
 
