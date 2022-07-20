@@ -1,5 +1,6 @@
 ---
 title: "How to: Use Interpolation Mode to Control Image Quality During Scaling"
+description: Learn how to use the interpolation mode of a System.Drawings.Graphics object to control the way GDI+ scales images.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

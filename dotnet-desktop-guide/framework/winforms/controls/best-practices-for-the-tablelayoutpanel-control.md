@@ -1,5 +1,6 @@
 ---
 title: "Best Practices for the TableLayoutPanel Control"
+description: Learn more about the best practices for TableLayoutPanel control in Windows Forms, which provides powerful layout features that you should consider carefully.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "layout [Windows Forms]"

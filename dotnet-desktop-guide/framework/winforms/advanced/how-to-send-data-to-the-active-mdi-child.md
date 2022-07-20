@@ -1,5 +1,6 @@
 ---
 title: "How to: Send Data to the Active MDI Child"
+description: Learn how to send data to the active multiple-document interface (MDI) application child window using the provided code example. 
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

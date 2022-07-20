@@ -1,5 +1,6 @@
 ---
 title: "How to: Add Custom Information to a TreeView or ListView Control"
+description: Learn more about how to add custom information to a TreeView or ListView control in Windows Forms.  
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

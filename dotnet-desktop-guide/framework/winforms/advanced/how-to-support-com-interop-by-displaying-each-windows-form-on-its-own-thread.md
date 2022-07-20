@@ -1,5 +1,6 @@
 ---
 title: "How to: Support COM Interop by Displaying Each Windows Form on Its Own Thread"
+description: Learn how to resolve COM interoperability problems by displaying a form on a .NET Framework message loop.
 ms.date: "03/30/2017"
 dev_langs:
   - "vb"

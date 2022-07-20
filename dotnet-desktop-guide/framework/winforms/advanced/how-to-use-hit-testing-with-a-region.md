@@ -1,5 +1,6 @@
 ---
 title: "How to: Use Hit Testing with a Region"
+description: Learn how to use hit testing with a region to determine whether the cursor is over a certain subject, such as an icon or a button.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

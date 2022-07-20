@@ -1,5 +1,6 @@
 ---
 title: "AutoSize Behavior in the TableLayoutPanel Control"
+description: Learn more about how to autosize behavior in the TableLayoutPanel control in Windows Forms, which supports automatic sizing behavior in two ways.
 ms.date: "03/30/2017"
 ms.topic: overview
 helpviewer_keywords: 

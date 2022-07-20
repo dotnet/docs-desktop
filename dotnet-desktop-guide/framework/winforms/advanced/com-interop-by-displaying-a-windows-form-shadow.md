@@ -1,5 +1,6 @@
 ---
 title: "How to: Support COM Interop by Displaying a Windows Form with the ShowDialog Method"
+description: Learn how to support Common Object Model (COM) interoperability by displaying a Windows Form on a .NET Framework message loop with the ShowDialog method. 
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "COM [Windows Forms]"
