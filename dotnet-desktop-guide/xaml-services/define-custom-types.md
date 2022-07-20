@@ -1,5 +1,6 @@
 ---
 title: "Defining Custom Types for Use with .NET XAML Services"
+description: Learn about the best practices followed when defining custom types for use with .NET XAML Services.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "defining custom types [XAML Services]"

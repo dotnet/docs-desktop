@@ -10,6 +10,7 @@ helpviewer_keywords:
   - "drawing text [Windows Forms], specified locations [Windows Forms]"
   - "Windows Forms, drawing text at a specified location"
 ms.assetid: 60816423-1c38-465e-980d-2c2b64d74086
+description: Learn how to draw text at a specified location by using the DrawString overloaded method of the Graphics class.
 ---
 # How to: Draw Text at a Specified Location
 When you perform custom drawing, you can draw text in a single horizontal line starting at a specified point. You can draw text in this manner by using the <xref:System.Drawing.Graphics.DrawString%2A> overloaded method of the <xref:System.Drawing.Graphics> class that takes a <xref:System.Drawing.Point> or <xref:System.Drawing.PointF> parameter. The <xref:System.Drawing.Graphics.DrawString%2A> method also requires a <xref:System.Drawing.Brush> and <xref:System.Drawing.Font>  

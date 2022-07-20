@@ -10,6 +10,7 @@ helpviewer_keywords:
   - "images [Windows Forms], using without automatic scaling"
   - "performance [Windows Forms], improving image"
 ms.assetid: 5fe2c95d-8653-4d55-bf0d-e5afa28f223b
+description: Learn how to improve performance by avoiding automatic scaling and passing the dimensions of the destination rectangle to the DrawImage method.
 ---
 # How to: Improve Performance by Avoiding Automatic Scaling
 GDI+ may automatically scale an image as you draw it, which would decrease performance. Alternatively, you can control the scaling of the image by passing the dimensions of the destination rectangle to the <xref:System.Drawing.Graphics.DrawImage%2A> method.  

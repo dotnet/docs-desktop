@@ -1,5 +1,6 @@
 ---
 title: "How to: Access the HTML Source in the Managed HTML Document Object Model"
+description: Learn how to access HTML source in the managed HTML Document Object Model. Properties return the HTML as it existed when it was first displayed.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

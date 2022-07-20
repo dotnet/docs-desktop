@@ -1,5 +1,6 @@
 ---
 title: "How to: Create a Reflection"
+description: Learn about how to use a VisualBrush to produce interesting visual effects, such as reflections and magnification.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

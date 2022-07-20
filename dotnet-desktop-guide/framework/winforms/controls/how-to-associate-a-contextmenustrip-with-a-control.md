@@ -10,6 +10,7 @@ helpviewer_keywords:
   - "context menus [Windows Forms], associating with controls"
   - "ContextMenuStrips [Windows Forms], relating"
 ms.assetid: 6fc40a42-5d69-427f-aa30-0a146193226b
+description: Learn how to associate a ContextMenuStrip with a Windows Form and a ToolStrip control by setting the property to the name of the associated ContextMenuStrip.
 ---
 # How to: Associate a ContextMenuStrip with a Control
 After creating your controls and shortcut menus, use the following procedures to display a given shortcut menu when the user right-clicks the control. These procedures associate a <xref:System.Windows.Forms.ContextMenuStrip> with a Windows Form and with a <xref:System.Windows.Forms.ToolStrip> control.  

@@ -1,5 +1,6 @@
 ---
 title: Bi-Directional Support
+description: Learn how to use Visual Studio to create Windows Forms-based applications that support bi-directional languages.
 ms.date: "09/30/2017"
 helpviewer_keywords:
   - "globalization [Windows Forms], bi-directional support in Windows"

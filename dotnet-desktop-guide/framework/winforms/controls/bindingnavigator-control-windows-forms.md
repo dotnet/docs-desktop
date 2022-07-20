@@ -1,5 +1,6 @@
 ---
 title: "BindingNavigator Control"
+description: Learn more about the BindingNavigator control, which is the navigation and manipulation user interface (UI) for controls that are bound to data.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "BindingNavigator control [Windows Forms]"

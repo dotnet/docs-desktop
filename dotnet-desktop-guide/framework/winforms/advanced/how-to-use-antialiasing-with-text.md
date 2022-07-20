@@ -1,5 +1,6 @@
 ---
 title: "How to: Use Antialiasing with Text"
+description: Learn how to use antialiasing with text by using the System.Drawing.Graphics.TextRenderingHint property with an enumeration's element.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

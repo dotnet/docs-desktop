@@ -1,5 +1,6 @@
 ---
 title: "How to: Specify the FillBehavior for a Timeline that has Reached the End of Its Active Period"
+description: Learn how the FillBehavior property of a Timeline determines what happens to the value of an animated property when the Timeline is inactive.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "FillBehavior property for inactive timelines [WPF]"

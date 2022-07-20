@@ -1,5 +1,6 @@
 ---
 title: "Open and Closed Curves in GDI+"
+description: Learn more about how GDI+ can create open and closed curves with the Graphics class and its methods.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -14,7 +15,7 @@ ms.assetid: 08d2cc9a-dc9d-4eed-bcbb-2c8e2ca5d3ae
 # Open and Closed Curves in GDI+
 The following illustration shows two curves: one open and one closed.  
   
- ![Open & Closed curves](./media/aboutgdip02-art24.gif "Aboutgdip02_art24")  
+ ![Screenshot of one open curve and one closed curve.](./media/aboutgdip02-art24.gif "Aboutgdip02_art24")  
   
 ## Managed Interface for Curves  
  Closed curves have an interior and therefore can be filled with a brush. The <xref:System.Drawing.Graphics> class in GDI+ provides the following methods for filling closed shapes and curves: <xref:System.Drawing.Graphics.FillRectangle%2A>, <xref:System.Drawing.Graphics.FillEllipse%2A>, <xref:System.Drawing.Graphics.FillPie%2A>, <xref:System.Drawing.Graphics.FillPolygon%2A>, <xref:System.Drawing.Graphics.FillClosedCurve%2A>, <xref:System.Drawing.Graphics.FillPath%2A>, and <xref:System.Drawing.Graphics.FillRegion%2A>. Whenever you call one of these methods, you must pass one of the specific brush types (<xref:System.Drawing.SolidBrush>, <xref:System.Drawing.Drawing2D.HatchBrush>, <xref:System.Drawing.TextureBrush>, <xref:System.Drawing.Drawing2D.LinearGradientBrush>, or <xref:System.Drawing.Drawing2D.PathGradientBrush>) as an argument.  
@@ -26,7 +27,7 @@ The following illustration shows two curves: one open and one closed.
   
  The following illustration shows the arc and the filled pie.  
   
- ![Open & Closed curves](./media/aboutgdip02-art25.gif "Aboutgdip02_art25")  
+ ![Screenshot of an arc and the filled pie.](./media/aboutgdip02-art25.gif "Aboutgdip02_art25")  
   
  The <xref:System.Drawing.Graphics.FillClosedCurve%2A> method is a companion to the <xref:System.Drawing.Graphics.DrawClosedCurve%2A> method. Both methods automatically close the curve by connecting the ending point to the starting point. The following example draws a curve that passes through (0, 0), (60, 20), and (40, 50). Then, the curve is automatically closed by connecting (40, 50) to the starting point (0, 0), and the interior is filled with a solid color.  
   

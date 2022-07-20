@@ -1,5 +1,6 @@
 ---
 title: "Walkthrough: Handling errors that occur during data entry in DataGridView control"
+description: Use this walkthrough to learn about handling errors that occur during data entry in the Windows Forms DataGridView control.
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

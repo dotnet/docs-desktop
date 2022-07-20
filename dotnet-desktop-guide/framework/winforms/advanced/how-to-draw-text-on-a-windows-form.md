@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "forms [Windows Forms], drawing text"
   - "text [Windows Forms], drawing"
 ms.assetid: 5d2447a9-21a1-4adc-b954-5516f2bb9b2c
+description: Learn how to draw text on a Windows Form with the supplied code, examples, and additional descriptions.
 ---
 # How to: Draw Text on a Windows Form
 The following code example shows how to use the <xref:System.Drawing.Graphics.DrawString%2A> method of the <xref:System.Drawing.Graphics> to draw text on a form. Alternatively, you can use <xref:System.Windows.Forms.TextRenderer> for drawing text on a form. For more information, see [How to: Draw Text with GDI](how-to-draw-text-with-gdi.md).  

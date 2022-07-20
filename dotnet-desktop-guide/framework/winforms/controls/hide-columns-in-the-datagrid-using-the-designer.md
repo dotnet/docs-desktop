@@ -1,5 +1,6 @@
 ---
 title: Hide Columns in DataGridView Control Using the Designer
+description: Learn how to display only some of the columns that are available in a Windows Forms DataGridView control.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "Windows Forms, columns"

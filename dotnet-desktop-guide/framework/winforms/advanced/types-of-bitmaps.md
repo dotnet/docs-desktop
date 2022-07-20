@@ -37,7 +37,7 @@ A bitmap is an array of bits that specify the color of each pixel in a rectangul
   
  Disk files that store bitmaps usually contain one or more information blocks that store information such as the number of bits per pixel, number of pixels in each row, and number of rows in the array. Such a file might also contain a color table (sometimes called a color palette). A color table maps numbers in the bitmap to specific colors. The following illustration shows an enlarged image along with its bitmap and color table. Each pixel is represented by a 4-bit number, so there are 2^4 = 16 colors in the color table. Each color in the table is represented by a 24-bit number: 8 bits for red, 8 bits for green, and 8 bits for blue. The numbers are shown in hexadecimal (base 16) form: A = 10, B = 11, C = 12, D = 13, E = 14, F = 15.  
   
- ![Bitmap sample](./media/aboutgdip03-art01.gif "AboutGdip03_Art01")  
+ ![Screenshot of an enlarged image with its bitmap and color table.](./media/aboutgdip03-art01.gif "AboutGdip03_Art01")  
   
  Look at the pixel in row 3, column 5 of the image. The corresponding number in the bitmap is 1. The color table tells us that 1 represents the color red so the pixel is red. All the entries in the top row of the bitmap are 3. The color table tells us that 3 represents blue, so all the pixels in the top row of the image are blue.  
   
@@ -46,7 +46,7 @@ A bitmap is an array of bits that specify the color of each pixel in a rectangul
   
  A bitmap that stores indexes into a color table is called a palette-indexed bitmap. Some bitmaps have no need for a color table. For example, if a bitmap uses 24 bits per pixel, that bitmap can store the colors themselves rather than indexes into a color table. The following illustration shows a bitmap that stores colors directly (24 bits per pixel) rather than using a color table. The illustration also shows an enlarged view of the corresponding image. In the bitmap, FFFFFF represents white, FF0000 represents red, 00FF00 represents green, and 0000FF represents blue.  
   
- ![Bitmap sample](./media/aboutgdip03-art02.gif "AboutGdip03_Art02")  
+ ![Screenshot of a bitmap that stores colors directly with an enlarged view of the corresponding image.](./media/aboutgdip03-art02.gif "AboutGdip03_Art02")  
   
 ## Graphics File Formats  
  There are many standard formats for saving bitmaps in disk files. GDI+ supports the graphics file formats described in the following paragraphs.  

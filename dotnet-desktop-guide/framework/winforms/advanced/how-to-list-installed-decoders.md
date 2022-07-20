@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "image codecs [Windows Forms], listing"
   - "image decoders [Windows Forms], listing"
 ms.assetid: 11417191-8c95-40ca-8024-779e61706fb6
+description: Learn how to list installed decoders to determine whether your application can read a particular image file format.
 ---
 # How to: List Installed Decoders
 You may want to list the image decoders available on a computer, to determine whether your application can read a particular image file format. The <xref:System.Drawing.Imaging.ImageCodecInfo> class provides the <xref:System.Drawing.Imaging.ImageCodecInfo.GetImageDecoders%2A> static methods so that you can determine which image decoders are available. <xref:System.Drawing.Imaging.ImageCodecInfo.GetImageDecoders%2A> returns an array of <xref:System.Drawing.Imaging.ImageCodecInfo> objects.  

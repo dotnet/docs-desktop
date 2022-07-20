@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "lines [Windows Forms], texture"
   - "drawing lines [Windows Forms], texture"
 ms.assetid: dc9118cc-f3c2-42e5-8173-f46d41d18fd5
+description: Learn how to draw a line filled with a texture by creating a TextureBrush object and passing that object to a Pen constructor.
 ---
 # How to: Draw a Line Filled with a Texture
 Instead of drawing a line with a solid color, you can draw a line with a texture. To draw lines and curves with a texture, create a <xref:System.Drawing.TextureBrush> object, and pass that <xref:System.Drawing.TextureBrush> object to a <xref:System.Drawing.Pen.%23ctor%2A> constructor. The bitmap associated with the texture brush is used to tile the plane (invisibly), and when the pen draws a line or curve, the stroke of the pen uncovers certain pixels of the tiled texture.  

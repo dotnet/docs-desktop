@@ -1,5 +1,6 @@
 ---
 title: "ColorConvertedBitmap Markup Extension"
+description: Learn about the ColorConvertedBitmap markup XAML extension of Windows Presentation Foundation (WPF).
 ms.date: "01/17/2022"
 ms.custom: devdivchpfy22
 helpviewer_keywords: 

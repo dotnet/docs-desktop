@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "user controls [Windows Forms], inheriting from"
   - "composite controls [Windows Forms], creating"
 ms.assetid: 79c9cf05-5ab6-4a18-886d-88a64748b098
+description: Learn how to author composite controls and control class libraries, and inherit from a composite control in a control class library.
 ---
 # How to: Author composite controls
 

@@ -1,5 +1,6 @@
 ---
 title: Add Controls Without a User Interface
+description: A nonvisual control provides functionality to your application. Learn how to add controls without a user interface to Windows Forms.
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"
