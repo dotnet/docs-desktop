@@ -1,5 +1,6 @@
 ---
 title: "Restricting the Drawing Surface in GDI+"
+description: Learn how to restrict the drawing surface in GDI+ using clipping regions in Windows Forms.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -13,12 +14,12 @@ ms.assetid: 8b5f71d9-d2f0-4540-9c41-740f90fd4c26
 # Restricting the Drawing Surface in GDI+
 Clipping involves restricting drawing to a certain rectangle or region. The following illustration shows the string "Hello" clipped to a heart-shaped region.  
   
- ![Restricted Drawing Surface](./media/aboutgdip02-art30.gif "AboutGdip02_Art30")  
+ ![Screenshot of a heart-shaped region with the text string Hello inside the heart.](./media/aboutgdip02-art30.gif "AboutGdip02_Art30")  
   
 ## Clipping with Regions  
  Regions can be constructed from paths, and paths can contain the outlines of strings, so you can use outlined text for clipping. The following illustration shows a set of concentric ellipses clipped to the interior of a string of text.  
   
- ![Restricted Drawing Surface](./media/aboutgdip02-art31.gif "AboutGdip02_Art31")  
+ ![Screenshot of the text string Hello with a set of concentric ellipses clipped to the interior of the text.](./media/aboutgdip02-art31.gif "AboutGdip02_Art31")  
   
  To draw with clipping, create a <xref:System.Drawing.Graphics> object, set its <xref:System.Drawing.Graphics.Clip%2A> property, and then call the drawing methods of that same <xref:System.Drawing.Graphics> object:  
   
