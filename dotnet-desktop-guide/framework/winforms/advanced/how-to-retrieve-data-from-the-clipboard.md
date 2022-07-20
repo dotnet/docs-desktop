@@ -1,5 +1,6 @@
 ---
 title: "How to: Retrieve Data from the Clipboard"
+description: Learn how to use the methods provided by the System.Windows.Forms.Clipboard class to interact with the Windows operating system Clipboard feature.
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"
