@@ -1,6 +1,6 @@
 ---
 title: "Restricting the Drawing Surface in GDI+"
-description: Learn how to restrict the drawing surface in GDI+ using regions, which can be constructed from paths and contain the outlines of strings.
+description: Learn how to restrict the drawing surface in GDI+ using clipping regions in Windows Forms.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
