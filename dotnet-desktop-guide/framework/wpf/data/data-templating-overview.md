@@ -61,7 +61,7 @@ The WPF data templating model provides you with great flexibility to define the 
 
  Now our <xref:System.Windows.Controls.ListBox> looks like the following:
 
- ![Screenshot of the Introduction to Data Templating Sample window showing the My Task List ListBox displaying the tasks as TextBlock elements. The task Email, Email clients, Priority 1 is highlighted in blue.](./media/datatemplatingintro-fig3.png "DataTemplatingIntro_fig3")
+ ![Screenshot of the Introduction to Data Templating Sample window showing the My Task List ListBox displaying the tasks as TextBlock elements.](./media/datatemplatingintro-fig3.png "DataTemplatingIntro_fig3")
 
 <a name="defining_datatemplate_as_a_resource"></a>
 ### Creating the DataTemplate as a Resource
