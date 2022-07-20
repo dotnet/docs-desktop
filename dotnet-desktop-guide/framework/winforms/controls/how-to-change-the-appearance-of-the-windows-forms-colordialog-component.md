@@ -10,6 +10,7 @@ helpviewer_keywords:
   - "ColorDialog component [Windows Forms], formatting appearance"
   - "color dialog box [Windows Forms], configuring appearance"
 ms.assetid: bba4e262-1cd7-4f63-89cf-330a36f7b539
+description: Learn how to change the appearance of the Windows Forms ColorDialog component with a number of its properties.
 ---
 # How to: Change the Appearance of the Windows Forms ColorDialog Component
 You can configure the appearance of the Windows Forms <xref:System.Windows.Forms.ColorDialog> component with a number of its properties. The dialog box has two sections — one that shows basic colors and one that allows the user to define custom colors.  

@@ -12,6 +12,7 @@ helpviewer_keywords:
   - "child controls [Windows Forms], anchoring and docking"
   - "TableLayoutPanel control [Windows Forms], child controls"
 ms.assetid: 0d267c35-25f1-49b8-8976-c64e8f0ddc0b
+description: Learn how to anchor, dock, align, and stretch child controls in a TableLayoutPanel control by adjusting the value of properties.
 ---
 # How to: Anchor and Dock Child Controls in a TableLayoutPanel Control
 The <xref:System.Windows.Forms.TableLayoutPanel> control supports the <xref:System.Windows.Forms.Control.Anchor%2A> and <xref:System.Windows.Forms.Control.Dock%2A> properties in its child controls.  
@@ -56,15 +57,15 @@ The <xref:System.Windows.Forms.TableLayoutPanel> control supports the <xref:Syst
 ## Example  
  The following illustration shows five buttons anchored in five separate <xref:System.Windows.Forms.TableLayoutPanel> cells.  
   
- ![TableLayoutPanel Anchoring](./media/vs-tlpanchor.gif "VS_TLPanchor")  
+ ![Screenshot of the TableLayoutPanel, showing five buttons anchored in different locations in five separate cells.](./media/vs-tlpanchor.gif "VS_TLPanchor")  
   
  The following illustration shows four buttons anchored in the corners of four separate <xref:System.Windows.Forms.TableLayoutPanel> cells.  
   
- ![TableLayoutPanel Anchoring](./media/vs-tlpanchor2.gif "VS_TLPanchor2")  
+ ![Screenshot of the TableLayoutPanel with four buttons, anchored in top left, top right, bottom right, and bottom left corners, respectively.](./media/vs-tlpanchor2.gif "VS_TLPanchor2")  
   
  The following illustration shows three buttons stretched by anchoring in three separate <xref:System.Windows.Forms.TableLayoutPanel> cells.  
   
- ![TableLayoutPanel Anchoring](./media/vs-tlpanchor3.gif "VS_TLPAnchor3")  
+ ![Screenshot of the TableLayoutPanel, showing three buttons of different sizes and shapes anchored separately.](./media/vs-tlpanchor3.gif "VS_TLPAnchor3")  
   
  The following code example demonstrates all the combinations of <xref:System.Windows.Forms.Control.Anchor%2A> property values for a <xref:System.Windows.Forms.Button> control in a <xref:System.Windows.Forms.TableLayoutPanel> control.  
   

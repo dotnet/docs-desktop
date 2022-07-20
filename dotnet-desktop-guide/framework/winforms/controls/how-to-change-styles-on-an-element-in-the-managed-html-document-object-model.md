@@ -7,6 +7,7 @@ dev_langs:
 helpviewer_keywords:
   - "managed HTML DOM [Windows Forms], changing styles on elements"
 ms.assetid: 154e8d9f-3e2d-4e8b-a6f3-c85a070e9cc1
+description: Learn how to change styles on an element in the Managed HTML document object model to control the appearance of a document and its elements.
 ---
 
 # How to: Change Styles on an Element in the Managed HTML Document Object Model

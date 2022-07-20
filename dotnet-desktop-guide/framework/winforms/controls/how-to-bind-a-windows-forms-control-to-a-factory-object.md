@@ -11,6 +11,7 @@ helpviewer_keywords:
   - "BindingSource component [Windows Forms], binding to a factory object"
   - "BindingSource component [Windows Forms], examples"
 ms.assetid: 7d59af89-ff82-41d8-a48a-f1fbae788b0d
+description: Learn how to bind a Windows Forms control to a factory object or method by using the BindingSource control.
 ---
 # How to: Bind a Windows Forms Control to a Factory Object
 When you are building controls that interact with data, you will sometimes find it necessary to bind a control to an object or method that generates other objects. Such an object or method is called a factory. Your data source might be, for example, the return value from a method call, instead of an object in memory or a type. You can bind a control to this kind of data source as long as the source returns a collection.  
