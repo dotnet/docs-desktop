@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "ContextMenuStrips [Windows Forms], configuring check and image margins"
   - "margins [Windows Forms], setting check and image in Windows Forms ContextMenuStrips"
 ms.assetid: 3391c4c2-0c9e-4aa4-9492-13ff7644bdf2
+description: Learn how to configure ContextMenuStrip check margins and image margins by setting the properties in various combinations.
 ---
 # How to: Configure ContextMenuStrip Check Margins and Image Margins
 You can customize a <xref:System.Windows.Forms.ContextMenuStrip> by setting the <xref:System.Windows.Forms.ToolStripDropDownMenu.ShowImageMargin%2A> and <xref:System.Windows.Forms.ToolStripDropDownMenu.ShowCheckMargin%2A> properties in various combinations.  

@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "SplitContainer control [Windows Forms], Explorer-style interface"
   - "forms [Windows Forms], Windows Explorer type"
 ms.assetid: 9a3d5f4f-5dda-4350-9ad5-57ce5976dc47
+description: Learn how to create a Windows Explorer-style interface on a Windows Form for displaying and browsing information.
 ---
 # How to: Create a Windows Explorer–Style Interface on a Windows Form
 Windows Explorer is a common user-interface choice for applications because of its ready familiarity.

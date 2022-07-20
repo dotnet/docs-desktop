@@ -16,6 +16,7 @@ helpviewer_keywords:
   - "DataGridView control [Windows Forms], substituting cell values for display"
   - "data grids [Windows Forms], formatting data"
 ms.assetid: a6e72c70-ce18-425f-828d-d57be6f96ab6
+description: Learn how to customize data formatting in the Windows Forms DataGridView control to change how cells are displayed depending on their columns and values.
 ---
 # How to: Customize Data Formatting in the Windows Forms DataGridView Control
 The following code example demonstrates how to implement a handler for the <xref:System.Windows.Forms.DataGridView.CellFormatting?displayProperty=nameWithType> event that changes how cells are displayed depending on their columns and values.  

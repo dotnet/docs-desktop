@@ -11,6 +11,7 @@ helpviewer_keywords:
   - "forms [Windows Forms], creating resizable"
   - "Windows Forms, resizable"
 ms.assetid: babdf198-404c-485d-a914-ed370c6ecd99
+description: Learn how to create a resizable Windows Form for data entry to arrange the layout and to resize and position controls as the dimensions change.
 ---
 # How to: Create a Resizable Windows Form for Data Entry
 

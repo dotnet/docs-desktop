@@ -13,6 +13,7 @@ helpviewer_keywords:
   - "icons [Windows Forms], toolbar buttons"
   - "ToolBar control [Windows Forms], adding icons to buttons"
 ms.assetid: 84db98b4-8566-49ce-b2c8-1fd66a5eb3a0
+description: Learn how to define an icon for a ToolBar button by adding images to the ImageList component and then associating that component with the ToolBar control.
 ---
 # How to: Define an Icon for a ToolBar Button
 > [!NOTE]

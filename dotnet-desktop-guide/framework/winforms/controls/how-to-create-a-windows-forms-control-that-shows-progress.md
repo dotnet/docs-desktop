@@ -10,6 +10,7 @@ helpviewer_keywords:
   - "progress [Windows Forms], reporting [Windows Forms]"
   - "FlashTrackBar custom control"
 ms.assetid: 24c5a2e3-058c-4b8d-a217-c06e6a130c2f
+description: Learn how to create a Windows Forms control that uses a gradient to visually show the level or progress of an application.
 ---
 # How to: Create a Windows Forms Control That Shows Progress
 

@@ -11,6 +11,7 @@ helpviewer_keywords:
   - "examples [Windows Forms], BindingSource component"
   - "BindingSource component [Windows Forms], examples"
 ms.assetid: 1aae11fc-6fb2-4cb9-b3d0-e0638fe77ef0
+description: Learn how to customize item addition with the Windows Forms BindingSource component to provide custom behavior.
 ---
 # How to: Customize Item Addition with the Windows Forms BindingSource
 When you use a <xref:System.Windows.Forms.BindingSource> component to bind a Windows Forms control to a data source, you may find it necessary to customize the creation of new items. The <xref:System.Windows.Forms.BindingSource> component makes this straightforward by providing the <xref:System.Windows.Forms.BindingSource.AddingNew> event, which is typically raised when the bound control needs to create a new item. Your event handler can provide whatever custom behavior is required (for example, calling a method on a Web service or getting a new object from a class factory).  

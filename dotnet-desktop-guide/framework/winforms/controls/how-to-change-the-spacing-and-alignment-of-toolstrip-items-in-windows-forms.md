@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "examples [Windows Forms], toolbars"
   - "toolbars [Windows Forms], aligning items"
 ms.assetid: cd483466-0f49-43df-addf-e2b5fcd64027
+description: Learn how to change the spacing and alignment of ToolStrip items in Windows Forms by setting the AutoSize and Size properties.
 ---
 # How to: Change the Spacing and Alignment of ToolStrip Items in Windows Forms
 The <xref:System.Windows.Forms.ToolStrip> control fully supports layout features such as sizing, the spacing of <xref:System.Windows.Forms.ToolStripItem> controls relative to each other, the arrangement of controls on the <xref:System.Windows.Forms.ToolStrip>, and the spacing of controls relative to the <xref:System.Windows.Forms.ToolStrip>.  

@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "splitter windows [Windows Forms], resizing"
   - "SplitContainer control [Windows Forms], resizing"
 ms.assetid: 9bf73f36-ed2d-4a02-b15a-0770eff4fdfa
+description: Learn how to define resize and positioning behavior in a split window with the SplitterIncrement and other properties.
 ---
 # How to: Define Resize and Positioning Behavior in a Split Window
 The panels of the <xref:System.Windows.Forms.SplitContainer> control lend themselves well to being resized and manipulated by users. However, there will be times when you will want to programmatically control the splitter—where it is positioned and to what degree it can be moved.  

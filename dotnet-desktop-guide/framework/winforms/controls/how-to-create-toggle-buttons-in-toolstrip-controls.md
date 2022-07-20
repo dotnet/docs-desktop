@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "examples [Windows Forms], toolbars"
   - "ToolStrip control [Windows Forms], creating toggle buttons"
 ms.assetid: d9c197df-4c65-43f2-beee-b68b52b2befc
+description: Learn how to create toggle buttons in ToolStrip controls so that a clicked button appears sunken and retains that appearance until the button is clicked again.
 ---
 # How to: Create Toggle Buttons in ToolStrip Controls
 

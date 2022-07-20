@@ -10,6 +10,7 @@ helpviewer_keywords:
   - "DataGrid control [Windows Forms], master-details lists"
   - "related tables [Windows Forms], displaying in DataGrid control"
 ms.assetid: 20388c6a-94f9-4d96-be18-8c200491247f
+description: Learn how to create master/detail lists with the Windows Forms DataGrid control so that selected entries on the master list are shown on the details list.
 ---
 # How to: Create Master/Detail Lists with the Windows Forms DataGrid Control
 > [!NOTE]

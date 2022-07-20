@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "DataGridView control [Windows Forms], column order"
   - "data grids [Windows Forms], changing column order"
 ms.assetid: 5e9ac3bc-b0f0-48cb-a3d5-b005af905395
+description: Learn how to change the order of columns in the Windows Forms DataGridView control by using the DisplayIndex property.
 ---
 # How to: Change the Order of Columns in the Windows Forms DataGridView Control
 When you use a <xref:System.Windows.Forms.DataGridView> to display data from a data source, the columns in the data source's schema sometimes do not appear in the order you would like to display them. You can change the displayed order of the columns by using the <xref:System.Windows.Forms.DataGridViewColumn.DisplayIndex%2A> property of the <xref:System.Windows.Forms.DataGridViewColumn> class.  
