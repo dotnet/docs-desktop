@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "tool area [Windows Forms]"
   - "vertical space"
 ms.assetid: aa47af39-1e71-40ee-bb75-2d2478f81bd0
+description: Learn how the ToolStripPanel control enables the sharing of horizontal or vertical space within the tool area.
 ---
 # ToolStripPanel Control
 `ToolStripPanel` control enables the sharing of horizontal or vertical space within the tool area when docked and arranging of <xref:System.Windows.Forms.ToolStrip> controls when you do not need the four panels and central panel of a <xref:System.Windows.Forms.ToolStripContainer>.  

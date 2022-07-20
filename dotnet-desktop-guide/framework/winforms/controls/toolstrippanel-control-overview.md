@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "toolbars [Windows Forms]"
   - "ToolStripPanel control [Windows Forms], about ToolStripPanel control"
 ms.assetid: ce54a60c-5eba-4b4c-bd77-cf0748a666cc
+description: Learn how the ToolStripPanel control provides a single area for positioning and rafting ToolStrip, MenuStrip, and StatusStrip controls.
 ---
 # ToolStripPanel Control Overview
 

@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "layout [Windows Forms], TableLayoutPanel control"
   - "automatic sizing"
 ms.assetid: f55175c6-424e-4782-a86e-3f79c1550235
+description: Learn how the Windows Forms TableLayoutPanel control arranges its content in a grid and can change as the application environment changes.
 ---
 # TableLayoutPanel Control (Windows Forms)
 

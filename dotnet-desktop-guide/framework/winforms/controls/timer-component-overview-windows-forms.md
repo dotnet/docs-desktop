@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "Timer component [Windows Forms], about Timer components"
   - "timers [Windows Forms], about timers"
 ms.assetid: e672c05b-a8b6-4b26-9e4d-9223aa9e3873
+description: Learn the Timer component that raises an event at regular intervals and is designed for a Windows Forms environment.
 ---
 # Timer Component Overview (Windows Forms)
 

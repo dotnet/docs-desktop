@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords:
   - "ToolStrip control [Windows Forms], architecture"
 ms.assetid: 71df2d18-862e-4701-9ff9-c1fe606f94f2
+description: Learn about the ToolStrip control architecture, including the ToolStrip and ToolStripItem classes contained in the System.Windows.Forms namespace.
 ---
 # ToolStrip Control Architecture
 
