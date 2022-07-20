@@ -1,6 +1,6 @@
 ---
 title: "How To: Opt Out of File Dialog Box Automatic Upgrade"
-description: Learn how to opt out of a file dialog box automatic upgrade in Windows Forms in this 1-step procedure.
+description: Learn how to opt out of a file dialog box, automatic upgrade in Windows Forms in this 1-step procedure.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "OpenFileDialog [Windows Forms], opt out of automatic upgrade"
