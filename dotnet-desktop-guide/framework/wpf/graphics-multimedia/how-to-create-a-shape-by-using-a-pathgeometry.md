@@ -1,6 +1,6 @@
 ---
 title: "How to: Create a Shape by Using a PathGeometry"
-description: Learn how to create a shape using the PathGeometry class. PathGeometry objects are composed of one or more PathFigure objects; each PathFigure represents a different shape.
+description: Learn how to create a shape using the PathGeometry class. PathGeometry objects are composed of one or more PathFigure objects.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "shapes [WPF], creating with PathGeometry class"
