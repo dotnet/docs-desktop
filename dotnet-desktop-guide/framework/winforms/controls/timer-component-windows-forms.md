@@ -6,7 +6,7 @@ helpviewer_keywords:
   - "timers"
   - "timers [Windows Forms], creating"
 ms.assetid: 6700e534-6382-43d5-98ed-14205435fff7
-description: Learn the general concepts of the Windows Forms Timer component, which allows users to set up applications to respond to periodic events.
+description: Learn the general concepts of the Windows Forms Timer component, which allows users to set applications to respond to periodic events.
 ---
 # Timer Component (Windows Forms)
 The Windows Forms <xref:System.Windows.Forms.Timer> is a component that raises an event at regular intervals. This component is designed for a Windows Forms environment.  
