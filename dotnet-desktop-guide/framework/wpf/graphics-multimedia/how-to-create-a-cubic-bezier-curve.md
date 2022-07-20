@@ -1,5 +1,6 @@
 ---
 title: "How to: Create a Cubic Bezier Curve"
+description: Learn how to create a cubic Bezier curve using the PathGeometry, PathFigure, and BezierSegment classes.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "curves [WPF], cubic Bezier"
