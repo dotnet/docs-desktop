@@ -1,6 +1,6 @@
 ---
 title: Default Functionality in DataGridView Control
-description: Learn more about the default functionality in the Windows Forms DataGridView control, which provides users with a significant amount of default functionality.
+description: Learn about the default functionality in the Windows Forms DataGridView control, which provides users with a significant amount of default functionality.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "data grids [Windows Forms], default functionality in DataGridView control"

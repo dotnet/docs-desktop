@@ -1,6 +1,6 @@
 ---
 title: Define control properties
-description: Learn more about defining a property in Windows Forms controls. There are a few important considerations when defining a property.
+description: Learn about defining a property in Windows Forms controls. There are a few important considerations when defining a property.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

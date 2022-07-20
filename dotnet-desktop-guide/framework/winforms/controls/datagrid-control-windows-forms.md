@@ -1,6 +1,6 @@
 ---
 title: "DataGrid Control"
-description: Learn more about the DataGrid control in Windows Forms, which is retained for both backward compatibility and future use.
+description: Learn about the DataGrid control in Windows Forms, which is retained for both backward compatibility and future use.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "datasets [Windows Forms], user interface"

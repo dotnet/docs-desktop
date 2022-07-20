@@ -1,6 +1,6 @@
 ---
 title: "Custom Control Painting and Rendering"
-description: Learn more about custom control painting and rendering. Custom painting of controls is one of the many complicated tasks made easy by the .NET Framework.
+description: Learn about custom control painting and rendering. Custom painting of controls is one of the many complicated tasks made easy by the .NET Framework.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "custom controls [Windows Forms], rendering"

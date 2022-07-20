@@ -1,6 +1,6 @@
 ---
 title: Customize DataGridView Control
-description: Learn more about customizing the Windows Forms DataGridView control, which provides several properties that you can use to adjust the appearance.
+description: Learn about customizing the Windows Forms DataGridView control, which provides several properties that you can use to adjust the appearance.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "data grids [Windows Forms], customization"
