@@ -1,5 +1,6 @@
 ---
 title: "XAMLServices Class and Basic XAML Reading or Writing"
+description: Learn about the XAMLServices class provided by .NET that can be used to address XAML scenarios that don't require specific access to the XAML node stream.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "XAML [XAML Services], XamlServices class"

@@ -1,5 +1,6 @@
 ---
 title: "Security"
+description: Learn about the security model followed when developing Windows Presentation Foundation (WPF) standalone and browser-hosted applications.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "XAML files [WPF], sandbox behavior"
