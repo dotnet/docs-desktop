@@ -1,5 +1,6 @@
 ---
 title: "How to: Validate Application Settings"
+description: Learn how to validate application settings before they are persisted using four events exposed by System.Configuration.ApplicationSettingsBase.
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

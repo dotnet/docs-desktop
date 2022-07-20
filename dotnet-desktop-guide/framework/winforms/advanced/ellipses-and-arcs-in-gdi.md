@@ -1,5 +1,6 @@
 ---
 title: "Ellipses and Arcs in GDI+"
+description: Learn how to draw ellipses and arcs using the DrawEllipse and DrawArc methods in GDI+ with Windows Forms.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -19,7 +20,7 @@ You can easily draw ellipses and arcs using the <xref:System.Drawing.Graphics.Dr
 ## Drawing an Ellipse  
  To draw an ellipse, you need a <xref:System.Drawing.Graphics> object and a <xref:System.Drawing.Pen> object. The <xref:System.Drawing.Graphics> object provides the <xref:System.Drawing.Graphics.DrawEllipse%2A> method, and the <xref:System.Drawing.Pen> object stores attributes, such as width and color, of the line used to render the ellipse. The <xref:System.Drawing.Pen> object is passed as one of the arguments to the <xref:System.Drawing.Graphics.DrawEllipse%2A> method. The remaining arguments passed to the <xref:System.Drawing.Graphics.DrawEllipse%2A> method specify the bounding rectangle for the ellipse. The following illustration shows an ellipse along with its bounding rectangle.  
   
- ![Ellipses and arcs](./media/aboutgdip02-art05.gif "Aboutgdip02_art05")  
+ ![Screenshot of an ellipse surrounded by its bounding rectangle.](./media/aboutgdip02-art05.gif "Aboutgdip02_art05")  
   
  The following example draws an ellipse; the bounding rectangle has a width of 80, a height of 40, and an upper-left corner of (100, 50):  
   
@@ -39,7 +40,7 @@ You can easily draw ellipses and arcs using the <xref:System.Drawing.Graphics.Dr
   
  The following illustration shows the arc, the ellipse, and the bounding rectangle.  
   
- ![Ellipses and arcs](./media/aboutgdip02-art06.gif "Aboutgdip02_art06")  
+ ![Screenshot of an ellipse with an arc and its bounding rectangle.](./media/aboutgdip02-art06.gif "Aboutgdip02_art06")  
   
 ## See also
 

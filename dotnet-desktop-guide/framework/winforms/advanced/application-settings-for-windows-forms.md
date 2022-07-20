@@ -1,5 +1,6 @@
 ---
 title: "Application Settings"
+description: Learn about the Applications Settings feature of Windows Forms, which makes it easy to create, store, and maintain custom application and user preferences.
 ms.date: "04/07/2017"
 f1_keywords: 
   - "ClientApplicationSettings"

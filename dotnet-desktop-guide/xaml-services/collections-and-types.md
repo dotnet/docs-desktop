@@ -1,5 +1,6 @@
 ---
 title: "Collections and Collection Types for XAML"
+description: Learn how to define properties of types that are intended to support a collection for XAML in .NET XAML Services.
 ms.date: "03/30/2017"
 ms.assetid: 58f8e7c6-9a41-4f25-8551-c042f1315baa
 ---

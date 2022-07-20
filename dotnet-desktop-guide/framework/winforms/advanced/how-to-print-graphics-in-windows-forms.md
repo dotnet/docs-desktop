@@ -1,5 +1,6 @@
 ---
 title: "How to: Print Graphics"
+description: Learn how to print graphics in Windows Forms using the methods in the System.Drawing.Graphics class to draw objects to a device.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

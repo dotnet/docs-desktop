@@ -1,5 +1,6 @@
 ---
 title: "How to: Use the Modifiers and GenerateMember Properties"
+description: Learn how to use the Modifiers and GenerateMember properties to specify if a component is a member of the form.
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

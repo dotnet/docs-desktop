@@ -1,5 +1,6 @@
 ---
 title: "How to: Create a LineSegment in a PathGeometry"
+description: Learn how to create a line segment using the PathGeometry, PathFigure, and LineSegment classes.
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

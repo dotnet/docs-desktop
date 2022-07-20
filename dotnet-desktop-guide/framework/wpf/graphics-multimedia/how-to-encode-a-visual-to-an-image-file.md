@@ -1,5 +1,6 @@
 ---
 title: "How to: Encode a Visual to an Image File"
+description: Learn how to encode a Visual object into an image file using a RenderTargetBitmap and a PngBitmapEncoder.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

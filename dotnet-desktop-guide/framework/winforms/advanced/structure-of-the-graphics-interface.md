@@ -1,5 +1,6 @@
 ---
 title: "Structure of the Graphics Interface"
+description: Learn about the structure of the Graphics Interface, which includes important classes like the System.Drawing.Graphics class.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "GDI+, using managed interface"

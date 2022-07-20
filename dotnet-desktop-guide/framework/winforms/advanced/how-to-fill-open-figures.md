@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "open figures [Windows Forms], filling"
   - "figures [Windows Forms], filling"
 ms.assetid: 5a36b0e4-f1f4-46c0-a85a-22ae98491950
+description: Learn how to fill open figures by passing a GraphicsPath object to the FillPath method that fills the path according to the fill mode set for the path.
 ---
 # How to: Fill Open Figures
 You can fill a path by passing a <xref:System.Drawing.Drawing2D.GraphicsPath> object to the <xref:System.Drawing.Graphics.FillPath%2A> method. The <xref:System.Drawing.Graphics.FillPath%2A> method fills the path according to the fill mode (alternate or winding) currently set for the path. If the path has any open figures, the path is filled as if those figures were closed. GDI+ closes a figure by drawing a straight line from its ending point to its starting point.  

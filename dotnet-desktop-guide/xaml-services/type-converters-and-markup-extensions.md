@@ -1,5 +1,6 @@
 ---
 title: "Type Converters and Markup Extensions for XAML"
+description: Learn about the two techniques, type converters and markup extensions, that XAML type systems and XAML writers use to generate object graph components.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "XAML [XAML Services], type converter services"

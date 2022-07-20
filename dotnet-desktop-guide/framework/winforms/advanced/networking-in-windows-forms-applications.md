@@ -1,5 +1,6 @@
 ---
 title: Networking
+description: Learn about how the .NET Framework provides classes for network functionality that can be built into Windows Forms applications.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "networking [Windows Forms], Windows Forms"

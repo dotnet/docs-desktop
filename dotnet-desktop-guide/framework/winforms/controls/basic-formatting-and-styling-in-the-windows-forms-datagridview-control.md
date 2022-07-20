@@ -1,5 +1,6 @@
 ---
 title: Basic Formatting and Styling in DataGridView Control
+description: Learn more about basic formatting and styling in the Windows Forms DataGridView Control, which defines the basic appearance of cells.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "DataGridView control [Windows Forms], formatting and styling"
