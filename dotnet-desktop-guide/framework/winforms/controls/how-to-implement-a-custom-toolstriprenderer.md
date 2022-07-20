@@ -1,6 +1,6 @@
 ---
 title: "How to: Implement a Custom ToolStripRenderer"
-Learn how to implement a custom ToolStripRenderer, which gives you the flexibility to create an appearance that differs from the default appearance.
+description: Learn how to implement a custom ToolStripRenderer, which gives you the flexibility to create an appearance that differs from the default appearance.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
