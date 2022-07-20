@@ -350,11 +350,11 @@ The following example shows how to set the <xref:System.Windows.Documents.TextEl
 
 The following figure shows how this example renders.
 
-![Screenshot: Text with altered typography](./media/textelement-typog.png "TextElement_Typog")
+![Screenshot showing text with altered typography.](./media/textelement-typog.png "TextElement_Typog")
 
 In contrast, the following figure shows how a similar example with default typographic properties renders.
 
-![Screenshot: Text with altered typography](./media/textelement-typog-default.png "TextElement_Typog_Default")
+![Screenshot showing text with default typography.](./media/textelement-typog-default.png "TextElement_Typog_Default")
 
 The following example shows how to set the <xref:System.Windows.Controls.TextBox.Typography%2A> property programmatically.
 
