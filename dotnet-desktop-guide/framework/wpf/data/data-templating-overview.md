@@ -120,7 +120,7 @@ The WPF data templating model provides you with great flexibility to define the 
 
  Our application now looks like the following. Home tasks appear with a yellow border and office tasks appear with an aqua border:
 
- ![Screenshot of the Introduction to Data Templating Sample window showing the My Task List ListBox with the home and office tasks borders highlighted in color.](./media/datatemplatingintro-fig6.png "DataTemplatingIntro_fig6")
+ ![Screenshot of the Introduction to Data Templating Sample window showing the My Task List ListBox with the home and office task borders highlighted in color.](./media/datatemplatingintro-fig6.png "DataTemplatingIntro_fig6")
 
  In this example the <xref:System.Windows.DataTrigger> uses a <xref:System.Windows.Setter> to set a property value. The trigger classes also have the <xref:System.Windows.TriggerBase.EnterActions%2A> and <xref:System.Windows.TriggerBase.ExitActions%2A> properties that allow you to start a set of actions such as animations. In addition, there is also a <xref:System.Windows.MultiDataTrigger> class that allows you to apply changes based on multiple data-bound property values.
 
@@ -160,7 +160,7 @@ This example uses the [DataTemplate.Resources](xref:System.Windows.FrameworkTemp
 
  With the template selector in place, the <xref:System.Windows.Controls.ListBox> now appears as follows:
 
- ![Screenshot of Introduction to Data Templating Sample window showing the My Task List ListBox with Priority 1 tasks prominently displayed with a red border.](./media/datatemplatingintro-fig7.png "DataTemplatingIntro_fig7")
+ ![Screenshot of Introduction to Data Templating Sample window showing the My Task List ListBox with the Priority 1 tasks prominently displayed with a red border.](./media/datatemplatingintro-fig7.png "DataTemplatingIntro_fig7")
 
 This concludes our discussion of this example. For the complete sample, see [Introduction to Data Templating Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Data%20Binding/DataTemplatingIntro).
 
