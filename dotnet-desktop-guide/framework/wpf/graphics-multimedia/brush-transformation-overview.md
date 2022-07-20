@@ -1,5 +1,6 @@
 ---
 title: "Brush Transformation Overview"
+description: Learn about the Transform and RelativeTransform Brush class transformation properties enabling you to rotate, scale, skew, and translate a brush's contents.
 ms.date: "03/30/2017"
 ms.topic: overview
 dev_langs: 
