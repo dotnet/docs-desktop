@@ -1,6 +1,6 @@
 ---
 title: "Built-in Types for Common XAML Language Primitives"
-description: Learn about the XAML 2009 introduction of XAML language-level support for several data types that are frequently-used primitives in common language runtime (CLR) and other programming languages.
+description: Learn about XAML 2009 language-level support of common language runtime (CLR) primitives.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "XAML language primitives [XAML Services]"
