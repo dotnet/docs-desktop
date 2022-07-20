@@ -1,5 +1,6 @@
 ---
 title: "How to: Bind to XDocument, XElement, or LINQ for XML Query Results"
+description: Learn how to bind to XDocument, XElement, or LINQ for XML query results in Windows Presentation Foundation (WPF).
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"
