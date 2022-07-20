@@ -33,7 +33,7 @@ This example draws outlined ellipses and rectangles on a form.
  You cannot call this method in the <xref:System.Windows.Forms.Form.Load> event handler. The drawn content will not be redrawn if the form is resized or obscured by another form. To make your content automatically repaint, you should override the <xref:System.Windows.Forms.Control.OnPaint%2A> method.  
   
 ## Robust Programming  
- You should always call <xref:System.IDisposable.Dispose%2A> on any objects that consume system resources, such as <xref:System.Drawing.Pen> and <xref:System.Drawing.Graphics> objects.  
+ You should always call <xref:System.IDisposable.Dispose%2A> on any objects you create that consume system resources. In the previous example, the <xref:System.Drawing.Pen> and <xref:System.Drawing.Graphics> objects were created and then disposed.  
   
 ## See also
 
