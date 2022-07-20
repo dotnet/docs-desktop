@@ -1,5 +1,6 @@
 ---
 title: "ListView Styles and Templates"
+description: Review a list of topics describing the styles and templates available for use with ListView control.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "parts [WPF], ListView"

@@ -1,5 +1,6 @@
 ---
 title: "How to: Manipulate Columns and Rows by Using ColumnDefinitionsCollections and RowDefinitionsCollections"
+description: Review a list of topics describing the styles and templates available that can be used with ListView control.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
