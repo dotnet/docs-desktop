@@ -1,5 +1,6 @@
 ---
 title: "How to: Play a Sound Embedded in a Resource from a Windows Form"
+description: Learn about how to play a sound in a resource from a Windows Form by using the SoundPlayer class, via C# and Visual Basic code examples.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

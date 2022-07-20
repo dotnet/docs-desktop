@@ -1,5 +1,6 @@
 ---
 title: "How to: Play a Beep from a Windows Form"
+description: Learn about how to play a beep from a Windows Form by means of Visual Basic and C# code samples.
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

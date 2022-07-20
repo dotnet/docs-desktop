@@ -1,5 +1,6 @@
 ---
 title: Select a Range of Dates in MonthCalendar Control
+description: Learn about how to select a range of dates in the Windows Forms MonthCalendar control, which is an improvement over the DateTimePicker control.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
