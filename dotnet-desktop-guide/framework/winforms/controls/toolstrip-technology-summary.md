@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "toolbars [Windows Forms], technology summary"
   - "menus [Windows Forms], technology summary"
 ms.assetid: e8d61973-7af9-429f-9df5-05a899c15a7b
+description: Learn how the ToolStrip control and its associated classes provide a complete solution for creating toolbars, status bars, and menus.
 ---
 # ToolStrip Technology Summary
 
