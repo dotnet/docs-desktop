@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "Bezier splines [Windows Forms], drawing"
   - "drawing [Windows Forms], Bezier splines"
 ms.assetid: f4f3fe30-f0a6-4743-ac91-11310cebea9f
+description: Learn how to draw a single Bézier spline with PaintEventArgs e, which is a parameter of the Paint event handler
 ---
 # How to: Draw a Single B&#233;zier Spline
 A Bézier spline is defined by four points: a start point, two control points, and an endpoint.  

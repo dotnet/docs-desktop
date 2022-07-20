@@ -11,6 +11,7 @@ helpviewer_keywords:
   - "HelpProvider component [Windows Forms]"
   - "Help [Windows Forms], adding to dialog boxes"
 ms.assetid: 218aa81e-e87e-4d67-af05-11627bbdce3b
+description: Learn how to display the pop-up Help on Windows Forms through the Help button, accessible through the HelpButton property.
 ---
 # How to: Display pop-up Help
 

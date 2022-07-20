@@ -10,6 +10,7 @@ helpviewer_keywords:
   - "drawing [Windows Forms], text"
   - "Windows Forms, drawing text with GDI"
 ms.assetid: 2a19fe5d-2ace-451c-94db-01cb1118ef7b
+description: Learn how to use the DrawText method in the TextRenderer class to access GDI functionality for drawing text on a form or control.
 ---
 # How to: Draw Text with GDI
 With the <xref:System.Windows.Forms.TextRenderer.DrawText%2A> method in the <xref:System.Windows.Forms.TextRenderer> class, you can access GDI functionality for drawing text on a form or control. GDI text rendering typically offers better performance and more accurate text measuring than GDI+.  

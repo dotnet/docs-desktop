@@ -19,6 +19,7 @@ helpviewer_keywords:
   - "drawing [Windows Forms], circular shapes"
   - "shapes [Windows Forms], drawing"
 ms.assetid: f4f9214c-607e-407d-8cdd-6549f0278451
+description: Learn how to draw an outlined shape, including ellipses and rectangles, with the following descriptions, example, and links.
 ---
 # How to: Draw an Outlined Shape
 This example draws outlined ellipses and rectangles on a form.  
