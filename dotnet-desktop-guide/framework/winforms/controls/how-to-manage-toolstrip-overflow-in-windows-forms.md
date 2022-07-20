@@ -1,5 +1,6 @@
 ---
 title: "How to: Manage ToolStrip Overflow"
+description: Learn how to manage ToolStrip Overflow, which allows you to place controls in an overflow area when there is no longer space for all of your controls.  
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

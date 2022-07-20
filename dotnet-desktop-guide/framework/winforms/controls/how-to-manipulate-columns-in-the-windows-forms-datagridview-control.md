@@ -1,5 +1,6 @@
 ---
 title: Manipulate Columns in DataGridView Control
+description: Learn how to manipulate columns in DataGridView Control using the properties of the DataGridViewColumn class.
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

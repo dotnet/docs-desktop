@@ -1,5 +1,6 @@
 ---
 title: "How to: Loop a Sound Playing on a Windows Form"
+description: Learn how to loop a sound playing on a Windows form so that it plays repeatedly and learn how to stop the sound.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
