@@ -1,6 +1,6 @@
 ---
 title: "ColorDialog Component"
-description: Learn about the ColorDialog component, which is a pre-configured dialog box that allows the user to select a color from a palette.
+description: Learn about which articles will help you understand more about the ColorDialog component.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "ColorDialog component"

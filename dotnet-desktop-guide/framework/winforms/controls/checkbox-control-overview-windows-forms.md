@@ -1,6 +1,6 @@
 ---
 title: "CheckBox Control Overview"
-description: Learn more about an overview of checkbox control in Windows Forms, which indicates whether a particular condition is on or off.
+description: Learn more about an overview of the CheckBox control in Windows Forms, which indicates whether a particular condition is on or off.
 ms.date: "03/30/2017"
 f1_keywords: 
   - "CheckBox"
