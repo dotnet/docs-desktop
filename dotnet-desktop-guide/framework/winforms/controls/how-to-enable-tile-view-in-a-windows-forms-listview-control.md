@@ -1,5 +1,6 @@
 ---
 title: Enable Tile View in ListView Control
+description: Learn how to enable Tile View in ListView Control to provide a visual balance between graphical and textual information.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

@@ -1,5 +1,6 @@
 ---
 title: "How to: Expose Properties of Constituent Controls"
+description: Learn how to expose the properties of Constituent Controls so that these controls that are usually private are available to future users.
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

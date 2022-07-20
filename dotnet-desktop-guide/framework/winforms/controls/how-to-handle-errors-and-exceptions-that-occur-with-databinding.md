@@ -1,5 +1,6 @@
 ---
 title: "How to: Handle Errors and Exceptions that Occur with Databinding"
+description: Learn how to handle errors and exceptions that occur with databinding so that you can recover or pass the error information to the user.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
