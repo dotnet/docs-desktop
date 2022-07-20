@@ -11,6 +11,7 @@ helpviewer_keywords:
   - "tabs [Windows Forms], controlling appearance"
   - "buttons [Windows Forms], displaying tabs as"
 ms.assetid: 7c6cc443-ed62-4d26-b94d-b8913b44f773
+description: Learn how to change the appearance of the Windows Forms tabs by using the properties of the TabControl and the TabPage objects.
 ---
 # How to: Change the Appearance of the Windows Forms TabControl
 You can change the appearance of tabs in Windows Forms by using properties of the <xref:System.Windows.Forms.TabControl> and the <xref:System.Windows.Forms.TabPage> objects that make up the individual tabs on the control. By setting these properties, you can display images on tabs, display tabs vertically instead of horizontally, display multiple rows of tabs, and enable or disable tabs programmatically.  

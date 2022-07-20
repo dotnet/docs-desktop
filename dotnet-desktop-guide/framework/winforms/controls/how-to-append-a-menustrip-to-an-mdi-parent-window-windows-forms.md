@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "MenuStrip control [Windows Forms], appending"
   - "MDI [Windows Forms], merging menu items"
 ms.assetid: ab70c936-b452-4653-b417-17be57bb795b
+description: Learn how to append a MenuStrip to an MDI parent window using IsMdiContainer, AllowMerge, MergeAction, and MergeIndex properties.
 ---
 # How to: Append a MenuStrip to an MDI Parent Window (Windows Forms)
 In some applications, the kind of a multiple-document interface (MDI) child window can be different from the MDI parent window. For example, the MDI parent might be a spreadsheet, and the MDI child might be a chart. In that case, you want to update the contents of the MDI parent's menu with the contents of the MDI child's menu as MDI child windows of different kinds are activated.  

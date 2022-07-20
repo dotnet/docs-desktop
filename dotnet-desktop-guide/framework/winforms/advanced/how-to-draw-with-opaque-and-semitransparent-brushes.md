@@ -10,6 +10,7 @@ helpviewer_keywords:
   - "alpha blending [Windows Forms], brush"
   - "brushes [Windows Forms], using semi-transparent"
 ms.assetid: a4f6f6b8-3bc8-440a-84af-d62ef0f8ff40
+description: Learn how to draw with opaque and semitransparent brushes by setting the alpha component to 255 for opaque or 1 through 254 for semitransparent.
 ---
 # How to: Draw with Opaque and Semitransparent Brushes
 When you fill a shape, you must pass a <xref:System.Drawing.Brush> object to one of the fill methods of the <xref:System.Drawing.Graphics> class. The one parameter of the <xref:System.Drawing.SolidBrush.%23ctor%2A> constructor is a <xref:System.Drawing.Color> object. To fill an opaque shape, set the alpha component of the color to 255. To fill a semitransparent shape, set the alpha component to any value from 1 through 254.  

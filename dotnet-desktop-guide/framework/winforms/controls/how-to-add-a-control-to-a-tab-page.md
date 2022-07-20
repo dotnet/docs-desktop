@@ -1,5 +1,6 @@
 ---
 title: "How to: Add a Control to a Tab Page"
+description: Learn how you can use the Windows Forms TabControl to display other controls in an organized fashion. This article shows how to add a button to the first tab.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

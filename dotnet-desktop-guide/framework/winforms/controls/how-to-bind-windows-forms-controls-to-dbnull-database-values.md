@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "examples [Windows Forms], BindingSource component"
   - "controls [Windows Forms], binding to DBNull values"
 ms.assetid: 96494e6f-5f40-4f83-af97-bbd7192c2af8
+description: Learn how to bind Windows Forms controls to DBNull Database values to substitue an appropriate value without handling, formatting, or parsing events.
 ---
 # How to: Bind Windows Forms Controls to DBNull Database Values
 When you bind Windows Forms controls to a data source and the data source returns a <xref:System.DBNull> value, you can substitute an appropriate value without handling, formatting, or parsing events. The <xref:System.Windows.Forms.Binding.NullValue%2A> property will convert <xref:System.DBNull> to a specified object when formatting or parsing the data source values.  

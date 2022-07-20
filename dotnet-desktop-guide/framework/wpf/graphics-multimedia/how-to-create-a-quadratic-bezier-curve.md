@@ -1,5 +1,6 @@
 ---
 title: "How to: Create a Quadratic Bezier Curve"
+description: Learn how to create a quadratic Bezier curve using the PathGeometry, the PathFigure, and the QuadraticBezierSegment classes.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Bezier curves [WPF], creating"

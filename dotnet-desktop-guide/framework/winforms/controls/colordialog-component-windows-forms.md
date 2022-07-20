@@ -1,5 +1,6 @@
 ---
 title: "ColorDialog Component"
+description: Learn about which articles will help you understand more about the ColorDialog component.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "ColorDialog component"

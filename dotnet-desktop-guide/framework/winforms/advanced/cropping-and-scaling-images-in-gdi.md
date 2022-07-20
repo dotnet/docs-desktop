@@ -1,5 +1,6 @@
 ---
 title: "Cropping and Scaling Images in GDI+"
+description: Learn how to use the DrawImage method of the System.Drawing.Graphics class to draw and position vector images and raster images.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

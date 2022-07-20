@@ -1,5 +1,6 @@
 ---
 title: "CheckBox Control"
+description: Learn about what articles can help you understand more about the CheckBox control in Windows Forms.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "checked list items [Windows Forms], Windows Forms controls"

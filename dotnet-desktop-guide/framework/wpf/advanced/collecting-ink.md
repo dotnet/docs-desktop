@@ -1,5 +1,6 @@
 ---
 title: Collect digital ink
+description: Learn about methods for collecting digital ink in Windows Presentation Foundation (WPF).
 ms.date: 08/15/2018
 dev_langs:
   - "csharp"

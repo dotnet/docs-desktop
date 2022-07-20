@@ -1,5 +1,6 @@
 ---
 title: "How to: Draw a Line"
+description: Learn how to draw a Line by creating a Line element and using its X1 and Y1 properties to set its start point and its X2 and Y2 properties to set its end point.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "drawing [WPF], lines"

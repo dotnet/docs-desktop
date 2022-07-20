@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "paths [Windows Forms], flattening"
   - "drawing [Windows Forms], flattening curves"
 ms.assetid: e654b8de-25f4-4735-9208-42e4514a589c
+description: Learn how to flatten a curved path into a line by calling the Flatten method of a GraphicsPath object
 ---
 # How to: Flatten a Curved Path into a Line
 A <xref:System.Drawing.Drawing2D.GraphicsPath> object stores a sequence of lines and Bézier splines. You can add several types of curves (ellipses, arcs, cardinal splines) to a path, but each curve is converted to a Bézier spline before it is stored in the path. Flattening a path consists of converting each Bézier spline in the path to a sequence of straight lines. The following illustration shows a path before and after flattening.  

@@ -1,5 +1,6 @@
 ---
 title: "How to: Access the Managed HTML Document Object Model"
+description: Learn how you can access the managed HTML Document Object Model (DOM) from two types of applications.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

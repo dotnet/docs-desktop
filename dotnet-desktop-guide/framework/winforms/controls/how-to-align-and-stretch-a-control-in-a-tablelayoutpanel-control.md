@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "controls [Windows Forms], stretching"
   - "controls [Windows Forms], aligning"
 ms.assetid: 7dc1a157-6fee-4995-8ebc-b65bdc0909a8
+description: Learn how to align and stretch a control in a TableLayoutPanel control with Anchor and Dock properties.
 ---
 # How to: Align and Stretch a Control in a TableLayoutPanel Control
 

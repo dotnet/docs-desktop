@@ -1,5 +1,6 @@
 ---
 title: "CheckedListBox Control Overview"
+description: Learn about the overview of the CheckedListBox control in Windows Forms, which extends the ListBox control.
 ms.date: "03/30/2017"
 f1_keywords: 
   - "CheckedListBox"

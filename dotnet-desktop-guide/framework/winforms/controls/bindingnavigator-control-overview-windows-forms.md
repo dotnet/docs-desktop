@@ -1,5 +1,6 @@
 ---
 title: "BindingNavigator Control Overview"
+description: Learn more about the BindingNavigator control in Windows Forms, which can be used to create a standardized means for users to search and change data.
 ms.date: "03/30/2017"
 f1_keywords: 
   - "DataNavigator"

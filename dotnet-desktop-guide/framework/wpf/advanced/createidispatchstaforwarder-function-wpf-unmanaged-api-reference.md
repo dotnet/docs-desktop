@@ -1,5 +1,6 @@
 ---
 title: "CreateIDispatchSTAForwarder Function - WPF unmanaged API reference"
+description: Learn about the CreateIDispatchSTAForwarder function of the Windows Presentation Foundation (WPF) unmanaged API reference.
 titleSuffix: ""
 ms.date: "03/30/2017"
 dev_langs: 

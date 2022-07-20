@@ -1,5 +1,6 @@
 ---
 title: "ContextMenuStrip Control"
+description: Learn more about the ContextMenuStrip control, which provides a shortcut menu that you associate with a control.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "context menus"

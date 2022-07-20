@@ -1,5 +1,6 @@
 ---
 title: "How to: Add or Remove ImageList Images with the Designer"
+description: Learn about several ways that you can add images to an ImageList component, including by using the Properties window and using the smart tag.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "ImageList component [Windows Forms], adding images"

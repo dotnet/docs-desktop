@@ -1,5 +1,6 @@
 ---
 title: Handle Errors That Occur During Data Entry in DataGridView Control
+description: Use these examples to learn how to handle errors that occur during data entry in the Windows Forms DataGridView control.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

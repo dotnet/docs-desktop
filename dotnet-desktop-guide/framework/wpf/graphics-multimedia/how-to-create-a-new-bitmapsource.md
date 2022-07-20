@@ -1,5 +1,6 @@
 ---
 title: "How to: Create a new BitmapSource"
+description: Learn about how to use the Create method of BitmapSource to create a new BitmapSource object.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

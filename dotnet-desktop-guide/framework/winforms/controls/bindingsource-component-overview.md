@@ -1,5 +1,6 @@
 ---
 title: "BindingSource Component Overview"
+description: Learn more about an overview of the BindingSource component, which is designed to simplify the process of binding controls to an underlying data source.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Windows Forms, data binding"

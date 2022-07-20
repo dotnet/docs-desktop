@@ -1,5 +1,6 @@
 ---
 title: "How to: Draw a Closed Shape by Using the Polygon Element"
+description: Learn how to draw a closed shape by creating a Polygon element and using its Points property to specify the vertices of a shape.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "graphics [WPF], Polygon elements"

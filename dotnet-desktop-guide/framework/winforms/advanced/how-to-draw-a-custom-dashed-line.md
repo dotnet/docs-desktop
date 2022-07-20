@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "lines [Windows Forms], drawing"
   - "lines [Windows Forms], dashed"
 ms.assetid: cd0ed96a-cce4-47b9-b58a-3bae2e3d1bee
+description: Learn how to draw a custom dashed line by putting the lengths in an array and assigning that array as the value of the DashPattern property of a Pen object.
 ---
 # How to: Draw a Custom Dashed Line
 GDI+ provides several dash styles that are listed in the <xref:System.Drawing.Drawing2D.DashStyle> enumeration. If those standard dash styles do not suit your needs, you can create a custom dash pattern.  
