@@ -1,5 +1,6 @@
 ---
 title: "How to: Set Up Automatic Menu Merging for MDI Applications"
+description: Learn how to set up automatic menu merging for MDI applications in Windows Forms via this 7-step procedure.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "MenuStrip [Windows Forms], merging"

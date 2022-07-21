@@ -1,5 +1,6 @@
 ---
 title: Set the Background of a Panel Using the Designer
+description: Learn how to set the background of a Windows Forms panel, which can display both a background color and a background image, using the designer.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "background colors [Windows Forms], Windows Forms Panel controls"
