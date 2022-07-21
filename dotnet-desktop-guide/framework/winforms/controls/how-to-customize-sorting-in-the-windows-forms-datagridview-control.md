@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "DataGridView control [Windows Forms], sorting"
   - "data grids [Windows Forms], customizing sorting"
 ms.assetid: 92fb5c14-afab-4cf5-a97e-924fd9cb99f5
+description: Learn how to customize sorting in the Windows Forms DataGridView control to create an alternate user interface.
 ---
 # How to: Customize Sorting in the Windows Forms DataGridView Control
 The <xref:System.Windows.Forms.DataGridView> control provides automatic sorting but, depending on your needs, you might need to customize sort operations. For example, you can use programmatic sorting to create an alternate user interface (UI). Alternatively, you can handle the <xref:System.Windows.Forms.DataGridView.SortCompare> event or call the `Sort(IComparer)` overload of the <xref:System.Windows.Forms.DataGridView.Sort%2A> method for greater sorting flexibility, such as sorting multiple columns.  

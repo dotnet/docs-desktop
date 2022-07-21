@@ -20,6 +20,7 @@ helpviewer_keywords:
   - "access keys [Windows Forms], Windows Forms"
   - "ALT key"
 ms.assetid: 4faa0991-28ec-4eca-91db-51dc2cd6a7ac
+description: Learn how to create access keys for Windows Forms controls in order to create a keyboard shortcut using the Alt key to "click" a button."
 ---
 # How to: Create access keys for Windows Forms controls
 

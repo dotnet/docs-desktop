@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "colors [Windows Forms], customizing in ToolStrip controls [Windows Forms]"
   - "ToolStrip control [Windows Forms], custom colors"
 ms.assetid: e2752fe2-1afb-489e-ab96-b7805acd96bc
+description: Learn how to customize colors in ToolStrip applications by using the ToolStripProfessionalRenderer class.
 ---
 # How to: Customize Colors in ToolStrip Applications
 You can customize the appearance of your <xref:System.Windows.Forms.ToolStrip> by using the <xref:System.Windows.Forms.ToolStripProfessionalRenderer> class to use customized colors.  
