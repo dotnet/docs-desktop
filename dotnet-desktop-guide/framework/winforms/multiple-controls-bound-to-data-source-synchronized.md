@@ -1,5 +1,6 @@
 ---
 title: "How to: Ensure Multiple Controls Bound to the Same Data Source Remain Synchronized"
+description: Learn how to ensure multiple controls bound to the same data source remain synchronized with each other and the data source.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

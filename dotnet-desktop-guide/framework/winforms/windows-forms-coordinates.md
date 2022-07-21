@@ -1,5 +1,6 @@
 ---
-title: Coordinates
+title: Coordinates Windows Forms Coordinates
+description: Learn about the coordinate system for Windows Forms, which is based on device coordinates and drawing in pixel units.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Windows Forms coordinates"

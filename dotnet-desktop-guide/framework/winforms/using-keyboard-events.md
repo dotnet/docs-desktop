@@ -1,5 +1,6 @@
 ---
 title: "Using Keyboard Events"
+description: Learn how to handle and use keyboard events in Windows Forms so that you can use each keyboard event and the data that is supplied for each event.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "KeyPress event [Windows Forms]"
