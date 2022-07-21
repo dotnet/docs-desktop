@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "XAML [XAML Services], System.Xaml and WPF"
   - "System.Xaml [XAML Services], types migrated from WPF"
 ms.assetid: d79dabf5-a2ec-4e8d-a37a-67c4ba8a2b91
+description: Learn about the types that were migrated from WPF to System.Xaml and issues related to that migration.
 ---
 
 # Types migrated from WPF to System.Xaml

@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "sharing message loops [WPF]"
   - "interoperability [WPF], Win32"
 ms.assetid: 39ee888c-e5ec-41c8-b11f-7b851a554442
+description: Learn how to implement a message loop for interoperation with WPF, either by using existing message loop exposure or by creating a separate message loop.
 ---
 # Sharing Message Loops Between Win32 and WPF
 This topic describes how to implement a message loop for interoperation with Windows Presentation Foundation (WPF), either by using existing message loop exposure in <xref:System.Windows.Threading.Dispatcher> or by creating a separate message loop on the Win32 side of your interoperation code.  

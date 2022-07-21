@@ -6,6 +6,7 @@ f1_keywords:
 helpviewer_keywords: 
   - "typography [WPF], how-to topics"
 ms.assetid: 82d50325-7cb2-4975-aea3-027c00e6bbfc
+description: Learn  how to use Windows Presentation Foundation (WPF) support for rich presentation of text in your applications.
 ---
 # Typography How-to Topics
 The topics in this section describe how to use Windows Presentation Foundation (WPF) support for rich presentation of text in your applications.  

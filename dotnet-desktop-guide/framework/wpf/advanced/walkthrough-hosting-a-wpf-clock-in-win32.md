@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "Win32 code [WPF], WPF interoperation"
   - "interoperability [WPF], Win32"
 ms.assetid: 555e55a7-0851-4ec8-b1c6-0acba7e9b648
+description: Learn how to create a mixed WPF inside Win32 application that reimplements the operating system Date and Time Properties dialog.
 ---
 # Walkthrough: Host a WPF Clock in Win32
 

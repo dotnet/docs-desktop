@@ -5,6 +5,7 @@ helpviewer_keywords:
   - "layout [WPF], automatic"
   - "automatic layout [WPF]"
 ms.assetid: 6fed9264-18bb-4d05-8867-1fe356c6f687
+description: Learn the guidelines for developers on how to write WPF application design for the use of automatic layouts.
 ---
 # Use Automatic Layout Overview
 

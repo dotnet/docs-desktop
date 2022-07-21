@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "element tree [WPF]"
   - "visual tree [WPF]"
 ms.assetid: e83f25e5-d66b-4fc7-92d2-50130c9a6649
+description: Learn about the visual tree and logical tree, how such trees relate to an overall object tree concept, and about LogicalTreeHelper and VisualTreeHelpers.
 ---
 # Trees in WPF
 

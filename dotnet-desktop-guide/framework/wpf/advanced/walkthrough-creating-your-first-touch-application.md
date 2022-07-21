@@ -10,6 +10,7 @@ helpviewer_keywords:
   - "touch-sensitive applications [WPF], creating"
   - "creating a touchscreen application [WPF]"
 ms.assetid: d69e602e-9a25-4e24-950b-e89eaa2a906b
+description: Learn how to create a touch application that enables the user to move, resize, or rotate a single object by using touch.
 ---
 # Walkthrough: Creating Your First Touch Application
 WPF enables applications to respond to touch. For example, you can interact with an application by using one or more fingers on a touch-sensitive device, such as a touchscreen This walkthrough creates an application that enables the user to move, resize, or rotate a single object by using touch.  

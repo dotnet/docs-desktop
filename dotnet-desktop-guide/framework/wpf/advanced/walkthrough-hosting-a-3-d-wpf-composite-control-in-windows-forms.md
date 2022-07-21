@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "hosting WPF content in Windows Forms [WPF]"
   - "composite controls [WPF], hosting WPF in"
 ms.assetid: 486369a9-606a-4a3b-b086-a06f2119c7b0
+description: Learn how to create a WPF composite control and host it in Windows Forms controls and forms by using the ElementHost control.
 ---
 # Walkthrough: Host a 3D WPF Composite Control in Windows Forms
 

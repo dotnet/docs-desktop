@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "caching [.NET Framework]"
   - "caching [WPF]"
 ms.assetid: dac2c9ce-042b-4d23-91eb-28f584415cef
+description: Learn how caching application data in a WPF application enables users to store data in memory for rapid access.
 ---
 # Walkthrough: Caching Application Data in a WPF Application
 Caching enables you to store data in memory for rapid access. When the data is accessed again, applications can get the data from the cache instead of retrieving it from the original source. This can improve performance and scalability. In addition, caching makes data available when the data source is temporarily unavailable.
