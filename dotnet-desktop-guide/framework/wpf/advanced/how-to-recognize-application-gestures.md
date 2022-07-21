@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "application gestures [WPF], recognizing"
   - "gestures [WPF], recognizing"
 ms.assetid: d58b740f-5192-4a3e-af59-7aa162e6ca15
-description: Learn how to erase ink when a user makes a ScratchOut gesture on an InkCanvas, assuming an InkCanvas, called inkCanvas1, is declared in the XAML file.
+description: Learn how to erase ink when a user makes a ScratchOut gesture on an InkCanvas, assuming an InkCanvas is declared in the XAML file.
 ---
 # How To: Recognize Application Gestures
 The following example demonstrates how to erase ink when a user makes a <xref:System.Windows.Ink.ApplicationGesture.ScratchOut> gesture on an <xref:System.Windows.Controls.InkCanvas>. This example assumes an <xref:System.Windows.Controls.InkCanvas>, called `inkCanvas1`, is declared in the XAML file.  
