@@ -1,5 +1,6 @@
 ---
 title: "Walkthrough: Validate data in DataGridView control"
+description: Learn about and walk through the process of validating data in DataGridView control before it is committed to the data store.
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"
