@@ -1,6 +1,6 @@
 ---
 title: "How to: Manipulate Columns and Rows by Using ColumnDefinitionsCollections and RowDefinitionsCollections"
-description: Review a list of topics describing the styles and templates available that can be used with ListView control.
+description: Learn how to use the Slider allowing you to select from a range of values by moving a Thumb along a Track.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
