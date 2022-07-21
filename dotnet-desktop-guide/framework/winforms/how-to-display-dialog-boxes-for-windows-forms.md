@@ -1,6 +1,6 @@
 ---
 title: "How to: Display Dialog Boxes"
-description: Learn how to display dialog boxes in a similar way to how you display  other forms in Windows applications.
+description: Learn how to display dialog boxes in a similar way to how you display other forms in Windows applications.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
