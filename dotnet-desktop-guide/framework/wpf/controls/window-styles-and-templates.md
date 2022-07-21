@@ -1,6 +1,6 @@
 ---
 title: "Window Styles and Templates"
-description: Learn about  the styles and templates for the Window control allowing you to modify the default ControlTemplate to give the control a unique appearance.
+description: Learn about the styles and templates for the Window control allowing you to modify the default ControlTemplate to give the control a unique appearance.
 description: 
 ms.date: "03/30/2017"
 helpviewer_keywords: 
