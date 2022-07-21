@@ -1,5 +1,6 @@
 ---
 title: "How Keyboard Input Works"
+description: Learn how keyboard input works with Windows Forms, which processes keyboard input by raising keyboard events in response to Windows messages.
 ms.date: "03/30/2017"
 ms.topic: overview
 helpviewer_keywords: 
