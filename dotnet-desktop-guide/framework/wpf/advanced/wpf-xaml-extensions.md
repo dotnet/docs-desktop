@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "markup extensions [WPF]"
   - "WPF Namespace [WPF]"
 ms.assetid: 5e1d60e8-9403-47d0-98e4-b49aec871ee7
+description: See the provided list of Windows Presentation Foundation XAML extensions ranging from Binding Markup Extension to PresentationOptions:Freeze Attribute.
 ---
 # WPF XAML Extensions
 ## In This Section  

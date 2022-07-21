@@ -8,6 +8,7 @@ dev_langs:
 helpviewer_keywords:
   - "WPF application [WPF], building"
 ms.assetid: a58696fd-bdad-4b55-9759-136dfdf8b91c
+description: Learn how to build Windows Presentation Foundation applications and describes the key steps in the build process.
 ---
 # Compile a WPF Application
 

@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "deploying applications [WPF]"
   - "builds [WPF]"
 ms.assetid: 5198df5e-dda0-4ddc-a275-e0a7a4693524
+description: Learn how the build and deployment model provides the capability to build and deploy applications locally and remotely.
 ---
 # Building and Deploying WPF Applications
 The build and deployment model provides the capability to build and deploy applications locally and remotely, including the following:  

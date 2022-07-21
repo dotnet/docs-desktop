@@ -14,6 +14,7 @@ helpviewer_keywords:
   - "file extensions [WPF], registering"
   - "registering MIME types [WPF]"
 ms.assetid: c6e8c2cb-9ba2-4e75-a0d5-180ec9639433
+description: Learn how to configure Microsoft Internet Information Services (IIS) 5.0 and Microsoft Internet Information Services (IIS) 6.0 to deploy WPF applications.
 ---
 
 # How to: Configure IIS 5.0 and IIS 6.0 to Deploy WPF Applications

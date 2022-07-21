@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "XAML [WPF], custom classes"
   - "classes [WPF], custom classes in XAML"
 ms.assetid: e7313137-581e-4a64-8453-d44e15a6164a
+description: Learn the requirements that a custom class for Windows Presentation Foundation must satisfy to be usable as a XAML element.
 ---
 # XAML and Custom Classes for WPF
 XAML as implemented in common language runtime (CLR) frameworks supports the ability to define a custom class or structure in any common language runtime (CLR) language, and then access that class using XAML markup. You can use a mixture of Windows Presentation Foundation (WPF)-defined types and your custom types within the same markup file, typically by mapping the custom types to a XAML namespace prefix. This topic discusses the requirements that a custom class must satisfy to be usable as a XAML element.  
