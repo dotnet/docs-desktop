@@ -1,6 +1,6 @@
 ---
 title: "How to: Show a Color Palette with the ColorDialog Component"
-description: Learn how to show a color palette with the ColorDialog component, which displays a palette of colors and returns a property containing the color the user has selected.
+description: Learn how to show a color palette with the ColorDialog component, which displays a palette of colors and returns a property containing the user-selected color.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
