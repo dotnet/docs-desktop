@@ -1,5 +1,6 @@
 ---
 title: Implementing Virtual Mode with Just-In-Time Data Loading in DataGridView Control
+description: Learn about implementing virtual mode with just-in-time data loading in DataGridView control, to, for example, retrieve data only as it is needed.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
