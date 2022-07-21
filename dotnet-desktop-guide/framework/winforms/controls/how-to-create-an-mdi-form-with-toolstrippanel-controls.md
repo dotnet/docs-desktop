@@ -12,6 +12,7 @@ helpviewer_keywords:
   - "ToolStrip control [Windows Forms]"
   - "MDI forms [Windows Forms], creating"
 ms.assetid: d198ef8e-f7c4-4b3f-a7f5-ce858cb90cec
+description: Learn how to create an MDI form with ToolStripPanel controls with the required references to System.Drawing and System.Windows.Forms assemblies.
 ---
 # How to: Create an MDI Form with ToolStripPanel Controls
 You can create a multiple document interface (MDI) form that has <xref:System.Windows.Forms.ToolStrip> controls framing it on all four sides.  

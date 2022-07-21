@@ -10,6 +10,7 @@ helpviewer_keywords:
   - "document viewers"
   - "Windows Forms, creating document viewers"
 ms.assetid: 6a6338fe-f7ee-4f5e-9d8f-0465c57e9039
+description: Learn how to create an HTML document viewer in a Windows Forms application to display and print HTML documents without a web browser.
 ---
 # How to: Create an HTML Document Viewer in a Windows Forms Application
 You can use the <xref:System.Windows.Forms.WebBrowser> control to display and print HTML documents without providing the full functionality of an Internet Web browser. This is useful when you want to take advantage of the formatting capabilities of HTML but do not want your users to load arbitrary Web pages that may contain untrusted Web controls or potentially malicious script code. You might want to restrict the capability of the <xref:System.Windows.Forms.WebBrowser> control in this manner, for example, to use it as an HTML email viewer or to provide HTML-formatted help in your application.  

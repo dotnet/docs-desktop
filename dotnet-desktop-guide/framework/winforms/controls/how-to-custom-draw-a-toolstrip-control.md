@@ -16,6 +16,7 @@ helpviewer_keywords:
   - "custom drawing"
   - "owner drawing"
 ms.assetid: 94e7d7bd-a752-441c-b5b3-7acf98881163
+description: Learn how to custom draw a ToolStrip control by overriding one of the renderer classes and changing an aspect of the rendering logic.
 ---
 # How to: Custom Draw a ToolStrip Control
 The <xref:System.Windows.Forms.ToolStrip> controls have the following associated rendering (painting) classes:  
