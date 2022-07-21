@@ -5,6 +5,7 @@ helpviewer_keywords:
   - "typography [WPF], animations"
   - "animation [WPF], text"
 ms.assetid: eec3d26c-0a21-420f-8012-671621c47089
+description: Learn how to apply animations to text in order to alter the display and appearance of text in an application.
 ---
 # How to: Apply Animations to Text
 Animations can alter the display and appearance of text in your application. The following examples use different types of animations to affect the display of text in a <xref:System.Windows.Controls.TextBlock> control.  

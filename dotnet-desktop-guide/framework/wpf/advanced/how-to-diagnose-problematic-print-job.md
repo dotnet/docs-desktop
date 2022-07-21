@@ -10,6 +10,7 @@ helpviewer_keywords:
   - "print jobs [WPF], troubleshooting"
   - "print jobs [WPF], diagnosing problems"
 ms.assetid: b081a170-84c6-48f9-a487-5766a8d58a82
+description: Learn how the rich set of print job properties exposed in the APIs of Microsoft .NET Framework provide a means for performing a diagnosis of print jobs.
 ---
 # How to: Diagnose Problematic Print Job
 Network administrators often field complaints from users about print jobs that do not print or print slowly. The rich set of print job properties exposed in the APIs of Microsoft .NET Framework provide a means for performing a rapid remote diagnosis of print jobs.  

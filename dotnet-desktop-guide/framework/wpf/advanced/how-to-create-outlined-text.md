@@ -11,6 +11,7 @@ helpviewer_keywords:
   - "linear gradient brush [WPF]"
   - "typography [WPF], outline effects"
 ms.assetid: 4aa3cf6e-1953-4f26-8230-7c1409e5f28d
+description: Learn how to create outlined text and affect the appearance of the converted text by modifying its stroke and fill properties.
 ---
 # How to: Create outlined text
 

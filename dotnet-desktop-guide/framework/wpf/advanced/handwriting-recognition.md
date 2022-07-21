@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "handwriting recognition [WPF]"
   - "recognition of handwriting [WPF]"
 ms.assetid: f4e8576d-e731-4bac-9818-22e2ae636636
+description: Learn the fundamentals of handwriting recognition as it pertains to digital ink in the WPF platform.
 ---
 # Handwriting Recognition
 
