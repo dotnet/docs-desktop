@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "source element in event handlers [WPF]"
   - "event handlers [WPF], finding source element in"
 ms.assetid: 85f71c5a-b714-4c65-9711-7d905c2bbe98
-description: Learn how the handler code uses the Source property of the reported data that in the event arguments to change the Width property value on the Source element.
+description: Learn how the handler code uses the Source property of the reported data in the event arguments to change the Width property value on the Source element.
 ---
 # How to: Find the Source Element in an Event Handler
 This example shows how to find the source element in an event handler.  

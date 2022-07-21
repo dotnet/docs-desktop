@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "events [WPF], Loaded"
   - "Loaded events [WPF]"
 ms.assetid: 0cf8d003-8441-4df4-807a-6db09347e829
-description: Learn how to handle the FrameworkElement.Loaded event, and an appropriate scenario for handling that event. 
+description: Learn how to handle the FrameworkElement.Loaded event, with an example scenario for handling that event. 
 ---
 # How to: Handle a Loaded Event
 This example shows how to handle the <xref:System.Windows.FrameworkElement.Loaded?displayProperty=nameWithType> event, and an appropriate scenario for handling that event. The handler  creates a <xref:System.Windows.Controls.Button> when the page loads.  
