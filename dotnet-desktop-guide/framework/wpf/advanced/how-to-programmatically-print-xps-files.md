@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "printing XPS files programmatically [WPF]"
   - "XPS files [WPF], printing programmatically"
 ms.assetid: 0b1c0a3f-b19e-43d6-bcc9-eb3ec4e555ad
+description: Learn how to use one overload of the AddJob method to print XML Paper Specification files without opening a PrintDialog or any user interface at all.
 ---
 # How to: Programmatically Print XPS Files
 

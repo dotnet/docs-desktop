@@ -7,6 +7,7 @@ dev_langs:
 helpviewer_keywords: 
   - "Freezable objects [WPF], making read-only"
 ms.assetid: 6c544b7d-d3c9-4736-aa90-4b8728234ccb
+description: Learn how to make a Freezable read-only by calling its Freeze method, and learn what conditions prevents freezing a Freezable object.
 ---
 # How to: Make a Freezable Read-Only
 This example shows how to make a <xref:System.Windows.Freezable> read-only by calling its <xref:System.Windows.Freezable.Freeze%2A> method.  

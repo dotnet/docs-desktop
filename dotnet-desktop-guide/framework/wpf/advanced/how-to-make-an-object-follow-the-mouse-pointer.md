@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "mouse pointer (cursor), making objects follow"
   - "cursor (mouse pointer), making objects follow"
 ms.assetid: 50b20415-14bc-405c-baf3-2fb254fffde3
+description: Learn how to make an object follow the mouse pointer and change the dimensions of an object when the mouse pointer moves on the screen.
 ---
 # How to: Make an Object Follow the Mouse Pointer
 This example shows how to change the dimensions of an object when the mouse pointer moves on the screen.  

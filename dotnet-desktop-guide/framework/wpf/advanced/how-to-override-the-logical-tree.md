@@ -5,6 +5,7 @@ helpviewer_keywords:
   - "overriding the logical tree [WPF]"
   - "logical tree [WPF], overriding"
 ms.assetid: 0ae4d074-8113-4b06-b4fa-e0f39d4967a6
+description: Learn  how to subclass StackPanel to override the logical tree and enforce a behavior that the panel may only have and will only render a single child element.
 ---
 # How to: Override the Logical Tree
 Although it is not necessary in most cases, advanced control authors have the option to override the logical tree.  

@@ -7,6 +7,7 @@ dev_langs:
 helpviewer_keywords: 
   - "ICommandSource interfaces [WPF], implementing"
 ms.assetid: 7452dd39-6e11-44bf-806a-31d87f3772ac
+description: Learn how to create a command source by implementing ICommandSource, which knows how to invoke a command and exposes three memebers.
 ---
 # How to: Implement ICommandSource
 

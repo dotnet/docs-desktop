@@ -10,6 +10,7 @@ helpviewer_keywords:
   - "system fonts [WPF], enumerating"
   - "enumerating [WPF], system fonts"
 ms.assetid: 36e37791-55b9-4f01-a496-5cc10335e6a6
+description: Learn how to enumerate the fonts in the system font collection and have each font family name within SystemFontFamilies added as an item to a combo box.
 ---
 # How to: Enumerate System Fonts
 ## Example  

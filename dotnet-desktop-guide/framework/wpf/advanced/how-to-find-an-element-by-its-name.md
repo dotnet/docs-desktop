@@ -7,6 +7,7 @@ dev_langs:
 helpviewer_keywords: 
   - "elements [WPF], finding by name"
 ms.assetid: cfa7cf35-8aa2-4060-9454-872ed4af3f0e
+description: Learn how to use the FindName method to find an element by its Name value, with examples and links.
 ---
 # How to: Find an Element by Its Name
 This example describes how to use the <xref:System.Windows.FrameworkElement.FindName%2A> method to find an element by its <xref:System.Windows.FrameworkElement.Name%2A> value.  
