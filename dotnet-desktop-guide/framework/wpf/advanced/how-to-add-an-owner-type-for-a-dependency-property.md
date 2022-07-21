@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "classes [WPF], adding as owners of dependency properties"
   - "dependency properties [WPF], adding classes as owners of"
 ms.assetid: edcce050-0576-4edb-a31a-3f909637b452
-description: Learn how to add a class as an owner of a dependency property registered for a different type with supporting information and links.
+description: Learn how to add a class as an owner of a dependency property registered for a different type, with supporting information and links.
 ---
 # How to: Add an Owner Type for a Dependency Property
 This example shows how to add a class as an owner of a dependency property registered for a different type. By doing this, the WPF XAML reader and property system are both able to recognize the class as an additional owner of the property. Adding as owner optionally allows the adding class to provide type-specific metadata.  

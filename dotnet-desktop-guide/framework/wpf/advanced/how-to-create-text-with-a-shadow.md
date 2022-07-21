@@ -6,7 +6,7 @@ helpviewer_keywords:
   - "shadow effects in text [WPF]"
   - "text [WPF], shadowed"
 ms.assetid: 6ab9c754-6001-4708-b479-5367f2fd1a35
-description: Learn how to create text with a shadow effect as well as how to control the width and create a blur effect for that text.
+description: Learn how to create text with a shadow effect, how to control the width of that shadow, and how to create a blur effect for that text.
 ---
 # How to: Create Text with a Shadow
 The examples in this section show how to create a shadow effect for displayed text.  
