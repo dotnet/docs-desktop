@@ -1,5 +1,6 @@
 ---
 title: "How to: Use SystemFonts"
+description: Learn how to use SystemFonts, which is a static resource belonging to the xref:System.Windows.SystemFonts class. 
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

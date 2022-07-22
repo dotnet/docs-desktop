@@ -1,5 +1,6 @@
 ---
 title: "Input Overview"
+description: Learn about and get a thorough overview of inputs in Windows Presentation Foundation (WPF) as well as the architecture and classes that control them.
 ms.date: "03/30/2017"
 ms.topic: overview
 dev_langs:
