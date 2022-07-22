@@ -1,5 +1,6 @@
 ---
 title: "IEnumRAWINPUTDEVIC:Skip"
+description: Learn about IEnumRAWINPUTDEVIC:Skip, which instructs the enumerator to skip the next celt elements in the enumeration.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Skip method [WPF]"

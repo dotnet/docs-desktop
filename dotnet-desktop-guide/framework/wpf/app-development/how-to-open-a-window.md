@@ -1,5 +1,6 @@
 ---
 title: "How to: Open a Window"
+description: Learn how to open a window in this article, by means of the included code examples in C# and Visual Basic.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

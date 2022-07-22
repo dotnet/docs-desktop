@@ -1,5 +1,6 @@
 ---
 title: "IEnumRAWINPUTDEVICE"
+description: Learn about IEnumRAWINPUTDEVICE, which enumerates the raw input devices, and is only used by PresentationHost.exe.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "IEnumRAWINPUTDEVICE interface [WPF]"

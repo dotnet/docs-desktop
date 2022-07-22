@@ -1,5 +1,6 @@
 ---
 title: "How to: Get all Windows in an Application"
+description: Learn how to get all windows in an application, by means of the included code examples in C# and Visual Basic.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

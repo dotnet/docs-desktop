@@ -1,5 +1,6 @@
 ---
 title: "How to: Navigate to a Page"
+description: Learn how to navigate to a page using NavigationWindow, by means of the included code examples in C# and Visual Basic.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

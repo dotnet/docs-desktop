@@ -1,5 +1,6 @@
 ---
 title: "How to: Refresh a Page"
+description: Learn how to refresh a page in this article, using the Refresh%2A method, by means of code examples in C# and Visual Basic.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
