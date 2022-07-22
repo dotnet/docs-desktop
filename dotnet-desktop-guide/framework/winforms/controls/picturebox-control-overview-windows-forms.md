@@ -1,5 +1,6 @@
 ---
 title: "PictureBox Control Overview"
+description: This article provides an overview of the PictureBox control in Windows Forms, which is used to display graphics in bitmap, GIF, JPEG, metafile, or icon format.
 ms.date: "03/30/2017"
 f1_keywords: 
   - "PictureBox"

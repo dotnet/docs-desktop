@@ -1,5 +1,6 @@
 ---
 title: "PrintPreviewDialog Control Overview"
+description: This article provides an overview of the PrintPreviewDialog control in Windows Forms, which is a pre-configured dialog box.
 ms.date: "01/08/2018"
 f1_keywords:
   - "PrintPreviewDialog"

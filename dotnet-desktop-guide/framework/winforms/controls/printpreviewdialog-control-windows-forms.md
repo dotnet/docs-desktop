@@ -1,5 +1,6 @@
 ---
 title: "PrintPreviewDialog Control"
+description: Learn about the PrintPreviewDialog control in Windows Forms, which is a pre-configured dialog box used to display how a document will appear when printed.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "PrintPreviewDialog control (using designer)"

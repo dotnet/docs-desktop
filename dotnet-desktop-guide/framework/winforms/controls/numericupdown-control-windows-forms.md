@@ -1,5 +1,6 @@
 ---
 title: "NumericUpDown Control"
+description: Learn about the NumericUpDown control in Windows Forms, which like a combination of a text box and a pair of arrows that the user can click to adjust a value.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Windows Forms controls, NumericUpDown control"
