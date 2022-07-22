@@ -1,5 +1,6 @@
 ---
 title: "SetFakeActiveWindow Function - WPF unmanaged API reference"
+description: Learn about the SetFakeActiveWindow function - WPF unmanaged API reference, which supports the Windows Presentation Foundation (WPF) infrastructure.
 titleSuffix: ""
 ms.date: "03/30/2017"
 dev_langs: 

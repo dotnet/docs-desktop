@@ -1,5 +1,6 @@
 ---
 title: "Optimizing Performance: Layout and Design"
+description: Learn how to optimize the performance of your application layout and design by eliminating overhead.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

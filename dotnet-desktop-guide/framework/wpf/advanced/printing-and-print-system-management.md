@@ -1,5 +1,6 @@
 ---
 title: "Printing and Print System Management"
+description: Learn about printing and print system management, which were introduced in Windows Vista and the Microsoft .NET Framework.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "printing [WPF]"

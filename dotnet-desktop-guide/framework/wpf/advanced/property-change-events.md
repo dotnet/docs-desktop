@@ -1,5 +1,6 @@
 ---
 title: "Property Change Events"
+description: Learn how Windows Presentation Foundation (WPF) defines several events that are raised in response to a change in the value of a property.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "dependency properties [WPF], change events"
