@@ -1,5 +1,6 @@
 ---
 title: "How to: Resize Rows with a GridSplitter"
+description: Learn how to create a horizontal GridSplitter control in a Windows Presentation Foundation (WPF) application. Doing so allows you to redistribute the space between two rows in a Grid control without changing the dimensions of the grid.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "resizing grid rows [WPF]"
