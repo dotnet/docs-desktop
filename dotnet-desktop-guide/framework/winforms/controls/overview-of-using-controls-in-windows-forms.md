@@ -1,6 +1,6 @@
 ---
 title: "Overview of Using Controls"
-description: This article presents and overview of using controls in Windows Forms, including code samples in Visual Basic and C#.
+description: This article presents an overview of using controls in Windows Forms, including code samples in Visual Basic and C#.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
