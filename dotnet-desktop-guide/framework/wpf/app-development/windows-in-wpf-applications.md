@@ -1,5 +1,6 @@
 ---
 title: Windows in WPF apps
+description: Learn about windows in WPF applications. Users interact with applications through windows. The fundamental purpose of a window is to host and display content.
 titleSuffix: ""
 ms.date: "03/30/2017"
 f1_keywords: 
