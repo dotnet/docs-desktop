@@ -1,6 +1,6 @@
 ---
 title: "ForwardTranslateAccelerator Function - WPF unmanaged API reference"
-description: Learn about the ForwardTranslateAccelerator function of the Windows Presentation Foundation (WPF) unmanaged API reference. The WPF infrastructure uses this function for windows management; it's not intended to be used directly from your code.
+description: Learn about the ForwardTranslateAccelerator function of the Windows Presentation Foundation (WPF) unmanaged API reference.
 titleSuffix: ""
 ms.date: "03/30/2017"
 dev_langs: 

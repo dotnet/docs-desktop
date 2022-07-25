@@ -1,6 +1,6 @@
 ---
 title: "Graphics Rendering Tiers"
-description: Learn about graphics rendering tiers in Windows Presentation Foundation (WPF). A rendering tier defines a level of graphics hardware capability and performance for a device that runs a WPF application.
+description: Learn about graphics rendering tiers for devices running a Windows Presentation Foundation (WPF) application.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "graphics [WPF], performance"

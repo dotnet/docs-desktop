@@ -1,6 +1,6 @@
 ---
 title: "Freezable Objects Overview"
-description: Learn how to use and create freezable objects in Windows Presentation Foundation (WPF). Freezable objects are inheirited from the Freezable class and provide special properties to improve application performance. Examples of freezable objects include brushes, pens, transformations, geometries, and animations.
+description: Learn how to use and create freezable objects in Windows Presentation Foundation (WPF) applications.
 ms.date: "03/30/2017"
 ms.topic: overview
 dev_langs:
