@@ -1,5 +1,6 @@
 ---
 title: Value (XElement dynamic property)
+description: Learn about how the XElement.Value property retrieves or applies the content of the element.
 ms.date: 10/22/2019
 ms.topic: reference
 ---

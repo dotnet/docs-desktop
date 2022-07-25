@@ -1,5 +1,6 @@
 ---
 title: "How to: Use the Master-Detail Pattern with Hierarchical XML Data"
+description: Learn how to implement the master-detail scenario using the master-detail pattern with hierarchial XML data.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "data binding [WPF], Master-Detail data paradigm"

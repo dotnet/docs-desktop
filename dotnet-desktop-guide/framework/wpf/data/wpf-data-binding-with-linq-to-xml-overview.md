@@ -1,5 +1,6 @@
 ---
 title: Data binding with LINQ to XML
+description: Learn about the Windows Presentation Foundation (WPF) dynamic data binding features in the System.Xml.Linq namespace.
 ms.date: 10/22/2019
 ms.topic: conceptual
 ---
