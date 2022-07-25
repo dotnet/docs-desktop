@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "inheritance [Windows Forms], walkthroughs"
   - "custom controls [Windows Forms], inheritance"
 ms.assetid: 09476da0-8d4c-4a4c-b969-649519dfb438
+description: Learn to create a ValueButton which will inherit functionality from the standard Windows Forms Button control and expose a custom property called ButtonValue.
 ---
 # Walkthrough: Inherit from a Windows Forms Control with C\#
 

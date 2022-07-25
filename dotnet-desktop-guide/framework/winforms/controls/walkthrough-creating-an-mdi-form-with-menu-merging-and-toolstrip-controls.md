@@ -14,6 +14,7 @@ helpviewer_keywords:
   - "MDI forms [Windows Forms], creating"
   - "MDI forms [Windows Forms], walkthroughs"
 ms.assetid: fbab4221-74af-42d0-bbf4-3c97f7b2e544
+description: Learn how to use ToolStripPanel controls with an MDI form that also supports menu merging with child menus.
 ---
 # Walkthrough: Creating an MDI Form with Menu Merging and ToolStrip Controls
 

@@ -15,6 +15,7 @@ helpviewer_keywords:
   - "walkthroughs [Windows Forms], debugging"
   - "design-time debugging"
 ms.assetid: 1fd83ccd-3798-42fc-85a3-6cba99467387
+description: Learn how to debug custom Windows Forms controls at design time with supporting descriptions, definitions and links.
 ---
 # Walkthrough: Debug Custom Windows Forms Controls at Design Time
 

@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "OnPaint method [Windows Forms]"
   - "user-drawn controls [Windows Forms]"
 ms.assetid: 034af4b5-457f-4160-a937-22891817faa8
+description: Learn how Windows Forms provides the functionality to create a user control or one that inherits from an existing control.
 ---
 # User-Drawn Controls
 The .NET Framework provides you with the ability to easily develop your own controls. You can create a user control, which is a set of standard controls bound together by code, or you can design your own control from the ground up. You can even use inheritance to create a control that inherits from an existing control and add to its inherent functionality. Whatever approach you use, the .NET Framework provides the functionality to draw a custom graphical interface for any control you create.  
