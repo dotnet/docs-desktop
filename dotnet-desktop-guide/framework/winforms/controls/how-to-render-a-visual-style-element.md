@@ -1,5 +1,6 @@
 ---
 title: "How to: Render a Visual Style Element"
+description: Learn how to render a visual style element in Windows Forms by means of a 2-step procedure, with code examples in CPP, C#, and Visual Basic.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
