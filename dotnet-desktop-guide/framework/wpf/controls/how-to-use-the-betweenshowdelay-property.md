@@ -1,6 +1,6 @@
 ---
 title: "How to: Use the BetweenShowDelay Property"
-description: Learn how to use the BetweenShowDelay property in a Windows Presentation Foundation (WPF) application. You can set this property so that tooltips appear with little delay when a user moves the mouse pointer from one tooltip to another.
+description: Learn how to use the BetweenShowDelay property in a Windows Presentation Foundation (WPF) application.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "ToolTip control [WPF], BetweenShowDelay time property"
