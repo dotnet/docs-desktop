@@ -6,6 +6,7 @@ f1_keywords:
 helpviewer_keywords: 
   - "sounds [Windows Forms], playing"
 ms.assetid: f3945af9-045c-4e2d-b251-377c37ca2d77
+description: Learn how the SoundPlayer class enables users to include sounds in applications, and how the SystemsSounds class can be used to play common sounds.
 ---
 # SoundPlayer Class
 

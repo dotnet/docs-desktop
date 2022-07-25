@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "Splitter control [Windows Forms]"
   - "views [Windows Forms], multiple per frame"
 ms.assetid: 6f287407-e895-4b07-a46a-a5bff8388d46
+description: Learn how Windows Forms Splitter controls are used to resize docked controls at run time to present varying lengths of data.
 ---
 # Splitter Control (Windows Forms)
 Windows Forms `Splitter` controls are used to resize docked controls at run time. The `Splitter` control is often used on forms with controls that have varying lengths of data to present, like Windows Explorer, whose data panes contain information of varying widths at different times.  

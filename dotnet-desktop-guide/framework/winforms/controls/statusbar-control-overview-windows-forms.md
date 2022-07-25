@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "StatusBar control [Windows Forms], about StatusBar control"
   - "status bars"
 ms.assetid: b7b9852c-633d-4416-bb2e-94852b989c6c
+description: Learn how the Windows Forms StatusBar control is used on forms as an area in which an application can display status information.
 ---
 # StatusBar Control Overview (Windows Forms)
 > [!IMPORTANT]

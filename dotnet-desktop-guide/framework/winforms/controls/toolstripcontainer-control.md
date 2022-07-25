@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "ToolStripContainer control [Windows Forms]"
   - "ToolStrip control [Windows Forms], ToolStripContainer"
 ms.assetid: 378fa5b4-38e1-46f4-8e5c-d0c19dcd0200
+description: Learn how to build ToolStripContainer features into your applications to give ToolStrip control features built-in rafting.
 ---
 # ToolStripContainer Control
 
