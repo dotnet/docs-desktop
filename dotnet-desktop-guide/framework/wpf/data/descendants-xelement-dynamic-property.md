@@ -1,5 +1,6 @@
 ---
 title: Descendants (XElement dynamic property)
+description: Learn how the XElement.Descendants property retrieves all the descendant elements of the current element that match the specified expanded name.
 ms.date: 10/22/2019
 ms.topic: reference
 ---

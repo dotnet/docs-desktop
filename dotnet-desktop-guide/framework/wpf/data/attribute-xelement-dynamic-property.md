@@ -1,5 +1,6 @@
 ---
 title: Attribute (XElement dynamic property)
+description: Learn how the XElement.Attribute property uses an indexer to retrieve the attribute instance that corresponds to the specified expanded name.
 ms.date: 10/22/2019
 ms.topic: reference
 ---

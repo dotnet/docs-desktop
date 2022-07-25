@@ -1,5 +1,6 @@
 ---
 title: "How to: Bind to the Results of a LINQ Query"
+description: Learn how to run a LINQ query and then bind to the results in Windows Presentation Foundation (WPF).
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "running a LINQ query [WPF], bind to results"

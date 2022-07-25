@@ -1,5 +1,6 @@
 ---
 title: "How to: Navigate Through the Objects in a Data CollectionView"
+description: Learn how to use the CollectionView class to retrieve the current object as well as navigate through the objects in a data collection.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
