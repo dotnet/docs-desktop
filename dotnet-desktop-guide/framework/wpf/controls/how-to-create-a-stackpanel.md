@@ -1,5 +1,6 @@
 ---
 title: "How to: Create a StackPanel"
+description: Learn how to create a StackPanel, which allows you to stack elements in a specified direction, via the included example in XAML.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "StackPanel control [WPF], creating"

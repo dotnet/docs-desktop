@@ -1,5 +1,6 @@
 ---
 title: "How to: Create and Use a Canvas"
+description: Learn how to create and use a canvas, by means of the included code examples in C# and Visual Basic.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

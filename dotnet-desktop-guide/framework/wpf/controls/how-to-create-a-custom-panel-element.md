@@ -1,5 +1,6 @@
 ---
 title: "How to: Create a Custom Panel Element"
+description: Learn how to create a custom panel element, by means of the included code examples in CPP, C#, and Visual Basic.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
