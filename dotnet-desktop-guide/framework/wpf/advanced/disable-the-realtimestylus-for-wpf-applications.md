@@ -1,5 +1,6 @@
 ---
 title: Disable the RealTimeStylus
+description: Learn how to disable the built-in stylus support in a Windows Presentation Foundation (WPF) application. You must disable WPF stylus support to use WM_TOUCH to receive touch messages from a WPF window. 
 ms.date: "03/30/2017"
 ms.assetid: e0525309-5ede-4782-837d-dbf6e5554859
 ---

@@ -10,6 +10,7 @@ helpviewer_keywords:
   - "StatusStrip control [Windows Forms]"
   - "ToolStrip control [Windows Forms]"
 ms.assetid: dac37d98-589e-4d6d-9673-6437e8943122
+description: Learn how to use a MenuStrip control to create a standard menu for forms which also responds when a user selects a menu item.
 ---
 # Walkthrough: Providing Standard Menu Items to a Form
 

@@ -1,5 +1,6 @@
 ---
 title: "How to: Implement a CompositeCollection"
+description: Learn how to use the CompositeCollection class to display multiple collections and items as one list.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "data binding [WPF], CompositeCollection class"

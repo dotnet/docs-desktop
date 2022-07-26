@@ -1,5 +1,6 @@
 ---
 title: "How to: Implement Validation Logic on Custom Objects"
+description: Learn how to implement validation logic on a custom object before binding to it in Windows Presentation Foundation (WPF).
 ms.date: "08/02/2018"
 dev_langs: 
   - "csharp"

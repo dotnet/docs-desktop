@@ -10,6 +10,7 @@ helpviewer_keywords:
   - "toolbars [Windows Forms], walkthroughs"
   - "ToolStrip control [Windows Forms], creating professionally styled controls"
 ms.assetid: b52339ae-f1d3-494e-996e-eb455614098a
+description: Learn how to use ToolStrip controls to create a composite control that resembles the Navigation Pane provided by Microsoft Outlook.
 ---
 # Walkthrough: Creating a Professionally Styled ToolStrip Control
 

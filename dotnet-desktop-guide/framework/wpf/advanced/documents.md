@@ -1,5 +1,6 @@
 ---
 title: "Documents"
+description: Use this collection of articles to learn about the features available for managing documents in Windows Presentation Foundation (WPF).
 ms.date: "03/30/2017"
 ms.custom: devdivchpfy22
 f1_keywords: 

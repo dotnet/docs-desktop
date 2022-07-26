@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "StatusStrip control [Windows Forms], about StatusStrip control"
   - "status bars [Windows Forms], about status bars"
 ms.assetid: c0d9bcbb-f8b8-46ef-bae2-4146b8c8ce99
+description: Learn how a StatusStrip control displays information about an object being viewed on a Form, the object's components, or context to the object's operation.
 ---
 # StatusStrip Control Overview
 

@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "SoundPlayer class [Windows Forms], about SoundPlayer class"
   - "sounds [Windows Forms], playing"
 ms.assetid: fcebb938-62b9-4677-9cbe-6465bc863e22
+description: Learn how the SoundPlayer Class enables users to include sound in the .wav format in applications and also load or play sounds asynchronously.
 ---
 # SoundPlayer Class Overview
 The <xref:System.Media.SoundPlayer> class enables you to easily include sounds in your applications.  

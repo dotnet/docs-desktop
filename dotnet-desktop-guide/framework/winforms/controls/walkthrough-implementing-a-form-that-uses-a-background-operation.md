@@ -15,6 +15,7 @@ helpviewer_keywords:
   - "threading [Windows Forms], background operations"
   - "background operations"
 ms.assetid: 4691b796-9200-471a-89c3-ba4c7cc78c03
+description: Learn how to use the BackgroundWorker class to perform time-consuming computations "in the background," while the user interface remains responsive. 
 ---
 # Walkthrough: Implementing a Form That Uses a Background Operation
 

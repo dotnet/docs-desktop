@@ -1,5 +1,6 @@
 ---
 title: "How to: Specify the Direction of the Binding"
+description: Learn how to use the Binding.Mode property to specify whether the binding updates only the target property, the source property or both.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "direction of binding [WPF]"

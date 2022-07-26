@@ -1,5 +1,6 @@
 ---
 title: Set Icons for TreeView Control
+description: Learn about how to set icons for the Windows Forms TreeView control, which can display icons next to each node.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

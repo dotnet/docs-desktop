@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "toolbars [Windows Forms], about toolbars"
   - "ToolBar control [Windows Forms], about ToolBar controls"
 ms.assetid: d426b203-0216-4dbe-b834-1641e50a9c29
+description: Learn how the Windows Forms ToolBar control is used on forms as a control bar that displays a row of menus and buttons that activate commands.
 ---
 # ToolBar Control Overview (Windows Forms)
 > [!NOTE]

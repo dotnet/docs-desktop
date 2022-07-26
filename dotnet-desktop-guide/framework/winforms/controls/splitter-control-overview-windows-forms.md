@@ -6,6 +6,7 @@ f1_keywords:
 helpviewer_keywords: 
   - "Splitter control [Windows Forms], about Splitter control"
 ms.assetid: e2b6ab83-dfdd-40ec-9762-850702c82dcb
+description: Learn how the Windows Forms Splitter controls are used to resize docked controls at run time to present data.
 ---
 # Splitter Control Overview (Windows Forms)
 > [!IMPORTANT]

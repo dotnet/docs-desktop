@@ -1,5 +1,6 @@
 ---
 title: "How to: Play a System Sound from a Windows Form"
+description: Learn about how to play a system sound from a Windows Form by means of Visual Basic and C# code examples.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

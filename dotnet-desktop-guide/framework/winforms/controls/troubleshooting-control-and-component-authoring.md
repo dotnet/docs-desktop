@@ -11,6 +11,7 @@ helpviewer_keywords:
   - "components [Windows Forms], troubleshooting"
   - "Windows Forms controls, debugging"
 ms.assetid: e9c8c099-2271-4737-882f-50f336c7a55e
+description: Learn about common problems that arise when developing components and controls, with potential solutions for those problems.
 ---
 # Troubleshoot Control and Component Authoring
 

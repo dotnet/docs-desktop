@@ -6,6 +6,7 @@ f1_keywords:
 helpviewer_keywords:
   - "TreeView control [Windows Forms], about TreeView control"
 ms.assetid: 0ece823a-9508-478a-bbdb-7d7c3bae51d5
+description: Learn how to use the Windows Forms TreeView control to display a hierarchy of nodes, including those with check boxes.
 ---
 # TreeView Control Overview (Windows Forms)
 

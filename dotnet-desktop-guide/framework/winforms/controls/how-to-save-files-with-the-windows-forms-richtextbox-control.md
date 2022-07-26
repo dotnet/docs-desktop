@@ -1,5 +1,6 @@
 ---
 title: Save Files with RichTextBox Control
+description: Learn about how to save files with the Windows Forms RichTextBox control, which can write the information it displays in one of several formats.
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

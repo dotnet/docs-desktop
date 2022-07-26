@@ -1,5 +1,6 @@
 ---
 title: "What's New in WPF Version 4.5"
+description: Learn about the many new and enhanced features in Windows Presentation Foundation (WPF) version 4.5.
 titleSuffix: ""
 ms.date: "03/30/2017"
 helpviewer_keywords: 

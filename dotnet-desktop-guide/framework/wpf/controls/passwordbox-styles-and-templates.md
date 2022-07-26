@@ -1,5 +1,6 @@
 ---
 title: "PasswordBox Styles and Templates"
+description: Learn about the styles and templates for the PasswordBox control in Windows Presentation Foundation (WPF) applications.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "styles [WPF], PasswordBox"

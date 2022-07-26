@@ -5,6 +5,7 @@ helpviewer_keywords:
   - "splitter windows"
   - "SplitContainer control [Windows Forms]"
 ms.assetid: 2e36f17f-5c39-4fb4-bb09-7ce3ef823402
+description: Learn how the SplitContainer control in Windows Forms lets users create complex interfaces and arrangements.
 ---
 # SplitContainer Control (Windows Forms)
 The Windows Forms `SplitContainer` control can be thought of as a composite; it is two panels separated by a movable bar. When the mouse pointer is over the bar, the pointer changes shape to show that the bar is movable.  
