@@ -1,5 +1,6 @@
 ---
 title: "How to: Implement the IListSource Interface"
+description: Learn how to implement the IListSource Interface so that it is able to provide a list from another location.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
