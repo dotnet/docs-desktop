@@ -1,5 +1,6 @@
 ---
 title: "How to: Handle the ContextMenuStrip Opening Event"
+description: Learn how to handle the ContextMenuStrip Opening event, which adds items dynamically to a ContextMenuStrip control.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

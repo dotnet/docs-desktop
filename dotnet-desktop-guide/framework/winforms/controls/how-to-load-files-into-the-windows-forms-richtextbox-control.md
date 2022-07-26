@@ -1,5 +1,6 @@
 ---
 title: Load Files into RichTextBox Control
+description: Learn how to load files into RichTextBox control to display a plain-text, Unicode plain-text, or rich-text-format (RTF) file.
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"
