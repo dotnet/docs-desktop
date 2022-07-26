@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "Save File dialog box [Windows Forms], displaying"
   - "SaveFileDialog component [Windows Forms], about SaveFileDialog"
 ms.assetid: be7a625f-46fd-4d06-9985-b613dcbf9bd2
+description: Learn how the Windows Forms SaveFileDialog component is a pre-configured dialog box that inherits from the CommonDialog class.
 ---
 # SaveFileDialog Component Overview (Windows Forms)
 

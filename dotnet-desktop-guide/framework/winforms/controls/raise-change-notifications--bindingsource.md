@@ -13,6 +13,7 @@ helpviewer_keywords:
   - "INotifyPropertyChanged interface [Windows Forms], using with BindingSource"
   - "BindingSource component [Windows Forms], examples"
 ms.assetid: 7fa2cf51-c09f-4375-adf0-e36c5617f099
+description: Learn how to raise change notifications using a BindingSource and the INotifyPropertyChanged Interface.
 ---
 # How to: Raise Change Notifications Using a BindingSource and the INotifyPropertyChanged Interface
 

@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "data grids [Windows Forms], sorting data"
   - "DataGridView control [Windows Forms], sorting data"
 ms.assetid: c1d4f24c-d961-4181-809d-5a5caa6122e4
+description: Learn about sorting data in the Windows Forms DataGridView control and modifying the SortMode property of specific columns.
 ---
 # Sorting data in the Windows Forms DataGridView control
 

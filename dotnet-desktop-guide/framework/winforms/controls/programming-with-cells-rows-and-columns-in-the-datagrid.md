@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "DataGridView control [Windows Forms], programming with grid elements"
   - "rows [Windows Forms], data grids"
 ms.assetid: 0d76f7e4-4149-42c6-9118-bb37d6669dc5
+description: Learn how to program various tasks with cells, rows, and columns in the Windows Forms DataGridView control.
 ---
 # Programming with Cells, Rows, and Columns in the Windows Forms DataGridView Control
 This section provides topics that demonstrate various programming tasks involving cell, row, and column objects.  

@@ -12,6 +12,7 @@ helpviewer_keywords:
   - "data sources [Windows Forms], updating"
   - "BindingSource component [Windows Forms], examples"
 ms.assetid: bd8bd9b2-af8a-4f11-a3d5-54eecbe2400b
+description: Learn how to reflect data source updates in a Windows Forms control with the BindingSource component.
 ---
 # How to: Reflect Data Source Updates in a Windows Forms Control with the BindingSource
 When you use data-bound controls, you sometimes have to respond to changes in the data source when the data source does not raise list-changed events. When you use the <xref:System.Windows.Forms.BindingSource> component to bind your data source to a Windows Forms control, you can notify the control that your data source has changed by calling the <xref:System.Windows.Forms.BindingSource.ResetBindings%2A> method.  

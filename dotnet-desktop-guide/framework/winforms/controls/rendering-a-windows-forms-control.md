@@ -11,6 +11,7 @@ helpviewer_keywords:
   - "custom controls [Windows Forms], graphics resources"
   - "custom controls [Windows Forms], invalidation and painting"
 ms.assetid: aae8e1e6-4786-432b-a15e-f4c44760d302
+description: Learn how rendering a Windows Forms control refers to the process of creating a visual representation on a user's screen.
 ---
 # Rendering a Windows Forms Control
 
