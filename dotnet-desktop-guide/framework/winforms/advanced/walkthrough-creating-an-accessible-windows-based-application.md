@@ -1,5 +1,6 @@
 ---
 title: "Walkthrough: Creating an Accessible Windows-based Application"
+description: Learn how to create an accessible Windows-based application with Windows Forms using the five accessibility requirements for the Certified for Windows logo.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "accessibility [Windows Forms], Windows applications"

@@ -1,5 +1,6 @@
 ---
 title: "Using a Brush to Fill Shapes"
+description: Learn how to use brushes to fill closed shape interiors in GDI+ with a selection of topics and tutorials.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "examples [Windows Forms], brushes"

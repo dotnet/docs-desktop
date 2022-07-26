@@ -1,5 +1,6 @@
 ---
 title: Accessibility
+description: Learn about accessibility functionality in Windows Forms-based applications with a selection of topics and tutorials.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Windows Forms controls, accessibility"

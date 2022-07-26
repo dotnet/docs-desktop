@@ -1,5 +1,6 @@
 ---
 title: "Using Managed Graphics Classes"
+description: Learn how to use the GDI+ API in the managed class framework for Windows Forms using a selection of topics and tutorials.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "GDI+, managed classes"

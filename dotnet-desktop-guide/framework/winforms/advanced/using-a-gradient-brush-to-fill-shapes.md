@@ -1,5 +1,6 @@
 ---
 title: "Using a Gradient Brush to Fill Shapes"
+description: Learn how to use gradient brushes to fill shapes with gradually changing colors in GDI+ with a selection of topics and tutorials.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "brushes [Windows Forms], gradient brushes"
