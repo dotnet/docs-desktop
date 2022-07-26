@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "hybrid applications [WPF interoperability]"
   - "visual styles [Windows Forms]"
 ms.assetid: 95de9b9c-d804-405c-b2d1-49a88c1e0fe1
+description: Learn how to enable visual styles on a Windows Forms control hosted in a WPF-based application with the EnableVisualStyles method.
 ---
 # How to: Enable Visual Styles in a Hybrid Application
 

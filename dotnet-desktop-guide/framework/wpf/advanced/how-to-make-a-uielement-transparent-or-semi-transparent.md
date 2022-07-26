@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "transparency of UIElements [WPF]"
   - "UIElements [WPF], opacity"
 ms.assetid: a49fc8d6-7b32-4f28-9122-39b632a19b4b
+description: Learn how to make a UIElement transparent or semi-transparent. To make an element transparent or semi-transparent, you set its Opacity property.
 ---
 # How to: Make a UIElement Transparent or Semi-Transparent
 This example shows how to make a <xref:System.Windows.UIElement> transparent or semi-transparent. To make an element transparent or semi-transparent, you set its <xref:System.Windows.UIElement.Opacity%2A> property. A value of `0.0` makes the element completely transparent, while a value of `1.0` makes the element completely opaque. A value of `0.5` makes the element 50% opaque, and so on. An element's <xref:System.Windows.UIElement.Opacity%2A> is set to `1.0` by default.  

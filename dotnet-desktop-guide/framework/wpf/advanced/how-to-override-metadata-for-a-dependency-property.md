@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "dependency properties [WPF], overriding metadata for"
   - "overriding metadata for dependency properties [WPF]"
 ms.assetid: f90f026e-60d8-428a-933d-edf0dba4441f
+description: Learn how to override default dependency property metadata from an inherited class by calling the OverrideMetadata method and providing type-specific metadata.
 ---
 # How to: Override Metadata for a Dependency Property
 This example shows how to override default dependency property metadata that comes from an inherited class, by calling the <xref:System.Windows.DependencyProperty.OverrideMetadata%2A> method and providing type-specific metadata.  

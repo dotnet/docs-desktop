@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "routed events [WPF], handling"
   - "bubbling events [WPF]"
 ms.assetid: 157787b4-f469-4047-8777-5b034145f32e
+description: Learn how bubbling events work and how to write a handler that can process the routed event data, with supporting information and examples. 
 ---
 # How to: Handle a Routed Event
 This example shows how bubbling events work and how to write a handler that can process the routed event data.  

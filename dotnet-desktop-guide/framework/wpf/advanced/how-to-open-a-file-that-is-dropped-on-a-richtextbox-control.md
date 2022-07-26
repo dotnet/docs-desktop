@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "RichTextBox [WPF], drag-and-drop"
   - "drag-and-drop [WPF], open a dropped file"
 ms.assetid: 6bb8bb54-f576-41db-a9a7-24102ddeb490
+description: Learn how to improve handling for drag-and-drop events in TextBox controls by using the AddHandler method to add event handlers for the drag-and-drop events.
 ---
 # How to: Open a File That is Dropped on a RichTextBox Control
 

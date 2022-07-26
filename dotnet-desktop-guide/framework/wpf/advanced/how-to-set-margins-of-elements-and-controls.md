@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "properties [WPF], Margin property"
   - "Margin property [WPF], setting"
 ms.assetid: 70ebee01-6f87-4352-8dd4-402c65eaaed6
+description: Learn how to set the Margin property by changing any existing property value for the margin in code-behind.
 ---
 # How to: Set Margins of Elements and Controls
 This example describes how to set the <xref:System.Windows.FrameworkElement.Margin%2A> property, by changing any existing property value for the margin in code-behind. The <xref:System.Windows.FrameworkElement.Margin%2A> property is a property of the <xref:System.Windows.FrameworkElement> base element, and is thus inherited by a variety of controls and other elements.  

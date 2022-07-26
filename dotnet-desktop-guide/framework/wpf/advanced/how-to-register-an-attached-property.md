@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "attached properties [WPF], registering"
   - "registering attached properties [WPF]"
 ms.assetid: eb47bd94-0451-4f8d-8fb6-95f7812ac05b
+description: Learn how to register an attached property and provide public accessors so that the property in both WPF types are also implemented as dependency properties. 
 ---
 # How to: Register an Attached Property
 This example shows how to register an attached property and provide public accessors so that you can use the property in both WPF types are also implemented as dependency properties. You can use dependency properties on any <xref:System.Windows.DependencyObject> types.  
