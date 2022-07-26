@@ -1,6 +1,6 @@
 ---
 title: "How to: Implement an Adorner"
-description: Learn about how to implement and adorner, by means of the included code examples in C# and Visual Basic.
+description: Learn about how to implement an adorner, by means of the included code examples in C# and Visual Basic.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
