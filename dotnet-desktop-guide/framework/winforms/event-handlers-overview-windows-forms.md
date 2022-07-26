@@ -1,6 +1,6 @@
 ---
 title: "Event Handlers Overview"
-description: Learn about and get an overview of event handlers that execute code within the event handlers when an event is raised. 
+description: Learn about the standard Windows Forms event handler format, including which parameters are passed to the handlers.
 ms.date: "03/30/2017"
 ms.topic: overview
 dev_langs: 
