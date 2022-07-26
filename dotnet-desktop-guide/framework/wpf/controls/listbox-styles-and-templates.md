@@ -1,5 +1,6 @@
 ---
 title: "ListBox Styles and Templates"
+description: Learn about the the styles and templates of the ListBox control in Windows Presentation Foundation (WPF).
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "styles [WPF], ListBox"
