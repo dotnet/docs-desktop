@@ -5,6 +5,7 @@ helpviewer_keywords:
   - "StatusStrip control [Windows Forms]"
   - "status bars"
 ms.assetid: eb1e59da-0a48-4ce5-af7d-13b8e75af4b1
+description: Learn how the Windows Forms StatusStrip control is used on forms as an area in which an application can display various types of status information.
 ---
 # StatusStrip Control
 

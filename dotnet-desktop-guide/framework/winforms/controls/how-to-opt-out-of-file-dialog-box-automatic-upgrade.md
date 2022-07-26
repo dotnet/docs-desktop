@@ -1,5 +1,6 @@
 ---
 title: "How To: Opt Out of File Dialog Box Automatic Upgrade"
+description: Learn how to revert the default file dialog box appearance to a Windows XP appearance.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "OpenFileDialog [Windows Forms], opt out of automatic upgrade"

@@ -13,6 +13,7 @@ helpviewer_keywords:
   - "threading [Windows Forms], background operations"
   - "background operations"
 ms.assetid: 1b9a4e0a-f134-48ff-a1be-c461446a31ba
+description: Learn how to use the BackgroundWorker class to run an operation on a separate thread to avoid delays in a user interface.
 ---
 # Walkthrough: Running an Operation in the Background
 

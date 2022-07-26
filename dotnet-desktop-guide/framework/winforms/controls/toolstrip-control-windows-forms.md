@@ -5,6 +5,7 @@ helpviewer_keywords:
   - "toolbars [Windows Forms]"
   - "ToolStrip control [Windows Forms]"
 ms.assetid: e5ef455a-e049-429c-8005-30c93132fb79
+description: Learn how ToolStrip controls in Windows Forms are toolbars that can host menus, controls, and user controls.
 ---
 # ToolStrip Control (Windows Forms)
 <xref:System.Windows.Forms.ToolStrip> controls are toolbars that can host menus, controls, and user controls in your Windows Forms applications.  

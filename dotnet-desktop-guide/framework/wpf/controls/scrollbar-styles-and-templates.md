@@ -1,5 +1,6 @@
 ---
 title: "ScrollBar Styles and Templates"
+description: Learn about the the styles and templates for the ScrollBar control allowing you to modify the default ControlTemplate to give the control a unique appearance.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "styles [WPF], ScrollBar"

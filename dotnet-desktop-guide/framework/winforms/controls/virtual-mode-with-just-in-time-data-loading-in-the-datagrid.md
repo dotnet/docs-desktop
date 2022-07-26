@@ -12,6 +12,7 @@ helpviewer_keywords:
   - "DataGridView control [Windows Forms], large data sets"
   - "virtual mode [Windows Forms], just-in-time data loading"
 ms.assetid: 33825f92-7a22-40ee-86d9-9a2ed1ead7b7
+description: Learn how to implement virtual mode with just-in-time data loading in the Windows Forms DataGridView control.
 ---
 # How to: Implement Virtual Mode with Just-In-Time Data Loading in the Windows Forms DataGridView Control
 

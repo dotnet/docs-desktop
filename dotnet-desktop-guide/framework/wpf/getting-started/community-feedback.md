@@ -1,5 +1,6 @@
 ---
 title: Community resources
+description: Review the community resources available to learn about, discuss, and provide feedback on Windows Presentation Foundation (WPF).
 ms.date: "03/01/2018"
 helpviewer_keywords: 
   - "community resources [WPF]"

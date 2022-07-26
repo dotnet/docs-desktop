@@ -1,5 +1,6 @@
 ---
 title: "Documents Overview"
+description: Learn about the document types that Windows Presentation Foundation (WPF) supports and the integrated services available for document display, packaging, and security.
 ms.date: "03/30/2017"
 ms.custom: devdivchpfy22
 ms.topic: overview

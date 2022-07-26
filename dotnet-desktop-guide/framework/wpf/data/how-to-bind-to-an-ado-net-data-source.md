@@ -1,5 +1,6 @@
 ---
 title: "How to: Bind to an ADO.NET Data Source"
+description: Learn how to bind a Windows Presentation Foundation (WPF) control to an ADO.NET Data Source with several provided code examples.
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

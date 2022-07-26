@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "tooltips [Windows Forms], about tooltips"
   - "ToolTip component [Windows Forms], about ToolTip component"
 ms.assetid: 3fbc6f08-c882-4acd-a960-a08efe3c7e6e
+description: Learn how the Windows Forms ToolTip component displays text when the user points at controls to give a brief overview or explanation.
 ---
 # ToolTip Component Overview (Windows Forms)
 The Windows Forms <xref:System.Windows.Forms.ToolTip> component displays text when the user points at controls. A ToolTip can be associated with any control. An example use of this component: to save space on a form, you can display a small icon on a button and use a ToolTip to explain the button's function.  

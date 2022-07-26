@@ -10,6 +10,7 @@ helpviewer_keywords:
   - "user controls [C#]"
   - "custom controls [Windows Forms], creating"
 ms.assetid: f88481a8-c746-4a36-9479-374ce5f2e91f
+description: Learn how to author a composite control with C# in order to provide a means by which custom graphical interfaces can be created and reused.
 ---
 # Walkthrough: Author a Composite Control with C\#
 

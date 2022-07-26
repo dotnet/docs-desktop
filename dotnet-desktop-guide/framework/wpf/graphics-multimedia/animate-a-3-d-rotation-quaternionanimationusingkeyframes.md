@@ -1,5 +1,6 @@
 ---
 title: "How to: Animate a 3D Rotation Using Key Frames (QuaternionAnimationUsingKeyFrames)"
+description: Learn about how to use QuaternionAnimationUsingKeyFrames to animate a 3D rotation utilizing key frames.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "3D translations [WPF], animating [WPF], with key frames (QuaternionAnimationUsingKeyFrames)"

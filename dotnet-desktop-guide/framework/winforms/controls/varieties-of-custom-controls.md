@@ -12,6 +12,7 @@ helpviewer_keywords:
   - "custom controls [Windows Forms]"
   - "controls [Windows Forms], composite"
 ms.assetid: 3cea09e5-4344-4ccb-9858-b66ccac210ff
+description: Learn how to develop and implement a variety of controls as well as extend the functionality of existing controls.
 ---
 # Varieties of Custom Controls
 

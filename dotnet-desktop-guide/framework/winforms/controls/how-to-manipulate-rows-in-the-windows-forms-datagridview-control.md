@@ -1,5 +1,6 @@
 ---
 title: Manipulate Rows in DataGridView Control
+description: Learn about how to manipulate rows in the Windows Forms DataGridView control by means of an included code example.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

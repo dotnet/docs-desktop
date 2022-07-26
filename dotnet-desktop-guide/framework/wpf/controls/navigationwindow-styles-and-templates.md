@@ -1,5 +1,6 @@
 ---
 title: "NavigationWindow Styles and Templates"
+description: Learn about styles and templates for the NavigationWindow control including tutorials and code examples.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "states [WPF], NavigationWindow"

@@ -164,7 +164,7 @@ A <xref:System.Windows.Controls.Primitives.Popup> control displays content in a 
   
  The following illustration demonstrates that when the bottom screen edge hides all or part of the <xref:System.Windows.Controls.Primitives.Popup>, the popup alignment point is the bottom-left corner of the <xref:System.Windows.Controls.Primitives.Popup>.  
   
- ![New alignment point due to bottom screen edge](./media/popup-placement-behavior/popup-placement-relative-point-screen-edge.png "Popup encounters bottom edge of the screen and changes the popup alignment point.")  
+ ![Screenshot showing the Target area with the Popup alignment point going past the Screen Edge in the bottom-left corner.](./media/popup-placement-behavior/popup-placement-relative-point-screen-edge.png "Popup encounters bottom edge of the screen and changes the popup alignment point.")  
 
  The following illustration demonstrates that when the <xref:System.Windows.Controls.Primitives.Popup> is hidden by the right screen edge, the popup alignment point is the top-right corner of the <xref:System.Windows.Controls.Primitives.Popup>.  
   
@@ -177,7 +177,7 @@ A <xref:System.Windows.Controls.Primitives.Popup> control displays content in a 
   
  The following illustration demonstrates that when <xref:System.Windows.Controls.Primitives.Popup.Placement%2A> is <xref:System.Windows.Controls.Primitives.PlacementMode.Bottom> and the <xref:System.Windows.Controls.Primitives.Popup> encounters the bottom screen edge, the target origin is the top-left corner of the target area and the popup alignment point is the bottom-left corner of the <xref:System.Windows.Controls.Primitives.Popup>.  
   
- ![New alignment point due to bottom screen edge](./media/popup-placement-behavior/popup-placement-bottom-screen-edge.png "Placement is Bottom and the popup encounters the bottom edge of the screen.")
+ ![Screenshot showing the Target area in the top half of the screen with the Popup alignment point on the bottom half of the screen with a Vertical Offset of 5.](./media/popup-placement-behavior/popup-placement-bottom-screen-edge.png "Placement is Bottom and the popup encounters the bottom edge of the screen.")
   
  The following illustration demonstrates that when <xref:System.Windows.Controls.Primitives.Popup.Placement%2A> is <xref:System.Windows.Controls.Primitives.PlacementMode.Left> and the <xref:System.Windows.Controls.Primitives.Popup> encounters the left screen edge, the target origin is the top-right corner of the target area and the popup alignment point is the top-left corner of the <xref:System.Windows.Controls.Primitives.Popup>.  
   

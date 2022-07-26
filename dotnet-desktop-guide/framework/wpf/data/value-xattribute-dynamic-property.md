@@ -1,5 +1,6 @@
 ---
 title: Value (XAttribute dynamic property)
+description: Learn about how the XAttribute.Value property retrieves or sets the value of the XML attribute.
 ms.date: 10/22/2019
 ms.topic: reference
 apiname:

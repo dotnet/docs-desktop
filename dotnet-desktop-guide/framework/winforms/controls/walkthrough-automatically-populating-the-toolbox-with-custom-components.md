@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "Toolbox [Windows Forms], populating"
   - "custom components [Windows Forms], adding to Toolbox"
 ms.assetid: 2fa1e3e8-6b9f-42b2-97c0-2be57444dba4
+description: Learn how a custom component automatically appears in the Toolbox once the component is built by a user.
 ---
 # Walkthrough: Automatically Populating the Toolbox with Custom Components
 

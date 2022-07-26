@@ -1,5 +1,6 @@
 ---
 title: Remove Items from DomainUpDown Controls
+description: Learn about how to remove items from the Windows Forms DomainUpDown controls by calling one of two methods of the DomainUpDownItemCollection class. 
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
