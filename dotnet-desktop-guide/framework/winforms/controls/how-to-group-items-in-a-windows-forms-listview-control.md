@@ -1,6 +1,6 @@
 ---
 title: Group Items in ListView Control
-description: Learn how to group items in LIstView Control, which makes it easier to navigate large lists by grouping items alphabetically, by date or other groupings. 
+description: Learn how to group items in the ListView Control, which makes it easier to navigate large lists by grouping items alphabetically, by date, or other groupings. 
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
