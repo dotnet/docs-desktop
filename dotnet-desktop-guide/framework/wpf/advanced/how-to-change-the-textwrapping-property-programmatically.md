@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "documents [WPF], changing TextWrapping property programmatically"
   - "TextWrapping property [WPF], changing programmatically"
 ms.assetid: 30d25554-4c82-4df9-a8d6-35683a4a13bb
+description: Learn from a specific code example how to change the value of the TextWrapping property programmatically.
 ---
 # How to: Change the TextWrapping Property Programmatically
 ## Example  

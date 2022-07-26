@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "CommandBindings [WPF]"
   - "commanding [WPF]"
 ms.assetid: d8016266-58d9-48f7-8298-a86b7ed49fbd
+description: Learn how to use commanding in Windows Presentation Foundation, associate a RoutedCommand to a Button, create a CommandBinding, and create the event handlers. 
 ---
 # How to: Enable a Command
 The following example demonstrates how to use commanding in Windows Presentation Foundation (WPF).  The example shows how to associate a <xref:System.Windows.Input.RoutedCommand> to a <xref:System.Windows.Controls.Button>, create a <xref:System.Windows.Input.CommandBinding>, and create the event handlers which implement the <xref:System.Windows.Input.RoutedCommand>.  For more information on commanding, see the [Commanding Overview](commanding-overview.md).  

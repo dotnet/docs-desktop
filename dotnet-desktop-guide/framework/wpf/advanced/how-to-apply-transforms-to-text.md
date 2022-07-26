@@ -15,6 +15,7 @@ helpviewer_keywords:
   - "scaled text [WPF]"
   - "typography [WPF], skewed text"
 ms.assetid: 0d61678a-4185-4f2a-85c6-c1d020f96fa0
+description: Learn how to apply transforms to text in order to affect the display of text in a TextBlock control.
 ---
 # How to: Apply Transforms to Text
 Transforms can alter the display of text in your application. The following examples use different types of rendering transforms to affect the display of text in a <xref:System.Windows.Controls.TextBlock> control.  

@@ -5,6 +5,7 @@ helpviewer_keywords:
   - "InkCanvas [WPF], binding data to"
   - "binding data [WPF], to InkCanvas"
 ms.assetid: 8d6b4d9e-ea7f-4412-ba83-3feccec5a515
+description: Learn how to data bind the Strokes property of an InkCanvas to another InkCanvas and how to bind a DefaultDrawingAttributesProperty to a data source.
 ---
 # How to: Data Bind to an InkCanvas
 ## Example  

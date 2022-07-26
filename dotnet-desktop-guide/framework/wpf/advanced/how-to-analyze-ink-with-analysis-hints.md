@@ -10,6 +10,7 @@ helpviewer_keywords:
   - "ink [WPF], AnalysisHintNode objects [WPF]"
   - "AnalysisHintNode objects [WPF]"
 ms.assetid: d4421ed4-77f5-4640-829e-9f1de50b2ff2
+description: Learn how a System.Windows.Ink.AnalysisHintNode provides a hint for the System.Windows.Ink.InkAnalyzer to which it is attached.
 ---
 # How to: Analyze Ink with Analysis Hints
 
