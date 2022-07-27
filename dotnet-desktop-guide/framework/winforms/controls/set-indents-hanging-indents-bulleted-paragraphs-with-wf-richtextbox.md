@@ -13,6 +13,7 @@ helpviewer_keywords:
   - "RichTextBox control [Windows Forms], setting indents and bullets"
   - "text boxes [Windows Forms], bullets"
 ms.assetid: abfb40e6-5642-4691-8ec1-9d9ae91688dc
+description: Learn how to set indents, hanging indents, and bulleted paragraphs with the Windows Forms RichTextBox control.
 ---
 # How to: Set Indents, Hanging Indents, and Bulleted Paragraphs with the Windows Forms RichTextBox Control
 The Windows Forms <xref:System.Windows.Forms.RichTextBox> control has numerous options for formatting the text it displays. You can format selected paragraphs as bulleted lists by setting the <xref:System.Windows.Forms.RichTextBox.SelectionBullet%2A> property. You can also use the <xref:System.Windows.Forms.RichTextBox.SelectionIndent%2A>, <xref:System.Windows.Forms.RichTextBox.SelectionRightIndent%2A>, and <xref:System.Windows.Forms.RichTextBox.SelectionHangingIndent%2A> properties to set the indentation of paragraphs relative to the left and right edges of the control, and the left edge of other lines of text.  

@@ -7,6 +7,7 @@ dev_langs:
 helpviewer_keywords: 
   - "RoutedCommand class [WPF], creating"
 ms.assetid: aaf6979f-69ab-406f-979f-5766daa85fa0
+description: Learn how to create and implement a RoutedCommand by attaching a ExecutedRoutedEventHandler and a CanExecuteRoutedEventHandler to a CommandBinding. 
 ---
 # How to: Create a RoutedCommand
 This example shows how to create a custom <xref:System.Windows.Input.RoutedCommand> and how to implement the custom command by creating a <xref:System.Windows.Input.ExecutedRoutedEventHandler> and a <xref:System.Windows.Input.CanExecuteRoutedEventHandler> and attaching them to a <xref:System.Windows.Input.CommandBinding>.  For more information on commanding, see the [Commanding Overview](commanding-overview.md).  

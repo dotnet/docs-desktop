@@ -1,5 +1,6 @@
 ---
 title: "Walkthrough: Demonstrating Visual Inheritance"
+description: Learn about visual inheritance by creating a base form and compiling it into a class library to create a new form that inherits from the base form.
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

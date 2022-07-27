@@ -1,5 +1,6 @@
 ---
 title: "How to: Load a Sound Asynchronously within a Windows Form"
+description: Learn how to load a sound asynchronously within a Form and also how to play the sound on a new thread.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

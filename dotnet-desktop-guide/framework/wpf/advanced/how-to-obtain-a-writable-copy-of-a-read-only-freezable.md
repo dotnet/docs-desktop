@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "cloning Freezable objects [WPF]"
   - "Freezable objects [WPF], modifiable clones"
 ms.assetid: d028de61-bbe9-4d62-b656-8fe3b1b2ca24
+description: Learn how to use the Clone method to create a writable copy of a read-only Freezable and create a modifiable clone of the frozen object.
 ---
 # How to: Obtain a Writable Copy of a Read-Only Freezable
 This example shows how to use the <xref:System.Windows.Freezable.Clone%2A> method to create a writable copy of a read-only <xref:System.Windows.Freezable>.  

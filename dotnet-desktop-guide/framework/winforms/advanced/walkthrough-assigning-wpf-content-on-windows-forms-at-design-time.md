@@ -1,5 +1,6 @@
 ---
 title: Select WPF controls for Windows Forms
+description: Learn how to assign Windows Presentation Foundation (WPF) controls on Windows Forms applications at design time.
 titleSuffix: ""
 ms.date: "03/30/2017"
 helpviewer_keywords:

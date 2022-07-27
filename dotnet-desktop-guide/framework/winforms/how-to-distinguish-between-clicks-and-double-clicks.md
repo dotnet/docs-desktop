@@ -1,5 +1,6 @@
 ---
 title: "How to: Distinguish Between Clicks and Double-Clicks"
+descriptions: Learn how to distinguish between clicks and double-clicks so that you can program double-clicks to extend the action of clicks.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

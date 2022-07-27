@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "controls [Windows Forms], properties"
   - "properties [Windows Forms]"
 ms.assetid: 2785279b-fb57-4937-8f6b-2050e475db6f
+description: Learn how the Windows Forms control inherits many properties from the base class System.Windows.Forms.Control.
 ---
 # Properties in Windows Forms Controls
 

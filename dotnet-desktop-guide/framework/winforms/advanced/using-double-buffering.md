@@ -1,5 +1,6 @@
 ---
 title: "Using Double Buffering"
+description: Learn how to use double-buffered graphics to reduce flicker in Windows Forms applications using a selection of topics and tutorials.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "graphics [Windows Forms], double buffering"

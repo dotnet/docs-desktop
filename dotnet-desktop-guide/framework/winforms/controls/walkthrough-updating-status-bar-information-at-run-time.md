@@ -1,5 +1,6 @@
 ---
 title: "Walkthrough: Updating Status Bar Information at Run Time"
+description: Learn how to walk through the process of updating status bar information at run time based on application state or another user interaction.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

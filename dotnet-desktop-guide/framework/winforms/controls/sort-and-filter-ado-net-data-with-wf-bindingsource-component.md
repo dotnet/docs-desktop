@@ -13,6 +13,7 @@ helpviewer_keywords:
   - "data [Windows Forms], sorting"
   - "ADO.NET [Windows Forms]"
 ms.assetid: 6c206daf-d706-4602-9dbe-435343052063
+description: Learn to use the sort and filter properties for ADO.NET data with the Windows Forms BindingSource component.
 ---
 # How to: Sort and Filter ADO.NET Data with the Windows Forms BindingSource Component
 

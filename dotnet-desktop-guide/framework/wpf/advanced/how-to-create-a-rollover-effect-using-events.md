@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "rollover effect [WPF]"
   - "element colors [WPF], changing"
 ms.assetid: 3b20d028-6f1c-4b25-95d2-fa68cefbdb4c
+description: Learn how to change the color of an element as the mouse pointer enters and leaves the area occupied by the element.
 ---
 # How to: Create a Rollover Effect Using Events
 This example shows how to change the color of an element as the mouse pointer enters and leaves the area occupied by the element.  

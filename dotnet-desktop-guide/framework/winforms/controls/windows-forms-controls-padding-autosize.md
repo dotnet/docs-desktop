@@ -1,5 +1,6 @@
 ---
 title: Lay Out Controls with Padding, Margins, and the AutoSize Property
+description: Learn how to lay out controls with precise placement by using padding, margins and the AutoSize property. 
 ms.date: "03/30/2017"
 f1_keywords:
   - "Margin.Bottom"

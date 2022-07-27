@@ -11,6 +11,7 @@ helpviewer_keywords:
   - "collections [Windows Forms], serializing"
   - "collections [Windows Forms], standard types"
 ms.assetid: 020c9df4-fdc5-4dae-815a-963ecae5668c
+description: Learn how to use the DesignerSerializationVisibilityAttribute class to control how a collection is serialized at design time.
 ---
 # Walkthrough: Serialize collections of standard types
 

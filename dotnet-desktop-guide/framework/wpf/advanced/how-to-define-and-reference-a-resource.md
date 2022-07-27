@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "resources [WPF], referencing"
   - "referencing resources [WPF]"
 ms.assetid: b86b876b-0a10-489b-9a5d-581ea9b32406
+description: Learn how to define a resource and reference it by using an attribute in Extensible Application Markup Language (XAML).
 ---
 
 # How to: Define and Reference a Resource

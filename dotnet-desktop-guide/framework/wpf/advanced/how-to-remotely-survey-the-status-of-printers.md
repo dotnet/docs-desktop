@@ -11,6 +11,7 @@ helpviewer_keywords:
   - "remotely surveying printer status [WPF]"
   - "status [WPF], printers [WPF], surveying remotely"
 ms.assetid: d6324759-8292-4c23-9584-9c708887dc94
+description: Learn how the printer properties exposed in the APIs of Microsoft .NET Framework provide a means for performing a rapid survey of the states of printers. 
 ---
 # How to: Remotely Survey the Status of Printers
 At any given time at medium and large companies there may be multiple printers that are not working due to a paper jam or being out of paper or some other problematic situation. The rich set of printer properties exposed in the APIs of Microsoft .NET Framework provide a means for performing a rapid survey of the states of printers.  

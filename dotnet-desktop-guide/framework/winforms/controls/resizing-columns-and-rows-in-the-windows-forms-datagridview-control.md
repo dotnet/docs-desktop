@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "columns [Windows Forms], resizing in grids"
   - "data grids [Windows Forms], resizing columns and rows"
 ms.assetid: 7532764d-e5c1-4943-a08b-6377a722d3b6
+description: Learn how the Windows Forms DataGridView control provides options for customizing the sizing behavior of its columns and rows.
 ---
 # Resizing Columns and Rows in the Windows Forms DataGridView Control
 The `DataGridView` control provides numerous options for customizing the sizing behavior of its columns and rows. Typically, `DataGridView` cells do not resize based on their contents. Instead, they clip any display value that is larger than the cell. If the content can be displayed as a string, the cell displays it in a ToolTip.  

@@ -1,5 +1,6 @@
 ---
 title: "Vector Graphics Overview"
+description: Learn about vector graphics in GDI+ for Windows Forms applications and the methods for drawing vector graphics.
 ms.date: "03/30/2017"
 ms.topic: overview
 dev_langs: 
@@ -15,15 +16,15 @@ ms.assetid: 0195df81-66be-452d-bb53-5a582ebfdc09
 GDI+ draws lines, rectangles, and other shapes on a coordinate system. You can choose from a variety of coordinate systems, but the default coordinate system has the origin in the upper-left corner with the x-axis pointing to the right and the y-axis pointing down. The unit of measure in the default coordinate system is the pixel.  
   
 ## The Building Blocks of GDI+  
- ![Vector graphic](./media/aboutgdip02-art01.gif "AboutGdip02_Art01")  
+ ![Screenshot of the GDI Plus default coordinate system.](./media/aboutgdip02-art01.gif "AboutGdip02_Art01")  
   
  A computer monitor creates its display on a rectangular array of dots called picture elements or pixels. The number of pixels that appear on the screen varies from one monitor to the next, and the number of pixels that appear on an individual monitor can usually be configured to some extent by the user.  
   
- ![Vector graphic](./media/aboutgdip02-art02.gif "AboutGdip02_Art02")  
+ ![Screenshot of a rectangular array showing three pixels at coordinates 0,0, 4,2, and 12,8.](./media/aboutgdip02-art02.gif "AboutGdip02_Art02")  
   
  When you use GDI+ to draw a line, rectangle, or curve, you provide certain key information about the item to be drawn. For example, you can specify a line by providing two points, and you can specify a rectangle by providing a point, a height, and a width. GDI+ works in conjunction with the display driver software to determine which pixels must be turned on to show the line, rectangle, or curve. The following illustration shows the pixels that are turned on to display a line from the point (4, 2) to the point (12, 8).  
   
- ![Vector graphic](./media/aboutgdip02-art03.gif "AboutGdip02_Art03")  
+ ![Screenshot of a rectangular array showing a line being drawn from a pixel at coordinate 4,2 to a pixel at coordinate 12,8.](./media/aboutgdip02-art03.gif "AboutGdip02_Art03")  
   
  Over time, certain basic building blocks have proven to be the most useful for creating two-dimensional pictures. These building blocks, which are all supported by GDI+, are given in the following list:  
   

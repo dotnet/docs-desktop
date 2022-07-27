@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "Win32 code [WPF], WPF interoperation"
   - "interoperability [WPF], Win32"
 ms.assetid: 3cc8644a-34f3-4082-9ddc-77623e4df2d8
+description: Learn how to reuse Win32 content inside WPF applications by using HwndHost, which is a control that makes HWNDs look like WPF content.
 ---
 
 # Hosting Win32 Content in WPF

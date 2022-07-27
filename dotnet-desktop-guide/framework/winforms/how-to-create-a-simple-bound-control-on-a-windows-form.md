@@ -1,5 +1,6 @@
 ---
 title: "How to: Create a Simple-Bound Control on a Windows Form"
+description: Learn how to create a simple-bound control on a Windows Form, which allows you to display a single data element from a dataset table.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "data binding [Windows Forms], simple data binding"
