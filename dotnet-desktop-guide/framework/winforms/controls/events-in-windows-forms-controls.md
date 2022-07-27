@@ -1,5 +1,6 @@
 ---
 title: Events in Controls
+description: Learn more about events in Windows Forms controls, including the events that a Windows Form control inherits.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "events [Windows Forms], custom controls (using code)"

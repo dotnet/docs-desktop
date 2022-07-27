@@ -1,5 +1,6 @@
 ---
 title: "FolderBrowserDialog Component"
+description: Learn about the FolderBrowserDialog component in Windows Forms, which displays an interface with which users can browse and select a folder or create a new one.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "folders [Windows Forms], browsing"

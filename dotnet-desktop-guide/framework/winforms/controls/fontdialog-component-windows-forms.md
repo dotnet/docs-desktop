@@ -1,5 +1,6 @@
 ---
 title: "FontDialog Component"
+description: Learn more about the FontDialog component in Windows Forms, which is a pre-configured dialog box.   
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "fonts [Windows Forms], dialog box"
