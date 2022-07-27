@@ -12,6 +12,7 @@ helpviewer_keywords:
   - "drag-and-drop ink"
   - "dropping ink [WPF]"
 ms.assetid: 932dc410-2bf3-4486-ab31-13487ba59f60
+description: Learn how to create an application that enables users to drag selected strokes from one InkCanvas to the other.
 ---
 # How to: Drag and Drop Ink
 ## Example  

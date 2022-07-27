@@ -1,5 +1,6 @@
 ---
 title: "How to: Navigate Data"
+description: Learn how to navigate a data source in a Windows application by binding the data source to a component and then binding controls to the binding source. 
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

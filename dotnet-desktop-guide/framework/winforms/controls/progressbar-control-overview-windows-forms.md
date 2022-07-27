@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "ProgressBar control [Windows Forms], about ProgressBar control"
   - "progress controls [Windows Forms], about progress controls"
 ms.assetid: a05d9cba-3a6a-4f8f-94b8-8ec12799fb80
+description: Learn how the ProgressBar control indicates the progress of a process by displaying an appropriate number of rectangles arranged in a horizontal bar.
 ---
 # ProgressBar Control Overview (Windows Forms)
 > [!IMPORTANT]

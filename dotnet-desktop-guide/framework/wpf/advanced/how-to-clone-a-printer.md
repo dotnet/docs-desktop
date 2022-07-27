@@ -11,6 +11,7 @@ helpviewer_keywords:
   - "print queues [WPF], cloning"
   - "cloning print queues [WPF]"
 ms.assetid: dd6997c9-fe04-40f8-88a6-92e3ac0889eb
+description: Learn how to instantly install any number of additional print queues that are cloned from an existing print queue.
 ---
 # How to: Clone a Printer
 Most businesses will, at some point, buy multiple printers of the same model. Typically, these are all installed with virtually identical configuration settings. Installing each printer can be time-consuming and error prone. The <xref:System.Printing.IndexedProperties?displayProperty=nameWithType> namespace and the <xref:System.Printing.PrintServer.InstallPrintQueue%2A> class that are exposed with Microsoft .NET Framework makes it possible to instantly install any number of additional print queues that are cloned from an existing print queue.  

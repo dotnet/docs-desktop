@@ -1,5 +1,6 @@
 ---
 title: "How to: Modify Keyboard Input to a Standard Control"
+description: Learn how to modify keyboard input to a standard Windows Forms control so that you can consume and modify keyboard input.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

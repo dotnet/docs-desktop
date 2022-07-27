@@ -10,6 +10,7 @@ dev_langs:
   - "vb"
   - "cpp"
 ms.assetid: 887dee6f-5059-4d57-957d-7c6fcd4acb10
+description: Learn about accessibility aids such as specialized programs and devices that help people with disabilities use computers more effectively.
 ---
 # Providing Accessibility Information for Controls on a Windows Form
 Accessibility aids are specialized programs and devices that help people with disabilities use computers more effectively. Examples include screen readers for people who are blind and voice input utilities for people who provide verbal commands instead of using the mouse or keyboard. These accessibility aids interact with the accessibility properties exposed by Windows Forms controls. These properties are:  

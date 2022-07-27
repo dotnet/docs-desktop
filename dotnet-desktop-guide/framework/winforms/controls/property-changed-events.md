@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "custom controls [Windows Forms], property changes (using code)"
   - "properties [Windows Forms], changes"
 ms.assetid: 268039ec-5aaa-4d76-b902-acccb036c850
+description: Learn how Property-changed events allow consumers of a control to attach event handlers that respond to the change.
 ---
 # Property-Changed Events
 

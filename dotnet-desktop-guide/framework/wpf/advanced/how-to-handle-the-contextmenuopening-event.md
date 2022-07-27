@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "ContextMenuOpening properties [WPF]"
 ms.assetid: 789652fb-1951-4217-934a-7843e355adf4
+description: Learn how the ContextMenuOpening event can adjust a context menu prior to display or suppress the menu that would be displayed by setting the Handled property.
 ---
 # How to: Handle the ContextMenuOpening Event
 The <xref:System.Windows.FrameworkElement.ContextMenuOpening> event can be handled in an application to either adjust an existing context menu prior to display or to suppress the menu that would otherwise be displayed by setting the <xref:System.Windows.RoutedEventArgs.Handled%2A> property to `true` in the event data. The typical reason for setting <xref:System.Windows.RoutedEventArgs.Handled%2A> to `true` in the event data is to replace the menu entirely with a new <xref:System.Windows.Controls.ContextMenu> object, which sometimes requires canceling the operation and starting a new open. If you write handlers for the <xref:System.Windows.FrameworkElement.ContextMenuOpening> event, you should be aware of timing issues between a <xref:System.Windows.Controls.ContextMenu> control and the service that is responsible for opening and positioning context menus for controls in general. This topic illustrates some of the code techniques for various context menu opening scenarios and illustrates a case where the timing issue comes into play.  

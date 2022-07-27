@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "documents [WPF], trimming text"
   - "trimming text [WPF]"
 ms.assetid: dd8c9191-d2be-45fd-9fb4-3c75b65578c5
+description: Learn from examples about the usage and effects of the values available in the TextTrimming enumeration.
 ---
 
 # How to: Enable Text Trimming

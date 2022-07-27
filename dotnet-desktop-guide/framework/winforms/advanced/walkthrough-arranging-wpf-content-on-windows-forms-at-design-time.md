@@ -1,5 +1,6 @@
 ---
 title: Arrange WPF content on Windows Forms at design time
+description: Learn how to arrange Windows Presentation Foundation (WPF) content on Windows Forms layout features at design time.
 titleSuffix: ""
 ms.date: "03/30/2017"
 helpviewer_keywords:

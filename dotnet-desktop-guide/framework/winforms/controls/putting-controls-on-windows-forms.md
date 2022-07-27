@@ -6,6 +6,7 @@ f1_keywords:
 helpviewer_keywords: 
   - "Windows Forms controls, adding to form"
 ms.assetid: 997508f2-87e5-4bec-a78e-9eec8f1fb15b
+description: Learn about the wide variety of controls that can be put on Windows Forms, depending on the needs of an application.
 ---
 # Putting Controls on Windows Forms
 There are a wide variety of controls that you can put on Windows Forms, depending on the needs of your application.  

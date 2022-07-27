@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "colors of elements [WPF], changing"
   - "elements [WPF], changing color of"
 ms.assetid: 7e246802-3625-47a7-ae9d-c8a2a40fd040
+description: Learn how to change the color of an element when it gains and loses focus by using the GotFocus and LostFocus events.
 ---
 # How to: Change the Color of an Element Using Focus Events
 This example shows how to change the color of an element when it gains and loses focus by using the <xref:System.Windows.UIElement.GotFocus> and <xref:System.Windows.UIElement.LostFocus> events.  

@@ -1,5 +1,6 @@
 ---
 title: Lock Controls
+description: Learn how to lock controls once they are positioned correctly, so that you do not inadvertently move or resize them when setting other properties.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "Windows Forms controls, locking"

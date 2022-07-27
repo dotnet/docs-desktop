@@ -10,6 +10,7 @@ helpviewer_keywords:
   - "RoutedCommand class [WPF], attaching to a Control"
   - "classes [WPF], RoutedCommand [WPF], attaching to a Control"
 ms.assetid: 8d8592ae-0c91-469e-a1cd-d179c4544548
+description: Learn how to hook up a RoutedCommand to a Control which has built in support for the command, with supporting examples and links.
 ---
 # How to: Hook Up a Command to a Control with Command Support
 The following example shows how to hook up a <xref:System.Windows.Input.RoutedCommand> to a <xref:System.Windows.Controls.Control> which has built in support for the command.  For a complete sample which hooks up commands to multiple sources, see the [Create a Custom RoutedCommand Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Input%20and%20Commands/CustomRoutedCommand) sample.  

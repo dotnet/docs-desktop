@@ -5,6 +5,7 @@ helpviewer_keywords:
   - "animation [WPF], FrameworkElement size"
   - "FrameworkElement [WPF], animating size of"
 ms.assetid: d4cd5a13-c20d-4a6f-a2ba-14f2c9ce4cef
+description: Learn how to animate the size of a FrameworkElement by either animating its Width and Height properties or using an animated ScaleTransform.
 ---
 # How to: Animate the Size of a FrameworkElement
 To animate the size of a <xref:System.Windows.FrameworkElement>, you can either animate its <xref:System.Windows.FrameworkElement.Width%2A> and <xref:System.Windows.FrameworkElement.Height%2A> properties or use an animated <xref:System.Windows.Media.ScaleTransform>.  

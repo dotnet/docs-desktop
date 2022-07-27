@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "invoking print dialogs [WPF]"
   - "print dialogs [WPF], invoking"
 ms.assetid: e3a2c84c-74fe-45a4-8501-5813f9dbfed2
+description: Learn how to provide the ability to print from an application by simply creating and opening a PrintDialog object.
 ---
 # How to: Invoke a Print Dialog
 To provide the ability to print from you application, you can simply create and open a <xref:System.Windows.Controls.PrintDialog> object.  

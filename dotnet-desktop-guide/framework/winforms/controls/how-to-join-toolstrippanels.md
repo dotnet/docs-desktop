@@ -1,5 +1,6 @@
 ---
 title: "How to: Join ToolStripPanels"
+description: Learn how to join ToolStripPanels at run time, which provides the flexibility of multiple-document interface (MDI) applications.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

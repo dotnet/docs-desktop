@@ -1,5 +1,6 @@
 ---
 title: Basics for developing controls
+description: Learn the basics of developing controls with the Windows Forms Control class so that you can apply them to various scenarios.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "custom controls [Windows Forms], derivation types"

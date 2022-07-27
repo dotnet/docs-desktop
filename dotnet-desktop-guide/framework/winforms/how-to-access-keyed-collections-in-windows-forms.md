@@ -1,5 +1,6 @@
 ---
 title: "How to: Access Keyed Collections"
+descriptions: Learn how to access keyed collections, a functionality that has been added to many collection classes that are typically used by Windows Forms applications.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "radio buttons [Windows Forms], determining state"
   - "radio buttons [Windows Forms], about radio buttons"
 ms.assetid: cd11f0c2-d098-4022-adf9-1455bc166a13
+description: Learn how the Windows Forms RadioButton controls present a set of two or more mutually exclusive choices to the user.
 ---
 # RadioButton Control Overview (Windows Forms)
 Windows Forms <xref:System.Windows.Forms.RadioButton> controls present a set of two or more mutually exclusive choices to the user. While radio buttons and check boxes may appear to function similarly, there is an important difference: when a user selects a radio button, the other radio buttons in the same group cannot be selected as well. In contrast, any number of check boxes can be selected. Defining a radio button group tells the user, "Here is a set of choices from which you can choose one and only one."  

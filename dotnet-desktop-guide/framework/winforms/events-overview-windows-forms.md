@@ -1,5 +1,6 @@
 ---
 title: "Events Overview"
+description: Learn about and get an overview of events, which are user, program or system generated actions that you can respond to or handle within your code.
 ms.date: "03/30/2017"
 ms.topic: overview
 helpviewer_keywords:
