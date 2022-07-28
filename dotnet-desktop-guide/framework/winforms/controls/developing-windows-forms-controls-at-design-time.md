@@ -1,5 +1,6 @@
 ---
 title: Develop Controls at Design Time
+description: Learn more about developing Windows Forms controls and design time. For control authors, the .NET Framework provides a wealth of control authoring technology.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "Windows Forms controls [Windows Forms]"

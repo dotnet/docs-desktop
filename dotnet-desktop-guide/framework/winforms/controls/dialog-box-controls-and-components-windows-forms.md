@@ -1,5 +1,6 @@
 ---
 title: "Dialog-Box Controls and Components"
+description: Learn about dialog-box controls and components in Windows Forms. The Windows Forms controls and components listed in this article present standard dialog boxes.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "CommonDialog control"
