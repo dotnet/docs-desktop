@@ -1,5 +1,6 @@
 ---
 title: "FileDialog Class"
+description: Learn more about the FileDialog class, which is the common base class for the OpenFileDialog and SaveFileDialog components.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "FileDialog class [Windows Forms]"

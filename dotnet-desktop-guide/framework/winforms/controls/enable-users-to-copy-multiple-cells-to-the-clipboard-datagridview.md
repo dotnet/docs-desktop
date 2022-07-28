@@ -1,5 +1,6 @@
 ---
 title: Enable Users to Copy Multiple Cells to the Clipboard from DataGridView Control
+description: Learn more about how to enable users to copy multiple cells to the clipboard from the Windows Forms DataGridView control.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
