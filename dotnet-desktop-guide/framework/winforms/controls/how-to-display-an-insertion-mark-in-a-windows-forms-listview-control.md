@@ -1,5 +1,6 @@
 ---
 title: Display an Insertion Mark in ListView Control
+description: Learn how to display an insertion mark in ListView Control to show users the point where dragged items are inserted.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

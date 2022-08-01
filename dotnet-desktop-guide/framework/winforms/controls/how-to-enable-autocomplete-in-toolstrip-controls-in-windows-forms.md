@@ -1,5 +1,6 @@
 ---
 title: "How to: Enable AutoComplete in ToolStrip Controls"
+description: Learn how to enable AutoComplete in ToolStrip Controls so that items are displayed when users type characters that match a list.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

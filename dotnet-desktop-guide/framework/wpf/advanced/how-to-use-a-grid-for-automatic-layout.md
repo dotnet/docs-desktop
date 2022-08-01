@@ -1,5 +1,6 @@
 ---
 title: "How to: Use a Grid for Automatic Layout"
+description: Learn how to use a grid for automatic layout when creating an application that is localization ready. 
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "grids [WPF], automatic layout"
