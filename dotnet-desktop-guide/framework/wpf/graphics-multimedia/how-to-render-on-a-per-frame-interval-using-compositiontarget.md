@@ -1,5 +1,6 @@
 ---
 title: "How to: Render on a Per Frame Interval Using CompositionTarget"
+description: Learn how to use the CompositionTarget object to create custom animations based on a per-frame callback.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

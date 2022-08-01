@@ -1,5 +1,6 @@
 ---
 title: "How to: Hit Test in a Viewport3D"
+description: Learn how to perform a hit test for 3D Visuals in the bounds of a Viewport3D element containing 2D and 3D information.
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

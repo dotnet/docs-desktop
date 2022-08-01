@@ -1,5 +1,6 @@
 ---
 title: "How to: Repeat an Animation"
+description: Learn how to use the RepeatBehavior property of a Timeline to control the repeat behavior of an animation.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "RepeatBehavior property of timelines [WPF]"

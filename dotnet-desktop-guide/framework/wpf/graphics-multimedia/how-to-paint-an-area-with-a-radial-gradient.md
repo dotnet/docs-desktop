@@ -1,5 +1,6 @@
 ---
 title: "How to: Paint an Area with a Radial Gradient"
+description: Learn how to paint an area with a radial gradient to transition the color using the RadialGradientBrush class.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
