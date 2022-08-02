@@ -1,5 +1,6 @@
 ---
 title: "DataGridView Control Architecture"
+description: Learn about the DataGridView control architecture, which is designed to be a flexible, extensible system for displaying and editing tabular data.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "DataGridView control [Windows Forms], architecture"

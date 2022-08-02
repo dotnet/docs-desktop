@@ -1,5 +1,6 @@
 ---
 title: "How to: Paint an Area with a Drawing"
+description: Learn about how to paint an area with a drawing using a DrawingBrush and one or more Drawing objects.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

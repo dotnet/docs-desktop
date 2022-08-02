@@ -1,5 +1,6 @@
 ---
 title: "How to: Set a Duration for an Animation"
+description: Learn how to set a Duration for an animation with a specific, finite time or the special values Automatic or Forever.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "animation [WPF], duration"

@@ -1,5 +1,6 @@
 ---
 title: "How to: Determine Which TreeView Node Was Clicked"
+description: Learn how to determine which TreeView Node has been clicked so that you can respond appropriately.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

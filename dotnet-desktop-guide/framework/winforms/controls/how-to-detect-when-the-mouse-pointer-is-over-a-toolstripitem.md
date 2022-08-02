@@ -1,5 +1,6 @@
 ---
 title: "How to: Detect When the Mouse Pointer Is Over a ToolStripItem"
+description: Learn how to detect mouse movement and when the mouse pointer is position over a ToolStripItem.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "toolbars [Windows Forms], detecting mouse movement"
