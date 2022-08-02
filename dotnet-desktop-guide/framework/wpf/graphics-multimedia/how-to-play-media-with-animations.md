@@ -1,5 +1,6 @@
 ---
 title: "How to: Play Media with Animations"
+description: Learn how to play media and animations at the same time by using the MediaTimeline and DoubleAnimationUsingKeyFrames classes in the same Storyboard.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "multimedia [WPF], playback with animations"

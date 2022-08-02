@@ -1,5 +1,6 @@
 ---
 title: "Control Type Recommendations"
+description: Learn about control type recommendations in Windows Forms. The .NET Framework gives you power to develop and implement new controls.
 ms.date: "03/30/2017"
 ms.topic: overview
 helpviewer_keywords:

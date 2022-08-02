@@ -1,5 +1,6 @@
 ---
 title: "How to: Disable Tab Pages"
+description: Learn how to disable tab pages so that you can restrict access to data that is available within your Forms application. 
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

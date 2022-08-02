@@ -1,5 +1,6 @@
 ---
 title: Display Subitems in Columns with ListView Control
+description: Learn how to display subitems in columns with ListView Control like additional text or subitems for items in Details view.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

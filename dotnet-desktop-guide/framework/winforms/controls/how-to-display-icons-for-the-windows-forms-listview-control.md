@@ -1,5 +1,6 @@
 ---
 title: Display Icons for ListView Control
+description: Learn how to display icons from three different image lists for the ListView Control. 
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
