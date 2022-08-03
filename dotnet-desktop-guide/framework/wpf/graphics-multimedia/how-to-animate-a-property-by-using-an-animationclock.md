@@ -1,5 +1,6 @@
 ---
 title: "How to: Animate a Property by Using an AnimationClock"
+description: Learn about how to animate a property by using an AnimationClock with several provided code examples.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
