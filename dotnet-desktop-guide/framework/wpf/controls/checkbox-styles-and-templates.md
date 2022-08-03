@@ -1,5 +1,6 @@
 ---
 title: "CheckBox Styles and Templates"
+description: Learn about CheckBox styles and templates. You can modify the default ControlTemplate to give the control a unique appearance.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "states [WPF], CheckBox"
