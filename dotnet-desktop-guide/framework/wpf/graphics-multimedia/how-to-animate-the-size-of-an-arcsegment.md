@@ -1,5 +1,6 @@
 ---
 title: "How to: Animate the Size of an ArcSegment"
+description: Learn how to create an ArcSegment that animates its Size when it loads on the screen with several provided code examples.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

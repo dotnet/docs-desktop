@@ -1,5 +1,6 @@
 ---
 title: "How to: Control Key-Frame Animation Timing"
+description: Learn to control the timing of key frames within a key-frame animation using a Duration property and specifying a KeyTime for each key frame in the animation.
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"
@@ -26,7 +27,7 @@ The following example uses a <xref:System.Windows.Media.Animation.DoubleAnimatio
 
 The following illustration shows when the value of each key frame is reached.
 
-![Key values are reached at 3, 4, and 10 seconds](./media/graphicsmm-keyframe-keytime1-timespan.png "graphicsmm_keyframe_keytime1_timespan")
+![Screenshot showing four key frames with an increasing blue gradient color having the values of 0, 3, 4, and 10 seconds.](./media/graphicsmm-keyframe-keytime1-timespan.png "graphicsmm_keyframe_keytime1_timespan")
 
 The next example shows an animation that is identical, except that the key frames' key times are set with percentage values.
 
@@ -36,7 +37,7 @@ The next example shows an animation that is identical, except that the key frame
 
 The following illustration shows when the value of each key frame is reached.
 
-![Key values are reached at 3, 4, and 10 seconds](./media/graphicsmm-keyframe-keytime2-percentage.png "graphicsmm_keyframe_keytime2_percentage")
+![Screenshot showing four key frames with an increasing purple gradient color having the values of 0, 3, 4, and 10 seconds.](./media/graphicsmm-keyframe-keytime2-percentage.png "graphicsmm_keyframe_keytime2_percentage")
 
 The next example uses <xref:System.Windows.Media.Animation.KeyTime.Uniform%2A> key time values.
 

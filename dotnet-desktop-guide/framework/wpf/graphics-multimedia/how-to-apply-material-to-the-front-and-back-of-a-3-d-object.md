@@ -1,5 +1,6 @@
 ---
 title: "How to: Apply Material to the Front and Back of a 3D Object"
+description: Learn how to apply a Material to the front and back of a 3D object and animate the object to show both sides.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "3D objects [WPF], applying Material class"

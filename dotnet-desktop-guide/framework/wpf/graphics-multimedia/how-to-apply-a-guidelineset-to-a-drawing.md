@@ -1,5 +1,6 @@
 ---
 title: "How to: Apply a GuidelineSet to a Drawing"
+description: Learn how to apply a GuidelineSet to a DrawingGroup class. It is the only type of Drawing that has a GuidelineSet property.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "GuidelineSet property [WPF], applying to drawings"
