@@ -1,6 +1,6 @@
 ---
 title: "DynamicResource Markup Extension"
-description: Learn about the DynamicResource markup XAML extension of Windows Presentation Foundation (WPF). The DynamicResource extension provides a value for any XAML property attribute by deferring that value to be a reference to a defined resource.
+description: Learn about the DynamicResource markup Extensible Application Markup Language (XAML) extension of Windows Presentation Foundation (WPF).
 ms.date: "03/30/2017"
 ms.custom: devdivchpfy22
 f1_keywords: 
