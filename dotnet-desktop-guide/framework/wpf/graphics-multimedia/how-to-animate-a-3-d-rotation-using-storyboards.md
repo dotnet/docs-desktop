@@ -1,5 +1,6 @@
 ---
 title: "How to: Animate a 3D Rotation Using Storyboards"
+description: Learn how to make a 3D object rotate while it wobbles by animating the Angle and Axis properties of an AxisAngleRotation3D object. 
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Storyboards [WPF]"

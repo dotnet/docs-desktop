@@ -1,5 +1,6 @@
 ---
 title: "Geometry Overview"
+description: Overview of how to use the Windows Presentation Foundation (WPF) Geometry classes to describe shapes.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

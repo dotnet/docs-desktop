@@ -1,5 +1,6 @@
 ---
 title: "How to: Accelerate or Decelerate an Animation"
+description: Learn how to accelerate or decelerate an animation over time using AccelerationRatio and DecelerationRatio settings. 
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "decelerating animation [WPF]"

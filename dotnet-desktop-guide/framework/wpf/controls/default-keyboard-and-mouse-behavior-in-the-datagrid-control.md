@@ -1,5 +1,6 @@
 ---
 title: "Default Keyboard and Mouse Behavior in the DataGrid Control"
+description: Learn about default keyboard and mouse behavior in the DataGrid control. Typical interaction with the DataGrid include navigation, selection, and editing.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "DataGrid [WPF], keyboard behavior"

@@ -1,5 +1,6 @@
 ---
 title: "Creating a Control That Has a Customizable Appearance"
+description: Learn about creating a control that has a customizable appearance, such as a checkbox with a custom control template.
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"
