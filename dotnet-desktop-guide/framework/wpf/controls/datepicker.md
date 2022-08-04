@@ -1,5 +1,6 @@
 ---
 title: "DatePicker"
+description: Learn about the DatePicker control, which allows the user to select a date by either typing it into a text field or by using a drop-down Calendar control.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "controls [WPF], DatePicker"

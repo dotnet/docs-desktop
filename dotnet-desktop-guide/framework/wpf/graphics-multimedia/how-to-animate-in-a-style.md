@@ -1,5 +1,6 @@
 ---
 title: "How to animate in a style"
+description: Learn how to animate properties within a style. Only the framework element for which the style is defined can be targeted directly.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "animation [WPF], properties [WPF], within styles"

@@ -1,5 +1,6 @@
 ---
 title: "How to: Animate a 3D Rotation Using Quaternions"
+description: Learn about how to use QuaternionRotation3D to animate a rotation of a 3D object using quaternions.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "quaternions [WPF]"
