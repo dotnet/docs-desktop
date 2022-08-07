@@ -10,6 +10,7 @@ helpviewer_keywords:
   - "XAML [WPF], namescopes"
   - "classes [WPF], FrameworkContentElement"
 ms.assetid: 52bbf4f2-15fc-40d4-837b-bb4c21ead7d4
+description: Learn how the names in a XAML namescope can establish relationships between the XAML-defined names of objects and their instance equivalents in an object tree.
 ---
 # WPF XAML Namescopes
 XAML namescopes are a concept that identifies objects that are defined in XAML. The names in a XAML namescope can be used to establish relationships between the XAML-defined names of objects and their instance equivalents in an object tree. Typically, XAML namescopes in WPF managed code are created when loading the individual XAML page roots for a XAML application. XAML namescopes as the programming object are defined by the <xref:System.Windows.Markup.INameScope> interface and are also implemented by the practical class <xref:System.Windows.NameScope>.  

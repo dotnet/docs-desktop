@@ -7,6 +7,7 @@ helpviewer_keywords:
   - ".NET application deployment [WPF], deploying with Firefox add-ons"
   - ".NET Framework Assistant for Firefox"
 ms.assetid: 2403403b-9b14-48e9-b70d-fa288a3c9081
+description: Learn how the WPF plug-in for Firefox enables XBAPs and loose XAML files to be navigated to and run at the top-level or in an HTML IFRAME.
 ---
 # Firefox Add-ons to Support .NET Application Deployment
 The Windows Presentation Foundation (WPF) plug-in for Firefox and the .NET Framework Assistant for Firefox enable XAML browser applications (XBAPs), loose XAML, and ClickOnce applications to work with the Mozilla Firefox browser.  

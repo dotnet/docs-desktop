@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "WPF application [WPF], building"
   - "WPF application [WPF], deploying"
 ms.assetid: 88952ad2-5b74-48ca-a4c5-3f4fbb53ce12
+description: Learn how to create project files for the various Windows Presentation Foundation application types.
 ---
 # Build and deploy how-to topics
 

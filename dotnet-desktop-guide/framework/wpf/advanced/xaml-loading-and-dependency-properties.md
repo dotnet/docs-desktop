@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "dependency properties [WPF], XAML loading and"
   - "loading XML data [WPF]"
 ms.assetid: 6eea9f4e-45ce-413b-a266-f08238737bf2
+description: Learn about XAML loading and dependency properties and the current WPF implementation of its XAML processor.
 ---
 # XAML Loading and Dependency Properties
 The current WPF implementation of its WPF XAML processor uses property system methods for dependency properties when loading binary XAML and processing attributes that are dependency properties. This effectively bypasses the property wrappers. When you implement custom dependency properties, you must account for this behavior and should avoid placing any other code in your property wrapper other than the property system methods <xref:System.Windows.DependencyObject.GetValue%2A> and <xref:System.Windows.DependencyObject.SetValue%2A>.  

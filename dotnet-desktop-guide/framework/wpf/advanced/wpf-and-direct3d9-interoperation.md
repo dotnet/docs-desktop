@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "WPF [WPF], creating Direct3D9 content"
   - "Direct3D9 [WPF interoperability], creating Direct3D9 content"
 ms.assetid: 1b14b823-69c4-4e8d-99e4-f6dade58f89a
+description: Learn how to create Direct3D9 content so that it efficiently interoperates with Windows Presentation Foundation.
 ---
 # WPF and Direct3D9 Interoperation
 You can include Direct3D9 content in a Windows Presentation Foundation (WPF) application. This topic describes how to create Direct3D9 content so that it efficiently interoperates with WPF.  

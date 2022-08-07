@@ -12,6 +12,7 @@ helpviewer_keywords:
   - "implementing UI add-ins [WPF]"
   - "pipeline segments [WPF], creating add-ins"
 ms.assetid: 86375525-282b-4039-8352-8680051a10ea
+description: Learn how to create an add-in that is a Windows Presentation Foundation (WPF) UI, which is hosted by a WPF standalone application.
 ---
 # How to: Create an Add-In That Is a UI
 

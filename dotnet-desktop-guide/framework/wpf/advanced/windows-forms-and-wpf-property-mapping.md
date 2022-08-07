@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "interoperability [WPF], Windows Forms"
   - "WindowsFormsHost element property mapping [WPF]"
 ms.assetid: 999d8298-9c04-467d-a453-86e41002057d
+description: Learn how to use the PropertyMap property on the WindowsFormsHost element and the PropertyMap property on ElementHost control to access property mapping.
 ---
 # Windows Forms and WPF Property Mapping
 The Windows Forms and WPF technologies have two similar but different property models. *Property mapping* supports interoperation between the two architectures and provides the following capabilities:  

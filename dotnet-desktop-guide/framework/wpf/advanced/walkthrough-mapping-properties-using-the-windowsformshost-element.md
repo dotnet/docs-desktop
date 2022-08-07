@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "mapping properties [WPF]"
   - "WindowsFormsHost element property mapping [WPF]"
 ms.assetid: 74809167-bf8e-48b7-a2e7-b4ea08bc7d8c
+description: Learn how to use the PropertyMap property to map Windows Presentation Foundation properties on a hosted Windows Forms control.
 ---
 # Walkthrough: Mapping Properties Using the WindowsFormsHost Element
 

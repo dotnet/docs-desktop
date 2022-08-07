@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "presence of WPT [WPF], detecting"
   - "detecting WPF presence [WPF]"
 ms.assetid: 7f71d652-1749-4379-945a-aa2e3994cb43
+description: Learn how to use a script written in HTML/JavaScript to detect whether the .NET Framework 3.0 is installed and present on a system.
 ---
 # How to: Detect Whether the .NET Framework 3.0 Is Installed
 

@@ -8,6 +8,7 @@ dev_langs:
 helpviewer_keywords:
   - "WPF application [WPF], building"
 ms.assetid: a58696fd-bdad-4b55-9759-136dfdf8b91c
+description: Learn how Windows Presentation Foundation applications can be built as .NET Framework executables, libraries, or a combination of both types of assemblies.
 ---
 # Compile a WPF Application
 
