@@ -1,5 +1,6 @@
 ---
 title: "How to: Create Simple or Complex TreeViews"
+description: Learn how to create simple or complex TreeViews, by means of the six included code examples in XAML.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "TreeView control [WPF], creating"

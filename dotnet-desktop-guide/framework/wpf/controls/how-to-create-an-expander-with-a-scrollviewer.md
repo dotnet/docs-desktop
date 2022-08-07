@@ -1,5 +1,6 @@
 ---
 title: "How to: Create an Expander with a ScrollViewer"
+description: Learn how to create an Expander with a ScrollViewer, by means of the included code examples in XAML and C#.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "controls [WPF], Expander"

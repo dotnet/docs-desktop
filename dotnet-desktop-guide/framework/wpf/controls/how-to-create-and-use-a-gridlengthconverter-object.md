@@ -1,5 +1,6 @@
 ---
 title: "How to: Create and Use a GridLengthConverter Object"
+description: Learn how to create and use a GridLengthConverter object, by means of the included code example in C# and Visual Basic.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

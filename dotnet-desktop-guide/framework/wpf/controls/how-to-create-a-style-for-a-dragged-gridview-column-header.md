@@ -1,5 +1,6 @@
 ---
 title: "How to: Create a Style for a Dragged GridView Column Header"
+description: Learn how to create a style for a dragged GridView column header, by means of the included code examples in XAML.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "ListView controls [WPF], styling"
