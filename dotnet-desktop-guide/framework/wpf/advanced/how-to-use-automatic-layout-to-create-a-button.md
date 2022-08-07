@@ -1,5 +1,6 @@
 ---
 title: "How to: Use Automatic Layout to Create a Button"
+description: Learn how to use automatic layout to create a button in a localizable application in Windows Presentation Foundation (WPF).
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Button controls [WPF], creating with automatic layout"

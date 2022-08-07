@@ -1,5 +1,6 @@
 ---
 title: "Introduction to the GlyphRun Object and Glyphs Element"
+description: Learn about GlyphRun object and Glyphs element and get a full introduction to these Windows Presentation Foundation (WPF) features.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "typography [WPF], Glyphs element"

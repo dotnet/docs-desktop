@@ -1,5 +1,6 @@
 ---
 title: "Initialization for Object Elements Not in an Object Tree"
+description: Learn about the initialization of object elements in Windows Presentation Foundation (WPF) that are not found in an object tree.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

@@ -1,5 +1,6 @@
 ---
 title: "How to: Use Resources in Localizable Applications"
+description: Learn how to use resources in localizable applications so that your application and user interface adapt to different cultures.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "applications [WPF], localizable"
