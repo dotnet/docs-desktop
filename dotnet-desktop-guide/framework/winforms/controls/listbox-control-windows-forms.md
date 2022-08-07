@@ -1,5 +1,6 @@
 ---
 title: "ListBox Control"
+description: Learn about the ListBox control in Windows Forms, which displays a list of items from which the user can select one or more.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "ListBox control [Windows Forms]"

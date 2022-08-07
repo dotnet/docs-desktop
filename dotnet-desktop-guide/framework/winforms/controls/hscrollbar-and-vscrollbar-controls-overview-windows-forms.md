@@ -1,5 +1,6 @@
 ---
 title: "HScrollBar and VScrollBar Controls Overview"
+description: This article presents an overview of HScrollBar and VScrollBar controls in Windows Forms, which are horizontal and vertical controls.
 ms.date: "03/30/2017"
 f1_keywords: 
   - "HScrollBar"

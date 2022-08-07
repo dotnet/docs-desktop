@@ -1,5 +1,6 @@
 ---
 title: "Label Control"
+description: Learn about label control in Windows Forms, which is used to display text or images that cannot be edited by the user.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Label control [Windows Forms]"

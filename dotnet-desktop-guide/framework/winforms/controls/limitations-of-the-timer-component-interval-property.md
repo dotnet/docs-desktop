@@ -1,5 +1,6 @@
 ---
 title: Limitations of Timer Component Interval Property
+description: Learn about limitations of the Windows Forms timer component's interval property, which has three limitations.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "timers [Windows Forms], event intervals"
