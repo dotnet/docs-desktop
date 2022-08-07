@@ -1,5 +1,6 @@
 ---
 title: "Resources and Code"
+description: Learn about resources and code, and specifically how to access resources from code and to create resources with code.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

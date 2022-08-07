@@ -1,5 +1,6 @@
 ---
 title: "Preview Events"
+description: Learn about preview events, which are also known as tunneling events, and how they are routed from the application root towards the element that raised the event. 
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Preview events [WPF]"

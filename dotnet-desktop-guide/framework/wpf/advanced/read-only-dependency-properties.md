@@ -1,5 +1,6 @@
 ---
 title: "Read-Only Dependency Properties"
+description: Learn about read-only dependency properties, including scenarios and techniques for creating a custom read-only dependency property.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "dependency properties [WPF], read-only"
