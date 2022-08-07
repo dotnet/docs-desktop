@@ -1,5 +1,6 @@
 ---
 title: "How to: Use mailto: to Send Mail From a Page"
+description: "Learn how to use mailto: to send mail from a page in this article, by means of an included code example in XAML."
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "sending mail from pages with mailto:"

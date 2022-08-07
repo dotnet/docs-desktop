@@ -1,5 +1,6 @@
 ---
 title: "IEnumRAWINPUTDEVIC:Reset"
+description: Learn about IEnumRAWINPUTDEVIC:Reset, which resets the enumeration sequence to the beginning, via this code example in CPP.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Reset method [WPF]"

@@ -1,5 +1,6 @@
 ---
 title: "IEnumRAWINPUTDEVIC:Next"
+description: Learn about IEnumRAWINPUTDEVIC:Next, which enumerates the next celt structures in the enumerator's list.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Next method [WPF]"
