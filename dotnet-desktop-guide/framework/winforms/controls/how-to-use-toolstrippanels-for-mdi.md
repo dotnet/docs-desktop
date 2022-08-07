@@ -1,5 +1,6 @@
 ---
 title: "How to: Use ToolStripPanels for MDI"
+description: Learn how to use ToolStripPanels for MDI in Windows Forms, by means of code examples in C# and Visual Basic.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

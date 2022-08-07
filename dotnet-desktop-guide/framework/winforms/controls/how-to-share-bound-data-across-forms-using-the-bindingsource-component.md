@@ -1,5 +1,6 @@
 ---
 title: "How to: Share Bound Data Across Forms Using the BindingSource Component"
+description: Learn about how to share bound data across forms using the BindingSource component in Windows Forms.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
