@@ -1,5 +1,6 @@
 ---
 title: "PrintDialog Component Overview"
+description: This article provides an overview of the PrintDialog component in Windows Forms, which is a pre-configured dialog box used to select a printer.
 ms.date: "03/30/2017"
 f1_keywords:
   - "PrintDialog"

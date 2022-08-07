@@ -1,5 +1,6 @@
 ---
 title: Perform common tasks using designer actions on controls
+description: Learn how to perform common tasks using designer actions in Windows Forms by means of this walkthrough.
 ms.date: "02/13/2019"
 helpviewer_keywords:
   - "designer actions"

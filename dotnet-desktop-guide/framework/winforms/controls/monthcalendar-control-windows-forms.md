@@ -1,5 +1,6 @@
 ---
 title: "MonthCalendar Control"
+description: Learn about the MonthCalendar control in Windows Forms, which presents an intuitive graphical interface for users to view and set date information.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "calendar controls"

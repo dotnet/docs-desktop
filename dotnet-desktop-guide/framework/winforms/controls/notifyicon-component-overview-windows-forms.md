@@ -1,5 +1,6 @@
 ---
 title: "NotifyIcon Component Overview"
+description: This article presents an overview of the NotifyIcon component in Windows Forms, which is used to display icons for processes that run in the background.
 ms.date: "03/30/2017"
 f1_keywords:
   - "NotifyIcon"
