@@ -1,5 +1,6 @@
 ---
 title: "How to: Bind a TreeView to Data That Has an Indeterminable Depth"
+description: Learn how to bind a TreeView to data that has an indeterminable depth by means of the included code example in XAML.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "TreeView control [WPF], binding to data of indeterminate depth"
