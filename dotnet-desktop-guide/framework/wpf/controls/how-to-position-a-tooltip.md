@@ -1,5 +1,6 @@
 ---
 title: "How to: Position a ToolTip"
+description: Learn how to specify the position of a ToolTip in a Windows Presentation Foundation (WPF) application by using a set of five properties.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
