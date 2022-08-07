@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "hosting Win32 control in WPF [WPF]"
   - "Win32 code [WPF], WPF interoperation"
 ms.assetid: a676b1eb-fc55-4355-93ab-df840c41cea0
+description: Learn how Windows Presentation Foundation provides a straightforward mechanism for hosting a Win32 window, on a WPF page.
 ---
 # Walkthrough: Host a Win32 Control in WPF
 Windows Presentation Foundation (WPF) provides a rich environment for creating applications. However, when you have a substantial investment in Win32 code, it may be more effective to reuse at least some of that code in your WPF application rather than rewrite it completely. WPF provides a straightforward mechanism for hosting a Win32 window, on a WPF page.  

@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "ActiveX controls [WPF interoperability]"
   - "hosting ActiveX controls [WPF]"
 ms.assetid: 1931d292-0dd1-434f-963c-dcda7638d75a
+description: Learn how to host the Microsoft Windows Media Player as a control on a Windows Presentation Foundation page.
 ---
 # Walkthrough: Hosting an ActiveX Control in WPF
 To enable improved interaction with browsers, you can use Microsoft ActiveX controls in your WPF-based application. This walkthrough demonstrates how you can host the Microsoft Windows Media Player as a control on a WPF page.

@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "hybrid applications [WPF interoperability]"
   - "message loops [WPF]"
 ms.assetid: f440c23f-fa5d-4d5a-852f-ba61150e6405
+description: Learn about common problems that can occur when authoring hybrid applications, which use both WPF and Windows Forms technologies.
 ---
 # Troubleshooting Hybrid Applications
 

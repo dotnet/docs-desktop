@@ -7,6 +7,7 @@ dev_langs:
 helpviewer_keywords:
   - "hosting WPF content in Win32 window [WPF]"
 ms.assetid: 38ce284a-4303-46dd-b699-c9365b22a7dc
+description: Learn how Windows Presentation Foundation provides a straightforward mechanism for hosting WPF content in a Win32 window.
 ---
 # Walkthrough: Hosting WPF Content in Win32
 WPF functionality to your application rather than rewriting your original code. WPF provides a straightforward mechanism for hosting WPF content in a Win32 window.  
