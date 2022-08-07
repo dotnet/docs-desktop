@@ -1,5 +1,6 @@
 ---
 title: "Interfaces Related to Data Binding"
+description: Learn about interfaces and how they work with ADO.NET data binding, which allows you to create many different data structures for your application.
 ms.date: "03/30/2017"
 ms.topic: overview
 helpviewer_keywords:

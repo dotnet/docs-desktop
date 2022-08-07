@@ -1,5 +1,6 @@
 ---
 title: User input in a Windows Forms app
+description: Learn about user input in Windows Forms apps and the keyboard messages that raise events based on mouse or keyboard input.
 titleSuffix: ""
 ms.date: "03/30/2017"
 helpviewer_keywords: 
