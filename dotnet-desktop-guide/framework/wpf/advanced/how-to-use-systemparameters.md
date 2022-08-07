@@ -1,6 +1,6 @@
 ---
 title: "How to: Use SystemParameters"
-description: Learn how to use the xref:System.Windows.SystemParameters class and its properties to style or customize a button.
+description: Learn how to use the SystemParameters class and its properties to style or customize a button.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

@@ -1,6 +1,6 @@
 ---
 title: "How to: Use SystemFonts"
-description: Learn how to use SystemFonts, which is a static resource belonging to the xref:System.Windows.SystemFonts class. 
+description: An example of using the SystemFonts class to style and customize a button in Windows Presentation Foundation (WPF).
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
