@@ -1,5 +1,6 @@
 ---
 title: "How to: Specify a Custom Popup Position"
+description: Learn how to specify a custom position for a Popup control in a Windows Presentation Foundation (WPF) application.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

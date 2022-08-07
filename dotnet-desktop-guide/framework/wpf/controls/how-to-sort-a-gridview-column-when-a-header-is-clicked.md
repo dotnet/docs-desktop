@@ -1,5 +1,6 @@
 ---
 title: "How to: Sort a GridView Column When a Header Is Clicked"
+description: Learn how to sort the data in a GridView column when a column header is selected in a Windows Presentation Foundation (WPF) application. 
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"
