@@ -1,6 +1,6 @@
 ---
 title: "ToolTip Overview"
-description: Overview introducing the tooltip and how to create and customize tooltip content in Windows Presentation Foundation (WPF) applications.
+description: Overview that introduces how to create and customize tooltip content in Windows Presentation Foundation (WPF) applications.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
