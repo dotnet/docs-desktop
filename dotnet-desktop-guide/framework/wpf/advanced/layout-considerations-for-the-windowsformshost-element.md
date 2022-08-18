@@ -1,5 +1,6 @@
 ---
 title: "Layout Considerations for the WindowsFormsHost Element"
+description: Learn about the various layout considerations that should be taken into account when using the WindowsFormsHost element.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Windows Forms [WPF], interoperability with"

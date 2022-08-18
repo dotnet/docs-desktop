@@ -1,5 +1,6 @@
 ---
 title: Mouse input
+description: Learn about mouse input in Windows Forms, which includes customized mouse cursors, mouse capture, and drag-and-drop behavior. 
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Windows Forms, mouse input"

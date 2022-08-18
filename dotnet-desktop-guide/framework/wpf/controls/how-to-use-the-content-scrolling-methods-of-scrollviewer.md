@@ -1,5 +1,6 @@
 ---
 title: "How to: Use the Content-Scrolling Methods of ScrollViewer"
+description: Learn how to use the content-scrolling methods of a ScrollViewer element in a Windows Presentation Foundation (WPF) application.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

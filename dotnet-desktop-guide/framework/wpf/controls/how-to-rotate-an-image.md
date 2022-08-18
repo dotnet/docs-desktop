@@ -1,5 +1,6 @@
 ---
 title: "How to: Rotate an Image"
+description: Learn how to rotate an image by using the Rotation property of a BitmapImage object in a Windows Presentation Foundation (WPF) application.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

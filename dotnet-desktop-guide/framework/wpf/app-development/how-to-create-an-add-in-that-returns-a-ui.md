@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "implementing add-in pipeline segments [WPF]"
   - "add-in [WPF], returns a UI"
 ms.assetid: 57f274b7-4c66-4b72-92eb-81939a393776
+description: Learn how to create an add-in that returns a Windows Presentation Foundation (WPF) UI to a host WPF standalone application.
 ---
 # How to: Create an Add-In That Returns a UI
 

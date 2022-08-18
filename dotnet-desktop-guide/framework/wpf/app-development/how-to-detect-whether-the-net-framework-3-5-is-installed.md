@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "detecting whether.NET Framework 3.5 is installed [WPF]"
   - "determining whether.NET Framework 3.5 is installed [WPF]"
 ms.assetid: 8556a9d2-1eb8-48ef-919c-5baf22a2a9a2
+description: Learn how to use a script written in HTML/JavaScript to detect whether the .NET Framework 3.5 is installed and present on a system.
 ---
 # How to: Detect Whether the .NET Framework 3.5 Is Installed
 Before administrators can deploy Windows Presentation Foundation (WPF) applications on a system that targets the .NET Framework 3.5, they must first confirm that the .NET Framework 3.5 runtime is present. This topic provides a script written in HTML/JavaScript that administrators can use to determine whether the .NET Framework 3.5 is present on a system.  

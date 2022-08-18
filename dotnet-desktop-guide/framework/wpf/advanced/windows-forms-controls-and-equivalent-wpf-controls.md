@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "Windows Forms [WPF], WPF interoperation"
   - "interoperability [WPF], Windows Forms"
 ms.assetid: 8a157e6b-8054-46db-a5cf-a78966acc7a1
+description: Learn the similarities and differences in control types provided by Windows Forms Controls and equivalent WPF controls.
 ---
 # Windows Forms Controls and Equivalent WPF Controls
 

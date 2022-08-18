@@ -1,5 +1,6 @@
 ---
 title: "How to: Handle the MouseDoubleClick Event for Each Item in a ListView"
+description: Learn how to handle the MouseDoubleClick event for each item in a ListView, by means of the included code examples in XAML, C#, and Visual Basic.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

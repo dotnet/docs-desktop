@@ -7,6 +7,7 @@ helpviewer_keywords:
   - "XAML [WPF]"
   - "Extensible Application Markup Language [WPF]"
 ms.assetid: 5d858575-a83b-42df-ad3f-047ed2d6e3c8
+description: Learn how WPF types are implemented so that they can provide the required type backing for a XAML representation.
 ---
 # XAML in WPF
 

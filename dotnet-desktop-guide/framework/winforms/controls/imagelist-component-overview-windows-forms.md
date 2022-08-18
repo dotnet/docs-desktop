@@ -1,5 +1,6 @@
 ---
 title: "ImageList Component Overview"
+description: This article provides an overview of the ImageList component in Windows Forms, which is used to store images, which can then be displayed by controls.
 ms.date: "03/30/2017"
 f1_keywords:
   - "ImageList"

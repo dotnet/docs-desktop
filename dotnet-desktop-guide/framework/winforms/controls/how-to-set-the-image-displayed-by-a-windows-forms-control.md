@@ -1,5 +1,6 @@
 ---
 title: Set the Image Displayed by a Control
+description: Learn how to set the image displayed by a Windows Forms control. Several Windows Forms controls can display images.
 ms.date: 08/20/2019
 dev_langs:
   - "csharp"

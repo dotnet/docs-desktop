@@ -1,5 +1,6 @@
 ---
 title: "How to: Use Triggers to Style Selected Items in a ListView"
+description: Learn how to use triggers to style selected items in a ListView control in a Windows Presentation Foundation (WPF) application.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "ListView controls [WPF], styling"

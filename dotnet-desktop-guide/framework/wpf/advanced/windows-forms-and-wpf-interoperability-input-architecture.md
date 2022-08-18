@@ -14,6 +14,7 @@ helpviewer_keywords:
   - "WindowsFormsHost keyboard and messages [WPF]"
   - "modeless dialog boxes [WPF]"
 ms.assetid: 0eb6f137-f088-4c5e-9e37-f96afd28f235
+description: Learn how these technologies implement keyboard and message processing to enable smooth interoperation in hybrid applications.
 ---
 # Windows Forms and WPF Interoperability Input Architecture
 Interoperation between the WPF and Windows Forms requires that both technologies have the appropriate keyboard input processing. This topic describes how these technologies implement keyboard and message processing to enable smooth interoperation in hybrid applications.  

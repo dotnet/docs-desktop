@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "Win32 code [WPF], WPF interoperation"
   - "interoperability [WPF], Win32"
 ms.assetid: 0ffbde0d-701d-45a3-a6fa-dd71f4d9772e
+description: Learn how to interoperate Windows Presentation Foundation's environment for creating applications and Win32 code.
 ---
 # WPF and Win32 Interoperation
 

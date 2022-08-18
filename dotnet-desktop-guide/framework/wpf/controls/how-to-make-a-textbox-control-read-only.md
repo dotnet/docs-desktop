@@ -1,5 +1,6 @@
 ---
 title: "How to: Make a TextBox Control Read-Only"
+description: Learn how to configure a TextBox control to be read-only in a Windows Presentation Foundation (WPF) application.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "read-only TextBox controls [WPF]"

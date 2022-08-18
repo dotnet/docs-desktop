@@ -1,5 +1,6 @@
 ---
 title: "TextBlock Overview"
+description: Overview of how the TextBlock control provides flexible text support for UI scenarios that do not require more than one paragraph of text.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

@@ -1,5 +1,6 @@
 ---
 title: Validate Input with DataGrid Control
+description: Learn how to validate input with the Windows Forms DataGrid control, which is retained for both backward compatibility and future use.
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

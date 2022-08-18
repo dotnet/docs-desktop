@@ -1,5 +1,6 @@
 ---
 title: "How to: Persist and Restore Application-Scope Properties Across Application Sessions"
+description: Learn how to persist and restore application-scope properties across application sessions via included code examples in XAML, C#, and Visual Basic.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

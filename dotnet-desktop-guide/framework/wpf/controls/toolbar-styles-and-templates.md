@@ -1,5 +1,6 @@
 ---
 title: "ToolBar Styles and Templates"
+description: Learn about the styles and templates for the ToolBar control allowing you to modify the default ControlTemplate to give the control a unique appearance.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "states [WPF], ToolBar"

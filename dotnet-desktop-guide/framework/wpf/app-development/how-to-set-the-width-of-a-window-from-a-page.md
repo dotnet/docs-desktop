@@ -1,5 +1,6 @@
 ---
 title: "How to: Set the Width of a Window from a Page"
+description: Learn how to set the width of a window from a page in this article, via the included code example in XAML.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "width of windows [WPF], setting from a page"

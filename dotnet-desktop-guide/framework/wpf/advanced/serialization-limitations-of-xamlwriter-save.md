@@ -1,5 +1,6 @@
 ---
 title: "Serialization Limitations of XamlWriter.Save"
+description: Learn about the serialization limitations of the XamlWriter.Save api in Windows Presentation Foundation (WPF).
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "XamlWriter.Save [WPF], serialization limitations of"

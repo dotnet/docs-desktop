@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "mapping properties [WPF]"
   - "ElementHost control [WPF], mapping properties"
 ms.assetid: bccd6e0d-2272-4924-9107-ff8ed58b88aa
+description: Learn how to use the PropertyMap property to map Windows Forms properties to corresponding properties on a hosted WPF element.
 ---
 # Walkthrough: Mapping Properties Using the ElementHost Control
 

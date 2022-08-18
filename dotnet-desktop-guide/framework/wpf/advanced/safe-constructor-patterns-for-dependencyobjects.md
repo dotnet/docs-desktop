@@ -1,5 +1,6 @@
 ---
 title: "Safe Constructor Patterns for DependencyObjects"
+description: Learn about safe constructor patterns for DependencyObjects to avoid the risks of incomplete initialization if your class is used as a base class.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "constructor patterns for dependency objects [WPF]"

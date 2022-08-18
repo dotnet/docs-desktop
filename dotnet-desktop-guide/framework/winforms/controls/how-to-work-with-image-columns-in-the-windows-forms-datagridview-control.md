@@ -1,5 +1,6 @@
 ---
 title: Work with Image Columns in DataGridView Control
+description: Learn how to work with image columns in the Windows Forms DataGridView Control, by means of code examples in CPP, C#, and Visual Basic.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

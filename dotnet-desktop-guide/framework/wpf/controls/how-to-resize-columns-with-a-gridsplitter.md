@@ -1,5 +1,6 @@
 ---
 title: "How to: Resize Columns with a GridSplitter"
+description: Learn how to create a vertical GridSplitter control to redistribute the space between two columns in a Windows Presentation Foundation (WPF) application.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "grid columns [WPF], resizing"

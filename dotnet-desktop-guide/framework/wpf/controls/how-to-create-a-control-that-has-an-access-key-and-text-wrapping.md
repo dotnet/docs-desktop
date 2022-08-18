@@ -1,5 +1,6 @@
 ---
 title: "How to: Create a Control That Has an Access Key and Text Wrapping"
+description: Learn how to create a control that has an access key and text wrapping, by means of the included code example in XAML.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "access keys [WPF], control for"

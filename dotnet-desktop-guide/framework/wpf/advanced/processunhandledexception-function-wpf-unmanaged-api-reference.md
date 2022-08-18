@@ -1,5 +1,6 @@
 ---
 title: "ProcessUnhandledException Function - WPF unmanaged API reference"
+description: Learn how to use the ProcessUnhandledException function, which is used by the Windows Presentation Foundation (WPF) infrastructure for exception handling.
 titleSuffix: ""
 ms.date: "03/30/2017"
 dev_langs: 

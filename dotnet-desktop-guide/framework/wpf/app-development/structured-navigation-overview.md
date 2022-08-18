@@ -1,5 +1,6 @@
 ---
 title: "Structured Navigation Overview"
+description: This article provides an overview of structured navigation. Learn via included code examples in XAML, C#, and Visual Basic.
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

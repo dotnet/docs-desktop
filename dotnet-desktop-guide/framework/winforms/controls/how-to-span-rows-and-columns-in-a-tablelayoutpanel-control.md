@@ -1,5 +1,6 @@
 ---
 title: "How to: Span Rows and Columns in a TableLayoutPanel Control"
+description: Learn how to span rows and columns in a TableLayoutPanel control in Windows Forms via this 5-step procedure.
 ms.date: "03/30/2017"
 f1_keywords:
   - "net.ComponentModel.StyleCollectionEditor.TLP.SpanRowsColumns"

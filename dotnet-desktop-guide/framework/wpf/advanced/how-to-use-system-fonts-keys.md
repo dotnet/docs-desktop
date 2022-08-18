@@ -1,5 +1,6 @@
 ---
 title: "How to: Use System Fonts Keys"
+description: Learn how to use system font keys, which is a system resource that helps you to create visuals that are consistent with system settings.  
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "resource keys [WPF], SystemFonts class"

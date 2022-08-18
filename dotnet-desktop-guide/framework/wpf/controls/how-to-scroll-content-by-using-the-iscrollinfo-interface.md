@@ -1,5 +1,6 @@
 ---
 title: "How to: Scroll Content by Using the IScrollInfo Interface"
+description: Learn how to scroll content by using the IScrollInfo interface in a Windows Presentation Foundation (WPF) application.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

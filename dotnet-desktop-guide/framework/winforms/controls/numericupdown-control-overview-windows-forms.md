@@ -1,5 +1,6 @@
 ---
 title: "NumericUpDown Control Overview"
+description: This article provides an overview of the NumericUpDown control in Windows Forms, which looks like a combination of a text box and a pair of arrows.
 ms.date: "03/30/2017"
 f1_keywords: 
   - "NumericUpDown"

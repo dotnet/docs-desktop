@@ -1,5 +1,6 @@
 ---
 title: "Overriding the OnPaint Method"
+description: Learn about overriding the OnPaint method in Windows Forms, by means of this 2-step procedure, as well as code samples in Visual Basic and C#.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords:
   - "hosting WPF content in Windows Forms [WPF]"
 ms.assetid: 0ac41286-4c1b-4b17-9196-d985cb844ce1
+description: Learn about an application that hosts a WPF composite control to perform data-entry in a Windows Forms application. 
 ---
 # Walkthrough: Hosting a WPF Composite Control in Windows Forms
 WPF rather than to rewrite it from scratch. A common scenario is when you want to embed one or more controls implemented with WPF within your Windows Forms application. For more information about customizing WPF controls, see [Control Customization](../controls/control-customization.md).  

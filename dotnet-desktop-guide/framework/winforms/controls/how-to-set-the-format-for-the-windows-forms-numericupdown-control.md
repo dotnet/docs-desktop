@@ -1,5 +1,6 @@
 ---
 title: Set the Format for NumericUpDown Control
+description: Learn how to set the format for the Windows Forms NumericUpDown control, by means of code samples in Visual Basic, C#, and CPP.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

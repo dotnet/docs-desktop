@@ -5,6 +5,7 @@ helpviewer_keywords:
   - "raw input [WPF]"
   - "FilterInputMessage method [WPF]"
 ms.assetid: 4d74c6cf-7d1d-49ff-96c1-231340ce54f5
+description: Learn how the FilterInputMessage is called by PresentationHost.exe whenever a message is received unless E_NOTIMPL is returned. 
 ---
 # FilterInputMessage
 Called by PresentationHost.exe whenever a message is received unless E_NOTIMPL is returned.  

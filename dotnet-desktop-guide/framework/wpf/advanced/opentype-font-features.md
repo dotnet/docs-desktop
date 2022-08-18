@@ -1,5 +1,6 @@
 ---
 title: "OpenType Font Features"
+description: Learn about how to use OpenType font features in your Windows Presentation Foundation (WPF) applications.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

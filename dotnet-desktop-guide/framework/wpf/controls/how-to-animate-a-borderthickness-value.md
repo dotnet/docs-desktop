@@ -1,5 +1,6 @@
 ---
 title: "How to: Animate a BorderThickness Value"
+description: Learn how to animate a BorderThickness value by using the ThicknessAnimation class via the included code examples in C# and Visual Basic.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

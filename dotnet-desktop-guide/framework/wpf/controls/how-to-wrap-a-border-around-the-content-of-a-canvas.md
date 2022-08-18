@@ -1,5 +1,6 @@
 ---
 title: "How to: Wrap a Border Around the Content of a Canvas"
+description: Learn how to wrap a border around the content of a Canvas element in a Windows Presentation Foundation (WPF) application.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "controls [WPF], Canvas"

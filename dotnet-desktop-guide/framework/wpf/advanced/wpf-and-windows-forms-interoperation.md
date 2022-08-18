@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "interoperability [WPF], Windows Forms"
   - "hybrid control [WPF interoperability]"
 ms.assetid: 9e8aa6b6-112c-4579-98d1-c974917df499
+description: Learn which WPF and Windows Forms interoperation scenarios are supported and which scenarios are not supported.
 ---
 # WPF and Windows Forms Interoperation
 WPF and Windows Forms present two different architectures for creating application interfaces. The <xref:System.Windows.Forms.Integration?displayProperty=nameWithType> namespace provides classes that enable common interoperation scenarios. The two key classes that implement interoperation capabilities are <xref:System.Windows.Forms.Integration.WindowsFormsHost> and <xref:System.Windows.Forms.Integration.ElementHost>. This topic describes which interoperation scenarios are supported and which scenarios are not supported.  

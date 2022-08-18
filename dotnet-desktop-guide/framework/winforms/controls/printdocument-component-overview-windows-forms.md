@@ -1,5 +1,6 @@
 ---
 title: "PrintDocument Component Overview"
+description: This article provides an overview of the PrintDocument component, which is to set the properties that describe what to print.
 ms.date: "03/30/2017"
 f1_keywords:
   - "PrintDocument"

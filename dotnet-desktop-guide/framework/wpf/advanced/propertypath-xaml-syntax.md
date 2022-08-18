@@ -1,5 +1,6 @@
 ---
 title: "PropertyPath XAML Syntax"
+description: Learn the syntax for the PropertyPath object, which supports complex inline XAML syntax for setting various properties.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "PropertyPath object [WPF]"

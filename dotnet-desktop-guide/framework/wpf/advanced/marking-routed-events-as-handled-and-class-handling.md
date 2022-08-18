@@ -1,5 +1,6 @@
 ---
 title: "Marking Routed Events as Handled, and Class Handling"
+description: Learn about class handling and how handlers for a routed event can mark the event handled within the event data.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "tunneling events [WPF]"

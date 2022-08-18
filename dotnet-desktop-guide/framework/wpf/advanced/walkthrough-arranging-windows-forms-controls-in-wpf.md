@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "hybrid applications [WPF interoperability]"
   - "arranging controls [WPF]"
 ms.assetid: a1db8049-15c7-45d6-ae3d-36a6735cb848
+description: Learn how to use WPF layout features to arrange Windows Forms controls in a hybrid application, with supporting examples and links.
 ---
 # Walkthrough: Arranging Windows Forms Controls in WPF
 

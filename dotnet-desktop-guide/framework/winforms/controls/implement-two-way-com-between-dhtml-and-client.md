@@ -1,5 +1,6 @@
 ---
 title: "How to: Implement Two-Way Communication Between DHTML Code and Client Application Code"
+description: Learn how to implement two-way communication between DHTML code and client application code in Windows Forms.
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

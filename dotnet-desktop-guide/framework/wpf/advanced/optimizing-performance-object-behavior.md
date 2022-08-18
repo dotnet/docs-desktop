@@ -1,5 +1,6 @@
 ---
 title: "Optimizing Performance: Object Behavior"
+description: Learn how to optimize the performance of object behavior in Windows Presentation Foundation (WPF) by understanding their intrinsic behavior.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
