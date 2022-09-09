@@ -3,7 +3,7 @@ title: WFDEV003 warning
 description: Learn about Windows Forms compile-time warning WFDEV003.
 ms.date: 09/09/2022
 ---
-# WFDEV003: 
+# WFDEV003: DomainItemAccessibleObject should not be used
 
 Any reference to <xref:System.Windows.Forms.DomainUpDown.DomainItemAccessibleObject?displayProperty=fullName> will result in warning `WFDEV003`. This warning states that <xref:System.Windows.Forms.DomainUpDown.DomainItemAccessibleObject> is no longer used to provide accessible support for items in <xref:System.Windows.Forms.DomainUpDown> controls. This type was never intended for public use.
 

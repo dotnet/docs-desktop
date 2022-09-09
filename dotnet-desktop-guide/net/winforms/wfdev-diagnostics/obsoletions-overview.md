@@ -9,7 +9,7 @@ ms.date: 09/09/2022
 
 Starting in .NET 7, some Windows Forms APIs are marked as obsolete (or otherwise produce a warning) with custom diagnostic IDs of the format `WFDEVXXX`.
 
-If you encounter build warnings or errors due to usage of an obsolete API, follow the specific guidance provided for the diagnostic ID listed in the [Reference](#reference) section. Warnings or errors for these obsoletions *can't* be suppressed using the [standard diagnostic ID (CS0618)](../../csharp/language-reference/compiler-messages/cs0618.md) for obsolete types or members; use the custom `WFDEVXXX` diagnostic ID values instead. For more information, see [Suppress warnings](#suppress-warnings).
+If you encounter build warnings or errors due to usage of an obsolete API, follow the specific guidance provided for the diagnostic ID listed in the [Reference](#reference) section. Warnings or errors for these obsoletions *can't* be suppressed using the [standard diagnostic ID (CS0618)](/dotnet/csharp/language-reference/compiler-messages/cs0618) for obsolete types or members; use the custom `WFDEVXXX` diagnostic ID values instead. For more information, see [Suppress warnings](#suppress-warnings).
 
 ## Reference
 
