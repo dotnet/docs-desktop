@@ -5,7 +5,7 @@ ms.date: 09/09/2022
 ---
 # WFDEV001: WParam, LParam, and Message.Result are obsolete
 
-To reduce the risk of cast and overflow exceptions associated with <xref:System.IntPtr> on different platforms, the Windows Forms SDK disallows direct use of <xref:System.Windows.Forms.Message.WParam?displayProperty=nameWithType>, <xref:System.Windows.Forms.Message.LParam?displayProperty=nameWithType>, and <xref:System.Windows.Forms.Message.Result?displayProperty=nameWithType>. Projects that use the `DEBUG` build of the Windows Forms SDK and that reference <xref:System.Windows.Forms.Message.WParam>, <xref:System.Windows.Forms.Message.LParam>, or <xref:System.Windows.Forms.Message.Result> will fail to compile.
+To reduce the risk of cast and overflow exceptions associated with <xref:System.IntPtr> on different platforms, the Windows Forms SDK disallows direct use of <xref:System.Windows.Forms.Message.WParam?displayProperty=nameWithType>, <xref:System.Windows.Forms.Message.LParam?displayProperty=nameWithType>, and <xref:System.Windows.Forms.Message.Result?displayProperty=nameWithType>. Projects that use the `DEBUG` build of the Windows Forms SDK and that reference <xref:System.Windows.Forms.Message.WParam>, <xref:System.Windows.Forms.Message.LParam>, or <xref:System.Windows.Forms.Message.Result> will fail to compile due to warning `WFDEV001`.
 
 ## Workarounds
 
