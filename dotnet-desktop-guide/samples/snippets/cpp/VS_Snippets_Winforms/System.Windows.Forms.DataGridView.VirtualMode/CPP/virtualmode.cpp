@@ -132,7 +132,7 @@ private:
       contactNameColumn->Name = L"Contact Name";
       this->dataGridView1->Columns->Add( companyNameColumn );
       this->dataGridView1->Columns->Add( contactNameColumn );
-	  this->dataGridView1->AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode::AllCells;
+	  this->dataGridView1->AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode::DisplayedCells;
       
       // Add some sample entries to the data store. 
       this->customers->Add( gcnew Customer( L"Bon app'",L"Laurence Lebihan" ) );
