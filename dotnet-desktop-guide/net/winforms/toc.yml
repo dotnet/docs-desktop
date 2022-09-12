@@ -125,4 +125,15 @@ items:
       href: data/how-to-create-control-binding.md
     - name: Synchronize multiple controls
       href: data/how-to-synchronize-multiple-controls.md
+- name: WFDEV warnings
+  items:
+  - name: Overview
+    href: wfdev-diagnostics/obsoletions-overview.md
+    displayName: wfdev warnings
+  - name: WFDEV001
+    href: wfdev-diagnostics/wfdev001.md
+  - name: WFDEV002
+    href: wfdev-diagnostics/wfdev002.md
+  - name: WFDEV003
+    href: wfdev-diagnostics/wfdev003.md
  
