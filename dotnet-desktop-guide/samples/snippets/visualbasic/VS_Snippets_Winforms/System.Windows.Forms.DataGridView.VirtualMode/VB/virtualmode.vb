@@ -62,7 +62,7 @@ Public Class Form1
         Me.dataGridView1.Columns.Add(companyNameColumn)
         Me.dataGridView1.Columns.Add(contactNameColumn)
         Me.dataGridView1.AutoSizeColumnsMode = _
-            DataGridViewAutoSizeColumnsMode.AllCells
+        DataGridViewAutoSizeColumnsMode.DisplayedCells
 
         ' Add some sample entries to the data store. 
         Me.customers.Add(New Customer("Bon app'", "Laurence Lebihan"))
