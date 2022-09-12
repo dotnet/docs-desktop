@@ -280,6 +280,8 @@ In this section, you enable the panels that host the Circle user controls to act
 
 2. As shown in the following XAML, in each of the <xref:System.Windows.Controls.StackPanel> controls, add handlers for the <xref:System.Windows.UIElement.DragOver> and <xref:System.Windows.UIElement.Drop> events. Name the <xref:System.Windows.UIElement.DragOver> event handler, `panel_DragOver`, and name the <xref:System.Windows.UIElement.Drop> event handler, `panel_Drop`.
 
+   By default, the panels aren't drop targets. Add the <xref:System.Windows.UIElement.AllowDrop%2A> property to both panels and set it to `true`.
+
      [!code-xaml[DragDropWalkthrough#PanelsXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/DragDropWalkthrough/CS/MainWindow.xaml#panelsxaml)]
 
 3. Open MainWindows.xaml.cs or MainWindow.xaml.vb.
