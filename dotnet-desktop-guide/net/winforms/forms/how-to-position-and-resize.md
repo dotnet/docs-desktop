@@ -127,13 +127,13 @@ End Sub
 
 ### Position a different form
 
-You can change the location of another form after it's created by using the variable referencing the form. For example, let's say you have two forms, `Form1` (the startup form in this example) and `Form2`. `Form1` has a button that when clicked, invokes the `Click` event. The handler of this event creates a new instance of the `Form2` form and sets the size:
+You can change the location of another form after it's created by using the variable referencing the form. For example, let's say you have two forms, `Form1` (the startup form in this example) and `Form2`. `Form1` has a button that when clicked, invokes the `Click` event. The handler of this event creates a new instance of the `Form2` form and sets the location:
 
 ```csharp
 private void button1_Click(object sender, EventArgs e)
 {
     Form2 form = new Form2();
-    form.Size = new Size(250, 200);
+    form.Location = new Point(0, 0);
     form.Show();
 }
 ```
@@ -141,13 +141,13 @@ private void button1_Click(object sender, EventArgs e)
 ```vb
 Private Sub Button1_Click(sender As Object, e As EventArgs)
     Dim form = New Form2 With {
-        .Size = New Drawing.Size(250, 200)
+        .Location = New Drawing.Point(0, 0)
     }
     form.Show()
 End Sub
 ```
 
-If the `Size` isn't set, the form's default size is what it was set to at design-time.
+If the `Location` isn't set, the form's default position is based on what the `StartPosition` was set to at design-time.
 
 ## See also
 
