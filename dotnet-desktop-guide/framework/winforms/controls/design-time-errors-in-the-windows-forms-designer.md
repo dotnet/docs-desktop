@@ -32,7 +32,7 @@ When the yellow error bar is expanded, each instance of the error is listed. Man
 
 ## Help with this error
 
-If a help topic for the error is available, click the **MSDN Help** link to navigate directly to the help page on Microsoft Docs.
+If a help topic for the error is available, click the **MSDN Help** link to navigate directly to the help page.
 
 ## Forum posts about this error
 
