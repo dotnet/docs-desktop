@@ -19,7 +19,7 @@ There are two implementations of WPF:
 
 01. **.NET** version (this guide):
 
-    An open-source implementation of WPF hosted on [GitHub](https://github.com/dotnet/wpf), which runs on .NET 5 or higher (including .NET Core 3.1). The XAML designer requires, at a minimum, [Visual Studio 2019 version 16.8](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+desktopguide+wpf).
+    An open-source implementation of WPF hosted on [GitHub](https://github.com/dotnet/wpf), which runs on .NET 5 or higher (including .NET Core 3.1). The XAML designer requires, at a minimum, [Visual Studio 2019 version 16.8](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+desktopguide+wpf).
 
     Even though .NET is a cross-platform technology, WPF isn't and only runs on Windows.
 
