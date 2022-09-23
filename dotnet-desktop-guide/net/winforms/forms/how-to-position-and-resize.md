@@ -147,7 +147,7 @@ Private Sub Button1_Click(sender As Object, e As EventArgs)
 End Sub
 ```
 
-If the `Location` isn't set, the form's default position is based on what the `StartPosition` was set to at design-time.
+If the `Location` isn't set, the form's default position is based on what the `StartPosition` property was set to at design-time.
 
 ## See also
 
