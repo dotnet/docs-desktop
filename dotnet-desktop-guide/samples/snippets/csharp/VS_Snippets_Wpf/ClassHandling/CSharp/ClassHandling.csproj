@@ -1,4 +1,12 @@
-<Project DefaultTargets="SDKSampleLibrary;XAMLAPP" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+﻿<Project DefaultTargets="SDKSampleLibrary;XAMLAPP" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <ProjectGuid>{DF88100F-05ED-453C-81A8-A5822FF6205E}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
   <Target Name="SDKSampleLibrary">
     <MSBuild Projects="SDKSampleLibrary\SDKSampleLibrary.csproj" />
   </Target>
