@@ -35,8 +35,8 @@ When you use the version switcher to move from moniker `netdesktop-5.0` to `netf
 
 | Moniker | URL |
 | - | - |
-| `Moniker1` | `https://docs.microsoft.com/dotnet/desktop/winforms/creating-event-handlers-in-windows-forms?view=netframeworkdesktop-4.8` |
-| `Moniker2` | `https://docs.microsoft.com/dotnet/desktop/winforms/creating-event-handlers-in-windows-forms?view=netdesktop-5.0` |
+| `Moniker1` | `https://learn.microsoft.com/dotnet/desktop/winforms/creating-event-handlers-in-windows-forms?view=netframeworkdesktop-4.8` |
+| `Moniker2` | `https://learn.microsoft.com/dotnet/desktop/winforms/creating-event-handlers-in-windows-forms?view=netdesktop-5.0` |
 
 Based on the publishing path and repo paths of the monikers registered with the build system, you can reverse engineer the path to the source file by continually transforming the URL:
 
@@ -116,4 +116,3 @@ The `Redirect` field represents the type of redirect and can be one of the follo
 - `NormalDocId`
 
   This is the same as `Normal` but it adds the `redirect_document_id: true` entry to the redirect.
-

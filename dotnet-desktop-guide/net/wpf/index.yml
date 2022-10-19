@@ -34,7 +34,7 @@ landingContent:
       - linkListType: download
         links:
           - text: Visual Studio 2019 version 16.9
-            url: https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+desktopguide+wpf
+            url: https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+desktopguide+wpf
 
   - title: WPF windows
     linkLists:
