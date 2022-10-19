@@ -10,7 +10,7 @@ ms.assetid: 43560f28-183d-41c1-b9d1-de7c2552273e
 description: Learn how the System.Printing.IndexedProperties namespace provides a means to getting property information without using reflection.
 ---
 # How to: Get Print System Object Properties Without Reflection
-Using reflection to itemize the properties (and the types of those properties) on an object can slow application performance. The <xref:System.Printing.IndexedProperties> namespace provides a means to getting this information with using reflection.  
+Using reflection to itemize the properties (and the types of those properties) on an object can slow application performance. The <xref:System.Printing.IndexedProperties> namespace provides a means to getting this information without using reflection.  
   
 ## Example  
  The steps for doing this are as follows.  
