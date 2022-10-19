@@ -79,7 +79,7 @@ public class Form1 : Form
         this.dataGridView1.Columns.Add(companyNameColumn);
         this.dataGridView1.Columns.Add(contactNameColumn);
         this.dataGridView1.AutoSizeColumnsMode =
-            DataGridViewAutoSizeColumnsMode.AllCells;
+            DataGridViewAutoSizeColumnsMode.DisplayedCells;
 
         // Add some sample entries to the data store.
         this.customers.Add(new Customer(
