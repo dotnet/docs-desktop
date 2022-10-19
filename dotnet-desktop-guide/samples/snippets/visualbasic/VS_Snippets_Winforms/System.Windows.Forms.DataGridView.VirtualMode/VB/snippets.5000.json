@@ -1,0 +1,17 @@
+{
+    "host": "visualstudio",
+    "expectederrors": [
+        {
+            "file": "dotnet-desktop-guide/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.VirtualMode/CPP/virtualmode.cpp",
+            "error": "ERROR: Project missing. A project (and optionally a solution file) must be in this directory or one of the parent directories to validate and build this code."
+        },
+        {
+            "file": "dotnet-desktop-guide/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.VirtualMode/CS/virtualmode.cs",
+            "error": "ERROR: Project missing. A project (and optionally a solution file) must be in this directory or one of the parent directories to validate and build this code."
+        },
+        {
+            "file": "dotnet-desktop-guide/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.VirtualMode/VB/virtualmode.vb",
+            "error": "ERROR: Project missing. A project (and optionally a solution file) must be in this directory or one of the parent directories to validate and build this code."
+        }
+    ]
+}
