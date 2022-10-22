@@ -7,11 +7,18 @@ on:
   pull_request:
     branches: [ main ]
     types: [opened, synchronize, reopened]
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: 'The reason for running the workflow'
+        required: true
+        default: 'Manual run'
 
 env:
-  DOTNET_INSTALLER_CHANNEL: '6.0'
-  DOTNET_DO_INSTALL: 'false'
+  DOTNET_INSTALLER_CHANNEL: '7.0'
+  DOTNET_DO_INSTALL: 'true' # True to install preview versions, False to use the pre-installed (released) SDK
   EnableNuGetPackageRestore: 'True'
+  repo: 'docs-desktop'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -25,7 +32,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-    - uses: actions/checkout@a81bbbf8298c0fa03ea29cdc473d45769f953675 #@v2
+    - uses: actions/checkout@93ea575cb5d8a053eaa0ac8fa3b40d7e05a33cc8 #@v3.1.0
 
     # Get the latest preview SDK (or sdk not installed by the runner)
     - name: Setup .NET SDK
@@ -34,7 +41,7 @@ jobs:
         echo "Downloading dotnet-install.ps1"
         Invoke-WebRequest https://raw.githubusercontent.com/dotnet/install-scripts/master/src/dotnet-install.ps1 -OutFile dotnet-install.ps1
         echo "Installing dotnet version ${{ env.DOTNET_INSTALLER_CHANNEL }}"
-        .\dotnet-install.ps1 -InstallDir "c:\program files\dotnet" -Channel "${{ env.DOTNET_INSTALLER_CHANNEL }}"
+        .\dotnet-install.ps1 -InstallDir "c:\program files\dotnet" -Channel "${{ env.DOTNET_INSTALLER_CHANNEL }}" -Quality preview
 
     # Print dotnet info
     - name: Display .NET info
