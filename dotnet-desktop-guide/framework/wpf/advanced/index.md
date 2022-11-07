@@ -33,4 +33,4 @@ This section describes some of the advanced areas in WPF.
 [Migration and Interoperability](migration-and-interoperability.md)\
 [Performance](performance.md)\
 [Threading Model](threading-model.md)\
-[Unmanaged WPF API Reference](wpf-unmanaged-api-reference.md)\
+[Unmanaged WPF API Reference](wpf-unmanaged-api-reference.md)
