@@ -5,6 +5,8 @@ using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Threading;
+using System.Runtime.InteropServices.WindowsRuntime;
+using System.Text;
 
 namespace SDKSample
 {
@@ -25,13 +27,39 @@ namespace SDKSample
             mainWindow.Title = "Image Metadata";
 
             // <SnippetSetQuery>
-            Stream pngStream = new System.IO.FileStream("smiley.png", FileMode.Open, FileAccess.ReadWrite, FileShare.ReadWrite);
-            PngBitmapDecoder pngDecoder = new PngBitmapDecoder(pngStream, BitmapCreateOptions.PreservePixelFormat, BitmapCacheOption.Default);
-            BitmapFrame pngFrame = pngDecoder.Frames[0];
-            InPlaceBitmapMetadataWriter pngInplace = pngFrame.CreateInPlaceBitmapMetadataWriter();
-            if (pngInplace.TrySave() == true)
-            { pngInplace.SetQuery("/Text/Description", "Have a nice day."); }
-            pngStream.Close();
+            using (var imageStream = new System.IO.FileStream("smiley.jpg", FileMode.Open,
+                                                                            FileAccess.ReadWrite,
+                                                                            FileShare.ReadWrite))
+            {
+                var decoder = new JpegBitmapDecoder(imageStream,
+                                                       BitmapCreateOptions.PreservePixelFormat,
+                                                       BitmapCacheOption.Default);
+
+                BitmapFrame frame = decoder.Frames[0];
+                decoder.Metadata.Comment = "This file was edited in WPF";
+
+                // Try to set the metadata directly on the image
+                InPlaceBitmapMetadataWriter inplaceMetadata = frame.CreateInPlaceBitmapMetadataWriter();
+                inplaceMetadata.SetQuery("System.Title", "Yellow Smile");
+
+                if (!inplaceMetadata.TrySave())
+                {
+                    // In place metadata save failed, must rencode image
+                    using (var saveStream = File.Create("smiley.jpg"))
+                    {
+                        var encoder = new JpegBitmapEncoder();
+
+                        // Duplicate each frame
+                        foreach (var cloneFrame in decoder.Frames)
+                            encoder.Frames.Add(BitmapFrame.Create(cloneFrame));
+
+                        // Set metadata
+                        ((BitmapMetadata)encoder.Frames[0].Metadata).SetQuery("System.Title", "Yellow Smile");
+
+                        encoder.Save(saveStream);
+                    }
+                }
+            }
             // </SnippetSetQuery>
 
             // Draw the Image
@@ -40,12 +68,26 @@ namespace SDKSample
             myImage.Stretch = Stretch.None;
             myImage.Margin = new Thickness(20);
 
-            // <SnippetGetQuery>
-
-            // Add the metadata of the bitmap image to the text block.
             TextBlock myTextBlock = new TextBlock();
-            myTextBlock.Text = "The Description metadata of this image is: " + pngInplace.GetQuery("/Text/Description").ToString();
+
+            // <SnippetGetQuery>
+            // Add the metadata of the bitmap image to the text block.
+            var metadataValue = string.Empty;
+
+            using (var imageStream = new System.IO.FileStream("smiley.jpg", FileMode.Open,
+                                                                            FileAccess.ReadWrite,
+                                                                            FileShare.ReadWrite))
+            {
+                var decoder = new JpegBitmapDecoder(imageStream,
+                                                        BitmapCreateOptions.PreservePixelFormat,
+                                                        BitmapCacheOption.Default);
+
+                var metadata = (BitmapMetadata)decoder.Frames[0].Metadata;
+
+                metadataValue = $"The Description metadata of this image is: {metadata.GetQuery("System.Title")}";
+            }
             // </SnippetGetQuery>
+            myTextBlock.Text = metadataValue;
 
             // Define a StackPanel to host Controls
             StackPanel myStackPanel = new StackPanel();
@@ -60,8 +102,9 @@ namespace SDKSample
 
             // Add the StackPanel as the Content of the Parent Window Object
             mainWindow.Content = myStackPanel;
-            mainWindow.Show ();
+            mainWindow.Show();
         }
+
     }
 
     // Define a static entry class
