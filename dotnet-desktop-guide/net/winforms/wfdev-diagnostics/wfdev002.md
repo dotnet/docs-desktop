@@ -13,7 +13,7 @@ Any reference to <xref:System.Windows.Forms.DomainUpDown.DomainUpDownAccessibleO
 ## Workarounds
 
 - Update your code to use <xref:System.Windows.Forms.AccessibleObject> instead of <xref:System.Windows.Forms.DomainUpDown.DomainUpDownAccessibleObject>.
-- If you're using .NET 7, you can [suppress the warning](#suppress-a-warning) and your code will continue to compile and run.
+- If you're using .NET 7, you can [suppress the warning](#suppress-a-warning-net-7-only) and your code will continue to compile and run.
 
 ## Suppress a warning (.NET 7 only)
 
