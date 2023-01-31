@@ -236,7 +236,7 @@ In the examples so far, you have seen several buttons, but none of these buttons
 Notice that the code-behind file uses the CLR namespace `ExampleNamespace` (the namespace isn't visible in Visual Basic) and declares `ExamplePage` as a partial class within that namespace. This parallels the `x:Class` attribute value of `ExampleNamespace`.`ExamplePage` that was provided in the markup root. The WPF markup compiler will create a partial class for any compiled XAML file, by deriving a class from the root element type. When you provide code-behind that also defines the same partial class, the resulting code is combined within the same namespace and class of the compiled app.
 
 > [!IMPORTANT]
-> In Visual Basic, the root namespace is implied for both the XAML and code-behind files. Only nested namespaces are visible. This article demonstrates the C# project's XAML.
+> In Visual Basic, the root namespace is implied for both the XAML and code-behind. Only nested namespaces are visible. This article demonstrates the C# project's XAML.
 
 For more information about requirements for code-behind programming in WPF, see [Code-behind, Event Handler, and Partial Class Requirements in WPF](../../../framework/wpf/advanced/code-behind-and-xaml-in-wpf.md#code-behind-event-handler-and-partial-class-requirements-in-wpf).
 
