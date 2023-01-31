@@ -8,7 +8,7 @@ ms.date: 09/09/2022
 Any reference to <xref:System.Windows.Forms.DomainUpDown.DomainUpDownAccessibleObject?displayProperty=fullName> will result in warning `WFDEV002`. This warning states that <xref:System.Windows.Forms.DomainUpDown.DomainUpDownAccessibleObject> is no longer used to provide accessible support for <xref:System.Windows.Forms.DomainUpDown> controls. The <xref:System.Windows.Forms.DomainUpDown.DomainUpDownAccessibleObject> type was never intended for public use.
 
 > [!NOTE]
-> This warning was promoted to an error starting in .NET 8, and you can no longer suppress the error.
+> This warning was promoted to an error starting in .NET 8, and you can no longer suppress the error. For more information, see [WFDEV002 obsoletion is now an error](/dotnet/core/compatibility/windows-forms/8.0/domainupdownaccessibleobject).
 
 ## Workarounds
 
