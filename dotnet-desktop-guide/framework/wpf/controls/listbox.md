@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: b91bb352-4f51-44e0-9017-a041f216c852
 ---
 # ListBox
+
 A <xref:System.Windows.Controls.ListBox> control provides users with a list of selectable items.  
   
  The following figure illustrates a typical <xref:System.Windows.Controls.ListBox>.  
@@ -18,9 +19,11 @@ A <xref:System.Windows.Controls.ListBox> control provides users with a list of s
 Typical ListBox  
   
 ## In This Section  
+
  [How-to Topics](listbox-how-to-topics.md)  
   
 ## Reference  
+
  <xref:System.Windows.Controls.ListBox>  
   <xref:System.Windows.Controls.ListBoxItem>  
   

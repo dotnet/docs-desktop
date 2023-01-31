@@ -12,6 +12,7 @@ ms.assetid: 57dfed60-a608-40d5-86f9-d65686ffb325
 description: Learn how to set the sort modes and sorting behavior for columns in the Windows Forms DataGridView control. 
 ---
 # How to: Set the Sort Modes for Columns in the Windows Forms DataGridView Control
+
 In the <xref:System.Windows.Forms.DataGridView> control, text box columns use automatic sorting by default, while other column types are not sorted automatically. Sometimes you will want to override these defaults. For example, you can display images in place of text, numbers, or enumeration cell values. While the images cannot be sorted, the underlying values that they represent can be sorted.  
   
  In the <xref:System.Windows.Forms.DataGridView> control, the <xref:System.Windows.Forms.DataGridViewColumn.SortMode%2A> property value of a column determines its sorting behavior.  
@@ -26,6 +27,7 @@ In the <xref:System.Windows.Forms.DataGridView> control, text box columns use au
      [!code-vb[System.Windows.Forms.DataGridViewMisc#066](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/VB/datagridviewmisc.vb#066)]  
   
 ## Compiling the Code  
+
  This example requires:  
   
 - A <xref:System.Windows.Forms.DataGridView> control named `dataGridView1` that contains a column named `Priority`.  

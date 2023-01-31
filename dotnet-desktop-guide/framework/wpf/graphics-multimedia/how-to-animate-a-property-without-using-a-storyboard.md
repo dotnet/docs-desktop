@@ -13,6 +13,7 @@ helpviewer_keywords:
 ms.assetid: d411db70-4df7-487d-82bc-95a7c1b2e7f8
 ---
 # How to: Animate a Property Without Using a Storyboard
+
 This example shows one way to apply an animation to a property without using a <xref:System.Windows.Media.Animation.Storyboard>.  
   
 > [!NOTE]
@@ -21,6 +22,7 @@ This example shows one way to apply an animation to a property without using a <
  To apply a local animation to a property, use the <xref:System.Windows.UIElement.BeginAnimation%2A> method. This method takes two parameters: a <xref:System.Windows.DependencyProperty> that specifies the property to animate, and the animation to apply to that property.  
   
 ## Example  
+
  The following example shows how to animate the width and background color of a <xref:System.Windows.Controls.Button>.  
   
  [!code-cpp[animateproperty#11](~/samples/snippets/cpp/VS_Snippets_Wpf/animateproperty/CPP/LocalAnimationExample.cpp#11)]

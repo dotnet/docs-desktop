@@ -10,9 +10,11 @@ helpviewer_keywords:
 ms.assetid: 41231b22-1f74-4c26-a8e7-a55b29f8f6bd
 ---
 # How to: Create a Line Using a LineGeometry
+
 This example shows how to use the <xref:System.Windows.Media.LineGeometry> class to describe a line. A <xref:System.Windows.Media.LineGeometry> is defined by its start and end points.  
   
 ## Example  
+
  The following example shows how to create and render a <xref:System.Windows.Media.LineGeometry>.  A <xref:System.Windows.Shapes.Path> element is used to render the line.  Since a line has no area, the <xref:System.Windows.Shapes.Path> object's <xref:System.Windows.Shapes.Shape.Fill%2A> is not specified; instead the <xref:System.Windows.Shapes.Shape.Stroke%2A> and <xref:System.Windows.Shapes.Shape.StrokeThickness%2A> properties are used.  
   
  [!code-xaml[GeometryOverviewSamples_snip#GraphicsMMLineGeometryExample](~/samples/snippets/csharp/VS_Snippets_Wpf/GeometryOverviewSamples_snip/CS/GeometryExamples.xaml#graphicsmmlinegeometryexample)]  

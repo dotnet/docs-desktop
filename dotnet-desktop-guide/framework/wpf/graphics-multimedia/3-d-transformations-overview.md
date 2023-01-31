@@ -12,9 +12,11 @@ helpviewer_keywords:
 ms.assetid: e45e555d-ac1e-4b36-aced-e433afe7f27f
 ---
 # 3D Transformations Overview
+
 This topic describes how to apply transformations to 3D models in the Windows Presentation Foundation (WPF) graphics system. Transformations allow the developer to reposition, resize, and reorient models without changing the base values that define them.  
 
 ## 3D Coordinate Space  
+
  3D graphics content in Windows Presentation Foundation (WPF) is encapsulated in an element, <xref:System.Windows.Controls.Viewport3D>, that can participate in the two-dimensional element structure. The graphics system treats Viewport3D as a two-dimensional visual element like many others in Windows Presentation Foundation (WPF). Viewport3D functions as a window—a viewport—into a three-dimensional scene. More accurately, it is a surface on which a 3D scene is projected.  Although you can use Viewport3D with other 2D drawing objects in the same scene graph, you cannot interpenetrate 2D and 3D objects within a Viewport3D. In the following discussion, the coordinate space described is contained by the Viewport3D element.  
   
  The Windows Presentation Foundation (WPF) coordinate system for 2D graphics locates the origin in the upper left of the rendering surface (typically the screen). In the 2D system, positive x-axis values proceed to the right and positive y-axis values proceed downward. In the 3D coordinate system, however, the origin is located in the center of the screen, with positive x-axis values proceeding to the right but positive y-axis values proceeding upward instead, and positive z-axis values proceeding outward from the origin, toward the viewer.  
@@ -25,11 +27,13 @@ Coordinate System Comparison
  The space defined by these axes is the stationary frame of reference for 3D objects in Windows Presentation Foundation (WPF). As you build models in this space and create lights and cameras to view them, it's helpful to distinguish this stationary frame of reference, or "world space," from the local frame of reference you create for each model when you apply transformations to it. Remember also that objects in world space might look entirely different, or not be visible at all, depending on light and camera settings, but the position of the camera does not change the location of objects in world space.  
   
 ## Transforming Models  
+
  When you create models, they have a particular location in the scene. To move those models around in the scene, to rotate them, or to change their size, it's not practical to change the vertices that define the models themselves. Instead, just as in 2D, you apply transformations to models.  
   
  Each model object has a <xref:System.Windows.Media.Media3D.Model3D.Transform%2A> property with which you can move, re-orient, or resize the model. When you apply a transform, you effectively offset all the points of the model by whatever vector or value is specified by the transform. In other words, you've transformed the coordinate space in which the model is defined ("model space"), but you haven't changed the values that make up the model's geometry in the coordinate system of the entire scene ("world space").  
   
 ## Translation Transformations  
+
  3D transformations inherit from the abstract base class <xref:System.Windows.Media.Media3D.Transform3D>; these include the affine transform classes <xref:System.Windows.Media.Media3D.TranslateTransform3D>, <xref:System.Windows.Media.Media3D.ScaleTransform3D>, and <xref:System.Windows.Media.Media3D.RotateTransform3D>. The Windows Presentation Foundation (WPF) 3D system also provides a <xref:System.Windows.Media.Media3D.MatrixTransform3D> class that lets you specify the same transformations in more concise matrix operations.  
   
  <xref:System.Windows.Media.Media3D.TranslateTransform3D> moves all the points in the Model3D in the direction of the offset vector you specify with the <xref:System.Windows.Media.Media3D.TranslateTransform3D.OffsetX%2A>, <xref:System.Windows.Media.Media3D.TranslateTransform3D.OffsetY%2A>, and <xref:System.Windows.Media.Media3D.TranslateTransform3D.OffsetZ%2A> properties. For example, given one vertex of a cube at (2,2,2), an offset vector of (0,1.6,1) would move that vertex (2,2,2) to (2,3.6,3). The cube's vertex is still (2,2,2) in model space, but now that model space has changed its relationship to world space so that (2,2,2) in model space is (2,3.6,3) in world space.  
@@ -42,6 +46,7 @@ Translation with Offset
  [!code-xaml[animation3dgallery_snip#Translation3DAnimationExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/Animation3DGallery_snip/CS/Translation3DAnimationExample.xaml#translation3danimationexamplewholepage)]  
   
 ## Scale Transformations  
+
  <xref:System.Windows.Media.Media3D.ScaleTransform3D> changes the model's scale by a specified scale vector with reference to a center point. Specify a uniform scale, which scales the model by the same value in the X, Y, and Z axes, to change the model's size proportionally. For example, setting the transform's <xref:System.Windows.Media.ScaleTransform.ScaleX%2A>, <xref:System.Windows.Media.ScaleTransform.ScaleY%2A>, and <xref:System.Windows.Media.Media3D.ScaleTransform3D.ScaleZ%2A> properties to 0.5 halves the size of the model; setting the same properties to 2 doubles its scale in all three axes.  
   
  ![Uniform ScaleTransform3D](./media/threecubes-uniformscale-1.png "threecubes_uniformscale_1")  
@@ -57,6 +62,7 @@ Scale Center Example
  To scale a model "in place," specify the center of the model by setting the ScaleTransform3D's <xref:System.Windows.Media.ScaleTransform.CenterX%2A>, <xref:System.Windows.Media.ScaleTransform.CenterY%2A>, and <xref:System.Windows.Media.Media3D.ScaleTransform3D.CenterZ%2A> properties. This ensures that the graphics system scales the model space and then translates it to center on the specified <xref:System.Windows.Media.Media3D.Point3D>. Conversely, if you've built the model about the origin and specify a different center point, expect to see the model translated away from the origin.  
   
 ## Rotation Transformations  
+
  You can rotate a model in 3D in several different ways. A typical rotation transformation specifies an axis and an angle of rotation around that axis. The <xref:System.Windows.Media.Media3D.RotateTransform3D> class allows you to define a <xref:System.Windows.Media.Media3D.Rotation3D> with its <xref:System.Windows.Media.Media3D.RotateTransform3D.Rotation%2A> property. You then specify <xref:System.Windows.Media.Media3D.AxisAngleRotation3D.Axis%2A> and <xref:System.Windows.Media.Media3D.AxisAngleRotation3D.Angle%2A> properties on the Rotation3D, in this case an <xref:System.Windows.Media.Media3D.AxisAngleRotation3D>, to define the transformation. The following examples rotate a model by 60 degrees around the Y axis.  
   
  [!code-xaml[animation3dgallery_snip#Rotate3DUsingAxisAngleRotation3DExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/Animation3DGallery_snip/CS/Rotat3DUsingAxisAngleRotation3DExample.xaml#rotate3dusingaxisanglerotation3dexamplewholepage)]  
@@ -78,9 +84,11 @@ Rotation Example
  A quaternion represents an axis in 3D space and a rotation around that axis. For example, a quaternion might represent a (1,1,2) axis and a rotation of 50 degrees. Quaternions’ power in defining rotations comes from the two operations that you can perform on them: composition and interpolation. The composition of two quaternions applied to a geometry means "rotate the geometry around axis2 by rotation2, then rotate it around axis1 by rotation1." By using composition, you can combine the two rotations on the geometry to get a single quaternion that represents the result. Because quaternion interpolation can calculate a smooth and reasonable path from one axis and orientation to another, you can interpolate from the original to the composed quaternion to achieve a smooth transition from one to the other, enabling you to animate the transformation. For models that you want to animate, you can specify a destination <xref:System.Windows.Media.Media3D.Quaternion> for the rotation by using a <xref:System.Windows.Media.Media3D.QuaternionRotation3D> for the <xref:System.Windows.Media.Media3D.RotateTransform3D.Rotation%2A> property.  
   
 ## Using Transformation Collections  
+
  When building a scene, it's common to apply more than one transformation to a model. Add transforms to the <xref:System.Windows.Media.Media3D.Transform3DGroup.Children%2A> collection of the <xref:System.Windows.Media.Media3D.Transform3DGroup> class to group transforms conveniently to apply to various models in the scene. It's often convenient to reuse a transformation in several different groups, in much the way that you can reuse a model by applying a different set of transforms to each instance. Note that order in which the transformations are added to the collection is significant: transforms in the collection are applied from first to last.  
   
 ## Animating Transformations  
+
  The Windows Presentation Foundation (WPF) 3D implementation participates in the same timing and animation system as 2D graphics. In other words, to animate a 3D scene, animate the properties of its models. It's possible to animate properties of primitives directly, but it's typically easier to animate transformations that change the position or appearance of models. Because transformations can be applied to <xref:System.Windows.Media.Media3D.Model3DGroup> objects as well as individual models, it's possible to apply one set of animations to the children of a Model3Dgroup and another set of animations to a group of objects.  For background information on the Windows Presentation Foundation (WPF) timing and animation system, see [Animation Overview](animation-overview.md) and [Storyboards Overview](storyboards-overview.md).  
   
  To animate an object in Windows Presentation Foundation (WPF), create a timeline, define an animation (which is really a change in some property value over time), and specify the property to which to apply the animation. This property must be a property of a FrameworkElement. Because all the objects in a 3D scene are children of Viewport3D, the properties targeted by any animation you want to apply to the scene are properties of properties of Viewport3D. It's important to work out the property path for the animation carefully, because the syntax can be verbose.  

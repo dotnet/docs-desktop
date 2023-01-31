@@ -12,11 +12,13 @@ helpviewer_keywords:
 ms.assetid: 52184f9b-16dd-4bbd-85be-029112644ceb
 ---
 # Regions in GDI+
+
 A region is a portion of the display area of an output device. Regions can be simple (a single rectangle) or complex (a combination of polygons and closed curves). The following illustration shows two regions: one constructed from a rectangle, and the other constructed from a path.  
   
  ![Screenshot of a region constructed from a rectangle and a screenshot of a region constructed from a path.](./media/aboutgdip02-art27.gif "AboutGdip02_Art27")  
   
 ## Using Regions  
+
  Regions are often used for clipping and hit testing. Clipping involves restricting drawing to a certain region of the display area, usually the portion that needs to be updated. Hit testing involves checking to determine whether the cursor is in a certain region of the screen when a mouse button is pressed.  
   
  You can construct a region from a rectangle or a path. You can also create complex regions by combining existing regions. The <xref:System.Drawing.Region> class provides the following methods for combining regions: <xref:System.Drawing.Region.Intersect%2A>, <xref:System.Drawing.Region.Union%2A>, <xref:System.Drawing.Region.Xor%2A>, <xref:System.Drawing.Region.Exclude%2A>, and <xref:System.Drawing.Region.Complement%2A>.  

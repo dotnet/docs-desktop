@@ -13,6 +13,7 @@ helpviewer_keywords:
 ms.assetid: 4fe2d501-d0b0-4fef-86af-6ffe6c162532
 ---
 # How to: Validate and Merge PrintTickets
+
 The Microsoft Windows [Print Schema](/windows/win32/printdocs/printschema) includes the flexible and extensible <xref:System.Printing.PrintCapabilities> and <xref:System.Printing.PrintTicket> elements. The former itemizes the capabilities of a print device and the latter specifies how the device should use those capabilities with respect to a particular sequence of documents, individual document, or individual page.  
   
  A typical sequence of tasks for an application that supports printing would be as follows.  
@@ -26,6 +27,7 @@ The Microsoft Windows [Print Schema](/windows/win32/printdocs/printschema) inclu
  This article shows how to do this.  
   
 ## Example  
+
  In the simple example below, we are interested only in whether a printer can support duplexing — two-sided printing. The major steps are as follows.  
   
 1. Get a <xref:System.Printing.PrintCapabilities> object with the <xref:System.Printing.PrintQueue.GetPrintCapabilities%2A> method.  

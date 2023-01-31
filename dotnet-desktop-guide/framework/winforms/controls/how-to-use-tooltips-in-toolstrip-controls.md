@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: c5d86024-a7c5-44ee-8b3f-2daf53d80d3e
 ---
 # How to: Use ToolTips in ToolStrip Controls
+
 You can display a <xref:System.Windows.Forms.ToolTip> for the <xref:System.Windows.Forms.ToolStrip> control you want by setting the control's <xref:System.Windows.Forms.ToolStrip.ShowItemToolTips%2A> property to `true`.  
   
 ### To display a ToolTip  

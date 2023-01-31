@@ -11,6 +11,7 @@ helpviewer_keywords:
 ms.assetid: a4a2960c-eb70-48e2-b641-cfb222704e46
 ---
 # Windows Forms Print Support
+
 Printing in Windows Forms consists primarily of using the [PrintDocument Component](../controls/printdocument-component-windows-forms.md) component to enable the user to print, and the [PrintPreviewDialog Control](../controls/printpreviewdialog-control-windows-forms.md) control, [PrintDialog Component](../controls/printdialog-component-windows-forms.md) and [PageSetupDialog Component](../controls/pagesetupdialog-component-windows-forms.md) components to provide a familiar graphical interface to users accustomed to the Windows operating system.  
   
  Typically, you create a new instance of the <xref:System.Drawing.Printing.PrintDocument> component, set the properties that describe what to print using the <xref:System.Drawing.Printing.PrinterSettings> and <xref:System.Drawing.Printing.PageSettings> classes, and call the <xref:System.Drawing.Printing.PrintDocument.Print%2A> method to actually print the document.  
@@ -18,6 +19,7 @@ Printing in Windows Forms consists primarily of using the [PrintDocument Compone
  During the course of printing from a Windows-based application, the <xref:System.Drawing.Printing.PrintDocument> component will show an abort print dialog box to alert users to the fact that printing is occurring and to allow the print job to be canceled.  
   
 ## In This Section  
+
  [How to: Create Standard Windows Forms Print Jobs](how-to-create-standard-windows-forms-print-jobs.md)  
  Explains how to use the <xref:System.Drawing.Printing.PrintDocument> component to print from a Windows Form.  
   
@@ -43,6 +45,7 @@ Printing in Windows Forms consists primarily of using the [PrintDocument Compone
  Shows how to use a <xref:System.Windows.Forms.PrintPreviewDialog> for printing a document.  
   
 ## Related Sections  
+
  [PrintDocument Component](../controls/printdocument-component-windows-forms.md)  
  Explains usage of the <xref:System.Drawing.Printing.PrintDocument> component.  
   

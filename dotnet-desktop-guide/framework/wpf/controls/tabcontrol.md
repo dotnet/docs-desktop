@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: 3d26404b-431e-432d-a82b-ef026feb3fff
 ---
 # TabControl
+
 <xref:System.Windows.Controls.TabControl> elements display content on discrete pages accessed by selecting the appropriate tab. Each tab contains a <xref:System.Windows.Controls.TabItem>.  
   
  The following illustration shows a <xref:System.Windows.Controls.TabControl>.  
@@ -18,6 +19,7 @@ ms.assetid: 3d26404b-431e-432d-a82b-ef026feb3fff
 Typical TabControl  
   
 ## Reference  
+
  <xref:System.Windows.Controls.TabControl>  
   <xref:System.Windows.Controls.TabItem>  
   

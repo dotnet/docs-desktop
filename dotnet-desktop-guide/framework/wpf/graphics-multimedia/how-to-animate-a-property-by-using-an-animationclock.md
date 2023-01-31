@@ -11,6 +11,7 @@ helpviewer_keywords:
 ms.assetid: e6542021-714c-4675-9567-04f1c7380834
 ---
 # How to: Animate a Property by Using an AnimationClock
+
 This example shows how to use <xref:System.Windows.Media.Animation.Clock> objects to animate a property.  
   
  There are three ways to animate a dependency property:  
@@ -24,6 +25,7 @@ This example shows how to use <xref:System.Windows.Media.Animation.Clock> object
  <xref:System.Windows.Media.Animation.Storyboard> objects and the <xref:System.Windows.Media.Animation.Animatable.BeginAnimation%2A> method enable you to animate properties without directly creating and distributing clocks (for examples, see [Animate a Property by Using a Storyboard](how-to-animate-a-property-by-using-a-storyboard.md) and [Animate a Property Without Using a Storyboard](how-to-animate-a-property-without-using-a-storyboard.md)); clocks are created and distributed for you automatically.  
   
 ## Example  
+
  The following example shows how to create an <xref:System.Windows.Media.Animation.AnimationClock> and apply it to two similar properties.  
   
  [!code-csharp[timingbehaviors_procedural_snip#GraphicsMMCreateAnimationClockWholeClass](~/samples/snippets/csharp/VS_Snippets_Wpf/timingbehaviors_procedural_snip/CSharp/AnimationClockExample.cs#graphicsmmcreateanimationclockwholeclass)]

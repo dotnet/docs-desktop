@@ -8,9 +8,11 @@ helpviewer_keywords:
 ms.assetid: b1f15ba9-cac7-4cea-8699-5c6b55c05c5e
 ---
 # How to: Animate an Object by Using Key Frames
+
 This example shows how to animate an object, which in this example is the <xref:System.Windows.Controls.Page.Background%2A> property of a <xref:System.Windows.Controls.Page> control, by using key frames.  
   
 ## Example  
+
  The following example uses the <xref:System.Windows.Media.Animation.ObjectAnimationUsingKeyFrames> class to animate color changes for the <xref:System.Windows.Controls.Page.Background%2A> property of a <xref:System.Windows.Controls.Page> control. The example animation changes to a different background brush at regular intervals. This animation uses the <xref:System.Windows.Media.Animation.DiscreteObjectKeyFrame> class to create three different key frames. The animation uses key frames in the following manner:  
   
 1. At the end of the first second, animates an instance of the <xref:System.Windows.Media.LinearGradientBrush> class. This section of the example applies a linear gradient to the background color so that the color transitions from yellow to orange to red.  

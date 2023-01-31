@@ -12,9 +12,11 @@ helpviewer_keywords:
 ms.assetid: d8700bef-a3f8-4c12-9de2-fc3b79f32cd3
 ---
 # How to: Scroll Content by Using the IScrollInfo Interface
+
 This example shows how to scroll content by using the <xref:System.Windows.Controls.Primitives.IScrollInfo> interface.  
   
 ## Example  
+
  The following example demonstrates the features of the <xref:System.Windows.Controls.Primitives.IScrollInfo> interface. The example creates a <xref:System.Windows.Controls.StackPanel> element in Extensible Application Markup Language (XAML) that is nested in a parent <xref:System.Windows.Controls.ScrollViewer>. The child elements of the <xref:System.Windows.Controls.StackPanel> can be scrolled logically by using the methods defined by the <xref:System.Windows.Controls.Primitives.IScrollInfo> interface and cast to the instance of <xref:System.Windows.Controls.StackPanel> (`sp1`) in code.  
   
  [!code-xaml[IScrollInfoMethods#2](~/samples/snippets/csharp/VS_Snippets_Wpf/IScrollInfoMethods/CSharp/Window1.xaml#2)]  

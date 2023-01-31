@@ -10,9 +10,11 @@ helpviewer_keywords:
 ms.assetid: 1b872bc6-1a26-401c-989b-3fafecc5a4ef
 ---
 # Separator
+
 A <xref:System.Windows.Controls.Separator> control draws a line, horizontal or vertical, between items in controls, such as <xref:System.Windows.Controls.ListBox>, <xref:System.Windows.Controls.Menu>, and <xref:System.Windows.Controls.ToolBar>.  
   
 ## In This Section  
   
 ## Reference  
+
  <xref:System.Windows.Controls.Separator>

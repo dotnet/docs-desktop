@@ -24,6 +24,7 @@ helpviewer_keywords:
 ms.assetid: 6be085a2-2c13-47c8-b80a-c18b32777d8d
 ---
 # Types of Bitmaps
+
 A bitmap is an array of bits that specify the color of each pixel in a rectangular array of pixels. The number of bits devoted to an individual pixel determines the number of colors that can be assigned to that pixel. For example, if each pixel is represented by 4 bits, then a given pixel can be assigned one of 16 different colors (2^4 = 16). The following table shows a few examples of the number of colors that can be assigned to a pixel represented by a given number of bits.  
   
 |Bits per pixel|Number of colors that can be assigned to a pixel|  
@@ -49,15 +50,19 @@ A bitmap is an array of bits that specify the color of each pixel in a rectangul
  ![Screenshot of a bitmap that stores colors directly with an enlarged view of the corresponding image.](./media/aboutgdip03-art02.gif "AboutGdip03_Art02")  
   
 ## Graphics File Formats  
+
  There are many standard formats for saving bitmaps in disk files. GDI+ supports the graphics file formats described in the following paragraphs.  
   
 ### BMP  
+
  BMP is a standard format used by Windows to store device-independent and application-independent images. The number of bits per pixel (1, 4, 8, 15, 24, 32, or 64) for a given BMP file is specified in a file header. BMP files with 24 bits per pixel are common. BMP files are usually not compressed and, therefore, are not well suited for transfer across the Internet.  
   
 ### Graphics Interchange Format (GIF)  
+
  GIF is a common format for images that appear on Web pages. GIFs work well for line drawings, pictures with blocks of solid color, and pictures with sharp boundaries between colors. GIFs are compressed, but no information is lost in the compression process; a decompressed image is exactly the same as the original. One color in a GIF can be designated as transparent, so that the image will have the background color of any Web page that displays it. A sequence of GIF images can be stored in a single file to form an animated GIF. GIFs store at most 8 bits per pixel, so they are limited to 256 colors.  
   
 ### Joint Photographic Experts Group (JPEG)  
+
  JPEG is a compression scheme that works well for natural scenes such as scanned photographs. Some information is lost in the compression process, but often the loss is imperceptible to the human eye. JPEGs store 24 bits per pixel, so they are capable of displaying more than 16 million colors. JPEGs do not support transparency or animation.  
   
  The level of compression in JPEG images is configurable, but higher compression levels (smaller files) result in more loss of information. A 20:1 compression ratio often produces an image that the human eye finds difficult to distinguish from the original. The following illustration shows a BMP image and two JPEG images that were compressed from that BMP image. The first JPEG has a compression ratio of 4:1 and the second JPEG has a compression ratio of about 8:1.  
@@ -71,14 +76,17 @@ A bitmap is an array of bits that specify the color of each pixel in a rectangul
  JPEG is a compression scheme, not a file format. JPEG File Interchange Format (JFIF) is a file format commonly used for storing and transferring images that have been compressed according to the JPEG scheme. JFIF files displayed by Web browsers use the .jpg extension.  
   
 ### Exchangeable Image File (EXIF)  
+
  EXIF is a file format used for photographs captured by digital cameras. An EXIF file contains an image that is compressed according to the JPEG specification. An EXIF file also contains information about the photograph (date taken, shutter speed, exposure time, and so on) and information about the camera (manufacturer, model, and so on).  
   
 ### Portable Network Graphics (PNG)  
+
  The PNG format retains many of the advantages of the GIF format but also provides capabilities beyond those of GIF. Like GIF files, PNG files are compressed with no loss of information. PNG files can store colors with 8, 24, or 48 bits per pixel and grayscales with 1, 2, 4, 8, or 16 bits per pixel. In contrast, GIF files can use only 1, 2, 4, or 8 bits per pixel. A PNG file can also store an alpha value for each pixel, which specifies the degree to which the color of that pixel is blended with the background color.  
   
  PNG improves on GIF in its ability to progressively display an image (that is, to display better and better approximations of the image as it arrives over a network connection). PNG files can contain gamma correction and color correction information so that the images can be accurately rendered on a variety of display devices.  
   
 ### Tag Image File Format (TIFF)  
+
  TIFF is a flexible and extendable format that is supported by a wide variety of platforms and image-processing applications. TIFF files can store images with an arbitrary number of bits per pixel and can employ a variety of compression algorithms. Several images can be stored in a single, multiple-page TIFF file. Information related to the image (scanner make, host computer, type of compression, orientation, samples per pixel, and so on) can be stored in the file and arranged through the use of tags. The TIFF format can be extended as needed by the approval and addition of new tags.  
   
 ## See also

@@ -8,9 +8,11 @@ helpviewer_keywords:
 ms.assetid: 49a4a8b7-e738-45be-8dac-b54a6d8f5b21
 ---
 # How to: Create a Shape by Using a PathGeometry
+
 This example shows how to create a shape using the <xref:System.Windows.Media.PathGeometry> class. <xref:System.Windows.Media.PathGeometry> objects are composed of one or more <xref:System.Windows.Media.PathFigure> objects; each <xref:System.Windows.Media.PathFigure> represents a different "figure" or shape. Each <xref:System.Windows.Media.PathFigure> is itself composed of one or more <xref:System.Windows.Media.PathSegment> objects, each representing a connected portion of the figure or shape. Segment types include <xref:System.Windows.Media.LineSegment>, <xref:System.Windows.Media.ArcSegment>, and <xref:System.Windows.Media.BezierSegment>.  
   
 ## Example  
+
  The following example uses a <xref:System.Windows.Media.PathGeometry> to create a triangle. The  <xref:System.Windows.Media.PathGeometry> is displayed using a <xref:System.Windows.Shapes.Path> element.  
   
  [!code-xaml[GeometrySample#49](~/samples/snippets/csharp/VS_Snippets_Wpf/GeometrySample/CS/pathgeometryexample.xaml#49)]  

@@ -11,12 +11,15 @@ helpviewer_keywords:
 ms.assetid: fdb390e9-1bba-4b5f-87fe-c3bc246fa7e9
 ---
 # Canvas
+
 <xref:System.Windows.Controls.Canvas> is a layout control that enables absolute positioning of child elements.  
   
 ## In This Section  
+
  [How-to Topics](canvas-how-to-topics.md)  
   
 ## Reference  
+
  <xref:System.Windows.Controls.Panel>  
   
  <xref:System.Windows.Controls.Canvas>  
@@ -32,6 +35,7 @@ ms.assetid: fdb390e9-1bba-4b5f-87fe-c3bc246fa7e9
  <xref:System.Windows.Controls.WrapPanel>  
   
 ## Related Sections  
+
  [Layout](../advanced/layout.md)  
   
  [Walkthrough: My first WPF desktop application](../getting-started/walkthrough-my-first-wpf-desktop-application.md)  

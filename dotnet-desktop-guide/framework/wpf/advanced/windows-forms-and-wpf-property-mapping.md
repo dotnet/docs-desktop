@@ -12,6 +12,7 @@ ms.assetid: 999d8298-9c04-467d-a453-86e41002057d
 description: Learn how to use the PropertyMap property on the WindowsFormsHost element and the PropertyMap property on ElementHost control to access property mapping.
 ---
 # Windows Forms and WPF Property Mapping
+
 The Windows Forms and WPF technologies have two similar but different property models. *Property mapping* supports interoperation between the two architectures and provides the following capabilities:  
   
 - Makes it easy to map relevant property changes in the host environment to the hosted control or element.  
@@ -28,6 +29,7 @@ The Windows Forms and WPF technologies have two similar but different property m
  Use the <xref:System.Windows.Forms.Integration.WindowsFormsHost.PropertyMap%2A> property on the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element and the <xref:System.Windows.Forms.Integration.ElementHost.PropertyMap%2A> property on <xref:System.Windows.Forms.Integration.ElementHost> control to access property mapping.  
   
 ## Property Mapping with the WindowsFormsHost Element  
+
  The <xref:System.Windows.Forms.Integration.WindowsFormsHost> element translates default WPF properties to their Windows Forms equivalents using the following translation table.  
   
 |Windows Presentation Foundation hosting|Windows Forms|Interoperation behavior|  
@@ -48,6 +50,7 @@ The Windows Forms and WPF technologies have two similar but different property m
  For more information, see [Walkthrough: Mapping Properties Using the WindowsFormsHost Element](walkthrough-mapping-properties-using-the-windowsformshost-element.md).  
   
 ## Updates to Parent Properties  
+
  Changes to most parent properties cause notifications to the hosted child control. The following list describes properties which do not cause notifications when their values change.  
   
 - <xref:System.Windows.Controls.Control.Background%2A>  
@@ -61,6 +64,7 @@ The Windows Forms and WPF technologies have two similar but different property m
  For example, if you change the value of the <xref:System.Windows.Controls.Control.Background%2A> property of the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element, the <xref:System.Windows.Forms.Control.BackColor%2A> property of the hosted control does not change.  
   
 ## Property Mapping with the ElementHost Control  
+
  The following properties provide built-in change notification. Do not call the <xref:System.Windows.FrameworkElement.OnPropertyChanged%2A> method when you are mapping these properties:  
   
 - AutoSize  

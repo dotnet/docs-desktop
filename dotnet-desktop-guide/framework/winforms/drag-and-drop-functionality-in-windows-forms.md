@@ -8,15 +8,19 @@ helpviewer_keywords:
 ms.assetid: 65cd2c03-8782-474e-b958-cbe43eeb902c
 ---
 # Drag-and-Drop Functionality in Windows Forms
+
 Windows Forms includes a set of methods, events, and classes that implement drag-and-drop behavior. This topic provides an overview of the drag-and-drop support in Windows Forms.  Also see [Drag-and-Drop Operations and Clipboard Support](./advanced/drag-and-drop-operations-and-clipboard-support.md).  
   
 ## Performing Drag-and-Drop Operations  
+
  To perform a drag-and-drop operation, use the <xref:System.Windows.Forms.Control.DoDragDrop%2A> method of the <xref:System.Windows.Forms.Control> class. For more information about how a drag-and-drop operation is performed, see <xref:System.Windows.Forms.Control.DoDragDrop%2A>. To get the rectangle that the mouse pointer must be dragged over before a drag-and-drop operation begins, use the <xref:System.Windows.Forms.SystemInformation.DragSize%2A> property of the <xref:System.Windows.Forms.SystemInformation> class.  
   
 ## Events Related to Drag-and-Drop Operations  
+
  There are two categories of events in a drag and drop operation: events that occur on the current target of the drag-and-drop operation, and events that occur on the source of the drag and drop operation.  
   
 ### Events on the Current Target  
+
  The following table shows the events that occur on the current target of a drag-and-drop operation.  
   
 |Mouse Event|Description|  
@@ -29,6 +33,7 @@ Windows Forms includes a set of methods, events, and classes that implement drag
  The <xref:System.Windows.Forms.DragEventArgs> class provides the location of the mouse pointer, the current state of the mouse buttons and modifier keys of the keyboard, the data being dragged, and <xref:System.Windows.Forms.DragDropEffects> values that specify the operations allowed by the source of the drag event and the target drop effect for the operation.  
   
 ### Events on the Source  
+
  The following table shows the events that occur on the source of the drag-and-drop operation.  
   
 |Mouse Event|Description|  

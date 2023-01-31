@@ -14,9 +14,11 @@ helpviewer_keywords:
 ms.assetid: 6128ca77-b826-4e36-b968-6f237157c543
 ---
 # How to: Control a MediaElement by Using a Storyboard
+
 This example shows how to control a <xref:System.Windows.Controls.MediaElement> by using a <xref:System.Windows.Media.MediaTimeline> in a <xref:System.Windows.Media.Animation.Storyboard>.  
   
 ## Example  
+
  When you use a <xref:System.Windows.Media.MediaTimeline> in a <xref:System.Windows.Media.Animation.Storyboard> to control the timing of a <xref:System.Windows.Controls.MediaElement>, the functionality is identical to the functionality of other <xref:System.Windows.Media.Animation.Timeline> objects, such as animations. For example, a <xref:System.Windows.Media.MediaTimeline> uses <xref:System.Windows.Media.Animation.Timeline> properties like the <xref:System.Windows.Media.Animation.Timeline.BeginTime%2A> property to specify when to start a <xref:System.Windows.Controls.MediaElement> (start media playback). It also uses the <xref:System.Windows.Media.Animation.Timeline.Duration%2A> property to specify how long the <xref:System.Windows.Controls.MediaElement> is active (duration of media playback). For more information about using <xref:System.Windows.Media.Animation.Timeline> objects with a <xref:System.Windows.Media.Animation.Storyboard>, see [Storyboards Overview](storyboards-overview.md).  
   
  This example shows how to create a simple media player that uses a <xref:System.Windows.Media.MediaTimeline> to control playback. The media player includes play, pause, resume, and stop buttons. The player also has a <xref:System.Windows.Controls.Slider> control that acts as a progress bar.  

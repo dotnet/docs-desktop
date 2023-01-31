@@ -12,6 +12,7 @@ helpviewer_keywords:
 ms.assetid: 699ef759-458c-426d-ac87-7c7e71b018ae
 ---
 # How to: Set Alternating Row Styles for the Windows Forms DataGridView Control
+
 Tabular data is often presented to users in a ledger-like format where alternating rows have different background colors. This format makes it easier for users to tell which cells are in each row, especially with wide tables that have many columns.  
   
  With the <xref:System.Windows.Forms.DataGridView> control, you can specify complete style information for alternating rows. This enables you use style characteristics like foreground color and font, in addition to background color, to differentiate alternating rows.  
@@ -29,6 +30,7 @@ Tabular data is often presented to users in a ledger-like format where alternati
     > The styles specified using the <xref:System.Windows.Forms.DataGridView.RowsDefaultCellStyle%2A> and <xref:System.Windows.Forms.DataGridView.AlternatingRowsDefaultCellStyle%2A> properties override the styles specified on the column and <xref:System.Windows.Forms.DataGridView> level, but are overridden by the styles set on the individual row and cell level. For more information, see [Cell Styles in the Windows Forms DataGridView Control](cell-styles-in-the-windows-forms-datagridview-control.md).  
   
 ## Compiling the Code  
+
  This example requires:  
   
 - A <xref:System.Windows.Forms.DataGridView> control named `dataGridView1`.  
@@ -36,6 +38,7 @@ Tabular data is often presented to users in a ledger-like format where alternati
 - References to the <xref:System?displayProperty=nameWithType>, <xref:System.Drawing?displayProperty=nameWithType>, and <xref:System.Windows.Forms?displayProperty=nameWithType> assemblies.  
   
 ## Robust Programming  
+
  For maximum scalability, you should share <xref:System.Windows.Forms.DataGridViewCellStyle> objects across multiple rows, columns, or cells that use the same styles, rather than setting the style properties for each element separately. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
 ## See also

@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 5e65a6c3-5d6f-480d-beb8-b28f865f07e3
 ---
 # Windows Forms Controls by Function
+
 Windows Forms offers controls and components that perform a number of functions. The following table lists the Windows Forms controls and components according to general function. In addition, where multiple controls exist that serve the same function, the recommended control is listed with a note regarding the control it superseded. In a separate subsequent table, the superseded controls are listed with their recommended replacements.  
   
 > [!NOTE]

@@ -11,9 +11,11 @@ helpviewer_keywords:
 ms.assetid: 5a3c4a99-f303-42ad-a52a-e4794bb1798e
 ---
 # How to: Animate an Object Along a Path (Double Animation)
+
 This example shows how to use the <xref:System.Windows.Media.Animation.DoubleAnimationUsingPath> class to move an object along a path defined by a <xref:System.Windows.Media.PathGeometry>.  
   
 ## Example  
+
  The following example uses two <xref:System.Windows.Media.Animation.DoubleAnimationUsingPath> objects to move a rectangle along a geometric path:  
   
 - The first <xref:System.Windows.Media.Animation.DoubleAnimationUsingPath> animates the <xref:System.Windows.Media.TranslateTransform.X%2A> of the <xref:System.Windows.Media.TranslateTransform> applied to the rectangle. It makes the rectangle move horizontally along the path.  

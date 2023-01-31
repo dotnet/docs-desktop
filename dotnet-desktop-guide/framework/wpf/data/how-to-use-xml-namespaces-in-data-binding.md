@@ -9,7 +9,9 @@ helpviewer_keywords:
 ms.assetid: a47c832f-dc84-48f2-96d5-cde18fc4284b
 ---
 # How to: Use XML Namespaces in Data Binding
+
 ## Example
+
  This example shows how to handle namespaces specified in your XML binding source.
 
  If your XML data has the following XML namespace definition:

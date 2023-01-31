@@ -10,9 +10,11 @@ helpviewer_keywords:
 ms.assetid: 6e3e1cc2-9c48-4136-9659-e99e4e60b7e9
 ---
 # WebBrowser Control Overview
+
 The <xref:System.Windows.Forms.WebBrowser> control provides a managed wrapper for the WebBrowser ActiveX control. The managed wrapper lets you display Web pages in your Windows Forms client applications. You can use the <xref:System.Windows.Forms.WebBrowser> control to duplicate Internet Explorer Web browsing functionality in your application or you can disable default Internet Explorer functionality and use the control as a simple HTML document viewer. You can also use the control to add DHTML-based user interface elements to your form and hide the fact that they are hosted in the <xref:System.Windows.Forms.WebBrowser> control. This approach lets you seamlessly combine Web controls with Windows Forms controls in a single application.  
   
 ## Frequently Used Properties, Methods, and Events  
+
  The <xref:System.Windows.Forms.WebBrowser> control has several properties, methods, and events that you can use to implement controls found in Internet Explorer. For example, you can use the `Navigate` method to implement an address bar, and the `GoBack`, `GoForward`, `Stop`, and `Refresh` methods to implement navigation buttons on a toolbar. You can handle the `Navigated` event to update the address bar with the value of the `Url` property and the title bar with the value of the `DocumentTitle` property.  
   
  If you want to generate your own page content within your application, you can set the `DocumentText` property. If you are familiar with the HTML document object model (DOM), you can also manipulate the contents of the current Web page through the `Document` property. With this property, you can store and modify documents in memory instead of navigating among files.  

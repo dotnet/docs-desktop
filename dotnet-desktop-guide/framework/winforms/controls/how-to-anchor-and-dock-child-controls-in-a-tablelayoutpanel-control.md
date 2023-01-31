@@ -15,6 +15,7 @@ ms.assetid: 0d267c35-25f1-49b8-8976-c64e8f0ddc0b
 description: Learn how to anchor, dock, align, and stretch child controls in a TableLayoutPanel control by adjusting the value of properties.
 ---
 # How to: Anchor and Dock Child Controls in a TableLayoutPanel Control
+
 The <xref:System.Windows.Forms.TableLayoutPanel> control supports the <xref:System.Windows.Forms.Control.Anchor%2A> and <xref:System.Windows.Forms.Control.Dock%2A> properties in its child controls.  
   
 ### To align a child control in a TableLayoutPanel cell  
@@ -55,6 +56,7 @@ The <xref:System.Windows.Forms.TableLayoutPanel> control supports the <xref:Syst
 6. Change the value of the <xref:System.Windows.Forms.Button> control's <xref:System.Windows.Forms.Control.Dock%2A> property to <xref:System.Windows.Forms.DockStyle.Fill>. The <xref:System.Windows.Forms.Button> control is resized to fill the cell.  
   
 ## Example  
+
  The following illustration shows five buttons anchored in five separate <xref:System.Windows.Forms.TableLayoutPanel> cells.  
   
  ![Screenshot of the TableLayoutPanel, showing five buttons anchored in different locations in five separate cells.](./media/vs-tlpanchor.gif "VS_TLPanchor")  
@@ -73,6 +75,7 @@ The <xref:System.Windows.Forms.TableLayoutPanel> control supports the <xref:Syst
  [!code-vb[System.Windows.Forms.TableLayoutPanel.AnchorExampleForm#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TableLayoutPanel.AnchorExampleForm/VB/TlpAnchorExampleForm.vb#1)]  
   
 ## Compiling the Code  
+
  This example requires:  
   
 - References to the System, System.Data, System.Drawing and System.Windows.Forms assemblies.  

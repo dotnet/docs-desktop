@@ -12,9 +12,11 @@ helpviewer_keywords:
 ms.assetid: fcd37590-bce1-4ac9-8b74-3b96c7458b8a
 ---
 # How to: Navigate Through the Objects in a Data CollectionView
+
 Views allow the same data collection to be viewed in different ways, depending on sorting, filtering, or grouping. Views also provide a current record pointer concept and enable moving the pointer. This example shows how to get the current object as well as navigate through the objects in a data collection using the functionality provided in the <xref:System.Windows.Data.CollectionView> class.  
   
 ## Example  
+
  In this example, `myCollectionView` is a <xref:System.Windows.Data.CollectionView> object that is a view over a bound collection.  
   
  In the following example, `OnButton` is an event handler for the `Previous` and `Next` buttons in an application, which are buttons that allow the user to navigate the data collection. Note that the <xref:System.Windows.Data.CollectionView.IsCurrentBeforeFirst%2A> and <xref:System.Windows.Data.CollectionView.IsCurrentAfterLast%2A> properties report whether the current record pointer has come to the beginning and the end of the list respectively so that <xref:System.Windows.Data.CollectionView.MoveCurrentToFirst%2A> and <xref:System.Windows.Data.CollectionView.MoveCurrentToLast%2A> can be called as appropriately.  

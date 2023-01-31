@@ -10,15 +10,18 @@ helpviewer_keywords:
 ms.assetid: 28d8faf2-490c-4e17-a447-df25a66f6679
 ---
 # Panel How-to Topics
+
 The topics in this section describe how to use the <xref:System.Windows.Controls.Panel> element and related APIs.  
   
 ## In This Section  
+
  [Create a Custom Panel Element](how-to-create-a-custom-panel-element.md)  
  [Override the Panel OnRender Method](how-to-override-the-panel-onrender-method.md)  
  [Set the Height Properties of an Element](how-to-set-the-height-properties-of-an-element.md)  
  [Set the Width Properties of an Element](how-to-set-the-width-properties-of-an-element.md)  
   
 ## Reference  
+
  <xref:System.Windows.Controls.Panel>  
   
  <xref:System.Windows.Controls.Canvas>  
@@ -34,6 +37,7 @@ The topics in this section describe how to use the <xref:System.Windows.Controls
  <xref:System.Windows.Controls.WrapPanel>  
   
 ## Related Sections  
+
  [Layout](../advanced/layout.md)  
   
  [Walkthrough: My first WPF desktop application](../getting-started/walkthrough-my-first-wpf-desktop-application.md)  

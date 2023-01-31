@@ -12,6 +12,7 @@ api_location:
 ms.assetid: d037c062-a911-4949-b251-ccd3e48b1d17
 ---
 # LoadFromHistory Function (WPF Unmanaged API Reference)
+
 This API supports the Windows Presentation Foundation (WPF) infrastructure and is not intended to be used directly from your code.  
   
  Used by the Windows Presentation Foundation (WPF) infrastructure for windows management.  
@@ -26,6 +27,7 @@ HRESULT LoadFromHistory_export(
 ```  
   
 ## Parameters  
+
  pHistoryStream  
  A pointer to a stream of history information.  
   
@@ -33,6 +35,7 @@ HRESULT LoadFromHistory_export(
  A pointer to a bind context.  
   
 ## Requirements  
+
  **Platforms:** See [.NET Framework System Requirements](/dotnet/framework/get-started/system-requirements).  
   
  **DLL:**  

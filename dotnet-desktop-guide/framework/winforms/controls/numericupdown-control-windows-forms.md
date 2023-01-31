@@ -12,9 +12,11 @@ helpviewer_keywords:
 ms.assetid: 32b0c20d-4f37-4aea-873d-faded741d2db
 ---
 # NumericUpDown Control (Windows Forms)
+
 The Windows Forms `NumericUpDown` control looks like a combination of a text box and a pair of arrows that the user can click to adjust a value. The control displays and sets a single numeric value from a list of choices. The user can increase and decrease the number by clicking up and down buttons, by pressing the UP and DOWN ARROW keys, or by typing a number. Clicking the UP ARROW key moves the value toward its maximum; clicking the DOWN ARROW key moves the position toward the minimum. An example where this kind of control might be useful is for a volume control on a music player. Numeric up-down controls are used in some Windows control panel applications.  
   
 ## In This Section  
+
  [NumericUpDown Control Overview](numericupdown-control-overview-windows-forms.md)  
  Introduces the general concepts of the `NumericUpDown` control, which allows users to browse through and select from a list of numeric values.  
   
@@ -25,10 +27,12 @@ The Windows Forms `NumericUpDown` control looks like a combination of a text box
  Describes how to configure how values are displayed in the control.  
   
 ## Reference  
+
  <xref:System.Windows.Forms.NumericUpDown>  
  Provides reference information on the <xref:System.Windows.Forms.NumericUpDown> class and its members.  
   
 ## Related Sections  
+
  [Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)  
  Provides a complete list of Windows Forms controls, with links to information on their use.  
   

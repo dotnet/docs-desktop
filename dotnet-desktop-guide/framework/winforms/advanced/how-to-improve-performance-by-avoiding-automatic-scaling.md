@@ -13,6 +13,7 @@ ms.assetid: 5fe2c95d-8653-4d55-bf0d-e5afa28f223b
 description: Learn how to improve performance by avoiding automatic scaling and passing the dimensions of the destination rectangle to the DrawImage method.
 ---
 # How to: Improve Performance by Avoiding Automatic Scaling
+
 GDI+ may automatically scale an image as you draw it, which would decrease performance. Alternatively, you can control the scaling of the image by passing the dimensions of the destination rectangle to the <xref:System.Drawing.Graphics.DrawImage%2A> method.  
   
  For example, the following call to the <xref:System.Drawing.Graphics.DrawImage%2A> method specifies an upper-left corner of (50, 30) but does not specify a destination rectangle.  
@@ -25,6 +26,7 @@ GDI+ may automatically scale an image as you draw it, which would decrease perfo
  Even if your screen resolution is different from 96 dots per inch, GDI+ will probably scale the image as if the screen resolution were 96 dots per inch. That is because a GDI+ <xref:System.Drawing.Graphics> object is associated with a device context, and when GDI+ queries the device context for the screen resolution, the result is usually 96, regardless of the actual screen resolution. You can avoid automatic scaling by specifying the destination rectangle in the <xref:System.Drawing.Graphics.DrawImage%2A> method.  
   
 ## Example  
+
  The following example draws the same image twice. In the first case, the width and height of the destination rectangle are not specified, and the image is automatically scaled. In the second case, the width and height (measured in pixels) of the destination rectangle are specified to be the same as the width and height of the original image. The following illustration shows the image rendered twice:  
   
  ![Screenshot that shows images with scaled texture.](./media/how-to-improve-performance-by-avoiding-automatic-scaling/two-scaled-texture-images.png)  
@@ -33,6 +35,7 @@ GDI+ may automatically scale an image as you draw it, which would decrease perfo
  [!code-vb[System.Drawing.WorkingWithImages#32](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.WorkingWithImages/VB/Class1.vb#32)]  
   
 ## Compiling the Code  
+
  The preceding example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs> `e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. Replace Texture.jpg with an image name and path that are valid on your system.  
   
 ## See also

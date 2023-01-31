@@ -12,9 +12,11 @@ helpviewer_keywords:
 ms.assetid: 91a371f1-81e4-40da-ad61-ec24167152e6
 ---
 # Shapes How-to Topics
+
 The topics in this section demonstrate how to use <xref:System.Windows.Shapes.Shape> objects to draw basic shapes to the screen.  
   
 ## In This Section  
+
  [Draw a Closed Shape by Using the Polygon Element](how-to-draw-a-closed-shape-by-using-the-polygon-element.md)  
  [Draw an Ellipse or a Circle](how-to-draw-an-ellipse-or-a-circle.md)  
  [Draw a Line](how-to-draw-a-line.md)  

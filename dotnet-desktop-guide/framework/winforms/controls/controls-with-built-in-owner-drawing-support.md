@@ -12,6 +12,7 @@ helpviewer_keywords:
 ms.assetid: 3823d01e-9610-43e6-864d-99f9b7c2b351
 ---
 # Controls with Built-In Owner-Drawing Support
+
 Owner drawing in Windows Forms, which is also known as custom drawing, is a technique for changing the visual appearance of certain controls.  
   
 > [!NOTE]
@@ -22,6 +23,7 @@ Owner drawing in Windows Forms, which is also known as custom drawing, is a tech
  In practice, owner drawing is similar to drawing graphics on a form. For example, you could use graphics methods in a handler for the form's <xref:System.Windows.Forms.Control.Paint> event to emulate a `ListBox` control, but you would have to write your own code to handle all user interaction. With owner drawing, the control uses your code to draw its contents but otherwise retains all its intrinsic capabilities. You can use graphics methods to draw each item in the control or to customize some aspects of each item while you use the default appearance for other aspects of each item.  
   
 ## Owner Drawing in Windows Forms Controls  
+
  To perform owner drawing in controls that support it, you will typically set one property and handle one or more events.  
   
  Most controls that support owner drawing have an `OwnerDraw` or `DrawMode` property that indicates whether the control will raise its drawing-related event or events when it paints itself.  
@@ -59,6 +61,7 @@ Owner drawing in Windows Forms, which is also known as custom drawing, is a tech
  The following sections provide additional details for each of these controls.  
   
 ### ListBox and ComboBox Controls  
+
  The <xref:System.Windows.Forms.ListBox> and <xref:System.Windows.Forms.ComboBox> controls enable you to draw individual items in the control either all in one size, or in varying sizes.  
   
 > [!NOTE]
@@ -85,6 +88,7 @@ Owner drawing in Windows Forms, which is also known as custom drawing, is a tech
 - [How to: Create Variable Sized Text in a ComboBox Control](how-to-create-variable-sized-text-in-a-combobox-control.md)  
   
 ### MenuItem Component  
+
  The <xref:System.Windows.Forms.MenuItem> component represents a single menu item in a <xref:System.Windows.Forms.MainMenu> or <xref:System.Windows.Forms.ContextMenu> component.  
   
  To draw a <xref:System.Windows.Forms.MenuItem>, set its `OwnerDraw` property to `true` and handle its `DrawItem` event. To customize the size of the menu item before the `DrawItem` event occurs, handle the item's `MeasureItem` event.  
@@ -98,6 +102,7 @@ Owner drawing in Windows Forms, which is also known as custom drawing, is a tech
 - <xref:System.Windows.Forms.MenuItem.MeasureItem?displayProperty=nameWithType>  
   
 ### TabControl Control  
+
  The <xref:System.Windows.Forms.TabControl> control enables you to draw individual tabs in the control. Owner drawing affects only the tabs; the <xref:System.Windows.Forms.TabPage> contents are not affected.  
   
  To draw each tab in a <xref:System.Windows.Forms.TabControl>, set the `DrawMode` property to <xref:System.Windows.Forms.TabDrawMode.OwnerDrawFixed> and handle the `DrawItem` event. This event occurs once for each tab only when the tab is visible in the control.  
@@ -109,6 +114,7 @@ Owner drawing in Windows Forms, which is also known as custom drawing, is a tech
 - <xref:System.Windows.Forms.TabControl.DrawItem?displayProperty=nameWithType>  
   
 ### ToolTip Component  
+
  The <xref:System.Windows.Forms.ToolTip> component enables you to draw the entire ToolTip when it is displayed.  
   
  To draw a <xref:System.Windows.Forms.ToolTip>, set its `OwnerDraw` property to `true` and handle its `Draw` event. To customize the size of the <xref:System.Windows.Forms.ToolTip> before the `Draw` event occurs, handle the `Popup` event and set the <xref:System.Windows.Forms.PopupEventArgs.ToolTipSize%2A> property in the event handler.  
@@ -122,6 +128,7 @@ Owner drawing in Windows Forms, which is also known as custom drawing, is a tech
 - <xref:System.Windows.Forms.ToolTip.Popup?displayProperty=nameWithType>  
   
 ### ListView Control  
+
  The <xref:System.Windows.Forms.ListView> control enables you to draw individual items, subitems, and column headers in the control.  
   
  To enable owner drawing in the control, set the `OwnerDraw` property to `true`.  
@@ -141,6 +148,7 @@ Owner drawing in Windows Forms, which is also known as custom drawing, is a tech
 - <xref:System.Windows.Forms.ListView.DrawColumnHeader?displayProperty=nameWithType>  
   
 ### TreeView Control  
+
  The <xref:System.Windows.Forms.TreeView> control enables you to draw individual nodes in the control.  
   
  To draw only the text displayed in each node, set the `DrawMode` property to <xref:System.Windows.Forms.TreeViewDrawMode.OwnerDrawText> and handle the `DrawNode` event to draw the text.  
@@ -154,6 +162,7 @@ Owner drawing in Windows Forms, which is also known as custom drawing, is a tech
 - <xref:System.Windows.Forms.TreeView.DrawNode?displayProperty=nameWithType>  
   
 ### DataGridView Control  
+
  The <xref:System.Windows.Forms.DataGridView> control enables you to draw individual cells and rows in the control.  
   
  To draw individual cells, handle the `CellPainting` event.  
@@ -173,6 +182,7 @@ Owner drawing in Windows Forms, which is also known as custom drawing, is a tech
 - [How to: Customize the Appearance of Rows in the Windows Forms DataGridView Control](customize-the-appearance-of-rows-in-the-datagrid.md)  
   
 ### ToolStrip Control  
+
  <xref:System.Windows.Forms.ToolStrip> and derived controls enable you to customize any aspect of their appearance.  
   
  To provide custom rendering for <xref:System.Windows.Forms.ToolStrip> controls, set the `Renderer` property of a <xref:System.Windows.Forms.ToolStrip>, <xref:System.Windows.Forms.ToolStripManager>, <xref:System.Windows.Forms.ToolStripPanel>, or <xref:System.Windows.Forms.ToolStripContentPanel> to a `ToolStripRenderer` object and handle one or more of the many drawing events provided by the `ToolStripRenderer` class. Alternatively, set a `Renderer` property to an instance of your own class derived from `ToolStripRenderer`, <xref:System.Windows.Forms.ToolStripProfessionalRenderer>, or <xref:System.Windows.Forms.ToolStripSystemRenderer> that implements or overrides specific `On`*EventName* methods.  

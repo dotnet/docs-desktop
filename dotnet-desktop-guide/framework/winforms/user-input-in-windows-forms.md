@@ -10,9 +10,11 @@ helpviewer_keywords:
 ms.assetid: 1486075f-1e06-4c9e-82c6-f948331db6d6
 ---
 # User Input in Windows Forms
+
 Windows Forms includes a user input model based on events that are raised while processing related Windows messages. The topics in this section provide information on mouse and keyboard user input, including code examples that demonstrate how to perform specific tasks.  
   
 ## In This Section  
+
  [User Input in a Windows Forms Application](user-input-in-a-windows-forms-application.md)  
  Provides an overview of user input events and the methods that process Windows messages.  
   
@@ -32,4 +34,5 @@ Windows Forms includes a user input model based on events that are raised while 
  Describes the methods to validate user input in Windows Forms applications.  
   
 ## Related Sections  
+
  Also see [Creating Event Handlers in Windows Forms](creating-event-handlers-in-windows-forms.md).

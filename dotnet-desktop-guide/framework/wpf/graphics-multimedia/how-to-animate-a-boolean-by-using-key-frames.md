@@ -12,9 +12,11 @@ helpviewer_keywords:
 ms.assetid: 4b0fac96-6231-4fcf-9775-4dd673ddc785
 ---
 # How to: Animate a Boolean by Using Key Frames
+
 This example shows how to animate the Boolean property value of a <xref:System.Windows.Controls.Button> control by using key frames.  
   
 ## Example  
+
  The following example uses the <xref:System.Windows.Media.Animation.BooleanAnimationUsingKeyFrames> class to animate the <xref:System.Windows.UIElement.IsEnabled%2A> property of a <xref:System.Windows.Controls.Button> control. All the key frames in this example use an instance of the <xref:System.Windows.Media.Animation.DiscreteBooleanKeyFrame> class. Discrete key frames like <xref:System.Windows.Media.Animation.DiscreteBooleanKeyFrame> create sudden jumps between values, that is, the movement of the animation is jerky.  
   
  [!code-csharp[keyframes_snip#BooleanAnimationUsingKeyFramesWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/keyframes_snip/CSharp/BooleanAnimationUsingKeyFramesExample.cs#booleananimationusingkeyframeswholepage)]

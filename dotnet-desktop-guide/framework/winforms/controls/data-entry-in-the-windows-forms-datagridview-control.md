@@ -9,9 +9,11 @@ helpviewer_keywords:
 ms.assetid: 4a6d4676-d4e7-4b0e-9c22-50ce65ffe0d6
 ---
 # Data Entry in the Windows Forms DataGridView Control
+
 The `DataGridView` control provides several features that let you change how users add or modify data in the control. For example, you can make data entry more efficient by providing default values for new rows and by alerting users when errors occur.  
   
 ## In This Section  
+
  [How to: Specify the Edit Mode for the Windows Forms DataGridView Control](how-to-specify-the-edit-mode-for-the-windows-forms-datagridview-control.md)  
  Describes how to change the way users start editing cells.  
   
@@ -28,6 +30,7 @@ The `DataGridView` control provides several features that let you change how use
  Describes how to handle data-entry errors that originate from the data source when the user attempts to commit a new value.  
   
 ## Reference  
+
  <xref:System.Windows.Forms.DataGridView>  
  Provides reference documentation for the <xref:System.Windows.Forms.DataGridView> control.  
   
@@ -44,6 +47,7 @@ The `DataGridView` control provides several features that let you change how use
  Provides reference documentation for the <xref:System.Windows.Forms.DataGridView.CellValidating> event.  
   
 ## Related Sections  
+
  [Displaying Data in the Windows Forms DataGridView Control](displaying-data-in-the-windows-forms-datagridview-control.md)  
  Provides topics that describe how to populate the control with data either manually or from an external data source.  
   

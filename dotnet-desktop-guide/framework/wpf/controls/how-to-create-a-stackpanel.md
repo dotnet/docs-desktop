@@ -7,9 +7,11 @@ helpviewer_keywords:
 ms.assetid: e7ce65cb-720a-4bb6-95b6-286b74488a58
 ---
 # How to: Create a StackPanel
+
 This example shows how to create a <xref:System.Windows.Controls.StackPanel>.  
   
 ## Example  
+
  A <xref:System.Windows.Controls.StackPanel> allows you to stack elements in a specified direction. By using properties that are defined on <xref:System.Windows.Controls.StackPanel>, content can flow both vertically, which is the default setting, or horizontally.  
   
  The following example vertically stacks five <xref:System.Windows.Controls.TextBlock> controls, each with a different <xref:System.Windows.Controls.Border> and <xref:System.Windows.Controls.Border.Background%2A>, by using <xref:System.Windows.Controls.StackPanel>. The child elements that have no specified <xref:System.Windows.FrameworkElement.Width%2A> stretch to fill the parent window; however, the child elements that have a specified <xref:System.Windows.FrameworkElement.Width%2A>, are centered within the window.  

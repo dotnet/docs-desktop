@@ -16,12 +16,15 @@ helpviewer_keywords:
 ms.assetid: 0a7989df-9674-4cc1-bc50-5d8ef5d9c055
 ---
 # Property Change Events
+
 Windows Presentation Foundation (WPF) defines several events that are raised in response to a change in the value of a property. Often the property is a dependency property. The event itself is sometimes a routed event and is sometimes a standard common language runtime (CLR) event. The definition of the event varies depending on the scenario, because some property changes are more appropriately routed through an element tree, whereas other property changes are generally only of concern to the object where the property changed.  
   
 ## Identifying a Property Change Event  
+
  Not all events that report a property change are explicitly identified as a property changed event, either by virtue of a signature pattern or a naming pattern. Generally, the description of the event in the SDK documentation indicates whether the event is directly tied to a property value change and provides cross-references between the property and event.  
   
 ### RoutedPropertyChanged Events  
+
  Certain events use an event data type and delegate that are explicitly used for property change events. The event data type is <xref:System.Windows.RoutedPropertyChangedEventArgs%601>, and the delegate is <xref:System.Windows.RoutedPropertyChangedEventHandler%601>. The event data and delegate both have a generic type parameter that is used to specify the actual type of the changing property when you define the handler. The event data contains two properties, <xref:System.Windows.RoutedPropertyChangedEventArgs%601.OldValue%2A> and <xref:System.Windows.RoutedPropertyChangedEventArgs%601.NewValue%2A>, which are both then passed as the type argument in the event data.  
   
  The "Routed" part of the name indicates that the property changed event is registered as a routed event. The advantage of routing a property changed event is that the top level of a control can receive property changed events if properties on the child elements (the control's composite parts) change values. For instance, you might create a control that incorporates a <xref:System.Windows.Controls.Primitives.RangeBase> control such as a <xref:System.Windows.Controls.Slider>. If the value of the <xref:System.Windows.Controls.Primitives.RangeBase.Value%2A> property changes on the slider part, you might want to handle that change on the parent control rather than on the part.  
@@ -31,6 +34,7 @@ Windows Presentation Foundation (WPF) defines several events that are raised in 
  If your property is a custom dependency property, or if you are working with a derived class where you have defined the instantiation code, there is a much better mechanism for tracking property changes that is built in to the WPF property system: the property system callbacks <xref:System.Windows.CoerceValueCallback> and <xref:System.Windows.PropertyChangedCallback>. For more details about how you can use the WPF property system for validation and coercion, see [Dependency Property Callbacks and Validation](dependency-property-callbacks-and-validation.md) and [Custom Dependency Properties](custom-dependency-properties.md).  
   
 ### DependencyPropertyChanged Events  
+
  Another pair of types that are part of a property changed event scenario is <xref:System.Windows.DependencyPropertyChangedEventArgs> and <xref:System.Windows.DependencyPropertyChangedEventHandler>. Events for these property changes are not routed; they are standard CLR events. <xref:System.Windows.DependencyPropertyChangedEventArgs> is an unusual event data reporting type because it does not derive from <xref:System.EventArgs>; <xref:System.Windows.DependencyPropertyChangedEventArgs> is a structure, not a class.  
   
  Events that use <xref:System.Windows.DependencyPropertyChangedEventArgs> and <xref:System.Windows.DependencyPropertyChangedEventHandler> are slightly more common than `RoutedPropertyChanged` events. An example of an event that uses these types is <xref:System.Windows.UIElement.IsMouseCapturedChanged>.  
@@ -38,6 +42,7 @@ Windows Presentation Foundation (WPF) defines several events that are raised in 
  Like <xref:System.Windows.RoutedPropertyChangedEventArgs%601>, <xref:System.Windows.DependencyPropertyChangedEventArgs> also reports an old and new value for the property. Also, the same considerations about what you can do with the values apply; it is generally not recommended that you attempt to change the values again on the sender in response to the event.  
   
 ## Property Triggers  
+
  A closely related concept to a property changed event is a property trigger. A property trigger is created within a style or template and enables you to create a conditional behavior based on the value of the property where the property trigger is assigned.  
   
  The property for a property trigger must be a dependency property. It can be (and frequently is) a read-only dependency property. A good indicator for when a dependency property exposed by a control is at least partially designed to be a property trigger is if the property name begins with "Is". Properties that have this naming are often a read-only Boolean dependency property where the primary scenario for the property is reporting control state that might have consequences to the real-time UI and is thus a property trigger candidate.  

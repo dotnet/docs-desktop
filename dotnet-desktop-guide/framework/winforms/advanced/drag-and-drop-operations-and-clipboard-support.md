@@ -9,11 +9,13 @@ helpviewer_keywords:
 ms.assetid: 7cce79b6-5835-46fd-b690-73f12ad368b2
 ---
 # Drag-and-Drop Operations and Clipboard Support
+
 You can enable user drag-and-drop operations within a Windows-based application by handling a series of events, most notably the <xref:System.Windows.Forms.Control.DragEnter>, <xref:System.Windows.Forms.Control.DragLeave>, and <xref:System.Windows.Forms.Control.DragDrop> events.  
   
  You can also implement user cut/copy/paste support and user data transfer to the Clipboard within your Windows-based applications by using simple method calls.  
   
 ## In This Section  
+
  [Walkthrough: Performing a Drag-and-Drop Operation in Windows Forms](walkthrough-performing-a-drag-and-drop-operation-in-windows-forms.md)  
  Explains how to start a drag-and-drop operation.  
   
@@ -27,6 +29,7 @@ You can enable user drag-and-drop operations within a Windows-based application 
  Describes how to access the data stored on the Clipboard.  
   
 ## Related Sections  
+
  [Drag-and-Drop Functionality in Windows Forms](../drag-and-drop-functionality-in-windows-forms.md)  
  Describes the methods, events, and classes used to implement drag-and-drop behavior.  
   

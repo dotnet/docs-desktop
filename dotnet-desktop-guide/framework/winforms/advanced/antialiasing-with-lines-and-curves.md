@@ -12,9 +12,11 @@ helpviewer_keywords:
 ms.assetid: 810da1a4-c136-4abf-88df-68e49efdd8d4
 ---
 # Antialiasing with Lines and Curves
+
 When you use GDI+ to draw a line, you provide the starting point and ending point of the line, but you do not have to provide any information about the individual pixels on the line. GDI+ works in conjunction with the display driver software to determine which pixels will be turned on to show the line on a particular display device.  
   
 ## Aliasing  
+
  Consider the straight red line that goes from the point (4, 2) to the point (16, 10). Assume the coordinate system has its origin in the upper-left corner and that the unit of measure is the pixel. Also assume that the x-axis points to the right and the y-axis points down. The following illustration shows an enlarged view of the red line drawn on a multicolored background.  
   
  ![Line, no antialiasing](./media/aboutgdip02-art33.gif "AboutGdip02_Art33")  
@@ -22,6 +24,7 @@ When you use GDI+ to draw a line, you provide the starting point and ending poin
  The red pixels used to render the line are opaque. There are no partially transparent pixels in the line. This type of line rendering gives the line a jagged appearance, and the line looks somewhat like a staircase. This technique of representing a line with a staircase is called aliasing; the staircase is an alias for the theoretical line.  
   
 ## Antialiasing  
+
  A more sophisticated technique for rendering a line involves using partially transparent pixels along with opaque pixels. Pixels are set to pure red, or to some blend of red and the background color, depending on how close they are to the line. This type of rendering is called antialiasing and results in a line that the human eye perceives as more smooth. The following illustration shows how certain pixels are blended with the background to produce an antialiased line.  
   
  ![Antialiasing a Line](./media/aboutgdip02-art34.gif "AboutGdip02_Art34")  

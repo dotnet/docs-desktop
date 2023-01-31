@@ -12,16 +12,19 @@ ms.assetid: 5f3a45c6-6d40-4017-9b47-933f134ceba3
 descriptions: Learn how adding an IncrementalLassoHitTester to a custom control enables users to select ink with a lasso tool.
 ---
 # How to: Select Ink from a Custom Control
+
 By adding an <xref:System.Windows.Ink.IncrementalLassoHitTester> to your custom control, you can enable your control so that a user can select ink with a lasso tool, similar to the way the <xref:System.Windows.Controls.InkCanvas> selects ink with a lasso.  
   
  This example assumes you are familiar with creating an ink-enabled custom control.  To create a custom control that accepts ink input, see [Creating an Ink Input Control](creating-an-ink-input-control.md).  
   
 ## Example  
+
  When the user draws a lasso, the <xref:System.Windows.Ink.IncrementalLassoHitTester> predicts which strokes will be within the lasso path's boundaries after the user completes the lasso.  Strokes that are determined to be within the lasso path's boundaries can be thought of as being selected.  Selected strokes can also become unselected.  For example, if the user reverses direction while drawing the lasso, the <xref:System.Windows.Ink.IncrementalLassoHitTester> may unselect some strokes.  
   
  The <xref:System.Windows.Ink.IncrementalLassoHitTester> raises the <xref:System.Windows.Ink.IncrementalLassoHitTester.SelectionChanged> event, which enables your custom control to respond while the user is drawing the lasso.  For example, you can change the appearance of strokes as the user selects and unselects them.  
   
 ## Managing the Ink Mode  
+
  It is helpful to the user if the lasso appears differently than the ink on your control. To accomplish this, your custom control must keep track of whether the user is writing or selecting ink. The easiest way to do this is to declare an enumeration with two values: one to indicate that the user is writing ink and one to indicate that the user is selecting ink.  
   
  [!code-csharp[HowToSelectInk#2](~/samples/snippets/csharp/VS_Snippets_Wpf/HowToSelectInk/CSharp/InkSelector.cs#2)]
@@ -50,6 +53,7 @@ By adding an <xref:System.Windows.Ink.IncrementalLassoHitTester> to your custom 
  [!code-vb[HowToSelectInk#7](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HowToSelectInk/VisualBasic/InkSelector.vb#7)]  
   
 ## Using the IncrementalLassoHitTester  
+
  Create and initialize a <xref:System.Windows.Ink.StrokeCollection> that contains the selected strokes.  
   
  [!code-csharp[HowToSelectInk#8](~/samples/snippets/csharp/VS_Snippets_Wpf/HowToSelectInk/CSharp/InkSelector.cs#8)]
@@ -76,6 +80,7 @@ By adding an <xref:System.Windows.Ink.IncrementalLassoHitTester> to your custom 
  [!code-vb[HowToSelectInk#12](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HowToSelectInk/VisualBasic/InkSelector.vb#12)]  
   
 ## Putting it All Together.  
+
  The following example is a custom control that enables a user to select ink with a lasso.  
   
  [!code-csharp[HowToSelectInk#1](~/samples/snippets/csharp/VS_Snippets_Wpf/HowToSelectInk/CSharp/InkSelector.cs#1)]

@@ -9,9 +9,11 @@ ms.assetid: 3225f2ef-c6d9-4bd4-9d3e-2219e58edbf2
 description: Learn how the RichTextBox control is used for displaying, entering, and manipulating text with formatting.
 ---
 # RichTextBox Control (Windows Forms)
+
 The Windows Forms `RichTextBox` control is used for displaying, entering, and manipulating text with formatting. The `RichTextBox` control does everything the <xref:System.Windows.Forms.TextBox> control does, but it can also display fonts, colors, and links; load text and embedded images from a file; undo and redo editing operations; and find specified characters. The `RichTextBox` control is typically used to provide text manipulation and display features similar to word processing applications such as Microsoft Word. Like the <xref:System.Windows.Forms.TextBox> control, the `RichTextBox` control can display scroll bars; but unlike the <xref:System.Windows.Forms.TextBox> control, it displays both horizontal and vertical scrollbars by default and has additional scrollbar settings.  
   
 ## In This Section  
+
  [RichTextBox Control Overview](richtextbox-control-overview-windows-forms.md)  
  Introduces the general concepts of the `RichTextBox` control, which allows users to enter, display, and manipulate text with formatting options.  
   
@@ -40,10 +42,12 @@ The Windows Forms `RichTextBox` control is used for displaying, entering, and ma
  Describes how to format paragraphs in the `RichTextBox` control.  
   
 ## Reference  
+
  <xref:System.Windows.Forms.RichTextBox> class  
  Describes this class and has links to all its members.  
   
 ## Related Sections  
+
  [Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)  
  Provides a complete list of Windows Forms controls, with links to information on their use.  
   

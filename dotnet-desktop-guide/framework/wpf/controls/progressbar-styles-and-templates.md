@@ -12,9 +12,11 @@ helpviewer_keywords:
 ms.assetid: 935aa600-16e6-4947-a905-37a189a583dd
 ---
 # ProgressBar Styles and Templates
+
 This topic describes the styles and templates for the <xref:System.Windows.Controls.ProgressBar> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [Create a template for a control](how-to-create-apply-template.md).  
   
 ## ProgressBar Parts  
+
  The following table lists the named parts for the <xref:System.Windows.Controls.ProgressBar> control.  
   
 |Part|Type|Description|  
@@ -24,6 +26,7 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 |PART_GlowRect|<xref:System.Windows.FrameworkElement>|An object that embellishes the progress bar.|  
   
 ## ProgressBar States  
+
  The following table lists the visual states for the <xref:System.Windows.Controls.ProgressBar> control.  
   
 |VisualState Name|VisualStateGroup Name|Description|  
@@ -35,6 +38,7 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 |InvalidUnfocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` has the control does not have focus.|  
   
 ## ProgressBar ControlTemplate Example  
+
  The following example shows how to define a <xref:System.Windows.Controls.ControlTemplate> for the <xref:System.Windows.Controls.ProgressBar> control.  
   
  [!code-xaml[ControlTemplateExamples#ProgressBar](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/progressbar.xaml#progressbar)]  

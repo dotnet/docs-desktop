@@ -14,6 +14,7 @@ ms.assetid: 337661c8-61cb-44ee-93e0-3662bddec327
 description: Learn how the TableLayoutPanel control arranges its content in a grid and can change as the application environment changes.
 ---
 # TableLayoutPanel Control Overview
+
 The <xref:System.Windows.Forms.TableLayoutPanel> control arranges its contents in a grid. Because the layout is performed both at design time and run time, it can change dynamically as the application environment changes. This gives the controls in the panel the ability to proportionally resize, so they can respond to changes such as the parent control resizing or text length changing due to localization.  
   
  Any Windows Forms control can be a child of the <xref:System.Windows.Forms.TableLayoutPanel> control, including other instances of <xref:System.Windows.Forms.TableLayoutPanel>. This allows you to construct sophisticated layouts that adapt to changes at run time.  

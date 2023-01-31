@@ -11,9 +11,11 @@ helpviewer_keywords:
 ms.assetid: a031aa58-5027-4082-b590-df7c12c77dec
 ---
 # Getting Started with Windows Forms
+
 With Windows Forms, you can create powerful Windows-based applications. The following topics describe in-depth how to harness the power of Windows Forms to display data, handle user input, and deploy your applications easily and with enhanced security.  
   
 ## In This Section  
+
  [Windows Forms Overview](windows-forms-overview.md)  
  Contains an overview of Windows Forms and smart client applications.  
   
@@ -51,5 +53,6 @@ With Windows Forms, you can create powerful Windows-based applications. The foll
  Demonstrates how to access collections with keys rather than indexes.  
   
 ## Related Sections  
+
  [Enhancing Windows Forms Applications](./advanced/index.md)  
  Contains links to topics that describe more advanced concepts for creating Windows Forms applications.

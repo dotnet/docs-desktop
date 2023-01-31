@@ -32,13 +32,16 @@ helpviewer_keywords:
 ms.assetid: 737d04ec-8861-46c3-8d44-fa11d3528d23
 ---
 # WPF Windows Overview
+
 Users interact with Windows Presentation Foundation (WPF) standalone applications through windows. The primary purpose of a window is to host content that visualizes data and enables users to interact with data. Standalone WPF applications provide their own windows by using the <xref:System.Windows.Window> class. This topic introduces <xref:System.Windows.Window> before covering the fundamentals of creating and managing windows in standalone applications.  
   
 > [!NOTE]
 > Browser-hosted WPF applications, including XAML browser applications (XBAPs) and loose Extensible Application Markup Language (XAML) pages, don't provide their own windows. Instead, they are hosted in windows provided by Windows Internet Explorer. See [WPF XAML Browser Applications Overview](wpf-xaml-browser-applications-overview.md).  
 
 <a name="TheWindowClass"></a>
+
 ## The Window Class  
+
  The following figure illustrates the constituent parts of a window:  
   
  ![Screenshot that shows window elements.](./media/wpf-windows-overview/window-constituent-elements.png)  
@@ -72,7 +75,9 @@ Users interact with Windows Presentation Foundation (WPF) standalone application
 - Manage the lifetime of a window.  
   
 <a name="DefiningAWindow"></a>
+
 ## Implementing a Window  
+
  The implementation of a typical window comprises both appearance and behavior, where *appearance* defines how a window looks to users and *behavior* defines the way a window functions as users interact with it. In WPF, you can implement the appearance and behavior of a window using either code or XAML markup.  
   
  In general, however, the appearance of a window is implemented using XAML markup, and its behavior is implemented using code-behind, as shown in the following example.  
@@ -101,7 +106,9 @@ Users interact with Windows Presentation Foundation (WPF) standalone application
  [!code-vb[WindowsOverviewWindowWithButtonSnippets#MarkupAndCodeBehindWindowCODEBEHIND](~/samples/snippets/visualbasic/VS_Snippets_Wpf/WindowsOverviewWindowWithButtonSnippets/VisualBasic/MarkupAndCodeBehindWindow.xaml.vb#markupandcodebehindwindowcodebehind)]  
   
 <a name="ConfiguringWindowForMSBuild"></a>
+
 ## Configuring a Window Definition for MSBuild  
+
  How you implement your window determines how it is configured for MSBuild. For a window that is defined using both XAML markup and code-behind:  
   
 - XAML markup files are configured as MSBuild `Page` items.  
@@ -122,11 +129,15 @@ Users interact with Windows Presentation Foundation (WPF) standalone application
  For information about building WPF applications, see [Building a WPF Application](building-a-wpf-application-wpf.md).  
   
 <a name="WindowLifetime"></a>
+
 ## Window Lifetime  
+
  As with any class, a window has a lifetime that begins when it is first instantiated, after which it is opened, activated and deactivated, and eventually closed.  
 
 <a name="Opening_a_Window"></a>
+
 ### Opening a Window  
+
  To open a window, you first create an instance of it, which is demonstrated in the following example.  
   
  [!code-xaml[WindowsOverviewStartupEventSnippets#AppMARKUP](~/samples/snippets/csharp/VS_Snippets_Wpf/WindowsOverviewStartupEventSnippets/CSharp/App.xaml#appmarkup)]  
@@ -155,7 +166,9 @@ Users interact with Windows Presentation Foundation (WPF) standalone application
  When the application starts, the window specified by the value of <xref:System.Windows.Application.StartupUri%2A> is opened modelessly; internally, the window is opened by calling its <xref:System.Windows.Window.Show%2A> method.  
   
 <a name="Ownership"></a>
+
 #### Window Ownership  
+
  A window that is opened by using the <xref:System.Windows.Window.Show%2A> method does not have an implicit relationship with the window that created it; users can interact with either window independently of the other, which means that either window can do the following:  
   
 - Cover the other (unless one of the windows has its <xref:System.Windows.Window.Topmost%2A> property set to `true`).  
@@ -174,7 +187,9 @@ Users interact with Windows Presentation Foundation (WPF) standalone application
 - The owner window can discover all the windows it owns by inspecting the value of its <xref:System.Windows.Window.OwnedWindows%2A> property.  
   
 <a name="Preventing"></a>
+
 #### Preventing Window Activation  
+
  There are scenarios where windows should not be activated when shown, such as conversation windows of an Internet messenger-style application or notification windows of an email application.  
   
  If your application has a window that shouldn't be activated when shown, you can set its <xref:System.Windows.Window.ShowActivated%2A> property to `false` before calling the <xref:System.Windows.Window.Show%2A> method for the first time. As a consequence:  
@@ -196,7 +211,9 @@ Users interact with Windows Presentation Foundation (WPF) standalone application
 - The window's <xref:System.Windows.Window.Deactivated> and <xref:System.Windows.Window.Activated> events are subsequently raised as expected in response to user actions.  
   
 <a name="Window_Activation"></a>
+
 ### Window Activation  
+
  When a window is first opened, it becomes the active window (unless it is shown with <xref:System.Windows.Window.ShowActivated%2A> set to `false`). The *active window* is the window that is currently capturing user input, such as key strokes and mouse clicks. When a window becomes active, it raises the <xref:System.Windows.Window.Activated> event.  
   
 > [!NOTE]
@@ -219,7 +236,9 @@ Users interact with Windows Presentation Foundation (WPF) standalone application
 > You can handle application-scope activation using the <xref:System.Windows.Application.Activated?displayProperty=nameWithType> and <xref:System.Windows.Application.Deactivated?displayProperty=nameWithType> events.  
   
 <a name="Closing_a_Window"></a>
+
 ### Closing a Window  
+
  The life of a window starts coming to an end when a user closes it. A window can be closed by using elements in the non-client area, including the following:  
   
 - The **Close** item of the **System** menu.  
@@ -273,7 +292,9 @@ Users interact with Windows Presentation Foundation (WPF) standalone application
 > A window cannot be reopened after it is closed.  
   
 <a name="Window_Lifetime_Events"></a>
+
 ### Window Lifetime Events  
+
  The following illustration shows the sequence of the principal events in the lifetime of a window:  
   
  ![Diagram that shows events in a window's lifetime.](./media/wpf-windows-overview/window-lifetime-events.png)  
@@ -283,7 +304,9 @@ Users interact with Windows Presentation Foundation (WPF) standalone application
  ![Diagram that shows events in a window's lifetime without activation.](./media/wpf-windows-overview/window-lifetime-no-activation.png)  
   
 <a name="WindowLocation"></a>
+
 ## Window Location  
+
  While a window is open, it has a location in the x and y dimensions relative to the desktop. This location can be determined by inspecting the <xref:System.Windows.Window.Left%2A> and <xref:System.Windows.Window.Top%2A> properties, respectively. You can set these properties to change the location of the window.  
   
  You can also specify the initial location of a <xref:System.Windows.Window> when it first appears by setting the <xref:System.Windows.Window.WindowStartupLocation%2A> property with one of the following <xref:System.Windows.WindowStartupLocation> enumeration values:  
@@ -297,7 +320,9 @@ Users interact with Windows Presentation Foundation (WPF) standalone application
  If the startup location is specified as <xref:System.Windows.WindowStartupLocation.Manual>, and the <xref:System.Windows.Window.Left%2A> and <xref:System.Windows.Window.Top%2A> properties have not been set, <xref:System.Windows.Window> will ask Windows for a location to appear in.  
   
 <a name="Topmost_Windows_and_Z_Order"></a>
+
 ### Topmost Windows and Z-Order  
+
  Besides having an x and y location, a window also has a location in the z dimension, which determines its vertical position with respect to other windows. This is known as the window's z-order, and there are two types: normal z-order and topmost z-order. The location of a window in the *normal z-order* is determined by whether it is currently active or not. By default, a window is located in the normal z-order. The location of a window in the *topmost z-order* is also determined by whether it is currently active or not. Furthermore, windows in the topmost z-order are always located above windows in the normal z-order. A window is located in the topmost z-order by setting its <xref:System.Windows.Window.Topmost%2A> property to `true`.  
   
  [!code-xaml[WindowsOverviewSnippets#TopmostWindowMARKUP1](~/samples/snippets/csharp/VS_Snippets_Wpf/WindowsOverviewSnippets/CSharp/TopmostWindow.xaml#topmostwindowmarkup1)]  
@@ -305,7 +330,9 @@ Users interact with Windows Presentation Foundation (WPF) standalone application
  Within each z-order, the currently active window appears above all other windows in the same z-order.  
   
 <a name="WindowSize"></a>
+
 ## Window Size  
+
  Besides having a desktop location, a window has a size that is determined by several properties, including the various width and height properties and <xref:System.Windows.Window.SizeToContent%2A>.  
   
  <xref:System.Windows.FrameworkElement.MinWidth%2A>, <xref:System.Windows.FrameworkElement.Width%2A>, and <xref:System.Windows.FrameworkElement.MaxWidth%2A> are used to manage the range of widths that a window can have during its lifetime, and are configured as shown in the following example.  
@@ -338,7 +365,9 @@ Users interact with Windows Presentation Foundation (WPF) standalone application
  [!code-vb[HOWTOWindowManagementSnippets#SetWindowSizeToContentPropertyCODE](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HOWTOWindowManagementSnippets/visualbasic/mainwindow.xaml.vb#setwindowsizetocontentpropertycode)]  
   
 <a name="OrderOfPrecedence"></a>
+
 ## Order of Precedence for Sizing Properties  
+
  Essentially, the various sizes properties of a window combine to define the range of width and height for a resizable window. To ensure a valid range is maintained, <xref:System.Windows.Window> evaluates the values of the size properties using the following orders of precedence.  
   
  **For Height Properties:**  
@@ -364,7 +393,9 @@ Users interact with Windows Presentation Foundation (WPF) standalone application
  The order of precedence can also determine the size of a window when it is maximized, which is managed with the <xref:System.Windows.Window.WindowState%2A> property.  
   
 <a name="WindowState"></a>
+
 ## Window State  
+
  During the lifetime of a resizable window, it can have three states: normal, minimized, and maximized. A window with a *normal* state is the default state of a window. A window with this state allows a user to move and resize it by using a resize grip or the border, if it is resizable.  
   
  A window with a *minimized* state collapses to its task bar button if <xref:System.Windows.Window.ShowInTaskbar%2A> is set to `true`; otherwise, it collapses to the smallest possible size it can be and relocates itself to the bottom-left corner of the desktop. Neither type of minimized window can be resized using a border or resize grip, although a minimized window that isn't shown in the task bar can be dragged around the desktop.  
@@ -389,13 +420,17 @@ Users interact with Windows Presentation Foundation (WPF) standalone application
  In general, you should set <xref:System.Windows.Window.WindowState%2A> to configure the initial state of a window. Once a resizable window is shown, users can press the minimize, maximize, and restore buttons on the window's title bar to change the window state.  
   
 <a name="WindowAppearance"></a>
+
 ## Window Appearance  
+
  You change the appearance of the client area of a window by adding window-specific content to it, such as buttons, labels, and text boxes. To configure the non-client area, <xref:System.Windows.Window> provides several properties, which include <xref:System.Windows.Window.Icon%2A> to set a window's icon and <xref:System.Windows.Window.Title%2A> to set its title.  
   
  You can also change the appearance and behavior of non-client area border by configuring a window's resize mode, window style, and whether it appears as a button in the desktop task bar.  
 
 <a name="Resize_Mode"></a>
+
 ### Resize Mode  
+
  Depending on the <xref:System.Windows.Window.WindowStyle%2A> property, you can control how (and if) users can resize the window. The choice of window style affects whether a user can resize the window by dragging its border with the mouse, whether the **Minimize**, **Maximize**, and **Resize** buttons appear on the non-client area, and, if they do appear, whether they are enabled.  
   
  You can configure how a window resizes by setting its <xref:System.Windows.Window.ResizeMode%2A> property, which can be one of the following <xref:System.Windows.ResizeMode> enumeration values:  
@@ -415,7 +450,9 @@ Users interact with Windows Presentation Foundation (WPF) standalone application
  Note that you can detect whether a window is maximized, minimized, or restored by inspecting the <xref:System.Windows.Window.WindowState%2A> property.  
   
 <a name="Window_Style"></a>
+
 ### Window Style  
+
  The border that is exposed from the non-client area of a window is suitable for most applications. However, there are circumstances where different types of borders are needed, or no borders are needed at all, depending on the type of window.  
   
  To control what type of border a window gets, you set its <xref:System.Windows.Window.WindowStyle%2A> property with one of the following values of the <xref:System.Windows.WindowStyle> enumeration:  
@@ -437,6 +474,7 @@ Users interact with Windows Presentation Foundation (WPF) standalone application
  [!code-xaml[WindowsOverviewSnippets#WindowStyleWindowMARKUP1](~/samples/snippets/csharp/VS_Snippets_Wpf/WindowsOverviewSnippets/CSharp/WindowStyleWindow.xaml#windowstylewindowmarkup1)]  
   
 #### Non-Rectangular Window Style  
+
  There are also situations where the border styles that <xref:System.Windows.Window.WindowStyle%2A> allows you to have are not sufficient. For example, you may want to create an application with a non-rectangular border, like Microsoft Windows Media Player uses.  
   
  For example, consider the speech bubble window shown in the following figure:  
@@ -450,6 +488,7 @@ Users interact with Windows Presentation Foundation (WPF) standalone application
  This combination of values instructs the window to render completely transparent. In this state, the window's non-client area adornments (the Close menu, Minimize, Maximize, and Restore buttons, and so on) cannot be used. Consequently, you need to provide your own.  
   
 <a name="Task_Bar_Presence"></a>
+
 ### Task Bar Presence  
 
 The default appearance of a window includes a taskbar button, like the one shown in the following figure:
@@ -461,7 +500,9 @@ The default appearance of a window includes a taskbar button, like the one shown
  [!code-xaml[WindowsOverviewSnippets#ShowInTaskbarWindowMARKUP1](~/samples/snippets/csharp/VS_Snippets_Wpf/WindowsOverviewSnippets/CSharp/ShowInTaskbarWindow.xaml#showintaskbarwindowmarkup1)]  
   
 <a name="SecurityConsiderations"></a>
+
 ## Security Considerations  
+
  <xref:System.Windows.Window> requires `UnmanagedCode` security permission to be instantiated. For applications installed on and launched from the local machine, this falls within the set of permissions that are granted to the application.  
   
  However, this falls outside the set of permissions granted to applications that are launched from the Internet or Local intranet zone using ClickOnce. Consequently, users will receive a ClickOnce security warning and will need to elevate the permission set for the application to full trust.  
@@ -469,7 +510,9 @@ The default appearance of a window includes a taskbar button, like the one shown
  Additionally, XBAPs cannot show windows or dialog boxes by default. For a discussion on standalone application security considerations, see [WPF Security Strategy - Platform Security](../wpf-security-strategy-platform-security.md).  
   
 <a name="Other_Types_of_Windows"></a>
+
 ## Other Types of Windows  
+
  <xref:System.Windows.Navigation.NavigationWindow> is a window that is designed to host navigable content. For more information, see [Navigation Overview](navigation-overview.md)).  
   
  Dialog boxes are windows that are often used to gather information from a user to complete a function. For example, when a user wants to open a file, the **Open File** dialog box is usually displayed by an application to get the file name from the user. For more information, see [Dialog Boxes Overview](dialog-boxes-overview.md).  

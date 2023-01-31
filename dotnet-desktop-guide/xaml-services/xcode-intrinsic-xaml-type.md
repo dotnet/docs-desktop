@@ -13,6 +13,7 @@ helpviewer_keywords:
 ms.assetid: 87986b13-1a2e-4830-ae36-15f9dc5629e8
 ---
 # x:Code Intrinsic XAML Type
+
 Allows placement of code within a XAML production. Such code can either be compiled by any XAML processor implementation that compiles XAML, or left in the XAML production for later uses such as interpretation by a runtime.
 
 ## XAML Object Element Usage

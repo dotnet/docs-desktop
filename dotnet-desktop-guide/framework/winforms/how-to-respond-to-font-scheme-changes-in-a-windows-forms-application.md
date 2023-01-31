@@ -11,6 +11,7 @@ helpviewer_keywords:
 ms.assetid: 4db27702-22e7-43bf-a07d-9a004549853c
 ---
 # How to: Respond to Font Scheme Changes in a Windows Forms Application
+
 In the Windows operating systems, a user can change the system-wide font settings to make the default font appear larger or smaller. Changing these font settings is critical for users who are visually impaired and require larger type to read the text on their screens. You can adjust your Windows Forms application to react to these changes by increasing or decreasing the size of the form and all contained text whenever the font scheme changes. If you want your form to accommodate changes in font sizes dynamically, you can add code to your form.  
   
  Typically, the default font used by Windows Forms is the font returned by the <xref:Microsoft.Win32> namespace call to `GetStockObject(DEFAULT_GUI_FONT)`. The font returned by this call only changes when the screen resolution changes. As shown in the following procedure, your code must change the default font to <xref:System.Drawing.SystemFonts.IconTitleFont%2A> to respond to changes in font size.  
@@ -55,6 +56,7 @@ In the Windows operating systems, a user can change the system-wide font setting
      You'll notice that the form now reacts to run-time changes in the desktop font scheme. When the user changes between **Normal**, **Large Fonts**, and **Extra Large Fonts**, the form changes font and scales correctly.  
   
 ## Example  
+
  [!code-csharp[WinFormsAutoScaling#1](~/samples/snippets/csharp/VS_Snippets_Winforms/WinFormsAutoScaling/CS/Form1.cs#1)]
  [!code-vb[WinFormsAutoScaling#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/WinFormsAutoScaling/VB/Form1.vb#1)]  
   

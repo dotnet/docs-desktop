@@ -12,9 +12,11 @@ ms.assetid: 508da5a6-2433-4d2b-9680-eaeae4e96e3b
 description: Learn how to fill a shape with an image texture by using the Image class and the TextureBrush class.
 ---
 # How to: Fill a Shape with an Image Texture
+
 You can fill a closed shape with a texture by using the <xref:System.Drawing.Image> class and the <xref:System.Drawing.TextureBrush> class.  
   
 ## Example  
+
  The following example fills an ellipse with an image. The code constructs an <xref:System.Drawing.Image> object, and then passes the address of that <xref:System.Drawing.Image> object as an argument to a <xref:System.Drawing.TextureBrush.%23ctor%2A> constructor. The third statement scales the image, and the fourth statement fills the ellipse with repeated copies of the scaled image.  
   
  In the following code, the <xref:System.Drawing.TextureBrush.Transform%2A> property contains the transformation that is applied to the image before it is drawn. Assume that the original image has a width of 640 pixels and a height of 480 pixels. The transform shrinks the image to 75×75 by setting the horizontal and vertical scaling values.  
@@ -26,6 +28,7 @@ You can fill a closed shape with a texture by using the <xref:System.Drawing.Ima
  [!code-vb[System.Drawing.UsingABrush#21](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.UsingABrush/VB/Class1.vb#21)]  
   
 ## Compiling the Code  
+
  The preceding example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs> `e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler.  
   
 ## See also

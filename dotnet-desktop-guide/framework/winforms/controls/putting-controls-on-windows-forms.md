@@ -9,9 +9,11 @@ ms.assetid: 997508f2-87e5-4bec-a78e-9eec8f1fb15b
 description: Learn about the wide variety of controls that can be put on Windows Forms, depending on the needs of an application.
 ---
 # Putting Controls on Windows Forms
+
 There are a wide variety of controls that you can put on Windows Forms, depending on the needs of your application.  
   
 ## In This Section  
+
  [How to: Add Controls to Windows Forms](how-to-add-controls-to-windows-forms.md)  
  Gives directions for attaching controls to your form.  
   
@@ -31,6 +33,7 @@ There are a wide variety of controls that you can put on Windows Forms, dependin
  Describes things to keep in mind when planning an application that uses ActiveX controls.  
   
 ## Related Sections  
+
  [Windows Forms Controls](index.md)  
  Provides links to introductory topics on controls and what you can do with them.  
   

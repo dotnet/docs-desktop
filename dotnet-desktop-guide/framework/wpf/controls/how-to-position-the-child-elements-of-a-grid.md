@@ -10,9 +10,11 @@ helpviewer_keywords:
 ms.assetid: 27b3ba9b-ad32-44e2-bcab-a79d573a463c
 ---
 # How to: Position the Child Elements of a Grid
+
 This example shows how to use the get and set methods that are defined on <xref:System.Windows.Controls.Grid> to position child elements.  
   
 ## Example  
+
  The following example defines a parent <xref:System.Windows.Controls.Grid> element (`grid1`) that has three columns and three rows. A child <xref:System.Windows.Shapes.Rectangle> element (`rect1`) is added to the <xref:System.Windows.Controls.Grid> in column position zero, row position zero. <xref:System.Windows.Controls.Button> elements represent methods that can be called to reposition the <xref:System.Windows.Shapes.Rectangle> element within the <xref:System.Windows.Controls.Grid>. When a user clicks a button, the related method is activated.  
   
  [!code-xaml[gridGetSetMethods](~/samples/snippets/csharp/VS_Snippets_Wpf/gridGetSetMethods/CSharp/Window1.xaml)]  

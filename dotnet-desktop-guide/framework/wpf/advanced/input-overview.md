@@ -28,13 +28,17 @@ helpviewer_keywords:
 ms.assetid: ee5258b7-6567-415a-9b1c-c0cbe46e79ef
 ---
 # Input Overview
+
 <a name="introduction"></a> The WPF and explains the architecture of the input systems.
 
 <a name="input_api"></a>
+
 ## Input API
+
  The primary input API exposure is found on the base element classes: <xref:System.Windows.UIElement>, <xref:System.Windows.ContentElement>, <xref:System.Windows.FrameworkElement>, and <xref:System.Windows.FrameworkContentElement>.  For more information about the base elements, see [Base Elements Overview](base-elements-overview.md).  These classes provide functionality for input events related to key presses, mouse buttons, mouse wheel, mouse movement, focus management, and mouse capture, to name a few. By placing the input API on the base elements, rather than treating all input events as a service, the input architecture enables the input events to be sourced by a particular object in the UI, and to support an event routing scheme whereby more than one element has an opportunity to handle an input event. Many input events have a pair of events associated with them.  For example, the key down event is associated with the <xref:System.Windows.Input.Keyboard.KeyDown> and <xref:System.Windows.Input.Keyboard.PreviewKeyDown> events.  The difference in these events is in how they are routed to the target element.  Preview events tunnel down the element tree from the root element to the target element.  Bubbling events bubble up from the target element to the root element.  Event routing in WPF is discussed in more detail later in this overview and in the [Routed Events Overview](routed-events-overview.md).
 
 ### Keyboard and Mouse Classes
+
  In addition to the input API on the base element classes, the <xref:System.Windows.Input.Keyboard> class and <xref:System.Windows.Input.Mouse> classes provide additional API for working with keyboard and mouse input.
 
  Examples of input API on the <xref:System.Windows.Input.Keyboard> class are the <xref:System.Windows.Input.Keyboard.Modifiers%2A> property, which returns the <xref:System.Windows.Input.ModifierKeys> currently pressed, and the <xref:System.Windows.Input.Keyboard.IsKeyDown%2A> method, which determines whether a specified key is pressed.
@@ -54,12 +58,15 @@ ms.assetid: ee5258b7-6567-415a-9b1c-c0cbe46e79ef
  The <xref:System.Windows.Input.Mouse> and <xref:System.Windows.Input.Keyboard> classes are covered in more detail throughout this overview.
 
 ### Stylus Input
+
  WPF has integrated support for the <xref:System.Windows.Input.Stylus>.  The <xref:System.Windows.Input.Stylus> is a pen input made popular by the Tablet PC.  WPF applications can treat the stylus as a mouse by using the mouse API, but WPF also exposes a stylus device abstraction that use a model similar to the keyboard and mouse.  All stylus-related APIs contain the word "Stylus".
 
  Because the stylus can act as a mouse, applications that support only mouse input can still obtain some level of stylus support automatically. When the stylus is used in such a manner, the application is given the opportunity to handle the appropriate stylus event and then handles the corresponding mouse event. In addition, higher-level services such as ink input are also available through the stylus device abstraction.  For more information about ink as input, see [Getting Started with Ink](getting-started-with-ink.md).
 
 <a name="event_routing"></a>
+
 ## Event Routing
+
  A <xref:System.Windows.FrameworkElement> can contain other elements as child elements in its content model, forming a tree of elements.  In WPF, the parent element can participate in input directed to its child elements or other descendants by handing events. This is especially useful for building controls out of smaller controls, a process known as "control composition" or "compositing." For more information about element trees and how element trees relate to event routes, see [Trees in WPF](trees-in-wpf.md).
 
  Event routing is the process of forwarding events to multiple elements, so that a particular object or element along the route can choose to offer a significant response (through handling) to an event that might have been sourced by a different element.  Routed events use one of three routing mechanisms: direct, bubbling, and tunneling.  In direct routing, the source element is the only element notified, and the event is not routed to any other elements. However, the direct routed event still offers some additional capabilities that are only present for routed events as opposed to standard CLR events. Bubbling works up the element tree by first notifying the element that sourced the event, then the parent element, and so on.  Tunneling starts at the root of the element tree and works down, ending with the original source element.  For more information about routed events, see [Routed Events Overview](routed-events-overview.md).
@@ -67,12 +74,15 @@ ms.assetid: ee5258b7-6567-415a-9b1c-c0cbe46e79ef
  WPF input events generally come in pairs that consists of a tunneling event and a bubbling event.  Tunneling events are distinguished from bubbling events with the "Preview" prefix.  For instance, <xref:System.Windows.Input.Mouse.PreviewMouseMove> is the tunneling version of a mouse move event and <xref:System.Windows.Input.Mouse.MouseMove> is the bubbling version of this event. This event pairing is a convention that is implemented at the element level and is not an inherent capability of the WPF event system. For details, see the WPF Input Events section in [Routed Events Overview](routed-events-overview.md).
 
 <a name="handling_input_events"></a>
+
 ## Handling Input Events
+
  To receive input on an element, an event handler must be associated with that particular event.  In XAML this is straightforward: you reference the name of the event as an attribute of the element that will be listening for this event.  Then, you set the value of the attribute to the name of the event handler that you define, based on a delegate.  The event handler must be written in code such as C# and can be included in a code-behind file.
 
  Keyboard events occur when the operating system reports key actions that occur while keyboard focus is on an element. Mouse and stylus events each fall into two categories: events that report changes in pointer position relative to the element, and events that report changes in the state of device buttons.
 
 ### Keyboard Input Event Example
+
  The following example listens for a left arrow key press.  A <xref:System.Windows.Controls.StackPanel> is created that has a <xref:System.Windows.Controls.Button>.  An event handler to listen for the left arrow key press is attached to the <xref:System.Windows.Controls.Button> instance.
 
  The first section of the example creates the <xref:System.Windows.Controls.StackPanel> and the <xref:System.Windows.Controls.Button> and attaches the event handler for the <xref:System.Windows.UIElement.KeyDown>.
@@ -88,6 +98,7 @@ ms.assetid: ee5258b7-6567-415a-9b1c-c0cbe46e79ef
  [!code-vb[InputOvw#Input_OvwKeyboardExampleHandlerCodeBehind](~/samples/snippets/visualbasic/VS_Snippets_Wpf/InputOvw/VisualBasic/Page1.xaml.vb#input_ovwkeyboardexamplehandlercodebehind)]
 
 ### Mouse Input Event Example
+
  In the following example, the <xref:System.Windows.Controls.Control.Background%2A> color of a <xref:System.Windows.Controls.Button> is changed when the mouse pointer enters the <xref:System.Windows.Controls.Button>.  The <xref:System.Windows.Controls.Control.Background%2A> color is restored when the mouse leaves the <xref:System.Windows.Controls.Button>.
 
  The first section of the example creates the <xref:System.Windows.Controls.StackPanel> and the <xref:System.Windows.Controls.Button> control and attaches the event handlers for the <xref:System.Windows.UIElement.MouseEnter> and <xref:System.Windows.UIElement.MouseLeave> events to the <xref:System.Windows.Controls.Button>.
@@ -106,7 +117,9 @@ ms.assetid: ee5258b7-6567-415a-9b1c-c0cbe46e79ef
  [!code-vb[InputOvw#Input_OvwMouseExampleLeaveHandler](~/samples/snippets/visualbasic/VS_Snippets_Wpf/InputOvw/VisualBasic/Page1.xaml.vb#input_ovwmouseexampleleavehandler)]
 
 <a name="text_input"></a>
+
 ## Text Input
+
  The <xref:System.Windows.ContentElement.TextInput> event enables you to listen for text input in a device-independent manner. The keyboard is the primary means of text input, but speech, handwriting, and other input devices can generate text input also.
 
  For keyboard input, WPF first sends the appropriate <xref:System.Windows.ContentElement.KeyDown>/<xref:System.Windows.ContentElement.KeyUp> events. If those events are not handled and the key is textual (rather than a control key such as directional arrows or function keys), then a <xref:System.Windows.ContentElement.TextInput> event is raised.  There is not always a simple one-to-one mapping between <xref:System.Windows.ContentElement.KeyDown>/<xref:System.Windows.ContentElement.KeyUp> and <xref:System.Windows.ContentElement.TextInput> events because multiple keystrokes can generate a single character of text input and single keystrokes can generate multi-character strings.  This is especially true for languages such as Chinese, Japanese, and Korean which use Input Method Editors (IMEs) to generate the thousands of possible characters in their corresponding alphabets.
@@ -132,12 +145,15 @@ ms.assetid: ee5258b7-6567-415a-9b1c-c0cbe46e79ef
  In this example, the handling logic is written two times—one time for CTRL+O, and again for button's click event. This can be simplified by using commands, instead of handling the input events directly.  Commands are discussed in this overview and in [Commanding Overview](commanding-overview.md).
 
 <a name="touch_and_manipulation"></a>
+
 ## Touch and Manipulation
+
  New hardware and API in the Windows 7 operating system provide applications the ability to receive input from multiple touches simultaneously. WPF enables applications to detect and respond to touch in a manner similar to responding to other input, such as the mouse or keyboard, by raising events when touch occurs.
 
  WPF exposes two types of events when touch occurs: touch events and manipulation events. Touch events provide raw data about each finger on a touchscreen and its movement. Manipulation events interpret the input as certain actions. Both types of events are discussed in this section.
 
 ### Prerequisites
+
  You need the following components to develop an application that responds to touch.
 
 - Visual Studio 2010.
@@ -147,6 +163,7 @@ ms.assetid: ee5258b7-6567-415a-9b1c-c0cbe46e79ef
 - A device, such as a touchscreen, that supports Windows Touch.
 
 ### Terminology
+
  The following terms are used when touch is discussed.
 
 - **Touch** is a type of user input that is recognized by Windows 7. Usually, touch is initiated by putting fingers on a touch-sensitive screen. Note that devices such as a touchpad that is common on laptop computers do not support touch if the device merely converts the finger's position and movement as mouse input.
@@ -158,6 +175,7 @@ ms.assetid: ee5258b7-6567-415a-9b1c-c0cbe46e79ef
 - A `touch device` represents a device that produces touch input, such as a single finger on a touchscreen.
 
 ### Controls that Respond to Touch
+
  The following controls can be scrolled by dragging a finger across the control if it has content that is scrolled out of view.
 
 - <xref:System.Windows.Controls.ComboBox>
@@ -181,6 +199,7 @@ ms.assetid: ee5258b7-6567-415a-9b1c-c0cbe46e79ef
  The <xref:System.Windows.Controls.ScrollViewer> defines the <xref:System.Windows.Controls.ScrollViewer.PanningMode%2A?displayProperty=nameWithType> attached property that enables you to specify whether touch panning is enabled horizontally, vertically, both, or neither. The <xref:System.Windows.Controls.ScrollViewer.PanningDeceleration%2A?displayProperty=nameWithType> property specifies how quickly the scrolling slows down when the user lifts the finger from the touchscreen. The <xref:System.Windows.Controls.ScrollViewer.PanningRatio%2A?displayProperty=nameWithType> attached property specifies the ratio of scrolling offset to translate manipulation offset.
 
 ### Touch Events
+
  The base classes, <xref:System.Windows.UIElement>, <xref:System.Windows.UIElement3D>, and <xref:System.Windows.ContentElement>, define events that you can subscribe to so your application will respond to touch. Touch events are useful when your application interprets touch as something other than manipulating an object. For example, an application that enables a user to draw with one or more fingers would subscribe to touch events.
 
  All three classes define the following events, which behave similarly, regardless of the defining class.
@@ -227,6 +246,7 @@ Touch events
  When more than two fingers are used, the events occur for each finger.
 
 ### Manipulation Events
+
  For cases where an application enables a user to manipulate an object, the <xref:System.Windows.UIElement> class defines manipulation events. Unlike the touch events that simply report the position of touch, the manipulation events report how the input can be interpreted. There are three types of manipulations, translation, expansion, and rotation. The following list describes how to invoke the three types of manipulations.
 
 - Put a finger on an object and move the finger across the touchscreen to invoke a translation manipulation. This usually moves the object.
@@ -258,6 +278,7 @@ Touch events
  By default, a <xref:System.Windows.UIElement> does not receive these manipulation events. To receive manipulation events on a <xref:System.Windows.UIElement>, set <xref:System.Windows.UIElement.IsManipulationEnabled%2A?displayProperty=nameWithType> to `true`.
 
 #### The Execution Path of Manipulation Events
+
  Consider a scenario where a user "throws" an object. The user puts a finger on the object, moves the finger across the touchscreen for a short distance, and then lifts the finger while it is moving. The result of this is that the object will move under the user's finger and continue to move after the user lifts the finger.
 
  The following illustration shows the execution path of manipulation events and important information about each event.
@@ -292,6 +313,7 @@ Manipulation events
  Note that if you call <xref:System.Windows.Input.ManipulationStartingEventArgs.Cancel%2A> when the manipulation is in inertia, the method returns `false` and the input does not raise mouse events.
 
 ### The Relationship Between Touch and Manipulation Events
+
  A <xref:System.Windows.UIElement> can always receive touch events. When the <xref:System.Windows.UIElement.IsManipulationEnabled%2A> property is set to `true`, a <xref:System.Windows.UIElement> can receive both touch and manipulation events.  If the <xref:System.Windows.UIElement.TouchDown> event is not handled (that is, the <xref:System.Windows.RoutedEventArgs.Handled%2A> property is `false`), the manipulation logic captures the touch to the element and generates the manipulation events. If the <xref:System.Windows.RoutedEventArgs.Handled%2A> property is set to `true` in the <xref:System.Windows.UIElement.TouchDown> event, the manipulation logic does not generate manipulation events. The following illustration shows the relationship between touch events and manipulation events.
 
  ![Relationship between touch and manipulation events](./media/ndp-touchmanipulateevents.png "NDP_TouchManipulateEvents")
@@ -308,10 +330,13 @@ Touch and manipulation events
 - When the last touch device on the element raises the <xref:System.Windows.UIElement.TouchUp> event, the manipulation logic generates the <xref:System.Windows.UIElement.ManipulationInertiaStarting> event.
 
 <a name="focus"></a>
+
 ## Focus
+
  There are two main concepts that pertain to focus in WPF: keyboard focus and logical focus.
 
 ### Keyboard Focus
+
  Keyboard focus refers to the element that is receiving keyboard input.  There can be only one element on the whole desktop that has keyboard focus.  In WPF, the element that has keyboard focus will have <xref:System.Windows.IInputElement.IsKeyboardFocused%2A> set to `true`.  The static <xref:System.Windows.Input.Keyboard> method <xref:System.Windows.Input.Keyboard.FocusedElement%2A> returns the element that currently has keyboard focus.
 
  Keyboard focus can be obtained by tabbing to an element or by clicking the mouse on certain elements, such as a <xref:System.Windows.Controls.TextBox>.  Keyboard focus can also be obtained programmatically by using the <xref:System.Windows.Input.Keyboard.Focus%2A> method on the <xref:System.Windows.Input.Keyboard> class.  <xref:System.Windows.Input.Keyboard.Focus%2A> attempts to give the specified element keyboard focus.  The element returned by <xref:System.Windows.Input.Keyboard.Focus%2A> is the element that currently has keyboard focus.
@@ -326,6 +351,7 @@ Touch and manipulation events
  For more information about keyboard focus, see [Focus Overview](focus-overview.md).
 
 ### Logical Focus
+
  Logical focus refers to the <xref:System.Windows.Input.FocusManager.FocusedElement%2A?displayProperty=nameWithType> in a focus scope.  There can be multiple elements that have logical focus in an application, but there may only be one element that has logical focus in a particular focus scope.
 
  A focus scope is a container element that keeps track of the <xref:System.Windows.Input.FocusManager.FocusedElement%2A> within its scope.  When focus leaves a focus scope, the focused element will lose keyboard focus but will retain logical focus.  When focus returns to the focus scope, the focused element will obtain keyboard focus.  This allows for keyboard focus to be changed between multiple focus scopes but insures that the focused element within the focus scope remains the focused element when focus returns.
@@ -348,15 +374,21 @@ Touch and manipulation events
  For more information about logical focus, see [Focus Overview](focus-overview.md).
 
 <a name="mouse_position"></a>
+
 ## Mouse Position
+
  The WPF input API provides helpful information with regard to coordinate spaces.  For example, coordinate `(0,0)` is the upper-left coordinate, but the upper-left of which element in the tree? The element that is the input target? The element you attached your event handler to? Or something else? To avoid confusion, the WPF input API requires that you specify your frame of reference when you work with coordinates obtained through the mouse. The <xref:System.Windows.Input.Mouse.GetPosition%2A> method returns the coordinate of the mouse pointer relative to the specified element.
 
 <a name="mouse_capture"></a>
+
 ## Mouse Capture
+
  Mouse devices specifically hold a modal characteristic known as mouse capture. Mouse capture is used to maintain a transitional input state when a drag-and-drop operation is started, so that other operations involving the nominal on-screen position of the mouse pointer do not necessarily occur. During the drag, the user cannot click without aborting the drag-and-drop, which makes most mouseover cues inappropriate while the mouse capture is held by the drag origin. The input system exposes APIs that can determine mouse capture state, as well as APIs that can force mouse capture to a specific element, or clear mouse capture state. For more information on drag-and-drop operations, see [Drag and Drop Overview](drag-and-drop-overview.md).
 
 <a name="commands"></a>
+
 ## Commands
+
  Commands enable input handling at a more semantic level than device input.  Commands are simple directives, such as `Cut`, `Copy`, `Paste`, or `Open`.  Commands are useful for centralizing your command logic.  The same command might be accessed from a <xref:System.Windows.Controls.Menu>, on a <xref:System.Windows.Controls.ToolBar>, or through a keyboard shortcut. Commands also provide a mechanism for disabling controls when the command becomes unavailable.
 
  <xref:System.Windows.Input.RoutedCommand> is the WPF implementation of <xref:System.Windows.Input.ICommand>.  When a <xref:System.Windows.Input.RoutedCommand> is executed, a <xref:System.Windows.Input.CommandManager.PreviewExecuted> and an <xref:System.Windows.Input.CommandManager.Executed> event are raised on the command target, which tunnel and bubble through the element tree like other input.  If a command target is not set, the element with keyboard focus will be the command target.  The logic that performs the command is attached to a <xref:System.Windows.Input.CommandBinding>.  When an <xref:System.Windows.Input.CommandManager.Executed> event reaches a <xref:System.Windows.Input.CommandBinding> for that specific command, the <xref:System.Windows.Input.ExecutedRoutedEventHandler> on the <xref:System.Windows.Input.CommandBinding> is called.  This handler performs the action of the command.
@@ -375,7 +407,9 @@ Touch and manipulation events
  For more information about commands in WPF, see [Commanding Overview](commanding-overview.md).
 
 <a name="the_input_system_and_base_elements"></a>
+
 ## The Input System and Base Elements
+
  Input events such as the attached events defined by the <xref:System.Windows.Input.Mouse>, <xref:System.Windows.Input.Keyboard>, and <xref:System.Windows.Input.Stylus> classes are raised by the input system and injected into a particular position in the object model based on hit testing the visual tree at run time.
 
  Each of the events that <xref:System.Windows.Input.Mouse>, <xref:System.Windows.Input.Keyboard>, and <xref:System.Windows.Input.Stylus> define as an attached event is also re-exposed by the base element classes <xref:System.Windows.UIElement> and <xref:System.Windows.ContentElement> as a new routed event. The base element routed events are generated by classes handling the original attached event and reusing the event data.
@@ -383,7 +417,9 @@ Touch and manipulation events
  When the input event becomes associated with a particular source element through its base element input event implementation, it can be routed through the remainder of an event route that is based on a combination of logical and visual tree objects, and be handled by application code.  Generally, it is more convenient to handle these device-related input events using the routed events on <xref:System.Windows.UIElement> and <xref:System.Windows.ContentElement>, because you can use more intuitive event handler syntax both in XAML and in code. You could choose to handle the attached event that initiated the process instead, but you would face several issues: the attached event may be marked handled by the base element class handling, and you need to use accessor methods rather than true event syntax in order to attach handlers for attached events.
 
 <a name="whats_next"></a>
+
 ## What's Next
+
  You now have several techniques to handle input in WPF.  You should also have an improved understanding of the various types of input events and the routed event mechanisms used by WPF.
 
  Additional resources are available that explain WPF framework elements and event routing in more detail. See the following overviews for more information, [Commanding Overview](commanding-overview.md), [Focus Overview](focus-overview.md), [Base Elements Overview](base-elements-overview.md), [Trees in WPF](trees-in-wpf.md), and [Routed Events Overview](routed-events-overview.md).

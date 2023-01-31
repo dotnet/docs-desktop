@@ -20,10 +20,13 @@ helpviewer_keywords:
 ms.assetid: 8579c10b-76ab-4c52-9691-195ce02333c8
 ---
 # WPF Architecture
+
 This topic provides a guided tour of the Windows Presentation Foundation (WPF) class hierarchy. It covers most of the major subsystems of WPF, and describes how they interact. It also details some of the choices made by the architects of WPF.  
 
 <a name="System_Object"></a>
+
 ## System.Object  
+
  The primary WPF programming model is exposed through managed code. Early in the design phase of WPF there were a number of debates about where the line should be drawn between the managed components of the system and the unmanaged ones. The CLR provides a number of features that make development more productive and robust (including memory management, error handling, common type system, etc.) but they come at a cost.  
   
  The major components of WPF are illustrated in the figure below. The red sections of the diagram (PresentationFramework, PresentationCore, and milcore) are the major code portions of WPF. Of these, only one is an unmanaged component – milcore. Milcore is written in unmanaged code in order to enable tight integration with DirectX. All display in WPF is done through the DirectX engine, allowing for efficient hardware and software rendering. WPF also required fine control over memory and execution. The composition engine in milcore is extremely performance sensitive, and required giving up many advantages of the CLR to gain performance.  
@@ -33,7 +36,9 @@ This topic provides a guided tour of the Windows Presentation Foundation (WPF) c
  Communication between the managed and unmanaged portions of WPF is discussed later in this topic. The remainder of the managed programming model is described below.  
   
 <a name="System_Threading_DispatcherObject"></a>
+
 ## System.Threading.DispatcherObject  
+
  Most objects in WPF derive from <xref:System.Windows.Threading.DispatcherObject>, which provides the basic constructs for dealing with concurrency and threading. WPF is based on a messaging system implemented by the dispatcher. This works much like the familiar Win32 message pump; in fact, the WPF dispatcher uses User32 messages for performing cross thread calls.  
   
  There are really two core concepts to understand when discussing concurrency in WPF – the dispatcher and thread affinity.  
@@ -43,7 +48,9 @@ This topic provides a guided tour of the Windows Presentation Foundation (WPF) c
  Given that you have objects with STA threading, you need a way to communicate between threads, and validate that you are on the correct thread. Herein lies the role of the dispatcher. The dispatcher is a basic message dispatching system, with multiple prioritized queues. Examples of messages include raw input notifications (mouse moved), framework functions (layout), or user commands (execute this method). By deriving from <xref:System.Windows.Threading.DispatcherObject>, you create a CLR object that has STA behavior, and will be given a pointer to a dispatcher at creation time.  
   
 <a name="System_Windows_DependencyObject"></a>
+
 ## System.Windows.DependencyObject  
+
  One of the primary architectural philosophies used in building WPF was a preference for properties over methods or events. Properties are declarative and allow you to more easily specify intent instead of action. This also supported a model driven, or data driven, system for displaying user interface content. This philosophy had the intended effect of creating more properties that you could bind to, in order to better control the behavior of an application.  
   
  In order to have more of the system driven by properties, a richer property system than what the CLR provides was needed. A simple example of this richness is change notifications. In order to enable two way binding, you need both sides of the bind to support change notification. In order to have behavior tied to property values, you need to be notified when the property value changes. The Microsoft .NET Framework has an interface, **INotifyPropertyChange**, which allows an object to publish change notifications, however it is optional.  
@@ -57,7 +64,9 @@ This topic provides a guided tour of the Windows Presentation Foundation (WPF) c
  The final new feature of the property system is the notion of attached properties. WPF elements are built on the principle of composition and component reuse. It is often the case that some containing element (like a <xref:System.Windows.Controls.Grid> layout element) needs additional data on child elements to control its behavior (like the Row/Column information). Instead of associating all of these properties with every element, any object is allowed to provide property definitions for any other object. This is similar to the "expando" features of JavaScript.  
   
 <a name="System_Windows_Media_Visual"></a>
+
 ## System.Windows.Media.Visual  
+
  With a system defined, the next step is getting pixels drawn to the screen. The <xref:System.Windows.Media.Visual> class provides for building a tree of visual objects, each optionally containing drawing instructions and metadata about how to render those instructions (clipping, transformation, etc.). <xref:System.Windows.Media.Visual> is designed to be extremely lightweight and flexible, so most of the features have no public API exposure and rely heavily on protected callback functions.  
   
  <xref:System.Windows.Media.Visual> is really the entry point to the WPF composition system. <xref:System.Windows.Media.Visual> is the point of connection between these two subsystems, the managed API and the unmanaged milcore.  
@@ -83,7 +92,9 @@ This topic provides a guided tour of the Windows Presentation Foundation (WPF) c
  Second, if you evaluate the animation system, you'll see that it is almost completely declarative. Instead of requiring a developer to compute the next location, or next color, you can express animations as a set of properties on an animation object. These animations can then express the intent of the developer or designer (move this button from here to there in 5 seconds), and the system can determine the most efficient way to accomplish that.  
   
 <a name="System_Windows_UIElement"></a>
+
 ## System.Windows.UIElement  
+
  <xref:System.Windows.UIElement> defines core subsystems including Layout, Input, and Events.  
   
  Layout is a core concept in WPF. In many systems there is either a fixed set of layout models (HTML supports three models for layout; flow, absolute, and tables) or no model for layout (User32 really only supports absolute positioning). WPF started with the assumption that developers and designers wanted a flexible, extensible layout model, which could be driven by property values rather than imperative logic. At the <xref:System.Windows.UIElement> level, the basic contract for layout is introduced – a two phase model with <xref:System.Windows.UIElement.Measure%2A> and <xref:System.Windows.UIElement.Arrange%2A> passes.  
@@ -103,7 +114,9 @@ This topic provides a guided tour of the Windows Presentation Foundation (WPF) c
  To this point in the topic, "core" features of WPF – features implemented in the PresentationCore assembly, have been the focus. When building WPF, a clean separation between foundational pieces (like the contract for layout with **Measure** and **Arrange**) and framework pieces (like the implementation of a specific layout like <xref:System.Windows.Controls.Grid>) was the desired outcome. The goal was to provide an extensibility point low in the stack that would allow external developers to create their own frameworks if needed.  
   
 <a name="System_Windows_FrameworkElement"></a>
+
 ## System.Windows.FrameworkElement  
+
  <xref:System.Windows.FrameworkElement> can be looked at in two different ways. It introduces a set of policies and customizations on the subsystems introduced in lower layers of WPF. It also introduces a set of new subsystems.  
   
  The primary policy introduced by <xref:System.Windows.FrameworkElement> is around application layout. <xref:System.Windows.FrameworkElement> builds on the basic layout contract introduced by <xref:System.Windows.UIElement> and adds the notion of a layout "slot" that makes it easier for layout authors to have a consistent set of property driven layout semantics. Properties like <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A>, <xref:System.Windows.FrameworkElement.VerticalAlignment%2A>, <xref:System.Windows.FrameworkElement.MinWidth%2A>, and <xref:System.Windows.FrameworkElement.Margin%2A> (to name a few) give all components derived from <xref:System.Windows.FrameworkElement> consistent behavior inside of layout containers.  
@@ -119,7 +132,9 @@ This topic provides a guided tour of the Windows Presentation Foundation (WPF) c
  Styling is really a lightweight form of data binding. Using styling you can bind a set of properties from a shared definition to one or more instances of an element. Styles get applied to an element either by explicit reference (by setting the <xref:System.Windows.FrameworkElement.Style%2A> property) or implicitly by associating a style with the CLR type of the element.  
   
 <a name="System_Windows_Controls_Control"></a>
+
 ## System.Windows.Controls.Control  
+
  Control’s most significant feature is templating. If you think about WPF’s composition system as a retained mode rendering system, templating allows a control to describe its rendering in a parameterized, declarative manner. A <xref:System.Windows.Controls.ControlTemplate> is really nothing more than a script to create a set of child elements, with bindings to properties offered by the control.  
   
  <xref:System.Windows.Controls.Control> provides a set of stock properties, <xref:System.Windows.Controls.Control.Foreground%2A>, <xref:System.Windows.Controls.Control.Background%2A>, <xref:System.Windows.Controls.Control.Padding%2A>, to name a few, which template authors can then use to customize the display of a control. The implementation of a control provides a data model and interaction model. The interaction model defines a set of commands (like Close for a window) and bindings to input gestures (like clicking the red X in the upper corner of the window). The data model provides a set of properties to either customize the interaction model or customize the display (determined by the template).  
@@ -129,7 +144,9 @@ This topic provides a guided tour of the Windows Presentation Foundation (WPF) c
  A common aspect of the data model of controls is the content model. If you look at a control like <xref:System.Windows.Controls.Button>, you will see that it has a property named "Content" of type <xref:System.Object>. In Windows Forms and ASP.NET, this property would typically be a string – however that limits the type of content you can put in a button. Content for a button can either be a simple string, a complex data object, or an entire element tree. In the case of a data object, the data template is used to construct a display.  
   
 <a name="Summary"></a>
+
 ## Summary  
+
  WPF is designed to allow you to create dynamic, data driven presentation systems. Every part of the system is designed to create objects through property sets that drive behavior. Data binding is a fundamental part of the system, and is integrated at every layer.  
   
  Traditional applications create a display and then bind to some data. In WPF, everything about the control, every aspect of the display, is generated by some type of data binding. The text found inside a button is displayed by creating a composed control inside of the button and binding its display to the button’s content property.  

@@ -5,9 +5,11 @@ ms.assetid: 2a2e8274-6556-46a2-80d3-a1812903cbcf
 description: Learn how Windows Presentation Foundation (WPF) libraries expose a number of unmanaged functions that are intended for internal use only.
 ---
 # WPF Unmanaged API Reference
+
 Windows Presentation Foundation (WPF) libraries expose a number of unmanaged functions that are intended for internal use only. They should not be called from user code.  
   
 ## In This Section  
+
  [Activate Function](activate-function-wpf-unmanaged-api-reference.md)  
  [CreateIDispatchSTAForwarder Function](createidispatchstaforwarder-function-wpf-unmanaged-api-reference.md)  
  [Deactivate Function](deactivate-function-wpf-unmanaged-api-reference.md)  

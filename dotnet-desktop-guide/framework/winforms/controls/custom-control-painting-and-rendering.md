@@ -9,9 +9,11 @@ helpviewer_keywords:
 ms.assetid: a09dbf76-0966-4cbf-a66a-2083ba98e068
 ---
 # Custom Control Painting and Rendering
+
 Custom painting of controls is one of the many complicated tasks made easy by the .NET Framework. When authoring a custom control, you have many options regarding your control's graphical appearance. If you are authoring a control that inherits from the `Control`, you must provide code that allows your control to render its graphical representation. If you are creating a user control by inheriting from the `UserControl`, or are inheriting from one of the Windows Forms controls, you may override the standard graphical representation and provide your own graphics code. If you want to provide custom rendering for the constituent controls of a `UserControl` you are authoring, your options become more limited, but still allow a wide range of graphical possibilities for your controls and applications.  
   
 ## In This Section  
+
  [Rendering a Windows Forms Control](rendering-a-windows-forms-control.md)  
  Shows how to program the logic that displays a control.  
   
@@ -31,6 +33,7 @@ Custom painting of controls is one of the many complicated tasks made easy by th
  Shows how to render controls using visual styles in operating systems that support them.  
   
 ## Reference  
+
  <xref:System.Windows.Forms.Control>  
  Describes this class and has links to all of its members.  
   
@@ -41,6 +44,7 @@ Custom painting of controls is one of the many complicated tasks made easy by th
  Describes this method.  
   
 ## Related Sections  
+
  [How to: Create Graphics Objects for Drawing](../advanced/how-to-create-graphics-objects-for-drawing.md)  
  Introduces GDI+ graphics functionality from a Visual Studio perspective and gives links to more information.  
   

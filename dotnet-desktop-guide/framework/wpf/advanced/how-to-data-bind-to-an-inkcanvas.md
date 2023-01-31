@@ -8,7 +8,9 @@ ms.assetid: 8d6b4d9e-ea7f-4412-ba83-3feccec5a515
 description: Learn how to data bind the Strokes property of an InkCanvas to another InkCanvas and how to bind a DefaultDrawingAttributesProperty to a data source.
 ---
 # How to: Data Bind to an InkCanvas
+
 ## Example  
+
  The following example demonstrates how to bind the <xref:System.Windows.Controls.InkCanvas.Strokes%2A> property of an <xref:System.Windows.Controls.InkCanvas> to another <xref:System.Windows.Controls.InkCanvas>.  
   
  [!code-xaml[InkCanvasBindingSnippet#2](~/samples/snippets/csharp/VS_Snippets_Wpf/InkCanvasBindingSnippet/CS/Window2.xaml#2)]  

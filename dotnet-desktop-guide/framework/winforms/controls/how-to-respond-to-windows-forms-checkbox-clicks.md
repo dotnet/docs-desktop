@@ -15,6 +15,7 @@ helpviewer_keywords:
 ms.assetid: c39f901e-8899-43b6-aa31-939cbf7089fb
 ---
 # How to: Respond to Windows Forms CheckBox Clicks
+
 Whenever a user clicks a Windows Forms <xref:System.Windows.Forms.CheckBox> control, the <xref:System.Windows.Forms.Control.Click> event occurs. You can program your application to perform some action depending upon the state of the check box.  
   
 ### To respond to CheckBox clicks  

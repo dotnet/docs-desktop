@@ -10,9 +10,11 @@ helpviewer_keywords:
 ms.assetid: ef5175df-6ab9-4096-be0c-804003b44c64
 ---
 # Flow Content Elements How-to Topics
+
 The topics in this section describe how to accomplish common tasks using various flow content elements and related features.  
   
 ## In This Section  
+
  [Adjust Spacing Between Paragraphs](how-to-adjust-spacing-between-paragraphs.md)  
  [Build a Table Programmatically](how-to-build-a-table-programmatically.md)  
  [Change the FlowDirection of Content Programmatically](how-to-change-the-flowdirection-of-content-programmatically.md)  
@@ -30,9 +32,11 @@ The topics in this section describe how to accomplish common tasks using various
  [Use FlowDocument Column-Separating Attributes](how-to-use-flowdocument-column-separating-attributes.md)  
   
 ## Reference  
+
  <xref:System.Windows.Documents.FlowDocument>  
   <xref:System.Windows.Documents.Block>  
   <xref:System.Windows.Documents.Inline>  
   
 ## Related Sections  
+
  [Documents in WPF](documents-in-wpf.md)

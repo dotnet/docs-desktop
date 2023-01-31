@@ -12,9 +12,11 @@ helpviewer_keywords:
 ms.assetid: a3bf97eb-63ed-425a-ba07-dcc65efb567c
 ---
 # How to: Rotate, Reflect, and Skew Images
+
 You can rotate, reflect, and skew an image by specifying destination points for the upper-left, upper-right, and lower-left corners of the original image. The three destination points determine an affine transformation that maps the original rectangular image to a parallelogram.  
   
 ## Example  
+
  For example, suppose the original image is a rectangle with upper-left corner at (0, 0), upper-right corner at (100, 0), and lower-left corner at (0, 50). Now suppose you map those three points to destination points as follows.  
   
 |Original point|Destination point|  
@@ -41,6 +43,7 @@ You can rotate, reflect, and skew an image by specifying destination points for 
  [!code-vb[System.Drawing.WorkingWithImages#61](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.WorkingWithImages/VB/Class1.vb#61)]  
   
 ## Compiling the Code  
+
  The preceding example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs> `e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. Make sure to replace `Stripes.bmp` with the path to an image that is valid on your system.  
   
 ## See also

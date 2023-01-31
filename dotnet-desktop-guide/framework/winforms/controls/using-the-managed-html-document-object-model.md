@@ -7,9 +7,11 @@ ms.assetid: a017dd5c-cd7b-47e4-952c-f4f54cb48409
 description: Learn how the managed HTML document object model provides a wrapper based on the .NET Framework for the HTML classes exposed by Internet Explorer.
 ---
 # Using the Managed HTML Document Object Model
+
 The managed HTML document object model (DOM) provides a wrapper based on the .NET Framework for the HTML classes exposed by Internet Explorer. Use these classes to manipulate HTML pages hosted in the <xref:System.Windows.Forms.WebBrowser> control, or to build new pages from the beginning.  
   
 ## In This Section  
+
  [How to: Access the Managed HTML Document Object Model](how-to-access-the-managed-html-document-object-model.md)  
  Describes how to obtain a valid instance of <xref:System.Windows.Forms.HtmlDocument> from either a Windows Forms application or a <xref:System.Windows.Forms.UserControl> hosted in Internet Explorer.  
   
@@ -26,6 +28,7 @@ The managed HTML document object model (DOM) provides a wrapper based on the .NE
  Describes how to access members of the underlying DOM that do not have a managed equivalent.  
   
 ## Reference  
+
  <xref:System.Windows.Forms.HtmlDocument>  
   
  <xref:System.Windows.Forms.HtmlElement>  
@@ -33,4 +36,5 @@ The managed HTML document object model (DOM) provides a wrapper based on the .NE
  <xref:System.Windows.Forms.HtmlWindow>  
   
 ## Related Sections  
+
  [WebBrowser Control](webbrowser-control-windows-forms.md)  

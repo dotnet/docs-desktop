@@ -8,11 +8,13 @@ helpviewer_keywords:
 ms.assetid: 01ea5d4c-a736-4596-b0e9-a67a1b86e15f
 ---
 # Customizing the Windows Forms DataGridView Control
+
 The `DataGridView` control provides several properties that you can use to adjust the appearance and basic behavior (look and feel) of its cells, rows, and columns. If you have special needs that go beyond the capabilities of the <xref:System.Windows.Forms.DataGridViewCellStyle> class, however, you can also implement owner drawing for the control or extend its capabilities by creating custom cells, columns, and rows.  
   
  To paint cells and rows yourself, you can handle various `DataGridView` painting events. To modify existing functionality or provide new functionality, you can create your own types derived from the existing `DataGridViewCell`, `DataGridViewColumn`, and `DataGridViewRow` types. You can also provide new editing capabilities by creating derived types that display a control of your choosing when a cell is in edit mode.  
   
 ## In This Section  
+
  [How to: Customize the Appearance of Cells in the Windows Forms DataGridView Control](customize-the-appearance-of-cells-in-the-datagrid.md)  
  Describes how to handle the <xref:System.Windows.Forms.DataGridView.CellPainting> event in order to paint cells manually.  
   
@@ -29,6 +31,7 @@ The `DataGridView` control provides several properties that you can use to adjus
  Describes how to implement the `IDataGridViewEditingControl` interface and create custom types derived from `DataGridViewCell` and `DataGridViewColumn` in order to display a <xref:System.Windows.Forms.DateTimePicker> control when a cell is in edit mode.  
   
 ## Reference  
+
  <xref:System.Windows.Forms.DataGridView>  
  Provides reference documentation for the <xref:System.Windows.Forms.DataGridView> control.  
   
@@ -45,6 +48,7 @@ The `DataGridView` control provides several properties that you can use to adjus
  Provides reference documentation for the <xref:System.Windows.Forms.IDataGridViewEditingControl> interface.  
   
 ## Related Sections  
+
  [Basic Formatting and Styling in the Windows Forms DataGridView Control](basic-formatting-and-styling-in-the-windows-forms-datagridview-control.md)  
  Provides topics that describe how to modify the basic appearance of the control and the display formatting of cell data.  
   

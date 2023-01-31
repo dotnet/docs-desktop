@@ -11,9 +11,11 @@ helpviewer_keywords:
 ms.assetid: 2a556fc0-748b-417f-a58a-0d05a7afb66f
 ---
 # How to: Navigate to a Page
+
 This example illustrates several ways in which a page can be navigated to from a <xref:System.Windows.Navigation.NavigationWindow>.  
   
 ## Example  
+
  It is possible for a <xref:System.Windows.Navigation.NavigationWindow> to navigate to a page using one of the following:  
   
 - The <xref:System.Windows.Navigation.NavigationWindow.Source%2A> property.  

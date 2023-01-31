@@ -12,12 +12,15 @@ ms.assetid: b7cc350f-b9e2-48b1-be14-60f3d853222e
 description: Learn about the issues that might influence the presentation and input for your WPF interoperation application.
 ---
 # Technology Regions Overview
+
 If multiple presentation technologies are used in an application, such as WPF, Win32, or DirectX, they must share the rendering areas within a common top-level window. This topic describes issues that might influence the presentation and input for your WPF interoperation application.  
   
 ## Regions  
+
  Within a top-level window, you can conceptualize that each HWND that comprises one of the technologies of an interoperation application has its own region (also called "airspace"). Each pixel within the window belongs to exactly one HWND, which constitutes the region of that HWND. (Strictly speaking, there is more than one WPF region if there is more than one WPF HWND, but for purposes of this discussion, you can assume there is only one). The region implies that all layers or other windows that attempt to render above that pixel during application lifetime must be part of the same render-level technology. Attempting to render WPF pixels over Win32 leads to undesirable results, and is disallowed as much as possible through the interoperation APIs.  
   
 ### Region Examples  
+
  The following illustration shows an application that mixes Win32, DirectX, and WPF. Each technology uses its own separate, non-overlapping set of pixels, and there are no region issues.  
   
  ![An example of an application that mixes Win32, DirectX, and WPF.](./media/technology-regions-overview/win32-directx-windows-presentation-foundation-application.png)  
@@ -39,6 +42,7 @@ If multiple presentation technologies are used in an application, such as WPF, W
  ![Diagram that shows a nonrectangular region.](./media/technology-regions-overview/nonrectangular-win32-region.png)  
   
 ## Transparency and Top-Level Windows  
+
  The window manager in Windows only really processes Win32 HWNDs. Therefore, every WPF <xref:System.Windows.Window> is an HWND. The <xref:System.Windows.Window> HWND must abide by the general rules for any HWND. Within that HWND, WPF code can do whatever the overall WPF APIs support. But for interactions with other HWNDs on the desktop, WPF must abide by Win32 processing and rendering rules.  WPF supports non-rectangular windows by using Win32 APIs—HRGNs for non-rectangular windows, and layered windows for a per-pixel alpha.  
   
  Constant alpha and color keys are not supported.  Win32 layered window capabilities vary by platform.  

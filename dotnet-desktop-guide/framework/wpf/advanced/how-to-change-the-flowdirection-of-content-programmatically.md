@@ -12,14 +12,17 @@ helpviewer_keywords:
 ms.assetid: 02f5a8ba-f8c0-4e5a-84b9-4c5bf12922a2
 ---
 # How to: Change the FlowDirection of Content Programmatically
+
 This example shows how to programmatically change the <xref:System.Windows.FrameworkElement.FlowDirection%2A> property of a <xref:System.Windows.Controls.FlowDocumentReader>.  
   
 ## Create button elements
+
  Two <xref:System.Windows.Controls.Button> elements are created, each representing one of the possible values of <xref:System.Windows.FlowDirection>. When a button is clicked, the associated property value is applied to the contents of a <xref:System.Windows.Controls.FlowDocumentReader> named `tf1`.  The property value is also written to a <xref:System.Windows.Controls.TextBlock> named `txt1`.  
   
  [!code-xaml[FlowDirectionSnippets#_FlowDirectionXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowDirectionSnippets/CSharp/Window1.xaml#_flowdirectionxaml)]  
   
 ## C# code example
+
  The events associated with the button clicks defined above are handled in a C# code-behind file.  
   
  [!code-csharp[FlowDirectionSnippets#_FlowDirection](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowDirectionSnippets/CSharp/Window1.xaml.cs#_flowdirection)]

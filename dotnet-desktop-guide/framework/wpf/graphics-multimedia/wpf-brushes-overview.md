@@ -10,10 +10,13 @@ helpviewer_keywords:
 ms.assetid: ecea1955-420b-45c6-bf43-c1404c072c41
 ---
 # WPF Brushes Overview
+
 Everything visible on your screen is visible because it was painted by a brush. For example, a brush is used to describe the background of a button, the foreground of text, and the fill of a shape. This topic introduces the concepts of painting with user interface (UI) objects with anything from simple, solid colors to complex sets of patterns and images.  
   
 <a name="paintingwithbrush"></a>
+
 ## Painting with a Brush  
+
  A <xref:System.Windows.Media.Brush> "paints" an area with its output. Different brushes have different types of output. Some brushes paint an area with a solid color, others with a gradient, pattern, image, or drawing. The following illustration shows examples of each of the different <xref:System.Windows.Media.Brush> types.  
   
  ![Brush types](./media/graphicsmm-brushtypes.jpg "graphicsmm_brushtypes")  
@@ -33,7 +36,9 @@ Brush examples
  The following sections describe the different <xref:System.Windows.Media.Brush> types and provide an example of each.  
   
 <a name="paintwithsolidcolorbrush"></a>
+
 ## Paint with a Solid Color  
+
  A <xref:System.Windows.Media.SolidColorBrush> paints an area with a solid <xref:System.Windows.Media.Color>. There are a variety of ways to specify the <xref:System.Windows.Media.SolidColorBrush.Color%2A> of a <xref:System.Windows.Media.SolidColorBrush>: for example, you can specify its alpha, red, blue, and green channels or use one of the predefined color provided by the <xref:System.Windows.Media.Colors> class.  
   
  The following example uses a <xref:System.Windows.Media.SolidColorBrush> to paint the <xref:System.Windows.Shapes.Shape.Fill%2A> of a <xref:System.Windows.Shapes.Rectangle>. The following illustration shows the painted rectangle.  
@@ -48,7 +53,9 @@ A Rectangle painted using a SolidColorBrush
  For more information about the <xref:System.Windows.Media.SolidColorBrush> class, see [Painting with Solid Colors and Gradients Overview](painting-with-solid-colors-and-gradients-overview.md).  
   
 <a name="paintwithlineargradientbrush"></a>
+
 ## Paint with a Linear Gradient  
+
  A <xref:System.Windows.Media.LinearGradientBrush> paints an area with a linear gradient. A linear gradient blends two or more colors across a line, the gradient axis. You use <xref:System.Windows.Media.GradientStop> objects to specify the colors in the gradient and their positions.  
   
  The following example uses a <xref:System.Windows.Media.LinearGradientBrush> to paint the <xref:System.Windows.Shapes.Shape.Fill%2A> of a <xref:System.Windows.Shapes.Rectangle>. The following illustration shows the painted rectangle.  
@@ -63,7 +70,9 @@ A Rectangle painted using a LinearGradientBrush
  For more information about the <xref:System.Windows.Media.LinearGradientBrush> class, see [Painting with Solid Colors and Gradients Overview](painting-with-solid-colors-and-gradients-overview.md).  
   
 <a name="paintwithradialgradientbrush"></a>
+
 ## Paint with a Radial Gradient  
+
  A <xref:System.Windows.Media.RadialGradientBrush> paints an area with a radial gradient. A radial gradient blends two or more colors across a circle. As with the <xref:System.Windows.Media.LinearGradientBrush> class, you use <xref:System.Windows.Media.GradientStop> objects to specify the colors in the gradient and their positions.  
   
  The following example uses a <xref:System.Windows.Media.RadialGradientBrush> to paint the <xref:System.Windows.Shapes.Shape.Fill%2A> of a <xref:System.Windows.Shapes.Rectangle>. The following illustration shows the painted rectangle.  
@@ -78,7 +87,9 @@ A Rectangle painted using a RadialGradientBrush
  For more information about the <xref:System.Windows.Media.RadialGradientBrush> class, see [Painting with Solid Colors and Gradients Overview](painting-with-solid-colors-and-gradients-overview.md).  
   
 <a name="paintwithimage"></a>
+
 ## Paint with an Image  
+
  An <xref:System.Windows.Media.ImageBrush> paints an area with a <xref:System.Windows.Media.ImageSource>.  
   
  The following example uses an <xref:System.Windows.Media.ImageBrush> to paint the <xref:System.Windows.Shapes.Shape.Fill%2A> of a <xref:System.Windows.Shapes.Rectangle>. The following illustration shows the painted rectangle.  
@@ -93,7 +104,9 @@ A Rectangle painted using a Image
  For more information about the <xref:System.Windows.Media.ImageBrush> class, see [Painting with Images, Drawings, and Visuals](painting-with-images-drawings-and-visuals.md).  
   
 <a name="paintwithdrawing"></a>
+
 ## Paint with a Drawing  
+
  A <xref:System.Windows.Media.DrawingBrush> paints an area with a <xref:System.Windows.Media.Drawing>. A <xref:System.Windows.Media.Drawing> can contain shapes, images, text, and media.  
   
  The following example uses a <xref:System.Windows.Media.DrawingBrush> to paint the <xref:System.Windows.Shapes.Shape.Fill%2A> of a <xref:System.Windows.Shapes.Rectangle>. The following illustration shows the painted rectangle.  
@@ -108,7 +121,9 @@ A Rectangle painted using a DrawingBrush
  For more information about the <xref:System.Windows.Media.DrawingBrush> class, see [Painting with Images, Drawings, and Visuals](painting-with-images-drawings-and-visuals.md).  
   
 <a name="paintwithvisual"></a>
+
 ## Paint with a Visual  
+
  A <xref:System.Windows.Media.VisualBrush> paints an area with a <xref:System.Windows.Media.Visual> object. Examples of Visual objects include <xref:System.Windows.Controls.Button>, <xref:System.Windows.Controls.Page>, and <xref:System.Windows.Controls.MediaElement>. A <xref:System.Windows.Media.VisualBrush> also enables you to project content from one portion of your application into another area; it's very useful for creating reflection effects and magnifying portions of the screen.  
   
  The following example uses a <xref:System.Windows.Media.VisualBrush> to paint the <xref:System.Windows.Shapes.Shape.Fill%2A> of a <xref:System.Windows.Shapes.Rectangle>. The following illustration shows the painted rectangle.  
@@ -123,7 +138,9 @@ A Rectangle painted using a VisualBrush
  For more information about the <xref:System.Windows.Media.VisualBrush> class, see [Painting with Images, Drawings, and Visuals](painting-with-images-drawings-and-visuals.md).  
   
 <a name="paintwithpredefinedbrushesandsystemcolors"></a>
+
 ## Paint using Predefined and System Brushes  
+
  For convenience, Windows Presentation Foundation (WPF) provides a set of predefined and system brushes that you can use to paint objects.  
   
 - For a list of available predefined brushes, see the <xref:System.Windows.Media.Brushes> class. For an example showing how to use a predefined brush, see [Paint an Area with a Solid Color](how-to-paint-an-area-with-a-solid-color.md).  
@@ -131,7 +148,9 @@ A Rectangle painted using a VisualBrush
 - For a list of available system brushes, see the <xref:System.Windows.SystemColors> class. For an example, see [Paint an Area with a System Brush](how-to-paint-an-area-with-a-system-brush.md).  
   
 <a name="commonbrushfeatures"></a>
+
 ## Common Brush Features  
+
  <xref:System.Windows.Media.Brush> objects provide an <xref:System.Windows.Media.Brush.Opacity%2A> property that can be used to make a brush transparent or partially transparent. An <xref:System.Windows.Media.Brush.Opacity%2A> value of 0 makes a brush completely transparent, while an <xref:System.Windows.Media.Brush.Opacity%2A> value of 1 makes a brush completely opaque. The following example uses the <xref:System.Windows.Media.Brush.Opacity%2A> property to make a <xref:System.Windows.Media.SolidColorBrush> 25 percent opaque.  
   
  [!code-xaml[BrushOverviewExamples_snip#OpacityExample1XAML](~/samples/snippets/xaml/VS_Snippets_Wpf/BrushOverviewExamples_snip/XAML/OpacityExample.xaml#opacityexample1xaml)]  
@@ -148,7 +167,9 @@ A Rectangle painted using a VisualBrush
  Because they are <xref:System.Windows.Media.Animation.Animatable> objects, <xref:System.Windows.Media.Brush> objects can be animated. For more information, see [Animation Overview](animation-overview.md).  
   
 <a name="freezable_features"></a>
+
 ### Freezable Features  
+
  Because it inherits from the <xref:System.Windows.Freezable> class, the <xref:System.Windows.Media.Brush> class provides several special features: <xref:System.Windows.Media.Brush> objects can be declared as [resources](/dotnet/desktop-wpf/fundamentals/xaml-resources-define), shared among multiple objects, and cloned. In addition, all the <xref:System.Windows.Media.Brush> types except <xref:System.Windows.Media.VisualBrush> can be made read-only to improve performance and made thread-safe.  
   
  For more information about the different features provided by <xref:System.Windows.Freezable> objects, see [Freezable Objects Overview](../advanced/freezable-objects-overview.md).  

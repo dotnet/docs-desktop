@@ -12,9 +12,11 @@ helpviewer_keywords:
 ms.assetid: 4708cc65-6510-45f8-82e6-30b0d3e30045
 ---
 # How to: Use the Content-Scrolling Methods of ScrollViewer
+
 This example shows how to use the scrolling methods of the <xref:System.Windows.Controls.ScrollViewer> element. These methods provide incremental scrolling of content, either by line or by page, in a <xref:System.Windows.Controls.ScrollViewer>.  
   
 ## Example  
+
  The following example creates a <xref:System.Windows.Controls.ScrollViewer> named `sv1`, which hosts a child <xref:System.Windows.Controls.TextBlock> element. Because the <xref:System.Windows.Controls.TextBlock> is larger than the parent <xref:System.Windows.Controls.ScrollViewer>, scroll bars appear in order to enable scrolling. <xref:System.Windows.Controls.Button> elements that represent the various scrolling methods are docked on the left in a separate <xref:System.Windows.Controls.StackPanel>. Each <xref:System.Windows.Controls.Button> in the XAML file calls a related custom method that controls scrolling behavior in <xref:System.Windows.Controls.ScrollViewer>.  
   
  [!code-xaml[ScrollViewerMethods#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ScrollViewerMethods/CSharp/Window1.xaml#1)]  

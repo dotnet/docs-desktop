@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: 829bcbdf-5318-4afb-9a03-c310e0d2f23d
 ---
 # x:FactoryMethod Directive
+
 Specifies a method other than a constructor that a XAML processor should use to initialize an object after resolving its backing type.  
   
 ## XAML Attribute Usage, no x:Arguments  
@@ -38,6 +39,7 @@ Specifies a method other than a constructor that a XAML processor should use to 
 |`oneOrMoreObjectElements`|One or more object elements for objects that specify factory method parameters. Order is significant; it signifies the order in which arguments should be passed to the factory method.|  
   
 ## Remarks  
+
  If `methodname` is an instance method, it cannot be qualified.  
   
  Static methods as factory methods are supported. If `methodname` is a static method, `methodname` is provided as a `typeName.methodName` combination, where `typeName` names the class that defines the static factory method. `typeName` can be prefix-qualified if referring to a type in a mapped xmlns. `typeName` can be a different type than `typeof(object)`.  

@@ -20,9 +20,11 @@ helpviewer_keywords:
 ms.assetid: 30b25aae-e3eb-4479-bdb8-187cf651fc84
 ---
 # Pens, Lines, and Rectangles in GDI+
+
 To draw lines with GDI+ you need to create a <xref:System.Drawing.Graphics> object and a <xref:System.Drawing.Pen> object. The <xref:System.Drawing.Graphics> object provides the methods that actually do the drawing, and the <xref:System.Drawing.Pen> object stores attributes, such as line color, width, and style.  
   
 ## Drawing a Line  
+
  To draw a line, call the <xref:System.Drawing.Graphics.DrawLine%2A> method of the <xref:System.Drawing.Graphics> object. The <xref:System.Drawing.Pen> object is passed as one of the arguments to the <xref:System.Drawing.Graphics.DrawLine%2A> method. The following example draws a line from the point (4, 2) to the point (12, 6):  
   
  [!code-csharp[LinesCurvesAndShapes#41](~/samples/snippets/csharp/VS_Snippets_Winforms/LinesCurvesAndShapes/CS/Class1.cs#41)]
@@ -34,12 +36,14 @@ To draw lines with GDI+ you need to create a <xref:System.Drawing.Graphics> obje
  [!code-vb[LinesCurvesAndShapes#42](~/samples/snippets/visualbasic/VS_Snippets_Winforms/LinesCurvesAndShapes/VB/Class1.vb#42)]  
   
 ## Constructing a Pen  
+
  You can specify certain attributes when you construct a <xref:System.Drawing.Pen> object. For example, one `Pen` constructor allows you to specify color and width. The following example draws a blue line of width 2 from (0, 0) to (60, 30):  
   
  [!code-csharp[LinesCurvesAndShapes#43](~/samples/snippets/csharp/VS_Snippets_Winforms/LinesCurvesAndShapes/CS/Class1.cs#43)]
  [!code-vb[LinesCurvesAndShapes#43](~/samples/snippets/visualbasic/VS_Snippets_Winforms/LinesCurvesAndShapes/VB/Class1.vb#43)]  
   
 ## Dashed Lines and Line Caps  
+
  The <xref:System.Drawing.Pen> object also exposes properties, such as <xref:System.Drawing.Pen.DashStyle%2A>, that you can use to specify features of the line. The following example draws a dashed line from (100, 50) to (300, 80):  
   
  [!code-csharp[LinesCurvesAndShapes#44](~/samples/snippets/csharp/VS_Snippets_Winforms/LinesCurvesAndShapes/CS/Class1.cs#44)]
@@ -50,6 +54,7 @@ To draw lines with GDI+ you need to create a <xref:System.Drawing.Graphics> obje
  ![Lines](./media/aboutgdip02-art04.gif "Aboutgdip02_art04")  
   
 ## Drawing a Rectangle  
+
  Drawing rectangles with GDI+ is similar to drawing lines. To draw a rectangle, you need a <xref:System.Drawing.Graphics> object and a <xref:System.Drawing.Pen> object. The <xref:System.Drawing.Graphics> object provides a <xref:System.Drawing.Graphics.DrawRectangle%2A> method, and the <xref:System.Drawing.Pen> object stores attributes, such as line width and color. The <xref:System.Drawing.Pen> object is passed as one of the arguments to the <xref:System.Drawing.Graphics.DrawRectangle%2A> method. The following example draws a rectangle with its upper-left corner at (100, 50), a width of 80, and a height of 40:  
   
  [!code-csharp[LinesCurvesAndShapes#45](~/samples/snippets/csharp/VS_Snippets_Winforms/LinesCurvesAndShapes/CS/Class1.cs#45)]

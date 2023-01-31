@@ -19,6 +19,7 @@ helpviewer_keywords:
 ms.assetid: 582a314e-e23d-4144-b45b-acbbd5579252
 ---
 # Introduction to WPF in Visual Studio
+
 Windows Presentation Foundation (WPF) in Visual Studio provides developers with a unified programming model for building line-of-business desktop applications on Windows.  
   
  [Create Desktop Applications with Windows Presentation Foundation](/visualstudio/designers/create-modern-desktop-applications-with-windows-presentation-foundation)  

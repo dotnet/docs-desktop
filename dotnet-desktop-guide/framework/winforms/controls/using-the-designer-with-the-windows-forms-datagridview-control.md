@@ -9,9 +9,11 @@ ms.assetid: b66057a6-5983-4864-b4e7-8cbc88a7010c
 description: Learn how Visual Studio provides designer support for the DataGridView control that enables users to perform many setup tasks without writing code.
 ---
 # Using the Designer with the Windows Forms DataGridView Control
+
 Visual Studio provides designer support for the `DataGridView` control that enables you to perform many setup tasks without writing code. These tasks include binding the control to a data source, modifying the columns used to display data, and adjusting the appearance and basic behavior of the control.  
   
 ## In This Section  
+
  [How to: Add and Remove Columns in the Windows Forms DataGridView Control Using the Designer](add-and-remove-columns-in-the-datagrid-using-the-designer.md)  
  Describes how to use the **Add Columns** and **Edit Columns** dialog boxes to populate and modify the columns collection.  
   
@@ -46,6 +48,7 @@ Visual Studio provides designer support for the `DataGridView` control that enab
  Describes how to use the **CellStyle Builder** dialog box to set up the basic appearance and data-display formats for the control.  
   
 ## Reference  
+
  <xref:System.Windows.Forms.DataGridView>  
  Provides reference documentation for the <xref:System.Windows.Forms.DataGridView> control.  
   

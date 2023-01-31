@@ -7,12 +7,15 @@ ms.assetid: feae5d43-2848-4b1a-8ea7-77085dc415b5
 description: Learn about virtual mode in the Windows Forms DataGridView control, including its implementation and use. 
 ---
 # Virtual Mode in the Windows Forms DataGridView Control
+
 With virtual mode, you can manage the interaction between the <xref:System.Windows.Forms.DataGridView> control and a custom data cache. To implement virtual mode, set the <xref:System.Windows.Forms.DataGridView.VirtualMode%2A> property to `true` and handle one or more of the events described in this topic. You will typically handle at least the `CellValueNeeded` event, which enables the control look up values in the data cache.  
   
 ## Bound Mode and Virtual Mode  
+
  Virtual mode is necessary only when you need to supplement or replace bound mode. In bound mode, you set the <xref:System.Windows.Forms.DataGridView.DataSource%2A> property and the control automatically loads the data from the specified source and submits user changes back to it. You can control which of the bound columns are displayed, and the data source itself typically handles operations such as sorting.  
   
 ## Supplementing Bound Mode  
+
  You can supplement bound mode by displaying unbound columns along with the bound columns. This is sometimes called "mixed mode" and is useful for displaying things like calculated values or user-interface (UI) controls.  
   
  Because unbound columns are outside the data source, they are ignored by the data source's sorting operations. Therefore, when you enable sorting in mixed mode, you must manage the unbound data in a local cache and implement virtual mode to let the <xref:System.Windows.Forms.DataGridView> control interact with it.  
@@ -20,11 +23,13 @@ With virtual mode, you can manage the interaction between the <xref:System.Windo
  For more information about using virtual mode to maintain the values in unbound columns, see the examples in the <xref:System.Windows.Forms.DataGridViewCheckBoxColumn.ThreeState%2A?displayProperty=nameWithType> property and <xref:System.Windows.Forms.DataGridViewComboBoxColumn?displayProperty=nameWithType> class reference topics.  
   
 ## Replacing Bound Mode  
+
  If bound mode does not meet your performance needs, you can manage all your data in a custom cache through virtual-mode event handlers. For example, you can use virtual mode to implement a just-in-time data loading mechanism that retrieves only as much data from a networked database as is necessary for optimal performance. This scenario is particularly useful when working with large amounts of data over a slow network connection or with client machines that have a limited amount of RAM or storage space.  
   
  For more information about using virtual mode in a just-in-time scenario, see [Implementing Virtual Mode with Just-In-Time Data Loading in the Windows Forms DataGridView Control](implementing-virtual-mode-jit-data-loading-in-the-datagrid.md).  
   
 ## Virtual-Mode Events  
+
  If your data is read-only, the `CellValueNeeded` event may be the only event you will need to handle. Additional virtual-mode events let you enable specific functionality like user edits, row addition and deletion, and row-level transactions.  
   
  Some standard <xref:System.Windows.Forms.DataGridView> events (such as events that occur when users add or delete rows, or when cell values are edited, parsed, validated, or formatted) are useful in virtual mode, as well. You can also handle events that let you maintain values not typically stored in a bound data source, such as cell ToolTip text, cell and row error text, cell and row shortcut menu data, and row height data.  
@@ -55,6 +60,7 @@ With virtual mode, you can manage the interaction between the <xref:System.Windo
 |<xref:System.Windows.Forms.DataGridView.RowHeightInfoNeeded><br /><br /> <xref:System.Windows.Forms.DataGridView.RowHeightInfoPushed>|Used by the control to retrieve or store row height information in the data cache. Call the <xref:System.Windows.Forms.DataGridView.UpdateRowHeightInfo%2A> method when changing the cached row height information outside of a <xref:System.Windows.Forms.DataGridView.RowHeightInfoPushed> event handler to ensure that the current value is used in the display of the control.|  
   
 ## Best Practices in Virtual Mode  
+
  If you are implementing virtual mode in order to work efficiently with large amounts of data, you will also want to ensure that you are working efficiently with the <xref:System.Windows.Forms.DataGridView> control itself. For more information about the efficient use of cell styles, automatic sizing, selections, and row sharing, see [Best Practices for Scaling the Windows Forms DataGridView Control](best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
 ## See also

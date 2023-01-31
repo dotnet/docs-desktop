@@ -18,14 +18,19 @@ helpviewer_keywords:
 ms.assetid: 618dc745-8b14-4886-833f-486d2254bb78
 ---
 # Markup Extensions and WPF XAML
+
 This topic introduces the concept of markup extensions for XAML, including their syntax rules, purpose, and the class object model that underlies them. Markup extensions are a general feature of the XAML language and of the .NET implementation of XAML services. This topic specifically details markup extensions for use in WPF XAML.  
 
 <a name="XAML_Processors_and_Markup_Extensions"></a>
+
 ## XAML Processors and Markup Extensions  
+
  Generally speaking, a XAML parser can either interpret an attribute value as a literal string that can be converted to a primitive, or convert it to an object by some means. One such means is by referencing a type converter; this is documented in the topic [TypeConverters and XAML](typeconverters-and-xaml.md). However, there are scenarios where different behavior is required. For example, a XAML processor can be instructed that a value of an attribute should not result in a new object in the object graph. Instead, the attribute should result in an object graph that makes a reference to an already constructed object in another part of the graph, or a static object. Another scenario is that a XAML processor can be instructed to use a syntax that provides non-default arguments to the constructor of an object. These are the types of scenarios where a markup extension can provide the solution.  
   
 <a name="Basic_Markup_Extension_Syntax"></a>
+
 ## Basic Markup Extension Syntax  
+
  A markup extension can be implemented to provide values for properties in an attribute usage, properties in a property element usage, or both.  
   
  When used to provide an attribute value, the syntax that distinguishes a markup extension sequence to a XAML processor is the presence of the opening and closing curly braces ({ and }). The type of markup extension is then identified by the string token immediately following the opening curly brace.  
@@ -33,7 +38,9 @@ This topic introduces the concept of markup extensions for XAML, including their
  When used in property element syntax, a markup extension is visually the same as any other element used to provide a property element value: a XAML element declaration that references the markup extension class as an element, enclosed within angle brackets (<>).  
   
 <a name="XAML_Defined_Markup_Extensions"></a>
+
 ## XAML-Defined Markup Extensions  
+
  Several markup extensions exist that are not specific to the WPF implementation of XAML, but are instead implementations of intrinsics or features of XAML as a language. These markup extensions are implemented in the System.Xaml assembly as part of the general .NET Framework XAML services, and are within the XAML language XAML namespace. In terms of common markup usage, these markup extensions are typically identifiable by the `x:` prefix in the usage. The <xref:System.Windows.Markup.MarkupExtension> base class (also defined in System.Xaml) provides the pattern that all markup extensions should use in order to be supported in XAML readers and XAML writers, including in WPF XAML.  
   
 - `x:Type` supplies the <xref:System.Type> object for the named type. This facility is used most frequently in styles and templates. For details, see [x:Type Markup Extension](/dotnet/desktop/xaml-services/xtype-markup-extension).  
@@ -48,7 +55,9 @@ This topic introduces the concept of markup extensions for XAML, including their
 > The `x:` prefix is used for the typical XAML namespace mapping of the XAML language intrinsics, in the root element of a XAML file or production. For example, the Visual Studio templates for WPF applications initiate a XAML file using this `x:` mapping. You could choose a different prefix token in your own XAML namespace mapping, but this documentation will assume the default `x:` mapping as a means of identifying those entities that are a defined part of the XAML namespace for the XAML language, as opposed to the WPF default namespace or other XAML namespaces not related to a specific framework.  
   
 <a name="WPF_Specific_Markup_Extensions"></a>
+
 ## WPF-Specific Markup Extensions  
+
  The most common markup extensions used in WPF programming are those that support resource references (`StaticResource` and `DynamicResource`), and those that support data binding (`Binding`).  
   
 - `StaticResource` provides a value for a property by substituting the value of an already defined resource. A `StaticResource` evaluation is ultimately made at XAML load time and does not have access to the object graph at run time. For details, see [StaticResource Markup Extension](staticresource-markup-extension.md).  
@@ -66,7 +75,9 @@ This topic introduces the concept of markup extensions for XAML, including their
 - `ComponentResourceKey` and `ThemeDictionary` support aspects of resource lookup, particularly for resources and themes that are packaged with custom controls. For more information, see [ComponentResourceKey Markup Extension](componentresourcekey-markup-extension.md), [ThemeDictionary Markup Extension](themedictionary-markup-extension.md), or [Control Authoring Overview](../controls/control-authoring-overview.md).  
   
 <a name="StarExtension"></a>
+
 ## \*Extension Classes  
+
  For both the general XAML language and WPF-specific markup extensions, the behavior of each markup extension is identified to a XAML processor through a `*Extension` class that derives from <xref:System.Windows.Markup.MarkupExtension>, and provides an implementation of the <xref:System.Windows.Markup.StaticExtension.ProvideValue%2A> method. This method on each extension provides the object that is returned when the markup extension is evaluated. The returned object is typically evaluated based on the various string tokens that are passed to the markup extension.  
   
  For example, the <xref:System.Windows.StaticResourceExtension> class provides the surface implementation of actual resource lookup so that its <xref:System.Windows.Markup.MarkupExtension.ProvideValue%2A> implementation returns the object that is requested, with the input of that particular implementation being a string that is used to look up the resource by its `x:Key`. Much of this implementation detail is unimportant if you are using an existing markup extension.  
@@ -76,6 +87,7 @@ This topic introduces the concept of markup extensions for XAML, including their
  The `*Extension` naming pattern is for convenience and consistency. It is not necessary in order for a XAML processor to identify that class as support for a markup extension. So long as your codebase includes System.Xaml and uses .NET Framework XAML Services implementations, all that is necessary to be recognized as a XAML markup extension is to derive from <xref:System.Windows.Markup.MarkupExtension> and to support a construction syntax. WPF defines markup extension-enabling classes that do not follow the `*Extension` naming pattern, for example <xref:System.Windows.Data.Binding>. Typically the reason for this is that the class supports scenarios beyond pure markup extension support. In the case of <xref:System.Windows.Data.Binding>, that class supports run-time access to methods and properties of the object for scenarios that have nothing to do with XAML.  
   
 ### Extension Class Interpretation of Initialization Text  
+
  The string tokens following the markup extension name and still within the braces are interpreted by a XAML processor in one of the following ways:  
   
 - A comma always represents the separator or delimiter of individual tokens.  
@@ -92,11 +104,15 @@ This topic introduces the concept of markup extensions for XAML, including their
 - A literal comma cannot be passed to a markup extension without escapement.  
   
 <a name="EscapeSequences"></a>
+
 ## Escape Sequences and Markup Extensions  
+
  Attribute handling in a XAML processor uses the curly braces as indicators of a markup extension sequence. It is also possible to produce a literal curly brace character attribute value if necessary, by entering an escape sequence using an empty curly brace pair followed by the literal curly brace. See [{} Escape Sequence - Markup Extension](/dotnet/desktop/xaml-services/escape-sequence-markup-extension).  
   
 <a name="Nesting"></a>
+
 ## Nesting Markup Extensions in XAML Usage  
+
  Nesting of multiple markup extensions is supported, and each markup extension will be evaluated deepest first. For example, consider the following usage:  
   
 ```xaml  
@@ -107,6 +123,7 @@ This topic introduces the concept of markup extensions for XAML, including their
  In this usage, the `x:Static` statement is evaluated first and returns a string. That string is then used as the argument for `DynamicResource`.  
   
 ## Markup Extensions and Property Element Syntax  
+
  When used as an object element that fills a property element value, a markup extension class is visually indistinguishable from a typical type-backed object element that can be used in XAML. The practical difference between a typical object element and a markup extension is that the markup extension is either evaluated to a typed value or deferred as an expression. Therefore the mechanisms for any possible type errors of property values for the markup extension will be different, similar to how a late-bound property is treated in other programming models. An ordinary object element will be evaluated for type match against the target property it is setting when the XAML is parsed.  
   
  Most markup extensions, when used in object element syntax to fill a property element, would not have content or any further property element syntax within. Thus you would close the object element tag, and provide no child elements. Whenever any object element is encountered by a XAML processor, the constructor for that class is called, which instantiates the object created from the parsed element. A markup extension class is no different: if you want your markup extension to be usable in object element syntax, you must provide a parameterless constructor. Some existing markup extensions have at least one required property value that must be specified for effective initialization. If so, that property value is typically given as a property attribute on the object element. In the [XAML Namespace (x:) Language Features](/dotnet/desktop/xaml-services/namespace-language-features) and [WPF XAML Extensions](wpf-xaml-extensions.md) reference pages, markup extensions that have required properties (and the names of required properties) will be noted. Reference pages will also note if either object element syntax or attribute syntax is disallowed for particular markup extensions. A notable case is [x:Array Markup Extension](/dotnet/desktop/xaml-services/xarray-markup-extension), which cannot support attribute syntax because the contents of that array must be specified within the tagging as content. The array contents are handled as general objects, therefore no default type converter for the attribute is feasible. Also, [x:Array Markup Extension](/dotnet/desktop/xaml-services/xarray-markup-extension) requires a `type` parameter.  

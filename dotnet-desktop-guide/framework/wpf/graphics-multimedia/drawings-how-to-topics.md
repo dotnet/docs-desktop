@@ -14,9 +14,11 @@ helpviewer_keywords:
 ms.assetid: 5f445633-529c-4091-8a2c-13035ac8c41b
 ---
 # Drawings How-to Topics
+
 The topics in this section describe how to use <xref:System.Windows.Media.Drawing> objects to draw shapes, images, or text.  
   
 ## In This Section  
+
  [Apply a GuidelineSet to a Drawing](how-to-apply-a-guidelineset-to-a-drawing.md)  
   [Create a Composite Drawing](how-to-create-a-composite-drawing.md)  
   [Create a GeometryDrawing](how-to-create-a-geometrydrawing.md)  

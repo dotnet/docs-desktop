@@ -16,9 +16,11 @@ helpviewer_keywords:
 ms.assetid: 6ab1fe6b-3eed-4432-a248-b487e7234e5b
 ---
 # Drawings
+
 <xref:System.Windows.Media.Drawing> objects are used to efficiently draw shapes, images, or text. Drawings are used when painting with a <xref:System.Windows.Media.DrawingBrush> or programming with <xref:System.Windows.Media.Visual> objects.  
   
 ## In This Section  
+
  [Drawing Objects Overview](drawing-objects-overview.md)  
   [How-to Topics](drawings-how-to-topics.md)  
   

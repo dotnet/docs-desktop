@@ -10,7 +10,9 @@ helpviewer_keywords:
 ms.assetid: c29f8728-bfcb-4af7-9fbc-8169e180109f
 ---
 # Digital Ink How-to Topics
+
 ## In This Section  
+
  [Select Ink from a Custom Control](how-to-select-ink-from-a-custom-control.md)  
   [Add Custom Data to Ink Data](how-to-add-custom-data-to-ink-data.md)  
   [Erase Ink on a Custom Control](how-to-erase-ink-on-a-custom-control.md)  

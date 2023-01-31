@@ -419,6 +419,7 @@ An easy way to add interactivity (mouse-over, mouse-leave, click, and so on) is 
      Press F5 to run the application, and click one of the buttons. When you click a button, the glass rectangle spins around.
 
 ## Summary
+
  In this walkthrough, you performed the following exercises:
 
 - Targeted a <xref:System.Windows.Style> to an object type (<xref:System.Windows.Controls.Button>).

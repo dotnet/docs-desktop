@@ -7,6 +7,7 @@ helpviewer_keywords:
 ms.assetid: 88c8b389-a48b-46b9-b895-8ed7b1e26fea
 ---
 # IEnumRAWINPUTDEVICE
+
 This interface enumerates the raw input devices, and is only used by PresentationHost.exe.  
   
 > [!NOTE]

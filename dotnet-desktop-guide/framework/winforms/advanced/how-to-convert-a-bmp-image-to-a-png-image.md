@@ -11,15 +11,18 @@ ms.assetid: 9d4a692d-73ac-4ce3-9e05-9ec321e8fbd6
 description: Learn how to convert a BMP image into a PNG image with a Windows Forms application and a reference to the System.Drawing.Imaging namespace.
 ---
 # How to: Convert a BMP image to a PNG image
+
 Oftentimes, you will want to convert from one image file format to another. You can do this conversion easily by calling the <xref:System.Drawing.Image.Save%2A> method of the <xref:System.Drawing.Image> class and specifying the <xref:System.Drawing.Imaging.ImageFormat> for the desired image file format.  
   
 ## Example  
+
  The following example loads a BMP image from a type, and saves the image in the PNG format.  
   
  [!code-csharp[UsingImageEncodersDecoders#4](~/samples/snippets/csharp/VS_Snippets_Winforms/UsingImageEncodersDecoders/CS/Form1.cs#4)]
  [!code-vb[UsingImageEncodersDecoders#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/UsingImageEncodersDecoders/VB/Form1.vb#4)]  
   
 ## Compiling the Code  
+
  This example requires:  
   
 - A Windows Forms application.  

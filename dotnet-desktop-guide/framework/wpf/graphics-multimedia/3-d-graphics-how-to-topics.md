@@ -10,9 +10,11 @@ helpviewer_keywords:
 ms.assetid: 4f091835-28d1-498c-b660-9b3acf34ed13
 ---
 # 3D Graphics How-to Topics
+
 The topics in this section demonstrate how to use 3D graphics in Windows Presentation Foundation (WPF) applications.  
   
 ## In This Section  
+
  [Create a 3D Scene](how-to-create-a-3-d-scene.md)  
  [Apply a Drawing to a 3D Model](how-to-apply-a-drawing-to-a-3-d-model.md)  
  [Apply Material to the Front and Back of a 3D Object](how-to-apply-material-to-the-front-and-back-of-a-3-d-object.md)  
@@ -32,6 +34,7 @@ The topics in this section demonstrate how to use 3D graphics in Windows Present
  [Test Point4D structures for equality and inequality](how-to-test-point4d-structures-for-equality-and-inequality.md)  
   
 ## Reference  
+
  <xref:System.Windows.Controls.Viewport3D>  
   
  <xref:System.Windows.Media.Media3D.PerspectiveCamera>  
@@ -41,4 +44,5 @@ The topics in this section demonstrate how to use 3D graphics in Windows Present
  <xref:System.Windows.Media.Media3D.Material>  
   
 ## Related Sections  
+
  [Graphics and Multimedia](index.md)

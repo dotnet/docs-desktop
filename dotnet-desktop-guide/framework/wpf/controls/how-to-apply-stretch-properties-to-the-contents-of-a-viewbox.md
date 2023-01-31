@@ -13,7 +13,9 @@ helpviewer_keywords:
 ms.assetid: b9c22ef4-bce4-4300-9e0c-8260b7db83cc
 ---
 # How to: Apply Stretch Properties to the Contents of a Viewbox
+
 ## Example  
+
  This example shows how to change the value of the <xref:System.Windows.Controls.Viewbox.StretchDirection%2A> and <xref:System.Windows.Controls.Viewbox.Stretch%2A> properties of a <xref:System.Windows.Controls.Viewbox>.  
   
  The first example uses Extensible Application Markup Language (XAML) to define a <xref:System.Windows.Controls.Viewbox> element. It assigns a <xref:System.Windows.FrameworkElement.MaxWidth%2A> and <xref:System.Windows.FrameworkElement.MaxHeight%2A> of 400. The example nests an <xref:System.Windows.Controls.Image> element within the <xref:System.Windows.Controls.Viewbox>. <xref:System.Windows.Controls.Button> elements that correspond to the property values for the <xref:System.Windows.Controls.Viewbox.Stretch%2A> and <xref:System.Windows.Controls.StretchDirection> enumerations manipulate the stretching behavior of the nested <xref:System.Windows.Controls.Image>.  

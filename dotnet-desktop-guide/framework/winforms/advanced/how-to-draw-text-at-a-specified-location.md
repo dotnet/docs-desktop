@@ -13,6 +13,7 @@ ms.assetid: 60816423-1c38-465e-980d-2c2b64d74086
 description: Learn how to draw text at a specified location by using the DrawString overloaded method of the Graphics class.
 ---
 # How to: Draw Text at a Specified Location
+
 When you perform custom drawing, you can draw text in a single horizontal line starting at a specified point. You can draw text in this manner by using the <xref:System.Drawing.Graphics.DrawString%2A> overloaded method of the <xref:System.Drawing.Graphics> class that takes a <xref:System.Drawing.Point> or <xref:System.Drawing.PointF> parameter. The <xref:System.Drawing.Graphics.DrawString%2A> method also requires a <xref:System.Drawing.Brush> and <xref:System.Drawing.Font>  
   
  You can also use the <xref:System.Windows.Forms.TextRenderer.DrawText%2A> overloaded method of the <xref:System.Windows.Forms.TextRenderer> that takes a <xref:System.Drawing.Point>. <xref:System.Windows.Forms.TextRenderer.DrawText%2A> also requires a <xref:System.Drawing.Color> and a <xref:System.Drawing.Font>.  
@@ -36,6 +37,7 @@ When you perform custom drawing, you can draw text in a single horizontal line s
      [!code-vb[System.Drawing.AlignDrawnText#40](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.AlignDrawnText/VB/Form1.vb#40)]  
   
 ## Compiling the Code  
+
  The previous examples require:  
   
 - <xref:System.Windows.Forms.PaintEventArgs>  `e`, which is a parameter of <xref:System.Windows.Forms.PaintEventHandler>.  

@@ -12,6 +12,7 @@ ms.assetid: 034af4b5-457f-4160-a937-22891817faa8
 description: Learn how Windows Forms provides the functionality to create a user control or one that inherits from an existing control.
 ---
 # User-Drawn Controls
+
 The .NET Framework provides you with the ability to easily develop your own controls. You can create a user control, which is a set of standard controls bound together by code, or you can design your own control from the ground up. You can even use inheritance to create a control that inherits from an existing control and add to its inherent functionality. Whatever approach you use, the .NET Framework provides the functionality to draw a custom graphical interface for any control you create.  
   
  Painting of a control is accomplished by the execution of code in the control's <xref:System.Windows.Forms.Control.OnPaint%2A> method. The single argument of the <xref:System.Windows.Forms.Control.OnPaint%2A> method is a <xref:System.Windows.Forms.PaintEventArgs> object that provides all of the information and functionality required to render your control. The <xref:System.Windows.Forms.PaintEventArgs> provides as properties two principal objects that will be used in the rendering of your control:  

@@ -5,14 +5,17 @@ ms.date: "03/30/2017"
 ms.assetid: e4f15f13-c420-4c1e-aeab-9b6f50212047
 ---
 # XAML Namespaces for .NET XAML Services
+
 A XAML namespace is a concept that expands on the definition of an XML namespace. Similar to an XML namespace, you can define a XAML namespace using an `xmlns` attribute in markup. XAML namespaces are also represented in the XAML node stream and other XAML Services APIs. This topic defines the XAML namespace concept, and describes how XAML namespaces can be defined and are used by XAML schema contexts and other aspects of .NET XAML Services.  
   
 ## XML Namespace and XAML Namespace  
+
  A XAML namespace is a specialized XML namespace, just as XAML is a specialized form of XML and uses the basic XML form for its markup. In markup, you declare a XAML namespace and its mapping through an `xmlns` attribute applied to an element. The `xmlns` declaration can be made to the same element that the XAML namespace is declared in. A XAML namespace declaration made to an element is valid for that element, all attributes of that element, and all children of that element. Attributes can use a XAML namespace that is not the same as the element that contains the attribute, so long as the attribute name itself references the prefix as part of its attribute name in markup.  
   
  The distinction of a XAML namespace versus an XML namespace is that an XML namespace might be used to reference a schema or simply to differentiate entities. For XAML, the types and members as used in XAML must ultimately be resolved to backing types, and XML schema concepts do not apply well to this capability. The XAML namespace contains information that the XAML schema context must have available in order to perform this type mapping.  
   
 ## XAML Namespace Components  
+
  The XAML namespace definition has two components: a prefix, and an identifier. Each of these components is present when a XAML namespace is declared in markup, or defined in the XAML type system.  
   
  The prefix can be any string as allowed by the [W3C Namespaces in XML 1.0 specification](https://www.w3.org/TR/REC-xml-names/). By convention, the prefixes are typically short strings, because the prefix is repeated many times in a typical markup file. Certain XAML namespaces that are intended to be used in multiple XAML implementations use particular conventional prefixes. For example, the XAML language XAML namespace is typically mapped using the prefix `x`. You can define a default XAML namespace, where the prefix is not given in the definition but is represented as an empty string if defined or queried by.NET XAML Services API. Typically, the default XAML namespace is deliberately chosen in order to promote a maximized amount of prefix-omitting markup by a XAML-implementing technology and its scenarios and vocabularies.  
@@ -42,6 +45,7 @@ A XAML namespace is a concept that expands on the definition of an XML namespace
  Specifying a public key for the assembly is a useful technique for XAML security, or for removing possible ambiguity that can exist if assemblies are loaded by simple name, or pre-exist in a cache or application domain. For more information, see [XAML Security Considerations](security-considerations.md).  
   
 ## XAML Namespace Declarations in the XAML Services API  
+
  In the XAML Services API, a XAML namespace declaration is represented by a <xref:System.Xaml.NamespaceDeclaration> object. If you are declaring a XAML namespace in code, you call the <xref:System.Xaml.NamespaceDeclaration.%23ctor%28System.String%2CSystem.String%29> constructor. The `ns` and `prefix` parameters are specified as strings, and the input to provide for these parameters corresponds to the definition of XAML namespace identifier and XAML namespace prefix as provided previously in this topic.  
   
  If you are examining XAML namespace information as part of a XAML node stream or through other access to the XAML type system, <xref:System.Xaml.NamespaceDeclaration.Namespace%2A?displayProperty=nameWithType> reports the XAML namespace identifier, and <xref:System.Xaml.NamespaceDeclaration.Prefix%2A?displayProperty=nameWithType> reports the XAML namespace prefix.  

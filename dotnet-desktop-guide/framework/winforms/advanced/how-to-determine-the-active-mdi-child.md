@@ -14,6 +14,7 @@ ms.assetid: 33880ec3-0207-4c2b-a616-ff140443cc0f
 description: Learn how to determine the active MDI child using the ActiveMdiChild property, which returns the child form that has the focus or that was most recently active.
 ---
 # How to: Determine the Active MDI Child
+
 On occasion, you will want to provide a command that operates on the control that has focus on the currently active child form. For example, suppose you want to copy selected text from the child form's text box to the Clipboard. You would create a procedure that copies selected text to the Clipboard using the <xref:System.Windows.Forms.Control.Click> event of the Copy menu item on the standard Edit menu.  
   
  Because an MDI application can have many instances of the same child form, the procedure needs to know which form to use. To specify the correct form, use the <xref:System.Windows.Forms.Form.ActiveMdiChild%2A> property, which returns the child form that has the focus or that was most recently active.  

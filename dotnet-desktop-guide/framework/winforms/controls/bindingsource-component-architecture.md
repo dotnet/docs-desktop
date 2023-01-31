@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: 7bc69c90-8a11-48b1-9336-3adab5b41591
 ---
 # BindingSource Component Architecture
+
 With the <xref:System.Windows.Forms.BindingSource> component, you can universally bind  all Windows Forms controls to data sources.  
   
  The <xref:System.Windows.Forms.BindingSource> component simplifies the process of binding controls to a data source and provides the following advantages over traditional data binding:  
@@ -29,6 +30,7 @@ With the <xref:System.Windows.Forms.BindingSource> component, you can universall
  For these reasons, the <xref:System.Windows.Forms.BindingSource> component is the preferred way to bind your Windows Forms controls to data sources.  
   
 ## BindingSource Features  
+
  The <xref:System.Windows.Forms.BindingSource> component provides several features for binding controls to data. With these features, you can implement most data-binding scenarios with almost no coding on your part.  
   
  The <xref:System.Windows.Forms.BindingSource> component accomplishes this by providing a consistent interface for accessing many different kinds of data sources. This means that you use the same procedure for binding to any type. For example, you can attach the <xref:System.Windows.Forms.BindingSource.DataSource%2A> property to a <xref:System.Data.DataSet> or to a business object and in both cases you use the same set of properties, methods, and events to manipulate the data source.  
@@ -58,6 +60,7 @@ With the <xref:System.Windows.Forms.BindingSource> component, you can universall
 - Integration with <xref:System.Windows.Forms.BindingNavigator>.  
   
 ### Indirection  
+
  The <xref:System.Windows.Forms.BindingSource> component provides a level of indirection between a control and a data source. Instead of binding a control directly to a data source, you bind the control to a <xref:System.Windows.Forms.BindingSource>, and you attach the data source to the <xref:System.Windows.Forms.BindingSource> component's <xref:System.Windows.Forms.BindingSource.DataSource%2A> property.  
   
  With this level of indirection, you can change the data source without resetting the control binding. This gives you the following capabilities:  
@@ -69,6 +72,7 @@ With the <xref:System.Windows.Forms.BindingSource> component, you can universall
 - You can bind to a <xref:System.Type> instead of an object in memory. For more information, see [How to: Bind a Windows Forms Control to a Type](how-to-bind-a-windows-forms-control-to-a-type.md). You can then bind to an object at run time.  
   
 ### Currency Management  
+
  The <xref:System.Windows.Forms.BindingSource> component implements the <xref:System.Windows.Forms.ICurrencyManagerProvider> interface to handle currency management for you. With the <xref:System.Windows.Forms.ICurrencyManagerProvider> interface, you can also access to the currency manager for a <xref:System.Windows.Forms.BindingSource>, in addition to the currency manager for another <xref:System.Windows.Forms.BindingSource> bound to the same <xref:System.Windows.Forms.BindingSource.DataMember%2A>.  
   
  The <xref:System.Windows.Forms.BindingSource> component encapsulates <xref:System.Windows.Forms.CurrencyManager> functionality and exposes the most common <xref:System.Windows.Forms.CurrencyManager> properties and events. The following table describes some of the members related to currency management.  
@@ -92,6 +96,7 @@ With the <xref:System.Windows.Forms.BindingSource> component, you can universall
  Cancels the current edit operation.  
   
 ### Data Source as a List  
+
  The <xref:System.Windows.Forms.BindingSource> component implements the <xref:System.ComponentModel.IBindingListView> and <xref:System.ComponentModel.ITypedList> interfaces. With this implementation, you can use the <xref:System.Windows.Forms.BindingSource> component itself as a data source, without any external storage.  
   
  When the <xref:System.Windows.Forms.BindingSource> component is attached to a data source, it exposes the data source as a list.  
@@ -110,6 +115,7 @@ With the <xref:System.Windows.Forms.BindingSource> component, you can universall
  Additionally, <xref:System.Windows.Forms.BindingSource.DataSource%2A> can be set to other list types, such as <xref:System.ComponentModel.IListSource> and <xref:System.ComponentModel.ITypedList>, and the <xref:System.Windows.Forms.BindingSource> will handle them appropriately. In this case, the type that is contained in the list should have a parameterless constructor.  
   
 ### BindingSource as an IBindingList  
+
  The <xref:System.Windows.Forms.BindingSource> component provides members for accessing and manipulating the underlying data as an <xref:System.ComponentModel.IBindingList>. The following table describes some of these members.  
   
 |Member|Description|  
@@ -118,9 +124,11 @@ With the <xref:System.Windows.Forms.BindingSource> component, you can universall
 |<xref:System.Windows.Forms.BindingSource.AddNew%2A> method|Adds a new item to the underlying list. Applies to data sources that implement the <xref:System.ComponentModel.IBindingList> interface and allow adding items (that is, the <xref:System.Windows.Forms.BindingSource.AllowNew%2A> property is set to `true`).|  
   
 ### Custom Item Creation  
+
  You can handle the <xref:System.Windows.Forms.BindingSource.AddingNew> event to provide your own item-creation logic. The <xref:System.Windows.Forms.BindingSource.AddingNew> event occurs before a new object is added to the <xref:System.Windows.Forms.BindingSource>. This event is raised after the <xref:System.Windows.Forms.BindingSource.AddNew%2A> method is called, but before the new item is added to the underlying list. By handling this event, you can provide custom item creation behavior without deriving from the <xref:System.Windows.Forms.BindingSource> class. For more information, see [How to: Customize Item Addition with the Windows Forms BindingSource](how-to-customize-item-addition-with-the-windows-forms-bindingsource.md).  
   
 ### Transactional Item Creation  
+
  The <xref:System.Windows.Forms.BindingSource> component implements the <xref:System.ComponentModel.ICancelAddNew> interface, which enables transactional item creation. After a new item is provisionally created by using a call to <xref:System.Windows.Forms.BindingSource.AddNew%2A>, the addition may be committed or rolled back in the following ways:  
   
 - The <xref:System.ComponentModel.ICancelAddNew.EndNew%2A> method will explicitly commit the pending addition.  
@@ -130,16 +138,19 @@ With the <xref:System.Windows.Forms.BindingSource> component, you can universall
 - The <xref:System.ComponentModel.ICancelAddNew.CancelNew%2A> method will roll back the pending addition if the method has not already been committed.  
   
 ### IEnumerable Support  
+
  The <xref:System.Windows.Forms.BindingSource> component enables binding controls to <xref:System.Collections.IEnumerable> data sources. With this component, you can bind to a data source such as a <xref:System.Data.SqlClient.SqlDataReader?displayProperty=nameWithType>.  
   
  When an <xref:System.Collections.IEnumerable> data source is assigned to the <xref:System.Windows.Forms.BindingSource> component, the <xref:System.Windows.Forms.BindingSource> creates an <xref:System.ComponentModel.IBindingList> and adds the contents of the <xref:System.Collections.IEnumerable> data source to the list.  
   
 ### Design-Time Support  
+
  Some object types cannot be created at design time, such as objects created from a factory class, or objects returned by a Web service. You may sometimes have to bind your controls to these types at design time, even though there is no object in memory to which your controls can bind. You may, for example, need to label the column headers of a <xref:System.Windows.Forms.DataGridView> control with the names of your custom type's public properties.  
   
  To support this scenario, the <xref:System.Windows.Forms.BindingSource> component supports binding to a <xref:System.Type>. When you assign a <xref:System.Type> to the <xref:System.Windows.Forms.BindingSource.DataSource%2A> property, the <xref:System.Windows.Forms.BindingSource> component creates an empty <xref:System.ComponentModel.BindingList%601> of <xref:System.Type> items. Any controls you subsequently bind to the <xref:System.Windows.Forms.BindingSource> component will be alerted to the presence of the properties or schema of your type at design time, or at run time. For more information, see [How to: Bind a Windows Forms Control to a Type](how-to-bind-a-windows-forms-control-to-a-type.md).  
   
 ### Static ListBindingHelper Methods  
+
  The <xref:System.Windows.Forms.BindingContext?displayProperty=nameWithType>, <xref:System.Windows.Forms.CurrencyManager?displayProperty=nameWithType>, and <xref:System.Windows.Forms.BindingSource> types all share common logic to generate a list from a `DataSource`/`DataMember` pair. Additionally, this common logic is publicly exposed for use by control authors and other third parties in the following `static` methods:  
   
 - <xref:System.Windows.Forms.ListBindingHelper.GetListItemProperties%2A>  
@@ -151,6 +162,7 @@ With the <xref:System.Windows.Forms.BindingSource> component, you can universall
 - <xref:System.Windows.Forms.ListBindingHelper.GetListItemType%2A>  
   
 ### Sorting and Filtering with the IBindingListView Interface  
+
  The <xref:System.Windows.Forms.BindingSource> component implements the <xref:System.ComponentModel.IBindingListView> interface, which extends the <xref:System.ComponentModel.IBindingList> interface. The <xref:System.ComponentModel.IBindingList> offers single column sorting and the <xref:System.ComponentModel.IBindingListView> offers advanced sorting and filtering. With <xref:System.ComponentModel.IBindingListView>, you can sort and filter items in the data source, if the data source also implements one of these interfaces. The <xref:System.Windows.Forms.BindingSource> component does not provide a reference implementation of these members. Instead, calls are forwarded to the underlying list.  
   
  The following table describes the properties you use for sorting and filtering.  
@@ -161,6 +173,7 @@ With the <xref:System.Windows.Forms.BindingSource> component, you can universall
 |<xref:System.Windows.Forms.BindingSource.Sort%2A> property|If the data source is an <xref:System.ComponentModel.IBindingList>, gets or sets a column name used for sorting and sort order information.<br /><br /> -or-<br /><br /> If the data source is an <xref:System.ComponentModel.IBindingListView> and supports advanced sorting, gets multiple column names used for sorting and sort order|  
   
 ### Integration with BindingNavigator  
+
  You can use the <xref:System.Windows.Forms.BindingSource> component to bind any Windows Forms control to a data source, but the <xref:System.Windows.Forms.BindingNavigator> control is designed specifically to work with the <xref:System.Windows.Forms.BindingSource> component. The <xref:System.Windows.Forms.BindingNavigator> control provides a user interface for controlling the <xref:System.Windows.Forms.BindingSource> component's current item. By default, the <xref:System.Windows.Forms.BindingNavigator> control provides buttons that correspond to the navigation methods on the <xref:System.Windows.Forms.BindingSource> component. For more information, see [How to: Navigate Data with the Windows Forms BindingNavigator Control](how-to-navigate-data-with-the-windows-forms-bindingnavigator-control.md).  
   
 ## See also

@@ -14,6 +14,7 @@ helpviewer_keywords:
 ms.assetid: d0b332a3-fae2-4891-957c-dc3e17743326
 ---
 # How to: Modify the Size or Placement of a Picture at Run Time (Windows Forms)
+
 If you use the Windows Forms <xref:System.Windows.Forms.PictureBox> control on a form, you can set the <xref:System.Windows.Forms.PictureBox.SizeMode%2A> property on it to:  
   
 - Align the picture's upper left corner with the control's upper left corner  

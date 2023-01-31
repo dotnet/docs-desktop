@@ -9,9 +9,11 @@ helpviewer_keywords:
 ms.assetid: 00463181-36eb-4be0-bfa2-452854cce642
 ---
 # Events How-to Topics
+
 The topics in this section describe how to use events in WPF.  
   
 ## In This Section  
+
  [Add an Event Handler Using Code](how-to-add-an-event-handler-using-code.md)  
  [Handle a Routed Event](how-to-handle-a-routed-event.md)  
  [Create a Custom Routed Event](how-to-create-a-custom-routed-event.md)  
@@ -19,6 +21,7 @@ The topics in this section describe how to use events in WPF.
  [Add Class Handling for a Routed Event](how-to-add-class-handling-for-a-routed-event.md)  
   
 ## Reference  
+
  <xref:System.Windows.RoutedEvent>  
   
  <xref:System.Windows.EventManager>  

@@ -13,6 +13,7 @@ ms.assetid: 34b29f07-e8df-48d4-b08b-53fcca524708
 description: Learn how to bind data to the MaskedTextBox control using the Format and Parse events of the binding class.
 ---
 # How to: Bind Data to the MaskedTextBox Control
+
 You can bind data to a <xref:System.Windows.Forms.MaskedTextBox> control just as you can to any other Windows Forms control. However, if the format of your data in the database does not match the format expected by your mask definition, you will need to reformat the data. The following procedure demonstrates how to do this using the <xref:System.Windows.Forms.Binding.Format> and <xref:System.Windows.Forms.Binding.Parse> events of the <xref:System.Windows.Forms.Binding> class to display separate phone number and phone extension database fields as a single editable field.  
   
  The following procedure requires that you have access to a SQL Server database with the Northwind sample database installed.  
@@ -226,6 +227,7 @@ You can bind data to a <xref:System.Windows.Forms.MaskedTextBox> control just as
 9. Run the sample. Edit the data, and use the **Previous** and **Next** buttons to see that the data is properly persisted to the <xref:System.Data.DataSet>.  
   
 ## Example  
+
  The following code example is the full code listing that results from completing the previous procedure.  
   
  [!code-cpp[MaskedTextBoxData#1](~/samples/snippets/cpp/VS_Snippets_Winforms/MaskedTextBoxData/cpp/form1.cpp#1)]

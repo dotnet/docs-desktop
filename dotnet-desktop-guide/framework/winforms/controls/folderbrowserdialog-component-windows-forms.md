@@ -10,9 +10,11 @@ helpviewer_keywords:
 ms.assetid: d71a0c5e-898a-4eea-be74-93bdf50d1852
 ---
 # FolderBrowserDialog Component (Windows Forms)
+
 The Windows Forms `FolderBrowserDialog` component displays an interface with which users can browse and select a folder or create a new one. It is a complement to the [OpenFileDialog Component](openfiledialog-component-windows-forms.md) component, which is used for browsing and selecting files.  
   
 ## In This Section  
+
  [FolderBrowserDialog Component Overview (Windows Forms)](folderbrowserdialog-component-overview-windows-forms.md)  
  Explains what this control is and its key features and properties.  
   
@@ -20,10 +22,12 @@ The Windows Forms `FolderBrowserDialog` component displays an interface with whi
  Explains how to programmatically extract the selected folder from the dialog box, as well as work with some of the other, optional properties of the component.  
   
 ## Reference  
+
  <xref:System.Windows.Forms.FolderBrowserDialog>  
  Describes this class and has links to all its members.  
   
 ## Related Sections  
+
  [Dialog Boxes in Windows Forms](../dialog-boxes-in-windows-forms.md)  
  Provides a list of tasks for dialog boxes, which often display tabs.  
   

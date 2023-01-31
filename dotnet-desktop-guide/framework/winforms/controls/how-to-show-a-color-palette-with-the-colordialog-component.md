@@ -17,6 +17,7 @@ helpviewer_keywords:
 ms.assetid: ee050f61-dbc8-4436-ba22-51360981ab48
 ---
 # How to: Show a Color Palette with the ColorDialog Component
+
 The [ColorDialog](colordialog-component-windows-forms.md) component displays a palette of colors and returns a property containing the color the user has selected.  
   
 ### To choose a color using the ColorDialog component  

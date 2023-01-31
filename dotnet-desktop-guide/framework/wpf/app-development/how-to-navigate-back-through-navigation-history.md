@@ -11,9 +11,11 @@ helpviewer_keywords:
 ms.assetid: 9343234b-d864-441d-b8a7-d895cba80a87
 ---
 # How to: Navigate Back Through Navigation History
+
 This example illustrates how to navigate to entries in back navigation history.  
   
 ## Example  
+
  Code that is running from content that is hosted in a <xref:System.Windows.Navigation.NavigationWindow>, <xref:System.Windows.Controls.Frame> using <xref:System.Windows.Navigation.NavigationService>, or Internet Explorer can navigate back through navigation history, one entry at a time.  
   
  Navigating back one entry requires first checking that there are entries in back navigation history, by inspecting the **CanGoBack** property, before navigating back one entry, by calling the **GoBack** method. This is illustrated in the following example:  

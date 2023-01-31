@@ -13,6 +13,7 @@ ms.assetid: d68f3926-08d3-4f7d-949f-1981b29cf188
 description: Learn how to associate a shortcut menu with a Windows Forms NotifyIcon component to add functionality to applications.
 ---
 # How to: Associate a Shortcut Menu with a Windows Forms NotifyIcon Component
+>
 > [!NOTE]
 > Although <xref:System.Windows.Forms.MenuStrip> and <xref:System.Windows.Forms.ContextMenuStrip> replace and add functionality to the <xref:System.Windows.Forms.MainMenu> and <xref:System.Windows.Forms.ContextMenu> controls of previous versions, <xref:System.Windows.Forms.MainMenu> and <xref:System.Windows.Forms.ContextMenu> are retained for both backward compatibility and future use if you choose.  
   

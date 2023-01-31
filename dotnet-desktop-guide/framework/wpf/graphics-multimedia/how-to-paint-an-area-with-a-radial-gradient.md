@@ -12,9 +12,11 @@ helpviewer_keywords:
 ms.assetid: b5d0fc8a-8986-4796-b003-a75b41a48928
 ---
 # How to: Paint an Area with a Radial Gradient
+
 This example shows how to use the <xref:System.Windows.Media.RadialGradientBrush> class to paint an area with a radial gradient.  
   
 ## Example  
+
  The following example uses a <xref:System.Windows.Media.RadialGradientBrush> to paint a rectangle with a radial gradient that transitions from yellow to red to blue to lime green.  
   
  [!code-csharp[BrushesIntroduction_snip#SimpleRadialGradientExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/BrushesIntroduction_snip/CSharp/RadialGradientBrushSnippet.cs#simpleradialgradientexamplewholepage)]

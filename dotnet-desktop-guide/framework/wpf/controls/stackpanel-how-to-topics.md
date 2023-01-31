@@ -10,14 +10,17 @@ helpviewer_keywords:
 ms.assetid: c9849df3-d000-4cdf-8345-5edcd053919d
 ---
 # StackPanel How-to Topics
+
 The topics in this section describe how to use the <xref:System.Windows.Controls.StackPanel> element to stack content horizontally or vertically.  
   
 ## In This Section  
+
  [Choose Between StackPanel and DockPanel](how-to-choose-between-stackpanel-and-dockpanel.md)  
  [Create a StackPanel](how-to-create-a-stackpanel.md)  
  [Horizontally or Vertically Align Content in a StackPanel](how-to-horizontally-or-vertically-align-content-in-a-stackpanel.md)  
   
 ## Reference  
+
  <xref:System.Windows.Controls.Panel>  
   
  <xref:System.Windows.Controls.Canvas>  
@@ -33,6 +36,7 @@ The topics in this section describe how to use the <xref:System.Windows.Controls
  <xref:System.Windows.Controls.WrapPanel>  
   
 ## Related Sections  
+
  [Layout](../advanced/layout.md)  
   
  [Walkthrough: My first WPF desktop application](../getting-started/walkthrough-my-first-wpf-desktop-application.md)  

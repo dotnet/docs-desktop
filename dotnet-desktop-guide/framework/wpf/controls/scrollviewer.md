@@ -12,13 +12,16 @@ helpviewer_keywords:
 ms.assetid: 2163666e-04da-4036-841f-40947c9c034d
 ---
 # ScrollViewer
+
 The <xref:System.Windows.Controls.ScrollViewer> control creates a scrollable region wherein content can be scrolled horizontally or vertically.  
   
 ## In This Section  
+
  [ScrollViewer Overview](scrollviewer-overview.md)  
  [How-to Topics](scrollviewer-how-to-topics.md)  
   
 ## Reference  
+
  <xref:System.Windows.Controls.Primitives.ScrollBar>  
   
  <xref:System.Windows.Controls.ScrollViewer>  

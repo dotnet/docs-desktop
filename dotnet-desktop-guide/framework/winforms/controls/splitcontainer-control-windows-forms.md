@@ -8,6 +8,7 @@ ms.assetid: 2e36f17f-5c39-4fb4-bb09-7ce3ef823402
 description: Learn how the SplitContainer control in Windows Forms lets users create complex interfaces and arrangements.
 ---
 # SplitContainer Control (Windows Forms)
+
 The Windows Forms `SplitContainer` control can be thought of as a composite; it is two panels separated by a movable bar. When the mouse pointer is over the bar, the pointer changes shape to show that the bar is movable.  
   
 > [!NOTE]
@@ -16,6 +17,7 @@ The Windows Forms `SplitContainer` control can be thought of as a composite; it 
  The `SplitContainer` control lets you create complex user interfaces; often, a selection in one panel determines what objects are shown in the other panel. This arrangement is very effective for displaying and browsing information. Having two panels allow you to aggregate information in areas, and the bar, or "splitter," makes it easy for users to resize the panels.  
   
 ## In This Section  
+
  [SplitContainer Control Overview](splitcontainer-control-overview-windows-forms.md)  
  Introduces the `SplitContainer` control and describes the commonly used properties, methods, and events.  
   
@@ -31,10 +33,12 @@ The Windows Forms `SplitContainer` control can be thought of as a composite; it 
  Also see [How to: Split a Window Horizontally Using the Designer](how-to-split-a-window-horizontally-using-the-designer.md), [How to: Create a Windows Explorer–Style Interface on a Windows Form](how-to-create-a-windows-explorer-style-interface-on-a-windows-form.md), [How to: Create a Multipane User Interface with Windows Forms Using the Designer](create-a-multipane-user-interface-with-wf-using-the-designer.md).  
   
 ## Reference  
+
  <xref:System.Windows.Forms.SplitContainer> class  
  Describes this class and has links to all its members.  
   
 ## Related Sections  
+
  [Windows Forms Controls](index.md)  
  Provides links to topics about the controls designed specifically to work with Windows Forms.  
   

@@ -10,9 +10,11 @@ helpviewer_keywords:
 ms.assetid: 02e7a5de-94eb-4953-b91c-52e6c872ad5b
 ---
 # How to: Use SystemParameters
+
 This example shows how to access and use the properties of <xref:System.Windows.SystemParameters> in order to style or customize a button.  
   
 ## Example  
+
  System resources expose several system based settings as resources in order to help you create visuals that are consistent with system settings. <xref:System.Windows.SystemParameters> is a class that contains both system parameter value properties, and resource keys that bind to the values. For example, <xref:System.Windows.SystemParameters.FullPrimaryScreenHeight%2A> is a <xref:System.Windows.SystemParameters> property value and <xref:System.Windows.SystemParameters.FullPrimaryScreenHeightKey%2A> is the corresponding resource key.  
   
  In XAML, you can use the members of <xref:System.Windows.SystemParameters> as either a static property usage, or a dynamic resource references (with the static property value as the key). Use a dynamic resource reference if you want the system based value to update automatically while the application runs; otherwise, use a static reference. Resource keys have the suffix `Key` appended to the property name.  

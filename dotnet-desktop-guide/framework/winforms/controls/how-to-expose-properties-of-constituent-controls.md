@@ -13,6 +13,7 @@ helpviewer_keywords:
 ms.assetid: 5c1ec98b-aa48-4823-986e-4712551cfdf1
 ---
 # How to: Expose Properties of Constituent Controls
+
 The controls that make up a composite control are called *constituent controls*. These controls are normally declared private, and thus cannot be accessed by the developer. If you want to make properties of these controls available to future users, you must expose them to the user. A property of a constituent control is exposed by creating a property in the user control, and using the `get` and `set` accessors of that property to effect the change in the private property of the constituent control.
 
  Consider a hypothetical user control with a constituent button named `MyButton`. In this example, when the user requests the `ConstituentButtonBackColor` property, the value stored in the <xref:System.Windows.Forms.Control.BackColor%2A> property of `MyButton` is delivered. When the user assigns a value to this property, that value is automatically passed to the <xref:System.Windows.Forms.Control.BackColor%2A> property of `MyButton` and the `set` code will execute, changing the color of `MyButton`.

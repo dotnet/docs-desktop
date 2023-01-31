@@ -10,14 +10,17 @@ helpviewer_keywords:
 ms.assetid: 62544800-db6a-4124-8cb0-ed9bc4a90901
 ---
 # DockPanel How-to Topics
+
 The topics in this section describe how to use the <xref:System.Windows.Controls.DockPanel> element to position child elements along the edge of a layout container.  
   
 ## In This Section  
+
  [Get or Set a Dock Value](how-to-get-or-set-a-dock-value.md)  
  [Create a DockPanel](how-to-create-a-dockpanel.md)  
  [Partition Space by Using the DockPanel Element](how-to-partition-space-by-using-the-dockpanel-element.md)  
   
 ## Reference  
+
  <xref:System.Windows.Controls.Panel>  
   
  <xref:System.Windows.Controls.Canvas>  
@@ -33,6 +36,7 @@ The topics in this section describe how to use the <xref:System.Windows.Controls
  <xref:System.Windows.Controls.WrapPanel>  
   
 ## Related Sections  
+
  [Layout](../advanced/layout.md)  
   
  [Walkthrough: My first WPF desktop application](../getting-started/walkthrough-my-first-wpf-desktop-application.md)  

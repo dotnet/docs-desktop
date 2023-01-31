@@ -19,6 +19,7 @@ ms.assetid: cf3cb4e7-782a-4be7-b2d4-e0935e21e4e0
 description: Learn how to create a TextDecoration object and modify its properties in order to add decoration to text.
 ---
 # How to: Create a Text Decoration
+
 A <xref:System.Windows.TextDecoration> object is a visual ornamentation you can add to text. There are four types of text decorations: underline, baseline, strikethrough, and overline. The following example shows the locations of the text decorations relative to the text.  
   
  ![Diagram of text decoration types](./media/how-to-create-a-text-decoration/text-decoration-types.gif)  
@@ -38,6 +39,7 @@ A <xref:System.Windows.TextDecoration> object is a visual ornamentation you can 
  For more information, see [Specify Whether a Hyperlink is Underlined](how-to-specify-whether-a-hyperlink-is-underlined.md).  
   
 ## Example  
+
  In the following code example, an underline text decoration uses the default font value.  
   
  [!code-csharp[TextDecorationSnippets#TextDecorationSnippets1](~/samples/snippets/csharp/VS_Snippets_Wpf/TextDecorationSnippets/CSharp/Window1.xaml.cs#textdecorationsnippets1)]

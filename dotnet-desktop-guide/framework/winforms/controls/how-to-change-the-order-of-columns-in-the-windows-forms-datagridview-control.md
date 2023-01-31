@@ -12,6 +12,7 @@ ms.assetid: 5e9ac3bc-b0f0-48cb-a3d5-b005af905395
 description: Learn how to change the order of columns in the Windows Forms DataGridView control by using the DisplayIndex property.
 ---
 # How to: Change the Order of Columns in the Windows Forms DataGridView Control
+
 When you use a <xref:System.Windows.Forms.DataGridView> to display data from a data source, the columns in the data source's schema sometimes do not appear in the order you would like to display them. You can change the displayed order of the columns by using the <xref:System.Windows.Forms.DataGridViewColumn.DisplayIndex%2A> property of the <xref:System.Windows.Forms.DataGridViewColumn> class.  
   
  The following code example repositions some of the columns automatically generated when binding to the Customers table in the Northwind sample database. For more information about how to bind the <xref:System.Windows.Forms.DataGridView> control to a database table, see [How to: Bind Data to the Windows Forms DataGridView Control](how-to-bind-data-to-the-windows-forms-datagridview-control.md).  
@@ -19,10 +20,12 @@ When you use a <xref:System.Windows.Forms.DataGridView> to display data from a d
  There is support for this task in Visual Studio.  Also see [How to: Change the Order of Columns in the Windows Forms DataGridView Control Using the Designer](change-the-order-of-columns-in-the-datagrid-using-the-designer.md).  
   
 ## Example  
+
  [!code-csharp[System.Windows.Forms.DataGridViewMisc#040](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/CS/datagridviewmisc.cs#040)]
  [!code-vb[System.Windows.Forms.DataGridViewMisc#040](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/VB/datagridviewmisc.vb#040)]  
   
 ## Compiling the Code  
+
  This example requires:  
   
 - A <xref:System.Windows.Forms.DataGridView> control named `customersDataGridView` that is bound to a table with the indicated column names, such as the `Customers` table in the Northwind sample database.  

@@ -12,9 +12,11 @@ helpviewer_keywords:
 ms.assetid: 8bf2643f-d7f9-4cb4-9ea6-5b893c23200d
 ---
 # How to: Hit Test Geometry in a Visual
+
 This example shows how to perform a hit test on a visual object that is composed of one or more <xref:System.Windows.Media.Geometry> objects.  
   
 ## Example  
+
  The following example shows how to retrieve the <xref:System.Windows.Media.DrawingGroup> from a visual object that uses the <xref:System.Windows.Media.VisualTreeHelper.GetDrawing%2A> method. A hit test is then performed on the rendered content of each drawing in the <xref:System.Windows.Media.DrawingGroup> to determine which geometry was hit.  
   
 > [!NOTE]

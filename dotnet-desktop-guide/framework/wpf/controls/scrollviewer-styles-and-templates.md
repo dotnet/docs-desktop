@@ -12,9 +12,11 @@ helpviewer_keywords:
 ms.assetid: dffdd822-ae69-4946-abaf-710860cd65b2
 ---
 # ScrollViewer Styles and Templates
+
 This topic describes the styles and templates for the <xref:System.Windows.Controls.ScrollViewer> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [Create a template for a control](how-to-create-apply-template.md).  
   
 ## ScrollViewer Parts  
+
  The following table lists the named parts for the <xref:System.Windows.Controls.ScrollViewer> control.  
   
 |Part|Type|Description|  
@@ -24,6 +26,7 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 |PART_VerticalScrollBar|<xref:System.Windows.Controls.Primitives.ScrollBar>|The <xref:System.Windows.Controls.Primitives.ScrollBar> used to scroll the content vertically.|  
   
 ## ScrollViewer States  
+
  The following table lists the visual states for the <xref:System.Windows.Controls.ScrollViewer> control.  
   
 |VisualState Name|VisualStateGroup Name|Description|  
@@ -33,6 +36,7 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 |InvalidUnfocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` has the control does not have focus.|  
   
 ## ScrollViewer ControlTemplate Example  
+
  The following example shows how to define a <xref:System.Windows.Controls.ControlTemplate> for the <xref:System.Windows.Controls.ScrollViewer> control.  
   
  [!code-xaml[ControlTemplateExamples#ScrollViewer](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/scrollviewer.xaml#scrollviewer)]  

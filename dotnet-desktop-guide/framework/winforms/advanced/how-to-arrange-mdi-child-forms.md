@@ -11,6 +11,7 @@ ms.assetid: a0786378-3206-4ccc-898e-7d3b38cc5089
 description: Learn how to arrange MDI Child Forms with examples using the MdiLayout.Cascade enumeration value for the child windows of the MDI parent form.
 ---
 # How to: Arrange MDI Child Forms
+
 Often, applications will have menu commands for actions such as Tile, Cascade, and Arrange, which control the layout of the open MDI child forms. You can use the <xref:System.Windows.Forms.Form.LayoutMdi%2A> method with one of the <xref:System.Windows.Forms.MdiLayout> enumeration values to rearrange the child forms in an MDI parent form.  
   
  The <xref:System.Windows.Forms.MdiLayout> enumeration values display child forms as cascading, as horizontally or vertically tiled, or as child form icons arranged along the lower portion of the MDI form. These values have the same effect as the Windows commands **Cascade windows**, **Show windows side by side**, **Show windows stacked**, and **Show the desktop**, respectively.  

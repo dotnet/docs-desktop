@@ -13,10 +13,13 @@ ms.assetid: d0a7791c-b090-438c-812f-b9d009d83ee9
 description: Learn how a content model describes what objects and elements can be contained in or derived from TextElement.
 ---
 # TextElement Content Model Overview
+
 This content model overview describes the supported content for a <xref:System.Windows.Documents.TextElement>. The <xref:System.Windows.Documents.Paragraph> class is a type of <xref:System.Windows.Documents.TextElement>. A content model describes what objects/elements can be contained in others. This overview summarizes the content model used for objects derived from <xref:System.Windows.Documents.TextElement>. For more information, see [Flow Document Overview](flow-document-overview.md).  
 
 <a name="text_element_classes"></a>
+
 ## Content Model Diagram  
+
  The following diagram summarizes the content model for classes derived from <xref:System.Windows.Documents.TextElement> as well as how other non- `TextElement` classes fit into this model.  
   
  ![Diagram: Flow content containment schema](./media/flow-content-schema.png "Flow_Content_Schema")  
@@ -50,7 +53,9 @@ This content model overview describes the supported content for a <xref:System.W
  [!code-xaml[FlowOvwSnippets_snip#SchemaExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowOvwSnippets_snip/CS/SchemaExample.xaml#schemaexamplewholepage)]  
   
 <a name="Using_the_Content_Property"></a>
+
 ## Working with TextElement Content Programmatically  
+
  The contents of a <xref:System.Windows.Documents.TextElement> is made up by collections and so programmatically manipulating the contents of <xref:System.Windows.Documents.TextElement> objects is done by working with these collections. There are three different collections used by <xref:System.Windows.Documents.TextElement> -derived classes:  
   
 - <xref:System.Windows.Documents.InlineCollection>: Represents a collection of <xref:System.Windows.Documents.Inline> elements. <xref:System.Windows.Documents.InlineCollection> defines the allowable child content of the <xref:System.Windows.Documents.Paragraph>, <xref:System.Windows.Documents.Span>, and <xref:System.Windows.Controls.TextBlock> elements.  
@@ -85,7 +90,9 @@ This content model overview describes the supported content for a <xref:System.W
  [!code-vb[SpanSnippets#_SpanInlinesClear](~/samples/snippets/visualbasic/VS_Snippets_Wpf/SpanSnippets/visualbasic/window1.xaml.vb#_spaninlinesclear)]  
   
 <a name="Types_that_Share_this_Content_Model"></a>
+
 ## Types That Share This Content Model  
+
  The following types inherit from the <xref:System.Windows.Documents.TextElement> class and may be used to display the content described in this overview.  
   
  <xref:System.Windows.Documents.Bold>, <xref:System.Windows.Documents.Figure>, <xref:System.Windows.Documents.Floater>, <xref:System.Windows.Documents.Hyperlink>, <xref:System.Windows.Documents.InlineUIContainer>, <xref:System.Windows.Documents.Italic>, <xref:System.Windows.Documents.LineBreak>, <xref:System.Windows.Documents.List>, <xref:System.Windows.Documents.ListItem>, <xref:System.Windows.Documents.Paragraph>, <xref:System.Windows.Documents.Run>, <xref:System.Windows.Documents.Section>, <xref:System.Windows.Documents.Span>, <xref:System.Windows.Documents.Table>, <xref:System.Windows.Documents.Underline>.  
@@ -93,7 +100,9 @@ This content model overview describes the supported content for a <xref:System.W
  Note that this list only includes nonabstract types distributed with the Windows SDK. You may use other types that inherit from <xref:System.Windows.Documents.TextElement>.  
   
 <a name="Types_that_Can_Contain_ContentControl_Objects"></a>
+
 ## Types That Can Contain TextElement Objects  
+
  See [WPF Content Model](../controls/wpf-content-model.md).  
   
 ## See also

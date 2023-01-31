@@ -12,12 +12,15 @@ helpviewer_keywords:
 ms.assetid: c1d5359a-8e4a-4925-ab3e-e92bf6694859
 ---
 # Label Styles and Templates
+
 This topic describes the styles and templates for the <xref:System.Windows.Controls.Label> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [Create a template for a control](how-to-create-apply-template.md).  
   
 ## Label Parts  
+
  The <xref:System.Windows.Controls.Label> control does not have any named parts.  
   
 ## Label States  
+
  The following table lists the visual states for the <xref:System.Windows.Controls.Label> control.  
   
 |VisualState Name|VisualStateGroup Name|Description|  
@@ -27,6 +30,7 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 |InvalidUnfocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` has the control does not have focus.|  
   
 ## Label ControlTemplate Example  
+
  The following example shows how to define a <xref:System.Windows.Controls.ControlTemplate> for the <xref:System.Windows.Controls.Label> control.  
   
  [!code-xaml[ControlTemplateExamples#Label](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/label.xaml#label)]  

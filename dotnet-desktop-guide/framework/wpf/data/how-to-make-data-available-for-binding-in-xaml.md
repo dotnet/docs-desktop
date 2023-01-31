@@ -11,9 +11,11 @@ helpviewer_keywords:
 ms.assetid: 7103c2e8-0e31-4a13-bf12-ca382221a8d5
 ---
 # How to: Make Data Available for Binding in XAML
+
 This topic discusses various ways you can make data available for binding in Extensible Application Markup Language (XAML), depending on the needs of your application.  
   
 ## Example  
+
  If you have a common language runtime (CLR) object you would like to bind to from XAML, one way you can make the object available for binding is to define it as a resource and give it an `x:Key`. In the following example, you have a `Person` object with a string property named `PersonName`. The `Person` object (in the line shown highlighted that contains the `<src>` element) is defined in the namespace called `SDKSample`.  
   
  [!code-xaml[SimpleBinding#Instantiation](~/samples/snippets/csharp/VS_Snippets_Wpf/SimpleBinding/CSharp/Page1.xaml?highlight=9,37)]  
