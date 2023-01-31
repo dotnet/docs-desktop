@@ -73,15 +73,15 @@ In WPF, attached events are backed by a <xref:System.Windows.RoutedEvent> field 
   
  The pattern is as follows:  
   
-- A method __Add*EventName*Handler__ with two parameters. The first parameter is the instance to which the event handler is added. The second parameter is the event handler to add. The method must be `public` and `static`, with no return value.  
+- A method **Add*EventName*Handler** with two parameters. The first parameter is the instance to which the event handler is added. The second parameter is the event handler to add. The method must be `public` and `static`, with no return value.  
   
-- A method __Remove*EventName*Handler__ with two parameters. The first parameter is the instance from which the event handler is removed. The second parameter is the event handler to remove. The method must be `public` and `static`, with no return value.  
+- A method **Remove*EventName*Handler** with two parameters. The first parameter is the instance from which the event handler is removed. The second parameter is the event handler to remove. The method must be `public` and `static`, with no return value.  
   
- The __Add*EventName*Handler__ accessor method facilitates XAML processing when attached event handler attributes are declared on an element. The __Add*EventName*Handler__ and __Remove*EventName*Handler__ methods also enable code access to the event handler store for the attached event.  
+ The **Add*EventName*Handler** accessor method facilitates XAML processing when attached event handler attributes are declared on an element. The **Add*EventName*Handler** and **Remove*EventName*Handler** methods also enable code access to the event handler store for the attached event.  
   
  This general pattern is not yet precise enough for practical implementation in a framework, because any given XAML reader implementation might have different schemes for identifying underlying events in the supporting language and architecture. This is one of the reasons that WPF implements attached events as routed events; the identifier to use for an event (<xref:System.Windows.RoutedEvent>) is already defined by the WPF event system. Also, routing an event is a natural implementation extension on the XAML language-level concept of an attached event.  
   
- The __Add*EventName*Handler__ implementation for a WPF attached event consists of calling the <xref:System.Windows.UIElement.AddHandler%2A> with the routed event and handler as arguments.  
+ The **Add*EventName*Handler** implementation for a WPF attached event consists of calling the <xref:System.Windows.UIElement.AddHandler%2A> with the routed event and handler as arguments.  
   
  This implementation strategy and the routed event system in general restrict handling for attached events to either <xref:System.Windows.UIElement> derived classes or <xref:System.Windows.ContentElement> derived classes, because only those classes have <xref:System.Windows.UIElement.AddHandler%2A> implementations.  
   
