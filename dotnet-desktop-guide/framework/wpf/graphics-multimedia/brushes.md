@@ -11,9 +11,11 @@ helpviewer_keywords:
 ms.assetid: 26710879-12ad-4c63-9bc6-a1834bb4243b
 ---
 # Brushes
+
 The following topics describe how to use Windows Presentation Foundation (WPF) brushes to "paint" content to the screen  
   
 ## In This Section  
+
  [WPF Brushes Overview](wpf-brushes-overview.md)  
  [Brush Transformation Overview](brush-transformation-overview.md)  
  [Opacity Masks Overview](opacity-masks-overview.md)  
@@ -23,6 +25,7 @@ The following topics describe how to use Windows Presentation Foundation (WPF) b
  [How-to Topics](brushes-how-to-topics.md)  
   
 ## Reference  
+
  <xref:System.Windows.Media.Brush>  
   
  <xref:System.Windows.Media.SolidColorBrush>  
@@ -36,6 +39,7 @@ The following topics describe how to use Windows Presentation Foundation (WPF) b
  <xref:System.Windows.Media.VisualBrush>  
   
 ## Related Sections  
+
  [Graphics and Multimedia](index.md)  
   
  [WPF Graphics Rendering Overview](wpf-graphics-rendering-overview.md)

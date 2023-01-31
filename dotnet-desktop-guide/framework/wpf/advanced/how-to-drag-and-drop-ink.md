@@ -15,7 +15,9 @@ ms.assetid: 932dc410-2bf3-4486-ab31-13487ba59f60
 description: Learn how to create an application that enables users to drag selected strokes from one InkCanvas to the other.
 ---
 # How to: Drag and Drop Ink
+
 ## Example  
+
  The following example creates an application that enables the user to drag selected strokes from one <xref:System.Windows.Controls.InkCanvas> to the other.  
   
  [!code-xaml[InkDragDrop#1](~/samples/snippets/csharp/VS_Snippets_Wpf/InkDragDrop/CSharp/Window1.xaml#1)]  

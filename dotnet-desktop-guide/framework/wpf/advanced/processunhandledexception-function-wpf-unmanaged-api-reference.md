@@ -12,6 +12,7 @@ api_location:
 ms.assetid: 495ce5f6-bb4d-4b30-807a-c3c35f1ca95c
 ---
 # ProcessUnhandledException Function (WPF Unmanaged API Reference)
+
 This API supports the Windows Presentation Foundation (WPF) infrastructure and is not intended to be used directly from your code.  
   
  Used by the Windows Presentation Foundation (WPF) infrastructure for exception handling.  
@@ -25,10 +26,12 @@ void __stdcall ProcessUnhandledException(
 ```  
   
 ## Parameters  
+
  errorMsg  
  The error message.  
   
 ## Requirements  
+
  **Platforms:** See [.NET Framework System Requirements](/dotnet/framework/get-started/system-requirements).  
   
  **DLL:**  

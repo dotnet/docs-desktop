@@ -14,9 +14,11 @@ helpviewer_keywords:
 ms.assetid: 46acef3e-9844-4ae8-9a2e-3006fe99cadf
 ---
 # How to: Set the ToolStrip Renderer for an Application
+
 You can customize the appearance of your <xref:System.Windows.Forms.ToolStrip> controls individually or for all the <xref:System.Windows.Forms.ToolStrip> controls in your application.  
   
 ## Example  
+
  The following code example demonstrates how to selectively apply a custom renderer to a <xref:System.Windows.Forms.ToolStrip> control and a <xref:System.Windows.Forms.MenuStrip> control.  
   
  To use this code example, compile and run the application, and then select the scope of the custom rending from the <xref:System.Windows.Forms.ComboBox> control. Click **Apply** to set the renderer.  
@@ -33,6 +35,7 @@ You can customize the appearance of your <xref:System.Windows.Forms.ToolStrip> c
  Set the <xref:System.Windows.Forms.ToolStrip.Renderer%2A?displayProperty=nameWithType> property to apply a custom renderer to an individual <xref:System.Windows.Forms.ToolStrip> control.  
   
 ## Compiling the Code  
+
  This example requires:  
   
 - References to the System.Design, System.Drawing, and System.Windows.Forms assemblies.  

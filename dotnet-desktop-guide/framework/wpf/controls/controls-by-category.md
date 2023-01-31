@@ -7,9 +7,11 @@ helpviewer_keywords:
 ms.assetid: f8a1f78e-d9fa-4367-9ec6-f084577e83bb
 ---
 # Controls by Category
+
 Windows Presentation Foundation (WPF) controls can be logically grouped into several categories. These categories can be used to select the appropriate control for your scenario by helping you see which controls have similar usage patterns or functionality.  
   
 ## Layout  
+
  Layout controls are used to manage the size, dimensions, position, and arrangement of child elements.  
   
 - <xref:System.Windows.Controls.Border>  
@@ -51,6 +53,7 @@ Windows Presentation Foundation (WPF) controls can be logically grouped into sev
 - <xref:System.Windows.Controls.WrapPanel>  
   
 ## Buttons  
+
  Buttons are one of the most basic user interface controls. Applications typically perform some task in the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event when a user clicks on them.  
   
 - <xref:System.Windows.Controls.Button>  
@@ -58,6 +61,7 @@ Windows Presentation Foundation (WPF) controls can be logically grouped into sev
 - <xref:System.Windows.Controls.Primitives.RepeatButton>  
   
 ## Data Display  
+
  Data display controls are used to show information from a data source.  
   
 - <xref:System.Windows.Controls.DataGrid>  
@@ -67,6 +71,7 @@ Windows Presentation Foundation (WPF) controls can be logically grouped into sev
 - <xref:System.Windows.Controls.TreeView>  
   
 ## Date Display and Selection  
+
  Date controls are used to display and select calendar information.  
   
 - <xref:System.Windows.Controls.Calendar>  
@@ -74,6 +79,7 @@ Windows Presentation Foundation (WPF) controls can be logically grouped into sev
 - <xref:System.Windows.Controls.DatePicker>  
   
 ## Menus  
+
  Menus are used to group related actions or to provide contextual assistance.  
   
 - <xref:System.Windows.Controls.ContextMenu>  
@@ -83,6 +89,7 @@ Windows Presentation Foundation (WPF) controls can be logically grouped into sev
 - <xref:System.Windows.Controls.ToolBar>  
   
 ## Selection  
+
  Selection controls are used to enable a user to select one or more options.  
   
 - <xref:System.Windows.Controls.CheckBox>  
@@ -96,6 +103,7 @@ Windows Presentation Foundation (WPF) controls can be logically grouped into sev
 - <xref:System.Windows.Controls.Slider>  
   
 ## Navigation  
+
  Navigation controls enhance or extend the application navigation experience by creating targeting frames or tabbed application appearance.  
   
 - <xref:System.Windows.Controls.Frame>  
@@ -109,6 +117,7 @@ Windows Presentation Foundation (WPF) controls can be logically grouped into sev
 - <xref:System.Windows.Controls.TabControl>  
   
 ## Dialog Boxes  
+
  Dialog boxes provide targeted support for common user-interaction scenarios such as printing.  
   
 - <xref:Microsoft.Win32.OpenFileDialog>  
@@ -118,6 +127,7 @@ Windows Presentation Foundation (WPF) controls can be logically grouped into sev
 - <xref:Microsoft.Win32.SaveFileDialog>  
   
 ## User Information  
+
  User information controls provide contextual feedback or clarify an application's user interface. The user typically cannot interact with these controls.  
   
 - <xref:System.Windows.Controls.AccessText>  
@@ -135,6 +145,7 @@ Windows Presentation Foundation (WPF) controls can be logically grouped into sev
 - <xref:System.Windows.Controls.ToolTip>  
   
 ## Documents  
+
  WPF includes several specialized controls for viewing documents. These controls optimize the reading experience, based on the targeted user scenario.  
   
 - <xref:System.Windows.Controls.DocumentViewer>  
@@ -148,6 +159,7 @@ Windows Presentation Foundation (WPF) controls can be logically grouped into sev
 - <xref:System.Windows.Controls.StickyNoteControl>  
   
 ## Input  
+
  Input controls enable the user to input text and other content.  
   
 - <xref:System.Windows.Controls.TextBox>  
@@ -157,6 +169,7 @@ Windows Presentation Foundation (WPF) controls can be logically grouped into sev
 - <xref:System.Windows.Controls.PasswordBox>  
   
 ## Media  
+
  WPF includes integrated support for hosting both audio and video content, as well as [codecs] for most popular image formats.  
   
 - <xref:System.Windows.Controls.Image>  
@@ -166,6 +179,7 @@ Windows Presentation Foundation (WPF) controls can be logically grouped into sev
 - <xref:System.Windows.Controls.SoundPlayerAction>  
   
 ## Digital Ink  
+
  Digital ink controls provide integrated support for Tablet PC features, such as ink viewing and ink input.  
   
 - <xref:System.Windows.Controls.InkCanvas>  

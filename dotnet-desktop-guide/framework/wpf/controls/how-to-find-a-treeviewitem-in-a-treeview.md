@@ -11,6 +11,7 @@ helpviewer_keywords:
 ms.assetid: 72ecd40c-3939-4e01-b617-5e9daa6074d9
 ---
 # How to: Find a TreeViewItem in a TreeView
+
 The <xref:System.Windows.Controls.TreeView> control provides a convenient way to display hierarchical data. If your <xref:System.Windows.Controls.TreeView> is bound to a data source, the <xref:System.Windows.Controls.TreeView.SelectedItem%2A> property provides a convenient way for you to quickly retrieve the selected data object. It is typically best to work with the underlying data object, but sometimes you may need to programmatically manipulate the data's containing <xref:System.Windows.Controls.TreeViewItem>. For example, you may need to programmatically expand the <xref:System.Windows.Controls.TreeViewItem>, or select a different item in the <xref:System.Windows.Controls.TreeView>.  
   
  To find a <xref:System.Windows.Controls.TreeViewItem> that contains a specific data object, you must traverse each level of the <xref:System.Windows.Controls.TreeView>. The items in a <xref:System.Windows.Controls.TreeView> can also be virtualized to improve performance. In the case where items might be virtualized, you also must realize a <xref:System.Windows.Controls.TreeViewItem> to check whether it contains the data object.  
@@ -18,12 +19,14 @@ The <xref:System.Windows.Controls.TreeView> control provides a convenient way to
 ## Example  
   
 ## Description  
+
  The following example searches a <xref:System.Windows.Controls.TreeView> for a specific object and returns the object's containing <xref:System.Windows.Controls.TreeViewItem>. The example ensures that each <xref:System.Windows.Controls.TreeViewItem> is instantiated so that its child items can be searched. This example also works if the <xref:System.Windows.Controls.TreeView> does not use virtualized items.  
   
 > [!NOTE]
 > The following example works for any <xref:System.Windows.Controls.TreeView>, regardless of the underlying data model, and searches every <xref:System.Windows.Controls.TreeViewItem> until the object is found. Another technique that has better performance is to search the data model for the specified object, keep track of its location within the data hierarchy, and then find the corresponding <xref:System.Windows.Controls.TreeViewItem> in the <xref:System.Windows.Controls.TreeView>. However, the technique that has better performance requires knowledge of the data model and cannot be generalized for any given <xref:System.Windows.Controls.TreeView>.  
   
 ## Code  
+
  [!code-csharp[TreeViewFindTVI#1](~/samples/snippets/csharp/VS_Snippets_Wpf/TreeViewFindTVI/CSharp/MainWindow.xaml.cs#1)]
  [!code-vb[TreeViewFindTVI#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TreeViewFindTVI/VisualBasic/MainWindow.xaml.vb#1)]  
   

@@ -13,6 +13,7 @@ ms.assetid: 5bee7d34-5121-429e-ab1f-d8ff67bc74c1
 description: Learn how to control the insertion point in a Windows Forms TextBox control by setting the SelectionStart property to an appropriate value.
 ---
 # How to: Control the Insertion Point in a Windows Forms TextBox Control
+
 When a Windows Forms <xref:System.Windows.Forms.TextBox> control first receives the focus, the default insertion within the text box is to the left of any existing text. The user can move the insertion point with the keyboard or the mouse. If the text box loses and then regains the focus, the insertion point will be wherever the user last placed it.  
   
  In some cases, this behavior can be disconcerting to the user. In a word processing application, the user might expect new characters to appear after any existing text. In a data entry application, the user might expect new characters to replace any existing entry. The <xref:System.Windows.Forms.TextBoxBase.SelectionStart%2A> and <xref:System.Windows.Forms.TextBoxBase.SelectionLength%2A> properties enable you to modify the behavior to suit your purpose.  
@@ -50,6 +51,7 @@ When a Windows Forms <xref:System.Windows.Forms.TextBox> control first receives 
     ```  
   
 ## Making the Insertion Point Visible by Default  
+
  The <xref:System.Windows.Forms.TextBox> insertion point is visible by default in a new form only if the <xref:System.Windows.Forms.TextBox> control is first in the tab order. Otherwise, the insertion point appears only if you give the <xref:System.Windows.Forms.TextBox> the focus with either the keyboard or the mouse.  
   
 #### To make the text box insertion point visible by default on a new form  

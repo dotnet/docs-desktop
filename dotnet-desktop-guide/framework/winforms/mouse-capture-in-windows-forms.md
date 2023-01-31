@@ -7,9 +7,11 @@ helpviewer_keywords:
 ms.assetid: 8911d4b0-a4f8-4f93-8246-371aebd27d0c
 ---
 # Mouse Capture in Windows Forms
+
 *Mouse capture* refers to when a control takes command of all mouse input. When a control has captured the mouse, it receives mouse input whether or not the pointer is within its borders.  
   
 ## Setting Mouse Capture  
+
  In Windows Forms the mouse is captured by the control when the user presses a mouse button on a control, and the mouse is released by the control when the user releases the mouse button.  
   
  The <xref:System.Windows.Forms.Control.Capture%2A> property of the <xref:System.Windows.Forms.Control> class specifies whether a control has captured the mouse. To determine when a control loses mouse capture, handle the <xref:System.Windows.Forms.Control.MouseCaptureChanged> event.  

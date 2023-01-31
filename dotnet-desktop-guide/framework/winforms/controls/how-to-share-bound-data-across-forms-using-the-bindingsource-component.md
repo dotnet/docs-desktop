@@ -13,9 +13,11 @@ helpviewer_keywords:
 ms.assetid: a1a49630-db9c-4485-b888-1f62a373a4f7
 ---
 # How to: Share Bound Data Across Forms Using the BindingSource Component
+
 You can easily share data across forms using the <xref:System.Windows.Forms.BindingSource> component. For example, you may want to display one read-only form that summarizes the data-source data and another editable form that contains detailed information about the currently selected item in the data source. This example demonstrates this scenario.  
   
 ## Example  
+
  The following code example demonstrates how to share a <xref:System.Windows.Forms.BindingSource> and its bound data across forms. In this example, the shared <xref:System.Windows.Forms.BindingSource> is passed to the constructor of the child form. The child form allows the user to edit the data for the currently selected item in the main form.  
   
 > [!NOTE]
@@ -25,6 +27,7 @@ You can easily share data across forms using the <xref:System.Windows.Forms.Bind
  [!code-vb[System.Windows.Forms.BindingSourceMultipleForms#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.BindingSourceMultipleForms/VB/Form1.vb#1)]  
   
 ## Compiling the Code  
+
  This example requires:  
   
 - References to the System, System.Windows.Forms, System.Drawing, System.Data, and System.Xml assemblies.  

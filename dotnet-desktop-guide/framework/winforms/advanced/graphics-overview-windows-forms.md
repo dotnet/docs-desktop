@@ -11,9 +11,11 @@ ms.assetid: 94084509-2c6f-477d-923b-d25d37a36b1c
 description: Learn how this graphics device interface enables programmers to write device applications with services exposed through a set of managed classes.
 ---
 # Graphics Overview (Windows Forms)
+
 GDI+ is a Graphics Device Interface that enables programmers to write device-independent applications. The services of GDI+ are exposed through a set of managed classes.  
   
 ## In This Section  
+
  [Overview of Graphics](overview-of-graphics.md)  
  Provides a general introduction to GDI+.  
   
@@ -24,6 +26,7 @@ GDI+ is a Graphics Device Interface that enables programmers to write device-ind
  Describes the managed class interface of GDI+.  
   
 ## Reference  
+
  <xref:System.Drawing>  
  Provides access to GDI+ basic graphics functionality.  
   

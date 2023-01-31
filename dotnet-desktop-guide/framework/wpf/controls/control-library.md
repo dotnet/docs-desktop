@@ -10,9 +10,11 @@ helpviewer_keywords:
 ms.assetid: c1b33289-c389-4ac2-b153-3cbb0d8324ad
 ---
 # Control Library
+
 The Windows Presentation Foundation (WPF) control library contains information on the controls provided by Windows Presentation Foundation (WPF), listed alphabetically.  
   
 ## In This Section  
+
  [Border](border.md)  
  [BulletDecorator](bulletdecorator.md)  
  [Button](button.md)  
@@ -62,11 +64,13 @@ The Windows Presentation Foundation (WPF) control library contains information o
  [Viewbox](viewbox.md)  
   
 ## Reference  
+
  <xref:System.Windows.Controls>  
   
  <xref:System.Windows.Controls.Primitives>  
   
 ## Related Sections  
+
  [Control Customization](control-customization.md)  
   
  [Controls by Category](controls-by-category.md)  

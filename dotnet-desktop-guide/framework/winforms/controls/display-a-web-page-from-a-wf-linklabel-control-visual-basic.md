@@ -15,6 +15,7 @@ helpviewer_keywords:
 ms.assetid: 477a7398-5971-4de3-b24c-f49f32bdb28a
 ---
 # How to: Display a Web Page from a Windows Forms LinkLabel Control (Visual Basic)
+
 This example displays a Web page in the default browser when a user clicks a Windows Forms <xref:System.Windows.Forms.LinkLabel> control.  
   
 ## Example  
@@ -33,6 +34,7 @@ End Sub
 ```  
   
 ## Compiling the Code  
+
  This example requires:  
   
 - A Windows Form named `Form1`.  
@@ -42,6 +44,7 @@ End Sub
 - An active Internet connection.  
   
 ## .NET Framework Security  
+
  The call to the <xref:System.Diagnostics.Process.Start%2A> method requires full trust. For more information, see <xref:System.Security.SecurityException>.  
   
 ## See also

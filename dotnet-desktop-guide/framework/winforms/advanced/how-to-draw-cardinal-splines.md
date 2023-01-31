@@ -12,6 +12,7 @@ ms.assetid: a4a41e80-4461-4b47-b6bd-2c5e68881994
 description: Learn how to draw cardinal splines by creating a Graphics object and passing the address of an array of points to the DrawCurve method.
 ---
 # How to: Draw Cardinal Splines
+
 A cardinal spline is a curve that passes smoothly through a given set of points. To draw a cardinal spline, create a <xref:System.Drawing.Graphics> object and pass the address of an array of points to the <xref:System.Drawing.Graphics.DrawCurve%2A> method.  
   
 ### Drawing a Bell-Shaped Cardinal Spline  
@@ -42,6 +43,7 @@ A cardinal spline is a curve that passes smoothly through a given set of points.
  [!code-vb[System.Drawing.ConstructingDrawingCurves#23](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ConstructingDrawingCurves/VB/Class1.vb#23)]  
   
 ## Compiling the Code  
+
  The preceding examples are designed for use with Windows Forms, and they require <xref:System.Windows.Forms.PaintEventArgs> `e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler.  
   
 ## See also

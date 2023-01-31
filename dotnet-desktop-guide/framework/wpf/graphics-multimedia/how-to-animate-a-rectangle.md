@@ -11,9 +11,11 @@ helpviewer_keywords:
 ms.assetid: 572ffb95-790d-4ace-adbf-b2ea8a90e75b
 ---
 # How to: Animate a Rectangle
+
 This example shows how to animate changes to the size and position of a rectangle.  
   
 ## Example  
+
  The following example uses an instance of the <xref:System.Windows.Media.Animation.RectAnimation> class to animate the <xref:System.Windows.Media.RectangleGeometry.Rect%2A> property of a <xref:System.Windows.Media.RectangleGeometry>, which animates changes to the size and position of the rectangle.  
   
  [!code-csharp[BasicAnimations_snip#RectAnimationWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/BasicAnimations_snip/CSharp/RectAnimationExample.cs#rectanimationwholepage)]

@@ -10,9 +10,11 @@ helpviewer_keywords:
 ms.assetid: 587e36f6-1957-424e-9d89-c43724f26d84
 ---
 # Animation and Timing How-to Topics
+
 The following topics demonstrate how to use the Windows Presentation Foundation (WPF) animation and timing system in your applications.  
   
 ## In This Section  
+
  [Accelerate or Decelerate an Animation](how-to-accelerate-or-decelerate-an-animation.md)  
  [Accumulate Animation Values During Repeat Cycles](how-to-accumulate-animation-values-during-repeat-cycles.md)  
  [Add an Animation Output Value to an Animation Starting Value](how-to-add-an-animation-output-value-to-an-animation-starting-value.md)  
@@ -39,6 +41,7 @@ The following topics demonstrate how to use the Windows Presentation Foundation 
  [Use Event Triggers to Control a Storyboard After It Starts](how-to-use-event-triggers-to-control-a-storyboard-after-it-starts.md)  
   
 ## Reference  
+
  <xref:System.Windows.Media.Animation.Timeline>  
   
  <xref:System.Windows.Media.Animation.Storyboard>  
@@ -50,4 +53,5 @@ The following topics demonstrate how to use the Windows Presentation Foundation 
  <xref:System.Windows.Media.Animation>  
   
 ## Related Sections  
+
  [Graphics and Multimedia](index.md)

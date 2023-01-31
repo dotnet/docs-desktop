@@ -13,6 +13,7 @@ helpviewer_keywords:
 ms.assetid: 5a20749a-41b5-4acc-8eb1-9e5040b0a2c4
 ---
 # How to: Connect Multiple Events to a Single Event Handler in Windows Forms
+
 In your application design, you may find it necessary to use a single event handler for multiple events or have multiple events perform the same procedure. For example, it is often a powerful time-saver to have a menu command raise the same event as a button on your form does if they expose the same functionality. You can do this by using the Events view of the Properties window in C# or using the `Handles` keyword and the **Class Name** and **Method Name** drop-down boxes in the Visual Basic Code Editor.  
   
 ### To connect multiple events to a single event handler in Visual Basic  

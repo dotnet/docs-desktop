@@ -9,6 +9,7 @@ ms.assetid: 9a3d5f4f-5dda-4350-9ad5-57ce5976dc47
 description: Learn how to create a Windows Explorer-style interface on a Windows Form for displaying and browsing information.
 ---
 # How to: Create a Windows Explorer–Style Interface on a Windows Form
+
 Windows Explorer is a common user-interface choice for applications because of its ready familiarity.
 
  Windows Explorer is, essentially, a <xref:System.Windows.Forms.TreeView> control and a <xref:System.Windows.Forms.ListView> control on separate panels. The panels are made resizable by a splitter. This arrangement of controls is very effective for displaying and browsing information.

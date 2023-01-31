@@ -12,9 +12,11 @@ helpviewer_keywords:
 ms.assetid: 3656055e-3222-43c8-b868-fd0c90cc31a3
 ---
 # NavigationWindow Styles and Templates
+
 This topic describes the styles and templates for the <xref:System.Windows.Navigation.NavigationWindow> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [Create a template for a control](how-to-create-apply-template.md).  
   
 ## NavigationWindow Parts  
+
  The following table lists the named parts for the <xref:System.Windows.Navigation.NavigationWindow> control.  
   
 |Part|Type|Description|  
@@ -22,6 +24,7 @@ This topic describes the styles and templates for the <xref:System.Windows.Navig
 |PART_NavWinCP|<xref:System.Windows.Controls.ContentPresenter>|The area for the content.|  
   
 ## NavigationWindow States  
+
  The following table lists the visual states for the <xref:System.Windows.Navigation.NavigationWindow> control.  
   
 |VisualState Name|VisualStateGroup Name|Description|  
@@ -31,6 +34,7 @@ This topic describes the styles and templates for the <xref:System.Windows.Navig
 |InvalidUnfocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` has the control does not have focus.|  
   
 ## NavigationWindow ControlTemplate Example  
+
  Although this example contains all of the elements that are defined in the <xref:System.Windows.Controls.ControlTemplate> of a <xref:System.Windows.Navigation.NavigationWindow> by default, the specific values should be thought of as examples.  
   
  [!code-xaml[ControlTemplateExamples#NavigationWindow](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/navigationwindow.xaml#navigationwindow)]  

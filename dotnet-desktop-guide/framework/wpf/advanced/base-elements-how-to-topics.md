@@ -9,9 +9,11 @@ helpviewer_keywords:
 ms.assetid: 09f3a88d-b132-4505-a8bb-55cbfc6bb55a
 ---
 # Base Elements How-to Topics
+
 The topics in this section describe how to use the four WPF base elements: <xref:System.Windows.UIElement>, <xref:System.Windows.ContentElement>, <xref:System.Windows.FrameworkElement>, and <xref:System.Windows.FrameworkContentElement>.  
   
 ## In This Section  
+
  [Make a UIElement Transparent or Semi-Transparent](how-to-make-a-uielement-transparent-or-semi-transparent.md)  
  [Animate the Size of a FrameworkElement](how-to-animate-the-size-of-a-frameworkelement.md)  
  [Determine Whether a Freezable Is Frozen](how-to-determine-whether-a-freezable-is-frozen.md)  
@@ -24,6 +26,7 @@ The topics in this section describe how to use the four WPF base elements: <xref
  [Handle the ContextMenuOpening Event](how-to-handle-the-contextmenuopening-event.md)  
   
 ## Reference  
+
  <xref:System.Windows.UIElement>  
   
  <xref:System.Windows.ContentElement>  
@@ -33,4 +36,5 @@ The topics in this section describe how to use the four WPF base elements: <xref
  <xref:System.Windows.FrameworkContentElement>  
   
 ## Related Sections  
+
  [Base Elements](base-elements.md)

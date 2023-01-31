@@ -12,9 +12,11 @@ helpviewer_keywords:
 ms.assetid: a8b45ceb-0e32-4ba1-928f-df6d30db17c6
 ---
 # How to: Animate a Rectangle Geometry by Using Key Frames
+
 This example shows how to animate the <xref:System.Windows.Media.RectangleGeometry.Rect%2A> property of a <xref:System.Windows.Media.RectangleGeometry> by using key frames.  
   
 ## Example  
+
  The following example uses the <xref:System.Windows.Media.Animation.RectAnimationUsingKeyFrames> class to animate the <xref:System.Windows.Media.RectangleGeometry.Rect%2A> property of a <xref:System.Windows.Media.RectangleGeometry>. This animation uses three key frames in the following manner:  
   
 1. During the first two seconds, uses an instance of the <xref:System.Windows.Media.Animation.LinearRectKeyFrame> class to animate a gradual change in the position, width, and height of a rectangle. Linear key frames like <xref:System.Windows.Media.Animation.LinearRectKeyFrame> create a smooth linear transition between values.  

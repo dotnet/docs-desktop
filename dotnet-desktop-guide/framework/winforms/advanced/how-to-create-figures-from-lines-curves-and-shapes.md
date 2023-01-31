@@ -11,9 +11,11 @@ ms.assetid: 82fd56c7-b443-4765-9b7c-62ce030656ec
 description: Learn how to create figures from lines, curves, and shapes with a GraphicsPath, and then call methods to add primitives to the path.
 ---
 # How to: Create Figures from Lines, Curves, and Shapes
+
 To create a figure, construct a <xref:System.Drawing.Drawing2D.GraphicsPath>, and then call methods, such as <xref:System.Drawing.Drawing2D.GraphicsPath.AddLine%2A> and <xref:System.Drawing.Drawing2D.GraphicsPath.AddCurve%2A>, to add primitives to the path.  
   
 ## Example  
+
  The following code examples create paths that have figures:  
   
 - The first example creates a path that has a single figure. The figure consists of a single arc. The arc has a sweep angle of –180 degrees, which is counterclockwise in the default coordinate system.  
@@ -27,6 +29,7 @@ To create a figure, construct a <xref:System.Drawing.Drawing2D.GraphicsPath>, an
  [!code-vb[System.Drawing.ConstructingDrawingPaths#22](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ConstructingDrawingPaths/VB/Class1.vb#22)]  
   
 ## Compiling the Code  
+
  The previous examples are designed for use with Windows Forms, and they require <xref:System.Windows.Forms.PaintEventArgs> `e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler.  
   
 ## See also

@@ -13,6 +13,7 @@ helpviewer_keywords:
 ms.assetid: a1f74f29-048c-4723-85fa-b9d375ab8f4b
 ---
 # How to: Split a Window Horizontally
+
 The following code example makes the splitter that divides the <xref:System.Windows.Forms.SplitContainer> control horizontal.  
   
 > [!NOTE]

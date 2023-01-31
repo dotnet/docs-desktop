@@ -10,12 +10,14 @@ ms.assetid: d426b203-0216-4dbe-b834-1641e50a9c29
 description: Learn how the Windows Forms ToolBar control is used on forms as a control bar that displays a row of menus and buttons that activate commands.
 ---
 # ToolBar Control Overview (Windows Forms)
+>
 > [!NOTE]
 > The <xref:System.Windows.Forms.ToolStrip> control replaces and adds functionality to the <xref:System.Windows.Forms.ToolBar> control; however, the <xref:System.Windows.Forms.ToolBar> control is retained for both backward compatibility and future use, if you choose.  
   
  The Windows Forms <xref:System.Windows.Forms.ToolBar> control is used on forms as a control bar that displays a row of drop-down menus and bitmapped buttons that activate commands. Thus, clicking a toolbar button can be an equivalent to choosing a menu command. The buttons can be configured to appear and behave as pushbuttons, drop-down menus, or separators. Typically, a toolbar contains buttons and menus that correspond to items in an application's menu structure, providing quick access to an application's most frequently used functions and commands.  
   
 ## Working with the ToolBar Control  
+
  A <xref:System.Windows.Forms.ToolBar> control is usually "docked" along the top of its parent window, but it can also be docked to any side of the window. A toolbar can display tooltips when the user points the mouse pointer at a toolbar button. A ToolTip is a small pop-up window that briefly describes the button or menu's purpose. To display ToolTips, the <xref:System.Windows.Forms.ToolBar.ShowToolTips%2A> property must be set to `true`.  
   
 > [!NOTE]

@@ -16,6 +16,7 @@ ms.assetid: c85fcad1-cb50-4431-847c-ac4145a35c89
 description: Learn how, with the Ink Threading model, a tablet pen collects input data at a much higher rate than a mouse does and renders the ink as the user writes.
 ---
 # The Ink Threading Model
+
 One of the benefits of ink on a Tablet PC is that it feels a lot like writing with a regular pen and paper.  To accomplish this, the tablet pen collects input data at a much higher rate than a mouse does and renders the ink as the user writes.  The application's user interface (UI) thread is not sufficient for collecting pen data and rendering ink, because it can become blocked.  To solve this, a WPF application uses two additional threads when a user writes ink.  
   
  The following list describes the threads that take part in collecting and rendering digital ink:  
@@ -29,6 +30,7 @@ One of the benefits of ink on a Tablet PC is that it feels a lot like writing wi
  The inking model is the same whether the application uses the <xref:System.Windows.Controls.InkCanvas> or a custom control similar to the one in [Creating an Ink Input Control](creating-an-ink-input-control.md).  Although this topic discusses threading in terms of the <xref:System.Windows.Controls.InkCanvas>, the same concepts apply when you create a custom control.  
   
 ## Threading Overview  
+
  The following diagram illustrates the threading model when a user draws a stroke:  
   
  ![Threading model while drawing a stroke.](./media/inkthreading-drawingink.png "InkThreading_DrawingInk")  
@@ -48,6 +50,7 @@ One of the benefits of ink on a Tablet PC is that it feels a lot like writing wi
     2. The UI thread alerts the <xref:System.Windows.Input.StylusPlugIns.DynamicRenderer> that the stroke is statically rendered, so the <xref:System.Windows.Input.StylusPlugIns.DynamicRenderer> removes its visual representation of the stroke.  
   
 ## Ink collection and Stylus Plug-ins  
+
  Each <xref:System.Windows.UIElement> has a <xref:System.Windows.Input.StylusPlugIns.StylusPlugInCollection>.  The <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn> objects in the <xref:System.Windows.Input.StylusPlugIns.StylusPlugInCollection> receive and can modify the stylus points on the pen thread. The <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn> objects receive the stylus points according to their order in the <xref:System.Windows.Input.StylusPlugIns.StylusPlugInCollection>.  
   
  The following diagram illustrates the hypothetical situation where the <xref:System.Windows.UIElement.StylusPlugIns%2A> collection of a <xref:System.Windows.UIElement> contains `stylusPlugin1`, a <xref:System.Windows.Input.StylusPlugIns.DynamicRenderer>, and `stylusPlugin2`, in that order.  
@@ -67,6 +70,7 @@ One of the benefits of ink on a Tablet PC is that it feels a lot like writing wi
  Suppose that `stylusPlugin1` restricts the stylus points to a rectangle and `stylusPlugin2` translates the stylus points to the right.  In the previous scenario, the <xref:System.Windows.Input.StylusPlugIns.DynamicRenderer> receives the restricted stylus points, but not the translated stylus points.  When the user draws the stroke, the stroke is rendered within the bounds of the rectangle, but the stroke doesn't appear to be translated until the user lifts the pen.  
   
 ### Performing operations with a Stylus Plug-in on the UI thread  
+
  Because accurate hit-testing cannot be performed on the pen thread, some elements might occasionally receive stylus input intended for other elements. If you need to make sure the input was routed correctly before performing an operation, subscribe to and perform the operation in the <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn.OnStylusDownProcessed%2A>, <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn.OnStylusMoveProcessed%2A>, or <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn.OnStylusUpProcessed%2A> method. These methods are invoked by the application thread after accurate hit-testing has been performed. To subscribe to these methods, call the <xref:System.Windows.Input.StylusPlugIns.RawStylusInput.NotifyWhenProcessed%2A> method in the method that occurs on the pen thread.  
   
  The following diagram illustrates the relationship between the pen thread and UI thread with respect to the stylus events of a <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn>.  
@@ -74,6 +78,7 @@ One of the benefits of ink on a Tablet PC is that it feels a lot like writing wi
  ![Ink Threading Models &#40;UI and Pen&#41;](./media/inkthreading-plugincallbacks.png "InkThreading_PluginCallbacks")  
   
 ## Rendering Ink  
+
  As the user draws a stroke, <xref:System.Windows.Input.StylusPlugIns.DynamicRenderer> renders the ink on a separate thread so the ink appears to "flow" from the pen even when the UI thread is busy.  The <xref:System.Windows.Input.StylusPlugIns.DynamicRenderer> builds a visual tree on the dynamic rendering thread as it collects stylus points.  When the user finishes the stroke, the <xref:System.Windows.Input.StylusPlugIns.DynamicRenderer> asks to be notified when the application does the next rendering pass.  After the application completes the next rendering pass, the <xref:System.Windows.Input.StylusPlugIns.DynamicRenderer> cleans up its visual tree.  The following diagram illustrates this process.  
   
  ![Ink threading diagram](./media/inkthreading-visualtree.png "InkThreading_VisualTree")  

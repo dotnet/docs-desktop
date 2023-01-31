@@ -11,9 +11,11 @@ helpviewer_keywords:
 ms.assetid: ac550423-60a3-43e6-a0bc-d65ef026e0cb
 ---
 # Visual Layer Programming How-to Topics
+
 The topics in this section demonstrate how to use the visual layer for hit-testing and low-level composition.  
   
 ## In This Section  
+
  [Get the Offset of a Visual](how-to-get-the-offset-of-a-visual.md)  
  [Enumerate Drawing Content of a Visual](how-to-enumerate-drawing-content-of-a-visual.md)  
  [Hit Test Geometry in a Visual](how-to-hit-test-geometry-in-a-visual.md)  

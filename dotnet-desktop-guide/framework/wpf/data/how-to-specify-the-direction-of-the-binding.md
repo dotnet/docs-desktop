@@ -13,6 +13,7 @@ ms.assetid: 37334478-028b-4514-86c9-1420709f4818
 This example shows how to specify whether the binding updates only the binding target (target) property, the binding source (source) property, or both the target property and the source property.  
   
 ## Example  
+
  You use the <xref:System.Windows.Data.Binding.Mode%2A?displayProperty=nameWithType> property to specify the direction of the binding. The following are the available options for binding updates:  
   
 - <xref:System.Windows.Data.BindingMode.TwoWay?displayProperty=nameWithType> updates the target property or the property whenever either the target property or the source property changes.  

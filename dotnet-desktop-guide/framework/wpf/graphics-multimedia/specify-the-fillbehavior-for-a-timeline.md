@@ -8,9 +8,11 @@ helpviewer_keywords:
 ms.assetid: db805f59-d513-4dac-af15-47005dae3199
 ---
 # How to: Specify the FillBehavior for a Timeline that has Reached the End of Its Active Period
+
 This example shows how to specify the <xref:System.Windows.Media.Animation.Timeline.FillBehavior%2A> for the inactive <xref:System.Windows.Media.Animation.Timeline> of an animated property.  
   
 ## Example  
+
  The <xref:System.Windows.Media.Animation.Timeline.FillBehavior%2A> property of a <xref:System.Windows.Media.Animation.Timeline> determines what happens to the value of an animated property when it is not being animated, that is, when the <xref:System.Windows.Media.Animation.Timeline> is inactive but its parent <xref:System.Windows.Media.Animation.Timeline> is inside its active or hold period. For example, does an animated property remain at its end value after the animation ends or does it revert back to the value it had before the animation started?  
   
  The following example uses a <xref:System.Windows.Media.Animation.DoubleAnimation> to animate the <xref:System.Windows.FrameworkElement.Width%2A> of two rectangles. Each rectangle uses a different <xref:System.Windows.Media.Animation.Timeline> object.  

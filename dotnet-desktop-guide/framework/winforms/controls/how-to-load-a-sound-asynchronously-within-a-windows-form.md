@@ -12,13 +12,16 @@ helpviewer_keywords:
 ms.assetid: 3b6a9296-1d5e-4d52-a4ba-94366d6fe302
 ---
 # How to: Load a Sound Asynchronously within a Windows Form
+
 The following code example asynchronously loads a sound from an URL and then plays it on a new thread.  
   
 ## Example  
+
  [!code-csharp[System.Media.SoundPlayer.LoadAsync#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Media.SoundPlayer.LoadAsync/CS/Form1.cs#1)]
  [!code-vb[System.Media.SoundPlayer.LoadAsync#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Media.SoundPlayer.LoadAsync/VB/Form1.vb#1)]  
   
 ## Compiling the Code  
+
  This example requires:  
   
 - References to the System and System.Windows.Forms assemblies.  
@@ -26,6 +29,7 @@ The following code example asynchronously loads a sound from an URL and then pla
 - That you replace the file name `"http://www.tailspintoys.com/sounds/stop.wav"` with a valid file name.  
   
 ## Robust Programming  
+
  File operations should be enclosed within appropriate exception-handling blocks.  
   
  The following conditions may cause an exception:  
@@ -43,6 +47,7 @@ The following code example asynchronously loads a sound from an URL and then pla
 - The path is only a colon ":" (<xref:System.NotSupportedException> class).  
   
 ## .NET Framework Security  
+
  Do not make decisions about the contents of the file based on the name of the file. For example, the file `Form1.vb` may not be a Visual Basic source file. Verify all inputs before using the data in your application.  
   
 ## See also

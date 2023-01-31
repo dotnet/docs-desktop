@@ -16,6 +16,7 @@ helpviewer_keywords:
 ms.assetid: d14c6092-04b2-4a07-8ddf-0dd11277ff5f
 ---
 # How to: Determine Which Panel in the Windows Forms StatusBar Control Was Clicked
+>
 > [!IMPORTANT]
 > The <xref:System.Windows.Forms.StatusStrip> and <xref:System.Windows.Forms.ToolStripStatusLabel> controls replace and add functionality to the <xref:System.Windows.Forms.StatusBar> and <xref:System.Windows.Forms.StatusBarPanel> controls; however, the <xref:System.Windows.Forms.StatusBar> and <xref:System.Windows.Forms.StatusBarPanel> controls are retained for both backward compatibility and future use, if you choose.  
   

@@ -11,6 +11,7 @@ helpviewer_keywords:
 ms.assetid: 0e5010ad-1e9a-4271-895e-5a3d24d37a26
 ---
 # How to: Set the Value Displayed by the Windows Forms ProgressBar Control
+>
 > [!IMPORTANT]
 > The <xref:System.Windows.Forms.ToolStripProgressBar> control replaces and adds functionality to the <xref:System.Windows.Forms.ProgressBar> control; however, the <xref:System.Windows.Forms.ProgressBar> control is retained for both backward compatibility and future use, if you choose.  
   

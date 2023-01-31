@@ -19,6 +19,7 @@ helpviewer_keywords:
 ms.assetid: c5fa2562-43a4-46fa-a604-52d8526a87bd
 ---
 # How to: Ensure the Selected Row in a Child Table Remains at the Correct Position
+
 Oftentimes when you work with data binding in Windows Forms, you will display data in what is called a parent/child or master/details view. This refers to a data-binding scenario where data from the same source is displayed in two controls. Changing the selection in one control causes the data displayed in the second control to change. For example, the first control might contain a list of customers and the second a list of orders related to the selected customer in the first control.  
   
  Starting with the .NET Framework version 2.0, when you display data in a parent/child view you might have to take extra steps to make sure that the currently selected row in the child table is not reset to the first row of the table. In order to do this, you will have to cache the child table position and reset it after the parent table changes. Typically the child reset occurs the first time a field in a row of the parent table changes.  
@@ -52,6 +53,7 @@ Oftentimes when you work with data binding in Windows Forms, you will display da
      [!code-vb[System.Windows.Forms.CurrencyManagerReset#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.CurrencyManagerReset/VB/Form1.vb#3)]  
   
 ## Example  
+
  The following example demonstrates how to save the current position on the <xref:System.Windows.Forms.CurrencyManager>.for a child table and reset the position after an edit is completed on the parent table. This example contains two <xref:System.Windows.Forms.DataGridView> controls bound to two tables in a <xref:System.Data.DataSet> using a <xref:System.Windows.Forms.BindingSource> component. A relation is established between the two tables and the relation is added to the <xref:System.Data.DataSet>. The position in the child table is initially set to the third row for demonstration purposes.  
   
  [!code-csharp[System.Windows.Forms.CurrencyManagerReset#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.CurrencyManagerReset/CS/Form1.cs#1)]
@@ -72,6 +74,7 @@ Oftentimes when you work with data binding in Windows Forms, you will display da
 6. Click the **Clear parent field** button. Notice that the selected row in the child table changes to the first row.  
   
 ## Compiling the Code  
+
  This example requires:  
   
 - References to the System, System.Data, System.Drawing, System.Windows.Forms, and System.XML assemblies.  

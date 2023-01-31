@@ -47,6 +47,7 @@ For step-by-step information about how to use these features, see the following 
 |Creating custom controls|[How to: Inherit from the UserControl Class](./controls/how-to-inherit-from-the-usercontrol-class.md)|
 
 ### Display and manipulate data
+
  Many applications must display data from a database, XML file, XML Web service, or other data source. Windows Forms provides a flexible control that is named the <xref:System.Windows.Forms.DataGridView> control for displaying such tabular data in a traditional row and column format, so that every piece of data occupies its own cell. When you use <xref:System.Windows.Forms.DataGridView>, you can customize the appearance of individual cells, lock arbitrary rows and columns in place, and display complex controls inside cells, among other features.
 
  Connecting to data sources over a network is a simple task with Windows Forms smart clients. The <xref:System.Windows.Forms.BindingSource> component represents a connection to a data source, and exposes methods for binding data to controls, navigating to the previous and next records, editing records, and saving changes back to the original source. The <xref:System.Windows.Forms.BindingNavigator> control provides a simple interface over the <xref:System.Windows.Forms.BindingSource> component for users to navigate between records.

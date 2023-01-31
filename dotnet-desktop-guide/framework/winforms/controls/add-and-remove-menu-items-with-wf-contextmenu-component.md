@@ -19,6 +19,7 @@ helpviewer_keywords:
 ms.assetid: 426d1eaf-7fb8-4b0b-8a33-5e8721786ea4
 ---
 # How to: Add and Remove Menu Items with the Windows Forms ContextMenu Component
+
 Explains how to add and remove shortcut menu items in Windows Forms.  
   
  The Windows Forms <xref:System.Windows.Forms.ContextMenu> component provides a menu of frequently used commands that are relevant to the selected object. You can add items to the shortcut menu by adding <xref:System.Windows.Forms.MenuItem> objects to the <xref:System.Windows.Forms.Menu.MenuItems%2A> collection.  

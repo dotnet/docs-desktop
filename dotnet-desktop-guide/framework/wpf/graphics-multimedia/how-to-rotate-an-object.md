@@ -11,11 +11,13 @@ helpviewer_keywords:
 ms.assetid: ee3466cd-e66f-4e8f-8a5a-71d77bc1e390
 ---
 # How to: Rotate an Object
+
 This example shows how to rotate an object. The example first creates a <xref:System.Windows.Media.RotateTransform> and then specifies its <xref:System.Windows.Media.RotateTransform.Angle%2A> in degrees.  
   
  The following example rotates a <xref:System.Windows.Shapes.Polyline> object 45 degrees about its upper-left corner.  
   
 ## Example  
+
  [!code-xaml[Transforms_snip#RotatePolylineAboutTopLeft](~/samples/snippets/csharp/VS_Snippets_Wpf/Transforms_snip/CS/RotateTransformExample.xaml#rotatepolylineabouttopleft)]  
   
  [!code-csharp[Transforms_Procedural_snip#RotatePolylineAboutTopLeft](~/samples/snippets/csharp/VS_Snippets_Wpf/Transforms_Procedural_snip/CSharp/RotateTransformExample.cs#rotatepolylineabouttopleft)]

@@ -9,11 +9,13 @@ helpviewer_keywords:
 ms.assetid: 09a5fd05-3447-47ec-a4ec-6082a2b7f0dd
 ---
 # DataGridView Control Scenarios (Windows Forms)
+
 With the <xref:System.Windows.Forms.DataGridView> control, you can display tabular data from a variety of data sources. For simple uses, you can manually populate a <xref:System.Windows.Forms.DataGridView> and manipulate the data directly through the control. Typically, however, you will store your data in an external data source and bind the control to it through a <xref:System.Windows.Forms.BindingSource> component.  
   
  This topic describes some of the common scenarios that involve the <xref:System.Windows.Forms.DataGridView> control.  
   
 ## Scenario 1: Displaying Small Amounts of Data  
+
  You do not have to store your data in an external data source to display it in the <xref:System.Windows.Forms.DataGridView> control. If you are working with a small amount of data, you can populate the control yourself and manipulate the data through the control. This is called *unbound mode*. For more information, see [How to: Create an Unbound Windows Forms DataGridView Control](how-to-create-an-unbound-windows-forms-datagridview-control.md).  
   
 ### Scenario Key Points  
@@ -25,6 +27,7 @@ With the <xref:System.Windows.Forms.DataGridView> control, you can display tabul
 - Unbound mode is also suited for spreadsheet-like or sparsely populated tables.  
   
 ## Scenario 2: Viewing and Updating Data Stored in an External Data Source  
+
  You can use the <xref:System.Windows.Forms.DataGridView> control as a user interface (UI) through which users can access data kept in a data source such as a database table or a collection of business objects. For more information, see [How to: Bind Data to the Windows Forms DataGridView Control](how-to-bind-data-to-the-windows-forms-datagridview-control.md).  
   
 ### Scenario Key Points  
@@ -38,6 +41,7 @@ With the <xref:System.Windows.Forms.DataGridView> control, you can display tabul
 - Clipboard support enables users to copy data from your application into other applications.  
   
 ## Scenario 3: Advanced Data  
+
  If you have special needs that the standard data binding model does not address, you can manage the interaction between the control and your data by implementing *virtual mode*. Implementing virtual mode means implementing one or more event handlers that let the control request information about cells as the information is needed.  
   
  For example, if you work with large amounts of data, you may want to implement virtual mode to ensure optimal efficiency. Virtual mode is also useful for maintaining the values of unbound columns that you display along with columns retrieved from another data source.  
@@ -49,6 +53,7 @@ With the <xref:System.Windows.Forms.DataGridView> control, you can display tabul
 - Virtual mode is suited for displaying very large amounts of data when you need to fine-tune performance.  
   
 ## Scenario 4: Automatically Resizing Rows and Columns  
+
  When you display data that is regularly updated, you can automatically resize rows and columns to ensure that all content is visible. The <xref:System.Windows.Forms.DataGridView> control provides several options that let you enable or disable manual resizing, resize programmatically at specific times, or resize automatically whenever content changes. For more information, see [Sizing Options in the Windows Forms DataGridView Control](sizing-options-in-the-windows-forms-datagridview-control.md).  
   
 ### Scenario Key Points  
@@ -60,6 +65,7 @@ With the <xref:System.Windows.Forms.DataGridView> control, you can display tabul
 - Programmatic resizing enables you to resize cells at specific times to avoid the performance penalty of continuous automatic resizing.  
   
 ## Scenario 5: Simple Customization  
+
  The <xref:System.Windows.Forms.DataGridView> control provides many ways for you to alter its basic appearance and behavior. For more information, see [Cell Styles in the Windows Forms DataGridView Control](cell-styles-in-the-windows-forms-datagridview-control.md).  
   
 ### Scenario Key Points  
@@ -69,6 +75,7 @@ With the <xref:System.Windows.Forms.DataGridView> control, you can display tabul
 - Cell styles can be layered and shared by multiple elements, letting you reuse code.  
   
 ## Scenario 6: Advanced Customization  
+
  The <xref:System.Windows.Forms.DataGridView> control provides many ways for you to customize its appearance and behavior.  
   
 ### Scenario Key Points  

@@ -12,11 +12,13 @@ helpviewer_keywords:
 ms.assetid: b00aaa19-c6df-4c3b-a9fd-88a0b488df2b
 ---
 # How to: Convert Bound Data
+
 This example shows how to apply conversion to data that is used in bindings.  
   
  To convert data during binding, you must create a class that implements the <xref:System.Windows.Data.IValueConverter> interface, which includes the <xref:System.Windows.Data.IValueConverter.Convert%2A> and <xref:System.Windows.Data.IValueConverter.ConvertBack%2A> methods.  
   
 ## Example  
+
  The following example shows the implementation of a date converter that converts the date value passed in so that it only shows the year, the month, and the day. When implementing the <xref:System.Windows.Data.IValueConverter> interface, it is a good practice to decorate the implementation with a <xref:System.Windows.Data.ValueConversionAttribute> attribute to indicate to development tools the data types involved in the conversion, as in the following example:  
   
  [!code-csharp[DataBindingLab#18](~/samples/snippets/csharp/VS_Snippets_Wpf/DataBindingLab/CSharp/DateConverter.cs#18)]

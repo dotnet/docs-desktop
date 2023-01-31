@@ -12,9 +12,11 @@ helpviewer_keywords:
 ms.assetid: aa99130c-43a1-450f-9b46-c40ae0db0cca
 ---
 # TextBox Styles and Templates
+
 This topic describes the styles and templates for the <xref:System.Windows.Controls.TextBox> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [Create a template for a control](how-to-create-apply-template.md).  
   
 ## TextBox Parts  
+
  The following table lists the named parts for the <xref:System.Windows.Controls.TextBox> control.  
   
 |Part|Type|Description|  
@@ -22,6 +24,7 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 |PART_ContentHost|<xref:System.Windows.FrameworkElement>|A visual element that can contain a <xref:System.Windows.FrameworkElement>. The text of the <xref:System.Windows.Controls.TextBox> is displayed in this element.|  
   
 ## TextBox States  
+
  The following table lists the visual states for the <xref:System.Windows.Controls.TextBox> control.  
   
 |VisualState Name|VisualStateGroup Name|Description|  
@@ -37,6 +40,7 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 |InvalidUnfocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` has the control does not have focus.|  
   
 ## TextBox ControlTemplate Example  
+
  The following example shows how to define a <xref:System.Windows.Controls.ControlTemplate> for the <xref:System.Windows.Controls.TextBox> control.  
   
  [!code-xaml[ControlTemplateExamples#TextBox](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/textbox.xaml#textbox)]  

@@ -12,6 +12,7 @@ api_location:
 ms.assetid: fff47a86-9d9f-4176-9530-10e1876e393f
 ---
 # ForwardTranslateAccelerator Function (WPF Unmanaged API Reference)
+
 This API supports the Windows Presentation Foundation (WPF) infrastructure and is not intended to be used directly from your code.  
   
  Used by the Windows Presentation Foundation (WPF) infrastructure for windows management.  
@@ -26,6 +27,7 @@ HRESULT ForwardTranslateAccelerator(
 ```  
   
 ## Parameters  
+
  pMsg  
  A pointer to a message.  
   
@@ -33,6 +35,7 @@ HRESULT ForwardTranslateAccelerator(
  `true` when the app has already been given a chance to handle the input message, but has not handled it; otherwise, `false`.  
   
 ## Requirements  
+
  **Platforms:** See [.NET Framework System Requirements](/dotnet/framework/get-started/system-requirements).  
   
  **DLL:**  

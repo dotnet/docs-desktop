@@ -11,11 +11,13 @@ helpviewer_keywords:
 ms.assetid: 269c61e0-6bd9-4291-9bed-1c5ee66da486
 ---
 # How to: Add an Event Handler Using Code
+
 This example shows how to add an event handler to an element by using code.  
   
  If you want to add an event handler to a XAML element, and the markup page that contains the element has already been loaded, you must add the handler using code. Alternatively, if you are building up the element tree for an application entirely using code and not declaring any elements using XAML, you can call specific methods to add event handlers to the constructed element tree.  
   
 ## Example  
+
  The following example adds a new <xref:System.Windows.Controls.Button> to an existing page that is initially defined in XAML. A code-behind file implements an event handler method and then adds that method as a new event handler on the <xref:System.Windows.Controls.Button>.  
   
  The C# example uses the `+=` operator to assign a handler to an event. This is the same operator that is used to assign a handler in the common language runtime (CLR) event handling model. Microsoft Visual Basic does not support this operator as a means of adding event handlers. It instead requires one of two techniques:  

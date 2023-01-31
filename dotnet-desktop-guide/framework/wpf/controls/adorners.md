@@ -9,13 +9,16 @@ helpviewer_keywords:
 ms.assetid: 5d5f656b-8e05-4839-9d53-b0324d902aa9
 ---
 # Adorners
+
 This section provides information about Adorners and the Windows Presentation Foundation (WPF) Adorner framework.  
   
 ## In This Section  
+
  [Adorners Overview](adorners-overview.md)  
  [How-to Topics](adorners-how-to-topics.md)  
   
 ## Reference  
+
  <xref:System.Windows.Controls.AdornedElementPlaceholder>  
   
  <xref:System.Windows.Documents.Adorner>  

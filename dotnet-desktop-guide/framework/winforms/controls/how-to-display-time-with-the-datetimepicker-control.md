@@ -12,6 +12,7 @@ helpviewer_keywords:
 ms.assetid: 0c1c8b40-1b50-4301-a90c-39516775ccb1
 ---
 # How to: Display Time with the DateTimePicker Control
+
 If you want your application to enable users to select a date and time, and to display that date and time in the specified format, use the <xref:System.Windows.Forms.DateTimePicker> control. The following procedure shows how to use the <xref:System.Windows.Forms.DateTimePicker> control to display the time.  
   
 ### To display the time with the DateTimePicker control  
@@ -27,12 +28,14 @@ If you want your application to enable users to select a date and time, and to d
      [!code-vb[System.Windows.Forms.DateTimePickerTimeOnly#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DateTimePickerTimeOnly/VB/Form1.vb#3)]  
   
 ## Example  
+
  The following code sample shows how to create a <xref:System.Windows.Forms.DateTimePicker> that enables users to choose a time only.  
   
  [!code-csharp[System.Windows.Forms.DateTimePickerTimeOnly#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DateTimePickerTimeOnly/CS/Form1.cs#1)]
  [!code-vb[System.Windows.Forms.DateTimePickerTimeOnly#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DateTimePickerTimeOnly/VB/Form1.vb#1)]  
   
 ## Compiling the Code  
+
  This example requires:  
   
 - References to the System, System.Data, System.Drawing and System.Windows.Forms assemblies.  

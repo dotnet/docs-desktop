@@ -10,9 +10,11 @@ helpviewer_keywords:
 ms.assetid: 9f986a6d-7cc8-45ac-bb0f-43177a57649d
 ---
 # Resources How-to Topics
+
 The topics in this section describe how to use Windows Presentation Foundation (WPF) resources.  
   
 ## In This Section  
+
  [Define and Reference a Resource](how-to-define-and-reference-a-resource.md)  
  [Use Application Resources](how-to-use-application-resources.md)  
  [Use SystemFonts](how-to-use-systemfonts.md)  
@@ -21,6 +23,7 @@ The topics in this section describe how to use Windows Presentation Foundation (
  [Use System Parameters Keys](how-to-use-system-parameters-keys.md)  
   
 ## Reference  
+
  <xref:System.Windows.FrameworkTemplate.Resources%2A>  
   
  <xref:System.Windows.SystemColors>  
@@ -30,4 +33,5 @@ The topics in this section describe how to use Windows Presentation Foundation (
  <xref:System.Windows.SystemFonts>  
   
 ## Related Sections  
+
  [XAML Resources](/dotnet/desktop-wpf/fundamentals/xaml-resources-define)

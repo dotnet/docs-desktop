@@ -13,9 +13,11 @@ helpviewer_keywords:
 ms.assetid: d5d9274c-23b3-4859-8869-6e64403c9ca7
 ---
 # Glyphs
+
 Glyphs are a low-level depiction of a character to be drawn on-screen. Windows Presentation Foundation (WPF) provides direct access to glyphs for customers who want to intercept and persist text after formatting.  
   
 ## In This Section  
+
  [Introduction to the GlyphRun Object and Glyphs Element](introduction-to-the-glyphrun-object-and-glyphs-element.md)  
   [How to: Draw Text Using Glyphs](draw-text-using-glyphs.md)  
   

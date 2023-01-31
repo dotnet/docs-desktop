@@ -12,9 +12,11 @@ helpviewer_keywords:
 ms.assetid: f4fcf046-7a8f-41b8-b5a8-534b64e0345c
 ---
 # Calendar Styles and Templates
+
 This topic describes the styles and templates for the <xref:System.Windows.Controls.Calendar> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [Create a template for a control](how-to-create-apply-template.md).  
   
 ## Calendar Parts  
+
  The following table lists the named parts for the <xref:System.Windows.Controls.Calendar> control.  
   
 |Part|Type|Description|  
@@ -23,6 +25,7 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 |PART_Root|<xref:System.Windows.Controls.Panel>|The panel that contains the <xref:System.Windows.Controls.Primitives.CalendarItem>.|  
   
 ## Calendar States  
+
  The following table lists the visual states for the <xref:System.Windows.Controls.Calendar> control.  
   
 |VisualState Name|VisualStateGroup Name|Description|  
@@ -32,6 +35,7 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 |InvalidUnfocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` has the control does not have focus.|  
   
 ## CalendarItem Parts  
+
  The following table lists the named parts for the <xref:System.Windows.Controls.Primitives.CalendarItem> control.  
   
 |Part|Type|Description|  
@@ -46,6 +50,7 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 |DayTitleTemplate|<xref:System.Windows.DataTemplate>|The <xref:System.Windows.DataTemplate> that describes the visual structure.|  
   
 ## CalendarItem States  
+
  The following table lists the visual states for the <xref:System.Windows.Controls.Primitives.CalendarItem> control.  
   
 |VisualState Name|VisualStateGroup Name|Description|  
@@ -60,9 +65,11 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 |InvalidUnfocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` has the control does not have focus.|  
   
 ## CalendarDayButton Parts  
+
  The <xref:System.Windows.Controls.Primitives.CalendarDayButton> control does not have any named parts.  
   
 ## CalendarDayButton States  
+
  The following table lists the visual states for the <xref:System.Windows.Controls.Primitives.CalendarDayButton> control.  
   
 |VisualState Name|VisualStateGroup Name|Description|  
@@ -88,9 +95,11 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 |InvalidUnfocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` has the control does not have focus.|  
   
 ## CalendarButton Parts  
+
  The <xref:System.Windows.Controls.Primitives.CalendarButton> control does not have any named parts.  
   
 ## CalendarButton States  
+
  The following table lists the visual states for the <xref:System.Windows.Controls.Primitives.CalendarButton> control.  
   
 |VisualState Name|VisualStateGroup Name|Description|  
@@ -112,6 +121,7 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 |InvalidUnfocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` has the control does not have focus.|  
   
 ## Calendar ControlTemplate Example  
+
  The following example shows how to define a <xref:System.Windows.Controls.ControlTemplate> for the <xref:System.Windows.Controls.Calendar> control and associated types.  
   
  [!code-xaml[ControlTemplateExamples#Calendar](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/calendar.xaml#calendar)]  

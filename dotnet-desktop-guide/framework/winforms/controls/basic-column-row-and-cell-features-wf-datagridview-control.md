@@ -10,9 +10,11 @@ helpviewer_keywords:
 ms.assetid: 78085f26-d5d2-4b75-813e-e932b72fd06f
 ---
 # Basic Column, Row, and Cell Features in the Windows Forms DataGridView Control
+
 Many basic behaviors of `DataGridView` cells, rows, and columns can be modified by setting single properties. The topics in this section describe several of the most commonly used of these features.  
   
 ## In This Section  
+
  [How to: Hide Columns in the Windows Forms DataGridView Control](how-to-hide-columns-in-the-windows-forms-datagridview-control.md)  
  Describes how to prevent specific columns from appearing in the control.  
   
@@ -38,10 +40,12 @@ Many basic behaviors of `DataGridView` cells, rows, and columns can be modified 
  Describes how to create an image column that displays an icon in every cell.  
   
 ## Reference  
+
  <xref:System.Windows.Forms.DataGridView>  
  Provides reference documentation for the control.  
   
 ## Related Sections  
+
  [Basic Formatting and Styling in the Windows Forms DataGridView Control](basic-formatting-and-styling-in-the-windows-forms-datagridview-control.md)  
  Provides topics that describe how to modify the basic appearance of the control and the display formatting of cell data.  
   

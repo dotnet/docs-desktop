@@ -12,7 +12,9 @@ helpviewer_keywords:
 ms.assetid: e0df4f1e-8c07-4e86-89a3-e22acfffdc2a
 ---
 # How to: Create a Custom Panel Element
+
 ## Example  
+
  This example shows how to override the default layout behavior of the <xref:System.Windows.Controls.Panel> element and create custom layout elements that are derived from <xref:System.Windows.Controls.Panel>.  
   
  The example defines a simple custom <xref:System.Windows.Controls.Panel> element called `PlotPanel`, which positions child elements according to two hard-coded x- and y-coordinates. In this example, `x` and `y` are both set to `50`; therefore, all child elements are positioned at that location on the x and y axes.  

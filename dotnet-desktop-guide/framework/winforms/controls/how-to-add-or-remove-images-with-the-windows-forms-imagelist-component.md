@@ -16,6 +16,7 @@ helpviewer_keywords:
 ms.assetid: c5eacc56-f769-4e2e-bfb7-f756620913db
 ---
 # How to: Add or Remove Images with the Windows Forms ImageList Component
+
 The Windows Forms <xref:System.Windows.Forms.ImageList> component is typically populated with images before it is associated with a control. However, you can add and remove images after associating the image list with a control.  
   
 > [!NOTE]

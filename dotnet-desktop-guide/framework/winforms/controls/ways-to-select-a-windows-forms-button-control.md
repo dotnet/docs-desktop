@@ -7,6 +7,7 @@ helpviewer_keywords:
 ms.assetid: fe2fc058-5118-4f70-b264-6147d64a7a8d
 ---
 # Ways to Select a Windows Forms Button Control
+
 A Windows Forms button can be selected in the following ways:  
   
 - Use a mouse to click the button.  

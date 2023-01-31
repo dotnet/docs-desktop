@@ -7,9 +7,11 @@ helpviewer_keywords:
 ms.assetid: b9573e44-9dad-4d14-939c-7859ca372758
 ---
 # How to: Change the Horizontal Alignment of a Column in a ListView
+
 By default, the content of each column in a <xref:System.Windows.Controls.ListViewItem> is left-aligned. You can change the alignment of each column by providing a <xref:System.Windows.DataTemplate> and setting the <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A> property on the element within the <xref:System.Windows.DataTemplate>. This topic shows how a <xref:System.Windows.Controls.ListView> aligns its content by default and how to change the alignment of one column in a <xref:System.Windows.Controls.ListView>.  
   
 ## Example  
+
  In the following example, the data in the `Title` and `ISBN` columns is left-aligned.  
   
  [!code-xaml[ListViewHowTos#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewHowTos/CSharp/Window1.xaml#1)]  

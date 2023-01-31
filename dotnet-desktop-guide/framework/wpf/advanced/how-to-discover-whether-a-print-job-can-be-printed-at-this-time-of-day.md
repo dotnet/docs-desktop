@@ -13,6 +13,7 @@ ms.assetid: 7e9c8ec1-abf6-4b3d-b1c6-33b35d3c4063
 description: Learn how the PrintQueue and PrintSystemJobInfo classes provide a means for checking whether a given print job can print on a given queue at the current time.
 ---
 # How to: Discover Whether a Print Job Can Be Printed At This Time of Day
+
 Print queues are not always available for 24 hours a day. They have start and end time properties that can be set to make them unavailable at certain times of day. This feature can be used, for example, to reserve a printer for the exclusive use of a certain department after 5 P.M.. That department would have a different queue servicing the printer than other departments use. The queue for the other departments would be set to be unavailable after 5 P.M., while queue for the favored department could be set to be available at all times.  
   
  Moreover, print jobs themselves can be set to be printable only within a specified span of time.  
@@ -20,6 +21,7 @@ Print queues are not always available for 24 hours a day. They have start and en
  The <xref:System.Printing.PrintQueue> and <xref:System.Printing.PrintSystemJobInfo> classes exposed in the APIs of Microsoft .NET Framework provide a means for remotely checking whether a given print job can print on a given queue at the current time.  
   
 ## Example  
+
  The example below is a sample that can diagnose problems with a print job.  
   
  There are two major steps for this kind of function as follows.  

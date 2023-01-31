@@ -14,6 +14,7 @@ helpviewer_keywords:
 ms.assetid: c20e67a3-2d94-413d-9fcf-ecbd0fe251da
 ---
 # How to: Enable Tile View in a Windows Forms ListView Control
+
 With the tile view feature of the <xref:System.Windows.Forms.ListView> control, you can provide a visual balance between graphical and textual information. The textual information displayed for an item in tile view is the same as the column information defined for details view. Tile view works in combination with either the grouping or insertion mark features in the <xref:System.Windows.Forms.ListView> control.  
   
  The tile view uses a 32 x 32 pixel icon and several lines of text, as shown in the following images.  
@@ -35,6 +36,7 @@ With the tile view feature of the <xref:System.Windows.Forms.ListView> control, 
     ```  
   
 ## Example  
+
  The following complete code example demonstrates Tile view with tiles modified to show three lines of text. The tile size has been adjusted to prevent line-wrapping.  
   
  [!code-cpp[System.Windows.Forms.ListView.Tiling#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.ListView.Tiling/CPP/listviewtilingexample.cpp#1)]
@@ -42,6 +44,7 @@ With the tile view feature of the <xref:System.Windows.Forms.ListView> control, 
  [!code-vb[System.Windows.Forms.ListView.Tiling#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ListView.Tiling/VB/listviewtilingexample.vb#1)]  
   
 ## Compiling the Code  
+
  This example requires:  
   
 - References to the System and System.Windows.Forms assemblies.  

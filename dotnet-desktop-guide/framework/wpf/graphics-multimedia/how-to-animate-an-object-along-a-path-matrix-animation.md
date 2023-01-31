@@ -11,9 +11,11 @@ helpviewer_keywords:
 ms.assetid: 7000e697-1414-468c-b915-cf66062fc49e
 ---
 # How to: Animate an Object Along a Path (Matrix Animation)
+
 This example shows how to use the <xref:System.Windows.Media.Animation.MatrixAnimationUsingPath> class to animate an object along a path that is defined by a <xref:System.Windows.Media.PathGeometry>.  
   
 ## Example  
+
  The following example animates an object along a path by doing the following:  
   
 - Applies a <xref:System.Windows.Media.MatrixTransform> to the object in order to move it.  

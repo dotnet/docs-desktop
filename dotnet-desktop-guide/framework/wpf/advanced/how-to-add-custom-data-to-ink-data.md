@@ -8,6 +8,7 @@ ms.assetid: f02aac6f-3436-4f7c-b6ea-0452cba5332c
 description: Learn how to add custom data to ink that will be saved when the ink is saved as ink serialized format.
 ---
 # How to: Add Custom Data to Ink Data
+
 You can add custom data to ink that will be saved when the ink is saved as ink serialized format (ISF).  You can save the custom data to the <xref:System.Windows.Ink.DrawingAttributes>, the <xref:System.Windows.Ink.StrokeCollection>, or the <xref:System.Windows.Ink.Stroke>.  Being able to save custom data on three objects gives you the ability to decide the best place to save the data.  All three classes use similar methods to store and access custom data.  
   
  Only the following types can be saved as custom data:  
@@ -67,6 +68,7 @@ You can add custom data to ink that will be saved when the ink is saved as ink s
 - <xref:System.UInt64>[]  
   
 ## Example  
+
  The following example demonstrates how to add and retrieve custom data from a <xref:System.Windows.Ink.StrokeCollection>.  
   
  [!code-csharp[HowToAddCustomDataToInk#1](~/samples/snippets/csharp/VS_Snippets_Wpf/HowToAddCustomDataToInk/CSharp/Window1.xaml.cs#1)]  

@@ -13,9 +13,11 @@ helpviewer_keywords:
 ms.assetid: 8b595429-ba9f-46af-9c55-3d5cc53f7fff
 ---
 # How to: Define Z-Ordering of Docked ToolStrip Controls
+
 To position a <xref:System.Windows.Forms.ToolStrip> control correctly with docking, you must position the control correctly in the form's z-order.  
   
 ## Example  
+
  The following code example demonstrates how to arrange a <xref:System.Windows.Forms.ToolStrip> control and a docked <xref:System.Windows.Forms.MenuStrip> control by specifying the z-order.  
   
  [!code-csharp[System.Windows.Forms.ToolStrip.Misc#21](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.Misc/CS/Program.cs#21)]
@@ -31,6 +33,7 @@ To position a <xref:System.Windows.Forms.ToolStrip> control correctly with docki
  Reverse the order of these calls to the <xref:System.Windows.Forms.Control.ControlCollection.Add%2A> method and view the effect on the layout.  
   
 ## Compiling the Code  
+
  This example requires:  
   
 - References to the System.Design, System.Drawing, and System.Windows.Forms assemblies.  

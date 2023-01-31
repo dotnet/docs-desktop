@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: 4545b358-b93c-47df-88e4-9946d7db9e3f
 ---
 # ProgressBar
+
 A <xref:System.Windows.Controls.ProgressBar> indicates the progress of an operation. The <xref:System.Windows.Controls.ProgressBar> control consists of a window that is filled with the system highlight color as an operation progresses.  
   
  The following illustration shows a typical <xref:System.Windows.Controls.ProgressBar>.  
@@ -19,6 +20,7 @@ A <xref:System.Windows.Controls.ProgressBar> indicates the progress of an operat
 ## In This Section  
   
 ## Reference  
+
  <xref:System.Windows.Controls.ProgressBar>  
   <xref:System.Windows.Controls.Primitives.StatusBar>  
   

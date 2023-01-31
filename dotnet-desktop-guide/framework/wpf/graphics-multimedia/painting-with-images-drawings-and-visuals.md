@@ -15,14 +15,19 @@ helpviewer_keywords:
 ms.assetid: 779aac3f-8d41-49d8-8130-768244aa2240
 ---
 # Painting with Images, Drawings, and Visuals
+
 This topic describes how to use <xref:System.Windows.Media.ImageBrush>, <xref:System.Windows.Media.DrawingBrush>, and <xref:System.Windows.Media.VisualBrush> objects to paint an area with an image, a <xref:System.Windows.Media.Drawing>, or a <xref:System.Windows.Media.Visual>.  
 
 <a name="prereqs"></a>
+
 ## Prerequisites  
+
  To understand this topic, you should be familiar with the different types of brushes Windows Presentation Foundation (WPF) provides and their basic features. For an introduction, see the [WPF Brushes Overview](wpf-brushes-overview.md).  
   
 <a name="image"></a>
+
 ## Paint an Area with an Image  
+
  An <xref:System.Windows.Media.ImageBrush> paints an area with an <xref:System.Windows.Media.ImageSource>. The most common type of <xref:System.Windows.Media.ImageSource> to use with an <xref:System.Windows.Media.ImageBrush> is a <xref:System.Windows.Media.Imaging.BitmapImage>, which describes a bitmap graphic. You can use a <xref:System.Windows.Media.DrawingImage> to paint using a <xref:System.Windows.Media.Drawing> object, but it is simpler to use a <xref:System.Windows.Media.DrawingBrush> instead. For more information about <xref:System.Windows.Media.ImageSource> objects, see the [Imaging Overview](imaging-overview.md).  
   
  To paint with an <xref:System.Windows.Media.ImageBrush>, create a <xref:System.Windows.Media.Imaging.BitmapImage> and use it to load the bitmap content. Then, use the <xref:System.Windows.Media.Imaging.BitmapImage> to set the <xref:System.Windows.Media.ImageBrush.ImageSource%2A> property of the <xref:System.Windows.Media.ImageBrush>. Finally, apply the <xref:System.Windows.Media.ImageBrush> to the object you want to paint.  In Extensible Application Markup Language (XAML), you can also just set the <xref:System.Windows.Media.ImageBrush.ImageSource%2A> property of the <xref:System.Windows.Media.ImageBrush> with the path of the image to load.  
@@ -35,7 +40,9 @@ Objects painted by an ImageBrush
  By default, an <xref:System.Windows.Media.ImageBrush> stretches its image to completely fill the area being painted, possibly distorting the image if the painted area has a different aspect ratio than the image. You can change this behavior by changing the <xref:System.Windows.Media.TileBrush.Stretch%2A> property from its default value of <xref:System.Windows.Media.Stretch.Fill> to <xref:System.Windows.Media.Stretch.None>, <xref:System.Windows.Media.Stretch.Uniform>, or <xref:System.Windows.Media.Stretch.UniformToFill>. Because <xref:System.Windows.Media.ImageBrush> is a type of <xref:System.Windows.Media.TileBrush>, you can specify exactly how an image brush fills the output area and even create patterns. For more information about advanced <xref:System.Windows.Media.TileBrush> features, see the [TileBrush Overview](tilebrush-overview.md).  
   
 <a name="fillingpanelwithimage"></a>
+
 ## Example: Paint an Object with a Bitmap Image  
+
  The following example uses an <xref:System.Windows.Media.ImageBrush> to paint the <xref:System.Windows.Controls.Panel.Background%2A> of a <xref:System.Windows.Controls.Canvas>.  
   
  [!code-xaml[BrushOverviewExamples_snip#GraphicsMMImageBrushAsCanvasBackgroundExampleWholePage](~/samples/snippets/xaml/VS_Snippets_Wpf/BrushOverviewExamples_snip/XAML/ImageBrushExample.xaml#graphicsmmimagebrushascanvasbackgroundexamplewholepage)]  
@@ -44,7 +51,9 @@ Objects painted by an ImageBrush
  [!code-vb[BrushOverviewExamples_procedural_snip#GraphicsMMImageBrushAsCanvasBackgroundExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BrushOverviewExamples_procedural_snip/visualbasic/imagebrushexample.vb#graphicsmmimagebrushascanvasbackgroundexamplewholepage)]  
   
 <a name="drawingbrushintro"></a>
+
 ## Paint an Area with a Drawing  
+
  A <xref:System.Windows.Media.DrawingBrush> enables you to paint an area with shapes, text, images, and video. Shapes inside a drawing brush may themselves be painted with a solid color, gradient, image, or even another <xref:System.Windows.Media.DrawingBrush>. The following illustration demonstrates some uses of a <xref:System.Windows.Media.DrawingBrush>.  
   
  ![DrawingBrush output examples](./media/wcpsdk-mmgraphics-drawingbrushexamples.png "wcpsdk_mmgraphics_drawingbrushexamples")  
@@ -67,7 +76,9 @@ Objects painted by a DrawingBrush
  Like an <xref:System.Windows.Media.ImageBrush>, a <xref:System.Windows.Media.DrawingBrush> stretches its <xref:System.Windows.Media.DrawingBrush.Drawing%2A> to fill its output area. You can override this behavior by changing the <xref:System.Windows.Media.TileBrush.Stretch%2A> property from its default setting of <xref:System.Windows.Media.Stretch.Fill>. For more information, see the <xref:System.Windows.Media.TileBrush.Stretch%2A> property.  
   
 <a name="fillingareawithdrawingbrushexample"></a>
+
 ## Example: Paint an Object with a Drawing  
+
  The following example shows how to paint an object with a drawing of three ellipses. A <xref:System.Windows.Media.GeometryDrawing> is used to describe the ellipses.  
   
  [!code-xaml[BrushOverviewExamples_snip#GraphicsMMDrawingBrushAsButtonBackgroundExample](~/samples/snippets/xaml/VS_Snippets_Wpf/BrushOverviewExamples_snip/XAML/DrawingBrushExample.xaml#graphicsmmdrawingbrushasbuttonbackgroundexample)]  
@@ -76,7 +87,9 @@ Objects painted by a DrawingBrush
  [!code-vb[BrushOverviewExamples_procedural_snip#GraphicsMMDrawingBrushAsButtonBackgroundExample1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BrushOverviewExamples_procedural_snip/visualbasic/drawingbrushexample.vb#graphicsmmdrawingbrushasbuttonbackgroundexample1)]  
   
 <a name="visualbrushsection"></a>
+
 ## Paint an Area with a Visual  
+
  The most versatile and powerful of all the  brushes, the <xref:System.Windows.Media.VisualBrush> paints an area with a <xref:System.Windows.Media.Visual>. A <xref:System.Windows.Media.Visual> is a low-level graphical type that serves as the ancestor of many useful graphical components. For example, the <xref:System.Windows.Window>, <xref:System.Windows.FrameworkElement>, and <xref:System.Windows.Controls.Control> classes are all types of <xref:System.Windows.Media.Visual> objects. Using a <xref:System.Windows.Media.VisualBrush>, you can paint areas with almost any Windows Presentation Foundation (WPF) graphical object.  
   
 > [!NOTE]
@@ -93,7 +106,9 @@ Objects painted by a DrawingBrush
  Like <xref:System.Windows.Media.ImageBrush> and  <xref:System.Windows.Media.DrawingBrush>, a <xref:System.Windows.Media.VisualBrush> stretches its content to fill its output area. You can override this behavior by changing the <xref:System.Windows.Media.TileBrush.Stretch%2A> property from its default setting of <xref:System.Windows.Media.Stretch.Fill>. For more information, see the <xref:System.Windows.Media.TileBrush.Stretch%2A> property.  
   
 <a name="examplevisualbrush1"></a>
+
 ## Example: Paint an Object with a Visual  
+
  In the following example, several controls and a panel are used to paint a rectangle.  
   
  [!code-xaml[BrushOverviewExamples_snip#GraphicsMMVisualBrushAsRectangleBackgroundExample](~/samples/snippets/xaml/VS_Snippets_Wpf/BrushOverviewExamples_snip/XAML/VisualBrushExample.xaml#graphicsmmvisualbrushasrectanglebackgroundexample)]  
@@ -102,7 +117,9 @@ Objects painted by a DrawingBrush
  [!code-vb[BrushOverviewExamples_procedural_snip#GraphicsMMVisualBrushAsRectangleBackgroundExample1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BrushOverviewExamples_procedural_snip/visualbasic/visualbrushexample.vb#graphicsmmvisualbrushasrectanglebackgroundexample1)]  
   
 <a name="examplevisualbrush2"></a>
+
 ## Example: Create a Reflection  
+
  The preceding example showed how to create a new <xref:System.Windows.Media.Visual> for use as a background. You can also use a <xref:System.Windows.Media.VisualBrush> to display an existing visual; this capability enables you to produce interesting visual effects, such as reflections and magnification. The following example uses a <xref:System.Windows.Media.VisualBrush> to create a reflection of a <xref:System.Windows.Controls.Border> that contains several elements. The following illustration shows the output that this example produces.  
   
  ![A reflected Visual object](./media/graphicsmm-visualbrush-reflection-small.jpg "graphicsmm_visualbrush_reflection_small")  
@@ -115,7 +132,9 @@ A reflected Visual object
  For additional examples that show how to magnify portions of the screen and how to create reflections, see the [VisualBrush Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Graphics/VisualBrush).  
   
 <a name="tilebrush"></a>
+
 ## TileBrush Features  
+
  <xref:System.Windows.Media.ImageBrush>, <xref:System.Windows.Media.DrawingBrush>, and <xref:System.Windows.Media.VisualBrush> are types of <xref:System.Windows.Media.TileBrush> objects. <xref:System.Windows.Media.TileBrush> objects provide you with a great deal of control over how an area is painted with an image, drawing, or visual. For example, instead of just painting an area with a single stretched image, you can paint an area with a series of image tiles that create a pattern.  
   
  A <xref:System.Windows.Media.TileBrush> has three primary components: content, tiles, and the output area.  

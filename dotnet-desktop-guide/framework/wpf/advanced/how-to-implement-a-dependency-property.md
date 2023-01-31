@@ -11,9 +11,11 @@ helpviewer_keywords:
 ms.assetid: 855fd6d7-19ac-493c-bf5e-2f40b57cdc92
 ---
 # How to: Implement a Dependency Property
+
 This example shows how to back a common language runtime (CLR) property with a <xref:System.Windows.DependencyProperty> field, thus defining a dependency property. When you define your own properties and want them to support many aspects of Windows Presentation Foundation (WPF) functionality, including styles, data binding, inheritance, animation, and default values, you should implement them as a dependency property.  
   
 ## Example  
+
  The following example first registers a dependency property by calling the <xref:System.Windows.DependencyProperty.Register%2A> method. The name of the identifier field that you use to store the name and characteristics of the dependency property must be the <xref:System.Windows.DependencyProperty.Name%2A> you chose for the dependency property as part of the <xref:System.Windows.DependencyProperty.Register%2A> call, appended by the literal string `Property`. For instance, if you register a dependency property with a <xref:System.Windows.DependencyProperty.Name%2A> of `Location`, then the identifier field that you define for the dependency property must be named `LocationProperty`.  
   
  In this example, the name of the dependency property and its CLR accessor is `State`; the identifier field is `StateProperty`; the type of the property is <xref:System.Boolean>; and the type that registers the dependency property is `MyStateControl`.  

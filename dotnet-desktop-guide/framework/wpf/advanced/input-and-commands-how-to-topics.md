@@ -10,9 +10,11 @@ helpviewer_keywords:
 ms.assetid: a5c266b6-969c-4049-a471-ddca7b10fb89
 ---
 # Input and Commands How-to Topics
+
 The topics in this section describe how to use the input and commanding infrastructure in Windows Presentation Foundation (WPF).  
   
 ## In This Section  
+
  [Enable a Command](how-to-enable-a-command.md)  
  [Change the Cursor Type](how-to-change-the-cursor-type.md)  
  [Change the Color of an Element Using Focus Events](how-to-change-the-color-of-an-element-using-focus-events.md)  
@@ -26,6 +28,7 @@ The topics in this section describe how to use the input and commanding infrastr
  [Hook Up a Command to a Control with Command Support](how-to-hook-up-a-command-to-a-control-with-command-support.md)  
   
 ## Reference  
+
  <xref:System.Windows.UIElement>  
   
  <xref:System.Windows.FrameworkElement>  

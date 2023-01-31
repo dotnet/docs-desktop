@@ -18,9 +18,11 @@ helpviewer_keywords:
 ms.assetid: ad5daf26-005f-45bc-a2af-e0e97777a21a
 ---
 # Cropping and Scaling Images in GDI+
+
 You can use the <xref:System.Drawing.Graphics.DrawImage%2A> method of the <xref:System.Drawing.Graphics> class to draw and position vector images and raster images. <xref:System.Drawing.Graphics.DrawImage%2A> is an overloaded method, so there are several ways you can supply it with arguments.  
   
 ## DrawImage Variations  
+
  One variation of the <xref:System.Drawing.Graphics.DrawImage%2A> method receives a <xref:System.Drawing.Bitmap> and a <xref:System.Drawing.Rectangle>. The rectangle specifies the destination for the drawing operation; that is, it specifies the rectangle in which to draw the image. If the size of the destination rectangle is different from the size of the original image, the image is scaled to fit the destination rectangle. The following code example shows how to draw the same image three times: once with no scaling, once with an expansion, and once with a compression:  
   
  [!code-csharp[System.Drawing.ImagesBitmapsMetafiles#31](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ImagesBitmapsMetafiles/CS/Class1.cs#31)]

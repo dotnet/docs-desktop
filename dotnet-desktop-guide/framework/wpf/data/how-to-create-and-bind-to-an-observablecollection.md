@@ -11,9 +11,11 @@ helpviewer_keywords:
 ms.assetid: 6cf7e275-df76-41c6-a611-53b889b8fd5a
 ---
 # How to: Create and Bind to an ObservableCollection
+
 This example shows how to create and bind to a collection that derives from the <xref:System.Collections.ObjectModel.ObservableCollection%601> class, which is a collection class that provides notifications when items get added or removed.  
   
 ## Example  
+
  The following example shows the implementation of a `NameList` collection:  
   
 ```csharp  

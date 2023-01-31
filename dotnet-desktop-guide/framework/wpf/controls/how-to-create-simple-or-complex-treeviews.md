@@ -8,11 +8,13 @@ helpviewer_keywords:
 ms.assetid: 1defbb78-b8e7-4c0e-b650-576453ac828d
 ---
 # How to: Create Simple or Complex TreeViews
+
 This example shows how to create simple or complex <xref:System.Windows.Controls.TreeView> controls.  
   
  A <xref:System.Windows.Controls.TreeView> consists of a hierarchy of <xref:System.Windows.Controls.TreeViewItem> controls, which can contain simple text strings and also more complex content, such as <xref:System.Windows.Controls.Button> controls or a <xref:System.Windows.Controls.StackPanel> with embedded content. You can explicitly define the <xref:System.Windows.Controls.TreeView> content or a data source can provide the content. This topic provides examples of these concepts.  
   
 ## Example  
+
  The <xref:System.Windows.Controls.HeaderedItemsControl.Header%2A> property of the <xref:System.Windows.Controls.TreeViewItem> contains the content that the <xref:System.Windows.Controls.TreeView> displays for that item. A <xref:System.Windows.Controls.TreeViewItem> can also have <xref:System.Windows.Controls.TreeViewItem> controls as its child elements and you can define these child elements by using the <xref:System.Windows.Controls.ItemsControl.Items%2A> property.  
   
  The following example shows how to explicitly define <xref:System.Windows.Controls.TreeViewItem> content by setting the <xref:System.Windows.Controls.HeaderedItemsControl.Header%2A> property to a text string.  

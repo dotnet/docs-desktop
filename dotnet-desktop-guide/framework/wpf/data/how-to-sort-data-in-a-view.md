@@ -15,9 +15,11 @@ helpviewer_keywords:
 ms.assetid: f4c43578-01b7-4774-a953-acb95a13b94a
 ---
 # How to: Sort Data in a View
+
 This example describes how to sort data in a view.  
   
 ## Example  
+
  The following example creates a simple <xref:System.Windows.Controls.ListBox> and a <xref:System.Windows.Controls.Button>:  
   
  [!code-xaml[ListBoxSort_snip#HowTo](~/samples/snippets/csharp/VS_Snippets_Wpf/ListBoxSort_snip/CSharp/Window1.xaml#howto)]  

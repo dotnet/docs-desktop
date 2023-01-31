@@ -12,9 +12,11 @@ helpviewer_keywords:
 ms.assetid: 3432c533-1fc7-492d-94ee-0b13d60125ae
 ---
 # How to: Paint an Area with an Image
+
 This example shows how to use the <xref:System.Windows.Media.ImageBrush> class to paint an area with an image. An <xref:System.Windows.Media.ImageBrush> displays a single image, which is specified by its <xref:System.Windows.Media.ImageBrush.ImageSource%2A> property.  
   
 ## Example  
+
  The following example paints the <xref:System.Windows.Controls.Control.Background%2A> of a button by using an <xref:System.Windows.Media.ImageBrush>.  
   
  [!code-csharp[UsingImageBrush_snip#ImageBrushExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/UsingImageBrush_snip/CSharp/PaintingWithImagesExample.cs#imagebrushexamplewholepage)]  

@@ -9,11 +9,13 @@ helpviewer_keywords:
 ms.assetid: f4dbc29d-93c7-41cd-96d8-5cfd8624b470
 ---
 # How to: Specify the Origin of a Transform by Using Relative Values
+
 This example shows how to use relative values to specify the origin of a <xref:System.Windows.UIElement.RenderTransform%2A> that is applied to a <xref:System.Windows.FrameworkElement>.  
   
  When you rotate, scale, or skew a <xref:System.Windows.FrameworkElement> by using the <xref:System.Windows.UIElement.RenderTransform%2A> property, the default setting applies the transform to the upper-left corner of the element. If you want to rotate, scale, or skew from the center of the element, you can compensate by setting the center of the transform to the center of the element. However, that solution requires that you know the size of the element. An easier way of applying a transform to the center of an element is to set its <xref:System.Windows.UIElement.RenderTransformOrigin%2A> property to (0.5, 0.5), instead of setting a center value on the transform itself.  
   
 ## Example  
+
  The following example uses a <xref:System.Windows.Media.RotateTransform> to rotate a <xref:System.Windows.Controls.Button> 45 degrees clockwise. Because the example does not specify a center, the button rotates about the point (0, 0), which is its upper-left corner. The <xref:System.Windows.Media.RotateTransform> is applied to the <xref:System.Windows.UIElement.RenderTransform%2A> property.  
   
  The following illustration shows the transformation result for the example that follows.  

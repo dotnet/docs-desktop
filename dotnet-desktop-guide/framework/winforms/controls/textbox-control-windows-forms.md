@@ -8,9 +8,11 @@ helpviewer_keywords:
 ms.assetid: e5a06987-8aec-4271-b196-2245ba992d62
 ---
 # TextBox Control (Windows Forms)
+
 Windows Forms text boxes are used to get input from the user or to display text. The `TextBox` control is generally used for editable text, although it can also be made read-only. Text boxes can display multiple lines, wrap text to the size of the control, and add basic formatting. The `TextBox` control allows a single format for text displayed or entered in the control.  
   
 ## In This Section  
+
  [TextBox Control Overview](textbox-control-overview-windows-forms.md)  
  Explains what this control is and its key features and properties.  
   
@@ -33,9 +35,11 @@ Windows Forms text boxes are used to get input from the user or to display text.
  Describes how to make a text box scrollable.  
   
 ## Reference  
+
  <xref:System.Windows.Forms.TextBox> class  
  Describes this class and has links to all its members.  
   
 ## Related Sections  
+
  [Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)  
  Provides a complete list of Windows Forms controls, with links to information on their use.

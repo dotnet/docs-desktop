@@ -9,10 +9,13 @@ helpviewer_keywords:
 ms.assetid: 2df2cd11-6aac-4bdf-ab7b-ea5f464cd5ca
 ---
 # Binding Sources Overview
+
 In data binding, the binding source object refers to the object you obtain data from. This topic discusses the types of objects you can use as the binding source.
 
 <a name="binding_sources"></a>
+
 ## Binding Source Types
+
  Windows Presentation Foundation (WPF) data binding supports the following binding source types:
 
 |Binding Source|Description|
@@ -24,10 +27,13 @@ In data binding, the binding source object refers to the object you obtain data 
 |<xref:System.Windows.DependencyObject> objects|You can bind to dependency properties of any <xref:System.Windows.DependencyObject>. For an example, see [Bind the Properties of Two Controls](how-to-bind-the-properties-of-two-controls.md).|
 
 <a name="classes"></a>
+
 ## Implementing a Class for the Binding Source
+
  You can create your own binding sources. This section discusses the things you need to know if you are implementing a class to serve as a binding source.
 
 ### Providing Change Notifications
+
  If you are using either <xref:System.Windows.Data.BindingMode.OneWay> or <xref:System.Windows.Data.BindingMode.TwoWay> binding (because you want your UI to update when the binding source properties change dynamically), you must implement a suitable property changed notification mechanism. The recommended mechanism is for the CLR or dynamic class to implement the <xref:System.ComponentModel.INotifyPropertyChanged> interface. For more information, see [Implement Property Change Notification](how-to-implement-property-change-notification.md).
 
  If you create a CLR object that does not implement <xref:System.ComponentModel.INotifyPropertyChanged>, then you must arrange for your own notification system to make sure that the data used in a binding stays current. You can provide change notifications by supporting the `PropertyChanged` pattern for each property that you want change notifications for. To support this pattern, you define a *PropertyName*Changed event for each property, where *PropertyName* is the name of the property. You raise the event every time the property changes.
@@ -35,6 +41,7 @@ In data binding, the binding source object refers to the object you obtain data 
  If your binding source implements one of these notification mechanisms, target updates happen automatically. If for any reason your binding source does not provide the proper property changed notifications, you have the option to use the <xref:System.Windows.Data.BindingExpression.UpdateTarget%2A> method to update the target property explicitly.
 
 ### Other Characteristics
+
  The following list provides other important points to note:
 
 - If you want to create the object in XAML, the class must have a parameterless constructor. In some .NET languages, such as C#, the parameterless constructor might be created for you.
@@ -46,13 +53,17 @@ In data binding, the binding source object refers to the object you obtain data 
 - The type of the property declared in your class is the type that is passed to the binding. However, the type ultimately used by the binding depends on the type of the binding target property, not of the binding source property. If there is a difference in type, you might want to write a converter to handle how your custom property is initially passed to the binding. For more information, see <xref:System.Windows.Data.IValueConverter>.
 
 <a name="objects"></a>
+
 ## Using Entire Objects as a Binding Source
+
  You can use an entire object as a binding source. You can specify a binding source by using the <xref:System.Windows.Data.Binding.Source%2A> or the <xref:System.Windows.FrameworkElement.DataContext%2A> property, and then provide a blank binding declaration: `{Binding}`. Scenarios in which this is useful include binding to objects that are of type string, binding to objects with multiple properties you are interested in, or binding to collection objects. For an example of binding to an entire collection object, see [Use the Master-Detail Pattern with Hierarchical Data](how-to-use-the-master-detail-pattern-with-hierarchical-data.md).
 
  Note that you may need to apply custom logic so that the data is meaningful to your bound target property. The custom logic may be in the form of a custom converter (if default type conversion does not exist) or a <xref:System.Windows.DataTemplate>. For more information about converters, see the Data Conversion section of [Data Binding Overview](data-binding-overview.md). For more information about data templates, see [Data Templating Overview](data-templating-overview.md).
 
 <a name="collections"></a>
+
 ## Using Collection Objects as a Binding Source
+
  Often, the object you want to use as the binding source is a collection of custom objects. Each object serves as the source for one instance of a repeated binding. For example, you might have a `CustomerOrders` collection that consists of `CustomerOrder` objects, where your application iterates over the collection to determine how many orders exist and the data contained in each.
 
  You can enumerate over any collection that implements the <xref:System.Collections.IEnumerable> interface. However, to set up dynamic bindings so that insertions or deletions in the collection update the UI automatically, the collection must implement the <xref:System.Collections.Specialized.INotifyCollectionChanged> interface. This interface exposes an event that must be raised whenever the underlying collection changes.
@@ -64,7 +75,9 @@ In data binding, the binding source object refers to the object you obtain data 
  If you have an advanced scenario and you want to implement your own collection, consider using the <xref:System.Collections.IList> interface. <xref:System.Collections.IList> provides a non-generic collection of objects that can be individually accessed by index, which can improve performance.
 
 <a name="permissions"></a>
+
 ## Permission Requirements in Data Binding
+
  When data binding, you must consider the trust level of the application. The following table summarizes what property types can be bound to in an application that is executing in either full trust or partial trust:
 
 |Property type<br /><br /> (all access modifiers)|Dynamic object property|Dynamic object property|CLR property|CLR property|Dependency property|Dependency property|

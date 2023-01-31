@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: ee701cc2-968b-4683-8f81-3fafd8542700
 ---
 # CheckBox
+
 You can use a <xref:System.Windows.Controls.CheckBox> in the user interface (UI) of your application to represent options that a user can select or clear. You can use a single check box or you can group two or more check boxes.  
   
  The following graphic shows the different states of a <xref:System.Windows.Controls.CheckBox>.  
@@ -18,6 +19,7 @@ You can use a <xref:System.Windows.Controls.CheckBox> in the user interface (UI)
 CheckBox controls in different states  
   
 ## Reference  
+
  <xref:System.Windows.Controls.CheckBox>  
   <xref:System.Windows.Controls.RadioButton>  
   <xref:System.Windows.Controls.Primitives.ButtonBase>  

@@ -14,6 +14,7 @@ helpviewer_keywords:
 ms.assetid: 557782d9-b705-4bab-b496-9938afddac82
 ---
 # How to: Add Search Capabilities to a ListView Control
+
 Oftentimes when working with a large list of items in a <xref:System.Windows.Forms.ListView> control, you want to offer search capabilities to the user. The <xref:System.Windows.Forms.ListView> control offers this capability in two different ways: text matching and location searching.  
   
  The <xref:System.Windows.Forms.ListView.FindItemWithText%2A> method allows you to perform a text search on a <xref:System.Windows.Forms.ListView> in list or details view, given a search string and an optional starting and ending index. In contrast, the <xref:System.Windows.Forms.ListView.FindNearestItem%2A> method allows you to find an item in a <xref:System.Windows.Forms.ListView> in icon or tile view, given a set of x- and y-coordinates and a direction to search.  

@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 6f671b95-7f30-4836-9a4f-aeb7dc30121f
 ---
 # How to: Animate a 3D Rotation Using Key Frames
+
 In the following example, <xref:System.Windows.Media.Animation.Rotation3DAnimationUsingKeyFrames> is used to make a 3D object rotate while its axis of rotation animates resulting in a "wobble". This animation uses the following key frames:  
   
 1. <xref:System.Windows.Media.Animation.LinearRotation3DKeyFrame> is used to create a smooth, linear interpolation between values.  
@@ -18,6 +19,7 @@ In the following example, <xref:System.Windows.Media.Animation.Rotation3DAnimati
 3. <xref:System.Windows.Media.Animation.SplineRotation3DKeyFrame> is used to create a variable transition between values depending on the <xref:System.Windows.Media.Animation.SplineRotation3DKeyFrame.KeySpline%2A> property. In the example below, this part of the animation starts off slow but toward the end of the time segment, speeds up exponentially.  
   
 ## Example  
+
  [!code-xaml[Animation3DGallery_snip#Rotation3DAnimationUsingKeyFramesExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/Animation3DGallery_snip/CS/Rotation3DAnimationUsingKeyFramesExample.xaml#rotation3danimationusingkeyframesexamplewholepage)]  
   
 ## See also

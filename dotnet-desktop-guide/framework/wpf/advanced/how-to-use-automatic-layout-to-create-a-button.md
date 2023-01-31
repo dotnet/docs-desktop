@@ -8,6 +8,7 @@ helpviewer_keywords:
 ms.assetid: 96c206d0-9e77-4784-9d2d-5045aed2021c
 ---
 # How to: Use Automatic Layout to Create a Button
+
 This example describes how to use the automatic layout approach to create a button in a localizable application.  
   
  Localization of a UI was adapted for required adjustment. Now with the capabilities of Windows Presentation Foundation (WPF) you can design elements that reduce the need for adjustment. The approach to writing applications that can be more easily resized and repositioned is called `automatic layout`.  

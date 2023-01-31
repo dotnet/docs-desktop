@@ -12,6 +12,7 @@ helpviewer_keywords:
 ms.assetid: bcbe794a-d1fa-47f8-b5a3-5f085b32097d
 ---
 # How to: Access Objects in a Windows Forms DataGridViewComboBoxCell Drop-Down List
+
 Like the <xref:System.Windows.Forms.ComboBox> control, the <xref:System.Windows.Forms.DataGridViewComboBoxColumn> and <xref:System.Windows.Forms.DataGridViewComboBoxCell> types enable you to add arbitrary objects to their drop-down lists. With this feature, you can represent complex states in a drop-down list without having to store corresponding objects in a separate collection.  
   
  Unlike the <xref:System.Windows.Forms.ComboBox> control, the <xref:System.Windows.Forms.DataGridView> types do not have a <xref:System.Windows.Forms.ComboBox.SelectedItem%2A> property for retrieving the currently selected object. Instead, you must set the <xref:System.Windows.Forms.DataGridViewComboBoxColumn.ValueMember%2A?displayProperty=nameWithType> or <xref:System.Windows.Forms.DataGridViewComboBoxCell.ValueMember%2A?displayProperty=nameWithType> property to the name of a property on your business object. When the user makes a selection, the indicated property of the business object sets the cell <xref:System.Windows.Forms.DataGridViewCell.Value%2A> property.  
@@ -45,6 +46,7 @@ Like the <xref:System.Windows.Forms.ComboBox> control, the <xref:System.Windows.
      [!code-vb[System.Windows.Forms.DataGridViewComboBoxObjectBinding#120](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewComboBoxObjectBinding/vb/form1.vb#120)]  
   
 ## Example  
+
  The complete example demonstrates the use of business objects in a drop-down list. In the example, a <xref:System.Windows.Forms.DataGridView> control is bound to a collection of `Task` objects. Each `Task` object has an `AssignedTo` property that indicates the `Employee` object currently assigned to that task. The `Assigned To` column displays the `Name` property value for each assigned employee, or "unassigned" if the `Task.AssignedTo` property value is `null`.  
   
  To view the behavior of this example, perform the following steps:  
@@ -59,6 +61,7 @@ Like the <xref:System.Windows.Forms.ComboBox> control, the <xref:System.Windows.
  [!code-vb[System.Windows.Forms.DataGridViewComboBoxObjectBinding#000](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewComboBoxObjectBinding/vb/form1.vb#000)]  
   
 ## Compiling the Code  
+
  This example requires:  
   
 - References to the System and System.Windows.Forms assemblies.  

@@ -11,9 +11,11 @@ ms.assetid: 0d76f7e4-4149-42c6-9118-bb37d6669dc5
 description: Learn how to program various tasks with cells, rows, and columns in the Windows Forms DataGridView control.
 ---
 # Programming with Cells, Rows, and Columns in the Windows Forms DataGridView Control
+
 This section provides topics that demonstrate various programming tasks involving cell, row, and column objects.  
   
 ## In This Section  
+
  [How to: Add ToolTips to Individual Cells in a Windows Forms DataGridView Control](add-tooltips-to-individual-cells-in-a-wf-datagridview-control.md)  
  Describes how to handle the <xref:System.Windows.Forms.DataGridView.CellFormatting> event to provide different ToolTips for individual cells.  
   
@@ -33,6 +35,7 @@ This section provides topics that demonstrate various programming tasks involvin
  Describes how to program with the `DataGridViewImageColumn` class.  
   
 ## Reference  
+
  <xref:System.Windows.Forms.DataGridView>  
  Provides reference documentation for the <xref:System.Windows.Forms.DataGridView> control.  
   
@@ -46,6 +49,7 @@ This section provides topics that demonstrate various programming tasks involvin
  Provides reference documentation for the <xref:System.Windows.Forms.DataGridViewColumn> class.  
   
 ## Related Sections  
+
  [Basic Column, Row, and Cell Features in the Windows Forms DataGridView Control](basic-column-row-and-cell-features-wf-datagridview-control.md)  
  Provides topics that describe commonly used cell, row, and column properties.  
   

@@ -12,11 +12,13 @@ helpviewer_keywords:
 ms.assetid: 3c574597-bbde-440f-95cc-01371f1a5d9d
 ---
 # Layout Considerations for the WindowsFormsHost Element
+
 This topic describes how the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element interacts with the WPF layout system.  
   
  WPF and Windows Forms support different, but similar, logic for sizing and positioning elements on a form or page. When you create a hybrid user interface (UI) that hosts Windows Forms controls in WPF, the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element integrates the two layout schemes.  
   
 ## Differences in Layout Between WPF and Windows Forms  
+
  WPF uses resolution-independent layout. All WPF layout dimensions are specified using *device-independent pixels*. A device-independent pixel is one ninety-sixth of an inch in size and resolution-independent, so you get similar results regardless of whether you are rendering to a 72-dpi monitor or a 19,200-dpi printer.  
   
  WPF is also based on *dynamic layout*. This means that a UI element arranges itself on a form or page according to its content, its parent layout container, and the available screen size. Dynamic layout facilitates localization by automatically adjusting the size and position of UI elements when the strings they contain change length.  
@@ -31,6 +33,7 @@ This topic describes how the <xref:System.Windows.Forms.Integration.WindowsForms
 |Layout containers|The <xref:System.Windows.Forms.FlowLayoutPanel> and <xref:System.Windows.Forms.TableLayoutPanel> controls arrange their child controls and size themselves according to their contents.|  
   
 ## Layout Limitations  
+
  In general, Windows Forms controls cannot be scaled and transformed to the extent possible in WPF. The following list describes the known limitations when the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element attempts to integrate its hosted Windows Forms control into the WPF layout system.  
   
 - In some cases, Windows Forms controls cannot be resized, or can be sized only to specific dimensions. For example, a Windows Forms <xref:System.Windows.Forms.ComboBox> control supports only a single height, which is defined by the control's font size. In a WPF dynamic layout where elements can stretch vertically, a hosted <xref:System.Windows.Forms.ComboBox> control will not stretch as expected.  
@@ -42,14 +45,17 @@ This topic describes how the <xref:System.Windows.Forms.Integration.WindowsForms
 - Windows Forms controls support autoscaling, in which the form will automatically resize itself and its controls based on the font size. In a WPF user interface, changing the font size does not resize the entire layout, although individual elements may dynamically resize.  
   
 ### Z-order  
+
  In a WPF user interface, you can change the z-order of elements to control overlapping behavior. A hosted Windows Forms control is drawn in a separate HWND, so it is always drawn on top of WPF elements.  
   
  A hosted Windows Forms control is also drawn on top of any <xref:System.Windows.Documents.Adorner> elements.  
   
 ## Layout Behavior  
+
  The following sections describe specific aspects of layout behavior when hosting Windows Forms controls in WPF.  
   
 ### Scaling, Unit Conversion, and Device Independence  
+
  Whenever the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element performs operations involving WPF and Windows Forms dimensions, two coordinate systems are involved: device-independent pixels for WPF and hardware pixels for Windows Forms. Therefore, you must apply proper unit and scaling conversions to achieve a consistent layout.  
   
  Conversion between the coordinate systems depends on the current device resolution and any layout or rendering transforms applied to the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element or to its ancestors.  
@@ -68,15 +74,19 @@ This topic describes how the <xref:System.Windows.Forms.Integration.WindowsForms
 |Overflow|When the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element converts from `double` values to `int` values, overflow is possible. Values that are larger than <xref:System.Int32.MaxValue> are set to <xref:System.Int32.MaxValue>.|  
   
 ### Layout-related Properties  
+
  Properties that control layout behavior in Windows Forms controls and WPF elements are mapped appropriately by the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element. For more information, see [Windows Forms and WPF Property Mapping](windows-forms-and-wpf-property-mapping.md).  
   
 ### Layout Changes in the Hosted Control  
+
  Layout changes in the hosted Windows Forms control are propagated to WPF to trigger layout updates. The <xref:System.Windows.UIElement.InvalidateMeasure%2A> method on <xref:System.Windows.Forms.Integration.WindowsFormsHost> ensures that layout changes in the hosted control cause the WPF layout engine to run.  
   
 ### Continuously Sized Windows Forms Controls  
+
  Windows Forms controls that support continuous scaling fully interact with the WPF layout system. The <xref:System.Windows.Forms.Integration.WindowsFormsHost> element uses the <xref:System.Windows.FrameworkElement.MeasureOverride%2A> and <xref:System.Windows.FrameworkElement.ArrangeOverride%2A> methods as usual to size and arrange the hosted Windows Forms control.  
   
 ### Sizing Algorithm  
+
  The <xref:System.Windows.Forms.Integration.WindowsFormsHost> element uses the following procedure to size the hosted control:  
   
 1. The <xref:System.Windows.Forms.Integration.WindowsFormsHost> element overrides the <xref:System.Windows.FrameworkElement.MeasureOverride%2A> and <xref:System.Windows.FrameworkElement.ArrangeOverride%2A> methods.  

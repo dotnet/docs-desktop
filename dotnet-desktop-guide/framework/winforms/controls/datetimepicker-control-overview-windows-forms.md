@@ -10,9 +10,11 @@ helpviewer_keywords:
 ms.assetid: 501af106-e9fc-4efc-b9b3-c9d8dcaf8c5c
 ---
 # DateTimePicker Control Overview (Windows Forms)
+
 The Windows Forms <xref:System.Windows.Forms.DateTimePicker> control allows the user to select a single item from a list of dates or times. When used to represent a date, it appears in two parts: a drop-down list with a date represented in text, and a grid that appears when you click on the down-arrow next to the list. The grid looks like the <xref:System.Windows.Forms.MonthCalendar> control, which can be used for selecting multiple dates. For more information on the <xref:System.Windows.Forms.MonthCalendar> control, see [MonthCalendar Control Overview](monthcalendar-control-overview-windows-forms.md).  
   
 ## Key Properties  
+
  If you wish the <xref:System.Windows.Forms.DateTimePicker> to appear as a control for picking or editing times instead of dates, set the <xref:System.Windows.Forms.DateTimePicker.ShowUpDown%2A> property to `true` and the <xref:System.Windows.Forms.DateTimePicker.Format%2A> property to <xref:System.Windows.Forms.DateTimePickerFormat.Time>. For more information see [How to: Display Time with the DateTimePicker Control](how-to-display-time-with-the-datetimepicker-control.md).  
   
  When the <xref:System.Windows.Forms.DateTimePicker.ShowCheckBox%2A> property is set to `true`, a check box is displayed next to the selected date in the control. When the check box is checked, the selected date-time value can be updated. When the check box is empty, the value appears unavailable.  

@@ -17,9 +17,11 @@ helpviewer_keywords:
 ms.assetid: 9b7bc5ae-051c-4904-9720-18f6667388bd
 ---
 # How to: Download a File in the Background
+
 Downloading a file is a common task, and it is often useful to run this potentially time-consuming operation on a separate thread. Use the <xref:System.ComponentModel.BackgroundWorker> component to accomplish this task with very little code.  
   
 ## Example  
+
  The following code example demonstrates how to use a <xref:System.ComponentModel.BackgroundWorker> component to load an XML file from a URL. When the user clicks the **Download** button, the <xref:System.Windows.Forms.Control.Click> event handler calls the <xref:System.ComponentModel.BackgroundWorker.RunWorkerAsync%2A> method of a <xref:System.ComponentModel.BackgroundWorker> component to start the download operation. The button is disabled for the duration of the download, and then enabled when the download is complete. A <xref:System.Windows.Forms.MessageBox> displays the contents of the file.  
   
  [!code-csharp[System.ComponentModel.BackgroundWorker.IsBusy#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker.IsBusy/CS/Form1.cs#1)]
@@ -51,11 +53,13 @@ Downloading a file is a common task, and it is often useful to run this potentia
  [!code-vb[System.ComponentModel.BackgroundWorker.IsBusy#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker.IsBusy/VB/Form1.vb#4)]  
   
 ## Compiling the Code  
+
  This example requires:  
   
 - References to the System.Drawing, System.Windows.Forms, and System.Xml assemblies.  
   
 ## Robust Programming  
+
  Always check the <xref:System.ComponentModel.AsyncCompletedEventArgs.Error%2A?displayProperty=nameWithType> property in your <xref:System.ComponentModel.BackgroundWorker.RunWorkerCompleted> event handler before attempting to access the <xref:System.ComponentModel.RunWorkerCompletedEventArgs.Result%2A?displayProperty=nameWithType> property or any other object that may have been affected by the <xref:System.ComponentModel.BackgroundWorker.DoWork> event handler.  
   
 ## See also

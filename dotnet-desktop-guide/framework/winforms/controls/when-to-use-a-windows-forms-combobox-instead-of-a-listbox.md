@@ -14,6 +14,7 @@ helpviewer_keywords:
 ms.assetid: 7bcaea58-1cfa-46db-9baf-b75a69d8f9ec
 ---
 # When to Use a Windows Forms ComboBox Instead of a ListBox
+
 The <xref:System.Windows.Forms.ComboBox> and the <xref:System.Windows.Forms.ListBox> controls have similar behaviors, and in some cases may be interchangeable. There are times, however, when one or the other is more appropriate to a task.  
   
  Generally, a combo box is appropriate when there is a list of suggested choices, and a list box is appropriate when you want to limit input to what is on the list. A combo box contains a text box field, so choices not on the list can be typed in. The exception is when the <xref:System.Windows.Forms.ComboBox.DropDownStyle%2A> property is set to <xref:System.Windows.Forms.ComboBoxStyle.DropDownList>. In that case, the control will select an item if you type its first letter.  

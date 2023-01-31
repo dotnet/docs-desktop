@@ -8,9 +8,11 @@ helpviewer_keywords:
 ms.assetid: 637911b3-0c78-4493-a4fb-91db56d767cd
 ---
 # Printing and Print System Management
+
 Windows Vista and Microsoft .NET Framework introduce a new print path — an alternative to Microsoft Windows Graphics Device Interface (GDI) printing — and a vastly expanded set of print system management APIs.  
   
 ## In This Section  
+
  [Printing Overview](printing-overview.md)  
  A discussion of the new print path and APIs.  
   

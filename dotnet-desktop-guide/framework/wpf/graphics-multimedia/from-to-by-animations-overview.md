@@ -11,14 +11,19 @@ helpviewer_keywords:
 ms.assetid: 516fce0a-e7f8-49b8-b018-53b3d409a8a3
 ---
 # From/To/By Animations Overview
+
 This topic describes how to use From/To/By animations to animate dependency properties. A From/To/By animation creates a transition between two values.  
   
 <a name="prereq"></a>
+
 ## Prerequisites  
+
  To understand this topic, you should be familiar with WPF animations features. For an introduction to animation features, see the [Animation Overview](animation-overview.md).  
   
 <a name="whatisanimation"></a>
+
 ## What Is a From/To/By Animation?  
+
  A From/To/By animation is a type of <xref:System.Windows.Media.Animation.AnimationTimeline> that creates a transition between a starting value and an ending value. The amount of time that the transition takes to complete is determined by the <xref:System.Windows.Media.Animation.Timeline.Duration%2A> of that animation.  
   
  You can apply a From/To/By animation to a property by using a <xref:System.Windows.Media.Animation.Storyboard> in markup and code, or by using the <xref:System.Windows.Media.Animation.Animatable.BeginAnimation%2A> method in code. You may also use a From/To/By Animation to create an <xref:System.Windows.Media.Animation.AnimationClock> and apply it to one or more properties. For more information about the different methods for applying animations, see the [Property Animation Techniques Overview](property-animation-techniques-overview.md).  
@@ -26,7 +31,9 @@ This topic describes how to use From/To/By animations to animate dependency prop
  From/To/By animations can have no more than two target values. If you require an animation that has more than two target values, use a key-frame animation. Key-frame animations are described in the [Key-Frame Animations Overview](key-frame-animations-overview.md).  
   
 <a name="animation_types"></a>
+
 ## From/To/By Animation Types  
+
  Because animations generate property values, there are different animation types for different property types. To animate a property that takes a <xref:System.Double>, such as the <xref:System.Windows.FrameworkElement.Width%2A> property of an element, use an animation that produces <xref:System.Double> values. To animate a property that takes a <xref:System.Windows.Point>, use an animation that produces <xref:System.Windows.Point> values, and so on.  
   
  From/To/By animation classes belong to the <xref:System.Windows.Media.Animation> namespace and use the following naming convention:  
@@ -57,7 +64,9 @@ This topic describes how to use From/To/By animations to animate dependency prop
 |<xref:System.Windows.Vector>|<xref:System.Windows.Media.Animation.VectorAnimation>|  
   
 <a name="anim_values"></a>
+
 ## Target Values  
+
  A From/To/By animation creates a transition between two target values. It is common to specify a starting value (set it by using the <xref:System.Windows.Media.Animation.DoubleAnimation.From%2A> property) and an ending value (set it by using the <xref:System.Windows.Media.Animation.DoubleAnimation.To%2A> property). However, you can also specify only a starting value, a destination value, or an offset value. In these cases, the animation obtains the missing target value from the property that is being animated. The following list describes the different ways to specify the target values of an animation.  
   
 - **Starting Value**  
@@ -73,7 +82,9 @@ This topic describes how to use From/To/By animations to animate dependency prop
      The <xref:System.Windows.Media.Animation.DoubleAnimation.By%2A> property enables you to specify an offset instead of an explicit starting or ending value for the animation. The <xref:System.Windows.Media.Animation.DoubleAnimation.By%2A> property of an animation specifies by how much the animation changes a value over its duration. You can use the <xref:System.Windows.Media.Animation.DoubleAnimation.By%2A> property by itself or with the <xref:System.Windows.Media.Animation.DoubleAnimation.From%2A> property. If you specify only the <xref:System.Windows.Media.Animation.DoubleAnimation.By%2A> property, the animation adds the offset value to the base value of the property or to the output of another animation.  
   
 <a name="examples"></a>
+
 ## Using From/To/By Values  
+
  The following sections describe how to use the <xref:System.Windows.Media.Animation.DoubleAnimation.From%2A>, <xref:System.Windows.Media.Animation.DoubleAnimation.To%2A>, and <xref:System.Windows.Media.Animation.DoubleAnimation.By%2A> properties together or separately.  
   
  The examples in this section each use a <xref:System.Windows.Media.Animation.DoubleAnimation>, which is a type of From/To/By animation, to animate the <xref:System.Windows.FrameworkElement.Width%2A> property of a <xref:System.Windows.Shapes.Rectangle> that is 10 device independent pixels high and 100 device independent pixels wide.  
@@ -81,6 +92,7 @@ This topic describes how to use From/To/By animations to animate dependency prop
  Although each example uses a <xref:System.Windows.Media.Animation.DoubleAnimation>, the From, To, and By properties of all From/To/By animations behave identically. Although each of these examples uses a <xref:System.Windows.Media.Animation.Storyboard>, you can use From/To/By animations in other ways. For more information, see [Property Animation Techniques Overview](property-animation-techniques-overview.md).  
   
 ### From/To  
+
  When you set the <xref:System.Windows.Media.Animation.DoubleAnimation.From%2A> and <xref:System.Windows.Media.Animation.DoubleAnimation.To%2A> values together, the animation progresses from the value that is specified by the <xref:System.Windows.Media.Animation.DoubleAnimation.From%2A> property, to the value that is specified by the <xref:System.Windows.Media.Animation.DoubleAnimation.To%2A> property.  
   
  The following example sets the <xref:System.Windows.Media.Animation.DoubleAnimation.From%2A> property of the <xref:System.Windows.Media.Animation.DoubleAnimation> to 50 and its <xref:System.Windows.Media.Animation.DoubleAnimation.To%2A> property to 300. As a result, the <xref:System.Windows.FrameworkElement.Width%2A> of the <xref:System.Windows.Shapes.Rectangle> is animated from 50 to 300.  
@@ -89,6 +101,7 @@ This topic describes how to use From/To/By animations to animate dependency prop
  [!code-vb[basicvalues_snip#FromToAnimationInline](~/samples/snippets/visualbasic/VS_Snippets_Wpf/basicvalues_snip/VisualBasic/AnimationTargetValuesExample.vb#fromtoanimationinline)]  
   
 ### To  
+
  When you set just the <xref:System.Windows.Media.Animation.DoubleAnimation.To%2A> property, the animation progresses from the base value of the animated property, or from the output of a composing animation that was previously applied to the same property, to the value that is specified by the <xref:System.Windows.Media.Animation.DoubleAnimation.To%2A> property.  
   
  ("Composing animation" refers to an <xref:System.Windows.Media.Animation.ClockState.Active> or <xref:System.Windows.Media.Animation.ClockState.Filling> animation that previously applied to the same property that is still in effect when the current animation was applied by using the <xref:System.Windows.Media.Animation.HandoffBehavior.Compose> handoff behavior.)  
@@ -99,6 +112,7 @@ This topic describes how to use From/To/By animations to animate dependency prop
  [!code-vb[basicvalues_snip#ToAnimationInline](~/samples/snippets/visualbasic/VS_Snippets_Wpf/basicvalues_snip/VisualBasic/AnimationTargetValuesExample.vb#toanimationinline)]  
   
 ### By  
+
  When you set just the <xref:System.Windows.Media.Animation.DoubleAnimation.By%2A> property of an animation, the animation progresses from the base value of the property that is being animated, or from the output of a composing animation to the sum of that value and the value that is specified by the <xref:System.Windows.Media.Animation.DoubleAnimation.By%2A> property.  
   
  The following example sets just the <xref:System.Windows.Media.Animation.DoubleAnimation.By%2A> property of the <xref:System.Windows.Media.Animation.DoubleAnimation> to 300. Because the example does not specify a starting value, the <xref:System.Windows.Media.Animation.DoubleAnimation> uses the base value of the <xref:System.Windows.FrameworkElement.Width%2A> property, 100, as its starting value. The ending value is determined by adding the <xref:System.Windows.Media.Animation.DoubleAnimation.By%2A> value of the animation, 300, to its starting value, 100: 400. As a result, the <xref:System.Windows.FrameworkElement.Width%2A> of the <xref:System.Windows.Shapes.Rectangle> is animated from 100 to 400.  
@@ -107,6 +121,7 @@ This topic describes how to use From/To/By animations to animate dependency prop
  [!code-vb[basicvalues_snip#ByAnimationInline](~/samples/snippets/visualbasic/VS_Snippets_Wpf/basicvalues_snip/VisualBasic/AnimationTargetValuesExample.vb#byanimationinline)]  
   
 ### From/By  
+
  When you set the <xref:System.Windows.Media.Animation.DoubleAnimation.From%2A> and <xref:System.Windows.Media.Animation.DoubleAnimation.By%2A> properties of an animation, the animation progresses from the value that is specified by the <xref:System.Windows.Media.Animation.DoubleAnimation.From%2A> property, to the value that is specified by the sum of the <xref:System.Windows.Media.Animation.DoubleAnimation.From%2A> and <xref:System.Windows.Media.Animation.DoubleAnimation.By%2A> properties.  
   
  The following example sets the <xref:System.Windows.Media.Animation.DoubleAnimation.From%2A> property of the <xref:System.Windows.Media.Animation.DoubleAnimation> to 50 and its <xref:System.Windows.Media.Animation.DoubleAnimation.By%2A> property to 300. The ending value is determined by adding the <xref:System.Windows.Media.Animation.DoubleAnimation.By%2A> value of the animation, 300, to its starting value, 50: 350. As a result, the <xref:System.Windows.FrameworkElement.Width%2A> of the <xref:System.Windows.Shapes.Rectangle> is animated from 50 to 350.  
@@ -115,6 +130,7 @@ This topic describes how to use From/To/By animations to animate dependency prop
  [!code-vb[basicvalues_snip#FromByAnimationInline](~/samples/snippets/visualbasic/VS_Snippets_Wpf/basicvalues_snip/VisualBasic/AnimationTargetValuesExample.vb#frombyanimationinline)]  
   
 ### From  
+
  When you specify just the <xref:System.Windows.Media.Animation.DoubleAnimation.From%2A> value of an animation, the animation progresses from the value that is specified by the <xref:System.Windows.Media.Animation.DoubleAnimation.From%2A> property, to the base value of the property that is being animated or to the output of a composing animation.  
   
  The following example sets just the <xref:System.Windows.Media.Animation.DoubleAnimation.From%2A> property of the <xref:System.Windows.Media.Animation.DoubleAnimation> to 50. Because no ending value was specified, the <xref:System.Windows.Media.Animation.DoubleAnimation> uses the base value of the <xref:System.Windows.FrameworkElement.Width%2A> property, 100, as its ending value. The <xref:System.Windows.FrameworkElement.Width%2A> of the <xref:System.Windows.Shapes.Rectangle> is animated from 50 to the base value of the <xref:System.Windows.FrameworkElement.Width%2A> property, 100.  
@@ -123,10 +139,13 @@ This topic describes how to use From/To/By animations to animate dependency prop
  [!code-vb[basicvalues_snip#FromAnimationInline](~/samples/snippets/visualbasic/VS_Snippets_Wpf/basicvalues_snip/VisualBasic/AnimationTargetValuesExample.vb#fromanimationinline)]  
   
 ### To/By  
+
  If you set both the <xref:System.Windows.Media.Animation.DoubleAnimation.To%2A> and the <xref:System.Windows.Media.Animation.DoubleAnimation.By%2A> properties of an animation, the <xref:System.Windows.Media.Animation.DoubleAnimation.By%2A> property is ignored.  
   
 <a name="otheranimationtypes"></a>
+
 ## Other Animation Types  
+
  From/To/By animations are not the only type of animations that WPF provides: it also provides key-frame animations and path animations.  
   
 - A key-frame animation animates along any number of destination values, described using key frames. For more information, see the [Key-Frame Animations Overview](key-frame-animations-overview.md).  

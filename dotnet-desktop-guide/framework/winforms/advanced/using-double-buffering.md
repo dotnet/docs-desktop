@@ -10,9 +10,11 @@ helpviewer_keywords:
 ms.assetid: dc484e33-7101-4e4b-ada5-d3c96155fbcd
 ---
 # Using Double Buffering
+
 You can use double-buffered graphics to reduce flicker in your applications that contain complex painting operations. The .NET Framework contains built-in support for double-buffering or you can manage and render graphics manually.  
   
 ## In This Section  
+
  [Double Buffered Graphics](double-buffered-graphics.md)  
  Introduces double buffering concept and outlines .NET Framework support.  
   
@@ -26,6 +28,7 @@ You can use double-buffered graphics to reduce flicker in your applications that
  Demonstrates how to render double-buffered graphics.  
   
 ## Reference  
+
  <xref:System.Windows.Forms.Control.SetStyle%2A>
  Control method that enables double buffering.  
   

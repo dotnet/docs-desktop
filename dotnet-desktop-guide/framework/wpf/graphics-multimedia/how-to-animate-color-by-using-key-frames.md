@@ -12,9 +12,11 @@ helpviewer_keywords:
 ms.assetid: ab04ffa6-4de9-4d5b-a3b4-4e35d5b2ef35
 ---
 # How to: Animate Color by Using Key Frames
+
 This example shows how to animate the <xref:System.Windows.Media.SolidColorBrush.Color%2A> of a <xref:System.Windows.Media.SolidColorBrush> by using key frames.  
   
 ## Example  
+
  The following example uses the <xref:System.Windows.Media.Animation.ColorAnimationUsingKeyFrames> class to animate the <xref:System.Windows.Media.SolidColorBrush.Color%2A> property of a <xref:System.Windows.Media.SolidColorBrush>. This animation uses three key frames in the following manner:  
   
 1. During the first two seconds, uses an instance of the <xref:System.Windows.Media.Animation.LinearColorKeyFrame> class to gradually change the color from green to red. Linear key frames like <xref:System.Windows.Media.Animation.LinearColorKeyFrame> create a smooth linear transition between values.  

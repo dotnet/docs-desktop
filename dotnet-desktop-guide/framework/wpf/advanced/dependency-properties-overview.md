@@ -21,9 +21,11 @@ ms.assetid: d119d00c-3afb-48d6-87a0-c4da4f83dee5
 Windows Presentation Foundation (WPF) provides a set of services that can be used to extend the functionality of a type's [property](/dotnet/standard/base-types/common-type-system#properties). Collectively, these services are typically referred to as the WPF property system. A property that is backed by the WPF property system is known as a dependency property. This overview describes the WPF property system and the capabilities of a dependency property. This includes how to use existing dependency properties in XAML and in code. This overview also introduces specialized aspects of dependency properties, such as dependency property metadata, and how to create your own dependency property in a custom class.
 
 ## Prerequisites
+
 This topic assumes that you have some basic knowledge of the .NET type system and object-oriented programming. In order to follow the examples in this topic, you should also understand XAML and know how to write WPF applications. For more information, see [Walkthrough: My first WPF desktop application](../getting-started/walkthrough-my-first-wpf-desktop-application.md).  
   
 ## Dependency properties and CLR properties
+
  In WPF, properties are typically exposed as standard .NET [properties](/dotnet/standard/base-types/common-type-system#properties). At a basic level, you could interact with these properties directly and never know that they are implemented as a dependency property. However, you should become familiar with some or all of the features of the WPF property system, so that you can take advantage of these features.
 
 The purpose of dependency properties is to provide a way to compute the value of a property based on the value of other inputs. These other inputs might include system properties such as themes and user preference, just-in-time property determination mechanisms such as data binding and animations/storyboards, multiple-use templates such as resources and styles, or values known through parent-child relationships with other elements in the element tree. In addition, a dependency property can be implemented to provide self-contained validation, default values, callbacks that monitor changes to other properties, and a system that can coerce property values based on potentially runtime information. Derived classes can also change some specific characteristics of an existing property by overriding dependency property metadata, rather than overriding the actual implementation of existing properties or creating new properties.
@@ -31,6 +33,7 @@ The purpose of dependency properties is to provide a way to compute the value of
 In the SDK reference, you can identify which property is a dependency property by the presence of the Dependency Property Information section on the managed reference page for that property. The Dependency Property Information section includes a link to the <xref:System.Windows.DependencyProperty> identifier field for that dependency property, and also includes a list of the metadata options that are set for that property, per-class override information, and other details.
 
 ## Dependency properties back CLR properties
+
 Dependency properties and the WPF property system extend property functionality by providing a type that backs a property, as an alternative implementation to the standard pattern of backing the property with a private field. The name of this type is <xref:System.Windows.DependencyProperty>. The other important type that defines the WPF property system is <xref:System.Windows.DependencyObject>. <xref:System.Windows.DependencyObject> defines the base class that can register and own a dependency property.
 
 The following lists the terminology that is used with dependency properties:
@@ -49,9 +52,11 @@ The following example defines the `IsSpinning` dependency property, and shows th
 The naming convention of the property and its backing <xref:System.Windows.DependencyProperty> field is important. The name of the field is always the name of the property, with the suffix `Property` appended. For more information about this convention and the reasons for it, see [Custom Dependency Properties](custom-dependency-properties.md).  
 
 ## Setting property values
+
 You can set properties either in code or in XAML.
 
 ### Setting property values in XAML
+
 The following XAML example specifies the background color of a button as red. This example illustrates a case where the simple string value for a XAML attribute is type-converted by the WPF XAML parser into a WPF type (a <xref:System.Windows.Media.Color>, by way of a <xref:System.Windows.Media.SolidColorBrush>) in the generated code.
 
 [!code-xaml[PropertiesOvwSupport#MostBasicProperty](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertiesOvwSupport/CSharp/Page1.xaml#mostbasicproperty)]
@@ -63,6 +68,7 @@ As an example of non-attribute syntax, the following XAML example shows another 
 [!code-xaml[PropertiesOvwSupport#PESyntaxProperty](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertiesOvwSupport/CSharp/Page1.xaml#pesyntaxproperty)]
 
 ### Setting properties in code
+
  Setting dependency property values in code is typically just a call to the set implementation exposed by the CLR "wrapper".
 
 [!code-csharp[PropertiesOvwSupport#ProceduralPropertySet](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertiesOvwSupport/CSharp/Page1.xaml.cs#proceduralpropertyset)]
@@ -78,6 +84,7 @@ You can also call the property system APIs <xref:System.Windows.DependencyObject
 Properties can be also set in XAML and then accessed later in code, through code-behind. For details, see [Code-Behind and XAML in WPF](code-behind-and-xaml-in-wpf.md).
 
 ## Property functionality provided by a dependency property
+
 A dependency property provides functionality that extends the functionality of a property as opposed to a property that is backed by a field. Often, such functionality represents or supports one of the following specific features:
 
 - [Resources](#resources)
@@ -95,6 +102,7 @@ A dependency property provides functionality that extends the functionality of a
 - [WPF Designer integration](#wpf-designer-integration)
 
 ### Resources
+
 A dependency property value can be set by referencing a resource. Resources are typically specified as the `Resources` property value of a page root element, or of the application (these locations enable the most convenient access to the resource). The following example shows how to define a <xref:System.Windows.Media.SolidColorBrush> resource.
 
 [!code-xaml[PropertiesOvwSupport#ResourcesResource](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertiesOvwSupport/CSharp/page2.xaml#resourcesresource)]
@@ -109,6 +117,7 @@ This particular resource is referenced as a [DynamicResource Markup Extension](d
 > Resources are treated as a local value, which means that if you set another local value, you will eliminate the resource reference. For more information, see [Dependency Property Value Precedence](dependency-property-value-precedence.md).
 
 ### Data binding
+
 A dependency property can reference a value through data binding. Data binding works through a specific markup extension syntax in XAML, or the <xref:System.Windows.Data.Binding> object in code. With data binding, the final property value determination is deferred until run time, at which time the value is obtained from a data source.
 
 The following example sets the <xref:System.Windows.Controls.ContentControl.Content%2A> property for a <xref:System.Windows.Controls.Button>, using a binding declared in XAML. The binding uses an inherited data context and an <xref:System.Windows.Data.XmlDataProvider> data source (not shown). The binding itself specifies the desired source property by <xref:System.Windows.Data.Binding.XPath%2A> within the data source.
@@ -121,6 +130,7 @@ The following example sets the <xref:System.Windows.Controls.ContentControl.Cont
 Dependency properties, or the <xref:System.Windows.DependencyObject> class, do not natively support <xref:System.ComponentModel.INotifyPropertyChanged> for purposes of producing notifications of changes in <xref:System.Windows.DependencyObject> source property value for data binding operations. For more information on how to create properties for use in data binding that can report changes to a data binding target, see [Data Binding Overview](../data/data-binding-overview.md).
 
 ### Styles
+
 Styles and templates are two of the chief motivating scenarios for using dependency properties. Styles are particularly useful for setting properties that define application user interface (UI). Styles are typically defined as resources in XAML. Styles interact with the property system because they typically contain "setters" for particular properties, as well as "triggers" that change a property value based on the real-time value for another property.
 
 The following example creates a simple style (which would be defined inside a <xref:System.Windows.FrameworkElement.Resources%2A> dictionary, not shown), then applies that style directly to the <xref:System.Windows.FrameworkElement.Style%2A> property for a <xref:System.Windows.Controls.Button>. The setter within the style sets the <xref:System.Windows.Controls.Control.Background%2A> property for a styled <xref:System.Windows.Controls.Button> to green.
@@ -132,6 +142,7 @@ The following example creates a simple style (which would be defined inside a <x
 For more information, see [Styling and Templating](../controls/styles-templates-overview.md).
 
 ### Animations
+
 Dependency properties can be animated. When an animation is applied and is running, the animated value operates at a higher precedence than any value (such as a local value) that the property otherwise has.
 
 The following example animates the <xref:System.Windows.Controls.Control.Background%2A> on a <xref:System.Windows.Controls.Button> property (technically, the <xref:System.Windows.Controls.Control.Background%2A> is animated by using property element syntax to specify a blank <xref:System.Windows.Media.SolidColorBrush> as the <xref:System.Windows.Controls.Control.Background%2A>, then the <xref:System.Windows.Media.SolidColorBrush.Color%2A> property of that <xref:System.Windows.Media.SolidColorBrush> is the property that is directly animated).
@@ -141,6 +152,7 @@ The following example animates the <xref:System.Windows.Controls.Control.Backgro
 For more information on animating properties, see [Animation Overview](../graphics-multimedia/animation-overview.md) and [Storyboards Overview](../graphics-multimedia/storyboards-overview.md).
 
 ### Metadata overrides
+
 You can change certain behaviors of a dependency property by overriding the metadata for that property when you derive from the class that originally registers the dependency property. Overriding metadata relies on the <xref:System.Windows.DependencyProperty> identifier. Overriding metadata does not require reimplementing the property. The metadata change is handled natively by the property system; each class potentially holds individual metadata for all properties that are inherited from base classes, on a per-type basis.
 
 The following example overrides metadata for a dependency property <xref:System.Windows.FrameworkElement.DefaultStyleKey%2A>. Overriding this particular dependency property metadata is part of an implementation pattern that creates controls that can use default styles from themes.
@@ -151,6 +163,7 @@ The following example overrides metadata for a dependency property <xref:System.
 For more information about overriding or obtaining property metadata, see [Dependency Property Metadata](dependency-property-metadata.md).
 
 ### Property value inheritance
+
 An element can inherit the value of a dependency property from its parent in the object tree.
 
 > [!NOTE]
@@ -163,9 +176,11 @@ The following example shows a binding, and sets the <xref:System.Windows.Framewo
 For more information, see [Property Value Inheritance](property-value-inheritance.md).
 
 ### WPF designer integration
+
 A custom control with properties that are implemented as dependency properties will receive appropriate WPF Designer for Visual Studio support. One example is the ability to edit direct and attached dependency properties with the **Properties** window. For more information, see [Control Authoring Overview](../controls/control-authoring-overview.md).
 
 ## Dependency property value precedence
+
 When you get the value of a dependency property, you are potentially obtaining a value that was set on that property through any one of the other property-based inputs that participate in the WPF property system. Dependency property value precedence exists so that a variety of scenarios for how properties obtain their values can interact in a predictable way.
 
 Consider the following example. The example includes a style that applies to all buttons and their <xref:System.Windows.Controls.Control.Background%2A> properties, but then also specifies one button with a locally set <xref:System.Windows.Controls.Control.Background%2A> value.
@@ -178,6 +193,7 @@ In principle, for the first button, the property is set twice, but only one valu
 [!code-xaml[PropertiesOvwSupport#MiniPrecedence](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertiesOvwSupport/CSharp/page3.xaml#miniprecedence)]  
 
 ### Why does dependency property precedence exist?
+
 Typically, you would not want styles to always apply and to obscure even a locally set value of an individual element (otherwise, it would be difficult to use either styles or elements in general). Therefore, the values that come from styles operate at a lower precedent than a locally set value. For a more thorough listing of dependency properties and where a dependency property effective value might come from, see [Dependency Property Value Precedence](dependency-property-value-precedence.md).
 
 > [!NOTE]

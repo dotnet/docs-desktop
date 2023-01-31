@@ -10,9 +10,11 @@ helpviewer_keywords:
 ms.assetid: 96834ee4-a5fc-4dd0-9948-b9bbc9437a5c
 ---
 # Imaging How-to Topics
+
 The topics in this section demonstrate how to use Windows Presentation Foundation (WPF) in order to display or alter bitmap images.  
   
 ## In This Section  
+
  [Use a BitmapImage in XAML](how-to-use-a-bitmapimage.md)  
  [Load an Image as a Thumbnail](how-to-load-an-image-as-a-thumbnail.md)  
  [Apply a Transform to a Bitmap Image](how-to-apply-a-transform-to-a-bitmapimage.md)  
@@ -32,6 +34,7 @@ The topics in this section demonstrate how to use Windows Presentation Foundatio
  [Read Metadata from a Bitmap](how-to-read-metadata-from-a-bitmap.md)  
   
 ## Reference  
+
  <xref:System.Windows.Controls.Image>  
   
  <xref:System.Windows.Media.Imaging.BitmapImage>  

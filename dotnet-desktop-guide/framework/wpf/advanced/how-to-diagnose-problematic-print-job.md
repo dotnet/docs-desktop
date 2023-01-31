@@ -13,9 +13,11 @@ ms.assetid: b081a170-84c6-48f9-a487-5766a8d58a82
 description: Learn how the rich set of print job properties exposed in the APIs of Microsoft .NET Framework provide a means for performing a diagnosis of print jobs.
 ---
 # How to: Diagnose Problematic Print Job
+
 Network administrators often field complaints from users about print jobs that do not print or print slowly. The rich set of print job properties exposed in the APIs of Microsoft .NET Framework provide a means for performing a rapid remote diagnosis of print jobs.  
   
 ## Example  
+
  The major steps for creating this kind of utility are as follows.  
   
 1. Identify the print job that the user is complaining about. Users often cannot do this precisely. They may not know the names of the print servers or printers. They may describe the location of the printer in different terminology than was used in setting its <xref:System.Printing.PrintQueue.Location%2A> property. Accordingly, it is a good idea to generate a list of the user's currently submitted jobs. If there is more than one, then communication between the user and the print system administrator can be used to pinpoint the job that is having problems. The substeps are as follows.  

@@ -8,11 +8,13 @@ ms.assetid: d4cd5a13-c20d-4a6f-a2ba-14f2c9ce4cef
 description: Learn how to animate the size of a FrameworkElement by either animating its Width and Height properties or using an animated ScaleTransform.
 ---
 # How to: Animate the Size of a FrameworkElement
+
 To animate the size of a <xref:System.Windows.FrameworkElement>, you can either animate its <xref:System.Windows.FrameworkElement.Width%2A> and <xref:System.Windows.FrameworkElement.Height%2A> properties or use an animated <xref:System.Windows.Media.ScaleTransform>.  
   
  In the following example animates the size of two buttons using these two approaches. One button is resized by animating its <xref:System.Windows.FrameworkElement.Width%2A> property and another is resized by animating a <xref:System.Windows.Media.ScaleTransform> applied to its <xref:System.Windows.UIElement.RenderTransform%2A> property. Each button contains some text. Initially, the text appears the same in both buttons, but as the buttons are resized, the text in the second button becomes distorted.  
   
 ## Example  
+
  [!code-xaml[transformanimations_snip#1](~/samples/snippets/xaml/VS_Snippets_Wpf/transformanimations_snip/XAML/AnimatingSizeExample.xaml#1)]  
   
  When you transform an element, the entire element and its contents are transformed. When you directly alter the size of an element, as in the case of the first button, the element's contents are not resized unless their size and position depend on the size of their parent element.  

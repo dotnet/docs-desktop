@@ -13,9 +13,11 @@ helpviewer_keywords:
 ms.assetid: 751fda9b-44f9-4d63-b4f2-1df07ac41e0f
 ---
 # How to: Implement Validation Logic on Custom Objects
+
 This example shows how to implement validation logic on a custom object and then bind to it.  
   
 ## Example  
+
  You can provide validation logic on the business layer if your source object implements <xref:System.ComponentModel.IDataErrorInfo>, as in the following example, which defines a `Person` object that implements <xref:System.ComponentModel.IDataErrorInfo>:  
   
  [!code-csharp[BusinessLayerValidation#IDataErrorInfo](~/samples/snippets/csharp/VS_Snippets_Wpf/BusinessLayerValidation/CSharp/Data.cs#idataerrorinfo)]

@@ -15,10 +15,13 @@ helpviewer_keywords:
 ms.assetid: e335601e-28c8-4d64-ba27-778fffd55f72
 ---
 # Optimizing Performance: 2D Graphics and Imaging
+
 WPF provides a wide range of 2D graphics and imaging functionality that can be optimized for your application requirements. This topic provides information about performance optimization in those areas.  
 
 <a name="Drawing_and_Shapes"></a>
+
 ## Drawing and Shapes  
+
  WPF provides both <xref:System.Windows.Media.Drawing> and <xref:System.Windows.Shapes.Shape> objects to represent graphical drawing content. However, <xref:System.Windows.Media.Drawing> objects are simpler constructs than <xref:System.Windows.Shapes.Shape> objects and provide better performance characteristics.  
   
  A <xref:System.Windows.Shapes.Shape> allows you to draw a graphical shape to the screen. Because they are derived from the <xref:System.Windows.FrameworkElement> class, <xref:System.Windows.Shapes.Shape> objects can be used inside panels and most controls.  
@@ -46,7 +49,9 @@ WPF provides a wide range of 2D graphics and imaging functionality that can be o
  For more information on <xref:System.Windows.Media.Drawing> objects, see [Drawing Objects Overview](../graphics-multimedia/drawing-objects-overview.md).  
   
 <a name="StreamGeometry_Objects"></a>
+
 ## StreamGeometry Objects  
+
  The <xref:System.Windows.Media.StreamGeometry> object is a lightweight alternative to <xref:System.Windows.Media.PathGeometry> for creating geometric shapes. Use a <xref:System.Windows.Media.StreamGeometry> when you need to describe a complex geometry. <xref:System.Windows.Media.StreamGeometry> is optimized for handling many <xref:System.Windows.Media.PathGeometry> objects and performs better when compared to using many individual <xref:System.Windows.Media.PathGeometry> objects.  
   
  The following example uses attribute syntax to create a triangular <xref:System.Windows.Media.StreamGeometry> in XAML.  
@@ -56,11 +61,15 @@ WPF provides a wide range of 2D graphics and imaging functionality that can be o
  For more information on <xref:System.Windows.Media.StreamGeometry> objects, see [Create a Shape Using a StreamGeometry](../graphics-multimedia/how-to-create-a-shape-using-a-streamgeometry.md).  
   
 <a name="DrawingVisual_Objects"></a>
+
 ## DrawingVisual Objects  
+
  The <xref:System.Windows.Media.DrawingVisual> object is a lightweight drawing class that is used to render shapes, images, or text. This class is considered lightweight because it does not provide layout or event handling, which improves its performance. For this reason, drawings are ideal for backgrounds and clip art. For more information, see [Using DrawingVisual Objects](../graphics-multimedia/using-drawingvisual-objects.md).  
   
 <a name="Images"></a>
+
 ## Images  
+
  WPF imaging provides a significant improvement over the imaging capabilities in previous versions of Windows. Imaging capabilities, such as displaying a bitmap or using an image on a common control, were primarily handled by the Microsoft Windows Graphics Device Interface (GDI) or Microsoft Windows GDI+ application programming interface (API). These APIs provided baseline imaging functionality but lacked features such as support for codec extensibility and high fidelity image support. WPF Imaging APIs have been redesigned to overcome the shortcomings of GDI and GDI+ and provide a new set of APIs to display and use images within your applications.  
   
  When using images, consider the following recommendations for gaining better performance:  
@@ -74,6 +83,7 @@ WPF provides a wide range of 2D graphics and imaging functionality that can be o
 - For more information, see [Imaging Overview](../graphics-multimedia/imaging-overview.md).  
   
 ### BitmapScalingMode  
+
  When animating the scale of any bitmap, the default high-quality image resampling algorithm can sometimes consume sufficient system resources to cause frame rate degradation, effectively causing animations to stutter. By setting the <xref:System.Windows.Media.RenderOptions.BitmapScalingMode%2A> property of the <xref:System.Windows.Media.RenderOptions> object to <xref:System.Windows.Media.BitmapScalingMode.LowQuality>, you can create a smoother animation when scaling a bitmap. <xref:System.Windows.Media.BitmapScalingMode.LowQuality> mode tells the WPF rendering engine to switch from a quality-optimized algorithm to a speed-optimized algorithm when processing images.  
   
  The following example shows how to set the <xref:System.Windows.Media.BitmapScalingMode> for an image object.  
@@ -82,6 +92,7 @@ WPF provides a wide range of 2D graphics and imaging functionality that can be o
  [!code-vb[RenderOptions#RenderOptionsSnippet2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RenderOptions/visualbasic/window1.xaml.vb#renderoptionssnippet2)]  
   
 ### CachingHint  
+
  By default, WPF does not cache the rendered contents of <xref:System.Windows.Media.TileBrush> objects, such as <xref:System.Windows.Media.DrawingBrush> and <xref:System.Windows.Media.VisualBrush>. In static scenarios where the contents or use of the <xref:System.Windows.Media.TileBrush> in the scene aren't changing, this makes sense, since it conserves video memory. It does not make as much sense when a <xref:System.Windows.Media.TileBrush> with static content is used in a non-static way—for example, when a static <xref:System.Windows.Media.DrawingBrush> or <xref:System.Windows.Media.VisualBrush> is mapped to the surface of a rotating 3D object. The default behavior of WPF is to re-render the entire content of the <xref:System.Windows.Media.DrawingBrush> or <xref:System.Windows.Media.VisualBrush> for every frame, even though the content is unchanging.  
   
  By setting the <xref:System.Windows.Media.RenderOptions.CachingHint%2A> property of the <xref:System.Windows.Media.RenderOptions> object to <xref:System.Windows.Media.CachingHint.Cache>, you can increase performance by using cached versions of the tiled brush objects.  

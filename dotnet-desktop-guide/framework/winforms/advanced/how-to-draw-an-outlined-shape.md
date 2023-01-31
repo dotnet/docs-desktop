@@ -22,17 +22,21 @@ ms.assetid: f4f9214c-607e-407d-8cdd-6549f0278451
 description: Learn how to draw an outlined shape, including ellipses and rectangles, with the following descriptions, example, and links.
 ---
 # How to: Draw an Outlined Shape
+
 This example draws outlined ellipses and rectangles on a form.  
   
 ## Example  
+
  [!code-cpp[System.Drawing.ConceptualHowTos#6](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ConceptualHowTos/cpp/form1.cpp#6)]
  [!code-csharp[System.Drawing.ConceptualHowTos#6](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ConceptualHowTos/CS/form1.cs#6)]
  [!code-vb[System.Drawing.ConceptualHowTos#6](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ConceptualHowTos/VB/form1.vb#6)]  
   
 ## Compiling the Code  
+
  You cannot call this method in the <xref:System.Windows.Forms.Form.Load> event handler. The drawn content will not be redrawn if the form is resized or obscured by another form. To make your content automatically repaint, you should override the <xref:System.Windows.Forms.Control.OnPaint%2A> method.  
   
 ## Robust Programming  
+
  You should always call <xref:System.IDisposable.Dispose%2A> on any objects you create that consume system resources. In the previous example, the <xref:System.Drawing.Pen> and <xref:System.Drawing.Graphics> objects were created and then disposed.  
   
 ## See also

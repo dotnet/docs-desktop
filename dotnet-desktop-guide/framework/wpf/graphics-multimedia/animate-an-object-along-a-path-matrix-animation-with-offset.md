@@ -12,9 +12,11 @@ helpviewer_keywords:
 ms.assetid: 1bca90ef-9832-4128-8ed6-62908e7ec146
 ---
 # How to: Animate an Object Along a Path (Matrix Animation with Offset Accumulation)
+
 This example shows how to use the <xref:System.Windows.Media.Animation.MatrixAnimationUsingPath> class to animate an object along a path and have that animation accumulate its offset values as it repeats.  
   
 ## Example  
+
  The following example uses the <xref:System.Windows.Media.Animation.MatrixAnimationUsingPath> object to animate the <xref:System.Windows.Media.MatrixTransform.Matrix%2A> property of a <xref:System.Windows.Media.MatrixTransform> applied to a button. As a result, a button moves along a curved path.  
   
  In addition, the example sets the <xref:System.Windows.Media.Animation.MatrixAnimationUsingPath.IsOffsetCumulative%2A> property to `true`, which causes the offset of the animated matrix to accumulate as the animation repeats. Because the offset accumulates, the button moves farther across the screen when the animation repeats, rather than resetting to the starting position.  

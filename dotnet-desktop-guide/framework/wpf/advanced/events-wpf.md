@@ -11,9 +11,11 @@ helpviewer_keywords:
 ms.assetid: d3b93c6f-aa6b-486d-a010-d097ea8a516b
 ---
 # Events (WPF)
+
 Windows Presentation Foundation (WPF) introduces routed events that can invoke handlers that exist on various listeners in the element tree of an application.  
   
 ## In This Section  
+
  [Routed Events Overview](routed-events-overview.md)  
  [Attached Events Overview](attached-events-overview.md)  
  [Object Lifetime Events](object-lifetime-events.md)  
@@ -25,6 +27,7 @@ Windows Presentation Foundation (WPF) introduces routed events that can invoke h
  [How-to Topics](events-how-to-topics.md)  
   
 ## Reference  
+
  <xref:System.Windows.RoutedEvent>  
   
  <xref:System.Windows.EventManager>  
@@ -32,6 +35,7 @@ Windows Presentation Foundation (WPF) introduces routed events that can invoke h
  <xref:System.Windows.RoutingStrategy>  
   
 ## Related Sections  
+
  [WPF Architecture](wpf-architecture.md)  
   [XAML in WPF](xaml-in-wpf.md)  
   [Base Elements](base-elements.md)  

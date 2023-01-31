@@ -8,9 +8,11 @@ helpviewer_keywords:
 ms.assetid: 2974ddb3-2997-4713-8fd2-e93d549c58a8
 ---
 # How to: Enumerate Drawing Content of a Visual
+
 The <xref:System.Windows.Media.Drawing> object provide an object model for enumerating the contents of a <xref:System.Windows.Media.Visual>.  
   
 ## Example  
+
  The following example uses the <xref:System.Windows.Media.VisualTreeHelper.GetDrawing%2A> method to retrieve the <xref:System.Windows.Media.DrawingGroup> value of a <xref:System.Windows.Media.Visual> and enumerate it.  
   
 > [!NOTE]

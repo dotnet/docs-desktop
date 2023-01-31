@@ -11,9 +11,11 @@ helpviewer_keywords:
 ms.assetid: b641e96c-c2f6-42ea-9c5d-bac81176ad65
 ---
 # How to: Get the Default View of a Data Collection
+
 Views allow the same data collection to be viewed in different ways, depending on sorting, filtering, or grouping criteria. Every collection has one shared default view, which is used as the actual binding source when a binding specifies a collection as its source. This example shows how to get the default view of a collection.  
   
 ## Example  
+
  To create the view, you need an object reference to the collection. This data object can be obtained by referencing your own code-behind object, by getting the data context, by getting a property of the data source, or by getting a property of the binding. This example shows how to get the <xref:System.Windows.FrameworkElement.DataContext%2A> of a data object and use it to directly obtain the default collection view for this collection.  
   
  [!code-csharp[CollectionView#2](~/samples/snippets/csharp/VS_Snippets_Wpf/CollectionView/CSharp/Page1.xaml.cs#2)]

@@ -9,9 +9,11 @@ helpviewer_keywords:
 ms.assetid: 066eb0ab-5f0e-439d-85c6-dca60af269fc
 ---
 # How to: Create a Composite Drawing
+
 This example shows how to use a <xref:System.Windows.Media.DrawingGroup> to create complex drawings by combining multiple <xref:System.Windows.Media.Drawing> objects into a single composite drawing.  
   
 ## Example  
+
  The following example uses a <xref:System.Windows.Media.DrawingGroup> to create a composite drawing from the <xref:System.Windows.Media.GeometryDrawing> and <xref:System.Windows.Media.ImageDrawing> objects. The following illustration shows the output that this example produces.  
   
  ![Illustration of a composite drawing showing a square filled with kiwi slices overlapping a black rimmed, green circle on the upper left with a black rimmed, green circle overlapping on the bottom right.](./media/graphicsmm-simple.jpg "graphicsmm_simple")  

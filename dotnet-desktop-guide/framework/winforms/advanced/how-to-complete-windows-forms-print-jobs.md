@@ -12,6 +12,7 @@ ms.assetid: 23ec74f7-34c5-4710-82a0-ee2914518548
 description: Learn how to complete Windows Forms print jobs by handling the EndPrint event of the PrintDocument component.
 ---
 # How to: Complete Windows Forms Print Jobs
+
 Frequently, word processors and other applications that involve printing will provide the option to display a message to users that a print job is complete. You can provide this functionality in your Windows Forms by handling the <xref:System.Drawing.Printing.PrintDocument.EndPrint> event of the <xref:System.Drawing.Printing.PrintDocument> component.  
   
  The following procedure requires that you have created a Windows-based application with a <xref:System.Drawing.Printing.PrintDocument> component on it, which is the standard way of enabling printing from a Windows-based application. For more information about printing from Windows Forms using the <xref:System.Drawing.Printing.PrintDocument> component, see [How to: Create Standard Windows Forms Print Jobs](how-to-create-standard-windows-forms-print-jobs.md).  

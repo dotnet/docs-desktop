@@ -20,6 +20,7 @@ helpviewer_keywords:
 ms.assetid: 0659fe00-9e0c-41c4-9118-016f2404c905
 ---
 # Matrix Representation of Transformations
+
 An m×n matrix is a set of numbers arranged in m rows and n columns. The following illustration shows several matrices.  
 
 :::image type="content" source="media/aboutgdip05-art04.gif" alt-text="Illustration of matrices.":::
@@ -65,6 +66,7 @@ An m×n matrix is a set of numbers arranged in m rows and n columns. The followi
  In GDI+ you can store an affine transformation in a <xref:System.Drawing.Drawing2D.Matrix> object. Because the third column of a matrix that represents an affine transformation is always (0, 0, 1), you specify only the six numbers in the first two columns when you construct a <xref:System.Drawing.Drawing2D.Matrix> object. The statement `Matrix myMatrix = new Matrix(0, 1, -1, 0, 3, 4)` constructs the matrix shown in the preceding figure.  
   
 ## Composite Transformations  
+
  A composite transformation is a sequence of transformations, one followed by the other. Consider the matrices and transformations in the following list:  
   
 | Matrix | Transformation |  

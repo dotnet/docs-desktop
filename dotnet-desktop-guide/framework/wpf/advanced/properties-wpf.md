@@ -12,6 +12,7 @@ helpviewer_keywords:
 ms.assetid: d6e0197f-f2c4-48ed-b45b-b9cdb64aab1c
 ---
 # Properties (WPF)
+
 Windows Presentation Foundation (WPF) provides a set of services that can be used to extend the functionality of a common language runtime (CLR) property. Collectively, these services are typically referred to as the WPF property system. A property that is backed by the WPF property system is known as a dependency property.  
   
 ## In This Section  
@@ -32,6 +33,7 @@ Windows Presentation Foundation (WPF) provides a set of services that can be use
 - [How-to Topics](properties-how-to-topics.md)
   
 ## Reference  
+
  <xref:System.Windows.DependencyProperty>  
   
  <xref:System.Windows.PropertyMetadata>  
@@ -41,6 +43,7 @@ Windows Presentation Foundation (WPF) provides a set of services that can be use
  <xref:System.Windows.DependencyObject>  
   
 ## Related Sections  
+
  [WPF Architecture](wpf-architecture.md)  
   [XAML in WPF](xaml-in-wpf.md)  
   [Base Elements](base-elements.md)  

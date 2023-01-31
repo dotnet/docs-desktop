@@ -10,9 +10,11 @@ helpviewer_keywords:
 ms.assetid: 051c6518-e0ca-426b-855c-f9bf70972970
 ---
 # MonthCalendar Control (Windows Forms)
+
 The Windows Forms `MonthCalendar` control presents an intuitive graphical interface for users to view and set date information. The control displays a grid containing the numbered days of the month, arranged in columns underneath the days of the week. You can select a different month by clicking the arrow buttons on either side of the month caption. Unlike the similar <xref:System.Windows.Forms.DateTimePicker> control, you can select a range of dates with this control; however, the <xref:System.Windows.Forms.DateTimePicker> control allows you to set times as well as dates.  
   
 ## In This Section  
+
  [MonthCalendar Control Overview](monthcalendar-control-overview-windows-forms.md)  
  Introduces the general concepts of the `MonthCalendar` control, which allows users to view and set date information for an application.  
   
@@ -29,10 +31,12 @@ The Windows Forms `MonthCalendar` control presents an intuitive graphical interf
  Explains how to programmatically select a range of dates from the `MonthCalendar` control.  
   
 ## Reference  
+
  <xref:System.Windows.Forms.MonthCalendar>  
  Provides reference information on the class and its members.  
   
 ## Related Sections  
+
  [Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)  
  Provides a complete list of Windows Forms controls, with links to information on their use.  
   

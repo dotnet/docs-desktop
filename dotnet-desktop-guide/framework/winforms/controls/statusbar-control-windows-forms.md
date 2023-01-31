@@ -8,12 +8,14 @@ ms.assetid: 6f543e27-cf78-4b7f-b4d0-6a8030155d48
 description: Learn how the StatusBar control in Windows Forms is used as an area in which an application can display status information.
 ---
 # StatusBar Control (Windows Forms)
+>
 > [!NOTE]
 > The <xref:System.Windows.Forms.ToolStripStatusLabel> control replaces and adds functionality to the <xref:System.Windows.Forms.StatusBar> control; however, the <xref:System.Windows.Forms.StatusBar> control is retained for both backward compatibility and future use, if you choose.  
   
  The Windows Forms <xref:System.Windows.Forms.StatusBar> control is used on forms as an area, usually displayed at the bottom of a window, in which an application can display various kinds of status information. <xref:System.Windows.Forms.StatusBar> controls can have status-bar panels on them that display icons to indicate state, or a series of icons in an animation that indicate a process is working; for example, Microsoft Word indicating that the document is being saved.  
   
 ## In This Section  
+
  [StatusBar Control Overview](statusbar-control-overview-windows-forms.md)  
  Introduces the general concepts of the <xref:System.Windows.Forms.StatusBar> control, which enables users to see relevant information for the control that has focus.  
   
@@ -30,6 +32,7 @@ description: Learn how the StatusBar control in Windows Forms is used as an area
  Explains how to programmatically control the data within status-bar panels.  
   
 ## Reference  
+
  <xref:System.Windows.Forms.StatusBar>  
  Provides reference information on the class and its members.  
   
@@ -37,5 +40,6 @@ description: Learn how the StatusBar control in Windows Forms is used as an area
  Replaces and adds functionality to the <xref:System.Windows.Forms.StatusBar> control.  
   
 ## Related Sections  
+
  [Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)  
  Provides a complete list of Windows Forms controls, with links to information on their use.

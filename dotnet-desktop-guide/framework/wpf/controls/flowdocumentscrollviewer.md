@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: 727b0a0a-b845-4aa9-9fd4-98f42ed738b4
 ---
 # FlowDocumentScrollViewer
+
 The <xref:System.Windows.Controls.FlowDocumentScrollViewer> control is used to view <xref:System.Windows.Documents.FlowDocument> content in a scrolling container. Contrast with <xref:System.Windows.Controls.FlowDocumentPageViewer>, which views content on a per page basis.  
   
 ## See also

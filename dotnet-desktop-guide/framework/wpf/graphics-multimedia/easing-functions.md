@@ -18,6 +18,7 @@ helpviewer_keywords:
 ms.assetid: 075b9c2b-82c4-43fa-b3cd-de0b6236eb38
 ---
 # Easing Functions
+
 Easing functions allow you to apply custom mathematical formulas to your animations. For example, you may want an object to realistically bounce or behave as though it were on a spring. You could use Key-Frame or even From/To/By animations to approximate these effects but it would take a significant amount of work and the animation would be less accurate than using a mathematical formula.  
   
  Besides creating your own custom easing function by inheriting from <xref:System.Windows.Media.Animation.EasingFunctionBase>, you can use one of several easing functions provided by the runtime to create common effects.  
