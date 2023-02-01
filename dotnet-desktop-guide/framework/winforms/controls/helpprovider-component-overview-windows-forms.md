@@ -13,6 +13,7 @@ helpviewer_keywords:
 ms.assetid: 6b10c2cc-c577-4cb5-9669-e37b33416af9
 ---
 # HelpProvider Component Overview (Windows Forms)
+
 The Windows Forms [HelpProvider](helpprovider-component-windows-forms.md) component is used to associate an HTML Help 1.x Help file (either a .chm file, produced with the HTML Help Workshop, or an .htm file) with your Windows application. You can provide help in a variety of ways:  
   
 - Provide context-sensitive Help for controls on Windows Forms.  
@@ -22,6 +23,7 @@ The Windows Forms [HelpProvider](helpprovider-component-windows-forms.md) compon
 - Open a Help file to specific areas, such as the main page of a Table of Contents, the Index, or a search function.  
   
 ## Using the Help Provider  
+
  Adding a <xref:System.Windows.Forms.HelpProvider> component to your Windows Form allows the other controls on the form to expose the Help properties of the <xref:System.Windows.Forms.HelpProvider> component. This enables you to provide help for the controls on your Windows Form. You can associate a Help file with the <xref:System.Windows.Forms.HelpProvider> component using the <xref:System.Windows.Forms.HelpProvider.HelpNamespace%2A> property. You specify the type of Help provided by calling <xref:System.Windows.Forms.HelpProvider.SetHelpNavigator%2A> and providing a value from the <xref:System.Windows.Forms.HelpNavigator> enumeration for the specified control. You provide the keyword or topic for Help by calling the <xref:System.Windows.Forms.HelpProvider.SetHelpKeyword%2A> method.  
   
  Optionally, to associate a specific Help string with another control, use the <xref:System.Windows.Forms.HelpProvider.SetHelpString%2A> method. The string that you associate with a control using this method is displayed in a pop-up window when the user presses the F1 key while the control has focus.  

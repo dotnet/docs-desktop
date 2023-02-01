@@ -11,6 +11,7 @@ Windows Presentation Foundation (WPF) has built in support for processing Window
  To disable WPF listening to stylus input, remove any tablet support added by the WPF window.  
   
 ## Example  
+
  The following sample code shows how to remove the default tablet platform support by using reflection.  
   
 ```csharp  

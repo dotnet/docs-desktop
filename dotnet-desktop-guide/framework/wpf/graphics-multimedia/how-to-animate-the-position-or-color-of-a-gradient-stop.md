@@ -15,9 +15,11 @@ helpviewer_keywords:
 ms.assetid: 6f5b8b47-6c32-4b8e-98ee-fdf6515ec843
 ---
 # How to: Animate the Position or Color of a Gradient Stop
+
 This example shows how to animate the <xref:System.Windows.Media.GradientStop.Color%2A> and <xref:System.Windows.Media.GradientStop.Offset%2A> of <xref:System.Windows.Media.GradientStop> objects.  
   
 ## Example  
+
  The following example animates three gradient stops inside a <xref:System.Windows.Media.LinearGradientBrush>. The example uses three animations, each of which animates a different gradient stop:  
   
 - The first animation, a <xref:System.Windows.Media.Animation.DoubleAnimation>, animates the first gradient stop's <xref:System.Windows.Media.GradientStop.Offset%2A> from 0.0 to 1.0 and then back to 0.0. As a result, the first color in the gradient shifts from the left side to the right side of the rectangle and then back to the left side.  

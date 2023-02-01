@@ -7,9 +7,11 @@ helpviewer_keywords:
 ms.assetid: 1c6cabf0-02ee-4bbc-9574-b54bb7f5b19e
 ---
 # DataGridView Control Architecture (Windows Forms)
+
 The <xref:System.Windows.Forms.DataGridView> control and its related classes are designed to be a flexible, extensible system for displaying and editing tabular data. These classes are all contained in the <xref:System.Windows.Forms?displayProperty=nameWithType> namespace, and they are all named with the "DataGridView" prefix.  
   
 ## Architecture Elements  
+
  The primary <xref:System.Windows.Forms.DataGridView> companion classes derive from <xref:System.Windows.Forms.DataGridViewElement>. The following object model illustrates the <xref:System.Windows.Forms.DataGridViewElement> inheritance hierarchy.  
   
  ![Diagram that shows the DataGridViewElement Object Model hierarchy.](./media/datagridview-control-architecture-windows-forms/datagridviewelement-object-model.gif)  
@@ -19,6 +21,7 @@ The <xref:System.Windows.Forms.DataGridView> control and its related classes are
  The following sections describe the <xref:System.Windows.Forms.DataGridView> companion classes in more detail.  
   
 ### DataGridViewElementStates  
+
  The <xref:System.Windows.Forms.DataGridViewElementStates> enumeration contains the following values:  
   
 - <xref:System.Windows.Forms.DataGridViewElementStates.None>  
@@ -38,11 +41,13 @@ The <xref:System.Windows.Forms.DataGridView> control and its related classes are
  The values of this enumeration can be combined with the bitwise logical operators, so the <xref:System.Windows.Forms.DataGridViewElement.State%2A> property can express more than one state at once. For example, a <xref:System.Windows.Forms.DataGridViewElement> can be simultaneously <xref:System.Windows.Forms.DataGridViewElementStates.Frozen>, <xref:System.Windows.Forms.DataGridViewElementStates.Selected>, and <xref:System.Windows.Forms.DataGridViewElementStates.Visible>.  
   
 ### Cells and Bands  
+
  The <xref:System.Windows.Forms.DataGridView> control comprises two fundamental kinds of objects: cells and bands. All cells derive from the <xref:System.Windows.Forms.DataGridViewCell> base class. The two kinds of bands, <xref:System.Windows.Forms.DataGridViewColumn> and <xref:System.Windows.Forms.DataGridViewRow>, both derive from the <xref:System.Windows.Forms.DataGridViewBand> base class.  
   
  The <xref:System.Windows.Forms.DataGridView> control interoperates with several classes, but the most commonly encountered are <xref:System.Windows.Forms.DataGridViewCell>, <xref:System.Windows.Forms.DataGridViewColumn>, and <xref:System.Windows.Forms.DataGridViewRow>.  
   
 ### DataGridViewCell  
+
  The cell is the fundamental unit of interaction for the <xref:System.Windows.Forms.DataGridView>. Display is centered on cells, and data entry is often performed through cells. You can access cells by using the <xref:System.Windows.Forms.DataGridViewRow.Cells%2A> collection of the <xref:System.Windows.Forms.DataGridViewRow> class, and you can access the selected cells by using the <xref:System.Windows.Forms.DataGridView.SelectedCells%2A> collection of the <xref:System.Windows.Forms.DataGridView> control. The following object model illustrates this usage and shows the <xref:System.Windows.Forms.DataGridViewCell> inheritance hierarchy.  
   
  ![Diagram that shows the DataGridViewCell Object Model hierarchy.](./media/datagridview-control-architecture-windows-forms/datagridviewcell-object-model.gif)  
@@ -76,6 +81,7 @@ The <xref:System.Windows.Forms.DataGridView> control and its related classes are
 - Your custom cell types  
   
 ### DataGridViewColumn  
+
  The schema of the <xref:System.Windows.Forms.DataGridView> control's attached data store is expressed in the <xref:System.Windows.Forms.DataGridView> control's columns. You can access the <xref:System.Windows.Forms.DataGridView> control's columns by using the <xref:System.Windows.Forms.DataGridView.Columns%2A> collection. You can access the selected columns by using the <xref:System.Windows.Forms.DataGridView.SelectedColumns%2A> collection. The following object model illustrates this usage and shows the <xref:System.Windows.Forms.DataGridViewColumn> inheritance hierarchy.  
   
  ![Diagram that shows the DataGridViewColumn Object Model hierarchy.](./media/datagridview-control-architecture-windows-forms/datagridviewcolumn-object-model.gif)  
@@ -99,6 +105,7 @@ The <xref:System.Windows.Forms.DataGridView> control and its related classes are
 - Your custom column types  
   
 ### DataGridView Editing Controls  
+
  Cells that support advanced editing functionality typically use a hosted control that is derived from a Windows Forms control. These controls also implement the <xref:System.Windows.Forms.IDataGridViewEditingControl> interface. The following object model illustrates the usage of these controls.  
   
  ![Diagram showing the DataGridView Editing Control Object Model hierarchy.](./media/datagridview-control-architecture-windows-forms/datagridviewediting-object-model.gif)  
@@ -123,6 +130,7 @@ The <xref:System.Windows.Forms.DataGridView> control and its related classes are
 |<xref:System.Windows.Forms.DataGridViewTextBoxCell>|<xref:System.Windows.Forms.DataGridViewTextBoxEditingControl>|<xref:System.Windows.Forms.DataGridViewTextBoxColumn>|  
   
 ### DataGridViewRow  
+
  The <xref:System.Windows.Forms.DataGridViewRow> class displays a record's data fields from the data store to which the <xref:System.Windows.Forms.DataGridView> control is attached. You can access the <xref:System.Windows.Forms.DataGridView> control's rows by using the <xref:System.Windows.Forms.DataGridView.Rows%2A> collection. You can access the selected rows by using the <xref:System.Windows.Forms.DataGridView.SelectedRows%2A> collection. The following object model illustrates this usage and shows the <xref:System.Windows.Forms.DataGridViewRow> inheritance hierarchy.  
   
  ![Diagram that shows the DataGridViewRow Object Model hierarchy.](./media/datagridview-control-architecture-windows-forms/datagridviewrow-object-model.gif)

@@ -9,10 +9,13 @@ helpviewer_keywords:
 ms.assetid: ead2d9ac-b709-4ec1-a924-39927a29d02f
 ---
 # Localization Attributes and Comments
+
 WPF Localization API to indicate which resources are to be localized. Free-form comments are any information that the application author wants to include.  
 
 <a name="Localizer_Comments_"></a>
+
 ## Add Localization Comments
+
  If markup application authors have requirements for specific elements in XAML, such as constraints on text length, font family, or font size, they can convey this information to localizers with comments in the XAML code. The process for adding comments to source code is as follows:  
   
 1. Application developer adds localization comments to XAML source code.  
@@ -66,6 +69,7 @@ WPF Localization API to indicate which resources are to be localized. Free-form 
 |FontSize (Trademark font size)|The application author indicates that the font size property should follow the standard trademark size.|  
   
 ### Localizability Attributes  
+
  The information in Localization.Attributes contains a list of pairs: the targeted value name and the associated localizability values. The target name can be a property name or the special $Content name. If it is a property name, the targeted value is the value of the property. If it is $Content, the target value is the content of the element.  
   
  There are three types of attributes:  
@@ -90,7 +94,9 @@ WPF Localization API to indicate which resources are to be localized. Free-form 
 |NeverLocalize|Current value cannot be localized. This category is inherited by the children of an element.|  
   
 <a name="Localization_Comments"></a>
+
 ## Localization Comments  
+
  Localization.Comments contains free-form strings concerning the targeted value. Application developers can add information to give localizers hints about how the applications text should be translated. The format of the comments can be any string surrounded by "()". Use '\\' to escape characters.  
   
 ## See also

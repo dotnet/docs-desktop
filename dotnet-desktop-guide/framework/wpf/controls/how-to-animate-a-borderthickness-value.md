@@ -11,9 +11,11 @@ helpviewer_keywords:
 ms.assetid: fd021978-f74b-4e7b-a7f7-3987dcad9e0f
 ---
 # How to: Animate a BorderThickness Value
+
 This example shows how to animate changes to the thickness of a border by using the <xref:System.Windows.Media.Animation.ThicknessAnimation> class.  
   
 ## Example  
+
  The following example animates the thickness of a border by using <xref:System.Windows.Media.Animation.ThicknessAnimation>. The example uses the <xref:System.Windows.Controls.Border.BorderThickness%2A> property of <xref:System.Windows.Controls.Border>.  
   
  [!code-csharp[BasicAnimations_snip#ThicknessAnimationWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/BasicAnimations_snip/CSharp/ThicknessAnimationExample.cs#thicknessanimationwholepage)]

@@ -10,9 +10,11 @@ helpviewer_keywords:
 ms.assetid: a5f9ab1a-d14c-4816-8540-3c5b8c8143d5
 ---
 # Key-Frame Animation How-to Topics
+
 The topics in this section demonstrate how to use key frame animations to animate more than two property values and control interpolation.  
   
 ## In This Section  
+
  [Animate an Object by Using Key Frames](how-to-animate-an-object-by-using-key-frames.md)  
  [Animate a Boolean by Using Key Frames](how-to-animate-a-boolean-by-using-key-frames.md)  
  [Animate a Double by Using Key Frames](how-to-animate-a-double-by-using-key-frames.md)  
@@ -26,6 +28,7 @@ The topics in this section demonstrate how to use key frame animations to animat
  [Control Key-Frame Animation Timing](how-to-control-key-frame-animation-timing.md)  
   
 ## Reference  
+
  <xref:System.Windows.Media.Animation.DoubleAnimationUsingKeyFrames>  
   
  <xref:System.Windows.Media.Animation.Storyboard>  

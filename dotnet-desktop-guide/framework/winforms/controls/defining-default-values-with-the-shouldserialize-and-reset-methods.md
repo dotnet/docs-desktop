@@ -11,6 +11,7 @@ helpviewer_keywords:
 ms.assetid: 7b6c5e00-3771-46b4-9142-5a80d5864a5e
 ---
 # Defining Default Values with the ShouldSerialize and Reset Methods
+
 `ShouldSerialize` and `Reset` are optional methods that you can provide for a property, if the property does not have a simple default value. If the property has a simple default value, you should apply the <xref:System.ComponentModel.DefaultValueAttribute> and supply the default value to the attribute class constructor instead. Either of these mechanisms enables the following features in the designer:
 
 - The property provides visual indication in the property browser if it has been modified from its default value.

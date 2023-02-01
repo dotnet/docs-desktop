@@ -12,9 +12,11 @@ helpviewer_keywords:
 ms.assetid: c430a657-692f-44bd-a549-2341f92d6115
 ---
 # DatePicker Styles and Templates
+
 This topic describes the styles and templates for the <xref:System.Windows.Controls.DatePicker> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [Create a template for a control](how-to-create-apply-template.md).  
   
 ## DatePicker Parts  
+
  The following table lists the named parts for the <xref:System.Windows.Controls.DatePicker> control.  
   
 |Part|Type|Description|  
@@ -25,6 +27,7 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 |PART_Popup|<xref:System.Windows.Controls.Primitives.Popup>|The popup for the <xref:System.Windows.Controls.DatePicker> control.|  
   
 ## DatePicker States  
+
  The following table lists the visual states for the <xref:System.Windows.Controls.DatePicker> control.  
   
 |VisualState Name|VisualStateGroup Name|Description|  
@@ -36,6 +39,7 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 |InvalidUnfocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` has the control does not have focus.|  
   
 ## DatePickerTextBox Parts  
+
  The following table lists the named parts for the <xref:System.Windows.Controls.Primitives.DatePickerTextBox> control.  
   
 |Part|Type|Description|  
@@ -44,6 +48,7 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 |PART_ContentElement|<xref:System.Windows.FrameworkElement>|A visual element that can contain a <xref:System.Windows.FrameworkElement>. The text of the <xref:System.Windows.Controls.TextBox> is displayed in this element.|  
   
 ## DatePickerTextBox States  
+
  The following table lists the visual states for the <xref:System.Windows.Controls.Primitives.DatePickerTextBox> control.  
   
 |VisualState Name|VisualStateGroup Name|Description|  
@@ -61,6 +66,7 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 |InvalidUnfocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` and the control does not have focus.|  
   
 ## DatePicker ControlTemplate Example  
+
  The following example shows how to define a <xref:System.Windows.Controls.ControlTemplate> for the <xref:System.Windows.Controls.DatePicker> control.  
   
  [!code-xaml[ControlTemplateExamples#DatePicker](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/datepicker.xaml#datepicker)]  

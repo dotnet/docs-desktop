@@ -12,14 +12,17 @@ helpviewer_keywords:
 ms.assetid: d2387356-2171-4785-822a-7247e024b4ee
 ---
 # ListView Styles and Templates
+
 This topic describes the styles and templates for the <xref:System.Windows.Controls.ListView> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [Create a template for a control](how-to-create-apply-template.md).  
   
 ## ListView Parts  
+
  The <xref:System.Windows.Controls.ListView> control does not have any named parts.  
   
  When you create a <xref:System.Windows.Controls.ControlTemplate> for a <xref:System.Windows.Controls.ListView>, your template might contain an <xref:System.Windows.Controls.ItemsPresenter> within a <xref:System.Windows.Controls.ScrollViewer>. (The <xref:System.Windows.Controls.ItemsPresenter> displays each item in the <xref:System.Windows.Controls.ListView>; the <xref:System.Windows.Controls.ScrollViewer> enables scrolling within the control).  If the <xref:System.Windows.Controls.ItemsPresenter> is not the direct child of the <xref:System.Windows.Controls.ScrollViewer>, you must give the <xref:System.Windows.Controls.ItemsPresenter> the name, `ItemsPresenter`.  
   
 ## ListView States  
+
  The following table lists the visual states for the <xref:System.Windows.Controls.ListView> control.  
   
 |VisualState Name|VisualStateGroup Name|Description|  
@@ -29,9 +32,11 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 |InvalidUnfocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` has the control does not have focus.|  
   
 ## ListViewItem Parts  
+
  The <xref:System.Windows.Controls.ListViewItem> control does not have any named parts.  
   
 ## ListViewItem States  
+
  The following table lists the states for the <xref:System.Windows.Controls.ListViewItem> control.  
   
 |VisualState Name|VisualStateGroup Name|Description|  
@@ -49,6 +54,7 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 |InvalidUnfocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` has the control does not have focus.|  
   
 ## ListView ControlTemplate Examples  
+
  The following example shows how to define a <xref:System.Windows.Controls.ControlTemplate> for the <xref:System.Windows.Controls.ListView> control and its associated types.  
   
  [!code-xaml[ControlTemplateExamples#ListView](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/listview.xaml#listview)]  

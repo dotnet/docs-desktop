@@ -10,12 +10,15 @@ ms.assetid: 38ce284a-4303-46dd-b699-c9365b22a7dc
 description: Learn how Windows Presentation Foundation provides a straightforward mechanism for hosting WPF content in a Win32 window.
 ---
 # Walkthrough: Hosting WPF Content in Win32
+
 WPF functionality to your application rather than rewriting your original code. WPF provides a straightforward mechanism for hosting WPF content in a Win32 window.  
   
  This tutorial describes how to write a sample application, [Hosting WPF Content in a Win32 Window Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Migration%20and%20Interoperability/Win32HostingWPFPage), that hosts WPF content in a Win32 window. You can extend this sample to host any Win32 window. Because it involves mixing managed and unmanaged code, the application is written in C++/CLI.  
 
 <a name="requirements"></a>
+
 ## Requirements  
+
  This tutorial assumes a basic familiarity with both WPF and Win32 programming. For a basic introduction to WPF programming, see [Getting Started](../getting-started/index.md). For an introduction to Win32 programming, you should reference any of the numerous books on the subject, in particular *Programming Windows* by Charles Petzold.  
   
  Because the sample that accompanies this tutorial is implemented in C++/CLI, this tutorial assumes familiarity with the use of C++ to program the Windows API plus an understanding of managed code programming. Familiarity with C++/CLI is helpful but not essential.  
@@ -24,7 +27,9 @@ WPF functionality to your application rather than rewriting your original code. 
 > This tutorial includes a number of code examples from the associated sample. However, for readability, it does not include the complete sample code. For the complete sample code, see [Hosting WPF Content in a Win32 Window Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Migration%20and%20Interoperability/Win32HostingWPFPage).  
   
 <a name="basic_procedure"></a>
+
 ## The Basic Procedure  
+
  This section outlines the basic procedure you use to host WPF content in a Win32 window. The remaining sections explain the details of each step.  
   
  The key to hosting WPF content on a Win32 window is the <xref:System.Windows.Interop.HwndSource> class. This class wraps the WPF content in a Win32 window, allowing it to be incorporated into your WPF in a single application.  
@@ -57,7 +62,9 @@ WPF functionality to your application rather than rewriting your original code. 
 > You can also use WPF content. However, you will have to compile it separately as a dynamic-link library (DLL) and reference that DLL from your Win32 application. The remainder of the procedure is similar to that outlined above.
 
 <a name="implementing_the_application"></a>
+
 ## Implementing the Host Application
+
  This section describes how to host WPF content in a basic Win32 application. The content itself is implemented in C++/CLI as a managed class. For the most part, it is straightforward WPF programming. The key aspects of the content implementation are discussed in [Implementing the WPF Content](#implementing_the_wpf_page).
 
 - [The Basic Application](#the_basic_application)
@@ -69,7 +76,9 @@ WPF functionality to your application rather than rewriting your original code. 
 - [Communicating with the WPF Content](#communicating_with_the_page)
 
 <a name="the_basic_application"></a>
+
 ### The Basic Application
+
  The starting point for the host application was to create a Visual Studio 2005 template.
 
 1. Open Visual Studio 2005, and select **New Project** from the **File** menu.
@@ -108,7 +117,9 @@ WPF functionality to your application rather than rewriting your original code. 
  [!code-cpp[Win32HostingWPFPage#WinMain](~/samples/snippets/cpp/VS_Snippets_Wpf/Win32HostingWPFPage/CPP/Win32HostingWPFPage.cpp#winmain)]
 
 <a name="hosting_the_wpf_page"></a>
+
 ### Hosting the WPF Content
+
  The WPF content is a simple address entry application. It consists of several <xref:System.Windows.Controls.TextBox> controls to take user name, address, and so on. There are also two <xref:System.Windows.Controls.Button> controls, **OK** and **Cancel**. When the user clicks **OK**, the button's <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event handler collects the data from the <xref:System.Windows.Controls.TextBox> controls, assigns it to corresponding properties, and raises a custom event, `OnButtonClicked`. When the user clicks **Cancel**, the handler simply raises `OnButtonClicked`. The event argument object for `OnButtonClicked` contains a Boolean field that indicates which button was clicked.
 
  The code to host the WPF content is implemented in a handler for the [WM_CREATE](/windows/desktop/winmsg/wm-create) notification on the host window.
@@ -133,7 +144,9 @@ WPF functionality to your application rather than rewriting your original code. 
  The final line of code shown returns the window handle (HWND) that is associated with the <xref:System.Windows.Interop.HwndSource> object. You can use this handle from your Win32 code to send messages to the hosted window, although the sample does not do so. The <xref:System.Windows.Interop.HwndSource> object raises an event every time it receives a message. To process the messages, call the <xref:System.Windows.Interop.HwndSource.AddHook%2A> method to attach a message handler and then process the messages in that handler.
 
 <a name="holding_a_reference"></a>
+
 ### Holding a Reference to the WPF Content
+
  For many applications, you will want to communicate with the WPF content later. For example, you might want to modify the WPF content properties, or perhaps have the <xref:System.Windows.Interop.HwndSource> object host different WPF content. To do this, you need a reference to the <xref:System.Windows.Interop.HwndSource> object or the WPF content. The <xref:System.Windows.Interop.HwndSource> object and its associated WPF content remain in memory until you destroy the window handle. However, the variable you assign to the <xref:System.Windows.Interop.HwndSource> object will go out of scope as soon as you return from the window procedure. The customary way to handle this issue with Win32 applications is to use a static or global variable. Unfortunately, you cannot assign a managed object to those types of variables. You can assign the window handle associated with <xref:System.Windows.Interop.HwndSource> object to a global or static variable, but that doe not provide access to the object itself.
 
  The simplest solution to this issue is to implement a managed class that contains a set of static fields to hold references to any managed objects that you need access to. The sample uses the `WPFPageHost` class to hold a reference to the WPF content, plus the initial values of a number of its properties that might be changed later by the user. This is defined in the header.
@@ -143,7 +156,9 @@ WPF functionality to your application rather than rewriting your original code. 
  The latter part of the `GetHwnd` function assigns values to those fields for later use while `myPage` is still in scope.
 
 <a name="communicating_with_the_page"></a>
+
 ### Communicating with the WPF Content
+
  There are two types of communication with the UI that allows the user to change various WPF content properties, such as the background color or default font size.
 
  As mentioned above, when the user clicks either button the WPF content raises an `OnButtonClicked` event. The application attaches a handler to this event to receive these notifications. If the **OK** button was clicked, the handler gets the user information from the WPF content and displays it in a set of static controls.
@@ -161,7 +176,9 @@ WPF functionality to your application rather than rewriting your original code. 
  To set the background color, get a reference to the WPF content (`hostedPage`) from `WPFPageHost` and set the background color property to the appropriate color. The sample uses three color options: the original color, light green, or light salmon. The original background color is stored as a static field in the `WPFPageHost` class. To set the other two, you create a new <xref:System.Windows.Media.SolidColorBrush> object and pass the constructor a static colors value from the <xref:System.Windows.Media.Colors> object.
 
 <a name="implementing_the_wpf_page"></a>
+
 ## Implementing the WPF Page
+
  You can host and use the WPF content without any knowledge of the actual implementation. If the WPF content had been packaged in a separate DLL, it could have been built in any common language runtime (CLR) language. Following is a brief walkthrough of the C++/CLI implementation that is used in the sample. This section contains the following subsections.
 
 - [Layout](#page_layout)
@@ -171,7 +188,9 @@ WPF functionality to your application rather than rewriting your original code. 
 - [Setting the WPF Properties](#set_page_properties)
 
 <a name="page_layout"></a>
+
 ### Layout
+
  The UI elements in the WPF content consist of five <xref:System.Windows.Controls.TextBox> controls, with associated <xref:System.Windows.Controls.Label> controls: Name, Address, City, State, and Zip. There are also two <xref:System.Windows.Controls.Button> controls, **OK** and **Cancel**
 
  The WPF content is implemented in the `WPFPage` class. Layout is handled with a <xref:System.Windows.Controls.Grid> layout element. The class inherits from <xref:System.Windows.Controls.Grid>, which effectively makes it the WPF content root element.
@@ -197,7 +216,9 @@ WPF functionality to your application rather than rewriting your original code. 
  [!code-cpp[Win32HostingWPFPage#WPFPageCtorButtonsEvents](~/samples/snippets/cpp/VS_Snippets_Wpf/Win32HostingWPFPage/CPP/WPFPage.cpp#wpfpagectorbuttonsevents)]
 
 <a name="returning_data_to_window"></a>
+
 ### Returning the Data to the Host Window
+
  When either button is clicked, its <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event is raised. The host window could simply attach handlers to these events and get the data directly from the <xref:System.Windows.Controls.TextBox> controls. The sample uses a somewhat less direct approach. It handles the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> within the WPF content, and then raises a custom event `OnButtonClicked`, to notify the WPF content. This allows the WPF content to do some parameter validation before notifying the host. The handler gets the text from the <xref:System.Windows.Controls.TextBox> controls and assigns it to public properties, from which the host can retrieve the information.
 
  The event declaration, in WPFPage.h:
@@ -209,7 +230,9 @@ WPF functionality to your application rather than rewriting your original code. 
  [!code-cpp[Win32HostingWPFPage#WPFPageButtonClicked](~/samples/snippets/cpp/VS_Snippets_Wpf/Win32HostingWPFPage/CPP/WPFPage.cpp#wpfpagebuttonclicked)]
 
 <a name="set_page_properties"></a>
+
 ### Setting the WPF Properties
+
  The Win32 host allows the user to change several WPF content properties. From the Win32 side, it is simply a matter of changing the properties. The implementation in the WPF content class is somewhat more complicated, because there is no single global property that controls the fonts for all controls. Instead, the appropriate property for each control is changed in the properties' set accessors. The following example shows the code for the `DefaultFontFamily` property. Setting the property calls a private method that in turn sets the <xref:System.Windows.Controls.Control.FontFamily%2A> properties for the various controls.
 
  From WPFPage.h:

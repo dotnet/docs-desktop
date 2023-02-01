@@ -14,6 +14,7 @@ helpviewer_keywords:
 ms.assetid: df60565e-5447-4110-92a6-be1f6ff5faa3
 ---
 # Walkthrough: Working with the MaskedTextBox Control
+
 Tasks illustrated in this walkthrough include:  
   
 - Initializing the <xref:System.Windows.Forms.MaskedTextBox> control  

@@ -12,13 +12,16 @@ ms.assetid: 9e8aa6b6-112c-4579-98d1-c974917df499
 description: Learn which WPF and Windows Forms interoperation scenarios are supported and which scenarios are not supported.
 ---
 # WPF and Windows Forms Interoperation
+
 WPF and Windows Forms present two different architectures for creating application interfaces. The <xref:System.Windows.Forms.Integration?displayProperty=nameWithType> namespace provides classes that enable common interoperation scenarios. The two key classes that implement interoperation capabilities are <xref:System.Windows.Forms.Integration.WindowsFormsHost> and <xref:System.Windows.Forms.Integration.ElementHost>. This topic describes which interoperation scenarios are supported and which scenarios are not supported.  
   
 > [!NOTE]
 > Special consideration is given to the *hybrid control* scenario. A hybrid control has a control from one technology nested in a control from the other technology. This is also called a *nested interoperation*. A *multilevel hybrid control* has more than one level of hybrid control nesting. An example of a multilevel nested interoperation is a Windows Forms control that contains a WPF control, which contains another Windows Forms control. Multilevel hybrid controls are not supported.  
 
 <a name="Windows_Presentation_Foundation_Application_Hosting"></a>
+
 ## Hosting Windows Forms Controls in WPF  
+
  The following interoperation scenarios are supported when a WPF control hosts a Windows Forms control:  
   
 - The WPF control may host one or more Windows Forms controls using XAML.  
@@ -40,6 +43,7 @@ WPF and Windows Forms present two different architectures for creating applicati
 - It may host hybrid controls using code.  
   
 ### Layout Support  
+
  The following list describes the known limitations when the  <xref:System.Windows.Forms.Integration.WindowsFormsHost> element attempts to integrate its hosted Windows Forms control into the WPF layout system.  
   
 - In some cases, Windows Forms controls cannot be resized, or can be sized only to specific dimensions. For example, a Windows Forms <xref:System.Windows.Forms.ComboBox> control supports only a single height, which is defined by the control's font size. In a WPF dynamic layout, which assumes that elements can stretch vertically, a hosted <xref:System.Windows.Forms.ComboBox> control will not stretch as expected.  
@@ -53,11 +57,13 @@ WPF and Windows Forms present two different architectures for creating applicati
 - Windows Forms controls support autoscaling based on the font size. In a WPF user interface, changing the font size does not resize the entire layout, although individual elements may dynamically resize.  
   
 ### Ambient Properties  
+
  Some of the ambient properties of WPF controls have Windows Forms equivalents. These ambient properties are propagated to the hosted Windows Forms controls and exposed as public properties on the <xref:System.Windows.Forms.Integration.WindowsFormsHost> control. The <xref:System.Windows.Forms.Integration.WindowsFormsHost> control translates each WPF ambient property into its Windows Forms equivalent.  
   
  For more information, see [Windows Forms and WPF Property Mapping](windows-forms-and-wpf-property-mapping.md).  
   
 ### Behavior  
+
  The following table describes interoperation behavior.  
   
 |Behavior|Supported|Not supported|  
@@ -76,7 +82,9 @@ WPF and Windows Forms present two different architectures for creating applicati
 |Drag-and-drop feature|All drag-and-drop operations work as usual. This includes operations between Windows Forms and WPF controls.|Not applicable.|  
   
 <a name="Windows_Forms_Application_Hosting_Windows"></a>
+
 ## Hosting WPF Controls in Windows Forms  
+
  The following interoperation scenarios are supported when a Windows Forms control hosts a WPF control:  
   
 - Hosting one or more WPF controls using code.  
@@ -96,11 +104,13 @@ WPF and Windows Forms present two different architectures for creating applicati
 - Hosting hybrid controls.  
   
 ### Ambient Properties  
+
  Some of the ambient properties of Windows Forms controls have WPF equivalents. These ambient properties are propagated to the hosted WPF controls and exposed as public properties on the <xref:System.Windows.Forms.Integration.ElementHost> control. The <xref:System.Windows.Forms.Integration.ElementHost> control translates each Windows Forms ambient property to its WPF equivalent.  
   
  For more information, see [Windows Forms and WPF Property Mapping](windows-forms-and-wpf-property-mapping.md).  
   
 ### Behavior  
+
  The following table describes interoperation behavior.  
   
 |Behavior|Supported|Not supported|  

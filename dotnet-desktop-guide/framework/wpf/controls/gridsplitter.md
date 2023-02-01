@@ -11,12 +11,15 @@ helpviewer_keywords:
 ms.assetid: 98b007e8-ea6b-41b5-8120-ca7134e8239f
 ---
 # GridSplitter
+
 The <xref:System.Windows.Controls.GridSplitter> redistributes space between columns or rows of a <xref:System.Windows.Controls.Grid> control.  
   
 ## In This Section  
+
  [How-to Topics](gridsplitter-how-to-topics.md)  
   
 ## Reference  
+
  <xref:System.Windows.Controls.GridSplitter>  
   
 ## Related Sections

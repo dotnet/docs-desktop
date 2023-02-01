@@ -10,15 +10,19 @@ helpviewer_keywords:
 ms.assetid: ea5f7826-7a92-4de9-9eee-10ef700ce7b6
 ---
 # TextBlock
+
 The <xref:System.Windows.Controls.TextBlock> control provides flexible text support for UI scenarios that do not require more than one paragraph of text.  
   
 ## In This Section  
+
  [TextBlock Overview](textblock-overview.md)  
   
 ## Reference  
+
  <xref:System.Windows.Controls.Label>  
   
 ## Related Sections  
+
  [Documents in WPF](../advanced/documents-in-wpf.md)  
   
  [Flow Document Overview](../advanced/flow-document-overview.md)

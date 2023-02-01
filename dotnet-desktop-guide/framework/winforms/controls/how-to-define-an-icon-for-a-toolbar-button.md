@@ -16,6 +16,7 @@ ms.assetid: 84db98b4-8566-49ce-b2c8-1fd66a5eb3a0
 description: Learn how to define an icon for a ToolBar button by adding images to the ImageList component and then associating that component with the ToolBar control.
 ---
 # How to: Define an Icon for a ToolBar Button
+>
 > [!NOTE]
 > The <xref:System.Windows.Forms.ToolStrip> control replaces and adds functionality to the <xref:System.Windows.Forms.ToolBar> control; however, the <xref:System.Windows.Forms.ToolBar> control is retained for both backward compatibility and future use, if you choose.  
   

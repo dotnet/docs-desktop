@@ -9,9 +9,11 @@ helpviewer_keywords:
 ms.assetid: 1451fce9-1965-4a03-b4d3-831b5fe4ad66
 ---
 # ClickOnce Deployment for Windows Forms
+
 The following topics describe ClickOnce, a technology used for easily deploying Windows Forms applications to client computers.  
   
 ## Related Sections  
+
  [Choosing a ClickOnce Deployment Strategy](/visualstudio/deployment/choosing-a-clickonce-deployment-strategy)  
  Presents several options for deploying ClickOnce applications.  
   

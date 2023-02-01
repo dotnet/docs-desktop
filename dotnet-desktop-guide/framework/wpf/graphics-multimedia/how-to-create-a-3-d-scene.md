@@ -12,6 +12,7 @@ helpviewer_keywords:
 ms.assetid: adb4a598-71a2-4dd5-b677-ea3fc11b78b2
 ---
 # How to: Create a 3D Scene
+
 This example shows how to create a 3D object that looks like a flat sheet of paper which has been rotated. A <xref:System.Windows.Controls.Viewport3D> along with the following components are used to create this simple 3D scene:  
   
 - A camera is created using a <xref:System.Windows.Media.Media3D.PerspectiveCamera>. The camera specifies what part of the 3D scene is viewable.  
@@ -23,11 +24,13 @@ This example shows how to create a 3D object that looks like a flat sheet of pap
 - A light is created to shine on the object using <xref:System.Windows.Media.Media3D.DirectionalLight>.  
   
 ## Create a 3D scene in XAML
+
  The code below shows how to create a 3D scene in XAML.  
   
  [!code-xaml[3DGallery_snip#Basic3DShapeExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/3DGallery_snip/CS/Basic3DShapeExample.xaml#basic3dshapeexamplewholepage)]  
   
 ## Create a 3D scene in procedural code
+
  The code below shows how to create the same 3D scene in procedural code.  
   
  [!code-csharp[3DGallery_procedural_snip#Basic3DShapeCodeExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/3DGallery_procedural_snip/CSharp/Basic3DShapeExample.cs#basic3dshapecodeexamplewholepage)]

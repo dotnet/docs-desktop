@@ -14,9 +14,11 @@ helpviewer_keywords:
 ms.assetid: 9f71cf5c-82da-488a-a04e-ef52c0817187
 ---
 # ListView Control (Windows Forms)
+
 The Windows Forms `ListView` control displays a list of items with icons. You can use a list view to create a user interface like the right pane of Windows Explorer.  
   
 ## In This Section  
+
  [ListView Control Overview](listview-control-overview-windows-forms.md)  
  Describes this control and its key features and properties.  
   
@@ -58,10 +60,12 @@ The Windows Forms `ListView` control displays a list of items with icons. You ca
 - [Walkthrough: Creating an Explorer Style Interface with the ListView and TreeView Controls Using the Designer](creating-an-explorer-style-interface-with-the-listview-and-treeview.md)  
   
 ## Reference  
+
  <xref:System.Windows.Forms.ListView> class  
  Describes this class and has links to all its members.  
   
 ## Related Sections  
+
  [How to: Add Custom Information to a TreeView or ListView Control (Windows Forms)](add-custom-information-to-a-treeview-or-listview-control-wf.md)  
  Describes how to inherit from an item in a list view or a node in a tree view in order to add any fields, methods, or constructors you need.  
   

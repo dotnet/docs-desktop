@@ -11,9 +11,11 @@ ms.assetid: e956242a-1e5b-4217-a3cf-5f3fb45d00ba
 description: Learn how to create a thumbnail by calling the GetThumbnailImage method of an Image object with supporting details and links.
 ---
 # How to: Create Thumbnail Images
+
 A thumbnail image is a small version of an image. You can create a thumbnail image by calling the <xref:System.Drawing.Image.GetThumbnailImage%2A> method of an <xref:System.Drawing.Image> object.  
   
 ## Example  
+
  The following example constructs an <xref:System.Drawing.Image> object from a JPG file. The original image has a width of 640 pixels and a height of 479 pixels. The code creates a thumbnail image that has a width of 100 pixels and a height of 100 pixels.  
   
  The following illustration shows the thumbnail image:  
@@ -27,6 +29,7 @@ A thumbnail image is a small version of an image. You can create a thumbnail ima
  [!code-vb[System.Drawing.WorkingWithImages#71](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.WorkingWithImages/VB/Class1.vb#71)]  
   
 ## Compiling the Code  
+
  The preceding example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs> `e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. To run the example, follow these steps:  
   
 1. Create a new Windows Forms application.  

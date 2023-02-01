@@ -12,6 +12,7 @@ helpviewer_keywords:
 ms.assetid: adcc6618-8a34-4ee1-bbe3-47e732de6a59
 ---
 # How to: Disable Tab Pages
+
 On some occasions, you will want to restrict access to data that is available within your Windows Forms application. One example of this might be when you have data displayed in the tab pages of a tab control; administrators could have information on a tab page that you would want to restrict from guest or lower-level users.  
   
 ### To disable tab pages programmatically  

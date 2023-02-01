@@ -14,6 +14,7 @@ ms.assetid: 71077349-eeb9-4344-ab29-b5df96df3314
 This example shows how to create a custom <xref:System.Windows.Controls.ListView.View%2A> mode for a <xref:System.Windows.Controls.ListView> control.  
   
 ## Example  
+
  You must use the <xref:System.Windows.Controls.ViewBase> class when you create a custom view for the <xref:System.Windows.Controls.ListView> control. The following example shows a view mode called `PlainView` that's derived from the <xref:System.Windows.Controls.ViewBase> class.  
   
  [!code-csharp[ListViewCustomView#PlainView](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewCustomView/CSharp/PlainView.cs#plainview)]

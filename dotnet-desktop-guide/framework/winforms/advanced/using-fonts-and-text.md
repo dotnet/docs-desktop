@@ -11,9 +11,11 @@ helpviewer_keywords:
 ms.assetid: d43640f3-da94-4df2-a29d-a9d021a1c069
 ---
 # Using Fonts and Text
+
 There are several classes offered by GDI+ and GDI for drawing text on Windows Forms. The GDI+ <xref:System.Drawing.Graphics> class has several <xref:System.Drawing.Graphics.DrawString%2A> methods that allow you to specify various features of text, such as location, bounding rectangle, font, and format. In addition, you can draw and measure text with GDI using the static <xref:System.Windows.Forms.TextRenderer.DrawText%2A> and <xref:System.Windows.Forms.TextRenderer.MeasureText%2A> methods offered by the `TextRenderer` class. The GDI methods also allow you to specify location, font, and format. You can choose either GDI or GDI+ for text rendering; however, GDI generally offers better performance and more accurate text measuring. Other classes that contribute to text rendering include `FontFamily`, `Font`, <xref:System.Drawing.StringFormat>, and `TextFormatFlags`.  
   
 ## In This Section  
+
  [How to: Construct Font Families and Fonts](how-to-construct-font-families-and-fonts.md)  
  Shows how to create `Font` and `FontFamily` objects.  
   
@@ -48,6 +50,7 @@ There are several classes offered by GDI+ and GDI for drawing text on Windows Fo
  Explains how to use antialiasing when drawing text.  
   
 ## Reference  
+
  <xref:System.Drawing.Font>  
  Describes this class and contains links to all of its members.  
   

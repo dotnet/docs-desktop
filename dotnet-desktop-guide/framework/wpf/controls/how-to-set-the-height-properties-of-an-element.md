@@ -11,7 +11,9 @@ helpviewer_keywords:
 ms.assetid: 5ab9e781-dbb8-469a-a3c8-cf38ce312647
 ---
 # How to: Set the Height Properties of an Element
+
 ## Example  
+
  This example visually shows the differences in rendering behavior among the four height-related properties in Windows Presentation Foundation (WPF).  
   
  The <xref:System.Windows.FrameworkElement> class exposes four properties that describe the height characteristics of an element. These four properties can conflict, and when they do, the value that takes precedence is determined as follows: the <xref:System.Windows.FrameworkElement.MinHeight%2A> value takes precedence over the <xref:System.Windows.FrameworkElement.MaxHeight%2A> value, which in turn takes precedence over the <xref:System.Windows.FrameworkElement.Height%2A> value. A fourth property, <xref:System.Windows.FrameworkElement.ActualHeight%2A>, is read-only, and reports the actual height as determined by interactions with the layout process.  

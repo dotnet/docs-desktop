@@ -12,9 +12,11 @@ helpviewer_keywords:
 ms.assetid: 4f017e16-ab80-43c7-98df-03b6bddbb203
 ---
 # How to: Create a Reflection
+
 This example shows how to use a <xref:System.Windows.Media.VisualBrush> to create a reflection. Because a <xref:System.Windows.Media.VisualBrush> can display an existing visual, you can use this capability to produce interesting visual effects, such as reflections and magnification.  
   
 ## Example  
+
  The following example uses a <xref:System.Windows.Media.VisualBrush> to create a reflection of a <xref:System.Windows.Controls.Border> that contains several elements. The following illustration shows the output that this example produces.  
   
  ![A reflected Visual object](./media/graphicsmm-visualbrush-reflection-small.jpg "graphicsmm_visualbrush_reflection_small")  

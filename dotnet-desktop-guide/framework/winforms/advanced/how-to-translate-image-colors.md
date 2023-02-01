@@ -12,6 +12,7 @@ helpviewer_keywords:
 ms.assetid: 2106fb9a-4d60-4dcf-9220-9f189a6c4d19
 ---
 # How to: Translate Image Colors
+
 A translation adds a value to one or more of the four color components. The color matrix entries that represent translations are given in the following table.  
   
 |Component to be translated|Matrix entry|  
@@ -22,6 +23,7 @@ A translation adds a value to one or more of the four color components. The colo
 |Alpha|`[4][3]`|  
   
 ## Example  
+
  The following example constructs an <xref:System.Drawing.Image> object from the file ColorBars.bmp. Then the code adds 0.75 to the red component of each pixel in the image. The original image is drawn alongside the transformed image.  
   
  The following illustration shows the original image on the left and the transformed image on the right:  
@@ -41,6 +43,7 @@ A translation adds a value to one or more of the four color components. The colo
  [!code-vb[System.Drawing.RecoloringImages#11](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.RecoloringImages/VB/Class1.vb#11)]  
   
 ## Compiling the Code  
+
  The preceding example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs> `e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. Replace `ColorBars.bmp` with an image file name and path that are valid on your system.  
   
 ## See also

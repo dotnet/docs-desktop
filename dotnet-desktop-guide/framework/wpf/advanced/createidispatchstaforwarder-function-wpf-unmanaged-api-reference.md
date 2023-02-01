@@ -12,6 +12,7 @@ api_location:
 ms.assetid: 57a02dfa-f091-4ace-9c06-1f4ab52b3527
 ---
 # CreateIDispatchSTAForwarder Function (WPF Unmanaged API Reference)
+
 This API supports the Windows Presentation Foundation (WPF) infrastructure and is not intended to be used directly from your code.  
   
  Used by the Windows Presentation Foundation (WPF) infrastructure for thread and windows management.  
@@ -28,6 +29,7 @@ HRESULT CreateIDispatchSTAForwarder(
 ## Parameters  
   
 ## Property Value/Return Value  
+
  pDispatchDelegate  
  A pointer to an `IDispatch` interface.  
   
@@ -35,6 +37,7 @@ HRESULT CreateIDispatchSTAForwarder(
  A pointer to the address of an `IDispatch` interface.  
   
 ## Requirements  
+
  **Platforms:** See [.NET Framework System Requirements](/dotnet/framework/get-started/system-requirements).  
   
  **DLL:**  

@@ -12,9 +12,11 @@ helpviewer_keywords:
 ms.assetid: d2e2ef10-0773-4133-856e-d41c09f60ded
 ---
 # How to: Animate a Point by Using Key Frames
+
 This example shows how to use the <xref:System.Windows.Media.Animation.PointAnimationUsingKeyFrames> class to animate a <xref:System.Windows.Point>.  
   
 ## Example  
+
  The following example moves an ellipse along a triangular path. The example uses the <xref:System.Windows.Media.Animation.PointAnimationUsingKeyFrames> class to animate the <xref:System.Windows.Media.EllipseGeometry.Center%2A> property of an <xref:System.Windows.Media.EllipseGeometry>. This animation uses three key frames in the following manner:  
   
 1. During the first half second, uses an instance of the <xref:System.Windows.Media.Animation.LinearPointKeyFrame> class to move the ellipse along a path at a steady rate from its starting position. Linear key frames like <xref:System.Windows.Media.Animation.LinearPointKeyFrame> create a smooth linear interpolation between values.  

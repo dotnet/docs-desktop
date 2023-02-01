@@ -12,6 +12,7 @@ helpviewer_keywords:
 ms.assetid: 1aaaca43-5340-447e-99c0-9177d9776aa1
 ---
 # How to: Set Default Cell Styles for the Windows Forms DataGridView Control
+
 With the <xref:System.Windows.Forms.DataGridView> control, you can specify default cell styles for the entire control and for specific columns and rows. These defaults filter down from the control level to the column level, then to the row level, then to the cell level. If a particular <xref:System.Windows.Forms.DataGridViewCellStyle> property is not set at the cell level, the default property setting at the row level is used. If the property is also not set at the row level, the default column setting is used. Finally, if the property is also not set at the column level, the default <xref:System.Windows.Forms.DataGridView> setting is used. With this setting, you can avoid having to duplicate the property settings at multiple levels. At each level, simply specify the styles that differ from the levels above it. For more information, see [Cell Styles in the Windows Forms DataGridView Control](cell-styles-in-the-windows-forms-datagridview-control.md).  
   
  There is extensive support for this task in Visual Studio.  Also see [How to: Set Default Cell Styles and Data Formats for the Windows Forms DataGridView Control Using the Designer](default-cell-styles-datagridview.md).  
@@ -34,10 +35,12 @@ With the <xref:System.Windows.Forms.DataGridView> control, you can specify defau
      [!code-vb[System.Windows.Forms.DataGridViewMisc#143](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/VB/datagridviewmisc.vb#143)]  
   
 ## Example  
+
  [!code-csharp[System.Windows.Forms.DataGridViewMisc#140](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/CS/datagridviewmisc.cs#140)]
  [!code-vb[System.Windows.Forms.DataGridViewMisc#140](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/VB/datagridviewmisc.vb#140)]  
   
 ## Compiling the Code  
+
  This example requires:  
   
 - A <xref:System.Windows.Forms.DataGridView> control named `dataGridView1`.  
@@ -45,6 +48,7 @@ With the <xref:System.Windows.Forms.DataGridView> control, you can specify defau
 - References to the <xref:System?displayProperty=nameWithType>, <xref:System.Drawing?displayProperty=nameWithType>, and <xref:System.Windows.Forms?displayProperty=nameWithType> assemblies.  
   
 ## Robust Programming  
+
  To achieve maximum scalability when you work with very large data sets, you should share <xref:System.Windows.Forms.DataGridViewCellStyle> objects across multiple rows, columns, or cells that use the same styles, rather than set the style properties for individual elements separately. Additionally, you should create shared rows and access them by using the <xref:System.Windows.Forms.DataGridViewRowCollection.SharedRow%2A?displayProperty=nameWithType> property. For more information, see [Best Practices for Scaling the Windows Forms DataGridView Control](best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
 ## See also

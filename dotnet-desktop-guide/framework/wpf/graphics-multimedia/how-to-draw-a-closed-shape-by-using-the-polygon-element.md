@@ -10,9 +10,11 @@ helpviewer_keywords:
 ms.assetid: 4b0ca008-29ce-48dd-8bc3-f3a20ffca6a6
 ---
 # How to: Draw a Closed Shape by Using the Polygon Element
+
 This example shows how to draw a closed shape by using the <xref:System.Windows.Shapes.Polygon> element. To draw a closed shape, create a <xref:System.Windows.Shapes.Polygon> element and use its <xref:System.Windows.Shapes.Polygon.Points%2A> property to specify the vertices of a shape. A line is automatically drawn that connects the first and last points. Finally, specify a <xref:System.Windows.Shapes.Shape.Fill%2A>, a <xref:System.Windows.Shapes.Shape.Stroke%2A>, or both.  
   
 ## Example  
+
  In Extensible Application Markup Language (XAML), valid syntax for points is a space-delimited list of comma-separated x- and y-coordinate pairs.  
   
  [!code-xaml[drawingwithshapeelements#PolygonExample1](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingWithShapeElements/CS/polygonexample.xaml#polygonexample1)]  

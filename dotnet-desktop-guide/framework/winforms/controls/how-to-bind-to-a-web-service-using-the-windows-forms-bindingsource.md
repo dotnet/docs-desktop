@@ -15,6 +15,7 @@ ms.assetid: ee261207-4573-4cb9-a8cb-5185037e0fba
 description: Learn how to bind to a Web Service using the Windows Forms BindingSource component to create a client-side proxy.
 ---
 # How to: Bind to a Web Service Using the Windows Forms BindingSource
+
 If you want to bind a Windows Form control to the results obtained from calling an XML Web service, you can use a <xref:System.Windows.Forms.BindingSource> component. This procedure is similar to binding a <xref:System.Windows.Forms.BindingSource> component to a type. You must create a client-side proxy that contains the methods and types exposed by the Web service. You generate a client-side proxy from the Web service (.asmx) itself, or its Web Services Description Language (WSDL) file. Additionally, your client-side proxy must expose the fields of complex types used by the Web service as public properties. You then bind the <xref:System.Windows.Forms.BindingSource> to one of the types exposed in the Web service proxy.  
   
 ### To create and bind to a client-side proxy  
@@ -52,6 +53,7 @@ If you want to bind a Windows Form control to the results obtained from calling 
      [!code-vb[System.Windows.Forms.DataConnectorWebService#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataConnectorWebService/VB/form1.vb#3)]  
   
 ## Example  
+
  The following code example demonstrates how to bind a <xref:System.Windows.Forms.BindingSource> component to a Web service, and then how to bind a text box to the <xref:System.Windows.Forms.BindingSource> component. When you click the button, a Web service method is called and the results will appear in `textbox1`.  
   
  [!code-cpp[System.Windows.Forms.DataConnectorWebService#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataConnectorWebService/CPP/form1.cpp#1)]
@@ -59,6 +61,7 @@ If you want to bind a Windows Form control to the results obtained from calling 
  [!code-vb[System.Windows.Forms.DataConnectorWebService#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataConnectorWebService/VB/form1.vb#1)]  
   
 ## Compiling the Code  
+
  This is a complete example that includes a `Main` method, and a shortened version of client-side proxy code.  
   
  This example requires:  

@@ -15,12 +15,15 @@ helpviewer_keywords:
 ms.assetid: 66d7a6d6-e3b6-47bc-8dfe-8a1b26f7d901
 ---
 # Shapes and Basic Drawing in WPF Overview
+
 This topic gives an overview of how to draw with <xref:System.Windows.Shapes.Shape> objects. A <xref:System.Windows.Shapes.Shape> is a type of <xref:System.Windows.UIElement> that enables you to draw a shape to the screen. Because they are UI elements, <xref:System.Windows.Shapes.Shape> objects can be used inside <xref:System.Windows.Controls.Panel> elements and most controls.  
   
  Windows Presentation Foundation (WPF) offers several layers of access to graphics and rendering services. At the top layer, <xref:System.Windows.Shapes.Shape> objects are easy to use and provide many useful features, such as layout and participation in the Windows Presentation Foundation (WPF) event system.  
 
 <a name="shapes"></a>
+
 ## Shape Objects  
+
  WPF provides a number of ready-to-use <xref:System.Windows.Shapes.Shape> objects.  All shape objects inherit from the <xref:System.Windows.Shapes.Shape> class. Available shape objects include <xref:System.Windows.Shapes.Ellipse>, <xref:System.Windows.Shapes.Line>, <xref:System.Windows.Shapes.Path>, <xref:System.Windows.Shapes.Polygon>, <xref:System.Windows.Shapes.Polyline>, and <xref:System.Windows.Shapes.Rectangle>. <xref:System.Windows.Shapes.Shape> objects share the following common properties.  
   
 - <xref:System.Windows.Shapes.Shape.Stroke%2A>: Describes how the shape's outline is painted.  
@@ -59,13 +62,17 @@ This topic gives an overview of how to draw with <xref:System.Windows.Shapes.Sha
  ![Ellipse illustration](./media/shape-ovw-ellipse2.png "shape_ovw_ellipse2")  
   
 <a name="paths"></a>
+
 ## Using Paths and Geometries  
+
  The <xref:System.Windows.Shapes.Path> class enables you to draw curves and complex shapes. These curves and shapes are described using <xref:System.Windows.Media.Geometry> objects. To use a <xref:System.Windows.Shapes.Path>, you create a <xref:System.Windows.Media.Geometry> and use it to set the <xref:System.Windows.Shapes.Path> object's <xref:System.Windows.Shapes.Path.Data%2A> property.  
   
  There are a variety of <xref:System.Windows.Media.Geometry> objects to choose from. The <xref:System.Windows.Media.LineGeometry>, <xref:System.Windows.Media.RectangleGeometry>, and <xref:System.Windows.Media.EllipseGeometry> classes describe relatively simple shapes. To create more complex shapes or create curves, use a <xref:System.Windows.Media.PathGeometry>.  
   
 <a name="pathgeometry"></a>
+
 ### PathGeometry and PathSegments  
+
  <xref:System.Windows.Media.PathGeometry> objects are comprised of one or more <xref:System.Windows.Media.PathFigure> objects; each <xref:System.Windows.Media.PathFigure> represents a different "figure" or shape. Each <xref:System.Windows.Media.PathFigure> is itself comprised of one or more <xref:System.Windows.Media.PathSegment> objects, each representing a connected portion of the figure or shape. Segment types include the following: <xref:System.Windows.Media.LineSegment>, <xref:System.Windows.Media.BezierSegment>, and <xref:System.Windows.Media.ArcSegment>.  
   
  In the following example, a <xref:System.Windows.Shapes.Path> is used to draw a quadratic Bezier curve.  
@@ -79,7 +86,9 @@ This topic gives an overview of how to draw with <xref:System.Windows.Shapes.Sha
  For more information about <xref:System.Windows.Media.PathGeometry> and the other <xref:System.Windows.Media.Geometry> classes, see the [Geometry Overview](geometry-overview.md).  
   
 <a name="pathdatastring"></a>
+
 ### XAML Abbreviated Syntax  
+
  In Extensible Application Markup Language (XAML), you may also use a special abbreviated syntax to describe a <xref:System.Windows.Shapes.Path>. In the following example, abbreviated syntax is used to draw a complex shape.  
   
 ```xaml  
@@ -98,7 +107,9 @@ Data="M 100,200 C 100,25 400,350 400,175 H 280" />
  For the complete path syntax, see the <xref:System.Windows.Shapes.Path.Data%2A> reference and [Create a Shape by Using a PathGeometry](how-to-create-a-shape-by-using-a-pathgeometry.md).  
   
 <a name="fillpaint"></a>
+
 ## Painting Shapes  
+
  <xref:System.Windows.Media.Brush> objects are used to paint a shape's <xref:System.Windows.Shapes.Shape.Stroke%2A> and <xref:System.Windows.Shapes.Shape.Fill%2A>. In the following example, the stroke and fill of an <xref:System.Windows.Shapes.Ellipse> are specified. Note that valid input for brush properties can be either a keyword or hexadecimal color value. For more information about available color keywords, see properties of the <xref:System.Windows.Media.Colors> class in the <xref:System.Windows.Media> namespace.  
   
 ```xaml
@@ -144,7 +155,9 @@ Data="M 100,200 C 100,25 400,350 400,175 H 280" />
  You can also paint a shape's stroke or fill with gradients, images, patterns, and more. For more information, see the [Painting with Solid Colors and Gradients Overview](painting-with-solid-colors-and-gradients-overview.md).  
   
 <a name="stretchableshapessection"></a>
+
 ## Stretchable Shapes  
+
  The <xref:System.Windows.Shapes.Line>, <xref:System.Windows.Shapes.Path>, <xref:System.Windows.Shapes.Polygon>, <xref:System.Windows.Shapes.Polyline>, and <xref:System.Windows.Shapes.Rectangle> classes all have a <xref:System.Windows.Shapes.Shape.Stretch%2A> property. This property determines how a <xref:System.Windows.Shapes.Shape> object's contents (the shape to be drawn) is stretched to fill the <xref:System.Windows.Shapes.Shape> object's layout space. A <xref:System.Windows.Shapes.Shape> object's layout space is the amount of space the <xref:System.Windows.Shapes.Shape> is allocated by the layout system, because of either an explicit <xref:System.Windows.FrameworkElement.Width%2A> and <xref:System.Windows.FrameworkElement.Height%2A> setting or because of its <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A> and <xref:System.Windows.FrameworkElement.VerticalAlignment%2A> settings. For additional information on layout in Windows Presentation Foundation, see [Layout](../advanced/layout.md) overview.  
   
  The Stretch property takes one of the following values:  
@@ -189,7 +202,9 @@ myPolygon.StrokeThickness = 2;
 ```
 
 <a name="transforms"></a>
+
 ## Transforming Shapes  
+
  The <xref:System.Windows.Media.Transform> class provides the means to transform shapes in a two-dimensional plane.  The different types of transformation include rotation (<xref:System.Windows.Media.RotateTransform>), scale (<xref:System.Windows.Media.ScaleTransform>), skew (<xref:System.Windows.Media.SkewTransform>), and translation (<xref:System.Windows.Media.TranslateTransform>).  
   
  A common transform to apply to a shape is a rotation.  To rotate a shape, create a <xref:System.Windows.Media.RotateTransform> and specify its <xref:System.Windows.Media.RotateTransform.Angle%2A>. An <xref:System.Windows.Media.RotateTransform.Angle%2A> of 45 rotates the element 45 degrees clockwise; an angle of 90 rotates the element 90 degrees clockwise; and so on. Set the <xref:System.Windows.Media.RotateTransform.CenterX%2A> and <xref:System.Windows.Media.RotateTransform.CenterY%2A> properties if you want to control the point about which the element is rotated. These property values are expressed in the coordinate space of the element being transformed. <xref:System.Windows.Media.RotateTransform.CenterX%2A> and <xref:System.Windows.Media.RotateTransform.CenterY%2A> have default values of zero. Finally, apply the <xref:System.Windows.Media.RotateTransform> to the element. If you don't want the transform to affect layout, set the shape's <xref:System.Windows.UIElement.RenderTransform%2A> property.  

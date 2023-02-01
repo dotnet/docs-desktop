@@ -31,6 +31,7 @@ This walkthrough illustrates the following tasks:
 You need Visual Studio to complete this walkthrough.
 
 ## Create the Application Project
+
  In this section, you will create the application infrastructure, which includes a main page with two panels and a <xref:System.Windows.Controls.TextBox>.
 
 1. Create a new WPF Application project in Visual Basic or Visual C# named `DragDropExample`. For more information, see [Walkthrough: My first WPF desktop application](../getting-started/walkthrough-my-first-wpf-desktop-application.md).
@@ -44,6 +45,7 @@ You need Visual Studio to complete this walkthrough.
      [!code-xaml[DragDropWalkthrough#PanelsStep1XAML](~/samples/snippets/csharp/VS_Snippets_Wpf/DragDropWalkthrough/CS/SnippetWindow.xaml#panelsstep1xaml)]
 
 ## Add a New User Control to the Project
+
  In this section, you will add a new user control to the project.
 
 1. On the Project menu, select **Add User Control**.
@@ -88,6 +90,7 @@ You need Visual Studio to complete this walkthrough.
      [!code-xaml[DragDropWalkthrough#PanelsStep2XAML](~/samples/snippets/csharp/VS_Snippets_Wpf/DragDropWalkthrough/CS/SnippetWindow.xaml#panelsstep2xaml)]
 
 ## Implement Drag Source Events in the User Control
+
  In this section, you will override the <xref:System.Windows.UIElement.OnMouseMove%2A> method and initiate the drag-and-drop operation.
 
  If a drag is started (a mouse button is pressed and the mouse is moved), you will package the data to be transferred into a <xref:System.Windows.DataObject>. In this case, the Circle control will package three data items; a string representation of its Fill color, a double representation of its height, and a copy of itself.
@@ -153,6 +156,7 @@ By default, the cursor will change during a drag-and-drop operation to indicate 
 6. Drag the `green` text to a Circle control. Notice that the default cursors are shown to indicate the effects of the drag-and-drop operation. The feedback cursor is always set by the drag source.
 
 ## Implement Drop Target Events in the User Control
+
  In this section, you will specify that the user control is a drop target, override the methods that enable the user control to be a drop target, and process the data that is dropped on it.
 
 ### To enable the user control to be a drop target

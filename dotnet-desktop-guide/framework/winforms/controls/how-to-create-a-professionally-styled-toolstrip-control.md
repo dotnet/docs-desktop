@@ -13,6 +13,7 @@ ms.assetid: c208b2f6-8105-474b-9075-d582e1792870
 description: Learn how to create a professionally styled ToolStrip control by writing a class derived from the ToolStripProfessionalRenderer type.
 ---
 # How to: Create a Professionally Styled ToolStrip Control
+
 You can give your application’s <xref:System.Windows.Forms.ToolStrip> controls a professional appearance and behavior (look and feel) by writing your own class derived from the <xref:System.Windows.Forms.ToolStripProfessionalRenderer> type.  
   
  There is extensive support for this feature in Visual Studio.  
@@ -20,12 +21,14 @@ You can give your application’s <xref:System.Windows.Forms.ToolStrip> controls
  See [Walkthrough: Creating a Professionally Styled ToolStrip Control](walkthrough-creating-a-professionally-styled-toolstrip-control.md).  
   
 ## Example  
+
  The following code example demonstrates how to use <xref:System.Windows.Forms.ToolStrip> controls to create a composite control that mimics the **Navigation Pane** provided by Microsoft® Outlook®.  
   
  [!code-csharp[System.Windows.Forms.ToolStrip.StackView#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.StackView/CS/StackView.cs#1)]
  [!code-vb[System.Windows.Forms.ToolStrip.StackView#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.StackView/VB/StackView.vb#1)]  
   
 ## Compiling the Code  
+
  This example requires:  
   
 - References to the System.Drawing and System.Windows.Forms assemblies.  

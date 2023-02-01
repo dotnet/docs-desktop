@@ -18,7 +18,7 @@ helpviewer_keywords:
 
 # Attached events overview (WPF .NET)
 
-Extensible Application Markup Language (XAML) defines a language component and event type called an *attached event*. Attached events can be used to define a new [routed event](<xref:System.Windows.RoutedEvent>) in a non-element class and raise that event on any element in your tree. To do so, you must register the attached event as a routed event and provide specific [backing code](#define-a-custom-attached-event) that supports attached event functionality. Since attached events are registered as routed events, when raised on an element they propagate through the element tree.
+Extensible Application Markup Language (XAML) defines a language component and event type called an _attached event_. Attached events can be used to define a new [routed event](<xref:System.Windows.RoutedEvent>) in a non-element class and raise that event on any element in your tree. To do so, you must register the attached event as a routed event and provide specific [backing code](#define-a-custom-attached-event) that supports attached event functionality. Since attached events are registered as routed events, when raised on an element they propagate through the element tree.
 
 [!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
 
@@ -28,7 +28,7 @@ The article assumes a basic knowledge of Windows Presentation Foundation (WPF) r
 
 ## Attached event syntax
 
-In XAML syntax, an attached event is specified by its event name *and* its owner type, in the form of `<owner type>.<event name>`. Because the event name is qualified with the name of its owner type, the syntax allows the event to be attached to any element that can be instantiated. This syntax is also applicable to handlers for regular routed events that attach to an arbitrary element along the event route.
+In XAML syntax, an attached event is specified by its event name _and_ its owner type, in the form of `<owner type>.<event name>`. Because the event name is qualified with the name of its owner type, the syntax allows the event to be attached to any element that can be instantiated. This syntax is also applicable to handlers for regular routed events that attach to an arbitrary element along the event route.
 
 The following XAML attribute syntax attaches the `AquariumFilter_Clean` handler for the `AquariumFilter.Clean` attached event to the `aquarium1` element:
 
@@ -60,9 +60,9 @@ As noted [previously](#attached-event-scenarios), existing WPF attached events t
 
 If you're deriving from common WPF base classes, you can implement your custom attached event by including two accessor methods in your class. Those methods are:
 
-- An __Add\<event name\>Handler__ method, with a first parameter that's the element on which the event handler is attached, and a second parameter that's the event handler to add. The method must be `public` and `static`, with no return value. The method calls the <xref:System.Windows.UIElement.AddHandler%2A> base class method, passing in the routed event and handler as arguments. This method supports the XAML attribute syntax for attaching an event handler to an element. This method also enables code access to the event handler store for the attached event.
+- An **Add\<event name\>Handler** method, with a first parameter that's the element on which the event handler is attached, and a second parameter that's the event handler to add. The method must be `public` and `static`, with no return value. The method calls the <xref:System.Windows.UIElement.AddHandler%2A> base class method, passing in the routed event and handler as arguments. This method supports the XAML attribute syntax for attaching an event handler to an element. This method also enables code access to the event handler store for the attached event.
 
-- A __Remove\<event name\>Handler__ method, with a first parameter that's the element on which the event handler is attached, and a second parameter that's the event handler to remove. The method must be `public` and `static`, with no return value. The method calls the <xref:System.Windows.UIElement.RemoveHandler%2A> base class method, passing in the routed event and handler as arguments. This method enables code access to the event handler store for the attached event.
+- A **Remove\<event name\>Handler** method, with a first parameter that's the element on which the event handler is attached, and a second parameter that's the event handler to remove. The method must be `public` and `static`, with no return value. The method calls the <xref:System.Windows.UIElement.RemoveHandler%2A> base class method, passing in the routed event and handler as arguments. This method enables code access to the event handler store for the attached event.
 
 WPF implements attached events as routed events because the identifier for a <xref:System.Windows.RoutedEvent> is defined by the WPF event system. Also, routing an event is a natural extension of the XAML language-level concept of an attached event. This implementation strategy restricts handling of attached events to either <xref:System.Windows.UIElement> derived classes or <xref:System.Windows.ContentElement> derived classes, because only those classes have <xref:System.Windows.UIElement.AddHandler%2A> implementations.
 

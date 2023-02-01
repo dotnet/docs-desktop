@@ -7,9 +7,11 @@ helpviewer_keywords:
 ms.assetid: 05914a93-d0ea-4a9a-b693-09df7d4e2ac2
 ---
 # How to: Create a Multiline TextBox Control
+
 This example shows how to use Extensible Application Markup Language (XAML) to define a <xref:System.Windows.Controls.TextBox> control that will automatically expand to accommodate multiple lines of text.  
   
 ## Example  
+
  Setting the <xref:System.Windows.Controls.TextBox.TextWrapping%2A> attribute to **Wrap** will cause entered text to wrap to a new line when the edge of the <xref:System.Windows.Controls.TextBox> control is reached, automatically expanding the <xref:System.Windows.Controls.TextBox> control to include room for a new line, if necessary.  
   
  Setting the <xref:System.Windows.Controls.Primitives.TextBoxBase.AcceptsReturn%2A> attribute to **true** causes a new line to be inserted when the RETURN key is pressed, once again automatically expanding the <xref:System.Windows.Controls.TextBox> to include room for a new line, if necessary.  

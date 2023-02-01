@@ -7,6 +7,7 @@ helpviewer_keywords:
 ms.assetid: 3698b44d-510e-4d18-b32b-85f17188ee26
 ---
 # IEnumRAWINPUTDEVIC:Next
+
 Enumerates the next `celt` [RAWINPUTDEVICE](/windows/desktop/api/winuser/ns-winuser-rawinputdevice) structures in the enumerator's list, returning them in `rgelt` along with the actual number of enumerated elements in `pceltFetched`.  
   
 ## Syntax  
@@ -19,6 +20,7 @@ HRESULT Next(
 ```  
   
 ## Parameters  
+
  `celt`  
   
  [in] Number of [RAWINPUTDEVICE](/windows/desktop/api/winuser/ns-winuser-rawinputdevice) structures returned in `rgelt`.  
@@ -32,4 +34,5 @@ HRESULT Next(
  [out] Pointer to the number of elements actually supplied in `rgelt`. Caller can pass in `NULL` if `rgelt` is one.  
   
 ## Property Value/Return Value  
+
  HRESULT: S_OK if the number of elements supplied is `celt`; S_FALSE otherwise.

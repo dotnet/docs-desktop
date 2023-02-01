@@ -12,12 +12,15 @@ helpviewer_keywords:
 ms.assetid: 2dfdf025-347b-4342-bf28-95206c273f35
 ---
 # Window Styles and Templates
+
 This topic describes the styles and templates for the <xref:System.Windows.Window> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [Create a template for a control](how-to-create-apply-template.md).  
   
 ## Window Parts  
+
  The <xref:System.Windows.Window> control does not have any named parts.  
   
 ## Window States  
+
  The following table lists the visual states for the <xref:System.Windows.Window> control.  
   
 |VisualState Name|VisualStateGroup Name|Description|  
@@ -27,6 +30,7 @@ This topic describes the styles and templates for the <xref:System.Windows.Windo
 |InvalidUnfocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` has the control does not have focus.|  
   
 ## Window ControlTemplate Example  
+
  The following example shows how to define a <xref:System.Windows.Controls.ControlTemplate> for the <xref:System.Windows.Window> control.  
   
  [!code-xaml[ControlTemplateExamples#Window](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/window.xaml#window)]  

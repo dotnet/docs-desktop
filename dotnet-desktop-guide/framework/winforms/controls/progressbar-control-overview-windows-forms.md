@@ -10,6 +10,7 @@ ms.assetid: a05d9cba-3a6a-4f8f-94b8-8ec12799fb80
 description: Learn how the ProgressBar control indicates the progress of a process by displaying an appropriate number of rectangles arranged in a horizontal bar.
 ---
 # ProgressBar Control Overview (Windows Forms)
+>
 > [!IMPORTANT]
 > The <xref:System.Windows.Forms.ToolStripProgressBar> control replaces and adds functionality to the <xref:System.Windows.Forms.ProgressBar> control; however, the <xref:System.Windows.Forms.ProgressBar> control is retained for both backward compatibility and future use, if you choose.  
   
@@ -19,6 +20,7 @@ description: Learn how the ProgressBar control indicates the progress of a proce
 > The <xref:System.Windows.Forms.ProgressBar> control can only be oriented horizontally on the form.  
   
 ## Key Properties and Methods  
+
  The key properties of the <xref:System.Windows.Forms.ProgressBar> control are <xref:System.Windows.Forms.ProgressBar.Value%2A>, <xref:System.Windows.Forms.ProgressBar.Minimum%2A>, and <xref:System.Windows.Forms.ProgressBar.Maximum%2A>. The <xref:System.Windows.Forms.ProgressBar.Minimum%2A> and <xref:System.Windows.Forms.ProgressBar.Maximum%2A> properties set the maximum and minimum values the progress bar can display. The <xref:System.Windows.Forms.ProgressBar.Value%2A> property represents the progress that has been made toward completing the operation. Because the bar displayed in the control is composed of blocks, the value displayed by the <xref:System.Windows.Forms.ProgressBar> control only approximates the <xref:System.Windows.Forms.ProgressBar.Value%2A> property's current value. Based on the size of the <xref:System.Windows.Forms.ProgressBar> control, the <xref:System.Windows.Forms.ProgressBar.Value%2A> property determines when to display the next block.  
   
  The most common way to update the current progress value is to write code to set the <xref:System.Windows.Forms.ProgressBar.Value%2A> property. In the example of loading a large file, you might set the maximum to the size of the file in kilobytes. For example, if the <xref:System.Windows.Forms.ProgressBar.Maximum%2A> property is set to 100, the <xref:System.Windows.Forms.ProgressBar.Minimum%2A> property is set to 10, and the <xref:System.Windows.Forms.ProgressBar.Value%2A> property is set to 50, 5 rectangles will be displayed. This is half of the number that can be displayed.  

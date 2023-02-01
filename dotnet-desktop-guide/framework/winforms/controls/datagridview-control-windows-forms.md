@@ -16,6 +16,7 @@ helpviewer_keywords:
 ms.assetid: dbee73f2-bba6-4874-9389-cd21d44309be
 ---
 # DataGridView Control (Windows Forms)
+
 The `DataGridView` control provides a powerful and flexible way to display data in a tabular format. You can use the `DataGridView` control to show read-only views of a small amount of data, or you can scale it to show editable views of very large sets of data.  
   
  You can extend the `DataGridView` control in a number of ways to build custom behaviors into your applications. For example, you can programmatically specify your own sorting algorithms, and you can create your own types of cells. You can easily customize the appearance of the `DataGridView` control by choosing among several properties. Many types of data stores can be used as a data source, or the `DataGridView` control can operate with no data source bound to it.  
@@ -23,6 +24,7 @@ The `DataGridView` control provides a powerful and flexible way to display data 
  The topics in this section describe the concepts and techniques that you can use to build `DataGridView` features into your applications.  
   
 ## In This Section  
+
  [DataGridView Control Overview](datagridview-control-overview-windows-forms.md)  
  Provides topics that describe the architecture and core concepts of the Windows Forms `DataGridView` control.  
   
@@ -71,6 +73,7 @@ The `DataGridView` control provides a powerful and flexible way to display data 
  Also see [Using the Designer with the Windows Forms DataGridView Control](using-the-designer-with-the-windows-forms-datagridview-control.md).  
   
 ## Reference  
+
  <xref:System.Windows.Forms.DataGridView>  
  Provides reference documentation for the <xref:System.Windows.Forms.DataGridView> control.  
   

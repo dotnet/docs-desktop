@@ -10,9 +10,11 @@ helpviewer_keywords:
 ms.assetid: 90e07c2d-237f-47b4-a632-771570b77fd0
 ---
 # Grid How-to Topics
+
 The topics in this section describe how to position elements using the <xref:System.Windows.Controls.Grid> element.  
   
 ## In This Section  
+
  [Build a Standard UI Dialog Box by Using Grid](how-to-build-a-standard-ui-dialog-box-by-using-grid.md)  
  [Create a Complex Grid](how-to-create-a-complex-grid.md)  
  [Create a Grid Element](how-to-create-a-grid-element.md)  
@@ -22,6 +24,7 @@ The topics in this section describe how to position elements using the <xref:Sys
  [Share Sizing Properties Between Grids](how-to-share-sizing-properties-between-grids.md)  
   
 ## Reference  
+
  <xref:System.Windows.Controls.Panel>  
   
  <xref:System.Windows.Controls.Canvas>  
@@ -37,6 +40,7 @@ The topics in this section describe how to position elements using the <xref:Sys
  <xref:System.Windows.Controls.WrapPanel>  
   
 ## Related Sections  
+
  [Layout](../advanced/layout.md)  
   
  [Walkthrough: My first WPF desktop application](../getting-started/walkthrough-my-first-wpf-desktop-application.md)  

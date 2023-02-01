@@ -14,6 +14,7 @@ helpviewer_keywords:
 ms.assetid: 3b681a32-9db4-497b-a34b-34980eabee46
 ---
 # How to: Display Error Icons for Form Validation with the Windows Forms ErrorProvider Component
+
 You can use a Windows Forms <xref:System.Windows.Forms.ErrorProvider> component to display an error icon when the user enters invalid data. You must have at least two controls on the form in order to tab between them and thereby invoke the validation code.  
   
 ### To display an error icon when a control's value is invalid  

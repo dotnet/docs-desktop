@@ -12,6 +12,7 @@ helpviewer_keywords:
 ms.assetid: d6bcdbe6-61b3-40a7-b381-4e02185b5a85
 ---
 # ComponentResourceKey Markup Extension
+
 Defines and references keys for resources that are loaded from external assemblies. This enables a resource lookup to specify a target type in an assembly, rather than an explicit resource dictionary in an assembly or on a class.  
   
 ## XAML Attribute Usage (setting key, compact)  
@@ -46,6 +47,7 @@ Defines and references keys for resources that are loaded from external assembli
 |`targetID`|The key for the resource. When resources are looked up, `targetID` will be analogous to the [x:Key Directive](/dotnet/desktop/xaml-services/xkey-directive) of the resource.|  
   
 ## Remarks  
+
  As seen in the usages above, a {`ComponentResourceKey`} markup extension usage is found in two places:  
   
 - The definition of a key within a theme resource dictionary, as provided by a control author.  

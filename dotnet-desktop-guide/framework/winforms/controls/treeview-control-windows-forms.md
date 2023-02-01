@@ -10,9 +10,11 @@ ms.assetid: 879438b4-4eac-45c6-b345-0229c9b21ab0
 description: Learn how to use the Windows Forms TreeView control to display a hierarchy of nodes, along with supporting links.
 ---
 # TreeView Control (Windows Forms)
+
 The Windows Forms `TreeView` control displays a hierarchy of nodes, like the way files and folders are displayed in the left pane of the Windows Explorer feature in Windows operating systems.  
   
 ## In This Section  
+
  [TreeView Control Overview](treeview-control-overview-windows-forms.md)  
  Explains what the control is and its key features and properties.  
   
@@ -37,9 +39,11 @@ The Windows Forms `TreeView` control displays a hierarchy of nodes, like the way
 Also see [How to: Add and Remove Nodes with the Windows Forms TreeView Control Using the Designer](add-and-remove-nodes-with-wf-treeview-control-using-the-designer.md), and [How to: Attach a Shortcut Menu to a TreeNode Using the Designer](how-to-attach-a-shortcut-menu-to-a-treenode-using-the-designer.md).  
   
 ## Reference  
+
  <xref:System.Windows.Forms.TreeView> class  
  Describes this class and has links to all its members.  
   
 ## Related Sections  
+
  [Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)  
  Provides a complete list of Windows Forms controls, with links to information on their use.

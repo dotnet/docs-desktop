@@ -9,9 +9,11 @@ helpviewer_keywords:
 ms.assetid: 68f5bc70-14d5-45c9-b288-7d7b1493ee79
 ---
 # Keyboard Input in a Windows Forms Application
+
 Windows Forms includes standard keyboard events that allow you to respond to specific key presses, and also provides ways for you to intercept, modify, and consume key presses at the application, form, and control level.  
   
 ## In This Section  
+
  [How Keyboard Input Works](how-keyboard-input-works.md)  
  Describes how keyboard messages are processed and transformed into keyboard events.  
   

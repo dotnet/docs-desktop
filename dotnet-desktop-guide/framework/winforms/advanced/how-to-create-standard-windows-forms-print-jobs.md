@@ -13,6 +13,7 @@ ms.assetid: 03342b90-9cfe-40b2-838b-b479a13c5dea
 description: Learn how to create standard Windows Forms by writing code to handle the PrintPage event to specify what and how to print.
 ---
 # How to: Create Standard Windows Forms Print Jobs
+
 The foundation of printing in Windows Forms is the <xref:System.Drawing.Printing.PrintDocument> component—more specifically, the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event. By writing code to handle the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event, you can specify what to print and how to print it.  
   
 ### To create a print job  

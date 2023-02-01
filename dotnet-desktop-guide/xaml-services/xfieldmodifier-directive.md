@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: ed427cd4-2f35-4d24-bd2f-0fa7b71ec248
 ---
 # x:FieldModifier Directive
+
 Modifies XAML compilation behavior so that fields for named object references are defined with <xref:System.Reflection.TypeAttributes.Public?displayProperty=nameWithType> access instead of the <xref:System.Reflection.TypeAttributes.NotPublic?displayProperty=nameWithType> default behavior.
 
 ## XAML Attribute Usage

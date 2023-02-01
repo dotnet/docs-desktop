@@ -12,12 +12,15 @@ helpviewer_keywords:
 ms.assetid: e223c759-f8c4-4717-acfb-b1e40bdf5f3b
 ---
 # Button Styles and Templates
+
 This topic describes the styles and templates for the <xref:System.Windows.Controls.Button> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [Create a template for a control](how-to-create-apply-template.md).  
   
 ## Button Parts  
+
  The <xref:System.Windows.Controls.Button> control does not have any named parts.  
   
 ## Button States  
+
  The following table lists the visual states for the <xref:System.Windows.Controls.Button> control.  
   
 |VisualState Name|VisualStateGroup Name|Description|  
@@ -33,6 +36,7 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 |InvalidUnfocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` and the control does not have focus.|  
   
 ## Button ControlTemplate Example  
+
  The following example shows how to define a <xref:System.Windows.Controls.ControlTemplate> for the <xref:System.Windows.Controls.Button> control.  
   
  [!code-xaml[ControlTemplateExamples#Button](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/button.xaml#button)]  

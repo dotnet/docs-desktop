@@ -8,9 +8,11 @@ ms.assetid: eec3d26c-0a21-420f-8012-671621c47089
 description: Learn how to apply animations to text in order to alter the display and appearance of text in an application.
 ---
 # How to: Apply Animations to Text
+
 Animations can alter the display and appearance of text in your application. The following examples use different types of animations to affect the display of text in a <xref:System.Windows.Controls.TextBlock> control.  
   
 ## Example  
+
  The following example uses a <xref:System.Windows.Media.Animation.DoubleAnimation> to animate the width of the text block. The width value changes from the width of the text block to 0 over a duration of 10 seconds, and then reverses the width values and continues. This type of animation creates a wipe effect.  
   
  [!code-xaml[TextAnimationSample#TextAnimationSample1](~/samples/snippets/csharp/VS_Snippets_Wpf/TextAnimationSample/CS/Window1.xaml#textanimationsample1)]  

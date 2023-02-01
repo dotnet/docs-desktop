@@ -17,12 +17,15 @@ helpviewer_keywords:
 ms.assetid: b6706efb-d7a4-45ec-8cf4-08fa993e3afb
 ---
 # Best Practices for the TableLayoutPanel Control
+
 The <xref:System.Windows.Forms.TableLayoutPanel> control provides powerful layout features that you should consider carefully before using on your Windows Forms.
 
 ## Recommendations
+
  The following recommendations will help you use the <xref:System.Windows.Forms.TableLayoutPanel> control to its best advantage.
 
 ### Targeted Use
+
  Use the <xref:System.Windows.Forms.TableLayoutPanel> control sparingly. You should not use it in all situations that require a resizable layout. The following list describes layouts that benefit most from the use of the <xref:System.Windows.Forms.TableLayoutPanel> control:
 
 - Layouts in which there are multiple parts of the form that resize proportionally to each other.
@@ -42,12 +45,15 @@ The <xref:System.Windows.Forms.TableLayoutPanel> control provides powerful layou
  In general, when designing your layout with the <xref:System.Windows.Forms.TableLayoutPanel> control, keep the design as simple as possible.
 
 ### Use the Document Outline Window
+
  The Document Outline window gives you a tree view of your layout, which you can use to manipulate the z-order and parent-child relationships of your controls. From the **View menu**, select **Other Windows**, then select **Document Outline**.
 
 ### Avoid Nesting
+
  Avoid nesting other <xref:System.Windows.Forms.TableLayoutPanel> controls within a <xref:System.Windows.Forms.TableLayoutPanel> control. Debugging nested layouts can be difficult.
 
 ### Avoid Visual Inheritance
+
  The <xref:System.Windows.Forms.TableLayoutPanel> control does not support visual inheritance in the Windows Forms Designer in Visual Studio. A <xref:System.Windows.Forms.TableLayoutPanel> control in a derived class appears as "locked" at design time.
 
 ## See also

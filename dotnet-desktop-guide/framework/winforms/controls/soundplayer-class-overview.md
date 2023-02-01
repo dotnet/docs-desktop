@@ -9,6 +9,7 @@ ms.assetid: fcebb938-62b9-4677-9cbe-6465bc863e22
 description: Learn how the SoundPlayer Class enables users to include sound in the .wav format in applications and also load or play sounds asynchronously.
 ---
 # SoundPlayer Class Overview
+
 The <xref:System.Media.SoundPlayer> class enables you to easily include sounds in your applications.  
   
  The <xref:System.Media.SoundPlayer> class can play sound files in the .wav format, either from a resource or from UNC or HTTP locations. Additionally, the <xref:System.Media.SoundPlayer> class enables you to load or play sounds asynchronously.  

@@ -8,7 +8,9 @@ helpviewer_keywords:
 ms.assetid: 3b0592bd-7223-4860-a108-a5d72f3a9178
 ---
 # How to: Use the FontSizeConverter Class
+
 ## Example  
+
  This example shows how to create an instance of <xref:System.Windows.FontSizeConverter> and use it to change a font size.  
   
  The example defines a custom method called `changeSize` that converts the contents of a <xref:System.Windows.Controls.ListBoxItem>, as defined in a separate Extensible Application Markup Language (XAML) file, to an instance of <xref:System.Double>, and later into a <xref:System.String>. This method passes the <xref:System.Windows.Controls.ListBoxItem> to a <xref:System.Windows.FontSizeConverter> object, which converts the <xref:System.Windows.Controls.ContentControl.Content%2A> of a <xref:System.Windows.Controls.ListBoxItem> to an instance of <xref:System.Double>. This value is then passed back as the value of the <xref:System.Windows.Controls.TextBlock.FontSize%2A> property of the <xref:System.Windows.Controls.TextBlock> element.  

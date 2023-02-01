@@ -15,9 +15,11 @@ ms.assetid: d198ef8e-f7c4-4b3f-a7f5-ce858cb90cec
 description: Learn how to create an MDI form with ToolStripPanel controls with the required references to System.Drawing and System.Windows.Forms assemblies.
 ---
 # How to: Create an MDI Form with ToolStripPanel Controls
+
 You can create a multiple document interface (MDI) form that has <xref:System.Windows.Forms.ToolStrip> controls framing it on all four sides.  
   
 ## Example  
+
  The following code example demonstrates how to use docked <xref:System.Windows.Forms.ToolStripPanel> controls to frame an MDI window with four <xref:System.Windows.Forms.ToolStrip> controls.  
   
  In the example, the <xref:System.Windows.Forms.ToolStripPanel.Join%2A> method attaches the <xref:System.Windows.Forms.ToolStrip> controls to the corresponding <xref:System.Windows.Forms.ToolStripPanel> controls.  
@@ -28,6 +30,7 @@ You can create a multiple document interface (MDI) form that has <xref:System.Wi
 [!code-vb[System.Windows.Forms.ToolStrip.Misc#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.Misc/VB/Program.vb#10)]  
   
 ## Compiling the Code  
+
  This example requires:  
   
 - References to the System.Drawing and System.Windows.Forms assemblies.  

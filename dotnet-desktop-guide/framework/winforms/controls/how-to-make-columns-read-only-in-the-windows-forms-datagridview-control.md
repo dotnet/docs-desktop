@@ -11,6 +11,7 @@ helpviewer_keywords:
 ms.assetid: 2bb73ebb-1a55-4362-9fda-e50574c087d5
 ---
 # How to: Make Columns Read-Only in the Windows Forms DataGridView Control
+
 Not all data is meant for editing. In the <xref:System.Windows.Forms.DataGridView> control, the column <xref:System.Windows.Forms.DataGridViewColumn.ReadOnly%2A> property value determines whether users can edit cells in that column. For information about how to make the control entirely read-only, see [How to: Prevent Row Addition and Deletion in the Windows Forms DataGridView Control](prevent-row-addition-and-deletion-datagridview.md).  
   
  There is support for this task in Visual Studio.  Also see [How to: Make Columns Read-Only in the Windows Forms DataGridView Control Using the Designer](make-columns-read-only-in-the-datagrid-using-the-designer.md).  
@@ -23,6 +24,7 @@ Not all data is meant for editing. In the <xref:System.Windows.Forms.DataGridVie
      [!code-vb[System.Windows.Forms.DataGridViewMisc#064](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/VB/datagridviewmisc.vb#064)]  
   
 ## Compiling the Code  
+
  This example requires:  
   
 - A <xref:System.Windows.Forms.DataGridView> control named `dataGridView1` with a column named `CompanyName`.  

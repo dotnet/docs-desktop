@@ -13,9 +13,11 @@ ms.assetid: d69e602e-9a25-4e24-950b-e89eaa2a906b
 description: Learn how to create a touch application that enables the user to move, resize, or rotate a single object by using touch.
 ---
 # Walkthrough: Creating Your First Touch Application
+
 WPF enables applications to respond to touch. For example, you can interact with an application by using one or more fingers on a touch-sensitive device, such as a touchscreen This walkthrough creates an application that enables the user to move, resize, or rotate a single object by using touch.  
   
 ## Prerequisites  
+
  You need the following components to complete this walkthrough:  
   
 - Visual Studio.  
@@ -66,6 +68,7 @@ WPF enables applications to respond to touch. For example, you can interact with
      You should see a red square appear in the window.
 
 ## Testing the Application
+
  To test the application, try the following manipulations. Note that you can do more than one of the following at the same time.
 
 - To move the <xref:System.Windows.Shapes.Rectangle>, put a finger on the <xref:System.Windows.Shapes.Rectangle> and move the finger across the screen.

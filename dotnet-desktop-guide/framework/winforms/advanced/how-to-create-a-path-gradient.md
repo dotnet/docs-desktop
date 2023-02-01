@@ -12,6 +12,7 @@ ms.assetid: 1948e834-e104-481c-b71d-d8aa9e4d106e
 description: Learn how to create a path gradient with the PathGradientBrush which allows for the customization of filling a shape with gradually changing colors.
 ---
 # How to: Create a Path Gradient
+
 The <xref:System.Drawing.Drawing2D.PathGradientBrush> class allows you to customize the way you fill a shape with gradually changing colors. For example, you can specify one color for the center of a path and another color for the boundary of a path. You can also specify separate colors for each of several points along the boundary of a path.  
   
 > [!NOTE]
@@ -105,6 +106,7 @@ The examples in this article are methods that are called from a control's <xref:
      In the preceding illustration, the points at the far right of the ellipse are not pure blue (although they are very close). The colors in the gradient are positioned as if the fill reached the point (145, 35) where the color would be pure blue (0, 0, 255). But the fill never reaches (145, 35) because a path gradient brush paints only inside its path.  
   
 ## Compiling the Code  
+
  The preceding examples are designed for use with Windows Forms, and they require <xref:System.Windows.Forms.PaintEventArgs> `e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler.  
   
 ## See also

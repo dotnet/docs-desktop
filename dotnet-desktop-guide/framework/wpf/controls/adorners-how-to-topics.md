@@ -9,9 +9,11 @@ helpviewer_keywords:
 ms.assetid: e29d7516-d5e6-4500-bd4f-775e6f830984
 ---
 # Adorners How-to Topics
+
 The following examples demonstrate how to accomplish common tasks using the Windows Presentation Foundation (WPF) adorner framework.  
   
 ## In This Section  
+
  [Implement an Adorner](how-to-implement-an-adorner.md)  
  [Bind an Adorner to an Element](how-to-bind-an-adorner-to-an-element.md)  
  [Adorn the Children of a Panel](how-to-adorn-the-children-of-a-panel.md)  
@@ -19,6 +21,7 @@ The following examples demonstrate how to accomplish common tasks using the Wind
  [Remove all Adorners from an Element](how-to-remove-all-adorners-from-an-element.md)  
   
 ## Reference  
+
  <xref:System.Windows.Controls.AdornedElementPlaceholder>  
   
  <xref:System.Windows.Documents.Adorner>  

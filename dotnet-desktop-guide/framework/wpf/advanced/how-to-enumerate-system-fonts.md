@@ -13,7 +13,9 @@ ms.assetid: 36e37791-55b9-4f01-a496-5cc10335e6a6
 description: Learn how to enumerate the fonts in the system font collection and have each font family name within SystemFontFamilies added as an item to a combo box.
 ---
 # How to: Enumerate System Fonts
+
 ## Example  
+
  The following example shows how to enumerate the fonts in the system font collection. The font family name of each <xref:System.Windows.Media.FontFamily> within <xref:System.Windows.Media.Fonts.SystemFontFamilies%2A> is added as an item to a combo box.  
   
  [!code-csharp[TextOverview#100](~/samples/snippets/csharp/VS_Snippets_Wpf/TextOverview/CSharp/Window1.xaml.cs#100)]

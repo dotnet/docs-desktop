@@ -11,6 +11,7 @@ ms.assetid: 6533d5e5-a8dc-4b76-9fc4-3bf75c8b9212
 description: Learn how to create a private font collection to maintain a set of fonts specifically for an application.
 ---
 # How to: Create a Private Font Collection
+
 The <xref:System.Drawing.Text.PrivateFontCollection> class inherits from the <xref:System.Drawing.Text.FontCollection> abstract base class. You can use a <xref:System.Drawing.Text.PrivateFontCollection> object to maintain a set of fonts specifically for your application. A private font collection can include installed system fonts as well as fonts that have not been installed on the computer. To add a font file to a private font collection, call the <xref:System.Drawing.Text.PrivateFontCollection.AddFontFile%2A> method of a <xref:System.Drawing.Text.PrivateFontCollection> object.  
   
  The <xref:System.Drawing.Text.FontCollection.Families%2A> property of a <xref:System.Drawing.Text.PrivateFontCollection> object contains an array of <xref:System.Drawing.FontFamily> objects.  
@@ -18,6 +19,7 @@ The <xref:System.Drawing.Text.PrivateFontCollection> class inherits from the <xr
  The number of font families in a private font collection is not necessarily the same as the number of font files that have been added to the collection. For example, suppose you add the files ArialBd.tff, Times.tff, and TimesBd.tff to a collection. There will be three files but only two families in the collection because Times.tff and TimesBd.tff belong to the same family.  
   
 ## Example  
+
  The following example adds the following three font files to a <xref:System.Drawing.Text.PrivateFontCollection> object:  
   
 - C:\\*systemroot*\Fonts\Arial.tff (Arial, regular)  
@@ -44,6 +46,7 @@ The <xref:System.Drawing.Text.PrivateFontCollection> class inherits from the <xr
  [!code-vb[System.Drawing.FontsAndText#51](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.FontsAndText/VB/Class1.vb#51)]  
   
 ## Compiling the Code  
+
  The preceding example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs> `e`, which is a parameter of <xref:System.Windows.Forms.PaintEventHandler>.  
   
 ## See also

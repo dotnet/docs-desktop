@@ -10,13 +10,16 @@ helpviewer_keywords:
 ms.assetid: 2512a277-e9d8-4de8-a12f-2bd95e8e7b60
 ---
 # TextBox
+
 The <xref:System.Windows.Controls.TextBox> control provides support for basic text input in WPF applications.  
   
 ## In This Section  
+
  [TextBox Overview](textbox-overview.md)  
  [How-to Topics](textbox-how-to-topics.md)  
   
 ## Reference  
+
  <xref:System.Windows.Controls.TextBox>  
   
  <xref:System.Windows.Controls.RichTextBox>  

@@ -11,6 +11,7 @@ ms.assetid: d3a4a223-9492-4b54-9afd-db1c31c3cefd
 description: Learn how to construct font families and fonts and how to compile the code for them with the following examples and support links.
 ---
 # How to: Construct Font Families and Fonts
+
 GDI+ groups fonts with the same typeface but different styles into font families. For example, the Arial font family contains the following fonts:  
   
 - Arial Regular  
@@ -34,6 +35,7 @@ GDI+ groups fonts with the same typeface but different styles into font families
  Before you can draw text with GDI+, you need to construct a <xref:System.Drawing.FontFamily> object and a <xref:System.Drawing.Font> object. The <xref:System.Drawing.FontFamily> object specifies the typeface (for example, Arial), and the <xref:System.Drawing.Font> object specifies the size, style, and units.  
   
 ## Example  
+
  The following example constructs a regular style Arial font with a size of 16 pixels. In the following code, the first argument passed to the <xref:System.Drawing.Font.%23ctor%2A> constructor is the <xref:System.Drawing.FontFamily> object. The second argument specifies the size of the font measured in units identified by the fourth argument. The third argument identifies the style.  
   
  <xref:System.Drawing.GraphicsUnit.Pixel> is a member of the <xref:System.Drawing.GraphicsUnit> enumeration, and <xref:System.Drawing.FontStyle.Regular> is a member of the <xref:System.Drawing.FontStyle> enumeration.  
@@ -42,6 +44,7 @@ GDI+ groups fonts with the same typeface but different styles into font families
  [!code-vb[System.Drawing.FontsAndText#61](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.FontsAndText/VB/Class1.vb#61)]  
   
 ## Compiling the Code  
+
  The preceding example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs> `e`, which is a parameter of <xref:System.Windows.Forms.PaintEventHandler>.  
   
 ## See also

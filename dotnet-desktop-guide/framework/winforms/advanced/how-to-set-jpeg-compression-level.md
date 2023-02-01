@@ -11,9 +11,11 @@ helpviewer_keywords:
 ms.assetid: 4b9a74e3-9504-43c1-9f28-ace651d0772e
 ---
 # How to: Set JPEG Compression Level
+
 You may want to modify the parameters of an image when you save the image to disk to minimize the file size or improve its quality. You can adjust the quality of a JPEG image by modifying its compression level. To specify the compression level when you save a JPEG image, you must create an <xref:System.Drawing.Imaging.EncoderParameters> object and pass it to the <xref:System.Drawing.Image.Save%2A> method of the <xref:System.Drawing.Image> class. Initialize the <xref:System.Drawing.Imaging.EncoderParameters> object so that it has an array that consists of one <xref:System.Drawing.Imaging.EncoderParameter>. When you create the <xref:System.Drawing.Imaging.EncoderParameter>, specify the <xref:System.Drawing.Imaging.Encoder.Quality> encoder, and the desired compression level.  
   
 ## Example  
+
  The following example code creates an <xref:System.Drawing.Imaging.EncoderParameter> object and saves three JPEG images. Each JPEG image is saved with a different quality level, by modifying the `long` value passed to the <xref:System.Drawing.Imaging.EncoderParameter> constructor. A quality level of 0 corresponds to the greatest compression, and a quality level of 100 corresponds to the least compression.  
   
 ```csharp  
@@ -116,6 +118,7 @@ End Function
 ```  
   
 ## Compiling the Code  
+
  This example requires:  
   
 - A Windows Forms application.  

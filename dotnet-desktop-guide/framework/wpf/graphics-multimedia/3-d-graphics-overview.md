@@ -12,16 +12,21 @@ helpviewer_keywords:
 ms.assetid: 67f31ed4-e36b-4b02-9889-dcce245d7afc
 ---
 # 3D Graphics Overview
+
 <a name="introduction"></a> The 3D functionality in WPF is not designed to provide a full-featured game-development platform. This topic provides an overview of 3D functionality in the WPF graphics system.  
 
 <a name="threed_in_2d"></a>
+
 ## 3D in a 2D Container  
+
  3D graphics content in WPF is encapsulated in an element, <xref:System.Windows.Controls.Viewport3D>, that can participate in the two-dimensional element structure. The graphics system treats <xref:System.Windows.Controls.Viewport3D> as a two-dimensional visual element like many others in WPF. <xref:System.Windows.Controls.Viewport3D> functions as a window—a viewport—into a three-dimensional scene. More accurately, it is a surface on which a 3D scene is projected.  
   
  In a conventional 2D application, use <xref:System.Windows.Controls.Viewport3D> as you would another container element like Grid or Canvas.  Although you can use <xref:System.Windows.Controls.Viewport3D> with other 2D drawing objects in the same scene graph, you cannot interpenetrate 2D and 3D objects within a <xref:System.Windows.Controls.Viewport3D>.  This topic will focus on how to draw 3D graphics inside the <xref:System.Windows.Controls.Viewport3D>.  
   
 <a name="coord_space"></a>
+
 ## 3D Coordinate Space  
+
  The WPF coordinate system for 2D graphics locates the origin in the upper left of the rendering area (typically the screen). In the 2D system, positive x-axis values proceed to the right and positive y-axis values proceed downward.  In the 3D coordinate system, however, the origin is located in the center of the rendering area, with positive x-axis values proceeding to the right but positive y-axis values proceeding upward instead, and positive z-axis values proceeding outward from the origin, toward the viewer.  
   
  ![Coordinate systems](./media/coordsystem-1.png "CoordSystem-1")  
@@ -30,7 +35,9 @@ Conventional 2D and 3D coordinate system representations
  The space defined by these axes is the stationary frame of reference for 3D objects in WPF. As you build models in this space and create lights and cameras to view them, it's helpful to distinguish this stationary frame of reference, or "world space," from the local frame of reference you create for each model when you apply transformations to it. Remember also that objects in world space might look entirely different, or not be visible at all, depending on light and camera settings, but the position of the camera does not change the location of objects in world space.  
   
 <a name="cameras"></a>
+
 ## Cameras and Projections  
+
  Developers who work in 2D are accustomed to positioning drawing primitives on a two-dimensional screen. When you create a 3D scene, it's important to remember that you are really creating a 2D representation of 3D objects. Because a 3D scene looks different depending on the onlooker's point of view, you must specify that point of view. The <xref:System.Windows.Media.Media3D.Camera> class allows you to specify this point of view for a 3D scene.  
   
  Another way to understand how a 3D scene is represented on a 2D surface is by describing the scene as a projection onto the viewing surface. The <xref:System.Windows.Media.Media3D.ProjectionCamera> allows you to specify different projections and their properties to change how the onlooker sees 3D models. A <xref:System.Windows.Media.Media3D.PerspectiveCamera> specifies a projection that foreshortens the scene.  In other words, the <xref:System.Windows.Media.Media3D.PerspectiveCamera> provides vanishing-point perspective.  You can specify the position of the camera in the coordinate space of the scene, the direction and field of view for the camera, and a vector that defines the direction of "up" in the scene. The following diagram illustrates the <xref:System.Windows.Media.Media3D.PerspectiveCamera>'s projection.  
@@ -51,6 +58,7 @@ Perspective and Orthographic Projections
  [!code-vb[3dgallery_procedural_snip#Basic3DShapeCodeExampleInline1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/3DGallery_procedural_snip/visualbasic/basic3dshapeexample.vb#basic3dshapecodeexampleinline1)]  
   
 <a name="models_meshes"></a>
+
 ## Model and Mesh Primitives  
   
  <xref:System.Windows.Media.Media3D.Model3D> is the abstract base class that represents a generic 3D object. To build a 3D scene, you need some objects to view, and the objects that make up the scene graph derive from <xref:System.Windows.Media.Media3D.Model3D>. Currently, the WPF supports modeling geometries with <xref:System.Windows.Media.Media3D.GeometryModel3D>. The <xref:System.Windows.Media.Media3D.GeometryModel3D.Geometry%2A> property of this model takes a mesh primitive.  
@@ -76,6 +84,7 @@ Perspective and Orthographic Projections
  [!code-vb[3doverview#3DOverview3DN7](~/samples/snippets/visualbasic/VS_Snippets_Wpf/3DOverview/visualbasic/window1.xaml.vb#3doverview3dn7)]  
   
 <a name="materials"></a>'
+
 ## Applying Materials to the Model  
   
  For a mesh to look like a three-dimensional object, it must have an applied texture to cover the surface defined by its vertices and triangles so it can be lit and projected by the camera. In 2D, you use the <xref:System.Windows.Media.Brush> class to apply colors, patterns, gradients, or other visual content to areas of the screen.  The appearance of 3D objects, however, is a function of the lighting model, not just of the color or pattern applied to them. Real-world objects reflect light differently depending on the quality of their surfaces: glossy and shiny surfaces don't look the same as rough or matte surfaces, and some objects seem to absorb light while others glow. You can apply all the same brushes to 3D objects that you can apply to 2D objects, but you can't apply them directly.  
@@ -100,7 +109,9 @@ Perspective and Orthographic Projections
  [!code-vb[3doverview#3DOverview3DN8](~/samples/snippets/visualbasic/VS_Snippets_Wpf/3DOverview/visualbasic/window1.xaml.vb#3doverview3dn8)]  
   
 <a name="lights"></a>
+
 ## Illuminating the Scene  
+
  Lights in 3D graphics do what lights do in the real world: they make surfaces visible. More to the point, lights determine what part of a scene will be included in the projection. Light objects in WPF create a variety of light and shadow effects and are modeled after the behavior of various real-world lights. Include at least one light in your scene, or no models will be visible.  
   
  The following lights derive from the base class <xref:System.Windows.Media.Media3D.Light>:  
@@ -127,7 +138,9 @@ Perspective and Orthographic Projections
  [!code-vb[basic3d#Basic3D3DN13](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Basic3D/visualbasic/window1.xaml.vb#basic3d3dn13)]  
   
 <a name="transforms"></a>
+
 ## Transforming Models  
+
  When you create models, they have a particular location in the scene. To move those models around in the scene, to rotate them, or to change their size, it's not practical to change the vertices that define the models themselves.  Instead, just as in 2D, you apply transformations to models.  
   
  Each model object has a <xref:System.Windows.Media.Media3D.Model3D.Transform%2A> property with which you can move, reorient, or resize the model.  When you apply a transform, you effectively offset all the points of the model by whatever vector or value specified by the transform. In other words, you've transformed the coordinate space in which the model is defined ("model space"), but you haven't changed the values that make up the model's geometry in the coordinate system of the entire scene ("world space").  
@@ -135,7 +148,9 @@ Perspective and Orthographic Projections
  For more information about transforming models, see [3D Transformations Overview](3-d-transformations-overview.md).  
   
 <a name="animations"></a>
+
 ## Animating Models  
+
  The WPF 3D implementation participates in the same timing and animation system as 2D graphics. In other words, to animate a 3D scene, animate the properties of its models. It's possible to animate properties of primitives directly, but it's typically easier to animate transformations that change the position or appearance of models. Because transformations can be applied to <xref:System.Windows.Media.Media3D.Model3DGroup> objects as well as individual models, it's possible to apply one set of animations to a child of a Model3DGroup and another set of animations to a group of child objects. You can also achieve a variety of visual effects by animating the properties of your scene's lighting. Finally, you might choose to animate the projection itself by animating the camera position or field of view. For background information on the WPF timing and animation system, see the [Animation Overview](animation-overview.md), [Storyboards Overview](storyboards-overview.md), and [Freezable Objects Overview](../advanced/freezable-objects-overview.md) topics.  
   
  To animate an object in WPF, you create a timeline, define an animation (which is really a change in some property value over time), and specify the property to which to apply the animation. Because all the objects in a 3D scene are children of <xref:System.Windows.Controls.Viewport3D>, the properties targeted by any animation you want to apply to the scene are properties of Viewport3D.  
@@ -155,7 +170,9 @@ Perspective and Orthographic Projections
  [!code-vb[3doverview#3DOverview3DN5](~/samples/snippets/visualbasic/VS_Snippets_Wpf/3DOverview/visualbasic/window1.xaml.vb#3doverview3dn5)]  
   
 <a name="animations1"></a>
+
 ## Add 3D Content to the Window  
+
  To render the scene, add models and lights to a <xref:System.Windows.Media.Media3D.Model3DGroup>, then set the <xref:System.Windows.Media.Media3D.Model3DGroup> as the <xref:System.Windows.Media.Media3D.ModelVisual3D.Content%2A> of a <xref:System.Windows.Media.Media3D.ModelVisual3D>. Add the <xref:System.Windows.Media.Media3D.ModelVisual3D> to the <xref:System.Windows.Controls.Viewport3D.Children%2A> collection of the <xref:System.Windows.Controls.Viewport3D>. Add cameras to the <xref:System.Windows.Controls.Viewport3D> by setting its <xref:System.Windows.Controls.Viewport3D.Camera%2A> property.  
   
  Finally, add the <xref:System.Windows.Controls.Viewport3D> to the window. When the <xref:System.Windows.Controls.Viewport3D> is included as the content of a layout element like Canvas, specify the size of the Viewport3D by setting its <xref:System.Windows.FrameworkElement.Height%2A> and <xref:System.Windows.FrameworkElement.Width%2A> properties (inherited from <xref:System.Windows.FrameworkElement>).  

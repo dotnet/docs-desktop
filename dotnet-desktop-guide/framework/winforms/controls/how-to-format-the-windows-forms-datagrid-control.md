@@ -17,6 +17,7 @@ helpviewer_keywords:
 ms.assetid: a50fcc3b-8abf-47ec-9029-7f268af4ddb1
 ---
 # How to: Format the Windows Forms DataGrid Control
+>
 > [!NOTE]
 > The <xref:System.Windows.Forms.DataGridView> control replaces and adds functionality to the <xref:System.Windows.Forms.DataGrid> control; however, the <xref:System.Windows.Forms.DataGrid> control is retained for both backward compatibility and future use, if you choose. For more information, see [Differences Between the Windows Forms DataGridView and DataGrid Controls](differences-between-the-windows-forms-datagridview-and-datagrid-controls.md).  
   

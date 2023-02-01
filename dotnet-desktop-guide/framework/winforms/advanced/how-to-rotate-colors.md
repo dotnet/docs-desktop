@@ -11,6 +11,7 @@ helpviewer_keywords:
 ms.assetid: e2e4c300-159c-4f4a-9b56-103b0f7cbc05
 ---
 # How to: Rotate Colors
+
 Rotation in a four-dimensional color space is difficult to visualize. We can make it easier to visualize rotation by agreeing to keep one of the color components fixed. Suppose we agree to keep the alpha component fixed at 1 (fully opaque). Then we can visualize a three-dimensional color space with red, green, and blue axes as shown in the following illustration.  
   
  ![Illustration that shows rotation with red, green, and blue axes.](./media/how-to-rotate-colors/rotation-red-green-blue-axes.gif)  
@@ -26,6 +27,7 @@ Rotation in a four-dimensional color space is difficult to visualize. We can mak
  ![Initialize a color matrix to perform rotations about three axes.](./media/how-to-rotate-colors/rotation-about-three-axes.gif)  
   
 ## Example  
+
  The following example takes an image that is all one color (1, 0, 0.6) and applies a 60-degree rotation about the blue axis. The angle of the rotation is swept out in a plane that is parallel to the red-green plane.  
   
  The following illustration shows the original image on the left and the color-rotated image on the right:  
@@ -40,6 +42,7 @@ Rotation in a four-dimensional color space is difficult to visualize. We can mak
  [!code-vb[System.Drawing.RotateColors#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.RotateColors/VB/Form1.vb#1)]  
   
 ## Compiling the Code  
+
  The preceding example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs> `e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler. Replace `RotationInput.bmp` with an image file name and path valid on your system.  
   
 ## See also

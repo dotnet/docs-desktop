@@ -13,9 +13,11 @@ ms.assetid: 8d8592ae-0c91-469e-a1cd-d179c4544548
 description: Learn how to hook up a RoutedCommand to a Control which has built in support for the command, with supporting examples and links.
 ---
 # How to: Hook Up a Command to a Control with Command Support
+
 The following example shows how to hook up a <xref:System.Windows.Input.RoutedCommand> to a <xref:System.Windows.Controls.Control> which has built in support for the command.  For a complete sample which hooks up commands to multiple sources, see the [Create a Custom RoutedCommand Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Input%20and%20Commands/CustomRoutedCommand) sample.  
   
 ## Example  
+
  Windows Presentation Foundation (WPF) provides a library of common commands which application programmers encounter regularly.  The classes which comprise the command library are: <xref:System.Windows.Input.ApplicationCommands>, <xref:System.Windows.Input.ComponentCommands>, <xref:System.Windows.Input.NavigationCommands>, <xref:System.Windows.Input.MediaCommands>, and <xref:System.Windows.Documents.EditingCommands>.  
   
  The static <xref:System.Windows.Input.RoutedCommand> objects which make up these classes do not supply command logic.  The logic for the command is associated with the command with a <xref:System.Windows.Input.CommandBinding>.  Some controls have built in CommandBindings for some commands.  This mechanism allows the semantics of a command to stay the same, while the actual implementation is can change.  A <xref:System.Windows.Controls.TextBox>, for example, handles the <xref:System.Windows.Input.ApplicationCommands.Paste%2A> command differently than a control designed to support images, but the basic idea of what it means to paste something stays the same.  The command logic cannot be supplied by the command, but rather must be supplied by the control or the application.  

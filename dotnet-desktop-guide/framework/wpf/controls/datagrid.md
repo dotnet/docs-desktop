@@ -13,6 +13,7 @@ helpviewer_keywords:
 ms.assetid: bf89ea63-79b6-422b-bc9f-0485ad803216
 ---
 # DataGrid
+
 The <xref:System.Windows.Controls.DataGrid> control enables you to display and edit data from many different sources, such as from a SQL database, LINQ query, or any other bindable data source. For more information, see [Binding Sources Overview](../data/binding-sources-overview.md).  
   
  Columns can display text, controls, such as a <xref:System.Windows.Controls.ComboBox>, or any other WPF content, such as images, buttons, or any content contained in a template. You can use a <xref:System.Windows.Controls.DataGridTemplateColumn> to display data defined in a template. The following table lists the column types that are provided by default.  

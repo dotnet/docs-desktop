@@ -12,6 +12,7 @@ helpviewer_keywords:
 ms.assetid: 65c978a7-0ee0-454f-ac7f-b1bd2efecac5
 ---
 # Custom Rendering Ink
+
 The <xref:System.Windows.Ink.Stroke.DrawingAttributes%2A> property of a stroke allows you to specify the appearance of a stroke, such as its size, color, and shape, but there may be times that you want to customize the appearance beyond what <xref:System.Windows.Ink.Stroke.DrawingAttributes%2A> allow. You may want to customize the appearance of ink by rendering in the appearance of an air brush, oil paint, and many other effects. The Windows Presentation Foundation (WPF) allows you to custom render ink by implementing a custom <xref:System.Windows.Input.StylusPlugIns.DynamicRenderer> and <xref:System.Windows.Ink.Stroke> object.  
   
  This topic contains the following subsections:  
@@ -27,7 +28,9 @@ The <xref:System.Windows.Ink.Stroke.DrawingAttributes%2A> property of a stroke a
 - [Conclusion](#Conclusion)  
   
 <a name="Architecture"></a>
+
 ## Architecture  
+
  Ink rendering occurs two times; when a user writes ink to an inking surface, and again after the stroke is added to the ink-enabled surface. The <xref:System.Windows.Input.StylusPlugIns.DynamicRenderer> renders the ink when the user moves the tablet pen on the digitizer, and the <xref:System.Windows.Ink.Stroke> renders itself once it is added to an element.  
   
  There are three classes to implement when dynamically rendering ink.  
@@ -39,7 +42,9 @@ The <xref:System.Windows.Ink.Stroke.DrawingAttributes%2A> property of a stroke a
 3. **InkCanvas:** Implement a class that derives from <xref:System.Windows.Controls.InkCanvas>. Assign the customized <xref:System.Windows.Input.StylusPlugIns.DynamicRenderer> to the <xref:System.Windows.Controls.InkCanvas.DynamicRenderer%2A> property. Override the <xref:System.Windows.Controls.InkCanvas.OnStrokeCollected%2A> method and add a custom stroke to the <xref:System.Windows.Controls.InkCanvas.Strokes%2A> property. This ensures that the appearance of the ink is consistent.  
   
 <a name="ImplementingADynamicRenderer"></a>
+
 ## Implementing a Dynamic Renderer  
+
  Although the <xref:System.Windows.Input.StylusPlugIns.DynamicRenderer> class is a standard part of WPF, to perform more specialized rendering, you must create a customized dynamic renderer that derives from the <xref:System.Windows.Input.StylusPlugIns.DynamicRenderer> and override the <xref:System.Windows.Input.StylusPlugIns.DynamicRenderer.OnDraw%2A> method.  
   
  The following example demonstrates a customized <xref:System.Windows.Input.StylusPlugIns.DynamicRenderer> that draws ink with a linear gradient brush effect.  
@@ -50,7 +55,9 @@ The <xref:System.Windows.Ink.Stroke.DrawingAttributes%2A> property of a stroke a
 [!code-vb[AdvancedInkTopicsSamples#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/AdvancedInkTopicsSamples/VisualBasic/DynamicRenderer.vb#1)]  
   
 <a name="ImplementingCustomStrokes"></a>
+
 ## Implementing Custom Strokes  
+
  Implement a class that derives from <xref:System.Windows.Ink.Stroke>. This class is responsible for rendering <xref:System.Windows.Input.StylusPoint> data after it has been converted into a <xref:System.Windows.Ink.Stroke> object. Override the <xref:System.Windows.Ink.Stroke.DrawCore%2A> class to do the actual drawing.  
   
  Your Stroke class can also store custom data by using the <xref:System.Windows.Ink.Stroke.AddPropertyData%2A> method. This data is stored with the stroke data when persisted.  
@@ -65,7 +72,9 @@ The <xref:System.Windows.Ink.Stroke.DrawingAttributes%2A> property of a stroke a
 [!code-vb[AdvancedInkTopicsSamples#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/AdvancedInkTopicsSamples/VisualBasic/DynamicRenderer.vb#2)]  
   
 <a name="ImplementingACustomInkCanvas"></a>
+
 ## Implementing a Custom InkCanvas  
+
  The easiest way to use your customized <xref:System.Windows.Input.StylusPlugIns.DynamicRenderer> and stroke is to implement a class that derives from <xref:System.Windows.Controls.InkCanvas> and uses these classes. The <xref:System.Windows.Controls.InkCanvas> has a <xref:System.Windows.Controls.InkCanvas.DynamicRenderer%2A> property that specifies how the stroke is rendered when the user is drawing it.  
   
  To custom render strokes on an <xref:System.Windows.Controls.InkCanvas> do the following:  
@@ -83,7 +92,9 @@ The <xref:System.Windows.Ink.Stroke.DrawingAttributes%2A> property of a stroke a
  An <xref:System.Windows.Controls.InkCanvas> can have more than one <xref:System.Windows.Input.StylusPlugIns.DynamicRenderer>. You can add multiple <xref:System.Windows.Input.StylusPlugIns.DynamicRenderer> objects to the <xref:System.Windows.Controls.InkCanvas> by adding them to the <xref:System.Windows.UIElement.StylusPlugIns%2A> property.  
   
 <a name="Conclusion"></a>
+
 ## Conclusion  
+
  You can customize the appearance of ink by deriving your own <xref:System.Windows.Input.StylusPlugIns.DynamicRenderer>, <xref:System.Windows.Ink.Stroke>, and <xref:System.Windows.Controls.InkCanvas> classes. Together, these classes ensure that the appearance of the stroke is consistent when the user draws the stroke and after it is collected.  
   
 ## See also

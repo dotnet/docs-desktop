@@ -11,9 +11,11 @@ helpviewer_keywords:
 ms.assetid: ace6e8d4-4e94-486b-9681-758a6667dc7f
 ---
 # Lines, Curves, and Shapes
+
 The vector graphics portion of GDI+ is used to draw lines, draw curves, and to draw and fill shapes.  
   
 ## In This Section  
+
  [Vector Graphics Overview](vector-graphics-overview.md)  
  Discusses vector graphics.  
   

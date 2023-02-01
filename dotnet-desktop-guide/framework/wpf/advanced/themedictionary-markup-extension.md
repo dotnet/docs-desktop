@@ -12,6 +12,7 @@ helpviewer_keywords:
 ms.assetid: aa75e10b-13dd-4989-972d-51bab63a05e2
 ---
 # ThemeDictionary Markup Extension
+
 Provides a way for custom control authors or applications that integrate third-party controls to load theme-specific resource dictionaries to use in styling the control.  
   
 ## XAML Attribute Usage  
@@ -37,6 +38,7 @@ Provides a way for custom control authors or applications that integrate third-p
 |`assemblyUri`|The uniform resource identifier (URI) of the assembly that contains theme information. Typically, this is a pack URI that references an assembly in the larger package. Assembly resources and pack URIs simplify deployment issues. For more information see [Pack URIs in WPF](../app-development/pack-uris-in-wpf.md).|  
   
 ## Remarks  
+
  This extension is intended to fill only one specific property value: a value for <xref:System.Windows.ResourceDictionary.Source%2A?displayProperty=nameWithType>.  
   
  By using this extension, you can specify a single resources-only assembly that contains some styles to use only when the Windows Aero theme is applied to the user's system, other styles only when the Luna theme is active, and so on. By using this extension, the contents of a control-specific resource dictionary can be automatically invalidated and reloaded to be specific for another theme when required.  

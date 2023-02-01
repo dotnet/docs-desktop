@@ -11,6 +11,7 @@ helpviewer_keywords:
 ms.assetid: df23c887-7fd6-4b15-ad94-e30b5bd4b849
 ---
 # Using Transformations to Scale Colors
+
 A scaling transformation multiplies one or more of the four color components by a number. The color matrix entries that represent scaling are given in the following table.  
   
 |Component to be scaled|Matrix entry|  
@@ -21,6 +22,7 @@ A scaling transformation multiplies one or more of the four color components by 
 |Alpha|`[3][3]`|  
   
 ## Scaling One Color  
+
  The following example constructs an <xref:System.Drawing.Image> object from the file ColorBars2.bmp. Then the code scales the blue component of each pixel in the image by a factor of 2. The original image is drawn alongside the transformed image.  
   
  [!code-csharp[System.Drawing.RecoloringImages#41](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.RecoloringImages/CS/Class1.cs#41)]
@@ -40,6 +42,7 @@ A scaling transformation multiplies one or more of the four color components by 
 |(0.4, 0.4, 0.8, 1)|(0.4, 0.4, 0.6, 1)|  
   
 ## Scaling Multiple Colors  
+
  The following example constructs an <xref:System.Drawing.Image> object from the file ColorBars2.bmp. Then the code scales the red, green, and blue components of each pixel in the image. The red components are scaled down 25 percent, the green components are scaled down 35 percent, and the blue components are scaled down 50 percent.  
   
  [!code-csharp[System.Drawing.RecoloringImages#42](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.RecoloringImages/CS/Class1.cs#42)]

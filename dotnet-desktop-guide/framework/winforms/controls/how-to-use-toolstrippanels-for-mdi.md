@@ -12,15 +12,18 @@ helpviewer_keywords:
 ms.assetid: d6b884fc-0846-465f-83c3-5dc0fe93b00f
 ---
 # How to: Use ToolStripPanels for MDI
+
 The <xref:System.Windows.Forms.ToolStripPanel> provides flexibility for multiple-document interface (MDI) applications by using the <xref:System.Windows.Forms.ToolStripPanel.Join%2A> method.  
   
 ## Example  
+
  The following code example demonstrates how to use <xref:System.Windows.Forms.ToolStripPanel> controls for MDI.  
   
  [!code-csharp[System.Windows.Forms.ToolStrip.Misc#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.Misc/CS/Program.cs#10)]
  [!code-vb[System.Windows.Forms.ToolStrip.Misc#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.ToolStrip.Misc/VB/Program.vb#10)]  
   
 ## Compiling the Code  
+
  This example requires:  
   
 - References to the System.Design, System.Drawing, and System.Windows.Forms assemblies.  

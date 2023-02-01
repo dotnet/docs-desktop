@@ -12,6 +12,7 @@ helpviewer_keywords:
 ms.assetid: 36a4320f-91ce-4f5f-9621-7934de3eff77
 ---
 # Popup
+
 The <xref:System.Windows.Controls.Primitives.Popup> control displays content in a separate window that floats over the current application window.  
   
  The following illustration shows a <xref:System.Windows.Controls.Primitives.Popup> control that is positioned with respect to a <xref:System.Windows.Controls.Button> that is its parent:  
@@ -19,11 +20,13 @@ The <xref:System.Windows.Controls.Primitives.Popup> control displays content in 
  ![Popup illustration](./media/popup/popup-picture-button.jpg)  
   
 ## In This Section  
+
  [Popup Overview](popup-overview.md)  
  [Popup Placement Behavior](popup-placement-behavior.md)  
  [How-to Topics](popup-how-to-topics.md)  
   
 ## Reference  
+
  <xref:System.Windows.Controls.Primitives.Popup>  
   
 ## Related Sections

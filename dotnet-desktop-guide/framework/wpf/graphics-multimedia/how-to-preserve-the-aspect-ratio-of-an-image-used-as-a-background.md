@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 28c39478-13d7-4011-80a3-8b9cc3e54478
 ---
 # How to: Preserve the Aspect Ratio of an Image Used as a Background
+
 This example shows how to use the <xref:System.Windows.Media.TileBrush.Stretch%2A> property of an <xref:System.Windows.Media.ImageBrush> in order to preserve the aspect ratio of the image.  
   
  By default, when you use an <xref:System.Windows.Media.ImageBrush> to paint an area, its content stretches to completely fill the output area. When the output area and the image have different aspect ratios, the image is distorted by this stretching.  
@@ -16,6 +17,7 @@ This example shows how to use the <xref:System.Windows.Media.TileBrush.Stretch%2
  To make an <xref:System.Windows.Media.ImageBrush> preserve the aspect ratio of its image, set the <xref:System.Windows.Media.TileBrush.Stretch%2A> property to <xref:System.Windows.Media.Stretch.Uniform> or <xref:System.Windows.Media.Stretch.UniformToFill>.  
   
 ## Example  
+
  The following example uses two <xref:System.Windows.Media.ImageBrush> objects to paint two rectangles. Each rectangle is 300 by 150 pixels and each contains a 300 by 300 pixel image. The <xref:System.Windows.Media.TileBrush.Stretch%2A> property of the first brush is set to <xref:System.Windows.Media.Stretch.Uniform>, and the <xref:System.Windows.Media.TileBrush.Stretch%2A> property of the second brush is set to <xref:System.Windows.Media.Stretch.UniformToFill>.  
   
  [!code-csharp[UsingImageBrush_snip#ImageBrushStretchModesExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/UsingImageBrush_snip/CSharp/StretchModes.cs#imagebrushstretchmodesexamplewholepage)]  

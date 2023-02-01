@@ -11,10 +11,13 @@ helpviewer_keywords:
 ms.assetid: 9fba8934-98b7-4af6-82f6-f4ef887f963a
 ---
 # Geometry Overview
+
 This overview describes how to use the Windows Presentation Foundation (WPF) <xref:System.Windows.Media.Geometry> classes to describe shapes. This topic also contrasts the differences between <xref:System.Windows.Media.Geometry> objects and <xref:System.Windows.Shapes.Shape> elements.  
 
 <a name="wcpsdk_graphics_geometry_introduction"></a>
+
 ## What Is a Geometry?  
+
  The <xref:System.Windows.Media.Geometry> class and the classes which derive from it, such as <xref:System.Windows.Media.EllipseGeometry>, <xref:System.Windows.Media.PathGeometry>, and <xref:System.Windows.Media.CombinedGeometry>, enable you to describe the geometry of a 2D shape. These geometric descriptions have many uses, such defining a shape to paint to the screen or defining hit-test and clip regions. You can even use a geometry to define an animation path.  
   
  <xref:System.Windows.Media.Geometry> objects can be simple, such as rectangles and circles, or composite, created from two or more geometry objects.  More complex geometries can be created by using the <xref:System.Windows.Media.PathGeometry> and <xref:System.Windows.Media.StreamGeometry> classes, which enable you to describe arcs and curves.  
@@ -22,7 +25,9 @@ This overview describes how to use the Windows Presentation Foundation (WPF) <xr
  Because a <xref:System.Windows.Media.Geometry> is a type of <xref:System.Windows.Freezable>, <xref:System.Windows.Media.Geometry> objects provide several special features: they can be declared as [resources](/dotnet/desktop-wpf/fundamentals/xaml-resources-define), shared among multiple objects, made read-only to improve performance, cloned, and made thread-safe. For more information about the different features provided by <xref:System.Windows.Freezable> objects, see the [Freezable Objects Overview](../advanced/freezable-objects-overview.md).  
   
 <a name="wcpsdk_graphics_geometry_geometryandshapes"></a>
+
 ## Geometries vs. Shapes  
+
  The <xref:System.Windows.Media.Geometry> and <xref:System.Windows.Shapes.Shape> classes seem similar in that they both describe 2D shapes (compare <xref:System.Windows.Media.EllipseGeometry> and <xref:System.Windows.Shapes.Ellipse> for example), but there are important differences.  
   
  For one, the <xref:System.Windows.Media.Geometry> class inherits from the <xref:System.Windows.Freezable> class while the <xref:System.Windows.Shapes.Shape> class inherits from <xref:System.Windows.FrameworkElement>. Because they are elements, <xref:System.Windows.Shapes.Shape> objects can render themselves and participate in the layout system, while <xref:System.Windows.Media.Geometry> objects cannot.  
@@ -30,10 +35,13 @@ This overview describes how to use the Windows Presentation Foundation (WPF) <xr
  Although <xref:System.Windows.Shapes.Shape> objects are more readily usable than <xref:System.Windows.Media.Geometry> objects, <xref:System.Windows.Media.Geometry> objects are more versatile. While a <xref:System.Windows.Shapes.Shape> object is used to render 2D graphics, a <xref:System.Windows.Media.Geometry> object can be used to define the geometric region for 2D graphics, define a region for clipping, or define a region for hit testing, for example.  
   
 ### The Path Shape  
+
  One <xref:System.Windows.Shapes.Shape>, the <xref:System.Windows.Shapes.Path> class, actually uses a <xref:System.Windows.Media.Geometry> to describe its contents. By setting the <xref:System.Windows.Shapes.Path.Data%2A> property of the <xref:System.Windows.Shapes.Path> with a <xref:System.Windows.Media.Geometry> and setting its <xref:System.Windows.Shapes.Shape.Fill%2A> and <xref:System.Windows.Shapes.Shape.Stroke%2A> properties, you can render a <xref:System.Windows.Media.Geometry>.  
   
 <a name="commonproperties"></a>
+
 ## Common Properties That Take a Geometry  
+
  The preceding sections mentioned that Geometry objects can be used with other objects for a variety of purposes, such as drawing shapes, animating, and clipping. The following table lists several classes that have properties that take a <xref:System.Windows.Media.Geometry> object.  
   
 |Type|Property|  
@@ -45,7 +53,9 @@ This overview describes how to use the Windows Presentation Foundation (WPF) <xr
 |<xref:System.Windows.UIElement>|<xref:System.Windows.UIElement.Clip%2A>|  
   
 <a name="wcpsdk_graphics_geometry_geometrytypes"></a>
+
 ## Simple Geometry Types  
+
  The base class for all geometries is the abstract class <xref:System.Windows.Media.Geometry>.  The classes which derive from the <xref:System.Windows.Media.Geometry> class can be roughly grouped into three categories: simple geometries, path geometries, and composite geometries.  
   
  Simple geometry classes include <xref:System.Windows.Media.LineGeometry>, <xref:System.Windows.Media.RectangleGeometry>, and <xref:System.Windows.Media.EllipseGeometry> and are used to create basic geometric shapes, such as lines, rectangles, and circles.  
@@ -99,7 +109,9 @@ An EllipseGeometry used to clip an Image control
  [!code-vb[GeometryOverviewSamples_procedural_snip#GraphicsMMImageClipGeometryExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GeometryOverviewSamples_procedural_snip/visualbasic/geometryexamples.vb#graphicsmmimageclipgeometryexample)]  
   
 <a name="wcpsdk_graphics_geometry_pathgeometry"></a>
+
 ## Path Geometries  
+
  The <xref:System.Windows.Media.PathGeometry> class and its lightweight equivalent, the <xref:System.Windows.Media.StreamGeometry> class, provide the means to describe multiple complex figures composed of arcs, curves, and lines.  
   
  At the heart of a <xref:System.Windows.Media.PathGeometry> is a collection of <xref:System.Windows.Media.PathFigure> objects, so named because each figure describes a discrete shape in the <xref:System.Windows.Media.PathGeometry>. Each <xref:System.Windows.Media.PathFigure> is itself comprised of one or more <xref:System.Windows.Media.PathSegment> objects, each of which describes a segment of the figure.  
@@ -159,15 +171,19 @@ A PathGeometry with multiple figures
  [!code-vb[GeometryOverviewSamples_procedural_snip#GraphicsMMPathGeometryComplexMultiExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GeometryOverviewSamples_procedural_snip/visualbasic/geometryexamples.vb#graphicsmmpathgeometrycomplexmultiexample)]  
   
 ### StreamGeometry  
+
  Like the <xref:System.Windows.Media.PathGeometry> class, a <xref:System.Windows.Media.StreamGeometry> defines a complex geometric shape that may contain curves, arcs, and lines. Unlike a <xref:System.Windows.Media.PathGeometry>, the contents of a  <xref:System.Windows.Media.StreamGeometry> do not support data binding, animation, or modification. Use a <xref:System.Windows.Media.StreamGeometry> when you need to describe a complex geometry but do not want the overhead of supporting data binding, animation, or modification. Because of its efficiency, the <xref:System.Windows.Media.StreamGeometry> class is a good choice for describing adorners.  
   
  For an example, see [Create a Shape Using a StreamGeometry](how-to-create-a-shape-using-a-streamgeometry.md).  
   
 ### Path Markup Syntax  
+
  The <xref:System.Windows.Media.PathGeometry> and <xref:System.Windows.Media.StreamGeometry> types support a Extensible Application Markup Language (XAML) attribute syntax using a special series of move and draw commands. For more information, see [Path Markup Syntax](path-markup-syntax.md).  
   
 <a name="wcpsdk_graphics_geometry_introduction2"></a>
+
 ## Composite Geometries  
+
  Composite geometry objects can be created using a <xref:System.Windows.Media.GeometryGroup>, a <xref:System.Windows.Media.CombinedGeometry>, or by calling the static <xref:System.Windows.Media.Geometry> method <xref:System.Windows.Media.Geometry.Combine%2A>.  
   
 - The <xref:System.Windows.Media.CombinedGeometry> object and the <xref:System.Windows.Media.Geometry.Combine%2A> method performs a Boolean operation to combine the area defined by two geometries. <xref:System.Windows.Media.Geometry> objects that have no area are discarded. Only two <xref:System.Windows.Media.Geometry> objects can be combined (although these two geometries may also be composite geometries).  
@@ -177,7 +193,9 @@ A PathGeometry with multiple figures
  Because they do not perform a combine operation, using <xref:System.Windows.Media.GeometryGroup> objects provides performance benefits over using <xref:System.Windows.Media.CombinedGeometry> objects or the <xref:System.Windows.Media.Geometry.Combine%2A> method.  
   
 <a name="combindgeometriessection"></a>
+
 ## Combined Geometries  
+
  The preceding section mentioned the <xref:System.Windows.Media.CombinedGeometry> object and the <xref:System.Windows.Media.Geometry.Combine%2A> method combine the area defined by the geometries they contain. The <xref:System.Windows.Media.GeometryCombineMode> enumeration specifies how the geometries are combined. The possible values for the <xref:System.Windows.Media.CombinedGeometry.GeometryCombineMode%2A> property are: <xref:System.Windows.Media.GeometryCombineMode.Union>, <xref:System.Windows.Media.GeometryCombineMode.Intersect>, <xref:System.Windows.Media.GeometryCombineMode.Exclude>, and <xref:System.Windows.Media.GeometryCombineMode.Xor>.  
   
  In the following example, a <xref:System.Windows.Media.CombinedGeometry> is defined with a combine mode of Union.  Both <xref:System.Windows.Media.CombinedGeometry.Geometry1%2A> and the <xref:System.Windows.Media.CombinedGeometry.Geometry2%2A> are defined as circles of the same radius, but with centers offset by 50.  
@@ -195,11 +213,15 @@ A PathGeometry with multiple figures
  For additional examples, see [Create a Composite Shape](how-to-create-a-composite-shape.md) and [Create a Combined Geometry](how-to-create-a-combined-geometry.md).  
   
 <a name="freezable_features"></a>
+
 ## Freezable Features  
+
  Because it inherits from the <xref:System.Windows.Freezable> class, the <xref:System.Windows.Media.Geometry> class  provide several special features: <xref:System.Windows.Media.Geometry> objects can be declared as [XAML Resources](/dotnet/desktop-wpf/fundamentals/xaml-resources-define), shared among multiple objects, made read-only to improve performance, cloned, and made thread-safe. For more information about the different features provided by <xref:System.Windows.Freezable> objects, see the [Freezable Objects Overview](../advanced/freezable-objects-overview.md).  
   
 <a name="othergeometryfeatures"></a>
+
 ## Other Geometry Features  
+
  The <xref:System.Windows.Media.Geometry> class also provides useful utility methods, such as the following:  
   
 - <xref:System.Windows.Media.Geometry.GetArea%2A> - Gets the area of the <xref:System.Windows.Media.Geometry>.  

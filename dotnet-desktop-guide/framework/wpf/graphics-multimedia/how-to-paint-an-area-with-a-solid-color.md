@@ -9,11 +9,13 @@ helpviewer_keywords:
 ms.assetid: 5d27d8a7-4bd7-4063-bdf3-2c5c0f19f9d3
 ---
 # How to: Paint an Area with a Solid Color
+
 To paint an area with a solid color, you can use a predefined system brush, such as <xref:System.Windows.Media.Brushes.Red%2A> or <xref:System.Windows.Media.Brushes.Blue%2A>, or you can create a new <xref:System.Windows.Media.SolidColorBrush> and describe its <xref:System.Windows.Media.SolidColorBrush.Color%2A> using alpha, red, green, and blue values. In XAML, you may also paint an area with a solid color by using hexidecimal notation.  
   
  The following examples uses each of these techniques to paint a <xref:System.Windows.Shapes.Rectangle> blue.  
   
 ## Example  
+
  **Using a Predefined Brush**  
   
  In the following example uses the predefined brush <xref:System.Windows.Media.Brushes.Blue%2A> to paint a rectangle blue.  

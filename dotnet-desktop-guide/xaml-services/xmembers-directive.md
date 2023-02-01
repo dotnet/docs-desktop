@@ -6,6 +6,7 @@ ms.custom: devdivchpfy22
 ms.assetid: 155b393d-3b49-4c5a-8c9e-b3d9893af4e4
 ---
 # x:Members Directive
+
 Holds a set of members that are defined in markup, which apply to the x:Class of the parent element.
 
 ## XAML Attribute Usage

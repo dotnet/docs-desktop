@@ -13,6 +13,7 @@ helpviewer_keywords:
 ms.assetid: a01bee43-d9eb-4954-84e6-45a93532d08d
 ---
 # How to: Set the Size of Status-Bar Panels
+>
 > [!NOTE]
 > The <xref:System.Windows.Forms.ToolStripStatusLabel> control replaces and adds functionality to the <xref:System.Windows.Forms.StatusBar> control; however, the <xref:System.Windows.Forms.StatusBar> control is retained for both backward compatibility and future use, if you choose.  
   

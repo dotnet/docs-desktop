@@ -12,6 +12,7 @@ helpviewer_keywords:
 ms.assetid: 4a16f7e2-ae10-4485-b0ae-3d558334d0fe
 ---
 # How to: Print in Windows Forms Using Print Preview
+
 It is very common in Windows Forms programming to offer print preview in addition to printing services. An easy way to add print preview services to your application is to use a <xref:System.Windows.Forms.PrintPreviewDialog> control in combination with the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event-handling logic for printing a file.  
   
 ### To preview a text document with a PrintPreviewDialog control  
@@ -49,10 +50,12 @@ It is very common in Windows Forms programming to offer print preview in additio
      [!code-vb[System.Drawing.Printing.PrintPreviewExample#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Printing.PrintPreviewExample/VB/Form1.vb#4)]  
   
 ## Example  
+
  [!code-csharp[System.Drawing.Printing.PrintPreviewExample#0](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.Printing.PrintPreviewExample/CS/Form1.cs#0)]
  [!code-vb[System.Drawing.Printing.PrintPreviewExample#0](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.Printing.PrintPreviewExample/VB/Form1.vb#0)]  
   
 ## Compiling the Code  
+
  This example requires:  
   
 - References to the System, System.Windows.Forms, System.Drawing assemblies.  

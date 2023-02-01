@@ -12,6 +12,7 @@ helpviewer_keywords:
 ms.assetid: d93c4b5b-498e-49bc-982a-2229d61778e4
 ---
 # How to: Get the Selected Cells, Rows, and Columns in the Windows Forms DataGridView Control
+
 You can get the selected cells, rows, or columns from a <xref:System.Windows.Forms.DataGridView> control by using the corresponding properties: <xref:System.Windows.Forms.DataGridView.SelectedCells%2A>, <xref:System.Windows.Forms.DataGridView.SelectedRows%2A>, and <xref:System.Windows.Forms.DataGridView.SelectedColumns%2A>. In the following procedures, you will get the selected cells and display their row and column indexes in a <xref:System.Windows.Forms.MessageBox>.  
   
 ### To get the selected cells in a DataGridView control  
@@ -39,6 +40,7 @@ You can get the selected cells, rows, or columns from a <xref:System.Windows.For
      [!code-vb[System.Windows.Forms.DataGridViewSelectedCollections#30](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewSelectedCollections/VB/DataGridViewSelectedCollections.vb#30)]  
   
 ## Compiling the Code  
+
  This example requires:  
   
 - <xref:System.Windows.Forms.Button> controls named `selectedCellsButton`, `selectedRowsButton`, and `selectedColumnsButton`, each with handlers for the <xref:System.Windows.Forms.Control.Click> event attached.  
@@ -48,6 +50,7 @@ You can get the selected cells, rows, or columns from a <xref:System.Windows.For
 - References to the <xref:System?displayProperty=nameWithType>, <xref:System.Windows.Forms?displayProperty=nameWithType>, and <xref:System.Text?displayProperty=nameWithType> assemblies.  
   
 ## Robust Programming  
+
  The collections described in this topic do not perform efficiently when large numbers of cells, rows, or columns are selected. For more information about using these collections with large amounts of data, see [Best Practices for Scaling the Windows Forms DataGridView Control](best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
 ## See also

@@ -8,10 +8,13 @@ helpviewer_keywords:
 ms.assetid: 1ba6dc5b-11a7-4247-9213-36c6729ee35f
 ---
 # TextBox Overview
+
 The <xref:System.Windows.Controls.TextBox> class enables you to display or edit unformatted text. A common use of a <xref:System.Windows.Controls.TextBox> is editing unformatted text in a form. For example, a form asking for the user's name, phone number, etc would use <xref:System.Windows.Controls.TextBox> controls for text input. This topic introduces the <xref:System.Windows.Controls.TextBox> class and provides examples of how to use it in both Extensible Application Markup Language (XAML) and C#.  
 
 <a name="textbox_or_richtextbox"></a>
+
 ## TextBox or RichTextBox?  
+
  Both <xref:System.Windows.Controls.TextBox> and <xref:System.Windows.Controls.RichTextBox> allow users to input text but the two controls are used for different scenarios. A <xref:System.Windows.Controls.TextBox> requires less system resources then a <xref:System.Windows.Controls.RichTextBox> so it is ideal when only plain text needs to be edited (i.e., usage in a form). A <xref:System.Windows.Controls.RichTextBox> is a better choice when it is necessary for the user to edit formatted text, images, tables, or other supported content. For example, editing a document, article, or blog that requires formatting, images, etc is best accomplished using a <xref:System.Windows.Controls.RichTextBox>. The table below summarizes the primary features of <xref:System.Windows.Controls.TextBox> and <xref:System.Windows.Controls.RichTextBox>.  
   
 |Control|Real-time Spellchecking|Context Menu|Formatting commands like <xref:System.Windows.Documents.EditingCommands.ToggleBold%2A> (Ctr+B)|<xref:System.Windows.Documents.FlowDocument> content like images, paragraphs, tables, etc.|  
@@ -25,6 +28,7 @@ The <xref:System.Windows.Controls.TextBox> class enables you to display or edit 
  Features supported by <xref:System.Windows.Controls.TextBox> are covered in the sections below. For more information about <xref:System.Windows.Controls.RichTextBox>, see [RichTextBox Overview](richtextbox-overview.md).  
   
 ### Real-time Spellchecking  
+
  You can enable real-time spellchecking in a <xref:System.Windows.Controls.TextBox> or <xref:System.Windows.Controls.RichTextBox>. When spellchecking is turned on, a red line appears underneath any misspelled words (see picture below).  
   
  ![Textbox with spell&#45;checking](./media/editing-textbox-with-spellchecking.png "Editing_TextBox_with_Spellchecking")  
@@ -32,6 +36,7 @@ The <xref:System.Windows.Controls.TextBox> class enables you to display or edit 
  See [Enable Spell Checking in a Text Editing Control](how-to-enable-spell-checking-in-a-text-editing-control.md) to learn how to enable spellchecking.  
   
 ### Context Menu  
+
  By default, both <xref:System.Windows.Controls.TextBox> and <xref:System.Windows.Controls.RichTextBox> have a context menu that appears when a user right-clicks inside the control. The context menu allows the user to cut, copy, or paste (see picture below).  
   
  ![TextBox with context menu](./media/editing-textbox-with-context-menu.png "Editing_TextBox_with_Context_Menu")  
@@ -39,7 +44,9 @@ The <xref:System.Windows.Controls.TextBox> class enables you to display or edit 
  You can create your own custom context menu to override the default behavior. See [Use a Custom Context Menu with a TextBox](how-to-use-a-custom-context-menu-with-a-textbox.md) for more information.  
   
 <a name="creating_textboxes"></a>
+
 ## Creating TextBoxes  
+
  A <xref:System.Windows.Controls.TextBox> can be a single line in height or comprise multiple lines. A single line <xref:System.Windows.Controls.TextBox> is best for inputting small amounts of plain text (i.e. "Name", "Phone Number", etc. in a form). The following example shows how to create a single line <xref:System.Windows.Controls.TextBox>.  
   
  [!code-xaml[TextBoxMiscSnippets_snip#BasicTextBoxExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxMiscSnippets_snip/csharp/basictextboxexample.xaml#basictextboxexamplewholepage)]  
@@ -57,7 +64,9 @@ The <xref:System.Windows.Controls.TextBox> class enables you to display or edit 
  For more information on different tasks associated with using a <xref:System.Windows.Controls.TextBox>, see [How-to Topics](textbox-how-to-topics.md).  
   
 <a name="editing_commands"></a>
+
 ## Detect When Content Changes  
+
  Usually the <xref:System.Windows.Controls.Primitives.TextBoxBase.TextChanged> event should be used to detect whenever the text in a <xref:System.Windows.Controls.TextBox> or <xref:System.Windows.Controls.RichTextBox> changes, rather then <xref:System.Windows.UIElement.KeyDown> as you might expect. See [Detect When Text in a TextBox Has Changed](how-to-detect-when-text-in-a-textbox-has-changed.md) for an example.  
   
 ## See also

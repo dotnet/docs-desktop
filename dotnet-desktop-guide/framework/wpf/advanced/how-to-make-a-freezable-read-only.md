@@ -10,6 +10,7 @@ ms.assetid: 6c544b7d-d3c9-4736-aa90-4b8728234ccb
 description: Learn how to make a Freezable read-only by calling its Freeze method, and learn what conditions prevent freezing a Freezable object.
 ---
 # How to: Make a Freezable Read-Only
+
 This example shows how to make a <xref:System.Windows.Freezable> read-only by calling its <xref:System.Windows.Freezable.Freeze%2A> method.  
   
  You cannot freeze a <xref:System.Windows.Freezable> object if any one of the following conditions is `true` about the object:  
@@ -23,6 +24,7 @@ This example shows how to make a <xref:System.Windows.Freezable> read-only by ca
  If these conditions are `false` for your <xref:System.Windows.Freezable> object and you do not intend to modify it, consider freezing it to gain performance benefits.  
   
 ## Example  
+
  The following example freezes a <xref:System.Windows.Media.SolidColorBrush>, which is a type of <xref:System.Windows.Freezable> object.  
   
  [!code-csharp[freezablesample_procedural#FreezeExample1](~/samples/snippets/csharp/VS_Snippets_Wpf/freezablesample_procedural/CSharp/freezablesample.cs#freezeexample1)]

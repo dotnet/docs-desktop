@@ -10,15 +10,18 @@ helpviewer_keywords:
 ms.assetid: e6e51cf9-8fa1-457e-856b-a5e513bc5caf
 ---
 # Image How-to Topics
+
 The topics in this section describe how to use the <xref:System.Windows.Controls.Image> element.  
   
 ## In This Section  
+
  [Use the Image Element](how-to-use-the-image-element.md)  
   [Convert an Image to Greyscale](how-to-convert-an-image-to-greyscale.md)  
   [Crop an Image](how-to-crop-an-image.md)  
   [Rotate an Image](how-to-rotate-an-image.md)  
   
 ## Reference  
+
  <xref:System.Windows.Controls.Image>  
   
  <xref:System.Windows.Media.Imaging.BitmapImage>  

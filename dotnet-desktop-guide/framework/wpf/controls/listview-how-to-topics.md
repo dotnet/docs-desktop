@@ -10,9 +10,11 @@ helpviewer_keywords:
 ms.assetid: aafce40c-9bfe-45ec-86a3-599616a11276
 ---
 # ListView How-to Topics
+
 The topics in this section describe how to use the <xref:System.Windows.Controls.ListView> control to display a set of data items.  
   
 ## In This Section  
+
  [Sort a GridView Column When a Header Is Clicked](how-to-sort-a-gridview-column-when-a-header-is-clicked.md)  
  [Create a Custom View Mode for a ListView](how-to-create-a-custom-view-mode-for-a-listview.md)  
  [Use Templates to Style a ListView That Uses GridView](how-to-use-templates-to-style-a-listview-that-uses-gridview.md)  
@@ -27,6 +29,7 @@ The topics in this section describe how to use the <xref:System.Windows.Controls
  [Handle the MouseDoubleClick Event for Each Item in a ListView](how-to-handle-the-mousedoubleclick-event-for-each-item-in-a-listview.md)  
   
 ## Reference  
+
  <xref:System.Windows.Controls.ListView>  
   
  <xref:System.Windows.Controls.ListViewItem>  
@@ -34,4 +37,5 @@ The topics in this section describe how to use the <xref:System.Windows.Controls
  <xref:System.Windows.Controls.GridView>  
   
 ## Related Sections  
+
  [ListView Overview](listview-overview.md)

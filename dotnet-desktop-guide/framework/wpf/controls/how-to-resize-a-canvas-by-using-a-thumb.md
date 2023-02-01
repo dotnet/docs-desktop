@@ -14,9 +14,11 @@ helpviewer_keywords:
 ms.assetid: 7dc9f435-726c-4d4d-be41-eb24cfe17bef
 ---
 # How to: Resize a Canvas by Using a Thumb
+
 This example shows how to use a <xref:System.Windows.Controls.Primitives.Thumb> control to resize a <xref:System.Windows.Controls.Canvas> control.  
   
 ## Example  
+
  The <xref:System.Windows.Controls.Primitives.Thumb> control provides drag functionality that can be used to move or resize controls by monitoring the <xref:System.Windows.Controls.Primitives.Thumb.DragStarted>, <xref:System.Windows.Controls.Primitives.Thumb.DragDelta> and <xref:System.Windows.Controls.Primitives.Thumb.DragCompleted> events of the <xref:System.Windows.Controls.Primitives.Thumb>.  
   
  The user begins a drag operation by pressing the left mouse button when the mouse pointer is paused on the <xref:System.Windows.Controls.Primitives.Thumb> control. The drag operation continues as long as the left mouse button remains pressed. During the drag operation, the <xref:System.Windows.Controls.Primitives.Thumb.DragDelta> can occur more than once. Each time it occurs, the <xref:System.Windows.Controls.Primitives.DragDeltaEventArgs> class provides the change in position that corresponds to the change in mouse position. When the user releases the left mouse button, the drag operation is finished. The drag operation only provides new coordinates; it does not automatically reposition the <xref:System.Windows.Controls.Primitives.Thumb>.  

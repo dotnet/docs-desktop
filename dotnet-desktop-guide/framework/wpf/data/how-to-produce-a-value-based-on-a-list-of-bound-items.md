@@ -11,9 +11,11 @@ helpviewer_keywords:
 ms.assetid: b3d06378-b511-4181-95aa-316d60c9229b
 ---
 # How to: Produce a Value Based on a List of Bound Items
+
 <xref:System.Windows.Data.MultiBinding> allows you to bind a binding target property to a list of source properties and then apply logic to produce a value with the given inputs. This example demonstrates how to use <xref:System.Windows.Data.MultiBinding>.  
   
 ## Example  
+
  In the following example, `NameListData` refers to a collection of `PersonName` objects, which are objects that contain two properties, `firstName` and `lastName`. The following example produces a <xref:System.Windows.Controls.TextBlock> that shows the first and last names of a person with the last name first.  
   
  [!code-xaml[MultiBinding#Resources1](~/samples/snippets/csharp/VS_Snippets_Wpf/MultiBinding/CSharp/Window1.xaml#resources1)]  

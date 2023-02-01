@@ -12,6 +12,7 @@ helpviewer_keywords:
 ms.assetid: 3f94143a-2ef0-49a5-a22a-b2e6f9289642
 ---
 # How to: Hide Columns in the Windows Forms DataGridView Control
+
 Sometimes you will want to display only some of the columns that are available in a Windows Forms <xref:System.Windows.Forms.DataGridView> control. For example, you might want to show an employee salary column to users with management credentials while hiding it from other users. Alternately, you might want to bind the control to a data source that contains many columns, only some of which you want to display. In this case, you will typically remove the columns you are not interested in displaying rather than hide them.  
   
  In the <xref:System.Windows.Forms.DataGridView> control, the <xref:System.Windows.Forms.DataGridViewColumn.Visible%2A> property value of a column determines whether that column is displayed.  
@@ -26,6 +27,7 @@ Sometimes you will want to display only some of the columns that are available i
      [!code-vb[System.Windows.Forms.DataGridViewMisc#063](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/VB/datagridviewmisc.vb#063)]  
   
 ## Compiling the Code  
+
  This example requires:  
   
 - A <xref:System.Windows.Forms.DataGridView> control named `dataGridView1` that contains a column named `CustomerID`.  

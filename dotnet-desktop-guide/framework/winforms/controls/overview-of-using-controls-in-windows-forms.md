@@ -12,9 +12,11 @@ helpviewer_keywords:
 ms.assetid: fddbe951-4485-459d-a5fd-665ea346dbc1
 ---
 # Overview of Using Controls in Windows Forms
+
 This topic describes the essential elements of a Windows Forms application and provides a simple example that uses controls and handles events in a Windows Forms application.  
   
 ## Simple Windows Forms Applications  
+
  At a minimum, a Windows Forms application consists of the following elements:  
   
 - One or more classes that derive from <xref:System.Windows.Forms.Form?displayProperty=nameWithType>.  
@@ -70,6 +72,7 @@ public class MyForm : Form {
 ```  
   
 ## Using Controls in a Windows Forms Application  
+
  The following code example shows a simple application that illustrates how Windows Forms applications use controls and handle events. The example consists of three buttons on a form; each button changes the background color when clicked.  
   
 ```vb  

@@ -13,6 +13,7 @@ helpviewer_keywords:
 ms.assetid: c19049bb-5ceb-492d-afd2-751dca0ed8e3
 ---
 # Control Styles and Templates
+
 Controls in Windows Presentation Foundation (WPF) have a <xref:System.Windows.Controls.ControlTemplate> that contains the visual tree of that control. You can change the structure and appearance of a control by modifying the <xref:System.Windows.Controls.ControlTemplate> of that control. There is no way to replace only part of the visual tree of a control; to change the visual tree of a control you must set the <xref:System.Windows.Controls.Control.Template%2A> property of the control to its new and complete <xref:System.Windows.Controls.ControlTemplate>.  
   
  The desktop themes determine which resource dictionary is used. The resource dictionaries for the desktop themes are included with your Visual Studio installation. The folder that contains the themes is generally located at _C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\\<visual studio edition>\\DesignTools\\SystemThemes\\wpf_, where _\<visual studio edition>_ represents the edition of Visual Studio.
@@ -29,6 +30,7 @@ Controls in Windows Presentation Foundation (WPF) have a <xref:System.Windows.Co
 |Aero.NormalColor.xaml|Default theme on the Windows Vista operating system.|  
   
 ## In This Section  
+
  [Button Styles and Templates](button-styles-and-templates.md)  
  [Calendar Styles and Templates](calendar-styles-and-templates.md)  
  [CheckBox Styles and Templates](checkbox-styles-and-templates.md)  
@@ -63,11 +65,13 @@ Controls in Windows Presentation Foundation (WPF) have a <xref:System.Windows.Co
  [Window Styles and Templates](window-styles-and-templates.md)  
   
 ## Reference  
+
  <xref:System.Windows.Controls>  
   
  <xref:System.Windows.Controls.ControlTemplate>  
   
 ## Related Sections  
+
  [Control Authoring Overview](control-authoring-overview.md)  
   
  [Styling and Templating](styles-templates-overview.md)

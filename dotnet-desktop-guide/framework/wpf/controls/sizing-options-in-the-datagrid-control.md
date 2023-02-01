@@ -9,11 +9,13 @@ helpviewer_keywords:
 ms.assetid: 96a0e47e-b010-4302-98ef-2daac446d8db
 ---
 # Sizing Options in the DataGrid Control
+
 Various options are available to control how the <xref:System.Windows.Controls.DataGrid> sizes itself. The <xref:System.Windows.Controls.DataGrid>, and individual rows and columns in the <xref:System.Windows.Controls.DataGrid>, can be set to size automatically to their contents or can be set to specific values. By default, the <xref:System.Windows.Controls.DataGrid> will grow and shrink to fit the size of its contents.  
   
 ## Sizing the DataGrid  
   
 ### Cautions When Using Automatic Sizing  
+
  By default, the <xref:System.Windows.FrameworkElement.Height%2A> and <xref:System.Windows.FrameworkElement.Width%2A> properties of the <xref:System.Windows.Controls.DataGrid> are set to <xref:System.Double.NaN?displayProperty=nameWithType> ("`Auto`" in XAML), and the <xref:System.Windows.Controls.DataGrid> will adjust to the size of its contents.  
   
  When placed inside a container that does not restrict the size of its children, such as a <xref:System.Windows.Controls.Canvas> or <xref:System.Windows.Controls.StackPanel>, the <xref:System.Windows.Controls.DataGrid> will stretch beyond the visible bounds of the container and scrollbars will not be shown. This condition has both usability and performance implications.  
@@ -25,6 +27,7 @@ Various options are available to control how the <xref:System.Windows.Controls.D
  To avoid these issues when you work with large data sets, it is recommended that you specifically set the <xref:System.Windows.FrameworkElement.Height%2A> of the <xref:System.Windows.Controls.DataGrid> or place it in a container that will restrict its <xref:System.Windows.FrameworkElement.Height%2A>, such as a <xref:System.Windows.Controls.Grid>. When the <xref:System.Windows.FrameworkElement.Height%2A> is restricted, the <xref:System.Windows.Controls.DataGrid> will only create the rows that will fit within its specified <xref:System.Windows.FrameworkElement.Height%2A>, and will recycle those rows as needed to display new data.  
   
 ### Setting the DataGrid Size  
+
  The <xref:System.Windows.Controls.DataGrid> can be set to automatically size within specified boundaries, or the <xref:System.Windows.Controls.DataGrid> can be set to a specific size. The following table shows the properties that can be set to control the <xref:System.Windows.Controls.DataGrid> size.  
   
 |Property|Description|  
@@ -39,14 +42,17 @@ Various options are available to control how the <xref:System.Windows.Controls.D
 ## Sizing Rows and Row Headers  
   
 ### DataGrid Rows  
+
  By default, a <xref:System.Windows.Controls.DataGrid> row's <xref:System.Windows.FrameworkElement.Height%2A> property is set to <xref:System.Double.NaN?displayProperty=nameWithType> ("`Auto`" in XAML), and the row height will expand to the size of its contents. The height of all rows in the <xref:System.Windows.Controls.DataGrid> can be specified by setting the <xref:System.Windows.Controls.DataGrid.RowHeight%2A?displayProperty=nameWithType> property. Users can change the row height by dragging the row header dividers.  
   
 ### DataGrid Row Headers  
+
  To display row headers, the <xref:System.Windows.Controls.DataGrid.HeadersVisibility%2A> property must be set to <xref:System.Windows.Controls.DataGridHeadersVisibility.Row?displayProperty=nameWithType> or <xref:System.Windows.Controls.DataGridHeadersVisibility.All?displayProperty=nameWithType>. By default, row headers are displayed and they automatically size to fit their content. The row headers can be given a specific width by setting the <xref:System.Windows.Controls.DataGrid.RowHeaderWidth%2A?displayProperty=nameWithType> property.  
   
 ## Sizing Columns and Column Headers  
   
 ### DataGrid Columns  
+
  The <xref:System.Windows.Controls.DataGrid> uses values of the <xref:System.Windows.Controls.DataGridLength> and the <xref:System.Windows.Controls.DataGridLengthUnitType> structure to specify absolute or automatic sizing modes.  
   
  The following table shows the values provided by the <xref:System.Windows.Controls.DataGridLengthUnitType> structure.  
@@ -75,9 +81,11 @@ Various options are available to control how the <xref:System.Windows.Controls.D
 |<xref:System.Windows.Controls.DataGridColumn.Width%2A?displayProperty=nameWithType>|Sets a specific width for an individual column. Overrides <xref:System.Windows.Controls.DataGrid.ColumnWidth%2A?displayProperty=nameWithType>.|  
   
 ### DataGrid Column Headers  
+
  By default, <xref:System.Windows.Controls.DataGrid> column headers are displayed. To hide column headers, the <xref:System.Windows.Controls.DataGrid.HeadersVisibility%2A> property must be set to <xref:System.Windows.Controls.DataGridHeadersVisibility.Row?displayProperty=nameWithType> or <xref:System.Windows.Controls.DataGridHeadersVisibility.None?displayProperty=nameWithType>. By default, when column headers are displayed, they automatically size to fit their content. The column headers can be given a specific height by setting the <xref:System.Windows.Controls.DataGrid.ColumnHeaderHeight%2A?displayProperty=nameWithType> property.  
   
 ### Resizing with the Mouse  
+
  Users can resize <xref:System.Windows.Controls.DataGrid> rows and columns by dragging the row or column header dividers. The <xref:System.Windows.Controls.DataGrid> also supports automatic resizing of rows and columns by double-clicking the row or column header divider. To prevent a user from resizing particular columns, set the <xref:System.Windows.Controls.DataGridColumn.CanUserResize%2A?displayProperty=nameWithType> property to `false` for the individual columns. To prevent users from resizing all columns, set the <xref:System.Windows.Controls.DataGrid.CanUserResizeColumns%2A?displayProperty=nameWithType> property to `false`. To prevent users from resizing all rows, set the <xref:System.Windows.Controls.DataGrid.CanUserResizeRows%2A?displayProperty=nameWithType> property to `false`.  
   
 ## See also

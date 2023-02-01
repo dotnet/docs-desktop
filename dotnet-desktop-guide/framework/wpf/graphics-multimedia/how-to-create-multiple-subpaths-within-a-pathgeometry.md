@@ -9,9 +9,11 @@ helpviewer_keywords:
 ms.assetid: 104a862c-dde2-4e62-ac87-80660dd1681c
 ---
 # How to: Create Multiple Subpaths Within a PathGeometry
+
 This example shows how to create multiple subpaths in a <xref:System.Windows.Media.PathGeometry>. To create multiple subpaths, you create a <xref:System.Windows.Media.PathFigure> for each subpath.  
   
 ## Example  
+
  The following example creates two subpaths, each one a triangle.  
   
  [!code-xaml[GeometrySample#38](~/samples/snippets/csharp/VS_Snippets_Wpf/GeometrySample/CS/pathgeometryexample.xaml#38)]  

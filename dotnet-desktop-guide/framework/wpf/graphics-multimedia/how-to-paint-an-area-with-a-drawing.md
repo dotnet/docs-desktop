@@ -12,9 +12,11 @@ helpviewer_keywords:
 ms.assetid: c10dc4b1-09b1-41e8-ad14-456b5fb377df
 ---
 # How to: Paint an Area with a Drawing
+
 This example shows how to paint an area with a drawing. To paint an area with a drawing, you use a <xref:System.Windows.Media.DrawingBrush> and one or more <xref:System.Windows.Media.Drawing> objects.   The following example uses a <xref:System.Windows.Media.DrawingBrush> to paint an object with a drawing of two ellipses.  
   
 ## Example  
+
  [!code-xaml[drawingbrush_snip#DrawingBrushExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/drawingbrush_snip/CS/DrawingBrushExample.xaml#drawingbrushexamplewholepage)]  
   
  [!code-csharp[drawingbrush_procedural_snip#DrawingBrushExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/drawingbrush_procedural_snip/CSharp/DrawingBrushExample.cs#drawingbrushexamplewholepage)]

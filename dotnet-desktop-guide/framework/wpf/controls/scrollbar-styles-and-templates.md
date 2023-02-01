@@ -12,9 +12,11 @@ helpviewer_keywords:
 ms.assetid: 066ea45a-e27d-43b0-adfe-cce6934c22f5
 ---
 # ScrollBar Styles and Templates
+
 This topic describes the styles and templates for the <xref:System.Windows.Controls.Primitives.ScrollBar> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [Create a template for a control](how-to-create-apply-template.md).  
   
 ## ScrollBar Parts  
+
  The following table lists the named parts for the <xref:System.Windows.Controls.Primitives.ScrollBar> control.  
   
 |Part|Type|Description|  
@@ -22,6 +24,7 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 |PART_Track|<xref:System.Windows.Controls.Primitives.Track>|The container for the element that indicates the position of the <xref:System.Windows.Controls.Primitives.ScrollBar>.|  
   
 ## ScrollBar States  
+
  The following table lists the visual states for the <xref:System.Windows.Controls.Primitives.ScrollBar> control.  
   
 |VisualState Name|VisualStateGroup Name|Description|  
@@ -34,6 +37,7 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 |InvalidUnfocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` and the control does not have focus.|  
   
 ## ScrollBar ControlTemplate Example  
+
  The following example shows how to define a <xref:System.Windows.Controls.ControlTemplate> for the <xref:System.Windows.Controls.Primitives.ScrollBar> control.  
   
  [!code-xaml[ControlTemplateExamples#ScrollBar](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/scrollbar.xaml#scrollbar)]  

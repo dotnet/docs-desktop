@@ -8,9 +8,11 @@ helpviewer_keywords:
 ms.assetid: 507ea937-5191-406b-8797-0a3d9f94156d
 ---
 # How to: Use Application Resources
+
 This example shows how to use application resources.  
   
 ## Example  
+
  The following example shows an application definition file. The application definition file defines a resource section (a value for the <xref:System.Windows.Application.Resources%2A> property). Resources defined at the application level can be accessed by all other pages that are part of the application. In this case, the resource is a declared style. Because a complete style that includes a control template can be lengthy, this example omits the control template that is defined within the <xref:System.Windows.Controls.ContentControl.ContentTemplate%2A> property setter of the style.  
   
  [!code-xaml[ResourcesApplication#PreTemplateResource](~/samples/snippets/csharp/VS_Snippets_Wpf/ResourcesApplication/CS/app.xaml#pretemplateresource)]  

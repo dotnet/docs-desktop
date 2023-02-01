@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 ms.assetid: 04e06a15-09b3-4210-9bdf-9a64c2eccb83
 ---
 # Default XAML Schema Context and WPF XAML Schema Context
+
 A XAML schema context is a conceptual entity that qualifies how a XAML production that uses a particular XAML vocabulary interacts with the object writing behavior, including how type mapping resolves, how assemblies are loaded, how certain reader and writer settings are interpreted. This topic describes the features of .NET XAML Services and the associated default XAML schema context, which is based on the CLR type system. This topic also describes the XAML schema context that is used for WPF.
 
 ## Default XAML Schema Context

@@ -10,9 +10,11 @@ helpviewer_keywords:
 ms.assetid: 5c8f5bca-7ba9-4526-a9bf-0852351dbe8a
 ---
 # Canvas How-to Topics
+
 The topics in this section describe how to use the <xref:System.Windows.Controls.Canvas> element to absolutely position child elements.  
   
 ## In This Section  
+
  [Wrap a Border Around the Content of a Canvas](how-to-wrap-a-border-around-the-content-of-a-canvas.md)  
  [Get or Set Canvas Positioning Properties](how-to-get-or-set-canvas-positioning-properties.md)  
  [Create and Use a Canvas](how-to-create-and-use-a-canvas.md)  
@@ -20,6 +22,7 @@ The topics in this section describe how to use the <xref:System.Windows.Controls
  [Resize a Canvas by Using a Thumb](how-to-resize-a-canvas-by-using-a-thumb.md)  
   
 ## Reference  
+
  <xref:System.Windows.Controls.Panel>  
   
  <xref:System.Windows.Controls.Canvas>  
@@ -35,6 +38,7 @@ The topics in this section describe how to use the <xref:System.Windows.Controls
  <xref:System.Windows.Controls.WrapPanel>  
   
 ## Related Sections  
+
  [Layout](../advanced/layout.md)  
   
  [Walkthrough: My first WPF desktop application](../getting-started/walkthrough-my-first-wpf-desktop-application.md)  

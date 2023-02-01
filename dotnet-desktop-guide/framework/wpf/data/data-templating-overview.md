@@ -13,10 +13,13 @@ helpviewer_keywords:
 ms.assetid: 0f4d9f8c-0230-4013-bd7b-e8e7fed01b4a
 ---
 # Data Templating Overview
+
 The WPF data templating model provides you with great flexibility to define the presentation of your data. WPF controls have built-in functionality to support the customization of data presentation. This topic first demonstrates how to define a <xref:System.Windows.DataTemplate> and then introduces other data templating features, such as the selection of templates based on custom logic and the support for the display of hierarchical data.
 
 <a name="Prerequisites"></a>
+
 ## Prerequisites
+
  This topic focuses on data templating features and is not an introduction of data binding concepts. For information about basic data binding concepts, see the [Data Binding Overview](data-binding-overview.md).
 
  <xref:System.Windows.DataTemplate> is about the presentation of data and is one of the many features provided by the WPF styling and templating model. For an introduction of the WPF styling and templating model, such as how to use a <xref:System.Windows.Style> to set properties on controls, see the [Styling and Templating](../controls/styles-templates-overview.md) topic.
@@ -24,6 +27,7 @@ The WPF data templating model provides you with great flexibility to define the 
  In addition, it is important to understand `Resources`, which are essentially what enable objects such as <xref:System.Windows.Style> and <xref:System.Windows.DataTemplate> to be reusable. For more information on resources, see [XAML Resources](/dotnet/desktop-wpf/fundamentals/xaml-resources-define).
 
 <a name="DataTemplating_Basic"></a>
+
 ## Data Templating Basics
 
  To demonstrate why <xref:System.Windows.DataTemplate> is important, let's walk through a data binding example. In this example, we have a <xref:System.Windows.Controls.ListBox> that is bound to a list of `Task` objects. Each `Task` object has a `TaskName` (string), a `Description` (string), a `Priority` (int), and a property of type `TaskType`, which is an `Enum` with values `Home` and `Work`.
@@ -33,7 +37,9 @@ The WPF data templating model provides you with great flexibility to define the 
 [!code-xaml[DataTemplatingIntro_snip#UI2](~/samples/snippets/csharp/VS_Snippets_Wpf/DataTemplatingIntro_snip/CSharp/Window1.xaml#ui2)]
 
 <a name="without_a_datatemplate"></a>
+
 ### Without a DataTemplate
+
  Without a <xref:System.Windows.DataTemplate>, our <xref:System.Windows.Controls.ListBox> currently looks like this:
 
  ![Screenshot of the Introduction to Data Templating Sample window showing the My Task List ListBox displaying the string representation SDKSample.Task for each source object.](./media/datatemplatingintro-fig1.png "DataTemplatingIntro_fig1")
@@ -52,7 +58,9 @@ The WPF data templating model provides you with great flexibility to define the 
  However, that is limiting and inflexible. Also, if you are binding to XML data, you wouldn't be able to override `ToString`.
 
 <a name="defining_simple_datatemplate"></a>
+
 ### Defining a Simple DataTemplate
+
  The solution is to define a <xref:System.Windows.DataTemplate>. One way to do that is to set the <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A> property of the <xref:System.Windows.Controls.ListBox> to a <xref:System.Windows.DataTemplate>. What you specify in your <xref:System.Windows.DataTemplate> becomes the visual structure of your data object. The following <xref:System.Windows.DataTemplate> is fairly simple. We are giving instructions that each item appears as three <xref:System.Windows.Controls.TextBlock> elements within a <xref:System.Windows.Controls.StackPanel>. Each <xref:System.Windows.Controls.TextBlock> element is bound to a property of the `Task` class.
 
  [!code-xaml[DataTemplatingIntro_snip#Inline](~/samples/snippets/csharp/VS_Snippets_Wpf/DataTemplatingIntro_snip/CSharp/Window1.xaml#inline)]
@@ -64,7 +72,9 @@ The WPF data templating model provides you with great flexibility to define the 
  ![Screenshot of the Introduction to Data Templating Sample window showing the My Task List ListBox displaying the tasks as TextBlock elements.](./media/datatemplatingintro-fig3.png "DataTemplatingIntro_fig3")
 
 <a name="defining_datatemplate_as_a_resource"></a>
+
 ### Creating the DataTemplate as a Resource
+
  In the above example, we defined the <xref:System.Windows.DataTemplate> inline. It is more common to define it in the resources section so it can be a reusable object, as in the following example:
 
  [!code-xaml[DataTemplatingIntro_snip#R1](~/samples/snippets/csharp/VS_Snippets_Wpf/DataTemplatingIntro_snip/CSharp/Window1.xaml#r1)]
@@ -78,7 +88,9 @@ The WPF data templating model provides you with great flexibility to define the 
  Because `myTaskTemplate` is a resource, you can now use it on other controls that have a property that takes a <xref:System.Windows.DataTemplate> type. As shown above, for <xref:System.Windows.Controls.ItemsControl> objects, such as the <xref:System.Windows.Controls.ListBox>, it is the <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A> property. For <xref:System.Windows.Controls.ContentControl> objects, it is the <xref:System.Windows.Controls.ContentControl.ContentTemplate%2A> property.
 
 <a name="Styling_DataType"></a>
+
 ### The DataType Property
+
  The <xref:System.Windows.DataTemplate> class has a <xref:System.Windows.DataTemplate.DataType%2A> property that is very similar to the <xref:System.Windows.Style.TargetType%2A> property of the <xref:System.Windows.Style> class. Therefore, instead of specifying an `x:Key` for the <xref:System.Windows.DataTemplate> in the above example, you can do the following:
 
  [!code-xaml[DataTemplatingIntro_snip#DataType](~/samples/snippets/csharp/VS_Snippets_Wpf/DataTemplatingIntro_snip/CSharp/Window1.xaml#datatype)]
@@ -90,7 +102,9 @@ The WPF data templating model provides you with great flexibility to define the 
  The <xref:System.Windows.DataTemplate.DataType%2A> property is particularly useful when you have a <xref:System.Windows.Data.CompositeCollection> of different types of data objects. For an example, see [Implement a CompositeCollection](how-to-implement-a-compositecollection.md).
 
 <a name="adding_more_to_datatemplate"></a>
+
 ## Adding More to the DataTemplate
+
  Currently the data appears with the necessary information, but there's definitely room for improvement. Let's improve on the presentation by adding a <xref:System.Windows.Controls.Border>, a <xref:System.Windows.Controls.Grid>, and some <xref:System.Windows.Controls.TextBlock> elements that describe the data that is being displayed.
 
  [!code-xaml[DataTemplatingIntro#AddingMore](~/samples/snippets/xaml/VS_Snippets_Wpf/DataTemplatingIntro/xaml/window1.xaml#addingmore)]
@@ -109,7 +123,9 @@ The WPF data templating model provides you with great flexibility to define the 
  ![Screenshot of the Introduction to Data Templating Sample window showing the My Task List ListBox stretched to fit the screen horizontally.](./media/datatemplatingintro-fig5.png "DataTemplatingIntro_fig5")
 
 <a name="DataTrigger_to_Apply_Property_Values"></a>
+
 ### Use DataTriggers to Apply Property Values
+
  The current presentation does not tell us whether a `Task` is a home task or an office task. Remember that the `Task` object has a `TaskType` property of type `TaskType`, which is an enumeration with values `Home` and `Work`.
 
  In the following example, the <xref:System.Windows.DataTrigger> sets the <xref:System.Windows.Controls.Border.BorderBrush%2A> of the element named `border` to `Yellow` if the `TaskType` property is `TaskType.Home`.
@@ -127,6 +143,7 @@ The WPF data templating model provides you with great flexibility to define the 
  An alternative way to achieve the same effect is to bind the <xref:System.Windows.Controls.Border.BorderBrush%2A> property to the `TaskType` property and use a value converter to return the color based on the `TaskType` value. Creating the above effect using a converter is slightly more efficient in terms of performance. Additionally, creating your own converter gives you more flexibility because you are supplying your own logic. Ultimately, which technique you choose depends on your scenario and your preference. For information about how to write a converter, see <xref:System.Windows.Data.IValueConverter>.
 
 <a name="what_belongs_in_datatemplate"></a>
+
 ### What Belongs in a DataTemplate?
 
 In the previous example, we placed the trigger within the <xref:System.Windows.DataTemplate> using the <xref:System.Windows.DataTemplate.Triggers%2A?displayProperty=nameWithType> property. The <xref:System.Windows.Setter> of the trigger sets the value of a property of an element (the <xref:System.Windows.Controls.Border> element) that is within the <xref:System.Windows.DataTemplate>. However, if the properties that your `Setters` are concerned with are not properties of elements that are within the current <xref:System.Windows.DataTemplate>, it may be more suitable to set the properties using a <xref:System.Windows.Style> that is for the <xref:System.Windows.Controls.ListBoxItem> class (if the control you are binding is a <xref:System.Windows.Controls.ListBox>). For example, if you want your <xref:System.Windows.Trigger> to animate the <xref:System.Windows.UIElement.Opacity%2A> value of the item when a mouse points to an item, you define triggers within a <xref:System.Windows.Controls.ListBoxItem> style. For an example, see the [Introduction to Styling and Templating Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Styles%20&%20Templates/IntroToStylingAndTemplating).
@@ -134,7 +151,9 @@ In the previous example, we placed the trigger within the <xref:System.Windows.D
  In general, keep in mind that the <xref:System.Windows.DataTemplate> is being applied to each of the generated <xref:System.Windows.Controls.ListBoxItem> (for more information about how and where it is actually applied, see the <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A> page.). Your <xref:System.Windows.DataTemplate> is concerned with only the presentation and appearance of the data objects. In most cases, all other aspects of presentation, such as what an item looks like when it is selected or how the <xref:System.Windows.Controls.ListBox> lays out the items, do not belong in the definition of a <xref:System.Windows.DataTemplate>. For an example, see the [Styling and Templating an ItemsControl](#DataTemplating_ItemsControl) section.
 
 <a name="Styling_StyleSelection"></a>
+
 ## Choosing a DataTemplate Based on Properties of the Data Object
+
  In [The DataType Property](#Styling_DataType) section, we discussed that you can define different data templates for different data objects. That is especially useful when you have a <xref:System.Windows.Data.CompositeCollection> of different types or collections with items of different types. In the [Use DataTriggers to Apply Property Values](#DataTrigger_to_Apply_Property_Values) section, we have shown that if you have a collection of the same type of data objects you can create a <xref:System.Windows.DataTemplate> and then use triggers to apply changes based on the property values of each data object. However, triggers allow you to apply property values or start animations but they don't give you the flexibility to reconstruct the structure of your data objects. Some scenarios may require you to create a different <xref:System.Windows.DataTemplate> for data objects that are of the same type but have different properties.
 
  For example, when a `Task` object has a `Priority` value of `1`, you may want to give it a completely different look to serve as an alert for yourself. In that case, you create a <xref:System.Windows.DataTemplate> for the display of the high-priority `Task` objects. Let's add the following <xref:System.Windows.DataTemplate> to the resources section:
@@ -165,7 +184,9 @@ This example uses the [DataTemplate.Resources](xref:System.Windows.FrameworkTemp
 This concludes our discussion of this example. For the complete sample, see [Introduction to Data Templating Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Data%20Binding/DataTemplatingIntro).
 
 <a name="DataTemplating_ItemsControl"></a>
+
 ## Styling and Templating an ItemsControl
+
  Even though the <xref:System.Windows.Controls.ItemsControl> is not the only control type that you can use a <xref:System.Windows.DataTemplate> with, it is a very common scenario to bind an <xref:System.Windows.Controls.ItemsControl> to a collection. In the [What Belongs in a DataTemplate](#what_belongs_in_datatemplate) section we discussed that the definition of your <xref:System.Windows.DataTemplate> should only be concerned with the presentation of data. In order to know when it is not suitable to use a <xref:System.Windows.DataTemplate> it is important to understand the different style and template properties provided by the <xref:System.Windows.Controls.ItemsControl>. The following example is designed to illustrate the function of each of these properties. The <xref:System.Windows.Controls.ItemsControl> in this example is bound to the same `Tasks` collection as in the previous example. For demonstration purposes, the styles and templates in this example are all declared inline.
 
  [!code-xaml[DataTemplatingIntro_snip#ItemsControlProperties](~/samples/snippets/csharp/VS_Snippets_Wpf/DataTemplatingIntro_snip/CSharp/Window1.xaml#itemscontrolproperties)]
@@ -179,7 +200,9 @@ This concludes our discussion of this example. For the complete sample, see [Int
  Two other style-related properties of the <xref:System.Windows.Controls.ItemsControl> that are not shown here are <xref:System.Windows.Controls.ItemsControl.GroupStyle%2A> and <xref:System.Windows.Controls.ItemsControl.GroupStyleSelector%2A>.
 
 <a name="DataTemplating_HeirarchicalDataTemplate"></a>
+
 ## Support for Hierarchical Data
+
  So far we have only looked at how to bind to and display a single collection. Sometimes you have a collection that contains other collections. The <xref:System.Windows.HierarchicalDataTemplate> class is designed to be used with <xref:System.Windows.Controls.HeaderedItemsControl> types to display such data. In the following example, `ListLeagueList` is a list of `League` objects. Each `League` object has a `Name` and a collection of `Division` objects. Each `Division` has a `Name` and a collection of `Team` objects, and each `Team` object has a `Name`.
 
  [!code-xaml[HierarchicalDataTemplateSnippet#HDT](~/samples/snippets/csharp/VS_Snippets_Wpf/HierarchicalDataTemplateSnippet/CS/window1.xaml#hdt)]

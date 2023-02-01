@@ -12,9 +12,11 @@ helpviewer_keywords:
 ms.assetid: c76e8606-4cc4-45a8-9110-e2ec66dc6afd
 ---
 # How to: Filter Data in a View
+
 This example shows how to filter data in a view.  
   
 ## Example  
+
  To create a filter, define a method that provides the filtering logic. The method is used as a callback and accepts a parameter of type `object`. The following method returns all the `Order` objects with the `filled` property set to "No", filtering out the rest of the objects.  
   
  [!code-csharp[SortFilter#2](~/samples/snippets/csharp/VS_Snippets_Wpf/SortFilter/CSharp/Page1.xaml.cs#2)]

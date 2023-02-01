@@ -8,6 +8,7 @@ helpviewer_keywords:
 ms.assetid: 619765c8-8d25-4315-aec2-79aea08fed9f
 ---
 # DatePicker
+
 The <xref:System.Windows.Controls.DatePicker> control allows the user to select a date by either typing it into a text field or by using a drop-down <xref:System.Windows.Controls.Calendar> control.  
   
  The following illustration shows a <xref:System.Windows.Controls.DatePicker>.  

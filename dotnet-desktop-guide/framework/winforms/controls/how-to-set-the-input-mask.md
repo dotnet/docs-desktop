@@ -9,9 +9,11 @@ helpviewer_keywords:
 ms.assetid: 779b3a12-cd74-4e58-b46e-04983bda5b2c
 ---
 # How to: Set the Input Mask
+
 The masked text box control is an enhanced text box control that supports a declarative syntax for accepting or rejecting user input. By setting the Mask property, you can specify the allowable user input without writing any custom validation logic in your application. For more information, see the Remarks section of the <xref:System.Windows.Forms.MaskedTextBox> class.  
   
 ## Setting the Mask Property Manually  
+
  If you are familiar with the characters that the Mask property supports, you can enter it manually. For a summary of the characters that the Mask property supports, see the Remarks section of the <xref:System.Windows.Forms.MaskedTextBox.Mask%2A> property.  
   
 ### To set the Mask property manually  
@@ -23,6 +25,7 @@ The masked text box control is an enhanced text box control that supports a decl
 3. Type the mask that you want. For example, type `###`.  
   
 ## Using the Input Mask Dialog Box  
+
  The Input Mask dialog box provides some predefined input masks. You can also change the predefined masks or enter your own mask manually.  
   
 ### To open the Input Mask dialog box  

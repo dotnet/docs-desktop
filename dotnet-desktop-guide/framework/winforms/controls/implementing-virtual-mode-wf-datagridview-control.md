@@ -15,6 +15,7 @@ helpviewer_keywords:
 ms.assetid: 74eb5276-5ab8-4ce0-8005-dae751d85f7c
 ---
 # Walkthrough: Implementing Virtual Mode in the Windows Forms DataGridView Control
+
 When you want to display very large quantities of tabular data in a <xref:System.Windows.Forms.DataGridView> control, you can set the <xref:System.Windows.Forms.DataGridView.VirtualMode%2A> property to `true` and explicitly manage the control's interaction with its data store. This lets you fine-tune the performance of the control in this situation.  
   
  The <xref:System.Windows.Forms.DataGridView> control provides several events that you can handle to interact with a custom data store. This walkthrough guides you through the process of implementing these event handlers. The code example in this topic uses a very simple data source for illustration purposes. In a production setting, you will typically load only the rows you need to display into a cache, and handle <xref:System.Windows.Forms.DataGridView> events to interact with and update the cache. For more information, see [Implementing Virtual Mode with Just-In-Time Data Loading in the Windows Forms DataGridView Control](implementing-virtual-mode-jit-data-loading-in-the-datagrid.md)  
@@ -103,6 +104,7 @@ When you want to display very large quantities of tabular data in a <xref:System
      [!code-vb[System.Windows.Forms.DataGridView.VirtualMode#200](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.VirtualMode/VB/virtualmode.vb#200)]  
   
 ## Testing the Application  
+
  You can now test the form to make sure it behaves as expected.  
   
 #### To test the form  
@@ -112,6 +114,7 @@ When you want to display very large quantities of tabular data in a <xref:System
      You will see a <xref:System.Windows.Forms.DataGridView> control populated with three customer records. You can modify the values of multiple cells in a row and press ESC twice in edit mode and once outside of edit mode to revert the entire row to its original values. When you modify, add, or delete rows in the control, `Customer` objects in the data store are modified, added, or deleted as well.  
   
 ## Next Steps  
+
  This application gives you a basic understanding of the events you must handle to implement virtual mode in the <xref:System.Windows.Forms.DataGridView> control. You can improve this basic application in a number of ways:  
   
 - Implement a data store that caches values from an external database. The cache should retrieve and discard values as necessary so that it only contains what is necessary for display while consuming a small amount of memory on the client computer.  

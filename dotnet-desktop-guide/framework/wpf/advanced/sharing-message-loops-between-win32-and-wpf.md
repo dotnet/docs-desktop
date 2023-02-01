@@ -11,9 +11,11 @@ ms.assetid: 39ee888c-e5ec-41c8-b11f-7b851a554442
 description: Learn how to implement a message loop for interoperation with WPF, either by using existing message loop exposure or by creating a separate message loop.
 ---
 # Sharing Message Loops Between Win32 and WPF
+
 This topic describes how to implement a message loop for interoperation with Windows Presentation Foundation (WPF), either by using existing message loop exposure in <xref:System.Windows.Threading.Dispatcher> or by creating a separate message loop on the Win32 side of your interoperation code.  
   
 ## ComponentDispatcher and the Message Loop  
+
  A normal scenario for interoperation and keyboard event support is to implement <xref:System.Windows.Interop.IKeyboardInputSink>, or to subclass from classes that already implement <xref:System.Windows.Interop.IKeyboardInputSink>, such as <xref:System.Windows.Interop.HwndSource> or <xref:System.Windows.Interop.HwndHost>. However, keyboard sink support does not address all possible message loop needs you might have when sending and receiving messages across your interoperation boundaries. To help formalize an application message loop architecture, Windows Presentation Foundation (WPF) provides the <xref:System.Windows.Interop.ComponentDispatcher> class, which defines a simple protocol for a message loop to follow.  
   
  <xref:System.Windows.Interop.ComponentDispatcher> is a static class that exposes several members. The scope of each method is implicitly tied to the calling thread. A message loop must call some of those APIs at critical times (as defined in the next section).  
@@ -23,6 +25,7 @@ This topic describes how to implement a message loop for interoperation with Win
  Calling <xref:System.Windows.Interop.ComponentDispatcher> methods on a thread will only invoke event handlers that were registered on that thread.  
   
 ## Writing Message Loops  
+
  The following is a checklist of <xref:System.Windows.Interop.ComponentDispatcher> members you will use if you write your own message loop:  
   
 - <xref:System.Windows.Interop.ComponentDispatcher.PushModal%2A>: your message loop should call this to indicate that the thread is modal.  
@@ -34,6 +37,7 @@ This topic describes how to implement a message loop for interoperation with Win
 - <xref:System.Windows.Interop.ComponentDispatcher.RaiseThreadMessage%2A>: your message loop should call this to indicate that a new message is available. The return value indicates whether a listener to a <xref:System.Windows.Interop.ComponentDispatcher> event handled the message. If <xref:System.Windows.Interop.ComponentDispatcher.RaiseThreadMessage%2A> returns `true` (handled), the dispatcher should do nothing further with the message. If the return value is `false`, the dispatcher is expected to call the Win32 function `TranslateMessage`, then call `DispatchMessage`.  
   
 ## Using ComponentDispatcher and Existing Message Handling  
+
  The following is a checklist of <xref:System.Windows.Interop.ComponentDispatcher> members you will use if you rely on the inherent WPF message loop.  
   
 - <xref:System.Windows.Interop.ComponentDispatcher.IsThreadModal%2A>: returns whether the application has gone modal (e.g., a modal message loop has been pushed). <xref:System.Windows.Interop.ComponentDispatcher> can track this state because the class maintains a count of <xref:System.Windows.Interop.ComponentDispatcher.PushModal%2A> and <xref:System.Windows.Interop.ComponentDispatcher.PopModal%2A> calls from the message loop.  
@@ -49,6 +53,7 @@ This topic describes how to implement a message loop for interoperation with Win
  A message is considered handled if after the <xref:System.Windows.Interop.ComponentDispatcher.ThreadFilterMessage> event or <xref:System.Windows.Interop.ComponentDispatcher.ThreadPreprocessMessage> event, the `handled` parameter passed by reference in event data is `true`. Event handlers should ignore the message if `handled` is `true`, because that means the different handler handled the message first. Event handlers to both events may modify the message. The dispatcher should dispatch the modified message and not the original unchanged message. <xref:System.Windows.Interop.ComponentDispatcher.ThreadPreprocessMessage> is delivered to all listeners, but the architectural intention is that only the top-level window containing the HWND at which the messages targeted should invoke code in response to the message.  
   
 ## How HwndSource Treats ComponentDispatcher Events  
+
  If the <xref:System.Windows.Interop.HwndSource> is a top-level window (no parent HWND), it will register with <xref:System.Windows.Interop.ComponentDispatcher>. If <xref:System.Windows.Interop.ComponentDispatcher.ThreadPreprocessMessage> is raised, and if the message is intended for the <xref:System.Windows.Interop.HwndSource> or child windows, <xref:System.Windows.Interop.HwndSource> calls its <xref:System.Windows.Interop.HwndSource.System%23Windows%23Interop%23IKeyboardInputSink%23TranslateAccelerator%2A>, <xref:System.Windows.Interop.IKeyboardInputSink.TranslateChar%2A>, <xref:System.Windows.Interop.IKeyboardInputSink.OnMnemonic%2A> keyboard sink sequence.  
   
  If the <xref:System.Windows.Interop.HwndSource> is not a top-level window (has a parent HWND), there will be no handling. Only the top level window is expected to do the handling, and there is expected to be a top level window with keyboard sink support as part of any interoperation scenario.  

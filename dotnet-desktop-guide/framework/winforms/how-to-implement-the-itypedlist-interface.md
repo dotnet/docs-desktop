@@ -13,9 +13,11 @@ helpviewer_keywords:
 ms.assetid: 834cc15c-50bc-4a8b-a610-313d6a217357
 ---
 # How to: Implement the ITypedList Interface
+
 Implement the <xref:System.ComponentModel.ITypedList> interface to enable discovery of the schema for a bindable list.  
   
 ## Example  
+
  The following code example demonstrates how to implement the <xref:System.ComponentModel.ITypedList> interface. A generic type named `SortableBindingList` derives from the <xref:System.ComponentModel.BindingList%601> class and implements the <xref:System.ComponentModel.ITypedList> interface. A simple class named `Customer` provides data, which is bound to the header of a <xref:System.Windows.Forms.DataGridView> control.  
   
  [!code-csharp[System.ComponentModel.ITypedList#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.ITypedList/CS/SortableBindingList.cs#1)]
@@ -28,6 +30,7 @@ Implement the <xref:System.ComponentModel.ITypedList> interface to enable discov
  [!code-vb[System.ComponentModel.ITypedList#100](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.ITypedList/VB/Form1.vb#100)]  
   
 ## Compiling the Code  
+
  This example requires:  
   
 - References to the System.Drawing and System.Windows.Forms assemblies.  

@@ -10,12 +10,15 @@ helpviewer_keywords:
 ms.assetid: 8d3d290b-d38c-47d0-918e-cee2baeb92ae
 ---
 # DockPanel
+
 The <xref:System.Windows.Controls.DockPanel> element is used to position child content along the edge of a layout container.  
   
 ## In This Section  
+
  [How-to Topics](dockpanel-how-to-topics.md)  
   
 ## Reference  
+
  <xref:System.Windows.Controls.Panel>  
   
  <xref:System.Windows.Controls.Canvas>  
@@ -31,6 +34,7 @@ The <xref:System.Windows.Controls.DockPanel> element is used to position child c
  <xref:System.Windows.Controls.WrapPanel>  
   
 ## Related Sections  
+
  [Layout](../advanced/layout.md)  
   
  [Walkthrough: My first WPF desktop application](../getting-started/walkthrough-my-first-wpf-desktop-application.md)  

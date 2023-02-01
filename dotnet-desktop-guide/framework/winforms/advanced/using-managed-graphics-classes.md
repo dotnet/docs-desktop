@@ -9,9 +9,11 @@ helpviewer_keywords:
 ms.assetid: e6d1a42d-2100-46aa-97e6-a5ddc0baaae5
 ---
 # Using Managed Graphics Classes
+
 The following topics describe how to use the GDI+ API in the managed class framework.  
   
 ## In This Section  
+
  [Getting Started with Graphics Programming](getting-started-with-graphics-programming.md)  
  Describes how to accomplish basic tasks with GDI+.  
   

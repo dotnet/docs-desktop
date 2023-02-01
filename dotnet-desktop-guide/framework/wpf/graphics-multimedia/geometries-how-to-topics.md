@@ -9,9 +9,11 @@ helpviewer_keywords:
 ms.assetid: 83873331-b013-472e-8197-8ba993dd242f
 ---
 # Geometries How-to Topics
+
 The topics in this section demonstrate how to use <xref:System.Windows.Media.Geometry> objects in your applications.  
   
 ## In This Section  
+
  [Animate an EllipseGeometry](how-to-animate-an-ellipsegeometry.md)  
  [Animate the Size of an ArcSegment](how-to-animate-the-size-of-an-arcsegment.md)  
  [Control the Fill of a Composite Shape](how-to-control-the-fill-of-a-composite-shape.md)  

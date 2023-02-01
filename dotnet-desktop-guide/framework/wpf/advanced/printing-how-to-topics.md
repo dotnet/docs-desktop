@@ -8,9 +8,11 @@ helpviewer_keywords:
 ms.assetid: 5f3d391a-4afd-49ee-ad99-ceb737c0c8a8
 ---
 # Printing How-to Topics
+
 The topics in this section demonstrate how to use the printing and print system management features included with Windows Presentation Foundation (WPF) as well as the new XML Paper Specification (XPS) print path.  
   
 ## In This Section  
+
  [Invoke a Print Dialog](how-to-invoke-a-print-dialog.md)  
  Instructions for XAML markup to declare a Microsoft Windows print dialog object and using code to invoke the dialog from within a Windows Presentation Foundation (WPF) application.  
   

@@ -12,9 +12,11 @@ helpviewer_keywords:
 ms.assetid: 74835674-a39e-4ab5-9418-ad7f6ab7b956
 ---
 # GridView Column Header Styles and Templates Overview
+
 This overview discusses the order of precedence for properties that you use to customize a column header in the <xref:System.Windows.Controls.GridView> view mode of a <xref:System.Windows.Controls.ListView> control.  
   
 ## Customizing a Column Header in a GridView  
+
  The properties that define the content, layout, and style of a column header in a <xref:System.Windows.Controls.GridView> are found on many related classes. Some of these properties have functionality that is similar or the same.  
   
  The rows in the following table show groups of properties that perform the same function. You can use these properties to customize the column headers in a <xref:System.Windows.Controls.GridView>. The order of precedence for related properties is from right to left where the property in the farthest right column has the highest precedence. For example, if a <xref:System.Windows.Controls.ContentControl.ContentTemplate%2A> is set on the <xref:System.Windows.Controls.GridViewColumnHeader> object and the <xref:System.Windows.Controls.GridViewColumn.HeaderTemplateSelector%2A> is set on the associated <xref:System.Windows.Controls.GridViewColumn>, the <xref:System.Windows.Controls.ContentControl.ContentTemplate%2A> takes precedence. In this scenario, the <xref:System.Windows.Controls.GridViewColumn.HeaderTemplateSelector%2A> has no effect.  

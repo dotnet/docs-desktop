@@ -11,13 +11,16 @@ helpviewer_keywords:
 ms.assetid: 792943c5-335d-49dd-aa5b-ec1582a10088
 ---
 # Panel
+
 <xref:System.Windows.Controls.Panel> is the base class for all elements that support application layout in Windows Presentation Foundation (WPF).  
   
 ## In This Section  
+
  [Panels Overview](panels-overview.md)  
  [How-to Topics](panel-how-to-topics.md)  
   
 ## Reference  
+
  <xref:System.Windows.Controls.Panel>  
   
  <xref:System.Windows.Controls.Canvas>  
@@ -33,6 +36,7 @@ ms.assetid: 792943c5-335d-49dd-aa5b-ec1582a10088
  <xref:System.Windows.Controls.WrapPanel>  
   
 ## Related Sections  
+
  [Layout](../advanced/layout.md)  
   
  [Walkthrough: My first WPF desktop application](../getting-started/walkthrough-my-first-wpf-desktop-application.md)  

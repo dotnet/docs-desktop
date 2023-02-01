@@ -11,6 +11,7 @@ helpviewer_keywords:
 ms.assetid: 65db8935-d047-4295-87c4-b427ff3ad293
 ---
 # How to: Draw a Polyline by Using the Polyline Element
+
 This example shows how to draw a polyline, which is a series of connected lines, by using the <xref:System.Windows.Shapes.Polyline> element.  
   
  To draw a polyline, create a <xref:System.Windows.Shapes.Polyline> element and use its <xref:System.Windows.Shapes.Polyline.Points%2A> property to specify the shape vertices. Finally, use the <xref:System.Windows.Shapes.Shape.Stroke%2A> and <xref:System.Windows.Shapes.Shape.StrokeThickness%2A> properties to describe the polyline outline because a line without a stroke is invisible.  
@@ -21,6 +22,7 @@ This example shows how to draw a polyline, which is a series of connected lines,
  The following example draws two <xref:System.Windows.Shapes.Polyline> elements inside a <xref:System.Windows.Controls.Canvas>.  
   
 ## Example  
+
  In Extensible Application Markup Language (XAML), valid syntax for points is a space-delimited list of comma-separated x- and y-coordinate pairs.  
   
  [!code-xaml[drawingwithshapeelements#PolylineExample1](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingWithShapeElements/CS/polylineexample.xaml#polylineexample1)]  
