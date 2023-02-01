@@ -21,7 +21,7 @@ There are two implementations of WPF:
 
     An open-source implementation of WPF hosted on [GitHub](https://github.com/dotnet/wpf), which runs on .NET 5 or higher (including .NET Core 3.1). The XAML designer requires, at a minimum, [Visual Studio 2019 version 16.8](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+desktopguide+wpf).
 
-    Even though .NET is a cross-platform technology, WPF isn't and only runs on Windows.
+    Even though .NET is a cross-platform technology, WPF only runs on Windows.
 
 01. **.NET Framework 4** version:
 
@@ -225,7 +225,7 @@ The layout system is exposed to child controls through base WPF classes. For com
 
 - <xref:System.Windows.Controls.VirtualizingStackPanel>: Child controls are virtualized and arranged on a single line that is either horizontally or vertically oriented.
 
-- <xref:System.Windows.Controls.WrapPanel>: Child controls are positioned in left-to-right order and wrapped to the next line when there isn't enough space. on the current line.
+- <xref:System.Windows.Controls.WrapPanel>: Child controls are positioned in left-to-right order and wrapped to the next line when there isn't enough space on the current line.
 
 The following example uses a <xref:System.Windows.Controls.DockPanel> to lay out several <xref:System.Windows.Controls.TextBox> controls:
 
