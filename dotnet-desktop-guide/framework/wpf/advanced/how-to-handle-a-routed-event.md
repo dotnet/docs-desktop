@@ -11,9 +11,11 @@ ms.assetid: 157787b4-f469-4047-8777-5b034145f32e
 description: Learn how bubbling events work and how to write a handler that can process the routed event data, with supporting information and examples. 
 ---
 # How to: Handle a Routed Event
+
 This example shows how bubbling events work and how to write a handler that can process the routed event data.  
   
 ## Example  
+
  In Windows Presentation Foundation (WPF), elements are arranged in an element tree structure. The parent element can participate in the handling of events that are initially raised by child elements in the element tree. This is possible because of event routing.  
   
  Routed events typically follow one of two routing strategies, bubbling or tunneling. This example focuses on the bubbling event and uses the <xref:System.Windows.Controls.Primitives.ButtonBase.Click?displayProperty=nameWithType> event to show how routing works.  

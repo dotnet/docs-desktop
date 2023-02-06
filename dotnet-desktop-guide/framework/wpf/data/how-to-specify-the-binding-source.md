@@ -12,9 +12,11 @@ helpviewer_keywords:
 ms.assetid: 55d47757-2648-4a52-987f-b767953f168c
 ---
 # How to: Specify the Binding Source
+
 In data binding, the binding source object refers to the object you obtain your data from. This topic describes the different ways of specifying the binding source.  
   
 ## Example  
+
  If you are binding several properties to a common source, you want to use the `DataContext` property, which provides a convenient way to establish a scope within which all data-bound properties inherit a common source.  
   
  In the following example, the data context is established on the root element of the application. This allows all child elements to inherit that data context. Data for the binding comes from a custom data class, `NetIncome`, referenced directly through a mapping and given the resource key of `incomeDataSource`.  

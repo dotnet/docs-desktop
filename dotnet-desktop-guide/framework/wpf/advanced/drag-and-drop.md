@@ -11,15 +11,18 @@ helpviewer_keywords:
 ms.assetid: 77c48920-8c8b-41eb-8fe8-b411962c8623
 ---
 # Drag and Drop
+
 WPF applications as well as other Windows applications.  
   
 ## In This Section  
+
  [Drag and Drop Overview](drag-and-drop-overview.md)  
  [Data and Data Objects](data-and-data-objects.md)  
  [Walkthrough: Enabling Drag and Drop on a User Control](walkthrough-enabling-drag-and-drop-on-a-user-control.md)  
  [How-to Topics](drag-and-drop-how-to-topics.md)  
   
 ## Reference  
+
  <xref:System.Windows.DataFormat>  
   <xref:System.Windows.DataObject>  
   <xref:System.Windows.DragDrop>  

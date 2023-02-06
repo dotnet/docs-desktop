@@ -9,9 +9,11 @@ helpviewer_keywords:
 ms.assetid: a602aef8-a8c8-4c36-9816-74e7bad96a68
 ---
 # Overview of Graphics
+
 GDI+ is an application programming interface (API) that forms the subsystem of the Microsoft Windows operating system. GDI+ is responsible for displaying information on screens and printers. As its name suggests, GDI+ is the successor to GDI, the Graphics Device Interface included with earlier versions of Windows.  
   
 ## Managed Class Interface  
+
  The GDI+ API is exposed through a set of classes deployed as managed code. This set of classes is called the *managed class interface* to GDI+. The following namespaces make up the managed class interface:  
   
 - <xref:System.Drawing>  

@@ -11,6 +11,7 @@ helpviewer_keywords:
 ms.assetid: a202af36-4d31-4401-a126-b232f51db581
 ---
 # How to: Set Pen Width and Alignment
+
 When you create a <xref:System.Drawing.Pen>, you can supply the pen width as one of the arguments to the constructor. You can also change the pen width with the <xref:System.Drawing.Pen.Width%2A> property of the <xref:System.Drawing.Pen> class.  
   
  A theoretical line has a width of 0. When you draw a line that is 1 pixel wide, the pixels are centered on the theoretical line. If you draw a line that is more than one pixel wide, the pixels are either centered on the theoretical line or appear to one side of the theoretical line. You can set the pen alignment property of a <xref:System.Drawing.Pen> to determine how the pixels drawn with that pen will be positioned relative to theoretical lines.  

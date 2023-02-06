@@ -9,9 +9,11 @@ helpviewer_keywords:
 ms.assetid: fecf0d19-3eb6-4f8c-a44f-ff1b6f2b34b3
 ---
 # How to: Set the Title of a Window from a Page
+
 This example shows how to set the title of the window in which a <xref:System.Windows.Controls.Page> is hosted.  
   
 ## Example  
+
  A page can change the title of the window that is hosting it by setting the <xref:System.Windows.Controls.Page.WindowTitle%2A> property, like so:  
   
  [!code-xaml[HOWTONavigationSnippets#SetPageWindowTitleXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/HOWTONavigationSnippets/CSharp/SetWindowTitlePage.xaml#setpagewindowtitlexaml)]  

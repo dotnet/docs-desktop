@@ -8,9 +8,11 @@ helpviewer_keywords:
 ms.assetid: 733d1219-d6ad-4256-a55b-9eccf47f5a06
 ---
 # Enhancing Windows Forms Applications
+
 Windows Forms contains many features that you can use to enhance your Windows-based applications to meet the specific needs of your users. The following topics describe these features and how to use them.  
   
 ## In This Section  
+
  [Graphics and Drawing in Windows Forms](graphics-and-drawing-in-windows-forms.md)  
  Contains links to topics that describe and show how to use the graphics interface in Windows Forms.  
   
@@ -54,6 +56,7 @@ Windows Forms contains many features that you can use to enhance your Windows-ba
  Describes how to use WPF controls in your Windows Forms-based applications.  
   
 ## Related Sections  
+
  [Help Systems in Windows Forms Applications](help-systems-in-windows-forms-applications.md)  
  Contains links to topics that describe and show how to provide user help in Windows Forms applications.  
   

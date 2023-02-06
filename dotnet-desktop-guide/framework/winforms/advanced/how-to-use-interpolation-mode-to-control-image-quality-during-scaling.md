@@ -12,6 +12,7 @@ helpviewer_keywords:
 ms.assetid: fde9bccf-8aa5-4b0d-ba4b-788740627b02
 ---
 # How to: Use Interpolation Mode to Control Image Quality During Scaling
+
 The interpolation mode of a <xref:System.Drawing.Graphics> object influences the way GDI+ scales (stretches and shrinks) images. The <xref:System.Drawing.Drawing2D.InterpolationMode> enumeration defines several interpolation modes, some of which are shown in the following list:  
   
 - <xref:System.Drawing.Drawing2D.InterpolationMode.NearestNeighbor>  
@@ -29,6 +30,7 @@ The interpolation mode of a <xref:System.Drawing.Graphics> object influences the
  To set the interpolation mode, assign one of the members of the <xref:System.Drawing.Drawing2D.InterpolationMode> enumeration to the <xref:System.Drawing.Graphics.InterpolationMode%2A> property of a <xref:System.Drawing.Graphics> object.  
   
 ## Example  
+
  The following example draws an image and then shrinks the image with three different interpolation modes.  
   
  The following illustration shows the original image and the three smaller images.  
@@ -39,6 +41,7 @@ The interpolation mode of a <xref:System.Drawing.Graphics> object influences the
  [!code-vb[System.Drawing.WorkingWithImages#81](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.WorkingWithImages/VB/Class1.vb#81)]  
   
 ## Compiling the Code  
+
  The preceding example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs> `e`, which is a parameter of the <xref:System.Windows.Forms.Control.Paint> event handler.  
   
 ## See also

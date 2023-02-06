@@ -10,9 +10,11 @@ helpviewer_keywords:
 ms.assetid: e9b71017-bac4-40d7-858b-326939442cb1
 ---
 # Path Animation How-to Topics
+
 The topics in this section demonstrate how to animate an object along a path.  
   
 ## In This Section  
+
  [Animate an Object Along a Path (Double Animation)](how-to-animate-an-object-along-a-path-double-animation.md)  
  [Animate an Object Along a Path (Point Animation)](how-to-animate-an-object-along-a-path-point-animation.md)  
  [Animate an Object Along a Path (Matrix Animation)](how-to-animate-an-object-along-a-path-matrix-animation.md)  
@@ -21,6 +23,7 @@ The topics in this section demonstrate how to animate an object along a path.
  [Rotate an Object by Using a Geometric Path](how-to-rotate-an-object-by-using-a-geometric-path.md)  
   
 ## Reference  
+
  <xref:System.Windows.Media.Animation.PathAnimationSource>  
   
  <xref:System.Windows.Media.Animation.Storyboard>  

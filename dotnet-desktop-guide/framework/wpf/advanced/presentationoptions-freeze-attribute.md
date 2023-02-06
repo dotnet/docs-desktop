@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: 391032dd-2fba-4804-bb8a-3b071797a9f4
 ---
 # PresentationOptions:Freeze Attribute
+
 Sets the <xref:System.Windows.Freezable.IsFrozen%2A> state to `true` on the containing <xref:System.Windows.Freezable> element. Default behavior for a <xref:System.Windows.Freezable> without the `PresentationOptions:Freeze` attribute specified is that <xref:System.Windows.Freezable.IsFrozen%2A> is `false` at load time, and dependent on general <xref:System.Windows.Freezable> behavior at runtime.  
   
 ## XAML Attribute Usage  
@@ -31,6 +32,7 @@ Sets the <xref:System.Windows.Freezable.IsFrozen%2A> state to `true` on the cont
 |`freezableElement`|An element that instantiates any derived class of <xref:System.Windows.Freezable>.|  
   
 ## Remarks  
+
  The `Freeze` attribute is the only attribute or other programming element defined in the `http://schemas.microsoft.com/winfx/2006/xaml/presentation/options` XML namespace. The `Freeze` attribute exists in this special namespace specifically so that it can be designated as ignorable, using [mc:Ignorable Attribute](mc-ignorable-attribute.md) as part of the root element declarations. The reason that `Freeze` must be able to be ignorable is because not all XAML processor implementations are able to freeze a <xref:System.Windows.Freezable> at load time; this capability is not part of the XAML specification.  
   
  The ability to process the `Freeze` attribute is specifically built in to the WPF XAML processor when processing the `Freeze` attribute on <xref:System.Windows.Freezable> elements at load time.  

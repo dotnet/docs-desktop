@@ -16,11 +16,13 @@ helpviewer_keywords:
 ms.assetid: e863e2a7-0294-4130-99b6-f1ea3201e7cd
 ---
 # Brushes and Filled Shapes in GDI+
+
 A closed shape, such as a rectangle or an ellipse, consists of an outline and an interior. The outline is drawn with a pen and the interior is filled with a brush. GDI+ provides several brush classes for filling the interiors of closed shapes: <xref:System.Drawing.SolidBrush>, <xref:System.Drawing.Drawing2D.HatchBrush>, <xref:System.Drawing.TextureBrush>, <xref:System.Drawing.Drawing2D.LinearGradientBrush>, and <xref:System.Drawing.Drawing2D.PathGradientBrush>. All of these classes inherit from the <xref:System.Drawing.Brush> class. The following illustration shows a rectangle filled with a solid brush and an ellipse filled with a hatch brush.  
   
  ![Screenshot of a rectangle filled with a solid brush and an ellipse filled with a hatch brush.](./media/aboutgdip02-art17.gif "Aboutgdip02_art17")  
   
 ## Solid Brushes  
+
  To fill a closed shape, you need an instance of the <xref:System.Drawing.Graphics> class and a <xref:System.Drawing.Brush>. The instance of the <xref:System.Drawing.Graphics> class provides methods, such as <xref:System.Drawing.Graphics.FillRectangle%2A> and <xref:System.Drawing.Graphics.FillEllipse%2A>, and the <xref:System.Drawing.Brush> stores attributes of the fill, such as color and pattern. The <xref:System.Drawing.Brush> is passed as one of the arguments to the fill method. The following code example shows how to fill an ellipse with a solid red color.  
   
  [!code-csharp[LinesCurvesAndShapes#121](~/samples/snippets/csharp/VS_Snippets_Winforms/LinesCurvesAndShapes/CS/Class1.cs#121)]
@@ -30,6 +32,7 @@ A closed shape, such as a rectangle or an ellipse, consists of an outline and an
 > In the preceding example, the brush is of type <xref:System.Drawing.SolidBrush>, which inherits from <xref:System.Drawing.Brush>.  
   
 ## Hatch Brushes  
+
  When you fill a shape with a hatch brush, you specify a foreground color, a background color, and a hatch style. The foreground color is the color of the hatching.  
   
  [!code-csharp[LinesCurvesAndShapes#122](~/samples/snippets/csharp/VS_Snippets_Winforms/LinesCurvesAndShapes/CS/Class1.cs#122)]
@@ -40,6 +43,7 @@ A closed shape, such as a rectangle or an ellipse, consists of an outline and an
  ![Screenshot of three ellipses that are filled with a horizontal hatch brush, forward diagonal hatch brush, and a cross hatch brush.](./media/aboutgdip02-art18.gif "Aboutgdip02_art18")  
   
 ## Texture Brushes  
+
  With a texture brush, you can fill a shape with a pattern stored in a bitmap. For example, suppose the following picture is stored in a disk file named `MyTexture.bmp`.  
   
  ![Screenshot of the My Texture dot b m p file.](./media/aboutgdip02-art19.gif "Aboutgdip02_Art19")  
@@ -54,6 +58,7 @@ A closed shape, such as a rectangle or an ellipse, consists of an outline and an
  ![Screenshot of an ellipse that is filled with a texture brush.](./media/aboutgdip02-art20.gif "AboutGdip02_Art20")  
   
 ## Gradient Brushes  
+
  GDI+ provides two kinds of gradient brushes: linear and path. You can use a linear gradient brush to fill a shape with color that changes gradually as you move across the shape horizontally, vertically, or diagonally. The following code example shows how to fill an ellipse with a horizontal gradient brush that changes from blue to green as you move from the left edge of the ellipse to the right edge.  
   
  [!code-csharp[LinesCurvesAndShapes#124](~/samples/snippets/csharp/VS_Snippets_Winforms/LinesCurvesAndShapes/CS/Class1.cs#124)]

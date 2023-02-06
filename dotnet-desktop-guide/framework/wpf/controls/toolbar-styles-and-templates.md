@@ -12,9 +12,11 @@ helpviewer_keywords:
 ms.assetid: bd875f46-4690-46f5-81e0-f11a9822484f
 ---
 # ToolBar Styles and Templates
+
 This topic describes the styles and templates for the <xref:System.Windows.Controls.ToolBar> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [Create a template for a control](how-to-create-apply-template.md).  
   
 ## ToolBar Parts  
+
  The following table lists the named parts for the <xref:System.Windows.Controls.ToolBar> control.  
   
 |Part|Type|Description|  
@@ -25,6 +27,7 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
  When you create a <xref:System.Windows.Controls.ControlTemplate> for a <xref:System.Windows.Controls.ToolBar>, your template might contain an <xref:System.Windows.Controls.ItemsPresenter> within a <xref:System.Windows.Controls.ScrollViewer>. (The <xref:System.Windows.Controls.ItemsPresenter> displays each item in the <xref:System.Windows.Controls.ToolBar>; the <xref:System.Windows.Controls.ScrollViewer> enables scrolling within the control).  If the <xref:System.Windows.Controls.ItemsPresenter> is not the direct child of the <xref:System.Windows.Controls.ScrollViewer>, you must give the <xref:System.Windows.Controls.ItemsPresenter> the name, `ItemsPresenter`.  
   
 ## ToolBar States  
+
  The following table lists the visual states for the <xref:System.Windows.Controls.ToolBar> control.  
   
 |VisualState Name|VisualStateGroup Name|Description|  
@@ -34,6 +37,7 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 |InvalidUnfocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` has the control does not have focus.|  
   
 ## ToolBar ControlTemplate Example  
+
  The following example shows how to define a <xref:System.Windows.Controls.ControlTemplate> for the <xref:System.Windows.Controls.ToolBar> control.  
   
  [!code-xaml[ControlTemplateExamples#ToolBar](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/toolbar.xaml#toolbar)]  

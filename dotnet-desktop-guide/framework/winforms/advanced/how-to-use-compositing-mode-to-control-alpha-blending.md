@@ -12,6 +12,7 @@ helpviewer_keywords:
 ms.assetid: f331df2d-b395-4b0a-95be-24fec8c9bbb5
 ---
 # How to: Use Compositing Mode to Control Alpha Blending
+
 There may be times when you want to create an off-screen bitmap that has the following characteristics:  
   
 - Colors have alpha values that are less than 255.  
@@ -23,6 +24,7 @@ There may be times when you want to create an off-screen bitmap that has the fol
  To create such a bitmap, construct a blank <xref:System.Drawing.Bitmap> object, and then construct a <xref:System.Drawing.Graphics> object based on that bitmap. Set the compositing mode of the <xref:System.Drawing.Graphics> object to <xref:System.Drawing.Drawing2D.CompositingMode.SourceCopy?displayProperty=nameWithType>.  
   
 ## Example  
+
  The following example creates a <xref:System.Drawing.Graphics> object based on a <xref:System.Drawing.Bitmap> object. The code uses the <xref:System.Drawing.Graphics> object along with two semitransparent brushes (alpha = 160) to paint on the bitmap. The code fills a red ellipse and a green ellipse using the semitransparent brushes. The green ellipse overlaps the red ellipse, but the green is not blended with the red because the compositing mode of the <xref:System.Drawing.Graphics> object is set to <xref:System.Drawing.Drawing2D.CompositingMode.SourceCopy>.  
   
  The code draws the bitmap on the screen twice: once on a white background and once on a multicolored background. The pixels in the bitmap that are part of the two ellipses have an alpha component of 160, so the ellipses are blended with the background colors on the screen.  
@@ -49,6 +51,7 @@ There may be times when you want to create an off-screen bitmap that has the fol
  [!code-vb[System.Drawing.AlphaBlending#43](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.AlphaBlending/VB/Class1.vb#43)]  
   
 ## Compiling the Code  
+
  The preceding example is designed for use with Windows Forms, and it requires <xref:System.Windows.Forms.PaintEventArgs> `e`, which is a parameter of <xref:System.Windows.Forms.PaintEventHandler>.  
   
 ## See also

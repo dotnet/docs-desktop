@@ -11,9 +11,11 @@ helpviewer_keywords:
 ms.assetid: 1e717711-1361-448e-aa49-0f3ec43110c9
 ---
 # Using the World Transformation
+
 The world transformation is a property of the <xref:System.Drawing.Graphics> class. The numbers that specify the world transformation are stored in a <xref:System.Drawing.Drawing2D.Matrix> object, which represents a 3×3 matrix. The <xref:System.Drawing.Drawing2D.Matrix> and <xref:System.Drawing.Graphics> classes have several methods for setting the numbers in the world transformation matrix.  
   
 ## Different Types of Transformations  
+
  In the following example, the code first creates a 50×50 rectangle and locates it at the origin (0, 0). The origin is at the upper-left corner of the client area.  
   
  [!code-csharp[System.Drawing.MiscLegacyTopics#11](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.MiscLegacyTopics/CS/Class1.cs#11)]

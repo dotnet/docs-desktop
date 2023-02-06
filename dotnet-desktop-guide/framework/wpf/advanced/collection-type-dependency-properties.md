@@ -13,14 +13,19 @@ helpviewer_keywords:
 ms.assetid: 99f96a42-3ab7-4f64-a16b-2e10d654e97c
 ---
 # Collection-Type Dependency Properties
+
 This topic provides guidance and suggested patterns for how to implement a dependency property where the type of the property is a collection type.  
 
 <a name="implementing"></a>
+
 ## Implementing a Collection-Type Dependency Property  
+
  For a dependency property in general, the implementation pattern that you follow is that you define a CLR property wrapper, where that property is backed by a <xref:System.Windows.DependencyProperty> identifier rather than a field or other construct. You follow this same pattern when you implement a collection-type property. However, a collection-type property introduces some complexity to the pattern whenever the type that is contained within the collection is itself a <xref:System.Windows.DependencyObject> or <xref:System.Windows.Freezable> derived class.  
   
 <a name="initializing"></a>
+
 ## Initializing the Collection Beyond the Default Value  
+
  When you create a dependency property, you do not specify the property default value as the initial field value. Instead, you specify the default value through the dependency property metadata. If your property is a reference type, the default value specified in dependency property metadata is not a default value per instance; instead it is a default value that applies to all instances of the type. Therefore you must be careful to not use the singular static collection defined by the collection property metadata as the working default value for newly created instances of your type. Instead, you must make sure that you deliberately set the collection value to a unique (instance) collection as part of your class constructor logic. Otherwise you will have created an unintentional singleton class.  
   
  Consider the following example. The following section of the example shows the definition for a class `Aquarium`, which contains a flaw with the default value. The class defines the collection type dependency property `AquariumObjects`, which uses the generic <xref:System.Collections.Generic.List%601> type with a <xref:System.Windows.FrameworkElement> type constraint. In the <xref:System.Windows.DependencyProperty.Register%28System.String%2CSystem.Type%2CSystem.Type%2CSystem.Windows.PropertyMetadata%29> call for the dependency property, the metadata establishes the default value to be a new generic <xref:System.Collections.Generic.List%601>.
@@ -48,6 +53,7 @@ This topic provides guidance and suggested patterns for how to implement a depen
  There would be a slight variation on this pattern if you chose to have your collection property be read-write. In that case, you could call the public set accessor from the constructor to do the initialization, which would still be calling the nonkey signature of <xref:System.Windows.DependencyObject.SetValue%28System.Windows.DependencyProperty%2CSystem.Object%29> within your set wrapper, using a public <xref:System.Windows.DependencyProperty> identifier.  
   
 ## Reporting Binding Value Changes from Collection Properties  
+
  A collection property that is itself a dependency property does not automatically report changes to its subproperties. If you are creating bindings into a collection, this can prevent the binding from reporting changes, thus invalidating some data binding scenarios. However, if you use the collection type <xref:System.Windows.FreezableCollection%601> as your collection type, then subproperty changes to contained elements in the collection are properly reported, and binding works as expected.  
   
  To enable subproperty binding in a dependency object collection, create the collection property as type <xref:System.Windows.FreezableCollection%601>, with a type constraint for that collection to any <xref:System.Windows.DependencyObject> derived class.  

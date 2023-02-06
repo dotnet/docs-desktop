@@ -12,9 +12,11 @@ helpviewer_keywords:
 ms.assetid: 3a1a7dba-7694-4907-8a2f-3408baebfa82
 ---
 # How to: Animate a Double by Using Key Frames
+
 This example shows how to animate the value of a property that takes a <xref:System.Double> by using key frames.  
   
 ## Example  
+
  The following example moves a rectangle across a screen. The example uses the <xref:System.Windows.Media.Animation.DoubleAnimationUsingKeyFrames> class to animate the <xref:System.Windows.Media.TranslateTransform.X%2A> property of a <xref:System.Windows.Media.TranslateTransform> applied to a <xref:System.Windows.Shapes.Rectangle>. This animation, which repeats indefinitely, uses three key frames in the following manner:  
   
 1. During the first three seconds, uses an instance of the <xref:System.Windows.Media.Animation.LinearDoubleKeyFrame> class to move the rectangle along a path at a steady rate from its starting position to the 500 position. Linear key frames like <xref:System.Windows.Media.Animation.LinearDoubleKeyFrame> create a smooth linear transition between values.  

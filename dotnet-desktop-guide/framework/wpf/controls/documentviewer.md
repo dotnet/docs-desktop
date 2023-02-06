@@ -10,9 +10,11 @@ helpviewer_keywords:
 ms.assetid: c21eb322-d6b3-474b-ab05-94527bd1b0fa
 ---
 # DocumentViewer
+
 The <xref:System.Windows.Controls.DocumentViewer> control is used to view <xref:System.Windows.Documents.FixedDocument> content (such as XML Paper Specification (XPS) documents) in a paginated format.  
   
 ## Reference  
+
  <xref:System.Windows.Controls.DocumentViewer>  
   
  <xref:System.Windows.Documents.FixedDocument>  

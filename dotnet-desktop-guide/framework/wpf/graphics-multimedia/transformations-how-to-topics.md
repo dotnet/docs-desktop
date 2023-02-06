@@ -12,9 +12,11 @@ helpviewer_keywords:
 ms.assetid: ff71384e-8811-420f-8cc8-0a3332e0397f
 ---
 # Transformations How-to Topics
+
 The topics in this section describe how to apply different transformations to objects.  
   
 ## In This Section  
+
  [Apply a Transform to an Element When an Event Occurs](how-to-apply-a-transform-to-an-element-when-an-event-occurs.md)  
  [Apply Multiple Transforms to an Object](how-to-apply-multiple-transforms-to-an-object.md)  
  [Make an Element Spin in Place](how-to-make-an-element-spin-in-place.md)  

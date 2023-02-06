@@ -13,9 +13,11 @@ ms.assetid: 915091af-93ac-4d3d-8283-738dd2d21ea7
 description: Learn how the Windows Forms TabControl displays multiple tabs and can be used to create property pages.
 ---
 # TabControl Control (Windows Forms)
+
 The Windows Forms `TabControl` displays multiple tabs, like dividers in a notebook or labels in a set of folders in a filing cabinet. The tabs can contain pictures and other controls. Use the `TabControl` to create property pages.  
   
 ## In This Section  
+
  [TabControl Control Overview](tabcontrol-control-overview-windows-forms.md)  
  Explains what this control is and its key features and properties.  
   
@@ -34,10 +36,12 @@ The Windows Forms `TabControl` displays multiple tabs, like dividers in a notebo
  Also see [How to: Add and Remove Tabs with the Windows Forms TabControl Using the Designer](add-and-remove-tabs-with-wf-tabcontrol-using-the-designer.md), [How to: Add a Control to a Tab Page Using the Designer](how-to-add-a-control-to-a-tab-page-using-the-designer.md)  
   
 ## Reference  
+
  <xref:System.Windows.Forms.TabControl> class  
  Describes this class and has links to all its members.  
   
 ## Related Sections  
+
  [Dialog Boxes in Windows Forms](../dialog-boxes-in-windows-forms.md)  
  Provides a list of tasks for dialog boxes, which often display tabs.  
   

@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: ea8bd66a-5ed6-491b-b9da-63873e275a0a
 ---
 # DataGridView Control Code Directory (Windows Forms)
+
 This topic provides links to <xref:System.Windows.Forms.DataGridView>-related code examples available in the documentation.  
   
 > [!NOTE]

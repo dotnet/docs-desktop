@@ -8,6 +8,7 @@ helpviewer_keywords:
 ms.assetid: 43715887-2df9-4da7-bcf1-b9c7c842b2bf
 ---
 # Column Sort Modes in the Windows Forms DataGridView Control
+
 <xref:System.Windows.Forms.DataGridView> columns have three sort modes. The sort mode for each column is specified through the <xref:System.Windows.Forms.DataGridViewColumn.SortMode%2A> property of the column, which can be set to one of the following <xref:System.Windows.Forms.DataGridViewColumnSortMode> enumeration values.  
   
 |`DataGridViewColumnSortMode` value|Description|  
@@ -29,6 +30,7 @@ ms.assetid: 43715887-2df9-4da7-bcf1-b9c7c842b2bf
  When a <xref:System.Windows.Forms.DataGridView> control containing both bound and unbound columns is sorted, the values in the unbound columns cannot be maintained automatically. To maintain these values, you must implement virtual mode by setting the <xref:System.Windows.Forms.DataGridView.VirtualMode%2A> property to `true` and handling the <xref:System.Windows.Forms.DataGridView.CellValueNeeded> and <xref:System.Windows.Forms.DataGridView.CellValuePushed> events. For more information, see [How to: Implement Virtual Mode in the Windows Forms DataGridView Control](how-to-implement-virtual-mode-in-the-windows-forms-datagridview-control.md). Sorting by unbound columns in bound mode is not supported.  
   
 ## Programmatic Sorting  
+
  You can sort a <xref:System.Windows.Forms.DataGridView> programmatically by calling its <xref:System.Windows.Forms.DataGridView.Sort%2A> method.  
   
  The `Sort(DataGridViewColumn,ListSortDirection)` overload of the <xref:System.Windows.Forms.DataGridView.Sort%2A> method takes a <xref:System.Windows.Forms.DataGridViewColumn> and a <xref:System.ComponentModel.ListSortDirection> enumeration value as parameters. This overload is useful when sorting by columns with values that can be meaningfully ordered, but which you do not want to configure for automatic sorting. When you call this overload and pass in a column with a <xref:System.Windows.Forms.DataGridViewColumn.SortMode%2A> property value of <xref:System.Windows.Forms.DataGridViewColumnSortMode.Automatic?displayProperty=nameWithType>, the <xref:System.Windows.Forms.DataGridView.SortedColumn%2A> and <xref:System.Windows.Forms.DataGridView.SortOrder%2A> properties are set automatically and the appropriate sorting glyph appears in the column header.  
@@ -37,6 +39,7 @@ ms.assetid: 43715887-2df9-4da7-bcf1-b9c7c842b2bf
 > When the <xref:System.Windows.Forms.DataGridView> control is bound to an external data source by setting the <xref:System.Windows.Forms.DataGridView.DataSource%2A> property, the `Sort(DataGridViewColumn,ListSortDirection)` method overload does not work for unbound columns. Additionally, when the <xref:System.Windows.Forms.DataGridView.VirtualMode%2A> property is `true`, you can call this overload only for bound columns. To determine whether a column is data-bound, check the <xref:System.Windows.Forms.DataGridViewColumn.IsDataBound%2A> property value. Sorting unbound columns in bound mode is not supported.  
   
 ## Custom Sorting  
+
  You can customize <xref:System.Windows.Forms.DataGridView> by using the `Sort(IComparer)` overload of the <xref:System.Windows.Forms.DataGridView.Sort%2A> method or by handling the <xref:System.Windows.Forms.DataGridView.SortCompare> event.  
   
  The `Sort(IComparer)` method overload takes an instance of a class that implements the <xref:System.Collections.IComparer> interface as a parameter. This overload is useful when you want to provide custom sorting; for example, when the values in a column do not have a natural sort order or when the natural sort order is inappropriate. In this case, you cannot use automatic sorting, but you might still want your users to sort by clicking the column headers. You can call this overload in a handler for the <xref:System.Windows.Forms.DataGridView.ColumnHeaderMouseClick> event if you do not use column headers for selection.  

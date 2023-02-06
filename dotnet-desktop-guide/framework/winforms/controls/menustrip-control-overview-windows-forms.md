@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: f45516e5-bf01-4468-b851-d45f4c33c055
 ---
 # MenuStrip Control Overview (Windows Forms)
+
 Menus expose functionality to your users by holding commands that are grouped by a common theme.  
   
  The <xref:System.Windows.Forms.MenuStrip> control was introduced in version 2.0 of the .NET Framework. With the <xref:System.Windows.Forms.MenuStrip> control, you can easily create menus like those found in Microsoft Office.  
@@ -19,6 +20,7 @@ Menus expose functionality to your users by holding commands that are grouped by
  The <xref:System.Windows.Forms.MenuStrip> control replaces and adds functionality to the <xref:System.Windows.Forms.MainMenu> control; however, the <xref:System.Windows.Forms.MainMenu> control is retained for backward compatibility and future use if you choose.  
   
 ## Ways to Use the MenuStrip Control  
+
  Use the <xref:System.Windows.Forms.MenuStrip> control to:  
   
 - Create easily customized, commonly employed menus that support advanced user interface and layout features, such as text and image ordering and alignment, drag-and-drop operations, MDI, overflow, and alternate modes of accessing menu commands.  

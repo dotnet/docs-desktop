@@ -36,6 +36,7 @@ In most cases, when you're adding ornamentation to text strings in your Windows 
  ![Text with image brush applied to stroke and highlight](./media/how-to-create-outlined-text/image-brush-text-application.jpg)
 
 ## Example  
+
  The key to converting text to a <xref:System.Windows.Media.Geometry> object is to use the <xref:System.Windows.Media.FormattedText> object. Once you have created this object, you can use the <xref:System.Windows.Media.FormattedText.BuildGeometry%2A> and <xref:System.Windows.Media.FormattedText.BuildHighlightGeometry%2A> methods to convert the text to <xref:System.Windows.Media.Geometry> objects. The first method returns the geometry of the formatted text; the second method returns the geometry of the formatted text's bounding box. The following code example shows how to create a <xref:System.Windows.Media.FormattedText> object and to retrieve the geometries of the formatted text and its bounding box.  
   
  [!code-csharp[OutlineTextControlViewer#CreateText](~/samples/snippets/csharp/VS_Snippets_Wpf/OutlineTextControlViewer/CSharp/OutlineTextControl.cs#createtext)]

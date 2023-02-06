@@ -13,9 +13,11 @@ helpviewer_keywords:
 ms.assetid: 952a7d76-dd29-49e5-86f5-32c4530e70eb
 ---
 # How to: Bind to a Collection and Display Information Based on Selection
+
 In a simple master-detail scenario, you have a data-bound <xref:System.Windows.Controls.ItemsControl> such as a <xref:System.Windows.Controls.ListBox>. Based on user selection, you display more information about the selected item. This example shows how to implement this scenario.  
   
 ## Example  
+
  In this example, `People` is an <xref:System.Collections.ObjectModel.ObservableCollection%601> of `Person` classes. This `Person` class contains three properties: `FirstName`, `LastName`, and `HomeTown`, all of type `string`.  
   
  [!code-xaml[CollectionBinding#Source](~/samples/snippets/csharp/VS_Snippets_Wpf/CollectionBinding/CSharp/Window1.xaml#source)]  

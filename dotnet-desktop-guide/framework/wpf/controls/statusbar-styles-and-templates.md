@@ -13,12 +13,15 @@ helpviewer_keywords:
 ms.assetid: 9f5e1c25-81eb-4756-a0ac-d9e1fbe33ee2
 ---
 # StatusBar Styles and Templates
+
 This topic describes the styles and templates for the <xref:System.Windows.Controls.Primitives.StatusBar> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [Create a template for a control](how-to-create-apply-template.md).  
   
 ## StatusBar Parts  
+
  The <xref:System.Windows.Controls.Primitives.StatusBar> control does not have any named parts.  
   
 ## StatusBar States  
+
  The following table lists the visual states for the <xref:System.Windows.Controls.Primitives.StatusBar> control.  
   
 |VisualState Name|VisualStateGroup Name|Description|  
@@ -28,9 +31,11 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 |InvalidUnfocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` has the control does not have focus.|  
   
 ## StatusBarItem Parts  
+
  The <xref:System.Windows.Controls.Primitives.StatusBarItem> control does not have any named parts.  
   
 ## StatusBarItem States
+
  The following table lists the visual states for the <xref:System.Windows.Controls.Primitives.StatusBarItem> control.  
   
 |VisualState Name|VisualStateGroup Name|Description|  
@@ -40,6 +45,7 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 |InvalidUnfocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` has the control does not have focus.|  
   
 ## StatusBar ControlTemplate Example  
+
  The following example shows how to define a <xref:System.Windows.Controls.ControlTemplate> for the <xref:System.Windows.Controls.Primitives.StatusBar> control.  
   
  [!code-xaml[ControlTemplateExamples#StatusBar](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/statusbar.xaml#statusbar)]  

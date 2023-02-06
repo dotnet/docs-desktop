@@ -16,14 +16,17 @@ helpviewer_keywords:
 ms.assetid: ffb113d3-c68a-47ca-8ac0-882283f38326
 ---
 # How to: Save, Load, and Print RichTextBox Content
+
 The following example shows how to save content of a <xref:System.Windows.Controls.RichTextBox> to a file, load that content back into the <xref:System.Windows.Controls.RichTextBox>, and print the contents.  
   
 ## Markup for Save, Load, and Print RichTextBox Content
+
  Below is the markup for the example.  
   
  [!code-xaml[RichTextBoxMiscSnippets_snip#SaveLoadPrintRTBExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/RichTextBoxMiscSnippets_snip/CSharp/SaveLoadPrintRTB.xaml#saveloadprintrtbexamplewholepage)]  
   
 ## Code for Save, Load, and Print RichTextBox Content
+
  Below is the code behind for the example.  
   
  [!code-csharp[RichTextBoxMiscSnippets_snip#SaveLoadPrintRTBCodeExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/RichTextBoxMiscSnippets_snip/CSharp/SaveLoadPrintRTB.xaml.cs#saveloadprintrtbcodeexamplewholepage)]

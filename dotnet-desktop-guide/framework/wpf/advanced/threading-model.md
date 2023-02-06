@@ -22,6 +22,7 @@ helpviewer_keywords:
 ms.assetid: 02d8fd00-8d7c-4604-874c-58e40786770b
 ---
 # Threading Model
+
 WPF developers won't have to write an interface that uses more than one thread. Because multithreaded programs are complex and difficult to debug, they should be avoided when single-threaded solutions exist.
 
  No matter how well architected, however, no UI framework will ever be able to provide a single-threaded solution for every sort of problem. WPF comes close, but there are still situations where multiple threads improve user interface (UI) responsiveness or application performance. After discussing some background material, this paper explores some of these situations and then concludes with a discussion of some lower-level details.
@@ -30,7 +31,9 @@ WPF developers won't have to write an interface that uses more than one thread. 
 > This topic discusses threading by using the <xref:System.Windows.Threading.Dispatcher.BeginInvoke%2A> method for asynchronous calls. You can also make asynchronous calls by calling the <xref:System.Windows.Threading.Dispatcher.InvokeAsync%2A> method, which take an <xref:System.Action> or <xref:System.Func%601> as a parameter.  The <xref:System.Windows.Threading.Dispatcher.InvokeAsync%2A> method returns a <xref:System.Windows.Threading.DispatcherOperation> or <xref:System.Windows.Threading.DispatcherOperation%601>, which has a <xref:System.Windows.Threading.DispatcherOperation.Task%2A> property. You can use the `await` keyword with either the <xref:System.Windows.Threading.DispatcherOperation> or the associated <xref:System.Threading.Tasks.Task>. If you need to wait synchronously for the <xref:System.Threading.Tasks.Task> that is returned by a <xref:System.Windows.Threading.DispatcherOperation> or <xref:System.Windows.Threading.DispatcherOperation%601>, call the <xref:System.Windows.Threading.TaskExtensions.DispatcherOperationWait%2A> extension method.  Calling <xref:System.Threading.Tasks.Task.Wait%2A?displayProperty=nameWithType> will result in a deadlock. For more information about using a <xref:System.Threading.Tasks.Task> to perform asynchronous operations, see [Task-based asynchronous programming](/dotnet/standard/parallel-programming/task-based-asynchronous-programming).  The <xref:System.Windows.Threading.Dispatcher.Invoke%2A> method also has overloads that take an <xref:System.Action> or <xref:System.Func%601> as a parameter.  You can use the <xref:System.Windows.Threading.Dispatcher.Invoke%2A> method to make synchronous calls by passing in a delegate, <xref:System.Action> or <xref:System.Func%601>.
 
 <a name="threading_overview"></a>
+
 ## Overview and the Dispatcher
+
  Typically, UI. The rendering thread effectively runs hidden in the background while the UI thread receives input, handles events, paints the screen, and runs application code. Most applications use a single UI thread, although in some situations it is best to use several. We’ll discuss this with an example later.
 
  The UI thread queues work items inside an object called a <xref:System.Windows.Threading.Dispatcher>. The <xref:System.Windows.Threading.Dispatcher> selects work items on a priority basis and runs each one to completion.  Every UI thread must have at least one <xref:System.Windows.Threading.Dispatcher>, and each <xref:System.Windows.Threading.Dispatcher> can execute work items in exactly one thread.
@@ -48,10 +51,13 @@ WPF developers won't have to write an interface that uses more than one thread. 
  The <xref:System.Windows.Threading.Dispatcher> orders the elements in its queue by priority. There are ten levels that may be specified when adding an element to the <xref:System.Windows.Threading.Dispatcher> queue. These priorities are maintained in the <xref:System.Windows.Threading.DispatcherPriority> enumeration. Detailed information about <xref:System.Windows.Threading.DispatcherPriority> levels can be found in the Windows SDK documentation.
 
 <a name="samples"></a>
+
 ## Threads in Action: The Samples
 
 <a name="prime_number"></a>
+
 ### A Single-Threaded Application with a Long-Running Calculation
+
  Most graphical user interfaces (GUIs) spend a large portion of their time idle while waiting for events that are generated in response to user interactions. With careful programming this idle time can be used constructively, without affecting the responsiveness of the UI. The UI thread. This means you must be sure to return to the <xref:System.Windows.Threading.Dispatcher> periodically to process pending input events before they get stale.
 
  Consider the following example:
@@ -98,7 +104,9 @@ WPF developers won't have to write an interface that uses more than one thread. 
  For the complete source code for this sample, see the [Single-Threaded Application with Long-Running Calculation Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Threading/SingleThreadedApplication)
 
 <a name="weather_sim"></a>
+
 ### Handling a Blocking Operation with a Background Thread
+
  Handling blocking operations in a graphical application can be difficult. We don’t want to call blocking methods from event handlers because the application will appear to freeze up. We can use a separate thread to handle these operations, but when we’re done, we have to synchronize with the UI thread because we can’t directly modify the GUI from our worker thread. We can use <xref:System.Windows.Threading.Dispatcher.Invoke%2A> or <xref:System.Windows.Threading.Dispatcher.BeginInvoke%2A> to insert delegates into the <xref:System.Windows.Threading.Dispatcher> of the UI thread. Eventually, these delegates will be executed with permission to modify UI elements.
 
  In this example, we mimic a remote procedure call that retrieves a weather forecast. We use a separate worker thread to execute this call, and we schedule an update method in the <xref:System.Windows.Threading.Dispatcher> of the UI thread when we’re finished.
@@ -134,7 +142,9 @@ WPF developers won't have to write an interface that uses more than one thread. 
  When the <xref:System.Windows.Threading.Dispatcher> in the UI thread has time, it executes the scheduled call to `UpdateUserInterface`. This method stops the clock animation and chooses an image to describe the weather. It displays this image and restores the "fetch forecast" button.
 
 <a name="multi_browser"></a>
+
 ### Multiple Windows, Multiple Threads
+
  Some WPF applications require multiple top-level windows. It is perfectly acceptable for one Thread/<xref:System.Windows.Threading.Dispatcher> combination to manage multiple windows, but sometimes several threads do a better job. This is especially true if there is any chance that one of the windows will monopolize the thread.
 
  Windows Explorer works in this fashion. Each new Explorer window belongs to the original process, but it is created under the control of an independent thread.
@@ -163,9 +173,11 @@ WPF developers won't have to write an interface that uses more than one thread. 
  This method is the starting point for the new thread. We create a new window under the control of this thread. WPF automatically creates a new <xref:System.Windows.Threading.Dispatcher> to manage the new thread. All we have to do to make the window functional is to start the <xref:System.Windows.Threading.Dispatcher>.
 
 <a name="stumbling_points"></a>
+
 ## Technical Details and Stumbling Points
 
 ### Writing Components Using Threading
+
  The Microsoft .NET Framework Developer's Guide describes a pattern for how a component can expose asynchronous behavior to its clients (see [Event-based Asynchronous Pattern Overview](/dotnet/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview)). For instance, suppose we wanted to package the `FetchWeatherFromServer` method into a reusable, nongraphical component. Following the standard Microsoft .NET Framework pattern, this would look something like the following.
 
  [!code-csharp[CommandingOverviewSnippets#ThreadingArticleWeatherComponent1](~/samples/snippets/csharp/VS_Snippets_Wpf/CommandingOverviewSnippets/CSharp/Window1.xaml.cs#threadingarticleweathercomponent1)]
@@ -181,6 +193,7 @@ WPF developers won't have to write an interface that uses more than one thread. 
  [!code-vb[CommandingOverviewSnippets#ThreadingArticleWeatherComponent2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CommandingOverviewSnippets/visualbasic/window1.xaml.vb#threadingarticleweathercomponent2)]
 
 ### Nested Pumping
+
  Sometimes it is not feasible to completely lock up the UI thread. Let’s consider the <xref:System.Windows.MessageBox.Show%2A> method of the <xref:System.Windows.MessageBox> class. <xref:System.Windows.MessageBox.Show%2A> doesn’t return until the user clicks the OK button. It does, however, create a window that must have a message loop in order to be interactive. While we are waiting for the user to click OK, the original application window does not respond to user input. It does, however, continue to process paint messages. The original window redraws itself when covered and revealed.
 
  ![Screenshot that shows a MessageBox with an OK button](./media/threading-model/threading-message-loop.png)
@@ -190,6 +203,7 @@ WPF developers won't have to write an interface that uses more than one thread. 
  In this case, <xref:System.Windows.Threading.Dispatcher.PushFrame%2A> maintains the program context at the call to <xref:System.Windows.MessageBox.Show%2A?displayProperty=nameWithType>, and it starts a new message loop to repaint the background window and handle input to the message box window. When the user clicks OK and clears the pop-up window, the nested loop exits and control resumes after the call to <xref:System.Windows.MessageBox.Show%2A>.
 
 ### Stale Routed Events
+
  The routed event system in WPF notifies entire trees when events are raised.
 
  [!code-xaml[InputOvw#ThreadingArticleStaticRoutedEvent](~/samples/snippets/csharp/VS_Snippets_Wpf/InputOvw/CSharp/Page1.xaml#threadingarticlestaticroutedevent)]
@@ -199,6 +213,7 @@ WPF developers won't have to write an interface that uses more than one thread. 
  It’s possible that `handler2` will take a great deal of time processing this event. `handler2` might use <xref:System.Windows.Threading.Dispatcher.PushFrame%2A> to begin a nested message loop that doesn’t return for hours. If `handler2` does not mark the event as handled when this message loop is complete, the event is passed up the tree even though it is very old.
 
 ### Reentrancy and Locking
+
  The locking mechanism of the common language runtime (CLR) doesn’t behave exactly as one might imagine; one might expect a thread to cease operation completely when requesting a lock. In actuality, the thread continues to receive and process high-priority messages. This helps prevent deadlocks and make interfaces minimally responsive, but it introduces the possibility for subtle bugs.  The vast majority of the time you don’t need to know anything about this, but under rare circumstances (usually involving Win32 window messages or COM STA components) this can be worth knowing.
 
  Most interfaces are not built with thread safety in mind because developers work under the assumption that a UI is never accessed by more than one thread. In this case, that single thread may make environmental changes at unexpected times, causing those ill effects that the <xref:System.Windows.Threading.DispatcherObject> mutual exclusion mechanism is supposed to solve. Consider the following pseudocode:

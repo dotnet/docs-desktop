@@ -12,6 +12,7 @@ helpviewer_keywords:
 ms.assetid: 2ef8b1de-782e-4867-af8d-58171ab5c106
 ---
 # How to: Freeze Columns in the Windows Forms DataGridView Control
+
 When users view data displayed in a Windows Forms <xref:System.Windows.Forms.DataGridView> control, they sometimes need to refer to a single column or set of columns frequently. For example, when displaying a table of customer information that contains many columns, it is useful to display the customer name at all times while enabling other columns to scroll outside the visible region.  
   
  To achieve this behavior, you can freeze columns in the control. When you freeze a column, all the columns to its left (or to its right in right-to-left language scripts) are frozen as well. Frozen columns remain in place while all other columns can scroll.  
@@ -31,6 +32,7 @@ When users view data displayed in a Windows Forms <xref:System.Windows.Forms.Dat
      [!code-vb[System.Windows.Forms.DataGridViewMisc#061](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/VB/datagridviewmisc.vb#061)]  
   
 ## Compiling the Code  
+
  This example requires:  
   
 - A <xref:System.Windows.Forms.DataGridView> control named `dataGridView1` that contains a column named `AddToCartButton`.  

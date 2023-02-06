@@ -8,6 +8,7 @@ helpviewer_keywords:
 ms.assetid: 70fa11cd-5fa7-4872-a1cc-04d80f1132be
 ---
 # How to: Use Flow Content Elements
+
 The following example demonstrates declarative usage for various flow content elements and associated attributes.  Elements and attributes demonstrated include:  
   
 - <xref:System.Windows.Documents.Bold> element  
@@ -37,4 +38,5 @@ The following example demonstrates declarative usage for various flow content el
 - <xref:System.Windows.Documents.Underline> element  
   
 ## Example  
+
  [!code-xaml[FlowDocInlineSnippets#_InlineElementsXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/FlowDocInlineSnippets/CS/document.xaml#_inlineelementsxaml)]

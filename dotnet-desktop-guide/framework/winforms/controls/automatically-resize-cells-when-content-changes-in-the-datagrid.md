@@ -13,6 +13,7 @@ helpviewer_keywords:
 ms.assetid: 1d68934d-a04c-4b12-9e66-c856c6828131
 ---
 # How to: Automatically Resize Cells When Content Changes in the Windows Forms DataGridView Control
+
 You can configure the <xref:System.Windows.Forms.DataGridView> control to resize its rows, columns, and headers automatically whenever content changes, so that cells are always large enough to display their values without clipping.  
   
  You have many options to restrict which cells are used to determine the new sizes. For example, you can configure the control to automatically resize the width of its columns based only on the values in rows that are currently displayed. With this, you can avoid inefficiency when working with large numbers of rows, although in this case, you might want to use sizing methods such as <xref:System.Windows.Forms.DataGridView.AutoResizeColumns%2A> to adjust sizes at times of your choosing.  
@@ -22,11 +23,13 @@ You can configure the <xref:System.Windows.Forms.DataGridView> control to resize
  The following code example demonstrates the options available for automatic resizing.  
   
 ## Example  
+
  [!code-cpp[System.Windows.Forms.DataGridView.AutoSizing#0](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.AutoSizing/CPP/autosizing.cpp#0)]
  [!code-csharp[System.Windows.Forms.DataGridView.AutoSizing#0](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.AutoSizing/CS/autosizing.cs#0)]
  [!code-vb[System.Windows.Forms.DataGridView.AutoSizing#0](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.AutoSizing/VB/autosizing.vb#0)]  
   
 ## Compiling the Code  
+
  This example requires:  
   
 - References to the System, System.Drawing, and System.Windows.Forms assemblies.  

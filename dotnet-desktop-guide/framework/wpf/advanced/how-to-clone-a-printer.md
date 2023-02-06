@@ -14,9 +14,11 @@ ms.assetid: dd6997c9-fe04-40f8-88a6-92e3ac0889eb
 description: Learn how to instantly install any number of additional print queues that are cloned from an existing print queue.
 ---
 # How to: Clone a Printer
+
 Most businesses will, at some point, buy multiple printers of the same model. Typically, these are all installed with virtually identical configuration settings. Installing each printer can be time-consuming and error prone. The <xref:System.Printing.IndexedProperties?displayProperty=nameWithType> namespace and the <xref:System.Printing.PrintServer.InstallPrintQueue%2A> class that are exposed with Microsoft .NET Framework makes it possible to instantly install any number of additional print queues that are cloned from an existing print queue.  
   
 ## Example  
+
  In the example below, a second print queue is cloned from an existing print queue. The second differs from the first only in its name, location, port, and shared status. The major steps for doing this are as follows.  
   
 1. Create a <xref:System.Printing.PrintQueue> object for the existing printer that is going to be cloned.  

@@ -11,6 +11,7 @@ helpviewer_keywords:
 ms.assetid: 99648964-63b2-438c-980e-d24103ad602b
 ---
 # How to: Size a Windows Forms Label Control to Fit Its Contents
+
 The Windows Forms <xref:System.Windows.Forms.Label> control can be single-line or multi-line, and it can be either fixed in size or can automatically resize itself to accommodate its caption. The <xref:System.Windows.Forms.Label.AutoSize%2A> property helps you size the controls to fit larger or smaller captions, which is particularly useful if the caption will change at run time.  
   
 ### To make a label control resize dynamically to fit its contents  

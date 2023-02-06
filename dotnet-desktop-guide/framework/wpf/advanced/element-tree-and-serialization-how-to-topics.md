@@ -10,13 +10,16 @@ helpviewer_keywords:
 ms.assetid: 2d8ef436-d559-4c3e-86de-5a160d5f87d2
 ---
 # Element Tree and Serialization How-to Topics
+
 The topics in this section describe how to use the WPF element tree.  
   
 ## In This Section  
+
  [Find an Element by Its Name](how-to-find-an-element-by-its-name.md)  
  [Override the Logical Tree](how-to-override-the-logical-tree.md)  
   
 ## Reference  
+
  <xref:System.Windows.LogicalTreeHelper>  
   
  <xref:System.Windows.Media.VisualTreeHelper>  

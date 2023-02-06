@@ -14,6 +14,7 @@ helpviewer_keywords:
 ms.assetid: de1b82db-4905-449a-9f59-af271a6b6673
 ---
 # How to: Add and Remove Nodes with the Windows Forms TreeView Control
+
 The Windows Forms <xref:System.Windows.Forms.TreeView> control stores the top-level nodes in its <xref:System.Windows.Forms.TreeView.Nodes%2A> collection. Each <xref:System.Windows.Forms.TreeNode> also has its own <xref:System.Windows.Forms.TreeNode.Nodes%2A> collection to store its child nodes. Both collection properties are of type <xref:System.Windows.Forms.TreeNodeCollection>, which provides standard collection members that enable you to add, remove, and rearrange the nodes at a single level of the node hierarchy.  
   
 ### To add nodes programmatically  

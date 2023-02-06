@@ -12,6 +12,7 @@ helpviewer_keywords:
 ms.assetid: 9b7dc7b6-5ce6-4566-9949-902f74f17a81
 ---
 # How to: Customize Cells and Columns in the Windows Forms DataGridView Control by Extending Their Behavior and Appearance
+
 The <xref:System.Windows.Forms.DataGridView> control provides a number of ways to customize its appearance and behavior using properties, events, and companion classes. Occasionally, you may have requirements for your cells that go beyond what these features can provide. You can create your own custom <xref:System.Windows.Forms.DataGridViewCell> class to provide extended functionality.  
   
  You create a custom <xref:System.Windows.Forms.DataGridViewCell> class by deriving from the <xref:System.Windows.Forms.DataGridViewCell> base class or one of its derived classes. Although you can display any type of cell in any type of column, you will typically also create a custom <xref:System.Windows.Forms.DataGridViewColumn> class specialized for displaying your cell type. Column classes derive from <xref:System.Windows.Forms.DataGridViewColumn> or one of its derived types.  
@@ -53,12 +54,14 @@ The <xref:System.Windows.Forms.DataGridView> control provides a number of ways t
      [!code-vb[System.Windows.Forms.DataGridViewRolloverCell#300](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewRolloverCell/VB/rollovercell.vb#300)]  
   
 ## Example  
+
  The complete code example includes a small test form that demonstrates the behavior of the custom cell type.  
   
  [!code-csharp[System.Windows.Forms.DataGridViewRolloverCell#000](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewRolloverCell/CS/rollovercell.cs#000)]
  [!code-vb[System.Windows.Forms.DataGridViewRolloverCell#000](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewRolloverCell/VB/rollovercell.vb#000)]  
   
 ## Compiling the Code  
+
  This example requires:  
   
 - References to the System, System.Windows.Forms, and System.Drawing assemblies.  

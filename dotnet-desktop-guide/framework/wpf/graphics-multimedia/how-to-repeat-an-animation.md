@@ -10,9 +10,11 @@ helpviewer_keywords:
 ms.assetid: e6f3b068-eeeb-47fd-8d40-8848c31f1e1e
 ---
 # How to: Repeat an Animation
+
 This example shows how to use the <xref:System.Windows.Media.Animation.Timeline.RepeatBehavior%2A> property of a <xref:System.Windows.Media.Animation.Timeline> in order to control the repeat behavior of an animation.  
   
 ## Example  
+
  The <xref:System.Windows.Media.Animation.Timeline.RepeatBehavior%2A> property of a <xref:System.Windows.Media.Animation.Timeline> controls how many times an animation repeats its simple duration. By using <xref:System.Windows.Media.Animation.Timeline.RepeatBehavior%2A>, you can specify that a <xref:System.Windows.Media.Animation.Timeline> repeats for a certain number of times (an iteration count) or for a specified time period. In either case, the animation goes through as many beginning-to-end runs that it needs in order to fill the requested count or duration.  
   
  By default, timelines have a repeat count of 1.0, which means they play one time and do not repeat. However, if you set the <xref:System.Windows.Media.Animation.Timeline.RepeatBehavior%2A> property of a <xref:System.Windows.Media.Animation.Timeline> to <xref:System.Windows.Media.Animation.RepeatBehavior.Forever%2A>, the timeline repeats indefinitely.  

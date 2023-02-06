@@ -10,15 +10,18 @@ helpviewer_keywords:
 ms.assetid: d32501af-0bac-4b80-8a20-61a6996753fe
 ---
 # Flow Content
+
 Flow content elements provide the building blocks for creating flow content suitable for hosting in a <xref:System.Windows.Documents.FlowDocument>.  
   
 ## In This Section  
+
  [Flow Document Overview](flow-document-overview.md)  
  [TextElement Content Model Overview](textelement-content-model-overview.md)  
  [Table Overview](table-overview.md)  
  [How-to Topics](flow-content-elements-how-to-topics.md)  
   
 ## Reference  
+
  <xref:System.Windows.Documents.FlowDocument>  
   <xref:System.Windows.Documents.Block>  
   <xref:System.Windows.Documents.List>  
@@ -34,4 +37,5 @@ Flow content elements provide the building blocks for creating flow content suit
   <xref:System.Windows.Documents.ListItem>  
   
 ## Related Sections  
+
  [Documents in WPF](documents-in-wpf.md)

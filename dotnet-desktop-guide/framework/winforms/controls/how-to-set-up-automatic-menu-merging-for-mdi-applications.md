@@ -8,6 +8,7 @@ helpviewer_keywords:
 ms.assetid: 55e32cad-1141-4a56-aa33-d9543ca3d393
 ---
 # How to: Set Up Automatic Menu Merging for MDI Applications
+
 The following procedure gives the basic steps for setting up automatic merging in a multiple-document interface (MDI) application with <xref:System.Windows.Forms.MenuStrip>.  
   
 ### To set up automatic menu merging  

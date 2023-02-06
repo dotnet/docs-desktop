@@ -14,6 +14,7 @@ helpviewer_keywords:
 ms.assetid: 3d3350b7-1ebd-4e05-a738-48ca1160a19d
 ---
 # How to: Play a Sound from a Windows Form
+
 This example plays a sound at a given path at run time.
 
 ## Example
@@ -33,6 +34,7 @@ private void playSimpleSound()
 ```
 
 ## Compiling the Code
+
  This example requires:
 
 - That you replace the file name `"c:\Windows\Media\chimes.wav"` with a valid file name.
@@ -40,6 +42,7 @@ private void playSimpleSound()
 - (C#) A reference to the <xref:System.Media?displayProperty=nameWithType> namespace.
 
 ## Robust Programming
+
  File operations should be enclosed within appropriate structured exception handling blocks.
 
  The following conditions may cause an exception:
@@ -57,6 +60,7 @@ private void playSimpleSound()
 - The path is only a colon, ":" (<xref:System.NotSupportedException> class).
 
 ## .NET Framework Security
+
  Do not make decisions about the contents of the file based on the name of the file. For example, the file `Form1.vb` may not be a Visual Basic source file. Verify all inputs before using the data in your application.
 
 ## See also

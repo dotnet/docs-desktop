@@ -13,14 +13,19 @@ helpviewer_keywords:
 ms.assetid: 8b9bfc09-12fd-4cd5-b445-99949f27bc39
 ---
 # Brush Transformation Overview
+
 The Brush class provides two transformation properties: <xref:System.Windows.Media.Brush.Transform%2A> and <xref:System.Windows.Media.Brush.RelativeTransform%2A>. The properties enable you to rotate, scale, skew, and translate a brush's contents. This topic describes the differences between these two properties and provides examples of their usage.  
   
 <a name="prerequisites"></a>
+
 ## Prerequisites  
+
  To understand this topic, you should understand the features of the brush that you are transforming. For <xref:System.Windows.Media.LinearGradientBrush> and <xref:System.Windows.Media.RadialGradientBrush>, see the [Painting with Solid Colors and Gradients Overview](painting-with-solid-colors-and-gradients-overview.md). For <xref:System.Windows.Media.ImageBrush>, <xref:System.Windows.Media.DrawingBrush>, or <xref:System.Windows.Media.VisualBrush>, see  [Painting with Images, Drawings, and Visuals](painting-with-images-drawings-and-visuals.md). You should also be familiar with the 2D transforms described in the  [Transforms Overview](transforms-overview.md).  
   
 <a name="transformversusrelativetransform"></a>
+
 ## Differences between the Transform and RelativeTransform Properties  
+
  When you apply a transform to a brush's <xref:System.Windows.Media.Brush.Transform%2A> property, you need to know the size of the painted area if you want to transform the brush contents about its center. Suppose the painted area is 200 device independent pixels wide and 150 tall.  If you used a <xref:System.Windows.Media.RotateTransform> to rotate the brush's output 45 degrees about its center, you'd give the <xref:System.Windows.Media.RotateTransform> a <xref:System.Windows.Media.RotateTransform.CenterX%2A> of 100 and a <xref:System.Windows.Media.RotateTransform.CenterY%2A> of 75.  
   
  When you apply a transform to a brush's <xref:System.Windows.Media.Brush.RelativeTransform%2A> property, that transform is applied to the brush before its output is mapped to the painted area. The following list describes the order in which a brush’s contents are processed and transformed.  
@@ -42,7 +47,9 @@ The Brush class provides two transformation properties: <xref:System.Windows.Med
  ![RelativeTransform and Transform properties](./media/graphicsmm-brushrelativetransform-transform-small.png "graphicsmm_brushrelativetransform_transform_small")  
   
 <a name="relativetransformandtilebrush"></a>
+
 ## Using RelativeTransform with a TileBrush  
+
  Because tile brushes are more complex than other brushes, applying a <xref:System.Windows.Media.Brush.RelativeTransform%2A> to one might produce unexpected results. For example, take the following image.  
   
  ![The source image](./media/graphicsmm-reltransform-1-original-image.jpg "graphicsmm_reltransform_1_original_image")  
@@ -74,7 +81,9 @@ The Brush class provides two transformation properties: <xref:System.Windows.Med
      ![Project the transformed brush onto the output area](./media/graphicsmm-reltransform-5-transform-to-output.png "graphicsmm_reltransform_5_transform_to_output")  
   
 <a name="rotateexample"></a>
+
 ## Example: Rotate an ImageBrush 45 Degrees  
+
  The following example applies a <xref:System.Windows.Media.RotateTransform> to the <xref:System.Windows.Media.Brush.RelativeTransform%2A> property of an <xref:System.Windows.Media.ImageBrush>. The <xref:System.Windows.Media.RotateTransform> object's <xref:System.Windows.Media.RotateTransform.CenterX%2A> and <xref:System.Windows.Media.RotateTransform.CenterY%2A> properties are both set to 0.5, the relative coordinates of the content's center point. As a result, the brush's contents are rotated about its center.  
   
  [!code-csharp[BrushesIntroduction_snip#ImageBrushRelativeTransformExample](~/samples/snippets/csharp/VS_Snippets_Wpf/BrushesIntroduction_snip/CSharp/BrushTransformExample.cs#imagebrushrelativetransformexample)]

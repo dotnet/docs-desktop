@@ -12,9 +12,11 @@ helpviewer_keywords:
 ms.assetid: bfc7160a-45f2-4e17-9961-df414dfb13c5
 ---
 # How to: Manipulate Columns and Rows by Using ColumnDefinitionsCollections and RowDefinitionsCollections
+
 This example shows how to use the methods in the <xref:System.Windows.Controls.ColumnDefinitionCollection> and <xref:System.Windows.Controls.RowDefinitionCollection> classes to perform actions like adding, clearing, or counting the contents of rows or columns. For example, you can <xref:System.Windows.Controls.ColumnDefinitionCollection.Add%2A>, <xref:System.Windows.Controls.ColumnDefinitionCollection.Clear%2A>, or <xref:System.Windows.Controls.ColumnDefinitionCollection.Count%2A> the items that are included in a <xref:System.Windows.Controls.ColumnDefinition> or <xref:System.Windows.Controls.RowDefinition>.  
   
 ## Example  
+
  The following example creates a <xref:System.Windows.Controls.Grid> element with a <xref:System.Windows.FrameworkElement.Name%2A> of `grid1`. The <xref:System.Windows.Controls.Grid> contains a <xref:System.Windows.Controls.StackPanel> that holds <xref:System.Windows.Controls.Button> elements, each controlled by a different collection method. When you click a <xref:System.Windows.Controls.Button>, it activates a method call in the code-behind file.  
   
 :::code language="xaml" source="snippets/manipulate-columns-and-rows-by-using-columndefinitionscollections/csharp/Window1.xaml" id="Snippet1":::

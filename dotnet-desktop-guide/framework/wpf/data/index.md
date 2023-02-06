@@ -11,13 +11,16 @@ helpviewer_keywords:
 ms.assetid: dea454e2-abd8-4c53-ba37-d3ed53187d64
 ---
 # Data
+
 Windows Presentation Foundation (WPF) data binding provides a simple and consistent way for applications to present and interact with data. Elements can be bound to data from a variety of data sources in the form of common language runtime (CLR) objects and XML. Windows Presentation Foundation (WPF) also provides a mechanism for the transfer of data through drag-and-drop operations.  
   
 ## In This Section  
+
  [Data Binding](data-binding-overview.md)  
  [Drag and Drop](../advanced/drag-and-drop.md)  
   
 ## Reference  
+
  <xref:System.Windows.Data>  
   
  <xref:System.Windows.Data.Binding>  
@@ -27,6 +30,7 @@ Windows Presentation Foundation (WPF) data binding provides a simple and consist
  <xref:System.Windows.Controls.DataTemplateSelector>  
   
 ## Related Sections  
+
  [Controls](../controls/index.md)  
   
  [Styling and Templating](../controls/styles-templates-overview.md)  

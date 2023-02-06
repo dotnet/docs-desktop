@@ -10,9 +10,11 @@ helpviewer_keywords:
 ms.assetid: 006aa461-fe37-4cd8-860a-d38d76e8b9f7
 ---
 # TextBox How-to Topics
+
 This section provides examples that demonstrate how to accomplish common tasks using the <xref:System.Windows.Controls.TextBox> control.  
   
 ## In This Section  
+
  [Create a Multiline TextBox Control](how-to-create-a-multiline-textbox-control.md)  
  [Detect When Text in a TextBox Has Changed](how-to-detect-when-text-in-a-textbox-has-changed.md)  
  [Enable Tab Characters in a TextBox Control](how-to-enable-tab-characters-in-a-textbox-control.md)  
@@ -28,6 +30,7 @@ This section provides examples that demonstrate how to accomplish common tasks u
  [Add a Watermark to a TextBox](how-to-add-a-watermark-to-a-textbox.md)  
   
 ## Reference  
+
  <xref:System.Windows.Controls.TextBox>  
   
  <xref:System.Windows.Controls.RichTextBox>  

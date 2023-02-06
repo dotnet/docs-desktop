@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: ba6ae056-d6a9-4c24-90f8-467ab0bc0b1a
 ---
 # How to: Style Controls on a ToolBar
+
 The <xref:System.Windows.Controls.ToolBar> defines <xref:System.Windows.ResourceKey> objects to specify the style of controls within the <xref:System.Windows.Controls.ToolBar>.  To style a control in a <xref:System.Windows.Controls.ToolBar>, set the `x:key` attribute of the style to a <xref:System.Windows.ResourceKey> defined in <xref:System.Windows.Controls.ToolBar>.  
   
  The <xref:System.Windows.Controls.ToolBar> defines the following <xref:System.Windows.ResourceKey> objects:  
@@ -30,6 +31,7 @@ The <xref:System.Windows.Controls.ToolBar> defines <xref:System.Windows.Resource
 - <xref:System.Windows.Controls.ToolBar.ToggleButtonStyleKey%2A>  
   
 ## Example  
+
  The following example defines styles for the controls within a <xref:System.Windows.Controls.ToolBar>.  
   
  [!code-xaml[ToolBar_snip#ToolBarAllStyles](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolBar_snip/CS/pane1.xaml#toolbarallstyles)]  

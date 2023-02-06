@@ -14,9 +14,11 @@ ms.assetid: d1a9c7f5-fa53-480a-a75c-158f8649ea2f
 description: Learn how the TextBox control is used for editable text and can display multiple lines, wrap text to the size of the control and add basic formatting.
 ---
 # TextBox Control Overview (Windows Forms)
+
 Windows Forms text boxes are used to get input from the user or to display text. The <xref:System.Windows.Forms.TextBox> control is generally used for editable text, although it can also be made read-only. Text boxes can display multiple lines, wrap text to the size of the control, and add basic formatting. The <xref:System.Windows.Forms.TextBox> control provides a single format style for text displayed or entered into the control. To display multiple types of formatted text, use the <xref:System.Windows.Forms.RichTextBox> control. For more information, see [RichTextBox Control Overview](richtextbox-control-overview-windows-forms.md).  
   
 ## Working with the TextBox Control  
+
  The text displayed by the control is contained in the <xref:System.Windows.Forms.TextBox.Text%2A> property. By default, you can enter up to 2048 characters in a text box. If you set the <xref:System.Windows.Forms.TextBox.Multiline%2A> property to `true`, you can enter up to 32 KB of text. The <xref:System.Windows.Forms.TextBox.Text%2A> property can be set at design time with the Properties Window, at run time in code, or by user input at run time. The current contents of a text box can be retrieved at run time by reading the <xref:System.Windows.Forms.TextBox.Text%2A> property.  
   
  The following code example sets text in the control at run time. The `InitializeMyControl` procedure will not execute automatically; it must be called.  

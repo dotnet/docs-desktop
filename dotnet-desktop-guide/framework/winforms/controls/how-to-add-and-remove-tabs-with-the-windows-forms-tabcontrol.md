@@ -15,6 +15,7 @@ helpviewer_keywords:
 ms.assetid: 66d4dfca-41e8-44e3-9c80-fb7ac4cb1619
 ---
 # How to: Add and Remove Tabs with the Windows Forms TabControl
+
 By default, a <xref:System.Windows.Forms.TabControl> control contains two <xref:System.Windows.Forms.TabPage> controls. You can access these tabs through the <xref:System.Windows.Forms.TabControl.TabPages%2A> property.  
   
 ### To add a tab programmatically  

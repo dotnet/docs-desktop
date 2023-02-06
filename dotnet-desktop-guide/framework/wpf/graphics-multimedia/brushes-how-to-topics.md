@@ -10,9 +10,11 @@ helpviewer_keywords:
 ms.assetid: 43e7f798-9558-4498-b5b6-4a4c6baf956b
 ---
 # Brushes How-to Topics
+
 The following topics demonstrate how to use Windows Presentation Foundation (WPF) brushes in order to paint content to the screen.  
   
 ## In This Section  
+
  [Animate the Color or Opacity of a SolidColorBrush](how-to-animate-the-color-or-opacity-of-a-solidcolorbrush.md)  
  [Animate the Position or Color of a Gradient Stop](how-to-animate-the-position-or-color-of-a-gradient-stop.md)  
  [Create a Reflection](how-to-create-a-reflection.md)  
@@ -33,6 +35,7 @@ The following topics demonstrate how to use Windows Presentation Foundation (WPF
  [Use System Colors in a Gradient](how-to-use-system-colors-in-a-gradient.md)  
   
 ## Reference  
+
  <xref:System.Windows.Media.Brush>  
   
  <xref:System.Windows.Media.SolidColorBrush>  
@@ -46,6 +49,7 @@ The following topics demonstrate how to use Windows Presentation Foundation (WPF
  <xref:System.Windows.Media.VisualBrush>  
   
 ## Related Sections  
+
  [Graphics and Multimedia](index.md)  
   
  [WPF Graphics Rendering Overview](wpf-graphics-rendering-overview.md)

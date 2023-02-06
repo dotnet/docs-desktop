@@ -12,9 +12,11 @@ helpviewer_keywords:
 ms.assetid: b601d66d-d572-4f11-9d2e-92f0dc8893f3
 ---
 # Global and Local Transformations
+
 A global transformation is a transformation that applies to every item drawn by a given <xref:System.Drawing.Graphics> object. In contrast, a local transformation is a transformation that applies to a specific item to be drawn.  
   
 ## Global Transformations  
+
  To create a global transformation, construct a <xref:System.Drawing.Graphics> object, and then manipulate its <xref:System.Drawing.Graphics.Transform%2A> property. The <xref:System.Drawing.Graphics.Transform%2A> property is a <xref:System.Drawing.Drawing2D.Matrix> object, so it can hold any sequence of affine transformations. The transformation stored in the <xref:System.Drawing.Graphics.Transform%2A> property is called the world transformation. The <xref:System.Drawing.Graphics> class provides several methods for building up a composite world transformation: <xref:System.Drawing.Graphics.MultiplyTransform%2A>, <xref:System.Drawing.Graphics.RotateTransform%2A>, <xref:System.Drawing.Graphics.ScaleTransform%2A>, and <xref:System.Drawing.Graphics.TranslateTransform%2A>. The following example draws an ellipse twice: once before creating a world transformation and once after. The transformation first scales by a factor of 0.5 in the y direction, then translates 50 units in the x direction, and then rotates 30 degrees.  
   
  [!code-csharp[System.Drawing.CoordinateSystems#21](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.CoordinateSystems/CS/Class1.cs#21)]
@@ -28,6 +30,7 @@ A global transformation is a transformation that applies to every item drawn by 
 > In the preceding example, the ellipse is rotated about the origin of the coordinate system, which is at the upper-left corner of the client area. This produces a different result than rotating the ellipse about its own center.  
   
 ## Local Transformations  
+
  A local transformation applies to a specific item to be drawn. For example, a <xref:System.Drawing.Drawing2D.GraphicsPath> object has a <xref:System.Drawing.Drawing2D.GraphicsPath.Transform%2A> method that allows you to transform the data points of that path. The following example draws a rectangle with no transformation and a path with a rotation transformation. (Assume that there is no world transformation.)  
   
  [!code-csharp[System.Drawing.CoordinateSystems#22](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.CoordinateSystems/CS/Class1.cs#22)]

@@ -11,9 +11,11 @@ helpviewer_keywords:
 ms.assetid: 597e3280-0867-4359-a97b-5b2f4149e350
 ---
 # Timing Events Overview
+
 This topic describes how to use the five timing events available on <xref:System.Windows.Media.Animation.Timeline> and <xref:System.Windows.Media.Animation.Clock> objects.  
   
 ## Prerequisites  
+
  To understand this topic, you should understand how to create and use animations. To get started with animation, see the [Animation Overview](animation-overview.md).  
   
  There are multiple ways to animate properties in WPF:  
@@ -27,9 +29,11 @@ This topic describes how to use the five timing events available on <xref:System
  Because you can use them in markup and code, the examples in this overview use <xref:System.Windows.Media.Animation.Storyboard> objects. However, the concepts described can be applied to the other methods of animating properties.  
   
 ### What is a clock?  
+
  A timeline, by itself, doesn't actually do anything other than describe a segment of time. It's the timeline's <xref:System.Windows.Media.Animation.Clock> object that does the real work: it maintains timing-related run-time state for the timeline. In most cases, such as when using storyboards, a clock is created automatically for your timeline. You can also create a <xref:System.Windows.Media.Animation.Clock> explicitly by using the <xref:System.Windows.Media.Animation.Timeline.CreateClock%2A> method. For more information about <xref:System.Windows.Media.Animation.Clock> objects, see the [Animation and Timing System Overview](animation-and-timing-system-overview.md).  
   
 ## Why Use Events?  
+
  With the exception of one (seek aligned to last tick), all interactive timing operations are asynchronous. There is no way for you to know exactly when they will execute. That can be a problem when you have other code that's dependent upon your timing operation. Suppose that you wanted to stop a timeline that animated a rectangle. After the timeline stops, you change the color of the rectangle.  
   
  [!code-csharp[events_procedural#NeedForEventsFragment](~/samples/snippets/csharp/VS_Snippets_Wpf/events_procedural/CSharp/EventExample.cs#needforeventsfragment)]
@@ -47,6 +51,7 @@ This topic describes how to use the five timing events available on <xref:System
  For a more complete example, see [Receive Notification When a Clock's State Changes](how-to-receive-notification-when-clock-state-changes.md).  
   
 ## Public Events  
+
  The <xref:System.Windows.Media.Animation.Timeline> and <xref:System.Windows.Media.Animation.Clock> classes both provide five timing events. The following table lists these events and the conditions that trigger them.  
   
 |Event|Triggering interactive operation|Other triggers|  
@@ -58,15 +63,19 @@ This topic describes how to use the five timing events available on <xref:System
 |**RemoveRequested**|Remove||  
   
 ## Ticking and Event Consolidation  
+
  When you animate objects in WPF, it’s the timing engine that manages your animations. The timing engine tracks the progression of time and computes the state of each animation. It makes many such evaluation passes in a second. These evaluation passes are known as "ticks."  
   
  While ticks occur frequently, it's possible for a lot of things to happen between ticks. For example, a timeline might be stopped, started, and stopped again, in which case its current state will have changed three times. In theory, the event could be raised multiple times in a single tick; however, the timing engine consolidates events, so that each event can be raised at most once per tick.  
   
 ## Registering for Events  
+
  There are two ways to register for timing events: you can register with the timeline or with the clock created from the timeline. Registering for an event directly with a clock is fairly straightforward, although it can only be done from code. You can register for events with a timeline from markup or code. The next section describes how to register for clock events with a timeline.  
   
 <a name="registeringforclockeventswithatimeline"></a>
+
 ## Registering for Clock Events with a Timeline  
+
  Although a timeline's <xref:System.Windows.Media.Animation.Timeline.Completed>, <xref:System.Windows.Media.Animation.Timeline.CurrentGlobalSpeedInvalidated>, <xref:System.Windows.Media.Animation.Timeline.CurrentStateInvalidated>, <xref:System.Windows.Media.Animation.Timeline.CurrentTimeInvalidated>, and <xref:System.Windows.Media.Animation.Timeline.RemoveRequested> events appear to be associated with the timeline, registering for these events actually associates an event handler with the <xref:System.Windows.Media.Animation.Clock> created for the timeline.  
   
  When you register for the <xref:System.Windows.Media.Animation.Timeline.Completed> event on a timeline, for example, you're actually telling the system to register for the <xref:System.Windows.Media.Animation.Clock.Completed> event of each clock that is created for the timeline. In code, you must register for this event before the <xref:System.Windows.Media.Animation.Clock> is created for this timeline; otherwise, you won't receive notification. This happens automatically in XAML; the parser automatically registers for the event before the <xref:System.Windows.Media.Animation.Clock> is created.  

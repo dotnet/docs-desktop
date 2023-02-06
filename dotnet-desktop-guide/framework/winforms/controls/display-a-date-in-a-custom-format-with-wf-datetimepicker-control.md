@@ -13,6 +13,7 @@ helpviewer_keywords:
 ms.assetid: 39767691-2d2b-46b6-a663-b7901e581a6e
 ---
 # How to: Display a Date in a Custom Format with the Windows Forms DateTimePicker Control
+
 The Windows Forms <xref:System.Windows.Forms.DateTimePicker> control gives you flexibility in formatting the display of dates and times in the control. The <xref:System.Windows.Forms.DateTimePicker.Format%2A> property allows you to select from predefined formats, listed in the <xref:System.Windows.Forms.DateTimePickerFormat>. If none of these is adequate for your purposes, you can create your own format style using format characters listed in <xref:System.Windows.Forms.DateTimePicker.CustomFormat%2A>.  
   
 ### To display a custom format  

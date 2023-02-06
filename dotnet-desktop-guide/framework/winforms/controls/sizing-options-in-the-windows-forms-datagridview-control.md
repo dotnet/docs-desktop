@@ -12,6 +12,7 @@ helpviewer_keywords:
 ms.assetid: a5620a9c-0d06-41e3-8934-c25ddb16c9e6
 ---
 # Sizing Options in the Windows Forms DataGridView Control
+
 <xref:System.Windows.Forms.DataGridView> rows, columns, and headers can change size as a result of many different occurrences. The following table shows these occurrences.  
   
 |Occurrence|Description|  
@@ -39,6 +40,7 @@ ms.assetid: a5620a9c-0d06-41e3-8934-c25ddb16c9e6
 |Adjust row heights for multiline cell contents.|Ensure that column widths are appropriate for displaying paragraphs of text and use automatic or programmatic content-based row sizing to adjust the heights. Also ensure that cells with multiline content are displayed using a <xref:System.Windows.Forms.DataGridViewCellStyle.WrapMode%2A> cell style value of <xref:System.Windows.Forms.DataGridViewTriState.True>.<br /><br /> Typically, you will use an automatic column sizing mode to maintain column widths or set them to specific widths before row heights are adjusted.|  
   
 ## Resizing with the Mouse  
+
  By default, users can resize rows, columns, and headers that do not use an automatic sizing mode based on cell values. To prevent users from resizing with other modes, such as column fill mode, set one or more of the following <xref:System.Windows.Forms.DataGridView> properties:  
   
 - <xref:System.Windows.Forms.DataGridView.AllowUserToResizeColumns%2A>  
@@ -54,6 +56,7 @@ ms.assetid: a5620a9c-0d06-41e3-8934-c25ddb16c9e6
  Because <xref:System.Windows.Forms.DataGridViewTriState.NotSet> restores the value inheritance, the <xref:System.Windows.Forms.DataGridViewBand.Resizable%2A> property will never return a <xref:System.Windows.Forms.DataGridViewTriState.NotSet> value unless the row or column has not been added to a <xref:System.Windows.Forms.DataGridView> control. If you need to determine whether the <xref:System.Windows.Forms.DataGridViewBand.Resizable%2A> property value of a row or column is inherited, examine its <xref:System.Windows.Forms.DataGridViewElement.State%2A> property. If the <xref:System.Windows.Forms.DataGridViewElement.State%2A> value includes the <xref:System.Windows.Forms.DataGridViewElementStates.ResizableSet> flag, the <xref:System.Windows.Forms.DataGridViewBand.Resizable%2A> property value is not inherited.  
   
 ## Automatic Sizing  
+
  There are two kinds of automatic sizing in the <xref:System.Windows.Forms.DataGridView> control: column fill mode and content-based automatic sizing.  
   
  Column fill mode causes the visible columns in the control to fill the width of the control's display area. For more information about this mode, see [Column Fill Mode in the Windows Forms DataGridView Control](column-fill-mode-in-the-windows-forms-datagridview-control.md).  
@@ -86,6 +89,7 @@ ms.assetid: a5620a9c-0d06-41e3-8934-c25ddb16c9e6
  Programmatic content-based resizing affects rows, columns, and headers regardless of their visibility.  
   
 ## Programmatic Resizing  
+
  When automatic sizing is disabled, you can programmatically set the exact width or height of rows, columns, or headers through the following properties:  
   
 - <xref:System.Windows.Forms.DataGridView.RowHeadersWidth%2A?displayProperty=nameWithType>  
@@ -117,9 +121,11 @@ ms.assetid: a5620a9c-0d06-41e3-8934-c25ddb16c9e6
  You will typically call the programmatic resizing methods at specific times. For example, you might programmatically resize all columns immediately after loading data, or you might programmatically resize a specific row after a particular cell value has been modified.  
   
 ## Customizing Content-based Sizing Behavior  
+
  You can customize sizing behaviors when working with derived <xref:System.Windows.Forms.DataGridView> cell, row, and column types by overriding the <xref:System.Windows.Forms.DataGridViewCell.GetPreferredSize%2A?displayProperty=nameWithType>, <xref:System.Windows.Forms.DataGridViewRow.GetPreferredHeight%2A?displayProperty=nameWithType>, or <xref:System.Windows.Forms.DataGridViewColumn.GetPreferredWidth%2A?displayProperty=nameWithType> methods or by calling protected resizing method overloads in a derived <xref:System.Windows.Forms.DataGridView> control. The protected resizing method overloads are designed to work in pairs to achieve an ideal cell height-to-width ratio, avoiding overly wide or tall cells. For example, if you call the `AutoResizeRows(DataGridViewAutoSizeRowsMode,Boolean)` overload of the <xref:System.Windows.Forms.DataGridView.AutoResizeRows%2A> method and pass in a value of `false` for the <xref:System.Boolean> parameter, the overload will calculate the ideal heights and widths for cells in the row, but it will adjust the row heights only. You must then call the <xref:System.Windows.Forms.DataGridView.AutoResizeColumns%2A> method to adjust the column widths to the calculated ideal.  
   
 ## Content-based Sizing Options  
+
  The enumerations used by sizing properties and methods have similar values for content-based sizing. With these values, you can limit which cells are used to calculate the preferred sizes. For all sizing enumerations, values with names that refer to displayed cells limit their calculations to cells in displayed rows. Excluding rows is useful to avoid a performance penalty when you are working with a large quantity of rows. You can also restrict calculations to cell values in header or nonheader cells.  
   
 ## See also

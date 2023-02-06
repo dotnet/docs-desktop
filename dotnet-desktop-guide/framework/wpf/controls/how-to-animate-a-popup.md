@@ -8,9 +8,11 @@ helpviewer_keywords:
 ms.assetid: acaa2a0a-6137-4efd-9cd1-75ece222e390
 ---
 # How to: Animate a Popup
+
 This example shows two ways to animate a <xref:System.Windows.Controls.Primitives.Popup> control.  
   
 ## Example  
+
  The following example sets the <xref:System.Windows.Controls.Primitives.PopupAnimation> property to a value of <xref:System.Windows.Controls.Primitives.PopupAnimation.Slide>, which causes the <xref:System.Windows.Controls.Primitives.Popup> to "slide-in" when it appears.  
   
  In order to rotate the <xref:System.Windows.Controls.Primitives.Popup>, this example assigns a <xref:System.Windows.Media.RotateTransform> to the <xref:System.Windows.UIElement.RenderTransform%2A> property on the <xref:System.Windows.Controls.Canvas>, which is the child element of the <xref:System.Windows.Controls.Primitives.Popup>.  

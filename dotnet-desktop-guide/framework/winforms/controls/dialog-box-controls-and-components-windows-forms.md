@@ -10,9 +10,11 @@ helpviewer_keywords:
 ms.assetid: 6e5f5e9e-58d6-45f3-9df0-48b7bb6bfd5c
 ---
 # Dialog-Box Controls and Components (Windows Forms)
+
 The following Windows Forms controls and components present standard dialog boxes. Follow the links for more information about the functions available in each dialog box.  
   
 ## Reference  
+
  <xref:System.Windows.Forms.ColorDialog>  
  Provides reference information about the <xref:System.Windows.Forms.ColorDialog> class and its members.  
   
@@ -35,6 +37,7 @@ The following Windows Forms controls and components present standard dialog boxe
  Provides reference information about the <xref:System.Windows.Forms.SaveFileDialog> class and its members.  
   
 ## Related Sections  
+
  [Dialog Boxes in Windows Forms](../dialog-boxes-in-windows-forms.md)  
  Describes how to create a dialog box for a Windows Form.  
   

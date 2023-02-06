@@ -10,9 +10,11 @@ helpviewer_keywords:
 ms.assetid: 9a7ccd30-095b-4f34-b284-8fb7e8f95a9b
 ---
 # Input (WPF)
+
 Windows Presentation Foundation (WPF) includes support for several types of input. This input includes text, touch, mouse, commands, focus, touch, drag-and-drop, and digital ink. This section describes topics related to input in WPF.  
   
 ## In This Section  
+
  [Input Overview](input-overview.md)  
  [Commanding Overview](commanding-overview.md)  
  [Focus Overview](focus-overview.md)  
@@ -22,6 +24,7 @@ Windows Presentation Foundation (WPF) includes support for several types of inpu
  [Digital Ink](digital-ink.md)  
   
 ## Reference  
+
  <xref:System.Windows.UIElement>  
   
  <xref:System.Windows.FrameworkElement>  
@@ -37,5 +40,6 @@ Windows Presentation Foundation (WPF) includes support for several types of inpu
  <xref:System.Windows.Input.FocusManager>  
   
 ## Related Sections  
+
  [Controls](../controls/index.md)  
   [Events](events-wpf.md)

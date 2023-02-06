@@ -10,9 +10,11 @@ helpviewer_keywords:
 ms.assetid: 1dac1fbd-8f67-4910-9ccb-2c5462d0d855
 ---
 # DateTimePicker Control (Windows Forms)
+
 The Windows Forms `DateTimePicker` control allows the user to select a single item from a list of dates or times. When used to represent a date, it appears in two parts: a drop-down list with a date represented in text, and a grid that appears when you click on the down-arrow next to the list.  
   
 ## In This Section  
+
  [DateTimePicker Control Overview](datetimepicker-control-overview-windows-forms.md)  
  Introduces the general concepts of the `DateTimePicker` control, which allows users to select a single item from a list of dates or times.  
   
@@ -26,6 +28,7 @@ The Windows Forms `DateTimePicker` control allows the user to select a single it
  Shows steps to for a `DateTimePicker` to display times only.  
   
 ## Reference  
+
  <xref:System.Windows.Forms.DateTimePicker>  
  Describes this class and has links to all its members.  
   
@@ -33,6 +36,7 @@ The Windows Forms `DateTimePicker` control allows the user to select a single it
  Describes this class and has links to all its members.  
   
 ## Related Sections  
+
  [Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)  
  Provides a complete list of Windows Forms controls, with links to information on their use.  
   

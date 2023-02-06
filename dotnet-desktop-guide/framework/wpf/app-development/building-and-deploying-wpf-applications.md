@@ -11,6 +11,7 @@ ms.assetid: 5198df5e-dda0-4ddc-a275-e0a7a4693524
 description: Learn how the build and deployment model provides the capability to build and deploy applications locally and remotely.
 ---
 # Building and Deploying WPF Applications
+
 The build and deployment model provides the capability to build and deploy applications locally and remotely, including the following:  
   
 - MSBuild: the .NET build system located in the Microsoft.Build.Tasks.Windows namespace.  
@@ -20,14 +21,17 @@ The build and deployment model provides the capability to build and deploy appli
 - ClickOnce Deployment: the .NET publishing and deployment system.  
   
 ## In This Section  
+
  [Building a WPF Application](building-a-wpf-application-wpf.md)  
  [Deploying a WPF Application](deploying-a-wpf-application-wpf.md)  
  [How-to Topics](build-and-deploy-how-to-topics.md)  
   
 ## Reference  
+
  MSBuild  
   
 ## Related Sections  
+
  [Application Management Overview](application-management-overview.md)  
   [Windows in WPF](windows-in-wpf-applications.md)  
   [Navigation Overview](navigation-overview.md)  

@@ -12,9 +12,11 @@ ms.assetid: a4808397-c6d5-406a-83e0-0091f0c15ae4
 description: Learn how to call a page function from an Extensible Application Markup Language page and navigate to that page function using a uniform resource identifier.
 ---
 # How to: Call a Page Function
+
 This example shows how to call a page function from a Extensible Application Markup Language (XAML) page.  
   
 ## Example  
+
  You can navigate to a page function using a uniform resource identifier (URI), just as you can when you navigate to a page. This is shown in the following example.  
   
  [!code-csharp[HOWTOPageFunctionSnippets#NavigateToAPageFunctionLikeAPageCODEBEHIND](~/samples/snippets/csharp/VS_Snippets_Wpf/HOWTOPageFunctionSnippets/CSharp/CallingPage.xaml.cs#navigatetoapagefunctionlikeapagecodebehind)]

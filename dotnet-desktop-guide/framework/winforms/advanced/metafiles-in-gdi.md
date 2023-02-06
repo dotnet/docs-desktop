@@ -12,9 +12,11 @@ helpviewer_keywords:
 ms.assetid: 51da872c-c783-440f-8bf6-1e580a966c31
 ---
 # Metafiles in GDI+
+
 GDI+ provides the <xref:System.Drawing.Imaging.Metafile> class so that you can record and display metafiles. A metafile, also called a vector image, is an image that is stored as a sequence of drawing commands and settings. The commands and settings recorded in a <xref:System.Drawing.Imaging.Metafile> object can be stored in memory or saved to a file or stream.  
   
 ## Metafile Formats  
+
  GDI+ can display metafiles that have been stored in the following formats:  
   
 - Windows Metafile (WMF)  

@@ -11,6 +11,7 @@ helpviewer_keywords:
 ms.assetid: f4a314e9-1da2-4367-85fc-1232487efa7a
 ---
 # How to: Animate a Property by Using a Storyboard
+
 This example shows how to use a <xref:System.Windows.Media.Animation.Storyboard> to animate properties. To animate a property by using a <xref:System.Windows.Media.Animation.Storyboard>, create an animation for each property that you want to animate and also create a <xref:System.Windows.Media.Animation.Storyboard> to contain the animations.  
   
  The type of property determines the type of animation to use. For example, to animate a property that takes <xref:System.Double> values, use a <xref:System.Windows.Media.Animation.DoubleAnimation>. The <xref:System.Windows.Media.Animation.Storyboard.TargetName%2A> and <xref:System.Windows.Media.Animation.Storyboard.TargetProperty> attached properties specify the object and property to which the animation is applied.  
@@ -20,6 +21,7 @@ This example shows how to use a <xref:System.Windows.Media.Animation.Storyboard>
  The following example uses <xref:System.Windows.Media.Animation.Storyboard> objects to animate two <xref:System.Windows.Controls.Button> controls. To make the first button change in size, its <xref:System.Windows.FrameworkElement.Width%2A> is animated. To make the second button change color, the <xref:System.Windows.Media.SolidColorBrush.Color%2A> property of the <xref:System.Windows.Media.SolidColorBrush> is used to set the <xref:System.Windows.Controls.Control.Background%2A> of the button that is animated.  
   
 ## Example  
+
  [!code-xaml[AnimatePropertyStoryboards#1](~/samples/snippets/xaml/VS_Snippets_Wpf/AnimatePropertyStoryboards/XAML/StoryboardExample.xaml#1)]  
   
 > [!NOTE]

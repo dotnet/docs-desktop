@@ -9,9 +9,11 @@ helpviewer_keywords:
 ms.assetid: 86bd2950-d4c9-4ec4-aa8d-7dc3ccadded4
 ---
 # How to: Animate Size Changes by Using Key Frames
+
 This example shows how to animate size changes by using key frames.  
   
 ## Example  
+
  The following example uses the <xref:System.Windows.Media.Animation.SizeAnimationUsingKeyFrames> class to animate the <xref:System.Windows.Media.ArcSegment.Size%2A> property of an <xref:System.Windows.Media.ArcSegment>. This animation uses three key frames in the following manner:  
   
 1. During the first half second of the animation, uses an instance of the <xref:System.Windows.Media.Animation.LinearSizeKeyFrame> class to gradually increase the size of the arc. Linear key frames like <xref:System.Windows.Media.Animation.LinearSizeKeyFrame> create a smooth linear transition between values.  

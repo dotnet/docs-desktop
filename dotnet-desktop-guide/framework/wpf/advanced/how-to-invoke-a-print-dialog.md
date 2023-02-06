@@ -11,9 +11,11 @@ ms.assetid: e3a2c84c-74fe-45a4-8501-5813f9dbfed2
 description: Learn how to provide the ability to print from an application by simply creating and opening a PrintDialog object.
 ---
 # How to: Invoke a Print Dialog
+
 To provide the ability to print from you application, you can simply create and open a <xref:System.Windows.Controls.PrintDialog> object.  
   
 ## Example  
+
  The <xref:System.Windows.Controls.PrintDialog> control provides a single entry point for UI, configuration, and XPS job submission. The control is easy to use and can be instantiated by using Extensible Application Markup Language (XAML) markup or code. The following example demonstrates how to instantiate and open the control in code and how to print from it. It also shows how to ensure that the dialog will give the user the option of setting a specific range of pages. The example code assumes that there is a file FixedDocumentSequence.xps in the root of the C: drive.  
   
  [!code-csharp[printdialog#1](~/samples/snippets/csharp/VS_Snippets_Wpf/PrintDialog/CSharp/Window1.xaml.cs#1)]

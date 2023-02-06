@@ -14,6 +14,7 @@ helpviewer_keywords:
 ms.assetid: 7ea5cded-4888-4f35-8f28-5cab1a55c973
 ---
 # How to: Play a Beep from a Windows Form
+
 This example plays a beep at run time.
 
 ## Example
@@ -35,6 +36,7 @@ public void onePing()
 > The sound played in the C# code sample is determined by the <xref:System.Media.SystemSounds.Beep%2A> system sound setting. For more information, see <xref:System.Media.SystemSounds>.
 
 ## Compiling the Code
+
  For C#, this example requires  a reference to the <xref:System.Media?displayProperty=nameWithType> namespace.
 
 ## See also

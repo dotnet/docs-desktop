@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: fe0c2f62-fec2-4c41-a37e-5773d284170c
 ---
 # ComboBox
+
 The <xref:System.Windows.Controls.ComboBox> control presents users with a list of options. The list is shown and hidden as the control expands and collapses. In its default state, the list is collapsed, displaying only one choice. The user clicks a button to see the complete list of options.  
   
  The following illustration shows a <xref:System.Windows.Controls.ComboBox> in different states.  
@@ -18,4 +19,5 @@ The <xref:System.Windows.Controls.ComboBox> control presents users with a list o
 Collapsed and expanded  
   
 ## Reference  
+
  <xref:System.Windows.Controls.ComboBox>

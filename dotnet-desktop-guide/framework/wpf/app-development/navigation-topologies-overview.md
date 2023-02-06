@@ -12,6 +12,7 @@ helpviewer_keywords:
 ms.assetid: 5d5ee837-629a-4933-869a-186dc22ac43d
 ---
 # Navigation Topologies Overview
+
 <a name="introduction"></a> This overview provides an introduction to navigation topologies in WPF. Three common navigation topologies, with samples, are subsequently discussed.  
   
 > [!NOTE]
@@ -30,7 +31,9 @@ ms.assetid: 5d5ee837-629a-4933-869a-186dc22ac43d
 - [Navigation over a Dynamically Generated Topology](#Navigation_over_a_Dynamically_Generated_Topology)  
   
 <a name="Navigation_Topologies"></a>
+
 ## Navigation Topologies  
+
  In WPF, navigation typically consists of pages (<xref:System.Windows.Controls.Page>) with hyperlinks (<xref:System.Windows.Documents.Hyperlink>) that navigate to other pages when clicked. Pages that are navigated to are identified by uniform resource identifiers (URIs) (see [Pack URIs in WPF](pack-uris-in-wpf.md)). Consider the following simple example that shows pages, hyperlinks, and uniform resource identifiers (URIs):  
   
  [!code-xaml[NavigationTopologiesOverviewSnippets#Page1](~/samples/snippets/csharp/VS_Snippets_Wpf/NavigationTopologiesOverviewSnippets/CS/Page1.xaml#page1)]  
@@ -44,7 +47,9 @@ ms.assetid: 5d5ee837-629a-4933-869a-186dc22ac43d
  ![Task pages with data items and navigation buttons.](./media/navigation-topologies-overview/navigation-topology-data-items.png)  
   
 <a name="Structured_Navigation_Topologies"></a>
+
 ## Structured Navigation Topologies  
+
  There are two broad types of navigation topologies:  
   
 - **Fixed Topology**: defined at compile time and does not change at run time. Fixed topologies are useful for navigation through a fixed sequence of pages in either a linear or hierarchical order.  
@@ -54,7 +59,9 @@ ms.assetid: 5d5ee837-629a-4933-869a-186dc22ac43d
  Although it is possible to create navigation topologies using pages, the samples use page functions because they provide additional support that simplifies support for passing and returning data through the pages of a topology.  
   
 <a name="Navigation_over_a_Fixed_Linear_Topology"></a>
+
 ## Navigation over a Fixed Linear Topology  
+
  A fixed linear topology is analogous to the structure of a wizard that has one or more wizard pages that are navigated in a fixed sequence. The following figure shows the high-level structure and flow of a wizard with a fixed linear topology:  
   
  ![Diagram that shows a fixed linear topology.](./media/navigation-topologies-overview/navigation-topology-fixed-linear.png)  
@@ -78,7 +85,9 @@ ms.assetid: 5d5ee837-629a-4933-869a-186dc22ac43d
 - When the wizard is complete (accepted or canceled), the pages that the wizard comprises are removed from the journal. This keeps each instance of the wizard isolated, thereby avoiding potential data or state anomalies.  
   
 <a name="Dynamic_Navigation_over_a_Fixed_Hierarchical_Topology"></a>
+
 ## Dynamic Navigation over a Fixed Hierarchical Topology  
+
  In some applications, pages allow navigation to two or more other pages, as shown in the following figure:
   
  ![Diagram that shows a page that can navigate to multiple pages.](./media/navigation-topologies-overview/navigation-topology-multiple-pages.png)  
@@ -108,7 +117,9 @@ ms.assetid: 5d5ee837-629a-4933-869a-186dc22ac43d
 - When the wizard is complete (accepted or canceled), the pages that the wizard comprises are removed from the journal. This keeps each instance of the wizard isolated, thereby avoiding potential data or state anomalies.  
   
 <a name="Navigation_over_a_Dynamically_Generated_Topology"></a>
+
 ## Navigation over a Dynamically Generated Topology  
+
  In some applications, the sequence in which two or more pages are navigated can only be determined at run time, whether by the user, the application, or external data. The following figure illustrates a set of pages with an undetermined navigation sequence:  
   
  ![A set of pages with an undetermined navigation sequence.](./media/navigation-topologies-overview/navigation-topology-dynamically-generated.png)  

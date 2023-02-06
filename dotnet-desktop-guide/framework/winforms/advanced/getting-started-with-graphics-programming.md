@@ -10,9 +10,11 @@ helpviewer_keywords:
 ms.assetid: eb0f6d6f-9e52-4167-9592-ff4b82fb5869
 ---
 # Getting Started with Graphics Programming
+
 This section shows how to get started using GDI+ in a Windows Forms application. The following topics show how to complete several GDI+ tasks such as drawing and filling shapes and text.  
   
 ## In This Section  
+
  [How to: Create Graphics Objects for Drawing](how-to-create-graphics-objects-for-drawing.md)  
  Shows how to create a <xref:System.Drawing.Graphics> object for drawing.  
   
@@ -53,6 +55,7 @@ This section shows how to get started using GDI+ in a Windows Forms application.
  Explains how to copy pixels from one area to another.  
   
 ## Reference  
+
  <xref:System.Drawing>  
  Describes this namespace and has links to all its members.  
   

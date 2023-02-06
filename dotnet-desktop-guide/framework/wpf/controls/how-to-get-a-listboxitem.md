@@ -11,9 +11,11 @@ helpviewer_keywords:
 ms.assetid: da877c6f-5fd8-40cb-8909-225cbfd99aa5
 ---
 # How to: Get a ListBoxItem
+
 If you need to get a specific <xref:System.Windows.Controls.ListBoxItem> at a particular index in a <xref:System.Windows.Controls.ListBox>, you can use an <xref:System.Windows.Controls.ItemContainerGenerator>.  
   
 ## Example  
+
  The following example shows a <xref:System.Windows.Controls.ListBox> and its items.  
   
  [!code-xaml[ListBoxItems#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ListBoxItems/CSharp/Window1.xaml#1)]  

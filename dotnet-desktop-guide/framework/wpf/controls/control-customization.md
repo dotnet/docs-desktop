@@ -10,9 +10,11 @@ helpviewer_keywords:
 ms.assetid: a3d9930e-5597-470e-a636-dcf65eac500b
 ---
 # Control Customization
+
 This category covers the various base classes, interfaces and other elements and concepts used in creating a fully functional Windows Presentation Foundation (WPF) control.  
   
 ## In This Section  
+
  [Control Authoring Overview](control-authoring-overview.md)  
  [Guidelines for Designing Stylable Controls](guidelines-for-designing-stylable-controls.md)  
  [Adorners](adorners.md)  

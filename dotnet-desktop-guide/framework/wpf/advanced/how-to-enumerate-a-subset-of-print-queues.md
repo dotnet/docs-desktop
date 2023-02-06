@@ -12,9 +12,11 @@ ms.assetid: cc4a1b5b-d46f-4c5e-bc26-22c226e4bee0
 description: Learn how to generate a list of printers with the GetPrintQueues method of a PrintServer object and the EnumeratedPrintQueueTypes enumeration.
 ---
 # How to: Enumerate a Subset of Print Queues
+
 A common situation faced by information technology (IT) professionals managing a company-wide set of printers is to generate a list of printers having certain characteristics. This functionality is provided by the <xref:System.Printing.PrintServer.GetPrintQueues%2A> method of a <xref:System.Printing.PrintServer> object and the <xref:System.Printing.EnumeratedPrintQueueTypes> enumeration.  
   
 ## Example  
+
  In the example below, the code begins by creating an array of flags that specify the characteristics of the print queues we want to list. In this example, we are looking for print queues that are installed locally on the print server and are shared. The <xref:System.Printing.EnumeratedPrintQueueTypes> enumeration provides many other possibilities.  
   
  The code then creates a <xref:System.Printing.LocalPrintServer> object, a class derived from <xref:System.Printing.PrintServer>. The local print server is the computer on which the application is running.  

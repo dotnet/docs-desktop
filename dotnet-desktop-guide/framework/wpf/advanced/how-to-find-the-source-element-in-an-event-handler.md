@@ -11,9 +11,11 @@ ms.assetid: 85f71c5a-b714-4c65-9711-7d905c2bbe98
 description: Learn how the handler code uses the Source property of the reported data in the event arguments to change the Width property value on the Source element.
 ---
 # How to: Find the Source Element in an Event Handler
+
 This example shows how to find the source element in an event handler.  
   
 ## Example  
+
  The following example shows a <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event handler that is declared in a code-behind file. When a user clicks the button that the handler is attached to, the handler changes a property value. The handler code uses the <xref:System.Windows.RoutedEventArgs.Source%2A> property of the routed event data that is reported in the event arguments to change the <xref:System.Windows.FrameworkElement.Width%2A> property value on the <xref:System.Windows.RoutedEventArgs.Source%2A> element.  
   
  [!code-xaml[RoutedEventSource#XAMLHandler](~/samples/snippets/csharp/VS_Snippets_Wpf/RoutedEventSource/CSharp/default.xaml#xamlhandler)]  

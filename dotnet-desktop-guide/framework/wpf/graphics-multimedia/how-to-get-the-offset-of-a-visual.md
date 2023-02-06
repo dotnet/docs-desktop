@@ -13,9 +13,11 @@ helpviewer_keywords:
 ms.assetid: 889a1dd6-1b11-445a-b351-fbb04c53ee34
 ---
 # How to: Get the Offset of a Visual
+
 These examples show how to retrieve the offset value of a visual object that is relative to its parent, or any ancestor or descendant.  
   
 ## Example  
+
  The following markup example shows a <xref:System.Windows.Controls.TextBlock> that is defined with <xref:System.Windows.FrameworkElement.Margin%2A> value of 4.  
   
  [!code-xaml[VisualSnippets#VisualSnippet1](~/samples/snippets/csharp/VS_Snippets_Wpf/VisualSnippets/CSharp/Window1.xaml#visualsnippet1)]  
@@ -30,6 +32,7 @@ These examples show how to retrieve the offset value of a visual object that is 
  The returned offset value is relative to the parent of the <xref:System.Windows.Media.Visual>. If you want to return an offset value that is not relative to the parent of a <xref:System.Windows.Media.Visual>, use the <xref:System.Windows.Media.Visual.TransformToAncestor%2A> method.  
   
 ## Getting the Offset Relative to an Ancestor  
+
  The following markup example shows a <xref:System.Windows.Controls.TextBlock> that is nested within two <xref:System.Windows.Controls.StackPanel> objects.  
   
  [!code-xaml[VisualSnippets#VisualSnippet7](~/samples/snippets/csharp/VS_Snippets_Wpf/VisualSnippets/CSharp/Window2.xaml#visualsnippet7)]  
@@ -49,6 +52,7 @@ TextBlock nested within two StackPanels
  The returned offset value is relative to the ancestor of the <xref:System.Windows.Media.Visual>. If you want to return an offset value that is relative to the descendant of a <xref:System.Windows.Media.Visual>, use the <xref:System.Windows.Media.Visual.TransformToDescendant%2A> method.  
   
 ## Getting the Offset Relative to a Descendant  
+
  The following markup example shows a <xref:System.Windows.Controls.TextBlock> that is contained within a <xref:System.Windows.Controls.StackPanel> object.  
   
  [!code-xaml[VisualSnippets#VisualSnippet4](~/samples/snippets/csharp/VS_Snippets_Wpf/VisualSnippets/CSharp/Window1.xaml#visualsnippet4)]  

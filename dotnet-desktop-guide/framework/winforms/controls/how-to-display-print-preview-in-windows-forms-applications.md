@@ -14,6 +14,7 @@ helpviewer_keywords:
 ms.assetid: e394134c-0886-4517-bd8d-edc4a3749eb5
 ---
 # How to: Display Print Preview in Windows Forms Applications
+
 You can use the <xref:System.Windows.Forms.PrintPreviewDialog> control to enable users to display a document, often before it is to be printed.  
   
  To do this, you need to specify an instance of the <xref:System.Drawing.Printing.PrintDocument> class; this is the document to be printed. For more information about using print preview with the <xref:System.Drawing.Printing.PrintDocument> component, see [How to: Print in Windows Forms Using Print Preview](../advanced/how-to-print-in-windows-forms-using-print-preview.md).  

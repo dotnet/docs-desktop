@@ -8,9 +8,11 @@ ms.assetid: 6f5d9321-37d7-4448-ac4c-a33c42b2a766
 description: Learn how the Windows Forms SaveFileDialog component is a pre-configured dialog box that is the same as the standard Save File dialog box used in Windows.
 ---
 # SaveFileDialog Component (Windows Forms)
+
 The Windows Forms <xref:System.Windows.Forms.SaveFileDialog> component is a pre-configured dialog box. It is the same as the standard Save File dialog box used by Windows. It inherits from the <xref:System.Windows.Forms.CommonDialog> class.  
   
 ## In This Section  
+
  [SaveFileDialog Component Overview](savefiledialog-component-overview-windows-forms.md)  
  Introduces the general concepts of the <xref:System.Windows.Forms.SaveFileDialog> component, which allows you to display a pre-configured dialog that users can use to save a file to a specified location.  
   
@@ -18,10 +20,12 @@ The Windows Forms <xref:System.Windows.Forms.SaveFileDialog> component is a pre-
  Explains how to save a file via an instance of the <xref:System.Windows.Forms.SaveFileDialog> component at run time.  
   
 ## Reference  
+
  <xref:System.Windows.Forms.SaveFileDialog> class  
  Provides reference information on the class and its members.  
   
 ## Related Sections  
+
  [Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)  
  Provides a complete list of Windows Forms controls, with links to information on their use.  
   

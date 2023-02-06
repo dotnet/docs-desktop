@@ -13,6 +13,7 @@ helpviewer_keywords:
 ms.assetid: 68bdc3f3-4177-4eab-99cd-cac17a82b515
 ---
 # How to: Put Quotation Marks in a String (Windows Forms)
+
 Sometimes you might want to place quotation marks (" ") in a string of text. For example:  
   
  She said, "You deserve a treat!"  

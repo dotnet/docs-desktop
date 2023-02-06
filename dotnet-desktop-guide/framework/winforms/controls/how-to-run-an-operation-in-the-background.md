@@ -16,6 +16,7 @@ helpviewer_keywords:
 ms.assetid: 5b56e2aa-dc05-444f-930c-2d7b23f9ad5b
 ---
 # How to: Run an Operation in the Background
+
 If you have an operation that will take a long time to complete, and you do not want to cause delays in your user interface, you can use the <xref:System.ComponentModel.BackgroundWorker> class to run the operation on another thread.  
   
  The following code example shows how to run a time-consuming operation in the background. The form has **Start** and **Cancel** buttons. Click the **Start** button to run an asynchronous operation. Click the **Cancel** button to stop a running asynchronous operation. The outcome of each operation is displayed in a <xref:System.Windows.Forms.MessageBox>.  
@@ -25,10 +26,12 @@ If you have an operation that will take a long time to complete, and you do not 
  Also see [Walkthrough: Running an Operation in the Background](walkthrough-running-an-operation-in-the-background.md).  
   
 ## Example  
+
  [!code-csharp[System.ComponentModel.BackgroundWorker.Example#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker.Example/CS/Form1.cs#1)]
  [!code-vb[System.ComponentModel.BackgroundWorker.Example#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker.Example/VB/Form1.vb#1)]  
   
 ## Compiling the Code  
+
  This example requires:  
   
 - References to the System, System.Drawing and System.Windows.Forms assemblies.  

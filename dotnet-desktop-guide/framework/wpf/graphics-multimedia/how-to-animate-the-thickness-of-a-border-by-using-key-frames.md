@@ -9,9 +9,11 @@ helpviewer_keywords:
 ms.assetid: 3a9cb463-0a63-407d-aae7-3fbb1a559947
 ---
 # How to: Animate the Thickness of a Border by Using Key Frames
+
 This example shows how to animate the <xref:System.Windows.Controls.Control.BorderThickness%2A> property of a <xref:System.Windows.Controls.Border>.  
   
 ## Example  
+
  The following example uses the <xref:System.Windows.Media.Animation.ThicknessAnimationUsingKeyFrames> class to animate the <xref:System.Windows.Controls.Control.BorderThickness%2A> property of a <xref:System.Windows.Controls.Border>. This animation uses three key frames in the following manner:  
   
 1. During the first half second, uses an instance of the <xref:System.Windows.Media.Animation.LinearThicknessKeyFrame> class to gradually increase the thickness of the border. The example uses <xref:System.Windows.Media.Animation.LinearThicknessKeyFrame> to create a smooth linear increase between values.  

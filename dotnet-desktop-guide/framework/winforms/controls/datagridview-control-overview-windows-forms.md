@@ -22,6 +22,7 @@ helpviewer_keywords:
 ms.assetid: 0a45c661-89dc-4390-9cc6-c47eee501488
 ---
 # DataGridView Control Overview (Windows Forms)
+>
 > [!NOTE]
 > The <xref:System.Windows.Forms.DataGridView> control replaces and adds functionality to the <xref:System.Windows.Forms.DataGrid> control; however, the <xref:System.Windows.Forms.DataGrid> control is retained for both backward compatibility and future use, if you choose. For more information, see [Differences Between the Windows Forms DataGridView and DataGrid Controls](differences-between-the-windows-forms-datagridview-and-datagrid-controls.md).  
   
@@ -48,6 +49,7 @@ ms.assetid: 0a45c661-89dc-4390-9cc6-c47eee501488
  The <xref:System.Windows.Forms.DataGridView> control is highly configurable and extensible, and it provides many properties, methods, and events to customize its appearance and behavior. When you want your Windows Forms application to display tabular data, consider using the <xref:System.Windows.Forms.DataGridView> control before others (for example, <xref:System.Windows.Forms.DataGrid>). If you are displaying a small grid of read-only values, or if you are enabling a user to edit a table with millions of records, the <xref:System.Windows.Forms.DataGridView> control will provide you with a readily programmable, memory-efficient solution.  
   
 ## In This Section  
+
  [DataGridView Control Technology Summary](datagridview-control-technology-summary-windows-forms.md)  
  Summarizes <xref:System.Windows.Forms.DataGridView> control concepts and the use of related classes.  
   
@@ -61,6 +63,7 @@ ms.assetid: 0a45c661-89dc-4390-9cc6-c47eee501488
  Provides links to code examples in the documentation for various <xref:System.Windows.Forms.DataGridView> tasks. These examples are categorized by task type.  
   
 ## Related Sections  
+
  [Column Types in the Windows Forms DataGridView Control](column-types-in-the-windows-forms-datagridview-control.md)  
  Discusses the column types in the Windows Forms <xref:System.Windows.Forms.DataGridView> control used to display information and allow users to modify or add information.  
   

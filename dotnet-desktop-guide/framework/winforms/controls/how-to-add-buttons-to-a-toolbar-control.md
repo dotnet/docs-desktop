@@ -15,6 +15,7 @@ helpviewer_keywords:
 ms.assetid: 78a58a8d-1041-4e38-9219-4096fa6a5c5c
 ---
 # How to: Add Buttons to a ToolBar Control
+>
 > [!NOTE]
 > The <xref:System.Windows.Forms.ToolStrip> control replaces and adds functionality to the <xref:System.Windows.Forms.ToolBar> control; however, the <xref:System.Windows.Forms.ToolBar> control is retained for both backward compatibility and future use, if you choose.  
   

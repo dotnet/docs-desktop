@@ -20,6 +20,7 @@ helpviewer_keywords:
 ms.assetid: 7ad2943b-3961-41d3-8fc6-1582d43f5d99
 ---
 # WPF Application Resource, Content, and Data Files
+
 Microsoft Windows applications often depend on files that contain non-executable data, such as Extensible Application Markup Language (XAML), images, video, and audio. Windows Presentation Foundation (WPF) offers special support for configuring, identifying, and using these types of data files, which are called application data files. This support revolves around a specific set of application data file types, including:  
   
 - **Resource Files**: Data files that are compiled into either an executable or library WPF assembly.  
@@ -35,7 +36,9 @@ Microsoft Windows applications often depend on files that contain non-executable
  This topic describes how to configure and use application data files.  
 
 <a name="Resource_Files"></a>
+
 ## Resource Files  
+
  If an application data file must always be available to an application, the only way to guarantee availability is to compile it into an application's main executable assembly or one of its referenced assemblies. This type of application data file is known as a *resource file*.  
   
  You should use resource files when:  
@@ -50,6 +53,7 @@ Microsoft Windows applications often depend on files that contain non-executable
 > The resource files described in this section are different than the resource files described in [XAML Resources](/dotnet/desktop-wpf/fundamentals/xaml-resources-define) and different than the embedded or linked resources described in [Manage Application Resources (.NET)](/visualstudio/ide/managing-application-resources-dotnet).  
   
 ### Configuring Resource Files  
+
  In WPF, a resource file is a file that is included in an Microsoft build engine (MSBuild) project as a `Resource` item.  
   
 ```xml  
@@ -68,6 +72,7 @@ Microsoft Windows applications often depend on files that contain non-executable
  When the project is built, MSBuild compiles the resource into the assembly.  
   
 ### Using Resource Files  
+
  To load a resource file, you can call the <xref:System.Windows.Application.GetResourceStream%2A> method of the <xref:System.Windows.Application> class, passing a pack URI that identifies the desired resource file. <xref:System.Windows.Application.GetResourceStream%2A> returns a <xref:System.Windows.Resources.StreamResourceInfo> object, which exposes the resource file as a <xref:System.IO.Stream> and describes its content type.  
   
  As an example, the following code shows how to use <xref:System.Windows.Application.GetResourceStream%2A> to load a <xref:System.Windows.Controls.Page> resource file and set it as the content of a <xref:System.Windows.Controls.Frame> (`pageFrame`):  
@@ -87,6 +92,7 @@ Microsoft Windows applications often depend on files that contain non-executable
  [!code-xaml[WPFAssemblyResourcesSnippets#LoadPageResourceFileFromXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/WPFAssemblyResourcesSnippets/CSharp/ResourcesSample/ApplicationGetResourceStreamSnippetWindow.xaml#loadpageresourcefilefromxaml)]  
   
 ### Application Code Files as Resource Files  
+
  A special set of WPF application code files can be referenced using pack URIs, including windows, pages, flow documents, and resource dictionaries. For example, you can set the <xref:System.Windows.Application.StartupUri%2A?displayProperty=nameWithType> property with a pack URI that references the window or page that you would like to load when an application starts.  
   
  [!code-xaml[WPFAssemblyResourcesSnippets#SetApplicationStartupURI](~/samples/snippets/csharp/VS_Snippets_Wpf/WPFAssemblyResourcesSnippets/CSharp/ResourcesSample/App.xaml#setapplicationstartupuri)]  
@@ -112,12 +118,15 @@ Microsoft Windows applications often depend on files that contain non-executable
 > If a XAML file is configured as a `Resource` item, and does not have a code-behind file, the raw XAML is compiled into an assembly rather than a binary version of the raw XAML.  
   
 <a name="Content_Files"></a>
+
 ## Content Files  
+
  A *content file* is distributed as a loose file alongside an executable assembly. Although they are not compiled into an assembly, assemblies are compiled with metadata that establishes an association with each content file.  
   
  You should use content files when your application requires a specific set of application data files that you want to be able to update without recompiling the assembly that consumes them.  
   
 ### Configuring Content Files  
+
  To add a content file to a project, an application data file must be included as a `Content` item. Furthermore, because a content file is not compiled directly into the assembly, you need to set the MSBuild `CopyToOutputDirectory` metadata element to specify that the content file is copied to a location that is relative to the built assembly. If you want the resource to be copied to the build output folder every time a project is built, you set the `CopyToOutputDirectory` metadata element with the `Always` value. Otherwise, you can ensure that only the newest version of the resource is copied to the build output folder by using the `PreserveNewest` value.  
   
  The following shows a file that is configured as a content file which is copied to the build output folder only when a new version of the resource is added to the project.  
@@ -148,6 +157,7 @@ Microsoft Windows applications often depend on files that contain non-executable
  The <xref:System.Windows.Resources.AssemblyAssociatedContentFileAttribute> value is also the value of the path to the content file in the build output folder.  
   
 ### Using Content Files  
+
  To load a content file, you can call the <xref:System.Windows.Application.GetContentStream%2A> method of the <xref:System.Windows.Application> class, passing a pack URI that identifies the desired content file. <xref:System.Windows.Application.GetContentStream%2A> returns a <xref:System.Windows.Resources.StreamResourceInfo> object, which exposes the content file as a <xref:System.IO.Stream> and describes its content type.  
   
  As an example, the following code shows how to use <xref:System.Windows.Application.GetContentStream%2A> to load a <xref:System.Windows.Controls.Page> content file and set it as the content of a <xref:System.Windows.Controls.Frame> (`pageFrame`).  
@@ -167,7 +177,9 @@ Microsoft Windows applications often depend on files that contain non-executable
  [!code-xaml[WPFAssemblyResourcesSnippets#LoadPageContentFileFromXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/WPFAssemblyResourcesSnippets/CSharp/ResourcesSample/ApplicationGetContentStreamSnippetWindow.xaml#loadpagecontentfilefromxaml)]  
   
 <a name="Site_of_Origin_Files"></a>
+
 ## Site of Origin Files  
+
  Resource files have an explicit relationship with the assemblies that they are distributed alongside, as defined by the <xref:System.Windows.Resources.AssemblyAssociatedContentFileAttribute>. But, there are times when you may want to establish either an implicit or non-existent relationship between an assembly and an application data file, including when:  
   
 - A file doesn't exist at compile time.  
@@ -190,6 +202,7 @@ Microsoft Windows applications often depend on files that contain non-executable
 > Site of origin files are not cached with an XAML browser application (XBAP) on a client machine, while content files are. Consequently, they are only downloaded when specifically requested. If an XAML browser application (XBAP) application has large media files, configuring them as site of origin files means the initial application launch is much faster, and the files are only downloaded on demand.  
   
 ### Configuring Site of Origin Files  
+
  If your site of origin files are non-existent or unknown at compile time, you need to use traditional deployment mechanisms for ensuring the required files are available at run time, including using either the `XCopy` command-line program or the Microsoft Windows Installer.  
   
  If you do know at compile time the files that you would like to be located at the site of origin, but still want to avoid an explicit dependency, you can add those files to an MSBuild project as `None` item. As with content files, you need to set the MSBuild `CopyToOutputDirectory` attribute to specify that the site of origin file is copied to a location that is relative to the built assembly, by specifying either the `Always` value or the `PreserveNewest` value.  
@@ -210,6 +223,7 @@ Microsoft Windows applications often depend on files that contain non-executable
  When the project is built, MSBuild copies the specified files to the build output folder.  
   
 ### Using Site of Origin Files  
+
  To load a site of origin file, you can call the <xref:System.Windows.Application.GetRemoteStream%2A> method of the <xref:System.Windows.Application> class, passing a pack URI that identifies the desired site of origin file. <xref:System.Windows.Application.GetRemoteStream%2A> returns a <xref:System.Windows.Resources.StreamResourceInfo> object, which exposes the site of origin file as a <xref:System.IO.Stream> and describes its content type.  
   
  As an example, the following code shows how to use <xref:System.Windows.Application.GetRemoteStream%2A> to load a <xref:System.Windows.Controls.Page> site of origin file and set it as the content of a <xref:System.Windows.Controls.Frame> (`pageFrame`).  
@@ -229,7 +243,9 @@ Microsoft Windows applications often depend on files that contain non-executable
  [!code-xaml[WPFAssemblyResourcesSnippets#LoadPageSOOFileFromXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/WPFAssemblyResourcesSnippets/CSharp/ResourcesSample/SOOPage.xaml#loadpagesoofilefromxaml)]  
   
 <a name="Rebuilding_after_Changing_Build_Type"></a>
+
 ## Rebuilding After Changing Build Type  
+
  After you change the build type of an application data file, you need to rebuild the entire application to ensure those changes are applied. If you only build the application, the changes are not applied.  
   
 ## See also

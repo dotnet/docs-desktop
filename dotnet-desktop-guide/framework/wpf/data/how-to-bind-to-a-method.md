@@ -9,9 +9,11 @@ helpviewer_keywords:
 ms.assetid: 5f55e71e-2182-42a0-88d1-700cc1427a7a
 ---
 # How to: Bind to a Method
+
 The following example shows how to bind to a method using <xref:System.Windows.Data.ObjectDataProvider>.  
   
 ## Example  
+
  In this example, `TemperatureScale` is a class that has a method `ConvertTemp`, which takes two parameters (one of `double` and one of the `enum` type `TempType)` and converts the given value from one temperature scale to another. In the following example, an <xref:System.Windows.Data.ObjectDataProvider> is used to instantiate the `TemperatureScale` object. The `ConvertTemp` method is called with two specified parameters.  
   
  [!code-xaml[BindToMethod#WindowResources](~/samples/snippets/csharp/VS_Snippets_Wpf/BindToMethod/CS/Window1.xaml#windowresources)]  

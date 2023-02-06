@@ -12,6 +12,7 @@ helpviewer_keywords:
 ms.assetid: 97af044c-71f1-4617-9a94-9064b68185d2
 ---
 # StaticResource Markup Extension
+
 Provides a value for any XAML property attribute by looking up a reference to an already defined resource. Lookup behavior for that resource is analogous to load-time lookup, which will look for resources that were previously loaded from the markup of the current XAML page as well as other application sources, and will generate that resource value as the property value in the run-time objects.  
   
 ## XAML Attribute Usage  

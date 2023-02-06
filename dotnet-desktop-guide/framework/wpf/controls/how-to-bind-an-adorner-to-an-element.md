@@ -11,9 +11,11 @@ helpviewer_keywords:
 ms.assetid: b2101611-a0ee-4137-bdb8-9b3673d2e6b9
 ---
 # How to: Bind an Adorner to an Element
+
 This example shows how to programmatically bind an adorner to a specified <xref:System.Windows.UIElement>.  
   
 ## Example  
+
  To bind an adorner to a particular <xref:System.Windows.UIElement>, follow these steps:  
   
 1. Call the `static` method <xref:System.Windows.Documents.AdornerLayer.GetAdornerLayer%2A> to get an <xref:System.Windows.Documents.AdornerLayer> object for the <xref:System.Windows.UIElement> to be adorned. <xref:System.Windows.Documents.AdornerLayer.GetAdornerLayer%2A> walks up the visual tree, starting at the specified **UIElement**, and returns the first adorner layer it finds. (If no adorner layers are found, the method returns null.)  

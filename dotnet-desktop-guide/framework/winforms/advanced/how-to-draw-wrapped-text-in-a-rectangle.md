@@ -12,6 +12,7 @@ ms.assetid: e1fb432a-dc90-48b5-9b6b-acc14507133d
 description: Learn how to draw wrapped text in a rectangle by using the DrawString overloaded method of the Graphics class that takes a Rectangle or RectangleF parameter.
 ---
 # How to: Draw Wrapped Text in a Rectangle
+
 You can draw wrapped text in a rectangle by using the <xref:System.Drawing.Graphics.DrawString%2A> overloaded method of the <xref:System.Drawing.Graphics> class that takes a <xref:System.Drawing.Rectangle> or <xref:System.Drawing.RectangleF> parameter. You will also use a <xref:System.Drawing.Brush> and a <xref:System.Drawing.Font>.  
   
  You can also draw wrapped text in a rectangle by using the <xref:System.Windows.Forms.TextRenderer.DrawText%2A> overloaded method of the <xref:System.Windows.Forms.TextRenderer> that takes a <xref:System.Drawing.Rectangle> and a <xref:System.Windows.Forms.TextFormatFlags> parameter. You will also use a <xref:System.Drawing.Color> and a <xref:System.Drawing.Font>.  
@@ -35,6 +36,7 @@ You can draw wrapped text in a rectangle by using the <xref:System.Drawing.Graph
      [!code-vb[System.Drawing.AlignDrawnText#60](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.AlignDrawnText/VB/Form1.vb#60)]  
   
 ## Compiling the Code  
+
  The previous examples require:  
   
 - <xref:System.Windows.Forms.PaintEventArgs> `e`, which is a parameter of <xref:System.Windows.Forms.PaintEventHandler>.  

@@ -10,7 +10,9 @@ helpviewer_keywords:
 ms.assetid: 5ddb23a6-7813-4058-b59d-29ff3341638c
 ---
 # Digital Ink Overviews
+
 ## In This Section  
+
  [Getting Started with Ink](getting-started-with-ink.md)  
   [Collecting Ink](collecting-ink.md)  
   [Handwriting Recognition](handwriting-recognition.md)  

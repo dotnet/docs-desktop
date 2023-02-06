@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: b170b52a-2ebd-4948-ac2f-e52d494cebb2
 ---
 # Displaying Data in the Windows Forms DataGridView Control
+
 The `DataGridView` control is used to display data from a variety of external data sources. Alternatively, you can add rows and columns to the control and manually populate it with data.  
   
  When you bind the control to a data source, you can generate columns automatically based on the schema of the data source. If these columns do not appear just as you want them to, you can hide, remove, or rearrange them. You can also add unbound columns to display supplemental data that does not come from the data source.  
@@ -17,6 +18,7 @@ The `DataGridView` control is used to display data from a variety of external da
  Additionally, you can display your data using standard formats (such as currency format), or you can customize the display formatting to present your data however you need to (such as changing the background color for negative numbers, or replacing string values with corresponding images).  
   
 ## In This Section  
+
  [Data Display Modes in the Windows Forms DataGridView Control](data-display-modes-in-the-windows-forms-datagridview-control.md)  
  Describes the options for populating the control with data.  
   
@@ -54,6 +56,7 @@ The `DataGridView` control is used to display data from a variety of external da
  Describes how to handle the <xref:System.Windows.Forms.DataGridView.CellFormatting?displayProperty=nameWithType> event to change the appearance of cells depending on their values.  
   
 ## Reference  
+
  <xref:System.Windows.Forms.DataGridView>  
  Provides reference documentation for the <xref:System.Windows.Forms.DataGridView> control.  
   
@@ -64,6 +67,7 @@ The `DataGridView` control is used to display data from a variety of external da
  Provides reference documentation for the <xref:System.Windows.Forms.BindingSource> component.  
   
 ## Related Sections  
+
  [Data Entry in the Windows Forms DataGridView Control](data-entry-in-the-windows-forms-datagridview-control.md)  
  Provides topics that describe how to change the way users add and modify data in the control.  
   

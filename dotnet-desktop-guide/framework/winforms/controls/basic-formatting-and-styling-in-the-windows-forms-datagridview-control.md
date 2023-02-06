@@ -8,9 +8,11 @@ helpviewer_keywords:
 ms.assetid: b9b90836-1f56-4aa9-8db8-edc78fe830e8
 ---
 # Basic Formatting and Styling in the Windows Forms DataGridView Control
+
 The `DataGridView` control makes it easy to define the basic appearance of cells and the display formatting of cell values. You can define appearance and formatting styles for individual cells, for cells in specific columns and rows, or for all cells in the control by setting the properties of the `DataGridViewCellStyle` objects accessed through various `DataGridView` control properties. Additionally, you can modify these styles dynamically based on factors such as the cell value by handling the `CellFormatting` event.  
   
 ## In This Section  
+
  [How to: Change the Border and Gridline Styles in the Windows Forms DataGridView Control](change-the-border-and-gridline-styles-in-the-datagrid.md)  
  Describes how to set `DataGridView` properties that define the appearance of the control border and the boundary lines between cells.  
   
@@ -33,6 +35,7 @@ The `DataGridView` control makes it easy to define the basic appearance of cells
  Describes how to use the `RowTemplate` property to set row properties that will be used for all rows in the control.  
   
 ## Reference  
+
  <xref:System.Windows.Forms.DataGridView>  
  Provides reference documentation for the <xref:System.Windows.Forms.DataGridView> control.  
   
@@ -46,6 +49,7 @@ The `DataGridView` control makes it easy to define the basic appearance of cells
  Provides reference documentation for the <xref:System.Windows.Forms.DataGridView.RowTemplate%2A> property.  
   
 ## Related Sections  
+
  [Customizing the Windows Forms DataGridView Control](customizing-the-windows-forms-datagridview-control.md)  
  Provides topics that describe custom painting <xref:System.Windows.Forms.DataGridView> cells and rows, and creating derived cell, column, and row types.  
   

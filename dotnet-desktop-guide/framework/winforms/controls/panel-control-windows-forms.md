@@ -9,9 +9,11 @@ helpviewer_keywords:
 ms.assetid: 37c69803-5084-4347-b035-54cfbabdc310
 ---
 # Panel Control (Windows Forms)
+
 Windows Forms `Panel` controls are used to provide an identifiable grouping for other controls. Typically, you use panels to subdivide a form by function. The `Panel` control is similar to the <xref:System.Windows.Forms.GroupBox> control; however, only the `Panel` control can have scroll bars, and only the <xref:System.Windows.Forms.GroupBox> control displays a caption.  
   
 ## In This Section  
+
  [Panel Control Overview](panel-control-overview-windows-forms.md)  
  Explains what this control is and its key features and properties.  
   
@@ -25,10 +27,12 @@ Windows Forms `Panel` controls are used to provide an identifiable grouping for 
  Describes how to display a background color and a background image on a panel.  
   
 ## Reference  
+
  <xref:System.Windows.Forms.Panel>  
  Describes this class and has links to all its members.  
   
 ## Related Sections  
+
  [Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)  
  Provides a complete list of Windows Forms controls, with links to information on their use.  
   

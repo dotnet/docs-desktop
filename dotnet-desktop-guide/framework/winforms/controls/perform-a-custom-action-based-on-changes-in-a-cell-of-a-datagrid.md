@@ -12,6 +12,7 @@ helpviewer_keywords:
 ms.assetid: 7fa44d01-97f4-4ccb-a149-bc72628d2c36
 ---
 # How to: Perform a Custom Action Based on Changes in a Cell of a Windows Forms DataGridView Control
+
 The <xref:System.Windows.Forms.DataGridView> control has a number of events you can use to detect changes in the state of <xref:System.Windows.Forms.DataGridView> cells. Two of the most commonly used are the <xref:System.Windows.Forms.DataGridView.CellValueChanged> and <xref:System.Windows.Forms.DataGridView.CellStateChanged> events.  
   
 ### To detect changes in the values of DataGridView cells  
@@ -29,6 +30,7 @@ The <xref:System.Windows.Forms.DataGridView> control has a number of events you 
      [!code-vb[System.Windows.Forms.DataGridViewMisc#135](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/VB/datagridviewmisc.vb#135)]  
   
 ## Compiling the Code  
+
  This example requires:  
   
 - A <xref:System.Windows.Forms.DataGridView> control named `dataGridView1`. For C#, the event handlers must be connected to the corresponding events.  

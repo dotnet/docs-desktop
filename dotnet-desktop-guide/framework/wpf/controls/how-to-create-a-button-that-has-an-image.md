@@ -10,9 +10,11 @@ helpviewer_keywords:
 ms.assetid: 607a193c-4098-4dd8-8dc0-51256cec2020
 ---
 # How to: Create a Button That Has an Image
+
 This example shows how to include an image on a <xref:System.Windows.Controls.Button>.  
   
 ## Example  
+
  The following example creates two <xref:System.Windows.Controls.Button> controls. One <xref:System.Windows.Controls.Button> contains text and the other contains an image. The image is in a folder called data, which is a subfolder of the example’s project folder. When a user clicks the <xref:System.Windows.Controls.Button> that has the image, the background and the text of the other <xref:System.Windows.Controls.Button> change.  
   
  This example creates <xref:System.Windows.Controls.Button> controls by using markup but uses code to write the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event handlers.  

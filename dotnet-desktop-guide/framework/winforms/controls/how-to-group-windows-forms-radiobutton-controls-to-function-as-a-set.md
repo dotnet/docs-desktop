@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: 58f8fe34-50b7-49d8-a2be-c271be3c6b32
 ---
 # How to: Group Windows Forms RadioButton Controls to Function as a Set
+
 Windows Forms <xref:System.Windows.Forms.RadioButton> controls are designed to give users a choice among two or more settings, of which only one can be assigned to a procedure or object. For example, a group of <xref:System.Windows.Forms.RadioButton> controls may display a choice of package carriers for an order, but only one of the carriers will be used. Therefore only one <xref:System.Windows.Forms.RadioButton> at a time can be selected, even if it is a part of a functional group.  
   
  You group radio buttons by drawing them inside a container such as a <xref:System.Windows.Forms.Panel> control, a <xref:System.Windows.Forms.GroupBox> control, or a form. All radio buttons that are added directly to a form become one group. To add separate groups, you must place them inside panels or group boxes. For more information about panels or group boxes, see [Panel Control Overview](panel-control-overview-windows-forms.md) or [GroupBox Control Overview](groupbox-control-overview-windows-forms.md).  

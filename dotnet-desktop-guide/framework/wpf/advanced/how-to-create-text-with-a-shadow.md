@@ -9,9 +9,11 @@ ms.assetid: 6ab9c754-6001-4708-b479-5367f2fd1a35
 description: Learn how to create text with a shadow effect, how to control the width of that shadow, and how to create a blur effect for that text.
 ---
 # How to: Create Text with a Shadow
+
 The examples in this section show how to create a shadow effect for displayed text.  
   
 ## Example  
+
  The <xref:System.Windows.Media.Effects.DropShadowEffect> object allows you to create a variety of drop shadow effects for Windows Presentation Foundation (WPF) objects. The following example shows a drop shadow effect applied to text. In this case, the shadow is a soft shadow, which means the shadow color blurs.  
   
  ![Text shadow with Softness &#61; 0.25](./media/how-to-create-text-with-a-shadow/drop-shadow-text-effect.jpg)
@@ -36,6 +38,7 @@ The examples in this section show how to create a shadow effect for displayed te
  [!code-xaml[TextShadowSnippets#TextShadowSnippet2](~/samples/snippets/csharp/VS_Snippets_Wpf/TextShadowSnippets/CS/SingleShadows.xaml#textshadowsnippet2)]  
   
 ## Using a Blur Effect  
+
  A <xref:System.Windows.Media.Effects.BlurBitmapEffect> can be used to create a shadow-like effect that can be placed behind a text object. A blur bitmap effect applied to text blurs the text evenly in all directions.  
   
  The following example shows a blur effect applied to text.  
@@ -47,6 +50,7 @@ The examples in this section show how to create a shadow effect for displayed te
  [!code-xaml[TextShadowSnippets#TextShadowSnippet6](~/samples/snippets/csharp/VS_Snippets_Wpf/TextShadowSnippets/CS/BlurShadows.xaml#textshadowsnippet6)]  
   
 ## Using a Translate Transform  
+
  A <xref:System.Windows.Media.TranslateTransform> can be used to create a shadow-like effect that can be placed behind a text object.  
   
  The following code example uses a <xref:System.Windows.Media.TranslateTransform> to offset text. In this example, a slightly offset copy of text below the primary text creates a shadow effect.  

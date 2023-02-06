@@ -12,11 +12,13 @@ ms.assetid: 81d067ed-297c-4dad-90de-1bcac15336ec
 description: Learn how the Windows Forms ToolStrip control and its associate classes provide a common framework for combining user interface elements.
 ---
 # ToolStrip Control Overview (Windows Forms)
+
 The Windows Forms <xref:System.Windows.Forms.ToolStrip> control and its associated classes provide a common framework for combining user interface elements into toolbars, status bars, and menus. <xref:System.Windows.Forms.ToolStrip> controls offer a rich design-time experience that includes in-place activation and editing, custom layout, and rafting, which is the ability of toolbars to share horizontal or vertical space.  
   
  Although <xref:System.Windows.Forms.ToolStrip> replaces and adds functionality to the control in previous versions, <xref:System.Windows.Forms.ToolBar> is retained for both backward compatibility and future use if desired.  
   
 ## Features of the ToolStrip Controls  
+
  Use the <xref:System.Windows.Forms.ToolStrip> control to:  
   
 - Present a common user interface across containers.  

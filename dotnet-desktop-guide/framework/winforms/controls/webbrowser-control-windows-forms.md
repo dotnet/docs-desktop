@@ -9,9 +9,11 @@ helpviewer_keywords:
 ms.assetid: 12667861-5b5b-46bc-8fb5-675e25264c9f
 ---
 # WebBrowser Control (Windows Forms)
+
 The Windows Forms `WebBrowser` control hosts webpages and provides web browsing capabilities to your application.  
   
 ## In This Section  
+
  [WebBrowser Control Overview](webbrowser-control-overview.md)  
  Explains what this control is and its key features and properties.  
   
@@ -37,6 +39,7 @@ The Windows Forms `WebBrowser` control hosts webpages and provides web browsing 
  Provides topics that describe how to manipulate or create HTML pages hosted by the <xref:System.Windows.Forms.WebBrowser> control.  
   
 ## Reference  
+
  <xref:System.Windows.Forms.WebBrowser> class  
  Describes this class and has links to all its members.  
   

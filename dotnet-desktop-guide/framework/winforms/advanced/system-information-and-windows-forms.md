@@ -13,6 +13,7 @@ helpviewer_keywords:
 ms.assetid: 30cf43a3-8cb2-4ff3-862b-6c34576616a8
 ---
 # System Information and Windows Forms
+
 Sometimes it is necessary to gather information about the computer that your application is running on in order to make decisions in your code. For example, you might have a function that is only applicable when connected to a particular network domain; in this case you would need a way to determine the domain and disable the function if the domain is not present.  
   
  Windows Forms applications can use the <xref:System.Windows.Forms.SystemInformation> class to determine a number of things about a computer at run time. The following example demonstrates using the <xref:System.Windows.Forms.SystemInformation> class to retrieve the <xref:System.Windows.Forms.SystemInformation.UserName%2A> and <xref:System.Windows.Forms.SystemInformation.UserDomainName%2A>:  

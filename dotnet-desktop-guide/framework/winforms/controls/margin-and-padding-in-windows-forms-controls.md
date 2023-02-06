@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: 3781b5a1-3085-4072-bed0-44670c23ffdc
 ---
 # Margin and Padding in Windows Forms Controls
+
 Precise placement of controls on your form is a high priority for many applications. The <xref:System.Windows.Forms?displayProperty=nameWithType> namespace gives you many layout features to accomplish this. Two of the most important are the <xref:System.Windows.Forms.Control.Margin%2A> and <xref:System.Windows.Forms.Control.Padding%2A> properties.  
   
  The <xref:System.Windows.Forms.Control.Margin%2A> property defines the space around the control that keeps other controls a specified distance from the control's borders.  

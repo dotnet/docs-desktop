@@ -12,9 +12,11 @@ helpviewer_keywords:
 ms.assetid: f93a1065-b00a-4d7e-9d4b-37023f98186a
 ---
 # How to: Animate the Size of an ArcSegment
+
 This example shows how to animate the <xref:System.Windows.Media.ArcSegment.Size%2A> property of an <xref:System.Windows.Media.ArcSegment>.  
   
 ## Example  
+
  The following example creates an <xref:System.Windows.Media.ArcSegment> that animates its <xref:System.Windows.Media.ArcSegment.Size%2A> when it loads on the screen.  
   
  [!code-csharp[BasicAnimations_snip#SizeAnimationWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/BasicAnimations_snip/CSharp/SizeAnimationExample.cs#sizeanimationwholepage)]

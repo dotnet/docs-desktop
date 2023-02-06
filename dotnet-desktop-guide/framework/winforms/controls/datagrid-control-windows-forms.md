@@ -11,6 +11,7 @@ helpviewer_keywords:
 ms.assetid: 1d9d5683-43d2-42dd-b6c3-e43f4cf0de99
 ---
 # DataGrid Control (Windows Forms)
+>
 > [!NOTE]
 > The <xref:System.Windows.Forms.DataGridView> control replaces and adds functionality to the `DataGrid` control; however, the `DataGrid` control is retained for both backward compatibility and future use, if you choose. For more information, see [Differences Between the Windows Forms DataGridView and DataGrid Controls](differences-between-the-windows-forms-datagridview-and-datagrid-controls.md).  
   
@@ -19,6 +20,7 @@ ms.assetid: 1d9d5683-43d2-42dd-b6c3-e43f4cf0de99
  When the `DataGrid` control is set to a valid data source, the control is automatically populated, creating columns and rows based on the shape of the data. The `DataGrid` control can be used to display either a single table or the hierarchical relationships between a set of tables.  
   
 ## In This Section  
+
  [DataGrid Control Overview](datagrid-control-overview-windows-forms.md)  
  Describes the basic features of the `DataGrid` control.  
   
@@ -62,6 +64,7 @@ ms.assetid: 1d9d5683-43d2-42dd-b6c3-e43f4cf0de99
  Describes how to validate input in the dataset bound to the `DataGrid` control.  
   
 ## Reference  
+
  <xref:System.Windows.Forms.DataGrid>  
  Provides an overview of the <xref:System.Windows.Forms.DataGrid> class.  
   
@@ -69,6 +72,7 @@ ms.assetid: 1d9d5683-43d2-42dd-b6c3-e43f4cf0de99
  Provides details about using this property to bind the <xref:System.Windows.Forms.DataGrid> control to data.  
   
 ## Related Sections  
+
  [Windows Forms Data Binding](../windows-forms-data-binding.md)  
  Provides links to topics on data binding in Windows Forms.  
   

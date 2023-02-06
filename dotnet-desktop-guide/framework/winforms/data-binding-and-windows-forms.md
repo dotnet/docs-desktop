@@ -17,6 +17,7 @@ helpviewer_keywords:
 ms.assetid: 419aac5e-819b-4aad-88b0-73a2f8c0bd27
 ---
 # Data Binding and Windows Forms
+
 In Windows Forms, you can bind to not just traditional data sources, but also to almost any structure that contains data. You can bind to an array of values that you calculate at run time, read from a file, or derive from the values of other controls.  
   
  In addition, you can bind any property of any control to the data source. In traditional data binding, you typically bind the display property—for example, the <xref:System.Windows.Forms.Control.Text%2A> property of a <xref:System.Windows.Forms.TextBox> control—to the data source. With the .NET Framework, you also have the option of setting other properties through binding as well. You might use binding to perform the following tasks:  
@@ -30,6 +31,7 @@ In Windows Forms, you can bind to not just traditional data sources, but also to
  Essentially, data binding is an automatic way of setting any run-time accessible property of any control on a form.  
   
 ## Types of Data Binding  
+
  Windows Forms can take advantage of two types of data binding: simple binding and complex binding. Each offers different advantages.  
   
 |Type of data binding|Description|  
@@ -38,9 +40,11 @@ In Windows Forms, you can bind to not just traditional data sources, but also to
 |Complex data binding|The ability of a control to bind to more than one data element, typically more than one record in a database. Complex binding is also called list-based binding. Examples of controls that support complex binding are the <xref:System.Windows.Forms.DataGridView>, <xref:System.Windows.Forms.ListBox>, and <xref:System.Windows.Forms.ComboBox> controls. For an example of complex data binding, see [How to: Bind a Windows Forms ComboBox or ListBox Control to Data](./controls/how-to-bind-a-windows-forms-combobox-or-listbox-control-to-data.md).|  
   
 ## BindingSource Component  
+
  To simplify data binding, Windows Forms enables you to bind a data source to the <xref:System.Windows.Forms.BindingSource> component and then bind controls to the <xref:System.Windows.Forms.BindingSource>. You can use the <xref:System.Windows.Forms.BindingSource> in simple or complex binding scenarios. In either case, the <xref:System.Windows.Forms.BindingSource> acts as an intermediary between the data source and bound controls providing change notification currency management and other services.  
   
 ## Common Scenarios That Employ Data Binding  
+
  Nearly every commercial application uses information read from data sources of one type or another, usually through data binding. The following list shows a few of the most common scenarios that utilize data binding as the method of data presentation and manipulation.  
   
 |Scenario|Description|  
