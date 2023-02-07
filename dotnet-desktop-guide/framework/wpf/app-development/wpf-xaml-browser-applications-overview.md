@@ -19,7 +19,7 @@ ms.assetid: 3a7a86a8-75d5-4898-96b9-73da151e5e16
 XAML browser applications (XBAPs) combines features of both Web applications and rich-client applications. Like Web applications, XBAPs can be deployed to a Web server and started from Internet Explorer or Firefox on Windows. Like rich-client applications, XBAPs can take advantage of the capabilities of WPF. Developing XBAPs is also similar to rich-client development. This topic provides a simple, high-level introduction to XBAP development and describes where XBAP development differs from standard rich-client development.
 
 >[!IMPORTANT]
-> XBAPs require legacy browsers to operate, such as Internet Explorer and Firefox. These older browsers are usually unsupported on Windows 10 and Windows 11.
+> XBAPs require legacy browsers to operate, such as Internet Explorer and Firefox. These older browser versions are usually unsupported on Windows 10 and Windows 11.
 
  This topic contains the following sections:
 
