@@ -102,7 +102,7 @@ The first step to creating a new app is opening Visual Studio and generating the
 
     :::image type="content" source="media/create-app-visual-studio/netdesktop-7.0/vs-config-new-project.png" alt-text="Configure new Windows Forms project in Visual Studio 2022 for .NET.":::
 
-01. Finally, in the **Additional information** window, select **.NET 6.0 (Long-term support)** for the **Framework** setting, and then click **Create**.
+01. Finally, in the **Additional information** window, select **.NET 7.0 (Standard Term Support)** for the **Framework** setting, and then click **Create**.
 
     :::image type="content" source="media/create-app-visual-studio/netdesktop-7.0/vs-select-framework.png" alt-text="Select the target framework for a Windows Forms project in Visual Studio 2022.":::
 
