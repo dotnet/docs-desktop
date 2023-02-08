@@ -185,7 +185,7 @@
       },
       "net": {
         "dest": "net-dest",
-        "moniker_range": ">= netdesktop-5.0"
+        "moniker_range": ">= netdesktop-6.0"
       }
     }
   }
