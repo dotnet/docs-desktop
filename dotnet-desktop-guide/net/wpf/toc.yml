@@ -1,5 +1,5 @@
 items:
-- name: Windows Presentation Foundation for .NET Core
+- name: Windows Presentation Foundation for .NET
   href: index.yml
 - name: Get started
   expanded: true

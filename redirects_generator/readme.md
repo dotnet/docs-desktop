@@ -8,7 +8,7 @@ The definitions generate two-way redirects between versioned content. The defini
 {
     "Moniker1": "netframeworkdesktop-4.8",
     "RepoPath1": "dotnet-desktop-guide/framework/",
-    "Moniker2": "netdesktop-5.0",
+    "Moniker2": "netdesktop-7.0",
     "RepoPath2": "dotnet-desktop-guide/net/",
     "PublishRoot": "/dotnet/desktop/",
     ...
@@ -31,12 +31,12 @@ There are three settings:
 
 `Moniker1` and `RepoPath1` work together to define a repo path and version. `Moniker2` and `RepoPath2` work together to define another repo path and version. Redirects between monikers require that the path of article `Moniker1` be rewritten in the path as if it exists in the repo where `Moniker2` is.
 
-When you use the version switcher to move from moniker `netdesktop-5.0` to `netframeworkdesktop-4.8`, it replaces the `?view=` query string, but keeps the same URL file path:
+When you use the version switcher to move from moniker `netdesktop-7.0` to `netframeworkdesktop-4.8`, it replaces the `?view=` query string, but keeps the same URL file path:
 
 | Moniker | URL |
 | - | - |
 | `Moniker1` | `https://learn.microsoft.com/dotnet/desktop/winforms/creating-event-handlers-in-windows-forms?view=netframeworkdesktop-4.8` |
-| `Moniker2` | `https://learn.microsoft.com/dotnet/desktop/winforms/creating-event-handlers-in-windows-forms?view=netdesktop-5.0` |
+| `Moniker2` | `https://learn.microsoft.com/dotnet/desktop/winforms/creating-event-handlers-in-windows-forms?view=netdesktop-7.0` |
 
 Based on the publishing path and repo paths of the monikers registered with the build system, you can reverse engineer the path to the source file by continually transforming the URL:
 
@@ -77,7 +77,7 @@ The final part of the config file are all the entries for redirection. A redirec
 {
     "Redirect": "OneWay",
     "SourceUrl": "/dotnet/desktop/winforms/creating-event-handlers-in-windows-forms?view=netframeworkdesktop-4.8",
-    "TargetUrl": "/dotnet/desktop/winforms/forms/events?view=netdesktop-5.0"
+    "TargetUrl": "/dotnet/desktop/winforms/forms/events?view=netdesktop-7.0"
 },
 ```
 
@@ -90,7 +90,7 @@ The `Redirect` field represents the type of redirect and can be one of the follo
   ```json
   {
     "source_path": "dotnet-desktop-guide/net/winforms/creating-event-handlers-in-windows-forms.md",
-    "redirect_url": "/dotnet/desktop/winforms/forms/events?view=netdesktop-5.0"
+    "redirect_url": "/dotnet/desktop/winforms/forms/events?view=netdesktop-7.0"
   },
   ```
 
@@ -101,11 +101,11 @@ The `Redirect` field represents the type of redirect and can be one of the follo
   ```json
   {
     "source_path": "dotnet-desktop-guide/net/winforms/creating-event-handlers-in-windows-forms.md",
-    "redirect_url": "/dotnet/desktop/winforms/forms/events?view=netdesktop-5.0"
+    "redirect_url": "/dotnet/desktop/winforms/forms/events?view=netdesktop-7.0"
   },
   {
     "source_path": "dotnet-desktop-guide/framework/forms/events.md",
-    "redirect_url": "/dotnet/desktop/winforms/winforms/creating-event-handlers-in-windows-forms?view=netdesktop-5.0"
+    "redirect_url": "/dotnet/desktop/winforms/winforms/creating-event-handlers-in-windows-forms?view=netdesktop-7.0"
   },
   ```
 
