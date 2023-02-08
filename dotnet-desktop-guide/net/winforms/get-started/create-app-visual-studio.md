@@ -152,18 +152,14 @@ You can position and size the controls according to the following settings. Eith
 |-------------|----------|------------|
 | **Form**    | Text     | `Names`    |
 |             | Size     | `268, 180` |
-|             |          |            |
 | **Label**   | Location | `12, 9`    |
 |             | Text     | `Names`    |
-|             |          |            |
 | **Listbox** | Name     | `lstNames` |
 |             | Location | `12, 27`   |
 |             | Size     | `120, 94`  |
-|             |          |            |
 | **Textbox** | Name     | `txtName`  |
 |             | Location | `138, 26`  |
 |             | Size     | `100, 23`  |
-|             |          |            |
 | **Button**  | Name     | `btnAdd`   |
 |             | Location | `138, 55`  |
 |             | Size     | `100, 23`  |
