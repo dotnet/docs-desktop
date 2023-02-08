@@ -1,7 +1,7 @@
 ---
 title: "Create a new app with Visual Studio tutorial"
 description: Follow this tutorial to learn how to create a new WPF app for .NET with Visual Studio 2019.
-ms.date: 11/16/2021
+ms.date: 02/07/2023
 ms.topic: tutorial
 dev_langs: 
   - "csharp"
@@ -31,63 +31,35 @@ Here's a preview of the app you'll build while following this tutorial:
 
 ## Prerequisites
 
-:::moniker range="netdesktop-5.0"
-
-- [Visual Studio 2019 version 16.8 or later versions](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+desktopguide+winforms)
-  - Select the [Visual Studio Desktop workload](/visualstudio/install/modify-visual-studio?view=vs-2019&preserve-view=true#modify-workloads)
-  - Select the [.NET 5 individual component](/visualstudio/install/modify-visual-studio?view=vs-2019&preserve-view=true#modify-individual-components)
-
-:::moniker-end
-
 :::moniker range="netdesktop-6.0"
 
-- [Visual Studio 2022 version 17.0 or later versions](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link&0utm_content=download+vs2022+desktopguide+winforms)
+- [Visual Studio 2022 version 17.0 or later versions](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link&0utm_content=download+vs2022+desktopguide+wpf)
   - Select the [.NET desktop development workload](/visualstudio/install/modify-visual-studio?view=vs-2019&preserve-view=true#modify-workloads)
   - Select the [.NET 6 individual component](/visualstudio/install/modify-visual-studio?view=vs-2019&preserve-view=true#modify-individual-components)
 
 :::moniker-end
 
+:::moniker range="netdesktop-7.0"
+
+- [Visual Studio 2022 version 17.4 or later versions](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link&0utm_content=download+vs2022+desktopguide+wpf)
+  - Select the [.NET desktop development workload](/visualstudio/install/modify-visual-studio?view=vs-2022&preserve-view=true#modify-workloads)
+  - Select the [.NET 7 individual component](/visualstudio/install/modify-visual-studio?view=vs-2022&preserve-view=true#modify-individual-components)
+
+:::moniker-end
+
+> [!TIP]
+> Use Visual Studio 2022 version 17.4 or later and install both the .NET 7 and .NET 6 individual components. Support for .NET 7 was added in Visual Studio 2022 version 17.4.
+
 ## Create a WPF app
 
 The first step to creating a new app is opening Visual Studio and generating the app from a template.
-
-:::moniker range="netdesktop-5.0"
-
-01. Open Visual Studio.
-01. Select **Create a new project**.
-
-    :::image type="content" source="media/create-app-visual-studio/netdesktop-5.0/vs-create-new-project.png" alt-text="Create a new WPF project in Visual Studio 2019 for .NET.":::
-
-01. In the **Search for templates** box, type **wpf**, and then press <kbd>Enter</kbd>.
-01. In the **code language** dropdown, choose **C#** or **Visual Basic**.
-01. In the templates list, select **WPF Application** and then select **Next**.
-
-    > [!IMPORTANT]
-    > Don't select the **WPF Application (.NET _Framework_)** template.
-
-    :::image type="content" source="media/create-app-visual-studio/netdesktop-5.0/vs-template-search.png" alt-text="Search for the WPF template in Visual Studio 2019 for .NET.":::
-
-01. In the **Configure your new project** window, do the following:
-
-    01. In the **Project name** box, enter **Names**.
-    01. Select the **Place solution and project in the same directory** check box.
-    01. Optionally, choose a different **Location** to save your code.
-    01. Select the **Next** button.
-
-    :::image type="content" source="media/create-app-visual-studio/netdesktop-5.0/vs-config-new-project.png" alt-text="Configure new WPF project in Visual Studio 2019 for .NET":::
-
-01. In the **Additional information** window, select **.NET 5.0 (Current)** for **Target Framework**. Select the **Create** button.
-
-    :::image type="content" source="media/create-app-visual-studio/netdesktop-5.0/vs-config-new-project-next.png" alt-text="Select target framework for new WPF project in Visual Studio 2019 for .NET":::
-
-:::moniker-end
 
 :::moniker range="netdesktop-6.0"
 
 01. Open Visual Studio.
 01. Select **Create a new project**.
 
-    :::image type="content" source="media/create-app-visual-studio/netdesktop-6.0/vs-create-new-project.png" alt-text="Create a new WPF project in Visual Studio 2022 for .NET.":::
+    :::image type="content" source="media/create-app-visual-studio/netdesktop-6.0/vs-create-new-project.png" alt-text="Create a new WPF project in Visual Studio 2022 for .NET. 6":::
 
 01. In the **Search for templates** box, type _wpf_, and then press <kbd>Enter</kbd>.
 01. In the **code language** dropdown, choose **C#** or **Visual Basic**.
@@ -98,7 +70,7 @@ The first step to creating a new app is opening Visual Studio and generating the
 
     The following image shows both C# and Visual Basic .NET project templates. If you applied the **code language** filter, you'll see the corresponding template.
 
-    :::image type="content" source="media/create-app-visual-studio/netdesktop-6.0/vs-template-search.png" alt-text="Search for the WPF template in Visual Studio 2022 for .NET.":::
+    :::image type="content" source="media/create-app-visual-studio/netdesktop-6.0/vs-template-search.png" alt-text="Search for the WPF template in Visual Studio 2022 for .NET. 6":::
 
 01. In the **Configure your new project** window, do the following:
 
@@ -107,11 +79,44 @@ The first step to creating a new app is opening Visual Studio and generating the
     01. Optionally, choose a different **Location** to save your code.
     01. Select the **Next** button.
 
-    :::image type="content" source="media/create-app-visual-studio/netdesktop-6.0/vs-config-new-project.png" alt-text="Configure new WPF project in Visual Studio 2022 for .NET":::
+    :::image type="content" source="media/create-app-visual-studio/netdesktop-6.0/vs-config-new-project.png" alt-text="Configure new WPF project in Visual Studio 2022 for .NET 6":::
 
 01. In the **Additional information** window, select **.NET 6.0 (Long-term support)** for **Target Framework**. Select the **Create** button.
 
-    :::image type="content" source="media/create-app-visual-studio/netdesktop-6.0/vs-config-new-project-next.png" alt-text="Select target framework for new WPF project in Visual Studio 2022 for .NET":::
+    :::image type="content" source="media/create-app-visual-studio/netdesktop-6.0/vs-config-new-project-next.png" alt-text="Select target framework for new WPF project in Visual Studio 2022 for .NET 6":::
+
+:::moniker-end
+
+:::moniker range="netdesktop-7.0"
+
+01. Open Visual Studio.
+01. Select **Create a new project**.
+
+    :::image type="content" source="media/create-app-visual-studio/netdesktop-7.0/vs-create-new-project.png" alt-text="Create a new WPF project in Visual Studio 2022 for .NET 7.":::
+
+01. In the **Search for templates** box, type _wpf_, and then press <kbd>Enter</kbd>.
+01. In the **code language** dropdown, choose **C#** or **Visual Basic**.
+01. In the templates list, select **WPF Application** and then select **Next**.
+
+    > [!IMPORTANT]
+    > Don't select the **WPF Application (.NET _Framework_)** template.
+
+    The following image shows both C# and Visual Basic .NET project templates. If you applied the **code language** filter, you'll see the corresponding template.
+
+    :::image type="content" source="media/create-app-visual-studio/netdesktop-7.0/vs-template-search.png" alt-text="Search for the WPF template in Visual Studio 2022 for .NET. 7":::
+
+01. In the **Configure your new project** window, do the following:
+
+    01. In the **Project name** box, enter _Names_.
+    01. Select the **Place solution and project in the same directory** check box.
+    01. Optionally, choose a different **Location** to save your code.
+    01. Select the **Next** button.
+
+    :::image type="content" source="media/create-app-visual-studio/netdesktop-7.0/vs-config-new-project.png" alt-text="Configure new WPF project in Visual Studio 2022 for .NET 7":::
+
+01. In the **Additional information** window, select **.NET 7.0 (Standard Term Support)** for **Target Framework**. Select the **Create** button.
+
+    :::image type="content" source="media/create-app-visual-studio/netdesktop-7.0/vs-config-new-project-next.png" alt-text="Select target framework for new WPF project in Visual Studio 2022 for .NET 7":::
 
 :::moniker-end
 
@@ -121,17 +126,7 @@ Once the app is generated, Visual Studio should open the XAML designer pane for 
 
 Support for WPF in Visual Studio has five important components that you'll interact with as you create an app:
 
-:::moniker range="netdesktop-5.0"
-
-:::image type="content" source="media/create-app-visual-studio/netdesktop-5.0/vs-main-window.png" alt-text="The important components of Visual Studio you should know when creating a WPF project for .NET":::
-
-:::moniker-end
-
-:::moniker range="netdesktop-6.0"
-
-:::image type="content" source="media/create-app-visual-studio/netdesktop-6.0/vs-main-window.png" alt-text="The important components of Visual Studio you should know when creating a WPF project for .NET":::
-
-:::moniker-end
+:::image type="content" source="media/create-app-visual-studio/vs-main-window.png" alt-text="The important components of Visual Studio you should know when creating a WPF project for .NET":::
 
 01. Solution Explorer
 
@@ -202,7 +197,7 @@ First, run the project and see the default output. You'll see a window that pops
 
 For our example app, this window is too large, and the title bar isn't descriptive. Change the title and size of the window by changing the appropriate attributes in the XAML to the following values:
 
-:::code language="xaml" source="snippets/create-app-visual-studio/netdesktop-5.0/csharp/Start.xaml" highlight="8":::
+:::code language="xaml" source="snippets/create-app-visual-studio/csharp/Start.xaml" highlight="8":::
 
 ## Prepare the layout
 
@@ -216,7 +211,7 @@ Before we add the new rows and columns, add a new attribute to the `<Grid>` elem
 
 Next, define two rows and two columns, dividing the grid into four cells:
 
-:::code language="xaml" source="snippets/create-app-visual-studio/netdesktop-5.0/csharp/LayoutStep2.xaml" highlight="9-21":::
+:::code language="xaml" source="snippets/create-app-visual-studio/csharp/LayoutStep2.xaml" highlight="9-21":::
 
 Select the grid in either the XAML code editor or XAML designer, you'll see that the XAML designer shows each row and column:
 
@@ -226,13 +221,13 @@ Select the grid in either the XAML code editor or XAML designer, you'll see that
 
 Now that the grid has been created, we can start adding controls to it. First, start with the label control. Create a new `<Label>` element inside the `<Grid>` element, after the row and column definitions, and give it a string value of `Names`:
 
-:::code language="xaml" source="snippets/create-app-visual-studio/netdesktop-5.0/csharp/LayoutStep3.xaml" range="9-23" highlight="13":::
+:::code language="xaml" source="snippets/create-app-visual-studio/csharp/LayoutStep3.xaml" range="9-23" highlight="13":::
 
 The `<Label>Names</Label>` defines the content `Names`. Some controls understand how to handle content, others don't. The content of a control maps to the `Content` property. Setting the content through XAML attribute syntax, you would use this format: `<Label Content="Names" />`. Both ways accomplish the same thing, setting the content of the label to display the text `Names`.
 
 We have a problem though, the label takes up half the window as it was automatically assigned to the first row and column of the grid. For our first row, we don't need that much space because we're only going to use that row for the label. Change the `Height` attribute of the first `<RowDefinition>` from `*` to `Auto`. The `Auto` value automatically sizes the grid row to the size of its contents, in this case, the label control.
 
-:::code language="xaml" source="snippets/create-app-visual-studio/netdesktop-5.0/csharp/LayoutStep4.xaml" range="11-14" highlight="2":::
+:::code language="xaml" source="snippets/create-app-visual-studio/csharp/LayoutStep4.xaml" range="11-14" highlight="2":::
 
 Notice that the designer now shows the label occupying a small amount of the available height. There's now more room for the next row to occupy. Most controls define some sort of height and width value that they should occupy that looks best for them. For example, the label control has a height value that ensures that you can read it.
 
@@ -256,7 +251,7 @@ Notice how your label now moved to the second column. You can use the `Grid.Row`
 
 Now that the grid is correctly sized and the label created, add a list box control on the row below the label. The list box will be in row `1` and column `0`. We'll also give this control the name of `lstNames`. Once a control is named, it can be referenced in the code-behind. The name is assigned to the control with the `x:Name` attribute.
 
-:::code language="xaml" source="snippets/create-app-visual-studio/netdesktop-5.0/csharp/MoreControls1.xaml" range="9-24" highlight="14":::
+:::code language="xaml" source="snippets/create-app-visual-studio/csharp/MoreControls1.xaml" range="9-24" highlight="14":::
 
 ## Add the remaining controls
 
@@ -266,13 +261,13 @@ The stack panel differs from the grid in how the controls are placed. While you 
 
 Create the `<StackPanel>` control after the list box and put it in grid row `1` column `1`. Add another attribute named `Margin` with a value of `5,0,0,0`:
 
-:::code language="xaml" source="snippets/create-app-visual-studio/netdesktop-5.0/csharp/MoreControls2.xaml" id="StackPanel1" highlight="14-16":::
+:::code language="xaml" source="snippets/create-app-visual-studio/csharp/MoreControls2.xaml" id="StackPanel1" highlight="14-16":::
 
 The `Margin` attribute was previously used on the grid, but we only put in a single value, `10`. Now we've used a value of `5,0,0,0` on the stack panel. The margin is a `Thickness` type and can interpret both values. A thickness defines the space around each side of a rectangular frame, **left**, **top**, **right**, **bottom**, respectively. If the value for the margin is a single value, it uses that value for all four sides.
 
 Next, create a `<TextBox>` and `<Button>` control in the `<StackPanel>`.
 
-:::code language="xaml" source="snippets/create-app-visual-studio/netdesktop-5.0/csharp/MoreControls2.xaml" id="StackPanel2":::
+:::code language="xaml" source="snippets/create-app-visual-studio/csharp/MoreControls2.xaml" id="StackPanel2":::
 
 The layout for the window is complete. However, our app doesn't have any logic in it to actually be functional. Next, we need to hook up the control events to code and get the app to actually do something.
 
@@ -280,12 +275,12 @@ The layout for the window is complete. However, our app doesn't have any logic i
 
 The `<Button>` we created has a `Click` event that is raised when the user presses the button. You can subscribe to this event and add code to add a name to the list box. Just like you set a property on a control by adding a XAML attribute, you can use a XAML attribute to subscribe to an event. Set the `Click` attribute to `ButtonAddName_Click`
 
-:::code language="xaml" source="snippets/create-app-visual-studio/netdesktop-5.0/csharp/MoreControls3.xaml" id="ButtonEvent" highlight="3":::
+:::code language="xaml" source="snippets/create-app-visual-studio/csharp/MoreControls3.xaml" id="ButtonEvent" highlight="3":::
 
 Now you need to generate the handler code. Right-click on `ButtonAddName_Click` and select **Go To Definition**. This action generates a method in the code-behind for you that matches the handler name you've entered.
 
-:::code language="csharp" source="snippets/create-app-visual-studio/netdesktop-5.0/csharp/MoreControls3.xaml.cs" id="ButtonEvent":::
-:::code language="vb" source="snippets/create-app-visual-studio/netdesktop-5.0/vb/MoreControls3.xaml.vb" id="ButtonEvent":::
+:::code language="csharp" source="snippets/create-app-visual-studio/csharp/MoreControls3.xaml.cs" id="ButtonEvent":::
+:::code language="vb" source="snippets/create-app-visual-studio/vb/MoreControls3.xaml.vb" id="ButtonEvent":::
 
 Next, add the following code to do these three steps:
 
@@ -293,8 +288,8 @@ Next, add the following code to do these three steps:
 01. Validate that the name entered in the text box doesn't already exist.
 01. Add the name to the list box.
 
-:::code language="csharp" source="snippets/create-app-visual-studio/netdesktop-5.0/csharp/Final.xaml.cs" id="FinalCode":::
-:::code language="vb" source="snippets/create-app-visual-studio/netdesktop-5.0/vb/Final.xaml.vb" id="FinalCode":::
+:::code language="csharp" source="snippets/create-app-visual-studio/csharp/Final.xaml.cs" id="FinalCode":::
+:::code language="vb" source="snippets/create-app-visual-studio/vb/Final.xaml.vb" id="FinalCode":::
 
 ## Run the app
 

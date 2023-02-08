@@ -5,18 +5,18 @@ summary: "Welcome to the Desktop Guide. The Desktop Guide is a set of documentat
 
 metadata:
   title: Desktop Guide for WPF and Windows Forms on .NET
-  description: Introduction to the Desktop Guide for WPF and Windows Forms for both .NET 5 and .NET Framework.
+  description: Introduction to the Desktop Guide for WPF and Windows Forms for both .NET 6+ and .NET Framework.
   ms.topic: landing-page
   ms.product: dotnet
   author: adegeo
   ms.author: adegeo 
-  ms.date: 11/15/2021
+  ms.date: 02/07/2023
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
 
 landingContent:
 
-- title: .NET 5+ (and .NET Core 3.1)
+- title: .NET 6+
   linkLists:
   - linkListType: overview
     links:
