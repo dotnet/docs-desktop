@@ -59,7 +59,7 @@ The first step to creating a new app is opening Visual Studio and generating the
 01. Open Visual Studio.
 01. Select **Create a new project**.
 
-    :::image type="content" source="media/create-app-visual-studio/netdesktop-6.0/vs-create-new-project.png" alt-text="Create a new WPF project in Visual Studio 2022 for .NET.":::
+    :::image type="content" source="media/create-app-visual-studio/netdesktop-6.0/vs-create-new-project.png" alt-text="Create a new WPF project in Visual Studio 2022 for .NET. 6":::
 
 01. In the **Search for templates** box, type _wpf_, and then press <kbd>Enter</kbd>.
 01. In the **code language** dropdown, choose **C#** or **Visual Basic**.
@@ -70,7 +70,7 @@ The first step to creating a new app is opening Visual Studio and generating the
 
     The following image shows both C# and Visual Basic .NET project templates. If you applied the **code language** filter, you'll see the corresponding template.
 
-    :::image type="content" source="media/create-app-visual-studio/netdesktop-6.0/vs-template-search.png" alt-text="Search for the WPF template in Visual Studio 2022 for .NET.":::
+    :::image type="content" source="media/create-app-visual-studio/netdesktop-6.0/vs-template-search.png" alt-text="Search for the WPF template in Visual Studio 2022 for .NET. 6":::
 
 01. In the **Configure your new project** window, do the following:
 
@@ -79,20 +79,20 @@ The first step to creating a new app is opening Visual Studio and generating the
     01. Optionally, choose a different **Location** to save your code.
     01. Select the **Next** button.
 
-    :::image type="content" source="media/create-app-visual-studio/netdesktop-6.0/vs-config-new-project.png" alt-text="Configure new WPF project in Visual Studio 2022 for .NET":::
+    :::image type="content" source="media/create-app-visual-studio/netdesktop-6.0/vs-config-new-project.png" alt-text="Configure new WPF project in Visual Studio 2022 for .NET 6":::
 
 01. In the **Additional information** window, select **.NET 6.0 (Long-term support)** for **Target Framework**. Select the **Create** button.
 
-    :::image type="content" source="media/create-app-visual-studio/netdesktop-6.0/vs-config-new-project-next.png" alt-text="Select target framework for new WPF project in Visual Studio 2022 for .NET":::
+    :::image type="content" source="media/create-app-visual-studio/netdesktop-6.0/vs-config-new-project-next.png" alt-text="Select target framework for new WPF project in Visual Studio 2022 for .NET 6":::
 
 :::moniker-end
 
-:::moniker range="netdesktop-6.0"
+:::moniker range="netdesktop-7.0"
 
 01. Open Visual Studio.
 01. Select **Create a new project**.
 
-    :::image type="content" source="media/create-app-visual-studio/netdesktop-7.0/vs-create-new-project.png" alt-text="Create a new WPF project in Visual Studio 2022 for .NET.":::
+    :::image type="content" source="media/create-app-visual-studio/netdesktop-7.0/vs-create-new-project.png" alt-text="Create a new WPF project in Visual Studio 2022 for .NET 7.":::
 
 01. In the **Search for templates** box, type _wpf_, and then press <kbd>Enter</kbd>.
 01. In the **code language** dropdown, choose **C#** or **Visual Basic**.
@@ -103,7 +103,7 @@ The first step to creating a new app is opening Visual Studio and generating the
 
     The following image shows both C# and Visual Basic .NET project templates. If you applied the **code language** filter, you'll see the corresponding template.
 
-    :::image type="content" source="media/create-app-visual-studio/netdesktop-7.0/vs-template-search.png" alt-text="Search for the WPF template in Visual Studio 2022 for .NET.":::
+    :::image type="content" source="media/create-app-visual-studio/netdesktop-7.0/vs-template-search.png" alt-text="Search for the WPF template in Visual Studio 2022 for .NET. 7":::
 
 01. In the **Configure your new project** window, do the following:
 
@@ -112,11 +112,11 @@ The first step to creating a new app is opening Visual Studio and generating the
     01. Optionally, choose a different **Location** to save your code.
     01. Select the **Next** button.
 
-    :::image type="content" source="media/create-app-visual-studio/netdesktop-7.0/vs-config-new-project.png" alt-text="Configure new WPF project in Visual Studio 2022 for .NET":::
+    :::image type="content" source="media/create-app-visual-studio/netdesktop-7.0/vs-config-new-project.png" alt-text="Configure new WPF project in Visual Studio 2022 for .NET 7":::
 
 01. In the **Additional information** window, select **.NET 7.0 (Standard Term Support)** for **Target Framework**. Select the **Create** button.
 
-    :::image type="content" source="media/create-app-visual-studio/netdesktop-7.0/vs-config-new-project-next.png" alt-text="Select target framework for new WPF project in Visual Studio 2022 for .NET":::
+    :::image type="content" source="media/create-app-visual-studio/netdesktop-7.0/vs-config-new-project-next.png" alt-text="Select target framework for new WPF project in Visual Studio 2022 for .NET 7":::
 
 :::moniker-end
 
