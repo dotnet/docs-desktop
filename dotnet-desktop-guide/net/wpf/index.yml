@@ -1,13 +1,13 @@
 ### YamlMime:Landing
 
 title: Windows Presentation Foundation documentation
-summary: Learn about using Windows Presentation Foundation (WPF), an open-source, graphical user interface for Windows, on .NET 5.
+summary: Learn about using Windows Presentation Foundation (WPF), an open-source, graphical user interface for Windows, on .NET 7.
 
 metadata:
-  title: Windows Presentation Foundation for .NET 5 documentation
-  description: Learn about using Windows Presentation Foundation (WPF), an open-source, graphical user interface for Windows, on .NET 5.
+  title: Windows Presentation Foundation for .NET 7 documentation
+  description: Learn about using Windows Presentation Foundation (WPF), an open-source, graphical user interface for Windows, on .NET 7.
   ms.topic: landing-page
-  ms.date: 04/15/2021
+  ms.date: 02/08/2023
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview
 #               quickstart | reference | sample | tutorial | video | whats-new
@@ -33,7 +33,7 @@ landingContent:
             url: /dotnet/core/porting/upgrade-assistant-wpf-framework
       - linkListType: download
         links:
-          - text: Visual Studio 2019 version 16.9
+          - text: Visual Studio 2022 version 17.4
             url: https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+desktopguide+wpf
 
   - title: WPF windows
