@@ -531,7 +531,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/whats-new/index.md",
-            "redirect_url": "/dotnet/desktop/winforms/whats-new/net60?view=netdesktop-7.0"
+            "redirect_url": "/dotnet/desktop/winforms/whats-new/net70?view=netdesktop-7.0"
         },
         {
             "source_path": "dotnet-desktop-guide/net/wpf/advanced/dependency-property-metadata.md",

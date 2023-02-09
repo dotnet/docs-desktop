@@ -351,7 +351,7 @@
         {
             "Redirect": "Normal",
             "SourceUrl": "/dotnet/desktop/winforms/whats-new/index?view=netdesktop-7.0",
-            "TargetUrl": "/dotnet/desktop/winforms/whats-new/net60?view=netdesktop-7.0"
+            "TargetUrl": "/dotnet/desktop/winforms/whats-new/net70?view=netdesktop-7.0"
         },
 
 
