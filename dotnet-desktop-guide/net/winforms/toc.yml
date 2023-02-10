@@ -3,6 +3,8 @@ items:
   href: index.yml
 - name: What's new
   items:
+  - name: What's new in .NET 7.0
+    href: whats-new/net70.md
   - name: What's new in .NET 6.0
     href: whats-new/net60.md
   - name: What's new in .NET 5.0

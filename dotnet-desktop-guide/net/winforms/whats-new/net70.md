@@ -166,6 +166,7 @@ Here are some other notable changes:
 
 ## See also
 
+- [.NET Blog - What's new in Windows Forms in .NET 7](https://devblogs.microsoft.com/dotnet/winforms-enhancements-in-dotnet-7)
 - [Breaking changes in Windows Forms](/dotnet/core/compatibility/winforms)
 - [Tutorial: Create a new WinForms app](../get-started/create-app-visual-studio.md)
 - [How to migrate a Windows Forms desktop app to .NET 7](../migration/index.md)

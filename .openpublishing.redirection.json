@@ -804,6 +804,10 @@
         {
             "source_path": "dotnet-desktop-guide/net/winforms/multiple-controls-bound-to-data-source-synchronized.md",
             "redirect_url": "/dotnet/desktop/winforms/data/how-to-synchronize-multiple-controls?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/whats-new/index.md",
+            "redirect_url": "/dotnet/desktop/wpf/whats-new/net70?view=netdesktop-7.0"
         }
     ]
 }
