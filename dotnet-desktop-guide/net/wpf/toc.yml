@@ -8,6 +8,10 @@ items:
     href: overview/index.md
   - name: Create a WPF application
     href: get-started/create-app-visual-studio.md
+- name: What's new
+  items:
+  - name: What's new in .NET 7.0
+    href: whats-new/net70.md
 - name: Migration
   items:
   - name: Differences from .NET Framework

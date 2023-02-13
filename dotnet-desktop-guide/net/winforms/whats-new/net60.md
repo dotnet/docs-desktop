@@ -247,4 +247,4 @@ Microsoft UI Automation patterns work better with accessibility tools like Narra
 
 - [Breaking changes in Windows Forms](/dotnet/core/compatibility/winforms)
 - [Tutorial: Create a new WinForms app](../get-started/create-app-visual-studio.md)
-- [How to migrate a Windows Forms desktop app to .NET 6](../migration/index.md)
+- [How to migrate a Windows Forms desktop app to .NET 5](../migration/index.md)
