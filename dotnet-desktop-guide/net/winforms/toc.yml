@@ -3,6 +3,8 @@ items:
   href: index.yml
 - name: What's new
   items:
+  - name: What's new in .NET 7.0
+    href: whats-new/net70.md
   - name: What's new in .NET 6.0
     href: whats-new/net60.md
   - name: What's new in .NET 5.0
@@ -15,7 +17,7 @@ items:
     href: get-started/create-app-visual-studio.md
 - name: Migration
   items:
-  - name: Migrate to .NET 5
+  - name: Migrate to .NET 7
     href: migration/index.md
 - name: Forms
   items:

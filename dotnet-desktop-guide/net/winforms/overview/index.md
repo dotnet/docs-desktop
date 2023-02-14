@@ -1,6 +1,6 @@
 ---
 title: What is Windows Forms
-description: This article gives an overview of Windows Forms with .NET Core and .NET 5.
+description: This article gives an overview of Windows Forms with .NET
 ms.date: 11/15/2021
 ms.topic: overview
 #Customer intent: As a developer, I want to understand the components of Windows Forms so that I can understand the overall picture of Windows Forms.
@@ -16,9 +16,9 @@ There are two implementations of Windows Forms:
 
 01. The open-source implementation hosted on [GitHub](https://github.com/dotnet/winforms).
 
-    This version runs on .NET 5+ (and .NET Core 3.1). The Windows Forms Visual Designer requires, at a minimum, [Visual Studio 2019 version 16.8](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+desktopguide+winforms).
+    This version runs on .NET 6+. The Windows Forms Visual Designer requires, at a minimum, [Visual Studio 2019 version 16.8](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+desktopguide+winforms).
 
-    The latest version of Windows Forms is for .NET 6 using [Visual Studio 2022 version 17.0](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2022+desktopguide+winforms).
+    The latest version is Windows Forms for .NET 7 using [Visual Studio 2022 version 17.4](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2022+desktopguide+winforms).
 
 01. The .NET Framework 4 implementation that's supported by Visual Studio 2022, Visual Studio 2019, and Visual Studio 2017.
 
@@ -36,7 +36,7 @@ To learn how to create a Windows Forms app, see [Tutorial: Create a new WinForms
 
 ## Why migrate from .NET Framework
 
-Windows Forms for .NET 6.0 provides new features and enhancements over .NET Framework. For more information, see [What's new in Windows Forms for .NET 6](../whats-new/net60.md) and [.NET 5](../whats-new/net50.md). To learn how to migrate an app, see [How to migrate a Windows Forms desktop app to .NET 5](../migration/index.md).
+Windows Forms for .NET 7.0 provides new features and enhancements over .NET Framework. For more information, see [What's new in Windows Forms for .NET 7](../whats-new/net70.md) and [.NET 5](../whats-new/net50.md). To learn how to migrate an app, see [How to migrate a Windows Forms desktop app to .NET 5](../migration/index.md).
 
 ## Build rich, interactive user interfaces
 
