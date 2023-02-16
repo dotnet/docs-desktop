@@ -1,7 +1,7 @@
 ---
 title: Binding sources overview
 description: Discover the types of objects you can use as the binding source for your applications in Windows Presentation Foundation (WPF).
-ms.date: 04/28/2021
+ms.date: 02/15/2023
 author: adegeo
 ms.author: adegeo
 helpviewer_keywords:
@@ -94,7 +94,7 @@ If you have an advanced scenario and you want to implement your own collection, 
 
 ## Permission requirements in data binding
 
-Unlike .NET Framework, .NET 5+ (and .NET Core 3.1) runs with full-trust security. All data binding runs with the same access as the user running the application.
+Unlike .NET Framework, .NET runs with full-trust security. All data binding runs with the same access as the user running the application.
 
 ## See also
 
