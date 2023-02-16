@@ -1,7 +1,7 @@
 ---
 title: What is Windows Presentation Foundation
-description: This article gives an overview of WPF with .NET Core and .NET 5.
-ms.date: 01/14/2021
+description: This article gives an overview of WPF with .NET.
+ms.date: 02/15/2023
 ms.topic: overview
 dev_langs: 
   - "csharp"
@@ -19,7 +19,7 @@ There are two implementations of WPF:
 
 01. **.NET** version (this guide):
 
-    An open-source implementation of WPF hosted on [GitHub](https://github.com/dotnet/wpf), which runs on .NET 5 or higher (including .NET Core 3.1). The XAML designer requires, at a minimum, [Visual Studio 2019 version 16.8](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+desktopguide+wpf).
+    An open-source implementation of WPF hosted on [GitHub](https://github.com/dotnet/wpf), which runs on .NET. The XAML designer requires, at a minimum, [Visual Studio 2019 version 16.8](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+desktopguide+wpf). But depending on your version of .NET, you may be required to use a newer version of Visual Studio.
 
     Even though .NET is a cross-platform technology, WPF only runs on Windows.
 
@@ -33,7 +33,7 @@ This overview is intended for newcomers and covers the key capabilities and conc
 
 ## Why migrate from .NET Framework
 
-WPF for .NET 5.0 provides new features and enhancements over .NET Framework. To learn how to migrate an app, see [How to migrate a WPF desktop app to .NET 5](../migration/convert-project-from-net-framework.md).
+WPF for .NET provides new features and enhancements over .NET Framework. To learn how to migrate an app, see [How to migrate a WPF desktop app to .NET 5](../migration/convert-project-from-net-framework.md).
 
 ## Program with WPF
 
@@ -486,7 +486,7 @@ For more information on custom controls, see [Control authoring overview](../../
 ## See also
 
 - [Tutorial: Create a new WPF app](../get-started/create-app-visual-studio.md)
-- [Migrate a WPF app to .NET Core](../migration/convert-project-from-net-framework.md)
+- [Migrate a WPF app to .NET](../migration/convert-project-from-net-framework.md)
 - [Overview of WPF windows](../windows/index.md)
 - [Data binding overview](../data/index.md)
 - [XAML overview](../xaml/index.md)

@@ -1,9 +1,9 @@
 ---
 title: How to create a template
-description: Learn how to create and reference a control template in Windows Presentation Foundation and .NET Core.
+description: Learn how to create and reference a control template in Windows Presentation Foundation and .NET.
 author: adegeo
 ms.author: adegeo
-ms.date: 04/15/2021
+ms.date: 02/15/2023
 no-loc: ["<Window>", "<ControlTemplate>", "<Ellipse>", "<ContentPresenter>", "<Trigger>", "<Setter>", "<PropertyTrigger>", "<Grid>", "<VisualStateManager.VisualStateGroups>", "<VisualStateGroup>", "<VisualState>", "<Storyboard>", "SizeToContent", "MinWidth", "TargetType", "Title"]
 ms.topic: how-to
 helpviewer_keywords: 
