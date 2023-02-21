@@ -89,8 +89,8 @@ When a user presses the buttons at the bottom of the message box, the correspond
 
 | Button options | <kbd>ESC</kbd> or **Close** button result |
 |----------------|-------------------------------------------|
-| `Ok`           | `Ok`                                      |
-| `OkCancel`     | `Cancel`                                  |
+| `OK`           | `OK`                                      |
+| `OKCancel`     | `Cancel`                                  |
 | `YesNo`        | <kbd>ESC</kbd> keyboard shortcut and **Close** button disabled. User must press **Yes** or **No**. |
 | `YesNoCancel`  | `Cancel`                                  |
 
