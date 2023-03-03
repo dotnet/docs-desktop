@@ -177,7 +177,7 @@ Controls are always in a specific **state**. For example, when the mouse moves o
 | Focused          | FocusStates           | The control has focus. |
 | Unfocused        | FocusStates           | The control does not have focus. |
 
-By defining a <xref:System.Windows.VisualStateManager?displayProperty=fullName> on the root element of a control template, you can trigger animations when a control enters a specific state. The `VisualStateManager` declares which combinations of <xref:System.Windows.VisualStateGroup> and <xref:System.Windows.VisualState> to watch. When the control enters a watched state, the animation defined by the `VisaulStateManager` is started.
+By defining a <xref:System.Windows.VisualStateManager?displayProperty=fullName> on the root element of a control template, you can trigger animations when a control enters a specific state. The `VisualStateManager` declares which combinations of <xref:System.Windows.VisualStateGroup> and <xref:System.Windows.VisualState> to watch. When the control enters a watched state, the animation defined by the `VisualStateManager` is started.
 
 For example, the following XAML code watches the `CommonStates.MouseOver` state to animate the fill color of the element named `backgroundElement`. When the control returns to the `CommonStates.Normal` state, the fill color of the element named `backgroundElement` is restored.
 
