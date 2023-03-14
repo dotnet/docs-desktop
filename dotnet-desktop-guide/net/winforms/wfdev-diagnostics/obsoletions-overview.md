@@ -2,7 +2,7 @@
 title: Obsolete Windows Forms features in .NET 7+
 titleSuffix: ""
 description: Learn about Windows Forms APIs that are marked as obsolete in .NET 7 and later versions that produce WFDEV compiler warnings.
-ms.date: 01/30/2023
+ms.date: 03/13/2023
 ---
 
 # Obsolete Windows Forms features in .NET 7+
@@ -20,6 +20,7 @@ The following table provides an index to the `WFDEVXXX` obsoletions and warnings
 | [WFDEV001](wfdev001.md) | Warning | Casting to/from <xref:System.IntPtr> is unsafe. Use `WParamInternal`, `LParamInternal`, or `ResultInternal` instead. |
 | [WFDEV002](wfdev002.md) | Warning/error | <xref:System.Windows.Forms.DomainUpDown.DomainUpDownAccessibleObject?displayProperty=nameWithType> is no longer used to provide accessible support for <xref:System.Windows.Forms.DomainUpDown> controls. Use <xref:System.Windows.Forms.AccessibleObject> instead. |
 | [WFDEV003](wfdev003.md) | Warning | <xref:System.Windows.Forms.DomainUpDown.DomainItemAccessibleObject?displayProperty=nameWithType> is no longer used to provide accessible support for <xref:System.Windows.Forms.DomainUpDown> items. Use <xref:System.Windows.Forms.AccessibleObject> instead. |
+| [WFDEV004](wfdev004.md) | Warning | `ListBox.DefaultItemHeight` constant is no longer used as the default item height. Default item height is now scaled according to the application default font. |
 
 ## Suppress warnings
 
@@ -61,4 +62,3 @@ To suppress the warnings in a project file:
 ## See also
 
 - [Obsolete .NET features in .NET 5+](/dotnet/fundamentals/syslib-diagnostics/obsoletions-overview)
-<!-- - (add link to breaking change page here...)-->
