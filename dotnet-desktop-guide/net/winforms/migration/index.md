@@ -312,9 +312,9 @@ If your project file is loading correctly, but compilation fails for your projec
 - **The type or namespace \<some name> could not be found**
 - **The name \<some name> does not exist in the current context**
 
-You may need to add the [`Microsoft.Windows.Compatibility`](https://www.nuget.org/packages/Microsoft.Windows.Compatibility/) package to your app. This package adds ~21,000 .NET APIs from .NET Framework, such as the `System.Configuration.ConfigurationManager` class and APIs for interacting with the Windows Registry. Add the `Microsoft.Windows.Compatibility` package.
+You may need to add the [`Microsoft.Windows.Compatibility`](https://www.nuget.org/packages/Microsoft.Windows.Compatibility/) package to your app. This package adds ~21,000 .NET APIs from .NET Framework, such as the `System.Configuration.ConfigurationManager` class and APIs for interacting with the Windows Registry.
 
-Edit your project file and add the following `<ItemGroup>` element:
+To add the package to your project, open the project file in an editor and add the following `<ItemGroup>` element:
 
 ```xml
 <ItemGroup>
