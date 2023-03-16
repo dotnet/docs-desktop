@@ -190,7 +190,7 @@ ms.assetid: bc208dfe-367d-426a-99de-52b7e7511e81
   
  Many of these commands include a set of default input bindings.  For example, if you specify that your application handles the copy command, you automatically get the keyboard binding "CTRL+C" You also get bindings for other input devices, such as Tablet PC pen gestures and speech information.  
   
- When you reference commands in the various command libraries using WPF WPF XAML processor references at load time).  
+ When you reference commands in the various command libraries using XAML, you can usually omit the class name of the library class that exposes the static command property. Generally, the command names are unambiguous as strings, and the owning types exist to provide a logical grouping of commands but are not necessary for disambiguation. For instance, you can specify `Command="Cut"` rather than the more verbose `Command="ApplicationCommands.Cut"`. This is a convenience mechanism that is built in to the WPF XAML processor for commands (more precisely, it is a type converter behavior of <xref:System.Windows.Input.ICommand>, which the WPF XAML processor references at load time).
   
 <a name="creating_commands"></a>
 
