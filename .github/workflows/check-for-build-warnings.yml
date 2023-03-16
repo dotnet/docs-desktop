@@ -16,5 +16,5 @@ jobs:
     - uses: dotnet/docs-actions/actions/status-checker@main
       with:
         repo_token: ${{ secrets.GITHUB_TOKEN }}
-        docs_path: "docs"
-        url_base_path: "dotnet"
+        docs_path: "dotnet-desktop-guide"
+        url_base_path: "dotnet/desktop"
