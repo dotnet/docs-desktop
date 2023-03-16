@@ -30,7 +30,7 @@ The following example demonstrates this key difference between <xref:System.Wind
 
 The following example demonstrates this key difference between <xref:System.Windows.Controls.DockPanel> and <xref:System.Windows.Controls.StackPanel> when setting the content of a `Window` during the `Window.Loaded` event:
 
-:::code language="cs" source="./snippets/how-to-choose-between-stackpanel-and-dockpanel/csharp/MainWindow.xaml.cs" id="EmojiViewBox":::
+:::code language="csharp" source="./snippets/how-to-choose-between-stackpanel-and-dockpanel/csharp/MainWindow.xaml.cs" id="EmojiViewBox":::
 :::code language="vb" source="./snippets/how-to-choose-between-stackpanel-and-dockpanel/vb/MainWindow.xaml.vb" id="EmojiViewBox":::
 
 ## See also
