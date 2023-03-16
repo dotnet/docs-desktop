@@ -5,7 +5,6 @@ ms.date: 03/16/2023
 dev_langs:
   - "csharp"
   - "vb"
-  - "cpp"
 helpviewer_keywords:
   - "controls [WPF], DockPanel"
   - "DockPanel control [WPF], StackPanel control compared to"
@@ -29,7 +28,7 @@ The following example demonstrates this key difference between <xref:System.Wind
 
 ## Code-based example
 
-The following example demonstrates this key difference between <xref:System.Windows.Controls.DockPanel> and <xref:System.Windows.Controls.StackPanel> when creating a window by code.
+The following example demonstrates this key difference between <xref:System.Windows.Controls.DockPanel> and <xref:System.Windows.Controls.StackPanel> when setting the content of a `Window` during the `Window.Loaded` event:
 
 :::code language="cs" source="./snippets/how-to-choose-between-stackpanel-and-dockpanel/csharp/MainWindow.xaml.cs" id="EmojiViewBox":::
 :::code language="vb" source="./snippets/how-to-choose-between-stackpanel-and-dockpanel/vb/MainWindow.xaml.vb" id="EmojiViewBox":::

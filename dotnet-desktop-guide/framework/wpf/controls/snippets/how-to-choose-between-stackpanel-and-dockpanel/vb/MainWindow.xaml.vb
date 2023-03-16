@@ -21,7 +21,6 @@
         Dim panel1 As New DockPanel()
         Grid.SetRow(panel1, 0)
 
-
         ' Create the three controls for the panel
         panel1.Children.Add(New ContentControl() With {.Template = viewBoxTemplate})
         panel1.Children.Add(New ContentControl() With {.Template = viewBoxTemplate})
