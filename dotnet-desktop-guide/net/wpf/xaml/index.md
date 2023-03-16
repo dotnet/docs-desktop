@@ -122,7 +122,16 @@ Here, each <xref:System.Windows.Controls.Button> is a child element of <xref:Sys
 
 - **Omitted UIElementCollection object element:** The <xref:System.Windows.Controls.Panel.Children%2A?displayProperty=nameWithType> property takes the type <xref:System.Windows.Controls.UIElementCollection>, which implements <xref:System.Collections.IList>. The collection's element tag can be omitted, based on the XAML rules for processing collections such as <xref:System.Collections.IList>. (In this case, <xref:System.Windows.Controls.UIElementCollection> actually can't be instantiated because it doesn't expose a parameterless constructor, and that is why the <xref:System.Windows.Controls.UIElementCollection> object element is shown commented out).
 
-:::code language="xaml" source="./snippets/index/csharp/MainWindow.xaml" id="ContentCollection2":::
+```xaml
+<StackPanel>
+    <StackPanel.Children>
+        <!--<UIElementCollection>-->
+        <Button>First Button</Button>
+        <Button>Second Button</Button>
+        <!--</UIElementCollection>-->
+    </StackPanel.Children>
+</StackPanel>
+```
 
 ### Attribute syntax (events)
 
