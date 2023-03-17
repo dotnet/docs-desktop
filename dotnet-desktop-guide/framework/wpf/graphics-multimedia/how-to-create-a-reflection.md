@@ -25,7 +25,7 @@ The following example uses a <xref:System.Windows.Media.VisualBrush> to create a
 
 ## Code-based example
 
-The following example uses a <xref:System.Windows.Media.VisualBrush> to create a reflection of a <xref:System.Windows.Controls.Border> that contains several elements, when setting the content of a `Window` during the `Window.Loaded` event:
+The following example uses a <xref:System.Windows.Media.VisualBrush> to create a reflection of a <xref:System.Windows.Controls.Border> that contains several elements. This code is run in the `Window.Loaded` event handler:
 
 :::code language="csharp" source="./snippets/how-to-create-a-reflection/csharp/MainWindow.xaml.cs" id="Reflection":::
 :::code language="vb" source="./snippets/how-to-create-a-reflection/vb/MainWindow.xaml.vb" id="Reflection":::
