@@ -1,0 +1,71 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Reflection Example" >
+    <!--<Reflection>-->
+    <StackPanel Margin="25" Height="400">
+
+        <!-- The object to reflect. -->
+        <Border Name="ReflectedVisual" Width="400">
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,0.5" EndPoint="1,0.5">
+                    <GradientStop Offset="0.0" Color="#CCCCFF" />
+                    <GradientStop Offset="1.0" Color="White" />
+                </LinearGradientBrush>
+            </Border.Background>
+            <StackPanel Orientation="Horizontal" Margin="10">
+                <TextBlock TextWrapping="Wrap" Width="200" Margin="10">
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                  Suspendisse vel ante. Donec luctus tortor sit amet est.
+                  Nullam pulvinar odio et wisi.
+                  Pellentesque quis magna. Sed pellentesque.
+                </TextBlock>
+                <StackPanel>
+                    <Ellipse Margin="10" Height="50" Width="50" Fill="Black" />
+                    <Ellipse Margin="10" Height="50" Width="50" Fill="Purple" />
+                </StackPanel>
+            </StackPanel>
+        </Border>
+
+        <Rectangle Height="1" Fill="Gray" HorizontalAlignment="Stretch" />
+
+        <!-- The object to contain the reflection.-->
+        <Rectangle DataContext="{Binding ElementName=ReflectedVisual}"
+                   Height="{Binding Path=ActualHeight}" 
+                   Width="{Binding Path=ActualWidth}">
+            <Rectangle.Fill>
+
+                <!-- Creates the reflection. -->
+                <VisualBrush Opacity="0.75" Stretch="None"
+                             Visual="{Binding}">
+                    <VisualBrush.RelativeTransform>
+
+                        <!-- Flip the reflection. -->
+                        <TransformGroup>
+                            <ScaleTransform ScaleX="1" ScaleY="-1" />
+                            <TranslateTransform  Y="1" />
+                        </TransformGroup>
+                    </VisualBrush.RelativeTransform>
+                </VisualBrush>
+            </Rectangle.Fill>
+
+            <Rectangle.OpacityMask>
+                <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                    <GradientStop Color="#FF000000" Offset="0.0" />
+                    <GradientStop Color="#33000000" Offset="0.5" />
+                    <GradientStop Color="#00000000" Offset="0.75" />
+                </LinearGradientBrush>
+            </Rectangle.OpacityMask>
+
+            <Rectangle.Effect>
+                <BlurEffect Radius="1.5" />
+            </Rectangle.Effect>
+
+        </Rectangle>
+    </StackPanel>
+    <!--</Reflection>-->
+</Window>
