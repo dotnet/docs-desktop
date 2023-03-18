@@ -13,7 +13,7 @@ ms.assetid: 4f017e16-ab80-43c7-98df-03b6bddbb203
 ---
 # How to: Create a Reflection
 
-This example shows how to use a <xref:System.Windows.Media.VisualBrush> to create a reflection. Because a <xref:System.Windows.Media.VisualBrush> can display an existing visual, you can use this capability to produce interesting visual effects, such as reflections and magnification.
+This article shows how to use a <xref:System.Windows.Media.VisualBrush> to create a reflection. Because a <xref:System.Windows.Media.VisualBrush> can display an existing visual, you can use this capability to produce interesting visual effects, such as reflections and magnification.
 
 :::image type="content" source="media/how-to-create-a-reflection/reflection.png" alt-text="A XAML element with latin text and two circles, whose upside down reflection is displayed below it.":::
 
