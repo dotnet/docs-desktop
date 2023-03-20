@@ -104,7 +104,7 @@ This is a problem with a third-party component. Contact the component vendor.
 
 ### Cannot access the Visual Studio Toolbox at this time
 
-Visual Studio made a call to the Toolbox, which was not available. If you see this error, If you see this error, please log an issue by using [Report a Problem](/visualstudio/ide/how-to-report-a-problem-with-visual-studio).
+Visual Studio made a call to the Toolbox, which was not available. If you see this error, please log an issue by using [Report a Problem](/visualstudio/ide/how-to-report-a-problem-with-visual-studio).
 
 ### Cannot bind an event handler to the '\<event name>' event because it is read-only
 
