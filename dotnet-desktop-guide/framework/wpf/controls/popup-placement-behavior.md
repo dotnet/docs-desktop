@@ -29,7 +29,10 @@ A <xref:System.Windows.Controls.Primitives.Popup> control displays content in a 
  ![Image with four popup controls](./media/popup-placement-behavior/popup-placement-intro.png "Image with four popups")
   
  This simple example demonstrates how to set the <xref:System.Windows.Controls.Primitives.Popup.PlacementTarget%2A> and <xref:System.Windows.Controls.Primitives.Popup.Placement%2A> properties, but by using the <xref:System.Windows.Controls.Primitives.Popup.PlacementRectangle%2A>, <xref:System.Windows.Controls.Primitives.Popup.HorizontalOffset%2A>, and <xref:System.Windows.Controls.Primitives.Popup.VerticalOffset%2A> properties, you have even more control over where the <xref:System.Windows.Controls.Primitives.Popup> is positioned.  
-  
+
+> ![NOTE]
+> Depending on your Windows settings related to handedness, the popup may be left or right-aligned when shown on the top or bottom. The previous image demonstrates right-handedness alignment, which places the popup to the left.
+
 <a name="Definitions"></a>
 
 ## Definitions of Terms: The Anatomy of a Popup  
