@@ -59,7 +59,7 @@ Finally, if you must create your own custom UI elements, the <xref:System.Drawin
 For step-by-step information about how to use these features, see the following Help topics.
 
 - [How to add a form to a project](../forms/how-to-add.md)
-- [How to add Controls to to a form](../controls/how-to-add-to-a-form.md)
+- [How to add Controls to a form](../controls/how-to-add-to-a-form.md)
 
 <!-- TODO
 | Using the <xref:System.Windows.Forms.ToolStrip> Control | [How to: Create a Basic ToolStrip with Standard Items Using the Designer](./controls/create-a-basic-wf-toolstrip-with-standard-items-using-the-designer.md) |
