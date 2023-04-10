@@ -51,7 +51,7 @@ jobs:
     # Clone docs tools repo
     - name: Clone docs-tools repository
       run: |
-        git clone https://github.com/dotnet/docs-tools; dir
+        git clone https://github.com/dotnet/docs-tools
 
     # Run snippets 5000
     - name: Run snippets 5000 for PR
