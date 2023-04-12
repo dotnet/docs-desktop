@@ -26,7 +26,7 @@ Windows Presentation Foundation (WPF) data binding supports the following bindin
 
 - **Dynamic objects**
 
-  You can bind to available properties and indexers of an object that implements the <xref:System.Dynamic.IDynamicMetaObjectProvider> interface. If you can access the member in code, you can bind to it. For example, if a dynamic object enables you to access a member in code via `someObjet.AProperty`, you can bind to it by setting the binding path to `AProperty`.
+  You can bind to available properties and indexers of an object that implements the <xref:System.Dynamic.IDynamicMetaObjectProvider> interface. If you can access the member in code, you can bind to it. For example, if a dynamic object enables you to access a member in code via `SomeObject.AProperty`, you can bind to it by setting the binding path to `AProperty`.
 
 - **ADO.NET objects**
 
