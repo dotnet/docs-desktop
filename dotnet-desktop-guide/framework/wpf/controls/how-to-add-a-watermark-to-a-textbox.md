@@ -19,8 +19,6 @@ The following example shows how to aid usability of a <xref:System.Windows.Contr
 > [!NOTE]
 > The reason a background image is used in this example rather then simply manipulating the <xref:System.Windows.Controls.TextBox.Text%2A> property of <xref:System.Windows.Controls.TextBox>, is that a background image will not interfere with data binding.  
 
-
-
 ## Example
 
 The following XAML demonstrates the following:
