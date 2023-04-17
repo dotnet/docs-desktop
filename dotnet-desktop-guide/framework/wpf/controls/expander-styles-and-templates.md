@@ -40,18 +40,12 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 |InvalidFocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` has the control has focus.|  
 |InvalidUnfocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` has the control does not have focus.|  
   
-## Expander ControlTemplate Example  
+## Expander ControlTemplate
 
- The following example shows how to define a <xref:System.Windows.Controls.ControlTemplate> for the <xref:System.Windows.Controls.Expander> control.  
-  
- [!code-xaml[ControlTemplateExamples#Expander](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/expander.xaml#expander)]  
-  
- The preceding example uses one or more of the following resources.  
-  
- [!code-xaml[ControlTemplateExamples#Resources](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/shared.xaml#resources)]  
-  
- For the complete sample, see [Styling with ControlTemplates Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Styles%20&%20Templates/IntroToStylingAndTemplating).  
-  
+The following example is a copy of the default template for a <xref:System.Windows.Controls.Expander> control:
+
+:::code language="xaml" source="./snippets/shared/templates/ExpanderTemplate.xaml":::
+
 ## See also
 
 - <xref:System.Windows.FrameworkElement.Style%2A>
