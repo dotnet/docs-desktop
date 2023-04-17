@@ -272,7 +272,7 @@ Just like a variable, the XAML name for an instance is governed by a concept of 
 
 ## Attached properties and attached events
 
-XAML specifies a language feature that enables certain properties or events to be specified on any element, even if the property or event doesn't exists in the type's definitions for the element it's being set on. The properties version of this feature is called an attached property, the events version is called an attached event. Conceptually, you can think of attached properties and attached events as global members that can be set on any XAML element/object instance. However, that element/class or a larger infrastructure must support a backing property store for the attached values.
+XAML specifies a language feature that enables certain properties or events to be specified on any element, even if the property or event doesn't exist in the type's definitions for the element it's being set on. The properties version of this feature is called an attached property, the events version is called an attached event. Conceptually, you can think of attached properties and attached events as global members that can be set on any XAML element/object instance. However, that element/class or a larger infrastructure must support a backing property store for the attached values.
 
 Attached properties in XAML are typically used through attribute syntax. In attribute syntax, you specify an attached property in the form `ownerType.propertyName`.
 
