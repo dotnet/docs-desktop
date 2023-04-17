@@ -1,7 +1,7 @@
 ---
 title: "How to: Add a Watermark to a TextBox"
 description: Learn how to add a watermark to a TextBox via the included code examples in XAML, C#, and Visual Basic.
-ms.date: "03/30/2017"
+ms.date: "04/17/2023"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -18,14 +18,22 @@ The following example shows how to aid usability of a <xref:System.Windows.Contr
   
 > [!NOTE]
 > The reason a background image is used in this example rather then simply manipulating the <xref:System.Windows.Controls.TextBox.Text%2A> property of <xref:System.Windows.Controls.TextBox>, is that a background image will not interfere with data binding.  
-  
-## Example  
 
- [!code-xaml[TextBoxMiscSnippets_snip#TextBoxBackgroundExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxMiscSnippets_snip/csharp/textbox_with_background_image.xaml#textboxbackgroundexamplewholepage)]  
-  
- [!code-csharp[TextBoxMiscSnippets_snip#TextBoxBackgroundCodeExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxMiscSnippets_snip/csharp/textbox_with_background_image.xaml.cs#textboxbackgroundcodeexamplewholepage)]
- [!code-vb[TextBoxMiscSnippets_snip#TextBoxBackgroundCodeExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextBoxMiscSnippets_snip/visualbasic/textbox_with_background_image.xaml.vb#textboxbackgroundcodeexamplewholepage)]  
-  
+## Example
+
+The following XAML demonstrates the following:
+
+- Declaring the `watermark` resource. Download the image from [GitHub](https://github.com/dotnet/docs-desktop/blob/main/dotnet-desktop-guide/framework/wpf/controls/snippets/how-to-add-a-watermark-to-a-textbox/csharp/textboxbackground.gif).
+- Setting the [`TextBox.Background`](xref:System.Windows.Controls.Control.Background) property to the resources.
+- Setting the [`TextBox.TextChanged`](xref:System.Windows.Controls.Primitives.TextBoxBase.TextChanged) event.
+
+:::code language="xaml" source="./snippets/how-to-add-a-watermark-to-a-textbox/csharp/MainWindow.xaml" :::
+
+The following code handles the [`TextBox.TextChanged`](xref:System.Windows.Controls.Primitives.TextBoxBase.TextChanged) event:
+
+:::code language="csharp" source="./snippets/how-to-add-a-watermark-to-a-textbox/csharp/MainWindow.xaml.cs" id="code" :::
+:::code language="vb" source="./snippets/how-to-add-a-watermark-to-a-textbox/vb/MainWindow.xaml.vb" id="code" :::
+
 ## See also
 
 - [TextBox Overview](textbox-overview.md)
