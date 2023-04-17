@@ -24,7 +24,7 @@ The following example shows how to aid usability of a <xref:System.Windows.Contr
 The following XAML demonstrates the following:
 
 - Declaring the `watermark` resource. Download the image from [GitHub](https://github.com/dotnet/docs-desktop/blob/main/dotnet-desktop-guide/framework/wpf/controls/snippets/how-to-add-a-watermark-to-a-textbox/csharp/textboxbackground.gif).
-- Setting the setting the [`TextBox.Background`](xref:System.Windows.Controls.Control.Background) property to the resources.
+- Setting the [`TextBox.Background`](xref:System.Windows.Controls.Control.Background) property to the resources.
 - Setting the [`TextBox.TextChanged`](xref:System.Windows.Controls.Primitives.TextBoxBase.TextChanged) event.
 
 :::code language="xaml" source="./snippets/how-to-add-a-watermark-to-a-textbox/csharp/MainWindow.xaml" :::
