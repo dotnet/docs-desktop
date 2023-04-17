@@ -1,6 +1,5 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-    
 
     <SolidColorBrush x:Key="Menu.Static.Background" Color="#FFF0F0F0"/>
     <Style x:Key="MenuStyle1" TargetType="{x:Type Menu}">
