@@ -189,7 +189,7 @@
             {
               "name": "prMatchesPattern",
               "parameters": {
-                "matchRegex": "docs\\/[A-z\\/\\d\\-]*\\/[A-z\\-\\d]*\\.md"
+                "matchRegex": "dotnet\-desktop\-guide\\/[A-z\\/\\d\\-]*\\/[A-z\\-\\d]*\\.md"
               }
             }
           ]
