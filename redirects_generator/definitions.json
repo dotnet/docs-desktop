@@ -9,6 +9,15 @@
     // ========
     // WinForms
     // ========
+
+        // Normal redirects, not from framework -> net mappings
+        {
+            "Redirect": "Normal",
+            "SourceUrl": "/dotnet/desktop/winforms/controls/custom?view=netdesktop-7.0",
+            "TargetUrl": "/dotnet/desktop/winforms/controls-design/overview?view=netdesktop-7.0"
+        },
+
+        // Basics
         {
             "Redirect": "TwoWay",
             "SourceUrl": "/dotnet/desktop/winforms/how-to-create-a-windows-forms-application-from-the-command-line?view=netframeworkdesktop-4.8",
@@ -105,12 +114,12 @@
         {
             "Redirect": "TwoWay",
             "SourceUrl": "/dotnet/desktop/winforms/controls/varieties-of-custom-controls?view=netframeworkdesktop-4.8",
-            "TargetUrl": "/dotnet/desktop/winforms/controls/custom?view=netdesktop-7.0"
+            "TargetUrl": "/dotnet/desktop/winforms/controls-design/overview?view=netdesktop-7.0"
         },
         {
             "Redirect": "OneWay",
             "SourceUrl": "/dotnet/desktop/winforms/controls/control-type-recommendations?view=netframeworkdesktop-4.8",
-            "TargetUrl": "/dotnet/desktop/winforms/controls/custom?view=netdesktop-7.0"
+            "TargetUrl": "/dotnet/desktop/winforms/controls-design/overview?view=netdesktop-7.0"
         },
         
         // Custom painting and drawing
@@ -130,7 +139,7 @@
             "TargetUrl": "/dotnet/desktop/winforms/controls/custom-painting-drawing?view=netdesktop-7.0"
         },
 
-        
+        // Normal controls
         {
             "Redirect": "TwoWay",
             "SourceUrl": "/dotnet/desktop/winforms/controls/how-to-add-controls-to-windows-forms?view=netframeworkdesktop-4.8",
@@ -352,6 +361,11 @@
             "Redirect": "Normal",
             "SourceUrl": "/dotnet/desktop/winforms/whats-new/index?view=netdesktop-7.0",
             "TargetUrl": "/dotnet/desktop/winforms/whats-new/net70?view=netdesktop-7.0"
+        },
+        {
+            "Redirect": "Normal",
+            "SourceUrl": "/dotnet/desktop/winforms/controls-design/index?view=netdesktop-7.0",
+            "TargetUrl": "/dotnet/desktop/winforms/controls-design/overview?view=netdesktop-7.0"
         },
 
 

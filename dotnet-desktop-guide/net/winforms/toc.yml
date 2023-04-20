@@ -67,6 +67,54 @@ items:
       href: controls/how-to-add-an-event-handler.md
     - name: Make thread-safe calls to controls
       href: controls/how-to-make-thread-safe-calls.md
+- name: Custom controls
+  items:
+  - name: Overview
+    href: controls-design/overview.md
+  - name: Design guidelines
+    href: blah
+  - name: Extend controls
+    href: blah
+  - name: Composite user controls
+    items:
+    - name: Overview
+      href: blah
+    - name: Constituent controls
+      href: blah
+    - name: "Tutorial: Create a user control"
+      href: blah
+    - name: Common tasks
+      items:
+      - name: Make your controls invisible
+        href: blah
+  - name: User-drawn controls
+    items:
+    - name: Overview
+      href: blah
+    - name: Rendering an interface with OnPaint
+      href: blah
+    - name: "Tutorial: Create a new progress control"
+      href: blah
+    - name: Common tasks
+      items:
+      - name: Create a simple control
+        href: blah
+  - name: Visual Studio designer support
+    items:
+    - name: Overview
+      href: blah
+    - name: Designer changes from .NET Framework
+      href: blah
+    - name: Designer attributes
+      href: blah
+    - name: Troubleshoot designer errors
+      href: blah
+    - name: Common tasks
+      items:
+      - name: Manage control properties set by the designer
+        href: blah
+      - name: Provide an image for the toolbox
+        href: blah
 - name: User input - keyboard
   items:
   - name: Overview

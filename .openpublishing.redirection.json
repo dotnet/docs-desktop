@@ -58,11 +58,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/controls/varieties-of-custom-controls.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls/custom?view=netdesktop-7.0"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/framework/winforms/controls/custom.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls/varieties-of-custom-controls?view=netframeworkdesktop-4.8"
+            "redirect_url": "/dotnet/desktop/winforms/controls-design/overview?view=netdesktop-7.0"
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/controls/custom-control-painting-and-rendering.md",
@@ -210,7 +206,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/controls/control-type-recommendations.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls/custom?view=netdesktop-7.0"
+            "redirect_url": "/dotnet/desktop/winforms/controls-design/overview?view=netdesktop-7.0"
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/controls/rendering-a-windows-forms-control.md",
@@ -808,6 +804,18 @@
         {
             "source_path": "dotnet-desktop-guide/net/wpf/whats-new/index.md",
             "redirect_url": "/dotnet/desktop/wpf/whats-new/net70?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/controls/custom.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls-design/overview?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/winforms/controls-design/overview.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls/varieties-of-custom-controls?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/controls-design/index.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls-design/overview?view=netdesktop-7.0"
         }
     ]
 }

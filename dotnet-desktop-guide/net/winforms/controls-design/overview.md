@@ -1,7 +1,7 @@
 ---
-title: Types of custom controls
+title: Create custom controls
 description: Learn about the different types of custom controls you can create in Windows Forms for .NET.
-ms.date: 10/26/2020
+ms.date: 04/20/2023
 ms.topic: overview
 f1_keywords: 
   - "UserControl"
@@ -16,13 +16,28 @@ helpviewer_keywords:
   - "controls [Windows Forms], composite"
 ---
 
-# Types of custom controls (Windows Forms .NET)
+# Custom controls (Windows Forms .NET)
 
-With Windows Forms, you can develop and implement new controls. You can create a new user control, modify existing controls through inheritance, and write a custom control that does its own painting.
+With Windows Forms, you can develop and implement new controls. You can create a new user control, modify existing controls through inheritance, or write a custom control that does its own painting. This article highlights the differences among the various kinds of controls from which you can inherit, and provides you with information about how to choose a particular type of control for your project.
 
 [!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
 
-Deciding which kind of control to create can be confusing. This article highlights the differences among the various kinds of controls from which you can inherit, and provides you with information about how to choose a particular type of control for your project.
+## Base control class
+
+The <xref:System.Windows.Forms.Control> class is the base class for Windows Forms controls. It provides the infrastructure required for visual display in Windows Forms applications and provides the following capabilities:
+
+- Exposes a window handle.
+- Manages message routing.
+- Provides mouse and keyboard events, and many other user interface events.
+- Provides advanced layout features.
+- Contains many properties specific to visual display, such as <xref:System.Windows.Forms.Control.ForeColor%2A>, <xref:System.Windows.Forms.Control.BackColor%2A>, <xref:System.Windows.Forms.Control.Height%2A>, and <xref:System.Windows.Forms.Control.Width%2A>.
+- Provides the security and threading support necessary for a Windows Forms control to act as a Microsoft® ActiveX® control.
+
+Because so much of the infrastructure is provided by the base class, it's relatively easy to develop your own Windows Forms controls.
+
+## Create your own control
+
+There are three types of custom controls you can create: composite controls, extended controls, and custom controls. The following table helps you decide which type of control you should create:
 
 <table>
 <thead>
@@ -38,7 +53,7 @@ Deciding which kind of control to create can be confusing. This article highligh
             <li>You want to combine the functionality of several Windows Forms controls into a single reusable unit.</li>
         </ul>
     </td>
-    <td><a href="#composite-controls">Composite control</a> by inheriting from <a href="/dotnet/api/system.windows.forms.usercontrol">System.Windows.Forms.UserControl</a>.</td>
+    <td>Design a <a href="#composite-controls">composite control</a> by inheriting from <a href="/dotnet/api/system.windows.forms.usercontrol">System.Windows.Forms.UserControl</a>.</td>
   </tr>
   <tr>
     <td>
@@ -47,7 +62,7 @@ Deciding which kind of control to create can be confusing. This article highligh
             <li>You don't need a custom graphical user interface, or you want to design a new graphical user interface for an existing control.</li>
         </ul>
     </td>
-    <td><a href="#extended-controls">Extended control</a> by inheriting from a specific Windows Forms control.</td>
+    <td><a href="#extended-controls">Extend a control</a> by inheriting from a specific Windows Forms control.</td>
   </tr>
   <tr>
     <td>
@@ -56,25 +71,12 @@ Deciding which kind of control to create can be confusing. This article highligh
             <li>You need to implement custom functionality that isn't available through standard controls.</li>
         </ul>
     </td>
-    <td><a href="#custom-controls">Custom control</a> by inheriting from <a href="/dotnet/api/system.windows.forms.control">System.Windows.Forms.Control</a>.</td>
+    <td>Create a <a href="#custom-controls">custom control</a> by inheriting from <a href="/dotnet/api/system.windows.forms.control">System.Windows.Forms.Control</a>.</td>
   </tr>
 </tbody>
 </table>
 
-## Base Control Class
-
-The <xref:System.Windows.Forms.Control> class is the base class for Windows Forms controls. It provides the infrastructure required for visual display in Windows Forms applications and provides the following capabilities:
-
-- Exposes a window handle.
-- Manages message routing.
-- Provides mouse and keyboard events, and many other user interface events.
-- Provides advanced layout features.
-- Contains many properties specific to visual display, such as <xref:System.Windows.Forms.Control.ForeColor%2A>, <xref:System.Windows.Forms.Control.BackColor%2A>, <xref:System.Windows.Forms.Control.Height%2A>, and <xref:System.Windows.Forms.Control.Width%2A>.
-- Provides the security and threading support necessary for a Windows Forms control to act as a Microsoft® ActiveX® control.
-
-Because so much of the infrastructure is provided by the base class, it's relatively easy to develop your own Windows Forms controls.
-
-## Composite Controls
+## Composite controls
 
 A composite control is a collection of Windows Forms controls encapsulated in a common container. This kind of control is sometimes called a *user control*. The contained controls are called *constituent controls*.
 
@@ -84,7 +86,7 @@ For example, a composite control could be built to display customer address data
 
 To author a composite control, derive from the <xref:System.Windows.Forms.UserControl> class. The <xref:System.Windows.Forms.UserControl> base class provides keyboard routing for child controls and enables child controls to work as a group.<!-- TODO For more information, see [Developing a Composite Windows Forms Control](developing-a-composite-windows-forms-control.md).-->
 
-## Extended Controls
+## Extended controls
 
 You can derive an inherited control from any existing Windows Forms control. With this approach, you can keep all of the inherent functionality of a Windows Forms control, and then extend that functionality by adding custom properties, methods, or other features. With this option, you can override the base control's paint logic, and then extend its user interface by changing its appearance.
 
@@ -92,7 +94,7 @@ For example, you can create a control derived from the <xref:System.Windows.Form
 
 In some controls, you can also add a custom appearance to the graphical user interface of your control by overriding the <xref:System.Windows.Forms.Control.OnPaint%2A> method of the base class. For an extended button that tracks clicks, you can override the <xref:System.Windows.Forms.Control.OnPaint%2A> method to call the base implementation of <xref:System.Windows.Forms.Control.OnPaint%2A>, and then draw the click count in one corner of the <xref:System.Windows.Forms.Button> control's client area.
 
-## Custom Controls
+## Custom controls
 
 Another way to create a control is to create one substantially from the beginning by inheriting from <xref:System.Windows.Forms.Control>. The <xref:System.Windows.Forms.Control> class provides all of the basic functionality required by controls, including mouse and keyboard handling events, but no control-specific functionality or graphical interface.
 
@@ -102,15 +104,11 @@ To implement a custom control, you must write code for the <xref:System.Windows.
 
 An example of a custom control is a clock control that duplicates the appearance and behavior of an analog clock. Custom painting is invoked to cause the hands of the clock to move in response to <xref:System.Windows.Forms.Timer.Tick> events from an internal <xref:System.Windows.Forms.Timer> component.<!-- TODO For more information, see [How to: Develop a Simple Windows Forms Control](how-to-develop-a-simple-windows-forms-control.md).-->
 
-## ActiveX Controls
+## ActiveX controls
 
 Although the Windows Forms infrastructure has been optimized to host Windows Forms controls, you can still use ActiveX controls. There's support for this task in Visual Studio.<!-- TODO For more information, see [How to: Add ActiveX Controls to Windows Forms](how-to-add-activex-controls-to-windows-forms.md).-->
 
-## Windowless Controls
-
-The Microsoft Visual Basic® 6.0 and ActiveX technologies support *windowless* controls. Windowless controls aren't supported in Windows Forms.
-
-## Custom Design Experience
+## Custom design experience
 
 If you need to implement a custom design-time experience, you can author your own designer. For composite controls, derive your custom designer class from the <xref:System.Windows.Forms.Design.ParentControlDesigner> or the <xref:System.Windows.Forms.Design.DocumentDesigner> classes. For extended and custom controls, derive your custom designer class from the <xref:System.Windows.Forms.Design.ControlDesigner> class.
 
