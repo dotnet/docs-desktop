@@ -71,49 +71,47 @@ items:
   items:
   - name: Overview
     href: controls-design/overview.md
-  - name: Design guidelines
-    href: blah
   - name: Extend an existing control
     href: controls-design/inherit-from-existing.md
   - name: User controls
     items:
     - name: Overview
       href: controls-design/usercontrol-overview.md
-    - name: Constituent controls
+    - name: Constituent controls (X)
       href: blah
-    - name: "Tutorial: Create a user control"
+    - name: "Tutorial: Create a user control (X)" 
       href: blah
     - name: Common tasks
       items:
-      - name: Make your controls invisible
+      - name: Make your controls invisible (X)
         href: blah
   - name: User-drawn controls
     items:
-    - name: Overview
+    - name: Overview (X)
       href: blah
-    - name: Rendering an interface with OnPaint
+    - name: Rendering an interface with OnPaint (X)
       href: blah
-    - name: "Tutorial: Create a new progress control"
+    - name: "Tutorial: Create a new progress control (X)"
       href: blah
     - name: Common tasks
       items:
-      - name: Create a simple control
+      - name: Create a simple control (X)
         href: blah
   - name: Visual Studio designer support
     items:
-    - name: Overview
+    - name: Overview (X)
       href: blah
-    - name: Designer changes from .NET Framework
+    - name: Designer changes from .NET Framework (X)
       href: blah
-    - name: Designer attributes
+    - name: Designer attributes (X)
       href: blah
-    - name: Troubleshoot designer errors
+    - name: Troubleshoot designer errors (X)
       href: blah
     - name: Common tasks
       items:
-      - name: Manage control properties set by the designer
+      - name: Manage control properties set by the designer (X)
         href: blah
-      - name: Provide an image for the toolbox
+      - name: Provide an image for the toolbox (X)
         href: blah
 - name: User input - keyboard
   items:
