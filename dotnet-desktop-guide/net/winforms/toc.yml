@@ -73,12 +73,12 @@ items:
     href: controls-design/overview.md
   - name: Design guidelines
     href: blah
-  - name: Extend controls
-    href: blah
+  - name: Extend an existing control
+    href: controls-design/inherit-from-existing.md
   - name: Composite user controls
     items:
     - name: Overview
-      href: blah
+      href: controls-design/composite-overview.md
     - name: Constituent controls
       href: blah
     - name: "Tutorial: Create a user control"

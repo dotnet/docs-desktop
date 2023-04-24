@@ -1,5 +1,5 @@
 ---
-title: Create custom controls
+title: Create custom controls overview
 description: Learn about the different types of custom controls you can create in Windows Forms for .NET.
 ms.date: 04/20/2023
 ms.topic: overview
@@ -37,7 +37,7 @@ Because so much of the infrastructure is provided by the base class, it's relati
 
 ## Create your own control
 
-There are three types of custom controls you can create: composite controls, extended controls, and custom controls. The following table helps you decide which type of control you should create:
+There are three types of custom controls you can create: user controls, extended controls, and custom controls. The following table helps you decide which type of control you should create:
 
 <table>
 <thead>
@@ -53,12 +53,13 @@ There are three types of custom controls you can create: composite controls, ext
             <li>You want to combine the functionality of several Windows Forms controls into a single reusable unit.</li>
         </ul>
     </td>
-    <td>Design a <a href="#composite-controls">composite control</a> by inheriting from <a href="/dotnet/api/system.windows.forms.usercontrol">System.Windows.Forms.UserControl</a>.</td>
+    <td>Design a <a href="#user-controls">user control</a> by inheriting from <a href="/dotnet/api/system.windows.forms.usercontrol">System.Windows.Forms.UserControl</a>.</td>
   </tr>
   <tr>
     <td>
         <ul>
             <li>Most of the functionality you need is already identical to an existing Windows Forms control.</li>
+            <li>You want to group one or more controls into a single reusable control.</li>
             <li>You don't need a custom graphical user interface, or you want to design a new graphical user interface for an existing control.</li>
         </ul>
     </td>
@@ -76,15 +77,15 @@ There are three types of custom controls you can create: composite controls, ext
 </tbody>
 </table>
 
-## Composite controls
+## User controls
 
-A composite control is a collection of Windows Forms controls encapsulated in a common container. This kind of control is sometimes called a *user control*. The contained controls are called *constituent controls*.
+A user control is a collection of Windows Forms controls presented as a single control to the consumer. This kind of control is referred to as a _composite control_. The contained controls are called _constituent controls_.
 
-A composite control holds all of the inherent functionality associated with each of the contained Windows Forms controls and enables you to selectively expose and bind their properties. A composite control also provides a great deal of default keyboard handling functionality with no extra development effort on your part.
+A user control holds all of the inherent functionality associated with each of the contained Windows Forms controls and enables you to selectively expose and bind their properties. A user control also provides a great deal of default keyboard handling functionality with no extra development effort on your part.
 
-For example, a composite control could be built to display customer address data from a database. This control would include a <xref:System.Windows.Forms.DataGridView> control to display the database fields, a <xref:System.Windows.Forms.BindingSource> to handle binding to a data source, and a <xref:System.Windows.Forms.BindingNavigator> control to move through the records. You could selectively expose data binding properties, and you could package and reuse the entire control from application to application.<!-- TODO For an example of this kind of composite control, see [How to: Apply Attributes in Windows Forms Controls](how-to-apply-attributes-in-windows-forms-controls.md).-->
+For example, a user control could be built to display customer address data from a database. This control would include a <xref:System.Windows.Forms.DataGridView> control to display the database fields, a <xref:System.Windows.Forms.BindingSource> to handle binding to a data source, and a <xref:System.Windows.Forms.BindingNavigator> control to move through the records. You could selectively expose data binding properties, and you could package and reuse the entire control from application to application.<!-- TODO For an example of this kind of user control, see [How to: Apply Attributes in Windows Forms Controls](how-to-apply-attributes-in-windows-forms-controls.md).-->
 
-To author a composite control, derive from the <xref:System.Windows.Forms.UserControl> class. The <xref:System.Windows.Forms.UserControl> base class provides keyboard routing for child controls and enables child controls to work as a group.<!-- TODO For more information, see [Developing a Composite Windows Forms Control](developing-a-composite-windows-forms-control.md).-->
+For more information, see [User control overview](usercontrol-overview.md).
 
 ## Extended controls
 
@@ -106,7 +107,7 @@ An example of a custom control is a clock control that duplicates the appearance
 
 ## ActiveX controls
 
-Although the Windows Forms infrastructure has been optimized to host Windows Forms controls, you can still use ActiveX controls. There's support for this task in Visual Studio.<!-- TODO For more information, see [How to: Add ActiveX Controls to Windows Forms](how-to-add-activex-controls-to-windows-forms.md).-->
+Although the Windows Forms infrastructure has been optimized to host Windows Forms controls, you can still use ActiveX controls. <!--TODO There's support for this task in Visual Studio. For more information, see [How to: Add ActiveX Controls to Windows Forms](how-to-add-activex-controls-to-windows-forms.md).-->
 
 ## Custom design experience
 
