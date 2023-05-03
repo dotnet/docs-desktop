@@ -74,45 +74,47 @@ items:
   - name: Extend an existing control
     href: controls-design/extend-existing.md
   - name: User controls
+    expanded: true
     items:
     - name: Overview
       href: controls-design/usercontrol-overview.md
-    - name: Constituent controls (X)
-      href: blah
-    - name: "Tutorial: Create a user control (X)" 
-      href: blah
-    - name: Common tasks
-      items:
-      - name: Make your controls invisible (X)
-        href: blah
-  - name: User-drawn controls
-    items:
-    - name: Overview (X)
-      href: blah
-    - name: Rendering an interface with OnPaint (X)
-      href: blah
-    - name: "Tutorial: Create a new progress control (X)"
-      href: blah
-    - name: Common tasks
-      items:
-      - name: Create a simple control (X)
-        href: blah
+#    - name: Constituent controls (X)
+#      href: blah
+#    - name: "Tutorial: Create a user control (X)" 
+#      href: blah
+#    - name: Common tasks
+#      items:
+#      - name: Make your controls invisible (X)
+#        href: blah
+#  - name: User-drawn controls
+#    items:
+#    - name: Overview (X)
+#      href: blah
+#    - name: Rendering an interface with OnPaint (X)
+#      href: blah
+#    - name: "Tutorial: Create a new progress control (X)"
+#      href: blah
+#    - name: Common tasks
+#      items:
+#      - name: Create a simple control (X)
+#        href: blah
   - name: Visual Studio designer support
+    expanded: true
     items:
     - name: Overview
       href: controls-design/designer-overview.md
     - name: Designer changes from .NET Framework
       href: controls-design/designer-differences-framework.md
-    - name: Designer attributes (X)
-      href: blah
-    - name: Troubleshoot designer errors (X)
-      href: blah
-    - name: Common tasks
-      items:
-      - name: Manage control properties set by the designer (X)
-        href: blah
-      - name: Provide an image for the toolbox (X)
-        href: blah
+#    - name: Designer attributes (X)
+#      href: blah
+#    - name: Troubleshoot designer errors (X)
+#      href: blah
+#    - name: Common tasks
+#      items:
+#      - name: Manage control properties set by the designer (X)
+#        href: blah
+#      - name: Provide an image for the toolbox (X)
+#        href: blah
 - name: User input - keyboard
   items:
   - name: Overview
