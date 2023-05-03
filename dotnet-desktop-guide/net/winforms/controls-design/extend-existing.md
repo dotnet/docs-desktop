@@ -29,9 +29,11 @@ After the user control is created, Visual Studio opens the code-editor for the c
 
 ## Example: Extend the button control
 
-TODO: redo intro paragraph and show a gif of the control.
+In the following example, you'll learn how to extend the button control to create a new control that counts the times the button is clicked. Custom controls can draw on top of the base control, and in this example the control prints on top of the button how many times it's clicked.
 
-In the following example, you'll learn how to extend the button control. The new control counts each time the button is clicked and writes the number on top of the control.
+:::image type="content" source="media/extend-existing/control-preview.gif" alt-text="A Windows Forms for .NET custom control":::
+
+The following procedure creates the control:
 
 01. Create a new Windows Forms project or open an existing project.
 01. [Add a custom control to a project](#add-a-custom-control-to-a-project). The default name of `CustomControl1` is fine.
@@ -39,26 +41,28 @@ In the following example, you'll learn how to extend the button control. The new
 01. In the code-editor, you should see a class definition:
 
     :::code language="csharp" source="./snippets/extend-existing/csharp/CustomControl2.cs" id="control":::
-    :::code language="csharp" source="./snippets/extend-existing/vb/CustomControl2.vb" id="control":::
+    :::code language="vb" source="./snippets/extend-existing/vb/CustomControl2.vb" id="control":::
 
 01. First, add a class-scoped variable named `_counter`.
 
     :::code language="csharp" source="./snippets/extend-existing/csharp/CustomControl1.cs" id="counter":::
-    :::code language="csharp" source="./snippets/extend-existing/vb/CustomControl1.vb" id="counter":::
+    :::code language="vb" source="./snippets/extend-existing/vb/CustomControl1.vb" id="counter":::
 
 01. Override the `OnPaint` method. This method draws the control. The control should draw a string on top of the button, so you must call the base class' `OnPaint` method first, then draw a string.
 
     :::code language="csharp" source="./snippets/extend-existing/csharp/CustomControl1.cs" id="onpaint":::
-    :::code language="csharp" source="./snippets/extend-existing/vb/CustomControl1.vb" id="onpaint":::
+    :::code language="vb" source="./snippets/extend-existing/vb/CustomControl1.vb" id="onpaint":::
 
 01. Lastly, override the `OnClick` method. This method is called everytime the control is pressed. The code is going to increase the counter, and then call the `Invalidate` method which forces the control to redraw itself.
 
     :::code language="csharp" source="./snippets/extend-existing/csharp/CustomControl1.cs" id="onclick":::
-    :::code language="csharp" source="./snippets/extend-existing/vb/CustomControl1.vb" id="onclick":::
+    :::code language="vb" source="./snippets/extend-existing/vb/CustomControl1.vb" id="onclick":::
 
     The final code should look like the following snippet:
 
     :::code language="csharp" source="./snippets/extend-existing/csharp/CustomControl1.cs" id="control":::
-    :::code language="csharp" source="./snippets/extend-existing/vb/CustomControl1.vb" id="control":::
+    :::code language="vb" source="./snippets/extend-existing/vb/CustomControl1.vb" id="control":::
 
 Now that the control is created, compile the project to populate the **Toolbox** window with the new control. Open a form designer and drag the control to the form. When you run the project and click the button, you'll see that it counts the clicks and paints the text on top of the button.
+
+:::image type="content" source="media/extend-existing/toolbox.png" alt-text="Visual Studio Toolbox window for Windows Forms showing a custom control.":::
