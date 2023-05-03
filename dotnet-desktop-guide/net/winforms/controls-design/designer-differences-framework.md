@@ -50,7 +50,7 @@ public string? Filename { get; set; }
 Public Property Filename As String
 ```
 
-### Creating a type editor
+### Create a type editor
 
 To create custom designers that provide type editors, you'll need a variety of projects, as described in the following list:
 
@@ -62,7 +62,8 @@ To create custom designers that provide type editors, you'll need a variety of p
 
 Even if your type editor derives from an existing editor, such as <xref:System.Drawing.Design.ColorEditor> or <xref:System.Windows.Forms.Design.FileNameEditor>, you still have to create that proxy-object client-server communication. because you've provided a new UI class type that you want to display in the context of Visual Studio. However, the code to implement that type editor into Visual Studio is much simpler.
 
-Documentation that describes this scenario in detail is in progress. Until that documentation is published, use the following blog post and sample to guide you in creating, publishing, and using this project structure:
-
-- [Blog: Custom Controls for WinForm’s Out-Of-Process Designer](https://devblogs.microsoft.com/dotnet/custom-controls-for-winforms-out-of-process-designer/)
-- [TileRepeater control example](https://github.com/microsoft/winforms-designer-extensibility/tree/main/Samples/TypeEditor/Dotnet/TileRepeater_Medium)
+> [!IMPORTANT]
+> Documentation that describes this scenario in detail is in progress. Until that documentation is published, use the following blog post and sample to guide you in creating, publishing, and using this project structure:
+>
+> - [Blog: Custom Controls for WinForm’s Out-Of-Process Designer](https://devblogs.microsoft.com/dotnet/custom-controls-for-winforms-out-of-process-designer/)
+> - [TileRepeater control example](https://github.com/microsoft/winforms-designer-extensibility/tree/main/Samples/TypeEditor/Dotnet/TileRepeater_Medium)

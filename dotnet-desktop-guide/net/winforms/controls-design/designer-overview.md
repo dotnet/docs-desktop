@@ -141,6 +141,19 @@ Sometimes, a property is more complex and requires a custom dialog that the user
 
 If your custom control properties are using the built-in type editors provided by Windows Forms, you can use the <xref:System.ComponentModel.EditorAttribute> to mark your properties with the corresponding .NET Framework editor you want Visual Studio to use. By using the built-in editors, you avoid the requirement of replicating the proxy-object client-server communication provided by the out-of-process designer.
 
+When referencing a built-in type editor, use the .NET Framework type, not the .NET type:
+
+```csharp
+[Editor("System.Windows.Forms.Design.FileNameEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a",
+        "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+public string? Filename { get; set; }
+```
+
+```vb
+<Editor("System.Windows.Forms.Design.FileNameEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")>
+Public Property Filename As String
+```
+
 <!--
 ## Designer-snap lines
 -->
