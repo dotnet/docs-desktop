@@ -72,7 +72,7 @@ items:
   - name: Overview
     href: controls-design/overview.md
   - name: Extend an existing control
-    href: controls-design/inherit-from-existing.md
+    href: controls-design/extend-existing.md
   - name: User controls
     items:
     - name: Overview
@@ -99,10 +99,10 @@ items:
         href: blah
   - name: Visual Studio designer support
     items:
-    - name: Overview (X)
-      href: blah
-    - name: Designer changes from .NET Framework (X)
-      href: blah
+    - name: Overview
+      href: controls-design/designer-overview.md
+    - name: Designer changes from .NET Framework
+      href: controls-design/designer-differences-framework.md
     - name: Designer attributes (X)
       href: blah
     - name: Troubleshoot designer errors (X)
