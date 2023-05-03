@@ -3,7 +3,7 @@ using System.ComponentModel;
 
 namespace UserControlProject;
 
-[DefaultEvent("TextChanged")]
+[DefaultEvent(nameof(TextChanged))]
 public partial class UserControl1 : UserControl
 //</default_event>
 {

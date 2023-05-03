@@ -4,6 +4,9 @@ description: Learn about what a user control is in Windows Forms. A user control
 ms.date: 04/20/2023
 ms.topic: overview
 no-loc: ["UserControl", "UserControl1", "UserControlProject", "Label", "Button", "Form", "TextBox"]
+dev_langs:
+  - "csharp"
+  - "vb"
 f1_keywords: 
   - "UserControl"
 helpviewer_keywords: 
@@ -25,19 +28,19 @@ A user control is a collection of Windows Forms controls encapsulated in a commo
 
 User controls are designed like Forms, with a visual designer. You create, arrange, and modify, the constituent controls through the visual designer. The control events and logic are written exactly the same way as when you're designing a Form. The user control is placed on a Form just like any other control.
 
-The constituent controls are available to the user control, and the app user can interact with them all individually at runtime, but the properties and methods declared by the constituent controls aren't exposed to the consumer. For example, if you place a `TextBox` and `Button` control on the user control, the button's `Click` event can be handled internally by the user control, but not by the Form where the user control is placed.
+The constituent controls are available to the user control, and the app user can interact with them all individually at runtime, but the properties and methods declared by the constituent controls aren't exposed to the consumer. For example, if you place a `TextBox` and `Button` control on the user control, the button's `Click` event is handled internally by the user control, but not by the Form where the user control is placed.
 
 User controls are usable by the project in which they're created, or in other projects that have reference to the project containing a user control.
 
 ## Add a user control to a project
 
-User controls are created through the Visual Studio templates. The following steps demonstrate how to add a user control to your project:
+After creating a new project, use the Visual Studio templates to create a user control. The following steps demonstrate how to add a user control to your project:
 
 01. In Visual Studio, find the **Project Explorer** pane. Right-click on the project and choose **Add** > **User Control (Windows Forms)**.
 
-    :::image type="content" source="media/usercontrol-overview/right-click.png" alt-text="Right-click the Visual Studio solution explorer to add a user control to Windows Forms project":::
+    :::image type="content" source="media/usercontrol-overview/right-click.png" alt-text="Right-click the Visual Studio solution explorer to add a user control to a Windows Forms project":::
 
-01. In the **Name** box, type a name for your user control. Visual Studio provides a default and unique name that you may use.
+01. In the **Name** box, type a name for your user control. Visual Studio provides a default and unique name that you may use. Next, press **Add**.
 
     :::image type="content" source="media/usercontrol-overview/new-usercontrol-dialog.png" alt-text="Add item dialog in Visual Studio for Windows Forms":::
 
@@ -47,7 +50,7 @@ After the user control is created, Visual Studio opens the designer:
 
 ## Example: Create a clearable text box
 
-The following example demonstrates how to create a reusable user control that contains a title, text box, and reset button. The reset button clears the text box.
+In the following example, you'll learn how to create a reusable user control that's both visually appealing and functional. The user control is made up of three controls: a `TextBox`, a `Label`, and a `Button`. The `TextBox` is used for entering text, while the `Button` clears it.
 
 01. Create a new Windows Forms project.
 01. [Add a user control to your project](#add-a-user-control-to-a-project). The default name of `UserControl1` is fine.
