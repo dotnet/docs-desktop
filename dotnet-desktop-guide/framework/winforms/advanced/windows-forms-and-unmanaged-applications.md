@@ -29,13 +29,13 @@ Windows Forms applications and controls can interoperate with unmanaged applicat
 
 ## Reference
 
- <xref:System.Windows.Forms.Form.ShowDialog%2A?displayProperty=nameWithType>
+ <xref:System.Windows.Forms.Form.ShowDialog%2A?displayProperty=nameWithType>\
  Used to create a separate thread for a Windows Form.
 
- <xref:System.Windows.Forms.Application.Run%2A?displayProperty=nameWithType>
+ <xref:System.Windows.Forms.Application.Run%2A?displayProperty=nameWithType>\
  Starts a message loop for a thread.
 
- <xref:System.Windows.Forms.Control.Invoke%2A>
+ <xref:System.Windows.Forms.Control.Invoke%2A>\
  Marshals calls from an unmanaged application to a form.
 
 ## Related Sections
