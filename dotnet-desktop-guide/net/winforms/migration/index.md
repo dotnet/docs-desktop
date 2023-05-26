@@ -166,6 +166,6 @@ Visual Basic language projects require extra configuration.
 
 ## Conclusion
 
-The **Windows Forms Matching Game Sample** project is now upgraded to .NET 7. Your results will be different you migrate your own project. Make sure you take the time to review the [Porting from .NET Framework to .NET](/dotnet/core/porting/) guide and the [Modernizations after upgrading to .NET from .NET Framework](/dotnet/core/porting/modernize) article.
+The **Windows Forms Matching Game Sample** project is now upgraded to .NET 7. Your results will be different you migrate your own project. Make sure you take the time to review the [Porting from .NET Framework to .NET](/dotnet/core/porting/) guide and the [Modernize after upgrading to .NET from .NET Framework](/dotnet/core/porting/modernize) article.
 
 [winforms-sample]: https://github.com/dotnet/samples/tree/main/windowsforms/matching-game
