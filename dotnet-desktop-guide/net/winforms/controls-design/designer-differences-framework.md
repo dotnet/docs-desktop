@@ -15,11 +15,11 @@ The Visual Designer for Windows Forms for .NET has had some improvements and cha
 
 [!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
 
-Visual Studio is a .NET Framework-based application, and as such, the Visual Designer you see for Windows Forms is also based on .NET Framework. With a .NET Framework project, both the Visual Studio environment and the Windows Forms app being designed run within the same process, **devenv.exe**. This poses a problem when you're working with a Windows Forms .NET (not .NET Framework) app. Both .NET and .NET Framework code can't work within the same process. As a result, Windows Forms .NET uses a different designer, the "out-of-process" designer.
+Visual Studio is a .NET Framework-based application, and as such, the Visual Designer you see for Windows Forms is also based on .NET Framework. With a .NET Framework project, both the Visual Studio environment and the Windows Forms app being designed to run within the same process, **devenv.exe**. This poses a problem when you're working with a Windows Forms .NET (not .NET Framework) app. Both .NET and .NET Framework code can't work within the same process. As a result, Windows Forms .NET uses a different designer, the "out-of-process" designer.
 
 ## Out-of-process designer
 
-The out-of-process designer is a process called **DesignToolsServer.exe**, and is run along-side Visual Studio's **devenv.exe** process. The **DesignToolsServer.exe** process runs in the same version and platform, such as .NET 7 and x64, of .NET that your app is using.
+The out-of-process designer is a process called **DesignToolsServer.exe**, and is run along-side Visual Studio's **devenv.exe** process. The **DesignToolsServer.exe** process runs on the same version and platform of .NET that your app has been setup to target, such as .NET 7 and x64.
 
 In the Visual Studio designer, .NET Framework proxy objects are created for each component and control on the designer, which communicate with the real .NET objects from your project in the **DesignToolsServer.exe** designer.
 
@@ -60,7 +60,7 @@ To create custom designers that provide type editors, you'll need a variety of p
 - `Control.Protocol`: A .NET Standard project that contains the communication classes used both by the `Control.Client` and `Control.Server` projects.
 - `Control.Package`: A NuGet package project that contains all of the other projects. This package is formatted in a way that lets the Visual Studio Windows Forms for .NET tooling host and use your control library and designers.
 
-Even if your type editor derives from an existing editor, such as <xref:System.Drawing.Design.ColorEditor> or <xref:System.Windows.Forms.Design.FileNameEditor>, you still have to create that proxy-object client-server communication. because you've provided a new UI class type that you want to display in the context of Visual Studio. However, the code to implement that type editor into Visual Studio is much simpler.
+Even if your type editor derives from an existing editor, such as <xref:System.Drawing.Design.ColorEditor> or <xref:System.Windows.Forms.Design.FileNameEditor>, you still have to create that proxy-object client-server communication because you've provided a new UI class type that you want to display in the context of Visual Studio. However, the code to implement that type editor into Visual Studio is much simpler.
 
 > [!IMPORTANT]
 > Documentation that describes this scenario in detail is in progress. Until that documentation is published, use the following blog post and sample to guide you in creating, publishing, and using this project structure:

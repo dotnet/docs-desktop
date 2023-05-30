@@ -88,8 +88,6 @@ The design-time experience for custom controls can be enhanced by authoring an a
 
 :::image type="content" source="media/designer-overview/custom-designer.png" alt-text="A Windows Forms designer in Visual Studio showing a split container's design-time view.":::
 
-to  Then, inherit from the `` class and override the `` method.
-
 You can create your own custom designers by performing the following steps:
 
 01. Adding reference to the [Microsoft.WinForms.Designer.SDK NuGet package](https://www.nuget.org/packages/Microsoft.WinForms.Designer.SDK).
