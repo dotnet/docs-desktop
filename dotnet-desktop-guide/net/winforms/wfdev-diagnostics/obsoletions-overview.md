@@ -43,7 +43,7 @@ To suppress the warnings in a project file:
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-   <TargetFramework>net6.0</TargetFramework>
+   <TargetFramework>net7.0</TargetFramework>
    <!-- NoWarn below suppresses WFDEV001 project-wide -->
    <NoWarn>$(NoWarn);WFDEV001</NoWarn>
    <!-- To suppress multiple warnings, you can use multiple NoWarn elements -->

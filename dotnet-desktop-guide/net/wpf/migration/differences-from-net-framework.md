@@ -17,7 +17,7 @@ There are a few features of .NET Framework that .NET doesn't support. For more i
 
 ## SDK-style projects
 
-.NET uses SDK-style project files. These project files are different from the traditional .NET Framework project files managed by Visual Studio. To migrate your .NET Framework WPF apps to .NET, you must convert your projects. For more information, see [Migrate WPF apps to .NET 5](convert-project-from-net-framework.md).
+.NET uses SDK-style project files. These project files are different from the traditional .NET Framework project files managed by Visual Studio. To migrate your .NET Framework WPF apps to .NET, you must convert your projects. For more information, see [How to upgrade a WPF desktop app to .NET 7](index.md).
 
 ## NuGet package references
 
@@ -52,4 +52,4 @@ Publicly defined CAS-related types were moved out of the WPF assemblies and into
 
 ## Next steps
 
-- [Migrate WPF apps to .NET 5](convert-project-from-net-framework.md)
+- [How to upgrade a WPF desktop app to .NET 7](index.md)

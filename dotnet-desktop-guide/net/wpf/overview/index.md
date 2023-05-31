@@ -33,7 +33,7 @@ This overview is intended for newcomers and covers the key capabilities and conc
 
 ## Why migrate from .NET Framework
 
-WPF for .NET provides new features and enhancements over .NET Framework. To learn how to migrate an app, see [How to migrate a WPF desktop app to .NET 5](../migration/convert-project-from-net-framework.md).
+WPF for .NET provides new features and enhancements over .NET Framework. To learn how to migrate an app, see [How to upgrade a WPF desktop app to .NET 7](../migration/index.md).
 
 ## Program with WPF
 
