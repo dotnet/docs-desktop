@@ -86,7 +86,7 @@ After your project is upgraded, clean and compile it.
 01. Right-click on the **MatchingGame** project in the **Solution Explorer** window and select **Clean**.
 01. Right-click on the **MatchingGame** project in the **Solution Explorer** window and select **Build**.
 
-Any errors and incompatibilities are listed in the **Error List** window.
+If your application encountered any errors, you can find them in the **Error List** window with a recommendation how to fix them.
 
 <!--
 ### Visual Basic

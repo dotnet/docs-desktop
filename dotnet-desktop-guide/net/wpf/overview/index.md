@@ -33,7 +33,15 @@ This overview is intended for newcomers and covers the key capabilities and conc
 
 ## Why upgrade from .NET Framework
 
-WPF for .NET provides new features and enhancements over .NET Framework. For more information, see [How to upgrade a WPF desktop app to .NET 7](../migration/index.md).
+When you are upgrading your application from .NET Framework to .NET, you will benefit from:
+
+- Better performance
+- New .NET APIs
+- The latest language improvements
+- Improved accessibility and reliability
+- Updated tooling and more
+
+To learn how to upgrade your application, see [How to upgrade a WPF desktop app to .NET 7](../migration/index.md).
 
 ## Program with WPF
 
