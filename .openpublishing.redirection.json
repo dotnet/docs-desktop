@@ -816,6 +816,42 @@
         {
             "source_path": "dotnet-desktop-guide/net/winforms/controls-design/index.md",
             "redirect_url": "/dotnet/desktop/winforms/controls-design/overview?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/controls/windows-forms-control-development-basics.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls-design/overview?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/controls/how-to-author-composite-controls.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls-design/usercontrol-overview?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/winforms/controls-design/usercontrol-overview.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-author-composite-controls?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/controls/how-to-inherit-from-the-usercontrol-class.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls-design/usercontrol-overview?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/controls/how-to-inherit-from-existing-windows-forms-controls.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls-design/extend-existing?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/winforms/controls-design/extend-existing.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-inherit-from-existing-windows-forms-controls?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/controls/attributes-in-windows-forms-controls.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls-design/designer-overview?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/winforms/controls-design/designer-overview.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls/attributes-in-windows-forms-controls?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/controls/how-to-apply-attributes-in-windows-forms-controls.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls-design/designer-overview?view=netdesktop-7.0"
         }
     ]
 }

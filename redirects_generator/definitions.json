@@ -121,7 +121,47 @@
             "SourceUrl": "/dotnet/desktop/winforms/controls/control-type-recommendations?view=netframeworkdesktop-4.8",
             "TargetUrl": "/dotnet/desktop/winforms/controls-design/overview?view=netdesktop-7.0"
         },
-        
+        {
+            "Redirect": "OneWay",
+            "SourceUrl": "/dotnet/desktop/winforms/controls/windows-forms-control-development-basics?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/winforms/controls-design/overview?view=netdesktop-7.0"
+        },
+        {
+            "Redirect": "OneWay",
+            "SourceUrl": "/dotnet/desktop/winforms/controls/control-type-recommendations?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/winforms/controls-design/overview?view=netdesktop-7.0"
+        },
+        {
+            "Redirect": "OneWay",
+            "SourceUrl": "/dotnet/desktop/winforms/controls/control-type-recommendations?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/winforms/controls-design/overview?view=netdesktop-7.0"
+        },
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/winforms/controls/how-to-author-composite-controls?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/winforms/controls-design/usercontrol-overview?view=netdesktop-7.0"
+        },
+        {
+            "Redirect": "OneWay",
+            "SourceUrl": "/dotnet/desktop/winforms/controls/how-to-inherit-from-the-usercontrol-class?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/winforms/controls-design/usercontrol-overview?view=netdesktop-7.0"
+        },
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/winforms/controls/how-to-inherit-from-existing-windows-forms-controls?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/winforms/controls-design/extend-existing?view=netdesktop-7.0"
+        },
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/winforms/controls/attributes-in-windows-forms-controls?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/winforms/controls-design/designer-overview?view=netdesktop-7.0"
+        },
+        {
+            "Redirect": "OneWay",
+            "SourceUrl": "/dotnet/desktop/winforms/controls/how-to-apply-attributes-in-windows-forms-controls?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/winforms/controls-design/designer-overview?view=netdesktop-7.0"
+        },
+
         // Custom painting and drawing
         {
             "Redirect": "TwoWay",
