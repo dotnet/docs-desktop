@@ -32,7 +32,7 @@ Many basic design elements of custom controls have remained the same from .NET F
 
 Visual Studio is a .NET Framework-based application, and as such, the Visual Designer you see for Windows Forms is also based on .NET Framework. With a .NET Framework project, both the Visual Studio environment and the Windows Forms app being designed run within the same process, **devenv.exe**. This poses a problem when you're working with a Windows Forms .NET (not .NET Framework) app. Both .NET and .NET Framework can't work within the same process. As a result, Windows Forms .NET uses a different designer, the "out-of-process" designer.
 
-The out-of-process designer is a process called **DesignToolsServer.exe**, and is run along-side Visual Studio's **devenv.exe** process. The **DesignToolsServer.exe** process runs in the same version and platform, such as .NET 7 and x64, of .NET that your app is using. When your custom control needs to display UI in the **devenv.exe** your custom control must implement a client-server architecture to facilitate the communication to and from **devenv.exe**. For more information, see [The designer changes since .NET Framework (Windows Forms .NET)](designer-differences-framework.md).
+The out-of-process designer is a process called **DesignToolsServer.exe**, and is run along-side Visual Studio's **devenv.exe** process. The **DesignToolsServer.exe** process runs in the same version and platform, such as .NET 7 and x64, of .NET that your app is targeting. When your custom control needs to display UI in the **devenv.exe** your custom control must implement a client-server architecture to facilitate the communication to and from **devenv.exe**. For more information, see [The designer changes since .NET Framework (Windows Forms .NET)](designer-differences-framework.md).
 
 ## Property window
 
@@ -82,7 +82,7 @@ The following table shows the attributes you can apply to properties or other me
 ### Type editors
 -->
 
-## Custom designers
+## Custom control designers
 
 The design-time experience for custom controls can be enhanced by authoring an associated custom designer. By default, your custom control is displayed on the host's design surface, and it looks the same as it does during run-time. With a custom designer you can enhance the design-time view of the control, add action items, snap lines, and other items, which can assist the user in determining how to lay out and configure the control. For example, at design-time the <xref:System.Windows.Forms.ToolStrip> designer adds extra controls for the user to add, remove, and configure the individual items, as demonstrated in the following image:
 
@@ -115,7 +115,7 @@ Action item lists are provided by the `ControlDesigner` type you create. The fol
 01. Adding reference to the [Microsoft.WinForms.Designer.SDK NuGet package](https://www.nuget.org/packages/Microsoft.WinForms.Designer.SDK).
 01. Create a new action list class that inherits from `Microsoft.DotNet.DesignTools.Designers.Actions.DesignerActionList`.
 01. Add the properties to the action list you want the user to access. For example, adding a `bool` or `Boolean` (in Visual Basic) property to the class creates a <xref:System.Windows.Forms.CheckBox> control in the action list.
-01. Follow the steps in the [Custom designers](#custom-designers) section to create a new designer.
+01. Follow the steps in the [Custom control designers](#custom-control-designers) section to create a new designer.
 01. In the designer class, override the `ActionLists` property, which returns a `Microsoft.DotNet.DesignTools.Designers.Actions.DesignerActionListCollection` type.
 01. Add your action list to a `DesignerActionListCollection` instance, and return it.
 

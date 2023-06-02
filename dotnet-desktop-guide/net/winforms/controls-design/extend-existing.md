@@ -17,7 +17,7 @@ If you want to add more features to an existing control, you can create a contro
 
 After creating a new project, use the Visual Studio templates to create a user control. The following steps demonstrate how to add a user control to your project:
 
-01. In Visual Studio, find the **Project Explorer** pane. Right-click on the project and choose **Add** > **User Control (Windows Forms)**.
+01. In Visual Studio, find the **Project Explorer** pane. Right-click on the project and choose **Add** > **Class**.
 
     :::image type="content" source="media/extend-existing/right-click.png" alt-text="Right-click the Visual Studio solution explorer to add a user control to a Windows Forms project":::
 
@@ -25,19 +25,17 @@ After creating a new project, use the Visual Studio templates to create a user c
 
     :::image type="content" source="media/extend-existing/new-customcontrol-dialog.png" alt-text="Add item dialog in Visual Studio for Windows Forms":::
 
-After the user control is created, Visual Studio opens the code-editor for the control.
+After the user control is created, Visual Studio opens the code-editor for the control. The next step is to turn this custom control into a button and extend it.
 
-## Example: Extend the button control
+## Change the custom control to a button
 
-In the following example, you'll learn how to extend the button control to create a new control that counts the times the button is clicked. Custom controls can draw on top of the base control, and in this example the control prints on top of the button how many times it's clicked.
+In this section, you learn how to change a custom control into a button that counts and displays the number of times it's clicked.
 
 :::image type="content" source="media/extend-existing/control-preview.gif" alt-text="A Windows Forms for .NET custom control":::
 
-The following procedure creates the control:
+After [you add a custom control to your project](#add-a-custom-control-to-a-project) named `CustomControl1`, the control designer should be opened. If it's not, double-click on the control in the **Solution Explorer**. Follow these steps to convert the custom control into a control that inherits from `Button` and extends it:
 
-01. Create a new Windows Forms project or open an existing project.
-01. [Add a custom control to a project](#add-a-custom-control-to-a-project). The default name of `CustomControl1` is fine.
-01. The control designer opens up, which lets you add components to your control. Press <kbd>F7</kbd> or right-click on the designer window and select **View Code**.
+01. With the control designer opened, press <kbd>F7</kbd> or right-click on the designer window and select **View Code**.
 01. In the code-editor, you should see a class definition:
 
     :::code language="csharp" source="./snippets/extend-existing/csharp/CustomControl2.cs" id="control":::
@@ -53,7 +51,7 @@ The following procedure creates the control:
     :::code language="csharp" source="./snippets/extend-existing/csharp/CustomControl1.cs" id="onpaint":::
     :::code language="vb" source="./snippets/extend-existing/vb/CustomControl1.vb" id="onpaint":::
 
-01. Lastly, override the `OnClick` method. This method is called everytime the control is pressed. The code is going to increase the counter, and then call the `Invalidate` method which forces the control to redraw itself.
+01. Lastly, override the `OnClick` method. This method is called every time the control is pressed. The code is going to increase the counter, and then call the `Invalidate` method, which forces the control to redraw itself.
 
     :::code language="csharp" source="./snippets/extend-existing/csharp/CustomControl1.cs" id="onclick":::
     :::code language="vb" source="./snippets/extend-existing/vb/CustomControl1.vb" id="onclick":::

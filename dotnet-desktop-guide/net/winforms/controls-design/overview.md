@@ -31,7 +31,7 @@ The <xref:System.Windows.Forms.Control> class is the base class for Windows Form
 - Provides mouse and keyboard events, and many other user interface events.
 - Provides advanced layout features.
 - Contains many properties specific to visual display, such as <xref:System.Windows.Forms.Control.ForeColor%2A>, <xref:System.Windows.Forms.Control.BackColor%2A>, <xref:System.Windows.Forms.Control.Height%2A>, and <xref:System.Windows.Forms.Control.Width%2A>.
-- Provides the security and threading support necessary for a Windows Forms control to act as a Microsoft® ActiveX® control.
+<!--- Provides the security and threading support necessary for a Windows Forms control to act as a Microsoft® ActiveX® control.-->
 
 Because so much of the infrastructure is provided by the base class, it's relatively easy to develop your own Windows Forms controls.
 
@@ -59,7 +59,6 @@ There are three types of custom controls you can create: user controls, extended
     <td>
         <ul>
             <li>Most of the functionality you need is already identical to an existing Windows Forms control.</li>
-            <li>You want to group one or more controls into a single reusable control.</li>
             <li>You don't need a custom graphical user interface, or you want to design a new graphical user interface for an existing control.</li>
         </ul>
     </td>
@@ -105,9 +104,10 @@ To implement a custom control, you must write code for the <xref:System.Windows.
 
 An example of a custom control is a clock control that duplicates the appearance and behavior of an analog clock. Custom painting is invoked to cause the hands of the clock to move in response to <xref:System.Windows.Forms.Timer.Tick> events from an internal <xref:System.Windows.Forms.Timer> component.<!-- TODO For more information, see [How to: Develop a Simple Windows Forms Control](how-to-develop-a-simple-windows-forms-control.md).-->
 
+<!--TODO 
 ## ActiveX controls
 
-Although the Windows Forms infrastructure has been optimized to host Windows Forms controls, you can still use ActiveX controls. <!--TODO There's support for this task in Visual Studio. For more information, see [How to: Add ActiveX Controls to Windows Forms](how-to-add-activex-controls-to-windows-forms.md).-->
+Although the Windows Forms infrastructure has been optimized to host Windows Forms controls, you can still use ActiveX controls. There's support for this task in Visual Studio. For more information, see [How to: Add ActiveX Controls to Windows Forms](how-to-add-activex-controls-to-windows-forms.md).-->
 
 ## Custom design experience
 
