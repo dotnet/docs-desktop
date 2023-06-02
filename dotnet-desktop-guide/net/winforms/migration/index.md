@@ -1,215 +1,94 @@
 ---
-title: Migrate a Windows Forms app to .NET 5
-description: Learn how to port a .NET Framework Windows Forms application to .NET 5.
-ms.date: 11/02/2020
+title: Upgrade a Windows Forms app to .NET 7
+description: Learn how to upgrade a .NET Framework (or previous .NET) Windows Forms application to .NET 7.
+ms.date: 06/01/2023
 ms.topic: how-to
 ---
 
-# How to migrate a Windows Forms desktop app to .NET 5
+# How to upgrade a Windows Forms desktop app to .NET 7
 
-This article describes how to migrate a Windows Forms desktop app from .NET Framework to .NET 5 or later. The .NET SDK includes support for Windows Forms applications. Windows Forms is still a Windows-only framework and only runs on Windows.
+This article describes how to upgrade a Windows Forms desktop app to .NET 7. Even though Windows Forms runs on .NET, a cross-platform technology, Windows Forms is still a Windows-only framework. The following Windows Forms-related project types can be upgraded with the .NET Upgrade Assistant:
 
-Migrating your app from .NET Framework to .NET 5 generally requires a new project file. .NET 5 uses SDK-style project files while .NET Framework typically uses the older Visual Studio project file. If you've ever opened a Visual Studio project file in a text editor, you know how verbose it is. SDK-style projects are smaller and don't require as many entries as the older project file format does.
+- Windows Forms project
+- Control library
+- .NET library
 
-To learn more about .NET 5, see [Introduction to .NET](/dotnet/core/introduction).
+You should also review the information in the [Porting from .NET Framework to .NET](/dotnet/core/porting/) guide.
 
-## Try the upgrade assistant
-
-The .NET Upgrade Assistant is a command-line tool that can be run on different kinds of .NET Framework apps. It's designed to assist with upgrading .NET Framework apps to .NET 5. After running the tool, in most cases the app will require additional effort to complete the migration. The tool includes the installation of analyzers that can assist with completing the migration.
-
-For more information, see [Upgrade a WPF App to .NET 5 with the .NET Upgrade Assistant](/dotnet/core/porting/upgrade-assistant-wpf-framework).
+> [!WARNING]
+> Don't upgrade Visual Basic Windows Forms projects. There seems to be a bug with the extension. This article will be updated when the bug is fixed.
 
 ## Prerequisites
 
-- [Visual Studio 2019 version 16.11](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+desktopguide+winforms) or later.
+- Windows Operating System
+- [Visual Studio 2022 version 17.1 or later to target .NET 7](https://visualstudio.microsoft.com/downloads/)
+- [Visual Studio 2022 version 17.7 Preview 1 or later to target .NET 8](https://visualstudio.microsoft.com/downloads/)
+- [.NET Upgrade Assistant extension for Visual Studio](/dotnet/core/porting/upgrade-assistant-install#install-the-visual-studio-extension)
 
-  - Select the [Visual Studio Desktop workload](/visualstudio/install/modify-visual-studio?view=vs-2019&preserve-view=true#modify-workloads).
+## Demo app
 
-  - Select the [.NET 5 individual component](/visualstudio/install/modify-visual-studio?view=vs-2019&preserve-view=true#modify-individual-components).
+This article was written in the context of upgrading the **Windows Forms Matching Game Sample** project, which you can download from the [.NET Samples GitHub repository][winforms-sample].
 
-- Preview WinForms designer in Visual Studio.
+> [!IMPORTANT]
+> Due to a bug in Windows Forms for .NET 7, the sample project crashes on startup after upgrading. This is fixed in upcoming .NET Desktop Runtime 7.0.6 release. The latest .NET 8 preview contains the same fix.
 
-  To enable the designer, go to **Tools** > **Options** > **Environment** > **Preview Features** and select the **Use the preview Windows Forms designer for .NET Core apps** option.
+## Initiate the upgrade
 
-- This article uses the [Matching game](https://github.com/dotnet/samples/tree/master/windowsforms/matching-game/net45/) sample app. If you want to follow along, download and open the application in Visual Studio. Otherwise, use your own app.
+If you're upgrading multiple projects, start with projects that have no dependencies. In the Matching Game sample, the **MatchingGame** project depends on the **MatchingGame.Logic** library, so **MatchingGame.Logic** should be upgraded first.
 
-### Consider
+> [!TIP]
+> Be sure to have a backup of your code, such as in source control or a copy.
 
-When migrating a .NET Framework Windows Forms application, there are a few things you must consider.
+Use the following steps to upgrade a project in Visual Studio:
 
-01. Check that your application is a good candidate for migration.
+01. Right-click on the **MatchingGame.Logic** project in the **Solution Explorer** window and select **Upgrade**:
 
-    Use the [.NET Portability Analyzer](/dotnet/standard/analyzers/portability-analyzer) to determine if your project will migrate to .NET 5. If your project has issues with .NET 5, the analyzer helps you identify those problems. The .NET Portability Analyzer tool can be installed as a Visual Studio extension or used from the command line. For more information, see [.NET Portability Analyzer](/dotnet/standard/analyzers/portability-analyzer).
+    :::image type="content" source="media/index/vs-upgrade.png" alt-text="The .NET Upgrade Assistant's Upgrade menu item in Visual Studio.":::
 
-01. You're using a different version of Windows Forms.
+    A new tab is opened that prompts you to choose how you want the upgrade to be performed.
 
-    When .NET Core 3.0 was released, Windows Forms went [open source on GitHub](https://github.com/dotnet/winforms). The code for Windows Forms for .NET 5 is a fork of the .NET Framework Windows Forms codebase. It's possible some differences exist and your app will be difficult to migrate.
+01. Select **In-place project upgrade**.
+01. Next, select the target framework. Based on the type of project you're upgrading, you're presented with different options. **.NET Standard 2.0** is a good choice if the library doesn't rely on a desktop technology like Windows Froms and can be used by both .NET Framework projects and .NET projects. However, the latest .NET releases provide many language and compiler improvements over .NET Standard.
 
-01. The [Windows Compatibility Pack][compat-pack] may help you migrate.
+    Select **.NET 7.0** and then select **Next**.
 
-    Some APIs that are available in .NET Framework aren't available in .NET 5. The [Windows Compatibility Pack][compat-pack] adds many of these APIs and may help your Windows Forms app become compatible with .NET 5.
+    :::image type="content" source="media/index/vs-target-framework.png" alt-text="The .NET Upgrade Assistant's target framework decision tab.":::
 
-01. Update the NuGet packages used by your project.
+01. A tree is shown with all of the artifacts related to the project, such as code files and libraries. You can upgrade individual artifacts or the entire project, which is the default. Select **Upgrade selection** to start the upgrade.
 
-    It's always a good practice to use the latest versions of NuGet packages before any migration. If your application is referencing any NuGet packages, update them to the latest version. Ensure your application builds successfully. After upgrading, if there are any package errors, downgrade the package to the latest version that doesn't break your code.
+    When the upgrade is finished, the results are displayed:
 
-## Back up your projects
+    :::image type="content" source="media/index/vs-upgrade-results.png" alt-text="The .NET Upgrade Assistant's upgrade results tab, showing two out of the 13 items were skipped.":::
 
-The first step to migrating a project is to back up your project! If something goes wrong, you can restore your code to its original state by restoring your backup. Don't rely on tools such as the .NET Portability Analyzer to back up your project, even if they seem to. It's best to personally create a copy of the original project.
+    Artifacts with a solid green circle were upgraded while empty green circles were skipped. Skipped artifacts mean that the upgrade assistant didn't find anything to upgrade.
 
-## NuGet packages
+Now that the app's supporting library is upgraded, upgrade the main app.
 
-If your project is referencing NuGet packages, you probably have a **packages.config** file in your project folder. With SDK-style projects, NuGet package references are configured in the project file. Visual Studio project files can optionally define NuGet packages in the project file too. .NET 5 doesn't use **packages.config** for NuGet packages. NuGet package references must be migrated into the project file before migration.
+### Upgrade the app
 
-To migrate the **packages.config** file, do the following steps:
+Once all of the supporting libraries are upgraded, the main app project can be upgraded. With the example app, there's only one library project to upgrade, which was upgraded in the previous section.
 
-01. In **Solution explorer**, find the project you're migrating.
-02. Right-click on **packages.config** > **Migrate packages.config to PackageReference**.
-03. Select all of the top-level packages.
+01. Right-click on the **MatchingGame** project in the **Solution Explorer** window and select **Upgrade**:
+01. Select **In-place project upgrade** as the upgrade mode.
+01. Select **.NET 7.0** for the target framework and select **Next**.
+01. Leave all of the artifacts selected and select **Upgrade selection**.
 
-A build report is generated to let you know of any issues migrating the NuGet packages.
+After the upgrade is complete, the results are shown. Notice how the Windows Forms project has a warning symbol. Expand that and more information is shown about that step:
 
-## Project file
+:::image type="content" source="media/index/vs-upgrade-warning.png" alt-text="The .NET Upgrade Assistant's upgrade results tab, showing some of the result items have warning symbols.":::
 
-The next step in migrating your app is converting the project file. As previously stated, .NET 5 uses SDK-style project files and won't load the Visual Studio project files that .NET Framework uses. However, there's the possibility that you're already using SDK-style projects. You can easily spot the difference in Visual Studio. Right-click on the project file in **Solution explorer** and look for the **Edit Project File** menu option. If this menu item is missing, you're using the old Visual Studio project format and need to upgrade.
+Notice that the project upgrade component mentions that the default font has changed. Because the font may affect control layout, you need to check every form and custom control in your project to ensure the UI is arranged correctly.
 
-Convert each project in your solution. If you're using the sample app previously referenced, both the **MatchingGame** and **MatchingGame.Logic** projects would be converted.
+## Generate a clean build
 
-To convert a project, do the following steps:
+After your project is upgraded, clean and compile it.
 
-01. In **Solution explorer**, find the project you're migrating.
-01. Right-click on the project and select **Unload Project**.
-01. Right-click on the project and select **Edit Project File**.
-01. Copy-and-paste the project XML into a text editor. You'll want a copy so that it's easy to move content into the new project.
-01. Erase the content of the file and paste the following XML:
+01. Right-click on the **MatchingGame** project in the **Solution Explorer** window and select **Clean**.
+01. Right-click on the **MatchingGame** project in the **Solution Explorer** window and select **Build**.
 
-    ```xml
-    <Project Sdk="Microsoft.NET.Sdk">
+If your application encountered any errors, you can find them in the **Error List** window with a recommendation how to fix them.
 
-      <PropertyGroup>
-        <OutputType>WinExe</OutputType>
-        <TargetFramework>net5.0-windows</TargetFramework>
-        <UseWindowsForms>true</UseWindowsForms>
-        <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-      </PropertyGroup>
-
-    </Project>
-    ```
-
-    > [!IMPORTANT]
-    > Libraries don't need to define an `<OutputType>` setting. Remove that entry if you're upgrading a library project.
-
-This XML gives you the basic structure of the project. However, it doesn't contain any of the settings from the old project file. Using the old project information you previously copied to a text editor, do the following steps:
-
-01. Copy the following elements from the old project file into the `<PropertyGroup>` element in the new project file:
-
-    - `<RootNamespace>`
-    - `<AssemblyName>`
-
-    Your project file should look similar to the following XML:
-
-    ```xml
-    <Project Sdk="Microsoft.NET.Sdk">
-
-      <PropertyGroup>
-        <OutputType>WinExe</OutputType>
-        <TargetFramework>net5.0-windows</TargetFramework>
-        <UseWindowsForms>true</UseWindowsForms>
-        <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-
-        <RootNamespace>MatchingGame</RootNamespace>
-        <AssemblyName>MatchingGame</AssemblyName>
-      </PropertyGroup>
-
-    </Project>
-    ```
-
-01. Copy the `<ItemGroup>` elements from the old project file that contain `<ProjectReference>` or `<PackageReference>` into the new file after the `</PropertyGroup>` closing tag.
-
-    Your project file should look similar to the following XML:
-
-    ```xml
-    <Project Sdk="Microsoft.NET.Sdk">
-
-      <PropertyGroup>
-        (contains settings previously described)
-      </PropertyGroup>
-
-      <ItemGroup>
-        <ProjectReference Include="..\MatchingGame.Logic\MatchingGame.Logic.csproj">
-          <Project>{36b3e6e2-a9ae-4924-89ae-7f0120ce08bd}</Project>
-          <Name>MatchingGame.Logic</Name>
-        </ProjectReference>
-      </ItemGroup>
-      <ItemGroup>
-        <PackageReference Include="MetroFramework">
-          <Version>1.2.0.3</Version>
-        </PackageReference>
-      </ItemGroup>
-
-    </Project>
-    ```
-
-    The `<ProjectReference>` elements don't need the `<Project>` and `<Name>` children, so you can remove those settings:
-
-    ```xml
-    <ItemGroup>
-      <ProjectReference Include="..\MatchingGame.Logic\MatchingGame.Logic.csproj" />
-    </ItemGroup>
-    ```
-
-### Resources and settings
-
-One thing to note about the difference between .NET Framework projects and the SDK-style projects used by .NET 5 is that .NET Framework projects use an opt-in model for code files. Any code file you want to compile needs to be explicitly defined in your project file. SDK-style projects are reverse, they default to opt-out behavior: All code files starting from the project's directory and below are automatically included in your project. You don't need to migrate these entries if they are simple and without settings. This is the same for other common files such as _resx_.
-
-Windows Forms projects may also reference the following files:
-
-- _Properties\\Settings.settings_
-- _Properties\\Resources.resx_
-- _Properties\\app.manifest_
-
-The _app.manifest_ file is automatically referenced by your project and you don't need to do anything special to migrate it.
-
-Any _*.resx_ and _*.settings_ files in the _Properties_ folder need to be migrated in the project. Copy those entries from the old project file into an `<ItemGroup>` element in the new project. After you copy the entries, change all `<Compile Include="value">` elements to instead use the `Update` attribute instead of `Include`.
-
-- Import the configuration for the _Settings.settings_ file.
-
-  ```xml
-  <ItemGroup>
-    <None Update="Properties\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
-    <Compile Update="Properties\Settings.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Settings.settings</DependentUpon>
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
-    </Compile>
-  </ItemGroup>
-  ```
-
-  > [!IMPORTANT]
-  > **Visual Basic** projects typically use the folder _My Project_ while C# projects typically use the folder _Properties_ for the default project settings file.
-  
-- Import the configuration for any _resx_ file, such as the _properties\\Resources.resx_ file. Notice that the `Include` attribute was set to `Update` on the `<Compile>` and `<EmbeddedResource>` element, and `<SubType>` was removed from `<EmbeddedResource>`:
-
-  ```xml
-  <ItemGroup>
-    <EmbeddedResource Update="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <Compile Update="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
-  </ItemGroup>
-  ```
-
-  > [!IMPORTANT]
-  > **Visual Basic** projects typically use the folder _My Project_ while C# projects typically use the folder _Properties_ for the default project resource file.
-
+<!--
 ### Visual Basic
 
 Visual Basic language projects require extra configuration.
@@ -286,50 +165,10 @@ Visual Basic language projects require extra configuration.
     </PropertyGroup>
     ```
 
-### Reload the project
+-->
 
-After you convert a project to the new SDK-style format, reload the project in Visual Studio:
+## Conclusion
 
-01. In **Solution Explorer**, find the project you converted.
-01. Right-click on the project and select **Reload Project**.
+The **Windows Forms Matching Game Sample** project is now upgraded to .NET 7. Your results will be different when you migrate your own project. Make sure you take the time to review the [Porting from .NET Framework to .NET](/dotnet/core/porting/) guide and the [Modernize after upgrading to .NET from .NET Framework](/dotnet/core/porting/modernize) article.
 
-    If the project fails to load, you may have introduced a mistake in the XML of the project. Open the project file for editing and try to identify and fix the mistake. If you can't find a mistake, try starting over.
-
-## Edit App.config
-
-If your app has an _App.config_ file, remove the `<supportedRuntime>` element:
-
-```xml
-<supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5" />
-```
-
-There are some things you should consider with the _App.config_ file. The _App.config_ file in .NET Framework was used not only to configure the app, but to configure runtime settings and behavior, such as logging. The _App.config_ file in .NET 5+ (and .NET Core) is no longer used for runtime configuration. If your _App.config_ file has these sections, they won't be respected.
-
-## Add the compatibility package
-
-If your project file is loading correctly, but compilation fails for your project and you receive errors similar to the following:
-
-- **The type or namespace \<some name> could not be found**
-- **The name \<some name> does not exist in the current context**
-
-You may need to add the [`Microsoft.Windows.Compatibility`](https://www.nuget.org/packages/Microsoft.Windows.Compatibility/) package to your app. This package adds ~21,000 .NET APIs from .NET Framework, such as the `System.Configuration.ConfigurationManager` class and APIs for interacting with the Windows Registry.
-
-To add the package to your project, open the project file in an editor and add the following `<ItemGroup>` element:
-
-```xml
-<ItemGroup>
-  <PackageReference Include="Microsoft.Windows.Compatibility" Version="5.0.0" />
-</ItemGroup>
-```
-
-## Test your app
-
-After you've finished migrating your app, test it!
-
-## Next steps
-
-- Try the [.NET Upgrade Assistant](/dotnet/core/porting/upgrade-assistant-winforms-framework) to migrate your app.
-- Learn about [breaking changes in Windows Forms](/dotnet/core/compatibility/winforms).
-- Read more about the [Windows Compatibility Pack][compat-pack].
-
-[compat-pack]: /dotnet/core/porting/windows-compat-pack
+[winforms-sample]: https://github.com/dotnet/samples/tree/main/windowsforms/matching-game

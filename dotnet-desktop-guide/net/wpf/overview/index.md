@@ -31,9 +31,17 @@ There are two implementations of WPF:
 
 This overview is intended for newcomers and covers the key capabilities and concepts of WPF. To learn how to create a WPF app, see [Tutorial: Create a new WPF app](../get-started/create-app-visual-studio.md).
 
-## Why migrate from .NET Framework
+## Why upgrade from .NET Framework
 
-WPF for .NET provides new features and enhancements over .NET Framework. To learn how to migrate an app, see [How to migrate a WPF desktop app to .NET 5](../migration/convert-project-from-net-framework.md).
+When you are upgrading your application from .NET Framework to .NET, you will benefit from:
+
+- Better performance
+- New .NET APIs
+- The latest language improvements
+- Improved accessibility and reliability
+- Updated tooling and more
+
+To learn how to upgrade your application, see [How to upgrade a WPF desktop app to .NET 7](../migration/index.md).
 
 ## Program with WPF
 

@@ -18,7 +18,7 @@ This example shows how to use a <xref:System.Windows.ResourceDictionary> to pack
   
 ### To use a ResourceDictionary to manage localizable string resources  
   
-1. Create a <xref:System.Windows.ResourceDictionary> that contains the strings you would like to localize. The following code shows an example.  
+1. Create a <xref:System.Windows.ResourceDictionary> file in the root of your project named _StringResources.xaml_ that contains the strings you would like to localize. The following code shows an example.  
   
      [!code-xaml[StringLocalizationSample#StringResourceDictionary](~/samples/snippets/csharp/VS_Snippets_Wpf/StringLocalizationSample/CSharp/StringResources.xaml#stringresourcedictionary)]  
   
