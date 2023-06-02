@@ -36,7 +36,7 @@ To learn how to create a Windows Forms app, see [Tutorial: Create a new WinForms
 
 ## Why migrate from .NET Framework
 
-Windows Forms for .NET provides new features and enhancements over .NET Framework. For more information, see [What's new in Windows Forms for .NET 7](../whats-new/net70.md). To learn how to migrate an app, see [How to upgrade a Windows Forms desktop app to .NET 7](../migration/index.md)
+Windows Forms for .NET provides new features and enhancements over .NET Framework. For more information, see [What's new in Windows Forms for .NET 7](../whats-new/net70.md). To learn how to upgrade an app, see [How to upgrade a Windows Forms desktop app to .NET 7](../migration/index.md)
 
 ## Build rich, interactive user interfaces
 
