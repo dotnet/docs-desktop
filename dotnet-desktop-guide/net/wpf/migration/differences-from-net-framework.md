@@ -7,7 +7,7 @@ ms.author: adegeo
 ms.topic: conceptual
 ---
 
-# Differences in WPF .NET
+# Differences with WPF .NET
 
 This article describes the differences between Windows Presentation Foundation (WPF) on .NET and .NET Framework. WPF for .NET is an [open-source framework](https://github.com/dotnet/wpf) forked from the original WPF for .NET Framework source code.
 
@@ -26,7 +26,7 @@ If your .NET Framework app lists its NuGet dependencies in a *packages.config* f
 01. In Visual Studio, open the **Solution Explorer** pane.
 01. In your WPF project, right-click **packages.config** > **Migrate packages.config to PackageReference**.
 
-![Upgrading to PackageReference](media/differences-from-net-framework/package-reference-migration.png)
+:::image type="content" source="media/differences-from-net-framework/package-reference-migration.png" alt-text="Upgrading to PackageReference.":::
 
 A dialog will appear showing calculated top-level NuGet dependencies and asking which other NuGet packages should be promoted to top level. Select **OK** and the *packages.config* file will be removed from the project and `<PackageReference>` elements will be added to the project file.
 
@@ -49,7 +49,3 @@ Publicly defined CAS-related types were moved out of the WPF assemblies and into
 >
 > - `PrivateAccessToTypeName`
 > - `AssemblyNameString`
-
-## Next steps
-
-- [How to upgrade a WPF desktop app to .NET 7](index.md)

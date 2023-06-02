@@ -2,10 +2,10 @@
 title: Print using print preview
 description: Learn how to add print preview services to your application by using the Windows Forms PrintPreviewDialog control.
 ms.date: "05/10/2022"
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "printing [Windows Forms], using print preview"
   - "printing [Windows Forms], with print preview"
   - "print preview"
@@ -67,4 +67,4 @@ It's common in Windows Forms programming to offer print preview in addition to p
 
 - [PrintDialog component overview](overview.md)
 - [Print a multi-page text file](how-to-print-text-document.md)
-- [More Secure Printing in Windows Forms](/desktop/winforms/advanced/more-secure-printing-in-windows-forms?view=netframeworkdesktop-4.8&preserve-view=true)
+- [More Secure Printing in Windows Forms](/dotnet/desktop/winforms/more-secure-printing-in-windows-forms?view=netframeworkdesktop-4.8&preserve-view=true)
