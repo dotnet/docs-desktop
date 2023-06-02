@@ -1,7 +1,7 @@
 ---
 title: Upgrade a WPF app to .NET 7
 description: Learn how to upgrade a .NET Framework (or previous .NET) Windows Presentation Foundation (WPF) application to .NET 7.
-ms.date: 05/23/2023
+ms.date: 06/01/2023
 ms.topic: how-to
 ---
 
@@ -89,7 +89,7 @@ After upgrading, you'll want to:
 
 - Check your NuGet packages.
 
-  The .NET Upgrade Assistant upgraded a lot of packages to new versions. With the sample app provided in this article, the `Microsoft.Data.Sqlite` NuGet package was upgraded from **1.0.0** to **7.0.5**. However, **1.0.0** depends on the `SQLite` Nuget package, but **7.0.5** removes that dependency. After upgrading, the `SQLite` NuGet package is still referenced by the project, although it's no longer required. Both `SQLite` and `SQLite.Native` NuGet packages can be removed from the project.
+  The .NET Upgrade Assistant upgraded some packages to new versions. With the sample app provided in this article, the `Microsoft.Data.Sqlite` NuGet package was upgraded from **1.0.0** to **7.0.5**. However, **1.0.0** depends on the `SQLite` NuGet package, but **7.0.5** removes that dependency. The `SQLite` NuGet package is still referenced by the project, although it's no longer required. Both `SQLite` and `SQLite.Native` NuGet packages can be removed from the project.
 
 - Clean up the old NuGet packages.
 
@@ -143,7 +143,7 @@ As an example, after upgrading the WPF sample app, use _appsettings.json_ for th
 01. Add a file to the project named _appsettings.json_.
 01. Set the _appsettings.json_ file to copy to the output directory.
 
-    Set this through Visual Studio using the **Properties** window after selecting the file in the **Solution Explorer**, or edit the project directly and add the following `ItemGroup`:
+    Set the **copy to output** setting through Visual Studio using the **Properties** window after selecting the file in the **Solution Explorer**. Alternatively you can edit the project directly and add the following `ItemGroup`:
 
     ```xml
       <ItemGroup>

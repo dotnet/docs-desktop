@@ -1,7 +1,7 @@
 ---
 title: Upgrade a Windows Forms app to .NET 7
 description: Learn how to upgrade a .NET Framework (or previous .NET) Windows Forms application to .NET 7.
-ms.date: 05/23/2023
+ms.date: 06/01/2023
 ms.topic: how-to
 ---
 
