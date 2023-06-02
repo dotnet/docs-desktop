@@ -386,8 +386,8 @@
             "redirect_url": "/dotnet/desktop/wpf/systems/xaml-resources-how-to-use-system?view=netdesktop-7.0"
         },
         {
-            "source_path": "dotnet-desktop-guide/net/wpf/migration/index.md",
-            "redirect_url": "/dotnet/desktop/wpf/migration/differences-from-net-framework?view=netdesktop-7.0"
+            "source_path": "dotnet-desktop-guide/net/wpf/migration/convert-project-from-net-framework.md",
+            "redirect_url": "/dotnet/desktop/wpf/migration/index?view=netdesktop-7.0"
         },
         {
             "source_path": "dotnet-desktop-guide/net/wpf/data/how-to-specify-the-direction-of-the-binding.md",
