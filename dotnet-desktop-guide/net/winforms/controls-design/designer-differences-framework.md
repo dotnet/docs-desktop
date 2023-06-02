@@ -1,7 +1,7 @@
 ---
 title: Designers changes from .NET Framework
 description: Learn about the Windows Forms designer changes from .NET Framework to .NET.
-ms.date: 05/01/2023
+ms.date: 06/01/2023
 ms.topic: overview
 no-loc: ["UserControl", "UserControl1", "UserControlProject", "Label", "Button", "Form", "TextBox"]
 dev_langs:
