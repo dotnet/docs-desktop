@@ -19,7 +19,7 @@ Visual Studio is a .NET Framework-based application, and as such, the Visual Des
 
 ## Out-of-process designer
 
-The out-of-process designer is a process called **DesignToolsServer.exe**, and is run along-side Visual Studio's **devenv.exe** process. The **DesignToolsServer.exe** process runs on the same version and platform of .NET that your app has been setup to target, such as .NET 7 and x64.
+The out-of-process designer is a process called **DesignToolsServer.exe**, and is run along-side Visual Studio's **devenv.exe** process. The **DesignToolsServer.exe** process runs on the same version and platform of .NET that your app has been set up to target, such as .NET 7 and x64.
 
 In the Visual Studio designer, .NET Framework proxy objects are created for each component and control on the designer, which communicate with the real .NET objects from your project in the **DesignToolsServer.exe** designer.
 
