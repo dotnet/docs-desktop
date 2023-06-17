@@ -16,6 +16,8 @@ ms.assetid: 6f487c59-cb38-4afa-ad2e-95edacb1d626
 
 The design-time experience for a custom control can be enhanced by authoring an associated custom designer.
 
+[!INCLUDE [visual-studio-designer-net](../includes/visual-studio-designer-net.md)]
+
 This article illustrates how to create a custom designer for a custom control. You'll implement a `MarqueeControl` type and an associated designer class called `MarqueeControlRootDesigner`.
 
 The `MarqueeControl` type implements a display similar to a theater marquee with animated lights and flashing text.
