@@ -83,7 +83,7 @@ If your application encountered any errors, you can find them in the **Error Lis
 
 ## Post-upgrade steps
 
-If your project is being upgraded from .NET Framework to .NET, review the information in the [Modernize after upgrading to .NET from .NET Framework](/core/porting/modernize) article.
+If your project is being upgraded from .NET Framework to .NET, review the information in the [Modernize after upgrading to .NET from .NET Framework](/dotnet/core/porting/modernize) article.
 
 After upgrading, you'll want to:
 
