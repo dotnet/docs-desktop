@@ -10,7 +10,9 @@ ms.assetid: 236cebc0-bd71-4f18-9fd6-5d0e592375df
 # Developing Custom Windows Forms Controls with the .NET Framework
 
 Windows Forms controls are reusable components that encapsulate user interface functionality and are used in client-side Windows-based applications. Not only does Windows Forms provide many ready-to-use controls, it also provides the infrastructure for developing your own controls. You can combine existing controls, extend existing controls, or author your own custom controls. This section provides background information and samples to help you develop Windows Forms controls.  
-  
+
+[!INCLUDE [visual-studio-designer-net](../includes/visual-studio-designer-net.md)]
+
 ## In This Section  
 
  [Overview of Using Controls in Windows Forms](overview-of-using-controls-in-windows-forms.md)  
