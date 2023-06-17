@@ -13,7 +13,9 @@ ms.assetid: 2c5640e9-6c6c-49d7-a5e4-a768f6be7853
 # Attributes in Windows Forms Controls
 
 The .NET Framework provides a variety of attributes you can apply to the members of your custom controls and components. Some of these attributes affect the run-time behavior of a class, and others affect the design-time behavior.  
-  
+
+[!INCLUDE [visual-studio-designer-net](../includes/visual-studio-designer-net.md)]
+
 ## Attributes for Control and Component Properties  
 
  The following table shows the attributes you can apply to properties or other members of your custom controls and components. For an example that uses many of these attributes, see [How to: Apply Attributes in Windows Forms Controls](how-to-apply-attributes-in-windows-forms-controls.md).  
