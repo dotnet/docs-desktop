@@ -20,7 +20,7 @@ A Clipboard format is a string that identifies the format so that an application
 
 To add data to the Clipboard in one or multiple formats, use the <xref:System.Windows.Forms.Clipboard.SetDataObject%2A> method. You can pass any object to this method, but to add data in multiple formats, you must first add the data to a separate object designed to work with multiple formats. Typically, you will add your data to a <xref:System.Windows.Forms.DataObject>, but you can use any type that implements the <xref:System.Windows.Forms.IDataObject> interface.
 
-To add data to the Clipboard in a single, common format, you can use specific method for that format, such as <xref:System.Windows.Forms.Clipboard.SetText%2A> for text.
+To add data to the Clipboard in a single, common format, use the specific method for that format, such as <xref:System.Windows.Forms.Clipboard.SetText%2A> for text.
 
 > [!NOTE]
 > All Windows-based applications share the Clipboard. Therefore, the contents are subject to change when you switch to another application.
