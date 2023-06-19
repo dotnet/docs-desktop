@@ -15,6 +15,10 @@ You can develop a composite Windows Forms control by combining other Windows For
 
 The Windows Forms designer in Visual Studio provides rich design-time support for authoring user controls.
 
+- [How to: Author Composite Controls](how-to-author-composite-controls.md)
+
+- [Walkthrough: Authoring a Composite Control with Visual C#](walkthrough-authoring-a-composite-control-with-visual-csharp.md)
+
 - [How to: Display a Control in the Choose Toolbox Items Dialog Box](how-to-display-a-control-in-the-choose-toolbox-items-dialog-box.md)
 
 - [Walkthrough: Serializing Collections of Standard Types with the DesignerSerializationVisibilityAttribute](serializing-collections-designerserializationvisibilityattribute.md)
@@ -36,10 +40,6 @@ The Windows Forms designer in Visual Studio provides rich design-time support fo
 - [How to: Inherit from the UserControl Class](how-to-inherit-from-the-usercontrol-class.md)
 
 - [How to: Author Controls for Windows Forms](how-to-author-controls-for-windows-forms.md)
-
-- [How to: Author Composite Controls](how-to-author-composite-controls.md)
-
-- [Walkthrough: Authoring a Composite Control with Visual C#](walkthrough-authoring-a-composite-control-with-visual-csharp.md)
 
 - [Walkthrough: Creating a Windows Forms Control That Takes Advantage of Visual Studio Design-Time Features](creating-a-wf-control-design-time-features.md)
 
