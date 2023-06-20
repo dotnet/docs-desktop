@@ -47,4 +47,4 @@ After the user control is created, Visual Studio opens the designer:
 
 :::image type="content" source="media/usercontrol-overview/designer.png" alt-text="The user control designer in Visual Studio for Windows Forms":::
 
-For an example of a working user control, see [How to create a user control (Windows Forms .NET)](how-to-create-usercontrol.md).
+For an example of a working user control, see [How to create a user control](how-to-create-usercontrol.md).
