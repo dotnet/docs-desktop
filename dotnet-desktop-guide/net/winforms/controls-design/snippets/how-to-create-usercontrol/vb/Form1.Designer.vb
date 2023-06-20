@@ -22,8 +22,8 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        ctlFirstName = New UserControl1()
-        ctlLastName = New UserControl1()
+        ctlFirstName = New ClearableTextBox()
+        ctlLastName = New ClearableTextBox()
         lblFullName = New Label()
         SuspendLayout()
         ' 
@@ -68,7 +68,7 @@ Partial Class Form1
         PerformLayout()
     End Sub
 
-    Friend WithEvents ctlFirstName As UserControl1
-    Friend WithEvents ctlLastName As UserControl1
+    Friend WithEvents ctlFirstName As ClearableTextBox
+    Friend WithEvents ctlLastName As ClearableTextBox
     Friend WithEvents lblFullName As Label
 End Class

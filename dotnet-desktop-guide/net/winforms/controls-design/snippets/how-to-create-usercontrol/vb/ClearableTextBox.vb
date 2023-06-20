@@ -2,7 +2,7 @@
 Imports System.ComponentModel
 
 <DefaultEvent("TextChanged")>
-Public Class UserControl1
+Public Class ClearableTextBox
     '</default_event>
     '<text_changed>
     <Browsable(True)>
@@ -44,7 +44,7 @@ Public Class UserControl1
     '</title>
 
     '<click_event>
-    Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
+    Private Sub btnClear_Click(sender As Object, e As EventArgs)
         txtValue.Text = ""
     End Sub
     '</click_event>

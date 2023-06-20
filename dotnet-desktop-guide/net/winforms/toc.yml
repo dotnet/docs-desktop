@@ -82,10 +82,10 @@ items:
 #      href: blah
 #    - name: "Tutorial: Create a user control (X)" 
 #      href: blah
-#    - name: Common tasks
-#      items:
-#      - name: Make your controls invisible (X)
-#        href: blah
+    - name: Common tasks
+      items:
+      - name: How to create a user control
+        href: controls-design/how-to-create-usercontrol.md
 #  - name: User-drawn controls
 #    items:
 #    - name: Overview (X)
