@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            ctlFirstName = new UserControl1();
-            ctlLastName = new UserControl1();
+            ctlFirstName = new ClearableTextBox();
+            ctlLastName = new ClearableTextBox();
             lblFullName = new Label();
             SuspendLayout();
             // 
@@ -78,8 +78,8 @@
 
         #endregion
 
-        private UserControl1 ctlFirstName;
-        private UserControl1 ctlLastName;
+        private ClearableTextBox ctlFirstName;
+        private ClearableTextBox ctlLastName;
         private Label lblFullName;
     }
 }

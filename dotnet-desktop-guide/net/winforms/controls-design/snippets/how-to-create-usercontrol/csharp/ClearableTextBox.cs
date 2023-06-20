@@ -4,7 +4,7 @@ using System.ComponentModel;
 namespace UserControlProject;
 
 [DefaultEvent(nameof(TextChanged))]
-public partial class UserControl1 : UserControl
+public partial class ClearableTextBox : UserControl
 //</default_event>
 {
     //<text_changed>
@@ -34,7 +34,7 @@ public partial class UserControl1 : UserControl
     }
     //</title>
 
-    public UserControl1() =>
+    public ClearableTextBox() =>
         InitializeComponent();
 
     //<click_event>

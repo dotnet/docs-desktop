@@ -1,6 +1,6 @@
 ﻿namespace UserControlProject
 {
-    partial class UserControl1
+    partial class ClearableTextBox
     {
         /// <summary> 
         /// Required designer variable.
@@ -59,9 +59,8 @@
             btnClear.TabIndex = 2;
             btnClear.Text = "↻";
             btnClear.UseVisualStyleBackColor = true;
-            btnClear.Click += btnClear_Click;
             // 
-            // UserControl1
+            // ClearableTextBox
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -69,7 +68,7 @@
             Controls.Add(txtValue);
             Controls.Add(lblTitle);
             MinimumSize = new Size(84, 53);
-            Name = "UserControl1";
+            Name = "ClearableTextBox";
             Size = new Size(191, 53);
             ResumeLayout(false);
             PerformLayout();
