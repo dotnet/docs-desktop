@@ -4,9 +4,6 @@ description: Learn about what a user control is in Windows Forms. A user control
 ms.date: 06/01/2023
 ms.topic: overview
 no-loc: ["UserControl", "UserControl1", "UserControlProject", "Label", "Button", "Form", "TextBox"]
-dev_langs:
-  - "csharp"
-  - "vb"
 f1_keywords: 
   - "UserControl"
 helpviewer_keywords: 
