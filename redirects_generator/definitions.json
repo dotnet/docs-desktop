@@ -139,7 +139,7 @@
         {
             "Redirect": "TwoWay",
             "SourceUrl": "/dotnet/desktop/winforms/controls/how-to-author-composite-controls?view=netframeworkdesktop-4.8",
-            "TargetUrl": "/dotnet/desktop/winforms/controls-design/usercontrol-overview?view=netdesktop-7.0"
+            "TargetUrl": "/dotnet/desktop/winforms/controls-design/how-to-create-usercontrol?view=netdesktop-7.0"
         },
         {
             "Redirect": "OneWay",
