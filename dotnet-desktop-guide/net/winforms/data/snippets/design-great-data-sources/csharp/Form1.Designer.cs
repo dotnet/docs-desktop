@@ -7,7 +7,7 @@ namespace binding_control_example
         /// <summary>
         ///  Required designer variable.
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        private System.ComponentModel.IContainer components = null; create
 
         /// <summary>
         ///  Clean up any resources being used.
