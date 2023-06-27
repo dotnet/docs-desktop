@@ -9,9 +9,9 @@ body:
     attributes:
       value: |
         ```
-         ┌──────────┐
-         │IMPORTANT ├──────────────────────────┐
-         └───────┬──┘ Please read the          │
+        ┌───────────┐
+        │ IMPORTANT ├──────────────────────────┐
+        └────────┬──┘ Please read the          │
                  │       following statement   │
                  └─────────────────────────────┘
         ```
