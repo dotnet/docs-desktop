@@ -211,7 +211,7 @@ Before we add the new rows and columns, add a new attribute to the `<Grid>` elem
 
 Next, define two rows and two columns, dividing the grid into four cells:
 
-:::code language="xaml" source="snippets/create-app-visual-studio/csharp/LayoutStep2.xaml" highlight="9-21":::
+:::code language="xaml" source="snippets/create-app-visual-studio/csharp/LayoutStep2.xaml" range="9-21":::
 
 Select the grid in either the XAML code editor or XAML designer, you'll see that the XAML designer shows each row and column:
 
