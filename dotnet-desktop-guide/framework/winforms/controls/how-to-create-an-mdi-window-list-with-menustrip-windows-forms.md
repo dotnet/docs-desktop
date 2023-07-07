@@ -57,17 +57,6 @@ Use the multiple-document interface (MDI) to create applications that can open s
     }  
     ```  
   
-9. Place code like the following in the `&New`<xref:System.Windows.Forms.ToolStripMenuItem> to register the event handler.  
-  
-    ```vb  
-    Private Sub newToolStripMenuItem_Click(sender As Object, e As _  
-    EventArgs) Handles newToolStripMenuItem.Click  
-    ```  
-  
-    ```csharp  
-    this.newToolStripMenuItem.Click += new System.EventHandler(this.newToolStripMenuItem_Click);  
-    ```  
-  
 ## Compiling the Code  
 
  This example requires:  
