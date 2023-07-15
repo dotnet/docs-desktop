@@ -105,6 +105,8 @@ items:
       href: controls-design/designer-overview.md
     - name: Designer changes from .NET Framework
       href: controls-design/designer-differences-framework.md
+    - name: Design-time properties for custom controls
+      href: controls-design/designer-properties-overview.md
 #    - name: Designer attributes (X)
 #      href: blah
 #    - name: Troubleshoot designer errors (X)
