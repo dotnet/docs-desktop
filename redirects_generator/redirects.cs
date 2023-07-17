@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Text.Json;
 using System.Text.Json.Serialization;
@@ -17,6 +18,7 @@ JsonSerializerOptions options = new JsonSerializerOptions
     WriteIndented = true
 };
 
+// File names
 string srcRedirectFilePath = string.Empty;
 string definitionsFilePath = string.Empty;
 
@@ -60,10 +62,18 @@ if (!File.Exists(definitionsFilePath))
 
 Console.WriteLine($"Loading definitions from '{definitionsFilePath}'");
 Document document = JsonSerializer.Deserialize<Document>(System.IO.File.ReadAllText(definitionsFilePath), options);
-RedirectsFile redirects = new RedirectsFile();
 
 // Load the source redirects file
-redirects = JsonSerializer.Deserialize<RedirectsFile>(System.IO.File.ReadAllText(srcRedirectFilePath), options);
+RedirectsFile redirects = JsonSerializer.Deserialize<RedirectsFile>(System.IO.File.ReadAllText(srcRedirectFilePath), options);
+
+Counters.LoadedRedirects = redirects.redirections.Length;
+
+// Make sure there are entries
+if (document.Entries.Length == 0)
+{
+    Console.WriteLine("No entries found in definition file");
+    Environment.Exit(0);
+}
 
 Console.WriteLine("Reading all entries");
 foreach (Entry item in document.Entries)
@@ -99,11 +109,25 @@ foreach (Entry item in document.Entries)
     }
 }
 
-if (System.IO.File.Exists(srcRedirectFilePath))
+Console.WriteLine($"Redirects file has {Counters.LoadedRedirects} existing entries.");
+
+// After creating or updating all of the redirection entries, check to see if there were any changes
+if (Counters.ModifiedRedirects == 0 && Counters.NewRedirects == 0)
 {
-    Console.WriteLine($"Erasing '{srcRedirectFilePath}'");
-    System.IO.File.Delete(srcRedirectFilePath);
+    Console.WriteLine($"No changes to redirection file required.");
+    Environment.Exit(0);
 }
+
+Console.WriteLine();
+Console.WriteLine($"New entries: {Counters.NewRedirects}");
+Console.WriteLine($"Updated entries: {Counters.ModifiedRedirects}");
+Console.WriteLine();
+
+
+// There were changes, save them.
+Console.WriteLine($"Erasing '{srcRedirectFilePath}'");
+System.IO.File.Delete(srcRedirectFilePath);
+
 
 Console.WriteLine($"Writing '{srcRedirectFilePath}'");
 
@@ -114,6 +138,12 @@ formattedJson += "\r\n";    // add newline at end.
 
 // Save new content to source path.
 File.WriteAllText(srcRedirectFilePath, formattedJson);
+
+
+
+// ===================================================
+// Supporting methods and types
+// ===================================================
 
 void CreateEntry(string sourceMoniker, string sourceUrl, string targetUrl)
 {
@@ -136,6 +166,7 @@ void CreateNormalEntry(string sourceUrl, string targetUrl, bool redirectDocId)
 string NormalizeMarkdownIndex(string path) =>
     path.EndsWith("/.md", StringComparison.OrdinalIgnoreCase) ? path.Replace("/.md", "/index.md", StringComparison.OrdinalIgnoreCase) : path;
 
+Environment.Exit(0);
 
 enum RedirectType
 {
@@ -160,6 +191,13 @@ class Document
              .Replace(PublishRoot, repoPath, StringComparison.OrdinalIgnoreCase) + ".md";
 }
 
+static class Counters
+{
+    public static int LoadedRedirects = 0;
+    public static int NewRedirects = 0;
+    public static int ModifiedRedirects = 0;
+}
+
 class Entry
 {
     public RedirectType Redirect { get; set; }
@@ -181,14 +219,21 @@ class RedirectsFile
 
         foreach (var item in _redirects)
         {
+            // Exisint redirect found in publishing redirection file, update it
             if (string.Equals(item.source_path, source, StringComparison.OrdinalIgnoreCase))
             {
-                item.redirect_url = targetUrl;
-                item.redirect_document_id = redirectDocId;
+                // Entry exists and doesn't need to be modified
+                if (item.redirect_url != targetUrl || item.redirect_document_id != redirectDocId)
+                {
+                    item.redirect_url = targetUrl;
+                    item.redirect_document_id = redirectDocId;
+                    Counters.ModifiedRedirects++;
+                }
                 return;
             }
         }
         _redirects.Add(new(source, targetUrl, redirectDocId));
+        Counters.NewRedirects++;
     }
 }
 
