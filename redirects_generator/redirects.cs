@@ -4,8 +4,12 @@ using System.IO;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
-const string OutputFile = ".openpublishing.redirection.json";
+//const string OutputFile = ".openpublishing.redirection.json";
+const string RedirectsFileName = ".openpublishing.redirection.json";
+const string DefinitionFile = "definitions.json";
 
+// .openpublishing.redirection.winforms.json
+// definitions.winforms.json
 JsonSerializerOptions options = new JsonSerializerOptions
 {
     Converters = { new JsonStringEnumConverter() },
@@ -13,31 +17,53 @@ JsonSerializerOptions options = new JsonSerializerOptions
     WriteIndented = true
 };
 
-// If a .openpublishing.redirection.json path is provided,
-// then copy that file to the output folder.
-if (args.Length == 1)
+string srcRedirectFilePath = string.Empty;
+string definitionsFilePath = string.Empty;
+
+// If a .openpublishing.redirection.json path is provided, use it. Otherwise, use the default
+srcRedirectFilePath = args.Length == 1 ? args[0] : RedirectsFileName;
+
+if (!Path.IsPathFullyQualified(srcRedirectFilePath))
+    srcRedirectFilePath = Path.GetFullPath(srcRedirectFilePath, Environment.CurrentDirectory);
+
+// Load the redirect and figure out which definition file to use
+if (!File.Exists(srcRedirectFilePath))
 {
-    if (!File.Exists(args[0]))
-    {
-        Console.WriteLine("ERROR: The file provided doesn't exist");
-        return;
-    }
-
-    // Get passed in .openpublishing.redirection.json path.
-    string srcRedirectFilePath = args[0];
-
-    // Copy .openpublishing.redirection.json to output folder.
-    File.Copy(srcRedirectFilePath, OutputFile, overwrite: true);
+    if (args.Length == 1)
+        Console.WriteLine($"ERROR: The redirects file doesn't exist: '{srcRedirectFilePath}'");
+    else
+        Console.WriteLine($"ERROR: The redirects file (usually named '{RedirectsFileName}') doesn't exist. Either pass the path to one as the first parameter, or copy one into this folder.");
+    Environment.Exit(-1);
 }
 
+if (!Path.GetFileNameWithoutExtension(srcRedirectFilePath).StartsWith(Path.GetFileNameWithoutExtension(RedirectsFileName), StringComparison.OrdinalIgnoreCase) ||
+    !Path.GetExtension(srcRedirectFilePath).Equals(Path.GetExtension(RedirectsFileName), StringComparison.OrdinalIgnoreCase))
+{
+    Console.WriteLine($"ERROR: The file name provided must be in the format of {Path.GetFileNameWithoutExtension(RedirectsFileName)}[.*].{Path.GetExtension(RedirectsFileName)}");
+    Environment.Exit(-2);
+}
+
+// Check for standard
+if (Path.GetFileName(srcRedirectFilePath).Equals(RedirectsFileName, StringComparison.OrdinalIgnoreCase))
+    definitionsFilePath = DefinitionFile;
+
+else
+    // Should construct "definitions.*.json" according to what is in the srcRedirectFilePath variable.
+    definitionsFilePath = $"{Path.GetFileNameWithoutExtension(DefinitionFile)}{Path.GetFileName(srcRedirectFilePath).Replace(Path.GetFileNameWithoutExtension(RedirectsFileName), "")}";
+
 // Load the definitions
-Console.WriteLine("Loading 'definitions.json'");
-Document document = JsonSerializer.Deserialize<Document>(System.IO.File.ReadAllText("definitions.json"), options);
+if (!File.Exists(definitionsFilePath))
+{
+    Console.WriteLine($"ERROR: Definitions file is missing: '{definitionsFilePath}'");
+    Environment.Exit(-3);
+}
+
+Console.WriteLine($"Loading definitions from '{definitionsFilePath}'");
+Document document = JsonSerializer.Deserialize<Document>(System.IO.File.ReadAllText(definitionsFilePath), options);
 RedirectsFile redirects = new RedirectsFile();
 
-Console.WriteLine($"Checking for existing '{OutputFile}'");
-if (System.IO.File.Exists(OutputFile))
-    redirects = JsonSerializer.Deserialize<RedirectsFile>(System.IO.File.ReadAllText(OutputFile), options);
+// Load the source redirects file
+redirects = JsonSerializer.Deserialize<RedirectsFile>(System.IO.File.ReadAllText(srcRedirectFilePath), options);
 
 Console.WriteLine("Reading all entries");
 foreach (Entry item in document.Entries)
@@ -73,30 +99,21 @@ foreach (Entry item in document.Entries)
     }
 }
 
-if (System.IO.File.Exists(OutputFile))
+if (System.IO.File.Exists(srcRedirectFilePath))
 {
-    Console.WriteLine($"Erasing '{OutputFile}'");
-    System.IO.File.Delete(OutputFile);
+    Console.WriteLine($"Erasing '{srcRedirectFilePath}'");
+    System.IO.File.Delete(srcRedirectFilePath);
 }
 
-Console.WriteLine($"Writing '{OutputFile}'");
-System.IO.File.WriteAllText(OutputFile, JsonSerializer.Serialize(redirects));
+Console.WriteLine($"Writing '{srcRedirectFilePath}'");
 
-// If a .openpublishing.redirection.json path is provided,
-// then overwrite it with the formatted new content.
-if (args.Length == 1 && File.Exists(args[0]))
-{
-    // Get passed in .openpublishing.redirection.json path.
-    string srcRedirectFilePath = args[0];
+// Format new json content.
+string formattedJson = JsonSerializer.Serialize(redirects, options);
+formattedJson = formattedJson.Replace("  ", "    ");    // match existing indent.
+formattedJson += "\r\n";    // add newline at end.
 
-    // Format new json content.
-    string formattedJson = JsonSerializer.Serialize(redirects, options);
-    formattedJson = formattedJson.Replace("  ", "    ");    // match existing indent.
-    formattedJson += "\r\n";    // add newline at end.
-
-    // Save new content to source path.
-    File.WriteAllText(srcRedirectFilePath, formattedJson);
-}
+// Save new content to source path.
+File.WriteAllText(srcRedirectFilePath, formattedJson);
 
 void CreateEntry(string sourceMoniker, string sourceUrl, string targetUrl)
 {
