@@ -1,11 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
-const string OutputFile = ".openpublishing.redirection.json";
+//const string OutputFile = ".openpublishing.redirection.json";
+const string RedirectsFileName = ".openpublishing.redirection.json";
+const string DefinitionFile = "definitions.json";
 
+// .openpublishing.redirection.winforms.json
+// definitions.winforms.json
 JsonSerializerOptions options = new JsonSerializerOptions
 {
     Converters = { new JsonStringEnumConverter() },
@@ -13,31 +18,62 @@ JsonSerializerOptions options = new JsonSerializerOptions
     WriteIndented = true
 };
 
-// If a .openpublishing.redirection.json path is provided,
-// then copy that file to the output folder.
-if (args.Length == 1)
+// File names
+string srcRedirectFilePath = string.Empty;
+string definitionsFilePath = string.Empty;
+
+// If a .openpublishing.redirection.json path is provided, use it. Otherwise, use the default
+srcRedirectFilePath = args.Length == 1 ? args[0] : RedirectsFileName;
+
+if (!Path.IsPathFullyQualified(srcRedirectFilePath))
+    srcRedirectFilePath = Path.GetFullPath(srcRedirectFilePath, Environment.CurrentDirectory);
+
+// Load the redirect and figure out which definition file to use
+if (!File.Exists(srcRedirectFilePath))
 {
-    if (!File.Exists(args[0]))
-    {
-        Console.WriteLine("ERROR: The file provided doesn't exist");
-        return;
-    }
-
-    // Get passed in .openpublishing.redirection.json path.
-    string srcRedirectFilePath = args[0];
-
-    // Copy .openpublishing.redirection.json to output folder.
-    File.Copy(srcRedirectFilePath, OutputFile, overwrite: true);
+    if (args.Length == 1)
+        Console.WriteLine($"ERROR: The redirects file doesn't exist: '{srcRedirectFilePath}'");
+    else
+        Console.WriteLine($"ERROR: The redirects file (usually named '{RedirectsFileName}') doesn't exist. Either pass the path to one as the first parameter, or copy one into this folder.");
+    Environment.Exit(-1);
 }
 
-// Load the definitions
-Console.WriteLine("Loading 'definitions.json'");
-Document document = JsonSerializer.Deserialize<Document>(System.IO.File.ReadAllText("definitions.json"), options);
-RedirectsFile redirects = new RedirectsFile();
+if (!Path.GetFileNameWithoutExtension(srcRedirectFilePath).StartsWith(Path.GetFileNameWithoutExtension(RedirectsFileName), StringComparison.OrdinalIgnoreCase) ||
+    !Path.GetExtension(srcRedirectFilePath).Equals(Path.GetExtension(RedirectsFileName), StringComparison.OrdinalIgnoreCase))
+{
+    Console.WriteLine($"ERROR: The file name provided must be in the format of {Path.GetFileNameWithoutExtension(RedirectsFileName)}[.*].{Path.GetExtension(RedirectsFileName)}");
+    Environment.Exit(-2);
+}
 
-Console.WriteLine($"Checking for existing '{OutputFile}'");
-if (System.IO.File.Exists(OutputFile))
-    redirects = JsonSerializer.Deserialize<RedirectsFile>(System.IO.File.ReadAllText(OutputFile), options);
+// Check for standard
+if (Path.GetFileName(srcRedirectFilePath).Equals(RedirectsFileName, StringComparison.OrdinalIgnoreCase))
+    definitionsFilePath = DefinitionFile;
+
+else
+    // Should construct "definitions.*.json" according to what is in the srcRedirectFilePath variable.
+    definitionsFilePath = $"{Path.GetFileNameWithoutExtension(DefinitionFile)}{Path.GetFileName(srcRedirectFilePath).Replace(Path.GetFileNameWithoutExtension(RedirectsFileName), "")}";
+
+// Load the definitions
+if (!File.Exists(definitionsFilePath))
+{
+    Console.WriteLine($"ERROR: Definitions file is missing: '{definitionsFilePath}'");
+    Environment.Exit(-3);
+}
+
+Console.WriteLine($"Loading definitions from '{definitionsFilePath}'");
+Document document = JsonSerializer.Deserialize<Document>(System.IO.File.ReadAllText(definitionsFilePath), options);
+
+// Load the source redirects file
+RedirectsFile redirects = JsonSerializer.Deserialize<RedirectsFile>(System.IO.File.ReadAllText(srcRedirectFilePath), options);
+
+Counters.LoadedRedirects = redirects.redirections.Length;
+
+// Make sure there are entries
+if (document.Entries.Length == 0)
+{
+    Console.WriteLine("No entries found in definition file");
+    Environment.Exit(0);
+}
 
 Console.WriteLine("Reading all entries");
 foreach (Entry item in document.Entries)
@@ -73,30 +109,41 @@ foreach (Entry item in document.Entries)
     }
 }
 
-if (System.IO.File.Exists(OutputFile))
+Console.WriteLine($"Redirects file has {Counters.LoadedRedirects} existing entries.");
+
+// After creating or updating all of the redirection entries, check to see if there were any changes
+if (Counters.ModifiedRedirects == 0 && Counters.NewRedirects == 0)
 {
-    Console.WriteLine($"Erasing '{OutputFile}'");
-    System.IO.File.Delete(OutputFile);
+    Console.WriteLine($"No changes to redirection file required.");
+    Environment.Exit(0);
 }
 
-Console.WriteLine($"Writing '{OutputFile}'");
-System.IO.File.WriteAllText(OutputFile, JsonSerializer.Serialize(redirects));
+Console.WriteLine();
+Console.WriteLine($"New entries: {Counters.NewRedirects}");
+Console.WriteLine($"Updated entries: {Counters.ModifiedRedirects}");
+Console.WriteLine();
 
-// If a .openpublishing.redirection.json path is provided,
-// then overwrite it with the formatted new content.
-if (args.Length == 1 && File.Exists(args[0]))
-{
-    // Get passed in .openpublishing.redirection.json path.
-    string srcRedirectFilePath = args[0];
 
-    // Format new json content.
-    string formattedJson = JsonSerializer.Serialize(redirects, options);
-    formattedJson = formattedJson.Replace("  ", "    ");    // match existing indent.
-    formattedJson += "\r\n";    // add newline at end.
+// There were changes, save them.
+Console.WriteLine($"Erasing '{srcRedirectFilePath}'");
+System.IO.File.Delete(srcRedirectFilePath);
 
-    // Save new content to source path.
-    File.WriteAllText(srcRedirectFilePath, formattedJson);
-}
+
+Console.WriteLine($"Writing '{srcRedirectFilePath}'");
+
+// Format new json content.
+string formattedJson = JsonSerializer.Serialize(redirects, options);
+formattedJson = formattedJson.Replace("  ", "    ");    // match existing indent.
+formattedJson += "\r\n";    // add newline at end.
+
+// Save new content to source path.
+File.WriteAllText(srcRedirectFilePath, formattedJson);
+
+
+
+// ===================================================
+// Supporting methods and types
+// ===================================================
 
 void CreateEntry(string sourceMoniker, string sourceUrl, string targetUrl)
 {
@@ -119,6 +166,7 @@ void CreateNormalEntry(string sourceUrl, string targetUrl, bool redirectDocId)
 string NormalizeMarkdownIndex(string path) =>
     path.EndsWith("/.md", StringComparison.OrdinalIgnoreCase) ? path.Replace("/.md", "/index.md", StringComparison.OrdinalIgnoreCase) : path;
 
+Environment.Exit(0);
 
 enum RedirectType
 {
@@ -143,6 +191,13 @@ class Document
              .Replace(PublishRoot, repoPath, StringComparison.OrdinalIgnoreCase) + ".md";
 }
 
+static class Counters
+{
+    public static int LoadedRedirects = 0;
+    public static int NewRedirects = 0;
+    public static int ModifiedRedirects = 0;
+}
+
 class Entry
 {
     public RedirectType Redirect { get; set; }
@@ -164,14 +219,21 @@ class RedirectsFile
 
         foreach (var item in _redirects)
         {
+            // Exisint redirect found in publishing redirection file, update it
             if (string.Equals(item.source_path, source, StringComparison.OrdinalIgnoreCase))
             {
-                item.redirect_url = targetUrl;
-                item.redirect_document_id = redirectDocId;
+                // Entry exists and doesn't need to be modified
+                if (item.redirect_url != targetUrl || item.redirect_document_id != redirectDocId)
+                {
+                    item.redirect_url = targetUrl;
+                    item.redirect_document_id = redirectDocId;
+                    Counters.ModifiedRedirects++;
+                }
                 return;
             }
         }
         _redirects.Add(new(source, targetUrl, redirectDocId));
+        Counters.NewRedirects++;
     }
 }
 

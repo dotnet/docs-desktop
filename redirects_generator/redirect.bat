@@ -1,3 +1,3 @@
 dotnet run -- "..\.openpublishing.redirection.json"
-
-del .openpublishing.redirection.json
+dotnet run -- "..\.openpublishing.redirection.winforms.json"
+dotnet run -- "..\.openpublishing.redirection.wpf.json"
