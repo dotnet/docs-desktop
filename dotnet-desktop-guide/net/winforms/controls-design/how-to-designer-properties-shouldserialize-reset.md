@@ -26,14 +26,14 @@ This article demonstrates the `Reset` and `ShouldSerialize` methods by creating 
 
 01. Add the following enumeration to your code:
 
-    :::code language="csharp" source="./snippets/how-to-designer-properties-shouldserialize/csharp/Directions.cs" id="enum":::
-    :::code language="vb" source="./snippets/how-to-designer-properties-shouldserialize/vb/Directions.vb" id="enum":::
+    :::code language="csharp" source="./snippets/how-to-designer-properties-shouldserialize-reset/csharp/Directions.cs" id="enum":::
+    :::code language="vb" source="./snippets/how-to-designer-properties-shouldserialize-reset/vb/Directions.vb" id="enum":::
 
 01. Add a new user control named `CompassRose`.
 01. Add a new property named `Direction` of type `Directions`.
 
-    :::code language="csharp" source="./snippets/how-to-designer-properties-shouldserialize/csharp/CompassRose.cs" id="property":::
-    :::code language="vb" source="./snippets/how-to-designer-properties-shouldserialize/vb/CompassRose.vb" id="property":::
+    :::code language="csharp" source="./snippets/how-to-designer-properties-shouldserialize-reset/csharp/CompassRose.cs" id="property":::
+    :::code language="vb" source="./snippets/how-to-designer-properties-shouldserialize-reset/vb/CompassRose.vb" id="property":::
 
 ## Reset
 
@@ -41,8 +41,8 @@ The `Reset<PropertyName>` method resets the corresponding `<PropertyName>` prope
 
 The following code resets the `Direction` property to `None`, which is considered the default value for the compass rose control:
 
-:::code language="csharp" source="./snippets/how-to-designer-properties-shouldserialize/csharp/CompassRose.cs" id="reset":::
-:::code language="vb" source="./snippets/how-to-designer-properties-shouldserialize/vb/CompassRose.vb" id="reset":::
+:::code language="csharp" source="./snippets/how-to-designer-properties-shouldserialize-reset/csharp/CompassRose.cs" id="reset":::
+:::code language="vb" source="./snippets/how-to-designer-properties-shouldserialize-reset/vb/CompassRose.vb" id="reset":::
 
 ## ShouldSerialize
 
@@ -50,12 +50,12 @@ The `ShouldSerialize<PropertyName>` method returns a boolean value that indicate
 
 The following code returns true when the `Direction` property doesn't equal `None`, indicating that a direction has been chosen:
 
-:::code language="csharp" source="./snippets/how-to-designer-properties-shouldserialize/csharp/CompassRose.cs" id="shouldserialize":::
-:::code language="vb" source="./snippets/how-to-designer-properties-shouldserialize/vb/CompassRose.vb" id="shouldserialize":::
+:::code language="csharp" source="./snippets/how-to-designer-properties-shouldserialize-reset/csharp/CompassRose.cs" id="shouldserialize":::
+:::code language="vb" source="./snippets/how-to-designer-properties-shouldserialize-reset/vb/CompassRose.vb" id="shouldserialize":::
 
 ## Example
 
 The following code shows the `Reset` and `ShouldSerialize` methods for the `Direction` property:
 
-:::code language="csharp" source="./snippets/how-to-designer-properties-shouldserialize/csharp/CompassRose.cs" id="control":::
-:::code language="vb" source="./snippets/how-to-designer-properties-shouldserialize/vb/CompassRose.vb" id="control":::
+:::code language="csharp" source="./snippets/how-to-designer-properties-shouldserialize-reset/csharp/CompassRose.cs" id="control":::
+:::code language="vb" source="./snippets/how-to-designer-properties-shouldserialize-reset/vb/CompassRose.vb" id="control":::
