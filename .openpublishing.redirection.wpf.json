@@ -1,0 +1,405 @@
+{
+    "redirections": [
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/introduction-to-wpf.md",
+            "redirect_url": "/dotnet/desktop/wpf/overview/?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/overview/index.md",
+            "redirect_url": "/dotnet/desktop/wpf/introduction-to-wpf?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/getting-started/walkthrough-my-first-wpf-desktop-application.md",
+            "redirect_url": "/dotnet/desktop/wpf/get-started/create-app-visual-studio?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/get-started/create-app-visual-studio.md",
+            "redirect_url": "/dotnet/desktop/wpf/getting-started/walkthrough-my-first-wpf-desktop-application?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/app-development/wpf-windows-overview.md",
+            "redirect_url": "/dotnet/desktop/wpf/windows/index?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/windows/index.md",
+            "redirect_url": "/dotnet/desktop/wpf/app-development/wpf-windows-overview?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/app-development/dialog-boxes-overview.md",
+            "redirect_url": "/dotnet/desktop/wpf/windows/dialog-boxes-overview?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/windows/dialog-boxes-overview.md",
+            "redirect_url": "/dotnet/desktop/wpf/app-development/dialog-boxes-overview?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/app-development/how-to-open-a-window.md",
+            "redirect_url": "/dotnet/desktop/wpf/windows/how-to-open-window-dialog-box?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/windows/how-to-open-window-dialog-box.md",
+            "redirect_url": "/dotnet/desktop/wpf/app-development/how-to-open-a-window?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/app-development/how-to-open-a-dialog-box.md",
+            "redirect_url": "/dotnet/desktop/wpf/windows/how-to-open-window-dialog-box?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/how-to-return-a-dialog-box-result.md",
+            "redirect_url": "/dotnet/desktop/wpf/windows/how-to-open-window-dialog-box?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/app-development/how-to-open-a-message-box.md",
+            "redirect_url": "/dotnet/desktop/wpf/windows/how-to-open-message-box?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/windows/how-to-open-message-box.md",
+            "redirect_url": "/dotnet/desktop/wpf/app-development/how-to-open-a-message-box?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/app-development/how-to-get-and-set-the-main-application-window.md",
+            "redirect_url": "/dotnet/desktop/wpf/windows/how-to-get-set-main-application-window?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/windows/how-to-get-set-main-application-window.md",
+            "redirect_url": "/dotnet/desktop/wpf/app-development/how-to-get-and-set-the-main-application-window?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/data/data-binding-overview.md",
+            "redirect_url": "/dotnet/desktop/wpf/data/index?view=netdesktop-7.0",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/advanced/xaml-in-wpf.md",
+            "redirect_url": "/dotnet/desktop/wpf/xaml/index?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/xaml/index.md",
+            "redirect_url": "/dotnet/desktop/wpf/advanced/xaml-in-wpf?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/fundamentals/xaml.md",
+            "redirect_url": "/dotnet/desktop/wpf/xaml/index?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/fundamentals/xaml-resources-define.md",
+            "redirect_url": "/dotnet/desktop/wpf/systems/xaml-resources-overview?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/fundamentals/styles-templates-overview.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/styles-templates-overview?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/fundamentals/styles-templates-create-apply-style.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/how-to-create-apply-style?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/themes/how-to-create-apply-template.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/how-to-create-apply-template?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/advanced/xaml-resources-define.md",
+            "redirect_url": "/dotnet/desktop/wpf/systems/xaml-resources-overview?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/systems/xaml-resources-overview.md",
+            "redirect_url": "/dotnet/desktop/wpf/advanced/xaml-resources-define?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/advanced/resources-and-code.md",
+            "redirect_url": "/dotnet/desktop/wpf/systems/xaml-resources-and-code?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/systems/xaml-resources-and-code.md",
+            "redirect_url": "/dotnet/desktop/wpf/advanced/resources-and-code?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/advanced/merged-resource-dictionaries.md",
+            "redirect_url": "/dotnet/desktop/wpf/systems/xaml-resources-merged-dictionaries?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/systems/xaml-resources-merged-dictionaries.md",
+            "redirect_url": "/dotnet/desktop/wpf/advanced/merged-resource-dictionaries?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/advanced/how-to-define-and-reference-a-resource.md",
+            "redirect_url": "/dotnet/desktop/wpf/systems/xaml-resources-how-to-define-and-reference?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/systems/xaml-resources-how-to-define-and-reference.md",
+            "redirect_url": "/dotnet/desktop/wpf/advanced/how-to-define-and-reference-a-resource?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/advanced/how-to-use-application-resources.md",
+            "redirect_url": "/dotnet/desktop/wpf/systems/xaml-resources-how-to-use-application?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/systems/xaml-resources-how-to-use-application.md",
+            "redirect_url": "/dotnet/desktop/wpf/advanced/how-to-use-application-resources?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/advanced/how-to-use-systemfonts.md",
+            "redirect_url": "/dotnet/desktop/wpf/systems/xaml-resources-how-to-use-system?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/systems/xaml-resources-how-to-use-system.md",
+            "redirect_url": "/dotnet/desktop/wpf/advanced/how-to-use-systemfonts?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/advanced/how-to-use-system-fonts-keys.md",
+            "redirect_url": "/dotnet/desktop/wpf/systems/xaml-resources-how-to-use-system?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/advanced/how-to-use-systemparameters.md",
+            "redirect_url": "/dotnet/desktop/wpf/systems/xaml-resources-how-to-use-system?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/advanced/how-to-use-system-parameters-keys.md",
+            "redirect_url": "/dotnet/desktop/wpf/systems/xaml-resources-how-to-use-system?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/migration/convert-project-from-net-framework.md",
+            "redirect_url": "/dotnet/desktop/wpf/migration/index?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/data/how-to-specify-the-direction-of-the-binding.md",
+            "redirect_url": "/dotnet/desktop/wpf/data/binding-declarations-overview?view=netdesktop-7.0#binding-direction"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/advanced/printing-overview.md",
+            "redirect_url": "/dotnet/desktop/wpf/documents/printing-overview?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/documents/printing-overview.md",
+            "redirect_url": "/dotnet/desktop/wpf/advanced/printing-overview?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/advanced/how-to-invoke-a-print-dialog.md",
+            "redirect_url": "/dotnet/desktop/wpf/documents/how-to-display-print-dialog?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/documents/how-to-display-print-dialog.md",
+            "redirect_url": "/dotnet/desktop/wpf/advanced/how-to-invoke-a-print-dialog?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/advanced/how-to-programmatically-print-xps-files.md",
+            "redirect_url": "/dotnet/desktop/wpf/documents/how-to-print-xps-files?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/documents/how-to-print-xps-files.md",
+            "redirect_url": "/dotnet/desktop/wpf/advanced/how-to-programmatically-print-xps-files?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/advanced/dependency-properties-overview.md",
+            "redirect_url": "/dotnet/desktop/wpf/properties/dependency-properties-overview?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/properties/dependency-properties-overview.md",
+            "redirect_url": "/dotnet/desktop/wpf/advanced/dependency-properties-overview?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/advanced/dependency-property-value-precedence.md",
+            "redirect_url": "/dotnet/desktop/wpf/properties/dependency-property-value-precedence?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/properties/dependency-property-value-precedence.md",
+            "redirect_url": "/dotnet/desktop/wpf/advanced/dependency-property-value-precedence?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/advanced/how-to-implement-a-dependency-property.md",
+            "redirect_url": "/dotnet/desktop/wpf/properties/how-to-implement-a-dependency-property?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/properties/how-to-implement-a-dependency-property.md",
+            "redirect_url": "/dotnet/desktop/wpf/advanced/how-to-implement-a-dependency-property?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/advanced/attached-properties-overview.md",
+            "redirect_url": "/dotnet/desktop/wpf/properties/attached-properties-overview?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/properties/attached-properties-overview.md",
+            "redirect_url": "/dotnet/desktop/wpf/advanced/attached-properties-overview?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/advanced/how-to-register-an-attached-property.md",
+            "redirect_url": "/dotnet/desktop/wpf/properties/how-to-register-an-attached-property?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/properties/how-to-register-an-attached-property.md",
+            "redirect_url": "/dotnet/desktop/wpf/advanced/how-to-register-an-attached-property?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/advanced/collection-type-dependency-properties.md",
+            "redirect_url": "/dotnet/desktop/wpf/properties/collection-type-dependency-properties?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/properties/collection-type-dependency-properties.md",
+            "redirect_url": "/dotnet/desktop/wpf/advanced/collection-type-dependency-properties?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/advanced/custom-dependency-properties.md",
+            "redirect_url": "/dotnet/desktop/wpf/properties/custom-dependency-properties?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/properties/custom-dependency-properties.md",
+            "redirect_url": "/dotnet/desktop/wpf/advanced/custom-dependency-properties?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/advanced/dependency-property-metadata.md",
+            "redirect_url": "/dotnet/desktop/wpf/properties/dependency-property-metadata?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/properties/dependency-property-metadata.md",
+            "redirect_url": "/dotnet/desktop/wpf/advanced/dependency-property-metadata?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/advanced/how-to-override-metadata-for-a-dependency-property.md",
+            "redirect_url": "/dotnet/desktop/wpf/properties/how-to-override-metadata-for-a-dependency-property?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/properties/how-to-override-metadata-for-a-dependency-property.md",
+            "redirect_url": "/dotnet/desktop/wpf/advanced/how-to-override-metadata-for-a-dependency-property?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/advanced/dependency-property-callbacks-and-validation.md",
+            "redirect_url": "/dotnet/desktop/wpf/properties/dependency-property-callbacks-and-validation?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/properties/dependency-property-callbacks-and-validation.md",
+            "redirect_url": "/dotnet/desktop/wpf/advanced/dependency-property-callbacks-and-validation?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/advanced/read-only-dependency-properties.md",
+            "redirect_url": "/dotnet/desktop/wpf/properties/read-only-dependency-properties?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/properties/read-only-dependency-properties.md",
+            "redirect_url": "/dotnet/desktop/wpf/advanced/read-only-dependency-properties?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/advanced/framework-property-metadata.md",
+            "redirect_url": "/dotnet/desktop/wpf/properties/framework-property-metadata?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/properties/framework-property-metadata.md",
+            "redirect_url": "/dotnet/desktop/wpf/advanced/framework-property-metadata?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/advanced/dependency-property-security.md",
+            "redirect_url": "/dotnet/desktop/wpf/properties/dependency-property-security?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/properties/dependency-property-security.md",
+            "redirect_url": "/dotnet/desktop/wpf/advanced/dependency-property-security?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/advanced/safe-constructor-patterns-for-dependencyobjects.md",
+            "redirect_url": "/dotnet/desktop/wpf/properties/safe-constructor-patterns-for-dependencyobjects?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/properties/safe-constructor-patterns-for-dependencyobjects.md",
+            "redirect_url": "/dotnet/desktop/wpf/advanced/safe-constructor-patterns-for-dependencyobjects?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/advanced/property-value-inheritance.md",
+            "redirect_url": "/dotnet/desktop/wpf/properties/property-value-inheritance?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/properties/property-value-inheritance.md",
+            "redirect_url": "/dotnet/desktop/wpf/advanced/property-value-inheritance?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/advanced/xaml-loading-and-dependency-properties.md",
+            "redirect_url": "/dotnet/desktop/wpf/properties/xaml-loading-and-dependency-properties?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/properties/xaml-loading-and-dependency-properties.md",
+            "redirect_url": "/dotnet/desktop/wpf/advanced/xaml-loading-and-dependency-properties?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/advanced/how-to-add-an-event-handler-using-code.md",
+            "redirect_url": "/dotnet/desktop/wpf/events/how-to-add-an-event-handler-using-code?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/events/how-to-add-an-event-handler-using-code.md",
+            "redirect_url": "/dotnet/desktop/wpf/advanced/how-to-add-an-event-handler-using-code?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/advanced/how-to-create-a-custom-routed-event.md",
+            "redirect_url": "/dotnet/desktop/wpf/events/how-to-create-a-custom-routed-event?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/events/how-to-create-a-custom-routed-event.md",
+            "redirect_url": "/dotnet/desktop/wpf/advanced/how-to-create-a-custom-routed-event?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/advanced/visual-basic-and-wpf-event-handling.md",
+            "redirect_url": "/dotnet/desktop/wpf/events/visual-basic-and-wpf-event-handling?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/events/visual-basic-and-wpf-event-handling.md",
+            "redirect_url": "/dotnet/desktop/wpf/advanced/visual-basic-and-wpf-event-handling?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/advanced/preview-events.md",
+            "redirect_url": "/dotnet/desktop/wpf/events/preview-events?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/events/preview-events.md",
+            "redirect_url": "/dotnet/desktop/wpf/advanced/preview-events?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/advanced/marking-routed-events-as-handled-and-class-handling.md",
+            "redirect_url": "/dotnet/desktop/wpf/events/marking-routed-events-as-handled-and-class-handling?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/events/marking-routed-events-as-handled-and-class-handling.md",
+            "redirect_url": "/dotnet/desktop/wpf/advanced/marking-routed-events-as-handled-and-class-handling?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/advanced/object-lifetime-events.md",
+            "redirect_url": "/dotnet/desktop/wpf/events/object-lifetime-events?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/events/object-lifetime-events.md",
+            "redirect_url": "/dotnet/desktop/wpf/advanced/object-lifetime-events?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/advanced/weak-event-patterns.md",
+            "redirect_url": "/dotnet/desktop/wpf/events/weak-event-patterns?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/events/weak-event-patterns.md",
+            "redirect_url": "/dotnet/desktop/wpf/advanced/weak-event-patterns?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/advanced/property-change-events.md",
+            "redirect_url": "/dotnet/desktop/wpf/events/property-change-events?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/events/property-change-events.md",
+            "redirect_url": "/dotnet/desktop/wpf/advanced/property-change-events?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/advanced/attached-events-overview.md",
+            "redirect_url": "/dotnet/desktop/wpf/events/attached-events-overview?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/events/attached-events-overview.md",
+            "redirect_url": "/dotnet/desktop/wpf/advanced/attached-events-overview?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/advanced/routed-events-overview.md",
+            "redirect_url": "/dotnet/desktop/wpf/events/routed-events-overview?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/wpf/events/routed-events-overview.md",
+            "redirect_url": "/dotnet/desktop/wpf/advanced/routed-events-overview?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/wpf/whats-new/index.md",
+            "redirect_url": "/dotnet/desktop/wpf/whats-new/net70?view=netdesktop-7.0"
+        }
+    ]
+}
