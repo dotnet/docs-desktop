@@ -109,8 +109,8 @@ items:
       href: controls-design/designer-properties-overview.md
 #    - name: Designer attributes (X)
 #      href: blah
-#    - name: Troubleshoot designer errors (X)
-#      href: blah
+    - name: Troubleshoot designer errors
+      href: controls-design/designer-errors.md
 #    - name: Common tasks
 #      items:
 #      - name: Manage control properties set by the designer (X)
