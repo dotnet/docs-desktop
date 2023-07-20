@@ -1,6 +1,6 @@
 ---
 title: Design-time properties overview
-description: Learn about
+description: Learn about how the Windows Forms Designer interacts with control and form properties during design-time.
 ms.date: 07/14/2023
 ms.topic: overview
 no-loc: ["UserControl"]
@@ -32,8 +32,8 @@ When creating a control, you can define new properties and control how they appe
 
 Any public property with a **get** accessor defined by a control is automatically visible in the Visual Studio **Properties** window. If the property also defines a **set** accessor, the property can be changed in the **Properties** window. However, properties can be explicitly displayed or hidden from the **Properties** window by applying the <xref:System.ComponentModel.BrowsableAttribute>. This attribute takes a single boolean parameter to indicate whether or not it's displayed.
 
-:::code language="csharp" source="./snippets/designer-properties-overview/csharp/ClearableTextBox.cs" id="property":::
-:::code language="vb" source="./snippets/designer-properties-overview/vb/ClearableTextBox.vb" id="property":::
+:::code language="csharp" source="./snippets/designer-properties-overview/csharp/CompassRose.cs" id="browsable":::
+:::code language="vb" source="./snippets/designer-properties-overview/vb/CompassRose.vb" id="browsable":::
 
 ## Serialized properties
 
@@ -73,6 +73,11 @@ If a property's value doesn't match the value provided by <xref:System.Component
 > [!IMPORTANT]
 > This attribute shouldn't be used on properties that have corresponding `Reset<PropertyName>` and `ShouldSerialize<PropertyName>` methods.
 
+The following code declares two properties, an enumeration with a default value of `North` and an integer with a default value of 10.
+
+:::code language="csharp" source="./snippets/designer-properties-overview/csharp/CompassRose.cs" id="default":::
+:::code language="vb" source="./snippets/designer-properties-overview/vb/CompassRose.vb" id="default":::
+
 ### Reset and ShouldSerialize
 
 As previously mentioned, the `Reset<PropertyName>` and `ShouldSerialize<PropertyName>` methods provide the opportunity to guide not only the reset behavior of a property, but also in determining if a value is changed and should be serialized into the designer's code-behind file. Both methods work together and you shouldn't define one without the other.
@@ -84,6 +89,11 @@ When `Reset<PropertyName>` is defined, the **Properties** window displays a **Re
 
 > [!TIP]
 > Both methods should be defined with private scope so that they don't make up the public API of the control.
+
+The following code snippet declares a property named `Direction`. This property's designer behavior is controlled by the `ResetDirection` and `ShouldSerializeDirection` methods.
+
+:::code language="csharp" source="./snippets/designer-properties-overview/csharp/CompassRose.cs" id="shouldserialize_reset":::
+:::code language="vb" source="./snippets/designer-properties-overview/vb/CompassRose.vb" id="shouldserialize_reset":::
 
 ## Type converters
 

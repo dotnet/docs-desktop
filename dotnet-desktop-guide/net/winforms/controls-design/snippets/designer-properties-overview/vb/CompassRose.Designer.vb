@@ -1,8 +1,8 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form1
-    Inherits System.Windows.Forms.Form
+Partial Class CompassRose
+    Inherits System.Windows.Forms.UserControl
 
-    'Form overrides dispose to clean up the component list.
+    'UserControl overrides dispose to clean up the component list.
     <System.Diagnostics.DebuggerNonUserCode()> _
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
@@ -22,26 +22,8 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        CompassRose1 = New CompassRose()
-        SuspendLayout()
-        ' 
-        ' CompassRose1
-        ' 
-        CompassRose1.Location = New Point(17, 22)
-        CompassRose1.Name = "CompassRose1"
-        CompassRose1.Size = New Size(150, 150)
-        CompassRose1.TabIndex = 0
-        ' 
-        ' Form1
-        ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
-        AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 450)
-        Controls.Add(CompassRose1)
-        Name = "Form1"
-        Text = "Form1"
-        ResumeLayout(False)
+        components = New System.ComponentModel.Container()
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
     End Sub
 
-    Friend WithEvents CompassRose1 As CompassRose
 End Class
