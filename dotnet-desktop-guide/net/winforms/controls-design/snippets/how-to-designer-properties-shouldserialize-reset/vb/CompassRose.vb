@@ -16,5 +16,6 @@ Public Class CompassRose
         Return Direction <> Directions.None
     End Function
     '</shouldserialize>
+
 End Class
 '</control>

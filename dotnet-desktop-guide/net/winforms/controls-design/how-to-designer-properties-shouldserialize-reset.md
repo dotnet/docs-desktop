@@ -6,8 +6,9 @@ ms.topic: how-to
 dev_langs:
   - "csharp"
   - "vb"
-f1_keywords: 
-helpviewer_keywords: 
+f1_keywords:
+
+helpviewer_keywords:
 ---
 
 # Use Reset and ShouldSerialize to control a property (Windows Forms .NET)
@@ -29,8 +30,8 @@ This article demonstrates the `Reset` and `ShouldSerialize` methods by creating 
     :::code language="csharp" source="./snippets/how-to-designer-properties-shouldserialize-reset/csharp/Directions.cs" id="enum":::
     :::code language="vb" source="./snippets/how-to-designer-properties-shouldserialize-reset/vb/Directions.vb" id="enum":::
 
-01. Add a new user control named `CompassRose`.
-01. Add a new property named `Direction` of type `Directions`.
+01. Add a user control named `CompassRose`.
+01. Add a property named `Direction` of type `Directions` to the user control.
 
     :::code language="csharp" source="./snippets/how-to-designer-properties-shouldserialize-reset/csharp/CompassRose.cs" id="property":::
     :::code language="vb" source="./snippets/how-to-designer-properties-shouldserialize-reset/vb/CompassRose.vb" id="property":::
