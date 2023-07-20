@@ -71,7 +71,7 @@ This section lists some of the errors you may encounter.
 - [Category '\<Toolbox tab name>' does not have a tool for class '\<class name>'](#category-toolbox-tab-name-does-not-have-a-tool-for-class-class-name)
 - [Class '\<class name>' has no matching constructor](#class-class-name-has-no-matching-constructor)
 - [Code generation for property '\<property name>' failed](#code-generation-for-property-property-name-failed)
-- [Component '\<component name>' did not call Container.Add in its constructor](#component-component-name-did-not-call-containeradd()-in-its-constructor)
+- [Component '\<component name>' did not call Container.Add in its constructor](#component-component-name-did-not-call-containeradd-in-its-constructor)
 - [Component name cannot be empty](#component-name-cannot-be-empty)
 - [Could not access the variable '\<variable name>' because it has not been initialized yet](#could-not-access-the-variable-variable-name-because-it-has-not-been-initialized-yet)
 - [Could not find type '\<type name>'](#could-not-find-type-type-name)

@@ -153,9 +153,14 @@
             "TargetUrl": "/dotnet/desktop/winforms/controls-design/designer-overview?view=netdesktop-7.0"
         },
         {
-            "Redirect": "OneWay",
+            "Redirect": "TwoWay",
             "SourceUrl": "/dotnet/desktop/winforms/controls/how-to-apply-attributes-in-windows-forms-controls?view=netframeworkdesktop-4.8",
-            "TargetUrl": "/dotnet/desktop/winforms/controls-design/designer-overview?view=netdesktop-7.0"
+            "TargetUrl": "/dotnet/desktop/winforms/controls-design/designer-properties-overview?view=netdesktop-7.0"
+        },
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/winforms/controls/design-time-errors-in-the-windows-forms-designer??view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/winforms/controls-design/designer-errors?view=netdesktop-7.0"
         },
 
         // Custom painting and drawing

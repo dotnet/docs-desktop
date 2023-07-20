@@ -11,7 +11,7 @@ const string DefinitionFile = "definitions.json";
 
 // .openpublishing.redirection.winforms.json
 // definitions.winforms.json
-JsonSerializerOptions options = new JsonSerializerOptions
+JsonSerializerOptions options = new()
 {
     Converters = { new JsonStringEnumConverter() },
     ReadCommentHandling = JsonCommentHandling.Skip,
@@ -19,8 +19,8 @@ JsonSerializerOptions options = new JsonSerializerOptions
 };
 
 // File names
-string srcRedirectFilePath = string.Empty;
-string definitionsFilePath = string.Empty;
+string srcRedirectFilePath;
+string definitionsFilePath;
 
 // If a .openpublishing.redirection.json path is provided, use it. Otherwise, use the default
 srcRedirectFilePath = args.Length == 1 ? args[0] : RedirectsFileName;
@@ -84,7 +84,7 @@ foreach (Entry item in document.Entries)
             CreateNormalEntry(item.SourceUrl, item.TargetUrl, false);
         else
         {
-            foreach (var sourceUrl in item.SourceUrls)
+            foreach (string sourceUrl in item.SourceUrls)
                 CreateNormalEntry(sourceUrl, item.TargetUrl, false);
         }
     }
@@ -188,7 +188,8 @@ class Document
 
     public string MonikerToMarkdown(string input, string moniker, string repoPath) =>
         input.Replace($"?view={moniker}", "", StringComparison.OrdinalIgnoreCase)
-             .Replace(PublishRoot, repoPath, StringComparison.OrdinalIgnoreCase) + ".md";
+             .Replace(PublishRoot, repoPath, StringComparison.OrdinalIgnoreCase)
+             .Trim() + ".md";
 }
 
 static class Counters
@@ -208,7 +209,7 @@ class Entry
 
 class RedirectsFile
 {
-    private List<RedirectEntry> _redirects = new List<RedirectEntry>();
+    private List<RedirectEntry> _redirects = new();
 
     public RedirectEntry[] redirections { get => _redirects.ToArray(); set => _redirects = new List<RedirectEntry>(value); }
 
@@ -217,7 +218,7 @@ class RedirectsFile
         source = source.Trim();
         targetUrl = targetUrl.Trim();
 
-        foreach (var item in _redirects)
+        foreach (RedirectEntry item in _redirects)
         {
             // Exisint redirect found in publishing redirection file, update it
             if (string.Equals(item.source_path, source, StringComparison.OrdinalIgnoreCase))
@@ -247,10 +248,10 @@ class RedirectEntry
     public RedirectEntry() { }
 
     public RedirectEntry(string source, string targetUrl) =>
-        (source_path, redirect_url, redirect_document_id) = (source, targetUrl, false);
+        (source_path, redirect_url, redirect_document_id) = (source.Trim(), targetUrl.Trim(), false);
     
     public RedirectEntry(string source, string targetUrl, bool redirectId) =>
-        (source_path, redirect_url, redirect_document_id) = (source, targetUrl, redirectId ? true : default);
+        (source_path, redirect_url, redirect_document_id) = (source.Trim(), targetUrl.Trim(), redirectId);
 }
 
 
