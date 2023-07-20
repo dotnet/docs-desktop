@@ -75,8 +75,8 @@ If a property's value doesn't match the value provided by <xref:System.Component
 
 The following code declares two properties, an enumeration with a default value of `North` and an integer with a default value of 10.
 
-:::code language="csharp" source="./snippets/designer-properties-overview/csharp/CompassRose.cs" id="default":::
-:::code language="vb" source="./snippets/designer-properties-overview/vb/CompassRose.vb" id="default":::
+:::code language="csharp" source="./snippets/designer-properties-overview/csharp/CompassRose.cs" id="defaultvalue":::
+:::code language="vb" source="./snippets/designer-properties-overview/vb/CompassRose.vb" id="defaultvalue":::
 
 ### Reset and ShouldSerialize
 
