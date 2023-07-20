@@ -71,7 +71,7 @@ This section lists some of the errors you may encounter.
 - [Category '\<Toolbox tab name>' does not have a tool for class '\<class name>'](#category-toolbox-tab-name-does-not-have-a-tool-for-class-class-name)
 - [Class '\<class name>' has no matching constructor](#class-class-name-has-no-matching-constructor)
 - [Code generation for property '\<property name>' failed](#code-generation-for-property-property-name-failed)
-- [Component '\<component name>' did not call Container.Add() in its constructor](#component-component-name-did-not-call-containeradd()-in-its-constructor)
+- [Component '\<component name>' did not call Container.Add in its constructor](#component-component-name-did-not-call-containeradd()-in-its-constructor)
 - [Component name cannot be empty](#component-name-cannot-be-empty)
 - [Could not access the variable '\<variable name>' because it has not been initialized yet](#could-not-access-the-variable-variable-name-because-it-has-not-been-initialized-yet)
 - [Could not find type '\<type name>'](#could-not-find-type-type-name)
@@ -82,7 +82,7 @@ This section lists some of the errors you may encounter.
 - [Error reading resources from the resource file for the culture '\<culture name>'](#error-reading-resources-from-the-resource-file-for-the-culture-culture-name)
 - [Error reading resources from the resource file for the default culture '\<culture name>'](#error-reading-resources-from-the-resource-file-for-the-default-culture-culture-name)
 - [Failed to parse method '\<method name>'](#failed-to-parse-method-method-name)
-- [Invalid component name: '\<component name>'](#invalid-component-name:-component-name)
+- [Invalid component name: '\<component name>'](#invalid-component-name-component-name)
 - [The type '\<class name>' is made of several partial classes in the same file](#the-type-class-name-is-made-of-several-partial-classes-in-the-same-file)
 - [The assembly '\<assembly name>' could not be found](#the-assembly-assembly-name-could-not-be-found)
 - [The assembly name '\<assembly name>' is invalid](#the-assembly-name-assembly-name-is-invalid)
@@ -127,7 +127,7 @@ This section lists some of the errors you may encounter.
 
 ### The name '\<name>' does not exist in the current context
 
-Most commonly you see this error when you delete or rename an event handler in the code-behind file that's reference by the designer file. Open the _\<form>.designer.<langauge>_ code file and delete the event handler from the form or control.
+Most commonly you see this error when you delete or rename an event handler in the code-behind file that's reference by the designer file. Open the _\<form>.designer.\<langauge>_ code file and delete the event handler from the form or control.
 
 ### '\<identifier name>' is not a valid identifier
 
