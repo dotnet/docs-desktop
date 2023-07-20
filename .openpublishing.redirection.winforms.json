@@ -457,12 +457,12 @@
             "redirect_url": "/dotnet/desktop/winforms/controls/how-to-apply-attributes-in-windows-forms-controls?view=netframeworkdesktop-4.8"
         },
         {
-            "source_path": "dotnet-desktop-guide/net/winforms/controls/design-time-errors-in-the-windows-forms-designer?.md",
+            "source_path": "dotnet-desktop-guide/net/winforms/controls/design-time-errors-in-the-windows-forms-designer.md",
             "redirect_url": "/dotnet/desktop/winforms/controls-design/designer-errors?view=netdesktop-7.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/controls-design/designer-errors.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls/design-time-errors-in-the-windows-forms-designer??view=netframeworkdesktop-4.8"
+            "redirect_url": "/dotnet/desktop/winforms/controls/design-time-errors-in-the-windows-forms-designer?view=netframeworkdesktop-4.8"
         }
     ]
 }
