@@ -167,6 +167,11 @@
             "SourceUrl": "/dotnet/desktop/winforms/controls/defining-default-values-with-the-shouldserialize-and-reset-methods?view=netframeworkdesktop-4.8",
             "TargetUrl": "/dotnet/desktop/winforms/controls-design/how-to-designer-properties-shouldserialize-reset?view=netdesktop-7.0"
         },
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/winforms/controls/how-to-provide-a-toolbox-bitmap-for-a-control?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/winforms/controls-design/how-to-set-toolbox-icon?view=netdesktop-7.0"
+        },
 
         // Custom painting and drawing
         {

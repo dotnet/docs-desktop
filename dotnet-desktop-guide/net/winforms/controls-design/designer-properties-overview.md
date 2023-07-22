@@ -30,7 +30,7 @@ When creating a control, you can define new properties and control how they appe
 
 ## Define a property
 
-Any public property with a **get** accessor defined by a control is automatically visible in the Visual Studio **Properties** window. If the property also defines a **set** accessor, the property can be changed in the **Properties** window. However, properties can be explicitly displayed or hidden from the **Properties** window by applying the <xref:System.ComponentModel.BrowsableAttribute>. This attribute takes a single boolean parameter to indicate whether or not it's displayed.
+Any public property with a **get** accessor defined by a control is automatically visible in the Visual Studio **Properties** window. If the property also defines a **set** accessor, the property can be changed in the **Properties** window. However, properties can be explicitly displayed or hidden from the **Properties** window by applying the <xref:System.ComponentModel.BrowsableAttribute>. This attribute takes a single boolean parameter to indicate whether or not it's displayed. For more information about attributes, see [Attributes (C#)](/dotnet/csharp/programming-guide/concepts/attributes/index) or [Attributes overview (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/attributes/index).
 
 :::code language="csharp" source="./snippets/designer-properties-overview/csharp/CompassRose.cs" id="browsable":::
 :::code language="vb" source="./snippets/designer-properties-overview/vb/CompassRose.vb" id="browsable":::
@@ -43,7 +43,9 @@ When the designer detects a change to a property, it evaluates all properties fo
 
 ## Default values
 
-A property is considered to have a default value when it either applies the <xref:System.ComponentModel.DefaultValueAttribute> attribute, or the property's class contains property-specific `Reset` and `ShouldSerialize` methods. By setting a default value, you enable the following:
+A property is considered to have a default value when it either applies the <xref:System.ComponentModel.DefaultValueAttribute> attribute, or the property's class contains property-specific `Reset` and `ShouldSerialize` methods. For more information about attributes, see [Attributes (C#)](/dotnet/csharp/programming-guide/concepts/attributes/index) or [Attributes overview (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/attributes/index).
+
+By setting a default value, you enable the following:
 
 - The property provides visual indication in the **Properties** window if it has been modified from its default value.
 - The user can right-click on the property and choose **Reset** to restore the property to its default value.
