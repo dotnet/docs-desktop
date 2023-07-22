@@ -7,8 +7,12 @@ dev_langs:
   - "csharp"
   - "vb"
 f1_keywords:
-
+  - "Reset"
+  - "ShouldSerialize"
 helpviewer_keywords:
+  - "design-time properties"
+  - "designer properties"
+  - "reset property"
 ---
 
 # Use Reset and ShouldSerialize to control a property (Windows Forms .NET)

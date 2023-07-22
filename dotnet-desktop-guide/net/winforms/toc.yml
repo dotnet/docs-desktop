@@ -115,8 +115,8 @@ items:
       items:
       - name: Use ShouldSerialize and Reset for a property
         href: controls-design/how-to-designer-properties-shouldserialize-reset.md
-#      - name: Provide an image for the toolbox (X)
-#        href: blah
+      - name: Provide an icon for the toolbox
+        href: controls-design/how-to-set-toolbox-icon.md
 - name: User input - keyboard
   items:
   - name: Overview
