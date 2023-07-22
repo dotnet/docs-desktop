@@ -25,6 +25,8 @@ In this article, you learn how to create the `Reset<PropertyName>` and `ShouldSe
 
 For more information about properties, see [Reset and ShouldSerialize](designer-properties-overview.md#reset-and-shouldserialize).
 
+[!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
+
 ## Supporting code
 
 This article demonstrates the `Reset` and `ShouldSerialize` methods by creating a compass rose control. If you're working with your own user control, you can skip this section.

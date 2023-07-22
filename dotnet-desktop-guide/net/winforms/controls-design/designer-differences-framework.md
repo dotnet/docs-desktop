@@ -13,9 +13,9 @@ dev_langs:
 
 The Visual Designer for Windows Forms for .NET has had some improvements and changes since .NET Framework. These changes largely affect custom control designers. This article describes the key differences from .NET Framework.
 
-[!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
-
 Visual Studio is a .NET Framework-based application, and as such, the Visual Designer you see for Windows Forms is also based on .NET Framework. With a .NET Framework project, both the Visual Studio environment and the Windows Forms app being designed, run within the same process: **devenv.exe**. This poses a problem when you're working with a Windows Forms .NET (not .NET Framework) app. Both .NET and .NET Framework code can't work within the same process. As a result, Windows Forms .NET uses a different designer, the "out-of-process" designer.
+
+[!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
 
 ## Out-of-process designer
 

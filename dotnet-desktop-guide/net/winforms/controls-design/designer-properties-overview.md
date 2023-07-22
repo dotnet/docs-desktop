@@ -28,6 +28,8 @@ Every control inherits many properties from the base class <xref:System.Windows.
 
 When creating a control, you can define new properties and control how they appear in the designer.
 
+[!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
+
 ## Define a property
 
 Any public property with a **get** accessor defined by a control is automatically visible in the Visual Studio **Properties** window. If the property also defines a **set** accessor, the property can be changed in the **Properties** window. However, properties can be explicitly displayed or hidden from the **Properties** window by applying the <xref:System.ComponentModel.BrowsableAttribute>. This attribute takes a single boolean parameter to indicate whether or not it's displayed. For more information about attributes, see [Attributes (C#)](/dotnet/csharp/programming-guide/concepts/attributes/index) or [Attributes overview (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/attributes/index).
