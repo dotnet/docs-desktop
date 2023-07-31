@@ -429,10 +429,6 @@
             "redirect_url": "/dotnet/desktop/winforms/controls/how-to-author-composite-controls?view=netframeworkdesktop-4.8"
         },
         {
-            "source_path": "dotnet-desktop-guide/net/winforms/controls/how-to-inherit-from-the-usercontrol-class.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls-design/usercontrol-overview?view=netdesktop-7.0"
-        },
-        {
             "source_path": "dotnet-desktop-guide/net/winforms/controls/how-to-inherit-from-existing-windows-forms-controls.md",
             "redirect_url": "/dotnet/desktop/winforms/controls-design/extend-existing?view=netdesktop-7.0"
         },
@@ -451,6 +447,30 @@
         {
             "source_path": "dotnet-desktop-guide/net/winforms/controls/how-to-apply-attributes-in-windows-forms-controls.md",
             "redirect_url": "/dotnet/desktop/winforms/controls-design/designer-overview?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/controls/how-to-inherit-from-the-usercontrol-class.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls-design/how-to-create-usercontrol?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/controls/constituent-controls.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls-design/usercontrol-overview?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/controls/developing-windows-forms-controls-at-design-time.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls-design/usercontrol-overview?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/winforms/controls-design/usercontrol-overview.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls/developing-windows-forms-controls-at-design-time?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/controls/how-to-give-your-control-a-transparent-background.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls-design/how-to-set-transparent-background?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/winforms/controls-design/how-to-set-transparent-background.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-give-your-control-a-transparent-background?view=netframeworkdesktop-4.8"
         }
     ]
 }
