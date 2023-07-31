@@ -33,7 +33,7 @@ Modifies XAML compilation behavior when `x:Class` is also provided. Specifically
 
 ## Dependencies
 
-[x:Class](xclass-directive.md) must also be provided on the same element, and that element must be the root element in a page. For more information, see [\[MS-XAML\] Section 4.3.1.8](/previous-versions/msp-n-p/ff650760(v=pandp.10)).
+[x:Class](xclass-directive.md) must also be provided on the same element, and that element must be the root element in a page. For more information, see [\[MS-XAML\] Section 6.3.1.8](/openspecs/microsoft_domain_specific_languages/ms-xaml/fd13e8ed-dd75-4767-92cf-e418d2c39817).
 
 ## Remarks
 
