@@ -95,7 +95,7 @@ As previously mentioned, the `Reset<PropertyName>` and `ShouldSerialize<Property
 When `Reset<PropertyName>` is defined, the **Properties** window displays a **Reset** context menu option for that property. When **Reset** is selected, the `Reset<PropertyName>` method is invoked. The **Reset** context menu option is enabled or disabled by what is returned by the `ShouldSerialize<PropertyName>` method. When `ShouldSerialize<PropertyName>` returns `true`, it indicates that the property has changed from its default value and should be serialized into the code-behind file and enables the **Reset** context menu option. When `false` is returned, the **Reset** context menu option is disabled and the code-behind has the property-set code removed.
 
 > [!TIP]
-> Both methods should be defined with private scope so that they don't make up the public API of the control.
+> Both methods can and should be defined with private scope so that they don't make up the public API of the control.
 
 The following code snippet declares a property named `Direction`. This property's designer behavior is controlled by the `ResetDirection` and `ShouldSerializeDirection` methods.
 
