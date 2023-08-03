@@ -22,6 +22,9 @@ JsonSerializerOptions options = new()
 string srcRedirectFilePath;
 string definitionsFilePath;
 
+// Flag for file exists
+bool redirectFileExists = true;
+
 // If a .openpublishing.redirection.json path is provided, use it. Otherwise, use the default
 srcRedirectFilePath = args.Length == 1 ? args[0] : RedirectsFileName;
 
@@ -32,10 +35,11 @@ if (!Path.IsPathFullyQualified(srcRedirectFilePath))
 if (!File.Exists(srcRedirectFilePath))
 {
     if (args.Length == 1)
-        Console.WriteLine($"ERROR: The redirects file doesn't exist: '{srcRedirectFilePath}'");
+        Console.WriteLine($"WARNING: The redirects file doesn't exist: '{srcRedirectFilePath}'");
     else
-        Console.WriteLine($"ERROR: The redirects file (usually named '{RedirectsFileName}') doesn't exist. Either pass the path to one as the first parameter, or copy one into this folder.");
-    Environment.Exit(-1);
+        Console.WriteLine($"WARNING: The redirects file (usually named '{RedirectsFileName}') doesn't exist. Either pass the path to one as the first parameter, or copy one into this folder.");
+    
+    redirectFileExists = false;
 }
 
 if (!Path.GetFileNameWithoutExtension(srcRedirectFilePath).StartsWith(Path.GetFileNameWithoutExtension(RedirectsFileName), StringComparison.OrdinalIgnoreCase) ||
@@ -64,7 +68,12 @@ Console.WriteLine($"Loading definitions from '{definitionsFilePath}'");
 Document document = JsonSerializer.Deserialize<Document>(System.IO.File.ReadAllText(definitionsFilePath), options);
 
 // Load the source redirects file
-RedirectsFile redirects = JsonSerializer.Deserialize<RedirectsFile>(System.IO.File.ReadAllText(srcRedirectFilePath), options);
+RedirectsFile redirects;
+
+if (redirectFileExists)
+    redirects = JsonSerializer.Deserialize<RedirectsFile>(System.IO.File.ReadAllText(srcRedirectFilePath), options);
+else
+    redirects = new RedirectsFile();
 
 Counters.LoadedRedirects = redirects.redirections.Length;
 

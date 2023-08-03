@@ -1,12 +1,8 @@
 {
     "redirections": [
         {
-            "source_path": "dotnet-desktop-guide/net/winforms/windows-forms-overview.md",
-            "redirect_url": "/dotnet/desktop/winforms/overview/?view=netdesktop-7.0"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/framework/winforms/overview/index.md",
-            "redirect_url": "/dotnet/desktop/winforms/windows-forms-overview?view=netframeworkdesktop-4.8"
+            "source_path": "dotnet-desktop-guide/net/winforms/controls/custom.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls-design/overview?view=netdesktop-7.0"
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/how-to-create-a-windows-forms-application-from-the-command-line.md",
@@ -17,12 +13,24 @@
             "redirect_url": "/dotnet/desktop/winforms/how-to-create-a-windows-forms-application-from-the-command-line?view=netframeworkdesktop-4.8"
         },
         {
+            "source_path": "dotnet-desktop-guide/net/winforms/windows-forms-overview.md",
+            "redirect_url": "/dotnet/desktop/winforms/overview/?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/winforms/overview/index.md",
+            "redirect_url": "/dotnet/desktop/winforms/windows-forms-overview?view=netframeworkdesktop-4.8"
+        },
+        {
             "source_path": "dotnet-desktop-guide/net/winforms/events-overview-windows-forms.md",
             "redirect_url": "/dotnet/desktop/winforms/forms/events?view=netdesktop-7.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/forms/events.md",
             "redirect_url": "/dotnet/desktop/winforms/events-overview-windows-forms?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/creating-event-handlers-in-windows-forms.md",
+            "redirect_url": "/dotnet/desktop/winforms/forms/events?view=netdesktop-7.0"
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/automatic-scaling-in-windows-forms.md",
@@ -41,12 +49,28 @@
             "redirect_url": "/dotnet/desktop/winforms/how-to-resize-windows-forms?view=netframeworkdesktop-4.8"
         },
         {
+            "source_path": "dotnet-desktop-guide/net/winforms/controls/index.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls/overview?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/winforms/controls/overview.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls/index?view=netframeworkdesktop-4.8"
+        },
+        {
             "source_path": "dotnet-desktop-guide/net/winforms/controls/layout-in-windows-forms-controls.md",
             "redirect_url": "/dotnet/desktop/winforms/controls/layout?view=netdesktop-7.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/controls/layout.md",
             "redirect_url": "/dotnet/desktop/winforms/controls/layout-in-windows-forms-controls?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/controls/autosize-property-overview.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls/layout?view=netdesktop-7.0#automatic-sizing"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/controls/margin-and-padding-in-windows-forms-controls.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls/layout?view=netdesktop-7.0#margin-and-padding"
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/controls/label-control-overview-windows-forms.md",
@@ -57,8 +81,140 @@
             "redirect_url": "/dotnet/desktop/winforms/controls/label-control-overview-windows-forms?view=netframeworkdesktop-4.8"
         },
         {
+            "source_path": "dotnet-desktop-guide/net/winforms/controls/how-to-set-the-tab-order-on-windows-forms.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-set-the-tab-order?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/winforms/controls/how-to-set-the-tab-order.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-set-the-tab-order-on-windows-forms?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/controls/how-to-anchor-controls-on-windows-forms.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-dock-and-anchor?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/winforms/controls/how-to-dock-and-anchor.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-anchor-controls-on-windows-forms?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/controls/how-to-dock-controls-on-windows-forms.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-dock-and-anchor?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/how-to-create-event-handlers-at-run-time-for-windows-forms.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-add-an-event-handler?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/winforms/controls/how-to-add-an-event-handler.md",
+            "redirect_url": "/dotnet/desktop/winforms/how-to-create-event-handlers-at-run-time-for-windows-forms?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/how-to-connect-multiple-events-to-a-single-event-handler-in-windows-forms.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-add-an-event-handler?view=netdesktop-7.0#how-to-use-multiple-events-with-the-same-handler"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/controls/how-to-make-thread-safe-calls-to-windows-forms-controls.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-make-thread-safe-calls?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/winforms/controls/how-to-make-thread-safe-calls.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-make-thread-safe-calls-to-windows-forms-controls?view=netframeworkdesktop-4.8"
+        },
+        {
             "source_path": "dotnet-desktop-guide/net/winforms/controls/varieties-of-custom-controls.md",
             "redirect_url": "/dotnet/desktop/winforms/controls-design/overview?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/winforms/controls-design/overview.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls/varieties-of-custom-controls?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/controls/control-type-recommendations.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls-design/overview?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/controls/windows-forms-control-development-basics.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls-design/overview?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/controls/how-to-author-composite-controls.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls-design/how-to-create-usercontrol?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/winforms/controls-design/how-to-create-usercontrol.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-author-composite-controls?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/controls/how-to-inherit-from-the-usercontrol-class.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls-design/how-to-create-usercontrol?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/controls/how-to-inherit-from-existing-windows-forms-controls.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls-design/extend-existing?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/winforms/controls-design/extend-existing.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-inherit-from-existing-windows-forms-controls?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/controls/attributes-in-windows-forms-controls.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls-design/designer-overview?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/winforms/controls-design/designer-overview.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls/attributes-in-windows-forms-controls?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/controls/how-to-apply-attributes-in-windows-forms-controls.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls-design/designer-properties-overview?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/winforms/controls-design/designer-properties-overview.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-apply-attributes-in-windows-forms-controls?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/controls/design-time-errors-in-the-windows-forms-designer.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls-design/designer-errors?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/winforms/controls-design/designer-errors.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls/design-time-errors-in-the-windows-forms-designer?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/controls/defining-default-values-with-the-shouldserialize-and-reset-methods.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls-design/how-to-designer-properties-shouldserialize-reset?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/winforms/controls-design/how-to-designer-properties-shouldserialize-reset.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls/defining-default-values-with-the-shouldserialize-and-reset-methods?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/controls/how-to-provide-a-toolbox-bitmap-for-a-control.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls-design/how-to-set-toolbox-icon?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/winforms/controls-design/how-to-set-toolbox-icon.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-provide-a-toolbox-bitmap-for-a-control?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/controls/constituent-controls.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls-design/usercontrol-overview?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/controls/developing-windows-forms-controls-at-design-time.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls-design/usercontrol-overview?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/winforms/controls-design/usercontrol-overview.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls/developing-windows-forms-controls-at-design-time?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/controls/how-to-give-your-control-a-transparent-background.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls-design/how-to-set-transparent-background?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/framework/winforms/controls-design/how-to-set-transparent-background.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-give-your-control-a-transparent-background?view=netframeworkdesktop-4.8"
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/controls/custom-control-painting-and-rendering.md",
@@ -67,6 +223,14 @@
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/controls/custom-painting-drawing.md",
             "redirect_url": "/dotnet/desktop/winforms/controls/custom-control-painting-and-rendering?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/controls/rendering-a-windows-forms-control.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls/custom-painting-drawing?view=netdesktop-7.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/controls/user-drawn-controls.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls/custom-painting-drawing?view=netdesktop-7.0"
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/controls/how-to-add-controls-to-windows-forms.md",
@@ -107,6 +271,10 @@
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/input-keyboard/overview.md",
             "redirect_url": "/dotnet/desktop/winforms/keyboard-input-in-a-windows-forms-application?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/how-keyboard-input-works.md",
+            "redirect_url": "/dotnet/desktop/winforms/input-keyboard/overview?view=netdesktop-7.0"
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/using-keyboard-events.md",
@@ -161,6 +329,10 @@
             "redirect_url": "/dotnet/desktop/winforms/mouse-input-in-a-windows-forms-application?view=netframeworkdesktop-4.8"
         },
         {
+            "source_path": "dotnet-desktop-guide/net/winforms/how-mouse-input-works-in-windows-forms.md",
+            "redirect_url": "/dotnet/desktop/winforms/input-mouse/overview?view=netdesktop-7.0"
+        },
+        {
             "source_path": "dotnet-desktop-guide/net/winforms/mouse-events-in-windows-forms.md",
             "redirect_url": "/dotnet/desktop/winforms/input-mouse/events?view=netdesktop-7.0"
         },
@@ -201,100 +373,16 @@
             "redirect_url": "/dotnet/desktop/winforms/how-to-distinguish-between-clicks-and-double-clicks?view=netframeworkdesktop-4.8"
         },
         {
-            "source_path": "dotnet-desktop-guide/net/winforms/creating-event-handlers-in-windows-forms.md",
-            "redirect_url": "/dotnet/desktop/winforms/forms/events?view=netdesktop-7.0"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/net/winforms/controls/control-type-recommendations.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls-design/overview?view=netdesktop-7.0"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/net/winforms/controls/rendering-a-windows-forms-control.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls/custom-painting-drawing?view=netdesktop-7.0"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/net/winforms/controls/user-drawn-controls.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls/custom-painting-drawing?view=netdesktop-7.0"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/net/winforms/how-keyboard-input-works.md",
-            "redirect_url": "/dotnet/desktop/winforms/input-keyboard/overview?view=netdesktop-7.0"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/net/winforms/how-mouse-input-works-in-windows-forms.md",
-            "redirect_url": "/dotnet/desktop/winforms/input-mouse/overview?view=netdesktop-7.0"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/net/winforms/controls/how-to-set-the-tab-order-on-windows-forms.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-set-the-tab-order?view=netdesktop-7.0"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/framework/winforms/controls/how-to-set-the-tab-order.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-set-the-tab-order-on-windows-forms?view=netframeworkdesktop-4.8"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/net/winforms/controls/index.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls/overview?view=netdesktop-7.0"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/framework/winforms/controls/overview.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls/index?view=netframeworkdesktop-4.8"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/net/winforms/controls/autosize-property-overview.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls/layout?view=netdesktop-7.0#automatic-sizing"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/net/winforms/controls/how-to-anchor-controls-on-windows-forms.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-dock-and-anchor?view=netdesktop-7.0"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/framework/winforms/controls/how-to-dock-and-anchor.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-anchor-controls-on-windows-forms?view=netframeworkdesktop-4.8"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/net/winforms/controls/how-to-dock-controls-on-windows-forms.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-dock-and-anchor?view=netdesktop-7.0"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/net/winforms/how-to-create-event-handlers-at-run-time-for-windows-forms.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-add-an-event-handler?view=netdesktop-7.0"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/framework/winforms/controls/how-to-add-an-event-handler.md",
-            "redirect_url": "/dotnet/desktop/winforms/how-to-create-event-handlers-at-run-time-for-windows-forms?view=netframeworkdesktop-4.8"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/net/winforms/how-to-connect-multiple-events-to-a-single-event-handler-in-windows-forms.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-add-an-event-handler?view=netdesktop-7.0#how-to-use-multiple-events-with-the-same-handler"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/net/winforms/controls/margin-and-padding-in-windows-forms-controls.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls/layout?view=netdesktop-7.0#margin-and-padding"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/net/winforms/controls/how-to-make-thread-safe-calls-to-windows-forms-controls.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-make-thread-safe-calls?view=netdesktop-7.0"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/framework/winforms/controls/how-to-make-thread-safe-calls.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-make-thread-safe-calls-to-windows-forms-controls?view=netframeworkdesktop-4.8"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/net/winforms/whats-new/index.md",
-            "redirect_url": "/dotnet/desktop/winforms/whats-new/net70?view=netdesktop-7.0"
-        },
-        {
             "source_path": "dotnet-desktop-guide/net/winforms/controls/printdialog-component-overview-windows-forms.md",
-            "redirect_url": "/dotnet/desktop/winforms/printing/overview?view=netdesktop-7.0"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/net/winforms/controls/printdialog-component-windows-forms.md",
             "redirect_url": "/dotnet/desktop/winforms/printing/overview?view=netdesktop-7.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/printing/overview.md",
             "redirect_url": "/dotnet/desktop/winforms/controls/printdialog-component-overview-windows-forms?view=netframeworkdesktop-4.8"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/controls/printdialog-component-windows-forms.md",
+            "redirect_url": "/dotnet/desktop/winforms/printing/overview?view=netdesktop-7.0"
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/advanced/how-to-capture-user-input-from-a-printdialog-at-run-time.md",
@@ -397,108 +485,20 @@
             "redirect_url": "/dotnet/desktop/winforms/data/how-to-create-control-binding?view=netdesktop-7.0"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/data/how-to-synchronize-multiple-controls.md",
-            "redirect_url": "/dotnet/desktop/winforms/multiple-controls-bound-to-data-source-synchronized?view=netframeworkdesktop-4.8"
-        },
-        {
             "source_path": "dotnet-desktop-guide/net/winforms/multiple-controls-bound-to-data-source-synchronized.md",
             "redirect_url": "/dotnet/desktop/winforms/data/how-to-synchronize-multiple-controls?view=netdesktop-7.0"
         },
         {
-            "source_path": "dotnet-desktop-guide/net/winforms/controls/custom.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls-design/overview?view=netdesktop-7.0"
+            "source_path": "dotnet-desktop-guide/framework/winforms/data/how-to-synchronize-multiple-controls.md",
+            "redirect_url": "/dotnet/desktop/winforms/multiple-controls-bound-to-data-source-synchronized?view=netframeworkdesktop-4.8"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/controls-design/overview.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls/varieties-of-custom-controls?view=netframeworkdesktop-4.8"
+            "source_path": "dotnet-desktop-guide/net/winforms/whats-new/index.md",
+            "redirect_url": "/dotnet/desktop/winforms/whats-new/net70?view=netdesktop-7.0"
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/controls-design/index.md",
             "redirect_url": "/dotnet/desktop/winforms/controls-design/overview?view=netdesktop-7.0"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/net/winforms/controls/windows-forms-control-development-basics.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls-design/overview?view=netdesktop-7.0"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/net/winforms/controls/how-to-author-composite-controls.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls-design/how-to-create-usercontrol?view=netdesktop-7.0"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/framework/winforms/controls-design/how-to-create-usercontrol.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-author-composite-controls?view=netframeworkdesktop-4.8"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/net/winforms/controls/how-to-inherit-from-existing-windows-forms-controls.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls-design/extend-existing?view=netdesktop-7.0"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/framework/winforms/controls-design/extend-existing.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-inherit-from-existing-windows-forms-controls?view=netframeworkdesktop-4.8"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/net/winforms/controls/attributes-in-windows-forms-controls.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls-design/designer-overview?view=netdesktop-7.0"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/framework/winforms/controls-design/designer-overview.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls/attributes-in-windows-forms-controls?view=netframeworkdesktop-4.8"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/net/winforms/controls/how-to-apply-attributes-in-windows-forms-controls.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls-design/designer-properties-overview?view=netdesktop-7.0"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/framework/winforms/controls-design/designer-properties-overview.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-apply-attributes-in-windows-forms-controls?view=netframeworkdesktop-4.8"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/net/winforms/controls/design-time-errors-in-the-windows-forms-designer.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls-design/designer-errors?view=netdesktop-7.0"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/framework/winforms/controls-design/designer-errors.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls/design-time-errors-in-the-windows-forms-designer?view=netframeworkdesktop-4.8"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/net/winforms/controls/defining-default-values-with-the-shouldserialize-and-reset-methods.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls-design/how-to-designer-properties-shouldserialize-reset?view=netdesktop-7.0"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/framework/winforms/controls-design/how-to-designer-properties-shouldserialize-reset.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls/defining-default-values-with-the-shouldserialize-and-reset-methods?view=netframeworkdesktop-4.8"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/net/winforms/controls/how-to-provide-a-toolbox-bitmap-for-a-control.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls-design/how-to-set-toolbox-icon?view=netdesktop-7.0"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/framework/winforms/controls-design/how-to-set-toolbox-icon.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-provide-a-toolbox-bitmap-for-a-control?view=netframeworkdesktop-4.8"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/net/winforms/controls/how-to-inherit-from-the-usercontrol-class.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls-design/how-to-create-usercontrol?view=netdesktop-7.0"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/net/winforms/controls/constituent-controls.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls-design/usercontrol-overview?view=netdesktop-7.0"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/net/winforms/controls/developing-windows-forms-controls-at-design-time.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls-design/usercontrol-overview?view=netdesktop-7.0"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/framework/winforms/controls-design/usercontrol-overview.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls/developing-windows-forms-controls-at-design-time?view=netframeworkdesktop-4.8"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/net/winforms/controls/how-to-give-your-control-a-transparent-background.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls-design/how-to-set-transparent-background?view=netdesktop-7.0"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/framework/winforms/controls-design/how-to-set-transparent-background.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-give-your-control-a-transparent-background?view=netframeworkdesktop-4.8"
         }
     ]
 }
