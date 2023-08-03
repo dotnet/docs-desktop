@@ -31,12 +31,14 @@ For more information, see [Position and layout of controls](layout.md) and [How 
 
 ## Control events
 
-Controls provide a set of common events through the base class: <xref:System.Windows.Forms.Control>. Not every control responds to every event. For example, the <xref:System.Windows.Forms.Label> control doesn't respond to keyboard input, so the <xref:System.Windows.Forms.Control.PreviewKeyDown?displayProperty=nameWithType> event isn't raised. Most shared events fall under these categories:
+Controls provides more than 60 events through the base class <xref:System.Windows.Forms.Control>. These include the <xref:System.Windows.Forms.Control.Paint> event, which causes a control to be drawn, events related to displaying a window, such as the <xref:System.Windows.Forms.Control.Resize> and <xref:System.Windows.Forms.Control.Layout> events, and low-level mouse and keyboard events. Some low-level events are synthesized by <xref:System.Windows.Forms.Control> into semantic events such as <xref:System.Windows.Forms.Control.Click> and <xref:System.Windows.Forms.Control.DoubleClick>. Most shared events fall under these categories:
 
 - Mouse events
 - Keyboard events
 - Property changed events
 - Other events
+
+Not every control responds to every event. For example, the <xref:System.Windows.Forms.Label> control doesn't respond to keyboard input, and the <xref:System.Windows.Forms.Control.PreviewKeyDown?displayProperty=nameWithType> event isn't raised.
 
 For more information, see [Control events](events.md) and [How to handle a control event](how-to-add-an-event-handler.md).
 
