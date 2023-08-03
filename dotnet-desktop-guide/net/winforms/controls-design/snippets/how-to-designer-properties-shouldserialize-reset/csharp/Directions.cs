@@ -3,6 +3,7 @@
 // <enum>
 public enum Directions
 {
+    None,
     North,
     NorthEast,
     East,
@@ -11,6 +12,5 @@ public enum Directions
     SouthWest,
     West,
     NorthWest,
-    None,
 }
 // </enum>

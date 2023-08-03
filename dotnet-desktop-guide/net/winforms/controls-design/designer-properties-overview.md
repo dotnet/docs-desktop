@@ -37,6 +37,9 @@ Any public property with a **get** accessor defined by a control is automaticall
 :::code language="csharp" source="./snippets/designer-properties-overview/csharp/CompassRose.cs" id="browsable":::
 :::code language="vb" source="./snippets/designer-properties-overview/vb/CompassRose.vb" id="browsable":::
 
+> [NOTE]
+> Complex properties that can't be implicitly converted to and from a string require a type converter.
+
 ## Serialized properties
 
 Properties set on a control are serialized into the designer's code-behind file. This happens when the value of a property is set to something other than its default value.

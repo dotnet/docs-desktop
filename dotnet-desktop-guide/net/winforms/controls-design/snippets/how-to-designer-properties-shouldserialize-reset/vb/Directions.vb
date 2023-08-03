@@ -1,5 +1,6 @@
 ﻿' <enum>
 Public Enum Directions
+    None
     North
     NorthEast
     East
@@ -8,6 +9,5 @@ Public Enum Directions
     SouthWest
     West
     NorthWest
-    None
 End Enum
 ' </enum>

@@ -34,8 +34,6 @@ The yellow collapsible bar is created for every error, grouped by description. T
 When the yellow error bar is expanded, each instance of the error is listed. Many error types include an exact location in the following format: _\<project name>_ _\<form name>_ Line:_\<line number>_ Column:_\<column number>_. If a call stack is associated with the error, you can select the **Show Call Stack** link to see it. Examining the call stack may further help you resolve the error.
 
 > [!IMPORTANT]
-> The error window currently contains a bug which only displays the first error encountered.
->
 > The elements of an error may vary based on the code language you're using.
 
 ## Help with this error
