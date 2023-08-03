@@ -140,7 +140,7 @@
         {
             "Redirect": "OneWay",
             "SourceUrl": "/dotnet/desktop/winforms/controls/how-to-inherit-from-the-usercontrol-class?view=netframeworkdesktop-4.8",
-            "TargetUrl": "/dotnet/desktop/winforms/controls-design/usercontrol-overview?view=netdesktop-7.0"
+            "TargetUrl": "/dotnet/desktop/winforms/controls-design/how-to-create-usercontrol?view=netdesktop-7.0"
         },
         {
             "Redirect": "TwoWay",
@@ -171,6 +171,21 @@
             "Redirect": "TwoWay",
             "SourceUrl": "/dotnet/desktop/winforms/controls/how-to-provide-a-toolbox-bitmap-for-a-control?view=netframeworkdesktop-4.8",
             "TargetUrl": "/dotnet/desktop/winforms/controls-design/how-to-set-toolbox-icon?view=netdesktop-7.0"
+        },
+        {
+            "Redirect": "OneWay",
+            "SourceUrl": "/dotnet/desktop/winforms/controls/constituent-controls?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/winforms/controls-design/usercontrol-overview?view=netdesktop-7.0"
+        },
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/winforms/controls/developing-windows-forms-controls-at-design-time?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/winforms/controls-design/usercontrol-overview?view=netdesktop-7.0"
+        },
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/winforms/controls/how-to-give-your-control-a-transparent-background?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/winforms/controls-design/how-to-set-transparent-background?view=netdesktop-7.0"
         },
 
         // Custom painting and drawing

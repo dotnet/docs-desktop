@@ -49,19 +49,19 @@ This primitive is not typically used in application markup, but might be useful 
 
 For CLR backing, the `x:Boolean` primitive corresponds to <xref:System.Boolean>.
 
-XAML parses values for `x:Boolean` as case insensitive. Note that `x:Bool` is not an accepted alternative. For the XAML language specification definition, see [\[MS-XAML\] Sections 5.2.17 and 5.4.11](/previous-versions/msp-n-p/ff650760(v=pandp.10)).
+XAML parses values for `x:Boolean` as case insensitive. Note that `x:Bool` is not an accepted alternative. For the XAML language specification definition, see [\[MS-XAML\] Sections 7.2.17 and 7.4.11](/openspecs/microsoft_domain_specific_languages/ms-xaml/fd13e8ed-dd75-4767-92cf-e418d2c39817).
 
 ### x:Char
 
 For CLR backing, the `x:Char` primitive corresponds to <xref:System.Char>.
 
-String and char types have interaction with the overall encoding of the file at the XML level. For the XAML language specification definition, see [\[MS-XAML\] Sections 5.2.7 and 5.4.1](/previous-versions/msp-n-p/ff650760(v=pandp.10)).
+String and char types have interaction with the overall encoding of the file at the XML level. For the XAML language specification definition, see [\[MS-XAML\] Sections 7.2.7 and 7.4.1](/openspecs/microsoft_domain_specific_languages/ms-xaml/fd13e8ed-dd75-4767-92cf-e418d2c39817).
 
 ### x:String
 
 For CLR backing, the `x:String` primitive corresponds to <xref:System.String>.
 
-String and char types have interaction with the overall encoding of the file at the XML level. For the XAML language specification definition, see [\[MS-XAML\] Sections 5.2.6](/previous-versions/msp-n-p/ff650760(v=pandp.10)).
+String and char types have interaction with the overall encoding of the file at the XML level. For the XAML language specification definition, see [\[MS-XAML\] Sections 7.2.6](/openspecs/microsoft_domain_specific_languages/ms-xaml/fd13e8ed-dd75-4767-92cf-e418d2c39817).
 
 ### x:Decimal
 
@@ -69,7 +69,7 @@ For CLR backing, the `x:Decimal` primitive corresponds to <xref:System.Decimal>.
 
 XAML parsing is inherently done under `en-US` culture. Under `en-US` culture, the correct separator for the components of a decimal is always a period (`.`) regardless of culture settings of the development environment, or of the eventual client target where the XAML is loaded at run time.
 
-For the XAML language specification definition, see [\[MS-XAML\] Sections 5.2.14 and 5.4.8](/previous-versions/msp-n-p/ff650760(v=pandp.10)).
+For the XAML language specification definition, see [\[MS-XAML\] Sections 7.2.14 and 7.4.8](/openspecs/microsoft_domain_specific_languages/ms-xaml/fd13e8ed-dd75-4767-92cf-e418d2c39817).
 
 ### x:Single
 
@@ -79,7 +79,7 @@ In addition to the numeric values, text syntax for `x:Single` also permits the t
 
 `x:Single` can support values in scientific notation form, if the first character in text syntax is `e` or `E`.
 
-For the XAML language specification definition, see [\[MS-XAML\] Sections 5.2.8 and 5.4.2](/previous-versions/msp-n-p/ff650760(v=pandp.10)).
+For the XAML language specification definition, see [\[MS-XAML\] Sections 7.2.8 and 7.4.2](/openspecs/microsoft_domain_specific_languages/ms-xaml/fd13e8ed-dd75-4767-92cf-e418d2c39817).
 
 ### x:Double
 
@@ -89,25 +89,25 @@ In addition to the numeric values, text syntax for `x:Double` permits the tokens
 
 `x:Double` can support values in scientific notation form. Use the character `e` or `E` to introduce the exponent portion.
 
-For the XAML language specification definition, see [\[MS-XAML\] Sections 5.2.9 and 5.4.3](/previous-versions/msp-n-p/ff650760(v=pandp.10)).
+For the XAML language specification definition, see [\[MS-XAML\] Sections 7.2.9 and 7.4.3](/openspecs/microsoft_domain_specific_languages/ms-xaml/fd13e8ed-dd75-4767-92cf-e418d2c39817).
 
 ### x:Int16
 
 For CLR backing, the `x:Int16` primitive corresponds to <xref:System.Int16> and `x:Int16` is treated as signed. In XAML, the absence of a plus (`+`) sign in text syntax is implied as a positive signed value.
 
-For the XAML language specification definition, see [\[MS-XAML\] Sections 5.2.11 and 5.4.5](/previous-versions/msp-n-p/ff650760(v=pandp.10)).
+For the XAML language specification definition, see [\[MS-XAML\] Sections 7.2.11 and 7.4.5](/openspecs/microsoft_domain_specific_languages/ms-xaml/fd13e8ed-dd75-4767-92cf-e418d2c39817).
 
 ### x:Int32
 
 For CLR backing, the `x:Int32` primitive corresponds to <xref:System.Int32>. `x:Int32` is treated as signed. In XAML, the absence of a plus (`+`) sign in text syntax is implied as a positive signed value.
 
-For the XAML language specification definition, see [\[MS-XAML\] Sections 5.2.12 and 5.4.6](/previous-versions/msp-n-p/ff650760(v=pandp.10)).
+For the XAML language specification definition, see [\[MS-XAML\] Sections 7.2.12 and 7.4.6](/openspecs/microsoft_domain_specific_languages/ms-xaml/fd13e8ed-dd75-4767-92cf-e418d2c39817).
 
 ### x:Int64
 
 For CLR backing, the `x:Int64` primitive corresponds to <xref:System.Int64>. `x:Int64` is treated as signed. In XAML, the absence of a plus (`+`) sign in text syntax is implied as a positive signed value.
 
-For the XAML language specification definition, see [\[MS-XAML\] Sections 5.2.13 and 5.4.7](/previous-versions/msp-n-p/ff650760(v=pandp.10)).
+For the XAML language specification definition, see [\[MS-XAML\] Sections 7.2.13 and 7.4.7](/openspecs/microsoft_domain_specific_languages/ms-xaml/fd13e8ed-dd75-4767-92cf-e418d2c39817).
 
 ### x:TimeSpan
 
@@ -115,7 +115,7 @@ For CLR backing, the `x:TimeSpan` primitive corresponds to <xref:System.TimeSpan
 
 XAML parsing for time-date format is inherently done under `en-US` culture.
 
-For the XAML language specification definition, see [\[MS-XAML\] Sections 5.2.16 and 5.4.10](/previous-versions/msp-n-p/ff650760(v=pandp.10)).
+For the XAML language specification definition, see [\[MS-XAML\] Sections 7.2.16 and 7.4.10](/openspecs/microsoft_domain_specific_languages/ms-xaml/fd13e8ed-dd75-4767-92cf-e418d2c39817).
 
 ### x:Uri
 
@@ -123,13 +123,13 @@ For CLR backing, the `x:Uri` primitive corresponds to <xref:System.Uri>.
 
 Checking for protocols is not part of the XAML definition for `x:Uri`.
 
-For the XAML language specification definition, see [\[MS-XAML\] Sections 5.2.15 and 5.4.9](/previous-versions/msp-n-p/ff650760(v=pandp.10)).
+For the XAML language specification definition, see [\[MS-XAML\] Sections 7.2.15 and 7.4.9](/openspecs/microsoft_domain_specific_languages/ms-xaml/fd13e8ed-dd75-4767-92cf-e418d2c39817).
 
 ### x:Byte
 
 For CLR backing, the `x:Byte` primitive corresponds to <xref:System.Byte>. A <xref:System.Byte> / `x:Byte` is treated as unsigned.
 
-For the XAML language specification definition, see [\[MS-XAML\] Sections 5.2.10 and 5.4.4](/previous-versions/msp-n-p/ff650760(v=pandp.10)).
+For the XAML language specification definition, see [\[MS-XAML\] Sections 7.2.10 and 7.4.4](/openspecs/microsoft_domain_specific_languages/ms-xaml/fd13e8ed-dd75-4767-92cf-e418d2c39817).
 
 ### x:Array
 
@@ -137,7 +137,7 @@ For CLR backing, the `x:Array` primitive corresponds to <xref:System.Array>.
 
 You can define an array in XAML 2006  by using a markup extension syntax; however, the XAML 2009 syntax is a language-defined primitive that does not require accessing a markup extension. For more information about XAML 2006 support, see [x:Array Markup Extension](xarray-markup-extension.md).
 
-For the XAML language specification definition, see [\[MS-XAML\] Sections 5.2.18](/previous-versions/msp-n-p/ff650760(v=pandp.10)).
+For the XAML language specification definition, see [\[MS-XAML\] Sections 7.2.18](/openspecs/microsoft_domain_specific_languages/ms-xaml/fd13e8ed-dd75-4767-92cf-e418d2c39817).
 
 ## WPF Support
 

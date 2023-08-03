@@ -34,7 +34,7 @@ Configures XAML markup compilation to join partial classes between markup and co
 
 ## Dependencies
 
-`x:Class` can only be specified on the root element of a XAML production. `x:Class` is invalid on any object that has a parent in the XAML production. For more information, see [\[MS-XAML\] Section 4.3.1.6](/previous-versions/msp-n-p/ff650760(v=pandp.10)).
+`x:Class` can only be specified on the root element of a XAML production. `x:Class` is invalid on any object that has a parent in the XAML production. For more information, see [\[MS-XAML\] Section 6.3.1.6](/openspecs/microsoft_domain_specific_languages/ms-xaml/fd13e8ed-dd75-4767-92cf-e418d2c39817).
 
 ## Remarks
 
@@ -46,7 +46,7 @@ The value of the `x:Class` directive must be a string that specifies the fully q
 
 The code-behind file for a page or application definition must be within a code file that is included as part of the project that produces a compiled application and involves markup compilation. You must follow name rules for CLR classes. For more information, see [Framework Design Guidelines](/dotnet/api/). By default, the code-behind class must be `public`; however, you can define it at a different access level by using the [x:ClassModifier Directive](xclassmodifier-directive.md).
 
-This interpretation of the `x:Class` attribute applies only to a CLR-based XAML implementation, in particular to .NET XAML Services. Other XAML implementations that are not based on CLR and that do not use .NET XAML Services might use a different resolution formula for connecting XAML markup and backing run-time code. For more information about more general interpretations of `x:Class`, see [\[MS-XAML\]](/previous-versions/msp-n-p/ff650760(v=pandp.10)).
+This interpretation of the `x:Class` attribute applies only to a CLR-based XAML implementation, in particular to .NET XAML Services. Other XAML implementations that are not based on CLR and that do not use .NET XAML Services might use a different resolution formula for connecting XAML markup and backing run-time code. For more information about more general interpretations of `x:Class`, see [\[MS-XAML\]](/openspecs/microsoft_domain_specific_languages/ms-xaml/fd13e8ed-dd75-4767-92cf-e418d2c39817).
 
 At a certain level of architecture, the meaning of `x:Class` is undefined in .NET XAML Services. This is because .NET XAML Services does not specify the programming model by which XAML markup and backing code are connected. Additional uses of the `x:Class` directive might be implemented by specific frameworks that use programming models or application models to define how to connect XAML markup and CLR-based code-behind. Each framework can have its own build actions that enable some of the behavior or specific components that must be included in the build environment. Within a framework, build actions can also vary depending on the specific CLR language that is used for the code-behind.
 

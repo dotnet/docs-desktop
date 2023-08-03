@@ -38,7 +38,7 @@ You can specify more than one XAML type name by using a comma delimiter.
 
 If the generic constraints themselves use generic types, the nested constraint type arguments can be contained by parentheses ().
 
-Note that this definition of `x:TypeArguments` is specific to .NET XAML Services and using CLR backing. A language-level definition can be found in [\[MS-XAML\] Section 5.3.11](/previous-versions/msp-n-p/ff650760(v=pandp.10)).
+Note that this definition of `x:TypeArguments` is specific to .NET XAML Services and using CLR backing. A language-level definition can be found in [\[MS-XAML\] Section 7.3.11](/openspecs/microsoft_domain_specific_languages/ms-xaml/fd13e8ed-dd75-4767-92cf-e418d2c39817).
 
 ## Usage Examples
 
