@@ -20,7 +20,7 @@ helpviewer_keywords:
 - "controls [Windows Forms], composite"
 ---
 
-# Overview about Visual Studio design-time support for custom controls (Windows Forms .NET)
+# Visual Studio design-time support for custom controls (Windows Forms .NET)
 
 As you've noticed when interacting with the Windows Forms designer, there are many different design-time features offered by the Windows Forms controls. Some of the features offered by the Visual Studio Designer include snap lines, action items, and the property grid. All of these features offer you an easier way to interact and customize a control during design-time. This article is an overview about what kind of support you can add to your custom controls, to make the design-time experience better for the consumers of your controls.
 
