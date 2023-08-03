@@ -33,7 +33,7 @@ This walkthrough demonstrates how a custom component automatically appears in th
 When you are finished, you will see that the **Toolbox** is populated with a component that you have created.
 
 > [!NOTE]
-> The **Toolbox** doesn't follow reference chains, so it won't display items that are not built by a project in your solution.
+> The **Toolbox** only displays components from libraries directly referenced by your project or components defined by a project in the solution.
 
 ## Create the project
 
