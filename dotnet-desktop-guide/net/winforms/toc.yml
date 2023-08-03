@@ -105,16 +105,18 @@ items:
       href: controls-design/designer-overview.md
     - name: Designer changes from .NET Framework
       href: controls-design/designer-differences-framework.md
+    - name: Design-time properties for custom controls
+      href: controls-design/designer-properties-overview.md
 #    - name: Designer attributes (X)
 #      href: blah
-#    - name: Troubleshoot designer errors (X)
-#      href: blah
-#    - name: Common tasks
-#      items:
-#      - name: Manage control properties set by the designer (X)
-#        href: blah
-#      - name: Provide an image for the toolbox (X)
-#        href: blah
+    - name: Troubleshoot designer errors
+      href: controls-design/designer-errors.md
+    - name: Common tasks
+      items:
+      - name: Use ShouldSerialize and Reset for a property
+        href: controls-design/how-to-designer-properties-shouldserialize-reset.md
+      - name: Provide an icon for the toolbox
+        href: controls-design/how-to-set-toolbox-icon.md
 - name: User input - keyboard
   items:
   - name: Overview

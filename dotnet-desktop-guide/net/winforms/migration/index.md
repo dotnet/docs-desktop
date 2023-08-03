@@ -29,9 +29,6 @@ You should also review the information in the [Porting from .NET Framework to .N
 
 This article was written in the context of upgrading the **Windows Forms Matching Game Sample** project, which you can download from the [.NET Samples GitHub repository][winforms-sample].
 
-> [!IMPORTANT]
-> Due to a bug in Windows Forms for .NET 7, the sample project crashes on startup after upgrading. This is fixed in upcoming .NET Desktop Runtime 7.0.6 release. The latest .NET 8 preview contains the same fix.
-
 ## Initiate the upgrade
 
 If you're upgrading multiple projects, start with projects that have no dependencies. In the Matching Game sample, the **MatchingGame** project depends on the **MatchingGame.Logic** library, so **MatchingGame.Logic** should be upgraded first.

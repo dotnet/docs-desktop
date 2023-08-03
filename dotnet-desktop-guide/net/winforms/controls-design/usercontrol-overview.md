@@ -20,11 +20,11 @@ helpviewer_keywords:
 
 A user control is a collection of Windows Forms controls encapsulated in a common container. This kind of control is referred to as a _composite control_. The contained controls are called _constituent controls_. User controls derive from the <xref:System.Windows.Forms.UserControl> class.
 
-[!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
-
 User controls are designed like Forms, with a visual designer. You create, arrange, and modify, the constituent controls through the visual designer. The control events and logic are written exactly the same way as when you're designing a Form. The user control is placed on a Form just like any other control.
 
 User controls are usable by the project in which they're created, or in other projects that have reference to the user control's library.
+
+[!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
 
 ## Constituent controls
 
