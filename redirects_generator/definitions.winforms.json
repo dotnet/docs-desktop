@@ -153,9 +153,24 @@
             "TargetUrl": "/dotnet/desktop/winforms/controls-design/designer-overview?view=netdesktop-7.0"
         },
         {
-            "Redirect": "OneWay",
+            "Redirect": "TwoWay",
             "SourceUrl": "/dotnet/desktop/winforms/controls/how-to-apply-attributes-in-windows-forms-controls?view=netframeworkdesktop-4.8",
-            "TargetUrl": "/dotnet/desktop/winforms/controls-design/designer-overview?view=netdesktop-7.0"
+            "TargetUrl": "/dotnet/desktop/winforms/controls-design/designer-properties-overview?view=netdesktop-7.0"
+        },
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/winforms/controls/design-time-errors-in-the-windows-forms-designer?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/winforms/controls-design/designer-errors?view=netdesktop-7.0"
+        },
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/winforms/controls/defining-default-values-with-the-shouldserialize-and-reset-methods?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/winforms/controls-design/how-to-designer-properties-shouldserialize-reset?view=netdesktop-7.0"
+        },
+        {
+            "Redirect": "TwoWay",
+            "SourceUrl": "/dotnet/desktop/winforms/controls/how-to-provide-a-toolbox-bitmap-for-a-control?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/winforms/controls-design/how-to-set-toolbox-icon?view=netdesktop-7.0"
         },
         {
             "Redirect": "OneWay",

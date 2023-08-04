@@ -1,0 +1,15 @@
+{
+    "profiles": {
+        "Local": {
+            "commandName": "Project"
+        },
+        "Normal": {
+            "commandName": "Project",
+            "commandLineArgs": "\"C:\\Code\\Work\\dotnet\\docs-desktop\\.openpublishing.redirection.json\""
+        },
+        "Specialized-WinForms": {
+            "commandName": "Project",
+            "commandLineArgs": "\"C:\\Code\\Work\\dotnet\\docs-desktop\\.openpublishing.redirection.winforms.json\""
+        }
+    }
+}
