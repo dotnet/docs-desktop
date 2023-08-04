@@ -31,6 +31,9 @@ Icons for the **Toolbox** window in Visual Studio must conform to certain standa
 
 Icons are assigned to a control with the <xref:System.Drawing.ToolboxBitmapAttribute> attribute. For more information about attributes, see [Attributes (C#)](/dotnet/csharp/programming-guide/concepts/attributes/index) or [Attributes overview (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/attributes/index).
 
+> [!TIP]
+> You can download a sample icon from [GitHub](https://github.com/dotnet/docs-desktop/blob/main/dotnet-desktop-guide/net/winforms/controls-design/snippets/designer-properties-overview/csharp/CompassRose_Icon.bmp).
+
 The attribute is set on the control's class, and has three different constructors:
 
 - <xref:System.Drawing.ToolboxBitmapAttribute.%23ctor(System.Type)>&mdash;This constructor takes a single type reference, and from that type, tries to find an embedded resource to use as the icon.
