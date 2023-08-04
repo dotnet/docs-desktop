@@ -62,9 +62,9 @@ The attribute is set on the control's class, and has three different constructor
 - <xref:System.Drawing.ToolboxBitmapAttribute.%23ctor(System.Type,System.String)>&mdash;This constructor takes two parameters. The first parameter is a type, and the second is the namespace and name of the resource in the assembly of that type.
 
   ```csharp
-  // Loads the icon from the WinFormsApp1.Resources.CompasRoseIcon.bmp resource
+  // Loads the icon from the WinFormsApp1.Resources.CompassRoseIcon.bmp resource
   // in the assembly containing the type CompassRose
-  [ToolboxBitmap(typeof(CompassRose), "WinFormsApp1.Resources.CompasRoseIcon.bmp")]
+  [ToolboxBitmap(typeof(CompassRose), "WinFormsApp1.Resources.CompassRoseIcon.bmp")]
   public partial class CompassRose : UserControl
   {
       // Code for the control
