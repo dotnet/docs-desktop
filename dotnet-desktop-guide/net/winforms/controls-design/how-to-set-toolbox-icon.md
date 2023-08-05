@@ -31,6 +31,9 @@ Icons for the **Toolbox** window in Visual Studio must conform to certain standa
 
 Icons are assigned to a control with the <xref:System.Drawing.ToolboxBitmapAttribute> attribute. For more information about attributes, see [Attributes (C#)](/dotnet/csharp/programming-guide/concepts/attributes/index) or [Attributes overview (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/attributes/index).
 
+> [!TIP]
+> You can download a sample icon from [GitHub](https://github.com/dotnet/docs-desktop/blob/main/dotnet-desktop-guide/net/winforms/controls-design/media/how-to-set-toolbox-icon/CompassRose_Icon.bmp).
+
 The attribute is set on the control's class, and has three different constructors:
 
 - <xref:System.Drawing.ToolboxBitmapAttribute.%23ctor(System.Type)>&mdash;This constructor takes a single type reference, and from that type, tries to find an embedded resource to use as the icon.
@@ -59,9 +62,9 @@ The attribute is set on the control's class, and has three different constructor
 - <xref:System.Drawing.ToolboxBitmapAttribute.%23ctor(System.Type,System.String)>&mdash;This constructor takes two parameters. The first parameter is a type, and the second is the namespace and name of the resource in the assembly of that type.
 
   ```csharp
-  // Loads the icon from the WinFormsApp1.Resources.CompasRoseIcon.bmp resource
+  // Loads the icon from the WinFormsApp1.Resources.CompassRoseIcon.bmp resource
   // in the assembly containing the type CompassRose
-  [ToolboxBitmap(typeof(CompassRose), "WinFormsApp1.Resources.CompasRoseIcon.bmp")]
+  [ToolboxBitmap(typeof(CompassRose), "WinFormsApp1.Resources.CompassRoseIcon.bmp")]
   public partial class CompassRose : UserControl
   {
       // Code for the control
