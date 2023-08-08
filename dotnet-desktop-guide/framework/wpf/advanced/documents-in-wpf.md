@@ -16,7 +16,7 @@ ms.assetid: 6e8db7bc-050a-4070-aa72-bb8c46e87ff8
 ---
 # Documents in WPF
 
-WPF also provides integrated services for document display, packaging, and security. This topic provides an introduction to WPF document types and document packaging.  
+Windows Presentation Foundation (WPF) offers a wide range of document features that enable the creation of high-fidelity content that is designed to be more easily accessed and read than in previous generations of Windows. In addition to enhanced capabilities and quality, WPF also provides integrated services for document display, packaging, and security. This topic provides an introduction to WPF document types and document packaging.  
 
 <a name="types_of_documents"></a>
 
