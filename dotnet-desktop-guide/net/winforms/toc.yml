@@ -71,6 +71,8 @@ items:
   items:
   - name: Overview
     href: controls-design/overview.md
+  - name: Guidelines
+    href: controls-design/usercontrol-guidelines.md
   - name: Extend an existing control
     href: controls-design/extend-existing.md
   - name: User controls
