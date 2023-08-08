@@ -3,6 +3,9 @@ title: User control guidelines
 description: This article offers practical advice on how to design your user control for Windows Forms.
 ms.date: 08/08/2023
 ms.topic: overview
+dev_langs:
+  - "csharp"
+  - "vb"
 f1_keywords: 
   - "UserControl"
 helpviewer_keywords: 
@@ -38,8 +41,8 @@ If you want your control to send notifications when a property changes, define a
 
 The same suggestions in the [Defining events](#defining-events) section apply here, as well.
 
-:::code language="csharp" source="./snippets/usercontrol-guidelines/csharp/UserControl1.cs" id="normal_event":::
-:::code language="vb" source="./snippets/usercontrol-guidelines/vb/UserControl1.vb" id="normal_event":::
+:::code language="csharp" source="./snippets/usercontrol-guidelines/csharp/UserControl1.cs" id="eventargs":::
+:::code language="vb" source="./snippets/usercontrol-guidelines/vb/UserControl1.vb" id="eventargs":::
 
 ## Properties
 
