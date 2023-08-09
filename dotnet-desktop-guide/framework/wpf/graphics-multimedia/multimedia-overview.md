@@ -9,7 +9,7 @@ ms.assetid: feb25b15-d741-4ac3-818f-1b19f63a3562
 ---
 # Multimedia Overview
 
-The multimedia features in WPF.  
+The multimedia features in Windows Presentation Foundation (WPF) enable you to integrate audio and video into your applications to enhance the user experience. This topic introduces the multimedia features of WPF.  
 
 <a name="mediaapi"></a>
 

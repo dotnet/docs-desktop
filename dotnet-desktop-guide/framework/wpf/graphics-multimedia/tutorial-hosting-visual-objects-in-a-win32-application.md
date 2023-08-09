@@ -13,7 +13,7 @@ ms.assetid: f0e1600c-3217-43d5-875d-1864fa7fe628
 ---
 # Tutorial: Hosting Visual Objects in a Win32 Application
 
-WPF functionality to your application rather than rewrite your code. To provide support for Win32 and WPF graphics subsystems used concurrently in an application, WPF provides a mechanism for hosting objects in a Win32 window.  
+Windows Presentation Foundation (WPF) provides a rich environment for creating applications. However, when you have a substantial investment in Win32 code, it might be more effective to add WPF functionality to your application rather than rewrite your code. To provide support for Win32 and WPF graphics subsystems used concurrently in an application, WPF provides a mechanism for hosting objects in a Win32 window.  
   
  This tutorial describes how to write a sample application, [Hit Test with Win32 Interoperation Sample](https://github.com/microsoft/WPF-Samples/tree/master/Visual%20Layer/VisualsHitTesting), that hosts WPF visual objects in a Win32 window.  
 

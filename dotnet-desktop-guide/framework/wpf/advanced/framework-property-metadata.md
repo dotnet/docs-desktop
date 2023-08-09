@@ -9,7 +9,7 @@ ms.assetid: 9962f380-b885-4b61-a62e-457397083fea
 ---
 # Framework Property Metadata
 
-Framework property metadata options are reported for the properties of object elements considered to be at the WPF framework level in the WPF presentation APIs and executables. Framework property metadata is queried by these systems to determine feature-specific characteristics of particular element properties.  
+Framework property metadata options are reported for the properties of object elements considered to be at the WPF framework level in the Windows Presentation Foundation (WPF) architecture. In general the WPF framework-level designation entails that features such as rendering, data binding, and property system refinements are handled by the WPF presentation APIs and executables. Framework property metadata is queried by these systems to determine feature-specific characteristics of particular element properties.  
 
 <a name="prerequisites"></a>
 

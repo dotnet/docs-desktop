@@ -34,7 +34,7 @@ Animation on a computer is similar. For example, a program that makes a drawing 
 
 - The program then updates the rectangle with the new value and redraws it.
 
-Prior to WPF, Microsoft Windows developers had to create and manage their own timing systems or use special custom libraries. WPF includes an efficient timing system that is exposed through managed code and WPF framework. WPF animation makes it easy to animate controls and other graphical objects.
+Prior to WPF, Microsoft Windows developers had to create and manage their own timing systems or use special custom libraries. WPF includes an efficient timing system that is exposed through managed code and XAML and that is deeply integrated into the WPF framework. WPF animation makes it easy to animate controls and other graphical objects.
 
 WPF handles all the behind-the-scenes work of managing a timing system and redrawing the screen efficiently. It provides timing classes that enable you to focus on the effects you want to create, instead of the mechanics of achieving those effects. WPF also makes it easy to create your own animations by exposing animation base classes from which your classes can inherit, to produce customized animations. These custom animations gain many of the performance benefits of the standard animation classes.
 

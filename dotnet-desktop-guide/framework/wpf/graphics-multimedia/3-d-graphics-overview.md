@@ -13,7 +13,7 @@ ms.assetid: 67f31ed4-e36b-4b02-9889-dcce245d7afc
 ---
 # 3D Graphics Overview
 
-<a name="introduction"></a> The 3D functionality in WPF is not designed to provide a full-featured game-development platform. This topic provides an overview of 3D functionality in the WPF graphics system.  
+<a name="introduction"></a> The 3D functionality in Windows Presentation Foundation (WPF) enables developers to draw, transform, and animate 3D graphics in both markup and procedural code. Developers can combine 2D and 3D graphics to create rich controls, provide complex illustrations of data, or enhance the user experience of an application's interface. 3D support in WPF is not designed to provide a full-featured game-development platform. This topic provides an overview of 3D functionality in the WPF graphics system.  
 
 <a name="threed_in_2d"></a>
 
@@ -65,7 +65,7 @@ Perspective and Orthographic Projections
   
  To build a model, begin by building a primitive, or mesh. A 3D primitive is a collection of vertices that form a single 3D entity. Most 3D systems provide primitives modeled on the simplest closed figure: a triangle defined by three vertices.  Because the three points of a triangle are coplanar, you can continue adding triangles in order to model more complex shapes, called meshes.  
   
- The WPF 3D system currently provides the <xref:System.Windows.Media.Media3D.MeshGeometry3D> class, which allows you to specify any geometry; it does not currently support predefined 3D primitives like spheres and cubic forms. Begin creating a <xref:System.Windows.Media.Media3D.MeshGeometry3D> by specifying a list of triangle vertices as its <xref:System.Windows.Media.Media3D.MeshGeometry3D.Positions%2A> property. Each vertex is specified as a <xref:System.Windows.Media.Media3D.Point3D>.  (In WPF needs information about which vertices are shared by which triangles. You provide this information by specifying a list of triangle indices with the <xref:System.Windows.Media.Media3D.MeshGeometry3D.TriangleIndices%2A> property. This list specifies the order in which the points specified in the <xref:System.Windows.Media.Media3D.MeshGeometry3D.Positions%2A> list will determine a triangle.  
+ The WPF 3D system currently provides the <xref:System.Windows.Media.Media3D.MeshGeometry3D> class, which allows you to specify any geometry; it does not currently support predefined 3D primitives like spheres and cubic forms. Begin creating a <xref:System.Windows.Media.Media3D.MeshGeometry3D> by specifying a list of triangle vertices as its <xref:System.Windows.Media.Media3D.MeshGeometry3D.Positions%2A> property. Each vertex is specified as a <xref:System.Windows.Media.Media3D.Point3D>.  (In XAML, specify this property as a list of numbers grouped in threes that represent the coordinates of each vertex.) Depending on its geometry, your mesh might be composed of many triangles, some of which share the same corners (vertices). To draw the mesh correctly, the WPF needs information about which vertices are shared by which triangles. You provide this information by specifying a list of triangle indices with the <xref:System.Windows.Media.Media3D.MeshGeometry3D.TriangleIndices%2A> property. This list specifies the order in which the points specified in the <xref:System.Windows.Media.Media3D.MeshGeometry3D.Positions%2A> list will determine a triangle.  
   
  [!code-xaml[basic3d#Basic3DXAML3DN3](~/samples/snippets/xaml/VS_Snippets_Wpf/Basic3D/XAML/Window1.xaml#basic3dxaml3dn3)]  
   

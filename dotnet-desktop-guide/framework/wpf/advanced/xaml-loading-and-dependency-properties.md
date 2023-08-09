@@ -13,7 +13,7 @@ description: Learn about XAML loading and dependency properties and the current 
 ---
 # XAML Loading and Dependency Properties
 
-The current WPF implementation of its WPF XAML processor uses property system methods for dependency properties when loading binary XAML and processing attributes that are dependency properties. This effectively bypasses the property wrappers. When you implement custom dependency properties, you must account for this behavior and should avoid placing any other code in your property wrapper other than the property system methods <xref:System.Windows.DependencyObject.GetValue%2A> and <xref:System.Windows.DependencyObject.SetValue%2A>.  
+The current WPF implementation of its XAML processor is inherently dependency property aware. The WPF XAML processor uses property system methods for dependency properties when loading binary XAML and processing attributes that are dependency properties. This effectively bypasses the property wrappers. When you implement custom dependency properties, you must account for this behavior and should avoid placing any other code in your property wrapper other than the property system methods <xref:System.Windows.DependencyObject.GetValue%2A> and <xref:System.Windows.DependencyObject.SetValue%2A>.  
 
 <a name="prerequisites"></a>
 

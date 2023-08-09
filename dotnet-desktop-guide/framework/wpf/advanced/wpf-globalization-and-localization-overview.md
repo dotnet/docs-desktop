@@ -12,7 +12,7 @@ ms.assetid: 56e5a5c8-6c96-4d19-b8e1-a5be1dc564af
 
 When you limit your product's availability to only one language, you limit your potential customer base to a fraction of our world's 7.5 billion population. If you want your applications to reach a global audience, cost-effective localization of your product is one of the best and most economical ways to reach more customers.
 
-This overview introduces globalization and localization in WPF provides globalized design features, including automatic layout, satellite assemblies, and localized attributes and commenting.
+This overview introduces globalization and localization in Windows Presentation Foundation (WPF). Globalization is the design and development of applications that perform in multiple locations. For example, globalization supports localized user interfaces and regional data for users in different cultures. WPF provides globalized design features, including automatic layout, satellite assemblies, and localized attributes and commenting.
 
 Localization is the translation of application resources into localized versions for the specific cultures that the application supports. When you localize in WPF, you use the APIs in the <xref:System.Windows.Markup.Localizer> namespace. These APIs power the [LocBaml Tool Sample](https://github.com/microsoft/WPF-Samples/tree/master/Tools/LocBaml) command-line tool. For information about how to build and use LocBaml, see [Localize an Application](how-to-localize-an-application.md).
 
@@ -22,9 +22,9 @@ You can make the most of the globalization and localization functionality that i
 
 ### Best Practices for WPF UI Design
 
-When you design a UI, consider implementing these best practices:
+When you design a WPF–based UI, consider implementing these best practices:
 
-- Write your UI in UI in code. When you create your UI by using XAML, you expose it through built-in localization APIs.
+- Write your UI in XAML; avoid creating UI in code. When you create your UI by using XAML, you expose it through built-in localization APIs.
 
 - Avoid using absolute positions and fixed sizes to lay out content; instead, use relative or automatic sizing.
 
@@ -54,7 +54,7 @@ When you localize WPF–based applications, consider implementing these best pra
 
 - Use localization attributes to control localization instead of selectively omitting <xref:System.Windows.Markup.Localizer.BamlLocalizableResourceKey.Uid%2A> properties on elements. See [Localization Attributes and Comments](localization-attributes-and-comments.md) for more information.
 
-- Use `msbuild -t:updateuid` and `-t:checkuid` to add and check <xref:System.Windows.Markup.Localizer.BamlLocalizableResourceKey.Uid%2A> properties in your UI, the task is typically tedious and less accurate.
+- Use `msbuild -t:updateuid` and `-t:checkuid` to add and check <xref:System.Windows.Markup.Localizer.BamlLocalizableResourceKey.Uid%2A> properties in your XAML. Use <xref:System.Windows.Markup.Localizer.BamlLocalizableResourceKey.Uid%2A> properties to track changes between development and localization. <xref:System.Windows.Markup.Localizer.BamlLocalizableResourceKey.Uid%2A> properties help you localize new development changes. If you manually add <xref:System.Windows.Markup.Localizer.BamlLocalizableResourceKey.Uid%2A> properties to a UI, the task is typically tedious and less accurate.
 
   - Do not edit or change <xref:System.Windows.Markup.Localizer.BamlLocalizableResourceKey.Uid%2A> properties after you begin localization.
 
@@ -66,7 +66,7 @@ When you localize WPF–based applications, consider implementing these best pra
 
 ## Localize a WPF Application
 
-When you localize a WPF application, you have several options. For example, you can bind the localizable resources in your application to an XML file, store localizable text in resx tables, or have your localizer use Extensible Application Markup Language (XAML) files. This section describes a localization workflow that uses the BAML form of XAML, which provides several benefits:
+When you localize a WPF application, you have several options. For example, you can bind the localizable resources in your application to an XML file, store localizable text in resx tables, or have your localizer use XAML files. This section describes a localization workflow that uses the BAML form of XAML, which provides several benefits:
 
 - You can localize after you build.
 
@@ -86,7 +86,7 @@ When you develop a WPF application, the build process for localization is as fol
 
 The localization process begins after the unlocalized `MyDialog.resources.dll` file is built. The UI elements and properties in your original XAML are extracted from the BAML form of XAML into key-value pairs by using the APIs under <xref:System.Windows.Markup.Localizer>. Localizers use the key-value pairs to localize the application. You can generate a new .resource.dll from the new values after localization is complete.
 
-The keys of the key-value pairs are `x:Uid` values that are placed by the developer in the original UI after the localizer begins localizing, you can merge the development change with the already completed localization work so that minimal translation work is lost.
+The keys of the key-value pairs are `x:Uid` values that are placed by the developer in the original XAML. These `x:Uid` values enable the API to track and merge changes that happen between the developer and the localizer during localization. For example, if the developer changes the UI after the localizer begins localizing, you can merge the development change with the already completed localization work so that minimal translation work is lost.
 
 The following graphic shows a typical localization workflow that is based on the BAML form of XAML. This diagram assumes the developer writes the application in English. The developer creates and globalizes the WPF application. In the project file the developer sets `<UICulture>en-US</UICulture>` so that on build, a language neutral main assembly gets generated with a satellite .resources.dll containing all localizable resources. Alternately, one could keep the source language in the main assembly because WPF localization APIs support extraction from the main assembly. After the build process, the XAML get compiled into BAML. The culturally neutral MyDialog.exe.resources.dll get shipped to the English speaking customer.
 
@@ -128,9 +128,9 @@ The previous Window property automatically resizes the window according to the s
 
 <xref:System.Windows.Markup.Localizer.BamlLocalizableResourceKey.Uid%2A> properties are needed in order for WPF localization APIs to work correctly.
 
-They are used by UI with an older localization of the UI. You add a <xref:System.Windows.Markup.Localizer.BamlLocalizableResourceKey.Uid%2A> property by running `msbuild -t:updateuid RunDialog.csproj` in a command shell. This is the recommended method of adding <xref:System.Windows.Markup.Localizer.BamlLocalizableResourceKey.Uid%2A> properties because manually adding them is typically time-consuming and less accurate. You can check that <xref:System.Windows.Markup.Localizer.BamlLocalizableResourceKey.Uid%2A> properties are correctly set by running `msbuild -t:checkuid RunDialog.csproj`.
+They are used by WPF localization APIs to track changes between the development and localization of the user interface (UI). <xref:System.Windows.Markup.Localizer.BamlLocalizableResourceKey.Uid%2A> properties enable you to merge a newer version of the UI with an older localization of the UI. You add a <xref:System.Windows.Markup.Localizer.BamlLocalizableResourceKey.Uid%2A> property by running `msbuild -t:updateuid RunDialog.csproj` in a command shell. This is the recommended method of adding <xref:System.Windows.Markup.Localizer.BamlLocalizableResourceKey.Uid%2A> properties because manually adding them is typically time-consuming and less accurate. You can check that <xref:System.Windows.Markup.Localizer.BamlLocalizableResourceKey.Uid%2A> properties are correctly set by running `msbuild -t:checkuid RunDialog.csproj`.
 
-The UI is structured by using the <xref:System.Windows.Controls.Grid> control, which is a useful control for taking advantage of the automatic layout in UI elements that are positioned in each cell can adapt to increases and decreases in size during localization.
+The UI is structured by using the <xref:System.Windows.Controls.Grid> control, which is a useful control for taking advantage of the automatic layout in WPF. Note that the dialog box is split into three rows and five columns. Not one of the row and column definitions has a fixed size; hence, the UI elements that are positioned in each cell can adapt to increases and decreases in size during localization.
 
 [!code-xaml[GlobalizationRunDialog#GridColumnDef](~/samples/snippets/csharp/VS_Snippets_Wpf/GlobalizationRunDialog/CS/Window1.xaml#gridcolumndef)]
 

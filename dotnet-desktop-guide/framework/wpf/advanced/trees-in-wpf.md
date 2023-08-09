@@ -17,7 +17,7 @@ In many technologies, elements and components are organized in a tree structure 
 
 ## Trees in WPF  
 
- The most complete tree structure in WPF is the object tree. If you define an application page in WPF subsystems and affect choices you make in markup or code.  
+ The most complete tree structure in WPF is the object tree. If you define an application page in XAML and then load the XAML, the tree structure is created based on the nesting relationships of the elements in the markup. If you define an application or a portion of the application in code, then the tree structure is created based on how you assign property values for properties that implement the content model for a given object. In WPF, there are two ways that the complete object tree is conceptualized and can be reported to its public API: as the logical tree and as the visual tree. The distinctions between logical tree and visual tree are not always necessarily important, but they can occasionally cause issues with certain WPF subsystems and affect choices you make in markup or code.  
   
  Even though you do not always manipulate either the logical tree or the visual tree directly, understanding the concepts of how the trees interact is useful for understanding WPF as a technology. Thinking of WPF as a tree metaphor of some kind is also crucial to understanding how property inheritance and event routing work in WPF.  
   

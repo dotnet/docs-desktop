@@ -15,7 +15,7 @@ ms.assetid: c1cfcddb-e39c-41c8-a7f3-60984914dfae
 ---
 # Resources and Code
 
-This overview concentrates on how XAML syntax perspective, see [XAML Resources](/dotnet/desktop-wpf/fundamentals/xaml-resources-define).  
+This overview concentrates on how Windows Presentation Foundation (WPF) resources can be accessed or created using  code rather than Extensible Application Markup Language (XAML) syntax. For more information on general resource usage and resources from a XAML syntax perspective, see [XAML Resources](/dotnet/desktop-wpf/fundamentals/xaml-resources-define).  
 
 <a name="accessing"></a>
 
@@ -44,7 +44,7 @@ This overview concentrates on how XAML syntax perspective, see [XAML Resources](
 
 ## Using Objects as Keys  
 
- Most resource usages will set the key of the resource to be a string. However, various WPF features deliberately do not use a string type to specify keys, instead this parameter is an object. The capability of having the resource be keyed by an object is used by the WPF style and theming support. The styles in themes which become the default style for an otherwise non-styled control are each keyed by the <xref:System.Type> of the control that they should apply to. Being keyed by type provides a reliable lookup mechanism that works on default instances of each control type, and type can be detected by reflection and used for styling derived classes even though the derived type otherwise has no default style. You can specify a <xref:System.Type> key for a resource defined in WPF features, such as [ComponentResourceKey Markup Extension](componentresourcekey-markup-extension.md).  
+ Most resource usages will set the key of the resource to be a string. However, various WPF features deliberately do not use a string type to specify keys, instead this parameter is an object. The capability of having the resource be keyed by an object is used by the WPF style and theming support. The styles in themes which become the default style for an otherwise non-styled control are each keyed by the <xref:System.Type> of the control that they should apply to. Being keyed by type provides a reliable lookup mechanism that works on default instances of each control type, and type can be detected by reflection and used for styling derived classes even though the derived type otherwise has no default style. You can specify a <xref:System.Type> key for a resource defined in XAML by using the [x:Type Markup Extension](/dotnet/desktop/xaml-services/xtype-markup-extension). Similar extensions exist for other nonstring key usages that support WPF features, such as [ComponentResourceKey Markup Extension](componentresourcekey-markup-extension.md).  
   
 ## See also
 

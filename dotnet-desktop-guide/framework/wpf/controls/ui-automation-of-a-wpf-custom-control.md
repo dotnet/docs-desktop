@@ -15,7 +15,7 @@ ms.assetid: 47b310fc-fbd5-4ce2-a606-22d04c6d4911
 ---
 # UI Automation of a WPF Custom Control
 
-UI Automation enables both quality-assurance (test) code and accessibility applications such as screen readers to examine user-interface elements and simulate user interaction with them from other code. For information about UI Automation across all platforms, see Accessibility.  
+UI Automation provides a single, generalized interface that automation clients can use to examine or operate the user interfaces of a variety of platforms and frameworks. UI Automation enables both quality-assurance (test) code and accessibility applications such as screen readers to examine user-interface elements and simulate user interaction with them from other code. For information about UI Automation across all platforms, see Accessibility.  
   
  This topic describes how to implement a server-side UI Automation provider for a custom control that runs in a WPF application. WPF supports UI Automation through a tree of peer automation objects that parallels the tree of user interface elements. Test code and applications that provide accessibility features can use automation peer objects directly (for in-process code) or through the generalized interface provided by UI Automation.  
 

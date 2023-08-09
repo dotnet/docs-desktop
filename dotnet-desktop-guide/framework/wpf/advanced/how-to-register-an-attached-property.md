@@ -12,7 +12,7 @@ description: Learn how to register an attached property and provide public acces
 ---
 # How to: Register an Attached Property
 
-This example shows how to register an attached property and provide public accessors so that you can use the property in both WPF types are also implemented as dependency properties. You can use dependency properties on any <xref:System.Windows.DependencyObject> types.  
+This example shows how to register an attached property and provide public accessors so that you can use the property in both XAML and code. Attached properties are a syntax concept defined by XAML. Most attached properties for WPF types are also implemented as dependency properties. You can use dependency properties on any <xref:System.Windows.DependencyObject> types.  
   
 ## Example  
 

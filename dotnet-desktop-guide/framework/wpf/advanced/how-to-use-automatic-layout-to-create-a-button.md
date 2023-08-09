@@ -11,7 +11,7 @@ ms.assetid: 96c206d0-9e77-4784-9d2d-5045aed2021c
 
 This example describes how to use the automatic layout approach to create a button in a localizable application.  
   
- Localization of a UI was adapted for required adjustment. Now with the capabilities of Windows Presentation Foundation (WPF) you can design elements that reduce the need for adjustment. The approach to writing applications that can be more easily resized and repositioned is called `automatic layout`.  
+ Localization of a user interface (UI) can be a time consuming process. Often localizers need to resize and reposition elements in addition to translating text. In the past each language that a UI was adapted for required adjustment. Now with the capabilities of Windows Presentation Foundation (WPF) you can design elements that reduce the need for adjustment. The approach to writing applications that can be more easily resized and repositioned is called `automatic layout`.  
   
 ## Example  
 

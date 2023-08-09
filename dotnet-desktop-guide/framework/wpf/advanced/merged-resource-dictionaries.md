@@ -9,7 +9,7 @@ ms.assetid: d159531f-05d4-49fd-b951-c332de51e5bc
 ---
 # Merged Resource Dictionaries
 
-WPF application outside of the compiled XAML application. Resources can then be shared across applications and are also more conveniently isolated for localization.  
+Windows Presentation Foundation (WPF) resources support a merged resource dictionary feature. This feature provides a way to define the resources portion of a WPF application outside of the compiled XAML application. Resources can then be shared across applications and are also more conveniently isolated for localization.  
   
 ## Introducing a Merged Resource Dictionary  
 

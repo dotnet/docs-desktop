@@ -11,7 +11,7 @@ ms.assetid: ecea1955-420b-45c6-bf43-c1404c072c41
 ---
 # WPF Brushes Overview
 
-Everything visible on your screen is visible because it was painted by a brush. For example, a brush is used to describe the background of a button, the foreground of text, and the fill of a shape. This topic introduces the concepts of painting with user interface (UI) objects with anything from simple, solid colors to complex sets of patterns and images.  
+Everything visible on your screen is visible because it was painted by a brush. For example, a brush is used to describe the background of a button, the foreground of text, and the fill of a shape. This topic introduces the concepts of painting with Windows Presentation Foundation (WPF) brushes and provides examples. Brushes enable you to paint user interface (UI) objects with anything from simple, solid colors to complex sets of patterns and images.  
   
 <a name="paintingwithbrush"></a>
 

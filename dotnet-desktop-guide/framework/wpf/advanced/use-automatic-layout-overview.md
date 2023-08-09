@@ -9,7 +9,7 @@ description: Describes the guidelines for developers on how to write WPF applica
 ---
 # Use Automatic Layout Overview
 
-This topic introduces guidelines for developers on how to write WPF application design.
+This topic introduces guidelines for developers on how to write Windows Presentation Foundation (WPF) applications with localizable user interfaces (UIs). In the past, localization of a UI was a time consuming process. Each language that the UI was adapted for required a pixel by pixel adjustment. Today with the right design and right coding standards, UIs can be constructed so that localizers have less resizing and repositioning to do. The approach to writing applications that can be more easily resized and repositioned is called automatic layout, and can be achieved by using WPF application design.
 
 <a name="advantages_of_autolayout"></a>
 
