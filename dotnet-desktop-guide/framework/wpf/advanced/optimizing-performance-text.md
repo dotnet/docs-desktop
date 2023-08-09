@@ -46,7 +46,7 @@ Windows Presentation Foundation (WPF) provides advanced text support including g
 - Fixed-format document representation, including clients for previous versions of Windows and other computing devices.
 
 > [!NOTE]
-> <xref:System.Windows.Documents.Glyphs> and <xref:System.Windows.Media.GlyphRun> are designed for fixed-format document presentation and print scenarios. UI scenarios, see the [Typography in WPF](typography-in-wpf.md).
+> <xref:System.Windows.Documents.Glyphs> and <xref:System.Windows.Media.GlyphRun> are designed for fixed-format document presentation and print scenarios. WPF provides several elements for general layout and user interface (UI) scenarios such as <xref:System.Windows.Controls.Label> and <xref:System.Windows.Controls.TextBlock>. For more information on layout and UI scenarios, see the [Typography in WPF](typography-in-wpf.md).
 
 The following examples show how to define properties for a <xref:System.Windows.Documents.Glyphs> object in XAML. The examples assume that the Arial, Courier New, and Times New Roman fonts are installed in the **C:\WINDOWS\Fonts** folder on the local computer.
 

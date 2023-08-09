@@ -15,7 +15,7 @@ description: Learn how to make an object follow the mouse pointer and change the
 
 This example shows how to change the dimensions of an object when the mouse pointer moves on the screen.  
   
- The example includes an user interface (UI) and a code-behind file that creates the event handler.  
+ The example includes an Extensible Application Markup Language (XAML) file that creates the user interface (UI) and a code-behind file that creates the event handler.  
   
 ## Example  
 

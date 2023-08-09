@@ -29,7 +29,7 @@ ms.assetid: ee5258b7-6567-415a-9b1c-c0cbe46e79ef
 ---
 # Input Overview
 
-<a name="introduction"></a> The WPF and explains the architecture of the input systems.
+<a name="introduction"></a> The Windows Presentation Foundation (WPF) subsystem provides a powerful API for obtaining input from a variety of devices, including the mouse, keyboard, touch, and stylus. This topic describes the services provided by WPF and explains the architecture of the input systems.
 
 <a name="input_api"></a>
 

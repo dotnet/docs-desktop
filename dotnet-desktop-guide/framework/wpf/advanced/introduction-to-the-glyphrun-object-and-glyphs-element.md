@@ -36,7 +36,7 @@ This topic describes the <xref:System.Windows.Media.GlyphRun> object and the <xr
 3. Fixed-format document representation, including clients for previous versions of Windows and other computing devices.  
   
 > [!NOTE]
-> <xref:System.Windows.Documents.Glyphs> and <xref:System.Windows.Media.GlyphRun> are designed for fixed-format document presentation and print scenarios. UI scenarios, see the [Typography in WPF](typography-in-wpf.md).  
+> <xref:System.Windows.Documents.Glyphs> and <xref:System.Windows.Media.GlyphRun> are designed for fixed-format document presentation and print scenarios. WPF provides several elements for general layout and User interface (UI) scenarios such as <xref:System.Windows.Controls.Label> and <xref:System.Windows.Controls.TextBlock>. For more information on layout and UI scenarios, see the [Typography in WPF](typography-in-wpf.md).  
   
 <a name="text_glyphrunovw_glyphrunobject"></a>
 
