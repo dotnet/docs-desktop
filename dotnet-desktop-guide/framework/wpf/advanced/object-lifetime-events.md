@@ -34,7 +34,7 @@ This topic describes the specific WPF events that signify stages in an object li
 
 ## Prerequisites  
 
- This topic assumes that you understand dependency properties from the perspective of a consumer of existing dependency properties on Windows Presentation Foundation (WPF) classes, and have read the [Dependency Properties Overview](dependency-properties-overview.md) topic. In order to follow the examples in this topic, you should also understand [!INCLUDE[TLA#tla_xaml](../../../includes/tlasharptla-xaml-md.md)] (see [XAML in WPF](xaml-in-wpf.md)) and know how to write WPF applications.  
+ This topic assumes that you understand dependency properties from the perspective of a consumer of existing dependency properties on Windows Presentation Foundation (WPF) classes, and have read the [Dependency Properties Overview](dependency-properties-overview.md) topic. In order to follow the examples in this topic, you should also understand XAML (see [XAML in WPF](xaml-in-wpf.md)) and know how to write WPF applications.  
   
 <a name="intro"></a>
 
