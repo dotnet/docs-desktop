@@ -12,10 +12,13 @@ helpviewer_keywords:
 ms.assetid: 67f31ed4-e36b-4b02-9889-dcce245d7afc
 ---
 # 3D Graphics Overview
+
 <a name="introduction"></a> The 3D functionality in Windows Presentation Foundation (WPF) enables developers to draw, transform, and animate 3D graphics in both markup and procedural code. Developers can combine 2D and 3D graphics to create rich controls, provide complex illustrations of data, or enhance the user experience of an application's interface. 3D support in WPF is not designed to provide a full-featured game-development platform. This topic provides an overview of 3D functionality in the WPF graphics system.  
 
 <a name="threed_in_2d"></a>
+
 ## 3D in a 2D Container  
+
  3D graphics content in WPF is encapsulated in an element, <xref:System.Windows.Controls.Viewport3D>, that can participate in the two-dimensional element structure. The graphics system treats <xref:System.Windows.Controls.Viewport3D> as a two-dimensional visual element like many others in WPF. <xref:System.Windows.Controls.Viewport3D> functions as a window—a viewport—into a three-dimensional scene. More accurately, it is a surface on which a 3D scene is projected.  
   
  In a conventional 2D application, use <xref:System.Windows.Controls.Viewport3D> as you would another container element like Grid or Canvas.  Although you can use <xref:System.Windows.Controls.Viewport3D> with other 2D drawing objects in the same scene graph, you cannot interpenetrate 2D and 3D objects within a <xref:System.Windows.Controls.Viewport3D>.  This topic will focus on how to draw 3D graphics inside the <xref:System.Windows.Controls.Viewport3D>.  
