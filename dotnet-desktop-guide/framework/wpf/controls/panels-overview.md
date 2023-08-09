@@ -82,7 +82,7 @@ ms.assetid: f73644af-9941-4611-8754-6d4cef03fc44
 
 ## User Interface Panels  
 
- There are six panel classes available in UI scenarios: <xref:System.Windows.Controls.Canvas>, <xref:System.Windows.Controls.DockPanel>, <xref:System.Windows.Controls.Grid>, <xref:System.Windows.Controls.StackPanel>, <xref:System.Windows.Controls.VirtualizingStackPanel>, and <xref:System.Windows.Controls.WrapPanel>. These panel elements are easy to use, versatile, and extensible enough for most applications.  
+ There are six panel classes available in WPF that are optimized to support UI scenarios: <xref:System.Windows.Controls.Canvas>, <xref:System.Windows.Controls.DockPanel>, <xref:System.Windows.Controls.Grid>, <xref:System.Windows.Controls.StackPanel>, <xref:System.Windows.Controls.VirtualizingStackPanel>, and <xref:System.Windows.Controls.WrapPanel>. These panel elements are easy to use, versatile, and extensible enough for most applications.  
   
  Each derived <xref:System.Windows.Controls.Panel> element treats sizing constraints differently. Understanding how a <xref:System.Windows.Controls.Panel> handles constraints in either the horizontal or vertical direction can make layout more predictable.  
   
@@ -275,7 +275,7 @@ ms.assetid: f73644af-9941-4611-8754-6d4cef03fc44
 
 ## Localization/Globalization Support  
 
- UI.  
+ WPF supports a number of features that assist in the creation of localizable UI.  
   
  All panel elements natively support the <xref:System.Windows.FrameworkElement.FlowDirection%2A> property, which can be used to dynamically re-flow content based on a user's locale or language settings. For more information, see <xref:System.Windows.FrameworkElement.FlowDirection%2A>.  
   

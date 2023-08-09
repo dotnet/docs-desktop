@@ -46,7 +46,7 @@ The rich content model, styles, templates, and triggers minimize the need for yo
 
 ### Deriving from UserControl
 
-The simplest way to create a control in WPF is to derive from <xref:System.Windows.Controls.UserControl>. When you build a control that inherits from <xref:System.Windows.Controls.UserControl>, you add existing components to the <xref:System.Windows.Controls.UserControl>, name the components, and reference event handlers in WPF.
+The simplest way to create a control in WPF is to derive from <xref:System.Windows.Controls.UserControl>. When you build a control that inherits from <xref:System.Windows.Controls.UserControl>, you add existing components to the <xref:System.Windows.Controls.UserControl>, name the components, and reference event handlers in XAML. You can then reference the named elements and define the event handlers in code. This development model is very similar to the model used for application development in WPF.
 
 If built correctly, a <xref:System.Windows.Controls.UserControl> can take advantage of the benefits of rich content, styles, and triggers. However, if your control inherits from <xref:System.Windows.Controls.UserControl>, people who use your control will not be able to use a <xref:System.Windows.DataTemplate> or <xref:System.Windows.Controls.ControlTemplate> to customize its appearance.  It is necessary to derive from the <xref:System.Windows.Controls.Control> class or one of its derived classes (other than <xref:System.Windows.Controls.UserControl>) to create a custom control that supports templates.
 
