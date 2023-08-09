@@ -26,7 +26,7 @@ This topic describes the concept of routed events in Windows Presentation Founda
 
 ## Prerequisites
 
-This topic assumes that you have basic knowledge of the common language runtime (CLR) and object-oriented programming, as well as the concept of how the relationships between WPF elements can be conceptualized as a tree. In order to follow the examples in this topic, you should also understand WPF applications or pages. For more information, see [Walkthrough: My first WPF desktop application](../getting-started/walkthrough-my-first-wpf-desktop-application.md) and [XAML in WPF](xaml-in-wpf.md).
+This topic assumes that you have basic knowledge of the common language runtime (CLR) and object-oriented programming, as well as the concept of how the relationships between WPF elements can be conceptualized as a tree. In order to follow the examples in this topic, you should also understand Extensible Application Markup Language (XAML) and know how to write very basic WPF applications or pages. For more information, see [Walkthrough: My first WPF desktop application](../getting-started/walkthrough-my-first-wpf-desktop-application.md) and [XAML in WPF](xaml-in-wpf.md).
 
 <a name="routing"></a>
 

@@ -13,7 +13,7 @@ ms.assetid: e4ef38db-b7d1-4bda-87ab-8bb738440ddc
 ---
 # Typography
 
-WPF is rendered using Microsoft ClearType, which enhances the clarity and readability of text. WPF also supports OpenType fonts, which provide additional capabilities beyond those defined by the TrueType® format.  
+Windows Presentation Foundation (WPF) includes support for rich presentation of text content. Text in WPF is rendered using Microsoft ClearType, which enhances the clarity and readability of text. WPF also supports OpenType fonts, which provide additional capabilities beyond those defined by the TrueType® format.  
   
 ## In This Section  
 

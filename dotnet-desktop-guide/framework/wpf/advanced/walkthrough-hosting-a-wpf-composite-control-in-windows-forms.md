@@ -9,7 +9,7 @@ description: Learn about an application that hosts a WPF composite control to pe
 ---
 # Walkthrough: Hosting a WPF Composite Control in Windows Forms
 
-WPF rather than to rewrite it from scratch. A common scenario is when you want to embed one or more controls implemented with WPF within your Windows Forms application. For more information about customizing WPF controls, see [Control Customization](../controls/control-customization.md).  
+Windows Presentation Foundation (WPF) provides a rich environment for creating applications. However, when you have a substantial investment in Windows Forms code, it can be more effective to extend your existing Windows Forms application with WPF rather than to rewrite it from scratch. A common scenario is when you want to embed one or more controls implemented with WPF within your Windows Forms application. For more information about customizing WPF controls, see [Control Customization](../controls/control-customization.md).  
   
  This walkthrough steps you through an application that hosts a WPF composite control to perform data-entry in a Windows Forms application. The composite control is packaged in a DLL. This general procedure can be extended to more complex applications and controls. This walkthrough is designed to be nearly identical in appearance and functionality to [Walkthrough: Hosting a Windows Forms Composite Control in WPF](walkthrough-hosting-a-windows-forms-composite-control-in-wpf.md). The primary difference is that the hosting scenario is reversed.  
   
@@ -63,7 +63,7 @@ You need Visual Studio to complete this walkthrough.
   
 ### Creating the User Interface  
 
- The UI consists of five <xref:System.Windows.Controls.TextBox> elements. Each <xref:System.Windows.Controls.TextBox> element has an associated <xref:System.Windows.Controls.TextBlock> element that serves as a label. There are two <xref:System.Windows.Controls.Button> elements at the bottom, **OK** and **Cancel**. When the user clicks either button, the control raises a custom event to return the information to the host.  
+ The user interface (UI) for the composite control is implemented with Extensible Application Markup Language (XAML). The composite control UI consists of five <xref:System.Windows.Controls.TextBox> elements. Each <xref:System.Windows.Controls.TextBox> element has an associated <xref:System.Windows.Controls.TextBlock> element that serves as a label. There are two <xref:System.Windows.Controls.Button> elements at the bottom, **OK** and **Cancel**. When the user clicks either button, the control raises a custom event to return the information to the host.  
   
 #### Basic Layout  
 
