@@ -11,7 +11,7 @@ description: Learn how WPF types are implemented so that they can provide the re
 ---
 # XAML in WPF
 
-WPF types are implemented such that they can provide the required type backing for a XAML representation. In general, you can create the majority of your WPF application UI in XAML markup.  
+Extensible Application Markup Language (XAML) is a markup language for declarative application programming. Windows Presentation Foundation (WPF) implements a XAML processor implementation and provides XAML language support. The WPF types are implemented such that they can provide the required type backing for a XAML representation. In general, you can create the majority of your WPF application UI in XAML markup.  
   
 ## In This Section  
 

@@ -63,7 +63,7 @@ The following example shows a hexadecimal character reference. Notice that it ha
 
 ### Unicode
 
- WPF application can use <xref:System.Globalization.StringInfo> to manipulate strings without understanding whether they have surrogate pairs or combining characters.
+ XAML supports all Unicode features including surrogates. As long as the character set can be mapped to Unicode, it is supported. For example, GB18030 introduces some characters that are mapped to the Chinese, Japanese, and Korean (CFK) extension A and B and surrogate pairs, therefore it is fully supported. A WPF application can use <xref:System.Globalization.StringInfo> to manipulate strings without understanding whether they have surrogate pairs or combining characters.
 
 <a name="design_intl_ui_with_xaml"></a>
 
@@ -165,7 +165,7 @@ The following example shows a hexadecimal character reference. Notice that it ha
 
 ### Localizable User Interface
 
- UI. UI and use a programming language such as C# to react to user interaction.
+ WPF applications use XAML to define their UI. XAML allows developers to specify a hierarchy of objects with a set of properties and logic. The primary use of XAML is to develop WPF applications but it can be used to specify a hierarchy of any common language runtime (CLR) objects. Most developers use XAML to specify their application's UI and use a programming language such as C# to react to user interaction.
 
  From a resource point of view, a UI is a resource element and therefore its final distribution format must be localizable to support international languages. Because XAML cannot handle events many XAML applications contain blocks of code to do this. For more information, see [XAML in WPF](xaml-in-wpf.md). Code is stripped out and compiled into different binaries when a XAML file is tokenized into the BAML form of XAML. The BAML form of XAML files, images, and other types of managed resource objects are embedded in the satellite resource assembly, which can be localized into other languages, or the main assembly when localization is not required.
 

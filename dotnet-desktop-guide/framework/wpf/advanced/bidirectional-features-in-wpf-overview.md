@@ -161,7 +161,7 @@ The following graphic shows the output of the previous example with arrows drawn
 
 ![Graphic that illustrates arrows drawn using the Path element.](./media/bidirectional-features-in-wpf-overview/arrows-drawn-path-element.png)
 
-The <xref:System.Windows.Controls.Image> and <xref:System.Windows.Shapes.Path> are two examples of a how UI elements in a specific direction within a container, <xref:System.Windows.FlowDirection> can be used with elements such as <xref:System.Windows.Controls.InkPresenter> which renders ink on a surface, <xref:System.Windows.Media.LinearGradientBrush>, <xref:System.Windows.Media.RadialGradientBrush>. Whenever you need a right to left behavior for your content that mimics a left to right behavior, or vice versa, Windows Presentation Foundation (WPF) provides that capability.
+The <xref:System.Windows.Controls.Image> and <xref:System.Windows.Shapes.Path> are two examples of a how WPF uses <xref:System.Windows.FlowDirection>. Beside laying out UI elements in a specific direction within a container, <xref:System.Windows.FlowDirection> can be used with elements such as <xref:System.Windows.Controls.InkPresenter> which renders ink on a surface, <xref:System.Windows.Media.LinearGradientBrush>, <xref:System.Windows.Media.RadialGradientBrush>. Whenever you need a right to left behavior for your content that mimics a left to right behavior, or vice versa, Windows Presentation Foundation (WPF) provides that capability.
 
 <a name="NumberSubstitution"></a>
 

@@ -25,7 +25,7 @@ This topic describes the reasons that Windows Presentation Foundation (WPF) appl
 
 ## Prerequisites
 
-This topic assumes that you understand dependency properties from the perspective of a consumer of existing dependency properties on WPF classes, and have read the [Dependency Properties Overview](dependency-properties-overview.md) topic. In order to follow the examples in this topic, you should also understand WPF applications.
+This topic assumes that you understand dependency properties from the perspective of a consumer of existing dependency properties on WPF classes, and have read the [Dependency Properties Overview](dependency-properties-overview.md) topic. In order to follow the examples in this topic, you should also understand XAML and know how to write WPF applications.
 
 <a name="whatis"></a>
 

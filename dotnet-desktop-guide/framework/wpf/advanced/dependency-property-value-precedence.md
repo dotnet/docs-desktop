@@ -17,7 +17,7 @@ ms.assetid: 1fbada8e-4867-4ed1-8d97-62c07dad7ebc
 
 ## Prerequisites  
 
- This topic assumes that you understand dependency properties from the perspective of a consumer of existing dependency properties on WPF classes, and have read [Dependency Properties Overview](dependency-properties-overview.md). To follow the examples in this topic, you should also understand WPF applications.  
+ This topic assumes that you understand dependency properties from the perspective of a consumer of existing dependency properties on WPF classes, and have read [Dependency Properties Overview](dependency-properties-overview.md). To follow the examples in this topic, you should also understand XAML and know how to write WPF applications.  
   
 <a name="intro"></a>
 

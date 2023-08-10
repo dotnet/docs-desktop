@@ -10,7 +10,7 @@ ms.assetid: ead2d9ac-b709-4ec1-a924-39927a29d02f
 ---
 # Localization Attributes and Comments
 
-WPF Localization API to indicate which resources are to be localized. Free-form comments are any information that the application author wants to include.  
+Windows Presentation Foundation (WPF) localization comments are properties, inside XAML source code, supplied by developers to provide rules and hints for localization. WPF localization comments contain two sets of information: localizability attributes and free-form localization comments. Localizability attributes are used by the WPF Localization API to indicate which resources are to be localized. Free-form comments are any information that the application author wants to include.  
 
 <a name="Localizer_Comments_"></a>
 

@@ -14,7 +14,7 @@ This example shows how to set up to be notified when the binding target (target)
   
 ## Example  
 
- user interface (UI) that it should update, because the bound data has changed. Note that for these events to work, and also for one-way or two-way binding to work properly, you need to implement your data class using the <xref:System.ComponentModel.INotifyPropertyChanged> interface. For more information, see [Implement Property Change Notification](how-to-implement-property-change-notification.md).  
+ Windows Presentation Foundation (WPF) raises a data update event each time that the binding source or target has been updated. Internally, this event is used to inform the user interface (UI) that it should update, because the bound data has changed. Note that for these events to work, and also for one-way or two-way binding to work properly, you need to implement your data class using the <xref:System.ComponentModel.INotifyPropertyChanged> interface. For more information, see [Implement Property Change Notification](how-to-implement-property-change-notification.md).  
   
  Set the <xref:System.Windows.Data.Binding.NotifyOnTargetUpdated%2A> or <xref:System.Windows.Data.Binding.NotifyOnSourceUpdated%2A> property (or both) to `true` in the binding. The handler you provide to listen for this event must be attached directly to the element where you want to be informed of changes, or to the overall data context if you want to be aware that anything in the context has changed.  
   

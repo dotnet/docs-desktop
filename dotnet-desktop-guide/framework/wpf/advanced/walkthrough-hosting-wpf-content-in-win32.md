@@ -11,7 +11,7 @@ description: Learn how Windows Presentation Foundation provides a straightforwar
 ---
 # Walkthrough: Hosting WPF Content in Win32
 
-WPF functionality to your application rather than rewriting your original code. WPF provides a straightforward mechanism for hosting WPF content in a Win32 window.  
+Windows Presentation Foundation (WPF) provides a rich environment for creating applications. However, when you have a substantial investment in Win32 code, it might be more effective to add WPF functionality to your application rather than rewriting your original code. WPF provides a straightforward mechanism for hosting WPF content in a Win32 window.  
   
  This tutorial describes how to write a sample application, [Hosting WPF Content in a Win32 Window Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Migration%20and%20Interoperability/Win32HostingWPFPage), that hosts WPF content in a Win32 window. You can extend this sample to host any Win32 window. Because it involves mixing managed and unmanaged code, the application is written in C++/CLI.  
 
@@ -32,7 +32,7 @@ WPF functionality to your application rather than rewriting your original code. 
 
  This section outlines the basic procedure you use to host WPF content in a Win32 window. The remaining sections explain the details of each step.  
   
- The key to hosting WPF content on a Win32 window is the <xref:System.Windows.Interop.HwndSource> class. This class wraps the WPF content in a Win32 window, allowing it to be incorporated into your WPF in a single application.  
+ The key to hosting WPF content on a Win32 window is the <xref:System.Windows.Interop.HwndSource> class. This class wraps the WPF content in a Win32 window, allowing it to be incorporated into your user interface (UI) as a child window. The following approach combines the Win32 and WPF in a single application.  
   
 1. Implement your WPF content as a managed class.  
   
@@ -135,7 +135,7 @@ WPF functionality to your application rather than rewriting your original code. 
 
  You cannot host the WPF content directly in your application window. Instead, you first create an <xref:System.Windows.Interop.HwndSource> object to wrap the WPF content. This object is basically a window that is designed to host a WPF content. You host the <xref:System.Windows.Interop.HwndSource> object in the parent window by creating it as a child of a Win32 window that is part of your application. The <xref:System.Windows.Interop.HwndSource> constructor parameters contain much the same information that you would pass to CreateWindow when you create a Win32 child window.
 
- You next create an instance of the WPF content object. In this case, the WPF content is implemented as a separate class, `WPFPage`, using C++/CLI. You could also implement the WPF content with WPF content as a DLL. You can add a reference to that DLL to your project, and use that reference to create an instance of the WPF content.
+ You next create an instance of the WPF content object. In this case, the WPF content is implemented as a separate class, `WPFPage`, using C++/CLI. You could also implement the WPF content with XAML. However, to do so you need to set up a separate project and build the WPF content as a DLL. You can add a reference to that DLL to your project, and use that reference to create an instance of the WPF content.
 
  You display the WPF content in your child window by assigning a reference to the WPF content to the <xref:System.Windows.Interop.HwndSource.RootVisual%2A> property of the <xref:System.Windows.Interop.HwndSource>.
 
@@ -159,7 +159,7 @@ WPF functionality to your application rather than rewriting your original code. 
 
 ### Communicating with the WPF Content
 
- There are two types of communication with the UI that allows the user to change various WPF content properties, such as the background color or default font size.
+ There are two types of communication with the WPF content. The application receives information from the WPF content when the user clicks the **OK** or **Cancel** buttons. The application also has a UI that allows the user to change various WPF content properties, such as the background color or default font size.
 
  As mentioned above, when the user clicks either button the WPF content raises an `OnButtonClicked` event. The application attaches a handler to this event to receive these notifications. If the **OK** button was clicked, the handler gets the user information from the WPF content and displays it in a set of static controls.
 

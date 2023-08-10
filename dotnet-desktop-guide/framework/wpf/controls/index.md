@@ -12,13 +12,13 @@ ms.assetid: 3f255a8a-35a8-4712-9065-472ff7d75599
 # Controls
 
 <a name="introduction"></a>
-WPF SDK continues to use the term "control" to loosely mean any class that represents a visible object in an application, it is important to note that a class does not need to inherit from the <xref:System.Windows.Controls.Control> class to have a visible presence. Classes that inherit from the <xref:System.Windows.Controls.Control> class contain a <xref:System.Windows.Controls.ControlTemplate>, which allows the consumer of a control to radically change the control's appearance without having to create a new subclass.  This topic discusses how controls (both those that do inherit from the <xref:System.Windows.Controls.Control> class and those that do not) are commonly used in WPF.  
+Windows Presentation Foundation (WPF) ships with many of the common UI components that are used in almost every Windows application, such as <xref:System.Windows.Controls.Button>, <xref:System.Windows.Controls.Label>, <xref:System.Windows.Controls.TextBox>, <xref:System.Windows.Controls.Menu>, and <xref:System.Windows.Controls.ListBox>. Historically, these objects have been referred to as controls. While the WPF SDK continues to use the term "control" to loosely mean any class that represents a visible object in an application, it is important to note that a class does not need to inherit from the <xref:System.Windows.Controls.Control> class to have a visible presence. Classes that inherit from the <xref:System.Windows.Controls.Control> class contain a <xref:System.Windows.Controls.ControlTemplate>, which allows the consumer of a control to radically change the control's appearance without having to create a new subclass.  This topic discusses how controls (both those that do inherit from the <xref:System.Windows.Controls.Control> class and those that do not) are commonly used in WPF.  
 
 <a name="creating_an_instance_of_a_control"></a>
 
 ## Creating an Instance of a Control  
 
- You can add a control to an application by using either XAML. All controls can be created similarly.  
+ You can add a control to an application by using either Extensible Application Markup Language (XAML) or code.  The following example shows how to create a simple application that asks a user for their first and last name.  This example creates six controls: two labels, two text boxes, and two buttons, in XAML. All controls can be created similarly.  
   
  [!code-xaml[ControlsOverview#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlsOverview/CSharp/Window1.xaml#1)]  
   

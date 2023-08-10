@@ -12,7 +12,7 @@ ms.assetid: 77c48920-8c8b-41eb-8fe8-b411962c8623
 ---
 # Drag and Drop
 
-WPF applications as well as other Windows applications.  
+Windows Presentation Foundation (WPF) provides a highly flexible drag and drop infrastructure which supports dragging and dropping of data within both WPF applications as well as other Windows applications.  
   
 ## In This Section  
 

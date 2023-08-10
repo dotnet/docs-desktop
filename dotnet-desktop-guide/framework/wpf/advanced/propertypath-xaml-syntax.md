@@ -199,7 +199,7 @@ For instance, the <xref:System.Windows.Controls.Panel.Background%2A> property of
 <animation Storyboard.TargetProperty="(ownerType.propertyName)" ... />
 ```
 
-The parentheses indicate that this property in a <xref:System.Windows.PropertyPath> should be constructed using a partial qualification. It can use an XML namespace to find the type. The `ownerType` searches types that a WPF attached properties are implemented as dependency properties, so this issue is only of concern for custom attached properties.)
+The parentheses indicate that this property in a <xref:System.Windows.PropertyPath> should be constructed using a partial qualification. It can use an XML namespace to find the type. The `ownerType` searches types that a XAML processor has access to, through the <xref:System.Windows.Markup.XmlnsDefinitionAttribute> declarations in each assembly. Most applications have the default XML namespace mapped to the `http://schemas.microsoft.com/winfx/2006/xaml/presentation` namespace, so a prefix is usually only necessary for custom types or types otherwise outside that namespace. `propertyName` must resolve to be the name of a property existing on the `ownerType`. The property specified as `propertyName` must be a <xref:System.Windows.DependencyProperty>. (All WPF attached properties are implemented as dependency properties, so this issue is only of concern for custom attached properties.)
 
 <a name="indexanim"></a>
 

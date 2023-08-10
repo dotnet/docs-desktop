@@ -12,7 +12,7 @@ description: Learn how to interoperate Windows Presentation Foundation's environ
 ---
 # WPF and Win32 Interoperation
 
-This topic provides an overview of how to interoperate WPF and Win32 code. Windows Presentation Foundation (WPF) provides a rich environment for creating applications. However, when you have a substantial investment in Win32 code, it might be more effective to reuse some of that code.
+This topic provides an overview of how to interoperate Windows Presentation Foundation (WPF) and Win32 code. WPF provides a rich environment for creating applications. However, when you have a substantial investment in Win32 code, it might be more effective to reuse some of that code.
 
 <a name="basics"></a>
 
@@ -40,7 +40,7 @@ One project-level complication is that you cannot compile Extensible Application
 
 - Use <xref:System.Windows.Markup.XamlReader.Load%2A> to load any XAML at run time, instead of compiling your XAML.
 
-- Do not use WPF in code, building up the element tree from <xref:System.Windows.Application>.
+- Do not use XAML at all, and write all your WPF in code, building up the element tree from <xref:System.Windows.Application>.
 
 Use whatever approach works best for you.
 
@@ -61,7 +61,7 @@ A related concept to HWND is transparency within and between each HWND. This is 
 
 ## Hosting WPF Content in a Microsoft Win32 Window
 
-The key to hosting a WPF on a Win32 window is the <xref:System.Windows.Interop.HwndSource> class. This class wraps the WPF content in a Win32 window, so that the WPF content can be incorporated into your WPF in a single application.
+The key to hosting a WPF on a Win32 window is the <xref:System.Windows.Interop.HwndSource> class. This class wraps the WPF content in a Win32 window, so that the WPF content can be incorporated into your UI as a child window. The following approach combines the Win32 and WPF in a single application.
 
 1. Implement your WPF content (the content root element) as a managed class. Typically, the class inherits from one of the classes that can contain multiple child elements and/or used as a root element, such as <xref:System.Windows.Controls.DockPanel> or <xref:System.Windows.Controls.Page>. In subsequent steps, this class is referred to as the WPF content class, and instances of the class are referred to as WPF content objects.
 
