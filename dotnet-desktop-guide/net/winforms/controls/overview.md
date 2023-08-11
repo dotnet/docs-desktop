@@ -40,6 +40,8 @@ Controls provides more than 60 events through the base class <xref:System.Window
 
 Not every control responds to every event. For example, the <xref:System.Windows.Forms.Label> control doesn't respond to keyboard input, and the <xref:System.Windows.Forms.Control.PreviewKeyDown?displayProperty=nameWithType> event isn't raised.
 
+Often, a control is a wrapper for an underlaying Win32 control, and using the <xref:System.Windows.Forms.Control.Paint> event to draw on top of the control may be limited or do nothing at all, since the control is ultimately drawn by Windows.
+
 For more information, see [Control events](events.md) and [How to handle a control event](how-to-add-an-event-handler.md).
 
 ## Control accessibility

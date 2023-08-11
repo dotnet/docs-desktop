@@ -14,6 +14,7 @@
         End Get
         Set(value As Boolean)
             _allowInteraction = value
+            OnAllowInteractionChanged()
         End Set
     End Property
 
