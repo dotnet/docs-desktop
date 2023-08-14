@@ -36,7 +36,11 @@
             "SourceUrl": "/dotnet/desktop/winforms/creating-event-handlers-in-windows-forms?view=netframeworkdesktop-4.8",
             "TargetUrl": "/dotnet/desktop/winforms/forms/events?view=netdesktop-7.0"
         },
-
+        {
+            "Redirect": "OneWay",
+            "SourceUrl": "/dotnet/desktop/winforms/events-overview-windows-forms?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/winforms/forms/events?view=netdesktop-7.0"
+        },
 
         {
             "Redirect": "TwoWay",
