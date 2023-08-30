@@ -41,7 +41,7 @@ The defualt provider, <xref:System.Configuration.LocalFileSettingsProvider>, sto
   - The assembly's <xref:System.Security.Policy.StrongName> if available, otherwise the absolute **folder path** to the assembly is used.
 - The <xref:System.Reflection.AssemblyName.Version?displayProperty=nameWithType> string.
 
-If any of the preceding assembly details change, the prior user-scoped settings are lost because a new subfolder name is generated. For example, if a new version of the app is released, the `AssemblyName.Version` value is different from the previous version, and the name of the subfolder used to store the user-scoped settings changes. If user settings must persist between app releases, create a custom settings provider. For more information, see [Custom Settings Providers](application-settings-architecture.md#custom-settings-providers).
+If any of the preceding assembly details change, the prior user-scoped settings are lost because a new subfolder name is generated. For example, if a new version of the app is released and the `AssemblyName.Version` value is different from the previous version, the name of the subfolder used to store the user-scoped settings changes. If user settings must persist between app releases, create a custom settings provider. For more information, see [Custom Settings Providers](application-settings-architecture.md#custom-settings-providers).
 
 ## Limitations of Application Settings
 
