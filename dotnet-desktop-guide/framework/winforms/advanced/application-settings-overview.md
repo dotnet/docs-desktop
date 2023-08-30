@@ -33,7 +33,7 @@ This article discusses how to create and store settings data on behalf of your a
 
 ### Where are user-scoped settings stored
 
-The defualt provider, <xref:System.Configuration.LocalFileSettingsProvider>, stores user-scoped settings are stored in the <xref:System.Environment.SpecialFolder.LocalApplicationData> folder. If that folder is unavailable, the <xref:System.Environment.SpecialFolder.ApplicationData> folder is used. An app-specific subfolder is created to store the user-scoped settings. The name of this folder is based on three attributes about the app's main [assembly](/dotnet/standard/assembly/):
+The defualt provider, <xref:System.Configuration.LocalFileSettingsProvider>, stores user-scoped settings in the <xref:System.Environment.SpecialFolder.LocalApplicationData> folder. If that folder is unavailable, the <xref:System.Environment.SpecialFolder.ApplicationData> folder is used. An app-specific subfolder is created to store the user-scoped settings. The name of this folder is based on three attributes about the app's main [assembly](/dotnet/standard/assembly/):
 
 - The assembly's <xref:System.Diagnostics.FileVersionInfo.CompanyName>.
 - A hashed value based on two pieces of information:
