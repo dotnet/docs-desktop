@@ -27,9 +27,21 @@ This article discusses how to create and store settings data on behalf of your a
 
  Application settings works by persisting data as XML to different configuration (.config) files, corresponding to whether the setting is application-scoped or user-scoped. In most cases, the application-scoped settings are read-only; because they are program information, you will typically not need to overwrite them. By contrast, user-scoped settings can be read and written safely at run time, even if your application runs under partial trust. For more information about partial trust, see [Security in Windows Forms Overview](../security-in-windows-forms-overview.md).
 
- Settings are stored as XML fragments in configuration files. Application-scoped settings are represented by the `<applicationSettings>` element, and generally are placed in *app*.exe.config, where *app* is the name of your main executable file. User-scoped settings are represented by the `<userSettings>` element and are placed in *user*.config, where *user* is the user name of the person currently running the application. You must deploy the *app*.exe.config file with your application; the settings architecture will create the *user*.config files on demand the first time the application saves settings for that user. You can also define a `<userSettings>` block within *app*.exe.config to provide default values for user-scoped settings.
+ Settings are stored as XML fragments in configuration files. Application-scoped settings are represented by the `<applicationSettings>` element, and generally are placed in *app*.exe.config, where *app* is the name of your main executable file. User-scoped settings are represented by the `<userSettings>` element and are placed in *user.config*. You must deploy the *app*.exe.config file with your application; the settings architecture will create the *user.config* file on demand the first time the application saves settings for that user. You can also define a `<userSettings>` block within *app*.exe.config to provide default values for user-scoped settings.
 
  Custom controls can also save their own settings by implementing the <xref:System.Configuration.IPersistComponentSettings> interface, which exposes the <xref:System.Configuration.IPersistComponentSettings.SaveSettings%2A> method. The Windows Forms <xref:System.Windows.Forms.ToolStrip> control implements this interface to save the position of toolbars and toolbar items between application sessions. For more information about custom controls and application settings, see [Application Settings for Custom Controls](application-settings-for-custom-controls.md).
+
+### Where are user-scoped settings stored
+
+The defualt provider, <xref:System.Configuration.LocalFileSettingsProvider>, stores user-scoped settings are stored in the <xref:System.Environment.SpecialFolder.LocalApplicationData> folder. If that folder is unavailable, the <xref:System.Environment.SpecialFolder.ApplicationData> folder is used. An app-specific subfolder is created to store the user-scoped settings. The name of this folder is based on three attributes about the app's main [assembly](/dotnet/standard/assembly/):
+
+- The assembly's <xref:System.Diagnostics.FileVersionInfo.CompanyName>.
+- A hashed value based on two pieces of information:
+  - The assembly's <xref:System.AppDomain.FriendlyName>. If `FriendlyName` isn't available, the <xref:System.Diagnostics.FileVersionInfo.ProductName> is used.
+  - The assembly's <xref:System.Security.Policy.StrongName> if available, otherwise the absolute **folder path** to the assembly is used.
+- The <xref:System.Reflection.AssemblyName.Version?displayProperty=nameWithType> string.
+
+If any of the preceding app assembly attributes change, the prior user-scoped settings are lost because a new subfolder name is generated. For example, if a new version of the app is released, the `AssemblyName.Version` value is different from the previous version, and the name of the subfolder used to store the user-scoped settings changes. If user settings must persist between app releases, create a custom settings provider. For more information, see [Custom Settings Providers](application-settings-architecture.md#custom-settings-providers).
 
 ## Limitations of Application Settings
 
