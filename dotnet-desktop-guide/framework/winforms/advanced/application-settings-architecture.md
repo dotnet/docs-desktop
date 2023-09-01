@@ -48,7 +48,7 @@ This topic describes how the Application Settings architecture works, and explor
 
 - User-scoped settings can be stored in `app`.exe.config files, in which case they are treated as static defaults.
 
-- Non-default user-scoped settings are stored in a new file, *user*.config, where *user* is the user name of the person currently executing the application. You can specify a default for a user-scoped setting with <xref:System.Configuration.DefaultSettingValueAttribute>. Because user-scoped settings often change during application execution, `user`.config is always read/write.
+- Non-default user-scoped settings are stored in a new file, *user.config*. You can specify a default for a user-scoped setting with <xref:System.Configuration.DefaultSettingValueAttribute>. Because user-scoped settings often change during application execution, *user.config* is always read/write. For more information, see [Where are user-scoped settings stored](application-settings-overview.md#where-are-user-scoped-settings-stored).
 
  All three configuration files store settings in XML format. The top-level XML element for application-scoped settings is `<appSettings>`, while `<userSettings>` is used for user-scoped settings. An `app`.exe.config file which contains both application-scoped settings and defaults for user-scoped settings would look like this:
 
