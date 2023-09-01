@@ -23,6 +23,7 @@ namespace bindings
         public MainWindow()
         {
             InitializeComponent();
+            bindings.Metadata.PrintMetadata();
         }
     }
 }
