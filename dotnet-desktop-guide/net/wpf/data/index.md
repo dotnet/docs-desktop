@@ -81,7 +81,12 @@ This figure illustrates the different types of data flow:
 
 - <xref:System.Windows.Data.BindingMode.OneWay> binding causes changes to the source property to automatically update the target property, but changes to the target property are not propagated back to the source property. This type of binding is appropriate if the control being bound is implicitly read-only. For instance, you may bind to a source such as a stock ticker, or perhaps your target property has no control interface provided for making changes, such as a data-bound background color of a table. If there's no need to monitor the changes of the target property, using the <xref:System.Windows.Data.BindingMode.OneWay> binding mode avoids the overhead of the <xref:System.Windows.Data.BindingMode.TwoWay> binding mode.
 
-- <xref:System.Windows.Data.BindingMode.TwoWay> binding causes changes to either the source property or the target property to automatically update the other. This type of binding is appropriate for editable forms or other fully interactive UI scenarios. Most properties default to <xref:System.Windows.Data.BindingMode.OneWay> binding, but some dependency properties (typically properties of user-editable controls such as the <xref:System.Windows.Controls.TextBox.Text?displayProperty=nameWithType> and  [CheckBox.IsChecked](xref:System.Windows.Controls.Primitives.ToggleButton.IsChecked) default to <xref:System.Windows.Data.BindingMode.TwoWay> binding. A programmatic way to determine whether a dependency property binds one-way or two-way by default is to get the property metadata with <xref:System.Windows.DependencyProperty.GetMetadata%2A?displayProperty=nameWithType> and then check the Boolean value of the <xref:System.Windows.FrameworkPropertyMetadata.BindsTwoWayByDefault%2A?displayProperty=nameWithType> property.
+- <xref:System.Windows.Data.BindingMode.TwoWay> binding causes changes to either the source property or the target property to automatically update the other. This type of binding is appropriate for editable forms or other fully interactive UI scenarios. Most properties default to <xref:System.Windows.Data.BindingMode.OneWay> binding, but some dependency properties (typically properties of user-editable controls such as the <xref:System.Windows.Controls.TextBox.Text?displayProperty=nameWithType> and [CheckBox.IsChecked](xref:System.Windows.Controls.Primitives.ToggleButton.IsChecked) default to <xref:System.Windows.Data.BindingMode.TwoWay> binding.
+
+  A programmatic way to determine whether a dependency property binds one-way or two-way by default is to get the property metadata with <xref:System.Windows.DependencyProperty.GetMetadata%2A?displayProperty=nameWithType>. The return type of this method is <xref:System.Windows.PropertyMetadata>, which doesn't contain any metadata about binding. However, if this type can be cast to the derived <xref:System.Windows.FrameworkPropertyMetadata>, then the Boolean value of the <xref:System.Windows.FrameworkPropertyMetadata.BindsTwoWayByDefault%2A?displayProperty=nameWithType> property can be checked. The following code example demonstrates getting the metadata for the <xref:System.Windows.Controls.TextBox.Text%2A?displayProperty=nameWithType> property:
+
+  :::code language="csharp" source="./snippets/index/csharp/Metadata.cs" id="print_metadata":::
+  :::code language="vb" source="./snippets/index/vb/Metadata.vb" id="print_metadata":::
 
 - <xref:System.Windows.Data.BindingMode.OneWayToSource> is the reverse of <xref:System.Windows.Data.BindingMode.OneWay> binding; it updates the source property when the target property changes. One example scenario is if you only need to reevaluate the source value from the UI.
 
@@ -149,7 +154,7 @@ Binding sources are tied to the active <xref:System.Windows.FrameworkElement.Dat
 
 Consider the following example, in which the binding source object is a class named *MyData* that is defined in the *SDKSample* namespace. For demonstration purposes, *MyData* has a string property named *ColorName* whose value is set to "Red". Thus, this example generates a button with a red background.
 
-:::code language="xaml" source="./snippets/data-binding-overview/csharp/AutoConvertPropertyToColor.xaml" id="BindAutoConvertColor":::
+:::code language="xaml" source="./snippets/index/csharp/AutoConvertPropertyToColor.xaml" id="BindAutoConvertColor":::
 
 For more information on the binding declaration syntax and examples of how to set up a binding in code, see [Binding declarations overview](binding-declarations-overview.md).
 
@@ -165,7 +170,7 @@ Notice that in the previous example, the binding source is specified by setting 
 
 There are several ways to specify the binding source object. Using the <xref:System.Windows.FrameworkElement.DataContext%2A> property on a parent element is useful when you're binding multiple properties to the same source. However, sometimes it may be more appropriate to specify the binding source on individual binding declarations. For the previous example, instead of using the <xref:System.Windows.FrameworkElement.DataContext%2A> property, you can specify the binding source by setting the <xref:System.Windows.Data.Binding.Source%2A?displayProperty=nameWithType> property directly on the binding declaration of the button, as in the following example.
 
-:::code language="xaml" source="./snippets/data-binding-overview/csharp/AutoConvertPropertyToColor.xaml" id="BindAutoConvertColorCompactBinding":::
+:::code language="xaml" source="./snippets/index/csharp/AutoConvertPropertyToColor.xaml" id="BindAutoConvertColorCompactBinding":::
 
 Other than setting the <xref:System.Windows.FrameworkElement.DataContext%2A> property on an element directly, inheriting the <xref:System.Windows.FrameworkElement.DataContext%2A> value from an ancestor (such as the button in the first example), and explicitly specifying the binding source by setting the <xref:System.Windows.Data.Binding.Source%2A?displayProperty=nameWithType> property on the binding (such as the button the last example), you can also use the <xref:System.Windows.Data.Binding.ElementName?displayProperty=nameWithType> property or the <xref:System.Windows.Data.Binding.RelativeSource?displayProperty=nameWithType> property to specify the binding source. The <xref:System.Windows.Data.Binding.ElementName%2A> property is useful when you're binding to other elements in your app, such as when you're using a slider to adjust the width of a button. The <xref:System.Windows.Data.Binding.RelativeSource%2A> property is useful when the binding is specified in a <xref:System.Windows.Controls.ControlTemplate> or a <xref:System.Windows.Style>. For more information, see [Binding sources overview](binding-sources-overview.md).
 
@@ -177,7 +182,7 @@ For more information, see the <xref:System.Windows.Data.Binding.Path%2A> and <xr
 
 Although we have emphasized that the <xref:System.Windows.Data.Binding.Path%2A> to the value to use is one of the four necessary components of a binding, in the scenarios that you want to bind to an entire object, the value to use would be the same as the binding source object. In those cases, it's applicable to not specify a <xref:System.Windows.Data.Binding.Path%2A>. Consider the following example.
 
-:::code language="xaml" source="./snippets/data-binding-overview/csharp/EmptyBinding.xaml" id="EmptyBinding":::
+:::code language="xaml" source="./snippets/index/csharp/EmptyBinding.xaml" id="EmptyBinding":::
 
 The above example uses the empty binding syntax: {Binding}. In this case, the <xref:System.Windows.Controls.ListBox> inherits the DataContext from a parent DockPanel element (not shown in this example). When the path isn't specified, the default is to bind to the entire object. In other words, in this example, the path has been left out because we are binding the <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> property to the entire object. (See the [Binding to collections](#binding-to-collections) section for an in-depth discussion.)
 
@@ -191,8 +196,8 @@ Before getting into other features and usages of data binding, it's useful to in
 
 Consider the following example, where `myDataObject` is an instance of the `MyData` class, `myBinding` is the source <xref:System.Windows.Data.Binding> object, and `MyData` is a defined class that contains a string property named `ColorName`. This example binds the text content of `myText`, an instance of <xref:System.Windows.Controls.TextBlock>, to `ColorName`.
 
-:::code language="csharp" source="./snippets/data-binding-overview/csharp/ManualBinding.cs" id="CodeOnlyBinding":::
-:::code language="vb" source="./snippets/data-binding-overview/vb/ManualBinding.vb" id="CodeOnlyBinding":::
+:::code language="csharp" source="./snippets/index/csharp/ManualBinding.cs" id="CodeOnlyBinding":::
+:::code language="vb" source="./snippets/index/vb/ManualBinding.vb" id="CodeOnlyBinding":::
 
 You can use the same *myBinding* object to create other bindings. For example, you can use the *myBinding* object to bind the text content of a check box to *ColorName*. In that scenario, there will be two instances of <xref:System.Windows.Data.BindingExpression> sharing the *myBinding* object.
 
@@ -211,8 +216,8 @@ Adding this information to the figure in the [Create a binding](#create-a-bindin
 
 However, what if instead of having a property of type string your binding source object has a *Color* property of type <xref:System.Windows.Media.Color>? In that case, in order for the binding to work you would need to first turn the *Color* property value into something that the <xref:System.Windows.Controls.Control.Background%2A> property accepts. You would need to create a custom converter by implementing the <xref:System.Windows.Data.IValueConverter> interface, as in the following example.
 
-:::code language="csharp" source="./snippets/data-binding-overview/csharp/ColorBrushConverter.cs" id="ColorBrushConverter":::
-:::code language="vb" source="./snippets/data-binding-overview/vb/ColorBrushConverter.vb" id="ColorBrushConverter":::
+:::code language="csharp" source="./snippets/index/csharp/ColorBrushConverter.cs" id="ColorBrushConverter":::
+:::code language="vb" source="./snippets/index/vb/ColorBrushConverter.vb" id="ColorBrushConverter":::
 
 See <xref:System.Windows.Data.IValueConverter> for more information.
 
@@ -264,11 +269,11 @@ Because views do not change the underlying source collections, each source colle
 
 One way to create and use a view is to instantiate the view object directly and then use it as the binding source. For example, consider the [Data binding demo][data-binding-demo] app shown in the [What is data binding](#what-is-data-binding) section. The app is implemented such that the <xref:System.Windows.Controls.ListBox> binds to a view over the data collection instead of the data collection directly. The following example is extracted from the [Data binding demo][data-binding-demo] app. The <xref:System.Windows.Data.CollectionViewSource> class is the XAML proxy of a class that inherits from <xref:System.Windows.Data.CollectionView>. In this particular example, the <xref:System.Windows.Data.CollectionViewSource.Source%2A> of the view is bound to the *AuctionItems* collection (of type <xref:System.Collections.ObjectModel.ObservableCollection%601>) of the current app object.
 
-:::code language="xaml" source="./snippets/data-binding-overview/csharp/CollectionView.xaml" id="CollectionView":::
+:::code language="xaml" source="./snippets/index/csharp/CollectionView.xaml" id="CollectionView":::
 
 The resource *listingDataView* then serves as the binding source for elements in the app, such as the <xref:System.Windows.Controls.ListBox>.
 
-:::code language="xaml" source="./snippets/data-binding-overview/csharp/CollectionView.xaml" id="ListBoxCollectionView":::
+:::code language="xaml" source="./snippets/index/csharp/CollectionView.xaml" id="ListBoxCollectionView":::
 
 To create another view for the same collection, you can create another <xref:System.Windows.Data.CollectionViewSource> instance and give it a different `x:Key` name.
 
@@ -296,20 +301,20 @@ As mentioned before, views can apply a sort order to a collection. As it exists 
 
 The following example shows the sorting logic of the "Sort by category and date" <xref:System.Windows.Controls.CheckBox> of the app UI in the [What is data binding](#what-is-data-binding) section.
 
-:::code language="csharp" source="./snippets/data-binding-overview/csharp/CollectionView.xaml.cs" id="AddSortChecked":::
-:::code language="vb" source="./snippets/data-binding-overview/vb/CollectionView.xaml.vb" id="AddSortChecked":::
+:::code language="csharp" source="./snippets/index/csharp/CollectionView.xaml.cs" id="AddSortChecked":::
+:::code language="vb" source="./snippets/index/vb/CollectionView.xaml.vb" id="AddSortChecked":::
 
 #### Filtering
 
 Views can also apply a filter to a collection, so that the view shows only a certain subset of the full collection. You might filter on a condition in the data. For instance, as is done by the app in the [What is data binding](#what-is-data-binding) section, the "Show only bargains" <xref:System.Windows.Controls.CheckBox> contains logic to filter out items that cost $25 or more. The following code is executed to set *ShowOnlyBargainsFilter* as the <xref:System.Windows.Data.CollectionViewSource.Filter> event handler when that <xref:System.Windows.Controls.CheckBox> is selected.
 
-:::code language="csharp" source="./snippets/data-binding-overview/csharp/CollectionView.xaml.cs" id="ListingViewFilter":::
-:::code language="vb" source="./snippets/data-binding-overview/vb/CollectionView.xaml.vb" id="ListingViewFilter":::
+:::code language="csharp" source="./snippets/index/csharp/CollectionView.xaml.cs" id="ListingViewFilter":::
+:::code language="vb" source="./snippets/index/vb/CollectionView.xaml.vb" id="ListingViewFilter":::
 
 The *ShowOnlyBargainsFilter* event handler has the following implementation.
 
-:::code language="csharp" source="./snippets/data-binding-overview/csharp/CollectionView.xaml.cs" id="FilterEvent":::
-:::code language="vb" source="./snippets/data-binding-overview/vb/CollectionView.xaml.vb" id="FilterEvent":::
+:::code language="csharp" source="./snippets/index/csharp/CollectionView.xaml.cs" id="FilterEvent":::
+:::code language="vb" source="./snippets/index/vb/CollectionView.xaml.vb" id="FilterEvent":::
 
 If you're using one of the <xref:System.Windows.Data.CollectionView> classes directly instead of <xref:System.Windows.Data.CollectionViewSource>, you would use the <xref:System.Windows.Data.CollectionView.Filter%2A> property to specify a callback. For an example, see [Filter Data in a View (.NET Framework)](../../../framework/wpf/data/how-to-filter-data-in-a-view.md).
 
@@ -319,8 +324,8 @@ Except for the internal class that views an <xref:System.Collections.IEnumerable
 
 The following example shows the logic of the "Group by category" <xref:System.Windows.Controls.CheckBox>.
 
-:::code language="csharp" source="./snippets/data-binding-overview/csharp/CollectionView.xaml.cs" id="ListingGroupCheck":::
-:::code language="vb" source="./snippets/data-binding-overview/vb/CollectionView.xaml.vb" id="ListingGroupCheck":::
+:::code language="csharp" source="./snippets/index/csharp/CollectionView.xaml.cs" id="ListingGroupCheck":::
+:::code language="vb" source="./snippets/index/vb/CollectionView.xaml.vb" id="ListingGroupCheck":::
 
 For another grouping example, see [Group Items in a ListView That Implements a GridView (.NET Framework)](../../../framework/wpf/controls/how-to-group-items-in-a-listview-that-implements-a-gridview.md).
 
@@ -350,7 +355,7 @@ The notion of a current item is useful not only for navigation of items in a col
 
 You can implement the master-detail scenario simply by having two or more controls bound to the same view. The following example from the [Data binding demo][data-binding-demo] shows the markup of the <xref:System.Windows.Controls.ListBox> and the <xref:System.Windows.Controls.ContentControl> you see on the app UI in the [What is data binding](#what-is-data-binding) section.
 
-:::code language="xaml" source="./snippets/data-binding-overview/csharp/CollectionView.xaml" id="ListBoxContentControl":::
+:::code language="xaml" source="./snippets/index/csharp/CollectionView.xaml" id="ListBoxContentControl":::
 
 Notice that both of the controls are bound to the same source, the *listingDataView* static resource (see the definition of this resource in the [How to create a view section](#how-to-create-a-view)). This binding works because when a singleton object (the <xref:System.Windows.Controls.ContentControl> in this case) is bound to a collection view, it automatically binds to the <xref:System.Windows.Data.CollectionView.CurrentItem%2A> of the view. The <xref:System.Windows.Data.CollectionViewSource> objects automatically synchronize currency and selection. If your list control isn't bound to a <xref:System.Windows.Data.CollectionViewSource> object as in this example, then you would need to set its <xref:System.Windows.Controls.Primitives.Selector.IsSynchronizedWithCurrentItem%2A> property to `true` for this to work.
 
@@ -368,7 +373,7 @@ As shown in the example in the previous section, both the <xref:System.Windows.C
 
 To solve that problem, the app defines <xref:System.Windows.DataTemplate?text=DataTemplates>. As shown in the example in the previous section, the <xref:System.Windows.Controls.ContentControl> explicitly uses the *detailsProductListingTemplate* data template. The <xref:System.Windows.Controls.ListBox> control implicitly uses the following data template when displaying the *AuctionItem* objects in the collection.
 
-:::code language="xaml" source="./snippets/data-binding-overview/csharp/CollectionView.xaml" id="AuctionItemDataTemplate":::
+:::code language="xaml" source="./snippets/index/csharp/CollectionView.xaml" id="AuctionItemDataTemplate":::
 
 With the use of those two DataTemplates, the resulting UI is the one shown in the [What is data binding](#what-is-data-binding) section. As you can see from that screenshot, in addition to letting you place data in your controls, DataTemplates allow you to define compelling visuals for your data. For example, <xref:System.Windows.DataTrigger>s are used in the above <xref:System.Windows.DataTemplate> so that *AuctionItem*s with *SpecialFeatures* value of *HighLight* would be displayed with an orange border and a star.
 
@@ -382,7 +387,7 @@ Most app that take user input need to have validation logic to ensure that the u
 
 The WPF data binding model allows you to associate <xref:System.Windows.Data.Binding.ValidationRules%2A> with your <xref:System.Windows.Data.Binding> object. For example, the following example binds a <xref:System.Windows.Controls.TextBox> to a property named `StartPrice` and adds a <xref:System.Windows.Controls.ExceptionValidationRule> object to the <xref:System.Windows.Data.Binding.ValidationRules%2A?displayProperty=nameWithType> property.
 
-:::code language="xaml" source="./snippets/data-binding-overview/csharp/DataValidation.xaml" id="TextboxStartPrice":::
+:::code language="xaml" source="./snippets/index/csharp/DataValidation.xaml" id="TextboxStartPrice":::
 
 A <xref:System.Windows.Controls.ValidationRule> object checks whether the value of a property is valid. WPF has two types of built-in <xref:System.Windows.Controls.ValidationRule> objects:
 
@@ -392,12 +397,12 @@ A <xref:System.Windows.Controls.ValidationRule> object checks whether the value 
 
 You can also create your own validation rule by deriving from the <xref:System.Windows.Controls.ValidationRule> class and implementing the <xref:System.Windows.Controls.ValidationRule.Validate%2A> method. The following example shows the rule used by the *Add Product Listing* "Start Date" <xref:System.Windows.Controls.TextBox> from the [What is data binding](#what-is-data-binding) section.
 
-:::code language="csharp" source="./snippets/data-binding-overview/csharp/FutureDateRule.cs" id="FutureDateRule":::
-:::code language="vb" source="./snippets/data-binding-overview/vb/FutureDateRule.vb" id="FutureDateRule":::
+:::code language="csharp" source="./snippets/index/csharp/FutureDateRule.cs" id="FutureDateRule":::
+:::code language="vb" source="./snippets/index/vb/FutureDateRule.vb" id="FutureDateRule":::
 
 The *StartDateEntryForm* <xref:System.Windows.Controls.TextBox> uses this *FutureDateRule*, as shown in the following example.
 
-:::code language="xaml" source="./snippets/data-binding-overview/csharp/DataValidation.xaml" id="TextboxStartDate":::
+:::code language="xaml" source="./snippets/index/csharp/DataValidation.xaml" id="TextboxStartDate":::
 
 Because the <xref:System.Windows.Data.Binding.UpdateSourceTrigger%2A> value is <xref:System.Windows.Data.UpdateSourceTrigger.PropertyChanged>, the binding engine updates the source value on every keystroke, which means it also checks every rule in the <xref:System.Windows.Data.Binding.ValidationRules%2A> collection on every keystroke. We discuss this further in the Validation Process section.
 
@@ -405,13 +410,13 @@ Because the <xref:System.Windows.Data.Binding.UpdateSourceTrigger%2A> value is <
 
 If the user enters an invalid value, you may want to provide some feedback about the error on the app UI. One way to provide such feedback is to set the <xref:System.Windows.Controls.Validation.ErrorTemplate%2A?displayProperty=nameWithType> attached property to a custom <xref:System.Windows.Controls.ControlTemplate>. As shown in the previous subsection, the *StartDateEntryForm* <xref:System.Windows.Controls.TextBox> uses an <xref:System.Windows.Controls.Validation.ErrorTemplate%2A> called *validationTemplate*. The following example shows the definition of *validationTemplate*.
 
-:::code language="xaml" source="./snippets/data-binding-overview/csharp/DataValidation.xaml" id="ControlTemplate":::
+:::code language="xaml" source="./snippets/index/csharp/DataValidation.xaml" id="ControlTemplate":::
 
 The <xref:System.Windows.Controls.AdornedElementPlaceholder> element specifies where the control being adorned should be placed.
 
 In addition, you may also use a <xref:System.Windows.Controls.ToolTip> to display the error message. Both the *StartDateEntryForm* and the *StartPriceEntryForm*<xref:System.Windows.Controls.TextBox>es use the style *textStyleTextBox*, which creates a <xref:System.Windows.Controls.ToolTip> that displays the error message. The following example shows the definition of *textStyleTextBox*. The attached property <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> is `true` when one or more of the bindings on the properties of the bound element are in error.
 
-:::code language="xaml" source="./snippets/data-binding-overview/csharp/DataValidation.xaml" id="TextBoxStyle":::
+:::code language="xaml" source="./snippets/index/csharp/DataValidation.xaml" id="TextBoxStyle":::
 
 With the custom <xref:System.Windows.Controls.Validation.ErrorTemplate%2A> and the <xref:System.Windows.Controls.ToolTip>, the *StartDateEntryForm* <xref:System.Windows.Controls.TextBox> looks like the following when there's a validation error.
 
