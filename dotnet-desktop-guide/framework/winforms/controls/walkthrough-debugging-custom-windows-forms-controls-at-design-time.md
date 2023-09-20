@@ -24,7 +24,11 @@ When you create a custom control, you will often find it necessary to debug its 
 You can debug your custom controls using Visual Studio, just as you would debug any other .NET Framework classes. The difference is that you will debug a separate instance of Visual Studio that is running your custom control's code.
 
 > [!IMPORTANT]
-> This article is primarily intended for the classic In-Process Designer for Windows Forms with .NET Framework. The procedures may not be directly applicable or fully compatible with projects that target .NET. Further, Visual Studio 2022 runs on .NET Framework 4.7.2 in a 64-bit environment, which can cause compatibility issues with Out-Of-Process Designers if you target a 32-bit architecture with your .NET applications. For more information about the Out-Of-Process Designer, see [The designer changes since .NET Framework](../../../net/winforms/controls-design/designer-differences-framework.md).
+> This article is primarily intended for the classic In-Process Designer for Windows Forms with .NET Framework. The procedures may not be directly applicable or fully compatible with projects that target .NET (not .NET Framework).
+>
+> For .NET Framework projects, only projects that can compile with the platform target settings _Any_ or _x64_ are fully supported in the Designer. Projects that use ActiveX, COM, or other 32-bit components, may have compatibility issues. The Out-Of_Process Framework Designer, currently in preview, addresses many of those compatibility issues. However, design-time functionality may not work as well as the 64-bit In-Process Designer. To enable the Out-Of-Process Framework Designer, navigate to the **Tools** > **Options** > **Environment** > **Preview Features**.
+>
+> For more information about the Out-Of-Process Designer, see [The designer changes since .NET Framework](../../../net/winforms/controls-design/designer-differences-framework.md).
 
 ## Create the project
 
