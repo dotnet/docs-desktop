@@ -218,7 +218,7 @@ Windows Presentation Foundation (WPF) is designed to save developers from the di
 
  Most interfaces are not built with thread safety in mind because developers work under the assumption that a UI is never accessed by more than one thread. In this case, that single thread may make environmental changes at unexpected times, causing those ill effects that the <xref:System.Windows.Threading.DispatcherObject> mutual exclusion mechanism is supposed to solve. Consider the following pseudocode:
 
- :::image type="content" source="./media/threading-model/threading-reentrancy.png "ThreadingReentrancy"" alt-text="Diagram that shows threading reentrancy.":::
+ :::image type="content" source="./media/threading-model/threading-reentrancy.png" alt-text="Diagram that shows threading reentrancy.":::
 
  Most of the time that’s the right thing, but there are times in WPF where such unexpected reentrancy can really cause problems. So, at certain key times, WPF calls <xref:System.Windows.Threading.Dispatcher.DisableProcessing%2A>, which changes the lock instruction for that thread to use the WPF reentrancy-free lock, instead of the usual CLR lock.
 
