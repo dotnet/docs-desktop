@@ -51,7 +51,7 @@ The following example shows a hexadecimal character reference. Notice that it ha
 
  XAML uses [xml:lang](/dotnet/desktop/xaml-services/xml-language-handling) to represent the language attribute of an element.  To take advantage of the <xref:System.Globalization.CultureInfo> class, the language attribute value needs to be one of the culture names predefined by <xref:System.Globalization.CultureInfo>. [xml:lang](/dotnet/desktop/xaml-services/xml-language-handling) is inheritable in the element tree (by XML rules, not necessarily because of dependency property inheritance) and its default value is an empty string if it is not assigned explicitly.
 
- The language attribute is very useful for specifying dialects. For example, French has different spelling, vocabulary, and pronunciation in France, Quebec, Belgium, and Switzerland. Also Chinese, Japanese, and Korean share code points in Unicode, but the ideographic shapes are different and they use totally different fonts.
+ The language attribute is very useful for specifying regional languages. For example, French has different spelling, vocabulary, and pronunciation in France, Quebec, Belgium, and Switzerland. Also Chinese, Japanese, and Korean share code points in Unicode, but the ideographic shapes are different and they use totally different fonts.
 
  The following Extensible Application Markup Language (XAML) example uses the `fr-CA` language attribute to specify Canadian French.
 
