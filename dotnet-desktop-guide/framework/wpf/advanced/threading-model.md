@@ -62,7 +62,7 @@ Windows Presentation Foundation (WPF) is designed to save developers from the di
 
  Consider the following example:
 
- ![Screenshot that shows threading of prime numbers.](./media/threading-model/threading-prime-numbers.png)
+ :::image type="content" source="./media/threading-model/threading-prime-numbers.png" alt-text="Screenshot that shows threading of prime numbers.":::
 
  This simple application counts upwards from three, searching for prime numbers. When the user clicks the **Start** button, the search begins. When the program finds a prime, it updates the user interface with its discovery. At any point, the user can stop the search.
 
@@ -74,7 +74,7 @@ Windows Presentation Foundation (WPF) is designed to save developers from the di
 
  The best way to split processing time between calculation and event handling is to manage calculation from the <xref:System.Windows.Threading.Dispatcher>. By using the <xref:System.Windows.Threading.Dispatcher.BeginInvoke%2A> method, we can schedule prime number checks in the same queue that UI events are drawn from. In our example, we schedule only a single prime number check at a time. After the prime number check is complete, we schedule the next check immediately. This check proceeds only after pending UI events have been handled.
 
- ![Screenshot that shows the dispatcher queue.](./media/threading-model/threading-dispatcher-queue.png)
+ :::image type="content" source="./media/threading-model/threading-dispatcher-queue.png" alt-text="Screenshot that shows the dispatcher queue.":::
 
  Microsoft Word accomplishes spell checking using this mechanism. Spell checking is done in the background using the idle time of the UI thread. Let's take a look at the code.
 
@@ -111,7 +111,7 @@ Windows Presentation Foundation (WPF) is designed to save developers from the di
 
  In this example, we mimic a remote procedure call that retrieves a weather forecast. We use a separate worker thread to execute this call, and we schedule an update method in the <xref:System.Windows.Threading.Dispatcher> of the UI thread when we’re finished.
 
- ![Screenshot that shows the weather UI.](./media/threading-model/threading-weather-ui.png)
+ :::image type="content" source="./media/threading-model/threading-weather-ui.png" alt-text="Screenshot that shows the weather UI.":::
 
  [!code-csharp[ThreadingWeatherForecast#ThreadingWeatherCodeBehind](~/samples/snippets/csharp/VS_Snippets_Wpf/ThreadingWeatherForecast/CSharp/Window1.xaml.cs#threadingweathercodebehind)]
  [!code-vb[ThreadingWeatherForecast#ThreadingWeatherCodeBehind](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ThreadingWeatherForecast/visualbasic/window1.xaml.vb#threadingweathercodebehind)]
@@ -196,7 +196,7 @@ Windows Presentation Foundation (WPF) is designed to save developers from the di
 
  Sometimes it is not feasible to completely lock up the UI thread. Let’s consider the <xref:System.Windows.MessageBox.Show%2A> method of the <xref:System.Windows.MessageBox> class. <xref:System.Windows.MessageBox.Show%2A> doesn’t return until the user clicks the OK button. It does, however, create a window that must have a message loop in order to be interactive. While we are waiting for the user to click OK, the original application window does not respond to user input. It does, however, continue to process paint messages. The original window redraws itself when covered and revealed.
 
- ![Screenshot that shows a MessageBox with an OK button](./media/threading-model/threading-message-loop.png)
+ :::image type="content" source="./media/threading-model/threading-message-loop.png" alt-text="Screenshot that shows a MessageBox with an OK button":::
 
  Some thread must be in charge of the message box window. WPF could create a new thread just for the message box window, but this thread would be unable to paint the disabled elements in the original window (remember the earlier discussion of mutual exclusion). Instead, WPF uses a nested message processing system. The <xref:System.Windows.Threading.Dispatcher> class includes a special method called <xref:System.Windows.Threading.Dispatcher.PushFrame%2A>, which stores an application’s current execution point then begins a new message loop. When the nested message loop finishes, execution resumes after the original <xref:System.Windows.Threading.Dispatcher.PushFrame%2A> call.
 
@@ -218,7 +218,7 @@ Windows Presentation Foundation (WPF) is designed to save developers from the di
 
  Most interfaces are not built with thread safety in mind because developers work under the assumption that a UI is never accessed by more than one thread. In this case, that single thread may make environmental changes at unexpected times, causing those ill effects that the <xref:System.Windows.Threading.DispatcherObject> mutual exclusion mechanism is supposed to solve. Consider the following pseudocode:
 
- ![Diagram that shows threading reentrancy.](./media/threading-model/threading-reentrancy.png "ThreadingReentrancy")
+ :::image type="content" source="./media/threading-model/threading-reentrancy.png "ThreadingReentrancy"" alt-text="Diagram that shows threading reentrancy.":::
 
  Most of the time that’s the right thing, but there are times in WPF where such unexpected reentrancy can really cause problems. So, at certain key times, WPF calls <xref:System.Windows.Threading.Dispatcher.DisableProcessing%2A>, which changes the lock instruction for that thread to use the WPF reentrancy-free lock, instead of the usual CLR lock.
 
