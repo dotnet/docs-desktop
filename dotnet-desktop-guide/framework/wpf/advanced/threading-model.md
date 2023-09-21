@@ -80,24 +80,24 @@ Windows Presentation Foundation (WPF) is designed to save developers from the di
 
  The following example shows the XAML that creates the user interface.
 
- [!code-xaml[ThreadingPrimeNumbers#ThreadingPrimeNumberXAML](../../../samples/snippets/csharp/VS_Snippets_Wpf/ThreadingPrimeNumbers/CSharp/Window1.xaml#threadingprimenumberxaml)]
+ :::code language="xaml" source="../../../samples/snippets/csharp/VS_Snippets_Wpf/ThreadingPrimeNumbers/CSharp/Window1.xaml" id="threadingprimenumberxaml":::
 
  The following example shows the code-behind.
 
- [!code-csharp[ThreadingPrimeNumbers#ThreadingPrimeNumberCodeBehind](../../../samples/snippets/csharp/VS_Snippets_Wpf/ThreadingPrimeNumbers/CSharp/Window1.xaml.cs#threadingprimenumbercodebehind)]
- [!code-vb[ThreadingPrimeNumbers#ThreadingPrimeNumberCodeBehind](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/ThreadingPrimeNumbers/visualbasic/mainwindow.xaml.vb#threadingprimenumbercodebehind)]
+ :::code language="csharp" source="../../../samples/snippets/csharp/VS_Snippets_Wpf/ThreadingPrimeNumbers/CSharp/Window1.xaml.cs" id="threadingprimenumbercodebehind":::
+ :::code language="vb" source="../../../samples/snippets/visualbasic/VS_Snippets_Wpf/ThreadingPrimeNumbers/visualbasic/mainwindow.xaml.vb" id="threadingprimenumbercodebehind":::
 
  The following example shows the event handler for the <xref:System.Windows.Controls.Button>.
 
- [!code-csharp[ThreadingPrimeNumbers#ThreadingPrimeNumberStartOrStop](../../../samples/snippets/csharp/VS_Snippets_Wpf/ThreadingPrimeNumbers/CSharp/Window1.xaml.cs#threadingprimenumberstartorstop)]
- [!code-vb[ThreadingPrimeNumbers#ThreadingPrimeNumberStartOrStop](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/ThreadingPrimeNumbers/visualbasic/mainwindow.xaml.vb#threadingprimenumberstartorstop)]
+ :::code language="csharp" source="../../../samples/snippets/csharp/VS_Snippets_Wpf/ThreadingPrimeNumbers/CSharp/Window1.xaml.cs" id="threadingprimenumberstartorstop":::
+ :::code language="vb" source="../../../samples/snippets/visualbasic/VS_Snippets_Wpf/ThreadingPrimeNumbers/visualbasic/mainwindow.xaml.vb" id="threadingprimenumberstartorstop":::
 
  Besides updating the text on the <xref:System.Windows.Controls.Button>, this handler is responsible for scheduling the first prime number check by adding a delegate to the <xref:System.Windows.Threading.Dispatcher> queue. Sometime after this event handler has completed its work, the <xref:System.Windows.Threading.Dispatcher> will select this delegate for execution.
 
  As we mentioned earlier, <xref:System.Windows.Threading.Dispatcher.BeginInvoke%2A> is the <xref:System.Windows.Threading.Dispatcher> member used to schedule a delegate for execution. In this case, we choose the <xref:System.Windows.Threading.DispatcherPriority.SystemIdle> priority. The <xref:System.Windows.Threading.Dispatcher> will execute this delegate only when there are no important events to process. UI responsiveness is more important than number checking. We also pass a new delegate representing the number-checking routine.
 
- [!code-csharp[ThreadingPrimeNumbers#ThreadingPrimeNumberCheckNextNumber](../../../samples/snippets/csharp/VS_Snippets_Wpf/ThreadingPrimeNumbers/CSharp/Window1.xaml.cs#threadingprimenumberchecknextnumber)]
- [!code-vb[ThreadingPrimeNumbers#ThreadingPrimeNumberCheckNextNumber](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/ThreadingPrimeNumbers/visualbasic/mainwindow.xaml.vb#threadingprimenumberchecknextnumber)]
+ :::code language="csharp" source="../../../samples/snippets/csharp/VS_Snippets_Wpf/ThreadingPrimeNumbers/CSharp/Window1.xaml.cs" id="threadingprimenumberchecknextnumber":::
+ :::code language="vb" source="../../../samples/snippets/visualbasic/VS_Snippets_Wpf/ThreadingPrimeNumbers/visualbasic/mainwindow.xaml.vb" id="threadingprimenumberchecknextnumber":::
 
  This method checks if the next odd number is prime. If it is prime, the method directly updates the `bigPrime`<xref:System.Windows.Controls.TextBlock> to reflect its discovery. We can do this because the calculation is occurring in the same thread that was used to create the component. Had we chosen to use a separate thread for the calculation, we would have to use a more complicated synchronization mechanism and execute the update in the UI thread. We’ll demonstrate this situation next.
 
@@ -113,22 +113,22 @@ Windows Presentation Foundation (WPF) is designed to save developers from the di
 
  :::image type="content" source="./media/threading-model/threading-weather-ui.png" alt-text="Screenshot that shows the weather UI.":::
 
- [!code-csharp[ThreadingWeatherForecast#ThreadingWeatherCodeBehind](../../../samples/snippets/csharp/VS_Snippets_Wpf/ThreadingWeatherForecast/CSharp/Window1.xaml.cs#threadingweathercodebehind)]
- [!code-vb[ThreadingWeatherForecast#ThreadingWeatherCodeBehind](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/ThreadingWeatherForecast/visualbasic/window1.xaml.vb#threadingweathercodebehind)]
+ :::code language="csharp" source="../../../samples/snippets/csharp/VS_Snippets_Wpf/ThreadingWeatherForecast/CSharp/Window1.xaml.cs" id="threadingweathercodebehind":::
+ :::code language="vb" source="../../../samples/snippets/visualbasic/VS_Snippets_Wpf/ThreadingWeatherForecast/visualbasic/window1.xaml.vb" id="threadingweathercodebehind":::
 
  The following are some of the details to be noted.
 
 - Creating the Button Handler
 
-     [!code-csharp[ThreadingWeatherForecast#ThreadingWeatherButtonHandler](../../../samples/snippets/csharp/VS_Snippets_Wpf/ThreadingWeatherForecast/CSharp/Window1.xaml.cs#threadingweatherbuttonhandler)]
-     [!code-vb[ThreadingWeatherForecast#ThreadingWeatherButtonHandler](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/ThreadingWeatherForecast/visualbasic/window1.xaml.vb#threadingweatherbuttonhandler)]
+     :::code language="csharp" source="../../../samples/snippets/csharp/VS_Snippets_Wpf/ThreadingWeatherForecast/CSharp/Window1.xaml.cs" id="threadingweatherbuttonhandler":::
+     :::code language="vb" source="../../../samples/snippets/visualbasic/VS_Snippets_Wpf/ThreadingWeatherForecast/visualbasic/window1.xaml.vb" id="threadingweatherbuttonhandler":::
 
  When the button is clicked, we display the clock drawing and start animating it. We disable the button. We invoke the `FetchWeatherFromServer` method in a new thread, and then we return, allowing the <xref:System.Windows.Threading.Dispatcher> to process events while we wait to collect the weather forecast.
 
 - Fetching the Weather
 
-     [!code-csharp[ThreadingWeatherForecast#ThreadingWeatherFetchWeather](../../../samples/snippets/csharp/VS_Snippets_Wpf/ThreadingWeatherForecast/CSharp/Window1.xaml.cs#threadingweatherfetchweather)]
-     [!code-vb[ThreadingWeatherForecast#ThreadingWeatherFetchWeather](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/ThreadingWeatherForecast/visualbasic/window1.xaml.vb#threadingweatherfetchweather)]
+     :::code language="csharp" source="../../../samples/snippets/csharp/VS_Snippets_Wpf/ThreadingWeatherForecast/CSharp/Window1.xaml.cs" id="threadingweatherfetchweather":::
+     :::code language="vb" source="../../../samples/snippets/visualbasic/VS_Snippets_Wpf/ThreadingWeatherForecast/visualbasic/window1.xaml.vb" id="threadingweatherfetchweather":::
 
  To keep things simple, we don’t actually have any networking code in this example. Instead, we simulate the delay of network access by putting our new thread to sleep for four seconds. In this time, the original UI thread is still running and responding to events. To show this, we’ve left an animation running, and the minimize and maximize buttons also continue to work.
 
@@ -136,8 +136,8 @@ Windows Presentation Foundation (WPF) is designed to save developers from the di
 
 - Updating the UI
 
-     [!code-csharp[ThreadingWeatherForecast#ThreadingWeatherUpdateUI](../../../samples/snippets/csharp/VS_Snippets_Wpf/ThreadingWeatherForecast/CSharp/Window1.xaml.cs#threadingweatherupdateui)]
-     [!code-vb[ThreadingWeatherForecast#ThreadingWeatherUpdateUI](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/ThreadingWeatherForecast/visualbasic/window1.xaml.vb#threadingweatherupdateui)]
+     :::code language="csharp" source="../../../samples/snippets/csharp/VS_Snippets_Wpf/ThreadingWeatherForecast/CSharp/Window1.xaml.cs" id="threadingweatherupdateui":::
+     :::code language="vb" source="../../../samples/snippets/visualbasic/VS_Snippets_Wpf/ThreadingWeatherForecast/visualbasic/window1.xaml.vb" id="threadingweatherupdateui":::
 
  When the <xref:System.Windows.Threading.Dispatcher> in the UI thread has time, it executes the scheduled call to `UpdateUserInterface`. This method stops the clock animation and chooses an image to describe the weather. It displays this image and restores the "fetch forecast" button.
 
@@ -155,20 +155,20 @@ Windows Presentation Foundation (WPF) is designed to save developers from the di
 
  The following example shows the code.
 
- [!code-xaml[ThreadingMultipleBrowsers#ThreadingMultiBrowserXAML](../../../samples/snippets/csharp/VS_Snippets_Wpf/ThreadingMultipleBrowsers/CSharp/Window1.xaml#threadingmultibrowserxaml)]
+ :::code language="xaml" source="../../../samples/snippets/csharp/VS_Snippets_Wpf/ThreadingMultipleBrowsers/CSharp/Window1.xaml" id="threadingmultibrowserxaml":::
 
- [!code-csharp[ThreadingMultipleBrowsers#ThreadingMultiBrowserCodeBehind](../../../samples/snippets/csharp/VS_Snippets_Wpf/ThreadingMultipleBrowsers/CSharp/Window1.xaml.cs#threadingmultibrowsercodebehind)]
- [!code-vb[ThreadingMultipleBrowsers#ThreadingMultiBrowserCodeBehind](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/ThreadingMultipleBrowsers/VisualBasic/Window1.xaml.vb#threadingmultibrowsercodebehind)]
+ :::code language="csharp" source="../../../samples/snippets/csharp/VS_Snippets_Wpf/ThreadingMultipleBrowsers/CSharp/Window1.xaml.cs" id="threadingmultibrowsercodebehind":::
+ :::code language="vb" source="../../../samples/snippets/visualbasic/VS_Snippets_Wpf/ThreadingMultipleBrowsers/VisualBasic/Window1.xaml.vb" id="threadingmultibrowsercodebehind":::
 
  The following threading segments of this code are the most interesting to us in this context:
 
- [!code-csharp[ThreadingMultipleBrowsers#ThreadingMultiBrowserNewWindow](../../../samples/snippets/csharp/VS_Snippets_Wpf/ThreadingMultipleBrowsers/CSharp/Window1.xaml.cs#threadingmultibrowsernewwindow)]
- [!code-vb[ThreadingMultipleBrowsers#ThreadingMultiBrowserNewWindow](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/ThreadingMultipleBrowsers/VisualBasic/Window1.xaml.vb#threadingmultibrowsernewwindow)]
+ :::code language="csharp" source="../../../samples/snippets/csharp/VS_Snippets_Wpf/ThreadingMultipleBrowsers/CSharp/Window1.xaml.cs" id="threadingmultibrowsernewwindow":::
+ :::code language="vb" source="../../../samples/snippets/visualbasic/VS_Snippets_Wpf/ThreadingMultipleBrowsers/VisualBasic/Window1.xaml.vb" id="threadingmultibrowsernewwindow":::
 
  This method is called when the "new window" button is clicked. It creates a new thread and starts it asynchronously.
 
- [!code-csharp[ThreadingMultipleBrowsers#ThreadingMultiBrowserThreadStart](../../../samples/snippets/csharp/VS_Snippets_Wpf/ThreadingMultipleBrowsers/CSharp/Window1.xaml.cs#threadingmultibrowserthreadstart)]
- [!code-vb[ThreadingMultipleBrowsers#ThreadingMultiBrowserThreadStart](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/ThreadingMultipleBrowsers/VisualBasic/Window1.xaml.vb#threadingmultibrowserthreadstart)]
+ :::code language="csharp" source="../../../samples/snippets/csharp/VS_Snippets_Wpf/ThreadingMultipleBrowsers/CSharp/Window1.xaml.cs" id="threadingmultibrowserthreadstart":::
+ :::code language="vb" source="../../../samples/snippets/visualbasic/VS_Snippets_Wpf/ThreadingMultipleBrowsers/VisualBasic/Window1.xaml.vb" id="threadingmultibrowserthreadstart":::
 
  This method is the starting point for the new thread. We create a new window under the control of this thread. WPF automatically creates a new <xref:System.Windows.Threading.Dispatcher> to manage the new thread. All we have to do to make the window functional is to start the <xref:System.Windows.Threading.Dispatcher>.
 
@@ -180,8 +180,8 @@ Windows Presentation Foundation (WPF) is designed to save developers from the di
 
  The Microsoft .NET Framework Developer's Guide describes a pattern for how a component can expose asynchronous behavior to its clients (see [Event-based Asynchronous Pattern Overview](/dotnet/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview)). For instance, suppose we wanted to package the `FetchWeatherFromServer` method into a reusable, nongraphical component. Following the standard Microsoft .NET Framework pattern, this would look something like the following.
 
- [!code-csharp[CommandingOverviewSnippets#ThreadingArticleWeatherComponent1](../../../samples/snippets/csharp/VS_Snippets_Wpf/CommandingOverviewSnippets/CSharp/Window1.xaml.cs#threadingarticleweathercomponent1)]
- [!code-vb[CommandingOverviewSnippets#ThreadingArticleWeatherComponent1](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/CommandingOverviewSnippets/visualbasic/window1.xaml.vb#threadingarticleweathercomponent1)]
+ :::code language="csharp" source="../../../samples/snippets/csharp/VS_Snippets_Wpf/CommandingOverviewSnippets/CSharp/Window1.xaml.cs" id="threadingarticleweathercomponent1":::
+ :::code language="vb" source="../../../samples/snippets/visualbasic/VS_Snippets_Wpf/CommandingOverviewSnippets/visualbasic/window1.xaml.vb" id="threadingarticleweathercomponent1":::
 
  `GetWeatherAsync` would use one of the techniques described earlier, such as creating a background thread, to do the work asynchronously, not blocking the calling thread.
 
@@ -189,8 +189,8 @@ Windows Presentation Foundation (WPF) is designed to save developers from the di
 
  The <xref:System.Windows.Threading.DispatcherSynchronizationContext> class addresses this need—think of it as a simplified version of <xref:System.Windows.Threading.Dispatcher> that works with other UI frameworks as well.
 
- [!code-csharp[CommandingOverviewSnippets#ThreadingArticleWeatherComponent2](../../../samples/snippets/csharp/VS_Snippets_Wpf/CommandingOverviewSnippets/CSharp/Window1.xaml.cs#threadingarticleweathercomponent2)]
- [!code-vb[CommandingOverviewSnippets#ThreadingArticleWeatherComponent2](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/CommandingOverviewSnippets/visualbasic/window1.xaml.vb#threadingarticleweathercomponent2)]
+ :::code language="csharp" source="../../../samples/snippets/csharp/VS_Snippets_Wpf/CommandingOverviewSnippets/CSharp/Window1.xaml.cs" id="threadingarticleweathercomponent2":::
+ :::code language="vb" source="../../../samples/snippets/visualbasic/VS_Snippets_Wpf/CommandingOverviewSnippets/visualbasic/window1.xaml.vb" id="threadingarticleweathercomponent2":::
 
 ### Nested Pumping
 
@@ -206,7 +206,7 @@ Windows Presentation Foundation (WPF) is designed to save developers from the di
 
  The routed event system in WPF notifies entire trees when events are raised.
 
- [!code-xaml[InputOvw#ThreadingArticleStaticRoutedEvent](../../../samples/snippets/csharp/VS_Snippets_Wpf/InputOvw/CSharp/Page1.xaml#threadingarticlestaticroutedevent)]
+ :::code language="xaml" source="../../../samples/snippets/csharp/VS_Snippets_Wpf/InputOvw/CSharp/Page1.xaml" id="threadingarticlestaticroutedevent":::
 
  When the left mouse button is pressed over the ellipse, `handler2` is executed. After `handler2` finishes, the event is passed along to the <xref:System.Windows.Controls.Canvas> object, which uses `handler1` to process it. This happens only if `handler2` does not explicitly mark the event object as handled.
 
