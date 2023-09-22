@@ -21,7 +21,7 @@ helpviewer_keywords:
   - "reentrancy [WPF]"
 ms.assetid: 02d8fd00-8d7c-4604-874c-58e40786770b
 ---
-# Threading Model
+# Threading model
 
 Windows Presentation Foundation (WPF) is designed to save developers from the difficulties of threading. As a result, the majority of WPF developers won't have to write an interface that uses more than one thread. Because multithreaded programs are complex and difficult to debug, they should be avoided when single-threaded solutions exist.
 
@@ -34,7 +34,7 @@ Windows Presentation Foundation (WPF) is designed to save developers from the di
 
 <a name="threading_overview"></a>
 
-## Overview and the Dispatcher
+## Overview and the dispatcher
 
  Typically, WPF applications start with two threads: one for handling rendering and another for managing the UI. The rendering thread effectively runs hidden in the background while the UI thread receives input, handles events, paints the screen, and runs application code. Most applications use a single UI thread, although in some situations it is best to use several. We’ll discuss this with an example later.
 
@@ -50,15 +50,13 @@ Windows Presentation Foundation (WPF) is designed to save developers from the di
 
  If only one thread can modify the UI, how do background threads interact with the user? A background thread can ask the UI thread to perform an operation on its behalf. It does this by registering a work item with the <xref:System.Windows.Threading.Dispatcher> of the UI thread. The <xref:System.Windows.Threading.Dispatcher> class provides thre methods for registering work items: <xref:System.Windows.Threading.Dispatcher.InvokeAsync%2A>, <xref:System.Windows.Threading.Dispatcher.BeginInvoke%2A>, and <xref:System.Windows.Threading.Dispatcher.Invoke%2A>. These methods schedule a delegate for execution. <xref:System.Windows.Threading.Dispatcher.Invoke%2A> is a synchronous call – that is, it doesn’t return until the UI thread actually finishes executing the delegate. <xref:System.Windows.Threading.Dispatcher.InvokeAsync%2A> and <xref:System.Windows.Threading.Dispatcher.BeginInvoke%2A> are asynchronous and return immediately.
 
- The <xref:System.Windows.Threading.Dispatcher> orders the elements in its queue by priority. There are ten levels that may be specified when adding an element to the <xref:System.Windows.Threading.Dispatcher> queue. These priorities are maintained in the <xref:System.Windows.Threading.DispatcherPriority> enumeration. Detailed information about <xref:System.Windows.Threading.DispatcherPriority> levels can be found in the Windows SDK documentation.
+ The <xref:System.Windows.Threading.Dispatcher> orders the elements in its queue by priority. There are ten levels that may be specified when adding an element to the <xref:System.Windows.Threading.Dispatcher> queue. These priorities are maintained in the <xref:System.Windows.Threading.DispatcherPriority> enumeration.
 
 <a name="samples"></a>
 
-## Threads in Action: The Samples
-
 <a name="prime_number"></a>
 
-### A Single-Threaded Application with a Long-Running Calculation
+## Single-threaded app with a long-running calculation
 
  Most graphical user interfaces (GUIs) spend a large portion of their time idle while waiting for events that are generated in response to user interactions. With careful programming this idle time can be used constructively, without affecting the responsiveness of the UI. The WPF threading model doesn’t allow input to interrupt an operation happening in the UI thread. This means you must be sure to return to the <xref:System.Windows.Threading.Dispatcher> periodically to process pending input events before they get stale.
 
@@ -94,10 +92,7 @@ Windows Presentation Foundation (WPF) is designed to save developers from the di
 
  The following example shows the event handler for the <xref:System.Windows.Controls.Button>.
 
- :::code language="csharp" source="../../../samples/snippets/csharp/VS_Snippets_Wpf/ThreadingPrimeNumbers/CSharp/Window1.xaml.cs" id="threadingprimenumberstartorstop":::
- :::code language="vb" source="../../../samples/snippets/visualbasic/VS_Snippets_Wpf/ThreadingPrimeNumbers/visualbasic/mainwindow.xaml.vb" id="threadingprimenumberstartorstop":::
-
- Besides updating the text on the <xref:System.Windows.Controls.Button>, this handler is responsible for scheduling the first prime number check by adding a delegate to the <xref:System.Windows.Threading.Dispatcher> queue. Sometime after this event handler has completed its work, the <xref:System.Windows.Threading.Dispatcher> will select this delegate for execution.
+ Besides updating the text on the <xref:System.Windows.Controls.Button>, the `StartStopButton_Click` handler is responsible for scheduling the first prime number check by adding a delegate to the <xref:System.Windows.Threading.Dispatcher> queue. Sometime after this event handler has completed its work, the <xref:System.Windows.Threading.Dispatcher> will select the delegate for execution.
 
  As we mentioned earlier, <xref:System.Windows.Threading.Dispatcher.InvokeAsync%2A> is the <xref:System.Windows.Threading.Dispatcher> member used to schedule a delegate for execution. In this case, we choose the <xref:System.Windows.Threading.DispatcherPriority.SystemIdle> priority. The <xref:System.Windows.Threading.Dispatcher> will execute this delegate only when there are no important events to process. UI responsiveness is more important than number checking. We also pass a new delegate representing the number-checking routine.
 
@@ -110,7 +105,7 @@ Windows Presentation Foundation (WPF) is designed to save developers from the di
 
 <a name="weather_sim"></a>
 
-### Handling a Blocking Operation with a Background Thread
+## Handle a blocking operation with a background thread
 
  Handling blocking operations in a graphical application can be difficult. We don’t want to call blocking methods from event handlers because the application will appear to freeze up. We can use a separate thread to handle these operations, but when we’re done, we have to synchronize with the UI thread because we can’t directly modify the GUI from our worker thread. We can use <xref:System.Windows.Threading.Dispatcher.InvokeAsync%2A>, <xref:System.Windows.Threading.Dispatcher.BeginInvoke%2A>, or <xref:System.Windows.Threading.Dispatcher.Invoke%2A>, to insert delegates into the <xref:System.Windows.Threading.Dispatcher> of the UI thread. Eventually, these delegates will be executed with permission to modify UI elements.
 
@@ -148,7 +143,7 @@ Windows Presentation Foundation (WPF) is designed to save developers from the di
 
 <a name="multi_browser"></a>
 
-### Multiple Windows, Multiple Threads
+## Multiple windows, multiple threads
 
  Some WPF applications require multiple top-level windows. It is perfectly acceptable for one Thread/<xref:System.Windows.Threading.Dispatcher> combination to manage multiple windows, but sometimes several threads do a better job. This is especially true if there is any chance that one of the windows will monopolize the thread.
 
@@ -179,9 +174,11 @@ Windows Presentation Foundation (WPF) is designed to save developers from the di
 
 <a name="stumbling_points"></a>
 
-## Technical Details and Stumbling Points
+## Technical details and stumbling points
 
-### Writing Components Using Threading
+The following sections describe some of the details ahd stumbling points you may come across with multithreading.
+
+### Writing components using threading
 
  The Microsoft .NET Framework Developer's Guide describes a pattern for how a component can expose asynchronous behavior to its clients (see [Event-based Asynchronous Pattern Overview](/dotnet/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview)). For instance, suppose we wanted to package the `FetchWeatherFromServer` method into a reusable, nongraphical component. Following the standard Microsoft .NET Framework pattern, this would look something like the following.
 
@@ -197,7 +194,7 @@ Windows Presentation Foundation (WPF) is designed to save developers from the di
  :::code language="csharp" source="../../../samples/snippets/csharp/VS_Snippets_Wpf/CommandingOverviewSnippets/CSharp/Window1.xaml.cs" id="threadingarticleweathercomponent2":::
  :::code language="vb" source="../../../samples/snippets/visualbasic/VS_Snippets_Wpf/CommandingOverviewSnippets/visualbasic/window1.xaml.vb" id="threadingarticleweathercomponent2":::
 
-### Nested Pumping
+### Nested pumping
 
  Sometimes it is not feasible to completely lock up the UI thread. Let’s consider the <xref:System.Windows.MessageBox.Show%2A> method of the <xref:System.Windows.MessageBox> class. <xref:System.Windows.MessageBox.Show%2A> doesn’t return until the user clicks the OK button. It does, however, create a window that must have a message loop in order to be interactive. While we are waiting for the user to click OK, the original application window does not respond to user input. It does, however, continue to process paint messages. The original window redraws itself when covered and revealed.
 
@@ -207,7 +204,7 @@ Windows Presentation Foundation (WPF) is designed to save developers from the di
 
  In this case, <xref:System.Windows.Threading.Dispatcher.PushFrame%2A> maintains the program context at the call to <xref:System.Windows.MessageBox.Show%2A?displayProperty=nameWithType>, and it starts a new message loop to repaint the background window and handle input to the message box window. When the user clicks OK and clears the pop-up window, the nested loop exits and control resumes after the call to <xref:System.Windows.MessageBox.Show%2A>.
 
-### Stale Routed Events
+### Stale routed events
 
  The routed event system in WPF notifies entire trees when events are raised.
 
@@ -217,7 +214,7 @@ Windows Presentation Foundation (WPF) is designed to save developers from the di
 
  It’s possible that `handler2` will take a great deal of time processing this event. `handler2` might use <xref:System.Windows.Threading.Dispatcher.PushFrame%2A> to begin a nested message loop that doesn’t return for hours. If `handler2` does not mark the event as handled when this message loop is complete, the event is passed up the tree even though it is very old.
 
-### Reentrancy and Locking
+### Reentrancy and locking
 
  The locking mechanism of the common language runtime (CLR) doesn’t behave exactly as one might imagine; one might expect a thread to cease operation completely when requesting a lock. In actuality, the thread continues to receive and process high-priority messages. This helps prevent deadlocks and make interfaces minimally responsive, but it introduces the possibility for subtle bugs.  The vast majority of the time you don’t need to know anything about this, but under rare circumstances (usually involving Win32 window messages or COM STA components) this can be worth knowing.
 
