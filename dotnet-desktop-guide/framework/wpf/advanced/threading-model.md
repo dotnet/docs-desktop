@@ -60,6 +60,8 @@ Windows Presentation Foundation (WPF) is designed to save developers from the di
 
  Most graphical user interfaces (GUIs) spend a large portion of their time idle while waiting for events that are generated in response to user interactions. With careful programming this idle time can be used constructively, without affecting the responsiveness of the UI. The WPF threading model doesn’t allow input to interrupt an operation happening in the UI thread. This means you must be sure to return to the <xref:System.Windows.Threading.Dispatcher> periodically to process pending input events before they get stale.
 
+ A sample app demonstrating the concepts of this section can be downloaded from GitHub for either [C#](https://github.com/dotnet/samples/tree/main/wpf/Threading/PrimeNumber/net48/csharp) or [Visual Basic](https://github.com/dotnet/samples/tree/main/wpf/Threading/PrimeNumber/net48/vb).
+
  Consider the following example:
 
  :::image type="content" source="./media/threading-model/threading-prime-numbers.png" alt-text="Screenshot that shows threading of prime numbers.":::
@@ -90,18 +92,14 @@ Windows Presentation Foundation (WPF) is designed to save developers from the di
  :::code language="csharp" source="./snippets/threading-model/csharp/PrimeNumber.xaml.cs":::
  :::code language="vb" source="./snippets/threading-model/vb/PrimeNumber.xaml.vb":::
 
- The following example shows the event handler for the <xref:System.Windows.Controls.Button>.
-
  Besides updating the text on the <xref:System.Windows.Controls.Button>, the `StartStopButton_Click` handler is responsible for scheduling the first prime number check by adding a delegate to the <xref:System.Windows.Threading.Dispatcher> queue. Sometime after this event handler has completed its work, the <xref:System.Windows.Threading.Dispatcher> will select the delegate for execution.
 
  As we mentioned earlier, <xref:System.Windows.Threading.Dispatcher.InvokeAsync%2A> is the <xref:System.Windows.Threading.Dispatcher> member used to schedule a delegate for execution. In this case, we choose the <xref:System.Windows.Threading.DispatcherPriority.SystemIdle> priority. The <xref:System.Windows.Threading.Dispatcher> will execute this delegate only when there are no important events to process. UI responsiveness is more important than number checking. We also pass a new delegate representing the number-checking routine.
 
- :::code language="csharp" source="../../../samples/snippets/csharp/VS_Snippets_Wpf/ThreadingPrimeNumbers/CSharp/Window1.xaml.cs" id="threadingprimenumberchecknextnumber":::
- :::code language="vb" source="../../../samples/snippets/visualbasic/VS_Snippets_Wpf/ThreadingPrimeNumbers/visualbasic/mainwindow.xaml.vb" id="threadingprimenumberchecknextnumber":::
+ :::code language="csharp" source="./snippets/threading-model/csharp/PrimeNumber.xaml.cs" id="check_number":::
+ :::code language="vb" source="./snippets/threading-model/vb/PrimeNumber.xaml.vb" id="check_number":::
 
- This method checks if the next odd number is prime. If it is prime, the method directly updates the `bigPrime`<xref:System.Windows.Controls.TextBlock> to reflect its discovery. We can do this because the calculation is occurring in the same thread that was used to create the component. Had we chosen to use a separate thread for the calculation, we would have to use a more complicated synchronization mechanism and execute the update in the UI thread. We’ll demonstrate this situation next.
-
- For the complete source code for this sample, see the [Single-Threaded Application with Long-Running Calculation Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Threading/SingleThreadedApplication)
+ This method checks if the next odd number is prime. If it is prime, the method directly updates the `bigPrime` <xref:System.Windows.Controls.TextBlock> to reflect its discovery. We can do this because the calculation is occurring in the same thread that was used to create the control. Had we chosen to use a separate thread for the calculation, we would have to use a more complicated synchronization mechanism and execute the update in the UI thread. We’ll demonstrate this situation next.
 
 <a name="weather_sim"></a>
 
@@ -109,37 +107,49 @@ Windows Presentation Foundation (WPF) is designed to save developers from the di
 
  Handling blocking operations in a graphical application can be difficult. We don’t want to call blocking methods from event handlers because the application will appear to freeze up. We can use a separate thread to handle these operations, but when we’re done, we have to synchronize with the UI thread because we can’t directly modify the GUI from our worker thread. We can use <xref:System.Windows.Threading.Dispatcher.InvokeAsync%2A>, <xref:System.Windows.Threading.Dispatcher.BeginInvoke%2A>, or <xref:System.Windows.Threading.Dispatcher.Invoke%2A>, to insert delegates into the <xref:System.Windows.Threading.Dispatcher> of the UI thread. Eventually, these delegates will be executed with permission to modify UI elements.
 
- In this example, we mimic a remote procedure call that retrieves a weather forecast. We use a separate worker thread to execute this call, and we schedule an update method in the <xref:System.Windows.Threading.Dispatcher> of the UI thread when we’re finished.
+In this example, we mimic a remote procedure call that retrieves a weather forecast. When the button is clicked, the UI is updated normally to indicate that the data fetch is in progress. A separate worker thread is used to mimic fetching the weather forecast. When the "data" is returned, a the <xref:System.Windows.Threading.Dispatcher> is used to schedule an update to the UI with the weather information.
 
- :::image type="content" source="./media/threading-model/threading-weather-ui.png" alt-text="Screenshot that shows the weather UI.":::
+:::image type="complex" source="./media/threading-model/threading-weather-ui.png":::
 
- :::code language="csharp" source="../../../samples/snippets/csharp/VS_Snippets_Wpf/ThreadingWeatherForecast/CSharp/Window1.xaml.cs" id="threadingweathercodebehind":::
- :::code language="vb" source="../../../samples/snippets/visualbasic/VS_Snippets_Wpf/ThreadingWeatherForecast/visualbasic/window1.xaml.vb" id="threadingweathercodebehind":::
+A diagram demonstrating the example app's workflow. The app has a single button with the text "Fetch Forecast." There's an arrow pointing to the next phase of the app after the button is pressed, which is a clock image placed in the center of the app indicating that the app is busy fetching data. After some time, the app returns with either an image of the sun or of rain clouds, depending on the result of the data.
+
+:::image-end:::
+
+A sample app demonstrating the concepts of this section can be downloaded from GitHub for either [C#](https://github.com/dotnet/samples/tree/main/wpf/Threading/WeatherForecast/net48/csharp) or [Visual Basic](https://github.com/dotnet/samples/tree/main/wpf/Threading/WeatherForecast/net48/vb).
+
+Consider the code-behind to the XAML:
+
+:::code language="csharp" source="./snippets/threading-model/csharp/Weather.xaml.cs":::
+:::code language="vb" source="./snippets/threading-model/vb/Weather.xaml.vb":::
 
  The following are some of the details to be noted.
 
 - Creating the Button Handler
 
-     :::code language="csharp" source="../../../samples/snippets/csharp/VS_Snippets_Wpf/ThreadingWeatherForecast/CSharp/Window1.xaml.cs" id="threadingweatherbuttonhandler":::
-     :::code language="vb" source="../../../samples/snippets/visualbasic/VS_Snippets_Wpf/ThreadingWeatherForecast/visualbasic/window1.xaml.vb" id="threadingweatherbuttonhandler":::
+  :::code language="csharp" source="./snippets/threading-model/csharp/Weather.xaml.cs" id="button" highlight="1,10":::
+  :::code language="vb" source="./snippets/threading-model/vb/Weather.xaml.vb" id="button" highlight="1,10":::
 
- When the button is clicked, we display the clock drawing and start animating it. We disable the button. We invoke the `FetchWeatherFromServer` method in a new thread, and then we return, allowing the <xref:System.Windows.Threading.Dispatcher> to process events while we wait to collect the weather forecast.
+  Notice that the event handler was declared as `async` (or `Async` with Visual Basic). An async method suspends the code when the awaited method, `FetchWeatherFromServer` is called, designated by the `await` (or `Await` with Visual Basic) keyword. Until the `FetchWeatherFromServer` finishes, the button's handler code returns control to the caller of the async method. This is similar to a synchronous method except that a synchronous method waits for every operation in the method to finish after which control is returned to the caller.
+
+  Awaited methods utilize the threading context of the current method, which in the case of the button handler, is the UI thread. This means that calling `await FetchWeatherFromServer();` (Or `Await FetchWeatherFromServer()` with Visual Basic) causes the code in `FetchWeatherFromServer` to run on the UI thread. However, notice that `await Task.Run...` is used. This creates a new thread on the thread pool for the designated task, `FetchWeatherFromServer`, so it's not running in the UI thread but on its own thread.
 
 - Fetching the Weather
 
-     :::code language="csharp" source="../../../samples/snippets/csharp/VS_Snippets_Wpf/ThreadingWeatherForecast/CSharp/Window1.xaml.cs" id="threadingweatherfetchweather":::
-     :::code language="vb" source="../../../samples/snippets/visualbasic/VS_Snippets_Wpf/ThreadingWeatherForecast/visualbasic/window1.xaml.vb" id="threadingweatherfetchweather":::
+  :::code language="csharp" source="./snippets/threading-model/csharp/Weather.xaml.cs" id="fetch_weather":::
+  :::code language="vb" source="./snippets/threading-model/vb/Weather.xaml.vb" id="fetch_weather":::
 
- To keep things simple, we don’t actually have any networking code in this example. Instead, we simulate the delay of network access by putting our new thread to sleep for four seconds. In this time, the original UI thread is still running and responding to events. To show this, we’ve left an animation running, and the minimize and maximize buttons also continue to work.
+  To keep things simple, we don’t actually have any networking code in this example. Instead, we simulate the delay of network access by putting our new thread to sleep for four seconds. In this time, the original UI thread is still running and responding to events, all the while the button's event handler is paused until this thread completes. To show this, we’ve left an animation running, and the minimize and maximize buttons also continue to work.
 
- When the delay is finished, and we’ve randomly selected our weather forecast, it’s time to report back to the UI thread. We do this by scheduling a call to `UpdateUserInterface` in the UI thread using that thread’s <xref:System.Windows.Threading.Dispatcher>. We pass a string describing the weather to this scheduled method call.
+  When the delay is finished, and we’ve randomly selected our weather forecast, and the weather stauts is returned to the caller, which is running on the UI thread.
 
 - Updating the UI
 
-     :::code language="csharp" source="../../../samples/snippets/csharp/VS_Snippets_Wpf/ThreadingWeatherForecast/CSharp/Window1.xaml.cs" id="threadingweatherupdateui":::
-     :::code language="vb" source="../../../samples/snippets/visualbasic/VS_Snippets_Wpf/ThreadingWeatherForecast/visualbasic/window1.xaml.vb" id="threadingweatherupdateui":::
+  :::code language="csharp" source="./snippets/threading-model/csharp/Weather.xaml.cs" id="button" highlight="14-27":::
+  :::code language="vb" source="./snippets/threading-model/vb/Weather.xaml.vb" id="button" highlight="14-30":::
 
- When the <xref:System.Windows.Threading.Dispatcher> in the UI thread has time, it executes the scheduled call to `UpdateUserInterface`. This method stops the clock animation and chooses an image to describe the weather. It displays this image and restores the "fetch forecast" button.
+ When the task finishes and the UI thread has time, the button's event handler is resumed. The rest of the method stops the clock animation and chooses an image to describe the weather. It displays this image and enables the "fetch forecast" button.
+
+ For the complete source code for this sample, see the [](https://github.com/Microsoft/WPF-Samples/tree/master/Threading/SingleThreadedApplication)
 
 <a name="multi_browser"></a>
 
