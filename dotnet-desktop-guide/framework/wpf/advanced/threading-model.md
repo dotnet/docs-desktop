@@ -109,7 +109,7 @@ Windows Presentation Foundation (WPF) is designed to save developers from the di
 
 In this example, we mimic a remote procedure call that retrieves a weather forecast. When the button is clicked, the UI is updated normally to indicate that the data fetch is in progress. A separate worker thread is used to mimic fetching the weather forecast. When the "data" is returned, a the <xref:System.Windows.Threading.Dispatcher> is used to schedule an update to the UI with the weather information.
 
-:::image type="complex" source="./media/threading-model/threading-weather-ui.png":::
+:::image type="complex" source="./media/threading-model/threading-weather-ui.png" alt-text="A diagram that demonstrates the workflow of the example app.":::
 
 A diagram demonstrating the example app's workflow. The app has a single button with the text "Fetch Forecast." There's an arrow pointing to the next phase of the app after the button is pressed, which is a clock image placed in the center of the app indicating that the app is busy fetching data. After some time, the app returns with either an image of the sun or of rain clouds, depending on the result of the data.
 
