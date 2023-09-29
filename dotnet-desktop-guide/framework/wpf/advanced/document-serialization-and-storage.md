@@ -1,9 +1,9 @@
 ---
 title: "Document Serialization and Storage"
-description: Learn how documents are serialized, deserialized, and stored in Windows Presentation Foundation (WPF). 
+description: Learn how documents are serialized, deserialized, and stored in Windows Presentation Foundation (WPF).
 ms.date: "03/30/2017"
 helpviewer_keywords:
-  - "serialization of documents [WPF], , "
+  - "serialization of documents [WPF]"
   - "documents [WPF], storage"
   - "documents [WPF], serialization"
 ms.assetid: 4839cd87-e206-4571-803f-0200098ad37b
@@ -83,4 +83,4 @@ Both plug-in serializers and linked serializers use the same exposed public meth
 - <xref:System.Windows.Xps.Packaging.XpsDocument>
 - [Documents in WPF](documents-in-wpf.md)
 - [Printing Overview](printing-overview.md)
-- [XML Paper Specification](https://www.ecma-international.org/activities/XML%20Paper%20Specification/XPS%20Standard%20WD%201.6.pdf)
+- [XML Paper Specification](https://www.ecma-international.org/publications-and-standards/standards/ecma-388/)
