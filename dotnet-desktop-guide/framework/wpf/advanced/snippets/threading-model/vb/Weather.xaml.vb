@@ -1,4 +1,5 @@
-﻿Imports System.Windows.Media.Animation
+﻿'<full>
+Imports System.Windows.Media.Animation
 
 Public Class Weather
 
@@ -61,3 +62,4 @@ Public Class Weather
         DirectCast(Resources("ShowClockFaceStoryboard"), Storyboard).Begin(ClockImage, True)
     End Sub
 End Class
+'</full>

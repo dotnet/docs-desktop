@@ -1,4 +1,5 @@
-﻿using System;
+﻿//<full>
+using System;
 using System.Windows;
 using System.Windows.Threading;
 
@@ -57,3 +58,4 @@ namespace SDKSamples
         //</check_number>
     }
 }
+//</full>

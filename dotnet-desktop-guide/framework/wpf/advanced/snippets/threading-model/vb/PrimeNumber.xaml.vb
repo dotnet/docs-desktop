@@ -1,4 +1,5 @@
-﻿Imports System.Windows.Threading
+﻿'<full>
+Imports System.Windows.Threading
 
 Public Class PrimeNumber
     ' Current number to check
@@ -47,3 +48,4 @@ Public Class PrimeNumber
     Private _isPrime As Boolean
     '</check_number>
 End Class
+'</full>

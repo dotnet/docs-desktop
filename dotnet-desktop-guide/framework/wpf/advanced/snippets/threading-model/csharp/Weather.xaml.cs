@@ -1,4 +1,5 @@
-﻿using System;
+﻿//<full>
+using System;
 using System.Windows;
 using System.Windows.Media;
 using System.Windows.Media.Animation;
@@ -66,3 +67,4 @@ namespace SDKSamples
             ((Storyboard)Resources["ShowClockFaceStoryboard"]).Begin(ClockImage, true);
     }
 }
+//</full>

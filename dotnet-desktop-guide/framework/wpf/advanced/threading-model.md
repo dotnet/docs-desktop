@@ -89,8 +89,8 @@ Windows Presentation Foundation (WPF) is designed to save developers from the di
 
  The following example shows the code-behind.
 
- :::code language="csharp" source="./snippets/threading-model/csharp/PrimeNumber.xaml.cs":::
- :::code language="vb" source="./snippets/threading-model/vb/PrimeNumber.xaml.vb":::
+ :::code language="csharp" source="./snippets/threading-model/csharp/PrimeNumber.xaml.cs" id="full":::
+ :::code language="vb" source="./snippets/threading-model/vb/PrimeNumber.xaml.vb" id="full":::
 
  Besides updating the text on the <xref:System.Windows.Controls.Button>, the `StartStopButton_Click` handler is responsible for scheduling the first prime number check by adding a delegate to the <xref:System.Windows.Threading.Dispatcher> queue. Sometime after this event handler has completed its work, the <xref:System.Windows.Threading.Dispatcher> will select the delegate for execution.
 
@@ -119,8 +119,8 @@ A sample app demonstrating the concepts of this section can be downloaded from G
 
 Consider the code-behind to the XAML:
 
-:::code language="csharp" source="./snippets/threading-model/csharp/Weather.xaml.cs":::
-:::code language="vb" source="./snippets/threading-model/vb/Weather.xaml.vb":::
+:::code language="csharp" source="./snippets/threading-model/csharp/Weather.xaml.cs" id="full":::
+:::code language="vb" source="./snippets/threading-model/vb/Weather.xaml.vb" id="full":::
 
  The following are some of the details to be noted.
 
