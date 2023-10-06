@@ -68,9 +68,16 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="MultiWindow.xaml.vb">
+      <DependentUpon>MultiWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Weather.xaml.vb">
       <DependentUpon>Weather.xaml</DependentUpon>
     </Compile>
+    <Page Include="MultiWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="PrimeNumber.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
