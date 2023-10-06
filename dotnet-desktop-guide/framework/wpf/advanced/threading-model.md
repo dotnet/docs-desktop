@@ -155,9 +155,9 @@ Consider the code-behind to the XAML:
 
 ## Multiple windows, multiple threads
 
-Some WPF applications require multiple top-level windows. It is perfectly acceptable for one Thread/Dispatcher combination to manage multiple windows, but sometimes several threads do a better job. This is especially true if there is any chance that one of the windows will monopolize the thread.
+Some WPF applications require multiple top-level windows. It's perfectly acceptable for one Thread/Dispatcher combination to manage multiple windows, but sometimes several threads do a better job. This is especially true if there is any chance that one of the windows will monopolize the thread.
 
-Windows Explorer works in this fashion. Each new Explorer window belongs to the original process, but it is created under the control of an independent thread. When Explorer becomes non-responsive when looking for network resources, other Explorer windows continue to be responsive and usable.
+Windows Explorer works in this fashion. Each new Explorer window belongs to the original process, but it's created under the control of an independent thread. When Explorer becomes non-responsive, such as when looking for network resources, other Explorer windows continue to be responsive and usable.
 
 We can demonstrate this concept with the following example.
 
@@ -167,7 +167,7 @@ The top three windows of this image share the same thread identifier: 1. The two
 
 :::image-end:::
 
-This example contains a window with a rotating `‼️` glyph, a **Pause** button, and two other buttons that can create a new window in either the same thread as the current window or in a new thread. The `‼️` glyph is constantly rotating until the **Pause** button is pressed. The button pauses the thread for five seconds. At the bottom of the window, the thread identifier is displayed.
+This example contains a window with a rotating `‼️` glyph, a **Pause** button, and two other buttons that create a new window under the current thread or in a new thread. The `‼️` glyph is constantly rotating until the **Pause** button is pressed, which pauses the thread for five seconds. At the bottom of the window, the thread identifier is displayed.
 
 When the **Pause** button is pressed, all windows under the same thread become non-responsive. Any window under a different thread continues to work normally.
 
@@ -182,12 +182,12 @@ The following example shows the code-behind.
 
 The following are some of the details to be noted:
 
-- The <xref:System.Threading.Tasks.Task.Delay(System.TimeSpan)?displayProperty=nameWithType> task is used to cause the current thread to pause after the button is pressed.
+- The <xref:System.Threading.Tasks.Task.Delay(System.TimeSpan)?displayProperty=nameWithType> task is used to cause the current thread to pause for five seconds when the **Pause** button is pressed.
 
   :::code language="csharp" source="./snippets/threading-model/csharp/MultiWindow.xaml.cs" id="delay":::
   :::code language="vb" source="./snippets/threading-model/vb/MultiWindow.xaml.vb" id="delay":::
 
-- The `SameThreadWindow_Click` event handler calls immediently shows a new window. The `NewThreadWindow_Click` event handler instead creates a new thread that starts executing the `ThreadStartingPoint` method.
+- The `SameThreadWindow_Click` event handler immediently shows a new window under the current thread. The `NewThreadWindow_Click` event handler creates a new thread that starts executing the `ThreadStartingPoint` method, which in turn shows a new window, as described in the next bullet point.
 
   :::code language="csharp" source="./snippets/threading-model/csharp/MultiWindow.xaml.cs" id="buttons" highlight="2,6":::
   :::code language="vb" source="./snippets/threading-model/vb/MultiWindow.xaml.vb" id="buttons" highlight="2,6":::
