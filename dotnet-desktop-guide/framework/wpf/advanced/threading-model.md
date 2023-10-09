@@ -131,7 +131,7 @@ Consider the code-behind to the XAML:
 
   Notice that the event handler was declared as `async` (or `Async` with Visual Basic). An async method suspends the code when the awaited method, `FetchWeatherFromServer` is called, designated by the `await` (or `Await` with Visual Basic) keyword. Until the `FetchWeatherFromServer` finishes, the button's handler code returns control to the caller of the async method. This is similar to a synchronous method except that a synchronous method waits for every operation in the method to finish after which control is returned to the caller.
 
-  Awaited methods utilize the threading context of the current method, which in the case of the button handler, is the UI thread. This means that calling `await FetchWeatherFromServer();` (Or `Await FetchWeatherFromServer()` with Visual Basic) causes the code in `FetchWeatherFromServer` to run on the UI thread. However, notice that `await Task.Run...` is used. This creates a new thread on the thread pool for the designated task, `FetchWeatherFromServer`, so it's not running in the UI thread but on its own thread.
+  Awaited methods utilize the threading context of the current method, which in the case of the button handler, is the UI thread. This means that calling `await FetchWeatherFromServer();` (Or `Await FetchWeatherFromServer()` with Visual Basic) causes the code in `FetchWeatherFromServer` to run on the UI thread. However, notice that `await Task.Run` is used. This creates a new thread on the thread pool for the designated task, `FetchWeatherFromServer`, so it's not running in the UI thread but on its own thread.
 
 - Fetching the Weather
 
