@@ -1,0 +1,17 @@
+﻿<Window x:Class="SDKSamples.NestedPumpScreenShot"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SDKSamples"
+        mc:Ignorable="d"
+        Title="Popup Demo" Height="Auto" Width="550" SizeToContent="Height">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Button Margin="20" Width="100" Content="Popup" Click="Button_Click" />
+        <TextBlock Grid.Column="1" Margin="0,10,20,10" Text="This window repaints even though the code is blocked when 'Popup' is pressed, waiting for the 'MessageBox.Show' to return." TextWrapping="Wrap" />
+    </Grid>
+</Window>

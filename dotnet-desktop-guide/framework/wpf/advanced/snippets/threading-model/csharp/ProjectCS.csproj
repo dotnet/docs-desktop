@@ -5,6 +5,7 @@
     <TargetFramework>net481</TargetFramework>
     <UseWPF>true</UseWPF>
     <RootNamespace>SDKSamples</RootNamespace>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
 
 </Project>

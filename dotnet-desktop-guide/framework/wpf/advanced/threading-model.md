@@ -155,21 +155,21 @@ Consider the code-behind to the XAML:
 
 ## Multiple windows, multiple threads
 
-Some WPF applications require multiple top-level windows. It's perfectly acceptable for one Thread/Dispatcher combination to manage multiple windows, but sometimes several threads do a better job. This is especially true if there is any chance that one of the windows will monopolize the thread.
+Some WPF applications require multiple top-level windows. It's perfectly acceptable for one Thread/Dispatcher combination to manage multiple windows, but sometimes several threads do a better job. This is especially true if there's any chance that one of the windows will monopolize the thread.
 
-Windows Explorer works in this fashion. Each new Explorer window belongs to the original process, but it's created under the control of an independent thread. When Explorer becomes non-responsive, such as when looking for network resources, other Explorer windows continue to be responsive and usable.
+Windows Explorer works in this fashion. Each new Explorer window belongs to the original process, but it's created under the control of an independent thread. When Explorer becomes nonresponsive, such as when looking for network resources, other Explorer windows continue to be responsive and usable.
 
 We can demonstrate this concept with the following example.
 
-:::image type="complex" source="./media/threading-model/threading-multiwindow-ui.png" alt-text="A screenshot of a WPF window that's duplicated 4 times. Three of the windows indicate they're using the same thread, while the other two are on different threads.":::
+:::image type="complex" source="./media/threading-model/threading-multiwindow-ui.png" alt-text="A screenshot of a WPF window that's duplicated four times. Three of the windows indicate that they're using the same thread, while the other two are on different threads.":::
 
-The top three windows of this image share the same thread identifier: 1. The two other windows have different thread identifiers: 9 and 4. There is a magenta colored rotating ‼️ glyph in the top right of each window.
+The top three windows of this image share the same thread identifier: 1. The two other windows have different thread identifiers: Nine and 4. There's a magenta colored rotating ‼️ glyph in the top right of each window.
 
 :::image-end:::
 
 This example contains a window with a rotating `‼️` glyph, a **Pause** button, and two other buttons that create a new window under the current thread or in a new thread. The `‼️` glyph is constantly rotating until the **Pause** button is pressed, which pauses the thread for five seconds. At the bottom of the window, the thread identifier is displayed.
 
-When the **Pause** button is pressed, all windows under the same thread become non-responsive. Any window under a different thread continues to work normally.
+When the **Pause** button is pressed, all windows under the same thread become nonresponsive. Any window under a different thread continues to work normally.
 
 The following example is the XAML to the window:
 
@@ -203,22 +203,6 @@ The following are some of the details to be noted:
 
 The following sections describe some of the details and stumbling points you may come across with multithreading.
 
-### Writing components using threading
-
- The Microsoft .NET Framework Developer's Guide describes a pattern for how a component can expose asynchronous behavior to its clients (see [Event-based Asynchronous Pattern Overview](/dotnet/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview)). For instance, suppose we wanted to package the `FetchWeatherFromServer` method into a reusable, nongraphical component. Following the standard Microsoft .NET Framework pattern, this would look something like the following.
-
- :::code language="csharp" source="../../../samples/snippets/csharp/VS_Snippets_Wpf/CommandingOverviewSnippets/CSharp/Window1.xaml.cs" id="threadingarticleweathercomponent1":::
- :::code language="vb" source="../../../samples/snippets/visualbasic/VS_Snippets_Wpf/CommandingOverviewSnippets/visualbasic/window1.xaml.vb" id="threadingarticleweathercomponent1":::
-
- `GetWeatherAsync` would use one of the techniques described earlier, such as creating a background thread, to do the work asynchronously, not blocking the calling thread.
-
- One of the most important parts of this pattern is calling the *MethodName*`Completed` method on the same thread that called the *MethodName*`Async` method to begin with. You could do this using WPF fairly easily, by storing <xref:System.Windows.Threading.Dispatcher.CurrentDispatcher%2A>—but then the nongraphical component could only be used in WPF applications, not in Windows Forms or ASP.NET programs.
-
- The <xref:System.Windows.Threading.DispatcherSynchronizationContext> class addresses this need—think of it as a simplified version of <xref:System.Windows.Threading.Dispatcher> that works with other UI frameworks as well.
-
- :::code language="csharp" source="../../../samples/snippets/csharp/VS_Snippets_Wpf/CommandingOverviewSnippets/CSharp/Window1.xaml.cs" id="threadingarticleweathercomponent2":::
- :::code language="vb" source="../../../samples/snippets/visualbasic/VS_Snippets_Wpf/CommandingOverviewSnippets/visualbasic/window1.xaml.vb" id="threadingarticleweathercomponent2":::
-
 ### Nested pumping
 
  Sometimes it is not feasible to completely lock up the UI thread. Let's consider the <xref:System.Windows.MessageBox.Show%2A> method of the <xref:System.Windows.MessageBox> class. <xref:System.Windows.MessageBox.Show%2A> doesn't return until the user clicks the OK button. It does, however, create a window that must have a message loop in order to be interactive. While we are waiting for the user to click OK, the original application window does not respond to user input. It does, however, continue to process paint messages. The original window redraws itself when covered and revealed.
@@ -233,7 +217,20 @@ The following sections describe some of the details and stumbling points you may
 
  The routed event system in WPF notifies entire trees when events are raised.
 
- :::code language="xaml" source="../../../samples/snippets/csharp/VS_Snippets_Wpf/InputOvw/CSharp/Page1.xaml" id="threadingarticlestaticroutedevent":::
+```xaml
+<Canvas MouseLeftButtonDown="handler1" 
+        Width="100"
+        Height="100"
+        >
+  <Ellipse Width="50"
+            Height="50"
+            Fill="Blue" 
+            Canvas.Left="30"
+            Canvas.Top="50" 
+            MouseLeftButtonDown="handler2"
+            />
+</Canvas>
+```
 
  When the left mouse button is pressed over the ellipse, `handler2` is executed. After `handler2` finishes, the event is passed along to the <xref:System.Windows.Controls.Canvas> object, which uses `handler1` to process it. This happens only if `handler2` does not explicitly mark the event object as handled.
 
