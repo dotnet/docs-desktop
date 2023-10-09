@@ -149,7 +149,7 @@ Consider the code-behind to the XAML:
 
  When the task finishes and the UI thread has time, the button's event handler is resumed. The rest of the method stops the clock animation and chooses an image to describe the weather. It displays this image and enables the "fetch forecast" button.
 
- For the complete source code for this sample, see the [](https://github.com/Microsoft/WPF-Samples/tree/master/Threading/SingleThreadedApplication)
+A sample app demonstrating the concepts of this section can be downloaded from GitHub for either [C#](https://github.com/dotnet/samples/tree/main/wpf/Threading/Weather/net48/csharp) or [Visual Basic](https://github.com/dotnet/samples/tree/main/wpf/Threading/Weather/net48/vb).
 
 <a name="multi_browser"></a>
 
@@ -196,6 +196,8 @@ The following are some of the details to be noted:
 
   :::code language="csharp" source="./snippets/threading-model/csharp/MultiWindow.xaml.cs" id="thread":::
   :::code language="vb" source="./snippets/threading-model/vb/MultiWindow.xaml.vb" id="thread":::
+
+A sample app demonstrating the concepts of this section can be downloaded from GitHub for either [C#](https://github.com/dotnet/samples/tree/main/wpf/Threading/MultithreadedWindow/net48/csharp) or [Visual Basic](https://github.com/dotnet/samples/tree/main/wpf/Threading/MultithreadedWindow/net48/vb).
 
 <a name="stumbling_points"></a>
 
