@@ -13,7 +13,7 @@ Public Class Weather
         DirectCast(Resources("HideWeatherImageStoryboard"), Storyboard).Begin(Me)
 
         ' Asynchronously fetch the weather forecast on a different thread and pause this code.
-        Dim Weather As String = Await Task.Run(AddressOf FetchWeatherFromServer)
+        Dim Weather As String = Await FetchWeatherFromServerAsync()
 
         ' After async data returns, process it...
         ' Set the weather image
@@ -37,7 +37,7 @@ Public Class Weather
     '</button>
 
     '<fetch_weather>
-    Private Async Function FetchWeatherFromServer() As Task(Of String)
+    Private Async Function FetchWeatherFromServerAsync() As Task(Of String)
 
         ' Simulate the delay from network access
         Await Task.Delay(TimeSpan.FromSeconds(4))

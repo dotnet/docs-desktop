@@ -7,7 +7,7 @@ Public Class MultiWindow
     End Sub
 
     '<delay>
-    Private Sub StartStopButton_Click(sender As Object, e As RoutedEventArgs)
+    Private Sub PauseButton_Click(sender As Object, e As RoutedEventArgs)
         Task.Delay(TimeSpan.FromSeconds(5)).Wait()
     End Sub
     '</delay>

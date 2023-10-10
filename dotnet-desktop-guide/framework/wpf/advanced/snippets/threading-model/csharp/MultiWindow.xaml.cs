@@ -15,7 +15,7 @@ namespace SDKSamples
             ThreadStatusItem.Content = $"Thread ID: {Thread.CurrentThread.ManagedThreadId}";
 
         //<delay>
-        private void StartStopButton_Click(object sender, RoutedEventArgs e) =>
+        private void PauseButton_Click(object sender, RoutedEventArgs e) =>
             Task.Delay(TimeSpan.FromSeconds(5)).Wait();
         //</delay>
 
