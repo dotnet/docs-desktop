@@ -4,7 +4,6 @@ using System.Windows;
 
 namespace SDKSamples
 {
-
     /// <summary>
     /// Interaction logic for App.xaml
     /// </summary>

@@ -22,7 +22,7 @@ namespace SDKSamples
             ((Storyboard)Resources["HideWeatherImageStoryboard"]).Begin(this);
 
             // Asynchronously fetch the weather forecast on a different thread and pause this code.
-            string weather = await Task.Run(FetchWeatherFromServer);
+            string weather = await FetchWeatherFromServerAsync();
 
             // After async data returns, process it...
             // Set the weather image
@@ -44,7 +44,7 @@ namespace SDKSamples
         //</button>
 
         //<fetch_weather>
-        private async Task<string> FetchWeatherFromServer()
+        private async Task<string> FetchWeatherFromServerAsync()
         {
             // Simulate the delay from network access
             await Task.Delay(TimeSpan.FromSeconds(4));
