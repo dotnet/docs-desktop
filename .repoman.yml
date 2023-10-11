@@ -1,4 +1,4 @@
-revision: 1
+revision: 2
 schema-version: 1
 owner-ms-alias: adegeo
 
@@ -8,6 +8,9 @@ config:
       - ["---", "#### "]
 
     ParserRegex: "^\\* (.*): (.*)$"
+
+    ContentUrlRegex:
+     - "### Page URL\n\n(.*)"
 
 issues:
 
@@ -32,6 +35,12 @@ issues:
   opened:
     # New issue opened, add Not Triaged  
     - labels-add: [":watch: Not Triaged"]
+
+    - check:
+        - type: metadata-exists
+  
+      pass:
+        - prod_tech_labels: true
 
   reopened:
 
