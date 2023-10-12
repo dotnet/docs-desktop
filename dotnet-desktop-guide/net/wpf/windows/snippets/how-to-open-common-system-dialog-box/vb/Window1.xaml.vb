@@ -60,6 +60,51 @@
         '</OpenFile>
     End Sub
 
+    Private Sub OpenFolder_Click(sender As Object, e As RoutedEventArgs)
+        '<OpenFolder>
+        ' Configure open folder dialog box
+        Dim dialog As New Microsoft.Win32.OpenFolderDialog()
+
+        dialog.Multiselect = False
+        dialog.Title = "Select a folder"
+
+        ' Show open folder dialog box
+        Dim result As Boolean? = dialog.ShowDialog()
+
+        ' Process open folder dialog box results
+        If result = True Then
+            ' Get the selected folder
+            Dim fullPathToFolder As String = dialog.FolderName
+            Dim folderNameOnly As String = dialog.SafeFolderName
+        End If
+        '</OpenFolder>
+    End Sub
+
+    Private Sub OpenFolderMultiple_Click(sender As Object, e As RoutedEventArgs)
+        '<OpenFolder>
+        ' Configure open folder dialog box
+        Dim dialog As New Microsoft.Win32.OpenFolderDialog()
+
+        dialog.Multiselect = True
+        dialog.Title = "Select a folder"
+
+        ' Show open folder dialog box
+        Dim result As Boolean? = dialog.ShowDialog()
+
+        ' Process open folder dialog box results
+        If result = True Then
+
+            ' Get multiple folder names
+            For index = 0 To dialog.FolderNames.Length
+                ' Get the selected folder
+                Dim fullPathToFolder As String = dialog.FolderNames(index)
+                Dim folderNameOnly As String = dialog.SafeFolderNames(index)
+            Next
+
+        End If
+        '</OpenFolder>
+    End Sub
+
     Private Sub Print_Click(sender As Object, e As RoutedEventArgs)
         '<Print>
         ' Configure printer dialog box

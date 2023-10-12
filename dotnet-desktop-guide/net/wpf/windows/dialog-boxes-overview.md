@@ -43,7 +43,7 @@ Windows implements different kinds of reusable dialog boxes that are common to a
 
 Since these dialog boxes are provided by the operating system, they're shared among all the applications that run on the operating system. These dialog boxes provide a consistent user experience, and are known as _common dialog boxes_. As a user uses a common dialog box in one application, they don't need to learn how to use that dialog box in other applications.
 
-WPF encapsulates the open file, save file, and print common dialog boxes and exposes them as managed classes for you to use in standalone applications.
+WPF encapsulates the open file, save file, open folder, and print common dialog boxes and exposes them as managed classes for you to use.
 
 :::image type="content" source="media/dialog-boxes-overview/open-file-dialog-box.png" alt-text="Open file dialog box called from WPF.":::
 
@@ -52,6 +52,7 @@ To learn more about common dialog boxes, see the following articles:
 - [How to display a common dialog box](how-to-open-common-system-dialog-box.md)
 - [Show the Open File dialog box](how-to-open-common-system-dialog-box.md#open-file-dialog-box)
 - [Show the Save File dialog box](how-to-open-common-system-dialog-box.md#save-file-dialog-box)
+- [Open Folder dialog box](how-to-open-common-system-dialog-box.md#open-folder-dialog-box)
 - [Show the Print dialog box](how-to-open-common-system-dialog-box.md#print-dialog-box)
 
 ## Custom dialog boxes
