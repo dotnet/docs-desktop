@@ -4,10 +4,21 @@ description: |
 body:
   - type: markdown
     attributes:
-      value: "## Issue information"
-  - type: markdown
-    attributes:
-      value: Select the issue type, and describe the issue in the text box below. Add as much detail as needed to help us resolve the issue.
+      value: |
+        ```
+        ┌───────────┐
+        │ IMPORTANT ├──────────────────────────┐
+        └────────┬──┘ Please read the          │
+                 │       following statement   │
+                 └─────────────────────────────┘
+        ```
+
+        If you're reporting a general usage question (ex: how do I set the text of a button?), it's better to use Q&A forum like:
+        
+        - [Stack Overflow](https://stackoverflow.com/)
+        - [Microsoft Q&A](https://docs.microsoft.com/answers/products/)
+        
+        If your question is related to documentation, please fill out the following information. Select the issue type, and describe the issue in the text box below. Add as much detail as needed to help us resolve the issue.
   - type: dropdown
     id: issue-type
     attributes:
