@@ -2,6 +2,9 @@
 title: "How to: Set Up Notification of Binding Updates"
 description: Learn how to use the INotifyPropertyChanged interface to set up notification when source or target binding properties have been updated.
 ms.date: "03/30/2017"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "notifications [WPF], binding updates"
   - "data binding [WPF], notification of binding updates"
@@ -20,13 +23,27 @@ This example shows how to set up to be notified when the binding target (target)
   
  Here is an example that shows how to set up for notification when a target property has been updated.  
   
- [!code-xaml[DirectionalBinding#2](~/samples/snippets/csharp/VS_Snippets_Wpf/DirectionalBinding/CSharp/Page1.xaml#2)]  
+```xaml
+<TextBlock Grid.Row="1" Grid.Column="1" Name="RentText"
+           Text="{Binding Path=Rent, Mode=OneWay, NotifyOnTargetUpdated=True}"
+           TargetUpdated="OnTargetUpdated"/>
+```
   
  You can then assign a handler based on the EventHandler\<T> delegate, *OnTargetUpdated* in this example, to handle the event:  
   
- [!code-csharp[DirectionalBinding#3](~/samples/snippets/csharp/VS_Snippets_Wpf/DirectionalBinding/CSharp/Page1.xaml.cs#3)]  
-[!code-csharp[DirectionalBinding#EndEvent](~/samples/snippets/csharp/VS_Snippets_Wpf/DirectionalBinding/CSharp/Page1.xaml.cs#endevent)]  
-  
+```csharp
+private void OnTargetUpdated(object sender, DataTransferEventArgs args)
+{
+    // Handle event
+}
+```
+
+```vb
+Private Sub OnTargetUpdated(sender As Object, e As DataTransferEventArgs)
+    ' Handle event
+End Sub
+```
+
  Parameters of the event can be used to determine details about the property that changed (such as the type or the specific element if the same handler is attached to more than one element), which can be useful if there are multiple bound properties on a single element.  
   
 ## See also
