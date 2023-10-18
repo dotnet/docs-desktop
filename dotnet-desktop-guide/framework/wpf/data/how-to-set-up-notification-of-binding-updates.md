@@ -40,7 +40,7 @@ private void OnTargetUpdated(object sender, DataTransferEventArgs args)
 
 ```vb
 Private Sub OnTargetUpdated(sender As Object, e As DataTransferEventArgs)
-
+    ' Handle event
 End Sub
 ```
 
