@@ -1,7 +1,7 @@
 ---
 title: "Threading Model"
 description: Learn about situations where you might need multiple threads in your Windows Presentation Foundation application. Single threaded solutions are preferred.
-ms.date: "03/30/2017"
+ms.date: 10/26/2023
 ms.topic: overview
 dev_langs:
   - "csharp"
@@ -48,7 +48,7 @@ Windows Presentation Foundation (WPF) is designed to save developers from the di
 
  WPF has a built-in mutual exclusion mechanism that enforces this coordination. Most classes in WPF derive from <xref:System.Windows.Threading.DispatcherObject>. At construction, a <xref:System.Windows.Threading.DispatcherObject> stores a reference to the <xref:System.Windows.Threading.Dispatcher> linked to the currently running thread. In effect, the <xref:System.Windows.Threading.DispatcherObject> associates with the thread that creates it. During program execution, a <xref:System.Windows.Threading.DispatcherObject> can call its public <xref:System.Windows.Threading.DispatcherObject.VerifyAccess%2A> method. <xref:System.Windows.Threading.DispatcherObject.VerifyAccess%2A> examines the <xref:System.Windows.Threading.Dispatcher> associated with the current thread and compares it to the <xref:System.Windows.Threading.Dispatcher> reference stored during construction. If they don't match, <xref:System.Windows.Threading.DispatcherObject.VerifyAccess%2A> throws an exception. <xref:System.Windows.Threading.DispatcherObject.VerifyAccess%2A> is intended to be called at the beginning of every method belonging to a <xref:System.Windows.Threading.DispatcherObject>.
 
- If only one thread can modify the UI, how do background threads interact with the user? A background thread can ask the UI thread to perform an operation on its behalf. It does this by registering a work item with the <xref:System.Windows.Threading.Dispatcher> of the UI thread. The <xref:System.Windows.Threading.Dispatcher> class provides the methods for registering work items: <xref:System.Windows.Threading.Dispatcher.InvokeAsync%2A>, <xref:System.Windows.Threading.Dispatcher.BeginInvoke%2A>, and <xref:System.Windows.Threading.Dispatcher.Invoke%2A>. These methods schedule a delegate for execution. <xref:System.Windows.Threading.Dispatcher.Invoke%2A> is a synchronous call – that is, it doesn't return until the UI thread actually finishes executing the delegate. <xref:System.Windows.Threading.Dispatcher.InvokeAsync%2A> and <xref:System.Windows.Threading.Dispatcher.BeginInvoke%2A> are asynchronous and return immediately.
+ If only one thread can modify the UI, how do background threads interact with the user? A background thread can ask the UI thread to perform an operation on its behalf. It does this by registering a work item with the <xref:System.Windows.Threading.Dispatcher> of the UI thread. The <xref:System.Windows.Threading.Dispatcher> class provides the methods for registering work items: <xref:System.Windows.Threading.Dispatcher.InvokeAsync%2A?displayProperty=nameWithType>, <xref:System.Windows.Threading.Dispatcher.BeginInvoke%2A?displayProperty=nameWithType>, and <xref:System.Windows.Threading.Dispatcher.Invoke%2A?displayProperty=nameWithType>. These methods schedule a delegate for execution. `Invoke` is a synchronous call – that is, it doesn't return until the UI thread actually finishes executing the delegate. `InvokeAsync` and `BeginInvoke` are asynchronous and return immediately.
 
  The <xref:System.Windows.Threading.Dispatcher> orders the elements in its queue by priority. There are ten levels that may be specified when adding an element to the <xref:System.Windows.Threading.Dispatcher> queue. These priorities are maintained in the <xref:System.Windows.Threading.DispatcherPriority> enumeration.
 
@@ -101,56 +101,6 @@ Windows Presentation Foundation (WPF) is designed to save developers from the di
 
  This method checks if the next odd number is prime. If it is prime, the method directly updates the `bigPrime` <xref:System.Windows.Controls.TextBlock> to reflect its discovery. We can do this because the calculation is occurring in the same thread that was used to create the control. Had we chosen to use a separate thread for the calculation, we would have to use a more complicated synchronization mechanism and execute the update in the UI thread. We'll demonstrate this situation next.
 
-<a name="weather_sim"></a>
-
-## Handle a blocking operation with a background thread
-
- Handling blocking operations in a graphical application can be difficult. We don't want to call blocking methods from event handlers because the application will appear to freeze up. We can use a separate thread to handle these operations, but when we're done, we have to synchronize with the UI thread because we can't directly modify the GUI from our worker thread. We can use <xref:System.Windows.Threading.Dispatcher.InvokeAsync%2A>, <xref:System.Windows.Threading.Dispatcher.BeginInvoke%2A>, or <xref:System.Windows.Threading.Dispatcher.Invoke%2A>, to insert delegates into the <xref:System.Windows.Threading.Dispatcher> of the UI thread. Eventually, these delegates will be executed with permission to modify UI elements.
-
-In this example, we mimic a remote procedure call that retrieves a weather forecast. When the button is clicked, the UI is updated normally to indicate that the data fetch is in progress. A separate worker thread is used to mimic fetching the weather forecast. When the "data" is returned, the <xref:System.Windows.Threading.Dispatcher> is used to schedule an update to the UI with the weather information.
-
-:::image type="complex" source="./media/threading-model/threading-weather-ui.png" alt-text="A diagram that demonstrates the workflow of the example app.":::
-
-A diagram demonstrating the example app's workflow. The app has a single button with the text "Fetch Forecast." There's an arrow pointing to the next phase of the app after the button is pressed, which is a clock image placed in the center of the app indicating that the app is busy fetching data. After some time, the app returns with either an image of the sun or of rain clouds, depending on the result of the data.
-
-:::image-end:::
-
-A sample app demonstrating the concepts of this section can be downloaded from GitHub for either [C#](https://github.com/dotnet/samples/tree/main/wpf/Threading/WeatherForecast/net48/csharp) or [Visual Basic](https://github.com/dotnet/samples/tree/main/wpf/Threading/WeatherForecast/net48/vb). The XAML for this example is quite large and not provided in this article. Use the previous GitHub links to browse the XAML.
-
-Consider the code-behind to the XAML:
-
-:::code language="csharp" source="./snippets/threading-model/csharp/Weather.xaml.cs" id="full":::
-:::code language="vb" source="./snippets/threading-model/vb/Weather.xaml.vb" id="full":::
-
- The following are some of the details to be noted.
-
-- Creating the Button Handler
-
-  :::code language="csharp" source="./snippets/threading-model/csharp/Weather.xaml.cs" id="button" highlight="1,10":::
-  :::code language="vb" source="./snippets/threading-model/vb/Weather.xaml.vb" id="button" highlight="1,10":::
-
-  Notice that the event handler was declared as `async` (or `Async` with Visual Basic). An async method suspends the code when the awaited method, `FetchWeatherFromServer` is called, designated by the `await` (or `Await` with Visual Basic) keyword. Until the `FetchWeatherFromServer` finishes, the button's handler code returns control to the caller of the async method. This is similar to a synchronous method except that a synchronous method waits for every operation in the method to finish after which control is returned to the caller.
-
-  Awaited methods utilize the threading context of the current method, which in the case of the button handler, is the UI thread. This means that calling `await FetchWeatherFromServer();` (Or `Await FetchWeatherFromServer()` with Visual Basic) causes the code in `FetchWeatherFromServer` to run on the UI thread. However, notice that `await Task.Run` is used. This creates a new thread on the thread pool for the designated task, `FetchWeatherFromServer`, so it's not running in the UI thread but on its own thread.
-
-- Fetching the Weather
-
-  :::code language="csharp" source="./snippets/threading-model/csharp/Weather.xaml.cs" id="fetch_weather":::
-  :::code language="vb" source="./snippets/threading-model/vb/Weather.xaml.vb" id="fetch_weather":::
-
-  To keep things simple, we don't actually have any networking code in this example. Instead, we simulate the delay of network access by putting our new thread to sleep for four seconds. In this time, the original UI thread is still running and responding to events, all the while the button's event handler is paused until this thread completes. To show this, we've left an animation running, and the minimize and maximize buttons also continue to work.
-
-  When the delay is finished, and we've randomly selected our weather forecast, and the weather status is returned to the caller, which is running on the UI thread.
-
-- Updating the UI
-
-  :::code language="csharp" source="./snippets/threading-model/csharp/Weather.xaml.cs" id="button" highlight="14-27":::
-  :::code language="vb" source="./snippets/threading-model/vb/Weather.xaml.vb" id="button" highlight="14-30":::
-
- When the task finishes and the UI thread has time, the button's event handler is resumed. The rest of the method stops the clock animation and chooses an image to describe the weather. It displays this image and enables the "fetch forecast" button.
-
-A sample app demonstrating the concepts of this section can be downloaded from GitHub for either [C#](https://github.com/dotnet/samples/tree/main/wpf/Threading/Weather/net48/csharp) or [Visual Basic](https://github.com/dotnet/samples/tree/main/wpf/Threading/Weather/net48/vb).
-
 <a name="multi_browser"></a>
 
 ## Multiple windows, multiple threads
@@ -192,12 +142,70 @@ The following are some of the details to be noted:
   :::code language="csharp" source="./snippets/threading-model/csharp/MultiWindow.xaml.cs" id="buttons" highlight="2,6":::
   :::code language="vb" source="./snippets/threading-model/vb/MultiWindow.xaml.vb" id="buttons" highlight="2,6":::
 
-- The `ThreadStartingPoint` method is the starting point for the new thread. The new window is created under the control of this thread. WPF automatically creates a new <xref:System.Windows.Threading.Dispatcher> to manage the new thread. All we have to do to make the window functional is to start the <xref:System.Windows.Threading.Dispatcher>.
+- The `ThreadStartingPoint` method is the starting point for the new thread. The new window is created under the control of this thread. WPF automatically creates a new <xref:System.Windows.Threading.Dispatcher?displayProperty=nameWithType> to manage the new thread. All we have to do to make the window functional is to start the <xref:System.Windows.Threading.Dispatcher?displayProperty=nameWithType>.
 
   :::code language="csharp" source="./snippets/threading-model/csharp/MultiWindow.xaml.cs" id="thread":::
   :::code language="vb" source="./snippets/threading-model/vb/MultiWindow.xaml.vb" id="thread":::
 
 A sample app demonstrating the concepts of this section can be downloaded from GitHub for either [C#](https://github.com/dotnet/samples/tree/main/wpf/Threading/MultithreadedWindow/net48/csharp) or [Visual Basic](https://github.com/dotnet/samples/tree/main/wpf/Threading/MultithreadedWindow/net48/vb).
+
+<a name="weather_sim"></a>
+
+## Handle a blocking operation with Task.Run
+
+Handling blocking operations in a graphical application can be difficult. We don't want to call blocking methods from event handlers because the application appears to freeze up. The previous example created new windows in their own thread, letting each window run independent from one another. While we can create a new thread with <xref:System.Windows.Threading.Dispatcher?displayProperty=nameWithType>, it becomes difficult to synchronize the new thread with the main UI thread after the work is completed. Because the new thread can't modify the UI directly, we have to use <xref:System.Windows.Threading.Dispatcher.InvokeAsync%2A?displayProperty=nameWithType>, <xref:System.Windows.Threading.Dispatcher.BeginInvoke%2A?displayProperty=nameWithType>, or <xref:System.Windows.Threading.Dispatcher.Invoke%2A?displayProperty=nameWithType>, to insert delegates into the <xref:System.Windows.Threading.Dispatcher> of the UI thread. Eventually, these delegates are executed with permission to modify UI elements.
+
+There's an easier way to run the code on a new thread while synchronizing the results, the [Task-based asynchronous pattern (TAP)](/dotnet/standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap). It's based on the <xref:System.Threading.Tasks.Task> and <xref:System.Threading.Tasks.Task%601> types in the `System.Threading.Tasks` namespace, which are used to represent asynchronous operations. TAP uses a single method to represent the initiation and completion of an asynchronous operation. There are a few benefits to this pattern:
+
+- The caller of a `Task` can choose to run the code asynchronously or synchronously.
+- Progress can be reported from the `Task`.
+- The calling code can suspend execution and wait for the result of the operation.
+
+### Task.Run example
+
+In this example, we mimic a remote procedure call that retrieves a weather forecast. When the button is clicked, the UI is updated normally to indicate that the data fetch is in progress, while a task is started to mimic fetching the weather forecast. When the task is started, the button event handler code is suspended until the task finishes. After the task finishes, the event handler code continues to run. The code is suspended and it isn't blocking the rest of the UI thread. The synchronization context of WPF handles suspending the code, which allows WPF to continue to run.
+
+:::image type="complex" source="./media/threading-model/threading-weather-ui.png" alt-text="A diagram that demonstrates the workflow of the example app.":::
+
+A diagram demonstrating the example app's workflow. The app has a single button with the text "Fetch Forecast." There's an arrow pointing to the next phase of the app after the button is pressed, which is a clock image placed in the center of the app indicating that the app is busy fetching data. After some time, the app returns with either an image of the sun or of rain clouds, depending on the result of the data.
+
+:::image-end:::
+
+A sample app demonstrating the concepts of this section can be downloaded from GitHub for either [C#](https://github.com/dotnet/samples/tree/main/wpf/Threading/Weather/net48/csharp) or [Visual Basic](https://github.com/dotnet/samples/tree/main/wpf/Threading/Weather/net48/vb). The XAML for this example is quite large and not provided in this article. Use the previous GitHub links to browse the XAML. The XAML uses a single button to fetch the weather.
+
+Consider the code-behind to the XAML:
+
+:::code language="csharp" source="./snippets/threading-model/csharp/Weather.xaml.cs" id="full":::
+:::code language="vb" source="./snippets/threading-model/vb/Weather.xaml.vb" id="full":::
+
+The following are some of the details to be noted.
+
+- The button event handler
+
+  :::code language="csharp" source="./snippets/threading-model/csharp/Weather.xaml.cs" id="button" highlight="1,10":::
+  :::code language="vb" source="./snippets/threading-model/vb/Weather.xaml.vb" id="button" highlight="1,10":::
+
+  Notice that the event handler was declared with `async` (or `Async` with Visual Basic). An "async" method allows suspension of the code when an awaited method, such as `FetchWeatherFromServerAsync`, is called. This is designated by the `await` (or `Await` with Visual Basic) keyword. Until the `FetchWeatherFromServerAsync` finishes, the button's handler code is suspended and control is returned to the caller. This is similar to a synchronous method except that a synchronous method waits for every operation in the method to finish after which control is returned to the caller.
+
+  Awaited methods utilize the threading context of the current method, which with the button handler, is the UI thread. This means that calling `await FetchWeatherFromServerAsync();` (Or `Await FetchWeatherFromServerAsync()` with Visual Basic) causes the code in `FetchWeatherFromServerAsync` to run on the UI thread, but isn't executed on the dispatcher has time to run it, similar to how the [Single-threaded app with a long-running calculation](#single-threaded-app-with-a-long-running-calculation) example operates. However, notice that `await Task.Run` is used. This creates a new thread on the thread pool for the designated task instead of the current thread. So `FetchWeatherFromServerAsync` runs on its own thread.
+
+- Fetching the Weather
+
+  :::code language="csharp" source="./snippets/threading-model/csharp/Weather.xaml.cs" id="fetch_weather":::
+  :::code language="vb" source="./snippets/threading-model/vb/Weather.xaml.vb" id="fetch_weather":::
+
+  To keep things simple, we don't actually have any networking code in this example. Instead, we simulate the delay of network access by putting our new thread to sleep for four seconds. In this time, the original UI thread is still running and responding to UI events while the button's event handler is paused until the new thread completes. To demonstrate this, we've left an animation running, and you can resize the window. If the UI thread was paused or delayed, the animation wouldn't be shown and you couldn't interact with the window.
+
+  When the `Task.Delay` is finished, and we've randomly selected our weather forecast, the weather status is returned to the caller.
+
+- Updating the UI
+
+  :::code language="csharp" source="./snippets/threading-model/csharp/Weather.xaml.cs" id="button" highlight="14-27":::
+  :::code language="vb" source="./snippets/threading-model/vb/Weather.xaml.vb" id="button" highlight="14-30":::
+
+  When the task finishes and the UI thread has time, the caller of `Task.Run`, the button's event handler, is resumed. The rest of the method stops the clock animation and chooses an image to describe the weather. It displays this image and enables the "fetch forecast" button.
+
+A sample app demonstrating the concepts of this section can be downloaded from GitHub for either [C#](https://github.com/dotnet/samples/tree/main/wpf/Threading/Weather/net48/csharp) or [Visual Basic](https://github.com/dotnet/samples/tree/main/wpf/Threading/Weather/net48/vb).
 
 <a name="stumbling_points"></a>
 
