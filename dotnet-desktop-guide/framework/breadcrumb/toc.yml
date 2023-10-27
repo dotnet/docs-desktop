@@ -2,9 +2,9 @@
   tocHref: /dotnet/
   topicHref: /dotnet/index
   items:
-    - name: Windows Forms
-      tocHref: /dotnet/desktop/winforms
-      topicHref: /dotnet/desktop/winforms/index
-    - name: Windows Presentation Foundation
-      tocHref: /dotnet/desktop/wpf/
-      topicHref: /dotnet/desktop/wpf/index
+  - name: Windows Forms
+    tocHref: /dotnet/desktop/winforms
+    topicHref: /dotnet/desktop/winforms/index
+  - name: Windows Presentation Foundation
+    tocHref: /dotnet/desktop/wpf/
+    topicHref: /dotnet/desktop/wpf/index
