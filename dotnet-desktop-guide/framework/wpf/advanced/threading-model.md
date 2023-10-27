@@ -163,7 +163,7 @@ There's an easier way to run the code on a new thread while synchronizing the re
 
 ### Task.Run example
 
-In this example, we mimic a remote procedure call that retrieves a weather forecast. When the button is clicked, the UI is updated normally to indicate that the data fetch is in progress, while a task is started to mimic fetching the weather forecast. When the task is started, the button event handler code is suspended until the task finishes. After the task finishes, the event handler code continues to run. The code is suspended and it isn't blocking the rest of the UI thread. The synchronization context of WPF handles suspending the code, which allows WPF to continue to run.
+In this example, we mimic a remote procedure call that retrieves a weather forecast. When the button is clicked, the UI is updated to indicate that the data fetch is in progress, while a task is started to mimic fetching the weather forecast. When the task is started, the button event handler code is suspended until the task finishes. After the task finishes, the event handler code continues to run. The code is suspended, and it doesn't block the rest of the UI thread. The synchronization context of WPF handles suspending the code, which allows WPF to continue to run.
 
 :::image type="complex" source="./media/threading-model/threading-weather-ui.png" alt-text="A diagram that demonstrates the workflow of the example app.":::
 
