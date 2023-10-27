@@ -1,31 +1,11 @@
-items:
-- name: Docs
-  tocHref: /
-  topicHref: /
+- name: .NET
+  tocHref: /dotnet/
+  topicHref: /dotnet/index
   items:
-    - name: .NET
-      tocHref: /dotnet/
-      topicHref: /dotnet/index
-      items:
-      - name: Desktop Guide
-        tocHref: /dotnet/desktop
-        topicHref: /dotnet/desktop/index
-        items:
-        - name: ".NET 6"
-          items:
-          - name: Windows Forms
-            tocHref: /dotnet/desktop/winforms/
-            topicHref: /dotnet/desktop/winforms/index
-          - name: Windows Presentation Foundation
-            tocHref: /dotnet/desktop/wpf/
-            topicHref: /dotnet/desktop/wpf/index
-            items:
-            - name: Get started
-              tocHref: /visualstudio/get-started/csharp/tutorial-wpf
-              topicHref: /dotnet/desktop/wpf/getting-started/index
-            - name: Migration
-              tocHref: /dotnet/desktop/wpf/migration
-              topicHref: /dotnet/desktop/wpf/migration/index
-            - name: Data binding
-              tocHref: /dotnet/desktop/wpf/data
-              topicHref: /dotnet/desktop/wpf/data/index
+  - name: Windows Forms
+    tocHref: /dotnet/desktop/winforms/
+    topicHref: /dotnet/desktop/winforms/index
+  - name: Windows Presentation Foundation
+    tocHref: /dotnet/desktop/wpf/
+    topicHref: /dotnet/desktop/wpf/index
+
