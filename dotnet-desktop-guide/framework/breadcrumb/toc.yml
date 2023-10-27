@@ -1,47 +1,10 @@
-items:
-- name: Docs
-  tocHref: /
-  topicHref: /
+- name: .NET
+  tocHref: /dotnet/
+  topicHref: /dotnet/index
   items:
-    - name: .NET
-      tocHref: /dotnet/
-      topicHref: /dotnet/index
-      items:
-      - name: Desktop Guide
-        tocHref: /dotnet/desktop
-        topicHref: /dotnet/desktop/index
-        items:
-        - name: .NET Framework
-          items:
-          - name: Windows Forms
-            tocHref: /dotnet/desktop/winforms
-            topicHref: /dotnet/desktop/winforms/index
-            items:
-            - name: Enhance Windows Forms applications
-              tocHref: /dotnet/desktop/winforms/advanced/
-              topicHref: /dotnet/desktop/winforms/advanced/index
-            - name: Controls
-              tocHref: /dotnet/desktop/winforms/controls/
-              topicHref: /dotnet/desktop/winforms/controls/index
-        - name: Windows Presentation Foundation
-          tocHref: /dotnet/desktop/wpf/
-          topicHref: /dotnet/desktop/wpf/index
-          items:
-          - name: Advanced
-            tocHref: /dotnet/desktop/wpf/advanced/
-            topicHref: /dotnet/desktop/wpf/advanced/index
-          - name: Application development
-            tocHref: /dotnet/desktop/wpf/app-development/
-            topicHref: /dotnet/desktop/wpf/app-development/index
-          - name: Controls
-            tocHref: /dotnet/desktop/wpf/controls/
-            topicHref: /dotnet/desktop/wpf/controls/index
-          - name: Data
-            tocHref: /dotnet/desktop/wpf/data/
-            topicHref: /dotnet/desktop/wpf/data/index
-          - name: Get started (WPF)
-            tocHref: /dotnet/desktop/wpf/getting-started/
-            topicHref: /dotnet/desktop/wpf/getting-started/index
-          - name: Graphics and multimedia
-            tocHref: /dotnet/desktop/wpf/graphics-multimedia/
-            topicHref: /dotnet/desktop/wpf/graphics-multimedia/index
+  - name: Windows Forms
+    tocHref: /dotnet/desktop/winforms
+    topicHref: /dotnet/desktop/winforms/index
+  - name: Windows Presentation Foundation
+    tocHref: /dotnet/desktop/wpf/
+    topicHref: /dotnet/desktop/wpf/index
