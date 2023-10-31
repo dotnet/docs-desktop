@@ -36,8 +36,44 @@ Using managed code, you can create new application settings and bind them to pro
   
      [!code-csharp[ApplicationSettings.Create#3](~/samples/snippets/csharp/VS_Snippets_Winforms/ApplicationSettings.Create/CS/Form1.cs#3)]
      [!code-vb[ApplicationSettings.Create#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/ApplicationSettings.Create/VB/Form1.vb#3)]  
-  
+
      You have now successfully created a new application setting and bound it to the specified property.  
+
+The following example shows an application settings file that defines two application-scoped settings and two user-scoped settings. You need to add the names for settings that your created as entries under the **\<configSections>** element at the top of the file.
+
+```xml
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <configSections>
+    <sectionGroup name="applicationSettings" type="System.Configuration.ApplicationSettingsGroup, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <section name="WindowsApplication1.Properties.Settings" type="System.Configuration.ClientSettingsSection, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+    </sectionGroup>
+    <sectionGroup name="userSettings" type="System.Configuration.UserSettingsGroup, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <section name="WindowsApplication1.Properties.Settings" type="System.Configuration.ClientSettingsSection, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" allowExeDefinition="MachineToLocalUser" />
+    </sectionGroup>
+  </configSections>
+  <applicationSettings>
+    <WindowsApplication1.Properties.Settings>
+      <setting name="Cursor" serializeAs="String">
+        <value>Default</value>
+      </setting>
+      <setting name="DoubleBuffering" serializeAs="String">
+        <value>False</value>
+      </setting>
+    </WindowsApplication1.Properties.Settings>
+  </applicationSettings>
+  <userSettings>
+    <WindowsApplication1.Properties.Settings>
+      <setting name="FormTitle" serializeAs="String">
+        <value>Form1</value>
+      </setting>
+      <setting name="FormSize" serializeAs="String">
+        <value>595, 536</value>
+      </setting>
+    </WindowsApplication1.Properties.Settings>
+  </userSettings>
+</configuration>
+```
   
 ## .NET Framework Security  
 
