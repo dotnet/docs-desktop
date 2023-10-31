@@ -16,6 +16,9 @@ This overview introduces globalization and localization in Windows Presentation 
 
 Localization is the translation of application resources into localized versions for the specific cultures that the application supports. When you localize in WPF, you use the APIs in the <xref:System.Windows.Markup.Localizer> namespace. These APIs power the [LocBaml Tool Sample](https://github.com/microsoft/WPF-Samples/tree/master/Tools/LocBaml) command-line tool. For information about how to build and use LocBaml, see [Localize an Application](how-to-localize-an-application.md).
 
+> [!WARNING]
+> The **LocBaml** tool only works with WPF for .NET Framework projects, it doesn't work with WPF for .NET.
+
 ## Best Practices for Globalization and Localization in WPF
 
 You can make the most of the globalization and localization functionality that is built into WPF by following the UI design and localization-related tips that this section provides.
@@ -169,6 +172,9 @@ The `RunIcon.JPG` does not need to be localized because it should appear the sam
 **Parse**
 
 After building the application, the first step in localizing it is parsing the localizable resources out of the satellite assembly. For the purposes of this topic, use the sample LocBaml tool which can be found at [LocBaml Tool Sample](https://github.com/microsoft/WPF-Samples/tree/master/Tools/LocBaml). Note that LocBaml is only a sample tool meant to help you get started in building a localization tool that fits into your localization process. Using LocBaml, run the following to parse: **LocBaml /parse RunDialog.resources.dll /out:** to generate a "RunDialog.resources.dll.CSV" file.
+
+> [!WARNING]
+> The **LocBaml** tool only works with WPF for .NET Framework projects, it doesn't work with WPF for .NET.
 
 **Localize**
 
