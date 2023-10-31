@@ -163,7 +163,7 @@ End Namespace
 
 `InitializeComponent` is called from the code-behind class's constructor to merge the UI that is defined in markup with the code-behind class. (`InitializeComponent` is generated for you when your application is built, which is why you don't need to implement it manually.) The combination of `x:Class` and `InitializeComponent` ensure that your implementation is correctly initialized whenever it's created.
 
-Notice that in the markup the `<Button>` element defined a value of `button_click` for the `Click` attribute. With the markup and code-behind initialized and working together, the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event for the button is automatically mapped to the `button_click` method. When the button is clicked, the event handler is invoked and a message box is displayed by calling the <xref:System.Windows.MessageBox.Show%2A?displayProperty=fullName> method.
+Notice that in the markup the `<Button>` element defined a value of `button_Click` for the `Click` attribute. With the markup and code-behind initialized and working together, the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event for the button is automatically mapped to the `button_Click` method. When the button is clicked, the event handler is invoked and a message box is displayed by calling the <xref:System.Windows.MessageBox.Show%2A?displayProperty=fullName> method.
 
 The following figure shows the result when the button is clicked:
 
