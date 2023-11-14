@@ -79,6 +79,54 @@ namespace WindowsOverview
             //</OpenFile>
         }
 
+        private void OpenFolder_Click(object sender, RoutedEventArgs e)
+        {
+            //<OpenFolder>
+            // Configure open folder dialog box
+            Microsoft.Win32.OpenFolderDialog dialog = new();
+
+            dialog.Multiselect = false;
+            dialog.Title = "Select a folder";
+
+            // Show open folder dialog box
+            bool? result = dialog.ShowDialog();
+
+            // Process open folder dialog box results
+            if (result == true)
+            {
+                // Get the selected folder
+                string fullPathToFolder = dialog.FolderName;
+                string folderNameOnly = dialog.SafeFolderName;
+            }
+            //</OpenFolder>
+        }
+
+        private void OpenFolderMultiple_Click(object sender, RoutedEventArgs e)
+        {
+            //<OpenFolderMultiselect>
+            // Configure open folder dialog box
+            Microsoft.Win32.OpenFolderDialog dialog = new();
+
+            dialog.Multiselect = true;
+            dialog.Title = "Select one or more folders";
+
+            // Show open folder dialog box
+            bool? result = dialog.ShowDialog();
+
+            // Process open folder dialog box results
+            if (result == true)
+            {
+                // Get multiple folder names
+                for (int index = 0; index < dialog.FolderNames.Length; index++)
+                {
+                    // Get the selected folder
+                    string fullPathToFolder = dialog.FolderNames[index];
+                    string folderNameOnly = dialog.SafeFolderNames[index];
+                }
+            }
+            //</OpenFolderMultiselect>
+        }
+
         private void Print_Click(object sender, RoutedEventArgs e)
         {
             //<Print>

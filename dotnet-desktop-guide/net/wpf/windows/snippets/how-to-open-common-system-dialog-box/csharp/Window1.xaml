@@ -10,6 +10,7 @@
         <Button Click="Button_Click">Message Box</Button>
         <Button Click="Save_Click">Save file</Button>
         <Button Click="Open_Click">Open file</Button>
+        <Button Click="OpenFolder_Click">Open folder</Button>
         <Button Click="Print_Click">Print</Button>
     </StackPanel>
 
