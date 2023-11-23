@@ -185,6 +185,8 @@ items:
     items:
     - name: WFAC001
       href: wfdev-diagnostics/wfac001.md
+    - name: WFAC002
+      href: wfdev-diagnostics/wfac002.md
   - name: Warnings
     items:
     - name: Obsoletions overview
