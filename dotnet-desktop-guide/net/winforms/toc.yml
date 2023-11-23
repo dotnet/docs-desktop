@@ -179,15 +179,24 @@ items:
       href: data/how-to-create-control-binding.md
     - name: Synchronize multiple controls
       href: data/how-to-synchronize-multiple-controls.md
-- name: WFDEV warnings
+- name: Compiler warnings and errors
   items:
-  - name: Overview
-    href: wfdev-diagnostics/obsoletions-overview.md
-    displayName: wfdev warnings
-  - name: WFDEV001
-    href: wfdev-diagnostics/wfdev001.md
-  - name: WFDEV002
-    href: wfdev-diagnostics/wfdev002.md
-  - name: WFDEV003
-    href: wfdev-diagnostics/wfdev003.md
+  - name: Errors
+    items:
+    - name: WFAC001
+      href: wfdev-diagnostics/wfac001.md
+    - name: WFAC002
+      href: wfdev-diagnostics/wfac002.md
+  - name: Warnings
+    items:
+    - name: Obsoletions overview
+      href: wfdev-diagnostics/obsoletions-overview.md
+    - name: WFAC010
+      href: wfdev-diagnostics/wfac010.md
+    - name: WFDEV001
+      href: wfdev-diagnostics/wfdev001.md
+    - name: WFDEV002
+      href: wfdev-diagnostics/wfdev002.md
+    - name: WFDEV003
+      href: wfdev-diagnostics/wfdev003.md
  
