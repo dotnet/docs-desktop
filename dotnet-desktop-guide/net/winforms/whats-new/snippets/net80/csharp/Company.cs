@@ -4,9 +4,13 @@ using CommunityToolkit.Mvvm.Input;
 
 namespace snippets;
 
-public class Company: ObservableObject
+public class Company: ObservableObject, IDisposable
 {
     int _employeeCount = 10;
+    //Bitmap _icon = SystemIcons.GetStockIcon(StockIconId.Warning, StockIconOptions.Default).ToBitmap();
+    Bitmap _icon = SystemIcons.Warning.ToBitmap();
+
+    public Bitmap CompanyImage => _icon;
 
     public int EmployeeCount
     {
@@ -15,6 +19,11 @@ public class Company: ObservableObject
     }
 
     public ICommand IncreaseEmployeeCommand { get; }
+
+    ~Company()
+    {
+        Dispose();
+    }
 
     public Company()
     {
@@ -25,5 +34,10 @@ public class Company: ObservableObject
     {
         EmployeeCount += count;
         ((RelayCommand<int>)IncreaseEmployeeCommand).NotifyCanExecuteChanged();
+    }
+
+    public void Dispose()
+    {
+        _icon.Dispose();
     }
 }

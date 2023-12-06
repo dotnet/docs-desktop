@@ -11,31 +11,11 @@ This article describes some of the new Windows Forms features and enhancements i
 
 There are a few breaking changes you should be aware of when migrating from .NET Framework to .NET 8. For more information, see [Breaking changes in Windows Forms](/dotnet/core/compatibility/winforms).
 
-## New default font
-
-The default font is now the same as your Windows default font. This might affect the control layout used in your forms and controls. Previous versions of Windows Forms for .NET changed the default font to **Segoe UI, 9pt**. Windows Forms for .NET Framework uses **Microsoft Sans Serif, 8.25pt** as the default font.
-
-If the font change affects the layout of your forms, and you don't want to adjust them, you can revert to either the older default .NET font or the default .NET Framework font by setting the `<ApplicationDefaultFont>` property in your project file:
-
-```xml
-<Project Sdk="Microsoft.NET.Sdk">
-
-  <!-- other settings -->
-
-  <PropertyGroup>
-    <ApplicationDefaultFont>Microsoft Sans Serif, 8.25pt</ApplicationDefaultFont>
-  </PropertyGroup>
-
-</Project>
-```
-
-The Visual Studio designer respects the application's default font when set in the project file.
-
 ## Data binding improvements
 
 A new data binding engine was in preview with .NET 7, and is now fully enabled in .NET 8. Though not as extensive as the existing Windows Forms data binding engine, this new engine is modeled after WPF, which makes it easier to implement MVVM design principles.
 
-The enhanced data binding capabilities now make it simpler to fully utilize the MVVM pattern and employ object-relational mappers from ViewModels in Windows Forms. This reduces the amount of code in code-behind files. More importantly, it enables code sharing between Windows Forms and other .NET GUI frameworks like WPF, UWP/WinUI, and .NET MAUI. It's important to note that while the previously mentioned GUI frameworks use XAML as a UI technology, XAML isn't coming to Windows Forms.
+The enhanced data binding capabilities make it simpler to fully utilize the MVVM pattern and employ object-relational mappers from ViewModels in Windows Forms. This reduces the amount of code in code-behind files. More importantly, it enables code sharing between Windows Forms and other .NET GUI frameworks like WPF, UWP/WinUI, and .NET MAUI. It's important to note that while the previously mentioned GUI frameworks use XAML as a UI technology, XAML isn't coming to Windows Forms.
 
 The <xref:System.Windows.Forms.IBindableComponent> interface and the <xref:System.Windows.Forms.BindableComponent> class drive the new binding system. <xref:System.Windows.Forms.Control> implements the interface and provides new data binding capabilities to Windows Forms.
 
@@ -55,12 +35,12 @@ Buttons also listen to the <xref:System.Windows.Input.ICommand.CanExecuteChanged
 
 Visual Studio 2022 17.8 Introduces DPI-unwaware designer tabs. Previously, the Windows Designer tab in Visual Studio ran at the DPI of Visual Studio. This causes problems when you're designing a DPI-unaware Windows Forms app. Now you can ensure that the designer runs at the same scale as you want the app to run, either DPI-aware or not. Before this feature was introduced, you had to run Visual Studio in DPI-unaware mode, which made Visual Studio itself blurry when scaling was applied in Windows. Now you can leave Visual Studio alone and let the designer run DPI-unaware.
 
-You can force the DPI-unaware designer by adding the `<ApplicationHighDpiMode>` project setting and setting the value to `true`.
+You can enable the DPI-unaware designer for the Windows Forms project by adding `<ForceDesignerDPIUnaware>` to the project file, and setting the value to `true`.
 
 :::code language="xml" source="./snippets/net80/csharp/snippets.csproj" range="3-11" highlight="7":::
 
 > [!IMPORTANT]
-> After changing this setting, you must unload and reload your project to get Visual Studio to respect it.s
+> After changing this setting, you must unload and reload your project to get Visual Studio to respect it.
 
 ## High DPI improvements
 
@@ -93,3 +73,6 @@ Here are some other notable changes:
 
 - The code that handled `FolderBrowserDialog` was improved, fixing a few memory leaks.
 - The code base for Windows Forms has been slowly enabling C# nullability, rooting out any potential null-reference errors.
+- The `System.Drawing` source code was migrated to the [Windows Forms GitHub repository](https://github.com/dotnet/winforms).
+- Modern Windows icons can be accessed by a new API, <xref:System.Drawing.SystemIcons.GetStockIcon%2A?displayProperty=fullName>. The <xref:System.Drawing.StockIconId?displayProperty=fullName> enumeration lists all of the available system icons.
+- More designers are available at run-time now. For more information, see [GitHub issue #4908](https://github.com/dotnet/winforms/issues/4908).

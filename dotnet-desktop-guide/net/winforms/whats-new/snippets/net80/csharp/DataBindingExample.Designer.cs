@@ -35,7 +35,9 @@
             label2 = new Label();
             btnCompany1 = new Button();
             btnCompany2 = new Button();
+            pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)companyBindingSource).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // button1
@@ -91,11 +93,21 @@
             btnCompany2.UseVisualStyleBackColor = true;
             btnCompany2.Click += btnCompany2_Click;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.DataBindings.Add(new Binding("Image", companyBindingSource, "CompanyImage", true));
+            pictureBox1.Location = new Point(12, 67);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(100, 50);
+            pictureBox1.TabIndex = 5;
+            pictureBox1.TabStop = false;
+            // 
             // DataBindingExample
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(238, 192);
+            Controls.Add(pictureBox1);
             Controls.Add(btnCompany2);
             Controls.Add(btnCompany1);
             Controls.Add(label2);
@@ -105,6 +117,7 @@
             Text = "DataBindingExample";
             DataContextChanged += DataBindingExample_DataContextChanged;
             ((System.ComponentModel.ISupportInitialize)companyBindingSource).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -117,5 +130,6 @@
         private BindingSource companyBindingSource;
         private Button btnCompany1;
         private Button btnCompany2;
+        private PictureBox pictureBox1;
     }
 }
