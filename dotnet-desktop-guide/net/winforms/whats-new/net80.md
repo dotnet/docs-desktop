@@ -40,7 +40,7 @@ You can enable the DPI-unaware designer for the Windows Forms project by adding 
 :::code language="xml" source="./snippets/net80/csharp/snippets.csproj" range="3-11" highlight="7":::
 
 > [!IMPORTANT]
-> After changing this setting, you must unload and reload your project to get Visual Studio to respect it.
+> Visual Studio reads this setting when the project is loaded, and not when it's changed. After changing this setting, unload and reload your project to get Visual Studio to respect it.
 
 ## High DPI improvements
 
