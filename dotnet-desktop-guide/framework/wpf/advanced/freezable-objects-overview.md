@@ -100,7 +100,7 @@ To use the `Freeze` attribute, you must map to the presentation options namespac
 xmlns:PresentationOptions="http://schemas.microsoft.com/winfx/2006/xaml/presentation/options"
 ```
 
-Because not all XAML readers recognize this attribute, it's recommended that you use the [mc:Ignorable Attribute](mc-ignorable-attribute.md) to mark the `Presentation:Freeze` attribute as ignorable:
+Because not all XAML readers recognize this attribute, it's recommended that you use the [mc:Ignorable Attribute](mc-ignorable-attribute.md) to mark the `PresentationOptions:Freeze` attribute as ignorable:
 
 ```xaml
 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
