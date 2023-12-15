@@ -63,7 +63,7 @@ This release adds further improvements to accessibility, including but not limit
 
 While Windows Forms already had a powerful binding engine, a more modern form of data binding, similar to data binding provided by WPF, is being introduced.
 
-The new data binding features allow you to fully embrace the MVVM pattern and the use of object-relational mappers from ViewModels in Windows Forms easier than before. This, in turn, makes it possible to reduce code in the code-behind files, and opens new testing possibilities. More importantly, it enables code sharing between Windows Forms and other .NET GUI frameworks such as WPF, UWP/WinUI, and MAUI. And to clarify a commonly asked question, there aren't any plans to introduce XAML in Windows Forms.
+The new data binding features allow you to fully embrace the MVVM pattern and the use of object-relational mappers from ViewModels in Windows Forms easier than before. This, in turn, makes it possible to reduce code in the code-behind files, and opens new testing possibilities. More importantly, it enables code sharing between Windows Forms and other .NET GUI frameworks such as WPF, UWP/WinUI, and .NET MAUI. And to clarify a commonly asked question, there aren't any plans to introduce XAML in Windows Forms.
 
 These new data binding features are in preview for .NET 7, and more work on this feature will happen in .NET 8.
 
