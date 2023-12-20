@@ -128,7 +128,7 @@ namespace Margin_Padding_Alignment_Sample {
          myTextBlock10->Text = "StackPanel.VerticalAlignment = \"Top\"";
          TextBlock^ myTextBlock11 = gcnew TextBlock();
          myTextBlock11->HorizontalAlignment = HorizontalAlignment::Center;
-         myTextBlock11->Text = "StackPanel.Orientation = \"Horizontal\"";
+         myTextBlock11->Text = "StackPanel.Orientation = \"Vertical\"";
          TextBlock^ myTextBlock12 = gcnew TextBlock();
          myTextBlock12->HorizontalAlignment = HorizontalAlignment::Center;
          myTextBlock12->Text = "Button.Margin = \"10,0,10,0\"";
