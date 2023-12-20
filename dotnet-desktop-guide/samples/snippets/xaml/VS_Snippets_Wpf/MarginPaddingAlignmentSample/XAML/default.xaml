@@ -36,7 +36,7 @@
         <TextBlock HorizontalAlignment="Center">ColumnDefinition.Width="*"</TextBlock>
         <TextBlock HorizontalAlignment="Center">StackPanel.HorizontalAlignment="Stretch"</TextBlock>
         <TextBlock HorizontalAlignment="Center">StackPanel.VerticalAlignment="Top"</TextBlock>
-        <TextBlock HorizontalAlignment="Center">StackPanel.Orientation="Horizontal"</TextBlock>
+        <TextBlock HorizontalAlignment="Center">StackPanel.Orientation="Vertical"</TextBlock>
         <TextBlock HorizontalAlignment="Center">Button.Margin="10,0,10,0"</TextBlock>
     </StackPanel>        
         

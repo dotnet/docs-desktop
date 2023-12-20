@@ -118,7 +118,7 @@ Namespace SDKSample
             myTextBlock10.Text = "StackPanel.VerticalAlignment = ""Top"""
             Dim myTextBlock11 As New TextBlock
             myTextBlock11.HorizontalAlignment = System.Windows.HorizontalAlignment.Center
-            myTextBlock11.Text = "StackPanel.Orientation = ""Horizontal"""
+            myTextBlock11.Text = "StackPanel.Orientation = ""Vertical"""
             Dim myTextBlock12 As New TextBlock
             myTextBlock12.HorizontalAlignment = System.Windows.HorizontalAlignment.Center
             myTextBlock12.Text = "Button.Margin = ""10,0,10,0"""
