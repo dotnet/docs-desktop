@@ -245,7 +245,7 @@ The grid defines two properties to determine the row and column placement of a c
 <Label Grid.Column="1">Names</Label>
 ```
 
-Notice how your label now moved to the second column. You can use the `Grid.Row` and `Grid.Column` attached properties to place the next controls we'll create. For now though, restore the label to row 0.
+Notice how your label now moved to the second column. You can use the `Grid.Row` and `Grid.Column` attached properties to place the next controls we'll create. For now though, restore the label to column 0.
 
 ## Create the name list box
 
