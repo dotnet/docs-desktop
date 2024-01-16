@@ -145,14 +145,14 @@
         "net/wpf/**/**.md": "WPF .NET",
         "xaml-services/**/*.md": "XAML"
       },
-      "ms.technology": {
-        "framework/winforms/**/**.md": "dotnet-winforms",
-        "framework/wpf/**/**.md": "dotnet-wpf",
-        "net/winforms/**/**.md": "dotnet-winforms",
-        "net/wpf/**/**.md": "dotnet-wpf",
-        "xaml-services/**/*.md": "dotnet-wpf"
+      "ms.subservice": {
+        "framework/winforms/**/**.md": "winforms",
+        "framework/wpf/**/**.md": "wpf",
+        "net/winforms/**/**.md": "winforms",
+        "net/wpf/**/**.md": "wpf",
+        "xaml-services/**/*.md": "wpf"
       },
-      "ms.prod": {
+      "ms.service": {
         "framework/winforms/**/**.md": "dotnet-framework",
         "framework/winforms/**/**.yml": "dotnet-framework",
         "framework/wpf/**/**.md": "dotnet-framework",
