@@ -135,14 +135,6 @@
       "ms.author": "adegeo"
     },
     "fileMetadata": {
-      "ms.subservice": {
-        "framework/winforms/**/**.md": "winforms",
-        "framework/wpf/**/**.md": "wpf"
-      },
-      "ms.service": {
-        "framework/winforms/**/**.md": "dotnet-framework",
-        "framework/wpf/**/**.md": "dotnet-framework"
-      },
       "breadcrumb_path": {
         "xaml-services/**/**.md": "/dotnet/desktop/xaml-services/breadcrumb/toc.json"
       },
@@ -154,12 +146,16 @@
         "xaml-services/**/*.md": "XAML"
       },
       "ms.technology": {
+        "framework/winforms/**/**.md": "dotnet-winforms",
+        "framework/wpf/**/**.md": "dotnet-wpf",
         "net/winforms/**/**.md": "dotnet-winforms",
         "net/wpf/**/**.md": "dotnet-wpf",
         "xaml-services/**/*.md": "dotnet-wpf"
       },
       "ms.prod": {
+        "framework/winforms/**/**.md": "dotnet-framework",
         "framework/winforms/**/**.yml": "dotnet-framework",
+        "framework/wpf/**/**.md": "dotnet-framework",
         "framework/wpf/**/**.yml": "dotnet-framework",
         "net/winforms/**/**.md": "dotnet-desktop",
         "net/winforms/**/**.yml": "dotnet-desktop",
