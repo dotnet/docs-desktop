@@ -39,20 +39,20 @@ Certain scenarios inherently lend themselves to the application of the weak even
 There are four ways to implement the weak event pattern, and each approach uses a different event manager. Select the event manager that best suits your scenario.
 
 - [Existing weak event manager](#use-an-existing-weak-event-manager-class):
-  
+
   Use an existing weak event manager class when the event you want to subscribe to has a corresponding <xref:System.Windows.WeakEventManager>. For a list of weak event managers that are included with WPF, see the inheritance hierarchy in the `WeakEventManager` class. Because the included weak event managers are limited, you'll probably need to choose one of the other approaches.
 
 - [Generic weak event manager](#use-the-generic-weak-event-manager-class):
-  
+
   Use a generic <xref:System.Windows.WeakEventManager%602> when an existing <xref:System.Windows.WeakEventManager> isn't available and you're looking for the easiest way to implement weak events. However, the generic `WeakEventManager<TEventSource,TEventArgs>` is less efficient than the existing or custom weak event manager because it uses reflection to discover the event from its name. Also, the code needed to register the event using the generic `WeakEventManager<TEventSource,TEventArgs>` is more verbose than using an existing or custom `WeakEventManager`.
 
 - [Custom weak event manager](#create-a-custom-weak-event-manager-class):
-  
+
   Create a custom <xref:System.Windows.WeakEventManager> when an existing `WeakEventManager` isn't available and efficiency is crucial. Although more efficient than a generic `WeakEventManager`, a custom `WeakEventManager` requires you to write more upfront code.
 
 - [Third-party weak event manager](https://www.nuget.org/packages?q=weak+event+manager&prerel=false):
-  
-  Use a third-party weak event manager when you need functionality that's not provided by the other approaches. NuGet has some [weak event managers](https://www.nuget.org/packages?q=weak+event+manager&prerel=false). Many WPF frameworks also support the pattern. For example, see [Prism's documentation on loosely coupled event subscription](https://github.com/PrismLibrary/Prism-Documentation/blob/master/docs/wpf/legacy/Communication.md#subscribing-to-events).
+
+  Use a third-party weak event manager when you need functionality that's not provided by the other approaches. NuGet has some [weak event managers](https://www.nuget.org/packages?q=weak+event+manager&prerel=false). Many WPF frameworks also support the pattern.
 
 The following sections describe how to implement the weak event pattern through use of the different event manager types. For the generic and custom weak event manager examples, the event to subscribe to has the following characteristics.
 
