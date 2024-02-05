@@ -15,9 +15,6 @@ This article describes how to upgrade a Windows Forms desktop app to .NET 7. Eve
 
 You should also review the information in the [Porting from .NET Framework to .NET](/dotnet/core/porting/) guide.
 
-> [!WARNING]
-> Don't upgrade Visual Basic Windows Forms projects. There seems to be a bug with the extension. This article will be updated when the bug is fixed.
-
 ## Prerequisites
 
 - Windows Operating System
