@@ -15,7 +15,7 @@ Previously, all WPF applications that were accessed remotely had to use software
 
 Hardware acceleration refers to the use of a computer's graphics processing unit (GPU) to speed up the rendering of graphics and visual effects in an application. This can result in improved performance and more seamless, responsive graphics. In contrast, software rendering relies solely on the computer's central processing unit (CPU) to render graphics, which can be slower and less effective.
 
-To opt in, set the `Switch.System.Windows.Media.EnableHardwareAccelerationInRdp` configuration property to `true` in a *runtimeconfig.json* file. For more information, see [Hardware acceleration in RDP](../../runtime-config/wpf.md#hardware-acceleration-in-rdp).
+To opt in, set the `Switch.System.Windows.Media.EnableHardwareAccelerationInRdp` configuration property to `true` in a *runtimeconfig.json* file. For more information, see [Hardware acceleration in RDP](/dotnet/core/runtime-config/wpf#hardware-acceleration-in-rdp).
 
 ## OpenFolderDialog
 
