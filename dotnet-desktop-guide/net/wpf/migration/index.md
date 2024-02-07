@@ -15,9 +15,6 @@ This article describes how to upgrade a Windows Presentation Foundation (WPF) de
 
 If you're upgrading from .NET Framework to .NET, consider reviewing the [Differences with WPF .NET](differences-from-net-framework.md) article and the [Porting from .NET Framework to .NET](/dotnet/core/porting/) guide.
 
-> [!WARNING]
-> Don't upgrade Visual Basic WPF projects as there is a bug with the extension. This article will be updated when the bug is fixed.
-
 ## Prerequisites
 
 - Windows operating system
