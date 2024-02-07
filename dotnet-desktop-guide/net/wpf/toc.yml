@@ -10,11 +10,13 @@ items:
     href: get-started/create-app-visual-studio.md
 - name: What's new
   items:
-  - name: What's new in .NET 7.0
+  - name: What's new in .NET 8
+    href: whats-new/net80.md
+  - name: What's new in .NET 7
     href: whats-new/net70.md
 - name: Migration
   items:
-  - name: Upgrade to .NET 7
+  - name: Upgrade to .NET 8
     href: migration/index.md
   - name: Differences from .NET Framework
     href: migration/differences-from-net-framework.md
@@ -65,7 +67,7 @@ items:
           href: documents/how-to-display-print-dialog.md
         - name: Programmatically print XPS files
           href: documents/how-to-print-xps-files.md
-    
+
   - name: Data binding
     items:
     - name: Overview
@@ -163,5 +165,5 @@ items:
   items:
   - name: Overview
     href: xaml/index.md
-- name: XAML Language Reference 
+- name: XAML Language Reference
   href: ../../xaml-services/
