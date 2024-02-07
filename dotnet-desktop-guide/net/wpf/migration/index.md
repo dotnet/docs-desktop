@@ -1,13 +1,13 @@
 ---
-title: Upgrade a WPF app to .NET 7
-description: Learn how to upgrade a .NET Framework (or previous .NET) Windows Presentation Foundation (WPF) application to .NET 7.
-ms.date: 06/01/2023
+title: Upgrade a WPF app to .NET 8
+description: Learn how to upgrade a .NET Framework (or previous .NET) Windows Presentation Foundation (WPF) application to .NET 8.
+ms.date: 02/07/2024
 ms.topic: how-to
 ---
 
-# How to upgrade a WPF desktop app to .NET 7
+# How to upgrade a WPF desktop app to .NET 8
 
-This article describes how to upgrade a Windows Presentation Foundation (WPF) desktop app to .NET 7. Even though WPF runs on .NET, a cross-platform technology, WPF is still a Windows-only framework. The following WPF-related project types can be upgraded with the .NET Upgrade Assistant:
+This article describes how to upgrade a Windows Presentation Foundation (WPF) desktop app to .NET 8. Even though WPF runs on .NET, a cross-platform technology, WPF is still a Windows-only framework. The following WPF-related project types can be upgraded with the .NET Upgrade Assistant:
 
 - WPF project
 - Control library
@@ -15,14 +15,11 @@ This article describes how to upgrade a Windows Presentation Foundation (WPF) de
 
 If you're upgrading from .NET Framework to .NET, consider reviewing the [Differences with WPF .NET](differences-from-net-framework.md) article and the [Porting from .NET Framework to .NET](/dotnet/core/porting/) guide.
 
-> [!WARNING]
-> Don't upgrade Visual Basic WPF projects. There seems to be a bug with the extension. This article will be updated when the bug is fixed.
-
 ## Prerequisites
 
-- Windows Operating System
+- Windows operating system
+- [Visual Studio 2022 version 17.7 or later to target .NET 8](https://visualstudio.microsoft.com/downloads/)
 - [Visual Studio 2022 version 17.1 or later to target .NET 7](https://visualstudio.microsoft.com/downloads/)
-- [Visual Studio 2022 version 17.7 Preview 1 or later to target .NET 8](https://visualstudio.microsoft.com/downloads/)
 - [.NET Upgrade Assistant extension for Visual Studio](/dotnet/core/porting/upgrade-assistant-install#install-the-visual-studio-extension)
 
 ## Demo app
@@ -47,9 +44,7 @@ Use the following steps to upgrade a project in Visual Studio:
 01. Select **In-place project upgrade**.
 01. Next, select the target framework. Based on the type of project you're upgrading, different options are presented. **.NET Standard 2.0** is a good choice if the library doesn't rely on a desktop technology like WPF and can be used by both .NET Framework projects and .NET projects. However, the latest .NET releases provide many language and compiler improvements over .NET Standard.
 
-    Select **.NET 7.0** and then select **Next**.
-
-    :::image type="content" source="media/index/vs-target-framework.png" alt-text="The .NET Upgrade Assistant's target framework decision tab.":::
+    Select **.NET 8.0** and then select **Next**.
 
 01. A tree is shown with all of the artifacts related to the project, such as code files and libraries. You can upgrade individual artifacts or the entire project, which is the default. Select **Upgrade selection** to start the upgrade.
 
@@ -67,7 +62,7 @@ Once all of the supporting libraries are upgraded, the main app project can be u
 
 01. Right-click on the **WebSiteRatings** project in the **Solution Explorer** window and select **Upgrade**:
 01. Select **In-place project upgrade** as the upgrade mode.
-01. Select **.NET 7.0** for the target framework and select **Next**.
+01. Select **.NET 8.0** for the target framework and select **Next**.
 01. Leave all of the artifacts selected and select **Upgrade selection**.
 
 After the upgrade is complete, the results are shown. If an item has a warning symbol, it means that there's a note for you to read, which you can do by expanding the item.
@@ -89,7 +84,7 @@ After upgrading, you'll want to:
 
 - Check your NuGet packages.
 
-  The .NET Upgrade Assistant upgraded some packages to new versions. With the sample app provided in this article, the `Microsoft.Data.Sqlite` NuGet package was upgraded from **1.0.0** to **7.0.5**. However, **1.0.0** depends on the `SQLite` NuGet package, but **7.0.5** removes that dependency. The `SQLite` NuGet package is still referenced by the project, although it's no longer required. Both `SQLite` and `SQLite.Native` NuGet packages can be removed from the project.
+  The .NET Upgrade Assistant upgraded some packages to new versions. With the sample app provided in this article, the `Microsoft.Data.Sqlite` NuGet package was upgraded from **1.0.0** to **8.0.x**. However, **1.0.0** depends on the `SQLite` NuGet package, but **8.0.x** removes that dependency. The `SQLite` NuGet package is still referenced by the project, although it's no longer required. *Both the `SQLite` and `SQLite.Native` NuGet packages can be removed from the project.*
 
 - Clean up the old NuGet packages.
 
