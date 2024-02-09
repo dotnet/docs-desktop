@@ -35,6 +35,8 @@ After modifying the project file, you'll need to reload the project.
 
 Currently, when Visual Studio detects when a 32-bit reference fails to load, it prompts you to enable the Windows Forms Out-of-process Designer. If you agree to enable it, the project is updated for you and then reloaded.
 
+TODO: IMAGE
+
 ## The types of errors you may encounter
 
 ...
