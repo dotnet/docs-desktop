@@ -115,6 +115,8 @@ items:
 #      href: blah
     - name: Troubleshoot designer errors
       href: controls-design/designer-errors.md
+    - name: Troubleshoot 32-bit reference errors
+      href: visualstudio/troubleshoot-32bit.md
     - name: Common tasks
       items:
       - name: Use ShouldSerialize and Reset for a property
