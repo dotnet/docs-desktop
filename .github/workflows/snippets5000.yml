@@ -16,7 +16,7 @@ on:
 
 env:
   DOTNET_INSTALLER_CHANNEL: '8.0'
-  DOTNET_DO_INSTALL: 'true' # True to install preview versions, False to use the pre-installed (released) SDK
+  DOTNET_DO_INSTALL: 'false' # True to install preview versions, False to use the pre-installed (released) SDK
   EnableNuGetPackageRestore: 'True'
   repo: 'docs-desktop'
 
@@ -51,7 +51,7 @@ jobs:
     # Clone docs tools repo
     - name: Clone docs-tools repository
       run: |
-        git clone https://github.com/dotnet/docs-tools
+        git clone --depth 1 --single-branch --branch adegeo-snippets https://github.com/dotnet/docs-tools
 
     # Run snippets 5000
     - name: Run snippets 5000 for PR
