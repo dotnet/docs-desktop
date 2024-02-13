@@ -16,7 +16,7 @@ on:
 
 env:
   DOTNET_INSTALLER_CHANNEL: '8.0'
-  DOTNET_DO_INSTALL: 'true' # True to install preview versions, False to use the pre-installed (released) SDK
+  DOTNET_DO_INSTALL: 'false' # True to install preview versions, False to use the pre-installed (released) SDK
   EnableNuGetPackageRestore: 'True'
   repo: 'docs-desktop'
 
@@ -25,7 +25,7 @@ jobs:
   # This workflow contains a single job called "snippets-build"
   snippets-build:
     # The type of runner that the job will run on
-    runs-on: windows-2022
+    runs-on: ubuntu-latest
     permissions:
         statuses: write
 
@@ -51,14 +51,14 @@ jobs:
     # Clone docs tools repo
     - name: Clone docs-tools repository
       run: |
-        git clone https://github.com/dotnet/docs-tools
+        git clone --depth 1 --single-branch --branch adegeo-snippets https://github.com/dotnet/docs-tools
 
     # Run snippets 5000
     - name: Run snippets 5000 for PR
       env:
         GitHubKey: ${{ secrets.GITHUB_TOKEN }}
       run: |
-        dotnet run --project docs-tools\snippets5000\Snippets5000\Snippets5000.csproj -- --sourcepath "${{ github.workspace }}" --pullrequest ${{ github.event.number }} --owner ${{ github.repository_owner }} --repo ${{ github.event.repository.name }}
+        dotnet run --project docs-tools/snippets5000/Snippets5000/Snippets5000.csproj -- --sourcepath "${{ github.workspace }}" --pullrequest ${{ github.event.number }} --owner ${{ github.repository_owner }} --repo ${{ github.event.repository.name }}
 
     # Update build output json file
     - name: Upload build results
