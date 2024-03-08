@@ -75,5 +75,3 @@ Currently, when Visual Studio detects when a 32-bit reference fails to load, it 
 ## See also
 
 - [.NET Blog – WinForms in a 64-Bit world – our strategy going forward.](https://devblogs.microsoft.com/dotnet/winforms-designer-64-bit-path-forward/)
-
-This article.........
