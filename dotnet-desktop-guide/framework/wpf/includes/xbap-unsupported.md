@@ -5,5 +5,5 @@ ms.date: 03/11/2024
 ms.topic: include
 ---
 
-> [!WARNING]
-> Running XAML Browser Application (XBAP) is no longer supported. Modern browsers no longer support the technology required for XBAP apps to run due to security risks. Plug-ins that may enable XBAPs are not supported by Microsoft.
+>[!IMPORTANT]
+> XBAPs require legacy browsers to operate, such as Internet Explorer and Firefox. These older browser versions are usually unsupported on Windows 10 and Windows 11. Modern browsers no longer support the technology required for XBAP apps due to security risks. Plugins that enable XBAPs are no longer supported.

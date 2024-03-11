@@ -21,10 +21,7 @@ ms.assetid: ee1baea0-3611-4e36-9ad6-fcd5205376fb
   
  WPF browser-hosted applications are hosted by Windows Internet Explorer or Firefox, and can be either XAML browser applications (XBAPs) or loose Extensible Application Markup Language (XAML) documents For more information, see [WPF XAML Browser Applications Overview](./app-development/wpf-xaml-browser-applications-overview.md).  
 
-[!INCLUDE [xbap-unsupported](~/dotnet-desktop-guide/framework/wpf/includes/xbap-unsupported.md)]
 [!INCLUDE [xbap-unsupported](~/framework/wpf/includes/xbap-unsupported.md)]
-[!INCLUDE [xbap-unsupported](~/wpf/includes/xbap-unsupported.md)]
-[!INCLUDE [xbap-unsupported](~/includes/xbap-unsupported.md)]
   
  WPF browser-hosted applications execute within a partial trust security sandbox, by default, which is limited to the default CAS**Internet** zone permission set. This effectively isolates WPF browser-hosted applications from the client computer in the same way that you would expect typical Web applications to be isolated. An XBAP can elevate privileges, up to Full Trust, depending on the security zone of the deployment URL and the client's security configuration. For more information, see [WPF Partial Trust Security](wpf-partial-trust-security.md).  
   
