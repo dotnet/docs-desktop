@@ -27,11 +27,11 @@ There are a few design changes you should consider, which might help your projec
 
 - With .NET Framework, set your app to target `AnyCPU`.
 
-  If you target `AnyCPU` and enable `Prefer 32-bit`, your app runs under 64-bit when in Visual Studio design-time, but compile to 32-bit for run-time.
+  If you target `AnyCPU` and enable `Prefer 32-bit`, your app runs under 64-bit when in Visual Studio design-time, but compiles to 32-bit for run-time.
 
-- Recompile the 32-bit component for 64-bit.
+- Recompile the 32-bit component for `AnyCPU` or 64-bit.
 
-  If you have access to the source code for the 32-bit component, you could try compiling it for 64-bit and references that.
+  If you have access to the source code for the 32-bit component, try compiling it for `AnyCPU` or 64-bit and references that new version.
 
 - Find a 64-bit alternative component.
 
@@ -52,7 +52,7 @@ The **out-of-process designer** has been improved, with some limitations, to han
 
 - .NET Frameworks benefit from improved type resolution.
 - ActiveX and COM references are supported in both .NET Framework and .NET.
-- The in-process designer detects 32-bit assembly load failures and can suggest enabling the out-of-process designer.
+- The in-process designer in Visual Studio detects 32-bit assembly load failures and can suggest enabling the out-of-process designer.
 
 ### Use the out-of-process designer
 
@@ -68,7 +68,7 @@ After modifying the project file, you must reload the project.
 
 ### 32-bit issue detection
 
-Currently, when Visual Studio detects when a 32-bit reference fails to load, it prompts you to enable the Windows Forms Out-of-process Designer. If you agree to enable it, the project is updated for you and then reloaded.
+Currently, when Visual Studio detects when a 32-bit reference fails to load, and prompts you to enable the Windows Forms Out-of-process Designer. If you agree to enable it, the project is updated for you and then reloaded.
 
 :::image type="content" source="./media/troubleshoot-32bit/designer-prompt.png" alt-text="The image of a window from Visual Studio prompting the user to enable the out-of-process designer.":::
 
