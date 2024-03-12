@@ -36,7 +36,7 @@ Links the value of a property in a control template to be the value of another p
   
 ## Remarks  
 
- A `TemplateBinding` is an optimized form of a [Binding](binding-markup-extension.md) for template scenarios, analogous to a `Binding` constructed with `{Binding RelativeSource={RelativeSource TemplatedParent}, Mode=OneWay}`. A `TemplateBinding` is always a one-way binding, even if properties involved default to two-way binding. Both properties involved must be dependency properties. In order to achieve two-way binding to a templated parent use the following binding statement instead
+ A `TemplateBinding` is an optimized form of a [`Binding`](binding-markup-extension.md) for template scenarios, analogous to a `Binding` constructed with `{Binding RelativeSource={RelativeSource TemplatedParent}, Mode=OneWay}`. A `TemplateBinding` is always a one-way binding, even if properties involved default to two-way binding. Both properties involved must be dependency properties. In order to achieve two-way binding to a templated parent use the following binding statement instead
 `{Binding RelativeSource={RelativeSource TemplatedParent}, Mode=TwoWay, Path=MyDependencyProperty}`.
   
  [RelativeSource](relativesource-markupextension.md) is another markup extension that is sometimes used in conjunction with or instead of `TemplateBinding` in order to perform relative property binding within a template.  
