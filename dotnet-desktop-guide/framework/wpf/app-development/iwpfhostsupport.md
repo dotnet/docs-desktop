@@ -9,7 +9,9 @@ ms.assetid: cc5a0281-de81-4cc1-87e4-0e46b1a811e9
 # IWpfHostSupport
 
 Applications that host Windows Presentation Foundation (WPF) content via PresentationHost.exe implement this interface to provide a point of integration between the host and PresentationHost.exe.  
-  
+
+[!INCLUDE [xbap-unsupported](~/framework/wpf/includes/xbap-unsupported.md)]
+
 ## Remarks  
 
  Win32 applications such as Web browsers can host WPF content, including XAML browser applications (XBAPs) and loose XAML. To host WPF content, Win32 applications create an instance of the [WebBrowser control](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752040(v=vs.85)). To be hosted, WPF creates an instance of PresentationHost.exe, which provides the hosted WPF content to the host for display in the [WebBrowser control](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752040(v=vs.85)).  
