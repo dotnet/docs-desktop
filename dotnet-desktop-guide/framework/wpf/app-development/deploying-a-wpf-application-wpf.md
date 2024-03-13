@@ -100,6 +100,8 @@ After Windows Presentation Foundation (WPF) applications are built, they need to
 
 ### Deploying XAML Browser Applications  
 
+[!INCLUDE [xbap-unsupported](~/framework/wpf/includes/xbap-unsupported.md)]
+
  XBAPs are compiled applications that require the following three files to be deployed:  
   
 - *ApplicationName*.exe: The executable assembly application file.  

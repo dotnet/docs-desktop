@@ -80,6 +80,8 @@ ms.assetid: ef2c0810-1dbf-4511-babd-1fab95b523b5
 
  For XBAP applications, code that exceeds the default permission set will have different behavior depending on the security zone. In some cases, the user will receive a warning when they attempt to install it. The user can choose to continue or cancel the installation. The following table describes the behavior of the application for each security zone and what you have to do for the application to receive full trust.  
   
+[!INCLUDE [xbap-unsupported](~/framework/wpf/includes/xbap-unsupported.md)]
+
 |Security Zone|Behavior|Getting Full Trust|  
 |-------------------|--------------|------------------------|  
 |Local computer|Automatic full trust|No action is needed.|  
@@ -124,7 +126,9 @@ ms.assetid: ef2c0810-1dbf-4511-babd-1fab95b523b5
 ### Browser Host Detection  
 
  Using CAS to check for permissions is a suitable technique when you need to check on a per-permission basis. Although, this technique depends on catching exceptions as a part of normal processing, which is not recommended in general and can have performance issues. Instead, if your XAML browser application (XBAP) only runs within the Internet zone sandbox, you can use the <xref:System.Windows.Interop.BrowserInteropHelper.IsBrowserHosted%2A?displayProperty=nameWithType> property, which returns true for XAML browser applications (XBAPs).  
-  
+
+[!INCLUDE [xbap-unsupported](~/framework/wpf/includes/xbap-unsupported.md)]
+
 > [!NOTE]
 > <xref:System.Windows.Interop.BrowserInteropHelper.IsBrowserHosted%2A> only distinguishes whether an application is running in a browser, not which set of permissions an application is running with.  
   
@@ -133,7 +137,9 @@ ms.assetid: ef2c0810-1dbf-4511-babd-1fab95b523b5
 ## Managing Permissions  
 
  By default, XBAPs run with partial trust (default Internet zone permission set). However, depending on the requirements of the application, it is possible to change the set of permissions from the default. For example, if an XBAPs is launched from a local intranet, it can take advantage of an increased permission set, which is shown in the following table.  
-  
+
+[!INCLUDE [xbap-unsupported](~/framework/wpf/includes/xbap-unsupported.md)]
+
  Table 3: LocalIntranet and Internet Permissions  
   
 |Permission|Attribute|LocalIntranet|Internet|  
