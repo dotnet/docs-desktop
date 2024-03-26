@@ -1,13 +1,13 @@
 ---
-title: Upgrade a Windows Forms app to .NET 8
-description: Learn how to upgrade a .NET Framework (or previous .NET) Windows Forms application to .NET 8.
+title: Upgrade a Windows Forms app to .NET 7
+description: Learn how to upgrade a .NET Framework (or previous .NET) Windows Forms application to .NET 7.
 ms.date: 06/01/2023
 ms.topic: how-to
 ---
 
-# How to upgrade a Windows Forms desktop app to .NET 8
+# How to upgrade a Windows Forms desktop app to .NET 7
 
-This article describes how to upgrade a Windows Forms desktop app to .NET 8. Even though Windows Forms runs on .NET, a cross-platform technology, Windows Forms is still a Windows-only framework. The following Windows Forms-related project types can be upgraded with the .NET Upgrade Assistant:
+This article describes how to upgrade a Windows Forms desktop app to .NET 7. Even though Windows Forms runs on .NET, a cross-platform technology, Windows Forms is still a Windows-only framework. The following Windows Forms-related project types can be upgraded with the .NET Upgrade Assistant:
 
 - Windows Forms project
 - Control library
@@ -18,7 +18,7 @@ You should also review the information in the [Porting from .NET Framework to .N
 ## Prerequisites
 
 - Windows Operating System
-- [Visual Studio 2022 version 17.1 or later to target .NET 8](https://visualstudio.microsoft.com/downloads/)
+- [Visual Studio 2022 version 17.1 or later to target .NET 7](https://visualstudio.microsoft.com/downloads/)
 - [Visual Studio 2022 version 17.7 Preview 1 or later to target .NET 8](https://visualstudio.microsoft.com/downloads/)
 - [.NET Upgrade Assistant extension for Visual Studio](/dotnet/core/porting/upgrade-assistant-install#install-the-visual-studio-extension)
 
@@ -44,7 +44,7 @@ Use the following steps to upgrade a project in Visual Studio:
 01. Select **In-place project upgrade**.
 01. Next, select the target framework. Based on the type of project you're upgrading, you're presented with different options. **.NET Standard 2.0** is a good choice if the library doesn't rely on a desktop technology like Windows Forms and can be used by both .NET Framework projects and .NET projects. However, the latest .NET releases provide many language and compiler improvements over .NET Standard.
 
-    Select **.NET 8.0** and then select **Next**.
+    Select **.NET 7.0** and then select **Next**.
 
     :::image type="content" source="media/index/vs-target-framework.png" alt-text="The .NET Upgrade Assistant's target framework decision tab.":::
 
@@ -64,7 +64,7 @@ Once all of the supporting libraries are upgraded, the main app project can be u
 
 01. Right-click on the **MatchingGame** project in the **Solution Explorer** window and select **Upgrade**:
 01. Select **In-place project upgrade** as the upgrade mode.
-01. Select **.NET 8.0** for the target framework and select **Next**.
+01. Select **.NET 7.0** for the target framework and select **Next**.
 01. Leave all of the artifacts selected and select **Upgrade selection**.
 
 After the upgrade is complete, the results are shown. Notice how the Windows Forms project has a warning symbol. Expand that and more information is shown about that step:
@@ -163,6 +163,6 @@ Visual Basic language projects require extra configuration.
 
 ## Conclusion
 
-The **Windows Forms Matching Game Sample** project is now upgraded to .NET 8. Your results will be different when you migrate your own project. Make sure you take the time to review the [Porting from .NET Framework to .NET](/dotnet/core/porting/) guide and the [Modernize after upgrading to .NET from .NET Framework](/dotnet/core/porting/modernize) article.
+The **Windows Forms Matching Game Sample** project is now upgraded to .NET 7. Your results will be different when you migrate your own project. Make sure you take the time to review the [Porting from .NET Framework to .NET](/dotnet/core/porting/) guide and the [Modernize after upgrading to .NET from .NET Framework](/dotnet/core/porting/modernize) article.
 
 [winforms-sample]: https://github.com/dotnet/samples/tree/main/windowsforms/matching-game
