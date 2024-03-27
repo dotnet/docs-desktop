@@ -1,13 +1,14 @@
 ---
 title: Troubleshoot 32-bit problems
-description: Describes the problems with 32-bit components with Visual Studio 2022 and Windows Forms, and those problems can be fixed. Instructions on how to enable the out-of-process designer are provided.
-ms.date: 03/08/2024
-ms.topic: overview
+description: Describes how Visual Studio and Windows Forms may have problems with 32-bit components. Learn how to enable the out-of-process designer, which may help.
+ms.date: 03/27/2024
+ms.topic: troubleshooting 
+#customer intent: As a developer I want to understand why 32-bit references are a problem so that I can fix my problems or upgrade Visual Studio
 ---
 
 # Troubleshoot 32-bit problems (Windows Forms .NET)
 
-After upgrading to Visual Studio 2022, you might run into a problem where the design-time experience of your app stops working. This could be related to referencing a 32-bit component. Visual Studio 2022 is a 64-bit process and can't reference 32-bit components, regardless of the underlying technology, such as .NET Framework, .NET, or COM\ActiveX. You might not realize you have references to 32-bit components until you try to upgrade Visual Studio. References that compile to 64-bit or target `AnyCPU` continue to work. You'll also run into the same problem if a component you're referencing compiles to `AnyCPU` but happens to reference something 32-bit.
+After upgrading to Visual Studio 2022, you might run into a problem where the design-time experience of your app stops working. This could be related to referencing a 32-bit component. Visual Studio 2022 is a 64-bit process and can't load 32-bit components, regardless of the underlying technology, such as .NET Framework, .NET, or COM\ActiveX. You might not realize you have references to 32-bit components until you try to upgrade Visual Studio. References that compile to 64-bit or target `AnyCPU` continue to work. You'll also run into the same problem if a component you're referencing compiles to `AnyCPU` but happens to reference something 32-bit.
 
 ## What's the problem
 
@@ -15,7 +16,7 @@ Windows Forms code runs in two modes: design-time and run-time. At run-time, you
 
 Previous versions of Visual Studio targeted 32-bit, and your project probably compiled to `AnyCPU`, which would pick 32-bit while in design mode to match Visual Studio. 32-bit specific references worked, but if you had a 64-bit specific reference, you might have run into a problem with the designer. With Visual Studio 2022, the problem reversed. Visual Studio 2022 is only available in 64-bit. Components and libraries that were compiled as `AnyCPU` work in both 32-bit and 64-bit and don't have an issue running in Visual Studio 2022 64-bit. But, after upgrading to Visual Studio 2022, your projects might fail to run at design-time if the project relies on a 32-bit specific component. This is even the case when your referenced component is compiled for `AnyCPU`, but happens to reference a 32-bit component or 32-bit COM\ActiveX library directly.
 
-To summarize, 32-bit components can't be used by the Windows Forms designer in Visual Studio 2022, which is a 64-bit app. The **out-of-process designer** was created to help Windows Forms for .NET apps during design-time, and is now improved to help with loading 32-bit components.
+To summarize, 32-bit components can't be used by the Windows Forms designer in Visual Studio 2022, which is a 64-bit app. The **out-of-process designer** was created to help Windows Forms for .NET apps during design-time for both 32-bit and 64-bit. This designer now helps with loading 32-bit and 64-bit .NET Framework components.
 
 ## What can you do
 
@@ -43,12 +44,12 @@ There are a few design changes you should consider, which might help your projec
 
 ## Out-of-process designer
 
-If your project targets .NET 8, you're already using the out-of-process designer. However, if you're still using .NET Framework, you need to enable the out-of-process designer.
+If your project targets .NET, you're already using the out-of-process designer. However, if you're still using .NET Framework, you need to enable the out-of-process designer.
 
 > [!WARNING]
 > The updated out-of-process 32-Bit .NET Framework Designer doesn't achieve full parity with the old in-process .NET Framework Designer due to the same architectural differences. Highly customized control designers aren't compatible. If you use custom control libraries from 3rd parties, check if they offer versions that support the out-of-process .NET Framework Designer.
 
-The **out-of-process designer** has been improved, with some limitations, to handle 32-bit issues with Visual Studio 2022:
+The **out-of-process designer**, with some limitations, handles 32-bit issues with Visual Studio 2022:
 
 - .NET Framework benefits from improved type resolution.
 - ActiveX and COM references are supported in both .NET Framework and .NET.
@@ -56,7 +57,7 @@ The **out-of-process designer** has been improved, with some limitations, to han
 
 ### Use the out-of-process designer
 
-Support for 32-bit references requires **Visual Studio 17.9 Preview 2 or later**. Enable it by adding the following `<PropertyGroup>` setting to your project file:
+Support for 32-bit references requires **Visual Studio 17.9 or later**. Enable it by adding the following `<PropertyGroup>` setting to your project file:
 
 ```xml
 <PropertyGroup>
@@ -72,6 +73,8 @@ Currently, when Visual Studio detects that a 32-bit reference fails to load, it 
 
 :::image type="content" source="./media/troubleshoot-32bit/designer-prompt.png" alt-text="The image of a window from Visual Studio prompting the user to enable the out-of-process designer.":::
 
+This detection feature is controlled in the Visual Studio menu, under **Tools** > **Options** > **Preview Features**.
+
 ## See also
 
-- [.NET Blog – WinForms in a 64-Bit world – our strategy going forward.](https://devblogs.microsoft.com/dotnet/winforms-designer-64-bit-path-forward/)
+- [.NET Blog – WinForms Designer Selection for 32-bit .NET Framework Projects](https://devblogs.microsoft.com/visualstudio/winforms-designer-selection-for-32-bit-net-framework-projects/)
