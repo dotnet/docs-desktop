@@ -42,7 +42,7 @@ Use the following steps to upgrade a project in Visual Studio:
     A new tab is opened that prompts you to choose how you want the upgrade to be performed.
 
 01. Select **In-place project upgrade**.
-01. Next, select the target framework. Based on the type of project you're upgrading, you're presented with different options. **.NET Standard 2.0** is a good choice if the library doesn't rely on a desktop technology like Windows Froms and can be used by both .NET Framework projects and .NET projects. However, the latest .NET releases provide many language and compiler improvements over .NET Standard.
+01. Next, select the target framework. Based on the type of project you're upgrading, you're presented with different options. **.NET Standard 2.0** is a good choice if the library doesn't rely on a desktop technology like Windows Forms and can be used by both .NET Framework projects and .NET projects. However, the latest .NET releases provide many language and compiler improvements over .NET Standard.
 
     Select **.NET 7.0** and then select **Next**.
 
