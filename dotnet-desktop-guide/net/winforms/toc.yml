@@ -19,7 +19,7 @@ items:
     href: get-started/create-app-visual-studio.md
 - name: Migration
   items:
-  - name: Upgrade to .NET 7
+  - name: How to upgrade to the latest .NET
     href: migration/index.md
 - name: Forms
   items:

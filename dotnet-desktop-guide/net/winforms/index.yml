@@ -1,13 +1,13 @@
 ### YamlMime:Landing
 
 title: Windows Forms documentation
-summary: Learn about using Windows Forms, an open-source, graphical user interface for Windows, on .NET 7.
+summary: Learn about using Windows Forms, an open-source, graphical user interface for Windows, on .NET.
 
 metadata:
-  title: Windows Forms for .NET 7 documentation
-  description: Learn about using Windows Forms, an open-source, graphical user interface for Windows, on .NET 7.
+  title: Windows Forms for .NET documentation
+  description: Learn about using Windows Forms, an open-source, graphical user interface for Windows, on .NET.
   ms.topic: landing-page
-  ms.date: 02/08/2023
+  ms.date: 04/09/2024
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
 
@@ -32,7 +32,7 @@ landingContent:
             url: migration/index.md
       - linkListType: download
         links:
-          - text: Visual Studio 2022 version 17.4
+          - text: Visual Studio 2022
             url: https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2022+desktopguide+winforms
 
   - title: Controls
