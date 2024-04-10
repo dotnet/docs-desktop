@@ -170,7 +170,7 @@ Visual Basic language projects require extra configuration.
 
 - [Porting from .NET Framework to .NET.](/dotnet/core/porting/)
 
-  The porting guide provides an overview of what you shuold consider when porting your code from .NET Framework to .NET. The complexity of your projects dictates how much work you'll do after the initial migration of the project files.
+  The porting guide provides an overview of what you should consider when porting your code from .NET Framework to .NET. The complexity of your projects dictates how much work you'll do after the initial migration of the project files.
 
 - [Modernize after upgrading to .NET from .NET Framework.](/dotnet/core/porting/modernize)
 
