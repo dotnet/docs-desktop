@@ -1,6 +1,6 @@
 ---
-title: Design-time errors
-description: Learn about some of the common errors that occur when the Windows Forms Designer fails to load.
+title: Design-time error troubleshooting
+description: Learn about some of the common errors that occur when the Windows Forms Designer fails to load. This article may help you troubleshoot those errors.
 ms.date: 07/19/2023
 ms.topic: troubleshooting
 f1_keywords: 
@@ -19,30 +19,46 @@ If the Windows Forms Designer fails to load due to an error in your code, in a t
 
 [!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
 
-## Yellow bar
+## Error window
 
-The yellow collapsible bar is created for every error, grouped by description. The bar describes the compiler error preventing the designer from loading property. It includes these details:
+The error window is made up of various parts.
 
-- The file error resides in.
-- The column and row in the file where the error occurs.
-- An error code.
-- A description of the error.
-- A link to navigate directly to the error.
+- Yellow bar
 
-## Instances of this error
+  The yellow collapsible bar is created for every error, grouped by description. The bar describes the compiler error preventing the designer from loading property. It includes these details:
 
-When the yellow error bar is expanded, each instance of the error is listed. Many error types include an exact location in the following format: _\<project name>_ _\<form name>_ Line:_\<line number>_ Column:_\<column number>_. If a call stack is associated with the error, you can select the **Show Call Stack** link to see it. Examining the call stack may further help you resolve the error.
+  - The file error resides in.
+  - The column and row in the file where the error occurs.
+  - An error code.
+  - A description of the error.
+  - A link to navigate directly to the error.
 
-> [!IMPORTANT]
-> The elements of an error may vary based on the code language you're using.
+- Instances of this error
 
-## Help with this error
+  When the yellow error bar is expanded, each instance of the error is listed. Many error types include an exact location in the following format: _\<project name>_ _\<form name>_ Line:_\<line number>_ Column:_\<column number>_. If a call stack is associated with the error, you can select the **Show Call Stack** link to see it. Examining the call stack may further help you resolve the error.
 
-If a help article for the error is available, select the **MSDN Help** link to navigate directly to the help page.
+  > [!IMPORTANT]
+  > The elements of an error may vary based on the code language you're using.
 
-## Forum posts about this error
+- Help with this error
 
-Select the **Search the MSDN Forums for posts related to this error** link to navigate to the old Microsoft Developer Network forums. You may want to search or ask a question on the [Microsoft Q&A](/answers/tags/21/windows-forms) or [StackOverflow](https://stackoverflow.com/questions/tagged/winforms) forums
+  If a help article for the error is available, select the **MSDN Help** link to navigate directly to the help page.
+
+- Forum posts about this error
+
+  Select the **Search the MSDN Forums for posts related to this error** link to navigate to the old Microsoft Developer Network forums. You may want to search or ask a question on the [Microsoft Q&A](/answers/tags/21/windows-forms) or [StackOverflow](https://stackoverflow.com/questions/tagged/winforms) forums
+
+## What to try first
+
+Much the time an error can be cleared by cleaning and rebuilding the project or solution.
+
+01. Find the **Solution Explorer** window.
+01. Right-click on the solution or project, and select **Clean**.
+01. Right-click on the solution or project, and select **Rebuild**.
+
+You can also try to delete the _bin_ and _obj_ folders from the project folder. This may clear a temporary file that doesn't seem to get cleaned and may cause a **restore** action to happen, fixing a bad dependency.
+
+Use the following section to triage common design-time errors.
 
 ## Common design-time errors
 
@@ -137,7 +153,7 @@ You've specified a name for an inherited form that already exists in the project
 
 ### '\<Toolbox tab name>' is not a toolbox category
 
-A third-party designer has tried to access a tab on the Toolbox that doesn't exist. Contact the component vendor.
+A third-party designer tried to access a tab on the Toolbox that doesn't exist. Contact the component vendor.
 
 ### A requested language parser is not installed
 
