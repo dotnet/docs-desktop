@@ -13,8 +13,6 @@ This article describes the differences between Windows Presentation Foundation (
 
 There are a few features of .NET Framework that .NET doesn't support. For more information on unsupported technologies, see [.NET Framework technologies unavailable on .NET](/dotnet/core/porting/net-framework-tech-unavailable).
 
-[!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
-
 ## SDK-style projects
 
 .NET uses SDK-style project files. These project files are different from the traditional .NET Framework project files managed by Visual Studio. To migrate your .NET Framework WPF apps to .NET, you must convert your projects. For more information, see [How to upgrade a WPF desktop app to .NET 7](index.md).

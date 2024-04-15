@@ -16,8 +16,6 @@ helpviewer_keywords:
 
 In applications, it's possible that handlers attached to event sources won't be destroyed in coordination with the listener object that attached the handler to the source. This situation can lead to memory leaks. Windows Presentation Foundation (WPF) introduces a design pattern that can be used to address this issue. The design pattern provides a dedicated manager class for particular events, and implements an interface on listeners for that event. This design pattern is known as the *weak event pattern*.
 
-[!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
-
 ## Prerequisites
 
 The article assumes a basic knowledge of routed events, and that you've read [Routed events overview](routed-events-overview.md). To follow the examples in this article, it helps if you're familiar with Extensible Application Markup Language (XAML) and know how to write Windows Presentation Foundation (WPF) applications.

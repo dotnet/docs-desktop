@@ -20,8 +20,6 @@ This overview focuses on the styling and templating aspects of the app and doesn
 
 It's important to understand resources, which are what enable styles and templates to be reused. For more information about resources, see [Overview of XAML resources](../systems/xaml-resources-overview.md).
 
-[!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
-
 ## Sample
 
 The sample code provided in this overview is based on a [simple photo browsing application](https://github.com/Microsoft/WPF-Samples/tree/master/Styles%20&%20Templates/IntroToStylingAndTemplating) shown in the following illustration.

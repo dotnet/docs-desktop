@@ -17,8 +17,6 @@ If the Windows Forms Designer fails to load due to an error in your code, in a t
 
 :::image type="content" source="media/designer-errors/vs-designer-error-message.png" alt-text="A designer error tab in Visual Studio that says that the event for a button is missing.":::
 
-[!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
-
 ## Yellow bar
 
 The yellow collapsible bar is created for every error, grouped by description. The bar describes the compiler error preventing the designer from loading property. It includes these details:

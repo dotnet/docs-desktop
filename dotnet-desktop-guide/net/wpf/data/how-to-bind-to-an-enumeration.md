@@ -19,8 +19,6 @@ This example shows how to bind to an enumeration. Unfortunately there isn't a di
 
 The <xref:System.Windows.Data.ObjectDataProvider> type provides a convenient way to create an object in XAML and use it as a data source.
 
-[!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
-
 ## Reference the enumeration
 
 Use the <xref:System.Windows.Data.ObjectDataProvider> type to wrap an array of enumeration values provided by the enumeration type itself.

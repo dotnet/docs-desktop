@@ -23,8 +23,6 @@ helpviewer_keywords:
 
 Custom painting of controls is one of the many complicated tasks made easy by Windows Forms. When authoring a custom control, you have many options available to handle your control's graphical appearance. If you're authoring a [custom control](../controls-design/overview.md#custom-controls), that is, a control that inherits from <xref:System.Windows.Forms.Control>, you must provide code to render its graphical representation.
 
-[!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
-
 If you're creating a [composite control](../controls-design/usercontrol-overview.md), that is a control that inherits from <xref:System.Windows.Forms.UserControl> or one of the [existing Windows Forms controls](../controls-design/extend-existing.md), you may override the standard graphical representation and provide your own graphics code.
 
 If you want to provide custom rendering for an existing control without creating a new control, your options become more limited. However, there are still a wide range of graphical possibilities for your controls and applications.

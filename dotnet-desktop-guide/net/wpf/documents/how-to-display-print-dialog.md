@@ -14,8 +14,6 @@ helpviewer_keywords:
 
 Want to print from your application? You can use the <xref:System.Windows.Controls.PrintDialog> class to open a standard Microsoft Windows print dialog box. Here's how.
 
-[!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
-
 > [!NOTE]
 > The <xref:System.Windows.Controls.PrintDialog?displayProperty=nameWithType> control used for WPF and discussed here, should not be confused with the <xref:System.Windows.Forms.PrintDialog?displayProperty=nameWithType> component of Windows Forms.
 
