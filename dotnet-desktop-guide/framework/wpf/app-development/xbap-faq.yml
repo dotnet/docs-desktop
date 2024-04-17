@@ -36,7 +36,7 @@ sections:
           compatibility. You might be required to configure local policy to enable your app in the
           appropriate IE security zone. For more information, see [What is Internet Explorer (IE) mode](/deployedge/edge-ie-mode)
           and [Set up Legacy Browser Support for Microsoft Edge in IE mode](https://support.google.com/chrome/a/answer/10368106).
-          
+
   - name: Migration options
     questions:
       - question: Can I convert my XBAP to a WPF application?
