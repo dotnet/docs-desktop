@@ -7,13 +7,14 @@ metadata:
   ms.service: dotnet-framework
   ms.topic: faq
   ms.date: 04/15/2024
+  ai-usage: ai-assisted
 
 title: "Frequently asked questions about WPF browser-hosted applications (XBAP)"
 summary: |
-  WPF was released in....
-  XBAPs came around in...
-  The browsers of the time had...
-  The browsers of today no longer support...
+  Windows Presentation Foundation (WPF) was released as a part of .NET Framework 3.0 in 2006. The XAML Browser Application (XBAP) feature, which allows WPF apps to be hosted and run in a web browser, was also introduced at the same time as a part of WPF. At the time of WPF and XBAP's release in 2006, the most popular web browsers available were Internet Explorer 7, Mozilla Firefox 2, and Safari 2. Google Chrome wasn't yet available, as it was released
+  two years later in 2008.
+
+  XBAP uses the ClickOnce deployment technology in browsers, which is a Microsoft technology that allows the user to install and run an app by clicking a link in a web page. However, this technology relied heavily on the support of NPAPI (Netscape Plugin Application Programming Interface) in browsers. NPAPI has been phased out in recent years due to security and stability issues. Major browsers like Edge, Chrome, Firefox, and Safari removed support for NPAPI plugins, which effectively means that XBAP apps can no longer be run in these browsers.
 
 sections:
   - name: Support for XBAPs
