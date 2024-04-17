@@ -41,7 +41,7 @@ sections:
   - name: Migration options
     questions:
       - question: Can I convert my XBAP to a WPF application?
-        answer: Yes. You can migrate your app to a standard WPF application and deploy your app to the web with Click-Once.
+        answer: Yes. You can migrate your app to a standard WPF application and deploy it through an installer. You can still publish a WPF app with ClickOnce, but ClickOnce requires a browser with IE Mode enabled or a plugin that enables ClickOnce.
 
       - question: I need to run in a browser, what are my options?
         answer: |
