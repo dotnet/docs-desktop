@@ -19,8 +19,6 @@ helpviewer_keywords:
 
 This example shows how to define a resource and reference it. A resource can be referenced through XAML or through code.
 
-[!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
-
 ## XAML example
 
 The following example defines two types of resources: a <xref:System.Windows.Media.SolidColorBrush> resource, and several <xref:System.Windows.Style> resources.

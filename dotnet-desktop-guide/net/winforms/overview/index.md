@@ -10,8 +10,6 @@ ms.topic: overview
 
 Welcome to the Desktop Guide for Windows Forms, a UI framework that creates rich desktop client apps for Windows. The Windows Forms development platform supports a broad set of app development features, including controls, graphics, data binding, and user input. Windows Forms features a drag-and-drop visual designer in Visual Studio to easily create Windows Forms apps.
 
-[!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
-
 There are two implementations of Windows Forms:
 
 01. The open-source implementation hosted on [GitHub](https://github.com/dotnet/winforms).

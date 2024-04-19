@@ -10,8 +10,6 @@ helpviewer_keywords:
 
 Add forms to your project with Visual Studio. When your app has multiple forms, you can choose which is the startup form for your app, and you can display multiple forms at the same time.
 
-[!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
-
 ## Add a new form
 
 Add a new form with Visual Studio.

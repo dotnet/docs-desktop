@@ -23,8 +23,6 @@ helpviewer_keywords:
 
 If you're designing a form that the user can resize at run time, the controls on your form should resize and reposition properly. Controls have two properties that help with automatic placement and sizing, when the form changes size.
 
-[!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
-
 - <xref:System.Windows.Forms.Control.Dock%2A?displayProperty=nameWithType>
 
   Controls that are docked fill the edges of the control's container, either the form or a container control. For example, Windows Explorer docks its <xref:System.Windows.Forms.TreeView> control to the left side of the window and its <xref:System.Windows.Forms.ListView> control to the right side of the window. The docking mode can be any side of the control's container, or set to fill the remaining space of the container.

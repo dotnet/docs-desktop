@@ -20,8 +20,6 @@ helpviewer_keywords:
 
 This example demonstrates how to use system-defined resources. System resources are provided by WPF and allow access to operating system resources, such as fonts, colors, and icons. System resources expose several system-defined values as both resources and properties to help you create visuals that are consistent with Windows.
 
-[!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
-
 ## Fonts
 
 Use the <xref:System.Windows.SystemFonts> class to reference the fonts used by the operating system. This class contains system font values as static properties, and properties that reference resource keys that can be used to access those values dynamically at run time. For example, <xref:System.Windows.SystemFonts.CaptionFontFamily%2A> is a <xref:System.Windows.SystemFonts> value, and <xref:System.Windows.SystemFonts.CaptionFontFamilyKey%2A> is a corresponding resource key.

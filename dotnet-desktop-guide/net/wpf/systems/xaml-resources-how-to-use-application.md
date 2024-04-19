@@ -14,8 +14,6 @@ helpviewer_keywords:
 
 This example demonstrates how to use application-defined resources. Resources can be defined at the application level, generally through the _App.xaml_ or _Application.xaml_ file, whichever one your project uses. Resources that are defined by the application are globally scoped and accessible by all parts of the application.
 
-[!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
-
 ## Example
 
 The following example shows an application definition file. The application definition file defines a resource section (a value for the <xref:System.Windows.Application.Resources%2A> property). Resources defined at the application level can be accessed by all other pages that are part of the application. In this case, the resource is a declared style. Because a complete style that includes a control template can be lengthy, this example omits the control template that is defined within the <xref:System.Windows.Controls.ContentControl.ContentTemplate%2A> property setter of the style.

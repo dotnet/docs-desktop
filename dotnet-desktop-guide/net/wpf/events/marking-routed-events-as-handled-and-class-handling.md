@@ -29,8 +29,6 @@ Although there's no absolute rule for when to mark a routed event as handled, co
 
 Routed event handlers can be either instance handlers or class handlers. Instance handlers handle routed events on objects or XAML elements. Class handlers handle a routed event at a class level, and are invoked before any instance handler responding to the same event on any instance of the class. When routed events are marked as handled, they're often marked as such within class handlers. This article discusses the benefits and potential pitfalls of marking routed events as handled, the different types of routed events and routed event handlers, and event suppression in composite controls.
 
-[!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
-
 ## Prerequisites
 
 The article assumes a basic knowledge of routed events, and that you've read [Routed events overview](routed-events-overview.md). To follow the examples in this article, it helps if you're familiar with Extensible Application Markup Language (XAML) and know how to write Windows Presentation Foundation (WPF) applications.

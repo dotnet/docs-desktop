@@ -21,8 +21,6 @@ Accessibility aids are specialized programs and devices that help people with di
 - <xref:System.Windows.Forms.Control.AccessibleName?displayProperty=fullName>
 - <xref:System.Windows.Forms.AccessibleRole?displayProperty=fullName>
 
-[!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
-
 ## AccessibilityObject Property
 
 This read-only property contains an <xref:System.Windows.Forms.AccessibleObject> instance. The `AccessibleObject` implements the <xref:Accessibility.IAccessible> interface, which provides information about the control's description, screen location, navigational abilities, and value. The designer sets this value when the control is added to the form.

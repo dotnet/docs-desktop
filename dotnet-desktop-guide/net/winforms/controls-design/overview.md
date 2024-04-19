@@ -20,8 +20,6 @@ helpviewer_keywords:
 
 With Windows Forms, you can create new controls or modify existing controls through inheritance. This article highlights the differences among the ways of creating new controls, and provides you with information about how to choose a particular type of control for your project.
 
-[!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
-
 ## Base control class
 
 The <xref:System.Windows.Forms.Control> class is the base class for Windows Forms controls. It provides the infrastructure required for visual display in Windows Forms applications and provides the following capabilities:

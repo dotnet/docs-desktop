@@ -15,8 +15,6 @@ helpviewer_keywords:
 
 You can use read-only dependency properties to prevent property values being set from outside your code. This article discusses existing read-only dependency properties and the scenarios and techniques for creating a custom read-only dependency property.
 
-[!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
-
 ## Prerequisites
 
 The article assumes a basic knowledge of dependency properties, and that you've read [Dependency properties overview](dependency-properties-overview.md). To follow the examples in this article, it helps if you're familiar with Extensible Application Markup Language (XAML) and know how to write WPF applications.

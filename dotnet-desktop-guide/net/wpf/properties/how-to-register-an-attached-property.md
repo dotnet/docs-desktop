@@ -15,8 +15,6 @@ helpviewer_keywords:
 
 This article describes how to register an attached property and provide public accessors that let you access the attached property through Extensible Application Markup Language (XAML) and code. Attached properties enable extra property/value pairs to be set on any XAML element, even though the element doesn't define those extra properties in its object model. The extra properties are globally accessible. Attached properties are typically defined as a specialized form of dependency property that doesn't have a conventional property wrapper. Most attached properties for Windows Presentation Foundation (WPF) types are also implemented as dependency properties. You can create dependency properties on any <xref:System.Windows.DependencyObject> derived type.
 
-[!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
-
 ## Example
 
 The following example shows how to register an attached property as a dependency property, by using the <xref:System.Windows.DependencyProperty.RegisterAttached%2A> method. The provider class has the option of specifying a default value in property metadata. For more information on property metadata, see [Dependency property metadata](custom-dependency-properties.md#dependency-property-metadata). In this example, the `HasFish` property has a <xref:System.Boolean> value type, with its default value set to `false`.
