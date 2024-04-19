@@ -27,8 +27,6 @@ Windows Forms controls usually display some text that's related to the primary f
 
 You can also set the text by using the [designer](#designer).
 
-[!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
-
 ## Designer
 
 01. In the **Properties** window in Visual Studio, set the **Text** property of the control to an appropriate string.

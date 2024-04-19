@@ -26,8 +26,6 @@ An *access key* is an underlined character in the text of a menu, menu item, or 
 
 Controls that cannot receive focus can't have access keys, except label controls.
 
-[!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
-
 ## Designer
 
 In the **Properties** window of Visual Studio, set the **Text** property to a string that includes an ampersand (&) before the letter that will be the access key. For example, to set the letter "P" as the access key, enter **&Print**.

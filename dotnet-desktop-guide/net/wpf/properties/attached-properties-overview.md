@@ -15,8 +15,6 @@ helpviewer_keywords:
 
 An attached property is a Extensible Application Markup Language (XAML) concept. Attached properties enable extra property/value pairs to be set on any XAML element that derives from <xref:System.Windows.DependencyObject>, even though the element doesn't define those extra properties in its object model. The extra properties are globally accessible. Attached properties are typically defined as a specialized form of dependency property that doesn't have a conventional property wrapper.
 
-[!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
-
 ## Prerequisites
 
 The article assumes a basic knowledge of dependency properties, and that you've read [Dependency properties overview](dependency-properties-overview.md). To follow the examples in this article, it helps if you're familiar with XAML and know how to write Windows Presentation Foundation (WPF) applications.

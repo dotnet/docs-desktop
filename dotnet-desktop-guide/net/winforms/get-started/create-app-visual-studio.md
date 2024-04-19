@@ -12,8 +12,6 @@ dev_langs:
 
 In this short tutorial, you'll learn how to create a new Windows Forms app with Visual Studio. Once the initial app has been generated, you'll learn how to add controls and how to handle events. By the end of this tutorial, you'll have a simple app that adds names to a list box.
 
-[!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
-
 In this tutorial, you learn how to:
 
 > [!div class="checklist"]

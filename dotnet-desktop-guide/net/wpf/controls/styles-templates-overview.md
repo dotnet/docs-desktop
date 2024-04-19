@@ -20,8 +20,6 @@ This overview focuses on the styling and templating aspects of the app and doesn
 
 It's important to understand resources, which are what enable styles and templates to be reused. For more information about resources, see [Overview of XAML resources](../systems/xaml-resources-overview.md).
 
-[!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
-
 ## Sample
 
 The sample code provided in this overview is based on a [simple photo browsing application](https://github.com/Microsoft/WPF-Samples/tree/master/Styles%20&%20Templates/IntroToStylingAndTemplating) shown in the following illustration.
@@ -174,12 +172,12 @@ Controls are always in a specific **state**. For example, when the mouse moves o
 
 | VisualState Name | VisualStateGroup Name | Description |
 | ---------------- | --------------------- | ----------- |
-| Normal           | CommonStates          | The default state. |
-| MouseOver        | CommonStates          | The mouse pointer is positioned over the control. |
-| Pressed          | CommonStates          | The control is pressed. |
-| Disabled         | CommonStates          | The control is disabled. |
-| Focused          | FocusStates           | The control has focus. |
-| Unfocused        | FocusStates           | The control does not have focus. |
+| `Normal`         | `CommonStates`        | The default state. |
+| `MouseOver`      | `CommonStates`        | The mouse pointer is positioned over the control. |
+| `Pressed`        | `CommonStates`        | The control is pressed. |
+| `Disabled`       | `CommonStates`        | The control is disabled. |
+| `Focused`        | `FocusStates`         | The control has focus. |
+| `Unfocused`      | `FocusStates`         | The control does not have focus. |
 
 By defining a <xref:System.Windows.VisualStateManager?displayProperty=fullName> on the root element of a control template, you can trigger animations when a control enters a specific state. The `VisualStateManager` declares which combinations of <xref:System.Windows.VisualStateGroup> and <xref:System.Windows.VisualState> to watch. When the control enters a watched state, the animation defined by the `VisualStateManager` is started.
 

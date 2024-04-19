@@ -17,8 +17,6 @@ helpviewer_keywords:
 
 Several Windows Forms controls can display images. These images can be icons that clarify the purpose of the control, such as a diskette icon on a button denoting the Save command. Alternatively, the icons can be background images to give the control the appearance and behavior you want.
 
-[!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
-
 ## Display an image - designer
 
 In Visual Studio, use the Visual Designer to display an image.

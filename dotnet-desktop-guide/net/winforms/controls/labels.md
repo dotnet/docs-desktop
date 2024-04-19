@@ -15,8 +15,6 @@ helpviewer_keywords:
 
 Windows Forms <xref:System.Windows.Forms.Label> controls are used to display text that cannot be edited by the user. They're used to identify objects on a form and to provide a description of what a certain control represents or does. For example, you can use labels to add descriptive captions to text boxes, list boxes, combo boxes, and so on. You can also write code that changes the text displayed by a label in response to events at run time.
 
-[!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
-
 ## Working with the Label Control  
 
 Because the <xref:System.Windows.Forms.Label> control can't receive focus, it can be used to create access keys for other controls. An access key allows a user to focus the next control in tab order by pressing the <kbd>Alt</kbd> key with the chosen access key. For more information, see [Use a label to focus a control](how-to-create-access-keys.md#use-a-label-to-focus-a-control).

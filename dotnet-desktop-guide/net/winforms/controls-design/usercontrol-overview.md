@@ -24,8 +24,6 @@ User controls are designed like Forms, with a visual designer. You create, arran
 
 User controls are usable by the project in which they're created, or in other projects that have reference to the user control's library.
 
-[!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
-
 ## Constituent controls
 
 The constituent controls are available to the user control, and the app user can interact with them all individually at runtime, but the properties and methods declared by the constituent controls aren't exposed to the consumer. For example, if you place a `TextBox` and `Button` control on the user control, the button's `Click` event is handled internally by the user control, but not by the Form where the user control is placed.

@@ -14,8 +14,6 @@ helpviewer_keywords:
 
 Windows Presentation Foundation (WPF) resources support a merged resource dictionary feature. This feature provides a way to define the resources portion of a WPF application outside of the compiled XAML application. Resources can then be shared across applications and are also more conveniently isolated for localization.
 
-[!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
-
 ## Create a merged dictionary
 
 In markup, you use the following syntax to introduce a merged resource dictionary into a page:
