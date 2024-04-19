@@ -1,6 +1,6 @@
 ---
 title: Differences between .NET Framework and .NET
-description: Describes the differences between the .NET Framework implementation of Windows Presentation Foundation (WPF) and .NET WPF. When migrating your app, you should consider these incompatibilities.
+description: Describes the differences between the .NET Framework implementation of Windows Presentation Foundation (WPF) and .NET WPF.
 author: adegeo
 ms.date: 02/15/2023
 ms.author: adegeo
@@ -24,7 +24,7 @@ If your .NET Framework app lists its NuGet dependencies in a *packages.config* f
 01. In Visual Studio, open the **Solution Explorer** pane.
 01. In your WPF project, right-click **packages.config** > **Migrate packages.config to PackageReference**.
 
-:::image type="content" source="media/differences-from-net-framework/package-reference-migration.png" alt-text="Upgrading to PackageReference.":::
+:::image type="content" source="media/differences-from-net-framework/package-reference-migration.png" alt-text="The Solution Explorer's context menu in Visual Studio, displaying the 'Migrate packages.config' item.":::
 
 A dialog will appear showing calculated top-level NuGet dependencies and asking which other NuGet packages should be promoted to top level. Select **OK** and the *packages.config* file will be removed from the project and `<PackageReference>` elements will be added to the project file.
 
@@ -38,9 +38,9 @@ Publicly defined CAS-related types were moved out of the WPF assemblies and into
 
 | Source assembly | Target assembly | Type                |
 | --------------- | --------------- | ------------------- |
-| *WindowsBase.dll* | *System.Security.Permissions.dll* | <xref:System.Security.Permissions.MediaPermission> <br /> <xref:System.Security.Permissions.MediaPermissionAttribute> <br /> <xref:System.Security.Permissions.MediaPermissionAudio> <br /> <xref:System.Security.Permissions.MediaPermissionImage> <br /> <xref:System.Security.Permissions.MediaPermissionVideo> <br /> <xref:System.Security.Permissions.WebBrowserPermission> <br /> <xref:System.Security.Permissions.WebBrowserPermissionAttribute> <br /> <xref:System.Security.Permissions.WebBrowserPermissionLevel> |
-| *System.Xaml.dll* | *System.Security.Permissions.dll* | <xref:System.Xaml.Permissions.XamlLoadPermission> |
-| *System.Xaml.dll* | *System.Windows.Extension.dll*    | <xref:System.Xaml.Permissions.XamlAccessLevel><br/> |
+| WindowsBase.dll | System.Security.Permissions.dll | <xref:System.Security.Permissions.MediaPermission> <br /> <xref:System.Security.Permissions.MediaPermissionAttribute> <br /> <xref:System.Security.Permissions.MediaPermissionAudio> <br /> <xref:System.Security.Permissions.MediaPermissionImage> <br /> <xref:System.Security.Permissions.MediaPermissionVideo> <br /> <xref:System.Security.Permissions.WebBrowserPermission> <br /> <xref:System.Security.Permissions.WebBrowserPermissionAttribute> <br /> <xref:System.Security.Permissions.WebBrowserPermissionLevel> |
+| System.Xaml.dll | System.Security.Permissions.dll | <xref:System.Xaml.Permissions.XamlLoadPermission> |
+| System.Xaml.dll | System.Windows.Extension.dll    | <xref:System.Xaml.Permissions.XamlAccessLevel><br/> |
 
 > [!NOTE]
 > In order to minimize porting friction, the functionality for storing and retrieving information related to the following properties was retained in the `XamlAccessLevel` type.
