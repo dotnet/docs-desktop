@@ -13,8 +13,6 @@ helpviewer_keywords:
 
 Sometimes you'll want to add a new print job to the print queue without opening a print dialog box. You can use one of the <xref:System.Printing.PrintQueue.AddJob%2A?displayProperty=nameWithType> methods to do that. Here's how.
 
-[!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
-
 In the following example, we use the <xref:System.Printing.PrintQueue.AddJob%28System.String%2CSystem.String%2CSystem.Boolean%29> method, one of the several overloads of `AddJob`, to:
 
 - Add a new print job for an XML Paper Specification (XPS) document into the default print queue.

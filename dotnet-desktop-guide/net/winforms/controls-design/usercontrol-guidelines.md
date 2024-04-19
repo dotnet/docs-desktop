@@ -19,8 +19,6 @@ helpviewer_keywords:
 
 This article provides guidelines for creating user controls. We recommend that you follow these guidelines to make sure that you design a user control that's consistent with other Windows Forms controls.
 
-[!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
-
 ## Defining events
 
 Events commonly communicate state change and alert you to how the user is interacting with a Windows Forms control. For more information about events and delegates, see [Handle and raise events](/dotnet/standard/events/index).

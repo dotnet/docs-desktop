@@ -20,8 +20,6 @@ helpviewer_keywords:
 
 Windows Presentation Foundation (WPF) defines several events that are raised in response to a change in the value of a property. Often the property is a dependency property. The event itself can be a routed event or a standard common language runtime (CLR) event, depending on whether the event should be routed through an element tree, or occur only on the object where the property changed. The latter scenario applies when a property change is only relevant to the object where the property value changed.
 
-[!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
-
 ## Prerequisites
 
 This article assumes a basic knowledge of dependency properties, and that you've read [Routed events overview](routed-events-overview.md).

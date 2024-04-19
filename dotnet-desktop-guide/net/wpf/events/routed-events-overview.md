@@ -23,8 +23,6 @@ helpviewer_keywords:
 
 Windows Presentation Foundation (WPF) application developers and component authors can use routed events to propagate events through an element tree, and invoke event handlers on multiple listeners in the tree. These features aren't found in common language runtime (CLR) events. Several WPF events are routed events, such as <xref:System.Windows.Controls.Primitives.ButtonBase.Click?displayProperty=nameWithType>. This article discusses basic routed event concepts and offers guidance on when and how to respond to routed events.
 
-[!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
-
 ## Prerequisites
 
 This article assumes a basic knowledge of the common language runtime (CLR), object-oriented programming, and how [WPF element layout](../xaml/index.md) can be conceptualized as a tree. To follow the examples in this article, it helps if you're familiar with Extensible Application Markup Language (XAML) and know how to write [WPF applications](../get-started/create-app-visual-studio.md).

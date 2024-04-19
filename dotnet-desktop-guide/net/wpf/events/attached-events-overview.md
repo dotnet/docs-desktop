@@ -20,8 +20,6 @@ helpviewer_keywords:
 
 Extensible Application Markup Language (XAML) defines a language component and event type called an _attached event_. Attached events can be used to define a new [routed event](<xref:System.Windows.RoutedEvent>) in a non-element class and raise that event on any element in your tree. To do so, you must register the attached event as a routed event and provide specific [backing code](#define-a-custom-attached-event) that supports attached event functionality. Since attached events are registered as routed events, when raised on an element they propagate through the element tree.
 
-[!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
-
 ## Prerequisites
 
 The article assumes a basic knowledge of Windows Presentation Foundation (WPF) routed events, and that you've read [Routed events overview](routed-events-overview.md) and [XAML in WPF](../xaml/index.md). To follow the examples in this article, it helps if you're familiar with XAML and know how to write WPF applications.

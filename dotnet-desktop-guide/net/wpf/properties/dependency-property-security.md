@@ -20,8 +20,6 @@ helpviewer_keywords:
 
 The accessibility of read-write dependency properties through the Windows Presentation Foundation (WPF) property system effectively makes them public properties. As a result, it's not possible to make security guarantees about read-write dependency property values. The WPF property system provides more security for read-only dependency properties so that you can restrict write access.
 
-[!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
-
 ## Access and security of property wrappers
 
 A common language runtime (CLR) property wrapper is usually included in read-write dependency property implementations to simplify getting or setting property values. If included, the CLR property wrapper is a convenience method that implements the <xref:System.Windows.DependencyObject.GetValue%2A> and <xref:System.Windows.DependencyObject.SetValue%2A> static calls that interact with the underlying dependency property. Essentially, a CLR property wrapper exposes a dependency property as a CLR property backed by a dependency property rather than a private field.

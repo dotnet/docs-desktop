@@ -17,8 +17,6 @@ The tab order is the order in which a user moves focus from one control to anoth
 
 You can also set the tab order by using the [designer](#designer).
 
-[!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
-
 Tab order can be set in the **Properties** window of the designer using the <xref:System.Windows.Forms.Control.TabIndex%2A> property. The `TabIndex` property of a control determines where it's positioned in the tab order. By default, the first control added to the designer has a `TabIndex` value of 0, the second has a `TabIndex` of 1, and so on. Once the highest `TabIndex` has been focused, pressing <kbd>Tab</kbd> will cycle and focus the control with the lowest `TabIndex` value.
 
 Container controls, such as a <xref:System.Windows.Forms.GroupBox> control, treat their children as separate from the rest of the form. Each child in the container has its own <xref:System.Windows.Forms.Control.TabIndex%2A> value. Because a container control can't be focused, when the tab order reaches the container control, the child control of the container with the lowest `TabIndex` is focused. As the <kbd>Tab</kbd> is pressed, each child control is focused according to its `TabIndex` value until the last control. When <kbd>Tab</kbd> is pressed on the last control, focus resumes to the next control in the parent of the container, based on the next `TabIndex` value.

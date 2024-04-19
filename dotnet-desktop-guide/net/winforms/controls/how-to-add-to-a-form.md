@@ -16,8 +16,6 @@ Most forms are designed by adding controls to the surface of the form to define 
 
 The primary way a control is added to a form is through the Visual Studio Designer, but you can also manage the controls on a form at run time through code.
 
-[!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
-
 ## Add with Designer
 
 Visual Studio uses the Forms Designer to design forms. There is a Controls pane which lists all the controls available to your app. You can add controls from the pane in two ways:

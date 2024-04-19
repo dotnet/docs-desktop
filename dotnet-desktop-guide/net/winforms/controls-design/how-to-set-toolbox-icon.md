@@ -16,8 +16,6 @@ helpviewer_keywords:
 
 Controls that you create always receive a generic icon for the **Toolbox** window in Visual Studio. However, when you change the icon, it adds a sense of professionalism to your control, and makes it stand out in the toolbox. This article teaches you how to set the icon for your control.
 
-[!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
-
 ## Bitmap icon
 
 Icons for the **Toolbox** window in Visual Studio must conform to certain standards, otherwise they're ignored or are displayed incorrectly.

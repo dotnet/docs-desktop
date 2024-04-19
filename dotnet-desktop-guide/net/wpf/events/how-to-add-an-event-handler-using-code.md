@@ -19,8 +19,6 @@ You can assign an event handler to an element in Windows Presentation Foundation
 - You add an element and assign its event handler after the markup page that will contain the element loads.
 - You define the element tree for your application entirely in code.
 
-[!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
-
 ## Prerequisites
 
 The article assumes a basic knowledge of routed events, and that you've read [Routed events overview](routed-events-overview.md). To follow the examples in this article, it helps if you're familiar with Extensible Application Markup Language (XAML) and know how to write Windows Presentation Foundation (WPF) applications.

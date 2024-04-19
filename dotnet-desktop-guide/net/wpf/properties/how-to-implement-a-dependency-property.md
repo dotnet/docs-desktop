@@ -15,8 +15,6 @@ helpviewer_keywords:
 
 This article describes how to implement a dependency property by using a <xref:System.Windows.DependencyProperty> field to back a common language runtime (CLR) property. Dependency properties support several advanced Windows Presentation Foundation (WPF) property system features. These features include styles, data binding, inheritance, animation, and default values. If you want properties that you define to support those features, then implement your properties as a dependency property.
 
-[!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
-
 ## Example  
 
 The following example shows how to register a dependency property, by calling the <xref:System.Windows.DependencyProperty.Register%2A> method. The `Register` method returns a <xref:System.Windows.DependencyProperty> instance called a *dependency property identifier*. The identifier is stored in a `static readonly` field, and holds the name and characteristics of a dependency property.

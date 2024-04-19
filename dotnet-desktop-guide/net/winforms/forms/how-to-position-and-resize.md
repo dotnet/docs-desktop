@@ -18,8 +18,6 @@ When a form is created, the size and location is initially set to a default valu
 
 You can change the size of a form at design time with Visual Studio, and at run time with code.
 
-[!INCLUDE [desktop guide under construction](../../includes/desktop-guide-preview-note.md)]
-
 ## Resize with the designer
 
 After [adding a new form](how-to-add.md) to the project, the size of a form is set in two different ways. First, you can set it is with the size grips in the designer. By dragging either the right edge, bottom edge, or the corner, you can resize the form.
