@@ -50,7 +50,7 @@ The error window is made up of various parts.
 
 ## What to try first
 
-Much the time an error can be cleared by cleaning and rebuilding the project or solution.
+You can often clear an error by cleaning and rebuilding the project or solution.
 
 01. Find the **Solution Explorer** window.
 01. Right-click on the solution or project, and select **Clean**.
