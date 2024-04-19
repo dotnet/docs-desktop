@@ -1,6 +1,6 @@
 ---
 title: Design-time error troubleshooting
-description: Learn about some of the common errors that occur when the Windows Forms Designer fails to load. This article may help you troubleshoot those errors.
+description: Learn about some of the common errors that occur when the Windows Forms Designer fails to load. This article might help you troubleshoot those errors.
 ms.date: 07/19/2023
 ms.topic: troubleshooting
 f1_keywords: 
@@ -27,7 +27,7 @@ The error window is made up of various parts.
 
   The yellow collapsible bar is created for every error, grouped by description. The bar describes the compiler error preventing the designer from loading property. It includes these details:
 
-  - The file error resides in.
+  - The file the error resides in.
   - The column and row in the file where the error occurs.
   - An error code.
   - A description of the error.
@@ -35,10 +35,10 @@ The error window is made up of various parts.
 
 - Instances of this error
 
-  When the yellow error bar is expanded, each instance of the error is listed. Many error types include an exact location in the following format: _\<project name>_ _\<form name>_ Line:_\<line number>_ Column:_\<column number>_. If a call stack is associated with the error, you can select the **Show Call Stack** link to see it. Examining the call stack may further help you resolve the error.
+  When the yellow error bar is expanded, each instance of the error is listed. Many error types include an exact location in the following format: _\<project name>_ _\<form name>_ Line:_\<line number>_ Column:_\<column number>_. If a call stack is associated with the error, you can select the **Show Call Stack** link to see it. Examining the call stack might further help you resolve the error.
 
   > [!IMPORTANT]
-  > The elements of an error may vary based on the code language you're using.
+  > The elements of an error might vary based on the code language you're using.
 
 - Help with this error
 
@@ -56,7 +56,7 @@ Much the time an error can be cleared by cleaning and rebuilding the project or 
 01. Right-click on the solution or project, and select **Clean**.
 01. Right-click on the solution or project, and select **Rebuild**.
 
-You can also try to delete the _bin_ and _obj_ folders from the project folder. This may clear a temporary file that doesn't seem to get cleaned and may cause a **restore** action to happen, fixing a bad dependency.
+You can also try to delete the _bin_ and _obj_ folders from the project folder. This might clear a temporary file or cause a **restore** action to happen, fixing a bad dependency.
 
 Use the following section to triage common design-time errors.
 
