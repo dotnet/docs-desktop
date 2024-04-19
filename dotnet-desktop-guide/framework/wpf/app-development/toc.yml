@@ -93,6 +93,8 @@
       href: wpf-host-presentationhost-exe.md
     - name: Firefox Add-ons to Support .NET Application Deployment
       href: firefox-add-ons-to-support-net-application-deployment.md
+    - name: WPF XAML Browser Applications FAQ
+      href: xbap-faq.yml
     - name: Native WPF Browser Hosting Support APIs
       href: native-wpf-browser-hosting-support-apis.md
       items:

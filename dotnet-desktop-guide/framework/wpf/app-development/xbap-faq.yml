@@ -1,0 +1,66 @@
+### YamlMime:FAQ
+metadata:
+  title: "FAQ about XBAP supportability"
+  description: "Provides answers to questions related to the level of support XBAPs still have in the modern browser world of today."
+  author: adegeo
+  ms.author: adegeo
+  ms.service: dotnet-framework
+  ms.topic: faq
+  ms.date: 04/15/2024
+  ai-usage: ai-assisted
+
+title: "Frequently asked questions about WPF browser-hosted applications (XBAP)"
+summary: |
+  Windows Presentation Foundation (WPF) was released as a part of .NET Framework 3.0 in 2006. The XAML Browser Application (XBAP) feature, which allows WPF apps to be hosted and run in a web browser, was also introduced at the same time as a part of WPF. At the time of WPF and XBAP's release in 2006, the most popular web browsers available were Internet Explorer 7, Mozilla Firefox 2, and Safari 2. Google Chrome wasn't yet available, as it was released
+  two years later in 2008.
+
+  XBAP uses the ClickOnce deployment technology in browsers, which is a Microsoft technology that allows the user to install and run an app by clicking a link in a web page. However, this technology relied heavily on the support of NPAPI (Netscape Plugin Application Programming Interface) in browsers. NPAPI has been phased out in recent years due to security and stability issues. Major browsers like Edge, Chrome, Firefox, and Safari removed support for NPAPI plugins, which effectively means that XBAP apps can no longer be run in these browsers.
+
+sections:
+  - name: Support for XBAPs
+    questions:
+      - question: What is the current level of support Microsoft provides for XBAPs?
+        answer: XBAPs are supported with .NET Framework. WPF for .NET doesn't include XBAP support.
+
+      - question: Are there any supported browsers that natively support XBAP?
+        answer: |
+          Not exactly, there are no longer any supported browsers that were designed for XBAP. Support for
+          Internet Explorer 11 ended on June 15, 2022. Some browsers, such as Microsoft Edge and
+          Google Chrome, have an Internet Explorer Mode (IE Mode) feature that adds legacy Internet
+          Explorer support. These modes weren't designed for XBAPs, so some XBAP features might not work.
+          For more information, see [What is Internet Explorer (IE) mode](/deployedge/edge-ie-mode).
+
+      - question: How do I run my XBAP?
+        answer: |
+          XBAPs must be deployed to a web server and you must use a browser with Internet Explorer Mode (IE Mode)
+          compatibility. You might be required to configure local policy to enable your app in the
+          appropriate IE security zone. For more information, see [What is Internet Explorer (IE) mode](/deployedge/edge-ie-mode)
+          and [Set up Legacy Browser Support for Microsoft Edge in IE mode](https://support.google.com/chrome/a/answer/10368106).
+
+  - name: Migration options
+    questions:
+      - question: Can I convert my XBAP to a WPF application?
+        answer: Yes. You can migrate your app to a standard WPF application and deploy it through an installer. You can still publish a WPF app with ClickOnce, but ClickOnce requires a browser with IE Mode enabled or a plugin that enables ClickOnce.
+
+      - question: I need to run in a browser, what are my options?
+        answer: |
+          - **ASP.NET Core using Blazor and WebAssembly**
+
+            Blazor is a full stack web app that uses C#. Depending how well organized and compartmentalized your code is, you
+            might have to rewrite the front-end of your app in Blazor. Blazor apps can be deployed using WebAssembly, which lets
+            the app run fully client-side in the browser.
+
+            For more information, see [What is Blazor](https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor).
+
+          - **.NET MAUI**
+
+            If you created your app as an XBAP so that it could run on non-Windows operating systems, try converting your app to
+            .NET MAUI, which also uses XAML for its UI. .NET MAUI is different from WPF, although they share many similar concepts.
+            For more information, see [What is .NET MAUI](/dotnet/maui/what-is-maui).
+
+          - **OpenSilver**
+
+            The OpenSilver project was created as an alternative to Silverlight. Silverlight was a subset of WPF that was discontinued long ago.
+            Your XBAP project might convert well to OpenSilver. For more information, see the [OpenSilver website](https://opensilver.net/) and the [GitHub repository](https://github.com/OpenSilver/OpenSilver).
+
+additionalContent: ""
