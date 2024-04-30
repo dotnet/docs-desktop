@@ -44,7 +44,7 @@ After [you add a custom control to your project](#add-a-custom-control-to-a-proj
 
 01. Change the base class from `Control` to `Button`.
 
-    If you're using Visual Basic, you need to open the _\*.designer.vb_ file of your control and set the base class to `System.Windows.Forms.Button`.
+    If you're using Visual Basic, the base class is defined in the _\*.designer.vb_ file of your control. Open that file and set the base class to `System.Windows.Forms.Button`.
 
 01. Add a class-scoped variable named `_counter`.
 
@@ -66,6 +66,6 @@ After [you add a custom control to your project](#add-a-custom-control-to-a-proj
     :::code language="csharp" source="./snippets/extend-existing/csharp/CustomControl1.cs" id="control":::
     :::code language="vb" source="./snippets/extend-existing/vb/CustomControl1.vb" id="control":::
 
-Now that the control is created, compile the project to populate the **Toolbox** window with the new control. Open a form designer and drag the control to the form. When you run the project and click the button, you'll see that it counts the clicks and paints the text on top of the button.
+Now that the control is created, compile the project to populate the **Toolbox** window with the new control. Open a form designer and drag the control to the form. Run the project and press the button. Each press increases the number of clicks by one. The total clicks are printed as text on top of the button.
 
 :::image type="content" source="media/extend-existing/toolbox.png" alt-text="Visual Studio Toolbox window for Windows Forms showing a custom control.":::
