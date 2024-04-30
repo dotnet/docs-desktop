@@ -1,7 +1,7 @@
 ---
 title: Customize an existing control
 description: Learn how to inherit from existing controls so that another control has all of its functionality and visual properties.
-ms.date: 06/01/2023
+ms.date: 04/30/2024
 dev_langs:
   - "csharp"
   - "vb"
@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "inheritance [Windows Forms], Windows Forms custom controls"
   - "custom controls [Windows Forms], inheritance"
 ---
+
 # Extend an existing control
 
 If you want to add more features to an existing control, you can create a control that inherits from an existing control. The new control contains all of the capabilities and visual aspect of the base control, but gives you opportunity to extend it. For example, if you created a control that inherits <xref:System.Windows.Forms.Button>, your new control would look and act exactly like a button. You could create new methods and properties to customize the behavior of the control. Some controls allow you to override the <xref:System.Windows.Forms.Control.OnPaint%2A> method to change the way the control looks.
@@ -41,7 +42,11 @@ After [you add a custom control to your project](#add-a-custom-control-to-a-proj
     :::code language="csharp" source="./snippets/extend-existing/csharp/CustomControl2.cs" id="control":::
     :::code language="vb" source="./snippets/extend-existing/vb/CustomControl2.vb" id="control":::
 
-01. First, add a class-scoped variable named `_counter`.
+01. Change the base class from `Control` to `Button`.
+
+    If you're using Visual Basic, you need to open the _\*.designer.vb_ file of your control and set the base class to `System.Windows.Forms.Button`.
+
+01. Add a class-scoped variable named `_counter`.
 
     :::code language="csharp" source="./snippets/extend-existing/csharp/CustomControl1.cs" id="counter":::
     :::code language="vb" source="./snippets/extend-existing/vb/CustomControl1.vb" id="counter":::
