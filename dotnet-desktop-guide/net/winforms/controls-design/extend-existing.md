@@ -45,7 +45,7 @@ After [you add a custom control to your project](#add-a-custom-control-to-a-proj
 01. Change the base class from `Control` to `Button`.
 
     > [!IMPORTANT]
-    > If you're using Visual Basic, the base class is defined in the _\*.designer.vb_ file of your control. The base class to use in Visual Basic is `System.Windows.Forms.Button`.
+    > If you're using **Visual Basic**, the base class is defined in the _\*.designer.vb_ file of your control. The base class to use in Visual Basic is `System.Windows.Forms.Button`.
 
 01. Add a class-scoped variable named `_counter`.
 
