@@ -46,9 +46,9 @@ XAML as implemented in common language runtime (CLR) frameworks supports the abi
 
  Properties must reference a by-value type (such as a primitive), or use a class for type that has either a parameterless constructor or a dedicated type converter that a XAML processor can access. In the CLR XAML implementation, XAML processors either find such converters through native support for language primitives, or through application of <xref:System.ComponentModel.TypeConverterAttribute> to a type or member in backing type definitions  
   
- Alternatively, the property may reference an abstract class type, or an interface. For abstract classes or interfaces, the expectation for XAML parsing is that the property value must be filled with practical class instances that implement the interface, or instances of types that derive from the abstract class.  
+ Alternatively, the property may reference an abstract class type, or an interface. For abstract classes or interfaces, the expectation for XAML parsing is that the property value must be filled with concrete class instances that implement the interface, or instances of types that derive from the abstract class.  
   
- Properties can be declared on an abstract class, but can only be set on practical classes that derive from the abstract class. This is because creating the object element for the class at all requires a public parameterless constructor on the class.  
+ Properties can be declared on an abstract class, but can only be set on concrete classes that derive from the abstract class. This is because creating the object element for the class at all requires a public parameterless constructor on the class.  
   
 ### TypeConverter Enabled Attribute Syntax  
 
