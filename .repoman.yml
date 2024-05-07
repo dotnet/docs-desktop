@@ -31,6 +31,14 @@ issues:
             - labels-remove: [":watch: Not Triaged"]
           fail:
             - labels-add: [":watch: Not Triaged"]
+      fail:
+        - check:
+          - type: query
+            value: "length(Issue.labels[?name == ':pushpin: seQUESTered' || name == ':world_map: reQUEST']) != `0`"
+          pass:
+            - labels-remove: [":watch: Not Triaged"]
+          fail:
+            - labels-add: [":watch: Not Triaged"]
 
   opened:
     # New issue opened, add Not Triaged  
