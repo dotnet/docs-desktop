@@ -63,7 +63,8 @@ configuration:
       then:
       - addLabel:
           label: okr-health
-    - if:
+    - description: Label and approve PRs from Dotnet Policy Service
+      if:
       - payloadType: Pull_Request
       - isActivitySender:
           user: dotnet-policy-service
@@ -74,4 +75,3 @@ configuration:
       - approvePullRequest:
           comment: "Approved; this PR will merge when all status checks pass."
       triggerOnOwnActions: true
-      description: Label and approve PRs from Dotnet Policy Service
