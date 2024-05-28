@@ -39,14 +39,32 @@ configuration:
       then:
       - addLabel:
           label: community-contribution
-    - description: Synchronize OKR and release labels between issues/PRs
+    - description: Label main to live PRs
+      triggerOnOwnActions: true
       if:
       - payloadType: Pull_Request
+      - isAction:
+          action: Opened
+      - isActivitySender:
+          user: dotnet-policy-service
+          issueAuthor: False
+      - titleContains:
+          pattern: Merge main into live
+          isRegex: False
       then:
-      - labelSync:
-          pattern: okr-
-      - labelSync:
-          pattern: ':checkered_flag: Release'
+      - addLabel:
+          label: ':octocat: auto-merge'
+    - description: Label PRs from the Azure SDK bot
+      if:
+      - payloadType: Pull_Request
+      - isActivitySender:
+          user: azure-sdk
+          issueAuthor: False
+      then:
+      - approvePullRequest:
+          comment: "Approved; this PR will merge when all status checks pass."
+      - addLabel:
+          label: ':octocat: auto-merge'
     - description: Label PRs with okr-health
       if:
       - payloadType: Pull_Request
@@ -57,9 +75,19 @@ configuration:
         - bodyContains:
             pattern: build warning
             isRegex: False
+      then:
+      - addLabel:
+          label: okr-health
+    - description: Label PRs with okr-freshness
+      if:
+      - payloadType: Pull_Request
+      - or:
         - titleContains:
+            pattern: freshness
+            isRegex: False
+        - bodyContains:
             pattern: freshness
             isRegex: False
       then:
       - addLabel:
-          label: okr-health
+          label: okr-freshness
