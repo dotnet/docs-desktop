@@ -39,32 +39,32 @@ configuration:
       then:
       - addLabel:
           label: community-contribution
-    - description: Label main to live PRs
-      triggerOnOwnActions: true
+
+    - description: Label publish PRs from dotnet-policy-service bot
       if:
       - payloadType: Pull_Request
       - isAction:
           action: Opened
       - isActivitySender:
-          user: dotnet-policy-service
-          issueAuthor: False
+          user: dotnet-policy-service[bot]
       - titleContains:
           pattern: Merge main into live
           isRegex: False
       then:
       - addLabel:
           label: ':octocat: auto-merge'
+
     - description: Label PRs from the Azure SDK bot
       if:
       - payloadType: Pull_Request
       - isActivitySender:
           user: azure-sdk
-          issueAuthor: False
       then:
       - approvePullRequest:
           comment: "Approved; this PR will merge when all status checks pass."
       - addLabel:
           label: ':octocat: auto-merge'
+
     - description: Label PRs with okr-health
       if:
       - payloadType: Pull_Request
@@ -78,6 +78,7 @@ configuration:
       then:
       - addLabel:
           label: okr-health
+          
     - description: Label PRs with okr-freshness
       if:
       - payloadType: Pull_Request

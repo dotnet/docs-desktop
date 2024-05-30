@@ -22,6 +22,7 @@ configuration:
       actions:
       - addLabel:
           label: okr-health
+          
     eventResponderTasks:
     - description: Label issues with okr-health (event-based)
       if:
@@ -38,10 +39,27 @@ configuration:
       then:
       - addLabel:
           label: okr-health
+
     - description: Add in-pr label to issues
       if:
       - payloadType: Pull_Request
       then:
       - inPrLabel:
           label: in-pr
+
+    - description: Label typo issues
+      if:
+      - payloadType: Issues
+      - isAction:
+          action: Opened
+      - titleContains:
+          pattern: (T|t)ypo
+          isRegex: True
+      then:
+      - addLabel:
+          label: doc-bug
+      - addLabel:
+          label: help wanted
+      - addLabel:
+          label: good first issue
 
