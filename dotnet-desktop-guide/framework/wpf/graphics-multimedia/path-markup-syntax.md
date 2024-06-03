@@ -90,7 +90,7 @@ Paths are discussed in [Shapes and Basic Drawing in WPF Overview](shapes-and-bas
  You enter each command by using either an uppercase or a lowercase letter: uppercase letters denote absolute values and lowercase letters denote relative values: the control points for that segment are relative to the end point of the preceding example.
 
 > [!TIP]
-> When sequentially entering more than one command of the same type, you can omit the duplicate command entry; for example, `L 100,200 300,400` is equivalent to `L 100,200 L 300,400`. The following table describes the **move** and **draw** commands.
+> When sequentially entering more than one command of the same type, you can omit the duplicate command entry; for example, `L 100,200 300,400` is equivalent to `L 100,200 L 300,400`.
   
 ### Line Command  
 
