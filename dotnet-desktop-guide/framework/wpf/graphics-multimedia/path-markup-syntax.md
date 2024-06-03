@@ -91,17 +91,17 @@ Paths are discussed in [Shapes and Basic Drawing in WPF Overview](shapes-and-bas
   
 ### Line Command  
 
- Creates a straight line between the current point and the specified end point. `l 20 30` and `L 20,30` are examples of valid **line** commands.  
+Creates a straight line from the current point to the specified point. More than one point can be specified, with a line being drawn sequentially between each point. `l 20 30`,  `L 20,30`, and `L 20,30 25,35` are examples of valid **line** commands.
   
 |Syntax|  
 |------------|  
-|`L` *endPoint*<br /><br /> - or -<br /><br /> `l` *endPoint*|  
+|`L` *point* [*point* ...]<br /><br /> - or -<br /><br /> `l` *point* [*point* ...]|  
   
 |Term|Description|  
 |----------|-----------------|  
-|*endPoint*|<xref:System.Windows.Point?displayProperty=nameWithType><br /><br /> The end point of the line.|  
+|*point*|<xref:System.Windows.Point?displayProperty=nameWithType><br /><br /> The next point to draw a line to.|  
 
-An uppercase `L` indicates that `endPoint` is an absolute value; a lowercase `l` indicates that `endPoint` is an offset to the previous point, or (0,0) if none exists.
+An uppercase `L` indicates that `point` is an absolute value; a lowercase `l` indicates that `point` is an offset to the previous point, or (0,0) if none exists.
 
 ### Horizontal Line Command  
 
