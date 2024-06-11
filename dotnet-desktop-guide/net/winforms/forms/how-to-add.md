@@ -28,7 +28,7 @@ Once the form has been added, Visual Studio opens the form designer for the form
 
 If you have the source files to a form, you can add the form to your project by copying the files into the same folder as your project. The project automatically references any code files that are in the same folder or child folder of your project.
 
-Forms are made up of two files that share the same name: _form2.cs_ (_form2_ being an example of a file name) and _form2.Designer.cs_. Sometimes a resource file exists, sharing the same name, _form2.resx_. In in the previous example, _form2_ represents the base file name. You'll want to copy all related files to your project folder.
+Forms are made up of two files that share the same name: _form2.cs_ (_form2_ being an example of a file name) and _form2.Designer.cs_. Sometimes a resource file exists, sharing the same name, _form2.resx_. As in the previous example, _form2_ represents the base file name. You'll want to copy all related files to your project folder.
 
 Alternatively, you can use Visual Studio to import a file into your project. When you add an existing file to your project, the file is copied into the same folder as your project.
 
