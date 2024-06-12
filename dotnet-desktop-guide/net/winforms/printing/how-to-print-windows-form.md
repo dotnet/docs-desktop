@@ -17,9 +17,18 @@ ms.custom: devdivchpfy22
 
 As part of the development process, you typically will want to print a copy of your Windows Form. The following code example shows how to print a copy of the current form by using the <xref:System.Drawing.Graphics.CopyFromScreen%2A> method.
 
-In the following example, a button named **Button1** is added to the form. When the **Button1** button is clicked, it saves the form to an image in memory, and then sends it to the print object.
-
 ## Example
+
+To run the example code, add two components to a form with the following settings:
+
+| Object            | Property\Event | Value            |
+|-------------------|----------------|------------------|
+| **Button**        | `Name`         | `Button1`        |
+|                   | `Click`        | `Button1_Click`  |
+| **PrintDocument** | `Name`         | `PrintDocument1` |
+|                   | `PrintPage`    | `PrintDocument1_PrintPage` |
+
+The following code is run when the `Button1` is clicked. The code creates a `Graphics` object from the form and saves its contents to a `Bitmap` variable named `memoryImage`. The <xref:System.Drawing.Printing.PrintDocument.Print%2A?displayProperty=nameWithType> method is called, which invokes the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event. The print event handler draws the `memoryImage` bitmap on the printer page's `Graphics` object. When the print event handler code returns, the page is printed.
 
 :::code language="csharp" source="snippets/how-to-print-windows-form/csharp/Form1.cs":::
 
