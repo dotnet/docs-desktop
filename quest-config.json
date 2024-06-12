@@ -16,12 +16,12 @@
             "ParentNodeId": 237271
         },
         {
-            "Label": "okr-health",
-            "ParentNodeId": 237266
-        },
-        {
             "Label": "user-feedback",
             "ParentNodeId": 233465
+        },
+        {
+            "Label": "okr-health",
+            "ParentNodeId": 237266
         },
         {
             "Label": "doc-bug",
@@ -32,5 +32,11 @@
             "ParentNodeId": 227484
         }
     ],
-    "DefaultParentNode": 227223
+    "DefaultParentNode": 227223,
+    "WorkItemTags": [
+        {
+            "Label": "user-feedback",
+            "Tag": "customer-fixed"
+        }
+    ]
 }
