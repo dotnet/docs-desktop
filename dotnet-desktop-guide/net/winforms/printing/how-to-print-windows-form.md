@@ -28,7 +28,7 @@ To run the example code, add two components to a form with the following setting
 | **PrintDocument** | `Name`         | `PrintDocument1` |
 |                   | `PrintPage`    | `PrintDocument1_PrintPage` |
 
-The code creates a `Graphics` object from the form and saves its contents to a `Bitmap` variable named `memoryImage`. The <xref:System.Drawing.Printing.PrintDocument.Print%2A?displayProperty=nameWithType> method is called, which invokes the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event. The event handler draws the `memoryImage` bitmap on the `Graphics` object representing the printer page.
+The following code is run when the `Button1` is clicked. The code creates a `Graphics` object from the form and saves its contents to a `Bitmap` variable named `memoryImage`. The <xref:System.Drawing.Printing.PrintDocument.Print%2A?displayProperty=nameWithType> method is called, which invokes the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event. The print event handler draws the `memoryImage` bitmap on the printer page's `Graphics` object. When the print event handler code returns, the page is printed.
 
 :::code language="csharp" source="snippets/how-to-print-windows-form/csharp/Form1.cs":::
 
