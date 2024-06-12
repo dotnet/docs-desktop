@@ -20,7 +20,7 @@ You can change the size of a form at design time with Visual Studio, and at run 
 
 ## Resize with the designer
 
-After [adding a new form](how-to-add.md) to the project, the size of a form is set in two different ways. First, you can set it is with the size grips in the designer. By dragging either the right edge, bottom edge, or the corner, you can resize the form.
+After [adding a new form](how-to-add.md) to the project, the size of a form is set in two different ways. First, you can set it with the size grips in the designer. By dragging either the right edge, bottom edge, or the corner, you can resize the form.
 
 :::image type="content" source="media/how-to-position-and-resize/designer-grips.png" alt-text="Right click solution explorer to add new form to windows forms project with grips":::
 
@@ -106,7 +106,7 @@ form.Show()
 
 ## Position with code
 
-Even though the designer can be used to set the starting location of a form, you can use code either change the starting position mode or set the location manually. Using code to position a form is useful if you need to manually position and size a form in relation to the screen or other forms.
+Even though the designer can be used to set the starting location of a form, you can use code to either change the starting position mode or set the location manually. Using code to position a form is useful if you need to manually position and size a form in relation to the screen or other forms.
 
 ### Move the current form
 
