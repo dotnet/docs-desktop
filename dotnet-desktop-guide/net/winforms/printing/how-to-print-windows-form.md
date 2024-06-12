@@ -19,7 +19,7 @@ As part of the development process, you typically will want to print a copy of y
 
 ## Example
 
-The following example requires two components added to the form, with the following settings:
+To run the example code, add two components to a form with the following settings:
 
 | Object            | Property\Event | Value            |
 |-------------------|----------------|------------------|
