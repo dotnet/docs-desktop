@@ -19,16 +19,14 @@ As part of the development process, you typically will want to print a copy of y
 
 ## Example
 
-In the following example, a `Button` control named **Button1** is added to the form. When the **Button1** button is clicked, it saves the form to an image in memory, and then sends it to the `PrintDocument` component. The `PrintDocument` control, named **PrintDocument1** in this example, is also added to the form 
-
 The following example requires two components added to the form, with the following settings:
 
-| Object            | Property\Event | Value      |
-|-------------------|-------------|------------|
-| **Button**        | `Name`      | `Button1` |
-|                   | `Click`     | `Button1_Click` |
-| **PrintDocument** | `Name`      | `PrintDocument1` |
-|                   | `PrintPage` | `PrintDocument1_PrintPage` |
+| Object            | Property\Event | Value            |
+|-------------------|----------------|------------------|
+| **Button**        | `Name`         | `Button1`        |
+|                   | `Click`        | `Button1_Click`  |
+| **PrintDocument** | `Name`         | `PrintDocument1` |
+|                   | `PrintPage`    | `PrintDocument1_PrintPage` |
 
 The code creates a `Graphics` object from the form and saves its contents to a `Bitmap` variable named `memoryImage`. The <xref:System.Drawing.Printing.PrintDocument.Print%2A?displayProperty=nameWithType> method is called, which invokes the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event. The event handler draws the `memoryImage` bitmap on the `Graphics` object representing the printer page.
 
