@@ -39,8 +39,8 @@ ms.assetid: 08f7c8ce-074b-49cd-9aba-cc9592d4ee51
   
 ## See also
 
+- [Create a Shape by Using a PathGeometry](how-to-create-a-shape-by-using-a-pathgeometry.md)
+- [Geometry Overview](geometry-overview.md)
 - <xref:System.Windows.Media.PathGeometry>
 - <xref:System.Windows.Media.StreamGeometry>
 - <xref:System.Windows.Media.StreamGeometryContext>
-- [Create a Shape by Using a PathGeometry](how-to-create-a-shape-by-using-a-pathgeometry.md)
-- [Geometry Overview](geometry-overview.md)

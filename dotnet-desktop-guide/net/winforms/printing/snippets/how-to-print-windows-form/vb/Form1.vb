@@ -2,13 +2,6 @@
     
     Dim memoryImage As Bitmap
 
-    Private Sub printDocument1_PrintPage(ByVal sender As System.Object, 
-       ByVal e As System.Drawing.Printing.PrintPageEventArgs) Handles PrintDocument1.PrintPage
-
-        e.Graphics.DrawImage(memoryImage, 0, 0)
-        
-    End Sub
-
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
          
         Dim myGraphics As Graphics = Me.CreateGraphics()
@@ -18,6 +11,14 @@
         memoryGraphics.CopyFromScreen(Me.Location.X, Me.Location.Y, 0, 0, s)
         
         PrintDocument1.Print()
+        
+    End Sub
+
+    Private Sub PrintDocument1_PrintPage(
+        ByVal sender As System.Object, 
+        ByVal e As System.Drawing.Printing.PrintPageEventArgs) Handles PrintDocument1.PrintPage
+
+        e.Graphics.DrawImage(memoryImage, 0, 0)
         
     End Sub
 End Class

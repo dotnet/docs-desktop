@@ -71,7 +71,7 @@ The following example uses XAML to implement the appearance of a window that con
 ```xaml
 <Window
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    Title="Window with Button"
+    Title="Window with button"
     Width="250" Height="100">
 
   <!-- Add button to window -->
@@ -97,7 +97,7 @@ The main behavior of an application is to implement the functionality that respo
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     x:Class="SDKSample.AWindow"
-    Title="Window with Button"
+    Title="Window with button"
     Width="250" Height="100">
 
   <!-- Add button to window -->

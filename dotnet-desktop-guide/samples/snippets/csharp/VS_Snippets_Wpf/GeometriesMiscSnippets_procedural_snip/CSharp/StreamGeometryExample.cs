@@ -44,8 +44,6 @@ namespace SDKSample
 
             using (StreamGeometryContext ctx = geometry.Open())
             {
-                ctx.BeginFigure(new Point(), true /* is filled */, true /* is closed */);
-
                 double step = 2 * Math.PI / Math.Max(numSides, 3);
                 Point cur = c;
 
@@ -54,7 +52,10 @@ namespace SDKSample
                 {
                     cur.X = c.X + r * Math.Cos(a);
                     cur.Y = c.Y + r * Math.Sin(a);
-                    ctx.LineTo(cur, true /* is stroked */, false /* is smooth join */);
+                    if (i == 0)
+                        ctx.BeginFigure(cur, true /* is filled */, true /* is closed */);
+                    else
+                        ctx.LineTo(cur, true /* is stroked */, false /* is smooth join */);
                 }
             }
 

@@ -56,7 +56,9 @@ If multiple presentation technologies are used in an application, such as WPF, W
 - WPF supports hardware accelerated layered windows.  
   
 - WPF does not support transparency color keys, because WPF cannot guarantee to render the exact color you requested, particularly when rendering is hardware-accelerated.  
-  
+
+For more information regarding the limitations of interop regions, see [HWNDs inside WPF](wpf-and-win32-interoperation.md#hwnds-inside-wpf).
+
 ## See also
 
 - [WPF and Win32 Interoperation](wpf-and-win32-interoperation.md)
