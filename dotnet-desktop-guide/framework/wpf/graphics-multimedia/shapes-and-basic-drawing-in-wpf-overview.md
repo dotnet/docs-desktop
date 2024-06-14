@@ -20,6 +20,8 @@ This topic gives an overview of how to draw with <xref:System.Windows.Shapes.Sha
   
  Windows Presentation Foundation (WPF) offers several layers of access to graphics and rendering services. At the top layer, <xref:System.Windows.Shapes.Shape> objects are easy to use and provide many useful features, such as layout and participation in the Windows Presentation Foundation (WPF) event system.  
 
+Shape-related types are in the `Windows.Shapes` namespace. Geometry-related types are in the `System.Windows.Media` namespace.
+
 <a name="shapes"></a>
 
 ## Shape Objects  
