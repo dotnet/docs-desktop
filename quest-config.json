@@ -35,8 +35,12 @@
     "DefaultParentNode": 227223,
     "WorkItemTags": [
         {
-            "Label": "user-feedback",
+            "Label": ":label: user-feedback",
             "Tag": "customer-fixed"
+        },
+        {
+            "Label": ":label: content-curation",
+            "Tag": "content-curation"
         }
     ]
 }
