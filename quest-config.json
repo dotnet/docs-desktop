@@ -16,7 +16,7 @@
             "ParentNodeId": 237271
         },
         {
-            "Label": ":label: user-feedback",
+            "Label": "user-feedback",
             "ParentNodeId": 233465
         },
         {
@@ -35,11 +35,7 @@
     "DefaultParentNode": 227223,
     "WorkItemTags": [
         {
-            "Label": ":label: user-feedback",
-            "Tag": "customer-fixed"
-        },
-        {
-            "Label": ":label: content-curation",
+            "Label": "okr-curation",
             "Tag": "content-curation"
         }
     ]
