@@ -30,7 +30,7 @@ Icons for the **Toolbox** window in Visual Studio must conform to certain standa
 Icons are assigned to a control with the <xref:System.Drawing.ToolboxBitmapAttribute> attribute. For more information about attributes, see [Attributes (C#)](/dotnet/csharp/programming-guide/concepts/attributes/index) or [Attributes overview (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/attributes/index).
 
 > [!TIP]
-> You can download a sample icon from [GitHub](https://github.com/dotnet/docs-desktop/blob/main/dotnet-desktop-guide/net/winforms/controls-design/media/how-to-set-toolbox-icon/CompassRose_Icon.bmp).
+> You can download a sample icon from [GitHub](https://github.com/dotnet/docs-desktop/blob/main/dotnet-desktop-guide/net/winforms/controls-design/media/how-to-set-toolbox-icon/CompassRose.bmp).
 
 The attribute is set on the control's class, and has three different constructors:
 
@@ -70,9 +70,9 @@ The attribute is set on the control's class, and has three different constructor
   ```
 
   ```vb
-  ' Loads the icon from the WinFormsApp1.Resources.CompasRoseIcon.bmp resource
+  ' Loads the icon from the WinFormsApp1.Resources.CompassRoseIcon.bmp resource
   ' in the assembly containing the type CompassRose
-  <ToolboxBitmap(GetType(CompassRose), "WinFormsApp1.Resources.CompasRoseIcon.bmp")>
+  <ToolboxBitmap(GetType(CompassRose), "WinFormsApp1.Resources.CompassRoseIcon.bmp")>
   Public Class CompassRose
       ' Code for the control
   End Class
