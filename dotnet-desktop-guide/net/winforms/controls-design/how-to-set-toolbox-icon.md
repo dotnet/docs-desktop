@@ -36,7 +36,7 @@ The attribute is set on the control's class, and has three different constructor
 
 - <xref:System.Drawing.ToolboxBitmapAttribute.%23ctor(System.Type)>&mdash;This constructor takes a single type reference, and from that type, tries to find an embedded resource to use as the icon.
 
-  The type's <xref:System.Type.FullName> value is used to look up an [embedded resource][embedded] in the assembly of the type, using the following format: `{project-name}.{namespace-path}.{type-name}{.bmp|.ico}`. For example, if the type `MyProject.MyNamespace.CompassRose` is referenced, the attribute looks for an embedded resource named `MyProject.MyNamespace.CompassRose.bmp` or `MyProject.MyNamespace.CompassRose.ico`.
+  The type's <xref:System.Type.FullName> is used to look up an [embedded resource][embedded] in the assembly of that type, using the following format: `{project-name}.{namespace-path}.{type-name}{.bmp|.ico}`. For example, if the type `MyProject.MyNamespace.CompassRose` is referenced, the attribute looks for an embedded resource named `MyProject.MyNamespace.CompassRose.bmp` or `MyProject.MyNamespace.CompassRose.ico`.
 
   ```csharp
   // Looks for a CompassRose.bmp or CompassRose.ico embedded resource in the
