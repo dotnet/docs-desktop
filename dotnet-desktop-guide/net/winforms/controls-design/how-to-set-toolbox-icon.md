@@ -36,7 +36,7 @@ The attribute is set on the control's class, and has three different constructor
 
 - <xref:System.Drawing.ToolboxBitmapAttribute.%23ctor(System.Type)>&mdash;This constructor takes a single type reference, and from that type, tries to find an embedded resource to use as the icon.
 
-  The type's <xref:System.Type.FullName> value is used to try to find a corresponding embedded resource based on the name of the type. For example, if the `MyProject.MyNamespace.CompassRose` type is referenced, the attribute looks for a resource named `MyProject.MyNamespace.CompassRose.bmp` or `MyProject.MyNamespace.CompassRose.ico`. If the resource is found, it's used as the control's icon.
+  The type's <xref:System.Type.FullName> value is used to try and find an icon [embedded resource in the assembly][embedded], using the following format: `{project-name}.{namespace-path}.{type-name}{.bmp|.ico}`. For example, if the type `MyProject.MyNamespace.CompassRose` is referenced, the attribute looks for a resource named `MyProject.MyNamespace.CompassRose.bmp` or `MyProject.MyNamespace.CompassRose.ico`.
 
   ```csharp
   // Looks for a CompassRose.bmp or CompassRose.ico embedded resource in the
@@ -57,12 +57,12 @@ The attribute is set on the control's class, and has three different constructor
   End Class
   ```
 
-- <xref:System.Drawing.ToolboxBitmapAttribute.%23ctor(System.Type,System.String)>&mdash;This constructor takes two parameters. The first parameter is a type, and the second is the namespace and name of the resource in the assembly of that type.
+- <xref:System.Drawing.ToolboxBitmapAttribute.%23ctor(System.Type,System.String)>&mdash;This constructor takes two parameters. The first parameter is a type, and the second is the namespace and name of the [embedded resource in the assembly][embedded] of that type.
 
   ```csharp
-  // Loads the icon from the WinFormsApp1.Resources.CompassRoseIcon.bmp resource
+  // Loads the icon from the WinFormsApp1.Resources.CompassRose.bmp resource
   // in the assembly containing the type CompassRose
-  [ToolboxBitmap(typeof(CompassRose), "WinFormsApp1.Resources.CompassRoseIcon.bmp")]
+  [ToolboxBitmap(typeof(CompassRose), "WinFormsApp1.Resources.CompassRose.bmp")]
   public partial class CompassRose : UserControl
   {
       // Code for the control
@@ -70,9 +70,9 @@ The attribute is set on the control's class, and has three different constructor
   ```
 
   ```vb
-  ' Loads the icon from the WinFormsApp1.Resources.CompassRoseIcon.bmp resource
+  ' Loads the icon from the WinFormsApp1.Resources.CompassRose.bmp resource
   ' in the assembly containing the type CompassRose
-  <ToolboxBitmap(GetType(CompassRose), "WinFormsApp1.Resources.CompassRoseIcon.bmp")>
+  <ToolboxBitmap(GetType(CompassRose), "WinFormsApp1.Resources.CompassRose.bmp")>
   Public Class CompassRose
       ' Code for the control
   End Class
@@ -96,3 +96,5 @@ The attribute is set on the control's class, and has three different constructor
       ' Code for the control
   End Class
   ```
+
+[embedded]: /visualstudio/ide/build-actions
