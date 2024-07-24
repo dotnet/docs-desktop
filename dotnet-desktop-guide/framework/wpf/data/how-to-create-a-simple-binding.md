@@ -2,6 +2,9 @@
 title: "How to create a data binding"
 description: Create a simple binding for your applications through this how-to example in Windows Presentation Foundation (WPF).
 ms.date: 07/24/2024
+dev_langs:
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "simple binding [WPF], creating"
   - "data binding [WPF], creating simple bindings"
@@ -26,6 +29,7 @@ In this example, an employee is used as the data object that the UI is bound to.
 1.  Replace the code with the following snippet:
 
     :::code language="csharp" source="./snippets/how-to-create-a-simple-binding/csharp/Employee.cs":::
+    :::code language="vb" source="./snippets/how-to-create-a-simple-binding/vb/Employee.vb":::
 
 The employee data object is a simple class that describes an employee:
 
@@ -42,7 +46,7 @@ The following XAML demonstrates using the `Employee` class as a data object. The
 1.  Replace the XAML with the following snippet:
 
     > [!IMPORTANT]
-    > The following snippet is taken from a C# project. If you're using Visual Basic, the `x:Class` should be declared without the `ArticleSample` namespace. You can see what the Visual Basic version looks like [here]().
+    > The following snippet is taken from a C# project. If you're using Visual Basic, the `x:Class` should be declared without the `ArticleSample` namespace. You can see what the Visual Basic version looks like [here](https://github.com/dotnet/docs-desktop/blob/main/dotnet-desktop-guide/framework/wpf/data/snippets/how-to-create-a-simple-binding/vb/EmployeeView.xaml).
 
     :::code language="xaml" source="./snippets/how-to-create-a-simple-binding/csharp/EmployeeView.xaml" highlight="7-9,33-37,43":::
 
