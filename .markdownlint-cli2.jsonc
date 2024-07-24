@@ -14,12 +14,7 @@
         "MD026": false,
         // Cannot be enabled due to sequential Note blocks
         "MD028": false,
-        "MD030": {
-            "ol_single": 1,
-            "ol_multi": 2,
-            "ul_single": 1,
-            "ul_multi": 1
-        },
+        "MD030": false,
         "MD033": {
             "allowed_elements": [
                 "a",
