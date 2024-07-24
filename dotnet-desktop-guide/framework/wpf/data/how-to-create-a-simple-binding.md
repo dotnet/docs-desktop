@@ -12,11 +12,11 @@ ms.assetid: 69b80f72-6259-44cb-8294-5bdcebca1e08
 
 # How to create a data binding
 
-This article describes how to create a binding XAML. The example uses a data object that represents an employee at a company. This data object is bound to a XAML window that uses `TextBlock` controls to list the employee's details.
-
-To learn more about data binding, see [Data binding overview in WPF](data-binding-overview.md). To learn more about data binding, see [Data binding overview in WPF](data-binding-overview.md).
+This article describes how to create a binding XAML. The example uses a data object that represents an employee at a company. This data object is bound to a XAML window that uses `TextBlock` controls to list the employee's details. You'll create a UI that looks like the following image:
 
 :::image type="content" source="media/how-to-create-a-simple-binding/preview.png" alt-text="A WPF window that shows details about an employee, such as their first name, last name, title, hire date, and salary.":::
+
+To learn more about data binding, see [Data binding overview in WPF](data-binding-overview.md). To learn more about data binding, see [Data binding overview in WPF](data-binding-overview.md).
 
 ## Create a data object
 
@@ -29,10 +29,10 @@ In this example, an employee is used as the data object that the UI is bound to.
 
 The employee data object is a simple class that describes an employee:
 
-- First and last name.
-- Hire date.
-- Title.
-- Monthly income.
+- The first and last name of the employee.
+- The date the employee was hired.
+- The title employee has at the company.
+- How much income the employee earns.
 
 ## Bind to a data object
 
@@ -43,9 +43,9 @@ The following XAML demonstrates using the `Employee` class as a data object. The
 
     > [!IMPORTANT]
     > The following snippet is taken from a C# project. If you're using Visual Basic, the `x:Class` should be declared without the `ArticleSample` namespace. You can see what the Visual Basic version looks like [here]().
-    
+
     :::code language="xaml" source="./snippets/how-to-create-a-simple-binding/csharp/EmployeeView.xaml" highlight="7-9,33-37,43":::
-    
+
 The namespace of the code won't match your project's namespace, unless you created a project named **ArticleSample**. You can copy and paste the `Window.Resources` and root element (`StackPanel`) into you're **MainWindow** if you created a new project.
 
 Here are some important aspects about the XAML code:
