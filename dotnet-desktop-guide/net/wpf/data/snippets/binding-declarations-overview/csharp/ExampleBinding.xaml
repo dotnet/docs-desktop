@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ArticleExample"
         mc:Ignorable="d"
-          SizeToContent="WidthAndHeight"
-  Title="Simple Data Binding Sample">
+        SizeToContent="WidthAndHeight"
+        Title="Simple Data Binding Sample">
 
     <Window.Resources>
         <local:Person x:Key="myDataSource" Name="Joe" Birthdate="2000-02-03"/>
