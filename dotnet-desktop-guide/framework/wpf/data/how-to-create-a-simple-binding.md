@@ -52,7 +52,7 @@ The following XAML demonstrates using the `Employee` class as a data object. The
 
 The namespace of the code won't match your project's namespace, unless you created a project named **ArticleSample**. You can copy and paste the `Window.Resources` and root element (`StackPanel`) into you're **MainWindow** if you created a new project.
 
-Here are some important aspects about the XAML code:
+To better understand how the previous XAML is using data binding, consider the following points:
 
 - A XAML resource is used to create an instance of the `Employee` class.
 
