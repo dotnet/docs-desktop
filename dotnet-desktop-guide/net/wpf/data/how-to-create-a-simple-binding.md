@@ -77,6 +77,4 @@ To better understand how the previous XAML is using data binding, consider the f
 
 ## Related content
 
-- [Data Binding Overview](data-binding-overview.md)
-- [How to: Create a Binding in Code](how-to-create-a-binding-in-code.md)
-- [How-to Topics](data-binding-how-to-topics.md)
+- [Data Binding Overview](index.md)
