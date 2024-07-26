@@ -41,6 +41,8 @@ The previous example uses a simple data object type of `Person`. The following s
 
 You can specify most of the properties of the <xref:System.Windows.Data.Binding> class this way. For more information about the binding extension and for a list of <xref:System.Windows.Data.Binding> properties that cannot be set using the binding extension, see the [Binding Markup Extension (.NET Framework)](../../../framework/wpf/advanced/binding-markup-extension.md) overview.
 
+For an example on creating a binding in XAML, see [How to create a data binding](how-to-create-a-simple-binding.md).
+
 ### Object element syntax
 
 Object element syntax is an alternative to creating the binding declaration. In most cases, there's no particular advantage to using either the markup extension or the object element syntax. However, when the markup extension doesn't support your scenario, such as when your property value is of a non-string type for which no type conversion exists, you need to use the object element syntax.
@@ -160,4 +162,5 @@ The default behavior is as follows if not specified in the declaration:
 
 - [Data binding overview](index.md)
 - [Binding sources overview](binding-sources-overview.md)
+- [How to create a data binding](how-to-create-a-simple-binding.md)
 - [PropertyPath XAML Syntax (.NET Framework)](../../../framework/wpf/advanced/propertypath-xaml-syntax.md)
