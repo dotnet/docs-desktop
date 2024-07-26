@@ -19,7 +19,7 @@ This article describes how to create a binding XAML. The example uses a data obj
 
 :::image type="content" source="media/how-to-create-a-simple-binding/preview.png" alt-text="A WPF window that shows details about an employee, such as their first name, last name, title, hire date, and salary.":::
 
-To learn more about data binding, see [Data binding overview in WPF](data-binding-overview.md). To learn more about data binding, see [Data binding overview in WPF](data-binding-overview.md).
+To learn more about data binding, see [Data binding overview in WPF](data-binding-overview.md).
 
 ## Create a data object
 
@@ -35,7 +35,7 @@ The employee data object is a simple class that describes an employee:
 
 - The first and last name of the employee.
 - The date the employee was hired.
-- The title employee has at the company.
+- The employee's company title.
 - How much income the employee earns.
 
 ## Bind to a data object
