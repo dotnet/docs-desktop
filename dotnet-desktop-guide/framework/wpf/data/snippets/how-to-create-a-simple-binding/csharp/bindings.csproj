@@ -1,0 +1,11 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netframework4.8.1</TargetFramework>
+    <UseWpf>true</UseWpf>
+    <LangVersion>8.0</LangVersion>
+    <RootNamespace>ArticleSample</RootNamespace>
+  </PropertyGroup>
+
+</Project>

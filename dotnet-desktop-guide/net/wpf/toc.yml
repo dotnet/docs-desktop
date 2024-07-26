@@ -79,6 +79,8 @@ items:
       items:
       - name: Common tasks
         items:
+        - name: Create a binding
+          href: data/how-to-create-a-simple-binding.md
         - name: Bind to an enumeration
           href: data/how-to-bind-to-an-enumeration.md
 - name: Systems

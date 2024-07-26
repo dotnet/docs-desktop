@@ -1,6 +1,6 @@
 ---
 title: "How to create a data binding"
-description: Create a simple binding for your applications through this how-to example in Windows Presentation Foundation (WPF) and .NET Framework.
+description: Create a simple binding for your applications through this how-to example in Windows Presentation Foundation (WPF).
 ms.date: 07/24/2024
 dev_langs:
   - "csharp"
@@ -9,11 +9,10 @@ helpviewer_keywords:
   - "simple binding [WPF], creating"
   - "data binding [WPF], creating simple bindings"
   - "binding data [WPF], creating"
-ms.assetid: 69b80f72-6259-44cb-8294-5bdcebca1e08
 #customer intent: As a devleoper, I want to create a binding so that I can present information in a UI
 ---
 
-# How to create a data binding
+# How to create a data binding (WPF .NET)
 
 This article describes how to create a binding XAML. The example uses a data object that represents an employee at a company. This data object is bound to a XAML window that uses `TextBlock` controls to list the employee's details. You'll create a UI that looks like the following image:
 
@@ -46,7 +45,7 @@ The following XAML demonstrates using the `Employee` class as a data object. The
 1.  Replace the XAML with the following snippet:
 
     > [!IMPORTANT]
-    > The following snippet is taken from a C# project. If you're using Visual Basic, the `x:Class` should be declared without the `ArticleSample` namespace. You can see what the Visual Basic version looks like [here](https://github.com/dotnet/docs-desktop/blob/main/dotnet-desktop-guide/framework/wpf/data/snippets/how-to-create-a-simple-binding/vb/EmployeeView.xaml).
+    > The following snippet is taken from a C# project. If you're using Visual Basic, the `x:Class` should be declared without the `ArticleSample` namespace. You can see what the Visual Basic version looks like [here](https://github.com/dotnet/docs-desktop/blob/main/dotnet-desktop-guide/net/wpf/data/snippets/how-to-create-a-simple-binding/vb/EmployeeView.xaml).
 
     :::code language="xaml" source="./snippets/how-to-create-a-simple-binding/csharp/EmployeeView.xaml" highlight="7-9,33-37,43":::
 
@@ -78,6 +77,4 @@ To better understand how the previous XAML is using data binding, consider the f
 
 ## Related content
 
-- [Data Binding Overview](data-binding-overview.md)
-- [How to: Create a Binding in Code](how-to-create-a-binding-in-code.md)
-- [How-to Topics](data-binding-how-to-topics.md)
+- [Data Binding Overview](index.md)

@@ -35,8 +35,8 @@
     "DefaultParentNode": 227223,
     "WorkItemTags": [
         {
-            "Label": "user-feedback",
-            "Tag": "customer-fixed"
+            "Label": "okr-curation",
+            "Tag": "content-curation"
         }
     ]
 }
