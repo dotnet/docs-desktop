@@ -34,7 +34,7 @@ The employee data object is a simple class that describes an employee:
 
 - The first and last name of the employee.
 - The date the employee was hired.
-- The title employee has at the company.
+- The employee's company title.
 - How much income the employee earns.
 
 ## Bind to a data object
