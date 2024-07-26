@@ -34,7 +34,14 @@ When creating binding declaration strings in markup, they must be attached to th
 
 :::code language="xaml" source="./snippets/binding-declarations-overview/csharp/ExampleBinding.xaml" range="38":::
 
+The previous example uses a simple data object type of `Person`. The following snippet is the code for that object:
+
+:::code language="csharp" source="./snippets/binding-declarations-overview/csharp/Person.cs" id="Person":::
+:::code language="vb" source="./snippets/binding-declarations-overview/vb/Person.vb" id="Person":::
+
 You can specify most of the properties of the <xref:System.Windows.Data.Binding> class this way. For more information about the binding extension and for a list of <xref:System.Windows.Data.Binding> properties that cannot be set using the binding extension, see the [Binding Markup Extension (.NET Framework)](../../../framework/wpf/advanced/binding-markup-extension.md) overview.
+
+For an example on creating a binding in XAML, see [How to create a data binding](how-to-create-a-simple-binding.md).
 
 ### Object element syntax
 
@@ -155,4 +162,5 @@ The default behavior is as follows if not specified in the declaration:
 
 - [Data binding overview](index.md)
 - [Binding sources overview](binding-sources-overview.md)
+- [How to create a data binding](how-to-create-a-simple-binding.md)
 - [PropertyPath XAML Syntax (.NET Framework)](../../../framework/wpf/advanced/propertypath-xaml-syntax.md)
