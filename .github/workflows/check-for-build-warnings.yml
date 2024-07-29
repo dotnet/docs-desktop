@@ -1,22 +1,28 @@
 name: 'OPS status checker'
 
 on: 
-  pull_request_target:
+  pull_request:
     types: [opened, synchronize, reopened]
+
+permissions:
+  contents: read
 
 jobs:
   status_checker_job:
     name: Look for build warnings
     runs-on: ubuntu-latest
     permissions:
-        statuses: write
-        issues: write
-        pull-requests: write
+        statuses: read
+        pull-requests: read
     steps:
-    - uses: actions/checkout@v3
-    - uses: dotnet/docs-tools/actions/status-checker@main
+    - name: Harden Runner
+      uses: step-security/harden-runner@0d381219ddf674d61a7572ddd19d7941e271515c # v2.9.0
+      with:
+        egress-policy: audit
+
+    - uses: dotnet/docs-tools/actions/status-checker@5e8bcc78465d45a7544bba56509a1a69922b6a5a # main
       with:
         repo_token: ${{ secrets.GITHUB_TOKEN }}
         docs_path: "dotnet-desktop-guide"
         url_base_path: "dotnet/desktop"
-        opaque_leading_url_segments: "framework:view=netframeworkdesktop-4.8,net:view=netdesktop-7.0"
+        opaque_leading_url_segments: "framework:view=netframeworkdesktop-4.8,net:view=netdesktop-7.0,net:view=netdesktop-8.0"
