@@ -33,7 +33,7 @@ Buttons also listen to the <xref:System.Windows.Input.ICommand.CanExecuteChanged
 
 ## Visual Studio DPI improvements
 
-Visual Studio 2022 17.8 Introduces DPI-unwaware designer tabs. Previously, the Windows Designer tab in Visual Studio ran at the DPI of Visual Studio. This causes problems when you're designing a DPI-unaware Windows Forms app. Now you can ensure that the designer runs at the same scale as you want the app to run, either DPI-aware or not. Before this feature was introduced, you had to run Visual Studio in DPI-unaware mode, which made Visual Studio itself blurry when scaling was applied in Windows. Now you can leave Visual Studio alone and let the designer run DPI-unaware.
+Visual Studio 2022 17.8 Introduces DPI-unaware designer tabs. Previously, the Windows Designer tab in Visual Studio ran at the DPI of Visual Studio. This causes problems when you're designing a DPI-unaware Windows Forms app. Now you can ensure that the designer runs at the same scale as you want the app to run, either DPI-aware or not. Before this feature was introduced, you had to run Visual Studio in DPI-unaware mode, which made Visual Studio itself blurry when scaling was applied in Windows. Now you can leave Visual Studio alone and let the designer run DPI-unaware.
 
 You can enable the DPI-unaware designer for the Windows Forms project by adding `<ForceDesignerDPIUnaware>` to the project file, and setting the value to `true`.
 
