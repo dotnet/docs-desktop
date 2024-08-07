@@ -18,6 +18,13 @@ issues:
 
   labeled:
 
+    # MapQuest
+    - check:
+        - type: query
+          value: "length(Issue.labels[?name == ':world_map: mapQUEST']) != `0`"
+      pass:
+        - labels-remove: [":world_map: mapQUEST"]
+
     # Handle issues with /prod /tech labels from label bot
     # Manages the Not Triaged label for issues missing/having an org category issue
     - check:
