@@ -128,6 +128,9 @@ With Visual Studio, you can easily add a data source to your project. This proce
 
 3. When you are prompted by the **Data Source Configuration Wizard**, save the connection string as `NorthwindConnectionString`.
 
+   > [!IMPORTANT]
+   > Storing sensitive information, such as a password, within the connection string can affect the security of your application. Using Windows Authentication, also known as integrated security, is a more secure way to control access to a database. For more information, see [Protecting Connection Information](/dotnet/framework/data/adonet/protecting-connection-information).
+
 4. When you are prompted to choose your database objects, select the `Customers` and `Orders` tables, and name the generated data set `NorthwindDataSet`.
 
 ## Binding to the Data Source
