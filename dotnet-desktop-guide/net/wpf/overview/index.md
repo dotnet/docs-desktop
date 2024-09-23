@@ -86,7 +86,7 @@ The following figure shows the user interface (UI) that is defined by the XAML i
 
 :::image type="content" source="media/index/markup-window-button.png" alt-text="A window that contains a button":::
 
-Since XAML is XML-based, the UI that you compose with it's assembled in a hierarchy of nested elements that is known as an [element tree](../../../framework/wpf/advanced/trees-in-wpf.md). The element tree provides a logical and intuitive way to create and manage UIs.
+Since XAML is XML-based, the UI that you compose with it is assembled in a hierarchy of nested elements that is known as an [element tree](../../../framework/wpf/advanced/trees-in-wpf.md). The element tree provides a logical and intuitive way to create and manage UIs.
 
 ### Code-behind
 
