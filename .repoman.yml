@@ -149,8 +149,6 @@ pull_request:
 
 projects_v2_item:
 
-  edited: reordered
-
   reordered:
 
     - labels-add: [":world_map: mapQUEST"]
