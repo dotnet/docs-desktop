@@ -115,6 +115,8 @@ issues:
           value: "Issue.User.Id == EventPayload.sender.id"
       pass:
         - labels-add: ["resolved-by-customer"]
+        - labels-remove: [":watch: Not Triaged"]
+
 pull_request:
 
   reopened: opened
