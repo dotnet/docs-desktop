@@ -1,4 +1,4 @@
-revision: 3
+revision: 4
 schema-version: 5
 owner-ms-alias: adegeo
 
@@ -87,7 +87,7 @@ issues:
     # Check if the issue was closed by the user who opened it
     - check:
         - type: query
-          value: "Issue.User.Id == Issue.EventPayload.sender.id"
+          value: "Issue.User.Id == EventPayload.sender.id"
       pass:
         - labels-add: ["resolved-by-customer"]
 
