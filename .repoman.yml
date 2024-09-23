@@ -87,7 +87,7 @@ issues:
     # Check if the issue was closed by the user who opened it
     - check:
         - type: query
-          value: "Issue.User.Id == Issue.ClosedBy.Id"
+          value: "Issue.User.Id == Issue.EventPayload.sender.id"
       pass:
         - labels-add: ["resolved-by-customer"]
 
