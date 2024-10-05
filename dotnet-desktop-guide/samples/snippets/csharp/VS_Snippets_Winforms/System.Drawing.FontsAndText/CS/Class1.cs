@@ -131,163 +131,164 @@ public class SystemDrawingFontsAndText
     public void Method51(PaintEventArgs e)
     {
         // <snippet51>
-        PointF pointF = new PointF(10, 0);
-        SolidBrush solidBrush = new SolidBrush(Color.Black);
+            PointF pointF = new PointF(10, 0);
+            SolidBrush solidBrush = new SolidBrush(Color.Black);
 
-        int count = 0;
-        string familyName = "";
-        string familyNameAndStyle;
-        FontFamily[] fontFamilies;
-        PrivateFontCollection privateFontCollection = new PrivateFontCollection();
+            int count = 0;
+            string familyName = "";
+            string familyNameAndStyle;
+            FontFamily[] fontFamilies;
 
-        // Add three font files to the private collection.
-        privateFontCollection.AddFontFile("D:\\systemroot\\Fonts\\Arial.ttf");
-        privateFontCollection.AddFontFile("D:\\systemroot\\Fonts\\CourBI.ttf");
-        privateFontCollection.AddFontFile("D:\\systemroot\\Fonts\\TimesBD.ttf");
-
-        // Get the array of FontFamily objects.
-        fontFamilies = privateFontCollection.Families;
-
-        // How many objects in the fontFamilies array?
-        count = fontFamilies.Length;
-
-        // Display the name of each font family in the private collection
-        // along with the available styles for that font family.
-        for (int j = 0; j < count; ++j)
-        {
-            // Get the font family name.
-            familyName = fontFamilies[j].Name;
-
-            // Is the regular style available?
-            if (fontFamilies[j].IsStyleAvailable(FontStyle.Regular))
+            using (var privateFontCollection = new PrivateFontCollection)
             {
-                familyNameAndStyle = "";
-                familyNameAndStyle = familyNameAndStyle + familyName;
-                familyNameAndStyle = familyNameAndStyle + " Regular";
+                // Add three font files to the private collection.
+                privateFontCollection.AddFontFile("D:\\systemroot\\Fonts\\Arial.ttf");
+                privateFontCollection.AddFontFile("D:\\systemroot\\Fonts\\CourBI.ttf");
+                privateFontCollection.AddFontFile("D:\\systemroot\\Fonts\\TimesBD.ttf");
 
-                Font regFont = new Font(
-                   familyName,
-                   16,
-                   FontStyle.Regular,
-                   GraphicsUnit.Pixel);
+                // Get the array of FontFamily objects.
+                fontFamilies = privateFontCollection.Families;
 
-                e.Graphics.DrawString(
-                   familyNameAndStyle,
-                   regFont,
-                   solidBrush,
-                   pointF);
+                // How many objects in the fontFamilies array?
+                count = fontFamilies.Length;
 
-                pointF.Y += regFont.Height;
-            }
+                // Display the name of each font family in the private collection
+                // along with the available styles for that font family.
+                for (int j = 0; j < count; ++j)
+                {
+                    // Get the font family name.
+                    familyName = fontFamilies[j].Name;
 
-            // Is the bold style available?
-            if (fontFamilies[j].IsStyleAvailable(FontStyle.Bold))
-            {
-                familyNameAndStyle = "";
-                familyNameAndStyle = familyNameAndStyle + familyName;
-                familyNameAndStyle = familyNameAndStyle + " Bold";
+                    // Is the regular style available?
+                    if (fontFamilies[j].IsStyleAvailable(FontStyle.Regular))
+                    {
+                        familyNameAndStyle = "";
+                        familyNameAndStyle = familyNameAndStyle + familyName;
+                        familyNameAndStyle = familyNameAndStyle + " Regular";
 
-                Font boldFont = new Font(
-                   familyName,
-                   16,
-                   FontStyle.Bold,
-                   GraphicsUnit.Pixel);
+                        Font regFont = new Font(
+                           familyName,
+                           16,
+                           FontStyle.Regular,
+                           GraphicsUnit.Pixel);
 
-                e.Graphics.DrawString(familyNameAndStyle, boldFont, solidBrush, pointF);
+                        e.Graphics.DrawString(
+                           familyNameAndStyle,
+                           regFont,
+                           solidBrush,
+                           pointF);
 
-                pointF.Y += boldFont.Height;
-            }
-            // Is the italic style available?
-            if (fontFamilies[j].IsStyleAvailable(FontStyle.Italic))
-            {
-                familyNameAndStyle = "";
-                familyNameAndStyle = familyNameAndStyle + familyName;
-                familyNameAndStyle = familyNameAndStyle + " Italic";
+                        pointF.Y += regFont.Height;
+                    }
 
-                Font italicFont = new Font(
-                   familyName,
-                   16,
-                   FontStyle.Italic,
-                   GraphicsUnit.Pixel);
+                    // Is the bold style available?
+                    if (fontFamilies[j].IsStyleAvailable(FontStyle.Bold))
+                    {
+                        familyNameAndStyle = "";
+                        familyNameAndStyle = familyNameAndStyle + familyName;
+                        familyNameAndStyle = familyNameAndStyle + " Bold";
 
-                e.Graphics.DrawString(
-                   familyNameAndStyle,
-                   italicFont,
-                   solidBrush,
-                   pointF);
+                        Font boldFont = new Font(
+                           familyName,
+                           16,
+                           FontStyle.Bold,
+                           GraphicsUnit.Pixel);
 
-                pointF.Y += italicFont.Height;
-            }
+                        e.Graphics.DrawString(familyNameAndStyle, boldFont, solidBrush, pointF);
 
-            // Is the bold italic style available?
-            if (fontFamilies[j].IsStyleAvailable(FontStyle.Italic) &&
-            fontFamilies[j].IsStyleAvailable(FontStyle.Bold))
-            {
-                familyNameAndStyle = "";
-                familyNameAndStyle = familyNameAndStyle + familyName;
-                familyNameAndStyle = familyNameAndStyle + "BoldItalic";
+                        pointF.Y += boldFont.Height;
+                    }
+                    // Is the italic style available?
+                    if (fontFamilies[j].IsStyleAvailable(FontStyle.Italic))
+                    {
+                        familyNameAndStyle = "";
+                        familyNameAndStyle = familyNameAndStyle + familyName;
+                        familyNameAndStyle = familyNameAndStyle + " Italic";
 
-                Font italicFont = new Font(
-                   familyName,
-                   16,
-                   FontStyle.Italic | FontStyle.Bold,
-                   GraphicsUnit.Pixel);
+                        Font italicFont = new Font(
+                           familyName,
+                           16,
+                           FontStyle.Italic,
+                           GraphicsUnit.Pixel);
 
-                e.Graphics.DrawString(
-                   familyNameAndStyle,
-                   italicFont,
-                   solidBrush,
-                   pointF);
+                        e.Graphics.DrawString(
+                           familyNameAndStyle,
+                           italicFont,
+                           solidBrush,
+                           pointF);
 
-                pointF.Y += italicFont.Height;
-            }
-            // Is the underline style available?
-            if (fontFamilies[j].IsStyleAvailable(FontStyle.Underline))
-            {
-                familyNameAndStyle = "";
-                familyNameAndStyle = familyNameAndStyle + familyName;
-                familyNameAndStyle = familyNameAndStyle + " Underline";
+                        pointF.Y += italicFont.Height;
+                    }
 
-                Font underlineFont = new Font(
-                   familyName,
-                   16,
-                   FontStyle.Underline,
-                   GraphicsUnit.Pixel);
+                    // Is the bold italic style available?
+                    if (fontFamilies[j].IsStyleAvailable(FontStyle.Italic) &&
+                    fontFamilies[j].IsStyleAvailable(FontStyle.Bold))
+                    {
+                        familyNameAndStyle = "";
+                        familyNameAndStyle = familyNameAndStyle + familyName;
+                        familyNameAndStyle = familyNameAndStyle + "BoldItalic";
 
-                e.Graphics.DrawString(
-                   familyNameAndStyle,
-                   underlineFont,
-                   solidBrush,
-                   pointF);
+                        Font italicFont = new Font(
+                           familyName,
+                           16,
+                           FontStyle.Italic | FontStyle.Bold,
+                           GraphicsUnit.Pixel);
 
-                pointF.Y += underlineFont.Height;
-            }
+                        e.Graphics.DrawString(
+                           familyNameAndStyle,
+                           italicFont,
+                           solidBrush,
+                           pointF);
 
-            // Is the strikeout style available?
-            if (fontFamilies[j].IsStyleAvailable(FontStyle.Strikeout))
-            {
-                familyNameAndStyle = "";
-                familyNameAndStyle = familyNameAndStyle + familyName;
-                familyNameAndStyle = familyNameAndStyle + " Strikeout";
+                        pointF.Y += italicFont.Height;
+                    }
+                    // Is the underline style available?
+                    if (fontFamilies[j].IsStyleAvailable(FontStyle.Underline))
+                    {
+                        familyNameAndStyle = "";
+                        familyNameAndStyle = familyNameAndStyle + familyName;
+                        familyNameAndStyle = familyNameAndStyle + " Underline";
 
-                Font strikeFont = new Font(
-                   familyName,
-                   16,
-                   FontStyle.Strikeout,
-                   GraphicsUnit.Pixel);
+                        Font underlineFont = new Font(
+                           familyName,
+                           16,
+                           FontStyle.Underline,
+                           GraphicsUnit.Pixel);
 
-                e.Graphics.DrawString(
-                   familyNameAndStyle,
-                   strikeFont,
-                   solidBrush,
-                   pointF);
+                        e.Graphics.DrawString(
+                           familyNameAndStyle,
+                           underlineFont,
+                           solidBrush,
+                           pointF);
 
-                pointF.Y += strikeFont.Height;
-            }
+                        pointF.Y += underlineFont.Height;
+                    }
 
-            // Separate the families with white space.
-            pointF.Y += 10;
-        } // for
+                    // Is the strikeout style available?
+                    if (fontFamilies[j].IsStyleAvailable(FontStyle.Strikeout))
+                    {
+                        familyNameAndStyle = "";
+                        familyNameAndStyle = familyNameAndStyle + familyName;
+                        familyNameAndStyle = familyNameAndStyle + " Strikeout";
+
+                        Font strikeFont = new Font(
+                           familyName,
+                           16,
+                           FontStyle.Strikeout,
+                           GraphicsUnit.Pixel);
+
+                        e.Graphics.DrawString(
+                           familyNameAndStyle,
+                           strikeFont,
+                           solidBrush,
+                           pointF);
+
+                        pointF.Y += strikeFont.Height;
+                    }
+
+                    // Separate the families with white space.
+                    pointF.Y += 10;
+                } // for
         // </snippet51>
     }
     // d3a4a223-9492-4b54-9afd-db1c31c3cefd
