@@ -36,9 +36,6 @@
             "Semester": "Selenium",
             "ParentNodeId": 308200
         },
-
-
-        
         {
             "Label": "okr-freshness",
             "Semester": "Dilithium",
@@ -62,7 +59,7 @@
             "Label": "doc-bug",
             "Semester": "Dilithium",
             "ParentNodeId": 233465
-        }
+        },
         {
             "Label": "sfi-ropc",
             "Semester": "Dilithium",
