@@ -1,7 +1,7 @@
 {
     "Moniker1": "netframeworkdesktop-4.8",
     "RepoPath1": "dotnet-desktop-guide/framework/",
-    "Moniker2": "netdesktop-7.0",
+    "Moniker2": "netdesktop-8.0",
     "RepoPath2": "dotnet-desktop-guide/net/",
     "PublishRoot": "/dotnet/desktop/",
     "Entries": []
