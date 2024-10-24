@@ -9,6 +9,9 @@
     <None Update="definitions.winforms.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="definitions.wpf.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="definitions.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
