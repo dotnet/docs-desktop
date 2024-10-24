@@ -45,7 +45,7 @@ namespace fonts
         // The OnPaint method of a form, which provides the graphics object
         protected override void OnPaint(PaintEventArgs e)
         {
-            PointF pointF = new PointF(10, 0);
+            PointF location = new PointF(10, 0);
             SolidBrush solidBrush = new SolidBrush(Color.Black);
 
             FontFamily[] fontFamilies;
@@ -66,31 +66,31 @@ namespace fonts
 
                 // Regular
                 if (fontFamilies[i].IsStyleAvailable(FontStyle.Regular))
-                    pointF.Y += DrawFont(e.Graphics, fontFamilies[i], FontStyle.Regular, solidBrush, pointF, "Regular");
+                    location.Y += DrawFont(e.Graphics, fontFamilies[i], FontStyle.Regular, solidBrush, location, "Regular");
 
                 // Bold
                 if (fontFamilies[i].IsStyleAvailable(FontStyle.Bold))
-                    pointF.Y += DrawFont(e.Graphics, fontFamilies[i], FontStyle.Bold, solidBrush, pointF, "Bold");
+                    location.Y += DrawFont(e.Graphics, fontFamilies[i], FontStyle.Bold, solidBrush, location, "Bold");
 
                 // Italic
                 if (fontFamilies[i].IsStyleAvailable(FontStyle.Italic))
-                    pointF.Y += DrawFont(e.Graphics, fontFamilies[i], FontStyle.Italic, solidBrush, pointF, "Italic");
+                    location.Y += DrawFont(e.Graphics, fontFamilies[i], FontStyle.Italic, solidBrush, location, "Italic");
 
                 // Bold and Italic
                 if (fontFamilies[i].IsStyleAvailable(FontStyle.Bold) &&
                     fontFamilies[i].IsStyleAvailable(FontStyle.Italic))
-                    pointF.Y += DrawFont(e.Graphics, fontFamilies[i], FontStyle.Bold | FontStyle.Italic, solidBrush, pointF, "BoldItalic");
+                    location.Y += DrawFont(e.Graphics, fontFamilies[i], FontStyle.Bold | FontStyle.Italic, solidBrush, location, "BoldItalic");
 
                 // Underline
                 if (fontFamilies[i].IsStyleAvailable(FontStyle.Underline))
-                    pointF.Y += DrawFont(e.Graphics, fontFamilies[i], FontStyle.Underline, solidBrush, pointF, "Underline");
+                    location.Y += DrawFont(e.Graphics, fontFamilies[i], FontStyle.Underline, solidBrush, location, "Underline");
 
                 // Strikeout
                 if (fontFamilies[i].IsStyleAvailable(FontStyle.Strikeout))
-                    pointF.Y += DrawFont(e.Graphics, fontFamilies[i], FontStyle.Strikeout, solidBrush, pointF, "Strikeout");
+                    location.Y += DrawFont(e.Graphics, fontFamilies[i], FontStyle.Strikeout, solidBrush, location, "Strikeout");
 
                 // Extra space between font families
-                pointF.Y += 10;
+                location.Y += 10;
             }
 
             privateFontCollection.Dispose();

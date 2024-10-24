@@ -30,7 +30,7 @@ Public Class Form1
     ' The OnPaint method of a form, which provides the graphics object
     Protected Overrides Sub OnPaint(e As PaintEventArgs)
 
-        Dim pointF As New PointF(10, 0)
+        Dim location As New PointF(10, 0)
         Dim solidBrush As New SolidBrush(Color.Black)
 
         Dim fontFamilies() As FontFamily
@@ -51,37 +51,37 @@ Public Class Form1
 
             ' Regular
             If fontFamilies(i).IsStyleAvailable(FontStyle.Regular) Then
-                pointF.Y += DrawFont(e.Graphics, fontFamilies(i), FontStyle.Regular, solidBrush, pointF, "Regular")
+                location.Y += DrawFont(e.Graphics, fontFamilies(i), FontStyle.Regular, solidBrush, location, "Regular")
             End If
 
             ' Bold
             If fontFamilies(i).IsStyleAvailable(FontStyle.Bold) Then
-                pointF.Y += DrawFont(e.Graphics, fontFamilies(i), FontStyle.Bold, solidBrush, pointF, "Bold")
+                location.Y += DrawFont(e.Graphics, fontFamilies(i), FontStyle.Bold, solidBrush, location, "Bold")
             End If
 
             ' Italic
             If fontFamilies(i).IsStyleAvailable(FontStyle.Italic) Then
-                pointF.Y += DrawFont(e.Graphics, fontFamilies(i), FontStyle.Italic, solidBrush, pointF, "Italic")
+                location.Y += DrawFont(e.Graphics, fontFamilies(i), FontStyle.Italic, solidBrush, location, "Italic")
             End If
 
             ' Bold and Italic
             If fontFamilies(i).IsStyleAvailable(FontStyle.Italic) And
                fontFamilies(i).IsStyleAvailable(FontStyle.Italic) Then
-                pointF.Y += DrawFont(e.Graphics, fontFamilies(i), FontStyle.Bold Or FontStyle.Italic, solidBrush, pointF, "BoldItalic")
+                location.Y += DrawFont(e.Graphics, fontFamilies(i), FontStyle.Bold Or FontStyle.Italic, solidBrush, location, "BoldItalic")
             End If
 
             ' Underline
             If fontFamilies(i).IsStyleAvailable(FontStyle.Underline) Then
-                pointF.Y += DrawFont(e.Graphics, fontFamilies(i), FontStyle.Underline, solidBrush, pointF, "Underline")
+                location.Y += DrawFont(e.Graphics, fontFamilies(i), FontStyle.Underline, solidBrush, location, "Underline")
             End If
 
             ' Strikeout
             If fontFamilies(i).IsStyleAvailable(FontStyle.Strikeout) Then
-                pointF.Y += DrawFont(e.Graphics, fontFamilies(i), FontStyle.Strikeout, solidBrush, pointF, "Strikeout")
+                location.Y += DrawFont(e.Graphics, fontFamilies(i), FontStyle.Strikeout, solidBrush, location, "Strikeout")
             End If
 
             ' Extra space between font families
-            pointF.Y += 10
+            location.Y += 10
 
         Next
 
