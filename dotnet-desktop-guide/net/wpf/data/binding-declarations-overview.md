@@ -1,9 +1,10 @@
 ---
 title: Binding declarations overview
 description: Learn how to declare a data binding in XAML or code for your application development in Windows Presentation Foundation (WPF).
-ms.date: 04/27/2021
+ms.date: 10/22/2024
 author: adegeo
 ms.author: adegeo
+ms.custom: update-template
 dev_langs:
   - "csharp"
   - "vb"
@@ -16,7 +17,7 @@ helpviewer_keywords:
   - "binding declarations [WPF]"
 ---
 
-# Binding declarations overview (WPF .NET)
+# What are binding declarations? (WPF .NET)
 
 Typically, developers declare the bindings directly in the XAML markup of the UI elements they want to bind data to. However, you can also declare bindings in code. This article describes how to declare bindings in both XAML and in code.
 

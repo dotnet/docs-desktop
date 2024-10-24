@@ -1,7 +1,7 @@
 ---
 title: "How to create a data binding"
 description: Create a simple binding for your applications through this how-to example in Windows Presentation Foundation (WPF).
-ms.date: 07/24/2024
+ms.date: 10/22/2024
 dev_langs:
   - "csharp"
   - "vb"
@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "simple binding [WPF], creating"
   - "data binding [WPF], creating simple bindings"
   - "binding data [WPF], creating"
-#customer intent: As a devleoper, I want to create a binding so that I can present information in a UI
+#customer intent: As a developer, I want to create a binding so that I can present information in a UI
 ---
 
 # How to create a data binding (WPF .NET)

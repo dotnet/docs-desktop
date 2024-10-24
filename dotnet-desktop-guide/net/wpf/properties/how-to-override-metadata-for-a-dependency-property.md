@@ -1,7 +1,8 @@
 ---
 title: "How to override metadata for a dependency property"
 description: "Learn how to override a dependency property in Windows Presentation Foundation (WPF) by calling the OverrideMetadata method."
-ms.date: "11/04/2021"
+ms.date: 10/24/2024
+ms.custom: update-template
 dev_langs:
   - "csharp"
   - "vb"

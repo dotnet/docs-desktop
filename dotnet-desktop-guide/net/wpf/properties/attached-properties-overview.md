@@ -1,8 +1,9 @@
 ---
 title: "Attached properties overview"
 description: "Learn about the WPF property system and the capabilities of an attached property, which are global properties settable on any object."
-ms.date: "10/14/2021"
+ms.date: 10/24/2024
 ms.topic: overview
+ms.custom: update-template
 dev_langs:
   - "csharp"
   - "vb"

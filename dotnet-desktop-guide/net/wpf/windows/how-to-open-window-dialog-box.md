@@ -1,7 +1,8 @@
 ---
 title: How to open a window
-description: Learn about how to show a window or dialog box in Windows Foundation Presentation (WPF). You'll also learn how to handle common scenarios around managing a window or dialog box.
-ms.date: "03/12/2021"
+description: Learn about how to show a window or dialog box in Windows Foundation Presentation (WPF). Windows can be shown as dialog boxes.
+ms.date: 10/24/2024
+ms.custom: update-template
 dev_langs: 
   - "csharp"
   - "vb"

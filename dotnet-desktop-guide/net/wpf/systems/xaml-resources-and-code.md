@@ -1,10 +1,11 @@
 ---
 title: WPF resources in code
-description: Learn about how Windows Presentation Foundation (WPF) resources, typically defined and used in XAML, can be used in code. Resources can be accessed, created, and managed in code.
+description: Learn about how Windows Presentation Foundation (WPF) resources, typically defined and used in XAML, can be used in code.
 author: adegeo
 ms.author: adegeo
-ms.date: 04/01/2021
+ms.date: 10/24/2024
 ms.topic: overview
+ms.custom: update-template
 dev_langs: 
   - "csharp"
   - "vb"

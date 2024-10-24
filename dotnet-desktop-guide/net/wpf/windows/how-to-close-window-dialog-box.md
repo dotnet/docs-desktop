@@ -1,7 +1,8 @@
 ---
 title: How to close a window
-description: Learn about how to close a window or dialog box in Windows Foundation Presentation (WPF). You'll also learn how to return a result from the window or dialog box.
-ms.date: "03/24/2021"
+description: Learn about how to close a window or dialog box, and optionally return a value, in Windows Foundation Presentation (WPF).
+ms.date: 10/24/2024
+ms.custom: update-template
 dev_langs: 
   - "csharp"
   - "vb"

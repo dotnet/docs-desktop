@@ -1,7 +1,8 @@
 ---
 title: How to print an XML Paper Specification (XPS) file
 description: Learn how to print an XPS file from your application by using the System.Printing.PrintQueue.AddJob method.
-ms.date: 09/16/2021
+ms.date: 10/24/2024
+ms.custom: update-template
 dev_langs:
   - "csharp"
   - "vb"

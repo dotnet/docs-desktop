@@ -1,7 +1,8 @@
 ---
 title: How to get or set main app window
-description: Learn about how to get and set the main application window for a Windows Presentation Foundation (WPF) application. The main window of an application is typically the startup window. This is sometimes specified by the StartupUri property.
-ms.date: "03/24/2021"
+description: Learn about how to get and set the main application window for a Windows Presentation Foundation (WPF) application.
+ms.date: 10/24/2024
+ms.custom: update-template
 dev_langs: 
   - "csharp"
   - "vb"

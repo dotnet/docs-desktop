@@ -1,8 +1,9 @@
 ---
 title: Printing documents overview
 description: Learn about the printing and print system management APIs available with Windows Presentation Foundation (WPF).
-ms.date: 09/22/2021
+ms.date: 10/24/2024
 ms.topic: overview
+ms.custom: update-template
 dev_langs: 
 - "csharp"
 - "vb"

@@ -396,10 +396,6 @@
         {
             "source_path": "dotnet-desktop-guide/framework/wpf/events/routed-events-overview.md",
             "redirect_url": "/dotnet/desktop/wpf/advanced/routed-events-overview?view=netframeworkdesktop-4.8"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/net/wpf/whats-new/index.md",
-            "redirect_url": "/dotnet/desktop/wpf/whats-new/net70?view=netdesktop-7.0"
         }
     ]
 }

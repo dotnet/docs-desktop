@@ -1,10 +1,11 @@
 ---
 title: XAML resources overview
-description: Learn what a Windows Presentation Foundation (WPF) resource is. WPF provides a resource system, both in XAML and in code, that allows to you create, reference, and reuse resources.
+description: Learn what a Windows Presentation Foundation (WPF) resource is. WPF provides a system that allows to you create, reference, and reuse resources.
 author: adegeo
 ms.author: adegeo
-ms.date: 03/31/2021
+ms.date: 10/24/2024
 ms.topic: overview
+ms.custom: update-template
 dev_langs: 
   - "csharp"
   - "vb"

@@ -1,7 +1,8 @@
 ---
 title: Dialog Boxes Overview
 description: Learn about the varieties of dialog boxes in Windows Foundation Presentation (WPF). With a dialog box, you gather and display information to a user.
-ms.date: "03/12/2021"
+ms.date: 10/24/2024
+ms.custom: update-template
 helpviewer_keywords: 
   - "modeless dialog boxes [WPF]"
   - "modal dialog boxes [WPF]"
@@ -45,7 +46,7 @@ Since these dialog boxes are provided by the operating system, they're shared am
 
 WPF encapsulates the open file, save file, open folder, and print common dialog boxes and exposes them as managed classes for you to use.
 
-:::image type="content" source="media/dialog-boxes-overview/open-file-dialog-box.png" alt-text="Open file dialog box called from WPF.":::
+:::image type="content" source="media/dialog-boxes-overview/open-file-dialog-box.png" alt-text="A 'Open File' dialog box called from WPF.":::
 
 To learn more about common dialog boxes, see the following articles:
 

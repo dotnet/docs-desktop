@@ -3,7 +3,8 @@ title: "How to use system resources"
 description: Learn how to define and reference Windows Presentation Foundation (WPF) Windows Operating System resources in XAML.
 author: adegeo
 ms.author: adegeo
-ms.date: 04/09/2021
+ms.date: 10/24/2024
+ms.custom: update-template
 dev_langs: 
   - "csharp"
   - "vb"

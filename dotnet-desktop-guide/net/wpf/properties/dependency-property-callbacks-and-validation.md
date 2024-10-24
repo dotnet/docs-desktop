@@ -1,7 +1,8 @@
 ---
 title: "Dependency property callbacks and validation"
 description: Learn how to implement dependency property callbacks and validation in Windows Presentation Foundation (WPF).
-ms.date: "11/11/2021"
+ms.date: 10/24/2024
+ms.custom: update-template
 dev_langs:
   - "csharp"
   - "vb"

@@ -1,7 +1,8 @@
 ---
 title: "Framework property metadata"
 description: Learn how to set framework property metadata for a dependency property in Windows Presentation Foundation (WPF).
-ms.date: "11/20/2021"
+ms.date: 10/24/2024
+ms.custom: update-template
 helpviewer_keywords:
   - "metadata [WPF], framework properties"
   - "framework property metadata [WPF]"

@@ -1,7 +1,8 @@
 ---
 title: "How to add an event handler using code"
 description: Learn how to add an event handler in code-behind for an element in Windows Presentation Foundation (WPF).
-ms.date: "02/01/2021"
+ms.date: 10/24/2024
+ms.custom: update-template
 dev_langs:
   - "csharp"
   - "vb"

@@ -1,7 +1,8 @@
 ---
 title: "How to register an attached property"
 description: "Learn about the Windows Presentation Foundation (WPF) property system and how to register an attached property and provide public accessors."
-ms.date: "10/15/2021"
+ms.date: 10/24/2024
+ms.custom: update-template
 dev_langs:
   - "csharp"
   - "vb"
