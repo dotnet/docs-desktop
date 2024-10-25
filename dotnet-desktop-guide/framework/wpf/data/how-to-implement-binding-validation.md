@@ -36,7 +36,7 @@ As shown in the following example, the <xref:System.Windows.Controls.ToolTip> th
 
 ## Data object
 
-The following snippet is the data object used in the previous code examples. An instance is created in the XAML as a static resource with the name of `ods`:
+The following snippet is the data object used in the previous code examples. An instance is created in the XAML as a static resource with the key of `ods`:
 
 :::code language="csharp" source="../../../samples/snippets/csharp/VS_Snippets_Wpf/BindValidation/CSharp/MyDataSource.cs" id="DataSource":::
 :::code language="vb" source="../../../samples/snippets/visualbasic/VS_Snippets_Wpf/BindValidation/VisualBasic/MyDataSource.vb" id="DataSource":::
