@@ -12,10 +12,6 @@ namespace SDKSample
         public int Min { get; set; }
         public int Max { get; set; }
 
-        public AgeRangeRule()
-        {
-        }
-
         public override ValidationResult Validate(object value, CultureInfo cultureInfo)
         {
             int age = 0;
@@ -23,7 +19,7 @@ namespace SDKSample
             try
             {
                 if (((string)value).Length > 0)
-                    age = Int32.Parse((String)value);
+                    age = int.Parse((String)value);
             }
             catch (Exception e)
             {
