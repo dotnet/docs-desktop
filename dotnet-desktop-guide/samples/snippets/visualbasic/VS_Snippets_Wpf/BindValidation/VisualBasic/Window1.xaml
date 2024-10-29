@@ -1,14 +1,14 @@
 ﻿<Window
   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-  xmlns:c="clr-namespace:BindValidation_VB"
+  xmlns:local="clr-namespace:BindValidation_VB"
   x:Class="Window1"
   Title="Binding Validation Sample"
   SizeToContent="WidthAndHeight"
   ResizeMode="NoResize">
 
     <Window.Resources>
-      <c:MyDataSource x:Key="ods"/>
+      <local:MyDataSource x:Key="ods"/>
 
       <ControlTemplate x:Key="validationTemplate">
         <DockPanel>
@@ -57,7 +57,7 @@
         <Binding Path="Age" Source="{StaticResource ods}"
                  UpdateSourceTrigger="PropertyChanged" >
           <Binding.ValidationRules>
-            <c:AgeRangeRule Min="21" Max="130"/>
+            <local:AgeRangeRule Min="21" Max="130"/>
           </Binding.ValidationRules>
         </Binding>
       </TextBox.Text>
@@ -71,7 +71,7 @@
         <Binding Path="Age2" Source="{StaticResource ods}"
                  UpdateSourceTrigger="PropertyChanged" >
           <Binding.ValidationRules>
-            <c:AgeRangeRule Min="21" Max="130"/>
+            <local:AgeRangeRule Min="21" Max="130"/>
           </Binding.ValidationRules>
         </Binding>
       </TextBox.Text>
