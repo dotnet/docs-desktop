@@ -1,7 +1,8 @@
 ---
 title: "Marking routed events as handled, and class handling"
 description: Learn about class handling of routed events in Windows Presentation Foundation (WPF) and when to mark a routed event as handled.
-ms.date: "03/21/2022"
+ms.date: 10/24/2024
+ms.custom: update-template
 dev_langs:
   - "csharp"
   - "vb"

@@ -1,9 +1,10 @@
 ---
 title: Data binding overview
-description: Learn about the different data sources you can add to your project in Windows Presentation Foundation for .NET. Data sources can be bound to XAML elements to create dynamic apps.
+description: Learn about data binding in Windows Presentation Foundation for .NET. You can bind data to UI elements to create dynamic apps.
 author: adegeo
-ms.date: 04/22/2021
+ms.date: 10/22/2024
 ms.author: adegeo
+ms.custom: update-template
 dev_langs:
   - "csharp"
   - "vb"

@@ -1,10 +1,11 @@
 ---
 title: How to create a style for a control
-description: Learn how to create and reference a control style in Windows Presentation Foundation and .NET.
+description: Learn how to create and reference a control style in Windows Presentation Foundation and .NET. Control styles can be implemented through resource dictionaries.
 author: adegeo
 ms.author: adegeo
-ms.date: 04/15/2021
+ms.date: 10/22/2024
 ms.topic: conceptual
+ms.custom: update-template
 dev_langs:
   - "csharp"
   - "vb"
@@ -79,6 +80,8 @@ To assign a named style to an element programmatically, get the style from the r
 Perhaps you want your two <xref:System.Windows.Controls.TextBlock> elements to share some property values, such as the <xref:System.Windows.Controls.Control.FontFamily%2A> and the centered <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A>. But you also want the text **My Pictures** to have some additional properties. You can do that by creating a new style that is based on the first style, as shown here.
 
 :::code language="xaml" source="./snippets/how-to-create-apply-style/csharp/Window2.xaml" id="SnippetDefaultTextBlockStyleBasedOn":::
+
+Then, apply the style to a `TextBlock`.
 
 :::code language="xaml" source="./snippets/how-to-create-apply-style/csharp/Window2.xaml" id="SnippetTextBlocksExplicit":::
 

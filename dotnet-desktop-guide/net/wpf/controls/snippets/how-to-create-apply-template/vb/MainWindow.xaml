@@ -7,12 +7,37 @@
         mc:Ignorable="d"
         Title="Template Intro Sample" Loaded="WindowLoaded" SizeToContent="WidthAndHeight" MinWidth="250">
     <Window.Resources>
-
+        <ControlTemplate x:Key="roundbutton" TargetType="Button">
+            <Grid>
+                <VisualStateManager.VisualStateGroups>
+                    <VisualStateGroup Name="CommonStates">
+                        <VisualState Name="Normal">
+                            <Storyboard>
+                                <ColorAnimation Storyboard.TargetName="backgroundElement" 
+                            Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)"
+                            To="{TemplateBinding Background}"
+                            Duration="0:0:0.3"/>
+                            </Storyboard>
+                        </VisualState>
+                        <VisualState Name="MouseOver">
+                            <Storyboard>
+                                <ColorAnimation Storyboard.TargetName="backgroundElement" 
+                            Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" 
+                            To="Yellow" 
+                            Duration="0:0:0.3"/>
+                            </Storyboard>
+                        </VisualState>
+                    </VisualStateGroup>
+                </VisualStateManager.VisualStateGroups>
+                <Ellipse Name="backgroundElement" Fill="{TemplateBinding Background}" Stroke="{TemplateBinding Foreground}" />
+                <ContentPresenter x:Name="contentPresenter" HorizontalAlignment="Center" VerticalAlignment="Center" />
+            </Grid>
+        </ControlTemplate>
     </Window.Resources>
     <StackPanel Margin="10">
         <Label>Unstyled Button</Label>
         <Button>Button 1</Button>
         <Label>Rounded Button</Label>
-        <Button>Button 2</Button>
+        <Button Template="{StaticResource roundbutton}" Width="65" Height="65">Button 2</Button>
     </StackPanel>
 </Window>
