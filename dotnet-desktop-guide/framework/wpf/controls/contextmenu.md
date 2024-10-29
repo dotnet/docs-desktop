@@ -26,5 +26,3 @@ ContextMenu in different states
 ## Reference  
 
  <xref:System.Windows.Controls.ContextMenu>  
-  
-## Related Sections

@@ -28,5 +28,3 @@ An <xref:System.Windows.Controls.Expander> allows a user to view a header and ex
 ## Reference  
 
  <xref:System.Windows.Controls.Expander>  
-  
-## Related Sections

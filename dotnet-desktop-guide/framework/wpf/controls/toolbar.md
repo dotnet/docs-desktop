@@ -30,5 +30,3 @@ Vertical Toolbar
 
  <xref:System.Windows.Controls.ToolBar>  
   <xref:System.Windows.Controls.ToolBarTray>  
-  
-## Related Sections

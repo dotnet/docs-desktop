@@ -21,5 +21,3 @@ The <xref:System.Windows.Controls.GridSplitter> redistributes space between colu
 ## Reference  
 
  <xref:System.Windows.Controls.GridSplitter>  
-  
-## Related Sections

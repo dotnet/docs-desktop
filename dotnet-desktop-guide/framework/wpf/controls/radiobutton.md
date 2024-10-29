@@ -21,5 +21,3 @@ Typical RadioButton
 ## Reference  
 
  <xref:System.Windows.Controls.Primitives.ToggleButton>  
-  
-## Related Sections

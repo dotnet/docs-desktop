@@ -28,5 +28,3 @@ This section provides information about Adorners and the Windows Presentation Fo
  <xref:System.Windows.Media.AdornerHitTestResult>  
   
  <xref:System.Windows.Documents.AdornerLayer>  
-  
-## Related Sections

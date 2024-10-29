@@ -24,5 +24,3 @@ The topics in this section describe how to use the <xref:System.Windows.Controls
  <xref:System.Windows.Controls.GridSplitter>  
   
  <xref:System.Windows.Controls.Grid>  
-  
-## Related Sections

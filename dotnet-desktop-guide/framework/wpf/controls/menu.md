@@ -28,5 +28,3 @@ Menus in different states
   <xref:System.Windows.Controls.MenuItem>  
   <xref:System.Windows.Controls.Primitives.MenuBase>  
   <xref:System.Windows.Controls.ContextMenu>  
-  
-## Related Sections
