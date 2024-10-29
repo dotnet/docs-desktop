@@ -10,6 +10,10 @@
         "Specialized-WinForms": {
             "commandName": "Project",
             "commandLineArgs": "\"C:\\Code\\Work\\dotnet\\docs-desktop\\.openpublishing.redirection.winforms.json\""
+        },
+        "Specialized-WPF": {
+            "commandName": "Project",
+            "commandLineArgs": "\"C:\\Code\\Work\\dotnet\\docs-desktop\\.openpublishing.redirection.wpf.json\""
         }
     }
 }
