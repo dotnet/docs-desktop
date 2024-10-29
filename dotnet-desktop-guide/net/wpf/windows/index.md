@@ -1,8 +1,9 @@
 ---
 title: Windows in WPF overview
 description: Learn about the basics of how Window objects work in WPF. Learn how to create and manage a window for a Windows Presentation Foundation (WPF) app.
-ms.date: "03/11/2021"
+ms.date: 10/24/2024
 ms.topic: overview
+ms.custom: update-template
 dev_langs: 
   - "csharp"
   - "vb"
@@ -212,7 +213,7 @@ When a window is instantiated, a reference to it's automatically added to a [lis
 
 The window is finally opened by calling the <xref:System.Windows.Window.Show%2A> method as shown in the following image:
 
-:::image type="content" source="./media/index/window-with-button.png" alt-text="WPF Window with a single button inside.":::
+:::image type="content" source="./media/index/window-with-button.png" alt-text="WPF Window with a single button inside with the text 'Click me'.":::
 
 A window that is opened by calling <xref:System.Windows.Window.Show%2A> is a _modeless_ window, and the application doesn't prevent users from interacting with other windows in the application. Opening a window with <xref:System.Windows.Window.ShowDialog%2A> opens a window as _modal_ and restricts user interaction to the specific window. For more information, see [Dialog Boxes Overview](dialog-boxes-overview.md).
 

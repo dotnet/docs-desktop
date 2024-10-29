@@ -1,11 +1,12 @@
 ---
 title: How to create a template
-description: Learn how to create and reference a control template in Windows Presentation Foundation and .NET.
+description: Learn how to create and reference a control template in Windows Presentation Foundation and .NET. Templates can be implemented in a resource dictionary.
 author: adegeo
 ms.author: adegeo
-ms.date: 02/15/2023
+ms.date: 10/22/2024
 no-loc: ["<Window>", "<ControlTemplate>", "<Ellipse>", "<ContentPresenter>", "<Trigger>", "<Setter>", "<PropertyTrigger>", "<Grid>", "<VisualStateManager.VisualStateGroups>", "<VisualStateGroup>", "<VisualState>", "<Storyboard>", "SizeToContent", "MinWidth", "TargetType", "Title"]
 ms.topic: how-to
+ms.custom: update-template
 helpviewer_keywords: 
   - "control contract [WPF]"
   - "controls [WPF], visual structure changes"
@@ -13,6 +14,9 @@ helpviewer_keywords:
   - "skinning controls [WPF]"
   - "controls [WPF], appearance specified by state"
   - "templates [WPF], custom for existing controls"
+
+#customer intent: As a developer I want to create a template to a control.
+
 ---
 
 # How to create a template for a control (WPF.NET)

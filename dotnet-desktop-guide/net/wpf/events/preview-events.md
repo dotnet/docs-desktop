@@ -1,7 +1,8 @@
 ---
-title: "Preview events"
+title: "Preview events for composite controls"
 description: Learn about preview events in Windows Presentation Foundation (WPF) and how to use preview events for composite control event handling.
-ms.date: "03/09/2022"
+ms.date: 10/24/2024
+ms.custom: update-template
 dev_langs:
   - "csharp"
   - "vb"
