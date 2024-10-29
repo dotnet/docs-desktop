@@ -22,5 +22,3 @@ Typical TabControl
 
  <xref:System.Windows.Controls.TabControl>  
   <xref:System.Windows.Controls.TabItem>  
-  
-## Related Sections

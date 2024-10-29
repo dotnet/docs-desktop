@@ -24,5 +24,3 @@ CheckBox controls in different states
   <xref:System.Windows.Controls.RadioButton>  
   <xref:System.Windows.Controls.Primitives.ButtonBase>  
   <xref:System.Windows.Controls.Primitives.RepeatButton>  
-  
-## Related Sections

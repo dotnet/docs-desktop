@@ -26,5 +26,3 @@ Typical ListBox
 
  <xref:System.Windows.Controls.ListBox>  
   <xref:System.Windows.Controls.ListBoxItem>  
-  
-## Related Sections

@@ -31,5 +31,3 @@ The following examples demonstrate how to accomplish common tasks using the Wind
  <xref:System.Windows.Media.AdornerHitTestResult>  
   
  <xref:System.Windows.Documents.AdornerLayer>  
-  
-## Related Sections

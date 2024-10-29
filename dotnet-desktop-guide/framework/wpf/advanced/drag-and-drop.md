@@ -29,5 +29,3 @@ Windows Presentation Foundation (WPF) provides a highly flexible drag and drop i
   <xref:System.Windows.DragDropEffects>  
   <xref:System.Windows.DragEventHandler>  
   <xref:System.Windows.TextDataFormat>  
-  
-## Related Sections

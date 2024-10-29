@@ -28,5 +28,3 @@ The <xref:System.Windows.Controls.Primitives.Popup> control displays content in 
 ## Reference  
 
  <xref:System.Windows.Controls.Primitives.Popup>  
-  
-## Related Sections

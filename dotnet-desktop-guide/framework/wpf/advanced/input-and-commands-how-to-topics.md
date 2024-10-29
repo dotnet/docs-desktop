@@ -42,5 +42,3 @@ The topics in this section describe how to use the input and commanding infrastr
  <xref:System.Windows.Input.Mouse>  
   
  <xref:System.Windows.Input.FocusManager>  
-  
-## Related Sections
