@@ -23,5 +23,3 @@ A <xref:System.Windows.Controls.ProgressBar> indicates the progress of an operat
 
  <xref:System.Windows.Controls.ProgressBar>  
   <xref:System.Windows.Controls.Primitives.StatusBar>  
-  
-## Related Sections

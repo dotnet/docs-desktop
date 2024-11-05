@@ -24,5 +24,3 @@ The <xref:System.Windows.Controls.GroupBox> control is a <xref:System.Windows.Co
 ## Reference  
 
  <xref:System.Windows.Controls.GroupBox>  
-  
-## Related Sections

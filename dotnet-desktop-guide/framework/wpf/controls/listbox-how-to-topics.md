@@ -25,5 +25,3 @@ The topics in this section describe how to use the <xref:System.Windows.Controls
  <xref:System.Windows.Controls.ListBox>  
   
  <xref:System.Windows.Controls.ListBoxItem>  
-  
-## Related Sections

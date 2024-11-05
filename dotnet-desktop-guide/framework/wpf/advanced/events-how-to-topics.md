@@ -27,5 +27,3 @@ The topics in this section describe how to use events in WPF.
  <xref:System.Windows.EventManager>  
   
  <xref:System.Windows.RoutingStrategy>  
-  
-## Related Sections

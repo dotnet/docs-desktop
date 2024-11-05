@@ -23,5 +23,3 @@ Typical RepeatButton
 ## Reference  
 
  <xref:System.Windows.Controls.Primitives.RepeatButton>  
-  
-## Related Sections

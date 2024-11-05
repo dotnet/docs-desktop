@@ -25,5 +25,3 @@ The topics in this section describe how to use the WPF element tree.
  <xref:System.Windows.Media.VisualTreeHelper>  
   
  <xref:System.Windows.Markup>  
-  
-## Related Sections

@@ -23,5 +23,3 @@ A <xref:System.Windows.Controls.Primitives.StatusBar> is a horizontal area at th
 
  <xref:System.Windows.Controls.Primitives.StatusBar>  
   <xref:System.Windows.Controls.Primitives.StatusBarItem>  
-  
-## Related Sections

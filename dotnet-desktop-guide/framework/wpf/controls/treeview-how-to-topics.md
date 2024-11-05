@@ -26,5 +26,3 @@ The topics in this section describe how to use the <xref:System.Windows.Controls
  <xref:System.Windows.Controls.TreeView>  
   
  <xref:System.Windows.Controls.TreeViewItem>  
-  
-## Related Sections

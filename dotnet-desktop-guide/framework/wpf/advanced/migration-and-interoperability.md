@@ -35,5 +35,3 @@ This page contains links to documents that discuss how to implement interoperati
 | <xref:System.Windows.Interop.HwndSource>                 | Hosts a WPF region within a Win32 application.                                                                                                                                                                                                                                                                                |
 | <xref:System.Windows.Interop.HwndHost>                   | Base class for <xref:System.Windows.Forms.Integration.WindowsFormsHost>, defines some basic functionality that all HWND-based technologies use when hosted by a WPF application. Subclass this to host a Win32 window within a WPF application. |
 | <xref:System.Windows.Interop.BrowserInteropHelper>       | A helper class for reporting conditions of the browser environment for a WPF application that is hosted by a browser.                                                                                                                                                                                                         |
-
-## Related Sections
