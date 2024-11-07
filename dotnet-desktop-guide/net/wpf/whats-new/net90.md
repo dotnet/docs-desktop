@@ -7,14 +7,14 @@ ms.topic: conceptual
 
 # What's new for .NET 8 (WPF .NET)
 
-As part of the ongoing modernization of Windows Presentation Foundation (WPF), applications built on WPF and running on Windows 10 or later can now take advantage of cutting-edge design elements and behaviors. Key enhancements include: 
+As part of the ongoing modernization of Windows Presentation Foundation (WPF), applications built on WPF and running on Windows 10 or later can now take advantage of cutting-edge design elements and behaviors. Key enhancements include:
 
 - Support for light and dark themes
 - Rounded corners for controls
 - Compliance with Windows 11 design guidelines
 - Accent color support for controls
 
-The introduction of the new Fluent theme delivers a fresh, modern Windows 11 aesthetic to WPF applications. With integrated Light/Dark mode and system accent color support, this update is set to enhance user engagement by giving WPF applications a contemporary, polished appearance. 
+The introduction of the new Fluent theme delivers a fresh, modern Windows 11 aesthetic to WPF applications. With integrated Light/Dark mode and system accent color support, this update is set to enhance user engagement by giving WPF applications a contemporary, polished appearance.
 
 First showcased at Build 2024, the Fluent theme is now generally available as part of the official .NET 9 release for Windows 10, Windows 11, and also Windows Server 2019.
 
@@ -25,8 +25,8 @@ WPF Gallery App is a sample tool that demonstrates WPF controls and styles to a 
 ![WPF gallery app showcased in dark mode](./media/wpfdark.png)
 
 ## ThemeMode API
-This experimental API (Introduction of TheMode API)  enables easy switching between Fluent Themes in WPF applications, improving user experience and accessibility. This experimental API, available at both the Application and Window level, allows developers to 
-dynamically toggle between Light, Dark, System, or None (Default) themes, offering greater flexibility in adapting app visuals.
+
+This experimental API enables easy switching between Fluent Themes in WPF applications, improving user experience and accessibility. This experimental API, available at both the Application and Window level, allows developers to dynamically toggle between Light, Dark, System, or None (Default) themes, offering greater flexibility in adapting app visuals.
 
 ### Setting Application ThemeMode from XAML
 
@@ -45,7 +45,8 @@ In App.xaml include the ThemeMode property as shown below.
 </Application>
 ```
 
-### Setting Window ThemeMode from XAML:**
+### Setting Window ThemeMode from XAML
+
 Similar to Application ThemeMode, set the ThemeMode at the desired window's xaml as shown below.
 
 ```xml
@@ -65,29 +66,31 @@ Similar to Application ThemeMode, set the ThemeMode at the desired window's xaml
 ```
 
 ### Setting ThemeMode from Code-Behind
+
 Since the API is experimental, the usage of ThemeMode from code-behind is a bit restricted. To use ThemeMode from code-behind, the developer either needs to configurethe project to ignore the WPF0001 warning for the project or suppress the warning where needed.
 
-**To configure the Project to ignore the warning:**
+**To configure the Project to ignore the warning:** In your project's .csproj, set the following tag:
 
-In your project's .csproj, set the following tag
 ```xml
 <PropertyGroup>
     <NoWarn>WPF0001<NoWarn>
 </PropertyGroup>
 ```
 
-Use the property from code-behind
+Use the property from code-behind:
+
 ```cs
 Application.Current.ThemeMode = ThemeMode.Light;
 ```
 
 or, to apply it to the current window
+
 ```cs
 this.ThemeMode = ThemeMode.Light;
 ```
 
-**To suppress the warning:** <br />
-Disable and enable the pragma warning as shown below
+**To suppress the warning:** Disable and enable the pragma warning as shown below
+
 ```cs
 #pragma warning disable WPF0001
     Application.Current.ThemeMode = ThemeMode.Light;
@@ -105,7 +108,7 @@ Disable and enable the pragma warning as shown below
 
 In addition to these behaviors, the ThemeMode is also designed to respect the Fluent Theme Dictionary added to the Application or Window. AFluent Themes can also be loaded by including the respective Fluent Dictionary. If the given application or window is loaded with a given Fluent Dictionary, let's say Light, then the ThemeMode will be synced to Light Mode as well and vice-versa.
 
-This can be enabled by adding the following to your App.xaml
+This can be enabled by adding the following to your App.xaml:
 
 ```xml
 <Application.Resources>
@@ -117,11 +120,11 @@ This can be enabled by adding the following to your App.xaml
 </Application.Resources>
 ```
 
-## AccentColors as SystemColors 
+## AccentColors as SystemColors
 
-Since Windows 10, Accent Color became a cornerstone for visual styling, enhancing consistency across apps by aligning with the system theme. The latest introduction of AccentColors and corresponding brushes in SystemColors simplifies this process for WPF developers, offering them direct access to system accent colors and their variations.  
+Since Windows 10, Accent Color became a cornerstone for visual styling, enhancing consistency across apps by aligning with the system theme. The latest introduction of AccentColors and corresponding brushes in SystemColors simplifies this process for WPF developers, offering them direct access to system accent colors and their variations.
 
-This streamlines the workflow, ensuring apps can seamlessly integrate system-defined aesthetics, ultimately improving the user experience without extra coding overhead. The new API offers a more reliable and efficient way to deliver visually cohesive applications. 
+This streamlines the workflow, ensuring apps can seamlessly integrate system-defined aesthetics, ultimately improving the user experience without extra coding overhead. The new API offers a more reliable and efficient way to deliver visually cohesive applications.
 
 1.	**Colors**: The following System.Windows.Media.Color are being introduced corresponding to the current accent color of the system and its primary, secondary and tertiary variations in both Light and Dark mode.
 
