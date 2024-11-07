@@ -5,7 +5,7 @@ ms.date: 11/07/2024
 ms.topic: conceptual
 ---
 
-# What's new for .NET 8 (WPF .NET)
+# What's new for .NET 9 (WPF .NET)
 
 As part of the ongoing modernization of Windows Presentation Foundation (WPF), applications built on WPF and running on Windows 10 or later can now take advantage of cutting-edge design elements and behaviors. Key enhancements include:
 
