@@ -126,7 +126,7 @@ Since Windows 10, Accent Color became a cornerstone for visual styling, enhancin
 
 This streamlines the workflow, ensuring apps can seamlessly integrate system-defined aesthetics, ultimately improving the user experience without extra coding overhead. The new API offers a more reliable and efficient way to deliver visually cohesive applications.
 
-1.	**Colors**: The following System.Windows.Media.Color are being introduced corresponding to the current accent color of the system and its primary, secondary and tertiary variations in both Light and Dark mode.
+1. **Colors**: The following System.Windows.Media.Color are being introduced corresponding to the current accent color of the system and its primary, secondary and tertiary variations in both Light and Dark mode.
 
     ```cs
     AccentColor
@@ -138,7 +138,7 @@ This streamlines the workflow, ensuring apps can seamlessly integrate system-def
     AccentColorDark3
     ```
 
-2.	**ResourceKey**: Similary, the following System.Windows.ResourceKey are being introduced.
+2. **ResourceKey**: Similary, the following System.Windows.ResourceKey are being introduced.
 
     ```cs
     AccentColorKey
@@ -150,7 +150,7 @@ This streamlines the workflow, ensuring apps can seamlessly integrate system-def
     AccentColorDark3Key
     ```
 
-3.	**SolidColorBrush**: Similary, the following System.Windows.Media.SolidColorBrush are being introduced.
+3. **SolidColorBrush**: Similary, the following System.Windows.Media.SolidColorBrush are being introduced.
 
     ```cs
     AccentColorBrush
