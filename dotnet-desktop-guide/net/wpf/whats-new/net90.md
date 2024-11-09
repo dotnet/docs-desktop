@@ -93,30 +93,15 @@ Windows 10 introduced a user-selectable accent color that's used in providing a 
 
 The visual color is available as a `System.Windows.Media.Color`, `System.Windows.Media.SolidColorBrush`, or `System.Windows.ResourceKey`. Along with the color itself,  light and dark shades of the accent color are available. These are accessed through `System.Windows.SystemColors`:
 
-- Colors
-  - `AccentColor`
-  - `AccentColorLight1`
-  - `AccentColorLight2`
-  - `AccentColorLight3`
-  - `AccentColorDark1`
-  - `AccentColorDark2`
-  - `AccentColorDark3`
-- Brushes
-  - `AccentColorBrush`
-  - `AccentColorLight1Brush`
-  - `AccentColorLight2Brush`
-  - `AccentColorLight3Brush`
-  - `AccentColorDark1Brush`
-  - `AccentColorDark2Brush`
-  - `AccentColorDark3Brush`
-- Resource keys
-  - `AccentColorKey`
-  - `AccentColorLight1Key`
-  - `AccentColorLight2Key`
-  - `AccentColorLight3Key`
-  - `AccentColorDark1Key`
-  - `AccentColorDark2Key`
-  - `AccentColorDark3Key`
+|         | Color               | Brush                    | Resource Key           |
+|---------|---------------------|--------------------------|------------------------|
+| Accent  | `AccentColor`       | `AccentColorBrush`       | `AccentColorKey`       |
+| Light 1 | `AccentColorLight1` | `AccentColorLight1Brush` | `AccentColorLight1Key` |
+| Light 2 | `AccentColorLight2` | `AccentColorLight2Brush` | `AccentColorLight2Key` |
+| Light 3 | `AccentColorLight3` | `AccentColorLight3Brush` | `AccentColorLight3Key` |
+| Dark 1  | `AccentColorDark1`  | `AccentColorDark1Brush`  | `AccentColorDark1Key`  |
+| Dark 2  | `AccentColorDark2`  | `AccentColorDark2Brush`  | `AccentColorDark2Key`  |
+| Dark 3  | `AccentColorDark3`  | `AccentColorDark3Brush`  | `AccentColorDark3Key`  |
 
 > [!IMPORTANT]
 > Accent colors are available with or without the Fluent theme.
