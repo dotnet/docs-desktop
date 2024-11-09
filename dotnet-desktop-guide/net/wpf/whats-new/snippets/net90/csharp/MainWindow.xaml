@@ -19,7 +19,8 @@
         <Button Content="Directly set light theme app" Click="SetLightThemeApp_Click" Background="{DynamicResource {x:Static SystemColors.AccentColorBrushKey}}" />
         <RadioButton Content="Just some other control" />
         <!--<DynamicAccent>-->
-        <TextBlock Text="First Name:" Foreground="{DynamicResource {x:Static SystemColors.AccentColorBrushKey}}" />
+        <TextBlock Text="First Name:"
+                   Foreground="{DynamicResource {x:Static SystemColors.AccentColorBrushKey}}" />
         <!--</DynamicAccent>-->
     </StackPanel>
 </Window>

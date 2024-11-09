@@ -28,7 +28,7 @@ A new theme is included with WPF that delivers a fresh, modern Windows 11 aesthe
 
 ### Apply the theme
 
-You can apply the Fluent theme in two ways. First, you can apply the theme by setting the `ThemeMode` property. For more information, see the [ThemeMode](#thememode) section. Secondly, you can apply the theme by loading the resource dictionary that contains the theme.
+You can apply the Fluent theme in two ways, setting the `ThemeMode` property or referencing the Fluent theme resource dictionary. For more information about the theme mode setting, see [ThemeMode](#thememode).
 
 The Fluent theme resource dictionary is available at the following pack URI: `/PresentationFramework.Fluent;component/Themes/Fluent.xaml`. To apply the resource at the application-level, load the resource into your app's resources:
 
@@ -42,15 +42,17 @@ The Fluent theme resource dictionary is available at the following pack URI: `/P
 </Application.Resources>
 ```
 
+The resource dictionary can also be applied to a `Window` to theme just the window itself.
+
 ## ThemeMode
 
-A new styling API has been added to WPF, which is controlled through the `ThemeMode` property. By using this property, you can load the Fluent style without having to apply a styling resource dictionary directly.
+A new styling API has been added to WPF, which is exposed through the `ThemeMode` property. By using this property, you can apply the Fluent style without having to reference a styling resource dictionary directly.
 
-Valid values are:
+Available values are:
 
 - `Light`&mdash;Applies the light Fluent theme.
 - `Dark`&mdash;Applies the dark Fluent theme.
-- `System`&mdash;Applies either the light or dark Fluent theme, based on the current system choice.
+- `System`&mdash;Applies either the light or dark Fluent theme, based on the user's current Windows setting.
 - `None`&mdash;(default) Uses the Aero2 theme.
 
 To apply a theme mode for the whole application, set the `ThemeMode` property on the `Application` type. To apply it to a single window, set `ThemeMode` on the `Window` type.
@@ -69,7 +71,7 @@ If the `ThemeMode` is set to any value other than `None` at the application-leve
 
 ### Set in code
 
-Support for changing setting the `ThemeMode` in code is currently an experimental feature. Accessing the `ThemeMode` property by code generates error **WPF0001**, preventing access to the API. Suppress the error to access to the API.
+Support for changing setting the `ThemeMode` in code is currently an experimental feature. Accessing the `ThemeMode` property in code generates error **WPF0001**, preventing access to the API. Suppress the error to access to the API.
 
 > [!WARNING]
 > This API is experimental and subject to change.
@@ -123,14 +125,14 @@ When creating a UI that uses the accent color, wrap the resource key in a dynami
 
 :::code language="xaml" source=".\snippets\net90\csharp\MainWindow.xaml" id="DynamicAccent":::
 
-## Hyphen based ligature support
+## Hyphen-based ligature support
 
 WPF has never supported hyphen-based ligatures in UI controls such as the `TextBlock`. This long-standing community ask was added in .NET 9.
 
 Here's an image of the ligatures not being applied to the glyphs in .NET 8:
 
-:::image type="content" source="./media/net90/ligature-8.png" alt-text="A screenshot of a simple WPF app that has a text block showing how glyphs aren't combined into ligatures.":::
+:::image type="content" source="./media/net90/ligature-8.png" alt-text="A screenshot of a simple WPF app that has a text block showing how glyphs aren't combined into ligatures with .NET 8.":::
 
 And now, that same text as rendered in .NET 9:
 
-:::image type="content" source="./media/net90/ligature-9.png" alt-text="A screenshot of a simple WPF app that has a text block showing how glyphs aren't combined into ligatures.":::
+:::image type="content" source="./media/net90/ligature-9.png" alt-text="A screenshot of a simple WPF app that has a text block showing how glyphs are combined into ligatures with .NET 9.":::

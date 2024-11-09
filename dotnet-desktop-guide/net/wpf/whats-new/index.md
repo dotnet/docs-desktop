@@ -11,12 +11,13 @@ Each .NET release introduces a new version of Windows Presentation Foundation (W
 
 ## .NET 9
 
-Enhanced support for building modern apps with WPF with several theming enhancements:
+More support for building modern apps with WPF with several theming enhancements:
 
 - [Overview of WPF on .NET 9](net90.md)
-- [ThemeMode API](net90.md#thememode-api)
-- [AccentColors as SystemColors](net90.md#accentcolors-as-systemcolors)
-- [Hyphen based ligature support](net90.md#hyphen-based-ligature-support)
+- [Fluent theme](net90.md#fluent-theme)
+- [ThemeMode](net90.md#thememode)
+- [Support for Windows accent color](net90.md#support-for-windows-accent-color)
+- [Hyphen-based ligature support](net90.md#hyphen-based-ligature-support)
 
 ## .NET 8
 
