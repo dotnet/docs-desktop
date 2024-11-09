@@ -1,116 +1,38 @@
 ---
 title: What's new in WPF for .NET 9
-description: Learn about what's new in Windows Presentation Foundation (WPF) for .NET 9. .NET 9 was released November 2024.
-ms.date: 11/07/2024
-ms.topic: conceptual
+description: Learn about what's new in Windows Presentation Foundation (WPF) for .NET 9. New versions of WPF are released yearly with .NET.
+ms.topic: whats-new
+ms.date: 11/08/2024
+
+#customer intent: As a developer, I want to know what's changed so that I can remain up-to-date.
+
 ---
 
-# What's new for .NET 9 (WPF .NET)
+# What's new in WPF for .NET 9
 
-As part of the ongoing modernization of Windows Presentation Foundation (WPF), applications built on WPF and running on Windows 10 or later can now take advantage of cutting-edge design elements and behaviors. Key enhancements include:
+This article describes what's new in Windows Presentation Foundation (WPF) for .NET 9. The main area of focus for WPF this year was improving the visual capabilities of WPF and providing a new theme based on the Fluent design principles for Windows 11.
 
-- Support for light and dark themes
-- Rounded corners for controls
-- Compliance with Windows 11 design guidelines
-- Accent color support for controls
+You can preview the new theme by downloading the **WPF Gallery** app from the [Microsoft Store](https://www.microsoft.com/store/productId/9NDLX60WX4KQ).
 
-The introduction of the new Fluent theme delivers a fresh, modern Windows 11 aesthetic to WPF applications. With integrated Light/Dark mode and system accent color support, this update is set to enhance user engagement by giving WPF applications a contemporary, polished appearance.
+## Fluent theme
 
-First showcased at Build 2024, the Fluent theme is now generally available as part of the official .NET 9 release for Windows 10, Windows 11, and also Windows Server 2019.
+A new theme is included with WPF that delivers a fresh, modern Windows 11 aesthetic for WPF apps. It includes integrated light and dark modes, and a system accent color support.
 
-WPF Gallery App is a sample tool that demonstrates WPF controls and styles to a WPF application in .NET 9 and onwards. The source code for this app is available on [GitHub](https://github.com/microsoft/WPF-Samples).
+- Fluent theme in light mode:
 
-![WPF gallery app showcased in light mode](./media/wpflight.png)
+  :::image type="content" source="./media/net90/wpf-light.png" lightbox="./media/net90/wpf-light.png" alt-text="A screenshot of the WPF Gallery app, demonstrating the fluent theme in light mode.":::
 
-![WPF gallery app showcased in dark mode](./media/wpfdark.png)
+- Fluent theme in dark mode:
 
-## ThemeMode API
+  :::image type="content" source="./media/net90/wpf-dark.png" lightbox="./media/net90/wpf-dark.png" alt-text="A screenshot of the WPF Gallery app, demonstrating the fluent theme in dark mode":::
 
-This experimental API enables easy switching between Fluent Themes in WPF applications, improving user experience and accessibility. This experimental API, available at both the Application and Window level, allows developers to dynamically toggle between Light, Dark, System, or None (Default) themes, offering greater flexibility in adapting app visuals.
+### Apply the theme
 
-### Setting Application ThemeMode from XAML
+You can apply the Fluent theme in two ways. First, you can apply the theme by setting the `ThemeMode` property. For more information, see the [ThemeMode](#thememode) section. Secondly, you can apply the theme by loading the resource dictionary that contains the theme.
 
-In App.xaml include the ThemeMode property as shown below.
+The Fluent theme resource dictionary is available at the following pack URI: `/PresentationFramework.Fluent;component/Themes/Fluent.xaml`. To apply the resource at the application-level, load the resource into your app's resources:
 
-```xml
-<Application 
-    x:Class="YourSampleApplication.App"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="clr-namespace:YourSampleApplication"
-    ThemeMode="Dark">
-    <Application.Resources>
-    
-    </Application.Resources>
-</Application>
-```
-
-### Setting Window ThemeMode from XAML
-
-Similar to Application ThemeMode, set the ThemeMode at the desired window's xaml as shown below.
-
-```xml
-<Window
-    x:Class="YourSampleApplication.MainWindow"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:local="clr-namespace:YourSampleApplication"
-    mc:Ignorable="d"
-    Title="MainWindow" Height="450" Width="800" ThemeMode="Dark">
-    <Grid>
-
-    </Grid>
-</Window>
-```
-
-### Setting ThemeMode from Code-Behind
-
-Since the API is experimental, the usage of ThemeMode from code-behind is a bit restricted. To use ThemeMode from code-behind, the developer either needs to configurethe project to ignore the WPF0001 warning for the project or suppress the warning where needed.
-
-**To configure the Project to ignore the warning:** In your project's .csproj, set the following tag:
-
-```xml
-<PropertyGroup>
-    <NoWarn>WPF0001<NoWarn>
-</PropertyGroup>
-```
-
-Use the property from code-behind:
-
-```cs
-Application.Current.ThemeMode = ThemeMode.Light;
-```
-
-or, to apply it to the current window
-
-```cs
-this.ThemeMode = ThemeMode.Light;
-```
-
-**To suppress the warning:** Disable and enable the pragma warning as shown below
-
-```cs
-#pragma warning disable WPF0001
-    Application.Current.ThemeMode = ThemeMode.Light;
-#pragma warning restore WPF0001
-```
-
-### Expected behavior of the API
-
-1. When the `ThemeMode` is set to Light or Dark or System, the Fluent Themes are applied to the respective Application or Window.
-2. The `ThemeMode` when set to System respects the current operating system's theme settings. This involves detecting whether the user is utilizing a light or dark theme as their App Mode.
-3. When the `ThemeMode` is set to None, the Fluent Themes are not applied and the default `Aero2` theme is used.
-4. Accent color changes will be adhered to whenever the Fluent Theme is applied irrespective of `ThemeMode`.
-5. When the `ThemeMode` is set to a Window, it will take precedence over the Application's `ThemeMode`. In case Window `ThemeMode` is set to None, the window will adhere to Application's `ThemeMode`, even if Application uses Fluent Theme.
-6. The default value of `ThemeMod`e is None.
-
-In addition to these behaviors, the ThemeMode is also designed to respect the Fluent Theme Dictionary added to the Application or Window. AFluent Themes can also be loaded by including the respective Fluent Dictionary. If the given application or window is loaded with a given Fluent Dictionary, let's say Light, then the ThemeMode will be synced to Light Mode as well and vice-versa.
-
-This can be enabled by adding the following to your App.xaml:
-
-```xml
+```xaml
 <Application.Resources>
     <ResourceDictionary>
         <ResourceDictionary.MergedDictionaries>
@@ -120,56 +42,95 @@ This can be enabled by adding the following to your App.xaml:
 </Application.Resources>
 ```
 
-## AccentColors as SystemColors
+## ThemeMode
 
-Since Windows 10, Accent Color became a cornerstone for visual styling, enhancing consistency across apps by aligning with the system theme. The latest introduction of AccentColors and corresponding brushes in SystemColors simplifies this process for WPF developers, offering them direct access to system accent colors and their variations.
+A new styling API has been added to WPF, which is controlled through the `ThemeMode` property. By using this property, you can load the Fluent style without having to apply a styling resource dictionary directly.
 
-This streamlines the workflow, ensuring apps can seamlessly integrate system-defined aesthetics, ultimately improving the user experience without extra coding overhead. The new API offers a more reliable and efficient way to deliver visually cohesive applications.
+Valid values are:
 
-1. **Colors**: The following System.Windows.Media.Color are being introduced corresponding to the current accent color of the system and its primary, secondary and tertiary variations in both Light and Dark mode.
+- `Light`&mdash;Applies the light Fluent theme.
+- `Dark`&mdash;Applies the dark Fluent theme.
+- `System`&mdash;Applies either the light or dark Fluent theme, based on the current system choice.
+- `None`&mdash;(default) Uses the Aero2 theme.
 
-    ```cs
-    AccentColor
-    AccentColorLight1
-    AccentColorLight2
-    AccentColorLight3
-    AccentColorDark1
-    AccentColorDark2
-    AccentColorDark3
-    ```
+To apply a theme mode for the whole application, set the `ThemeMode` property on the `Application` type. To apply it to a single window, set `ThemeMode` on the `Window` type.
 
-2. **ResourceKey**: Similary, the following System.Windows.ResourceKey are being introduced.
+For example, style the entire application based on the current light or dark theme set by Windows:
 
-    ```cs
-    AccentColorKey
-    AccentColorLight1Key
-    AccentColorLight2Key
-    AccentColorLight3Key
-    AccentColorDark1Key
-    AccentColorDark2Key
-    AccentColorDark3Key
-    ```
+:::code language="csharp" source=".\snippets\net90\csharp\App.xaml" range="1-6" highlight="6":::
 
-3. **SolidColorBrush**: Similary, the following System.Windows.Media.SolidColorBrush are being introduced.
+Here's an example of forcing the light theme, regardless of the theme set by Windows:
 
-    ```cs
-    AccentColorBrush
-    AccentColorLight1Brush
-    AccentColorLight2Brush
-    AccentColorLight3Brush
-    AccentColorDark1Brush
-    AccentColorDark2Brush
-    AccentColorDark3Brush
-    ```
+:::code language="csharp" source=".\snippets\net90\csharp\LightWindow.xaml" range="1-6" highlight="6":::
 
-### Usage of the `AccentColor` APIs
+If the `ThemeMode` is set to any value other than `None` at the application-level, `None` can no longer be applied at the window-level.
 
-Usage of the AccentColor APIs, update the applicable properties as below:
+`ThemeMode` is designed to respect the settings set by a Fluent Dictionary, allowing you to customize the Fluent theme.
 
-```xml
-<Button Content="Sample WPF Button" Background="{x:Static SystemColors.AccentColorBrush}" />
-```
+### Set in code
+
+Support for changing setting the `ThemeMode` in code is currently an experimental feature. Accessing the `ThemeMode` property by code generates error **WPF0001**, preventing access to the API. Suppress the error to access to the API.
+
+> [!WARNING]
+> This API is experimental and subject to change.
+
+First, add the following `PropertyGroup` element to your project file to suppress the error:
+
+:::code language="xml" source=".\snippets\net90\csharp\MyWpfProject.csproj" id="NoWarn":::
+
+> [!TIP]
+> You can use the `#pragma warning disable WPF0001` directive to suppress the error where it occurs instead of disabling it for the entire project.
+
+Next, set either the `ThemeMode` property at the application-level or window-level:
+
+:::code language="csharp" source=".\snippets\net90\csharp\MainWindow.xaml.cs" id="ThemeMode":::
+
+## Support for Windows accent color
+
+Windows 10 introduced a user-selectable accent color that's used in providing a personal touch or calling out a specific visual element. WPF now supports the user-selected accent color.
+
+The visual color is available as a `System.Windows.Media.Color`, `System.Windows.Media.SolidColorBrush`, or `System.Windows.ResourceKey`. Along with the color itself,  light and dark shades of the accent color are available. These are accessed through `System.Windows.SystemColors`:
+
+- Colors
+  - `AccentColor`
+  - `AccentColorLight1`
+  - `AccentColorLight2`
+  - `AccentColorLight3`
+  - `AccentColorDark1`
+  - `AccentColorDark2`
+  - `AccentColorDark3`
+- Brushes
+  - `AccentColorBrush`
+  - `AccentColorLight1Brush`
+  - `AccentColorLight2Brush`
+  - `AccentColorLight3Brush`
+  - `AccentColorDark1Brush`
+  - `AccentColorDark2Brush`
+  - `AccentColorDark3Brush`
+- Resource keys
+  - `AccentColorKey`
+  - `AccentColorLight1Key`
+  - `AccentColorLight2Key`
+  - `AccentColorLight3Key`
+  - `AccentColorDark1Key`
+  - `AccentColorDark2Key`
+  - `AccentColorDark3Key`
+
+> [!IMPORTANT]
+> Accent colors are available with or without the Fluent theme.
+
+When creating a UI that uses the accent color, wrap the resource key in a dynamic resource. When a user changes the accent color while the app is opened, the color is updated automatically in the app. For example, here's a `TextBlock` with the foreground color set to the user's chosen accent color:
+
+:::code language="xaml" source=".\snippets\net90\csharp\MainWindow.xaml" id="DynamicAccent":::
 
 ## Hyphen based ligature support
 
-Based on the WPF community feedback, we have now fixed the issue with Hyphen based ligatures not working in WPF. Summary: A call to LsTxtFmt (Text Formatter) is made when a line is being created. Previously, in LsTxtFmt, glyphing was only performed for regular characters. However, after the fix, glyphing will also be performed for special characters, such as hyphens.
+WPF has never supported hyphen-based ligatures in UI controls such as the `TextBlock`. This long-standing community ask was added in .NET 9.
+
+Here's an image of the ligatures not being applied to the glyphs in .NET 8:
+
+:::image type="content" source="./media/net90/ligature-8.png" alt-text="A screenshot of a simple WPF app that has a text block showing how glyphs aren't combined into ligatures.":::
+
+And now, that same text as rendered in .NET 9:
+
+:::image type="content" source="./media/net90/ligature-9.png" alt-text="A screenshot of a simple WPF app that has a text block showing how glyphs aren't combined into ligatures.":::
