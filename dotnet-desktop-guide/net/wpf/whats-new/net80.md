@@ -5,7 +5,7 @@ ms.date: 10/24/2024
 ms.topic: conceptual
 ---
 
-# What's new for .NET 8 (WPF .NET)
+# What's new in WPF for .NET 8
 
 WPF adds hardware acceleration and a new control for browsing and selecting folders in .NET 8.
 

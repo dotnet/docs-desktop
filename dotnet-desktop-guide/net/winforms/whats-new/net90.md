@@ -110,7 +110,7 @@ Many methods that accepted arrays have been enhanced to also accept `ReadOnlySpa
 
 ### Use CsWin32 for interop
 
-All interop code has been replaced by [CsWin32], a C# P/Invoke source generator.
+All interop code has been replaced by [CsWin32](https://github.com/microsoft/CsWin32), a C# P/Invoke source generator.
 
 ## ToolStrip
 
