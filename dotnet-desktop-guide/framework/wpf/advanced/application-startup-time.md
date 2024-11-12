@@ -118,7 +118,7 @@ The amount of time that is required for a WPF application to start can vary grea
   
 ## Use XML Serializer Generator
 
- If you use the <xref:System.Xml.Serialization.XmlSerializer> class, you can achieve better performance if you pre-generate the serialization assembly using the [XML Serializer Generator tool (Sgen.exe)](/dotnet/standard/serialization/xml-serializer-generator-tool-sgen-exe).
+ If you use the <xref:System.Xml.Serialization.XmlSerializer> class, you can achieve better performance if you pregenerate the serialization assembly using the [XML Serializer Generator tool (Sgen.exe)](/dotnet/standard/serialization/xml-serializer-generator-tool-sgen-exe).
   
 ## Configure ClickOnce to Check for Updates After Startup  
 
