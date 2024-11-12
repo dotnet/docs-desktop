@@ -1,0 +1,46 @@
+﻿<UserControl x:Class="MyWpfProject.UserControl1"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MyWpfProject"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Label Grid.Row="0" Grid.Column="0" Content="Button:" Foreground="{DynamicResource {x:Static SystemColors.AccentColorBrushKey}}"/>
+        <Button Grid.Row="0" Grid.Column="1" Content="Click Me" />
+        <Label Grid.Row="1" Grid.Column="0" Content="TextBox:"/>
+        <TextBox Grid.Row="1" Grid.Column="1" Width="200" />
+        <Label Grid.Row="2" Grid.Column="0" Content="CheckBox:"/>
+        <CheckBox Grid.Row="2" Grid.Column="1" Content="Check me" />
+        <Label Grid.Row="3" Grid.Column="0" Content="RadioButton:"/>
+        <StackPanel Grid.Row="3" Grid.Column="1" Orientation="Horizontal">
+            <RadioButton Content="Option 1" GroupName="Options" />
+            <RadioButton Content="Option 2" GroupName="Options" Margin="10,0,0,0" />
+        </StackPanel>
+        <Label Grid.Row="4" Grid.Column="0" Content="ComboBox:"/>
+        <ComboBox Grid.Row="4" Grid.Column="1" Width="200">
+            <ComboBoxItem Content="Item 1" />
+            <ComboBoxItem Content="Item 2" />
+            <ComboBoxItem Content="Item 3" />
+        </ComboBox>
+        <Label Grid.Row="5" Grid.Column="0" Content="ListView:"/>
+        <ListView Grid.Row="5" Grid.Column="1" Width="200" Height="100">
+            <ListViewItem Content="Item A" />
+            <ListViewItem Content="Item B" />
+            <ListViewItem Content="Item C" />
+        </ListView>
+    </Grid>
+</UserControl>

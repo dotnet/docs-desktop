@@ -1,11 +1,12 @@
 ---
 title: What's new in Windows Forms .NET 8
 description: Learn about what's new in Windows Forms for .NET 8. Windows Forms. .NET provides new features and enhancements over .NET 7.
-ms.date: 11/29/2023
-ms.topic: conceptual
+ms.date: 11/11/2024
+ms.topic: whats-new
+#customer intent: As a developer, I want to know what's changed so that I can remain up-to-date.
 ---
 
-# What's new for .NET 8 (Windows Forms .NET)
+# What's new in Windows Forms for .NET 8
 
 This article describes some of the new Windows Forms features and enhancements in .NET 8.
 
