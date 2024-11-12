@@ -8,7 +8,7 @@ ms.date: 11/11/2024
 
 # What's new in Windows Forms for .NET 9
 
-This article describes what's new in Windows Forms for .NET 9. Windows Forms had improvements to security, 
+This article describes what's new in Windows Forms for .NET 9.
 
 ## Async forms
 
