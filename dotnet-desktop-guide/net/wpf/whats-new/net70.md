@@ -5,7 +5,7 @@ ms.date: 10/24/2024
 ms.topic: conceptual
 ---
 
-# What's new for .NET 7 (WPF .NET)
+# What's new in WPF for .NET 7
 
 This article describes some of the new Windows Presentation Foundation features and enhancements in .NET 7.
 
