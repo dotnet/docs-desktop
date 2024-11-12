@@ -10,7 +10,7 @@
 
   <!--<NoWarn>-->
   <PropertyGroup>
-      <NoWarn>WPF0001</NoWarn>
+      <NoWarn>$(NoWarn);WPF0001</NoWarn>
   </PropertyGroup>
   <!--</NoWarn>-->
 

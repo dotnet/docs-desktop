@@ -121,3 +121,13 @@ Here's an image of the ligatures not being applied to the glyphs in .NET 8:
 And now, that same text as rendered in .NET 9:
 
 :::image type="content" source="./media/net90/ligature-9.png" alt-text="A screenshot of a simple WPF app that has a text block showing how glyphs are combined into ligatures with .NET 9.":::
+
+## BinaryFormatter no longer supported
+
+`BinaryFormatter` is considered unsafe because it's vulnerable to deserialization attacks, which can lead to denial of service (DoS), information disclosure, or remote code execution. It was implemented before deserialization vulnerabilities were well understood, and its design doesn't follow modern security best practices.
+
+Starting with .NET 9, its implementation has been removed to prevent these security risks. When `BinaryFormatter` is used, the `PlatformNotSupportedException` exception is thrown.
+
+WPF used `BinaryFormatter` in many scenarios, such as when serializing data for clipboard and drag-and-drop operations. Internally, WPF continues to use a safer subset of `BinaryFormatter` to handle specific use cases with a known set of types.
+
+For more information about `BinaryFormatter`, see [WPF migration guide for BinaryFormatter](/dotnet/standard/serialization/binaryformatter-migration-guide/wpf-applications).
