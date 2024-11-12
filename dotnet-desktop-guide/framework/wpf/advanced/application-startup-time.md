@@ -116,11 +116,9 @@ The amount of time that is required for a WPF application to start can vary grea
 
  Use the <xref:System.Resources.NeutralResourcesLanguageAttribute> to specify the neutral culture for the <xref:System.Resources.ResourceManager>. This approach avoids unsuccessful assembly lookups.  
   
-## Use the BinaryFormatter Class for Serialization  
+## Use XML Serializer Generator
 
- If you must use serialization, use the <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> class instead of the <xref:System.Xml.Serialization.XmlSerializer> class. The <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> class is implemented in the Base Class Library (BCL) in the mscorlib.dll assembly. The <xref:System.Xml.Serialization.XmlSerializer> is implemented in the System.Xml.dll assembly, which might be an additional DLL to load.  
-  
- If you must use the <xref:System.Xml.Serialization.XmlSerializer> class, you can achieve better performance if you pre-generate the serialization assembly.  
+ If you use the <xref:System.Xml.Serialization.XmlSerializer> class, you can achieve better performance if you pregenerate the serialization assembly using the [XML Serializer Generator tool (Sgen.exe)](/dotnet/standard/serialization/xml-serializer-generator-tool-sgen-exe).
   
 ## Configure ClickOnce to Check for Updates After Startup  
 
