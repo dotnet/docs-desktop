@@ -82,27 +82,27 @@ Effects are applied to a <xref:System.Drawing.Bitmap> by calling the <xref:Syste
 
 The <xref:System.Drawing.Imaging.Effects> namespace contains the effects you can apply:
 
-- <xref:System.Drawing.Imaging.BlackSaturationCurveEffect>
-- <xref:System.Drawing.Imaging.BlurEffect>
-- <xref:System.Drawing.Imaging.BrightnessContrastEffect>
-- <xref:System.Drawing.Imaging.ColorBalanceEffect>
-- <xref:System.Drawing.Imaging.ColorCurveEffect>
-- <xref:System.Drawing.Imaging.ColorLookupTableEffect>
-- <xref:System.Drawing.Imaging.ColorMatrixEffect>
-- <xref:System.Drawing.Imaging.ContrastCurveEffect>
-- <xref:System.Drawing.Imaging.CurveChannel>
-- <xref:System.Drawing.Imaging.DensityCurveEffect>
-- <xref:System.Drawing.Imaging.ExposureCurveEffect>
-- <xref:System.Drawing.Imaging.GrayScaleEffect>
-- <xref:System.Drawing.Imaging.HighlightCurveEffect>
-- <xref:System.Drawing.Imaging.InvertEffect>
-- <xref:System.Drawing.Imaging.LevelsEffect>
-- <xref:System.Drawing.Imaging.MidtoneCurveEffect>
-- <xref:System.Drawing.Imaging.ShadowCurveEffect>
-- <xref:System.Drawing.Imaging.SharpenEffect>
-- <xref:System.Drawing.Imaging.TintEffect>
-- <xref:System.Drawing.Imaging.VividEffect>
-- <xref:System.Drawing.Imaging.WhiteSaturationCurveEffect>
+- <xref:System.Drawing.Imaging.Effects.BlackSaturationCurveEffect>
+- <xref:System.Drawing.Imaging.Effects.BlurEffect>
+- <xref:System.Drawing.Imaging.Effects.BrightnessContrastEffect>
+- <xref:System.Drawing.Imaging.Effects.ColorBalanceEffect>
+- <xref:System.Drawing.Imaging.Effects.ColorCurveEffect>
+- <xref:System.Drawing.Imaging.Effects.ColorLookupTableEffect>
+- <xref:System.Drawing.Imaging.Effects.ColorMatrixEffect>
+- <xref:System.Drawing.Imaging.Effects.ContrastCurveEffect>
+- <xref:System.Drawing.Imaging.Effects.CurveChannel>
+- <xref:System.Drawing.Imaging.Effects.DensityCurveEffect>
+- <xref:System.Drawing.Imaging.Effects.ExposureCurveEffect>
+- <xref:System.Drawing.Imaging.Effects.GrayScaleEffect>
+- <xref:System.Drawing.Imaging.Effects.HighlightCurveEffect>
+- <xref:System.Drawing.Imaging.Effects.InvertEffect>
+- <xref:System.Drawing.Imaging.Effects.LevelsEffect>
+- <xref:System.Drawing.Imaging.Effects.MidtoneCurveEffect>
+- <xref:System.Drawing.Imaging.Effects.ShadowCurveEffect>
+- <xref:System.Drawing.Imaging.Effects.SharpenEffect>
+- <xref:System.Drawing.Imaging.Effects.TintEffect>
+- <xref:System.Drawing.Imaging.Effects.VividEffect>
+- <xref:System.Drawing.Imaging.Effects.WhiteSaturationCurveEffect>
 
 ### System.Drawing supports Span
 

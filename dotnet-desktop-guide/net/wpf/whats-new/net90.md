@@ -93,15 +93,15 @@ Windows 10 introduced a user-selectable accent color that's used in providing a 
 
 The visual color is available as a `System.Windows.Media.Color`, `System.Windows.Media.SolidColorBrush`, or `System.Windows.ResourceKey`. Along with the color itself,  light and dark shades of the accent color are available. These are accessed through `System.Windows.SystemColors`:
 
-|         | Color               | Color Resource Key     | Brush                    | Brush Resource Key          |
-|---------|---------------------|------------------------|--------------------------|-----------------------------|
-| Accent  | `AccentColor`       | `AccentColorKey`       | `AccentColorBrush`       | `AccentColorBrushKey`       |
-| Light 1 | `AccentColorLight1` | `AccentColorLight1Key` | `AccentColorLight1Brush` | `AccentColorLight1BrushKey` |
-| Light 2 | `AccentColorLight2` | `AccentColorLight2Key` | `AccentColorLight2Brush` | `AccentColorLight2BrushKey` |
-| Light 3 | `AccentColorLight3` | `AccentColorLight3Key` | `AccentColorLight3Brush` | `AccentColorLight3BrushKey` |
-| Dark 1  | `AccentColorDark1`  | `AccentColorDark1Key`  | `AccentColorDark1Brush`  | `AccentColorDark1BrushKey`  |
-| Dark 2  | `AccentColorDark2`  | `AccentColorDark2Key`  | `AccentColorDark2Brush`  | `AccentColorDark2BrushKey`  |
-| Dark 3  | `AccentColorDark3`  | `AccentColorDark3Key`  | `AccentColorDark3Brush`  | `AccentColorDark3BrushKey`  |
+|             | Color               | Color Resource Key     | Brush                    | Brush Resource Key          |
+|-------------|---------------------|------------------------|--------------------------|-----------------------------|
+| **Accent**  | `AccentColor`       | `AccentColorKey`       | `AccentColorBrush`       | `AccentColorBrushKey`       |
+| **Light 1** | `AccentColorLight1` | `AccentColorLight1Key` | `AccentColorLight1Brush` | `AccentColorLight1BrushKey` |
+| **Light 2** | `AccentColorLight2` | `AccentColorLight2Key` | `AccentColorLight2Brush` | `AccentColorLight2BrushKey` |
+| **Light 3** | `AccentColorLight3` | `AccentColorLight3Key` | `AccentColorLight3Brush` | `AccentColorLight3BrushKey` |
+| **Dark 1**  | `AccentColorDark1`  | `AccentColorDark1Key`  | `AccentColorDark1Brush`  | `AccentColorDark1BrushKey`  |
+| **Dark 2**  | `AccentColorDark2`  | `AccentColorDark2Key`  | `AccentColorDark2Brush`  | `AccentColorDark2BrushKey`  |
+| **Dark 3**  | `AccentColorDark3`  | `AccentColorDark3Key`  | `AccentColorDark3Brush`  | `AccentColorDark3BrushKey`  |
 
 > [!IMPORTANT]
 > Accent colors are available with or without the Fluent theme.
