@@ -1,11 +1,12 @@
 ---
 title: What's new in Windows Forms .NET 5
 description: Learn about what's new in Windows Forms for .NET 5. Windows Forms. .NET provides new features and enhancements over .NET Framework.
-ms.date: 11/05/2020
-ms.topic: conceptual
+ms.date: 11/11/2024
+ms.topic: whats-new
+#customer intent: As a developer, I want to know what's changed so that I can remain up-to-date.
 ---
 
-# What's new for .NET 5 (Windows Forms .NET)
+# What's new in Windows Forms for .NET 5
 
 Windows Forms for .NET 5 adds the following features and enhancements over .NET Framework.
 

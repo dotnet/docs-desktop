@@ -93,15 +93,15 @@ Windows 10 introduced a user-selectable accent color that's used in providing a 
 
 The visual color is available as a `System.Windows.Media.Color`, `System.Windows.Media.SolidColorBrush`, or `System.Windows.ResourceKey`. Along with the color itself,  light and dark shades of the accent color are available. These are accessed through `System.Windows.SystemColors`:
 
-|         | Color               | Color Resource Key     | Brush                    | Brush Resource Key          |
-|---------|---------------------|------------------------|--------------------------|-----------------------------|
-| Accent  | `AccentColor`       | `AccentColorKey`       | `AccentColorBrush`       | `AccentColorBrushKey`       |
-| Light 1 | `AccentColorLight1` | `AccentColorLight1Key` | `AccentColorLight1Brush` | `AccentColorLight1BrushKey` |
-| Light 2 | `AccentColorLight2` | `AccentColorLight2Key` | `AccentColorLight2Brush` | `AccentColorLight2BrushKey` |
-| Light 3 | `AccentColorLight3` | `AccentColorLight3Key` | `AccentColorLight3Brush` | `AccentColorLight3BrushKey` |
-| Dark 1  | `AccentColorDark1`  | `AccentColorDark1Key`  | `AccentColorDark1Brush`  | `AccentColorDark1BrushKey`  |
-| Dark 2  | `AccentColorDark2`  | `AccentColorDark2Key`  | `AccentColorDark2Brush`  | `AccentColorDark2BrushKey`  |
-| Dark 3  | `AccentColorDark3`  | `AccentColorDark3Key`  | `AccentColorDark3Brush`  | `AccentColorDark3BrushKey`  |
+|             | Color               | Color Resource Key     | Brush                    | Brush Resource Key          |
+|-------------|---------------------|------------------------|--------------------------|-----------------------------|
+| **Accent**  | `AccentColor`       | `AccentColorKey`       | `AccentColorBrush`       | `AccentColorBrushKey`       |
+| **Light 1** | `AccentColorLight1` | `AccentColorLight1Key` | `AccentColorLight1Brush` | `AccentColorLight1BrushKey` |
+| **Light 2** | `AccentColorLight2` | `AccentColorLight2Key` | `AccentColorLight2Brush` | `AccentColorLight2BrushKey` |
+| **Light 3** | `AccentColorLight3` | `AccentColorLight3Key` | `AccentColorLight3Brush` | `AccentColorLight3BrushKey` |
+| **Dark 1**  | `AccentColorDark1`  | `AccentColorDark1Key`  | `AccentColorDark1Brush`  | `AccentColorDark1BrushKey`  |
+| **Dark 2**  | `AccentColorDark2`  | `AccentColorDark2Key`  | `AccentColorDark2Brush`  | `AccentColorDark2BrushKey`  |
+| **Dark 3**  | `AccentColorDark3`  | `AccentColorDark3Key`  | `AccentColorDark3Brush`  | `AccentColorDark3BrushKey`  |
 
 > [!IMPORTANT]
 > Accent colors are available with or without the Fluent theme.
@@ -121,3 +121,13 @@ Here's an image of the ligatures not being applied to the glyphs in .NET 8:
 And now, that same text as rendered in .NET 9:
 
 :::image type="content" source="./media/net90/ligature-9.png" alt-text="A screenshot of a simple WPF app that has a text block showing how glyphs are combined into ligatures with .NET 9.":::
+
+## BinaryFormatter no longer supported
+
+`BinaryFormatter` is considered unsafe because it's vulnerable to deserialization attacks, which can lead to denial of service (DoS), information disclosure, or remote code execution. It was implemented before deserialization vulnerabilities were well understood, and its design doesn't follow modern security best practices.
+
+Starting with .NET 9, its implementation has been removed to prevent these security risks. When `BinaryFormatter` is used, the `PlatformNotSupportedException` exception is thrown.
+
+WPF used `BinaryFormatter` in many scenarios, such as when serializing data for clipboard and drag-and-drop operations. Internally, WPF continues to use a safer subset of `BinaryFormatter` to handle specific use cases with a known set of types.
+
+For more information about `BinaryFormatter`, see [WPF migration guide for BinaryFormatter](/dotnet/standard/serialization/binaryformatter-migration-guide/wpf-applications).
