@@ -25,4 +25,4 @@ jobs:
         repo_token: ${{ secrets.GITHUB_TOKEN }}
         docs_path: "dotnet-desktop-guide"
         url_base_path: "dotnet/desktop"
-        opaque_leading_url_segments: "framework:view=netframeworkdesktop-4.8,net:view=netdesktop-7.0,net:view=netdesktop-8.0"
+        opaque_leading_url_segments: "framework:view=netframeworkdesktop-4.8,net:view=netdesktop-7.0,net:view=netdesktop-8.0,net:view=netdesktop-9.0"
