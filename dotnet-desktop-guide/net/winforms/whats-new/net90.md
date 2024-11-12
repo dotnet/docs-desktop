@@ -24,7 +24,7 @@ The following a list of new methods added to support asynchronous scenarios:
 - <xref:System.Windows.Forms.TaskDialog.ShowDialogAsync*?displayProperty=nameWithType>
 - <xref:System.Windows.Forms.Control.InvokeAsync*?displayProperty=nameWithType>
 
-This API is guarded behind a compiler error because it's experimental. Suppress the error to enable access to the API. Add the following `PropertyGroup` to your project file:
+This API is guarded behind a compiler error because it's experimental. To suppress the error and enable access to the API, add the following `PropertyGroup` to your project file:
 
 :::code language="xml" source=".\snippets\net90\csharp\MyExampleProject.csproj" id="experimental_async":::
 
@@ -59,7 +59,7 @@ To apply a color mode, call <xref:System.Windows.Forms.Application.SetColorMode(
 :::code language="csharp" source=".\snippets\net90\csharp\Program.cs" highlight="14":::
 :::code language="vb" source=".\snippets\net90\vb\Program.vb" highlight="8":::
 
-This API is guarded behind a compiler error because it's experimental. Suppress the error to enable access to the API. Add the following `PropertyGroup` to your project file:
+This API is guarded behind a compiler error because it's experimental. To suppress the error and enable access to the API, add the following `PropertyGroup` to your project file:
 
 :::code language="xml" source=".\snippets\net90\csharp\MyExampleProject.csproj" id="experimental_darkmode":::
 
@@ -110,7 +110,7 @@ Many methods that accepted arrays have been enhanced to also accept `ReadOnlySpa
 
 ### Use CsWin32 for interop
 
-All interop code has been replaced by [CsWin32], a C# P/Invoke source generator.
+All interop code has been replaced by [CsWin32](https://github.com/microsoft/CsWin32), a C# P/Invoke source generator.
 
 ## ToolStrip
 
