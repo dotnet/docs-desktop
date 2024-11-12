@@ -2,11 +2,11 @@
     "redirections": [
         {
             "source_path": "dotnet-desktop-guide/net/winforms/controls/custom.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls-design/overview?view=netdesktop-7.0"
+            "redirect_url": "/dotnet/desktop/winforms/controls-design/overview?view=netdesktop-9.0"
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/how-to-create-a-windows-forms-application-from-the-command-line.md",
-            "redirect_url": "/dotnet/desktop/winforms/get-started/create-app-visual-studio?view=netdesktop-7.0"
+            "redirect_url": "/dotnet/desktop/winforms/get-started/create-app-visual-studio?view=netdesktop-9.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/get-started/create-app-visual-studio.md",
@@ -14,7 +14,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/windows-forms-overview.md",
-            "redirect_url": "/dotnet/desktop/winforms/overview/?view=netdesktop-7.0"
+            "redirect_url": "/dotnet/desktop/winforms/overview/?view=netdesktop-9.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/overview/index.md",
@@ -22,7 +22,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/events-overview-windows-forms.md",
-            "redirect_url": "/dotnet/desktop/winforms/forms/events?view=netdesktop-7.0"
+            "redirect_url": "/dotnet/desktop/winforms/forms/events?view=netdesktop-9.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/forms/events.md",
@@ -30,11 +30,11 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/creating-event-handlers-in-windows-forms.md",
-            "redirect_url": "/dotnet/desktop/winforms/forms/events?view=netdesktop-7.0"
+            "redirect_url": "/dotnet/desktop/winforms/forms/events?view=netdesktop-9.0"
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/automatic-scaling-in-windows-forms.md",
-            "redirect_url": "/dotnet/desktop/winforms/forms/autoscale?view=netdesktop-7.0"
+            "redirect_url": "/dotnet/desktop/winforms/forms/autoscale?view=netdesktop-9.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/forms/autoscale.md",
@@ -42,7 +42,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/how-to-resize-windows-forms.md",
-            "redirect_url": "/dotnet/desktop/winforms/forms/how-to-position-and-resize?view=netdesktop-7.0"
+            "redirect_url": "/dotnet/desktop/winforms/forms/how-to-position-and-resize?view=netdesktop-9.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/forms/how-to-position-and-resize.md",
@@ -50,7 +50,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/controls/index.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls/overview?view=netdesktop-7.0"
+            "redirect_url": "/dotnet/desktop/winforms/controls/overview?view=netdesktop-9.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/controls/overview.md",
@@ -58,7 +58,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/controls/layout-in-windows-forms-controls.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls/layout?view=netdesktop-7.0"
+            "redirect_url": "/dotnet/desktop/winforms/controls/layout?view=netdesktop-9.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/controls/layout.md",
@@ -66,15 +66,15 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/controls/autosize-property-overview.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls/layout?view=netdesktop-7.0#automatic-sizing"
+            "redirect_url": "/dotnet/desktop/winforms/controls/layout?view=netdesktop-9.0#automatic-sizing"
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/controls/margin-and-padding-in-windows-forms-controls.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls/layout?view=netdesktop-7.0#margin-and-padding"
+            "redirect_url": "/dotnet/desktop/winforms/controls/layout?view=netdesktop-9.0#margin-and-padding"
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/controls/label-control-overview-windows-forms.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls/labels?view=netdesktop-7.0"
+            "redirect_url": "/dotnet/desktop/winforms/controls/labels?view=netdesktop-9.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/controls/labels.md",
@@ -82,7 +82,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/controls/how-to-set-the-tab-order-on-windows-forms.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-set-the-tab-order?view=netdesktop-7.0"
+            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-set-the-tab-order?view=netdesktop-9.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/controls/how-to-set-the-tab-order.md",
@@ -90,7 +90,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/controls/how-to-anchor-controls-on-windows-forms.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-dock-and-anchor?view=netdesktop-7.0"
+            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-dock-and-anchor?view=netdesktop-9.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/controls/how-to-dock-and-anchor.md",
@@ -98,11 +98,11 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/controls/how-to-dock-controls-on-windows-forms.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-dock-and-anchor?view=netdesktop-7.0"
+            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-dock-and-anchor?view=netdesktop-9.0"
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/how-to-create-event-handlers-at-run-time-for-windows-forms.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-add-an-event-handler?view=netdesktop-7.0"
+            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-add-an-event-handler?view=netdesktop-9.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/controls/how-to-add-an-event-handler.md",
@@ -110,11 +110,11 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/how-to-connect-multiple-events-to-a-single-event-handler-in-windows-forms.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-add-an-event-handler?view=netdesktop-7.0#how-to-use-multiple-events-with-the-same-handler"
+            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-add-an-event-handler?view=netdesktop-9.0#how-to-use-multiple-events-with-the-same-handler"
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/controls/how-to-make-thread-safe-calls-to-windows-forms-controls.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-make-thread-safe-calls?view=netdesktop-7.0"
+            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-make-thread-safe-calls?view=netdesktop-9.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/controls/how-to-make-thread-safe-calls.md",
@@ -122,7 +122,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/controls/varieties-of-custom-controls.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls-design/overview?view=netdesktop-7.0"
+            "redirect_url": "/dotnet/desktop/winforms/controls-design/overview?view=netdesktop-9.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/controls-design/overview.md",
@@ -130,15 +130,15 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/controls/control-type-recommendations.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls-design/overview?view=netdesktop-7.0"
+            "redirect_url": "/dotnet/desktop/winforms/controls-design/overview?view=netdesktop-9.0"
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/controls/windows-forms-control-development-basics.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls-design/overview?view=netdesktop-7.0"
+            "redirect_url": "/dotnet/desktop/winforms/controls-design/overview?view=netdesktop-9.0"
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/controls/how-to-author-composite-controls.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls-design/how-to-create-usercontrol?view=netdesktop-7.0"
+            "redirect_url": "/dotnet/desktop/winforms/controls-design/how-to-create-usercontrol?view=netdesktop-9.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/controls-design/how-to-create-usercontrol.md",
@@ -146,11 +146,11 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/controls/how-to-inherit-from-the-usercontrol-class.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls-design/how-to-create-usercontrol?view=netdesktop-7.0"
+            "redirect_url": "/dotnet/desktop/winforms/controls-design/how-to-create-usercontrol?view=netdesktop-9.0"
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/controls/how-to-inherit-from-existing-windows-forms-controls.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls-design/extend-existing?view=netdesktop-7.0"
+            "redirect_url": "/dotnet/desktop/winforms/controls-design/extend-existing?view=netdesktop-9.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/controls-design/extend-existing.md",
@@ -158,7 +158,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/controls/attributes-in-windows-forms-controls.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls-design/designer-overview?view=netdesktop-7.0"
+            "redirect_url": "/dotnet/desktop/winforms/controls-design/designer-overview?view=netdesktop-9.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/controls-design/designer-overview.md",
@@ -166,7 +166,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/controls/how-to-apply-attributes-in-windows-forms-controls.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls-design/designer-properties-overview?view=netdesktop-7.0"
+            "redirect_url": "/dotnet/desktop/winforms/controls-design/designer-properties-overview?view=netdesktop-9.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/controls-design/designer-properties-overview.md",
@@ -174,7 +174,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/controls/design-time-errors-in-the-windows-forms-designer.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls-design/designer-errors?view=netdesktop-7.0"
+            "redirect_url": "/dotnet/desktop/winforms/controls-design/designer-errors?view=netdesktop-9.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/controls-design/designer-errors.md",
@@ -182,7 +182,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/controls/defining-default-values-with-the-shouldserialize-and-reset-methods.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls-design/how-to-designer-properties-shouldserialize-reset?view=netdesktop-7.0"
+            "redirect_url": "/dotnet/desktop/winforms/controls-design/how-to-designer-properties-shouldserialize-reset?view=netdesktop-9.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/controls-design/how-to-designer-properties-shouldserialize-reset.md",
@@ -190,7 +190,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/controls/how-to-provide-a-toolbox-bitmap-for-a-control.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls-design/how-to-set-toolbox-icon?view=netdesktop-7.0"
+            "redirect_url": "/dotnet/desktop/winforms/controls-design/how-to-set-toolbox-icon?view=netdesktop-9.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/controls-design/how-to-set-toolbox-icon.md",
@@ -198,11 +198,11 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/controls/constituent-controls.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls-design/usercontrol-overview?view=netdesktop-7.0"
+            "redirect_url": "/dotnet/desktop/winforms/controls-design/usercontrol-overview?view=netdesktop-9.0"
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/controls/developing-windows-forms-controls-at-design-time.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls-design/usercontrol-overview?view=netdesktop-7.0"
+            "redirect_url": "/dotnet/desktop/winforms/controls-design/usercontrol-overview?view=netdesktop-9.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/controls-design/usercontrol-overview.md",
@@ -210,7 +210,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/controls/how-to-give-your-control-a-transparent-background.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls-design/how-to-set-transparent-background?view=netdesktop-7.0"
+            "redirect_url": "/dotnet/desktop/winforms/controls-design/how-to-set-transparent-background?view=netdesktop-9.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/controls-design/how-to-set-transparent-background.md",
@@ -218,7 +218,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/controls/custom-control-painting-and-rendering.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls/custom-painting-drawing?view=netdesktop-7.0"
+            "redirect_url": "/dotnet/desktop/winforms/controls/custom-painting-drawing?view=netdesktop-9.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/controls/custom-painting-drawing.md",
@@ -226,15 +226,15 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/controls/rendering-a-windows-forms-control.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls/custom-painting-drawing?view=netdesktop-7.0"
+            "redirect_url": "/dotnet/desktop/winforms/controls/custom-painting-drawing?view=netdesktop-9.0"
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/controls/user-drawn-controls.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls/custom-painting-drawing?view=netdesktop-7.0"
+            "redirect_url": "/dotnet/desktop/winforms/controls/custom-painting-drawing?view=netdesktop-9.0"
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/controls/how-to-add-controls-to-windows-forms.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-add-to-a-form?view=netdesktop-7.0"
+            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-add-to-a-form?view=netdesktop-9.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/controls/how-to-add-to-a-form.md",
@@ -242,7 +242,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/controls/how-to-create-access-keys-for-windows-forms-controls.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-create-access-keys?view=netdesktop-7.0"
+            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-create-access-keys?view=netdesktop-9.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/controls/how-to-create-access-keys.md",
@@ -250,7 +250,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/controls/how-to-set-the-text-displayed-by-a-windows-forms-control.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-set-the-display-text?view=netdesktop-7.0"
+            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-set-the-display-text?view=netdesktop-9.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/controls/how-to-set-the-display-text.md",
@@ -258,7 +258,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/controls/how-to-set-the-image-displayed-by-a-windows-forms-control.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-add-a-picture-to-a-control?view=netdesktop-7.0"
+            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-add-a-picture-to-a-control?view=netdesktop-9.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/controls/how-to-add-a-picture-to-a-control.md",
@@ -266,7 +266,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/keyboard-input-in-a-windows-forms-application.md",
-            "redirect_url": "/dotnet/desktop/winforms/input-keyboard/overview?view=netdesktop-7.0"
+            "redirect_url": "/dotnet/desktop/winforms/input-keyboard/overview?view=netdesktop-9.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/input-keyboard/overview.md",
@@ -274,11 +274,11 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/how-keyboard-input-works.md",
-            "redirect_url": "/dotnet/desktop/winforms/input-keyboard/overview?view=netdesktop-7.0"
+            "redirect_url": "/dotnet/desktop/winforms/input-keyboard/overview?view=netdesktop-9.0"
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/using-keyboard-events.md",
-            "redirect_url": "/dotnet/desktop/winforms/input-keyboard/events?view=netdesktop-7.0"
+            "redirect_url": "/dotnet/desktop/winforms/input-keyboard/events?view=netdesktop-9.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/input-keyboard/events.md",
@@ -286,7 +286,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/user-input-validation-in-windows-forms.md",
-            "redirect_url": "/dotnet/desktop/winforms/input-keyboard/validation?view=netdesktop-7.0"
+            "redirect_url": "/dotnet/desktop/winforms/input-keyboard/validation?view=netdesktop-9.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/input-keyboard/validation.md",
@@ -294,7 +294,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/how-to-modify-keyboard-input-to-a-standard-control.md",
-            "redirect_url": "/dotnet/desktop/winforms/input-keyboard/how-to-change-key-press?view=netdesktop-7.0"
+            "redirect_url": "/dotnet/desktop/winforms/input-keyboard/how-to-change-key-press?view=netdesktop-9.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/input-keyboard/how-to-change-key-press.md",
@@ -302,7 +302,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/how-to-determine-which-modifier-key-was-pressed.md",
-            "redirect_url": "/dotnet/desktop/winforms/input-keyboard/how-to-check-modifier-key?view=netdesktop-7.0"
+            "redirect_url": "/dotnet/desktop/winforms/input-keyboard/how-to-check-modifier-key?view=netdesktop-9.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/input-keyboard/how-to-check-modifier-key.md",
@@ -310,7 +310,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/how-to-handle-keyboard-input-at-the-form-level.md",
-            "redirect_url": "/dotnet/desktop/winforms/input-keyboard/how-to-handle-forms?view=netdesktop-7.0"
+            "redirect_url": "/dotnet/desktop/winforms/input-keyboard/how-to-handle-forms?view=netdesktop-9.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/input-keyboard/how-to-handle-forms.md",
@@ -322,7 +322,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/mouse-input-in-a-windows-forms-application.md",
-            "redirect_url": "/dotnet/desktop/winforms/input-mouse/overview?view=netdesktop-7.0"
+            "redirect_url": "/dotnet/desktop/winforms/input-mouse/overview?view=netdesktop-9.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/input-mouse/overview.md",
@@ -330,11 +330,11 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/how-mouse-input-works-in-windows-forms.md",
-            "redirect_url": "/dotnet/desktop/winforms/input-mouse/overview?view=netdesktop-7.0"
+            "redirect_url": "/dotnet/desktop/winforms/input-mouse/overview?view=netdesktop-9.0"
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/mouse-events-in-windows-forms.md",
-            "redirect_url": "/dotnet/desktop/winforms/input-mouse/events?view=netdesktop-7.0"
+            "redirect_url": "/dotnet/desktop/winforms/input-mouse/events?view=netdesktop-9.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/input-mouse/events.md",
@@ -342,7 +342,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/drag-and-drop-functionality-in-windows-forms.md",
-            "redirect_url": "/dotnet/desktop/winforms/input-mouse/drag-and-drop?view=netdesktop-7.0"
+            "redirect_url": "/dotnet/desktop/winforms/input-mouse/drag-and-drop?view=netdesktop-9.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/input-mouse/drag-and-drop.md",
@@ -350,7 +350,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/mouse-pointers-in-windows-forms.md",
-            "redirect_url": "/dotnet/desktop/winforms/input-mouse/how-to-manage-cursor-pointer?view=netdesktop-7.0"
+            "redirect_url": "/dotnet/desktop/winforms/input-mouse/how-to-manage-cursor-pointer?view=netdesktop-9.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/input-mouse/how-to-manage-cursor-pointer.md",
@@ -358,7 +358,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/how-to-simulate-mouse-and-keyboard-events-in-code.md",
-            "redirect_url": "/dotnet/desktop/winforms/input-mouse/how-to-simulate-events?view=netdesktop-7.0"
+            "redirect_url": "/dotnet/desktop/winforms/input-mouse/how-to-simulate-events?view=netdesktop-9.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/input-mouse/how-to-simulate-events.md",
@@ -366,7 +366,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/how-to-distinguish-between-clicks-and-double-clicks.md",
-            "redirect_url": "/dotnet/desktop/winforms/input-mouse/how-to-distinguish-between-clicks-and-double-clicks?view=netdesktop-7.0"
+            "redirect_url": "/dotnet/desktop/winforms/input-mouse/how-to-distinguish-between-clicks-and-double-clicks?view=netdesktop-9.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/input-mouse/how-to-distinguish-between-clicks-and-double-clicks.md",
@@ -374,7 +374,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/controls/printdialog-component-overview-windows-forms.md",
-            "redirect_url": "/dotnet/desktop/winforms/printing/overview?view=netdesktop-7.0"
+            "redirect_url": "/dotnet/desktop/winforms/printing/overview?view=netdesktop-9.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/printing/overview.md",
@@ -382,27 +382,27 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/controls/printdialog-component-windows-forms.md",
-            "redirect_url": "/dotnet/desktop/winforms/printing/overview?view=netdesktop-7.0"
+            "redirect_url": "/dotnet/desktop/winforms/printing/overview?view=netdesktop-9.0"
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/advanced/how-to-capture-user-input-from-a-printdialog-at-run-time.md",
-            "redirect_url": "/dotnet/desktop/winforms/printing/overview?view=netdesktop-7.0"
+            "redirect_url": "/dotnet/desktop/winforms/printing/overview?view=netdesktop-9.0"
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/advanced/how-to-create-standard-windows-forms-print-jobs.md",
-            "redirect_url": "/dotnet/desktop/winforms/printing/overview?view=netdesktop-7.0"
+            "redirect_url": "/dotnet/desktop/winforms/printing/overview?view=netdesktop-9.0"
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/advanced/windows-forms-print-support.md",
-            "redirect_url": "/dotnet/desktop/winforms/printing/overview?view=netdesktop-7.0"
+            "redirect_url": "/dotnet/desktop/winforms/printing/overview?view=netdesktop-9.0"
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/advanced/how-to-complete-windows-forms-print-jobs.md",
-            "redirect_url": "/dotnet/desktop/winforms/printing/overview?view=netdesktop-7.0"
+            "redirect_url": "/dotnet/desktop/winforms/printing/overview?view=netdesktop-9.0"
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/advanced/how-to-print-a-windows-form.md",
-            "redirect_url": "/dotnet/desktop/winforms/printing/how-to-print-windows-form?view=netdesktop-7.0"
+            "redirect_url": "/dotnet/desktop/winforms/printing/how-to-print-windows-form?view=netdesktop-9.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/printing/how-to-print-windows-form.md",
@@ -410,7 +410,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/advanced/how-to-print-a-multi-page-text-file-in-windows-forms.md",
-            "redirect_url": "/dotnet/desktop/winforms/printing/how-to-print-text-document?view=netdesktop-7.0"
+            "redirect_url": "/dotnet/desktop/winforms/printing/how-to-print-text-document?view=netdesktop-9.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/printing/how-to-print-text-document.md",
@@ -418,7 +418,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/advanced/how-to-print-in-windows-forms-using-print-preview.md",
-            "redirect_url": "/dotnet/desktop/winforms/printing/how-to-print-in-windows-forms-using-print-preview?view=netdesktop-7.0"
+            "redirect_url": "/dotnet/desktop/winforms/printing/how-to-print-in-windows-forms-using-print-preview?view=netdesktop-9.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/printing/how-to-print-in-windows-forms-using-print-preview.md",
@@ -426,7 +426,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/windows-forms-data-binding.md",
-            "redirect_url": "/dotnet/desktop/winforms/data/overview?view=netdesktop-7.0"
+            "redirect_url": "/dotnet/desktop/winforms/data/overview?view=netdesktop-9.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/data/overview.md",
@@ -434,19 +434,19 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/interfaces-related-to-data-binding.md",
-            "redirect_url": "/dotnet/desktop/winforms/data/overview?view=netdesktop-7.0"
+            "redirect_url": "/dotnet/desktop/winforms/data/overview?view=netdesktop-9.0"
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/data-binding-and-windows-forms.md",
-            "redirect_url": "/dotnet/desktop/winforms/data/overview?view=netdesktop-7.0"
+            "redirect_url": "/dotnet/desktop/winforms/data/overview?view=netdesktop-9.0"
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/data-sources-supported-by-windows-forms.md",
-            "redirect_url": "/dotnet/desktop/winforms/data/overview?view=netdesktop-7.0"
+            "redirect_url": "/dotnet/desktop/winforms/data/overview?view=netdesktop-9.0"
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/change-notification-in-windows-forms-data-binding.md",
-            "redirect_url": "/dotnet/desktop/winforms/data/design-great-data-sources?view=netdesktop-7.0"
+            "redirect_url": "/dotnet/desktop/winforms/data/design-great-data-sources?view=netdesktop-9.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/data/design-great-data-sources.md",
@@ -454,15 +454,15 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/how-to-apply-the-propertynamechanged-pattern.md",
-            "redirect_url": "/dotnet/desktop/winforms/data/design-great-data-sources?view=netdesktop-7.0"
+            "redirect_url": "/dotnet/desktop/winforms/data/design-great-data-sources?view=netdesktop-9.0"
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/how-to-implement-the-inotifypropertychanged-interface.md",
-            "redirect_url": "/dotnet/desktop/winforms/data/design-great-data-sources?view=netdesktop-7.0"
+            "redirect_url": "/dotnet/desktop/winforms/data/design-great-data-sources?view=netdesktop-9.0"
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/how-to-navigate-data-in-windows-forms.md",
-            "redirect_url": "/dotnet/desktop/winforms/data/how-to-work-with-data-grid?view=netdesktop-7.0"
+            "redirect_url": "/dotnet/desktop/winforms/data/how-to-work-with-data-grid?view=netdesktop-9.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/data/how-to-work-with-data-grid.md",
@@ -470,11 +470,11 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/ensure-the-selected-row-in-a-child-table-correct.md",
-            "redirect_url": "/dotnet/desktop/winforms/data/how-to-work-with-data-grid?view=netdesktop-7.0"
+            "redirect_url": "/dotnet/desktop/winforms/data/how-to-work-with-data-grid?view=netdesktop-9.0"
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/how-to-create-a-bound-control-and-format-the-displayed-data.md",
-            "redirect_url": "/dotnet/desktop/winforms/data/how-to-create-control-binding?view=netdesktop-7.0"
+            "redirect_url": "/dotnet/desktop/winforms/data/how-to-create-control-binding?view=netdesktop-9.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/data/how-to-create-control-binding.md",
@@ -482,11 +482,11 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/how-to-create-a-simple-bound-control-on-a-windows-form.md",
-            "redirect_url": "/dotnet/desktop/winforms/data/how-to-create-control-binding?view=netdesktop-7.0"
+            "redirect_url": "/dotnet/desktop/winforms/data/how-to-create-control-binding?view=netdesktop-9.0"
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/multiple-controls-bound-to-data-source-synchronized.md",
-            "redirect_url": "/dotnet/desktop/winforms/data/how-to-synchronize-multiple-controls?view=netdesktop-7.0"
+            "redirect_url": "/dotnet/desktop/winforms/data/how-to-synchronize-multiple-controls?view=netdesktop-9.0"
         },
         {
             "source_path": "dotnet-desktop-guide/framework/winforms/data/how-to-synchronize-multiple-controls.md",
@@ -494,11 +494,11 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/whats-new/index.md",
-            "redirect_url": "/dotnet/desktop/winforms/whats-new/net70?view=netdesktop-7.0"
+            "redirect_url": "/dotnet/desktop/winforms/whats-new/net70?view=netdesktop-9.0"
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/controls-design/index.md",
-            "redirect_url": "/dotnet/desktop/winforms/controls-design/overview?view=netdesktop-7.0"
+            "redirect_url": "/dotnet/desktop/winforms/controls-design/overview?view=netdesktop-9.0"
         }
     ]
 }

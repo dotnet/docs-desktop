@@ -201,7 +201,7 @@
             },
             "open_source_feedback_productLogoDarkUrl": {
                 "**.*": "https://learn.microsoft.com/media/logos/logo_net.svg"
-            },
+            }
     },
     "template": [],
     "dest": "dotnet-desktop-guide",
