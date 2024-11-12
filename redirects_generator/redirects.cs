@@ -159,7 +159,7 @@ formattedJson = formattedJson.Replace("  ", "    ");    // match existing indent
 formattedJson += "\r\n";    // add newline at end.
 
 // Save new content to source path.
-//File.WriteAllText(srcRedirectFilePath, formattedJson);
+File.WriteAllText(srcRedirectFilePath, formattedJson);
 
 
 

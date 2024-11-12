@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <!--<experimental_darkmode>-->
+  <PropertyGroup>
+      <NoWarn>$(NoWarn);WFO5001</NoWarn>
+  </PropertyGroup>
+  <!--</experimental_darkmode>-->
+
+  <!--<experimental_async>-->
+  <PropertyGroup>
+      <NoWarn>$(NoWarn);WFO5002</NoWarn>
+  </PropertyGroup>
+  <!--</experimental_async>-->
+
+</Project>

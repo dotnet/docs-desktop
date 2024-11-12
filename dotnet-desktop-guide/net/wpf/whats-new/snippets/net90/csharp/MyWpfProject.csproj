@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <!--<NoWarn>-->
+  <PropertyGroup>
+      <NoWarn>$(NoWarn);WPF0001</NoWarn>
+  </PropertyGroup>
+  <!--</NoWarn>-->
+
+</Project>

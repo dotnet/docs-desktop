@@ -1,0 +1,10 @@
+﻿<Window x:Class="MyWpfProject.LightWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:MyWpfProject"
+        Title="LightWindow" Height="450" Width="800"
+        ThemeMode="Light">
+        
+    <local:UserControl1 />
+
+</Window>

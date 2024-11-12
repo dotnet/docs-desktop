@@ -9,7 +9,8 @@
         "netframeworkdesktop-4.8",
         "netdesktop-6.0",
         "netdesktop-7.0",
-        "netdesktop-8.0"
+        "netdesktop-8.0",
+        "netdesktop-9.0"
       ],
       "filemap_share_depots": [
         "VS.dotnet-api-docs"
