@@ -80,7 +80,7 @@ The first step to creating a new app is opening Visual Studio and generating the
 
 01. In the **Search for templates** box, type **winforms**, and wait for the search results to appear.
 01. In the **code language** dropdown, choose **C#** or **Visual Basic**.
-01. In the list of templates, select **Windows Forms App** and then click **Next**.
+01. In the list of templates, select **Windows Forms App** and then select **Next**.
 
     > [!IMPORTANT]
     > Don't select the **Windows Forms App (.NET _Framework_)** template.
@@ -89,13 +89,13 @@ The first step to creating a new app is opening Visual Studio and generating the
 
     :::image type="content" source="media/create-app-visual-studio/netdesktop-6.0/vs-template-search.png" alt-text="Search for the Windows Forms template in Visual Studio 2022 for .NET.":::
 
-01. In the **Configure your new project** window, set the **Project name** to _Names_ and click **Next**.
+01. In the **Configure your new project** window, set the **Project name** to _Names_ and select **Next**.
 
     You can also save your project to a different folder by adjusting the **Location** path.
 
     :::image type="content" source="media/create-app-visual-studio/netdesktop-6.0/vs-config-new-project.png" alt-text="Configure new Windows Forms project in Visual Studio 2022 for .NET.":::
 
-01. Finally, in the **Additional information** window, select **.NET 6.0 (Long-term support)** for the **Framework** setting, and then click **Create**.
+01. Finally, in the **Additional information** window, select **.NET 6.0 (Long-term support)** for the **Framework** setting, and then select **Create**.
 
     :::image type="content" source="media/create-app-visual-studio/netdesktop-6.0/vs-select-framework.png" alt-text="Select the target framework for a Windows Forms project in Visual Studio 2022.":::
 
@@ -113,7 +113,7 @@ The first step to creating a new app is opening Visual Studio and generating the
 
 01. In the **Search for templates** box, type **winforms**, and wait for the search results to appear.
 01. In the **code language** dropdown, choose **C#** or **Visual Basic**.
-01. In the list of templates, select **Windows Forms App** and then click **Next**.
+01. In the list of templates, select **Windows Forms App** and then select **Next**.
 
     > [!IMPORTANT]
     > Don't select the **Windows Forms App (.NET _Framework_)** template.
@@ -122,13 +122,13 @@ The first step to creating a new app is opening Visual Studio and generating the
 
     :::image type="content" source="media/create-app-visual-studio/netdesktop-7.0/vs-template-search.png" alt-text="Search for the Windows Forms template in Visual Studio 2022 for .NET.":::
 
-01. In the **Configure your new project** window, set the **Project name** to _Names_ and click **Next**.
+01. In the **Configure your new project** window, set the **Project name** to _Names_ and select **Next**.
 
     You can also save your project to a different folder by adjusting the **Location** path.
 
     :::image type="content" source="media/create-app-visual-studio/netdesktop-7.0/vs-config-new-project.png" alt-text="Configure new Windows Forms project in Visual Studio 2022 for .NET.":::
 
-01. Finally, in the **Additional information** window, select **.NET 7.0 (Standard Term Support)** for the **Framework** setting, and then click **Create**.
+01. Finally, in the **Additional information** window, select **.NET 7.0 (Standard Term Support)** for the **Framework** setting, and then select **Create**.
 
     :::image type="content" source="media/create-app-visual-studio/netdesktop-7.0/vs-select-framework.png" alt-text="Select the target framework for a Windows Forms project in Visual Studio 2022.":::
 
@@ -145,7 +145,7 @@ The first step to creating a new app is opening Visual Studio and generating the
 
 01. In the **Search for templates** box, type **winforms**, and wait for the search results to appear.
 01. In the **code language** dropdown, choose **C#** or **Visual Basic**.
-01. In the list of templates, select **Windows Forms App** and then click **Next**.
+01. In the list of templates, select **Windows Forms App** and then select **Next**.
 
     > [!IMPORTANT]
     > Don't select the **Windows Forms App (.NET _Framework_)** template.
@@ -154,13 +154,13 @@ The first step to creating a new app is opening Visual Studio and generating the
 
     :::image type="content" source="media/create-app-visual-studio/vs-start-2-templates.png" alt-text="The term 'winforms' is in a search box and is highlighted with a red box. Arrows from the red box point to two templates, C# and Visual Basic. The templates are also highlighted with a red box. From those red boxes, arrows point down to the 'Next' button which is highlighted with a red box.":::
 
-01. In the **Configure your new project** window, set the **Project name** to _Names_ and click **Next**.
+01. In the **Configure your new project** window, set the **Project name** to _Names_ and select **Next**.
 
     You can also save your project to a different folder by adjusting the **Location** path.
 
     :::image type="content" source="media/create-app-visual-studio/vs-start-3-name.png" alt-text="A screenshot of the 'configure your new project' dialog from Visual Studio 2022. The 'Project name' textbox has the word 'Names' in it and is highlighted with a red box. The 'Next' button is also highlighted with a red box.":::
 
-01. Finally, in the **Additional information** window, select **.NET 8.0 (Long Term Support)** for the **Framework** setting, and then click **Create**.
+01. Finally, in the **Additional information** window, select **.NET 8.0 (Long Term Support)** for the **Framework** setting, and then select **Create**.
 
     :::image type="content" source="media/create-app-visual-studio/netdesktop-8.0/vs-start-4-framework.png" alt-text="A screenshot of the 'Additional information' dialog from Visual Studio 2022. The 'Framework' dropdown box has '.NET 8.0 (Long Term Support)' selected and highlighted with a red box. The 'Create' button is also highlighted with a red box.":::
 
@@ -175,7 +175,7 @@ The first step to creating a new app is opening Visual Studio and generating the
 
 01. In the **Search for templates** box, type **winforms**, and wait for the search results to appear.
 01. In the **code language** dropdown, choose **C#** or **Visual Basic**.
-01. In the list of templates, select **Windows Forms App** and then click **Next**.
+01. In the list of templates, select **Windows Forms App** and then select **Next**.
 
     > [!IMPORTANT]
     > Don't select the **Windows Forms App (.NET _Framework_)** template.
@@ -184,13 +184,13 @@ The first step to creating a new app is opening Visual Studio and generating the
 
     :::image type="content" source="media/create-app-visual-studio/vs-start-2-templates.png" alt-text="The term 'winforms' is in a search box and is highlighted with a red box. Arrows from the red box point to two templates, C# and Visual Basic. The templates are also highlighted with a red box. From those red boxes, arrows point down to the 'Next' button which is highlighted with a red box.":::
 
-01. In the **Configure your new project** window, set the **Project name** to _Names_ and click **Next**.
+01. In the **Configure your new project** window, set the **Project name** to _Names_ and select **Next**.
 
     You can also save your project to a different folder by adjusting the **Location** path.
 
     :::image type="content" source="media/create-app-visual-studio/vs-start-3-name.png" alt-text="A screenshot of the 'configure your new project' dialog from Visual Studio 2022. The 'Project name' textbox has the word 'Names' in it and is highlighted with a red box. The 'Next' button is also highlighted with a red box.":::
 
-01. Finally, in the **Additional information** window, select **.NET 9.0 (Standard Term Support)** for the **Framework** setting, and then click **Create**.
+01. Finally, in the **Additional information** window, select **.NET 9.0 (Standard Term Support)** for the **Framework** setting, and then select **Create**.
 
     :::image type="content" source="media/create-app-visual-studio/netdesktop-9.0/vs-start-4-framework.png" alt-text="A screenshot of the 'Additional information' dialog from Visual Studio 2022. The 'Framework' dropdown box has '.NET 9.0 (Standard Term Support)' selected and highlighted with a red box. The 'Create' button is also highlighted with a red box.":::
 
@@ -262,7 +262,7 @@ You can either move and resize the controls with the mouse to match the previous
 Now that the form has all of its controls laid out, the next step is to add event handlers to respond to user input. Go to the form designer and perform the following steps:
 
 01. Select the **Add Name** button control on the form.
-01. In the **Properties** window, click on the events icon :::image type="icon" source="media/create-app-visual-studio/icon-events.png" border="false"::: to list the events of the button.
+01. In the **Properties** window, select the the events icon :::image type="icon" source="media/create-app-visual-studio/icon-events.png" border="false"::: to list the events of the button.
 01. Find the **Click** event and double-click it to generate an event handler.
 
     This action adds the following code to the form:
@@ -290,7 +290,7 @@ Now that the form has all of its controls laid out, the next step is to add even
 
 ## Run the app
 
-Now that the event is handled, run the app by pressing the <kbd>F5</kbd> key or by selecting **Debug** > **Start Debugging** from the menu. When the app starts, the form is displayed and you can enter a name in the textbox and click the button.
+Now that the event is handled, run the app by pressing the <kbd>F5</kbd> key or by selecting **Debug** > **Start Debugging** from the menu. When the app starts, the form is displayed and you can enter a name in the textbox and select the button.
 
 :::image type="content" source="media/create-app-visual-studio/app-running.png" alt-text="Running a Windows Forms for .NET app in Visual Studio 2022.":::
 
