@@ -85,7 +85,7 @@ The first step to creating a new app is opening Visual Studio and generating the
     > [!IMPORTANT]
     > Don't select the **Windows Forms App (.NET _Framework_)** template.
 
-    The following image shows both C# and Visual Basic .NET project templates. If you applied the **code language** filter, you'll see the corresponding template.
+    The following image shows both C# and Visual Basic .NET project templates. If you applied the **code language** filter, the corresponding template is listed.
 
     :::image type="content" source="media/create-app-visual-studio/netdesktop-6.0/vs-template-search.png" alt-text="Search for the Windows Forms template in Visual Studio 2022 for .NET.":::
 
@@ -118,7 +118,7 @@ The first step to creating a new app is opening Visual Studio and generating the
     > [!IMPORTANT]
     > Don't select the **Windows Forms App (.NET _Framework_)** template.
 
-    The following image shows both C# and Visual Basic .NET project templates. If you applied the **code language** filter, you'll see the corresponding template.
+    The following image shows both C# and Visual Basic .NET project templates. If you applied the **code language** filter, the corresponding template is listed.
 
     :::image type="content" source="media/create-app-visual-studio/netdesktop-7.0/vs-template-search.png" alt-text="Search for the Windows Forms template in Visual Studio 2022 for .NET.":::
 
@@ -150,7 +150,7 @@ The first step to creating a new app is opening Visual Studio and generating the
     > [!IMPORTANT]
     > Don't select the **Windows Forms App (.NET _Framework_)** template.
 
-    The following image shows both C# and Visual Basic .NET project templates. If you applied the **code language** filter, only the template for that language is shown.
+    The following image shows both C# and Visual Basic .NET project templates. If you applied the **code language** filter, the corresponding template is listed.
 
     :::image type="content" source="media/create-app-visual-studio/vs-start-2-templates.png" alt-text="The term 'winforms' is in a search box and is highlighted with a red box. Arrows from the red box point to two templates, C# and Visual Basic. The templates are also highlighted with a red box. From those red boxes, arrows point down to the 'Next' button which is highlighted with a red box.":::
 
@@ -180,7 +180,7 @@ The first step to creating a new app is opening Visual Studio and generating the
     > [!IMPORTANT]
     > Don't select the **Windows Forms App (.NET _Framework_)** template.
 
-    The following image shows both C# and Visual Basic .NET project templates. If you applied the **code language** filter, only the template for that language is shown.
+    The following image shows both C# and Visual Basic .NET project templates. If you applied the **code language** filter, the corresponding template is listed.
 
     :::image type="content" source="media/create-app-visual-studio/vs-start-2-templates.png" alt-text="The term 'winforms' is in a search box and is highlighted with a red box. Arrows from the red box point to two templates, C# and Visual Basic. The templates are also highlighted with a red box. From those red boxes, arrows point down to the 'Next' button which is highlighted with a red box.":::
 
@@ -200,17 +200,17 @@ Once the app is generated, Visual Studio should open the designer window for the
 
 ### Important parts of Visual Studio
 
-Support for Windows Forms in Visual Studio has four important components that you'll interact with as you create an app:
+Support for Windows Forms in Visual Studio has four important components that you interact with as you create an app:
 
 :::image type="content" source="media/create-app-visual-studio/vs-main-window.png" alt-text="The important components of Visual Studio 2022 you should know when creating a Windows Forms project for .NET.":::
 
 01. Solution Explorer
 
-    All of your project files, code, forms, resources, will appear in this window.
+    All of your project files, code, forms, resources, appear in this window.
 
 02. Properties
 
-    This window shows property settings you can configure based on the item selected. For example, if you select an item from **Solution Explorer**, you'll see property settings related to the file. If you select an object in the **Designer**, you'll see settings for the control or form.
+    This window shows property settings you can configure based on the context of the item selected. For example, if you select an item from **Solution Explorer**, settings related to the file are displayed. If object in the **Designer** is selected, the properties of the control or form are displayed.
 
 03. Form Designer
 
@@ -238,7 +238,7 @@ Position and size the controls according to the following image:
 
 :::image type="content" source="media/create-app-visual-studio/vs-form-preview.png" alt-text="Visual Studio 2022 designer with the form open for Windows Forms for .NET. There's a listbox to for storing names, a textbox to contain a name, and a button add the name.":::
 
-You can either move and resize the controls to match the previous image, or use the table below to configure each control. To configure a control, click it in the designer, then set the appropriate setting in the **Properties** window. When configuring the form, select the form's title bar.
+You can either move and resize the controls with the mouse to match the previous image, or use the following table to configure each control. To configure a control, select it in the designer, then set the appropriate setting in the **Properties** window. When configuring the form, select the form's title bar.
 
 | Object      | Setting  | Value      |
 |-------------|----------|------------|
@@ -259,13 +259,13 @@ You can either move and resize the controls to match the previous image, or use 
 
 ## Handle events
 
-Now that the form has all of its controls laid out, the next step is to add event handlers to respond to user input. With the form designer still open, perform the following steps:
+Now that the form has all of its controls laid out, the next step is to add event handlers to respond to user input. Go to the form designer and perform the following steps:
 
 01. Select the **Add Name** button control on the form.
 01. In the **Properties** window, click on the events icon :::image type="icon" source="media/create-app-visual-studio/icon-events.png" border="false"::: to list the events of the button.
 01. Find the **Click** event and double-click it to generate an event handler.
 
-    This action adds the following code to the the form:
+    This action adds the following code to the form:
 
     ```csharp
     private void btnAdd_Click(object sender, EventArgs e)
@@ -290,7 +290,7 @@ Now that the form has all of its controls laid out, the next step is to add even
 
 ## Run the app
 
-Now that the event has been coded, you can run the app by pressing the <kbd>F5</kbd> key or by selecting **Debug** > **Start Debugging** from the menu. The form displays and you can enter a name in the textbox and then add it by clicking the button.
+Now that the event is handled, run the app by pressing the <kbd>F5</kbd> key or by selecting **Debug** > **Start Debugging** from the menu. When the app starts, the form is displayed and you can enter a name in the textbox and click the button.
 
 :::image type="content" source="media/create-app-visual-studio/app-running.png" alt-text="Running a Windows Forms for .NET app in Visual Studio 2022.":::
 
