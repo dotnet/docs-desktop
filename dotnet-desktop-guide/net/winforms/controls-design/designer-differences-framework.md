@@ -1,7 +1,7 @@
 ---
 title: Designers changes from .NET Framework
 description: Learn about the Windows Forms designer changes from .NET Framework to .NET.
-ms.date: 06/01/2023
+ms.date: 11/14/2024
 ms.topic: overview
 no-loc: ["UserControl", "UserControl1", "UserControlProject", "Label", "Button", "Form", "TextBox"]
 dev_langs:
@@ -17,7 +17,7 @@ Visual Studio is a .NET Framework-based application, and as such, the Visual Des
 
 ## Out-of-process designer
 
-The out-of-process designer is a process called **DesignToolsServer.exe**, and is run along-side Visual Studio's **devenv.exe** process. The **DesignToolsServer.exe** process runs on the same version and platform of .NET that your app has been set up to target, such as .NET 7 and x64.
+The out-of-process designer is a process called **DesignToolsServer.exe**, and is run along-side Visual Studio's **devenv.exe** process. The **DesignToolsServer.exe** process runs on the same version and platform of .NET that your app has been set up to target, such as .NET 9 and x64.
 
 In the Visual Studio designer, .NET Framework proxy objects are created for each component and control on the designer, which communicate with the real .NET objects from your project in the **DesignToolsServer.exe** designer.
 

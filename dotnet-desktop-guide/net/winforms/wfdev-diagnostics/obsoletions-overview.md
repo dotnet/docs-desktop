@@ -1,11 +1,11 @@
 ---
-title: Obsolete Windows Forms features in .NET 7+
+title: Obsolete Windows Forms features in .NET
 titleSuffix: ""
 description: Learn about Windows Forms APIs that are marked as obsolete in .NET 7 and later versions that produce WFDEV compiler warnings.
-ms.date: 01/30/2023
+ms.date: 11/14/2024
 ---
 
-# Obsolete Windows Forms features in .NET 7+
+# Obsolete Windows Forms features in .NET
 
 Starting in .NET 7, some Windows Forms APIs are marked as obsolete (or otherwise produce a warning) with custom diagnostic IDs of the format `WFDEVXXX`.
 
@@ -60,5 +60,5 @@ To suppress the warnings in a project file:
 
 ## See also
 
-- [Obsolete .NET features in .NET 5+](/dotnet/fundamentals/syslib-diagnostics/obsoletions-overview)
+- [Obsolete .NET features](/dotnet/fundamentals/syslib-diagnostics/obsoletions-overview)
 <!-- - (add link to breaking change page here...)-->
