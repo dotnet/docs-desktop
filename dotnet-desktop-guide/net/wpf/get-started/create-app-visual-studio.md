@@ -355,7 +355,6 @@ Notice that the label moved to the second column. You can use the `Grid.Row` and
 ## Create the name list box
 
 Now that the grid is correctly sized and the label created, add a list box control on the row below the label.
-<ListBox Grid.Row="1" x:Name="lstNames" />
 
 01. Declare the `<ListBox />` control under the `<Label>` control.
 01. Set the `Grid.Row` property to `1`.
