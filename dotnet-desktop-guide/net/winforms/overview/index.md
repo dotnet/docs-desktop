@@ -1,7 +1,7 @@
 ---
 title: What is Windows Forms
 description: This article gives an overview of Windows Forms with .NET
-ms.date: 11/15/2021
+ms.date: 11/14/2024
 ms.topic: overview
 #Customer intent: As a developer, I want to understand the components of Windows Forms so that I can understand the overall picture of Windows Forms.
 ---
@@ -14,15 +14,15 @@ There are two implementations of Windows Forms:
 
 01. The open-source implementation hosted on [GitHub](https://github.com/dotnet/winforms).
 
-    This version runs on .NET 6+. The Windows Forms Visual Designer requires, at a minimum, [Visual Studio 2019 version 16.8](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+desktopguide+winforms).
+    This version runs on .NET 6 and later versions.
 
-    The latest version is Windows Forms for .NET 7 using [Visual Studio 2022 version 17.4](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2022+desktopguide+winforms).
+    The latest version is Windows Forms for .NET 9 using [Visual Studio 2022 version 17.12](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2022+desktopguide+winforms).
 
 01. The .NET Framework 4 implementation that's supported by Visual Studio 2022, Visual Studio 2019, and Visual Studio 2017.
 
     .NET Framework 4 is a Windows-only version of .NET and is considered a Windows Operating System component. This version of Windows Forms is distributed with .NET Framework.
 
-This Desktop Guide is written for Windows Forms on .NET 5 and later versions. For more information about the .NET Framework version of Windows Forms, see [Windows Forms for .NET Framework](../../../framework/winforms/index.yml?view=netframeworkdesktop-4.8&preserve-view=true).
+    For more information about the .NET Framework version of Windows Forms, see [Windows Forms for .NET Framework](../../../framework/winforms/index.yml?view=netframeworkdesktop-4.8&preserve-view=true).
 
 ## Introduction
 
@@ -34,7 +34,7 @@ To learn how to create a Windows Forms app, see [Tutorial: Create a new WinForms
 
 ## Why migrate from .NET Framework
 
-Windows Forms for .NET provides new features and enhancements over .NET Framework. For more information, see [What's new in Windows Forms for .NET 7](../whats-new/net70.md). To learn how to upgrade an app, see [How to upgrade a Windows Forms desktop app to .NET 7](../migration/index.md)
+Windows Forms for .NET provides new features and enhancements over .NET Framework. For more information, see [What's new in Windows Forms for .NET 9](../whats-new/net70.md). To learn how to upgrade an app, see [How to upgrade a Windows Forms desktop app to .NET](../migration/index.md)
 
 ## Build rich, interactive user interfaces
 
