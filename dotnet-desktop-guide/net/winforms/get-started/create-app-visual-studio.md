@@ -1,6 +1,6 @@
 ---
 title: "Create a new app with Visual Studio tutorial"
-description: Follow this tutorial to learn how to create a new Windows Forms app for .NET with Visual Studio 2019.
+description: Follow this tutorial to learn how to create a new Windows Forms app for .NET with Visual Studio 2022.
 ms.date: 11/14/2024
 ms.topic: tutorial
 dev_langs: 
@@ -48,7 +48,7 @@ In this tutorial, you:
 
 :::moniker range="netdesktop-8.0"
 
-- [Visual Studio 2022 version 17.0 or later versions](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link&0utm_content=download+vs2022+desktopguide+winforms)
+- [Visual Studio 2022 version 17.8 or later versions](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link&0utm_content=download+vs2022+desktopguide+winforms)
   - Select the [.NET desktop development workload](/visualstudio/install/modify-visual-studio?view=vs-2022&preserve-view=true#modify-workloads)
   - Select the [.NET 8 individual component](/visualstudio/install/modify-visual-studio?view=vs-2022&preserve-view=true#modify-individual-components)
 
