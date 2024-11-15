@@ -1,21 +1,20 @@
 ---
 title: "Create a new app with Visual Studio tutorial"
 description: Follow this tutorial to learn how to create a new WPF app for .NET with Visual Studio 2022. WPF apps run on Windows.
-ms.date: 02/07/2023
+ms.date: 11/15/2024
 ms.topic: tutorial
 ms.custom: update-template, updateeachrelease
 dev_langs: 
   - "csharp"
   - "vb"
+#customer intent: As a new developer, I want to create a new WPF app.
 ---
-
-<!-- Acrolinx score of 97 -->
 
 # Tutorial: Create a new WPF app with .NET
 
-In this short tutorial, you'll learn how to create a new Windows Presentation Foundation (WPF) app with Visual Studio. Once the initial app has been generated, you'll learn how to add controls and how to handle events. By the end of this tutorial, you'll have a simple app that adds names to a list box.
+In this tutorial, you learn how to use Visual Studio to create a new Windows Presentation Foundation (WPF) app. With Visual Studio, you add controls to windows to design the UI of the app, and handle input events from those controls to interact with the user. By the end of this tutorial, you have a simple app that adds names to a list box.
 
-In this tutorial, you learn how to:
+In this tutorial, you:
 
 > [!div class="checklist"]
 >
@@ -32,6 +31,9 @@ Here's a preview of the app you'll build while following this tutorial:
 
 :::moniker range="netdesktop-6.0"
 
+> [!CAUTION]
+> .NET 6 is no longer supported. It's recommended that you use .NET 9.0.
+
 - [Visual Studio 2022 version 17.0 or later versions](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link&0utm_content=download+vs2022+desktopguide+wpf)
   - Select the [.NET desktop development workload](/visualstudio/install/modify-visual-studio?view=vs-2019&preserve-view=true#modify-workloads)
   - Select the [.NET 6 individual component](/visualstudio/install/modify-visual-studio?view=vs-2019&preserve-view=true#modify-individual-components)
@@ -40,14 +42,30 @@ Here's a preview of the app you'll build while following this tutorial:
 
 :::moniker range="netdesktop-7.0"
 
+> [!CAUTION]
+> .NET 7 is no longer supported. It's recommended that you use .NET 9.0.
+
 - [Visual Studio 2022 version 17.4 or later versions](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link&0utm_content=download+vs2022+desktopguide+wpf)
   - Select the [.NET desktop development workload](/visualstudio/install/modify-visual-studio?view=vs-2022&preserve-view=true#modify-workloads)
   - Select the [.NET 7 individual component](/visualstudio/install/modify-visual-studio?view=vs-2022&preserve-view=true#modify-individual-components)
 
 :::moniker-end
 
-> [!TIP]
-> Use Visual Studio 2022 version 17.4 or later and install both the .NET 7 and .NET 6 individual components. Support for .NET 7 was added in Visual Studio 2022 version 17.4.
+:::moniker range="netdesktop-8.0"
+
+- [Visual Studio 2022 version 17.8 or later versions](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link&0utm_content=download+vs2022+desktopguide+winforms)
+  - Select the [.NET desktop development workload](/visualstudio/install/modify-visual-studio?view=vs-2022&preserve-view=true#modify-workloads)
+  - Select the [.NET 8 individual component](/visualstudio/install/modify-visual-studio?view=vs-2022&preserve-view=true#modify-individual-components)
+
+:::moniker-end
+
+:::moniker range="netdesktop-9.0"
+
+- [Visual Studio 2022 version 17.12 or later versions](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link&0utm_content=download+vs2022+desktopguide+winforms)
+  - Select the [.NET desktop development workload](/visualstudio/install/modify-visual-studio?view=vs-2022&preserve-view=true#modify-workloads)
+  - Select the [.NET 9 individual component](/visualstudio/install/modify-visual-studio?view=vs-2022&preserve-view=true#modify-individual-components)
+
+:::moniker-end
 
 ## Create a WPF app
 
@@ -67,7 +85,7 @@ The first step to creating a new app is opening Visual Studio and generating the
     > [!IMPORTANT]
     > Don't select the **WPF Application (.NET _Framework_)** template.
 
-    The following image shows both C# and Visual Basic .NET project templates. If you applied the **code language** filter, you'll see the corresponding template.
+    The following image shows both C# and Visual Basic .NET project templates. If you applied the **code language** filter, only the template for that language is shown.
 
     :::image type="content" source="media/create-app-visual-studio/netdesktop-6.0/vs-template-search.png" alt-text="Search for the WPF template in Visual Studio 2022 for .NET. 6":::
 
@@ -100,7 +118,7 @@ The first step to creating a new app is opening Visual Studio and generating the
     > [!IMPORTANT]
     > Don't select the **WPF Application (.NET _Framework_)** template.
 
-    The following image shows both C# and Visual Basic .NET project templates. If you applied the **code language** filter, you'll see the corresponding template.
+    The following image shows both C# and Visual Basic .NET project templates. If you applied the **code language** filter, only the template for that language is shown.
 
     :::image type="content" source="media/create-app-visual-studio/netdesktop-7.0/vs-template-search.png" alt-text="Search for the WPF template in Visual Studio 2022 for .NET. 7":::
 
@@ -119,7 +137,73 @@ The first step to creating a new app is opening Visual Studio and generating the
 
 :::moniker-end
 
-Once the app is generated, Visual Studio should open the XAML designer pane for the default window, _MainWindow_. If the designer isn't visible, double-click on the _MainWindow.xaml_ file in the **Solution Explorer** pane to open the designer.
+:::moniker range="netdesktop-8.0"
+
+01. Open Visual Studio.
+01. Select **Create a new project**.
+
+    :::image type="content" source="media/create-app-visual-studio/vs-start-1-intro.png" alt-text="A screenshot of the start dialog from Visual Studio 2022. The 'create a new project' button is highlighted with a red box.":::
+
+01. In the **Search for templates** box, type _wpf_, and then press <kbd>Enter</kbd>.
+01. In the **code language** dropdown, choose **C#** or **Visual Basic**.
+01. In the templates list, select **WPF Application** and then select **Next**.
+
+    > [!IMPORTANT]
+    > Don't select the **WPF Application (.NET _Framework_)** template.
+
+    The following image shows both C# and Visual Basic .NET project templates. If you applied the **code language** filter, only the template for that language is shown.
+
+    :::image type="content" source="media/create-app-visual-studio/vs-start-2-templates.png" alt-text="The term 'wpf' is in a search box and is highlighted with a red arrow. Two templates in the results list are highlighted with red boxes, C# and Visual Basic. The 'Next' button at the bottom-right of the screen is highlighted with a red box.":::
+
+01. In the **Configure your new project** window, do the following:
+
+    01. In the **Project name** box, enter _Names_.
+    01. Select the **Place solution and project in the same directory** check box.
+    01. Optionally, choose a different **Location** to save your code.
+    01. Select the **Next** button.
+
+    :::image type="content" source="media/create-app-visual-studio/vs-start-3-name.png" alt-text="A screenshot of the 'configure your new project' dialog from Visual Studio 2022. The 'Project name' textbox has the word 'Names' in it and is highlighted with a red box. The 'Place solution and project in the same directory' checkbox is checked and pointed to with a red arrow. The 'Next' button is also highlighted with a red box.":::
+
+01. In the **Additional information** window, select **.NET 8.0 (Long Term Support)** for **Target Framework**. Select the **Create** button.
+
+    :::image type="content" source="media/create-app-visual-studio/netdesktop-8.0/vs-start-4-framework.png" alt-text="A screenshot of the 'Additional information' dialog from Visual Studio 2022. The 'Framework' dropdown box has '.NET 8.0 (Long Term Support)' selected and highlighted with a red arrow. The 'Create' button is also highlighted with a red box.":::
+
+:::moniker-end
+
+:::moniker range="netdesktop-9.0"
+
+01. Open Visual Studio.
+01. Select **Create a new project**.
+
+    :::image type="content" source="media/create-app-visual-studio/vs-start-1-intro.png" alt-text="A screenshot of the start dialog from Visual Studio 2022. The 'create a new project' button is highlighted with a red box.":::
+
+01. In the **Search for templates** box, type _wpf_, and then press <kbd>Enter</kbd>.
+01. In the **code language** dropdown, choose **C#** or **Visual Basic**.
+01. In the templates list, select **WPF Application** and then select **Next**.
+
+    > [!IMPORTANT]
+    > Don't select the **WPF Application (.NET _Framework_)** template.
+
+    The following image shows both C# and Visual Basic .NET project templates. If you applied the **code language** filter, only the template for that language is shown.
+
+    :::image type="content" source="media/create-app-visual-studio/vs-start-2-templates.png" alt-text="The term 'wpf' is in a search box and is highlighted with a red arrow. Two templates in the results list are highlighted with red boxes, C# and Visual Basic. The 'Next' button at the bottom-right of the screen is highlighted with a red box.":::
+
+01. In the **Configure your new project** window, do the following:
+
+    01. In the **Project name** box, enter _Names_.
+    01. Select the **Place solution and project in the same directory** check box.
+    01. Optionally, choose a different **Location** to save your code.
+    01. Select the **Next** button.
+
+    :::image type="content" source="media/create-app-visual-studio/vs-start-3-name.png" alt-text="A screenshot of the 'configure your new project' dialog from Visual Studio 2022. The 'Project name' textbox has the word 'Names' in it and is highlighted with a red box. The 'Place solution and project in the same directory' checkbox is checked and pointed to with a red arrow. The 'Next' button is also highlighted with a red box.":::
+
+01. In the **Additional information** window, select **.NET 9.0 (Standard Term Support)** for **Target Framework**. Select the **Create** button.
+
+    :::image type="content" source="media/create-app-visual-studio/netdesktop-9.0/vs-start-4-framework.png" alt-text="A screenshot of the 'Additional information' dialog from Visual Studio 2022. The 'Framework' dropdown box has '.NET 9.0 (Standard Term Support)' selected and highlighted with a red arrow. The 'Create' button is also highlighted with a red box.":::
+
+:::moniker-end
+
+Once the app is generated, Visual Studio should open the XAML designer window for the default window, _MainWindow_. If the designer isn't visible, double-click on the _MainWindow.xaml_ file in the **Solution Explorer** window to open the designer.
 
 ### Important parts of Visual Studio
 
@@ -129,31 +213,33 @@ Support for WPF in Visual Studio has five important components that you'll inter
 
 01. Solution Explorer
 
-    All of your project files, code, windows, resources, will appear in this pane.
+    All of your project files, code, windows, resources, will appear in this window.
 
 02. Properties
 
-    This pane shows property settings you can configure based on the item selected. For example, if you select an item from **Solution Explorer**, you'll see property settings related to the file. If you select an object in the **Designer**, you'll see settings for that item.
+    This window shows property settings you can configure based on the item selected. For example, if you select an item from **Solution Explorer**, you'll see property settings related to the file. If you select an object in the **Designer**, you'll see settings for the element. In the case of the previous image, the window's title bar was selected in the designer.
 
 03. Toolbox
 
-    The toolbox contains all of the controls you can add to a form. To add a control to the current form, double-click a control or drag-and-drop the control.
+    The toolbox contains all of the controls you can add to a design surface. To add a control to the current surface, double-click the control or drag-and-drop the control on the surface. It's common to instead use the XAML code editor window to design a user interface (UI), while using the XAML designer window to preview the results.
 
 04. XAML designer
 
-    This is the designer for a XAML document. It's interactive and you can drag-and-drop objects from the **Toolbox**. By selecting and moving items in the designer, you can visually compose the user interface (UI) for your app.
+    This is the designer for a XAML document. It's interactive and you can drag-and-drop objects from the **Toolbox**. By selecting and moving items in the designer, you can visually compose the UI for your app.
 
-    When both the designer and editor are visible, changes to one is reflected in the other. When you select items in the designer, the **Properties** pane displays the properties and attributes about that object.
+    When both the designer and editor are visible, changes to one is reflected in the other.
+
+    When you select items in the designer, the **Properties** window displays the properties and attributes about that object.
 
 05. XAML code editor
 
     This is the XAML code editor for a XAML document. The XAML code editor is a way to craft your UI by hand without a designer. The designer may infer the values of properties on a control when the control is added in the designer. The XAML code editor gives you a lot more control.
 
-    When both the designer and editor are visible, changes to one is reflected in the other. As you navigate the text caret in the code editor, the **Properties** pane displays the properties and attributes about that object.
+    When both the designer and editor are visible, changes to one is reflected in the other. As you navigate the text caret in the code editor, the **Properties** window displays the properties and attributes about that object.
 
 ## Examine the XAML
 
-After your project is created, the XAML code editor is visible with a minimal amount of XAML code to display the window. If the editor isn't open, double-click the _MainWindow.xaml_ item in the **Solution Explorer**. You should see XAML similar to the following example:
+After your project is created, the XAML code editor is visible with a minimal amount of XAML code to display the window. If the editor isn't open, double-click the _MainWindow.xaml_ item in the **Solution Explorer** window. You should see XAML similar to the following example:
 
 ```xaml
 <Window x:Class="Names.MainWindow"
@@ -170,11 +256,14 @@ After your project is created, the XAML code editor is visible with a minimal am
 </Window>
 ```
 
+> [!IMPORTANT]
+> If you're coding in Visual Basic, the XAML is slightly different, specifically the `x:Class=".."` attribute. XAML in Visual Basic uses the object's class name and omits the namespace to the class.
+
 Let's break down this XAML code to understand it better. XAML is simply XML that can be processed by the compilers that WPF uses. It describes the WPF UI and interacts with .NET code. To understand XAML, you should, at a minimum, be familiar with the basics of XML.
 
 The document root `<Window>` represents the type of object being described by the XAML file. There are eight attributes declared, and they generally belong to three categories:
 
-- Namespaces
+- XML namespaces
 
   An XML namespace provides structure to the XML, determining what XML content can be declared in the file.
 
@@ -182,7 +271,7 @@ The document root `<Window>` represents the type of object being described by th
 
 - `x:Class` attribute
 
-  This attribute maps the `<Window>` to the type defined by your code: the _MainWindow.xaml.cs_ or _MainWindow.xaml.vb_ file, which is the `Names.MainWindow` class.
+  This attribute maps the `<Window>` to the type defined by your code: the _MainWindow.xaml.cs_ or _MainWindow.xaml.vb_ file, which is the `Names.MainWindow` class in C# and `MainWindow` in Visual Basic.
 
 - `Title` attribute
 
@@ -296,7 +385,7 @@ Now that the event has been coded, you can run the app by pressing the <kbd>F5</
 
 :::image type="content" source="media/create-app-visual-studio/app-finished.png" alt-text="Running a Windows Presentation Foundation (WPF) for .NET app.":::
 
-## Next steps
+## Related content
 
-> [!div class="nextstepaction"]
-> [Learn more about Windows Presentation Foundation](../overview/index.md)
+- [Learn more about Windows Presentation Foundation](../overview/index.md)
+- [XAML overview](../xaml/index.md)
