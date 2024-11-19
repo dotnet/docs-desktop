@@ -187,16 +187,32 @@ items:
       href: data/how-to-synchronize-multiple-controls.md
 - name: Compiler warnings and errors
   items:
+  - name: Type
+    items:
+    - name: Application configuration
+      items:
+      - name: Migrate DPI settings
+        href: compiler-messages/wfo0003.md      
+    - name: Experimental
+      items:
+      - name: Dark mode
+        href: compiler-messages/wfo5001.md
+      - name: Async
+        href: compiler-messages/wfo5002.md
   - name: Errors
     items:
+    - name: WFO5001
+      href: compiler-messages/wfo5001.md
+    - name: WFO5002
+      href: compiler-messages/wfo5002.md
     - name: WFAC001
       href: wfdev-diagnostics/wfac001.md
     - name: WFAC002
       href: wfdev-diagnostics/wfac002.md
   - name: Warnings
     items:
-    - name: Obsoletions overview
-      href: wfdev-diagnostics/obsoletions-overview.md
+    - name: WFO0003
+      href: compiler-messages/wfo0003.md
     - name: WFAC010
       href: wfdev-diagnostics/wfac010.md
     - name: WFDEV001
