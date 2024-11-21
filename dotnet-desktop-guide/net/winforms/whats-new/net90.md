@@ -22,14 +22,14 @@ The following a list of new methods added to support asynchronous scenarios:
 - [System.Windows.Forms.Form.ShowAsync](xref:System.Windows.Forms.Form.ShowAsync(System.Windows.Forms.IWin32Window)?displayProperty=nameWithType)
 - <xref:System.Windows.Forms.Form.ShowDialogAsync*?displayProperty=nameWithType>
 - <xref:System.Windows.Forms.TaskDialog.ShowDialogAsync*?displayProperty=nameWithType>
-- <xref:System.Windows.Forms.Control.InvokeAsync*?displayProperty=nameWithType>
+- <xref:System.Windows.Forms.Control.InvokeAsync*?displayProperty=nameWithType> (This API isn't experimental.)
 
 This API is guarded behind a compiler error because it's experimental. To suppress the error and enable access to the API, add the following `PropertyGroup` to your project file:
 
 :::code language="xml" source=".\snippets\net90\csharp\MyExampleProject.csproj" id="experimental_async":::
 
 > [!TIP]
-> You can use the `#pragma warning disable WFO5002` directive to suppress the error where it occurs instead of disabling it for the entire project.
+> For more information about how to suppress this rule, see [Compiler Error WFO5002](../compiler-messages/wfo5002.md#to-correct-this-error).
 
 ## BinaryFormatter no longer supported
 
@@ -48,7 +48,7 @@ For more information about `BinaryFormatter`, see [Windows Forms migration guide
 > [!IMPORTANT]
 > This feature set is experimental.
 
-Preliminary support for dark mode has been added to Windows Forms, with the goal of finalizing support in .NET 10. The color mode for the app can be set to one of the following values:
+Preliminary support for dark mode has been added to Windows Forms, with the goal of finalizing support in .NET 10. When the color mode changes, the <xref:System.Drawing.SystemColors> are changed to match. The color mode for the app can be set to one of the following values:
 
 - `SystemColorMode.Classic`&mdash;(default) Light mode, the same as previous versions of Windows Forms.
 - `SystemColorMode.System`&mdash;Respect the light or dark mode set by Windows.
@@ -64,7 +64,7 @@ This API is guarded behind a compiler error because it's experimental. To suppre
 :::code language="xml" source=".\snippets\net90\csharp\MyExampleProject.csproj" id="experimental_darkmode":::
 
 > [!TIP]
-> You can use the `#pragma warning disable WFO5001` directive to suppress the error where it occurs instead of disabling it for the entire project.
+> For more information about how to suppress this rule, see [Compiler Error WFO5001](../compiler-messages/wfo5001.md#to-correct-this-error).
 
 ## FolderBrowserDialog enhancements
 
