@@ -499,6 +499,10 @@
         {
             "source_path": "dotnet-desktop-guide/net/winforms/controls-design/index.md",
             "redirect_url": "/dotnet/desktop/winforms/controls-design/overview?view=netdesktop-9.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/wfdev-diagnostics/obsoletions-overview.md",
+            "redirect_url": "/dotnet/desktop/winforms/?view=netdesktop-9.0"
         }
     ]
 }
