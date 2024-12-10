@@ -49,7 +49,8 @@ namespace InkRecognition
             }
         }
 
-        private void btnClear_Click(object sender, RoutedEventArgs e) {
+        private void btnClear_Click(object sender, RoutedEventArgs e) 
+        {
             theInkCanvas.Strokes.Clear();
         }
     }
