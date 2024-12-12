@@ -28,6 +28,7 @@ body:
         - Code doesn't work
         - Missing information
         - Outdated article
+        - Thank you
         - Other (describe below)
     validations:
       required: true
@@ -67,3 +68,11 @@ body:
       required: true
     attributes:
       label: Article author
+  - type: textarea
+    id: metadata
+    validations:
+      required: false
+    attributes:
+      label: Metadata
+      description: >-
+        Documentation metadata will be applied here for the PRMerger tool
