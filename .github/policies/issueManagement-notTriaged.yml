@@ -1,0 +1,33 @@
+id: issueManagement.notTriaged
+name: GitOps.MapQuestHandler
+description: Ensures the Not Triaged label is applied when appropriate
+owner:
+resource: repository
+disabled: false
+where:
+configuration:
+  resourceManagementConfiguration:
+    eventResponderTasks:
+      - description: >-
+          When either
+          * Issue is opened or reopened
+          * 'needs-more-info' label removed
+          Then
+          * Add label "Not Triaged"
+        if:
+          - payloadType: Issues
+          - or:
+          
+            - or:
+              - isAction: 
+                  action: Opened
+              - isAction: 
+                  action: Reopened
+                  
+            - labelRemoved:
+                label: "needs-more-info"
+        then:
+          - addLabel: ":watch: Not Triaged"
+        triggerOnOwnActions: false
+onFailure:
+onSuccess:
