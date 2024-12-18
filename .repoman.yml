@@ -18,13 +18,6 @@ issues:
   
   labeled:
 
-    # Temporary label to mark issues as updated for Quest. The label is instantly removed
-    - check:
-        - type: query
-          value: "length(Issue.Labels[?Name == ':world_map: mapQUEST']) != `0`"
-      pass:
-        - labels-remove: [":world_map: mapQUEST"]
-
     # Handle issues with /svc /subsvc labels from label bot
     
     - check:
