@@ -12,7 +12,7 @@ configuration:
           When the label "mapQUEST" is added to an issue
           * Remove label "mapQUEST"
         if:
-          - payloadType: Issue
+          - payloadType: Issues
           - labelAdded:
               label: ":world_map: mapQUEST"
         then:
@@ -22,7 +22,7 @@ configuration:
           When the label "mapQUEST" is added to a pull request
           * Remove label "mapQUEST"
         if:
-          - payloadType: PullRequest
+          - payloadType: Pull_Request
           - labelAdded:
               label: ":world_map: mapQUEST"
         then:
