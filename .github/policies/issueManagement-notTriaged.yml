@@ -37,8 +37,8 @@ configuration:
           - payloadType: Issues
           - hasLabel:
               label: ":watch: Not Triaged"
-          - or
-            - and
+          - or:
+            - and:
               - isAction: 
                   action: Closed
               - hasLabel:
