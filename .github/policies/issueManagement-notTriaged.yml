@@ -41,8 +41,6 @@ configuration:
             - and:
               - isAction: 
                   action: Closed
-              - hasLabel:
-                  label: ":watch: Not Triaged"
               - isActivitySender:
                   issueAuthor: true
             
