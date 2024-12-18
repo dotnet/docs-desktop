@@ -12,19 +12,12 @@ configuration:
           When the label "mapQUEST" is added to an issue
           * Remove label "mapQUEST"
         if:
-          - payloadType: Issues
+          - or:
+            - payloadType: Issues
+            - payloadType: Pull_Request
+
           - labelAdded:
-              label: ":world_map: mapQUEST"
-        then:
-          - removeLabel: ":world_map: mapQUEST"
-        triggerOnOwnActions: true
-      - description: >-
-          When the label "mapQUEST" is added to a pull request
-          * Remove label "mapQUEST"
-        if:
-          - payloadType: Pull_Request
-          - labelAdded:
-              label: ":world_map: mapQUEST"
+            label: ":world_map: mapQUEST"
         then:
           - removeLabel: ":world_map: mapQUEST"
         triggerOnOwnActions: true
