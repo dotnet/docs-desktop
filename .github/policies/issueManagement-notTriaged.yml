@@ -1,5 +1,5 @@
 id: issueManagement.notTriaged
-name: GitOps.MapQuestHandler
+name: GitOps.NotTriagedHandler
 description: Ensures the Not Triaged label is added or removed when appropriate
 owner:
 resource: repository
