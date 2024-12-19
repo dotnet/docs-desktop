@@ -25,6 +25,7 @@ configuration:
           - if:
               - filesMatchPattern:
                   pattern: '(?i).*dotnet-desktop-guide\/framework\/wpf.*'
+                  matchAny: true
             then:
               - addLabel:
                   label: 'dotnet-framework/svc'
@@ -35,6 +36,7 @@ configuration:
           - if:
               - filesMatchPattern:
                   pattern: '(?i).*dotnet-desktop-guide\/framework\/winforms.*'
+                  matchAny: true
             then:
               - addLabel:
                   label: 'dotnet-framework/svc'
@@ -45,6 +47,7 @@ configuration:
           - if:
               - filesMatchPattern:
                   pattern: '(?i).*dotnet-desktop-guide\/net\/wpf.*'
+                  matchAny: true
             then:
               - addLabel:
                   label: 'dotnet-desktop/svc'
@@ -55,6 +58,7 @@ configuration:
           - if:
               - filesMatchPattern:
                   pattern: '(?i).*dotnet-desktop-guide\/net\/winforms.*'
+                  matchAny: true
             then:
               - addLabel:
                   label: 'dotnet-desktop/svc'
