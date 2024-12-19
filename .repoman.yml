@@ -32,27 +32,6 @@ pull_request:
 
     # Set default sprint for new PRs
     - milestone-set: "![sprint]"
-  
-    - check:
-        - type: query
-          value: "PullRequest.Base.Ref != 'live'"
-      pass:
-        - files-changed:
-            - path: "(?i).*dotnet-desktop-guide\/framework\/wpf.*"
-              run:
-                - labels-add: ["dotnet-framework/svc", "wpf/subsvc"]
-
-            - path: "(?i).*dotnet-desktop-guide\/framework\/winforms.*"
-              run:
-                - labels-add: ["dotnet-framework/svc", "winforms/subsvc"]
-
-            - path: "(?i).*dotnet-desktop-guide\/net\/wpf.*"
-              run:
-                - labels-add: ["dotnet-desktop/svc", "wpf/subsvc"]
-
-            - path: "(?i).*dotnet-desktop-guide\/net\/winforms.*"
-              run:
-                - labels-add: ["dotnet-desktop/svc", "winforms/subsvc"]
 
 projects_v2_item:
 
