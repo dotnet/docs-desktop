@@ -9,6 +9,7 @@ configuration:
   resourceManagementConfiguration:
     eventResponderTasks:
       - description: Add labels to PRs that touch certain files
+        triggerOnOwnActions: false
         if:
           - payloadType: Pull_Request
           - or:
@@ -29,7 +30,36 @@ configuration:
                   label: 'dotnet-framework/svc'
               - addLabel:
                   label: 'wpf/subsvc'
-        triggerOnOwnActions: false
+
+          # Framework WinForms
+          - if:
+              - filesMatchPattern:
+                  pattern: '(?i).*dotnet-desktop-guide\/framework\/winforms.*'
+            then:
+              - addLabel:
+                  label: 'dotnet-framework/svc'
+              - addLabel:
+                  label: 'winforms/subsvc'
+
+          # .NET WPF
+          - if:
+              - filesMatchPattern:
+                  pattern: '(?i).*dotnet-desktop-guide\/net\/wpf.*'
+            then:
+              - addLabel:
+                  label: 'dotnet-desktop/svc'
+              - addLabel:
+                  label: 'wpf/subsvc'
+
+          # .NET WinForms
+          - if:
+              - filesMatchPattern:
+                  pattern: '(?i).*dotnet-desktop-guide\/net\/winforms.*'
+            then:
+              - addLabel:
+                  label: 'dotnet-desktop/svc'
+              - addLabel:
+                  label: 'winforms/subsvc'
 
 onFailure:
 onSuccess:
