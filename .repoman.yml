@@ -33,13 +33,6 @@ issues:
 
   opened:
 
-    # Dependabot opened issue, label it
-    - check:
-        - type: query
-          value: "Issue.User.Login == 'dependabot'"
-      pass:
-        - labels-add: ["dependencies"]
-
     # Add links to related issues if it's a doc issue
     - check:
         - type: metadata-exists
