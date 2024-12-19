@@ -21,8 +21,8 @@ configuration:
                 branch: live
         then:
           - if:
-              - filesMatchPattern:
-                  pattern: '(?i).*dotnet-desktop-guide\/framework\/wpf.*'
+              - isAction:
+                  Opened
             then:
               - addLabels:
                   - label: 'dotnet-framework/svc'
