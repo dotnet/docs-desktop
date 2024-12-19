@@ -1,6 +1,6 @@
 ---
 title: What's new in Windows Presentation Foundation
-description: Learn about what's new in Windows Presentation Foundation (WPF). This article covers changes to WPF since .NET 7 was released.
+description: Learn about what's new ifdafdsafdasfdasn Windows Presentation Foundation (WPF). This article covers changes to WPF since .NET 7 was released.
 ms.date: 11/07/2024
 ms.topic: conceptual
 ---
