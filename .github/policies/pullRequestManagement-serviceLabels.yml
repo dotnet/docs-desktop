@@ -11,10 +11,10 @@ configuration:
       - description:
         if:
           - payloadType: Pull_Request
-          - or
-            - isAction
+          - or:
+            - isAction:
                 Opened
-            - isAction
+            - isAction:
                 Synchronize
           - and:
             - not:
