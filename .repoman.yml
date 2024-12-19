@@ -40,15 +40,6 @@ issues:
       pass:
         - labels-add: ["dependencies"]
 
-    # Try to detect an empty issue
-    - check:
-        - type: comment-body
-          value: "### Description[\\n\\r]+\\[Enter feedback here\\][\\n\\r]+###"
-      pass:
-        - labels-add: ["needs-more-info"]
-        - labels-remove: [":watch: Not Triaged"]
-        - close
-
     # Add links to related issues if it's a doc issue
     - check:
         - type: metadata-exists

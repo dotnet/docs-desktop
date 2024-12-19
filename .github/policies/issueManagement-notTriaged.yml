@@ -1,5 +1,5 @@
 id: issueManagement.notTriaged
-name: GitOps.MapQuestHandler
+name: GitOps.NotTriagedHandler
 description: Ensures the Not Triaged label is added or removed when appropriate
 owner:
 resource: repository
@@ -24,9 +24,9 @@ configuration:
                   action: Reopened
                   
             - labelRemoved:
-                label: "needs-more-info"
+                label: 'needs-more-info'
         then:
-          - addLabel: ":watch: Not Triaged"
+          - addLabel: ':watch: Not Triaged'
         triggerOnOwnActions: false
 
       - description: >-
@@ -36,7 +36,7 @@ configuration:
         if:
           - payloadType: Issues
           - hasLabel:
-              label: ":watch: Not Triaged"
+              label: ':watch: Not Triaged'
           - or:
             - and:
               - isAction: 
@@ -45,9 +45,9 @@ configuration:
                   issueAuthor: true
             
             - labelAdded: 
-                label: ":world_map: reQUEST"
+                label: ':world_map: reQUEST'
         then:
-          - removeLabel: ":watch: Not Triaged"
+          - removeLabel: ':watch: Not Triaged'
         triggerOnOwnActions: false
 
 onFailure:
