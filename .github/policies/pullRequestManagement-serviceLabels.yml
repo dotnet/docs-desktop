@@ -20,6 +20,7 @@ configuration:
             then:
               - addLabels:
                   - label: 'dotnet-framework/svc'
+              - addLabels:
                   - label: 'wpf/subsvc'
         triggerOnOwnActions: false
 
