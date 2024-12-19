@@ -8,7 +8,7 @@ where:
 configuration:
   resourceManagementConfiguration:
     eventResponderTasks:
-      - description:
+      - description: Does stuff
         if:
           - payloadType: Pull_Request
 
