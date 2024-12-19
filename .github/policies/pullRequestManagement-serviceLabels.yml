@@ -14,9 +14,9 @@ configuration:
           - payloadType: Pull_Request
           - or:
             - isAction:
-                Opened
+                action: Opened
             - isAction:
-                Synchronize
+                action: Synchronize
           - not:
               targetsBranch:
                 branch: live
