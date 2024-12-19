@@ -41,15 +41,6 @@ issues:
       pass:
         - link-related-issues
 
-  closed:
-
-    # Check if the issue was closed by the user who opened it
-    - check:
-        - type: query
-          value: "Issue.User.Id == EventPayload.sender.id"
-      pass:
-        - labels-add: ["resolved-by-customer"]
-
 pull_request:
 
   reopened: opened
