@@ -43,9 +43,6 @@ issues:
 
   closed:
 
-    # Issue closed, remove in-progress and not triaged labels
-    - labels-remove: ["in-progress"]
-
     # Check if the issue was closed by the user who opened it
     - check:
         - type: query
