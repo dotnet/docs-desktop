@@ -10,7 +10,7 @@ configuration:
     eventResponderTasks:
       - description:
         if:
-          - payloadType: PullRequest
+          - payloadType: Pull_Request
           - not:
             - targetsBranch:
                 branch: live
