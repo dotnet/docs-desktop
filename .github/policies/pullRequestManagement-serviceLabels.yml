@@ -16,10 +16,7 @@ configuration:
                 Opened
             - isAction:
                 Synchronize
-          - and:
-            - not:
-                targetsBranch:
-                  branch: live
+
         then:
           # Framework WPF
           - if:
