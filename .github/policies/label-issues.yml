@@ -62,6 +62,18 @@ configuration:
                 - removeLabel:
                    label: 'in-progress'
 
+            - description: Issue closed by author, add "resolved-by-customer" label
+              if:
+                - payloadType: Issues
+                - isAction: 
+                    action: Closed
+                - isActivitySender:
+                    user: ${issueAuthor}
+
+              then:
+                - addLabel:
+                   label: resolved-by-customer
+
             - description: Add in-pr label to issues
               if:
                   - payloadType: Pull_Request
