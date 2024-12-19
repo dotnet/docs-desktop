@@ -1,6 +1,6 @@
-id:
-name: GitOps.PullRequestIssueManagement
-description: GitOps.PullRequestIssueManagement primitive
+id: label.issues
+name: GitOps.IssueManagement
+description: Management logic around issues
 owner:
 resource: repository
 disabled: false
@@ -37,6 +37,19 @@ configuration:
               then:
                 - addLabel:
                    label: dependencies
+
+        eventResponderTasks:
+            - description: Reopen issue so remove "won't fix" label
+              if:
+                - payloadType: Issues
+                - isAction: 
+                    action: Reopened
+                - hasLabel:
+                    label: "won't fix"
+                  
+              then:
+                - removeLabel:
+                   label: "won't fix"
 
             - description: Add in-pr label to issues
               if:
