@@ -9,7 +9,7 @@ items:
 - name: Windows Presentation Foundation
   expanded: true
   items:
-  - name: ".NET"
+  - name: ".NETfdasfdsfadsfads"
     href: net/wpf/index.yml?view=netdesktop-9.0&preserve-view=true
   - name: .NET Framework
     href: framework/wpf/index.md?view=netframeworkdesktop-4.8&preserve-view=true
