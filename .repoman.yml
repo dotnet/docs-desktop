@@ -24,6 +24,11 @@ issues:
       pass:
         - link-related-issues
 
+    - check:
+        - type: metadata-exists
+      pass:
+        - svc_subsvc_labels: true
+
 pull_request:
 
   reopened: opened
