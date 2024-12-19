@@ -14,23 +14,6 @@ config:
 
 issues:
 
-  unlabeled: "labeled"
-  
-  labeled:
-
-    # Checks for binary/source incompatible checkboxes and adds a label
-    - check:
-        - type: query
-          value: "contains(InstanceData.IssuePrBody, '- [x] **Binary incompatible**') == `true` || contains(InstanceData.IssuePrBody, '- [X] **Binary incompatible**') == `true`"
-      pass:
-        - labels-add: ["binary incompatible"]
-
-    - check:
-        - type: query
-          value: "contains(InstanceData.IssuePrBody, '- [x] **Source incompatible**') == `true` || contains(InstanceData.IssuePrBody, '- [X] **Source incompatible**') == `true`"
-      pass:
-        - labels-add: ["source incompatible"]
-
   opened:
 
     # Add links to related issues if it's a doc issue
@@ -84,16 +67,3 @@ projects_v2_item:
           value: "EventPayload.changes.field_value.field_name == 'Priority' || EventPayload.changes.field_value.field_name == 'Size'"
       pass:
         - labels-add: [":world_map: mapQUEST"]
-
-issue_comment:
-
-  created:
-
-    # someone creates a comment with #please-review in it, add changes-addressed label
-    - check:
-        - type: query
-          value: "Issue.State.StringValue == 'open' && Issue.User.Id == Comment.User.Id"
-        - type: comment-body
-          value: ^#please-review$
-      pass:
-        - labels-add: ["changes-addressed"]
