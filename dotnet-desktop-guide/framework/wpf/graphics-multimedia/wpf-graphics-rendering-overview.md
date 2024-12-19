@@ -158,7 +158,7 @@ Order of DrawingGroup operations
   
 ### Rendering Order  
 
- The visual tree determines the rendering order of WPF visual and drawing objects. The order of traversal starts with the root visual, which is the top-most node in the visual tree. The root visual’s children are then traversed, left to right. If a visual has children, its children are traversed before the visual’s siblings. This means that the content of a child visual is rendered in front of the visual's own content.  
+ The visual tree determines the rendering order of WPF visual and drawing objects. The order of traversal starts with the root visual, which is the topmost node in the visual tree. When visiting any node that has children, the child nodes are always rendered first—according to sibling order listed in the parent—before the parent renders any content of its own. Since display areas that are rendered earlier during a rendering operation can be overwritten by instructions given later on, the content of any parent visual always appears “in front of” the content of its children, meaning it can partially or completely obscure them if desired. In computer graphics, this is called the _Painter's algorithm_.
   
  ![Diagram of the visual tree rendering order](./media/wpf-graphics-rendering-overview/visual-tree-rendering-order.gif)
   
