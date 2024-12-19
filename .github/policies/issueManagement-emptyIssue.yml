@@ -15,8 +15,8 @@ configuration:
               pattern: '### Description[\n\r]+\[Enter feedback here\][\n\r]+###'
               isRegex: true
         then:
-          - addLabel: needs-more-info
-          - removeLabel: :watch: Not Triaged
+          - addLabel: 'needs-more-info'
+          - removeLabel: ':watch: Not Triaged'
           - closeIssue
           
         triggerOnOwnActions: false
