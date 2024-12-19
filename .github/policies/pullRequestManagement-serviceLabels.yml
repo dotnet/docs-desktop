@@ -11,9 +11,10 @@ configuration:
       - description:
         if:
           - payloadType: Pull_Request
-          - not:
-            - targetsBranch:
-                branch: live
+          - and:
+            - not:
+                targetsBranch:
+                  branch: live
         then:
           # Framework WPF
           - if:
