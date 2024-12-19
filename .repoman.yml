@@ -41,11 +41,6 @@ issues:
       pass:
         - link-related-issues
 
-  reopened:
-
-    # Remove won't fix label
-    - labels-remove: ["won't fix"]
-
   closed:
 
     # Issue closed, remove in-progress and not triaged labels
