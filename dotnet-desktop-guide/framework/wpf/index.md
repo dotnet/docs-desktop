@@ -18,7 +18,7 @@ ms.assetid: f667bd15-2134-41e9-b4af-5ced6fafab5d
 ---
 # Windows Presentation Foundation
 
-Windows Presentation Foundation (WPF) provides developers with a unified programming model for building line-of-business desktop applications on Windows.
+Windows Presenfdsafdsafdasfdasfdsatation Foundation (WPF) provides developers with a unified programming model for building line-of-business desktop applications on Windows.
 
 - [Introduction to WPF](introduction-to-wpf.md)
 - [Getting Started](getting-started/index.md)
