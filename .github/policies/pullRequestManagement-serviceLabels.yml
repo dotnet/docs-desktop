@@ -20,8 +20,13 @@ configuration:
               targetsBranch:
                 branch: live
         then:
-          - addLabel:
-              label: community-contribution
+          - if:
+              - filesMatchPattern:
+                  pattern: '(?i).*dotnet-desktop-guide\/framework\/wpf.*'
+            then:
+              - addLabels:
+                  - label: 'dotnet-framework/svc'
+                  - label: 'wpf/subsvc'
         triggerOnOwnActions: false
 
 onFailure:
