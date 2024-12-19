@@ -68,7 +68,7 @@ configuration:
                 - isAction: 
                     action: Closed
                 - isActivitySender:
-                    user: ${issueAuthor}
+                    issueAuthor: true
 
               then:
                 - addLabel:
