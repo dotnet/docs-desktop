@@ -16,6 +16,9 @@ configuration:
                 Opened
             - isAction:
                 Synchronize
+          - not:
+              targetsBranch:
+                branch: live
         then:
           - addLabel:
               label: community-contribution
