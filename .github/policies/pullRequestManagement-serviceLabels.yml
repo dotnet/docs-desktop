@@ -26,9 +26,9 @@ configuration:
                   pattern: '(?i).*dotnet-desktop-guide\/framework\/wpf.*'
             then:
               - addLabel:
-                  - label: 'dotnet-framework/svc'
+                  label: 'dotnet-framework/svc'
               - addLabel:
-                  - label: 'wpf/subsvc'
+                  label: 'wpf/subsvc'
         triggerOnOwnActions: false
 
 onFailure:
