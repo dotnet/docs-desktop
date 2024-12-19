@@ -11,6 +11,11 @@ configuration:
       - description:
         if:
           - payloadType: Pull_Request
+          - or
+            - isAction
+                Opened
+            - isAction
+                Synchronize
           - and:
             - not:
                 targetsBranch:
