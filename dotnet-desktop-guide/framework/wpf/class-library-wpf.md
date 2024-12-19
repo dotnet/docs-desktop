@@ -1,6 +1,6 @@
 ---
 title: "Class Library"
-description: Learn about Windows Presentation Foundation (WPF) APIs by following the links collected in this article.
+description: Learn about Windowsfdafdsfasd Presentation Foundation (WPF) APIs by following the links collected in this article.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "WPF class library [WPF]"
