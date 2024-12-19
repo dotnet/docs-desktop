@@ -20,13 +20,9 @@ configuration:
               targetsBranch:
                 branch: live
         then:
-          - if:
-              - isAction:
-                  Opened
-            then:
-              - addLabels:
-                  - label: 'dotnet-framework/svc'
-                  - label: 'wpf/subsvc'
+          - addLabels:
+            - label: 'dotnet-framework/svc'
+            - label: 'wpf/subsvc'
         triggerOnOwnActions: false
 
 onFailure:
