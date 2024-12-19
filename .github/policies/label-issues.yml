@@ -38,7 +38,6 @@ configuration:
                 - addLabel:
                    label: dependencies
 
-        eventResponderTasks:
             - description: Reopen issue so remove "won't fix" label
               if:
                 - payloadType: Issues
@@ -50,6 +49,18 @@ configuration:
               then:
                 - removeLabel:
                    label: "won't fix"
+
+            - description: Remove "in-progress" label when issue closed
+              if:
+                - payloadType: Issues
+                - isAction: 
+                    action: Closed
+                - hasLabel:
+                    label: 'in-progress'
+                  
+              then:
+                - removeLabel:
+                   label: 'in-progress'
 
             - description: Add in-pr label to issues
               if:
