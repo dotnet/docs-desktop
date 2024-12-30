@@ -181,7 +181,7 @@ How you implement your window determines how it's configured for MSBuild. For a 
 - XAML markup files are configured as MSBuild `Page` items.
 - Code-behind files are configured as MSBuild `Compile` items.
 
-.NET SDK projects automatically import the correct `Page` and `Compile` items for you and you don't need to do declare these. When the project is configured for WPF, the XAML markup files are automatically imported as `Page` items, and the corresponding code-behind file is imported as `Compile`.
+.NET SDK projects automatically import the correct `Page` and `Compile` items for you, and you don't need to declare these. When the project is configured for WPF, the XAML markup files are automatically imported as `Page` items, and the corresponding code-behind file is imported as `Compile`.
 
 MSBuild projects won't automatically import the types and you must declare them yourself:
 
