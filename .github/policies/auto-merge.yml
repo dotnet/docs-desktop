@@ -16,9 +16,8 @@ configuration:
             label: ':octocat: auto-merge'
         - targetsBranch:
             branch: main
-        - or:
-            - isActivitySender:
-                user: dotnet-policy-service[bot]
+        - isActivitySender:
+            user: dotnet-policy-service[bot]
       then:
         - enableAutoMerge:
             mergeMethod: Squash
@@ -46,3 +45,4 @@ configuration:
             label: ':octocat: auto-merge'
       then:
         - disableAutoMerge
+
