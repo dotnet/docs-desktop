@@ -189,7 +189,11 @@ This topic provides an overview of drag-and-drop support in Windows Presentation
   
 - Processing the dropped data.  
   
- To specify that an element is a drop target, you set its <xref:System.Windows.UIElement.AllowDrop%2A> property to `true`. The drop target events will then be raised on the element so that you can handle them. During a drag-and-drop operation, the following sequence of events occurs on the drop target:  
+To specify that an element is a drop target, you set its <xref:System.Windows.UIElement.AllowDrop%2A> property to `true`. The drop target events will then be raised on the element so that you can handle them.
+
+When a drop target is evaluated, a hit test is performed to identify if the cursor is over the element's visual. Some controls, such as the <xref:System.Windows.Controls.Canvas>, don't have a visual and can't be used as a drop target unless a visual is added. Set the `Canvas.Background` property to any color to create a visual that fills the `Canvas` with color. To keep the `Canvas` transparent but enable it as a drop target, set the `Background` property to `Transparent`.
+
+During a drag-and-drop operation, the following sequence of events occurs on the drop target:
   
 1. <xref:System.Windows.DragDrop.DragEnter>  
   
