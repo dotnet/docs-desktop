@@ -46,17 +46,19 @@ The user control is made up of _constituent controls_, which are the controls yo
 
 01. With the designer open, the user control design surface should be the selected object. If it's not, click on the design surface to select it. Set the following properties in the **Properties** window:
 
-    | Property    | Value      |
-    |-------------|------------|
-    | MinimumSize | `84, 53`   |
-    | Size        | `191, 53`  |
+    > [!div class="mx-tableNormal"]
+    > | Property    | Value      |
+    > |-------------|------------|
+    > | MinimumSize | `84, 53`   |
+    > | Size        | `191, 53`  |
 
 01. Add a **Label** control. Set the following properties:
 
-    | Property  | Value     |
-    |----------|------------|
-    | Name     | `lblTitle` |
-    | Location | `3, 5`     |
+    > [!div class="mx-tableNormal"]
+    > | Property  | Value     |
+    > |----------|------------|
+    > | Name     | `lblTitle` |
+    > | Location | `3, 5`     |
 
 01. Add a **TextBox** control. Set the following properties:
 
