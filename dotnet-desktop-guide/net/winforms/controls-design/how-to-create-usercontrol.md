@@ -46,36 +46,40 @@ The user control is made up of _constituent controls_, which are the controls yo
 
 01. With the designer open, the user control design surface should be the selected object. If it's not, click on the design surface to select it. Set the following properties in the **Properties** window:
 
-    | Property    | Value      |
-    |-------------|------------|
-    | MinimumSize | `84, 53`   |
-    | Size        | `191, 53`  |
+    > [!div class="mx-tableNormal"]
+    > | Property    | Value      |
+    > |-------------|------------|
+    > | MinimumSize | `84, 53`   |
+    > | Size        | `191, 53`  |
 
 01. Add a **Label** control. Set the following properties:
 
-    | Property  | Value     |
-    |----------|------------|
-    | Name     | `lblTitle` |
-    | Location | `3, 5`     |
+    > [!div class="mx-tableNormal"]
+    > | Property  | Value     |
+    > |----------|------------|
+    > | Name     | `lblTitle` |
+    > | Location | `3, 5`     |
 
 01. Add a **TextBox** control. Set the following properties:
 
-    | Property  | Value     |
-    |----------|------------|
-    | Name     | `txtValue` |
-    | Anchor   | `Top, Left, Right` |
-    | Location | `3, 23`    |
-    | Size     | `148, 23`  |
+    > [!div class="mx-tableNormal"]
+    > | Property  | Value     |
+    > |----------|------------|
+    > | Name     | `txtValue` |
+    > | Anchor   | `Top, Left, Right` |
+    > | Location | `3, 23`    |
+    > | Size     | `148, 23`  |
 
 01. Add a **Button** control. Set the following properties:
 
-    | Property  | Value     |
-    |----------|------------|
-    | Name     | `btnClear` |
-    | Anchor   | `Top, Right` |
-    | Location | `157, 23`  |
-    | Size     | `31, 23`   |
-    | Text     | `↻`        |
+    > [!div class="mx-tableNormal"]
+    > | Property  | Value     |
+    > |----------|------------|
+    > | Name     | `btnClear` |
+    > | Anchor   | `Top, Right` |
+    > | Location | `157, 23`  |
+    > | Size     | `31, 23`   |
+    > | Text     | `↻`        |
 
     The control should look like the following image:
 
@@ -127,28 +131,31 @@ If you created a new project in the last section, you have a blank Form named **
 01. Move back to the designer and separate the controls so that you can see both of them.
 01. Select one control and set the following properties:
 
-    | Property  | Value         |
-    |----------|----------------|
-    | Name     | `ctlFirstName` |
-    | Location | `12, 12`       |
-    | Size     | `191, 53`      |
-    | Title    | `First Name`   |
+    > [!div class="mx-tableNormal"]
+    > | Property  | Value         |
+    > |----------|----------------|
+    > | Name     | `ctlFirstName` |
+    > | Location | `12, 12`       |
+    > | Size     | `191, 53`      |
+    > | Title    | `First Name`   |
 
 01. Select the other control and set the following properties:
 
-    | Property  | Value        |
-    |----------|---------------|
-    | Name     | `ctlLastName` |
-    | Location | `12, 71`      |
-    | Size     | `191, 53`     |
-    | Title    | `Last Name`   |
+    > [!div class="mx-tableNormal"]
+    > | Property  | Value        |
+    > |----------|---------------|
+    > | Name     | `ctlLastName` |
+    > | Location | `12, 71`      |
+    > | Size     | `191, 53`     |
+    > | Title    | `Last Name`   |
 
 01. Back in the **Toolbox** window, add a label control to the form, and set the following properties:
 
-    | Property  | Value        |
-    |----------|---------------|
-    | Name     | `lblFullName` |
-    | Location | `12, 252`     |
+    > [!div class="mx-tableNormal"]
+    > | Property  | Value        |
+    > |----------|---------------|
+    > | Name     | `lblFullName` |
+    > | Location | `12, 252`     |
 
 01. Next, you need to generate the event handlers for the two user controls. In the designer, double-click on the `ctlFirstName` control. This action generates the event handler for the `TextChanged` event, and opens the code editor.
 01. Swap back to the designer and double-click the `ctlLastName` control to generate the second event handler.
