@@ -288,7 +288,7 @@ For our example app, this window is too large, and the title bar isn't descripti
     :::image type="content" source="media/create-app-visual-studio/app-default.png" alt-text="A blank WPF app" :::
 
 01. Change the title of the window by setting the `Title` to `Names`.
-01. Change the size of the window by setting the `Width` to `180` and `Height` to `260`.
+01. Change the size of the window by setting the `Height` to `180` and `Width` to `260`.
 
     :::code language="xaml" source="snippets/create-app-visual-studio/csharp/Start.xaml" highlight="8":::
 
