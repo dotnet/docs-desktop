@@ -10,10 +10,9 @@ public partial class FirstControl : Control
     // </field>
 
     // <attributes>
-    [Category("Alignment"),
-    Description("Specifies the alignment of text."),
-    DefaultValue(HorizontalAlignment.Left)]
-    // <property>
+    [System.ComponentModel.Category("Alignment"),
+    System.ComponentModel.Description("Specifies the alignment of text."),
+    System.ComponentModel.DefaultValue(HorizontalAlignment.Left)]
     public HorizontalAlignment TextAlignment
     // </attributes>
     {
@@ -24,7 +23,6 @@ public partial class FirstControl : Control
             Invalidate();
         }
     }
-    // </property>
 
     public FirstControl()
     {
@@ -47,7 +45,7 @@ public partial class FirstControl : Control
         // </stringformat>
 
         // <alignment>
-        style.Alignment = _textAlignment switch
+        style.Alignment = TextAlignment switch
         {
             // Map the HorizontalAlignment enum to the StringAlignment enum
             HorizontalAlignment.Left => StringAlignment.Near,

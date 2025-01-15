@@ -22,53 +22,28 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        ctlFirstName = New ClearableTextBox()
-        ctlLastName = New ClearableTextBox()
-        lblFullName = New Label()
+        FirstControl1 = New FirstControl()
         SuspendLayout()
         ' 
-        ' ctlFirstName
+        ' FirstControl1
         ' 
-        ctlFirstName.Location = New Point(12, 12)
-        ctlFirstName.MinimumSize = New Size(84, 53)
-        ctlFirstName.Name = "ctlFirstName"
-        ctlFirstName.Size = New Size(191, 53)
-        ctlFirstName.TabIndex = 0
-        ctlFirstName.Title = "First Name"
-        ' 
-        ' ctlLastName
-        ' 
-        ctlLastName.Location = New Point(12, 71)
-        ctlLastName.MinimumSize = New Size(84, 53)
-        ctlLastName.Name = "ctlLastName"
-        ctlLastName.Size = New Size(191, 53)
-        ctlLastName.TabIndex = 1
-        ctlLastName.Title = "Last Name"
-        ' 
-        ' lblFullName
-        ' 
-        lblFullName.AutoSize = True
-        lblFullName.Location = New Point(12, 252)
-        lblFullName.Name = "lblFullName"
-        lblFullName.Size = New Size(41, 15)
-        lblFullName.TabIndex = 2
-        lblFullName.Text = "Label1"
+        FirstControl1.Location = New Point(61, 43)
+        FirstControl1.Name = "FirstControl1"
+        FirstControl1.Size = New Size(163, 38)
+        FirstControl1.TabIndex = 0
+        FirstControl1.Text = "Awesome text!"
+        FirstControl1.TextAlignment = HorizontalAlignment.Center
         ' 
         ' Form1
         ' 
-        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(416, 276)
-        Controls.Add(lblFullName)
-        Controls.Add(ctlLastName)
-        Controls.Add(ctlFirstName)
+        Controls.Add(FirstControl1)
         Name = "Form1"
         Text = "Form1"
         ResumeLayout(False)
-        PerformLayout()
     End Sub
 
-    Friend WithEvents ctlFirstName As ClearableTextBox
-    Friend WithEvents ctlLastName As ClearableTextBox
-    Friend WithEvents lblFullName As Label
+    Friend WithEvents FirstControl1 As FirstControl
 End Class
