@@ -78,7 +78,7 @@ items:
   - name: Guidelines
     href: controls-design/usercontrol-guidelines.md
   - name: Extend an existing control
-    href: controls-design/extend-existing.md
+    href: controls-design/how-to-extend-existing.md
   - name: User controls
     expanded: true
     items:
@@ -92,10 +92,10 @@ items:
       items:
       - name: How to create a user control
         href: controls-design/how-to-create-usercontrol.md
-#  - name: User-drawn controls
-#    items:
-#    - name: Overview (X)
-#      href: blah
+  - name: Custom user-drawn controls
+    items:
+    - name: Overview (X)
+      href: blah
 #    - name: Rendering an interface with OnPaint (X)
 #      href: blah
 #    - name: "Tutorial: Create a new progress control (X)"

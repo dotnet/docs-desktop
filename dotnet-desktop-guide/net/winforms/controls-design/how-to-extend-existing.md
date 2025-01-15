@@ -1,16 +1,20 @@
 ---
 title: Customize an existing control
 description: Learn how to inherit from existing controls so that another control has all of its functionality and visual properties.
-ms.date: 04/30/2024
+ms.date: 01/14/2025
+ms.topic: how-to
 dev_langs:
   - "csharp"
   - "vb"
 helpviewer_keywords:
   - "inheritance [Windows Forms], Windows Forms custom controls"
   - "custom controls [Windows Forms], inheritance"
+
+#customer intent: As a developer, I want to extend an existing control so that I can use its functionality while slightly customizing it.
+
 ---
 
-# Extend an existing control
+# How to extend an existing control
 
 If you want to add more features to an existing control, you can create a control that inherits from an existing control. The new control contains all of the capabilities and visual aspect of the base control, but gives you opportunity to extend it. For example, if you created a control that inherits <xref:System.Windows.Forms.Button>, your new control would look and act exactly like a button. You could create new methods and properties to customize the behavior of the control. Some controls allow you to override the <xref:System.Windows.Forms.Control.OnPaint%2A> method to change the way the control looks.
 
@@ -26,7 +30,10 @@ After creating a new project, use the Visual Studio templates to create a user c
 
     :::image type="content" source="media/extend-existing/new-customcontrol-dialog.png" alt-text="Add item dialog in Visual Studio for Windows Forms":::
 
-After the user control is created, Visual Studio opens the code-editor for the control. The next step is to turn this custom control into a button and extend it.
+01. In **Design** mode of the control, press <kbd>F7</kbd> or click the **switch to code view** link.
+
+    > [!TIP]
+    > You can also right-click the file in the **Solution Explorer** window and select **View Code**.
 
 ## Change the custom control to a button
 
