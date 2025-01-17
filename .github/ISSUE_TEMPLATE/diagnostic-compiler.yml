@@ -61,8 +61,8 @@ body:
   - type: input
     id: rule_id_config
     attributes:
-      label: .editorConfig Rule ID
-      description: "What is the editor config rule ID? (ex: dotnet_diagnostic.WFO5001)"
+      label: .editorConfig Setting ID
+      description: "What is the editor config ID? (ex: dotnet_diagnostic.WFO5001)"
     validations:
       required: false
 
