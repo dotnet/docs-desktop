@@ -89,7 +89,7 @@ body:
     id: description
     attributes:
       label: Description
-      description: "Summerize what triggers this."
+      description: "Summarize what triggers this."
     validations:
       required: true
 
@@ -97,7 +97,7 @@ body:
     id: fix
     attributes:
       label: How to fix
-      description: "Summerize what a user does to avoid triggering the rule. (This doesn't mean suppress or disable)"
+      description: "Summarize what a user does to avoid triggering the rule. (This doesn't mean suppress or disable)"
     validations:
       required: false
 
