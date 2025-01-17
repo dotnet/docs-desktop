@@ -21,11 +21,11 @@ helpviewer_keywords:
 
 # Painting and drawing on controls (Windows Forms .NET)
 
-Custom painting of controls is one of the many complicated tasks made easy by Windows Forms. When authoring a custom control, you have many options available to handle your control's graphical appearance. If you're authoring a [custom control](../controls-design/overview.md#custom-controls), that is, a control that inherits from <xref:System.Windows.Forms.Control>, you must provide code to render its graphical representation.
+Custom painting of controls is one of the many complicated tasks made easy by Windows Forms. When authoring a custom control, you have many options available to handle your control's graphical appearance. If you're authoring a [custom control](../controls-design/overview.md#custom-controls), that is, a control that inherits from <xref:System.Windows.Forms.Control>, you use code to render its graphical representation.
 
-If you're creating a [composite control](../controls-design/usercontrol-overview.md), that is a control that inherits from <xref:System.Windows.Forms.UserControl> or one of the [existing Windows Forms controls](../controls-design/extend-existing.md), you may override the standard graphical representation and provide your own graphics code.
+If you're creating a [composite control](../controls-design/usercontrol-overview.md), that is a control that inherits from either <xref:System.Windows.Forms.UserControl> or one of the [existing Windows Forms controls](../controls-design/how-to-extend-existing.md), you may override the standard graphical representation and provide your own graphics code.
 
-If you want to provide custom rendering for an existing control without creating a new control, your options become more limited. However, there are still a wide range of graphical possibilities for your controls and applications.
+If you want to provide custom rendering for an existing control without creating a new control, you handle the <xref:System.Windows.Forms.Control.Paint> event which lets you draw over a control.
 
 The following elements are involved in control rendering:
 
@@ -36,7 +36,7 @@ The following elements are involved in control rendering:
 
 ## Drawing provided by control
 
-The base class <xref:System.Windows.Forms.Control> provides drawing functionality through its <xref:System.Windows.Forms.Control.Paint> event. A control raises the <xref:System.Windows.Forms.Control.Paint> event whenever it needs to update its display. For more information about events in the .NET, see [Handling and raising events](/dotnet/standard/events/index).
+The base class <xref:System.Windows.Forms.Control> provides drawing functionality through its <xref:System.Windows.Forms.Control.Paint> event. A control raises the <xref:System.Windows.Forms.Control.Paint> event whenever it needs to update its display and has done its drawing.. For more information about events in the .NET, see [Handling and raising events](/dotnet/standard/events/index).
 
 The event data class for the <xref:System.Windows.Forms.Control.Paint> event, <xref:System.Windows.Forms.PaintEventArgs>, holds the data needed for drawing a control - a handle to a graphics object and a rectangle that represents the region to draw in.
 
@@ -120,4 +120,4 @@ Graphics objects are expensive because they use system resources. Such objects i
 
 ## See also
 
-- [Types of custom controls](custom.md)
+[Custom controls](../controls-design/overview.md)

@@ -17,6 +17,23 @@
             "SourceUrl": "/dotnet/desktop/winforms/wfdev-diagnostics/obsoletions-overview?view=netdesktop-9.0",
             "TargetUrl": "/dotnet/desktop/winforms/?view=netdesktop-9.0"
         },
+        {
+            "Redirect": "Normal",
+            "SourceUrl": "/dotnet/desktop/winforms/controls-design/extend-existing?view=netdesktop-9.0",
+            "TargetUrl": "/dotnet/desktop/winforms/controls-design/how-to-extend-existing?view=netdesktop-9.0"
+        },
+
+        // Index mappings
+        {
+            "Redirect": "Normal",
+            "SourceUrl": "/dotnet/desktop/winforms/whats-new/index?view=netdesktop-9.0",
+            "TargetUrl": "/dotnet/desktop/winforms/whats-new/net90?view=netdesktop-9.0"
+        },
+        {
+            "Redirect": "Normal",
+            "SourceUrl": "/dotnet/desktop/winforms/controls-design/index?view=netdesktop-9.0",
+            "TargetUrl": "/dotnet/desktop/winforms/controls-design/overview?view=netdesktop-9.0"
+        },
 
         // Basics
         {
@@ -426,23 +443,6 @@
             "Redirect": "TwoWay",
             "SourceUrl": "/dotnet/desktop/winforms/multiple-controls-bound-to-data-source-synchronized?view=netframeworkdesktop-4.8",
             "TargetUrl": "/dotnet/desktop/winforms/data/how-to-synchronize-multiple-controls?view=netdesktop-9.0"
-        },
-
-
-    // ========
-    // Index mappings
-    // ========
-        {
-            "Redirect": "Normal",
-            "SourceUrl": "/dotnet/desktop/winforms/whats-new/index?view=netdesktop-9.0",
-            "TargetUrl": "/dotnet/desktop/winforms/whats-new/net70?view=netdesktop-9.0"
-        },
-        {
-            "Redirect": "Normal",
-            "SourceUrl": "/dotnet/desktop/winforms/controls-design/index?view=netdesktop-9.0",
-            "TargetUrl": "/dotnet/desktop/winforms/controls-design/overview?view=netdesktop-9.0"
         }
-
-
     ]
 }
