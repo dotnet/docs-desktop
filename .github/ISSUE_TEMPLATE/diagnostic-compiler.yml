@@ -1,0 +1,92 @@
+name: "Compiler Warning/Error"
+description: A template to support auto generating documentation for a compiler warning or error.
+title: "[diagnostic]: "
+labels: Pri1,doc-idea
+assignees:
+ - adegeo
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ```
+        ┌───────────┐
+        │ IMPORTANT ├──────────────────────────┐
+        └────────┬──┘ Please read the          │
+                 │       following statement   │
+                 └─────────────────────────────┘
+        ```
+        This template is for use by the product team to request new compiler warning articles.
+
+  - type: dropdown
+    id: technology
+    attributes:
+      label: Technology
+      description: Which desktop technology does this apply to?
+      options:
+        - WPF (Windows Presentation Foundation)
+        - Windows Forms
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: languages
+    attributes:
+      label: Languages that apply
+      description: "Does this apply to a single language or both?"
+      options:
+        - label: "C#"
+        - label: "Visual Basic"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: Default Reporting Scope
+      description: Is this considered an error or warning?
+      options:
+        - Error
+        - Warning
+    validations:
+      required: true
+
+  - type: input
+    id: rule_id
+    attributes:
+      label: Rule ID
+      description: "What's the rule ID? (ex: IDE0001 or WFO5003)"
+    validations:
+      required: true
+
+  - type: input
+    id: rule_id_config
+    attributes:
+      label: .editorConfig Setting ID
+      description: "What is the editor config ID? (ex: dotnet_diagnostic.WFO5001)"
+    validations:
+      required: false
+
+  - type: input
+    id: title_short
+    attributes:
+      label: Short Title
+      description: "A simple title in one sentence that describes the rule."
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: "Summarize what triggers this. Provide code examples if applicable."
+    validations:
+      required: true
+
+  - type: textarea
+    id: fix
+    attributes:
+      label: How to fix
+      description: "Summarize what a user does to avoid triggering the rule, or what they do to fix their code. Provide an example if possible."
+    validations:
+      required: true
+
