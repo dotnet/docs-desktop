@@ -16,7 +16,7 @@ helpviewer_keywords:
   - "controls [Windows Forms], composite"
 ---
 
-# Custom controls (Windows Forms .NET)
+# Create new controls overview (Windows Forms .NET)
 
 With Windows Forms, you can create new controls or modify existing controls through inheritance. This article highlights the differences among the ways of creating new controls, and provides you with information about how to choose a particular type of control for your project.
 

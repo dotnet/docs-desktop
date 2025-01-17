@@ -1,7 +1,7 @@
 ---
 title: Custom user-drawn controls
-description: ""
-author: 
+description: "Learn about how custom controls differ from user controls by not providing a visual design surface and relying on user-supplied code for drawing."
+author: adegeo
 ms.topic: overview #Don't change
 ms.date: 01/15/2025
 
@@ -13,7 +13,7 @@ ms.date: 01/15/2025
 
 This article introduces you to custom controls, how they differ from user controls, and why you would want to create them. Custom controls don't provide a visual design surface and rely on user-supplied code to draw themselves. This is different from user controls which provide a visual design surface to group multiple controls into a single reusable unit.
 
-Custom controls are used when an existing control or user control doesn't come close to providing the UI or interactivity that you require. They require more effort on your part to fully implement. Keyboard and mouse handling is still provided by Windows Forms, but any behaviors are left up to you to implement. There isn't a design surface provided with a custom control, because all drawing is done through code in the <xref:System.Windows.Forms.Control.OnPaint> method. Components, such as a <xref:System.Windows.Forms.Timer> can still be added through the nonvisual design surface.
+Custom controls are used when an existing control or user control doesn't come close to providing the UI or interactivity that you require. They require more effort on your part to fully implement. Keyboard and mouse handling is still provided by Windows Forms, but any behaviors are left up to you to implement. There isn't a design surface provided with a custom control, because all drawing is done through code in the <xref:System.Windows.Forms.Control.OnPaint%2A> method. Components, such as a <xref:System.Windows.Forms.Timer> can still be added through the nonvisual design surface.
 
 ## Base class
 
@@ -118,20 +118,5 @@ Notice that the background is painted with the <xref:System.Drawing.SystemColors
 
 ## Related content
 
-- [Related article title](link.md)
-- [Related article title](link.md)
-- [Related article title](link.md)
-
-<!-- Optional: Related content - H2
-
-Consider including a "Related content" H2 section that 
-lists links to 1 to 3 articles the user might find helpful.
-
--->
-
-<!--
-
-Remove all comments except the customer intent
-before you sign off or merge to the main branch.
-
--->
+- [Create a simple custom control](how-to-create-simple-custom-control.md)
+- [Custom controls overview](overview.md)
