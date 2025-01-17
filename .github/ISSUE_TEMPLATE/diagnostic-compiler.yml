@@ -59,13 +59,13 @@ body:
     validations:
       required: true
 
-  - type: dropdown
+  - type: checkbox
     id: can_suppress
     attributes:
       label: Can this be suppressed?
       description: "Can the rule be suppressed with <NoWarn> in the project and via severity in the .editorConfig file?"
       options:
-        - Yes
+        - label: "Yes"
     validations:
       required: true
 
@@ -102,7 +102,7 @@ body:
       required: false
 
   - type: textarea
-    id: code
+    id: code_error
     attributes:
       label: Code Example
       description: "Provide a code example (formatted in markdown) that triggers this rule."
@@ -118,7 +118,7 @@ body:
       required: true
 
   - type: textarea
-    id: code
+    id: code_fix
     attributes:
       label: Fixed Code Example
       description: "(if applicable) Provide a code example (formatted in markdown) that fixes the problem."
