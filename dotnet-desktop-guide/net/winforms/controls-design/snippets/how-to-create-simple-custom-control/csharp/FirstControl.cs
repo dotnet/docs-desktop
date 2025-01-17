@@ -58,15 +58,17 @@ public partial class FirstControl : Control
         // </alignment>
 
         // <drawstring>
-        // Create the brush, which must be disposed after use
+        // Create the brush and automatically dispose it.
         using SolidBrush foreBrush = new(ForeColor);
 
         // Call the DrawString method to write text.
         // Text, Font, and ClientRectangle are inherited properties.
         pe.Graphics.DrawString(Text, Font, foreBrush, ClientRectangle, style);
-
-        base.OnPaint(pe);
         // </drawstring>
+
+        // <base_onpaint>
+        base.OnPaint(pe);
+        // </base_onpaint>
     }
     // </onpaint>
 }

@@ -1,16 +1,16 @@
-﻿' <firstcontrol>
+﻿'<firstcontrol>
 Public Class FirstControl
 
-    ' <field>
+    '<field>
     Private _textAlignment As HorizontalAlignment = HorizontalAlignment.Left
-    ' </field>
+    '</field>
 
-    ' <attributes>
+    '<attributes>
     <System.ComponentModel.Category("Alignment"),
     System.ComponentModel.Description("Specifies the alignment of text."),
     System.ComponentModel.DefaultValue(HorizontalAlignment.Left)>
     Public Property TextAlignment As HorizontalAlignment
-    ' </attributes>
+    '</attributes>
         Get
             Return _textAlignment
         End Get
@@ -21,20 +21,20 @@ Public Class FirstControl
         End Set
     End Property
 
-    ' <ontextchanged>
+    '<ontextchanged>
     Protected Overrides Sub OnTextChanged(e As EventArgs)
         MyBase.OnTextChanged(e)
         Invalidate()
     End Sub
-    ' </ontextchanged>
+    '</ontextchanged>
 
-    ' <onpaint>
+    '<onpaint>
     Protected Overrides Sub OnPaint(ByVal e As System.Windows.Forms.PaintEventArgs)
-        ' <stringformat>
+        '<stringformat>
         Dim style As New StringFormat
-        ' </stringformat>
+        '</stringformat>
 
-        ' <alignment>
+        '<alignment>
         'Map the HorizontalAlignment enum to the StringAlignment enum
         Select Case TextAlignment
             Case HorizontalAlignment.Left
@@ -44,20 +44,21 @@ Public Class FirstControl
             Case HorizontalAlignment.Center
                 style.Alignment = StringAlignment.Center
         End Select
-        ' </alignment>
+        '</alignment>
 
-        ' <drawstring>
-        'Create the brush, which must be disposed after use
+        '<drawstring>
+        'Create the brush and automatically dispose it.
         Using foreBrush As New SolidBrush(ForeColor)
             'Call the DrawString method to write text.
             'Text, Font, and ClientRectangle are inherited properties.
             e.Graphics.DrawString(Text, Font, foreBrush, ClientRectangle, style)
         End Using
-
+        '</drawstring>
+        '<base_onpaint>
         MyBase.OnPaint(e)
-        ' </drawstring>
+        '</base_onpaint>
     End Sub
-    ' </onpaint>
+    '</onpaint>
 
 End Class
-' </firstcontrol>
+'</firstcontrol>
