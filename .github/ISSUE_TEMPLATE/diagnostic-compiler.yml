@@ -78,7 +78,7 @@ body:
     id: description
     attributes:
       label: Description
-      description: "Summarize what triggers this."
+      description: "Summarize what triggers this. Provide code examples if applicable."
     validations:
       required: true
 
@@ -86,14 +86,7 @@ body:
     id: fix
     attributes:
       label: How to fix
-      description: "Summarize what a user does to avoid triggering the rule. (This doesn't mean suppress or disable)"
-    validations:
-      required: false
-
-  - type: textarea
-    id: code
-    attributes:
-      label: Code Example (Cause and Fix)
-      description: "Provide a description with code examples on what triggers this rule. Can it be fixed? Provide the alternative code that addresses the problem."
+      description: "Summarize what a user does to avoid triggering the rule, or what they do to fix their code. Provide an example if possible."
     validations:
       required: true
+
