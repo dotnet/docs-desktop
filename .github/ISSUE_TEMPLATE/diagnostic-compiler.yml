@@ -1,0 +1,126 @@
+name: "Compiler Warning/Error"
+description: A template to support auto generating documentation for a compiler warning or error.
+title: "[diagnostic]: "
+labels: Pri1,doc-idea
+assignees:
+ - adegeo
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ```
+        ┌───────────┐
+        │ IMPORTANT ├──────────────────────────┐
+        └────────┬──┘ Please read the          │
+                 │       following statement   │
+                 └─────────────────────────────┘
+        ```
+        This template is for use by the product team to request new compiler warning articles.
+
+  - type: dropdown
+    id: technology
+    attributes:
+      label: Technology
+      description: Which desktop technology does this apply to?
+      options:
+        - WPF (Windows Presentation Foundation)
+        - Windows Forms
+        - Both
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: languages
+    attributes:
+      label: Languages that apply
+      description: "Does this apply to a single language or both?"
+      options:
+        - label: "C#"
+        - label: "Visual Basic"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: Error or Warning?
+      description: Is this considered an error or warning?
+      options:
+        - Error
+        - Warning
+    validations:
+      required: true
+
+  - type: input
+    id: rule_id
+    attributes:
+      label: Rule ID
+      description: "What's the rule ID? (ex: IDE0001 or WFO5003)"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: can_suppress
+    attributes:
+      label: Can this be suppressed?
+      description: "Can the rule be suppressed with <NoWarn> in the project and via severity in the .editorConfig file?"
+      options:
+        - Yes
+    validations:
+      required: true
+
+  - type: input
+    id: rule_id_config
+    attributes:
+      label: .editorConfig Rule ID
+      description: "What is the editor config rule ID? (ex: dotnet_diagnostic.WFO5001)"
+    validations:
+      required: false
+
+  - type: input
+    id: title_short
+    attributes:
+      label: Short Title
+      description: "A simple title in one sentence that describes the rule."
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: "Summerize what triggers this."
+    validations:
+      required: true
+
+  - type: textarea
+    id: fix
+    attributes:
+      label: How to fix
+      description: "Summerize what a user does to avoid triggering the rule. (This doesn't mean suppress or disable)"
+    validations:
+      required: false
+
+  - type: textarea
+    id: code
+    attributes:
+      label: Code Example
+      description: "Provide a code example (formatted in markdown) that triggers this rule."
+    validations:
+      required: true
+
+  - type: input
+    id: trigger_line
+    attributes:
+      label: Which code line triggers the error?
+      description: "Paste a single line of code from the Code Example section as to where this rule is triggered."
+    validations:
+      required: true
+
+  - type: textarea
+    id: code
+    attributes:
+      label: Fixed Code Example
+      description: "(if applicable) Provide a code example (formatted in markdown) that fixes the problem."
+    validations:
+      required: False
