@@ -7,8 +7,8 @@ dev_langs:
   - "csharp"
   - "vb"
 helpviewer_keywords:
-  - "inheritance [Windows Forms], Windows Forms custom controls"
-  - "custom controls [Windows Forms], inheritance"
+  - "Windows Forms custom controls"
+  - "custom controls [Windows Forms], create"
 
 #customer intent: As a developer, I want to create a simple control so that I can learn more about how they're structured and designed.
 
