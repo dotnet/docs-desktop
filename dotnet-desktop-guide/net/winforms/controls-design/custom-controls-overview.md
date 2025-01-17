@@ -9,7 +9,7 @@ ms.date: 01/15/2025
 
 ---
 
-# What is a custom control?
+# What is a custom control? (Windows Forms .NET)
 
 This article introduces you to custom controls, how they differ from user controls, and why you would want to create them. Custom controls don't provide a visual design surface and rely on user-supplied code to draw themselves. This is different from user controls which provide a visual design surface to group multiple controls into a single reusable unit.
 

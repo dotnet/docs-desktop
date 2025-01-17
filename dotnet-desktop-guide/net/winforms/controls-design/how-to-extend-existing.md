@@ -14,7 +14,7 @@ helpviewer_keywords:
 
 ---
 
-# How to extend an existing control
+# How to extend an existing control (Windows Forms .NET)
 
 If you want to add more features to an existing control, you can create a control that inherits from an existing control. The new control contains all of the capabilities and visual aspect of the base control, but gives you opportunity to extend it. For example, if you created a control that inherits <xref:System.Windows.Forms.Button>, your new control would look and act exactly like a button. You could create new methods and properties to customize the behavior of the control. Some controls allow you to override the <xref:System.Windows.Forms.Control.OnPaint%2A> method to change the way the control looks.
 
