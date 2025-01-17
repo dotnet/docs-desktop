@@ -25,7 +25,6 @@ body:
       options:
         - WPF (Windows Presentation Foundation)
         - Windows Forms
-        - Both
     validations:
       required: true
 
@@ -43,7 +42,7 @@ body:
   - type: dropdown
     id: type
     attributes:
-      label: Error or Warning?
+      label: Default Reporting Scope
       description: Is this considered an error or warning?
       options:
         - Error
@@ -56,16 +55,6 @@ body:
     attributes:
       label: Rule ID
       description: "What's the rule ID? (ex: IDE0001 or WFO5003)"
-    validations:
-      required: true
-
-  - type: checkboxes
-    id: can_suppress
-    attributes:
-      label: Can this be suppressed?
-      description: "Can the rule be suppressed with <NoWarn> in the project and via severity in the .editorConfig file?"
-      options:
-        - label: "Yes"
     validations:
       required: true
 
@@ -102,25 +91,9 @@ body:
       required: false
 
   - type: textarea
-    id: code_error
+    id: code
     attributes:
-      label: Code Example
-      description: "Provide a code example (formatted in markdown) that triggers this rule."
+      label: Code Example (Cause and Fix)
+      description: "Provide a description with code examples on what triggers this rule. Can it be fixed? Provide the alternative code that addresses the problem."
     validations:
       required: true
-
-  - type: input
-    id: trigger_line
-    attributes:
-      label: Which code line triggers the error?
-      description: "Paste a single line of code from the Code Example section as to where this rule is triggered."
-    validations:
-      required: true
-
-  - type: textarea
-    id: code_fix
-    attributes:
-      label: Fixed Code Example
-      description: "(if applicable) Provide a code example (formatted in markdown) that fixes the problem."
-    validations:
-      required: False
