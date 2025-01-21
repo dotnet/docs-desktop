@@ -150,13 +150,8 @@
         },
         {
             "Redirect": "OneWay",
-            "SourceUrl": "/dotnet/desktop/winforms/controls/control-type-recommendations?view=netframeworkdesktop-4.8",
-            "TargetUrl": "/dotnet/desktop/winforms/controls-design/overview?view=netdesktop-9.0"
-        },
-        {
-            "Redirect": "OneWay",
-            "SourceUrl": "/dotnet/desktop/winforms/controls/control-type-recommendations?view=netframeworkdesktop-4.8",
-            "TargetUrl": "/dotnet/desktop/winforms/controls-design/overview?view=netdesktop-9.0"
+            "SourceUrl": "/dotnet/desktop/winforms/controls/how-to-develop-a-simple-windows-forms-control?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/winforms/controls-design/how-to-create-simple-custom-control?view=netdesktop-9.0"
         },
         {
             "Redirect": "TwoWay",

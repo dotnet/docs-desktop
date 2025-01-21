@@ -494,7 +494,7 @@
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/whats-new/index.md",
-            "redirect_url": "/dotnet/desktop/winforms/whats-new/net70?view=netdesktop-9.0"
+            "redirect_url": "/dotnet/desktop/winforms/whats-new/net90?view=netdesktop-9.0"
         },
         {
             "source_path": "dotnet-desktop-guide/net/winforms/controls-design/index.md",
@@ -503,6 +503,14 @@
         {
             "source_path": "dotnet-desktop-guide/net/winforms/wfdev-diagnostics/obsoletions-overview.md",
             "redirect_url": "/dotnet/desktop/winforms/?view=netdesktop-9.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/controls-design/extend-existing.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls-design/how-to-extend-existing?view=netdesktop-9.0"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/net/winforms/controls/how-to-develop-a-simple-windows-forms-control.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls-design/how-to-create-simple-custom-control?view=netdesktop-9.0"
         }
     ]
 }
