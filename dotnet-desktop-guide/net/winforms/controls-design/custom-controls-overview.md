@@ -11,7 +11,7 @@ helpviewer_keywords:
   - "inheritance [Windows Forms], Windows Forms custom controls"
   - "custom controls [Windows Forms], inheritance"
 
-#customer intent: As a developer, I want create a custom control so that I can control how it's drawn.
+#customer intent: As a developer, I want to create a custom control so that I can control how it's drawn.
 
 ---
 
@@ -39,7 +39,7 @@ Unless you require scrolling the contents of the custom control, use `Control` a
 
 Since the base class of a custom control is <xref:System.Windows.Forms.Control>, you automatically inherit Windows Forms functionality shared by all controls. Here are a few of the capabilities you get with a custom control:
 
-- Keyboard a mouse input.
+- Keyboard and mouse input.
 - Layout behaviors, such as anchoring and docking.
 - Support for tabbing.
 - Minimum and maximum size restrictions.
@@ -47,7 +47,7 @@ Since the base class of a custom control is <xref:System.Windows.Forms.Control>,
 ## Painting
 
 <!-- I don't like the second half of this para -->
-Painting, which means to draw the control's visual, is accomplished by overriding the <xref:System.Windows.Forms.Control.OnPaint%2A> method. For more information about how painting is used by controls, see [Painting and drawing on controls](../controls/custom-painting-drawing.md).
+Painting, which means to draw the control's visual, is accomplished by overriding the <xref:System.Windows.Forms.Control.OnPaint%2A> method. For more information about how controls do painting, see [Painting and drawing on controls](../controls/custom-painting-drawing.md).
 
 When you create a custom control using the Visual Studio templates, the `OnPaint` method is automatically overridden for you. The template does this because you're required to write the code to draw your control. Here's an example of what the template generates:
 
@@ -80,13 +80,13 @@ End Class
 
 A custom control is painted with the <xref:System.Windows.Forms.Control.OnPaint%2A> method. The single argument of this method is a <xref:System.Windows.Forms.PaintEventArgs> object, which provides all of the information and functionality required to render your control. `PaintEventArgs` provides two properties that are used in rendering your control:
 
-- <xref:System.Windows.Forms.PaintEventArgs.ClipRectangle%2A?displayProperty=nameWithType>&mdash;Represents the part of the control needs to be redrawn. This can be the entire control or part of the control.
+- <xref:System.Windows.Forms.PaintEventArgs.ClipRectangle%2A?displayProperty=nameWithType>&mdash;Represents the part of the control that needs to be redrawn. This can be the entire control or part of the control.
 
 - <xref:System.Drawing.Graphics>&mdash;Represents the graphical surface of your control. It provides several graphics-oriented objects and methods that provide the functionality necessary to draw your control.
 
 The `OnPaint` method is called whenever the control is drawn or refreshed on the screen, and the `PaintEventArgs.ClipRectangle` object represents the rectangle in which painting takes place. If the entire control needs to be refreshed, `PaintEventArgs.ClipRectangle` represents the size of the entire control. If only part of the control needs to be refreshed, it represents only the region that needs to be redrawn. An example of such a case would be when a control is partially obscured by another control in the user interface, and that other control is moved away, the newly exposed portion of the underneath control must be redrawn.
 
-The code in the <xref:System.Windows.Forms.Control.OnPaint%2A> method of a control runs when the control is first drawn, and whenever it's invalidated. To ensure that your control is redrawn every time it's resized, add the following line to the constructor of your control:
+The code in the <xref:System.Windows.Forms.Control.OnPaint%2A> method of a control runs when the control is first drawn and whenever it's invalidated. To ensure that your control is redrawn every time it's resized, add the following line to the constructor of your control:
   
 ```csharp
 SetStyle(ControlStyles.ResizeRedraw, true);

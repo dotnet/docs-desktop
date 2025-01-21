@@ -25,7 +25,7 @@ Custom painting of controls is one of the many complicated tasks made easy by Wi
 
 If you're creating a [composite control](../controls-design/usercontrol-overview.md), that is a control that inherits from either <xref:System.Windows.Forms.UserControl> or one of the [existing Windows Forms controls](../controls-design/how-to-extend-existing.md), you may override the standard graphical representation and provide your own graphics code.
 
-If you want to provide custom rendering for an existing control without creating a new control, you handle the <xref:System.Windows.Forms.Control.Paint> event which lets you draw over a control.
+If you want to provide custom rendering for an existing control without creating a new control, handle the <xref:System.Windows.Forms.Control.Paint> event which lets you draw over a control.
 
 The following elements are involved in control rendering:
 
@@ -36,7 +36,7 @@ The following elements are involved in control rendering:
 
 ## Drawing provided by control
 
-The base class <xref:System.Windows.Forms.Control> provides drawing functionality through its <xref:System.Windows.Forms.Control.Paint> event. A control raises the <xref:System.Windows.Forms.Control.Paint> event whenever it needs to update its display and has done its drawing.. For more information about events in the .NET, see [Handling and raising events](/dotnet/standard/events/index).
+The base class <xref:System.Windows.Forms.Control> provides drawing functionality through its <xref:System.Windows.Forms.Control.Paint> event. A control raises the <xref:System.Windows.Forms.Control.Paint> event whenever it needs to update its display and has done its drawing. For more information about events in .NET, see [Handling and raising events](/dotnet/standard/events/index).
 
 The event data class for the <xref:System.Windows.Forms.Control.Paint> event, <xref:System.Windows.Forms.PaintEventArgs>, holds the data needed for drawing a control - a handle to a graphics object and a rectangle that represents the region to draw in.
 
