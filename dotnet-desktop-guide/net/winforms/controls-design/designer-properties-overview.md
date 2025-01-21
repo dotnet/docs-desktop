@@ -59,7 +59,7 @@ If a property uses a simple type, such as a primitive type, the default value ca
 When a property is a complex type, or you want to control the designer's reset and serialization behavior, define the `Reset<PropertyName>` and `ShouldSerialize<PropertyName>` methods on the class. For example, if the control defines an `Age` property, the methods are named `ResetAge` and `ShouldSerializeAge`.
 
 > [!IMPORTANT]
-> Either apply the `DefaultValueAttribute` to the property, or provide both `Reset<PropertyName>` and `ShouldSerialize<PropertyName>` methods. Don't mix both ways of defining the default value.
+> Either apply the `DefaultValueAttribute` to the property, or provide both `Reset<PropertyName>` and `ShouldSerialize<PropertyName>` methods. Don't mix the two ways of defining the default value.
 
 Properties can be "reset" to their default values through the **Properties** window by right-clicking on the property name and selecting **Reset**.
 
