@@ -22,7 +22,7 @@ The <xref:System.Windows.Data.ObjectDataProvider> type provides a convenient way
 
 ## Reference the enumeration
 
-Use the <xref:System.Windows.Data.ObjectDataProvider> type to wrap an array of enumeration values provided by the enumeration type itself.
+Use the <xref:System.Windows.Data.ObjectDataProvider> type to wrap an array of enumeration values provided by the enumeration type itself. The following steps wrap a <xref:System.Windows.HorizontalAlignment> enumeration. You can substitute a different enumeration if desired.
 
 01. Create a new `ObjectDataProvider` as a XAML resource, either in your application XAML or the XAML of the object you're working with. This example uses a window and creates the `ObjectDataProvider` with a resource key of `EnumDataSource`.
 
