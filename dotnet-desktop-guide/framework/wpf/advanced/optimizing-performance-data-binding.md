@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "binding data [WPF], performance"
   - "data binding [WPF], performance"
 ms.assetid: 1506a35d-c009-43db-9f1e-4e230ad5be73
+no-loc: [CLR]
 ---
 # Optimizing Performance: Data Binding
 
