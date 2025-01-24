@@ -16,7 +16,7 @@ helpviewer_keywords:
   - "controls [Windows Forms], composite"
 ---
 
-# Custom controls (Windows Forms .NET)
+# Create new controls overview (Windows Forms .NET)
 
 With Windows Forms, you can create new controls or modify existing controls through inheritance. This article highlights the differences among the ways of creating new controls, and provides you with information about how to choose a particular type of control for your project.
 
@@ -92,15 +92,19 @@ For example, you can create a control derived from the <xref:System.Windows.Form
 
 In some controls, you can also add a custom appearance to the graphical user interface of your control by overriding the <xref:System.Windows.Forms.Control.OnPaint%2A> method of the base class. For an extended button that tracks clicks, you can override the <xref:System.Windows.Forms.Control.OnPaint%2A> method to call the base implementation of <xref:System.Windows.Forms.Control.OnPaint%2A>, and then draw the click count in one corner of the <xref:System.Windows.Forms.Button> control's client area.
 
+For an example of extending a control, see [Extend an existing control](how-to-extend-existing.md).
+
 ## Custom controls
 
 Another way to create a control is to create one substantially from the beginning by inheriting from <xref:System.Windows.Forms.Control>. The <xref:System.Windows.Forms.Control> class provides all of the basic functionality required by controls, including mouse and keyboard handling events, but no control-specific functionality or graphical interface.
 
 Creating a control by inheriting from the <xref:System.Windows.Forms.Control> class requires more thought and effort than inheriting from <xref:System.Windows.Forms.UserControl> or an existing Windows Forms control. Because a great deal of implementation is left for you, your control can have greater flexibility than a composite or extended control, and you can tailor your control to suit your exact needs.
 
-To implement a custom control, you must write code for the <xref:System.Windows.Forms.Control.OnPaint%2A> event of the control, which controls how the control is visually drawn. You must also write any feature-specific behaviors for your control. You can also override the <xref:System.Windows.Forms.Control.WndProc%2A> method and handle windows messages directly. This is the most powerful way to create a control, but to use this technique effectively, you need to be familiar with the Microsoft Win32® API.
+To implement a custom control, you must write code for the <xref:System.Windows.Forms.Control.OnPaint%2A> method of the control, which controls how the control is visually drawn. You must also write any feature-specific behaviors for your control. You can also override the <xref:System.Windows.Forms.Control.WndProc%2A> method and handle windows messages directly. This is the most powerful way to create a control, but to use this technique effectively, you need to be familiar with the Microsoft Win32 API.
 
-An example of a custom control is a clock control that duplicates the appearance and behavior of an analog clock. Custom painting is invoked to cause the hands of the clock to move in response to <xref:System.Windows.Forms.Timer.Tick> events from an internal <xref:System.Windows.Forms.Timer> component.<!-- TODO For more information, see [How to: Develop a Simple Windows Forms Control](how-to-develop-a-simple-windows-forms-control.md).-->
+An example of a custom control is a clock control that duplicates the appearance and behavior of an analog clock. Custom painting is invoked to cause the hands of the clock to move in response to <xref:System.Windows.Forms.Timer.Tick> events from an internal <xref:System.Windows.Forms.Timer> component.
+
+For more information, see [Create a simple custom control](how-to-create-simple-custom-control.md).
 
 <!--TODO 
 ## ActiveX controls

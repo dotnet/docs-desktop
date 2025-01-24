@@ -17,6 +17,23 @@
             "SourceUrl": "/dotnet/desktop/winforms/wfdev-diagnostics/obsoletions-overview?view=netdesktop-9.0",
             "TargetUrl": "/dotnet/desktop/winforms/?view=netdesktop-9.0"
         },
+        {
+            "Redirect": "Normal",
+            "SourceUrl": "/dotnet/desktop/winforms/controls-design/extend-existing?view=netdesktop-9.0",
+            "TargetUrl": "/dotnet/desktop/winforms/controls-design/how-to-extend-existing?view=netdesktop-9.0"
+        },
+
+        // Index mappings
+        {
+            "Redirect": "Normal",
+            "SourceUrl": "/dotnet/desktop/winforms/whats-new/index?view=netdesktop-9.0",
+            "TargetUrl": "/dotnet/desktop/winforms/whats-new/net90?view=netdesktop-9.0"
+        },
+        {
+            "Redirect": "Normal",
+            "SourceUrl": "/dotnet/desktop/winforms/controls-design/index?view=netdesktop-9.0",
+            "TargetUrl": "/dotnet/desktop/winforms/controls-design/overview?view=netdesktop-9.0"
+        },
 
         // Basics
         {
@@ -133,13 +150,8 @@
         },
         {
             "Redirect": "OneWay",
-            "SourceUrl": "/dotnet/desktop/winforms/controls/control-type-recommendations?view=netframeworkdesktop-4.8",
-            "TargetUrl": "/dotnet/desktop/winforms/controls-design/overview?view=netdesktop-9.0"
-        },
-        {
-            "Redirect": "OneWay",
-            "SourceUrl": "/dotnet/desktop/winforms/controls/control-type-recommendations?view=netframeworkdesktop-4.8",
-            "TargetUrl": "/dotnet/desktop/winforms/controls-design/overview?view=netdesktop-9.0"
+            "SourceUrl": "/dotnet/desktop/winforms/controls/how-to-develop-a-simple-windows-forms-control?view=netframeworkdesktop-4.8",
+            "TargetUrl": "/dotnet/desktop/winforms/controls-design/how-to-create-simple-custom-control?view=netdesktop-9.0"
         },
         {
             "Redirect": "TwoWay",
@@ -426,23 +438,6 @@
             "Redirect": "TwoWay",
             "SourceUrl": "/dotnet/desktop/winforms/multiple-controls-bound-to-data-source-synchronized?view=netframeworkdesktop-4.8",
             "TargetUrl": "/dotnet/desktop/winforms/data/how-to-synchronize-multiple-controls?view=netdesktop-9.0"
-        },
-
-
-    // ========
-    // Index mappings
-    // ========
-        {
-            "Redirect": "Normal",
-            "SourceUrl": "/dotnet/desktop/winforms/whats-new/index?view=netdesktop-9.0",
-            "TargetUrl": "/dotnet/desktop/winforms/whats-new/net70?view=netdesktop-9.0"
-        },
-        {
-            "Redirect": "Normal",
-            "SourceUrl": "/dotnet/desktop/winforms/controls-design/index?view=netdesktop-9.0",
-            "TargetUrl": "/dotnet/desktop/winforms/controls-design/overview?view=netdesktop-9.0"
         }
-
-
     ]
 }
