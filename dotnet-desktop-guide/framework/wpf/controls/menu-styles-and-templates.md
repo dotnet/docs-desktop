@@ -33,7 +33,7 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 
 ## Menu ControlTemplate
 
-The following example is a copy of the default template for a `Menu` control:
+The following example is a copy of the default template for a <xref:System.Windows.Controls.Menu> control:
 
 :::code language="xaml" source="./snippets/shared/templates/MenuTemplate.xaml":::
 
