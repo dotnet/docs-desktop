@@ -28,7 +28,7 @@ This article teaches you how to add a user control to your project and then add 
 
 After opening your Windows Forms project in Visual Studio, use the Visual Studio templates to create a user control:
 
-01. In Visual Studio, find the **Project Explorer** window. Right-click on the project and choose **Add** > **User Control (Windows Forms)**.
+01. In Visual Studio, find the **Solution Explorer** window. Right-click on the project and choose **Add** > **User Control (Windows Forms)**.
 
     :::image type="content" source="./media/how-to-create-usercontrol/right-click.png" alt-text="Right-click the Visual Studio solution explorer to add a user control to a Windows Forms project":::
 

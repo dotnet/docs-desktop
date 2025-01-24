@@ -78,32 +78,19 @@ items:
   - name: Guidelines
     href: controls-design/usercontrol-guidelines.md
   - name: Extend an existing control
-    href: controls-design/extend-existing.md
+    href: controls-design/how-to-extend-existing.md
   - name: User controls
-    expanded: true
     items:
     - name: Overview
       href: controls-design/usercontrol-overview.md
-#    - name: Constituent controls (X)
-#      href: blah
-#    - name: "Tutorial: Create a user control (X)" 
-#      href: blah
-    - name: Common tasks
-      items:
-      - name: How to create a user control
-        href: controls-design/how-to-create-usercontrol.md
-#  - name: User-drawn controls
-#    items:
-#    - name: Overview (X)
-#      href: blah
-#    - name: Rendering an interface with OnPaint (X)
-#      href: blah
-#    - name: "Tutorial: Create a new progress control (X)"
-#      href: blah
-#    - name: Common tasks
-#      items:
-#      - name: Create a simple control (X)
-#        href: blah
+    - name: How to create a user control
+      href: controls-design/how-to-create-usercontrol.md
+  - name: Custom user-drawn controls
+    items:
+    - name: What is a custom control?
+      href: controls-design/custom-controls-overview.md
+    - name: How to create a simple custom control
+      href: controls-design/how-to-create-simple-custom-control.md
   - name: Visual Studio designer support
     expanded: true
     items:
