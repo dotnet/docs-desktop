@@ -13,7 +13,7 @@ This article describes what's new in Windows Forms for .NET 9.
 ## Async forms
 
 > [!IMPORTANT]
-> This feature set is experimental.
+> This feature set is experimental, except for `Control.InvokeAsync`.
 
 Modern apps require asynchronous communication models. As Windows Forms has grown on .NET, more components require marshaling to an `async` method to run on the UI-thread. For example, controls like [WebView2](/microsoft-edge/webview2/), native Windows 10 and Windows 11 APIs, or modern asynchronous libraries like [Semantic Kernel](/semantic-kernel/overview/). Another scenario would be where you're sharing MVVM ViewModels built around `async` with Windows Forms from other UI stacks such as WPF, WinUI, or .NET MAUI.
 
@@ -22,7 +22,7 @@ The following a list of new methods added to support asynchronous scenarios:
 - [System.Windows.Forms.Form.ShowAsync](xref:System.Windows.Forms.Form.ShowAsync(System.Windows.Forms.IWin32Window)?displayProperty=nameWithType)
 - <xref:System.Windows.Forms.Form.ShowDialogAsync*?displayProperty=nameWithType>
 - <xref:System.Windows.Forms.TaskDialog.ShowDialogAsync*?displayProperty=nameWithType>
-- <xref:System.Windows.Forms.Control.InvokeAsync*?displayProperty=nameWithType> (This API isn't experimental.)
+- <xref:System.Windows.Forms.Control.InvokeAsync*?displayProperty=nameWithType> **(This API isn't experimental.)**
 
 This API is guarded behind a compiler error because it's experimental. To suppress the error and enable access to the API, add the following `PropertyGroup` to your project file:
 
