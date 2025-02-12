@@ -31,7 +31,7 @@ This topic describes the styles and templates for the <xref:System.Windows.Windo
   
 ## Window ControlTemplate
 
-The following example is a slightly modified copy of the default template for a <xref:System.Windows.Window> control:
+The following XAML is a generated copy of the <xref:System.Windows.Window> control template:
 
 :::code language="xaml" source="./snippets/shared/templates/WindowTemplate.xaml":::
   
