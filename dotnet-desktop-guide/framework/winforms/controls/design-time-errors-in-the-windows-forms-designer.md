@@ -36,7 +36,7 @@ If a help topic for the error is available, click the **MSDN Help** link to navi
 
 ## Forum posts about this error
 
-Select the **Search the MSDN Forums for posts related to this error** link to navigate to the old Microsoft Developer Network forums. You might want to search or ask a question on the [Microsoft Q&A](/answers/tags/21/windows-forms) or [StackOverflow](https://stackoverflow.com/questions/tagged/winforms) forums.
+Select the **Search the MSDN Forums for posts related to this error** link to navigate to the old Microsoft Developer Network forums. You might also want to search or ask a question on the [Microsoft Q&A](/answers/tags/21/windows-forms) or [StackOverflow](https://stackoverflow.com/questions/tagged/winforms) forums.
 
 ## Design-time errors
 
