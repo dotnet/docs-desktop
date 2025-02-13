@@ -1,16 +1,18 @@
 ---
-title: What's new in Windows Presentation Foundation
-description: Learn about what's new in Windows Presentation Foundation (WPF). This article covers changes to WPF since .NET 7 was released.
+title: What's new in Windows Forms
+description: Learn about what's new in Windows Forms. This article covers changes to Windows Forms since .NET 5 was released.
 ms.date: 02/13/2025
 ms.topic: conceptual
 ai-usage: ai-assisted
 ---
 
-# What's new in Windows Presentation Foundation
+# What's new in Windows Forms
 
 Each .NET release introduces a new version of Windows Forms (WinForms). This article gives you a summery of what's new in each release.
 
 ## .NET 10 Preview
+
+This section describes the main changes to WinForms for each .NET 10 Preview.
 
 - .NET 10 Preview 1
   - [Clipboard changes](net100.md#preview-1)
@@ -22,7 +24,7 @@ WinForms in .NET 9 introduces several modern improvements. The asynchronous form
 - [Async forms](net90.md#async-forms)
 - [BinaryFormatter no longer supported](net90.md#binaryformatter-no-longer-supported)
 - [Dark mode](net90.md#dark-mode)
-- [FolderBrowserDialog enhancements](net90.md#folderbrowseerdialog-enhancements)
+- [FolderBrowserDialog enhancements](net90.md#folderbrowserdialog-enhancements)
 - [System.Drawing new features and enhancements](net90.md#systemdrawing-new-features-and-enhancements)
 - [ToolStrip](net90.md#toolstrip)
 

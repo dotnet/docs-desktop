@@ -11,6 +11,8 @@ Each .NET release introduces a new version of Windows Presentation Foundation (W
 
 ## .NET 10 Preview
 
+This section describes the main changes to WPF for each .NET 10 Preview.
+
 - .NET 10 Preview 1
   - [4000+ unit tests for `System.XAML` and `WindowsBase`](net100.md#preview-1)
   - [Fluent theme fixes](net100.md#preview-1)
