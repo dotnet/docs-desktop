@@ -9,6 +9,12 @@ ms.topic: conceptual
 
 Each .NET release introduces a new version of Windows Presentation Foundation (WPF). This article teaches you what's new in each release.
 
+## .NET 10 Preview
+
+- .NET 10 Preview 1
+  - [4000+ unit tests for `System.XAML` and `WindowsBase`](net100.md#preview-1)
+  - [Fluent theme fixes](net100.md#preview-1)
+
 ## .NET 9
 
 More support for building modern apps with WPF with several theming enhancements:

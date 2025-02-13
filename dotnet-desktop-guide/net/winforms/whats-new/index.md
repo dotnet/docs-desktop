@@ -12,11 +12,12 @@ Each .NET release introduces a new version of Windows Forms (WinForms). This art
 
 ## .NET 10 Preview
 
+- .NET 10 Preview 1
+  - [Clipboard changes](net100.md#preview-1)
+
 ## .NET 9
 
 WinForms in .NET 9 introduces several modern improvements. The asynchronous forms functionality provides APIs to help run UI-related operations asynchronously, making it easier to integrate with contemporary asynchronous programming patterns. The removal of BinaryFormatter eliminates a long-standing security risk by preventing unsafe deserialization practices. Additionally, experimental dark mode support has been added, allowing applications to adapt their color schemes to better suit dark environments.
-
-# List of Header Links
 
 - [Async forms](net90.md#async-forms)
 - [BinaryFormatter no longer supported](net90.md#binaryformatter-no-longer-supported)
