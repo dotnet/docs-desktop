@@ -12,6 +12,8 @@ items:
   items:
   - name: Overview
     href: whats-new/index.md
+  - name: What's new in .NET 10 Preview
+    href: whats-new/net100.md
   - name: What's new in .NET 9
     href: whats-new/net90.md
   - name: What's new in .NET 8
