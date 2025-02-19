@@ -2,6 +2,9 @@
 title: Dialog Boxes Overview
 description: Learn about the varieties of dialog boxes in Windows Foundation Presentation (WPF). With a dialog box, you gather and display information to a user.
 ms.date: 10/24/2024
+dev_langs: 
+  - "csharp"
+  - "vb"
 ms.custom: update-template
 helpviewer_keywords: 
   - "modeless dialog boxes [WPF]"
