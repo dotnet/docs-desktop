@@ -28,6 +28,7 @@ This window has six controls: two labels, two text boxes, and two buttons. XAML 
 All controls can be created similarly in XAML. The same window can be created in code:
 
 :::code language="csharp" source="./snippets/index/csharp/MainWindow.xaml.cs" id="ExampleAppCode":::
+:::code language="vb" source="./snippets/index/vb/MainWindow.xaml.vb" id="ExampleAppCode":::
 
 ## Subscribing to Events
 
@@ -40,10 +41,12 @@ In XAML, the event is set as an attribute on the element. You can't use the `<El
 And here's how to do the same in code:
 
 :::code language="csharp" source="./snippets/index/csharp/MainWindow.xaml.cs" id="Event":::
+:::code language="vb" source="./snippets/index/vb/MainWindow.xaml.vb" id="Event":::
 
 The following snippet handles the `Click` event of a <xref:System.Windows.Controls.Button>:
 
 :::code language="csharp" source="./snippets/index/csharp/ButtonClickEventExample.xaml.cs" id="ClickHandler":::
+:::code language="vb" source="./snippets/index/vb/ButtonClickEventExample.xaml.vb" id="ClickHandler":::
 
 ## Change the appearance of a control
 
@@ -62,6 +65,7 @@ Many controls have properties that allow you to change how the control appears, 
 And here's how to do the same in code:
 
 :::code language="csharp" source="./snippets/index/csharp/MainWindow.xaml.cs" id="Properties":::
+:::code language="vb" source="./snippets/index/vb/MainWindow.xaml.vb" id="Properties":::
 
 The example window now looks like the following image:
 
@@ -78,6 +82,7 @@ The following example applies a `Style` to every <xref:System.Windows.Controls.B
 And here's how to do the same in code:
 
 :::code language="csharp" source="./snippets/index/csharp/MainWindow.xaml.cs" id="Style":::
+:::code language="vb" source="./snippets/index/vb/MainWindow.xaml.vb" id="Style":::
 
 The following image shows the style applied to the grid of the window, which changes the appearance of the two buttons:
 
@@ -101,6 +106,7 @@ The following example creates a <xref:System.Windows.Controls.ControlTemplate> f
 And here's how to do the same in code. The following code creates a XAML string and parses it to generate a template that can be applied, which is the supported way to generate a template at run-time.
 
 :::code language="csharp" source="./snippets/index/csharp/MainWindow.xaml.cs" id="Template":::
+:::code language="vb" source="./snippets/index/vb/MainWindow.xaml.vb" id="Template":::
 
 The following image shows what the template looks like when applied:
 
