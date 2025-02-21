@@ -122,7 +122,7 @@ Most classes that inherit from the <xref:System.Windows.Controls.Control> class 
 
 For more information about these base classes, see [WPF Content Model](wpf-content-model.md).
 
-## See also
+## Related content
 
 - [Styling and Templating](styles-templates-overview.md)
 - [Data binding overview](../data/index.md)
