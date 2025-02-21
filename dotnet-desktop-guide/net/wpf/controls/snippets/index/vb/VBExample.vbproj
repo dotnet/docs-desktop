@@ -1,0 +1,11 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <RootNamespace>Examples</RootNamespace>
+    <UseWpf>true</UseWpf>
+    <AssemblyName>Examples</AssemblyName>
+  </PropertyGroup>
+
+</Project>
