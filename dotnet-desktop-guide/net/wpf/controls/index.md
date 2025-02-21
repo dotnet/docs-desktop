@@ -120,7 +120,7 @@ Most classes that inherit from the <xref:System.Windows.Controls.Control> class 
 
 - <xref:System.Windows.Controls.HeaderedItemsControl>&mdash;Some examples of classes that inherit from this class are <xref:System.Windows.Controls.MenuItem>, <xref:System.Windows.Controls.TreeViewItem>, and <xref:System.Windows.Controls.ToolBar>.
 
-For more information about these base classes, see [WPF Content Model](wpf-content-model.md).
+<!--For more information about these base classes, see [WPF Content Model](wpf-content-model.md).-->
 
 ## Related content
 

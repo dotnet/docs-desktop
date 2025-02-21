@@ -291,7 +291,7 @@ namespace Examples
 
             // Assign the button to the grid container
             container.Children.Add(buttonSubmit);
-            // <Template>
+            // </Template>
 
             Window inputWindow = new()
             {

@@ -20,7 +20,7 @@
         <TextBox Grid.Row="1" Grid.Column="1" Name="LastName" Margin="2" />
 
         <Button Grid.Row="2" Grid.Column="0" Name="Reset" Margin="2">Reset</Button>
-        <!-- <ExampleTemplate> -->
+        <!-- <SnippetTemplate> -->
         <Button Grid.Row="2" Grid.Column="1" Name="Submit" Margin="2" Content="Submit">
             <Button.Template>
                 <ControlTemplate TargetType="Button">
@@ -50,6 +50,6 @@
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <!-- </ExampleTemplate> -->
+        <!-- </SnippetTemplate> -->
     </Grid>
 </Window>
