@@ -21,11 +21,11 @@ You can add a control to an app by using either Extensible Application Markup La
 
 :::image type="content" source="./media/index/xaml-example.png" alt-text="A screenshot of a WPF app with two text boxes labeled name and address. Two buttons are visible. One button is named 'Reset' and the other 'Submit.'":::
 
-This window has six controls: two labels, two text boxes, and two buttons, in XAML. All controls can be created similarly. Here's the XAML that creates a Window that matches the previous image:
+This window has six controls: two labels, two text boxes, and two buttons. XAML is used to create these controls, as demonstrated in the following snippet:
 
 :::code language="xaml" source="./snippets/index/csharp/ExampleApp.xaml":::
 
-The same Window can be created in code:
+All controls can be created similarly in XAML. The same window can be created in code:
 
 :::code language="csharp" source="./snippets/index/csharp/MainWindow.xaml.cs" id="ExampleAppCode":::
 
@@ -33,15 +33,15 @@ The same Window can be created in code:
 
 You can subscribe to a control's event by using either XAML or code, but you can only handle an event in code.
 
-In XAML, the event is set as an attribute on the element. You can't use the `<Element.Event>handler<Element.Event>` notation in XAML for events. The following snippet shows how to subscribe to the `Click` event of a <xref:System.Windows.Controls.Button>:
+In XAML, the event is set as an attribute on the element. You can't use the `<Element.Event>handler<Element.Event>` notation for events. The following snippet shows how to subscribe to the `Click` event of a <xref:System.Windows.Controls.Button>:
 
 :::code language="xaml" source="./snippets/index/csharp/ButtonClickEventExample.xaml" id="Event":::
 
 And here's how to do the same in code:
 
-:::code language="csharp" source="./snippets/index/csharp/ButtonClickEventExample.xaml.cs" id="Button":::
+:::code language="csharp" source="./snippets/index/csharp/MainWindow.xaml.cs" id="Event":::
 
-The following example handles the `Click` event of a <xref:System.Windows.Controls.Button>:
+The following snippet handles the `Click` event of a <xref:System.Windows.Controls.Button>:
 
 :::code language="csharp" source="./snippets/index/csharp/ButtonClickEventExample.xaml.cs" id="ClickHandler":::
 
@@ -63,7 +63,7 @@ And here's how to do the same in code:
 
 :::code language="csharp" source="./snippets/index/csharp/MainWindow.xaml.cs" id="Properties":::
 
-With this button applied to the previous example, the app now looks like the following image:
+The example window now looks like the following image:
 
 :::image type="content" source="./media/index/xaml-example-property.png" alt-text="A screenshot of a WPF app with two text boxes labeled name and address. Two buttons are visible. One button is named 'Reset' and the other 'Submit.' The 'Submit' button has a gradient background that transitions from a blue to a lighter blue.":::
 

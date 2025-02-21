@@ -13,6 +13,9 @@ namespace Examples
         private void ButtonClickEventExample_Click(object sender, RoutedEventArgs e) =>
             new ButtonClickEventExample().ShowDialog();
 
+        private void ButtonClickEventExampleByCode_Click(object sender, RoutedEventArgs e) =>
+            CreateEventWindow();
+
         private void ShowExampleAppByXaml_Click(object sender, RoutedEventArgs e) =>
             new ExampleApp().ShowDialog();
 
@@ -303,6 +306,60 @@ namespace Examples
             };
 
             inputWindow.Show();
+        }
+
+        private void CreateEventWindow()
+        {
+            Grid container = new() { Margin = new Thickness(5) };
+            container.RowDefinitions.Add(new RowDefinition());
+            container.RowDefinitions.Add(new RowDefinition());
+            container.RowDefinitions.Add(new RowDefinition());
+            container.ColumnDefinitions.Add(new ColumnDefinition());
+            container.ColumnDefinitions.Add(new ColumnDefinition());
+
+            Label labelName = new() { Content = "Enter your name:" };
+            container.Children.Add(labelName);
+
+            Label labelAddress = new() { Content = "Enter your address:" };
+            Grid.SetRow(labelAddress, 1);
+            container.Children.Add(labelAddress);
+
+            TextBox textboxName = new() { Margin = new Thickness(2) };
+            Grid.SetColumn(textboxName, 1);
+            container.Children.Add(textboxName);
+
+            TextBox textboxAddress = new() { Margin = new Thickness(2) };
+            Grid.SetRow(textboxAddress, 1);
+            Grid.SetColumn(textboxAddress, 1);
+            container.Children.Add(textboxAddress);
+
+            Button buttonReset = new() { Margin = new Thickness(2), Content = "Reset" };
+            Grid.SetRow(buttonReset, 2);
+            container.Children.Add(buttonReset);
+
+            // <Event>
+            Button buttonSubmit = new() { Margin = new Thickness(2), Content = "Submit" };
+            buttonSubmit.Click += Submit_Click;
+            // </Event>
+            Grid.SetColumn(buttonSubmit, 1);
+            Grid.SetRow(buttonSubmit, 2);
+            container.Children.Add(buttonSubmit);
+
+            Window inputWindow = new()
+            {
+                Title = "Input Record",
+                Height = double.NaN,
+                Width = 300,
+                SizeToContent = SizeToContent.Height,
+                Content = container
+            };
+
+            inputWindow.Show();
+        }
+
+        private void Submit_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Someone clicked the submit button.");
         }
     }
 }

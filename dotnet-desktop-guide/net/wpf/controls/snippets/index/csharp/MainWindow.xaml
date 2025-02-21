@@ -14,8 +14,9 @@
         </Style>
     </Window.Resources>
     <StackPanel Margin="5">
-        <Label>Click Event</Label>
-        <Button Click="ButtonClickEventExample_Click">Show Click Event Window</Button>
+        <Label>Click Event</Label> 
+        <Button Click="ButtonClickEventExample_Click">Show Click Event Window (XAML)</Button>
+        <Button Click="ButtonClickEventExampleByCode_Click">Show Click Event Window (Code)</Button>
         <Label>Example App</Label>
         <Button Click="ShowExampleAppByXaml_Click">Show ExampleApp (XAML)</Button>
         <Button Click="ShowExampleAppByCode_Click">Show ExampleApp (Code)</Button>

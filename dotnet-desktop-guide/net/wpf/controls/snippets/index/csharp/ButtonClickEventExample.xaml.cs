@@ -31,15 +31,5 @@ namespace Examples
         }
         // </ClickHandler>
 
-        private void Window_Loaded(object sender, RoutedEventArgs e)
-        {
-            // <Button>
-            Button submitButton = new();
-            submitButton.Content = "Submit";
-            submitButton.Click += Submit_Click;
-            // </Button>
-
-            ((StackPanel)Content).Children.Add(submitButton);
-        }
     }
 }
