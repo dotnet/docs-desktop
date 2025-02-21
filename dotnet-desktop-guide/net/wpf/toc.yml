@@ -47,6 +47,8 @@ items:
         href: windows/how-to-get-set-main-application-window.md
   - name: Controls
     items:
+    - name: Overview
+      href: controls/index.md
     - name: Styles and templates
       expanded: true
       items:
