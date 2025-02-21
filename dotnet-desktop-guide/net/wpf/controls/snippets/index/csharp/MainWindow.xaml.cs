@@ -280,7 +280,8 @@ namespace Examples
             // Load the XAML into a stream that can be parsed
             using MemoryStream stream = new(System.Text.Encoding.UTF8.GetBytes(xaml));
 
-            // Create a parser context and add the default namespace and the x namespace common to WPF XAML
+            // Create a parser context and add the default namespace and 
+            // the x namespace, which is common to WPF XAML
             System.Windows.Markup.ParserContext context = new();
             context.XmlnsDictionary.Add("", "http://schemas.microsoft.com/winfx/2006/xaml/presentation");
             context.XmlnsDictionary.Add("x", "http://schemas.microsoft.com/winfx/2006/xaml");
