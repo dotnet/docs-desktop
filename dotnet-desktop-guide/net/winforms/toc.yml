@@ -3,6 +3,10 @@ items:
   href: index.yml
 - name: What's new
   items:
+  - name: Overview
+    href: whats-new/index.md
+  - name: What's new in .NET 10 Preview
+    href: whats-new/net100.md
   - name: What's new in .NET 9.0
     href: whats-new/net90.md
   - name: What's new in .NET 8.0
