@@ -1,0 +1,36 @@
+﻿<Window x:Class="Examples.ButtonPropertyWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Input Record" Height="Auto" Width="300" SizeToContent="Height">
+    <Grid Margin="5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Label>Enter your name:</Label>
+        <TextBox Grid.Row="0" Grid.Column="1" Name="FirstName" Margin="2" />
+
+        <Label Grid.Row="1">Enter your address:</Label>
+        <TextBox Grid.Row="1" Grid.Column="1" Name="LastName" Margin="2" />
+
+        <Button Grid.Row="2" Grid.Column="0" Name="Reset" Margin="2">Reset</Button>
+        <!--<SnippetProperties>-->
+        <Button Grid.Row="2" Grid.Column="1" Name="Submit" Margin="2" Content="Submit">
+            <Button.FontSize>18</Button.FontSize>
+            <Button.FontWeight>Bold</Button.FontWeight>
+            <Button.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="#0073E6" Offset="0.0" />
+                    <GradientStop Color="#81D4FA" Offset="0.9" />
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <!--</SnippetProperties>-->
+    </Grid>
+</Window>

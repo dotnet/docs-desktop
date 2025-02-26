@@ -1,0 +1,30 @@
+﻿<Window x:Class="Examples.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:Examples"
+        Title="Window 1" SizeToContent="WidthAndHeight" MinWidth="250">
+    <Window.Resources>
+        <Style TargetType="{x:Type Button}">
+            <Style.Setters>
+                <Setter Property="Margin" Value="5" />
+            </Style.Setters>
+        </Style>
+    </Window.Resources>
+    <StackPanel Margin="5">
+        <Label>Click Event</Label> 
+        <Button Click="ButtonClickEventExample_Click">Show Click Event Window (XAML)</Button>
+        <Button Click="ButtonClickEventExampleByCode_Click">Show Click Event Window (Code)</Button>
+        <Label>Example App</Label>
+        <Button Click="ShowExampleAppByXaml_Click">Show ExampleApp (XAML)</Button>
+        <Button Click="ShowExampleAppByCode_Click">Show ExampleApp (Code)</Button>
+        <Label>Property</Label>
+        <Button Click="ShowButtonPropertyByXaml_Click">Show Button Property (XAML)</Button>
+        <Button Click="ShowButtonPropertyByCode_Click">Show Button Property (Code)</Button>
+        <Label>Style</Label>
+        <Button Click="ShowButtonStyleXaml_Click">Show Button Style (XAML)</Button>
+        <Button Click="ShowButtonStyleCode_Click">Show Button Style (Code)</Button>
+        <Label>Template</Label>
+        <Button Click="ShowButtonTemplateXaml_Click">Show Button Template (XAML)</Button>
+        <Button Click="ShowButtonTemplateCode_Click">Show Button Template (Code)</Button>
+    </StackPanel>
+</Window>
