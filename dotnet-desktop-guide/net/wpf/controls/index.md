@@ -11,7 +11,7 @@ helpviewer_keywords:
 
 #customer intent: As a developer, I want to understand WPF controls so that I know their capabilities, especially in ways they compare to other desktop technologies.
 --- 
-# What are Controls? (WPF .NET)
+# What are controls? (WPF .NET)
 
 Windows Presentation Foundation (WPF) ships with many of the common UI components that are used in almost every Windows app, such as <xref:System.Windows.Controls.Button>, <xref:System.Windows.Controls.Label>, <xref:System.Windows.Controls.TextBox>, <xref:System.Windows.Controls.Menu>, and <xref:System.Windows.Controls.ListBox>. Historically, these objects are referred to as controls. The term "control" is used loosely to mean any class that represents a visible object in an app. It's important to note that a class doesn't need to inherit from the <xref:System.Windows.Controls.Control> class to have a visible presence. Classes that inherit from the `Control` class contain a <xref:System.Windows.Controls.ControlTemplate>, which allows the consumer of a control to radically change the control's appearance without having to create a new subclass. This article discusses how controls (both those that do inherit from the `Control` class and those that don't) are commonly used in WPF.
 
@@ -30,7 +30,7 @@ All controls can be created similarly in XAML. The same window can be created in
 :::code language="csharp" source="./snippets/index/csharp/MainWindow.xaml.cs" id="ExampleAppCode":::
 :::code language="vb" source="./snippets/index/vb/MainWindow.xaml.vb" id="ExampleAppCode":::
 
-## Subscribing to Events
+## Subscribe to events
 
 You can subscribe to a control's event by using either XAML or code, but you can only handle an event in code.
 
@@ -71,7 +71,7 @@ The example window now looks like the following image:
 
 :::image type="content" source="./media/index/xaml-example-property.png" alt-text="A screenshot of a WPF app with two text boxes labeled name and address. Two buttons are visible. One button is named 'Reset' and the other 'Submit.' The 'Submit' button has a gradient background that transitions from a blue to a lighter blue.":::
 
-### Creating a Style for a Control
+### Create a style for a control
 
 WPF gives you extensive ability to specify the appearance of controls by creating a <xref:System.Windows.Style>, instead of setting properties on each control. `Style` definitions are typically defined in XAML in a <xref:System.Windows.ResourceDictionary>, such as the <xref:System.Windows.FrameworkElement.Resources%2A> property of a control or Window. Resources are applied to the scope in which they're declared. For more information, see [Overview of XAML resources](../systems/xaml-resources-overview.md).
 
@@ -90,7 +90,7 @@ The following image shows the style applied to the grid of the window, which cha
 
 Instead of applying the style to all controls of a specific type, they can also be assigned to specific controls by adding a key to the style in the resource dictionary, and referencing that key in the `Style` property of the control. For more information about styles, see [Styling and Templating](styles-templates-overview.md).
 
-### Creating a ControlTemplate
+### Create a ControlTemplate
 
 A `Style` allows you to set properties on multiple controls at a time, but sometimes you might want to customize the appearance of a control beyond what you can do with a <xref:System.Windows.Style>. Classes that inherit from the <xref:System.Windows.Controls.Control> class have a <xref:System.Windows.Controls.ControlTemplate>, which defines the structure and appearance of a control.
 
@@ -116,7 +116,7 @@ In the previous example, the `ControlTemplate` is applied to a single button. Ho
 
 For more information about how to take advantage of the unique features a template provides, see [Styling and Templating](styles-templates-overview.md).
 
-## Rich Content in Controls
+## Rich content in controls
 
 Most classes that inherit from the <xref:System.Windows.Controls.Control> class have the capacity to contain rich content. For example, a <xref:System.Windows.Controls.Label> can contain any object, such as a string, an <xref:System.Windows.Controls.Image>, or a <xref:System.Windows.Controls.Panel>. The following classes provide support for rich content and act as base classes for most of the controls in WPF:
 

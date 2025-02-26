@@ -49,6 +49,7 @@ items:
     items:
     - name: Overview
       href: controls/index.md
+      displayName: controls
     - name: Styles and templates
       expanded: true
       items:
