@@ -112,7 +112,7 @@ The following image shows what the template looks like when applied:
 
 :::image type="content" source="./media/index/xaml-example-template.png" alt-text="A screenshot of a WPF app with two text boxes labeled name and address. Two buttons are visible. One button is named 'Reset' and the other 'Submit.' The 'Submit' button has rounded corners and a peach color applied to it.":::
 
-In the previous example, the `ControlTemplate` is applied to a single button. However, a `ControlTemplate` can be assigned to a `Style` and applied to all buttons, like what was demonstrated in the [Creating a Style for a Control](#creating-a-style-for-a-control) section.
+In the previous example, the `ControlTemplate` is applied to a single button. However, a `ControlTemplate` can be assigned to a `Style` and applied to all buttons, like what was demonstrated in the [Create a style for a control](#create-a-style-for-a-control) section.
 
 For more information about how to take advantage of the unique features a template provides, see [Styling and Templating](styles-templates-overview.md).
 
