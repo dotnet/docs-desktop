@@ -1,0 +1,44 @@
+﻿<Window x:Class="ButtonStyleWindow"
+            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Input Record" Height="Auto" Width="300" SizeToContent="Height">
+    <Grid Margin="5">
+        <!-- <SnippetStyle> -->
+        <Grid.Resources>
+            <Style TargetType="{x:Type Button}">
+                <Style.Setters>
+                    <Setter Property="FontSize" Value="18" />
+                    <Setter Property="FontWeight" Value="Bold" />
+                    <Setter Property="Background">
+                        <Setter.Value>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#0073E6" Offset="0.0" />
+                                <GradientStop Color="#81D4FA" Offset="0.9" />
+                            </LinearGradientBrush>
+                        </Setter.Value>
+                    </Setter>
+                </Style.Setters>
+            </Style>
+        </Grid.Resources>
+        <!-- </SnippetStyle> -->
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Label>Enter your name:</Label>
+        <TextBox Grid.Row="0" Grid.Column="1" Name="FirstName" Margin="2" />
+
+        <Label Grid.Row="1">Enter your address:</Label>
+        <TextBox Grid.Row="1" Grid.Column="1" Name="LastName" Margin="2" />
+
+        <Button Grid.Row="2" Grid.Column="0" Name="Reset" Margin="2">Reset</Button>
+        <Button Grid.Row="2" Grid.Column="1" Name="Submit" Margin="2">Submit</Button>
+    </Grid>
+</Window>
