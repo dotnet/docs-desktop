@@ -183,15 +183,21 @@ items:
     - name: Application configuration
       items:
       - name: Migrate DPI settings
-        href: compiler-messages/wfo0003.md      
+        href: compiler-messages/wfo0003.md
     - name: Experimental
       items:
       - name: Dark mode
         href: compiler-messages/wfo5001.md
       - name: Async
         href: compiler-messages/wfo5002.md
+    - Name: Security
+      items:
+      - name: Property must configure designer serialization
+        href: compiler-messages/wfo1000.md
   - name: Errors
     items:
+    - name: WFO1000
+      href: compiler-messages/wfo1000.md
     - name: WFO5001
       href: compiler-messages/wfo5001.md
     - name: WFO5002
