@@ -1,44 +1,43 @@
 ---
 title: WFDEV003 warning
-description: Learn about Windows Forms compile-time warning WFDEV003.
-ms.date: 09/09/2022
+description: Learn about Windows Forms compile-time warning WFDEV003. 'DomainUpDown.DomainItemAccessibleObject' is obsolete. Use 'AccessibleObject' instead.
+ms.date: 03/04/2025
 ---
 # WFDEV003: DomainItemAccessibleObject should not be used
 
-Any reference to <xref:System.Windows.Forms.DomainUpDown.DomainItemAccessibleObject?displayProperty=fullName> will result in warning `WFDEV003`. This warning states that <xref:System.Windows.Forms.DomainUpDown.DomainItemAccessibleObject> is no longer used to provide accessible support for items in <xref:System.Windows.Forms.DomainUpDown> controls. This type was never intended for public use.
+**Version introduced:** .NET 7
 
-Previously, objects of this type were served to accessibility tools that navigated the hierarchy of a <xref:System.Windows.Forms.DomainUpDown> control. In .NET 7 and later versions, instances of type <xref:System.Windows.Forms.AccessibleObject> are used to represent items in a <xref:System.Windows.Forms.DomainUpDown> control for accessibility tools.
+Reference to <xref:System.Windows.Forms.DomainUpDown.DomainItemAccessibleObject?displayProperty=fullName> generates warning `WFDEV003` at compile time. This warning states that `DomainItemAccessibleObject` is no longer used to provide accessible support for items in <xref:System.Windows.Forms.DomainUpDown> controls. This type was never intended for public use.
 
-## Workarounds
+Previously, objects of this type were served to accessibility tools that navigated the hierarchy of a `DomainUpDown` control. In .NET 7 and later versions, instances of type <xref:System.Windows.Forms.AccessibleObject> are used to represent items in a `DomainUpDown` control for accessibility tools.
 
-Remove invocations of the public constructor for the <xref:System.Windows.Forms.DomainUpDown.DomainItemAccessibleObject> type. Use <xref:System.Windows.Forms.AccessibleObject?displayProperty=fullName> instead.
+## Workaround
+
+Replace references of <xref:System.Windows.Forms.DomainUpDown.DomainItemAccessibleObject?displayProperty=nameWithType> with <xref:System.Windows.Forms.AccessibleObject?displayProperty=fullName>.
 
 ## Suppress a warning
 
 If you must use the obsolete APIs, you can suppress the warning in code or in your project file.
 
-To suppress only a single violation, add preprocessor directives to your source file to disable and then re-enable the warning.
+Suppress the warning with either of the following methods:
 
-```csharp
-// Disable the warning.
-#pragma warning disable WFDEV003
+- Set the severity of the rule in the _.editorConfig_ file.
 
-// Code that uses obsolete API.
-// ...
+  ```ini
+  [*.{cs,vb}]
+  dotnet_diagnostic.WFDEV003.severity = none
+  ```
 
-// Re-enable the warning.
-#pragma warning restore WFDEV003
-```
+  For more information about editor config files, see [Configuration files for code analysis rules](/dotnet/fundamentals/code-analysis/configuration-files).
 
-To suppress all the `WFDEV003` warnings in your project, add a `<NoWarn>` property to your project file.
+- Add the following `PropertyGroup` to your project file to suppress the error:
 
-```xml
-<Project Sdk="Microsoft.NET.Sdk">
+  ```xml
   <PropertyGroup>
-   ...
-   <NoWarn>$(NoWarn);WFDEV003</NoWarn>
+      <NoWarn>$(NoWarn);WFDEV003</NoWarn>
   </PropertyGroup>
-</Project>
-```
+  ```
 
-For more information, see [Suppress warnings](obsoletions-overview.md#suppress-warnings).
+- Suppress the error in code with the `#pragma warning disable WFDEV003` directive.
+
+For more information, see [How to suppress code analysis warnings](/dotnet/fundamentals/code-analysis/suppress-warnings).

@@ -1,15 +1,15 @@
 ---
 title: WFDEV005 warning
 description: Learn about Windows Forms compile-time warning WFDEV005. 'Clipboard.GetData(string)' is obsolete. Use 'Clipboard.TryGetData<T>' methods instead.
-ms.date: 03/03/2025
+ms.date: 03/04/2025
 ---
 # WFDEV005: 'Clipboard.GetData(string)' is obsolete
 
-Using <xref:System.Windows.Forms.Clipboard.GetData(System.String)?displayProperty=nameWithType> generates warning `WFDEV005` at compile time. `Clipboard.GetData(System.String)` relies on `BinaryFormatter`, which is deprecated due to security reasons. For more information, see [Windows Forms migration guide for BinaryFormatter](/dotnet/standard/serialization/binaryformatter-migration-guide/winforms-applications).
-
 **Version introduced:** .NET 10 Preview 1
 
-## Workarounds
+Using <xref:System.Windows.Forms.Clipboard.GetData(System.String)?displayProperty=nameWithType> generates warning `WFDEV005` at compile time. `Clipboard.GetData(System.String)` relies on `BinaryFormatter`, which is deprecated due to security reasons. For more information, see [Windows Forms migration guide for BinaryFormatter](/dotnet/standard/serialization/binaryformatter-migration-guide/winforms-applications).
+
+## Workaround
 
 Replace references to `Clipboard.GetData` with <xref:System.Windows.Forms.Clipboard.TryGetData*?displayProperty=nameWithType>.
 

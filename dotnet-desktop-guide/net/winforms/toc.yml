@@ -196,16 +196,14 @@ items:
         href: compiler-messages/wfo1000.md
     - name: Obsoletions
       items:
-      - name: WParam, LParam, and Message.Result are obsolete
-        href: wfdev-diagnostics/wfac001.md
       - name: DomainUpDownAccessibleObject shouldn't be used
-        href: wfdev-diagnostics/wfac002.md
+        href: wfdev-diagnostics/wfdev002.md
       - name: DomainItemAccessibleObject shouldn't be used
-        href: wfdev-diagnostics/wfac003.md
+        href: wfdev-diagnostics/wfdev003.md
       - name: Clipboard.GetData(string) is obsolete
-        href: wfdev-diagnostics/wfac005.md
+        href: wfdev-diagnostics/wfdev005.md
       - name: Some controls are obsolete and are provided for compatibility
-        href: wfdev-diagnostics/wfac006.md
+        href: wfdev-diagnostics/wfdev006.md
   - name: Errors
     items:
     - name: WFO1000
@@ -214,6 +212,8 @@ items:
       href: compiler-messages/wfo5001.md
     - name: WFO5002
       href: compiler-messages/wfo5002.md
+    - name: WFDEV002
+      href: wfdev-diagnostics/wfdev002.md
     - name: WFAC001
       href: wfdev-diagnostics/wfac001.md
     - name: WFAC002
@@ -226,8 +226,6 @@ items:
       href: wfdev-diagnostics/wfac010.md
     - name: WFDEV001
       href: wfdev-diagnostics/wfdev001.md
-    - name: WFDEV002
-      href: wfdev-diagnostics/wfdev002.md
     - name: WFDEV003
       href: wfdev-diagnostics/wfdev003.md
     - name: WFDEV005

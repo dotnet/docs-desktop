@@ -1,13 +1,15 @@
 ---
 title: WFDEV001 warning
-description: Learn about the Windows Forms obsoletions that generate compile-time warning WFDEV001.
-ms.date: 09/09/2022
+description: Learn about Windows Forms compile-time warning WFDEV001. 'WParam', 'LParam', 'Result' are obsolete internally to Windows Forms.
+ms.date: 03/03/2025
 ---
 # WFDEV001: WParam, LParam, and Message.Result are obsolete
 
+**Version introduced:** .NET 7
+
 To reduce the risk of cast and overflow exceptions associated with <xref:System.IntPtr> on different platforms, the Windows Forms SDK disallows direct use of <xref:System.Windows.Forms.Message.WParam?displayProperty=nameWithType>, <xref:System.Windows.Forms.Message.LParam?displayProperty=nameWithType>, and <xref:System.Windows.Forms.Message.Result?displayProperty=nameWithType>. Projects that use the `DEBUG` build of the Windows Forms SDK and that reference <xref:System.Windows.Forms.Message.WParam>, <xref:System.Windows.Forms.Message.LParam>, or <xref:System.Windows.Forms.Message.Result> will fail to compile due to warning `WFDEV001`.
 
-## Workarounds
+## Workaround
 
 Update your code to use the new internal properties, either `WParamInternal`, `LParamInternal`, or `ResultInternal` depending on the situation.
 
@@ -15,28 +17,25 @@ Update your code to use the new internal properties, either `WParamInternal`, `L
 
 If you must use the obsolete APIs, you can suppress the warning in code or in your project file.
 
-To suppress only a single violation, add preprocessor directives to your source file to disable and then re-enable the warning.
+Suppress the warning with either of the following methods:
 
-```csharp
-// Disable the warning.
-#pragma warning disable WFDEV001
+- Set the severity of the rule in the _.editorConfig_ file.
 
-// Code that uses obsolete API.
-// ...
+  ```ini
+  [*.{cs,vb}]
+  dotnet_diagnostic.WFDEV001.severity = none
+  ```
 
-// Re-enable the warning.
-#pragma warning restore WFDEV001
-```
+  For more information about editor config files, see [Configuration files for code analysis rules](/dotnet/fundamentals/code-analysis/configuration-files).
 
-To suppress all the `WFDEV001` warnings in your project, add a `<NoWarn>` property to your project file.
+- Add the following `PropertyGroup` to your project file to suppress the error:
 
-```xml
-<Project Sdk="Microsoft.NET.Sdk">
+  ```xml
   <PropertyGroup>
-   ...
-   <NoWarn>$(NoWarn);WFDEV001</NoWarn>
+      <NoWarn>$(NoWarn);WFDEV001</NoWarn>
   </PropertyGroup>
-</Project>
-```
+  ```
 
-For more information, see [Suppress warnings](obsoletions-overview.md#suppress-warnings).
+- Suppress the error in code with the `#pragma warning disable WFDEV001` directive.
+
+For more information, see [How to suppress code analysis warnings](/dotnet/fundamentals/code-analysis/suppress-warnings).

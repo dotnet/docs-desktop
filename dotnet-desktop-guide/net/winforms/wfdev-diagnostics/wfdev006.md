@@ -1,9 +1,11 @@
 ---
 title: WFDEV006 warning
 description: Learn about Windows Forms compile-time warning WFDEV006. ContextMenu, DataGrid, MainMenu, Menu, StatusBar, ToolBar are obsolete. They're provided for binary compatibility with .NET Framework.
-ms.date: 03/03/2025
+ms.date: 03/04/2025
 ---
 # WFDEV006: ContextMenu, DataGrid, MainMenu, Menu, StatusBar, ToolBar are obsolete
+
+**Version introduced:** .NET 10 Preview 1
 
 Starting with .NET 10, some controls are provided for binary compatibility with .NET Framework, but they're marked as obsolete and aren't intended to be used directly from your code. Referencing one of the following controls warning `WFDEV006` at compile time:
 
@@ -16,9 +18,7 @@ Starting with .NET 10, some controls are provided for binary compatibility with 
 
 Starting with .NET 10, these controls are provided for binary compatibility with .NET Framework, but they're marked as obsolete and aren't intended to be used directly from your code. Use a replacement control instead. Referencing one of these controls warning `WFDEV006` at compile time.
 
-**Version introduced:** .NET 10 Preview 1
-
-## Workarounds
+## Workaround
 
 Replace references to these controls with their .NET counterparts:
 
