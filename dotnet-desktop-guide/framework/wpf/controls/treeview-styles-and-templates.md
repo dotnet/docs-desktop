@@ -28,8 +28,8 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 |VisualState Name|VisualStateGroup Name|Description|  
 |-|-|-|  
 |Valid|ValidationStates|The control uses the <xref:System.Windows.Controls.Validation> class and the <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `false`.|  
-|InvalidFocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` has the control has focus.|  
-|InvalidUnfocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` has the control does not have focus.|  
+|InvalidFocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` and the control has focus.|  
+|InvalidUnfocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` and the control does not have focus.|  
   
 ## TreeViewItem Parts  
 
@@ -37,7 +37,7 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
   
 |Part|Type|Description|  
 |----------|----------|-----------------|  
-|PART_Header|<xref:System.Windows.FrameworkElement>|A visual element that contains that header content of the <xref:System.Windows.Controls.TreeView> control.|  
+|PART_Header|<xref:System.Windows.FrameworkElement>|A visual element that contains the header content of the <xref:System.Windows.Controls.TreeView> control.|  
   
 ## TreeViewItem States  
 
