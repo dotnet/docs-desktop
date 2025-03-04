@@ -2,6 +2,11 @@
 title: WFAC002 error
 description: Learn about the Windows Forms code that generate compile-time error WFAC002.
 ms.date: 11/22/2023
+f1_keywords:
+  - "WFAC002"
+helpviewer_keywords:
+  - "WFAC002"
+# NOTE: This error/warning is part of the old diagnostic identifiers. It's not being maintained.
 ---
 # WFAC002: Unsupported property value
 

@@ -2,10 +2,16 @@
 title: WFDEV003 warning
 description: Learn about Windows Forms compile-time warning WFDEV003. 'DomainUpDown.DomainItemAccessibleObject' is obsolete. Use 'AccessibleObject' instead.
 ms.date: 03/04/2025
+f1_keywords:
+  - "WFDEV003"
+helpviewer_keywords:
+  - "WFDEV003"
 ---
-# WFDEV003: DomainItemAccessibleObject should not be used
+# Compiler Warning WFDEV003
 
 **Version introduced:** .NET 7
+
+> `DomainUpDown.DomainItemAccessibleObject` is obsolete. Use `AccessibleObject` instead.
 
 Reference to <xref:System.Windows.Forms.DomainUpDown.DomainItemAccessibleObject?displayProperty=fullName> generates warning `WFDEV003` at compile time. This warning states that `DomainItemAccessibleObject` is no longer used to provide accessible support for items in <xref:System.Windows.Forms.DomainUpDown> controls. This type was never intended for public use.
 

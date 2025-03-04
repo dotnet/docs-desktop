@@ -2,6 +2,11 @@
 title: WFAC001 error
 description: Learn about the Windows Forms code that generate compile-time error WFAC001.
 ms.date: 11/22/2023
+f1_keywords:
+  - "WFAC001"
+helpviewer_keywords:
+  - "WFAC001"
+# NOTE: This error/warning is part of the old diagnostic identifiers. It's not being maintained.
 ---
 # WFAC001: Only projects with 'OutputType=WindowsApplication' supported
 

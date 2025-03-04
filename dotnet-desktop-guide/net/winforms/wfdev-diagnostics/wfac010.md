@@ -2,6 +2,11 @@
 title: WFAC010 warning
 description: Learn about the Windows Forms DPI settings that generate compile-time warning WFAC010.
 ms.date: 11/15/2023
+f1_keywords:
+  - "WFAC010"
+helpviewer_keywords:
+  - "WFAC010"
+# NOTE: This error/warning is part of the old diagnostic identifiers. It's not being maintained.
 ---
 # WFAC010: Unsupported high DPI configuration.
 
