@@ -16,6 +16,9 @@ helpviewer_keywords:
 
 Library projects can't call the Windows Forms bootstrap code. Only projects with `OutputType` set to `Exe` or `WinExe` are supported, because only application projects define an application entry point, where the application bootstrap code must reside.
 
+> [!IMPORTANT]
+> Starting with .NET 9, this warning has changed to [WFO0001](../compiler-messages/wfo0001.md).
+
 ## How to fix
 
 Remove the call to `ApplicationConfiguration.Initialize` or change the project type to an executable.

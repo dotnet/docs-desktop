@@ -13,13 +13,13 @@ helpviewer_keywords:
 
 > `DomainUpDown.DomainItemAccessibleObject` is obsolete. Use `AccessibleObject` instead.
 
-Reference to <xref:System.Windows.Forms.DomainUpDown.DomainItemAccessibleObject?displayProperty=fullName> generates warning `WFDEV003` at compile time. This warning states that `DomainItemAccessibleObject` is no longer used to provide accessible support for items in <xref:System.Windows.Forms.DomainUpDown> controls. This type was never intended for public use.
+Reference to [DomainUpDown.DomainItemAccessibleObject](xref:system.windows.forms.domainupdown.domainitemaccessibleobject) generates warning `WFDEV003` at compile time. This warning states that `DomainItemAccessibleObject` is no longer used to provide accessible support for items in <xref:System.Windows.Forms.DomainUpDown> controls. This type was never intended for public use.
 
 Previously, objects of this type were served to accessibility tools that navigated the hierarchy of a `DomainUpDown` control. In .NET 7 and later versions, instances of type <xref:System.Windows.Forms.AccessibleObject> are used to represent items in a `DomainUpDown` control for accessibility tools.
 
 ## Workaround
 
-Replace references of <xref:System.Windows.Forms.DomainUpDown.DomainItemAccessibleObject?displayProperty=nameWithType> with <xref:System.Windows.Forms.AccessibleObject?displayProperty=fullName>.
+Replace references of [DomainUpDown.DomainItemAccessibleObject](xref:system.windows.forms.domainupdown.domainitemaccessibleobject) with <xref:System.Windows.Forms.AccessibleObject>.
 
 ## Suppress a warning
 

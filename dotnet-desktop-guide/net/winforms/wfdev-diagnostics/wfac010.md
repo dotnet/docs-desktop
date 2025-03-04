@@ -12,7 +12,7 @@ helpviewer_keywords:
 
 **Version introduced:** .NET 6
 
-> Remove high DPI settings from app.manifest and configure via `Application.SetHighDpiMode` API or `ApplicationHighDpiMode` project property.
+> Remove high DPI settings from app.manifest and configure via [`Application.SetHighDpiMode`](xref:System.Windows.Forms.Application.SetHighDpiMode(System.Windows.Forms.HighDpiMode)) API or `ApplicationHighDpiMode` project property.
 
 Windows Forms applications should specify application DPI-awareness via the [application configuration](../whats-new/net60.md#new-application-bootstrap) or with the <xref:System.Windows.Forms.Application.SetHighDpiMode%2A?displayProperty=nameWithType> API.
 
