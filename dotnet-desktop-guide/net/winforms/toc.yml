@@ -225,11 +225,11 @@ items:
         href: compiler-messages/wfo1000.md
     - name: Obsoletions
       items:
-      - name: DomainUpDownAccessibleObject shouldn't be used
+      - name: DomainUpDownAccessibleObject
         href: wfdev-diagnostics/wfdev002.md
-      - name: DomainItemAccessibleObject shouldn't be used
+      - name: DomainItemAccessibleObject
         href: wfdev-diagnostics/wfdev003.md
-      - name: Clipboard.GetData(string) is obsolete
+      - name: Clipboard.GetData(string)
         href: wfdev-diagnostics/wfdev005.md
       - name: Some controls are obsolete and are provided for compatibility
         href: wfdev-diagnostics/wfdev006.md
