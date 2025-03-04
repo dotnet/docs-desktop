@@ -8,9 +8,13 @@ helpviewer_keywords:
   - "WFAC001"
 # NOTE: This error/warning is part of the old diagnostic identifiers. It's not being maintained.
 ---
-# WFAC001: Only projects with 'OutputType=WindowsApplication' supported
+# Compiler Warning WFAC001
 
-Only projects with `OutputType` set to `Exe` or `WinExe` are supported, because only application projects define an application entry point, where the application bootstrap code must reside.
+**Version introduced:** .NET 6
+
+> Only projects with `OutputType=WindowsApplication` supported.
+
+Library projects can't call the Windows Forms bootstrap code. Only projects with `OutputType` set to `Exe` or `WinExe` are supported, because only application projects define an application entry point, where the application bootstrap code must reside.
 
 ## How to fix
 

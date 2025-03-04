@@ -180,6 +180,8 @@ items:
   items:
   - name: Errors
     items:
+    - name: WFO0001
+      href: compiler-messages/wfo0001.md
     - name: WFO1000
       href: compiler-messages/wfo1000.md
     - name: WFO5001
@@ -211,6 +213,8 @@ items:
     items:
     - name: Application configuration
       items:
+      - name: Application bootstrap code can't be called
+        href: compiler-messages/wfo0001.md
       - name: Migrate DPI settings
         href: compiler-messages/wfo0003.md
     - name: Experimental

@@ -8,7 +8,11 @@ helpviewer_keywords:
   - "WFAC002"
 # NOTE: This error/warning is part of the old diagnostic identifiers. It's not being maintained.
 ---
-# WFAC002: Unsupported property value
+# Compiler Warning WFAC002
+
+**Version introduced:** .NET 6
+
+> Unsupported property value.
 
 The related application configuration values defined in the project file are invalid. The following snippet demonstrates valid values:
 

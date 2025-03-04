@@ -8,7 +8,11 @@ helpviewer_keywords:
   - "WFAC010"
 # NOTE: This error/warning is part of the old diagnostic identifiers. It's not being maintained.
 ---
-# WFAC010: Unsupported high DPI configuration.
+# Compiler Warning WFAC010
+
+**Version introduced:** .NET 6
+
+> Remove high DPI settings from app.manifest and configure via `Application.SetHighDpiMode` API or `ApplicationHighDpiMode` project property.
 
 Windows Forms applications should specify application DPI-awareness via the [application configuration](../whats-new/net60.md#new-application-bootstrap) or with the <xref:System.Windows.Forms.Application.SetHighDpiMode%2A?displayProperty=nameWithType> API.
 
