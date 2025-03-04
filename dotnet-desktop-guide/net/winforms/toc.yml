@@ -198,11 +198,11 @@ items:
       items:
       - name: WParam, LParam, and Message.Result are obsolete
         href: wfdev-diagnostics/wfac001.md
-      - name: 'DomainUpDownAccessibleObject' shouldn't be used
+      - name: DomainUpDownAccessibleObject shouldn't be used
         href: wfdev-diagnostics/wfac002.md
-      - name: 'DomainItemAccessibleObject' shouldn't be used
+      - name: DomainItemAccessibleObject shouldn't be used
         href: wfdev-diagnostics/wfac003.md
-      - name: 'Clipboard.GetData(string)' is obsolete
+      - name: Clipboard.GetData(string) is obsolete
         href: wfdev-diagnostics/wfac005.md
       - name: Some controls are obsolete and are provided for compatibility
         href: wfdev-diagnostics/wfac006.md
