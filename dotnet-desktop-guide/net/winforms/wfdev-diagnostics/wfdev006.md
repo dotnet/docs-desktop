@@ -7,7 +7,7 @@ ms.date: 03/04/2025
 
 **Version introduced:** .NET 10 Preview 1
 
-Starting with .NET 10, some controls are provided for binary compatibility with .NET Framework, but they're marked as obsolete and aren't intended to be used directly from your code. Referencing one of the following controls warning `WFDEV006` at compile time:
+Starting with .NET 10, some controls are provided for binary compatibility with .NET Framework, but they're marked as obsolete and aren't intended to be used directly from your code. Referencing one of the following controls generates warning `WFDEV006` at compile time:
 
 - <xref:System.Windows.Forms.ContextMenu>
 - <xref:System.Windows.Forms.DataGrid>

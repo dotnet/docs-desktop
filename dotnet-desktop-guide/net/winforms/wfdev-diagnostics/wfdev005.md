@@ -7,7 +7,7 @@ ms.date: 03/04/2025
 
 **Version introduced:** .NET 10 Preview 1
 
-Using <xref:System.Windows.Forms.Clipboard.GetData(System.String)?displayProperty=nameWithType> generates warning `WFDEV005` at compile time. `Clipboard.GetData(System.String)` relies on `BinaryFormatter`, which is deprecated due to security reasons. For more information, see [Windows Forms migration guide for BinaryFormatter](/dotnet/standard/serialization/binaryformatter-migration-guide/winforms-applications).
+Using <xref:System.Windows.Forms.Clipboard.GetData(System.String)?displayProperty=nameWithType> generates warning `WFDEV005` at compile time. `Clipboard.GetData(System.String)` relies on `BinaryFormatter`, which is deprecated for security reasons. For more information, see [Windows Forms migration guide for BinaryFormatter](/dotnet/standard/serialization/binaryformatter-migration-guide/winforms-applications).
 
 ## Workaround
 

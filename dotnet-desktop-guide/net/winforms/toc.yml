@@ -178,32 +178,6 @@ items:
       href: data/how-to-synchronize-multiple-controls.md
 - name: Compiler warnings and errors
   items:
-  - name: Type
-    items:
-    - name: Application configuration
-      items:
-      - name: Migrate DPI settings
-        href: compiler-messages/wfo0003.md
-    - name: Experimental
-      items:
-      - name: Dark mode
-        href: compiler-messages/wfo5001.md
-      - name: Async
-        href: compiler-messages/wfo5002.md
-    - name: Security
-      items:
-      - name: Property must configure designer serialization
-        href: compiler-messages/wfo1000.md
-    - name: Obsoletions
-      items:
-      - name: DomainUpDownAccessibleObject shouldn't be used
-        href: wfdev-diagnostics/wfdev002.md
-      - name: DomainItemAccessibleObject shouldn't be used
-        href: wfdev-diagnostics/wfdev003.md
-      - name: Clipboard.GetData(string) is obsolete
-        href: wfdev-diagnostics/wfdev005.md
-      - name: Some controls are obsolete and are provided for compatibility
-        href: wfdev-diagnostics/wfdev006.md
   - name: Errors
     items:
     - name: WFO1000
@@ -232,4 +206,31 @@ items:
       href: wfdev-diagnostics/wfdev005.md
     - name: WFDEV006
       href: wfdev-diagnostics/wfdev006.md
+  - name: By category
+    expanded: true
+    items:
+    - name: Application configuration
+      items:
+      - name: Migrate DPI settings
+        href: compiler-messages/wfo0003.md
+    - name: Experimental
+      items:
+      - name: Dark mode
+        href: compiler-messages/wfo5001.md
+      - name: Async
+        href: compiler-messages/wfo5002.md
+    - name: Security
+      items:
+      - name: Property must configure designer serialization
+        href: compiler-messages/wfo1000.md
+    - name: Obsoletions
+      items:
+      - name: DomainUpDownAccessibleObject shouldn't be used
+        href: wfdev-diagnostics/wfdev002.md
+      - name: DomainItemAccessibleObject shouldn't be used
+        href: wfdev-diagnostics/wfdev003.md
+      - name: Clipboard.GetData(string) is obsolete
+        href: wfdev-diagnostics/wfdev005.md
+      - name: Some controls are obsolete and are provided for compatibility
+        href: wfdev-diagnostics/wfdev006.md
  

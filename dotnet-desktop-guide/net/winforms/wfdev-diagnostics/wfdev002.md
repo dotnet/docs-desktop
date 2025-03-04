@@ -7,7 +7,7 @@ ms.date: 03/04/2025
 
 **Version introduced:** .NET 7
 
-Reference to <xref:System.Windows.Forms.DomainUpDown.DomainUpDownAccessibleObject?displayProperty=fullName> generates warning `WFDEV002` at compile time. This error states that `DomainUpDownAccessibleObject` is no longer used to provide accessible support for <xref:System.Windows.Forms.DomainUpDown> controls. The `DomainUpDownAccessibleObject` type was never intended for public use.
+Reference to <xref:System.Windows.Forms.DomainUpDown.DomainUpDownAccessibleObject?displayProperty=nameWithType> generates warning `WFDEV002` at compile time. This error states that `DomainUpDownAccessibleObject` is no longer used to provide accessible support for `DomainUpDown` controls. The `DomainUpDownAccessibleObject` type was never intended for public use.
 
 ## Workaround
 
