@@ -13,7 +13,7 @@ helpviewer_keywords:
 
 > `ContextMenu`, `DataGrid`, `MainMenu`, `Menu`, `StatusBar`, `ToolBar` are obsolete. They're provided for binary compatibility with .NET Framework.
 
-Starting with .NET 10, some controls are provided for binary compatibility with .NET Framework, but they're marked as obsolete and aren't intended to be used directly from your code. Referencing one of the following controls generates warning `WFDEV006` at compile time:
+Starting with .NET 10, some controls are provided for binary compatibility with .NET Framework, but they're marked as obsolete and aren't intended to be used directly from your code. They can't be instantiated. Referencing one of the following controls generates warning `WFDEV006` at compile time:
 
 - <xref:System.Windows.Forms.ContextMenu>
 - <xref:System.Windows.Forms.DataGrid>
@@ -21,6 +21,8 @@ Starting with .NET 10, some controls are provided for binary compatibility with 
 - <xref:System.Windows.Forms.Menu>
 - <xref:System.Windows.Forms.StatusBar>
 - <xref:System.Windows.Forms.ToolBar>
+
+In prior versions of .NET, referencing a .NET Framework library that used these types would result in an exception being thrown because .NET didn't provide these types. Starting with .NET 10, these types exist to improve compatibility with older .NET Framework libraries that can't be upgraded.
 
 ## Workaround
 
@@ -36,6 +38,8 @@ Replace references to these controls with their newer counterparts:
 | `ToolBar`        | `ToolStrip`                                    |
 
 ## Suppress a warning
+
+If you must reference the obsolete APIs, for example to run reflection on them, you can suppress the warning in code or in your project file. However, these types can't be instantiated and are only provided for compatibility.
 
 Suppress the warning with either of the following methods:
 
