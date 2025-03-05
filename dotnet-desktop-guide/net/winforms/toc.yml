@@ -206,6 +206,8 @@ items:
       href: wfdev-diagnostics/wfdev001.md
     - name: WFDEV003
       href: wfdev-diagnostics/wfdev003.md
+    - name: WFDEV004
+      href: wfdev-diagnostics/wfdev004.md
     - name: WFDEV005
       href: wfdev-diagnostics/wfdev005.md
     - name: WFDEV006
@@ -237,6 +239,8 @@ items:
         href: wfdev-diagnostics/wfdev002.md
       - name: DomainItemAccessibleObject
         href: wfdev-diagnostics/wfdev003.md
+      - name: Form Closed and Closing methods and events
+        href: wfdev-diagnostics/wfdev004.md
       - name: Clipboard.GetData(string)
         href: wfdev-diagnostics/wfdev005.md
       - name: Some controls are obsolete and are provided for compatibility
