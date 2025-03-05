@@ -178,24 +178,20 @@ items:
       href: data/how-to-synchronize-multiple-controls.md
 - name: Compiler warnings and errors
   items:
-  - name: Type
-    items:
-    - name: Application configuration
-      items:
-      - name: Migrate DPI settings
-        href: compiler-messages/wfo0003.md      
-    - name: Experimental
-      items:
-      - name: Dark mode
-        href: compiler-messages/wfo5001.md
-      - name: Async
-        href: compiler-messages/wfo5002.md
   - name: Errors
     items:
+    - name: WFO0001
+      href: compiler-messages/wfo0001.md
+    - name: WFO0002
+      href: compiler-messages/wfo0002.md
+    - name: WFO1000
+      href: compiler-messages/wfo1000.md
     - name: WFO5001
       href: compiler-messages/wfo5001.md
     - name: WFO5002
       href: compiler-messages/wfo5002.md
+    - name: WFDEV002
+      href: wfdev-diagnostics/wfdev002.md
     - name: WFAC001
       href: wfdev-diagnostics/wfac001.md
     - name: WFAC002
@@ -208,8 +204,45 @@ items:
       href: wfdev-diagnostics/wfac010.md
     - name: WFDEV001
       href: wfdev-diagnostics/wfdev001.md
-    - name: WFDEV002
-      href: wfdev-diagnostics/wfdev002.md
     - name: WFDEV003
       href: wfdev-diagnostics/wfdev003.md
+    - name: WFDEV004
+      href: wfdev-diagnostics/wfdev004.md
+    - name: WFDEV005
+      href: wfdev-diagnostics/wfdev005.md
+    - name: WFDEV006
+      href: wfdev-diagnostics/wfdev006.md
+  - name: By category
+    expanded: true
+    items:
+    - name: Application configuration
+      items:
+      - name: Application bootstrap code can't be called
+        href: compiler-messages/wfo0001.md
+      - name: Unsupported property value on project properties
+        href: compiler-messages/wfo0002.md
+      - name: Migrate DPI settings
+        href: compiler-messages/wfo0003.md
+    - name: Experimental
+      items:
+      - name: Dark mode
+        href: compiler-messages/wfo5001.md
+      - name: Async
+        href: compiler-messages/wfo5002.md
+    - name: Security
+      items:
+      - name: Property must configure designer serialization
+        href: compiler-messages/wfo1000.md
+    - name: Obsoletions
+      items:
+      - name: DomainUpDownAccessibleObject
+        href: wfdev-diagnostics/wfdev002.md
+      - name: DomainItemAccessibleObject
+        href: wfdev-diagnostics/wfdev003.md
+      - name: Form Closed and Closing methods and events
+        href: wfdev-diagnostics/wfdev004.md
+      - name: Clipboard.GetData(string)
+        href: wfdev-diagnostics/wfdev005.md
+      - name: Some controls are obsolete and are provided for compatibility
+        href: wfdev-diagnostics/wfdev006.md
  

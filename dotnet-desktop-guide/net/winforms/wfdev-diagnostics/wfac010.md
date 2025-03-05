@@ -1,9 +1,18 @@
 ---
 title: WFAC010 warning
 description: Learn about the Windows Forms DPI settings that generate compile-time warning WFAC010.
-ms.date: 11/15/2023
+ms.date: 03/05/2025
+f1_keywords:
+  - "WFAC010"
+helpviewer_keywords:
+  - "WFAC010"
+# NOTE: This error/warning is part of the old diagnostic identifiers. It's not being maintained.
 ---
-# WFAC010: Unsupported high DPI configuration.
+# Compiler Warning WFAC010
+
+**Version introduced:** .NET 6
+
+> Remove high DPI settings from app.manifest and configure via [`Application.SetHighDpiMode`](xref:System.Windows.Forms.Application.SetHighDpiMode(System.Windows.Forms.HighDpiMode)) API or `ApplicationHighDpiMode` project property.
 
 Windows Forms applications should specify application DPI-awareness via the [application configuration](../whats-new/net60.md#new-application-bootstrap) or with the <xref:System.Windows.Forms.Application.SetHighDpiMode%2A?displayProperty=nameWithType> API.
 
@@ -88,32 +97,25 @@ Namespace My
 End Namespace
 ```
 
-## Suppress a warning
+## Manage the warning
 
-If you must use the obsolete APIs, you can suppress the warning in code or in your project file.
+Suppress the warning with either of the following methods:
 
-To suppress only a single violation, add preprocessor directives to your source file to disable and then re-enable the warning.
+- Set the severity of the rule in the _.editorConfig_ file.
 
-```csharp
-// Disable the warning.
-#pragma warning disable WFAC010
+  ```ini
+  [*.{cs,vb}]
+  dotnet_diagnostic.WFAC010.severity = none
+  ```
 
-// Code that uses the API.
-// ...
+  For more information about editor config files, see [Configuration files for code analysis rules](/dotnet/fundamentals/code-analysis/configuration-files).
 
-// Re-enable the warning.
-#pragma warning restore WFAC010
-```
+- Add the following `PropertyGroup` to your project file:
 
-To suppress all the `WFAC010` warnings in your project, add a `<NoWarn>` property to your project file.
-
-```xml
-<Project Sdk="Microsoft.NET.Sdk">
+  ```xml
   <PropertyGroup>
-   ...
-   <NoWarn>$(NoWarn);WFAC010</NoWarn>
+      <NoWarn>$(NoWarn);WFAC010</NoWarn>
   </PropertyGroup>
-</Project>
-```
+  ```
 
-For more information, see [Suppress warnings](obsoletions-overview.md#suppress-warnings).
+- Suppress in code with the `#pragma warning disable WFAC010` directive.
