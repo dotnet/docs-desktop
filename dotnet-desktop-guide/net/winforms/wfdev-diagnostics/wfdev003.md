@@ -34,7 +34,7 @@ Suppress the warning with either of the following methods:
 
   For more information about editor config files, see [Configuration files for code analysis rules](/dotnet/fundamentals/code-analysis/configuration-files).
 
-- Add the following `PropertyGroup` to your project file to suppress the error:
+- Add the following `PropertyGroup` to your project file:
 
   ```xml
   <PropertyGroup>

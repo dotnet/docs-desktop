@@ -1,7 +1,7 @@
 ---
 title: WFAC010 warning
 description: Learn about the Windows Forms DPI settings that generate compile-time warning WFAC010.
-ms.date: 11/15/2023
+ms.date: 03/05/2025
 f1_keywords:
   - "WFAC010"
 helpviewer_keywords:
@@ -110,7 +110,7 @@ Suppress the warning with either of the following methods:
 
   For more information about editor config files, see [Configuration files for code analysis rules](/dotnet/fundamentals/code-analysis/configuration-files).
 
-- Add the following `PropertyGroup` to your project file to suppress the error:
+- Add the following `PropertyGroup` to your project file:
 
   ```xml
   <PropertyGroup>
