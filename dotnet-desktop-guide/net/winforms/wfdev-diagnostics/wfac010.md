@@ -17,7 +17,7 @@ helpviewer_keywords:
 Windows Forms applications should specify application DPI-awareness via the [application configuration](../whats-new/net60.md#new-application-bootstrap) or with the <xref:System.Windows.Forms.Application.SetHighDpiMode%2A?displayProperty=nameWithType> API.
 
 > [!IMPORTANT]
-> Starting with .NET 9, this warning has changed to [WFAC010](../compiler-messages/WFAC010.md).
+> Starting with .NET 9, this warning has changed to [WFO0003](../compiler-messages/wfo0003.md).
 
 ## Workarounds
 
