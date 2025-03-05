@@ -24,7 +24,7 @@ Starting with .NET 10, some controls are provided for binary compatibility with 
 
 ## Workaround
 
-Replace references to these controls with their .NET counterparts:
+Replace references to these controls with their newer counterparts:
 
 | Original control | New control                                    |
 |------------------|------------------------------------------------|
