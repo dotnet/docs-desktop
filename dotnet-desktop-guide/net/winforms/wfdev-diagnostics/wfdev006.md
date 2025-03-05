@@ -22,8 +22,6 @@ Starting with .NET 10, some controls are provided for binary compatibility with 
 - <xref:System.Windows.Forms.StatusBar>
 - <xref:System.Windows.Forms.ToolBar>
 
-Starting with .NET 10, these controls are provided for binary compatibility with .NET Framework, but they're marked as obsolete and aren't intended to be used directly from your code. Use a replacement control instead. Referencing one of these controls warning `WFDEV006` at compile time.
-
 ## Workaround
 
 Replace references to these controls with their .NET counterparts:
@@ -38,8 +36,6 @@ Replace references to these controls with their .NET counterparts:
 | `ToolBar`        | `ToolStrip`                                    |
 
 ## Suppress a warning
-
-If you must use the obsolete APIs, you can suppress the warning in code or in your project file.
 
 Suppress the warning with either of the following methods:
 

@@ -12,6 +12,9 @@ helpviewer_keywords:
 
 **Version introduced:** .NET 7
 
+> [!IMPORTANT]
+> This article is intended for those maintaining Windows Forms. This warning doesn't apply to using Windows Forms.
+
 To reduce the risk of cast and overflow exceptions associated with <xref:System.IntPtr> on different platforms, the Windows Forms SDK disallows direct use of <xref:System.Windows.Forms.Message.WParam?displayProperty=nameWithType>, <xref:System.Windows.Forms.Message.LParam?displayProperty=nameWithType>, and <xref:System.Windows.Forms.Message.Result?displayProperty=nameWithType>. Projects that use the `DEBUG` build of the Windows Forms SDK and that reference <xref:System.Windows.Forms.Message.WParam>, <xref:System.Windows.Forms.Message.LParam>, or <xref:System.Windows.Forms.Message.Result> will fail to compile due to warning `WFDEV001`.
 
 ## Workaround

@@ -13,15 +13,27 @@ helpviewer_keywords:
 
 > `Clipboard.GetData(string)` is obsolete. Use `Clipboard.TryGetData<T>` methods instead.
 
-Using <xref:System.Windows.Forms.Clipboard.GetData(System.String)?displayProperty=nameWithType> generates warning `WFDEV005` at compile time. `Clipboard.GetData(System.String)` relies on `BinaryFormatter`, which is deprecated for security reasons. For more information, see [Windows Forms migration guide for BinaryFormatter](/dotnet/standard/serialization/binaryformatter-migration-guide/winforms-applications).
+-or-
+
+> `DataObject.GetData` methods are obsolete. Use the corresponding `DataObject.TryGetData<T>` instead.
+
+-or-
+
+> `ClipboardProxy.GetData(As String)` method is obsolete. Use `ClipboardProxy.TryGetData(Of T)(As String, As T)` instead.
+
+Using <xref:System.Windows.Forms.Clipboard.GetData(System.String)?displayProperty=nameWithType>, <xref:System.Windows.DataObject.GetData*?displayProperty=nameWithType>, or <xref:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetData(System.String)?displayProperty=nameWithType>, generates warning `WFDEV005` at compile time. These methods rely on `BinaryFormatter`, which is deprecated for security reasons. For more information, see [Windows Forms migration guide for BinaryFormatter](/dotnet/standard/serialization/binaryformatter-migration-guide/winforms-applications).
 
 ## Workaround
 
-Replace references to `Clipboard.GetData` with <xref:System.Windows.Forms.Clipboard.TryGetData*?displayProperty=nameWithType>.
+Replace references to these methods with ones that don't use `BinaryFormatter`.
+
+| Original method                                                                                            | Replacement method                                                                              |
+|------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
+| <xref:System.Windows.Forms.Clipboard.GetData(System.String)?displayProperty=nameWithType>                  | <xref:System.Windows.Forms.Clipboard.TryGetData*?displayProperty=nameWithType>                  |
+| <xref:System.Windows.DataObject.GetData*?displayProperty=nameWithType>                                     | <xref:System.Windows.Forms.DataObject.TryGetData*?displayProperty=nameWithType>                 |
+| <xref:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetData(System.String)?displayProperty=nameWithType> | <xref:Microsoft.VisualBasic.MyServices.ClipboardProxy.TryGetData*?displayProperty=nameWithType> |
 
 ## Suppress a warning
-
-If you must use the obsolete APIs, you can suppress the warning in code or in your project file.
 
 Suppress the warning with either of the following methods:
 

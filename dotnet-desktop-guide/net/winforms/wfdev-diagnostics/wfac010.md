@@ -17,7 +17,7 @@ helpviewer_keywords:
 Windows Forms applications should specify application DPI-awareness via the [application configuration](../whats-new/net60.md#new-application-bootstrap) or with the <xref:System.Windows.Forms.Application.SetHighDpiMode%2A?displayProperty=nameWithType> API.
 
 > [!IMPORTANT]
-> Starting with .NET 9, this warning has changed to [WFO0003](../compiler-messages/wfo0003.md).
+> Starting with .NET 9, this warning has changed to [WFAC010](../compiler-messages/WFAC010.md).
 
 ## Workarounds
 
@@ -97,32 +97,25 @@ Namespace My
 End Namespace
 ```
 
-## Suppress a warning
+## Manage the warning
 
-If you must use the obsolete APIs, you can suppress the warning in code or in your project file.
+Suppress the warning with either of the following methods:
 
-To suppress only a single violation, add preprocessor directives to your source file to disable and then re-enable the warning.
+- Set the severity of the rule in the _.editorConfig_ file.
 
-```csharp
-// Disable the warning.
-#pragma warning disable WFAC010
+  ```ini
+  [*.{cs,vb}]
+  dotnet_diagnostic.WFAC010.severity = none
+  ```
 
-// Code that uses the API.
-// ...
+  For more information about editor config files, see [Configuration files for code analysis rules](/dotnet/fundamentals/code-analysis/configuration-files).
 
-// Re-enable the warning.
-#pragma warning restore WFAC010
-```
+- Add the following `PropertyGroup` to your project file to suppress the error:
 
-To suppress all the `WFAC010` warnings in your project, add a `<NoWarn>` property to your project file.
-
-```xml
-<Project Sdk="Microsoft.NET.Sdk">
+  ```xml
   <PropertyGroup>
-   ...
-   <NoWarn>$(NoWarn);WFAC010</NoWarn>
+      <NoWarn>$(NoWarn);WFAC010</NoWarn>
   </PropertyGroup>
-</Project>
-```
+  ```
 
-For more information, see [Suppress warnings](obsoletions-overview.md#suppress-warnings).
+- Suppress the error in code with the `#pragma warning disable WFAC010` directive.

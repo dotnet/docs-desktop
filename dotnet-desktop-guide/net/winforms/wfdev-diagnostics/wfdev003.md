@@ -23,8 +23,6 @@ Replace references of [DomainUpDown.DomainItemAccessibleObject](xref:system.wind
 
 ## Suppress a warning
 
-If you must use the obsolete APIs, you can suppress the warning in code or in your project file.
-
 Suppress the warning with either of the following methods:
 
 - Set the severity of the rule in the _.editorConfig_ file.
