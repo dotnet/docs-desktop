@@ -169,6 +169,8 @@
         "framework/wpf/**/**.md": "conceptual",
         "net/winforms/**/**.md": "conceptual",
         "net/wpf/**/**.md": "conceptual",
+        "net/winforms/compiler-messages/**.md": "error-reference",
+        "net/winforms/wfdev-diagnostics/**.md": "error-reference",
         "xaml-services/**/*.md": "reference",
         "**/*how-to*.md": "how-to",
         "**/*overview*.md": "overview"
