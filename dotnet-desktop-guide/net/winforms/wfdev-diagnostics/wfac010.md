@@ -118,4 +118,4 @@ Suppress the warning with either of the following methods:
   </PropertyGroup>
   ```
 
-- Suppress the error in code with the `#pragma warning disable WFAC010` directive.
+- Suppress in code with the `#pragma warning disable WFAC010` directive.

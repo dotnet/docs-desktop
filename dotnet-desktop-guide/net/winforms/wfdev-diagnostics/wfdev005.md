@@ -54,6 +54,6 @@ Suppress the warning with either of the following methods:
   </PropertyGroup>
   ```
 
-- Suppress the error in code with the `#pragma warning disable WFDEV005` directive.
+- Suppress in code with the `#pragma warning disable WFDEV005` directive.
 
 For more information, see [How to suppress code analysis warnings](/dotnet/fundamentals/code-analysis/suppress-warnings).
