@@ -51,6 +51,14 @@ body:
       required: true
 
   - type: input
+    id: version_introduced
+    attributes:
+      label: Version Introduced
+      description: What version of .NET was this introduced with? (ex: 8 or something like 10 Preview 3)
+    validations:
+      required: true
+
+  - type: input
     id: rule_id
     attributes:
       label: Rule ID
