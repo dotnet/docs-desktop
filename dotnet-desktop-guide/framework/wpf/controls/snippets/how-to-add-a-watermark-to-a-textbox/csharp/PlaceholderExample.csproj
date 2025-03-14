@@ -7,7 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Resource Include="textboxbackground.gif" />
+    <PackageReference Include="Microsoft.Xaml.Behaviors.Wpf" Version="1.1.135" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Design" />
   </ItemGroup>
 
 </Project>
