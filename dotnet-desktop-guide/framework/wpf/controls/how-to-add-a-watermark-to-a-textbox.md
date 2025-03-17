@@ -80,7 +80,7 @@ The <xref:System.Windows.Documents.Adorner> is a visual that's bound to a contro
     An adorner inherits from the <xref:System.Windows.Documents.Adorner> class. This particular adorner overrides the <xref:System.Windows.UIElement.OnRender(System.Windows.Media.DrawingContext)> method to draw the placeholder text. Let's breakdown the code:
 
     - First, check that the placeholder text exists by calling `TextBoxHelper.GetPlaceholder(textBoxControl)`.
-    - A <xref:System.Windows.Media.FormattedText> object is created. This object contains all of the information about what text is drawn on the visual.
+    - Create a <xref:System.Windows.Media.FormattedText> object. This object contains all of the information about what text is drawn on the visual.
     - Both the <xref:System.Windows.Media.FormattedText.MaxTextWidth?displayProperty=nameWithType> and <xref:System.Windows.Media.FormattedText.MaxTextHeight?displayProperty=nameWithType> properties are set to the region of the control. They're also set a minimum value of 10 to make sure the `FormattedText` object is valid.
     - The `renderingOffset` stores the position of the drawn text.
     - Use the `PART_ContentHost` If the control's template declares it. This part represents where the text is drawn on the control's template. If that part is found, modify the `renderingOffset` to account for its position.
