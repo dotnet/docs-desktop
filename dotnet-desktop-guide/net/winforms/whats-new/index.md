@@ -15,7 +15,7 @@ Each .NET release introduces a new version of Windows Forms (WinForms). This art
 This section describes the main changes to WinForms for .NET 10 Preview.
 
 - [Clipboard changes](net100.md#clipboard-changes)
-- [Designer improvements](net100.md#designer-improvements)
+- [Custom designer improvements](net100.md#custom-designer-improvements)
 
 ## .NET 9
 
