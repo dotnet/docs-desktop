@@ -70,7 +70,7 @@ The <xref:System.Windows.Documents.Adorner> is a visual that's bound to a contro
     :::code language="csharp" source="./snippets/how-to-add-a-watermark-to-a-textbox/csharp/TextBoxHelper.cs" id="GetOrCreateAdorner":::
     :::code language="vb" source="./snippets/how-to-add-a-watermark-to-a-textbox/vb/TextBoxHelper.vb" id="GetOrCreateAdorner":::
 
-    This method provides a safe way to either add or retrieve the <xref:System.Windows.Documents.Adorner>. Why do you need to exercise caution around creating the adorner? Adorners are added to the control's <xref:System.Windows.Documents.AdornerLayer>, which might not exist. When a XAML attached property is applied to a control, the control's template hasn't yet been applied to create the visual tree, so the adorner layer doesn't exist. The adorner layer must be retrieved after the control is loaded. The adorner layer might also be missing if a template that omits the adorner layer is applied to the control.
+    This method provides a safe way to either add or retrieve the <xref:System.Windows.Documents.Adorner>. Adorners require extra safety because they're added to the control's <xref:System.Windows.Documents.AdornerLayer>, which might not exist. When a XAML attached property is applied to a control, the control's template hasn't yet been applied to create the visual tree, so the adorner layer doesn't exist. The adorner layer must be retrieved after the control is loaded. The adorner layer might also be missing if a template that omits the adorner layer is applied to the control.
 
 01. Add a child class named `PlaceholderAdorner` to the `TextBoxHelper` class.
 
@@ -79,11 +79,11 @@ The <xref:System.Windows.Documents.Adorner> is a visual that's bound to a contro
 
     An adorner inherits from the <xref:System.Windows.Documents.Adorner> class. This particular adorner overrides the <xref:System.Windows.UIElement.OnRender(System.Windows.Media.DrawingContext)> method to draw the placeholder text. Let's breakdown the code:
 
-    - The first important task of the code is to check that the placeholder text exists. This is accomplished by calling `TextBoxHelper.GetPlaceholder(textBoxControl)`.
+    - First, check that the placeholder text exists by calling `TextBoxHelper.GetPlaceholder(textBoxControl)`.
     - A <xref:System.Windows.Media.FormattedText> object is created. This object contains all of the information about what text is drawn on the visual.
     - Both the <xref:System.Windows.Media.FormattedText.MaxTextWidth?displayProperty=nameWithType> and <xref:System.Windows.Media.FormattedText.MaxTextHeight?displayProperty=nameWithType> properties are set to the region of the control. They're also set a minimum value of 10 to make sure the `FormattedText` object is valid.
     - The `renderingOffset` stores the position of the drawn text.
-    - If the control's template declares a part named `PART_ContentHost`, use it. This part represents where the text is drawn on the control's template. If that part is found, modify the `renderingOffset` to account for its position.
+    - Use the `PART_ContentHost` If the control's template declares it. This part represents where the text is drawn on the control's template. If that part is found, modify the `renderingOffset` to account for its position.
     - Draw the text by calling <xref:System.Windows.Media.DrawingContext.DrawText(System.Windows.Media.FormattedText,System.Windows.Point)> and passing the `FormattedText` object and the position of the text.
 
 ## Apply the attached property
