@@ -1,7 +1,7 @@
 ---
 title: What's new in Windows Forms
 description: Learn about what's new in Windows Forms. This article covers changes to Windows Forms since .NET 5 was released.
-ms.date: 02/13/2025
+ms.date: 03/17/2025
 ms.topic: conceptual
 ai-usage: ai-assisted
 ---
@@ -12,10 +12,10 @@ Each .NET release introduces a new version of Windows Forms (WinForms). This art
 
 ## .NET 10 Preview
 
-This section describes the main changes to WinForms for each .NET 10 Preview.
+This section describes the main changes to WinForms for .NET 10 Preview.
 
-- .NET 10 Preview 1
-  - [Clipboard changes](net100.md#preview-1)
+- [Clipboard changes](net100.md#clipboard-changes)
+- [Custom designer improvements](net100.md#custom-designer-improvements)
 
 ## .NET 9
 
