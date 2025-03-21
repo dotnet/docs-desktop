@@ -186,6 +186,10 @@ items:
       href: compiler-messages/wfo0002.md
     - name: WFO1000
       href: compiler-messages/wfo1000.md
+    - name: WFO1001
+      href: compiler-messages/wfo1001.md
+    - name: WFO2001
+      href: compiler-messages/wfo2001.md
     - name: WFO5001
       href: compiler-messages/wfo5001.md
     - name: WFO5002
