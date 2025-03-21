@@ -41,17 +41,16 @@
                     }
                 }
             });
-
-            // ****
-            // The actual UI update method
-            // ****
-            async ValueTask UpdateUiAsync(CancellationToken cancellation)
-            {
-                lblStopWatch.Text = $"{DateTime.Now:HH:mm:ss - fff}";
-                await Task.Delay(20, cancellation);
-            }
         }
 
+        // The actual UI update method
+        async ValueTask UpdateUiAsync(CancellationToken cancellation)
+        {
+            lblStopWatch.Text = $"{DateTime.Now:HH:mm:ss - fff}";
+            await Task.Delay(20, cancellation);
+        }
+
+        // Make sure that the token is cancelled when the form is closed
         protected override void OnFormClosing(FormClosingEventArgs e)
         {
             base.OnFormClosing(e);
