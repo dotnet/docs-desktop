@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace watermark
+namespace DotnetDocsSample
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -24,18 +24,5 @@ namespace watermark
         {
             InitializeComponent();
         }
-
-        // <code>
-        private void OnTextBoxTextChanged(object sender, TextChangedEventArgs e)
-        {
-            if (sender is TextBox box)
-            {
-                if (string.IsNullOrEmpty(box.Text))
-                    box.Background = (ImageBrush)FindResource("watermark");
-                else
-                    box.Background = null;
-            }
-        }
-        // </code>
     }
 }
