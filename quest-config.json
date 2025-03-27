@@ -9,46 +9,32 @@
     "ParentNodes": [
         {
             "Label": "okr-freshness",
-            "Semester": "Dilithium",
-            "ParentNodeId": 237266
+            "Semester": "Selenium",
+            "ParentNodeId": 286034
         },
         {
             "Label": "okr-curation",
-            "ParentNodeId": 237271
-        },
-        {
-            "Label": "user-feedback",
-            "Semester": "Dilithium",
-            "ParentNodeId": 233465
+            "Semester": "Selenium",
+            "ParentNodeId": 286038
         },
         {
             "Label": "okr-health",
-            "Semester": "Dilithium",
-            "ParentNodeId": 237266
+            "Semester": "Selenium",
+            "ParentNodeId": 286038
+        },
+        {
+            "Label": "user-feedback",
+            "Semester": "Selenium",
+            "ParentNodeId": 286039
         },
         {
             "Label": "doc-bug",
-            "Semester": "Dilithium",
-            "ParentNodeId": 233465
+            "Semester": "Selenium",
+            "ParentNodeId": 286039
         },
         {
-            "Label": "sfi-ropc",
-            "Semester": "Dilithium",
-            "ParentNodeId": 271716
-        },
-        {
-            "Label": "sfi-admin",
-            "Semester": "Dilithium",
-            "ParentNodeId": 271716
-        },
-        {
-            "Label": "sfi-images",
-            "Semester": "Dilithium",
-            "ParentNodeId": 286370
-        },
-        {
-            "Semester": "Dilithium",
-            "ParentNodeId": 227487
+            "Semester": "Selenium",
+            "ParentNodeId": 308200
         },
         {
             "Semester": "Bromine",
