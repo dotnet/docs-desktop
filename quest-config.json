@@ -9,35 +9,6 @@
     "ParentNodes": [
         {
             "Label": "okr-freshness",
-            "Semester": "Selenium",
-            "ParentNodeId": 286034
-        },
-        {
-            "Label": "okr-curation",
-            "Semester": "Selenium",
-            "ParentNodeId": 286038
-        },
-        {
-            "Label": "okr-health",
-            "Semester": "Selenium",
-            "ParentNodeId": 286038
-        },
-        {
-            "Label": "user-feedback",
-            "Semester": "Selenium",
-            "ParentNodeId": 286039
-        },
-        {
-            "Label": "doc-bug",
-            "Semester": "Selenium",
-            "ParentNodeId": 286039
-        },
-        {
-            "Semester": "Selenium",
-            "ParentNodeId": 308200
-        },
-        {
-            "Label": "okr-freshness",
             "Semester": "Dilithium",
             "ParentNodeId": 237266
         },
@@ -78,9 +49,13 @@
         {
             "Semester": "Dilithium",
             "ParentNodeId": 227487
+        },
+        {
+            "Semester": "Bromine",
+            "ParentNodeId": 410742
         }
     ],
-    "DefaultParentNode": 308200,
+    "DefaultParentNode": 308410742200,
     "WorkItemTags": [
         {
             "Label": "okr-curation",
