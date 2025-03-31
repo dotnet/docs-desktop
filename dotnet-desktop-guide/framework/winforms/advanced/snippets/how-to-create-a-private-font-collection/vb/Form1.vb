@@ -15,7 +15,7 @@ Public Class Form1
         Dim familyNameAndStyle As String = $"{family.Name} {styleName}"
 
         ' Create the font object
-        Using fontObject As New Font(family.Name, 16, style, GraphicsUnit.Pixel)
+        Using fontObject As New Font(family, 16, style, GraphicsUnit.Pixel)
 
             ' Draw the string
             graphicsObj.DrawString(familyNameAndStyle, fontObject, colorBrush, location)
