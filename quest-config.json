@@ -37,50 +37,11 @@
             "ParentNodeId": 308200
         },
         {
-            "Label": "okr-freshness",
-            "Semester": "Dilithium",
-            "ParentNodeId": 237266
-        },
-        {
-            "Label": "okr-curation",
-            "ParentNodeId": 237271
-        },
-        {
-            "Label": "user-feedback",
-            "Semester": "Dilithium",
-            "ParentNodeId": 233465
-        },
-        {
-            "Label": "okr-health",
-            "Semester": "Dilithium",
-            "ParentNodeId": 237266
-        },
-        {
-            "Label": "doc-bug",
-            "Semester": "Dilithium",
-            "ParentNodeId": 233465
-        },
-        {
-            "Label": "sfi-ropc",
-            "Semester": "Dilithium",
-            "ParentNodeId": 271716
-        },
-        {
-            "Label": "sfi-admin",
-            "Semester": "Dilithium",
-            "ParentNodeId": 271716
-        },
-        {
-            "Label": "sfi-images",
-            "Semester": "Dilithium",
-            "ParentNodeId": 286370
-        },
-        {
-            "Semester": "Dilithium",
-            "ParentNodeId": 227487
+            "Semester": "Bromine",
+            "ParentNodeId": 410742
         }
     ],
-    "DefaultParentNode": 308200,
+    "DefaultParentNode": 410742,
     "WorkItemTags": [
         {
             "Label": "okr-curation",
