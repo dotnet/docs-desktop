@@ -67,7 +67,7 @@ jobs:
       - name: auto-sequester
         if: ${{ github.event_name != 'workflow_dispatch' }}
         id: auto-sequester
-        uses: dotnet/docs-tools/actions/sequester@5e8bcc78465d45a7544bba56509a1a69922b6a5a # main
+        uses: dotnet/docs-tools/actions/sequester@main
         env:
           ImportOptions__ApiKeys__GitHubToken: ${{ secrets.GITHUB_TOKEN }}
           ImportOptions__ApiKeys__AzureAccessToken: ${{ steps.azure-oidc-auth.outputs.access-token }}
