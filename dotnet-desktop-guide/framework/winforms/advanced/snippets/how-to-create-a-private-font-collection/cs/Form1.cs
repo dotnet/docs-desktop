@@ -32,7 +32,7 @@ namespace fonts
             string familyNameAndStyle = $"{family.Name} {styleName}";
 
             // Create the font object
-            using (Font fontObject = new Font(family.Name, 16, style, GraphicsUnit.Pixel))
+            using (Font fontObject = new Font(family, 16, style, GraphicsUnit.Pixel))
             {
                 // Draw the string
                 graphicsObj.DrawString(familyNameAndStyle, fontObject, colorBrush, location);
