@@ -1,7 +1,7 @@
 ---
 title: How to add or remove an event handler
 description: Learn how to create an event handler for a control at design-time with the Windows Forms Designer in Visual Studio or at run-time.
-ms.date: 07/16/2021
+ms.date: 03/31/2025
 dev_langs:
   - "csharp"
   - "vb"
@@ -47,7 +47,7 @@ Use the **Properties** pane to add or set the handler of an event:
 
 ### Clear the handler
 
-To remove an event handler, you can't just delete handler code that is in the form's code-behind file, it's still referenced by the event. Use the **Properties** pane to remove the handler of an event:
+To remove an event handler, you can't just delete handler code that is in the form's code-behind file, it's still referenced by the designer. Use the **Properties** pane to remove the handler of an event:
 
 01. Open the Visual Designer of the form containing the control to change.
 01. Select the control.

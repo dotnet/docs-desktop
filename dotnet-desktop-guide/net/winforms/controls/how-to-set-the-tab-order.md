@@ -1,7 +1,7 @@
 ---
 title: Set tab order of controls
 description: Learn how to set the tab order of controls on your Windows Forms for .NET. Set the tab order with Visual Studio or using the TabIndex property in the Properties window.
-ms.date: 05/24/2021
+ms.date: 03/31/2025
 dev_langs:
   - "csharp"
   - "vb"
@@ -21,11 +21,11 @@ Tab order can be set in the **Properties** window of the designer using the <xre
 
 Container controls, such as a <xref:System.Windows.Forms.GroupBox> control, treat their children as separate from the rest of the form. Each child in the container has its own <xref:System.Windows.Forms.Control.TabIndex%2A> value. Because a container control can't be focused, when the tab order reaches the container control, the child control of the container with the lowest `TabIndex` is focused. As the <kbd>Tab</kbd> is pressed, each child control is focused according to its `TabIndex` value until the last control. When <kbd>Tab</kbd> is pressed on the last control, focus resumes to the next control in the parent of the container, based on the next `TabIndex` value.
 
-Any control of the many on your form can be skipped in the tab order. Usually, pressing <kbd>Tab</kbd> successively at run time selects each control in the tab order. By turning off the <xref:System.Windows.Forms.Control.TabStop%2A> property, a control is passed over in the tab order of the form.
+Any control on your form can be skipped in the tab order. Usually, pressing <kbd>Tab</kbd> successively at run time selects each control in the tab order. By turning off the <xref:System.Windows.Forms.Control.TabStop%2A> property, a control is passed over in the tab order of the form.
 
 ## Designer
 
-Use the Visual Studio designer **Properties** window to set the tab order of a control.
+Use the Visual Studio **Properties** window to set the tab order of a control.
 
 01. Select the control in the designer.
 

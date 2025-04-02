@@ -1,7 +1,7 @@
 ---
 title: "Create a new app with Visual Studio tutorial"
 description: Follow this tutorial to learn how to create a new Windows Forms app for .NET with Visual Studio 2022.
-ms.date: 11/14/2024
+ms.date: 04/02/2025
 ms.topic: tutorial
 dev_langs: 
   - "csharp"
@@ -11,7 +11,7 @@ dev_langs:
 
 # Tutorial: Create a Windows Forms app with .NET
 
-In this tutorial, you learn how to use Visual Studio to create a new Windows Forms app. With Visual Studio, you add controls to a form and handle events. By the end of this tutorial, you have a simple app that adds names to a list box.
+In this tutorial, you learn how to use Visual Studio to create a Windows Forms app. With Visual Studio, you add controls to a form and handle events. By the end of this tutorial, you have a simple app that adds names to a list box.
 
 In this tutorial, you:
 

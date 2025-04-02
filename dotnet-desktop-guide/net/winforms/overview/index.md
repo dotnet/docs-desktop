@@ -1,7 +1,7 @@
 ---
 title: What is Windows Forms
 description: This article gives an overview of Windows Forms with .NET
-ms.date: 11/14/2024
+ms.date: 04/02/2025
 ms.topic: overview
 #Customer intent: As a developer, I want to understand the components of Windows Forms so that I can understand the overall picture of Windows Forms.
 ---

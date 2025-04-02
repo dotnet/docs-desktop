@@ -1,7 +1,7 @@
 ---
 title: "How to simulate mouse events"
 description: Learn how to simulate mouse events in Windows Forms for .NET.
-ms.date: 10/26/2020
+ms.date: 04/02/2025
 dev_langs: 
   - "csharp"
   - "vb"
@@ -30,7 +30,7 @@ These protected methods are available to simulate mouse events.
 - `OnMouseClick`
 - `OnMouseDoubleClick`
 
-For more information about these events, see [Using mouse events (Windows Forms .NET)](events.md)
+For more information about these events, see [Using mouse events](events.md)
 
 ## Invoke a click
 
@@ -61,7 +61,7 @@ Windows provides methods you can call to simulate mouse movements and clicks suc
 
 ## See also
 
-- [Overview of using the mouse (Windows Forms .NET)](overview.md)
-- [Using mouse events (Windows Forms .NET)](events.md)
-- [How to distinguish between clicks and double-clicks (Windows Forms .NET)](how-to-distinguish-between-clicks-and-double-clicks.md)
-- [Manage mouse pointers (Windows Forms .NET)](how-to-manage-cursor-pointer.md)
+- [Overview of using the mouse](overview.md)
+- [Using mouse events](events.md)
+- [How to distinguish between clicks and double-clicks](how-to-distinguish-between-clicks-and-double-clicks.md)
+- [Manage mouse pointers](how-to-manage-cursor-pointer.md)

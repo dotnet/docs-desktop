@@ -1,7 +1,7 @@
 ---
 title: Visual Studio Design-time overview
 description: Learn about what capabilities are available in Visual Studio for Windows Forms designer support with your custom controls.
-ms.date: 06/01/2023
+ms.date: 04/01/2025
 ms.topic: overview
 no-loc: ["UserControl", "UserControl1", "UserControlProject", "Label", "Button", "Form", "TextBox"]
 dev_langs:
@@ -30,7 +30,7 @@ Many basic design elements of custom controls have remained the same from .NET F
 
 Visual Studio is a .NET Framework-based application, and as such, the Visual Designer you see for Windows Forms is also based on .NET Framework. With a .NET Framework project, both the Visual Studio environment and the Windows Forms app being designed run within the same process, **devenv.exe**. This poses a problem when you're working with a Windows Forms .NET (not .NET Framework) app. Both .NET and .NET Framework can't work within the same process. As a result, Windows Forms .NET uses a different designer, the "out-of-process" designer.
 
-The out-of-process designer is a process called **DesignToolsServer.exe**, and is run along-side Visual Studio's **devenv.exe** process. The **DesignToolsServer.exe** process runs in the same version and platform, such as .NET 9 and x64, of .NET that your app is targeting. When your custom control needs to display UI in the **devenv.exe** your custom control must implement a client-server architecture to facilitate the communication to and from **devenv.exe**. For more information, see [The designer changes since .NET Framework (Windows Forms .NET)](designer-differences-framework.md).
+The out-of-process designer is a process called **DesignToolsServer.exe**, and is run alongside Visual Studio's **devenv.exe** process. The **DesignToolsServer.exe** process runs in the same version and platform, such as .NET 9 and x64, of .NET that your app is targeting. When your custom control needs to display UI in Visual Studio, your custom control must implement a client-server architecture to facilitate the communication to and from **devenv.exe**. For more information, see [The designer changes since .NET Framework](designer-differences-framework.md).
 
 ## Property window
 
