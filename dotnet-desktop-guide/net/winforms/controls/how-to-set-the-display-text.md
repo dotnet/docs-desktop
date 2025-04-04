@@ -1,7 +1,7 @@
 ---
 title: Set the Text displayed by a Control
 description: Learn how to set the text displayed by a Windows Forms control. Set or return the text by using the Text property, or change the font by using the Font property.
-ms.date: 10/26/2020
+ms.date: 03/31/2025
 dev_langs:
   - "csharp"
   - "vb"
@@ -23,7 +23,7 @@ helpviewer_keywords:
 ---
 # How to: Set the text displayed by a control (Windows Forms .NET)
 
-Windows Forms controls usually display some text that's related to the primary function of the control. For example, a <xref:System.Windows.Forms.Button> control usually displays a caption indicating what action will be performed if the button is clicked. For all controls, you can set or return the text by using the <xref:System.Windows.Forms.Control.Text%2A> property. You can change the font by using the <xref:System.Windows.Forms.Control.Font%2A> property.
+Windows Forms controls usually display some text that's related to the primary function of the control. For example, a <xref:System.Windows.Forms.Button> control usually displays a caption indicating what action is performed when button is clicked. For all controls, you can set or return the text by using the <xref:System.Windows.Forms.Control.Text%2A> property. You can change the font the text is displayed in by setting the <xref:System.Windows.Forms.Control.Font%2A> property.
 
 You can also set the text by using the [designer](#designer).
 

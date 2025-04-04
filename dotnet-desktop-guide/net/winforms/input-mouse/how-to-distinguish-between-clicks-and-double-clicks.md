@@ -1,7 +1,7 @@
 ---
 title: "How to distinguish between single and double clicks"
 description: Describes different ways to detect the difference between a single or double click with a control or form for Windows Forms for .NET.
-ms.date: 10/26/2020
+ms.date: 04/02/2025
 dev_langs: 
   - "csharp"
   - "vb"
@@ -39,10 +39,10 @@ Handle the <xref:System.Windows.Forms.Control.MouseDown> event and determine the
 
 ## See also
 
-- [Overview of using the mouse (Windows Forms .NET)](overview.md)
-- [Using mouse events (Windows Forms .NET)](events.md)
-- [Manage mouse pointers (Windows Forms .NET)](how-to-manage-cursor-pointer.md)
-- [How to simulate mouse events (Windows Forms .NET)](how-to-simulate-events.md)
+- [Overview of using the mouse](overview.md)
+- [Using mouse events](events.md)
+- [Manage mouse pointers](how-to-manage-cursor-pointer.md)
+- [How to simulate mouse events](how-to-simulate-events.md)
 - <xref:System.Windows.Forms.Control.Click?displayProperty=nameWithType>
 - <xref:System.Windows.Forms.Control.MouseDown?displayProperty=nameWithType>
 - <xref:System.Windows.Forms.Control.SetStyle%2A?displayProperty=nameWithType>

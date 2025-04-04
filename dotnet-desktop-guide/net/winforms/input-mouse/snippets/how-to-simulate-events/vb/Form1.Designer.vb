@@ -70,7 +70,7 @@ Partial Class Form1
 
     End Sub
 
-    Friend WithEvents Button1 As Windows.Forms.Button
-    Friend WithEvents CheckBox1 As Windows.Forms.CheckBox
-    Friend WithEvents Button2 As Windows.Forms.Button
+    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents CheckBox1 As System.Windows.Forms.CheckBox
+    Friend WithEvents Button2 As System.Windows.Forms.Button
 End Class

@@ -14,6 +14,7 @@ public partial class CompassRose : UserControl
 
     // <browsable>
     [Browsable(false)]
+    [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
     public bool IsSelected { get; set; }
     // </browsable>
 

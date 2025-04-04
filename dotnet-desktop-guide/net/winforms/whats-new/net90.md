@@ -2,7 +2,7 @@
 title: What's new in WinForms for .NET 9
 description: Learn about what's new in Windows Forms for .NET 9. New versions of Windows Forms are released yearly with .NET.
 ms.topic: whats-new
-ms.date: 11/11/2024
+ms.date: 04/02/2025
 #customer intent: As a developer, I want to know what's changed so that I can remain up-to-date.
 ---
 

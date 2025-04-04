@@ -1,7 +1,7 @@
 ---
 title: "Check which modifier key is pressed"
 description: Learn how to detect when the SHIFT, ALT, or CTRL keys are pressed in Windows Forms for .NET.
-ms.date: 10/26/2020
+ms.date: 04/02/2025
 dev_langs: 
   - "csharp"
   - "vb"
@@ -26,13 +26,13 @@ helpviewer_keywords:
 ---
 # How to check for modifier key presses (Windows Forms .NET)
 
-As the user types keys into your application, you can monitor for pressed modifier keys such as the <kbd>SHIFT</kbd>, <kbd>ALT</kbd>, and <kbd>CTRL</kbd>. When a modifier key is pressed in combination with other keys or even a mouse click, your application can respond appropriately. For example, pressing the <kbd>S</kbd> key may cause an "s" to appear on the screen. If the keys <kbd>CTRL+S</kbd> are pressed, instead, the current document may be saved.
+As the user types keys into your application, you can monitor for pressed modifier keys such as the <kbd>SHIFT</kbd>, <kbd>ALT</kbd>, and <kbd>CTRL</kbd>. When a modifier key is pressed in combination with other keys or even a mouse click, your application can respond appropriately. For example, pressing the <kbd>S</kbd> key might cause an "s" to appear on the screen. If the keys <kbd>CTRL+S</kbd> are pressed, instead, the current document might be saved.
 
 If you handle the <xref:System.Windows.Forms.Control.KeyDown> event, the <xref:System.Windows.Forms.KeyEventArgs.Modifiers?displayProperty=nameWithType> property received by the event handler specifies which modifier keys are pressed. Also, the <xref:System.Windows.Forms.KeyEventArgs.KeyData?displayProperty=nameWithType> property specifies the character that was pressed along with any modifier keys combined with a bitwise OR.
 
 If you're handling the <xref:System.Windows.Forms.Control.KeyPress> event or a mouse event, the event handler doesn't receive this information. Use the <xref:System.Windows.Forms.Control.ModifierKeys%2A> property of the <xref:System.Windows.Forms.Control> class to detect a key modifier. In either case, you must perform a bitwise AND of the appropriate <xref:System.Windows.Forms.Keys> value and the value you're testing. The <xref:System.Windows.Forms.Keys> enumeration offers variations of each modifier key, so it's important that you do the bitwise AND check with the correct value.
 
-For example, the <kbd>SHIFT</kbd> key is represented by the following key values:
+For example, the following key values represent the <kbd>SHIFT</kbd> key:
 
 - <xref:System.Windows.Forms.Keys.Shift?displayProperty=nameWithType>
 - <xref:System.Windows.Forms.Keys.ShiftKey?displayProperty=nameWithType>
@@ -52,8 +52,8 @@ The following code example shows how to determine whether the <kbd>SHIFT</kbd> k
 
 ## See also
 
-- [Overview of using the keyboard (Windows Forms .NET)](overview.md)
-- [Using keyboard events (Windows Forms .NET)](events.md)
+- [Overview of using the keyboard](overview.md)
+- [Using keyboard events](events.md)
 - <xref:System.Windows.Forms.Keys>
 - <xref:System.Windows.Forms.Control.ModifierKeys>
 - <xref:System.Windows.Forms.Control.KeyDown>

@@ -1,7 +1,7 @@
 ---
 title: Control layout options
 description: Learn about the different settings on a control that affect layout and positioning in Windows Forms for .NET. Learn about the different types of control containers that affect layout.
-ms.date: 07/19/2021
+ms.date: 03/31/2025
 ms.topic: overview
 helpviewer_keywords: 
   - "forms [Windows Forms], aligning controls"
@@ -26,11 +26,11 @@ Control placement in Windows Forms is determined not only by the control, but al
 
 ## Fixed position and size
 
-The position a control appears on a parent is determined by the value of the <xref:System.Windows.Forms.Control.Location> property relative to the top-left of the parent surface. The top-left position coordinate in the parent is `(x0,y0)`. The size of the control is determined by the <xref:System.Windows.Forms.Control.Size> property and represents the width and height of the control.
+The position a control appears on a parent is determined by the value of the <xref:System.Windows.Forms.Control.Location> property relative to the top-left of the parent surface. The top-left position coordinate of a control in the parent is `(x0,y0)`. The size of the control is determined by the <xref:System.Windows.Forms.Control.Size> property and represents the width and height of the control.
 
 :::image type="content" source="media/layout/location+container.png" alt-text="Location of the control relative to the container":::
 
-When a control is added to a parent that enforces automatic placement, the position and size of the control is changed. In this case, the position and size of the control may not be manually adjusted, depending on the type of parent.
+When a control is added to a parent that enforces automatic placement, the position and size of the control is changed. In this case, the position and size of the control might not be manually adjusted, depending on the type of parent.
 
 The <xref:System.Windows.Forms.Control.MaximumSize%2A> and <xref:System.Windows.Forms.Control.MinimumSize%2A> properties help set the minimum and maximum space a control can use.
 
@@ -46,7 +46,7 @@ The following figure shows the <xref:System.Windows.Forms.Control.Margin%2A> and
 
 :::image type="content" source="media/layout/margin-padding.png" alt-text="Padding and Margin properties for Windows Forms Controls":::
 
-The Visual Studio Designer will respect these properties when you're positioning and resizing controls. Snaplines appear as guides to help you remain outside the specified margin of a control. For example, Visual Studio displays the snapline when you drag a control next to another control:
+The Visual Studio Designer respects these properties when you're positioning and resizing controls. Snaplines appear as guides to help you remain outside the specified margin of a control. For example, Visual Studio displays the snapline when you drag a control next to another control:
 
 :::image type="content" source="media/layout/margins.gif" alt-text="Animated image demonstrating the snaplines with margin properties for Windows Forms .NET in Visual Studio":::
 
@@ -64,11 +64,11 @@ The `Dock` property sets which border of the control is aligned to the correspon
 
 :::image type="content" source="media/layout/dock-modes.png" alt-text="Windows form with buttons with dock settings.":::
 
-When a control is docked, the container determines the space it should occupy and resizes and places the control. The width and height of the control are still respected based on the docking style. For example, if the control is docked to the top, the <xref:System.Windows.Forms.Control.Height> of the control is respected but the <xref:System.Windows.Forms.Control.Width> is automatically adjusted. If a control is docked to the left, the <xref:System.Windows.Forms.Control.Width> of the control is respected but the <xref:System.Windows.Forms.Control.Height> is automatically adjusted.
+When a control is docked, the container determines the space it should occupy and resizes and positions the control. The width and height of the control are still respected based on the docking style. For example, if the control is docked to the top, the <xref:System.Windows.Forms.Control.Height> of the control is respected but the <xref:System.Windows.Forms.Control.Width> is automatically adjusted. If a control is docked to the left, the <xref:System.Windows.Forms.Control.Width> of the control is respected but the <xref:System.Windows.Forms.Control.Height> is automatically adjusted.
 
-The <xref:System.Windows.Forms.Control.Location> of the control can't be manually set as docking a control automatically controls its position.
+The <xref:System.Windows.Forms.Control.Location> of the control can't be manually set as docking a control automatically sets the position.
 
-The **:::no-loc text="Z-order":::** of the control does affect docking. As docked controls are laid out, they use what space is available to them. For example, if a control is drawn first and docked to the top, it will take up the entire width of the container. If a next control is docked to the left, it has less vertical space available to it.
+The **:::no-loc text="Z-order":::** of the control does affect docking. As docked controls are laid out, they use what space is available to them. For example, if a control is drawn first and docked to the top, it takes up the entire width of the container. If a next control is docked to the left, it has less vertical space available to it.
 
 :::image type="content" source="media/layout/dock-top-then-left.png" alt-text="Windows form with buttons docked to the left and top with top being bigger.":::
 
@@ -86,7 +86,7 @@ If multiple controls are docked to the same side of the container, they're stack
 
 ### Anchor
 
-Anchoring a control allows you to tie the control to one or more sides of the parent container. As the container changes in size, any child control will maintain its distance to the anchored side.
+Anchoring a control allows you to tie the control to one or more sides of the parent container. As the container changes in size, anchored child controls maintain their distance to the anchored side.
 
 A control can be anchored to one or more sides, without restriction. The anchor is set with the <xref:System.Windows.Forms.Control.Anchor> property.
 
@@ -101,12 +101,12 @@ Only some controls support the <xref:System.Windows.Forms.Control.AutoSize%2A> p
 | Always true behavior | Description |
 |--|--|
 | Automatic sizing is a run-time feature. | This means it never grows or shrinks a control and then has no further effect. |
-| If a control changes size, the value of its <xref:System.Windows.Forms.Control.Location%2A> property always remains constant. | When a control's contents cause it to grow, the control grows toward the right and downward. Controls do not grow to the left. |
-| The <xref:System.Windows.Forms.Control.Dock%2A> and <xref:System.Windows.Forms.Control.Anchor%2A> properties are honored when <xref:System.Windows.Forms.Control.AutoSize%2A> is `true`. | The value of the control's <xref:System.Windows.Forms.Control.Location%2A> property is adjusted to the correct value.<br /><br /> The <xref:System.Windows.Forms.Label> control is the exception to this rule. When you set the value of a docked <xref:System.Windows.Forms.Label> control's <xref:System.Windows.Forms.Control.AutoSize%2A> property to `true`, the <xref:System.Windows.Forms.Label> control will not stretch. |
-| A control's <xref:System.Windows.Forms.Control.MaximumSize%2A> and <xref:System.Windows.Forms.Control.MinimumSize%2A> properties are always honored, regardless of the value of its <xref:System.Windows.Forms.Control.AutoSize%2A> property. | The <xref:System.Windows.Forms.Control.MaximumSize%2A> and <xref:System.Windows.Forms.Control.MinimumSize%2A> properties are not affected by the <xref:System.Windows.Forms.Control.AutoSize%2A> property. |
-| There is no minimum size set by default. | This means that if a control is set to shrink under <xref:System.Windows.Forms.Control.AutoSize%2A> and it has no contents, the value of its <xref:System.Windows.Forms.Control.Size%2A> property is `(0x,0y)`. In this case, your control will shrink to a point, and it will not be readily visible. |
-| If a control does not implement the <xref:System.Windows.Forms.Control.GetPreferredSize%2A> method, the <xref:System.Windows.Forms.Control.GetPreferredSize%2A> method returns last value assigned to the <xref:System.Windows.Forms.Control.Size%2A> property. | This means that setting <xref:System.Windows.Forms.Control.AutoSize%2A> to `true` will have no effect. |
-| A control in a <xref:System.Windows.Forms.TableLayoutPanel> cell always shrinks to fit in the cell until its <xref:System.Windows.Forms.Control.MinimumSize%2A> is reached. | This size is enforced as a maximum size. This is not the case when the cell is part of an <xref:System.Windows.Forms.SizeType.AutoSize> row or column. |
+| If a control changes size, the value of its <xref:System.Windows.Forms.Control.Location%2A> property always remains constant. | When a control's contents cause it to grow, the control grows toward the right and downward. Controls don't grow to the left. |
+| The <xref:System.Windows.Forms.Control.Dock%2A> and <xref:System.Windows.Forms.Control.Anchor%2A> properties are honored when <xref:System.Windows.Forms.Control.AutoSize%2A> is `true`. | The value of the control's <xref:System.Windows.Forms.Control.Location%2A> property is adjusted to the correct value.<br /><br /> The <xref:System.Windows.Forms.Label> control is the exception to this rule. When you set the value of a docked <xref:System.Windows.Forms.Label> control's <xref:System.Windows.Forms.Control.AutoSize%2A> property to `true`, the <xref:System.Windows.Forms.Label> control won't stretch. |
+| A control's <xref:System.Windows.Forms.Control.MaximumSize%2A> and <xref:System.Windows.Forms.Control.MinimumSize%2A> properties are always honored, regardless of the value of its <xref:System.Windows.Forms.Control.AutoSize%2A> property. | The <xref:System.Windows.Forms.Control.MaximumSize%2A> and <xref:System.Windows.Forms.Control.MinimumSize%2A> properties aren't affected by the <xref:System.Windows.Forms.Control.AutoSize%2A> property. |
+| There's no minimum size set by default. | This means that if a control is set to shrink under <xref:System.Windows.Forms.Control.AutoSize%2A> and it has no contents, the value of its <xref:System.Windows.Forms.Control.Size%2A> property is `(0x,0y)`. In this case, your control shrinks to a point, and it will not be readily visible. |
+| If a control doesn't implement the <xref:System.Windows.Forms.Control.GetPreferredSize%2A> method, the <xref:System.Windows.Forms.Control.GetPreferredSize%2A> method returns last value assigned to the <xref:System.Windows.Forms.Control.Size%2A> property. | This means that setting <xref:System.Windows.Forms.Control.AutoSize%2A> to `true` has no effect. |
+| A control in a <xref:System.Windows.Forms.TableLayoutPanel> cell always shrinks to fit in the cell until its <xref:System.Windows.Forms.Control.MinimumSize%2A> is reached. | This size is enforced as a maximum size. This isn't the case when the cell is part of an <xref:System.Windows.Forms.SizeType.AutoSize> row or column. |
 
 #### AutoSizeMode property
 
@@ -186,9 +186,9 @@ Override the <xref:System.Windows.Forms.Design.ControlDesigner.SelectionRules%2A
 
 ## Container: Form
 
-The <xref:System.Windows.Forms.Form> is the main object of Windows Forms. A Windows Forms application will usually have a form displayed at all times. Forms contain controls and respect  the <xref:System.Windows.Forms.Control.Location> and <xref:System.Windows.Forms.Control.Size> properties of the control for manual placement. Forms also respond to the [Dock](#dock) property for automatic placement.
+The <xref:System.Windows.Forms.Form> is the main object of Windows Forms. A Windows Forms application usually has a form displayed at all times. Forms contain controls and respect  the <xref:System.Windows.Forms.Control.Location> and <xref:System.Windows.Forms.Control.Size> properties of the control for manual placement. Forms also respond to the [Dock](#dock) property for automatic placement.
 
-Most of the time a form will have grips on the edges that allow the user to resize the form. The <xref:System.Windows.Forms.Control.Anchor> property of a control will let the control grow and shrink as the form is resized.
+Most of the time a form has grips on the edges that allow the user to resize the form. The <xref:System.Windows.Forms.Control.Anchor> property of a control lets the control grow and shrink as the form is resized.
 
 ## Container: Panel
 

@@ -1,7 +1,7 @@
 ---
 title: Create Access Keys for Controls
 description: Learn how to set the access key shortcut on a control or label in Windows Forms for .NET.
-ms.date: 10/26/2020
+ms.date: 03/31/2025
 dev_langs:
   - "csharp"
   - "vb"
@@ -22,9 +22,12 @@ helpviewer_keywords:
 
 # Add an access key shortcut to a control (Windows Forms .NET)
 
-An *access key* is an underlined character in the text of a menu, menu item, or the label of a control such as a button. With an access key, the user can "click" a button by pressing the <kbd>Alt</kbd> key in combination with the predefined access key. For example, if a button runs a procedure to print a form, and therefore its `Text` property is set to "Print," adding an ampersand (&) before the letter "P" causes the letter "P" to be underlined in the button text at run time. The user can run the command associated with the button by pressing <kbd>Alt</kbd>.
+An *access key* is an underlined character in the text of a menu, menu item, or the label of a control such as a button. With an access key, the user can interact with the control by pressing the <kbd>Alt</kbd> key in combination with the predefined access key. For example, if a button runs a procedure to print a form, and therefore its `Text` property is set to "Print," adding an ampersand (&) before the letter "P" causes the letter "P" to be underlined in the button text at run time. The user can run the command associated with the button by pressing the <kbd>Alt + P</kbd> key combination.
 
-Controls that cannot receive focus can't have access keys, except label controls.
+Controls that can't receive focus can't have access keys, except label controls. For more information, see [Use a label to focus a control](#use-a-label-to-focus-a-control).
+
+> [!TIP]
+> The access key might not be visible on the control until the <kbd>Alt</kbd> is pressed.
 
 ## Designer
 
@@ -48,16 +51,9 @@ button1.Text = "&Print";
 
 ## Use a label to focus a control
 
-Even though a label cannot be focused, it has the ability to focus the next control in the tab order of the form. Each control is assigned a value to the <xref:System.Windows.Forms.Control.TabIndex> property, generally in ascending sequential order. When the access key is assigned to the [Label.Text](xref:System.Windows.Forms.Label.Text) property, the next control in the sequential tab order is focused.
+Even though a label can't be focused, it has the ability to focus the next control in the tab order of the form. Each control is assigned a value to the <xref:System.Windows.Forms.Control.TabIndex> property, generally in ascending sequential order. When the access key is assigned to the [Label.Text](xref:System.Windows.Forms.Label.Text) property, the next control in the sequential tab order is focused.
 
 Using the example from the [Programmatic](#programmatic) section, if the button didn't have any text set, but instead presented an image of a printer, you could use a label to focus the button.
-
-```vb
-' Set the letter "P" as an access key.
-Label1.Text = "&Print"
-Label1.TabIndex = 9
-Button1.TabIndex = 10
-```
 
 ```csharp
 // Set the letter "P" as an access key.
@@ -66,18 +62,25 @@ label1.TabIndex = 9
 button1.TabIndex = 10
 ```
 
-## Display an ampersand
-
-When setting the text or caption of a control that interprets an ampersand (&) as an access key, use two consecutive ampersands (&&) to display a single ampersand. For example, the text of a button set to `"Print && Close"` displays in the caption of `Print & Close`:
-
 ```vb
 ' Set the letter "P" as an access key.
-Button1.Text = "Print && Close"
+Label1.Text = "&Print"
+Label1.TabIndex = 9
+Button1.TabIndex = 10
 ```
+
+## Display an ampersand
+
+When setting the text or caption of a control that interprets an ampersand (&) as an access key, use two consecutive ampersands (&&) to display a single ampersand. For example, the text of a button set to `"&Print && Close"` displays in the caption of `Print & Close`:
 
 ```csharp
 // Set the letter "P" as an access key.
-button1.Text = "Print && Close";
+button1.Text = "&Print && Close";
+```
+
+```vb
+' Set the letter "P" as an access key.
+Button1.Text = "&Print && Close"
 ```
 
 :::image type="content" source="media/how-to-create-access-keys/double-ampersand.png" alt-text="displaying an ampersand in a button":::

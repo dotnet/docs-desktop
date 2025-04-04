@@ -56,6 +56,6 @@ Partial Class FormBad
 
     End Sub
 
-    Friend WithEvents TextBox1 As Windows.Forms.TextBox
-    Friend WithEvents Button1 As Windows.Forms.Button
+    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents Button1 As System.Windows.Forms.Button
 End Class

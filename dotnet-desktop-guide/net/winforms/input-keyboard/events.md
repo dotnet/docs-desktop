@@ -1,7 +1,7 @@
 ---
 title: "Using keyboard events"
 description: Overview of using keyboard events to handle keyboard input. This article provides a list of keyboard-related events and when to use them.
-ms.date: 10/26/2020
+ms.date: 04/02/2025
 ms.topic: overview
 dev_langs: 
   - "csharp"
@@ -16,7 +16,7 @@ helpviewer_keywords:
 ---
 # Using keyboard events (Windows Forms .NET)
 
-Most Windows Forms programs process keyboard input by handling the keyboard events. This article provides an overview of the keyboard events, including details on when to use each event and the data that is supplied for each event. For more information about events in general, see [Events overview (Windows Forms .NET)](../forms/events.md).
+Most Windows Forms programs process keyboard input by handling the keyboard events. This article provides an overview of the keyboard events, including details on when to use each event and the data that is supplied for each event. For more information about events in general, see [Events overview](../forms/events.md).
 
 ## Keyboard events
 
@@ -33,13 +33,13 @@ The following table describes the three keyboard events.
 |Keyboard event|Description|Results|
 |--------------------|-----------------|-------------|
 |<xref:System.Windows.Forms.Control.KeyDown>|This event is raised when a user presses a physical key.|The handler for <xref:System.Windows.Forms.Control.KeyDown> receives:<br /><br /> <ul><li>A <xref:System.Windows.Forms.KeyEventArgs> parameter, which provides the <xref:System.Windows.Forms.KeyEventArgs.KeyCode%2A> property (which specifies a physical keyboard button).</li><li>The <xref:System.Windows.Forms.KeyEventArgs.Modifiers%2A> property (SHIFT, CTRL, or ALT).</li><li>The <xref:System.Windows.Forms.KeyEventArgs.KeyData%2A> property (which combines the key code and modifier). The <xref:System.Windows.Forms.KeyEventArgs> parameter also provides:<br /><br /> <ul><li>The <xref:System.Windows.Forms.KeyEventArgs.Handled%2A> property, which can be set to prevent the underlying control from receiving the key.</li><li>The <xref:System.Windows.Forms.KeyEventArgs.SuppressKeyPress%2A> property, which can be used to suppress the <xref:System.Windows.Forms.Control.KeyPress> and <xref:System.Windows.Forms.Control.KeyUp> events for that keystroke.</li></ul></li></ul>|
-|<xref:System.Windows.Forms.Control.KeyPress>|This event is raised when the key or keys pressed result in a character. For example, a user presses SHIFT and the lowercase "a" keys, which result in a capital letter "A" character.|<xref:System.Windows.Forms.Control.KeyPress> is raised after <xref:System.Windows.Forms.Control.KeyDown>.<br /><br /> <ul><li>The handler for <xref:System.Windows.Forms.Control.KeyPress> receives:</li><li>A <xref:System.Windows.Forms.KeyPressEventArgs> parameter, which contains the character code of the key that was pressed. This character code is unique for every combination of a character key and a modifier key.<br /><br />     For example, the "A" key will generate:<br /><br /> <ul><li>The character code 65, if it is pressed with the SHIFT key</li><li>Or the CAPS LOCK key, 97 if it is pressed by itself,</li><li>And 1, if it is pressed with the CTRL key.</li></ul></li></ul>|
+|<xref:System.Windows.Forms.Control.KeyPress>|This event is raised when the key or keys pressed result in a character. For example, a user presses SHIFT and the lowercase "a" keys, which result in a capital letter "A" character.|<xref:System.Windows.Forms.Control.KeyPress> is raised after <xref:System.Windows.Forms.Control.KeyDown>.<br /><br /> <ul><li>The handler for <xref:System.Windows.Forms.Control.KeyPress> receives:</li><li>A <xref:System.Windows.Forms.KeyPressEventArgs> parameter, which contains the character code of the key that was pressed. This character code is unique for every combination of a character key and a modifier key.<br /><br />     For example, the "A" key generates:<br /><br /> <ul><li>The character code 65, if it's pressed with the SHIFT key</li><li>Or the CAPS LOCK key, 97 if it's pressed by itself,</li><li>And 1, if it's pressed with the CTRL key.</li></ul></li></ul>|
 |<xref:System.Windows.Forms.Control.KeyUp>|This event is raised when a user releases a physical key.|The handler for <xref:System.Windows.Forms.Control.KeyUp> receives:<br /><br /> <ul><li>A <xref:System.Windows.Forms.KeyEventArgs> parameter:<br /><br /> <ul><li>Which provides the <xref:System.Windows.Forms.KeyEventArgs.KeyCode%2A> property (which specifies a physical keyboard button).</li><li>The <xref:System.Windows.Forms.KeyEventArgs.Modifiers%2A> property (SHIFT, CTRL, or ALT).</li><li>The <xref:System.Globalization.SortKey.KeyData%2A> property (which combines the key code and modifier).</li></ul></li></ul>|
 
 ## See also
 
-- [Overview of using the keyboard (Windows Forms .NET)](overview.md)
-- [How to modify keyboard key events (Windows Forms .NET)](how-to-change-key-press.md)
-- [How to Check for modifier key presses (Windows Forms .NET)](how-to-check-modifier-key.md)
-- [How to simulate keyboard events (Windows Forms .NET)](how-to-simulate-events.md)
-- [How to handle keyboard input messages in the form (Windows Forms .NET)](how-to-handle-forms.md)
+- [Overview of using the keyboard](overview.md)
+- [How to modify keyboard key events](how-to-change-key-press.md)
+- [How to Check for modifier key presses](how-to-check-modifier-key.md)
+- [How to simulate keyboard events](how-to-simulate-events.md)
+- [How to handle keyboard input messages in the form](how-to-handle-forms.md)

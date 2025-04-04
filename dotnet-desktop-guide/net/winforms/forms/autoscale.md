@@ -6,6 +6,7 @@ ms.topic: overview
 helpviewer_keywords:
   - "scalability [Windows Forms], automatic in Windows Forms"
   - "Windows Forms, automatic scaling"
+# This article needs a rewrite. It really reflects how DPI is working in .NET Framework and not in .NET 9+.
 ---
 
 # Automatic scaling (Windows Forms .NET)

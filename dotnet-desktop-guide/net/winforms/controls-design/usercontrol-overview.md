@@ -1,7 +1,7 @@
 ---
 title: User control overview
 description: Learn about what a user control is in Windows Forms. A user control is a composite control that displays other controls as a group, and is interacted with as a single control.
-ms.date: 06/01/2023
+ms.date: 04/02/2025
 ms.topic: overview
 f1_keywords: 
   - "UserControl"
@@ -36,7 +36,7 @@ After creating a new project, use the Visual Studio templates to create a user c
 
     :::image type="content" source="media/usercontrol-overview/right-click.png" alt-text="Right-click the Visual Studio solution explorer to add a user control to a Windows Forms project":::
 
-01. In the **Name** box, type a name for your user control. Visual Studio provides a default and unique name that you may use. Next, press **Add**.
+01. In the **Name** box, type a name for your user control. Visual Studio provides a default and unique name that you can use. Next, press **Add**.
 
     :::image type="content" source="media/usercontrol-overview/new-usercontrol-dialog.png" alt-text="Add item dialog in Visual Studio for Windows Forms":::
 

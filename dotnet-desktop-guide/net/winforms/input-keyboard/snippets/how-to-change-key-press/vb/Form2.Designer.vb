@@ -46,5 +46,5 @@ Partial Class Form2
 
     End Sub
 
-    Friend Button1 As Windows.Forms.Button
+    Friend Button1 As System.Windows.Forms.Button
 End Class

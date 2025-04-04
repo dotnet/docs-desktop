@@ -1,7 +1,7 @@
 ---
 title: How to dock and anchor controls
 description: Learn how to s
-ms.date: 05/25/2021
+ms.date: 03/31/2025
 dev_langs:
   - "csharp"
   - "vb"
@@ -79,7 +79,7 @@ Use the Visual Studio designer **Properties** window to set the docking mode of 
 A control is anchored to an edge by setting its <xref:System.Windows.Forms.Control.Anchor%2A> property to one or more values.
 
 > [!NOTE]
-> Certain controls, such as the <xref:System.Windows.Forms.ComboBox> control, have a limit to their height. Anchoring the control to the bottom of its form or container cannot force the control to exceed its height limit.
+> Certain controls, such as the <xref:System.Windows.Forms.ComboBox> control, have a limit to their height. Anchoring the control to the bottom of its form or container can't force the control to exceed its height limit.
 >
 > Inherited controls must be `Protected` to be able to be anchored. To change the access level of a control, set its `Modifiers` property in the **Properties** window.
 

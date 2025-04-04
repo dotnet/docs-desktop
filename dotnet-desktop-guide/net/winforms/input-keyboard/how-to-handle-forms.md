@@ -1,7 +1,7 @@
 ---
 title: "Handle keyboard input at the Form level"
 description: Learn how to handle keyboard input for your Windows Forms at the form level, before messages reach a control.
-ms.date: 10/26/2020
+ms.date: 04/02/2025
 dev_langs: 
   - "csharp"
   - "vb"
@@ -24,8 +24,8 @@ Handle the <xref:System.Windows.Forms.Control.KeyPress> or <xref:System.Windows.
 
 ## See also
 
-- [Overview of using the keyboard (Windows Forms .NET)](overview.md)
-- [Using keyboard events (Windows Forms .NET)](events.md)
+- [Overview of using the keyboard](overview.md)
+- [Using keyboard events](events.md)
 - <xref:System.Windows.Forms.Keys>
 - <xref:System.Windows.Forms.Control.ModifierKeys>
 - <xref:System.Windows.Forms.Control.KeyDown>

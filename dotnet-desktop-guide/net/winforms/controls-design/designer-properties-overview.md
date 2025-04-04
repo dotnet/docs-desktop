@@ -1,7 +1,7 @@
 ---
 title: Design-time properties overview
 description: Learn about how the Windows Forms Designer interacts with control and form properties during design-time.
-ms.date: 07/14/2023
+ms.date: 04/02/2025
 ms.topic: overview
 no-loc: ["UserControl"]
 dev_langs:
@@ -123,4 +123,4 @@ This should be converted into examples
 The **Properties** window automatically uses a type editor for a property when the type of the property is a built-in or known type. For example, a boolean value is edited as a combo box with **True** and **False** values and the <xref:System.DateTime> type uses a calendar dropdown.
 
 > [!IMPORTANT]
-> Custom type editors have changed since .NET Framework. For more information, see [The designer changes since .NET Framework (Windows Forms .NET)](designer-differences-framework.md).
+> Custom type editors have changed since .NET Framework. For more information, see [The designer changes since .NET Framework](designer-differences-framework.md).

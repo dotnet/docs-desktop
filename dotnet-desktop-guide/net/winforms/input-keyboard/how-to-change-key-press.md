@@ -1,7 +1,7 @@
 ---
 title: "Modify keyboard key events"
 description: Learn how to intercept a key press and modify which key is pressed on a Windows Forms .NET application.
-ms.date: 10/26/2020
+ms.date: 04/02/2025
 dev_langs: 
   - "csharp"
   - "vb"
@@ -13,7 +13,7 @@ helpviewer_keywords:
 ---
 # How to modify keyboard key events (Windows Forms .NET)
 
-Windows Forms provides the ability to consume and modify keyboard input. Consuming a key refers to handling a key within a method or event handler so that other methods and events further down the message queue don't receive the key value. And, modifying a key refers to modifying the value of a key so that methods and event handlers further down the message queue receive a different key value. This article shows how to accomplish these tasks.
+Windows Forms can consume and modify keyboard input. Consuming a key refers to handling a key within a method or event handler so that other methods and events further down the message queue don't receive the key value. And, modifying a key refers to modifying the value of a key so that methods and event handlers further down the message queue receive a different key value. This article shows how to accomplish these tasks.
 
 ## Consume a key
 
@@ -24,7 +24,7 @@ In a <xref:System.Windows.Forms.Control.KeyPress> event handler, set the <xref:S
 In a <xref:System.Windows.Forms.Control.KeyDown> event handler, set the <xref:System.Windows.Forms.KeyEventArgs.Handled%2A> property of the <xref:System.Windows.Forms.KeyEventArgs> class to `true`.
 
 > [!NOTE]
-> Setting the <xref:System.Windows.Forms.KeyEventArgs.Handled%2A> property in the <xref:System.Windows.Forms.Control.KeyDown> event handler does not prevent the <xref:System.Windows.Forms.Control.KeyPress> and <xref:System.Windows.Forms.Control.KeyUp> events from being raised for the current keystroke. Use the <xref:System.Windows.Forms.KeyEventArgs.SuppressKeyPress%2A> property for this purpose.
+> Setting the <xref:System.Windows.Forms.KeyEventArgs.Handled%2A> property in the <xref:System.Windows.Forms.Control.KeyDown> event handler doesn't prevent the <xref:System.Windows.Forms.Control.KeyPress> and <xref:System.Windows.Forms.Control.KeyUp> events from being raised for the current keystroke. Use the <xref:System.Windows.Forms.KeyEventArgs.SuppressKeyPress%2A> property for this purpose.
 
 The following example handles the <xref:System.Windows.Forms.Control.KeyPress> event to consume the `A` and `a` character keys. Those keys can't be typed into the text box:
 
@@ -42,17 +42,17 @@ The following example handles the <xref:System.Windows.Forms.Control.KeyPress> e
 
 ## Modify a non-character key
 
-You can only modify non-character key presses by inheriting from the control and overriding the <xref:System.Windows.Forms.Control.PreProcessMessage%2A> method. As the   input <xref:System.Windows.Forms.Message> is sent to the control, it's processed before the control raising events. You can intercept these messages to modify or block them.
+You can only modify non-character key presses by inheriting from the control and overriding the <xref:System.Windows.Forms.Control.PreProcessMessage%2A> method. As the input <xref:System.Windows.Forms.Message> is sent to the control, it's processed before the control raises events. You can intercept these messages to modify or block them.
 
-The following code example demonstrates how to use the <xref:System.Windows.Forms.Message.WParam%2A> property of the <xref:System.Windows.Forms.Message> parameter to change the key pressed. This code detects a key from <kbd>F1</kbd> through <kbd>F10</kbd> and translates the key into a numeric key ranging from <kbd>0</kbd> through <kbd>9</kbd> (where <kbd>F10</kbd> maps to <kbd>0</kbd>).
+The following code example demonstrates how to use the <xref:System.Windows.Forms.Message.WParam%2A?displayProperty=nameWithType> property of the `m` parameter to change the key pressed. This code detects a key from <kbd>F1</kbd> through <kbd>F10</kbd> and translates the key into a numeric key ranging from <kbd>0</kbd> through <kbd>9</kbd> (where <kbd>F10</kbd> maps to <kbd>0</kbd>).
 
 :::code language="csharp" source="snippets/how-to-change-key-press/csharp/NewTextBox.cs" id="PreProcessMessage":::
 :::code language="vb" source="snippets/how-to-change-key-press/vb/NewTextBox.vb" id="PreProcessMessage":::
 
 ## See also
 
-- [Overview of using the keyboard (Windows Forms .NET)](overview.md)
-- [Using keyboard events (Windows Forms .NET)](events.md)
+- [Overview of using the keyboard](overview.md)
+- [Using keyboard events](events.md)
 - <xref:System.Windows.Forms.Keys>
 - <xref:System.Windows.Forms.Control.KeyDown>
 - <xref:System.Windows.Forms.Control.KeyPress>

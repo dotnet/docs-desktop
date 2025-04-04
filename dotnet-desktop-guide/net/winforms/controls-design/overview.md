@@ -1,7 +1,7 @@
 ---
 title: Create custom controls overview
 description: Learn about the different types of custom controls you can create in Windows Forms for .NET.
-ms.date: 06/01/2023
+ms.date: 04/02/2025
 ms.topic: overview
 f1_keywords: 
   - "UserControl"
@@ -117,7 +117,7 @@ If you need to implement a custom design-time experience, you can author your ow
 
 Use the <xref:System.ComponentModel.DesignerAttribute> to associate your control with your designer.
 
-The following information is out of date but may help you.
+The following information is out of date but it might help you.
 
 - [(Visual Studio 2013) Extending Design-Time Support](/previous-versions/visualstudio/visual-studio-2013/37899azc(v=vs.120)).
 - [(Visual Studio 2013) How to: Create a Windows Forms Control That Takes Advantage of Design-Time Features](/previous-versions/visualstudio/visual-studio-2013/307hck25(v=vs.120)).

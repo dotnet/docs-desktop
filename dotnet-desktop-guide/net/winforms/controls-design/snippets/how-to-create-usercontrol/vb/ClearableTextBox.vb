@@ -21,6 +21,7 @@ Public Class ClearableTextBox
 
     '<text>
     <Browsable(True)>
+    <DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)>
     Public Shadows Property Text() As String
         Get
             Return txtValue.Text
@@ -33,6 +34,7 @@ Public Class ClearableTextBox
 
     '<title>
     <Browsable(True)>
+    <DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)>
     Public Property Title() As String
         Get
             Return lblTitle.Text

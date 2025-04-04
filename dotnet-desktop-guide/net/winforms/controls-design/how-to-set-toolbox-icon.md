@@ -1,7 +1,7 @@
 ---
 title: How to set the toolbox icon
 description: Learn how to assign your control's icon. The icon appears in the Visual Studio Toolbox.
-ms.date: 07/20/2023
+ms.date: 04/02/2025
 ms.topic: how-to
 dev_langs:
   - "csharp"

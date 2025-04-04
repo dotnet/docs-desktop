@@ -1,7 +1,7 @@
 ---
 title: "Overview of mouse input"
 description: Learn about how mouse input works in Windows Forms for .NET. Mouse events are raised by forms and controls and represent the position and button state of the mouse.
-ms.date: 10/26/2020
+ms.date: 04/02/2025
 ms.topic: overview
 helpviewer_keywords:
   - "Windows Forms, mouse input"
@@ -12,7 +12,7 @@ helpviewer_keywords:
 
 Receiving and handling mouse input is an important part of every Windows application. You can handle mouse events to carry out an action in your application, or use mouse location information to perform hit testing or other actions. Also, you can change the way the controls in your application handle mouse input. This article describes these mouse events in detail, and how to obtain and change system settings for the mouse.
 
-In Windows Forms, user input is sent to applications in the form of [Windows messages](/windows/win32/winmsg/about-messages-and-message-queues). A series of overridable methods process these messages at the application, form, and control level. When these methods receive mouse messages, they raise events that can be handled to get information about the mouse input. In many cases, Windows Forms applications can process all user input simply by handling these events. In other cases, an application may override one of the methods that process messages to intercept a particular message before it's received by the application, form, or control.
+In Windows Forms, user input is sent to applications in the form of [Windows messages](/windows/win32/winmsg/about-messages-and-message-queues). A series of overridable methods process these messages at the application, form, and control level. When these methods receive mouse messages, they raise events that can be handled to get information about the mouse input. In many cases, Windows Forms applications can process all user input simply by handling these events. In other cases, an application can override one of the methods that process messages to intercept a particular message before it's received by the application, form, or control.
 
 ## Mouse Events
 
@@ -22,13 +22,13 @@ All Windows Forms controls inherit a set of events related to mouse and keyboard
 
 When the user moves the mouse, the operating system moves the mouse pointer. The mouse pointer contains a single pixel, called the hot spot, which the operating system tracks and recognizes as the position of the pointer. When the user moves the mouse or presses a mouse button, the <xref:System.Windows.Forms.Control> that contains the <xref:System.Windows.Forms.Cursor.HotSpot%2A> raises the appropriate mouse event.
 
-You can obtain the current mouse position with the <xref:System.Windows.Forms.MouseEventArgs.Location%2A> property of the <xref:System.Windows.Forms.MouseEventArgs> when handling a mouse event or by using the <xref:System.Windows.Forms.Cursor.Position%2A> property of the <xref:System.Windows.Forms.Cursor> class. You can then use mouse location information to carry out hit-testing, and then perform an action based on the location of the mouse. Hit-testing capability is built in to several controls in Windows Forms such as the <xref:System.Windows.Forms.ListView>, <xref:System.Windows.Forms.TreeView>, <xref:System.Windows.Forms.MonthCalendar> and <xref:System.Windows.Forms.DataGridView> controls.
+You can obtain the current mouse position with the <xref:System.Windows.Forms.MouseEventArgs.Location%2A> property of the <xref:System.Windows.Forms.MouseEventArgs> when handling a mouse event or by using the <xref:System.Windows.Forms.Cursor.Position%2A> property of the <xref:System.Windows.Forms.Cursor> class. You can then use mouse location information to carry out hit-testing, and then perform an action based on the location of the mouse. Hit-testing capability is built in to several controls in Windows Forms such as the <xref:System.Windows.Forms.ListView>, <xref:System.Windows.Forms.TreeView>, <xref:System.Windows.Forms.MonthCalendar>, and <xref:System.Windows.Forms.DataGridView> controls.
 
-Used with the appropriate mouse event, <xref:System.Windows.Forms.Control.MouseHover> for example, hit-testing is very useful for determining when your application should do a specific action.
+Hit-testing is useful for determining when your application should do a specific action, when used with the appropriate mouse event, such as <xref:System.Windows.Forms.Control.MouseHover>.
 
 ## Changing mouse input settings
 
-You can detect and change the way a control handles mouse input by deriving from the control and using the <xref:System.Windows.Forms.Control.GetStyle%2A> and <xref:System.Windows.Forms.Control.SetStyle%2A> methods. The <xref:System.Windows.Forms.Control.SetStyle%2A> method takes a bitwise combination of <xref:System.Windows.Forms.ControlStyles> values to determine whether the control will have standard click, double-click behavior, or if the control will handle its own mouse processing. Also, the <xref:System.Windows.Forms.SystemInformation> class includes properties that describe the capabilities of the mouse and specify how the mouse interacts with the operating system. The following table summarizes these properties.
+You can detect and change the way a control handles mouse input by deriving from the control and using the <xref:System.Windows.Forms.Control.GetStyle%2A> and <xref:System.Windows.Forms.Control.SetStyle%2A> methods. The <xref:System.Windows.Forms.Control.SetStyle%2A> method takes a bitwise combination of <xref:System.Windows.Forms.ControlStyles> values to determine whether the control has standard click, double-click behavior, or if the control handles its own mouse processing. Also, the <xref:System.Windows.Forms.SystemInformation> class includes properties that describe the capabilities of the mouse and specify how the mouse interacts with the operating system. The following table summarizes these properties.
 
 | Property                                                               | Description                                                                                                                                                            |
 |------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -58,6 +58,6 @@ Forms and controls have access to the <xref:System.Windows.Forms.IMessageFilter>
 
 ## See also
 
-- [Using mouse events (Windows Forms .NET)](events.md)
-- [Drag-and-drop mouse behavior overview (Windows Forms .NET)](drag-and-drop.md)
-- [Manage mouse pointers (Windows Forms .NET)](how-to-manage-cursor-pointer.md)
+- [Using mouse events](events.md)
+- [Drag-and-drop mouse behavior overview](drag-and-drop.md)
+- [Manage mouse pointers](how-to-manage-cursor-pointer.md)

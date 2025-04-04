@@ -99,6 +99,7 @@ Public Class CustomerControl
 
     Public DataSourceChanged As EventHandler
 
+    <DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)>
     Public Property DataSource() As Object
         Get
             Return Me.dataGridView1.DataSource
@@ -111,6 +112,7 @@ Public Class CustomerControl
         End Set
     End Property
 
+    <DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)>
     Public Property DataMember() As String
         Get
             Return Me.dataGridView1.DataMember

@@ -1,4 +1,6 @@
-﻿Namespace DefaultTemplate
+﻿Imports System.ComponentModel
+
+Namespace DefaultTemplate
 
     ' <template>
     Public Class FirstControl
@@ -15,6 +17,8 @@
     Public Class SomethingElse : Inherits System.Windows.Forms.Control
         Private _textAlignment As HorizontalAlignment = HorizontalAlignment.Left
 
+
+#Disable Warning WFO1000 ' Missing code serialization configuration for property content
         ' <property>
         Public Property TextAlignment As HorizontalAlignment
             Get
@@ -27,6 +31,7 @@
             End Set
         End Property
         ' </property>
+#Enable Warning WFO1000 ' Missing code serialization configuration for property content
     End Class
 
 End Namespace

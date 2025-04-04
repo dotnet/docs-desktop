@@ -1,7 +1,7 @@
 ---
 title: "Using mouse events"
 description: Overview of using mouse events to handle mouse input. Each event may provide associated data. This article provides a list of mouse-related events.
-ms.date: 10/26/2020
+ms.date: 04/02/2025
 ms.topic: conceptual
 dev_langs: 
   - "csharp"
@@ -25,7 +25,7 @@ helpviewer_keywords:
 
 # Using mouse events (Windows Forms .NET)
 
-Most Windows Forms programs process mouse input by handling the mouse events. This article provides an overview of the mouse events, including details on when to use each event and the data that is supplied for each event. For more information about events in general, see [Events overview (Windows Forms .NET)](../forms/events.md).
+Most Windows Forms programs process mouse input by handling the mouse events. This article provides an overview of the mouse events, including details on when to use each event and the data that is supplied for each event. For more information about events in general, see [Events overview](../forms/events.md).
 
 ## Mouse events
 
@@ -43,7 +43,7 @@ The primary way to respond to mouse input is to handle mouse events. The followi
 | <xref:System.Windows.Forms.Control.MouseLeave>       | This event occurs when the mouse pointer leaves the border or client area of the control, depending on the type of the control. The handler for this event receives an argument of type <xref:System.EventArgs>.                                                                                                                                                 |
 | <xref:System.Windows.Forms.Control.MouseMove>        | This event occurs when the mouse pointer moves while it is over a control. The handler for this event receives an argument of type <xref:System.Windows.Forms.MouseEventArgs>.                                                                                                                                                                                   |
 | <xref:System.Windows.Forms.Control.MouseUp>          | This event occurs when the mouse pointer is over the control and the user releases a mouse button. The handler for this event receives an argument of type <xref:System.Windows.Forms.MouseEventArgs>.                                                                                                                                                           |
-| <xref:System.Windows.Forms.Control.MouseWheel>       | This event occurs when the user rotates the mouse wheel while the control has focus. The handler for this event receives an argument of type <xref:System.Windows.Forms.MouseEventArgs>. You can use the <xref:System.Windows.Forms.MouseEventArgs.Delta%2A> property of <xref:System.Windows.Forms.MouseEventArgs> to determine how far the mouse has scrolled. |
+| <xref:System.Windows.Forms.Control.MouseWheel>       | This event occurs when the user rotates the mouse wheel while the control has focus. The handler for this event receives an argument of type <xref:System.Windows.Forms.MouseEventArgs>. Use the <xref:System.Windows.Forms.MouseEventArgs.Delta%2A?displayProperty=nameWithType> property to determine how far the mouse scrolled. |
 
 ## Mouse information
 
@@ -53,7 +53,7 @@ If you want to know the current state of the mouse buttons or the location of th
 
 ## Converting Between Screen and Client Coordinates
 
-Because some mouse location information is in client coordinates and some is in screen coordinates, you may need to convert a point from one coordinate system to the other. You can do this easily by using the <xref:System.Windows.Forms.Control.PointToClient%2A> and <xref:System.Windows.Forms.Control.PointToScreen%2A> methods available on the <xref:System.Windows.Forms.Control> class.
+Because some mouse location information is in client coordinates and some is in screen coordinates, you might need to convert a point from one coordinate system to the other. You can do this easily by using the <xref:System.Windows.Forms.Control.PointToClient%2A> and <xref:System.Windows.Forms.Control.PointToScreen%2A> methods available on the <xref:System.Windows.Forms.Control> class.
 
 ## Standard Click event behavior
 
@@ -108,7 +108,7 @@ The following controls don't conform to the standard mouse click event behavior:
 - <xref:System.Windows.Forms.ListView> control
 
   > [!NOTE]
-  > The event behavior detailed later occurs only when the user clicks on the items in the <xref:System.Windows.Forms.ListView> control. No events are raised for clicks anywhere else on the control. In addition to the events described later, there are the <xref:System.Windows.Forms.ListView.BeforeLabelEdit> and <xref:System.Windows.Forms.ListView.AfterLabelEdit> events, which may be of interest to you if you want to use validation with the <xref:System.Windows.Forms.ListView> control.
+  > The event behavior detailed later occurs only when the user clicks on the items in the <xref:System.Windows.Forms.ListView> control. No events are raised for clicks anywhere else on the control. In addition to the events described later, there are the <xref:System.Windows.Forms.ListView.BeforeLabelEdit> and <xref:System.Windows.Forms.ListView.AfterLabelEdit> events, which might be of interest to you if you want to use validation with the <xref:System.Windows.Forms.ListView> control.
 
   - **Left click**: <xref:System.Windows.Forms.Control.Click>, <xref:System.Windows.Forms.Control.MouseClick>
   - **Right click**: <xref:System.Windows.Forms.Control.Click>, <xref:System.Windows.Forms.Control.MouseClick>
@@ -139,11 +139,11 @@ Toggle controls, such as the controls deriving from the <xref:System.Windows.For
 01. The <xref:System.Windows.Forms.Control.MouseUp> event is raised.
 
     > [!NOTE]
-    > If the user moves the pointer out of the toggle control while the mouse button is down (such as moving the mouse off the <xref:System.Windows.Forms.Button> control while it is pressed), the toggle control will paint in the raised state and only the <xref:System.Windows.Forms.Control.MouseUp> event occurs. The <xref:System.Windows.Forms.Control.Click> or <xref:System.Windows.Forms.Control.MouseClick> events will not occur in this situation.
+    > If the user moves the pointer out of the toggle control while the mouse button is down (such as moving the mouse off the <xref:System.Windows.Forms.Button> control while it's pressed), the toggle control paints in the raised state and only the <xref:System.Windows.Forms.Control.MouseUp> event occurs. The <xref:System.Windows.Forms.Control.Click> or <xref:System.Windows.Forms.Control.MouseClick> events won't occur in this situation.
 
 ## See also
 
-- [Overview of using the mouse (Windows Forms .NET)](overview.md)
-- [Manage mouse pointers (Windows Forms .NET)](how-to-manage-cursor-pointer.md)
-- [How to simulate mouse events (Windows Forms .NET)](how-to-simulate-events.md)
+- [Overview of using the mouse](overview.md)
+- [Manage mouse pointers](how-to-manage-cursor-pointer.md)
+- [How to simulate mouse events](how-to-simulate-events.md)
 - <xref:System.Windows.Forms.Control?displayProperty=nameWithType>

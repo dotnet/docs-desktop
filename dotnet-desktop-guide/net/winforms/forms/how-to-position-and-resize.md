@@ -1,7 +1,7 @@
 ---
 title: "Position and resize a form"
 description: "Learn how to set the size and position of a form in .NET Windows Forms and Visual Studio. The size and location can either be set in the Visual Studio designer or through code."
-ms.date: 10/26/2020
+ms.date: 04/02/2025
 dev_langs:
   - "csharp"
   - "vb"
@@ -20,7 +20,7 @@ You can change the size of a form at design time with Visual Studio, and at run 
 
 ## Resize with the designer
 
-After [adding a new form](how-to-add.md) to the project, the size of a form is set in two different ways. First, you can set it with the size grips in the designer. By dragging either the right edge, bottom edge, or the corner, you can resize the form.
+After a [new form is added](how-to-add.md) to the project, the size of a form is set in two different ways. First, you can set it with the size grips in the designer. By dragging either the right edge, bottom edge, or the corner, you can resize the form.
 
 :::image type="content" source="media/how-to-position-and-resize/designer-grips.png" alt-text="Right click solution explorer to add new form to windows forms project with grips":::
 
@@ -87,7 +87,7 @@ When a form instance is created and displayed, the initial location of the form 
 | WindowsDefaultBounds   | The form is positioned at the Windows default location and is resized to the default size determined by Windows. |
 | WindowsDefaultLocation | The form is positioned at the Windows default location and isn't resized.                                        |
 
-The [CenterParent](xref:System.Windows.Forms.FormStartPosition.CenterParent) value only works with forms that are either a multiple document interface (MDI) child form, or a normal form that is displayed with the <xref:System.Windows.Window.ShowDialog%2A> method. `CenterParent` has no affect on a normal form that is displayed with the <xref:System.Windows.Window.Show%2A> method. To center a form (`form` variable) to another form (`parentForm` variable), use the following code:
+The [CenterParent](xref:System.Windows.Forms.FormStartPosition.CenterParent) value only works with forms that are either a multiple document interface (MDI) child form, or a normal form that is displayed with the <xref:System.Windows.Window.ShowDialog%2A> method. `CenterParent` has no effect on a normal form that is displayed with the <xref:System.Windows.Window.Show%2A> method. To center a form (`form` variable) to another form (`parentForm` variable), use the following code:
 
 ```csharp
 form.StartPosition = FormStartPosition.Manual;
@@ -149,6 +149,6 @@ If the `Location` isn't set, the form's default position is based on what the `S
 
 ## See also
 
-- [How to add a form to a project (Windows Forms .NET)](how-to-add.md)
-- [Events overview (Windows Forms .NET)](events.md)
-- [Position and layout of controls (Windows Forms .NET)](../controls/layout.md)
+- [How to add a form to a project](how-to-add.md)
+- [Events overview](events.md)
+- [Position and layout of controls](../controls/layout.md)

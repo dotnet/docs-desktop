@@ -1,7 +1,7 @@
 ---
 title: "How to print multi-page text file"
 description: Learn how to print multiple page text file (Windows Forms .NET).
-ms.date: "05/04/2022"
+ms.date: 04/02/2025
 dev_langs: 
   - "csharp"
   - "vb"
@@ -18,13 +18,13 @@ ms.custom: devdivchpfy22
 It's common for Windows-based applications to print text. The <xref:System.Drawing.Graphics> class provides methods for drawing objects (graphics or text) to a device, such as a screen or printer. The following section describes in detail the process to print text file. This method doesn't support printing non-plain text files, such as an Office Word document or a _PDF_ file.
 
 > [!NOTE]
-> The <xref:System.Windows.Forms.TextRenderer.DrawText%2A> methods of <xref:System.Windows.Forms.TextRenderer> are not supported for printing. You should always use the <xref:System.Drawing.Graphics.DrawString%2A> methods of <xref:System.Drawing.Graphics>, as shown in the following code example, to draw text for printing purposes.
+> The <xref:System.Windows.Forms.TextRenderer.DrawText%2A> methods of <xref:System.Windows.Forms.TextRenderer> aren't supported for printing. You should always use the <xref:System.Drawing.Graphics.DrawString%2A> methods of <xref:System.Drawing.Graphics>, as shown in the following code example, to draw text for printing purposes.
 
 ## To print text
 
-01. In Visual Studio, double-click the form you want to print from, in the **Solution Explorer** pane. This opens the Visual Designer.
+01. In Visual Studio, double-click the form you want to print from, in the **Solution Explorer** pane. This action opens the Visual Designer.
 
-01. From the **Toolbox**, double-click the <xref:System.Drawing.Printing.PrintDocument> component to add it to the form. This should create a `PrintDocument` component with the name `printDocument1`.
+01. From the **Toolbox**, double-click the <xref:System.Drawing.Printing.PrintDocument> component to add it to the form. This action creates a `PrintDocument` component with the name `printDocument1`.
 
 01. Either add a `Button` to the form, or use a button that is already on the form.
 
@@ -36,7 +36,7 @@ It's common for Windows-based applications to print text. The <xref:System.Drawi
 
     :::code language="vb" source="snippets/how-to-print-text-document/vb/Form1.vb" id="add_string_to_your_form":::
 
-01. Back in the `Click` event handler code, set the <xref:System.Drawing.Printing.PrintDocument.DocumentName%2A> property to the name of the document. This information is sent to the printer. Next, read the document text content and store it in the `stringToPrint` string. Finally, call the <xref:System.Drawing.Printing.PrintDocument.Print%2A> method to raise the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event. The `Print` method is highlighted below.
+01. Back in the `Click` event handler code, set the <xref:System.Drawing.Printing.PrintDocument.DocumentName%2A> property to the name of the document. This information is sent to the printer. Next, read the document text content and store it in the `stringToPrint` string. Finally, call the <xref:System.Drawing.Printing.PrintDocument.Print%2A> method to raise the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event. The `Print` method is highlighted in the following code:
 
     :::code language="csharp" source="snippets/how-to-print-text-document/csharp/Form1.cs" id="set_DocumentName_and_string" highlight= "11":::
 

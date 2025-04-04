@@ -1,7 +1,7 @@
 ---
 title: "User input validation"
 description: Learn about several ways that you can use Windows Forms to validate user input in your applications.
-ms.date: 10/26/2020
+ms.date: 04/02/2025
 ms.topic: overview
 helpviewer_keywords: 
   - "Windows Forms, validating user input"
@@ -11,11 +11,11 @@ helpviewer_keywords:
 ---
 # Overview of how to validate user input (Windows Forms .NET)
 
-When users enter data into your application, you may want to verify that the data is valid before your application uses it. You may require that certain text fields not be zero-length, that a field formatted as a telephone number, or that a string doesn't contain invalid characters. Windows Forms provides several ways for you to validate input in your application.
+When users enter data into your application, you can verify that the data is valid before your application uses it. You might require that certain text fields not be zero-length, that a field formatted as a telephone number, or that a string doesn't contain invalid characters. Windows Forms provides several ways for you to validate input in your application.
 
 ## MaskedTextBox Control
 
-If you need to require users to enter data in a well-defined format, such as a telephone number or a part number, you can accomplish this quickly and with minimal code by using the <xref:System.Windows.Forms.MaskedTextBox> control. A *mask* is a string made up of characters from a masking language that specifies which characters can be entered at any given position in the text box. The control displays a set of prompts to the user. If the user types an incorrect entry, for example, the user types a letter when a digit is required, the control will automatically reject the input.
+If you need to require users to enter data in a well-defined format, such as a telephone number or a part number, you can accomplish this quickly and with minimal code by using the <xref:System.Windows.Forms.MaskedTextBox> control. A *mask* is a string made up of characters from a masking language that specifies which characters can be entered at any given position in the text box. The control displays a set of prompts to the user. If the user types an incorrect entry, for example, the user types a letter when a digit is required, the control automatically rejects the input.
 
 The masking language that is used by <xref:System.Windows.Forms.MaskedTextBox> is flexible. It allows you to specify required characters, optional characters, literal characters, such as hyphens and parentheses, currency characters, and date separators. The control also works well when bound to a data source. The <xref:System.Windows.Forms.Binding.Format> event on a data binding can be used to reformat incoming data to comply with the mask, and the <xref:System.Windows.Forms.Binding.Parse> event can be used to reformat outgoing data to comply with the specifications of the data field.
 
@@ -24,7 +24,7 @@ For more information, see [MaskedTextBox Control](./controls/maskedtextbox-contr
 
 ## Event-driven validation
 
-If you want full programmatic control over validation, or need complex validation checks, you should use the validation events that are built into most Windows Forms controls. Each control that accepts free-form user input has a <xref:System.Windows.Forms.Control.Validating> event that will occur whenever the control requires data validation. In the <xref:System.Windows.Forms.Control.Validating> event-handling method, you can validate user input in several ways. For example, if you have a text box that must contain a postal code, you can do the validation in the following ways:
+If you want full programmatic control over validation, or need complex validation checks, you should use the validation events that are built into most Windows Forms controls. Each control that accepts free-form user input has a <xref:System.Windows.Forms.Control.Validating> event that's raised whenever the control requires data validation. In the <xref:System.Windows.Forms.Control.Validating> event handler code, you can validate user input in several ways. For example, if you have a text box that must contain a postal code, you can do the validation in the following ways:
 
 - If the postal code must belong to a specific group of zip codes, you can do a string comparison on the input to validate the data entered by the user. For example, if the postal code must be in the set `{10001, 10002, 10003}`, then you can use a string comparison to validate the data.
 
@@ -32,7 +32,7 @@ If you want full programmatic control over validation, or need complex validatio
 
 - If the postal code must be a valid United States Zip code, you could call a Zip code Web service to validate the data entered by the user.
 
-The <xref:System.Windows.Forms.Control.Validating> event is supplied an object of type <xref:System.ComponentModel.CancelEventArgs>. If you determine that the control's data isn't valid, cancel the <xref:System.Windows.Forms.Control.Validating> event by setting this object's <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property to `true`. If you don't set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property, Windows Forms will assume that validation succeeded for that control and raise the <xref:System.Windows.Forms.Control.Validated> event.
+The <xref:System.Windows.Forms.Control.Validating> event is supplied an object of type <xref:System.ComponentModel.CancelEventArgs>. If you determine that the control's data isn't valid, cancel the <xref:System.Windows.Forms.Control.Validating> event by setting this object's <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property to `true`. If you don't set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property, Windows Forms assumes that validation succeeded for that control and raises the <xref:System.Windows.Forms.Control.Validated> event.
 
 For a code example that validates an email address in a <xref:System.Windows.Controls.TextBox>, see the <xref:System.Windows.Forms.Control.Validating> event reference.
 
@@ -53,9 +53,9 @@ So when does a control's data get validated? This is up to you, the developer. Y
 
 The implicit validation approach validates data as the user enters it. Validate the data by reading the keys as they're pressed, or more commonly whenever the user takes the input focus away from the control. This approach is useful when you want to give the user immediate feedback about the data as they're working.
 
-If you want to use implicit validation for a control, you must set that control's <xref:System.Windows.Forms.ContainerControl.AutoValidate%2A> property to <xref:System.Windows.Forms.AutoValidate.EnablePreventFocusChange> or <xref:System.Windows.Forms.AutoValidate.EnableAllowFocusChange>. If you cancel the <xref:System.Windows.Forms.Control.Validating> event, the behavior of the control will be determined by what value you assigned to <xref:System.Windows.Forms.ContainerControl.AutoValidate%2A>. If you assigned <xref:System.Windows.Forms.AutoValidate.EnablePreventFocusChange>, canceling the event will cause the <xref:System.Windows.Forms.Control.Validated> event not to occur. Input focus will remain on the current control until the user changes the data to a valid format. If you assigned <xref:System.Windows.Forms.AutoValidate.EnableAllowFocusChange>, the <xref:System.Windows.Forms.Control.Validated> event won't occur when you cancel the event, but focus will still change to the next control.
+If you want to use implicit validation for a control, you must set that control's <xref:System.Windows.Forms.ContainerControl.AutoValidate%2A> property to <xref:System.Windows.Forms.AutoValidate.EnablePreventFocusChange> or <xref:System.Windows.Forms.AutoValidate.EnableAllowFocusChange>. If you cancel the <xref:System.Windows.Forms.Control.Validating> event, the behavior of the control will be determined by what value you assigned to <xref:System.Windows.Forms.ContainerControl.AutoValidate%2A>. If you assigned <xref:System.Windows.Forms.AutoValidate.EnablePreventFocusChange>, canceling the event prevents the <xref:System.Windows.Forms.Control.Validated> event from occurring. Input focus remains on the current control until the user changes the data to a valid format. If you assigned <xref:System.Windows.Forms.AutoValidate.EnableAllowFocusChange>, the <xref:System.Windows.Forms.Control.Validated> event won't occur when you cancel the event, but focus will still change to the next control.
 
-Assigning <xref:System.Windows.Forms.AutoValidate.Disable> to the <xref:System.Windows.Forms.ContainerControl.AutoValidate%2A> property prevents implicit validation altogether. To validate your controls, you'll have to use explicit validation.
+Assigning <xref:System.Windows.Forms.AutoValidate.Disable> to the <xref:System.Windows.Forms.ContainerControl.AutoValidate%2A> property prevents implicit validation altogether. To validate your controls, use explicit validation.
 
 ### Explicit validation
 
@@ -89,11 +89,11 @@ When a control maintains focus because the data it contains is invalid, it's imp
 However, in some cases, you might want to let the user close the form regardless of whether the values in the controls are valid. You can override validation and close a form that still contains invalid data by creating a handler for the form's <xref:System.Windows.Forms.Form.FormClosing> event. In the event, set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property to `false`. This forces the form to close. For more information and an example, see <xref:System.Windows.Forms.Form.FormClosing?displayProperty=nameWithType>.
 
 > [!NOTE]
-> If you force the form to close in this manner, any data in the form's controls that has not already been saved is lost. In addition, modal forms don't validate the contents of controls when they're closed. You can still use control validation to lock focus to a control, but you don't have to be concerned about the behavior associated with closing the form.
+> If you force the form to close in this manner, unsaved data is lost. In addition, modal forms don't validate the contents of controls when they're closed. You can still use control validation to lock focus to a control, but you don't have to be concerned about the behavior associated with closing the form.
 
 ## See also
 
-- [Using keyboard events (Windows Forms .NET)](events.md)
+- [Using keyboard events](events.md)
 - <xref:System.Windows.Forms.Control.Validating?displayProperty=nameWithType>
 - <xref:System.Windows.Forms.Form.FormClosing?displayProperty=nameWithType>
 - <xref:System.Windows.Forms.FormClosingEventArgs?displayProperty=nameWithType>
