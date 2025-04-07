@@ -31,25 +31,29 @@ To apply the optimization, set the `Switch.System.Drawing.Printing.OptimizePrint
 
 # [.NET](#tab/dotnet)
 
-The option can be set in the runtimeconfig.json configuration file or the project file of an app:
+The option can be set in the _runtimeconfig.json_ configuration file or the project file of an app:
 
-- **Set in the project file.**
+- **Configure a default in project file.**
 
-  As an alternative to using the _runtimeconfig.template.json_ file, apply the setting in the project file. Add the `<RuntimeHostConfigurationOption>` setting to an `<ItemGroup>`:
+  To apply the setting in the project file, enable runtime config generation by setting `<GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>` to in a `<PropertyGroup>`. Then, add the `<RuntimeHostConfigurationOption>` setting to an `<ItemGroup>`:
 
   ```xml
   <Project Sdk="Microsoft.NET.Sdk">
-  
+
     <!-- Other project settings ... -->  
-  
-    <ItemGroup>
+
+    <PropertyGroup>
+      <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
+    </PropertyGroup>
+
+    <ItemGroup>      
       <RuntimeHostConfigurationOption Include="Switch.System.Drawing.Printing.OptimizePrintPreview" Value="true" />
     </ItemGroup>
-  
+
   </Project>
   ```
 
-- **Set in the _runtimeconfig.template.json_ source file.**
+- **Configure a default in the _runtimeconfig.template.json_ source file.**
 
   To configure the default setting for your app, apply the setting in the _runtimeconfig.template.json_ source file. When the app is compiled or published, the template file is used to generate a runtime config file.
 
@@ -63,7 +67,7 @@ The option can be set in the runtimeconfig.json configuration file or the projec
 
   For more information about runtime config, see [.NET runtime configuration settings](/dotnet/core/runtime-config/).
 
-- **Set in the _{appname}.runtimeconfig.json_ output file.**
+- **Configure a published app with the _{appname}.runtimeconfig.json_ output file.**
 
   To configure the published app, apply the setting in the _{appname}.runtimeconfig.json_ file's `runtimeOptions/configProperties` section.
 
