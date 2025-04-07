@@ -31,53 +31,53 @@ To apply the optimization, set the `Switch.System.Drawing.Printing.OptimizePrint
 
 # [.NET](#tab/dotnet)
 
-The option can be set in the runtimeconfig.json configuration file or the project file for the app:
+The option can be set in the runtimeconfig.json configuration file or the project file of an app:
 
-### The _runtimeconfig.template.json_ source file
+- Set in the _runtimeconfig.template.json_ source file.
 
-To configure the default setting for your app, apply the setting in the _runtimeconfig.template.json_ source file. When the app is compiled or published, the template file is used to generate a runtime config file. Alternatively you can [apply the setting in the project file](#apply-the-setting-in-the-project-file).
+  To configure the default setting for your app, apply the setting in the _runtimeconfig.template.json_ source file. When the app is compiled or published, the template file is used to generate a runtime config file. Alternatively you can [apply the setting in the project file](#apply-the-setting-in-the-project-file).
 
-```json
-{
-  "configProperties": {
-    "Switch.System.Drawing.Printing.OptimizePrintPreview": true
-  }
-}
-```
-
-For more information about runtime config, see [.NET runtime configuration settings](/dotnet/core/runtime-config/).
-
-### Configure the _{appname}.runtimeconfig.json_ output file
-
-To configure the published app, apply the setting in the _{appname}.runtimeconfig.json_ file's `runtimeOptions/configProperties` section.
-
-```json
-{
-  "runtimeOptions": {
+  ```json
+  {
     "configProperties": {
-      "Switch.System.Drawing.Printing.OptimizePrintPreview": true,
+      "Switch.System.Drawing.Printing.OptimizePrintPreview": true
     }
   }
-}
-```
+  ```
 
-For more information about runtime config, see [.NET runtime configuration settings](/dotnet/core/runtime-config/).
+  For more information about runtime config, see [.NET runtime configuration settings](/dotnet/core/runtime-config/).
 
-### Apply the setting in the project file
+- Set in the _{appname}.runtimeconfig.json_ output file.
 
-As an alternative to using the _runtimeconfig.template.json_ file, apply the setting in the project file. Add the `<RuntimeHostConfigurationOption>` setting to an `<ItemGroup>`:
+  To configure the published app, apply the setting in the _{appname}.runtimeconfig.json_ file's `runtimeOptions/configProperties` section.
 
-```xml
-<Project Sdk="Microsoft.NET.Sdk">
+  ```json
+  {
+    "runtimeOptions": {
+      "configProperties": {
+        "Switch.System.Drawing.Printing.OptimizePrintPreview": true,
+      }
+    }
+  }
+  ```
 
-  <!-- Other project settings ... -->  
+  For more information about runtime config, see [.NET runtime configuration settings](/dotnet/core/runtime-config/).
 
-  <ItemGroup>
-    <RuntimeHostConfigurationOption Include="Switch.System.Drawing.Printing.OptimizePrintPreview" Value="true" />
-  </ItemGroup>
+- Set in the project file.
 
-</Project>
-```
+  As an alternative to using the _runtimeconfig.template.json_ file, apply the setting in the project file. Add the `<RuntimeHostConfigurationOption>` setting to an `<ItemGroup>`:
+
+  ```xml
+  <Project Sdk="Microsoft.NET.Sdk">
+  
+    <!-- Other project settings ... -->  
+  
+    <ItemGroup>
+      <RuntimeHostConfigurationOption Include="Switch.System.Drawing.Printing.OptimizePrintPreview" Value="true" />
+    </ItemGroup>
+  
+  </Project>
+  ```
 
 # [.NET Framework](#tab/dotnetframework)
 
