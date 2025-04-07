@@ -1,7 +1,7 @@
 ---
 title: "PrintPreviewDialog Control Overview"
 description: This article provides an overview of the PrintPreviewDialog control in Windows Forms, which is a preconfigured dialog box.
-ms.date: 03/31/2025
+ms.date: 04/07/2025
 f1_keywords:
   - "PrintPreviewDialog"
 helpviewer_keywords:
@@ -25,7 +25,63 @@ Under the following conditions, the <xref:System.Windows.Forms.PrintPreviewDialo
 - A network printer is used.
 - User preferences for this printer, such as duplex settings, are modified.
 
-Add the following switch to the [`<AppContextSwitchOverrides>`](/dotnet/framework/configure-apps/file-schema/runtime/appcontextswitchoverrides-element) element in the [`<runtime>`](/dotnet/framework/configure-apps/file-schema/runtime/index) section of your app config file:
+The optimization isn't applied if you use the <xref:System.Drawing.Printing.PrintDocument.QueryPageSettings> event to modify page settings.
+
+To apply the optimization, set the `Switch.System.Drawing.Printing.OptimizePrintPreview` runtime config option to `true`.
+
+# [.NET](#tab/dotnet)
+
+The option can be set in the runtimeconfig.json configuration file or the project file for the app:
+
+### The _runtimeconfig.template.json_ source file
+
+To configure the default setting for your app, apply the setting in the _runtimeconfig.template.json_ source file. When the app is compiled or published, the template file is used to generate a runtime config file. Alternatively you can [apply the setting in the project file](#apply-the-setting-in-the-project-file).
+
+```json
+{
+  "configProperties": {
+    "Switch.System.Drawing.Printing.OptimizePrintPreview": true
+  }
+}
+```
+
+For more information about runtime config, see [.NET runtime configuration settings](/dotnet/core/runtime-config/).
+
+### Configure the _{appname}.runtimeconfig.json_ output file
+
+To configure the published app, apply the setting in the _{appname}.runtimeconfig.json_ file's `runtimeOptions/configProperties` section.
+
+```json
+{
+  "runtimeOptions": {
+    "configProperties": {
+      "Switch.System.Drawing.Printing.OptimizePrintPreview": true,
+    }
+  }
+}
+```
+
+For more information about runtime config, see [.NET runtime configuration settings](/dotnet/core/runtime-config/).
+
+### Apply the setting in the project file
+
+As an alternative to using the _runtimeconfig.template.json_ file, apply the setting in the project file. Add the `<RuntimeHostConfigurationOption>` setting to an `<ItemGroup>`:
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- Other project settings ... -->  
+
+  <ItemGroup>
+    <RuntimeHostConfigurationOption Include="Switch.System.Drawing.Printing.OptimizePrintPreview" Value="true" />
+  </ItemGroup>
+
+</Project>
+```
+
+# [.NET Framework](#tab/dotnetframework)
+
+Add the following switch to the [`<AppContextSwitchOverrides>`](/dotnet/framework/configure-apps/file-schema/runtime/appcontextswitchoverrides-element) element in the [`<runtime>`](/dotnet/framework/configure-apps/file-schema/runtime/index) section of the app config file:
 
 ```xml
 <runtime >
@@ -33,8 +89,6 @@ Add the following switch to the [`<AppContextSwitchOverrides>`](/dotnet/framewor
    <AppContextSwitchOverrides value="Switch.System.Drawing.Printing.OptimizePrintPreview=true" />
 </runtime >
 ```
-
-The optimization isn't applied if you use the <xref:System.Drawing.Printing.PrintDocument.QueryPageSettings> event to modify page settings.
 
 > [!TIP]
 > If .NET Framework 4.5.2 (no longer supported) is installed, enable the optimization by adding the following key to the `<appSettings>` section of your configuration file to improve the performance of <xref:System.Windows.Forms.PrintPreviewDialog> control initialization:
@@ -44,6 +98,8 @@ The optimization isn't applied if you use the <xref:System.Drawing.Printing.Prin
 >    <add key="EnablePrintPreviewOptimization" value="true" />
 > </appSettings>
 > ```
+
+---
 
 ## See also
 
