@@ -63,7 +63,7 @@ Button1.AccessibleName = "Order"
 
 ## AccessibleRole Property
 
-This property, which contains an <xref:System.Windows.Forms.AccessibleRole> enumeration, describes the user interface role of the control. A new control has the value set to `Default`. This would mean that by default, a `Button` control acts as a `Button`. Setting this property to another value might help if the control has another role. For example, you might be using a `PictureBox` control to display a chart, and you might want accessibility aids to report the role as a `Chart`, not as a `PictureBox`. You may also want to specify this property for your custom controls. This property may be set in the Properties window, or in code as follows:
+This property, which contains an <xref:System.Windows.Forms.AccessibleRole> enumeration, describes the user interface role of the control. A new control has the value set to `Default`. This means that by default, a `Button` control acts as a `Button`. Setting this property to another value might help if the control has another role. For example, you might be using a `PictureBox` control to display a chart, and you might want accessibility aids to report the role as a `Chart`, not as a `PictureBox`. You might also want to specify this property for your custom controls. You can set this property in the Properties window, or in code as follows:
 
 ```csharp
 pictureBox1.AccessibleRole = AccessibleRole.Chart;
