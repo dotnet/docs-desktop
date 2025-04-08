@@ -15,18 +15,20 @@ ms.custom: devdivchpfy22
 
 # How to print a Form (Windows Forms .NET)
 
-As part of the development process, you typically will want to print a copy of your Windows Form. The following code example shows how to print a copy of the current form by using the <xref:System.Drawing.Graphics.CopyFromScreen%2A> method.
+In the course of designing an app, you might design a form in such a way that it represents a printed page. The following code example shows how to print a copy of the current form by using the <xref:System.Drawing.Graphics.CopyFromScreen%2A> method.
 
 ## Example
 
 To run the example code, add two components to a form with the following settings:
 
-| Object            | Property\Event | Value            |
-|-------------------|----------------|------------------|
-| **Button**        | `Name`         | `Button1`        |
-|                   | `Click`        | `Button1_Click`  |
-| **PrintDocument** | `Name`         | `PrintDocument1` |
-|                   | `PrintPage`    | `PrintDocument1_PrintPage` |
+> [!div class="mx-tableNormal"]
+>
+> | Object            | Property\Event | Value            |
+> |-------------------|----------------|------------------|
+> | **Button**        | `Name`         | `Button1`        |
+> |                   | `Click`        | `Button1_Click`  |
+> | **PrintDocument** | `Name`         | `PrintDocument1` |
+> |                   | `PrintPage`    | `PrintDocument1_PrintPage` |
 
 The following code is run when the `Button1` is clicked. The code creates a `Graphics` object from the form and saves its contents to a `Bitmap` variable named `memoryImage`. The <xref:System.Drawing.Printing.PrintDocument.Print%2A?displayProperty=nameWithType> method is called, which invokes the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event. The print event handler draws the `memoryImage` bitmap on the printer page's `Graphics` object. When the print event handler code returns, the page is printed.
 
@@ -36,10 +38,9 @@ The following code is run when the `Button1` is clicked. The code creates a `Gra
 
 ## Robust programming
 
-The following conditions may cause an exception:
+The following conditions cause an exception:
 
 - You don't have permission to access the printer.
-
 - There's no printer installed.
 
 ## .NET security

@@ -1,7 +1,7 @@
 ---
 title: How to create a user control
 description: This article teaches you how to create a user control, known as a composite control, that you can add to other forms.
-ms.date: 06/19/2023
+ms.date: 04/02/2025
 ms.topic: how-to
 no-loc: ["UserControl", "UserControl1", "UserControlProject", "Label", "Button", "Form", "TextBox"]
 dev_langs:
@@ -47,6 +47,7 @@ The user control is made up of _constituent controls_, which are the controls yo
 01. With the designer open, the user control design surface should be the selected object. If it's not, click on the design surface to select it. Set the following properties in the **Properties** window:
 
     > [!div class="mx-tableNormal"]
+    >
     > | Property    | Value      |
     > |-------------|------------|
     > | MinimumSize | `84, 53`   |
@@ -55,6 +56,7 @@ The user control is made up of _constituent controls_, which are the controls yo
 01. Add a **Label** control. Set the following properties:
 
     > [!div class="mx-tableNormal"]
+    >
     > | Property  | Value     |
     > |----------|------------|
     > | Name     | `lblTitle` |
@@ -63,6 +65,7 @@ The user control is made up of _constituent controls_, which are the controls yo
 01. Add a **TextBox** control. Set the following properties:
 
     > [!div class="mx-tableNormal"]
+    >
     > | Property  | Value     |
     > |----------|------------|
     > | Name     | `txtValue` |
@@ -73,6 +76,7 @@ The user control is made up of _constituent controls_, which are the controls yo
 01. Add a **Button** control. Set the following properties:
 
     > [!div class="mx-tableNormal"]
+    >
     > | Property  | Value     |
     > |----------|------------|
     > | Name     | `btnClear` |
@@ -132,6 +136,7 @@ If you created a new project in the last section, you have a blank Form named **
 01. Select one control and set the following properties:
 
     > [!div class="mx-tableNormal"]
+    >
     > | Property  | Value         |
     > |----------|----------------|
     > | Name     | `ctlFirstName` |
@@ -142,6 +147,7 @@ If you created a new project in the last section, you have a blank Form named **
 01. Select the other control and set the following properties:
 
     > [!div class="mx-tableNormal"]
+    >
     > | Property  | Value        |
     > |----------|---------------|
     > | Name     | `ctlLastName` |
@@ -152,6 +158,7 @@ If you created a new project in the last section, you have a blank Form named **
 01. Back in the **Toolbox** window, add a label control to the form, and set the following properties:
 
     > [!div class="mx-tableNormal"]
+    >
     > | Property  | Value        |
     > |----------|---------------|
     > | Name     | `lblFullName` |

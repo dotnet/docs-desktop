@@ -18,6 +18,7 @@ namespace UserControlProject
 
         //<text>
         [Browsable(true)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         public new string Text
         {
             get => txtValue.Text;
@@ -27,6 +28,7 @@ namespace UserControlProject
 
         //<title>
         [Browsable(true)]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         public string Title
         {
             get => lblTitle.Text;

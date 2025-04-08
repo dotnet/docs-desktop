@@ -1,7 +1,7 @@
 ---
 title: User control guidelines
 description: This article offers practical advice on how to design your user control for Windows Forms.
-ms.date: 08/08/2023
+ms.date: 04/02/2025
 ms.topic: overview
 dev_langs:
   - "csharp"
@@ -26,23 +26,26 @@ Events commonly communicate state change and alert you to how the user is intera
 When defining your own events, follow these suggestions:
 
 - Use the <xref:System.EventHandler> event delegate when you define an event that doesn't have any associated data. Use the <xref:System.EventHandler%601> event delegate when you do have associated data.
-- Derive from <xref:System.EventArgs> and extend it with your data, when you raise an event with associated data.
+- Derive from <xref:System.EventArgs> and extend it with your event-related data.
 - Pass the control instance as the `sender` parameter.
 - Create a method named `On{EventName}` that raises the event, which is marked as `protected` and `virtual` (in C#) or `Protected` and `Overridable` (in Visual Basic).
+- Apply the [`{PropertyName}Changed` pattern](#property-changed-events).
 
 :::code language="csharp" source="./snippets/usercontrol-guidelines/csharp/UserControl1.cs" id="property_changed":::
 :::code language="vb" source="./snippets/usercontrol-guidelines/vb/UserControl1.vb" id="property_changed":::
 
 ## Property changed events
 
-If you want your control to send notifications when a property changes, define an event named `{PropertyName}Changed`. This is the naming convention used in Windows Forms. The associated event delegate type for property-changed events is <xref:System.EventHandler>, and the event data type is <xref:System.EventArgs>. The base class <xref:System.Windows.Forms.Control> defines many property-changed events, such as <xref:System.Windows.Forms.Control.BackColorChanged>, <xref:System.Windows.Forms.Control.BackgroundImageChanged>, <xref:System.Windows.Forms.Control.FontChanged>, <xref:System.Windows.Forms.Control.LocationChanged>. When your property follows this naming convention, it receives bi-directional data binding support.
+If you want your control to send notifications when a property changes, define an event named `{PropertyName}Changed`. This is the naming convention used in Windows Forms. When your property follows this naming convention, it receives bidirectional data binding support.
+
+The associated event delegate type for property-changed events is <xref:System.EventHandler>, and the event data type is <xref:System.EventArgs>. The base class <xref:System.Windows.Forms.Control> defines many property-changed events, such as <xref:System.Windows.Forms.Control.BackColorChanged>, <xref:System.Windows.Forms.Control.BackgroundImageChanged>, <xref:System.Windows.Forms.Control.FontChanged>, and <xref:System.Windows.Forms.Control.LocationChanged>.
 
 The same suggestions in the [Defining events](#defining-events) section apply here, as well.
 
 :::code language="csharp" source="./snippets/usercontrol-guidelines/csharp/UserControl1.cs" id="eventargs":::
 :::code language="vb" source="./snippets/usercontrol-guidelines/vb/UserControl1.vb" id="eventargs":::
 
-## Properties
+## Properties and the Visual Designer
 
 Control properties should support the Windows Forms Visual Designer. The **Properties** window interacts with control properties, and users expect to use this to change properties of the control. Either add the <xref:System.ComponentModel.DefaultValueAttribute> to the property, or create corresponding `Reset<PropertyName>` and `ShouldSerialize<PropertyName>` methods. For more information, see [DefaultValueAttribute](designer-properties-overview.md#defaultvalueattribute) and [Reset and ShouldSerialize](designer-properties-overview.md#reset-and-shouldserialize).
 

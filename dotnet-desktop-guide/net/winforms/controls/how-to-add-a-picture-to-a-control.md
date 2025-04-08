@@ -1,7 +1,7 @@
 ---
 title: Display an image on a control
 description: Learn how to display an image on a Windows Form control. Many controls, such as the PictureBox, can display an image.
-ms.date: 10/26/2020
+ms.date: 03/31/2025
 dev_langs:
   - "csharp"
   - "vb"

@@ -1,7 +1,7 @@
 ---
 title: Troubleshoot 32-bit problems
-description: Describes how Visual Studio and Windows Forms may have problems with 32-bit components. Learn how to enable the out-of-process designer, which may help.
-ms.date: 03/27/2024
+description: Describes how Visual Studio and Windows Forms might have problems with 32-bit components. Learn how to enable the out-of-process designer, which can help.
+ms.date: 04/02/2025
 ms.topic: troubleshooting 
 #customer intent: As a developer I want to understand why 32-bit references are a problem so that I can fix my problems or upgrade Visual Studio
 ---

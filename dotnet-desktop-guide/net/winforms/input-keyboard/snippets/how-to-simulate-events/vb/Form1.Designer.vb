@@ -57,6 +57,6 @@ Partial Class Form1
 
     End Sub
 
-    Friend Button1 As Windows.Forms.Button
-    Friend ComboBox1 As Windows.Forms.ComboBox
+    Friend Button1 As System.Windows.Forms.Button
+    Friend ComboBox1 As System.Windows.Forms.ComboBox
 End Class

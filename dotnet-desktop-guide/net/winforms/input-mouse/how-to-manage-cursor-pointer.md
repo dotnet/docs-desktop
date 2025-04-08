@@ -1,7 +1,7 @@
 ---
 title: "How to manage mouse pointer"
 description: Learn how to access, control, and change the mouse pointer in Windows Forms for .NET.
-ms.date: 10/26/2020
+ms.date: 04/02/2025
 dev_langs: 
   - "csharp"
   - "vb"
@@ -15,7 +15,7 @@ helpviewer_keywords:
 ---
 # Manage mouse pointers (Windows Forms .NET)
 
-The mouse *pointer*, which is sometimes referred to as the cursor, is a bitmap that specifies a focus point on the screen for user input with the mouse. This topic provides an overview of the mouse pointer in Windows Forms and describes some of the ways to modify and control the mouse pointer.
+The mouse *pointer*, which is sometimes referred to as the cursor, is a bitmap that specifies a focus point on the screen for user input with the mouse. This article provides an overview of the mouse pointer in Windows Forms and describes some of the ways to modify and control the mouse pointer.
 
 ## Accessing the mouse pointer
 
@@ -28,16 +28,16 @@ The following example hides the cursor when the cursor is over a button:
 
 ## Controlling the mouse pointer
 
-Sometimes you may want to limit the area in which the mouse pointer can be used or change the position the mouse. You can get or set the current location of the mouse using the <xref:System.Windows.Forms.Cursor.Position%2A> property of the <xref:System.Windows.Forms.Cursor>. In addition, you can limit the area the mouse pointer can be used be setting the <xref:System.Windows.Forms.Cursor.Clip%2A> property. The clip area, by default, is the entire screen.
+Sometimes you might want to change the position of the mouse or restrict the mouse pointer to a specific area. You can get or set the current location of the mouse using the <xref:System.Windows.Forms.Cursor.Position%2A?displayProperty=nameWithType> property. Also, you can limit the area available to the mouse pointer by setting the <xref:System.Windows.Forms.Cursor.Clip%2A> property. The clip area, by default, is the entire screen.
 
-The following example positions the mouse pointer between two buttons when they are clicked:
+The following example positions the mouse pointer between two buttons when they're clicked:
 
 :::code language="csharp" source="snippets/how-to-manage-cursor-pointer/csharp/Form1.cs" id="MoveCursor":::
 :::code language="vb" source="snippets/how-to-manage-cursor-pointer/vb/Form1.vb" id="MoveCursor":::
 
 ## Changing the mouse pointer
 
-Changing the mouse pointer is an important way of providing feedback to the user. For example, the mouse pointer can be modified in the handlers of the <xref:System.Windows.Forms.Control.MouseEnter> and <xref:System.Windows.Forms.Control.MouseLeave> events to tell the user that computations are occurring and to limit user interaction in the control. Sometimes, the mouse pointer will change because of system events, such as when your application is involved in a drag-and-drop operation.
+Changing the mouse pointer is an important way of providing feedback to the user. For example, the mouse pointer can be modified in the handlers of the <xref:System.Windows.Forms.Control.MouseEnter> and <xref:System.Windows.Forms.Control.MouseLeave> events to tell the user that computations are occurring and to limit user interaction in the control. Sometimes, the mouse pointer changes because of system events, such as when your application is involved in a drag-and-drop operation.
 
 The primary way to change the mouse pointer is by setting the <xref:System.Windows.Forms.Control.Cursor%2A?displayProperty=nameWithType> or <xref:System.Windows.Forms.Control.DefaultCursor%2A> property of a control to a new <xref:System.Windows.Forms.Cursor>. For examples of changing the mouse pointer, see the code example in the <xref:System.Windows.Forms.Cursor> class. In addition, the <xref:System.Windows.Forms.Cursors> class exposes a set of <xref:System.Windows.Forms.Cursor> objects for many different types of pointers, such as a pointer that resembles a hand.
 
@@ -50,9 +50,9 @@ To display the wait pointer, which resembles an hourglass, whenever the mouse po
 
 ## See also
 
-- [Overview of using the mouse (Windows Forms .NET)](overview.md)
-- [Using mouse events (Windows Forms .NET)](events.md)
-- [How to distinguish between clicks and double-clicks (Windows Forms .NET)](how-to-distinguish-between-clicks-and-double-clicks.md)
-- [How to simulate mouse events (Windows Forms .NET)](how-to-simulate-events.md)
+- [Overview of using the mouse](overview.md)
+- [Using mouse events](events.md)
+- [How to distinguish between clicks and double-clicks](how-to-distinguish-between-clicks-and-double-clicks.md)
+- [How to simulate mouse events](how-to-simulate-events.md)
 - <xref:System.Windows.Forms.Cursor?displayProperty=nameWithType>
 - <xref:System.Windows.Forms.Cursor.Position%2A?displayProperty=nameWithType>

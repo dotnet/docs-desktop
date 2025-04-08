@@ -20,6 +20,7 @@ namespace WinFormsProject1
         private bool _allowInteraction;
 
         // The property
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         public bool AllowInteraction
         {
             get => _allowInteraction;
