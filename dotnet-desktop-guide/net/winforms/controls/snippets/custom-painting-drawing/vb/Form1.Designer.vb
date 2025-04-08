@@ -22,40 +22,30 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.myUserControl = New UserControl1()
-        Me.SuspendLayout()
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(142, 275)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'myUserControl
-        '
-        Me.myUserControl.Location = New System.Drawing.Point(357, 188)
-        Me.myUserControl.Name = "myUserControl"
-        Me.myUserControl.Size = New System.Drawing.Size(75, 23)
-        Me.myUserControl.TabIndex = 0
-        Me.myUserControl.Text = "Button1"
-        '
-        'Form1
-        '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.myUserControl)
-        Me.Controls.Add(Me.Button1)
-        Me.Name = "Form1"
-        Me.Text = "Form1"
-        Me.ResumeLayout(False)
+        Button1 = New Button()
+        SuspendLayout()
+        ' 
+        ' Button1
+        ' 
+        Button1.Location = New Point(148, 249)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(75, 23)
+        Button1.TabIndex = 0
+        Button1.Text = "Button1"
+        Button1.UseVisualStyleBackColor = True
+        ' 
+        ' Form1
+        ' 
+        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
+        AutoScaleMode = AutoScaleMode.Font
+        ClientSize = New Size(800, 450)
+        Controls.Add(Button1)
+        Name = "Form1"
+        Text = "Form1"
+        ResumeLayout(False)
 
     End Sub
 
-    Friend Button1 As Windows.Forms.Button
+    Friend Button1 As System.Windows.Forms.Button
     Friend myUserControl As UserControl1
 End Class

@@ -1,7 +1,7 @@
 ---
 title: "Overview of Using Controls"
 description: Learn about how controls are used in Windows Forms for .NET. Controls are reusable components that provide functionality to the user. Many ready-to-use controls are provided. You can also make new controls.
-ms.date: 07/21/2021
+ms.date: 03/31/2025
 ms.topic: overview
 dev_langs: 
   - "csharp"
@@ -23,13 +23,13 @@ Controls are added through the Visual Studio Designer. With the Designer, you ca
 
 The position a control appears on a parent is determined by the value of the <xref:System.Windows.Forms.Control.Location> property relative to the top-left of the parent surface. The top-left position coordinate in the parent is `(x0,y0)`. The size of the control is determined by the <xref:System.Windows.Forms.Control.Size> property and represents the width and height of the control.
 
-Besides manual positioning and sizing, various container controls are provided that help with automatic placement of controls.
+Besides manual positioning and sizing, various container controls are available that help with automatic placement of controls.
 
 For more information, see [Position and layout of controls](layout.md) and [How to dock and anchor controls](how-to-dock-and-anchor.md).
 
 ## Control events
 
-Controls provides more than 60 events through the base class <xref:System.Windows.Forms.Control>. These include the <xref:System.Windows.Forms.Control.Paint> event, which causes a control to be drawn, events related to displaying a window, such as the <xref:System.Windows.Forms.Control.Resize> and <xref:System.Windows.Forms.Control.Layout> events, and low-level mouse and keyboard events. Some low-level events are synthesized by <xref:System.Windows.Forms.Control> into semantic events such as <xref:System.Windows.Forms.Control.Click> and <xref:System.Windows.Forms.Control.DoubleClick>. Most shared events fall under these categories:
+Controls have more than 60 events through the base class <xref:System.Windows.Forms.Control>. These include the <xref:System.Windows.Forms.Control.Paint> event, which causes a control to be drawn, events related to displaying a window, such as the <xref:System.Windows.Forms.Control.Resize> and <xref:System.Windows.Forms.Control.Layout> events, and low-level mouse and keyboard events. Some low-level events are synthesized by <xref:System.Windows.Forms.Control> into semantic events such as <xref:System.Windows.Forms.Control.Click> and <xref:System.Windows.Forms.Control.DoubleClick>. Most shared events fall under these categories:
 
 - Mouse events
 - Keyboard events
@@ -38,7 +38,7 @@ Controls provides more than 60 events through the base class <xref:System.Window
 
 Not every control responds to every event. For example, the <xref:System.Windows.Forms.Label> control doesn't respond to keyboard input, and the <xref:System.Windows.Forms.Control.PreviewKeyDown?displayProperty=nameWithType> event isn't raised.
 
-Often, a control is a wrapper for an underlaying Win32 control, and using the <xref:System.Windows.Forms.Control.Paint> event to draw on top of the control may be limited or do nothing at all, since the control is ultimately drawn by Windows.
+Often, a control is a wrapper for an underlying Win32 control, and using the <xref:System.Windows.Forms.Control.Paint> event to draw on top of the control might be limited or do nothing at all, since the control is ultimately drawn by Windows.
 
 For more information, see [Control events](events.md) and [How to handle a control event](how-to-add-an-event-handler.md).
 

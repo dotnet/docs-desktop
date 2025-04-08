@@ -1,7 +1,7 @@
 ---
 title: "Drag-and-drop mouse behaviors"
 description: Learn about how drag-and-drop works on Windows Forms, including how to perform drag-and-drop with the mouse.
-ms.date: 10/26/2020
+ms.date: 04/02/2025
 ms.topic: conceptual
 dev_langs: 
   - "csharp"
@@ -13,7 +13,7 @@ helpviewer_keywords:
 
 # Drag-and-drop mouse behavior overview (Windows Forms .NET)
 
-Windows Forms includes a set of methods, events, and classes that implement drag-and-drop behavior. This topic provides an overview of the drag-and-drop support in Windows Forms.<!-- TODO Also see [Drag-and-Drop Operations and Clipboard Support](./advanced/drag-and-drop-operations-and-clipboard-support.md).-->
+Windows Forms includes a set of methods, events, and classes that implement drag-and-drop behavior. This article provides an overview of the drag-and-drop support in Windows Forms.<!-- TODO Also see [Drag-and-Drop Operations and Clipboard Support](./advanced/drag-and-drop-operations-and-clipboard-support.md).-->
 
 ## Drag-and-drop events
 
@@ -45,11 +45,11 @@ The <xref:System.Windows.Forms.QueryContinueDragEventArgs> class provides the cu
 
 ## Performing drag-and-drop
 
-Drag-and-drop operations always involve two components, the **drag source** and the **drop target**. To start a drag-and-drop operation, designate a control as the source and handle the <xref:System.Windows.Forms.Control.MouseDown> event. In the event handler, call the <xref:System.Windows.DragDrop.DoDragDrop%2A> method providing the data associated with the drop and the a <xref:System.Windows.DragDropEffects> value.
+Drag-and-drop operations always involve two components, the **drag source** and the **drop target**. To start a drag-and-drop operation, designate a control as the source and handle the <xref:System.Windows.Forms.Control.MouseDown> event. In the event handler, call the <xref:System.Windows.DragDrop.DoDragDrop%2A> method providing the data associated with the drop and a <xref:System.Windows.DragDropEffects> value.
 
 Set the target control's <xref:System.Windows.Forms.Control.AllowDrop> property set to `true` to allow that control to accept a drag-and-drop operation. The target handles two events, first an event in response to the drag being over the control, such as <xref:System.Windows.Forms.Control.DragOver>. And a second event which is the drop action itself, <xref:System.Windows.Forms.Control.DragDrop>.
 
-The following example demonstrates a drag from a <xref:System.Windows.Forms.Label> control to a <xref:System.Windows.Forms.TextBox>. When the drag is completed, the `TextBox` responds by assigning the label's text to itself.
+The following example demonstrates a drag-and-drop operation from a <xref:System.Windows.Forms.Label> control to a <xref:System.Windows.Forms.TextBox>. When the operation is completed, the `TextBox` responds by assigning the label's text to itself.
 
 ```csharp
 // Initiate the drag
@@ -86,7 +86,7 @@ For more information about the drag effects, see <xref:System.Windows.Forms.Drag
 
 ## See also
 
-- [Overview of using the mouse (Windows Forms .NET)](overview.md)
+- [Overview of using the mouse](overview.md)
 - <xref:System.Windows.Forms.Control.DragDrop?displayProperty=nameWithType>
 - <xref:System.Windows.Forms.Control.DragEnter?displayProperty=nameWithType>
 - <xref:System.Windows.Forms.Control.DragLeave?displayProperty=nameWithType>

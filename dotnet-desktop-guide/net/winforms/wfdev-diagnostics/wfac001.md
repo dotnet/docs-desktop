@@ -1,7 +1,7 @@
 ---
 title: WFAC001 error
 description: Learn about the Windows Forms code that generate compile-time error WFAC001.
-ms.date: 11/22/2023
+ms.date: 04/02/2025
 f1_keywords:
   - "WFAC001"
 helpviewer_keywords:

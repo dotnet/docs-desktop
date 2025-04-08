@@ -91,6 +91,7 @@ namespace binding_control_example
 
         public EventHandler DataSourceChanged;
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public object DataSource
         {
             get
@@ -107,6 +108,7 @@ namespace binding_control_example
             }
         }
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public string DataMember
         {
             get { return this.dataGridView1.DataMember; }

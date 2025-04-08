@@ -1,7 +1,7 @@
 ---
 title: "Add a form to a project"
 description: "Add a new form to a .NET Windows Forms project in Visual Studio"
-ms.date: 10/26/2020
+ms.date: 04/02/2025
 helpviewer_keywords:
   - "Windows Forms, create add form"
 ---
@@ -42,6 +42,6 @@ Alternatively, you can use Visual Studio to import a file into your project. Whe
 
 ## See also
 
-- [How to position and size a form (Windows Forms .NET)](how-to-position-and-resize.md)
-- [Events overview (Windows Forms .NET)](events.md)
-- [Position and layout of controls (Windows Forms .NET)](../controls/layout.md)
+- [How to position and size a form](how-to-position-and-resize.md)
+- [Events overview](events.md)
+- [Position and layout of controls](../controls/layout.md)

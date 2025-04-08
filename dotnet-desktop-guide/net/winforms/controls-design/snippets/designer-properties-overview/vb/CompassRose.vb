@@ -12,6 +12,7 @@ Public Class CompassRose
 
     '<browsable>
     <Browsable(False)>
+    <DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)>
     Public Property IsSelected As Boolean
     '</browsable>
 

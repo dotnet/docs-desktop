@@ -1,4 +1,6 @@
-﻿Public Class UserControl1
+﻿Imports System.ComponentModel
+
+Public Class UserControl1
 
     '<property_changed>
     'The event
@@ -8,6 +10,7 @@
     Private _allowInteraction As Boolean
 
     'The property
+    <DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)>
     Public Property AllowInteraction() As Boolean
         Get
             Return _allowInteraction
