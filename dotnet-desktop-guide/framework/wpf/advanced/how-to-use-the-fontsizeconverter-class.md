@@ -2,6 +2,7 @@
 title: "How to: Use the FontSizeConverter Class"
 description: Learn how to create an instance of the FontSizeConverter class and discover how to use it to change font sizes.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "FontSizeConverter objects [WPF]"
   - "typography [WPF], FontSizeConverter objects"

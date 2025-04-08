@@ -1,6 +1,7 @@
 ---
 title: "How to: Change the FlowDirection of Content Programmatically"
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 ms.custom: devdivchpfy22
 description: Learn how to change the FlowDirection of content programmatically.
 dev_langs: 

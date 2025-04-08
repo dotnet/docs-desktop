@@ -1,6 +1,7 @@
 ---
 title: "How to: Manipulate Flow Content Elements through the Blocks Property"
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 ms.custom: devdivchpfy22
 description: Learn how to manipulate Flow Content Elements through the Blocks property.
 dev_langs: 

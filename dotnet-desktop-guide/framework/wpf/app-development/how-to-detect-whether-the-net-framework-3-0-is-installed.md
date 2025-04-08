@@ -1,6 +1,7 @@
 ---
 title: "How to: Detect Whether the .NET Framework 3.0 Is Installed"
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "WinFX Runtime user-agent string"
   - "presence of WPT [WPF], detecting"

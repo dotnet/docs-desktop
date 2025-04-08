@@ -2,6 +2,7 @@
 title: "Graphics and Multimedia"
 description: Discover media features of Windows Presentation Foundation (WPF). Add graphics, transition effects, sound, and video to your applications. 
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs:
   - "csharp"
   - "vb"

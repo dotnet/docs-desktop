@@ -1,6 +1,7 @@
 ---
 title: "ThemeDictionary Markup Extension"
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 ms.custom: devdivchpfy22
 description: Learn about the ThemeDictionary Markup Extension.
 f1_keywords: 

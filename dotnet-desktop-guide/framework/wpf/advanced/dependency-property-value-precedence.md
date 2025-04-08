@@ -2,6 +2,7 @@
 title: "Dependency Property Value Precedence"
 description: Learn about value precedence considerations for dependency properties in Windows Presentation Foundation (WPF) applications.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "dependency properties [WPF], classes as owners"
   - "dependency properties [WPF], metadata"

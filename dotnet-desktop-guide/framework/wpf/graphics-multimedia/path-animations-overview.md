@@ -2,6 +2,7 @@
 title: "Path Animations Overview"
 description: Learn about path animations which enable you to use a geometric path to generate output values.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

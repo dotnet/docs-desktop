@@ -2,6 +2,7 @@
 title: "How to: Filter Data in a View"
 description: Learn how to create a filter and define a method that provides filtering logic to filter data in a view.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

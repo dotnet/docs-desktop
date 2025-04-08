@@ -2,6 +2,7 @@
 title: "Bitmap Effects Overview"
 description: Learn how bitmap effects enable designers and developers to apply visual effects to rendered Windows Presentation Foundation (WPF) content.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 ms.topic: overview
 helpviewer_keywords: 
   - "bitmap effects [WPF]"

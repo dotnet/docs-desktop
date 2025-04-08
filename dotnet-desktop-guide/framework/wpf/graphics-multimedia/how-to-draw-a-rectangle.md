@@ -2,6 +2,7 @@
 title: "How to: Draw a Rectangle"
 description: Learn how to draw a rectangle by creating a Rectangle element and specifying its Height and Width properties. 
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "drawing [WPF], rectangles"
   - "graphics [WPF], rectangles"

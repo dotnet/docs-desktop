@@ -1,6 +1,7 @@
 ---
 title: "Hosting Win32 Content"
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords:
   - "interoperability [WPF], tutorials"
   - "Win32 code [WPF], WPF interoperation"

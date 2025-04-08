@@ -2,6 +2,7 @@
 title: "How to: Use a Custom Context Menu with a TextBox"
 description: Learn how to use a Custom Context Menu with a TextBox.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 ms.custom: devdivchpfy22
 dev_langs: 
   - "csharp"

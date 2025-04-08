@@ -1,6 +1,7 @@
 ---
 title: "Technology Regions Overview"
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "window regions [WPF]"
   - "Win32 code [WPF], WPF interoperation"

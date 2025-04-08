@@ -2,6 +2,7 @@
 title: WPF and Direct3D9 interop
 titleSuffix: ""
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "cpp"
 helpviewer_keywords: 

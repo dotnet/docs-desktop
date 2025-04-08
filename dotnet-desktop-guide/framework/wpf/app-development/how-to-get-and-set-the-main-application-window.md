@@ -2,6 +2,7 @@
 title: "How to: Get and Set the Main Application Window"
 description: Follow this example to get and set the main application window within Windows Presentation Foundation (WPF) application.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

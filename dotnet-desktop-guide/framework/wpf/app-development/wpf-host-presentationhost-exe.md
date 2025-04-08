@@ -3,6 +3,7 @@ title: "WPF Host (PresentationHost.exe)"
 description: Learn about Windows Presentation Foundation (WPF) Host (PresentationHost.exe), which enables WPF applications to be hosted in compatible browsers.
 titleSuffix: ""
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "WPF Host application [WPF]"
   - "PresentationHost.exe"

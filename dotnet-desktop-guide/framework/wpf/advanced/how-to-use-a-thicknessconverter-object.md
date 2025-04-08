@@ -2,6 +2,7 @@
 title: "How to: Use a ThicknessConverter Object"
 description: Learn how to use the ThicknessConverter object, which defines a custom method called changeThickness so that you can change the thickness of a border.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

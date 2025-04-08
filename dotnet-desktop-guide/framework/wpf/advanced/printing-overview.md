@@ -2,6 +2,7 @@
 title: "Printing Overview"
 description: Learn about the printing and print system management APIs that the .NET Framework offers application developers using Windows Presentation Foundation (WPF).
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

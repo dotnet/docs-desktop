@@ -2,6 +2,7 @@
 title: "How to: Apply Emissive Material to a 3D Object"
 description: Learn how to apply Emissive Material to a 3D object.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 ms.custom: devdivchpfy22
 dev_langs: 
   - "csharp"

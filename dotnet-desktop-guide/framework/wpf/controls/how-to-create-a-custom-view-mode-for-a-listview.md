@@ -2,6 +2,7 @@
 title: "How to: Create a Custom View Mode for a ListView"
 description: Learn how to create a custom view mode for a ListView by means of the included code examples in C#, Visual Basic, and XAML.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

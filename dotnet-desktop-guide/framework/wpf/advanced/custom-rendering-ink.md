@@ -2,6 +2,7 @@
 title: "Custom Rendering Ink"
 description: Learn how to customize digital ink rendering in a Windows Presentation Foundation (WPF) application.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

@@ -2,6 +2,7 @@
 title: "How to: Set the Text Content of a TextBox Control"
 description: Learn how to use the Text property to set the initial text contents of a Windows Presentation Foundation TextBox control.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 ms.custom: devdivchpfy22
 dev_langs:
   - "csharp"

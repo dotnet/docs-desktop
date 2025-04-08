@@ -2,6 +2,7 @@
 title: "How to: Control an Animation using From, To, and By"
 description: Review a table summarizing how the From, To, and By properties may be used together or separately to determine an animation's target values.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "animation [WPF], From/to/by"
   - "basic animation [WPF]"

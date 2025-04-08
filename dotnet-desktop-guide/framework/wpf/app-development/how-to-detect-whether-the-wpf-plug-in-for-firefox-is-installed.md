@@ -3,6 +3,7 @@ title: Detect Whether WPF Plug-In for Firefox Is Installed
 description: Learn how to detect whether the WPF plug-in for Firefox is installed, by means of this code sample in HTML.
 titleSuffix: ""
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords:
   - "plug-in for Firefox [WPF]"
   - "detecting Firefox installation [WPF]"

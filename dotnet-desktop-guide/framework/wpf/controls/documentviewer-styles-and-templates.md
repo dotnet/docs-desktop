@@ -2,6 +2,7 @@
 title: "DocumentViewer Styles and Templates"
 description: Learn about DocumentViewer styles and templates. You can modify the default ControlTemplate to give the control a unique appearance.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "templates [WPF], DocumentViewer"
   - "DocumentViewer [WPF], styles and templates"

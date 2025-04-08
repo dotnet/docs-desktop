@@ -2,6 +2,7 @@
 title: "Optimizing Performance: Text"
 description: Learn how to optimize the performance of text content through use of feature-rich user interface (UI) controls.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs:
   - "csharp"
   - "vb"

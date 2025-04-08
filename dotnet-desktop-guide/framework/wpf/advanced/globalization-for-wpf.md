@@ -2,6 +2,7 @@
 title: Globalization
 description: Learn about globalization support in Windows Presentation Foundation (WPF) to help you write WPF applications for the global market.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords:
   - "XAML [WPF], international user interface"
   - "XAML [WPF], globalization"

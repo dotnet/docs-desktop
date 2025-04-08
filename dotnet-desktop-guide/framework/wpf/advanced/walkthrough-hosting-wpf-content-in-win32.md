@@ -2,6 +2,7 @@
 title: Host WPF content in Win32
 titleSuffix: ""
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs:
   - "cpp"
 helpviewer_keywords:

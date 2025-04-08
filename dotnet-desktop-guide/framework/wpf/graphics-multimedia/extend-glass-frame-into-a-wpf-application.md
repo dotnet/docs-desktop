@@ -3,6 +3,7 @@ title: "Extend Glass Frame Into a WPF app"
 titleSuffix: ""
 description: Learn about how to Extend Glass Frame into a WPF app.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 ms.custom: devdivchpfy22
 dev_langs:
   - "csharp"

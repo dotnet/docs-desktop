@@ -1,6 +1,7 @@
 ---
 title: "How to: Detect Whether the .NET Framework 3.5 Is Installed"
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "verifying whether.NET Framework 3.5 is installed [WPF]"
   - "detecting .NET Framework 3.5 installation [WPF]"

@@ -2,6 +2,7 @@
 title: "Frame Styles and Templates"
 description: Learn about the styles and templates for the Frame control. You can modify the default ControlTemplate to give the control a unique appearance.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "parts [WPF], Frame"
   - "templates [WPF], Frame"

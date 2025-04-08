@@ -2,6 +2,7 @@
 title: LINQ to XML data binding example
 description: Learn how the LinqToXmlDataBinding sample Windows Presentation Foundation (WPF) app binds user interface components to an embedded XML data source.
 ms.date: 10/22/2019
+ms.service: dotnet-framework
 ms.topic: sample
 helpviewer_keywords:
  - linq to xml data binding sample

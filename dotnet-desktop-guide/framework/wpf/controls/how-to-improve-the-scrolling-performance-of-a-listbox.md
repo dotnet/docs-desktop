@@ -2,6 +2,7 @@
 title: "How to: Improve the Scrolling Performance of a ListBox"
 description: Learn how to improve the scrolling performance of a ListBox, by means of the included code examples in XAML, C#, and Visual Basic.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

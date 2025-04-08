@@ -2,6 +2,7 @@
 title: "How to: Create a Reflection"
 description: Learn about how to use a VisualBrush to produce interesting visual effects, such as reflections.
 ms.date: 03/16/2023
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

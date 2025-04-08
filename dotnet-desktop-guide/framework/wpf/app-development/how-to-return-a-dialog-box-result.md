@@ -2,6 +2,7 @@
 title: "How to: Return a Dialog Box Result"
 description: Learn how to return a dialog box result in this article, by means of code examples in C# and Visual Basic.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

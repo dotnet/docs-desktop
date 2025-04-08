@@ -1,6 +1,7 @@
 ---
 title: "How to: Add Custom Data to Ink Data"
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "ink data [WPF], adding custom data"
   - "InkCanvas [WPF], displaying"

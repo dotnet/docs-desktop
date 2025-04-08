@@ -2,6 +2,7 @@
 title: "How to: Enable Tab Characters in a TextBox Control"
 description: Learn how to enable tab characters in a TextBox control, by means of the included code example in XAML.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "TextBox control [WPF], enabling tab characters"
   - "tab characters [WPF], enabling"

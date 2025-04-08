@@ -1,6 +1,7 @@
 ---
 title: "How to: Build a Table Programmatically"
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 ms.custom: devdivchpfy22
 description: Learn how to build a table programmatically.
 dev_langs: 

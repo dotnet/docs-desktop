@@ -2,6 +2,7 @@
 title: "Animation Tips and Tricks"
 description: Learn about the tips and tricks available when working with animations in Windows Presentation Foundation (WPF).
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

@@ -1,6 +1,7 @@
 ---
 title: "How to: Override the Logical Tree"
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "overriding the logical tree [WPF]"
   - "logical tree [WPF], overriding"

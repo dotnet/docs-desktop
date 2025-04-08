@@ -2,6 +2,7 @@
 title: "How to: Interactively Control a Clock"
 description: Learn how to use a Clock object's ClockController property to interactively start, pause, resume, seek, advance, and stop the clock.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

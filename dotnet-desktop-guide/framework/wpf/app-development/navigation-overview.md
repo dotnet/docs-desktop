@@ -2,6 +2,7 @@
 title: "Navigation Overview"
 description: Learn about support for browser-style navigation used in standalone applications and XAML browser applications in Windows Presentation Foundation (WPF). 
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 ms.topic: overview
 dev_langs:
   - "csharp"

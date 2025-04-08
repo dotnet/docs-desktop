@@ -1,6 +1,7 @@
 ---
 title: "How to: Find the Source Element in an Event Handler"
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

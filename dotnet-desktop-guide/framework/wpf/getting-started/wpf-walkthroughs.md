@@ -2,6 +2,7 @@
 title: "Walkthroughs"
 description: Use these step-by-step instructions for common scenarios about the WPF product or a particular feature area.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords:
   - "walkthroughs [WPF]"
   - "WPF walkthroughs [WPF]"

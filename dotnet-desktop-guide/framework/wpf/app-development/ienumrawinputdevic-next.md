@@ -2,6 +2,7 @@
 title: "IEnumRAWINPUTDEVIC:Next"
 description: Learn about IEnumRAWINPUTDEVIC:Next, which enumerates the next celt structures in the enumerator's list.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "Next method [WPF]"
 ms.assetid: 3698b44d-510e-4d18-b32b-85f17188ee26

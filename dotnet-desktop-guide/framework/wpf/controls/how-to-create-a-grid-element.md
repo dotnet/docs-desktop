@@ -2,6 +2,7 @@
 title: "How to: Create a Grid Element"
 description: Learn how to create a Grid element, by means of the included code examples in C#, Visual Basic, and XAML.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

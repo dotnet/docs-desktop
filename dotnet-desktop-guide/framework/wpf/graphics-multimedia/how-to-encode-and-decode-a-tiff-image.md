@@ -2,6 +2,7 @@
 title: "How to: Encode and Decode a TIFF Image"
 description: Learn how to Encode and Decode a TIFF image.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 ms.custom: devdivchpfy22
 dev_langs: 
   - "csharp"

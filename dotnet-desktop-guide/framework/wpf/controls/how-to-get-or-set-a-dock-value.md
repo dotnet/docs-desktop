@@ -2,6 +2,7 @@
 title: "How to: Get or Set a Dock Value"
 description: Learn how to get or set a dock value, by means of the included code examples in C# and Visual Basic.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

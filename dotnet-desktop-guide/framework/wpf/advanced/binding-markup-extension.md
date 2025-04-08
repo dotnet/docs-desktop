@@ -2,6 +2,7 @@
 title: "Binding Markup Extension"
 description: Learn about the binding markup XAML extension in Windows Presentation Foundation (WPF).
 ms.date: "01/17/2022"
+ms.service: dotnet-framework
 ms.custom: devdivchpfy22
 f1_keywords: 
   - "Binding"

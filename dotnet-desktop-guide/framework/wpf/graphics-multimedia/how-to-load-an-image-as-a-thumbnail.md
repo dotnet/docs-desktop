@@ -2,6 +2,7 @@
 title: "How to: Load an Image as a Thumbnail"
 description: Learn how to Load an Image as a Thumbnail.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 ms.custom: devdivchpfy22
 dev_langs: 
   - "csharp"

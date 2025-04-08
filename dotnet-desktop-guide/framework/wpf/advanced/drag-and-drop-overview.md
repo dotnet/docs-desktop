@@ -2,6 +2,7 @@
 title: "Drag and Drop Overview"
 description: Learn about drag-and-drop support in Windows Presentation Foundation applications, which lets users drag objects to a region in the user interface.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 ms.topic: overview
 dev_langs: 
   - "csharp"

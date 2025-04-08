@@ -2,6 +2,7 @@
 title: "Advanced Text Formatting"
 description: Learn about the text formatting features available in Windows Presentation Foundation (WPF).
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

@@ -2,6 +2,7 @@
 title: "How to: Use System Parameters Keys"
 description: Learn how to use system parameter keys to expose system metrics that help you create visuals that are consistent with system settings.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "resource keys [WPF], SystemParameters class"
   - "classes [WPF], SystemParameters"

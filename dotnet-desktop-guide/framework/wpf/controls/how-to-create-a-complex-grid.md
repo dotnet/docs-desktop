@@ -2,6 +2,7 @@
 title: "How to create a complex Grid"
 description: "An example on how to use a Grid control to create a layout that looks like a monthly calendar."
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "calendar [WPF], creating"
   - "monthly calendar [WPF], creating"

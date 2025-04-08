@@ -1,6 +1,7 @@
 ---
 title: "How to: Define a Table with XAML"
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "XAML [WPF], defining tables"
   - "documents [WPF], defining tables with XAML"

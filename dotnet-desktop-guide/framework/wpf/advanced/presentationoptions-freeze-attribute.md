@@ -1,6 +1,7 @@
 ---
 title: "PresentationOptions:Freeze Attribute"
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 ms.custom: devdivchpfy22
 description: Learn about the Freeze attribute.
 helpviewer_keywords: 

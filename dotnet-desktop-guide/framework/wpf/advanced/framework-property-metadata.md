@@ -2,6 +2,7 @@
 title: "Framework Property Metadata"
 description: Learn the details of how framework property metadata works in Windows Presentation Foundation (WPF) and how to use this metadata in your WPF applications. 
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "metadata [WPF], framework properties"
   - "framework property metadata [WPF]"

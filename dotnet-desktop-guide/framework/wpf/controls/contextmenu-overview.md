@@ -2,6 +2,7 @@
 title: "ContextMenu Overview"
 description: This article provides an overview of the ContextMenu class, which represents the element that exposes functionality by using a context-specific Menu.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

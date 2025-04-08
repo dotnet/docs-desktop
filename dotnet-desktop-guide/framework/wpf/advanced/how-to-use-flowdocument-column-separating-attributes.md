@@ -2,6 +2,7 @@
 title: "How to: Use FlowDocument Column-Separating Attributes"
 description: Learn how to use FlowDocument Column-Separating attributes to adjust the graphical user interface for the needs of your application.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "FlowDocument column-separating attributes"
   - "column-separating attributes"

@@ -2,6 +2,7 @@
 title: "Printing How-to Topics"
 description: Learn about printing and print system management features in this expanded list of printing how-to topics.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "printing [WPF]"
   - "print system management [WPF]"

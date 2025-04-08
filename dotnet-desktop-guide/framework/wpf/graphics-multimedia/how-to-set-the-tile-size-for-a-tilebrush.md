@@ -2,6 +2,7 @@
 title: "How to: Set the Tile Size for a TileBrush"
 description: Learn how to set the tile size for a TileBrush by setting the Viewport and ViewportUnits properties.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords:
   - "TileBrush [WPF], size of tile properties"
   - "Viewport property of TileBrush [WPF]"

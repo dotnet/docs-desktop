@@ -2,6 +2,7 @@
 title: "How to: Convert a BitmapSource to a Different PixelFormat"
 description: Learn how to use FormatConvertedBitmap to convert a BitmapSource object (BitmapImage) to a different PixelFormat.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

@@ -2,6 +2,7 @@
 title: Element (XElement dynamic property)
 description: Learn how the XElement.Element property uses an indexer to retrieve the child element instance that corresponds to the specified expanded name.
 ms.date: 10/22/2019
+ms.service: dotnet-framework
 ms.topic: reference
 apiname:
   - "XElement.Element"

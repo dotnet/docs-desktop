@@ -1,6 +1,7 @@
 ---
 title: "Types Migrated from WPF to System.Xaml"
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "WPF XAML [XAML Services], migration to System.Xaml"
   - "XAML [XAML Services], System.Xaml and WPF"

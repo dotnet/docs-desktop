@@ -2,6 +2,7 @@
 title: "How to: Override the Panel OnRender Method"
 description: Learn how to override the OnRender method of a rendered panel element to add custom graphical effects in a Windows Presentation Foundation (WPF) application.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

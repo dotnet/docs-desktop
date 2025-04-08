@@ -2,6 +2,7 @@
 title: "How to: Automatically Size a Window to Fit Its Content"
 description: Learn how to set the property that specifies how a window resizes to fit its content in Windows Presentation Foundation (WPF).
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

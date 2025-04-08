@@ -2,6 +2,7 @@
 title: "ComponentResourceKey Markup Extension"
 description: Learn about the ComponentResourceKey markup XAML extension of Windows Presentation Foundation (WPF).
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 ms.custom: devdivchpfy22
 f1_keywords: 
   - "ComponentResourceKey"

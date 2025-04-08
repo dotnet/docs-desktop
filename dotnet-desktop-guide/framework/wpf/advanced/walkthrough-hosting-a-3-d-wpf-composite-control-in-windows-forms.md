@@ -2,6 +2,7 @@
 title: Host 3D WPF Composite Control in Windows Forms
 titleSuffix: ""
 ms.date: 08/18/2018
+ms.service: dotnet-framework
 dev_langs:
   - "csharp"
   - "vb"

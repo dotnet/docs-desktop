@@ -2,6 +2,7 @@
 title: "How to: Clear Bindings"
 description: Learn how to use ClearBinding to remove a binding from an individual property on an object in Windows Presentation Foundation (WPF).
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

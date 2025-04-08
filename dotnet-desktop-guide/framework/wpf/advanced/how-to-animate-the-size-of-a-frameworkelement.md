@@ -1,6 +1,7 @@
 ---
 title: "How to: Animate the Size of a FrameworkElement"
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "animation [WPF], FrameworkElement size"
   - "FrameworkElement [WPF], animating size of"

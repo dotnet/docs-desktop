@@ -1,6 +1,7 @@
 ---
 title: Handle events in Visual Basic
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "Visual Basic [WPF], event handlers"
   - "event handlers [WPF], Visual Basic"

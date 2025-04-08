@@ -2,6 +2,7 @@
 title: "Draw Text Using Glyphs"
 description: Learn how to use the Glyphs object to display text in Extensible Application Markup Language (XAML) in Windows Presentation Foundation (WPF) applications.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "text [WPF], drawing with Glyphs objects"
   - "Glyphs objects [WPF], drawing text"

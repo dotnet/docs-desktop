@@ -2,6 +2,7 @@
 title: "How to: Bind to XML Data Using an XMLDataProvider and XPath Queries"
 description: Learn how to bind to XML data using an XMLDataProvider and XPath queries in Windows Presentation Foundation (WPF).
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "XmlDataProvider [WPF], binding to XML data"
   - "data binding [WPF], binding to XML data using XmlDataProvider queries"

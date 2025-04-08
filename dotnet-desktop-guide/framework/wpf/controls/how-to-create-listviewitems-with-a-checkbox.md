@@ -2,6 +2,7 @@
 title: "How to: Create ListViewItems with a CheckBox"
 description: Learn how to create ListViewItems with a Checkbox, by means of the two included code examples in XAML.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "controls [WPF], ListView"
   - "controls [WPF], CheckBox"

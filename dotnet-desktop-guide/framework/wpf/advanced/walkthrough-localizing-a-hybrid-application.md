@@ -1,6 +1,7 @@
 ---
 title: "Walkthrough: Localizing a Hybrid Application"
 ms.date: 08/18/2018
+ms.service: dotnet-framework
 helpviewer_keywords:
   - "localization [WPF interoperability]"
   - "hybrid applications [WPF interoperability]"

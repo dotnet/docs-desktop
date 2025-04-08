@@ -2,6 +2,7 @@
 title: "How to: Paint an Area with an Image"
 description: Learn how to paint an area with an image using the ImageBrush class. An ImageBrush displays a single image specified by its ImageSource property.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

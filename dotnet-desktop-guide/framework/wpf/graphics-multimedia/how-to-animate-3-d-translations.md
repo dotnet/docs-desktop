@@ -2,6 +2,7 @@
 title: "How to: Animate 3D Translations"
 description: Learn how to animate a translation transformation set on a 3D model using the TranslateTransform3D object.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "animation [WPF], 3D translations"
   - "3D translations [WPF], animating"

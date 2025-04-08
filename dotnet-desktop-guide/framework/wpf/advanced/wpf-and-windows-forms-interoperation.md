@@ -2,6 +2,7 @@
 title: WPF and Windows Forms interop
 titleSuffix: ""
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "Windows Forms [WPF], interoperability with"
   - "nester interoperation [WPF]"

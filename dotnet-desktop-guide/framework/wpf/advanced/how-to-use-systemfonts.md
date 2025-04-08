@@ -2,6 +2,7 @@
 title: "How to: Use SystemFonts"
 description: An example of using the SystemFonts class to style and customize a button in Windows Presentation Foundation (WPF).
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

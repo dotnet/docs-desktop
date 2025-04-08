@@ -3,6 +3,7 @@ title: "Deactivate Function - WPF unmanaged API reference"
 description: Learn about the Deactivate function of the Windows Presentation Foundation (WPF) unmanaged API reference.
 titleSuffix: ""
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "cpp"
 api_name: 

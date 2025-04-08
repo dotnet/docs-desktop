@@ -2,6 +2,7 @@
 title: "How to: Create a Bitmap from a Visual"
 description: Learn how a DrawingVisual is rendered with FormattedText then rendered to the RenderTargetBitmap creating a bitmap of the given text.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

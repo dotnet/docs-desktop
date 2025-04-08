@@ -2,6 +2,7 @@
 title: Add-ins overview
 description: This article provides an overview of WPF add-ins. The .NET Framework includes an add-in model that developers can use.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 ms.topic: overview
 helpviewer_keywords:
   - "add-ins and XAML browser applications [WPF]"

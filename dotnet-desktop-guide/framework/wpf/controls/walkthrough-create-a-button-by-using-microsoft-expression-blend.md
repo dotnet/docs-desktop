@@ -2,6 +2,7 @@
 title: "Walkthrough: Create a Button by Using Microsoft Expression Blend"
 description: Walkthrough the steps used to create a Windows Presentation Foundation (WPF) customized button using Microsoft Expression Blend.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords:
   - "buttons [WPF]"
   - "converting [WPF], shape to button"

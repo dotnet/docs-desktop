@@ -2,6 +2,7 @@
 title: "How to: Animate a Boolean by Using Key Frames"
 description: Learn how to use the BooleanAnimationUsingKeyFrames class to animate the Boolean property value of a Button control by using key frames.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"
