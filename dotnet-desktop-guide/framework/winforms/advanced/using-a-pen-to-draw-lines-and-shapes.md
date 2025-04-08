@@ -2,6 +2,7 @@
 title: "Using a Pen to Draw Lines and Shapes"
 description: Learn how to use a pen to draw lines, curves, and shapes in Windows Forms using a selection of topics and tutorials.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "pens"
   - "examples [Windows Forms], drawing lines and shapes"

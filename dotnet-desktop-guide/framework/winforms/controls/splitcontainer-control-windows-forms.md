@@ -1,6 +1,7 @@
 ---
 title: "SplitContainer Control"
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "splitter windows"
   - "SplitContainer control [Windows Forms]"

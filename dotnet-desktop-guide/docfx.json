@@ -153,7 +153,6 @@
         "xaml-services/**/*.md": "wpf"
       },
       "ms.service": {
-        "framework/winforms/**/**.md": "dotnet-framework",
         "framework/winforms/**/**.yml": "dotnet-framework",
         "framework/wpf/**/**.md": "dotnet-framework",
         "framework/wpf/**/**.yml": "dotnet-framework",

@@ -2,6 +2,7 @@
 title: "How to: Provide a Toolbox Bitmap for a Control"
 description: Learn about how to provide a toolbox bitmap for a control in Windows Forms by using the ToolboxBitmapAttribute class.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs:
   - "csharp"
   - "vb"

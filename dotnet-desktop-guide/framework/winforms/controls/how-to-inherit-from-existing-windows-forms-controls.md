@@ -2,6 +2,7 @@
 title: Inherit from Existing Controls
 description: Learn how to inherit from existing controls so that another control has all of its functionality and visual properties.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs:
   - "csharp"
   - "vb"

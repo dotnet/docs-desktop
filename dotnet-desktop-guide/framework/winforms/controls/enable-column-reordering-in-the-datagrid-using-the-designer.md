@@ -2,6 +2,7 @@
 title: Enable Column Reordering in DataGridView Control Using the Designer
 description: Learn more about how to enable column reordering in the Windows Forms DataGridView control using the designer.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords:
   - "DataGridView control [Windows Forms], column order"
   - "Windows Forms, columns"

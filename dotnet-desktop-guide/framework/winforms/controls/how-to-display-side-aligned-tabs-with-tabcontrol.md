@@ -2,6 +2,7 @@
 title: "How to: Display Side-Aligned Tabs with TabControl"
 description: Learn how to display side-aligned tabs using TabControl and explore vertical display as well as horizontal display. 
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

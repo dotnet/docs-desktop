@@ -1,6 +1,7 @@
 ---
 title: "RadioButton Control"
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "checked list items [Windows Forms], Windows Forms controls"
   - "list controls [Windows Forms], Windows Forms"

@@ -2,6 +2,7 @@
 title: Hide Column Headers in DataGridView Control
 description: Learn how to hide column headers in DataGridView Control for instances when you don't want headers to appear.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

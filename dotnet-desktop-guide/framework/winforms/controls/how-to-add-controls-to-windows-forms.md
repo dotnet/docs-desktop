@@ -2,6 +2,7 @@
 title: Add Controls
 description: Learn how to draw a control on a Windows Form. A control is a component on a form you can use to display information or accept user input.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs:
   - "csharp"
   - "vb"

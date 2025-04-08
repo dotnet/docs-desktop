@@ -1,6 +1,7 @@
 ---
 title: "How to: Draw Wrapped Text in a Rectangle"
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

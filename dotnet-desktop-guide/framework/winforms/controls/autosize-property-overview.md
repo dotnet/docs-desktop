@@ -2,6 +2,7 @@
 title: "AutoSize Property Overview"
 description: Learn more about an overview of the AutoSize property in Windows Forms. Only some controls support the AutoSize property.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords:
   - "sizing [Windows Forms], automatic"
   - "layout [Windows Forms], AutoSize"

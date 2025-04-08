@@ -1,6 +1,7 @@
 ---
 title: "ToolStripStatusLabel Control"
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "ToolStripStatusLabel control [Windows Forms]"
   - "status bars"

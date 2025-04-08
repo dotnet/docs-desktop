@@ -2,6 +2,7 @@
 title: Enable Column Reordering in DataGridView Control
 description: Learn how to enable column reordering in DataGridView Control so that users can drag columns to new positions. 
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

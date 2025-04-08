@@ -2,6 +2,7 @@
 title: Validate Data in DataGridView Control
 description: Learn how to validate data in the Windows Forms DataGridView control, by means of code examples in C# and Visual Basic.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

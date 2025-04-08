@@ -2,6 +2,7 @@
 title: "How to: Implement a Custom Layout Engine"
 description: Learn how to implement a custom layout engine with an example of a panel control that overrides layout engine properties.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

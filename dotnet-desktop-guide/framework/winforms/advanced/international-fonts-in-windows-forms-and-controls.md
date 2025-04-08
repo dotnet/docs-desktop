@@ -2,6 +2,7 @@
 title: International fonts in forms and controls
 description: Learn about using font fallback as the recommended method for selecting international fonts in Windows Forms and controls.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "fonts [Windows Forms], international"
   - "international applications [Windows Forms], character display"

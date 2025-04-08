@@ -2,6 +2,7 @@
 title: Add Columns to ListView Control Using the Designer
 designer: Learn how to add columns to the Windows Forms ListView control by using the Designer. The ListView control can display multiple columns for each list item.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords:
   - "ListView control [Windows Forms], adding column headers"
   - "columns [Windows Forms], adding to ListView controls"

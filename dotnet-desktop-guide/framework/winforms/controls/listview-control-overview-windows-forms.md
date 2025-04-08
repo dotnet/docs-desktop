@@ -2,6 +2,7 @@
 title: "ListView Control Overview"
 description: This article provides an overview of the ListView control in Windows Forms, which displays a list of items with icons.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 f1_keywords: 
   - "ListView"
 helpviewer_keywords: 

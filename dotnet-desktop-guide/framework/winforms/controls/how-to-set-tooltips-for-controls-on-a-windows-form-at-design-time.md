@@ -2,6 +2,7 @@
 title: "How to: Set ToolTips for Controls on a Windows Form at Design Time"
 description: Learn how to set ToolTips for controls programmatically or in the Windows Forms Designer in Visual Studio.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs:
   - "csharp"
   - "vb"

@@ -2,6 +2,7 @@
 title: "How to: Use the Spring Property Interactively in a StatusStrip"
 description: Learn how to use the spring property interactively in a StatusStrip in Windows Forms via code examples in C# and Visual Basic.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

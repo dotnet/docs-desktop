@@ -2,6 +2,7 @@
 title: "Accessing Unexposed Members on the Managed HTML Document Object Model"
 description: Learn more about accessing unexposed members on the Managed HTML Document Object Model (DOM) via a class.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

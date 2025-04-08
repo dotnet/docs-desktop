@@ -2,6 +2,7 @@
 title: "Lines, Curves, and Shapes"
 description: Learn more about using the vector graphics portion of GDI+ to draw lines, draw curves, and draw and fill shapes with a selection of topics and tutorials.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "shapes [Windows Forms], filling"
   - "splines [Windows Forms], drawing"

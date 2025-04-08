@@ -2,6 +2,7 @@
 title: "How to: Implement the INotifyPropertyChanged Interface"
 description: Learn how to implement the INotifyPropertyChanged interface on business objects that are used in Windows Forms data binding. 
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

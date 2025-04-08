@@ -2,6 +2,7 @@
 title: "How to: Use Compositing Mode to Control Alpha Blending"
 description: Learn how to use compositing mode to control alpha blending using a System.Drawing.Bitmap object and a System.Drawing.Graphics object.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

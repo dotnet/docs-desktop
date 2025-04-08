@@ -2,6 +2,7 @@
 title: Resize Controls
 description: Learn about how to resize controls on a Windows Form, including individual controls and multiple controls of the same or different kinds.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 f1_keywords:
   - "Size.Height"
   - "Size.Width"

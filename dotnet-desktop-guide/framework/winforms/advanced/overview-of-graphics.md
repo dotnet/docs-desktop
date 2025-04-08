@@ -2,6 +2,7 @@
 title: "Overview of Graphics"
 description: Learn how the GDI+ application programming interface (API) forms the subsystem of the Microsoft Windows operating system, which displays information on screens and printers.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 ms.topic: overview
 helpviewer_keywords: 
   - "graphics [Windows Forms], using managed interface"

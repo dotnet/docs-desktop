@@ -1,6 +1,7 @@
 ---
 title: "How to: Append a MenuStrip to an MDI Parent Window"
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

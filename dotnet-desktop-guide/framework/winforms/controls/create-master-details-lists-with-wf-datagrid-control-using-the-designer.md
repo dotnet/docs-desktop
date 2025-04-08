@@ -2,6 +2,7 @@
 title: Create Master-Details Lists with DataGrid Control Using the Designer
 description: Learn about how to create master-details lists with the Windows Forms DataGrid control using the designer.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords:
   - "master-details lists"
   - "DataGrid control [Windows Forms], master-details lists"

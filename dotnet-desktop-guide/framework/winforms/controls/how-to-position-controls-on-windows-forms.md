@@ -2,6 +2,7 @@
 title: Position Controls
 description: Learn how to use the Windows Forms Designer in Visual Studio or the Location property to position your controls.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs:
   - "csharp"
   - "vb"

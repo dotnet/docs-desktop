@@ -2,6 +2,7 @@
 title: "How to: Give Your Control a Transparent Background"
 description: Learn how to give your control a transparent background using the properties window at design time. 
 ms.date: 06/12/2024
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "transparent backgrounds [Windows Forms], custom controls"
   - "custom controls [Windows Forms], transparent background"

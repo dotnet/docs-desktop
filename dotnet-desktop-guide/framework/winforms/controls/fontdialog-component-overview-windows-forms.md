@@ -2,6 +2,7 @@
 title: "FontDialog Component Overview"
 description: Learn about an overview of the FontDialog component in Windows Forms, which is a pre-configured dialog box.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 f1_keywords: 
   - "FontDialog"
 helpviewer_keywords: 

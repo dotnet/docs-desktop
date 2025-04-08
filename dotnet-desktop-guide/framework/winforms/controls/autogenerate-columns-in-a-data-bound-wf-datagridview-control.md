@@ -2,6 +2,7 @@
 title: Autogenerate Columns in Data-Bound DataGridView Control
 description: Learn more about how to autogenerate columns in a data-bound Windows Forms DataGridView control.    
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

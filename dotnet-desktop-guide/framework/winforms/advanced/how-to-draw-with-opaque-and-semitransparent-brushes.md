@@ -1,6 +1,7 @@
 ---
 title: "How to: Draw with Opaque and Semitransparent Brushes"
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

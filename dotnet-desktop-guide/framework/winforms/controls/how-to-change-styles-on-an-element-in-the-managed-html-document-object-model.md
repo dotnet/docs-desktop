@@ -1,6 +1,7 @@
 ---
 title: "How to: Change Styles on an Element in the Managed HTML Document Object Model"
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs:
   - "csharp"
   - "vb"

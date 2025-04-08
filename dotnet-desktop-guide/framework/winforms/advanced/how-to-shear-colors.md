@@ -2,6 +2,7 @@
 title: "How to: Shear Colors"
 description: Learn how to shear colors using a code example that constructs a System.Drawing.Image object from an image file and then applies the shearing transformation.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

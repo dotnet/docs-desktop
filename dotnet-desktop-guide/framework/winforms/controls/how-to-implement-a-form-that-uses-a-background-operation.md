@@ -2,6 +2,7 @@
 title: "How to: Implement a Form That Uses a Background Operation"
 description: Learn how to implement a Windows Form that uses a background operation so that one operation can continue to run while another operation proceeds.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

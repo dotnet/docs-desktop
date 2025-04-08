@@ -2,6 +2,7 @@
 title: "How to: Access Keyed Collections"
 description: Learn to Access Keyed Collections in Windows Forms with .NET Framework 4.8 - ListView, Control, TabControl, and more. Boost your app's functionality.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

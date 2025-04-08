@@ -2,6 +2,7 @@
 title: "How to: Add a Control to a Tab Page Using the Designer"
 description: Learn how you can use the Windows Forms TabControl to display other controls in an organized fashion. This article shows how to display a picture on a tab page.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords:
   - "TabPage control"
   - "tab controls [Windows Forms], tab order"

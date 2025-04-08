@@ -2,6 +2,7 @@
 title: "Cardinal Splines in GDI+"
 description: Learn about cardinal splines, which are sequences of individual curves joined to form a larger curve, in GDI+.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

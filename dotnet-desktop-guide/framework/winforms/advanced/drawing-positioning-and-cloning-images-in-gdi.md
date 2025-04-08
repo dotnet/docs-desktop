@@ -2,6 +2,7 @@
 title: "Draw, position, and clone Images in GDI+"
 description: Learn how to draw, position, and clone images in GDI+ using classes to load and display raster and vector images.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

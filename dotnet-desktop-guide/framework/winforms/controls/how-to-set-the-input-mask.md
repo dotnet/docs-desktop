@@ -2,6 +2,7 @@
 title: "How to: Set the Input Mask"
 description: Learn how to set the input mask. The masked text box control is an enhanced text box control that supports a declarative syntax for accepting or rejecting user input.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 f1_keywords: 
   - "net.ComponentModel.MaskPropertyEditor"
 helpviewer_keywords: 

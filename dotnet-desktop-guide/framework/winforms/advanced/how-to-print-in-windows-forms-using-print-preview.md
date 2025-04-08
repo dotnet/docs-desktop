@@ -2,6 +2,7 @@
 title: Print Using Print Preview
 description: Learn how to add print preview services to your application by using the Windows Forms PrintPreviewDialog control.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

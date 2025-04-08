@@ -1,6 +1,7 @@
 ---
 title: "TableLayoutPanel Control"
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "TableLayoutPanel control [Windows Forms]"
   - "layout [Windows Forms]"

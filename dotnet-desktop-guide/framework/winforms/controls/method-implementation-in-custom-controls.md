@@ -2,6 +2,7 @@
 title: "Method Implementation in Custom Controls"
 description: Learn about method implementation in custom controls in Windows Forms, by means of code samples in Visual Basic and C#.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

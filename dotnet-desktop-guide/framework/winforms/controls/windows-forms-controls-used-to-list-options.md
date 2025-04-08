@@ -2,6 +2,7 @@
 title: Controls Used to List Options
 description: Learn about the controls used to list options in Windows Forms, along with the variety of controls that provide users with a list of options. 
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "Windows Forms controls, listing options"
   - "option lists in Windows Forms"

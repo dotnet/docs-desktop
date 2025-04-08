@@ -2,6 +2,7 @@
 title: "How to: Draw a Filled Rectangle on a Windows Form"
 description: Learn how to programmatically draw a filled rectangle on a Windows Form. Also learn about compiling your code. 
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

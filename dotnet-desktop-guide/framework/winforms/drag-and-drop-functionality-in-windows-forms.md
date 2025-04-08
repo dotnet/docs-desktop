@@ -2,6 +2,7 @@
 title: "Drag-and-Drop Functionality"
 description: Learn about drag-and-drop functionality in Windows Forms, which includes a set of methods, events, and classes that implement drag-and-drop behavior.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "drag and drop [Windows Forms], Windows Forms"
   - "Windows Forms, drag and drop"

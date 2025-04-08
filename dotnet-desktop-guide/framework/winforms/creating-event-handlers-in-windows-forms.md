@@ -2,6 +2,7 @@
 title: "Create Event Handlers"
 description: Learn how events in Windows Forms can be assigned to multiple handlers, and how the methods that handle particular events can be changed dynamically.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords:
   - "event handling [Windows Forms]"
   - "Windows Forms controls, event handling"

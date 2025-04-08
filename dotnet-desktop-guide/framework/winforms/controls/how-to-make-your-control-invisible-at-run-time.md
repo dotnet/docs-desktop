@@ -2,6 +2,7 @@
 title: "How to: Make Your Control Invisible at Run Time"
 description: Learn how to make your control invisible at run time even though the code in your control may still be running behind the scenes. 
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

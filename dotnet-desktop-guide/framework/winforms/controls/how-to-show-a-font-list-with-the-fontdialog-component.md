@@ -2,6 +2,7 @@
 title: "How to: Show a Font List with the FontDialog Component"
 description: Learn how to show a font list with the FontDialog component, which allows users to select a font, as well as change its display aspects.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

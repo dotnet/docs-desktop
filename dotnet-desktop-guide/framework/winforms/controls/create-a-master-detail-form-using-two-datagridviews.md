@@ -2,6 +2,7 @@
 title: Create a Master-Detail Form Using Two DataGridView Controls
 description: Learn about how to create a master/detail form using two Windows Forms DataGridView Controls.  
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

@@ -2,6 +2,7 @@
 title: "ListBox Control Overview"
 description: This article provides an overview of the ListBox control in Windows Forms, which displays a list from which the user can select one or more items.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 f1_keywords: 
   - "ListBox"
 helpviewer_keywords: 

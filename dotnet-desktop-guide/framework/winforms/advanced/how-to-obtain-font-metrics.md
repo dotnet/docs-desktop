@@ -2,6 +2,7 @@
 title: "How to: Obtain Font Metrics"
 description: Learn how the System.Drawing.FontFamily class provides methods that retrieve various metrics for a particular font family/style combination.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

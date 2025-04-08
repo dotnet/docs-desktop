@@ -2,6 +2,7 @@
 title: "Recoloring Images"
 description: Learn more about various ways to recolor images in GDI+ with a selection of topics and tutorials that provide examples.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "images [Windows Forms], recoloring"
   - "recoloring images"

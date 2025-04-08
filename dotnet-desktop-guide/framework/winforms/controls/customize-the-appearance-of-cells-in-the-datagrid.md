@@ -2,6 +2,7 @@
 title: Customize the Appearance of Cells in DataGridView Control
 description: Learn about how to customize the appearance of cells in the Windows Forms DataGridView control.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

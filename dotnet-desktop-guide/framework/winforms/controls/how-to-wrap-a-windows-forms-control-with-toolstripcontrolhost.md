@@ -2,6 +2,7 @@
 title: Wrap Control with ToolStripControlHost
 description: Learn how to wrap a Windows Forms control with ToolStripControlHost, by means of code samples in CPP, C#, and Visual Basic.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

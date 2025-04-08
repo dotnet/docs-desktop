@@ -2,6 +2,7 @@
 title: "How to: Add a Control to a ToolStripContentPanel"
 description: Use this code example to learn how you can programmatically add one or more controls to a ToolStripContentPanel.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

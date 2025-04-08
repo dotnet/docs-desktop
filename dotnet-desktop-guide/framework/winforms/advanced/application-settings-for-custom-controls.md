@@ -2,6 +2,7 @@
 title: "Application Settings for Custom Controls"
 description: Learn how to use the Application Settings feature to make custom controls' settings persist properly.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords:
   - "custom controls [Windows Forms], application settings"
   - "application settings [Windows Forms], custom controls"

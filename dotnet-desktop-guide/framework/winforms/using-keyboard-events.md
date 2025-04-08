@@ -2,6 +2,7 @@
 title: "Using Keyboard Events"
 description: Learn how to handle and use keyboard events in Windows Forms. You can also access the data provided by a keyboard event, such as the key that is pressed.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "KeyPress event [Windows Forms]"
   - "keyboards [Windows Forms], keyboard events"

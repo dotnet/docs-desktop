@@ -2,6 +2,7 @@
 title: "How to: Set the Size of Status-Bar Panels"
 description: Learn how to set the size of status-bar panels in Windows Forms, by means of code samples in Visual Basic, C#, and CPP.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

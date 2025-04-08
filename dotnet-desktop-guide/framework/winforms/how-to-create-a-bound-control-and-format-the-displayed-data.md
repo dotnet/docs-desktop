@@ -2,6 +2,7 @@
 title: "How to: Create a Bound Control and Format the Displayed Data"
 description: Learn about how to create a bound control as well as ways to format the displayed data with Windows Forms data binding.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords:
   - "data [Windows Forms], formatting"
   - "bound controls [Windows Forms], creating"

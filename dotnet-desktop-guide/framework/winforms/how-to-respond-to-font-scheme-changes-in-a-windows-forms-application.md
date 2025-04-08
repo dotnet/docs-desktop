@@ -3,6 +3,7 @@ title: Respond to Font Scheme Changes in a Windows Forms app
 description: Learn how to respond to font scheme changes in a Windows Forms app when users change system-wide font settings to make fonts appear larger or smaller.
 titleSuffix: ""
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

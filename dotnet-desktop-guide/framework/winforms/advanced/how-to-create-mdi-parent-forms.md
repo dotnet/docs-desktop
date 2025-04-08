@@ -2,6 +2,7 @@
 title: "How to: Create MDI Parent Forms"
 description: Learn how to create an MDI parent form programmatically and by using the Windows Forms Designer.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords:
   - "parent forms"
   - "MDI [Windows Forms], creating forms"

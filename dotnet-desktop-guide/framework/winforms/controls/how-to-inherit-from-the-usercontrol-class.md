@@ -2,6 +2,7 @@
 title: "How to: Inherit from the UserControl Class"
 description: Learn how to inherit from the UserControl class so that you can combine the functionality of one or more Windows forms controls with custom code.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords:
   - "inheritance [Windows Forms], Windows Forms custom controls"
   - "UserControl class [Windows Forms], inheriting from"

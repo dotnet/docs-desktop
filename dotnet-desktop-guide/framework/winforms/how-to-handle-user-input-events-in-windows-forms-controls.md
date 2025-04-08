@@ -2,6 +2,7 @@
 title: Handle User Input Events in Controls
 description: Learn how to handle user input events in Windows Forms controls, such as keyboard, mouse, focus and validation events. 
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

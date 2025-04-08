@@ -1,6 +1,7 @@
 ---
 title: "How to: Align a Control to the Edges of Forms"
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs:
   - "csharp"
   - "vb"

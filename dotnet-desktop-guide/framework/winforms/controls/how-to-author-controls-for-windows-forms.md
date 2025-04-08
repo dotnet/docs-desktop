@@ -1,6 +1,7 @@
 ---
 title: "How to: Author Controls"
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords:
   - "controls [Windows Forms], creating"
   - "UserControl class [Windows Forms], Windows Forms"

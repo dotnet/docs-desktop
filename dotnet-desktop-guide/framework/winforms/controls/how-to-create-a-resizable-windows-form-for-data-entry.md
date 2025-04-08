@@ -1,6 +1,7 @@
 ---
 title: "How to: Create a Resizable Windows Form for Data Entry"
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

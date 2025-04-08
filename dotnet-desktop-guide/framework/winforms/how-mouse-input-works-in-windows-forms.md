@@ -2,6 +2,7 @@
 title: "How Mouse Input Works"
 description: Learn how mouse input works and the options you have for handling mouse events to perform actions in your applications.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 ms.topic: overview
 helpviewer_keywords: 
   - "Windows Forms, mouse input"

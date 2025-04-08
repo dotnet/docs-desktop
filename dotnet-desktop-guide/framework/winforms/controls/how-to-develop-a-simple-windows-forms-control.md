@@ -2,6 +2,7 @@
 title: Develop a Simple Control
 description: Learn how to develop a simple custom Windows form control and then how to define its properties and attributes. 
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs:
   - "csharp"
   - "vb"

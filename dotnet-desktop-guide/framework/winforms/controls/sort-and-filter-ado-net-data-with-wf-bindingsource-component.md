@@ -1,6 +1,7 @@
 ---
 title: Sort and Filter ADO.NET Data with BindingSource Component
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

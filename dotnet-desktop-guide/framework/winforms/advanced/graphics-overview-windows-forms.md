@@ -1,6 +1,7 @@
 ---
 title: "Graphics Overview"
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "Windows Forms, graphics"
   - "Windows Forms, GDI+"

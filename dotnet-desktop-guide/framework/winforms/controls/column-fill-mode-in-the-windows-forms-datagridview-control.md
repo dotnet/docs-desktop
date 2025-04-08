@@ -2,6 +2,7 @@
 title: Column Fill Mode in DataGridView Control
 description: Learn how the Windows Forms DataGridView control in column fill mode resizes its columns automatically so that they fill the width of the available display area. 
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

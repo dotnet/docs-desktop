@@ -2,6 +2,7 @@
 title: "Getting Started with Graphics Programming"
 description: Get started using GDI+ in a Windows Forms application. Learn how to complete several GDI+ tasks, such as drawing and filling shapes and text.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "graphics [Windows Forms], getting started"
   - "getting started [Windows Forms], graphics programming"

@@ -2,6 +2,7 @@
 title: "How to: Hide ToolStripMenuItems"
 description: Learn how to hide ToolStripMenuItems as a way to control the user interface of your application and restrict user commands.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

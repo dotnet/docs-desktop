@@ -1,6 +1,7 @@
 ---
 title: Sort the Contents of ComboBox, ListBox, or CheckedListBox Control
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "CheckedListBox control [Windows Forms], sorting"
   - "ComboBox control [Windows Forms], sorting contents"

@@ -2,6 +2,7 @@
 title: "Brushes and Filled Shapes in GDI+"
 description: Learn how GDI+ provides several brush classes for filling in the interiors of closed shapes, such as a rectangle or an ellipse.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

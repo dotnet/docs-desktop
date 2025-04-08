@@ -2,6 +2,7 @@
 title: "How to: Add to or Remove from a Collection of Controls at Run Time"
 description: Learn how to add controls to and remove controls from any container control on your forms, such as the Panel or GroupBox control, or even the form itself.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

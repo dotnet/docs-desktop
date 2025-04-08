@@ -2,6 +2,7 @@
 title: "How to: Disable ToolStripMenuItems Using the Designer"
 description: Learn how to disable ToolStripMenuItems using the Designer tool so that you can limit or broaden the commands a user can make. 
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords:
   - "ToolStripMenuItems [Windows Forms], disabling in designer"
   - "MenuStrip control [Windows Forms], disabling menu items in designer"

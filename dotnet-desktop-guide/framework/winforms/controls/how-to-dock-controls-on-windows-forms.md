@@ -2,6 +2,7 @@
 title: Dock Controls
 description: Learn how to display Dock Controls against the edges of any of your forms or fill the control's container.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords:
   - "controls [Windows Forms], docking"
   - "Explorer-style applications [Windows Forms], creating"

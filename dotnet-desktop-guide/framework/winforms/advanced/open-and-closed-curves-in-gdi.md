@@ -2,6 +2,7 @@
 title: "Open and Closed Curves in GDI+"
 description: Learn more about how GDI+ can create open and closed curves with the Graphics class and its methods.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"
