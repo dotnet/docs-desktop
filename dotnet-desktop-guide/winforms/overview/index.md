@@ -43,9 +43,9 @@ Windows Forms is a UI technology for .NET, a set of managed libraries that simpl
 
 In Windows Forms, a *form* is a visual surface on which you display information to the user. You ordinarily build Windows Forms apps by adding controls to forms and developing responses to user actions, such as mouse clicks or key presses. A *control* is a discrete UI element that displays data or accepts data input.
 
-When a user does something to your form or one of its controls, the action generates an event. Your app reacts to these events with code, and processes the events when they occur.<!-- TODO  For more information, see [Creating Event Handlers in Windows Forms](creating-event-handlers-in-windows-forms.md).-->
+When a user does something to your form or one of its controls, the action generates an event. Your app reacts to these events with code, and processes the events when they occur. For more information, see [Creating Event Handlers in Windows Forms](creating-event-handlers-in-windows-forms.md).
 
-Windows Forms contains a variety of controls that you can add to forms: controls that display text boxes, buttons, drop-down boxes, radio buttons, and even webpages.<!-- TODO For a list of all the controls you can use on a form, see [Controls to Use on Windows Forms](./controls/controls-to-use-on-windows-forms.md).--> If an existing control doesn't meet your needs, Windows Forms also supports creating your own custom controls using the <xref:System.Windows.Forms.UserControl> class.
+Windows Forms contains a variety of controls that you can add to forms: controls that display text boxes, buttons, drop-down boxes, radio buttons, and even webpages. For a list of all the controls you can use on a form, see [Controls to Use on Windows Forms](./controls/controls-to-use-on-windows-forms.md). If an existing control doesn't meet your needs, Windows Forms also supports creating your own custom controls using the <xref:System.Windows.Forms.UserControl> class.
 
 Windows Forms has rich UI controls that emulate features in high-end apps like Microsoft Office. When you use the <xref:System.Windows.Forms.ToolStrip> and <xref:System.Windows.Forms.MenuStrip> controls, you can create toolbars and menus that contain text and images, display submenus, and host other controls such as text boxes and combo boxes.
 
@@ -53,18 +53,16 @@ With the drag-and-drop **Windows Forms Designer** in Visual Studio, you can easi
 
 Finally, if you must create your own custom UI elements, the <xref:System.Drawing> namespace contains a large selection of classes to render lines, circles, and other shapes directly on a form.
 
+> **.NET Framework Only**
+>
+> Windows Forms controls are not designed to be marshaled across application domains. For this reason, Microsoft does not support passing a Windows Forms control across an <xref:System.AppDomain> boundary, even though the <xref:System.Windows.Controls.Control> base type of <xref:System.MarshalByRefObject> would seem to indicate that this is possible. Windows Forms applications that have multiple application domains are supported as long as no Windows Forms controls are passed across application domain boundaries.
+
 ### Create forms and controls
 
 For step-by-step information about how to use these features, see the following Help topics.
 
 - [How to add a form to a project](../forms/how-to-add.md)
 - [How to add Controls to a form](../controls/how-to-add-to-a-form.md)
-
-<!-- TODO
-| Using the <xref:System.Windows.Forms.ToolStrip> Control | [How to: Create a Basic ToolStrip with Standard Items Using the Designer](./controls/create-a-basic-wf-toolstrip-with-standard-items-using-the-designer.md) |
-| Creating graphics with <xref:System.Drawing> | [Getting Started with Graphics Programming](./advanced/getting-started-with-graphics-programming.md)  |
-| Creating custom controls                     | [How to: Inherit from the UserControl Class](./controls/how-to-inherit-from-the-usercontrol-class.md) |
--->
 
 ## Display and manipulate data
 
