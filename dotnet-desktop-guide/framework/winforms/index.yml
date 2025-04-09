@@ -8,6 +8,7 @@ metadata:
   description: Learn about Windows Forms (WinForms), a graphical user interface for Windows and .NET Framework.
   ms.topic: landing-page
   ms.date: 08/30/2020
+  ms.service: dotnet-framework
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart
 #               reference | sample | tutorial | video | whats-new
