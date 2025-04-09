@@ -11,7 +11,7 @@ helpviewer_keywords:
   - "controls [Windows Forms], adding"
 ---
 
-# Add a control to a form (Windows Forms .NET)
+# Add a control to a form
 
 Most forms are designed by adding controls to the surface of the form to define a user interface (UI). A *control* is a component on a form used to display information or accept user input.<!-- TODO For more information about controls, see [Forms overview](..\forms\overview.md). -->
 

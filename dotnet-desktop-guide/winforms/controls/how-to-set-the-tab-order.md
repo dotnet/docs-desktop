@@ -12,7 +12,7 @@ helpviewer_keywords:
   - "controls [Windows Forms], setting tab order"
   - "Windows Forms, setting tab order"
 ---
-# How to set the tab order on Windows Forms (Windows Forms .NET)
+# How to set the tab order on Windows Forms
 
 The tab order is the order in which a user moves focus from one control to another by pressing the <kbd>Tab</kbd> key. Each form has its own tab order. By default, the tab order is the same as the order in which you created the controls. Tab-order numbering begins with zero and ascends in value, and is set with the <xref:System.Windows.Forms.Control.TabIndex%2A> property.
 

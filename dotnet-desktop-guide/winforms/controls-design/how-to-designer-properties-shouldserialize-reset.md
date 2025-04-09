@@ -16,7 +16,7 @@ helpviewer_keywords:
   - "reset property"
 ---
 
-# Use Reset and ShouldSerialize to control a property (Windows Forms .NET)
+# Use Reset and ShouldSerialize to control a property
 
 In this article, you learn how to create the `Reset<PropertyName>` and `ShouldSerialize<PropertyName>` methods to manage a property for the **Properties** window in Visual Studio. `Reset` and `ShouldSerialize` are optional methods that you can provide for a property, if the property doesn't have a simple default value. If the property has a simple default value, you should apply the <xref:System.ComponentModel.DefaultValueAttribute> and supply the default value to the attribute class constructor instead. Either of these mechanisms enables the following features in the designer:
 

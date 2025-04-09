@@ -12,7 +12,7 @@ helpviewer_keywords:
 - "Windows Forms, drag and drop"
 ---
 
-# Drag-and-drop mouse behavior overview (Windows Forms .NET)
+# Drag-and-drop mouse behavior overview
 
 Windows Forms includes a set of methods, events, and classes that implement drag-and-drop behavior. This article provides an overview of the drag-and-drop support in Windows Forms.<!-- TODO Also see [Drag-and-Drop Operations and Clipboard Support](./advanced/drag-and-drop-operations-and-clipboard-support.md).-->
 

@@ -10,7 +10,7 @@ dev_langs:
 - "vb"
 ---
 
-# The designer changes since .NET Framework (Windows Forms .NET)
+# The designer changes since .NET Framework
 
 The Visual Designer for Windows Forms for .NET has had some improvements and changes since .NET Framework. These changes largely affect custom control designers. This article describes the key differences from .NET Framework.
 

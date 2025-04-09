@@ -9,7 +9,7 @@ helpviewer_keywords:
 ms.custom: devdivchpfy22
 ---
 
-# Create a simple-bound control (Windows Forms .NET)
+# Create a simple-bound control
 
 With simple data binding, you can display a single data element, such as a column value from a dataset table to a control on a form. You can simple-bind any property of a control to a data value.
 

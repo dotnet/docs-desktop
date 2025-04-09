@@ -7,7 +7,7 @@ ms.topic: overview
 #Customer intent: As a developer, I want to understand the components of Windows Forms so that I can understand the overall picture of Windows Forms.
 ---
 
-# Desktop Guide (Windows Forms .NET)
+# Windows Forms for .NET
 
 Welcome to the Desktop Guide for Windows Forms, a UI framework that creates rich desktop client apps for Windows. The Windows Forms development platform supports a broad set of app development features, including controls, graphics, data binding, and user input. Windows Forms features a drag-and-drop visual designer in Visual Studio to easily create Windows Forms apps.
 

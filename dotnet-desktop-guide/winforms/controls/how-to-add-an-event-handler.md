@@ -19,7 +19,7 @@ helpviewer_keywords:
   - "menu items [Windows Forms], multicasting event-handling methods"
 ---
 
-# How to handle a control event (Windows Forms .NET)
+# How to handle a control event
 
 Events for controls (and for forms) are generally set through the Visual Studio Visual Designer for Windows Forms. Setting an event through the Visual Designer is known as handling an event at design-time. You can also handle events dynamically in code, known as handling events at run-time. An event created at run-time allows you to connect event handlers dynamically based on what your app is currently doing.
 

@@ -18,7 +18,7 @@ helpviewer_keywords:
   - "menu items [Windows Forms], multicasting event-handling methods"
 ---
 
-# Control events (Windows Forms .NET)
+# Control events
 
 Controls provide events that are raised when the user interacts with the control or when the state of the control changes. This article describes the common events shared by most controls, events raised by user interaction, and events unique to specific controls. For more information about events in Windows Forms, see [Events overview](../forms/events.md) and [Handling and raising events](/dotnet/standard/events/index).
 

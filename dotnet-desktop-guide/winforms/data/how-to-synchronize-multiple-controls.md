@@ -12,7 +12,7 @@ helpviewer_keywords:
 ms.custom: devdivchpfy22
 ---
 
-# Synchronize multiple controls to the same data source (Windows Forms .NET)
+# Synchronize multiple controls to the same data source
 
 During the implementation of data binding in Windows Forms, multiple controls are bound to the same data source. In the following situations, it's necessary to ensure that the bound properties of the control remain synchronized with each other and the data source:
 

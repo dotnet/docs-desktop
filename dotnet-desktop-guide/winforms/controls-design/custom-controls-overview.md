@@ -16,7 +16,7 @@ helpviewer_keywords:
 
 ---
 
-# What is a custom control? (Windows Forms .NET)
+# What is a custom control?
 
 This article introduces you to custom controls and describes how they're different from user controls. Custom controls don't provide a visual design surface and rely on user-supplied code to draw themselves. This is different from user controls which provide a visual design surface to group multiple controls into a single reusable unit.
 

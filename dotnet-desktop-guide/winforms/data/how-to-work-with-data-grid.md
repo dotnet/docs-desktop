@@ -15,7 +15,7 @@ helpviewer_keywords:
 ms.custom: devdivchpfy22
 ---
 
-# Navigate data (Windows Forms .NET)
+# Navigate data
 
 The easiest way to navigate through records in a data source is to bind a <xref:System.Windows.Forms.BindingSource> component to the data source and then bind controls to the `BindingSource`. You can then use the built-in navigation method of the `BindingSource`, such as <xref:System.Windows.Forms.BindingSource.MoveNext%2A>, <xref:System.Windows.Forms.BindingSource.MoveLast%2A>, <xref:System.Windows.Forms.BindingSource.MovePrevious%2A>, and <xref:System.Windows.Forms.BindingSource.MoveFirst%2A>. Using these methods will adjust the <xref:System.Windows.Forms.BindingSource.Position%2A> and <xref:System.Windows.Forms.BindingSource.Current%2A> properties of the `BindingSource` appropriately. You can also find a record and set it as the current record by setting the `Position` property.
 

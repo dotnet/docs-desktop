@@ -14,7 +14,7 @@ helpviewer_keywords:
 - "controls [Windows Forms], composite"
 ---
 
-# Design-time properties for custom controls (Windows Forms .NET)
+# Design-time properties for custom controls
 
 This article teaches you about how properties are handled for controls in the Windows Forms Visual Designer in Visual Studio.
 

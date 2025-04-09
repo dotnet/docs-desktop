@@ -11,7 +11,7 @@ helpviewer_keywords:
   - "user input [Windows Forms], simulating"
   - "SendKeys [Windows Forms], using"
 ---
-# How to simulate keyboard events (Windows Forms .NET)
+# How to simulate keyboard events
 
 Windows Forms provides a few options for programmatically simulating keyboard input. This article provides an overview of these options.
 

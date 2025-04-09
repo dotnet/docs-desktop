@@ -18,7 +18,7 @@ helpviewer_keywords:
   - "controls [Windows Forms], multithreading"
 ---
 
-# How to make thread-safe calls to controls (Windows Forms .NET)
+# How to make thread-safe calls to controls
 
 Multithreading can improve the performance of Windows Forms apps, but access to Windows Forms controls isn't inherently thread-safe. Multithreading can expose your code to serious and complex bugs. Two or more threads manipulating a control can force the control into an inconsistent state and lead to race conditions, deadlocks, and freezes or hangs. If you implement multithreading in your app, be sure to call cross-thread controls in a thread-safe way. For more information, see [Managed threading best practices](/dotnet/standard/threading/managed-threading-best-practices).
 

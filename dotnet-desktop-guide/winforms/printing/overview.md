@@ -14,7 +14,7 @@ dev_langs:
 ms.custom: devdivchpfy22
 ---
 
-# PrintDialog component overview (Windows Forms .NET)
+# PrintDialog component overview
 
 Printing in Windows Forms consists primarily of using the <xref:System.Drawing.Printing.PrintDocument> component to enable the user to print. The <xref:System.Windows.Forms.PrintPreviewDialog> control, <xref:System.Windows.Forms.PrintDialog>, and <xref:System.Windows.Forms.PageSetupDialog> components provide a familiar graphical interface to Windows operating system users.
 

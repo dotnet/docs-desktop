@@ -12,7 +12,7 @@ helpviewer_keywords:
   - "Windows Forms, modifying keyboard input"
   - "keyboards [Windows Forms], keyboard input"
 ---
-# How to modify keyboard key events (Windows Forms .NET)
+# How to modify keyboard key events
 
 Windows Forms can consume and modify keyboard input. Consuming a key refers to handling a key within a method or event handler so that other methods and events further down the message queue don't receive the key value. And, modifying a key refers to modifying the value of a key so that methods and event handlers further down the message queue receive a different key value. This article shows how to accomplish these tasks.
 

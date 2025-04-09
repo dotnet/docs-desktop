@@ -17,7 +17,7 @@ helpviewer_keywords:
   - "controls [Windows Forms], composite"
 ---
 
-# User control overview (Windows Forms .NET)
+# User control overview
 
 A user control is a collection of Windows Forms controls encapsulated in a common container. This kind of control is referred to as a _composite control_. The contained controls are called _constituent controls_. User controls derive from the <xref:System.Windows.Forms.UserControl> class.
 

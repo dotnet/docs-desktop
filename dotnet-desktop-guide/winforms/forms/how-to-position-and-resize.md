@@ -13,7 +13,7 @@ helpviewer_keywords:
   - "Windows Forms, size"
 ---
 
-# How to position and size a form (Windows Forms .NET)
+# How to position and size a form
 
 When a form is created, the size and location is initially set to a default value. The default size of a form is generally a width and height of _800x500_ pixels. The initial location, when the form is displayed, depends on a few different settings.
 

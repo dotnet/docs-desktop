@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "mouse [Windows Forms], input"
 ---
 
-# Overview of using the mouse (Windows Forms .NET)
+# Overview of using the mouse
 
 Receiving and handling mouse input is an important part of every Windows application. You can handle mouse events to carry out an action in your application, or use mouse location information to perform hit testing or other actions. Also, you can change the way the controls in your application handle mouse input. This article describes these mouse events in detail, and how to obtain and change system settings for the mouse.
 

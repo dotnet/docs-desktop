@@ -12,7 +12,7 @@ helpviewer_keywords:
   - "keyboard [Windows Forms], input"
 ---
 
-# Overview of using the keyboard (Windows Forms .NET)
+# Overview of using the keyboard
 
 In Windows Forms, user input is sent to applications in the form of [Windows messages](/windows/win32/winmsg/about-messages-and-message-queues). A series of overridable methods process these messages at the application, form, and control level. When these methods receive keyboard messages, they raise events that can be handled to get information about the keyboard input. In many cases, Windows Forms applications are able to process all user input simply by handling these events. In other cases, an application might need to override one of the methods that process messages in order to intercept a particular message before it's received by the application, form, or control.
 

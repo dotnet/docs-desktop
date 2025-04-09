@@ -12,7 +12,7 @@ helpviewer_keywords:
 ms.custom: devdivchpfy22
 ---
 
-# Design great data sources with change notification (Windows Forms .NET)
+# Design great data sources with change notification
 
 One of the most important concepts of Windows Forms data binding is the *change notification*. To ensure that your data source and bound controls always have the most recent data, you must add change notification for data binding. Specifically, you want to ensure that bound controls are notified of changes that were made to their data source. The data source is notified of changes that were made to the bound properties of a control.
 
