@@ -19,8 +19,8 @@
           "ThirdPartyNotices.md",
           "samples/**/*.*"
         ],
-        "group": "framework",
-        "src": "framework"
+        "group": "desktop",
+        "src": "content"
       },
       {
         "files": [
@@ -28,29 +28,7 @@
           "**/*.yml"
         ],
         "exclude": [
-          "**/obj/**",
-          "**/includes/**",
-          "_themes/**",
-          "_themes.pdf/**",
-          "**/docfx.json",
-          "_repo.en-us/**",
-          "README.md",
-          "LICENSE",
-          "LICENSE-CODE",
-          "ThirdPartyNotices.md",
-          "samples/**/*.*"
-        ],
-        "group": "net",
-        "src": "net"
-      },
-      {
-        "files": [
-          "**/*.md",
-          "**/*.yml"
-        ],
-        "exclude": [
-          "framework",
-          "net",
+          "desktop",
 
           "**/obj/**",
           "**/includes/**",
@@ -82,8 +60,8 @@
           "_repo.en-us/**",
           "samples/**/*.*"
         ],
-        "group": "framework",
-        "src": "framework"
+        "group": "desktop",
+        "src": "content"
       },
       {
         "files": [
@@ -92,26 +70,7 @@
           "**/*.jpg"
         ],
         "exclude": [
-          "**/obj/**",
-          "**/includes/**",
-          "_themes/**",
-          "_themes.pdf/**",
-          "**/docfx.json",
-          "_repo.en-us/**",
-          "samples/**/*.*"
-        ],
-        "group": "net",
-        "src": "net"
-      },
-      {
-        "files": [
-          "**/*.png",
-          "**/*.gif",
-          "**/*.jpg"
-        ],
-        "exclude": [
-          "framework",
-          "net",
+          "content",
           
           "**/obj/**",
           "**/includes/**",
@@ -210,13 +169,9 @@
         ]
     },
     "groups": {
-      "framework": {
-        "dest": "framework-dest",
-        "moniker_range": "netframeworkdesktop-4.8"
-      },
-      "net": {
-        "dest": "net-dest",
-        "moniker_range": ">= netdesktop-6.0"
+      "content": {
+        "dest": "desktop-dest",
+        "moniker_range": ">= netframeworkdesktop-4.8"
       }
     }
   }
