@@ -2,6 +2,7 @@
 title: "How to create a data binding"
 description: Create a simple binding for your applications through this how-to example in Windows Presentation Foundation (WPF).
 ms.date: 10/22/2024
+ms.service: dotnet-desktop
 dev_langs:
   - "csharp"
   - "vb"

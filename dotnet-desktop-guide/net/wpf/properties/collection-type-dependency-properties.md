@@ -2,6 +2,7 @@
 title: "Collection-type dependency properties"
 description: "Learn how to implement a dependency property that's a collection type and how to assign a default collection value."
 ms.date: 10/24/2024
+ms.service: dotnet-desktop
 ms.custom: update-template
 dev_langs:
   - "csharp"

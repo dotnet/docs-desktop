@@ -2,6 +2,7 @@
 title: How to display a message box
 description: Learn about how to show a message box in Windows Foundation Presentation (WPF). Message boxes prompt users for a response.
 ms.date: 10/24/2024
+ms.service: dotnet-desktop
 ms.custom: update-template
 dev_langs: 
   - "csharp"

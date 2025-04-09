@@ -2,6 +2,7 @@
 title: "How to implement a dependency property"
 description: "Define a dependency property in Windows Presentation Foundation (WPF), by backing a common language runtime property with a DependencyProperty field."
 ms.date: 10/24/2024
+ms.service: dotnet-desktop
 ms.custom: update-template
 dev_langs: 
   - "csharp"

@@ -2,6 +2,7 @@
 title: "How to create a custom routed event"
 description: Learn how to implement a custom routed event for an element in Windows Presentation Foundation (WPF).
 ms.date: 10/24/2024
+ms.service: dotnet-desktop
 ms.custom: update-template
 dev_langs:
   - "csharp"

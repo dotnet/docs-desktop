@@ -3,6 +3,7 @@ title: What's new in WPF for .NET 9
 description: Learn about what's new in Windows Presentation Foundation (WPF) for .NET 9. New versions of WPF are released yearly with .NET.
 ms.topic: whats-new
 ms.date: 11/08/2024
+ms.service: dotnet-desktop
 
 #customer intent: As a developer, I want to know what's changed so that I can remain up-to-date.
 

@@ -2,6 +2,7 @@
 title: Windows in WPF overview
 description: Learn about the basics of how Window objects work in WPF. Learn how to create and manage a window for a Windows Presentation Foundation (WPF) app.
 ms.date: 10/24/2024
+ms.service: dotnet-desktop
 ms.topic: overview
 ms.custom: update-template
 dev_langs: 

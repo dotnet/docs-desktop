@@ -4,6 +4,7 @@ description: Learn how to use data binding to bind an enumeration to a collectio
 author: adegeo
 ms.author: adegeo
 ms.date: 10/22/2024
+ms.service: dotnet-desktop
 ms.custom: update-template
 dev_langs:
   - "csharp"

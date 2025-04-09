@@ -4,6 +4,7 @@ description: Learn about Windows Presentation Foundation (WPF) for .NET merged r
 author: adegeo
 ms.author: adegeo
 ms.date: 10/24/2024
+ms.service: dotnet-desktop
 ms.topic: conceptual
 ms.custom: update-template
 helpviewer_keywords: 

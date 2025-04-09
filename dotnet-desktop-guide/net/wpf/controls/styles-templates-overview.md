@@ -4,6 +4,7 @@ description: Learn about XAML resources in Windows Presentation Foundation (WPF)
 author: adegeo
 ms.author: adegeo
 ms.date: 10/22/2024
+ms.service: dotnet-desktop
 ms.topic: overview
 ms.custom: update-template
 dev_langs: 

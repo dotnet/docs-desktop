@@ -4,6 +4,7 @@ description: Learn what a Windows Presentation Foundation (WPF) resource is. WPF
 author: adegeo
 ms.author: adegeo
 ms.date: 10/24/2024
+ms.service: dotnet-desktop
 ms.topic: overview
 ms.custom: update-template
 dev_langs: 

@@ -4,6 +4,7 @@ description: Learn how to create and reference a control style in Windows Presen
 author: adegeo
 ms.author: adegeo
 ms.date: 10/22/2024
+ms.service: dotnet-desktop
 ms.topic: conceptual
 ms.custom: update-template
 dev_langs:

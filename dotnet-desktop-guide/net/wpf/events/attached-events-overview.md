@@ -2,6 +2,7 @@
 title: "Attached events overview"
 description: Learn about attached events in Windows Presentation Foundation (WPF) and how to add a handler to an arbitrary element.
 ms.date: 10/24/2024
+ms.service: dotnet-desktop
 ms.topic: overview
 ms.custom: update-template
 dev_langs:

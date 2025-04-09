@@ -2,6 +2,7 @@
 title: What is Windows Presentation Foundation
 description: This article gives an overview of Windows Presentation Foundation (WPF) with .NET. WPF is a Windows-only user interface (UI) framework.
 ms.date: 02/15/2023
+ms.service: dotnet-desktop
 ms.topic: overview
 ms.custom: update-template, updateeachrelease
 dev_langs: 
