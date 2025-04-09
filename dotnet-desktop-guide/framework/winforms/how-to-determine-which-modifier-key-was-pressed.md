@@ -2,6 +2,7 @@
 title: "How to: Determine Which Modifier Key Was Pressed"
 description: Learn how to determine which modifier key has been pressed when you create an application that accepts user keystrokes.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

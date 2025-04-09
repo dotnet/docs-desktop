@@ -2,6 +2,7 @@
 title: "How to: Find ControlTemplate-Generated Elements"
 description: Learn how to find ControlTemplate-generated elements, by means of the included code examples in XAML, C#, and Visual Basic.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

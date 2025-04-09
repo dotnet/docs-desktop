@@ -2,6 +2,7 @@
 title: Supported Data Sources
 description: Learn about the wide range of data sources that are supported by Windows Forms data binding, which can access a wide range of data structures.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "collections [Windows Forms], binding to"
   - "OLE DB providers [Windows Forms], Windows Forms"

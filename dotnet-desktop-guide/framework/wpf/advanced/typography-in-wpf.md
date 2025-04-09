@@ -1,6 +1,7 @@
 ---
 title: "Typography in WPF"
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 ms.custom: devdivchpfy22
 description: Learn about the typography in WPF.
 helpviewer_keywords: 

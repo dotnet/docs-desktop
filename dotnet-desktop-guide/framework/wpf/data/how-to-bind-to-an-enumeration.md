@@ -2,6 +2,7 @@
 title: "How to: Bind to an Enumeration"
 description: Learn how to bind to an enumeration by binding to the enumeration's GetValues method in Windows Presentation Foundation (WPF).
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "binding data [WPF], enumeration"
   - "data binding [WPF], enumeration"

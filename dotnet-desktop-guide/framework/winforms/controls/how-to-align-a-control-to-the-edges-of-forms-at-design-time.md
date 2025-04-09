@@ -1,6 +1,7 @@
 ---
 title: "How to: Align a Control to the Edges of Forms at Design Time"
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords:
   - "custom controls [Windows Forms], docking using designer"
   - "Dock property [Windows Forms], aligning controls (using designer)"

@@ -2,6 +2,7 @@
 title: "How to: Define Z-Ordering of Docked ToolStrip Controls"
 description: Learn how to define Z-Order in the form to correctly arrange and position docked ToolStrip controls. 
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

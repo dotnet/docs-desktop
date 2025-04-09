@@ -2,6 +2,7 @@
 title: Keyboard input
 description: Learn about how keyboard input works with Windows Forms so that your application can respond to specific key presses.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "keyboard input [Windows Forms], using in Windows Forms"
   - "keyboards [Windows Forms], keyboard input"

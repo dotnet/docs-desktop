@@ -2,6 +2,7 @@
 title: "How to: Use the Attached Properties of Canvas to Position Child Elements"
 description: Learn how to use the attached properties of a Canvas element to position its child elements in a Windows Presentation Foundation (WPF) application.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

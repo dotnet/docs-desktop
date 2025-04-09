@@ -2,6 +2,7 @@
 title: Optimize app performance
 description: Use these resources improve performance of Windows Presentation Foundation applications, such as planning for performance and taking advantage of hardware.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "application rendering [WPF], performance"
   - "application optimization [WPF]"

@@ -2,6 +2,7 @@
 title: "BackgroundWorker Component Overview"
 description: Learn more about an overview of the BackgroundWorker component in Windows Forms, which gives you the ability to execute time-consuming operations asynchronously.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

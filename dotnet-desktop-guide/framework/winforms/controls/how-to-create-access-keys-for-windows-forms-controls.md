@@ -1,6 +1,7 @@
 ---
 title: Create Access Keys for Controls
 ms.date: 08/20/2019
+ms.service: dotnet-framework
 dev_langs:
   - "csharp"
   - "vb"

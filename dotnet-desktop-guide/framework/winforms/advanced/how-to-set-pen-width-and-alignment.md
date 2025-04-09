@@ -2,6 +2,7 @@
 title: "How to: Set Pen Width and Alignment"
 description: Learn how to set pen width and alignment as arguments to the constructor or with the System.Drawing.Pen.Width and System.Drawing.Pen.Alignment properties.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

@@ -2,6 +2,7 @@
 title: "Collection-Type Dependency Properties"
 description: Learn how to implement and initialize collection-type dependency properties in Windows Presentation Foundation (WPF).
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

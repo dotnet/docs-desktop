@@ -2,6 +2,7 @@
 title: How to create a user control
 description: This article teaches you how to create a user control, known as a composite control, that you can add to other forms.
 ms.date: 04/02/2025
+ms.service: dotnet-desktop
 ms.topic: how-to
 no-loc: ["UserControl", "UserControl1", "UserControlProject", "Label", "Button", "Form", "TextBox"]
 dev_langs:

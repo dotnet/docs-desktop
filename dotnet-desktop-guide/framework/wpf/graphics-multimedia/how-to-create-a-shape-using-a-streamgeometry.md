@@ -2,6 +2,7 @@
 title: "How to: Create a Shape Using a StreamGeometry"
 description: Learn how to create a Shape using a StreamGeometry.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 ms.custom: devdivchpfy22
 dev_langs: 
   - "csharp"

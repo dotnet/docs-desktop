@@ -1,6 +1,7 @@
 ---
 title: "How to: Hook Up a Command to a Control with No Command Support"
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

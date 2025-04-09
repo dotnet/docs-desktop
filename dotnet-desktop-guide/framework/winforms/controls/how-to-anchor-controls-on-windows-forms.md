@@ -1,6 +1,7 @@
 ---
 title: Anchor Controls
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords:
   - "Anchor property [Windows Forms], enabling resizable forms"
   - "Windows Forms controls, screen resolutions"

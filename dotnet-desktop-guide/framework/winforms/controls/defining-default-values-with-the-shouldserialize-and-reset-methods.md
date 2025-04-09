@@ -2,6 +2,7 @@
 title: "Defining Default Values with the ShouldSerialize and Reset Methods"
 description: "Learn how to use the ShouldSerialize and Reset property methods to control the Windows Forms designer behavior."
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs:
   - "csharp"
   - "vb"

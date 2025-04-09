@@ -1,6 +1,7 @@
 ---
 title: Controls by Function
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 ms.topic: overview
 helpviewer_keywords: 
   - "controls [Windows Forms], by function"

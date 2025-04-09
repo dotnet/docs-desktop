@@ -2,6 +2,7 @@
 title: "How to: Apply a Transform to an Element When an Event Occurs"
 description: Learn how to use ScaleTransform to apply a ScaleTransform when an event occurs in Windows Presentation Foundation (WPF).
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

@@ -2,6 +2,7 @@
 title: "How to: Specify HandoffBehavior Between Storyboard Animations"
 description: Learn how to specify handoff behavior between storyboard animations in Windows Presentation Foundation (WPF) applications.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "Storyboards [WPF], handoff behavior between animations"
   - "animation [WPF], handoff behavior between"

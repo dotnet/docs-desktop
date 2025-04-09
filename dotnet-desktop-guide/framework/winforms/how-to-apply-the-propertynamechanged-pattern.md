@@ -2,6 +2,7 @@
 title: "How to: Apply the PropertyNameChanged Pattern"
 description: Learn how to apply the PropertyNameChanged pattern to custom controls that are used with the Windows Forms data binding engine.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

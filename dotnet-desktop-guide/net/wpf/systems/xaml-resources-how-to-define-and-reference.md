@@ -4,6 +4,7 @@ description: Learn how to define and reference Windows Presentation Foundation (
 author: adegeo
 ms.author: adegeo
 ms.date: 10/24/2024
+ms.service: dotnet-desktop
 ms.custom: update-template
 dev_langs:
   - "csharp"

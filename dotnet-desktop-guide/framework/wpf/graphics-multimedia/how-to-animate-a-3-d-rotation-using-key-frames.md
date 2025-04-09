@@ -2,6 +2,7 @@
 title: "How to: Animate a 3D Rotation Using Key Frames"
 description: Learn how to use Rotation3DAnimationUsingKeyFrames to make a 3D object rotate while its axis of rotation animates resulting in a wobble. 
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "animation [WPF], 3D translations [WPF], with key frames (Rotation3DAnimation)"
   - "key frames [WPF], Rotation3DAnimation"

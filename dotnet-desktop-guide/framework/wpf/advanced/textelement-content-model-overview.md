@@ -1,6 +1,7 @@
 ---
 title: "TextElement Content Model Overview"
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 ms.topic: overview
 dev_langs: 
   - "csharp"

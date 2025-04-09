@@ -2,6 +2,7 @@
 title: "Markup Extensions and XAML"
 description: Learn about markup extension and Windows Presentation Foundation (WPF) XAML, including its purpose, syntax rules, and class object model.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "brace character [WPF]"
   - "Binding markup extensions [WPF]"

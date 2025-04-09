@@ -2,6 +2,7 @@
 title: Develop a Composite Control
 description: Learn more about developing a composite Windows Form control by combining other Windows Forms controls.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords:
   - "custom controls [Windows Forms], composite controls"
   - "composite controls [Windows Forms]"

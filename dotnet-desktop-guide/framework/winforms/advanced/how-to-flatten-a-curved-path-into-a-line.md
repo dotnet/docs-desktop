@@ -1,6 +1,7 @@
 ---
 title: "How to: Flatten a Curved Path into a Line"
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "graphics [Windows Forms], flattening curves into lines"
   - "curves [Windows Forms], flattening"

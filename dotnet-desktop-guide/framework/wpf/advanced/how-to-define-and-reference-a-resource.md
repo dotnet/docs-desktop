@@ -1,6 +1,7 @@
 ---
 title: "How to: Define and Reference a Resource"
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords:
   - "resources [WPF], defining"
   - "defining resources [WPF]"

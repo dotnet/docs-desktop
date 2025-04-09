@@ -2,6 +2,7 @@
 title: "Using Transformations to Scale Colors"
 description: Learn how to use transformations to scale colors in Windows Forms with code examples for scaling one or multiple colors.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

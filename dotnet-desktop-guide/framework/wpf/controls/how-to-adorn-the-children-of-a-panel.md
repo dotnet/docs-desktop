@@ -2,6 +2,7 @@
 title: "How to: Adorn the Children of a Panel"
 description: Learn how to adorn the children of a panel by means of the included code samples in C# and Visual Basic.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

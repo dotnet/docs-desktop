@@ -2,6 +2,7 @@
 title: "Event Handlers Overview"
 description: Learn about the standard Windows Forms event handler format, including which parameters are passed to the handlers.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 ms.topic: overview
 dev_langs: 
   - "csharp"

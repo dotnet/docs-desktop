@@ -1,6 +1,7 @@
 ---
 title: "How to: Define an Icon for a ToolBar Button"
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

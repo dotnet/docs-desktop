@@ -1,6 +1,7 @@
 ---
 title: "Change Selection in a RichTextBox Programmatically"
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 ms.custom: devdivchpfy22
 description: Learn how to change selection in a RichTextBox programmatically.
 dev_langs: 

@@ -2,6 +2,7 @@
 title: Controls
 description: Learn how to add and position Windows Form controls. You can also manipulate controls in the designer and write code to add controls dynamically at run time.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords:
   - "Windows Forms controls"
   - "controls [Windows Forms]"

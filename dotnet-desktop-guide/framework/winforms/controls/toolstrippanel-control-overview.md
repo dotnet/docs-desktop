@@ -1,6 +1,7 @@
 ---
 title: "ToolStripPanel Control Overview"
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 f1_keywords: 
   - "ToolStripPanel"
 helpviewer_keywords: 

@@ -2,6 +2,7 @@
 title: LINQ to XML dynamic properties reference
 description: In this section, you can review reference information about all of the dynamic properties in LINQ to XML. 
 ms.date: 10/22/2019
+ms.service: dotnet-framework
 ms.topic: reference
 ---
 # LINQ to XML dynamic properties

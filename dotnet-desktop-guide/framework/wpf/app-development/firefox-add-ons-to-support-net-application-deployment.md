@@ -1,6 +1,7 @@
 ---
 title: "Firefox Add-ons to Support .NET Application Deployment"
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "Firefox add-ons for .NET application deployment"
   - "WPF plug-in for Firefox"

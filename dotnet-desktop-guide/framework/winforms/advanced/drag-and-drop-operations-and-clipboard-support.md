@@ -2,6 +2,7 @@
 title: "Drag-and-Drop Operations and Clipboard Support"
 description: Learn how to enable user-drag-and-drop operations within Windows-based applications by handling a series of events.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "drag and drop [Windows Forms]"
   - "drag and drop [Windows Forms], Windows Forms"

@@ -2,6 +2,7 @@
 title: "Known Folder GUIDs for File Dialog Custom Places"
 description: Learn about known folder GUIDs for file dialog custom places in Windows Forms, by means of the list of GUIDs in this article.
 ms.date: "06/15/2021"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "Known Folder GUIDs [Windows Forms], Custom Places"
   - "Custom Places [Windows Forms], Known Folder GUIDs"

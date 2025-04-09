@@ -1,6 +1,7 @@
 ---
 title: "SaveFileDialog Component"
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "Save File dialog box"
   - "SaveFileDialog component"

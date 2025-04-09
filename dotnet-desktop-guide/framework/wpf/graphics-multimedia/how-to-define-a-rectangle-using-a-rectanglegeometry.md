@@ -1,6 +1,7 @@
 ---
 title: "How to: Define a Rectangle Using a RectangleGeometry"
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

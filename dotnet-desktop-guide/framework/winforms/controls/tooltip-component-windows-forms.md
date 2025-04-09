@@ -1,6 +1,7 @@
 ---
 title: "ToolTip Component"
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "tooltips [Windows Forms]"
   - "ToolTip component [Windows Forms]"

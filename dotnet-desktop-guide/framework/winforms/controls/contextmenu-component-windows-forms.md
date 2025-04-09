@@ -2,6 +2,7 @@
 title: "ContextMenu Component"
 description: Learn more about the ContextMenu component in Windows Forms, which is retained for both backward compatibility and future use if you choose.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "menus [Windows Forms], shortcut menus"
   - "Windows Forms, menus"

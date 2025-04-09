@@ -2,6 +2,7 @@
 title: "IWpfHostSupport"
 description: Learn about IWpfHostSupport. Win32 applications such as Web browsers can host WPF content, including XAML browser applications (XBAPs) and loose XAML.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "IWpfHostSupport interface [WPF]"
 ms.assetid: cc5a0281-de81-4cc1-87e4-0e46b1a811e9

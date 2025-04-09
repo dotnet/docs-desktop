@@ -2,6 +2,7 @@
 title: Unmanaged apps overview
 description: Windows Forms applications and controls can interoperate with unmanaged applications, with some caveats.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 ms.topic: overview
 helpviewer_keywords:
   - "COM [Windows Forms]"

@@ -2,6 +2,7 @@
 title: "Effects of Modifying a Base Form's Appearance"
 description: Learn how modifying a base form's appearance in a project can effect other forms within the project that inherit from the base form.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords:
   - "parent forms [Windows Forms]"
   - "inherited forms [Windows Forms], modifications to base form"

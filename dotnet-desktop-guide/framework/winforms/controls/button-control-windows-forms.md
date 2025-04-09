@@ -2,6 +2,7 @@
 title: "Button Control"
 description: Learn about the button control in Windows Forms, which allows the user to click a button in order to perform an action.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "buttons"
   - "Button control [Windows Forms]"

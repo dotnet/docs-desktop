@@ -2,6 +2,7 @@
 title: "How to: Connect Multiple Events to a Single Event Handler"
 description: Learn how to connect multiple events to a single event handler in Windows Forms by using the Events view of the Properties window in C#.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "vb"
 helpviewer_keywords: 

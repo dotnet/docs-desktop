@@ -2,6 +2,7 @@
 title: "TextBox Overview"
 description: Overview of how the TextBox class enables you to display or edit unformatted text in Windows Presentation Foundation (WPF) applications.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "controls [WPF], TextBox"
   - "TextBox control [WPF], about TextBox control"

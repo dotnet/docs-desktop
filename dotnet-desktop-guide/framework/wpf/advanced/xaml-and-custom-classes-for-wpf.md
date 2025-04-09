@@ -1,6 +1,7 @@
 ---
 title: XAML and custom classes
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "custom classes in XAML [WPF]"
   - "XAML [WPF], custom classes"

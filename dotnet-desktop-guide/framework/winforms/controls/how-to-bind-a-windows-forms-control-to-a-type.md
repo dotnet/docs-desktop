@@ -1,6 +1,7 @@
 ---
 title: Bind Control to a Type
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

@@ -153,14 +153,6 @@
         "xaml-services/**/*.md": "wpf"
       },
       "ms.service": {
-        "framework/winforms/**/**.md": "dotnet-framework",
-        "framework/winforms/**/**.yml": "dotnet-framework",
-        "framework/wpf/**/**.md": "dotnet-framework",
-        "framework/wpf/**/**.yml": "dotnet-framework",
-        "net/winforms/**/**.md": "dotnet-desktop",
-        "net/winforms/**/**.yml": "dotnet-desktop",
-        "net/wpf/**/**.md": "dotnet-desktop",
-        "net/wpf/**/**.yml": "dotnet-desktop",
         "xaml-services/**/*.md": "dotnet-desktop",
         "xaml-services/**/*.yml": "dotnet-desktop"
       },

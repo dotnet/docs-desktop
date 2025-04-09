@@ -2,6 +2,7 @@
 title: Merging Menu Items in MenuStrip Control
 description: Learn about merging menu items in the Windows Forms MenuStrip control via the procedures and table in this article.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "MenuStrip [Windows Forms], merging"
   - "merging [Windows Forms], general concepts"

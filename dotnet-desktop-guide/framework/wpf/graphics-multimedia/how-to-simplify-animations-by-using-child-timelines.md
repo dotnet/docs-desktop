@@ -2,6 +2,7 @@
 title: "How to: Simplify Animations by Using Child Timelines"
 description: Learn how to simplify animations by using one or more ParallelTimeline objects as nested child elements of a Storyboard.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "simplifying animations by child timelines [WPF]"
   - "animation [WPF], simplifying by child timelines"

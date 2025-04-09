@@ -2,6 +2,7 @@
 title: "How to: Inherit from the Control Class"
 description: Learn how to inherit from the Control class so that you can create completely custom controls for Windows forms.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords:
   - "inheritance [Windows Forms], Windows Forms custom controls"
   - "Control class [Windows Forms], inheriting from"

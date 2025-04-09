@@ -1,6 +1,7 @@
 ---
 title: Associate a Shortcut Menu with NotifyIcon Component
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

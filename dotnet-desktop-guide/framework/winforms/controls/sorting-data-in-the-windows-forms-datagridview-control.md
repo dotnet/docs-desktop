@@ -1,6 +1,7 @@
 ---
 title: Sorting data in DataGridView control
 ms.date: "02/13/2018"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "data [Windows Forms], sorting in grids"
   - "data grids [Windows Forms], sorting data"

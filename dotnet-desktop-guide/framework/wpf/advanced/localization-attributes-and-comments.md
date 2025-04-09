@@ -1,6 +1,7 @@
 ---
 title: "Localization Attributes and Comments"
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 ms.custom: devdivchpfy22
 description: Learn how to use localization attributes and comments.
 helpviewer_keywords: 

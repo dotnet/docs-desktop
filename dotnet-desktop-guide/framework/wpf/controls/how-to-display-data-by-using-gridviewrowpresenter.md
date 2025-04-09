@@ -2,6 +2,7 @@
 title: "How to: Display Data by Using GridViewRowPresenter"
 description: Learn how to display data by using GridViewRowPresenter, by means of the included code example in XAML.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "displaying data with GridViewRowPresenter [WPF]"
   - "GridViewRowPresenter [WPF]"

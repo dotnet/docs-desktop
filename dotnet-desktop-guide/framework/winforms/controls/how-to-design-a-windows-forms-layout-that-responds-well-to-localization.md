@@ -2,6 +2,7 @@
 title: Design a localization-friendly layout
 description: Learn how to design a localization-friendly layout that is ready for use by international markets.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs:
   - "csharp"
   - "vb"

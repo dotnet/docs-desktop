@@ -8,6 +8,7 @@ metadata:
   description: Learn about using Windows Forms, an open-source, graphical user interface for Windows, on .NET.
   ms.topic: landing-page
   ms.date: 04/02/2025
+  ms.service: dotnet-desktop
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
 

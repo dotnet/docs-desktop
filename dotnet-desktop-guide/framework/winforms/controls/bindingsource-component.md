@@ -2,6 +2,7 @@
 title: "BindingSource Component"
 description: Learn more about the BindingSource component, which encapsulates a data source for binding to controls.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "data binding [Windows Forms], Windows Forms"
   - "Windows Forms, data binding control"

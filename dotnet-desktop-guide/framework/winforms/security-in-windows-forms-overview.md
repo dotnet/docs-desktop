@@ -2,6 +2,7 @@
 title: Security overview
 description: Learn about security in Windows Forms and discover ways to prevent code from being able to access the user's computer resources without permission.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 ms.topic: overview
 helpviewer_keywords:
   - "code access security [Windows Forms], Windows Forms"

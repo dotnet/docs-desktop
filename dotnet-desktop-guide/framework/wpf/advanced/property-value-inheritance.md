@@ -2,6 +2,7 @@
 title: "Property Value Inheritance"
 description: Learn about property value inheritance, which is a feature of the Windows Presentation Foundation (WPF) property system.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "inheritance [WPF], property values"
   - "value inheritance [WPF]"

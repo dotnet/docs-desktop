@@ -2,6 +2,7 @@
 title: "User Input"
 description: Learn about user input in Windows Forms, which has a user input model based on events that are raised while processing related Windows messages.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "keyboard input [Windows Forms], using in Windows Forms"
   - "Windows Forms, user input"

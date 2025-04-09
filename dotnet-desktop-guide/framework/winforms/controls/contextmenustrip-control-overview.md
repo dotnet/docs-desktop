@@ -2,6 +2,7 @@
 title: "ContextMenuStrip Control Overview"
 description: This article provides an overview of the ContextMenuStrip control, which replaces and adds functionality to the ContextMenu control.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 f1_keywords: 
   - "ContextMenuStrip"
 helpviewer_keywords: 

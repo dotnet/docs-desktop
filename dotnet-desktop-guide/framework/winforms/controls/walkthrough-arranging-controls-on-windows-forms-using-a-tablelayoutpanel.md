@@ -2,6 +2,7 @@
 title: Arranging Controls Using a TableLayoutPanel
 description: Learn how to arrange controls on your Windows Forms by using the FlowLayoutPanel control and the TableLayoutPanel control.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords:
   - "controls [Windows Forms], arranging with TableLayoutPanel"
   - "TableLayoutPanel control [Windows Forms], walkthroughs"

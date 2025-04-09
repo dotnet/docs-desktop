@@ -1,6 +1,7 @@
 ---
 title: "Troubleshooting Hybrid Applications"
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "overlapping controls [WPF]"
   - "Windows Forms [WPF], interoperability with"

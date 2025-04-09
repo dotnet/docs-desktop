@@ -2,6 +2,7 @@
 title: "Label Control Overview"
 description: This article provides an overview of label control in Windows Forms, including working with the label control.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 f1_keywords: 
   - "Label"
 helpviewer_keywords: 

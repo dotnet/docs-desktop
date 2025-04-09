@@ -2,6 +2,7 @@
 title: "Guidelines for Designing Stylable Controls"
 description: Learn about the guidelines for designing stylable controls. This document summarizes a set of best practices to consider when designing a control.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords:
   - "style design for controls [WPF]"
   - "controls [WPF], style design"

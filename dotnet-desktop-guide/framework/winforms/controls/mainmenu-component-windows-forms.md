@@ -2,6 +2,7 @@
 title: "MainMenu Component"
 description: Learn about the MainMenu component in Windows Forms, which displays a menu at run time and is retained for both backward compatibility and future use.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "MainMenu control [Windows Forms]"
 ms.assetid: 7cd22f29-828b-42e8-9c88-f08aa4533850

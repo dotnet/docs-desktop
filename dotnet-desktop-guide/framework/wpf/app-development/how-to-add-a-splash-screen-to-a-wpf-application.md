@@ -2,6 +2,7 @@
 title: "How to add a splash screen"
 description: Find out how to add a startup window, or splash screen, to a Windows Presentation Foundation (WPF) application.
 ms.date: 08/18/2018
+ms.service: dotnet-framework
 helpviewer_keywords:
   - "WPF [WPF], splash screen"
   - "startup window [WPF]"

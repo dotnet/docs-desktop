@@ -2,6 +2,7 @@
 title: "Mouse Pointers"
 description: Learn about mouse pointers which are also often called cursors. Discover ways to modify and control the mouse pointer in Windows Forms. 
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "pointers [Windows Forms], setting"
   - "mouse pointers"

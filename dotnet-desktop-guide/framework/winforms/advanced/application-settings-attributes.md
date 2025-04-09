@@ -2,6 +2,7 @@
 title: "Application Settings Attributes"
 description: Learn how the Application Settings architecture provides many attributes that can be applied to the applications settings wrapper class or its properties.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "application settings [Windows Forms], attributes"
   - "attributes [Windows Forms], application settings"

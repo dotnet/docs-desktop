@@ -2,6 +2,7 @@
 title: "DomainUpDown Control Overview"
 description: Learn about an overview of the DomainUpDown control in Windows Forms, which is a combination of a text box and a pair of buttons for moving up or down through a list.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 f1_keywords: 
   - "DomainUpDown"
 helpviewer_keywords: 

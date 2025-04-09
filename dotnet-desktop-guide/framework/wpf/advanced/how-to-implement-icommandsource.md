@@ -1,6 +1,7 @@
 ---
 title: "How to: Implement ICommandSource"
 ms.date: "12/05/2019"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

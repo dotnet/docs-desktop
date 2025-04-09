@@ -3,6 +3,7 @@ title: "LoadFromHistory Function - WPF unmanaged API reference"
 description: Learn about the LoadFromHistory function and how it works with unmanaged API Reference in Windows Presentation Foundation (WPF).
 titleSuffix: ""
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "cpp"
 api_name: 

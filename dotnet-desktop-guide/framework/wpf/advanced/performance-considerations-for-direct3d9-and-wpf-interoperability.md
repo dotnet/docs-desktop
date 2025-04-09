@@ -3,6 +3,7 @@ title: Performance considerations for Direct3D9 and WPF interop
 description: Explore the performance considerations for working with Direct3D9 and Windows Presentation Foundation (WPF) interoperability.
 titleSuffix: ""
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "WPF [WPF], Direct3D9 interop performance"
   - "Direct3D9 [WPF interoperability], performance"

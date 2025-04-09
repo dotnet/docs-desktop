@@ -4,6 +4,7 @@ description: Learn about XAML resources in WPF for .NET Framework. Understand th
 author: adegeo
 ms.author: adegeo
 ms.date: 12/03/2020
+ms.service: dotnet-framework
 ms.topic: overview
 ---
 

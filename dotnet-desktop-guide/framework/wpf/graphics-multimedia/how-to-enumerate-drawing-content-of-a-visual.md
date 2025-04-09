@@ -2,6 +2,7 @@
 title: "How to: Enumerate Drawing Content of a Visual"
 description: Learn how to enumerate the drawing content of a Visual by using the GetDrawing method to retrieve the DrawingGroup value of a Visual and enumerating it.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "retrieving the DrawingGroup value of a Visual [WPF]"
   - "enumerating the contents of a Visual [WPF]"

@@ -2,6 +2,7 @@
 title: "How to: Change the Horizontal Alignment of a Column in a ListView"
 description: Learn how to change the horizontal alignment of a column in a ListView. By default, the content of each column in a ListViewItem is left-aligned.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "ListView controls [WPF], horizontal alignment [WPF]"
 ms.assetid: b9573e44-9dad-4d14-939c-7859ca372758

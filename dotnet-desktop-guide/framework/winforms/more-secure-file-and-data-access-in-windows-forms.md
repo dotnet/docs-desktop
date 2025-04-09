@@ -2,6 +2,7 @@
 title: "More Secure File and Data Access"
 description: Learn about secure file and data access provided by the .NET Framework, which uses permissions to help protect resources and data.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

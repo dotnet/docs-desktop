@@ -3,6 +3,7 @@ title: XAML language overview
 description: Learn how the XAML language is structured and implemented by Windows Presentation Foundation (WPF) for .NET.
 author: adegeo
 ms.date: 10/24/2024
+ms.service: dotnet-desktop
 ms.author: adegeo
 ms.topic: overview
 ms.custom: update-template

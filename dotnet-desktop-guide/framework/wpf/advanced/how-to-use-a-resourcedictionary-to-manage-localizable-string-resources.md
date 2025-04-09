@@ -2,6 +2,7 @@
 title: "How to: Use a ResourceDictionary to Manage Localizable String Resources"
 description: Learn how to use the ResourceDictionary to package and manage localizable string resources for Windows Presentation Foundation (WPF) applications.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

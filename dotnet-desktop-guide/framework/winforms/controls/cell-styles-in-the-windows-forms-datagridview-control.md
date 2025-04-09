@@ -2,6 +2,7 @@
 title: Cell Styles in DataGridView Control
 description: Learn more about cell styles in the Windows Forms DataGridView control. Each cell within the DataGridView control can have its own style.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "DataGridView control [Windows Forms], cell styles"
   - "cells [Windows Forms], styles"

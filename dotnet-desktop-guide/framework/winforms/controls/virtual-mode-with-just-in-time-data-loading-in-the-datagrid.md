@@ -1,6 +1,7 @@
 ---
 title: Implement Virtual Mode with Just-In-Time Data Loading in DataGridView Control
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

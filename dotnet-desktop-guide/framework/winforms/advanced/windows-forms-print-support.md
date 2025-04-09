@@ -2,6 +2,7 @@
 title: Print Support
 description: Learn more about printing and print support in Windows Forms, which primarily consists of using four components.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "Windows Forms, printing"
   - "printing [Windows Forms]"

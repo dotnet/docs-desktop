@@ -2,6 +2,7 @@
 title: User control overview
 description: Learn about what a user control is in Windows Forms. A user control is a composite control that displays other controls as a group, and is interacted with as a single control.
 ms.date: 04/02/2025
+ms.service: dotnet-desktop
 ms.topic: overview
 f1_keywords: 
   - "UserControl"

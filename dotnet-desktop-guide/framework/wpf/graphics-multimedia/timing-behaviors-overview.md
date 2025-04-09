@@ -2,6 +2,7 @@
 title: "Timing Behaviors Overview"
 description: Learn about the Timing Behaviors Overview.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 ms.custom: devdivchpfy22
 helpviewer_keywords: 
   - "timing behaviors [WPF]"

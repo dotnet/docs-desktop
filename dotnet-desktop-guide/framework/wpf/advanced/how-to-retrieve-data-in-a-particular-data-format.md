@@ -1,6 +1,7 @@
 ---
 title: "How to: Retrieve Data in a Particular Data Format"
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 ms.custom: devdivchpfy22
 description: Learn how to retrieve Data in a particular Data Format.
 dev_langs: 

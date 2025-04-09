@@ -3,6 +3,7 @@ title: Create new WPF Content on Windows Forms
 description: Learn how to create a Windows Presentation Foundation (WPF) control on Windows Forms-based applications using Visual Studio.
 titleSuffix: ""
 ms.date: 08/18/2018
+ms.service: dotnet-framework
 helpviewer_keywords:
   - "interoperability [Windows Forms], WPF and Windows Forms"
   - "WPF content [Windows Forms], hosting in Windows Forms"

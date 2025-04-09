@@ -2,6 +2,7 @@
 title: "How to: Disable ToolStripMenuItems"
 description: Learn how to disable ToolStripMenuItems so that you can limit or broaden the commands a user is able to make. 
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

@@ -2,6 +2,7 @@
 title: "How to: Play a Sound from a Windows Form"
 description: Learn how to play a sound from a Windows Form at a given path at runtime. Also, learn about compiling the code and the .NET Security Framework. 
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs:
   - "csharp"
   - "vb"

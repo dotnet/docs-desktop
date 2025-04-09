@@ -2,6 +2,7 @@
 title: "How to: Change the Speed of a Clock Without Changing the Speed of Its Timeline"
 description: Learn how to use a ClockController object's SpeedRatio property to change the speed of a Clock without altering the SpeedRatio of the clock's Timeline.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

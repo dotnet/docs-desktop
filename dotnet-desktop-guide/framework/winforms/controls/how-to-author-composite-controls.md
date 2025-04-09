@@ -1,6 +1,7 @@
 ---
 title: "How to: Author Composite Controls"
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords:
   - "UserControl class [Windows Forms], creating composite controls"
   - "user controls [Windows Forms], creating"

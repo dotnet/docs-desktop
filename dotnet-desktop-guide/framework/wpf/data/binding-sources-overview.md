@@ -2,6 +2,7 @@
 title: "Binding Sources Overview"
 description: Discover the types of objects you can use as the binding source for your applications in Windows Presentation Foundation (WPF).
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords:
   - "binding data [WPF], binding sources"
   - "data binding [WPF], binding source"

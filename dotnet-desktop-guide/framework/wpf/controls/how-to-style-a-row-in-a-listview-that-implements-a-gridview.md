@@ -2,6 +2,7 @@
 title: "How to: Style a Row in a ListView That Uses a GridView"
 description: Learn how to specify the style of a row in a ListView control that uses a GridView control in a Windows Presentation Foundation (WPF) application.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "GridView controls [WPF], styling rows"
   - "styling rows in ListViews implementing GridViews [WPF]"

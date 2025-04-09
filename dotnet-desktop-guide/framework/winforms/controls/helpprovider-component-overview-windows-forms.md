@@ -2,6 +2,7 @@
 title: "HelpProvider Component Overview"
 description: Learn how the Windows Forms HelpProvider component is used to associate an HTML Help 1.x file with your Windows application.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 f1_keywords: 
   - "HelpProvider"
 helpviewer_keywords: 

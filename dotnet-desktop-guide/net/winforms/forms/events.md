@@ -2,6 +2,7 @@
 title: "Events Overview"
 description: "A brief overview about events with .NET Windows Forms."
 ms.date: 04/02/2025
+ms.service: dotnet-desktop
 ms.topic: overview
 helpviewer_keywords:
   - "Windows Forms, event handling"

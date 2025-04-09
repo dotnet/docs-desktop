@@ -2,6 +2,7 @@
 title: "How to: Use Application Resources"
 description: Learn how to use Application Resources so that resources defined at the application level can be accessed by all other pages that are part of the application.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "application resources [WPF]"
   - "resources [WPF], application resources"

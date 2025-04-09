@@ -2,6 +2,7 @@
 title: "Windows Forms Accessibility Improvements"
 description: Learn about the ways in which .NET Core Windows Forms attempts to improve accessibility in comparison with .NET Framework Windows Forms.
 ms.date: "04/20/2020"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "Windows Forms accessibility"
   - "accessibility"

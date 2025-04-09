@@ -2,6 +2,7 @@
 title: "How to: Get the Return Value of a Page Function"
 description: Learn how to get the return value of a page function, by means of the included examples in XAML, C#, and Visual Basic.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

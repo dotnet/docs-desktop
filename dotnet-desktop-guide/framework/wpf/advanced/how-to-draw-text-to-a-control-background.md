@@ -1,6 +1,7 @@
 ---
 title: "How to: Draw Text to a Control's Background"
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "controls [WPF], drawing text to backgrounds"
   - "text [WPF], drawing to control backgrounds"

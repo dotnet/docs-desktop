@@ -1,6 +1,7 @@
 ---
 title: "How to: Remove all Adorners from an Element"
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 ms.custom: devdivchpfy22
 description: Learn how to remove all Adorners from an Element.
 dev_langs: 

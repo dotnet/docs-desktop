@@ -2,6 +2,7 @@
 title: Designate a Button as the Cancel Button
 description: How to assign a button as the Cancel button which allows the user to quickly exit an operation rather than commit to any action.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

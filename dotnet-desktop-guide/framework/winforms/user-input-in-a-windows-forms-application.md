@@ -3,6 +3,7 @@ title: User input in a Windows Forms app
 description: Learn about user input in Windows Forms apps and the keyboard messages that raise events based on mouse or keyboard input.
 titleSuffix: ""
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "Windows Forms, user input"
 ms.assetid: 9d61fa96-70f7-4754-885a-49a4a6316bdb

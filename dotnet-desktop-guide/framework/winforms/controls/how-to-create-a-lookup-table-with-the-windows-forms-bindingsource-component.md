@@ -1,6 +1,7 @@
 ---
 title: Create a Lookup Table with BindingSource Component
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "lookup tables"
   - "tables [Windows Forms], creating lookup tables"

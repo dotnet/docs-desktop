@@ -2,6 +2,7 @@
 title: "How to: Implement the ITypedList Interface"
 description: Learn how to implement the ITypedList Interface to enable discovery of the schema for a bindable list.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

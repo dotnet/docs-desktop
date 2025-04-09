@@ -2,6 +2,7 @@
 title: "PageSetupDialog Component Overview"
 description: This article provides an overview of the PageSetupDialog component in Windows Forms, which is a pre-configured dialog box used to set page details for printing.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 f1_keywords:
   - "PageSetupDialog"
 helpviewer_keywords:

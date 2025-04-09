@@ -2,6 +2,7 @@
 title: "Add a placeholder to a TextBox"
 description: Learn how to add a placeholder to a TextBox via the included code examples in XAML, C#, and Visual Basic.
 ms.date: 03/13/2025
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

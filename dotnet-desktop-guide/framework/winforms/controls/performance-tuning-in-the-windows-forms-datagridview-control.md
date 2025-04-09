@@ -2,6 +2,7 @@
 title: Performance Tuning in DataGridView Control
 description: Learn about performance tuning in the Windows Forms DataGridView control, by means of the collection of links in this article.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "DataGridView control [Windows Forms], performance tuning"
   - "performance [Windows Forms], DataGridView control"

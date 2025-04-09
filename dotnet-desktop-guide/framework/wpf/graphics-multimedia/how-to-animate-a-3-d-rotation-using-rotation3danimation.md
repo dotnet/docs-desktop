@@ -2,6 +2,7 @@
 title: "How to: Animate a 3D Rotation Using Rotation3DAnimation"
 description: Learn how to make a 3D object rotate while it wobbles by using Rotation3DAnimation to animate the Rotation property.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "3D translations [WPF], animating [WPF], with Rotation3DAnimation"
   - "Rotation3DAnimation [WPF]"

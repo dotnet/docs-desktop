@@ -1,6 +1,7 @@
 ---
 title: "How to: Apply a FocusVisualStyle to a Control"
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "properties [WPF], FocusVisualStyle"
   - "FocusVisualStyle property [WPF]"

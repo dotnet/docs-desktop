@@ -2,6 +2,7 @@
 title: "How to: Bind a ListBox to Data"
 description: Learn how to bind a ListBox to data. You can use data binding to bind data to the individual items. See the included code examples in XAML.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "ListBox controls [WPF], binding data to"
   - "data binding [WPF], ListBox control"

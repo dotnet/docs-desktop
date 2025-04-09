@@ -2,6 +2,7 @@
 title: Layout of controls
 description: Learn about layout in Windows Forms controls, by means of the list of links to relevant topics in this article.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords:
   - "layout [Windows Forms]"
   - "sizing [Windows Forms], automatic [Windows Forms]"

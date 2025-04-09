@@ -1,6 +1,7 @@
 ---
 title: "Walkthrough: Creating Your First Touch Application"
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs:
   - "csharp"
   - "vb"

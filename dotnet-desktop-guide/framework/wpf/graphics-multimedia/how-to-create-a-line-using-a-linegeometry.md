@@ -2,6 +2,7 @@
 title: "How to: Create a Line Using a LineGeometry"
 description: Learn how to create and render a LineGeometry. A Path element is used to render the line and it is defined by the start and end points.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

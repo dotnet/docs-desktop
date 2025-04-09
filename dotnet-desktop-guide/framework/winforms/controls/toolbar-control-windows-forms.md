@@ -1,6 +1,7 @@
 ---
 title: "ToolBar Control"
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "toolbars [Windows Forms]"
   - "ToolBar control [Windows Forms]"

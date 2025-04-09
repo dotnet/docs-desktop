@@ -1,6 +1,7 @@
 ---
 title: "How to: Configure Visual Studio to Debug a XAML Browser Application to Call a Web Service"
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords:
   - "debugging XBAPs that call a Web service [WPF]"
   - "debugging security exceptions for XBAPs [WPF]"

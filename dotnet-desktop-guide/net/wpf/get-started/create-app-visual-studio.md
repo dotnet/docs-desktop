@@ -2,6 +2,7 @@
 title: "Create a new app with Visual Studio tutorial"
 description: Follow this tutorial to learn how to create a new WPF app for .NET with Visual Studio 2022. WPF apps run on Windows.
 ms.date: 11/15/2024
+ms.service: dotnet-desktop
 ms.topic: tutorial
 ms.custom: update-template, updateeachrelease
 dev_langs: 

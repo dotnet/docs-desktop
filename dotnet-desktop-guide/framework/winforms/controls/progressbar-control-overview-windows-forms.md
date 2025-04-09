@@ -1,6 +1,7 @@
 ---
 title: "ProgressBar Control Overview"
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 f1_keywords: 
   - "ProgressBar"
 helpviewer_keywords: 

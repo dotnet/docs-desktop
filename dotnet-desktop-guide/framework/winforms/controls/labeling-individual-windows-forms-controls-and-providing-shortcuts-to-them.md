@@ -2,6 +2,7 @@
 title: Label Controls and Provide Shortcuts
 description: Learn about how to label individual Windows Forms controls and provide shortcuts, by means of the list of links in this article.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords:
   - "controls [Windows Forms], access keys"
   - "shortcuts [Windows Forms], controls"

@@ -2,6 +2,7 @@
 title: How to open a common dialog box
 description: Learn about how to show a system dialog box in Windows Foundation Presentation (WPF). System dialog boxes prompt users for information.
 ms.date: 10/24/2024
+ms.service: dotnet-desktop
 ms.custom: update-template
 dev_langs: 
   - "csharp"

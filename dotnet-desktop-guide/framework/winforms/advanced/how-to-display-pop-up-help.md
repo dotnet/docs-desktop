@@ -1,6 +1,7 @@
 ---
 title: "How to: Display Pop-up Help"
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords:
   - "pop-up Help"
   - "Help [Windows Forms], pop-up Help"

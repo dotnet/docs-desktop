@@ -1,6 +1,7 @@
 ---
 title: Inherit from a Control
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords:
   - "inheritance [Windows Forms], custom controls"
   - "inheritance [Windows Forms], control"

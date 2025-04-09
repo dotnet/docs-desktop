@@ -2,6 +2,7 @@
 title: "Drawing Formatted Text"
 description: Learn about drawing and controlling formatted text in Windows Presentation Foundation (WPF) applications.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

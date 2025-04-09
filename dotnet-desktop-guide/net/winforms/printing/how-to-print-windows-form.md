@@ -2,6 +2,7 @@
 title: "How to print a Windows Form"
 description: Learn how to programmatically print a copy of the current Windows Form by using the CopyFromScreen method.
 ms.date: "05/04/2022"
+ms.service: dotnet-desktop
 dev_langs: 
   - "csharp"
   - "vb"

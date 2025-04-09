@@ -2,6 +2,7 @@
 title: "How to: Create a Composite Shape"
 description: Learn how to create composite shapes using Geometry objects and then display them using a Path element. 
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

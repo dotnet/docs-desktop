@@ -1,6 +1,7 @@
 ---
 title: "How to: Create Variable Sized Text in a ComboBox Control"
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs:
   - "vb"
 helpviewer_keywords:

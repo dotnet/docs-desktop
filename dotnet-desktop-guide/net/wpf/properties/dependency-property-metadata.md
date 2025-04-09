@@ -2,6 +2,7 @@
 title: "Dependency property metadata"
 description: Learn about dependency property metadata in Windows Presentation Foundation (WPF) and how to create, assign, and override metadata.
 ms.date: 10/24/2024
+ms.service: dotnet-desktop
 ms.custom: update-template
 helpviewer_keywords:
   - "APIs [WPF], metadata"

@@ -1,6 +1,7 @@
 ---
 title: "How to: Convert a BMP image to a PNG image"
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

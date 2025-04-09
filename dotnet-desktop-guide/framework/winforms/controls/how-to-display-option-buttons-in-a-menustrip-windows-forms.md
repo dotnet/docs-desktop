@@ -2,6 +2,7 @@
 title: "How to: Display Option Buttons in a MenuStrip"
 description: Learn how to display Option buttons, which are sometimes called Radio buttons in a MenuStrip or Windows form. 
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs:
   - "csharp"
   - "vb"

@@ -2,6 +2,7 @@
 title: "How to: Set the Horizontal and Vertical Alignment of a TileBrush"
 description: Learn how to set the Horizontal and Vertical alignment of a TileBrush.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 ms.custom: devdivchpfy22
 dev_langs: 
   - "csharp"

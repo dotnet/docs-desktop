@@ -2,6 +2,7 @@
 title: "How to: Make Data Available for Binding in XAML"
 description: Discover the various ways you can make data available according to the needs of your application in Windows Presentation Foundation (WPF).
 ms.date: "01/29/2018"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

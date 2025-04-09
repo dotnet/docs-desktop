@@ -2,6 +2,7 @@
 title: "ClearType Registry Settings"
 description: Learn about the Microsoft ClearType registry settings used by Windows Presentation Foundation (WPF) applications.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "ClearType [WPF], registry settings"
   - "typography [WPF], ClearType registry settings"

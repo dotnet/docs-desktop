@@ -2,6 +2,7 @@
 title: How to display a print dialog
 description: Learn how to print from your application by using the System.Windows.Controls.PrintDialog class to open a standard Microsoft Windows print dialog box.
 ms.date: 10/24/2024
+ms.service: dotnet-desktop
 ms.custom: update-template
 dev_langs: 
   - "csharp"

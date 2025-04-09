@@ -2,6 +2,7 @@
 title: "How to: Rotate an Object by Using a Geometric Path"
 description: Learn how to use DoubleAnimationUsingPath objects to rotate an object along a geometric path that is defined by a PathGeometry object.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

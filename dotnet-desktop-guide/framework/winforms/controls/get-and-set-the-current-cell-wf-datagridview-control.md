@@ -2,6 +2,7 @@
 title: Get and Set the Current Cell in DataGridView Control
 description: Learn how to programmatically discover which cell is currently active by getting and setting the current cell in the Windows Forms DataGridView control.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

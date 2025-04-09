@@ -2,6 +2,7 @@
 title: "Data and Data Objects"
 description: Learn about data objects and how they handle data in a Windows Presentation Foundation (WPF) application.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

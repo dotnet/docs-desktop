@@ -2,6 +2,7 @@
 title: "How to: Choose Between StackPanel and DockPanel"
 description: Learn how to choose between StackPanel and DockPanel when you stack content in a Panel, by means of code examples in CPP, C#, Visual Basic, and XAML.
 ms.date: 03/16/2023
+ms.service: dotnet-framework
 dev_langs:
   - "csharp"
   - "vb"

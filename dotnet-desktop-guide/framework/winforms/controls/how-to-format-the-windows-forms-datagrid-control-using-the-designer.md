@@ -2,6 +2,7 @@
 title: Format DataGrid Control Using the Designer
 description: Learn how to format the DataGrid Control using the Designer tool. This allows you to add and replace functionality to the control. 
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords:
   - "columns [Windows Forms], DataGrid controls"
   - "colors [Windows Forms], applying to DataGrid controls"

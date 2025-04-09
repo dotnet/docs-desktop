@@ -2,6 +2,7 @@
 title: How to add or remove an event handler
 description: Learn how to create an event handler for a control at design-time with the Windows Forms Designer in Visual Studio or at run-time.
 ms.date: 03/31/2025
+ms.service: dotnet-desktop
 dev_langs:
   - "csharp"
   - "vb"

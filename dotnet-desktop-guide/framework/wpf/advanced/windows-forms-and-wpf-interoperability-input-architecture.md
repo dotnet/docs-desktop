@@ -2,6 +2,7 @@
 title: "Windows Forms and WPF interop input architecture"
 titleSuffix: ""
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "input architecture [WPF interoperability]"
   - "messages [WPF]"

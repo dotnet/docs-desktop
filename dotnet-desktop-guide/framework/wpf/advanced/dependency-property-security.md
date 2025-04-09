@@ -2,6 +2,7 @@
 title: "Dependency Property Security"
 description: Learn about security considerations for dependency properties in Windows Presentation Foundation (WPF) applications.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "wrappers [WPF], access"
   - "wrappers [WPF], security"

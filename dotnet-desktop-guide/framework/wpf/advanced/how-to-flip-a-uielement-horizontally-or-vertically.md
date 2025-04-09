@@ -1,6 +1,7 @@
 ---
 title: "How to: Flip a UIElement Horizontally or Vertically"
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 ms.custom: devdivchpfy22
 description: Learn how to flip a UIElement horizontally or vertically.
 helpviewer_keywords: 

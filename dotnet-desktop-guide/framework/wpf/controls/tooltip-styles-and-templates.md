@@ -2,6 +2,7 @@
 title: "ToolTip Styles and Templates"
 description: Learn about the the styles and templates for the ToolTip control allowing you to modify the default ControlTemplate to give the control a unique appearance.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "parts [WPF], ToolTip"
   - "styles [WPF], ToolTip"

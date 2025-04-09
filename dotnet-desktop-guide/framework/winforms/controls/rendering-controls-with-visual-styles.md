@@ -1,6 +1,7 @@
 ---
 title: "Rendering Controls with Visual Styles"
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "professional appearance [Windows Forms], rendering Windows Forms controls"
   - "themes [Windows Forms], XP visual styles in Window Forms"

@@ -2,6 +2,7 @@
 title: "Constituent Controls"
 description: Learn more about constituent controls in Windows Forms, or the controls that make up a user control.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

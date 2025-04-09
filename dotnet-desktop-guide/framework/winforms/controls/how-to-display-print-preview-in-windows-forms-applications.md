@@ -3,6 +3,7 @@ title: Display Print Preview in Windows Forms apps
 description: Learn how to display Print Preview in Windows forms apps to enable users to display a document before it is printed.
 titleSuffix: ""
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

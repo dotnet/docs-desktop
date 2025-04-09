@@ -2,6 +2,7 @@
 title: "Timing Events Overview"
 description: Learn how to use the timing events available for Timeline and Clock objects.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

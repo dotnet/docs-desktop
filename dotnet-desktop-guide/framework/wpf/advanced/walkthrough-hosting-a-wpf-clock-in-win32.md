@@ -2,6 +2,7 @@
 title: "Walkthrough: Host a WPF Clock in Win32"
 titleSuffix: ""
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords:
   - "interoperability [WPF], tutorials"
   - "Win32 code [WPF], WPF interoperation"

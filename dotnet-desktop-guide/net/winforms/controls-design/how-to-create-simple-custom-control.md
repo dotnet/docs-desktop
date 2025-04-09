@@ -3,6 +3,7 @@ title: Create a simple custom control
 description: "Learn how to create a custom control that displays a string with a horizontal alignment."
 ms.topic: how-to
 ms.date: 01/15/2025
+ms.service: dotnet-desktop
 dev_langs:
   - "csharp"
   - "vb"

@@ -2,6 +2,7 @@
 title: "How to: Write Metadata to a Bitmap"
 description: Learn how to how to write metadata to a bitmap using the metadata query language.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

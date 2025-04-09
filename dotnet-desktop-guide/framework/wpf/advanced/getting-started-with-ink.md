@@ -2,6 +2,7 @@
 title: Create InkCanvas in Visual Studio
 description: Learn how to get started adding digital ink capability to your Windows Presentation Foundation (WPF) applications.
 ms.date: 08/15/2018
+ms.service: dotnet-framework
 dev_langs:
   - "csharp"
   - "vb"

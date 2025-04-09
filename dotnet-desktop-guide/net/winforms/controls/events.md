@@ -2,6 +2,7 @@
 title: Control events overview
 description: Learn about the different types of events exposed by controls in Windows Forms for .NET. Controls raise events when the user interacts with the control.
 ms.date: 03/31/2025
+ms.service: dotnet-desktop
 ms.topic: overview
 dev_langs:
   - "csharp"

@@ -2,6 +2,7 @@
 title: "How to: Share Sizing Properties Between Grids"
 description: Learn how to share the sizing data of columns and rows between Grid elements in a Windows Presentation Foundation (WPF) application to keep sizing consistent.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

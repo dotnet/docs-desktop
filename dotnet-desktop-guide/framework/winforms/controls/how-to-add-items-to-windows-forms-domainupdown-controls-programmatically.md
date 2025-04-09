@@ -2,6 +2,7 @@
 title: Add Items to DomainUpDown Controls Programmatically
 description: Learn how to add items to Windows Forms DomainUpDown controls programmatically by using the DomainUpDownItemCollection.Add method.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

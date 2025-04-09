@@ -2,6 +2,7 @@
 title: "How to: Animate Camera Position and Direction Using Key Frames"
 description: Learn how Point3DAnimationUsingKeyFrames is used to animate the position of a PerspectiveCamera in a 3D scene.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "animation [WPF], camera direction with key frames"
   - "key frames [WPF], animating camera direction"

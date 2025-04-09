@@ -2,6 +2,7 @@
 title: Bidirectional features overview
 description: Learn about features that support development of bidirectional content in Windows Presentation Foundation (WPF).
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords:
   - "Span elements [WPF]"
   - "bidirectional features [WPF]"

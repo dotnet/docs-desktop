@@ -2,6 +2,7 @@
 title: "How to: Scale an Element"
 description: Learn how to scale an element using ScaleTransform and its properties ScaleX, ScaleY, CenterX, and CenterY.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "scaling [WPF], elements"
   - "graphics [WPF], scaling elements"

@@ -4,6 +4,7 @@ description: "Learn about how custom controls differ from user controls by not p
 author: adegeo
 ms.topic: overview #Don't change
 ms.date: 01/15/2025
+ms.service: dotnet-desktop
 dev_langs:
   - "csharp"
   - "vb"

@@ -2,6 +2,7 @@
 title: "Dependency properties overview"
 description: A property that is backed by the WPF property system is known as a dependency property. This overview describes the WPF property system and the capabilities of a dependency property.
 ms.date: "06/06/2018"
+ms.service: dotnet-framework
 ms.topic: overview
 dev_langs: 
   - "csharp"

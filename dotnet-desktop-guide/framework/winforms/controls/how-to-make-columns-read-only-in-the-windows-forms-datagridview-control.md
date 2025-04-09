@@ -2,6 +2,7 @@
 title: Make Columns Read-Only in DataGridView Control
 description: Learn how to make columns read-only in the Windows Form DataGridView Control to prevent users from editing cells in that column.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

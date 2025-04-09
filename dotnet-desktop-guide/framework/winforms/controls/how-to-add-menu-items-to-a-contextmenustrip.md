@@ -2,6 +2,7 @@
 title: "How to: Add Menu Items to a ContextMenuStrip"
 description: Learn how to add just one menu item or several items at a time to a ContextMenuStrip control in Windows Forms.  
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

@@ -2,6 +2,7 @@
 title: Optimize control performance
 description: Windows Presentation Foundation includes many common components that are used in most Windows applications. Learn how to improve user interface performance.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "controls [WPF], improving performance"
   - "container recycling [WPF]"

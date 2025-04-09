@@ -2,6 +2,7 @@
 title: "How to: Hide ToolStripMenuItems Using the Designer"
 description: Learn how to hide ToolStripMenuItems using the Designer tool to control the user interface of your application and to restrict user commands.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords:
   - "ToolStripMenuItems [Windows Forms], hiding menu items in designer"
   - "MenuStrip control [Windows Forms], hiding menu items in designer"

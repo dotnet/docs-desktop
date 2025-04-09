@@ -2,6 +2,7 @@
 title: Binding sources overview
 description: Discover the types of objects you can use as the binding source for your applications in Windows Presentation Foundation (WPF).
 ms.date: 10/22/2024
+ms.service: dotnet-desktop
 author: adegeo
 ms.author: adegeo
 ms.custom: update-template

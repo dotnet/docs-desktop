@@ -1,6 +1,7 @@
 ---
 title: "How to: Analyze Ink with Analysis Hints"
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

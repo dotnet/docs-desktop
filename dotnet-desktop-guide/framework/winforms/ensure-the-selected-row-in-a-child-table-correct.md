@@ -2,6 +2,7 @@
 title: "How to: Ensure the Selected Row in a Child Table Remains at the Correct Position"
 description: Learn how to ensure the selected row in a child table remains at the correct position with data binding.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

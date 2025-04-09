@@ -1,6 +1,7 @@
 ---
 title: "How to: Remotely Survey the Status of Printers"
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

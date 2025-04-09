@@ -2,6 +2,7 @@
 title: Keyboard Shortcuts for DataGrid Control
 description: Learn about keyboard shortcuts for DataGrid control in Windows Forms, by means of the table in this article.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "keyboard shortcuts [Windows Forms], DataGrid control"
   - "DataGrid control [Windows Forms], navigation keys"

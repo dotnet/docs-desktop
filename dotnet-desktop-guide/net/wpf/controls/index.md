@@ -2,6 +2,7 @@
 title: Controls
 description: This article introduces WPF controls, detailing their creation, styling, templating, events, and rich content support via XAML or code.
 ms.date: 02/19/2025
+ms.service: dotnet-desktop
 ms.topic: overview
 dev_langs: 
   - "csharp"

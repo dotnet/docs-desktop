@@ -2,6 +2,7 @@
 title: Add Tables and Columns to DataGrid Control
 description: Learn how to add tables and columns to a DataGrid control. You can restrict which columns from the table appear.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs:
   - "csharp"
   - "vb"

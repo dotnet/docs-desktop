@@ -2,6 +2,7 @@
 title: "Dependency property value precedence"
 description: Learn how the precedence of different property-based inputs within the WPF property system determines the effective value of a dependency property.
 ms.date: 10/24/2024
+ms.service: dotnet-desktop
 ms.custom: update-template
 helpviewer_keywords: 
   - "dependency properties [WPF], classes as owners"

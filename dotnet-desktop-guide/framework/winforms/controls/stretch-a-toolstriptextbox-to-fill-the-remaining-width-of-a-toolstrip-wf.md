@@ -1,6 +1,7 @@
 ---
 title: "How to: Stretch a ToolStripTextBox to Fill the Remaining Width of a ToolStrip"
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

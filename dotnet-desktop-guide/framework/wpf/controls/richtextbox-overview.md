@@ -2,6 +2,7 @@
 title: "RichTextBox Overview"
 description: Learn how the Windows Presentation Foundation RichTextBox control lets users display or edit content like text, images, and tables. See XAML and C# examples.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs:
   - "csharp"
   - "vb"

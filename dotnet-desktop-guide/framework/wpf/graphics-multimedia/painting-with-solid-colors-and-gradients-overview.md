@@ -2,6 +2,7 @@
 title: "Painting with Solid Colors and Gradients Overview"
 description: Learn how to use objects to paint with solid colors, linear gradients, and radial gradients in Windows Presentation Foundation (WPF).
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords:
   - "solid colors [WPF], painting with"
   - "painting with gradients [WPF]"

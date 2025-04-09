@@ -1,6 +1,7 @@
 ---
 title: "How to: Capture User Input from a PrintDialog at Run Time"
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

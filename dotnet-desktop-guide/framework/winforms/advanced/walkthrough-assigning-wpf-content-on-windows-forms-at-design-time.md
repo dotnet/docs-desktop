@@ -3,6 +3,7 @@ title: Select WPF controls for Windows Forms
 description: Learn how to assign Windows Presentation Foundation (WPF) controls on Windows Forms applications at design time.
 titleSuffix: ""
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords:
   - "WPF content [Windows Forms], assigning at design time"
   - "ElementHost control [Windows Forms], assigning WPF content at design time"

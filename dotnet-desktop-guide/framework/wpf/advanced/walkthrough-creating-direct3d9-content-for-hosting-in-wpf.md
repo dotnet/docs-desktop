@@ -1,6 +1,7 @@
 ---
 title: Create Direct3D9 Content for Hosting
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs:
   - "cpp"
 helpviewer_keywords:

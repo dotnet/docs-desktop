@@ -2,6 +2,7 @@
 title: "Merged Resource Dictionaries"
 description: Learn about merged resource dictionaries, which allows resources to be shared across applications, and which are more conveniently isolated for localization. 
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "merged resource dictionaries [WPF]"
   - "dictionaries [WPF], merged resources"

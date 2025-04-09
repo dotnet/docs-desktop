@@ -1,6 +1,7 @@
 ---
 title: View Errors Within a DataSet using ErrorProvider Component
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

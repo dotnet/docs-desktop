@@ -2,6 +2,7 @@
 title: What's new in WPF for .NET 7
 description: Learn about what's new in Windows Presentation Foundation (WPF) for .NET 7. .NET 7 was released November 2022.
 ms.date: 10/24/2024
+ms.service: dotnet-desktop
 ms.topic: conceptual
 ---
 

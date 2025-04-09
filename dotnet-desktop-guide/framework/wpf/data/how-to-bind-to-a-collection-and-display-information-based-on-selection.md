@@ -2,6 +2,7 @@
 title: "How to: Bind to a Collection and Display Information Based on Selection"
 description: Follow this example to find out how to bind to a collection and display information based on selection in the Windows Presentation Foundation (WPF). 
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs: 
   - "csharp"
   - "vb"

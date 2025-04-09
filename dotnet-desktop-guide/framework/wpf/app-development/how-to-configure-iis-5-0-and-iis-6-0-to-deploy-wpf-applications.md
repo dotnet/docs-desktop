@@ -2,6 +2,7 @@
 title: "How to: Configure IIS 5.0 and IIS 6.0 to Deploy WPF Applications"
 titleSuffix: ""
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords:
   - "MIME types [WPF], registering"
   - "adjusting content expiration setting [WPF]"

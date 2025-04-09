@@ -1,6 +1,7 @@
 ---
 title: "Providing Accessibility Information for Controls on a Windows Form"
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords: 
   - "Windows Forms controls, accessibility"
   - "controls [Windows Forms], accessibility"

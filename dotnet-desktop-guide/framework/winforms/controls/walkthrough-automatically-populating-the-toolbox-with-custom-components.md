@@ -1,6 +1,7 @@
 ---
 title: "Walkthrough: Automatically Populating the Toolbox with Custom Components"
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 helpviewer_keywords:
   - "IToolboxService interface"
   - "Toolbox [Windows Forms], populating"

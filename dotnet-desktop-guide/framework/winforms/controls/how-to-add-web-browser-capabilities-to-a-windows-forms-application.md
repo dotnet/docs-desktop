@@ -2,6 +2,7 @@
 title: Add web browser capabilities to app
 description: Learn how to add web browser capabilities to a Windows Forms application with the WebBrowser control.
 ms.date: "03/30/2017"
+ms.service: dotnet-framework
 dev_langs:
   - "csharp"
   - "vb"
