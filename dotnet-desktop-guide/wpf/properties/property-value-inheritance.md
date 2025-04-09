@@ -14,7 +14,7 @@ helpviewer_keywords:
 ---
 <!-- The acrolinx score was 91 on 12/29/2021-->
 
-# Property value inheritance (WPF .NET)
+# Property value inheritance
 
 Property value inheritance is a feature of the Windows Presentation Foundation (WPF) property system and applies to dependency properties. Property value inheritance lets child elements in a tree of elements obtain the value of a particular property from the nearest parent element. Since a parent element might also have obtained its property value through property value inheritance, the system potentially recurses back to the page root.
 

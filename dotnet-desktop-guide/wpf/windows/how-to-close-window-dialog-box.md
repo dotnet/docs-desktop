@@ -14,7 +14,7 @@ helpviewer_keywords:
   - "message boxes [WPF]"
 ---
 
-# How to close a window or dialog box (WPF .NET)
+# How to close a window or dialog box
 
 In this article, you'll learn about the different ways to close a window or dialog box. A user can close a window by using the elements in the non-client area, including the following:
 

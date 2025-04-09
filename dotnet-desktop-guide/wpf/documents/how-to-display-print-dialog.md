@@ -12,7 +12,7 @@ helpviewer_keywords:
   - "print dialogs [WPF], invoking"
 ---
 
-# How to display a print dialog box (WPF .NET)
+# How to display a print dialog box
 
 Want to print from your application? You can use the <xref:System.Windows.Controls.PrintDialog> class to open a standard Microsoft Windows print dialog box. Here's how.
 

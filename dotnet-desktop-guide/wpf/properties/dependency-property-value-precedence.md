@@ -12,7 +12,7 @@ helpviewer_keywords:
 ---
 <!-- The acrolinx score was 92 on 10/01/2021-->
 
-# Dependency property value precedence (WPF .NET)
+# Dependency property value precedence
 
 The workings of the Windows Presentation Foundation (WPF) property system affect the value of a dependency property. This article explains how the precedence of different property-based inputs within the WPF property system determines the effective value of a dependency property.
 

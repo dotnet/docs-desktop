@@ -13,7 +13,7 @@ helpviewer_keywords:
 ---
 <!-- The acrolinx score was 96 on 10/15/2021-->
 
-# How to register an attached property (WPF .NET)
+# How to register an attached property
 
 This article describes how to register an attached property and provide public accessors that let you access the attached property through Extensible Application Markup Language (XAML) and code. Attached properties enable extra property/value pairs to be set on any XAML element, even though the element doesn't define those extra properties in its object model. The extra properties are globally accessible. Attached properties are typically defined as a specialized form of dependency property that doesn't have a conventional property wrapper. Most attached properties for Windows Presentation Foundation (WPF) types are also implemented as dependency properties. You can create dependency properties on any <xref:System.Windows.DependencyObject> derived type.
 

@@ -15,7 +15,7 @@ helpviewer_keywords:
 ---
 <!-- The acrolinx score was 96 on 03/09/2021-->
 
-# Preview events (WPF .NET)
+# Preview events
 
 Preview events, also known as tunneling events, are routed events that traverse downward through the element tree from the application root element to the element that raised the event. The element that raises an event is reported as the <xref:System.Windows.RoutedEventArgs.Source> in the event data. Not all event scenarios support or require preview events. This article describes where preview events exist and how applications or components can interact with them. For information on how to create a preview event, see [How to create a custom routed event](how-to-create-a-custom-routed-event.md).
 

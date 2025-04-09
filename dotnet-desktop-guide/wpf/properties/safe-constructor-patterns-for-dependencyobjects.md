@@ -14,7 +14,7 @@ helpviewer_keywords:
 ---
 <!-- The acrolinx score was 91 on 12/15/2021-->
 
-# Safe constructor patterns for DependencyObjects (WPF .NET)
+# Safe constructor patterns for DependencyObjects
 
 There's a general principle in managed code programming, often enforced by code analysis tools, that class constructors shouldn't call overridable methods. If an overridable method is called by a base class constructor, and a derived class overrides that method, then the override method in the derived class can run before the derived class constructor. If the derived class constructor performs class initialization, then the derived class method might access uninitialized class members. Dependency property classes should avoid setting dependency property values in a class constructor to avoid runtime initialization problems. This article describes how to implement <xref:System.Windows.DependencyObject> constructors in a way that avoids those problems.
 

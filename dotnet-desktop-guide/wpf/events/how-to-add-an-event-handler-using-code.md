@@ -13,7 +13,7 @@ helpviewer_keywords:
 ---
 <!-- The acrolinx score was 99 on 02/01/2021-->
 
-# How to add an event handler using code (WPF .NET)
+# How to add an event handler using code
 
 You can assign an event handler to an element in Windows Presentation Foundation (WPF) using markup or code-behind. Although it's customary to assign an event handler in Extensible Application Markup Language (XAML), sometimes you might have to assign an event handler in code-behind. For instance, use code when:
 

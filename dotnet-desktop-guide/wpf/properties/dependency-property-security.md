@@ -18,7 +18,7 @@ helpviewer_keywords:
 ---
 <!-- The acrolinx score was 92 on 12/03/2021-->
 
-# Dependency property security (WPF .NET)
+# Dependency property security
 
 The accessibility of read-write dependency properties through the Windows Presentation Foundation (WPF) property system effectively makes them public properties. As a result, it's not possible to make security guarantees about read-write dependency property values. The WPF property system provides more security for read-only dependency properties so that you can restrict write access.
 

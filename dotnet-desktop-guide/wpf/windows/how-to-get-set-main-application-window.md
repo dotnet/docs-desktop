@@ -14,7 +14,7 @@ helpviewer_keywords:
   - "getting windows objects [WPF]"
 ---
 
-# How to get or set the main application window (WPF .NET)
+# How to get or set the main application window
 
 This article teaches you how to get or set the main application window for Windows Presentation Foundation (WPF). The first <xref:System.Windows.Window> that is instantiated within a WPF application is automatically set by <xref:System.Windows.Application> as the main application window. The main window is referenced with the <xref:System.Windows.Application.MainWindow%2A?displayProperty=nameWithType> property.
 

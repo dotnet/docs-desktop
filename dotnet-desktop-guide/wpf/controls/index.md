@@ -12,7 +12,7 @@ helpviewer_keywords:
 
 #customer intent: As a developer, I want to understand WPF controls so that I know their capabilities, especially in ways they compare to other desktop technologies.
 --- 
-# What are controls? (WPF .NET)
+# What are controls?
 
 Windows Presentation Foundation (WPF) ships with many of the common UI components that are used in almost every Windows app, such as <xref:System.Windows.Controls.Button>, <xref:System.Windows.Controls.Label>, <xref:System.Windows.Controls.TextBox>, <xref:System.Windows.Controls.Menu>, and <xref:System.Windows.Controls.ListBox>. Historically, these objects are referred to as controls. The term "control" is used loosely to mean any class that represents a visible object in an app. It's important to note that a class doesn't need to inherit from the <xref:System.Windows.Controls.Control> class to have a visible presence. Classes that inherit from the `Control` class contain a <xref:System.Windows.Controls.ControlTemplate>, which allows the consumer of a control to radically change the control's appearance without having to create a new subclass. This article discusses how controls (both those that do inherit from the `Control` class and those that don't) are commonly used in WPF.
 

@@ -11,7 +11,7 @@ helpviewer_keywords:
   - "message boxes [WPF]"
 ---
 
-# How to open a message box (WPF .NET)
+# How to open a message box
 
 A _message box_ is a dialog box that is used to quickly display information and optionally allow users to make decisions. Access to the message box is provided by the <xref:System.Windows.MessageBox> class. A message box is displayed _modally_. And the code that displays the message box is paused until the user closes the message box either with the close button or a response button.
 

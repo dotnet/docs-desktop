@@ -17,7 +17,7 @@ helpviewer_keywords:
 #no-loc: [TextBlock, Setter]
 ---
 
-# How to define and reference a WPF resource (WPF .NET)
+# How to define and reference a WPF resource
 
 This example shows how to define a resource and reference it. A resource can be referenced through XAML or through code.
 

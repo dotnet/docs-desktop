@@ -16,7 +16,7 @@ helpviewer_keywords:
 ---
 <!--The acrolinx score was 92 on 11/11/2021-->
 
-# Dependency property callbacks and validation (WPF .NET)
+# Dependency property callbacks and validation
 
 This article describes how to define a dependency property and implement dependency property callbacks. The callbacks support value validation, value coercion, and other logic that's needed when a property value changes.
 

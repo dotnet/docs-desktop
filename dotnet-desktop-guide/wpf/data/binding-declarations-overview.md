@@ -18,7 +18,7 @@ helpviewer_keywords:
   - "binding declarations [WPF]"
 ---
 
-# What are binding declarations? (WPF .NET)
+# What are binding declarations?
 
 Typically, developers declare the bindings directly in the XAML markup of the UI elements they want to bind data to. However, you can also declare bindings in code. This article describes how to declare bindings in both XAML and in code.
 

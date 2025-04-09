@@ -12,7 +12,7 @@ helpviewer_keywords:
 #no-loc: [App.xaml, Application.xaml]
 ---
 
-# How to use application resources (WPF .NET)
+# How to use application resources
 
 This example demonstrates how to use application-defined resources. Resources can be defined at the application level, generally through the _App.xaml_ or _Application.xaml_ file, whichever one your project uses. Resources that are defined by the application are globally scoped and accessible by all parts of the application.
 

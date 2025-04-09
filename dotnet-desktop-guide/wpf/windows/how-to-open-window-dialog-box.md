@@ -14,7 +14,7 @@ helpviewer_keywords:
   - "message boxes [WPF]"
 ---
 
-# How to open a window or dialog box (WPF .NET)
+# How to open a window or dialog box
 
 You can create your own windows and display them in Windows Presentation Foundation (WPF). In this article, you'll learn how to display modal and modeless windows and dialogs.
 

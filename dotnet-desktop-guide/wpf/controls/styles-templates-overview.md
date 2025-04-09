@@ -13,7 +13,7 @@ dev_langs:
 #customer intent: As a developer I need to know about how styles and templates work.
 ---
 
-# What are styles and templates? (WPF .NET)
+# What are styles and templates?
 
 Windows Presentation Foundation (WPF) styling and templating refer to a suite of features that let developers and designers create visually compelling effects and a consistent appearance for their product. When customizing the appearance of an app, you want a strong styling and templating model that enables maintenance and sharing of appearance within and among apps. WPF provides that model.
 

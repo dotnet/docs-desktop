@@ -14,7 +14,7 @@ helpviewer_keywords:
 ---
 <!-- The acrolinx score was 93 on 04/11/2022-->
 
-# Weak event patterns (WPF .NET)
+# Weak event patterns
 
 In applications, it's possible that handlers attached to event sources won't be destroyed in coordination with the listener object that attached the handler to the source. This situation can lead to memory leaks. Windows Presentation Foundation (WPF) introduces a design pattern that can be used to address this issue. The design pattern provides a dedicated manager class for particular events, and implements an interface on listeners for that event. This design pattern is known as the *weak event pattern*.
 

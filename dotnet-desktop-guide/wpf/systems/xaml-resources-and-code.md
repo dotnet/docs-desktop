@@ -18,7 +18,7 @@ helpviewer_keywords:
   - "resources [WPF], creating with procedural code"
 ---
 
-# Resources in code (WPF .NET)
+# Resources in code
 
 This overview concentrates on how Windows Presentation Foundation (WPF) resources can be accessed or created using code rather than XAML syntax. For more information on general resource usage and resources from a XAML syntax perspective, see [Overview of XAML resources](xaml-resources-overview.md).
 

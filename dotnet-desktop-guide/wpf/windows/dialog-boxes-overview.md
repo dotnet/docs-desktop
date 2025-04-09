@@ -14,7 +14,7 @@ helpviewer_keywords:
   - "message boxes [WPF]"
 ---
 
-# Dialog boxes overview (WPF .NET)
+# Dialog boxes overview
 
 Windows Presentation Foundation (WPF) provides ways for you to design your own dialog boxes. Dialog boxes are windows but with a specific intent and user experience. This article discusses how a dialog box works and what types of dialog boxes you can create and use. Dialog boxes are used to:
 

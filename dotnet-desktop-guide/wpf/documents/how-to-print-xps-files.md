@@ -11,7 +11,7 @@ helpviewer_keywords:
   - "programmatically print xps files [WPF]"
 ---
 
-# How to print an XPS file (WPF .NET)
+# How to print an XPS file
 
 Sometimes you'll want to add a new print job to the print queue without opening a print dialog box. You can use one of the <xref:System.Printing.PrintQueue.AddJob%2A?displayProperty=nameWithType> methods to do that. Here's how.
 
