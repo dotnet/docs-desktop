@@ -2,6 +2,7 @@
 title: WFDEV004 warning
 description: Learn about Windows Forms compile-time warning WFDEV004. Form.OnClosing, Form.OnClosed, Form.Closing, and Form.Closed, are obsolete.
 ms.date: 03/04/2025
+ms.service: dotnet-desktop
 f1_keywords:
   - "WFDEV004"
 helpviewer_keywords:

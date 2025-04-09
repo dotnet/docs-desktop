@@ -2,6 +2,7 @@
 title: How to make thread-safe calls to controls
 description: Learn how to implement multithreading in your app by calling cross-thread controls in a thread-safe way. If you encounter the 'cross-thread operation not valid' error, use the InvokeRequired property to detect this error. The BackgroundWorker component is also an alternative to creating new threads.
 ms.date: 06/20/2021
+ms.service: dotnet-desktop
 dev_langs:
   - "csharp"
   - "vb"

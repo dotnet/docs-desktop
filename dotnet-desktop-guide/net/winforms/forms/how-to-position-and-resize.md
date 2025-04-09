@@ -2,6 +2,7 @@
 title: "Position and resize a form"
 description: "Learn how to set the size and position of a form in .NET Windows Forms and Visual Studio. The size and location can either be set in the Visual Studio designer or through code."
 ms.date: 04/02/2025
+ms.service: dotnet-desktop
 dev_langs:
   - "csharp"
   - "vb"

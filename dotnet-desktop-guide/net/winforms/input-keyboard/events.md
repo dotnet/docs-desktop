@@ -2,6 +2,7 @@
 title: "Using keyboard events"
 description: Overview of using keyboard events to handle keyboard input. This article provides a list of keyboard-related events and when to use them.
 ms.date: 04/02/2025
+ms.service: dotnet-desktop
 ms.topic: overview
 dev_langs: 
   - "csharp"

@@ -2,6 +2,7 @@
 title: "Add a form to a project"
 description: "Add a new form to a .NET Windows Forms project in Visual Studio"
 ms.date: 04/02/2025
+ms.service: dotnet-desktop
 helpviewer_keywords:
   - "Windows Forms, create add form"
 ---

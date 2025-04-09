@@ -2,6 +2,7 @@
 title: What's new in Windows Forms .NET 7
 description: Learn about what's new in Windows Forms for .NET 7. Windows Forms. .NET provides new features and enhancements over .NET Framework.
 ms.date: 04/02/2025
+ms.service: dotnet-desktop
 ms.topic: whats-new
 #customer intent: As a developer, I want to know what's changed so that I can remain up-to-date.
 ---

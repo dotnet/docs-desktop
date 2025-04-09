@@ -2,6 +2,7 @@
 title: Visual Studio Design-time overview
 description: Learn about what capabilities are available in Visual Studio for Windows Forms designer support with your custom controls.
 ms.date: 04/01/2025
+ms.service: dotnet-desktop
 ms.topic: overview
 no-loc: ["UserControl", "UserControl1", "UserControlProject", "Label", "Button", "Form", "TextBox"]
 dev_langs:

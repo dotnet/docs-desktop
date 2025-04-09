@@ -2,6 +2,7 @@
 title: WFDEV002 error
 description: Learn about Windows Forms compile-time error WFDEV002. 'DomainUpDown.DomainUpDownAccessibleObject' is obsolete. Use 'AccessibleObject' instead.
 ms.date: 03/04/2025
+ms.service: dotnet-desktop
 f1_keywords:
   - "WFDEV002"
 helpviewer_keywords:

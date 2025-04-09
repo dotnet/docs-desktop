@@ -2,6 +2,7 @@
 title: "Simulate keyboard events"
 description: Learn how to simulate keyboard events in Windows Forms for .NET.
 ms.date: 04/02/2025
+ms.service: dotnet-desktop
 dev_langs: 
   - "csharp"
   - "vb"
