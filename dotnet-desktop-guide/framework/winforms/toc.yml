@@ -8,8 +8,6 @@
   - name: Creating a New Windows Form
     href: creating-a-new-windows-form.md
     items:
-    - name: "How to: Create a Windows Forms Application from the Command Line"
-      href: how-to-create-a-windows-forms-application-from-the-command-line.md
     - name: Windows Forms Coordinates
       href: windows-forms-coordinates.md
   - name: Creating Event Handlers in Windows Forms
