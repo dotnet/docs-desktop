@@ -5,6 +5,10 @@
   - name: Windows Forms
     tocHref: /dotnet/desktop/winforms/
     topicHref: /dotnet/desktop/winforms/index
+    items:
+    - name: Controls
+      tocHref: /dotnet/desktop/winforms/controls/
+      topicHref: /dotnet/desktop/winforms/controls/overview
   - name: Windows Presentation Foundation
     tocHref: /dotnet/desktop/wpf/
     topicHref: /dotnet/desktop/wpf/index
