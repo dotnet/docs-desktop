@@ -77,8 +77,9 @@ items:
     - name: "How to use a background thread to search for files"
       href: how-to-use-a-background-thread-to-search-for-files.md
   - name: Controls reference
-    href: controls-to-use-on-windows-forms.md
     items:
+    - name: Overview
+      href: controls-to-use-on-windows-forms.md
     - name: Windows Forms Controls by Function
       href: windows-forms-controls-by-function.md
     - name: Controls with Built-In Owner-Drawing Support
@@ -1154,7 +1155,6 @@ items:
       - name: "How to render a visual style element"
         href: how-to-render-a-visual-style-element.md
   - name: Visual Studio designer support
-    expanded: true
     items:
     - name: Overview
       href: controls-design/designer-overview.md
