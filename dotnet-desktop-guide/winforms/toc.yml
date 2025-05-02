@@ -27,12 +27,22 @@ items:
   items:
   - name: How to upgrade to the latest .NET
     href: migration/index.md
+  - name: Accessibility improvements with .NET
+    href: windows-forms-accessibility-improvements.md
+- name: Advanced topics
+  href: ./advanced/
 - name: Forms
   items:
   - name: Event handlers
     href: forms/events.md
+  - name: Order of events
+    href: order-of-events-in-windows-forms.md
   - name: Automatic scaling
     href: forms/autoscale.md
+  - name: Coordinates in Windows Forms
+    href: windows-forms-coordinates.md
+  - name: High DPI support
+    href: high-dpi-support-in-windows-forms.md
   - name: Common tasks
     items:
     - name: Add a form
@@ -41,81 +51,18 @@ items:
       href: forms/how-to-position-and-resize.md
     - name: Position a form
       href: forms/how-to-position-and-resize.md#position-with-the-designer
+    - name: Respond to font scheme changes
+      href: how-to-respond-to-font-scheme-changes-in-a-windows-forms-application.md
+    - name: Change the border
+      href: how-to-change-the-borders-of-windows-forms.md
 - name: Controls
+  href: ./controls/index.yml
+- name: Dialog boxes
   items:
   - name: Overview
-    href: controls/overview.md
-  - name: Layout options
-    href: controls/layout.md
-  - name: Labels
-    href: controls/labels.md
-  - name: Events
-    href: controls/events.md
-  - name: Custom controls
-    href: controls/custom.md
-  - name: Custom painting and drawing
-    href: controls/custom-painting-drawing.md
-  - name: Apply accessibility information
-    href: controls/provide-accessibility-information.md
-  - name: Common tasks
-    items:
-    - name: Add a control to a form
-      href: controls/how-to-add-to-a-form.md
-    - name: Create access key shortcuts
-      href: controls/how-to-create-access-keys.md
-    - name: Set the text displayed by a control
-      href: controls/how-to-set-the-display-text.md
-    - name: Set the the tab order of a control
-      href: controls/how-to-set-the-tab-order.md
-    - name: Dock and anchor controls
-      href: controls/how-to-dock-and-anchor.md
-    - name: Set the image displayed by a control
-      href: controls/how-to-add-a-picture-to-a-control.md
-    - name: Add or remove event handlers
-      href: controls/how-to-add-an-event-handler.md
-    - name: Make thread-safe calls to controls
-      href: controls/how-to-make-thread-safe-calls.md
-- name: Custom controls
-  items:
-  - name: Overview
-    href: controls-design/overview.md
-  - name: Guidelines
-    href: controls-design/usercontrol-guidelines.md
-  - name: Extend an existing control
-    href: controls-design/how-to-extend-existing.md
-  - name: User controls
-    items:
-    - name: Overview
-      href: controls-design/usercontrol-overview.md
-    - name: How to create a user control
-      href: controls-design/how-to-create-usercontrol.md
-  - name: Custom user-drawn controls
-    items:
-    - name: What is a custom control?
-      href: controls-design/custom-controls-overview.md
-    - name: How to create a simple custom control
-      href: controls-design/how-to-create-simple-custom-control.md
-  - name: Visual Studio designer support
-    expanded: true
-    items:
-    - name: Overview
-      href: controls-design/designer-overview.md
-    - name: Designer changes from .NET Framework
-      href: controls-design/designer-differences-framework.md
-    - name: Design-time properties for custom controls
-      href: controls-design/designer-properties-overview.md
-#    - name: Designer attributes (X)
-#      href: blah
-    - name: Troubleshoot designer errors
-      href: controls-design/designer-errors.md
-    - name: Troubleshoot 32-bit reference errors
-      href: visualstudio/troubleshoot-32bit.md
-    - name: Common tasks
-      items:
-      - name: Use ShouldSerialize and Reset for a property
-        href: controls-design/how-to-designer-properties-shouldserialize-reset.md
-      - name: Provide an icon for the toolbox
-        href: controls-design/how-to-set-toolbox-icon.md
+    href: dialog-boxes-in-windows-forms.md
+  - name: How to display dialog boxes
+    href: how-to-display-dialog-boxes-for-windows-forms.md
 - name: User input - keyboard
   items:
   - name: Overview
@@ -142,6 +89,8 @@ items:
     href: input-mouse/events.md
   - name: Drag-and-drop functionality
     href: input-mouse/drag-and-drop.md
+  - name: Mouse capture
+    href: mouse-capture-in-windows-forms.md
   - name: Common tasks
     items:
     - name: Distinguish between clicks and double-clicks
@@ -176,6 +125,22 @@ items:
       href: data/how-to-create-control-binding.md
     - name: Synchronize multiple controls
       href: data/how-to-synchronize-multiple-controls.md
+    - name: "Implement the IListSource interface"
+      href: how-to-implement-the-ilistsource-interface.md
+    - name: "Implement the ITypedList interface"
+      href: how-to-implement-the-itypedlist-interface.md
+- name: Security
+  items:
+  - name: Overview
+    href: windows-forms-security.md
+  - name: Security in Windows Forms Overview
+    href: security-in-windows-forms-overview.md
+  - name: More Secure File and Data Access in Windows Forms
+    href: more-secure-file-and-data-access-in-windows-forms.md
+  - name: More Secure Printing in Windows Forms
+    href: more-secure-printing-in-windows-forms.md
+  - name: Additional Security Considerations in Windows Forms
+    href: additional-security-considerations-in-windows-forms.md
 - name: Compiler warnings and errors
   items:
   - name: Errors
@@ -250,3 +215,7 @@ items:
       - name: Some controls are obsolete and are provided for compatibility
         href: wfdev-diagnostics/wfdev006.md
  
+
+
+   - name: Windows Forms Controls
+    href: ./controls/

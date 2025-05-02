@@ -1,6 +1,6 @@
 ---
 title: "Windows Forms Accessibility Improvements"
-description: Learn about the ways in which .NET Core Windows Forms attempts to improve accessibility in comparison with .NET Framework Windows Forms.
+description: Learn about the ways in which .NET Windows Forms improves accessibility in comparison with .NET Framework Windows Forms.
 ms.date: "04/20/2020"
 ms.service: dotnet-framework
 helpviewer_keywords: 
@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "accessibility"
 author: "M-Lipin"
 ---
-# Accessibility improvements in Windows Forms controls for .NET Core 3.0
+# Accessibility improvements in Windows Forms controls for .NET
 
 Windows Forms is continuing to improve how it works with accessibility technologies to better support Windows Forms customers. These improvements include the following changes:
 
@@ -17,9 +17,9 @@ Windows Forms is continuing to improve how it works with accessibility technolog
 - Changes in keyboard navigation.
 
 > [!IMPORTANT]
-> Accessibility changes made in .NET Framework 4.7.1 through .NET Framework 4.8 are included in .NET Core 3.0 and above, and are enabled by default. The .NET Framework supported compatibility switches that allowed applications to opt out of the new accessibility behavior. On the other hand, .NET Core doesn't support these settings and doesn't allow applications to opt out of accessibility behavior.
+> Accessibility changes made in .NET Framework 4.7.1 through .NET Framework 4.8 are included in .NET, and are enabled by default. The .NET Framework supported compatibility switches that allowed applications to opt out of the new accessibility behavior. On the other hand, .NET doesn't support these settings and doesn't allow applications to opt out of accessibility behavior.
   
-Starting with .NET Core 3.0, Windows Forms applications benefit from all the new accessibility features (introduced in .NET Framework 4.7.1 - 4.8) without additional configuration.
+.NET Windows Forms applications benefit from all the new accessibility features (introduced in .NET Framework 4.7.1 - 4.8) without additional configuration.
 
 ## ListBox Accessibility support
 
@@ -75,7 +75,7 @@ The following changes apply to the print controls:
 
 Windows Forms designer now uses the string collection editor with improved accessibility support.
 
-## MonthCalendar Accessibility support (available in .NET Core 3.1)
+## MonthCalendar Accessibility support
 
 The following changes apply to the <xref:System.Windows.Forms.MonthCalendar> control:
 
@@ -86,7 +86,7 @@ The following changes apply to the <xref:System.Windows.Forms.MonthCalendar> con
 - Improved arrow key navigation across `MonthCalendar` child elements with a focusing rectangle: blue focus rectangle for Narrator.
 - Improved accessibility for hit test action for `MonthCalendar` control elements to allow getting `MonthCalendar` child accessible element by provided coordinates.
 
-## ToolTips accessibility (available in .NET Core 3.1)
+## ToolTips accessibility
 
 - Added ability to announce a tooltip text by screen reader applications such as NVDA and Narrator. Screen reader application can now announce the text of keyboard or mouse tooltip of any Windows Forms control that configured to show tooltips.
 

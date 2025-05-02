@@ -59,7 +59,4 @@ Windows Forms uses the following logic to automatically scale forms and their co
 - <xref:System.Windows.Forms.Control.Scale%2A>
 - <xref:System.Windows.Forms.ContainerControl.PerformAutoScale%2A>
 - <xref:System.Windows.Forms.ContainerControl.AutoScaleDimensions%2A>
-
-<!-- TODO
-- [Rendering Controls with Visual Styles](controls/rendering-controls-with-visual-styles.md)
-- [How to: Improve Performance by Avoiding Automatic Scaling](advanced/how-to-improve-performance-by-avoiding-automatic-scaling.md)-->
+- [Rendering Controls with Visual Styles](./controls/rendering-controls-with-visual-styles.md)

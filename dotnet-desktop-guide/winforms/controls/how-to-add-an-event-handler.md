@@ -1,6 +1,6 @@
 ---
 title: How to add or remove an event handler
-description: Learn how to create an event handler for a control at design-time with the Windows Forms Designer in Visual Studio or at run-time.
+description: Learn how to create an event handler for a control at design-time with the Windows Forms Designer in Visual Studio or at runtime.
 ms.date: 03/31/2025
 ms.service: dotnet-desktop
 dev_langs:
@@ -21,9 +21,9 @@ helpviewer_keywords:
 
 # How to handle a control event
 
-Events for controls (and for forms) are generally set through the Visual Studio Visual Designer for Windows Forms. Setting an event through the Visual Designer is known as handling an event at design-time. You can also handle events dynamically in code, known as handling events at run-time. An event created at run-time allows you to connect event handlers dynamically based on what your app is currently doing.
+Events for controls (and for forms) are generally set through the Visual Studio Visual Designer for Windows Forms. Setting an event through the Visual Designer is known as handling an event at design-time. You can also handle events dynamically in code, known as handling events at runtime. An event created at runtime allows you to connect event handlers dynamically based on what your app is currently doing.
 
-## Handle an event - designer
+## Handle an event at design time
 
 In Visual Studio, use the Visual Designer to manage handlers for control events. The Visual Designer will generate the handler code and add it to the event for you.
 
@@ -59,9 +59,9 @@ To remove an event handler, you can't just delete handler code that is in the fo
 
 01. Right-click on the event and choose **Reset**.
 
-## Handle an event - code
+## Handle an event at runtime
 
-You typically add event handlers to controls at design-time through the Visual Designer. You can, though, create controls at run-time, which requires you to add event handlers in code. Adding handlers in code also gives you the chance to add multiple handlers to the same event.
+You typically add event handlers to controls at design-time through the Visual Designer. You can, though, create controls at runtime, which requires you to add event handlers in code. Adding handlers in code also gives you the chance to add multiple handlers to the same event.
 
 ### Add a handler
 

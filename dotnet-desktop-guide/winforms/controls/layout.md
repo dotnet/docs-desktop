@@ -258,3 +258,21 @@ The <xref:System.Windows.Forms.TabControl> displays multiple tabs, like dividers
 The most important property of the <xref:System.Windows.Forms.TabControl> is <xref:System.Windows.Forms.TabControl.TabPages%2A>, which contains the individual tabs. Each individual tab is a <xref:System.Windows.Forms.TabPage> object.
 
 :::image type="content" source="media/layout/tabcontrol.png" alt-text="A Windows Form with a tab control with two tab pages.":::
+
+
+
+
+
+
+
+
+
+
+[How to: Align a Control to the Edges of Forms](how-to-align-a-control-to-the-edges-of-forms.md)\
+Demonstrates how to use the <xref:System.Windows.Forms.Control.Dock%2A> property to align your control to the edge of the form it occupies.
+
+[How to: Create a Border Around a Windows Forms Control Using Padding](how-to-create-a-border-around-a-windows-forms-control-using-padding.md)\
+Demonstrates how to use the <xref:System.Windows.Forms.Control.Padding%2A> property to outline a control.
+
+[How to: Implement a Custom Layout Engine](how-to-implement-a-custom-layout-engine.md)\
+Demonstrates how to implement a <xref:System.Windows.Forms.Layout.LayoutEngine> for arranging Windows Forms controls.

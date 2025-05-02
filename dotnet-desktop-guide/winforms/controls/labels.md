@@ -24,9 +24,6 @@ The caption displayed in the label is contained in the <xref:System.Windows.Form
 
 ## See also
 
-- [Use a label to focus a control](how-to-create-access-keys.md#use-a-label-to-focus-a-control)
 - [How to: Set the text displayed by a control](how-to-set-the-display-text.md)
-- <xref:System.Windows.Forms.ContainerControl.AutoScaleMode%2A>
-- <xref:System.Windows.Forms.Control.Scale%2A>
-- <xref:System.Windows.Forms.ContainerControl.PerformAutoScale%2A>
-- <xref:System.Windows.Forms.ContainerControl.AutoScaleDimensions%2A>
+- [Use a label to focus a control](how-to-create-access-keys.md#use-a-label-to-focus-a-control).
+- <xref:System.Windows.Forms.Label>

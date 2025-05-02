@@ -107,10 +107,12 @@ An example of a custom control is a clock control that duplicates the appearance
 
 For more information, see [Create a simple custom control](how-to-create-simple-custom-control.md).
 
-<!--TODO 
 ## ActiveX controls
 
-Although the Windows Forms infrastructure has been optimized to host Windows Forms controls, you can still use ActiveX controls. There's support for this task in Visual Studio. For more information, see [How to: Add ActiveX Controls to Windows Forms](how-to-add-activex-controls-to-windows-forms.md).-->
+Although the Windows Forms infrastructure has been optimized to host Windows Forms controls, you can still use ActiveX controls. There's support for this task in Visual Studio. For more information, see [How to: Add ActiveX Controls to Windows Forms](how-to-add-activex-controls-to-windows-forms.md).
+
+> [!WARNING]
+> ActiveX controls aren't fully supported on .NET. ActiveX controls remain fully supported on .NET Framework.
 
 ## Custom design experience
 

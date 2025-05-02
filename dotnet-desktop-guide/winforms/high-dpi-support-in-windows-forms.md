@@ -25,6 +25,9 @@ In versions of the .NET Framework starting with the .NET Framework 4.7, enhanced
 
 ## Configuring your Windows Forms app for high DPI support
 
+> [!IMPORTANT]
+> This information only applies to .NET Framework. To enable high DPI support in .NET, see [Project-level application settings](whats-new/net60.md#project-level-application-settings).
+
 The new Windows Forms features that support high DPI awareness are available only in applications that target the .NET Framework 4.7 and are running on Windows operating systems starting with the Windows 10 Creators Update.
 
 In addition, to configure high DPI support in your Windows Forms application, you must do the following:
@@ -74,6 +77,9 @@ In addition, to configure high DPI support in your Windows Forms application, yo
   ```
 
 ## Opting out of individual high DPI features
+
+> [!IMPORTANT]
+> This information only applies to .NET Framework. To enable high DPI support in .NET, see [Project-level application settings](whats-new/net60.md#project-level-application-settings).
 
 Setting the `DpiAwareness` value to `PerMonitorV2` enables all high DPI awareness features supported by .NET Framework versions starting with the .NET Framework 4.7. Typically, this is adequate for most Windows Forms applications. However, you may want to opt out of one or more individual features. The most important reason for doing this is that your existing application code already handles that feature.  For example, if your application handles auto scaling, you might want to disable the auto-resizing feature as follows:
 

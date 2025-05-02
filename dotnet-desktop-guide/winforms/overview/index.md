@@ -35,7 +35,7 @@ To learn how to create a Windows Forms app, see [Tutorial: Create a new WinForms
 
 ## Why migrate from .NET Framework
 
-Windows Forms for .NET provides new features and enhancements over .NET Framework. For more information, see [What's new in Windows Forms for .NET 9](../whats-new/net70.md). To learn how to upgrade an app, see [How to upgrade a Windows Forms desktop app to .NET](../migration/index.md)
+Windows Forms for .NET provides new features and enhancements over .NET Framework. For more information, see [What's new in Windows Forms for .NET 9](../whats-new/net90.md). To learn how to upgrade an app, see [How to upgrade a Windows Forms desktop app to .NET](../migration/index.md)
 
 ## Build rich, interactive user interfaces
 
@@ -45,7 +45,7 @@ In Windows Forms, a *form* is a visual surface on which you display information 
 
 When a user does something to your form or one of its controls, the action generates an event. Your app reacts to these events with code, and processes the events when they occur. For more information, see [Creating Event Handlers in Windows Forms](creating-event-handlers-in-windows-forms.md).
 
-Windows Forms contains a variety of controls that you can add to forms: controls that display text boxes, buttons, drop-down boxes, radio buttons, and even webpages. For a list of all the controls you can use on a form, see [Controls to Use on Windows Forms](./controls/controls-to-use-on-windows-forms.md). If an existing control doesn't meet your needs, Windows Forms also supports creating your own custom controls using the <xref:System.Windows.Forms.UserControl> class.
+Windows Forms contains a variety of controls that you can add to forms: controls that display text boxes, buttons, drop-down boxes, radio buttons, and even webpages. For a list of all the controls you can use on a form, see [Controls to Use on Windows Forms](./controls/controls-to-use-on-windows-forms.md). If an existing control doesn't meet your needs, Windows Forms also supports creating your own custom controls using the <xref:System.Windows.Forms.UserControl> class. For more information, see [How to create a user control](../controls-design/how-to-create-usercontrol.md).
 
 Windows Forms has rich UI controls that emulate features in high-end apps like Microsoft Office. When you use the <xref:System.Windows.Forms.ToolStrip> and <xref:System.Windows.Forms.MenuStrip> controls, you can create toolbars and menus that contain text and images, display submenus, and host other controls such as text boxes and combo boxes.
 
@@ -74,58 +74,6 @@ You can create data-bound controls easily by using the Data Sources window in Vi
 
 Another type of data binding you can manage in Windows Forms is *settings*. Most apps must retain some information about their run-time state, such as the last-known size of forms, and retain user preference data, such as default locations for saved files. The Application Settings feature addresses these requirements by providing an easy way to store both types of settings on the client computer. After you define these settings by using either Visual Studio or a code editor, the settings are persisted as XML and automatically read back into memory at run time.
 
-<!-- TODO
-### Display and manipulate data
+## Related content
 
-For step-by-step information about how to use these features, see the following Help topics.
-
-| Description                                                   | Help topic                                                                                                                                                        |
-|---------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Using the <xref:System.Windows.Forms.BindingSource> component | [How to: Bind Windows Forms Controls with the BindingSource Component Using the Designer](./controls/bind-wf-controls-with-the-bindingsource.md)                  |
-| Working with ADO.NET data sources                             | [How to: Sort and Filter ADO.NET Data with the Windows Forms BindingSource Component](./controls/sort-and-filter-ado-net-data-with-wf-bindingsource-component.md) |
-| Using the Data Sources window                                 | [Bind Windows Forms controls to data in Visual Studio](/visualstudio/data-tools/bind-windows-forms-controls-to-data-in-visual-studio)                             |
-| Using app settings                                            | [How to: Create Application Settings](./advanced/how-to-create-application-settings.md)                                                                           |
-
--->
-
-## Deploy apps to client computers
-
-After you have written your app, you must send the app to your users so that they can install and run it on their own client computers. When you use the ClickOnce technology, you can deploy your apps from within Visual Studio by using just a few clicks, and provide your users with a URL pointing to your app on the web. ClickOnce manages all the elements and dependencies in your app, and ensures that the app is correctly installed on the client computer.
-
-ClickOnce apps can be configured to run only when the user is connected to the network, or to run both online and offline. When you specify that an app should support offline operation, ClickOnce adds a link to your app in the user's **Start** menu. The user can then open the app without using the URL.
-
-When you update your app, you publish a new deployment manifest and a new copy of your app to your web server. ClickOnce will detect that there is an update available and upgrade the user's installation. No custom programming is required to update old apps.
-
-<!-- TODO
-
-### Deploy ClickOnce apps
-
-For a full introduction to ClickOnce, see [ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment). For step-by-step information about how to use these features, see the following Help topics,
-
-|Description|Help topic|
-|-----------------|----------------|
-|Deploying an app by using ClickOnce|[How to: Publish a ClickOnce Application using the Publish Wizard](/visualstudio/deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard)<br /><br /> [Walkthrough: Manually Deploying a ClickOnce Application](/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-application)|
-|Updating a ClickOnce deployment|[How to: Manage Updates for a ClickOnce Application](/visualstudio/deployment/how-to-manage-updates-for-a-clickonce-application)|
-|Managing security with ClickOnce|[How to: Enable ClickOnce Security Settings](/visualstudio/deployment/how-to-enable-clickonce-security-settings)|
--->
-
-<!-- TODO
-## Other controls and features
-
-There are many other features in Windows Forms that make implementing common tasks fast and easy, such as support for creating dialog boxes, printing, adding help and documentation, and localizing your app to multiple languages.
-
-### Implement other controls and features
-
-For step-by-step information about how to use these features, see the following Help topics.
-
-| Description | Help topic |
-|-------------|------------|
-|Printing the contents of a form | [How to: Print Graphics in Windows Forms](./advanced/how-to-print-graphics-in-windows-forms.md)<br /><br /> [How to: Print a Multi-Page Text File in Windows Forms](./advanced/how-to-print-a-multi-page-text-file-in-windows-forms.md) |
-|Learn more about Windows Forms security | [Security in Windows Forms Overview](security-in-windows-forms-overview.md) |
--->
-
-## See also
-
-- [Tutorial: Create a new WinForms app](../get-started/create-app-visual-studio.md)
-- [How to add a form to a project](../forms/how-to-add.md)
-- [Add a control](../controls/how-to-add-to-a-form.md)
+- 

@@ -53,5 +53,3 @@ Windows Forms has accessibility support for screen readers and voice input utili
 - [Label control overview](labels.md)
 - [Control events](events.md)
 - [Types of custom controls](custom.md)
-- [Painting and drawing on controls](custom-painting-drawing.md)
-- [Providing Accessibility Information for Controls](provide-accessibility-information.md)
