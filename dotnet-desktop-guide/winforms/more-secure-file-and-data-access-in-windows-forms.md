@@ -18,6 +18,8 @@ ms.assetid: 3cd3e55b-2f5e-40dd-835d-f50f7ce08967
 ---
 # More Secure File and Data Access in Windows Forms
 
+[!INCLUDE [net-framework-only](includes/net-framework-only.md)]
+
 The .NET Framework uses permissions to help protect resources and data. Where your application can read or write data depends on the permissions granted to the application. When your application runs in a partial trust environment, you might not have access to your data or you might have to change the way you access the data.  
   
  When you encounter a security restriction, you have two options: assert the permission (assuming it has been granted to your application), or use a version of the feature written to work in partial trust. The following sections discuss how to work with file, database, and registry access from applications that are running in a partial trust environment.  

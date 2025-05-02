@@ -1,5 +1,5 @@
 ---
-title: Custom user-drawn controls
+title: Custom owner-drawn controls
 description: "Learn about how custom controls differ from user controls by not providing a visual design surface and relying on user-supplied code for drawing."
 author: adegeo
 ms.topic: overview #Don't change

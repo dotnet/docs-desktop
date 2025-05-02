@@ -8,7 +8,13 @@
     items:
     - name: Controls
       tocHref: /dotnet/desktop/winforms/controls/
-      topicHref: /dotnet/desktop/winforms/controls/overview
+      topicHref: /dotnet/desktop/winforms/controls/index
+    - name: Design
+      tocHref: /dotnet/desktop/winforms/controls-design/
+      topicHref: /dotnet/desktop/winforms/controls-design/index
+    - name: Design
+      tocHref: /dotnet/desktop/winforms/advanced/
+      topicHref: /dotnet/desktop/winforms/advanced/index
   - name: Windows Presentation Foundation
     tocHref: /dotnet/desktop/wpf/
     topicHref: /dotnet/desktop/wpf/index

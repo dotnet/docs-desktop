@@ -1121,7 +1121,9 @@ items:
       href: ../controls-design/usercontrol-overview.md
     - name: How to create a user control
       href: ../controls-design/how-to-create-usercontrol.md
-  - name: Custom user-drawn controls
+    - name: Extend an existing control
+      href: ../controls-design/how-to-extend-existing.md
+  - name: Custom owner-drawn controls
     items:
     - name: What is a custom control?
       href: ../controls-design/custom-controls-overview.md
@@ -1131,8 +1133,6 @@ items:
       href: how-to-implement-a-custom-layout-engine.md
   - name: Control properties
     items:    
-    - name: Extend an existing control
-      href: ../controls-design/how-to-extend-existing.md
     - name: Defining a Property
       href: defining-a-property-in-windows-forms-controls.md
     - name: Property-Changed Events
