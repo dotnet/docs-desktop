@@ -56,7 +56,7 @@ items:
     - name: Change the border
       href: how-to-change-the-borders-of-windows-forms.md
 - name: Controls
-  href: ./controls/index.yml
+  href: ./controls/
 - name: Dialog boxes
   items:
   - name: Overview
@@ -214,8 +214,3 @@ items:
         href: wfdev-diagnostics/wfdev005.md
       - name: Some controls are obsolete and are provided for compatibility
         href: wfdev-diagnostics/wfdev006.md
- 
-
-
-   - name: Windows Forms Controls
-    href: ./controls/
