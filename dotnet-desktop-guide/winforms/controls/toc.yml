@@ -1112,27 +1112,27 @@ items:
   expanded: true
   items:
   - name: Overview
-    href: controls-design/overview.md
+    href: ../controls-design/overview.md
   - name: Guidelines
-    href: controls-design/usercontrol-guidelines.md
+    href: ../controls-design/usercontrol-guidelines.md
   - name: User controls
     items:
     - name: Overview
-      href: controls-design/usercontrol-overview.md
+      href: ../controls-design/usercontrol-overview.md
     - name: How to create a user control
-      href: controls-design/how-to-create-usercontrol.md
+      href: ../controls-design/how-to-create-usercontrol.md
   - name: Custom user-drawn controls
     items:
     - name: What is a custom control?
-      href: controls-design/custom-controls-overview.md
+      href: ../controls-design/custom-controls-overview.md
     - name: How to create a simple custom control
-      href: controls-design/how-to-create-simple-custom-control.md
+      href: ../controls-design/how-to-create-simple-custom-control.md
     - name: How to implement a custom layout engine
       href: how-to-implement-a-custom-layout-engine.md
   - name: Control properties
     items:    
     - name: Extend an existing control
-      href: controls-design/how-to-extend-existing.md
+      href: ../controls-design/how-to-extend-existing.md
     - name: Defining a Property
       href: defining-a-property-in-windows-forms-controls.md
     - name: Property-Changed Events
@@ -1157,11 +1157,11 @@ items:
   - name: Visual Studio designer support
     items:
     - name: Overview
-      href: controls-design/designer-overview.md
+      href: ../controls-design/designer-overview.md
     - name: Designer changes from .NET Framework
-      href: controls-design/designer-differences-framework.md
+      href: ../controls-design/designer-differences-framework.md
     - name: Design-time properties for custom controls
-      href: controls-design/designer-properties-overview.md
+      href: ../controls-design/designer-properties-overview.md
     - name: Designer attributes
       items:
       - name: Overview
@@ -1193,12 +1193,12 @@ items:
       - name: Troubleshoot Control and Component Authoring
         href: troubleshooting-control-and-component-authoring.md
     - name: Troubleshoot designer errors
-      href: controls-design/designer-errors.md
+      href: ../controls-design/designer-errors.md
     - name: Troubleshoot 32-bit reference errors
       href: visualstudio/troubleshoot-32bit.md
     - name: Common tasks
       items:
       - name: Use ShouldSerialize and Reset for a property
-        href: controls-design/how-to-designer-properties-shouldserialize-reset.md
+        href: ../controls-design/how-to-designer-properties-shouldserialize-reset.md
       - name: Provide an icon for the toolbox
-        href: controls-design/how-to-set-toolbox-icon.md
+        href: ../controls-design/how-to-set-toolbox-icon.md
