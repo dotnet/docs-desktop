@@ -1,21 +1,22 @@
+items:
 - name: .NET
-  tocHref: /dotnet/
+  tocHref: /dotnet
   topicHref: /dotnet/index
   items:
   - name: Windows Forms
-    tocHref: /dotnet/desktop/winforms/
+    tocHref: /dotnet/desktop/winforms
     topicHref: /dotnet/desktop/winforms/index
     items:
     - name: Controls
-      tocHref: /dotnet/desktop/winforms/controls/
+      tocHref: /dotnet/desktop/winforms/controls
       topicHref: /dotnet/desktop/winforms/controls/index
     - name: Design
-      tocHref: /dotnet/desktop/winforms/controls-design/
+      tocHref: /dotnet/desktop/winforms/controls-design
       topicHref: /dotnet/desktop/winforms/controls-design/index
-    - name: Design
-      tocHref: /dotnet/desktop/winforms/advanced/
+    - name: Advanced
+      tocHref: /dotnet/desktop/winforms/advanced
       topicHref: /dotnet/desktop/winforms/advanced/index
   - name: Windows Presentation Foundation
-    tocHref: /dotnet/desktop/wpf/
+    tocHref: /dotnet/desktop/wpf
     topicHref: /dotnet/desktop/wpf/index
 
