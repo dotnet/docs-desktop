@@ -48,5 +48,5 @@ The common language runtime uses an advanced implementation of the Windows Graph
   
 ## Related Sections  
 
- [Custom Control Painting and Rendering](../controls/custom-control-painting-and-rendering.md)  
+ [Custom Control Painting and Rendering](/dotnet/desktop/winforms/controls/custom-painting-drawing)  
  Details how to provide code for painting controls.

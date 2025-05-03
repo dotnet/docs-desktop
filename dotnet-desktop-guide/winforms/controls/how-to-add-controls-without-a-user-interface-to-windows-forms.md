@@ -75,8 +75,8 @@ Furthermore, components can be added to a form at run time. This is a common sce
 
 ## See also
 
-- [Windows Forms Controls](index.md)
-- [How to: Add Controls to Windows Forms](how-to-add-controls-to-windows-forms.md)
+- [Windows Forms Controls](/dotnet/desktop/winforms/controls/overview)
+- [How to: Add Controls to Windows Forms](/dotnet/desktop/winforms/controls/how-to-add-to-a-form)
 - [How to: Add ActiveX Controls to Windows Forms](how-to-add-activex-controls-to-windows-forms.md)
 - [Putting Controls on Windows Forms](putting-controls-on-windows-forms.md)
 - [Labeling Individual Windows Forms Controls and Providing Shortcuts to Them](labeling-individual-windows-forms-controls-and-providing-shortcuts-to-them.md)

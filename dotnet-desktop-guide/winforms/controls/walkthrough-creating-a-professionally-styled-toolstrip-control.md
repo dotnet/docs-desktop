@@ -45,7 +45,7 @@ You'll need Visual Studio to complete this walkthrough.
 
 ## Design the StackView control
 
-The `StackView` control is a composite control with one child <xref:System.Windows.Forms.ToolStrip> control. For more information about composite controls, see [Varieties of Custom Controls](varieties-of-custom-controls.md).
+The `StackView` control is a composite control with one child <xref:System.Windows.Forms.ToolStrip> control. For more information about composite controls, see [Varieties of Custom Controls](/dotnet/desktop/winforms/controls-design/overview).
 
 1. From the **Toolbox**, drag a <xref:System.Windows.Forms.ToolStrip> control to the design surface.
 

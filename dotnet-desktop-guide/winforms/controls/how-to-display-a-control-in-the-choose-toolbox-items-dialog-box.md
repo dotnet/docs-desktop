@@ -25,6 +25,6 @@ To display your control in the Choose Toolbox Items dialog box:
 
 ## See also
 
-- [Developing Windows Forms Controls at Design Time](developing-windows-forms-controls-at-design-time.md)
+- [Developing Windows Forms Controls at Design Time](/dotnet/desktop/winforms/controls-design/usercontrol-overview)
 - [How to: Install an Assembly into the Global Assembly Cache](/dotnet/framework/app-domains/install-assembly-into-gac)
 - [Walkthrough: Automatically Populating the Toolbox with Custom Components](walkthrough-automatically-populating-the-toolbox-with-custom-components.md)

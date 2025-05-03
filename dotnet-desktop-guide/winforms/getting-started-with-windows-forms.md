@@ -17,13 +17,13 @@ With Windows Forms, you can create powerful Windows-based applications. The foll
   
 ## In This Section  
 
- [Windows Forms Overview](windows-forms-overview.md)  
+ [Windows Forms Overview](/dotnet/desktop/winforms/overview/)  
  Contains an overview of Windows Forms and smart client applications.  
   
  [Creating a New Windows Form](creating-a-new-windows-form.md)  
  Contains links to topics that describe basic concepts for creating Windows Forms applications.  
   
- [Creating Event Handlers in Windows Forms](creating-event-handlers-in-windows-forms.md)  
+ [Creating Event Handlers in Windows Forms](/dotnet/desktop/winforms/forms/events)  
  Contains links to topics that describe how to create Windows Forms event handlers.  
   
  [Adjusting the Size and Scale of Windows Forms](adjusting-the-size-and-scale-of-windows-forms.md)  
@@ -32,7 +32,7 @@ With Windows Forms, you can create powerful Windows-based applications. The foll
  [Changing the Appearance of Windows Forms](changing-the-appearance-of-windows-forms.md)  
  Contains links to topics that show how to change the appearance of Windows Forms applications.  
   
- [Windows Forms Controls](./controls/index.md)  
+ [Windows Forms Controls](/dotnet/desktop/winforms/controls/overview)  
  Contains links to topics that describe and show how to use Windows Forms controls and components.  
   
  [User Input in Windows Forms](user-input-in-windows-forms.md)  
@@ -41,7 +41,7 @@ With Windows Forms, you can create powerful Windows-based applications. The foll
  [Dialog Boxes in Windows Forms](dialog-boxes-in-windows-forms.md)  
  Contains links to topics that describe the different dialog boxes for use in Windows Forms.  
   
- [Windows Forms Data Binding](windows-forms-data-binding.md)  
+ [Windows Forms Data Binding](/dotnet/desktop/winforms/data/overview)  
  Contains links to topics that describe the Windows Forms data binding architecture and how to use it in Windows Forms applications.  
   
  [Windows Forms Security](windows-forms-security.md)  

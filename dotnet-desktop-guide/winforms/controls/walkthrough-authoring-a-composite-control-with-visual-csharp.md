@@ -409,6 +409,6 @@ This article has covered a number of key concepts. You have learned to create a 
 
 ## See also
 
-- [Varieties of Custom Controls](varieties-of-custom-controls.md)
+- [Varieties of Custom Controls](/dotnet/desktop/winforms/controls-design/overview)
 - [How to: Display a Control in the Choose Toolbox Items Dialog Box](how-to-display-a-control-in-the-choose-toolbox-items-dialog-box.md)
 - [Walkthrough: Inheriting from a Windows Forms Control with Visual C#](walkthrough-inheriting-from-a-windows-forms-control-with-visual-csharp.md)

@@ -45,7 +45,7 @@ The `SoundPlayer` class enables you to easily include sounds in your application
   
 ## Related Sections  
 
- [Windows Forms Controls](index.md)  
+ [Windows Forms Controls](/dotnet/desktop/winforms/controls/overview)  
  Provides links to topics about the controls designed specifically to work with Windows Forms.  
   
  [Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)  

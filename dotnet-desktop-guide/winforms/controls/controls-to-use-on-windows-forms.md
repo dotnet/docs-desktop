@@ -10,7 +10,7 @@ ms.assetid: dec51976-eae0-4398-a537-20bca7974722
 ---
 # Controls to Use on Windows Forms
 
-The following is an alphabetic list of controls and components that can be used on Windows Forms. In addition to the Windows Forms controls covered in this section, you can add ActiveX and custom controls to Windows Forms. If you do not find the control you need listed here, you can also create your own. For details, see [Developing Windows Forms Controls at Design Time](developing-windows-forms-controls-at-design-time.md). For more information about choosing the control you need, see [Windows Forms Controls by Function](windows-forms-controls-by-function.md).  
+The following is an alphabetic list of controls and components that can be used on Windows Forms. In addition to the Windows Forms controls covered in this section, you can add ActiveX and custom controls to Windows Forms. If you do not find the control you need listed here, you can also create your own. For details, see [Developing Windows Forms Controls at Design Time](/dotnet/desktop/winforms/controls-design/usercontrol-overview). For more information about choosing the control you need, see [Windows Forms Controls by Function](windows-forms-controls-by-function.md).  
   
 > [!NOTE]
 > Visual Basic controls are based on classes provided by the .NET Framework.  
@@ -95,7 +95,7 @@ The following is an alphabetic list of controls and components that can be used 
  [ImageList Component](imagelist-component-windows-forms.md)  
  Displays images on other controls.  
   
- [Label Control](label-control-windows-forms.md)  
+ [Label Control](/dotnet/desktop/winforms/controls/labels)  
  Displays text that cannot be edited by the user.  
   
  [LinkLabel Control](linklabel-control-windows-forms.md)  
@@ -137,7 +137,7 @@ The following is an alphabetic list of controls and components that can be used 
  [PictureBox Control](picturebox-control-windows-forms.md)  
  Displays graphics in bitmap, GIF, JPEG, metafile, or icon format.  
   
- [PrintDialog Component](printdialog-component-windows-forms.md)  
+ [PrintDialog Component](/dotnet/desktop/winforms/printing/overview)  
  Selects a printer, chooses the pages to print, and determines other print-related settings.  
   
  [PrintDocument Component](printdocument-component-windows-forms.md)  
@@ -223,10 +223,10 @@ The following is an alphabetic list of controls and components that can be used 
   
 ## Related Sections  
 
- [Windows Forms Controls](index.md)  
+ [Windows Forms Controls](/dotnet/desktop/winforms/controls/overview)  
  Explains the use of Windows Forms controls, and describes important concepts for working with them.  
   
- [Developing Windows Forms Controls at Design Time](developing-windows-forms-controls-at-design-time.md)  
+ [Developing Windows Forms Controls at Design Time](/dotnet/desktop/winforms/controls-design/usercontrol-overview)  
  Provides links to step-by-step topics, recommendations for which kind of control to create, and other information about creating your own control.  
   
  [Controls and Programmable Objects Compared in Various Languages and Libraries](/previous-versions/visualstudio/visual-studio-2010/0061wezk(v=vs.100))  

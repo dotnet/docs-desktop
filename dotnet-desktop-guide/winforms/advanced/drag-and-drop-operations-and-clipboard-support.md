@@ -31,7 +31,7 @@ You can enable user drag-and-drop operations within a Windows-based application 
   
 ## Related Sections  
 
- [Drag-and-Drop Functionality in Windows Forms](../drag-and-drop-functionality-in-windows-forms.md)  
+ [Drag-and-Drop Functionality in Windows Forms](/dotnet/desktop/winforms/input-mouse/drag-and-drop)  
  Describes the methods, events, and classes used to implement drag-and-drop behavior.  
   
  <xref:System.Windows.Forms.Control.QueryContinueDrag>  

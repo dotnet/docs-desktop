@@ -57,7 +57,7 @@ The following Windows Forms controls and components present standard dialog boxe
  [PageSetupDialog Component Overview](pagesetupdialog-component-overview-windows-forms.md)  
  Sets page details for printing via a pre-configured dialog box.  
   
- [PrintDialog Component Overview](printdialog-component-overview-windows-forms.md)  
+ [PrintDialog Component Overview](/dotnet/desktop/winforms/printing/overview)  
  Selects a printer, chooses the pages to print, and determines other print-related settings.  
   
  [PrintPreviewDialog Control Overview](printpreviewdialog-control-overview-windows-forms.md)  

@@ -23,5 +23,5 @@ description: Learn how the Windows Forms Splitter controls are used to resize do
 ## See also
 
 - <xref:System.Windows.Forms.SplitContainer>
-- [How to: Dock Controls on Windows Forms](how-to-dock-controls-on-windows-forms.md)
+- [How to: Dock Controls on Windows Forms](/dotnet/desktop/winforms/controls/how-to-dock-and-anchor)
 - [Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)

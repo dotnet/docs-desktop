@@ -24,5 +24,5 @@ The Windows Forms <xref:System.Windows.Forms.Label> control can be single-line o
 ## See also
 
 - [How to: Create Access Keys with Windows Forms Label Controls](how-to-create-access-keys-with-windows-forms-label-controls.md)
-- [Label Control Overview](label-control-overview-windows-forms.md)
-- [Label Control](label-control-windows-forms.md)
+- [Label Control Overview](/dotnet/desktop/winforms/controls/labels)
+- [Label Control](/dotnet/desktop/winforms/controls/labels)

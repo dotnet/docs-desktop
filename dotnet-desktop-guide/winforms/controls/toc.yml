@@ -552,10 +552,10 @@ items:
       - name: "How to add or remove imagelist images with the designer"
         href: how-to-add-or-remove-imagelist-images-with-the-designer.md
     - name: Label Control
-      href: label-control-windows-forms.md
+      href: /dotnet/desktop/winforms/controls/labels
       items:
       - name: Label Control Overview
-        href: label-control-overview-windows-forms.md
+        href: /dotnet/desktop/winforms/controls/labels
       - name: "How to create access keys with windows forms label controls"
         href: how-to-create-access-keys-with-windows-forms-label-controls.md
       - name: "How to size a windows forms label control to fit its contents"
@@ -730,10 +730,10 @@ items:
       - name: "How to set pictures at run time"
         href: how-to-set-pictures-at-run-time-windows-forms.md
     - name: PrintDialog Component
-      href: printdialog-component-windows-forms.md
+      href: /dotnet/desktop/winforms/printing/overview
       items:
       - name: PrintDialog Component Overview
-        href: printdialog-component-overview-windows-forms.md
+        href: /dotnet/desktop/winforms/printing/overview
       - name: "How to display the printdialog component"
         href: how-to-display-the-printdialog-component.md
     - name: PrintDocument Component
@@ -1134,7 +1134,7 @@ items:
   - name: Control properties
     items:    
     - name: Defining a Property
-      href: defining-a-property-in-windows-forms-controls.md
+      href: /dotnet/desktop/winforms/controls-design/designer-properties-overview
     - name: Property-Changed Events
       href: events.md#property-changed-events
     - name: How to expose properties of constituent controls

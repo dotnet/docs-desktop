@@ -21,4 +21,4 @@ ms.assetid: 8911d4b0-a4f8-4f93-8246-371aebd27d0c
   
 ## See also
 
-- [Mouse Input in a Windows Forms Application](mouse-input-in-a-windows-forms-application.md)
+- [Mouse Input in a Windows Forms Application](/dotnet/desktop/winforms/input-mouse/overview)

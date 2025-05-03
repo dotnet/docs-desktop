@@ -19,7 +19,7 @@ In the Windows operating systems, a user can change the system-wide font setting
   
 ### To use the desktop font and respond to font scheme changes  
   
-1. Create your form, and add the controls you want to it. For more information, see [How to: Create a Windows Forms Application from the Command Line](how-to-create-a-windows-forms-application-from-the-command-line.md) and [Controls to Use on Windows Forms](./controls/controls-to-use-on-windows-forms.md).  
+1. Create your form, and add the controls you want to it. For more information, see [How to: Create a Windows Forms Application from the Command Line](/dotnet/desktop/winforms/get-started/create-app-visual-studio) and [Controls to Use on Windows Forms](./controls/controls-to-use-on-windows-forms.md).  
   
 2. Add a reference to the <xref:Microsoft.Win32> namespace to your code.  
   
@@ -66,4 +66,4 @@ In the Windows operating systems, a user can change the system-wide font setting
 ## See also
 
 - <xref:System.Windows.Forms.ContainerControl.PerformAutoScale%2A>
-- [Automatic Scaling in Windows Forms](automatic-scaling-in-windows-forms.md)
+- [Automatic Scaling in Windows Forms](/dotnet/desktop/winforms/forms/autoscale)

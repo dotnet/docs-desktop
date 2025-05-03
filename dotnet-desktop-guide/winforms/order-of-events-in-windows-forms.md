@@ -14,7 +14,7 @@ ms.assetid: e81db09b-4453-437f-b78a-62d7cd5c9829
 ---
 # Order of Events in Windows Forms
 
-The order in which events are raised in Windows Forms applications is of particular interest to developers concerned with handling each of these events in turn. When a situation calls for meticulous handling of events, such as when you are redrawing parts of the form, an awareness of the precise order in which events are raised at run time is necessary. This topic provides some details on the order of events during several important stages in the lifetime of applications and controls. For specific details about the order of mouse input events, see [Mouse Events in Windows Forms](mouse-events-in-windows-forms.md). For an overview of events in Windows Forms, see [Events Overview](events-overview-windows-forms.md). For details about the makeup of event handlers, see [Event Handlers Overview](event-handlers-overview-windows-forms.md).  
+The order in which events are raised in Windows Forms applications is of particular interest to developers concerned with handling each of these events in turn. When a situation calls for meticulous handling of events, such as when you are redrawing parts of the form, an awareness of the precise order in which events are raised at run time is necessary. This topic provides some details on the order of events during several important stages in the lifetime of applications and controls. For specific details about the order of mouse input events, see [Mouse Events in Windows Forms](/dotnet/desktop/winforms/input-mouse/events). For an overview of events in Windows Forms, see [Events Overview](/dotnet/desktop/winforms/forms/events). For details about the makeup of event handlers, see [Event Handlers Overview](/dotnet/desktop/winforms/forms/events).  
   
 ## Application Startup and Shutdown Events  
 
@@ -81,4 +81,4 @@ The order in which events are raised in Windows Forms applications is of particu
   
 ## See also
 
-- [Creating Event Handlers in Windows Forms](creating-event-handlers-in-windows-forms.md)
+- [Creating Event Handlers in Windows Forms](/dotnet/desktop/winforms/forms/events)

@@ -81,4 +81,4 @@ The .NET Framework provides support for rendering controls and other Windows use
   
 ## See also
 
-- [Custom Control Painting and Rendering](custom-control-painting-and-rendering.md)
+- [Custom Control Painting and Rendering](/dotnet/desktop/winforms/controls/custom-painting-drawing)

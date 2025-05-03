@@ -31,7 +31,7 @@ If you want to create a completely custom control to use on a Windows Form, you 
 
 6. Modify the code to incorporate any custom painting you want for your control.
 
-   For information about writing code to render graphics for controls, see [Custom Control Painting and Rendering](custom-control-painting-and-rendering.md).
+   For information about writing code to render graphics for controls, see [Custom Control Painting and Rendering](/dotnet/desktop/winforms/controls/custom-painting-drawing).
 
 7. Implement any custom methods, properties, or events that your control will incorporate.
 
@@ -39,9 +39,9 @@ If you want to create a completely custom control to use on a Windows Form, you 
 
 ## See also
 
-- [Varieties of Custom Controls](varieties-of-custom-controls.md)
-- [How to: Inherit from the UserControl Class](how-to-inherit-from-the-usercontrol-class.md)
-- [How to: Inherit from Existing Windows Forms Controls](how-to-inherit-from-existing-windows-forms-controls.md)
+- [Varieties of Custom Controls](/dotnet/desktop/winforms/controls-design/overview)
+- [How to: Inherit from the UserControl Class](/dotnet/desktop/winforms/controls-design/how-to-create-usercontrol)
+- [How to: Inherit from Existing Windows Forms Controls](/dotnet/desktop/winforms/controls-design/extend-existing)
 - [How to: Author Controls for Windows Forms](how-to-author-controls-for-windows-forms.md)
 - [Troubleshooting Inherited Event Handlers in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/events/troubleshooting-inherited-event-handlers)
-- [Developing Windows Forms Controls at Design Time](developing-windows-forms-controls-at-design-time.md)
+- [Developing Windows Forms Controls at Design Time](/dotnet/desktop/winforms/controls-design/usercontrol-overview)

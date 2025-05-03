@@ -17,327 +17,327 @@
             "redirect_url": "/dotnet/desktop/winforms/controls-design/overview"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/how-to-create-a-windows-forms-application-from-the-command-line.md",
+            "source_path": "dotnet-desktop-guide/winforms/how-to-create-a-windows-forms-application-from-the-command-line.md",
             "redirect_url": "/dotnet/desktop/winforms/get-started/create-app-visual-studio"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/windows-forms-overview.md",
+            "source_path": "dotnet-desktop-guide/winforms/windows-forms-overview.md",
             "redirect_url": "/dotnet/desktop/winforms/overview/"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/controls/overview-of-using-controls-in-windows-forms.md",
+            "source_path": "dotnet-desktop-guide/winforms/controls/overview-of-using-controls-in-windows-forms.md",
             "redirect_url": "/dotnet/desktop/winforms/overview/"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/events-overview-windows-forms.md",
+            "source_path": "dotnet-desktop-guide/winforms/events-overview-windows-forms.md",
             "redirect_url": "/dotnet/desktop/winforms/forms/events"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/event-handlers-overview-windows-forms.md",
+            "source_path": "dotnet-desktop-guide/winforms/event-handlers-overview-windows-forms.md",
             "redirect_url": "/dotnet/desktop/winforms/forms/events"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/creating-event-handlers-in-windows-forms.md",
+            "source_path": "dotnet-desktop-guide/winforms/creating-event-handlers-in-windows-forms.md",
             "redirect_url": "/dotnet/desktop/winforms/forms/events"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/how-to-connect-multiple-events-to-a-single-event-handler-in-windows-forms.md",
+            "source_path": "dotnet-desktop-guide/winforms/how-to-connect-multiple-events-to-a-single-event-handler-in-windows-forms.md",
             "redirect_url": "/dotnet/desktop/winforms/controls/how-to-add-an-event-handler#how-to-use-multiple-events-with-the-same-handler"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/how-to-create-event-handlers-at-run-time-for-windows-forms.md",
+            "source_path": "dotnet-desktop-guide/winforms/how-to-create-event-handlers-at-run-time-for-windows-forms.md",
             "redirect_url": "/dotnet/desktop/winforms/controls/how-to-add-an-event-handler#handle-an-event-at-runtime"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/automatic-scaling-in-windows-forms.md",
+            "source_path": "dotnet-desktop-guide/winforms/automatic-scaling-in-windows-forms.md",
             "redirect_url": "/dotnet/desktop/winforms/forms/autoscale"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/how-to-resize-windows-forms.md",
+            "source_path": "dotnet-desktop-guide/winforms/how-to-resize-windows-forms.md",
             "redirect_url": "/dotnet/desktop/winforms/forms/how-to-position-and-resize"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/controls/index.md",
+            "source_path": "dotnet-desktop-guide/winforms/controls/index.md",
             "redirect_url": "/dotnet/desktop/winforms/controls/overview"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/controls/layout-in-windows-forms-controls.md",
+            "source_path": "dotnet-desktop-guide/winforms/controls/layout-in-windows-forms-controls.md",
             "redirect_url": "/dotnet/desktop/winforms/controls/layout"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/controls/autosize-property-overview.md",
+            "source_path": "dotnet-desktop-guide/winforms/controls/autosize-property-overview.md",
             "redirect_url": "/dotnet/desktop/winforms/controls/layout#automatic-sizing"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/controls/margin-and-padding-in-windows-forms-controls.md",
+            "source_path": "dotnet-desktop-guide/winforms/controls/margin-and-padding-in-windows-forms-controls.md",
             "redirect_url": "/dotnet/desktop/winforms/controls/layout#margin-and-padding"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/controls/label-control-overview-windows-forms.md",
+            "source_path": "dotnet-desktop-guide/winforms/controls/label-control-overview-windows-forms.md",
             "redirect_url": "/dotnet/desktop/winforms/controls/labels"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/controls/label-control-windows-forms.md",
+            "source_path": "dotnet-desktop-guide/winforms/controls/label-control-windows-forms.md",
             "redirect_url": "/dotnet/desktop/winforms/controls/labels"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/controls/how-to-set-the-tab-order-on-windows-forms.md",
+            "source_path": "dotnet-desktop-guide/winforms/controls/how-to-set-the-tab-order-on-windows-forms.md",
             "redirect_url": "/dotnet/desktop/winforms/controls/how-to-set-the-tab-order"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/controls/how-to-anchor-controls-on-windows-forms.md",
+            "source_path": "dotnet-desktop-guide/winforms/controls/how-to-anchor-controls-on-windows-forms.md",
             "redirect_url": "/dotnet/desktop/winforms/controls/how-to-dock-and-anchor"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/controls/how-to-dock-controls-on-windows-forms.md",
+            "source_path": "dotnet-desktop-guide/winforms/controls/how-to-dock-controls-on-windows-forms.md",
             "redirect_url": "/dotnet/desktop/winforms/controls/how-to-dock-and-anchor"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/controls/how-to-align-a-control-to-the-edges-of-forms.md",
+            "source_path": "dotnet-desktop-guide/winforms/controls/how-to-align-a-control-to-the-edges-of-forms.md",
             "redirect_url": "/dotnet/desktop/winforms/controls/how-to-dock-and-anchor"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/controls/how-to-align-a-control-to-the-edges-of-forms-at-design-time.md",
+            "source_path": "dotnet-desktop-guide/winforms/controls/how-to-align-a-control-to-the-edges-of-forms-at-design-time.md",
             "redirect_url": "/dotnet/desktop/winforms/controls/how-to-dock-and-anchor"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/controls/how-to-make-thread-safe-calls-to-windows-forms-controls.md",
+            "source_path": "dotnet-desktop-guide/winforms/controls/how-to-make-thread-safe-calls-to-windows-forms-controls.md",
             "redirect_url": "/dotnet/desktop/winforms/controls/how-to-make-thread-safe-calls"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/controls/varieties-of-custom-controls.md",
+            "source_path": "dotnet-desktop-guide/winforms/controls/varieties-of-custom-controls.md",
             "redirect_url": "/dotnet/desktop/winforms/controls-design/overview"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/controls/control-type-recommendations.md",
+            "source_path": "dotnet-desktop-guide/winforms/controls/control-type-recommendations.md",
             "redirect_url": "/dotnet/desktop/winforms/controls-design/overview"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/controls/windows-forms-control-development-basics.md",
+            "source_path": "dotnet-desktop-guide/winforms/controls/windows-forms-control-development-basics.md",
             "redirect_url": "/dotnet/desktop/winforms/controls-design/overview"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/controls/how-to-develop-a-simple-windows-forms-control.md",
+            "source_path": "dotnet-desktop-guide/winforms/controls/how-to-develop-a-simple-windows-forms-control.md",
             "redirect_url": "/dotnet/desktop/winforms/controls-design/how-to-create-simple-custom-control"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/controls/how-to-author-composite-controls.md",
+            "source_path": "dotnet-desktop-guide/winforms/controls/how-to-author-composite-controls.md",
             "redirect_url": "/dotnet/desktop/winforms/controls-design/how-to-create-usercontrol"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/controls/how-to-inherit-from-the-usercontrol-class.md",
+            "source_path": "dotnet-desktop-guide/winforms/controls/how-to-inherit-from-the-usercontrol-class.md",
             "redirect_url": "/dotnet/desktop/winforms/controls-design/how-to-create-usercontrol"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/controls/how-to-inherit-from-existing-windows-forms-controls.md",
+            "source_path": "dotnet-desktop-guide/winforms/controls/how-to-inherit-from-existing-windows-forms-controls.md",
             "redirect_url": "/dotnet/desktop/winforms/controls-design/extend-existing"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/controls/design-time-errors-in-the-windows-forms-designer.md",
+            "source_path": "dotnet-desktop-guide/winforms/controls/design-time-errors-in-the-windows-forms-designer.md",
             "redirect_url": "/dotnet/desktop/winforms/controls-design/designer-errors"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/controls/defining-default-values-with-the-shouldserialize-and-reset-methods.md",
+            "source_path": "dotnet-desktop-guide/winforms/controls/defining-default-values-with-the-shouldserialize-and-reset-methods.md",
             "redirect_url": "/dotnet/desktop/winforms/controls-design/how-to-designer-properties-shouldserialize-reset"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/controls/defining-a-property-in-windows-forms-controls.md",
+            "source_path": "dotnet-desktop-guide/winforms/controls/defining-a-property-in-windows-forms-controls.md",
             "redirect_url": "/dotnet/desktop/winforms/controls-design/designer-properties-overview"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/controls/how-to-provide-a-toolbox-bitmap-for-a-control.md",
+            "source_path": "dotnet-desktop-guide/winforms/controls/how-to-provide-a-toolbox-bitmap-for-a-control.md",
             "redirect_url": "/dotnet/desktop/winforms/controls-design/how-to-set-toolbox-icon"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/controls/constituent-controls.md",
+            "source_path": "dotnet-desktop-guide/winforms/controls/constituent-controls.md",
             "redirect_url": "/dotnet/desktop/winforms/controls-design/usercontrol-overview"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/controls/developing-windows-forms-controls-at-design-time.md",
+            "source_path": "dotnet-desktop-guide/winforms/controls/developing-windows-forms-controls-at-design-time.md",
             "redirect_url": "/dotnet/desktop/winforms/controls-design/usercontrol-overview"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/controls/method-implementation-in-custom-controls.md",
+            "source_path": "dotnet-desktop-guide/winforms/controls/method-implementation-in-custom-controls.md",
             "redirect_url": "/dotnet/desktop/winforms/controls-design/usercontrol-overview"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/controls/defining-an-event-in-windows-forms-controls.md",
+            "source_path": "dotnet-desktop-guide/winforms/controls/defining-an-event-in-windows-forms-controls.md",
             "redirect_url": "/dotnet/desktop/winforms/controls-design/usercontrol-overview"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/controls/custom-control-painting-and-rendering.md",
+            "source_path": "dotnet-desktop-guide/winforms/controls/custom-control-painting-and-rendering.md",
             "redirect_url": "/dotnet/desktop/winforms/controls/custom-painting-drawing"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/controls/rendering-a-windows-forms-control.md",
+            "source_path": "dotnet-desktop-guide/winforms/controls/rendering-a-windows-forms-control.md",
             "redirect_url": "/dotnet/desktop/winforms/controls/custom-painting-drawing"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/controls/user-drawn-controls.md",
+            "source_path": "dotnet-desktop-guide/winforms/controls/user-drawn-controls.md",
             "redirect_url": "/dotnet/desktop/winforms/controls/custom-painting-drawing"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/controls/overriding-the-onpaint-method.md",
+            "source_path": "dotnet-desktop-guide/winforms/controls/overriding-the-onpaint-method.md",
             "redirect_url": "/dotnet/desktop/winforms/controls/custom-painting-drawing"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/controls/how-to-add-controls-to-windows-forms.md",
+            "source_path": "dotnet-desktop-guide/winforms/controls/how-to-add-controls-to-windows-forms.md",
             "redirect_url": "/dotnet/desktop/winforms/controls/how-to-add-to-a-form"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/controls/how-to-create-access-keys-for-windows-forms-controls.md",
+            "source_path": "dotnet-desktop-guide/winforms/controls/how-to-create-access-keys-for-windows-forms-controls.md",
             "redirect_url": "/dotnet/desktop/winforms/controls/how-to-create-access-keys"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/controls/how-to-set-the-text-displayed-by-a-windows-forms-control.md",
+            "source_path": "dotnet-desktop-guide/winforms/controls/how-to-set-the-text-displayed-by-a-windows-forms-control.md",
             "redirect_url": "/dotnet/desktop/winforms/controls/how-to-set-the-display-text"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/controls/how-to-set-the-image-displayed-by-a-windows-forms-control.md",
+            "source_path": "dotnet-desktop-guide/winforms/controls/how-to-set-the-image-displayed-by-a-windows-forms-control.md",
             "redirect_url": "/dotnet/desktop/winforms/controls/how-to-add-a-picture-to-a-control"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/controls/providing-accessibility-information-for-controls-on-a-windows-form.md",
+            "source_path": "dotnet-desktop-guide/winforms/controls/providing-accessibility-information-for-controls-on-a-windows-form.md",
             "redirect_url": "/dotnet/desktop/winforms/controls/provide-accessibility-information"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/keyboard-input-in-a-windows-forms-application.md",
+            "source_path": "dotnet-desktop-guide/winforms/keyboard-input-in-a-windows-forms-application.md",
             "redirect_url": "/dotnet/desktop/winforms/input-keyboard/overview"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/how-keyboard-input-works.md",
+            "source_path": "dotnet-desktop-guide/winforms/how-keyboard-input-works.md",
             "redirect_url": "/dotnet/desktop/winforms/input-keyboard/overview"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/using-keyboard-events.md",
+            "source_path": "dotnet-desktop-guide/winforms/using-keyboard-events.md",
             "redirect_url": "/dotnet/desktop/winforms/input-keyboard/events"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/user-input-validation-in-windows-forms.md",
+            "source_path": "dotnet-desktop-guide/winforms/user-input-validation-in-windows-forms.md",
             "redirect_url": "/dotnet/desktop/winforms/input-keyboard/validation"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/how-to-modify-keyboard-input-to-a-standard-control.md",
+            "source_path": "dotnet-desktop-guide/winforms/how-to-modify-keyboard-input-to-a-standard-control.md",
             "redirect_url": "/dotnet/desktop/winforms/input-keyboard/how-to-change-key-press"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/how-to-determine-which-modifier-key-was-pressed.md",
+            "source_path": "dotnet-desktop-guide/winforms/how-to-determine-which-modifier-key-was-pressed.md",
             "redirect_url": "/dotnet/desktop/winforms/input-keyboard/how-to-check-modifier-key"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/how-to-handle-keyboard-input-at-the-form-level.md",
+            "source_path": "dotnet-desktop-guide/winforms/how-to-handle-keyboard-input-at-the-form-level.md",
             "redirect_url": "/dotnet/desktop/winforms/input-keyboard/how-to-handle-forms"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/mouse-input-in-a-windows-forms-application.md",
+            "source_path": "dotnet-desktop-guide/winforms/mouse-input-in-a-windows-forms-application.md",
             "redirect_url": "/dotnet/desktop/winforms/input-mouse/overview"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/how-mouse-input-works-in-windows-forms.md",
+            "source_path": "dotnet-desktop-guide/winforms/how-mouse-input-works-in-windows-forms.md",
             "redirect_url": "/dotnet/desktop/winforms/input-mouse/overview"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/mouse-events-in-windows-forms.md",
+            "source_path": "dotnet-desktop-guide/winforms/mouse-events-in-windows-forms.md",
             "redirect_url": "/dotnet/desktop/winforms/input-mouse/events"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/drag-and-drop-functionality-in-windows-forms.md",
+            "source_path": "dotnet-desktop-guide/winforms/drag-and-drop-functionality-in-windows-forms.md",
             "redirect_url": "/dotnet/desktop/winforms/input-mouse/drag-and-drop"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/mouse-pointers-in-windows-forms.md",
+            "source_path": "dotnet-desktop-guide/winforms/mouse-pointers-in-windows-forms.md",
             "redirect_url": "/dotnet/desktop/winforms/input-mouse/how-to-manage-cursor-pointer"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/how-to-simulate-mouse-and-keyboard-events-in-code.md",
+            "source_path": "dotnet-desktop-guide/winforms/how-to-simulate-mouse-and-keyboard-events-in-code.md",
             "redirect_url": "/dotnet/desktop/winforms/input-mouse/how-to-simulate-events"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/how-to-distinguish-between-clicks-and-double-clicks.md",
+            "source_path": "dotnet-desktop-guide/winforms/how-to-distinguish-between-clicks-and-double-clicks.md",
             "redirect_url": "/dotnet/desktop/winforms/input-mouse/how-to-distinguish-between-clicks-and-double-clicks"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/controls/printdialog-component-overview-windows-forms.md",
+            "source_path": "dotnet-desktop-guide/winforms/controls/printdialog-component-overview-windows-forms.md",
             "redirect_url": "/dotnet/desktop/winforms/printing/overview"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/controls/printdialog-component-windows-forms.md",
+            "source_path": "dotnet-desktop-guide/winforms/controls/printdialog-component-windows-forms.md",
             "redirect_url": "/dotnet/desktop/winforms/printing/overview"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/advanced/how-to-capture-user-input-from-a-printdialog-at-run-time.md",
+            "source_path": "dotnet-desktop-guide/winforms/advanced/how-to-capture-user-input-from-a-printdialog-at-run-time.md",
             "redirect_url": "/dotnet/desktop/winforms/printing/overview"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/advanced/how-to-create-standard-windows-forms-print-jobs.md",
+            "source_path": "dotnet-desktop-guide/winforms/advanced/how-to-create-standard-windows-forms-print-jobs.md",
             "redirect_url": "/dotnet/desktop/winforms/printing/overview"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/advanced/windows-forms-print-support.md",
+            "source_path": "dotnet-desktop-guide/winforms/advanced/windows-forms-print-support.md",
             "redirect_url": "/dotnet/desktop/winforms/printing/overview"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/advanced/how-to-complete-windows-forms-print-jobs.md",
+            "source_path": "dotnet-desktop-guide/winforms/advanced/how-to-complete-windows-forms-print-jobs.md",
             "redirect_url": "/dotnet/desktop/winforms/printing/overview"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/advanced/how-to-print-a-windows-form.md",
+            "source_path": "dotnet-desktop-guide/winforms/advanced/how-to-print-a-windows-form.md",
             "redirect_url": "/dotnet/desktop/winforms/printing/how-to-print-windows-form"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/advanced/how-to-print-a-multi-page-text-file-in-windows-forms.md",
+            "source_path": "dotnet-desktop-guide/winforms/advanced/how-to-print-a-multi-page-text-file-in-windows-forms.md",
             "redirect_url": "/dotnet/desktop/winforms/printing/how-to-print-text-document"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/advanced/how-to-print-in-windows-forms-using-print-preview.md",
+            "source_path": "dotnet-desktop-guide/winforms/advanced/how-to-print-in-windows-forms-using-print-preview.md",
             "redirect_url": "/dotnet/desktop/winforms/printing/how-to-print-in-windows-forms-using-print-preview"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/windows-forms-data-binding.md",
+            "source_path": "dotnet-desktop-guide/winforms/windows-forms-data-binding.md",
             "redirect_url": "/dotnet/desktop/winforms/data/overview"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/interfaces-related-to-data-binding.md",
+            "source_path": "dotnet-desktop-guide/winforms/interfaces-related-to-data-binding.md",
             "redirect_url": "/dotnet/desktop/winforms/data/overview"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/data-binding-and-windows-forms.md",
+            "source_path": "dotnet-desktop-guide/winforms/data-binding-and-windows-forms.md",
             "redirect_url": "/dotnet/desktop/winforms/data/overview"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/data-sources-supported-by-windows-forms.md",
+            "source_path": "dotnet-desktop-guide/winforms/data-sources-supported-by-windows-forms.md",
             "redirect_url": "/dotnet/desktop/winforms/data/overview"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/change-notification-in-windows-forms-data-binding.md",
+            "source_path": "dotnet-desktop-guide/winforms/change-notification-in-windows-forms-data-binding.md",
             "redirect_url": "/dotnet/desktop/winforms/data/design-great-data-sources"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/how-to-apply-the-propertynamechanged-pattern.md",
+            "source_path": "dotnet-desktop-guide/winforms/how-to-apply-the-propertynamechanged-pattern.md",
             "redirect_url": "/dotnet/desktop/winforms/data/design-great-data-sources"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/how-to-implement-the-inotifypropertychanged-interface.md",
+            "source_path": "dotnet-desktop-guide/winforms/how-to-implement-the-inotifypropertychanged-interface.md",
             "redirect_url": "/dotnet/desktop/winforms/data/design-great-data-sources"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/how-to-navigate-data-in-windows-forms.md",
+            "source_path": "dotnet-desktop-guide/winforms/how-to-navigate-data-in-windows-forms.md",
             "redirect_url": "/dotnet/desktop/winforms/data/how-to-work-with-data-grid"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/ensure-the-selected-row-in-a-child-table-correct.md",
+            "source_path": "dotnet-desktop-guide/winforms/ensure-the-selected-row-in-a-child-table-correct.md",
             "redirect_url": "/dotnet/desktop/winforms/data/how-to-work-with-data-grid"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/how-to-create-a-bound-control-and-format-the-displayed-data.md",
+            "source_path": "dotnet-desktop-guide/winforms/how-to-create-a-bound-control-and-format-the-displayed-data.md",
             "redirect_url": "/dotnet/desktop/winforms/data/how-to-create-control-binding"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/how-to-create-a-simple-bound-control-on-a-windows-form.md",
+            "source_path": "dotnet-desktop-guide/winforms/how-to-create-a-simple-bound-control-on-a-windows-form.md",
             "redirect_url": "/dotnet/desktop/winforms/data/how-to-create-control-binding"
         },
         {
-            "source_path": "dotnet-desktop-guide/framework/winforms/multiple-controls-bound-to-data-source-synchronized.md",
+            "source_path": "dotnet-desktop-guide/winforms/multiple-controls-bound-to-data-source-synchronized.md",
             "redirect_url": "/dotnet/desktop/winforms/data/how-to-synchronize-multiple-controls"
         }
     ]

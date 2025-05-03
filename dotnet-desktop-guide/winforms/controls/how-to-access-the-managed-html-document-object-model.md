@@ -27,7 +27,7 @@ You can access the managed HTML Document Object Model (DOM) from two types of ap
 
 ### To access DOM from a UserControl hosted in Internet Explorer  
   
-1. Create your own custom derived class of the <xref:System.Windows.Forms.UserControl> class. For more information, see [How to: Author Composite Controls](how-to-author-composite-controls.md).  
+1. Create your own custom derived class of the <xref:System.Windows.Forms.UserControl> class. For more information, see [How to: Author Composite Controls](/dotnet/desktop/winforms/controls-design/how-to-create-usercontrol).  
   
 2. Place the following code inside of your Load event handler for your <xref:System.Windows.Forms.UserControl>:  
   

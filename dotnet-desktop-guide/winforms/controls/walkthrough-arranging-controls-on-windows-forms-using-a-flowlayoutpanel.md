@@ -194,7 +194,7 @@ When you are finished, you'll have an understanding of the role played by these 
 - <xref:System.Windows.Forms.TableLayoutPanel>
 - [Walkthrough: Arranging Controls on Windows Forms Using a TableLayoutPanel](walkthrough-arranging-controls-on-windows-forms-using-a-tablelayoutpanel.md)
 - [Walkthrough: Arranging Controls on Windows Forms Using Snaplines](walkthrough-arranging-controls-on-windows-forms-using-snaplines.md)
-- [AutoSize Property Overview](autosize-property-overview.md)
-- [How to: Dock Controls on Windows Forms](how-to-dock-controls-on-windows-forms.md)
-- [How to: Anchor Controls on Windows Forms](how-to-anchor-controls-on-windows-forms.md)
+- [AutoSize Property Overview](/dotnet/desktop/winforms/controls/layout#automatic-sizing)
+- [How to: Dock Controls on Windows Forms](/dotnet/desktop/winforms/controls/how-to-dock-and-anchor)
+- [How to: Anchor Controls on Windows Forms](/dotnet/desktop/winforms/controls/how-to-dock-and-anchor)
 - [Walkthrough: Laying Out Windows Forms Controls with Padding, Margins, and the AutoSize Property](windows-forms-controls-padding-autosize.md)
