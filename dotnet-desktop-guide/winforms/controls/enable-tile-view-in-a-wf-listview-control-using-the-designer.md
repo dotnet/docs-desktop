@@ -19,7 +19,7 @@ The tile view feature of the <xref:System.Windows.Forms.ListView> control enable
 
  Tile view properties and methods enable you to specify which column fields to display for each item, and to collectively control the size and appearance of all items within a tile view window. For clarity, the first line of text in a tile is always the item's name; it cannot be changed.
 
- The following procedure requires a **Windows Application** project with a form containing a <xref:System.Windows.Forms.ListView> control. For information about setting up such a project, see [How to: Create a Windows Forms application project](/visualstudio/ide/step-1-create-a-windows-forms-application-project) and [How to: Add Controls to Windows Forms](/dotnet/desktop/winforms/controls/how-to-add-to-a-form).
+ The following procedure requires a **Windows Application** project with a form containing a <xref:System.Windows.Forms.ListView> control. For information about setting up such a project, see [How to: Create a Windows Forms application project](/visualstudio/ide/step-1-create-a-windows-forms-application-project) and [How to: Add Controls to Windows Forms](how-to-add-to-a-form.md).
 
 ## To set tile view in the designer
 

@@ -31,5 +31,5 @@ The .NET Framework provides classes for displaying Web pages, downloading Web co
  [Network Programming in the .NET Framework](/dotnet/framework/network-programming/index)  
  An introduction to networking in the .NET Framework.  
   
- [Windows Forms Data Binding](/dotnet/desktop/winforms/data/overview)  
+ [Windows Forms Data Binding](../data/overview.md)  
  Describes how to display database content in your application, either from a local data store or a database located on a network.

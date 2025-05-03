@@ -69,7 +69,7 @@ Sometimes it is useful to display data in a user-friendly format on a Windows Fo
   
 ## See also
 
-- [Data Binding and Windows Forms](/dotnet/desktop/winforms/data/overview)
+- [Data Binding and Windows Forms](../data/overview.md)
 - [ListBox Control Overview](listbox-control-overview-windows-forms.md)
 - [ComboBox Control Overview](combobox-control-overview-windows-forms.md)
 - [CheckedListBox Control Overview](checkedlistbox-control-overview-windows-forms.md)

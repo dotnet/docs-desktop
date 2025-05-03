@@ -87,5 +87,5 @@ The [PageSetupDialog](pagesetupdialog-component-windows-forms.md) component pres
 ## See also
 
 - <xref:System.Windows.Forms.PageSetupDialog>
-- [How to: Create Standard Windows Forms Print Jobs](/dotnet/desktop/winforms/printing/overview)
+- [How to: Create Standard Windows Forms Print Jobs](../printing/overview.md)
 - [PageSetupDialog Component](pagesetupdialog-component-windows-forms.md)

@@ -11,7 +11,7 @@ ms.assetid: a17722bd-9400-41e6-8dcc-c9c151f0a749
 
 Sometimes you will want to prevent users from entering new rows of data or deleting existing rows in your <xref:System.Windows.Forms.DataGridView> control. New rows are entered in the special row for new records at the bottom of the control. When you disable row addition, the row for new records is not displayed. You can then make the control entirely read-only by disabling row deletion and cell editing.
 
- The following procedure requires a **Windows Application** project with a form containing a <xref:System.Windows.Forms.DataGridView> control. For information about setting up such a project, see [How to: Create a Windows Forms application project](/visualstudio/ide/step-1-create-a-windows-forms-application-project) and [How to: Add Controls to Windows Forms](/dotnet/desktop/winforms/controls/how-to-add-to-a-form).
+ The following procedure requires a **Windows Application** project with a form containing a <xref:System.Windows.Forms.DataGridView> control. For information about setting up such a project, see [How to: Create a Windows Forms application project](/visualstudio/ide/step-1-create-a-windows-forms-application-project) and [How to: Add Controls to Windows Forms](how-to-add-to-a-form.md).
 
 ## To prevent row addition and deletion
 
@@ -25,4 +25,4 @@ Sometimes you will want to prevent users from entering new rows of data or delet
 - <xref:System.Windows.Forms.DataGridView>
 - <xref:System.Windows.Forms.DataGridView.AllowUserToAddRows%2A?displayProperty=nameWithType>
 - [How to: Create a Windows Forms application project](/visualstudio/ide/step-1-create-a-windows-forms-application-project)
-- [How to: Add Controls to Windows Forms](/dotnet/desktop/winforms/controls/how-to-add-to-a-form)
+- [How to: Add Controls to Windows Forms](how-to-add-to-a-form.md)

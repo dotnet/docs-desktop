@@ -94,7 +94,7 @@ To achieve the precise layout required for your application, your controls will 
 
 In some applications, the size of a control will not be the same at run time as it was at design time. The text of a <xref:System.Windows.Forms.Button> control, for example, may be taken from a database, and its length are not known in advance.
 
-When the <xref:System.Windows.Forms.Control.AutoSize%2A> property is set to `true`, the control will size itself to its content. For more information, see [AutoSize Property Overview](/dotnet/desktop/winforms/controls/layout#automatic-sizing).
+When the <xref:System.Windows.Forms.Control.AutoSize%2A> property is set to `true`, the control will size itself to its content. For more information, see [AutoSize Property Overview](layout.md#automatic-sizing).
 
 ### Arrange controls on your form using the AutoSize property
 
@@ -173,7 +173,7 @@ There are many other layout features for arranging controls in your Windows Form
 - <xref:System.Windows.Forms.ScrollableControl.DockPadding%2A>
 - <xref:System.Windows.Forms.Control.Margin%2A>
 - <xref:System.Windows.Forms.Control.Padding%2A>
-- [AutoSize Property Overview](/dotnet/desktop/winforms/controls/layout#automatic-sizing)
+- [AutoSize Property Overview](layout.md#automatic-sizing)
 - [Walkthrough: Arranging Controls on Windows Forms Using a TableLayoutPanel](walkthrough-arranging-controls-on-windows-forms-using-a-tablelayoutpanel.md)
 - [Walkthrough: Arranging Controls on Windows Forms Using a FlowLayoutPanel](walkthrough-arranging-controls-on-windows-forms-using-a-flowlayoutpanel.md)
 - [Walkthrough: Arranging Controls on Windows Forms Using Snaplines](walkthrough-arranging-controls-on-windows-forms-using-snaplines.md)

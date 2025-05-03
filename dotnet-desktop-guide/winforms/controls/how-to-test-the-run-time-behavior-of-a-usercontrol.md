@@ -61,6 +61,6 @@ You can test user controls from other projects in your current project's test co
 ## See also
 
 - <xref:System.Windows.Forms.UserControl>
-- [How to: Author Composite Controls](/dotnet/desktop/winforms/controls-design/how-to-create-usercontrol)
+- [How to: Author Composite Controls](../controls-design/how-to-create-usercontrol.md)
 - [Walkthrough: Authoring a Composite Control](walkthrough-authoring-a-composite-control-with-visual-csharp.md)
 - [User Control Designer](/previous-versions/visualstudio/visual-studio-2010/183c3hth(v=vs.100))

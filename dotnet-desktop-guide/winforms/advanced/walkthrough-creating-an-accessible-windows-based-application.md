@@ -48,7 +48,7 @@ The emphasis of this walkthrough is not the code for a retail order system, but 
 
 When adding the controls to a form, keep in mind the following guidelines to make an accessible application:
 
-- Set the <xref:System.Windows.Forms.Control.AccessibleDescription%2A> and <xref:System.Windows.Forms.Control.AccessibleName%2A> properties. In this example, the Default setting for the <xref:System.Windows.Forms.Control.AccessibleRole%2A> is sufficient. For more information on the accessibility properties, see [Providing Accessibility Information for Controls on a Windows Form](/dotnet/desktop/winforms/controls/provide-accessibility-information).
+- Set the <xref:System.Windows.Forms.Control.AccessibleDescription%2A> and <xref:System.Windows.Forms.Control.AccessibleName%2A> properties. In this example, the Default setting for the <xref:System.Windows.Forms.Control.AccessibleRole%2A> is sufficient. For more information on the accessibility properties, see [Providing Accessibility Information for Controls on a Windows Form](../controls/provide-accessibility-information.md).
 
 - Set the font size to 10 points or larger.
 

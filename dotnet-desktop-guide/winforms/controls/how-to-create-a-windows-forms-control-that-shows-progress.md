@@ -93,4 +93,4 @@ The following code example shows a custom control called `FlashTrackBar` that ca
 ## See also
 
 - [Extending Design-Time Support](/previous-versions/visualstudio/visual-studio-2013/37899azc(v=vs.120))
-- [Windows Forms Control Development Basics](/dotnet/desktop/winforms/controls-design/overview)
+- [Windows Forms Control Development Basics](../controls-design/overview.md)

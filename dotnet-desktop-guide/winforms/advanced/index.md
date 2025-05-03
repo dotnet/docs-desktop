@@ -20,7 +20,7 @@ Windows Forms contains many features that you can use to enhance your Windows-ba
  [Application Settings for Windows Forms](application-settings-for-windows-forms.md).  
  Contains links to topics that describe and show how to use the **Application Settings** feature.  
   
- [Windows Forms Print Support](/dotnet/desktop/winforms/printing/overview)  
+ [Windows Forms Print Support](../printing/overview.md)  
  Contains links to topics that describe and show how to print files from Windows Forms applications.  
   
  [Drag-and-Drop Operations and Clipboard Support](drag-and-drop-operations-and-clipboard-support.md)  

@@ -105,4 +105,4 @@ Often, users want to choose a printer other than the default printer to print to
   
 ## See also
 
-- [Windows Forms Print Support](/dotnet/desktop/winforms/printing/overview)
+- [Windows Forms Print Support](../printing/overview.md)

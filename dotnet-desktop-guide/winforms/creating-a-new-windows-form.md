@@ -17,7 +17,7 @@ This topic contains links to topics that describe how to create your first Windo
  [Windows Forms Coordinates](windows-forms-coordinates.md)  
  Describes client and screen coordinates.  
   
- [How to: Create a Windows Forms Application from the Command Line](/dotnet/desktop/winforms/get-started/create-app-visual-studio)  
+ [How to: Create a Windows Forms Application from the Command Line](get-started/create-app-visual-studio.md)  
  Describes how to create a basic Windows Form and compile it from the command line.  
   
 ## Reference  
@@ -33,7 +33,7 @@ This topic contains links to topics that describe how to create your first Windo
  [Handling User Input](./controls/handling-user-input.md)  
  Contains links to topics that discuss user input and how to handle it in Windows Forms applications.  
   
- [Creating Event Handlers in Windows Forms](/dotnet/desktop/winforms/forms/events)  
+ [Creating Event Handlers in Windows Forms](forms/events.md)  
  Contains links to topics that describe how to handle events in Windows Forms applications.  
   
  [Changing the Appearance of Windows Forms](changing-the-appearance-of-windows-forms.md)  

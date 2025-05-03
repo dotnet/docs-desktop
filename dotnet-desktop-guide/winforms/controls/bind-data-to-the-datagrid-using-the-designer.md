@@ -17,7 +17,7 @@ You can use the designer to connect a <xref:System.Windows.Forms.DataGridView> c
 
  You can also bind multiple <xref:System.Windows.Forms.DataGridView> controls to related tables to create master/detail relationships. In this configuration, one control displays a parent table and another control displays only those rows from a child table that are related to the current row in the parent table. For more information, see [How to: Display Related Data in a Windows Forms Application](/previous-versions/visualstudio/visual-studio-2013/57tx3hhe(v=vs.120)).
 
- The following procedure requires a **Windows Application** project with a form that contains a <xref:System.Windows.Forms.DataGridView> control or two controls for a master/detail relationship. For information about starting such a project, see [How to: Create a Windows Forms application project](/visualstudio/ide/step-1-create-a-windows-forms-application-project) and [How to: Add Controls to Windows Forms](/dotnet/desktop/winforms/controls/how-to-add-to-a-form).
+ The following procedure requires a **Windows Application** project with a form that contains a <xref:System.Windows.Forms.DataGridView> control or two controls for a master/detail relationship. For information about starting such a project, see [How to: Create a Windows Forms application project](/visualstudio/ide/step-1-create-a-windows-forms-application-project) and [How to: Add Controls to Windows Forms](how-to-add-to-a-form.md).
 
 ## To bind the control to a data source
 
@@ -52,6 +52,6 @@ You can use the designer to connect a <xref:System.Windows.Forms.DataGridView> c
 - [How to: Hide Columns in the Windows Forms DataGridView Control Using the Designer](hide-columns-in-the-datagrid-using-the-designer.md)
 - [How to: Make Columns Read-Only in the Windows Forms DataGridView Control Using the Designer](make-columns-read-only-in-the-datagrid-using-the-designer.md)
 - [How to: Create a Windows Forms application project](/visualstudio/ide/step-1-create-a-windows-forms-application-project)
-- [How to: Add Controls to Windows Forms](/dotnet/desktop/winforms/controls/how-to-add-to-a-form)
+- [How to: Add Controls to Windows Forms](how-to-add-to-a-form.md)
 - [Data Sources Window](/previous-versions/visualstudio/visual-studio-2013/6ckyxa83(v=vs.120))
 - [How to: Display Related Data in a Windows Forms Application](/previous-versions/visualstudio/visual-studio-2013/57tx3hhe(v=vs.120))

@@ -17,7 +17,7 @@ A Windows Forms button can be selected in the following ways:
   
 - Move the focus to the button by pressing the TAB key, and then choose the button by pressing the SPACEBAR or ENTER.  
   
-- Press the access key (ALT + the underlined letter) for the button. For more information about access keys, see [How to: Create Access Keys for Windows Forms Controls](/dotnet/desktop/winforms/controls/how-to-create-access-keys).  
+- Press the access key (ALT + the underlined letter) for the button. For more information about access keys, see [How to: Create Access Keys for Windows Forms Controls](how-to-create-access-keys.md).  
   
 - If the button is the "accept" button of the form, pressing ENTER chooses the button, even if another control has the focus — except if that other control is another button, a multi-line text box, or a custom control that traps the enter key.  
   

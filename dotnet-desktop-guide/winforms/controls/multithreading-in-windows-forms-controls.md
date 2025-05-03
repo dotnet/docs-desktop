@@ -17,7 +17,7 @@ In many applications, you can make your user interface (UI) more responsive by p
   
 ## In This Section  
 
- [How to: Make Thread-Safe Calls to Windows Forms Controls](/dotnet/desktop/winforms/controls/how-to-make-thread-safe-calls)  
+ [How to: Make Thread-Safe Calls to Windows Forms Controls](how-to-make-thread-safe-calls.md)  
  Shows how to make thread-safe calls to Windows Forms controls.  
   
  [How to: Use a Background Thread to Search for Files](how-to-use-a-background-thread-to-search-for-files.md)  

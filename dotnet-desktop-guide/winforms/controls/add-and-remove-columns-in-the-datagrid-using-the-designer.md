@@ -14,7 +14,7 @@ ms.assetid: 9e709f35-0a8c-4e7e-b4c4-bacb7a834077
 
 The Windows Forms <xref:System.Windows.Forms.DataGridView> control must contain columns in order to display data. If you plan to populate the control manually, you must add the columns yourself. Alternately, you can bind the control to a data source, which generates and populates the columns automatically. If the data source contains more columns than you want to display, you can remove the unwanted columns.
 
- The following procedures require a **Windows Application** project with a form containing a <xref:System.Windows.Forms.DataGridView> control. For information about setting up such a project, see [How to: Create a Windows Forms application project](/visualstudio/ide/step-1-create-a-windows-forms-application-project) and [How to: Add Controls to Windows Forms](/dotnet/desktop/winforms/controls/how-to-add-to-a-form).
+ The following procedures require a **Windows Application** project with a form containing a <xref:System.Windows.Forms.DataGridView> control. For information about setting up such a project, see [How to: Create a Windows Forms application project](/visualstudio/ide/step-1-create-a-windows-forms-application-project) and [How to: Add Controls to Windows Forms](how-to-add-to-a-form.md).
 
 ## To add a column using the designer
 
@@ -39,4 +39,4 @@ The Windows Forms <xref:System.Windows.Forms.DataGridView> control must contain 
 
 - <xref:System.Windows.Forms.DataGridView>
 - [How to: Create a Windows Forms application project](/visualstudio/ide/step-1-create-a-windows-forms-application-project)
-- [How to: Add Controls to Windows Forms](/dotnet/desktop/winforms/controls/how-to-add-to-a-form)
+- [How to: Add Controls to Windows Forms](how-to-add-to-a-form.md)

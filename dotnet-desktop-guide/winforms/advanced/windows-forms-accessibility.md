@@ -27,8 +27,8 @@ The accessibility functionality of Windows Forms allows you to make your applica
   
 ## Related Sections  
 
- [Providing Accessibility Information for Controls on a Windows Form](/dotnet/desktop/winforms/controls/provide-accessibility-information)  
+ [Providing Accessibility Information for Controls on a Windows Form](../controls/provide-accessibility-information.md)  
  Describes how to supply information that Windows Forms controls can use to assist users with impairments.  
   
- [Automatic Scaling in Windows Forms](/dotnet/desktop/winforms/forms/autoscale)  
+ [Automatic Scaling in Windows Forms](../forms/autoscale.md)  
  Describes how to make your Windows Forms application react to changes in the system font size.

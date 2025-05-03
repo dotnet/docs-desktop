@@ -15,7 +15,7 @@ There are a wide variety of controls that you can put on Windows Forms, dependin
   
 ## In This Section  
 
- [How to: Add Controls to Windows Forms](/dotnet/desktop/winforms/controls/how-to-add-to-a-form)  
+ [How to: Add Controls to Windows Forms](how-to-add-to-a-form.md)  
  Gives directions for attaching controls to your form.  
   
  [How to: Add Controls Without a User Interface to Windows Forms](how-to-add-controls-without-a-user-interface-to-windows-forms.md)  
@@ -35,8 +35,8 @@ There are a wide variety of controls that you can put on Windows Forms, dependin
   
 ## Related Sections  
 
- [Windows Forms Controls](/dotnet/desktop/winforms/controls/overview)  
+ [Windows Forms Controls](overview.md)  
  Provides links to introductory topics on controls and what you can do with them.  
   
- [User Input Validation in Windows Forms](/dotnet/desktop/winforms/input-keyboard/validation)  
+ [User Input Validation in Windows Forms](../input-keyboard/validation.md)  
  Explains the basics of and theory behind validating the contents of Windows Forms controls.

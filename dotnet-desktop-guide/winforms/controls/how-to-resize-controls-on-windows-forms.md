@@ -31,7 +31,7 @@ In Visual Studio, select the control to be resized and drag one of the eight siz
 
 ## See also
 
-- [Windows Forms Controls](/dotnet/desktop/winforms/controls/overview)
+- [Windows Forms Controls](overview.md)
 - [Labeling Individual Windows Forms Controls and Providing Shortcuts to Them](labeling-individual-windows-forms-controls-and-providing-shortcuts-to-them.md)
 - [Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)
 - [Windows Forms Controls by Function](windows-forms-controls-by-function.md)

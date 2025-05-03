@@ -24,10 +24,10 @@ The Windows Forms `PrintDocument` component is used to set the properties that d
   
 ## Related Sections  
 
- [Windows Forms Print Support](/dotnet/desktop/winforms/printing/overview)  
+ [Windows Forms Print Support](../printing/overview.md)  
  Presents a list of printing topics related to Windows Forms.  
   
- [PrintDialog Component](/dotnet/desktop/winforms/printing/overview)  
+ [PrintDialog Component](../printing/overview.md)  
  Introduces the general concepts of the <xref:System.Windows.Forms.PrintDialog> component, which allows you to display a pre-configured dialog box that users can use to select a printer, choose pages to print, and determine print-related settings.  
   
  [PrintPreviewControl Control](printpreviewcontrol-control-windows-forms.md)  

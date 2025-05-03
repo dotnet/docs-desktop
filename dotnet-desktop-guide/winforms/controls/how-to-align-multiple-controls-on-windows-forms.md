@@ -26,8 +26,8 @@ To standardize the layout of the user interface (UI) of your Windows-based appli
 
 ## See also
 
-- [Windows Forms Controls](/dotnet/desktop/winforms/controls/overview)
-- [How to: Add Controls to Windows Forms](/dotnet/desktop/winforms/controls/how-to-add-to-a-form)
+- [Windows Forms Controls](overview.md)
+- [How to: Add Controls to Windows Forms](how-to-add-to-a-form.md)
 - [Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)
 - [Windows Forms Controls by Function](windows-forms-controls-by-function.md)
 - [Walkthrough: Arranging Controls on Windows Forms Using Snaplines](walkthrough-arranging-controls-on-windows-forms-using-snaplines.md)

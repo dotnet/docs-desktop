@@ -74,7 +74,7 @@ ms.assetid: 1d9d5683-43d2-42dd-b6c3-e43f4cf0de99
   
 ## Related Sections  
 
- [Windows Forms Data Binding](/dotnet/desktop/winforms/data/overview)  
+ [Windows Forms Data Binding](../data/overview.md)  
  Provides links to topics on data binding in Windows Forms.  
   
 ## See also

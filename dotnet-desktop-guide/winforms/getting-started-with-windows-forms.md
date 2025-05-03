@@ -23,7 +23,7 @@ With Windows Forms, you can create powerful Windows-based applications. The foll
  [Creating a New Windows Form](creating-a-new-windows-form.md)  
  Contains links to topics that describe basic concepts for creating Windows Forms applications.  
   
- [Creating Event Handlers in Windows Forms](/dotnet/desktop/winforms/forms/events)  
+ [Creating Event Handlers in Windows Forms](forms/events.md)  
  Contains links to topics that describe how to create Windows Forms event handlers.  
   
  [Adjusting the Size and Scale of Windows Forms](adjusting-the-size-and-scale-of-windows-forms.md)  
@@ -32,7 +32,7 @@ With Windows Forms, you can create powerful Windows-based applications. The foll
  [Changing the Appearance of Windows Forms](changing-the-appearance-of-windows-forms.md)  
  Contains links to topics that show how to change the appearance of Windows Forms applications.  
   
- [Windows Forms Controls](/dotnet/desktop/winforms/controls/overview)  
+ [Windows Forms Controls](controls/overview.md)  
  Contains links to topics that describe and show how to use Windows Forms controls and components.  
   
  [User Input in Windows Forms](user-input-in-windows-forms.md)  
@@ -41,7 +41,7 @@ With Windows Forms, you can create powerful Windows-based applications. The foll
  [Dialog Boxes in Windows Forms](dialog-boxes-in-windows-forms.md)  
  Contains links to topics that describe the different dialog boxes for use in Windows Forms.  
   
- [Windows Forms Data Binding](/dotnet/desktop/winforms/data/overview)  
+ [Windows Forms Data Binding](data/overview.md)  
  Contains links to topics that describe the Windows Forms data binding architecture and how to use it in Windows Forms applications.  
   
  [Windows Forms Security](windows-forms-security.md)  

@@ -24,7 +24,7 @@ You can bind the <xref:System.Windows.Forms.ComboBox> and <xref:System.Windows.F
   
 ### To bind a ComboBox or ListBox control  
   
-1. Set the `DataSource` property to a data source object. Possible data sources include a <xref:System.Windows.Forms.BindingSource> bound to data, a data table, a data view, a dataset, a data view manager, an array, or any class that implements the <xref:System.Collections.IList> interface. For more information, see [Data Sources Supported by Windows Forms](/dotnet/desktop/winforms/data/overview).  
+1. Set the `DataSource` property to a data source object. Possible data sources include a <xref:System.Windows.Forms.BindingSource> bound to data, a data table, a data view, a dataset, a data view manager, an array, or any class that implements the <xref:System.Collections.IList> interface. For more information, see [Data Sources Supported by Windows Forms](../data/overview.md).  
   
 2. If you are binding to a table, set the `DisplayMember` property to the name of a column in the data source.  
   
@@ -54,6 +54,6 @@ You can bind the <xref:System.Windows.Forms.ComboBox> and <xref:System.Windows.F
 
 - <xref:System.Windows.Forms.ComboBox>
 - <xref:System.Windows.Forms.ListBox>
-- [Windows Forms Data Binding](/dotnet/desktop/winforms/data/overview)
-- [Data Binding and Windows Forms](/dotnet/desktop/winforms/data/overview)
+- [Windows Forms Data Binding](../data/overview.md)
+- [Data Binding and Windows Forms](../data/overview.md)
 - [Windows Forms Controls Used to List Options](windows-forms-controls-used-to-list-options.md)

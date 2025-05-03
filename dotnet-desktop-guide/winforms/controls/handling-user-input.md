@@ -65,6 +65,6 @@ This topic describes the main keyboard and mouse events provided by <xref:System
 ## See also
 
 - [Events in Windows Forms Controls](events-in-windows-forms-controls.md)
-- [Defining an Event](/dotnet/desktop/winforms/controls-design/usercontrol-overview)
+- [Defining an Event](../controls-design/usercontrol-overview.md)
 - [Events](/dotnet/standard/events/index)
 - [User Input in Windows Forms](../user-input-in-windows-forms.md)

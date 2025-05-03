@@ -21,9 +21,9 @@ The <xref:System.Windows.Forms.PrintDialog> component is the standard Windows pr
 
 ## See also
 
-- [How to: Create Standard Windows Forms Print Jobs](/dotnet/desktop/winforms/printing/overview)
-- [How to: Capture User Input from a PrintDialog at Run Time](/dotnet/desktop/winforms/printing/overview)
+- [How to: Create Standard Windows Forms Print Jobs](../printing/overview.md)
+- [How to: Capture User Input from a PrintDialog at Run Time](../printing/overview.md)
 - [PrintPreviewDialog Control](printpreviewdialog-control-windows-forms.md)
-- [PrintDialog Component](/dotnet/desktop/winforms/printing/overview)
-- [Windows Forms Print Support](/dotnet/desktop/winforms/printing/overview)
-- [Windows Forms Controls](/dotnet/desktop/winforms/controls/overview)
+- [PrintDialog Component](../printing/overview.md)
+- [Windows Forms Print Support](../printing/overview.md)
+- [Windows Forms Controls](overview.md)

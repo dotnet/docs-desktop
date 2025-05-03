@@ -65,7 +65,7 @@ Encapsulates a data source for binding to controls.
   
 ## Related Sections  
 
- [Windows Forms Data Binding](/dotnet/desktop/winforms/data/overview)  
+ [Windows Forms Data Binding](../data/overview.md)  
  Contains links to topics describing the Windows Forms data binding architecture.  
   
  Also see [Bind controls to data in Visual Studio](/visualstudio/data-tools/bind-controls-to-data-in-visual-studio).

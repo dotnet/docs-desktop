@@ -13,7 +13,7 @@ ms.assetid: 7ee734e1-e31e-4ed0-bbc0-a7e8a1f20fef
 
 The use of the Windows Forms <xref:System.Windows.Forms.TabControl> is to display other controls in an organized fashion. You can use these instructions to display a picture on the main part of a tab page. For information about adding an icon to the label part of a tab page, see [How to: Change the Appearance of the Windows Forms TabControl](how-to-change-the-appearance-of-the-windows-forms-tabcontrol.md).
 
- The following procedure requires a **Windows Application** project with a form containing a <xref:System.Windows.Forms.TabControl> control. For information about setting up such a project, see [How to: Create a Windows Forms application project](/visualstudio/ide/step-1-create-a-windows-forms-application-project) and [How to: Add Controls to Windows Forms](/dotnet/desktop/winforms/controls/how-to-add-to-a-form).
+ The following procedure requires a **Windows Application** project with a form containing a <xref:System.Windows.Forms.TabControl> control. For information about setting up such a project, see [How to: Create a Windows Forms application project](/visualstudio/ide/step-1-create-a-windows-forms-application-project) and [How to: Add Controls to Windows Forms](how-to-add-to-a-form.md).
 
 ## To add a control using the designer
 

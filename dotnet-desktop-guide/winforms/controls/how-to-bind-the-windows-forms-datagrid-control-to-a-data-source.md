@@ -105,4 +105,4 @@ description: Learn how to bind the Windows Forms DataGrid control to a Data sour
 - [DataGrid Control Overview](datagrid-control-overview-windows-forms.md)
 - [How to: Add Tables and Columns to the Windows Forms DataGrid Control](how-to-add-tables-and-columns-to-the-windows-forms-datagrid-control.md)
 - [DataGrid Control](datagrid-control-windows-forms.md)
-- [Windows Forms Data Binding](/dotnet/desktop/winforms/data/overview)
+- [Windows Forms Data Binding](../data/overview.md)

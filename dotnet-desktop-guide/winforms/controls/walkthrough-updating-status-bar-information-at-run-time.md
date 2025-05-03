@@ -27,7 +27,7 @@ ms.assetid: cc2abb06-c082-49f7-a5a3-2fd1bbcb58d1
   
 1. Create a new Windows form.  
   
-2. Add a <xref:System.Windows.Forms.StatusBar> control to your form. For details, see [How to: Add Controls to Windows Forms](/dotnet/desktop/winforms/controls/how-to-add-to-a-form).  
+2. Add a <xref:System.Windows.Forms.StatusBar> control to your form. For details, see [How to: Add Controls to Windows Forms](how-to-add-to-a-form.md).  
   
 3. Add a status bar panel to your <xref:System.Windows.Forms.StatusBar> control. For details, see [How to: Add Panels to a StatusBar Control](how-to-add-panels-to-a-statusbar-control.md).  
   

@@ -30,4 +30,4 @@ Although Windows Forms have been optimized to host Windows Forms controls, you c
 - [Code Access Security](/dotnet/framework/misc/code-access-security)
 - [Controls and Programmable Objects Compared in Various Languages and Libraries](/previous-versions/visualstudio/visual-studio-2010/0061wezk(v=vs.100))
 - [Putting Controls on Windows Forms](putting-controls-on-windows-forms.md)
-- [Windows Forms Controls](/dotnet/desktop/winforms/controls/overview)
+- [Windows Forms Controls](overview.md)

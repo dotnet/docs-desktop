@@ -67,4 +67,4 @@ Frequently, you will want to print graphics in your Windows-based application. T
 
 - <xref:System.Drawing.Graphics>
 - <xref:System.Drawing.Brush>
-- [Windows Forms Print Support](/dotnet/desktop/winforms/printing/overview)
+- [Windows Forms Print Support](../printing/overview.md)

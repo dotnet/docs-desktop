@@ -41,4 +41,4 @@ Implement the <xref:System.ComponentModel.ITypedList> interface to enable discov
 - <xref:System.ComponentModel.ITypedList>
 - <xref:System.ComponentModel.BindingList%601>
 - <xref:System.ComponentModel.IBindingList>
-- [Data Binding and Windows Forms](/dotnet/desktop/winforms/data/overview)
+- [Data Binding and Windows Forms](data/overview.md)
