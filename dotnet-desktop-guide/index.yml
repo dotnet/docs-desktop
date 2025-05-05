@@ -23,7 +23,7 @@ landingContent:
     - text: Windows Forms (WinForms)
       url: net/winforms/index.yml
     - text: Windows Presentation Foundation (WPF)
-      url: net/wpf/index.yml
+      url: wpf/index.yml
 
 - title: Other desktop technologies
   linkLists:

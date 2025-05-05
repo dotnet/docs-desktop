@@ -2,4 +2,4 @@ items:
 - name: Windows Forms
   href: winforms/index.yml
 - name: Windows Presentation Foundation
-  href: net/wpf/index.yml?view=netdesktop-9.0&preserve-view=true
+  href: wpf/index.yml?view=netdesktop-9.0&preserve-view=true
