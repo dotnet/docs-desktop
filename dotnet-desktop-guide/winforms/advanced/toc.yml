@@ -1,3 +1,4 @@
+items:
 - name: Enhancing Windows Forms Applications
   href: index.md
   items:
@@ -300,24 +301,24 @@
     - name: "How to: Validate Application Settings"
       href: how-to-validate-application-settings.md
   - name: Windows Forms Print Support
-    href: /dotnet/desktop/winforms/printing/overview
+    href: ../printing/overview.md
     items:
     - name: "How to: Create Standard Windows Forms Print Jobs"
-      href: /dotnet/desktop/winforms/printing/overview
+      href: ../printing/overview.md
     - name: "How to: Capture User Input from a PrintDialog at Run Time"
-      href: /dotnet/desktop/winforms/printing/overview
+      href: ../printing/overview.md
     - name: "How to: Choose the Printers Attached to a User's Computer in Windows Forms"
       href: how-to-choose-the-printers-attached-to-user-computer-in-windows-forms.md
     - name: "How to: Print Graphics in Windows Forms"
       href: how-to-print-graphics-in-windows-forms.md
     - name: "How to: Print a Multi-Page Text File in Windows Forms"
-      href: /dotnet/desktop/winforms/printing/how-to-print-text-document
+      href: ../printing/how-to-print-text-document.md
     - name: "How to: Complete Windows Forms Print Jobs"
-      href: /dotnet/desktop/winforms/printing/overview
+      href: ../printing/overview.md
     - name: "How to: Print a Windows Form"
-      href: /dotnet/desktop/winforms/printing/how-to-print-windows-form
+      href: ../printing/how-to-print-windows-form.md
     - name: "How to: Print in Windows Forms Using Print Preview"
-      href: /dotnet/desktop/winforms/printing/how-to-print-in-windows-forms-using-print-preview
+      href: ../printing/how-to-print-in-windows-forms-using-print-preview.md
   - name: Drag-and-Drop Operations and Clipboard Support
     href: drag-and-drop-operations-and-clipboard-support.md
     items:
