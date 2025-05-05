@@ -26,5 +26,4 @@ One of the most important courtesies you, as a developer of applications, can fu
 - [Integrating User Help in Windows Forms](integrating-user-help-in-windows-forms.md)
 - [HelpProvider Component](../controls/helpprovider-component-windows-forms.md)
 - [ToolTip Component](../controls/tooltip-component-windows-forms.md)
-- [Windows Forms Overview](/dotnet/desktop/winforms/overview/)
-- [Windows Forms](../index.yml)
+- [Windows Forms Overview](../overview/index.md)

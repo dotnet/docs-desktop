@@ -7,7 +7,7 @@ ms.topic: overview
 #Customer intent: As a developer, I want to understand the components of Windows Forms so that I can understand the overall picture of Windows Forms.
 ---
 
-# Windows Forms for .NET
+# Windows Forms Overview
 
 Welcome to the Desktop Guide for Windows Forms, a UI framework that creates rich desktop client apps for Windows. The Windows Forms development platform supports a broad set of app development features, including controls, graphics, data binding, and user input. Windows Forms features a drag-and-drop visual designer in Visual Studio to easily create Windows Forms apps.
 
@@ -15,15 +15,13 @@ There are two implementations of Windows Forms:
 
 01. The open-source implementation hosted on [GitHub](https://github.com/dotnet/winforms).
 
-    This version runs on .NET 6 and later versions.
+    This version [runs on .NET](https://dotnet.microsoft.com/learn/dotnet/what-is-dotnet).
 
     The latest version is Windows Forms for .NET 9 using [Visual Studio 2022 version 17.12](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2022+desktopguide+winforms).
 
 01. The .NET Framework 4 implementation that's supported by Visual Studio 2022, Visual Studio 2019, and Visual Studio 2017.
 
     .NET Framework 4 is a Windows-only version of .NET and is considered a Windows Operating System component. This version of Windows Forms is distributed with .NET Framework.
-
-    For more information about the .NET Framework version of Windows Forms, see [Windows Forms for .NET Framework](../../../framework/winforms/index.yml?view=netframeworkdesktop-4.8&preserve-view=true).
 
 ## Introduction
 
@@ -32,10 +30,6 @@ Windows Forms is a UI framework for building Windows desktop apps. It provides o
 With Windows Forms, you develop graphically rich apps that are easy to deploy, update, and work while offline or while connected to the internet. Windows Forms apps can access the local hardware and file system of the computer where the app is running.
 
 To learn how to create a Windows Forms app, see [Tutorial: Create a new WinForms app](../get-started/create-app-visual-studio.md).
-
-## Why migrate from .NET Framework
-
-Windows Forms for .NET provides new features and enhancements over .NET Framework. For more information, see [What's new in Windows Forms for .NET 9](../whats-new/net90.md). To learn how to upgrade an app, see [How to upgrade a Windows Forms desktop app to .NET](../migration/index.md)
 
 ## Build rich, interactive user interfaces
 
@@ -76,4 +70,6 @@ Another type of data binding you can manage in Windows Forms is *settings*. Most
 
 ## Related content
 
-- 
+- [Tutorial: Create a Windows Forms app with .NET](../get-started/create-app-visual-studio.md)
+- [How to add a form to a project](../forms/how-to-add.md)
+- [Overview of using controls](../controls/overview.md)

@@ -1,6 +1,8 @@
 items:
 - name: Windows Forms for .NET
   href: index.yml
+- name: Overview
+  href: overview/index.md
 - name: What's new
   items:
   - name: Overview
@@ -19,8 +21,6 @@ items:
     href: whats-new/net50.md
 - name: Get started
   items:
-  - name: Overview
-    href: overview/index.md
   - name: Create an app
     href: get-started/create-app-visual-studio.md
 - name: Migration

@@ -51,5 +51,5 @@ To run this code example, you must have permission to access the printer you use
 ## See also
 
 - <xref:System.Drawing.Printing.PrintDocument>
-- [How to: Render Images with GDI+](/dotnet/desktop/winforms/advanced/how-to-render-images-with-gdi?view=netframeworkdesktop-4.8&preserve-view=true)
-- [How to: Print Graphics in Windows Forms](/dotnet/desktop/winforms/advanced/how-to-print-graphics-in-windows-forms?view=netframeworkdesktop-4.8&preserve-view=true)
+- [How to: Render Images with GDI+](../advanced/how-to-render-images-with-gdi.md)
+- [How to: Print Graphics in Windows Forms](../advanced/how-to-print-graphics-in-windows-forms.md)

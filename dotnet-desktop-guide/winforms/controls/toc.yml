@@ -13,7 +13,7 @@ items:
     - name: Layout options
       href: layout.md
     - name: Dock and anchor controls
-      href: controls/how-to-dock-and-anchor.md
+      href: how-to-dock-and-anchor.md
     - name: "How to align multiple controls"
       href: how-to-align-multiple-controls-on-windows-forms.md
     - name: "How to layer objects"
@@ -554,10 +554,10 @@ items:
       - name: "How to add or remove imagelist images with the designer"
         href: how-to-add-or-remove-imagelist-images-with-the-designer.md
     - name: Label Control
-      href: /dotnet/desktop/winforms/controls/labels
+      href: labels.md
       items:
       - name: Label Control Overview
-        href: /dotnet/desktop/winforms/controls/labels
+        href: labels.md
       - name: "How to create access keys with windows forms label controls"
         href: how-to-create-access-keys-with-windows-forms-label-controls.md
       - name: "How to size a windows forms label control to fit its contents"
@@ -732,10 +732,9 @@ items:
       - name: "How to set pictures at run time"
         href: how-to-set-pictures-at-run-time-windows-forms.md
     - name: PrintDialog Component
-      href: /dotnet/desktop/winforms/printing/overview
       items:
       - name: PrintDialog Component Overview
-        href: /dotnet/desktop/winforms/printing/overview
+        href: ../printing/overview.md
       - name: "How to display the printdialog component"
         href: how-to-display-the-printdialog-component.md
     - name: PrintDocument Component
@@ -1136,7 +1135,7 @@ items:
   - name: Control properties
     items:    
     - name: Defining a Property
-      href: /dotnet/desktop/winforms/controls-design/designer-properties-overview
+      href: ../controls-design/designer-properties-overview.md
     - name: Property-Changed Events
       href: events.md#property-changed-events
     - name: How to expose properties of constituent controls
@@ -1197,7 +1196,7 @@ items:
     - name: Troubleshoot designer errors
       href: ../controls-design/designer-errors.md
     - name: Troubleshoot 32-bit reference errors
-      href: visualstudio/troubleshoot-32bit.md
+      href: ../visualstudio/troubleshoot-32bit.md
     - name: Common tasks
       items:
       - name: Use ShouldSerialize and Reset for a property

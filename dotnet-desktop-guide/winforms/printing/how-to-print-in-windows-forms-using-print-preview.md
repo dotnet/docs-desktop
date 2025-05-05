@@ -68,4 +68,4 @@ It's common in Windows Forms programming to offer print preview in addition to p
 
 - [PrintDialog component overview](overview.md)
 - [Print a multi-page text file](how-to-print-text-document.md)
-- [More Secure Printing in Windows Forms](/dotnet/desktop/winforms/more-secure-printing-in-windows-forms?view=netframeworkdesktop-4.8&preserve-view=true)
+- [More Secure Printing in Windows Forms](../more-secure-printing-in-windows-forms.md)

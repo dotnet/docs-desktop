@@ -1,17 +1,5 @@
 items:
 - name: Windows Forms
-  expanded: true
-  items:
-  - name: ".NET"
-    href: net/winforms/index.yml?view=netdesktop-9.0&preserve-view=true
-  - name: .NET Framework
-    href: framework/winforms/index.yml?view=netframeworkdesktop-4.8&preserve-view=true
+  href: winforms/index.yml
 - name: Windows Presentation Foundation
-  expanded: true
-  items:
-  - name: ".NET"
-    href: net/wpf/index.yml?view=netdesktop-9.0&preserve-view=true
-  - name: .NET Framework
-    href: framework/wpf/index.md?view=netframeworkdesktop-4.8&preserve-view=true
-  - name: XAML language reference
-    href: xaml-services/?view=&preserve-view=true
+  href: net/wpf/index.yml?view=netdesktop-9.0&preserve-view=true

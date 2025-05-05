@@ -363,46 +363,6 @@
         {
             "source_path": "dotnet-desktop-guide/winforms/controls/how-to-inherit-from-the-control-class.md",
             "redirect_url": "/dotnet/desktop/winforms/controls-design/custom-controls-overview"
-        },
-        {
-            "source_path": "",
-            "redirect_url": ""
-        },
-        {
-            "source_path": "",
-            "redirect_url": ""
-        },
-        {
-            "source_path": "",
-            "redirect_url": ""
-        },
-        {
-            "source_path": "",
-            "redirect_url": ""
-        },
-        {
-            "source_path": "",
-            "redirect_url": ""
-        },
-        {
-            "source_path": "",
-            "redirect_url": ""
-        },
-        {
-            "source_path": "",
-            "redirect_url": ""
-        },
-        {
-            "source_path": "",
-            "redirect_url": ""
-        },
-        {
-            "source_path": "",
-            "redirect_url": ""
-        },
-        {
-            "source_path": "",
-            "redirect_url": ""
         }
     ]
 }

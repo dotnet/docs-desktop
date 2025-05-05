@@ -37,7 +37,7 @@ An essential, but often overlooked, aspect of building Windows-based application
  [ToolTip Component](../controls/tooltip-component-windows-forms.md)  
  Explains the basics of the `ToolTip` component.  
   
- [Windows Forms Overview](/dotnet/desktop/winforms/overview/)  
+ [Windows Forms Overview](../overview/index.md)
  Explains the basics of Windows Forms.  
   
  [Windows Forms](../index.yml)  
