@@ -761,5 +761,5 @@ namespace SampleUsage
 ## See also
 
 - <xref:System.ComponentModel.BackgroundWorker>
-- [Developing Custom Windows Forms Controls with the .NET Framework](developing-custom-windows-forms-controls.md)
+- [Create new controls overview](../controls-design/overview.md)
 - [Event-based Asynchronous Pattern Overview](/dotnet/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-overview)

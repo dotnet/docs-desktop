@@ -339,6 +339,70 @@
         {
             "source_path": "dotnet-desktop-guide/winforms/multiple-controls-bound-to-data-source-synchronized.md",
             "redirect_url": "/dotnet/desktop/winforms/data/how-to-synchronize-multiple-controls"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/winforms/changing-the-appearance-of-windows-forms.md",
+            "redirect_url": "/dotnet/desktop/winforms/how-to-change-the-borders-of-windows-forms"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/winforms/getting-started-with-windows-forms.md",
+            "redirect_url": "/dotnet/desktop/winforms/overview/"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/winforms/creating-a-new-windows-form.md",
+            "redirect_url": "/dotnet/desktop/winforms/get-started/create-app-visual-studio"
+        },
+        {
+            "source_path": "developing-custom-windows-forms-controls.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls-design/overview"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/winforms/controls/labeling-individual-windows-forms-controls-and-providing-shortcuts-to-them.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls/labels"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/winforms/controls/how-to-inherit-from-the-control-class.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls-design/custom-controls-overview"
+        },
+        {
+            "source_path": "",
+            "redirect_url": ""
+        },
+        {
+            "source_path": "",
+            "redirect_url": ""
+        },
+        {
+            "source_path": "",
+            "redirect_url": ""
+        },
+        {
+            "source_path": "",
+            "redirect_url": ""
+        },
+        {
+            "source_path": "",
+            "redirect_url": ""
+        },
+        {
+            "source_path": "",
+            "redirect_url": ""
+        },
+        {
+            "source_path": "",
+            "redirect_url": ""
+        },
+        {
+            "source_path": "",
+            "redirect_url": ""
+        },
+        {
+            "source_path": "",
+            "redirect_url": ""
+        },
+        {
+            "source_path": "",
+            "redirect_url": ""
         }
     ]
 }

@@ -68,4 +68,4 @@ The .NET Framework provides a variety of attributes you can apply to the members
 - <xref:System.Attribute>
 - [How to: Apply Attributes in Windows Forms Controls](how-to-apply-attributes-in-windows-forms-controls.md)
 - [Extending Design-Time Support](/previous-versions/visualstudio/visual-studio-2013/37899azc(v=vs.120))
-- [Developing Custom Windows Forms Controls with the .NET Framework](developing-custom-windows-forms-controls.md)
+- [Create new controls overview](../controls-design/overview.md)

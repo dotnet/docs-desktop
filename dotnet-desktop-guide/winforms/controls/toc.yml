@@ -67,8 +67,10 @@ items:
     items:
     - name: Overview
       href: events.md
-    - name: Handling User Input
-      href: handling-user-input.md
+    - name: Keyboard events
+      href: ../input-keyboard/events.md
+    - name: Mouse events
+      href: ../input-mouse/events.md
   - name: Multithreading in Windows Forms Controls
     href: multithreading-in-windows-forms-controls.md
     items:

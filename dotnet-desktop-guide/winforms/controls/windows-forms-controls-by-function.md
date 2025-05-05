@@ -84,4 +84,4 @@ Windows Forms offers controls and components that perform a number of functions.
 ## See also
 
 - [Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)
-- [Developing Custom Windows Forms Controls with the .NET Framework](developing-custom-windows-forms-controls.md)
+- [Create new controls overview](../controls-design/overview.md)

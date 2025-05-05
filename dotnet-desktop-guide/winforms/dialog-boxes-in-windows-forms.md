@@ -23,8 +23,5 @@ Dialog boxes are used to interact with the user and retrieve information. In sim
  [Dialog-Box Controls and Components](./controls/dialog-box-controls-and-components-windows-forms.md)  
  Lists the predefined dialog box controls.  
   
- [Changing the Appearance of Windows Forms](changing-the-appearance-of-windows-forms.md)  
- Contains links to topics that describe how to change the appearance of Windows Forms applications.  
-  
  [TabControl Control Overview](./controls/tabcontrol-control-overview-windows-forms.md)  
  Explains how you incorporate the tab control into a dialog box.

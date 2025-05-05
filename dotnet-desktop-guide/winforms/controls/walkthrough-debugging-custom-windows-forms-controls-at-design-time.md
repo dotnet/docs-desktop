@@ -29,7 +29,7 @@ You can debug your custom controls using Visual Studio, just as you would debug 
 >
 > For .NET Framework projects, only projects that can compile with the platform target settings _Any_ or _x64_ are fully supported in the Designer. Projects that use ActiveX, COM, or other 32-bit components, may have compatibility issues. The Out-Of_Process Framework Designer, currently in preview, addresses many of those compatibility issues. However, design-time functionality may not work as well as the 64-bit In-Process Designer. To enable the Out-Of-Process Framework Designer, navigate to the **Tools** > **Options** > **Environment** > **Preview Features**.
 >
-> For more information about the Out-Of-Process Designer, see [The designer changes since .NET Framework](../../../net/winforms/controls-design/designer-differences-framework.md).
+> For more information about the Out-Of-Process Designer, see [The designer changes since .NET Framework](../controls-design/designer-differences-framework.md).
 
 ## Create the project
 
@@ -134,7 +134,7 @@ Now you are ready to debug your custom control as it runs in design mode. When y
 3. In the new instance of Visual Studio, open the "DebuggingExample" solution. You can easily find the solution by selecting **Recent Projects** from the **File** menu. The "DebuggingExample.sln" solution file will be listed as the most recently used file.
 
    > [!IMPORTANT]
-   > If you're debugging a .NET 6 or later Windows Forms project, don't load the project, instead, use this instance of Visual Studio to attach a debugger to the the *DesignToolsServer.exe* process. Select the **Debug** > **Attach to process** menu item. Find *DesignToolsServer.exe* in the list of processes and press **Attach**. For more information, see [The designer changes since .NET Framework](../../../net/winforms/controls-design/designer-differences-framework.md).
+   > If you're debugging a .NET 6 or later Windows Forms project, don't load the project, instead, use this instance of Visual Studio to attach a debugger to the the *DesignToolsServer.exe* process. Select the **Debug** > **Attach to process** menu item. Find *DesignToolsServer.exe* in the list of processes and press **Attach**. For more information, see [The designer changes since .NET Framework](../controls-design/designer-differences-framework.md).
 
 4. Open Form1 in the **Forms Designer** and select the **DebugControl** control.
 

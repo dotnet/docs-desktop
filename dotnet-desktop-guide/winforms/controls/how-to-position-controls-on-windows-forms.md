@@ -95,7 +95,7 @@ button1->Left += 200;
 - [Walkthrough: Arranging Controls on Windows Forms Using Snaplines](walkthrough-arranging-controls-on-windows-forms-using-snaplines.md)
 - [Walkthrough: Arranging Controls on Windows Forms Using a TableLayoutPanel](walkthrough-arranging-controls-on-windows-forms-using-a-tablelayoutpanel.md)
 - [Walkthrough: Arranging Controls on Windows Forms Using a FlowLayoutPanel](walkthrough-arranging-controls-on-windows-forms-using-a-flowlayoutpanel.md)
-- [Labeling Individual Windows Forms Controls and Providing Shortcuts to Them](labeling-individual-windows-forms-controls-and-providing-shortcuts-to-them.md)
+- [Label control overview](labels.md)
 - [Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)
 - [Windows Forms Controls by Function](windows-forms-controls-by-function.md)
 - [How to: Set the Screen Location of Windows Forms](/previous-versions/visualstudio/visual-studio-2010/52aha046(v=vs.100))

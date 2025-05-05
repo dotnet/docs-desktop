@@ -81,7 +81,7 @@ A user control is a collection of Windows Forms controls presented as a single c
 
 A user control holds all of the inherent functionality associated with each of the contained Windows Forms controls and enables you to selectively expose and bind their properties. A user control also provides a great deal of default keyboard handling functionality with no extra development effort on your part.
 
-For example, a user control could be built to display customer address data from a database. This control would include a <xref:System.Windows.Forms.DataGridView> control to display the database fields, a <xref:System.Windows.Forms.BindingSource> to handle binding to a data source, and a <xref:System.Windows.Forms.BindingNavigator> control to move through the records. You could selectively expose data binding properties, and you could package and reuse the entire control from application to application.<!-- TODO For an example of this kind of user control, see [How to: Apply Attributes in Windows Forms Controls](how-to-apply-attributes-in-windows-forms-controls.md).-->
+For example, a user control could be built to display customer address data from a database. This control would include a <xref:System.Windows.Forms.DataGridView> control to display the database fields, a <xref:System.Windows.Forms.BindingSource> to handle binding to a data source, and a <xref:System.Windows.Forms.BindingNavigator> control to move through the records. You could selectively expose data binding properties, and you could package and reuse the entire control from application to application. For an example of this kind of user control, see [How to: Apply Attributes in Windows Forms Controls](../controls/how-to-apply-attributes-in-windows-forms-controls.md).
 
 For more information, see [User control overview](usercontrol-overview.md).
 
@@ -109,7 +109,7 @@ For more information, see [Create a simple custom control](how-to-create-simple-
 
 ## ActiveX controls
 
-Although the Windows Forms infrastructure has been optimized to host Windows Forms controls, you can still use ActiveX controls. There's support for this task in Visual Studio. For more information, see [How to: Add ActiveX Controls to Windows Forms](how-to-add-activex-controls-to-windows-forms.md).
+Although the Windows Forms infrastructure has been optimized to host Windows Forms controls, you can still use ActiveX controls. There's support for this task in Visual Studio. For more information, see [How to: Add ActiveX Controls to Windows Forms](../controls/how-to-add-activex-controls-to-windows-forms.md).
 
 > [!WARNING]
 > ActiveX controls aren't fully supported on .NET. ActiveX controls remain fully supported on .NET Framework.
@@ -124,10 +124,3 @@ The following information is out of date but it might help you.
 
 - [(Visual Studio 2013) Extending Design-Time Support](/previous-versions/visualstudio/visual-studio-2013/37899azc(v=vs.120)).
 - [(Visual Studio 2013) How to: Create a Windows Forms Control That Takes Advantage of Design-Time Features](/previous-versions/visualstudio/visual-studio-2013/307hck25(v=vs.120)).
-
-<!-- TODO: link to the ..\custom-controls\ content 
-
-- [Developing Custom Windows Forms Controls](developing-custom-windows-forms-controls.md)
-- [How to: Develop a Simple Windows Forms Control](how-to-develop-a-simple-windows-forms-control.md)
-- [Developing a Composite Windows Forms Control](developing-a-composite-windows-forms-control.md)
--->

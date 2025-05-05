@@ -32,6 +32,6 @@ Visual Studio adds all references to the control in your project. For more infor
 - [Windows Forms Controls](overview.md)
 - [Controls and Programmable Objects Compared in Various Languages and Libraries](/previous-versions/visualstudio/visual-studio-2010/0061wezk(v=vs.100))
 - [How to: Add Controls to Windows Forms](how-to-add-to-a-form.md)
-- [Labeling Individual Windows Forms Controls and Providing Shortcuts to Them](labeling-individual-windows-forms-controls-and-providing-shortcuts-to-them.md)
+- [Label control overview](labels.md)
 - [Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)
 - [Windows Forms Controls by Function](windows-forms-controls-by-function.md)

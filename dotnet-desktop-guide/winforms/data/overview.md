@@ -17,7 +17,7 @@ helpviewer_keywords:
 ms.custom: devdivchpfy22
 ---
 
-# Data binding overview
+# Data binding overview with Windows Forms
 
 In Windows Forms, you can bind to not just traditional data sources, but also to almost any structure that contains data. You can bind to an array of values that you calculate at run time, read from a file, or derive from the values of other controls.
 

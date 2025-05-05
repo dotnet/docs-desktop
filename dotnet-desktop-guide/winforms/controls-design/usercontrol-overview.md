@@ -29,6 +29,10 @@ User controls are usable by the project in which they're created, or in other pr
 
 The constituent controls are available to the user control, and the app user can interact with them all individually at runtime, but the properties and methods declared by the constituent controls aren't exposed to the consumer. For example, if you place a `TextBox` and `Button` control on the user control, the button's `Click` event is handled internally by the user control, but not by the Form where the user control is placed.
 
+### Expose the properties of a constituent control
+
+
+
 ## Add a user control to a project
 
 After creating a new project, use the Visual Studio templates to create a user control. The following steps demonstrate how to add a user control to your project:

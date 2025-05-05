@@ -224,5 +224,4 @@ public class MyForm : Form {
   
 ## See also
 
-- [Developing Custom Windows Forms Controls with the .NET Framework](developing-custom-windows-forms-controls.md)
-- [Windows Forms Control Development Basics](../controls-design/overview.md)
+- [Create new controls overview](../controls-design/overview.md)

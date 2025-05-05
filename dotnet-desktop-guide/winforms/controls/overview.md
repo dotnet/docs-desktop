@@ -14,7 +14,7 @@ helpviewer_keywords:
 ---
 # Overview of using controls
 
-Windows Forms controls are reusable components that encapsulate user interface functionality and are used in client-side, Windows-based applications. Not only does Windows Forms provide many ready-to-use controls, it also provides the infrastructure for developing your own controls. You can combine existing controls, extend existing controls, or author your own custom controls. For more information, see [Types of custom controls](custom.md).
+Windows Forms controls are reusable components that encapsulate user interface functionality and are used in client-side, Windows-based applications. Not only does Windows Forms provide many ready-to-use controls, it also provides the infrastructure for developing your own controls. You can combine existing controls, extend existing controls, or author your own custom controls. For more information, see [Create new controls overview](../controls-design/overview.md).
 
 ## Adding controls
 
@@ -52,4 +52,4 @@ Windows Forms has accessibility support for screen readers and voice input utili
 - [Position and layout of controls](layout.md)
 - [Label control overview](labels.md)
 - [Control events](events.md)
-- [Types of custom controls](custom.md)
+- [Create new controls overview](../controls-design/overview.md)

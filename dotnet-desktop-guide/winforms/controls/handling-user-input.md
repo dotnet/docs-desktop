@@ -30,11 +30,11 @@ This topic describes the main keyboard and mouse events provided by <xref:System
 |`KeyUp`|`void OnKeyUp(KeyEventArgs)`|Raised when a key is released.|  
   
 > [!NOTE]
-> Handling keyboard input is considerably more complex than overriding the events in the preceding table and is beyond the scope of this topic. For more information, see [User Input in Windows Forms](../user-input-in-windows-forms.md).  
+> Handling keyboard input is considerably more complex than overriding the events in the preceding table and is beyond the scope of this topic. For more information, see [Overview of using the keyboard](../input-keyboard/overview.md).
   
 ## Mouse Events  
 
- The mouse events that your control can handle are <xref:System.Windows.Forms.Control.MouseDown>, <xref:System.Windows.Forms.Control.MouseEnter>, <xref:System.Windows.Forms.Control.MouseHover>, <xref:System.Windows.Forms.Control.MouseLeave>, <xref:System.Windows.Forms.Control.MouseMove>, and <xref:System.Windows.Forms.Control.MouseUp>.  
+ The mouse events that your control can handle are <xref:System.Windows.Forms.Control.MouseDown>, <xref:System.Windows.Forms.Control.MouseEnter>, <xref:System.Windows.Forms.Control.MouseHover>, <xref:System.Windows.Forms.Control.MouseLeave>, <xref:System.Windows.Forms.Control.MouseMove>, and <xref:System.Windows.Forms.Control.MouseUp>. For more information, see [Overview of using the mouse](../input-mouse/overview.md).
   
 |Event Name|Method to Override|Description of Event|  
 |----------------|------------------------|--------------------------|  
@@ -45,26 +45,7 @@ This topic describes the main keyboard and mouse events provided by <xref:System
 |`MouseMove`|`void OnMouseMove(MouseEventArgs)`|Raised when the pointer moves in the region of the control.|  
 |`MouseUp`|`void OnMouseUp(MouseEventArgs)`|Raised when the mouse button is released while the pointer is over the control or the pointer leaves the region of the control.|  
   
- The following code fragment shows an example of overriding the <xref:System.Windows.Forms.Control.MouseDown> event.  
-  
- [!code-csharp[System.Windows.Forms.FlashTrackBar#7](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.FlashTrackBar/CS/FlashTrackBar.cs#7)]
- [!code-vb[System.Windows.Forms.FlashTrackBar#7](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.FlashTrackBar/VB/FlashTrackBar.vb#7)]  
-  
- The following code fragment shows an example of overriding the <xref:System.Windows.Forms.Control.MouseMove> event.  
-  
- [!code-csharp[System.Windows.Forms.FlashTrackBar#8](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.FlashTrackBar/CS/FlashTrackBar.cs#8)]
- [!code-vb[System.Windows.Forms.FlashTrackBar#8](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.FlashTrackBar/VB/FlashTrackBar.vb#8)]  
-  
- The following code fragment shows an example of overriding the <xref:System.Windows.Forms.Control.MouseUp> event.  
-  
- [!code-csharp[System.Windows.Forms.FlashTrackBar#9](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.FlashTrackBar/CS/FlashTrackBar.cs#9)]
- [!code-vb[System.Windows.Forms.FlashTrackBar#9](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.FlashTrackBar/VB/FlashTrackBar.vb#9)]  
-  
- For the complete source code for the `FlashTrackBar` sample, see [How to: Create a Windows Forms Control That Shows Progress](how-to-create-a-windows-forms-control-that-shows-progress.md).  
-  
 ## See also
 
-- [Events in Windows Forms Controls](events-in-windows-forms-controls.md)
 - [Defining an Event](../controls-design/usercontrol-overview.md)
 - [Events](/dotnet/standard/events/index)
-- [User Input in Windows Forms](../user-input-in-windows-forms.md)

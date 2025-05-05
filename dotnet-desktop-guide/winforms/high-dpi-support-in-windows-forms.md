@@ -143,5 +143,5 @@ Console.WriteLine(AppDomain.CurrentDomain.SetupInformation.TargetFrameworkName);
 
 ## See also
 
+- [Automatic scaling](forms/autoscale.md)
 - [Windows Forms Add Configuration Element](/dotnet/framework/configure-apps/file-schema/winforms/windows-forms-add-configuration-element)
-- [Adjusting the Size and Scale of Windows Forms](adjusting-the-size-and-scale-of-windows-forms.md)

@@ -86,6 +86,6 @@ To develop components and controls that interact correctly with the design envir
 
 - <xref:System.IComparable>
 - <xref:System.Windows.Forms.DataGridView>
-- [Developing Custom Windows Forms Controls with the .NET Framework](developing-custom-windows-forms-controls.md)
+- [Create new controls overview](../controls-design/overview.md)
 - [Attributes in Windows Forms Controls](attributes-in-windows-forms-controls.md)
 - [How to: Serialize Collections of Standard Types with the DesignerSerializationVisibilityAttribute](/previous-versions/visualstudio/visual-studio-2013/ms171833(v=vs.120))

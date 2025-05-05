@@ -27,6 +27,6 @@ A better way to think of control "transparency" is to think of it as inheriting 
 ## See also
 
 - <xref:System.Drawing.Color.FromArgb%2A>
-- [Developing Custom Windows Forms Controls with the .NET Framework](developing-custom-windows-forms-controls.md)
+- [Create new controls overview](../controls-design/overview.md)
 - [Using Managed Graphics Classes](../advanced/using-managed-graphics-classes.md)
 - [How to: Draw Opaque and Semitransparent Lines](../advanced/how-to-draw-opaque-and-semitransparent-lines.md)

@@ -60,6 +60,3 @@ Windows Forms contains many features that you can use to enhance your Windows-ba
 
  [Help Systems in Windows Forms Applications](help-systems-in-windows-forms-applications.md)  
  Contains links to topics that describe and show how to provide user help in Windows Forms applications.  
-  
- [Getting Started with Windows Forms](../getting-started-with-windows-forms.md)  
- Contains links to topics that describe how to use the basic features of Windows Forms.
