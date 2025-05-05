@@ -14,7 +14,7 @@ helpviewer_keywords:
 ms.custom: devdivchpfy22
 ---
 
-# How to print a Form (Windows Forms .NET)
+# How to print a Form
 
 In the course of designing an app, you might design a form in such a way that it represents a printed page. The following code example shows how to print a copy of the current form by using the <xref:System.Drawing.Graphics.CopyFromScreen%2A> method.
 
@@ -51,5 +51,5 @@ To run this code example, you must have permission to access the printer you use
 ## See also
 
 - <xref:System.Drawing.Printing.PrintDocument>
-- [How to: Render Images with GDI+](/dotnet/desktop/winforms/advanced/how-to-render-images-with-gdi?view=netframeworkdesktop-4.8&preserve-view=true)
-- [How to: Print Graphics in Windows Forms](/dotnet/desktop/winforms/advanced/how-to-print-graphics-in-windows-forms?view=netframeworkdesktop-4.8&preserve-view=true)
+- [How to: Render Images with GDI+](../advanced/how-to-render-images-with-gdi.md)
+- [How to: Print Graphics in Windows Forms](../advanced/how-to-print-graphics-in-windows-forms.md)

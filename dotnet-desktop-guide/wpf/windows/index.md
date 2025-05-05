@@ -33,7 +33,7 @@ helpviewer_keywords:
   - "displaying XAML pages [WPF]"
 ---
 
-# Overview of WPF windows (WPF .NET)
+# Overview of WPF windows
 
 Users interact with Windows Presentation Foundation (WPF) applications through windows. The primary purpose of a window is to host content that visualizes data and enables users to interact with data. WPF applications provide their own windows by using the <xref:System.Windows.Window> class. This article introduces <xref:System.Windows.Window> before covering the fundamentals of creating and managing windows in applications.
 

@@ -11,7 +11,7 @@ helpviewer_keywords:
   - "mouse [Windows Forms], double-click"
   - "mouse clicks [Windows Forms], single versus double"
 ---
-# How to distinguish between clicks and double-clicks (Windows Forms .NET)
+# How to distinguish between clicks and double-clicks
 
 Typically, a single *click* initiates a user interface action and a *double-click* extends the action. For example, one click usually selects an item, and a double-click edits the selected item. However, the Windows Forms click events do not easily accommodate a scenario where a click and a double-click perform incompatible actions, because an action tied to the <xref:System.Windows.Forms.Control.Click> or <xref:System.Windows.Forms.Control.MouseClick> event is performed before the action tied to the <xref:System.Windows.Forms.Control.DoubleClick> or <xref:System.Windows.Forms.Control.MouseDoubleClick> event. This topic demonstrates two solutions to this problem.
 

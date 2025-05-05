@@ -25,149 +25,13 @@ In this tutorial, you:
 
 ## Prerequisites
 
-:::moniker range="netdesktop-6.0"
-
-> [!CAUTION]
-> .NET 6 is no longer supported. It's recommended that you use .NET 9.0.
-
-- [Visual Studio 2022 version 17.0 or later versions](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link&0utm_content=download+vs2022+desktopguide+winforms)
-  - Select the [.NET desktop development workload](/visualstudio/install/modify-visual-studio?view=vs-2022&preserve-view=true#modify-workloads)
-  - Select the [.NET 6 individual component](/visualstudio/install/modify-visual-studio?view=vs-2022&preserve-view=true#modify-individual-components)
-
-:::moniker-end
-
-:::moniker range="netdesktop-7.0"
-
-> [!CAUTION]
-> .NET 7 is no longer supported. It's recommended that you use .NET 9.0.
-
-- [Visual Studio 2022 version 17.4 or later versions](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link&0utm_content=download+vs2022+desktopguide+winforms)
-  - Select the [.NET desktop development workload](/visualstudio/install/modify-visual-studio?view=vs-2022&preserve-view=true#modify-workloads)
-  - Select the [.NET 7 individual component](/visualstudio/install/modify-visual-studio?view=vs-2022&preserve-view=true#modify-individual-components)
-
-:::moniker-end
-
-:::moniker range="netdesktop-8.0"
-
-- [Visual Studio 2022 version 17.8 or later versions](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link&0utm_content=download+vs2022+desktopguide+winforms)
-  - Select the [.NET desktop development workload](/visualstudio/install/modify-visual-studio?view=vs-2022&preserve-view=true#modify-workloads)
-  - Select the [.NET 8 individual component](/visualstudio/install/modify-visual-studio?view=vs-2022&preserve-view=true#modify-individual-components)
-
-:::moniker-end
-
-:::moniker range="netdesktop-9.0"
-
 - [Visual Studio 2022 version 17.12 or later versions](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link&0utm_content=download+vs2022+desktopguide+winforms)
   - Select the [.NET desktop development workload](/visualstudio/install/modify-visual-studio?view=vs-2022&preserve-view=true#modify-workloads)
   - Select the [.NET 9 individual component](/visualstudio/install/modify-visual-studio?view=vs-2022&preserve-view=true#modify-individual-components)
 
-:::moniker-end
-
 ## Create a Windows Forms app
 
 The first step to creating a new app is opening Visual Studio and generating the app from a template.
-
-<!-- Note that the next two moniker sections are exactly the same except for the last step. You can't have monikers in lists because it breaks the numbering -->
-
-:::moniker range="netdesktop-6.0"
-
-> [!CAUTION]
-> .NET 6 is no longer supported. It's recommended that you use .NET 9.0.
-
-01. Open Visual Studio.
-01. Select **Create a new project**.
-
-    :::image type="content" source="media/create-app-visual-studio/netdesktop-6.0/vs-create-new-project.png" alt-text="Create a new Windows Forms project in Visual Studio 2022 for .NET.":::
-
-01. In the **Search for templates** box, type **winforms**, and wait for the search results to appear.
-01. In the **code language** dropdown, choose **C#** or **Visual Basic**.
-01. In the list of templates, select **Windows Forms App** and then select **Next**.
-
-    > [!IMPORTANT]
-    > Don't select the **Windows Forms App (.NET _Framework_)** template.
-
-    The following image shows both C# and Visual Basic .NET project templates. If you applied the **code language** filter, the corresponding template is listed.
-
-    :::image type="content" source="media/create-app-visual-studio/netdesktop-6.0/vs-template-search.png" alt-text="Search for the Windows Forms template in Visual Studio 2022 for .NET.":::
-
-01. In the **Configure your new project** window, set the **Project name** to _Names_ and select **Next**.
-
-    You can also save your project to a different folder by adjusting the **Location** path.
-
-    :::image type="content" source="media/create-app-visual-studio/netdesktop-6.0/vs-config-new-project.png" alt-text="Configure new Windows Forms project in Visual Studio 2022 for .NET.":::
-
-01. Finally, in the **Additional information** window, select **.NET 6.0 (Long-term support)** for the **Framework** setting, and then select **Create**.
-
-    :::image type="content" source="media/create-app-visual-studio/netdesktop-6.0/vs-select-framework.png" alt-text="Select the target framework for a Windows Forms project in Visual Studio 2022.":::
-
-:::moniker-end
-
-:::moniker range="netdesktop-7.0"
-
-> [!CAUTION]
-> .NET 7 is no longer supported. It's recommended that you use .NET 9.0.
-
-01. Open Visual Studio.
-01. Select **Create a new project**.
-
-    :::image type="content" source="media/create-app-visual-studio/netdesktop-6.0/vs-create-new-project.png" alt-text="Create a new Windows Forms project in Visual Studio 2022 for .NET.":::
-
-01. In the **Search for templates** box, type **winforms**, and wait for the search results to appear.
-01. In the **code language** dropdown, choose **C#** or **Visual Basic**.
-01. In the list of templates, select **Windows Forms App** and then select **Next**.
-
-    > [!IMPORTANT]
-    > Don't select the **Windows Forms App (.NET _Framework_)** template.
-
-    The following image shows both C# and Visual Basic .NET project templates. If you applied the **code language** filter, the corresponding template is listed.
-
-    :::image type="content" source="media/create-app-visual-studio/netdesktop-7.0/vs-template-search.png" alt-text="Search for the Windows Forms template in Visual Studio 2022 for .NET.":::
-
-01. In the **Configure your new project** window, set the **Project name** to _Names_ and select **Next**.
-
-    You can also save your project to a different folder by adjusting the **Location** path.
-
-    :::image type="content" source="media/create-app-visual-studio/netdesktop-7.0/vs-config-new-project.png" alt-text="Configure new Windows Forms project in Visual Studio 2022 for .NET.":::
-
-01. Finally, in the **Additional information** window, select **.NET 7.0 (Standard Term Support)** for the **Framework** setting, and then select **Create**.
-
-    :::image type="content" source="media/create-app-visual-studio/netdesktop-7.0/vs-select-framework.png" alt-text="Select the target framework for a Windows Forms project in Visual Studio 2022.":::
-
-:::moniker-end
-
-<!-- Note that the next two moniker sections are exactly the same except for the last step. You can't have monikers in lists because it breaks the numbering -->
-
-:::moniker range="netdesktop-8.0"
-
-01. Open Visual Studio.
-01. Select **Create a new project**.
-
-    :::image type="content" source="media/create-app-visual-studio/vs-start-1-intro.png" alt-text="A screenshot of the start dialog from Visual Studio 2022. The 'create a new project' button is highlighted with a red box.":::
-
-01. In the **Search for templates** box, type **winforms**, and wait for the search results to appear.
-01. In the **code language** dropdown, choose **C#** or **Visual Basic**.
-01. In the list of templates, select **Windows Forms App** and then select **Next**.
-
-    > [!IMPORTANT]
-    > Don't select the **Windows Forms App (.NET _Framework_)** template.
-
-    The following image shows both C# and Visual Basic .NET project templates. If you applied the **code language** filter, the corresponding template is listed.
-
-    :::image type="content" source="media/create-app-visual-studio/vs-start-2-templates.png" alt-text="The term 'winforms' is in a search box and is highlighted with a red box. Arrows from the red box point to two templates, C# and Visual Basic. The templates are also highlighted with a red box. From those red boxes, arrows point down to the 'Next' button which is highlighted with a red box.":::
-
-01. In the **Configure your new project** window, set the **Project name** to _Names_ and select **Next**.
-
-    You can also save your project to a different folder by adjusting the **Location** path.
-
-    :::image type="content" source="media/create-app-visual-studio/vs-start-3-name.png" alt-text="A screenshot of the 'configure your new project' dialog from Visual Studio 2022. The 'Project name' textbox has the word 'Names' in it and is highlighted with a red box. The 'Next' button is also highlighted with a red box.":::
-
-01. Finally, in the **Additional information** window, select **.NET 8.0 (Long Term Support)** for the **Framework** setting, and then select **Create**.
-
-    :::image type="content" source="media/create-app-visual-studio/netdesktop-8.0/vs-start-4-framework.png" alt-text="A screenshot of the 'Additional information' dialog from Visual Studio 2022. The 'Framework' dropdown box has '.NET 8.0 (Long Term Support)' selected and highlighted with a red box. The 'Create' button is also highlighted with a red box.":::
-
-:::moniker-end
-
-:::moniker range="netdesktop-9.0"
 
 01. Open Visual Studio.
 01. Select **Create a new project**.
@@ -194,8 +58,6 @@ The first step to creating a new app is opening Visual Studio and generating the
 01. Finally, in the **Additional information** window, select **.NET 9.0 (Standard Term Support)** for the **Framework** setting, and then select **Create**.
 
     :::image type="content" source="media/create-app-visual-studio/netdesktop-9.0/vs-start-4-framework.png" alt-text="A screenshot of the 'Additional information' dialog from Visual Studio 2022. The 'Framework' dropdown box has '.NET 9.0 (Standard Term Support)' selected and highlighted with a red box. The 'Create' button is also highlighted with a red box.":::
-
-:::moniker-end
 
 Once the app is generated, Visual Studio should open the designer window for the default form, _Form1_. If the form designer isn't visible, double-click on the form in the **Solution Explorer** window to open the designer window.
 

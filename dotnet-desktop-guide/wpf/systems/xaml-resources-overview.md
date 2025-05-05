@@ -12,7 +12,7 @@ dev_langs:
   - "vb"
 ---
 
-# Overview of XAML resources (WPF .NET)
+# Overview of XAML resources
 
 A resource is an object that can be reused in different places in your app. Examples of resources include brushes and styles. This overview describes how to use resources in Extensible Application Markup Language (XAML). You can also create and access resources by using code.
 

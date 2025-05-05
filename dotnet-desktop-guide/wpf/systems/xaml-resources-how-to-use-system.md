@@ -18,7 +18,7 @@ helpviewer_keywords:
 #no-loc: [App.xaml, Application.xaml]
 ---
 
-# How to use system resources (WPF .NET)
+# How to use system resources
 
 This example demonstrates how to use system-defined resources. System resources are provided by WPF and allow access to operating system resources, such as fonts, colors, and icons. System resources expose several system-defined values as both resources and properties to help you create visuals that are consistent with Windows.
 

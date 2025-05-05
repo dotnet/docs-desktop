@@ -15,7 +15,7 @@ helpviewer_keywords:
   - "keyboard events"
   - "events [Windows Forms], keyboard"
 ---
-# Using keyboard events (Windows Forms .NET)
+# Using keyboard events
 
 Most Windows Forms programs process keyboard input by handling the keyboard events. This article provides an overview of the keyboard events, including details on when to use each event and the data that is supplied for each event. For more information about events in general, see [Events overview](../forms/events.md).
 

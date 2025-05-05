@@ -13,7 +13,7 @@ helpviewer_keywords:
   - "modal dialog boxes [WPF]"
 ---
 
-# How to open a common dialog box (WPF .NET)
+# How to open a common dialog box
 
 This article demonstrates how you can display a common system dialog box in Windows Presentation Foundation (WPF). Windows implements different kinds of reusable dialog boxes that are common to all applications, including dialog boxes for selecting files and printing.
 

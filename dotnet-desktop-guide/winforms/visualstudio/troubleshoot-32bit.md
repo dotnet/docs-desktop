@@ -7,7 +7,7 @@ ms.topic: troubleshooting
 #customer intent: As a developer I want to understand why 32-bit references are a problem so that I can fix my problems or upgrade Visual Studio
 ---
 
-# Troubleshoot 32-bit problems (Windows Forms .NET)
+# Troubleshoot 32-bit problems
 
 After upgrading to Visual Studio 2022, you might run into a problem where the design-time experience of your app stops working. This could be related to referencing a 32-bit component. Visual Studio 2022 is a 64-bit process and can't load 32-bit components, regardless of the underlying technology, such as .NET Framework, .NET, or COM\ActiveX. You might not realize you have references to 32-bit components until you try to upgrade Visual Studio. References that compile to 64-bit or target `AnyCPU` continue to work. You'll also run into the same problem if a component you're referencing compiles to `AnyCPU` but happens to reference something 32-bit.
 

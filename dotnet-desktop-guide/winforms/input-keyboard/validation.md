@@ -10,7 +10,7 @@ helpviewer_keywords:
   - "user input [Windows Forms], validating in Windows Forms"
   - "validating user input [Windows Forms], Windows Forms"
 ---
-# Overview of how to validate user input (Windows Forms .NET)
+# Overview of how to validate user input
 
 When users enter data into your application, you can verify that the data is valid before your application uses it. You might require that certain text fields not be zero-length, that a field formatted as a telephone number, or that a string doesn't contain invalid characters. Windows Forms provides several ways for you to validate input in your application.
 

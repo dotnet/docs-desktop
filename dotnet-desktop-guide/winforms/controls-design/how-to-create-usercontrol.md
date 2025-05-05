@@ -21,11 +21,11 @@ helpviewer_keywords:
   - "controls [Windows Forms], composite"
 ---
 
-# How to create a user control (Windows Forms .NET)
+# How to create a user control
 
 This article teaches you how to add a user control to your project and then add that user control to a form. You'll create a reusable user control that's both visually appealing and functional. The new control groups a <xref:System.Windows.Forms.TextBox> control with a <xref:System.Windows.Forms.Button> control. When the user selects the button, the text in the text box is cleared. For more information about user controls, see [User control overview](usercontrol-overview.md).
 
-## Add a user control to a project
+## Add a new user control
 
 After opening your Windows Forms project in Visual Studio, use the Visual Studio templates to create a user control:
 

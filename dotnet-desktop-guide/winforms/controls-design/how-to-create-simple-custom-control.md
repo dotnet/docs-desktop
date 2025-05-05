@@ -14,7 +14,7 @@ helpviewer_keywords:
 #customer intent: As a developer, I want to create a simple control so that I can learn more about how they're structured and designed.
 
 ---
-# Create a simple custom control (Windows Forms .NET)
+# Create a simple custom control
 
 This article teaches how to create custom Windows Forms control. The simple control developed in this article prints the control's <xref:System.Windows.Forms.Control.Text> to the left, center, or right of the control. The alignment of the text can be changed. This control doesn't raise or handle events.
 

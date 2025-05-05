@@ -13,7 +13,7 @@ helpviewer_keywords:
 ---
 <!-- The acrolinx score was 96 on 10/15/2021-->
 
-# How to implement a dependency property (WPF .NET)
+# How to implement a dependency property
 
 This article describes how to implement a dependency property by using a <xref:System.Windows.DependencyProperty> field to back a common language runtime (CLR) property. Dependency properties support several advanced Windows Presentation Foundation (WPF) property system features. These features include styles, data binding, inheritance, animation, and default values. If you want properties that you define to support those features, then implement your properties as a dependency property.
 

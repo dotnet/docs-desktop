@@ -17,7 +17,7 @@ helpviewer_keywords:
   - "controls [Windows Forms], composite"
 ---
 
-# User control overview (Windows Forms .NET)
+# User control overview
 
 A user control is a collection of Windows Forms controls encapsulated in a common container. This kind of control is referred to as a _composite control_. The contained controls are called _constituent controls_. User controls derive from the <xref:System.Windows.Forms.UserControl> class.
 
@@ -28,6 +28,8 @@ User controls are usable by the project in which they're created, or in other pr
 ## Constituent controls
 
 The constituent controls are available to the user control, and the app user can interact with them all individually at runtime, but the properties and methods declared by the constituent controls aren't exposed to the consumer. For example, if you place a `TextBox` and `Button` control on the user control, the button's `Click` event is handled internally by the user control, but not by the Form where the user control is placed.
+
+Members of a constituent control can be exposed by the user control. For more information, see [How to: Expose Properties of Constituent Controls](../controls/how-to-expose-properties-of-constituent-controls.md).
 
 ## Add a user control to a project
 

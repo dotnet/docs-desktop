@@ -12,17 +12,17 @@ helpviewer_keywords:
   - "controls [Windows Forms], setting tab order"
   - "Windows Forms, setting tab order"
 ---
-# How to set the tab order on Windows Forms (Windows Forms .NET)
+# How to set the tab order on Windows Forms
 
 The tab order is the order in which a user moves focus from one control to another by pressing the <kbd>Tab</kbd> key. Each form has its own tab order. By default, the tab order is the same as the order in which you created the controls. Tab-order numbering begins with zero and ascends in value, and is set with the <xref:System.Windows.Forms.Control.TabIndex%2A> property.
 
-You can also set the tab order by using the [designer](#designer).
+You can also set the tab order directly by using the [designer's Property window](#designer) or with [Tab Order mode](#use-tab-order-mode).
 
-Tab order can be set in the **Properties** window of the designer using the <xref:System.Windows.Forms.Control.TabIndex%2A> property. The `TabIndex` property of a control determines where it's positioned in the tab order. By default, the first control added to the designer has a `TabIndex` value of 0, the second has a `TabIndex` of 1, and so on. Once the highest `TabIndex` has been focused, pressing <kbd>Tab</kbd> will cycle and focus the control with the lowest `TabIndex` value.
+Tab order can be set in the **Properties** window of the designer using the <xref:System.Windows.Forms.Control.TabIndex%2A> property. The `TabIndex` property of a control determines where it's positioned in the tab order. By default, the first control added to the designer has a `TabIndex` value of 0, the second has a `TabIndex` of 1, and so on. Once the highest `TabIndex` has been focused, pressing <kbd>Tab</kbd> focuses the control with the lowest `TabIndex` value.
 
 Container controls, such as a <xref:System.Windows.Forms.GroupBox> control, treat their children as separate from the rest of the form. Each child in the container has its own <xref:System.Windows.Forms.Control.TabIndex%2A> value. Because a container control can't be focused, when the tab order reaches the container control, the child control of the container with the lowest `TabIndex` is focused. As the <kbd>Tab</kbd> is pressed, each child control is focused according to its `TabIndex` value until the last control. When <kbd>Tab</kbd> is pressed on the last control, focus resumes to the next control in the parent of the container, based on the next `TabIndex` value.
 
-Any control on your form can be skipped in the tab order. Usually, pressing <kbd>Tab</kbd> successively at run time selects each control in the tab order. By turning off the <xref:System.Windows.Forms.Control.TabStop%2A> property, a control is passed over in the tab order of the form.
+Any control on your form can be skipped in the tab order by setting the <xref:System.Windows.Forms.Control.TabStop%2A> property false.
 
 ## Designer
 
@@ -30,32 +30,13 @@ Use the Visual Studio **Properties** window to set the tab order of a control.
 
 01. Select the control in the designer.
 
-01. In the **Properties** window in Visual Studio, set the **TabIndex** property of the control to an appropriate number.
+01. In the **Properties** window in Visual Studio, set the `TabIndex` property of the control to an appropriate number.
 
     :::image type="content" source="media/how-to-set-the-tab-order/properties-tabindex.png" alt-text="Visual Studio Properties pane for .NET Windows Forms with TabIndex property shown.":::
 
-<!-- This heading goes above: ### Use the Properties window
-
-### Use the Tab Order tool
-
-Visual Studio has a Tab Order tool which works in the Visual Designer. Once started, clicking each control set the tab order in the order in which you click them.
-
-01. In Visual Studio, on the **View** menu, select **Tab Order**.
-
-    This activates the tab-order selection mode on the form. A number (representing the <xref:System.Windows.Forms.Control.TabIndex%2A> property) appears in the upper-left corner of each control.
-
-01. Click the controls sequentially to establish the tab order you want.
-
-    > [!NOTE]
-    > A control's place within the tab order can be set to any value greater than or equal to 0. When duplicates occur, the z-order of the two controls is evaluated and the control on top is tabbed to first. (The z-order is the visual layering of controls on a form along the form's z-axis [depth]. The z-order determines which controls are in front of other controls.) For more information on z-order, see [Layering Objects on Windows Forms](how-to-layer-objects-on-windows-forms.md).
-
-01. When you have finished, select **Tab Order** on the **View** menu again to leave tab order mode.
-
-    > [!NOTE]
-    > Controls that cannot get the focus, as well as disabled and invisible controls, do not have a <xref:System.Windows.Forms.Control.TabIndex%2A> property and are not included in the tab order. As a user presses the Tab key, these controls are skipped.
--->
-
 ## Programmatic
+
+The tab order of controls can be set through code:
 
 01. Set the `TabIndex` property to a numerical value.
 
@@ -66,6 +47,24 @@ Visual Studio has a Tab Order tool which works in the Visual Designer. Once star
     ```csharp
     Button1.TabIndex = 1;
     ```
+
+## Use Tab Order mode
+
+Visual Studio's Visual Designer provides an interactive way to set the <xref:System.Windows.Forms.Control.TabIndex%2A> property for controls. The **Tab Order** mode allows you to sequentially set the tab order of controls by clicking on them in the Visual Designer.
+
+01. In Visual Studio, on the **View** menu, select **Tab Order**.
+
+    This activates the tab-order selection mode on the form. A number (representing the `TabIndex` property) appears in the upper-left corner of each control.
+
+01. Click the controls sequentially to establish the tab order you want.
+
+    > [!NOTE]
+    > A control's place within the tab order can be set to any value greater than or equal to 0. When duplicates occur, the z-order of the two controls is evaluated and the control on top is tabbed to first. (The z-order is the visual layering of controls on a form along the form's z-axis [depth]. The z-order determines which controls are in front of other controls.) For more information on z-order, see [Layering Objects on Windows Forms](how-to-layer-objects-on-windows-forms.md).
+
+01. To finish, select **View** > **Tab Order** again.
+
+    > [!NOTE]
+    > Controls that can't be focused, such as disabled and invisible controls, aren't included in the tab order. As a user presses the <kbd>Tab</kbd> key, these controls are skipped.
 
 ## Remove a control from the tab order
 

@@ -16,7 +16,7 @@ helpviewer_keywords:
   - "property [Windows Forms], designer"
 ---
 
-# Guidelines to designing user controls (Windows Forms .NET)
+# Guidelines to designing user controls
 
 This article provides guidelines for creating user controls. We recommend that you follow these guidelines to make sure that you design a user control that's consistent with other Windows Forms controls.
 

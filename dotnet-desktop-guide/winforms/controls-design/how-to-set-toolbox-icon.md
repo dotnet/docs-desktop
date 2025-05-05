@@ -13,7 +13,7 @@ helpviewer_keywords:
   - "bitmaps [Windows Forms], custom controls"
 ---
 
-# Set the icon of a control in the Toolbox (Windows Forms .NET)
+# Set the icon of a control in the Toolbox
 
 Controls that you create always receive a generic icon for the **Toolbox** window in Visual Studio. However, when you change the icon, it adds a sense of professionalism to your control, and makes it stand out in the toolbox. This article teaches you how to set the icon for your control.
 

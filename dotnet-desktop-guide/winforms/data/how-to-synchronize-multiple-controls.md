@@ -12,7 +12,7 @@ helpviewer_keywords:
 ms.custom: devdivchpfy22
 ---
 
-# Synchronize multiple controls to the same data source (Windows Forms .NET)
+# Synchronize multiple controls to the same data source
 
 During the implementation of data binding in Windows Forms, multiple controls are bound to the same data source. In the following situations, it's necessary to ensure that the bound properties of the control remain synchronized with each other and the data source:
 
@@ -36,4 +36,4 @@ The example uses a <xref:System.Windows.Forms.BindingSource> to bind the data so
 
 - [Design great data sources with change notification](design-great-data-sources.md)
 - [Data Binding](overview.md)
-- [How to: Share Bound Data Across Forms Using the BindingSource Component](/dotnet/desktop/winforms/controls/how-to-share-bound-data-across-forms-using-the-bindingsource-component?view=netframeworkdesktop-4.8&preserve-view=true)
+- [How to: Share Bound Data Across Forms Using the BindingSource Component](../controls/how-to-share-bound-data-across-forms-using-the-bindingsource-component.md)

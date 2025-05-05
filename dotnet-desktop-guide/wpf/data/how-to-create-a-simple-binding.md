@@ -13,7 +13,7 @@ helpviewer_keywords:
 #customer intent: As a developer, I want to create a binding so that I can present information in a UI
 ---
 
-# How to create a data binding (WPF .NET)
+# How to create a data binding
 
 This article describes how to create a binding XAML. The example uses a data object that represents an employee at a company. This data object is bound to a XAML window that uses `TextBlock` controls to list the employee's details. You'll create a UI that looks like the following image:
 

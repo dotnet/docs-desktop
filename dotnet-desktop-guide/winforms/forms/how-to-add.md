@@ -7,7 +7,7 @@ helpviewer_keywords:
   - "Windows Forms, create add form"
 ---
 
-# How to add a form to a project (Windows Forms .NET)
+# How to add a form to a project
 
 Add forms to your project with Visual Studio. When your app has multiple forms, you can choose which is the startup form for your app, and you can display multiple forms at the same time.
 

@@ -14,7 +14,7 @@ helpviewer_keywords:
 ---
 <!-- The acrolinx score was 92 on 11/04/2021-->
 
-# How to override metadata for a dependency property (WPF .NET)
+# How to override metadata for a dependency property
 
 When you derive from a class that defines a dependency property, you inherit the dependency property and its metadata. This article describes how you can override the metadata of an inherited dependency property by calling the <xref:System.Windows.DependencyProperty.OverrideMetadata%2A> method. Overriding the metadata lets you modify characteristics of the inherited dependency property to match subclass-specific requirements.
 

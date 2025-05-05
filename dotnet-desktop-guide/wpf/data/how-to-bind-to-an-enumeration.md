@@ -15,7 +15,7 @@ helpviewer_keywords:
   - "enumeration [WPF]"
 ---
 
-# How to bind to an enumeration (WPF .NET)
+# How to bind to an enumeration
 
 This example shows how to bind to an enumeration. Unfortunately there isn't a direct way to use an enumeration as a data binding source. However, the <xref:System.Enum.GetValues(System.Type)?displayProperty=nameWithType> method returns a collection of values. These values can be wrapped in an <xref:System.Windows.Data.ObjectDataProvider> and used as a data source.
 

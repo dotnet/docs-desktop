@@ -14,7 +14,7 @@ helpviewer_keywords:
   - "cursors [Windows Forms], setting"
   - "mouse [Windows Forms], cursors"
 ---
-# Manage mouse pointers (Windows Forms .NET)
+# Manage mouse pointers
 
 The mouse *pointer*, which is sometimes referred to as the cursor, is a bitmap that specifies a focus point on the screen for user input with the mouse. This article provides an overview of the mouse pointer in Windows Forms and describes some of the ways to modify and control the mouse pointer.
 

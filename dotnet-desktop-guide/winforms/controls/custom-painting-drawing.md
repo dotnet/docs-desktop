@@ -20,7 +20,7 @@ helpviewer_keywords:
   - "controls [Windows Forms], composite"
 ---
 
-# Painting and drawing on controls (Windows Forms .NET)
+# Painting and drawing on controls
 
 Custom painting of controls is one of the many complicated tasks made easy by Windows Forms. When authoring a custom control, you have many options available to handle your control's graphical appearance. If you're authoring a [custom control](../controls-design/overview.md#custom-controls), that is, a control that inherits from <xref:System.Windows.Forms.Control>, you use code to render its graphical representation.
 

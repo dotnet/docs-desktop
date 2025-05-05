@@ -15,7 +15,7 @@ helpviewer_keywords:
 
 ---
 
-# How to extend an existing control (Windows Forms .NET)
+# How to extend an existing control
 
 If you want to add more features to an existing control, you can create a control that inherits from an existing control. The new control contains all of the capabilities and visual aspect of the base control, but gives you opportunity to extend it. For example, if you created a control that inherits <xref:System.Windows.Forms.Button>, your new control would look and act exactly like a button. You could create new methods and properties to customize the behavior of the control. Some controls allow you to override the <xref:System.Windows.Forms.Control.OnPaint%2A> method to change the way the control looks.
 
@@ -23,9 +23,11 @@ If you want to add more features to an existing control, you can create a contro
 
 After creating a new project, use the Visual Studio templates to create a user control. The following steps demonstrate how to add a user control to your project:
 
-01. In Visual Studio, find the **Project Explorer** pane. Right-click on the project and choose **Add** > **Class**.
+01. In Visual Studio, find the **Project Explorer** pane. Right-click on the project and choose **Add** > **User Control**.
 
     :::image type="content" source="media/extend-existing/right-click.png" alt-text="Right-click the Visual Studio solution explorer to add a user control to a Windows Forms project":::
+
+01. Select the **Custom Control (Windows Forms)** item.
 
 01. In the **Name** box, type a name for your user control. Visual Studio provides a default and unique name that you may use. Next, press **Add**.
 

@@ -20,7 +20,7 @@ helpviewer_keywords:
   - "Explorer-style applications [Windows Forms], creating"
   - "Windows Forms controls, filling client area"
 ---
-# How to dock and anchor controls (Windows Forms .NET)
+# How to dock and anchor controls
 
 If you're designing a form that the user can resize at run time, the controls on your form should resize and reposition properly. Controls have two properties that help with automatic placement and sizing, when the form changes size.
 

@@ -12,7 +12,7 @@ helpviewer_keywords:
   - "binding sources [WPF]"
 ---
 
-# What are Binding sources? (WPF .NET)
+# What are Binding sources?
 
 In data binding, the binding source object refers to the object you obtain data from. This article discusses the types of objects you can use as the binding source, like .NET CLR objects, XML, and <xref:System.Windows.DependencyObject> objects.
 

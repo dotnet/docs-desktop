@@ -24,7 +24,7 @@ helpviewer_keywords:
   - "events [Windows Forms], mouse"
 ---
 
-# Using mouse events (Windows Forms .NET)
+# Using mouse events
 
 Most Windows Forms programs process mouse input by handling the mouse events. This article provides an overview of the mouse events, including details on when to use each event and the data that is supplied for each event. For more information about events in general, see [Events overview](../forms/events.md).
 

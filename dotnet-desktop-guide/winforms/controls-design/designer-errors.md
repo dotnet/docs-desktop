@@ -12,7 +12,7 @@ helpviewer_keywords:
   - "design-time errors [Windows Forms Designer]"
 ---
 
-# Windows Forms Designer error page (Windows Forms .NET)
+# Windows Forms Designer error page
 
 If the Windows Forms Designer fails to load due to an error in your code, in a third-party component, or elsewhere, an error page is presented instead of the designer. This error page doesn't necessarily signify a bug in the designer. The bug may be somewhere in the code-behind file. Errors appear in collapsible, yellow bars with a link to jump to the location of the error on the code page.
 

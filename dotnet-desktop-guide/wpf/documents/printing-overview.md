@@ -19,7 +19,7 @@ helpviewer_keywords:
 - "GDI print path [WPF]"
 ---
 
-# Printing documents overview (WPF .NET)
+# Printing documents overview
 
 With Microsoft .NET, application developers using Windows Presentation Foundation (WPF) have a rich set of printing and print system management APIs. The core of this functionality is the XML Paper Specification (XPS) file format and the XPS print path.
 

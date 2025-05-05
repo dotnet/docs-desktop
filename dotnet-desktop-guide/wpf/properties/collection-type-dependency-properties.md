@@ -15,7 +15,7 @@ helpviewer_keywords:
 ---
 <!-- The acrolinx score was 96 on 10/07/2021-->
 
-# Collection-type dependency properties (WPF .NET)
+# Collection-type dependency properties
 
 This article provides guidance and suggested patterns for implementing a dependency property that's a collection type.
 

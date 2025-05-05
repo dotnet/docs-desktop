@@ -13,7 +13,7 @@ dev_langs:
 #no-loc: [TextBlock, Setter]
 ---
 
-# How to create a style for a control (WPF .NET)
+# How to create a style for a control
 
 With Windows Presentation Foundation (WPF), you can customize an existing control's appearance with your own reusable style. Styles can be applied globally to your app, windows and pages, or directly to controls.
 

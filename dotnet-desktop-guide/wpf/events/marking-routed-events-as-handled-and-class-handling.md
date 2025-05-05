@@ -25,7 +25,7 @@ helpviewer_keywords:
 ---
 <!--The acrolinx score was 95 on 03/21/2022-->
 
-# Marking routed events as handled, and class handling (WPF .NET)
+# Marking routed events as handled, and class handling
 
 Although there's no absolute rule for when to mark a routed event as handled, consider marking an event as handled if your code responds to the event in a significant way. A routed event that's marked as handled will continue along its route, but only handlers that are configured to respond to handled events are invoked. Basically, marking a routed event as handled limits its visibility to listeners along the event route.
 
