@@ -1,7 +1,3 @@
-- name: Windows Presentation Foundation
-  href: index.md
-- name: Introduction to WPF
-  href: introduction-to-wpf.md
 - name: Get started
   href: getting-started/
 - name: Application development

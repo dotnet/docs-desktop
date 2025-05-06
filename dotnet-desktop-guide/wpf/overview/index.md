@@ -11,7 +11,7 @@ dev_langs:
 #Customer intent: As a developer, I want to understand the components of WPF so that I can understand the overall picture of WPF.
 ---
 
-# Desktop Guide
+# Windows Presentation Foundation Overview
 
 Welcome to the Desktop Guide for Windows Presentation Foundation (WPF), a UI framework that is resolution-independent and uses a vector-based rendering engine, built to take advantage of modern graphics hardware. WPF provides a comprehensive set of application-development features that include Extensible Application Markup Language (XAML), controls, data binding, layout, 2D and 3D graphics, animation, styles, templates, documents, media, text, and typography. WPF is part of .NET, so you can build applications that incorporate other elements of the .NET API.
 
