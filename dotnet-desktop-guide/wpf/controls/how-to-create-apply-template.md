@@ -83,7 +83,7 @@ This control template will be simple:
 
 ### TemplateBinding
 
-When you create a new <xref:System.Windows.Controls.ControlTemplate>, you still might want to use the public properties to change the control's appearance. The [TemplateBinding](../../../framework/wpf/advanced/templatebinding-markup-extension.md) markup extension binds a property of an element that is in the <xref:System.Windows.Controls.ControlTemplate> to a public property that is defined by the control. When you use a [TemplateBinding](../../../framework/wpf/advanced/templatebinding-markup-extension.md), you enable properties on the control to act as parameters to the template. That is, when a property on a control is set, that value is passed on to the element that has the [TemplateBinding](../../../framework/wpf/advanced/templatebinding-markup-extension.md) on it.
+When you create a new <xref:System.Windows.Controls.ControlTemplate>, you still might want to use the public properties to change the control's appearance. The [TemplateBinding](../advanced/templatebinding-markup-extension.md) markup extension binds a property of an element that is in the <xref:System.Windows.Controls.ControlTemplate> to a public property that is defined by the control. When you use a [TemplateBinding](../advanced/templatebinding-markup-extension.md), you enable properties on the control to act as parameters to the template. That is, when a property on a control is set, that value is passed on to the element that has the [TemplateBinding](../advanced/templatebinding-markup-extension.md) on it.
 
 ### Ellipse
 
@@ -161,7 +161,7 @@ Next, in the **\<Grid>** root of the control template, add the **\<VisualStateMa
 
 :::code language="xaml" source="./snippets/how-to-create-apply-template/csharp/Window6.xaml" id="VisualState":::
 
-Any animations defined in a **\<VisualState>** are applied when that state is triggered. Create animations for each state. Animations are put inside of a **\<Storyboard>** element. For more information about storyboards, see [Storyboards Overview](../../../framework/wpf/graphics-multimedia/storyboards-overview.md).
+Any animations defined in a **\<VisualState>** are applied when that state is triggered. Create animations for each state. Animations are put inside of a **\<Storyboard>** element. For more information about storyboards, see [Storyboards Overview](../graphics-multimedia/storyboards-overview.md).
 
 - Normal
 

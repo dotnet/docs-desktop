@@ -22,7 +22,7 @@ The following example shows an application definition file. The application defi
 
 :::code language="xaml" source="./snippets/xaml-resources-how-to-use-application/csharp/App.xaml" id="AppResources":::
 
-The following example shows a XAML page that references an application-level resource from the previous example. The resource is referenced with a [StaticResource Markup Extension](../../../framework/wpf/advanced/staticresource-markup-extension.md) that specifies the unique resource key for the resource. The resource "FancyBorder" isn't found in the scope of the current object and window, so the resource lookup continues beyond the current page and into application-level resources.
+The following example shows a XAML page that references an application-level resource from the previous example. The resource is referenced with a [StaticResource Markup Extension](../advanced/staticresource-markup-extension.md) that specifies the unique resource key for the resource. The resource "FancyBorder" isn't found in the scope of the current object and window, so the resource lookup continues beyond the current page and into application-level resources.
 
 :::code language="xaml" source="./snippets/xaml-resources-how-to-use-application/csharp/MainWindow.xaml" id="AppResourcesExample":::
 

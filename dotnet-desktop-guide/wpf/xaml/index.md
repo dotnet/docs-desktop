@@ -42,7 +42,7 @@ The following example shows how you might create a button as part of a UI. This 
 
 ## XAML syntax in brief
 
-The following sections explain the basic forms of XAML syntax, and give a short markup example. These sections aren't intended to provide complete information about each syntax form, such as how these are represented in the backing type system. For more information about the specifics of XAML syntax, see [XAML Syntax In Detail](../../../framework/wpf/advanced/xaml-syntax-in-detail.md).
+The following sections explain the basic forms of XAML syntax, and give a short markup example. These sections aren't intended to provide complete information about each syntax form, such as how these are represented in the backing type system. For more information about the specifics of XAML syntax, see [XAML Syntax In Detail](../advanced/xaml-syntax-in-detail.md).
 
 Much of the material in the next few sections will be elementary to you if you have previous familiarity with the XML language. This is a consequence of one of the basic design principles of XAML. The XAML language defines concepts of its own, but these concepts work within the XML language and markup form.
 
@@ -98,7 +98,7 @@ As a rule of the XAML language, the value of a XAML content property must be giv
   blue button</Button>
 ```
 
-For more information about the specifics of XAML syntax, see [XAML Syntax In Detail](../../../framework/wpf/advanced/xaml-syntax-in-detail.md).
+For more information about the specifics of XAML syntax, see [XAML Syntax In Detail](../advanced/xaml-syntax-in-detail.md).
 
 ### Text content
 
@@ -153,13 +153,13 @@ WPF XAML processors and serializers will ignore or drop all nonsignificant white
 
 Markup extensions are a XAML language concept. When used to provide the value of an attribute syntax, curly braces (`{` and `}`) indicate a markup extension usage. This usage directs the XAML processing to escape from the general treatment of attribute values as either a literal string or a string-convertible value.
 
-The most common markup extensions used in WPF app programming are [`Binding`](../../../framework/wpf/advanced/binding-markup-extension.md), used for data binding expressions, and the resource references [`StaticResource`](../../../framework/wpf/advanced/staticresource-markup-extension.md) and [`DynamicResource`](../../../framework/wpf/advanced/dynamicresource-markup-extension.md). By using markup extensions, you can use attribute syntax to provide values for properties even if that property doesn't support an attribute syntax in general. Markup extensions often use intermediate expression types to enable features such as deferring values or referencing other objects that are only present at run-time.
+The most common markup extensions used in WPF app programming are [`Binding`](../advanced/binding-markup-extension.md), used for data binding expressions, and the resource references [`StaticResource`](../advanced/staticresource-markup-extension.md) and [`DynamicResource`](../advanced/dynamicresource-markup-extension.md). By using markup extensions, you can use attribute syntax to provide values for properties even if that property doesn't support an attribute syntax in general. Markup extensions often use intermediate expression types to enable features such as deferring values or referencing other objects that are only present at run-time.
 
 For example, the following markup sets the value of the <xref:System.Windows.FrameworkElement.Style%2A> property using attribute syntax. The <xref:System.Windows.FrameworkElement.Style%2A> property takes an instance of the <xref:System.Windows.Style> class, which by default could not be instantiated by an attribute syntax string. But in this case, the attribute references a particular markup extension, `StaticResource`. When that markup extension is processed, it returns a reference to a style that was previously instantiated as a keyed resource in a resource dictionary.
 
 :::code language="xaml" source="./snippets/index/csharp/Window1.xaml" highlight="7-10,12" :::
 
-For a reference listing of all markup extensions for XAML implemented specifically in WPF, see [WPF XAML Extensions](../../../framework/wpf/advanced/wpf-xaml-extensions.md). For a reference listing of the markup extensions that are defined by System.Xaml and are more widely available for .NET XAML implementations, see [XAML Namespace (x:) Language Features](../../../xaml-services/namespace-language-features.md). For more information about markup extension concepts, see [Markup Extensions and WPF XAML](../../../framework/wpf/advanced/markup-extensions-and-wpf-xaml.md).
+For a reference listing of all markup extensions for XAML implemented specifically in WPF, see [WPF XAML Extensions](../advanced/wpf-xaml-extensions.md). For a reference listing of the markup extensions that are defined by System.Xaml and are more widely available for .NET XAML implementations, see [XAML Namespace (x:) Language Features](../../../xaml-services/namespace-language-features.md). For more information about markup extension concepts, see [Markup Extensions and WPF XAML](../advanced/markup-extensions-and-wpf-xaml.md).
 
 ## Type converters
 
@@ -176,7 +176,7 @@ The previous attribute syntax example is equivalent to the following more verbos
 > [!NOTE]
 > There are also a limited number of objects where the type conversion is the only public way to set a property to that type without involving a subclass, because the type itself doesn't have a parameterless constructor. An example is <xref:System.Windows.Input.Cursor>.
 
-For more information on type conversion, see [TypeConverters and XAML](../../../framework/wpf/advanced/typeconverters-and-xaml.md).
+For more information on type conversion, see [TypeConverters and XAML](../advanced/typeconverters-and-xaml.md).
 
 ## Root elements and namespaces
 
@@ -227,9 +227,9 @@ The following is a basic example of how custom prefixes work in XAML markup. The
 </Page>
 ```
 
-For more information about custom types in XAML, see [XAML and Custom Classes for WPF](../../../framework/wpf/advanced/xaml-and-custom-classes-for-wpf.md).
+For more information about custom types in XAML, see [XAML and Custom Classes for WPF](../advanced/xaml-and-custom-classes-for-wpf.md).
 
-For more information about how XML namespaces and code namespaces in assemblies are related, see [XAML Namespaces and Namespace Mapping for WPF XAML](../../../framework/wpf/advanced/xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md).
+For more information about how XML namespaces and code namespaces in assemblies are related, see [XAML Namespaces and Namespace Mapping for WPF XAML](../advanced/xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md).
 
 ## Events and XAML code-behind
 
@@ -247,9 +247,9 @@ Notice that the code-behind file uses the CLR namespace `ExampleNamespace` (the 
 > [!IMPORTANT]
 > In Visual Basic, the root namespace is implied for both the XAML and code-behind. Only nested namespaces are visible. This article demonstrates the C# project's XAML.
 
-For more information about requirements for code-behind programming in WPF, see [Code-behind, Event Handler, and Partial Class Requirements in WPF](../../../framework/wpf/advanced/code-behind-and-xaml-in-wpf.md#code-behind-event-handler-and-partial-class-requirements-in-wpf).
+For more information about requirements for code-behind programming in WPF, see [Code-behind, Event Handler, and Partial Class Requirements in WPF](../advanced/code-behind-and-xaml-in-wpf.md#code-behind-event-handler-and-partial-class-requirements-in-wpf).
 
-If you don't want to create a separate code-behind file, you can also inline your code in a XAML file. However, inline code is a less versatile technique that has substantial limitations. For more information, see [Code-Behind and XAML in WPF](../../../framework/wpf/advanced/code-behind-and-xaml-in-wpf.md).
+If you don't want to create a separate code-behind file, you can also inline your code in a XAML file. However, inline code is a less versatile technique that has substantial limitations. For more information, see [Code-Behind and XAML in WPF](../advanced/code-behind-and-xaml-in-wpf.md).
 
 ### Routed events
 
@@ -268,7 +268,7 @@ The following example sets <xref:System.Windows.FrameworkElement.Name%2A> on a <
 :::code language="csharp" source="./snippets/index/csharp/Window3.xaml.cs" id="RemoveControl" :::
 :::code language="vb" source="./snippets/index/vb/Window3.xaml.vb" id="RemoveControl" :::
 
-Just like a variable, the XAML name for an instance is governed by a concept of scope, so that names can be enforced to be unique within a certain scope that is predictable. The primary markup that defines a page denotes one unique XAML namescope, with the XAML namescope boundary being the root element of that page. However, other markup sources can interact with a page at run-time, such as styles or templates within styles, and such markup sources often have their own XAML namescopes that don't necessarily connect with the XAML namescope of the page. For more information on `x:Name` and XAML namescopes, see <xref:System.Windows.FrameworkElement.Name%2A>, [x:Name Directive](../../../xaml-services/xname-directive.md), or [WPF XAML Namescopes](../../../framework/wpf/advanced/wpf-xaml-namescopes.md).
+Just like a variable, the XAML name for an instance is governed by a concept of scope, so that names can be enforced to be unique within a certain scope that is predictable. The primary markup that defines a page denotes one unique XAML namescope, with the XAML namescope boundary being the root element of that page. However, other markup sources can interact with a page at run-time, such as styles or templates within styles, and such markup sources often have their own XAML namescopes that don't necessarily connect with the XAML namescope of the page. For more information on `x:Name` and XAML namescopes, see <xref:System.Windows.FrameworkElement.Name%2A>, [x:Name Directive](../../../xaml-services/xname-directive.md), or [WPF XAML Namescopes](../advanced/wpf-xaml-namescopes.md).
 
 ## Attached properties and attached events
 
@@ -312,9 +312,9 @@ The key to these scenarios is the <xref:System.Windows.Markup.XamlReader> class 
 
 ## See also
 
-- [XAML Syntax In Detail](../../../framework/wpf/advanced/xaml-syntax-in-detail.md)
-- [XAML and Custom Classes for WPF](../../../framework/wpf/advanced/xaml-and-custom-classes-for-wpf.md)
+- [XAML Syntax In Detail](../advanced/xaml-syntax-in-detail.md)
+- [XAML and Custom Classes for WPF](../advanced/xaml-and-custom-classes-for-wpf.md)
 - [XAML Namespace (x:) Language Features](../../../xaml-services/namespace-language-features.md)
-- [WPF XAML Extensions](../../../framework/wpf/advanced/wpf-xaml-extensions.md)
-- [Base Elements Overview](../../../framework/wpf/advanced/base-elements-overview.md)
-- [Trees in WPF](../../../framework/wpf/advanced/trees-in-wpf.md)
+- [WPF XAML Extensions](../advanced/wpf-xaml-extensions.md)
+- [Base Elements Overview](../advanced/base-elements-overview.md)
+- [Trees in WPF](../advanced/trees-in-wpf.md)

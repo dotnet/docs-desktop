@@ -56,4 +56,4 @@ items:
 - name: XAML with WPF
   href: xaml/index.md
 - name: XAML Language Reference
-  href: ../../xaml-services/
+  href: ../xaml-services/

@@ -36,13 +36,13 @@ Windows Presentation Foundation (WPF) data binding supports the following bindin
 
 - **XML objects**
 
-  You can bind to and run `XPath` queries on an <xref:System.Xml.XmlNode>, <xref:System.Xml.XmlDocument>, or <xref:System.Xml.XmlElement>. A convenient way to access XML data that is the binding source in markup is to use an <xref:System.Windows.Data.XmlDataProvider> object. For more information, see [Bind to XML Data Using an XMLDataProvider and XPath Queries (.NET Framework)](../../../framework/wpf/data/how-to-bind-to-xml-data-using-an-xmldataprovider-and-xpath-queries.md).
+  You can bind to and run `XPath` queries on an <xref:System.Xml.XmlNode>, <xref:System.Xml.XmlDocument>, or <xref:System.Xml.XmlElement>. A convenient way to access XML data that is the binding source in markup is to use an <xref:System.Windows.Data.XmlDataProvider> object. For more information, see [Bind to XML Data Using an XMLDataProvider and XPath Queries (.NET Framework)](../data/how-to-bind-to-xml-data-using-an-xmldataprovider-and-xpath-queries.md).
 
-  You can also bind to an <xref:System.Xml.Linq.XElement> or <xref:System.Xml.Linq.XDocument>, or bind to the results of queries run on objects of these types by using LINQ to XML. A convenient way to use LINQ to XML to access XML data that is the binding source in markup is to use an <xref:System.Windows.Data.ObjectDataProvider> object. For more information, see [Bind to XDocument, XElement, or LINQ for XML Query Results (.NET Framework)](../../../framework/wpf/data/how-to-bind-to-xdocument-xelement-or-linq-for-xml-query-results.md).
+  You can also bind to an <xref:System.Xml.Linq.XElement> or <xref:System.Xml.Linq.XDocument>, or bind to the results of queries run on objects of these types by using LINQ to XML. A convenient way to use LINQ to XML to access XML data that is the binding source in markup is to use an <xref:System.Windows.Data.ObjectDataProvider> object. For more information, see [Bind to XDocument, XElement, or LINQ for XML Query Results (.NET Framework)](../data/how-to-bind-to-xdocument-xelement-or-linq-for-xml-query-results.md).
 
 - **<xref:System.Windows.DependencyObject> objects**
 
-  You can bind to dependency properties of any <xref:System.Windows.DependencyObject>. For an example, see [Bind the Properties of Two Controls (.NET Framework)](../../../framework/wpf/data/how-to-bind-the-properties-of-two-controls.md).
+  You can bind to dependency properties of any <xref:System.Windows.DependencyObject>. For an example, see [Bind the Properties of Two Controls (.NET Framework)](../data/how-to-bind-the-properties-of-two-controls.md).
 
 ## Implement a binding source on your objects
 
@@ -50,7 +50,7 @@ Your CLR objects can become binding sources. There are a few things to be aware 
 
 ### Provide change notifications
 
-If you're using either <xref:System.Windows.Data.BindingMode.OneWay> or <xref:System.Windows.Data.BindingMode.TwoWay> binding, implement a suitable "property changed" notification mechanism. The recommended mechanism is for the CLR or dynamic class to implement the <xref:System.ComponentModel.INotifyPropertyChanged> interface. For more information, see [How to: Implement Property Change Notification (.NET Framework)](../../../framework/wpf/data/how-to-implement-property-change-notification.md).
+If you're using either <xref:System.Windows.Data.BindingMode.OneWay> or <xref:System.Windows.Data.BindingMode.TwoWay> binding, implement a suitable "property changed" notification mechanism. The recommended mechanism is for the CLR or dynamic class to implement the <xref:System.ComponentModel.INotifyPropertyChanged> interface. For more information, see [How to: Implement Property Change Notification (.NET Framework)](../data/how-to-implement-property-change-notification.md).
 
 There are two ways to notify a subscriber of a property change:
 
@@ -78,9 +78,9 @@ The following list provides other important points to note:
 
 ## Entire objects as a binding source
 
-You can use an entire object as a binding source. Specify a binding source by using the <xref:System.Windows.Data.Binding.Source%2A> or the <xref:System.Windows.FrameworkElement.DataContext%2A> property, and then provide a blank binding declaration: `{Binding}`. Scenarios in which this is useful include binding to objects that are of type string, binding to objects with multiple properties you're interested in, or binding to collection objects. For an example of binding to an entire collection object, see [How to Use the Master-Detail Pattern with Hierarchical Data (.NET Framework)](../../../framework/wpf/data/how-to-use-the-master-detail-pattern-with-hierarchical-data.md).
+You can use an entire object as a binding source. Specify a binding source by using the <xref:System.Windows.Data.Binding.Source%2A> or the <xref:System.Windows.FrameworkElement.DataContext%2A> property, and then provide a blank binding declaration: `{Binding}`. Scenarios in which this is useful include binding to objects that are of type string, binding to objects with multiple properties you're interested in, or binding to collection objects. For an example of binding to an entire collection object, see [How to Use the Master-Detail Pattern with Hierarchical Data (.NET Framework)](../data/how-to-use-the-master-detail-pattern-with-hierarchical-data.md).
 
-You may need to apply custom logic so that the data is meaningful to your bound target property. The custom logic may be in the form of a custom converter or a <xref:System.Windows.DataTemplate>. For more information about converters, see [Data conversion](index.md#data-conversion). For more information about data templates, see [Data Templating Overview (.NET Framework)](../../../framework/wpf/data/data-templating-overview.md).
+You may need to apply custom logic so that the data is meaningful to your bound target property. The custom logic may be in the form of a custom converter or a <xref:System.Windows.DataTemplate>. For more information about converters, see [Data conversion](index.md#data-conversion). For more information about data templates, see [Data Templating Overview (.NET Framework)](../data/data-templating-overview.md).
 
 ## Collection objects as a binding source
 
@@ -88,7 +88,7 @@ Often, the object you want to use as the binding source is a collection of custo
 
 You can enumerate over any collection that implements the <xref:System.Collections.IEnumerable> interface. However, to set up dynamic bindings so that insertions or deletions in the collection update the UI automatically, the collection must implement the <xref:System.Collections.Specialized.INotifyCollectionChanged> interface. This interface exposes an event that must be raised whenever the underlying collection changes.
 
-The <xref:System.Collections.ObjectModel.ObservableCollection%601> class is a built-in implementation of a data collection that exposes the <xref:System.Collections.Specialized.INotifyCollectionChanged> interface. The individual data objects within the collection must satisfy the requirements described in the preceding sections. For an example, see [How to Create and Bind to an ObservableCollection (.NET Framework)](../../../framework/wpf/data/how-to-create-and-bind-to-an-observablecollection.md). Before you implement your own collection, consider using <xref:System.Collections.ObjectModel.ObservableCollection%601> or one of the existing collection classes, such as <xref:System.Collections.Generic.List%601>, <xref:System.Collections.ObjectModel.Collection%601>, and <xref:System.ComponentModel.BindingList%601>, among many others.
+The <xref:System.Collections.ObjectModel.ObservableCollection%601> class is a built-in implementation of a data collection that exposes the <xref:System.Collections.Specialized.INotifyCollectionChanged> interface. The individual data objects within the collection must satisfy the requirements described in the preceding sections. For an example, see [How to Create and Bind to an ObservableCollection (.NET Framework)](../data/how-to-create-and-bind-to-an-observablecollection.md). Before you implement your own collection, consider using <xref:System.Collections.ObjectModel.ObservableCollection%601> or one of the existing collection classes, such as <xref:System.Collections.Generic.List%601>, <xref:System.Collections.ObjectModel.Collection%601>, and <xref:System.ComponentModel.BindingList%601>, among many others.
 
 When you specify a collection as a binding source, WPF doesn't bind directly to the collection. Instead, WPF actually binds to the collection's default view. For information about default views, see [Using a default view](index.md#using-a-default-view).
 
@@ -104,5 +104,5 @@ Unlike .NET Framework, .NET runs with full-trust security. All data binding runs
 - <xref:System.Windows.Data.XmlDataProvider>
 - [Data binding overview](index.md)
 - [Binding sources overview](binding-sources-overview.md)
-- [Overview of WPF data binding with LINQ to XML (.NET Framework)](../../../framework/wpf/data/wpf-data-binding-with-linq-to-xml-overview.md)
-- [Optimizing Performance: Data Binding (.NET Framework)](../../../framework/wpf/advanced/optimizing-performance-data-binding.md)
+- [Overview of WPF data binding with LINQ to XML (.NET Framework)](../data/wpf-data-binding-with-linq-to-xml-overview.md)
+- [Optimizing Performance: Data Binding (.NET Framework)](../advanced/optimizing-performance-data-binding.md)
