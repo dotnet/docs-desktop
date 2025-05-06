@@ -1,7 +1,9 @@
 name: "Compiler Warning/Error"
-description: A template to support auto generating documentation for a compiler warning or error.
+description: "A template to support auto generating documentation for a compiler warning or error."
 title: "[diagnostic]: "
-labels: Pri1,doc-idea
+labels:
+ - Pri1
+ - doc-idea
 assignees:
  - adegeo
 body:
@@ -21,7 +23,7 @@ body:
     id: technology
     attributes:
       label: Technology
-      description: Which desktop technology does this apply to?
+      description: "Which desktop technology does this apply to?"
       options:
         - WPF (Windows Presentation Foundation)
         - Windows Forms
@@ -43,7 +45,7 @@ body:
     id: type
     attributes:
       label: Default Reporting Scope
-      description: Is this considered an error or warning?
+      description: "Is this considered an error or warning?"
       options:
         - Error
         - Warning
@@ -54,7 +56,7 @@ body:
     id: version_introduced
     attributes:
       label: Version Introduced
-      description: What version of .NET was this introduced with? (ex: 8 or something like 10 Preview 3)
+      description: "What version of .NET was this introduced with? (ex: 8 or something like 10 Preview 3)"
     validations:
       required: true
 
