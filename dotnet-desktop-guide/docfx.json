@@ -17,18 +17,15 @@
       "breadcrumb_path": "/dotnet/desktop/breadcrumb/toc.json",
       "feedback_system": "GitHub",
       "feedback_github_repo": "dotnet/docs-desktop",
-      "feedback_product_url": "https://developercommunity.visualstudio.com/spaces/61/index.html",
+      "feedback_product_url": "https://developercommunity.visualstudio.com/VisualStudio",
       "author": "adegeo",
       "uhfHeaderId": "MSDocsHeader-DotNet",
       "ms.author": "adegeo"
     },
     "fileMetadata": {
-      "breadcrumb_path": {
-        "xaml-services/**/**.md": "/dotnet/desktop/xaml-services/breadcrumb/toc.json"
-      },
       "titleSuffix": {
         "winforms/**/**.md": "Windows Forms",
-        "wpf/**/**.md": "WPF .NET",
+        "wpf/**/**.md": "WPF",
         "xaml-services/**/*.md": "XAML"
       },
       "ms.subservice": {
