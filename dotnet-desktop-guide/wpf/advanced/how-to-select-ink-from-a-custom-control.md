@@ -1,5 +1,6 @@
 ---
 title: "How to: Select Ink from a Custom Control"
+description: Learn how adding an IncrementalLassoHitTester to a custom control enables users to select ink with a lasso tool.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
 dev_langs: 
@@ -10,7 +11,6 @@ helpviewer_keywords:
   - "ink [WPF], selecting from custom control"
   - "custom controls [WPF], ink selection"
 ms.assetid: 5f3a45c6-6d40-4017-9b47-933f134ceba3
-descriptions: Learn how adding an IncrementalLassoHitTester to a custom control enables users to select ink with a lasso tool.
 ---
 # How to: Select Ink from a Custom Control
 

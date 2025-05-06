@@ -18,7 +18,7 @@ ms.assetid: 66a3129d-9577-43eb-acbd-56c147282016
 ---
 # Collect Ink
 
-The [Windows Presentation Foundation](../index.md) platform collects digital ink as a core part of its functionality. This topic discusses methods for collection of ink in Windows Presentation Foundation (WPF).
+The Windows Presentation Foundation (WPF) platform collects digital ink as a core part of its functionality. This topic discusses methods for collection of ink in WPF.
 
 ## Prerequisites
 

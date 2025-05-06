@@ -35,4 +35,3 @@ The <xref:System.Windows.Ink.StrokeCollection.Save%2A> methods provide support f
 ## See also
 
 - <xref:System.Windows.Controls.InkCanvas>
-- [Windows Presentation Foundation](../index.md)

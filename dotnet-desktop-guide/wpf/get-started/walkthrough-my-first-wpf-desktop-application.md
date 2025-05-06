@@ -166,7 +166,7 @@ In this section, you'll add two pages and an image to the application.
    > [!TIP]
    > You can also set the **Source** property in the **Miscellaneous** category of the **Properties** window.
    >
-   > ![Source property in Properties window](./media/properties-source.png)
+   > ![Source property in Properties window](./media/walkthrough-my-first-wpf-desktop-application/properties-source.png)
 
 1. Add another new WPF page to the project, and name it *ExpenseReportPage.xaml*::
 
@@ -251,7 +251,7 @@ In this section, you create a single-column table with three rows and a 10-pixel
    > [!TIP]
    > You can also set the **Margin** values in the **Properties** window, under the **Layout** category:
    >
-   > ![Margin values in Properties window](./media/properties-margin.png)
+   > ![Margin values in Properties window](./media/walkthrough-my-first-wpf-desktop-application/properties-margin.png)
 
 2. Add the following XAML between the <xref:System.Windows.Controls.Grid> tags to create the row and column definitions:
 

@@ -18,7 +18,3 @@ This section discusses the use of digital ink in the WPF. Traditionally found on
 
  [Overviews](digital-ink-overviews.md)  
   [How-to Topics](digital-ink-how-to-topics.md)  
-  
-## Related Sections  
-
- [Windows Presentation Foundation](../index.md)
