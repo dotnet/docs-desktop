@@ -50,11 +50,11 @@ A high percentage of classes in Windows Presentation Foundation (WPF) are derive
   
 - Support for styling and storyboards. For more information, see <xref:System.Windows.Style> and [Storyboards Overview](../graphics-multimedia/storyboards-overview.md).  
   
-- Support for data binding. For more information, see [Data Binding Overview](../data/data-binding-overview.md).  
+- Support for data binding. For more information, see [Data Binding Overview](/dotnet/desktop/wpf/data/index).  
   
 - Support for dynamic resource references. For more information, see [XAML Resources](/dotnet/desktop-wpf/fundamentals/xaml-resources-define).  
   
-- Property value inheritance support, and other flags in the metadata that help report conditions about properties to framework services such as data binding, styles, or the framework implementation of layout. For more information, see [Framework Property Metadata](framework-property-metadata.md).  
+- Property value inheritance support, and other flags in the metadata that help report conditions about properties to framework services such as data binding, styles, or the framework implementation of layout. For more information, see [Framework Property Metadata](/dotnet/desktop/wpf/properties/framework-property-metadata).  
   
 - The concept of the logical tree. For more information, see [Trees in WPF](trees-in-wpf.md).  
   
@@ -70,11 +70,11 @@ A high percentage of classes in Windows Presentation Foundation (WPF) are derive
   
 - Support for styling and storyboards. For more information, see <xref:System.Windows.Style> and [Animation Overview](../graphics-multimedia/animation-overview.md).  
   
-- Support for data binding. For more information, see [Data Binding Overview](../data/data-binding-overview.md).  
+- Support for data binding. For more information, see [Data Binding Overview](/dotnet/desktop/wpf/data/index).  
   
 - Support for dynamic resource references. For more information, see [XAML Resources](/dotnet/desktop-wpf/fundamentals/xaml-resources-define).  
   
-- Property value inheritance support, and other flags in the metadata that help report conditions about properties to framework services like data binding, styles, or the framework implementation of layout. For more information, see [Framework Property Metadata](framework-property-metadata.md).  
+- Property value inheritance support, and other flags in the metadata that help report conditions about properties to framework services like data binding, styles, or the framework implementation of layout. For more information, see [Framework Property Metadata](/dotnet/desktop/wpf/properties/framework-property-metadata).  
   
 - You do not inherit access to layout system modifications (such as <xref:System.Windows.FrameworkElement.ArrangeOverride%2A>). Layout system implementations are only available on <xref:System.Windows.FrameworkElement>. However, you inherit an <xref:System.Windows.FrameworkElement.OnPropertyChanged%2A> override that can detect changes to properties that influence layout and report these to any content hosts.  
   
@@ -107,6 +107,6 @@ A high percentage of classes in Windows Presentation Foundation (WPF) are derive
 ## See also
 
 - <xref:System.Windows.Controls.Control>
-- [Dependency Properties Overview](dependency-properties-overview.md)
+- [Dependency Properties Overview](/dotnet/desktop/wpf/properties/dependency-properties-overview)
 - [Control Authoring Overview](../controls/control-authoring-overview.md)
 - [WPF Architecture](wpf-architecture.md)

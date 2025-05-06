@@ -19,7 +19,7 @@ This article describes how to create a binding XAML. The example uses a data obj
 
 :::image type="content" source="media/how-to-create-a-simple-binding/preview.png" alt-text="A WPF window that shows details about an employee, such as their first name, last name, title, hire date, and salary.":::
 
-To learn more about data binding, see [Data binding overview in WPF](data-binding-overview.md).
+To learn more about data binding, see [Data binding overview in WPF](/dotnet/desktop/wpf/data/index).
 
 ## Create a data object
 

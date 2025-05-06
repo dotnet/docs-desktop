@@ -19,7 +19,7 @@ This topic shows how to use <xref:System.Windows.Media.Animation.Storyboard> obj
 
 ## Prerequisites
 
-To understand this topic, you should be familiar with the different animation types and their basic features. For an introduction to animation, see the [Animation Overview](animation-overview.md). You should also know how to use attached properties. For more information about attached properties, see the [Attached Properties Overview](../advanced/attached-properties-overview.md).
+To understand this topic, you should be familiar with the different animation types and their basic features. For an introduction to animation, see the [Animation Overview](animation-overview.md). You should also know how to use attached properties. For more information about attached properties, see the [Attached Properties Overview](/dotnet/desktop/wpf/properties/attached-properties-overview).
 
 <a name="whatisatimeline"></a>
 

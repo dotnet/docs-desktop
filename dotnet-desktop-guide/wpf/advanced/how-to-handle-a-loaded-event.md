@@ -28,6 +28,6 @@ This example shows how to handle the <xref:System.Windows.FrameworkElement.Loade
 ## See also
 
 - <xref:System.Windows.FrameworkElement>
-- [Object Lifetime Events](object-lifetime-events.md)
-- [Routed Events Overview](routed-events-overview.md)
+- [Object Lifetime Events](/dotnet/desktop/wpf/events/object-lifetime-events)
+- [Routed Events Overview](/dotnet/desktop/wpf/events/routed-events-overview)
 - [How-to Topics](base-elements-how-to-topics.md)

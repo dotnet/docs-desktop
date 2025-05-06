@@ -39,7 +39,7 @@ The first step is to create the project for the WPF application.
 
 ### To create the WPF project
 
-Create a new WPF Application project in Visual C# named `D3DHost`. For more information, see [Walkthrough: My first WPF desktop application](../getting-started/walkthrough-my-first-wpf-desktop-application.md).
+Create a new WPF Application project in Visual C# named `D3DHost`. For more information, see [Walkthrough: My first WPF desktop application](/dotnet/desktop/wpf/get-started/walkthrough-my-first-wpf-desktop-application).
 
 MainWindow.xaml opens in the WPF Designer.
 

@@ -15,10 +15,10 @@ ms.assetid: e16dd710-1530-4462-81a2-43719b973970
 
 ## In This Section  
 
- [Implement a Dependency Property](how-to-implement-a-dependency-property.md)  
+ [Implement a Dependency Property](/dotnet/desktop/wpf/properties/how-to-implement-a-dependency-property)  
  [Add an Owner Type for a Dependency Property](how-to-add-an-owner-type-for-a-dependency-property.md)  
- [Register an Attached Property](how-to-register-an-attached-property.md)  
- [Override Metadata for a Dependency Property](how-to-override-metadata-for-a-dependency-property.md)  
+ [Register an Attached Property](/dotnet/desktop/wpf/properties/how-to-register-an-attached-property)  
+ [Override Metadata for a Dependency Property](/dotnet/desktop/wpf/properties/how-to-override-metadata-for-a-dependency-property)  
   
 ## Reference  
 

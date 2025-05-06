@@ -68,5 +68,5 @@ Specifies which XML namespace prefixes encountered in a markup file may be ignor
 
 - <xref:System.Windows.Markup.XamlReader>
 - [PresentationOptions:Freeze Attribute](presentationoptions-freeze-attribute.md)
-- [XAML in WPF](xaml-in-wpf.md)
+- [XAML in WPF](/dotnet/desktop/wpf/xaml/index)
 - [Documents in WPF](documents-in-wpf.md)

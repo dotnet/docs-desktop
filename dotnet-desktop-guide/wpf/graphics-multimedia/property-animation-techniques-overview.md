@@ -132,4 +132,4 @@ This topic describes the different approaches for animating properties: storyboa
 - [Animation Overview](animation-overview.md)
 - [Storyboards Overview](storyboards-overview.md)
 - [Animation and Timing System Overview](animation-and-timing-system-overview.md)
-- [Dependency Properties Overview](../advanced/dependency-properties-overview.md)
+- [Dependency Properties Overview](/dotnet/desktop/wpf/properties/dependency-properties-overview)

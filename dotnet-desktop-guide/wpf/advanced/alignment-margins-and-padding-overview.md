@@ -152,7 +152,7 @@ The <xref:System.Windows.FrameworkElement> class exposes several properties that
 
  Positioning properties defined by the <xref:System.Windows.FrameworkElement> class enable fine control of element placement within WPF applications. You now have several techniques you can use to better position elements using WPF.  
   
- Additional resources are available that explain WPF layout in greater detail. The [Panels Overview](../controls/panels-overview.md) topic contains more detail about the various <xref:System.Windows.Controls.Panel> elements. The topic [Walkthrough: My first WPF desktop application](../getting-started/walkthrough-my-first-wpf-desktop-application.md) introduces advanced techniques that use layout elements to position components and bind their actions to data sources.  
+ Additional resources are available that explain WPF layout in greater detail. The [Panels Overview](../controls/panels-overview.md) topic contains more detail about the various <xref:System.Windows.Controls.Panel> elements. The topic [Walkthrough: My first WPF desktop application](/dotnet/desktop/wpf/get-started/walkthrough-my-first-wpf-desktop-application) introduces advanced techniques that use layout elements to position components and bind their actions to data sources.  
   
 ## See also
 

@@ -87,4 +87,4 @@ Network administrators often field complaints from users about print jobs that d
 - <xref:System.Printing.PrintQueue>
 - [& Operator (C# Reference)](/dotnet/csharp/language-reference/operators/bitwise-and-shift-operators#logical-and-operator-)
 - [Documents in WPF](documents-in-wpf.md)
-- [Printing Overview](printing-overview.md)
+- [Printing Overview](/dotnet/desktop/wpf/documents/printing-overview)

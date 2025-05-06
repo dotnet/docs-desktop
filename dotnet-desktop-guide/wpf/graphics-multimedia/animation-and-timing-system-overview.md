@@ -16,7 +16,7 @@ This topic describes how the timing system uses the animation, <xref:System.Wind
 
 ## Prerequisites  
 
- To understand this topic, you should be able to use WPF animations to animate properties, as described in the [Animation Overview](animation-overview.md). It also helps to be familiar with dependency properties; for more information, see the [Dependency Properties Overview](../advanced/dependency-properties-overview.md).  
+ To understand this topic, you should be able to use WPF animations to animate properties, as described in the [Animation Overview](animation-overview.md). It also helps to be familiar with dependency properties; for more information, see the [Dependency Properties Overview](/dotnet/desktop/wpf/properties/dependency-properties-overview).  
   
 <a name="timelinesandclocks"></a>
 

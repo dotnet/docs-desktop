@@ -33,4 +33,4 @@ A resource is an object that can be reused in different places in your applicati
   
 ## Related Sections  
 
- [XAML in WPF](xaml-in-wpf.md)
+ [XAML in WPF](/dotnet/desktop/wpf/xaml/index)

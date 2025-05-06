@@ -136,7 +136,7 @@ ms.assetid: db086ae4-70bb-4862-95db-2eaca5216bc3
 
 ## Improved Support for Establishing a Weak Reference to an Event  
 
- Implementing the weak event pattern is now easier because subscribers to events can participate in it without implementing an extra interface.  The generic <xref:System.Windows.WeakEventManager> class also enables subscribers to participate in the weak event pattern if a dedicated <xref:System.Windows.WeakEventManager> does not exist for a certain event.  For more information, see [Weak Event Patterns](../advanced/weak-event-patterns.md).  
+ Implementing the weak event pattern is now easier because subscribers to events can participate in it without implementing an extra interface.  The generic <xref:System.Windows.WeakEventManager> class also enables subscribers to participate in the weak event pattern if a dedicated <xref:System.Windows.WeakEventManager> does not exist for a certain event.  For more information, see [Weak Event Patterns](/dotnet/desktop/wpf/events/weak-event-patterns).  
   
 <a name="async"></a>
 

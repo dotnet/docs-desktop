@@ -64,5 +64,5 @@ The Microsoft Windows [Print Schema](/windows/win32/printdocs/printschema) inclu
 - <xref:System.Printing.PrintQueue>
 - <xref:System.Printing.PrintQueue.GetPrintCapabilities%2A>
 - [Documents in WPF](documents-in-wpf.md)
-- [Printing Overview](printing-overview.md)
+- [Printing Overview](/dotnet/desktop/wpf/documents/printing-overview)
 - [Print Schema](/windows/win32/printdocs/printschema)

@@ -29,7 +29,7 @@ Views allow the same data collection to be viewed in different ways, depending o
   
 ## See also
 
-- [Data Binding Overview](data-binding-overview.md)
+- [Data Binding Overview](/dotnet/desktop/wpf/data/index)
 - [Sort Data in a View](how-to-sort-data-in-a-view.md)
 - [Filter Data in a View](how-to-filter-data-in-a-view.md)
 - [Sort and Group Data Using a View in XAML](how-to-sort-and-group-data-using-a-view-in-xaml.md)

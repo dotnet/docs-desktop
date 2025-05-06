@@ -78,5 +78,5 @@ Defines and references keys for resources that are loaded from external assembli
 - <xref:System.Windows.ComponentResourceKey>
 - <xref:System.Windows.Controls.ControlTemplate>
 - [Control Authoring Overview](../controls/control-authoring-overview.md)
-- [XAML in WPF](xaml-in-wpf.md)
+- [XAML in WPF](/dotnet/desktop/wpf/xaml/index)
 - [Markup Extensions and WPF XAML](markup-extensions-and-wpf-xaml.md)

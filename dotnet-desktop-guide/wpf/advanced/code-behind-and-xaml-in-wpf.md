@@ -28,7 +28,7 @@ ms.assetid: 9df6d3c9-aed3-471c-af36-6859b19d999f
 
 ## Prerequisites  
 
- This topic assumes that you have read the [XAML in WPF](xaml-in-wpf.md) and have some basic knowledge of the CLR and object-oriented programming.  
+ This topic assumes that you have read the [XAML in WPF](/dotnet/desktop/wpf/xaml/index) and have some basic knowledge of the CLR and object-oriented programming.  
   
 <a name="codebehind_and_the_xaml_language"></a>
 
@@ -48,7 +48,7 @@ ms.assetid: 9df6d3c9-aed3-471c-af36-6859b19d999f
   
 - The handler must match the delegate for the appropriate event in the backing type system.  
   
-- For the Microsoft Visual Basic language specifically, you can use the language-specific `Handles` keyword to associate handlers with instances and events in the handler declaration, instead of attaching handlers with attributes in XAML. However, this technique does have some limitations because the `Handles` keyword cannot support all of the specific features of the WPF event system, such as certain routed event scenarios or attached events. For details, see [Visual Basic and WPF Event Handling](visual-basic-and-wpf-event-handling.md).  
+- For the Microsoft Visual Basic language specifically, you can use the language-specific `Handles` keyword to associate handlers with instances and events in the handler declaration, instead of attaching handlers with attributes in XAML. However, this technique does have some limitations because the `Handles` keyword cannot support all of the specific features of the WPF event system, such as certain routed event scenarios or attached events. For details, see [Visual Basic and WPF Event Handling](/dotnet/desktop/wpf/events/visual-basic-and-wpf-event-handling).  
   
 <a name="x_Code"></a>
 
@@ -66,7 +66,7 @@ ms.assetid: 9df6d3c9-aed3-471c-af36-6859b19d999f
   
 ## See also
 
-- [XAML in WPF](xaml-in-wpf.md)
+- [XAML in WPF](/dotnet/desktop/wpf/xaml/index)
 - [x:Code Intrinsic XAML Type](/dotnet/desktop/xaml-services/xcode-intrinsic-xaml-type)
 - [Building a WPF Application](../app-development/building-a-wpf-application-wpf.md)
 - [XAML Syntax In Detail](xaml-syntax-in-detail.md)

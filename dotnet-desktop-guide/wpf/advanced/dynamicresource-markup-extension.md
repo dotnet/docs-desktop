@@ -43,7 +43,7 @@ Provides a value for any XAML property attribute by deferring that value to be a
  A `DynamicResource` will create a temporary expression during the initial compilation and thus defer lookup for resources until the requested resource value is actually required in order to construct an object. This may potentially be after the XAML page is loaded. The resource value will be found based on key search against all active resource dictionaries starting from the current page scope, and is substituted for the placeholder expression from compilation.  
   
 > [!IMPORTANT]
-> In terms of dependency property precedence, a `DynamicResource` expression is equivalent to the position where the dynamic resource reference is applied. If you set a local value for a property that previously had a `DynamicResource` expression as the local value, the `DynamicResource` is completely removed. For details, see [Dependency Property Value Precedence](dependency-property-value-precedence.md).  
+> In terms of dependency property precedence, a `DynamicResource` expression is equivalent to the position where the dynamic resource reference is applied. If you set a local value for a property that previously had a `DynamicResource` expression as the local value, the `DynamicResource` is completely removed. For details, see [Dependency Property Value Precedence](/dotnet/desktop/wpf/properties/dependency-property-value-precedence).  
   
  Certain resource access scenarios are particularly appropriate for `DynamicResource` as opposed to a [StaticResource Markup Extension](staticresource-markup-extension.md). See [XAML Resources](/dotnet/desktop-wpf/fundamentals/xaml-resources-define) for a discussion about the relative merits and performance implications of `DynamicResource` and `StaticResource`.  
   
@@ -74,9 +74,9 @@ Provides a value for any XAML property attribute by deferring that value to be a
 ## See also
 
 - [XAML Resources](/dotnet/desktop-wpf/fundamentals/xaml-resources-define)
-- [Resources and Code](resources-and-code.md)
+- [Resources and Code](/dotnet/desktop/wpf/systems/xaml-resources-and-code)
 - [x:Key Directive](/dotnet/desktop/xaml-services/xkey-directive)
-- [XAML in WPF](xaml-in-wpf.md)
+- [XAML in WPF](/dotnet/desktop/wpf/xaml/index)
 - [Markup Extensions and WPF XAML](markup-extensions-and-wpf-xaml.md)
 - [StaticResource Markup Extension](staticresource-markup-extension.md)
 - [Markup Extensions and WPF XAML](markup-extensions-and-wpf-xaml.md)

@@ -102,7 +102,7 @@ In the following example, the first <xref:System.Windows.Controls.TextBlock> in 
 </ListBox>
 ```
 
-Describing data binding as a concept is not covered here, see [Data Binding Overview](../data/data-binding-overview.md).
+Describing data binding as a concept is not covered here, see [Data Binding Overview](/dotnet/desktop/wpf/data/index).
 
 In the WPF XAML processor implementation, the handling for this markup extension is defined by the <xref:System.Windows.Data.RelativeSource> class.
 
@@ -112,8 +112,8 @@ In the WPF XAML processor implementation, the handling for this markup extension
 
 - <xref:System.Windows.Data.Binding>
 - [Styling and Templating](../controls/styles-templates-overview.md)
-- [XAML in WPF](xaml-in-wpf.md)
+- [XAML in WPF](/dotnet/desktop/wpf/xaml/index)
 - [Markup Extensions and WPF XAML](markup-extensions-and-wpf-xaml.md)
-- [Data Binding Overview](../data/data-binding-overview.md)
+- [Data Binding Overview](/dotnet/desktop/wpf/data/index)
 - [Binding Declarations Overview](../data/binding-declarations-overview.md)
 - [x:Type Markup Extension](/dotnet/desktop/xaml-services/xtype-markup-extension)

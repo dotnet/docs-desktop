@@ -22,7 +22,7 @@ Windows Presentation Foundation (WPF) provides a rich environment for creating a
 
 ## Requirements  
 
- This topic assumes a basic familiarity with both WPF and Windows API programming. For a basic introduction to WPF programming, see [Getting Started](../getting-started/index.md). For an introduction to Windows API programming, see any of the numerous books on the subject, in particular *Programming Windows* by Charles Petzold.  
+ This topic assumes a basic familiarity with both WPF and Windows API programming. For a basic introduction to WPF programming, see [Getting Started](/dotnet/desktop/wpf/get-started/create-app-visual-studio). For an introduction to Windows API programming, see any of the numerous books on the subject, in particular *Programming Windows* by Charles Petzold.  
   
  Because the sample that accompanies this topic is implemented in C#, it makes use of Platform Invocation Services (PInvoke) to access the Windows API. Some familiarity with PInvoke is helpful but not essential.  
   
@@ -172,4 +172,4 @@ Windows Presentation Foundation (WPF) provides a rich environment for creating a
 
 - <xref:System.Windows.Interop.HwndHost>
 - [WPF and Win32 Interoperation](wpf-and-win32-interoperation.md)
-- [Walkthrough: My first WPF desktop application](../getting-started/walkthrough-my-first-wpf-desktop-application.md)
+- [Walkthrough: My first WPF desktop application](/dotnet/desktop/wpf/get-started/walkthrough-my-first-wpf-desktop-application)

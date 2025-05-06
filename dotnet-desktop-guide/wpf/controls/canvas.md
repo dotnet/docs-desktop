@@ -39,6 +39,6 @@ ms.assetid: fdb390e9-1bba-4b5f-87fe-c3bc246fa7e9
 
  [Layout](../advanced/layout.md)  
   
- [Walkthrough: My first WPF desktop application](../getting-started/walkthrough-my-first-wpf-desktop-application.md)  
+ [Walkthrough: My first WPF desktop application](/dotnet/desktop/wpf/get-started/walkthrough-my-first-wpf-desktop-application)  
   
  [ScrollViewer Overview](scrollviewer-overview.md)

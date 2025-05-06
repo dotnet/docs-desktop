@@ -44,6 +44,6 @@ The topics in this section describe how to position elements using the <xref:Sys
 
  [Layout](../advanced/layout.md)  
   
- [Walkthrough: My first WPF desktop application](../getting-started/walkthrough-my-first-wpf-desktop-application.md)  
+ [Walkthrough: My first WPF desktop application](/dotnet/desktop/wpf/get-started/walkthrough-my-first-wpf-desktop-application)  
   
  [ScrollViewer Overview](scrollviewer-overview.md)

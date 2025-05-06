@@ -5,10 +5,10 @@ items:
   - name: WPF Architecture
     href: wpf-architecture.md
   - name: XAML in WPF
-    href: xaml-in-wpf.md
+    href: /dotnet/desktop/wpf/xaml/index
     items:
     - name: XAML Overview (WPF)
-      href: xaml-overview.md
+      href: /dotnet/desktop/wpf/xaml/index
     - name: XAML Syntax In Detail
       href: xaml-syntax-in-detail.md
     - name: Code-Behind and XAML in WPF

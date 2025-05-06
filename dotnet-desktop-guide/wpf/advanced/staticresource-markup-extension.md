@@ -68,7 +68,7 @@ Provides a value for any XAML property attribute by looking up a reference to an
 ## See also
 
 - [Styling and Templating](../controls/styles-templates-overview.md)
-- [XAML in WPF](xaml-in-wpf.md)
+- [XAML in WPF](/dotnet/desktop/wpf/xaml/index)
 - [Markup Extensions and WPF XAML](markup-extensions-and-wpf-xaml.md)
 - [XAML Resources](/dotnet/desktop-wpf/fundamentals/xaml-resources-define)
-- [Resources and Code](resources-and-code.md)
+- [Resources and Code](/dotnet/desktop/wpf/systems/xaml-resources-and-code)

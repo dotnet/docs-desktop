@@ -131,7 +131,7 @@ This topic introduces the concept of markup extensions for XAML, including their
   
 ## See also
 
-- [XAML in WPF](xaml-in-wpf.md)
+- [XAML in WPF](/dotnet/desktop/wpf/xaml/index)
 - [XAML Namespace (x:) Language Features](/dotnet/desktop/xaml-services/namespace-language-features)
 - [WPF XAML Extensions](wpf-xaml-extensions.md)
 - [StaticResource Markup Extension](staticresource-markup-extension.md)

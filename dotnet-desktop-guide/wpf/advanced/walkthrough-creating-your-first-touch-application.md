@@ -25,13 +25,13 @@ WPF enables applications to respond to touch. For example, you can interact with
   
 - A device that accepts touch input, such as a touchscreen, that supports Windows Touch.  
   
- Additionally, you should have a basic understanding of how to create an application in WPF, especially how to subscribe to and handle an event. For more information, see [Walkthrough: My first WPF desktop application](../getting-started/walkthrough-my-first-wpf-desktop-application.md).  
+ Additionally, you should have a basic understanding of how to create an application in WPF, especially how to subscribe to and handle an event. For more information, see [Walkthrough: My first WPF desktop application](/dotnet/desktop/wpf/get-started/walkthrough-my-first-wpf-desktop-application).  
   
 ## Creating the Application  
   
 #### To create the application  
   
-1. Create a new WPF Application project in Visual Basic or Visual C# named `BasicManipulation`. For more information, see [Walkthrough: My first WPF desktop application](../getting-started/walkthrough-my-first-wpf-desktop-application.md).  
+1. Create a new WPF Application project in Visual Basic or Visual C# named `BasicManipulation`. For more information, see [Walkthrough: My first WPF desktop application](/dotnet/desktop/wpf/get-started/walkthrough-my-first-wpf-desktop-application).  
   
 2. Replace the contents of MainWindow.xaml with the following XAML.  
   

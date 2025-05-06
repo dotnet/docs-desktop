@@ -39,7 +39,7 @@ This topic further explains the presence and purpose of the two XAML namespace m
   
  The relationship between these declarations is that the `x:` prefix mapping supports the intrinsics that are part of the XAML language definition, and WPF is one implementation that uses XAML as a language and defines a vocabulary of its objects for XAML. Because the WPF vocabulary's usages will be far more common than the XAML intrinsics usages, the WPF vocabulary is mapped as the default.  
   
- The `x:` prefix convention for mapping the XAML language intrinsics support is followed by project templates, sample code, and the documentation of language features within this SDK. The XAML namespace defines many commonly-used features that are necessary even for basic WPF  applications. For instance, in order to join any code-behind to a XAML file through a partial class, you must name that class as the `x:Class` attribute in the root element of the relevant XAML file. Or, any element as defined in a XAML page that you wish to access as a keyed resource should have the `x:Key` attribute set on the element in question. For more information on these and other aspects of XAML see [XAML in WPF](xaml-in-wpf.md) or [XAML Syntax In Detail](xaml-syntax-in-detail.md).  
+ The `x:` prefix convention for mapping the XAML language intrinsics support is followed by project templates, sample code, and the documentation of language features within this SDK. The XAML namespace defines many commonly-used features that are necessary even for basic WPF  applications. For instance, in order to join any code-behind to a XAML file through a partial class, you must name that class as the `x:Class` attribute in the root element of the relevant XAML file. Or, any element as defined in a XAML page that you wish to access as a keyed resource should have the `x:Key` attribute set on the element in question. For more information on these and other aspects of XAML see [XAML in WPF](/dotnet/desktop/wpf/xaml/index) or [XAML Syntax In Detail](xaml-syntax-in-detail.md).  
   
 <a name="Mapping_To_Custom_Classes_and_Assemblies"></a>
 
@@ -146,4 +146,4 @@ End Namespace
 ## See also
 
 - [Understanding XML Namespaces](/previous-versions/aa468565(v=msdn.10))
-- [XAML in WPF](xaml-in-wpf.md)
+- [XAML in WPF](/dotnet/desktop/wpf/xaml/index)

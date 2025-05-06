@@ -20,7 +20,7 @@ The topics in this section describe how to use data binding to bind elements to 
 - [Specify the Binding Source](how-to-specify-the-binding-source.md)
 - [Make Data Available for Binding in XAML](how-to-make-data-available-for-binding-in-xaml.md)
 - [Control When the TextBox Text Updates the Source](how-to-control-when-the-textbox-text-updates-the-source.md)
-- [Specify the Direction of the Binding](how-to-specify-the-direction-of-the-binding.md)
+- [Specify the Direction of the Binding](/dotnet/desktop/wpf/data/binding-declarations-overview#binding-direction)
 - [Bind to a Collection and Display Information Based on Selection](how-to-bind-to-a-collection-and-display-information-based-on-selection.md)
 - [Bind to an Enumeration](how-to-bind-to-an-enumeration.md)
 - [Bind the Properties of Two Controls](how-to-bind-the-properties-of-two-controls.md)
@@ -60,5 +60,5 @@ The topics in this section describe how to use data binding to bind elements to 
 
 ## Related sections
 
-- [Data binding in WPF](data-binding-overview.md)
+- [Data binding in WPF](/dotnet/desktop/wpf/data/index)
 - [Data binding performance](../advanced/optimizing-performance-data-binding.md)

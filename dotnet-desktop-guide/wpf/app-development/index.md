@@ -76,7 +76,7 @@ Windows Presentation Foundation (WPF) is a presentation framework that can be us
   
 - Tracking and interacting with the lifetime of a window.  
   
- For more information, see [WPF Windows Overview](wpf-windows-overview.md).  
+ For more information, see [WPF Windows Overview](/dotnet/desktop/wpf/windows/index).  
   
  <xref:System.Windows.Window> supports the ability to create a special type of window known as a dialog box. Both modal and modeless types of dialog boxes can be created.  
   
@@ -84,7 +84,7 @@ Windows Presentation Foundation (WPF) is a presentation framework that can be us
   
  A message box is a special type of dialog box for showing important textual information to users, and for asking simple Yes/No/OK/Cancel questions. You use the <xref:System.Windows.MessageBox> class to create and show message boxes.  
   
- For more information, see [Dialog Boxes Overview](dialog-boxes-overview.md).  
+ For more information, see [Dialog Boxes Overview](/dotnet/desktop/wpf/windows/dialog-boxes-overview).  
   
 <a name="Navigation"></a>
 
@@ -139,5 +139,5 @@ Windows Presentation Foundation (WPF) is a presentation framework that can be us
 |[Navigation Overview](navigation-overview.md)|Provides an overview of managing navigation between pages of your application.|  
 |[Hosting](hosting-wpf-applications.md)|Provides an overview of XAML browser applications (XBAPs).|  
 |[Build and Deploy](building-and-deploying-wpf-applications.md)|Describes how to build and deploy your WPF application.|  
-|[Introduction to WPF in Visual Studio](../getting-started/introduction-to-wpf-in-vs.md)|Describes the main features of WPF.|  
-|[Walkthrough: My first WPF desktop application](../getting-started/walkthrough-my-first-wpf-desktop-application.md)|A walkthrough that shows how to create a WPF application using page navigation, layout, controls, images, styles, and binding.|
+|[Introduction to WPF in Visual Studio](/dotnet/desktop/wpf/get-started/create-app-visual-studio)|Describes the main features of WPF.|  
+|[Walkthrough: My first WPF desktop application](/dotnet/desktop/wpf/get-started/walkthrough-my-first-wpf-desktop-application)|A walkthrough that shows how to create a WPF application using page navigation, layout, controls, images, styles, and binding.|

@@ -36,7 +36,7 @@ ms.assetid: 67cce290-ca26-4c41-a797-b68aabc45479
 ---
 # XAML Syntax In Detail
 
-This topic defines the terms that are used to describe the elements of XAML syntax. These terms are used frequently throughout the remainder of this documentation, both for WPF documentation specifically and for the other frameworks that use XAML or the basic XAML concepts enabled by the XAML language support at the System.Xaml level. This topic expands on the basic terminology introduced in the topic [XAML in WPF](xaml-in-wpf.md).  
+This topic defines the terms that are used to describe the elements of XAML syntax. These terms are used frequently throughout the remainder of this documentation, both for WPF documentation specifically and for the other frameworks that use XAML or the basic XAML concepts enabled by the XAML language support at the System.Xaml level. This topic expands on the basic terminology introduced in the topic [XAML in WPF](/dotnet/desktop/wpf/xaml/index).  
 
 <a name="the_xaml_language_specification"></a>
 
@@ -142,7 +142,7 @@ This topic defines the terms that are used to describe the elements of XAML synt
   
  Or, you can reference an attached property or attached event, independent of the containing object element. (Attached properties are discussed in an upcoming section.)  
   
- You can also name any event from any object that is accessible through the default namespace by using a *typeName*.*event* partially qualified name; this syntax supports attaching handlers for routed events where the handler is intended to handle events routing from child elements, but the parent element does not also have that event in its members table. This syntax resembles an attached event syntax, but the event here is not a true attached event. Instead, you are referencing an event with a qualified name. For more information, see [Routed Events Overview](routed-events-overview.md).  
+ You can also name any event from any object that is accessible through the default namespace by using a *typeName*.*event* partially qualified name; this syntax supports attaching handlers for routed events where the handler is intended to handle events routing from child elements, but the parent element does not also have that event in its members table. This syntax resembles an attached event syntax, but the event here is not a true attached event. Instead, you are referencing an event with a qualified name. For more information, see [Routed Events Overview](/dotnet/desktop/wpf/events/routed-events-overview).  
   
  For some scenarios, property names are sometimes provided as the value of an attribute, rather than the attribute name. That property name can also include qualifiers, such as the property specified in the form *ownerType*.*dependencyPropertyName*. This scenario is common when writing styles or templates in XAML. The processing rules for property names provided as an attribute value are different, and are governed by the type of the property being set or by the behaviors of particular WPF subsystems. For details, see [Styling and Templating](../controls/styles-templates-overview.md).  
   
@@ -290,7 +290,7 @@ This topic defines the terms that are used to describe the elements of XAML synt
 
 ## Attached Properties  
 
- Attached properties are a programming concept introduced in XAML whereby properties can be owned and defined by a particular type, but set as attributes or property elements on any element. The primary scenario that attached properties are intended for is to enable child elements in a markup structure to report information to a parent element without requiring an extensively shared object model across all elements. Conversely, attached properties can be used by parent elements to report information to child elements. For more information on the purpose of attached properties and how to create your own attached properties, see [Attached Properties Overview](attached-properties-overview.md).  
+ Attached properties are a programming concept introduced in XAML whereby properties can be owned and defined by a particular type, but set as attributes or property elements on any element. The primary scenario that attached properties are intended for is to enable child elements in a markup structure to report information to a parent element without requiring an extensively shared object model across all elements. Conversely, attached properties can be used by parent elements to report information to child elements. For more information on the purpose of attached properties and how to create your own attached properties, see [Attached Properties Overview](/dotnet/desktop/wpf/properties/attached-properties-overview).  
   
  Attached properties use a syntax that superficially resembles property element syntax, in that you also specify a *typeName*.*propertyName* combination. There are two important differences:  
   
@@ -354,9 +354,9 @@ This topic defines the terms that are used to describe the elements of XAML synt
   
 ## See also
 
-- [XAML in WPF](xaml-in-wpf.md)
+- [XAML in WPF](/dotnet/desktop/wpf/xaml/index)
 - [XAML Namespace (x:) Language Features](/dotnet/desktop/xaml-services/namespace-language-features)
 - [WPF XAML Extensions](wpf-xaml-extensions.md)
-- [Dependency Properties Overview](dependency-properties-overview.md)
+- [Dependency Properties Overview](/dotnet/desktop/wpf/properties/dependency-properties-overview)
 - [TypeConverters and XAML](typeconverters-and-xaml.md)
 - [XAML and Custom Classes for WPF](xaml-and-custom-classes-for-wpf.md)

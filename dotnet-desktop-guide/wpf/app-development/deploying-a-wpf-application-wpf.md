@@ -95,7 +95,7 @@ After Windows Presentation Foundation (WPF) applications are built, they need to
   
  Markup-only XAML pages can be installed to the local file system by using either XCopy or Windows Installer. These pages can be viewed using Internet Explorer or Windows Explorer.  
   
- For more information about XAML, see [XAML in WPF](../advanced/xaml-in-wpf.md).  
+ For more information about XAML, see [XAML in WPF](/dotnet/desktop/wpf/xaml/index).  
   
 <a name="Deploying_XAML_Browser_Applications"></a>
 

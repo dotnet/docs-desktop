@@ -48,4 +48,4 @@ Specifies which XAML elements should still have content processed by relevant pa
 ## See also
 
 - [mc:Ignorable Attribute](mc-ignorable-attribute.md)
-- [XAML in WPF](xaml-in-wpf.md)
+- [XAML in WPF](/dotnet/desktop/wpf/xaml/index)

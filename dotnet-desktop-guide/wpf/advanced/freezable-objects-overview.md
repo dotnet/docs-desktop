@@ -138,7 +138,7 @@ A class that derives from <xref:System.Windows.Freezable> gains the following fe
 
 - Easy cloning: the Freezable class has already implemented several methods that produce deep clones.
 
-A <xref:System.Windows.Freezable> is a type of <xref:System.Windows.DependencyObject>, and therefore uses the dependency property system. Your class properties don't have to be dependency properties, but using dependency properties will reduce the amount of code you have to write, because the <xref:System.Windows.Freezable> class was designed with dependency properties in mind. For more information about the dependency property system, see the [Dependency Properties Overview](dependency-properties-overview.md).
+A <xref:System.Windows.Freezable> is a type of <xref:System.Windows.DependencyObject>, and therefore uses the dependency property system. Your class properties don't have to be dependency properties, but using dependency properties will reduce the amount of code you have to write, because the <xref:System.Windows.Freezable> class was designed with dependency properties in mind. For more information about the dependency property system, see the [Dependency Properties Overview](/dotnet/desktop/wpf/properties/dependency-properties-overview).
 
 Every <xref:System.Windows.Freezable> subclass must override the <xref:System.Windows.Freezable.CreateInstanceCore%2A> method. If your class uses dependency properties for all its data, you're finished.
 
@@ -173,5 +173,5 @@ For an example of a custom <xref:System.Windows.Freezable> class, see the [Custo
 
 - <xref:System.Windows.Freezable>
 - [Custom Animation Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Animation/CustomAnimation)
-- [Dependency Properties Overview](dependency-properties-overview.md)
-- [Custom Dependency Properties](custom-dependency-properties.md)
+- [Dependency Properties Overview](/dotnet/desktop/wpf/properties/dependency-properties-overview)
+- [Custom Dependency Properties](/dotnet/desktop/wpf/properties/custom-dependency-properties)

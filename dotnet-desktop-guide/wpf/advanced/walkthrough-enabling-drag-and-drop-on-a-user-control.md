@@ -35,7 +35,7 @@ You need Visual Studio to complete this walkthrough.
 
  In this section, you will create the application infrastructure, which includes a main page with two panels and a <xref:System.Windows.Controls.TextBox>.
 
-1. Create a new WPF Application project in Visual Basic or Visual C# named `DragDropExample`. For more information, see [Walkthrough: My first WPF desktop application](../getting-started/walkthrough-my-first-wpf-desktop-application.md).
+1. Create a new WPF Application project in Visual Basic or Visual C# named `DragDropExample`. For more information, see [Walkthrough: My first WPF desktop application](/dotnet/desktop/wpf/get-started/walkthrough-my-first-wpf-desktop-application).
 
 2. Open MainWindow.xaml.
 
