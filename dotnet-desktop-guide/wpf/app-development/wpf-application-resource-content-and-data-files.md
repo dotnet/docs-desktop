@@ -51,7 +51,7 @@ Microsoft Windows applications often depend on files that contain non-executable
 - Your application data file needs to be localizable (see [WPF Globalization and Localization Overview](../advanced/wpf-globalization-and-localization-overview.md)).  
   
 > [!NOTE]
-> The resource files described in this section are different than the resource files described in [XAML Resources](/dotnet/desktop-wpf/fundamentals/xaml-resources-define) and different than the embedded or linked resources described in [Manage Application Resources (.NET)](/visualstudio/ide/managing-application-resources-dotnet).  
+> The resource files described in this section are different than the resource files described in [XAML Resources](../systems/xaml-resources-overview.md) and different than the embedded or linked resources described in [Manage Application Resources (.NET)](/visualstudio/ide/managing-application-resources-dotnet).  
   
 ### Configuring Resource Files  
 

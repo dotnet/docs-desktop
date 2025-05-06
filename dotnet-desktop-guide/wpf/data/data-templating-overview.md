@@ -25,7 +25,7 @@ The WPF data templating model provides you with great flexibility to define the 
 
  <xref:System.Windows.DataTemplate> is about the presentation of data and is one of the many features provided by the WPF styling and templating model. For an introduction of the WPF styling and templating model, such as how to use a <xref:System.Windows.Style> to set properties on controls, see the [Styling and Templating](../controls/styles-templates-overview.md) topic.
 
- In addition, it is important to understand `Resources`, which are essentially what enable objects such as <xref:System.Windows.Style> and <xref:System.Windows.DataTemplate> to be reusable. For more information on resources, see [XAML Resources](/dotnet/desktop-wpf/fundamentals/xaml-resources-define).
+ In addition, it is important to understand `Resources`, which are essentially what enable objects such as <xref:System.Windows.Style> and <xref:System.Windows.DataTemplate> to be reusable. For more information on resources, see [XAML Resources](../systems/xaml-resources-overview.md).
 
 <a name="DataTemplating_Basic"></a>
 

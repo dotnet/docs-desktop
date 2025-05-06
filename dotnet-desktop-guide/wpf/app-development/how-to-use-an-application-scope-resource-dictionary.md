@@ -45,5 +45,5 @@ Some resource types may automatically use a property defined by the type as an e
 
 - <xref:System.Windows.ResourceDictionary>
 - <xref:System.Windows.Application.Resources%2A>
-- [XAML Resources](/dotnet/desktop-wpf/fundamentals/xaml-resources-define)
+- [XAML Resources](../systems/xaml-resources-overview.md)
 - [Merged Resource Dictionaries](../systems/xaml-resources-merged-dictionaries.md)

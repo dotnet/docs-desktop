@@ -52,7 +52,7 @@ A high percentage of classes in Windows Presentation Foundation (WPF) are derive
   
 - Support for data binding. For more information, see [Data Binding Overview](../data/index.md).  
   
-- Support for dynamic resource references. For more information, see [XAML Resources](/dotnet/desktop-wpf/fundamentals/xaml-resources-define).  
+- Support for dynamic resource references. For more information, see [XAML Resources](../systems/xaml-resources-overview.md).  
   
 - Property value inheritance support, and other flags in the metadata that help report conditions about properties to framework services such as data binding, styles, or the framework implementation of layout. For more information, see [Framework Property Metadata](../properties/framework-property-metadata.md).  
   
@@ -72,7 +72,7 @@ A high percentage of classes in Windows Presentation Foundation (WPF) are derive
   
 - Support for data binding. For more information, see [Data Binding Overview](../data/index.md).  
   
-- Support for dynamic resource references. For more information, see [XAML Resources](/dotnet/desktop-wpf/fundamentals/xaml-resources-define).  
+- Support for dynamic resource references. For more information, see [XAML Resources](../systems/xaml-resources-overview.md).  
   
 - Property value inheritance support, and other flags in the metadata that help report conditions about properties to framework services like data binding, styles, or the framework implementation of layout. For more information, see [Framework Property Metadata](../properties/framework-property-metadata.md).  
   

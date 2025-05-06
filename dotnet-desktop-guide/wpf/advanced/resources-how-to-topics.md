@@ -35,4 +35,4 @@ The topics in this section describe how to use Windows Presentation Foundation (
   
 ## Related Sections  
 
- [XAML Resources](/dotnet/desktop-wpf/fundamentals/xaml-resources-define)
+ [XAML Resources](../systems/xaml-resources-overview.md)

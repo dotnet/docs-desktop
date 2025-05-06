@@ -48,7 +48,7 @@ When you implement a property on a class that derives from <xref:System.Windows.
 
 - Properties that support data binding. For more information about data binding dependency properties, see [Bind the properties of two controls](/dotnet/desktop/wpf/data/how-to-bind-the-properties-of-two-controls?view=netframeworkdesktop-4.8&preserve-view=true).
 
-- Properties that are settable through dynamic resource references. For more information, see [XAML resources](/dotnet/desktop-wpf/fundamentals/xaml-resources-define).
+- Properties that are settable through dynamic resource references. For more information, see [XAML resources](../systems/xaml-resources-overview.md).
 
 - Properties that automatically inherit their value from a parent element in the element tree. For this, you'll need to register using <xref:System.Windows.DependencyProperty.RegisterAttached%2A>, even if you also create a property wrapper for CLR access. For more information, see [Property value inheritance](property-value-inheritance.md).
 

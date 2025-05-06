@@ -16,7 +16,7 @@ ms.assetid: 62b88488-c08e-4804-b7de-a1c34fbe929c
 
 WPF allows you to share application resources so that you can support a consistent look or behavior across similar-typed elements. This topic provides a few recommendations in this area that can help you improve the performance of your applications.  
   
- For more information on resources, see [XAML Resources](/dotnet/desktop-wpf/fundamentals/xaml-resources-define).  
+ For more information on resources, see [XAML Resources](../systems/xaml-resources-overview.md).  
   
 ## Sharing resources  
 

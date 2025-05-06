@@ -53,7 +53,7 @@ This section is intended as a reference for Windows Presentation Foundation (WPF
 - [Using DrawingVisual Objects](../graphics-multimedia/using-drawingvisual-objects.md)
 - [Dependency Properties Overview](../properties/dependency-properties-overview.md)
 - [Freezable Objects Overview](freezable-objects-overview.md)
-- [XAML Resources](/dotnet/desktop-wpf/fundamentals/xaml-resources-define)
+- [XAML Resources](../systems/xaml-resources-overview.md)
 - [Documents in WPF](documents-in-wpf.md)
 - [Drawing Formatted Text](drawing-formatted-text.md)
 - [Typography in WPF](typography-in-wpf.md)
