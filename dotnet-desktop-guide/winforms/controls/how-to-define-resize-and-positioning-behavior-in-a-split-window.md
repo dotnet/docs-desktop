@@ -16,7 +16,7 @@ description: Learn how to define resize and positioning behavior in a split wind
 
 The panels of the <xref:System.Windows.Forms.SplitContainer> control lend themselves well to being resized and manipulated by users. However, there will be times when you will want to programmatically control the splitter—where it is positioned and to what degree it can be moved.  
   
- The <xref:System.Windows.Forms.SplitContainer.SplitterIncrement%2A> property and the other properties on the <xref:System.Windows.Forms.SplitContainer> control give you precise control over the behavior of your user interface to suit your needs. These properties are listed in the following table.  
+The <xref:System.Windows.Forms.SplitContainer.SplitterIncrement%2A> property and the other properties on the <xref:System.Windows.Forms.SplitContainer> control give you precise control over the behavior of your user interface to suit your needs. These properties are listed in the following table.  
   
 |Name|Description|  
 |----------|-----------------|  
@@ -24,7 +24,7 @@ The panels of the <xref:System.Windows.Forms.SplitContainer> control lend themse
 |<xref:System.Windows.Forms.SplitContainer.SplitterDistance%2A> property|Determines the distance in pixels from the left or upper edge to the movable splitter bar.|  
 |<xref:System.Windows.Forms.SplitContainer.SplitterIncrement%2A> property|Determines the minimum distance, in pixels, that the splitter can be moved by the user.|  
   
- The example below modifies the <xref:System.Windows.Forms.SplitContainer.SplitterIncrement%2A> property to create a "snapping splitter" effect; when the user drags the splitter, it increments in units of 10 pixels rather than the default 1.  
+The example below modifies the <xref:System.Windows.Forms.SplitContainer.SplitterIncrement%2A> property to create a "snapping splitter" effect; when the user drags the splitter, it increments in units of 10 pixels rather than the default 1.  
   
 ### To define SplitContainer resize behavior  
   

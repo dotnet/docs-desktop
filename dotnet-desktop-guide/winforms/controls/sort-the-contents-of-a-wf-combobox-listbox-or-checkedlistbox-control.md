@@ -15,7 +15,7 @@ description: Learn how to sort the contents of a Windows Forms ComboBox, ListBox
 
 Windows Forms controls do not sort when they are data-bound. To display sorted data, use a data source that supports sorting and then have the data source sort it. Data sources that support sorting are data views, data view managers, and sorted arrays.  
   
- If the control is not data-bound, you can sort it.  
+If the control is not data-bound, you can sort it.  
   
 ### To sort the list  
   

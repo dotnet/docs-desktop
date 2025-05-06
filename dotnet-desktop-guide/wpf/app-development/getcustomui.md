@@ -19,31 +19,31 @@ HRESULT GetCustomUI( [out] BSTR* pwzProgressAssemblyName, [out] BSTR* pwzProgres
   
 ## Parameters  
 
- `pwzProgressAssemblyName`  
+`pwzProgressAssemblyName`  
   
- [out] A pointer to the assembly that contains the host-supplied progress user interface.  
+[out] A pointer to the assembly that contains the host-supplied progress user interface.  
   
- `pwzProgressClassName`  
+`pwzProgressClassName`  
   
- [out] The name of the class that is the host-supplied progress user interface, preferably a XAML file with <xref:System.Windows.Controls.Page> is its top-level element. This class resides in the assembly that is specified by `pwzProgressAssemblyName`.  
+[out] The name of the class that is the host-supplied progress user interface, preferably a XAML file with <xref:System.Windows.Controls.Page> is its top-level element. This class resides in the assembly that is specified by `pwzProgressAssemblyName`.  
   
- `pwzErrorAssemblyName`  
+`pwzErrorAssemblyName`  
   
- [out] A pointer to the assembly that contains the host-supplied error user interface.  
+[out] A pointer to the assembly that contains the host-supplied error user interface.  
   
- `pwzErrorClassName`  
+`pwzErrorClassName`  
   
- [out] The name of the class that is the host-supplied error user interface, preferably a XAML file with <xref:System.Windows.Controls.Page> is its top-level element. This class resides in the assembly that is specified by `pwzErrorAssemblyName`.  
+[out] The name of the class that is the host-supplied error user interface, preferably a XAML file with <xref:System.Windows.Controls.Page> is its top-level element. This class resides in the assembly that is specified by `pwzErrorAssemblyName`.  
   
 ## Property Value/Return Value  
 
- HRESULT: Ignored.  
+HRESULT: Ignored.  
   
 ## Remarks  
 
- A host application may have a specific theme that PresentationHost.exe’s default user interfaces may not conform to. If this is the case, the host application can implement [GetCustomUI](getcustomui.md) to return progress and error user interfaces to PresentationHost.exe. PresentationHost.exe will always call [GetCustomUI](getcustomui.md) before using its default user interfaces.  
+A host application may have a specific theme that PresentationHost.exe’s default user interfaces may not conform to. If this is the case, the host application can implement [GetCustomUI](getcustomui.md) to return progress and error user interfaces to PresentationHost.exe. PresentationHost.exe will always call [GetCustomUI](getcustomui.md) before using its default user interfaces.  
   
- This function is called once during PresentationHost’s initialization.  
+This function is called once during PresentationHost’s initialization.  
   
 ## See also
 

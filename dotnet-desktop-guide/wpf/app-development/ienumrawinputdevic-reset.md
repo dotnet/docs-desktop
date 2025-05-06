@@ -19,4 +19,4 @@ HRESULT Reset();
   
 ## Property Value/Return Value  
 
- HRESULT: S_OK.
+HRESULT: S_OK.

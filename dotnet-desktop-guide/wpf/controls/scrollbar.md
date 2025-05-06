@@ -16,11 +16,11 @@ A <xref:System.Windows.Controls.Primitives.ScrollBar> allows you to view content
   
 ## In This Section  
 
- [Customize the Thumb Size on a ScrollBar](how-to-customize-the-thumb-size-on-a-scrollbar.md)  
+[Customize the Thumb Size on a ScrollBar](how-to-customize-the-thumb-size-on-a-scrollbar.md)  
   
 ## Reference  
 
- <xref:System.Windows.Controls.Primitives.ScrollBar>  
+<xref:System.Windows.Controls.Primitives.ScrollBar>  
   <xref:System.Windows.Controls.Primitives.Track>  
   <xref:System.Windows.Controls.Primitives.Thumb>  
   <xref:System.Windows.Controls.ScrollViewer>

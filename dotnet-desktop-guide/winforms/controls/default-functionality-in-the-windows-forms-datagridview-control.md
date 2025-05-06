@@ -14,7 +14,7 @@ The Windows Forms <xref:System.Windows.Forms.DataGridView> control provides user
   
 ## Default Functionality  
 
- By default, a <xref:System.Windows.Forms.DataGridView> control:  
+By default, a <xref:System.Windows.Forms.DataGridView> control:  
   
 - Automatically displays column headers and row headers that remain visible as the table scrolls vertically.  
   
@@ -26,7 +26,7 @@ The Windows Forms <xref:System.Windows.Forms.DataGridView> control provides user
   
 - Automatically supports visual styles on Windows XP and the Windows Server 2003 family when the <xref:System.Windows.Forms.Application.EnableVisualStyles%2A> method is called from the application's `Main` method.  
   
- Additionally, the contents of a <xref:System.Windows.Forms.DataGridView> control can be edited by default:  
+Additionally, the contents of a <xref:System.Windows.Forms.DataGridView> control can be edited by default:  
   
 - If the user double-clicks or presses F2 in a cell, the control automatically puts the cell into edit mode and updates the contents of the cell as the user types.  
   
@@ -34,7 +34,7 @@ The Windows Forms <xref:System.Windows.Forms.DataGridView> control provides user
   
 - If the user clicks a row header, the whole row is selected.  
   
- When you bind a <xref:System.Windows.Forms.DataGridView> control to a data source by setting its <xref:System.Windows.Forms.DataGridView.DataSource%2A> property, the control:  
+When you bind a <xref:System.Windows.Forms.DataGridView> control to a data source by setting its <xref:System.Windows.Forms.DataGridView.DataSource%2A> property, the control:  
   
 - Automatically uses the names of the data source's columns as the column header text.  
   

@@ -16,30 +16,30 @@ The Windows Forms `DateTimePicker` control allows the user to select a single it
   
 ## In This Section  
 
- [DateTimePicker Control Overview](datetimepicker-control-overview-windows-forms.md)  
- Introduces the general concepts of the `DateTimePicker` control, which allows users to select a single item from a list of dates or times.  
+[DateTimePicker Control Overview](datetimepicker-control-overview-windows-forms.md)  
+Introduces the general concepts of the `DateTimePicker` control, which allows users to select a single item from a list of dates or times.  
   
- [How to: Display a Date in a Custom Format with the Windows Forms DateTimePicker Control](display-a-date-in-a-custom-format-with-wf-datetimepicker-control.md)  
- Explains how to use format strings to display dates in a preferred format.  
+[How to: Display a Date in a Custom Format with the Windows Forms DateTimePicker Control](display-a-date-in-a-custom-format-with-wf-datetimepicker-control.md)  
+Explains how to use format strings to display dates in a preferred format.  
   
- [How to: Set and Return Dates with the Windows Forms DateTimePicker Control](how-to-set-and-return-dates-with-the-windows-forms-datetimepicker-control.md)  
- Provides steps to set the date in the control and to access the date the user has selected.  
+[How to: Set and Return Dates with the Windows Forms DateTimePicker Control](how-to-set-and-return-dates-with-the-windows-forms-datetimepicker-control.md)  
+Provides steps to set the date in the control and to access the date the user has selected.  
   
- [How to: Display Time with the DateTimePicker Control](how-to-display-time-with-the-datetimepicker-control.md)  
- Shows steps to for a `DateTimePicker` to display times only.  
+[How to: Display Time with the DateTimePicker Control](how-to-display-time-with-the-datetimepicker-control.md)  
+Shows steps to for a `DateTimePicker` to display times only.  
   
 ## Reference  
 
- <xref:System.Windows.Forms.DateTimePicker>  
- Describes this class and has links to all its members.  
+<xref:System.Windows.Forms.DateTimePicker>  
+Describes this class and has links to all its members.  
   
- <xref:System.Windows.Forms.MonthCalendar>  
- Describes this class and has links to all its members.  
+<xref:System.Windows.Forms.MonthCalendar>  
+Describes this class and has links to all its members.  
   
 ## Related Sections  
 
- [Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)  
- Provides a complete list of Windows Forms controls, with links to information on their use.  
+[Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)  
+Provides a complete list of Windows Forms controls, with links to information on their use.  
   
- [MonthCalendar Control](monthcalendar-control-windows-forms.md)  
- Presents an intuitive graphical interface for users to view and set date information.
+[MonthCalendar Control](monthcalendar-control-windows-forms.md)  
+Presents an intuitive graphical interface for users to view and set date information.

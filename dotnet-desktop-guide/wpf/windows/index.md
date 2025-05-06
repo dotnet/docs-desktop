@@ -280,7 +280,7 @@ If your application has a window that shouldn't be activated when shown, you can
 - The window's <xref:System.Windows.Window.Activated> event isn't raised.
 - The currently activated window remains activated.
 
- The window will become activated, however, as soon as the user activates it by clicking either the client or non-client area. In this case:
+The window will become activated, however, as soon as the user activates it by clicking either the client or non-client area. In this case:
 
 - The window is activated.
 - The window's <xref:System.Windows.Window.Activated> event is raised.
@@ -296,7 +296,7 @@ The life of a window starts coming to an end when a user closes it. Once a windo
 - Pressing the **Close** button.
 - Pressing <kbd>ESC</kbd> when a button has the <xref:System.Windows.Controls.Button.IsCancel%2A> property set to `true` on a modal window.
 
- You can provide more mechanisms to the client area to close a window, the more common of which include the following:
+You can provide more mechanisms to the client area to close a window, the more common of which include the following:
 
 - An **Exit** item in the **File** menu, typically for main application windows.
 - A **Close** item in the **File** menu, typically on a secondary application window.
@@ -394,7 +394,7 @@ Window height is managed by <xref:System.Windows.FrameworkElement.MinHeight%2A>,
 
 Because the various width values and height values each specify a range, it's possible for the width and height of a resizable window to be anywhere within the specified range for the respective dimension. To detect its current width and height, inspect <xref:System.Windows.FrameworkElement.ActualWidth%2A> and <xref:System.Windows.FrameworkElement.ActualHeight%2A>, respectively.
 
- If you'd like the width and height of your window to have a size that fits to the size of the window's content, you can use the <xref:System.Windows.Window.SizeToContent%2A> property, which has the following values:
+If you'd like the width and height of your window to have a size that fits to the size of the window's content, you can use the <xref:System.Windows.Window.SizeToContent%2A> property, which has the following values:
 
 - [SizeToContent.Manual](xref:System.Windows.SizeToContent.Manual)\
 No effect (default).
@@ -475,7 +475,7 @@ A window with a _maximized_ state expands to the maximum size it can be, which w
 > [!NOTE]
 > The values of the <xref:System.Windows.Window.Top%2A>, <xref:System.Windows.Window.Left%2A>, <xref:System.Windows.FrameworkElement.Width%2A>, and <xref:System.Windows.FrameworkElement.Height%2A> properties of a window always represent the values for the normal state, even when the window is currently maximized or minimized.
 
- The state of a window can be configured by setting its <xref:System.Windows.Window.WindowState%2A> property, which can have one of the following <xref:System.Windows.WindowState> enumeration values:
+The state of a window can be configured by setting its <xref:System.Windows.Window.WindowState%2A> property, which can have one of the following <xref:System.Windows.WindowState> enumeration values:
 
 - <xref:System.Windows.WindowState.Normal> (default)
 - <xref:System.Windows.WindowState.Maximized>

@@ -16,10 +16,10 @@ This section provides examples that demonstrate how to accomplish common tasks u
   
 ## In This Section  
 
- [Extract the Text Content from a RichTextBox](how-to-extract-the-text-content-from-a-richtextbox.md)  
- [Change Selection in a RichTextBox Programmatically](change-selection-in-a-richtextbox-programmatically.md)  
- [Save, Load, and Print RichTextBox Content](how-to-save-load-and-print-richtextbox-content.md)  
- [Position a Custom Context Menu in a RichTextBox](how-to-position-a-custom-context-menu-in-a-richtextbox.md)  
+[Extract the Text Content from a RichTextBox](how-to-extract-the-text-content-from-a-richtextbox.md)  
+[Change Selection in a RichTextBox Programmatically](change-selection-in-a-richtextbox-programmatically.md)  
+[Save, Load, and Print RichTextBox Content](how-to-save-load-and-print-richtextbox-content.md)  
+[Position a Custom Context Menu in a RichTextBox](how-to-position-a-custom-context-menu-in-a-richtextbox.md)  
   
 ## See also
 

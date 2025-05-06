@@ -17,19 +17,19 @@ Users interact with applications through windows. The fundamental purpose of a w
   
 ## In This Section  
 
- [WPF Windows Overview](../windows/index.md)  
- [Dialog Boxes Overview](../windows/dialog-boxes-overview.md)  
- [How-to Topics](window-management-how-to-topics.md)  
+[WPF Windows Overview](../windows/index.md)  
+[Dialog Boxes Overview](../windows/dialog-boxes-overview.md)  
+[How-to Topics](window-management-how-to-topics.md)  
   
 ## Reference  
 
- <xref:System.Windows.Window>  
+<xref:System.Windows.Window>  
   
- <xref:System.Windows.Navigation.NavigationWindow>  
+<xref:System.Windows.Navigation.NavigationWindow>  
   
 ## Related Sections  
 
- [Application Management Overview](application-management-overview.md)  
+[Application Management Overview](application-management-overview.md)  
   [Navigation Overview](navigation-overview.md)  
   [Hosting](hosting-wpf-applications.md)  
   [Build and Deploy](building-and-deploying-wpf-applications.md)

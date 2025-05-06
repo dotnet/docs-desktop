@@ -14,16 +14,16 @@ ms.assetid: b91bb352-4f51-44e0-9017-a041f216c852
 
 A <xref:System.Windows.Controls.ListBox> control provides users with a list of selectable items.  
   
- The following figure illustrates a typical <xref:System.Windows.Controls.ListBox>.  
+The following figure illustrates a typical <xref:System.Windows.Controls.ListBox>.  
   
- ![ListBox screenshot](./media/ss-ctl-listbox.gif "SS_CTL_listbox")  
+![ListBox screenshot](./media/ss-ctl-listbox.gif "SS_CTL_listbox")  
 Typical ListBox  
   
 ## In This Section  
 
- [How-to Topics](listbox-how-to-topics.md)  
+[How-to Topics](listbox-how-to-topics.md)  
   
 ## Reference  
 
- <xref:System.Windows.Controls.ListBox>  
+<xref:System.Windows.Controls.ListBox>  
   <xref:System.Windows.Controls.ListBoxItem>  

@@ -16,14 +16,14 @@ Flow content elements provide the building blocks for creating flow content suit
   
 ## In This Section  
 
- [Flow Document Overview](flow-document-overview.md)  
- [TextElement Content Model Overview](textelement-content-model-overview.md)  
- [Table Overview](table-overview.md)  
- [How-to Topics](flow-content-elements-how-to-topics.md)  
+[Flow Document Overview](flow-document-overview.md)  
+[TextElement Content Model Overview](textelement-content-model-overview.md)  
+[Table Overview](table-overview.md)  
+[How-to Topics](flow-content-elements-how-to-topics.md)  
   
 ## Reference  
 
- <xref:System.Windows.Documents.FlowDocument>  
+<xref:System.Windows.Documents.FlowDocument>  
   <xref:System.Windows.Documents.Block>  
   <xref:System.Windows.Documents.List>  
   <xref:System.Windows.Documents.Paragraph>  
@@ -39,4 +39,4 @@ Flow content elements provide the building blocks for creating flow content suit
   
 ## Related Sections  
 
- [Documents in WPF](documents-in-wpf.md)
+[Documents in WPF](documents-in-wpf.md)

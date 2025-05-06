@@ -16,15 +16,15 @@ The <xref:System.Windows.Controls.Image> element is used to display bitmap image
   
 ## In This Section  
 
- [How-to Topics](image-how-to-topics.md)  
+[How-to Topics](image-how-to-topics.md)  
   
 ## Reference  
 
- <xref:System.Windows.Controls.Image>  
+<xref:System.Windows.Controls.Image>  
   
- <xref:System.Windows.Media.Imaging.BitmapImage>  
+<xref:System.Windows.Media.Imaging.BitmapImage>  
   
- <xref:System.Windows.Media.Imaging.BitmapSource>  
+<xref:System.Windows.Media.Imaging.BitmapSource>  
   
 ## See also
 

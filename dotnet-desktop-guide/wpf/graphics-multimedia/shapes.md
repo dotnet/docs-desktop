@@ -23,8 +23,8 @@ Windows Presentation Foundation (WPF) provides support for drawing basic shapes 
   
 ## In This Section  
 
- [Shapes and Basic Drawing in WPF Overview](shapes-and-basic-drawing-in-wpf-overview.md)  
- [How-to Topics](shapes-how-to-topics.md)  
+[Shapes and Basic Drawing in WPF Overview](shapes-and-basic-drawing-in-wpf-overview.md)  
+[How-to Topics](shapes-how-to-topics.md)  
   
 ## See also
 

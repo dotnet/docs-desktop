@@ -18,13 +18,13 @@ The <xref:System.Windows.Controls.Viewbox> control is used to stretch or scale a
   
 ## In This Section  
 
- [Apply Stretch Properties to the Contents of a Viewbox](how-to-apply-stretch-properties-to-the-contents-of-a-viewbox.md)  
+[Apply Stretch Properties to the Contents of a Viewbox](how-to-apply-stretch-properties-to-the-contents-of-a-viewbox.md)  
   
 ## Reference  
 
- <xref:System.Windows.Controls.Viewbox>  
+<xref:System.Windows.Controls.Viewbox>  
   
- <xref:System.Windows.Controls.Image>  
+<xref:System.Windows.Controls.Image>  
   
 ## See also
 

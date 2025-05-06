@@ -19,14 +19,14 @@ HRESULT Clone( [out] IEnumRAWINPUTDEVICE **ppenum);
   
 ## Parameters  
 
- `ppenum`  
+`ppenum`  
   
- [out] Address of output variable that receives the [IEnumRAWINPUTDEVICE](ienumrawinputdevice.md) interface pointer. If the method is unsuccessful, the value of this output variable is undefined.  
+[out] Address of output variable that receives the [IEnumRAWINPUTDEVICE](ienumrawinputdevice.md) interface pointer. If the method is unsuccessful, the value of this output variable is undefined.  
   
 ## Property Value/Return Value  
 
- HRESULT: This method supports the standard return values E_INVALIDARG, E_OUTOFMEMORY, and E_UNEXPECTED.  
+HRESULT: This method supports the standard return values E_INVALIDARG, E_OUTOFMEMORY, and E_UNEXPECTED.  
   
 ## Remarks  
 
- This method makes it possible to record a point in the enumeration sequence in order to return to that point at a later time. The caller must release this new enumerator separately from the first enumerator.
+This method makes it possible to record a point in the enumeration sequence in order to return to that point at a later time. The caller must release this new enumerator separately from the first enumerator.

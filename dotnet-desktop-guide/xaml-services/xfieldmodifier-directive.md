@@ -27,7 +27,7 @@ Modifies XAML compilation behavior so that fields for named object references ar
 
 ## Dependencies
 
- If a XAML production uses `x:FieldModifier` anywhere, the root element of that XAML production must declare an [x:Class Directive](xclass-directive.md).
+If a XAML production uses `x:FieldModifier` anywhere, the root element of that XAML production must declare an [x:Class Directive](xclass-directive.md).
 
 ## Remarks
 

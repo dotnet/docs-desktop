@@ -19,7 +19,7 @@ The `xml:space` attribute is an XML-defined attribute that declares the signific
 <object xml:space="preserve" />
 ```
 
- \- or -
+\- or -
 
 ```xaml
 <object xml:space="default" />

@@ -16,7 +16,7 @@ ms.assetid: 57a02dfa-f091-4ace-9c06-1f4ab52b3527
 
 This API supports the Windows Presentation Foundation (WPF) infrastructure and is not intended to be used directly from your code.  
   
- Used by the Windows Presentation Foundation (WPF) infrastructure for thread and windows management.  
+Used by the Windows Presentation Foundation (WPF) infrastructure for thread and windows management.  
   
 ## Syntax  
   
@@ -31,23 +31,23 @@ HRESULT CreateIDispatchSTAForwarder(
   
 ## Property Value/Return Value  
 
- pDispatchDelegate  
- A pointer to an `IDispatch` interface.  
+pDispatchDelegate  
+A pointer to an `IDispatch` interface.  
   
- ppForwarder  
- A pointer to the address of an `IDispatch` interface.  
+ppForwarder  
+A pointer to the address of an `IDispatch` interface.  
   
 ## Requirements  
 
- **Platforms:** See [.NET Framework System Requirements](/dotnet/framework/get-started/system-requirements).  
+**Platforms:** See [.NET Framework System Requirements](/dotnet/framework/get-started/system-requirements).  
   
- **DLL:**  
+**DLL:**  
   
- In the .NET Framework 3.0 and 3.5: PresentationHostDLL.dll  
+In the .NET Framework 3.0 and 3.5: PresentationHostDLL.dll  
   
- In the .NET Framework 4 and later: PresentationHost_v0400.dll  
+In the .NET Framework 4 and later: PresentationHost_v0400.dll  
   
- **.NET Framework Version:** Available since 3.0  
+**.NET Framework Version:** Available since 3.0  
   
 ## See also
 

@@ -16,7 +16,7 @@ ms.assetid: 495ce5f6-bb4d-4b30-807a-c3c35f1ca95c
 
 This API supports the Windows Presentation Foundation (WPF) infrastructure and is not intended to be used directly from your code.  
   
- Used by the Windows Presentation Foundation (WPF) infrastructure for exception handling.  
+Used by the Windows Presentation Foundation (WPF) infrastructure for exception handling.  
   
 ## Syntax  
   
@@ -28,20 +28,20 @@ void __stdcall ProcessUnhandledException(
   
 ## Parameters  
 
- errorMsg  
- The error message.  
+errorMsg  
+The error message.  
   
 ## Requirements  
 
- **Platforms:** See [.NET Framework System Requirements](/dotnet/framework/get-started/system-requirements).  
+**Platforms:** See [.NET Framework System Requirements](/dotnet/framework/get-started/system-requirements).  
   
- **DLL:**  
+**DLL:**  
   
- In the .NET Framework 3.0 and 3.5: PresentationHostDLL.dll  
+In the .NET Framework 3.0 and 3.5: PresentationHostDLL.dll  
   
- In the .NET Framework 4 and later: PresentationHost_v0400.dll  
+In the .NET Framework 4 and later: PresentationHost_v0400.dll  
   
- **.NET Framework Version:** Available since 3.0  
+**.NET Framework Version:** Available since 3.0  
   
 ## See also
 

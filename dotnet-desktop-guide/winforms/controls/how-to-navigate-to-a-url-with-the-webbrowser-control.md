@@ -19,7 +19,7 @@ ms.assetid: b3ec38cb-f509-4d0b-bd79-9f3611259c62
 
 The following code example demonstrates how to navigate the <xref:System.Windows.Forms.WebBrowser> control to a specific URL.
 
- To determine when the new document is fully loaded, handle the <xref:System.Windows.Forms.WebBrowser.DocumentCompleted> event. For a demonstration of this event, see [How to: Print with a WebBrowser Control](how-to-print-with-a-webbrowser-control.md).
+To determine when the new document is fully loaded, handle the <xref:System.Windows.Forms.WebBrowser.DocumentCompleted> event. For a demonstration of this event, see [How to: Print with a WebBrowser Control](how-to-print-with-a-webbrowser-control.md).
 
 ## Example
 
@@ -33,7 +33,7 @@ this.webBrowser1.Navigate("https://www.microsoft.com");
 
 ## Compiling the Code
 
- This example requires:
+This example requires:
 
 - A <xref:System.Windows.Forms.WebBrowser> control named `webBrowser1`.
 

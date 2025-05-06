@@ -16,14 +16,14 @@ The <xref:System.Windows.Controls.TextBlock> control provides flexible text supp
   
 ## In This Section  
 
- [TextBlock Overview](textblock-overview.md)  
+[TextBlock Overview](textblock-overview.md)  
   
 ## Reference  
 
- <xref:System.Windows.Controls.Label>  
+<xref:System.Windows.Controls.Label>  
   
 ## Related Sections  
 
- [Documents in WPF](../advanced/documents-in-wpf.md)  
+[Documents in WPF](../advanced/documents-in-wpf.md)  
   
- [Flow Document Overview](../advanced/flow-document-overview.md)
+[Flow Document Overview](../advanced/flow-document-overview.md)

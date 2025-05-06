@@ -17,8 +17,8 @@ The <xref:System.Windows.Controls.GridSplitter> redistributes space between colu
   
 ## In This Section  
 
- [How-to Topics](gridsplitter-how-to-topics.md)  
+[How-to Topics](gridsplitter-how-to-topics.md)  
   
 ## Reference  
 
- <xref:System.Windows.Controls.GridSplitter>  
+<xref:System.Windows.Controls.GridSplitter>  

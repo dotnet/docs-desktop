@@ -15,9 +15,9 @@ ms.assetid: b3d5fa56-80c6-4b10-b505-f9672307ed55
 
 You have several border styles to choose from when you are determining the appearance and behavior of your Windows Forms. By changing the <xref:System.Windows.Forms.Form.FormBorderStyle%2A> property, you can control the resizing behavior of the form. In addition, setting the <xref:System.Windows.Forms.Form.FormBorderStyle%2A> affects how the caption bar is displayed as well as what buttons might appear on it. For more information, see <xref:System.Windows.Forms.FormBorderStyle>.  
   
- There is extensive support for this task in Visual Studio.  
+There is extensive support for this task in Visual Studio.  
   
- See also [How to: Change the Borders of Windows Forms Using the Designer](/previous-versions/visualstudio/visual-studio-2010/yettzh3e(v=vs.100)).  
+See also [How to: Change the Borders of Windows Forms Using the Designer](/previous-versions/visualstudio/visual-studio-2010/yettzh3e(v=vs.100)).  
   
 ### To set the border style of Windows Forms programmatically  
   

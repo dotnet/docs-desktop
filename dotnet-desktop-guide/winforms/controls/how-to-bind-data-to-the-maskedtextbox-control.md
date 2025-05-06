@@ -17,7 +17,7 @@ description: Learn how to bind data to the MaskedTextBox control using the Forma
 
 You can bind data to a <xref:System.Windows.Forms.MaskedTextBox> control just as you can to any other Windows Forms control. However, if the format of your data in the database does not match the format expected by your mask definition, you will need to reformat the data. The following procedure demonstrates how to do this using the <xref:System.Windows.Forms.Binding.Format> and <xref:System.Windows.Forms.Binding.Parse> events of the <xref:System.Windows.Forms.Binding> class to display separate phone number and phone extension database fields as a single editable field.  
   
- The following procedure requires that you have access to a SQL Server database with the Northwind sample database installed.  
+The following procedure requires that you have access to a SQL Server database with the Northwind sample database installed.  
   
 ### To bind data to a MaskedTextBox control  
   
@@ -229,11 +229,11 @@ You can bind data to a <xref:System.Windows.Forms.MaskedTextBox> control just as
   
 ## Example  
 
- The following code example is the full code listing that results from completing the previous procedure.  
+The following code example is the full code listing that results from completing the previous procedure.  
   
- [!code-cpp[MaskedTextBoxData#1](~/samples/snippets/cpp/VS_Snippets_Winforms/MaskedTextBoxData/cpp/form1.cpp#1)]
- [!code-csharp[MaskedTextBoxData#1](~/samples/snippets/csharp/VS_Snippets_Winforms/MaskedTextBoxData/CS/form1.cs#1)]
- [!code-vb[MaskedTextBoxData#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/MaskedTextBoxData/VB/form1.vb#1)]  
+[!code-cpp[MaskedTextBoxData#1](~/samples/snippets/cpp/VS_Snippets_Winforms/MaskedTextBoxData/cpp/form1.cpp#1)]
+[!code-csharp[MaskedTextBoxData#1](~/samples/snippets/csharp/VS_Snippets_Winforms/MaskedTextBoxData/CS/form1.cs#1)]
+[!code-vb[MaskedTextBoxData#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/MaskedTextBoxData/VB/form1.vb#1)]  
   
 ## Compiling the Code  
   

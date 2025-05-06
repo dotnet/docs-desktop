@@ -17,72 +17,72 @@ ms.assetid: b2d02267-32b3-40ce-8e9f-06972d8749d9
 
 ## What Is a GridView View?  
 
- The <xref:System.Windows.Controls.GridView> view mode displays a list of data items by binding data fields to columns and by displaying a column header to identify the field. The default <xref:System.Windows.Controls.GridView> style implements buttons as column headers. By using buttons for column headers, you can implement important user interaction capabilities; for example, users can click the column header to sort <xref:System.Windows.Controls.GridView> data according to the contents of a specific column.  
+The <xref:System.Windows.Controls.GridView> view mode displays a list of data items by binding data fields to columns and by displaying a column header to identify the field. The default <xref:System.Windows.Controls.GridView> style implements buttons as column headers. By using buttons for column headers, you can implement important user interaction capabilities; for example, users can click the column header to sort <xref:System.Windows.Controls.GridView> data according to the contents of a specific column.  
   
 > [!NOTE]
 > The button controls that <xref:System.Windows.Controls.GridView> uses for column headers are derived from <xref:System.Windows.Controls.Primitives.ButtonBase>.  
   
- The following illustration shows a <xref:System.Windows.Controls.GridView> view of <xref:System.Windows.Controls.ListView> content.  
+The following illustration shows a <xref:System.Windows.Controls.GridView> view of <xref:System.Windows.Controls.ListView> content.  
 
- ![Screenshot that shows GridView view of ListView content.](./media/gridview-overview/styled-listview-content.png)  
+![Screenshot that shows GridView view of ListView content.](./media/gridview-overview/styled-listview-content.png)  
   
- <xref:System.Windows.Controls.GridView> columns are represented by <xref:System.Windows.Controls.GridViewColumn> objects, which can automatically size to their content. Optionally, you can explicitly set a <xref:System.Windows.Controls.GridViewColumn> to a specific width. You can resize columns by dragging the gripper between column headers. You can also dynamically add, remove, replace, and reorder columns because this functionality is built into <xref:System.Windows.Controls.GridView>. However, <xref:System.Windows.Controls.GridView> cannot directly update the data that it displays.  
+<xref:System.Windows.Controls.GridView> columns are represented by <xref:System.Windows.Controls.GridViewColumn> objects, which can automatically size to their content. Optionally, you can explicitly set a <xref:System.Windows.Controls.GridViewColumn> to a specific width. You can resize columns by dragging the gripper between column headers. You can also dynamically add, remove, replace, and reorder columns because this functionality is built into <xref:System.Windows.Controls.GridView>. However, <xref:System.Windows.Controls.GridView> cannot directly update the data that it displays.  
   
- The following example shows how to define a <xref:System.Windows.Controls.GridView> that displays employee data. In this example, <xref:System.Windows.Controls.ListView> defines the `EmployeeInfoDataSource` as the <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A>. The property definitions of <xref:System.Windows.Controls.GridViewColumn.DisplayMemberBinding%2A> bind <xref:System.Windows.Controls.GridViewColumn> content to `EmployeeInfoDataSource` data categories.  
+The following example shows how to define a <xref:System.Windows.Controls.GridView> that displays employee data. In this example, <xref:System.Windows.Controls.ListView> defines the `EmployeeInfoDataSource` as the <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A>. The property definitions of <xref:System.Windows.Controls.GridViewColumn.DisplayMemberBinding%2A> bind <xref:System.Windows.Controls.GridViewColumn> content to `EmployeeInfoDataSource` data categories.  
   
- [!code-xaml[ListViewCode#ListViewEmployee](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewCode/CSharp/Window1.xaml#listviewemployee)]  
+[!code-xaml[ListViewCode#ListViewEmployee](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewCode/CSharp/Window1.xaml#listviewemployee)]  
   
- The following illustration shows the table that the previous example creates. The GridView control displays data from an ItemsSource object:
+The following illustration shows the table that the previous example creates. The GridView control displays data from an ItemsSource object:
 
- ![Screenshot that shows a ListView with GridView output.](./media/gridview-overview/listview-gridview-output.jpg)  
+![Screenshot that shows a ListView with GridView output.](./media/gridview-overview/listview-gridview-output.jpg)  
   
 <a name="GridViewLayoutandStyle"></a>
 
 ## GridView Layout and Style  
 
- The column cells and the column header of a <xref:System.Windows.Controls.GridViewColumn> have the same width. By default, each column sizes its width to fit its content. Optionally, you can set a column to a fixed width.  
+The column cells and the column header of a <xref:System.Windows.Controls.GridViewColumn> have the same width. By default, each column sizes its width to fit its content. Optionally, you can set a column to a fixed width.  
   
- Related data content displays in horizontal rows. For example, in the previous illustration, each employee's last name, first name, and ID number are displayed as a set because they appear in a horizontal row.  
+Related data content displays in horizontal rows. For example, in the previous illustration, each employee's last name, first name, and ID number are displayed as a set because they appear in a horizontal row.  
   
 <a name="DefiningandStylingColumnsinaGridView"></a>
 
 ### Defining and Styling Columns in a GridView  
 
- When defining the data field to display in a <xref:System.Windows.Controls.GridViewColumn>, use the <xref:System.Windows.Controls.GridViewColumn.DisplayMemberBinding%2A>, <xref:System.Windows.Controls.GridViewColumn.CellTemplate%2A>, or <xref:System.Windows.Controls.GridViewColumn.CellTemplateSelector%2A> properties. The <xref:System.Windows.Controls.GridViewColumn.DisplayMemberBinding%2A> property takes precedence over either of the template properties.  
+When defining the data field to display in a <xref:System.Windows.Controls.GridViewColumn>, use the <xref:System.Windows.Controls.GridViewColumn.DisplayMemberBinding%2A>, <xref:System.Windows.Controls.GridViewColumn.CellTemplate%2A>, or <xref:System.Windows.Controls.GridViewColumn.CellTemplateSelector%2A> properties. The <xref:System.Windows.Controls.GridViewColumn.DisplayMemberBinding%2A> property takes precedence over either of the template properties.  
   
- To specify the alignment of content in a column of a <xref:System.Windows.Controls.GridView>, define a <xref:System.Windows.Controls.GridViewColumn.CellTemplate%2A>. Do not use the <xref:System.Windows.Controls.Control.HorizontalContentAlignment%2A> and <xref:System.Windows.Controls.Control.VerticalContentAlignment%2A> properties for <xref:System.Windows.Controls.ListView> content that is displayed by using a <xref:System.Windows.Controls.GridView>.  
+To specify the alignment of content in a column of a <xref:System.Windows.Controls.GridView>, define a <xref:System.Windows.Controls.GridViewColumn.CellTemplate%2A>. Do not use the <xref:System.Windows.Controls.Control.HorizontalContentAlignment%2A> and <xref:System.Windows.Controls.Control.VerticalContentAlignment%2A> properties for <xref:System.Windows.Controls.ListView> content that is displayed by using a <xref:System.Windows.Controls.GridView>.  
   
- To specify template and style properties for column headers, use the <xref:System.Windows.Controls.GridView>, <xref:System.Windows.Controls.GridViewColumn>, and <xref:System.Windows.Controls.GridViewColumnHeader> classes. For more information, see [GridView Column Header Styles and Templates Overview](gridview-column-header-styles-and-templates-overview.md).  
+To specify template and style properties for column headers, use the <xref:System.Windows.Controls.GridView>, <xref:System.Windows.Controls.GridViewColumn>, and <xref:System.Windows.Controls.GridViewColumnHeader> classes. For more information, see [GridView Column Header Styles and Templates Overview](gridview-column-header-styles-and-templates-overview.md).  
   
 <a name="AddingVisualElementstoaGridViewView"></a>
 
 ### Adding Visual Elements to a GridView  
 
- To add visual elements, such as <xref:System.Windows.Controls.CheckBox> and <xref:System.Windows.Controls.Button> controls, to a <xref:System.Windows.Controls.GridView> view mode, use templates or styles.  
+To add visual elements, such as <xref:System.Windows.Controls.CheckBox> and <xref:System.Windows.Controls.Button> controls, to a <xref:System.Windows.Controls.GridView> view mode, use templates or styles.  
   
- If you explicitly define a visual element as a data item, it can appear only one time in a <xref:System.Windows.Controls.GridView>. This limitation exists because an element can have only one parent and therefore, can appear only one time in the visual tree.  
+If you explicitly define a visual element as a data item, it can appear only one time in a <xref:System.Windows.Controls.GridView>. This limitation exists because an element can have only one parent and therefore, can appear only one time in the visual tree.  
   
 <a name="StylingRowsinaGridViewView"></a>
 
 ### Styling Rows in a GridView  
 
- Use the <xref:System.Windows.Controls.GridViewRowPresenter> and <xref:System.Windows.Controls.GridViewHeaderRowPresenter> classes to format and display the rows of a <xref:System.Windows.Controls.GridView>. For an example of how to style rows in a <xref:System.Windows.Controls.GridView> view mode, see [Style a Row in a ListView That Implements a GridView](how-to-style-a-row-in-a-listview-that-implements-a-gridview.md).  
+Use the <xref:System.Windows.Controls.GridViewRowPresenter> and <xref:System.Windows.Controls.GridViewHeaderRowPresenter> classes to format and display the rows of a <xref:System.Windows.Controls.GridView>. For an example of how to style rows in a <xref:System.Windows.Controls.GridView> view mode, see [Style a Row in a ListView That Implements a GridView](how-to-style-a-row-in-a-listview-that-implements-a-gridview.md).  
   
 <a name="AlignmentIssuesWhenUsingItemContainerStyle"></a>
 
 ### Alignment Issues When You Use ItemContainerStyle  
 
- To prevent alignment issues between column headers and cells, do not set a property or specify a template that affects the width of an item in an <xref:System.Windows.Controls.ItemsControl.ItemContainerStyle%2A>. For example, do not set the <xref:System.Windows.FrameworkElement.Margin%2A> property or specify a <xref:System.Windows.Controls.ControlTemplate> that adds a <xref:System.Windows.Controls.CheckBox> to an <xref:System.Windows.Controls.ItemsControl.ItemContainerStyle%2A> that is defined on a <xref:System.Windows.Controls.ListView> control. Instead, specify the properties and templates that affect column width directly on classes that define a <xref:System.Windows.Controls.GridView> view mode.  
+To prevent alignment issues between column headers and cells, do not set a property or specify a template that affects the width of an item in an <xref:System.Windows.Controls.ItemsControl.ItemContainerStyle%2A>. For example, do not set the <xref:System.Windows.FrameworkElement.Margin%2A> property or specify a <xref:System.Windows.Controls.ControlTemplate> that adds a <xref:System.Windows.Controls.CheckBox> to an <xref:System.Windows.Controls.ItemsControl.ItemContainerStyle%2A> that is defined on a <xref:System.Windows.Controls.ListView> control. Instead, specify the properties and templates that affect column width directly on classes that define a <xref:System.Windows.Controls.GridView> view mode.  
   
- For example, to add a <xref:System.Windows.Controls.CheckBox> to the rows in <xref:System.Windows.Controls.GridView> view mode, add the <xref:System.Windows.Controls.CheckBox> to a <xref:System.Windows.DataTemplate>, and then set the <xref:System.Windows.Controls.GridViewColumn.CellTemplate%2A> property to that <xref:System.Windows.DataTemplate>.  
+For example, to add a <xref:System.Windows.Controls.CheckBox> to the rows in <xref:System.Windows.Controls.GridView> view mode, add the <xref:System.Windows.Controls.CheckBox> to a <xref:System.Windows.DataTemplate>, and then set the <xref:System.Windows.Controls.GridViewColumn.CellTemplate%2A> property to that <xref:System.Windows.DataTemplate>.  
   
 <a name="InteractingwithaGridViewControl"></a>
 
 ## User Interactions with a GridView  
 
- When you use a <xref:System.Windows.Controls.GridView> in your application, users can interact with and modify the formatting of the <xref:System.Windows.Controls.GridView>. For example, users can reorder columns, resize a column, select items in a table, and scroll through content. You can also define an event handler that responds when a user clicks the column header button. The event handler can perform operations like sorting the data that is displayed in the <xref:System.Windows.Controls.GridView> according to the contents of a column.  
+When you use a <xref:System.Windows.Controls.GridView> in your application, users can interact with and modify the formatting of the <xref:System.Windows.Controls.GridView>. For example, users can reorder columns, resize a column, select items in a table, and scroll through content. You can also define an event handler that responds when a user clicks the column header button. The event handler can perform operations like sorting the data that is displayed in the <xref:System.Windows.Controls.GridView> according to the contents of a column.  
   
- The following list discusses in more detail the capabilities of using <xref:System.Windows.Controls.GridView> for user interaction:  
+The following list discusses in more detail the capabilities of using <xref:System.Windows.Controls.GridView> for user interaction:  
   
 - **Reorder columns by using the drag-and-drop method.**  
   
@@ -117,13 +117,13 @@ ms.assetid: b2d02267-32b3-40ce-8e9f-06972d8749d9
 
 ## Obtaining Other Custom Views  
 
- The <xref:System.Windows.Controls.GridView> class, which is derived from the <xref:System.Windows.Controls.ViewBase> abstract class, is just one of the possible view modes for the <xref:System.Windows.Controls.ListView> class. You can create other custom views for <xref:System.Windows.Controls.ListView> by deriving from the <xref:System.Windows.Controls.ViewBase> class. For an example of a custom view mode, see [Create a Custom View Mode for a ListView](how-to-create-a-custom-view-mode-for-a-listview.md).  
+The <xref:System.Windows.Controls.GridView> class, which is derived from the <xref:System.Windows.Controls.ViewBase> abstract class, is just one of the possible view modes for the <xref:System.Windows.Controls.ListView> class. You can create other custom views for <xref:System.Windows.Controls.ListView> by deriving from the <xref:System.Windows.Controls.ViewBase> class. For an example of a custom view mode, see [Create a Custom View Mode for a ListView](how-to-create-a-custom-view-mode-for-a-listview.md).  
   
 <a name="GridViewSupportingClasses"></a>
 
 ## GridView Supporting Classes  
 
- The following classes support the <xref:System.Windows.Controls.GridView> view mode.  
+The following classes support the <xref:System.Windows.Controls.GridView> view mode.  
   
 - <xref:System.Windows.Controls.GridViewColumn>  
   

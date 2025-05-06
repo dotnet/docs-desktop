@@ -26,7 +26,7 @@ If you use the Windows Forms <xref:System.Windows.Forms.PictureBox> control on a
   
 - Stretch any picture it displays to fit the control  
   
- Stretching a picture (especially one in bitmap format) can produce a loss in image quality. Metafiles, which are lists of graphics instructions for drawing images at run time, are better suited for stretching than bitmaps are.  
+Stretching a picture (especially one in bitmap format) can produce a loss in image quality. Metafiles, which are lists of graphics instructions for drawing images at run time, are better suited for stretching than bitmaps are.  
   
 ### To set the SizeMode property at run time  
   

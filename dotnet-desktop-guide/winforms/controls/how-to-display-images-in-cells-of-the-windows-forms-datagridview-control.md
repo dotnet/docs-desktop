@@ -17,20 +17,20 @@ ms.assetid: 53b13d31-1b56-476d-9ab4-18bfac138a22
 
 A picture or graphic is one of the values that you can display in a row of data. Frequently, these graphics take the form of an employee's photograph or a company logo.  
   
- Incorporating pictures is simple when you display data within the <xref:System.Windows.Forms.DataGridView> control. The <xref:System.Windows.Forms.DataGridView> control natively handles any image format supported by the <xref:System.Drawing.Image> class, as well as the OLE picture format used by some databases.  
+Incorporating pictures is simple when you display data within the <xref:System.Windows.Forms.DataGridView> control. The <xref:System.Windows.Forms.DataGridView> control natively handles any image format supported by the <xref:System.Drawing.Image> class, as well as the OLE picture format used by some databases.  
   
- If the <xref:System.Windows.Forms.DataGridView> control's data source has a column of images, they will be displayed automatically by the <xref:System.Windows.Forms.DataGridView> control.  
+If the <xref:System.Windows.Forms.DataGridView> control's data source has a column of images, they will be displayed automatically by the <xref:System.Windows.Forms.DataGridView> control.  
   
- The following code example demonstrates how to extract an icon from an embedded resource and convert it to a bitmap for display in every cell of an image column. For another example that replaces textual cell values with corresponding images, see [How to: Customize Data Formatting in the Windows Forms DataGridView Control](how-to-customize-data-formatting-in-the-windows-forms-datagridview-control.md).  
+The following code example demonstrates how to extract an icon from an embedded resource and convert it to a bitmap for display in every cell of an image column. For another example that replaces textual cell values with corresponding images, see [How to: Customize Data Formatting in the Windows Forms DataGridView Control](how-to-customize-data-formatting-in-the-windows-forms-datagridview-control.md).  
   
 ## Example  
 
- [!code-csharp[System.Windows.Forms.DataGridViewMisc#050](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/CS/datagridviewmisc.cs#050)]
- [!code-vb[System.Windows.Forms.DataGridViewMisc#050](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/VB/datagridviewmisc.vb#050)]  
+[!code-csharp[System.Windows.Forms.DataGridViewMisc#050](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/CS/datagridviewmisc.cs#050)]
+[!code-vb[System.Windows.Forms.DataGridViewMisc#050](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/VB/datagridviewmisc.vb#050)]  
   
 ## Compiling the Code  
 
- This example requires:  
+This example requires:  
   
 - A <xref:System.Windows.Forms.DataGridView> control named `dataGridView1`.  
   

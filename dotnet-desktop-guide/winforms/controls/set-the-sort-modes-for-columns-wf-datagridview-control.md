@@ -16,9 +16,9 @@ description: Learn how to set the sort modes and sorting behavior for columns in
 
 In the <xref:System.Windows.Forms.DataGridView> control, text box columns use automatic sorting by default, while other column types are not sorted automatically. Sometimes you will want to override these defaults. For example, you can display images in place of text, numbers, or enumeration cell values. While the images cannot be sorted, the underlying values that they represent can be sorted.  
   
- In the <xref:System.Windows.Forms.DataGridView> control, the <xref:System.Windows.Forms.DataGridViewColumn.SortMode%2A> property value of a column determines its sorting behavior.  
+In the <xref:System.Windows.Forms.DataGridView> control, the <xref:System.Windows.Forms.DataGridViewColumn.SortMode%2A> property value of a column determines its sorting behavior.  
   
- The following procedure shows the `Priority` column from [How to: Customize Data Formatting in the Windows Forms DataGridView Control](how-to-customize-data-formatting-in-the-windows-forms-datagridview-control.md). This column is an image column and is not sortable by default. It contains actual cell values that are strings, however, so it can be sorted automatically.  
+The following procedure shows the `Priority` column from [How to: Customize Data Formatting in the Windows Forms DataGridView Control](how-to-customize-data-formatting-in-the-windows-forms-datagridview-control.md). This column is an image column and is not sortable by default. It contains actual cell values that are strings, however, so it can be sorted automatically.  
   
 ### To set the sort mode for a column  
   
@@ -29,7 +29,7 @@ In the <xref:System.Windows.Forms.DataGridView> control, text box columns use au
   
 ## Compiling the Code  
 
- This example requires:  
+This example requires:  
   
 - A <xref:System.Windows.Forms.DataGridView> control named `dataGridView1` that contains a column named `Priority`.  
   

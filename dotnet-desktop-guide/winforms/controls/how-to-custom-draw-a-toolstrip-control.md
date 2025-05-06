@@ -29,9 +29,9 @@ The <xref:System.Windows.Forms.ToolStrip> controls have the following associated
   
 - <xref:System.Windows.Forms.ToolStripRenderer> is the abstract base class for the other two rendering classes.  
   
- To custom draw (also known as owner draw) a <xref:System.Windows.Forms.ToolStrip>, you can override one of the renderer classes and change an aspect of the rendering logic.  
+To custom draw (also known as owner draw) a <xref:System.Windows.Forms.ToolStrip>, you can override one of the renderer classes and change an aspect of the rendering logic.  
   
- The following procedures describe various aspects of custom drawing.  
+The following procedures describe various aspects of custom drawing.  
   
 ## Switch between the provided renderers
   

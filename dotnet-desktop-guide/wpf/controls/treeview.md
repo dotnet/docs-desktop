@@ -15,21 +15,21 @@ ms.assetid: 805c235c-0a0e-4e34-8d96-9dc3865cf2df
 
 The <xref:System.Windows.Controls.TreeView> control displays information in a hierarchical structure by using collapsible nodes.  
   
- The following illustration is an example of a <xref:System.Windows.Controls.TreeView> control that has nested <xref:System.Windows.Controls.TreeViewItem> controls:  
+The following illustration is an example of a <xref:System.Windows.Controls.TreeView> control that has nested <xref:System.Windows.Controls.TreeViewItem> controls:  
   
- ![Illustration that shows nested TreeViewItem controls.](./media/treeview/nested-treeviewitem-controls.jpg)  
+![Illustration that shows nested TreeViewItem controls.](./media/treeview/nested-treeviewitem-controls.jpg)  
   
 ## In This Section  
 
- [TreeView Overview](treeview-overview.md)  
- [How-to Topics](treeview-how-to-topics.md)  
+[TreeView Overview](treeview-overview.md)  
+[How-to Topics](treeview-how-to-topics.md)  
   
 ## Reference  
 
- <xref:System.Windows.Controls.TreeView>  
+<xref:System.Windows.Controls.TreeView>  
   <xref:System.Windows.Controls.TreeViewItem>  
   
 ## Related Sections  
 
- [Data Binding Overview](../data/index.md)  
+[Data Binding Overview](../data/index.md)  
   [Data Templating Overview](../data/data-templating-overview.md)

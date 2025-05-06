@@ -17,7 +17,7 @@ ms.assetid: 4fe2d501-d0b0-4fef-86af-6ffe6c162532
 
 The Microsoft Windows [Print Schema](/windows/win32/printdocs/printschema) includes the flexible and extensible <xref:System.Printing.PrintCapabilities> and <xref:System.Printing.PrintTicket> elements. The former itemizes the capabilities of a print device and the latter specifies how the device should use those capabilities with respect to a particular sequence of documents, individual document, or individual page.  
   
- A typical sequence of tasks for an application that supports printing would be as follows.  
+A typical sequence of tasks for an application that supports printing would be as follows.  
   
 1. Determine a printer's capabilities.  
   
@@ -25,11 +25,11 @@ The Microsoft Windows [Print Schema](/windows/win32/printdocs/printschema) inclu
   
 3. Validate the <xref:System.Printing.PrintTicket>.  
   
- This article shows how to do this.  
+This article shows how to do this.  
   
 ## Example  
 
- In the simple example below, we are interested only in whether a printer can support duplexing — two-sided printing. The major steps are as follows.  
+In the simple example below, we are interested only in whether a printer can support duplexing — two-sided printing. The major steps are as follows.  
   
 1. Get a <xref:System.Printing.PrintCapabilities> object with the <xref:System.Printing.PrintQueue.GetPrintCapabilities%2A> method.  
   
@@ -46,13 +46,13 @@ The Microsoft Windows [Print Schema](/windows/win32/printdocs/printschema) inclu
   
 6. The last significant step is to commit the change to the <xref:System.Printing.PrintQueue.UserPrintTicket%2A> property of the <xref:System.Printing.PrintQueue> with the <xref:System.Printing.PrintQueue.Commit%2A> method.  
   
- [!code-csharp[PrintTicketManagment#UsingMergeAndValidate](~/samples/snippets/csharp/VS_Snippets_Wpf/PrintTicketManagment/CSharp/printticket.cs#usingmergeandvalidate)]
- [!code-vb[PrintTicketManagment#UsingMergeAndValidate](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PrintTicketManagment/visualbasic/printticket.vb#usingmergeandvalidate)]  
+[!code-csharp[PrintTicketManagment#UsingMergeAndValidate](~/samples/snippets/csharp/VS_Snippets_Wpf/PrintTicketManagment/CSharp/printticket.cs#usingmergeandvalidate)]
+[!code-vb[PrintTicketManagment#UsingMergeAndValidate](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PrintTicketManagment/visualbasic/printticket.vb#usingmergeandvalidate)]  
   
- So that you can quickly test this example, the remainder of it is presented below. Create a project and a namespace and then paste both the code snippets in this article into the namespace block.  
+So that you can quickly test this example, the remainder of it is presented below. Create a project and a namespace and then paste both the code snippets in this article into the namespace block.  
   
- [!code-csharp[PrintTicketManagment#UIForMergeAndValidatePTUtility](~/samples/snippets/csharp/VS_Snippets_Wpf/PrintTicketManagment/CSharp/printticket.cs#uiformergeandvalidateptutility)]
- [!code-vb[PrintTicketManagment#UIForMergeAndValidatePTUtility](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PrintTicketManagment/visualbasic/printticket.vb#uiformergeandvalidateptutility)]  
+[!code-csharp[PrintTicketManagment#UIForMergeAndValidatePTUtility](~/samples/snippets/csharp/VS_Snippets_Wpf/PrintTicketManagment/CSharp/printticket.cs#uiformergeandvalidateptutility)]
+[!code-vb[PrintTicketManagment#UIForMergeAndValidatePTUtility](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PrintTicketManagment/visualbasic/printticket.vb#uiformergeandvalidateptutility)]  
   
 ## See also
 

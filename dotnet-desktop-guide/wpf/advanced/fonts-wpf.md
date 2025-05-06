@@ -15,10 +15,10 @@ Windows Presentation Foundation (WPF) includes support for rich presentation of 
   
 ## In This Section  
 
- [OpenType Font Features](opentype-font-features.md)  
- [Packaging Fonts with Applications](packaging-fonts-with-applications.md)  
- [Sample OpenType Font Pack](sample-opentype-font-pack.md)  
- [How-to Topics](fonts-how-to-topics.md)  
+[OpenType Font Features](opentype-font-features.md)  
+[Packaging Fonts with Applications](packaging-fonts-with-applications.md)  
+[Sample OpenType Font Pack](sample-opentype-font-pack.md)  
+[How-to Topics](fonts-how-to-topics.md)  
   
 ## See also
 

@@ -14,11 +14,11 @@ ms.assetid: 6c9ba847-eab7-4bba-9c74-6b56ef72067b
 
 <xref:System.Windows.Controls.RadioButton> controls are usually grouped together to offer users a single choice among several options; only one button at a time can be selected.  
   
- The following illustration shows an example of a <xref:System.Windows.Controls.RadioButton> control.  
+The following illustration shows an example of a <xref:System.Windows.Controls.RadioButton> control.  
   
- ![Radio button states](./media/ss-ctl-radiobuttons.gif "SS_CTL_radiobuttons")  
+![Radio button states](./media/ss-ctl-radiobuttons.gif "SS_CTL_radiobuttons")  
 Typical RadioButton  
   
 ## Reference  
 
- <xref:System.Windows.Controls.Primitives.ToggleButton>  
+<xref:System.Windows.Controls.Primitives.ToggleButton>  

@@ -17,7 +17,7 @@ This example shows how to rotate an image 90 degrees by using a <xref:System.Win
   
 ## Example  
 
- [!code-xaml[ImageElementExample_snip#TransformedXAML2](~/samples/snippets/csharp/VS_Snippets_Wpf/ImageElementExample_snip/CSharp/TransformedImageExample.xaml#transformedxaml2)]  
+[!code-xaml[ImageElementExample_snip#TransformedXAML2](~/samples/snippets/csharp/VS_Snippets_Wpf/ImageElementExample_snip/CSharp/TransformedImageExample.xaml#transformedxaml2)]  
   
- [!code-csharp[ImageElementExample_snip#TransformedCSharp1](~/samples/snippets/csharp/VS_Snippets_Wpf/ImageElementExample_snip/CSharp/TransformedImageExample.xaml.cs#transformedcsharp1)]
- [!code-vb[ImageElementExample_snip#TransformedCSharp1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ImageElementExample_snip/VB/TransformedImageExample.xaml.vb#transformedcsharp1)]
+[!code-csharp[ImageElementExample_snip#TransformedCSharp1](~/samples/snippets/csharp/VS_Snippets_Wpf/ImageElementExample_snip/CSharp/TransformedImageExample.xaml.cs#transformedcsharp1)]
+[!code-vb[ImageElementExample_snip#TransformedCSharp1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ImageElementExample_snip/VB/TransformedImageExample.xaml.vb#transformedcsharp1)]

@@ -38,7 +38,7 @@ public void onePing()
 
 ## Compiling the Code
 
- For C#, this example requires  a reference to the <xref:System.Media?displayProperty=nameWithType> namespace.
+For C#, this example requires  a reference to the <xref:System.Media?displayProperty=nameWithType> namespace.
 
 ## See also
 

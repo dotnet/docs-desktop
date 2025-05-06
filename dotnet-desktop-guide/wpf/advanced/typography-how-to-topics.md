@@ -15,15 +15,15 @@ The topics in this section describe how to use Windows Presentation Foundation (
   
 ## In This Section  
 
- [Create a Text Decoration](how-to-create-a-text-decoration.md)  
- [Specify Whether a Hyperlink is Underlined](how-to-specify-whether-a-hyperlink-is-underlined.md)  
- [Apply Transforms to Text](how-to-apply-transforms-to-text.md)  
- [Apply Animations to Text](how-to-apply-animations-to-text.md)  
- [Create Text with a Shadow](how-to-create-text-with-a-shadow.md)  
- [Create Outlined Text](how-to-create-outlined-text.md)  
- [Draw Text to a Control's Background](how-to-draw-text-to-a-control-background.md)  
- [Draw Text to a Visual](how-to-draw-text-to-a-visual.md)  
- [Use Special Characters in XAML](how-to-use-special-characters-in-xaml.md)  
+[Create a Text Decoration](how-to-create-a-text-decoration.md)  
+[Specify Whether a Hyperlink is Underlined](how-to-specify-whether-a-hyperlink-is-underlined.md)  
+[Apply Transforms to Text](how-to-apply-transforms-to-text.md)  
+[Apply Animations to Text](how-to-apply-animations-to-text.md)  
+[Create Text with a Shadow](how-to-create-text-with-a-shadow.md)  
+[Create Outlined Text](how-to-create-outlined-text.md)  
+[Draw Text to a Control's Background](how-to-draw-text-to-a-control-background.md)  
+[Draw Text to a Visual](how-to-draw-text-to-a-visual.md)  
+[Use Special Characters in XAML](how-to-use-special-characters-in-xaml.md)  
   
 ## See also
 

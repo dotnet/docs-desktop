@@ -19,13 +19,13 @@ WPF enables applications to respond to touch. For example, you can interact with
   
 ## Prerequisites  
 
- You need the following components to complete this walkthrough:  
+You need the following components to complete this walkthrough:  
   
 - Visual Studio.  
   
 - A device that accepts touch input, such as a touchscreen, that supports Windows Touch.  
   
- Additionally, you should have a basic understanding of how to create an application in WPF, especially how to subscribe to and handle an event. For more information, see [Walkthrough: My first WPF desktop application](../get-started/walkthrough-my-first-wpf-desktop-application.md).  
+Additionally, you should have a basic understanding of how to create an application in WPF, especially how to subscribe to and handle an event. For more information, see [Walkthrough: My first WPF desktop application](../get-started/walkthrough-my-first-wpf-desktop-application.md).  
   
 ## Creating the Application  
   
@@ -70,7 +70,7 @@ WPF enables applications to respond to touch. For example, you can interact with
 
 ## Testing the Application
 
- To test the application, try the following manipulations. Note that you can do more than one of the following at the same time.
+To test the application, try the following manipulations. Note that you can do more than one of the following at the same time.
 
 - To move the <xref:System.Windows.Shapes.Rectangle>, put a finger on the <xref:System.Windows.Shapes.Rectangle> and move the finger across the screen.
 
@@ -78,7 +78,7 @@ WPF enables applications to respond to touch. For example, you can interact with
 
 - To rotate the <xref:System.Windows.Shapes.Rectangle>, put two fingers on the <xref:System.Windows.Shapes.Rectangle> and rotate the fingers around each other.
 
- To cause inertia, quickly raise your fingers from the screen as you perform the previous manipulations. The <xref:System.Windows.Shapes.Rectangle> will continue to move, resize, or rotate for a few seconds before it stops.
+To cause inertia, quickly raise your fingers from the screen as you perform the previous manipulations. The <xref:System.Windows.Shapes.Rectangle> will continue to move, resize, or rotate for a few seconds before it stops.
 
 ## See also
 

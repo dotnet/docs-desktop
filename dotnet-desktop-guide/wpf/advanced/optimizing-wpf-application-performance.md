@@ -19,27 +19,27 @@ This section is intended as a reference for Windows Presentation Foundation (WPF
   
 ## In This Section  
 
- [Planning for Application Performance](planning-for-application-performance.md)  
+[Planning for Application Performance](planning-for-application-performance.md)  
   
- [Taking Advantage of Hardware](optimizing-performance-taking-advantage-of-hardware.md)  
+[Taking Advantage of Hardware](optimizing-performance-taking-advantage-of-hardware.md)  
   
- [Layout and Design](optimizing-performance-layout-and-design.md)  
+[Layout and Design](optimizing-performance-layout-and-design.md)  
   
- [2D Graphics and Imaging](optimizing-performance-2d-graphics-and-imaging.md)  
+[2D Graphics and Imaging](optimizing-performance-2d-graphics-and-imaging.md)  
   
- [Object Behavior](optimizing-performance-object-behavior.md)  
+[Object Behavior](optimizing-performance-object-behavior.md)  
   
- [Application Resources](optimizing-performance-application-resources.md)  
+[Application Resources](optimizing-performance-application-resources.md)  
   
- [Text](optimizing-performance-text.md)  
+[Text](optimizing-performance-text.md)  
   
- [Data Binding](optimizing-performance-data-binding.md)  
+[Data Binding](optimizing-performance-data-binding.md)  
   
- [Controls](optimizing-performance-controls.md)  
+[Controls](optimizing-performance-controls.md)  
   
- [Other Performance Recommendations](optimizing-performance-other-recommendations.md)  
+[Other Performance Recommendations](optimizing-performance-other-recommendations.md)  
   
- [Application Startup Time](application-startup-time.md)  
+[Application Startup Time](application-startup-time.md)  
   
 ## See also
 

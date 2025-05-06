@@ -16,30 +16,30 @@ The topics in this section describe how to use the <xref:System.Windows.Controls
   
 ## In This Section  
 
- [Get or Set a Dock Value](how-to-get-or-set-a-dock-value.md)  
- [Create a DockPanel](how-to-create-a-dockpanel.md)  
- [Partition Space by Using the DockPanel Element](how-to-partition-space-by-using-the-dockpanel-element.md)  
+[Get or Set a Dock Value](how-to-get-or-set-a-dock-value.md)  
+[Create a DockPanel](how-to-create-a-dockpanel.md)  
+[Partition Space by Using the DockPanel Element](how-to-partition-space-by-using-the-dockpanel-element.md)  
   
 ## Reference  
 
- <xref:System.Windows.Controls.Panel>  
+<xref:System.Windows.Controls.Panel>  
   
- <xref:System.Windows.Controls.Canvas>  
+<xref:System.Windows.Controls.Canvas>  
   
- <xref:System.Windows.Controls.DockPanel>  
+<xref:System.Windows.Controls.DockPanel>  
   
- <xref:System.Windows.Controls.Grid>  
+<xref:System.Windows.Controls.Grid>  
   
- <xref:System.Windows.Controls.StackPanel>  
+<xref:System.Windows.Controls.StackPanel>  
   
- <xref:System.Windows.Controls.VirtualizingStackPanel>  
+<xref:System.Windows.Controls.VirtualizingStackPanel>  
   
- <xref:System.Windows.Controls.WrapPanel>  
+<xref:System.Windows.Controls.WrapPanel>  
   
 ## Related Sections  
 
- [Layout](../advanced/layout.md)  
+[Layout](../advanced/layout.md)  
   
- [Walkthrough: My first WPF desktop application](../get-started/walkthrough-my-first-wpf-desktop-application.md)  
+[Walkthrough: My first WPF desktop application](../get-started/walkthrough-my-first-wpf-desktop-application.md)  
   
- [ScrollViewer Overview](scrollviewer-overview.md)
+[ScrollViewer Overview](scrollviewer-overview.md)

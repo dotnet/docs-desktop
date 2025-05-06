@@ -17,7 +17,7 @@ ms.assetid: bdafe60d-82ee-45bc-97fe-eeefca6e54c1
 
 In some applications, the kind of a multiple-document interface (MDI) child window can be different from the MDI parent window. For example, the MDI parent might be a spreadsheet, and the MDI child might be a chart. In that case, you want to update the contents of the MDI parent's menu with the contents of the MDI child's menu as MDI child windows of different kinds are activated.  
   
- The following procedure uses the <xref:System.Windows.Forms.Form.IsMdiContainer%2A>, <xref:System.Windows.Forms.ToolStrip.AllowMerge%2A>, <xref:System.Windows.Forms.MergeAction>, and <xref:System.Windows.Forms.ToolStripItem.MergeIndex%2A> properties to remove a menu item from the drop-down part of the MDI parent menu. Closing the MDI child window restores the removed menu items to the MDI parent menu.  
+The following procedure uses the <xref:System.Windows.Forms.Form.IsMdiContainer%2A>, <xref:System.Windows.Forms.ToolStrip.AllowMerge%2A>, <xref:System.Windows.Forms.MergeAction>, and <xref:System.Windows.Forms.ToolStripItem.MergeIndex%2A> properties to remove a menu item from the drop-down part of the MDI parent menu. Closing the MDI child window restores the removed menu items to the MDI parent menu.  
   
 ### To remove a MenuStrip from an MDI drop-down menu  
   
@@ -84,7 +84,7 @@ In some applications, the kind of a multiple-document interface (MDI) child wind
   
 ## Compiling the Code  
 
- This example requires:  
+This example requires:  
   
 - Two <xref:System.Windows.Forms.Form> controls named `Form1` and `Form2`.  
   

@@ -20,7 +20,7 @@ ms.assetid: 35692c1b-0937-4b7a-9207-1ae6bdc244a0
 
 The [FontDialog](fontdialog-component-windows-forms.md) component allows users to select a font, as well as change its display aspects, such as its weight and size.  
   
- The font selected in the dialog box is returned in the <xref:System.Windows.Forms.FontDialog.Font%2A> property. Thus, taking advantage of the font selected by the user is as easy as reading a property.  
+The font selected in the dialog box is returned in the <xref:System.Windows.Forms.FontDialog.Font%2A> property. Thus, taking advantage of the font selected by the user is as easy as reading a property.  
   
 ### To select font properties using the FontDialog Component  
   

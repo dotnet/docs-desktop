@@ -14,19 +14,19 @@ ms.assetid: 2aa88347-c4cb-48d3-951d-a7072643283b
 
 ## In This Section  
 
- [Position a ToolTip](how-to-position-a-tooltip.md)  
+[Position a ToolTip](how-to-position-a-tooltip.md)  
   [Use the BetweenShowDelay Property](how-to-use-the-betweenshowdelay-property.md)  
   
 ## Reference  
 
- <xref:System.Windows.Controls.ToolTip>  
+<xref:System.Windows.Controls.ToolTip>  
   
- <xref:System.Windows.Controls.ToolTipService>  
+<xref:System.Windows.Controls.ToolTipService>  
   
- <xref:System.Windows.Controls.Primitives.Popup>  
+<xref:System.Windows.Controls.Primitives.Popup>  
   
 ## Related Sections  
 
- [Popup Overview](popup-overview.md)  
+[Popup Overview](popup-overview.md)  
   
- [How-to Topics](popup-how-to-topics.md)
+[How-to Topics](popup-how-to-topics.md)

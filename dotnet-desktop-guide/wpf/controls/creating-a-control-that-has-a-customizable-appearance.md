@@ -213,7 +213,7 @@ Returning to the `NumericUpDown` example, the control expects the <xref:System.W
 
 - A <xref:System.Windows.Controls.Primitives.RepeatButton> called `DownButton.`
 
- The control can be in the following states:
+The control can be in the following states:
 
 - In the `ValueStates`<xref:System.Windows.VisualStateGroup>
 

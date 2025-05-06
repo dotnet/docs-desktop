@@ -25,8 +25,8 @@ Transforms are used to rotate, scale, translate, or skew <xref:System.Windows.Fr
   
 ## In This Section  
 
- [Transforms Overview](transforms-overview.md)  
- [How-to Topics](transformations-how-to-topics.md)  
+[Transforms Overview](transforms-overview.md)  
+[How-to Topics](transformations-how-to-topics.md)  
   
 ## See also
 

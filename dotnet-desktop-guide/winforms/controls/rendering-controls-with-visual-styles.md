@@ -19,11 +19,11 @@ The .NET Framework provides support for rendering controls and other Windows use
   
 ## Rendering Classes for Common Controls  
 
- Rendering a control refers to drawing the user interface of a control. The <xref:System.Windows.Forms?displayProperty=nameWithType> namespace provides the <xref:System.Windows.Forms.ControlPaint> class for rendering some common Windows Forms controls. However, this class draws controls in the classic Windows style, which can make it difficult to maintain a consistent UI experience when drawing custom controls in applications with visual styles enabled.  
+Rendering a control refers to drawing the user interface of a control. The <xref:System.Windows.Forms?displayProperty=nameWithType> namespace provides the <xref:System.Windows.Forms.ControlPaint> class for rendering some common Windows Forms controls. However, this class draws controls in the classic Windows style, which can make it difficult to maintain a consistent UI experience when drawing custom controls in applications with visual styles enabled.  
   
- The .NET Framework 2.0 includes classes in the <xref:System.Windows.Forms?displayProperty=nameWithType> namespace that render the parts and states of common controls with visual styles. Each of these classes includes `static` methods for drawing the control or parts of the control in a particular state with the current visual style of the operating system.  
+The .NET Framework 2.0 includes classes in the <xref:System.Windows.Forms?displayProperty=nameWithType> namespace that render the parts and states of common controls with visual styles. Each of these classes includes `static` methods for drawing the control or parts of the control in a particular state with the current visual style of the operating system.  
   
- Some of these classes are designed to draw the related control regardless of whether visual styles are available. If visual styles are enabled, then the class members will draw the related control with visual styles; if visual styles are disabled, then the class members will draw the control in the classic Windows style. These classes include:  
+Some of these classes are designed to draw the related control regardless of whether visual styles are available. If visual styles are enabled, then the class members will draw the related control with visual styles; if visual styles are disabled, then the class members will draw the control in the classic Windows style. These classes include:  
   
 - <xref:System.Windows.Forms.ButtonRenderer>  
   
@@ -33,7 +33,7 @@ The .NET Framework provides support for rendering controls and other Windows use
   
 - <xref:System.Windows.Forms.RadioButtonRenderer>  
   
- Other classes can only draw the related control when visual styles are available, and their members will throw an exception if visual styles are disabled. These classes include:  
+Other classes can only draw the related control when visual styles are available, and their members will throw an exception if visual styles are disabled. These classes include:  
   
 - <xref:System.Windows.Forms.ComboBoxRenderer>  
   
@@ -47,25 +47,25 @@ The .NET Framework provides support for rendering controls and other Windows use
   
 - <xref:System.Windows.Forms.TrackBarRenderer>  
   
- For more information on using these classes to draw a control, see [How to: Use a Control Rendering Class](how-to-use-a-control-rendering-class.md).  
+For more information on using these classes to draw a control, see [How to: Use a Control Rendering Class](how-to-use-a-control-rendering-class.md).  
   
 ## Visual Style Element and Rendering Classes  
 
- The <xref:System.Windows.Forms.VisualStyles?displayProperty=nameWithType> namespace includes classes that can be used to draw and get information about any control or UI element that is supported by visual styles. Supported controls include common controls that have a rendering class in the <xref:System.Windows.Forms?displayProperty=nameWithType> namespace (see the previous section), as well as other controls, such as tab controls and rebar controls. Other supported UI elements include the parts of the **Start** menu, the taskbar, and the nonclient area of windows.  
+The <xref:System.Windows.Forms.VisualStyles?displayProperty=nameWithType> namespace includes classes that can be used to draw and get information about any control or UI element that is supported by visual styles. Supported controls include common controls that have a rendering class in the <xref:System.Windows.Forms?displayProperty=nameWithType> namespace (see the previous section), as well as other controls, such as tab controls and rebar controls. Other supported UI elements include the parts of the **Start** menu, the taskbar, and the nonclient area of windows.  
   
- The main classes of the <xref:System.Windows.Forms.VisualStyles?displayProperty=nameWithType> namespace are <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> and <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer>. <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> is a foundation class for identifying any control or user interface element supported by visual styles. In addition to <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> itself, the <xref:System.Windows.Forms.VisualStyles?displayProperty=nameWithType> namespace includes many nested classes of <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> with `static` properties that return a <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> for every state of a control, control part, or other UI element supported by visual styles.  
+The main classes of the <xref:System.Windows.Forms.VisualStyles?displayProperty=nameWithType> namespace are <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> and <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer>. <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> is a foundation class for identifying any control or user interface element supported by visual styles. In addition to <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> itself, the <xref:System.Windows.Forms.VisualStyles?displayProperty=nameWithType> namespace includes many nested classes of <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> with `static` properties that return a <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> for every state of a control, control part, or other UI element supported by visual styles.  
   
- <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> provides the methods that draw and get information about each <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> defined by the current visual style of the operating system. Information that can be retrieved about an element includes its default size, background type, and color definitions. <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> wraps the functionality of the visual styles (UxTheme) API from the Windows Shell portion of the Windows Platform SDK. For more information, see [Enabling Visual Styles](/windows/desktop/controls/cookbook-overview).  
+<xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> provides the methods that draw and get information about each <xref:System.Windows.Forms.VisualStyles.VisualStyleElement> defined by the current visual style of the operating system. Information that can be retrieved about an element includes its default size, background type, and color definitions. <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> wraps the functionality of the visual styles (UxTheme) API from the Windows Shell portion of the Windows Platform SDK. For more information, see [Enabling Visual Styles](/windows/desktop/controls/cookbook-overview).  
   
- For more information about using <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> and <xref:System.Windows.Forms.VisualStyles.VisualStyleElement>, see [How to: Render a Visual Style Element](how-to-render-a-visual-style-element.md).  
+For more information about using <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> and <xref:System.Windows.Forms.VisualStyles.VisualStyleElement>, see [How to: Render a Visual Style Element](how-to-render-a-visual-style-element.md).  
   
 ## Enabling Visual Styles  
 
- To enable visual styles for an application written for the .NET Framework version 1.0, programmers must include an application manifest that specifies that ComCtl32.dll version 6 or later will be used to draw controls. Applications built with the .NET Framework version 1.1 or later can use the <xref:System.Windows.Forms.Application.EnableVisualStyles%2A?displayProperty=nameWithType> method of the <xref:System.Windows.Forms.Application> class.  
+To enable visual styles for an application written for the .NET Framework version 1.0, programmers must include an application manifest that specifies that ComCtl32.dll version 6 or later will be used to draw controls. Applications built with the .NET Framework version 1.1 or later can use the <xref:System.Windows.Forms.Application.EnableVisualStyles%2A?displayProperty=nameWithType> method of the <xref:System.Windows.Forms.Application> class.  
   
 ## Checking for Visual Styles Support  
 
- The <xref:System.Windows.Forms.Application.RenderWithVisualStyles%2A> property of the <xref:System.Windows.Forms.Application> class indicates whether the current application is drawing controls with visual styles. When painting a custom control, you can check the value of <xref:System.Windows.Forms.Application.RenderWithVisualStyles%2A> to determine whether you should render your control with or without visual styles. The following table lists the four conditions that must exist for <xref:System.Windows.Forms.Application.RenderWithVisualStyles%2A> to return `true`.  
+The <xref:System.Windows.Forms.Application.RenderWithVisualStyles%2A> property of the <xref:System.Windows.Forms.Application> class indicates whether the current application is drawing controls with visual styles. When painting a custom control, you can check the value of <xref:System.Windows.Forms.Application.RenderWithVisualStyles%2A> to determine whether you should render your control with or without visual styles. The following table lists the four conditions that must exist for <xref:System.Windows.Forms.Application.RenderWithVisualStyles%2A> to return `true`.  
   
 |Condition|Notes|  
 |---------------|-----------|  
@@ -74,7 +74,7 @@ The .NET Framework provides support for rendering controls and other Windows use
 |Visual styles are enabled in the application.|Visual styles can be enabled in an application by calling the <xref:System.Windows.Forms.Application.EnableVisualStyles%2A?displayProperty=nameWithType> method or by using an application manifest that specifies that ComCtl32.dll version 6 or later will be used to draw controls.|  
 |Visual styles are being used to draw the client area of application windows.|To verify this condition separately, use the <xref:System.Windows.Forms.Application.VisualStyleState%2A> property of the <xref:System.Windows.Forms.Application> class and verify that it has the value <xref:System.Windows.Forms.VisualStyles.VisualStyleState.ClientAreaEnabled?displayProperty=nameWithType> or <xref:System.Windows.Forms.VisualStyles.VisualStyleState.ClientAndNonClientAreasEnabled?displayProperty=nameWithType>.|  
   
- To determine when a user enables or disables visual styles, or switches from one visual style to another, check for the <xref:Microsoft.Win32.UserPreferenceCategory.VisualStyle?displayProperty=nameWithType> value in the handlers for the <xref:Microsoft.Win32.SystemEvents.UserPreferenceChanging?displayProperty=nameWithType> or <xref:Microsoft.Win32.SystemEvents.UserPreferenceChanged?displayProperty=nameWithType> events.  
+To determine when a user enables or disables visual styles, or switches from one visual style to another, check for the <xref:Microsoft.Win32.UserPreferenceCategory.VisualStyle?displayProperty=nameWithType> value in the handlers for the <xref:Microsoft.Win32.SystemEvents.UserPreferenceChanging?displayProperty=nameWithType> or <xref:Microsoft.Win32.SystemEvents.UserPreferenceChanged?displayProperty=nameWithType> events.  
   
 > [!IMPORTANT]
 > If you want to use <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> to render a control or UI element when the user enables or switches visual styles, make sure that you do this when handling the <xref:Microsoft.Win32.SystemEvents.UserPreferenceChanged> event instead of the <xref:Microsoft.Win32.SystemEvents.UserPreferenceChanging> event. An exception will be thrown if you use the <xref:System.Windows.Forms.VisualStyles.VisualStyleRenderer> class when handling <xref:Microsoft.Win32.SystemEvents.UserPreferenceChanging>.  

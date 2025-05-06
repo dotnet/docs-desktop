@@ -19,11 +19,11 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
   
 ## StatusBar Parts  
 
- The <xref:System.Windows.Controls.Primitives.StatusBar> control does not have any named parts.  
+The <xref:System.Windows.Controls.Primitives.StatusBar> control does not have any named parts.  
   
 ## StatusBar States  
 
- The following table lists the visual states for the <xref:System.Windows.Controls.Primitives.StatusBar> control.  
+The following table lists the visual states for the <xref:System.Windows.Controls.Primitives.StatusBar> control.  
   
 |VisualState Name|VisualStateGroup Name|Description|  
 |-|-|-|  
@@ -33,11 +33,11 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
   
 ## StatusBarItem Parts  
 
- The <xref:System.Windows.Controls.Primitives.StatusBarItem> control does not have any named parts.  
+The <xref:System.Windows.Controls.Primitives.StatusBarItem> control does not have any named parts.  
   
 ## StatusBarItem States
 
- The following table lists the visual states for the <xref:System.Windows.Controls.Primitives.StatusBarItem> control.  
+The following table lists the visual states for the <xref:System.Windows.Controls.Primitives.StatusBarItem> control.  
   
 |VisualState Name|VisualStateGroup Name|Description|  
 |-|-|-|  
@@ -47,15 +47,15 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
   
 ## StatusBar ControlTemplate Example  
 
- The following example shows how to define a <xref:System.Windows.Controls.ControlTemplate> for the <xref:System.Windows.Controls.Primitives.StatusBar> control.  
+The following example shows how to define a <xref:System.Windows.Controls.ControlTemplate> for the <xref:System.Windows.Controls.Primitives.StatusBar> control.  
   
- [!code-xaml[ControlTemplateExamples#StatusBar](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/statusbar.xaml#statusbar)]  
+[!code-xaml[ControlTemplateExamples#StatusBar](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/statusbar.xaml#statusbar)]  
   
- The <xref:System.Windows.Controls.ControlTemplate> uses one or more of the following resources.  
+The <xref:System.Windows.Controls.ControlTemplate> uses one or more of the following resources.  
   
- [!code-xaml[ControlTemplateExamples#Resources](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/shared.xaml#resources)]  
+[!code-xaml[ControlTemplateExamples#Resources](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/shared.xaml#resources)]  
   
- For the complete sample, see [Styling with ControlTemplates Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Styles%20&%20Templates/IntroToStylingAndTemplating).  
+For the complete sample, see [Styling with ControlTemplates Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Styles%20&%20Templates/IntroToStylingAndTemplating).  
   
 ## See also
 

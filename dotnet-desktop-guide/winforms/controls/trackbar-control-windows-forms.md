@@ -15,15 +15,15 @@ The Windows Forms `TrackBar` control (also sometimes called a "slider" control) 
   
 ## In This Section  
 
- [TrackBar Control Overview](trackbar-control-overview-windows-forms.md)  
- Introduces the general concepts of the `TrackBar` control, which allows users to navigate through information by visually adjusting a numeric setting.  
+[TrackBar Control Overview](trackbar-control-overview-windows-forms.md)  
+Introduces the general concepts of the `TrackBar` control, which allows users to navigate through information by visually adjusting a numeric setting.  
   
 ## Reference  
 
- <xref:System.Windows.Forms.TrackBar> class  
- Provides reference information on the class and its members.  
+<xref:System.Windows.Forms.TrackBar> class  
+Provides reference information on the class and its members.  
   
 ## Related Sections  
 
- [Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)  
- Provides a complete list of Windows Forms controls, with links to information on their use.
+[Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)  
+Provides a complete list of Windows Forms controls, with links to information on their use.

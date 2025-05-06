@@ -17,42 +17,42 @@ This section provides topics that demonstrate various programming tasks involvin
   
 ## In This Section  
 
- [How to: Add ToolTips to Individual Cells in a Windows Forms DataGridView Control](add-tooltips-to-individual-cells-in-a-wf-datagridview-control.md)  
- Describes how to handle the <xref:System.Windows.Forms.DataGridView.CellFormatting> event to provide different ToolTips for individual cells.  
+[How to: Add ToolTips to Individual Cells in a Windows Forms DataGridView Control](add-tooltips-to-individual-cells-in-a-wf-datagridview-control.md)  
+Describes how to handle the <xref:System.Windows.Forms.DataGridView.CellFormatting> event to provide different ToolTips for individual cells.  
   
- [How to: Perform a Custom Action Based on Changes in a Cell of a Windows Forms DataGridView Control](perform-a-custom-action-based-on-changes-in-a-cell-of-a-datagrid.md)  
- Describes how to handle the <xref:System.Windows.Forms.DataGridView.CellValueChanged> and <xref:System.Windows.Forms.DataGridView.CellStateChanged> events.  
+[How to: Perform a Custom Action Based on Changes in a Cell of a Windows Forms DataGridView Control](perform-a-custom-action-based-on-changes-in-a-cell-of-a-datagrid.md)  
+Describes how to handle the <xref:System.Windows.Forms.DataGridView.CellValueChanged> and <xref:System.Windows.Forms.DataGridView.CellStateChanged> events.  
   
- [How to: Manipulate Bands in the Windows Forms DataGridView Control](how-to-manipulate-bands-in-the-windows-forms-datagridview-control.md)  
- Describes how to program with objects of type <xref:System.Windows.Forms.DataGridViewBand>, which is the base type for rows and columns.  
+[How to: Manipulate Bands in the Windows Forms DataGridView Control](how-to-manipulate-bands-in-the-windows-forms-datagridview-control.md)  
+Describes how to program with objects of type <xref:System.Windows.Forms.DataGridViewBand>, which is the base type for rows and columns.  
   
- [How to: Manipulate Rows in the Windows Forms DataGridView Control](how-to-manipulate-rows-in-the-windows-forms-datagridview-control.md)  
- Describes how to program with objects of type `DataGridViewRow`.  
+[How to: Manipulate Rows in the Windows Forms DataGridView Control](how-to-manipulate-rows-in-the-windows-forms-datagridview-control.md)  
+Describes how to program with objects of type `DataGridViewRow`.  
   
- [How to: Manipulate Columns in the Windows Forms DataGridView Control](how-to-manipulate-columns-in-the-windows-forms-datagridview-control.md)  
- Describes how to program with objects of type `DataGridViewColumn`.  
+[How to: Manipulate Columns in the Windows Forms DataGridView Control](how-to-manipulate-columns-in-the-windows-forms-datagridview-control.md)  
+Describes how to program with objects of type `DataGridViewColumn`.  
   
- [How to: Work with Image Columns in the Windows Forms DataGridView Control](how-to-work-with-image-columns-in-the-windows-forms-datagridview-control.md)  
- Describes how to program with the `DataGridViewImageColumn` class.  
+[How to: Work with Image Columns in the Windows Forms DataGridView Control](how-to-work-with-image-columns-in-the-windows-forms-datagridview-control.md)  
+Describes how to program with the `DataGridViewImageColumn` class.  
   
 ## Reference  
 
- <xref:System.Windows.Forms.DataGridView>  
- Provides reference documentation for the <xref:System.Windows.Forms.DataGridView> control.  
+<xref:System.Windows.Forms.DataGridView>  
+Provides reference documentation for the <xref:System.Windows.Forms.DataGridView> control.  
   
- <xref:System.Windows.Forms.DataGridViewCell>  
- Provides reference documentation for the <xref:System.Windows.Forms.DataGridViewCell> class.  
+<xref:System.Windows.Forms.DataGridViewCell>  
+Provides reference documentation for the <xref:System.Windows.Forms.DataGridViewCell> class.  
   
- <xref:System.Windows.Forms.DataGridViewRow>  
- Provides reference documentation for the <xref:System.Windows.Forms.DataGridViewRow> class.  
+<xref:System.Windows.Forms.DataGridViewRow>  
+Provides reference documentation for the <xref:System.Windows.Forms.DataGridViewRow> class.  
   
- <xref:System.Windows.Forms.DataGridViewColumn>  
- Provides reference documentation for the <xref:System.Windows.Forms.DataGridViewColumn> class.  
+<xref:System.Windows.Forms.DataGridViewColumn>  
+Provides reference documentation for the <xref:System.Windows.Forms.DataGridViewColumn> class.  
   
 ## Related Sections  
 
- [Basic Column, Row, and Cell Features in the Windows Forms DataGridView Control](basic-column-row-and-cell-features-wf-datagridview-control.md)  
- Provides topics that describe commonly used cell, row, and column properties.  
+[Basic Column, Row, and Cell Features in the Windows Forms DataGridView Control](basic-column-row-and-cell-features-wf-datagridview-control.md)  
+Provides topics that describe commonly used cell, row, and column properties.  
   
 ## See also
 

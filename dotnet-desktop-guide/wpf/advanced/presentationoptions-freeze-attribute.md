@@ -34,11 +34,11 @@ Sets the <xref:System.Windows.Freezable.IsFrozen%2A> state to `true` on the cont
   
 ## Remarks  
 
- The `Freeze` attribute is the only attribute or other programming element defined in the `http://schemas.microsoft.com/winfx/2006/xaml/presentation/options` XML namespace. The `Freeze` attribute exists in this special namespace specifically so that it can be designated as ignorable, using [mc:Ignorable Attribute](mc-ignorable-attribute.md) as part of the root element declarations. The reason that `Freeze` must be able to be ignorable is because not all XAML processor implementations are able to freeze a <xref:System.Windows.Freezable> at load time; this capability is not part of the XAML specification.  
+The `Freeze` attribute is the only attribute or other programming element defined in the `http://schemas.microsoft.com/winfx/2006/xaml/presentation/options` XML namespace. The `Freeze` attribute exists in this special namespace specifically so that it can be designated as ignorable, using [mc:Ignorable Attribute](mc-ignorable-attribute.md) as part of the root element declarations. The reason that `Freeze` must be able to be ignorable is because not all XAML processor implementations are able to freeze a <xref:System.Windows.Freezable> at load time; this capability is not part of the XAML specification.  
   
- The ability to process the `Freeze` attribute is specifically built in to the XAML processor that processes XAML for compiled applications. The attribute is not supported by any class, and the attribute syntax is not extensible or modifiable. If you are implementing your own XAML processor you can choose to parallel the freezing behavior of the WPF XAML processor when processing the `Freeze` attribute on <xref:System.Windows.Freezable> elements at load time.  
+The ability to process the `Freeze` attribute is specifically built in to the XAML processor that processes XAML for compiled applications. The attribute is not supported by any class, and the attribute syntax is not extensible or modifiable. If you are implementing your own XAML processor you can choose to parallel the freezing behavior of the WPF XAML processor when processing the `Freeze` attribute on <xref:System.Windows.Freezable> elements at load time.  
   
- Any value for the `Freeze` attribute other than `true` (not case sensitive) generates a load time error. (Specifying the `Freeze` attribute as `false` is not an error, but that is already the default, so setting to `false` does nothing).  
+Any value for the `Freeze` attribute other than `true` (not case sensitive) generates a load time error. (Specifying the `Freeze` attribute as `false` is not an error, but that is already the default, so setting to `false` does nothing).  
   
 ## See also
 

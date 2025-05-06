@@ -16,7 +16,7 @@ ms.assetid: a69118be-63b0-445c-9fb6-ab8cc958e531
 
 This API supports the Windows Presentation Foundation (WPF) infrastructure and is not intended to be used directly from your code.  
   
- Used by the Windows Presentation Foundation (WPF) infrastructure for windows management.  
+Used by the Windows Presentation Foundation (WPF) infrastructure for windows management.  
   
 ## Syntax  
   
@@ -28,16 +28,16 @@ void __stdcall SetFakeActiveWindow(
   
 ## Parameters  
 
- hwnd  
- A window handle.  
+hwnd  
+A window handle.  
   
 ## Requirements  
 
- **Platforms:** See [.NET Framework System Requirements](/dotnet/framework/get-started/system-requirements).  
+**Platforms:** See [.NET Framework System Requirements](/dotnet/framework/get-started/system-requirements).  
   
- **DLL:** PresentationHost_v0400.dll  
+**DLL:** PresentationHost_v0400.dll  
   
- **.NET Framework Version:** Available since 4  
+**.NET Framework Version:** Available since 4  
   
 ## See also
 

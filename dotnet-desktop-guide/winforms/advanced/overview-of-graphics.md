@@ -15,7 +15,7 @@ GDI+ is an application programming interface (API) that forms the subsystem of t
   
 ## Managed Class Interface  
 
- The GDI+ API is exposed through a set of classes deployed as managed code. This set of classes is called the *managed class interface* to GDI+. The following namespaces make up the managed class interface:  
+The GDI+ API is exposed through a set of classes deployed as managed code. This set of classes is called the *managed class interface* to GDI+. The following namespaces make up the managed class interface:  
   
 - <xref:System.Drawing>  
   
@@ -27,7 +27,7 @@ GDI+ is an application programming interface (API) that forms the subsystem of t
   
 - <xref:System.Drawing.Printing>  
   
- With a Graphics Device Interface, such as GDI+, you can display information on a screen or printer without having to be concerned about the details of a particular display device. The programmer makes calls to methods provided by GDI+ classes. Those methods, in turn, make the appropriate calls to specific device drivers. GDI+ insulates the application from the graphics hardware. It is this insulation that enables a programmer to create device-independent applications.  
+With a Graphics Device Interface, such as GDI+, you can display information on a screen or printer without having to be concerned about the details of a particular display device. The programmer makes calls to methods provided by GDI+ classes. Those methods, in turn, make the appropriate calls to specific device drivers. GDI+ insulates the application from the graphics hardware. It is this insulation that enables a programmer to create device-independent applications.  
   
 ## See also
 

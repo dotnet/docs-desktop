@@ -54,7 +54,7 @@ End Sub
 
 ## Compiling the Code
 
- This example requires:
+This example requires:
 
 - A Windows form.
 

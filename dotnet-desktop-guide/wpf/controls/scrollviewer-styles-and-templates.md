@@ -18,7 +18,7 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
   
 ## ScrollViewer Parts  
 
- The following table lists the named parts for the <xref:System.Windows.Controls.ScrollViewer> control.  
+The following table lists the named parts for the <xref:System.Windows.Controls.ScrollViewer> control.  
   
 |Part|Type|Description|  
 |-|-|-|  
@@ -28,7 +28,7 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
   
 ## ScrollViewer States  
 
- The following table lists the visual states for the <xref:System.Windows.Controls.ScrollViewer> control.  
+The following table lists the visual states for the <xref:System.Windows.Controls.ScrollViewer> control.  
   
 |VisualState Name|VisualStateGroup Name|Description|  
 |-|-|-|  
@@ -38,15 +38,15 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
   
 ## ScrollViewer ControlTemplate Example  
 
- The following example shows how to define a <xref:System.Windows.Controls.ControlTemplate> for the <xref:System.Windows.Controls.ScrollViewer> control.  
+The following example shows how to define a <xref:System.Windows.Controls.ControlTemplate> for the <xref:System.Windows.Controls.ScrollViewer> control.  
   
- [!code-xaml[ControlTemplateExamples#ScrollViewer](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/scrollviewer.xaml#scrollviewer)]  
+[!code-xaml[ControlTemplateExamples#ScrollViewer](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/scrollviewer.xaml#scrollviewer)]  
   
- The preceding example uses one or more of the following resources.  
+The preceding example uses one or more of the following resources.  
   
- [!code-xaml[ControlTemplateExamples#Resources](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/shared.xaml#resources)]  
+[!code-xaml[ControlTemplateExamples#Resources](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/shared.xaml#resources)]  
   
- For the complete sample, see [Styling with ControlTemplates Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Styles%20&%20Templates/IntroToStylingAndTemplating).  
+For the complete sample, see [Styling with ControlTemplates Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Styles%20&%20Templates/IntroToStylingAndTemplating).  
   
 ## See also
 

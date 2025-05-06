@@ -16,13 +16,13 @@ You can use Visual Studio to create Windows-based applications that support bi-d
 
 ## Culture Support
 
- Culture and UI culture settings determine how an application works with dates, times, currency, and other information. Support for culture and UI culture is the same for bi-directional languages as it is for any other languages. For more information, see [Culture-specific classes for global Windows forms and web forms](/visualstudio/ide/globalizing-and-localizing-applications).
+Culture and UI culture settings determine how an application works with dates, times, currency, and other information. Support for culture and UI culture is the same for bi-directional languages as it is for any other languages. For more information, see [Culture-specific classes for global Windows forms and web forms](/visualstudio/ide/globalizing-and-localizing-applications).
 
 ## RightToLeft and RightToLeftLayout Properties
 
- The base <xref:System.Windows.Forms.Control> class, from which forms derive, includes a <xref:System.Windows.Forms.Control.RightToLeft%2A> property that you can set to change the reading order of a form and its controls. If you set the form's <xref:System.Windows.Forms.Control.RightToLeft%2A> property, by default controls on the form inherit this setting. However, you can also set the <xref:System.Windows.Forms.Control.RightToLeft%2A> property individually on most controls. Also see [How to: Display Right-to-Left Text in Windows Forms for Globalization](/previous-versions/visualstudio/visual-studio-2010/7d3337xw(v=vs.100)).
+The base <xref:System.Windows.Forms.Control> class, from which forms derive, includes a <xref:System.Windows.Forms.Control.RightToLeft%2A> property that you can set to change the reading order of a form and its controls. If you set the form's <xref:System.Windows.Forms.Control.RightToLeft%2A> property, by default controls on the form inherit this setting. However, you can also set the <xref:System.Windows.Forms.Control.RightToLeft%2A> property individually on most controls. Also see [How to: Display Right-to-Left Text in Windows Forms for Globalization](/previous-versions/visualstudio/visual-studio-2010/7d3337xw(v=vs.100)).
 
- The effect of the <xref:System.Windows.Forms.Control.RightToLeft%2A> property can differ from one control to another. In some controls the property only sets the reading order, as in the <xref:System.Windows.Forms.Button>, <xref:System.Windows.Forms.TreeView> and <xref:System.Windows.Forms.ToolTip> controls. In other controls, the <xref:System.Windows.Forms.Control.RightToLeft%2A> property changes both reading order and layout. This includes the <xref:System.Windows.Forms.RadioButton>, <xref:System.Windows.Forms.ComboBox> and <xref:System.Windows.Forms.CheckBox> controls. Other controls require that the <xref:System.Windows.Forms.Form.RightToLeftLayout%2A> property be applied to mirror its layout from right to left. The following table provides details on how the <xref:System.Windows.Forms.Control.RightToLeft%2A> and <xref:System.Windows.Forms.Form.RightToLeftLayout%2A> properties affect individual Windows Forms controls.
+The effect of the <xref:System.Windows.Forms.Control.RightToLeft%2A> property can differ from one control to another. In some controls the property only sets the reading order, as in the <xref:System.Windows.Forms.Button>, <xref:System.Windows.Forms.TreeView> and <xref:System.Windows.Forms.ToolTip> controls. In other controls, the <xref:System.Windows.Forms.Control.RightToLeft%2A> property changes both reading order and layout. This includes the <xref:System.Windows.Forms.RadioButton>, <xref:System.Windows.Forms.ComboBox> and <xref:System.Windows.Forms.CheckBox> controls. Other controls require that the <xref:System.Windows.Forms.Form.RightToLeftLayout%2A> property be applied to mirror its layout from right to left. The following table provides details on how the <xref:System.Windows.Forms.Control.RightToLeft%2A> and <xref:System.Windows.Forms.Form.RightToLeftLayout%2A> properties affect individual Windows Forms controls.
 
 |Control/Component|Effect of RightToLeft property|Effect of RightToLeftLayout property|Requires mirroring?|
 |------------------------|------------------------------------|------------------------------------------|-------------------------|
@@ -77,31 +77,31 @@ You can use Visual Studio to create Windows-based applications that support bi-d
 
 ## Encoding
 
- Windows Forms support Unicode, so you can include any character set when you create your bi-directional applications. However, not all Windows Forms controls support Unicode on all platforms.
+Windows Forms support Unicode, so you can include any character set when you create your bi-directional applications. However, not all Windows Forms controls support Unicode on all platforms.
 
 ## GDI+
 
- You can use GDI+ to draw text with right-to-left reading order. The <xref:System.Drawing.Graphics.DrawString%2A> method, which is used to draw text, supports a `StringFormat` parameter that you can set to the <xref:System.Drawing.StringFormatFlags.DirectionRightToLeft> member of the <xref:System.Drawing.StringFormatFlags> enumeration in order to reverse the point of origin for the text.
+You can use GDI+ to draw text with right-to-left reading order. The <xref:System.Drawing.Graphics.DrawString%2A> method, which is used to draw text, supports a `StringFormat` parameter that you can set to the <xref:System.Drawing.StringFormatFlags.DirectionRightToLeft> member of the <xref:System.Drawing.StringFormatFlags> enumeration in order to reverse the point of origin for the text.
 
 ## Common Dialog Boxes
 
- System tools such as the File Open dialog box are under the control of Windows. They inherit language elements from the operating system. If you are using a version of Windows with the correct language settings, these dialog boxes will work correctly with bi-directional languages.
+System tools such as the File Open dialog box are under the control of Windows. They inherit language elements from the operating system. If you are using a version of Windows with the correct language settings, these dialog boxes will work correctly with bi-directional languages.
 
- Similarly, message boxes go through the operating system and support bi-directional text. The captions on message box buttons are based on the current language setting. By default, message boxes do not use right-to-left reading order, but you can specify a parameter to change the reading order when the message boxes are displayed.
+Similarly, message boxes go through the operating system and support bi-directional text. The captions on message box buttons are based on the current language setting. By default, message boxes do not use right-to-left reading order, but you can specify a parameter to change the reading order when the message boxes are displayed.
 
 ## RightToLeft, Scrollbars, and ScrollableControl
 
- There is currently a limitation in Windows Forms that prevents all classes derived from <xref:System.Windows.Forms.ScrollableControl> from acting properly when both <xref:System.Windows.Forms.Control.RightToLeft%2A> is enabled and <xref:System.Windows.Forms.ScrollableControl.AutoScroll%2A> is set to <xref:System.Windows.Forms.RightToLeft.Yes>. For example, let's say that you place a control such as <xref:System.Windows.Forms.Panel>—or a container class derived from <xref:System.Windows.Forms.Panel> (such as <xref:System.Windows.Forms.FlowLayoutPanel> or <xref:System.Windows.Forms.TableLayoutPanel>)—on your form. If you set <xref:System.Windows.Forms.ScrollableControl.AutoScroll%2A> on the container to <xref:System.Windows.Forms.RightToLeft.Yes> and then set the <xref:System.Windows.Forms.Control.Anchor%2A> property on one or more of the controls inside of the container to <xref:System.Windows.Forms.AnchorStyles.Right>, then no scrollbar ever appears. The class derived from <xref:System.Windows.Forms.ScrollableControl> acts as if <xref:System.Windows.Forms.ScrollableControl.AutoScroll%2A> were set to <xref:System.Windows.Forms.RightToLeft.No>.
+There is currently a limitation in Windows Forms that prevents all classes derived from <xref:System.Windows.Forms.ScrollableControl> from acting properly when both <xref:System.Windows.Forms.Control.RightToLeft%2A> is enabled and <xref:System.Windows.Forms.ScrollableControl.AutoScroll%2A> is set to <xref:System.Windows.Forms.RightToLeft.Yes>. For example, let's say that you place a control such as <xref:System.Windows.Forms.Panel>—or a container class derived from <xref:System.Windows.Forms.Panel> (such as <xref:System.Windows.Forms.FlowLayoutPanel> or <xref:System.Windows.Forms.TableLayoutPanel>)—on your form. If you set <xref:System.Windows.Forms.ScrollableControl.AutoScroll%2A> on the container to <xref:System.Windows.Forms.RightToLeft.Yes> and then set the <xref:System.Windows.Forms.Control.Anchor%2A> property on one or more of the controls inside of the container to <xref:System.Windows.Forms.AnchorStyles.Right>, then no scrollbar ever appears. The class derived from <xref:System.Windows.Forms.ScrollableControl> acts as if <xref:System.Windows.Forms.ScrollableControl.AutoScroll%2A> were set to <xref:System.Windows.Forms.RightToLeft.No>.
 
- Currently, the only workaround is to nest the <xref:System.Windows.Forms.ScrollableControl> inside another <xref:System.Windows.Forms.ScrollableControl>. For instance, if you need <xref:System.Windows.Forms.TableLayoutPanel> to work in this situation, you can place it inside of a <xref:System.Windows.Forms.Panel> control and set <xref:System.Windows.Forms.ScrollableControl.AutoScroll%2A> on the <xref:System.Windows.Forms.Panel> to <xref:System.Windows.Forms.RightToLeft.Yes>.
+Currently, the only workaround is to nest the <xref:System.Windows.Forms.ScrollableControl> inside another <xref:System.Windows.Forms.ScrollableControl>. For instance, if you need <xref:System.Windows.Forms.TableLayoutPanel> to work in this situation, you can place it inside of a <xref:System.Windows.Forms.Panel> control and set <xref:System.Windows.Forms.ScrollableControl.AutoScroll%2A> on the <xref:System.Windows.Forms.Panel> to <xref:System.Windows.Forms.RightToLeft.Yes>.
 
 ## Mirroring
 
- *Mirroring* refers to reversing the layout of UI elements so that they flow from right to left. In a mirrored Windows Form, for example, the Minimize, Maximize, and Close buttons appear left-most on the title bar, not right-most.
+*Mirroring* refers to reversing the layout of UI elements so that they flow from right to left. In a mirrored Windows Form, for example, the Minimize, Maximize, and Close buttons appear left-most on the title bar, not right-most.
 
- Setting a form or control's <xref:System.Windows.Forms.Control.RightToLeft%2A> property to `true` reverses the reading order of elements on a form, but this setting does not reverse the layout to be right-to-left— that is, it does not cause mirroring. For example, setting this property does not move the **Minimize**, **Maximize**, and **Close** buttons in the form's title bar to the left side of the form. Similarly, some controls, such as the <xref:System.Windows.Forms.TreeView> control, require mirroring in order to change their display to be appropriate for Arabic or Hebrew. You can mirror these controls by settings the <xref:System.Windows.Forms.Form.RightToLeftLayout%2A> property.
+Setting a form or control's <xref:System.Windows.Forms.Control.RightToLeft%2A> property to `true` reverses the reading order of elements on a form, but this setting does not reverse the layout to be right-to-left— that is, it does not cause mirroring. For example, setting this property does not move the **Minimize**, **Maximize**, and **Close** buttons in the form's title bar to the left side of the form. Similarly, some controls, such as the <xref:System.Windows.Forms.TreeView> control, require mirroring in order to change their display to be appropriate for Arabic or Hebrew. You can mirror these controls by settings the <xref:System.Windows.Forms.Form.RightToLeftLayout%2A> property.
 
- You can create mirrored versions of the following controls:
+You can create mirrored versions of the following controls:
 
 - <xref:System.Windows.Forms.ColumnHeader.ListView%2A>
 
@@ -117,7 +117,7 @@ You can use Visual Studio to create Windows-based applications that support bi-d
 
 - <xref:System.Windows.Forms.TreeView>
 
- Some controls are sealed. Therefore, you cannot derive a new control from them. These include the <xref:System.Windows.Forms.ImageList> and <xref:System.Windows.Forms.ProgressBar> controls.
+Some controls are sealed. Therefore, you cannot derive a new control from them. These include the <xref:System.Windows.Forms.ImageList> and <xref:System.Windows.Forms.ProgressBar> controls.
 
 ## See also
 

@@ -18,18 +18,18 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
   
 ## ComboBox Parts  
 
- The following table lists the named parts for the <xref:System.Windows.Controls.ComboBox> control.  
+The following table lists the named parts for the <xref:System.Windows.Controls.ComboBox> control.  
   
 |Part|Type|Description|  
 |-|-|-|  
 |PART_EditableTextBox|<xref:System.Windows.Controls.TextBox>|Contains the text of the <xref:System.Windows.Controls.ComboBox>.|  
 |PART_Popup|<xref:System.Windows.Controls.Primitives.Popup>|The drop-down that contains the items in the combo box.|  
   
- When you create a <xref:System.Windows.Controls.ControlTemplate> for a <xref:System.Windows.Controls.ComboBox>, your template might contain an <xref:System.Windows.Controls.ItemsPresenter> within a <xref:System.Windows.Controls.ScrollViewer>. (The <xref:System.Windows.Controls.ItemsPresenter> displays each item in the <xref:System.Windows.Controls.ComboBox>; the <xref:System.Windows.Controls.ScrollViewer> enables scrolling within the control).  If the <xref:System.Windows.Controls.ItemsPresenter> is not the direct child of the <xref:System.Windows.Controls.ScrollViewer>, you must give the <xref:System.Windows.Controls.ItemsPresenter> the name, `ItemsPresenter`.  
+When you create a <xref:System.Windows.Controls.ControlTemplate> for a <xref:System.Windows.Controls.ComboBox>, your template might contain an <xref:System.Windows.Controls.ItemsPresenter> within a <xref:System.Windows.Controls.ScrollViewer>. (The <xref:System.Windows.Controls.ItemsPresenter> displays each item in the <xref:System.Windows.Controls.ComboBox>; the <xref:System.Windows.Controls.ScrollViewer> enables scrolling within the control).  If the <xref:System.Windows.Controls.ItemsPresenter> is not the direct child of the <xref:System.Windows.Controls.ScrollViewer>, you must give the <xref:System.Windows.Controls.ItemsPresenter> the name, `ItemsPresenter`.  
   
 ## ComboBox States  
 
- The following table lists the states for the <xref:System.Windows.Controls.ComboBox> control.  
+The following table lists the states for the <xref:System.Windows.Controls.ComboBox> control.  
   
 |VisualState Name|VisualStateGroup Name|Description|  
 |-|-|-|  
@@ -47,11 +47,11 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
   
 ## ComboBoxItem Parts  
 
- The <xref:System.Windows.Controls.ComboBoxItem> control does not have any named parts.  
+The <xref:System.Windows.Controls.ComboBoxItem> control does not have any named parts.  
   
 ## ComboBoxItem States  
 
- The following table lists the states for the <xref:System.Windows.Controls.ComboBoxItem> control.  
+The following table lists the states for the <xref:System.Windows.Controls.ComboBoxItem> control.  
   
 |VisualState Name|VisualStateGroup Name|Description|  
 |-|-|-|  
@@ -69,15 +69,15 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
   
 ## ComboBox ControlTemplate Example  
 
- The following example shows how to define a <xref:System.Windows.Controls.ControlTemplate> for the <xref:System.Windows.Controls.ComboBox> control and associated types.  
+The following example shows how to define a <xref:System.Windows.Controls.ControlTemplate> for the <xref:System.Windows.Controls.ComboBox> control and associated types.  
   
- [!code-xaml[ControlTemplateExamples#ComboBox](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/combobox.xaml#combobox)]  
+[!code-xaml[ControlTemplateExamples#ComboBox](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/combobox.xaml#combobox)]  
   
- The preceding example uses one or more of the following resources.  
+The preceding example uses one or more of the following resources.  
   
- [!code-xaml[ControlTemplateExamples#Resources](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/shared.xaml#resources)]  
+[!code-xaml[ControlTemplateExamples#Resources](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/shared.xaml#resources)]  
   
- For the complete sample, see [Styling with ControlTemplates Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Styles%20&%20Templates/IntroToStylingAndTemplating).  
+For the complete sample, see [Styling with ControlTemplates Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Styles%20&%20Templates/IntroToStylingAndTemplating).  
   
 ## See also
 

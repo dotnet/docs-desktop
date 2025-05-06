@@ -18,8 +18,8 @@ The <xref:System.Windows.Controls.Frame> control supports content navigation wit
   
 ## Reference  
 
- <xref:System.Windows.Controls.Frame>  
+<xref:System.Windows.Controls.Frame>  
   
 ## Related Sections  
 
- [Navigation Overview](../app-development/navigation-overview.md)
+[Navigation Overview](../app-development/navigation-overview.md)

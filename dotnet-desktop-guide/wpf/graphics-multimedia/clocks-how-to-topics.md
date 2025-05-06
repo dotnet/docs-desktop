@@ -18,22 +18,22 @@ The following topics describe how to use a <xref:System.Windows.Media.Animation.
   
 ## In This Section  
 
- [Animate a Property by Using an AnimationClock](how-to-animate-a-property-by-using-an-animationclock.md)  
- [Interactively Control a Clock](how-to-interactively-control-a-clock.md)  
- [Seek a Clock Synchronously](how-to-seek-a-clock-synchronously.md)  
+[Animate a Property by Using an AnimationClock](how-to-animate-a-property-by-using-an-animationclock.md)  
+[Interactively Control a Clock](how-to-interactively-control-a-clock.md)  
+[Seek a Clock Synchronously](how-to-seek-a-clock-synchronously.md)  
   
 ## Reference  
 
- <xref:System.Windows.Media.Animation.Clock>  
+<xref:System.Windows.Media.Animation.Clock>  
   
- <xref:System.Windows.Media.Animation.Storyboard>  
+<xref:System.Windows.Media.Animation.Storyboard>  
   
- <xref:System.Windows.Media.Animation>  
+<xref:System.Windows.Media.Animation>  
   
- <xref:System.Windows.Media.Animation.Timeline>  
+<xref:System.Windows.Media.Animation.Timeline>  
   
 ## Related Sections  
 
- [Animation Overview](animation-overview.md)  
+[Animation Overview](animation-overview.md)  
   
- [Storyboards Overview](storyboards-overview.md)
+[Storyboards Overview](storyboards-overview.md)

@@ -15,7 +15,7 @@ description: Learn how to create an MDI Window list with MenuStrip of all the ac
 
 Use the multiple-document interface (MDI) to create applications that can open several documents at the same time and copy and paste content from one document to the other.  
   
- This procedure shows you how to create a list of all the active child forms on the parent's Window menu.  
+This procedure shows you how to create a list of all the active child forms on the parent's Window menu.  
   
 ### To create an MDI Window list on a MenuStrip  
   
@@ -60,7 +60,7 @@ Use the multiple-document interface (MDI) to create applications that can open s
   
 ## Compiling the Code  
 
- This example requires:  
+This example requires:  
   
 - Two <xref:System.Windows.Forms.Form> controls named `Form1` and `Form2`.  
   

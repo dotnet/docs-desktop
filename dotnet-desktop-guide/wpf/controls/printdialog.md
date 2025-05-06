@@ -17,11 +17,11 @@ The <xref:System.Windows.Controls.PrintDialog> control is used to instantiate a 
   
 ## Reference  
 
- <xref:System.Windows.Controls.PrintDialog>  
+<xref:System.Windows.Controls.PrintDialog>  
   
- <xref:System.Printing.PrintTicket>  
+<xref:System.Printing.PrintTicket>  
   
- <xref:System.Printing.PrintQueue>  
+<xref:System.Printing.PrintQueue>  
   
 ## See also
 

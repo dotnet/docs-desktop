@@ -13,9 +13,9 @@ description: Learn how the SoundPlayer Class enables users to include sound in t
 
 The <xref:System.Media.SoundPlayer> class enables you to easily include sounds in your applications.  
   
- The <xref:System.Media.SoundPlayer> class can play sound files in the .wav format, either from a resource or from UNC or HTTP locations. Additionally, the <xref:System.Media.SoundPlayer> class enables you to load or play sounds asynchronously.  
+The <xref:System.Media.SoundPlayer> class can play sound files in the .wav format, either from a resource or from UNC or HTTP locations. Additionally, the <xref:System.Media.SoundPlayer> class enables you to load or play sounds asynchronously.  
   
- You can also use the <xref:System.Media.SystemSounds> class to play common system sounds, including a beep.  
+You can also use the <xref:System.Media.SystemSounds> class to play common system sounds, including a beep.  
   
 ## Commonly Used Properties, Methods, and Events  
   

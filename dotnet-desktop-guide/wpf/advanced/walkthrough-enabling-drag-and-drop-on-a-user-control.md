@@ -33,7 +33,7 @@ You need Visual Studio to complete this walkthrough.
 
 ## Create the Application Project
 
- In this section, you will create the application infrastructure, which includes a main page with two panels and a <xref:System.Windows.Controls.TextBox>.
+In this section, you will create the application infrastructure, which includes a main page with two panels and a <xref:System.Windows.Controls.TextBox>.
 
 1. Create a new WPF Application project in Visual Basic or Visual C# named `DragDropExample`. For more information, see [Walkthrough: My first WPF desktop application](../get-started/walkthrough-my-first-wpf-desktop-application.md).
 
@@ -47,7 +47,7 @@ You need Visual Studio to complete this walkthrough.
 
 ## Add a New User Control to the Project
 
- In this section, you will add a new user control to the project.
+In this section, you will add a new user control to the project.
 
 1. On the Project menu, select **Add User Control**.
 
@@ -92,9 +92,9 @@ You need Visual Studio to complete this walkthrough.
 
 ## Implement Drag Source Events in the User Control
 
- In this section, you will override the <xref:System.Windows.UIElement.OnMouseMove%2A> method and initiate the drag-and-drop operation.
+In this section, you will override the <xref:System.Windows.UIElement.OnMouseMove%2A> method and initiate the drag-and-drop operation.
 
- If a drag is started (a mouse button is pressed and the mouse is moved), you will package the data to be transferred into a <xref:System.Windows.DataObject>. In this case, the Circle control will package three data items; a string representation of its Fill color, a double representation of its height, and a copy of itself.
+If a drag is started (a mouse button is pressed and the mouse is moved), you will package the data to be transferred into a <xref:System.Windows.DataObject>. In this case, the Circle control will package three data items; a string representation of its Fill color, a double representation of its height, and a copy of itself.
 
 ### To initiate a drag-and-drop operation
 
@@ -158,7 +158,7 @@ By default, the cursor will change during a drag-and-drop operation to indicate 
 
 ## Implement Drop Target Events in the User Control
 
- In this section, you will specify that the user control is a drop target, override the methods that enable the user control to be a drop target, and process the data that is dropped on it.
+In this section, you will specify that the user control is a drop target, override the methods that enable the user control to be a drop target, and process the data that is dropped on it.
 
 ### To enable the user control to be a drop target
 
@@ -234,7 +234,7 @@ When data is dragged over the Circle user control, the control should notify the
 
 5. Drag the text to a Circle control. Notice that the cursor now changes to indicate that the drop is not allowed because `gre` is not a valid color.
 
- You can further enhance the user experience by applying a preview of the drop operation. For the Circle user control, you will override the <xref:System.Windows.UIElement.OnDragEnter%2A> and <xref:System.Windows.UIElement.OnDragLeave%2A> methods. When the data is dragged over the control, the current background <xref:System.Windows.Shapes.Shape.Fill%2A> is saved in a placeholder variable. The string is then converted to a brush and applied to the <xref:System.Windows.Shapes.Ellipse> that provides the Circle's UI. If the data is dragged out of the Circle without being dropped, the original <xref:System.Windows.Shapes.Shape.Fill%2A> value is re-applied to the Circle.
+You can further enhance the user experience by applying a preview of the drop operation. For the Circle user control, you will override the <xref:System.Windows.UIElement.OnDragEnter%2A> and <xref:System.Windows.UIElement.OnDragLeave%2A> methods. When the data is dragged over the control, the current background <xref:System.Windows.Shapes.Shape.Fill%2A> is saved in a placeholder variable. The string is then converted to a brush and applied to the <xref:System.Windows.Shapes.Ellipse> that provides the Circle's UI. If the data is dragged out of the Circle without being dropped, the original <xref:System.Windows.Shapes.Shape.Fill%2A> value is re-applied to the Circle.
 
 ### To preview the effects of the drag-and-drop operation
 

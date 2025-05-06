@@ -15,9 +15,9 @@ description: Learn how to enable visual styles on a Windows Forms control hosted
 
 This topic shows how to enable visual styles on a Windows Forms control hosted in a WPF-based application.  
   
- If your application calls the <xref:System.Windows.Forms.Application.EnableVisualStyles%2A> method, most of your Windows Forms controls will automatically use visual styles. For more information, see [Rendering Controls with Visual Styles](/dotnet/framework/winforms/controls/rendering-controls-with-visual-styles).  
+If your application calls the <xref:System.Windows.Forms.Application.EnableVisualStyles%2A> method, most of your Windows Forms controls will automatically use visual styles. For more information, see [Rendering Controls with Visual Styles](/dotnet/framework/winforms/controls/rendering-controls-with-visual-styles).  
   
- For a complete code listing of the tasks illustrated in this topic, see [Enabling Visual Styles in a Hybrid Application Sample](https://github.com/microsoft/WPF-Samples/tree/master/Migration%20and%20Interoperability/HostingWfWithVisualStyles).  
+For a complete code listing of the tasks illustrated in this topic, see [Enabling Visual Styles in a Hybrid Application Sample](https://github.com/microsoft/WPF-Samples/tree/master/Migration%20and%20Interoperability/HostingWfWithVisualStyles).  
   
 ## Enabling Windows Forms Visual Styles  
   
@@ -52,7 +52,7 @@ This topic shows how to enable visual styles on a Windows Forms control hosted i
   
 ## Disabling Windows Forms Visual Styles  
 
- To disable visual styles, simply remove the call to the <xref:System.Windows.Forms.Application.EnableVisualStyles%2A> method.  
+To disable visual styles, simply remove the call to the <xref:System.Windows.Forms.Application.EnableVisualStyles%2A> method.  
   
 #### To disable Windows Forms visual styles  
   

@@ -19,24 +19,24 @@ By default, when you enable spell checking in an editing control like <xref:Syst
   
 ## Define a Context Menu
 
- The following example shows the Extensible Application Markup Language (XAML) that creates a <xref:System.Windows.Controls.TextBox> with some events that are used to implement the context menu.  
+The following example shows the Extensible Application Markup Language (XAML) that creates a <xref:System.Windows.Controls.TextBox> with some events that are used to implement the context menu.  
   
- [!code-xaml[TextBoxMiscSnippets_snip#SpellerCustomContextMenuExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxMiscSnippets_snip/csharp/speller_custom_context_menu.xaml#spellercustomcontextmenuexamplewholepage)]  
+[!code-xaml[TextBoxMiscSnippets_snip#SpellerCustomContextMenuExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxMiscSnippets_snip/csharp/speller_custom_context_menu.xaml#spellercustomcontextmenuexamplewholepage)]  
   
 ## Implement a Context Menu
 
- The following example shows the code that implements the context menu.  
+The following example shows the code that implements the context menu.  
   
- [!code-csharp[TextBoxMiscSnippets_snip#SpellerCustomContextMenuCodeExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxMiscSnippets_snip/csharp/speller_custom_context_menu.xaml.cs#spellercustomcontextmenucodeexamplewholepage)]
- [!code-vb[TextBoxMiscSnippets_snip#SpellerCustomContextMenuCodeExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextBoxMiscSnippets_snip/visualbasic/speller_custom_context_menu.xaml.vb#spellercustomcontextmenucodeexamplewholepage)]  
+[!code-csharp[TextBoxMiscSnippets_snip#SpellerCustomContextMenuCodeExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxMiscSnippets_snip/csharp/speller_custom_context_menu.xaml.cs#spellercustomcontextmenucodeexamplewholepage)]
+[!code-vb[TextBoxMiscSnippets_snip#SpellerCustomContextMenuCodeExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextBoxMiscSnippets_snip/visualbasic/speller_custom_context_menu.xaml.vb#spellercustomcontextmenucodeexamplewholepage)]  
   
- The code used for doing this with a <xref:System.Windows.Controls.RichTextBox> is similar. The main difference is in the parameter passed to the `GetSpellingError` method. For a <xref:System.Windows.Controls.TextBox>, pass the integer index of the caret position:  
+The code used for doing this with a <xref:System.Windows.Controls.RichTextBox> is similar. The main difference is in the parameter passed to the `GetSpellingError` method. For a <xref:System.Windows.Controls.TextBox>, pass the integer index of the caret position:  
   
- `spellingError = myTextBox.GetSpellingError(caretIndex);`  
+`spellingError = myTextBox.GetSpellingError(caretIndex);`  
   
- For a <xref:System.Windows.Controls.RichTextBox>, pass the <xref:System.Windows.Documents.TextPointer> that specifies the caret position:  
+For a <xref:System.Windows.Controls.RichTextBox>, pass the <xref:System.Windows.Documents.TextPointer> that specifies the caret position:  
   
- `spellingError = myRichTextBox.GetSpellingError(myRichTextBox.CaretPosition);`  
+`spellingError = myRichTextBox.GetSpellingError(myRichTextBox.CaretPosition);`  
   
 ## See also
 

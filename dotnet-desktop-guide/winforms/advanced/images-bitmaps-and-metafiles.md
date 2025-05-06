@@ -16,27 +16,27 @@ The `Image` class is an abstract base class that provides methods for working wi
   
 ## In This Section  
 
- [Types of Bitmaps](types-of-bitmaps.md)  
- Discusses the various image formats.  
+[Types of Bitmaps](types-of-bitmaps.md)  
+Discusses the various image formats.  
   
- [Metafiles in GDI+](metafiles-in-gdi.md)  
- Discusses GDI+ support for metafiles.  
+[Metafiles in GDI+](metafiles-in-gdi.md)  
+Discusses GDI+ support for metafiles.  
   
- [Drawing, Positioning, and Cloning Images in GDI+](drawing-positioning-and-cloning-images-in-gdi.md)  
- Discusses methods for drawing vector and raster images with managed code.  
+[Drawing, Positioning, and Cloning Images in GDI+](drawing-positioning-and-cloning-images-in-gdi.md)  
+Discusses methods for drawing vector and raster images with managed code.  
   
- [Cropping and Scaling Images in GDI+](cropping-and-scaling-images-in-gdi.md)  
- Discusses methods for cropping and scaling vector and raster images with managed code  
+[Cropping and Scaling Images in GDI+](cropping-and-scaling-images-in-gdi.md)  
+Discusses methods for cropping and scaling vector and raster images with managed code  
   
 ## Reference  
 
- <xref:System.Drawing.Image>  
- Describes this class and has links to all of its members.  
+<xref:System.Drawing.Image>  
+Describes this class and has links to all of its members.  
   
- <xref:System.Drawing.Bitmap>  
- Describes this class and has links to all of its members  
+<xref:System.Drawing.Bitmap>  
+Describes this class and has links to all of its members  
   
 ## Related Sections  
 
- [Working with Images, Bitmaps, Icons, and Metafiles](working-with-images-bitmaps-icons-and-metafiles.md)  
- Contains links to topics that demonstrate how to use images in your application.
+[Working with Images, Bitmaps, Icons, and Metafiles](working-with-images-bitmaps-icons-and-metafiles.md)  
+Contains links to topics that demonstrate how to use images in your application.

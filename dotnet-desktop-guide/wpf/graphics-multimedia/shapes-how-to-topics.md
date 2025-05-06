@@ -18,12 +18,12 @@ The topics in this section demonstrate how to use <xref:System.Windows.Shapes.Sh
   
 ## In This Section  
 
- [Draw a Closed Shape by Using the Polygon Element](how-to-draw-a-closed-shape-by-using-the-polygon-element.md)  
- [Draw an Ellipse or a Circle](how-to-draw-an-ellipse-or-a-circle.md)  
- [Draw a Line](how-to-draw-a-line.md)  
- [Draw a Polyline by Using the Polyline Element](how-to-draw-a-polyline-by-using-the-polyline-element.md)  
- [Draw a Rectangle](how-to-draw-a-rectangle.md)  
- [Modify the Cap at the End of a Line or Segment](how-to-modify-the-cap-at-the-end-of-a-line-or-segment.md)  
+[Draw a Closed Shape by Using the Polygon Element](how-to-draw-a-closed-shape-by-using-the-polygon-element.md)  
+[Draw an Ellipse or a Circle](how-to-draw-an-ellipse-or-a-circle.md)  
+[Draw a Line](how-to-draw-a-line.md)  
+[Draw a Polyline by Using the Polyline Element](how-to-draw-a-polyline-by-using-the-polyline-element.md)  
+[Draw a Rectangle](how-to-draw-a-rectangle.md)  
+[Modify the Cap at the End of a Line or Segment](how-to-modify-the-cap-at-the-end-of-a-line-or-segment.md)  
   
 ## See also
 

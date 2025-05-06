@@ -15,42 +15,42 @@ The `DataGridView` control provides several features that let you change how use
   
 ## In This Section  
 
- [How to: Specify the Edit Mode for the Windows Forms DataGridView Control](how-to-specify-the-edit-mode-for-the-windows-forms-datagridview-control.md)  
- Describes how to change the way users start editing cells.  
+[How to: Specify the Edit Mode for the Windows Forms DataGridView Control](how-to-specify-the-edit-mode-for-the-windows-forms-datagridview-control.md)  
+Describes how to change the way users start editing cells.  
   
- [How to: Specify Default Values for New Rows in the Windows Forms DataGridView Control](specify-default-values-for-new-rows-in-the-datagrid.md)  
- Describes how to prepopulate the row for new records to save data-entry time.  
+[How to: Specify Default Values for New Rows in the Windows Forms DataGridView Control](specify-default-values-for-new-rows-in-the-datagrid.md)  
+Describes how to prepopulate the row for new records to save data-entry time.  
   
- [Using the Row for New Records in the Windows Forms DataGridView Control](using-the-row-for-new-records-in-the-windows-forms-datagridview-control.md)  
- Describes the row for new records in detail, including information on hiding it, on customizing its appearance, and on how it relates to the <xref:System.Windows.Forms.DataGridView.Rows%2A> collection.  
+[Using the Row for New Records in the Windows Forms DataGridView Control](using-the-row-for-new-records-in-the-windows-forms-datagridview-control.md)  
+Describes the row for new records in detail, including information on hiding it, on customizing its appearance, and on how it relates to the <xref:System.Windows.Forms.DataGridView.Rows%2A> collection.  
   
- [Walkthrough: Validating Data in the Windows Forms DataGridView Control](walkthrough-validating-data-in-the-windows-forms-datagridview-control.md)  
- Describes how to validate user input to prevent data-entry formatting errors.  
+[Walkthrough: Validating Data in the Windows Forms DataGridView Control](walkthrough-validating-data-in-the-windows-forms-datagridview-control.md)  
+Describes how to validate user input to prevent data-entry formatting errors.  
   
- [Walkthrough: Handling Errors that Occur During Data Entry in the Windows Forms DataGridView Control](handling-errors-that-occur-during-data-entry-in-the-datagrid.md)  
- Describes how to handle data-entry errors that originate from the data source when the user attempts to commit a new value.  
+[Walkthrough: Handling Errors that Occur During Data Entry in the Windows Forms DataGridView Control](handling-errors-that-occur-during-data-entry-in-the-datagrid.md)  
+Describes how to handle data-entry errors that originate from the data source when the user attempts to commit a new value.  
   
 ## Reference  
 
- <xref:System.Windows.Forms.DataGridView>  
- Provides reference documentation for the <xref:System.Windows.Forms.DataGridView> control.  
+<xref:System.Windows.Forms.DataGridView>  
+Provides reference documentation for the <xref:System.Windows.Forms.DataGridView> control.  
   
- <xref:System.Windows.Forms.DataGridView.EditMode%2A?displayProperty=nameWithType>  
- Provides reference documentation for the <xref:System.Windows.Forms.DataGridView.EditMode%2A> property.  
+<xref:System.Windows.Forms.DataGridView.EditMode%2A?displayProperty=nameWithType>  
+Provides reference documentation for the <xref:System.Windows.Forms.DataGridView.EditMode%2A> property.  
   
- <xref:System.Windows.Forms.DataGridView.DefaultValuesNeeded?displayProperty=nameWithType>  
- Provides reference documentation for the <xref:System.Windows.Forms.DataGridView.DefaultValuesNeeded> event.  
+<xref:System.Windows.Forms.DataGridView.DefaultValuesNeeded?displayProperty=nameWithType>  
+Provides reference documentation for the <xref:System.Windows.Forms.DataGridView.DefaultValuesNeeded> event.  
   
- <xref:System.Windows.Forms.DataGridView.DataError?displayProperty=nameWithType>  
- Provides reference documentation for the <xref:System.Windows.Forms.DataGridView.DataError> event.  
+<xref:System.Windows.Forms.DataGridView.DataError?displayProperty=nameWithType>  
+Provides reference documentation for the <xref:System.Windows.Forms.DataGridView.DataError> event.  
   
- <xref:System.Windows.Forms.DataGridView.CellValidating?displayProperty=nameWithType>  
- Provides reference documentation for the <xref:System.Windows.Forms.DataGridView.CellValidating> event.  
+<xref:System.Windows.Forms.DataGridView.CellValidating?displayProperty=nameWithType>  
+Provides reference documentation for the <xref:System.Windows.Forms.DataGridView.CellValidating> event.  
   
 ## Related Sections  
 
- [Displaying Data in the Windows Forms DataGridView Control](displaying-data-in-the-windows-forms-datagridview-control.md)  
- Provides topics that describe how to populate the control with data either manually or from an external data source.  
+[Displaying Data in the Windows Forms DataGridView Control](displaying-data-in-the-windows-forms-datagridview-control.md)  
+Provides topics that describe how to populate the control with data either manually or from an external data source.  
   
 ## See also
 

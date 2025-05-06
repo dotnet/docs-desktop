@@ -19,7 +19,7 @@ Before administrators can deploy Windows Presentation Foundation (WPF) applicati
   
 ## Example  
 
- When the .NET Framework 3.5 is installed, the MSI adds ".NET CLR" and the version number to the UserAgent string. The following example shows a script embedded in a simple HTML page. The script searches the UserAgent string to determine whether the .NET Framework 3.5 is installed, and displays a status message on the results of the search.  
+When the .NET Framework 3.5 is installed, the MSI adds ".NET CLR" and the version number to the UserAgent string. The following example shows a script embedded in a simple HTML page. The script searches the UserAgent string to determine whether the .NET Framework 3.5 is installed, and displays a status message on the results of the search.  
   
 > [!NOTE]
 > This script is designed for Internet Explorer. Other browsers may not include .NET CLR information in the UserAgent string.  
@@ -114,17 +114,17 @@ Before administrators can deploy Windows Presentation Foundation (WPF) applicati
 </HTML>  
 ```  
   
- If the search for the ".NET CLR " version is successful, the following type of status message appears:  
+If the search for the ".NET CLR " version is successful, the following type of status message appears:  
   
- `This machine has the correct version of the .NET Framework 3.5.`  
+`This machine has the correct version of the .NET Framework 3.5.`  
   
- `This machine's userAgent string is: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0; SLCC1; .NET CLR 2.0.50727; .NET CLR 1.1.4322; InfoPath.2; .NET CLR 3.0.590; .NET CLR 3.5.20726; MS-RTC LM 8).`  
+`This machine's userAgent string is: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0; SLCC1; .NET CLR 2.0.50727; .NET CLR 1.1.4322; InfoPath.2; .NET CLR 3.0.590; .NET CLR 3.5.20726; MS-RTC LM 8).`  
   
- Otherwise, the following type of status message appears:  
+Otherwise, the following type of status message appears:  
   
- `This machine does not have the correct version of the .NET Framework 3.5. The required version is v3.5.0.0.`  
+`This machine does not have the correct version of the .NET Framework 3.5. The required version is v3.5.0.0.`  
   
- `This machine's userAgent string is: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0; SLCC1; .NET CLR 2.0.50727; .NET CLR 1.1.4322; InfoPath.2; .NET CLR 3.0.590; MS-RTC LM 8).`  
+`This machine's userAgent string is: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0; SLCC1; .NET CLR 2.0.50727; .NET CLR 1.1.4322; InfoPath.2; .NET CLR 3.0.590; MS-RTC LM 8).`  
   
 ## See also
 

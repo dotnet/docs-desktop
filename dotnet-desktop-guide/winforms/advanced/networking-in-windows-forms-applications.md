@@ -14,22 +14,22 @@ The .NET Framework provides classes for displaying Web pages, downloading Web co
   
 ## Reference  
 
- <xref:System.Net>  
- The root namespace for classes in the .NET Framework that handle network connectivity.  
+<xref:System.Net>  
+The root namespace for classes in the .NET Framework that handle network connectivity.  
   
- <xref:System.Net.WebClient>  
- A convenient class for retrieving Web or HTTP-based content programmatically.  
+<xref:System.Net.WebClient>  
+A convenient class for retrieving Web or HTTP-based content programmatically.  
   
- <xref:System.Net.FtpWebRequest>  
- A class for retrieving and sending files with FTP.  
+<xref:System.Net.FtpWebRequest>  
+A class for retrieving and sending files with FTP.  
   
- <xref:System.Windows.Forms.WebBrowser>  
- A managed wrapper class for the `WebBrowser` control that is included with Windows.  
+<xref:System.Windows.Forms.WebBrowser>  
+A managed wrapper class for the `WebBrowser` control that is included with Windows.  
   
 ## Related Sections  
 
- [Network Programming in the .NET Framework](/dotnet/framework/network-programming/index)  
- An introduction to networking in the .NET Framework.  
+[Network Programming in the .NET Framework](/dotnet/framework/network-programming/index)  
+An introduction to networking in the .NET Framework.  
   
- [Windows Forms Data Binding](../data/overview.md)  
- Describes how to display database content in your application, either from a local data store or a database located on a network.
+[Windows Forms Data Binding](../data/overview.md)  
+Describes how to display database content in your application, either from a local data store or a database located on a network.

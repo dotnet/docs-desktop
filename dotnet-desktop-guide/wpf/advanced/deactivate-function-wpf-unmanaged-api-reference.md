@@ -16,7 +16,7 @@ ms.assetid: 3e81be16-24c7-4399-b242-6268feaa49d7
 
 This API supports the Windows Presentation Foundation (WPF) infrastructure and is not intended to be used directly from your code.  
   
- Used by the Windows Presentation Foundation (WPF) infrastructure for windows management.  
+Used by the Windows Presentation Foundation (WPF) infrastructure for windows management.  
   
 ## Syntax  
   
@@ -26,15 +26,15 @@ void Deactivate()
   
 ## Requirements  
 
- **Platforms:** See [.NET Framework System Requirements](/dotnet/framework/get-started/system-requirements).  
+**Platforms:** See [.NET Framework System Requirements](/dotnet/framework/get-started/system-requirements).  
   
- **DLL:**  
+**DLL:**  
   
- In the .NET Framework 3.0 and 3.5: PresentationHostDLL.dll  
+In the .NET Framework 3.0 and 3.5: PresentationHostDLL.dll  
   
- In the .NET Framework 4 and later: PresentationHost_v0400.dll  
+In the .NET Framework 4 and later: PresentationHost_v0400.dll  
   
- **.NET Framework Version:** Available since 3.0  
+**.NET Framework Version:** Available since 3.0  
   
 ## See also
 

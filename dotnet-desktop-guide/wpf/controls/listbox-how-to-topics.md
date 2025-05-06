@@ -16,13 +16,13 @@ The topics in this section describe how to use the <xref:System.Windows.Controls
   
 ## In This Section  
 
- [Bind a ListBox to Data](how-to-bind-a-listbox-to-data.md)  
- [Get a ListBoxItem](how-to-get-a-listboxitem.md)  
- [How to: Add Data to an ItemsControl](/previous-versions/dotnet/netframework-3.5/ms743602(v=vs.90))  
- [Improve the Scrolling Performance of a ListBox](how-to-improve-the-scrolling-performance-of-a-listbox.md)  
+[Bind a ListBox to Data](how-to-bind-a-listbox-to-data.md)  
+[Get a ListBoxItem](how-to-get-a-listboxitem.md)  
+[How to: Add Data to an ItemsControl](/previous-versions/dotnet/netframework-3.5/ms743602(v=vs.90))  
+[Improve the Scrolling Performance of a ListBox](how-to-improve-the-scrolling-performance-of-a-listbox.md)  
   
 ## Reference  
 
- <xref:System.Windows.Controls.ListBox>  
+<xref:System.Windows.Controls.ListBox>  
   
- <xref:System.Windows.Controls.ListBoxItem>  
+<xref:System.Windows.Controls.ListBoxItem>  

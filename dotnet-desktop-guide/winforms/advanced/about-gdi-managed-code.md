@@ -20,42 +20,42 @@ This section provides information about the GDI+ API for programmers using manag
 ## In this section
 
 - [Lines, Curves, and Shapes](lines-curves-and-shapes.md)  
- Discusses vector graphics.
+Discusses vector graphics.
 
 - [Images, Bitmaps, and Metafiles](images-bitmaps-and-metafiles.md)  
- Discusses the type of images available and how to work with them.
+Discusses the type of images available and how to work with them.
 
 - [Coordinate Systems and Transformations](coordinate-systems-and-transformations.md)  
- Discusses how to transform graphics with GDI+.
+Discusses how to transform graphics with GDI+.
 
 ## Reference
 
 - <xref:System.Drawing.Graphics?displayProperty=nameWithType>  
- Describes this class and has links to all its members.
+Describes this class and has links to all its members.
 
 - <xref:System.Drawing.Image?displayProperty=nameWithType>  
- Describes this class and has links to all its members.
+Describes this class and has links to all its members.
 
 - <xref:System.Drawing.Bitmap?displayProperty=nameWithType>  
- Describes this class and has links to all its members.
+Describes this class and has links to all its members.
   
 - <xref:System.Drawing.Imaging.Metafile?displayProperty=nameWithType>  
- Describes this class and has links to all its members.
+Describes this class and has links to all its members.
 
 - <xref:System.Drawing.Font?displayProperty=nameWithType>  
- Describes this class and has links to all its members.
+Describes this class and has links to all its members.
 
 - <xref:System.Drawing.Brush?displayProperty=nameWithType>  
- Describes this class and has links to all its members.
+Describes this class and has links to all its members.
 
 - <xref:System.Drawing.Color?displayProperty=nameWithType>  
- Describes this class and has links to all its members.
+Describes this class and has links to all its members.
 
 - <xref:System.Drawing.Drawing2D.Matrix?displayProperty=nameWithType>  
- Describes this class and has links to all its members.
+Describes this class and has links to all its members.
 
 - <xref:System.Windows.Forms.TextRenderer?displayProperty=nameWithType>  
- Describes this class and has links to all its members.
+Describes this class and has links to all its members.
 
 ## Related sections
 

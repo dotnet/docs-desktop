@@ -19,7 +19,7 @@ Windows Presentation Foundation (WPF) Host (PresentationHost.exe) is the applica
   
 - XAML browser application (XBAP) (.xbap).  
   
- For files of these types, Windows Presentation Foundation (WPF) Host:  
+For files of these types, Windows Presentation Foundation (WPF) Host:  
   
 - Launches the registered HTML handler to host the Windows Presentation Foundation (WPF) content.  
   
@@ -27,11 +27,11 @@ Windows Presentation Foundation (WPF) Host (PresentationHost.exe) is the applica
   
 - Ensures the appropriate permission levels for the zone of deployment are in place.  
   
- This topic describes the command line parameters that can be used with PresentationHost.exe.  
+This topic describes the command line parameters that can be used with PresentationHost.exe.  
   
 ## Usage  
 
- `PresentationHost.exe [parameters] uri|filename`  
+`PresentationHost.exe [parameters] uri|filename`  
   
 ## Parameters  
   
@@ -48,19 +48,19 @@ Windows Presentation Foundation (WPF) Host (PresentationHost.exe) is the applica
   
 ### Shell Handler  
 
- `PresentationHost.exe example.xbap`  
+`PresentationHost.exe example.xbap`  
   
 ### MIME Handler  
 
- `PresentationHost.exe -embedding example.xbap`  
+`PresentationHost.exe -embedding example.xbap`  
   
 ### Visual Studio Debugging  
 
- `PresentationHost.exe -debug example.xbap`  
+`PresentationHost.exe -debug example.xbap`  
   
 ### Visual Studio Debugging In Zone  
 
- `PresentationHost.exe -debug -debugSecurityZoneURL http://www.example.com c:\folderpath\example.xbap`  
+`PresentationHost.exe -debug -debugSecurityZoneURL http://www.example.com c:\folderpath\example.xbap`  
   
 ## See also
 

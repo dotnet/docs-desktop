@@ -17,9 +17,9 @@ ms.assetid: c19049bb-5ceb-492d-afd2-751dca0ed8e3
 
 Controls in Windows Presentation Foundation (WPF) have a <xref:System.Windows.Controls.ControlTemplate> that contains the visual tree of that control. You can change the structure and appearance of a control by modifying the <xref:System.Windows.Controls.ControlTemplate> of that control. There is no way to replace only part of the visual tree of a control; to change the visual tree of a control you must set the <xref:System.Windows.Controls.Control.Template%2A> property of the control to its new and complete <xref:System.Windows.Controls.ControlTemplate>.  
   
- The desktop themes determine which resource dictionary is used. The resource dictionaries for the desktop themes are included with your Visual Studio installation. The folder that contains the themes is generally located at _C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\\<visual studio edition>\\DesignTools\\SystemThemes\\wpf_, where _\<visual studio edition>_ represents the edition of Visual Studio.
+The desktop themes determine which resource dictionary is used. The resource dictionaries for the desktop themes are included with your Visual Studio installation. The folder that contains the themes is generally located at _C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\\<visual studio edition>\\DesignTools\\SystemThemes\\wpf_, where _\<visual studio edition>_ represents the edition of Visual Studio.
   
- The following table describes the resource dictionary file names and their corresponding desktop themes.  
+The following table describes the resource dictionary file names and their corresponding desktop themes.  
   
 |Theme file|Desktop theme|  
 |----------------|-------------------|  
@@ -32,47 +32,47 @@ Controls in Windows Presentation Foundation (WPF) have a <xref:System.Windows.Co
   
 ## In This Section  
 
- [Button Styles and Templates](button-styles-and-templates.md)  
- [Calendar Styles and Templates](calendar-styles-and-templates.md)  
- [CheckBox Styles and Templates](checkbox-styles-and-templates.md)  
- [ComboBox Styles and Templates](combobox-styles-and-templates.md)  
- [ContextMenu Styles and Templates](contextmenu-styles-and-templates.md)  
- [DataGrid Styles and Templates](datagrid-styles-and-templates.md)  
- [DatePicker Styles and Templates](datepicker-styles-and-templates.md)  
- [DocumentViewer Styles and Templates](documentviewer-styles-and-templates.md)  
- [Expander Styles and Templates](expander-styles-and-templates.md)  
- [Frame Styles and Templates](frame-styles-and-templates.md)  
- [GroupBox Styles and Templates](groupbox-styles-and-templates.md)  
- [Label Styles and Templates](label-styles-and-templates.md)  
- [ListBox Styles and Templates](listbox-styles-and-templates.md)  
- [ListView Styles and Templates](listview-styles-and-templates.md)  
- [Menu Styles and Templates](menu-styles-and-templates.md)  
- [NavigationWindow Styles and Templates](navigationwindow-styles-and-templates.md)  
- [PasswordBox Styles and Templates](passwordbox-styles-and-templates.md)  
- [ProgressBar Styles and Templates](progressbar-styles-and-templates.md)  
- [RadioButton Styles and Templates](radiobutton-styles-and-templates.md)  
- [RepeatButton Styles and Templates](repeatbutton-styles-and-templates.md)  
- [ScrollBar Styles and Templates](scrollbar-styles-and-templates.md)  
- [ScrollViewer Styles and Templates](scrollviewer-styles-and-templates.md)  
- [Slider Styles and Templates](slider-styles-and-templates.md)  
- [StatusBar Styles and Templates](statusbar-styles-and-templates.md)  
- [TabControl Styles and Templates](tabcontrol-styles-and-templates.md)  
- [TextBox Styles and Templates](textbox-styles-and-templates.md)  
- [Thumb Styles and Templates](thumb-styles-and-templates.md)  
- [ToggleButton Styles and Templates](togglebutton-styles-and-templates.md)  
- [ToolBar Styles and Templates](toolbar-styles-and-templates.md)  
- [ToolTip Styles and Templates](tooltip-styles-and-templates.md)  
- [TreeView Styles and Templates](treeview-styles-and-templates.md)  
- [Window Styles and Templates](window-styles-and-templates.md)  
+[Button Styles and Templates](button-styles-and-templates.md)  
+[Calendar Styles and Templates](calendar-styles-and-templates.md)  
+[CheckBox Styles and Templates](checkbox-styles-and-templates.md)  
+[ComboBox Styles and Templates](combobox-styles-and-templates.md)  
+[ContextMenu Styles and Templates](contextmenu-styles-and-templates.md)  
+[DataGrid Styles and Templates](datagrid-styles-and-templates.md)  
+[DatePicker Styles and Templates](datepicker-styles-and-templates.md)  
+[DocumentViewer Styles and Templates](documentviewer-styles-and-templates.md)  
+[Expander Styles and Templates](expander-styles-and-templates.md)  
+[Frame Styles and Templates](frame-styles-and-templates.md)  
+[GroupBox Styles and Templates](groupbox-styles-and-templates.md)  
+[Label Styles and Templates](label-styles-and-templates.md)  
+[ListBox Styles and Templates](listbox-styles-and-templates.md)  
+[ListView Styles and Templates](listview-styles-and-templates.md)  
+[Menu Styles and Templates](menu-styles-and-templates.md)  
+[NavigationWindow Styles and Templates](navigationwindow-styles-and-templates.md)  
+[PasswordBox Styles and Templates](passwordbox-styles-and-templates.md)  
+[ProgressBar Styles and Templates](progressbar-styles-and-templates.md)  
+[RadioButton Styles and Templates](radiobutton-styles-and-templates.md)  
+[RepeatButton Styles and Templates](repeatbutton-styles-and-templates.md)  
+[ScrollBar Styles and Templates](scrollbar-styles-and-templates.md)  
+[ScrollViewer Styles and Templates](scrollviewer-styles-and-templates.md)  
+[Slider Styles and Templates](slider-styles-and-templates.md)  
+[StatusBar Styles and Templates](statusbar-styles-and-templates.md)  
+[TabControl Styles and Templates](tabcontrol-styles-and-templates.md)  
+[TextBox Styles and Templates](textbox-styles-and-templates.md)  
+[Thumb Styles and Templates](thumb-styles-and-templates.md)  
+[ToggleButton Styles and Templates](togglebutton-styles-and-templates.md)  
+[ToolBar Styles and Templates](toolbar-styles-and-templates.md)  
+[ToolTip Styles and Templates](tooltip-styles-and-templates.md)  
+[TreeView Styles and Templates](treeview-styles-and-templates.md)  
+[Window Styles and Templates](window-styles-and-templates.md)  
   
 ## Reference  
 
- <xref:System.Windows.Controls>  
+<xref:System.Windows.Controls>  
   
- <xref:System.Windows.Controls.ControlTemplate>  
+<xref:System.Windows.Controls.ControlTemplate>  
   
 ## Related Sections  
 
- [Control Authoring Overview](control-authoring-overview.md)  
+[Control Authoring Overview](control-authoring-overview.md)  
   
- [Styling and Templating](styles-templates-overview.md)
+[Styling and Templating](styles-templates-overview.md)

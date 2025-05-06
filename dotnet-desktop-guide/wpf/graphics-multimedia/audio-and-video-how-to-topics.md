@@ -16,21 +16,21 @@ The following topics demonstrate how to use the <xref:System.Windows.Controls.Me
   
 ## In This Section  
 
- [Control a MediaElement (Play, Pause, Stop, Volume, and Speed)](how-to-control-a-mediaelement-play-pause-stop-volume-and-speed.md)  
- [Control a MediaElement by Using a Storyboard](how-to-control-a-mediaelement-by-using-a-storyboard.md)  
- [Trigger Media Playback with a User Event](how-to-trigger-media-playback-with-a-user-event.md)  
- [Repeat Media Playback](how-to-repeat-media-playback.md)  
- [Play Media with Animations](how-to-play-media-with-animations.md)  
- [Use Transforms on a MediaElement](how-to-use-transforms-on-a-mediaelement.md)  
+[Control a MediaElement (Play, Pause, Stop, Volume, and Speed)](how-to-control-a-mediaelement-play-pause-stop-volume-and-speed.md)  
+[Control a MediaElement by Using a Storyboard](how-to-control-a-mediaelement-by-using-a-storyboard.md)  
+[Trigger Media Playback with a User Event](how-to-trigger-media-playback-with-a-user-event.md)  
+[Repeat Media Playback](how-to-repeat-media-playback.md)  
+[Play Media with Animations](how-to-play-media-with-animations.md)  
+[Use Transforms on a MediaElement](how-to-use-transforms-on-a-mediaelement.md)  
   
 ## Reference  
 
- <xref:System.Windows.Controls.MediaElement>  
+<xref:System.Windows.Controls.MediaElement>  
   
- <xref:System.Windows.Media.MediaPlayer>  
+<xref:System.Windows.Media.MediaPlayer>  
   
- <xref:System.Windows.Media.MediaTimeline>  
+<xref:System.Windows.Media.MediaTimeline>  
   
 ## Related Sections  
 
- [Graphics and Multimedia](index.md)
+[Graphics and Multimedia](index.md)

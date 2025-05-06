@@ -14,15 +14,15 @@ ms.assetid: f45516e5-bf01-4468-b851-d45f4c33c055
 
 Menus expose functionality to your users by holding commands that are grouped by a common theme.  
   
- The <xref:System.Windows.Forms.MenuStrip> control was introduced in version 2.0 of the .NET Framework. With the <xref:System.Windows.Forms.MenuStrip> control, you can easily create menus like those found in Microsoft Office.  
+The <xref:System.Windows.Forms.MenuStrip> control was introduced in version 2.0 of the .NET Framework. With the <xref:System.Windows.Forms.MenuStrip> control, you can easily create menus like those found in Microsoft Office.  
   
- The <xref:System.Windows.Forms.MenuStrip> control supports the multiple-document interface (MDI) and menu merging, tool tips, and overflow. You can enhance the usability and readability of your menus by adding access keys, shortcut keys, check marks, images, and separator bars.  
+The <xref:System.Windows.Forms.MenuStrip> control supports the multiple-document interface (MDI) and menu merging, tool tips, and overflow. You can enhance the usability and readability of your menus by adding access keys, shortcut keys, check marks, images, and separator bars.  
   
- The <xref:System.Windows.Forms.MenuStrip> control replaces and adds functionality to the <xref:System.Windows.Forms.MainMenu> control; however, the <xref:System.Windows.Forms.MainMenu> control is retained for backward compatibility and future use if you choose.  
+The <xref:System.Windows.Forms.MenuStrip> control replaces and adds functionality to the <xref:System.Windows.Forms.MainMenu> control; however, the <xref:System.Windows.Forms.MainMenu> control is retained for backward compatibility and future use if you choose.  
   
 ## Ways to Use the MenuStrip Control  
 
- Use the <xref:System.Windows.Forms.MenuStrip> control to:  
+Use the <xref:System.Windows.Forms.MenuStrip> control to:  
   
 - Create easily customized, commonly employed menus that support advanced user interface and layout features, such as text and image ordering and alignment, drag-and-drop operations, MDI, overflow, and alternate modes of accessing menu commands.  
   
@@ -30,7 +30,7 @@ Menus expose functionality to your users by holding commands that are grouped by
   
 - Handle events consistently for all containers and contained items, in the same way you handle events for other controls.  
   
- The following table shows some particularly important properties of <xref:System.Windows.Forms.MenuStrip> and associated classes.  
+The following table shows some particularly important properties of <xref:System.Windows.Forms.MenuStrip> and associated classes.  
   
 |Property|Description|  
 |--------------|-----------------|  
@@ -43,7 +43,7 @@ Menus expose functionality to your users by holding commands that are grouped by
 |<xref:System.Windows.Forms.ToolStripMenuItem.ShortcutKeys%2A>|Gets or sets the shortcut keys associated with the <xref:System.Windows.Forms.ToolStripMenuItem>.|  
 |<xref:System.Windows.Forms.ToolStripMenuItem.ShowShortcutKeys%2A>|Gets or sets a value indicating whether the shortcut keys that are associated with the <xref:System.Windows.Forms.ToolStripMenuItem> are displayed next to the <xref:System.Windows.Forms.ToolStripMenuItem>.|  
   
- The following table shows the important <xref:System.Windows.Forms.MenuStrip> companion classes.  
+The following table shows the important <xref:System.Windows.Forms.MenuStrip> companion classes.  
   
 |Class|Description|  
 |-----------|-----------------|  

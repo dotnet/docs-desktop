@@ -14,11 +14,11 @@ Windows Vista and Microsoft .NET Framework introduce a new print path — an alt
   
 ## In This Section  
 
- [Printing Overview](../documents/printing-overview.md)  
- A discussion of the new print path and APIs.  
+[Printing Overview](../documents/printing-overview.md)  
+A discussion of the new print path and APIs.  
   
- [How-to Topics](printing-how-to-topics.md)  
- A set of articles showing how to use the new print path and APIs.  
+[How-to Topics](printing-how-to-topics.md)  
+A set of articles showing how to use the new print path and APIs.  
   
 ## See also
 

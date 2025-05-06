@@ -16,27 +16,27 @@ The topics in this section describe how to use the <xref:System.Windows.Controls
   
 ## In This Section  
 
- [Sort a GridView Column When a Header Is Clicked](how-to-sort-a-gridview-column-when-a-header-is-clicked.md)  
- [Create a Custom View Mode for a ListView](how-to-create-a-custom-view-mode-for-a-listview.md)  
- [Use Templates to Style a ListView That Uses GridView](how-to-use-templates-to-style-a-listview-that-uses-gridview.md)  
- [Create a Style for a Dragged GridView Column Header](how-to-create-a-style-for-a-dragged-gridview-column-header.md)  
- [Display ListView Contents by Using a GridView](how-to-display-listview-contents-by-using-a-gridview.md)  
- [Use Triggers to Style Selected Items in a ListView](how-to-use-triggers-to-style-selected-items-in-a-listview.md)  
- [Create ListViewItems with a CheckBox](how-to-create-listviewitems-with-a-checkbox.md)  
- [Display Data by Using GridViewRowPresenter](how-to-display-data-by-using-gridviewrowpresenter.md)  
- [Group Items in a ListView That Implements a GridView](how-to-group-items-in-a-listview-that-implements-a-gridview.md)  
- [Style a Row in a ListView That Implements a GridView](how-to-style-a-row-in-a-listview-that-implements-a-gridview.md)  
- [Change the Horizontal Alignment of a Column in a ListView](how-to-change-the-horizontal-alignment-of-a-column-in-a-listview.md)  
- [Handle the MouseDoubleClick Event for Each Item in a ListView](how-to-handle-the-mousedoubleclick-event-for-each-item-in-a-listview.md)  
+[Sort a GridView Column When a Header Is Clicked](how-to-sort-a-gridview-column-when-a-header-is-clicked.md)  
+[Create a Custom View Mode for a ListView](how-to-create-a-custom-view-mode-for-a-listview.md)  
+[Use Templates to Style a ListView That Uses GridView](how-to-use-templates-to-style-a-listview-that-uses-gridview.md)  
+[Create a Style for a Dragged GridView Column Header](how-to-create-a-style-for-a-dragged-gridview-column-header.md)  
+[Display ListView Contents by Using a GridView](how-to-display-listview-contents-by-using-a-gridview.md)  
+[Use Triggers to Style Selected Items in a ListView](how-to-use-triggers-to-style-selected-items-in-a-listview.md)  
+[Create ListViewItems with a CheckBox](how-to-create-listviewitems-with-a-checkbox.md)  
+[Display Data by Using GridViewRowPresenter](how-to-display-data-by-using-gridviewrowpresenter.md)  
+[Group Items in a ListView That Implements a GridView](how-to-group-items-in-a-listview-that-implements-a-gridview.md)  
+[Style a Row in a ListView That Implements a GridView](how-to-style-a-row-in-a-listview-that-implements-a-gridview.md)  
+[Change the Horizontal Alignment of a Column in a ListView](how-to-change-the-horizontal-alignment-of-a-column-in-a-listview.md)  
+[Handle the MouseDoubleClick Event for Each Item in a ListView](how-to-handle-the-mousedoubleclick-event-for-each-item-in-a-listview.md)  
   
 ## Reference  
 
- <xref:System.Windows.Controls.ListView>  
+<xref:System.Windows.Controls.ListView>  
   
- <xref:System.Windows.Controls.ListViewItem>  
+<xref:System.Windows.Controls.ListViewItem>  
   
- <xref:System.Windows.Controls.GridView>  
+<xref:System.Windows.Controls.GridView>  
   
 ## Related Sections  
 
- [ListView Overview](listview-overview.md)
+[ListView Overview](listview-overview.md)

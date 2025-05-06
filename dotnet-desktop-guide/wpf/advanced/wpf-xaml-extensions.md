@@ -15,7 +15,7 @@ description: See the provided list of Windows Presentation Foundation XAML exten
 
 ## In This Section  
 
- [Binding Markup Extension](binding-markup-extension.md)  
+[Binding Markup Extension](binding-markup-extension.md)  
   [ColorConvertedBitmap Markup Extension](colorconvertedbitmap-markup-extension.md)  
   [ComponentResourceKey Markup Extension](componentresourcekey-markup-extension.md)  
   [DynamicResource Markup Extension](dynamicresource-markup-extension.md)  

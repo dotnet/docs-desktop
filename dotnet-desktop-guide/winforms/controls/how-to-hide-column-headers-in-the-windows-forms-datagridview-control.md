@@ -25,7 +25,7 @@ Sometimes you will want to display a <xref:System.Windows.Forms.DataGridView> wi
   
 ## Compiling the Code  
 
- This example requires:  
+This example requires:  
   
 - A <xref:System.Windows.Forms.DataGridView> control named `dataGridView1`.  
   

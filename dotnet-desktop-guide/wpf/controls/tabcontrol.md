@@ -14,12 +14,12 @@ ms.assetid: 3d26404b-431e-432d-a82b-ef026feb3fff
 
 <xref:System.Windows.Controls.TabControl> elements display content on discrete pages accessed by selecting the appropriate tab. Each tab contains a <xref:System.Windows.Controls.TabItem>.  
   
- The following illustration shows a <xref:System.Windows.Controls.TabControl>.  
+The following illustration shows a <xref:System.Windows.Controls.TabControl>.  
   
- ![Tab control](./media/ss-ctl-tabcontrol.gif "SS_CTL_tabcontrol")  
+![Tab control](./media/ss-ctl-tabcontrol.gif "SS_CTL_tabcontrol")  
 Typical TabControl  
   
 ## Reference  
 
- <xref:System.Windows.Controls.TabControl>  
+<xref:System.Windows.Controls.TabControl>  
   <xref:System.Windows.Controls.TabItem>  

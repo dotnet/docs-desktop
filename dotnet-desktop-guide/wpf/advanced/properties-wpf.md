@@ -35,17 +35,17 @@ Windows Presentation Foundation (WPF) provides a set of services that can be use
   
 ## Reference  
 
- <xref:System.Windows.DependencyProperty>  
+<xref:System.Windows.DependencyProperty>  
   
- <xref:System.Windows.PropertyMetadata>  
+<xref:System.Windows.PropertyMetadata>  
   
- <xref:System.Windows.FrameworkPropertyMetadata>  
+<xref:System.Windows.FrameworkPropertyMetadata>  
   
- <xref:System.Windows.DependencyObject>  
+<xref:System.Windows.DependencyObject>  
   
 ## Related Sections  
 
- [WPF Architecture](wpf-architecture.md)  
+[WPF Architecture](wpf-architecture.md)  
   [XAML in WPF](../xaml/index.md)  
   [Base Elements](base-elements.md)  
   [Element Tree and Serialization](element-tree-and-serialization.md)  

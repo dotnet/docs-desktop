@@ -16,8 +16,8 @@ The <xref:System.Windows.Controls.RichTextBox> element defines an editing contro
   
 ## In This Section  
 
- [RichTextBox Overview](richtextbox-overview.md)  
- [How-to Topics](richtextbox-how-to-topics.md)  
+[RichTextBox Overview](richtextbox-overview.md)  
+[How-to Topics](richtextbox-how-to-topics.md)  
   
 ## See also
 

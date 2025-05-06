@@ -15,7 +15,7 @@ ms.assetid: 480633db-413a-45d2-9c8f-0427cc13adbe
 
 When you place a <xref:System.Windows.Forms.TabControl> control on your form, it contains two tabs by default. You can add or remove tabs using the designer.
 
- The following procedure requires a **Windows Application** project with a form containing a <xref:System.Windows.Forms.TabControl> control. For information about setting up such a project, see [How to: Create a Windows Forms application project](/visualstudio/ide/step-1-create-a-windows-forms-application-project) and [How to: Add Controls to Windows Forms](how-to-add-to-a-form.md).
+The following procedure requires a **Windows Application** project with a form containing a <xref:System.Windows.Forms.TabControl> control. For information about setting up such a project, see [How to: Create a Windows Forms application project](/visualstudio/ide/step-1-create-a-windows-forms-application-project) and [How to: Add Controls to Windows Forms](how-to-add-to-a-form.md).
 
 ## To add or remove a tab using the designer
 

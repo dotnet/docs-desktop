@@ -22,18 +22,18 @@ HRESULT Next(
   
 ## Parameters  
 
- `celt`  
+`celt`  
   
- [in] Number of [RAWINPUTDEVICE](/windows/desktop/api/winuser/ns-winuser-rawinputdevice) structures returned in `rgelt`.  
+[in] Number of [RAWINPUTDEVICE](/windows/desktop/api/winuser/ns-winuser-rawinputdevice) structures returned in `rgelt`.  
   
- `rgelt`  
+`rgelt`  
   
- [out] Array of size celt (or larger) to receive enumerated RAWINPUTDEVICE structures.  
+[out] Array of size celt (or larger) to receive enumerated RAWINPUTDEVICE structures.  
   
- `pceltFetched`  
+`pceltFetched`  
   
- [out] Pointer to the number of elements actually supplied in `rgelt`. Caller can pass in `NULL` if `rgelt` is one.  
+[out] Pointer to the number of elements actually supplied in `rgelt`. Caller can pass in `NULL` if `rgelt` is one.  
   
 ## Property Value/Return Value  
 
- HRESULT: S_OK if the number of elements supplied is `celt`; S_FALSE otherwise.
+HRESULT: S_OK if the number of elements supplied is `celt`; S_FALSE otherwise.

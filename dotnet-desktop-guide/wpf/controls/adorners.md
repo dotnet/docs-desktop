@@ -15,17 +15,17 @@ This section provides information about Adorners and the Windows Presentation Fo
   
 ## In This Section  
 
- [Adorners Overview](adorners-overview.md)  
- [How-to Topics](adorners-how-to-topics.md)  
+[Adorners Overview](adorners-overview.md)  
+[How-to Topics](adorners-how-to-topics.md)  
   
 ## Reference  
 
- <xref:System.Windows.Controls.AdornedElementPlaceholder>  
+<xref:System.Windows.Controls.AdornedElementPlaceholder>  
   
- <xref:System.Windows.Documents.Adorner>  
+<xref:System.Windows.Documents.Adorner>  
   
- <xref:System.Windows.Documents.AdornerDecorator>  
+<xref:System.Windows.Documents.AdornerDecorator>  
   
- <xref:System.Windows.Media.AdornerHitTestResult>  
+<xref:System.Windows.Media.AdornerHitTestResult>  
   
- <xref:System.Windows.Documents.AdornerLayer>  
+<xref:System.Windows.Documents.AdornerLayer>  

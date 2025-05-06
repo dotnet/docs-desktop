@@ -14,9 +14,9 @@ description: Learn the similarities and differences in control types provided by
 
 Many Windows Forms controls have equivalent WPF controls, but some Windows Forms controls have no equivalents in WPF. This topic compares control types provided by the two technologies.  
   
- You can always use interoperation to host Windows Forms controls that do not have equivalents in your WPF-based applications.  
+You can always use interoperation to host Windows Forms controls that do not have equivalents in your WPF-based applications.  
   
- The following table shows which Windows Forms controls and components have equivalent WPF control functionality.  
+The following table shows which Windows Forms controls and components have equivalent WPF control functionality.  
   
 |Windows Forms control|WPF equivalent control|Remarks|  
 |---------------------------|----------------------------|-------------|  

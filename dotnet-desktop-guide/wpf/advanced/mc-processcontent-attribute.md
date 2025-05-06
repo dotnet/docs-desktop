@@ -39,11 +39,11 @@ Specifies which XAML elements should still have content processed by relevant pa
 
 ## Remarks
 
- By default, a XAML processor will ignore content within an ignored element. You can specify a specific element by `mc:ProcessContent`, and a XAML processor will continue to process the content within the ignored element. This would typically be used if the content is nested within several tags, at least one of which is ignorable and at least one of which is not ignorable.
+By default, a XAML processor will ignore content within an ignored element. You can specify a specific element by `mc:ProcessContent`, and a XAML processor will continue to process the content within the ignored element. This would typically be used if the content is nested within several tags, at least one of which is ignorable and at least one of which is not ignorable.
 
- Multiple prefixes may be specified in the attribute, using a space separator, for example: `mc:ProcessContent="ignore:Element1 ignore:Element2"`.
+Multiple prefixes may be specified in the attribute, using a space separator, for example: `mc:ProcessContent="ignore:Element1 ignore:Element2"`.
 
- The `http://schemas.openxmlformats.org/markup-compatibility/2006` namespace defines other elements and attributes that are not documented within this area of the SDK. For more information, see [XML Markup Compatibility Specification](/office/open-xml/general/introduction-to-markup-compatibility#markup-compatibility-in-the-open-xml-file-formats-specification).
+The `http://schemas.openxmlformats.org/markup-compatibility/2006` namespace defines other elements and attributes that are not documented within this area of the SDK. For more information, see [XML Markup Compatibility Specification](/office/open-xml/general/introduction-to-markup-compatibility#markup-compatibility-in-the-open-xml-file-formats-specification).
 
 ## See also
 

@@ -37,7 +37,7 @@ public void playExclamation()
   
 ## Compiling the Code  
 
- This example requires:  
+This example requires:  
   
 - A reference to the <xref:System.Media?displayProperty=nameWithType> namespace.  
   

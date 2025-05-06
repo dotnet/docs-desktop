@@ -42,7 +42,7 @@ You can get the selected cells, rows, or columns from a <xref:System.Windows.For
   
 ## Compiling the Code  
 
- This example requires:  
+This example requires:  
   
 - <xref:System.Windows.Forms.Button> controls named `selectedCellsButton`, `selectedRowsButton`, and `selectedColumnsButton`, each with handlers for the <xref:System.Windows.Forms.Control.Click> event attached.  
   
@@ -52,7 +52,7 @@ You can get the selected cells, rows, or columns from a <xref:System.Windows.For
   
 ## Robust Programming  
 
- The collections described in this topic do not perform efficiently when large numbers of cells, rows, or columns are selected. For more information about using these collections with large amounts of data, see [Best Practices for Scaling the Windows Forms DataGridView Control](best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
+The collections described in this topic do not perform efficiently when large numbers of cells, rows, or columns are selected. For more information about using these collections with large amounts of data, see [Best Practices for Scaling the Windows Forms DataGridView Control](best-practices-for-scaling-the-windows-forms-datagridview-control.md).  
   
 ## See also
 

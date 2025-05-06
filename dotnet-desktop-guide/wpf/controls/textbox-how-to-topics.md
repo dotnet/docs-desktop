@@ -16,29 +16,29 @@ This section provides examples that demonstrate how to accomplish common tasks u
   
 ## In This Section  
 
- [Create a Multiline TextBox Control](how-to-create-a-multiline-textbox-control.md)  
- [Detect When Text in a TextBox Has Changed](how-to-detect-when-text-in-a-textbox-has-changed.md)  
- [Enable Tab Characters in a TextBox Control](how-to-enable-tab-characters-in-a-textbox-control.md)  
- [Get a Collection of Lines from a TextBox](how-to-get-a-collection-of-lines-from-a-textbox.md)  
- [Make a TextBox Control Read-Only](how-to-make-a-textbox-control-read-only.md)  
- [Position the Cursor at the Beginning or End of Text in a TextBox Control](position-the-cursor-at-the-beginning-or-end-of-text.md)  
- [Retrieve a Text Selection](how-to-retrieve-a-text-selection.md)  
- [Set Focus in a TextBox Control](how-to-set-focus-in-a-textbox-control.md)  
- [Set the Text Content of a TextBox Control](how-to-set-the-text-content-of-a-textbox-control.md)  
- [Enable Spell Checking in a Text Editing Control](how-to-enable-spell-checking-in-a-text-editing-control.md)  
- [Use a Custom Context Menu with a TextBox](how-to-use-a-custom-context-menu-with-a-textbox.md)  
- [Use Spell Checking with a Context Menu](how-to-use-spell-checking-with-a-context-menu.md)  
- [Add a Watermark to a TextBox](how-to-add-a-watermark-to-a-textbox.md)  
+[Create a Multiline TextBox Control](how-to-create-a-multiline-textbox-control.md)  
+[Detect When Text in a TextBox Has Changed](how-to-detect-when-text-in-a-textbox-has-changed.md)  
+[Enable Tab Characters in a TextBox Control](how-to-enable-tab-characters-in-a-textbox-control.md)  
+[Get a Collection of Lines from a TextBox](how-to-get-a-collection-of-lines-from-a-textbox.md)  
+[Make a TextBox Control Read-Only](how-to-make-a-textbox-control-read-only.md)  
+[Position the Cursor at the Beginning or End of Text in a TextBox Control](position-the-cursor-at-the-beginning-or-end-of-text.md)  
+[Retrieve a Text Selection](how-to-retrieve-a-text-selection.md)  
+[Set Focus in a TextBox Control](how-to-set-focus-in-a-textbox-control.md)  
+[Set the Text Content of a TextBox Control](how-to-set-the-text-content-of-a-textbox-control.md)  
+[Enable Spell Checking in a Text Editing Control](how-to-enable-spell-checking-in-a-text-editing-control.md)  
+[Use a Custom Context Menu with a TextBox](how-to-use-a-custom-context-menu-with-a-textbox.md)  
+[Use Spell Checking with a Context Menu](how-to-use-spell-checking-with-a-context-menu.md)  
+[Add a Watermark to a TextBox](how-to-add-a-watermark-to-a-textbox.md)  
   
 ## Reference  
 
- <xref:System.Windows.Controls.TextBox>  
+<xref:System.Windows.Controls.TextBox>  
   
- <xref:System.Windows.Controls.RichTextBox>  
+<xref:System.Windows.Controls.RichTextBox>  
   
- <xref:System.Windows.Controls.TextBlock>  
+<xref:System.Windows.Controls.TextBlock>  
   
- <xref:System.Windows.Controls.PasswordBox>  
+<xref:System.Windows.Controls.PasswordBox>  
   
 ## See also
 

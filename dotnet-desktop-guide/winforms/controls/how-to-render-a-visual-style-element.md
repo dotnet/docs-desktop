@@ -33,7 +33,7 @@ The <xref:System.Windows.Forms.VisualStyles?displayProperty=nameWithType> namesp
   
 ## Compiling the Code  
 
- This example requires:  
+This example requires:  
   
 - A custom control derived from the <xref:System.Windows.Forms.Control> class.  
   

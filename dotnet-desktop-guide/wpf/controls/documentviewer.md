@@ -16,9 +16,9 @@ The <xref:System.Windows.Controls.DocumentViewer> control is used to view <xref:
   
 ## Reference  
 
- <xref:System.Windows.Controls.DocumentViewer>  
+<xref:System.Windows.Controls.DocumentViewer>  
   
- <xref:System.Windows.Documents.FixedDocument>  
+<xref:System.Windows.Documents.FixedDocument>  
   
 ## See also
 

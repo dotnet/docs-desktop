@@ -18,11 +18,11 @@ This topic describes the styles and templates for the <xref:System.Windows.Windo
   
 ## Window Parts  
 
- The <xref:System.Windows.Window> control does not have any named parts.  
+The <xref:System.Windows.Window> control does not have any named parts.  
   
 ## Window States  
 
- The following table lists the visual states for the <xref:System.Windows.Window> control.  
+The following table lists the visual states for the <xref:System.Windows.Window> control.  
   
 |VisualState Name|VisualStateGroup Name|Description|  
 |-|-|-|  

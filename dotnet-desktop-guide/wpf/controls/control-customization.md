@@ -16,11 +16,11 @@ This category covers the various base classes, interfaces and other elements and
   
 ## In This Section  
 
- [Control Authoring Overview](control-authoring-overview.md)  
- [Guidelines for Designing Stylable Controls](guidelines-for-designing-stylable-controls.md)  
- [Adorners](adorners.md)  
- [Control Styles and Templates](control-styles-and-templates.md)  
- [UI Automation of a WPF Custom Control](ui-automation-of-a-wpf-custom-control.md)  
+[Control Authoring Overview](control-authoring-overview.md)  
+[Guidelines for Designing Stylable Controls](guidelines-for-designing-stylable-controls.md)  
+[Adorners](adorners.md)  
+[Control Styles and Templates](control-styles-and-templates.md)  
+[UI Automation of a WPF Custom Control](ui-automation-of-a-wpf-custom-control.md)  
   
 ## See also
 

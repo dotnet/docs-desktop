@@ -17,7 +17,7 @@ This example shows how to create and bind to a collection that derives from the 
   
 ## Example  
 
- The following example shows the implementation of a `NameList` collection:  
+The following example shows the implementation of a `NameList` collection:  
   
 ```csharp  
 public class NameList : ObservableCollection<PersonName>  
@@ -102,7 +102,7 @@ Public Class PersonName
 End Class  
 ```  
   
- You can make the collection available for binding the same way you would with other common language runtime (CLR) objects, as described in [Make Data Available for Binding in XAML](how-to-make-data-available-for-binding-in-xaml.md). For example, you can instantiate the collection in XAML and specify the collection as a resource, as shown here:  
+You can make the collection available for binding the same way you would with other common language runtime (CLR) objects, as described in [Make Data Available for Binding in XAML](how-to-make-data-available-for-binding-in-xaml.md). For example, you can instantiate the collection in XAML and specify the collection as a resource, as shown here:  
   
 ```xaml  
 <Window  
@@ -122,7 +122,7 @@ End Class
 </Window.Resources>  
 ```  
   
- You can then bind to the collection:  
+You can then bind to the collection:  
   
 ```xaml  
 <ListBox Width="200"  
@@ -131,12 +131,12 @@ End Class
          IsSynchronizedWithCurrentItem="True"/>  
 ```  
   
- The definition of `NameItemTemplate` is not shown here.  
+The definition of `NameItemTemplate` is not shown here.  
   
 > [!NOTE]
 > The objects in your collection must satisfy the requirements described in the [Binding Sources Overview](binding-sources-overview.md). In particular, if you are using <xref:System.Windows.Data.BindingMode.OneWay> or <xref:System.Windows.Data.BindingMode.TwoWay> (for example, you want your UI to update when the source properties change dynamically), you must implement a suitable property changed notification mechanism such as the <xref:System.ComponentModel.INotifyPropertyChanged> interface.  
   
- For more information, see the Binding to Collections section in the [Data Binding Overview](index.md).  
+For more information, see the Binding to Collections section in the [Data Binding Overview](index.md).  
   
 ## See also
 

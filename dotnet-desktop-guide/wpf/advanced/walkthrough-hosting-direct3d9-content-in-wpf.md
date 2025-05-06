@@ -21,7 +21,7 @@ In this walkthrough, you perform the following tasks:
 
 - Display the Direct3D9 content by using the <xref:System.Windows.Interop.D3DImage> class.
 
- When you are finished, you will know how to host Direct3D9 content in a WPF application.
+When you are finished, you will know how to host Direct3D9 content in a WPF application.
 
 ## Prerequisites
 

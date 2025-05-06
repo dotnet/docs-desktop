@@ -22,7 +22,7 @@ ms.assetid: 6ab1fe6b-3eed-4432-a248-b487e7234e5b
   
 ## In This Section  
 
- [Drawing Objects Overview](drawing-objects-overview.md)  
+[Drawing Objects Overview](drawing-objects-overview.md)  
   [How-to Topics](drawings-how-to-topics.md)  
   
 ## See also

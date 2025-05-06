@@ -16,7 +16,7 @@ description: Learn how to choose the printers attached to a user's computer in W
 
 Often, users want to choose a printer other than the default printer to print to. You can enable users to choose a printer from among those currently installed by using the <xref:System.Windows.Forms.PrintDialog> component. Through the <xref:System.Windows.Forms.PrintDialog> component, the <xref:System.Windows.Forms.DialogResult> of the <xref:System.Windows.Forms.PrintDialog> component is captured and used to select the printer.  
   
- In the following procedure, a text file is selected to be printed to the default printer. The <xref:System.Windows.Forms.PrintDialog> class is then instantiated.  
+In the following procedure, a text file is selected to be printed to the default printer. The <xref:System.Windows.Forms.PrintDialog> class is then instantiated.  
   
 ### To choose a printer and then print a file  
   

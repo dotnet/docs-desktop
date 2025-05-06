@@ -22,9 +22,9 @@ ms.assetid: 7a4951bd-369c-4662-b246-28ad83eda484
 
 The most basic use of a Windows Forms <xref:System.Windows.Forms.Button> control is to run some code when the button is clicked.  
   
- Clicking a <xref:System.Windows.Forms.Button> control also generates a number of other events, such as the <xref:System.Windows.Forms.Control.MouseEnter>, <xref:System.Windows.Forms.Control.MouseDown>, and <xref:System.Windows.Forms.Control.MouseUp> events. If you intend to attach event handlers for these related events, be sure that their actions do not conflict. For example, if clicking the button clears information that the user has typed in a text box, pausing the mouse pointer over the button should not display a tool tip with that now-nonexistent information.  
+Clicking a <xref:System.Windows.Forms.Button> control also generates a number of other events, such as the <xref:System.Windows.Forms.Control.MouseEnter>, <xref:System.Windows.Forms.Control.MouseDown>, and <xref:System.Windows.Forms.Control.MouseUp> events. If you intend to attach event handlers for these related events, be sure that their actions do not conflict. For example, if clicking the button clears information that the user has typed in a text box, pausing the mouse pointer over the button should not display a tool tip with that now-nonexistent information.  
   
- If the user attempts to double-click the <xref:System.Windows.Forms.Button> control, each click will be processed separately; that is, the control does not support the double-click event.  
+If the user attempts to double-click the <xref:System.Windows.Forms.Button> control, each click will be processed separately; that is, the control does not support the double-click event.  
   
 ### To respond to a button click  
   

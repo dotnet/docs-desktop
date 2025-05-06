@@ -18,13 +18,13 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
   
 ## TreeView Parts  
 
- The <xref:System.Windows.Controls.TreeView> control does not have any named parts.  
+The <xref:System.Windows.Controls.TreeView> control does not have any named parts.  
   
- When you create a <xref:System.Windows.Controls.ControlTemplate> for an <xref:System.Windows.Controls.TreeView>, your template might contain a <xref:System.Windows.Controls.ItemsPresenter> within a <xref:System.Windows.Controls.ScrollViewer>. (The <xref:System.Windows.Controls.ItemsPresenter> displays each item in the <xref:System.Windows.Controls.TreeView>; the <xref:System.Windows.Controls.ScrollViewer> enables scrolling within the control).  If the <xref:System.Windows.Controls.ItemsPresenter> is not the direct child of the <xref:System.Windows.Controls.ScrollViewer>, you must give the <xref:System.Windows.Controls.ItemsPresenter> the name, `ItemsPresenter`.  
+When you create a <xref:System.Windows.Controls.ControlTemplate> for an <xref:System.Windows.Controls.TreeView>, your template might contain a <xref:System.Windows.Controls.ItemsPresenter> within a <xref:System.Windows.Controls.ScrollViewer>. (The <xref:System.Windows.Controls.ItemsPresenter> displays each item in the <xref:System.Windows.Controls.TreeView>; the <xref:System.Windows.Controls.ScrollViewer> enables scrolling within the control).  If the <xref:System.Windows.Controls.ItemsPresenter> is not the direct child of the <xref:System.Windows.Controls.ScrollViewer>, you must give the <xref:System.Windows.Controls.ItemsPresenter> the name, `ItemsPresenter`.  
   
 ## TreeView States  
 
- The following table lists the visual states for the <xref:System.Windows.Controls.TreeView> control.  
+The following table lists the visual states for the <xref:System.Windows.Controls.TreeView> control.  
   
 |VisualState Name|VisualStateGroup Name|Description|  
 |-|-|-|  
@@ -34,7 +34,7 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
   
 ## TreeViewItem Parts  
 
- The following table lists the named parts for the <xref:System.Windows.Controls.TreeViewItem> control.  
+The following table lists the named parts for the <xref:System.Windows.Controls.TreeViewItem> control.  
   
 |Part|Type|Description|  
 |----------|----------|-----------------|  
@@ -42,7 +42,7 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
   
 ## TreeViewItem States  
 
- The following table lists the visual states for <xref:System.Windows.Controls.TreeViewItem> control.  
+The following table lists the visual states for <xref:System.Windows.Controls.TreeViewItem> control.  
   
 |VisualState Name|VisualStateGroup Name|Description|  
 |----------------------|---------------------------|-----------------|  
@@ -64,15 +64,15 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
   
 ## TreeView ControlTemplate Example  
 
- The following example shows how to define a <xref:System.Windows.Controls.ControlTemplate> for the <xref:System.Windows.Controls.TreeView> control and its associated types.  
+The following example shows how to define a <xref:System.Windows.Controls.ControlTemplate> for the <xref:System.Windows.Controls.TreeView> control and its associated types.  
   
- [!code-xaml[ControlTemplateExamples#TreeView](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/treeview.xaml#treeview)]  
+[!code-xaml[ControlTemplateExamples#TreeView](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/treeview.xaml#treeview)]  
   
- The preceding example uses one or more of the following resources.  
+The preceding example uses one or more of the following resources.  
   
- [!code-xaml[ControlTemplateExamples#Resources](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/shared.xaml#resources)]  
+[!code-xaml[ControlTemplateExamples#Resources](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/shared.xaml#resources)]  
   
- For the complete sample, see [Styling with ControlTemplates Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Styles%20&%20Templates/IntroToStylingAndTemplating).  
+For the complete sample, see [Styling with ControlTemplates Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Styles%20&%20Templates/IntroToStylingAndTemplating).  
   
 ## See also
 

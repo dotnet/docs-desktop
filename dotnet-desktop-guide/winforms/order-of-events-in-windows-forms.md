@@ -18,7 +18,7 @@ The order in which events are raised in Windows Forms applications is of particu
   
 ## Application Startup and Shutdown Events  
 
- The <xref:System.Windows.Forms.Form> and <xref:System.Windows.Forms.Control> classes expose a set of events related to application startup and shutdown. When a Windows Forms application starts, the startup events of the main form are raised in the following order:  
+The <xref:System.Windows.Forms.Form> and <xref:System.Windows.Forms.Control> classes expose a set of events related to application startup and shutdown. When a Windows Forms application starts, the startup events of the main form are raised in the following order:  
   
 - <xref:System.Windows.Forms.Control.HandleCreated?displayProperty=nameWithType>  
   
@@ -32,7 +32,7 @@ The order in which events are raised in Windows Forms applications is of particu
   
 - <xref:System.Windows.Forms.Form.Shown?displayProperty=nameWithType>  
   
- When an application closes, the shutdown events of the main form are raised in the following order:  
+When an application closes, the shutdown events of the main form are raised in the following order:  
   
 - <xref:System.Windows.Forms.Form.Closing?displayProperty=nameWithType>  
   
@@ -44,14 +44,14 @@ The order in which events are raised in Windows Forms applications is of particu
   
 - <xref:System.Windows.Forms.Form.Deactivate?displayProperty=nameWithType>  
   
- The <xref:System.Windows.Forms.Application.ApplicationExit> event of the <xref:System.Windows.Forms.Application> class is raised after the shutdown events of the main form.  
+The <xref:System.Windows.Forms.Application.ApplicationExit> event of the <xref:System.Windows.Forms.Application> class is raised after the shutdown events of the main form.  
   
 > [!NOTE]
 > Visual Basic 2005 includes additional application events, such as <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Startup?displayProperty=nameWithType> and <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.Shutdown?displayProperty=nameWithType>.  
   
 ## Focus and Validation Events  
 
- When you change the focus by using the keyboard (TAB, SHIFT+TAB, and so on), by calling the <xref:System.Windows.Forms.Control.Select%2A> or <xref:System.Windows.Forms.Control.SelectNextControl%2A> methods, or by setting the <xref:System.Windows.Forms.ContainerControl.ActiveControl%2A> property to the current form, focus events of the <xref:System.Windows.Forms.Control> class occur in the following order:  
+When you change the focus by using the keyboard (TAB, SHIFT+TAB, and so on), by calling the <xref:System.Windows.Forms.Control.Select%2A> or <xref:System.Windows.Forms.Control.SelectNextControl%2A> methods, or by setting the <xref:System.Windows.Forms.ContainerControl.ActiveControl%2A> property to the current form, focus events of the <xref:System.Windows.Forms.Control> class occur in the following order:  
   
 - <xref:System.Windows.Forms.Control.Enter>  
   
@@ -65,7 +65,7 @@ The order in which events are raised in Windows Forms applications is of particu
   
 - <xref:System.Windows.Forms.Control.LostFocus>  
   
- When you change the focus by using the mouse or by calling the <xref:System.Windows.Forms.Control.Focus%2A> method, focus events of the <xref:System.Windows.Forms.Control> class occur in the following order:  
+When you change the focus by using the mouse or by calling the <xref:System.Windows.Forms.Control.Focus%2A> method, focus events of the <xref:System.Windows.Forms.Control> class occur in the following order:  
   
 - <xref:System.Windows.Forms.Control.Enter>  
   

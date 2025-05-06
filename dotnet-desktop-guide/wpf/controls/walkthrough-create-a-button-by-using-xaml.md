@@ -421,7 +421,7 @@ An easy way to add interactivity (mouse-over, mouse-leave, click, and so on) is 
 
 ## Summary
 
- In this walkthrough, you performed the following exercises:
+In this walkthrough, you performed the following exercises:
 
 - Targeted a <xref:System.Windows.Style> to an object type (<xref:System.Windows.Controls.Button>).
 

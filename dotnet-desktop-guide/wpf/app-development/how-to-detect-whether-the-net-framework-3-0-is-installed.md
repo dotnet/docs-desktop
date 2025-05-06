@@ -20,7 +20,7 @@ Before administrators can deploy Microsoft .NET Framework applications on a syst
 
 ## Detect the ".NET CLR" User-Agent String  
 
- When .NET Framework is installed, the MSI adds ".NET CLR" and the version number to the UserAgent string. The following example shows a script embedded in a simple HTML page. The script searches the UserAgent string to determine whether .NET Framework is installed, and displays a status message on the results of the search.  
+When .NET Framework is installed, the MSI adds ".NET CLR" and the version number to the UserAgent string. The following example shows a script embedded in a simple HTML page. The script searches the UserAgent string to determine whether .NET Framework is installed, and displays a status message on the results of the search.  
   
 ```html  
 <HTML>  
@@ -112,14 +112,14 @@ Before administrators can deploy Microsoft .NET Framework applications on a syst
 </HTML>  
 ```  
   
- If the search for the ".NET CLR " version is successful, the following type of status message appears:  
+If the search for the ".NET CLR " version is successful, the following type of status message appears:  
   
- `This machine has the correct version of the .NET Framework 3.0: 3.0.04425.00`  
+`This machine has the correct version of the .NET Framework 3.0: 3.0.04425.00`  
   
- `This machine's userAgent string is: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; .NET CLR 1.1.4322; InfoPath.1; .NET CLR 2.0.50727; .NET CLR 3.0.04425.00).`  
+`This machine's userAgent string is: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; .NET CLR 1.1.4322; InfoPath.1; .NET CLR 2.0.50727; .NET CLR 3.0.04425.00).`  
   
- Otherwise, the following type of status message appears:  
+Otherwise, the following type of status message appears:  
   
- `This machine does not have correct version of the .NET Framework 3.0.`  
+`This machine does not have correct version of the .NET Framework 3.0.`  
   
- `This machine's userAgent string is: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; .NET CLR 1.1.4322; InfoPath.1; .NET CLR 2.0.50727).`
+`This machine's userAgent string is: Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; .NET CLR 1.1.4322; InfoPath.1; .NET CLR 2.0.50727).`

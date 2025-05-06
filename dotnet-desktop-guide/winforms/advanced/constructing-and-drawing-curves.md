@@ -15,11 +15,11 @@ GDI+ supports several types of curves: ellipses, arcs, cardinal splines, and Bé
   
 ## In This Section  
 
- [How to: Draw Cardinal Splines](how-to-draw-cardinal-splines.md)  
- Describes cardinal splines and how to draw them.  
+[How to: Draw Cardinal Splines](how-to-draw-cardinal-splines.md)  
+Describes cardinal splines and how to draw them.  
   
- [How to: Draw a Single Bézier Spline](how-to-draw-a-single-bezier-spline.md)  
- Describes a Bézier spline and how to draw one.  
+[How to: Draw a Single Bézier Spline](how-to-draw-a-single-bezier-spline.md)  
+Describes a Bézier spline and how to draw one.  
   
- [How to: Draw a Sequence of Bézier Splines](how-to-draw-a-sequence-of-bezier-splines.md)  
- Explains how to draw several Bézier splines in sequence.
+[How to: Draw a Sequence of Bézier Splines](how-to-draw-a-sequence-of-bezier-splines.md)  
+Explains how to draw several Bézier splines in sequence.

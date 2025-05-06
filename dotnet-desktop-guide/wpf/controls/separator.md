@@ -16,4 +16,4 @@ A <xref:System.Windows.Controls.Separator> control draws a line, horizontal or v
   
 ## Reference  
 
- <xref:System.Windows.Controls.Separator>
+<xref:System.Windows.Controls.Separator>

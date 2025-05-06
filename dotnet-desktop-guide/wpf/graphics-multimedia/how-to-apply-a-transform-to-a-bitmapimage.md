@@ -17,8 +17,8 @@ This example demonstrates how to apply a <xref:System.Windows.Media.Transform> t
   
 ## Example  
 
- [!code-csharp[ImagingSnippetGallery_procedural_snip#TransformedBitmapInline1](~/samples/snippets/csharp/VS_Snippets_Wpf/ImagingSnippetGallery_procedural_snip/CSharp/TransformedBitmapExample.cs#transformedbitmapinline1)]
- [!code-vb[ImagingSnippetGallery_procedural_snip#TransformedBitmapInline1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ImagingSnippetGallery_procedural_snip/VB/TransformedBitmapExample.vb#transformedbitmapinline1)]  
+[!code-csharp[ImagingSnippetGallery_procedural_snip#TransformedBitmapInline1](~/samples/snippets/csharp/VS_Snippets_Wpf/ImagingSnippetGallery_procedural_snip/CSharp/TransformedBitmapExample.cs#transformedbitmapinline1)]
+[!code-vb[ImagingSnippetGallery_procedural_snip#TransformedBitmapInline1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ImagingSnippetGallery_procedural_snip/VB/TransformedBitmapExample.vb#transformedbitmapinline1)]  
   
 ## See also
 

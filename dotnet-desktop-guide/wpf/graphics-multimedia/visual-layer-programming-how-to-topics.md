@@ -17,12 +17,12 @@ The topics in this section demonstrate how to use the visual layer for hit-testi
   
 ## In This Section  
 
- [Get the Offset of a Visual](how-to-get-the-offset-of-a-visual.md)  
- [Enumerate Drawing Content of a Visual](how-to-enumerate-drawing-content-of-a-visual.md)  
- [Hit Test Geometry in a Visual](how-to-hit-test-geometry-in-a-visual.md)  
- [Hit Test Using Geometry as a Parameter](how-to-hit-test-using-geometry-as-a-parameter.md)  
- [Hit Test Using a Win32 Host Container](how-to-hit-test-using-a-win32-host-container.md)  
- [Render on a Per Frame Interval Using CompositionTarget](how-to-render-on-a-per-frame-interval-using-compositiontarget.md)  
+[Get the Offset of a Visual](how-to-get-the-offset-of-a-visual.md)  
+[Enumerate Drawing Content of a Visual](how-to-enumerate-drawing-content-of-a-visual.md)  
+[Hit Test Geometry in a Visual](how-to-hit-test-geometry-in-a-visual.md)  
+[Hit Test Using Geometry as a Parameter](how-to-hit-test-using-geometry-as-a-parameter.md)  
+[Hit Test Using a Win32 Host Container](how-to-hit-test-using-a-win32-host-container.md)  
+[Render on a Per Frame Interval Using CompositionTarget](how-to-render-on-a-per-frame-interval-using-compositiontarget.md)  
   
 ## See also
 

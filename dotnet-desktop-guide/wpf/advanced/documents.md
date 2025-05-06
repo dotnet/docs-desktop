@@ -16,12 +16,12 @@ Windows Presentation Foundation (WPF) provides a versatile set of components tha
   
 ## In This Section  
 
- [Documents in WPF](documents-in-wpf.md)  
- [Document Serialization and Storage](document-serialization-and-storage.md)  
- [Annotations](annotations.md)  
- [Flow Content](flow-content.md)  
- [Typography](typography.md)  
- [Printing and Print System Management](printing-and-print-system-management.md)  
+[Documents in WPF](documents-in-wpf.md)  
+[Document Serialization and Storage](document-serialization-and-storage.md)  
+[Annotations](annotations.md)  
+[Flow Content](flow-content.md)  
+[Typography](typography.md)  
+[Printing and Print System Management](printing-and-print-system-management.md)  
   
 ## See also
 

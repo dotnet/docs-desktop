@@ -16,12 +16,12 @@ The topics in this section describe how to use the <xref:System.Windows.Controls
   
 ## In This Section  
 
- [Create an Expander with a ScrollViewer](how-to-create-an-expander-with-a-scrollviewer.md)  
+[Create an Expander with a ScrollViewer](how-to-create-an-expander-with-a-scrollviewer.md)  
   
 ## Reference  
 
- <xref:System.Windows.Controls.Expander>  
+<xref:System.Windows.Controls.Expander>  
   
 ## Related Sections  
 
- [Expander Overview](expander-overview.md)
+[Expander Overview](expander-overview.md)

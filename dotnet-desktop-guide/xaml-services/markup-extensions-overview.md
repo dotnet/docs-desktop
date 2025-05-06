@@ -124,7 +124,7 @@ To support property element usage of your markup extension, define a public para
 
 To support both design environments and certain XAML object writer scenarios, you should attribute a markup extension support type with several CLR attributes. These attributes report the intended markup extension usage.
 
- <xref:System.Windows.Markup.MarkupExtensionReturnTypeAttribute> reports the <xref:System.Type> information for the object type that <xref:System.Windows.Markup.ArrayExtension.ProvideValue%2A> returns. By its pure signature, <xref:System.Windows.Markup.ArrayExtension.ProvideValue%2A> returns <xref:System.Object>. But various consumers might want more precise return type information. This includes:
+<xref:System.Windows.Markup.MarkupExtensionReturnTypeAttribute> reports the <xref:System.Type> information for the object type that <xref:System.Windows.Markup.ArrayExtension.ProvideValue%2A> returns. By its pure signature, <xref:System.Windows.Markup.ArrayExtension.ProvideValue%2A> returns <xref:System.Object>. But various consumers might want more precise return type information. This includes:
 
 - Designers and IDEs, who might be able to provide type-aware support for markup extension usages.
 - Advanced implementations of `SetMarkupExtension` handlers on target classes, which might rely on reflection to determine a markup extension's return type instead of branching on specific known <xref:System.Windows.Markup.MarkupExtension> implementations by name.

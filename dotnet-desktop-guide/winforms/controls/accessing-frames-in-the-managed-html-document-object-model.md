@@ -16,11 +16,11 @@ ms.assetid: cdeeaa22-0be4-4bbf-9a75-4ddc79199f8d
 
 Some HTML documents are composed out of *frames*, or windows that can hold their own distinct HTML documents. Using frames makes it easy to create HTML pages in which one or more pieces of the page remain static, such as a navigation bar, while other frames constantly change their content.  
   
- HTML authors can create frames in one of two ways:  
+HTML authors can create frames in one of two ways:  
   
 - Using the `FRAMESET` and `FRAME` tags, which create fixed windows.  
   
- -or-  
+-or-  
   
 - Using the `IFRAME` tag, which creates a floating window that can be repositioned at run time.  
   
@@ -32,9 +32,9 @@ Some HTML documents are composed out of *frames*, or windows that can hold their
   
 ## Frames and Security  
 
- Access to frames is complicated by the fact that the managed HTML DOM implements a security measure known as *cross-frame scripting security*. If a document contains a `FRAMESET` with two or more `FRAME`s in different domains, these `FRAME`s cannot interact with one another. In other words, a `FRAME` that displays content from your Web site cannot access information in a `FRAME` that hosts a third-party site such as `http://www.adatum.com/`. This security is implemented at the level of the <xref:System.Windows.Forms.HtmlWindow> class. You can obtain general information about a `FRAME` hosting another Web site, such as its URL, but you will be unable to access its <xref:System.Windows.Forms.HtmlWindow.Document%2A> or change the size or location of its hosting `FRAME` or `IFRAME`.  
+Access to frames is complicated by the fact that the managed HTML DOM implements a security measure known as *cross-frame scripting security*. If a document contains a `FRAMESET` with two or more `FRAME`s in different domains, these `FRAME`s cannot interact with one another. In other words, a `FRAME` that displays content from your Web site cannot access information in a `FRAME` that hosts a third-party site such as `http://www.adatum.com/`. This security is implemented at the level of the <xref:System.Windows.Forms.HtmlWindow> class. You can obtain general information about a `FRAME` hosting another Web site, such as its URL, but you will be unable to access its <xref:System.Windows.Forms.HtmlWindow.Document%2A> or change the size or location of its hosting `FRAME` or `IFRAME`.  
   
- This rule also applies to windows that you open using the <xref:System.Windows.Forms.HtmlWindow.Open%2A> and <xref:System.Windows.Forms.HtmlWindow.OpenNew%2A> methods. If the window you open is in a different domain from the page hosted in the <xref:System.Windows.Forms.WebBrowser> control, you will not be able to move that window or examine its contents. These restrictions are also enforced if you use the <xref:System.Windows.Forms.WebBrowser> control to display a Web site that is different from the Web site used to deploy your Windows Forms-based application. If you use ClickOnce deployment technology to install your application from Web site A, and you use the <xref:System.Windows.Forms.WebBrowser> to display Web site B, you will not be able to access Web site B's data.  
+This rule also applies to windows that you open using the <xref:System.Windows.Forms.HtmlWindow.Open%2A> and <xref:System.Windows.Forms.HtmlWindow.OpenNew%2A> methods. If the window you open is in a different domain from the page hosted in the <xref:System.Windows.Forms.WebBrowser> control, you will not be able to move that window or examine its contents. These restrictions are also enforced if you use the <xref:System.Windows.Forms.WebBrowser> control to display a Web site that is different from the Web site used to deploy your Windows Forms-based application. If you use ClickOnce deployment technology to install your application from Web site A, and you use the <xref:System.Windows.Forms.WebBrowser> to display Web site B, you will not be able to access Web site B's data.  
   
 ## See also
 

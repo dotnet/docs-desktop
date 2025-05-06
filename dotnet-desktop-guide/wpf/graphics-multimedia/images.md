@@ -18,16 +18,16 @@ Windows Presentation Foundation (WPF) provides built-in support for multiple ima
   
 ## In This Section  
 
- [Imaging Overview](imaging-overview.md)  
- [How-to Topics](imaging-how-to-topics.md)  
+[Imaging Overview](imaging-overview.md)  
+[How-to Topics](imaging-how-to-topics.md)  
   
 ## Reference  
 
- <xref:System.Windows.Controls.Image>  
+<xref:System.Windows.Controls.Image>  
   
- <xref:System.Windows.Media.Imaging.BitmapImage>  
+<xref:System.Windows.Media.Imaging.BitmapImage>  
   
- <xref:System.Windows.Media.Imaging.BitmapSource>  
+<xref:System.Windows.Media.Imaging.BitmapSource>  
   
 ## See also
 

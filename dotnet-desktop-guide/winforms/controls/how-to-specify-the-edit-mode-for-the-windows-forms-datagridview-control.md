@@ -23,9 +23,9 @@ By default, users can edit the contents of the current <xref:System.Windows.Form
   
 - The `ReadOnly` properties of the cell, row, column, and control are all set to `false`.  
   
- In edit mode, the user can change the cell value and press ENTER to commit the change or ESC to revert the cell to its original value.  
+In edit mode, the user can change the cell value and press ENTER to commit the change or ESC to revert the cell to its original value.  
   
- You can configure a <xref:System.Windows.Forms.DataGridView> control so that a cell enters edit mode as soon as it becomes the current cell. The behavior of the ENTER and ESC keys is unchanged in this case, but the cell remains in edit mode after the value is committed or reverted. You can also configure the control so that cells enter edit mode only when users type in the cell or only when users press F2. Finally, you can prevent cells from entering edit mode except when you call the <xref:System.Windows.Forms.DataGridView.BeginEdit%2A> method.  
+You can configure a <xref:System.Windows.Forms.DataGridView> control so that a cell enters edit mode as soon as it becomes the current cell. The behavior of the ENTER and ESC keys is unchanged in this case, but the cell remains in edit mode after the value is committed or reverted. You can also configure the control so that cells enter edit mode only when users type in the cell or only when users press F2. Finally, you can prevent cells from entering edit mode except when you call the <xref:System.Windows.Forms.DataGridView.BeginEdit%2A> method.  
   
 ### To change the edit mode of a DataGridView control  
   
@@ -36,7 +36,7 @@ By default, users can edit the contents of the current <xref:System.Windows.Form
   
 ## Compiling the Code  
 
- This example requires:  
+This example requires:  
   
 - A <xref:System.Windows.Forms.DataGridView> control named `dataGridView1`.  
   

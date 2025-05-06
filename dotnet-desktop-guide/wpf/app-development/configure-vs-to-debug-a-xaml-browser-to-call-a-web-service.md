@@ -19,7 +19,7 @@ XAML browser applications (XBAPs) run within a partial-trust security sandbox th
 
 ## Configuring Visual Studio
 
- To configure Visual Studio 2005 to debug an XBAP that calls a Web service:
+To configure Visual Studio 2005 to debug an XBAP that calls a Web service:
 
 1. With a project selected in **Solution Explorer**, on the **Project** menu, click **Properties**.
 
@@ -50,17 +50,17 @@ XAML browser applications (XBAPs) run within a partial-trust security sandbox th
 
      The *URL* value for the **-debugSecurityZoneURL** parameter is the URL for the location that you want to simulate as being the site of origin of your application.
 
- As an example, consider a XAML browser application (XBAP) that uses a Web service with the following URL:
+As an example, consider a XAML browser application (XBAP) that uses a Web service with the following URL:
 
- `http://services.msdn.microsoft.com/ContentServices/ContentService.asmx`
+`http://services.msdn.microsoft.com/ContentServices/ContentService.asmx`
 
- The site of origin URL for this Web service is:
+The site of origin URL for this Web service is:
 
- `http://services.msdn.microsoft.com`
+`http://services.msdn.microsoft.com`
 
- Consequently, the complete **-debugSecurityZoneURL** command-line parameter and value is:
+Consequently, the complete **-debugSecurityZoneURL** command-line parameter and value is:
 
- `-debugSecurityZoneURL http://services.msdn.microsoft.com`
+`-debugSecurityZoneURL http://services.msdn.microsoft.com`
 
 ## See also
 

@@ -25,7 +25,7 @@ ms.assetid: b9b79b8b-d9bf-4f8c-b9d6-9578bc3219d3
   
 - <xref:System.Windows.Forms.TreeNodeCollection>  
   
- The key associated with an item in a collection is typically the name of the item. The following procedures show you how to use collection classes to perform common tasks.  
+The key associated with an item in a collection is typically the name of the item. The following procedures show you how to use collection classes to perform common tasks.  
   
 ### To find and give focus to a nested control in a control collection  
   

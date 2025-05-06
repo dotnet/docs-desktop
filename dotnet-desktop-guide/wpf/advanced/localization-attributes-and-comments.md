@@ -17,7 +17,7 @@ Windows Presentation Foundation (WPF) localization comments are properties, insi
 
 ## Add Localization Comments
 
- If markup application authors have requirements for specific elements in XAML, such as constraints on text length, font family, or font size, they can convey this information to localizers with comments in the XAML code. The process for adding comments to source code is as follows:  
+If markup application authors have requirements for specific elements in XAML, such as constraints on text length, font family, or font size, they can convey this information to localizers with comments in the XAML code. The process for adding comments to source code is as follows:  
   
 1. Application developer adds localization comments to XAML source code.  
   
@@ -37,27 +37,27 @@ Windows Presentation Foundation (WPF) localization comments are properties, insi
   
 5. Localization comment files, containing only free-form comments, are incorporated into the localization process at a later time.  
   
- The following example shows how to add localization comments to a XAML file.  
+The following example shows how to add localization comments to a XAML file.  
   
- `<TextBlock x:Id = "text01"`  
+`<TextBlock x:Id = "text01"`  
   
- `FontFamily = "Microsoft Sans Serif"`  
+`FontFamily = "Microsoft Sans Serif"`  
   
- `FontSize = "12"`  
+`FontSize = "12"`  
   
- `Localization.Attributes = "$Content (Unmodifiable Readable Text)`  
+`Localization.Attributes = "$Content (Unmodifiable Readable Text)`  
   
- `FontFamily (Unmodifiable Readable)"`  
+`FontFamily (Unmodifiable Readable)"`  
   
- `Localization.Comments = "$Content (Trademark)`  
+`Localization.Comments = "$Content (Trademark)`  
   
- `FontSize (Trademark font size)" >`  
+`FontSize (Trademark font size)" >`  
   
- `Microsoft`  
+`Microsoft`  
   
- `</TextBlock>`  
+`</TextBlock>`  
   
- In the previous sample the Localization.Attributes section contains the localization attributes and the Localization.Comments section the free-form comments. The following tables show the attributes and comments and their meaning to the localizer.  
+In the previous sample the Localization.Attributes section contains the localization attributes and the Localization.Comments section the free-form comments. The following tables show the attributes and comments and their meaning to the localizer.  
   
 |Localization attributes|Meaning|  
 |-----------------------------|-------------|  
@@ -71,9 +71,9 @@ Windows Presentation Foundation (WPF) localization comments are properties, insi
   
 ### Localizability Attributes  
 
- The information in Localization.Attributes contains a list of pairs: the targeted value name and the associated localizability values. The target name can be a property name or the special $Content name. If it is a property name, the targeted value is the value of the property. If it is $Content, the target value is the content of the element.  
+The information in Localization.Attributes contains a list of pairs: the targeted value name and the associated localizability values. The target name can be a property name or the special $Content name. If it is a property name, the targeted value is the value of the property. If it is $Content, the target value is the content of the element.  
   
- There are three types of attributes:  
+There are three types of attributes:  
   
 - **Category**. This specifies whether a value should be modifiable from a localizer tool. See <xref:System.Windows.LocalizabilityAttribute.Category%2A>.  
   
@@ -81,11 +81,11 @@ Windows Presentation Foundation (WPF) localization comments are properties, insi
   
 - **Modifiability**. This specifies whether a localizer tool allows a value to be modified. See <xref:System.Windows.LocalizabilityAttribute.Modifiability%2A>.  
   
- These attributes can be specified in any order delimited by a space. In case duplicate attributes are specified, the last attribute will override former ones. For example, Localization.Attributes = "Unmodifiable Modifiable" sets Modifiability to Modifiable because it is the last value.  
+These attributes can be specified in any order delimited by a space. In case duplicate attributes are specified, the last attribute will override former ones. For example, Localization.Attributes = "Unmodifiable Modifiable" sets Modifiability to Modifiable because it is the last value.  
   
- Modifiability and Readability are self-explanatory. The Category attribute provides predefined categories that help the localizer when translating text. Categories, such as, Text, Label, and Title give the localizer information about how to translate the text. There are also special categories: None, Inherit, Ignore, and NeverLocalize.  
+Modifiability and Readability are self-explanatory. The Category attribute provides predefined categories that help the localizer when translating text. Categories, such as, Text, Label, and Title give the localizer information about how to translate the text. There are also special categories: None, Inherit, Ignore, and NeverLocalize.  
   
- The following table shows the meaning of the special categories.  
+The following table shows the meaning of the special categories.  
   
 |Category|Meaning|  
 |--------------|-------------|  
@@ -98,7 +98,7 @@ Windows Presentation Foundation (WPF) localization comments are properties, insi
 
 ## Localization Comments  
 
- Localization.Comments contains free-form strings concerning the targeted value. Application developers can add information to give localizers hints about how the applications text should be translated. The format of the comments can be any string surrounded by "()". Use '\\' to escape characters.  
+Localization.Comments contains free-form strings concerning the targeted value. Application developers can add information to give localizers hints about how the applications text should be translated. The format of the comments can be any string surrounded by "()". Use '\\' to escape characters.  
   
 ## See also
 

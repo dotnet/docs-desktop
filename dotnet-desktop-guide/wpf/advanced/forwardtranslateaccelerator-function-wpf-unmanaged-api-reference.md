@@ -16,7 +16,7 @@ ms.assetid: fff47a86-9d9f-4176-9530-10e1876e393f
 
 This API supports the Windows Presentation Foundation (WPF) infrastructure and is not intended to be used directly from your code.  
   
- Used by the Windows Presentation Foundation (WPF) infrastructure for windows management.  
+Used by the Windows Presentation Foundation (WPF) infrastructure for windows management.  
   
 ## Syntax  
   
@@ -29,23 +29,23 @@ HRESULT ForwardTranslateAccelerator(
   
 ## Parameters  
 
- pMsg  
- A pointer to a message.  
+pMsg  
+A pointer to a message.  
   
- appUnhandled  
- `true` when the app has already been given a chance to handle the input message, but has not handled it; otherwise, `false`.  
+appUnhandled  
+`true` when the app has already been given a chance to handle the input message, but has not handled it; otherwise, `false`.  
   
 ## Requirements  
 
- **Platforms:** See [.NET Framework System Requirements](/dotnet/framework/get-started/system-requirements).  
+**Platforms:** See [.NET Framework System Requirements](/dotnet/framework/get-started/system-requirements).  
   
- **DLL:**  
+**DLL:**  
   
- In the .NET Framework 3.0 and 3.5: PresentationHostDLL.dll  
+In the .NET Framework 3.0 and 3.5: PresentationHostDLL.dll  
   
- In the .NET Framework 4 and later: PresentationHost_v0400.dll  
+In the .NET Framework 4 and later: PresentationHost_v0400.dll  
   
- **.NET Framework Version:** Available since 3.0  
+**.NET Framework Version:** Available since 3.0  
   
 ## See also
 

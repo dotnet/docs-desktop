@@ -17,7 +17,7 @@ You may want to modify the parameters of an image when you save the image to dis
   
 ## Example  
 
- The following example code creates an <xref:System.Drawing.Imaging.EncoderParameter> object and saves three JPEG images. Each JPEG image is saved with a different quality level, by modifying the `long` value passed to the <xref:System.Drawing.Imaging.EncoderParameter> constructor. A quality level of 0 corresponds to the greatest compression, and a quality level of 100 corresponds to the least compression.  
+The following example code creates an <xref:System.Drawing.Imaging.EncoderParameter> object and saves three JPEG images. Each JPEG image is saved with a different quality level, by modifying the `long` value passed to the <xref:System.Drawing.Imaging.EncoderParameter> constructor. A quality level of 0 corresponds to the greatest compression, and a quality level of 100 corresponds to the least compression.  
   
 ```csharp  
 private void VaryQualityLevel()  
@@ -120,7 +120,7 @@ End Function
   
 ## Compiling the Code  
 
- This example requires:  
+This example requires:  
   
 - A Windows Forms application.  
   

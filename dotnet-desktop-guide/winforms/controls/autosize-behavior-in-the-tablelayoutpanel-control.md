@@ -19,7 +19,7 @@ ms.assetid: 9233e0c3-2fa6-405e-8701-959479b1250e
 
 ## Distinct AutoSize Behaviors  
 
- The <xref:System.Windows.Forms.TableLayoutPanel> control supports automatic sizing behavior in the following ways:  
+The <xref:System.Windows.Forms.TableLayoutPanel> control supports automatic sizing behavior in the following ways:  
   
 - Through the <xref:System.Windows.Forms.Control.AutoSize%2A> property;  
   
@@ -27,7 +27,7 @@ ms.assetid: 9233e0c3-2fa6-405e-8701-959479b1250e
   
 ### The AutoSize Property with Row and Column Styles  
 
- The following table describes the interaction between the <xref:System.Windows.Forms.Control.AutoSize%2A> property and the <xref:System.Windows.Forms.TableLayoutPanel> control’s column and row styles.  
+The following table describes the interaction between the <xref:System.Windows.Forms.Control.AutoSize%2A> property and the <xref:System.Windows.Forms.TableLayoutPanel> control’s column and row styles.  
   
 |AutoSize setting|Style interaction|  
 |----------------------|-----------------------|  

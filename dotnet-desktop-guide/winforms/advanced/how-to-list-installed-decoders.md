@@ -17,14 +17,14 @@ You may want to list the image decoders available on a computer, to determine wh
   
 ## Example  
 
- The following code example outputs the list of installed decoders and their property values.  
+The following code example outputs the list of installed decoders and their property values.  
   
- [!code-csharp[UsingImageEncodersDecoders#2](~/samples/snippets/csharp/VS_Snippets_Winforms/UsingImageEncodersDecoders/CS/Form1.cs#2)]
- [!code-vb[UsingImageEncodersDecoders#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/UsingImageEncodersDecoders/VB/Form1.vb#2)]  
+[!code-csharp[UsingImageEncodersDecoders#2](~/samples/snippets/csharp/VS_Snippets_Winforms/UsingImageEncodersDecoders/CS/Form1.cs#2)]
+[!code-vb[UsingImageEncodersDecoders#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/UsingImageEncodersDecoders/VB/Form1.vb#2)]  
   
 ## Compiling the Code  
 
- This example requires:  
+This example requires:  
   
 - A Windows Forms application.  
   

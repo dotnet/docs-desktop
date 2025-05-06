@@ -16,7 +16,7 @@ The topics in this section describe how to use the <xref:System.Windows.Controls
   
 ## In This Section  
 
- [Create Simple or Complex TreeViews](how-to-create-simple-or-complex-treeviews.md)  
+[Create Simple or Complex TreeViews](how-to-create-simple-or-complex-treeviews.md)  
   [Use SelectedValue, SelectedValuePath, and SelectedItem](how-to-use-selectedvalue-selectedvaluepath-and-selecteditem.md)  
   [Bind a TreeView to Data That Has an Indeterminable Depth](how-to-bind-a-treeview-to-data-that-has-an-indeterminable-depth.md)  
   [Improve the Performance of a TreeView](how-to-improve-the-performance-of-a-treeview.md)  
@@ -24,6 +24,6 @@ The topics in this section describe how to use the <xref:System.Windows.Controls
   
 ## Reference  
 
- <xref:System.Windows.Controls.TreeView>  
+<xref:System.Windows.Controls.TreeView>  
   
- <xref:System.Windows.Controls.TreeViewItem>  
+<xref:System.Windows.Controls.TreeViewItem>  

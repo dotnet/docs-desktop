@@ -18,7 +18,7 @@ ms.assetid: 8b20db5b-8118-4825-90e8-2c45c186ac7d
 
 The Windows Forms <xref:System.Windows.Forms.MonthCalendar> control can display days in bold type, either as singular dates or on a repeating basis. You might do this to draw attention to special dates, such as holidays and weekends.  
   
- Three properties control this feature. The <xref:System.Windows.Forms.MonthCalendar.BoldedDates%2A> property contains single dates. The <xref:System.Windows.Forms.MonthCalendar.AnnuallyBoldedDates%2A> property contains dates that appear in bold every year. The <xref:System.Windows.Forms.MonthCalendar.MonthlyBoldedDates%2A> property contains dates that appear in bold every month. Each of these properties contains an array of <xref:System.DateTime> objects. To add or remove a date from one of these lists, you must add or remove a <xref:System.DateTime> object.  
+Three properties control this feature. The <xref:System.Windows.Forms.MonthCalendar.BoldedDates%2A> property contains single dates. The <xref:System.Windows.Forms.MonthCalendar.AnnuallyBoldedDates%2A> property contains dates that appear in bold every year. The <xref:System.Windows.Forms.MonthCalendar.MonthlyBoldedDates%2A> property contains dates that appear in bold every month. Each of these properties contains an array of <xref:System.DateTime> objects. To add or remove a date from one of these lists, you must add or remove a <xref:System.DateTime> object.  
   
 ### To make a date appear in bold type  
   

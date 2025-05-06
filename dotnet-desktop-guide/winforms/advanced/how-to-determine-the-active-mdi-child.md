@@ -18,9 +18,9 @@ description: Learn how to determine the active MDI child using the ActiveMdiChil
 
 On occasion, you will want to provide a command that operates on the control that has focus on the currently active child form. For example, suppose you want to copy selected text from the child form's text box to the Clipboard. You would create a procedure that copies selected text to the Clipboard using the <xref:System.Windows.Forms.Control.Click> event of the Copy menu item on the standard Edit menu.  
   
- Because an MDI application can have many instances of the same child form, the procedure needs to know which form to use. To specify the correct form, use the <xref:System.Windows.Forms.Form.ActiveMdiChild%2A> property, which returns the child form that has the focus or that was most recently active.  
+Because an MDI application can have many instances of the same child form, the procedure needs to know which form to use. To specify the correct form, use the <xref:System.Windows.Forms.Form.ActiveMdiChild%2A> property, which returns the child form that has the focus or that was most recently active.  
   
- When you have several controls on a form, you also need to specify which control is active. Like the <xref:System.Windows.Forms.Form.ActiveMdiChild%2A> property, the <xref:System.Windows.Forms.ContainerControl.ActiveControl%2A> property returns the control with the focus on the active child form. The procedure below illustrates a copy procedure that can be called from a child form menu, a menu on the MDI form, or a toolbar button.  
+When you have several controls on a form, you also need to specify which control is active. Like the <xref:System.Windows.Forms.Form.ActiveMdiChild%2A> property, the <xref:System.Windows.Forms.ContainerControl.ActiveControl%2A> property returns the control with the focus on the active child form. The procedure below illustrates a copy procedure that can be called from a child form menu, a menu on the MDI form, or a toolbar button.  
   
 ### To determine the active MDI child (to copy its text to the Clipboard)  
   

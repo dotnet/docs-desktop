@@ -16,15 +16,15 @@ The topics in this section demonstrate how to use the <xref:System.Windows.Contr
   
 ## In This Section  
 
- [Handle the ScrollChanged Event](how-to-handle-the-scrollchanged-event.md)  
- [Scroll Content by Using the IScrollInfo Interface](how-to-scroll-content-by-using-the-iscrollinfo-interface.md)  
- [Use the Content-Scrolling Methods of ScrollViewer](how-to-use-the-content-scrolling-methods-of-scrollviewer.md)  
+[Handle the ScrollChanged Event](how-to-handle-the-scrollchanged-event.md)  
+[Scroll Content by Using the IScrollInfo Interface](how-to-scroll-content-by-using-the-iscrollinfo-interface.md)  
+[Use the Content-Scrolling Methods of ScrollViewer](how-to-use-the-content-scrolling-methods-of-scrollviewer.md)  
   
 ## Reference  
 
- <xref:System.Windows.Controls.Primitives.ScrollBar>  
+<xref:System.Windows.Controls.Primitives.ScrollBar>  
   
- <xref:System.Windows.Controls.ScrollViewer>  
+<xref:System.Windows.Controls.ScrollViewer>  
   
 ## See also
 

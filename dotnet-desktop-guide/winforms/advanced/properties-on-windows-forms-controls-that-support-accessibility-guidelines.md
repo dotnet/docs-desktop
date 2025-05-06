@@ -14,7 +14,7 @@ Controls on the standard toolbox for Windows Forms support many of the accessibi
   
 ## Planning Ahead for Accessibility  
 
- The controls' properties can be used to support other accessibility guidelines as shown in the following table. Additionally, you should use menus to provide access to program features.  
+The controls' properties can be used to support other accessibility guidelines as shown in the following table. Additionally, you should use menus to provide access to program features.  
   
 |Control Property|Considerations for Accessibility|  
 |----------------------|--------------------------------------|  

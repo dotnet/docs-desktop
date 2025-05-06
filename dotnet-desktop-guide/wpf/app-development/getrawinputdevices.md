@@ -19,23 +19,23 @@ HRESULT GetRawInputDevices( [out] IEnumRAWINPUTDEVICE **ppEnum );
   
 ## Parameters  
 
- `ppEnum`  
+`ppEnum`  
   
- [out] A pointer to an [IEnumRAWINPUTDEVICE](ienumrawinputdevice.md) for enumerating the raw input devices.  
+[out] A pointer to an [IEnumRAWINPUTDEVICE](ienumrawinputdevice.md) for enumerating the raw input devices.  
   
 ## Property Value/Return Value  
 
- HRESULT:  
+HRESULT:  
   
- S_OK - [IEnumRAWINPUTDEVICE](ienumrawinputdevice.md) will only be used by PresentationHost.exe if S_OK is returned.  
+S_OK - [IEnumRAWINPUTDEVICE](ienumrawinputdevice.md) will only be used by PresentationHost.exe if S_OK is returned.  
   
- E_NOTIMPL  
+E_NOTIMPL  
   
 ## Remarks  
 
- Raw input devices are the set of input devices that includes keyboards, mice, and less traditional devices like remote controls.  
+Raw input devices are the set of input devices that includes keyboards, mice, and less traditional devices like remote controls.  
   
- Once the list of raw input devices has been retrieved, PresentationHost.exe registers with the devices to receive WM_INPUT notification messages.  
+Once the list of raw input devices has been retrieved, PresentationHost.exe registers with the devices to receive WM_INPUT notification messages.  
   
 ## See also
 

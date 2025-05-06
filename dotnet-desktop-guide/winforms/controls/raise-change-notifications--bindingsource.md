@@ -25,16 +25,16 @@ The <xref:System.Windows.Forms.BindingSource> component automatically detects ch
   
 ## Example  
 
- The following code example demonstrates a simple implementation of the <xref:System.ComponentModel.INotifyPropertyChanged> interface. It also shows how the <xref:System.Windows.Forms.BindingSource> automatically passes a data source change to a bound control when the <xref:System.Windows.Forms.BindingSource> is bound to a list of the <xref:System.ComponentModel.INotifyPropertyChanged> type.  
+The following code example demonstrates a simple implementation of the <xref:System.ComponentModel.INotifyPropertyChanged> interface. It also shows how the <xref:System.Windows.Forms.BindingSource> automatically passes a data source change to a bound control when the <xref:System.Windows.Forms.BindingSource> is bound to a list of the <xref:System.ComponentModel.INotifyPropertyChanged> type.  
   
- If you use the `CallerMemberName` attribute, calls to the `NotifyPropertyChanged` method don't have to specify the property name as a string argument. For more information, see [Caller Information (C#)](/dotnet/csharp/language-reference/attributes/caller-information) or [Caller Information (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/caller-information).  
+If you use the `CallerMemberName` attribute, calls to the `NotifyPropertyChanged` method don't have to specify the property name as a string argument. For more information, see [Caller Information (C#)](/dotnet/csharp/language-reference/attributes/caller-information) or [Caller Information (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/caller-information).  
   
- [!code-csharp[System.ComponentModel.IPropertyChangeExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.IPropertyChangeExample/CS/Form1.cs#1)]
- [!code-vb[System.ComponentModel.IPropertyChangeExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.IPropertyChangeExample/VB/Form1.vb#1)]  
+[!code-csharp[System.ComponentModel.IPropertyChangeExample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.IPropertyChangeExample/CS/Form1.cs#1)]
+[!code-vb[System.ComponentModel.IPropertyChangeExample#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.IPropertyChangeExample/VB/Form1.vb#1)]  
   
 ## Compiling the Code  
 
- This example requires:  
+This example requires:  
   
 - References to the System, System.Data, System.Drawing, and System.Windows.Forms assemblies.  
   

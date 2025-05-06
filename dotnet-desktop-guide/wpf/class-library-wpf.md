@@ -122,7 +122,7 @@ The following links refer to namespaces that contain Windows Presentation Founda
   
 ## XAML Support in .NET 4  
 
- The following namespaces contain types from the System.Xaml assembly. System.Xaml provides common XAML language support for frameworks such as WPF that are built on .NET Framework 4.  
+The following namespaces contain types from the System.Xaml assembly. System.Xaml provides common XAML language support for frameworks such as WPF that are built on .NET Framework 4.  
   
 - <xref:System.Windows.Markup> (shared)  
   

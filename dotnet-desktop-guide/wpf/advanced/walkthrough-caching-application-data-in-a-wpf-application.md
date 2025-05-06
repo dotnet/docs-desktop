@@ -16,14 +16,14 @@ description: Learn how caching application data in a WPF application enables use
 
 Caching enables you to store data in memory for rapid access. When the data is accessed again, applications can get the data from the cache instead of retrieving it from the original source. This can improve performance and scalability. In addition, caching makes data available when the data source is temporarily unavailable.
 
- The .NET Framework provides classes that enable you to use caching in .NET Framework applications. These classes are located in the <xref:System.Runtime.Caching> namespace.
+The .NET Framework provides classes that enable you to use caching in .NET Framework applications. These classes are located in the <xref:System.Runtime.Caching> namespace.
 
 > [!NOTE]
 > The <xref:System.Runtime.Caching> namespace is new in the .NET Framework 4. This namespace makes caching is available to all .NET Framework applications. In previous versions of the .NET Framework, caching was available only in the <xref:System.Web> namespace and therefore required a dependency on ASP.NET classes.
 
- This walkthrough shows you how to use the caching functionality that is available in the .NET Framework as part of a Windows Presentation Foundation (WPF) application. In the walkthrough, you cache the contents of a text file.
+This walkthrough shows you how to use the caching functionality that is available in the .NET Framework as part of a Windows Presentation Foundation (WPF) application. In the walkthrough, you cache the contents of a text file.
 
- Tasks illustrated in this walkthrough include the following:
+Tasks illustrated in this walkthrough include the following:
 
 - Creating a WPF application project.
 
@@ -39,7 +39,7 @@ Caching enables you to store data in memory for rapid access. When the data is a
 
 ## Prerequisites
 
- In order to complete this walkthrough, you will need:
+In order to complete this walkthrough, you will need:
 
 - Visual Studio 2010.
 
@@ -51,7 +51,7 @@ Caching enables you to store data in memory for rapid access. When the data is a
 
 ## Creating a WPF Application Project
 
- You will start by creating a WPF application project.
+You will start by creating a WPF application project.
 
 #### To create a WPF application
 
@@ -78,9 +78,9 @@ Caching enables you to store data in memory for rapid access. When the data is a
 
 ## Targeting the .NET Framework and Adding a Reference to the Caching Assemblies
 
- By default, WPF applications target the .NET Framework 4 Client Profile. To use the <xref:System.Runtime.Caching> namespace in a WPF application, the application must target the .NET Framework 4 (not the .NET Framework 4 Client Profile) and must include a reference to the namespace.
+By default, WPF applications target the .NET Framework 4 Client Profile. To use the <xref:System.Runtime.Caching> namespace in a WPF application, the application must target the .NET Framework 4 (not the .NET Framework 4 Client Profile) and must include a reference to the namespace.
 
- Therefore, the next step is to change the .NET Framework target and add a reference to the <xref:System.Runtime.Caching> namespace.
+Therefore, the next step is to change the .NET Framework target and add a reference to the <xref:System.Runtime.Caching> namespace.
 
 > [!NOTE]
 > The procedure for changing the .NET Framework target is different in a Visual Basic project and in a Visual C# project.
@@ -131,7 +131,7 @@ Caching enables you to store data in memory for rapid access. When the data is a
 
 ## Adding a Button to the WPF Window
 
- Next, you will add a button control and create an event handler for the button's `Click` event. Later you will add code to so when you click the button, the contents of the text file are cached and displayed.
+Next, you will add a button control and create an event handler for the button's `Click` event. Later you will add code to so when you click the button, the contents of the text file are cached and displayed.
 
 #### To add a button control
 
@@ -143,7 +143,7 @@ Caching enables you to store data in memory for rapid access. When the data is a
 
 ## Initializing the Cache and Caching an Entry
 
- Next, you will add the code to perform the following tasks:
+Next, you will add the code to perform the following tasks:
 
 - Create an instance of the cache class—that is, you will instantiate a new <xref:System.Runtime.Caching.MemoryCache> object.
 
@@ -287,7 +287,7 @@ Caching enables you to store data in memory for rapid access. When the data is a
 
 ## Testing Caching in the WPF Application
 
- You can now test the application.
+You can now test the application.
 
 #### To test caching in the WPF application
 
@@ -324,10 +324,10 @@ Caching enables you to store data in memory for rapid access. When the data is a
 
 ## Code Example
 
- After you have completed this walkthrough, the code for the project you created will resemble the following example.
+After you have completed this walkthrough, the code for the project you created will resemble the following example.
 
- [!code-csharp[CachingWPFApplications#1](~/samples/snippets/csharp/VS_Snippets_Wpf/CachingWPFApplications/CSharp/MainWindow.xaml.cs#1)]
- [!code-vb[CachingWPFApplications#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CachingWPFApplications/VisualBasic/MainWindow.xaml.vb#1)]
+[!code-csharp[CachingWPFApplications#1](~/samples/snippets/csharp/VS_Snippets_Wpf/CachingWPFApplications/CSharp/MainWindow.xaml.cs#1)]
+[!code-vb[CachingWPFApplications#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/CachingWPFApplications/VisualBasic/MainWindow.xaml.vb#1)]
 
 ## See also
 

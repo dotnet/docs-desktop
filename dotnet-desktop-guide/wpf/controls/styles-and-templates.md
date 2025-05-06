@@ -16,17 +16,17 @@ Windows Presentation Foundation (WPF) styling and templating refer to a suite of
   
 ## In This Section  
 
- [Styling and Templating](styles-templates-overview.md)  
+[Styling and Templating](styles-templates-overview.md)  
   [How to: Find ControlTemplate-Generated Elements](how-to-find-controltemplate-generated-elements.md)  
   
 ## Reference  
 
- <xref:System.Windows.Style>  
+<xref:System.Windows.Style>  
   <xref:System.Windows.Controls.ControlTemplate>  
   <xref:System.Windows.DataTemplate>  
   
 ## Related Sections  
 
- [Advanced](../advanced/index.md)  
+[Advanced](../advanced/index.md)  
   [Control Customization](control-customization.md)  
   [Graphics and Multimedia](../graphics-multimedia/index.md)

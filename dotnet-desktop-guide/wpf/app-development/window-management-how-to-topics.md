@@ -15,7 +15,7 @@ The following topics show how to manage Windows Presentation Foundation (WPF) wi
   
 ## In This Section  
 
- [Automatically Size a Window to Fit Its Content](how-to-automatically-size-a-window-to-fit-its-content.md)  
+[Automatically Size a Window to Fit Its Content](how-to-automatically-size-a-window-to-fit-its-content.md)  
   [Get all Windows in an Application](how-to-get-all-windows-in-an-application.md)  
   [Get and Set the Main Application Window](../windows/how-to-get-set-main-application-window.md)  
   [Open a Dialog Box](../windows/how-to-open-window-dialog-box.md)  
@@ -24,10 +24,10 @@ The following topics show how to manage Windows Presentation Foundation (WPF) wi
   
 ## Related Sections  
 
- [Application Management Overview](application-management-overview.md)  
+[Application Management Overview](application-management-overview.md)  
   
- [Navigation Overview](navigation-overview.md)  
+[Navigation Overview](navigation-overview.md)  
   
- [Hosting](hosting-wpf-applications.md)  
+[Hosting](hosting-wpf-applications.md)  
   
- [Build and Deploy](building-and-deploying-wpf-applications.md)
+[Build and Deploy](building-and-deploying-wpf-applications.md)

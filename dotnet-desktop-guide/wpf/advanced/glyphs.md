@@ -19,7 +19,7 @@ Glyphs are a low-level depiction of a character to be drawn on-screen. Windows P
   
 ## In This Section  
 
- [Introduction to the GlyphRun Object and Glyphs Element](introduction-to-the-glyphrun-object-and-glyphs-element.md)  
+[Introduction to the GlyphRun Object and Glyphs Element](introduction-to-the-glyphrun-object-and-glyphs-element.md)  
   [How to: Draw Text Using Glyphs](draw-text-using-glyphs.md)  
   
 ## See also

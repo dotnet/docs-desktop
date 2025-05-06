@@ -19,7 +19,7 @@ Interaction with the <xref:System.Windows.Forms.DataGridView> often requires tha
 > [!NOTE]
 > You cannot set the current cell in a row or column that has its <xref:System.Windows.Forms.DataGridViewBand.Visible%2A> property set to `false`.  
   
- Depending on the <xref:System.Windows.Forms.DataGridView> control's selection mode, changing the current cell can change the selection. For more information, see [Selection Modes in the Windows Forms DataGridView Control](selection-modes-in-the-windows-forms-datagridview-control.md).  
+Depending on the <xref:System.Windows.Forms.DataGridView> control's selection mode, changing the current cell can change the selection. For more information, see [Selection Modes in the Windows Forms DataGridView Control](selection-modes-in-the-windows-forms-datagridview-control.md).  
   
 ### To get the current cell programmatically  
   
@@ -37,7 +37,7 @@ Interaction with the <xref:System.Windows.Forms.DataGridView> often requires tha
   
 ## Compiling the Code  
 
- This example requires:  
+This example requires:  
   
 - <xref:System.Windows.Forms.Button> controls named `getCurrentCellButton` and `setCurrentCellButton`. In Visual C#, you must attach the <xref:System.Windows.Forms.Control.Click> events for each button to the associated event handler in the example code.  
   

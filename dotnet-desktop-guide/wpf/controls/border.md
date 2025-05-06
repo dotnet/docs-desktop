@@ -17,16 +17,16 @@ The following sample demonstrates how to dynamically change properties of the <x
   
 ## In This Section  
 
- [Animate a BorderThickness Value](how-to-animate-a-borderthickness-value.md)  
+[Animate a BorderThickness Value](how-to-animate-a-borderthickness-value.md)  
   
 ## Reference  
 
- <xref:System.Windows.Controls.Decorator>  
+<xref:System.Windows.Controls.Decorator>  
   
- <xref:System.Windows.Controls.Border>  
+<xref:System.Windows.Controls.Border>  
   
 ## Related Sections  
 
- [Panels Overview](panels-overview.md)  
+[Panels Overview](panels-overview.md)  
   
- [Alignment, Margins, and Padding Overview](../advanced/alignment-margins-and-padding-overview.md)
+[Alignment, Margins, and Padding Overview](../advanced/alignment-margins-and-padding-overview.md)

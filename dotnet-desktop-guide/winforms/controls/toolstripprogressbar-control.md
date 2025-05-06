@@ -16,16 +16,16 @@ The <xref:System.Windows.Forms.ToolStripProgressBar> combines <xref:System.Windo
   
 ## In This Section  
 
- [ToolStripProgressBar Control Overview](toolstripprogressbar-control-overview.md)  
- Provides topics that describe the purpose and main concepts of the Windows Forms <xref:System.Windows.Forms.ToolStripProgressBar> control.  
+[ToolStripProgressBar Control Overview](toolstripprogressbar-control-overview.md)  
+Provides topics that describe the purpose and main concepts of the Windows Forms <xref:System.Windows.Forms.ToolStripProgressBar> control.  
   
 ## Reference  
 
- <xref:System.Windows.Forms.ToolStripPanel>  
- Provides reference documentation for the <xref:System.Windows.Forms.ToolStripPanel> control.  
+<xref:System.Windows.Forms.ToolStripPanel>  
+Provides reference documentation for the <xref:System.Windows.Forms.ToolStripPanel> control.  
   
- <xref:System.Windows.Forms.ToolStripProgressBar>  
- Provides reference documentation for the <xref:System.Windows.Forms.ToolStripProgressBar> control.  
+<xref:System.Windows.Forms.ToolStripProgressBar>  
+Provides reference documentation for the <xref:System.Windows.Forms.ToolStripProgressBar> control.  
   
 ## See also
 

@@ -58,26 +58,26 @@ The <xref:System.Windows.Forms.TableLayoutPanel> control supports the <xref:Syst
   
 ## Example  
 
- The following illustration shows five buttons anchored in five separate <xref:System.Windows.Forms.TableLayoutPanel> cells.  
+The following illustration shows five buttons anchored in five separate <xref:System.Windows.Forms.TableLayoutPanel> cells.  
   
- ![Screenshot of the TableLayoutPanel, showing five buttons anchored in different locations in five separate cells.](./media/vs-tlpanchor.gif "VS_TLPanchor")  
+![Screenshot of the TableLayoutPanel, showing five buttons anchored in different locations in five separate cells.](./media/vs-tlpanchor.gif "VS_TLPanchor")  
   
- The following illustration shows four buttons anchored in the corners of four separate <xref:System.Windows.Forms.TableLayoutPanel> cells.  
+The following illustration shows four buttons anchored in the corners of four separate <xref:System.Windows.Forms.TableLayoutPanel> cells.  
   
- ![Screenshot of the TableLayoutPanel with four buttons, anchored in top left, top right, bottom right, and bottom left corners, respectively.](./media/vs-tlpanchor2.gif "VS_TLPanchor2")  
+![Screenshot of the TableLayoutPanel with four buttons, anchored in top left, top right, bottom right, and bottom left corners, respectively.](./media/vs-tlpanchor2.gif "VS_TLPanchor2")  
   
- The following illustration shows three buttons stretched by anchoring in three separate <xref:System.Windows.Forms.TableLayoutPanel> cells.  
+The following illustration shows three buttons stretched by anchoring in three separate <xref:System.Windows.Forms.TableLayoutPanel> cells.  
   
- ![Screenshot of the TableLayoutPanel, showing three buttons of different sizes and shapes anchored separately.](./media/vs-tlpanchor3.gif "VS_TLPAnchor3")  
+![Screenshot of the TableLayoutPanel, showing three buttons of different sizes and shapes anchored separately.](./media/vs-tlpanchor3.gif "VS_TLPAnchor3")  
   
- The following code example demonstrates all the combinations of <xref:System.Windows.Forms.Control.Anchor%2A> property values for a <xref:System.Windows.Forms.Button> control in a <xref:System.Windows.Forms.TableLayoutPanel> control.  
+The following code example demonstrates all the combinations of <xref:System.Windows.Forms.Control.Anchor%2A> property values for a <xref:System.Windows.Forms.Button> control in a <xref:System.Windows.Forms.TableLayoutPanel> control.  
   
- [!code-csharp[System.Windows.Forms.TableLayoutPanel.AnchorExampleForm#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TableLayoutPanel.AnchorExampleForm/CS/TlpAnchorExampleForm.cs#1)]
- [!code-vb[System.Windows.Forms.TableLayoutPanel.AnchorExampleForm#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TableLayoutPanel.AnchorExampleForm/VB/TlpAnchorExampleForm.vb#1)]  
+[!code-csharp[System.Windows.Forms.TableLayoutPanel.AnchorExampleForm#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.TableLayoutPanel.AnchorExampleForm/CS/TlpAnchorExampleForm.cs#1)]
+[!code-vb[System.Windows.Forms.TableLayoutPanel.AnchorExampleForm#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TableLayoutPanel.AnchorExampleForm/VB/TlpAnchorExampleForm.vb#1)]  
   
 ## Compiling the Code  
 
- This example requires:  
+This example requires:  
   
 - References to the System, System.Data, System.Drawing and System.Windows.Forms assemblies.  
   

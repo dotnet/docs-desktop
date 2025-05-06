@@ -38,12 +38,12 @@ The following procedures demonstrate some common scenarios that customize or com
   
 ## Example  
 
- The following complete code example provides a demonstration application that can help you understand the sizing options described in this topic.  
+The following complete code example provides a demonstration application that can help you understand the sizing options described in this topic.  
   
- [!code-csharp[System.Windows.Forms.DataGridViewSizingScenarios#00](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewSizingScenarios/CS/sizingscenarios.cs#00)]
- [!code-vb[System.Windows.Forms.DataGridViewSizingScenarios#00](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewSizingScenarios/vb/sizingscenarios.vb#00)]  
+[!code-csharp[System.Windows.Forms.DataGridViewSizingScenarios#00](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewSizingScenarios/CS/sizingscenarios.cs#00)]
+[!code-vb[System.Windows.Forms.DataGridViewSizingScenarios#00](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewSizingScenarios/vb/sizingscenarios.vb#00)]  
   
- To use this demonstration application:  
+To use this demonstration application:  
   
 - Change the size of the form. Observe how the fill-mode columns change their widths while retaining the proportions indicated by the <xref:System.Windows.Forms.DataGridViewColumn.FillWeight%2A> property values. Observe how a column's <xref:System.Windows.Forms.DataGridViewColumn.MinimumWidth%2A> prevents it from changing when the form is too small.  
   
@@ -51,7 +51,7 @@ The following procedures demonstrate some common scenarios that customize or com
   
 ## Compiling the Code  
 
- This example requires:  
+This example requires:  
   
 - References to the System and System.Windows.Forms assemblies.  
   

@@ -18,17 +18,17 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
   
 ## TabControl Parts  
 
- The following table lists the named parts for the <xref:System.Windows.Controls.TabControl> control.  
+The following table lists the named parts for the <xref:System.Windows.Controls.TabControl> control.  
   
 |Part|Type|Description|  
 |-|-|-|  
 |PART_SelectedContentHost|<xref:System.Windows.Controls.ContentPresenter>|The object that shows the content of the currently selected <xref:System.Windows.Controls.TabItem>.|  
   
- When you create a <xref:System.Windows.Controls.ControlTemplate> for a <xref:System.Windows.Controls.TabControl>, your template might contain an <xref:System.Windows.Controls.ItemsPresenter> within a <xref:System.Windows.Controls.ScrollViewer>. (The <xref:System.Windows.Controls.ItemsPresenter> displays each item in the <xref:System.Windows.Controls.TabControl>; the <xref:System.Windows.Controls.ScrollViewer> enables scrolling within the control).  If the <xref:System.Windows.Controls.ItemsPresenter> is not the direct child of the <xref:System.Windows.Controls.ScrollViewer>, you must give the <xref:System.Windows.Controls.ItemsPresenter> the name, `ItemsPresenter`.  
+When you create a <xref:System.Windows.Controls.ControlTemplate> for a <xref:System.Windows.Controls.TabControl>, your template might contain an <xref:System.Windows.Controls.ItemsPresenter> within a <xref:System.Windows.Controls.ScrollViewer>. (The <xref:System.Windows.Controls.ItemsPresenter> displays each item in the <xref:System.Windows.Controls.TabControl>; the <xref:System.Windows.Controls.ScrollViewer> enables scrolling within the control).  If the <xref:System.Windows.Controls.ItemsPresenter> is not the direct child of the <xref:System.Windows.Controls.ScrollViewer>, you must give the <xref:System.Windows.Controls.ItemsPresenter> the name, `ItemsPresenter`.  
   
 ## TabControl States  
 
- The following table lists the visual states for the <xref:System.Windows.Controls.TabControl> control.  
+The following table lists the visual states for the <xref:System.Windows.Controls.TabControl> control.  
   
 |VisualState Name|VisualStateGroup Name|Description|  
 |----------------------|---------------------------|-----------------|  
@@ -40,11 +40,11 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
   
 ## TabItem Parts  
 
- The <xref:System.Windows.Controls.TabItem> control does not have any named parts.  
+The <xref:System.Windows.Controls.TabItem> control does not have any named parts.  
   
 ## TabItem States  
 
- The following table lists the visual states for the <xref:System.Windows.Controls.TabItem> control.  
+The following table lists the visual states for the <xref:System.Windows.Controls.TabItem> control.  
   
 |VisualState Name|VisualStateGroup Name|Description|  
 |----------------------|---------------------------|-----------------|  
@@ -61,15 +61,15 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
   
 ## TabControl ControlTemplate Example  
 
- The following example shows how to define a <xref:System.Windows.Controls.ControlTemplate> for the <xref:System.Windows.Controls.TabControl> and <xref:System.Windows.Controls.TabItem> controls.  
+The following example shows how to define a <xref:System.Windows.Controls.ControlTemplate> for the <xref:System.Windows.Controls.TabControl> and <xref:System.Windows.Controls.TabItem> controls.  
   
- [!code-xaml[ControlTemplateExamples#TabControl](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/tabcontrol.xaml#tabcontrol)]  
+[!code-xaml[ControlTemplateExamples#TabControl](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/tabcontrol.xaml#tabcontrol)]  
   
- The preceding example uses one or more of the following resources.  
+The preceding example uses one or more of the following resources.  
   
- [!code-xaml[ControlTemplateExamples#Resources](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/shared.xaml#resources)]  
+[!code-xaml[ControlTemplateExamples#Resources](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/shared.xaml#resources)]  
   
- For the complete sample, see [Styling with ControlTemplates Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Styles%20&%20Templates/IntroToStylingAndTemplating).  
+For the complete sample, see [Styling with ControlTemplates Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Styles%20&%20Templates/IntroToStylingAndTemplating).  
   
 ## See also
 

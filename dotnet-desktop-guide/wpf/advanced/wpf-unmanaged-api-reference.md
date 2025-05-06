@@ -11,14 +11,14 @@ Windows Presentation Foundation (WPF) libraries expose a number of unmanaged fun
   
 ## In This Section  
 
- [Activate Function](activate-function-wpf-unmanaged-api-reference.md)  
- [CreateIDispatchSTAForwarder Function](createidispatchstaforwarder-function-wpf-unmanaged-api-reference.md)  
- [Deactivate Function](deactivate-function-wpf-unmanaged-api-reference.md)  
- [ForwardTranslateAccelerator Function](forwardtranslateaccelerator-function-wpf-unmanaged-api-reference.md)  
- [LoadFromHistory Function](loadfromhistory-function-wpf-unmanaged-api-reference.md)  
- [ProcessUnhandledException Function](processunhandledexception-function-wpf-unmanaged-api-reference.md)  
- [SaveToHistory Function](savetohistory-function-wpf-unmanaged-api-reference.md)  
- [SetFakeActiveWindow Function](setfakeactivewindow-function-wpf-unmanaged-api-reference.md)  
+[Activate Function](activate-function-wpf-unmanaged-api-reference.md)  
+[CreateIDispatchSTAForwarder Function](createidispatchstaforwarder-function-wpf-unmanaged-api-reference.md)  
+[Deactivate Function](deactivate-function-wpf-unmanaged-api-reference.md)  
+[ForwardTranslateAccelerator Function](forwardtranslateaccelerator-function-wpf-unmanaged-api-reference.md)  
+[LoadFromHistory Function](loadfromhistory-function-wpf-unmanaged-api-reference.md)  
+[ProcessUnhandledException Function](processunhandledexception-function-wpf-unmanaged-api-reference.md)  
+[SaveToHistory Function](savetohistory-function-wpf-unmanaged-api-reference.md)  
+[SetFakeActiveWindow Function](setfakeactivewindow-function-wpf-unmanaged-api-reference.md)  
   
 ## See also
 

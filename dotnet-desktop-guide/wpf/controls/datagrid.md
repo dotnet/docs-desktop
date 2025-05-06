@@ -17,7 +17,7 @@ ms.assetid: bf89ea63-79b6-422b-bc9f-0485ad803216
 
 The <xref:System.Windows.Controls.DataGrid> control enables you to display and edit data from many different sources, such as from a SQL database, LINQ query, or any other bindable data source. For more information, see [Binding Sources Overview](../data/binding-sources-overview.md).  
   
- Columns can display text, controls, such as a <xref:System.Windows.Controls.ComboBox>, or any other WPF content, such as images, buttons, or any content contained in a template. You can use a <xref:System.Windows.Controls.DataGridTemplateColumn> to display data defined in a template. The following table lists the column types that are provided by default.  
+Columns can display text, controls, such as a <xref:System.Windows.Controls.ComboBox>, or any other WPF content, such as images, buttons, or any content contained in a template. You can use a <xref:System.Windows.Controls.DataGridTemplateColumn> to display data defined in a template. The following table lists the column types that are provided by default.  
   
 |Generated Column Type|Data Type|  
 |---------------------------|---------------|  
@@ -26,9 +26,9 @@ The <xref:System.Windows.Controls.DataGrid> control enables you to display and e
 |<xref:System.Windows.Controls.DataGridComboBoxColumn>|<xref:System.Enum>|  
 |<xref:System.Windows.Controls.DataGridHyperlinkColumn>|<xref:System.Uri>|  
   
- <xref:System.Windows.Controls.DataGrid> can be customized in appearance, such as cell font, color, and size. <xref:System.Windows.Controls.DataGrid> supports all styling and templating functionality of other WPF controls. <xref:System.Windows.Controls.DataGrid> also includes default and customizable behaviors for editing, sorting, and validation.  
+<xref:System.Windows.Controls.DataGrid> can be customized in appearance, such as cell font, color, and size. <xref:System.Windows.Controls.DataGrid> supports all styling and templating functionality of other WPF controls. <xref:System.Windows.Controls.DataGrid> also includes default and customizable behaviors for editing, sorting, and validation.  
   
- The following table lists some of the common tasks for <xref:System.Windows.Controls.DataGrid> and how to accomplish them. By viewing the related API, you can find more information and sample code.  
+The following table lists some of the common tasks for <xref:System.Windows.Controls.DataGrid> and how to accomplish them. By viewing the related API, you can find more information and sample code.  
   
 |Scenario|Approach|  
 |--------------|--------------|  

@@ -24,17 +24,17 @@ This topic provides an overview of how to package fonts with your Windows Presen
 
 ## Introduction to Packaging Fonts  
 
- You can easily package fonts as resources within your WPF applications to display user interface text and other types of text based content. The fonts can be separate from or embedded within the application's assembly files. You can also create a resource-only font library, which your application can reference.  
+You can easily package fonts as resources within your WPF applications to display user interface text and other types of text based content. The fonts can be separate from or embedded within the application's assembly files. You can also create a resource-only font library, which your application can reference.  
   
- OpenType and TrueType® fonts contain a type flag, fsType, that indicates font embedding licensing rights for the font. However, this type flag only refers to embedded fonts stored in a document–it does not refer to fonts embedded in an application. You can retrieve the font embedding rights for a font by creating a <xref:System.Windows.Media.GlyphTypeface> object and referencing its <xref:System.Windows.Media.GlyphTypeface.EmbeddingRights%2A> property. Refer to the "OS/2 and Windows Metrics" section of the [OpenType Specification](https://www.microsoft.com/typography/otspec/os2.htm) for more information on the fsType flag.  
+OpenType and TrueType® fonts contain a type flag, fsType, that indicates font embedding licensing rights for the font. However, this type flag only refers to embedded fonts stored in a document–it does not refer to fonts embedded in an application. You can retrieve the font embedding rights for a font by creating a <xref:System.Windows.Media.GlyphTypeface> object and referencing its <xref:System.Windows.Media.GlyphTypeface.EmbeddingRights%2A> property. Refer to the "OS/2 and Windows Metrics" section of the [OpenType Specification](https://www.microsoft.com/typography/otspec/os2.htm) for more information on the fsType flag.  
   
- The [Microsoft Typography](/typography/) Web site includes contact information that can help you locate a particular font vendor or find a font vendor for custom work.  
+The [Microsoft Typography](/typography/) Web site includes contact information that can help you locate a particular font vendor or find a font vendor for custom work.  
   
 <a name="adding_fonts_as_content_items"></a>
 
 ## Adding Fonts as Content Items  
 
- You can add fonts to your application as project content items that are separate from the application's assembly files. This means that content items are not embedded as resources within an assembly. The following project file example shows how to define content items.  
+You can add fonts to your application as project content items that are separate from the application's assembly files. This means that content items are not embedded as resources within an assembly. The following project file example shows how to define content items.  
   
 ```xml  
 <Project DefaultTargets="Build"  
@@ -48,7 +48,7 @@ This topic provides an overview of how to package fonts with your Windows Presen
 </Project>  
 ```  
   
- In order to ensure that the application can use the fonts at run time, the fonts must be accessible in the application's deployment directory. The `<CopyToOutputDirectory>` element in the application's project file allows you to automatically copy the fonts to the application deployment directory during the build process. The following project file example shows how to copy fonts to the deployment directory.  
+In order to ensure that the application can use the fonts at run time, the fonts must be accessible in the application's deployment directory. The `<CopyToOutputDirectory>` element in the application's project file allows you to automatically copy the fonts to the application deployment directory during the build process. The following project file example shows how to copy fonts to the deployment directory.  
   
 ```xml  
 <ItemGroup>  
@@ -61,15 +61,15 @@ This topic provides an overview of how to package fonts with your Windows Presen
 </ItemGroup>  
 ```  
   
- The following code example shows how to reference the application's font as a content item—the referenced content item must be in the same directory as the application's assembly files.  
+The following code example shows how to reference the application's font as a content item—the referenced content item must be in the same directory as the application's assembly files.  
   
- [!code-xaml[FontSnippets#FontPackageSnippet8](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/FontPackageSnippets.xaml#fontpackagesnippet8)]  
+[!code-xaml[FontSnippets#FontPackageSnippet8](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/FontPackageSnippets.xaml#fontpackagesnippet8)]  
   
 <a name="adding_fonts_as_resource_items"></a>
 
 ## Adding Fonts as Resource Items  
 
- You can add fonts to your application as project resource items that are embedded within the application's assembly files. Using a separate subdirectory for resources helps to organize the application's project files. The following project file example shows how to define fonts as resource items in a separate subdirectory.  
+You can add fonts to your application as project resource items that are embedded within the application's assembly files. Using a separate subdirectory for resources helps to organize the application's project files. The following project file example shows how to define fonts as resource items in a separate subdirectory.  
   
 ```xml  
 <Project DefaultTargets="Build"  
@@ -86,25 +86,25 @@ This topic provides an overview of how to package fonts with your Windows Presen
 > [!NOTE]
 > When you add fonts as resources to your application, make sure you are setting the `<Resource>` element, and not the `<EmbeddedResource>` element in your application's project file. The `<EmbeddedResource>` element for the build action is not supported.  
   
- The following markup example shows how to reference the application's font resources.  
+The following markup example shows how to reference the application's font resources.  
   
- [!code-xaml[FontSnippets#FontPackageSnippet1](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/FontPackageSnippets.xaml#fontpackagesnippet1)]  
+[!code-xaml[FontSnippets#FontPackageSnippet1](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/FontPackageSnippets.xaml#fontpackagesnippet1)]  
   
 ### Referencing Font Resource Items from Code  
 
- In order to reference font resource items from code, you must supply a two-part font resource reference: the base uniform resource identifier (URI); and the font location reference. These values are used as the parameters for the <xref:System.Windows.Media.FontFamily.%23ctor%2A> method. The following code example shows how to reference the application's font resources in the project subdirectory called `resources`.  
+In order to reference font resource items from code, you must supply a two-part font resource reference: the base uniform resource identifier (URI); and the font location reference. These values are used as the parameters for the <xref:System.Windows.Media.FontFamily.%23ctor%2A> method. The following code example shows how to reference the application's font resources in the project subdirectory called `resources`.  
   
- [!code-csharp[FontSnippets#FontPackageSnippet2](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/FontPackageSnippets.xaml.cs#fontpackagesnippet2)]
- [!code-vb[FontSnippets#FontPackageSnippet2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FontSnippets/visualbasic/fontpackagesnippets.xaml.vb#fontpackagesnippet2)]  
+[!code-csharp[FontSnippets#FontPackageSnippet2](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/FontPackageSnippets.xaml.cs#fontpackagesnippet2)]
+[!code-vb[FontSnippets#FontPackageSnippet2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FontSnippets/visualbasic/fontpackagesnippets.xaml.vb#fontpackagesnippet2)]  
   
- The base uniform resource identifier (URI) can include the application subdirectory where the font resource resides. In this case, the font location reference would not need to specify a directory, but would have to include a leading "`./`", which indicates the font resource is in the same directory specified by the base uniform resource identifier (URI). The following code example shows an alternate way of referencing the font resource item—it is equivalent to the previous code example.  
+The base uniform resource identifier (URI) can include the application subdirectory where the font resource resides. In this case, the font location reference would not need to specify a directory, but would have to include a leading "`./`", which indicates the font resource is in the same directory specified by the base uniform resource identifier (URI). The following code example shows an alternate way of referencing the font resource item—it is equivalent to the previous code example.  
   
- [!code-csharp[FontSnippets#FontPackageSnippet5](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/FontPackageSnippets.xaml.cs#fontpackagesnippet5)]
- [!code-vb[FontSnippets#FontPackageSnippet5](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FontSnippets/visualbasic/fontpackagesnippets.xaml.vb#fontpackagesnippet5)]  
+[!code-csharp[FontSnippets#FontPackageSnippet5](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/FontPackageSnippets.xaml.cs#fontpackagesnippet5)]
+[!code-vb[FontSnippets#FontPackageSnippet5](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FontSnippets/visualbasic/fontpackagesnippets.xaml.vb#fontpackagesnippet5)]  
   
 ### Referencing Fonts from the Same Application Subdirectory  
 
- You can place both application content and resource files within the same user-defined subdirectory of your application project. The following project file example shows a content page and font resources defined in the same subdirectory.  
+You can place both application content and resource files within the same user-defined subdirectory of your application project. The following project file example shows a content page and font resources defined in the same subdirectory.  
   
 ```xml  
 <ItemGroup>  
@@ -116,30 +116,30 @@ This topic provides an overview of how to package fonts with your Windows Presen
 </ItemGroup>  
 ```  
   
- Since the application content and font are in the same subdirectory, the font reference is relative to the application content. The following examples show how to reference the application's font resource when the font is in the same directory as the application.  
+Since the application content and font are in the same subdirectory, the font reference is relative to the application content. The following examples show how to reference the application's font resource when the font is in the same directory as the application.  
   
- [!code-xaml[FontSnippets#FontPackageSnippet3](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/pages/HomePage.xaml#fontpackagesnippet3)]  
+[!code-xaml[FontSnippets#FontPackageSnippet3](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/pages/HomePage.xaml#fontpackagesnippet3)]  
   
- [!code-csharp[FontSnippets#FontPackageSnippet4](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/pages/HomePage.xaml.cs#fontpackagesnippet4)]
- [!code-vb[FontSnippets#FontPackageSnippet4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FontSnippets/visualbasic/pages/homepage.xaml.vb#fontpackagesnippet4)]  
+[!code-csharp[FontSnippets#FontPackageSnippet4](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/pages/HomePage.xaml.cs#fontpackagesnippet4)]
+[!code-vb[FontSnippets#FontPackageSnippet4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FontSnippets/visualbasic/pages/homepage.xaml.vb#fontpackagesnippet4)]  
   
 ### Enumerating Fonts in an Application  
 
- To enumerate fonts as resource items in your application, use either the <xref:System.Windows.Media.Fonts.GetFontFamilies%2A> or <xref:System.Windows.Media.Fonts.GetTypefaces%2A> method. The following example shows how to use the <xref:System.Windows.Media.Fonts.GetFontFamilies%2A> method to return the collection of <xref:System.Windows.Media.FontFamily> objects from the application font location. In this case, the application contains a subdirectory named "resources".  
+To enumerate fonts as resource items in your application, use either the <xref:System.Windows.Media.Fonts.GetFontFamilies%2A> or <xref:System.Windows.Media.Fonts.GetTypefaces%2A> method. The following example shows how to use the <xref:System.Windows.Media.Fonts.GetFontFamilies%2A> method to return the collection of <xref:System.Windows.Media.FontFamily> objects from the application font location. In this case, the application contains a subdirectory named "resources".  
   
- [!code-csharp[FontSnippets#FontsSnippet3](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/FontFamilySnippets.xaml.cs#fontssnippet3)]
- [!code-vb[FontSnippets#FontsSnippet3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FontSnippets/visualbasic/fontfamilysnippets.xaml.vb#fontssnippet3)]  
+[!code-csharp[FontSnippets#FontsSnippet3](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/FontFamilySnippets.xaml.cs#fontssnippet3)]
+[!code-vb[FontSnippets#FontsSnippet3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FontSnippets/visualbasic/fontfamilysnippets.xaml.vb#fontssnippet3)]  
   
- The following example shows how to use the <xref:System.Windows.Media.Fonts.GetTypefaces%2A> method to return the collection of <xref:System.Windows.Media.Typeface> objects from the application font location. In this case, the application contains a subdirectory named "resources".  
+The following example shows how to use the <xref:System.Windows.Media.Fonts.GetTypefaces%2A> method to return the collection of <xref:System.Windows.Media.Typeface> objects from the application font location. In this case, the application contains a subdirectory named "resources".  
   
- [!code-csharp[FontSnippets#FontsSnippet7](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/FontFamilySnippets.xaml.cs#fontssnippet7)]
- [!code-vb[FontSnippets#FontsSnippet7](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FontSnippets/visualbasic/fontfamilysnippets.xaml.vb#fontssnippet7)]  
+[!code-csharp[FontSnippets#FontsSnippet7](~/samples/snippets/csharp/VS_Snippets_Wpf/FontSnippets/CSharp/FontFamilySnippets.xaml.cs#fontssnippet7)]
+[!code-vb[FontSnippets#FontsSnippet7](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FontSnippets/visualbasic/fontfamilysnippets.xaml.vb#fontssnippet7)]  
   
 <a name="creating_a_font_resource_library"></a>
 
 ## Creating a Font Resource Library  
 
- You can create a resource-only library that contains only fonts—no code is part of this type of library project. Creating a resource-only library is a common technique for decoupling resources from the application code that uses them. This also allows the library assembly to be included with multiple application projects. The following project file example shows the key portions of a resource-only library project.  
+You can create a resource-only library that contains only fonts—no code is part of this type of library project. Creating a resource-only library is a common technique for decoupling resources from the application code that uses them. This also allows the library assembly to be included with multiple application projects. The following project file example shows the key portions of a resource-only library project.  
   
 ```xml  
 <PropertyGroup>  
@@ -156,9 +156,9 @@ This topic provides an overview of how to package fonts with your Windows Presen
   
 ### Referencing a Font in a Resource Library  
 
- To reference a font in a resource library from your application, you must prefix the font reference with the name of the library assembly. In this case, the font resource assembly is "FontLibrary". To separate the assembly name from the reference within the assembly, use a ';' character. Adding the "Component" keyword followed by the reference to the font name completes the full reference to the font library's resource. The following code example shows how to reference a font in a resource library assembly.  
+To reference a font in a resource library from your application, you must prefix the font reference with the name of the library assembly. In this case, the font resource assembly is "FontLibrary". To separate the assembly name from the reference within the assembly, use a ';' character. Adding the "Component" keyword followed by the reference to the font name completes the full reference to the font library's resource. The following code example shows how to reference a font in a resource library assembly.  
   
- [!code-xaml[OpenTypeFontsSample#OpenTypeFontsSample1](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontsSample/CS/Kootenay.xaml#opentypefontssample1)]  
+[!code-xaml[OpenTypeFontsSample#OpenTypeFontsSample1](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontsSample/CS/Kootenay.xaml#opentypefontssample1)]  
   
 > [!NOTE]
 > This SDK contains a set of sample OpenType fonts that you can use with WPF applications. The fonts are defined in a resource-only library. For more information, see [Sample OpenType Font Pack](sample-opentype-font-pack.md).  
@@ -167,7 +167,7 @@ This topic provides an overview of how to package fonts with your Windows Presen
 
 ## Limitations on Font Usage  
 
- The following list describes several limitations on the packaging and use of fonts in WPF applications:  
+The following list describes several limitations on the packaging and use of fonts in WPF applications:  
   
 - **Font embedding permission bits:** WPF applications do not check or enforce any font embedding permission bits. See the [Introduction_to_Packing Fonts](#introduction_to_packaging_fonts) section for more information.  
   

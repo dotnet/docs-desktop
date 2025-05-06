@@ -17,12 +17,12 @@ The following topics demonstrate how to use the graphic capabilities of the Wind
   
 ## In This Section  
 
- [Animate a Rectangle](how-to-animate-a-rectangle.md)  
- [Animate the Position of an Object by Using PointAnimation](how-to-animate-the-position-of-an-object-by-using-pointanimation.md)  
- [Transform Points and Vectors](how-to-transform-points-and-vectors.md)  
- [Extend Glass Frame Into a WPF Application](extend-glass-frame-into-a-wpf-application.md)  
- [How to: Improve Rendering Performance by Caching an Element](how-to-improve-rendering-performance-by-caching-an-element.md)  
- [How to: Use a Cached Element as a Brush](how-to-use-a-cached-element-as-a-brush.md)  
+[Animate a Rectangle](how-to-animate-a-rectangle.md)  
+[Animate the Position of an Object by Using PointAnimation](how-to-animate-the-position-of-an-object-by-using-pointanimation.md)  
+[Transform Points and Vectors](how-to-transform-points-and-vectors.md)  
+[Extend Glass Frame Into a WPF Application](extend-glass-frame-into-a-wpf-application.md)  
+[How to: Improve Rendering Performance by Caching an Element](how-to-improve-rendering-performance-by-caching-an-element.md)  
+[How to: Use a Cached Element as a Brush](how-to-use-a-cached-element-as-a-brush.md)  
   
 ## See also
 

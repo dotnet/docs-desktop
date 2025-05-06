@@ -35,11 +35,11 @@ Sometimes it is useful to display data in a user-friendly format on a Windows Fo
 |12|Potato|  
 |13|Chicken|  
   
- In this scenario, one table, **OrderDetailsTable**, stores the actual information you are concerned with displaying and saving. But to save space, it does so in a fairly cryptic fashion. The other table, **ItemTable**, contains only appearance-related information about which ID number is equivalent to which food name, and nothing about the actual food orders.  
+In this scenario, one table, **OrderDetailsTable**, stores the actual information you are concerned with displaying and saving. But to save space, it does so in a fairly cryptic fashion. The other table, **ItemTable**, contains only appearance-related information about which ID number is equivalent to which food name, and nothing about the actual food orders.  
   
- The **ItemTable** is connected to the <xref:System.Windows.Forms.ComboBox>, <xref:System.Windows.Forms.ListBox>, or <xref:System.Windows.Forms.CheckedListBox> control through three properties. The `DataSource` property contains the name of this table. The `DisplayMember` property contains the data column of that table that you want to display in the control (the food name). The `ValueMember` property contains the data column of that table with the stored information (the ID number).  
+The **ItemTable** is connected to the <xref:System.Windows.Forms.ComboBox>, <xref:System.Windows.Forms.ListBox>, or <xref:System.Windows.Forms.CheckedListBox> control through three properties. The `DataSource` property contains the name of this table. The `DisplayMember` property contains the data column of that table that you want to display in the control (the food name). The `ValueMember` property contains the data column of that table with the stored information (the ID number).  
   
- The **OrderDetailsTable** is connected to the control by its bindings collection, accessed through the <xref:System.Windows.Forms.Control.DataBindings%2A> property. When you add a binding object to the collection, you connect a control property to a specific data member (the column of ID numbers) in a data source (the **OrderDetailsTable**). When a selection is made in the control, this table is where the form input is saved.  
+The **OrderDetailsTable** is connected to the control by its bindings collection, accessed through the <xref:System.Windows.Forms.Control.DataBindings%2A> property. When you add a binding object to the collection, you connect a control property to a specific data member (the column of ID numbers) in a data source (the **OrderDetailsTable**). When a selection is made in the control, this table is where the form input is saved.  
   
 ### To create a lookup table  
   

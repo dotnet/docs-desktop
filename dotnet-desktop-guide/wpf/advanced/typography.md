@@ -18,14 +18,14 @@ Windows Presentation Foundation (WPF) includes support for rich presentation of 
   
 ## In This Section  
 
- [Typography in WPF](typography-in-wpf.md)  
- [ClearType Overview](cleartype-overview.md)  
- [ClearType Registry Settings](cleartype-registry-settings.md)  
- [Drawing Formatted Text](drawing-formatted-text.md)  
- [Advanced Text Formatting](advanced-text-formatting.md)  
- [Fonts](fonts-wpf.md)  
- [Glyphs](glyphs.md)  
- [How-to Topics](typography-how-to-topics.md)  
+[Typography in WPF](typography-in-wpf.md)  
+[ClearType Overview](cleartype-overview.md)  
+[ClearType Registry Settings](cleartype-registry-settings.md)  
+[Drawing Formatted Text](drawing-formatted-text.md)  
+[Advanced Text Formatting](advanced-text-formatting.md)  
+[Fonts](fonts-wpf.md)  
+[Glyphs](glyphs.md)  
+[How-to Topics](typography-how-to-topics.md)  
   
 ## See also
 

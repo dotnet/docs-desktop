@@ -5,7 +5,7 @@ ms.date: 10/22/2019
 ms.service: dotnet-framework
 ms.topic: sample
 helpviewer_keywords:
- - linq to xml data binding sample
+- linq to xml data binding sample
 ---
 # LINQ to XML data binding sample
 

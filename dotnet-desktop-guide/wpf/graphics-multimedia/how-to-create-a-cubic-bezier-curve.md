@@ -16,15 +16,15 @@ This example shows how to create a cubic Bezier curve. To create a cubic Bezier 
   
 ## Example  
 
- In Extensible Application Markup Language (XAML), you may use abbreviated markup syntax to describe a path.  
+In Extensible Application Markup Language (XAML), you may use abbreviated markup syntax to describe a path.  
   
- [!code-xaml[GeometrySample#53](~/samples/snippets/csharp/VS_Snippets_Wpf/GeometrySample/CS/geometryattributesyntaxexample.xaml#53)]
+[!code-xaml[GeometrySample#53](~/samples/snippets/csharp/VS_Snippets_Wpf/GeometrySample/CS/geometryattributesyntaxexample.xaml#53)]
   
- In XAML, you can also draw a cubic Bezier curve using object tags. The following is equivalent to the previous XAML example.  
+In XAML, you can also draw a cubic Bezier curve using object tags. The following is equivalent to the previous XAML example.  
   
- [!code-xaml[GeometrySample#33](~/samples/snippets/csharp/VS_Snippets_Wpf/GeometrySample/CS/pathgeometryexample.xaml#33)]  
+[!code-xaml[GeometrySample#33](~/samples/snippets/csharp/VS_Snippets_Wpf/GeometrySample/CS/pathgeometryexample.xaml#33)]  
   
- This example is part of larger sample; for the complete sample, see the [Geometries Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Graphics/Geometry).  
+This example is part of larger sample; for the complete sample, see the [Geometries Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Graphics/Geometry).  
   
 ## See also
 

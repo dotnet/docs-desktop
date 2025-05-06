@@ -16,7 +16,7 @@ ms.assetid: 0e5010ad-1e9a-4271-895e-5a3d24d37a26
 > [!IMPORTANT]
 > The <xref:System.Windows.Forms.ToolStripProgressBar> control replaces and adds functionality to the <xref:System.Windows.Forms.ProgressBar> control; however, the <xref:System.Windows.Forms.ProgressBar> control is retained for both backward compatibility and future use, if you choose.  
   
- The .NET Framework gives you several different ways to display a given value within the <xref:System.Windows.Forms.ProgressBar> control. Which approach you choose will depend on the task at hand or the problem you are solving. The following table shows the approaches you can choose.  
+The .NET Framework gives you several different ways to display a given value within the <xref:System.Windows.Forms.ProgressBar> control. Which approach you choose will depend on the task at hand or the problem you are solving. The following table shows the approaches you can choose.  
   
 |Approach|Description|  
 |--------------|-----------------|  
@@ -24,7 +24,7 @@ ms.assetid: 0e5010ad-1e9a-4271-895e-5a3d24d37a26
 |Increase the <xref:System.Windows.Forms.ProgressBar> display by a fixed value.|This approach is useful when you are displaying a simple count between the minimum and maximum, such as elapsed time or the number of files that have been processed out of a known total.|  
 |Increase the <xref:System.Windows.Forms.ProgressBar> display by a value that varies.|This approach is useful when you need to change the displayed value a number of times in different amounts. An example would be showing the amount of hard-disk space being consumed while writing a series of files to the disk.|  
   
- The most direct way to set the value displayed by a progress bar is by setting the <xref:System.Windows.Forms.ProgressBar.Value%2A> property. This can be done either at design time or at run time.  
+The most direct way to set the value displayed by a progress bar is by setting the <xref:System.Windows.Forms.ProgressBar.Value%2A> property. This can be done either at design time or at run time.  
   
 ### To set the ProgressBar value directly  
   

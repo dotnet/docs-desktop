@@ -11,7 +11,7 @@ ms.assetid: 4bcf949d-d92f-4d8d-8a9b-1e4c61b25bf6
 
 As you use the Windows Presentation Foundation (WPF) to build 3D controls and include 3D scenes in your applications, it is important to consider performance optimization. This topic provides a list of 3D classes and properties that have performance implications for your application, along with recommendations for optimizing performance when you use them.  
   
- This topic assumes an advanced understanding of Windows Presentation Foundation (WPF) 3D features. The suggestions in this document apply to "rendering tier 2"—roughly defined as hardware that supports pixel shader version 2.0 and vertex shader version 2.0. For more details, see [Graphics Rendering Tiers](../advanced/graphics-rendering-tiers.md).  
+This topic assumes an advanced understanding of Windows Presentation Foundation (WPF) 3D features. The suggestions in this document apply to "rendering tier 2"—roughly defined as hardware that supports pixel shader version 2.0 and vertex shader version 2.0. For more details, see [Graphics Rendering Tiers](../advanced/graphics-rendering-tiers.md).  
   
 ## Performance Impact: High  
   

@@ -16,7 +16,7 @@ description: Learn how to host the Microsoft Windows Media Player as a control o
 
 To enable improved interaction with browsers, you can use Microsoft ActiveX controls in your WPF-based application. This walkthrough demonstrates how you can host the Microsoft Windows Media Player as a control on a WPF page.
 
- Tasks illustrated in this walkthrough include:
+Tasks illustrated in this walkthrough include:
 
 - Creating the project.
 
@@ -24,11 +24,11 @@ To enable improved interaction with browsers, you can use Microsoft ActiveX cont
 
 - Hosting the ActiveX control on a WPF Page.
 
- When you have completed this walkthrough, you will understand how to use Microsoft ActiveX controls in your WPF-based application.
+When you have completed this walkthrough, you will understand how to use Microsoft ActiveX controls in your WPF-based application.
 
 ## Prerequisites
 
- You need the following components to complete this walkthrough:
+You need the following components to complete this walkthrough:
 
 - Microsoft Windows Media Player installed on the computer where Visual Studio is installed.
 

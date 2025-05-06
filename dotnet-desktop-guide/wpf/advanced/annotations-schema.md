@@ -259,7 +259,7 @@ The Base Schema defines the XML structure for the three abstract elements define
                        type="anb:FlowSegmentItemValueType"/>
        </xsd:restriction>
     </xsd:complexContent>
- </xsd:complexType>
+</xsd:complexType>
 
   <!-- FlowCountItemType -->
   <xsd:complexType name="FlowCountItemType">

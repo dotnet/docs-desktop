@@ -19,79 +19,79 @@ This topic provides an overview of the features of the <xref:System.Windows.Medi
 
 ## Technology Overview  
 
- The <xref:System.Windows.Media.FormattedText> object allows you to draw multi-line text, in which each character in the text can be individually formatted. The following example shows text that has several formats applied to it.  
+The <xref:System.Windows.Media.FormattedText> object allows you to draw multi-line text, in which each character in the text can be individually formatted. The following example shows text that has several formats applied to it.  
   
- ![Text displayed using FormattedText object](./media/typography-in-wpf/text-formatted-linear-gradient.jpg)  
+![Text displayed using FormattedText object](./media/typography-in-wpf/text-formatted-linear-gradient.jpg)  
   
 > [!NOTE]
 > For those developers migrating from the Win32 API, the table in the [Win32 Migration](#win32_migration) section lists the Win32 DrawText flags and the approximate equivalent in Windows Presentation Foundation (WPF).  
   
 ### Reasons for Using Formatted Text  
 
- WPF includes multiple controls for drawing text to the screen. Each control is targeted to a different scenario and has its own list of features and limitations. In general, the <xref:System.Windows.Controls.TextBlock> element should be used when limited text support is required, such as a brief sentence in a user interface (UI). <xref:System.Windows.Controls.Label> can be used when minimal text support is required. For more information, see [Documents in WPF](documents-in-wpf.md).  
+WPF includes multiple controls for drawing text to the screen. Each control is targeted to a different scenario and has its own list of features and limitations. In general, the <xref:System.Windows.Controls.TextBlock> element should be used when limited text support is required, such as a brief sentence in a user interface (UI). <xref:System.Windows.Controls.Label> can be used when minimal text support is required. For more information, see [Documents in WPF](documents-in-wpf.md).  
   
- The <xref:System.Windows.Media.FormattedText> object provides greater text formatting features than Windows Presentation Foundation (WPF) text controls, and can be useful in cases where you want to use text as a decorative element. For more information, see the following section [Converting Formatted Text to a Geometry](#converting_formatted_text).  
+The <xref:System.Windows.Media.FormattedText> object provides greater text formatting features than Windows Presentation Foundation (WPF) text controls, and can be useful in cases where you want to use text as a decorative element. For more information, see the following section [Converting Formatted Text to a Geometry](#converting_formatted_text).  
   
- In addition, the <xref:System.Windows.Media.FormattedText> object is useful for creating text-oriented <xref:System.Windows.Media.DrawingVisual>-derived objects. <xref:System.Windows.Media.DrawingVisual> is a lightweight drawing class that is used to render shapes, images, or text. For more information, see [Hit Test Using DrawingVisuals Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Visual%20Layer/DrawingVisual).  
+In addition, the <xref:System.Windows.Media.FormattedText> object is useful for creating text-oriented <xref:System.Windows.Media.DrawingVisual>-derived objects. <xref:System.Windows.Media.DrawingVisual> is a lightweight drawing class that is used to render shapes, images, or text. For more information, see [Hit Test Using DrawingVisuals Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Visual%20Layer/DrawingVisual).  
   
 ## Using the FormattedText Object  
 
- To create formatted text, call the <xref:System.Windows.Media.FormattedText.%23ctor%2A> constructor to create a <xref:System.Windows.Media.FormattedText> object. Once you have created the initial formatted text string, you can apply a range of formatting styles.  
+To create formatted text, call the <xref:System.Windows.Media.FormattedText.%23ctor%2A> constructor to create a <xref:System.Windows.Media.FormattedText> object. Once you have created the initial formatted text string, you can apply a range of formatting styles.  
   
- Use the <xref:System.Windows.Media.FormattedText.MaxTextWidth%2A> property to constrain the text to a specific width. The text will automatically wrap to avoid exceeding the specified width. Use the <xref:System.Windows.Media.FormattedText.MaxTextHeight%2A> property to constrain the text to a specific height. The text will display an ellipsis, "…" for the text that exceeds the specified height.  
+Use the <xref:System.Windows.Media.FormattedText.MaxTextWidth%2A> property to constrain the text to a specific width. The text will automatically wrap to avoid exceeding the specified width. Use the <xref:System.Windows.Media.FormattedText.MaxTextHeight%2A> property to constrain the text to a specific height. The text will display an ellipsis, "…" for the text that exceeds the specified height.  
   
- ![Text displayed with wordwrap and ellipsis.](./media/drawing-formatted-text/formatted-text-wordwrap-ellipsis.png)
+![Text displayed with wordwrap and ellipsis.](./media/drawing-formatted-text/formatted-text-wordwrap-ellipsis.png)
   
- You can apply multiple formatting styles to one or more characters. For example, you could call both the <xref:System.Windows.Media.FormattedText.SetFontSize%2A> and <xref:System.Windows.Media.FormattedText.SetForegroundBrush%2A> methods to change the formatting of the first five characters in the text.  
+You can apply multiple formatting styles to one or more characters. For example, you could call both the <xref:System.Windows.Media.FormattedText.SetFontSize%2A> and <xref:System.Windows.Media.FormattedText.SetForegroundBrush%2A> methods to change the formatting of the first five characters in the text.  
   
- The following code example creates a <xref:System.Windows.Media.FormattedText> object and then applies several formatting styles to the text.  
+The following code example creates a <xref:System.Windows.Media.FormattedText> object and then applies several formatting styles to the text.  
   
- [!code-csharp[FormattedTextSnippets#FormattedTextSnippets1](~/samples/snippets/csharp/VS_Snippets_Wpf/FormattedTextSnippets/CSharp/Window1.xaml.cs#formattedtextsnippets1)]
- [!code-vb[FormattedTextSnippets#FormattedTextSnippets1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FormattedTextSnippets/visualbasic/window1.xaml.vb#formattedtextsnippets1)]  
+[!code-csharp[FormattedTextSnippets#FormattedTextSnippets1](~/samples/snippets/csharp/VS_Snippets_Wpf/FormattedTextSnippets/CSharp/Window1.xaml.cs#formattedtextsnippets1)]
+[!code-vb[FormattedTextSnippets#FormattedTextSnippets1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FormattedTextSnippets/visualbasic/window1.xaml.vb#formattedtextsnippets1)]  
   
 ### Font Size Unit of Measure  
 
- As with other text objects in Windows Presentation Foundation (WPF) applications, the <xref:System.Windows.Media.FormattedText> object uses device-independent pixels as the unit of measure. However, most Win32 applications use points as the unit of measure. If you want to use display text in units of points in Windows Presentation Foundation (WPF) applications, you need to convert device-independent units (1/96th inch per unit) to points. The following code example shows how to perform this conversion.  
+As with other text objects in Windows Presentation Foundation (WPF) applications, the <xref:System.Windows.Media.FormattedText> object uses device-independent pixels as the unit of measure. However, most Win32 applications use points as the unit of measure. If you want to use display text in units of points in Windows Presentation Foundation (WPF) applications, you need to convert device-independent units (1/96th inch per unit) to points. The following code example shows how to perform this conversion.  
   
- [!code-csharp[FormattedTextSnippets#FormattedTextSnippets2](~/samples/snippets/csharp/VS_Snippets_Wpf/FormattedTextSnippets/CSharp/Window1.xaml.cs#formattedtextsnippets2)]
- [!code-vb[FormattedTextSnippets#FormattedTextSnippets2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FormattedTextSnippets/visualbasic/window1.xaml.vb#formattedtextsnippets2)]  
+[!code-csharp[FormattedTextSnippets#FormattedTextSnippets2](~/samples/snippets/csharp/VS_Snippets_Wpf/FormattedTextSnippets/CSharp/Window1.xaml.cs#formattedtextsnippets2)]
+[!code-vb[FormattedTextSnippets#FormattedTextSnippets2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FormattedTextSnippets/visualbasic/window1.xaml.vb#formattedtextsnippets2)]  
   
 <a name="converting_formatted_text"></a>
 
 ### Converting Formatted Text to a Geometry  
 
- You can convert formatted text into <xref:System.Windows.Media.Geometry> objects, allowing you to create other types of visually interesting text. For example, you could create a <xref:System.Windows.Media.Geometry> object based on the outline of a text string.  
+You can convert formatted text into <xref:System.Windows.Media.Geometry> objects, allowing you to create other types of visually interesting text. For example, you could create a <xref:System.Windows.Media.Geometry> object based on the outline of a text string.  
   
- ![Text outline using a linear gradient brush](./media/typography-in-wpf/text-outline-linear-gradient.jpg)
+![Text outline using a linear gradient brush](./media/typography-in-wpf/text-outline-linear-gradient.jpg)
   
- The following examples illustrate several ways of creating interesting visual effects by modifying the stroke, fill, and highlight of converted text.  
+The following examples illustrate several ways of creating interesting visual effects by modifying the stroke, fill, and highlight of converted text.  
   
- ![Text with different colors for fill and stroke](./media/typography-in-wpf/fill-stroke-text-effect.jpg)  
+![Text with different colors for fill and stroke](./media/typography-in-wpf/fill-stroke-text-effect.jpg)  
   
- ![Text with image brush applied to stroke](./media/typography-in-wpf/image-brush-application.jpg)
+![Text with image brush applied to stroke](./media/typography-in-wpf/image-brush-application.jpg)
   
- ![Text with image brush applied to stroke and highlight](./media/typography-in-wpf/image-brush-text-application.jpg)
+![Text with image brush applied to stroke and highlight](./media/typography-in-wpf/image-brush-text-application.jpg)
   
- When text is converted to a <xref:System.Windows.Media.Geometry> object, it is no longer a collection of characters—you cannot modify the characters in the text string. However, you can affect the appearance of the converted text by modifying its stroke and fill properties. The stroke refers to the outline of the converted text; the fill refers to the area inside the outline of the converted text. For more information, see [Create Outlined Text](how-to-create-outlined-text.md).  
+When text is converted to a <xref:System.Windows.Media.Geometry> object, it is no longer a collection of characters—you cannot modify the characters in the text string. However, you can affect the appearance of the converted text by modifying its stroke and fill properties. The stroke refers to the outline of the converted text; the fill refers to the area inside the outline of the converted text. For more information, see [Create Outlined Text](how-to-create-outlined-text.md).  
   
- You can also convert formatted text to a <xref:System.Windows.Media.PathGeometry> object, and use the object for highlighting the text. For example, you could apply an animation to the <xref:System.Windows.Media.PathGeometry> object so that the animation follows the outline of the formatted text.  
+You can also convert formatted text to a <xref:System.Windows.Media.PathGeometry> object, and use the object for highlighting the text. For example, you could apply an animation to the <xref:System.Windows.Media.PathGeometry> object so that the animation follows the outline of the formatted text.  
   
- The following example shows formatted text that has been converted to a <xref:System.Windows.Media.PathGeometry> object. An animated ellipse follows the path of the strokes of the rendered text.  
+The following example shows formatted text that has been converted to a <xref:System.Windows.Media.PathGeometry> object. An animated ellipse follows the path of the strokes of the rendered text.  
   
- ![Sphere following the path geometry of text](./media/drawing-formatted-text/sphere-following-geometry-path.gif)  
+![Sphere following the path geometry of text](./media/drawing-formatted-text/sphere-following-geometry-path.gif)  
 Sphere following the path geometry of text  
   
- For more information, see [How to: Create a PathGeometry Animation for Text](/previous-versions/dotnet/netframework-4.0/ms743610(v=vs.100)).  
+For more information, see [How to: Create a PathGeometry Animation for Text](/previous-versions/dotnet/netframework-4.0/ms743610(v=vs.100)).  
   
- You can create other interesting uses for formatted text once it has been converted to a <xref:System.Windows.Media.PathGeometry> object. For example, you can clip video to display inside it.  
+You can create other interesting uses for formatted text once it has been converted to a <xref:System.Windows.Media.PathGeometry> object. For example, you can clip video to display inside it.  
   
- ![Video displaying in the path geometry of text](./media/drawing-formatted-text/video-displaying-text-path-geometry.png)
+![Video displaying in the path geometry of text](./media/drawing-formatted-text/video-displaying-text-path-geometry.png)
   
 <a name="win32_migration"></a>
 
 ## Win32 Migration  
 
- The features of <xref:System.Windows.Media.FormattedText> for drawing text are similar to the features of the Win32 DrawText function. For those developers migrating from the Win32 API, the following table lists the Win32 DrawText flags and the approximate equivalent in Windows Presentation Foundation (WPF).  
+The features of <xref:System.Windows.Media.FormattedText> for drawing text are similar to the features of the Win32 DrawText function. For those developers migrating from the Win32 API, the following table lists the Win32 DrawText flags and the approximate equivalent in Windows Presentation Foundation (WPF).  
   
 |DrawText flag|WPF equivalent|Notes|  
 |-------------------|--------------------|-----------|  

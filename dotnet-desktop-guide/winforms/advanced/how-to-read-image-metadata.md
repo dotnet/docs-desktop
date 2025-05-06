@@ -62,64 +62,64 @@ The following code example reads and displays the seven pieces of metadata in th
 The code produces output similar to the following:
 
 ```output
- Property Item 0
+Property Item 0
   
- id: 0x320
+id: 0x320
   
- type: 2
+type: 2
 
- length: 16 bytes
+length: 16 bytes
   
- Property Item 1
+Property Item 1
   
- id: 0x10f
+id: 0x10f
   
- type: 2
+type: 2
   
- length: 17 bytes
+length: 17 bytes
   
- Property Item 2
+Property Item 2
   
- id: 0x110
+id: 0x110
   
- type: 2
+type: 2
   
- length: 7 bytes
+length: 7 bytes
   
- Property Item 3
+Property Item 3
   
- id: 0x9003
+id: 0x9003
   
- type: 2
+type: 2
   
- length: 20 bytes
+length: 20 bytes
   
- Property Item 4
+Property Item 4
   
- id: 0x829a
+id: 0x829a
   
- type: 5
+type: 5
   
- length: 8 bytes
+length: 8 bytes
   
- Property Item 5
+Property Item 5
   
- id: 0x5090
+id: 0x5090
   
- type: 3
+type: 3
   
- length: 128 bytes
+length: 128 bytes
   
- Property Item 6
+Property Item 6
   
- id: 0x5091
+id: 0x5091
   
- type: 3
+type: 3
   
- length: 128 bytes
+length: 128 bytes
   
- The equipment make is Northwind Camera.
- ```
+The equipment make is Northwind Camera.
+```
 
 ## Compiling the Code
 

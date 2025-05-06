@@ -16,9 +16,9 @@ description: Learn how to append a MenuStrip to an MDI parent window using IsMdi
 
 In some applications, the kind of a multiple-document interface (MDI) child window can be different from the MDI parent window. For example, the MDI parent might be a spreadsheet, and the MDI child might be a chart. In that case, you want to update the contents of the MDI parent's menu with the contents of the MDI child's menu as MDI child windows of different kinds are activated.  
   
- The following procedure uses the <xref:System.Windows.Forms.Form.IsMdiContainer%2A>, <xref:System.Windows.Forms.ToolStrip.AllowMerge%2A>, <xref:System.Windows.Forms.MergeAction>, and <xref:System.Windows.Forms.ToolStripItem.MergeIndex%2A> properties to append the MDI child menu to the MDI parent menu. Closing the MDI child window removes the appended menu from the MDI parent.  
+The following procedure uses the <xref:System.Windows.Forms.Form.IsMdiContainer%2A>, <xref:System.Windows.Forms.ToolStrip.AllowMerge%2A>, <xref:System.Windows.Forms.MergeAction>, and <xref:System.Windows.Forms.ToolStripItem.MergeIndex%2A> properties to append the MDI child menu to the MDI parent menu. Closing the MDI child window removes the appended menu from the MDI parent.  
   
- Also see [Multiple-Document Interface (MDI) Applications](../advanced/multiple-document-interface-mdi-applications.md).  
+Also see [Multiple-Document Interface (MDI) Applications](../advanced/multiple-document-interface-mdi-applications.md).  
   
 ### To append a menu item to an MDI parent  
   
@@ -78,7 +78,7 @@ In some applications, the kind of a multiple-document interface (MDI) child wind
   
 ## Compiling the Code  
 
- This example requires:  
+This example requires:  
   
 - Two <xref:System.Windows.Forms.Form> controls named `Form1` and `Form2`.  
   

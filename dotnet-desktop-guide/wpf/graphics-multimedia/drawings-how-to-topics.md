@@ -20,7 +20,7 @@ The topics in this section describe how to use <xref:System.Windows.Media.Drawin
   
 ## In This Section  
 
- [Apply a GuidelineSet to a Drawing](how-to-apply-a-guidelineset-to-a-drawing.md)  
+[Apply a GuidelineSet to a Drawing](how-to-apply-a-guidelineset-to-a-drawing.md)  
   [Create a Composite Drawing](how-to-create-a-composite-drawing.md)  
   [Create a GeometryDrawing](how-to-create-a-geometrydrawing.md)  
   [Draw an Image Using ImageDrawing](how-to-draw-an-image-using-imagedrawing.md)  

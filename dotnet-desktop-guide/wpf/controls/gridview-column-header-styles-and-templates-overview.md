@@ -18,11 +18,11 @@ This overview discusses the order of precedence for properties that you use to c
   
 ## Customizing a Column Header in a GridView  
 
- The properties that define the content, layout, and style of a column header in a <xref:System.Windows.Controls.GridView> are found on many related classes. Some of these properties have functionality that is similar or the same.  
+The properties that define the content, layout, and style of a column header in a <xref:System.Windows.Controls.GridView> are found on many related classes. Some of these properties have functionality that is similar or the same.  
   
- The rows in the following table show groups of properties that perform the same function. You can use these properties to customize the column headers in a <xref:System.Windows.Controls.GridView>. The order of precedence for related properties is from right to left where the property in the farthest right column has the highest precedence. For example, if a <xref:System.Windows.Controls.ContentControl.ContentTemplate%2A> is set on the <xref:System.Windows.Controls.GridViewColumnHeader> object and the <xref:System.Windows.Controls.GridViewColumn.HeaderTemplateSelector%2A> is set on the associated <xref:System.Windows.Controls.GridViewColumn>, the <xref:System.Windows.Controls.ContentControl.ContentTemplate%2A> takes precedence. In this scenario, the <xref:System.Windows.Controls.GridViewColumn.HeaderTemplateSelector%2A> has no effect.  
+The rows in the following table show groups of properties that perform the same function. You can use these properties to customize the column headers in a <xref:System.Windows.Controls.GridView>. The order of precedence for related properties is from right to left where the property in the farthest right column has the highest precedence. For example, if a <xref:System.Windows.Controls.ContentControl.ContentTemplate%2A> is set on the <xref:System.Windows.Controls.GridViewColumnHeader> object and the <xref:System.Windows.Controls.GridViewColumn.HeaderTemplateSelector%2A> is set on the associated <xref:System.Windows.Controls.GridViewColumn>, the <xref:System.Windows.Controls.ContentControl.ContentTemplate%2A> takes precedence. In this scenario, the <xref:System.Windows.Controls.GridViewColumn.HeaderTemplateSelector%2A> has no effect.  
   
- **Related properties for column headers in a GridView**  
+**Related properties for column headers in a GridView**  
   
 |  | <xref:System.Windows.Controls.GridView> | <xref:System.Windows.Controls.GridViewColumn> |<xref:System.Windows.Controls.GridViewColumnHeader>|  
 |-|-|-|-|  
@@ -31,7 +31,7 @@ This overview discusses the order of precedence for properties that you use to c
 |**Header Template**<br /><br /> **Properties**|<xref:System.Windows.Controls.GridView.ColumnHeaderTemplate%2A> <sup>1</sup>/<br /><br /> <xref:System.Windows.Controls.GridView.ColumnHeaderTemplateSelector%2A>|<xref:System.Windows.Controls.GridViewColumn.HeaderTemplate%2A> <sup>1</sup>/<br /><br /> <xref:System.Windows.Controls.GridViewColumn.HeaderTemplateSelector%2A>|<xref:System.Windows.Controls.ContentControl.ContentTemplate%2A> <sup>1</sup>/<br /><br /> <xref:System.Windows.Controls.ContentControl.ContentTemplateSelector%2A>|  
 |**Style Properties**|<xref:System.Windows.Controls.GridView.ColumnHeaderContainerStyle%2A>|<xref:System.Windows.Controls.GridViewColumn.HeaderContainerStyle%2A>|<xref:System.Windows.FrameworkElement.Style%2A>|  
   
- <sup>1</sup>For **Header Template Properties**, if you set both the template and template selector properties, the template property takes precedence. For example, if you set both the <xref:System.Windows.Controls.ContentControl.ContentTemplate%2A> and <xref:System.Windows.Controls.ContentControl.ContentTemplateSelector%2A> properties, the <xref:System.Windows.Controls.ContentControl.ContentTemplate%2A> property takes precedence.  
+<sup>1</sup>For **Header Template Properties**, if you set both the template and template selector properties, the template property takes precedence. For example, if you set both the <xref:System.Windows.Controls.ContentControl.ContentTemplate%2A> and <xref:System.Windows.Controls.ContentControl.ContentTemplateSelector%2A> properties, the <xref:System.Windows.Controls.ContentControl.ContentTemplate%2A> property takes precedence.  
   
 ## See also
 

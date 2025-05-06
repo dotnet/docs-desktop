@@ -74,7 +74,7 @@ To sort the data according to the contents of a column, the example defines an e
 <ListView x:Name='lv' Height="150" HorizontalAlignment="Center"
   VerticalAlignment="Center"
   GridViewColumnHeader.Click="GridViewColumnHeaderClickedHandler"
- >
+>
 ```
 
 The example defines the event handler so that the sort direction changes between ascending order and descending order each time you press the column header button. The following example shows the event handler.

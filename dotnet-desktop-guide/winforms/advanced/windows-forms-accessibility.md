@@ -14,21 +14,21 @@ The accessibility functionality of Windows Forms allows you to make your applica
   
 ## In This Section  
 
- [Walkthrough: Creating an Accessible Windows-based Application](walkthrough-creating-an-accessible-windows-based-application.md)  
- Describes all of the features you should support to increase accessibility.  
+[Walkthrough: Creating an Accessible Windows-based Application](walkthrough-creating-an-accessible-windows-based-application.md)  
+Describes all of the features you should support to increase accessibility.  
   
 ## Reference  
 
- <xref:Accessibility>  
- A namespace containing a number of classes related to accessibility.  
+<xref:Accessibility>  
+A namespace containing a number of classes related to accessibility.  
   
- <xref:System.Windows.Forms.AccessibleObject>  
- Provides information that accessibility applications use to adjust an application's user interface (UI) for users with impairments.  
+<xref:System.Windows.Forms.AccessibleObject>  
+Provides information that accessibility applications use to adjust an application's user interface (UI) for users with impairments.  
   
 ## Related Sections  
 
- [Providing Accessibility Information for Controls on a Windows Form](../controls/provide-accessibility-information.md)  
- Describes how to supply information that Windows Forms controls can use to assist users with impairments.  
+[Providing Accessibility Information for Controls on a Windows Form](../controls/provide-accessibility-information.md)  
+Describes how to supply information that Windows Forms controls can use to assist users with impairments.  
   
- [Automatic Scaling in Windows Forms](../forms/autoscale.md)  
- Describes how to make your Windows Forms application react to changes in the system font size.
+[Automatic Scaling in Windows Forms](../forms/autoscale.md)  
+Describes how to make your Windows Forms application react to changes in the system font size.

@@ -19,11 +19,11 @@ description: Learn how to create an add-in that is a Windows Presentation Founda
 
 This example shows how to create an add-in that is a Windows Presentation Foundation (WPF) which is hosted by a WPF standalone application.  
   
- The add-in is a UI that is a WPF user control. The content of the user control is a single button that, when clicked, displays a message box. The WPF standalone application hosts the add-in UI as the content of the main application window.  
+The add-in is a UI that is a WPF user control. The content of the user control is a single button that, when clicked, displays a message box. The WPF standalone application hosts the add-in UI as the content of the main application window.  
   
- **Prerequisites**  
+**Prerequisites**  
   
- This example highlights the WPF extensions to the .NET Framework add-in model that enable this scenario, and assumes the following:  
+This example highlights the WPF extensions to the .NET Framework add-in model that enable this scenario, and assumes the following:  
   
 - Knowledge of the .NET Framework add-in model, including pipeline, add-in, and host development. If you are unfamiliar with these concepts, see [Add-ins and Extensibility](/previous-versions/dotnet/netframework-4.0/bb384200(v%3dvs.100)). For a tutorial that demonstrates the implementation of a pipeline, an add-in, and a host application, see [Walkthrough: Creating an Extensible Application](/previous-versions/dotnet/netframework-4.0/bb788290(v%3dvs.100)).  
   
@@ -31,7 +31,7 @@ This example shows how to create an add-in that is a Windows Presentation Founda
   
 ## Example  
 
- To create an add-in that is a WPF UI requires specific code for each pipeline segment, the add-in, and the host application.  
+To create an add-in that is a WPF UI requires specific code for each pipeline segment, the add-in, and the host application.  
 
 <a name="Contract"></a>
 
@@ -115,13 +115,13 @@ With the host-side adapter and host view created, the host application can use t
 
 The host application uses typical .NET Framework add-in model code to activate the add-in, which implicitly returns the host view to the host application. The host application subsequently displays the host view (which is a <xref:System.Windows.Controls.UserControl>) from a <xref:System.Windows.Controls.Grid>.  
   
- The code for processing interactions with the add-in UI runs in the add-in's application domain. These interactions include the following:  
+The code for processing interactions with the add-in UI runs in the add-in's application domain. These interactions include the following:  
   
 - Handling the <xref:System.Windows.Controls.Button><xref:System.Windows.Controls.Primitives.ButtonBase.Click> event.  
   
 - Showing the <xref:System.Windows.MessageBox>.  
   
- This activity is completely isolated from the host application.  
+This activity is completely isolated from the host application.  
   
 ## See also
 

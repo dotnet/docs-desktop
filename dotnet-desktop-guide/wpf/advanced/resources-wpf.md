@@ -17,20 +17,20 @@ A resource is an object that can be reused in different places in your applicati
   
 ## In This Section  
 
- [XAML Resources](../systems/xaml-resources-overview.md)  
- [WPF Application Resource, Content, and Data Files](../app-development/wpf-application-resource-content-and-data-files.md)  
- [Pack URIs in WPF](../app-development/pack-uris-in-wpf.md)  
+[XAML Resources](../systems/xaml-resources-overview.md)  
+[WPF Application Resource, Content, and Data Files](../app-development/wpf-application-resource-content-and-data-files.md)  
+[Pack URIs in WPF](../app-development/pack-uris-in-wpf.md)  
   
 ## Reference  
 
- <xref:System.Windows.ResourceDictionary>  
+<xref:System.Windows.ResourceDictionary>  
   
- [StaticResource Markup Extension](staticresource-markup-extension.md)  
+[StaticResource Markup Extension](staticresource-markup-extension.md)  
   
- [DynamicResource Markup Extension](dynamicresource-markup-extension.md)  
+[DynamicResource Markup Extension](dynamicresource-markup-extension.md)  
   
- [x:Key Directive](../../xaml-services/xkey-directive.md)  
+[x:Key Directive](../../xaml-services/xkey-directive.md)  
   
 ## Related Sections  
 
- [XAML in WPF](../xaml/index.md)
+[XAML in WPF](../xaml/index.md)

@@ -18,13 +18,13 @@ Paths are discussed in [Shapes and Basic Drawing in WPF Overview](shapes-and-bas
 
 ## Prerequisites  
 
- To understand this topic, you should be familiar with the basic features of <xref:System.Windows.Media.Geometry> objects. For more information, see the [Geometry Overview](geometry-overview.md).  
+To understand this topic, you should be familiar with the basic features of <xref:System.Windows.Media.Geometry> objects. For more information, see the [Geometry Overview](geometry-overview.md).  
   
 <a name="abouthisdocument"></a>
 
 ## StreamGeometry and PathFigureCollection Mini-Languages  
 
- WPF provides two classes that provide mini-languages for describing geometric paths: <xref:System.Windows.Media.StreamGeometry> and <xref:System.Windows.Media.PathFigureCollection>.  
+WPF provides two classes that provide mini-languages for describing geometric paths: <xref:System.Windows.Media.StreamGeometry> and <xref:System.Windows.Media.PathFigureCollection>.  
   
 - You use the <xref:System.Windows.Media.StreamGeometry> mini-language when setting a property of type <xref:System.Windows.Media.Geometry>, such as the <xref:System.Windows.UIElement.Clip%2A> property of a <xref:System.Windows.UIElement> or the <xref:System.Windows.Shapes.Path.Data%2A> property of a <xref:System.Windows.Shapes.Path> element. The following example uses attribute syntax to create a <xref:System.Windows.Media.StreamGeometry>.  
   
@@ -34,25 +34,25 @@ Paths are discussed in [Shapes and Basic Drawing in WPF Overview](shapes-and-bas
   
      [!code-xaml[GeometrySample_snip_XAML#GraphicsMMPathFigureCollectionAttributeSyntaxInline](~/samples/snippets/csharp/VS_Snippets_Wpf/GeometrySample_snip_XAML/CS/MiniLanguageExample.xaml#graphicsmmpathfigurecollectionattributesyntaxinline)]  
   
- As you can see from the preceding examples, the two mini-languages are very similar. It's always possible to use a <xref:System.Windows.Media.PathGeometry> in any situation where you could use a <xref:System.Windows.Media.StreamGeometry>; so which one should you use? Use a <xref:System.Windows.Media.StreamGeometry> when you don't need to modify the path after creating it; use a <xref:System.Windows.Media.PathGeometry> if you do need to modify the path.  
+As you can see from the preceding examples, the two mini-languages are very similar. It's always possible to use a <xref:System.Windows.Media.PathGeometry> in any situation where you could use a <xref:System.Windows.Media.StreamGeometry>; so which one should you use? Use a <xref:System.Windows.Media.StreamGeometry> when you don't need to modify the path after creating it; use a <xref:System.Windows.Media.PathGeometry> if you do need to modify the path.  
   
- For more information about the differences between <xref:System.Windows.Media.PathGeometry> and <xref:System.Windows.Media.StreamGeometry> objects, see the [Geometry Overview](geometry-overview.md).  
+For more information about the differences between <xref:System.Windows.Media.PathGeometry> and <xref:System.Windows.Media.StreamGeometry> objects, see the [Geometry Overview](geometry-overview.md).  
   
 ### A Note about White Space  
 
- For brevity, a single space is shown in the syntax sections that follow, but multiple spaces are also acceptable wherever a single space is shown.  
+For brevity, a single space is shown in the syntax sections that follow, but multiple spaces are also acceptable wherever a single space is shown.  
   
- Two numbers don’t actually have to be separated by a comma or white space, but this can only be done when the resulting string is unambiguous. For instance, `2..3` is actually two numbers: "2." And ".3". Similarly, `2-3` is "2" and "-3". Spaces are not required before or after commands, either.  
+Two numbers don’t actually have to be separated by a comma or white space, but this can only be done when the resulting string is unambiguous. For instance, `2..3` is actually two numbers: "2." And ".3". Similarly, `2-3` is "2" and "-3". Spaces are not required before or after commands, either.  
   
 ### Syntax  
 
- The Extensible Application Markup Language (XAML) attribute usage syntax for a <xref:System.Windows.Media.StreamGeometry> is composed of an optional <xref:System.Windows.Media.FillRule> value and one or more figure descriptions.  
+The Extensible Application Markup Language (XAML) attribute usage syntax for a <xref:System.Windows.Media.StreamGeometry> is composed of an optional <xref:System.Windows.Media.FillRule> value and one or more figure descriptions.  
   
 |StreamGeometry XAML Attribute Usage|  
 |-----------------------------------------|  
 |`<` *object* *property* `="`[ `fillRule`] `figureDescription`[ `figureDescription`]* `" ... />`|  
   
- The Extensible Application Markup Language (XAML) attribute usage syntax for a <xref:System.Windows.Media.PathFigureCollection> is composed of one or more figure descriptions.  
+The Extensible Application Markup Language (XAML) attribute usage syntax for a <xref:System.Windows.Media.PathFigureCollection> is composed of one or more figure descriptions.  
   
 |PathFigureCollection XAML Attribute Usage|  
 |-----------------------------------------------|  
@@ -70,7 +70,7 @@ Paths are discussed in [Shapes and Basic Drawing in WPF Overview](shapes-and-bas
 
 ## Move Command  
 
- Specifies the start point of a new figure.  
+Specifies the start point of a new figure.  
   
 |Syntax|  
 |------------|  
@@ -80,15 +80,15 @@ Paths are discussed in [Shapes and Basic Drawing in WPF Overview](shapes-and-bas
 |----------|-----------------|  
 |*startPoint*|<xref:System.Windows.Point?displayProperty=nameWithType><br /><br /> The start point of a new figure.|  
   
- An uppercase `M` indicates that `startPoint` is an absolute value; a lowercase `m` indicates that `startPoint` is an offset to the previous point, or (0,0) if none exists. If you list multiple points after the move command, a line is drawn to those points though you specified the line command.  
+An uppercase `M` indicates that `startPoint` is an absolute value; a lowercase `m` indicates that `startPoint` is an offset to the previous point, or (0,0) if none exists. If you list multiple points after the move command, a line is drawn to those points though you specified the line command.  
   
 <a name="drawcommands"></a>
 
 ## Draw Commands  
 
- A draw command can consist of several shape commands. The following shape commands are available: line, horizontal line, vertical line, cubic Bezier curve, quadratic Bezier curve, smooth cubic Bezier curve, smooth quadratic Bezier curve, and elliptical arc.  
+A draw command can consist of several shape commands. The following shape commands are available: line, horizontal line, vertical line, cubic Bezier curve, quadratic Bezier curve, smooth cubic Bezier curve, smooth quadratic Bezier curve, and elliptical arc.  
   
- You enter each command by using either an uppercase or a lowercase letter: uppercase letters denote absolute values and lowercase letters denote relative values: the control points for that segment are relative to the end point of the preceding example.
+You enter each command by using either an uppercase or a lowercase letter: uppercase letters denote absolute values and lowercase letters denote relative values: the control points for that segment are relative to the end point of the preceding example.
 
 > [!TIP]
 > When sequentially entering more than one command of the same type, you can omit the duplicate command entry; for example, `L 100,200 300,400` is equivalent to `L 100,200 L 300,400`.
@@ -109,7 +109,7 @@ An uppercase `L` indicates that `endPoint` is an absolute value; a lowercase `l`
 
 ### Horizontal Line Command  
 
- Creates a horizontal line between the current point and the specified x-coordinate. `H 90` is an example of a valid horizontal line command.
+Creates a horizontal line between the current point and the specified x-coordinate. `H 90` is an example of a valid horizontal line command.
 
 |Syntax|  
 |------------|  
@@ -123,7 +123,7 @@ An uppercase `H` indicates that `x` is an absolute value; a lowercase `h` indica
   
 ### Vertical Line Command  
 
- Creates a vertical line between the current point and the specified y-coordinate. `v 90` is an example of a valid vertical line command.
+Creates a vertical line between the current point and the specified y-coordinate. `v 90` is an example of a valid vertical line command.
 
 |Syntax|  
 |------------|  
@@ -137,7 +137,7 @@ An uppercase `V` indicates that `y` is an absolute value; a lowercase `v` indica
 
 ### Cubic Bezier Curve Command  
 
- Creates a cubic Bezier curve between the current point and the specified end point by using the two specified control points (`controlPoint`1 and `controlPoint`2). `C 100,200 200,400 300,200` is an example of a valid curve command.  
+Creates a cubic Bezier curve between the current point and the specified end point by using the two specified control points (`controlPoint`1 and `controlPoint`2). `C 100,200 200,400 300,200` is an example of a valid curve command.  
   
 |Syntax|  
 |------------|  
@@ -151,7 +151,7 @@ An uppercase `V` indicates that `y` is an absolute value; a lowercase `v` indica
   
 ### Quadratic Bezier Curve Command  
 
- Creates a quadratic Bezier curve between the current point and the specified end point by using the specified control point (`controlPoint`). `q 100,200 300,200` is an example of a valid quadratic Bezier curve command.  
+Creates a quadratic Bezier curve between the current point and the specified end point by using the specified control point (`controlPoint`). `q 100,200 300,200` is an example of a valid quadratic Bezier curve command.  
   
 |Syntax|  
 |------------|  
@@ -164,7 +164,7 @@ An uppercase `V` indicates that `y` is an absolute value; a lowercase `v` indica
   
 ### Smooth cubic Bezier curve Command  
 
- Creates a cubic Bezier curve between the current point and the specified end point. The first control point is assumed to be the reflection of the second control point of the previous command relative to the current point. If there is no previous command or if the previous command was not a cubic Bezier curve command or a smooth cubic Bezier curve command, assume the first control point is coincident with the current point. The second control point, the control point for the end of the curve, is specified by `controlPoint`2. For example, `S 100,200 200,300` is a valid smooth cubic Bezier curve command.  
+Creates a cubic Bezier curve between the current point and the specified end point. The first control point is assumed to be the reflection of the second control point of the previous command relative to the current point. If there is no previous command or if the previous command was not a cubic Bezier curve command or a smooth cubic Bezier curve command, assume the first control point is coincident with the current point. The second control point, the control point for the end of the curve, is specified by `controlPoint`2. For example, `S 100,200 200,300` is a valid smooth cubic Bezier curve command.  
   
 |Syntax|  
 |------------|  
@@ -177,7 +177,7 @@ An uppercase `V` indicates that `y` is an absolute value; a lowercase `v` indica
   
 ### Smooth quadratic Bezier curve Command  
 
- Creates a quadratic Bezier curve between the current point and the specified end point. The control point is assumed to be the reflection of the control point of the previous command relative to the current point. If there is no previous command or if the previous command was not a quadratic Bezier curve command or a smooth quadratic Bezier curve command, the control point is coincident with the current point.  
+Creates a quadratic Bezier curve between the current point and the specified end point. The control point is assumed to be the reflection of the control point of the previous command relative to the current point. If there is no previous command or if the previous command was not a quadratic Bezier curve command or a smooth quadratic Bezier curve command, the control point is coincident with the current point.  
   
 |Syntax|  
 |------------|  
@@ -189,7 +189,7 @@ An uppercase `V` indicates that `y` is an absolute value; a lowercase `v` indica
   
 ### Elliptical Arc Command  
 
- Creates an elliptical arc between the current point and the specified end point.  
+Creates an elliptical arc between the current point and the specified end point.  
   
 |Syntax|  
 |------------|  
@@ -207,7 +207,7 @@ An uppercase `V` indicates that `y` is an absolute value; a lowercase `v` indica
 
 ## The Close Command  
 
- Ends the current figure and creates a line that connects the current point to the starting point of the figure. This command creates a line-join (corner) between the last segment and the first segment of the figure.  
+Ends the current figure and creates a line that connects the current point to the starting point of the figure. This command creates a line-join (corner) between the last segment and the first segment of the figure.  
   
 |Syntax|  
 |------------|  
@@ -217,7 +217,7 @@ An uppercase `V` indicates that `y` is an absolute value; a lowercase `v` indica
 
 ## Point Syntax  
 
- Describes the x- and y-coordinates of a point where (0,0) is the top left corner.
+Describes the x- and y-coordinates of a point where (0,0) is the top left corner.
   
 |Syntax|  
 |------------|  
@@ -232,18 +232,18 @@ An uppercase `V` indicates that `y` is an absolute value; a lowercase `v` indica
 
 ## Special Values  
 
- Instead of a standard numerical value, you can also use the following special values. These values are case-sensitive.  
+Instead of a standard numerical value, you can also use the following special values. These values are case-sensitive.  
   
- Infinity  
- Represents <xref:System.Double.PositiveInfinity?displayProperty=nameWithType>.  
+Infinity  
+Represents <xref:System.Double.PositiveInfinity?displayProperty=nameWithType>.  
   
- -Infinity  
- Represents <xref:System.Double.NegativeInfinity?displayProperty=nameWithType>.  
+-Infinity  
+Represents <xref:System.Double.NegativeInfinity?displayProperty=nameWithType>.  
   
- NaN  
- Represents <xref:System.Double.NaN?displayProperty=nameWithType>.  
+NaN  
+Represents <xref:System.Double.NaN?displayProperty=nameWithType>.  
   
- You may also use scientific notation. For example, `+1.e17` is a valid value.  
+You may also use scientific notation. For example, `+1.e17` is a valid value.  
   
 ## See also
 

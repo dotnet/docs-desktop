@@ -16,15 +16,15 @@ Windows Presentation Foundation (WPF) offers integrated support for multimedia, 
   
 ## In This Section  
 
- [Bitmap Effects](bitmap-effects.md)  
- [Brushes](brushes.md)  
- [Drawings](drawings.md)  
- [Geometries](geometries.md)  
- [Images](images.md)  
- [Shapes](shapes.md)  
- [Transformations](transformations.md)  
- [Graphics Rendering Registry Settings](graphics-rendering-registry-settings.md)  
- [How-to Topics](graphics-how-to-topics.md)  
+[Bitmap Effects](bitmap-effects.md)  
+[Brushes](brushes.md)  
+[Drawings](drawings.md)  
+[Geometries](geometries.md)  
+[Images](images.md)  
+[Shapes](shapes.md)  
+[Transformations](transformations.md)  
+[Graphics Rendering Registry Settings](graphics-rendering-registry-settings.md)  
+[How-to Topics](graphics-how-to-topics.md)  
   
 ## See also
 

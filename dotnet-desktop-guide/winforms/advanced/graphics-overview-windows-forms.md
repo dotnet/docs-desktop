@@ -17,31 +17,31 @@ GDI+ is a Graphics Device Interface that enables programmers to write device-ind
   
 ## In This Section  
 
- [Overview of Graphics](overview-of-graphics.md)  
- Provides a general introduction to GDI+.  
+[Overview of Graphics](overview-of-graphics.md)  
+Provides a general introduction to GDI+.  
   
- [Three Categories of Graphics Services](three-categories-of-graphics-services.md)  
- Describes the three categories that make up programming with GDI+.  
+[Three Categories of Graphics Services](three-categories-of-graphics-services.md)  
+Describes the three categories that make up programming with GDI+.  
   
- [Structure of the Graphics Interface](structure-of-the-graphics-interface.md)  
- Describes the managed class interface of GDI+.  
+[Structure of the Graphics Interface](structure-of-the-graphics-interface.md)  
+Describes the managed class interface of GDI+.  
   
 ## Reference  
 
- <xref:System.Drawing>  
- Provides access to GDI+ basic graphics functionality.  
+<xref:System.Drawing>  
+Provides access to GDI+ basic graphics functionality.  
   
- <xref:System.Drawing.Drawing2D>  
- Provides advanced two-dimensional and vector graphics functionality.  
+<xref:System.Drawing.Drawing2D>  
+Provides advanced two-dimensional and vector graphics functionality.  
   
- <xref:System.Drawing.Imaging>  
- Provides advanced GDI+ imaging functionality.  
+<xref:System.Drawing.Imaging>  
+Provides advanced GDI+ imaging functionality.  
   
- <xref:System.Drawing.Text>  
- Provides advanced GDI+ typography functionality.  
+<xref:System.Drawing.Text>  
+Provides advanced GDI+ typography functionality.  
   
- <xref:System.Drawing.Printing>  
- Provides print-related services.  
+<xref:System.Drawing.Printing>  
+Provides print-related services.  
   
- <xref:System.Windows.Forms.TextRenderer>  
- Provides GDI text drawing and measuring functionality.
+<xref:System.Windows.Forms.TextRenderer>  
+Provides GDI text drawing and measuring functionality.

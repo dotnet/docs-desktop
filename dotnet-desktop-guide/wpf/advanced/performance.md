@@ -15,17 +15,17 @@ Achieving optimal application performance requires forethought in application de
   
 ## In This Section  
 
- [Graphics Rendering Tiers](graphics-rendering-tiers.md)  
- [Optimizing WPF Application Performance](optimizing-wpf-application-performance.md)  
- [Walkthrough: Caching Application Data in a WPF Application](walkthrough-caching-application-data-in-a-wpf-application.md)  
+[Graphics Rendering Tiers](graphics-rendering-tiers.md)  
+[Optimizing WPF Application Performance](optimizing-wpf-application-performance.md)  
+[Walkthrough: Caching Application Data in a WPF Application](walkthrough-caching-application-data-in-a-wpf-application.md)  
   
 ## Reference  
 
- <xref:System.Windows.Media.RenderCapability>  
+<xref:System.Windows.Media.RenderCapability>  
   
- <xref:System.Windows.Media.RenderCapability.Tier%2A>  
+<xref:System.Windows.Media.RenderCapability.Tier%2A>  
   
- <xref:System.Diagnostics.PresentationTraceSources>  
+<xref:System.Diagnostics.PresentationTraceSources>  
   
 ## See also
 

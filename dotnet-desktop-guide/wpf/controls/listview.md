@@ -14,22 +14,22 @@ ms.assetid: fc3784a7-c9e8-4e2b-909a-7af37cef9b43
 
 The <xref:System.Windows.Controls.ListView> control provides the infrastructure to display a set of data items in different layouts or views.  
   
- The following illustration shows a <xref:System.Windows.Controls.ListView>.  
+The following illustration shows a <xref:System.Windows.Controls.ListView>.  
   
- ![Screenshot that shows a ListView with GridView output.](./media/gridview-overview/listview-gridview-output.jpg)  
+![Screenshot that shows a ListView with GridView output.](./media/gridview-overview/listview-gridview-output.jpg)  
   
 ## In This Section  
 
- [Overviews](listview-overviews.md)  
- [How-to Topics](listview-how-to-topics.md)  
+[Overviews](listview-overviews.md)  
+[How-to Topics](listview-how-to-topics.md)  
   
 ## Reference  
 
- <xref:System.Windows.Controls.ListView>  
+<xref:System.Windows.Controls.ListView>  
   <xref:System.Windows.Controls.ListViewItem>  
   <xref:System.Windows.Controls.GridView>  
   
 ## Related Sections  
 
- [Data Binding Overview](../data/index.md)  
+[Data Binding Overview](../data/index.md)  
   [Data Templating Overview](../data/data-templating-overview.md)

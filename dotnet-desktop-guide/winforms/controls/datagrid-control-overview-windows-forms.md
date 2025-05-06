@@ -75,7 +75,7 @@ You can bind to the following structures if their elements expose public propert
 
 - Any component that implements the <xref:System.ComponentModel.IBindingList> interface.
 
- For more information about possible data sources, see [Data Sources Supported by Windows Forms](../data/overview.md).
+For more information about possible data sources, see [Data Sources Supported by Windows Forms](../data/overview.md).
 
 ## Grid Display
 

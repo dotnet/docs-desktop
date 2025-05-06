@@ -15,42 +15,42 @@ A GDI+ <xref:System.Drawing.Brush> object is used to fill the interior of a clos
   
 ## In This Section  
 
- [How to: Fill a Shape with a Solid Color](how-to-fill-a-shape-with-a-solid-color.md)  
- Describes how to use a solid-color brush to fill shapes.  
+[How to: Fill a Shape with a Solid Color](how-to-fill-a-shape-with-a-solid-color.md)  
+Describes how to use a solid-color brush to fill shapes.  
   
- [How to: Fill a Shape with a Hatch Pattern](how-to-fill-a-shape-with-a-hatch-pattern.md)  
- Shows how to use a hatch brush to fill shapes.  
+[How to: Fill a Shape with a Hatch Pattern](how-to-fill-a-shape-with-a-hatch-pattern.md)  
+Shows how to use a hatch brush to fill shapes.  
   
- [How to: Fill a Shape with an Image Texture](how-to-fill-a-shape-with-an-image-texture.md)  
- Explains how to use a texture brush to fill shapes.  
+[How to: Fill a Shape with an Image Texture](how-to-fill-a-shape-with-an-image-texture.md)  
+Explains how to use a texture brush to fill shapes.  
   
- [How to: Tile a Shape with an Image](how-to-tile-a-shape-with-an-image.md)  
- Describes how to tile an image in a shape.  
+[How to: Tile a Shape with an Image](how-to-tile-a-shape-with-an-image.md)  
+Describes how to tile an image in a shape.  
   
 ## Reference  
 
- <xref:System.Drawing.Brush?displayProperty=nameWithType>  
- Describes this class and contains links to all of its members  
+<xref:System.Drawing.Brush?displayProperty=nameWithType>  
+Describes this class and contains links to all of its members  
   
- <xref:System.Drawing.SolidBrush?displayProperty=nameWithType>  
- Describes this class and contains links to all of its members  
+<xref:System.Drawing.SolidBrush?displayProperty=nameWithType>  
+Describes this class and contains links to all of its members  
   
- <xref:System.Drawing.TextureBrush?displayProperty=nameWithType>  
- Describes this class and contains links to all of its members.  
+<xref:System.Drawing.TextureBrush?displayProperty=nameWithType>  
+Describes this class and contains links to all of its members.  
   
- <xref:System.Drawing.Drawing2D.HatchBrush?displayProperty=nameWithType>  
- Describes this class and contains links to all of its members.  
+<xref:System.Drawing.Drawing2D.HatchBrush?displayProperty=nameWithType>  
+Describes this class and contains links to all of its members.  
   
- <xref:System.Drawing.Drawing2D.PathGradientBrush?displayProperty=nameWithType>  
- Describes this class and contains links to all of its members.  
+<xref:System.Drawing.Drawing2D.PathGradientBrush?displayProperty=nameWithType>  
+Describes this class and contains links to all of its members.  
   
 ## Related Sections  
 
- [Using a Gradient Brush to Fill Shapes](using-a-gradient-brush-to-fill-shapes.md)  
- Contains a list of topics that show how to use a gradient brush.  
+[Using a Gradient Brush to Fill Shapes](using-a-gradient-brush-to-fill-shapes.md)  
+Contains a list of topics that show how to use a gradient brush.  
   
- [Using a Pen to Draw Lines and Shapes](using-a-pen-to-draw-lines-and-shapes.md)  
- Provides a list of topics that demonstrate how to draw outlined shapes.  
+[Using a Pen to Draw Lines and Shapes](using-a-pen-to-draw-lines-and-shapes.md)  
+Provides a list of topics that demonstrate how to draw outlined shapes.  
   
- [Using Managed Graphics Classes](using-managed-graphics-classes.md)  
- Contains a list of topics describing how to use managed graphics classes.
+[Using Managed Graphics Classes](using-managed-graphics-classes.md)  
+Contains a list of topics describing how to use managed graphics classes.

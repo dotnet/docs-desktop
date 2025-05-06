@@ -32,7 +32,7 @@ The <xref:System.Windows.Forms.DataGridView> control has a number of events you 
   
 ## Compiling the Code  
 
- This example requires:  
+This example requires:  
   
 - A <xref:System.Windows.Forms.DataGridView> control named `dataGridView1`. For C#, the event handlers must be connected to the corresponding events.  
   

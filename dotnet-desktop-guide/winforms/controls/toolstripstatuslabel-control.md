@@ -15,19 +15,19 @@ The <xref:System.Windows.Forms.ToolStripStatusLabel> provides a display area in 
   
 ## In This Section  
 
- [ToolStripStatusLabel Control Overview](toolstripstatuslabel-control-overview.md)  
- Provides topics that describe the purpose and main concepts of the Windows Forms <xref:System.Windows.Forms.ToolStripStatusLabel> control.  
+[ToolStripStatusLabel Control Overview](toolstripstatuslabel-control-overview.md)  
+Provides topics that describe the purpose and main concepts of the Windows Forms <xref:System.Windows.Forms.ToolStripStatusLabel> control.  
   
 ## Reference  
 
- <xref:System.Windows.Forms.ToolStripStatusLabel>  
- Provides reference documentation for the <xref:System.Windows.Forms.ToolStripStatusLabel> control.  
+<xref:System.Windows.Forms.ToolStripStatusLabel>  
+Provides reference documentation for the <xref:System.Windows.Forms.ToolStripStatusLabel> control.  
   
- <xref:System.Windows.Forms.StatusStrip>  
- Provides reference documentation for the <xref:System.Windows.Forms.StatusStrip> control.  
+<xref:System.Windows.Forms.StatusStrip>  
+Provides reference documentation for the <xref:System.Windows.Forms.StatusStrip> control.  
   
- <xref:System.Windows.Forms.ToolStripProgressBar>  
- Provides reference documentation for the <xref:System.Windows.Forms.ToolStripProgressBar> control.  
+<xref:System.Windows.Forms.ToolStripProgressBar>  
+Provides reference documentation for the <xref:System.Windows.Forms.ToolStripProgressBar> control.  
   
 ## See also
 

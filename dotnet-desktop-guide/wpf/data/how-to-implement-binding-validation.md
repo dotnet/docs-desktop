@@ -4,8 +4,8 @@ description: Learn how to using binding validation to provide visual feedback to
 ms.date: 03/30/2017
 ms.service: dotnet-framework
 dev_langs:
- - csharp
- - vb
+- csharp
+- vb
 helpviewer_keywords: 
   - "validation of binding [WPF]"
   - "data binding [WPF], validation of binding"

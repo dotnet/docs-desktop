@@ -21,7 +21,7 @@ This topic describes the main keyboard and mouse events provided by <xref:System
   
 ## Keyboard Events  
 
- The common keyboard events that your control can handle are <xref:System.Windows.Forms.Control.KeyDown>, <xref:System.Windows.Forms.Control.KeyPress>, and <xref:System.Windows.Forms.Control.KeyUp>.  
+The common keyboard events that your control can handle are <xref:System.Windows.Forms.Control.KeyDown>, <xref:System.Windows.Forms.Control.KeyPress>, and <xref:System.Windows.Forms.Control.KeyUp>.  
   
 |Event Name|Method to Override|Description of Event|  
 |----------------|------------------------|--------------------------|  
@@ -34,7 +34,7 @@ This topic describes the main keyboard and mouse events provided by <xref:System
   
 ## Mouse Events  
 
- The mouse events that your control can handle are <xref:System.Windows.Forms.Control.MouseDown>, <xref:System.Windows.Forms.Control.MouseEnter>, <xref:System.Windows.Forms.Control.MouseHover>, <xref:System.Windows.Forms.Control.MouseLeave>, <xref:System.Windows.Forms.Control.MouseMove>, and <xref:System.Windows.Forms.Control.MouseUp>. For more information, see [Overview of using the mouse](../input-mouse/overview.md).
+The mouse events that your control can handle are <xref:System.Windows.Forms.Control.MouseDown>, <xref:System.Windows.Forms.Control.MouseEnter>, <xref:System.Windows.Forms.Control.MouseHover>, <xref:System.Windows.Forms.Control.MouseLeave>, <xref:System.Windows.Forms.Control.MouseMove>, and <xref:System.Windows.Forms.Control.MouseUp>. For more information, see [Overview of using the mouse](../input-mouse/overview.md).
   
 |Event Name|Method to Override|Description of Event|  
 |----------------|------------------------|--------------------------|  

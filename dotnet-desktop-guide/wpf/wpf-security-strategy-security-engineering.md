@@ -29,23 +29,23 @@ Trustworthy Computing is a Microsoft initiative for ensuring the production of s
 
 ## WPF Specifics
 
- The WPF engineering team both applies and extends the SDL, the combination of which includes the following key aspects:
+The WPF engineering team both applies and extends the SDL, the combination of which includes the following key aspects:
 
- [Threat Modeling](#threat_modeling)
+[Threat Modeling](#threat_modeling)
 
- [Security Analysis and Editing Tools](#tools)
+[Security Analysis and Editing Tools](#tools)
 
- [Testing Techniques](#techniques)
+[Testing Techniques](#techniques)
 
- [Critical Code Management](#critical_code)
+[Critical Code Management](#critical_code)
 
 <a name="threat_modeling"></a>
 
 ### Threat Modeling
 
- Threat modeling is a core component of the SDL, and is used to profile a system to determine potential security vulnerabilities. Once the vulnerabilities are identified, threat modeling also ensures that appropriate mitigations are in place.
+Threat modeling is a core component of the SDL, and is used to profile a system to determine potential security vulnerabilities. Once the vulnerabilities are identified, threat modeling also ensures that appropriate mitigations are in place.
 
- At a high level, threat modeling involves the following key steps by using a grocery store as an example:
+At a high level, threat modeling involves the following key steps by using a grocery store as an example:
 
 1. **Identifying Assets**. A grocery store's assets might include employees, a safe, cash registers, and inventory.
 
@@ -53,7 +53,7 @@ Trustworthy Computing is a Microsoft initiative for ensuring the production of s
 
 3. **Investigating Attacks against Assets using Entry Points**. One possible attack could target a grocery store's *safe* asset through the *air conditioning* entry point; the air conditioning unit could be unscrewed to allow the safe to be pulled up through it and out of the store.
 
- Threat modeling is applied throughout WPF and includes the following:
+Threat modeling is applied throughout WPF and includes the following:
 
 - How the XAML parser reads files, maps text to corresponding object model classes, and creates the actual code.
 
@@ -61,13 +61,13 @@ Trustworthy Computing is a Microsoft initiative for ensuring the production of s
 
 - How data binding obtains resources and interacts with the system.
 
- These threat models are important for identifying security design requirements and threat mitigations during the development process.
+These threat models are important for identifying security design requirements and threat mitigations during the development process.
 
 <a name="tools"></a>
 
 ### Source Analysis and Editing Tools
 
- In addition to the manual security code review elements of the SDL, the WPF team uses several tools for source analysis and associated edits to decrease security vulnerabilities. A wide range of source tools are used, and include the following:
+In addition to the manual security code review elements of the SDL, the WPF team uses several tools for source analysis and associated edits to decrease security vulnerabilities. A wide range of source tools are used, and include the following:
 
 [!INCLUDE [cas-unsupported](~/wpf/includes/cas-unsupported.md)]
 
@@ -81,7 +81,7 @@ Trustworthy Computing is a Microsoft initiative for ensuring the production of s
 
 ### Testing Techniques
 
- WPF uses a variety of security testing techniques that include:
+WPF uses a variety of security testing techniques that include:
 
 - **Whitebox Testing**: Testers view source code, and then build exploit tests.
 
@@ -95,7 +95,7 @@ Trustworthy Computing is a Microsoft initiative for ensuring the production of s
 
 ### Critical Code Management
 
- For XAML browser applications (XBAPs), WPF builds a security sandbox by using .NET Framework support for marking and tracking security-critical code that elevates privileges (see **Security-Critical Methodology** in [WPF Security Strategy - Platform Security](wpf-security-strategy-platform-security.md)). Given the high security quality requirements on security critical code, such code receives an additional level of source management control and security audit. Approximately 5% to 10% of WPF consists of security-critical code, which is reviewed by a dedicated reviewing team. The source code and check-in process is managed by tracking security critical code and mapping each critical entity (i.e. a method that contains critical code) to its sign off state. The sign off state includes the names of one or more reviewers. Each daily build of WPF compares the critical code to that in previous builds to check for unapproved changes. If an engineer modifies critical code without approval from the reviewing team, it is identified and fixed immediately. This process enables the application and maintenance of an especially high level of scrutiny over WPF sandbox code.
+For XAML browser applications (XBAPs), WPF builds a security sandbox by using .NET Framework support for marking and tracking security-critical code that elevates privileges (see **Security-Critical Methodology** in [WPF Security Strategy - Platform Security](wpf-security-strategy-platform-security.md)). Given the high security quality requirements on security critical code, such code receives an additional level of source management control and security audit. Approximately 5% to 10% of WPF consists of security-critical code, which is reviewed by a dedicated reviewing team. The source code and check-in process is managed by tracking security critical code and mapping each critical entity (i.e. a method that contains critical code) to its sign off state. The sign off state includes the names of one or more reviewers. Each daily build of WPF compares the critical code to that in previous builds to check for unapproved changes. If an engineer modifies critical code without approval from the reviewing team, it is identified and fixed immediately. This process enables the application and maintenance of an especially high level of scrutiny over WPF sandbox code.
 
 [!INCLUDE [xbap-unsupported](~/wpf/includes/xbap-unsupported.md)]
 

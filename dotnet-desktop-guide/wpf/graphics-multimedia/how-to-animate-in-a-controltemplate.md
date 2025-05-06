@@ -14,9 +14,9 @@ This example shows how to use <xref:System.Windows.Media.Animation.Storyboard>, 
   
 ## Example  
 
- [!code-xaml[AnimatePropertyStoryboards#GraphicsMMControlTemplateStoryboardExample](~/samples/snippets/xaml/VS_Snippets_Wpf/AnimatePropertyStoryboards/XAML/ControlTemplateStoryboardExample.xaml#graphicsmmcontroltemplatestoryboardexample)]  
+[!code-xaml[AnimatePropertyStoryboards#GraphicsMMControlTemplateStoryboardExample](~/samples/snippets/xaml/VS_Snippets_Wpf/AnimatePropertyStoryboards/XAML/ControlTemplateStoryboardExample.xaml#graphicsmmcontroltemplatestoryboardexample)]  
   
- For more information about animating properties with storyboards, see [Storyboards Overview](storyboards-overview.md).  
+For more information about animating properties with storyboards, see [Storyboards Overview](storyboards-overview.md).  
   
 ## See also
 

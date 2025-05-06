@@ -23,9 +23,9 @@ ms.assetid: 426d1eaf-7fb8-4b0b-8a33-5e8721786ea4
 
 Explains how to add and remove shortcut menu items in Windows Forms.  
   
- The Windows Forms <xref:System.Windows.Forms.ContextMenu> component provides a menu of frequently used commands that are relevant to the selected object. You can add items to the shortcut menu by adding <xref:System.Windows.Forms.MenuItem> objects to the <xref:System.Windows.Forms.Menu.MenuItems%2A> collection.  
+The Windows Forms <xref:System.Windows.Forms.ContextMenu> component provides a menu of frequently used commands that are relevant to the selected object. You can add items to the shortcut menu by adding <xref:System.Windows.Forms.MenuItem> objects to the <xref:System.Windows.Forms.Menu.MenuItems%2A> collection.  
   
- You can remove items from a shortcut menu permanently; however, at run time it may be more appropriate to hide or disable the items instead.  
+You can remove items from a shortcut menu permanently; however, at run time it may be more appropriate to hide or disable the items instead.  
   
 > [!IMPORTANT]
 > Although <xref:System.Windows.Forms.MenuStrip> and <xref:System.Windows.Forms.ContextMenuStrip> replace and add functionality to the <xref:System.Windows.Forms.MainMenu> and <xref:System.Windows.Forms.ContextMenu> controls of previous versions, <xref:System.Windows.Forms.MainMenu> and <xref:System.Windows.Forms.ContextMenu> are retained for both backward compatibility and future use if you choose.  

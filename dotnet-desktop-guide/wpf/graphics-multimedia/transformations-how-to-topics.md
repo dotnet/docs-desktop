@@ -18,15 +18,15 @@ The topics in this section describe how to apply different transformations to ob
   
 ## In This Section  
 
- [Apply a Transform to an Element When an Event Occurs](how-to-apply-a-transform-to-an-element-when-an-event-occurs.md)  
- [Apply Multiple Transforms to an Object](how-to-apply-multiple-transforms-to-an-object.md)  
- [Make an Element Spin in Place](how-to-make-an-element-spin-in-place.md)  
- [Rotate an Object](how-to-rotate-an-object.md)  
- [Scale an Element](how-to-scale-an-element.md)  
- [Skew an Element](how-to-skew-an-element.md)  
- [Specify the Origin of a Transform by Using Relative Values](how-to-specify-the-origin-of-a-transform-by-using-relative-values.md)  
- [Translate an Element](how-to-translate-an-element.md)  
- [Use a MatrixTransform to Create Custom Transforms](how-to-use-a-matrixtransform-to-create-custom-transforms.md)  
+[Apply a Transform to an Element When an Event Occurs](how-to-apply-a-transform-to-an-element-when-an-event-occurs.md)  
+[Apply Multiple Transforms to an Object](how-to-apply-multiple-transforms-to-an-object.md)  
+[Make an Element Spin in Place](how-to-make-an-element-spin-in-place.md)  
+[Rotate an Object](how-to-rotate-an-object.md)  
+[Scale an Element](how-to-scale-an-element.md)  
+[Skew an Element](how-to-skew-an-element.md)  
+[Specify the Origin of a Transform by Using Relative Values](how-to-specify-the-origin-of-a-transform-by-using-relative-values.md)  
+[Translate an Element](how-to-translate-an-element.md)  
+[Use a MatrixTransform to Create Custom Transforms](how-to-use-a-matrixtransform-to-create-custom-transforms.md)  
   
 ## See also
 

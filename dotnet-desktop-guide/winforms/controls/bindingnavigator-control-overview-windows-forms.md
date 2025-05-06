@@ -18,11 +18,11 @@ You can use the <xref:System.Windows.Forms.BindingNavigator> control to create a
   
 ## How the BindingNavigator Works  
 
- The <xref:System.Windows.Forms.BindingNavigator> control is composed of a <xref:System.Windows.Forms.ToolStrip> with a series of <xref:System.Windows.Forms.ToolStripItem> objects for most of the common data-related actions: adding data, deleting data, and navigating through data. By default, the <xref:System.Windows.Forms.BindingNavigator> control contains these standard buttons. The following screenshot shows the <xref:System.Windows.Forms.BindingNavigator> control on a form:
+The <xref:System.Windows.Forms.BindingNavigator> control is composed of a <xref:System.Windows.Forms.ToolStrip> with a series of <xref:System.Windows.Forms.ToolStripItem> objects for most of the common data-related actions: adding data, deleting data, and navigating through data. By default, the <xref:System.Windows.Forms.BindingNavigator> control contains these standard buttons. The following screenshot shows the <xref:System.Windows.Forms.BindingNavigator> control on a form:
   
- ![Screenshot showing the BindingNavigator control.](./media/bindingnavigator-control-overview-windows-forms/bindingnavigator-control-form.gif)  
+![Screenshot showing the BindingNavigator control.](./media/bindingnavigator-control-overview-windows-forms/bindingnavigator-control-form.gif)  
   
- The following table lists the controls and describes their functions.  
+The following table lists the controls and describes their functions.  
   
 |Control|Function|  
 |-------------|--------------|  
@@ -35,9 +35,9 @@ You can use the <xref:System.Windows.Forms.BindingNavigator> control to create a
 |<xref:System.Windows.Forms.BindingNavigator.PositionItem%2A> text box|Returns the current position within the underlying data source.|  
 |<xref:System.Windows.Forms.BindingNavigator.CountItem%2A> text box|Returns the total number of items in the underlying data source.|  
   
- For each control in this collection, there is a corresponding member of the <xref:System.Windows.Forms.BindingSource> component that programmatically provides the same functionality. For example, the <xref:System.Windows.Forms.BindingNavigator.MoveFirstItem%2A> button corresponds to the <xref:System.Windows.Forms.BindingSource.MoveFirst%2A> method of the <xref:System.Windows.Forms.BindingSource> component, the <xref:System.Windows.Forms.BindingNavigator.DeleteItem%2A> button corresponds to the <xref:System.Windows.Forms.BindingSource.RemoveCurrent%2A> method, and so on.  
+For each control in this collection, there is a corresponding member of the <xref:System.Windows.Forms.BindingSource> component that programmatically provides the same functionality. For example, the <xref:System.Windows.Forms.BindingNavigator.MoveFirstItem%2A> button corresponds to the <xref:System.Windows.Forms.BindingSource.MoveFirst%2A> method of the <xref:System.Windows.Forms.BindingSource> component, the <xref:System.Windows.Forms.BindingNavigator.DeleteItem%2A> button corresponds to the <xref:System.Windows.Forms.BindingSource.RemoveCurrent%2A> method, and so on.  
   
- If the default buttons are not suited to your application, or if you require additional buttons to support other types of functionality, you can supply your own <xref:System.Windows.Forms.ToolStrip> buttons. Also see [How to: Add Load, Save, and Cancel Buttons to the Windows Forms BindingNavigator Control](load-save-and-cancel-bindingnavigator.md).  
+If the default buttons are not suited to your application, or if you require additional buttons to support other types of functionality, you can supply your own <xref:System.Windows.Forms.ToolStrip> buttons. Also see [How to: Add Load, Save, and Cancel Buttons to the Windows Forms BindingNavigator Control](load-save-and-cancel-bindingnavigator.md).  
   
 ## See also
 

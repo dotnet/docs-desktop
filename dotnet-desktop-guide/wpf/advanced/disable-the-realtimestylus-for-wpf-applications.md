@@ -9,11 +9,11 @@ ms.assetid: e0525309-5ede-4782-837d-dbf6e5554859
 
 Windows Presentation Foundation (WPF) has built in support for processing Windows 7 touch input. The support comes through the tablet platform’s real-time stylus input as <xref:System.Windows.UIElement.OnStylusDown%2A>, <xref:System.Windows.UIElement.OnStylusUp%2A>, and <xref:System.Windows.UIElement.OnStylusMove%2A> events. Windows 7 also provides multi-touch input as Win32 WM_TOUCH window messages. These two APIs are mutually exclusive on the same HWND. Enabling touch input via the tablet platform (the default for WPF applications) disables WM_TOUCH messages. As a result, to use WM_TOUCH to receive touch messages from a WPF window, you must disable the built-in stylus support in WPF. This is applicable in a scenario such as a WPF window hosting a component that uses WM_TOUCH.  
   
- To disable WPF listening to stylus input, remove any tablet support added by the WPF window.  
+To disable WPF listening to stylus input, remove any tablet support added by the WPF window.  
   
 ## Example  
 
- The following sample code shows how to remove the default tablet platform support by using reflection.  
+The following sample code shows how to remove the default tablet platform support by using reflection.  
   
 ```csharp  
 public static void DisableWPFTabletSupport()  

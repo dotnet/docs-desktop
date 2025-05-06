@@ -19,12 +19,12 @@ The following code example plays a sound repeatedly. When the code in the `stopP
   
 ## Example  
 
- [!code-csharp[System.Media.SoundPlayer.PlayLooping#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Media.SoundPlayer.PlayLooping/CS/Form1.cs#1)]
- [!code-vb[System.Media.SoundPlayer.PlayLooping#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Media.SoundPlayer.PlayLooping/VB/Form1.vb#1)]  
+[!code-csharp[System.Media.SoundPlayer.PlayLooping#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Media.SoundPlayer.PlayLooping/CS/Form1.cs#1)]
+[!code-vb[System.Media.SoundPlayer.PlayLooping#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Media.SoundPlayer.PlayLooping/VB/Form1.vb#1)]  
   
 ## Compiling the Code  
 
- This example requires:  
+This example requires:  
   
 - References to the System and System.Windows.Forms assemblies.  
   
@@ -32,9 +32,9 @@ The following code example plays a sound repeatedly. When the code in the `stopP
   
 ## Robust Programming  
 
- File operations should be enclosed within appropriate exception-handling blocks.  
+File operations should be enclosed within appropriate exception-handling blocks.  
   
- The following conditions may cause an exception:  
+The following conditions may cause an exception:  
   
 - The path name is malformed. For example, it contains characters that are not valid or it is only white space (<xref:System.ArgumentException> class).  
   
@@ -50,7 +50,7 @@ The following code example plays a sound repeatedly. When the code in the `stopP
   
 ## .NET Framework Security  
 
- Do not make decisions about the contents of the file based on the name of the file. For example, the file Form1.vb may not be a Visual Basic source file. Verify all inputs before using the data in your application.  
+Do not make decisions about the contents of the file based on the name of the file. For example, the file Form1.vb may not be a Visual Basic source file. Verify all inputs before using the data in your application.  
   
 ## See also
 

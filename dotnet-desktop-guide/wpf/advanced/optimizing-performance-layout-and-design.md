@@ -16,13 +16,13 @@ ms.assetid: 005f4cda-a849-448b-916b-38d14d9a96fe
 
 The design of your WPF application can impact its performance by creating unnecessary overhead in calculating layout and validating object references. The construction of objects, particularly at run time, can affect the performance characteristics of your application.  
   
- This topic provides performance recommendations in these areas.  
+This topic provides performance recommendations in these areas.  
   
 ## Layout  
 
- The term "layout pass" describes the process of measuring and arranging the members of a <xref:System.Windows.Controls.Panel>-derived object's collection of children, and then drawing them onscreen. The layout pass is a mathematically-intensive process—the larger the number of children in the collection, the greater the number of calculations required. For example, each time a child <xref:System.Windows.UIElement> object in the collection changes its position, it has the potential to trigger a new pass by the layout system. Because of the close relationship between object characteristics and layout behavior, it's important to understand the type of events that can invoke the layout system. Your application will perform better by reducing as much as possible any unnecessary invocations of the layout pass.  
+The term "layout pass" describes the process of measuring and arranging the members of a <xref:System.Windows.Controls.Panel>-derived object's collection of children, and then drawing them onscreen. The layout pass is a mathematically-intensive process—the larger the number of children in the collection, the greater the number of calculations required. For example, each time a child <xref:System.Windows.UIElement> object in the collection changes its position, it has the potential to trigger a new pass by the layout system. Because of the close relationship between object characteristics and layout behavior, it's important to understand the type of events that can invoke the layout system. Your application will perform better by reducing as much as possible any unnecessary invocations of the layout pass.  
   
- The layout system completes two passes for each child member in a collection: a measure pass, and an arrange pass. Each child object provides its own overridden implementation of the <xref:System.Windows.UIElement.Measure%2A> and <xref:System.Windows.UIElement.Arrange%2A> methods in order to provide its own specific layout behavior. At its simplest, layout is a recursive system that leads to an element being sized, positioned, and drawn onscreen.  
+The layout system completes two passes for each child member in a collection: a measure pass, and an arrange pass. Each child object provides its own overridden implementation of the <xref:System.Windows.UIElement.Measure%2A> and <xref:System.Windows.UIElement.Arrange%2A> methods in order to provide its own specific layout behavior. At its simplest, layout is a recursive system that leads to an element being sized, positioned, and drawn onscreen.  
   
 - A child <xref:System.Windows.UIElement> object begins the layout process by first having its core properties measured.  
   
@@ -34,7 +34,7 @@ The design of your WPF application can impact its performance by creating unnece
   
 - The collection of child objects is drawn to the screen.  
   
- The layout pass process is invoked again if any of the following actions occur:  
+The layout pass process is invoked again if any of the following actions occur:  
   
 - A child object is added to the collection.  
   
@@ -46,29 +46,29 @@ The design of your WPF application can impact its performance by creating unnece
   
 ### Use the Most Efficient Panel where Possible  
 
- The complexity of the layout process is directly based on the layout behavior of the <xref:System.Windows.Controls.Panel>-derived elements you use. For example, a <xref:System.Windows.Controls.Grid> or <xref:System.Windows.Controls.StackPanel> control provides much more functionality than a <xref:System.Windows.Controls.Canvas> control. The price for this greater increase in functionality is a greater increase in performance costs. However, if you do not require the functionality that a <xref:System.Windows.Controls.Grid> control provides, you should use the less costly alternatives, such as a <xref:System.Windows.Controls.Canvas> or a custom panel.  
+The complexity of the layout process is directly based on the layout behavior of the <xref:System.Windows.Controls.Panel>-derived elements you use. For example, a <xref:System.Windows.Controls.Grid> or <xref:System.Windows.Controls.StackPanel> control provides much more functionality than a <xref:System.Windows.Controls.Canvas> control. The price for this greater increase in functionality is a greater increase in performance costs. However, if you do not require the functionality that a <xref:System.Windows.Controls.Grid> control provides, you should use the less costly alternatives, such as a <xref:System.Windows.Controls.Canvas> or a custom panel.  
   
- For more information, see [Panels Overview](../controls/panels-overview.md).  
+For more information, see [Panels Overview](../controls/panels-overview.md).  
   
 ### Update Rather than Replace a RenderTransform  
 
- You may be able to update a <xref:System.Windows.Media.Transform> rather than replacing it as the value of a <xref:System.Windows.UIElement.RenderTransform%2A> property. This is particularly true in scenarios that involve animation. By updating an existing <xref:System.Windows.Media.Transform>, you avoid initiating an unnecessary layout calculation.  
+You may be able to update a <xref:System.Windows.Media.Transform> rather than replacing it as the value of a <xref:System.Windows.UIElement.RenderTransform%2A> property. This is particularly true in scenarios that involve animation. By updating an existing <xref:System.Windows.Media.Transform>, you avoid initiating an unnecessary layout calculation.  
   
 ### Build Your Tree Top-Down  
 
- When a node is added or removed from the logical tree, property invalidations are raised on the node's parent and all its children. As a result, a top-down construction pattern should always be followed to avoid the cost of unnecessary invalidations on nodes that have already been validated. The following table shows the difference in execution speed between building a tree top-down versus bottom-up, where the tree is 150 levels deep with a single <xref:System.Windows.Controls.TextBlock> and <xref:System.Windows.Controls.DockPanel> at each level.  
+When a node is added or removed from the logical tree, property invalidations are raised on the node's parent and all its children. As a result, a top-down construction pattern should always be followed to avoid the cost of unnecessary invalidations on nodes that have already been validated. The following table shows the difference in execution speed between building a tree top-down versus bottom-up, where the tree is 150 levels deep with a single <xref:System.Windows.Controls.TextBlock> and <xref:System.Windows.Controls.DockPanel> at each level.  
   
 |**Action**|**Tree building (in ms)**|**Render—includes tree building (in ms)**|  
 |----------------|---------------------------------|-------------------------------------------------|  
 |Bottom-up|366|454|  
 |Top-down|11|96|  
   
- The following code example demonstrates how to create a tree top down.  
+The following code example demonstrates how to create a tree top down.  
   
- [!code-csharp[Performance#PerformanceSnippet1](~/samples/snippets/csharp/VS_Snippets_Wpf/Performance/CSharp/Window1.xaml.cs#performancesnippet1)]
- [!code-vb[Performance#PerformanceSnippet1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Performance/visualbasic/window1.xaml.vb#performancesnippet1)]  
+[!code-csharp[Performance#PerformanceSnippet1](~/samples/snippets/csharp/VS_Snippets_Wpf/Performance/CSharp/Window1.xaml.cs#performancesnippet1)]
+[!code-vb[Performance#PerformanceSnippet1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Performance/visualbasic/window1.xaml.vb#performancesnippet1)]  
   
- For more information on the logical tree, see [Trees in WPF](trees-in-wpf.md).  
+For more information on the logical tree, see [Trees in WPF](trees-in-wpf.md).  
   
 ## See also
 

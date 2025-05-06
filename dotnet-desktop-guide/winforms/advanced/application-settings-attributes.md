@@ -13,7 +13,7 @@ ms.assetid: 53caa66c-a9fb-43a5-953c-ad092590098d
 
 The Application Settings architecture provides many attributes that can be applied either to the applications settings wrapper class or its individual properties. These attributes are examined at run time by the application settings infrastructure, often specifically the settings provider, in order to tailor its functioning to the stated needs of the custom wrapper.  
   
- The following table lists the attributes that can be applied to the application settings wrapper class, this class's individual properties, or both. By definition, only a single scope attribute—**UserScopedSettingAttribute** or **ApplicationScopedSettingAttribute**—must be applied to each and every settings property.  
+The following table lists the attributes that can be applied to the application settings wrapper class, this class's individual properties, or both. By definition, only a single scope attribute—**UserScopedSettingAttribute** or **ApplicationScopedSettingAttribute**—must be applied to each and every settings property.  
   
 > [!NOTE]
 > A custom settings provider, derived from the <xref:System.Configuration.SettingsProvider> class, is only required to recognize the following three attributes: **ApplicationScopedSettingAttribute**, **UserScopedSettingAttribute**, and **DefaultSettingValueAttribute**.  
@@ -32,7 +32,7 @@ The Application Settings architecture provides many attributes that can be appli
 |<xref:System.Configuration.SettingsSerializeAsAttribute>|Both|Specifies a preferred serialization mechanism for a settings group or property. The available serialization mechanisms are defined by the <xref:System.Configuration.SettingsSerializeAs> enumeration.|  
 |<xref:System.Configuration.NoSettingsVersionUpgradeAttribute>|Property|Specifies that a settings provider should disable all application upgrade functionality for the marked property.|  
   
- *Class* indicates that the attribute can be applied only to an application settings wrapper class. *Property* indicates that the attribute can be applied only settings properties. *Both* indicates that the attribute can be applied at either level.  
+*Class* indicates that the attribute can be applied only to an application settings wrapper class. *Property* indicates that the attribute can be applied only settings properties. *Both* indicates that the attribute can be applied at either level.  
   
 ## See also
 

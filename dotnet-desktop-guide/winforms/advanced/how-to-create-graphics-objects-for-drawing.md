@@ -17,7 +17,7 @@ ms.assetid: 162861f9-f050-445e-8abb-b2c43a918b8b
 
 Before you can draw lines and shapes, render text, or display and manipulate images with GDI+, you need to create a <xref:System.Drawing.Graphics> object. The <xref:System.Drawing.Graphics> object represents a GDI+ drawing surface, and is the object that is used to create graphical images.  
   
- There are two steps in working with graphics:  
+There are two steps in working with graphics:  
   
 1. Creating a <xref:System.Drawing.Graphics> object.  
   
@@ -25,7 +25,7 @@ Before you can draw lines and shapes, render text, or display and manipulate ima
   
 ## Creating a Graphics Object  
 
- A graphics object can be created in a variety of ways.  
+A graphics object can be created in a variety of ways.  
   
 #### To create a graphics object  
   
@@ -43,7 +43,7 @@ Before you can draw lines and shapes, render text, or display and manipulate ima
   
 ## PaintEventArgs in the Paint Event Handler  
 
- When programming the <xref:System.Windows.Forms.PaintEventHandler> for controls or the <xref:System.Drawing.Printing.PrintDocument.PrintPage> for a <xref:System.Drawing.Printing.PrintDocument>, a graphics object is provided as one of the properties of <xref:System.Windows.Forms.PaintEventArgs> or <xref:System.Drawing.Printing.PrintPageEventArgs>.  
+When programming the <xref:System.Windows.Forms.PaintEventHandler> for controls or the <xref:System.Drawing.Printing.PrintDocument.PrintPage> for a <xref:System.Drawing.Printing.PrintDocument>, a graphics object is provided as one of the properties of <xref:System.Windows.Forms.PaintEventArgs> or <xref:System.Drawing.Printing.PrintPageEventArgs>.  
   
 #### To obtain a reference to a Graphics object from the PaintEventArgs in the Paint event  
   
@@ -90,7 +90,7 @@ Before you can draw lines and shapes, render text, or display and manipulate ima
   
 ## CreateGraphics Method  
 
- You can also use the <xref:System.Windows.Forms.Control.CreateGraphics%2A> method of a control or form to obtain a reference to a <xref:System.Drawing.Graphics> object that represents the drawing surface of that control or form.  
+You can also use the <xref:System.Windows.Forms.Control.CreateGraphics%2A> method of a control or form to obtain a reference to a <xref:System.Drawing.Graphics> object that represents the drawing surface of that control or form.  
   
 #### To create a Graphics object with the CreateGraphics method  
   
@@ -119,7 +119,7 @@ Before you can draw lines and shapes, render text, or display and manipulate ima
   
 ## Create from an Image Object  
 
- Additionally, you can create a graphics object from any object that derives from the <xref:System.Drawing.Image> class.  
+Additionally, you can create a graphics object from any object that derives from the <xref:System.Drawing.Image> class.  
   
 #### To create a Graphics object from an Image  
   
@@ -149,7 +149,7 @@ Before you can draw lines and shapes, render text, or display and manipulate ima
   
 ## Drawing and Manipulating Shapes and Images  
 
- After it is created, a <xref:System.Drawing.Graphics> object may be used to draw lines and shapes, render text, or display and manipulate images. The principal objects that are used with the <xref:System.Drawing.Graphics> object are:  
+After it is created, a <xref:System.Drawing.Graphics> object may be used to draw lines and shapes, render text, or display and manipulate images. The principal objects that are used with the <xref:System.Drawing.Graphics> object are:  
   
 - The <xref:System.Drawing.Pen> class—Used for drawing lines, outlining shapes, or rendering other geometric representations.  
   

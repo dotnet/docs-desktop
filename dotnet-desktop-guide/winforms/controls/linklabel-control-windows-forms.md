@@ -17,24 +17,24 @@ The Windows Forms `LinkLabel` control enables you to add Web-style links to Wind
   
 ## In This Section  
 
- [LinkLabel Control Overview](linklabel-control-overview-windows-forms.md)  
- Explains what this control is and its key features and properties.  
+[LinkLabel Control Overview](linklabel-control-overview-windows-forms.md)  
+Explains what this control is and its key features and properties.  
   
- [How to: Change the Appearance of the Windows Forms LinkLabel Control](how-to-change-the-appearance-of-the-windows-forms-linklabel-control.md)  
- Lists ways to specify the color and underlining of Web-style links in link labels.  
+[How to: Change the Appearance of the Windows Forms LinkLabel Control](how-to-change-the-appearance-of-the-windows-forms-linklabel-control.md)  
+Lists ways to specify the color and underlining of Web-style links in link labels.  
   
- [How to: Link to an Object or Web Page with the Windows Forms LinkLabel Control](link-to-an-object-or-web-page-with-wf-linklabel-control.md)  
- Provides how-to instructions for opening a form or Web page when a link is clicked.  
+[How to: Link to an Object or Web Page with the Windows Forms LinkLabel Control](link-to-an-object-or-web-page-with-wf-linklabel-control.md)  
+Provides how-to instructions for opening a form or Web page when a link is clicked.  
   
- [How to: Display a Web Page from a Windows Forms LinkLabel Control (Visual Basic)](display-a-web-page-from-a-wf-linklabel-control-visual-basic.md)  
- Shows how to display a Web page in the default browser when a user clicks a Windows Forms `LinkLabel` control.  
+[How to: Display a Web Page from a Windows Forms LinkLabel Control (Visual Basic)](display-a-web-page-from-a-wf-linklabel-control-visual-basic.md)  
+Shows how to display a Web page in the default browser when a user clicks a Windows Forms `LinkLabel` control.  
   
 ## Reference  
 
- <xref:System.Windows.Forms.LinkLabel> class  
- Describes this class and has links to all its members.  
+<xref:System.Windows.Forms.LinkLabel> class  
+Describes this class and has links to all its members.  
   
 ## Related Sections  
 
- [Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)  
- Provides a complete list of Windows Forms controls, with links to information about their use.
+[Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)  
+Provides a complete list of Windows Forms controls, with links to information about their use.

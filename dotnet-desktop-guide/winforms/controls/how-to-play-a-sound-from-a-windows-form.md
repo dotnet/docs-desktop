@@ -36,7 +36,7 @@ private void playSimpleSound()
 
 ## Compiling the Code
 
- This example requires:
+This example requires:
 
 - That you replace the file name `"c:\Windows\Media\chimes.wav"` with a valid file name.
 
@@ -44,9 +44,9 @@ private void playSimpleSound()
 
 ## Robust Programming
 
- File operations should be enclosed within appropriate structured exception handling blocks.
+File operations should be enclosed within appropriate structured exception handling blocks.
 
- The following conditions may cause an exception:
+The following conditions may cause an exception:
 
 - The path name is malformed. For example, it contains illegal characters or is only white space (<xref:System.ArgumentException> class).
 
@@ -62,7 +62,7 @@ private void playSimpleSound()
 
 ## .NET Framework Security
 
- Do not make decisions about the contents of the file based on the name of the file. For example, the file `Form1.vb` may not be a Visual Basic source file. Verify all inputs before using the data in your application.
+Do not make decisions about the contents of the file based on the name of the file. For example, the file `Form1.vb` may not be a Visual Basic source file. Verify all inputs before using the data in your application.
 
 ## See also
 

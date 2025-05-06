@@ -18,19 +18,19 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
   
 ## DataGrid Parts  
 
- The following table lists the named parts for the <xref:System.Windows.Controls.DataGrid> control.  
+The following table lists the named parts for the <xref:System.Windows.Controls.DataGrid> control.  
   
 |Part|Type|Description|  
 |-|-|-|  
 |PART_ColumnHeadersPresenter|<xref:System.Windows.Controls.Primitives.DataGridColumnHeadersPresenter>|The row that contains the column headers.|  
   
- When you create a <xref:System.Windows.Controls.ControlTemplate> for a <xref:System.Windows.Controls.DataGrid>, your template might contain an <xref:System.Windows.Controls.ItemsPresenter> within a <xref:System.Windows.Controls.ScrollViewer>. (The <xref:System.Windows.Controls.ItemsPresenter> displays each item in the <xref:System.Windows.Controls.DataGrid>; the <xref:System.Windows.Controls.ScrollViewer> enables scrolling within the control).  If the <xref:System.Windows.Controls.ItemsPresenter> is not the direct child of the <xref:System.Windows.Controls.ScrollViewer>, you must give the <xref:System.Windows.Controls.ItemsPresenter> the name, `ItemsPresenter`.  
+When you create a <xref:System.Windows.Controls.ControlTemplate> for a <xref:System.Windows.Controls.DataGrid>, your template might contain an <xref:System.Windows.Controls.ItemsPresenter> within a <xref:System.Windows.Controls.ScrollViewer>. (The <xref:System.Windows.Controls.ItemsPresenter> displays each item in the <xref:System.Windows.Controls.DataGrid>; the <xref:System.Windows.Controls.ScrollViewer> enables scrolling within the control).  If the <xref:System.Windows.Controls.ItemsPresenter> is not the direct child of the <xref:System.Windows.Controls.ScrollViewer>, you must give the <xref:System.Windows.Controls.ItemsPresenter> the name, `ItemsPresenter`.  
   
- The default template for the <xref:System.Windows.Controls.DataGrid> contains a <xref:System.Windows.Controls.ScrollViewer> control. For more information about the parts defined by the <xref:System.Windows.Controls.ScrollViewer>, see [ScrollViewer Styles and Templates](scrollviewer-styles-and-templates.md).  
+The default template for the <xref:System.Windows.Controls.DataGrid> contains a <xref:System.Windows.Controls.ScrollViewer> control. For more information about the parts defined by the <xref:System.Windows.Controls.ScrollViewer>, see [ScrollViewer Styles and Templates](scrollviewer-styles-and-templates.md).  
   
 ## DataGrid States  
 
- The following table lists the visual states for the <xref:System.Windows.Controls.DataGrid> control.  
+The following table lists the visual states for the <xref:System.Windows.Controls.DataGrid> control.  
   
 |VisualState Name|VisualStateGroup Name|Description|  
 |-|-|-|  
@@ -42,11 +42,11 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
   
 ## DataGridCell Parts  
 
- The <xref:System.Windows.Controls.DataGridCell> element does not have any named parts.  
+The <xref:System.Windows.Controls.DataGridCell> element does not have any named parts.  
   
 ## DataGridCell States  
 
- The following table lists the visual states for the <xref:System.Windows.Controls.DataGridCell> element.  
+The following table lists the visual states for the <xref:System.Windows.Controls.DataGridCell> element.  
   
 |VisualState Name|VisualStateGroup Name|Description|  
 |-|-|-|  
@@ -66,11 +66,11 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
   
 ## DataGridRow Parts  
 
- The <xref:System.Windows.Controls.DataGridRow> element does not have any named parts.  
+The <xref:System.Windows.Controls.DataGridRow> element does not have any named parts.  
   
 ## DataGridRow States  
 
- The following table lists the visual states for the <xref:System.Windows.Controls.DataGridRow> element.  
+The following table lists the visual states for the <xref:System.Windows.Controls.DataGridRow> element.  
   
 |VisualState Name|VisualStateGroup Name|Description|  
 |-|-|-|  
@@ -91,7 +91,7 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
   
 ## DataGridRowHeader Parts  
 
- The following table lists the named parts for the <xref:System.Windows.Controls.Primitives.DataGridRowHeader> element.  
+The following table lists the named parts for the <xref:System.Windows.Controls.Primitives.DataGridRowHeader> element.  
   
 |Part|Type|Description|  
 |-|-|-|  
@@ -100,7 +100,7 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
   
 ## DataGridRowHeader States  
 
- The following table lists the visual states for the <xref:System.Windows.Controls.Primitives.DataGridRowHeader> element.  
+The following table lists the visual states for the <xref:System.Windows.Controls.Primitives.DataGridRowHeader> element.  
   
 |VisualState Name|VisualStateGroup Name|Description|  
 |-|-|-|  
@@ -126,7 +126,7 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
   
 ## DataGridColumnHeadersPresenter Parts  
 
- The following table lists the named parts for the <xref:System.Windows.Controls.Primitives.DataGridColumnHeadersPresenter> element.  
+The following table lists the named parts for the <xref:System.Windows.Controls.Primitives.DataGridColumnHeadersPresenter> element.  
   
 |Part|Type|Description|  
 |-|-|-|  
@@ -134,7 +134,7 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
   
 ## DataGridColumnHeadersPresenter States  
 
- The following table lists the visual states for the <xref:System.Windows.Controls.Primitives.DataGridColumnHeadersPresenter> element.  
+The following table lists the visual states for the <xref:System.Windows.Controls.Primitives.DataGridColumnHeadersPresenter> element.  
   
 |VisualState Name|VisualStateGroup Name|Description|  
 |-|-|-|  
@@ -144,7 +144,7 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
   
 ## DataGridColumnHeader Parts  
 
- The following table lists the named parts for the <xref:System.Windows.Controls.Primitives.DataGridColumnHeader> element.  
+The following table lists the named parts for the <xref:System.Windows.Controls.Primitives.DataGridColumnHeader> element.  
   
 |Part|Type|Description|  
 |-|-|-|  
@@ -153,7 +153,7 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
   
 ## DataGridColumnHeader States  
 
- The following table lists the visual states for the <xref:System.Windows.Controls.Primitives.DataGridColumnHeader> element.  
+The following table lists the visual states for the <xref:System.Windows.Controls.Primitives.DataGridColumnHeader> element.  
   
 |VisualState Name|VisualStateGroup Name|Description|  
 |-|-|-|  
@@ -169,15 +169,15 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
   
 ## DataGrid ControlTemplate Example  
 
- The following example shows how to define a <xref:System.Windows.Controls.ControlTemplate> for the <xref:System.Windows.Controls.DataGrid> control and its associated types.  
+The following example shows how to define a <xref:System.Windows.Controls.ControlTemplate> for the <xref:System.Windows.Controls.DataGrid> control and its associated types.  
   
- [!code-xaml[ControlTemplateExamples#DataGrid](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/datagrid.xaml#datagrid)]  
+[!code-xaml[ControlTemplateExamples#DataGrid](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/datagrid.xaml#datagrid)]  
   
- The preceding example uses one or more of the following resources.  
+The preceding example uses one or more of the following resources.  
   
- [!code-xaml[ControlTemplateExamples#Resources](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/shared.xaml#resources)]  
+[!code-xaml[ControlTemplateExamples#Resources](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/shared.xaml#resources)]  
   
- For the complete sample, see [Styling with ControlTemplates Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Styles%20&%20Templates/IntroToStylingAndTemplating).  
+For the complete sample, see [Styling with ControlTemplates Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Styles%20&%20Templates/IntroToStylingAndTemplating).  
   
 ## See also
 

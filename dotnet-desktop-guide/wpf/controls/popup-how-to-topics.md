@@ -16,13 +16,13 @@ The topics in this section describe how to use the <xref:System.Windows.Controls
   
 ## In This Section  
 
- [Animate a Popup](how-to-animate-a-popup.md)  
- [Specify a Custom Popup Position](how-to-specify-a-custom-popup-position.md)  
+[Animate a Popup](how-to-animate-a-popup.md)  
+[Specify a Custom Popup Position](how-to-specify-a-custom-popup-position.md)  
   
 ## Reference  
 
- <xref:System.Windows.Controls.Primitives.Popup>  
+<xref:System.Windows.Controls.Primitives.Popup>  
   
 ## Related Sections  
 
- [Popup Overview](popup-overview.md)
+[Popup Overview](popup-overview.md)

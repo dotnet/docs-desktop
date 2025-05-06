@@ -13,23 +13,23 @@ The Windows Forms <xref:System.Windows.Forms.FileDialog> class is the common bas
   
 ## In This Section  
 
- [How To: Opt Out of File Dialog Box Automatic Upgrade](how-to-opt-out-of-file-dialog-box-automatic-upgrade.md)  
- Describes how to opt out of a style automatic upgrade to a file dialog box.  
+[How To: Opt Out of File Dialog Box Automatic Upgrade](how-to-opt-out-of-file-dialog-box-automatic-upgrade.md)  
+Describes how to opt out of a style automatic upgrade to a file dialog box.  
   
- [How To: Add a Custom Place to a File Dialog Box](how-to-add-a-custom-place-to-a-file-dialog-box.md)  
- Describes how to add a custom file location to a file dialog box.  
+[How To: Add a Custom Place to a File Dialog Box](how-to-add-a-custom-place-to-a-file-dialog-box.md)  
+Describes how to add a custom file location to a file dialog box.  
   
- [Known Folder GUIDs for File Dialog Custom Places](known-folder-guids-for-file-dialog-custom-places.md)  
- List the folder names and their associated GUIDs.  
+[Known Folder GUIDs for File Dialog Custom Places](known-folder-guids-for-file-dialog-custom-places.md)  
+List the folder names and their associated GUIDs.  
   
 ## Reference  
 
- <xref:System.Windows.Forms.OpenFileDialog>  
+<xref:System.Windows.Forms.OpenFileDialog>  
   
- <xref:System.Windows.Forms.SaveFileDialog>  
+<xref:System.Windows.Forms.SaveFileDialog>  
   
 ## Related Sections  
 
- [OpenFileDialog Component](openfiledialog-component-windows-forms.md)  
+[OpenFileDialog Component](openfiledialog-component-windows-forms.md)  
   
- [SaveFileDialog Component](savefiledialog-component-windows-forms.md)
+[SaveFileDialog Component](savefiledialog-component-windows-forms.md)

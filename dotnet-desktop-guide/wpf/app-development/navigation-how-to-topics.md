@@ -15,13 +15,13 @@ The following topics show how to use Windows Presentation Foundation (WPF) navig
   
 ## In This Section  
 
- [Call a Page Function](how-to-call-a-page-function.md)  
+[Call a Page Function](how-to-call-a-page-function.md)  
   [Get the Return Value of a Page Function](how-to-get-the-return-value-of-a-page-function.md)  
   [Navigate Forward or Back Through Navigation History](how-to-navigate-forward-or-back-through-navigation-history.md)  
   [Return from a Page Function](how-to-return-from-a-page-function.md)  
   
 ## Related Sections  
 
- [Navigation Overview](navigation-overview.md)  
+[Navigation Overview](navigation-overview.md)  
   
- [Structured Navigation Overview](structured-navigation-overview.md)
+[Structured Navigation Overview](structured-navigation-overview.md)

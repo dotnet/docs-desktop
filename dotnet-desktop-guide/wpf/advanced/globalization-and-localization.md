@@ -20,19 +20,19 @@ Windows Presentation Foundation (WPF) provides extensive support for the develop
   
 ## In This Section  
 
- [WPF Globalization and Localization Overview](wpf-globalization-and-localization-overview.md)  
- [Globalization for WPF](globalization-for-wpf.md)  
- [Use Automatic Layout Overview](use-automatic-layout-overview.md)  
- [Localization Attributes and Comments](localization-attributes-and-comments.md)  
- [Bidirectional Features in WPF Overview](bidirectional-features-in-wpf-overview.md)  
- [How-to Topics](how-to-localize-an-application.md)  
+[WPF Globalization and Localization Overview](wpf-globalization-and-localization-overview.md)  
+[Globalization for WPF](globalization-for-wpf.md)  
+[Use Automatic Layout Overview](use-automatic-layout-overview.md)  
+[Localization Attributes and Comments](localization-attributes-and-comments.md)  
+[Bidirectional Features in WPF Overview](bidirectional-features-in-wpf-overview.md)  
+[How-to Topics](how-to-localize-an-application.md)  
   
 ## Reference  
 
- <xref:System.Globalization>  
+<xref:System.Globalization>  
   
- <xref:System.Windows.FrameworkElement.FlowDirection%2A>  
+<xref:System.Windows.FrameworkElement.FlowDirection%2A>  
   
- <xref:System.Resources.NeutralResourcesLanguageAttribute>  
+<xref:System.Resources.NeutralResourcesLanguageAttribute>  
   
- [xml:lang Handling in XAML](../../xaml-services/xml-language-handling.md)  
+[xml:lang Handling in XAML](../../xaml-services/xml-language-handling.md)  

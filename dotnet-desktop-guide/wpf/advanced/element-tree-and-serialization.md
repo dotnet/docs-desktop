@@ -17,22 +17,22 @@ WPF programming elements often exist in some form of tree relationship to each o
   
 ## In This Section  
 
- [Trees in WPF](trees-in-wpf.md)  
- [Serialization Limitations of XamlWriter.Save](serialization-limitations-of-xamlwriter-save.md)  
- [Initialization for Object Elements Not in an Object Tree](initialization-for-object-elements-not-in-an-object-tree.md)  
- [How-to Topics](element-tree-and-serialization-how-to-topics.md)  
+[Trees in WPF](trees-in-wpf.md)  
+[Serialization Limitations of XamlWriter.Save](serialization-limitations-of-xamlwriter-save.md)  
+[Initialization for Object Elements Not in an Object Tree](initialization-for-object-elements-not-in-an-object-tree.md)  
+[How-to Topics](element-tree-and-serialization-how-to-topics.md)  
   
 ## Reference  
 
- <xref:System.Windows.Markup>  
+<xref:System.Windows.Markup>  
   
- <xref:System.Windows.LogicalTreeHelper>  
+<xref:System.Windows.LogicalTreeHelper>  
   
- <xref:System.Windows.Media.VisualTreeHelper>  
+<xref:System.Windows.Media.VisualTreeHelper>  
   
 ## Related Sections  
 
- [WPF Architecture](wpf-architecture.md)  
+[WPF Architecture](wpf-architecture.md)  
   [XAML in WPF](../xaml/index.md)  
   [Base Elements](base-elements.md)  
   [Properties](properties-wpf.md)  

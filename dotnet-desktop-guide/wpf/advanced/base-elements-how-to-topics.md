@@ -15,27 +15,27 @@ The topics in this section describe how to use the four WPF base elements: <xref
   
 ## In This Section  
 
- [Make a UIElement Transparent or Semi-Transparent](how-to-make-a-uielement-transparent-or-semi-transparent.md)  
- [Animate the Size of a FrameworkElement](how-to-animate-the-size-of-a-frameworkelement.md)  
- [Determine Whether a Freezable Is Frozen](how-to-determine-whether-a-freezable-is-frozen.md)  
- [Handle a Loaded Event](how-to-handle-a-loaded-event.md)  
- [Set Margins of Elements and Controls](how-to-set-margins-of-elements-and-controls.md)  
- [Make a Freezable Read-Only](how-to-make-a-freezable-read-only.md)  
- [Obtain a Writable Copy of a Read-Only Freezable](how-to-obtain-a-writable-copy-of-a-read-only-freezable.md)  
- [Flip a UIElement Horizontally or Vertically](how-to-flip-a-uielement-horizontally-or-vertically.md)  
- [Use a ThicknessConverter Object](how-to-use-a-thicknessconverter-object.md)  
- [Handle the ContextMenuOpening Event](how-to-handle-the-contextmenuopening-event.md)  
+[Make a UIElement Transparent or Semi-Transparent](how-to-make-a-uielement-transparent-or-semi-transparent.md)  
+[Animate the Size of a FrameworkElement](how-to-animate-the-size-of-a-frameworkelement.md)  
+[Determine Whether a Freezable Is Frozen](how-to-determine-whether-a-freezable-is-frozen.md)  
+[Handle a Loaded Event](how-to-handle-a-loaded-event.md)  
+[Set Margins of Elements and Controls](how-to-set-margins-of-elements-and-controls.md)  
+[Make a Freezable Read-Only](how-to-make-a-freezable-read-only.md)  
+[Obtain a Writable Copy of a Read-Only Freezable](how-to-obtain-a-writable-copy-of-a-read-only-freezable.md)  
+[Flip a UIElement Horizontally or Vertically](how-to-flip-a-uielement-horizontally-or-vertically.md)  
+[Use a ThicknessConverter Object](how-to-use-a-thicknessconverter-object.md)  
+[Handle the ContextMenuOpening Event](how-to-handle-the-contextmenuopening-event.md)  
   
 ## Reference  
 
- <xref:System.Windows.UIElement>  
+<xref:System.Windows.UIElement>  
   
- <xref:System.Windows.ContentElement>  
+<xref:System.Windows.ContentElement>  
   
- <xref:System.Windows.FrameworkElement>  
+<xref:System.Windows.FrameworkElement>  
   
- <xref:System.Windows.FrameworkContentElement>  
+<xref:System.Windows.FrameworkContentElement>  
   
 ## Related Sections  
 
- [Base Elements](base-elements.md)
+[Base Elements](base-elements.md)

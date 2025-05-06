@@ -19,7 +19,7 @@ A rendering tier defines a level of graphics hardware capability and performance
 
 ## Graphics Hardware  
 
- The features of the graphics hardware that most impact the rendering tier levels are:  
+The features of the graphics hardware that most impact the rendering tier levels are:  
   
 - **Video RAM** The amount of video memory on the graphics hardware determines the size and number of buffers that can be used for compositing graphics.  
   
@@ -33,7 +33,7 @@ A rendering tier defines a level of graphics hardware capability and performance
 
 ## Rendering Tier Definitions  
 
- The features of the graphics hardware determine the rendering capability of a WPF application. The WPF system defines three rendering tiers:  
+The features of the graphics hardware determine the rendering capability of a WPF application. The WPF system defines three rendering tiers:  
   
 - **Rendering Tier 0** No graphics hardware acceleration. All graphics features use software rendering. The DirectX version level is less than version 9.0.  
   
@@ -41,20 +41,20 @@ A rendering tier defines a level of graphics hardware capability and performance
   
 - **Rendering Tier 2** Most graphics features use graphics hardware acceleration. The DirectX version level is greater than or equal to version 9.0.  
   
- The <xref:System.Windows.Media.RenderCapability.Tier%2A?displayProperty=nameWithType> property allows you to retrieve the rendering tier at application run time. You use the rendering tier to determine whether the device supports certain hardware-accelerated graphics features. Your application can then take different code paths at run time depending on the rendering tier supported by the device.  
+The <xref:System.Windows.Media.RenderCapability.Tier%2A?displayProperty=nameWithType> property allows you to retrieve the rendering tier at application run time. You use the rendering tier to determine whether the device supports certain hardware-accelerated graphics features. Your application can then take different code paths at run time depending on the rendering tier supported by the device.  
   
 ### Rendering Tier 0  
 
- A rendering tier value of 0 means that there is no graphics hardware acceleration available for the application on the device. At this tier level, you should assume that all graphics will be rendered by software with no hardware acceleration. This tier's functionality corresponds to a DirectX version that is less than 9.0.  
+A rendering tier value of 0 means that there is no graphics hardware acceleration available for the application on the device. At this tier level, you should assume that all graphics will be rendered by software with no hardware acceleration. This tier's functionality corresponds to a DirectX version that is less than 9.0.  
   
 ### Rendering Tier 1 and Rendering Tier 2
   
 > [!NOTE]
 > Starting in the .NET Framework 4, rendering tier 1 has been redefined to only include graphics hardware that supports DirectX 9.0 or greater. Graphics hardware that supports DirectX 7 or 8 is now defined as rendering tier 0.  
   
- A rendering tier value of 1 or 2 means that most of the graphics features of WPF will use hardware acceleration if the necessary system resources are available and have not been exhausted. This corresponds to a DirectX version that is greater than or equal to 9.0.  
+A rendering tier value of 1 or 2 means that most of the graphics features of WPF will use hardware acceleration if the necessary system resources are available and have not been exhausted. This corresponds to a DirectX version that is greater than or equal to 9.0.  
   
- The following table shows the differences in graphics hardware requirements for rendering tier 1 and rendering tier 2:  
+The following table shows the differences in graphics hardware requirements for rendering tier 1 and rendering tier 2:  
   
 |Feature|Tier 1|Tier 2|  
 |-------------|------------|------------|  
@@ -64,7 +64,7 @@ A rendering tier defines a level of graphics hardware capability and performance
 |Vertex shader|No requirement.|Version level must greater than or equal to 2.0.|  
 |Multitexture units|No requirement.|Number of units must greater than or equal to 4.|  
   
- The following features and capabilities are hardware accelerated for rendering tier 1 and rendering tier 2:  
+The following features and capabilities are hardware accelerated for rendering tier 1 and rendering tier 2:  
   
 |Feature|Notes|  
 |-------------|-----------|  
@@ -76,13 +76,13 @@ A rendering tier defines a level of graphics hardware capability and performance
 |3D lighting calculations|WPF performs per-vertex lighting, which means that a light intensity must be calculated at each vertex for each material applied to a mesh.|  
 |Text rendering|Subpixel font rendering uses available pixel shaders on the graphics hardware.|  
   
- The following features and capabilities are hardware accelerated only for rendering tier 2:  
+The following features and capabilities are hardware accelerated only for rendering tier 2:  
   
 |Feature|Notes|  
 |-------------|-----------|  
 |3D anti-aliasing|3D anti-aliasing is supported only on operating systems that support Windows Display Driver Model (WDDM), such as Windows Vista and Windows 7.|  
   
- The following features and capabilities are **not** hardware accelerated:  
+The following features and capabilities are **not** hardware accelerated:  
   
 |Feature|Notes|  
 |-------------|-----------|  
@@ -97,11 +97,11 @@ A rendering tier defines a level of graphics hardware capability and performance
 
 ## Other Resources  
 
- The following resources can help you analyze the performance characteristics of your WPF application.  
+The following resources can help you analyze the performance characteristics of your WPF application.  
   
 ### Graphics Rendering Registry Settings  
 
- WPF provides four registry settings for controlling WPF rendering:  
+WPF provides four registry settings for controlling WPF rendering:  
   
 |Setting|Description|  
 |-------------|-----------------|  
@@ -110,28 +110,28 @@ A rendering tier defines a level of graphics hardware capability and performance
 |**Required Video Driver Date Setting**|Specifies whether the system disables hardware acceleration for drivers released before November 2004.|  
 |**Use Reference Rasterizer Option**|Specifies whether WPF should use the reference rasterizer.|  
   
- These settings can be accessed by any external configuration utility that knows how to reference the WPF registry settings. These settings can also be created or modified by accessing the values directly by using the Windows Registry Editor. For more information, see [Graphics Rendering Registry Settings](../graphics-multimedia/graphics-rendering-registry-settings.md).  
+These settings can be accessed by any external configuration utility that knows how to reference the WPF registry settings. These settings can also be created or modified by accessing the values directly by using the Windows Registry Editor. For more information, see [Graphics Rendering Registry Settings](../graphics-multimedia/graphics-rendering-registry-settings.md).  
   
 ### WPF Performance Profiling Tools  
 
- WPF provides a suite of performance profiling tools that allow you to analyze the run-time behavior of your application and determine the types of performance optimizations you can apply. The following table lists the performance profiling tools that are included in the Windows SDK tool, WPF Performance Suite:  
+WPF provides a suite of performance profiling tools that allow you to analyze the run-time behavior of your application and determine the types of performance optimizations you can apply. The following table lists the performance profiling tools that are included in the Windows SDK tool, WPF Performance Suite:  
   
 |Tool|Description|  
 |----------|-----------------|  
 |Perforator|Use for analyzing rendering behavior.|  
 |Visual Profiler|Use for profiling the use of WPF services, such as layout and event handling, by elements in the visual tree.|  
   
- The WPF Performance Suite provides a rich, graphical view of performance data. For more information about WPF performance tools, see [WPF Performance Suite](/previous-versions/dotnet/netframework-4.0/aa969767(v=vs.100)).  
+The WPF Performance Suite provides a rich, graphical view of performance data. For more information about WPF performance tools, see [WPF Performance Suite](/previous-versions/dotnet/netframework-4.0/aa969767(v=vs.100)).  
   
 ### DirectX Diagnostic Tool  
 
- The DirectX Diagnostic Tool, Dxdiag.exe, is designed to help you troubleshoot DirectX-related issues. The default installation folder for the DirectX Diagnostic Tool is:  
+The DirectX Diagnostic Tool, Dxdiag.exe, is designed to help you troubleshoot DirectX-related issues. The default installation folder for the DirectX Diagnostic Tool is:  
   
- `~\Windows\System32`  
+`~\Windows\System32`  
   
- When you run the DirectX Diagnostic Tool, the main window contains a set of tabs that allow you to display and diagnose DirectX-related information. For example, the **System** tab provides system information about your computer and specifies the version of DirectX that is installed on your computer.  
+When you run the DirectX Diagnostic Tool, the main window contains a set of tabs that allow you to display and diagnose DirectX-related information. For example, the **System** tab provides system information about your computer and specifies the version of DirectX that is installed on your computer.  
   
- ![Screenshot: DirectX Diagnostic Tool](./media/directxdiagnostictool-01.png "DirectXDiagnosticTool_01")  
+![Screenshot: DirectX Diagnostic Tool](./media/directxdiagnostictool-01.png "DirectXDiagnosticTool_01")  
 DirectX Diagnostic Tool main window  
   
 ## See also

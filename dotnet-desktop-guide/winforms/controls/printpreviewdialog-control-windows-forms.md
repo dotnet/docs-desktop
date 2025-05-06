@@ -16,24 +16,24 @@ The Windows Forms `PrintPreviewDialog` control is a pre-configured dialog box us
   
 ## In This Section  
 
- [PrintPreviewDialog Control Overview](printpreviewdialog-control-overview-windows-forms.md)  
- Introduces the general concepts of the `PrintPreviewDialog` control, which allows you to display a pre-configured dialog box that users can use to see a version of their document as it will look when it prints.  
+[PrintPreviewDialog Control Overview](printpreviewdialog-control-overview-windows-forms.md)  
+Introduces the general concepts of the `PrintPreviewDialog` control, which allows you to display a pre-configured dialog box that users can use to see a version of their document as it will look when it prints.  
   
- [How to: Display Print Preview in Windows Forms Applications](how-to-display-print-preview-in-windows-forms-applications.md)  
- Explains how to view a page that is to be printed by using an instance of the `PrintPreviewDialog` control at run time.  
+[How to: Display Print Preview in Windows Forms Applications](how-to-display-print-preview-in-windows-forms-applications.md)  
+Explains how to view a page that is to be printed by using an instance of the `PrintPreviewDialog` control at run time.  
   
 ## Reference  
 
- <xref:System.Windows.Forms.PrintPreviewDialog>  
- Provides reference information on the class and its members.  
+<xref:System.Windows.Forms.PrintPreviewDialog>  
+Provides reference information on the class and its members.  
   
 ## Related Sections  
 
- [Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)  
- Provides a complete list of Windows Forms controls, with links to information on their use.  
+[Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)  
+Provides a complete list of Windows Forms controls, with links to information on their use.  
   
- [Dialog-Box Controls and Components](dialog-box-controls-and-components-windows-forms.md)  
- Lists the different dialog-box controls for Windows Forms.  
+[Dialog-Box Controls and Components](dialog-box-controls-and-components-windows-forms.md)  
+Lists the different dialog-box controls for Windows Forms.  
   
- [Dialog Boxes in Windows Forms](../dialog-boxes-in-windows-forms.md)  
- Describes how to create a dialog box for a Windows Form.
+[Dialog Boxes in Windows Forms](../dialog-boxes-in-windows-forms.md)  
+Describes how to create a dialog box for a Windows Form.

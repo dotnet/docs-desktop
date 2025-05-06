@@ -20,9 +20,9 @@ description: Learn how to copy pixels for reducing flicker in Windows Forms by u
 
 When you animate a simple graphic, users can sometimes encounter flicker or other undesirable visual effects. One way to limit this problem is to use a "bitblt" process on the graphic. Bitblt is the "bit-block transfer" of the color data from an origin rectangle of pixels to a destination rectangle of pixels.  
   
- With Windows Forms, bitblt is accomplished using the <xref:System.Drawing.Graphics.CopyFromScreen%2A> method of the <xref:System.Drawing.Graphics> class. In the parameters of the method, you specify the source and destination (as points), the size of the area to be copied, and the graphics object used to draw the new shape.  
+With Windows Forms, bitblt is accomplished using the <xref:System.Drawing.Graphics.CopyFromScreen%2A> method of the <xref:System.Drawing.Graphics> class. In the parameters of the method, you specify the source and destination (as points), the size of the area to be copied, and the graphics object used to draw the new shape.  
   
- In the example below, a shape is drawn on the form in its <xref:System.Windows.Forms.Control.Paint> event handler. Then, the <xref:System.Drawing.Graphics.CopyFromScreen%2A> method is used to duplicate the shape.  
+In the example below, a shape is drawn on the form in its <xref:System.Windows.Forms.Control.Paint> event handler. Then, the <xref:System.Drawing.Graphics.CopyFromScreen%2A> method is used to duplicate the shape.  
   
 > [!NOTE]
 > Setting the form's <xref:System.Windows.Forms.Control.DoubleBuffered%2A> property to `true` will make graphics-based code in the <xref:System.Windows.Forms.Control.Paint> event be double-buffered. While this will not have any discernible performance gains when using the code below, it is something to keep in mind when working with more complex graphics-manipulation code.  
@@ -58,7 +58,7 @@ private void Form1_Paint(System.Object sender,
   
 ## Compiling the Code  
 
- The code above is run in the form's <xref:System.Windows.Forms.Control.Paint> event handler so that the graphics persist when the form is redrawn. As such, do not call graphics-related methods in the <xref:System.Windows.Forms.Form.Load> event handler, because the drawn content will not be redrawn if the form is resized or obscured by another form.  
+The code above is run in the form's <xref:System.Windows.Forms.Control.Paint> event handler so that the graphics persist when the form is redrawn. As such, do not call graphics-related methods in the <xref:System.Windows.Forms.Form.Load> event handler, because the drawn content will not be redrawn if the form is resized or obscured by another form.  
   
 ## See also
 

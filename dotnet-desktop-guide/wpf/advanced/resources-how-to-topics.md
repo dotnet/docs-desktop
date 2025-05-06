@@ -16,23 +16,23 @@ The topics in this section describe how to use Windows Presentation Foundation (
   
 ## In This Section  
 
- [Define and Reference a Resource](../systems/xaml-resources-how-to-define-and-reference.md)  
- [Use Application Resources](../systems/xaml-resources-how-to-use-application.md)  
- [Use SystemFonts](../systems/xaml-resources-how-to-use-system.md)  
- [Use System Fonts Keys](../systems/xaml-resources-how-to-use-system.md)  
- [Use SystemParameters](../systems/xaml-resources-how-to-use-system.md)  
- [Use System Parameters Keys](../systems/xaml-resources-how-to-use-system.md)  
+[Define and Reference a Resource](../systems/xaml-resources-how-to-define-and-reference.md)  
+[Use Application Resources](../systems/xaml-resources-how-to-use-application.md)  
+[Use SystemFonts](../systems/xaml-resources-how-to-use-system.md)  
+[Use System Fonts Keys](../systems/xaml-resources-how-to-use-system.md)  
+[Use SystemParameters](../systems/xaml-resources-how-to-use-system.md)  
+[Use System Parameters Keys](../systems/xaml-resources-how-to-use-system.md)  
   
 ## Reference  
 
- <xref:System.Windows.FrameworkTemplate.Resources%2A>  
+<xref:System.Windows.FrameworkTemplate.Resources%2A>  
   
- <xref:System.Windows.SystemColors>  
+<xref:System.Windows.SystemColors>  
   
- <xref:System.Windows.SystemParameters>  
+<xref:System.Windows.SystemParameters>  
   
- <xref:System.Windows.SystemFonts>  
+<xref:System.Windows.SystemFonts>  
   
 ## Related Sections  
 
- [XAML Resources](../systems/xaml-resources-overview.md)
+[XAML Resources](../systems/xaml-resources-overview.md)

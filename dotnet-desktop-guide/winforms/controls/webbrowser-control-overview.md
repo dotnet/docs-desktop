@@ -16,11 +16,11 @@ The <xref:System.Windows.Forms.WebBrowser> control provides a managed wrapper fo
   
 ## Frequently Used Properties, Methods, and Events  
 
- The <xref:System.Windows.Forms.WebBrowser> control has several properties, methods, and events that you can use to implement controls found in Internet Explorer. For example, you can use the `Navigate` method to implement an address bar, and the `GoBack`, `GoForward`, `Stop`, and `Refresh` methods to implement navigation buttons on a toolbar. You can handle the `Navigated` event to update the address bar with the value of the `Url` property and the title bar with the value of the `DocumentTitle` property.  
+The <xref:System.Windows.Forms.WebBrowser> control has several properties, methods, and events that you can use to implement controls found in Internet Explorer. For example, you can use the `Navigate` method to implement an address bar, and the `GoBack`, `GoForward`, `Stop`, and `Refresh` methods to implement navigation buttons on a toolbar. You can handle the `Navigated` event to update the address bar with the value of the `Url` property and the title bar with the value of the `DocumentTitle` property.  
   
- If you want to generate your own page content within your application, you can set the `DocumentText` property. If you are familiar with the HTML document object model (DOM), you can also manipulate the contents of the current Web page through the `Document` property. With this property, you can store and modify documents in memory instead of navigating among files.  
+If you want to generate your own page content within your application, you can set the `DocumentText` property. If you are familiar with the HTML document object model (DOM), you can also manipulate the contents of the current Web page through the `Document` property. With this property, you can store and modify documents in memory instead of navigating among files.  
   
- The `Document` property also lets you call methods implemented in Web page scripting code from your client application code. To access your client application code from your scripting code, set the `ObjectForScripting` property. The object that you specify can be accessed by your script code as the `window.external` object.  
+The `Document` property also lets you call methods implemented in Web page scripting code from your client application code. To access your client application code from your scripting code, set the `ObjectForScripting` property. The object that you specify can be accessed by your script code as the `window.external` object.  
   
 |Name|Description|  
 |----------|-----------------|  

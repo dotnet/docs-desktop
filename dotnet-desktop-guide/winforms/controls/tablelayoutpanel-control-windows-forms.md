@@ -18,23 +18,23 @@ The <xref:System.Windows.Forms.TableLayoutPanel> control arranges its contents i
   
 ## In This Section  
 
- [TableLayoutPanel Control Overview](tablelayoutpanel-control-overview.md)  
- Introduces the general concepts of the <xref:System.Windows.Forms.TableLayoutPanel> control, which allows you to create a layout with rows and columns.  
+[TableLayoutPanel Control Overview](tablelayoutpanel-control-overview.md)  
+Introduces the general concepts of the <xref:System.Windows.Forms.TableLayoutPanel> control, which allows you to create a layout with rows and columns.  
   
- [Best Practices for the TableLayoutPanel Control](best-practices-for-the-tablelayoutpanel-control.md)  
- Outlines recommendations to help you get the most out of the layout features of the <xref:System.Windows.Forms.TableLayoutPanel> control.  
+[Best Practices for the TableLayoutPanel Control](best-practices-for-the-tablelayoutpanel-control.md)  
+Outlines recommendations to help you get the most out of the layout features of the <xref:System.Windows.Forms.TableLayoutPanel> control.  
   
- [AutoSize Behavior in the TableLayoutPanel Control](autosize-behavior-in-the-tablelayoutpanel-control.md)  
- Explains the ways in which the <xref:System.Windows.Forms.TableLayoutPanel> control supports automatic sizing behavior.  
+[AutoSize Behavior in the TableLayoutPanel Control](autosize-behavior-in-the-tablelayoutpanel-control.md)  
+Explains the ways in which the <xref:System.Windows.Forms.TableLayoutPanel> control supports automatic sizing behavior.  
   
- [How to: Anchor and Dock Child Controls in a TableLayoutPanel Control](how-to-anchor-and-dock-child-controls-in-a-tablelayoutpanel-control.md)  
- Shows how to anchor and dock child controls in a <xref:System.Windows.Forms.TableLayoutPanel> control.  
+[How to: Anchor and Dock Child Controls in a TableLayoutPanel Control](how-to-anchor-and-dock-child-controls-in-a-tablelayoutpanel-control.md)  
+Shows how to anchor and dock child controls in a <xref:System.Windows.Forms.TableLayoutPanel> control.  
   
- [How to: Design a Windows Forms Layout that Responds Well to Localization](how-to-design-a-windows-forms-layout-that-responds-well-to-localization.md)  
- Demonstrates using a <xref:System.Windows.Forms.TableLayoutPanel> control to build a form that responds well to localization.  
+[How to: Design a Windows Forms Layout that Responds Well to Localization](how-to-design-a-windows-forms-layout-that-responds-well-to-localization.md)  
+Demonstrates using a <xref:System.Windows.Forms.TableLayoutPanel> control to build a form that responds well to localization.  
   
- [How to: Create a Resizable Windows Form for Data Entry](how-to-create-a-resizable-windows-form-for-data-entry.md)  
- Demonstrates using a <xref:System.Windows.Forms.TableLayoutPanel> control to build a form that responds well to resizing.  
+[How to: Create a Resizable Windows Form for Data Entry](how-to-create-a-resizable-windows-form-for-data-entry.md)  
+Demonstrates using a <xref:System.Windows.Forms.TableLayoutPanel> control to build a form that responds well to resizing.  
   
 1. [How to: Align and Stretch a Control in a TableLayoutPanel Control](how-to-align-and-stretch-a-control-in-a-tablelayoutpanel-control.md)  
   
@@ -46,18 +46,18 @@ The <xref:System.Windows.Forms.TableLayoutPanel> control arranges its contents i
   
 ## Reference  
 
- <xref:System.Windows.Forms.TableLayoutPanel>  
- Provides reference documentation for the <xref:System.Windows.Forms.TableLayoutPanel> control.  
+<xref:System.Windows.Forms.TableLayoutPanel>  
+Provides reference documentation for the <xref:System.Windows.Forms.TableLayoutPanel> control.  
   
- <xref:System.Windows.Forms.TableLayoutSettings>  
- Provides reference documentation for the <xref:System.Windows.Forms.TableLayoutSettings> type.  
+<xref:System.Windows.Forms.TableLayoutSettings>  
+Provides reference documentation for the <xref:System.Windows.Forms.TableLayoutSettings> type.  
   
- <xref:System.Windows.Forms.FlowLayoutPanel>  
- Provides reference documentation for the <xref:System.Windows.Forms.FlowLayoutPanel> control.  
+<xref:System.Windows.Forms.FlowLayoutPanel>  
+Provides reference documentation for the <xref:System.Windows.Forms.FlowLayoutPanel> control.  
   
 ## Related Sections  
 
- [Localization](/dotnet/standard/globalization-localization/localization)  
- Provides an overview of topics relating to localization.  
+[Localization](/dotnet/standard/globalization-localization/localization)  
+Provides an overview of topics relating to localization.  
   
- Also see [Localizing Applications](/previous-versions/visualstudio/visual-studio-2013/z68135h5(v=vs.120)).
+Also see [Localizing Applications](/previous-versions/visualstudio/visual-studio-2013/z68135h5(v=vs.120)).

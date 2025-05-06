@@ -19,10 +19,10 @@ HRESULT Skip( [in] ULONG celt);
   
 ## Parameters  
 
- `celt`  
+`celt`  
   
- [in] Number of elements to be skipped.  
+[in] Number of elements to be skipped.  
   
 ## Property Value/Return Value  
 
- HRESULT: S_OK if the number of elements supplied is `celt`; S_FALSE otherwise.
+HRESULT: S_OK if the number of elements supplied is `celt`; S_FALSE otherwise.

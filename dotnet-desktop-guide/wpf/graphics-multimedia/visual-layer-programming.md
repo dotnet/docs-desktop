@@ -18,10 +18,10 @@ The <xref:System.Windows.Media.Visual> object is a core WPF object, whose primar
   
 ## In This Section  
 
- [Hit Testing in the Visual Layer](hit-testing-in-the-visual-layer.md)  
- [Using DrawingVisual Objects](using-drawingvisual-objects.md)  
- [Tutorial: Hosting Visual Objects in a Win32 Application](tutorial-hosting-visual-objects-in-a-win32-application.md)  
- [How-to Topics](visual-layer-programming-how-to-topics.md)  
+[Hit Testing in the Visual Layer](hit-testing-in-the-visual-layer.md)  
+[Using DrawingVisual Objects](using-drawingvisual-objects.md)  
+[Tutorial: Hosting Visual Objects in a Win32 Application](tutorial-hosting-visual-objects-in-a-win32-application.md)  
+[How-to Topics](visual-layer-programming-how-to-topics.md)  
   
 ## See also
 

@@ -17,7 +17,7 @@ ms.assetid: 6dd101a3-44ad-4143-b228-772156f9b8ff
 
 This API supports the Windows Presentation Foundation (WPF) infrastructure and is not intended to be used directly from your code.  
   
- Used by the Windows Presentation Foundation (WPF) infrastructure for windows management.  
+Used by the Windows Presentation Foundation (WPF) infrastructure for windows management.  
   
 ## Syntax  
   
@@ -29,20 +29,20 @@ HRESULT SaveToHistory(
   
 ## Parameters  
 
- pHistoryStream  
- A pointer to the history stream.  
+pHistoryStream  
+A pointer to the history stream.  
   
 ## Requirements  
 
- **Platforms:** See [.NET Framework System Requirements](/dotnet/framework/get-started/system-requirements).  
+**Platforms:** See [.NET Framework System Requirements](/dotnet/framework/get-started/system-requirements).  
   
- **DLL:**  
+**DLL:**  
   
- In the .NET Framework 3.0 and 3.5: PresentationHostDLL.dll  
+In the .NET Framework 3.0 and 3.5: PresentationHostDLL.dll  
   
- In the .NET Framework 4 and later: PresentationHost_v0400.dll  
+In the .NET Framework 4 and later: PresentationHost_v0400.dll  
   
- **.NET Framework Version:** Available since 3.0  
+**.NET Framework Version:** Available since 3.0  
   
 ## See also
 

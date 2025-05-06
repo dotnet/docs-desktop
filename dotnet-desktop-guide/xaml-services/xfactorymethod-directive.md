@@ -40,19 +40,19 @@ Specifies a method other than a constructor that a XAML processor should use to 
   
 ## Remarks  
 
- If `methodname` is an instance method, it cannot be qualified.  
+If `methodname` is an instance method, it cannot be qualified.  
   
- Static methods as factory methods are supported. If `methodname` is a static method, `methodname` is provided as a `typeName.methodName` combination, where `typeName` names the class that defines the static factory method. `typeName` can be prefix-qualified if referring to a type in a mapped xmlns. `typeName` can be a different type than `typeof(object)`.  
+Static methods as factory methods are supported. If `methodname` is a static method, `methodname` is provided as a `typeName.methodName` combination, where `typeName` names the class that defines the static factory method. `typeName` can be prefix-qualified if referring to a type in a mapped xmlns. `typeName` can be a different type than `typeof(object)`.  
   
- The factory method must be a declared public method of the type that backs the relevant object element.  
+The factory method must be a declared public method of the type that backs the relevant object element.  
   
- The factory method must return an instance that is assignable to the relevant object. Factory methods should never return null.  
+The factory method must return an instance that is assignable to the relevant object. Factory methods should never return null.  
   
- `x:Arguments` operates on a principle of best match for signatures of factory methods. Matching evaluates the parameter count first. If there is more than one possible match for a parameter count, parameter type is then evaluated and best match is determined. If there is still ambiguity after this phase of evaluation, XAML processor behavior is undefined.  
+`x:Arguments` operates on a principle of best match for signatures of factory methods. Matching evaluates the parameter count first. If there is more than one possible match for a parameter count, parameter type is then evaluated and best match is determined. If there is still ambiguity after this phase of evaluation, XAML processor behavior is undefined.  
   
- The `x:FactoryMethod` element usage is not property element usage in the typical sense, because the directive markup does not reference the containing object element's type. It is expected that element usage is less common than attribute usage. `x:Arguments` (either attribute or element usage) can be used along with `x:FactoryMethod` element usage, but this is not specifically shown in the Usage sections.  
+The `x:FactoryMethod` element usage is not property element usage in the typical sense, because the directive markup does not reference the containing object element's type. It is expected that element usage is less common than attribute usage. `x:Arguments` (either attribute or element usage) can be used along with `x:FactoryMethod` element usage, but this is not specifically shown in the Usage sections.  
   
- `x:FactoryMethod` as an element must precede any other property elements, must precede any `x:Arguments` also provided as elements, and must precede any content/inner text/initialization text.  
+`x:FactoryMethod` as an element must precede any other property elements, must precede any `x:Arguments` also provided as elements, and must precede any content/inner text/initialization text.  
   
 ## See also
 

@@ -23,17 +23,17 @@ The build and deployment model provides the capability to build and deploy appli
   
 ## In This Section  
 
- [Building a WPF Application](building-a-wpf-application-wpf.md)  
- [Deploying a WPF Application](deploying-a-wpf-application-wpf.md)  
- [How-to Topics](build-and-deploy-how-to-topics.md)  
+[Building a WPF Application](building-a-wpf-application-wpf.md)  
+[Deploying a WPF Application](deploying-a-wpf-application-wpf.md)  
+[How-to Topics](build-and-deploy-how-to-topics.md)  
   
 ## Reference  
 
- MSBuild  
+MSBuild  
   
 ## Related Sections  
 
- [Application Management Overview](application-management-overview.md)  
+[Application Management Overview](application-management-overview.md)  
   [Windows in WPF](windows-in-wpf-applications.md)  
   [Navigation Overview](navigation-overview.md)  
   [WPF XAML Browser Applications Overview](wpf-xaml-browser-applications-overview.md)  

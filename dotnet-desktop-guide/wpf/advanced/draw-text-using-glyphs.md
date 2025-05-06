@@ -15,13 +15,13 @@ This topic explains how to use the low-level <xref:System.Windows.Documents.Glyp
   
 ## Example  
 
- The following examples show how to define properties for a <xref:System.Windows.Documents.Glyphs> object in XAML. The <xref:System.Windows.Documents.Glyphs> object represents the output of a <xref:System.Windows.Media.GlyphRun> in XAML. The examples assume that the Arial, Courier New, and Times New Roman fonts are installed in the C:\WINDOWS\Fonts folder on the local computer.  
+The following examples show how to define properties for a <xref:System.Windows.Documents.Glyphs> object in XAML. The <xref:System.Windows.Documents.Glyphs> object represents the output of a <xref:System.Windows.Media.GlyphRun> in XAML. The examples assume that the Arial, Courier New, and Times New Roman fonts are installed in the C:\WINDOWS\Fonts folder on the local computer.  
   
- [!code-xaml[GlyphsOvwSample1#1](~/samples/snippets/csharp/VS_Snippets_Wpf/GlyphsOvwSample1/CS/default.xaml#1)]  
+[!code-xaml[GlyphsOvwSample1#1](~/samples/snippets/csharp/VS_Snippets_Wpf/GlyphsOvwSample1/CS/default.xaml#1)]  
   
- This example shows how to define other properties of <xref:System.Windows.Documents.Glyphs> objects in XAML.  
+This example shows how to define other properties of <xref:System.Windows.Documents.Glyphs> objects in XAML.  
   
- [!code-xaml[GlyphsOvwSamp2#1](~/samples/snippets/csharp/VS_Snippets_Wpf/GlyphsOvwSamp2/CS/default.xaml#1)]  
+[!code-xaml[GlyphsOvwSamp2#1](~/samples/snippets/csharp/VS_Snippets_Wpf/GlyphsOvwSamp2/CS/default.xaml#1)]  
   
 ## See also
 

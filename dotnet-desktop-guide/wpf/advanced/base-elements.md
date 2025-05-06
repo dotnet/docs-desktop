@@ -15,24 +15,24 @@ Four key classes--<xref:System.Windows.UIElement>, <xref:System.Windows.ContentE
   
 ## In This Section  
 
- [Base Elements Overview](base-elements-overview.md)  
- [Freezable Objects Overview](freezable-objects-overview.md)  
- [Alignment, Margins, and Padding Overview](alignment-margins-and-padding-overview.md)  
- [How-to Topics](base-elements-how-to-topics.md)  
+[Base Elements Overview](base-elements-overview.md)  
+[Freezable Objects Overview](freezable-objects-overview.md)  
+[Alignment, Margins, and Padding Overview](alignment-margins-and-padding-overview.md)  
+[How-to Topics](base-elements-how-to-topics.md)  
   
 ## Reference  
 
- <xref:System.Windows.UIElement>  
+<xref:System.Windows.UIElement>  
   
- <xref:System.Windows.ContentElement>  
+<xref:System.Windows.ContentElement>  
   
- <xref:System.Windows.FrameworkElement>  
+<xref:System.Windows.FrameworkElement>  
   
- <xref:System.Windows.FrameworkContentElement>  
+<xref:System.Windows.FrameworkContentElement>  
   
 ## Related Sections  
 
- [WPF Architecture](wpf-architecture.md)  
+[WPF Architecture](wpf-architecture.md)  
   [XAML in WPF](../xaml/index.md)  
   [Element Tree and Serialization](element-tree-and-serialization.md)  
   [Properties](properties-wpf.md)  

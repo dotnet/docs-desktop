@@ -15,8 +15,8 @@ The following example demonstrates how to define a <xref:System.Windows.Document
   
 ## Example  
 
- [!code-xaml[TableSnippetsXAML#_TableXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/TableSnippetsXAML/CS/Window1.xaml#_tablexaml)]  
+[!code-xaml[TableSnippetsXAML#_TableXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/TableSnippetsXAML/CS/Window1.xaml#_tablexaml)]  
   
- The following figure shows how the table defined in this example renders:  
+The following figure shows how the table defined in this example renders:  
   
- ![Screenshot of a table defined with XAML.](./media/how-to-define-a-table-with-xaml/planetary-information-xaml-table.png)
+![Screenshot of a table defined with XAML.](./media/how-to-define-a-table-with-xaml/planetary-information-xaml-table.png)

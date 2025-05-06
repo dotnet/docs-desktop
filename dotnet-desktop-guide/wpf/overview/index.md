@@ -279,7 +279,7 @@ To simplify application development, WPF provides a powerful data binding engine
 WPF supports declaring bindings in the XAML markup directly. For example, the following XAML code binds the <xref:System.Windows.Controls.TextBox.Text%2A> property of the <xref:System.Windows.Controls.TextBox> to the `Name` property of an object using the "`{Binding ... }`" XAML syntax. This assumes there's a data object set to the <xref:System.Windows.FrameworkElement.DataContext%2A> property of the `Window` with a `Name` property.
 
 ```xaml
- <Window
+<Window
      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
      x:Class="SDKSample.DataBindingWindow">
@@ -287,7 +287,7 @@ WPF supports declaring bindings in the XAML markup directly. For example, the fo
    <!-- Bind the TextBox to the data source (TextBox.Text to Person.Name) -->
    <TextBox Name="personNameTextBox" Text="{Binding Path=Name}" />
 
- </Window>
+</Window>
 ```
 
 The WPF data binding engine provides more than just binding, it provides validation, sorting, filtering, and grouping. Furthermore, data binding supports the use of data templates to create custom user interface for bound data.

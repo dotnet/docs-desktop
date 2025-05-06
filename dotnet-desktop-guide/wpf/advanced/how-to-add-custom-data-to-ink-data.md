@@ -12,7 +12,7 @@ description: Learn how to add custom data to ink that will be saved when the ink
 
 You can add custom data to ink that will be saved when the ink is saved as ink serialized format (ISF).  You can save the custom data to the <xref:System.Windows.Ink.DrawingAttributes>, the <xref:System.Windows.Ink.StrokeCollection>, or the <xref:System.Windows.Ink.Stroke>.  Being able to save custom data on three objects gives you the ability to decide the best place to save the data.  All three classes use similar methods to store and access custom data.  
   
- Only the following types can be saved as custom data:  
+Only the following types can be saved as custom data:  
   
 - <xref:System.Boolean>  
   
@@ -70,12 +70,12 @@ You can add custom data to ink that will be saved when the ink is saved as ink s
   
 ## Example  
 
- The following example demonstrates how to add and retrieve custom data from a <xref:System.Windows.Ink.StrokeCollection>.  
+The following example demonstrates how to add and retrieve custom data from a <xref:System.Windows.Ink.StrokeCollection>.  
   
- [!code-csharp[HowToAddCustomDataToInk#1](~/samples/snippets/csharp/VS_Snippets_Wpf/HowToAddCustomDataToInk/CSharp/Window1.xaml.cs#1)]  
+[!code-csharp[HowToAddCustomDataToInk#1](~/samples/snippets/csharp/VS_Snippets_Wpf/HowToAddCustomDataToInk/CSharp/Window1.xaml.cs#1)]  
   
- The following example creates an application that displays an <xref:System.Windows.Controls.InkCanvas> and two buttons.  The button, `switchAuthor`, enables two pens to be used by two different authors.  The button `changePenColors` changes the color of each stroke on the <xref:System.Windows.Controls.InkCanvas> according to the author.  The application defines two <xref:System.Windows.Ink.DrawingAttributes> objects and adds a custom property to each one that indicates which author drew the <xref:System.Windows.Ink.Stroke>.  When the user clicks `changePenColors`, the application changes the appearance of the stroke according to the value of the custom property.  
+The following example creates an application that displays an <xref:System.Windows.Controls.InkCanvas> and two buttons.  The button, `switchAuthor`, enables two pens to be used by two different authors.  The button `changePenColors` changes the color of each stroke on the <xref:System.Windows.Controls.InkCanvas> according to the author.  The application defines two <xref:System.Windows.Ink.DrawingAttributes> objects and adds a custom property to each one that indicates which author drew the <xref:System.Windows.Ink.Stroke>.  When the user clicks `changePenColors`, the application changes the appearance of the stroke according to the value of the custom property.  
   
- [!code-xaml[HowToAddCustomDataToInk#2](~/samples/snippets/csharp/VS_Snippets_Wpf/HowToAddCustomDataToInk/CSharp/Window1.xaml#2)]  
+[!code-xaml[HowToAddCustomDataToInk#2](~/samples/snippets/csharp/VS_Snippets_Wpf/HowToAddCustomDataToInk/CSharp/Window1.xaml#2)]  
   
- [!code-csharp[HowToAddCustomDataToInk#3](~/samples/snippets/csharp/VS_Snippets_Wpf/HowToAddCustomDataToInk/CSharp/Window1.xaml.cs#3)]
+[!code-csharp[HowToAddCustomDataToInk#3](~/samples/snippets/csharp/VS_Snippets_Wpf/HowToAddCustomDataToInk/CSharp/Window1.xaml.cs#3)]

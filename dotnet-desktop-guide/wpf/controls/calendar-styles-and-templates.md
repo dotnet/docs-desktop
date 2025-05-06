@@ -18,7 +18,7 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
   
 ## Calendar Parts  
 
- The following table lists the named parts for the <xref:System.Windows.Controls.Calendar> control.  
+The following table lists the named parts for the <xref:System.Windows.Controls.Calendar> control.  
   
 |Part|Type|Description|  
 |-|-|-|  
@@ -27,7 +27,7 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
   
 ## Calendar States  
 
- The following table lists the visual states for the <xref:System.Windows.Controls.Calendar> control.  
+The following table lists the visual states for the <xref:System.Windows.Controls.Calendar> control.  
   
 |VisualState Name|VisualStateGroup Name|Description|  
 |----------------------|---------------------------|-----------------|  
@@ -37,7 +37,7 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
   
 ## CalendarItem Parts  
 
- The following table lists the named parts for the <xref:System.Windows.Controls.Primitives.CalendarItem> control.  
+The following table lists the named parts for the <xref:System.Windows.Controls.Primitives.CalendarItem> control.  
   
 |Part|Type|Description|  
 |-|-|-|  
@@ -52,7 +52,7 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
   
 ## CalendarItem States  
 
- The following table lists the visual states for the <xref:System.Windows.Controls.Primitives.CalendarItem> control.  
+The following table lists the visual states for the <xref:System.Windows.Controls.Primitives.CalendarItem> control.  
   
 |VisualState Name|VisualStateGroup Name|Description|  
 |-|-|-|  
@@ -67,11 +67,11 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
   
 ## CalendarDayButton Parts  
 
- The <xref:System.Windows.Controls.Primitives.CalendarDayButton> control does not have any named parts.  
+The <xref:System.Windows.Controls.Primitives.CalendarDayButton> control does not have any named parts.  
   
 ## CalendarDayButton States  
 
- The following table lists the visual states for the <xref:System.Windows.Controls.Primitives.CalendarDayButton> control.  
+The following table lists the visual states for the <xref:System.Windows.Controls.Primitives.CalendarDayButton> control.  
   
 |VisualState Name|VisualStateGroup Name|Description|  
 |-|-|-|  
@@ -97,11 +97,11 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
   
 ## CalendarButton Parts  
 
- The <xref:System.Windows.Controls.Primitives.CalendarButton> control does not have any named parts.  
+The <xref:System.Windows.Controls.Primitives.CalendarButton> control does not have any named parts.  
   
 ## CalendarButton States  
 
- The following table lists the visual states for the <xref:System.Windows.Controls.Primitives.CalendarButton> control.  
+The following table lists the visual states for the <xref:System.Windows.Controls.Primitives.CalendarButton> control.  
   
 |VisualState Name|VisualStateGroup Name|Description|  
 |-|-|-|  
@@ -123,15 +123,15 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
   
 ## Calendar ControlTemplate Example  
 
- The following example shows how to define a <xref:System.Windows.Controls.ControlTemplate> for the <xref:System.Windows.Controls.Calendar> control and associated types.  
+The following example shows how to define a <xref:System.Windows.Controls.ControlTemplate> for the <xref:System.Windows.Controls.Calendar> control and associated types.  
   
- [!code-xaml[ControlTemplateExamples#Calendar](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/calendar.xaml#calendar)]  
+[!code-xaml[ControlTemplateExamples#Calendar](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/calendar.xaml#calendar)]  
   
- The preceding example uses one or more of the following resources.  
+The preceding example uses one or more of the following resources.  
   
- [!code-xaml[ControlTemplateExamples#Resources](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/shared.xaml#resources)]  
+[!code-xaml[ControlTemplateExamples#Resources](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/shared.xaml#resources)]  
   
- For the complete sample, see [Styling with ControlTemplates Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Styles%20&%20Templates/IntroToStylingAndTemplating).  
+For the complete sample, see [Styling with ControlTemplates Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Styles%20&%20Templates/IntroToStylingAndTemplating).  
   
 ## See also
 

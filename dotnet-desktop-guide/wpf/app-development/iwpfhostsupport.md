@@ -15,9 +15,9 @@ Applications that host Windows Presentation Foundation (WPF) content via Present
 
 ## Remarks  
 
- Win32 applications such as Web browsers can host WPF content, including XAML browser applications (XBAPs) and loose XAML. To host WPF content, Win32 applications create an instance of the [WebBrowser control](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752040(v=vs.85)). To be hosted, WPF creates an instance of PresentationHost.exe, which provides the hosted WPF content to the host for display in the [WebBrowser control](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752040(v=vs.85)).  
+Win32 applications such as Web browsers can host WPF content, including XAML browser applications (XBAPs) and loose XAML. To host WPF content, Win32 applications create an instance of the [WebBrowser control](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752040(v=vs.85)). To be hosted, WPF creates an instance of PresentationHost.exe, which provides the hosted WPF content to the host for display in the [WebBrowser control](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752040(v=vs.85)).  
   
- The integration enabled by `IWpfHostSupport` allows PresentationHost.exe to:  
+The integration enabled by `IWpfHostSupport` allows PresentationHost.exe to:  
   
 - Discover and register with the raw input devices (Human Interface Devices) that the host application is interested in.  
   

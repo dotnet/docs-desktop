@@ -4,12 +4,12 @@ description: Learn how to bind a Windows Presentation Foundation DataGrid contro
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
 dev_langs:
- - "csharp"
- - "vb"
+- "csharp"
+- "vb"
 helpviewer_keywords:
- - "DataGrid [WPF], sort"
- - "DataGrid [WPF], group"
- - "DataGrid [WPF], filter"
+- "DataGrid [WPF], sort"
+- "DataGrid [WPF], group"
+- "DataGrid [WPF], filter"
 ms.assetid: 03345e85-89e3-4aec-9ed0-3b80759df770
 ---
 # How to: Group, sort, and filter data in the DataGrid control

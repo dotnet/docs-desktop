@@ -16,28 +16,28 @@ The <xref:System.Windows.Forms.BindingSource> component is designed to simplify 
   
 ## BindingSource Component as an Intermediary  
 
- The <xref:System.Windows.Forms.BindingSource> component acts as the data source for some or all of the controls on the form. In Visual Studio, the <xref:System.Windows.Forms.BindingSource> can be bound to a control by means of the `DataBindings` property, which is accessible from the **Properties** window. Also see [How to: Bind Windows Forms Controls with the BindingSource Component Using the Designer](bind-wf-controls-with-the-bindingsource.md).  
+The <xref:System.Windows.Forms.BindingSource> component acts as the data source for some or all of the controls on the form. In Visual Studio, the <xref:System.Windows.Forms.BindingSource> can be bound to a control by means of the `DataBindings` property, which is accessible from the **Properties** window. Also see [How to: Bind Windows Forms Controls with the BindingSource Component Using the Designer](bind-wf-controls-with-the-bindingsource.md).  
   
- You can bind the <xref:System.Windows.Forms.BindingSource> component to both simple data sources, like a single property of an object or a basic collection like <xref:System.Collections.ArrayList>, and complex data sources, like a database table. The <xref:System.Windows.Forms.BindingSource> component acts as an intermediary that provides binding and currency management services. At design time or run time, you can bind a <xref:System.Windows.Forms.BindingSource> component to a complex data source by setting its <xref:System.Windows.Forms.BindingSource.DataSource%2A> and <xref:System.Windows.Forms.BindingSource.DataMember%2A> properties to the database and table, respectively. The following illustration demonstrates where the <xref:System.Windows.Forms.BindingSource> component fits into the existing data-binding architecture.  
+You can bind the <xref:System.Windows.Forms.BindingSource> component to both simple data sources, like a single property of an object or a basic collection like <xref:System.Collections.ArrayList>, and complex data sources, like a database table. The <xref:System.Windows.Forms.BindingSource> component acts as an intermediary that provides binding and currency management services. At design time or run time, you can bind a <xref:System.Windows.Forms.BindingSource> component to a complex data source by setting its <xref:System.Windows.Forms.BindingSource.DataSource%2A> and <xref:System.Windows.Forms.BindingSource.DataMember%2A> properties to the database and table, respectively. The following illustration demonstrates where the <xref:System.Windows.Forms.BindingSource> component fits into the existing data-binding architecture.  
   
- ![Binding Source and Data Binding Architecture](./media/net-bindsrcdatabindarch.gif "NET_BindSrcDataBindArch")  
+![Binding Source and Data Binding Architecture](./media/net-bindsrcdatabindarch.gif "NET_BindSrcDataBindArch")  
   
 > [!NOTE]
 > At design time, some actions, like dragging a database table from a data window onto a blank form, will create the <xref:System.Windows.Forms.BindingSource> component, bind it to the underlying data source, and add data-aware controls all in one operation. Also see [Bind Windows Forms controls to data in Visual Studio](/visualstudio/data-tools/bind-windows-forms-controls-to-data-in-visual-studio).  
   
 ## BindingSource Component as a Data Source  
 
- If you start adding items to the <xref:System.Windows.Forms.BindingSource> component without first specifying a list to be bound to, the component will act like a list-style data source and accept these added items.  
+If you start adding items to the <xref:System.Windows.Forms.BindingSource> component without first specifying a list to be bound to, the component will act like a list-style data source and accept these added items.  
   
- Additionally, you can write code to provide custom "AddNew" functionality by means of the <xref:System.Windows.Forms.BindingSource.AddingNew> event, which is raised when the <xref:System.Windows.Forms.BindingSource.AddNew%2A> method is called prior to the item being added to the list. For more information, see [BindingSource Component Architecture](bindingsource-component-architecture.md).  
+Additionally, you can write code to provide custom "AddNew" functionality by means of the <xref:System.Windows.Forms.BindingSource.AddingNew> event, which is raised when the <xref:System.Windows.Forms.BindingSource.AddNew%2A> method is called prior to the item being added to the list. For more information, see [BindingSource Component Architecture](bindingsource-component-architecture.md).  
   
 ## Navigation  
 
- For users that need to navigate the data on a form, the <xref:System.Windows.Forms.BindingNavigator> component enables you to navigate and manipulate data, in coordination with a <xref:System.Windows.Forms.BindingSource> component. For more information, see [BindingNavigator Control](bindingnavigator-control-windows-forms.md).  
+For users that need to navigate the data on a form, the <xref:System.Windows.Forms.BindingNavigator> component enables you to navigate and manipulate data, in coordination with a <xref:System.Windows.Forms.BindingSource> component. For more information, see [BindingNavigator Control](bindingnavigator-control-windows-forms.md).  
   
 ## Data Manipulation  
 
- The: <xref:System.Windows.Forms.BindingSource> acts as a <xref:System.Windows.Forms.CurrencyManager> for all of its bindings and can, therefore, provide access to currency and position information regarding the data source. The following table shows the members that the <xref:System.Windows.Forms.BindingSource> component provides for accessing and manipulating the underlying data.  
+The: <xref:System.Windows.Forms.BindingSource> acts as a <xref:System.Windows.Forms.CurrencyManager> for all of its bindings and can, therefore, provide access to currency and position information regarding the data source. The following table shows the members that the <xref:System.Windows.Forms.BindingSource> component provides for accessing and manipulating the underlying data.  
   
 |Member|Description|  
 |------------|-----------------|  
@@ -52,7 +52,7 @@ The <xref:System.Windows.Forms.BindingSource> component is designed to simplify 
   
 ## Sorting and Filtering  
 
- Usually, you should work with an ordered or filtered view of the data source. The following table shows the members that the <xref:System.Windows.Forms.BindingSource> component data source provides.  
+Usually, you should work with an ordered or filtered view of the data source. The following table shows the members that the <xref:System.Windows.Forms.BindingSource> component data source provides.  
   
 |Member|Description|  
 |------------|-----------------|  

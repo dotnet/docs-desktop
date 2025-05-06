@@ -12,7 +12,7 @@ ms.assetid: 96c206d0-9e77-4784-9d2d-5045aed2021c
 
 This example describes how to use the automatic layout approach to create a button in a localizable application.  
   
- Localization of a user interface (UI) can be a time consuming process. Often localizers need to resize and reposition elements in addition to translating text. In the past each language that a UI was adapted for required adjustment. Now with the capabilities of Windows Presentation Foundation (WPF) you can design elements that reduce the need for adjustment. The approach to writing applications that can be more easily resized and repositioned is called `automatic layout`.  
+Localization of a user interface (UI) can be a time consuming process. Often localizers need to resize and reposition elements in addition to translating text. In the past each language that a UI was adapted for required adjustment. Now with the capabilities of Windows Presentation Foundation (WPF) you can design elements that reduce the need for adjustment. The approach to writing applications that can be more easily resized and repositioned is called `automatic layout`.  
   
 ## Example  
 
@@ -22,9 +22,9 @@ The following two Extensible Application Markup Language (XAML) examples create 
   
 [!code-xaml[LocalizationBtn#1](~/samples/snippets/csharp/VS_Snippets_Wpf/LocalizationBtn/CS/Pane1.xaml#1)]  
   
- The following graphic shows the output of the code samples with auto-resizable buttons:
+The following graphic shows the output of the code samples with auto-resizable buttons:
   
- ![The same button with text in different languages](./media/use-automatic-layout-overview/auto-resizable-button.png)  
+![The same button with text in different languages](./media/use-automatic-layout-overview/auto-resizable-button.png)  
   
 ## See also
 

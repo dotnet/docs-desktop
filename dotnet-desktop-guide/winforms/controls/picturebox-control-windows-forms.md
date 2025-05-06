@@ -15,24 +15,24 @@ The Windows Forms `PictureBox` control is used to display graphics in bitmap, GI
   
 ## In This Section  
 
- [PictureBox Control Overview](picturebox-control-overview-windows-forms.md)  
- Explains what this control is and its key features and properties.  
+[PictureBox Control Overview](picturebox-control-overview-windows-forms.md)  
+Explains what this control is and its key features and properties.  
   
- [How to: Modify the Size or Placement of a Picture at Run Time](how-to-modify-the-size-or-placement-of-a-picture-at-run-time-windows-forms.md)  
- Explains what the <xref:System.Windows.Forms.PictureBox.SizeMode%2A> property does and how to set it.  
+[How to: Modify the Size or Placement of a Picture at Run Time](how-to-modify-the-size-or-placement-of-a-picture-at-run-time-windows-forms.md)  
+Explains what the <xref:System.Windows.Forms.PictureBox.SizeMode%2A> property does and how to set it.  
   
- [How to: Set Pictures at Run Time](how-to-set-pictures-at-run-time-windows-forms.md)  
- Describes how to display and clear a picture at run time.  
+[How to: Set Pictures at Run Time](how-to-set-pictures-at-run-time-windows-forms.md)  
+Describes how to display and clear a picture at run time.  
   
- [How to: Load a Picture Using the Designer](how-to-load-a-picture-using-the-designer-windows-forms.md)  
- Describes how to load and display a picture on a form at design time.  
+[How to: Load a Picture Using the Designer](how-to-load-a-picture-using-the-designer-windows-forms.md)  
+Describes how to load and display a picture on a form at design time.  
   
 ## Reference  
 
- <xref:System.Windows.Forms.PictureBox>  
- Describes this class and has links to all its members.  
+<xref:System.Windows.Forms.PictureBox>  
+Describes this class and has links to all its members.  
   
 ## Related Sections  
 
- [Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)  
- Provides a complete list of Windows Forms controls, with links to information on their use.
+[Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)  
+Provides a complete list of Windows Forms controls, with links to information on their use.

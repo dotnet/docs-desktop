@@ -12,7 +12,7 @@ ms.assetid: c29bde96-0389-4aff-a9fb-cd678f66b7f7
 
 Walkthroughs give step-by-step instructions for common scenarios. This makes them a good place to start learning about the product or a particular feature area.
 
- This topic contains links to Windows Presentation Foundation (WPF) walkthroughs.
+This topic contains links to Windows Presentation Foundation (WPF) walkthroughs.
 
 ## WPF Designer Walkthroughs
 

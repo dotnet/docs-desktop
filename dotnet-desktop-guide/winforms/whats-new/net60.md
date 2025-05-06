@@ -125,7 +125,7 @@ The default font can now be set in two ways:
   </Project>
   ```
   
- \- or -
+\- or -
 
 - Call the the <xref:System.Windows.Forms.Application.SetDefaultFont%2A?displayProperty=nameWithType> API in the old way (but with no designer support):
 

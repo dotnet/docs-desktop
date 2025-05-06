@@ -16,7 +16,7 @@ ms.assetid: 110d5abd-3ae3-4ded-95bf-778aaac798a0
 
 The <xref:System.Windows.Forms.TabControl.Alignment%2A> property of <xref:System.Windows.Forms.TabControl> supports displaying tabs vertically (along the left or right edge of the control), as opposed to horizontally (across the top or bottom of the control). By default, this vertical display results in a poor user experience, because the <xref:System.Windows.Forms.TabPage.Text%2A> property of the <xref:System.Windows.Forms.TabPage> object does not display in the tab when visual styles are enabled. There is also no direct way to control the direction of the text within the tab. You can use owner draw on <xref:System.Windows.Forms.TabControl> to improve this experience.  
   
- The following procedure shows how to render right-aligned tabs, with the tab text running from left to right, by using the "owner draw" feature.  
+The following procedure shows how to render right-aligned tabs, with the tab text running from left to right, by using the "owner draw" feature.  
   
 ### To display right-aligned tabs  
   

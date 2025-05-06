@@ -17,27 +17,27 @@ Windows Presentation Foundation (WPF) introduces routed events that can invoke h
   
 ## In This Section  
 
- [Routed Events Overview](../events/routed-events-overview.md)  
- [Attached Events Overview](../events/attached-events-overview.md)  
- [Object Lifetime Events](../events/object-lifetime-events.md)  
- [Marking Routed Events as Handled, and Class Handling](../events/marking-routed-events-as-handled-and-class-handling.md)  
- [Preview Events](../events/preview-events.md)  
- [Property Change Events](../events/property-change-events.md)  
- [Visual Basic and WPF Event Handling](../events/visual-basic-and-wpf-event-handling.md)  
- [Weak Event Patterns](../events/weak-event-patterns.md)  
- [How-to Topics](events-how-to-topics.md)  
+[Routed Events Overview](../events/routed-events-overview.md)  
+[Attached Events Overview](../events/attached-events-overview.md)  
+[Object Lifetime Events](../events/object-lifetime-events.md)  
+[Marking Routed Events as Handled, and Class Handling](../events/marking-routed-events-as-handled-and-class-handling.md)  
+[Preview Events](../events/preview-events.md)  
+[Property Change Events](../events/property-change-events.md)  
+[Visual Basic and WPF Event Handling](../events/visual-basic-and-wpf-event-handling.md)  
+[Weak Event Patterns](../events/weak-event-patterns.md)  
+[How-to Topics](events-how-to-topics.md)  
   
 ## Reference  
 
- <xref:System.Windows.RoutedEvent>  
+<xref:System.Windows.RoutedEvent>  
   
- <xref:System.Windows.EventManager>  
+<xref:System.Windows.EventManager>  
   
- <xref:System.Windows.RoutingStrategy>  
+<xref:System.Windows.RoutingStrategy>  
   
 ## Related Sections  
 
- [WPF Architecture](wpf-architecture.md)  
+[WPF Architecture](wpf-architecture.md)  
   [XAML in WPF](../xaml/index.md)  
   [Base Elements](base-elements.md)  
   [Element Tree and Serialization](element-tree-and-serialization.md)  

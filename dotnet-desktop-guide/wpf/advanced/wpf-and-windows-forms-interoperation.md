@@ -23,7 +23,7 @@ WPF and Windows Forms present two different architectures for creating applicati
 
 ## Hosting Windows Forms Controls in WPF  
 
- The following interoperation scenarios are supported when a WPF control hosts a Windows Forms control:  
+The following interoperation scenarios are supported when a WPF control hosts a Windows Forms control:  
   
 - The WPF control may host one or more Windows Forms controls using XAML.  
   
@@ -45,7 +45,7 @@ WPF and Windows Forms present two different architectures for creating applicati
   
 ### Layout Support  
 
- The following list describes the known limitations when the  <xref:System.Windows.Forms.Integration.WindowsFormsHost> element attempts to integrate its hosted Windows Forms control into the WPF layout system.  
+The following list describes the known limitations when the  <xref:System.Windows.Forms.Integration.WindowsFormsHost> element attempts to integrate its hosted Windows Forms control into the WPF layout system.  
   
 - In some cases, Windows Forms controls cannot be resized, or can be sized only to specific dimensions. For example, a Windows Forms <xref:System.Windows.Forms.ComboBox> control supports only a single height, which is defined by the control's font size. In a WPF dynamic layout, which assumes that elements can stretch vertically, a hosted <xref:System.Windows.Forms.ComboBox> control will not stretch as expected.  
   
@@ -59,13 +59,13 @@ WPF and Windows Forms present two different architectures for creating applicati
   
 ### Ambient Properties  
 
- Some of the ambient properties of WPF controls have Windows Forms equivalents. These ambient properties are propagated to the hosted Windows Forms controls and exposed as public properties on the <xref:System.Windows.Forms.Integration.WindowsFormsHost> control. The <xref:System.Windows.Forms.Integration.WindowsFormsHost> control translates each WPF ambient property into its Windows Forms equivalent.  
+Some of the ambient properties of WPF controls have Windows Forms equivalents. These ambient properties are propagated to the hosted Windows Forms controls and exposed as public properties on the <xref:System.Windows.Forms.Integration.WindowsFormsHost> control. The <xref:System.Windows.Forms.Integration.WindowsFormsHost> control translates each WPF ambient property into its Windows Forms equivalent.  
   
- For more information, see [Windows Forms and WPF Property Mapping](windows-forms-and-wpf-property-mapping.md).  
+For more information, see [Windows Forms and WPF Property Mapping](windows-forms-and-wpf-property-mapping.md).  
   
 ### Behavior  
 
- The following table describes interoperation behavior.  
+The following table describes interoperation behavior.  
   
 |Behavior|Supported|Not supported|  
 |--------------|---------------|-------------------|  
@@ -86,7 +86,7 @@ WPF and Windows Forms present two different architectures for creating applicati
 
 ## Hosting WPF Controls in Windows Forms  
 
- The following interoperation scenarios are supported when a Windows Forms control hosts a WPF control:  
+The following interoperation scenarios are supported when a Windows Forms control hosts a WPF control:  
   
 - Hosting one or more WPF controls using code.  
   
@@ -106,13 +106,13 @@ WPF and Windows Forms present two different architectures for creating applicati
   
 ### Ambient Properties  
 
- Some of the ambient properties of Windows Forms controls have WPF equivalents. These ambient properties are propagated to the hosted WPF controls and exposed as public properties on the <xref:System.Windows.Forms.Integration.ElementHost> control. The <xref:System.Windows.Forms.Integration.ElementHost> control translates each Windows Forms ambient property to its WPF equivalent.  
+Some of the ambient properties of Windows Forms controls have WPF equivalents. These ambient properties are propagated to the hosted WPF controls and exposed as public properties on the <xref:System.Windows.Forms.Integration.ElementHost> control. The <xref:System.Windows.Forms.Integration.ElementHost> control translates each Windows Forms ambient property to its WPF equivalent.  
   
- For more information, see [Windows Forms and WPF Property Mapping](windows-forms-and-wpf-property-mapping.md).  
+For more information, see [Windows Forms and WPF Property Mapping](windows-forms-and-wpf-property-mapping.md).  
   
 ### Behavior  
 
- The following table describes interoperation behavior.  
+The following table describes interoperation behavior.  
   
 |Behavior|Supported|Not supported|  
 |--------------|---------------|-------------------|  

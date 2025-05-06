@@ -19,7 +19,7 @@ The .NET Framework provides a variety of attributes you can apply to the members
 
 ## Attributes for Control and Component Properties  
 
- The following table shows the attributes you can apply to properties or other members of your custom controls and components. For an example that uses many of these attributes, see [How to: Apply Attributes in Windows Forms Controls](how-to-apply-attributes-in-windows-forms-controls.md).  
+The following table shows the attributes you can apply to properties or other members of your custom controls and components. For an example that uses many of these attributes, see [How to: Apply Attributes in Windows Forms Controls](how-to-apply-attributes-in-windows-forms-controls.md).  
   
 |Attribute|Description|  
 |---------------|-----------------|  
@@ -40,7 +40,7 @@ The .NET Framework provides a variety of attributes you can apply to the members
   
 ## Attributes for Data Binding Properties  
 
- The following table shows the attributes you can apply to specify how your custom controls and components interact with data binding.  
+The following table shows the attributes you can apply to specify how your custom controls and components interact with data binding.  
   
 |Attribute|Description|  
 |---------------|-----------------|  
@@ -52,7 +52,7 @@ The .NET Framework provides a variety of attributes you can apply to the members
   
 ## Attributes for Classes  
 
- The following table shows the attributes you can apply to specify the behavior of your custom controls and components at design time.  
+The following table shows the attributes you can apply to specify the behavior of your custom controls and components at design time.  
   
 |Attribute|Description|  
 |---------------|-----------------|  

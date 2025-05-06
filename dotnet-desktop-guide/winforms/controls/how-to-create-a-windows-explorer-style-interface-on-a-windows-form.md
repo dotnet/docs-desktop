@@ -13,9 +13,9 @@ description: Learn how to create a Windows Explorer-style interface on a Windows
 
 Windows Explorer is a common user-interface choice for applications because of its ready familiarity.
 
- Windows Explorer is, essentially, a <xref:System.Windows.Forms.TreeView> control and a <xref:System.Windows.Forms.ListView> control on separate panels. The panels are made resizable by a splitter. This arrangement of controls is very effective for displaying and browsing information.
+Windows Explorer is, essentially, a <xref:System.Windows.Forms.TreeView> control and a <xref:System.Windows.Forms.ListView> control on separate panels. The panels are made resizable by a splitter. This arrangement of controls is very effective for displaying and browsing information.
 
- The following steps show how to arrange controls in a Windows Explorer-like form. They do not show how to add the file-browsing functionality of the Windows Explorer application.
+The following steps show how to arrange controls in a Windows Explorer-like form. They do not show how to add the file-browsing functionality of the Windows Explorer application.
 
 ## To create a Windows Explorer-style Windows Form
 

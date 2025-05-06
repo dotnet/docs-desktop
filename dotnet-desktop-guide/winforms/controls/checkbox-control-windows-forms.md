@@ -18,21 +18,21 @@ The Windows Forms `CheckBox` control indicates whether a particular condition is
   
 ## In This Section  
 
- [CheckBox Control Overview](checkbox-control-overview-windows-forms.md)  
- Explains what this control is and its key features and properties.  
+[CheckBox Control Overview](checkbox-control-overview-windows-forms.md)  
+Explains what this control is and its key features and properties.  
   
- [How to: Respond to Windows Forms CheckBox Clicks](how-to-respond-to-windows-forms-checkbox-clicks.md)  
- Explains how to use a check box to determine your application's actions.  
+[How to: Respond to Windows Forms CheckBox Clicks](how-to-respond-to-windows-forms-checkbox-clicks.md)  
+Explains how to use a check box to determine your application's actions.  
   
- [How to: Set Options with Windows Forms CheckBox Controls](how-to-set-options-with-windows-forms-checkbox-controls.md)  
- Describes how to use a check box to set options such as properties of an object.  
+[How to: Set Options with Windows Forms CheckBox Controls](how-to-set-options-with-windows-forms-checkbox-controls.md)  
+Describes how to use a check box to set options such as properties of an object.  
   
 ## Reference  
 
- <xref:System.Windows.Forms.CheckBox> class  
- Describes this class and has links to all its members.  
+<xref:System.Windows.Forms.CheckBox> class  
+Describes this class and has links to all its members.  
   
 ## Related Sections  
 
- [Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)  
- Provides a complete list of Windows Forms controls, with links to information on their use.
+[Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)  
+Provides a complete list of Windows Forms controls, with links to information on their use.

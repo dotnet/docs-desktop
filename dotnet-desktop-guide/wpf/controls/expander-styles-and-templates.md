@@ -18,11 +18,11 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
   
 ## Expander Parts  
 
- The <xref:System.Windows.Controls.Expander> control does not have any named parts.  
+The <xref:System.Windows.Controls.Expander> control does not have any named parts.  
   
 ## Expander States  
 
- The following table lists the visual states for the <xref:System.Windows.Controls.Expander> control.  
+The following table lists the visual states for the <xref:System.Windows.Controls.Expander> control.  
   
 |VisualState Name|VisualStateGroup Name|Description|  
 |-|-|-|  

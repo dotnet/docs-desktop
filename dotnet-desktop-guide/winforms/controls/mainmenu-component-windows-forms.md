@@ -12,17 +12,17 @@ ms.assetid: 7cd22f29-828b-42e8-9c88-f08aa4533850
 > [!NOTE]
 > Although `MenuStrip` and `ContextMenuStrip` replace and add functionality to the `MainMenu` and <xref:System.Windows.Forms.ContextMenu> controls of previous versions, `MainMenu` and <xref:System.Windows.Forms.ContextMenu> are retained for both backward compatibility and future use if you choose.  
   
- The Windows Forms `MainMenu` component displays a menu at run time.  
+The Windows Forms `MainMenu` component displays a menu at run time.  
   
 ## In This Section  
 
- [MainMenu Component Overview](mainmenu-component-overview-windows-forms.md)  
- Explains what this component is and its key features and properties.  
+[MainMenu Component Overview](mainmenu-component-overview-windows-forms.md)  
+Explains what this component is and its key features and properties.  
   
 ## Reference  
 
- <xref:System.Windows.Forms.MainMenu>  
- Describes this class and has links to all its members.  
+<xref:System.Windows.Forms.MainMenu>  
+Describes this class and has links to all its members.  
   
 ## See also
 

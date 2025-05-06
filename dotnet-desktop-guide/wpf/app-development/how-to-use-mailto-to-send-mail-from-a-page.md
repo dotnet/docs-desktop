@@ -15,9 +15,9 @@ This example shows how to use <xref:System.Windows.Documents.Hyperlink> in conju
   
 ## Example  
 
- The following code shows how to use a **mailto:** uniform resource identifier (URI) to open a new mail window that contains an email address, and email address and a subject, and an email address, subject, and body.  
+The following code shows how to use a **mailto:** uniform resource identifier (URI) to open a new mail window that contains an email address, and email address and a subject, and an email address, subject, and body.  
   
- [!code-xaml[HOWTONavigationMailToSnippet#MailToMARKUP](~/samples/snippets/csharp/VS_Snippets_Wpf/HOWTONavigationMailToSnippet/CS/HomePage.xaml#mailtomarkup)]  
+[!code-xaml[HOWTONavigationMailToSnippet#MailToMARKUP](~/samples/snippets/csharp/VS_Snippets_Wpf/HOWTONavigationMailToSnippet/CS/HomePage.xaml#mailtomarkup)]  
   
 ## See also
 

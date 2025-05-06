@@ -38,7 +38,7 @@ Tasks illustrated in this walkthrough include:
   
 5. In the **Properties** window set the <xref:System.Windows.Forms.MaskedTextBox.BeepOnError%2A> property to `true`. This property causes a short beep to sound every time the user attempts to input a character that violates the mask definition.  
   
- For a summary of the characters that the Mask property supports, see the Remarks section of the <xref:System.Windows.Forms.MaskedTextBox.Mask%2A> property.  
+For a summary of the characters that the Mask property supports, see the Remarks section of the <xref:System.Windows.Forms.MaskedTextBox.Mask%2A> property.  
   
 ## Alert the User to Input Errors  
   

@@ -21,16 +21,16 @@ The topics in this section describe how to apply visual effects to bitmap images
   
 ## In This Section  
 
- [Bitmap Effects Overview](bitmap-effects-overview.md)  
+[Bitmap Effects Overview](bitmap-effects-overview.md)  
   
 ## Reference  
 
- <xref:System.Windows.Media.Effects.BitmapEffect>  
+<xref:System.Windows.Media.Effects.BitmapEffect>  
   
- <xref:System.Windows.Media.Effects>  
+<xref:System.Windows.Media.Effects>  
   
 ## Related Sections  
 
- [Graphics and Multimedia](index.md)  
+[Graphics and Multimedia](index.md)  
   
- [Imaging Overview](imaging-overview.md)
+[Imaging Overview](imaging-overview.md)

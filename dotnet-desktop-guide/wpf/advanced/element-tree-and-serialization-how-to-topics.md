@@ -16,13 +16,13 @@ The topics in this section describe how to use the WPF element tree.
   
 ## In This Section  
 
- [Find an Element by Its Name](how-to-find-an-element-by-its-name.md)  
- [Override the Logical Tree](how-to-override-the-logical-tree.md)  
+[Find an Element by Its Name](how-to-find-an-element-by-its-name.md)  
+[Override the Logical Tree](how-to-override-the-logical-tree.md)  
   
 ## Reference  
 
- <xref:System.Windows.LogicalTreeHelper>  
+<xref:System.Windows.LogicalTreeHelper>  
   
- <xref:System.Windows.Media.VisualTreeHelper>  
+<xref:System.Windows.Media.VisualTreeHelper>  
   
- <xref:System.Windows.Markup>  
+<xref:System.Windows.Markup>  

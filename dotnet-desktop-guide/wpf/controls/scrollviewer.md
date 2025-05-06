@@ -18,14 +18,14 @@ The <xref:System.Windows.Controls.ScrollViewer> control creates a scrollable reg
   
 ## In This Section  
 
- [ScrollViewer Overview](scrollviewer-overview.md)  
- [How-to Topics](scrollviewer-how-to-topics.md)  
+[ScrollViewer Overview](scrollviewer-overview.md)  
+[How-to Topics](scrollviewer-how-to-topics.md)  
   
 ## Reference  
 
- <xref:System.Windows.Controls.Primitives.ScrollBar>  
+<xref:System.Windows.Controls.Primitives.ScrollBar>  
   
- <xref:System.Windows.Controls.ScrollViewer>  
+<xref:System.Windows.Controls.ScrollViewer>  
   
 ## See also
 

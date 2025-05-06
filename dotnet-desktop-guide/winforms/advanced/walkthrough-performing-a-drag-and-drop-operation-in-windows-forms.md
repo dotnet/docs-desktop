@@ -17,9 +17,9 @@ To perform drag-and-drop operations within Windows-based applications you must h
   
 ## Dragging Data  
 
- All drag-and-drop operations begin with dragging. The functionality to enable data to be collected when dragging begins is implemented in the <xref:System.Windows.Forms.Control.DoDragDrop%2A> method.  
+All drag-and-drop operations begin with dragging. The functionality to enable data to be collected when dragging begins is implemented in the <xref:System.Windows.Forms.Control.DoDragDrop%2A> method.  
   
- In the following example, the <xref:System.Windows.Forms.Control.MouseDown> event is used to start the drag operation because it is the most intuitive (most drag-and-drop actions begin with the mouse button being depressed). However, remember that any event could be used to initiate a drag-and-drop procedure.  
+In the following example, the <xref:System.Windows.Forms.Control.MouseDown> event is used to start the drag operation because it is the most intuitive (most drag-and-drop actions begin with the mouse button being depressed). However, remember that any event could be used to initiate a drag-and-drop procedure.  
   
 > [!NOTE]
 > Certain controls have custom drag-specific events. The <xref:System.Windows.Forms.ListView> and <xref:System.Windows.Forms.TreeView> controls, for example, have an <xref:System.Windows.Forms.TreeView.ItemDrag> event.  
@@ -48,11 +48,11 @@ To perform drag-and-drop operations within Windows-based applications you must h
     > [!NOTE]
     > Any data can be used as a parameter in the `DoDragDrop` method; in the example above, the <xref:System.Windows.Forms.Control.Text%2A> property of the <xref:System.Windows.Forms.Button> control was used (rather than hard-coding a value or retrieving data from a dataset) because the property was related to the location being dragged from (the <xref:System.Windows.Forms.Button> control). Keep this in mind as you incorporate drag-and-drop operations into your Windows-based applications.  
   
- While a drag operation is in effect, you can handle the <xref:System.Windows.Forms.Control.QueryContinueDrag> event, which "asks permission" of the system to continue the drag operation. When handling this method, it is also the appropriate point for you to call methods that will have an effect on the drag operation, such as expanding a <xref:System.Windows.Forms.TreeNode> in a <xref:System.Windows.Forms.TreeView> control when the cursor hovers over it.  
+While a drag operation is in effect, you can handle the <xref:System.Windows.Forms.Control.QueryContinueDrag> event, which "asks permission" of the system to continue the drag operation. When handling this method, it is also the appropriate point for you to call methods that will have an effect on the drag operation, such as expanding a <xref:System.Windows.Forms.TreeNode> in a <xref:System.Windows.Forms.TreeView> control when the cursor hovers over it.  
   
 ## Dropping Data  
 
- Once you have begun dragging data from a location on a Windows Form or control, you will naturally want to drop it somewhere. The cursor will change when it crosses an area of a form or control that is correctly configured for dropping data. Any area within a Windows Form or control can be made to accept dropped data by setting the <xref:System.Windows.Forms.Control.AllowDrop%2A> property and handling the <xref:System.Windows.Forms.Control.DragEnter> and <xref:System.Windows.Forms.Control.DragDrop> events.  
+Once you have begun dragging data from a location on a Windows Form or control, you will naturally want to drop it somewhere. The cursor will change when it crosses an area of a form or control that is correctly configured for dropping data. Any area within a Windows Form or control can be made to accept dropped data by setting the <xref:System.Windows.Forms.Control.AllowDrop%2A> property and handling the <xref:System.Windows.Forms.Control.DragEnter> and <xref:System.Windows.Forms.Control.DragDrop> events.  
   
 #### To perform a drop  
   

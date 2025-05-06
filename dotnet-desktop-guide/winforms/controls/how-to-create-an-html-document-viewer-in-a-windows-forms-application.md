@@ -31,7 +31,7 @@ You can use the <xref:System.Windows.Forms.WebBrowser> control to display and pr
   
 ## Compiling the Code  
 
- This example requires:  
+This example requires:  
   
 - A <xref:System.Windows.Forms.WebBrowser> control named `webBrowser1`.  
   

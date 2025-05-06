@@ -16,16 +16,16 @@ The topics in this section show you how to use a <xref:System.Windows.Controls.L
   
 ## In This Section  
 
- [ListView Overview](listview-overview.md)  
- [GridView Overview](gridview-overview.md)  
- [GridView Column Header Styles and Templates Overview](gridview-column-header-styles-and-templates-overview.md)  
+[ListView Overview](listview-overview.md)  
+[GridView Overview](gridview-overview.md)  
+[GridView Column Header Styles and Templates Overview](gridview-column-header-styles-and-templates-overview.md)  
   
 ## Reference  
 
- <xref:System.Windows.Controls.ListView>  
+<xref:System.Windows.Controls.ListView>  
   
- <xref:System.Windows.Controls.GridView>  
+<xref:System.Windows.Controls.GridView>  
   
 ## Related Sections  
 
- [How-to Topics](listview-how-to-topics.md)
+[How-to Topics](listview-how-to-topics.md)

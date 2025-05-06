@@ -17,14 +17,14 @@ Windows Presentation Foundation (WPF) provides a highly flexible drag and drop i
   
 ## In This Section  
 
- [Drag and Drop Overview](drag-and-drop-overview.md)  
- [Data and Data Objects](data-and-data-objects.md)  
- [Walkthrough: Enabling Drag and Drop on a User Control](walkthrough-enabling-drag-and-drop-on-a-user-control.md)  
- [How-to Topics](drag-and-drop-how-to-topics.md)  
+[Drag and Drop Overview](drag-and-drop-overview.md)  
+[Data and Data Objects](data-and-data-objects.md)  
+[Walkthrough: Enabling Drag and Drop on a User Control](walkthrough-enabling-drag-and-drop-on-a-user-control.md)  
+[How-to Topics](drag-and-drop-how-to-topics.md)  
   
 ## Reference  
 
- <xref:System.Windows.DataFormat>  
+<xref:System.Windows.DataFormat>  
   <xref:System.Windows.DataObject>  
   <xref:System.Windows.DragDrop>  
   <xref:System.Windows.DragDropEffects>  

@@ -14,10 +14,10 @@ ms.assetid: 1756cabf-59b4-47a7-883d-1bdf2e5abe00
 
 <xref:System.Windows.Controls.Primitives.BulletDecorator> has two content properties: <xref:System.Windows.Controls.Primitives.BulletDecorator.Bullet%2A> and <xref:System.Windows.Controls.Decorator.Child%2A>. The <xref:System.Windows.Controls.Primitives.BulletDecorator.Bullet%2A> property defines the <xref:System.Windows.UIElement> to use as a bullet. The <xref:System.Windows.Controls.Decorator.Child%2A> property defines a <xref:System.Windows.UIElement> that visually aligns with the bullet.  
   
- The following illustration shows examples of controls that use a <xref:System.Windows.Controls.Primitives.BulletDecorator>.  
+The following illustration shows examples of controls that use a <xref:System.Windows.Controls.Primitives.BulletDecorator>.  
   
- ![Example of a Checkbox, a RadioButton, and a TextBox bullet decorator.](./media/bulletdecorator/three-bullet-decorators.png)  
+![Example of a Checkbox, a RadioButton, and a TextBox bullet decorator.](./media/bulletdecorator/three-bullet-decorators.png)  
   
 ## Reference  
 
- <xref:System.Windows.Controls.Primitives.BulletDecorator>
+<xref:System.Windows.Controls.Primitives.BulletDecorator>

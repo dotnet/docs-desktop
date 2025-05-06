@@ -27,11 +27,11 @@ The Windows Forms and WPF technologies have two similar but different property m
 > [!NOTE]
 > Property-change events are not propagated up the hosting control or element hierarchy. Property translation is not performed if the local value of a property does not change because of direct setting, styles, inheritance, data binding, or other mechanisms that change the value of the property.  
   
- Use the <xref:System.Windows.Forms.Integration.WindowsFormsHost.PropertyMap%2A> property on the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element and the <xref:System.Windows.Forms.Integration.ElementHost.PropertyMap%2A> property on <xref:System.Windows.Forms.Integration.ElementHost> control to access property mapping.  
+Use the <xref:System.Windows.Forms.Integration.WindowsFormsHost.PropertyMap%2A> property on the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element and the <xref:System.Windows.Forms.Integration.ElementHost.PropertyMap%2A> property on <xref:System.Windows.Forms.Integration.ElementHost> control to access property mapping.  
   
 ## Property Mapping with the WindowsFormsHost Element  
 
- The <xref:System.Windows.Forms.Integration.WindowsFormsHost> element translates default WPF properties to their Windows Forms equivalents using the following translation table.  
+The <xref:System.Windows.Forms.Integration.WindowsFormsHost> element translates default WPF properties to their Windows Forms equivalents using the following translation table.  
   
 |Windows Presentation Foundation hosting|Windows Forms|Interoperation behavior|  
 |---------------------------------------------|-------------------|-----------------------------|  
@@ -46,13 +46,13 @@ The Windows Forms and WPF technologies have two similar but different property m
 |<xref:System.Windows.Controls.Control.Padding%2A>|<xref:System.Windows.Forms.Control.Padding%2A>|All four values of the <xref:System.Windows.Forms.Control.Padding%2A> property on the hosted Windows Forms control are set to the same <xref:System.Windows.Thickness> value.<br /><br /> -   Values greater than <xref:System.Int32.MaxValue> are set to <xref:System.Int32.MaxValue>.<br />-   Values less than <xref:System.Int32.MinValue> are set to <xref:System.Int32.MinValue>.|  
 |<xref:System.Windows.UIElement.Visibility%2A>|<xref:System.Windows.Forms.Control.Visible%2A>|-   <xref:System.Windows.Visibility.Visible> maps to <xref:System.Windows.Forms.Control.Visible%2A> = `true`. The hosted Windows Forms control is visible. Explicitly setting the <xref:System.Windows.Forms.Control.Visible%2A> property on the hosted control to `false` is not recommended.<br />-   <xref:System.Windows.Visibility.Collapsed> maps to <xref:System.Windows.Forms.Control.Visible%2A> = `true` or `false`. The hosted Windows Forms control is not drawn, and its area is collapsed.<br />-   <xref:System.Windows.Visibility.Hidden> : The hosted Windows Forms control occupies space in the layout, but is not visible. In this case, the <xref:System.Windows.Forms.Control.Visible%2A> property is set to `true`. Explicitly setting the <xref:System.Windows.Forms.Control.Visible%2A> property on the hosted control to `false` is not recommended.|  
   
- Attached properties on container elements are fully supported by the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element.  
+Attached properties on container elements are fully supported by the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element.  
   
- For more information, see [Walkthrough: Mapping Properties Using the WindowsFormsHost Element](walkthrough-mapping-properties-using-the-windowsformshost-element.md).  
+For more information, see [Walkthrough: Mapping Properties Using the WindowsFormsHost Element](walkthrough-mapping-properties-using-the-windowsformshost-element.md).  
   
 ## Updates to Parent Properties  
 
- Changes to most parent properties cause notifications to the hosted child control. The following list describes properties which do not cause notifications when their values change.  
+Changes to most parent properties cause notifications to the hosted child control. The following list describes properties which do not cause notifications when their values change.  
   
 - <xref:System.Windows.Controls.Control.Background%2A>  
   
@@ -62,11 +62,11 @@ The Windows Forms and WPF technologies have two similar but different property m
   
 - <xref:System.Windows.UIElement.Visibility%2A>  
   
- For example, if you change the value of the <xref:System.Windows.Controls.Control.Background%2A> property of the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element, the <xref:System.Windows.Forms.Control.BackColor%2A> property of the hosted control does not change.  
+For example, if you change the value of the <xref:System.Windows.Controls.Control.Background%2A> property of the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element, the <xref:System.Windows.Forms.Control.BackColor%2A> property of the hosted control does not change.  
   
 ## Property Mapping with the ElementHost Control  
 
- The following properties provide built-in change notification. Do not call the <xref:System.Windows.FrameworkElement.OnPropertyChanged%2A> method when you are mapping these properties:  
+The following properties provide built-in change notification. Do not call the <xref:System.Windows.FrameworkElement.OnPropertyChanged%2A> method when you are mapping these properties:  
   
 - AutoSize  
   
@@ -116,9 +116,9 @@ The Windows Forms and WPF technologies have two similar but different property m
   
 - Visible  
   
- The <xref:System.Windows.Forms.Integration.ElementHost> control translates default Windows Forms properties to their WPF equivalents by using the following translation table.  
+The <xref:System.Windows.Forms.Integration.ElementHost> control translates default Windows Forms properties to their WPF equivalents by using the following translation table.  
   
- For more information, see [Walkthrough: Mapping Properties Using the ElementHost Control](walkthrough-mapping-properties-using-the-elementhost-control.md).  
+For more information, see [Walkthrough: Mapping Properties Using the ElementHost Control](walkthrough-mapping-properties-using-the-elementhost-control.md).  
   
 |Windows Forms hosting|Windows Presentation Foundation|Interoperation behavior|  
 |---------------------------|-------------------------------------|-----------------------------|  

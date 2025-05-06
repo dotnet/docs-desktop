@@ -20,7 +20,7 @@ Most businesses will, at some point, buy multiple printers of the same model. Ty
   
 ## Example  
 
- In the example below, a second print queue is cloned from an existing print queue. The second differs from the first only in its name, location, port, and shared status. The major steps for doing this are as follows.  
+In the example below, a second print queue is cloned from an existing print queue. The second differs from the first only in its name, location, port, and shared status. The major steps for doing this are as follows.  
   
 1. Create a <xref:System.Printing.PrintQueue> object for the existing printer that is going to be cloned.  
   
@@ -48,10 +48,10 @@ Most businesses will, at some point, buy multiple printers of the same model. Ty
   
 10. Use <xref:System.Printing.PrintServer.InstallPrintQueue%2A> to install the new printer with the new values.  
   
- An example is below.  
+An example is below.  
   
- [!code-csharp[ClonePrinter#ClonePrinter](~/samples/snippets/csharp/VS_Snippets_Wpf/ClonePrinter/CSharp/Program.cs#cloneprinter)]
- [!code-vb[ClonePrinter#ClonePrinter](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ClonePrinter/visualbasic/program.vb#cloneprinter)]  
+[!code-csharp[ClonePrinter#ClonePrinter](~/samples/snippets/csharp/VS_Snippets_Wpf/ClonePrinter/CSharp/Program.cs#cloneprinter)]
+[!code-vb[ClonePrinter#ClonePrinter](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ClonePrinter/visualbasic/program.vb#cloneprinter)]  
   
 ## See also
 

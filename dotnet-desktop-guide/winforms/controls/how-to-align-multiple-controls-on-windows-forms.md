@@ -3,7 +3,7 @@ title: Align Multiple Controls
 ms.date: 03/30/2017
 ms.service: dotnet-framework
 f1_keywords:
- - Designer_Microsoft.VisualStudio.Windows.Forms.Design.DocumentDesigner
+- Designer_Microsoft.VisualStudio.Windows.Forms.Design.DocumentDesigner
 helpviewer_keywords:
   - "forms [Windows Forms], aligning controls"
   - "Windows Forms, aligning controls"

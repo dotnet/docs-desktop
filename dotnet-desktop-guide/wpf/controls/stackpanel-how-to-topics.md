@@ -16,30 +16,30 @@ The topics in this section describe how to use the <xref:System.Windows.Controls
   
 ## In This Section  
 
- [Choose Between StackPanel and DockPanel](how-to-choose-between-stackpanel-and-dockpanel.md)  
- [Create a StackPanel](how-to-create-a-stackpanel.md)  
- [Horizontally or Vertically Align Content in a StackPanel](how-to-horizontally-or-vertically-align-content-in-a-stackpanel.md)  
+[Choose Between StackPanel and DockPanel](how-to-choose-between-stackpanel-and-dockpanel.md)  
+[Create a StackPanel](how-to-create-a-stackpanel.md)  
+[Horizontally or Vertically Align Content in a StackPanel](how-to-horizontally-or-vertically-align-content-in-a-stackpanel.md)  
   
 ## Reference  
 
- <xref:System.Windows.Controls.Panel>  
+<xref:System.Windows.Controls.Panel>  
   
- <xref:System.Windows.Controls.Canvas>  
+<xref:System.Windows.Controls.Canvas>  
   
- <xref:System.Windows.Controls.DockPanel>  
+<xref:System.Windows.Controls.DockPanel>  
   
- <xref:System.Windows.Controls.Grid>  
+<xref:System.Windows.Controls.Grid>  
   
- <xref:System.Windows.Controls.StackPanel>  
+<xref:System.Windows.Controls.StackPanel>  
   
- <xref:System.Windows.Controls.VirtualizingStackPanel>  
+<xref:System.Windows.Controls.VirtualizingStackPanel>  
   
- <xref:System.Windows.Controls.WrapPanel>  
+<xref:System.Windows.Controls.WrapPanel>  
   
 ## Related Sections  
 
- [Layout](../advanced/layout.md)  
+[Layout](../advanced/layout.md)  
   
- [Walkthrough: My first WPF desktop application](../get-started/walkthrough-my-first-wpf-desktop-application.md)  
+[Walkthrough: My first WPF desktop application](../get-started/walkthrough-my-first-wpf-desktop-application.md)  
   
- [ScrollViewer Overview](scrollviewer-overview.md)
+[ScrollViewer Overview](scrollviewer-overview.md)

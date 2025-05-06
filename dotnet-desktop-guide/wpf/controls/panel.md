@@ -17,29 +17,29 @@ ms.assetid: 792943c5-335d-49dd-aa5b-ec1582a10088
   
 ## In This Section  
 
- [Panels Overview](panels-overview.md)  
- [How-to Topics](panel-how-to-topics.md)  
+[Panels Overview](panels-overview.md)  
+[How-to Topics](panel-how-to-topics.md)  
   
 ## Reference  
 
- <xref:System.Windows.Controls.Panel>  
+<xref:System.Windows.Controls.Panel>  
   
- <xref:System.Windows.Controls.Canvas>  
+<xref:System.Windows.Controls.Canvas>  
   
- <xref:System.Windows.Controls.DockPanel>  
+<xref:System.Windows.Controls.DockPanel>  
   
- <xref:System.Windows.Controls.Grid>  
+<xref:System.Windows.Controls.Grid>  
   
- <xref:System.Windows.Controls.StackPanel>  
+<xref:System.Windows.Controls.StackPanel>  
   
- <xref:System.Windows.Controls.VirtualizingStackPanel>  
+<xref:System.Windows.Controls.VirtualizingStackPanel>  
   
- <xref:System.Windows.Controls.WrapPanel>  
+<xref:System.Windows.Controls.WrapPanel>  
   
 ## Related Sections  
 
- [Layout](../advanced/layout.md)  
+[Layout](../advanced/layout.md)  
   
- [Walkthrough: My first WPF desktop application](../get-started/walkthrough-my-first-wpf-desktop-application.md)  
+[Walkthrough: My first WPF desktop application](../get-started/walkthrough-my-first-wpf-desktop-application.md)  
   
- [ScrollViewer Overview](scrollviewer-overview.md)
+[ScrollViewer Overview](scrollviewer-overview.md)

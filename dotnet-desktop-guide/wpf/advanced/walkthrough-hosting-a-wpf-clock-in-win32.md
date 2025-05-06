@@ -72,7 +72,7 @@ Next, add references to DLLs necessary for WPF: PresentationCore.dll, Presentati
 
 9. Click **OK** to exit the win32clock Property Pages for adding references.
 
- Finally, add the `STAThreadAttribute` to the `_tWinMain` method for use with WPF:
+Finally, add the `STAThreadAttribute` to the `_tWinMain` method for use with WPF:
 
 ```cpp
 [System::STAThreadAttribute]
@@ -130,7 +130,7 @@ namespace ManagedCode
 }
 ```
 
- This is a long piece of code that could use some explanation. The first part is various clauses so that you do not need to fully qualify all the calls:
+This is a long piece of code that could use some explanation. The first part is various clauses so that you do not need to fully qualify all the calls:
 
 ```cpp
 namespace ManagedCode
@@ -141,7 +141,7 @@ namespace ManagedCode
     using namespace System::Windows::Media;
 ```
 
- Then you define a function that creates the WPF content, puts an <xref:System.Windows.Interop.HwndSource> around it, and returns the HWND:
+Then you define a function that creates the WPF content, puts an <xref:System.Windows.Interop.HwndSource> around it, and returns the HWND:
 
 ```cpp
 HWND GetHwnd(HWND parent, int x, int y, int width, int height) {
@@ -172,7 +172,7 @@ You then connect the page to the <xref:System.Windows.Interop.HwndSource>:
 source->RootVisual = page;
 ```
 
- And in the final line, return the HWND for the <xref:System.Windows.Interop.HwndSource>:
+And in the final line, return the HWND for the <xref:System.Windows.Interop.HwndSource>:
 
 ```cpp
 return (HWND) source->Handle.ToPointer();

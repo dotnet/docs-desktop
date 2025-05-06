@@ -28,21 +28,21 @@ The Windows Forms <xref:System.Windows.Forms.PageSetupDialog> component is a pre
   
 ## In This Section  
 
- [PageSetupDialog Component Overview](pagesetupdialog-component-overview-windows-forms.md)  
- Introduces the general concepts of the <xref:System.Windows.Forms.PageSetupDialog> component, which you can use to display a pre-configured dialog box that users can use to manipulate page settings.  
+[PageSetupDialog Component Overview](pagesetupdialog-component-overview-windows-forms.md)  
+Introduces the general concepts of the <xref:System.Windows.Forms.PageSetupDialog> component, which you can use to display a pre-configured dialog box that users can use to manipulate page settings.  
   
- [How to: Determine Page Properties Using the PageSetupDialog Component](how-to-determine-page-properties-using-the-pagesetupdialog-component.md)  
- Explains how to set page properties by using an instance of the <xref:System.Windows.Forms.PageSetupDialog> component at run time.  
+[How to: Determine Page Properties Using the PageSetupDialog Component](how-to-determine-page-properties-using-the-pagesetupdialog-component.md)  
+Explains how to set page properties by using an instance of the <xref:System.Windows.Forms.PageSetupDialog> component at run time.  
   
 ## Reference  
 
- <xref:System.Windows.Forms.PageSetupDialog>  
- Provides reference information on the class and its members.  
+<xref:System.Windows.Forms.PageSetupDialog>  
+Provides reference information on the class and its members.  
   
 ## Related Sections  
 
- [Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)  
- Provides a complete list of Windows Forms controls, with links to information on their use.  
+[Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)  
+Provides a complete list of Windows Forms controls, with links to information on their use.  
   
- [Dialog-Box Controls and Components](dialog-box-controls-and-components-windows-forms.md)  
- Describes a set of controls and components that allow users to perform standard interactions with the application or system.
+[Dialog-Box Controls and Components](dialog-box-controls-and-components-windows-forms.md)  
+Describes a set of controls and components that allow users to perform standard interactions with the application or system.

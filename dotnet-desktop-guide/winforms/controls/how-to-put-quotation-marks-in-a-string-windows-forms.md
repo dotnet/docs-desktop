@@ -17,9 +17,9 @@ ms.assetid: 68bdc3f3-4177-4eab-99cd-cac17a82b515
 
 Sometimes you might want to place quotation marks (" ") in a string of text. For example:  
   
- She said, "You deserve a treat!"  
+She said, "You deserve a treat!"  
   
- As an alternative, you can also use the <xref:Microsoft.VisualBasic.ControlChars.Quote> field as a constant.  
+As an alternative, you can also use the <xref:Microsoft.VisualBasic.ControlChars.Quote> field as a constant.  
   
 ### To place quotation marks in a string in your code  
   

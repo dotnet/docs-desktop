@@ -36,7 +36,7 @@ End Sub
   
 ## Compiling the Code  
 
- This example requires:  
+This example requires:  
   
 - A Windows Form named `Form1`.  
   
@@ -46,7 +46,7 @@ End Sub
   
 ## .NET Framework Security  
 
- The call to the <xref:System.Diagnostics.Process.Start%2A> method requires full trust. For more information, see <xref:System.Security.SecurityException>.  
+The call to the <xref:System.Diagnostics.Process.Start%2A> method requires full trust. For more information, see <xref:System.Security.SecurityException>.  
   
 ## See also
 

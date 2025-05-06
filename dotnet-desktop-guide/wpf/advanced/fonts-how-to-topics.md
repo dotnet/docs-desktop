@@ -15,8 +15,8 @@ The topics in this section demonstrate how to use the font features included wit
   
 ## In This Section  
 
- [Enumerate System Fonts](how-to-enumerate-system-fonts.md)  
- [Use the FontSizeConverter Class](how-to-use-the-fontsizeconverter-class.md)  
+[Enumerate System Fonts](how-to-enumerate-system-fonts.md)  
+[Use the FontSizeConverter Class](how-to-use-the-fontsizeconverter-class.md)  
   
 ## See also
 

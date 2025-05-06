@@ -16,31 +16,31 @@ Windows Presentation Foundation (WPF) includes support for several types of inpu
   
 ## In This Section  
 
- [Input Overview](input-overview.md)  
- [Commanding Overview](commanding-overview.md)  
- [Focus Overview](focus-overview.md)  
- [Styling for Focus in Controls, and FocusVisualStyle](styling-for-focus-in-controls-and-focusvisualstyle.md)  
- [Walkthrough: Creating Your First Touch Application](walkthrough-creating-your-first-touch-application.md)  
- [How-to Topics](input-and-commands-how-to-topics.md)  
- [Digital Ink](digital-ink.md)  
+[Input Overview](input-overview.md)  
+[Commanding Overview](commanding-overview.md)  
+[Focus Overview](focus-overview.md)  
+[Styling for Focus in Controls, and FocusVisualStyle](styling-for-focus-in-controls-and-focusvisualstyle.md)  
+[Walkthrough: Creating Your First Touch Application](walkthrough-creating-your-first-touch-application.md)  
+[How-to Topics](input-and-commands-how-to-topics.md)  
+[Digital Ink](digital-ink.md)  
   
 ## Reference  
 
- <xref:System.Windows.UIElement>  
+<xref:System.Windows.UIElement>  
   
- <xref:System.Windows.FrameworkElement>  
+<xref:System.Windows.FrameworkElement>  
   
- <xref:System.Windows.ContentElement>  
+<xref:System.Windows.ContentElement>  
   
- <xref:System.Windows.FrameworkContentElement>  
+<xref:System.Windows.FrameworkContentElement>  
   
- <xref:System.Windows.Input.Keyboard>  
+<xref:System.Windows.Input.Keyboard>  
   
- <xref:System.Windows.Input.Mouse>  
+<xref:System.Windows.Input.Mouse>  
   
- <xref:System.Windows.Input.FocusManager>  
+<xref:System.Windows.Input.FocusManager>  
   
 ## Related Sections  
 
- [Controls](../controls/index.md)  
+[Controls](../controls/index.md)  
   [Events](events-wpf.md)

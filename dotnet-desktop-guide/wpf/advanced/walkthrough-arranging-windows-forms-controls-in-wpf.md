@@ -117,7 +117,7 @@ To specify size explicitly, follow these steps:
 
 Always set layout-related properties on the hosted control by using the properties of the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element. Setting layout properties directly on the hosted control will yield unintended results.
 
- Setting layout-related properties on the hosted control in XAML has no effect.
+Setting layout-related properties on the hosted control in XAML has no effect.
 
 To see the effects of setting properties on the hosted control, follow these steps:
 

@@ -132,7 +132,7 @@ When the <xref:System.Windows.Forms.Control.AutoSize%2A> property is set to `tru
 
 ## AutoSize and AutoSizeMode properties
 
- Some controls support the `AutoSizeMode` property, which gives you more fine-grained control over the automatic sizing behavior of a control.
+Some controls support the `AutoSizeMode` property, which gives you more fine-grained control over the automatic sizing behavior of a control.
 
 ### Use the AutoSizeMode property
 

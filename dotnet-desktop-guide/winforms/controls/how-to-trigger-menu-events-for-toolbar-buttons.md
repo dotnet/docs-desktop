@@ -19,11 +19,11 @@ ms.assetid: 98374f70-993d-4ca4-89fb-48fea6ce5b45
 > [!NOTE]
 > The <xref:System.Windows.Forms.ToolStrip> control replaces and adds functionality to the <xref:System.Windows.Forms.ToolBar> control; however, the <xref:System.Windows.Forms.ToolBar> control is retained for both backward compatibility and future use, if you choose.  
   
- If your Windows Form features a <xref:System.Windows.Forms.ToolBar> control with toolbar buttons, you will want to know which button the user clicks.  
+If your Windows Form features a <xref:System.Windows.Forms.ToolBar> control with toolbar buttons, you will want to know which button the user clicks.  
   
- On the <xref:System.Windows.Forms.ToolBar.ButtonClick> event of the <xref:System.Windows.Forms.ToolBar> control, you can evaluate the <xref:System.Windows.Forms.ToolBarButtonClickEventArgs.Button%2A> property of the <xref:System.Windows.Forms.ToolBarButtonClickEventArgs> class. In the example below, a message box is shown, indicating which button was clicked. For details, see <xref:System.Windows.Forms.MessageBox>.  
+On the <xref:System.Windows.Forms.ToolBar.ButtonClick> event of the <xref:System.Windows.Forms.ToolBar> control, you can evaluate the <xref:System.Windows.Forms.ToolBarButtonClickEventArgs.Button%2A> property of the <xref:System.Windows.Forms.ToolBarButtonClickEventArgs> class. In the example below, a message box is shown, indicating which button was clicked. For details, see <xref:System.Windows.Forms.MessageBox>.  
   
- The example below assumes a <xref:System.Windows.Forms.ToolBar> control has been added to a Windows Form.  
+The example below assumes a <xref:System.Windows.Forms.ToolBar> control has been added to a Windows Form.  
   
 ### To handle the Click event on a toolbar  
   

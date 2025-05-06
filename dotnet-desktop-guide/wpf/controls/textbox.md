@@ -16,18 +16,18 @@ The <xref:System.Windows.Controls.TextBox> control provides support for basic te
   
 ## In This Section  
 
- [TextBox Overview](textbox-overview.md)  
- [How-to Topics](textbox-how-to-topics.md)  
+[TextBox Overview](textbox-overview.md)  
+[How-to Topics](textbox-how-to-topics.md)  
   
 ## Reference  
 
- <xref:System.Windows.Controls.TextBox>  
+<xref:System.Windows.Controls.TextBox>  
   
- <xref:System.Windows.Controls.RichTextBox>  
+<xref:System.Windows.Controls.RichTextBox>  
   
- <xref:System.Windows.Controls.TextBlock>  
+<xref:System.Windows.Controls.TextBlock>  
   
- <xref:System.Windows.Controls.PasswordBox>  
+<xref:System.Windows.Controls.PasswordBox>  
   
 ## See also
 

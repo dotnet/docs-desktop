@@ -14,13 +14,13 @@ Affine transformations include rotating, scaling, reflecting, shearing, and tran
   
 ## In This Section  
 
- [Using the World Transformation](using-the-world-transformation.md)  
- Describes how to scale and rotate graphics using a world transformation matrix.  
+[Using the World Transformation](using-the-world-transformation.md)  
+Describes how to scale and rotate graphics using a world transformation matrix.  
   
- [Why Transformation Order Is Significant](why-transformation-order-is-significant.md)  
- Demonstrates why the order of transform operations is important.  
+[Why Transformation Order Is Significant](why-transformation-order-is-significant.md)  
+Demonstrates why the order of transform operations is important.  
   
 ## Reference  
 
- <xref:System.Drawing.Drawing2D.Matrix>  
- Describes this class and contains links to all of its members.
+<xref:System.Drawing.Drawing2D.Matrix>  
+Describes this class and contains links to all of its members.
