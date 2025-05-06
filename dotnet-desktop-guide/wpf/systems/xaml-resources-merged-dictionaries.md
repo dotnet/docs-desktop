@@ -31,7 +31,7 @@ In markup, you use the following syntax to introduce a merged resource dictionar
 </Page.Resources>
 ```
 
-The <xref:System.Windows.ResourceDictionary> element doesn't have an [x:Key Directive](../../../xaml-services/xkey-directive.md), which is generally required for all items in a resource collection. But another `ResourceDictionary` reference within the <xref:System.Windows.ResourceDictionary.MergedDictionaries%2A> collection is a special case, reserved for this merged resource dictionary scenario. Further, the `ResourceDictionary` that introduces a merged resource dictionary can't have an [x:Key Directive](../../../xaml-services/xkey-directive.md).
+The <xref:System.Windows.ResourceDictionary> element doesn't have an [x:Key Directive](../../xaml-services/xkey-directive.md), which is generally required for all items in a resource collection. But another `ResourceDictionary` reference within the <xref:System.Windows.ResourceDictionary.MergedDictionaries%2A> collection is a special case, reserved for this merged resource dictionary scenario. Further, the `ResourceDictionary` that introduces a merged resource dictionary can't have an [x:Key Directive](../../xaml-services/xkey-directive.md).
 
 Typically, each <xref:System.Windows.ResourceDictionary> within the <xref:System.Windows.ResourceDictionary.MergedDictionaries%2A> collection specifies a <xref:System.Windows.ResourceDictionary.Source%2A> attribute. The value of `Source` should be a uniform resource identifier (URI) that resolves to the location of the resources file to be merged. The destination of that URI must be another XAML file, with `ResourceDictionary` as its root element.
 

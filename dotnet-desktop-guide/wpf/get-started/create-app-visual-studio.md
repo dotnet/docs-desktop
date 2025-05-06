@@ -30,148 +30,13 @@ Here's a preview of the app created while following this tutorial:
 
 ## Prerequisites
 
-:::moniker range="netdesktop-6.0"
-
-> [!CAUTION]
-> .NET 6 is no longer supported. It's recommended that you use .NET 9.0.
-
-- [Visual Studio 2022 version 17.0 or later versions](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link&0utm_content=download+vs2022+desktopguide+wpf)
-  - Select the [.NET desktop development workload](/visualstudio/install/modify-visual-studio?view=vs-2019&preserve-view=true#modify-workloads)
-  - Select the [.NET 6 individual component](/visualstudio/install/modify-visual-studio?view=vs-2019&preserve-view=true#modify-individual-components)
-
-:::moniker-end
-
-:::moniker range="netdesktop-7.0"
-
-> [!CAUTION]
-> .NET 7 is no longer supported. It's recommended that you use .NET 9.0.
-
-- [Visual Studio 2022 version 17.4 or later versions](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link&0utm_content=download+vs2022+desktopguide+wpf)
-  - Select the [.NET desktop development workload](/visualstudio/install/modify-visual-studio?view=vs-2022&preserve-view=true#modify-workloads)
-  - Select the [.NET 7 individual component](/visualstudio/install/modify-visual-studio?view=vs-2022&preserve-view=true#modify-individual-components)
-
-:::moniker-end
-
-:::moniker range="netdesktop-8.0"
-
-- [Visual Studio 2022 version 17.8 or later versions](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link&0utm_content=download+vs2022+desktopguide+winforms)
-  - Select the [.NET desktop development workload](/visualstudio/install/modify-visual-studio?view=vs-2022&preserve-view=true#modify-workloads)
-  - Select the [.NET 8 individual component](/visualstudio/install/modify-visual-studio?view=vs-2022&preserve-view=true#modify-individual-components)
-
-:::moniker-end
-
-:::moniker range="netdesktop-9.0"
-
 - [Visual Studio 2022 version 17.12 or later versions](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link&0utm_content=download+vs2022+desktopguide+winforms)
   - Select the [.NET desktop development workload](/visualstudio/install/modify-visual-studio?view=vs-2022&preserve-view=true#modify-workloads)
   - Select the [.NET 9 individual component](/visualstudio/install/modify-visual-studio?view=vs-2022&preserve-view=true#modify-individual-components)
 
-:::moniker-end
-
 ## Create a WPF app
 
 The first step to creating a new app is opening Visual Studio and generating the app from a template.
-
-:::moniker range="netdesktop-6.0"
-
-01. Open Visual Studio.
-01. Select **Create a new project**.
-
-    :::image type="content" source="media/create-app-visual-studio/netdesktop-6.0/vs-create-new-project.png" alt-text="Create a new WPF project in Visual Studio 2022 for .NET. 6":::
-
-01. In the **Search for templates** box, type _wpf_, and then press <kbd>Enter</kbd>.
-01. In the **code language** dropdown, choose **C#** or **Visual Basic**.
-01. In the templates list, select **WPF Application** and then select **Next**.
-
-    > [!IMPORTANT]
-    > Don't select the **WPF Application (.NET _Framework_)** template.
-
-    The following image shows both C# and Visual Basic .NET project templates. If you applied the **code language** filter, only the template for that language is shown.
-
-    :::image type="content" source="media/create-app-visual-studio/netdesktop-6.0/vs-template-search.png" alt-text="Search for the WPF template in Visual Studio 2022 for .NET. 6":::
-
-01. In the **Configure your new project** window, do the following:
-
-    01. In the **Project name** box, enter _Names_.
-    01. Select the **Place solution and project in the same directory** check box.
-    01. Optionally, choose a different **Location** to save your code.
-    01. Select the **Next** button.
-
-    :::image type="content" source="media/create-app-visual-studio/netdesktop-6.0/vs-config-new-project.png" alt-text="Configure new WPF project in Visual Studio 2022 for .NET 6":::
-
-01. In the **Additional information** window, select **.NET 6.0 (Long-term support)** for **Target Framework**. Select the **Create** button.
-
-    :::image type="content" source="media/create-app-visual-studio/netdesktop-6.0/vs-config-new-project-next.png" alt-text="Select target framework for new WPF project in Visual Studio 2022 for .NET 6":::
-
-:::moniker-end
-
-:::moniker range="netdesktop-7.0"
-
-01. Open Visual Studio.
-01. Select **Create a new project**.
-
-    :::image type="content" source="media/create-app-visual-studio/netdesktop-7.0/vs-create-new-project.png" alt-text="Create a new WPF project in Visual Studio 2022 for .NET 7.":::
-
-01. In the **Search for templates** box, type _wpf_, and then press <kbd>Enter</kbd>.
-01. In the **code language** dropdown, choose **C#** or **Visual Basic**.
-01. In the templates list, select **WPF Application** and then select **Next**.
-
-    > [!IMPORTANT]
-    > Don't select the **WPF Application (.NET _Framework_)** template.
-
-    The following image shows both C# and Visual Basic .NET project templates. If you applied the **code language** filter, only the template for that language is shown.
-
-    :::image type="content" source="media/create-app-visual-studio/netdesktop-7.0/vs-template-search.png" alt-text="Search for the WPF template in Visual Studio 2022 for .NET. 7":::
-
-01. In the **Configure your new project** window, do the following:
-
-    01. In the **Project name** box, enter _Names_.
-    01. Select the **Place solution and project in the same directory** check box.
-    01. Optionally, choose a different **Location** to save your code.
-    01. Select the **Next** button.
-
-    :::image type="content" source="media/create-app-visual-studio/netdesktop-7.0/vs-config-new-project.png" alt-text="Configure new WPF project in Visual Studio 2022 for .NET 7":::
-
-01. In the **Additional information** window, select **.NET 7.0 (Standard Term Support)** for **Target Framework**. Select the **Create** button.
-
-    :::image type="content" source="media/create-app-visual-studio/netdesktop-7.0/vs-config-new-project-next.png" alt-text="Select target framework for new WPF project in Visual Studio 2022 for .NET 7":::
-
-:::moniker-end
-
-:::moniker range="netdesktop-8.0"
-
-01. Open Visual Studio.
-01. Select **Create a new project**.
-
-    :::image type="content" source="media/create-app-visual-studio/vs-start-1-intro.png" alt-text="A screenshot of the start dialog from Visual Studio 2022. The 'create a new project' button is highlighted with a red box.":::
-
-01. In the **Search for templates** box, type _wpf_, and then press <kbd>Enter</kbd>.
-01. In the **code language** dropdown, choose **C#** or **Visual Basic**.
-01. In the templates list, select **WPF Application** and then select **Next**.
-
-    > [!IMPORTANT]
-    > Don't select the **WPF Application (.NET _Framework_)** template.
-
-    The following image shows both C# and Visual Basic .NET project templates. If you applied the **code language** filter, only the template for that language is shown.
-
-    :::image type="content" source="media/create-app-visual-studio/vs-start-2-templates.png" alt-text="The term 'wpf' is in a search box and is highlighted with a red arrow. Two templates in the results list are highlighted with red boxes, C# and Visual Basic. The 'Next' button at the bottom-right of the screen is highlighted with a red box.":::
-
-01. In the **Configure your new project** window, do the following:
-
-    01. In the **Project name** box, enter _Names_.
-    01. Select the **Place solution and project in the same directory** check box.
-    01. Optionally, choose a different **Location** to save your code.
-    01. Select the **Next** button.
-
-    :::image type="content" source="media/create-app-visual-studio/vs-start-3-name.png" alt-text="A screenshot of the 'configure your new project' dialog from Visual Studio 2022. The 'Project name' textbox has the word 'Names' in it and is highlighted with a red box. The 'Place solution and project in the same directory' checkbox is checked and pointed to with a red arrow. The 'Next' button is also highlighted with a red box.":::
-
-01. In the **Additional information** window, select **.NET 8.0 (Long Term Support)** for **Target Framework**. Select the **Create** button.
-
-    :::image type="content" source="media/create-app-visual-studio/netdesktop-8.0/vs-start-4-framework.png" alt-text="A screenshot of the 'Additional information' dialog from Visual Studio 2022. The 'Framework' dropdown box has '.NET 8.0 (Long Term Support)' selected and highlighted with a red arrow. The 'Create' button is also highlighted with a red box.":::
-
-:::moniker-end
-
-:::moniker range="netdesktop-9.0"
 
 01. Open Visual Studio.
 01. Select **Create a new project**.
@@ -201,8 +66,6 @@ The first step to creating a new app is opening Visual Studio and generating the
 01. In the **Additional information** window, select **.NET 9.0 (Standard Term Support)** for **Target Framework**. Select the **Create** button.
 
     :::image type="content" source="media/create-app-visual-studio/netdesktop-9.0/vs-start-4-framework.png" alt-text="A screenshot of the 'Additional information' dialog from Visual Studio 2022. The 'Framework' dropdown box has '.NET 9.0 (Standard Term Support)' selected and highlighted with a red arrow. The 'Create' button is also highlighted with a red box.":::
-
-:::moniker-end
 
 Once the app is generated, Visual Studio should open the XAML designer window for the default window, _MainWindow_. If the designer isn't visible, double-click on the _MainWindow.xaml_ file in the **Solution Explorer** window to open the designer.
 

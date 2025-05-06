@@ -33,4 +33,4 @@ For attributes that are backed by events, XAML 2006 presumes that markup compila
 
 ## See also
 
-- [XAML overview (WPF .NET)](../net/wpf/xaml/index.md)
+- [XAML overview (WPF .NET)](../wpf/xaml/index.md)

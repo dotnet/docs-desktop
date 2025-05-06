@@ -45,5 +45,5 @@ Note that `null` is not necessarily the initial unset value for a reference-type
 ## See also
 
 - <xref:System.Windows.DependencyProperty.UnsetValue>
-- [XAML overview (WPF .NET)](../net/wpf/xaml/index.md)
+- [XAML overview (WPF .NET)](../wpf/xaml/index.md)
 - [Markup Extensions and WPF XAML](../wpf/advanced/markup-extensions-and-wpf-xaml.md)

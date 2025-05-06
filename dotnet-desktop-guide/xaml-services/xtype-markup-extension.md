@@ -82,6 +82,6 @@ In WPF, you can use XAML 2009 features but only for loose XAML (XAML that is not
 ## See also
 
 - <xref:System.Windows.Style>
-- [Styles and templates (WPF .NET)](../net/wpf/controls/styles-templates-overview.md)
-- [XAML overview (WPF .NET)](../net/wpf/xaml/index.md)
+- [Styles and templates (WPF .NET)](../wpf/controls/styles-templates-overview.md)
+- [XAML overview (WPF .NET)](../wpf/xaml/index.md)
 - [Markup Extensions and WPF XAML](../wpf/advanced/markup-extensions-and-wpf-xaml.md)

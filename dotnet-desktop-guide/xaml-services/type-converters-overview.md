@@ -116,4 +116,4 @@ If you are working with a XAML node stream, the action or end result of a type c
 
 - <xref:System.ComponentModel.TypeConverterAttribute>
 - [Type Converters and Markup Extensions for XAML](type-converters-and-markup-extensions.md)
-- [XAML overview (WPF .NET)](../net/wpf/xaml/index.md)
+- [XAML overview (WPF .NET)](../wpf/xaml/index.md)

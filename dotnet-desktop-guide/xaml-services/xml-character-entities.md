@@ -60,7 +60,7 @@ XAML handles XML processing instructions according to XML specifications, which 
 
 ## See also
 
-- [XAML overview (WPF .NET)](../net/wpf/xaml/index.md)
+- [XAML overview (WPF .NET)](../wpf/xaml/index.md)
 - [Markup Extensions and WPF XAML](../wpf/advanced/markup-extensions-and-wpf-xaml.md)
 - [XamlName Grammar](xamlname-grammar.md)
 - [White-space processing in XAML](white-space-processing.md)

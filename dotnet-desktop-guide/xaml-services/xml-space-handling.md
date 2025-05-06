@@ -40,4 +40,4 @@ For a complete discussion of white-space processing in XAML, see [White-space pr
 ## See also
 
 - [White-space processing in XAML](white-space-processing.md)
-- [XAML overview (WPF .NET)](../net/wpf/xaml/index.md)
+- [XAML overview (WPF .NET)](../wpf/xaml/index.md)

@@ -27,7 +27,7 @@ The following example defines a <xref:System.Windows.Media.SolidColorBrush> as a
 
 Every framework-level element (<xref:System.Windows.FrameworkElement> or <xref:System.Windows.FrameworkContentElement>) has a <xref:System.Windows.FrameworkElement.Resources%2A> property, which is a <xref:System.Windows.ResourceDictionary> type that contains defined resources. You can define resources on any element, such as a <xref:System.Windows.Controls.Button>. However, resources are most often defined on the root element, which is <xref:System.Windows.Window> in the example.
 
-Each resource in a resource dictionary must have a unique key. When you define resources in markup, you assign the unique key through the [x:Key Directive](../../../xaml-services/xkey-directive.md). Typically, the key is a string; however, you can also set it to other object types by using the appropriate markup extensions. Non-string keys for resources are used by certain feature areas in WPF, notably for styles, component resources, and data styling.
+Each resource in a resource dictionary must have a unique key. When you define resources in markup, you assign the unique key through the [x:Key Directive](../../xaml-services/xkey-directive.md). Typically, the key is a string; however, you can also set it to other object types by using the appropriate markup extensions. Non-string keys for resources are used by certain feature areas in WPF, notably for styles, component resources, and data styling.
 
 You can use a defined resource with the resource markup extension syntax that specifies the key name of the resource. For example, use the resource as the value of a property on another element.
 
@@ -72,7 +72,7 @@ Static resource references work best for the following circumstances:
 
 - You're using resources to set large numbers of dependency properties. Dependency properties have effective value caching as enabled by the property system, so if you provide a value for a dependency property that can be evaluated at load time, the dependency property doesn't have to check for a reevaluated expression and can return the last effective value. This technique can be a performance benefit.
 
-- You want to change the underlying resource for all consumers, or you want to maintain separate writable instances for each consumer by using the [x:Shared Attribute](../../../xaml-services/xshared-attribute.md).
+- You want to change the underlying resource for all consumers, or you want to maintain separate writable instances for each consumer by using the [x:Shared Attribute](../../xaml-services/xshared-attribute.md).
 
 ### Static resource lookup behavior
 
@@ -152,17 +152,17 @@ Although all items in a <xref:System.Windows.ResourceDictionary> must have a key
 
 One important scenario for resources is when you define a <xref:System.Windows.Style>. In fact, a <xref:System.Windows.Style> is almost always defined as an entry in a resource dictionary, because styles are inherently intended for reuse. For more information about styles, see [Styles and templates (WPF .NET)](../controls/styles-templates-overview.md).
 
-Styles for controls can be both created with and referenced with an implicit key. The theme styles that define the default appearance of a control rely on this implicit key. From the standpoint of requesting it, the implicit key is the <xref:System.Type> of the control itself. From the standpoint of defining the resources, the implicit key is the <xref:System.Windows.Style.TargetType%2A> of the style. As such, if you're creating themes for custom controls or creating styles that interact with existing theme styles, you don't need to specify an [x:Key Directive](../../../xaml-services/xkey-directive.md) for that <xref:System.Windows.Style>. And if you want to use the themed styles, you don't need to specify any style at all. For instance, the following style definition works, even though the <xref:System.Windows.Style> resource doesn't appear to have a key:
+Styles for controls can be both created with and referenced with an implicit key. The theme styles that define the default appearance of a control rely on this implicit key. From the standpoint of requesting it, the implicit key is the <xref:System.Type> of the control itself. From the standpoint of defining the resources, the implicit key is the <xref:System.Windows.Style.TargetType%2A> of the style. As such, if you're creating themes for custom controls or creating styles that interact with existing theme styles, you don't need to specify an [x:Key Directive](../../xaml-services/xkey-directive.md) for that <xref:System.Windows.Style>. And if you want to use the themed styles, you don't need to specify any style at all. For instance, the following style definition works, even though the <xref:System.Windows.Style> resource doesn't appear to have a key:
 
 :::code language="xaml" source="./snippets/xaml-resources-overview/csharp/ImplicitStyle.xaml" id="ImplicitStyle":::
 
-That style really does have a key: the implicit key: the `System.Windows.Controls.Button` type. In markup, you can specify a <xref:System.Windows.Style.TargetType%2A> directly as the type name (or you can optionally use [{x:Type...}](../../../xaml-services/xtype-markup-extension.md) to return a <xref:System.Type>.
+That style really does have a key: the implicit key: the `System.Windows.Controls.Button` type. In markup, you can specify a <xref:System.Windows.Style.TargetType%2A> directly as the type name (or you can optionally use [{x:Type...}](../../xaml-services/xtype-markup-extension.md) to return a <xref:System.Type>.
 
 Through the default theme style mechanisms used by WPF, that style is applied as the runtime style of a <xref:System.Windows.Controls.Button> on the page, even though the <xref:System.Windows.Controls.Button> itself doesn't attempt to specify its <xref:System.Windows.FrameworkElement.Style%2A> property or a specific resource reference to the style. Your style defined in the page is found earlier in the lookup sequence than the theme dictionary style, using the same key that the theme dictionary style has. You could just specify `<Button>Hello</Button>` anywhere in the page, and the style you defined with <xref:System.Windows.Style.TargetType%2A> of `Button` would apply to that button. If you want, you can still explicitly key the style with the same type value as <xref:System.Windows.Style.TargetType%2A> for clarity in your markup, but that is optional.
 
 Implicit keys for styles don't apply on a control if <xref:System.Windows.FrameworkElement.OverridesDefaultStyle%2A> is `true`. (Also note that <xref:System.Windows.FrameworkElement.OverridesDefaultStyle%2A> might be set as part of native behavior for the control class, rather than explicitly on an instance of the control.) Also, to support implicit keys for derived class scenarios, the control must override <xref:System.Windows.FrameworkElement.DefaultStyleKey%2A> (all existing controls provided as part of WPF include this override). For more information about styles, themes, and control design, see [Guidelines for Designing Stylable Controls](../controls/guidelines-for-designing-stylable-controls.md).
 
-<xref:System.Windows.DataTemplate> also has an implicit key. The implicit key for a <xref:System.Windows.DataTemplate> is the <xref:System.Windows.DataTemplate.DataType%2A> property value. <xref:System.Windows.DataTemplate.DataType%2A> can also be specified as the name of the type rather than explicitly using [{x:Type...}](../../../xaml-services/xtype-markup-extension.md). For details, see [Data Templating Overview](../data/data-templating-overview.md).
+<xref:System.Windows.DataTemplate> also has an implicit key. The implicit key for a <xref:System.Windows.DataTemplate> is the <xref:System.Windows.DataTemplate.DataType%2A> property value. <xref:System.Windows.DataTemplate.DataType%2A> can also be specified as the name of the type rather than explicitly using [{x:Type...}](../../xaml-services/xtype-markup-extension.md). For details, see [Data Templating Overview](../data/data-templating-overview.md).
 
 ## See also
 
@@ -171,7 +171,7 @@ Implicit keys for styles don't apply on a control if <xref:System.Windows.Framew
 - [How to define and reference a WPF resource](xaml-resources-how-to-define-and-reference.md)
 - [How to use system resources](xaml-resources-how-to-use-system.md)
 - [How to use application resources](xaml-resources-how-to-use-application.md)
-- [x:Type markup extension](../../../xaml-services/xtype-markup-extension.md)
+- [x:Type markup extension](../../xaml-services/xtype-markup-extension.md)
 - <xref:System.Windows.ResourceDictionary>
 - [Application resources](../advanced/optimizing-performance-application-resources.md)
 - [Define and reference a resource](xaml-resources-how-to-define-and-reference.md)

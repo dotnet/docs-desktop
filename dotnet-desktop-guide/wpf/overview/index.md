@@ -41,7 +41,7 @@ When you are upgrading your application from .NET Framework to .NET, you will be
 - Improved accessibility and reliability
 - Updated tooling and more
 
-To learn how to upgrade your application, see [How to upgrade a WPF desktop app to .NET 7](../migration/index.md).
+To learn how to upgrade your application, see [How to upgrade a WPF desktop app to .NET](../migration/index.md).
 
 ## Program with WPF
 
@@ -494,7 +494,7 @@ For more information on custom controls, see [Control authoring overview](../con
 ## See also
 
 - [Tutorial: Create a new WPF app](../get-started/create-app-visual-studio.md)
-- [Migrate a WPF app to .NET](../migration/convert-project-from-net-framework.md)
+- [Migrate a WPF app to .NET](../migration/index.md)
 - [Overview of WPF windows](../windows/index.md)
 - [Data binding overview](../data/index.md)
 - [XAML overview](../xaml/index.md)
