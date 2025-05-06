@@ -49,5 +49,5 @@ Code declared within `x:Code` for WPF has several notable limitations:
 ## See also
 
 - [x:Class Directive](xclass-directive.md)
-- [Code-Behind and XAML in WPF](../framework/wpf/advanced/code-behind-and-xaml-in-wpf.md)
-- [XAML overview (WPF .NET)](../net/wpf/xaml/index.md)
+- [Code-Behind and XAML in WPF](../wpf/advanced/code-behind-and-xaml-in-wpf.md)
+- [XAML overview (WPF .NET)](../wpf/xaml/index.md)

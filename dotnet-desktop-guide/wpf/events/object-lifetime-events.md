@@ -76,7 +76,7 @@ The WPF event system raises the <xref:System.Windows.FrameworkElement.Loaded> ev
 - After the layout system has calculated all necessary values for rendering.
 - Before final rendering.
 
-The `Loaded` event isn't raised on any element in an element tree until _all_ elements within the [logical tree](/dotnet/desktop/wpf/advanced/trees-in-wpf#the-purpose-of-the-logical-tree) are loaded. The WPF event system first raises the `Loaded` event on the root element of an element tree, then on each successive child element down to the most deeply nested element(s). Although this event might resemble a [tunneling](<xref:System.Windows.RoutingStrategy.Tunnel>) routed event, the `Loaded` event doesn't carry event data from one element to another, so marking the event as handled has no effect.
+The `Loaded` event isn't raised on any element in an element tree until _all_ elements within the [logical tree](../advanced/trees-in-wpf.md#the-purpose-of-the-logical-tree) are loaded. The WPF event system first raises the `Loaded` event on the root element of an element tree, then on each successive child element down to the most deeply nested element(s). Although this event might resemble a [tunneling](<xref:System.Windows.RoutingStrategy.Tunnel>) routed event, the `Loaded` event doesn't carry event data from one element to another, so marking the event as handled has no effect.
 
 > [!NOTE]
 > The WPF event system can't guarantee that asynchronous data bindings have completed before the `Loaded` event. Asynchronous data bindings bind to external or dynamic sources.
@@ -107,5 +107,5 @@ From the lifetime events perspective, there are four main types of WPF objects: 
 - <xref:System.Windows.FrameworkElement.Unloaded>
 - [Handle a Loaded Event](/dotnet/desktop/wpf/advanced/how-to-handle-a-loaded-event?view=netframeworkdesktop-4.8&preserve-view=true)
 - [The Loaded event and the Initialized event](/archive/blogs/mikehillberg/the-loaded-event-and-the-initialized-event)
-- [Trees in WPF](/dotnet/desktop/wpf/advanced/trees-in-wpf)
+- [Trees in WPF](../advanced/trees-in-wpf.md)
 - [Routed events overview](routed-events-overview.md)

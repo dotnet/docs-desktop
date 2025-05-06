@@ -31,7 +31,7 @@ In markup, you use the following syntax to introduce a merged resource dictionar
 </Page.Resources>
 ```
 
-The <xref:System.Windows.ResourceDictionary> element doesn't have an [x:Key Directive](../../../xaml-services/xkey-directive.md), which is generally required for all items in a resource collection. But another `ResourceDictionary` reference within the <xref:System.Windows.ResourceDictionary.MergedDictionaries%2A> collection is a special case, reserved for this merged resource dictionary scenario. Further, the `ResourceDictionary` that introduces a merged resource dictionary can't have an [x:Key Directive](../../../xaml-services/xkey-directive.md).
+The <xref:System.Windows.ResourceDictionary> element doesn't have an [x:Key Directive](../../xaml-services/xkey-directive.md), which is generally required for all items in a resource collection. But another `ResourceDictionary` reference within the <xref:System.Windows.ResourceDictionary.MergedDictionaries%2A> collection is a special case, reserved for this merged resource dictionary scenario. Further, the `ResourceDictionary` that introduces a merged resource dictionary can't have an [x:Key Directive](../../xaml-services/xkey-directive.md).
 
 Typically, each <xref:System.Windows.ResourceDictionary> within the <xref:System.Windows.ResourceDictionary.MergedDictionaries%2A> collection specifies a <xref:System.Windows.ResourceDictionary.Source%2A> attribute. The value of `Source` should be a uniform resource identifier (URI) that resolves to the location of the resources file to be merged. The destination of that URI must be another XAML file, with `ResourceDictionary` as its root element.
 
@@ -59,7 +59,7 @@ For resources that are compiled as part of the project, you can use a relative p
 
 <a name="packuri"></a>
 
-A related technique is to use a **Pack URI** to a XAML file, and refer to it as **Source**. **Pack URI** enables references to components of referenced assemblies and other techniques. For more information on **Pack URIs**, see [WPF Application Resource, Content, and Data Files](../../../framework/wpf/app-development/wpf-application-resource-content-and-data-files.md).
+A related technique is to use a **Pack URI** to a XAML file, and refer to it as **Source**. **Pack URI** enables references to components of referenced assemblies and other techniques. For more information on **Pack URIs**, see [WPF Application Resource, Content, and Data Files](../app-development/wpf-application-resource-content-and-data-files.md).
 
 For resources that aren't compiled as part of the project, the URI is evaluated at run time. You can use a common URI transport such as _file:_ or _http:_ to refer to the resource file. The disadvantage of using the non-compiled resource approach is that _file:_ access requires additional deployment steps, and _http:_ access implies the Internet security zone.
 
@@ -71,12 +71,12 @@ Writing merged dictionaries as local application files or to local shared storag
 
 ## Localization
 
-If resources that need to be localized are isolated to dictionaries that are merged into primary dictionaries, and kept as loose XAML, these files can be localized separately. This technique is a lightweight alternative to localizing the satellite resource assemblies. For details, see [WPF Globalization and Localization Overview](../../../framework/wpf/advanced/wpf-globalization-and-localization-overview.md).
+If resources that need to be localized are isolated to dictionaries that are merged into primary dictionaries, and kept as loose XAML, these files can be localized separately. This technique is a lightweight alternative to localizing the satellite resource assemblies. For details, see [WPF Globalization and Localization Overview](../advanced/wpf-globalization-and-localization-overview.md).
 
 ## See also
 
 - <xref:System.Windows.ResourceDictionary>
 - [Overview of XAML resources](xaml-resources-overview.md)
 - [Resources in code](xaml-resources-and-code.md)
-- [WPF Application Resource, Content, and Data Files](../../../framework/wpf/app-development/wpf-application-resource-content-and-data-files.md)
-- [WPF Globalization and Localization Overview](../../../framework/wpf/advanced/wpf-globalization-and-localization-overview.md)
+- [WPF Application Resource, Content, and Data Files](../app-development/wpf-application-resource-content-and-data-files.md)
+- [WPF Globalization and Localization Overview](../advanced/wpf-globalization-and-localization-overview.md)

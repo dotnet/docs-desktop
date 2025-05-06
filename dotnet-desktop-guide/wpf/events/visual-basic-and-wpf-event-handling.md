@@ -37,7 +37,7 @@ You can assign different handlers for the same event with multiple `Handles` sta
 
 ## Using 'Handles' in a WPF application
 
-For an object defined in XAML, the [Handles](/dotnet/visual-basic/language-reference/statements/handles-clause) event syntax `<object name>.<event name>` requires the XAML element that represents the object to have a <xref:System.Windows.FrameworkContentElement.Name%2A> or [x:Name](/dotnet/desktop/xaml-services/xname-directive) property. However, a name property isn't required for the XAML page root element, for which you can use the name `Me`. The following example shows how to attach an event handler to an XAML page root using `Handles`.
+For an object defined in XAML, the [Handles](/dotnet/visual-basic/language-reference/statements/handles-clause) event syntax `<object name>.<event name>` requires the XAML element that represents the object to have a <xref:System.Windows.FrameworkContentElement.Name%2A> or [x:Name](../../xaml-services/xname-directive.md) property. However, a name property isn't required for the XAML page root element, for which you can use the name `Me`. The following example shows how to attach an event handler to an XAML page root using `Handles`.
 
 :::code language="vb" source="./snippets/visual-basic-and-wpf-event-handling/vb/MainWindow.xaml.vb" id="Window_Loaded":::
 

@@ -60,5 +60,5 @@ The following XAML code represents a simple window that does the following:
 
 - [Data binding overview](index.md)
 - [Binding sources overview](binding-sources-overview.md)
-- [StaticResource Markup Extension](../../../framework/wpf/advanced/staticresource-markup-extension.md)
+- [StaticResource Markup Extension](../advanced/staticresource-markup-extension.md)
 - [An alternative way to bind to an enumeration](https://brianlagunas.com/a-better-way-to-data-bind-enums-in-wpf/)

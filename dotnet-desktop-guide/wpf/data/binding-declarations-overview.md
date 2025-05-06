@@ -24,7 +24,7 @@ Typically, developers declare the bindings directly in the XAML markup of the UI
 
 ## Prerequisites
 
-Before reading this article, it's important that you're familiar with the concept and usage of markup extensions. For more information about markup extensions, see [Markup Extensions and WPF XAML](../../../framework/wpf/advanced/markup-extensions-and-wpf-xaml.md).
+Before reading this article, it's important that you're familiar with the concept and usage of markup extensions. For more information about markup extensions, see [Markup Extensions and WPF XAML](../advanced/markup-extensions-and-wpf-xaml.md).
 
 This article doesn't cover data binding concepts. For a discussion of data binding concepts, see [Data binding overview](index.md#basic-data-binding-concepts).
 
@@ -41,7 +41,7 @@ The previous example uses a simple data object type of `Person`. The following s
 :::code language="csharp" source="./snippets/binding-declarations-overview/csharp/Person.cs" id="Person":::
 :::code language="vb" source="./snippets/binding-declarations-overview/vb/Person.vb" id="Person":::
 
-You can specify most of the properties of the <xref:System.Windows.Data.Binding> class this way. For more information about the binding extension and for a list of <xref:System.Windows.Data.Binding> properties that cannot be set using the binding extension, see the [Binding Markup Extension (.NET Framework)](../../../framework/wpf/advanced/binding-markup-extension.md) overview.
+You can specify most of the properties of the <xref:System.Windows.Data.Binding> class this way. For more information about the binding extension and for a list of <xref:System.Windows.Data.Binding> properties that cannot be set using the binding extension, see the [Binding Markup Extension (.NET Framework)](../advanced/binding-markup-extension.md) overview.
 
 For an example on creating a binding in XAML, see [How to create a data binding](how-to-create-a-simple-binding.md).
 
@@ -53,7 +53,7 @@ The previous section demonstrated how to bind with a XAML extension. The followi
 
 :::code language="xaml" source="./snippets/binding-declarations-overview/csharp/ExampleBinding.xaml" range="40-44":::
 
-For more information about the different terms, see [XAML Syntax In Detail (.NET Framework)](../../../framework/wpf/advanced/xaml-syntax-in-detail.md).
+For more information about the different terms, see [XAML Syntax In Detail (.NET Framework)](../advanced/xaml-syntax-in-detail.md).
 
 ### MultiBinding and PriorityBinding
 
@@ -73,7 +73,7 @@ The previous code set the following on the binding:
 - The data source, in this case, a simple object instance representing a person.
 - An optional converter that processes the value coming in from the data source object before it's assigned to the target property.
 
-When the object you're binding is a <xref:System.Windows.FrameworkElement> or a <xref:System.Windows.FrameworkContentElement>, you can call the `SetBinding` method on your object directly instead of using <xref:System.Windows.Data.BindingOperations.SetBinding%2A?displayProperty=nameWithType>. For an example, see [How to: Create a Binding in Code](../../../framework/wpf/data/how-to-create-a-binding-in-code.md).
+When the object you're binding is a <xref:System.Windows.FrameworkElement> or a <xref:System.Windows.FrameworkContentElement>, you can call the `SetBinding` method on your object directly instead of using <xref:System.Windows.Data.BindingOperations.SetBinding%2A?displayProperty=nameWithType>. For an example, see [How to: Create a Binding in Code](../data/how-to-create-a-binding-in-code.md).
 
 The previous example uses a simple data object type of `Person`. The following is the code for that object:
 
@@ -154,7 +154,7 @@ The default behavior is as follows if not specified in the declaration:
 
 - If you don't set <xref:System.Windows.Data.Binding.ConverterCulture%2A>, the binding engine uses the `Language` property of the binding target object. In XAML, this defaults to `en-US` or inherits the value from the root element (or any element) of the page, if one has been explicitly set.
 
-- As long as the binding already has a data context (for example, the inherited data context coming from a parent element), and whatever item or collection being returned by that context is appropriate for binding without requiring further path modification, a binding declaration can have no clauses at all: `{Binding}`. This is often the way a binding is specified for data styling, where the binding acts upon a collection. For more information, see [Using Entire Objects as a Binding Source](../../../framework/wpf/data/binding-sources-overview.md#using-entire-objects-as-a-binding-source).
+- As long as the binding already has a data context (for example, the inherited data context coming from a parent element), and whatever item or collection being returned by that context is appropriate for binding without requiring further path modification, a binding declaration can have no clauses at all: `{Binding}`. This is often the way a binding is specified for data styling, where the binding acts upon a collection. For more information, see [Using Entire Objects as a Binding Source](../data/binding-sources-overview.md#entire-objects-as-a-binding-source).
 
 - The default <xref:System.Windows.Data.Binding.Mode%2A> varies between one-way and two-way depending on the dependency property that is being bound. You can always declare the binding mode explicitly to ensure that your binding has the desired behavior. In general, user-editable control properties, such as <xref:System.Windows.Controls.TextBox.Text%2A?displayProperty=nameWithType> and <xref:System.Windows.Controls.Primitives.RangeBase.Value%2A?displayProperty=nameWithType>, default to two-way bindings, but most other properties default to one-way bindings.
 
@@ -165,4 +165,4 @@ The default behavior is as follows if not specified in the declaration:
 - [Data binding overview](index.md)
 - [Binding sources overview](binding-sources-overview.md)
 - [How to create a data binding](how-to-create-a-simple-binding.md)
-- [PropertyPath XAML Syntax (.NET Framework)](../../../framework/wpf/advanced/propertypath-xaml-syntax.md)
+- [PropertyPath XAML Syntax (.NET Framework)](../advanced/propertypath-xaml-syntax.md)

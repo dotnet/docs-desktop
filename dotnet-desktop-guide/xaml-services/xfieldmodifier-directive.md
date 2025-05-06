@@ -51,8 +51,8 @@ By default, the partial class for the root element is public; however, you can m
 
 ## See also
 
-- [XAML and Custom Classes for WPF](../framework/wpf/advanced/xaml-and-custom-classes-for-wpf.md)
-- [Code-Behind and XAML in WPF](../framework/wpf/advanced/code-behind-and-xaml-in-wpf.md)
+- [XAML and Custom Classes for WPF](../wpf/advanced/xaml-and-custom-classes-for-wpf.md)
+- [Code-Behind and XAML in WPF](../wpf/advanced/code-behind-and-xaml-in-wpf.md)
 - [x:Name Directive](xname-directive.md)
-- [Building a WPF Application (WPF)](../framework/wpf/app-development/building-a-wpf-application-wpf.md)
+- [Building a WPF Application (WPF)](../wpf/app-development/building-a-wpf-application-wpf.md)
 - [x:ClassModifier Directive](xclassmodifier-directive.md)

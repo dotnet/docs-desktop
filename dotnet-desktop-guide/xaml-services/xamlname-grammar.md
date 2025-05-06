@@ -43,7 +43,7 @@ Which assumes the following general category values as defined in the Unicode Ch
 | Nd                 | Number, Decimal               |
 | Nl                 | Number, Letter                |
 
-XAML defines a second grammar, DottedXamlName, that is used for property and event qualified references, and also for attached members. For more information, see <xref:System.Windows.DependencyProperty> and [XAML overview (WPF .NET)](../net/wpf/xaml/index.md).
+XAML defines a second grammar, DottedXamlName, that is used for property and event qualified references, and also for attached members. For more information, see <xref:System.Windows.DependencyProperty> and [XAML overview (WPF .NET)](../wpf/xaml/index.md).
 
 String values that are of type DottedXamlName must conform to the following grammar:
 

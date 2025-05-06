@@ -3,20 +3,48 @@ items:
   tocHref: /dotnet
   topicHref: /dotnet/index
   items:
-  - name: Windows Forms
-    tocHref: /dotnet/desktop/winforms
-    topicHref: /dotnet/desktop/winforms/index
+  - name: Windows Desktop
+    tocHref: /dotnet/desktop/
+    topicHref: /dotnet/desktop/index
     items:
-    - name: Controls
-      tocHref: /dotnet/desktop/winforms/controls
-      topicHref: /dotnet/desktop/winforms/controls/index
-    - name: Design
-      tocHref: /dotnet/desktop/winforms/controls-design
-      topicHref: /dotnet/desktop/winforms/controls-design/index
-    - name: Advanced
-      tocHref: /dotnet/desktop/winforms/advanced
-      topicHref: /dotnet/desktop/winforms/advanced/index
-  - name: Windows Presentation Foundation
-    tocHref: /dotnet/desktop/wpf
-    topicHref: /dotnet/desktop/wpf/index
 
+    - name: WinForms
+      tocHref: /dotnet/desktop/winforms
+      topicHref: /dotnet/desktop/winforms/index
+      items:
+      - name: Controls
+        tocHref: /dotnet/desktop/winforms/controls
+        topicHref: /dotnet/desktop/winforms/controls/index
+      - name: Design
+        tocHref: /dotnet/desktop/winforms/controls-design
+        topicHref: /dotnet/desktop/winforms/controls-design/index
+      - name: Advanced
+        tocHref: /dotnet/desktop/winforms/advanced
+        topicHref: /dotnet/desktop/winforms/advanced/index
+
+    - name: WPF
+      tocHref: /dotnet/desktop/wpf
+      topicHref: /dotnet/desktop/wpf/index
+      items:
+      - name: Application Development
+        tocHref: /dotnet/desktop/wpf/app-development
+        topicHref: /dotnet/desktop/wpf/app-development/index
+      - name: Advanced
+        tocHref: /dotnet/desktop/wpf/advanced
+        topicHref: /dotnet/desktop/wpf/advanced/index
+      - name: Controls
+        tocHref: /dotnet/desktop/wpf/controls
+        topicHref: /dotnet/desktop/wpf/controls/index
+      - name: Data
+        tocHref: /dotnet/desktop/wpf/data
+        topicHref: /dotnet/desktop/wpf/data/index
+      - name: Graphics
+        tocHref: /dotnet/desktop/wpf/graphics-multimedia
+        topicHref: /dotnet/desktop/wpf/graphics-multimedia/index
+      - name: Data
+        tocHref: /dotnet/desktop/wpf/data
+        topicHref: /dotnet/desktop/wpf/data/index
+
+    - name: XAML
+      tocHref: /dotnet/desktop/xaml-services
+      topicHref: /dotnet/desktop/xaml-services/index

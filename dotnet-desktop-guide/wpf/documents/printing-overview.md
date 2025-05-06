@@ -59,7 +59,7 @@ WPF applications natively support the XPS print path, and can use XPS print APIs
 
 The following illustration shows the print subsystem and defines the portions provided by Microsoft and independent software and hardware vendors.
 
-![Screenshot showing the XPS print system.](~/framework/wpf/advanced/media/printing-overview/xml-paper-specification-print-system.png)
+:::image type="content" source="../advanced/media/printing-overview/xml-paper-specification-print-system.png" alt-text="Screenshot showing the XPS print system.":::
 
 ### Basic XPS printing
 

@@ -17,27 +17,20 @@
       "breadcrumb_path": "/dotnet/desktop/breadcrumb/toc.json",
       "feedback_system": "GitHub",
       "feedback_github_repo": "dotnet/docs-desktop",
-      "feedback_product_url": "https://developercommunity.visualstudio.com/spaces/61/index.html",
+      "feedback_product_url": "https://developercommunity.visualstudio.com/VisualStudio",
       "author": "adegeo",
       "uhfHeaderId": "MSDocsHeader-DotNet",
       "ms.author": "adegeo"
     },
     "fileMetadata": {
-      "breadcrumb_path": {
-        "xaml-services/**/**.md": "/dotnet/desktop/xaml-services/breadcrumb/toc.json"
-      },
       "titleSuffix": {
-        "framework/winforms/**/**.md": "Windows Forms .NET Framework",
         "winforms/**/**.md": "Windows Forms",
-        "framework/wpf/**/**.md": "WPF .NET Framework",
-        "net/wpf/**/**.md": "WPF .NET",
+        "wpf/**/**.md": "WPF",
         "xaml-services/**/*.md": "XAML"
       },
       "ms.subservice": {
-        "framework/winforms/**/**.md": "winforms",
-        "framework/wpf/**/**.md": "wpf",
         "winforms/**/**.md": "winforms",
-        "net/wpf/**/**.md": "wpf",
+        "wpf/**/**.md": "wpf",
         "xaml-services/**/*.md": "wpf"
       },
       "ms.service": {
@@ -45,10 +38,8 @@
         "xaml-services/**/*.yml": "dotnet-desktop"
       },
       "ms.topic": {
-        "framework/winforms/**/**.md": "conceptual",
-        "framework/wpf/**/**.md": "conceptual",
         "winforms/**/**.md": "conceptual",
-        "net/wpf/**/**.md": "conceptual",
+        "wpf/**/**.md": "conceptual",
         "winforms/compiler-messages/**.md": "error-reference",
         "winforms/wfdev-diagnostics/**.md": "error-reference",
         "xaml-services/**/*.md": "reference",

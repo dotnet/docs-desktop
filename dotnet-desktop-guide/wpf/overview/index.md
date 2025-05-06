@@ -11,7 +11,7 @@ dev_langs:
 #Customer intent: As a developer, I want to understand the components of WPF so that I can understand the overall picture of WPF.
 ---
 
-# Desktop Guide
+# Windows Presentation Foundation Overview
 
 Welcome to the Desktop Guide for Windows Presentation Foundation (WPF), a UI framework that is resolution-independent and uses a vector-based rendering engine, built to take advantage of modern graphics hardware. WPF provides a comprehensive set of application-development features that include Extensible Application Markup Language (XAML), controls, data binding, layout, 2D and 3D graphics, animation, styles, templates, documents, media, text, and typography. WPF is part of .NET, so you can build applications that incorporate other elements of the .NET API.
 
@@ -27,7 +27,7 @@ There are two implementations of WPF:
 
     The .NET Framework implementation of WPF that's supported by Visual Studio 2019 and Visual Studio 2017.
 
-    .NET Framework 4 is a Windows-only version of .NET and is considered a Windows Operating System component. This version of WPF is distributed with .NET Framework. For more information about the .NET Framework version of WPF, see [Introduction to WPF for .NET Framework](../../../framework/wpf/introduction-to-wpf.md?view=netframeworkdesktop-4.8&preserve-view=true).
+    .NET Framework 4 is a Windows-only version of .NET and is considered a Windows Operating System component. This version of WPF is distributed with .NET Framework. For more information about the .NET Framework version of WPF, see [Introduction to WPF for .NET Framework](../introduction-to-wpf.md?view=netframeworkdesktop-4.8&preserve-view=true).
 
 This overview is intended for newcomers and covers the key capabilities and concepts of WPF. To learn how to create a WPF app, see [Tutorial: Create a new WPF app](../get-started/create-app-visual-studio.md).
 
@@ -41,7 +41,7 @@ When you are upgrading your application from .NET Framework to .NET, you will be
 - Improved accessibility and reliability
 - Updated tooling and more
 
-To learn how to upgrade your application, see [How to upgrade a WPF desktop app to .NET 7](../migration/index.md).
+To learn how to upgrade your application, see [How to upgrade a WPF desktop app to .NET](../migration/index.md).
 
 ## Program with WPF
 
@@ -62,7 +62,7 @@ WPF lets you develop an application using both *markup* and *code-behind*, an ex
 
 - Development is more efficient because designers can implement an application's appearance simultaneously with developers who are implementing the application's behavior.
 
-- [Globalization and localization](../../../framework/wpf/advanced/wpf-globalization-and-localization-overview.md) for WPF applications is simplified.
+- [Globalization and localization](../advanced/wpf-globalization-and-localization-overview.md) for WPF applications is simplified.
 
 ### Markup
 
@@ -88,7 +88,7 @@ The following figure shows the user interface (UI) that is defined by the XAML i
 
 :::image type="content" source="media/index/markup-window-button.png" alt-text="A window that contains a button":::
 
-Since XAML is XML-based, the UI that you compose with it is assembled in a hierarchy of nested elements that is known as an [element tree](../../../framework/wpf/advanced/trees-in-wpf.md). The element tree provides a logical and intuitive way to create and manage UIs.
+Since XAML is XML-based, the UI that you compose with it is assembled in a hierarchy of nested elements that is known as an [element tree](../advanced/trees-in-wpf.md). The element tree provides a logical and intuitive way to create and manage UIs.
 
 ### Code-behind
 
@@ -183,7 +183,7 @@ The user experiences that are delivered by the application model are constructed
 - Have a user interface.
 - Implement some behavior.
 
-For more information, see [Controls](../../../framework/wpf/controls/index.md).
+For more information, see [Controls](../controls/index.md).
 
 ### WPF controls by function
 
@@ -312,13 +312,13 @@ WPF provides a library of common vector-drawn 2D shapes, such as the rectangles 
 
 The 2D shapes provided by WPF cover the standard set of basic shapes. However, you may need to create custom shapes to help the design of a customized user interface. WPF provides geometries to create a custom shape that can be drawn directly, used as a brush, or used to clip other shapes and controls.
 
-For more information, see [Geometry overview](../../../framework/wpf/graphics-multimedia/geometry-overview.md).
+For more information, see [Geometry overview](../graphics-multimedia/geometry-overview.md).
 
 A subset of WPF 2D capabilities includes visual effects, such as gradients, bitmaps, drawings, painting with videos, rotation, scaling, and skewing. These effects are all achieved with brushes. The following figure shows some examples:
 
 :::image type="content" source="media/index/graphics-brushes.png" alt-text="Illustration of different brushes":::
 
-For more information, see [WPF brushes overview](../../../framework/wpf/graphics-multimedia/wpf-brushes-overview.md).
+For more information, see [WPF brushes overview](../graphics-multimedia/wpf-brushes-overview.md).
 
 ### 3D rendering
 
@@ -326,7 +326,7 @@ WPF also includes 3D rendering capabilities that integrate with 2D graphics to a
 
 :::image type="content" source="media/index/graphics-3d.png" alt-text="Visual3D sample screen shot":::
 
-For more information, see [3D graphics overview](../../../framework/wpf/graphics-multimedia/3-d-graphics-overview.md).
+For more information, see [3D graphics overview](../graphics-multimedia/3-d-graphics-overview.md).
 
 ### Animation
 
@@ -334,7 +334,7 @@ WPF animation support lets you make controls grow, shake, spin, and fade, to cre
 
 :::image type="content" source="media/index/animation-cube.gif" alt-text="Images of an animated cube":::
 
-For more information, see [Animation overview](../../../framework/wpf/graphics-multimedia/animation-overview.md).
+For more information, see [Animation overview](../graphics-multimedia/animation-overview.md).
 
 ## Text and typography
 
@@ -350,7 +350,7 @@ As a demonstration of text integration with graphics, the following figure shows
 
 :::image type="content" source="media/index/text.png" alt-text="Text with various text decorations":::
 
-For more information, see [Typography in Windows Presentation Foundation](../../../framework/wpf/advanced/typography-in-wpf.md).
+For more information, see [Typography in Windows Presentation Foundation](../advanced/typography-in-wpf.md).
 
 ## Customize WPF apps
 
@@ -371,7 +371,7 @@ The main purpose of most of the WPF controls is to display content. In WPF, the 
 
 Other controls, however, can contain multiple items of different types of content; the content of a <xref:System.Windows.Controls.Button>, specified by the <xref:System.Windows.Controls.ContentControl.Content%2A> property, can contain various items including layout controls, text, images, and shapes.
 
-For more information on the kinds of content that is supported by various controls, see [WPF content model](../../../framework/wpf/controls/wpf-content-model.md).
+For more information on the kinds of content that is supported by various controls, see [WPF content model](../controls/wpf-content-model.md).
 
 ### Triggers
 
@@ -399,7 +399,7 @@ The default appearance is what you would expect from a <xref:System.Windows.Cont
 
 The <xref:System.Windows.Controls.ListBox> retains its behavior and overall appearance and only the appearance of the content being displayed by the list box has changed.
 
-For more information, see [Data templating overview](../../../framework/wpf/data/data-templating-overview.md).
+For more information, see [Data templating overview](../data/data-templating-overview.md).
 
 ### Styles
 
@@ -489,12 +489,12 @@ A custom control derives from <xref:System.Windows.Controls.Control> and is used
 - **Framework Element Model**.\
 A custom control derives from <xref:System.Windows.FrameworkElement> when its appearance is defined by custom rendering logic (not templates).
 
-For more information on custom controls, see [Control authoring overview](../../../framework/wpf/controls/control-authoring-overview.md).
+For more information on custom controls, see [Control authoring overview](../controls/control-authoring-overview.md).
 
 ## See also
 
 - [Tutorial: Create a new WPF app](../get-started/create-app-visual-studio.md)
-- [Migrate a WPF app to .NET](../migration/convert-project-from-net-framework.md)
+- [Migrate a WPF app to .NET](../migration/index.md)
 - [Overview of WPF windows](../windows/index.md)
 - [Data binding overview](../data/index.md)
 - [XAML overview](../xaml/index.md)
