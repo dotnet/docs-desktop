@@ -48,7 +48,7 @@ Windows Presentation Foundation (WPF) is a presentation framework that can be us
   
 - Tracking navigation in XAML browser applications (XBAPs), and standalone applications with navigation windows and frames.  
 
-  [!INCLUDE [xbap-unsupported](~/framework/wpf/includes/xbap-unsupported.md)]
+  [!INCLUDE [xbap-unsupported](~/wpf/includes/xbap-unsupported.md)]
   
  These capabilities are implemented by the <xref:System.Windows.Application> class, which you add to your applications using an *application definition*.  
   

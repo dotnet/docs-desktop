@@ -14,7 +14,7 @@ description: Learn how the WPF plug-in for Firefox enables XBAPs and loose XAML 
 
 The Windows Presentation Foundation (WPF) plug-in for Firefox and the .NET Framework Assistant for Firefox enable XAML browser applications (XBAPs), loose XAML, and ClickOnce applications to work with the Mozilla Firefox browser.  
   
-[!INCLUDE [xbap-unsupported](~/framework/wpf/includes/xbap-unsupported.md)]
+[!INCLUDE [xbap-unsupported](~/wpf/includes/xbap-unsupported.md)]
 
 ## WPF Plug-in for Firefox  
 

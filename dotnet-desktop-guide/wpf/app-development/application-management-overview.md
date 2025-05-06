@@ -86,7 +86,7 @@ This code is the minimum that is required to implement an application definition
 
 Standalone applications and XAML browser applications (XBAPs) require the implementation of a certain level of infrastructure before they can run. The most important part of this infrastructure is the entry point. When an application is launched by a user, the operating system calls the entry point, which is a well-known function for starting applications.
 
-[!INCLUDE [xbap-unsupported](~/framework/wpf/includes/xbap-unsupported.md)]
+[!INCLUDE [xbap-unsupported](~/wpf/includes/xbap-unsupported.md)]
 
 Traditionally, developers have needed to write some or all of this code for themselves, depending on the technology. However, WPF generates this code for you when the markup file of your application definition is configured as an MSBuild `ApplicationDefinition` item, as shown in the following MSBuild project file:
 

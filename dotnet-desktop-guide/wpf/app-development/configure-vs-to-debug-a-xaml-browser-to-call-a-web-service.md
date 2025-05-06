@@ -15,7 +15,7 @@ description: Learn how to configure Visual Studio to debug an XAML browser appli
 
 XAML browser applications (XBAPs) run within a partial-trust security sandbox that is restricted to the Internet zone set of permissions. This permission set restricts Web service calls to only Web services that are located at the XBAP application's site of origin. When an XBAP is debugged from Visual Studio 2005, though, it is not considered to have the same site of origin as the Web service it references. This causes security exceptions to be raised when the XBAP attempts to call the Web service. However, a Visual Studio 2005 XAML Browser Application (WPF) project can be configured to simulate having the same site of origin as the Web service it calls while debugging. This allows the XBAP to safely call the Web service without causing security exceptions.
 
-[!INCLUDE [xbap-unsupported](~/framework/wpf/includes/xbap-unsupported.md)]
+[!INCLUDE [xbap-unsupported](~/wpf/includes/xbap-unsupported.md)]
 
 ## Configuring Visual Studio
 

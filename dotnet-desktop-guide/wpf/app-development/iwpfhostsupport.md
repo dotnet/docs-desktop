@@ -11,7 +11,7 @@ ms.assetid: cc5a0281-de81-4cc1-87e4-0e46b1a811e9
 
 Applications that host Windows Presentation Foundation (WPF) content via PresentationHost.exe implement this interface to provide a point of integration between the host and PresentationHost.exe.  
 
-[!INCLUDE [xbap-unsupported](~/framework/wpf/includes/xbap-unsupported.md)]
+[!INCLUDE [xbap-unsupported](~/wpf/includes/xbap-unsupported.md)]
 
 ## Remarks  
 

@@ -11,7 +11,7 @@ ms.assetid: 3215bfa1-722c-4ac8-a7c5-bdd02d30afbd
 ---
 # WPF Host (PresentationHost.exe)
 
-[!INCLUDE [xbap-unsupported](~/framework/wpf/includes/xbap-unsupported.md)]
+[!INCLUDE [xbap-unsupported](~/wpf/includes/xbap-unsupported.md)]
 
 Windows Presentation Foundation (WPF) Host (PresentationHost.exe) is the application that enables WPF applications to be hosted in compatible browsers (including Microsoft Internet Explorer 6 and later). By default, Windows Presentation Foundation (WPF) Host is registered as the shell and MIME handler for browser-hosted WPF content, which includes:  
   

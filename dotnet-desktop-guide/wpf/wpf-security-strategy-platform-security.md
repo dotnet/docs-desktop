@@ -76,7 +76,7 @@ WPF users on Windows Vista will benefit from the operating system's additional s
 
  Browser-hosted WPF applications execute within the Internet zone sandbox. WPF integration with Microsoft Internet Explorer extends this protection with additional support.  
 
-[!INCLUDE [xbap-unsupported](~/framework/wpf/includes/xbap-unsupported.md)]
+[!INCLUDE [xbap-unsupported](~/wpf/includes/xbap-unsupported.md)]
 
  Since XAML browser applications (XBAPs) are generally sandboxed by the Internet zone permission set, removing these privileges does not harm XAML browser applications (XBAPs) from a compatibility perspective. Instead, an additional defense-in-depth layer is created; if a sandboxed application is able to exploit other layers and hijack the process, the process will still only have limited privileges.  
   
@@ -136,7 +136,7 @@ WPF users on Windows Vista will benefit from the operating system's additional s
   
  The restrictions of the Internet zone security sandbox apply equally to any code that an XBAP imports from a system library, including WPF. This ensures that every bit of the code is locked down, even WPF. Unfortunately, to be able to execute, an XBAP needs to execute functionality that requires more permissions than those enabled by the Internet zone security sandbox.  
 
-[!INCLUDE [xbap-unsupported](~/framework/wpf/includes/xbap-unsupported.md)]
+[!INCLUDE [xbap-unsupported](~/wpf/includes/xbap-unsupported.md)]
 
  Consider an XBAP application that includes the following page:  
   
@@ -176,7 +176,7 @@ WPF users on Windows Vista will benefit from the operating system's additional s
 
  The WPF code that uses permissions to enable the Internet zone sandbox for XBAP applications must be held to highest possible degree of security audit and control. To facilitate this requirement, .NET Framework provides new support for managing code that elevates privilege. Specifically, the CLR enables you to identify code that elevates privilege and mark it with the <xref:System.Security.SecurityCriticalAttribute>; any code not marked with <xref:System.Security.SecurityCriticalAttribute> becomes *transparent* using this methodology. Conversely, managed code that is not marked with <xref:System.Security.SecurityCriticalAttribute> is prevented from elevating privilege.  
 
-[!INCLUDE [xbap-unsupported](~/framework/wpf/includes/xbap-unsupported.md)]
+[!INCLUDE [xbap-unsupported](~/wpf/includes/xbap-unsupported.md)]
 
  The Security-Critical Methodology allows the organization of WPF code that elevates privilege into *security-critical kernel*, with the remainder being transparent. Isolating the security-critical code enables the WPF engineering team focus an additional security analysis and source control on the security-critical kernel above and beyond standard security practices (see [WPF Security Strategy - Security Engineering](wpf-security-strategy-security-engineering.md)).  
   
@@ -186,7 +186,7 @@ WPF users on Windows Vista will benefit from the operating system's additional s
 
  Beyond reducing security issues and simplifying security configuration, Microsoft Internet Explorer 6 (SP2) contains several features that security improvements that enhance security for users of XAML browser applications (XBAPs). The thrust of these features attempts to allow users greater control over their browsing experience.  
 
-[!INCLUDE [xbap-unsupported](~/framework/wpf/includes/xbap-unsupported.md)]
+[!INCLUDE [xbap-unsupported](~/wpf/includes/xbap-unsupported.md)]
 
  Prior to IE6 SP2, users could be subject to any of the following:  
   

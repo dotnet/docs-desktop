@@ -127,7 +127,7 @@ The amount of time that is required for a WPF application to start can vary grea
   
  If you use the XAML browser application (XBAP) model, keep in mind that ClickOnce checks the deployment site for updates even if the XBAP is already in the ClickOnce cache. For more information, see [ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment).  
 
-[!INCLUDE [xbap-unsupported](~/framework/wpf/includes/xbap-unsupported.md)]
+[!INCLUDE [xbap-unsupported](~/wpf/includes/xbap-unsupported.md)]
 
 ## Configure the PresentationFontCache Service to Start Automatically  
 

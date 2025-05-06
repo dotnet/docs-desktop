@@ -15,7 +15,7 @@ ms.assetid: 737e0f26-8371-49b4-9579-70879e51e1aa
 
 This example demonstrates how to determine if a <xref:System.Windows.Controls.Page> is hosted in a browser.  
 
-[!INCLUDE [xbap-unsupported](~/framework/wpf/includes/xbap-unsupported.md)]
+[!INCLUDE [xbap-unsupported](~/wpf/includes/xbap-unsupported.md)]
 
 ## Example  
 
