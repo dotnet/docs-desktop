@@ -3,10 +3,10 @@ title: Application Resource, Content, and Data Files
 description: Find out about the special support for configuring, identifying, and using application data files in Windows Presentation Foundation (WPF).
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "WPF application [WPF], files"
   - "loose resources [WPF]"
   - "content files [WPF]"

@@ -2,10 +2,10 @@
 title: "How to: Create a Text Decoration"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "fonts [WPF], baseline"
   - "text [WPF], decorations"
   - "fonts [WPF], underline"

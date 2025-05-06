@@ -3,10 +3,10 @@ title: "How to: Use Interpolation Mode to Control Image Quality During Scaling"
 description: Learn how to use the interpolation mode of a System.Drawings.Graphics object to control the way GDI+ scales images.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "interpolation mode [Windows Forms], controlling image quality"
   - "images [Windows Forms], scaling"
   - "images [Windows Forms], controlling quality"

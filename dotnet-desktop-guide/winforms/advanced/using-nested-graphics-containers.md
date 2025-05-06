@@ -3,10 +3,10 @@ title: "Using Nested Graphics Containers"
 description: Learn how to use nested graphics containers in GDI+ for Windows Forms to temporarily replace or augment part of the state in a Graphics object.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "graphics [Windows Forms], nested containers"
   - "graphics [Windows Forms], clipping"
   - "graphics [Windows Forms], transformations in nested objects"

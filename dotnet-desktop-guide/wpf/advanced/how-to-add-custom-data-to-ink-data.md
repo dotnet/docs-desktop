@@ -2,7 +2,7 @@
 title: "How to: Add Custom Data to Ink Data"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "ink data [WPF], adding custom data"
   - "InkCanvas [WPF], displaying"
 ms.assetid: f02aac6f-3436-4f7c-b6ea-0452cba5332c

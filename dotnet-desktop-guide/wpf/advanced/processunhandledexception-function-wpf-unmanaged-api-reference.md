@@ -4,11 +4,11 @@ description: Learn how to use the ProcessUnhandledException function, which is u
 titleSuffix: ""
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "cpp"
-api_name: 
+api_name:
   - "ProcessUnhandledException"
-api_location: 
+api_location:
   - "PresentationHost_v0400.dll"
 ms.assetid: 495ce5f6-bb4d-4b30-807a-c3c35f1ca95c
 ---

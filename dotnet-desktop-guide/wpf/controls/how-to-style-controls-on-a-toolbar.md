@@ -3,7 +3,7 @@ title: "How to: Style Controls on a ToolBar"
 description: Learn how to specify the style of the controls in a ToolBar in a Windows Presentation Foundation (WPF) application.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "styling controls on toolbar [WPF]"
   - "toolbars [WPF]"
   - "customizing controls on toolbar [WPF]"

@@ -4,10 +4,10 @@ description: Learn how to apply Emissive Material to a 3D object.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
 ms.custom: devdivchpfy22
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "EmissiveMaterial [WPF], applying to 3D objects"
   - "3D objects [WPF], applying EmissiveMaterial"
 ms.assetid: fd442cc2-5adc-487a-ba70-e45ed54bb3b4

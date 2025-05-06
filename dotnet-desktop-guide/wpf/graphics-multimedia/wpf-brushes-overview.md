@@ -3,10 +3,10 @@ title: Brushes overview
 description: Discover how to illustrate concepts by painting with simple, solid colors through gradients and patterns in Windows Presentation Foundation (WPF).
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "brushes [WPF], about brushes"
 ms.assetid: ecea1955-420b-45c6-bf43-c1404c072c41
 ---

@@ -4,10 +4,10 @@ description: Learn how to seek a Storyboard synchronously.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
 ms.custom: devdivchpfy22
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "seeking Storyboards synchronously [WPF]"
   - "Storyboards [WPF], seeking synchronously"
 ms.assetid: 03e06271-a946-4810-88ea-3fb4cfa9e0f1

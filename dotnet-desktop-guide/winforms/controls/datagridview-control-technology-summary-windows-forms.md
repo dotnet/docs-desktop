@@ -3,7 +3,7 @@ title: "DataGridView Control Technology Summary"
 description: Learn about the DataGridView control technology summary in Windows Forms. The DataGridView control can display rows of data from a data store.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "DataGridView control [Windows Forms], about DataGridView control"
   - "data grids [Windows Forms], about data grids"
 ms.assetid: 094498c3-a126-4a3f-83fe-f69e96c7717b

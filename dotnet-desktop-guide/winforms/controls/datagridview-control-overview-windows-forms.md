@@ -3,9 +3,9 @@ title: "DataGridView Control Overview"
 description: Learn how to use the Windows Forms DataGridView control to display and edit tabular data from many different kinds of data sources.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-f1_keywords: 
+f1_keywords:
   - "DataGridView"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "DataGridView control [Windows Forms], about DataGridView control"
   - "grid controls [Windows Forms]"
   - "tables [Windows Forms], displaying in DataGridView control"

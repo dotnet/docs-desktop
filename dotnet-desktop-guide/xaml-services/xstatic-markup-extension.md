@@ -3,11 +3,11 @@ title: "x:Static Markup Extension"
 description: Learn about the x:Static Markup Extension.
 ms.date: "03/30/2017"
 ms.custom: devdivchpfy22
-f1_keywords: 
+f1_keywords:
   - "StaticExtension"
   - "xStatic"
   - "x:Static"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "x:Static markup extension [XAML Services]"
   - "Static markup extension in XAML [XAML Services]"
   - "XAML [XAML Services], x:Static markup extension"

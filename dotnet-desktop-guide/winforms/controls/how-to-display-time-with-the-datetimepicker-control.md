@@ -3,10 +3,10 @@ title: "How to: Display Time with the DateTimePicker Control"
 description: Learn how to use the Windows Forms DateTimePicker control to enable users to select a date and time, and to display that date and time in the specified format.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "time [Windows Forms], displaying in DateTimePicker control"
   - "examples [Windows Forms], DateTimePicker control"
   - "DateTimePicker control [Windows Forms], displaying time"

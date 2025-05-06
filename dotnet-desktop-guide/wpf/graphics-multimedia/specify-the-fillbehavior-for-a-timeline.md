@@ -3,7 +3,7 @@ title: "How to: Specify the FillBehavior for a Timeline that has Reached the End
 description: Learn how the FillBehavior property of a Timeline determines what happens to the value of an animated property when the Timeline is inactive.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "FillBehavior property for inactive timelines [WPF]"
   - "Timelines [WPF], FillBehavior property"
 ms.assetid: db805f59-d513-4dac-af15-47005dae3199

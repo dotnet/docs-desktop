@@ -2,7 +2,7 @@
 title: "StatusStrip Control"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "StatusStrip control [Windows Forms]"
   - "status bars"
 ms.assetid: eb1e59da-0a48-4ce5-af7d-13b8e75af4b1

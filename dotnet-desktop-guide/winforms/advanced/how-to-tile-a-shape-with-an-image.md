@@ -3,10 +3,10 @@ title: "How to: Tile a Shape with an Image"
 description: Learn how to tile a shape with an image using a constructed System.Drawing.TextureBrush object's System.Drawing.Image object as an argument.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "texture brushes [Windows Forms], tiling images with"
   - "images [Windows Forms], filling shapes with"
   - "shapes [Windows Forms], tiling with images"

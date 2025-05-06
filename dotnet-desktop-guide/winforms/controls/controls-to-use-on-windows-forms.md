@@ -3,7 +3,7 @@ title: Controls to Use
 description: Learn about controls and components that can be used on Windows Forms. You can also add ActiveX and custom controls to Windows Forms.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "controls [Windows Forms]"
   - "Windows Forms controls, list of"
 ms.assetid: dec51976-eae0-4398-a537-20bca7974722

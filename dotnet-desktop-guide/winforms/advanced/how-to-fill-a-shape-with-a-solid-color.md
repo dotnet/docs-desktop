@@ -2,10 +2,10 @@
 title: "How to: Fill a Shape with a Solid Color"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "colors [Windows Forms], adding to shapes"
   - "shapes [Windows Forms], filling"
 ms.assetid: 06088b31-bac9-4ef3-9ebe-06c2c764d6df

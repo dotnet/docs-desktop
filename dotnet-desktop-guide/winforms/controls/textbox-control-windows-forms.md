@@ -3,7 +3,7 @@ title: "TextBox Control"
 description: Learn about various aspects of the Windows Forms TextBox control including using it for editable text and making it read-only.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "text boxes"
   - "TextBox control [Windows Forms]"
 ms.assetid: e5a06987-8aec-4271-b196-2245ba992d62

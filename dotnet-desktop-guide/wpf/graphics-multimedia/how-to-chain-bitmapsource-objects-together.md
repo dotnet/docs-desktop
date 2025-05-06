@@ -3,10 +3,10 @@ title: "How to: Chain BitmapSource Objects Together"
 description: Learn how you can apply a variety of effects to an image source by chaining multiple BitmapSource derived objects together.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "BitmapSource objects [WPF], chaining"
   - "graphics [WPF], chaining BitmapSource objects"
   - "chaining BitmapSource objects [WPF]"

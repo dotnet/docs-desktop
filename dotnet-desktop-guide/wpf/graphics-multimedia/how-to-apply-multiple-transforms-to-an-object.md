@@ -3,10 +3,10 @@ title: "How to: Apply Multiple Transforms to an Object"
 description: Learn how to use a TransformGroup to group two or more Transform objects into a single composite Transform.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "grouping Transform objects [WPF]"
   - "Transform objects [WPF], grouping"
   - "graphics [WPF], grouping Transform objects"

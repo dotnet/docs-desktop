@@ -2,10 +2,10 @@
 title: "How to: Clone a Printer"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "print queues [WPF]"
   - "cloning printers [WPF]"
   - "printers [WPF], cloning"

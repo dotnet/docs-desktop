@@ -2,10 +2,10 @@
 title: "How to: Drag and Drop Ink"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "dragging ink [WPF]"
   - "ink [WPF], dragging"
   - "ink [WPF], drag-and-drop"

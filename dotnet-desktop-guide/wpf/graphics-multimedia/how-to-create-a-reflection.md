@@ -3,10 +3,10 @@ title: "How to: Create a Reflection"
 description: Learn about how to use a VisualBrush to produce interesting visual effects, such as reflections.
 ms.date: 03/16/2023
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "creating reflections [WPF]"
   - "brushes [WPF], creating reflections"
   - "reflections [WPF], creating"

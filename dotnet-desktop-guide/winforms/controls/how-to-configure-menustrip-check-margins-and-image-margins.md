@@ -2,10 +2,10 @@
 title: "How to: Configure MenuStrip Check Margins and Image Margins"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "margins [Windows Forms], setting in MenuStrip controls"
   - "menus [Windows Forms], setting margins"
   - "MenuStrip control [Windows Forms], configuring check and image margins"

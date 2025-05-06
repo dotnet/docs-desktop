@@ -3,10 +3,10 @@ title: "How to: Implement an Adorner"
 description: Learn about how to implement an adorner, by means of the included code examples in C# and Visual Basic.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "adorners [WPF], implementing"
 ms.assetid: 56ae32b6-0599-455c-b52f-2ff97e6f1ec2
 ---

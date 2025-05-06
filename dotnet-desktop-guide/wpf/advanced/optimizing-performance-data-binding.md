@@ -3,7 +3,7 @@ title: "Optimizing Performance: Data Binding"
 description: Learn how to optimize the performance of Windows Presentation Foundation (WPF) data binding, for a simple, consistent way to present and interact with data.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "binding data [WPF], performance"
   - "data binding [WPF], performance"
 ms.assetid: 1506a35d-c009-43db-9f1e-4e230ad5be73

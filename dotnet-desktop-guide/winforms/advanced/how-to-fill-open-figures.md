@@ -2,10 +2,10 @@
 title: "How to: Fill Open Figures"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "open figures [Windows Forms], filling"
   - "figures [Windows Forms], filling"
 ms.assetid: 5a36b0e4-f1f4-46c0-a85a-22ae98491950

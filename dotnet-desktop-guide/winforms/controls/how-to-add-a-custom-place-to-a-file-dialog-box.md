@@ -3,10 +3,10 @@ title: "How To: Add a Custom Place to a File Dialog Box"
 description: The default open and save dialog boxes on Windows have a custom places area. Learn how to add a custom place.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "Custom Place to dialog box"
   - "adding Custom Place to dialog box"
   - "CustomPlaces collection"

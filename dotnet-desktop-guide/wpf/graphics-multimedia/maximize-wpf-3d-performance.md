@@ -3,7 +3,7 @@ title: "Maximize 3D Performance"
 description: Learn how to optimize performance utilizing Windows Presentation Foundation (WPF) 3D features.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "3D graphics [WPF]"
 ms.assetid: 4bcf949d-d92f-4d8d-8a9b-1e4c61b25bf6
 ---

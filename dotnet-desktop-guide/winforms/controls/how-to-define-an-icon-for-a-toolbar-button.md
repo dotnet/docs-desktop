@@ -2,11 +2,11 @@
 title: "How to: Define an Icon for a ToolBar Button"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
   - "cpp"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "toolbars [Windows Forms], adding icons to buttons"
   - "buttons [Windows Forms], icons"
   - "examples [Windows Forms], toolbars"

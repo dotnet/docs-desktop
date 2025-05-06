@@ -3,10 +3,10 @@ title: "How to: Build a Standard UI Dialog Box by Using Grid"
 description: Learn how to build or create a standard user interface (UI) dialog box by using the Grid element via code examples in C# and Visual Basic.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "dialog boxes [WPF], creating"
   - "Grid control [WPF], creating [WPF], dialog box"
 ms.assetid: d6ac3d51-844b-4d29-96d8-81a696a7b960

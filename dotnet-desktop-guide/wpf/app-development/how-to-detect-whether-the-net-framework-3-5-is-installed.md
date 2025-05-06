@@ -2,7 +2,7 @@
 title: "How to: Detect Whether the .NET Framework 3.5 Is Installed"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "verifying whether.NET Framework 3.5 is installed [WPF]"
   - "detecting .NET Framework 3.5 installation [WPF]"
   - "detecting whether.NET Framework 3.5 is installed [WPF]"
@@ -37,26 +37,26 @@ When the .NET Framework 3.5 is installed, the MSI adds ".NET CLR" and the versio
     {
       if (HasRuntimeVersion(dotNETRuntimeVersion))
       {
-        result.innerText = 
+        result.innerText =
           "This machine has the correct version of the .NET Framework 3.5."
-      } 
+      }
       else
       {
-        result.innerText = 
+        result.innerText =
           "This machine does not have the correct version of the .NET Framework 3.5." +
           " The required version is v" + dotNETRuntimeVersion + ".";
       }
-      result.innerText += "\n\nThis machine's userAgent string is: " + 
+      result.innerText += "\n\nThis machine's userAgent string is: " +
         navigator.userAgent + ".";
     }
 
     //
-    // Retrieve the version from the user agent string and 
+    // Retrieve the version from the user agent string and
     // compare with the specified version.
     //
     function HasRuntimeVersion(versionToCheck)
     {
-      var userAgentString = 
+      var userAgentString =
         navigator.userAgent.match(/.NET CLR [0-9.]+/g);
 
       if (userAgentString != null)
@@ -65,7 +65,7 @@ When the .NET Framework 3.5 is installed, the MSI adds ".NET CLR" and the versio
 
         for (i = 0; i < userAgentString.length; ++i)
         {
-          if (CompareVersions(GetVersion(versionToCheck), 
+          if (CompareVersions(GetVersion(versionToCheck),
             GetVersion(userAgentString[i])) <= 0)
             return true;
         }
@@ -79,7 +79,7 @@ When the .NET Framework 3.5 is installed, the MSI adds ".NET CLR" and the versio
     //
     function GetVersion(versionString)
     {
-      var numericString = 
+      var numericString =
         versionString.match(/([0-9]+)\.([0-9]+)\.([0-9]+)/i);
       return numericString.slice(1);
     }

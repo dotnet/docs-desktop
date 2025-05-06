@@ -2,10 +2,10 @@
 title: "How to: Create a Linear Gradient"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "linear gradients [Windows Forms], creating"
   - "gradients [Windows Forms], creating linear"
   - "colors [Windows Forms], creating linear gradients"

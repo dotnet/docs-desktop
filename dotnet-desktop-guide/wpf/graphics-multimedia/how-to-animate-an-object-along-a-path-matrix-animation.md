@@ -3,10 +3,10 @@ title: "How to: Animate an Object Along a Path (Matrix Animation)"
 description: Learn how to use the MatrixAnimationUsingPath class to animate an object along a path that is defined by a PathGeometry.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "animation [WPF], objects along paths (matrix animation)"
   - "matrix animation [WPF]"
 ms.assetid: 7000e697-1414-468c-b915-cf66062fc49e

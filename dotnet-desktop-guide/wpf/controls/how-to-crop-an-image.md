@@ -3,10 +3,10 @@ title: "How to: Crop an Image"
 description: Learn how to crop an image by using CroppedBitmap, by means of the included code examples in XAML, C#, and Visual Basic.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "images [WPF], cropping"
   - "cropping images [WPF]"
 ms.assetid: c6bba109-c6e7-4cf8-bfe6-9cf8d01bb4fc

@@ -2,9 +2,9 @@
 title: "SplitContainer Control Overview"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-f1_keywords: 
+f1_keywords:
   - "SplitContainer"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "SplitContainer control [Windows Forms], about SplitContainer control"
 ms.assetid: 6de5a5f7-97a5-402d-be6d-7e2785483db5
 description: Learn how the Windows Forms SplitContainer control can and create complex user interfaces and arrangements.

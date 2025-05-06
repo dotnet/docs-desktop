@@ -4,10 +4,10 @@ ms.date: "03/30/2017"
 ms.service: dotnet-framework
 ms.custom: devdivchpfy22
 description: Learn about the TemplateBinding Markup Extension.
-f1_keywords: 
+f1_keywords:
   - "TemplateBinding"
   - "TemplateBindingExtension"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "XAML [WPF], TemplateBinding markup extension"
   - "TemplateBinding markup extensions [WPF]"
 ms.assetid: 1d25bbfc-dbc2-499d-9f12-419d23d4ac6a

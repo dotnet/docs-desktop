@@ -3,11 +3,11 @@ title: "x:Class Directive"
 description: Learn about the x:Class Directive.
 ms.date: "03/30/2017"
 ms.custom: devdivchpfy22
-f1_keywords: 
+f1_keywords:
   - "x:Class"
   - "xClass"
   - "Class"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "Class attribute in XAML [XAML Services]"
   - "XAML [XAML Services], x:Class attribute"
   - "x:Class attribute [XAML Services]"

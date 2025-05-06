@@ -2,10 +2,10 @@
 title: "How to: Create a Professionally Styled ToolStrip Control"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "toolbars [Windows Forms]"
   - "ToolStripProfessionalRenderer class [Windows Forms]"
   - "ToolStripRenderer class [Windows Forms]"

@@ -2,10 +2,10 @@
 title: "How to: Determine the Active MDI Child"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "Clipboard [Windows Forms], copying data to"
   - "MDI [Windows Forms], child windows"
   - "child forms"

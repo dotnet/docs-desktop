@@ -4,7 +4,7 @@ description: Learn how the GDI+ application programming interface (API) forms th
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
 ms.topic: overview
-helpviewer_keywords: 
+helpviewer_keywords:
   - "graphics [Windows Forms], using managed interface"
   - "graphics [Windows Forms], about graphics"
 ms.assetid: a602aef8-a8c8-4c36-9816-74e7bad96a68

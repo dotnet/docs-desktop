@@ -1,9 +1,9 @@
 ---
 title: "How to: Draw an Ellipse or a Circle"
-description: Learn how to draw an ellipse or circle with choices for outline thickness and interior color in Windows Presentation Foundation (WPF). 
+description: Learn how to draw an ellipse or circle with choices for outline thickness and interior color in Windows Presentation Foundation (WPF).
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "ellipses [WPF], drawing"
   - "circles [WPF], drawing"
   - "drawing circles [WPF]"

@@ -2,10 +2,10 @@
 title: "Storing Ink"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "ISF (Ink Serialized Format)"
   - "storing ink [WPF]"
   - "ink [WPF], storing"

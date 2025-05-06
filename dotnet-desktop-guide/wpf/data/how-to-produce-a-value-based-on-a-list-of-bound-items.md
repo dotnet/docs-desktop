@@ -3,10 +3,10 @@ title: "How to: Produce a Value Based on a List of Bound Items"
 description: Learn how to use MultiBinding to apply logic and produce a value based on a list of bound items with given inputs.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "data binding [WPF], MultiBinding"
   - "Multibinding [WPF]"
 ms.assetid: b3d06378-b511-4181-95aa-316d60c9229b

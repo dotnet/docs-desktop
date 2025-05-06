@@ -3,10 +3,10 @@ title: "Design great data sources"
 description: Learn how to design great data sources in Windows Forms .NET.
 ms.date: "05/31/2022"
 ms.service: dotnet-desktop
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "controls [Windows Forms], binding multiple"
   - "controls [Windows Forms], synchronizing with data source"
 ms.custom: devdivchpfy22

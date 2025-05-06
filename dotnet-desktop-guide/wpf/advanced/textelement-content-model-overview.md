@@ -3,10 +3,10 @@ title: "TextElement Content Model Overview"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
 ms.topic: overview
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "documents [WPF], flow documents"
   - "TextElement content model [WPF]"
   - "flow content elements [WPF], TextElement content model"

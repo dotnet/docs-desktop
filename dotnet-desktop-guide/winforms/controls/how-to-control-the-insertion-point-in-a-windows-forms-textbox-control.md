@@ -2,11 +2,11 @@
 title: Control the Insertion Point in TextBox Control
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
   - "cpp"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "TextBox control [Windows Forms], insertion point"
   - "insertion points [Windows Forms], TextBox controls"
   - "text boxes [Windows Forms], controlling insertion point"

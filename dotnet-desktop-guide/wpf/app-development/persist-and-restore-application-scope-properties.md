@@ -3,10 +3,10 @@ title: "How to: Persist and Restore Application-Scope Properties Across Applicat
 description: Learn how to persist and restore application-scope properties across application sessions via included code examples in XAML, C#, and Visual Basic.
 ms.date: 06/13/2024
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "application-scope properties [WPF], persisting"
   - "persisting application-scope properties [WPF]"
   - "properties [WPF], persisting"

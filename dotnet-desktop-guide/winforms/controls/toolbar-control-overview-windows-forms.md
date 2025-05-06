@@ -2,9 +2,9 @@
 title: "ToolBar Control Overview"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-f1_keywords: 
+f1_keywords:
   - "ToolBar"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "toolbars [Windows Forms], about toolbars"
   - "ToolBar control [Windows Forms], about ToolBar controls"
 ms.assetid: d426b203-0216-4dbe-b834-1641e50a9c29

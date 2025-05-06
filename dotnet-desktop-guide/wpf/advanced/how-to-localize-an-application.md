@@ -4,10 +4,10 @@ ms.date: 03/30/2017
 ms.service: dotnet-framework
 ms.custom: devdivchpfy22
 description: Learn how to localize an application.
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "localization [WPF], applications"
   - "LocBaml tool [WPF]"
   - "applications [WPF], localizing"

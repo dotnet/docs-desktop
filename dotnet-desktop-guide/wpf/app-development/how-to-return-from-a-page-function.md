@@ -3,10 +3,10 @@ title: "How to: Return from a Page Function"
 description: Learn how to return from a page function in this article, by means of code samples in XAML, C#, and Visual Basic.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "returning from page functions [WPF]"
   - "page functions [WPF], returning from"
   - "functions [WPF], returning from"

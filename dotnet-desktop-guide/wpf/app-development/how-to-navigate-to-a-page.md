@@ -3,10 +3,10 @@ title: "How to: Navigate to a Page"
 description: Learn how to navigate to a page using NavigationWindow, by means of the included code examples in C# and Visual Basic.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "pages [WPF], navigating to"
   - "navigation [WPF], to page"
 ms.assetid: 2a556fc0-748b-417f-a58a-0d05a7afb66f

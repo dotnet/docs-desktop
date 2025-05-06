@@ -2,10 +2,10 @@
 title: "How to: Draw Text to a Visual"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "typography [WPF], drawing text to visuals"
   - "visuals [WPF], drawing text to"
   - "text [WPF], drawing to visuals"

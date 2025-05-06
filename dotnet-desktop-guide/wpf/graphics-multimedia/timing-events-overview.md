@@ -3,10 +3,10 @@ title: "Timing Events Overview"
 description: Learn how to use the timing events available for Timeline and Clock objects.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "timelines [WPF]"
   - "timing events [WPF]"
 ms.assetid: 597e3280-0867-4359-a97b-5b2f4149e350

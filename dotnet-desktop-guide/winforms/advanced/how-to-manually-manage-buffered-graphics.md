@@ -3,10 +3,10 @@ title: "How to: Manually Manage Buffered Graphics"
 description: Learn how to use the .NET Framework classes, such as System.Drawing.BufferedGraphicsContext, to manually manage double-buffering logic for advanced scenarios.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "flicker [Windows Forms], reducing by manually managing graphics"
   - "graphics [Windows Forms], managing buffered"
 ms.assetid: 4c2a90ee-bbbe-4ff6-9170-1b06c195c918

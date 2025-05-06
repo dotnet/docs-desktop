@@ -1,13 +1,13 @@
 ---
 title: Designate a Button as the Accept Button
-description: Learn how to assign a button as the accept button, also known as a default button on any windows form. 
+description: Learn how to assign a button as the accept button, also known as a default button on any windows form.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
   - "cpp"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "buttons [Windows Forms], default on Windows Forms"
   - "Accept button on Windows Forms"
   - "Button control [Windows Forms], designating as default"

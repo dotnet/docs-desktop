@@ -3,7 +3,7 @@ title: "Application Startup Time"
 description: Learn about the application startup time, which is the amount of time that a Windows Presentation Foundation (WPF) application requires to start.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "splash screen [WPF], startup time"
   - "WPF [WPF], startup time"
   - "startup time [WPF]"

@@ -4,10 +4,10 @@ ms.date: "03/30/2017"
 ms.service: dotnet-framework
 ms.custom: devdivchpfy22
 description: Learn how to manipulate a Table's Row Groups through the RowGroups property.
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "row groups [WPF], manipulating through RowGroups property"
   - "RowGroups property [WPF], manipulating row groups"
   - "documents [WPF], manipulating row groups through RowGroups property"

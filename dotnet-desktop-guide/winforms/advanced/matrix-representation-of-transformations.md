@@ -4,10 +4,10 @@ description: Learn about matrix representation of linear and composite transform
 ms.date: "01/06/2022"
 ms.service: dotnet-framework
 ms.custom: devdivchpfy22
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "composite transformations"
   - "transformations [Windows Forms], linear"
   - "matrices"

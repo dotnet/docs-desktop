@@ -2,10 +2,10 @@
 title: "Graphics Paths in GDI+"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "graphics [Windows Forms], paths"
   - "GDI+, drawing paths"
   - "paths [Windows Forms], drawing"

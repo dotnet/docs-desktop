@@ -3,9 +3,9 @@ title: "Button Control Overview"
 description: Learn more about an overview of button control in Windows Forms, which allows the user to click a button to perform an action.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-f1_keywords: 
+f1_keywords:
   - "Button"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "Button control [Windows Forms], about Button control"
   - "buttons [Windows Forms], about buttons"
 ms.assetid: 255b291b-51a9-4a92-a1a4-2400cd82443f

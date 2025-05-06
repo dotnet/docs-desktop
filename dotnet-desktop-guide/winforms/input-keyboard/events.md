@@ -4,10 +4,10 @@ description: Overview of using keyboard events to handle keyboard input. This ar
 ms.date: 04/02/2025
 ms.service: dotnet-desktop
 ms.topic: overview
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "KeyPress event [Windows Forms]"
   - "keyboards [Windows Forms], keyboard events"
   - "KeyUp event"

@@ -5,10 +5,10 @@ ms.date: 10/24/2024
 ms.service: dotnet-desktop
 ms.topic: overview
 ms.custom: update-template
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "XAML [WPF], displaying content via"
   - "XAML pages [WPF], displaying"
   - "content [WPF], displaying via XAML"
@@ -377,7 +377,7 @@ Besides having a desktop location, a window has a size that is determined by sev
 <xref:System.Windows.FrameworkElement.MinWidth%2A>, <xref:System.Windows.FrameworkElement.Width%2A>, and <xref:System.Windows.FrameworkElement.MaxWidth%2A> are used to manage the range of widths that a window can have during its lifetime.
 
 ```xaml
-<Window 
+<Window
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     MinWidth="300" Width="400" MaxWidth="500">
 </Window>
@@ -386,7 +386,7 @@ Besides having a desktop location, a window has a size that is determined by sev
 Window height is managed by <xref:System.Windows.FrameworkElement.MinHeight%2A>, <xref:System.Windows.FrameworkElement.Height%2A>, and <xref:System.Windows.FrameworkElement.MaxHeight%2A>.
 
 ```xaml
-<Window 
+<Window
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     MinHeight="300" Height="400" MaxHeight="500">
 </Window>
@@ -408,8 +408,8 @@ Fit to content width and height, which has the same effect as setting both <xref
 The following example shows a window that automatically sizes to fit its content, both vertically and horizontally, when first shown.
 
 ```xaml
-<Window 
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+<Window
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     SizeToContent="WidthAndHeight">
 </Window>
 ```
@@ -484,7 +484,7 @@ The state of a window can be configured by setting its <xref:System.Windows.Wind
 The following example shows how to create a window that is shown as maximized when it opens.
 
 ```xaml
-<Window 
+<Window
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     WindowState="Maximized">
 </Window>
@@ -516,7 +516,7 @@ You can configure how a window resizes by setting its <xref:System.Windows.Windo
 As with <xref:System.Windows.Window.WindowStyle%2A>, the resize mode of a window is unlikely to change during its lifetime, which means that you'll most likely set it from XAML markup.
 
 ```xaml
-<Window 
+<Window
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     ResizeMode="CanResizeWithGrip">
 </Window>
@@ -544,7 +544,7 @@ Notice that the image above doesn't show any noticeable difference between `Sing
 You can set <xref:System.Windows.Window.WindowStyle%2A> using either XAML markup or code. Because it's unlikely to change during the lifetime of a window, you'll most likely configure it using XAML markup.
 
 ```xaml
-<Window 
+<Window
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     WindowStyle="ToolWindow">
 </Window>
@@ -569,7 +569,7 @@ This combination of values instructs the window to render transparent. In this s
 The default appearance of a window includes a taskbar button. Some types of windows don't have a task bar button, such as message boxes, [dialog boxes](dialog-boxes-overview.md), or windows with the <xref:System.Windows.Window.WindowStyle%2A> property set to <xref:System.Windows.WindowStyle.ToolWindow>. You can control whether the task bar button for a window is shown by setting the <xref:System.Windows.Window.ShowInTaskbar%2A> property, which is `true` by default.
 
 ```xaml
-<Window 
+<Window
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     ShowInTaskbar="False">
 </Window>

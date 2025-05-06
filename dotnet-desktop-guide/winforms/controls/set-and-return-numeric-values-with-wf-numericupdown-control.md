@@ -2,11 +2,11 @@
 title: Set and Return Numeric Values with NumericUpDown Control
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
   - "cpp"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "numeric values [Windows Forms], Windows Forms"
   - "Windows Forms, numeric values"
   - "Windows Forms controls, NumericUpDown"

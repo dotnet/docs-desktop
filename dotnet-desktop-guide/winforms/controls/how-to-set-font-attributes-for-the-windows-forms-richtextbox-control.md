@@ -3,11 +3,11 @@ title: Set Font Attributes for RichTextBox Control
 description: Learn about how to set font attributes for the Windows Forms RichTextBox control, which has numerous options for formatting the text it displays.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
   - "cpp"
-helpviewer_keywords: 
+helpviewer_keywords:
   - ".rtf files [Windows Forms], formatting in RichTextBox control"
   - "fonts [Windows Forms], changing attributes in RichTextBox control"
   - "RTF files [Windows Forms], formatting in RichTextBox control"

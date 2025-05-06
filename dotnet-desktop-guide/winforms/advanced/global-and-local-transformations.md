@@ -3,10 +3,10 @@ title: "Global and Local Transformations"
 description: Learn how global transformations apply to every item drawn by a Graphics object and local transformations apply to a specific item.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "matrices [Windows Forms], using transformations"
   - "transformations [Windows Forms], global"
   - "transformations [Windows Forms], local"

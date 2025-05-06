@@ -3,7 +3,7 @@ title: "How to: Trigger Media Playback with a User Event"
 description: Learn how to use the MediaElement control and the MediaTimeline class to trigger media playback with a user event.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "synchronizing media playback with events [WPF]"
   - "playback of media [WPF], synchronizing with events"
   - "media [WPF], synchronizing playback with events"

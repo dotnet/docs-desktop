@@ -3,10 +3,10 @@ title: "How to: Convert an Image to Greyscale"
 description: Learn how to convert an image to greyscale using FormatConvertedBitmap via code examples in XAML, C#, and Visual Basic.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "images [WPF], converting to grayscale"
   - "converting [WPF], images to grayscale"
   - "grayscale [WPF], converting images to"

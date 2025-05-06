@@ -2,7 +2,7 @@
 title: "How to: Apply Animations to Text"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "typography [WPF], animations"
   - "animation [WPF], text"
 ms.assetid: eec3d26c-0a21-420f-8012-671621c47089

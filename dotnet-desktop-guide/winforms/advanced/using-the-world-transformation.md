@@ -3,10 +3,10 @@ title: "Using the World Transformation"
 description: Learn how to use the world transformation property that belongs to the Graphics class with several provided code examples.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "graphics [Windows Forms], world transformation"
   - "world transformation [Windows Forms], examples"
 ms.assetid: 1e717711-1361-448e-aa49-0f3ec43110c9

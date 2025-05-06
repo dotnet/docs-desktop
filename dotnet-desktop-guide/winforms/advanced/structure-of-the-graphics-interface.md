@@ -3,7 +3,7 @@ title: "Structure of the Graphics Interface"
 description: Learn about the structure of the Graphics Interface, which includes important classes like the System.Drawing.Graphics class.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "GDI+, using managed interface"
   - "graphics [Windows Forms], class structure"
 ms.assetid: 010a1e46-656b-40a1-8d5d-87aa05ee1243

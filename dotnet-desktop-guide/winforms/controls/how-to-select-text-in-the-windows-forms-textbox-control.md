@@ -1,13 +1,13 @@
 ---
 title: Select Text in TextBox Control
-description: Learn how to select text programmatically in the Windows Forms TextBox control. Also learn how to visually alert the reader of the found string's position. 
+description: Learn how to select text programmatically in the Windows Forms TextBox control. Also learn how to visually alert the reader of the found string's position.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
   - "cpp"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "TextBox control [Windows Forms], selecting text programmatically"
   - "text boxes [Windows Forms], selecting text programmatically"
   - "text [Windows Forms], selecting in text boxes programmatically"

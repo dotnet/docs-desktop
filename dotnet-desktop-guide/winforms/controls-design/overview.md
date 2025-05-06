@@ -4,9 +4,9 @@ description: Learn about the different types of custom controls you can create i
 ms.date: 04/02/2025
 ms.service: dotnet-desktop
 ms.topic: overview
-f1_keywords: 
+f1_keywords:
   - "UserControl"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "controls [Windows Forms], user controls"
   - "controls [Windows Forms], types of"
   - "composite controls [Windows Forms]"

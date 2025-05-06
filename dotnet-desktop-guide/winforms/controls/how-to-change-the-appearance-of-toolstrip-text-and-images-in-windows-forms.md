@@ -2,10 +2,10 @@
 title: "How to: Change the Appearance of ToolStrip Text and Images"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "ToolStrip control [Windows Forms], appearance"
   - "toolbars [Windows Forms], images"
   - "examples [Windows Forms], toolbars"

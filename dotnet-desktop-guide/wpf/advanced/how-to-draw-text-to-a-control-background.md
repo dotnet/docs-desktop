@@ -2,14 +2,14 @@
 title: "How to: Draw Text to a Control's Background"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "controls [WPF], drawing text to backgrounds"
   - "text [WPF], drawing to control backgrounds"
   - "drawing [WPF], text to control backgrounds"
   - "backgrounds [WPF], drawing text to"
   - "typography [WPF], drawing text to control backgrounds"
 ms.assetid: 686d8fba-f61c-4974-a871-c635d67a7f69
-description: Learn how to draw text to the background of a control by converting a text string to a FormattedText object and drawing it to the control's DrawingContext. 
+description: Learn how to draw text to the background of a control by converting a text string to a FormattedText object and drawing it to the control's DrawingContext.
 ---
 # How to: Draw Text to a Control's Background
 

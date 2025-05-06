@@ -2,10 +2,10 @@
 title: "How to: Add Class Handling for a Routed Event"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "routed events [WPF], class handlers"
   - "task_core_add_class_handling_routed_properties [WPF]"
   - "class handlers [WPF], routed events"

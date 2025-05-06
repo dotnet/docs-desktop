@@ -3,10 +3,10 @@ title: "How to: Rotate an Object"
 description: Learn how to use the RotateTransform properties CenterX and CenterY to rotate an object at a specified degree.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "graphics [WPF], rotating objects [WPF]"
   - "rotating objects [WPF]"
 ms.assetid: ee3466cd-e66f-4e8f-8a5a-71d77bc1e390

@@ -3,7 +3,7 @@ title: "How to: Use the BetweenShowDelay Property"
 description: Learn how to use the BetweenShowDelay property in a Windows Presentation Foundation (WPF) application.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "ToolTip control [WPF], BetweenShowDelay time property"
   - "BetweenShowDelay time property [WPF]"
 ms.assetid: 984ea76d-f2a2-4326-a02e-f97ec3d036d6

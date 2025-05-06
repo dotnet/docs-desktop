@@ -2,9 +2,9 @@
 title: "ToolStripProgressBar Control Overview"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-f1_keywords: 
+f1_keywords:
   - "ToolStripProgressBar"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "toolbars [Windows Forms], progress bars"
   - "progress controls [Windows Forms]"
   - "ToolStripProgressBar control [Windows Forms], about ToolStripProgressBar control"

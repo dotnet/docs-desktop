@@ -3,11 +3,11 @@ title: Display an Insertion Mark in ListView Control
 description: Learn how to display an insertion mark in ListView Control to show users the point where dragged items are inserted.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
   - "cpp"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "ListView control [Windows Forms], drag operations"
   - "graphics [Windows Forms], insertion marks"
   - "drop and drag [Windows Forms], insertion marks"

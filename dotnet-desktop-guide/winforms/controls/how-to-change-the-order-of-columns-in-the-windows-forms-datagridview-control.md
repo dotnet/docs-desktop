@@ -2,10 +2,10 @@
 title: Change the Order of Columns in DataGridView Control
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "columns [Windows Forms], changing order"
   - "DataGridView control [Windows Forms], column order"
   - "data grids [Windows Forms], changing column order"

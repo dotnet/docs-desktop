@@ -3,10 +3,10 @@ title: "How to: Set the Width Properties of an Element"
 description: Learn how to set the width properties of an element in a Windows Presentation Foundation (WPF) application.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "width properties [WPF]"
   - "Panel control [WPF], width properties of elements"
 ms.assetid: 6ee04a9d-63f0-4f5b-a406-0a8cd4c35729

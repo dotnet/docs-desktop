@@ -3,10 +3,10 @@ title: Set the Selection Mode of DataGridView Control
 description: Learn how to set the selection mode of the Windows Forms DataGridView control, by means of code examples in C# and Visual Basic.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "selection [Windows Forms], modes in DataGridView control"
   - "DataGridView control [Windows Forms], selection mode"
   - "data grids [Windows Forms], selection mode"

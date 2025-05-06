@@ -3,9 +3,9 @@ title: WPF and Direct3D9 interop
 titleSuffix: ""
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "cpp"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "WPF [WPF], creating Direct3D9 content"
   - "Direct3D9 [WPF interoperability], creating Direct3D9 content"
 ms.assetid: 1b14b823-69c4-4e8d-99e4-f6dade58f89a

@@ -3,10 +3,10 @@ title: Platform security strategy
 description: Learn about the Windows Presentation Foundation (WPF) security services and how they integrate with the security features of the underlying platform.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "platform security model [WPF]"
   - "Common Language Runtime (CLR) security features"
   - "operating system security model [WPF]"

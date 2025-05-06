@@ -4,10 +4,10 @@ ms.date: "03/30/2017"
 ms.service: dotnet-framework
 ms.custom: devdivchpfy22
 description: Learn how to rotate Ink.
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "ink [WPF], rotating"
   - "rotating ink [WPF]"
 ms.assetid: fac36cc9-dd01-41ca-9bde-9d33e3790bbe

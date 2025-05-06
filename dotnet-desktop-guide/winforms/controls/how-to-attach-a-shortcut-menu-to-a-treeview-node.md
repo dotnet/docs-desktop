@@ -2,11 +2,11 @@
 title: "How to: Attach a ShortCut Menu to a TreeView Node"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
   - "cpp"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "shortcut menus [Windows Forms], adding to TreeView controls"
   - "TreeView control [Windows Forms], adding shortcut menus"
   - "tree nodes in TreeView control [Windows Forms], shortcut menus"

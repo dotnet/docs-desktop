@@ -4,7 +4,7 @@ description: Explore the deployment technologies that Windows and the .NET Frame
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
 ms.topic: overview
-helpviewer_keywords: 
+helpviewer_keywords:
   - "WPF applications [WPF], deployment"
   - "deployment [WPF], applications"
 ms.assetid: 12cadca0-b32c-4064-9a56-e6a306dcc76d

@@ -3,10 +3,10 @@ title: Customize Cells and Columns in DataGridView Control by Extending Their Be
 description: Learn about how to customize cells and columns in the Windows Forms DataGridView by extending their behavior and appearance.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "DataGridView control [Windows Forms], cell customization"
   - "columns [Windows Forms], customizing in DataGridView control"
   - "cells [Windows Forms], customizing in DataGridView control"

@@ -2,10 +2,10 @@
 title: "How to: Create a Rollover Effect Using Events"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "colors of elements [WPF], changing"
   - "rollover effect [WPF]"
   - "element colors [WPF], changing"

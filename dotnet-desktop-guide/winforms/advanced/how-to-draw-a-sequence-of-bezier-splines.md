@@ -2,10 +2,10 @@
 title: "How to: Draw a Sequence of B&#233;zier Splines"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "splines [Windows Forms], drawing Bezier"
   - "Bezier splines [Windows Forms], drawing sequence of"
 ms.assetid: 37a0bedb-20c2-4cf0-91fa-a5509e826b30

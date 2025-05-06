@@ -3,7 +3,7 @@ title: "How to: Use SelectedValue, SelectedValuePath, and SelectedItem"
 description: Learn how to use the SelectedValue and SelectedValuePath properties to specify a value for the SelectedItem of a Windows Presentation Foundation TreeView.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "TreeView control [WPF], SelectedValue properties"
   - "Control class [WPF], SelectedItem properties"
   - "Control class [WPF], TreeView properties"

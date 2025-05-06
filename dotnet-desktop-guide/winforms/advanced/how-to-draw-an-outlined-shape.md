@@ -2,13 +2,13 @@
 title: "How to: Draw an Outlined Shape"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
   - "cpp"
-f1_keywords: 
+f1_keywords:
   - "Graphics.DrawEllipse"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "ellipses [Windows Forms], drawing"
   - "circles [Windows Forms], drawing"
   - "drawing [Windows Forms], shapes"

@@ -2,9 +2,9 @@
 title: "ToolStrip Control Overview"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-f1_keywords: 
+f1_keywords:
   - "Toolstrip"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "ToolStrip control [Windows Forms], about ToolStrip control"
   - "toolbars [Windows Forms], what's new in Windows Forms"
   - "toolbars [Windows Forms]"

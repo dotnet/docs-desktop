@@ -2,10 +2,10 @@
 title: View Errors Within a DataSet using ErrorProvider Component
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "errors [Windows Forms], dataset errors"
   - "error messages [Windows Forms], viewing in datasets"
   - "ErrorProvider component [Windows Forms], dataset errors"

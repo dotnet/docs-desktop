@@ -4,10 +4,10 @@ description: Learn how to create a Shape using a StreamGeometry.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
 ms.custom: devdivchpfy22
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "graphics [WPF], shapes"
   - "shapes [WPF], creating with StreamGeometry class"
 ms.assetid: 08f7c8ce-074b-49cd-9aba-cc9592d4ee51

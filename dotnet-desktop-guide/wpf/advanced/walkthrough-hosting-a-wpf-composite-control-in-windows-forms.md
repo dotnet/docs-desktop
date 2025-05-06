@@ -6,7 +6,7 @@ ms.service: dotnet-framework
 helpviewer_keywords:
   - "hosting WPF content in Windows Forms [WPF]"
 ms.assetid: 0ac41286-4c1b-4b17-9196-d985cb844ce1
-description: Learn about an application that hosts a WPF composite control to perform data-entry in a Windows Forms application. 
+description: Learn about an application that hosts a WPF composite control to perform data-entry in a Windows Forms application.
 ---
 # Walkthrough: Hosting a WPF Composite Control in Windows Forms
 

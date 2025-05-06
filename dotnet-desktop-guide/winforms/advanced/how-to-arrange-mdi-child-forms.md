@@ -2,10 +2,10 @@
 title: "How to: Arrange MDI Child Forms"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "child forms [Windows Forms], arranging"
   - "MDI [Windows Forms], arranging child forms"
 ms.assetid: a0786378-3206-4ccc-898e-7d3b38cc5089

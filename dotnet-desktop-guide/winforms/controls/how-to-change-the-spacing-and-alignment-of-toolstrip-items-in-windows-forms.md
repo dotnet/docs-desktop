@@ -2,10 +2,10 @@
 title: "How to: Change the Spacing and Alignment of ToolStrip Items"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "ToolStrip control [Windows Forms], aligning items"
   - "examples [Windows Forms], toolbars"
   - "toolbars [Windows Forms], aligning items"

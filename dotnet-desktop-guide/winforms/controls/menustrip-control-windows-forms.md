@@ -3,7 +3,7 @@ title: "MenuStrip Control"
 description: Learn about the MenuStripControl in Windows Forms, which groups application commands and makes them easily accessible.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "MenuStrip control [Windows Forms]"
   - "menus"
 ms.assetid: e361bf98-eed8-4ed3-9dfb-5a2e865e3ce6

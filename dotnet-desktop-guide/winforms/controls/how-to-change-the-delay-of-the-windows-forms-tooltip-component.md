@@ -2,11 +2,11 @@
 title: Change the Delay of ToolTip Component
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
   - "cpp"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "ToolTip component [Windows Forms], delay values"
   - "tooltips [Windows Forms], delay values"
   - "examples [Windows Forms], tooltips"

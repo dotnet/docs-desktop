@@ -2,12 +2,12 @@
 title: "Styling for Focus in Controls, and FocusVisualStyle"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "keyboard focus [WPF]"
   - "focus [WPF], visual styling"
   - "styles [WPF], focus visual style"
 ms.assetid: 786ac576-011b-4d72-913b-558deccb9b35
-description: Learn how Windows Presentation Foundation provides two parallel mechanisms for changing the visual appearance of a control when it receives keyboard focus. 
+description: Learn how Windows Presentation Foundation provides two parallel mechanisms for changing the visual appearance of a control when it receives keyboard focus.
 ---
 # Styling for Focus in Controls, and FocusVisualStyle
 

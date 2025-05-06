@@ -3,10 +3,10 @@ title: "How to: Specify the Binding Source"
 description: Learn how to specify the binding source through this example in the Windows Presentation Foundation (WPF).
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "binding data [WPF], binding sources"
   - "data binding [WPF], binding source"
   - "binding sources [WPF]"

@@ -4,11 +4,11 @@ description: Learn about the Deactivate function of the Windows Presentation Fou
 titleSuffix: ""
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "cpp"
-api_name: 
+api_name:
   - "Deactivate"
-api_location: 
+api_location:
   - "PresentationHost_v0400.dll"
 ms.assetid: 3e81be16-24c7-4399-b242-6268feaa49d7
 ---

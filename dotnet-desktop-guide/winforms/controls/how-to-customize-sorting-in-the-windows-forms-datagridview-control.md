@@ -2,10 +2,10 @@
 title: Customize Sorting in a DataGridView Control
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "sorting [Windows Forms], DataGridView control"
   - "DataGridView control [Windows Forms], sorting"
   - "data grids [Windows Forms], customizing sorting"

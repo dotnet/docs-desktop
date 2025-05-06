@@ -3,11 +3,11 @@ title: Programmatically Resize Cells to Fit Content in DataGridView Control
 description: Learn how to programmatically resize cells to fit content in the Windows Forms DataGridView control.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
   - "cpp"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "data grids [Windows Forms], resizing cells to fit content"
   - "cells [Windows Forms], resizing to fit contents"
   - "DataGridView control [Windows Forms], resizing cells"

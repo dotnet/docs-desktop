@@ -3,10 +3,10 @@ title: "How to: Set Up Notification of Binding Updates"
 description: Learn how to use the INotifyPropertyChanged interface to set up notification when source or target binding properties have been updated.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "notifications [WPF], binding updates"
   - "data binding [WPF], notification of binding updates"
   - "binding [WPF], updates [WPF], notifications of"

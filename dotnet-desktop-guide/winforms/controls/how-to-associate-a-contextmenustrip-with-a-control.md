@@ -2,10 +2,10 @@
 title: "How to: Associate a ContextMenuStrip with a Control"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "context menus [Windows Forms], relating"
   - "ContextMenuStrips [Windows Forms], associating with controls"
   - "context menus [Windows Forms], associating with controls"

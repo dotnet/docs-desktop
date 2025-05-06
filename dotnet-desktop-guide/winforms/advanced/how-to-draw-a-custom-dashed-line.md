@@ -2,10 +2,10 @@
 title: "How to: Draw a Custom Dashed Line"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "lines [Windows Forms], custom"
   - "lines [Windows Forms], drawing"
   - "lines [Windows Forms], dashed"

@@ -4,10 +4,10 @@ description: Learn how to create a 3D scene.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
 ms.custom: devdivchpfy22
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "scenes [WPF], 3D"
   - "3D scenes"
 ms.assetid: adb4a598-71a2-4dd5-b677-ea3fc11b78b2

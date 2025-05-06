@@ -2,11 +2,11 @@
 title: Bind DataGrid Control to a Data Source
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
   - "cpp"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "datasets [Windows Forms], binding to DataGrid control"
   - "data binding [Windows Forms], DataGrid control"
   - "DataGrid control [Windows Forms], data binding"

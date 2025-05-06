@@ -3,7 +3,7 @@ title: "Using Fonts and Text"
 description: Learn how to use fonts and texts in Windows Forms applications using a selection of topics and tutorials.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "GDI [Windows Forms], drawing text [Windows Forms]"
   - "text [Windows Forms], drawing in Windows Forms"
   - "examples [Windows Forms], fonts and text"

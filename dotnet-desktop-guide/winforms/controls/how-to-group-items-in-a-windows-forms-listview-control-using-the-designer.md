@@ -1,6 +1,6 @@
 ---
 title: Group Items in ListView Control Using the Designer
-description: Learn how to group items in ListView Control using the Designer tool, which enables you to display related sets of items in groups. 
+description: Learn how to group items in ListView Control using the Designer tool, which enables you to display related sets of items in groups.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
 helpviewer_keywords:

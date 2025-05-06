@@ -2,10 +2,10 @@
 title: "How to: Crop and Scale Images"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "images [Windows Forms], cropping"
   - "images [Windows Forms], scaling"
 ms.assetid: 053e3360-bca0-4b25-9afa-0e77a6f17b03

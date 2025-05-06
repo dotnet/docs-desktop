@@ -3,10 +3,10 @@ title: "How to: Animate an EllipseGeometry"
 description: Learn about how to animate a Geometry using PointAnimation to animate the Center of an EllipseGeometry.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "animation [WPF], EllipseGeometry objects [WPF]"
   - "EllipseGeometry objects [WPF], animating"
   - "graphics [WPF], animation"

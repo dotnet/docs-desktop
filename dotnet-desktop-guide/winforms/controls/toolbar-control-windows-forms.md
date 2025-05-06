@@ -2,7 +2,7 @@
 title: "ToolBar Control"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "toolbars [Windows Forms]"
   - "ToolBar control [Windows Forms]"
 ms.assetid: 6b40e9ce-6a7a-4784-bfc9-7f1d36b7462e

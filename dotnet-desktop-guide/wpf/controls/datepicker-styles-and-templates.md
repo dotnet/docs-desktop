@@ -3,7 +3,7 @@ title: "DatePicker Styles and Templates"
 description: Learn about DatePicker styles and templates. You can modify the default ControlTemplate to give the control a unique appearance.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "ControlTemplate [WPF], DatePicker"
   - "DatePicker [WPF], styles and templates"
   - "templates [WPF], DatePicker"

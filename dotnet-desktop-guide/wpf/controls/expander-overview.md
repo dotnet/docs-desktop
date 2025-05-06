@@ -3,10 +3,10 @@ title: "Expander Overview"
 description: This article provides an overview of the Expander control, which provides a way to provide content in an expandable area that resembles a window.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "controls [WPF], Expander"
   - "Expander control [WPF], about Expander control"
 ms.assetid: 877bf425-0e54-49ec-8fd2-13a211377abb

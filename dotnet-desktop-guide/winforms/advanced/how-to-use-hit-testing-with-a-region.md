@@ -3,10 +3,10 @@ title: "How to: Use Hit Testing with a Region"
 description: Learn how to use hit testing with a region to determine whether the cursor is over a certain subject, such as an icon or a button.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "hit tests [Windows Forms], using regions"
   - "regions [Windows Forms], hit testing"
 ms.assetid: 3a4c07cb-a40a-4d14-ad35-008f531910a8

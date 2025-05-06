@@ -2,10 +2,10 @@
 title: "How to: Customize Colors in ToolStrip Applications"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "toolbars [Windows Forms], customizing colors"
   - "colors [Windows Forms], customizing in ToolStrip controls [Windows Forms]"
   - "ToolStrip control [Windows Forms], custom colors"

@@ -3,11 +3,11 @@ title: "How to: Add Panels to a StatusBar Control"
 description: Learn how to add panels to a StatusBar control. The programmable area within a StatusBar control consists of instances of the StatusBarPanel class.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
   - "cpp"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "panels [Windows Forms], status bars"
   - "status bars [Windows Forms], adding panels"
   - "StatusBar control [Windows Forms], adding panels"

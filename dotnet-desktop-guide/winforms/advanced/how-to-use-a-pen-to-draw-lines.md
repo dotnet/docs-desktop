@@ -3,10 +3,10 @@ title: "How to: Use a Pen to Draw Lines"
 description: Learn how to use a pen to draw lines by using a a System.Drawing.Graphics object and a System.Drawing.Pen object.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "lines [Windows Forms], drawing"
   - "pens [Windows Forms], drawing lines"
 ms.assetid: 0828c331-a438-4bdd-a4d6-3ef1e59e8795

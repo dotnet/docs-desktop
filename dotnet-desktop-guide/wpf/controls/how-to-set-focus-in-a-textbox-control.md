@@ -4,10 +4,10 @@ description: Learn how to use the Focus method to set focus on a Windows Present
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
 ms.custom: devdivchpfy22
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "focus [WPF], setting"
   - "TextBox control [WPF], setting focus"
 ms.assetid: 24b61b45-dc2d-425e-9839-b017af7ab86f

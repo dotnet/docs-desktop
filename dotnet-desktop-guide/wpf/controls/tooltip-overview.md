@@ -3,10 +3,10 @@ title: "ToolTip Overview"
 description: Overview that introduces how to create and customize tooltip content in Windows Presentation Foundation (WPF) applications.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "ToolTip control [WPF], about ToolTip control"
   - "controls [WPF], ToolTip"
 ms.assetid: f06c1603-e9cb-4809-8a62-234607fc52f7

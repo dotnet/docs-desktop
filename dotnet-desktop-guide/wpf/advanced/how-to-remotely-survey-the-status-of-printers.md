@@ -2,17 +2,17 @@
 title: "How to: Remotely Survey the Status of Printers"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
   - "cpp"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "surveying printer status remotely [WPF]"
   - "printer status [WPF], surveying remotely"
   - "remotely surveying printer status [WPF]"
   - "status [WPF], printers [WPF], surveying remotely"
 ms.assetid: d6324759-8292-4c23-9584-9c708887dc94
-description: Learn how the printer properties exposed in the APIs of Microsoft .NET Framework provide a means for performing a rapid survey of the states of printers. 
+description: Learn how the printer properties exposed in the APIs of Microsoft .NET Framework provide a means for performing a rapid survey of the states of printers.
 ---
 # How to: Remotely Survey the Status of Printers
 

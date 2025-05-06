@@ -3,10 +3,10 @@ title: "How to: Bind an Adorner to an Element"
 description: Learn how to bind an adorner to a UIElement by a 2-step method and following the included code examples in C# and Visual Basic.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "UIElements [WPF], binding adorners to"
   - "adorners [WPF], binding to specified UIElements"
 ms.assetid: b2101611-a0ee-4137-bdb8-9b3673d2e6b9

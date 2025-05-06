@@ -4,10 +4,10 @@ description: Learn about the DynamicResource markup Extensible Application Marku
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
 ms.custom: devdivchpfy22
-f1_keywords: 
+f1_keywords:
   - "DynamicResource"
   - "DynamicResourceExtension"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "XAML [WPF], DynamicResource markup extension"
   - "DynamicResource markup extensions [WPF]"
 ms.assetid: 7324f243-03af-4c2b-b0db-26ac6cdfcbe4

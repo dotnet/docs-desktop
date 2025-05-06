@@ -3,7 +3,7 @@ title: "Multimedia Overview"
 description: Learn abut the multimedia features available in Windows Presentation Foundation (WPF).
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "multimedia [WPF]"
   - "media [WPF]"
 ms.assetid: feb25b15-d741-4ac3-818f-1b19f63a3562

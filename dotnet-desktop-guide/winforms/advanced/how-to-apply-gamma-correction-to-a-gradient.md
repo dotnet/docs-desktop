@@ -2,10 +2,10 @@
 title: "How to: Apply Gamma Correction to a Gradient"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "gradient brushes [Windows Forms], gamma correction"
   - "gradients [Windows Forms], gamma correction"
 ms.assetid: da4690e7-5fac-4fd2-b3f0-5cb35c165b92

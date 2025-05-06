@@ -4,7 +4,7 @@ description: Learn about how drag-and-drop works on Windows Forms, including how
 ms.date: 04/02/2025
 ms.service: dotnet-desktop
 ms.topic: conceptual
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
 helpviewer_keywords:

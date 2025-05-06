@@ -3,9 +3,9 @@ title: "FlowLayoutPanel Control Overview"
 description: Learn about an overview of the FlowLayoutPanel control, which arranges its contents in a horizontal or vertical flow direction.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-f1_keywords: 
+f1_keywords:
   - "FlowLayoutPanel"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "forms [Windows Forms], dynamic layout"
   - "layout [Windows Forms], dynamic"
   - "Windows Forms, dynamic layout"

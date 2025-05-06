@@ -3,7 +3,7 @@ title: "FlowLayoutPanel Control"
 description: Learn about the FlowLayoutPanel control in Windows Forms, which arranges its contents in a horizontal or vertical flow direction.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "FlowLayoutPanel control [Windows Forms]"
   - "layout [Windows Forms]"
   - "Windows Forms, arranging contents"

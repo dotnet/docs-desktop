@@ -4,10 +4,10 @@ ms.date: "03/30/2017"
 ms.service: dotnet-framework
 ms.custom: devdivchpfy22
 description: Learn how to manipulate Flow Content Elements through the Inlines property.
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "flow content elements [WPF], manipulating through Inlines property"
   - "documents [WPF], manipulating flow Content elements through Inlines property"
   - "Inlines property [WPF], manipulating flow Content elements"

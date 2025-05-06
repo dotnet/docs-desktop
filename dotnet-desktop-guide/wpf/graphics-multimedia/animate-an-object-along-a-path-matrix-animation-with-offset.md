@@ -3,10 +3,10 @@ title: "How to: Animate an Object Along a Path (Matrix Animation with Offset Acc
 description: Learn how to use the MatrixAnimationUsingPath class to animate an object along a path and have that animation accumulate its offset values as it repeats.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "offset accumulation [WPF]"
   - "animation [WPF], objects along paths (matrix animation with offset accumulation)"
   - "matrix animation with offset accumulation [WPF]"

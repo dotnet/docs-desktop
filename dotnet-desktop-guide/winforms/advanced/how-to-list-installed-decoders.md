@@ -2,10 +2,10 @@
 title: "How to: List Installed Decoders"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "image codecs [Windows Forms], listing"
   - "image decoders [Windows Forms], listing"
 ms.assetid: 11417191-8c95-40ca-8024-779e61706fb6

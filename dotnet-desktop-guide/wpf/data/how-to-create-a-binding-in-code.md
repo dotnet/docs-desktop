@@ -3,10 +3,10 @@ title: "How to: Create a Binding in Code"
 description: Learn how to create a binding in code in a Windows Presentation Foundation application by calling the SetBinding method directly.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "binding data [WPF], creating"
   - "data binding [WPF], creating"
 ms.assetid: 1a606db9-cf5f-42ed-a1c5-9e4722ec77a0

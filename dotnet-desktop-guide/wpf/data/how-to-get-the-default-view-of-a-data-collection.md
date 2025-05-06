@@ -3,10 +3,10 @@ title: "How to: Get the Default View of a Data Collection"
 description: Learn how to use the DataContext of a data object to retrieve the default view of a data collection.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "data collections [WPF], creating views of"
   - "data binding [WPF], creating views of data collections"
 ms.assetid: b641e96c-c2f6-42ea-9c5d-bac81176ad65

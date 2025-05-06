@@ -3,11 +3,11 @@ title: "How to: Display Dialog Boxes"
 description: Learn how to display dialog boxes in a similar way to how you display other forms in Windows applications.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
   - "cpp"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "Windows Forms, displaying"
   - "Windows Forms dialog boxes [Windows Forms], displaying"
   - "Windows Forms, calling one form from another"

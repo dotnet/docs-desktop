@@ -1,12 +1,12 @@
 ---
 title: Display Icons for ListView Control
-description: Learn how to display icons from three different image lists for the ListView Control. 
+description: Learn how to display icons from three different image lists for the ListView Control.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "ListView control [Windows Forms], displaying icons"
   - "icons [Windows Forms], displaying for ListView controls"
   - "lists [Windows Forms], displaying icons"

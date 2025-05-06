@@ -3,10 +3,10 @@ title: XAML Namespaces and Namespace Mapping
 description: Learn more about the presence and purpose of the two XAML namespace mappings often found in the root tag of a Windows Presentation Foundation XAML file.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "custom classes [WPF], mapping namespaces to"
   - "XAML [WPF], namespaces"
   - "namespace mapping [WPF]"

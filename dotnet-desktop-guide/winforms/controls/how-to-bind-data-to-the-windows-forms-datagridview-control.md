@@ -2,11 +2,11 @@
 title: Bind data to DataGridView Control
 ms.date: "02/08/2019"
 ms.service: dotnet-framework
-description: Learn how DataGridView control supports the standard Windows Forms data binding model so it can bind to a variety of data sources. 
-dev_langs: 
+description: Learn how DataGridView control supports the standard Windows Forms data binding model so it can bind to a variety of data sources.
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "data binding [Windows Forms], grids"
   - "data binding [Windows Forms], DataGridView control"
   - "DataGridView control [Windows Forms], data binding"

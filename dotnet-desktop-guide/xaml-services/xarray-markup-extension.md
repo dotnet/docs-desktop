@@ -3,10 +3,10 @@ title: "x:Array Markup Extension"
 description: Learn about the x:Array Markup Extension.
 ms.date: "03/30/2017"
 ms.custom: devdivchpfy22
-f1_keywords: 
+f1_keywords:
   - "x:Array"
   - "xArray"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "x:Array [XAML Services]"
   - "XAML [XAML Services], x:Array markup extension"
 ms.assetid: c5358e14-d24c-44c7-b5eb-6062a4fd981c

@@ -4,7 +4,7 @@ description: Learn about several ways that you can use Windows Forms to validate
 ms.date: 04/02/2025
 ms.service: dotnet-desktop
 ms.topic: overview
-helpviewer_keywords: 
+helpviewer_keywords:
   - "Windows Forms, validating user input"
   - "validation [Windows Forms], Windows Forms user input"
   - "user input [Windows Forms], validating in Windows Forms"

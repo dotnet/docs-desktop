@@ -2,10 +2,10 @@
 title: "How to: Create an MDI Form with ToolStripPanel Controls"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "ToolStripPanel control [Windows Forms]"
   - "MDI [Windows Forms], creating forms"
   - "multiple document interface forms"

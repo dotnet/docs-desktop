@@ -3,11 +3,11 @@ title: "How to: Animate a Property Without Using a Storyboard"
 description: Learn how to use the BeginAnimation method to animate a property without using a Storyboard with several provided code examples.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
   - "cpp"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "non-Storyboard animation"
   - "local animation [WPF]"
   - "animation [WPF], non-Storyboard (local)"

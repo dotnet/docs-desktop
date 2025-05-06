@@ -2,10 +2,10 @@
 title: "How to: Create an Add-In That Is a UI"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "creating an add-in that is a UI [WPF]"
   - "add-ins [WPF], UI"
   - "creating UI add-ins [WPF]"

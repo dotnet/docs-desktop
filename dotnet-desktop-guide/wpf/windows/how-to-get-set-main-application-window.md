@@ -4,10 +4,10 @@ description: Learn about how to get and set the main application window for a Wi
 ms.date: 10/24/2024
 ms.service: dotnet-desktop
 ms.custom: update-template
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "windows objects [WPF], setting"
   - "setting windows objects [WPF]"
   - "windows objects [WPF], getting"

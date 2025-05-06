@@ -4,10 +4,10 @@ ms.date: "03/30/2017"
 ms.service: dotnet-framework
 ms.custom: devdivchpfy22
 description: Learn how to remove all Adorners from an Element.
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "adorners [WPF], removing"
 ms.assetid: fe5303a3-b76e-4643-aafb-51419032b47b
 ---

@@ -3,10 +3,10 @@ title: "How to: Translate Image Colors"
 description: Learn how to translate image colors using a code example that constructs a System.Drawing.Image object from an image file and adds a value to the red component.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "bitmaps [Windows Forms], changing colors"
   - "images [Windows Forms], changing colors"
   - "image colors [Windows Forms]"

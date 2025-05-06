@@ -3,7 +3,7 @@ title: "Printing and Print System Management"
 description: Learn about printing and print system management in Windows Presentation Foundation (WPF).
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "printing [WPF]"
   - "print system management [WPF]"
 ms.assetid: 637911b3-0c78-4493-a4fb-91db56d767cd

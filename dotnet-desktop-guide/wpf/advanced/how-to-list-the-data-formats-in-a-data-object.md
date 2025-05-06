@@ -4,10 +4,10 @@ ms.date: "03/30/2017"
 ms.service: dotnet-framework
 ms.custom: devdivchpfy22
 description: Learn how to list the Data Formats in a Data Object.
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "drag-and-drop [WPF], listing data formats"
   - "DataFormats class [WPF]"
   - "data formats [WPF], listing"

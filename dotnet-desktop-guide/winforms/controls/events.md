@@ -7,9 +7,9 @@ ms.topic: overview
 dev_langs:
   - "csharp"
   - "vb"
-f1_keywords: 
+f1_keywords:
   - "OnPaint"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "Windows Forms, event handling"
   - "events [Windows Forms], connecting multiple to single event handler"
   - "event handlers [Windows Forms], connecting events to"

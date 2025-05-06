@@ -4,11 +4,11 @@ description: Learn about the SetFakeActiveWindow function - WPF unmanaged API re
 titleSuffix: ""
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "cpp"
-api_name: 
+api_name:
   - "SetFakeActiveWindow"
-api_location: 
+api_location:
   - "PresentationHost_v0400.dll"
 ms.assetid: a69118be-63b0-445c-9fb6-ab8cc958e531
 ---

@@ -2,7 +2,7 @@
 title: "How to: Handle the ContextMenuOpening Event"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "ContextMenuOpening properties [WPF]"
 ms.assetid: 789652fb-1951-4217-934a-7843e355adf4
 description: Learn how the ContextMenuOpening event can adjust a context menu prior to display or suppress the menu that would be displayed by setting the Handled property.

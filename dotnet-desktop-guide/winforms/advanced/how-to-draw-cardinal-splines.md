@@ -2,10 +2,10 @@
 title: "How to: Draw Cardinal Splines"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "cardinal splines [Windows Forms], drawing"
   - "drawing [Windows Forms], cardinal splines"
   - "graphics [Windows Forms], cardinal splines"

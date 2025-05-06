@@ -2,9 +2,9 @@
 title: "TabControl Control Overview"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-f1_keywords: 
+f1_keywords:
   - "TabControl"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "TabControl control [Windows Forms], about TabControl control"
   - "tab pages [Windows Forms], about tab pages"
   - "property pages [Windows Forms], Windows Forms"

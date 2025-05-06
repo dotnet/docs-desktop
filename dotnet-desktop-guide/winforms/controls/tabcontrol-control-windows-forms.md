@@ -2,7 +2,7 @@
 title: "TabControl Control"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "TabControl control [Windows Forms]"
   - "tab controls"
   - "tab controls [Windows Forms], creating"

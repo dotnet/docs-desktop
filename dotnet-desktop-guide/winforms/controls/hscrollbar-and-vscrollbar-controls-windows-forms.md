@@ -3,7 +3,7 @@ title: "HScrollBar and VScrollBar Controls"
 description: Learn about HScrollBar and VScrollBar controls, which are used to provide easy navigation through a long list of items or a large amount of information.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "scroll bars"
   - "VScrollBar control [Windows Forms]"
   - "scroll bars [Windows Forms], Windows Forms"

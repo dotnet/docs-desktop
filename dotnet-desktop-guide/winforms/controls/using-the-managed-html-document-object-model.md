@@ -2,7 +2,7 @@
 title: "Using the Managed HTML Document Object Model"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "managed HTML DOM"
 ms.assetid: a017dd5c-cd7b-47e4-952c-f4f54cb48409
 description: Learn how the managed HTML document object model provides a wrapper based on the .NET Framework for the HTML classes exposed by Internet Explorer.

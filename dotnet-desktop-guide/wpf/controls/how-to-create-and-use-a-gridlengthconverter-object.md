@@ -3,10 +3,10 @@ title: "How to: Create and Use a GridLengthConverter Object"
 description: Learn how to create and use a GridLengthConverter object, by means of the included code example in C# and Visual Basic.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "Grid control [WPF], creating [WPF], GridLengthConverter objects"
 ms.assetid: 5ab75911-e36a-4825-80e4-081c57e8e182
 ---

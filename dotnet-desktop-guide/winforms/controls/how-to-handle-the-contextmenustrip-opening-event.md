@@ -3,10 +3,10 @@ title: "How to: Handle the ContextMenuStrip Opening Event"
 description: Learn how to handle the ContextMenuStrip Opening event, which adds items dynamically to a ContextMenuStrip control.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "ContextMenuStrip control [Windows Forms]"
   - "context menus [Windows Forms], event handling"
   - "ToolStrip control [Windows Forms]"

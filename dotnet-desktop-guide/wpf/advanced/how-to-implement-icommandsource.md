@@ -2,10 +2,10 @@
 title: "How to: Implement ICommandSource"
 ms.date: "12/05/2019"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "ICommandSource interfaces [WPF], implementing"
 ms.assetid: 7452dd39-6e11-44bf-806a-31d87f3772ac
 description: Learn how to create a command source by implementing ICommandSource, which knows how to invoke a command and exposes three memebers.

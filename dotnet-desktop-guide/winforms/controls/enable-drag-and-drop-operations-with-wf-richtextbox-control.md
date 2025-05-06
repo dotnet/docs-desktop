@@ -1,13 +1,13 @@
 ---
 title: Enable Drag-and-Drop Operations with RichTextBox Control
-description: Learn more about how to enable drag-and-drop operations with the Windows Forms RichTextBox control. 
+description: Learn more about how to enable drag-and-drop operations with the Windows Forms RichTextBox control.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
   - "cpp"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "examples [Windows Forms], text boxes"
   - "drag and drop [Windows Forms], richTextBox control"
   - "text boxes [Windows Forms], drag-and-drop operations"

@@ -3,7 +3,7 @@ title: ComboBox vs. ListBox
 description: Learn about using Windows Forms ComboBox and Windows Forms ListBox, and learn to how tell when one or the other is more appropriate for a task.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "ListBox control [Windows Forms], adding and removing items"
   - "ListBox control [Windows Forms], vs. ComboBox"
   - "bound controls [Windows Forms], combo boxes"

@@ -3,7 +3,7 @@ title: Coordinates in Windows Forms
 description: Learn about the coordinate system for Windows Forms, which is based on device coordinates and drawing in pixel units.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "Windows Forms coordinates"
   - "screen coordinates"
   - "client coordinates"

@@ -4,10 +4,10 @@ description: Control playback of media in Windows Presentation foundation (WPF).
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
 ms.custom: devdivchpfy22
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "playback of media [WPF], controlling"
   - "controlling playback of media [WPF]"
   - "multimedia [WPF], controlling playback of media"

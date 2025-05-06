@@ -3,12 +3,12 @@ title: "How to: Draw a Line on a Windows Form"
 description: Learn how to draws a line on a form by handling the Paint event, and then perform the drawing using the Graphics property of the PaintEventArgs.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-f1_keywords: 
+f1_keywords:
   - "Graphics.DrawLine"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "examples [Windows Forms], drawing lines on forms"
   - "drawing [Windows Forms], lines"
   - "lines [Windows Forms], drawing"

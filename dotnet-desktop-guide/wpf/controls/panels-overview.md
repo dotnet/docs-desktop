@@ -3,11 +3,11 @@ title: "Panels Overview"
 description: Windows Presentation Foundation provides predefined Panel elements that control the rendering of elements. Learn how to construct custom Panel elements.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
   - "cpp"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "Panel control [WPF], about Panel control"
   - "controls [WPF], Panel"
 ms.assetid: f73644af-9941-4611-8754-6d4cef03fc44

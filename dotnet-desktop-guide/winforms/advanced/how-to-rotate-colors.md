@@ -3,10 +3,10 @@ title: "How to: Rotate Colors"
 description: Learn how to rotate colors in a three-dimensional color space using Windows Forms and System.Windows.Forms.PaintEventArgs.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "colors [Windows Forms], rotating"
   - "examples [Windows Forms], rotating colors"
 ms.assetid: e2e4c300-159c-4f4a-9b56-103b0f7cbc05

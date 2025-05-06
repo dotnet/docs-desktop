@@ -1,9 +1,9 @@
 ---
 title: "Samples"
-description: Take a look at the capabilities and offerings of the Windows Presentation Foundation (WPF) demonstrated in these samples. 
+description: Take a look at the capabilities and offerings of the Windows Presentation Foundation (WPF) demonstrated in these samples.
 ms.date: "11/02/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "WPF samples [WPF]"
   - "samples [WPF]"
 ms.assetid: 1fc53e12-dfe5-476e-be13-fc3714aaf640

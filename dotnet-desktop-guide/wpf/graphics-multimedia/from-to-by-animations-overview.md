@@ -3,10 +3,10 @@ title: "From-To-By Animations Overview"
 description: Learn how to use From/To/By animations to animate dependency properties by creating a transition between two values.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "animation [WPF], From/to/by"
   - "From/to/by animation"
 ms.assetid: 516fce0a-e7f8-49b8-b018-53b3d409a8a3

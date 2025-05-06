@@ -2,11 +2,11 @@
 title: Create Access Keys with Label Controls
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
   - "cpp"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "controls [Windows Forms], access keys"
   - "dialog box controls [Windows Forms], mnemonics"
   - "access keys [Windows Forms], creating for controls"

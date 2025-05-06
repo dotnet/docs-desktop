@@ -4,10 +4,10 @@ description: Provides a value for any XAML property attribute by looking up a re
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
 ms.custom: devdivchpfy22
-f1_keywords: 
+f1_keywords:
   - "StaticResource"
   - "StaticResourceExtension"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "XAML [WPF], StaticResource markup extension"
   - "StaticResource markup extensions [WPF]"
 ms.assetid: 97af044c-71f1-4617-9a94-9064b68185d2

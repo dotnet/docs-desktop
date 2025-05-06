@@ -3,11 +3,11 @@ title: Add and Remove Items from ComboBox, ListBox, or CheckedListBox Control
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
 description: Learn how to add and remove a Windows Forms ComboBox, ListBox, and CheckedListBox controls simply and with no data binding.
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
   - "cpp"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "combo boxes [Windows Forms], adding items"
   - "list boxes [Windows Forms], removing items"
   - "ComboBox control [Windows Forms], adding and removing items"

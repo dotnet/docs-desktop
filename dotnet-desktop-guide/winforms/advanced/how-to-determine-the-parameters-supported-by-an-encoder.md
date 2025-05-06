@@ -2,10 +2,10 @@
 title: "How to: Determine the Parameters Supported by an Encoder"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "encoder parameters [Windows Forms], determining supported"
 ms.assetid: f47ae459-e3ce-4d41-a140-2f6c6aea3f44
 description: Learn how to determine the parameters supported by an Encoder using the GetEncoderParameterList method provided by the Image class.

@@ -3,10 +3,10 @@ title: Add and Remove Items with ListView Control
 description: Learn how to add and remove an item with the Windows Forms ListView control by specifying the item and assigning properties to it.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "ListView control [Windows Forms], populating"
   - "list views [Windows Forms], adding list items"
   - "ListView control [Windows Forms], adding list items"

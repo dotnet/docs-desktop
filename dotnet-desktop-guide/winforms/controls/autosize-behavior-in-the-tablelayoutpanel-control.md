@@ -4,7 +4,7 @@ description: Learn more about how to autosize behavior in the TableLayoutPanel c
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
 ms.topic: overview
-helpviewer_keywords: 
+helpviewer_keywords:
   - "AutoSize property [Windows Forms], tableLayoutPanel control"
   - "controls [Windows Forms], sizing"
   - "localizing forms"

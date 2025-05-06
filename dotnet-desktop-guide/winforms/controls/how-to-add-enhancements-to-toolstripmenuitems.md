@@ -3,10 +3,10 @@ title: "How to: Add Enhancements to ToolStripMenuItems"
 description: Learn how you can add enhancements to the usability of the MenuStrip and ContextMenuStrip controls.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "commands [Windows Forms], grouping on menus"
   - "check marks [Windows Forms], adding to menus"
   - "ToolStripMenuItems [Windows Forms], displaying access keys"

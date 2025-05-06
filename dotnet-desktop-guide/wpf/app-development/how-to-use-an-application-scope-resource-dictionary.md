@@ -3,10 +3,10 @@ title: "How to: Use an Application-Scope Resource Dictionary"
 description: Learn how to define and use an application-scope custom resource dictionary in Windows Presentation Foundation (WPF).
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "dictionaries [WPF], resource"
   - "resource dictionaries [WPF], application-scope"
   - "application-scope resource dictionaries"

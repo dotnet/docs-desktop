@@ -3,7 +3,7 @@ title: "Calendar"
 description: Learn about the Calendar control in this article, which enables a user to select a date by using a visual calendar display.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "controls [WPF], Calendar"
   - "Calendar control [WPF]"
 ms.assetid: ee844e4a-eefe-48e2-bd0d-1d82cc5e960b

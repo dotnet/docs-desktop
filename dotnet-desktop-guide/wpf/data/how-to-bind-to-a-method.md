@@ -3,7 +3,7 @@ title: "How to: Bind to a Method"
 description: Follow this example to find out how to bind to the method of an object in the Windows Presentation Foundation (WPF).
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "data binding [WPF], binding to methods using ObjectDataProvider"
   - "binding [WPF], to methods"
   - "methods [WPF], binding to"

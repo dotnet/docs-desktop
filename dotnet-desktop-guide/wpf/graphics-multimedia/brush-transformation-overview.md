@@ -4,10 +4,10 @@ description: Learn about the Transform and RelativeTransform Brush class transfo
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
 ms.topic: overview
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "brushes [WPF], transformation properties"
   - "properties [WPF], transformation"
   - "transformation properties of brushes [WPF]"

@@ -2,9 +2,9 @@
 title: "SoundPlayer Class"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-f1_keywords: 
+f1_keywords:
   - "SoundPlayer"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "sounds [Windows Forms], playing"
 ms.assetid: f3945af9-045c-4e2d-b251-377c37ca2d77
 description: Learn how the SoundPlayer class enables users to include sounds in applications, and how the SystemsSounds class can be used to play common sounds.

@@ -4,7 +4,7 @@ description: Learn how to customize the Thumb Size on a ScrollBar.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
 ms.custom: devdivchpfy22
-helpviewer_keywords: 
+helpviewer_keywords:
   - "ScrollBar control [WPF]"
   - "customizing thumb size [WPF]"
   - "thumb size [WPF]"

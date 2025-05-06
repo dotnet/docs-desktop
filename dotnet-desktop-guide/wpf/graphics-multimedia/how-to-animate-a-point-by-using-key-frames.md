@@ -3,10 +3,10 @@ title: "How to: Animate a Point by Using Key Frames"
 description: Learn about how to use the PointAnimationUsingKeyFrames class to animate a point by using key frames.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "key frames [WPF], animating Points with"
   - "Points [WPF], animating with key frames"
   - "animation [WPF], Points with key frames"

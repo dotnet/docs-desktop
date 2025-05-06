@@ -3,10 +3,10 @@ title: "Path Animations Overview"
 description: Learn about path animations which enable you to use a geometric path to generate output values.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "animation [WPF], paths"
   - "path animations [WPF]"
 ms.assetid: 979c732c-df74-47a6-be96-8e07b3707d53

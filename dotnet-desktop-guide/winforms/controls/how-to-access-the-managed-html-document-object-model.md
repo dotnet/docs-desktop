@@ -3,10 +3,10 @@ title: "How to: Access the Managed HTML Document Object Model"
 description: Learn how you can access the managed HTML Document Object Model (DOM) from two types of applications.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "HTML DOM [Windows Forms], accessing"
   - "managed HTML DOM [Windows Forms], accessing"
 ms.assetid: 40fa5cd5-1ed8-42f6-a93f-9ac01608bbeb

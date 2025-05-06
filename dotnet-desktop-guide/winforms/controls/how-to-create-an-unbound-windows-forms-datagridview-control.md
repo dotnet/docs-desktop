@@ -4,10 +4,10 @@ description: Populate an unbound Windows Forms DataGridView Control programmatic
 ms.date: "01/12/2022"
 ms.service: dotnet-framework
 ms.custom: devdivchpfy22
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "DataGridView control [Windows Forms], unbound data"
   - "DataGridView control [Windows Forms], displaying data without binding to a data source"
   - "data [Windows Forms], unbound"

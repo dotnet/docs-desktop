@@ -3,7 +3,7 @@ title: "How To: Write User Settings at Run Time with C#"
 description: Learn how to write settings at run time with C# by persisting the changes to the settings between application sessions by calling the Save method.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "application settings [Windows Forms], run time"
   - "application settings [Windows Forms], writing user settings"
   - "application settings [Windows Forms], C#"

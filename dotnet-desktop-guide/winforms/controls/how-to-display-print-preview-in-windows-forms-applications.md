@@ -4,11 +4,11 @@ description: Learn how to display Print Preview in Windows forms apps to enable 
 titleSuffix: ""
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
   - "cpp"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "print preview [Windows Forms], displaying"
   - "printing [Windows Forms], print preview"
   - "examples [Windows Forms], print preview"

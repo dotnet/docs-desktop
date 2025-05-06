@@ -3,11 +3,11 @@ title: Add or Remove Images with ImageList Component
 description: The Windows Forms ImageList component is typically populated with images before it is associated with a control. Learn to add and remove images later.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
   - "cpp"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "images [Windows Forms], removing from ImageList component"
   - "images [Windows Forms], storing for controls"
   - "ImageList component [Windows Forms], adding images"

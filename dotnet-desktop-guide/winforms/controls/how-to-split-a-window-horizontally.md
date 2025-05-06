@@ -3,10 +3,10 @@ title: "How to: Split a Window Horizontally"
 description: Learn how to split a window horizontally in Windows Forms, by means of code examples in Visual Basic and C#.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "SplitContainer control [Windows Forms], horizontal splitter"
   - "splitter windows [Windows Forms], changing splitter orientation"
   - "splitter windows [Windows Forms], horizontal"

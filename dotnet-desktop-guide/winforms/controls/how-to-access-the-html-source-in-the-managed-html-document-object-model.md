@@ -3,10 +3,10 @@ title: "How to: Access the HTML Source in the Managed HTML Document Object Model
 description: Learn how to access HTML source in the managed HTML Document Object Model. Properties return the HTML as it existed when it was first displayed.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "managed HTML DOM"
   - "HTML [Windows Forms], accessing in Windows Forms"
 ms.assetid: 53db79fa-8a5e-448e-88c2-f54ace3860b6

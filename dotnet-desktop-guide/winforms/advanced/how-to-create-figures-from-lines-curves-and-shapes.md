@@ -2,10 +2,10 @@
 title: "How to: Create Figures from Lines, Curves, and Shapes"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "figures [Windows Forms], creating from shapes"
   - "figures [Windows Forms], creating from lines"
 ms.assetid: 82fd56c7-b443-4765-9b7c-62ce030656ec

@@ -4,9 +4,9 @@ description: Learn about the binding markup XAML extension in Windows Presentati
 ms.date: "01/17/2022"
 ms.service: dotnet-framework
 ms.custom: devdivchpfy22
-f1_keywords: 
+f1_keywords:
   - "Binding"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "Binding markup extensions [WPF]"
   - "XAML [WPF], Binding markup extension"
 ms.assetid: 83d6e2a4-1b0c-4fc8-bd96-b5e98800ab63

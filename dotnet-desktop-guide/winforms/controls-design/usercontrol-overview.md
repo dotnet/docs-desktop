@@ -4,9 +4,9 @@ description: Learn about what a user control is in Windows Forms. A user control
 ms.date: 04/02/2025
 ms.service: dotnet-desktop
 ms.topic: overview
-f1_keywords: 
+f1_keywords:
   - "UserControl"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "controls [Windows Forms], user controls"
   - "controls [Windows Forms], types of"
   - "composite controls [Windows Forms]"

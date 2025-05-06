@@ -4,10 +4,10 @@ description: Learn about how controls are used in Windows Forms for .NET. Contro
 ms.date: 03/31/2025
 ms.service: dotnet-desktop
 ms.topic: overview
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "Windows Forms, controls"
   - "controls [Windows Forms]"
   - "custom controls [Windows Forms]"

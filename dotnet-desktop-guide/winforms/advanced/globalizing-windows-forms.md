@@ -3,7 +3,7 @@ title: Globalize apps
 description: This topic presents a list of topics related to globalizing Windows Forms applications.
 ms.date: "06/08/2018"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "Windows Forms, globalization"
   - "localization [Windows Forms]"
   - "globalization [Windows Forms]"

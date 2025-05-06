@@ -3,10 +3,10 @@ title: "Handle keyboard input at the Form level"
 description: Learn how to handle keyboard input for your Windows Forms at the form level, before messages reach a control.
 ms.date: 04/02/2025
 ms.service: dotnet-desktop
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "keyboard input [Windows Forms], at form level"
   - "Windows Forms, handling keyboard input"
   - "keyboards [Windows Forms], form-level input"

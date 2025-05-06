@@ -3,11 +3,11 @@ title: Implement Virtual Mode in DataGridView Control
 description: Learn how to implement virtual mode in DataGridView Control, which allows you to manage large sets of data.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
   - "cpp"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "data [Windows Forms], managing large data sets"
   - "DataGridView control [Windows Forms], virtual mode"
   - "virtual mode"

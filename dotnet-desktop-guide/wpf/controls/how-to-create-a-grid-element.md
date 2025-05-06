@@ -3,10 +3,10 @@ title: "How to: Create a Grid Element"
 description: Learn how to create a Grid element, by means of the included code examples in C#, Visual Basic, and XAML.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "Grid control [WPF], creating [WPF], grid instance"
 ms.assetid: b2f07626-9df8-43b8-8d36-492f3cb42837
 ---

@@ -2,7 +2,7 @@
 title: "XAML 2009 Language Features"
 description: "Describes the language features specific to the XAML 2009 specification."
 ms.date: "03/30/2017"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "XAML 2009 [XAML Services]"
   - "XAML [XAML Services], XAML 2009"
 ms.assetid: f6bb18d8-c86a-4549-8862-323e6b32a8dd

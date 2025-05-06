@@ -3,11 +3,11 @@ title: Determine When Formatting Attributes Change in RichTextBox Control
 description: Learn more about how to determine when formatting attributes change in the Windows Forms RichTextBox control.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
   - "cpp"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "examples [Windows Forms], text boxes"
   - "RichTextBox control [Windows Forms], determining font changes"
   - "text boxes [Windows Forms], determining font changes"

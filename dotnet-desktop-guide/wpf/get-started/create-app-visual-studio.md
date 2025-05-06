@@ -5,7 +5,7 @@ ms.date: 11/15/2024
 ms.service: dotnet-desktop
 ms.topic: tutorial
 ms.custom: update-template, updateeachrelease
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
 #customer intent: As a new developer, I want to create a new WPF app.

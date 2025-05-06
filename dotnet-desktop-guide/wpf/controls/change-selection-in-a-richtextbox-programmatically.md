@@ -4,10 +4,10 @@ ms.date: "03/30/2017"
 ms.service: dotnet-framework
 ms.custom: devdivchpfy22
 description: Learn how to change selection in a RichTextBox programmatically.
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "changing selections in a text box [WPF]"
   - "changing selections in a RichTextBox [WPF]"
 ms.assetid: f1213205-1ad7-4cd2-b115-460173cc5aa3

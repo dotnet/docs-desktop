@@ -3,10 +3,10 @@ title: "How to: Use a Color Matrix to Set Alpha Values in Images"
 description: Learn how to use a color matrix to set alpha values in images using a code example where a System.Drawing.Imaging.ImageAttributes object sets alpha values.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "images [Windows Forms], using color matrices for semi-transparent"
   - "transparency [Windows Forms], color matrices"
   - "matrices [Windows Forms], alpha values"

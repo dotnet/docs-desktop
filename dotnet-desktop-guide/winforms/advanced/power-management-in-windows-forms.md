@@ -3,10 +3,10 @@ title: "Power Management"
 description: Learn how Windows Forms applications can use power management features in the Windows operating system to monitor a computer's power status and take action.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "battery states"
   - "power states"
 ms.assetid: ad04a801-5682-4d88-92c5-26eb9cdb209a

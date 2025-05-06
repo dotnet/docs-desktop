@@ -3,11 +3,11 @@ title: "How to: Set the Color of a Pen"
 description: Learn how to set the color of a pen using a code example that changes the color of a pre-existing System.Drawing.Pen object.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
   - "cpp"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "pens [Windows Forms], setting color"
   - "colored pens"
 ms.assetid: a9df06f9-a6d5-4d9b-a2d1-583943540775

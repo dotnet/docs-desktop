@@ -2,13 +2,13 @@
 title: "TextBox Control Overview"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
   - "cpp"
-f1_keywords: 
+f1_keywords:
   - "TextBox"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "TextBox control [Windows Forms], about TextBox controls"
   - "text boxes [Windows Forms], adding"
 ms.assetid: d1a9c7f5-fa53-480a-a75c-158f8649ea2f

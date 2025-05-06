@@ -3,11 +3,11 @@ title: Automatically Resize Cells When Content Changes in DataGridView Control
 description: Learn more about how to automatically resize cells when content changes in the Windows Forms DataGridView Control.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
   - "cpp"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "data grids [Windows Forms], resizing cells automatically"
   - "cells [Windows Forms], resizing automatically"
   - "DataGridView control [Windows Forms], resizing cells"

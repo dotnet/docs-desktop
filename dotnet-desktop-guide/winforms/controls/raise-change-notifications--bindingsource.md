@@ -2,10 +2,10 @@
 title: "How to: Raise Change Notifications Using a BindingSource and the INotifyPropertyChanged Interface"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "change notifications [Windows Forms], raising"
   - "BindingSource component [Windows Forms], and IPropertyChange"
   - "data sources [Windows Forms], detecting changes"

@@ -3,10 +3,10 @@ title: "Geometry Overview"
 description: Overview of how to use the Windows Presentation Foundation (WPF) Geometry classes to describe shapes.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "geometry classes [WPF]"
   - "graphics [WPF], geometry classes"
 ms.assetid: 9fba8934-98b7-4af6-82f6-f4ef887f963a

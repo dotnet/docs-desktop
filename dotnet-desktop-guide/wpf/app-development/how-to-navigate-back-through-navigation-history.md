@@ -3,10 +3,10 @@ title: "How to: Navigate Back Through Navigation History"
 description: Learn how to navigate back through navigation history, by means of the included code examples in C# and Visual Basic.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "history [WPF], navigating back"
   - "navigation [WPF], through navigation history (back)"
 ms.assetid: 9343234b-d864-441d-b8a7-d895cba80a87

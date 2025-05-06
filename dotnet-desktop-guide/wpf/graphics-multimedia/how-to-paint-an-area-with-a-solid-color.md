@@ -3,7 +3,7 @@ title: "How to: Paint an Area with a Solid Color"
 description: Learn how to paint an area with a solid color using a predefined system brush or by creating a new SolidColorBrush.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "solid colors [WPF], painting with"
   - "brushes [WPF], painting with solid colors"
   - "painting [WPF], with solid colors"

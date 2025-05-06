@@ -3,10 +3,10 @@ title: "How to: Enable Spell Checking in a Text Editing Control"
 description: Learn how to enable spell checking in a text editing control, by means of the included code examples in XAML, C#, and Visual Basic.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "spellchecking [WPF]"
   - "real-time spellchecking"
   - "TextBox control [WPF], real-time spellchecking"

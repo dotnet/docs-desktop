@@ -2,10 +2,10 @@
 title: "How to: Construct Font Families and Fonts"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "font families [Windows Forms], constructing"
   - "fonts [Windows Forms], constructing"
 ms.assetid: d3a4a223-9492-4b54-9afd-db1c31c3cefd

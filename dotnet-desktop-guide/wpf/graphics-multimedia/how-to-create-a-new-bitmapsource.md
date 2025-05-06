@@ -3,10 +3,10 @@ title: "How to: Create a new BitmapSource"
 description: Learn about how to use the Create method of BitmapSource to create a new BitmapSource object.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "creating new BitmapSource objects [WPF]"
   - "BitmapSource objects [WPF], creating"
 ms.assetid: 0adf447e-014f-4ceb-97b2-f21affe6d55b

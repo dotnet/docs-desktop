@@ -3,10 +3,10 @@ title: "How to: Adorn the Children of a Panel"
 description: Learn how to adorn the children of a panel by means of the included code samples in C# and Visual Basic.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "adorners [WPF], binding to children of Panels"
   - "Panel control [WPF], binding adorners to children"
 ms.assetid: 4cc9b972-b472-4e5c-bdf3-3702d7fbb1f5

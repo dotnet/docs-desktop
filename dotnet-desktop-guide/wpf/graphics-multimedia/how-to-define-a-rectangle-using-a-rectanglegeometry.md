@@ -2,10 +2,10 @@
 title: "How to: Define a Rectangle Using a RectangleGeometry"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "graphics [WPF], rectangles"
   - "rectangles [WPF], creating with RectangleGeometry class"
 ms.assetid: e40b8a8e-54b8-416b-a9f2-be6dca9fdf0b

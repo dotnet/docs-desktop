@@ -3,10 +3,10 @@ title: "Intercepting Input from the Stylus"
 description: Learn how to intercept input from the stylus using the StylusPlugIn class, which allows you to implement custom behavior for optimal performance.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "architecture [WPF], "
   - ", "
   - ", "

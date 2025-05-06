@@ -3,10 +3,10 @@ title: Delete or Hide Columns in DataGrid Control
 description: Learn how to hide and delete columns in DataGrid Control as a way to add or replace functionality to the data grid.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "data grids [Windows Forms], deleting columns"
   - "DataGrid control [Windows Forms], deleting columns"
   - "data grids [Windows Forms], hiding columns"

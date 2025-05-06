@@ -1,5 +1,5 @@
 ---
-title: Custom painting for a control 
+title: Custom painting for a control
 description: Learn about how to customize the appearance of a control through the OnPaint method and Paint event in Windows Forms for .NET.
 ms.date: 03/31/2025
 ms.service: dotnet-desktop
@@ -7,9 +7,9 @@ ms.topic: overview
 dev_langs:
   - "csharp"
   - "vb"
-f1_keywords: 
+f1_keywords:
   - "OnPaint"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "controls [Windows Forms], user controls"
   - "controls [Windows Forms], types of"
   - "composite controls [Windows Forms]"

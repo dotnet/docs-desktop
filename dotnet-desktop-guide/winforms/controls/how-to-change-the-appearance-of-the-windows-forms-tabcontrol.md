@@ -2,11 +2,11 @@
 title: Change the Appearance of TabControl
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
   - "cpp"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "icons [Windows Forms], displaying on tabs"
   - "TabControl control [Windows Forms], changing page appearance"
   - "tabs [Windows Forms], controlling appearance"

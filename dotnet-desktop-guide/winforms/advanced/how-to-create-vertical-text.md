@@ -2,10 +2,10 @@
 title: "How to: Create Vertical Text"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "text [Windows Forms], drawing vertical"
   - "Windows Forms, drawing vertical text"
   - "strings [Windows Forms], drawing vertical"

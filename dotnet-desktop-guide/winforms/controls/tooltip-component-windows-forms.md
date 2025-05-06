@@ -2,7 +2,7 @@
 title: "ToolTip Component"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "tooltips [Windows Forms]"
   - "ToolTip component [Windows Forms]"
 ms.assetid: 82e71dc3-0159-4f91-9f22-499224f004a0

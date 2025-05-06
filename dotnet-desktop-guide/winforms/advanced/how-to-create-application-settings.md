@@ -2,10 +2,10 @@
 title: "How to: Create Application Settings"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "application settings [Windows Forms], Windows Forms"
   - "application settings [Windows Forms], creating"
 ms.assetid: 1e7aa347-af75-41e5-89ca-f53cab704f72

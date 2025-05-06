@@ -2,9 +2,9 @@
 title: "TableLayoutPanel Control Overview"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-f1_keywords: 
+f1_keywords:
   - "TableLayoutPanel"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "controls [Windows Forms], resizing"
   - "resizable controls [Windows Forms]"
   - "Windows Forms controls, proportional resizing"

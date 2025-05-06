@@ -4,10 +4,10 @@ description: Learn how to print from your application by using the System.Window
 ms.date: 10/24/2024
 ms.service: dotnet-desktop
 ms.custom: update-template
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "invoking print dialogs [WPF]"
   - "print dialogs [WPF], invoking"
 ---

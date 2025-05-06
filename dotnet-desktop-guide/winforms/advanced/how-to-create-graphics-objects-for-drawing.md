@@ -3,11 +3,11 @@ title: "How to: Create Graphics Objects for Drawing"
 description: Learn now to create a Graphic object that you need to draw lines and shapes, render text, or display and manipulate images with GDI+.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
   - "cpp"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "graphics [Windows Forms], creating"
   - "images [Windows Forms], creating"
   - "GDI+, creating images"

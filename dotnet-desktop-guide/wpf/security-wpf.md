@@ -3,7 +3,7 @@ title: "Security"
 description: Learn about the security model followed when developing Windows Presentation Foundation (WPF) standalone and browser-hosted applications.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "XAML files [WPF], sandbox behavior"
   - "browser-hosted application security [WPF]"
   - "application security [WPF]"

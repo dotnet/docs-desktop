@@ -4,10 +4,10 @@ description: Learn how to position the cursor at the beginning or end of the tex
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
 ms.custom: devdivchpfy22
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "positioning cursor [WPF]"
   - "TextBox control [WPF], positioning cursor"
   - "cursor [WPF], positioning"

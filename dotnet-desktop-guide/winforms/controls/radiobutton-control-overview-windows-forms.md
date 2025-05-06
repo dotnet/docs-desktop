@@ -2,9 +2,9 @@
 title: "RadioButton Control Overview"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-f1_keywords: 
+f1_keywords:
   - "RadioButton"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "RadioButton control [Windows Forms], about RadioButton control"
   - "RadioButton control [Windows Forms], determining state"
   - "radio buttons [Windows Forms], determining state"

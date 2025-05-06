@@ -2,9 +2,9 @@
 title: "RichTextBox Control Overview"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-f1_keywords: 
+f1_keywords:
   - "RichTextBox"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "RichTextBox control [Windows Forms], about RichTextBox control"
   - "text boxes [Windows Forms], about text boxes"
 ms.assetid: 95081194-3dd4-4b84-9545-dd373e491eca

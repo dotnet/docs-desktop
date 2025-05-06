@@ -2,11 +2,11 @@
 title: Change the Appearance of ColorDialog Component
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
   - "cpp"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "ColorDialog component [Windows Forms], examples"
   - "ColorDialog component [Windows Forms], formatting appearance"
   - "color dialog box [Windows Forms], configuring appearance"

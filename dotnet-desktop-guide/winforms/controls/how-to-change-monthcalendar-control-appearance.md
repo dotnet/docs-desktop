@@ -2,11 +2,11 @@
 title: Change MonthCalendar Control's Appearance
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
   - "cpp"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "examples [Windows Forms], calendar controls"
   - "MonthCalendar control [Windows Forms], formatting display"
 ms.assetid: d09b95c9-e108-4608-9b31-b9100c0677bf

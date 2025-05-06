@@ -2,9 +2,9 @@
 title: Put controls on forms
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-f1_keywords: 
+f1_keywords:
   - "ENV.Window.Toolbox"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "Windows Forms controls, adding to form"
 ms.assetid: 997508f2-87e5-4bec-a78e-9eec8f1fb15b
 description: Learn about the wide variety of controls that can be put on Windows Forms, depending on the needs of an application.

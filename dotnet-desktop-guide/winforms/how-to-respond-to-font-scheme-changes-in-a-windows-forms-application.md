@@ -4,10 +4,10 @@ description: Learn how to respond to font scheme changes in a Windows Forms app 
 titleSuffix: ""
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "Windows Forms, font scheme changes"
 ms.assetid: 4db27702-22e7-43bf-a07d-9a004549853c
 ---

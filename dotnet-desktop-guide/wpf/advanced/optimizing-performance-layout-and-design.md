@@ -3,10 +3,10 @@ title: "Optimizing Performance: Layout and Design"
 description: Learn how to optimize the performance of your application layout and design by eliminating overhead.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "layout [WPF], optimizing performance"
   - "design considerations [WPF]"
   - "layout pass [WPF]"

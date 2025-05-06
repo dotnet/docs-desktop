@@ -4,7 +4,7 @@ description: Learn about the ColorConvertedBitmap markup XAML extension of Windo
 ms.date: "01/17/2022"
 ms.service: dotnet-framework
 ms.custom: devdivchpfy22
-helpviewer_keywords: 
+helpviewer_keywords:
   - "XAML [WPF], ColorConvertedBitmap markup extension"
   - "ColorConvertedBitmap markup extension [WPF]"
 ms.assetid: 18321c18-c898-4470-93fa-a702b47770c1

@@ -3,10 +3,10 @@ title: "Managing the State of a Graphics Object"
 description: Learn more about managing the state of a System.Drawing.Graphics object, setting its properties, and calling its methods.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "graphics [Windows Forms], managing state"
   - "graphics [Windows Forms], clipping"
 ms.assetid: 6207cad1-7a34-4bd6-bfc1-db823ca7a73e

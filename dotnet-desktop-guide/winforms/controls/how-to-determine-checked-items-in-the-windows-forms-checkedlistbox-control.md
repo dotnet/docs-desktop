@@ -3,11 +3,11 @@ title: Determine Checked Items in CheckedListBox Control
 description: Learn how to determine checked items in the Windows Forms CheckedListBox control by iterating through the collection stored in the CheckedItems property.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
   - "cpp"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "check boxes [Windows Forms], determining checked state"
   - "CheckedListBox control [Windows Forms], determining checked state"
 ms.assetid: 178b477d-27c9-489c-8914-44a9623a4d41

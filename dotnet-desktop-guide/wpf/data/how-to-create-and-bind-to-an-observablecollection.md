@@ -3,10 +3,10 @@ title: "How to: Create and Bind to an ObservableCollection"
 description: Find out how to create and bind to a collection that derives from the ObservableCollection class in Windows Presentation Foundation.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "data binding [WPF], ObservableCollection class"
   - "notifications [WPF]"
 ms.assetid: 6cf7e275-df76-41c6-a611-53b889b8fd5a

@@ -3,10 +3,10 @@ title: "Optimizing Performance: Other Recommendations"
 description: Learn how to optimize the performance of your applications with this list that is more expansive than the basic application performance overview.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "Terminal Services rendering [WPF]"
   - "opacity [WPF]"
   - "hit-test objects [WPF]"

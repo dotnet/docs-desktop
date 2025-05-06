@@ -4,7 +4,7 @@ description: Follow this tutorial to learn how to create a new Windows Forms app
 ms.date: 04/02/2025
 ms.service: dotnet-desktop
 ms.topic: tutorial
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
 #customer intent: As a new developer, I want to create a new Windows Forms app.

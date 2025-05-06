@@ -4,10 +4,10 @@ description: Learn about the ComponentResourceKey markup XAML extension of Windo
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
 ms.custom: devdivchpfy22
-f1_keywords: 
+f1_keywords:
   - "ComponentResourceKey"
   - "ComponentResourceKeyExtension"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "ComponentResourceKey markup extension [WPF]"
   - "XAML [WPF], ComponentResourceKey markup extension"
 ms.assetid: d6bcdbe6-61b3-40a7-b381-4e02185b5a85

@@ -2,7 +2,7 @@
 title: "How to: Apply Transforms to Text"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "typography [WPF], rotated text"
   - "typography [WPF], scaled text"
   - "skewed text [WPF]"

@@ -3,10 +3,10 @@ title: "How to: Filter Data in a View"
 description: Learn how to create a filter and define a method that provides filtering logic to filter data in a view.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "views [WPF], filtering data"
   - "filtering data in views [WPF]"
   - "data binding [WPF], filtering data in views"

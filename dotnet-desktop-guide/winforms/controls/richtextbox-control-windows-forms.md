@@ -2,7 +2,7 @@
 title: "RichTextBox Control"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "text boxes"
   - "RichTextBox control [Windows Forms]"
   - "rich edit controls"

@@ -3,7 +3,7 @@ title: Keyboard and mouse behavior in DataGridView control
 description: Describes how the keyboard and mouse interacts with the DataGridView control in Windows Forms, including accessibility keyboard shortcuts.
 ms.date: "02/08/2022"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "data grids [Windows Forms], mouse handling"
   - "DataGridView control [Windows Forms], navigation keys"
   - "keyboards [Windows Forms], default handling in DataGridView control"

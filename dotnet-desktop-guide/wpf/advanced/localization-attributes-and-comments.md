@@ -4,7 +4,7 @@ ms.date: "03/30/2017"
 ms.service: dotnet-framework
 ms.custom: devdivchpfy22
 description: Learn how to use localization attributes and comments.
-helpviewer_keywords: 
+helpviewer_keywords:
   - "localization [WPF], attributes"
   - "localization [WPF], comments"
 ms.assetid: ead2d9ac-b709-4ec1-a924-39927a29d02f

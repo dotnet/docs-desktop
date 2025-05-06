@@ -4,11 +4,11 @@ description: Learn about the ForwardTranslateAccelerator function of the Windows
 titleSuffix: ""
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "cpp"
-api_name: 
+api_name:
   - "ForwardTranslateAccelerator"
-api_location: 
+api_location:
   - "PresentationHost_v0400.dll"
 ms.assetid: fff47a86-9d9f-4176-9530-10e1876e393f
 ---

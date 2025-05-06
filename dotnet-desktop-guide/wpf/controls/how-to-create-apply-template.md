@@ -8,7 +8,7 @@ ms.service: dotnet-desktop
 no-loc: ["<Window>", "<ControlTemplate>", "<Ellipse>", "<ContentPresenter>", "<Trigger>", "<Setter>", "<PropertyTrigger>", "<Grid>", "<VisualStateManager.VisualStateGroups>", "<VisualStateGroup>", "<VisualState>", "<Storyboard>", "SizeToContent", "MinWidth", "TargetType", "Title"]
 ms.topic: how-to
 ms.custom: update-template
-helpviewer_keywords: 
+helpviewer_keywords:
   - "control contract [WPF]"
   - "controls [WPF], visual structure changes"
   - "ControlTemplate [WPF], customizing for existing controls"

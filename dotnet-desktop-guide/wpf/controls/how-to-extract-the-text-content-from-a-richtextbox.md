@@ -4,10 +4,10 @@ description: Learn how to extract the Text Content from a RichTextBox.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
 ms.custom: devdivchpfy22
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "text content [WPF], extracting"
   - "RichTextBox control [WPF], extracting text content"
   - "content [WPF], extracting"

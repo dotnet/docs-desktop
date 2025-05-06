@@ -4,10 +4,10 @@ description: Learn about the annotation features of Windows Presentation Foundat
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
 ms.topic: overview
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "highlights [WPF]"
   - "documents [WPF], annotations"
   - "sticky notes [WPF]"

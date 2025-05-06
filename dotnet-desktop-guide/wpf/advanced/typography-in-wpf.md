@@ -4,7 +4,7 @@ ms.date: "03/30/2017"
 ms.service: dotnet-framework
 ms.custom: devdivchpfy22
 description: Learn about the typography in WPF.
-helpviewer_keywords: 
+helpviewer_keywords:
   - "typography [WPF], about typography"
 ms.assetid: 06cbf17b-6eff-4fe5-949d-2dd533e4e1f4
 ---

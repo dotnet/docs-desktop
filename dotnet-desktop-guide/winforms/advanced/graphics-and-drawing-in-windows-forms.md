@@ -3,7 +3,7 @@ title: "Graphics and Drawing"
 description: Learn about the Graphics, Pen, Brush, and Color objects, and how to perform such tasks as drawing shapes, drawing text, or displaying images in Windows Forms.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "graphics [Windows Forms]"
   - "graphics [Windows Forms], using in Windows Forms"
   - "GDI+, using in managed code"

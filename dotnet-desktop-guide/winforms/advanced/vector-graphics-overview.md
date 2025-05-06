@@ -4,10 +4,10 @@ description: Learn about vector graphics in GDI+ for Windows Forms applications 
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
 ms.topic: overview
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "inclusive-inclusive endpoints"
   - "coordinate systems"
   - "graphics [Windows Forms], vector graphics"

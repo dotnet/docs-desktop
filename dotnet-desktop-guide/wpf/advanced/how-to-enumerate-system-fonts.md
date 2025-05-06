@@ -2,10 +2,10 @@
 title: "How to: Enumerate System Fonts"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "typography [WPF], enumerating system fonts"
   - "fonts [WPF], enumerating"
   - "system fonts [WPF], enumerating"

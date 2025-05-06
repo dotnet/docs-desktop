@@ -3,10 +3,10 @@ title: "How to: Rotate an Object by Using a Geometric Path"
 description: Learn how to use DoubleAnimationUsingPath objects to rotate an object along a geometric path that is defined by a PathGeometry object.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "geometric paths [WPF], rotating objects by"
   - "rotating objects by geometric paths [WPF]"
 ms.assetid: cb31ca4d-f05a-4c6b-9a18-4b6faaf38d45

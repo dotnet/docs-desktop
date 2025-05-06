@@ -2,10 +2,10 @@
 title: "How to: Fill a Shape with a Hatch Pattern"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "patterns [Windows Forms], adding to shapes"
   - "shapes [Windows Forms], filling with patterns"
   - "brushes [Windows Forms], using hatch brushes"

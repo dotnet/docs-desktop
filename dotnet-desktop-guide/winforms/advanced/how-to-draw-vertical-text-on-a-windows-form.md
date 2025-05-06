@@ -2,14 +2,14 @@
 title: "How to: Draw Vertical Text on a Windows Form"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
   - "cpp"
-f1_keywords: 
+f1_keywords:
   - "StringFormat.FormatFlags"
   - "Graphics.DrawString"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "text [Windows Forms], drawing vertical"
   - "strings [Windows Forms], drawing vertical"
   - "text [Windows Forms], drawing"

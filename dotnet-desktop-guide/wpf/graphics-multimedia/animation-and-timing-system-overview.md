@@ -3,7 +3,7 @@ title: "Animation and Timing System Overview"
 description: Review the animation and timing system overview describing how Timeline and Clock classes are used to animate properties.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "timing system [WPF]"
   - "animation [WPF]"
 ms.assetid: 172cd5a8-a333-4c81-9456-fafccc19f382

@@ -4,7 +4,7 @@ description: Learn how the precedence of different property-based inputs within 
 ms.date: 10/24/2024
 ms.service: dotnet-desktop
 ms.custom: update-template
-helpviewer_keywords: 
+helpviewer_keywords:
   - "dependency properties [WPF], classes as owners"
   - "dependency properties [WPF], metadata"
   - "classes [WPF], owners of dependency properties"

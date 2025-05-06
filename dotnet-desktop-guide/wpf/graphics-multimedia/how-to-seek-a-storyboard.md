@@ -4,10 +4,10 @@ description: Learn how to seek a Storyboard.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
 ms.custom: devdivchpfy22
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "Storyboards [WPF], seeking"
   - "seeking Storyboards [WPF]"
 ms.assetid: 887bb39a-0c2a-4ae8-956d-1d9f6f8ebbfc

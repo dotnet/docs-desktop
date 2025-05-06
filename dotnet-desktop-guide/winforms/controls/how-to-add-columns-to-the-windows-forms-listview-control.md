@@ -1,12 +1,12 @@
 ---
 title: Add Columns to ListView Control
-description: Learn how to add columns to the Windows Forms ListView control to display several types of information about each list item. 
+description: Learn how to add columns to the Windows Forms ListView control to display several types of information about each list item.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "ListView control [Windows Forms], adding column headers"
   - "columns [Windows Forms], adding to ListView controls"
   - "list views [Windows Forms], adding columns"

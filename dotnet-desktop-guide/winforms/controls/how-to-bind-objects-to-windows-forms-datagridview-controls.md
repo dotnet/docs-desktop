@@ -3,10 +3,10 @@ title: Bind Objects to DataGridView Controls
 description: Learn how to how to bind a collection of objects to a Windows Forms DataGridView control so that each object displays as a separate row.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "DataGridView control [Windows Forms], object binding"
   - "data grids [Windows Forms], object binding"
   - "object binding [Windows Forms], DataGridView control"

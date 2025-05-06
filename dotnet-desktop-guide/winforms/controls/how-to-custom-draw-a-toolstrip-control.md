@@ -2,10 +2,10 @@
 title: "How to: Custom Draw a ToolStrip Control"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "toolbars [Windows Forms], custom drawing"
   - "drawing [Windows Forms], owner"
   - "ProfessionalColorTable class [Windows Forms], overriding"

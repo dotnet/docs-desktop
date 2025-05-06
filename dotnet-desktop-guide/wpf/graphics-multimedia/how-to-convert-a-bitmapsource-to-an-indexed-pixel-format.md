@@ -3,10 +3,10 @@ title: "How to: Convert a BitmapSource to an Indexed Pixel Format"
 description: Learn how to convert a BitmapSource representing a single, constant set of pixels to an indexed pixel format.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "pixel format [WPF], palettized"
   - "graphics [WPF], converting BitmapSource objects to indexed pixel format"
   - "BitmapSource objects [WPF], converting to indexed pixel format"

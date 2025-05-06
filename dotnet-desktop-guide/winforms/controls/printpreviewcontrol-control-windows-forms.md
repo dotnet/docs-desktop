@@ -3,7 +3,7 @@ title: "PrintPreviewControl Control"
 description: Learn about the PrintPreviewControl control in Windows forms, which is used to display a document as it will appear when printed.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "printing [Windows Forms], print preview"
   - "PrintPreviewControl control (using designer)"
   - "PrintPreview control (using designer)"

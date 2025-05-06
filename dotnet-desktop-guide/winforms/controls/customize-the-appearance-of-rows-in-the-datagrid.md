@@ -1,12 +1,12 @@
 ---
 title: Customize the Appearance of Rows in DataGridView Control
-description: Learn about how to customize the appearance of rows in the Windows Forms DataGridView Control. 
+description: Learn about how to customize the appearance of rows in the Windows Forms DataGridView Control.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "data grids [Windows Forms], customizing rows"
   - "rows [Windows Forms], customizing in DataGridView control"
   - "DataGridView control [Windows Forms], customizing rows"

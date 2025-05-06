@@ -2,7 +2,7 @@
 title: XAML namescopes
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "namescopes [WPF]"
   - "styles [WPF], namescopes in"
   - "templates [WPF], namescopes in"

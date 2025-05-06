@@ -3,11 +3,11 @@ title: "How to: Write Metadata to a Bitmap"
 description: Learn how to how to write metadata to a bitmap using the metadata query language.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
   - "cpp"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "image metadata [WPF]"
   - "metadata [WPF], writing to a bitmap"
   - "metadata [WPF], in images"

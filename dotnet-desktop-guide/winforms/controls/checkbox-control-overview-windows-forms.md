@@ -3,9 +3,9 @@ title: "CheckBox Control Overview"
 description: Learn more about an overview of the CheckBox control in Windows Forms, which indicates whether a particular condition is on or off.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-f1_keywords: 
+f1_keywords:
   - "CheckBox"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "CheckBox control [Windows Forms], about CheckBox control"
   - "data binding [Windows Forms], checkbox controls"
   - "check boxes [Windows Forms], about check boxes"

@@ -2,10 +2,10 @@
 title: "How to: Draw Text at a Specified Location"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "text [Windows Forms], drawing at specified locations [Windows Forms]"
   - "drawing text"
   - "drawing text [Windows Forms], specified locations [Windows Forms]"

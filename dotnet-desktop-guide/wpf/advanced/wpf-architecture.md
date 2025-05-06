@@ -4,7 +4,7 @@ description: Learn about the Windows Presentation Foundation class hierarchy, in
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
 ms.topic: overview
-helpviewer_keywords: 
+helpviewer_keywords:
   - "properties [WPF], attached"
   - "attached properties [WPF]"
   - "architecture [WPF]"

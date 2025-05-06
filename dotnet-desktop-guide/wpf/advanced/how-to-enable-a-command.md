@@ -2,14 +2,14 @@
 title: "How to: Enable a Command"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "CommandBindings [WPF]"
   - "commanding [WPF]"
 ms.assetid: d8016266-58d9-48f7-8298-a86b7ed49fbd
-description: Learn how to use commanding in Windows Presentation Foundation, associate a RoutedCommand to a Button, create a CommandBinding, and create the event handlers. 
+description: Learn how to use commanding in Windows Presentation Foundation, associate a RoutedCommand to a Button, create a CommandBinding, and create the event handlers.
 ---
 # How to: Enable a Command
 

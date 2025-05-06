@@ -3,10 +3,10 @@ title: "B&#233;zier Splines in GDI+"
 description: Learn about Bézier splines, which are curves specified by two end points and two control points, in GDI+.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "Bezier splines"
   - "splines [Windows Forms], Bezier"
   - "GDI+, Bezier splines"

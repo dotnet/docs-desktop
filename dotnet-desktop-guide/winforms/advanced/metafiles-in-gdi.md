@@ -3,10 +3,10 @@ title: "Metafiles in GDI+"
 description: Learn how GDI+ provides the System.Drawing.Imaging.Metafile class to record and display metafiles. A metafile is also called a vector image.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "images [Windows Forms], metafiles"
   - "GDI+, metafiles"
   - "metafiles"

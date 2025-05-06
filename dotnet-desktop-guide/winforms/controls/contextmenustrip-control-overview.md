@@ -3,9 +3,9 @@ title: "ContextMenuStrip Control Overview"
 description: This article provides an overview of the ContextMenuStrip control, which replaces and adds functionality to the ContextMenu control.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-f1_keywords: 
+f1_keywords:
   - "ContextMenuStrip"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "context menus [Windows Forms], ContextMenuStrip control [Windows Forms]"
   - "shortcut menus [Windows Forms], ContextMenuStrip control [Windows Forms]"
   - "ContextMenuStrip control [Windows Forms], about ContextMenuStrip control"

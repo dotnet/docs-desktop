@@ -2,10 +2,10 @@
 title: "How to: Insert an Element Into Text Programmatically"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "Text Animation sample [WPF]"
   - "elements [WPF], inserting into text"
   - "inserting elements into text [WPF]"

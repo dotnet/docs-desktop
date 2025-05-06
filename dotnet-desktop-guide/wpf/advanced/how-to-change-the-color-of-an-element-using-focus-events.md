@@ -2,10 +2,10 @@
 title: "How to: Change the Color of an Element Using Focus Events"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "focus events [WPF], changing element color for"
   - "colors of elements [WPF], changing"
   - "elements [WPF], changing color of"

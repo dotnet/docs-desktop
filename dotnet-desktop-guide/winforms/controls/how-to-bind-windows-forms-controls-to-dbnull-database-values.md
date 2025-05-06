@@ -2,10 +2,10 @@
 title: Bind Controls to DBNull Database Values
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "BindingSource component [Windows Forms], binding to DBNull values"
   - "examples [Windows Forms], BindingSource component"
   - "controls [Windows Forms], binding to DBNull values"

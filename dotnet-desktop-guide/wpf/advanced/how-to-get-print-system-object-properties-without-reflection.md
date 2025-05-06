@@ -2,10 +2,10 @@
 title: "How to: Get Print System Object Properties Without Reflection"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "PrintSystemObject [WPF], getting properties"
 ms.assetid: 43560f28-183d-41c1-b9d1-de7c2552273e
 description: Learn how the System.Printing.IndexedProperties namespace provides a means to getting property information without using reflection.

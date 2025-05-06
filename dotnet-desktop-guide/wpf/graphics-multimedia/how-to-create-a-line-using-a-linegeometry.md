@@ -3,10 +3,10 @@ title: "How to: Create a Line Using a LineGeometry"
 description: Learn how to create and render a LineGeometry. A Path element is used to render the line and it is defined by the start and end points.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "graphics [WPF], lines"
 ms.assetid: 41231b22-1f74-4c26-a8e7-a55b29f8f6bd
 ---

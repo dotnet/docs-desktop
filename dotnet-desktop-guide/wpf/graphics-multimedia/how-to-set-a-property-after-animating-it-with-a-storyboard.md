@@ -4,10 +4,10 @@ description: Learn how to set a Property after animating it with a Storyboard.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
 ms.custom: devdivchpfy22
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "animation [WPF], changing property values after"
 ms.assetid: 79466556-4dbf-40bd-9c1e-a77613b07077
 ---

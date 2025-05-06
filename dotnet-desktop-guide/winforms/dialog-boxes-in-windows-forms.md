@@ -1,9 +1,9 @@
 ---
 title: "Dialog Boxes"
-descriptions: Learn about dialog boxes and the various ways that users can interact with them. Also learn how to create custom dialog boxes with Windows Forms Designer. 
+descriptions: Learn about dialog boxes and the various ways that users can interact with them. Also learn how to create custom dialog boxes with Windows Forms Designer.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "dialog boxes [Windows Forms], Windows Forms"
   - "Windows Forms dialog boxes"
   - "dialogs [Windows Forms], using in Windows Forms"

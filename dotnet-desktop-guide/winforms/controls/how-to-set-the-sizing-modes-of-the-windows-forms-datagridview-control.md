@@ -3,10 +3,10 @@ title: Set the Sizing Modes of DataGridView Control
 description: Learn how to set the sizing modes of the Windows Forms DataGridView control by following the procedure in this article.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "data grids [Windows Forms], setting sizing modes"
   - "DataGridView control [Windows Forms], sizing modes"
 ms.assetid: e9ad15e6-b4bb-44aa-a767-3738e9db1651

@@ -3,10 +3,10 @@ title: "How to: Open files with the OpenFileDialog component"
 ms.date: "02/11/2019"
 ms.service: dotnet-framework
 description: Learn how to use the OpenFileDialog component to open the Windows dialog box for browsing and selecting files.
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "OpenFileDialog component [Windows Forms], opening files"
   - "OpenFile method [Windows Forms], OpenFileDialog component"
   - "files [Windows Forms], opening with OpenFileDialog component"

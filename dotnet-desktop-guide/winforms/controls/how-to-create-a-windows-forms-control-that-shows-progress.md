@@ -2,10 +2,10 @@
 title: Create Control That Shows Progress
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "controls [Windows Forms], progress tracking"
   - "controls [Windows Forms], creating"
   - "progress [Windows Forms], reporting [Windows Forms]"

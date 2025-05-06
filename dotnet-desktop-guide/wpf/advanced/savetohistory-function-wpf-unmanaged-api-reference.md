@@ -5,11 +5,11 @@ ms.date: "03/30/2017"
 ms.service: dotnet-framework
 ms.custom: devdivchpfy22
 description: Learn about the SaveToHistory function.
-dev_langs: 
+dev_langs:
   - "cpp"
-api_name: 
+api_name:
   - "SaveToHistory"
-api_location: 
+api_location:
   - "PresentationHost_v0400.dll"
 ms.assetid: 6dd101a3-44ad-4143-b228-772156f9b8ff
 ---

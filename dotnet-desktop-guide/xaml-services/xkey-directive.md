@@ -2,11 +2,11 @@
 title: "x:Key Directive"
 ms.date: "03/30/2017"
 description: "The x:Key directive identifies elements that are created and referenced in a XAML-defined dictionary."
-f1_keywords: 
+f1_keywords:
   - "xKey"
   - "Key"
   - "x:Key"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "x:Key attribute [XAML Services]"
   - "Key attribute in XAML [XAML Services]"
   - "XAML [XAML Services], x:Key attribute"

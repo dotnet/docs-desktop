@@ -2,9 +2,9 @@
 title: "ToolStripContainer Control Overview"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-f1_keywords: 
+f1_keywords:
   - "ToolStripContainer"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "toolbars [Windows Forms], built-in rafting"
   - "ToolStripContainer control [Windows Forms], about ToolStripContainer control"
 ms.assetid: c7d63bff-64e2-4a63-bd89-d31bc96dacb8

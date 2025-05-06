@@ -4,10 +4,10 @@ description: Learn how to use Spell Checking with a Context Menu.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
 ms.custom: devdivchpfy22
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "enabling spell checking in a text box [WPF]"
   - "reenabling spell checking in a text box [WPF]"
   - "spell checking with a context menu [WPF]"

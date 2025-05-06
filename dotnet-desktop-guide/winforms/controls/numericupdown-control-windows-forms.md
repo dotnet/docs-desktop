@@ -3,7 +3,7 @@ title: "NumericUpDown Control"
 description: Learn about the NumericUpDown control in Windows Forms, which looks like a combination of a text box and a pair of arrows.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "Windows Forms controls, NumericUpDown control"
   - "spin button control [Windows Forms], up-down controls"
   - "up-down controls [Windows Forms], spin button control"

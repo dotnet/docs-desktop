@@ -2,10 +2,10 @@
 title: "How to: Create an MDI Form with Menu Merging and ToolStrip Controls"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "toolbars [Windows Forms]"
   - "ToolStripPanel control [Windows Forms]"
   - "ToolStrip control [Windows Forms]"

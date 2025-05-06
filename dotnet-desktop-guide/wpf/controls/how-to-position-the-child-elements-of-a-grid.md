@@ -3,10 +3,10 @@ title: "How to: Position the Child Elements of a Grid"
 description: Learn how to use the get and set methods that are defined on a Windows Presentation Foundation Grid to position child elements.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "Grid control [WPF], positioning child elements"
 ms.assetid: 27b3ba9b-ad32-44e2-bcab-a79d573a463c
 ---

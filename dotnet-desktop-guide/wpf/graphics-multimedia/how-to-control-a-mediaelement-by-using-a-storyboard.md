@@ -3,10 +3,10 @@ title: "How to: Control a MediaElement by Using a Storyboard"
 description: Control playback of media using a storyboard in Windows Presentation foundation (WPF). Consider this example for creating a simple media player.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "multimedia [WPF], controlling playback of media with Storyboards"
   - "controlling playback of media [WPF], with Storyboards"
   - "Storyboards [WPF], controlling playback of media with"

@@ -2,7 +2,7 @@
 title: "ToolStrip Control"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "toolbars [Windows Forms]"
   - "ToolStrip control [Windows Forms]"
 ms.assetid: e5ef455a-e049-429c-8005-30c93132fb79

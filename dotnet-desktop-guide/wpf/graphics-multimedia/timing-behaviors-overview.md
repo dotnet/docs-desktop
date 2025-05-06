@@ -4,7 +4,7 @@ description: Learn about the Timing Behaviors Overview.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
 ms.custom: devdivchpfy22
-helpviewer_keywords: 
+helpviewer_keywords:
   - "timing behaviors [WPF]"
   - "behaviors [WPF], timing"
 ms.assetid: 5b714d46-bd46-48b8-b467-b4be89ba3091

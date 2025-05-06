@@ -3,7 +3,7 @@ title: "Trees"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
 ms.topic: overview
-helpviewer_keywords: 
+helpviewer_keywords:
   - "logical tree [WPF]"
   - "element tree [WPF]"
   - "visual tree [WPF]"

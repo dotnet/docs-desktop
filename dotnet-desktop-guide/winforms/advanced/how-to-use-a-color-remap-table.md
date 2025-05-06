@@ -3,10 +3,10 @@ title: "How to: Use a Color Remap Table"
 description: Learn how to use a color remap table using a code example that creates a System.Drawing.Imaging.ColorMap object and properties that change red pixels to blue.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "color tables [Windows Forms], remapping colors with"
   - "custom colors [Windows Forms], creating with color remap table"
   - "color remap tables [Windows Forms], using"

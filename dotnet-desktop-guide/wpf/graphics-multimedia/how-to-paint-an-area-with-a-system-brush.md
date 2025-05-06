@@ -3,7 +3,7 @@ title: "How to: Paint an Area with a System Brush"
 description: Learn how to use a system brush SolidColorBrush object to paint an area with the specified system color.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "system brushes [WPF], painting with"
   - "painting [WPF], with system brushes"
   - "brushes [WPF], painting with system brushes [WPF]"

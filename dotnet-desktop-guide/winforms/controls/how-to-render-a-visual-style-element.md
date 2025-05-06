@@ -3,11 +3,11 @@ title: "How to: Render a Visual Style Element"
 description: Learn how to render a visual style element in Windows Forms by means of a 2-step procedure, with code examples in CPP, C#, and Visual Basic.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
   - "cpp"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "visual themes [Windows Forms], applying to elements of Windows Forms applications"
   - "professional appearance [Windows Forms], applying to elements of Windows Forms applications"
   - "visual styles [Windows Forms], rendering Windows Forms controls"

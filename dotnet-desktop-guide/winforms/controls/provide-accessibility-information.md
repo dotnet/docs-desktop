@@ -3,7 +3,7 @@ title: "Providing Accessibility Information for Controls on a Windows Form"
 description: Learn how to add accessibility information to a control. Windows Forms lets you add accessibility settings to a control to help people with disabilities.
 ms.date: 03/31/2025
 ms.service: dotnet-desktop
-helpviewer_keywords: 
+helpviewer_keywords:
   - "Windows Forms controls, accessibility"
   - "controls [Windows Forms], accessibility"
   - "accessibility [Windows Forms], Windows Forms controls"

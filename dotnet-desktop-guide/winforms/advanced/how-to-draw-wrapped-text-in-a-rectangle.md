@@ -2,10 +2,10 @@
 title: "How to: Draw Wrapped Text in a Rectangle"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "Windows Forms, drawing text in a rectangle"
   - "text [Windows Forms], drawing in a rectangle"
   - "strings [Windows Forms], drawing in a rectangle"

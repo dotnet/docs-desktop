@@ -3,7 +3,7 @@ title: "NotifyIcon Component"
 description: Learn about the NotifyIcon component in Windows Forms, which displays icons in the the taskbar for processes that run in the background.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "application icons [Windows Forms], background processes"
   - "context menus [Windows Forms], for background processes"
   - "status tray icon"

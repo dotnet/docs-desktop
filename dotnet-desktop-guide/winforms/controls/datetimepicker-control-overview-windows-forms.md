@@ -3,9 +3,9 @@ title: "DateTimePicker Control Overview"
 description: This article provides an overview of the DateTimePicker control in Windows Forms, which allows the user to select a single item from a list of dates or times.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-f1_keywords: 
+f1_keywords:
   - "DateTimePicker"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "DateTimePicker control [Windows Forms], about"
   - "date and time picker controls"
 ms.assetid: 501af106-e9fc-4efc-b9b3-c9d8dcaf8c5c

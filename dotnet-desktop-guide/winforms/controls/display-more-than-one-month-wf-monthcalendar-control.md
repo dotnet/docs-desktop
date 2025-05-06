@@ -3,11 +3,11 @@ title: Display More than One Month in MonthCalendar Control
 description: Learn more about how to display more than one month in the Windows Forms MonthCalendar control, which can display up to 12 months at a time.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
   - "cpp"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "calendars [Windows Forms], formatting display"
   - "examples [Windows Forms], calendar controls"
   - "calendars [Windows Forms], multiple months"

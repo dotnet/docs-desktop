@@ -6,7 +6,7 @@ ms.service: dotnet-desktop
 dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "cursors [Windows Forms], data sources"
   - "data sources [Windows Forms], Windows Forms"
   - "Windows Forms, navigating"

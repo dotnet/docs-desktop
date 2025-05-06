@@ -3,9 +3,9 @@ title: "ComboBox Control Overview"
 description: Learn about a the ComboBox control in Windows Forms, which is used to display data in a drop-down combo box.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-f1_keywords: 
+f1_keywords:
   - "ComboBox"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "drop-down lists [Windows Forms], Windows Forms"
   - "ComboBox control [Windows Forms], about ComboBox control"
   - "drop-down lists [Windows Forms], ComboBox control"

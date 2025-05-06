@@ -4,10 +4,10 @@ description: Learn about how to show a window or dialog box in Windows Foundatio
 ms.date: 10/24/2024
 ms.service: dotnet-desktop
 ms.custom: update-template
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "modeless dialog boxes [WPF]"
   - "modal dialog boxes [WPF]"
   - "dialog boxes [WPF]"

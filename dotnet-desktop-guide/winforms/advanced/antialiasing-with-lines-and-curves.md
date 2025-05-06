@@ -3,10 +3,10 @@ title: "Antialiasing with Lines and Curves"
 description: Learn how to apply antialiasing to a line and curve in GDI+ for Windows Forms.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "antialiasing"
   - "antialiasing [Windows Forms], smoothing modes"
   - "GDI+, antialiasing"

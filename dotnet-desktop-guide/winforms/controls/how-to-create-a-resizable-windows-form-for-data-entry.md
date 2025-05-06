@@ -2,11 +2,11 @@
 title: "How to: Create a Resizable Windows Form for Data Entry"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
   - "cpp"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "TableLayoutPanel control [Windows Forms]"
   - "layout [Windows Forms], resizing"
   - "forms [Windows Forms], creating resizable"

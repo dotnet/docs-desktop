@@ -1,13 +1,13 @@
 ---
 title: "How to: Disable Tab Pages"
-description: Learn how to disable tab pages so that you can restrict access to data that is available within your Forms application. 
+description: Learn how to disable tab pages so that you can restrict access to data that is available within your Forms application.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
   - "cpp"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "tab pages [Windows Forms], hiding in forms"
   - "TabControl control [Windows Forms], disabling pages"
 ms.assetid: adcc6618-8a34-4ee1-bbe3-47e732de6a59

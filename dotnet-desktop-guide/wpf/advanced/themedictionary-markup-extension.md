@@ -4,10 +4,10 @@ ms.date: "03/30/2017"
 ms.service: dotnet-framework
 ms.custom: devdivchpfy22
 description: Learn about the ThemeDictionary Markup Extension.
-f1_keywords: 
+f1_keywords:
   - "ThemeDictionaryExtension"
   - "ThemeDictionary"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "ThemeDictionary markup extension [WPF]"
   - "XAML [WPF], ThemeDictionary markup extension"
 ms.assetid: aa75e10b-13dd-4989-972d-51bab63a05e2

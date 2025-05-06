@@ -5,7 +5,7 @@ ms.date: 02/15/2023
 ms.service: dotnet-desktop
 ms.topic: overview
 ms.custom: update-template, updateeachrelease
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
 #Customer intent: As a developer, I want to understand the components of WPF so that I can understand the overall picture of WPF.
@@ -244,7 +244,7 @@ The following example uses a <xref:System.Windows.Controls.DockPanel> to lay out
     x:Class="SDKSample.LayoutWindow"
     Title="Layout with the DockPanel" Height="143" Width="319">
 
-  <!--DockPanel to layout four text boxes--> 
+  <!--DockPanel to layout four text boxes-->
   <DockPanel>
     <TextBox DockPanel.Dock="Top">Dock = "Top"</TextBox>
     <TextBox DockPanel.Dock="Bottom">Dock = "Bottom"</TextBox>

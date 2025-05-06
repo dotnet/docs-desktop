@@ -2,10 +2,10 @@
 title: "How to: Specify Whether a Hyperlink is Underlined"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "Hyperlink control type [WPF]"
 ms.assetid: 3996cfe6-1dac-4835-aeb3-c719ce9cfee5
 description: Learn how to specify whether a hyperlink is underlined when triggering an event, such as the MouseEnter event.

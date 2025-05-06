@@ -2,11 +2,11 @@
 title: "How to: Draw Text on a Windows Form"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
   - "cpp"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "forms [Windows Forms], drawing text"
   - "text [Windows Forms], drawing"
 ms.assetid: 5d2447a9-21a1-4adc-b954-5516f2bb9b2c

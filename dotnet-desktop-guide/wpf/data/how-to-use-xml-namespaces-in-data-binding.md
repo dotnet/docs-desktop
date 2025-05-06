@@ -1,6 +1,6 @@
 ---
 title: "How to: Use XML Namespaces in Data Binding"
-description: Learn how to use XML namespaces in data binding including related tutorials and several provided code examples. 
+description: Learn how to use XML namespaces in data binding including related tutorials and several provided code examples.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
 helpviewer_keywords:

@@ -2,10 +2,10 @@
 title: "How to: Change the TextWrapping Property Programmatically"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "documents [WPF], changing TextWrapping property programmatically"
   - "TextWrapping property [WPF], changing programmatically"
 ms.assetid: 30d25554-4c82-4df9-a8d6-35683a4a13bb

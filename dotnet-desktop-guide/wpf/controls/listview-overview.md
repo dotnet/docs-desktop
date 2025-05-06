@@ -3,10 +3,10 @@ title: "ListView Overview"
 description: Learn about the Windows Presentation Foundation ListView control, which provides the infrastructure to display data items in different layouts or views.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "controls [WPF], ListView"
   - "ListView controls [WPF], about ListView control"
 ms.assetid: 989e12b0-260e-4570-95c6-489284003ce2

@@ -3,10 +3,10 @@ title: Navigate Data with BindingNavigator Control
 description: Learn about how to navigate data with the Windows Forms BindingNavigator control, which enables developers to provide end users with a simple data navigation.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "BindingNavigator control [Windows Forms], navigating data"
   - "data [Windows Forms], navigating"
   - "data navigation"

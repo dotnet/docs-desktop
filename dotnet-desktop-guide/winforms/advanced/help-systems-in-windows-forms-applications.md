@@ -2,7 +2,7 @@
 title: Help Systems
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "Help [Windows Forms], adding to Windows applications"
   - "Windows applications [Windows Forms], providing Help systems"
   - "What's This? Help"

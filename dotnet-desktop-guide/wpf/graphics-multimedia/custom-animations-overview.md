@@ -4,7 +4,7 @@ description: Learn how and when to extend the WPF animation system by creating c
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
 ms.topic: overview
-helpviewer_keywords: 
+helpviewer_keywords:
   - "custom classes [WPF], animation"
   - "key frames [WPF], custom"
   - "custom key frames [WPF]"

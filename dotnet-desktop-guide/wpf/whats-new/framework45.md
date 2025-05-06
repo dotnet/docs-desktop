@@ -4,7 +4,7 @@ description: Learn about the many new and enhanced features in Windows Presentat
 titleSuffix: ""
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "Windows Presentation Foundation [WPF], what's new"
   - "WPF [WPF], what's new"
 ms.assetid: db086ae4-70bb-4862-95db-2eaca5216bc3

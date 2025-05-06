@@ -2,15 +2,15 @@
 title: "How to: Handle a Loaded Event"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "XAML [WPF], Loaded events"
   - "events [WPF], Loaded"
   - "Loaded events [WPF]"
 ms.assetid: 0cf8d003-8441-4df4-807a-6db09347e829
-description: Learn how to handle the FrameworkElement.Loaded event, with an example scenario for handling that event. 
+description: Learn how to handle the FrameworkElement.Loaded event, with an example scenario for handling that event.
 ---
 # How to: Handle a Loaded Event
 

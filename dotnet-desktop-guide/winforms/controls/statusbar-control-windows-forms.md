@@ -2,7 +2,7 @@
 title: "StatusBar Control"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "StatusBar control [Windows Forms]"
   - "status bars [Windows Forms], creating"
 ms.assetid: 6f543e27-cf78-4b7f-b4d0-6a8030155d48

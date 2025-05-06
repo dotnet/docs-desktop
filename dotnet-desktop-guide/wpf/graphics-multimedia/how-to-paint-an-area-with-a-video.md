@@ -4,10 +4,10 @@ description: Learn how to Paint an Area with a Video.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
 ms.custom: devdivchpfy22
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "painting with a video [WPF]"
   - "video [WPF], painting with"
   - "brushes [WPF], painting with a video"

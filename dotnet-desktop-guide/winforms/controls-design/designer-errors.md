@@ -4,10 +4,10 @@ description: Learn about some of the common errors that occur when the Windows F
 ms.date: 04/01/2025
 ms.service: dotnet-desktop
 ms.topic: troubleshooting
-f1_keywords: 
+f1_keywords:
   - "DTELErrorList"
   - "WhyDTELPage"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "errors [Windows Forms Designer]"
   - "design-time errors [Windows Forms Designer]"
 ---

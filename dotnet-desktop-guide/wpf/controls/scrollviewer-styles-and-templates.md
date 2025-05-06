@@ -1,9 +1,9 @@
 ---
 title: "ScrollViewer Styles and Templates"
-description: Learn about the styles and templates for the ScrollViewer control allowing you to modify the default ControlTemplate to give the control a unique appearance. 
+description: Learn about the styles and templates for the ScrollViewer control allowing you to modify the default ControlTemplate to give the control a unique appearance.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "parts [WPF], ScrollViewer"
   - "states [WPF], ScrollViewer"
   - "styles [WPF], ScrollViewer"

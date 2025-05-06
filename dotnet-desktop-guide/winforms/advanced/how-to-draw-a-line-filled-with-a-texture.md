@@ -2,10 +2,10 @@
 title: "How to: Draw a Line Filled with a Texture"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "drawing [Windows Forms], lines"
   - "lines [Windows Forms], texture"
   - "drawing lines [Windows Forms], texture"

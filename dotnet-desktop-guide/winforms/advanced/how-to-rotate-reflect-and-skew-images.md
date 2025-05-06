@@ -3,10 +3,10 @@ title: "How to: Rotate, Reflect, and Skew Images"
 description: Learn how to rotate, reflect, and skew images by using Windows Forms and System.Windows.Forms.PaintEventArgs.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "images [Windows Forms], reflecting"
   - "images [Windows Forms], rotating"
   - "images [Windows Forms], skewing"

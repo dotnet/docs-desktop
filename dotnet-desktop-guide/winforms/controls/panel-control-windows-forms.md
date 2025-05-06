@@ -3,7 +3,7 @@ title: "Panel Control"
 description: Learn how to use the Windows Forms Panel control, specifically how to use panels to subdivide a form by function.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "controls [Windows Forms], grouping"
   - "grouping controls"
   - "Panel control [Windows Forms]"

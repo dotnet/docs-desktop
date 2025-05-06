@@ -4,10 +4,10 @@ ms.date: "03/30/2017"
 ms.service: dotnet-framework
 ms.custom: devdivchpfy22
 description: Learn how to manipulate Flow Content Elements through the Blocks property.
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "documents [WPF], manipulating flow content elements through Blocks property"
   - "flow content elements [WPF], manipulating through Blocks property"
   - "properties [WPF], Blocks [WPF], manipulating flow content elements"

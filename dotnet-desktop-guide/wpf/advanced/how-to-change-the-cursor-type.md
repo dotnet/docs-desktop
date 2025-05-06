@@ -3,10 +3,10 @@ title: "How to: Change the Cursor Type"
 description: Change the mouse pointer Cursor for an element and for an application in Windows Presentation Foundation. This example consists of XAML and a code-behind file.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "mouse pointer [WPF], cursor type"
   - "cursor (mouse pointer)"
 ms.assetid: 08c945a7-8ab0-4320-acf3-0b4955a344c2

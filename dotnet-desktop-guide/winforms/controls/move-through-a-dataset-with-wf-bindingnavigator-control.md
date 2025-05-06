@@ -3,10 +3,10 @@ title: Move Through a DataSet with BindingNavigator Control
 description: Learn how to move through a DataSet with the Windows Forms BindingNavigator Control via code samples in C# and Visual Basic.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "datasets [Windows Forms], moving through"
   - "BindingNavigator control [Windows Forms], moving through datasets"
   - "examples [Windows Forms], BindingNavigator control"

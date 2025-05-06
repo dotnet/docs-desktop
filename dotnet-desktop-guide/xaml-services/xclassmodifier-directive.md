@@ -3,11 +3,11 @@ title: "x:ClassModifier Directive"
 description: Learn about the x:ClassModifier Directive.
 ms.date: "03/30/2017"
 ms.custom: devdivchpfy22
-f1_keywords: 
+f1_keywords:
   - "xClassModifier"
   - "x:ClassModifier"
   - "ClassModifier"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "XAML [XAML Services], x:ClassModifier attribute"
   - "x:ClassModifier attribute [XAML Services]"
   - "ClassModifier attribute in XAML [XAML Services]"

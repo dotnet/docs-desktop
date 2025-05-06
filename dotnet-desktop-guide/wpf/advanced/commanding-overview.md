@@ -4,10 +4,10 @@ description: Learn about commanding, an input mechanism in Windows Presentation 
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
 ms.topic: overview
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "interfaces [WPF], ICommandSource"
   - "command library [WPF]"
   - "commands [WPF], definition of"

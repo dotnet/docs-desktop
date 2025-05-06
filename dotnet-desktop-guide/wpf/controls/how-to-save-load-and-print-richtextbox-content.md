@@ -4,10 +4,10 @@ ms.date: "03/30/2017"
 ms.service: dotnet-framework
 ms.custom: devdivchpfy22
 description: Learn how to Save, Load, and Print RichTextBox content.
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "saving RichTextBox controls [WPF]"
   - "printing RichTextBox controls [WPF]"
   - "loading RichTextBox controls [WPF]"

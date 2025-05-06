@@ -3,7 +3,7 @@ title: "How to: Animate an Object by Using Key Frames"
 description: Learn about how to use the ObjectAnimationUsingKeyFrames class to animate an object using key frames.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "animation [WPF], objects with key frames"
   - "key frames [WPF], animating objects with"
 ms.assetid: b1f15ba9-cac7-4cea-8699-5c6b55c05c5e

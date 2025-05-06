@@ -2,10 +2,10 @@
 title: "How to: Define Resize and Positioning Behavior in a Split Window"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "split windows [Windows Forms], resizing"
   - "splitter windows [Windows Forms], resizing"
   - "SplitContainer control [Windows Forms], resizing"

@@ -3,11 +3,11 @@ title: Change Displayed Data at Run Time in DataGrid Control
 description: Learn more about how to change displayed data at run time in the Windows Forms DataGrid control.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
   - "cpp"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "DataGrid control [Windows Forms], dynamically changing at run time"
   - "DataGrid control [Windows Forms], data binding"
   - "cells [Windows Forms], changing DataGrid cell values"

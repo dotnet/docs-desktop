@@ -3,10 +3,10 @@ title: "Handling User Input"
 description: Learn about keyboard and mouse events when handling an event, control authors should override the protected method.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "custom controls [Windows Forms], user input using code"
   - "custom controls [Windows Forms], keyboard events using code"
   - "custom controls [Windows Forms], mouse events using code"

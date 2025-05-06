@@ -3,11 +3,11 @@ title: Add and Remove Tabs with TabControl
 description: Learn how to add and remove tabs with the Windows Forms TabControl control, which contains two TabPage controls. Access these tabs through the TabPages property.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
   - "cpp"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "tabs [Windows Forms], removing from pages"
   - "TabPage control"
   - "TabControl control [Windows Forms], adding and removing tabs"

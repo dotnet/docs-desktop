@@ -3,7 +3,7 @@ title: "Using Application Settings and User Settings"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
 description: Learn how to use application settings and user settings to create and access values that are persisted between application execution sessions.
-helpviewer_keywords: 
+helpviewer_keywords:
   - "user settings [Windows Forms]"
   - "application settings [Windows Forms], how-to topics"
 ms.assetid: 54682d3b-1cbf-4683-9351-012b8b4286b5

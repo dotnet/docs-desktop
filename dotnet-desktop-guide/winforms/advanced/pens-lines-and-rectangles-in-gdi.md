@@ -3,10 +3,10 @@ title: "Pens, Lines, and Rectangles in GDI+"
 description: Learn how to draw lines and rectangles and construct a pen by using objects and methods in GDI+ that store attributes, such as line color, width, and style.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "lines"
   - "GDI+, lines"
   - "drawing [Windows Forms], rectangles"

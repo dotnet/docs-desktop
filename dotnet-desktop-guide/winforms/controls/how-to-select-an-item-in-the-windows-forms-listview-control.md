@@ -3,10 +3,10 @@ title: Select an Item in ListView Control
 description: Learn about how to select an item in the Windows Forms ListView control, by means of C# and Visual Basic code examples.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "lists [Windows Forms], selecting items"
   - "ListView control [Windows Forms], selecting items"
   - "selection [Windows Forms], in list views"

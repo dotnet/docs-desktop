@@ -3,10 +3,10 @@ title: "How to: Obtain Font Metrics"
 description: Learn how the System.Drawing.FontFamily class provides methods that retrieve various metrics for a particular font family/style combination.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "fonts [Windows Forms], obtaining metrics"
   - "font metrics [Windows Forms], obtaining"
 ms.assetid: ff7c0616-67f7-4fa2-84ee-b8d642f2b09b

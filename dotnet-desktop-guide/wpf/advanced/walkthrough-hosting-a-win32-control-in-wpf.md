@@ -3,10 +3,10 @@ title: Host a Win32 control in WPF
 titleSuffix: ""
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "hosting Win32 control in WPF [WPF]"
   - "Win32 code [WPF], WPF interoperation"
 ms.assetid: a676b1eb-fc55-4355-93ab-df840c41cea0

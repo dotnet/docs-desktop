@@ -3,11 +3,11 @@ title: "x:XData Intrinsic XAML Type"
 description: Learn about the x:XData Intrinsic XAML type.
 ms.date: "03/30/2017"
 ms.custom: devdivchpfy22
-f1_keywords: 
+f1_keywords:
   - "x:XData"
   - "XData"
   - "xXData"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "XAML [XAML Services], x:XData directive element"
   - "XData in XAML [XAML Services]"
   - "x:XData XAML directive element [XAML Services]"

@@ -4,7 +4,7 @@ description: Learn how bitmap effects enable designers and developers to apply v
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
 ms.topic: overview
-helpviewer_keywords: 
+helpviewer_keywords:
   - "bitmap effects [WPF]"
 ms.assetid: 23cb338e-4b59-4b52-b294-96431f9c9568
 ---

@@ -3,7 +3,7 @@ title: "How to: Translate an Element"
 description: Learn how to use TranslateTransform to move an element.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "graphics [WPF], translations"
 ms.assetid: 461c8273-15df-42f6-8672-89ba22887cc0
 ---

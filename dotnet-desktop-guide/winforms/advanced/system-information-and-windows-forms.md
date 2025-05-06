@@ -3,10 +3,10 @@ title: System Information
 description: Learn how to incorporate computer system information into Windows Forms applications using the System.Windows.Forms.SystemInformation class.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "domain names [Windows Forms], retrieving"
   - "SystemInformation class [Windows Forms]"
   - "user names [Windows Forms], retrieving"

@@ -4,10 +4,10 @@ ms.date: "03/30/2017"
 ms.service: dotnet-framework
 ms.custom: devdivchpfy22
 description: Learn how to change the FlowDirection of content programmatically.
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "FlowDirection property [WPF], changing programmatically"
   - "documents [WPF], changing FlowDirection property programmatically"
 ms.assetid: 02f5a8ba-f8c0-4e5a-84b9-4c5bf12922a2

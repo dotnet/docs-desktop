@@ -2,11 +2,11 @@
 title: "How to: Create a Pen"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
   - "cpp"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "graphics [Windows Forms], creating pens"
   - "pens [Windows Forms], creating"
   - "Pen object"

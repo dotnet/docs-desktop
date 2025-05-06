@@ -8,9 +8,9 @@ no-loc: ["UserControl"]
 dev_langs:
 - "csharp"
 - "vb"
-f1_keywords: 
+f1_keywords:
 - "UserControl"
-helpviewer_keywords: 
+helpviewer_keywords:
 - "controls [Windows Forms], composite"
 ---
 

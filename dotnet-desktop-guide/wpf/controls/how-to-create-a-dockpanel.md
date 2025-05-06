@@ -1,12 +1,12 @@
 ---
 title: "How to: Create a DockPanel"
-description: Learn how to create and use an instance of DockPanel, by means of the included code examples in C# and Visual Basic. 
+description: Learn how to create and use an instance of DockPanel, by means of the included code examples in C# and Visual Basic.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "controls [WPF], DockPanel"
   - "DockPanel control [WPF], creating"
 ms.assetid: 9194f663-e279-4f1a-86d7-125a57d05c6f

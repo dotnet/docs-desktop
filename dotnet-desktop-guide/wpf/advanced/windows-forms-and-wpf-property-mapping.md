@@ -3,7 +3,7 @@ title: "Windows Forms and WPF Property Mapping"
 titleSuffix: ""
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "property mapping [WPF interoperability]"
   - "Windows Forms [WPF], interoperability with"
   - "Windows Forms [WPF], WPF interoperation"

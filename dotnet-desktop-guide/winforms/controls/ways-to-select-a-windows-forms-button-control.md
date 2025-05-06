@@ -3,7 +3,7 @@ title: Ways to Select a Button Control
 description: Learn about the different ways to select a button control such as a mouse click, moving the focus, using the access key and other options.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "Button control [Windows Forms], selecting"
 ms.assetid: fe2fc058-5118-4f70-b264-6147d64a7a8d
 ---

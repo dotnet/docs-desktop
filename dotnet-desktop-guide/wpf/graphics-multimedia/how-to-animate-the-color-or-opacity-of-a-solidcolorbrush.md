@@ -3,7 +3,7 @@ title: "How to: Animate the Color or Opacity of a SolidColorBrush"
 description: Learn how to animate the Color and Opacity of a SolidColorBrush in Windows Presentation Foundation (WPF).
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "SolidColorBrush [WPF], animating color of"
   - "colors [WPF], animating"
   - "opacity [WPF], animating"

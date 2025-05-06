@@ -3,7 +3,7 @@ title: "How to: Enable the TAB Key to Move Out of a ToolStrip Control"
 description: Learn how to enable the TAB Key to move out of a ToolStrip Control to the next control in the tab order.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "controls [Windows Forms], moving between"
   - "TAB key [Windows Forms], enabling"
   - "ToolStrip control [Windows Forms], moving from"

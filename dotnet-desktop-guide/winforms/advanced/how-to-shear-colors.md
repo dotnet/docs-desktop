@@ -3,10 +3,10 @@ title: "How to: Shear Colors"
 description: Learn how to shear colors using a code example that constructs a System.Drawing.Image object from an image file and then applies the shearing transformation.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "colors [Windows Forms], transforming with color matrices"
   - "colors [Windows Forms], shearing"
 ms.assetid: 0a424171-5b8b-45c4-afef-e9720a6c3e22

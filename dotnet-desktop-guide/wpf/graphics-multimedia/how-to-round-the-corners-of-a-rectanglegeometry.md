@@ -3,7 +3,7 @@ title: "How to: Round the Corners of a RectangleGeometry"
 description: Learn how to round the corners of a RectangleGeometry by setting its RadiusX and RadiusY properties to a value greater than zero.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "corners [WPF], rounding"
   - "RectangleGeometry class [WPF], rounding corners"
   - "graphics [WPF], rounding corners of RectangleGeometry objects [WPF]"

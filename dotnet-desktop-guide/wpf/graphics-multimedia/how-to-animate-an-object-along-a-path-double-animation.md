@@ -3,10 +3,10 @@ title: "How to: Animate an Object Along a Path (Double Animation)"
 description: Learn how to use the DoubleAnimationUsingPath class to animate an object along a path defined by a PathGeometry.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "animation [WPF], objects along paths (double animation)"
   - "double animation [WPF]"
 ms.assetid: 5a3c4a99-f303-42ad-a52a-e4794bb1798e

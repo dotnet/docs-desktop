@@ -4,7 +4,7 @@ ms.date: "03/30/2017"
 ms.service: dotnet-framework
 ms.custom: devdivchpfy22
 description: Learn about the GridView column header styles and templates.
-helpviewer_keywords: 
+helpviewer_keywords:
   - "column headers [WPF], customizing"
   - "ListView controls [WPF], GridView column header styles"
   - "controls [WPF], ListView"

@@ -2,10 +2,10 @@
 title: "How to: Align Drawn Text"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "text [Windows Forms], aligning"
   - "Windows Forms, aligning drawn text"
 ms.assetid: 83c10a81-1a90-4b5c-98aa-2c6c4b280079

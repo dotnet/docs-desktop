@@ -1,13 +1,13 @@
 ---
 title: Format DataGrid Control
-description: Learn how to format the DataGrid Control, which replaces and adds functionality to the DataGrid control. 
+description: Learn how to format the DataGrid Control, which replaces and adds functionality to the DataGrid control.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
   - "cpp"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "columns [Windows Forms], DataGrid control"
   - "colors [Windows Forms], applying to DataGrid controls"
   - "DataGrid control [Windows Forms], formatting"

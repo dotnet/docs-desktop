@@ -2,7 +2,7 @@
 title: Selection and Clipboard Use with DataGridView Control
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "DataGridView control [Windows Forms], Clipboard use"
   - "cells [Windows Forms], selecting in grids"
   - "Clipboard [Windows Forms], in DataGridView control"

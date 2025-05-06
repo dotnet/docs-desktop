@@ -2,10 +2,10 @@
 title: "How to: Create an MDI Window List with MenuStrip"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "MDI [Windows Forms], creating window lists"
   - "MenuStrip control [Windows Forms], creating window lists"
 ms.assetid: 04fb414b-811f-4a83-aab6-b4a24646dec5

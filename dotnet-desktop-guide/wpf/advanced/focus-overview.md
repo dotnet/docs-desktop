@@ -4,10 +4,10 @@ description: "Learn about the two main concepts in Windows Presentation Foundati
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
 ms.topic: overview
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "applications [WPF], focus"
   - "focus in applications [WPF]"
 ms.assetid: 0230c4eb-0c8a-462b-ac4b-ae3e511659f4

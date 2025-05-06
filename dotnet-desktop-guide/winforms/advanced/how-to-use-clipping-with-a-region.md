@@ -3,10 +3,10 @@ title: "How to: Use Clipping with a Region"
 description: Learn how to use the clip region property of the System.Drawing.Graphics class by using a code example that constructs a clip region based on a single polygon.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "regions [Windows Forms], clipping"
   - "regions [Windows Forms], restricting drawing surface"
 ms.assetid: 43d121b4-e14c-4901-b25c-2d6c25ba4e29

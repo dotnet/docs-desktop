@@ -3,10 +3,10 @@ title: Access Objects Bound to DataGridView Rows
 description: Learn how to access objects bound to Windows Forms DataGridView rows to display a table of information stored in a collection of business objects.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "object binding [Windows Forms], accessing bound objects"
   - "data grids [Windows Forms], accessing bound objects"
   - "DataGridView control [Windows Forms], accessing objects bound to rows"

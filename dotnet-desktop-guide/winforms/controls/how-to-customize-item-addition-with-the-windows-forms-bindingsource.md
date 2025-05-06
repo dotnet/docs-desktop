@@ -2,11 +2,11 @@
 title: Customize Item Addition with BindingSource component
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
   - "cpp"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "controls [Windows Forms], creating new items"
   - "BindingSource component [Windows Forms], customizing item addition with"
   - "examples [Windows Forms], BindingSource component"

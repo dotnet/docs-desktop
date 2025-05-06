@@ -2,10 +2,10 @@
 title: "How to: Create Thumbnail Images"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "thumbnail images [Windows Forms], creating"
   - "images [Windows Forms], creating thumbnails"
 ms.assetid: e956242a-1e5b-4217-a3cf-5f3fb45d00ba

@@ -2,10 +2,10 @@
 title: "How to: Create a Path Gradient"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "path gradients [Windows Forms], creating"
   - "gradients [Windows Forms], creating path"
   - "graphics paths [Windows Forms], creating gradient"

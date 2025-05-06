@@ -2,11 +2,11 @@
 title: "How to: Choose the Printers Attached to a User's Computer"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
   - "cpp"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "printing [Windows Forms], choosing printers"
   - "printers [Windows Forms], choosing"
 ms.assetid: 63c1172b-2931-4ac0-953f-37f629494bbf

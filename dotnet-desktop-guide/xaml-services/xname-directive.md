@@ -3,11 +3,11 @@ title: "x:Name Directive"
 description: Learn about the x:Name Directive.
 ms.date: "03/30/2017"
 ms.custom: devdivchpfy22
-f1_keywords: 
+f1_keywords:
   - "x:Name"
   - "xName"
   - "Name"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "x:Name attribute [XAML Services]"
   - "XAML [XAML Services], x:Name attribute"
   - "Name attribute in XAML [XAML Services]"

@@ -3,7 +3,7 @@ title: "GroupBox Control"
 description: Learn more about the GroupBox control in Windows Forms, which is used to provide an identifiable grouping for other controls.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "controls [Windows Forms], grouping"
   - "GroupBox control [Windows Forms]"
   - "grouping controls [Windows Forms]"

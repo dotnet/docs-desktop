@@ -3,10 +3,10 @@ title: "How to: Manipulate Columns and Rows by Using ColumnDefinitionsCollection
 description: Learn how to use methods in the ColumnDefinitionCollection and RowDefinitionCollection classes to perform actions like adding, clearing, or counting contents.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "controls [WPF], Grid class"
   - "Grid control [WPF], ColumnDefinitionCollection class"
   - "Grid control [WPF], RowDefinitionCollection class"

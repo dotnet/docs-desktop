@@ -2,12 +2,12 @@
 title: "XML Character Entities and XAML"
 description: "Describes how special characters are handled in XAML and general considerations for other XML concepts in XAML."
 ms.date: "03/30/2017"
-f1_keywords: 
+f1_keywords:
   - "&"
   - "&amp"
   - "&gt"
   - "&lt"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "XAML [XAML Services], special characters"
   - "ampersand (&) [XAML Services]"
   - "special characters [XAML Services]"

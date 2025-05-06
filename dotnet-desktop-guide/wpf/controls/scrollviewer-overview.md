@@ -3,11 +3,11 @@ title: "ScrollViewer Overview"
 description: Learn about the ScrollViewer control, which enables scrolling of content in Windows Presentation Foundation applications. See usage examples.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
   - "cpp"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "controls [WPF], ScrollViewer"
   - "ScrollViewer control [WPF], about ScrollViewer control"
 ms.assetid: 94a13b94-cfdf-4b12-a1aa-90cb50c6e9b9

@@ -2,11 +2,11 @@
 title: Use the Row Template to Customize Rows in DataGridView Control
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
   - "cpp"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "data grids [Windows Forms], customizing rows"
   - "DataGridView control [Windows Forms], customizing rows"
 ms.assetid: 6db61607-7e57-4a84-8d63-9d6a7ed7f9ff

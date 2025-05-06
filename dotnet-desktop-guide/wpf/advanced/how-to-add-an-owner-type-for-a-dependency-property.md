@@ -2,10 +2,10 @@
 title: "How to: Add an Owner Type for a Dependency Property"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "classes [WPF], adding as owners of dependency properties"
   - "dependency properties [WPF], adding classes as owners of"
 ms.assetid: edcce050-0576-4edb-a31a-3f909637b452

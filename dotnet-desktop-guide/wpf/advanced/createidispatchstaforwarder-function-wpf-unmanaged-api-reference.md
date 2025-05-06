@@ -4,11 +4,11 @@ description: Learn about the CreateIDispatchSTAForwarder function of the Windows
 titleSuffix: ""
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "cpp"
-api_name: 
+api_name:
   - "CreateIDispatchSTAForwarder"
-api_location: 
+api_location:
   - "PresentationHost_v0400.dll"
 ms.assetid: 57a02dfa-f091-4ace-9c06-1f4ab52b3527
 ---

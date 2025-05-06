@@ -2,13 +2,13 @@
 title: "x:Null Markup Extension"
 description: "Describes how the x:Null markup extension is handled by XAML."
 ms.date: "03/30/2017"
-f1_keywords: 
+f1_keywords:
   - "NullExtension"
   - "x:NullExtension"
   - "x:Null"
   - "Null"
   - "xNull"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "Null markup extension in XAML [XAML Services]"
   - "x:Null markup extension [XAML Services]"
   - "XAML [XAML Services], x:Null markup extension"

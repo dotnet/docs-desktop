@@ -2,10 +2,10 @@
 title: Implement Virtual Mode with Just-In-Time Data Loading in DataGridView Control
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "examples [Windows Forms], just-in-time data loading"
   - "data [Windows Forms], managing large data sets"
   - "DataGridView control [Windows Forms], virtual mode"

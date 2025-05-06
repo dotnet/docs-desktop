@@ -7,7 +7,7 @@ ms.date: 10/22/2024
 ms.service: dotnet-desktop
 ms.topic: overview
 ms.custom: update-template
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
 #customer intent: As a developer I need to know about how styles and templates work.

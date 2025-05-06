@@ -1,12 +1,12 @@
 ---
 title: Group Items in ListView Control
-description: Learn how to group items in the ListView Control, which makes it easier to navigate large lists by grouping items alphabetically, by date, or other groupings. 
+description: Learn how to group items in the ListView Control, which makes it easier to navigate large lists by grouping items alphabetically, by date, or other groupings.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "ListView control [Windows Forms], grouping items"
   - "lists [Windows Forms], grouping items"
   - "grouping"

@@ -3,10 +3,10 @@ title: Respond to Clicks in DataGrid Control
 description: Learn about how to respond to clicks in the Windows Forms DataGrid control, which is retained for both backward compatibility and future use.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "Click event [Windows Forms], monitoring in DataGrid controls"
   - "DataGrid control [Windows Forms], examples"
   - "DataGrid control [Windows Forms], returning clicked cell value"

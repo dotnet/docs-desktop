@@ -3,10 +3,10 @@ title: Digital ink - Windows Forms and COM vs. WPF
 titleSuffix: ""
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "enabling ink [WPF]"
   - "InkCanvas control [WPF]"
   - "ink object model [WPF]"
@@ -14,7 +14,7 @@ helpviewer_keywords:
   - "ink [WPF], enabling"
   - "events [WPF], tablet pen"
 ms.assetid: 577835be-b145-4226-8570-1d309e9b3901
-description: "Learn about the three essential platforms that support digital ink: the Tablet PC Windows Forms platform, the Tablet PC COM platform, and the WPF platform." 
+description: "Learn about the three essential platforms that support digital ink: the Tablet PC Windows Forms platform, the Tablet PC COM platform, and the WPF platform."
 ---
 # The Ink Object Model: Windows Forms and COM versus WPF
 

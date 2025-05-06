@@ -3,10 +3,10 @@ title: "Partial Trust Security"
 description: Learn how WPF relies on both Code Access Security (CAS) and ClickOnce to enforce restrictions regarding critical system resources.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "partial trust security [WPF]"
   - "detecting permissions [WPF]"
   - "security settings for Internet Explorer [WPF]"

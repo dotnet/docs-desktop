@@ -3,10 +3,10 @@ title: Set Font and Color Styles in DataGridView Control
 description: Learn about how to set font and color styles in the Windows Forms DataGridView control by setting properties of the DataGridViewCellStyle class.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "DataGridView control [Windows Forms], cell customization"
   - "data grids [Windows Forms], customizing cells"
   - "data grids [Windows Forms], font styles"

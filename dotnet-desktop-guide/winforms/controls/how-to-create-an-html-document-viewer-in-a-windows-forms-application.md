@@ -3,10 +3,10 @@ title: Create an HTML Document Viewer in a Windows Forms app
 titleSuffix: ""
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "WebBrowser control [Windows Forms], creating an HTML document viewer"
   - "document viewers"
   - "Windows Forms, creating document viewers"

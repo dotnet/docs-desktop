@@ -3,10 +3,10 @@ title: "How to: Set Tab Stops in Drawn Text"
 description: Learn how to set tab stops for text by calling a method of a System.Drawing.StringFormat object that is passed to a method of the System.Drawing.Graphics class.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "text [Windows Forms], drawing with tab stops"
   - "tabs [Windows Forms], drawn text"
 ms.assetid: 64878f98-39ba-4303-b63f-0859ab682eeb

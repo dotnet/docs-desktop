@@ -3,10 +3,10 @@ title: "Easing Functions"
 description: Learn how to use the EasingFunction property allowing you to apply custom mathematical formulas to animations.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "applying mathematical formulas to animations [WPF]"
   - "applying easing functions to animations [WPF]"
   - "mathematical formulas [WPF], applying to animations"

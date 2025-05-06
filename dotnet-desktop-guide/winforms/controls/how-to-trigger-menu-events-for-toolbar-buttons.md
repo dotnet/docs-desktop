@@ -3,11 +3,11 @@ title: "How to: Trigger Menu Events for Toolbar Buttons"
 description: Learn how to trigger menu events for toolbar buttons in Windows Forms, by means of code samples in Visual Basic, C#, and CPP.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
   - "cpp"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "examples [Windows Forms], toolbars"
   - "ToolBar control [Windows Forms], click event handlers"
   - "ToolBar control [Windows Forms], coding button click events"

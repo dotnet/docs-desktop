@@ -3,7 +3,7 @@ title: Default Functionality in DataGridView Control
 description: Learn about the default functionality in the Windows Forms DataGridView control, which is able to be edited by default.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "data grids [Windows Forms], default functionality in DataGridView control"
   - "DataGridView control [Windows Forms], default functionality"
 ms.assetid: 4405f697-cad1-4839-9bcd-8ddb09d9f00e

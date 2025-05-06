@@ -2,7 +2,7 @@
 title: "How to: Copy ToolStripMenuItems"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "menu items [Windows Forms], copying and pasting"
   - "MenuStrip control [Windows Forms], arranging items"
   - "ToolStripMenuItems [Windows Forms], copying and pasting"

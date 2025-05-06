@@ -3,11 +3,11 @@ title: "How to: Modify the Size or Placement of a Picture at Run Time"
 description: Learn about how to modify the size or placement of a picture at run time in Windows Forms by using the PictureBox control.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
   - "cpp"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "images [Windows Forms], controlling placement in PictureBox control [Windows Forms]"
   - "examples [Windows Forms], PictureBox control"
   - "PictureBox control [Windows Forms], picture size and alignment"

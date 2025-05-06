@@ -3,10 +3,10 @@ title: "How to: Animate a Double by Using Key Frames"
 description: Learn how to use the DoubleAnimationUsingKeyFrames class to animate the value of a property that takes a Double by using key frames.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "Doubles [WPF], animating with key frames"
   - "animation [WPF], Doubles with key frames"
   - "key frames [WPF], animating Doubles with"

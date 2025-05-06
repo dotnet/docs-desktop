@@ -1,12 +1,12 @@
 ---
 title: "How to: Validate and Merge PrintTickets"
-description: Learn how to validate and merge PrintTickets using Microsoft Windows Print Schema, which includes PrintCapabilities and PrintTickets classes. 
+description: Learn how to validate and merge PrintTickets using Microsoft Windows Print Schema, which includes PrintCapabilities and PrintTickets classes.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "merging PrintTickets [WPF]"
   - "PrintTicket [WPF], merging"
   - "validation of PrintTickets [WPF]"

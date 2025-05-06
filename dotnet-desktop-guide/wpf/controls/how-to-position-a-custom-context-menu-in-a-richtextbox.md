@@ -4,10 +4,10 @@ ms.date: "03/30/2017"
 ms.service: dotnet-framework
 ms.custom: devdivchpfy22
 description: Learn how to position a Custom Context Menu in a RichTextBox.
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "custom context menus [WPF], positioning"
   - "positioning custom context menus [WPF]"
   - "RichTextBox control [WPF], positioning custom context menus"

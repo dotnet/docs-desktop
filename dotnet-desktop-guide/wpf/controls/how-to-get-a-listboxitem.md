@@ -3,10 +3,10 @@ title: "How to: Get a ListBoxItem"
 description: Learn how to get a ListBoxItem, by means of the included code examples in XAML, C#, and Visual Basic.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "ListBox controls [WPF], getting a ListBoxItem"
   - "ListBoxItem [WPF]"
 ms.assetid: da877c6f-5fd8-40cb-8909-225cbfd99aa5

@@ -3,7 +3,7 @@ title: "How to: Paint an Area with a Linear Gradient"
 description: Learn how to paint an area with a linear gradient to transition the color using the LinearGradientBrush class.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "linear gradients [WPF], painting with"
   - "brushes [WPF], painting with linear gradients"
   - "painting [WPF], with linear gradients"

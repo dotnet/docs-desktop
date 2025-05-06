@@ -2,10 +2,10 @@
 title: "How to: Obtain a Writable Copy of a Read-Only Freezable"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "cloning Freezable objects [WPF]"
   - "Freezable objects [WPF], modifiable clones"
 ms.assetid: d028de61-bbe9-4d62-b656-8fe3b1b2ca24

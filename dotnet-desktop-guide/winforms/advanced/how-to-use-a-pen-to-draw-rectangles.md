@@ -3,10 +3,10 @@ title: "How to: Use a Pen to Draw Rectangles"
 description: Learn how to draw rectangles using a System.Drawing.Graphics object and a System.Drawing.Pen object.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "rectangles [Windows Forms], drawing"
   - "pens [Windows Forms], drawing rectangles"
 ms.assetid: 54a7fa14-3ad8-4d64-b424-2a12005b250c

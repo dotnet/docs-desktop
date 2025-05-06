@@ -2,7 +2,7 @@
 title: "TrackBar Control"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "sliders"
   - "slider controls [Windows Forms]"
   - "TrackBar control [Windows Forms]"

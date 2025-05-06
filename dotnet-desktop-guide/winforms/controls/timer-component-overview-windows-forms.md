@@ -2,9 +2,9 @@
 title: "Timer Component Overview"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-f1_keywords: 
+f1_keywords:
   - "Timer"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "Timer component [Windows Forms], about Timer components"
   - "timers [Windows Forms], about timers"
 ms.assetid: e672c05b-a8b6-4b26-9e4d-9223aa9e3873

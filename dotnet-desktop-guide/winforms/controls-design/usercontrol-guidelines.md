@@ -7,9 +7,9 @@ ms.topic: overview
 dev_langs:
   - "csharp"
   - "vb"
-f1_keywords: 
+f1_keywords:
   - "UserControl"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "events [Windows Forms], defining within Windows Forms custom controls"
   - "custom controls [Windows Forms], events using code"
   - "property [Windows Forms], property changed events"

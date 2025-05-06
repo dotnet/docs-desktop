@@ -4,10 +4,10 @@ description: Overview of using mouse events to handle mouse input. Each event ma
 ms.date: 04/02/2025
 ms.service: dotnet-desktop
 ms.topic: conceptual
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "Click event [Windows Forms]"
   - "mouse [Windows Forms], mouse events"
   - "Click event"

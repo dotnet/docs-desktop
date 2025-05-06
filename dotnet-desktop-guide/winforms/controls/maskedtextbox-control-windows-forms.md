@@ -3,9 +3,9 @@ title: "MaskedTextBox Control"
 description: Learn about the MaskedTextBox control in Windows Forms by following the links listed in this article.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-f1_keywords: 
+f1_keywords:
   - "MaskedTextBox"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "MaskedTextBox control [Windows Forms]"
   - "user input [Windows Forms], validating in Windows Forms"
   - "validating user input [Windows Forms], Windows Forms"

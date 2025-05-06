@@ -4,10 +4,10 @@ ms.date: "03/30/2017"
 ms.service: dotnet-framework
 ms.custom: devdivchpfy22
 description: Learn how to retrieve Data in a particular Data Format.
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "drag-and-drop [WPF], retrieving data"
   - "DataFormats class [WPF], retrieving data"
   - "DataObject class [WPF], retrieving data"

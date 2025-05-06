@@ -4,10 +4,10 @@ description: You can create an Unbound Windows Forms DataGridView Control and di
 ms.date: "01/18/2022"
 ms.service: dotnet-framework
 ms.custom: devdivchpfy22
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "data [Windows Forms], displaying without binding to data source"
   - "DataGridView control [Windows Forms], unbound data"
   - "DataGridView control [Windows Forms], displaying data without binding to a data source"

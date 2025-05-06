@@ -3,10 +3,10 @@ title: "How to: Join ToolStripPanels"
 description: Learn how to join ToolStripPanels at run time, which provides the flexibility of multiple-document interface (MDI) applications.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "toolbars [Windows Forms], joining together"
   - "ToolStripPanel control [Windows Forms], joining together"
 ms.assetid: 4eadda6d-e3b8-4151-aaf2-a8d564fbe6b3

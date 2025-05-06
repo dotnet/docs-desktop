@@ -2,13 +2,13 @@
 title: "x:Type Markup Extension"
 description: "Describes how the x:Type markup extension is used in XAML. The x:Type markup extension specifies a CLR object."
 ms.date: "03/30/2017"
-f1_keywords: 
+f1_keywords:
   - "x:TypeExtension"
   - "Type"
   - "x:Type"
   - "xType"
   - "TypeExtension"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "x:Type markup extension [XAML Services]"
   - "XAML [XAML Services], x:Type markup extension"
   - "XAML [XAML Services], TargetType attribute"

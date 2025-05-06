@@ -3,9 +3,9 @@ title: "WebBrowser Control Overview"
 description: Learn how to use the WebBrowser control to seamlessly combine Web controls with Windows Forms controls in a single application.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-f1_keywords: 
+f1_keywords:
   - "WebBrowser"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "WebBrowser control [Windows Forms], about"
   - "Web pages [Windows Forms], displaying in applications"
 ms.assetid: 6e3e1cc2-9c48-4136-9659-e99e4e60b7e9

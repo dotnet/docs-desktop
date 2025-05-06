@@ -3,10 +3,10 @@ title: "Ellipses and Arcs in GDI+"
 description: Learn how to draw ellipses and arcs using the DrawEllipse and DrawArc methods in GDI+ with Windows Forms.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "arcs"
   - "GDI+, arcs"
   - "drawing [Windows Forms], ellipses"

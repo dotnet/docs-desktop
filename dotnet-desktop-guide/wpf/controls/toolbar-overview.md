@@ -3,7 +3,7 @@ title: "ToolBar Overview"
 description: Overview of how ToolBar controls are containers for a group of commands or controls which are typically related in their function.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "controls [WPF], ToolBar"
   - "ToolBar control [WPF]"
 ms.assetid: a8edb32c-118d-4f31-b6e6-8899082b504b

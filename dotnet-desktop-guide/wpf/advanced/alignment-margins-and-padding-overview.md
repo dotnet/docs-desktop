@@ -4,11 +4,11 @@ description: Learn about HorizontalAlignment, Margin, Padding, and VerticalAlign
 ms.topic: overview
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
   - "cpp"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "margins [WPF]"
   - "padding [WPF]"
   - "aligning [WPF]"

@@ -2,10 +2,10 @@
 title: "How to: Draw a Single B&#233;zier Spline"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "Bezier splines [Windows Forms], drawing"
   - "drawing [Windows Forms], Bezier splines"
 ms.assetid: f4f3fe30-f0a6-4743-ac91-11310cebea9f

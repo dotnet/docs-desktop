@@ -3,7 +3,7 @@ title: "Windows Forms Controls and Equivalent WPF Controls"
 titleSuffix: ""
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "Windows Forms [WPF], interoperability with"
   - "Windows Forms [WPF], WPF interoperation"
   - "interoperability [WPF], Windows Forms"

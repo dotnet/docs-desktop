@@ -4,10 +4,10 @@ ms.date: "03/30/2017"
 ms.service: dotnet-framework
 ms.custom: devdivchpfy22
 description: Learn how to manipulate a FlowDocument through the Blocks property.
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "documents [WPF], manipulating FlowDocuments through Blocks property [WPF], , "
   - ", "
 ms.assetid: cbb7291e-3f1b-433e-9e16-f4d93ced14e8

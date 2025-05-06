@@ -2,12 +2,12 @@
 title: "How to: Anchor and Dock Child Controls in a TableLayoutPanel Control"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-f1_keywords: 
+f1_keywords:
   - "net.ComponentModel.StyleCollectionEditor.TLP.AnchorDock"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "layout [Windows Forms], child controls"
   - "controls [Windows Forms], child"
   - "child controls [Windows Forms], anchoring and docking"

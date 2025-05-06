@@ -2,7 +2,7 @@
 title: "SaveFileDialog Component"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "Save File dialog box"
   - "SaveFileDialog component"
 ms.assetid: 6f5d9321-37d7-4448-ac4c-a33c42b2a766

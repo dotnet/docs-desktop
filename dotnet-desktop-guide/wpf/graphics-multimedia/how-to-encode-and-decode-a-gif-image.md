@@ -4,11 +4,11 @@ description: Learn how to Encode and Decode a GIF image.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
 ms.custom: devdivchpfy22
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
   - "cpp"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "encoding GIF images [WPF]"
   - "encoding image formats [WPF]"
   - "decoding GIF images [WPF]"

@@ -2,10 +2,10 @@
 title: Virtual Mode in DataGridView Control
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "DataGridView control [Windows Forms], virtual mode"
 ms.assetid: feae5d43-2848-4b1a-8ea7-77085dc415b5
-description: Learn about virtual mode in the Windows Forms DataGridView control, including its implementation and use. 
+description: Learn about virtual mode in the Windows Forms DataGridView control, including its implementation and use.
 ---
 # Virtual Mode in the Windows Forms DataGridView Control
 

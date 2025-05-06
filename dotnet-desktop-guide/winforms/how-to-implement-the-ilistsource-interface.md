@@ -3,10 +3,10 @@ title: "How to: Implement the IListSource Interface"
 description: Learn how to implement the IListSource Interface so that it is able to provide a list from another location.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "data binding [Windows Forms], implementing"
   - "IListSource interface"
 ms.assetid: 63ce27aa-2e23-4fbd-8228-0c1726f6c421

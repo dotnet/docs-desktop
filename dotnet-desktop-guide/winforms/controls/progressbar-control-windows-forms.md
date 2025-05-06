@@ -2,7 +2,7 @@
 title: "ProgressBar Control"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "progress controls"
   - "ProgressBar control [Windows Forms]"
 ms.assetid: 5be6b642-e8a6-4565-8ebd-ae73c7b10dc9

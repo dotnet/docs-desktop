@@ -2,10 +2,10 @@
 title: "Handwriting Recognition"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "handwriting recognition [WPF]"
   - "recognition of handwriting [WPF]"
 ms.assetid: f4e8576d-e731-4bac-9818-22e2ae636636

@@ -3,11 +3,11 @@ title: Change form borders
 descriptions: Learn how to change form borders when you are determining the appearance and behavior of your Windows Forms.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
   - "cpp"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "Windows Forms, changing the borders"
 ms.assetid: b3d5fa56-80c6-4b10-b505-f9672307ed55
 ---

@@ -3,10 +3,10 @@ title: "How to: Get or Set a Dock Value"
 description: Learn how to get or set a dock value, by means of the included code examples in C# and Visual Basic.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "Dock values [WPF], setting"
   - "Dock values [WPF], getting"
 ms.assetid: fcf4ab8a-c7cd-4835-8d04-de1c999ab4a8

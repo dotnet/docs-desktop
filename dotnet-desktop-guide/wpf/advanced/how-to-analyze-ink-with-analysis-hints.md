@@ -2,10 +2,10 @@
 title: "How to: Analyze Ink with Analysis Hints"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "ink [WPF], analyzing"
   - "analyzing ink [WPF]"
   - "ink [WPF], AnalysisHintNode objects [WPF]"

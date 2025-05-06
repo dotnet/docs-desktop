@@ -3,7 +3,7 @@ title: Sizing Options in DataGridView Control
 description: Learn about sizing options in the Windows Forms DataGridView control. DataGridView rows, columns, and headers change size as a result of different occurrences.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "DataGridView control [Windows Forms], row sizing"
   - "data grids [Windows Forms], column sizing"
   - "DataGridView control [Windows Forms], column sizing"

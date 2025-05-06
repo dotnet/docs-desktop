@@ -3,10 +3,10 @@ title: "How to: Create a Bitmap from a Visual"
 description: Learn how a DrawingVisual is rendered with FormattedText then rendered to the RenderTargetBitmap creating a bitmap of the given text.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "bitmaps [WPF], rendering from visuals"
   - "visuals [WPF], rendering to bitmaps"
 ms.assetid: 103fc7f5-7306-4026-9d61-2005e79959f3

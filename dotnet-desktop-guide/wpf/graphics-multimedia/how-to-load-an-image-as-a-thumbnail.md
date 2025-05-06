@@ -4,10 +4,10 @@ description: Learn how to Load an Image as a Thumbnail.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
 ms.custom: devdivchpfy22
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "loading images as thumbnails [WPF]"
   - "images [WPF], loading as thumbnails"
   - "thumbnails [WPF], loading images as"

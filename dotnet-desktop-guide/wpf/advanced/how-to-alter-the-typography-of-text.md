@@ -4,10 +4,10 @@ description: To alter the telegraphy of text, set the telegraphy attribute. You 
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
 ms.custom: devdivchpfy22
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "setting Typography attributes [WPF]"
   - "Typography attribute [WPF], setting"
 ms.assetid: 19a3b49b-60a2-4c11-a786-e26b4c965588

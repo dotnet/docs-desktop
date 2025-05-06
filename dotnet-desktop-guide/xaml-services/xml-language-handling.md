@@ -3,7 +3,7 @@ title: "xml:lang Handling in XAML"
 description: Learn about the xml:lang Handling in XAML.
 ms.date: "03/30/2017"
 ms.custom: devdivchpfy22
-helpviewer_keywords: 
+helpviewer_keywords:
   - "XAML [XAML Services], xml:lang attribute"
   - "xml:lang attribute [XAML Services]"
   - "RFC 3066 standard [XAML Services]"

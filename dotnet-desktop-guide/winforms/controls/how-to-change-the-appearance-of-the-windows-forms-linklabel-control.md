@@ -2,11 +2,11 @@
 title: Change the Appearance of LinkLabel Control
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
   - "cpp"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "LinkLabel properties"
   - "LinkLabel control [Windows Forms], changing appearance of links"
   - "links [Windows Forms], changing appearance"

@@ -9,7 +9,7 @@ ms.custom: update-template
 dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "binding data [WPF], enumeration"
   - "data binding [WPF], enumeration"
   - "enumeration [WPF]"

@@ -2,11 +2,11 @@
 title: Set Indents, Hanging Indents, and Bulleted Paragraphs with RichTextBox Control
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
   - "cpp"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "text boxes [Windows Forms], setting indents"
   - ".rtf files [Windows Forms], formatting in RichTextBox control"
   - "examples [Windows Forms], text boxes"

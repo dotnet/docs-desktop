@@ -2,10 +2,10 @@
 title: "How to: Find an Element by Its Name"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "elements [WPF], finding by name"
 ms.assetid: cfa7cf35-8aa2-4060-9454-872ed4af3f0e
 description: Learn how to use the FindName method to find an element by its Name value, with examples and links.

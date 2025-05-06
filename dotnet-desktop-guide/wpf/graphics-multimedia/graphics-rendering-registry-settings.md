@@ -4,7 +4,7 @@ description: Find out how to use registry settings for troubleshooting, debuggin
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
 ms.custom: devdivchpfy22
-helpviewer_keywords: 
+helpviewer_keywords:
   - "rendering graphics [WPF], registry settings"
   - "rendering graphics [WPF]"
   - "rendering graphics [WPF], troubleshooting"

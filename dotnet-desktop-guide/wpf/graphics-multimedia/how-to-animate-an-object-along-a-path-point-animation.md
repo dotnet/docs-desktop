@@ -3,10 +3,10 @@ title: "How to: Animate an Object Along a Path (Point Animation)"
 description: Learn how to use a PointAnimationUsingPath object to animate a Point along a curved path defined by a PathGeometry.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "animation [WPF], objects along paths (point animation)"
   - "point animation [WPF]"
 ms.assetid: 1fa3f817-35bc-41a1-b366-f5a20b70da0c

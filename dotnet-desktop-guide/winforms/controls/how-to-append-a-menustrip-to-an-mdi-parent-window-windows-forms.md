@@ -2,10 +2,10 @@
 title: "How to: Append a MenuStrip to an MDI Parent Window"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "MenuStrip control [Windows Forms], merging"
   - "MenuStrip control [Windows Forms], appending"
   - "MDI [Windows Forms], merging menu items"

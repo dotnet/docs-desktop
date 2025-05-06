@@ -2,9 +2,9 @@
 title: "ToolStripPanel Control Overview"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-f1_keywords: 
+f1_keywords:
   - "ToolStripPanel"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "toolbars [Windows Forms]"
   - "ToolStripPanel control [Windows Forms], about ToolStripPanel control"
 ms.assetid: ce54a60c-5eba-4b4c-bd77-cf0748a666cc

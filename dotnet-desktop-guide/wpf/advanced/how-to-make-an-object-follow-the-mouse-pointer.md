@@ -2,10 +2,10 @@
 title: "How to: Make an Object Follow the Mouse Pointer"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "following the mouse pointer (cursor)"
   - "mouse pointer (cursor), making objects follow"
   - "cursor (mouse pointer), making objects follow"

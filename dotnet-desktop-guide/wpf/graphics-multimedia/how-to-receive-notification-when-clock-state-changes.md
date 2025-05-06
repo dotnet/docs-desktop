@@ -4,10 +4,10 @@ description: Learn how to receive notification when a Clock's state changes.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
 ms.custom: devdivchpfy22
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "clocks [WPF], notification of state changes"
   - "notifications [WPF], clocks' state changes"
 ms.assetid: ecb10fc9-d0c2-45c3-b0a1-7b11baa733da

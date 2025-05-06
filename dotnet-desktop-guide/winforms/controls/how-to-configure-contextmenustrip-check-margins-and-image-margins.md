@@ -2,10 +2,10 @@
 title: "How to: Configure ContextMenuStrip Check Margins and Image Margins"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "context menus [Windows Forms], configuring check and image margins"
   - "ContextMenuStrips [Windows Forms], configuring check and image margins"
   - "margins [Windows Forms], setting check and image in Windows Forms ContextMenuStrips"

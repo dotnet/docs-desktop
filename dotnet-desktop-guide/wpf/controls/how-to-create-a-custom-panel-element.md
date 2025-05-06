@@ -3,11 +3,11 @@ title: "How to: Create a Custom Panel Element"
 description: Learn how to create a custom panel element, by means of the included code examples in CPP, C#, and Visual Basic.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
   - "cpp"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "Panel control [WPF]"
   - "custom Panel elements [WPF]"
 ms.assetid: e0df4f1e-8c07-4e86-89a3-e22acfffdc2a

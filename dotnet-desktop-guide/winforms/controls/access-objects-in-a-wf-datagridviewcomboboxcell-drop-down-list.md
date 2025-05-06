@@ -3,10 +3,10 @@ title: Access Objects in DataGridViewComboBoxCell Drop-Down List
 description: Learn more about how to access objects in a DataGridViewComboBoxCell drop-down list in Windows Forms.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "DataGridView control [Windows Forms], accessing objects in combo box cells"
   - "combo boxes [Windows Forms], in DataGridView control"
   - "combo boxes [Windows Forms], accessing objects in DataGridViewComboBoxCell drop-down lists"

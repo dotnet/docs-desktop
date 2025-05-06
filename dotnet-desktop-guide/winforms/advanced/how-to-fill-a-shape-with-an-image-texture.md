@@ -2,10 +2,10 @@
 title: "How to: Fill a Shape with an Image Texture"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "images [Windows Forms], using with brushes"
   - "bitmaps [Windows Forms], using texture"
   - "shapes [Windows Forms], filling with images"

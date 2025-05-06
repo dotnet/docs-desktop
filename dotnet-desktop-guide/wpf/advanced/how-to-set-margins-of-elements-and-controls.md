@@ -2,10 +2,10 @@
 title: "How to: Set Margins of Elements and Controls"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "setting [WPF], Margin property"
   - "properties [WPF], Margin property"
   - "Margin property [WPF], setting"

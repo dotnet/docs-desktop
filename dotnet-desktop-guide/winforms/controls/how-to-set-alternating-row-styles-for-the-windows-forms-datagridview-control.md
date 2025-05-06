@@ -3,10 +3,10 @@ title: Set Alternating Row Styles for DataGridView Control
 description: Learn about how to set alternating row styles for the Windows Forms DataGridView control, which can specify complete style information for alternating rows.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "DataGridView control [Windows Forms], row styles"
   - "data grids [Windows Forms], row styles"
   - "rows [Windows Forms], data grids"

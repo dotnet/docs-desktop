@@ -3,11 +3,11 @@ title: "How to: Raise Change Notifications Using the BindingSource ResetItem Met
 description: Learn about how to raise change notifications using the BindingSource ResetItem method in Windows Forms.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
   - "cpp"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "change notifications [Windows Forms], raising"
   - "data binding [Windows Forms], change notifications"
   - "BindingSource component [Windows Forms], raising change notifications with"

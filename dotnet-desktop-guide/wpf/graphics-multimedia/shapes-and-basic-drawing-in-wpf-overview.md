@@ -3,11 +3,11 @@ title: Shapes and basic drawing overview
 description: Enhance your user interface with ready-to-use shapes and several layers of rendering services in Windows Presentation Foundation (WPF).
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
   - "cpp"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "shapes [WPF], about shapes"
   - "basic drawing [WPF]"
   - "vector drawing [WPF], overview"
@@ -136,9 +136,9 @@ Alternatively, you can use property element syntax to explicitly create a <xref:
 
 ```xaml
 <!-- This polygon shape uses pre-defined color values for its Stroke and
-     Fill properties. 
-     The SolidColorBrush's Opacity property affects the fill color in 
-     this case by making it slightly transparent (opacity of 0.4) so 
+     Fill properties.
+     The SolidColorBrush's Opacity property affects the fill color in
+     this case by making it slightly transparent (opacity of 0.4) so
      that it blends with any underlying color. -->
 
 <Polygon

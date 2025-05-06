@@ -3,10 +3,10 @@ title: "Polygons in GDI+"
 description: Learn about how to draw a polygon in GDI+ using a Graphics object, a Pen object, and an array of objects.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "polygons"
   - "drawing [Windows Forms], polygons"
   - "GDI+, polygons"

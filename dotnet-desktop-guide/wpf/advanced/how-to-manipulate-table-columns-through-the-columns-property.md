@@ -4,10 +4,10 @@ ms.date: "03/30/2017"
 ms.service: dotnet-framework
 ms.custom: devdivchpfy22
 description: Learn how to manipulate a Table's Columns through the Columns property.
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "documents [WPF], manipulating table columns"
   - "properties [WPF], Columns [WPF], manipulating table columns"
   - "tables [WPF], manipulating columns"

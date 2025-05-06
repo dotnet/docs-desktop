@@ -2,10 +2,10 @@
 title: "How to: Convert a BMP image to a PNG image"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "BMP images [Windows Forms], converting to PNG"
   - "image formats [Windows Forms], converting between"
 ms.assetid: 9d4a692d-73ac-4ce3-9e05-9ec321e8fbd6

@@ -4,7 +4,7 @@ description: Learn how to play Media using a VideoDrawing.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
 ms.custom: devdivchpfy22
-helpviewer_keywords: 
+helpviewer_keywords:
   - "playback of media [WPF]"
   - "classes [WPF], MediaPlayer"
 ms.assetid: 165d47ed-22ce-4ded-aa6a-aa9b7467de87

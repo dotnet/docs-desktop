@@ -4,7 +4,7 @@ description: Learn about the different settings on a control that affect layout 
 ms.date: 03/31/2025
 ms.service: dotnet-desktop
 ms.topic: overview
-helpviewer_keywords: 
+helpviewer_keywords:
   - "forms [Windows Forms], aligning controls"
   - "Windows Forms, aligning controls"
   - "controls [Windows Forms], positioning"

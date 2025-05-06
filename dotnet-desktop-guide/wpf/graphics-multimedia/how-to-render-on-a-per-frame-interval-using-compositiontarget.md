@@ -3,10 +3,10 @@ title: "How to: Render on a Per Frame Interval Using CompositionTarget"
 description: Learn how to use the CompositionTarget object to create custom animations based on a per-frame callback.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "CompositionTarget objects [WPF], rendering per frame"
   - "rendering per frame using CompositionTarget objects [WPF]"
 ms.assetid: 701246cd-66b7-4d69-ada9-17b3b433d95d

@@ -3,10 +3,10 @@ title: "How to: Apply Stretch Properties to the Contents of a Viewbox"
 description: Learn how to apply stretch properties to the contents of a Viewbox via the included code examples in XAML, C#, and Visual Basic.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "StretchDirection properties [WPF]"
   - "Stretch properties [WPF]"
   - "controls [WPF], Viewbox"

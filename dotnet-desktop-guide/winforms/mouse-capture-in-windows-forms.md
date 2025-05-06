@@ -1,9 +1,9 @@
 ---
 title: "Mouse Capture"
-description: Learn about mouse capture, which allows your application to receive mouse input whether or not the pointer is within its borders. 
+description: Learn about mouse capture, which allows your application to receive mouse input whether or not the pointer is within its borders.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "mouse [Windows Forms], capture"
 ms.assetid: 8911d4b0-a4f8-4f93-8246-371aebd27d0c
 ---

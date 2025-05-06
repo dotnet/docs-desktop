@@ -3,7 +3,7 @@ title: "Constructing and Drawing Curves"
 description: Learn how GDI+ supports constructing and drawing ellipses, arcs, cardinal splines, and Bézier splines.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "drawing [Windows Forms], curves"
   - "examples [Windows Forms], drawing curves"
   - "curves [Windows Forms], drawing"

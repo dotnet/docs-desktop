@@ -1,12 +1,12 @@
 ---
 title: "How to: Implement PriorityBinding"
-description: Learn how to use PriorityBinding to define a list of bindings ordered from highest to lowest priority. 
+description: Learn how to use PriorityBinding to define a list of bindings ordered from highest to lowest priority.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "data binding [WPF], PriorityBinding class"
 ms.assetid: d63b65ab-b3e9-4322-9aa8-1450f8d89532
 ---

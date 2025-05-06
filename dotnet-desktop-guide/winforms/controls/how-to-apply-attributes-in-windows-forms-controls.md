@@ -2,10 +2,10 @@
 title: Apply Attributes in Controls
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "controls [Windows Forms], applying attributes"
   - "attributes [Windows Forms], applying"
   - "Windows Forms controls, applying attributes"

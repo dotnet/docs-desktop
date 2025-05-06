@@ -2,11 +2,11 @@
 title: "x:Code Intrinsic XAML Type"
 description: "Describes how the x:Code XML type allows code to be compiled by the XAML processor."
 ms.date: "03/30/2017"
-f1_keywords: 
+f1_keywords:
   - "Code"
   - "x:Code"
   - "xCode"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "Code directive in XAML [XAML Services]"
   - "x:Code XAML directive element [XAML Services]"
   - "XAML [XAML Services], x:Code directive element"

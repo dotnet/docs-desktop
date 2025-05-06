@@ -4,11 +4,11 @@ description: Learn how use the Windows Form Timer component to run procedures at
 ms.date: "01/12/2022"
 ms.service: dotnet-framework
 ms.custom: devdivchpfy22
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
   - "cpp"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "examples [Windows Forms], timers"
   - "timers [Windows Forms], event intervals"
   - "initialization [Windows Forms], Timer components"

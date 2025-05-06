@@ -2,15 +2,15 @@
 title: Set the Sort Modes for Columns in DataGridView Control
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "sorting [Windows Forms], data grids"
   - "DataGridView control [Windows Forms], sort mode"
   - "data grids [Windows Forms], sorting data"
 ms.assetid: 57dfed60-a608-40d5-86f9-d65686ffb325
-description: Learn how to set the sort modes and sorting behavior for columns in the Windows Forms DataGridView control. 
+description: Learn how to set the sort modes and sorting behavior for columns in the Windows Forms DataGridView control.
 ---
 # How to: Set the Sort Modes for Columns in the Windows Forms DataGridView Control
 

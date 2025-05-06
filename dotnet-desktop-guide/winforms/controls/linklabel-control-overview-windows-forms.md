@@ -3,9 +3,9 @@ title: "LinkLabel Control Overview"
 description: This article provides an overview of the LinkLabel control in Windows Forms, which allows you to add Web-style links to Windows Forms applications.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-f1_keywords: 
+f1_keywords:
   - "LinkLabel"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "links [Windows Forms], LinkLabel control"
   - "Label control [Windows Forms], about Label control"
   - "LinkLabel control [Windows Forms], about LinkLabel control"

@@ -4,7 +4,7 @@ description: Explore the performance considerations for working with Direct3D9 a
 titleSuffix: ""
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "WPF [WPF], Direct3D9 interop performance"
   - "Direct3D9 [WPF interoperability], performance"
 ms.assetid: ea8baf91-12fe-4b44-ac4d-477110ab14dd

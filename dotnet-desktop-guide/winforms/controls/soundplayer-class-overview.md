@@ -2,7 +2,7 @@
 title: "SoundPlayer Class Overview"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "playing sounds [Windows Forms], SoundPlayer class"
   - "SoundPlayer class [Windows Forms], about SoundPlayer class"
   - "sounds [Windows Forms], playing"

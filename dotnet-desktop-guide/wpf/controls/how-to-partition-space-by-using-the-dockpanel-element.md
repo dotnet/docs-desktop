@@ -3,11 +3,11 @@ title: "How to: Partition Space by Using the DockPanel Element"
 description: Learn how to partition space by Using the DockPanel element in a Windows Presentation Foundation (WPF) application.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
   - "cpp"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "controls [WPF], DockPanel"
   - "DockPanel control [WPF], partitioning space"
   - "partitioning space [WPF]"

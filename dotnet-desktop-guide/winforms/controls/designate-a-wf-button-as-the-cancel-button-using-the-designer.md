@@ -1,6 +1,6 @@
 ---
 title: Designate a Button as the Cancel Button Using the Designer
-description: Learn more about how to designate a Windows Forms Button as the cancel button using the designer. 
+description: Learn more about how to designate a Windows Forms Button as the cancel button using the designer.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
 helpviewer_keywords:

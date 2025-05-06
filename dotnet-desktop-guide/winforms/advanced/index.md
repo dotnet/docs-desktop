@@ -3,7 +3,7 @@ title: Enhance apps
 description: Learn more about enhancing Windows Form applications to meet specific user needs with a selection of topics and tutorials.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "Windows Forms, enhancing"
   - "Windows Forms, adding features"
 ms.assetid: 733d1219-d6ad-4256-a55b-9eccf47f5a06

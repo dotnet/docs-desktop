@@ -2,10 +2,10 @@
 title: "How to: Draw Text with GDI"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "GDI [Windows Forms], drawing text [Windows Forms]"
   - "text [Windows Forms], drawing with TextRenderer"
   - "drawing [Windows Forms], text"

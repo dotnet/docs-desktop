@@ -2,10 +2,10 @@
 title: Bind Control to a Type
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "controls [Windows Forms], binding to a type"
   - "BindingSource component [Windows Forms], binding to a type"
   - "types [Windows Forms], binding controls to"

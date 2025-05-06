@@ -2,10 +2,10 @@
 title: "How to: Create an Add-In That Returns a UI"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "creating an add-in that returns a UI [WPF]"
   - "implementing add-in pipeline segments [WPF]"
   - "add-in [WPF], returns a UI"

@@ -3,10 +3,10 @@ title: "How to: Use Antialiasing with Text"
 description: Learn how to use antialiasing with text by using the System.Drawing.Graphics.TextRenderingHint property with an enumeration's element.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "strings [Windows Forms], smoothing drawn"
   - "antialiasing [Windows Forms], using with text"
   - "text [Windows Forms], smoothing"

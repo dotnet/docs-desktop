@@ -2,10 +2,10 @@
 title: "GetRawInputDevices"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "raw input [WPF]"
 ms.assetid: c4d37ecd-065a-4d1c-9e6c-26804ae968ca
-description: Learn how GetRawInputDevices allows PresentationHost.exe to discover the raw input devices that the host application is interested in. 
+description: Learn how GetRawInputDevices allows PresentationHost.exe to discover the raw input devices that the host application is interested in.
 ---
 # GetRawInputDevices
 

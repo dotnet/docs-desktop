@@ -3,10 +3,10 @@ title: "How to: Paint an Area with a Visual"
 description: Learn how to use the VisualBrush class to paint an area with a Visual in Windows Presentation Foundation (WPF).
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "painting [WPF]"
   - "visuals [WPF], painting with"
   - "brushes [WPF], painting with visuals"

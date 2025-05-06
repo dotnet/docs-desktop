@@ -4,7 +4,7 @@ description: Learn about attributes in Windows Forms controls. The .NET Framewor
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
 ms.topic: overview
-helpviewer_keywords: 
+helpviewer_keywords:
   - "attributes [Windows Forms]"
   - "attributes [Windows Forms], data binding properties"
   - "attributes [Windows Forms], control properties"

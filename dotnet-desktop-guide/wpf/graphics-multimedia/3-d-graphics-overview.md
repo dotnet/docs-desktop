@@ -4,10 +4,10 @@ description: Get acquainted with 3D graphics in Windows Presentation Foundation 
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
 ms.topic: overview
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "3D graphics [WPF]"
   - "graphics [WPF], 3D"
 ms.assetid: 67f31ed4-e36b-4b02-9889-dcce245d7afc

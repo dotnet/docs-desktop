@@ -2,7 +2,7 @@
 title: "xml:space Handling in XAML"
 description: "Describes the xml:space attribute and how it affects white-space processing behavior within an object element."
 ms.date: "03/30/2017"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "XAML [XAML Services], xml:space attribute"
   - "XAML [XAML Services], white-space processing"
   - "xml:space attribute [XAML Services]"

@@ -2,10 +2,10 @@
 title: "How to: Extract the Icon Associated with a File"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "displaying a file name and its file type icon in a ListView control [Windows Forms]"
   - "file name extension icons [Windows Forms], displaying in a ListView"
   - "extracting icons associated with a file type [Windows Forms]"

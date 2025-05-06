@@ -4,7 +4,7 @@ ms.date: "03/30/2017"
 ms.service: dotnet-framework
 ms.custom: devdivchpfy22
 description: Learn how to flip a UIElement horizontally or vertically.
-helpviewer_keywords: 
+helpviewer_keywords:
   - "flipping UIElements [WPF]"
   - "UIElements [WPF], flipping"
 ms.assetid: 02c6730f-65c0-40d5-a553-4cb663721882

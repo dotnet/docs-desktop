@@ -3,10 +3,10 @@ title: "How to: Manually Render Buffered Graphics"
 description: Learn how to manually render buffered graphics using instances of the System.Drawing.BufferedGraphics class.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "flicker [Windows Forms], reducing by manually rendering graphics"
   - "graphics [Windows Forms], rendering"
 ms.assetid: 5192295e-bd8e-45f7-8bd6-5c4f6bd21e61

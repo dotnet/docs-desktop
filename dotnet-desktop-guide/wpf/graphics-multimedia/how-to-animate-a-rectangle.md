@@ -3,10 +3,10 @@ title: "How to: Animate a Rectangle"
 description: Learn how to use the RectAnimation class to animate changes to the size and position of a rectangle.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "animation [WPF], rectangles"
   - "rectangles [WPF], animating"
 ms.assetid: 572ffb95-790d-4ace-adbf-b2ea8a90e75b

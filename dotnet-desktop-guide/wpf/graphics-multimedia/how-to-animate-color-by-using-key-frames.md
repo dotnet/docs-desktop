@@ -3,10 +3,10 @@ title: "How to: Animate Color by Using Key Frames"
 description: Learn how to use the ColorAnimationUsingKeyFrames class to animate the Color of a SolidColorBrush by using key frames.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "colors [WPF], animating with key frames"
   - "animation [WPF], colors with key frames"
   - "key frames [WPF], animating colors with"

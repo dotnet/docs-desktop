@@ -2,7 +2,7 @@
 title: "SplitContainer Control"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "splitter windows"
   - "SplitContainer control [Windows Forms]"
 ms.assetid: 2e36f17f-5c39-4fb4-bb09-7ce3ef823402

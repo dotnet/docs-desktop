@@ -3,7 +3,7 @@ title: "ClickOnce Deployment"
 description: Learn more about ClickOnce, a technology used for easily deploying Windows Forms applications to client computers.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "ClickOnce deployment [Windows Forms]"
   - "Windows Forms, ClickOnce deployment"
   - "walkthroughs [Windows Forms], ClickOnce deployment"

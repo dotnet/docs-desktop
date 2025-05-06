@@ -2,10 +2,10 @@
 title: Sort and Filter ADO.NET Data with BindingSource Component
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "sorting data"
   - "data sorting [Windows Forms], ADO.NET"
   - "data [Windows Forms], filtering"

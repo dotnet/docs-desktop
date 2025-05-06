@@ -3,10 +3,10 @@ title: "TileBrush Overview"
 description: Learn how the TileBrush objects provide control over how an area is painted with an image, drawing, or visual.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "TileBrush [WPF]"
   - "brushes [WPF], TileBrush"
 ms.assetid: aa4a7b7e-d09d-44c2-8d61-310c50e08d68

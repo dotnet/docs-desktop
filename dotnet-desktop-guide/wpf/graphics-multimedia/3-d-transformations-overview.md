@@ -4,10 +4,10 @@ description: Learn how to apply transformations to 3D models in the Windows Pres
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
 ms.topic: overview
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "3D transformations"
   - "transformations [WPF], 3D"
 ms.assetid: e45e555d-ac1e-4b36-aced-e433afe7f27f

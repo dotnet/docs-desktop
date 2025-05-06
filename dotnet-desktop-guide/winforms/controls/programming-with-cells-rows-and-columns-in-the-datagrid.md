@@ -2,7 +2,7 @@
 title: Programming with Cells, Rows, and Columns in DataGridView Control
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "data grids [Windows Forms], elements"
   - "columns [Windows Forms], data grids"
   - "cells [Windows Forms], data grids"

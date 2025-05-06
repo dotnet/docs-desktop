@@ -4,10 +4,10 @@ description: Learn how to set the Horizontal and Vertical alignment of a TileBru
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
 ms.custom: devdivchpfy22
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "TileBrush [WPF], alignment of"
   - "vertical alignment of TileBrushes [WPF]"
   - "aligning [WPF], TileBrushes"

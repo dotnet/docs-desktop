@@ -3,10 +3,10 @@ title: "How to: Set JPEG Compression Level"
 description: Learn how to adjust the quality of a JPEG image by modifying its compression level on Windows Forms.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "images [Windows Forms], changing encoder parameters"
   - "JPEG images [Windows Forms], setting quality level"
 ms.assetid: 4b9a74e3-9504-43c1-9f28-ace651d0772e

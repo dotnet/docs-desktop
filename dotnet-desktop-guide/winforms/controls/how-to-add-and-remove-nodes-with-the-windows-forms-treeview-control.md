@@ -3,11 +3,11 @@ title: Add and Remove Nodes with TreeView Control
 description: The Windows Forms TreeView control stores the top-level nodes. Learn how to add and remove nodes with the Windows Forms TreeView control.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
   - "cpp"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "examples [Windows Forms], TreeView control"
   - "TreeView control [Windows Forms], removing nodes"
   - "tree nodes in TreeView control"

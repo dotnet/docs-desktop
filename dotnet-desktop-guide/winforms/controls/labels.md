@@ -4,9 +4,9 @@ description: Learn about the Label control in Windows Forms for .NET. Labels are
 ms.date: 03/31/2025
 ms.service: dotnet-desktop
 ms.topic: overview
-f1_keywords: 
+f1_keywords:
   - "Label"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "images [Windows Forms], displaying in labels"
   - "labels"
   - "Label control [Windows Forms], about Label control"

@@ -3,10 +3,10 @@ title: "How to: Animate a BorderThickness Value"
 description: Learn how to animate a BorderThickness value by using the ThicknessAnimation class via the included code examples in C# and Visual Basic.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "border thickness [WPF], animating changes to"
   - "animation [WPF], changes to border thickness"
 ms.assetid: fd021978-f74b-4e7b-a7f7-3987dcad9e0f

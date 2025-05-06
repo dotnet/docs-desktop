@@ -4,10 +4,10 @@ description: Learn how to use the Image Element.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
 ms.custom: devdivchpfy22
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "controls [WPF], Image"
   - "Image control [WPF]"
   - "rendering images [WPF]"

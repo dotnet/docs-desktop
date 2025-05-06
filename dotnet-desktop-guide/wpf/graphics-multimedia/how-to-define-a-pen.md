@@ -2,10 +2,10 @@
 title: "How to: Define a Pen"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "pens [WPF], defining"
   - "creating [WPF], pens"
 ms.assetid: 7a4f2900-cdf9-49de-84e0-ba5d0ded4d33

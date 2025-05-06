@@ -7,7 +7,7 @@ dev_langs:
   - "csharp"
   - "vb"
   - "cpp"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "WebBrowser control [Windows Forms], adding Web browser capabilities to your application"
   - "WebBrowser control [Windows Forms], examples"
   - "Web browsers [.NET Framework], adding to Windows Forms"

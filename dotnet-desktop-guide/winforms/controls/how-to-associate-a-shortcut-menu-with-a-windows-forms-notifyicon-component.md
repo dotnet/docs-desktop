@@ -2,11 +2,11 @@
 title: Associate a Shortcut Menu with NotifyIcon Component
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
   - "cpp"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "context menus [Windows Forms], for background processes"
   - "NotifyIcon component [Windows Forms], associating shortcut menus"
   - "shortcut menus [Windows Forms], for background processes"

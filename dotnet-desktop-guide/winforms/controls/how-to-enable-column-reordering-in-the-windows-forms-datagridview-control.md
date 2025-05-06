@@ -1,12 +1,12 @@
 ---
 title: Enable Column Reordering in DataGridView Control
-description: Learn how to enable column reordering in DataGridView Control so that users can drag columns to new positions. 
+description: Learn how to enable column reordering in DataGridView Control so that users can drag columns to new positions.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "DataGridView control [Windows Forms], column order"
   - "data grids [Windows Forms], reordering columns"
   - "columns [Windows Forms], reordering"

@@ -3,7 +3,7 @@ title: "How to: Make an Element Spin in Place"
 description: Learn how to make an element spin in place by using the RotateTransform and DoubleAnimation properties of the element.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "graphics [WPF], spinning elements"
   - "spinning elements [WPF]"
 ms.assetid: 1f011976-8b07-4c31-9faf-019e0ddaa24c

@@ -3,7 +3,7 @@ title: "DataGridView Control Scenarios"
 description: Learn about the DataGridView control scenarios in Windows forms, which displays tabular data from a variety of data sources.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "data [Windows Forms], displaying in tabular format"
   - "data grids [Windows Forms], about data grids"
   - "DataGridView control [Windows Forms], scenarios"

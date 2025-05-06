@@ -4,10 +4,10 @@ description: Learn about drag-and-drop support in Windows Presentation Foundatio
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
 ms.topic: overview
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "drag-and-drop [WPF], implementing"
   - "drag sources [WPF], drag-and-drop"
   - "data transfer [WPF], drag-and-drop"

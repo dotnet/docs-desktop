@@ -3,7 +3,7 @@ title: "Considerations When Hosting an ActiveX Control on a Windows Form"
 description: Learn about considerations when hosting an ActiveX Control on a Windows Form, such as security and total cost of ownership.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "Windows Forms controls, ActiveX controls"
   - "ActiveX controls [Windows Forms], hosting"
   - "Windows Forms, ActiveX controls"

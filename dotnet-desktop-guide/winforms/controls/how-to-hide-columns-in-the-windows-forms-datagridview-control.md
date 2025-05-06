@@ -3,10 +3,10 @@ title: Hide Columns in DataGridView Control
 description: Learn how to hide columns programmatically in the Windows Forms DataGridView control by setting the DataGridViewColumn.Visible property to false.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "DataGridView control [Windows Forms], hiding columns"
   - "data grids [Windows Forms], hiding columns"
   - "columns [Windows Forms], hiding"

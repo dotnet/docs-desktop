@@ -4,10 +4,10 @@ description: Learn how to use a Custom Context Menu with a TextBox.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
 ms.custom: devdivchpfy22
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "context menus [WPF], custom"
   - "menus [WPF], custom"
   - "custom context menus [WPF]"

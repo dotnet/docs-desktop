@@ -3,11 +3,11 @@ title: "Imaging Overview"
 description: Learn how the Microsoft Windows Presentation Foundation Imaging Component enables developers to display, transform, and format images.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
   - "cpp"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "metadata [WPF], images"
   - "displaying images [WPF]"
   - "Imaging API [WPF]"

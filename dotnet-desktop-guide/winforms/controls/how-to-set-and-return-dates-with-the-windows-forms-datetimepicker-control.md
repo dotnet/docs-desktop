@@ -3,11 +3,11 @@ title: Set and Return Dates with DateTimePicker Control
 description: Learn about how to set and return dates with the Windows Forms DateTimePicker control by means of Visual Basic, C#, and CPP code examples.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
   - "cpp"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "dates [Windows Forms], setting in DateTimePicker"
   - "DateTimePicker control [Windows Forms], setting and returning dates"
   - "examples [Windows Forms], DateTimePicker control"

@@ -2,10 +2,10 @@
 title: "How to: Determine Whether a Freezable Is Frozen"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "Freezable objects [WPF], determining if frozen"
 ms.assetid: 92e58baa-ee12-4a9e-ac3a-ca458807a8b2
 description: Learn how to use the IsFrozen property of the Freezable object to determine whether it is frozen and avoid InvalidOperationException.

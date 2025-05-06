@@ -4,7 +4,7 @@ description: Learn about controls with built-in owner-drawing, also known as cus
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
 ms.topic: overview
-helpviewer_keywords: 
+helpviewer_keywords:
   - "drawing [Windows Forms], owner"
   - "drawing [Windows Forms], custom"
   - "controls [Windows Forms], changing appearance"

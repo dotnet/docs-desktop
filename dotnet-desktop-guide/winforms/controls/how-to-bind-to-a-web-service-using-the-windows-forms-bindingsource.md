@@ -2,11 +2,11 @@
 title: Bind to a Web Service Using BindingSource
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
   - "cpp"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "Web services [Windows Forms], binding controls"
   - "BindingSource component [Windows Forms], binding to a Web service"
   - "examples [Windows Forms], BindingSource component"

@@ -2,11 +2,11 @@
 title: Reflect Data Source Updates in Control with BindingSource
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
   - "cpp"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "data binding [Windows Forms], updating"
   - "BindingSource component [Windows Forms], updating data binding"
   - "examples [Windows Forms], BindingSource component"

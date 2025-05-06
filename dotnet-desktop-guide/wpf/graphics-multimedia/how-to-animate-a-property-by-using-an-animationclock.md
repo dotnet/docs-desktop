@@ -3,10 +3,10 @@ title: "How to: Animate a Property by Using an AnimationClock"
 description: Learn about how to animate a property by using an AnimationClock with several provided code examples.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "animation [WPF], properties [WPF], with AnimationClocks"
   - "AnimationClocks [WPF]"
 ms.assetid: e6542021-714c-4675-9567-04f1c7380834

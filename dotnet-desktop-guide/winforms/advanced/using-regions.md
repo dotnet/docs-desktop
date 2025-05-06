@@ -3,7 +3,7 @@ title: "Using Regions"
 description: Learn how to use the GDI+ Region class to define a custom shape for Windows Forms using a selection of topics and tutorials.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "examples [Windows Forms], regions"
   - "regions [Windows Forms], using"
 ms.assetid: 7809295b-870f-4107-a8b5-8386c298acd5

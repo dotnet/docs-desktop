@@ -3,9 +3,9 @@ title: "MonthCalendar Control Overview"
 description: This article provides an overview of the MonthCalendar control in Windows Forms, which presents an intuitive GUI for users to view and set date information.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-f1_keywords: 
+f1_keywords:
   - "MonthCalendar"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "calendars [Windows Forms], Windows Forms controls"
   - "calendar controls [Windows Forms], Windows Forms"
   - "MonthCalendar control [Windows Forms], setting the first day of the week"

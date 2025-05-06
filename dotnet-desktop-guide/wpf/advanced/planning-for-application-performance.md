@@ -3,7 +3,7 @@ title: "Planning for Application Performance"
 description: Learn how to plan for application performance optimization and understand how to develop performance strategies for your applications.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "applications [WPF], optimizing"
   - "WPF application [WPF], optimizing"
 ms.assetid: c91bd0c5-a193-46ff-9da1-eb7a3a76a3b3

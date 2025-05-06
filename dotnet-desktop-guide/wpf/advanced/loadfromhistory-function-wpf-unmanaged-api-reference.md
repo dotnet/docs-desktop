@@ -4,11 +4,11 @@ description: Learn about the LoadFromHistory function and how it works with unma
 titleSuffix: ""
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "cpp"
-api_name: 
+api_name:
   - "LoadFromHistory"
-api_location: 
+api_location:
   - "PresentationHost_v0400.dll"
 ms.assetid: d037c062-a911-4949-b251-ccd3e48b1d17
 ---

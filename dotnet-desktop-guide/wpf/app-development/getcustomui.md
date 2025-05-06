@@ -2,7 +2,7 @@
 title: "GetCustomUI"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "custom error messages [WPF]"
 ms.assetid: e55180fc-35bb-4f80-a136-772b5eb3e4e5
 description: Learn how GetCustomUI is called by PresentationHost.exe to get custom progress and error messages from the host.

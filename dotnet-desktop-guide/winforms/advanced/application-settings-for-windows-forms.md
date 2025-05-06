@@ -3,9 +3,9 @@ title: "Application Settings"
 description: Learn about the Applications Settings feature of Windows Forms, which makes it easy to create, store, and maintain custom application and user preferences.
 ms.date: "04/07/2017"
 ms.service: dotnet-framework
-f1_keywords: 
+f1_keywords:
   - "ClientApplicationSettings"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "application settings [Windows Forms]"
   - "Windows Forms, application settings"
 ms.assetid: 64090a34-8556-4904-8ea0-20efe9f8c886

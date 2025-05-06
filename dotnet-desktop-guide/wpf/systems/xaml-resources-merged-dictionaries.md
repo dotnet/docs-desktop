@@ -7,7 +7,7 @@ ms.date: 10/24/2024
 ms.service: dotnet-desktop
 ms.topic: conceptual
 ms.custom: update-template
-helpviewer_keywords: 
+helpviewer_keywords:
   - "merged resource dictionaries [WPF]"
   - "dictionaries [WPF], merged resources"
 ---

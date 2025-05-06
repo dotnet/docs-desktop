@@ -3,10 +3,10 @@ title: "How to: Hit Test Using a Win32 Host Container"
 description: Learn how to set up mouse event handlers for a Win32 window that is used as a host container for visual objects to execute a hit test.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "hit tests [WPF], using Win32 host containers"
   - "visual objects [WPF], hit tests on"
   - "Win32 host containers [WPF], hit tests using"

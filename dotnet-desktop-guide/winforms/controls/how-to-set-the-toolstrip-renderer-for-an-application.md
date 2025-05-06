@@ -3,10 +3,10 @@ title: "How to: Set the ToolStrip Renderer for an Application"
 description: Learn how to set the ToolStrip renderer for an application in Windows Forms, by means of code samples in C# and Visual Basic.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "Renderer property [Windows Forms]"
   - "ToolStripProfessionalRenderer class [Windows Forms]"
   - "ToolStrip control [Windows Forms]"

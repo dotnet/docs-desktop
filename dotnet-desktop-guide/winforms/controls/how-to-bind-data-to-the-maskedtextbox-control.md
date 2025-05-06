@@ -2,11 +2,11 @@
 title: "How to: Bind Data to the MaskedTextBox Control"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
   - "cpp"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "MaskedTextBox control [Windows Forms]"
   - "data binding [Windows Forms], MaskedTextBox control [Windows Forms]"
   - "MaskedTextBox control [Windows Forms], binding data"

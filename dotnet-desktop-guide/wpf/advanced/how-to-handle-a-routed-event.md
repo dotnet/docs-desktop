@@ -2,14 +2,14 @@
 title: "How to: Handle a Routed Event"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "routed events [WPF], handling"
   - "bubbling events [WPF]"
 ms.assetid: 157787b4-f469-4047-8777-5b034145f32e
-description: Learn how bubbling events work and how to write a handler that can process the routed event data, with supporting information and examples. 
+description: Learn how bubbling events work and how to write a handler that can process the routed event data, with supporting information and examples.
 ---
 # How to: Handle a Routed Event
 

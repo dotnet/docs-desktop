@@ -6,7 +6,7 @@ ms.service: dotnet-desktop
 dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "simple binding [WPF], creating"
   - "data binding [WPF], creating simple bindings"
   - "binding data [WPF], creating"

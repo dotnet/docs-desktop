@@ -3,10 +3,10 @@ title: "How to: Determine If a Page is Browser Hosted"
 description: Learn how to determine if a page is browser hosted, by means of the included code samples in C# and Visual Basic.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "hosted pages in browser [WPF]"
   - "pages [WPF], hosted in browser"
 ms.assetid: 737e0f26-8371-49b4-9579-70879e51e1aa

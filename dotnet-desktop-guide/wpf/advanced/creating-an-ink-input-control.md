@@ -3,7 +3,7 @@ title: "Creating an Ink Input Control"
 description: Learn how to create a digital ink input control in a Windows Presentation Foundation (WPF) application.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "ink strokes [WPF], managing"
   - "managing ink strokes [WPF]"
   - "ink input control [WPF]"

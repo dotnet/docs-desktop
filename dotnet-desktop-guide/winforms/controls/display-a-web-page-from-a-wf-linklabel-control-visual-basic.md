@@ -3,11 +3,11 @@ title: Display Web Page from LinkLabel Control (Visual Basic)
 description: Learn more about how to display a web page from a Windows Forms LinkLabel control in Visual Basic.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "vb"
-f1_keywords: 
+f1_keywords:
   - "LinkLabel1_LinkClicked"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "examples [Windows Forms], LinkLabel control"
   - "Web pages [Windows Forms], displaying"
   - "linking [Windows Forms], to Web pages from forms"

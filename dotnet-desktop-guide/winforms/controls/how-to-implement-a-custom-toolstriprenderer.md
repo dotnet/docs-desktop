@@ -3,10 +3,10 @@ title: "How to: Implement a Custom ToolStripRenderer"
 description: Learn how to implement a custom ToolStripRenderer, which gives you the flexibility to create an appearance that differs from the default appearance.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "toolbars [Windows Forms]"
   - "ToolStrip control [Windows Forms]"
 ms.assetid: c66fd3f7-2377-4553-8f1b-006527f08f32

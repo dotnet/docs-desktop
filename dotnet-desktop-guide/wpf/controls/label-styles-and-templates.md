@@ -3,7 +3,7 @@ title: "Label Styles and Templates"
 description: Learn how to us the Image element to manipulate bitmap images in a Windows Presentation Foundation (WPF) application.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "templates [WPF], Label"
   - "parts [WPF], Label"
   - "ControlTemplate [WPF], Label"

@@ -2,11 +2,11 @@
 title: "How to: Create a Solid Brush"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
   - "cpp"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "solid color brushes"
   - "brushes [Windows Forms], examples"
   - "brushes [Windows Forms], creating solid"

@@ -4,10 +4,10 @@ ms.date: "03/30/2017"
 ms.service: dotnet-framework
 ms.custom: devdivchpfy22
 description: Learn how to determine if a Data Format is present in a Data Object.
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "DataFormats class [WPF]"
   - "drag-and-drop [WPF], data formats present"
   - "data formats [WPF], determining if present"

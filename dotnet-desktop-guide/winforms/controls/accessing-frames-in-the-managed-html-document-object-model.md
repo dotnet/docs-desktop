@@ -3,7 +3,7 @@ title: "Accessing Frames in the Managed HTML Document Object Model"
 description: Learn more about accessing frames in the managed HTML Document Object Model (DOM). HTML authors can create frames in one of two ways.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "HTML [Windows Forms], dOM"
   - "managed HTML DOM"
   - "HTML [Windows Forms], managed"

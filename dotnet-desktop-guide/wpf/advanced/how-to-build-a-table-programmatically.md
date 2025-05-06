@@ -4,10 +4,10 @@ ms.date: "03/30/2017"
 ms.service: dotnet-framework
 ms.custom: devdivchpfy22
 description: Learn how to build a table programmatically.
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "tables [WPF], creating programmatically"
 ms.assetid: e3ca88f3-6e94-4b61-82fc-42104c10b761
 ---

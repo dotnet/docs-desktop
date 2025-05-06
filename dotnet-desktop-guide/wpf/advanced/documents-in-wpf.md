@@ -5,7 +5,7 @@ ms.date: "03/30/2017"
 ms.service: dotnet-framework
 ms.custom: devdivchpfy22
 ms.topic: overview
-helpviewer_keywords: 
+helpviewer_keywords:
   - "documents [WPF], packaging"
   - "documents [WPF], text layout"
   - "documents [WPF], XPS"

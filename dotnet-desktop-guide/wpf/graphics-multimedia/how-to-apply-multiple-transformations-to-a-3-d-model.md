@@ -4,10 +4,10 @@ description: Learn how to apply Multiple Transformations to a 3D Model.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
 ms.custom: devdivchpfy22
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "3D models [WPF], applying multiple transformations to"
 ms.assetid: cb72245a-5560-4c96-9f58-593c66296992
 ---

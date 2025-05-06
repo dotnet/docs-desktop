@@ -2,10 +2,10 @@
 title: "How to: List Installed Encoders"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "image codecs [Windows Forms], listing"
   - "image encoders [Windows Forms], listing"
 ms.assetid: 49e8e4e9-7a67-42d9-86bf-08821cdc282e

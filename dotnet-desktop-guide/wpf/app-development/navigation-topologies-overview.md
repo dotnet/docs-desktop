@@ -3,7 +3,7 @@ title: "Navigation Topologies Overview"
 description: This article provides an overview of navigation topologies. Three common navigation topologies, with samples, are subsequently discussed.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "linear topology [WPF]"
   - "fixed hierarchical topology [WPF]"
   - "fixed linear topology [WPF]"

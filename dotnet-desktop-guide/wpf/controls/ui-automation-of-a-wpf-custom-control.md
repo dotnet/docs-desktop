@@ -4,10 +4,10 @@ description: Learn how to implement a server-side UI Automation provider for a c
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
 ms.topic: overview
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "custom controls [WPF], applying UI automation"
   - "accessibility [WPF], applying to custom controls"
   - "custom controls [WPF], improving accessibility"

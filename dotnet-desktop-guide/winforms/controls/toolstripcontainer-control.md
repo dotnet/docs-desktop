@@ -2,7 +2,7 @@
 title: "ToolStripContainer Control"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "toolbars [Windows Forms], built-in rafting"
   - "ToolStripContainer control [Windows Forms]"
   - "ToolStrip control [Windows Forms], ToolStripContainer"

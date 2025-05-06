@@ -2,10 +2,10 @@
 title: "How to: Enable Visual Styles in a Hybrid Application"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "hybrid applications [WPF interoperability]"
   - "visual styles [Windows Forms]"
 ms.assetid: 95de9b9c-d804-405c-b2d1-49a88c1e0fe1

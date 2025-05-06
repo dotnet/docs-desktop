@@ -4,10 +4,10 @@ description: Learn about how keyboard input works in Windows Forms for .NET. Key
 ms.date: 04/02/2025
 ms.service: dotnet-desktop
 ms.topic: overview
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "Windows Forms, keyboard input"
   - "keyboard [Windows Forms], input"
 ---

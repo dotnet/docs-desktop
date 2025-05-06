@@ -3,10 +3,10 @@ title: "Packaging Fonts with Applications"
 description: Learn how to package fonts with a Windows Presentation Foundation application, including adding fonts as content and resource items, and limits on font usage.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "applications [WPF], packaging fonts with"
   - "fonts [WPF], packaging with applications"
   - "typography [WPF], packaging fonts with applications"

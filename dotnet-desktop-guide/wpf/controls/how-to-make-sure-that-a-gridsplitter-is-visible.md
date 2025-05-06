@@ -3,7 +3,7 @@ title: "How to: Make Sure That a GridSplitter Is Visible"
 description: Learn how to prevent a GridSplitter control from being hidden by other controls in a Windows Presentation Foundation (WPF) application.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "GridSplitter control [WPF], ensuring visibility of"
 ms.assetid: 0a62a964-89c8-48f0-9023-5df721a8cf47
 ---

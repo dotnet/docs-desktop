@@ -3,10 +3,10 @@ title: "How to: Encode a Visual to an Image File"
 description: Learn how to encode a Visual object into an image file using a RenderTargetBitmap and a PngBitmapEncoder.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "image files [WPF], encoding from visuals"
   - "encoding image formats [WPF]"
   - "visuals [WPF], encoding to an image file"

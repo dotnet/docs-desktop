@@ -3,10 +3,10 @@ title: "How to: Resize a Canvas by Using a Thumb"
 description: Learn how to resize a Canvas control by using a Thumb control in a Windows Presentation Foundation (WPF) application.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "resizing Canvas control [WPF]"
   - "controls [WPF], Thumb"
   - "controls [WPF], Canvas"

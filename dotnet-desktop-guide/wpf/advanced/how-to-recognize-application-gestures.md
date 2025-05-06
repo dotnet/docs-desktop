@@ -2,10 +2,10 @@
 title: "How To: Recognize Application Gestures"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "application gestures [WPF], recognizing"
   - "gestures [WPF], recognizing"
 ms.assetid: d58b740f-5192-4a3e-af59-7aa162e6ca15

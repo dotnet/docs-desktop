@@ -3,11 +3,11 @@ title: "How to: Show a Color Palette with the ColorDialog Component"
 description: Learn how to show a color palette with the ColorDialog component, which displays a palette of colors and returns a property containing the user-selected color.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
   - "cpp"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "palettes [Windows Forms], showing color"
   - "color dialog box [Windows Forms], showing color palettes"
   - "colors [Windows Forms], allowing users to select"

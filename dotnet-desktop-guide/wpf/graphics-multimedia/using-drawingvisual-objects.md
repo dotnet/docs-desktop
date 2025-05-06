@@ -3,10 +3,10 @@ title: "Using DrawingVisual Objects"
 description: Learn how to how to use DrawingVisual objects in the Windows Presentation Foundation (WPF) visual layer.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "visual layer [WPF], DrawingVisual objects"
   - "DrawingVisual objects in visual layer [WPF]"
 ms.assetid: 0b4e711d-e640-40cb-81c3-8f5c59909b7d

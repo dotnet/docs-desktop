@@ -3,10 +3,10 @@ title: "How to: Refresh a Page"
 description: Learn how to refresh a page in this article, using the Refresh method, by means of code examples in C# and Visual Basic.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "pages [WPF], refreshing"
   - "refreshing pages [WPF]"
 ms.assetid: 06dd1bbd-81c4-40ad-ac0d-7a5b326b1465

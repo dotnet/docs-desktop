@@ -3,7 +3,7 @@ title: "CheckedListBox Control"
 description: Learn about which articles will help you understand more about the CheckedListBox control in Windows Forms.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "CheckedListBox control [Windows Forms], reference"
   - "checked list items [Windows Forms], Windows Forms controls"
   - "list controls [Windows Forms], Windows Forms"

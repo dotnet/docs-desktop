@@ -2,10 +2,10 @@
 title: Add an Unbound Column to a Data-Bound DataGridView Control
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "columns [Windows Forms], unbound data"
   - "data grids [Windows Forms], adding unbound columns"
   - "DataGridView control [Windows Forms], unbound data"

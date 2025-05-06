@@ -229,15 +229,15 @@ In this case, <xref:System.Windows.Threading.Dispatcher.PushFrame%2A> maintains 
 The routed event system in WPF notifies entire trees when events are raised.
 
 ```xaml
-<Canvas MouseLeftButtonDown="handler1" 
+<Canvas MouseLeftButtonDown="handler1"
         Width="100"
         Height="100"
         >
   <Ellipse Width="50"
             Height="50"
-            Fill="Blue" 
+            Fill="Blue"
             Canvas.Left="30"
-            Canvas.Top="50" 
+            Canvas.Top="50"
             MouseLeftButtonDown="handler2"
             />
 </Canvas>

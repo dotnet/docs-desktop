@@ -3,7 +3,7 @@ title: "How to: Display ListView Contents by Using a GridView"
 description: Learn how to display ListView contents by using a GridView, by means of the included code example in XAML.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "ListView controls [WPF], displaying contents with GridView"
   - "GridView [WPF], displaying ListView contents"
 ms.assetid: 5bc1e767-ab46-4f14-bd41-3d5d39e1d000

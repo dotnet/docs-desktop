@@ -3,10 +3,10 @@ title: "How to: Convert Bound Data"
 description: Learn how to use the IValueConverter interface and the Convert and ConvertBack methods to convert bound data.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "converting [WPF], bound data"
   - "data binding [WPF], converting bound data"
   - "binding data [WPF], converting bound data"

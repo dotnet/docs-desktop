@@ -2,7 +2,7 @@
 title: "Markup Extensions for XAML Overview"
 description: Overview of how to use Markup extensions as a technique for obtaining a value that is not a primitive or a specific XAML type.
 ms.date: "03/30/2017"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "markup extensions [XAML Services], custom"
   - "XAML [XAML Services], markup extensions"
 ms.assetid: 261b2b11-2dc0-462f-8c66-55b8c9c6e436

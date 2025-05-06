@@ -2,10 +2,10 @@
 title: "How to: Erase Ink on a Custom Control"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "custom controls [WPF], erasing ink on"
   - "ink [WPF], erasing on custom control"
 ms.assetid: d88c50f9-b4d8-4962-a28b-67d6a15a5fe0

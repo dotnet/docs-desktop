@@ -3,7 +3,7 @@ title: "x:Uid Directive"
 description: Learn about the x:Uid Directive.
 ms.date: "03/30/2017"
 ms.custom: devdivchpfy22
-helpviewer_keywords: 
+helpviewer_keywords:
   - "XAML [XAML Services], localizable content attribute"
   - "XAML [XAML Services], x:Uid attribute"
   - "x:Uid attribute [XAML Services]"

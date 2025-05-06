@@ -3,13 +3,13 @@ title: "How to: Determine Which TreeView Node Was Clicked"
 description: Learn how to determine which TreeView Node has been clicked so that you can respond appropriately.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
   - "cpp"
-f1_keywords: 
+f1_keywords:
   - "TreeNode"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "examples [Windows Forms], TreeView control"
   - "tree nodes in TreeView control [Windows Forms], determining node clicked"
   - "TreeView control [Windows Forms], determining node clicked"

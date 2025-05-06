@@ -3,10 +3,10 @@ title: "How to: Sort Data in a View"
 description: Learn about various techniques to sort data in a view including related tutorials and several provided code examples.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "data binding [WPF], sorting data in views"
   - "data binding [WPF], grouping data in views"
   - "grouping data in views [WPF]"

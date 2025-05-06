@@ -3,10 +3,10 @@ title: "How to: Improve the Performance of a TreeView"
 description: Learn how to improve the performance of a TreeView, by means of the included code examples in XAML, C#, and Visual Basic.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "TreeView control [WPF], improving the performance"
 ms.assetid: b792c740-cf2b-4da8-8ba8-3d2e5a821874
 ---

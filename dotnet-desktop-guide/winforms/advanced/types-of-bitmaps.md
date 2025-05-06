@@ -4,7 +4,7 @@ description: Learn about bitmap types and the supported GDI+ graphics file forma
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
 ms.topic: overview
-helpviewer_keywords: 
+helpviewer_keywords:
   - "jpeg files"
   - "TIFF files"
   - "gif files"

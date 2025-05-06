@@ -2,10 +2,10 @@
 title: Customize Data Formatting in DataGridView Control
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "DataGridView control [Windows Forms], formatting data"
   - "DataGridView control [Windows Forms], cell styles"
   - "cells [Windows Forms], changing colors in DataGridView control [Windows Forms]"

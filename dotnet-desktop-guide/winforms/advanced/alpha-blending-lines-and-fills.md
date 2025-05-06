@@ -3,7 +3,7 @@ title: "Alpha Blending Lines and Fills"
 description: Learn about how to use alpha blending to blend source and background color data associated with lines and fills in GDI+.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "lines [Windows Forms], adding transparency"
   - "examples [Windows Forms], alpha blending"
   - "alpha blending [Windows Forms], using with lines"

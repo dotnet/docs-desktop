@@ -3,7 +3,7 @@ title: "x:FieldModifier Directive"
 description: Learn about the x:FieldModifier Directive.
 ms.date: "03/30/2017"
 ms.custom: devdivchpfy22
-helpviewer_keywords: 
+helpviewer_keywords:
   - "FieldModifier attribute in XAML [XAML Services]"
   - "x:FieldModifier attribute [XAML Services]"
   - "XAML [XAML Services], x:FieldModifier attribute"

@@ -3,10 +3,10 @@ title: "How to: Horizontally or Vertically Align Content in a StackPanel"
 description: Learn how to adjust content orientation in a Windows Presentation Foundation StackPanel and the HorizontalAlignment and VerticalAlignment of child content.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "StackPanel control [WPF], content alignment [WPF]"
   - "content alignment [WPF]"
   - "aligning [WPF], content"

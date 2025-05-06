@@ -2,9 +2,9 @@
 title: "ToolStripStatusLabel Control Overview"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-f1_keywords: 
+f1_keywords:
   - "ToolStripStatusLabel"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "ToolStripStatusLabel control [Windows Forms], aboutToolStripStatusLabel control"
   - "status bars"
 ms.assetid: 0b9c991e-a9fa-4609-9e1b-caadaef93821

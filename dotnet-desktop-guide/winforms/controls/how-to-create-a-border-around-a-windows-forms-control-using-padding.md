@@ -2,10 +2,10 @@
 title: Create Border Around a Control Using Padding
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "margins"
   - "controls [Windows Forms], Margin property"
   - "padding [Windows Forms], Windows Forms"
@@ -15,7 +15,7 @@ helpviewer_keywords:
   - "margins [Windows Forms], Windows Forms"
   - "Margin property [Windows Forms]"
 ms.assetid: bac7ed4d-a163-4259-98bd-155a36345890
-description: Learn how to create a border or outline around a Windows Forms RichTextBox control using a Panel control's Padding property. 
+description: Learn how to create a border or outline around a Windows Forms RichTextBox control using a Panel control's Padding property.
 ---
 # How to: Create a Border Around a Windows Forms Control Using Padding
 

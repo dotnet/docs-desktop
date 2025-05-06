@@ -3,7 +3,7 @@ title: "BindingSource Component Architecture"
 description: Learn more about the BindingSource component architecture and universally binding all Windows Forms controls to data sources.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "BindingSource component [Windows Forms], architecture"
   - "Windows Forms, data binding"
   - "BindingSource component [Windows Forms], about BindingSource component"

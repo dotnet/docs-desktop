@@ -2,10 +2,10 @@
 title: "How to: Draw an Existing Bitmap to the Screen"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "bitmaps [Windows Forms], displaying in Windows Forms"
   - "bitmaps [Windows Forms], loading in Windows Forms applications"
   - "images [Windows Forms], displaying on Windows Forms"

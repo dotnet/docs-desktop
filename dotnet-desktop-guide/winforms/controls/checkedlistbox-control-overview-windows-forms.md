@@ -3,9 +3,9 @@ title: "CheckedListBox Control Overview"
 description: Learn about the overview of the CheckedListBox control in Windows Forms, which extends the ListBox control.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-f1_keywords: 
+f1_keywords:
   - "CheckedListBox"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "CheckedListBox control [Windows Forms], about CheckedListBox control"
   - "check marks"
   - "list boxes [Windows Forms], about list boxes"

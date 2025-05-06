@@ -3,10 +3,10 @@ title: "How to: Store Multiple Data Formats in a Data Object"
 description: Learn how to store multiple data formats in a data object in Windows by passing a string and an object to the SetData method.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "DataObject class [WPF], storing multiple formats"
   - "DataFormats class [WPF], storing multiple formats"
   - "drag-and-drop [WPF], storing multiple formats"

@@ -3,10 +3,10 @@ title: "ContextMenu Overview"
 description: This article provides an overview of the ContextMenu class, which represents the element that exposes functionality by using a context-specific Menu.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "controls [WPF], ContextMenu"
   - "ContextMenu controls [WPF], about ContextMenu controls"
 ms.assetid: 16909c42-799a-4561-91e0-7d69dcfeea91

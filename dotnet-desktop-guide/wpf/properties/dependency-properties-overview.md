@@ -5,10 +5,10 @@ ms.date: 10/24/2024
 ms.service: dotnet-desktop
 ms.topic: overview
 ms.custom: update-template
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "properties [WPF], attached"
   - "properties [WPF], overview"
   - "styles [WPF]"

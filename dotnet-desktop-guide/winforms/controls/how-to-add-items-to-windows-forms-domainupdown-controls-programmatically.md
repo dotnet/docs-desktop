@@ -3,11 +3,11 @@ title: Add Items to DomainUpDown Controls Programmatically
 description: Learn how to add items to Windows Forms DomainUpDown controls programmatically by using the DomainUpDownItemCollection.Add method.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
   - "cpp"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "spin button control [Windows Forms], adding items"
   - "DomainUpDown control [Windows Forms], adding items to"
 ms.assetid: fd31d314-33eb-4181-90f8-d32ed0c4e072

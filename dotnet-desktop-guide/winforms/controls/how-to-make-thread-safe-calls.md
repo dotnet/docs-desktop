@@ -6,9 +6,9 @@ ms.service: dotnet-desktop
 dev_langs:
   - "csharp"
   - "vb"
-f1_keywords: 
+f1_keywords:
   - "EHInvalidOperation.WinForms.IllegalCrossThreadCall"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "thread safety [Windows Forms], calling controls [Windows Forms]"
   - "calling controls [Windows Forms], thread safety [Windows Forms]"
   - "CheckForIllegalCrossThreadCalls property [Windows Forms]"

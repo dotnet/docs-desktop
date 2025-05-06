@@ -3,7 +3,7 @@ title: "Sizing Options in the DataGrid Control"
 description: Learn how to set individual rows and columns in the Windows Presentation Foundation DataGrid control to size to their contents or to specific values.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
-helpviewer_keywords: 
+helpviewer_keywords:
   - "DataGrid control [WPF], sizing"
   - "size [WPF], DataGrid"
   - "automatically size DataGrid [WPF]"
