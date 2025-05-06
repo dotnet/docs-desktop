@@ -1,19 +1,19 @@
 {
     "redirections": [
         {
-            "source_path": "dotnet-desktop-guide/net/winforms/controls/custom.md",
+            "source_path": "dotnet-desktop-guide/winforms/controls/custom.md",
             "redirect_url": "/dotnet/desktop/winforms/controls-design/overview"
         },
         {
-            "source_path": "dotnet-desktop-guide/net/winforms/wfdev-diagnostics/obsoletions-overview.md",
+            "source_path": "dotnet-desktop-guide/winforms/wfdev-diagnostics/obsoletions-overview.md",
             "redirect_url": "/dotnet/desktop/winforms/"
         },
         {
-            "source_path": "dotnet-desktop-guide/net/winforms/controls-design/extend-existing.md",
+            "source_path": "dotnet-desktop-guide/winforms/controls-design/extend-existing.md",
             "redirect_url": "/dotnet/desktop/winforms/controls-design/how-to-extend-existing"
         },
         {
-            "source_path": "dotnet-desktop-guide/net/winforms/controls-design/index.md",
+            "source_path": "dotnet-desktop-guide/winforms/controls-design/index.md",
             "redirect_url": "/dotnet/desktop/winforms/controls-design/overview"
         },
         {
