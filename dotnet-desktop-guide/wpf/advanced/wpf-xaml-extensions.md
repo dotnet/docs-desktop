@@ -13,15 +13,15 @@ description: See the provided list of Windows Presentation Foundation XAML exten
 ---
 # WPF XAML Extensions
 
-## In This Section  
+## In This Section
 
-[Binding Markup Extension](binding-markup-extension.md)  
-  [ColorConvertedBitmap Markup Extension](colorconvertedbitmap-markup-extension.md)  
-  [ComponentResourceKey Markup Extension](componentresourcekey-markup-extension.md)  
-  [DynamicResource Markup Extension](dynamicresource-markup-extension.md)  
-  [RelativeSource MarkupExtension](relativesource-markupextension.md)  
-  [StaticResource Markup Extension](staticresource-markup-extension.md)  
-  [TemplateBinding Markup Extension](templatebinding-markup-extension.md)  
-  [ThemeDictionary Markup Extension](themedictionary-markup-extension.md)  
-  [PropertyPath XAML Syntax](propertypath-xaml-syntax.md)  
+[Binding Markup Extension](binding-markup-extension.md)
+  [ColorConvertedBitmap Markup Extension](colorconvertedbitmap-markup-extension.md)
+  [ComponentResourceKey Markup Extension](componentresourcekey-markup-extension.md)
+  [DynamicResource Markup Extension](dynamicresource-markup-extension.md)
+  [RelativeSource MarkupExtension](relativesource-markupextension.md)
+  [StaticResource Markup Extension](staticresource-markup-extension.md)
+  [TemplateBinding Markup Extension](templatebinding-markup-extension.md)
+  [ThemeDictionary Markup Extension](themedictionary-markup-extension.md)
+  [PropertyPath XAML Syntax](propertypath-xaml-syntax.md)
   [PresentationOptions:Freeze Attribute](presentationoptions-freeze-attribute.md)

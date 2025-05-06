@@ -12,16 +12,16 @@ ms.assetid: a3d9930e-5597-470e-a636-dcf65eac500b
 ---
 # Control Customization
 
-This category covers the various base classes, interfaces and other elements and concepts used in creating a fully functional Windows Presentation Foundation (WPF) control.  
-  
-## In This Section  
+This category covers the various base classes, interfaces and other elements and concepts used in creating a fully functional Windows Presentation Foundation (WPF) control.
 
-[Control Authoring Overview](control-authoring-overview.md)  
-[Guidelines for Designing Stylable Controls](guidelines-for-designing-stylable-controls.md)  
-[Adorners](adorners.md)  
-[Control Styles and Templates](control-styles-and-templates.md)  
-[UI Automation of a WPF Custom Control](ui-automation-of-a-wpf-custom-control.md)  
-  
+## In This Section
+
+[Control Authoring Overview](control-authoring-overview.md)
+[Guidelines for Designing Stylable Controls](guidelines-for-designing-stylable-controls.md)
+[Adorners](adorners.md)
+[Control Styles and Templates](control-styles-and-templates.md)
+[UI Automation of a WPF Custom Control](ui-automation-of-a-wpf-custom-control.md)
+
 ## See also
 
 - [Styling and Templating](styles-templates-overview.md)

@@ -13,14 +13,14 @@ description: Learn how to flatten a curved path into a line by calling the Flatt
 ---
 # How to: Flatten a Curved Path into a Line
 
-A <xref:System.Drawing.Drawing2D.GraphicsPath> object stores a sequence of lines and Bézier splines. You can add several types of curves (ellipses, arcs, cardinal splines) to a path, but each curve is converted to a Bézier spline before it is stored in the path. Flattening a path consists of converting each Bézier spline in the path to a sequence of straight lines. The following illustration shows a path before and after flattening.  
-  
-![Straight Lines and Curves](./media/aboutgdip02-art32a.gif "AboutGdip02_Art32A")  
-  
-### To Flatten a Path  
-  
-- call the <xref:System.Drawing.Drawing2D.GraphicsPath.Flatten%2A> method of a <xref:System.Drawing.Drawing2D.GraphicsPath> object. The <xref:System.Drawing.Drawing2D.GraphicsPath.Flatten%2A> method receives a flatness argument that specifies the maximum distance between the flattened path and the original path.  
-  
+A <xref:System.Drawing.Drawing2D.GraphicsPath> object stores a sequence of lines and Bézier splines. You can add several types of curves (ellipses, arcs, cardinal splines) to a path, but each curve is converted to a Bézier spline before it is stored in the path. Flattening a path consists of converting each Bézier spline in the path to a sequence of straight lines. The following illustration shows a path before and after flattening.
+
+![Straight Lines and Curves](./media/aboutgdip02-art32a.gif "AboutGdip02_Art32A")
+
+### To Flatten a Path
+
+- call the <xref:System.Drawing.Drawing2D.GraphicsPath.Flatten%2A> method of a <xref:System.Drawing.Drawing2D.GraphicsPath> object. The <xref:System.Drawing.Drawing2D.GraphicsPath.Flatten%2A> method receives a flatness argument that specifies the maximum distance between the flattened path and the original path.
+
 ## See also
 
 - <xref:System.Drawing.Drawing2D.GraphicsPath?displayProperty=nameWithType>

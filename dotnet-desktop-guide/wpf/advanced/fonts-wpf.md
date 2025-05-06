@@ -11,15 +11,15 @@ ms.assetid: 6c766a95-ad03-475e-a36f-2243e9495941
 ---
 # Fonts (WPF)
 
-Windows Presentation Foundation (WPF) includes support for rich presentation of text using OpenType fonts. A sample pack of OpenType fonts is included with the Windows SDK.  
-  
-## In This Section  
+Windows Presentation Foundation (WPF) includes support for rich presentation of text using OpenType fonts. A sample pack of OpenType fonts is included with the Windows SDK.
 
-[OpenType Font Features](opentype-font-features.md)  
-[Packaging Fonts with Applications](packaging-fonts-with-applications.md)  
-[Sample OpenType Font Pack](sample-opentype-font-pack.md)  
-[How-to Topics](fonts-how-to-topics.md)  
-  
+## In This Section
+
+[OpenType Font Features](opentype-font-features.md)
+[Packaging Fonts with Applications](packaging-fonts-with-applications.md)
+[Sample OpenType Font Pack](sample-opentype-font-pack.md)
+[How-to Topics](fonts-how-to-topics.md)
+
 ## See also
 
 - <xref:System.Windows.FontStyle>

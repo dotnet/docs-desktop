@@ -13,23 +13,23 @@ ms.assetid: dc091d04-68cf-4592-9695-75fda037db76
 ---
 # Windows in WPF Applications
 
-Users interact with applications through windows. The fundamental purpose of a window is to host and display content. The type of content that a window hosts depends on the type of data that an application operates over, which can include media, Extensible Application Markup Language (XAML) pages, Web pages, documents, database tables and records, and system information.  
-  
-## In This Section  
+Users interact with applications through windows. The fundamental purpose of a window is to host and display content. The type of content that a window hosts depends on the type of data that an application operates over, which can include media, Extensible Application Markup Language (XAML) pages, Web pages, documents, database tables and records, and system information.
 
-[WPF Windows Overview](../windows/index.md)  
-[Dialog Boxes Overview](../windows/dialog-boxes-overview.md)  
-[How-to Topics](window-management-how-to-topics.md)  
-  
-## Reference  
+## In This Section
 
-<xref:System.Windows.Window>  
-  
-<xref:System.Windows.Navigation.NavigationWindow>  
-  
-## Related Sections  
+[WPF Windows Overview](../windows/index.md)
+[Dialog Boxes Overview](../windows/dialog-boxes-overview.md)
+[How-to Topics](window-management-how-to-topics.md)
 
-[Application Management Overview](application-management-overview.md)  
-  [Navigation Overview](navigation-overview.md)  
-  [Hosting](hosting-wpf-applications.md)  
+## Reference
+
+<xref:System.Windows.Window>
+
+<xref:System.Windows.Navigation.NavigationWindow>
+
+## Related Sections
+
+[Application Management Overview](application-management-overview.md)
+  [Navigation Overview](navigation-overview.md)
+  [Hosting](hosting-wpf-applications.md)
   [Build and Deploy](building-and-deploying-wpf-applications.md)

@@ -13,20 +13,20 @@ description: Learn how an XBAP can be hosted in other browsers or stand-alone ap
 ---
 # Hosting WPF Applications
 
-WPF XAML Browser Applications (XBAPs) are rich-client applications that can be deployed to a Web server and started in a browser. The WPF Host (PresentationHost.exe) is registered as the shell and MIME handler for XBAP and XAML files. Therefore, Internet Explorer knows to start the WPF Host when an XBAP is launched. Firefox users can install Firefox add-ons that enable Firefox to host XBAPs as well. An XBAP can be hosted in other browsers or stand-alone applications by using the native browser hosting APIs provided by WPF.  
+WPF XAML Browser Applications (XBAPs) are rich-client applications that can be deployed to a Web server and started in a browser. The WPF Host (PresentationHost.exe) is registered as the shell and MIME handler for XBAP and XAML files. Therefore, Internet Explorer knows to start the WPF Host when an XBAP is launched. Firefox users can install Firefox add-ons that enable Firefox to host XBAPs as well. An XBAP can be hosted in other browsers or stand-alone applications by using the native browser hosting APIs provided by WPF.
 
 [!INCLUDE [xbap-unsupported](~/wpf/includes/xbap-unsupported.md)]
 
-## In This Section  
+## In This Section
 
-[WPF XAML Browser Applications Overview](wpf-xaml-browser-applications-overview.md)  
-   [WPF Host (PresentationHost.exe)](wpf-host-presentationhost-exe.md)  
-  [Firefox Add-ons to Support .NET Application Deployment](firefox-add-ons-to-support-net-application-deployment.md)  
-  [Native WPF Browser Hosting Support APIs](native-wpf-browser-hosting-support-apis.md)  
-  
-## Related Sections  
+[WPF XAML Browser Applications Overview](wpf-xaml-browser-applications-overview.md)
+   [WPF Host (PresentationHost.exe)](wpf-host-presentationhost-exe.md)
+  [Firefox Add-ons to Support .NET Application Deployment](firefox-add-ons-to-support-net-application-deployment.md)
+  [Native WPF Browser Hosting Support APIs](native-wpf-browser-hosting-support-apis.md)
 
-[Application Management Overview](application-management-overview.md)  
-  [Windows in WPF](windows-in-wpf-applications.md)  
-  [Navigation Overview](navigation-overview.md)  
+## Related Sections
+
+[Application Management Overview](application-management-overview.md)
+  [Windows in WPF](windows-in-wpf-applications.md)
+  [Navigation Overview](navigation-overview.md)
   [Build and Deploy](building-and-deploying-wpf-applications.md)

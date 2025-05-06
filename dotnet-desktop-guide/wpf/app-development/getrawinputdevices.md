@@ -9,34 +9,34 @@ description: Learn how GetRawInputDevices allows PresentationHost.exe to discove
 ---
 # GetRawInputDevices
 
-Allows PresentationHost.exe to discover the raw input devices (Human Interface Devices) that the host application is interested in.  
-  
-## Syntax  
-  
-```cpp  
-HRESULT GetRawInputDevices( [out] IEnumRAWINPUTDEVICE **ppEnum );  
-```  
-  
-## Parameters  
+Allows PresentationHost.exe to discover the raw input devices (Human Interface Devices) that the host application is interested in.
 
-`ppEnum`  
-  
-[out] A pointer to an [IEnumRAWINPUTDEVICE](ienumrawinputdevice.md) for enumerating the raw input devices.  
-  
-## Property Value/Return Value  
+## Syntax
 
-HRESULT:  
-  
-S_OK - [IEnumRAWINPUTDEVICE](ienumrawinputdevice.md) will only be used by PresentationHost.exe if S_OK is returned.  
-  
-E_NOTIMPL  
-  
-## Remarks  
+```cpp
+HRESULT GetRawInputDevices( [out] IEnumRAWINPUTDEVICE **ppEnum );
+```
 
-Raw input devices are the set of input devices that includes keyboards, mice, and less traditional devices like remote controls.  
-  
-Once the list of raw input devices has been retrieved, PresentationHost.exe registers with the devices to receive WM_INPUT notification messages.  
-  
+## Parameters
+
+`ppEnum`
+
+[out] A pointer to an [IEnumRAWINPUTDEVICE](ienumrawinputdevice.md) for enumerating the raw input devices.
+
+## Property Value/Return Value
+
+HRESULT:
+
+S_OK - [IEnumRAWINPUTDEVICE](ienumrawinputdevice.md) will only be used by PresentationHost.exe if S_OK is returned.
+
+E_NOTIMPL
+
+## Remarks
+
+Raw input devices are the set of input devices that includes keyboards, mice, and less traditional devices like remote controls.
+
+Once the list of raw input devices has been retrieved, PresentationHost.exe registers with the devices to receive WM_INPUT notification messages.
+
 ## See also
 
 - [GetRawInputDeviceList](/windows/desktop/api/winuser/nf-winuser-getrawinputdevicelist)

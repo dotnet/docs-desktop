@@ -14,24 +14,24 @@ ms.assetid: a9df06f9-a6d5-4d9b-a2d1-583943540775
 ---
 # How to: Set the Color of a Pen
 
-This example changes the color of a pre-existing <xref:System.Drawing.Pen> object  
-  
-## Example  
+This example changes the color of a pre-existing <xref:System.Drawing.Pen> object
+
+## Example
 
 [!code-cpp[System.Drawing.ConceptualHowTos#9](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ConceptualHowTos/cpp/form1.cpp#9)]
 [!code-csharp[System.Drawing.ConceptualHowTos#9](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ConceptualHowTos/CS/form1.cs#9)]
-[!code-vb[System.Drawing.ConceptualHowTos#9](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ConceptualHowTos/VB/form1.vb#9)]  
-  
-## Compiling the Code  
+[!code-vb[System.Drawing.ConceptualHowTos#9](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ConceptualHowTos/VB/form1.vb#9)]
 
-This example requires:  
-  
-- A <xref:System.Drawing.Pen> object named `myPen`.  
-  
-## Robust Programming  
+## Compiling the Code
 
-You should call <xref:System.Drawing.Pen.Dispose%2A> on objects that consume system resources (such as <xref:System.Drawing.Pen> objects) after you are finished using them.  
-  
+This example requires:
+
+- A <xref:System.Drawing.Pen> object named `myPen`.
+
+## Robust Programming
+
+You should call <xref:System.Drawing.Pen.Dispose%2A> on objects that consume system resources (such as <xref:System.Drawing.Pen> objects) after you are finished using them.
+
 ## See also
 
 - <xref:System.Drawing.Pen>

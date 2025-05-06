@@ -14,19 +14,19 @@ ms.assetid: e4ef38db-b7d1-4bda-87ab-8bb738440ddc
 ---
 # Typography
 
-Windows Presentation Foundation (WPF) includes support for rich presentation of text content. Text in WPF is rendered using Microsoft ClearType, which enhances the clarity and readability of text. WPF also supports OpenType fonts, which provide additional capabilities beyond those defined by the TrueType® format.  
-  
-## In This Section  
+Windows Presentation Foundation (WPF) includes support for rich presentation of text content. Text in WPF is rendered using Microsoft ClearType, which enhances the clarity and readability of text. WPF also supports OpenType fonts, which provide additional capabilities beyond those defined by the TrueType® format.
 
-[Typography in WPF](typography-in-wpf.md)  
-[ClearType Overview](cleartype-overview.md)  
-[ClearType Registry Settings](cleartype-registry-settings.md)  
-[Drawing Formatted Text](drawing-formatted-text.md)  
-[Advanced Text Formatting](advanced-text-formatting.md)  
-[Fonts](fonts-wpf.md)  
-[Glyphs](glyphs.md)  
-[How-to Topics](typography-how-to-topics.md)  
-  
+## In This Section
+
+[Typography in WPF](typography-in-wpf.md)
+[ClearType Overview](cleartype-overview.md)
+[ClearType Registry Settings](cleartype-registry-settings.md)
+[Drawing Formatted Text](drawing-formatted-text.md)
+[Advanced Text Formatting](advanced-text-formatting.md)
+[Fonts](fonts-wpf.md)
+[Glyphs](glyphs.md)
+[How-to Topics](typography-how-to-topics.md)
+
 ## See also
 
 - <xref:System.Windows.Documents.Typography>

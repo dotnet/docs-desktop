@@ -12,34 +12,34 @@ ms.assetid: c9849df3-d000-4cdf-8345-5edcd053919d
 ---
 # StackPanel How-to Topics
 
-The topics in this section describe how to use the <xref:System.Windows.Controls.StackPanel> element to stack content horizontally or vertically.  
-  
-## In This Section  
+The topics in this section describe how to use the <xref:System.Windows.Controls.StackPanel> element to stack content horizontally or vertically.
 
-[Choose Between StackPanel and DockPanel](how-to-choose-between-stackpanel-and-dockpanel.md)  
-[Create a StackPanel](how-to-create-a-stackpanel.md)  
-[Horizontally or Vertically Align Content in a StackPanel](how-to-horizontally-or-vertically-align-content-in-a-stackpanel.md)  
-  
-## Reference  
+## In This Section
 
-<xref:System.Windows.Controls.Panel>  
-  
-<xref:System.Windows.Controls.Canvas>  
-  
-<xref:System.Windows.Controls.DockPanel>  
-  
-<xref:System.Windows.Controls.Grid>  
-  
-<xref:System.Windows.Controls.StackPanel>  
-  
-<xref:System.Windows.Controls.VirtualizingStackPanel>  
-  
-<xref:System.Windows.Controls.WrapPanel>  
-  
-## Related Sections  
+[Choose Between StackPanel and DockPanel](how-to-choose-between-stackpanel-and-dockpanel.md)
+[Create a StackPanel](how-to-create-a-stackpanel.md)
+[Horizontally or Vertically Align Content in a StackPanel](how-to-horizontally-or-vertically-align-content-in-a-stackpanel.md)
 
-[Layout](../advanced/layout.md)  
-  
-[Walkthrough: My first WPF desktop application](../get-started/walkthrough-my-first-wpf-desktop-application.md)  
-  
+## Reference
+
+<xref:System.Windows.Controls.Panel>
+
+<xref:System.Windows.Controls.Canvas>
+
+<xref:System.Windows.Controls.DockPanel>
+
+<xref:System.Windows.Controls.Grid>
+
+<xref:System.Windows.Controls.StackPanel>
+
+<xref:System.Windows.Controls.VirtualizingStackPanel>
+
+<xref:System.Windows.Controls.WrapPanel>
+
+## Related Sections
+
+[Layout](../advanced/layout.md)
+
+[Walkthrough: My first WPF desktop application](../get-started/walkthrough-my-first-wpf-desktop-application.md)
+
 [ScrollViewer Overview](scrollviewer-overview.md)

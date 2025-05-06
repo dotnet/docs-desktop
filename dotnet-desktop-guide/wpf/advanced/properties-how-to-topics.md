@@ -13,23 +13,23 @@ ms.assetid: e16dd710-1530-4462-81a2-43719b973970
 ---
 # Properties How-to Topics
 
-## In This Section  
+## In This Section
 
-[Implement a Dependency Property](../properties/how-to-implement-a-dependency-property.md)  
-[Add an Owner Type for a Dependency Property](how-to-add-an-owner-type-for-a-dependency-property.md)  
-[Register an Attached Property](../properties/how-to-register-an-attached-property.md)  
-[Override Metadata for a Dependency Property](../properties/how-to-override-metadata-for-a-dependency-property.md)  
-  
-## Reference  
+[Implement a Dependency Property](../properties/how-to-implement-a-dependency-property.md)
+[Add an Owner Type for a Dependency Property](how-to-add-an-owner-type-for-a-dependency-property.md)
+[Register an Attached Property](../properties/how-to-register-an-attached-property.md)
+[Override Metadata for a Dependency Property](../properties/how-to-override-metadata-for-a-dependency-property.md)
 
-<xref:System.Windows.DependencyProperty>  
-  
-<xref:System.Windows.PropertyMetadata>  
-  
-<xref:System.Windows.FrameworkPropertyMetadata>  
-  
-<xref:System.Windows.DependencyObject>  
-  
-## Related Sections  
+## Reference
+
+<xref:System.Windows.DependencyProperty>
+
+<xref:System.Windows.PropertyMetadata>
+
+<xref:System.Windows.FrameworkPropertyMetadata>
+
+<xref:System.Windows.DependencyObject>
+
+## Related Sections
 
 [Properties](properties-wpf.md)

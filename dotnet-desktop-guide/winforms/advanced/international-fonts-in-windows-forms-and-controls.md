@@ -79,7 +79,7 @@ TextBox1.Font = New System.Drawing.Font(Me.Font, TextBox1.Font.Style)
 ```csharp
 textBox1.Font = new System.Drawing.Font(this.Font, textBox1.Font.Style);
 ```
-  
+
 ## See also
 
 - [Using Fonts and Text](using-fonts-and-text.md)

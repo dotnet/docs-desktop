@@ -1133,7 +1133,7 @@ items:
     - name: How to implement a custom layout engine
       href: how-to-implement-a-custom-layout-engine.md
   - name: Control properties
-    items:    
+    items:
     - name: Defining a Property
       href: ../controls-design/designer-properties-overview.md
     - name: Property-Changed Events

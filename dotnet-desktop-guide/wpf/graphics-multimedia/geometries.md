@@ -14,14 +14,14 @@ ms.assetid: 47ad531d-a4da-4e99-b12e-1de710c32493
 ---
 # Geometries
 
-<xref:System.Windows.Media.Geometry> is a versatile class, used to render 2D graphics, hit-test objects, and define clipping regions  
-  
-## In This Section  
+<xref:System.Windows.Media.Geometry> is a versatile class, used to render 2D graphics, hit-test objects, and define clipping regions
 
-[Path Markup Syntax](path-markup-syntax.md)  
-[Geometry Overview](geometry-overview.md)  
-[How-to Topics](geometries-how-to-topics.md)  
-  
+## In This Section
+
+[Path Markup Syntax](path-markup-syntax.md)
+[Geometry Overview](geometry-overview.md)
+[How-to Topics](geometries-how-to-topics.md)
+
 ## See also
 
 - <xref:System.Windows.Media.Brushes>

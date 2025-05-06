@@ -243,7 +243,7 @@ The following example uses a <xref:System.Windows.Controls.DockPanel> to lay out
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     x:Class="SDKSample.LayoutWindow"
     Title="Layout with the DockPanel" Height="143" Width="319">
-  
+
   <!--DockPanel to layout four text boxes--> 
   <DockPanel>
     <TextBox DockPanel.Dock="Top">Dock = "Top"</TextBox>
@@ -432,7 +432,7 @@ Styles enable developers and designers to standardize on a particular appearance
 
         <!-- This button will have the style applied to it -->
         <Button>Click Me!</Button>
-        
+
     </StackPanel>
 </Window>
 ```

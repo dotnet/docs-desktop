@@ -15,23 +15,23 @@ description: Learn how to draw a line with line caps in GDI+ with the supporting
 ---
 # How to: Draw a Line with Line Caps
 
-You can draw the start or end of a line in one of several shapes called line caps. GDI+ supports several line caps, such as round, square, diamond, and arrowhead.  
-  
-## Example  
+You can draw the start or end of a line in one of several shapes called line caps. GDI+ supports several line caps, such as round, square, diamond, and arrowhead.
 
-You can specify line caps for the start of a line (start cap), the end of a line (end cap), or the dashes of a dashed line (dash cap).  
-  
-The following example draws a line with an arrowhead at one end and a round cap at the other end. The illustration shows the resulting line:  
-  
-![Illustration that shows a line with a round cap.](./media/how-to-draw-a-line-with-line-caps/line-cap-arrowhead-example.gif)  
-  
+## Example
+
+You can specify line caps for the start of a line (start cap), the end of a line (end cap), or the dashes of a dashed line (dash cap).
+
+The following example draws a line with an arrowhead at one end and a round cap at the other end. The illustration shows the resulting line:
+
+![Illustration that shows a line with a round cap.](./media/how-to-draw-a-line-with-line-caps/line-cap-arrowhead-example.gif)
+
 [!code-csharp[System.Drawing.UsingAPen#71](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.UsingAPen/CS/Class1.cs#71)]
-[!code-vb[System.Drawing.UsingAPen#71](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.UsingAPen/VB/Class1.vb#71)]  
-  
-## Compiling the Code  
-  
-- Create a Windows Form and handle the form's <xref:System.Windows.Forms.Control.Paint> event. Paste the example code into the <xref:System.Windows.Forms.Control.Paint> event handler passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.  
-  
+[!code-vb[System.Drawing.UsingAPen#71](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.UsingAPen/VB/Class1.vb#71)]
+
+## Compiling the Code
+
+- Create a Windows Form and handle the form's <xref:System.Windows.Forms.Control.Paint> event. Paste the example code into the <xref:System.Windows.Forms.Control.Paint> event handler passing `e` as <xref:System.Windows.Forms.PaintEventArgs>.
+
 ## See also
 
 - <xref:System.Drawing.Pen?displayProperty=nameWithType>

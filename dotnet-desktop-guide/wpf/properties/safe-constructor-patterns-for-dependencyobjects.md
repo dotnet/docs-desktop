@@ -54,7 +54,7 @@ The order in which methods are called in the unsafe constructor pattern test is:
     1. `PropertyChangedCallback`, which is implemented in the derived class by overriding dependency property metadata. This callback causes a null reference exception when it calls a method on the uninitialized class field `s_temperatureLog`.
 
     1. `CoerceValueCallback`, which is implemented in the derived class by overriding dependency property metadata. This callback causes a null reference exception when it calls a method on the uninitialized class field `s_temperatureLog`.
-  
+
     1. <xref:System.Windows.DependencyObject.OnPropertyChanged%2A> event, which is implemented in the derived class by overriding the virtual method. This event causes a null reference exception when it calls a method on the uninitialized class field `s_temperatureLog`.
 
 1. Derived class parameterless constructor, which initializes `s_temperatureLog`.

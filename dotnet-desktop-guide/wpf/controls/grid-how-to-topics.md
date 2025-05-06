@@ -12,38 +12,38 @@ ms.assetid: 90e07c2d-237f-47b4-a632-771570b77fd0
 ---
 # Grid How-to Topics
 
-The topics in this section describe how to position elements using the <xref:System.Windows.Controls.Grid> element.  
-  
-## In This Section  
+The topics in this section describe how to position elements using the <xref:System.Windows.Controls.Grid> element.
 
-[Build a Standard UI Dialog Box by Using Grid](how-to-build-a-standard-ui-dialog-box-by-using-grid.md)  
-[Create a Complex Grid](how-to-create-a-complex-grid.md)  
-[Create a Grid Element](how-to-create-a-grid-element.md)  
-[Create and Use a GridLengthConverter Object](how-to-create-and-use-a-gridlengthconverter-object.md)  
-[Manipulate Columns and Rows by Using ColumnDefinitionsCollections and RowDefinitionsCollections](manipulate-columns-and-rows-by-using-columndefinitionscollections.md)  
-[Position the Child Elements of a Grid](how-to-position-the-child-elements-of-a-grid.md)  
-[Share Sizing Properties Between Grids](how-to-share-sizing-properties-between-grids.md)  
-  
-## Reference  
+## In This Section
 
-<xref:System.Windows.Controls.Panel>  
-  
-<xref:System.Windows.Controls.Canvas>  
-  
-<xref:System.Windows.Controls.DockPanel>  
-  
-<xref:System.Windows.Controls.Grid>  
-  
-<xref:System.Windows.Controls.StackPanel>  
-  
-<xref:System.Windows.Controls.VirtualizingStackPanel>  
-  
-<xref:System.Windows.Controls.WrapPanel>  
-  
-## Related Sections  
+[Build a Standard UI Dialog Box by Using Grid](how-to-build-a-standard-ui-dialog-box-by-using-grid.md)
+[Create a Complex Grid](how-to-create-a-complex-grid.md)
+[Create a Grid Element](how-to-create-a-grid-element.md)
+[Create and Use a GridLengthConverter Object](how-to-create-and-use-a-gridlengthconverter-object.md)
+[Manipulate Columns and Rows by Using ColumnDefinitionsCollections and RowDefinitionsCollections](manipulate-columns-and-rows-by-using-columndefinitionscollections.md)
+[Position the Child Elements of a Grid](how-to-position-the-child-elements-of-a-grid.md)
+[Share Sizing Properties Between Grids](how-to-share-sizing-properties-between-grids.md)
 
-[Layout](../advanced/layout.md)  
-  
-[Walkthrough: My first WPF desktop application](../get-started/walkthrough-my-first-wpf-desktop-application.md)  
-  
+## Reference
+
+<xref:System.Windows.Controls.Panel>
+
+<xref:System.Windows.Controls.Canvas>
+
+<xref:System.Windows.Controls.DockPanel>
+
+<xref:System.Windows.Controls.Grid>
+
+<xref:System.Windows.Controls.StackPanel>
+
+<xref:System.Windows.Controls.VirtualizingStackPanel>
+
+<xref:System.Windows.Controls.WrapPanel>
+
+## Related Sections
+
+[Layout](../advanced/layout.md)
+
+[Walkthrough: My first WPF desktop application](../get-started/walkthrough-my-first-wpf-desktop-application.md)
+
 [ScrollViewer Overview](scrollviewer-overview.md)

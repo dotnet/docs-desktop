@@ -16,9 +16,9 @@ ms.assetid: 68f0dc4b-c0fe-43be-94f2-9d7399378fb3
 ---
 # How to: Write Metadata to a Bitmap
 
-This example shows how to write metadata to a bitmap using the metadata query language.  
-  
-## Example  
+This example shows how to write metadata to a bitmap using the metadata query language.
+
+## Example
 
 [!code-cpp[BitmapMetadata#SetQuery](~/samples/snippets/cpp/VS_Snippets_Wpf/BitMapMetadata/CPP/BitmapMetadata.cpp#setquery)]
 [!code-csharp[BitmapMetadata#SetQuery](~/samples/snippets/csharp/VS_Snippets_Wpf/BitMapMetadata/CSharp/BitmapMetadata.cs#setquery)]

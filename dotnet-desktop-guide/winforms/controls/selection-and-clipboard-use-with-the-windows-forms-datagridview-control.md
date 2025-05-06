@@ -14,42 +14,42 @@ description: Learn how the DataGridView control provides a variety of options fo
 ---
 # Selection and Clipboard Use with the Windows Forms DataGridView Control
 
-The `DataGridView` control provides you with a variety of options for configuring how users can select cells, rows, and columns. For example, you can enable single or multiple selection, selection of whole rows or columns when users click cells, or selection of whole rows or columns only when users click their headers, which enables cell selection as well. If you want to provide your own user interface for selection, you can disable ordinary selection and handle all selection programmatically. Additionally, you can enable users to copy the selected values to the Clipboard.  
-  
-## In This Section  
+The `DataGridView` control provides you with a variety of options for configuring how users can select cells, rows, and columns. For example, you can enable single or multiple selection, selection of whole rows or columns when users click cells, or selection of whole rows or columns only when users click their headers, which enables cell selection as well. If you want to provide your own user interface for selection, you can disable ordinary selection and handle all selection programmatically. Additionally, you can enable users to copy the selected values to the Clipboard.
+
+## In This Section
 
 [Selection Modes in the Windows Forms DataGridView Control](selection-modes-in-the-windows-forms-datagridview-control.md)\
-Describes the options for user and programmatic selection in the control.  
-  
-[How to: Set the Selection Mode of the Windows Forms DataGridView Control](how-to-set-the-selection-mode-of-the-windows-forms-datagridview-control.md)\
-Describes how to configure the control for single-row selection when a user clicks a cell.  
-  
-[How to: Get the Selected Cells, Rows, and Columns in the Windows Forms DataGridView Control](selected-cells-rows-and-columns-datagridview.md)\
-Describes how to work with the selected cell, row, and column collections.  
-  
-[How to: Enable Users to Copy Multiple Cells to the Clipboard from the Windows Forms DataGridView Control](enable-users-to-copy-multiple-cells-to-the-clipboard-datagridview.md)\
-Describes how to enable Clipboard support in the control.  
-  
-## Reference  
+Describes the options for user and programmatic selection in the control.
 
-<xref:System.Windows.Forms.DataGridView>  
-Provides reference documentation for the <xref:System.Windows.Forms.DataGridView> control.  
-  
-<xref:System.Windows.Forms.DataGridView.SelectionMode%2A?displayProperty=nameWithType>  
-Provides reference documentation for the <xref:System.Windows.Forms.DataGridView.SelectionMode%2A> property.  
-  
-<xref:System.Windows.Forms.DataGridView.ClipboardCopyMode%2A>  
-Provides reference documentation for the <xref:System.Windows.Forms.DataGridView.ClipboardCopyMode%2A> property.  
-  
-<xref:System.Windows.Forms.DataGridViewSelectedCellCollection>  
-Provides reference documentation for the <xref:System.Windows.Forms.DataGridViewSelectedCellCollection> class.  
-  
-<xref:System.Windows.Forms.DataGridViewSelectedRowCollection>  
-Provides reference documentation for the <xref:System.Windows.Forms.DataGridViewSelectedRowCollection> class.  
-  
-<xref:System.Windows.Forms.DataGridViewSelectedColumnCollection>  
-Provides reference documentation for the <xref:System.Windows.Forms.DataGridViewSelectedColumnCollection> class.  
-  
+[How to: Set the Selection Mode of the Windows Forms DataGridView Control](how-to-set-the-selection-mode-of-the-windows-forms-datagridview-control.md)\
+Describes how to configure the control for single-row selection when a user clicks a cell.
+
+[How to: Get the Selected Cells, Rows, and Columns in the Windows Forms DataGridView Control](selected-cells-rows-and-columns-datagridview.md)\
+Describes how to work with the selected cell, row, and column collections.
+
+[How to: Enable Users to Copy Multiple Cells to the Clipboard from the Windows Forms DataGridView Control](enable-users-to-copy-multiple-cells-to-the-clipboard-datagridview.md)\
+Describes how to enable Clipboard support in the control.
+
+## Reference
+
+<xref:System.Windows.Forms.DataGridView>
+Provides reference documentation for the <xref:System.Windows.Forms.DataGridView> control.
+
+<xref:System.Windows.Forms.DataGridView.SelectionMode%2A?displayProperty=nameWithType>
+Provides reference documentation for the <xref:System.Windows.Forms.DataGridView.SelectionMode%2A> property.
+
+<xref:System.Windows.Forms.DataGridView.ClipboardCopyMode%2A>
+Provides reference documentation for the <xref:System.Windows.Forms.DataGridView.ClipboardCopyMode%2A> property.
+
+<xref:System.Windows.Forms.DataGridViewSelectedCellCollection>
+Provides reference documentation for the <xref:System.Windows.Forms.DataGridViewSelectedCellCollection> class.
+
+<xref:System.Windows.Forms.DataGridViewSelectedRowCollection>
+Provides reference documentation for the <xref:System.Windows.Forms.DataGridViewSelectedRowCollection> class.
+
+<xref:System.Windows.Forms.DataGridViewSelectedColumnCollection>
+Provides reference documentation for the <xref:System.Windows.Forms.DataGridViewSelectedColumnCollection> class.
+
 ## See also
 
 - [DataGridView Control](datagridview-control-windows-forms.md)

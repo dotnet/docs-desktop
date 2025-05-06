@@ -10,44 +10,44 @@ description: Learn how to host a Windows Forms MaskedTextBox control on a Window
 ---
 # Walkthrough: Hosting a Windows Forms Control in WPF by Using XAML
 
-WPF provides many controls with a rich feature set. However, you may sometimes want to use Windows Forms controls on your WPF pages. For example, you may have a substantial investment in existing Windows Forms controls, or you may have a Windows Forms control that provides unique functionality.  
-  
-This walkthrough shows you how to host a Windows Forms <xref:System.Windows.Forms.MaskedTextBox?displayProperty=nameWithType> control on a WPF page by using XAML.  
-  
-For a complete code listing of the tasks shown in this walkthrough, see [Hosting a Windows Forms Control in WPF by Using XAML Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Migration%20and%20Interoperability/HostingWfInWpfWithXaml).
-  
-## Prerequisites  
+WPF provides many controls with a rich feature set. However, you may sometimes want to use Windows Forms controls on your WPF pages. For example, you may have a substantial investment in existing Windows Forms controls, or you may have a Windows Forms control that provides unique functionality.
 
-You need Visual Studio to complete this walkthrough.  
-  
-## Hosting the Windows Forms Control  
-  
-#### To host the MaskedTextBox control  
-  
-1. Create a WPF Application project named `HostingWfInWpfWithXaml`.  
-  
-2. Add references to the following assemblies.  
-  
-    - WindowsFormsIntegration  
-  
-    - System.Windows.Forms  
-  
-3. Open MainWindow.xaml in the WPF Designer.  
-  
-4. In the <xref:System.Windows.Window> element, add the following namespace mapping. The `wf` namespace mapping establishes a reference to the assembly that contains the Windows Forms control.  
-  
-    ```xaml  
-    xmlns:wf="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"  
-    ```  
-  
-5. In the <xref:System.Windows.Controls.Grid> element add the following XAML.  
-  
-     The <xref:System.Windows.Forms.MaskedTextBox> control is created as a child of the <xref:System.Windows.Forms.Integration.WindowsFormsHost> control.  
-  
-     [!code-xaml[HostingWfInWpfWithXaml#3](~/samples/snippets/csharp/VS_Snippets_Wpf/HostingWfInWpfWithXaml/CSharp/HostingWfInWpf/Window1.xaml#3)]  
-  
-6. Press F5 to build and run the application.  
-  
+This walkthrough shows you how to host a Windows Forms <xref:System.Windows.Forms.MaskedTextBox?displayProperty=nameWithType> control on a WPF page by using XAML.
+
+For a complete code listing of the tasks shown in this walkthrough, see [Hosting a Windows Forms Control in WPF by Using XAML Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Migration%20and%20Interoperability/HostingWfInWpfWithXaml).
+
+## Prerequisites
+
+You need Visual Studio to complete this walkthrough.
+
+## Hosting the Windows Forms Control
+
+#### To host the MaskedTextBox control
+
+1. Create a WPF Application project named `HostingWfInWpfWithXaml`.
+
+2. Add references to the following assemblies.
+
+    - WindowsFormsIntegration
+
+    - System.Windows.Forms
+
+3. Open MainWindow.xaml in the WPF Designer.
+
+4. In the <xref:System.Windows.Window> element, add the following namespace mapping. The `wf` namespace mapping establishes a reference to the assembly that contains the Windows Forms control.
+
+    ```xaml
+    xmlns:wf="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"
+    ```
+
+5. In the <xref:System.Windows.Controls.Grid> element add the following XAML.
+
+     The <xref:System.Windows.Forms.MaskedTextBox> control is created as a child of the <xref:System.Windows.Forms.Integration.WindowsFormsHost> control.
+
+     [!code-xaml[HostingWfInWpfWithXaml#3](~/samples/snippets/csharp/VS_Snippets_Wpf/HostingWfInWpfWithXaml/CSharp/HostingWfInWpf/Window1.xaml#3)]
+
+6. Press F5 to build and run the application.
+
 ## See also
 
 - <xref:System.Windows.Forms.Integration.ElementHost>

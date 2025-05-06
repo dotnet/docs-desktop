@@ -14,39 +14,39 @@ ms.assetid: d037c062-a911-4949-b251-ccd3e48b1d17
 ---
 # LoadFromHistory Function (WPF Unmanaged API Reference)
 
-This API supports the Windows Presentation Foundation (WPF) infrastructure and is not intended to be used directly from your code.  
-  
-Used by the Windows Presentation Foundation (WPF) infrastructure for windows management.  
-  
-## Syntax  
-  
-```cpp  
-HRESULT LoadFromHistory_export(  
+This API supports the Windows Presentation Foundation (WPF) infrastructure and is not intended to be used directly from your code.
+
+Used by the Windows Presentation Foundation (WPF) infrastructure for windows management.
+
+## Syntax
+
+```cpp
+HRESULT LoadFromHistory_export(
         IStream* pHistoryStream,
-        IBindCtx* pBindCtx  
-)  
-```  
-  
-## Parameters  
+        IBindCtx* pBindCtx
+)
+```
 
-pHistoryStream  
-A pointer to a stream of history information.  
-  
-pBindCtx  
-A pointer to a bind context.  
-  
-## Requirements  
+## Parameters
 
-**Platforms:** See [.NET Framework System Requirements](/dotnet/framework/get-started/system-requirements).  
-  
-**DLL:**  
-  
-In the .NET Framework 3.0 and 3.5: PresentationHostDLL.dll  
-  
-In the .NET Framework 4 and later: PresentationHost_v0400.dll  
-  
-**.NET Framework Version:** Available since 3.0  
-  
+pHistoryStream
+A pointer to a stream of history information.
+
+pBindCtx
+A pointer to a bind context.
+
+## Requirements
+
+**Platforms:** See [.NET Framework System Requirements](/dotnet/framework/get-started/system-requirements).
+
+**DLL:**
+
+In the .NET Framework 3.0 and 3.5: PresentationHostDLL.dll
+
+In the .NET Framework 4 and later: PresentationHost_v0400.dll
+
+**.NET Framework Version:** Available since 3.0
+
 ## See also
 
 - [WPF Unmanaged API Reference](wpf-unmanaged-api-reference.md)

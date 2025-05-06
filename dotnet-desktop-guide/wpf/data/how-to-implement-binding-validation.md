@@ -45,7 +45,7 @@ The following snippet is the data object used in the previous code examples. An 
 ## Complete example
 
 For the complete example, see [Bind Validation sample](https://github.com/Microsoft/WPF-Samples/tree/master/Data%20Binding/BindValidation).
-  
+
 Note that if you do not provide a custom <xref:System.Windows.Controls.Validation.ErrorTemplate%2A> the default error template appears to provide visual feedback to the user when there is a validation error. See "Data Validation" in [Data Binding Overview](index.md) for more information. Also, WPF provides a built-in validation rule that catches exceptions that are thrown during the update of the binding source property. For more information, see <xref:System.Windows.Controls.ExceptionValidationRule>.
 
 ## See also

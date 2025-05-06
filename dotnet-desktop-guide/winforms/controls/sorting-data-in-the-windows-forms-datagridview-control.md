@@ -26,16 +26,16 @@ Describes how to sort data programmatically and how to customize sorting by usin
 
 ## Reference
 
-<xref:System.Windows.Forms.DataGridView>  
-Provides reference documentation for the <xref:System.Windows.Forms.DataGridView> control.  
+<xref:System.Windows.Forms.DataGridView>
+Provides reference documentation for the <xref:System.Windows.Forms.DataGridView> control.
 
-<xref:System.Windows.Forms.DataGridView.Sort%2A?displayProperty=nameWithType>  
+<xref:System.Windows.Forms.DataGridView.Sort%2A?displayProperty=nameWithType>
 Provides reference documentation for the <xref:System.Windows.Forms.DataGridView.Sort%2A> method.
 
-<xref:System.Windows.Forms.DataGridViewColumn.SortMode%2A?displayProperty=nameWithType>  
+<xref:System.Windows.Forms.DataGridViewColumn.SortMode%2A?displayProperty=nameWithType>
 Provides reference documentation for the <xref:System.Windows.Forms.DataGridViewColumn.SortMode%2A> property.
 
-<xref:System.Windows.Forms.DataGridViewColumnSortMode>  
+<xref:System.Windows.Forms.DataGridViewColumnSortMode>
 Provides reference documentation for the <xref:System.Windows.Forms.DataGridViewColumnSortMode> enumeration.
 
 ## See also

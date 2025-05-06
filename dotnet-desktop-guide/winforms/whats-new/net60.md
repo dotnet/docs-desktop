@@ -110,21 +110,21 @@ The default font can now be set in two ways:
 
   > [!IMPORTANT]
   > This is the preferred way. Using the project to configure the new application bootstrap system allows Visual Studio to use these settings in the designer.
-  
+
   In the following example, the project file configures Windows Forms to use the same font that .NET Framework uses.
 
   ```xml
   <Project Sdk="Microsoft.NET.Sdk">
-  
+
     <!-- other settings -->
-  
+
     <PropertyGroup>
       <ApplicationDefaultFont>Microsoft Sans Serif, 8.25pt</ApplicationDefaultFont>
     </PropertyGroup>
-  
+
   </Project>
   ```
-  
+
 \- or -
 
 - Call the the <xref:System.Windows.Forms.Application.SetDefaultFont%2A?displayProperty=nameWithType> API in the old way (but with no designer support):

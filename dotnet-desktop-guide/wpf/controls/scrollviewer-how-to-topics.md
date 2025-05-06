@@ -12,20 +12,20 @@ ms.assetid: 1e20804b-1d80-4b54-af41-76b3e10a6f89
 ---
 # ScrollViewer How-to Topics
 
-The topics in this section demonstrate how to use the <xref:System.Windows.Controls.ScrollViewer> element to create scrollable regions in your applications.  
-  
-## In This Section  
+The topics in this section demonstrate how to use the <xref:System.Windows.Controls.ScrollViewer> element to create scrollable regions in your applications.
 
-[Handle the ScrollChanged Event](how-to-handle-the-scrollchanged-event.md)  
-[Scroll Content by Using the IScrollInfo Interface](how-to-scroll-content-by-using-the-iscrollinfo-interface.md)  
-[Use the Content-Scrolling Methods of ScrollViewer](how-to-use-the-content-scrolling-methods-of-scrollviewer.md)  
-  
-## Reference  
+## In This Section
 
-<xref:System.Windows.Controls.Primitives.ScrollBar>  
-  
-<xref:System.Windows.Controls.ScrollViewer>  
-  
+[Handle the ScrollChanged Event](how-to-handle-the-scrollchanged-event.md)
+[Scroll Content by Using the IScrollInfo Interface](how-to-scroll-content-by-using-the-iscrollinfo-interface.md)
+[Use the Content-Scrolling Methods of ScrollViewer](how-to-use-the-content-scrolling-methods-of-scrollviewer.md)
+
+## Reference
+
+<xref:System.Windows.Controls.Primitives.ScrollBar>
+
+<xref:System.Windows.Controls.ScrollViewer>
+
 ## See also
 
 - [Panels Overview](panels-overview.md)

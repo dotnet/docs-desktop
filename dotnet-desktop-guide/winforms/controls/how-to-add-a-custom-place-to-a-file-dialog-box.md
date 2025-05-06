@@ -14,25 +14,25 @@ ms.assetid: 63f6469b-59cd-40f6-9e61-8b5831856780
 ---
 # How To: Add a Custom Place to a File Dialog Box
 
-The default open and save dialog boxes on Windows Vista have an area on the left side of the dialog box titled **Favorite Links**. This area is called custom places. The <xref:System.Windows.Forms.OpenFileDialog> and <xref:System.Windows.Forms.SaveFileDialog> classes allow you to add folders to the <xref:System.Windows.Forms.FileDialog.CustomPlaces%2A> collection.  
-  
+The default open and save dialog boxes on Windows Vista have an area on the left side of the dialog box titled **Favorite Links**. This area is called custom places. The <xref:System.Windows.Forms.OpenFileDialog> and <xref:System.Windows.Forms.SaveFileDialog> classes allow you to add folders to the <xref:System.Windows.Forms.FileDialog.CustomPlaces%2A> collection.
+
 > [!NOTE]
-> In order for a custom place to appear in the <xref:System.Windows.Forms.OpenFileDialog> or <xref:System.Windows.Forms.SaveFileDialog>, the <xref:System.Windows.Forms.FileDialog.AutoUpgradeEnabled%2A> property must be set to `true` (the default).  
-  
-### To add a custom place to a file dialog box  
-  
-- Add a path, a Known Folder GUID, or a <xref:System.Windows.Forms.FileDialogCustomPlace> object to the <xref:System.Windows.Forms.FileDialog.CustomPlaces%2A> collection of the dialog box.  
-  
-     The following code example shows how to add a path:  
-  
-    ```vb  
-    OpenFileDialog1.CustomPlaces.Add("C:\MyCustomPlace")  
-    ```  
-  
-    ```csharp  
-    openFileDialog1.CustomPlaces.Add("C:\\MyCustomPlace");  
-    ```  
-  
+> In order for a custom place to appear in the <xref:System.Windows.Forms.OpenFileDialog> or <xref:System.Windows.Forms.SaveFileDialog>, the <xref:System.Windows.Forms.FileDialog.AutoUpgradeEnabled%2A> property must be set to `true` (the default).
+
+### To add a custom place to a file dialog box
+
+- Add a path, a Known Folder GUID, or a <xref:System.Windows.Forms.FileDialogCustomPlace> object to the <xref:System.Windows.Forms.FileDialog.CustomPlaces%2A> collection of the dialog box.
+
+     The following code example shows how to add a path:
+
+    ```vb
+    OpenFileDialog1.CustomPlaces.Add("C:\MyCustomPlace")
+    ```
+
+    ```csharp
+    openFileDialog1.CustomPlaces.Add("C:\\MyCustomPlace");
+    ```
+
 ## See also
 
 - <xref:System.Windows.Forms.FileDialog>

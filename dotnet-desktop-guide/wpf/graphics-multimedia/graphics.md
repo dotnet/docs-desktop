@@ -12,20 +12,20 @@ ms.assetid: 3bfc652e-91b7-4697-a4f4-83ff0e98327e
 ---
 # Graphics
 
-Windows Presentation Foundation (WPF) offers integrated support for multimedia, vector graphics, animation, and content composition, making it easy for developers to build interesting user interfaces and content.  
-  
-## In This Section  
+Windows Presentation Foundation (WPF) offers integrated support for multimedia, vector graphics, animation, and content composition, making it easy for developers to build interesting user interfaces and content.
 
-[Bitmap Effects](bitmap-effects.md)  
-[Brushes](brushes.md)  
-[Drawings](drawings.md)  
-[Geometries](geometries.md)  
-[Images](images.md)  
-[Shapes](shapes.md)  
-[Transformations](transformations.md)  
-[Graphics Rendering Registry Settings](graphics-rendering-registry-settings.md)  
-[How-to Topics](graphics-how-to-topics.md)  
-  
+## In This Section
+
+[Bitmap Effects](bitmap-effects.md)
+[Brushes](brushes.md)
+[Drawings](drawings.md)
+[Geometries](geometries.md)
+[Images](images.md)
+[Shapes](shapes.md)
+[Transformations](transformations.md)
+[Graphics Rendering Registry Settings](graphics-rendering-registry-settings.md)
+[How-to Topics](graphics-how-to-topics.md)
+
 ## See also
 
 - <xref:System.Windows.Shapes.Shape>

@@ -12,15 +12,15 @@ ms.assetid: aba45aed-7953-4b2c-bc29-315a9be6c440
 ---
 # StatusBar
 
-A <xref:System.Windows.Controls.Primitives.StatusBar> is a horizontal area at the bottom of a window where an application can display status information.  
-  
-The following illustration shows an example of a <xref:System.Windows.Controls.Primitives.StatusBar>.  
-  
-![Status bar](./media/ss-ctl-statusbar.GIF "SS_CTL_statusbar")  
-  
-## In This Section  
-  
-## Reference  
+A <xref:System.Windows.Controls.Primitives.StatusBar> is a horizontal area at the bottom of a window where an application can display status information.
 
-<xref:System.Windows.Controls.Primitives.StatusBar>  
-  <xref:System.Windows.Controls.Primitives.StatusBarItem>  
+The following illustration shows an example of a <xref:System.Windows.Controls.Primitives.StatusBar>.
+
+![Status bar](./media/ss-ctl-statusbar.GIF "SS_CTL_statusbar")
+
+## In This Section
+
+## Reference
+
+<xref:System.Windows.Controls.Primitives.StatusBar>
+  <xref:System.Windows.Controls.Primitives.StatusBarItem>

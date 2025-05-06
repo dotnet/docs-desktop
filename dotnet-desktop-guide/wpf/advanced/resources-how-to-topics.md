@@ -12,27 +12,27 @@ ms.assetid: 9f986a6d-7cc8-45ac-bb0f-43177a57649d
 ---
 # Resources How-to Topics
 
-The topics in this section describe how to use Windows Presentation Foundation (WPF) resources.  
-  
-## In This Section  
+The topics in this section describe how to use Windows Presentation Foundation (WPF) resources.
 
-[Define and Reference a Resource](../systems/xaml-resources-how-to-define-and-reference.md)  
-[Use Application Resources](../systems/xaml-resources-how-to-use-application.md)  
-[Use SystemFonts](../systems/xaml-resources-how-to-use-system.md)  
-[Use System Fonts Keys](../systems/xaml-resources-how-to-use-system.md)  
-[Use SystemParameters](../systems/xaml-resources-how-to-use-system.md)  
-[Use System Parameters Keys](../systems/xaml-resources-how-to-use-system.md)  
-  
-## Reference  
+## In This Section
 
-<xref:System.Windows.FrameworkTemplate.Resources%2A>  
-  
-<xref:System.Windows.SystemColors>  
-  
-<xref:System.Windows.SystemParameters>  
-  
-<xref:System.Windows.SystemFonts>  
-  
-## Related Sections  
+[Define and Reference a Resource](../systems/xaml-resources-how-to-define-and-reference.md)
+[Use Application Resources](../systems/xaml-resources-how-to-use-application.md)
+[Use SystemFonts](../systems/xaml-resources-how-to-use-system.md)
+[Use System Fonts Keys](../systems/xaml-resources-how-to-use-system.md)
+[Use SystemParameters](../systems/xaml-resources-how-to-use-system.md)
+[Use System Parameters Keys](../systems/xaml-resources-how-to-use-system.md)
+
+## Reference
+
+<xref:System.Windows.FrameworkTemplate.Resources%2A>
+
+<xref:System.Windows.SystemColors>
+
+<xref:System.Windows.SystemParameters>
+
+<xref:System.Windows.SystemFonts>
+
+## Related Sections
 
 [XAML Resources](../systems/xaml-resources-overview.md)

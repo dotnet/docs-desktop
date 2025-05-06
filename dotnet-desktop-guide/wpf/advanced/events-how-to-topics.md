@@ -11,20 +11,20 @@ ms.assetid: 00463181-36eb-4be0-bfa2-452854cce642
 ---
 # Events How-to Topics
 
-The topics in this section describe how to use events in WPF.  
-  
-## In This Section  
+The topics in this section describe how to use events in WPF.
 
-[Add an Event Handler Using Code](../events/how-to-add-an-event-handler-using-code.md)  
-[Handle a Routed Event](how-to-handle-a-routed-event.md)  
-[Create a Custom Routed Event](../events/how-to-create-a-custom-routed-event.md)  
-[Find the Source Element in an Event Handler](how-to-find-the-source-element-in-an-event-handler.md)  
-[Add Class Handling for a Routed Event](how-to-add-class-handling-for-a-routed-event.md)  
-  
-## Reference  
+## In This Section
 
-<xref:System.Windows.RoutedEvent>  
-  
-<xref:System.Windows.EventManager>  
-  
-<xref:System.Windows.RoutingStrategy>  
+[Add an Event Handler Using Code](../events/how-to-add-an-event-handler-using-code.md)
+[Handle a Routed Event](how-to-handle-a-routed-event.md)
+[Create a Custom Routed Event](../events/how-to-create-a-custom-routed-event.md)
+[Find the Source Element in an Event Handler](how-to-find-the-source-element-in-an-event-handler.md)
+[Add Class Handling for a Routed Event](how-to-add-class-handling-for-a-routed-event.md)
+
+## Reference
+
+<xref:System.Windows.RoutedEvent>
+
+<xref:System.Windows.EventManager>
+
+<xref:System.Windows.RoutingStrategy>

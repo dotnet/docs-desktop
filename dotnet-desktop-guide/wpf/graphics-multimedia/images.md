@@ -14,21 +14,21 @@ ms.assetid: 2fe21d59-b444-4786-b68d-35d94e18ce0d
 ---
 # Images
 
-Windows Presentation Foundation (WPF) provides built-in support for multiple image formats, high fidelity image rendering, and codec extensibility.  
-  
-## In This Section  
+Windows Presentation Foundation (WPF) provides built-in support for multiple image formats, high fidelity image rendering, and codec extensibility.
 
-[Imaging Overview](imaging-overview.md)  
-[How-to Topics](imaging-how-to-topics.md)  
-  
-## Reference  
+## In This Section
 
-<xref:System.Windows.Controls.Image>  
-  
-<xref:System.Windows.Media.Imaging.BitmapImage>  
-  
-<xref:System.Windows.Media.Imaging.BitmapSource>  
-  
+[Imaging Overview](imaging-overview.md)
+[How-to Topics](imaging-how-to-topics.md)
+
+## Reference
+
+<xref:System.Windows.Controls.Image>
+
+<xref:System.Windows.Media.Imaging.BitmapImage>
+
+<xref:System.Windows.Media.Imaging.BitmapSource>
+
 ## See also
 
 - [2D Graphics and Imaging](../advanced/optimizing-performance-2d-graphics-and-imaging.md)

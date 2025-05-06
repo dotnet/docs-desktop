@@ -1,6 +1,6 @@
 ---
 title: Bind DataGrid Control to a Data Source Using the Designer
-description: Learn about how to bind the Windows Forms DataGrid control to a data source by using the designer.   
+description: Learn about how to bind the Windows Forms DataGrid control to a data source by using the designer. 
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
 dev_langs:

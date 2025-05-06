@@ -12,18 +12,18 @@ ms.assetid: ea5f7826-7a92-4de9-9eee-10ef700ce7b6
 ---
 # TextBlock
 
-The <xref:System.Windows.Controls.TextBlock> control provides flexible text support for WPF applications. The element is targeted primarily toward basic UI scenarios that do not require more than one paragraph of text.  
-  
-## In This Section  
+The <xref:System.Windows.Controls.TextBlock> control provides flexible text support for WPF applications. The element is targeted primarily toward basic UI scenarios that do not require more than one paragraph of text.
 
-[TextBlock Overview](textblock-overview.md)  
-  
-## Reference  
+## In This Section
 
-<xref:System.Windows.Controls.Label>  
-  
-## Related Sections  
+[TextBlock Overview](textblock-overview.md)
 
-[Documents in WPF](../advanced/documents-in-wpf.md)  
-  
+## Reference
+
+<xref:System.Windows.Controls.Label>
+
+## Related Sections
+
+[Documents in WPF](../advanced/documents-in-wpf.md)
+
 [Flow Document Overview](../advanced/flow-document-overview.md)

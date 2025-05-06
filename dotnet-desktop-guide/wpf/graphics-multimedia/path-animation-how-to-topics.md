@@ -12,23 +12,23 @@ ms.assetid: e9b71017-bac4-40d7-858b-326939442cb1
 ---
 # Path Animation How-to Topics
 
-The topics in this section demonstrate how to animate an object along a path.  
-  
-## In This Section  
+The topics in this section demonstrate how to animate an object along a path.
 
-[Animate an Object Along a Path (Double Animation)](how-to-animate-an-object-along-a-path-double-animation.md)  
-[Animate an Object Along a Path (Point Animation)](how-to-animate-an-object-along-a-path-point-animation.md)  
-[Animate an Object Along a Path (Matrix Animation)](how-to-animate-an-object-along-a-path-matrix-animation.md)  
-[Animate an Object Along a Path (Matrix Animation with Offset Accumulation)](animate-an-object-along-a-path-matrix-animation-with-offset.md)  
-[Rotate an Object by Using a Geometric Path (Matrix Animation)](how-to-rotate-an-object-by-using-a-geometric-path-matrix-animation.md)  
-[Rotate an Object by Using a Geometric Path](how-to-rotate-an-object-by-using-a-geometric-path.md)  
-  
-## Reference  
+## In This Section
 
-<xref:System.Windows.Media.Animation.PathAnimationSource>  
-  
-<xref:System.Windows.Media.Animation.Storyboard>  
-  
+[Animate an Object Along a Path (Double Animation)](how-to-animate-an-object-along-a-path-double-animation.md)
+[Animate an Object Along a Path (Point Animation)](how-to-animate-an-object-along-a-path-point-animation.md)
+[Animate an Object Along a Path (Matrix Animation)](how-to-animate-an-object-along-a-path-matrix-animation.md)
+[Animate an Object Along a Path (Matrix Animation with Offset Accumulation)](animate-an-object-along-a-path-matrix-animation-with-offset.md)
+[Rotate an Object by Using a Geometric Path (Matrix Animation)](how-to-rotate-an-object-by-using-a-geometric-path-matrix-animation.md)
+[Rotate an Object by Using a Geometric Path](how-to-rotate-an-object-by-using-a-geometric-path.md)
+
+## Reference
+
+<xref:System.Windows.Media.Animation.PathAnimationSource>
+
+<xref:System.Windows.Media.Animation.Storyboard>
+
 ## See also
 
 - [Graphics and Multimedia](index.md)

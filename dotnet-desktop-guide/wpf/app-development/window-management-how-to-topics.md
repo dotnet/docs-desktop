@@ -11,23 +11,23 @@ ms.assetid: 3090b408-94e4-446a-92ca-50f1fd36e5d8
 ---
 # Window Management How-to Topics
 
-The following topics show how to manage Windows Presentation Foundation (WPF) windows.  
-  
-## In This Section  
+The following topics show how to manage Windows Presentation Foundation (WPF) windows.
 
-[Automatically Size a Window to Fit Its Content](how-to-automatically-size-a-window-to-fit-its-content.md)  
-  [Get all Windows in an Application](how-to-get-all-windows-in-an-application.md)  
-  [Get and Set the Main Application Window](../windows/how-to-get-set-main-application-window.md)  
-  [Open a Dialog Box](../windows/how-to-open-window-dialog-box.md)  
-  [Open a Message Box](../windows/how-to-open-message-box.md)  
-  [Open a Window](../windows/how-to-open-window-dialog-box.md)  
-  
-## Related Sections  
+## In This Section
 
-[Application Management Overview](application-management-overview.md)  
-  
-[Navigation Overview](navigation-overview.md)  
-  
-[Hosting](hosting-wpf-applications.md)  
-  
+[Automatically Size a Window to Fit Its Content](how-to-automatically-size-a-window-to-fit-its-content.md)
+  [Get all Windows in an Application](how-to-get-all-windows-in-an-application.md)
+  [Get and Set the Main Application Window](../windows/how-to-get-set-main-application-window.md)
+  [Open a Dialog Box](../windows/how-to-open-window-dialog-box.md)
+  [Open a Message Box](../windows/how-to-open-message-box.md)
+  [Open a Window](../windows/how-to-open-window-dialog-box.md)
+
+## Related Sections
+
+[Application Management Overview](application-management-overview.md)
+
+[Navigation Overview](navigation-overview.md)
+
+[Hosting](hosting-wpf-applications.md)
+
 [Build and Deploy](building-and-deploying-wpf-applications.md)

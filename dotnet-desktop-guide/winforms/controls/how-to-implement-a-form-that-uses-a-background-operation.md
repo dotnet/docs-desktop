@@ -21,29 +21,29 @@ ms.assetid: 9f483f93-1613-4be1-a021-b4934e9c78f3
 ---
 # How to: Implement a Form That Uses a Background Operation
 
-The following example program creates a form that calculates Fibonacci numbers. The calculation runs on a thread that is separate from the user interface thread, so the user interface continues to run without delays as the calculation proceeds.  
-  
-There is extensive support for this task in Visual Studio.  
-  
-Also see [Walkthrough: Implementing a Form That Uses a Background Operation](walkthrough-implementing-a-form-that-uses-a-background-operation.md).  
-  
-## Example  
+The following example program creates a form that calculates Fibonacci numbers. The calculation runs on a thread that is separate from the user interface thread, so the user interface continues to run without delays as the calculation proceeds.
+
+There is extensive support for this task in Visual Studio.
+
+Also see [Walkthrough: Implementing a Form That Uses a Background Operation](walkthrough-implementing-a-form-that-uses-a-background-operation.md).
+
+## Example
 
 [!code-cpp[System.ComponentModel.BackgroundWorker#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/CPP/fibonacciform.cpp#1)]
 [!code-csharp[System.ComponentModel.BackgroundWorker#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/CS/fibonacciform.cs#1)]
-[!code-vb[System.ComponentModel.BackgroundWorker#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/VB/fibonacciform.vb#1)]  
-  
-## Compiling the Code  
+[!code-vb[System.ComponentModel.BackgroundWorker#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.ComponentModel.BackgroundWorker/VB/fibonacciform.vb#1)]
 
-This example requires:  
-  
-- References to the System, System.Drawing, and System.Windows.Forms assemblies.  
-  
-## Robust Programming  
-  
+## Compiling the Code
+
+This example requires:
+
+- References to the System, System.Drawing, and System.Windows.Forms assemblies.
+
+## Robust Programming
+
 > [!CAUTION]
-> When using multithreading of any sort, you potentially expose yourself to very serious and complex bugs. Consult the [Managed Threading Best Practices](/dotnet/standard/threading/managed-threading-best-practices) before implementing any solution that uses multithreading.  
-  
+> When using multithreading of any sort, you potentially expose yourself to very serious and complex bugs. Consult the [Managed Threading Best Practices](/dotnet/standard/threading/managed-threading-best-practices) before implementing any solution that uses multithreading.
+
 ## See also
 
 - <xref:System.ComponentModel.BackgroundWorker>

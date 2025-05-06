@@ -87,7 +87,7 @@ In general, however, the appearance of a window is implemented using XAML markup
         >
 
     <!-- Client area containing the content of the window -->
-    
+
 </Window>
 ```
 
@@ -139,7 +139,7 @@ With this configuration in place, you can focus on defining the appearance of th
     <!-- Client area containing the content of the window -->
 
     <Button Click="Button_Click">Click This Button</Button>
-    
+
 </Window>
 ```
 

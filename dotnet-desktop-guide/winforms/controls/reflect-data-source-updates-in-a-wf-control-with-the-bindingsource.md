@@ -17,22 +17,22 @@ description: Learn how to reflect data source updates in a Windows Forms control
 ---
 # How to: Reflect Data Source Updates in a Windows Forms Control with the BindingSource
 
-When you use data-bound controls, you sometimes have to respond to changes in the data source when the data source does not raise list-changed events. When you use the <xref:System.Windows.Forms.BindingSource> component to bind your data source to a Windows Forms control, you can notify the control that your data source has changed by calling the <xref:System.Windows.Forms.BindingSource.ResetBindings%2A> method.  
-  
-## Example  
+When you use data-bound controls, you sometimes have to respond to changes in the data source when the data source does not raise list-changed events. When you use the <xref:System.Windows.Forms.BindingSource> component to bind your data source to a Windows Forms control, you can notify the control that your data source has changed by calling the <xref:System.Windows.Forms.BindingSource.ResetBindings%2A> method.
 
-The following code example demonstrates using the <xref:System.Windows.Forms.BindingSource.ResetBindings%2A> method to notify a bound control about an update in the data source.  
-  
+## Example
+
+The following code example demonstrates using the <xref:System.Windows.Forms.BindingSource.ResetBindings%2A> method to notify a bound control about an update in the data source.
+
 [!code-cpp[System.Windows.Forms.DataConnector.ResetBindings#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataConnector.ResetBindings/CPP/form1.cpp#1)]
 [!code-csharp[System.Windows.Forms.DataConnector.ResetBindings#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataConnector.ResetBindings/CS/form1.cs#1)]
-[!code-vb[System.Windows.Forms.DataConnector.ResetBindings#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataConnector.ResetBindings/VB/form1.vb#1)]  
-  
-## Compiling the Code  
+[!code-vb[System.Windows.Forms.DataConnector.ResetBindings#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataConnector.ResetBindings/VB/form1.vb#1)]
 
-This example requires:  
-  
-- References to the System, System.Drawing and System.Windows.Forms assemblies.  
-  
+## Compiling the Code
+
+This example requires:
+
+- References to the System, System.Drawing and System.Windows.Forms assemblies.
+
 ## See also
 
 - <xref:System.Windows.Forms.BindingNavigator>

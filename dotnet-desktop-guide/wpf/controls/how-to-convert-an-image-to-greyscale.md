@@ -14,15 +14,15 @@ ms.assetid: 77935ff0-4500-4307-9710-96999dcf579f
 ---
 # How to: Convert an Image to Greyscale
 
-This example shows how to convert an image to grayscale using <xref:System.Windows.Media.Imaging.FormatConvertedBitmap>.  
-  
-## Example  
+This example shows how to convert an image to grayscale using <xref:System.Windows.Media.Imaging.FormatConvertedBitmap>.
 
-[!code-xaml[ImagingSnippetGallery_snip#FormatConvertedBitmapXamlExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/ImagingSnippetGallery_snip/CS/FormatConvertedBitmapExample.xaml#formatconvertedbitmapxamlexamplewholepage)]  
-  
+## Example
+
+[!code-xaml[ImagingSnippetGallery_snip#FormatConvertedBitmapXamlExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/ImagingSnippetGallery_snip/CS/FormatConvertedBitmapExample.xaml#formatconvertedbitmapxamlexamplewholepage)]
+
 [!code-csharp[ImagingSnippetGallery_procedural_snip#FormatConvertedBitmapCodeExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/ImagingSnippetGallery_procedural_snip/CSharp/FormatConvertedBitmapExample.cs#formatconvertedbitmapcodeexamplewholepage)]
-[!code-vb[ImagingSnippetGallery_procedural_snip#FormatConvertedBitmapCodeExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ImagingSnippetGallery_procedural_snip/VB/FormatConvertedBitmapExample.vb#formatconvertedbitmapcodeexamplewholepage)]  
-  
+[!code-vb[ImagingSnippetGallery_procedural_snip#FormatConvertedBitmapCodeExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ImagingSnippetGallery_procedural_snip/VB/FormatConvertedBitmapExample.vb#formatconvertedbitmapcodeexamplewholepage)]
+
 ## See also
 
 - [Use the Image Element](how-to-use-the-image-element.md)

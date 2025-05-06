@@ -12,20 +12,20 @@ ms.assetid: 5707e860-ee4a-4c9f-b123-80c64996af19
 ---
 # Image
 
-The <xref:System.Windows.Controls.Image> element is used to display bitmap images in Windows Presentation Foundation (WPF) applications.  
-  
-## In This Section  
+The <xref:System.Windows.Controls.Image> element is used to display bitmap images in Windows Presentation Foundation (WPF) applications.
 
-[How-to Topics](image-how-to-topics.md)  
-  
-## Reference  
+## In This Section
 
-<xref:System.Windows.Controls.Image>  
-  
-<xref:System.Windows.Media.Imaging.BitmapImage>  
-  
-<xref:System.Windows.Media.Imaging.BitmapSource>  
-  
+[How-to Topics](image-how-to-topics.md)
+
+## Reference
+
+<xref:System.Windows.Controls.Image>
+
+<xref:System.Windows.Media.Imaging.BitmapImage>
+
+<xref:System.Windows.Media.Imaging.BitmapSource>
+
 ## See also
 
 - [Imaging Overview](../graphics-multimedia/imaging-overview.md)

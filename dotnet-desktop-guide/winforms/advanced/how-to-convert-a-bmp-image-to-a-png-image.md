@@ -13,23 +13,23 @@ description: Learn how to convert a BMP image into a PNG image with a Windows Fo
 ---
 # How to: Convert a BMP image to a PNG image
 
-Oftentimes, you will want to convert from one image file format to another. You can do this conversion easily by calling the <xref:System.Drawing.Image.Save%2A> method of the <xref:System.Drawing.Image> class and specifying the <xref:System.Drawing.Imaging.ImageFormat> for the desired image file format.  
-  
-## Example  
+Oftentimes, you will want to convert from one image file format to another. You can do this conversion easily by calling the <xref:System.Drawing.Image.Save%2A> method of the <xref:System.Drawing.Image> class and specifying the <xref:System.Drawing.Imaging.ImageFormat> for the desired image file format.
 
-The following example loads a BMP image from a type, and saves the image in the PNG format.  
-  
+## Example
+
+The following example loads a BMP image from a type, and saves the image in the PNG format.
+
 [!code-csharp[UsingImageEncodersDecoders#4](~/samples/snippets/csharp/VS_Snippets_Winforms/UsingImageEncodersDecoders/CS/Form1.cs#4)]
-[!code-vb[UsingImageEncodersDecoders#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/UsingImageEncodersDecoders/VB/Form1.vb#4)]  
-  
-## Compiling the Code  
+[!code-vb[UsingImageEncodersDecoders#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/UsingImageEncodersDecoders/VB/Form1.vb#4)]
 
-This example requires:  
-  
-- A Windows Forms application.  
-  
-- A reference to the `System.Drawing.Imaging` namespace.  
-  
+## Compiling the Code
+
+This example requires:
+
+- A Windows Forms application.
+
+- A reference to the `System.Drawing.Imaging` namespace.
+
 ## See also
 
 - [How to: List Installed Encoders](how-to-list-installed-encoders.md)

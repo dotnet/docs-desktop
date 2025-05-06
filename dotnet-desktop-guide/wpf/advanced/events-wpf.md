@@ -13,37 +13,37 @@ ms.assetid: d3b93c6f-aa6b-486d-a010-d097ea8a516b
 ---
 # Events (WPF)
 
-Windows Presentation Foundation (WPF) introduces routed events that can invoke handlers that exist on various listeners in the element tree of an application.  
-  
-## In This Section  
+Windows Presentation Foundation (WPF) introduces routed events that can invoke handlers that exist on various listeners in the element tree of an application.
 
-[Routed Events Overview](../events/routed-events-overview.md)  
-[Attached Events Overview](../events/attached-events-overview.md)  
-[Object Lifetime Events](../events/object-lifetime-events.md)  
-[Marking Routed Events as Handled, and Class Handling](../events/marking-routed-events-as-handled-and-class-handling.md)  
-[Preview Events](../events/preview-events.md)  
-[Property Change Events](../events/property-change-events.md)  
-[Visual Basic and WPF Event Handling](../events/visual-basic-and-wpf-event-handling.md)  
-[Weak Event Patterns](../events/weak-event-patterns.md)  
-[How-to Topics](events-how-to-topics.md)  
-  
-## Reference  
+## In This Section
 
-<xref:System.Windows.RoutedEvent>  
-  
-<xref:System.Windows.EventManager>  
-  
-<xref:System.Windows.RoutingStrategy>  
-  
-## Related Sections  
+[Routed Events Overview](../events/routed-events-overview.md)
+[Attached Events Overview](../events/attached-events-overview.md)
+[Object Lifetime Events](../events/object-lifetime-events.md)
+[Marking Routed Events as Handled, and Class Handling](../events/marking-routed-events-as-handled-and-class-handling.md)
+[Preview Events](../events/preview-events.md)
+[Property Change Events](../events/property-change-events.md)
+[Visual Basic and WPF Event Handling](../events/visual-basic-and-wpf-event-handling.md)
+[Weak Event Patterns](../events/weak-event-patterns.md)
+[How-to Topics](events-how-to-topics.md)
 
-[WPF Architecture](wpf-architecture.md)  
-  [XAML in WPF](../xaml/index.md)  
-  [Base Elements](base-elements.md)  
-  [Element Tree and Serialization](element-tree-and-serialization.md)  
-  [Properties](properties-wpf.md)  
-  [Input](input-wpf.md)  
-  [Resources](resources-wpf.md)  
-  [Styling and Templating](../controls/styles-templates-overview.md)  
-  [WPF Content Model](../controls/wpf-content-model.md)  
+## Reference
+
+<xref:System.Windows.RoutedEvent>
+
+<xref:System.Windows.EventManager>
+
+<xref:System.Windows.RoutingStrategy>
+
+## Related Sections
+
+[WPF Architecture](wpf-architecture.md)
+  [XAML in WPF](../xaml/index.md)
+  [Base Elements](base-elements.md)
+  [Element Tree and Serialization](element-tree-and-serialization.md)
+  [Properties](properties-wpf.md)
+  [Input](input-wpf.md)
+  [Resources](resources-wpf.md)
+  [Styling and Templating](../controls/styles-templates-overview.md)
+  [WPF Content Model](../controls/wpf-content-model.md)
   [Threading Model](threading-model.md)

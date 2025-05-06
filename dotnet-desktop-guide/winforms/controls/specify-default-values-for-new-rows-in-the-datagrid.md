@@ -15,25 +15,25 @@ description: Learn how to specify default values for new rows in the Windows For
 ---
 # How to: Specify Default Values for New Rows in the Windows Forms DataGridView Control
 
-You can make data entry more convenient when the application fills in default values for newly added rows. With the <xref:System.Windows.Forms.DataGridView> class, you can fill in default values with the <xref:System.Windows.Forms.DataGridView.DefaultValuesNeeded> event. This event is raised when the user enters the row for new records. When your code handles this event, you can populate desired cells with values of your choosing.  
-  
-The following code example demonstrates how to specify default values for new rows using the <xref:System.Windows.Forms.DataGridView.DefaultValuesNeeded> event.  
-  
-## Example  
+You can make data entry more convenient when the application fills in default values for newly added rows. With the <xref:System.Windows.Forms.DataGridView> class, you can fill in default values with the <xref:System.Windows.Forms.DataGridView.DefaultValuesNeeded> event. This event is raised when the user enters the row for new records. When your code handles this event, you can populate desired cells with values of your choosing.
+
+The following code example demonstrates how to specify default values for new rows using the <xref:System.Windows.Forms.DataGridView.DefaultValuesNeeded> event.
+
+## Example
 
 [!code-csharp[System.Windows.Forms.DataGridViewMisc#120](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/CS/datagridviewmisc.cs#120)]
-[!code-vb[System.Windows.Forms.DataGridViewMisc#120](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/VB/datagridviewmisc.vb#120)]  
-  
-## Compiling the Code  
+[!code-vb[System.Windows.Forms.DataGridViewMisc#120](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMisc/VB/datagridviewmisc.vb#120)]
 
-This example requires:  
-  
-- A <xref:System.Windows.Forms.DataGridView> control named `dataGridView1`.  
-  
-- A `NewCustomerId` function for generating unique `CustomerID` values.  
-  
-- References to the <xref:System?displayProperty=nameWithType> and <xref:System.Windows.Forms?displayProperty=nameWithType> assemblies.  
-  
+## Compiling the Code
+
+This example requires:
+
+- A <xref:System.Windows.Forms.DataGridView> control named `dataGridView1`.
+
+- A `NewCustomerId` function for generating unique `CustomerID` values.
+
+- References to the <xref:System?displayProperty=nameWithType> and <xref:System.Windows.Forms?displayProperty=nameWithType> assemblies.
+
 ## See also
 
 - <xref:System.Windows.Forms.DataGridView>

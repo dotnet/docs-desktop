@@ -17,22 +17,22 @@ ms.assetid: ab8b4096-37ff-4e30-aabc-de79a2f2e972
 ---
 # How to: Raise Change Notifications Using the BindingSource ResetItem Method
 
-Some data sources for your controls do not raise change notifications when items are changed, added, or deleted. With the <xref:System.Windows.Forms.BindingSource> component, you can bind to such data sources and raise a change notification from your code.  
-  
-## Example  
+Some data sources for your controls do not raise change notifications when items are changed, added, or deleted. With the <xref:System.Windows.Forms.BindingSource> component, you can bind to such data sources and raise a change notification from your code.
 
-This form demonstrates using a <xref:System.Windows.Forms.BindingSource> component to bind a list to a <xref:System.Windows.Forms.DataGridView> control. The list does not raise change notifications, so the <xref:System.Windows.Forms.BindingSource.ResetItem%2A> method on the <xref:System.Windows.Forms.BindingSource> is called when an item in the list is changed. .  
-  
+## Example
+
+This form demonstrates using a <xref:System.Windows.Forms.BindingSource> component to bind a list to a <xref:System.Windows.Forms.DataGridView> control. The list does not raise change notifications, so the <xref:System.Windows.Forms.BindingSource.ResetItem%2A> method on the <xref:System.Windows.Forms.BindingSource> is called when an item in the list is changed. .
+
 [!code-cpp[System.Windows.Forms.DataConnector.ResetItem#1](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Windows.Forms.DataConnector.ResetItem/CPP/form1.cpp#1)]
 [!code-csharp[System.Windows.Forms.DataConnector.ResetItem#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataConnector.ResetItem/CS/form1.cs#1)]
-[!code-vb[System.Windows.Forms.DataConnector.ResetItem#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataConnector.ResetItem/VB/form1.vb#1)]  
-  
-## Compiling the Code  
+[!code-vb[System.Windows.Forms.DataConnector.ResetItem#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataConnector.ResetItem/VB/form1.vb#1)]
 
-This example requires:  
-  
-- References to the System, System.Data, System.Drawing and System.Windows.Forms assemblies.  
-  
+## Compiling the Code
+
+This example requires:
+
+- References to the System, System.Data, System.Drawing and System.Windows.Forms assemblies.
+
 ## See also
 
 - <xref:System.Windows.Forms.BindingNavigator>

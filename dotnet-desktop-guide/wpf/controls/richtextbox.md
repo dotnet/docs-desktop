@@ -12,13 +12,13 @@ ms.assetid: a177374d-ee54-4d00-aaae-c983481cae9b
 ---
 # RichTextBox
 
-The <xref:System.Windows.Controls.RichTextBox> element defines an editing control with built-in support for features such as cut and paste, rich document presentation, and content selection.  
-  
-## In This Section  
+The <xref:System.Windows.Controls.RichTextBox> element defines an editing control with built-in support for features such as cut and paste, rich document presentation, and content selection.
 
-[RichTextBox Overview](richtextbox-overview.md)  
-[How-to Topics](richtextbox-how-to-topics.md)  
-  
+## In This Section
+
+[RichTextBox Overview](richtextbox-overview.md)
+[How-to Topics](richtextbox-how-to-topics.md)
+
 ## See also
 
 - <xref:System.Windows.Controls.TextBox>

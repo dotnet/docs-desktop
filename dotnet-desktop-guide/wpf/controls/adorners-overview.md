@@ -46,7 +46,7 @@ The following example shows a class that implements a simple adorner. The exampl
 
 [!code-csharp[Adorners_SimpleCircleAdorner#_SimpleCircleAdornerBody](~/samples/snippets/csharp/VS_Snippets_Wpf/Adorners_SimpleCircleAdorner/CSharp/Window1.xaml.cs#_simplecircleadornerbody)]
 [!code-vb[Adorners_SimpleCircleAdorner#_SimpleCircleAdornerBody](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Adorners_SimpleCircleAdorner/VisualBasic/Window1.xaml.vb#_simplecircleadornerbody)]
-  
+
 The following image shows the SimpleCircleAdorner applied to a <xref:System.Windows.Controls.TextBox>:
 
 ![Screenshot that shows an adorned text box.](./media/adorners-overview/simplecircleadorner-textbox.png)

@@ -11,22 +11,22 @@ ms.assetid: c649a20f-8b7e-4a38-9b80-74839298d406
 ---
 # Performance
 
-Achieving optimal application performance requires forethought in application design and an understanding of best practices for Windows Presentation Foundation (WPF) application development. The topics in this section provide additional information on building high performance WPF applications.  
-  
-## In This Section  
+Achieving optimal application performance requires forethought in application design and an understanding of best practices for Windows Presentation Foundation (WPF) application development. The topics in this section provide additional information on building high performance WPF applications.
 
-[Graphics Rendering Tiers](graphics-rendering-tiers.md)  
-[Optimizing WPF Application Performance](optimizing-wpf-application-performance.md)  
-[Walkthrough: Caching Application Data in a WPF Application](walkthrough-caching-application-data-in-a-wpf-application.md)  
-  
-## Reference  
+## In This Section
 
-<xref:System.Windows.Media.RenderCapability>  
-  
-<xref:System.Windows.Media.RenderCapability.Tier%2A>  
-  
-<xref:System.Diagnostics.PresentationTraceSources>  
-  
+[Graphics Rendering Tiers](graphics-rendering-tiers.md)
+[Optimizing WPF Application Performance](optimizing-wpf-application-performance.md)
+[Walkthrough: Caching Application Data in a WPF Application](walkthrough-caching-application-data-in-a-wpf-application.md)
+
+## Reference
+
+<xref:System.Windows.Media.RenderCapability>
+
+<xref:System.Windows.Media.RenderCapability.Tier%2A>
+
+<xref:System.Diagnostics.PresentationTraceSources>
+
 ## See also
 
 - [Layout](layout.md)

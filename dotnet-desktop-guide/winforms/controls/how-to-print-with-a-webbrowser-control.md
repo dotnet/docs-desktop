@@ -18,19 +18,19 @@ ms.assetid: 3fb2a305-64ce-4b6c-9258-5330d3f21b6c
 ---
 # How to: Print with a WebBrowser Control
 
-The following code example demonstrates how use the <xref:System.Windows.Forms.WebBrowser> control to print a Web page without displaying it.  
-  
-## Example  
+The following code example demonstrates how use the <xref:System.Windows.Forms.WebBrowser> control to print a Web page without displaying it.
+
+## Example
 
 [!code-csharp[WebBrowserMisc#10](~/samples/snippets/csharp/VS_Snippets_Winforms/WebBrowserMisc/CS/WebBrowserMisc.cs#10)]
-[!code-vb[WebBrowserMisc#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/WebBrowserMisc/vb/WebBrowserMisc.vb#10)]  
-  
-## Compiling the Code  
+[!code-vb[WebBrowserMisc#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/WebBrowserMisc/vb/WebBrowserMisc.vb#10)]
 
-This example requires:  
-  
-- References to the `System` and `System.Windows.Forms` assemblies.  
-  
+## Compiling the Code
+
+This example requires:
+
+- References to the `System` and `System.Windows.Forms` assemblies.
+
 ## See also
 
 - <xref:System.Windows.Forms.WebBrowser>

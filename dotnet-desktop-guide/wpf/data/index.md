@@ -39,7 +39,7 @@ As the figure shows, data binding is essentially the bridge between your binding
   - A target property.
   - A binding source.
   - A path to the value in the binding source to use.
-  
+
   For example, if you bound the content of a `TextBox` to the `Employee.Name` property, you would set up your binding like the following table:
 
   | Setting                  | Value                                          |

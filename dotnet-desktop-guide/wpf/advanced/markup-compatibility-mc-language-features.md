@@ -16,7 +16,7 @@ ms.assetid: 67992d76-8bcc-456c-8232-03807803d69e
 ---
 # Markup Compatibility (mc:) Language Features
 
-## In This Section  
+## In This Section
 
-[mc:Ignorable Attribute](mc-ignorable-attribute.md)  
+[mc:Ignorable Attribute](mc-ignorable-attribute.md)
   [mc:ProcessContent Attribute](mc-processcontent-attribute.md)

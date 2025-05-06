@@ -17,7 +17,7 @@ Localization means to adapt a user interface to different cultures. To do this, 
 One of the files required for a WPF application is a project file (.proj). All resources that you use in your application should be included in the project file. The following XAML example shows this.
 
 ```xaml
-<Resource Include="data\picture1.jpg"/>  
+<Resource Include="data\picture1.jpg"/>
 <EmbeddedResource Include="data\stringtable.en-US.restext"/>
 ```
 

@@ -30,31 +30,31 @@ Discusses how to transform graphics with GDI+.
 
 ## Reference
 
-- <xref:System.Drawing.Graphics?displayProperty=nameWithType>  
+- <xref:System.Drawing.Graphics?displayProperty=nameWithType>
 Describes this class and has links to all its members.
 
-- <xref:System.Drawing.Image?displayProperty=nameWithType>  
+- <xref:System.Drawing.Image?displayProperty=nameWithType>
 Describes this class and has links to all its members.
 
-- <xref:System.Drawing.Bitmap?displayProperty=nameWithType>  
-Describes this class and has links to all its members.
-  
-- <xref:System.Drawing.Imaging.Metafile?displayProperty=nameWithType>  
+- <xref:System.Drawing.Bitmap?displayProperty=nameWithType>
 Describes this class and has links to all its members.
 
-- <xref:System.Drawing.Font?displayProperty=nameWithType>  
+- <xref:System.Drawing.Imaging.Metafile?displayProperty=nameWithType>
 Describes this class and has links to all its members.
 
-- <xref:System.Drawing.Brush?displayProperty=nameWithType>  
+- <xref:System.Drawing.Font?displayProperty=nameWithType>
 Describes this class and has links to all its members.
 
-- <xref:System.Drawing.Color?displayProperty=nameWithType>  
+- <xref:System.Drawing.Brush?displayProperty=nameWithType>
 Describes this class and has links to all its members.
 
-- <xref:System.Drawing.Drawing2D.Matrix?displayProperty=nameWithType>  
+- <xref:System.Drawing.Color?displayProperty=nameWithType>
 Describes this class and has links to all its members.
 
-- <xref:System.Windows.Forms.TextRenderer?displayProperty=nameWithType>  
+- <xref:System.Drawing.Drawing2D.Matrix?displayProperty=nameWithType>
+Describes this class and has links to all its members.
+
+- <xref:System.Windows.Forms.TextRenderer?displayProperty=nameWithType>
 Describes this class and has links to all its members.
 
 ## Related sections

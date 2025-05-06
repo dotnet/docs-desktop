@@ -14,24 +14,24 @@ ms.assetid: 146d97be-3d97-400e-accb-860bbf47729d
 ---
 # How to: Move Through a DataSet with the Windows Forms BindingNavigator Control
 
-As you build data-driven applications, you will often need to display collections of data to users. The <xref:System.Windows.Forms.BindingNavigator> control, in conjunction with the <xref:System.Windows.Forms.BindingSource> component, provides a convenient and extensible solution for moving through a collection and displaying items sequentially.  
-  
-## Example  
+As you build data-driven applications, you will often need to display collections of data to users. The <xref:System.Windows.Forms.BindingNavigator> control, in conjunction with the <xref:System.Windows.Forms.BindingSource> component, provides a convenient and extensible solution for moving through a collection and displaying items sequentially.
 
-The following code example demonstrates how to use a <xref:System.Windows.Forms.BindingNavigator> control to move through data. The set is contained in a <xref:System.Data.DataView>, which is bound to a <xref:System.Windows.Forms.TextBox> control with a <xref:System.Windows.Forms.BindingSource> component.  
-  
+## Example
+
+The following code example demonstrates how to use a <xref:System.Windows.Forms.BindingNavigator> control to move through data. The set is contained in a <xref:System.Data.DataView>, which is bound to a <xref:System.Windows.Forms.TextBox> control with a <xref:System.Windows.Forms.BindingSource> component.
+
 > [!NOTE]
-> Storing sensitive information, such as a password, within the connection string can affect the security of your application. Using Windows Authentication (also known as integrated security) is a more secure way to control access to a database. For more information, see [Protecting Connection Information](/dotnet/framework/data/adonet/protecting-connection-information).  
-  
-[!code-csharp[System.Windows.Forms.DataNavigator#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataNavigator/CS/form1.cs#1)]
-[!code-vb[System.Windows.Forms.DataNavigator#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataNavigator/VB/form1.vb#1)]  
-  
-## Compiling the Code  
+> Storing sensitive information, such as a password, within the connection string can affect the security of your application. Using Windows Authentication (also known as integrated security) is a more secure way to control access to a database. For more information, see [Protecting Connection Information](/dotnet/framework/data/adonet/protecting-connection-information).
 
-This example requires:  
-  
-- References to the System, System.Data, System.Drawing, System.Windows.Forms and System.Xml assemblies.  
-  
+[!code-csharp[System.Windows.Forms.DataNavigator#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataNavigator/CS/form1.cs#1)]
+[!code-vb[System.Windows.Forms.DataNavigator#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataNavigator/VB/form1.vb#1)]
+
+## Compiling the Code
+
+This example requires:
+
+- References to the System, System.Data, System.Drawing, System.Windows.Forms and System.Xml assemblies.
+
 ## See also
 
 - <xref:System.Windows.Forms.BindingSource>

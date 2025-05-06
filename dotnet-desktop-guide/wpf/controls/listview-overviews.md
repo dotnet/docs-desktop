@@ -12,20 +12,20 @@ ms.assetid: 49dfef1a-dddf-4fc6-a511-6d5f925a4781
 ---
 # ListView Overviews
 
-The topics in this section show you how to use a <xref:System.Windows.Controls.ListView> control.  
-  
-## In This Section  
+The topics in this section show you how to use a <xref:System.Windows.Controls.ListView> control.
 
-[ListView Overview](listview-overview.md)  
-[GridView Overview](gridview-overview.md)  
-[GridView Column Header Styles and Templates Overview](gridview-column-header-styles-and-templates-overview.md)  
-  
-## Reference  
+## In This Section
 
-<xref:System.Windows.Controls.ListView>  
-  
-<xref:System.Windows.Controls.GridView>  
-  
-## Related Sections  
+[ListView Overview](listview-overview.md)
+[GridView Overview](gridview-overview.md)
+[GridView Column Header Styles and Templates Overview](gridview-column-header-styles-and-templates-overview.md)
+
+## Reference
+
+<xref:System.Windows.Controls.ListView>
+
+<xref:System.Windows.Controls.GridView>
+
+## Related Sections
 
 [How-to Topics](listview-how-to-topics.md)

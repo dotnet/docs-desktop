@@ -69,7 +69,7 @@ landingContent:
             url: input-keyboard/how-to-handle-forms.md
           - text: Modify key events
             url: input-keyboard/how-to-change-key-press.md
-          
+
   - title: Mouse input
     linkLists:
       - linkListType: overview

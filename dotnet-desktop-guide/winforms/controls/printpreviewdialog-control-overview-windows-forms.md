@@ -41,13 +41,13 @@ The option can be set in the _runtimeconfig.json_ configuration file or the proj
   ```xml
   <Project Sdk="Microsoft.NET.Sdk">
 
-    <!-- Other project settings ... -->  
+    <!-- Other project settings ... -->
 
     <PropertyGroup>
       <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
     </PropertyGroup>
 
-    <ItemGroup>      
+    <ItemGroup>
       <RuntimeHostConfigurationOption Include="Switch.System.Drawing.Printing.OptimizePrintPreview" Value="true" />
     </ItemGroup>
 

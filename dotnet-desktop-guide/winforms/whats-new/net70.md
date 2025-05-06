@@ -20,10 +20,10 @@ High DPI rendering with <xref:System.Windows.Forms.HighDpiMode.PerMonitorV2> has
 - Correctly scale nested controls. For example, a button that's in a panel, which is placed on a tab page.
 - Scale <xref:System.Windows.Forms.Form.MaximumSize?displayProperty=nameWithType> and <xref:System.Windows.Forms.Form.MinimumSize?displayProperty=nameWithType> properties based on the current monitor DPI settings for applications that run `ApplicationHighDpiMode` set to `PerMonitorV2`.
 
-  In .NET 7, this feature is disabled by default and you must opt in to receive this change. Starting with .NET 8, this feature is enabled by default and you need to opt out of it to revert to the previous behavior.  
-  
+  In .NET 7, this feature is disabled by default and you must opt in to receive this change. Starting with .NET 8, this feature is enabled by default and you need to opt out of it to revert to the previous behavior.
+
   To enable feature, set the `configProperties` setting in [_runtimeconfig.json_](/dotnet/core/runtime-config/#runtimeconfigjson):
-  
+
   ```json
   {
     "runtimeOptions": {

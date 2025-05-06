@@ -43,7 +43,7 @@ Use the **Properties** pane to add or set the handler of an event:
     - Double-click the event to generate a new handler, it's blank if no handler is assigned. If it's not blank, this action opens the code for the form and navigates to the existing handler.
 
     - Use the selection box (:::image type="icon" source="../media/shared/visual-studio-chevron-button.png" border="false":::) to choose an existing handler.
-  
+
       The selection box will list all methods that have a compatible method signature for the event handler.
 
 ### Clear the handler

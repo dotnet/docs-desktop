@@ -12,30 +12,30 @@ ms.assetid: a5f9ab1a-d14c-4816-8540-3c5b8c8143d5
 ---
 # Key-Frame Animation How-to Topics
 
-The topics in this section demonstrate how to use key frame animations to animate more than two property values and control interpolation.  
-  
-## In This Section  
+The topics in this section demonstrate how to use key frame animations to animate more than two property values and control interpolation.
 
-[Animate an Object by Using Key Frames](how-to-animate-an-object-by-using-key-frames.md)  
-[Animate a Boolean by Using Key Frames](how-to-animate-a-boolean-by-using-key-frames.md)  
-[Animate a Double by Using Key Frames](how-to-animate-a-double-by-using-key-frames.md)  
-[Animate a Matrix by Using Key Frames](how-to-animate-a-matrix-by-using-key-frames.md)  
-[Animate a Point by Using Key Frames](how-to-animate-a-point-by-using-key-frames.md)  
-[Animate a Rectangle Geometry by Using Key Frames](how-to-animate-a-rectangle-geometry-by-using-key-frames.md)  
-[Animate a String by Using Key Frames](how-to-animate-a-string-by-using-key-frames.md)  
-[Animate Color by Using Key Frames](how-to-animate-color-by-using-key-frames.md)  
-[Animate Size Changes by Using Key Frames](how-to-animate-size-changes-by-using-key-frames.md)  
-[Animate the Thickness of a Border by Using Key Frames](how-to-animate-the-thickness-of-a-border-by-using-key-frames.md)  
-[Control Key-Frame Animation Timing](how-to-control-key-frame-animation-timing.md)  
-  
-## Reference  
+## In This Section
 
-<xref:System.Windows.Media.Animation.DoubleAnimationUsingKeyFrames>  
-  
-<xref:System.Windows.Media.Animation.Storyboard>  
-  
-<xref:System.Windows.Media.Animation.KeyTime>  
-  
+[Animate an Object by Using Key Frames](how-to-animate-an-object-by-using-key-frames.md)
+[Animate a Boolean by Using Key Frames](how-to-animate-a-boolean-by-using-key-frames.md)
+[Animate a Double by Using Key Frames](how-to-animate-a-double-by-using-key-frames.md)
+[Animate a Matrix by Using Key Frames](how-to-animate-a-matrix-by-using-key-frames.md)
+[Animate a Point by Using Key Frames](how-to-animate-a-point-by-using-key-frames.md)
+[Animate a Rectangle Geometry by Using Key Frames](how-to-animate-a-rectangle-geometry-by-using-key-frames.md)
+[Animate a String by Using Key Frames](how-to-animate-a-string-by-using-key-frames.md)
+[Animate Color by Using Key Frames](how-to-animate-color-by-using-key-frames.md)
+[Animate Size Changes by Using Key Frames](how-to-animate-size-changes-by-using-key-frames.md)
+[Animate the Thickness of a Border by Using Key Frames](how-to-animate-the-thickness-of-a-border-by-using-key-frames.md)
+[Control Key-Frame Animation Timing](how-to-control-key-frame-animation-timing.md)
+
+## Reference
+
+<xref:System.Windows.Media.Animation.DoubleAnimationUsingKeyFrames>
+
+<xref:System.Windows.Media.Animation.Storyboard>
+
+<xref:System.Windows.Media.Animation.KeyTime>
+
 ## See also
 
 - [Graphics and Multimedia](index.md)

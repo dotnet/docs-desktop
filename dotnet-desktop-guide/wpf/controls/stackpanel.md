@@ -13,32 +13,32 @@ ms.assetid: a82b824c-1b98-49a9-b7fd-2d9c154dd002
 ---
 # StackPanel
 
-The <xref:System.Windows.Controls.StackPanel> element is used to stack child elements horizontally or vertically.  
-  
-## In This Section  
+The <xref:System.Windows.Controls.StackPanel> element is used to stack child elements horizontally or vertically.
 
-[How-to Topics](stackpanel-how-to-topics.md)  
-  
-## Reference  
+## In This Section
 
-<xref:System.Windows.Controls.Panel>  
-  
-<xref:System.Windows.Controls.Canvas>  
-  
-<xref:System.Windows.Controls.DockPanel>  
-  
-<xref:System.Windows.Controls.Grid>  
-  
-<xref:System.Windows.Controls.StackPanel>  
-  
-<xref:System.Windows.Controls.VirtualizingStackPanel>  
-  
-<xref:System.Windows.Controls.WrapPanel>  
-  
-## Related Sections  
+[How-to Topics](stackpanel-how-to-topics.md)
 
-[Layout](../advanced/layout.md)  
-  
-[Walkthrough: My first WPF desktop application](../get-started/walkthrough-my-first-wpf-desktop-application.md)  
-  
+## Reference
+
+<xref:System.Windows.Controls.Panel>
+
+<xref:System.Windows.Controls.Canvas>
+
+<xref:System.Windows.Controls.DockPanel>
+
+<xref:System.Windows.Controls.Grid>
+
+<xref:System.Windows.Controls.StackPanel>
+
+<xref:System.Windows.Controls.VirtualizingStackPanel>
+
+<xref:System.Windows.Controls.WrapPanel>
+
+## Related Sections
+
+[Layout](../advanced/layout.md)
+
+[Walkthrough: My first WPF desktop application](../get-started/walkthrough-my-first-wpf-desktop-application.md)
+
 [ScrollViewer Overview](scrollviewer-overview.md)

@@ -16,17 +16,17 @@ ms.assetid: 5f445633-529c-4091-8a2c-13035ac8c41b
 ---
 # Drawings How-to Topics
 
-The topics in this section describe how to use <xref:System.Windows.Media.Drawing> objects to draw shapes, images, or text.  
-  
-## In This Section  
+The topics in this section describe how to use <xref:System.Windows.Media.Drawing> objects to draw shapes, images, or text.
 
-[Apply a GuidelineSet to a Drawing](how-to-apply-a-guidelineset-to-a-drawing.md)  
-  [Create a Composite Drawing](how-to-create-a-composite-drawing.md)  
-  [Create a GeometryDrawing](how-to-create-a-geometrydrawing.md)  
-  [Draw an Image Using ImageDrawing](how-to-draw-an-image-using-imagedrawing.md)  
-  [Play Media using a VideoDrawing](how-to-play-media-using-a-videodrawing.md)  
-  [Use a Drawing as an Image Source](how-to-use-a-drawing-as-an-image-source.md)  
-  
+## In This Section
+
+[Apply a GuidelineSet to a Drawing](how-to-apply-a-guidelineset-to-a-drawing.md)
+  [Create a Composite Drawing](how-to-create-a-composite-drawing.md)
+  [Create a GeometryDrawing](how-to-create-a-geometrydrawing.md)
+  [Draw an Image Using ImageDrawing](how-to-draw-an-image-using-imagedrawing.md)
+  [Play Media using a VideoDrawing](how-to-play-media-using-a-videodrawing.md)
+  [Use a Drawing as an Image Source](how-to-use-a-drawing-as-an-image-source.md)
+
 ## See also
 
 - <xref:System.Windows.Media.Drawing>

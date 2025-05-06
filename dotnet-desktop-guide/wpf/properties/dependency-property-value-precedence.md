@@ -59,7 +59,7 @@ The following list is the definitive order of precedence that the property syste
 9. **Default styles**, also known as **theme styles**. For more information, see [Default (Theme) styles](#default-theme-styles). Within a default style, the order of precedence is:
 
     1. Active triggers.
-  
+
     1. Setters.
 
 10. **Inheritance**. Some dependency properties of a child element inherit their value from the parent element. So, it might not be necessary to set property values on every element throughout the application. For more information, see [Property value inheritance](property-value-inheritance.md).

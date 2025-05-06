@@ -16,23 +16,23 @@ ms.assetid: e96f9764-4e3f-4d1c-bf20-3fb890118aae
 ---
 # Globalization and Localization
 
-Windows Presentation Foundation (WPF) provides extensive support for the development of world-ready applications.  
-  
-## In This Section  
+Windows Presentation Foundation (WPF) provides extensive support for the development of world-ready applications.
 
-[WPF Globalization and Localization Overview](wpf-globalization-and-localization-overview.md)  
-[Globalization for WPF](globalization-for-wpf.md)  
-[Use Automatic Layout Overview](use-automatic-layout-overview.md)  
-[Localization Attributes and Comments](localization-attributes-and-comments.md)  
-[Bidirectional Features in WPF Overview](bidirectional-features-in-wpf-overview.md)  
-[How-to Topics](how-to-localize-an-application.md)  
-  
-## Reference  
+## In This Section
 
-<xref:System.Globalization>  
-  
-<xref:System.Windows.FrameworkElement.FlowDirection%2A>  
-  
-<xref:System.Resources.NeutralResourcesLanguageAttribute>  
-  
-[xml:lang Handling in XAML](../../xaml-services/xml-language-handling.md)  
+[WPF Globalization and Localization Overview](wpf-globalization-and-localization-overview.md)
+[Globalization for WPF](globalization-for-wpf.md)
+[Use Automatic Layout Overview](use-automatic-layout-overview.md)
+[Localization Attributes and Comments](localization-attributes-and-comments.md)
+[Bidirectional Features in WPF Overview](bidirectional-features-in-wpf-overview.md)
+[How-to Topics](how-to-localize-an-application.md)
+
+## Reference
+
+<xref:System.Globalization>
+
+<xref:System.Windows.FrameworkElement.FlowDirection%2A>
+
+<xref:System.Resources.NeutralResourcesLanguageAttribute>
+
+[xml:lang Handling in XAML](../../xaml-services/xml-language-handling.md)

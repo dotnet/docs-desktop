@@ -18,7 +18,7 @@ Windows Forms is continuing to improve how it works with accessibility technolog
 
 > [!IMPORTANT]
 > Accessibility changes made in .NET Framework 4.7.1 through .NET Framework 4.8 are included in .NET, and are enabled by default. The .NET Framework supported compatibility switches that allowed applications to opt out of the new accessibility behavior. On the other hand, .NET doesn't support these settings and doesn't allow applications to opt out of accessibility behavior.
-  
+
 .NET Windows Forms applications benefit from all the new accessibility features (introduced in .NET Framework 4.7.1 - 4.8) without additional configuration.
 
 ## ListBox Accessibility support

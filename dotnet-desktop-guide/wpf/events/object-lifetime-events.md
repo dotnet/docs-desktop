@@ -50,7 +50,7 @@ One of the XAML elements is a custom control, which derives from a base class th
 
 :::code language="csharp" source="./snippets/object-lifetime-events/csharp/MainWindow.xaml.cs" id="LifetimeEventsCodeBehind":::
 :::code language="vb" source="./snippets/object-lifetime-events/vb/MainWindow.xaml.vb" id="LifetimeEventsCodeBehind":::
-  
+
 The program output shows the order of invocation of `Initialized`, `Loaded`, and `Unloaded` lifetime events on each tree object. Those events are described in the following sections, in the order that they're raised on each tree object.
 
 ### Initialized lifetime event

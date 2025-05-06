@@ -14,28 +14,28 @@ ms.assetid: 2dfdf025-347b-4342-bf28-95206c273f35
 ---
 # Window Styles and Templates
 
-This topic describes the styles and templates for the <xref:System.Windows.Window> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [Create a template for a control](how-to-create-apply-template.md).  
-  
-## Window Parts  
+This topic describes the styles and templates for the <xref:System.Windows.Window> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [Create a template for a control](how-to-create-apply-template.md).
 
-The <xref:System.Windows.Window> control does not have any named parts.  
-  
-## Window States  
+## Window Parts
 
-The following table lists the visual states for the <xref:System.Windows.Window> control.  
-  
-|VisualState Name|VisualStateGroup Name|Description|  
-|-|-|-|  
-|Valid|ValidationStates|The control uses the <xref:System.Windows.Controls.Validation> class and the <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `false`.|  
-|InvalidFocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` has the control has focus.|  
-|InvalidUnfocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` has the control does not have focus.|  
-  
+The <xref:System.Windows.Window> control does not have any named parts.
+
+## Window States
+
+The following table lists the visual states for the <xref:System.Windows.Window> control.
+
+|VisualState Name|VisualStateGroup Name|Description|
+|-|-|-|
+|Valid|ValidationStates|The control uses the <xref:System.Windows.Controls.Validation> class and the <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `false`.|
+|InvalidFocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` has the control has focus.|
+|InvalidUnfocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` has the control does not have focus.|
+
 ## Window ControlTemplate
 
 The following XAML is a generated copy of the <xref:System.Windows.Window> control template:
 
 :::code language="xaml" source="./snippets/shared/templates/WindowTemplate.xaml":::
-  
+
 ## See also
 
 - <xref:System.Windows.FrameworkElement.Style%2A>

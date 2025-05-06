@@ -14,39 +14,39 @@ ms.assetid: 3656055e-3222-43c8-b868-fd0c90cc31a3
 ---
 # NavigationWindow Styles and Templates
 
-This topic describes the styles and templates for the <xref:System.Windows.Navigation.NavigationWindow> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [Create a template for a control](how-to-create-apply-template.md).  
-  
-## NavigationWindow Parts  
+This topic describes the styles and templates for the <xref:System.Windows.Navigation.NavigationWindow> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [Create a template for a control](how-to-create-apply-template.md).
 
-The following table lists the named parts for the <xref:System.Windows.Navigation.NavigationWindow> control.  
-  
-|Part|Type|Description|  
-|-|-|-|  
-|PART_NavWinCP|<xref:System.Windows.Controls.ContentPresenter>|The area for the content.|  
-  
-## NavigationWindow States  
+## NavigationWindow Parts
 
-The following table lists the visual states for the <xref:System.Windows.Navigation.NavigationWindow> control.  
-  
-|VisualState Name|VisualStateGroup Name|Description|  
-|-|-|-|  
-|Valid|ValidationStates|The control uses the <xref:System.Windows.Controls.Validation> class and the <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `false`.|  
-|InvalidFocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` has the control has focus.|  
-|InvalidUnfocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` has the control does not have focus.|  
-  
-## NavigationWindow ControlTemplate Example  
+The following table lists the named parts for the <xref:System.Windows.Navigation.NavigationWindow> control.
 
-Although this example contains all of the elements that are defined in the <xref:System.Windows.Controls.ControlTemplate> of a <xref:System.Windows.Navigation.NavigationWindow> by default, the specific values should be thought of as examples.  
-  
-[!code-xaml[ControlTemplateExamples#NavigationWindow](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/navigationwindow.xaml#navigationwindow)]  
-  
-The preceding example uses one or more of the following resources.  
-  
-[!code-xaml[ControlTemplateExamples#ResizeGrip](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/resizegrip.xaml#resizegrip)]  
-[!code-xaml[ControlTemplateExamples#Resources](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/shared.xaml#resources)]  
-  
-For the complete sample, see [Styling with ControlTemplates Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Styles%20&%20Templates/IntroToStylingAndTemplating).  
-  
+|Part|Type|Description|
+|-|-|-|
+|PART_NavWinCP|<xref:System.Windows.Controls.ContentPresenter>|The area for the content.|
+
+## NavigationWindow States
+
+The following table lists the visual states for the <xref:System.Windows.Navigation.NavigationWindow> control.
+
+|VisualState Name|VisualStateGroup Name|Description|
+|-|-|-|
+|Valid|ValidationStates|The control uses the <xref:System.Windows.Controls.Validation> class and the <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `false`.|
+|InvalidFocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` has the control has focus.|
+|InvalidUnfocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` has the control does not have focus.|
+
+## NavigationWindow ControlTemplate Example
+
+Although this example contains all of the elements that are defined in the <xref:System.Windows.Controls.ControlTemplate> of a <xref:System.Windows.Navigation.NavigationWindow> by default, the specific values should be thought of as examples.
+
+[!code-xaml[ControlTemplateExamples#NavigationWindow](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/navigationwindow.xaml#navigationwindow)]
+
+The preceding example uses one or more of the following resources.
+
+[!code-xaml[ControlTemplateExamples#ResizeGrip](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/resizegrip.xaml#resizegrip)]
+[!code-xaml[ControlTemplateExamples#Resources](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/shared.xaml#resources)]
+
+For the complete sample, see [Styling with ControlTemplates Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Styles%20&%20Templates/IntroToStylingAndTemplating).
+
 ## See also
 
 - <xref:System.Windows.FrameworkElement.Style%2A>

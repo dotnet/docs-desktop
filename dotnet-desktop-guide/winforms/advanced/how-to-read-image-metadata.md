@@ -53,7 +53,7 @@ The data type of the values in the array pointed to by the `Value` property. The
 |10|`SRational`|
 
 ## Example
-  
+
 The following code example reads and displays the seven pieces of metadata in the file `FakePhoto.jpg`. The second (index 1) property item in the list has <xref:System.Drawing.Imaging.PropertyItem.Id%2A> 0x010F (equipment manufacturer) and <xref:System.Drawing.Imaging.PropertyItem.Type%2A> 2 (ASCII-encoded byte array). The code example displays the value of that property item.
 
 [!code-csharp[System.Drawing.WorkingWithImages#51](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.WorkingWithImages/CS/Class1.cs#51)]
@@ -63,61 +63,61 @@ The code produces output similar to the following:
 
 ```output
 Property Item 0
-  
+
 id: 0x320
-  
+
 type: 2
 
 length: 16 bytes
-  
+
 Property Item 1
-  
+
 id: 0x10f
-  
+
 type: 2
-  
+
 length: 17 bytes
-  
+
 Property Item 2
-  
+
 id: 0x110
-  
+
 type: 2
-  
+
 length: 7 bytes
-  
+
 Property Item 3
-  
+
 id: 0x9003
-  
+
 type: 2
-  
+
 length: 20 bytes
-  
+
 Property Item 4
-  
+
 id: 0x829a
-  
+
 type: 5
-  
+
 length: 8 bytes
-  
+
 Property Item 5
-  
+
 id: 0x5090
-  
+
 type: 3
-  
+
 length: 128 bytes
-  
+
 Property Item 6
-  
+
 id: 0x5091
-  
+
 type: 3
-  
+
 length: 128 bytes
-  
+
 The equipment make is Northwind Camera.
 ```
 

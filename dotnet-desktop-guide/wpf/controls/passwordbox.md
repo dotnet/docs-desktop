@@ -12,8 +12,8 @@ ms.assetid: 4dbf0320-30c2-4015-b9bc-4f6502f78e32
 ---
 # PasswordBox
 
-The <xref:System.Windows.Controls.PasswordBox> control is used to input sensitive or private information.  
-  
+The <xref:System.Windows.Controls.PasswordBox> control is used to input sensitive or private information.
+
 ## See also
 
 - <xref:System.Windows.Controls.TextBox>

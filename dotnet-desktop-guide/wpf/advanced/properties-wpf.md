@@ -14,9 +14,9 @@ ms.assetid: d6e0197f-f2c4-48ed-b45b-b9cdb64aab1c
 ---
 # Properties (WPF)
 
-Windows Presentation Foundation (WPF) provides a set of services that can be used to extend the functionality of a common language runtime (CLR) property. Collectively, these services are typically referred to as the WPF property system. A property that is backed by the WPF property system is known as a dependency property.  
-  
-## In This Section  
+Windows Presentation Foundation (WPF) provides a set of services that can be used to extend the functionality of a common language runtime (CLR) property. Collectively, these services are typically referred to as the WPF property system. A property that is backed by the WPF property system is known as a dependency property.
+
+## In This Section
 
 - [Dependency Properties Overview](../properties/dependency-properties-overview.md)
 - [Attached Properties Overview](../properties/attached-properties-overview.md)
@@ -32,25 +32,25 @@ Windows Presentation Foundation (WPF) provides a set of services that can be use
 - [Collection-Type Dependency Properties](../properties/collection-type-dependency-properties.md)
 - [XAML Loading and Dependency Properties](../properties/xaml-loading-and-dependency-properties.md)
 - [How-to Topics](properties-how-to-topics.md)
-  
-## Reference  
 
-<xref:System.Windows.DependencyProperty>  
-  
-<xref:System.Windows.PropertyMetadata>  
-  
-<xref:System.Windows.FrameworkPropertyMetadata>  
-  
-<xref:System.Windows.DependencyObject>  
-  
-## Related Sections  
+## Reference
 
-[WPF Architecture](wpf-architecture.md)  
-  [XAML in WPF](../xaml/index.md)  
-  [Base Elements](base-elements.md)  
-  [Element Tree and Serialization](element-tree-and-serialization.md)  
-  [Events](events-wpf.md)  
-  [Input](input-wpf.md)  
-  [Resources](resources-wpf.md)  
-  [WPF Content Model](../controls/wpf-content-model.md)  
+<xref:System.Windows.DependencyProperty>
+
+<xref:System.Windows.PropertyMetadata>
+
+<xref:System.Windows.FrameworkPropertyMetadata>
+
+<xref:System.Windows.DependencyObject>
+
+## Related Sections
+
+[WPF Architecture](wpf-architecture.md)
+  [XAML in WPF](../xaml/index.md)
+  [Base Elements](base-elements.md)
+  [Element Tree and Serialization](element-tree-and-serialization.md)
+  [Events](events-wpf.md)
+  [Input](input-wpf.md)
+  [Resources](resources-wpf.md)
+  [WPF Content Model](../controls/wpf-content-model.md)
   [Threading Model](threading-model.md)

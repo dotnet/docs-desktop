@@ -12,16 +12,16 @@ description: Learn how the ToolStripStatusLabel is a label for a StatusStrip and
 ---
 # ToolStripStatusLabel Control Overview
 
-The <xref:System.Windows.Forms.ToolStripStatusLabel> is a label for a <xref:System.Windows.Forms.StatusStrip>. Like the <xref:System.Windows.Forms.Label> or <xref:System.Windows.Forms.ToolStripLabel>, the <xref:System.Windows.Forms.ToolStripStatusLabel> provides a non-clickable display area for text, images, or both. The <xref:System.Windows.Forms.ToolStripStatusLabel> is hosted by a <xref:System.Windows.Forms.StatusStrip>.  
-  
-### Important ToolStripStatusLabel Members  
-  
-|Name|Description|  
-|----------|-----------------|  
-|<xref:System.Windows.Forms.ToolStripStatusLabel.Spring%2A>|Gets or sets a value indicating whether the <xref:System.Windows.Forms.ToolStripStatusLabel> automatically fills the available space on the <xref:System.Windows.Forms.StatusStrip> as the form is resized|  
-|<xref:System.Windows.Forms.ToolStripStatusLabel.BorderSides%2A>|Gets or sets a value that indicates which sides of the <xref:System.Windows.Forms.ToolStripStatusLabel> show borders.|  
-|<xref:System.Windows.Forms.ToolStripStatusLabel.BorderStyle%2A>|Gets or sets the border style of the <xref:System.Windows.Forms.ToolStripStatusLabel>.|  
-  
+The <xref:System.Windows.Forms.ToolStripStatusLabel> is a label for a <xref:System.Windows.Forms.StatusStrip>. Like the <xref:System.Windows.Forms.Label> or <xref:System.Windows.Forms.ToolStripLabel>, the <xref:System.Windows.Forms.ToolStripStatusLabel> provides a non-clickable display area for text, images, or both. The <xref:System.Windows.Forms.ToolStripStatusLabel> is hosted by a <xref:System.Windows.Forms.StatusStrip>.
+
+### Important ToolStripStatusLabel Members
+
+|Name|Description|
+|----------|-----------------|
+|<xref:System.Windows.Forms.ToolStripStatusLabel.Spring%2A>|Gets or sets a value indicating whether the <xref:System.Windows.Forms.ToolStripStatusLabel> automatically fills the available space on the <xref:System.Windows.Forms.StatusStrip> as the form is resized|
+|<xref:System.Windows.Forms.ToolStripStatusLabel.BorderSides%2A>|Gets or sets a value that indicates which sides of the <xref:System.Windows.Forms.ToolStripStatusLabel> show borders.|
+|<xref:System.Windows.Forms.ToolStripStatusLabel.BorderStyle%2A>|Gets or sets the border style of the <xref:System.Windows.Forms.ToolStripStatusLabel>.|
+
 ## See also
 
 - <xref:System.Windows.Forms.ToolStripStatusLabel>

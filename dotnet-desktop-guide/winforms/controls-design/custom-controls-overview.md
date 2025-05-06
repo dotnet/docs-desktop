@@ -88,7 +88,7 @@ A custom control is painted with the <xref:System.Windows.Forms.Control.OnPaint%
 The `OnPaint` method is called whenever the control is drawn or refreshed on the screen, and the `PaintEventArgs.ClipRectangle` object represents the rectangle in which painting takes place. If the entire control needs to be refreshed, `PaintEventArgs.ClipRectangle` represents the size of the entire control. If only part of the control needs to be refreshed, it represents only the region that needs to be redrawn. An example of such a case would be when a control is partially obscured by another control in the user interface, and that other control is moved away, the newly exposed portion of the underneath control must be redrawn.
 
 The code in the <xref:System.Windows.Forms.Control.OnPaint%2A> method of a control runs when the control is first drawn and whenever it's invalidated. To ensure that your control is redrawn every time it's resized, add the following line to the constructor of your control:
-  
+
 ```csharp
 SetStyle(ControlStyles.ResizeRedraw, true);
 ```

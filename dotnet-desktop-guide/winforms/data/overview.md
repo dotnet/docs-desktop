@@ -214,7 +214,7 @@ The following list shows the structures you can bind to in Windows Forms.
     A <xref:System.Data.DataSet> is a collection of tables, relationships, and constraints of the data in a database. You can simple-bind or complex-bind to the data within a dataset, but note that you're binding to the default <xref:System.Data.DataViewManager> for the `DataSet` (see the next bullet point).
 
   - <xref:System.Data.DataViewManager>
-  
+
     A <xref:System.Data.DataViewManager> is a customized view of the entire <xref:System.Data.DataSet>, analogous to a <xref:System.Data.DataView>, but with relations included. With a <xref:System.Data.DataViewManager.DataViewSettings%2A> collection, you can set default filters and sort options for any views that the `DataViewManager` has for a given table.
 
 ## Types of data binding

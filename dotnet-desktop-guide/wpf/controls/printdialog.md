@@ -13,16 +13,16 @@ ms.assetid: 0ce9e3e7-206f-45ec-b845-4c05cfb5ff1d
 ---
 # PrintDialog
 
-The <xref:System.Windows.Controls.PrintDialog> control is used to instantiate a standard print dialog box that automatically configures a <xref:System.Printing.PrintTicket> and <xref:System.Printing.PrintQueue> according to user input.  
-  
-## Reference  
+The <xref:System.Windows.Controls.PrintDialog> control is used to instantiate a standard print dialog box that automatically configures a <xref:System.Printing.PrintTicket> and <xref:System.Printing.PrintQueue> according to user input.
 
-<xref:System.Windows.Controls.PrintDialog>  
-  
-<xref:System.Printing.PrintTicket>  
-  
-<xref:System.Printing.PrintQueue>  
-  
+## Reference
+
+<xref:System.Windows.Controls.PrintDialog>
+
+<xref:System.Printing.PrintTicket>
+
+<xref:System.Printing.PrintQueue>
+
 ## See also
 
 - [Printing Overview](../documents/printing-overview.md)

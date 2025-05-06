@@ -12,17 +12,17 @@ ms.assetid: 7bf37ccb-5d09-4eae-9661-929582aeb259
 ---
 # Documents
 
-Windows Presentation Foundation (WPF) provides a versatile set of components that enable developers to build applications with advanced document features and an improved reading experience. In addition to enhanced capabilities and quality, Windows Presentation Foundation (WPF) also provides simplified management services for document packaging, security, and storage.  
-  
-## In This Section  
+Windows Presentation Foundation (WPF) provides a versatile set of components that enable developers to build applications with advanced document features and an improved reading experience. In addition to enhanced capabilities and quality, Windows Presentation Foundation (WPF) also provides simplified management services for document packaging, security, and storage.
 
-[Documents in WPF](documents-in-wpf.md)  
-[Document Serialization and Storage](document-serialization-and-storage.md)  
-[Annotations](annotations.md)  
-[Flow Content](flow-content.md)  
-[Typography](typography.md)  
-[Printing and Print System Management](printing-and-print-system-management.md)  
-  
+## In This Section
+
+[Documents in WPF](documents-in-wpf.md)
+[Document Serialization and Storage](document-serialization-and-storage.md)
+[Annotations](annotations.md)
+[Flow Content](flow-content.md)
+[Typography](typography.md)
+[Printing and Print System Management](printing-and-print-system-management.md)
+
 ## See also
 
 - <xref:System.Windows.Controls.DocumentViewer>

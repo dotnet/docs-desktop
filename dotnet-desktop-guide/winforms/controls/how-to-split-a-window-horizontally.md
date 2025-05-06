@@ -15,43 +15,43 @@ ms.assetid: a1f74f29-048c-4723-85fa-b9d375ab8f4b
 ---
 # How to: Split a Window Horizontally
 
-The following code example makes the splitter that divides the <xref:System.Windows.Forms.SplitContainer> control horizontal.  
-  
+The following code example makes the splitter that divides the <xref:System.Windows.Forms.SplitContainer> control horizontal.
+
 > [!NOTE]
-> The <xref:System.Windows.Forms.SplitContainer.Orientation%2A> property of the <xref:System.Windows.Forms.SplitContainer> control determines the direction of the splitter, not of the control itself.  
-  
-### To split a window horizontally  
-  
-1. Within a procedure, set the <xref:System.Windows.Forms.SplitContainer.Orientation%2A> property of the <xref:System.Windows.Forms.SplitContainer> control to <xref:System.Windows.Forms.Orientation.Horizontal>.  
-  
-    ```vb  
-    Sub ShowSplitContainer()  
-        Dim splitContainer1 as new SplitContainer()  
-        splitContainer1.BorderStyle = BorderStyle.Fixed3D  
-        splitContainer1.Location = New System.Drawing.Point(74, 20)  
-        splitContainer1.Name = "DemoSplitContainer"  
-        splitContainer1.Size = New System.Drawing.Size(212, 435)  
-        splitContainer1.TabIndex = 0  
-        splitContainer1.Orientation = Orientation.Horizontal  
-        Controls.Add(splitContainer1)  
-    End Sub  
-    ```  
-  
-    ```csharp  
-    public void showSplitContainer()  
-    {  
-        SplitContainer splitContainer1 = new SplitContainer ();  
-        splitContainer1.BorderStyle = BorderStyle.Fixed3D;  
-        splitContainer1.Location = new System.Drawing.Point (74, 20);  
-        splitContainer1.Name = "DemoSplitContainer";  
-        splitContainer1.Size = new System.Drawing.Size (212, 435);  
-        splitContainer1.TabIndex = 0;  
-        splitContainer1.Orientation = Orientation.Horizontal;  
-        this.Controls.Add (splitContainer1);  
-  
-    }  
-    ```  
-  
+> The <xref:System.Windows.Forms.SplitContainer.Orientation%2A> property of the <xref:System.Windows.Forms.SplitContainer> control determines the direction of the splitter, not of the control itself.
+
+### To split a window horizontally
+
+1. Within a procedure, set the <xref:System.Windows.Forms.SplitContainer.Orientation%2A> property of the <xref:System.Windows.Forms.SplitContainer> control to <xref:System.Windows.Forms.Orientation.Horizontal>.
+
+    ```vb
+    Sub ShowSplitContainer()
+        Dim splitContainer1 as new SplitContainer()
+        splitContainer1.BorderStyle = BorderStyle.Fixed3D
+        splitContainer1.Location = New System.Drawing.Point(74, 20)
+        splitContainer1.Name = "DemoSplitContainer"
+        splitContainer1.Size = New System.Drawing.Size(212, 435)
+        splitContainer1.TabIndex = 0
+        splitContainer1.Orientation = Orientation.Horizontal
+        Controls.Add(splitContainer1)
+    End Sub
+    ```
+
+    ```csharp
+    public void showSplitContainer()
+    {
+        SplitContainer splitContainer1 = new SplitContainer ();
+        splitContainer1.BorderStyle = BorderStyle.Fixed3D;
+        splitContainer1.Location = new System.Drawing.Point (74, 20);
+        splitContainer1.Name = "DemoSplitContainer";
+        splitContainer1.Size = new System.Drawing.Size (212, 435);
+        splitContainer1.TabIndex = 0;
+        splitContainer1.Orientation = Orientation.Horizontal;
+        this.Controls.Add (splitContainer1);
+
+    }
+    ```
+
 ## See also
 
 - <xref:System.Windows.Forms.SplitContainer>

@@ -12,53 +12,53 @@ description: Learn how Windows Presentation Foundation provides a straightforwar
 ---
 # Walkthrough: Hosting WPF Content in Win32
 
-Windows Presentation Foundation (WPF) provides a rich environment for creating applications. However, when you have a substantial investment in Win32 code, it might be more effective to add WPF functionality to your application rather than rewriting your original code. WPF provides a straightforward mechanism for hosting WPF content in a Win32 window.  
-  
-This tutorial describes how to write a sample application, [Hosting WPF Content in a Win32 Window Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Migration%20and%20Interoperability/Win32HostingWPFPage), that hosts WPF content in a Win32 window. You can extend this sample to host any Win32 window. Because it involves mixing managed and unmanaged code, the application is written in C++/CLI.  
+Windows Presentation Foundation (WPF) provides a rich environment for creating applications. However, when you have a substantial investment in Win32 code, it might be more effective to add WPF functionality to your application rather than rewriting your original code. WPF provides a straightforward mechanism for hosting WPF content in a Win32 window.
+
+This tutorial describes how to write a sample application, [Hosting WPF Content in a Win32 Window Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Migration%20and%20Interoperability/Win32HostingWPFPage), that hosts WPF content in a Win32 window. You can extend this sample to host any Win32 window. Because it involves mixing managed and unmanaged code, the application is written in C++/CLI.
 
 <a name="requirements"></a>
 
-## Requirements  
+## Requirements
 
-This tutorial assumes a basic familiarity with both WPF and Win32 programming. For a basic introduction to WPF programming, see [Getting Started](../get-started/create-app-visual-studio.md). For an introduction to Win32 programming, you should reference any of the numerous books on the subject, in particular *Programming Windows* by Charles Petzold.  
-  
-Because the sample that accompanies this tutorial is implemented in C++/CLI, this tutorial assumes familiarity with the use of C++ to program the Windows API plus an understanding of managed code programming. Familiarity with C++/CLI is helpful but not essential.  
-  
+This tutorial assumes a basic familiarity with both WPF and Win32 programming. For a basic introduction to WPF programming, see [Getting Started](../get-started/create-app-visual-studio.md). For an introduction to Win32 programming, you should reference any of the numerous books on the subject, in particular *Programming Windows* by Charles Petzold.
+
+Because the sample that accompanies this tutorial is implemented in C++/CLI, this tutorial assumes familiarity with the use of C++ to program the Windows API plus an understanding of managed code programming. Familiarity with C++/CLI is helpful but not essential.
+
 > [!NOTE]
-> This tutorial includes a number of code examples from the associated sample. However, for readability, it does not include the complete sample code. For the complete sample code, see [Hosting WPF Content in a Win32 Window Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Migration%20and%20Interoperability/Win32HostingWPFPage).  
-  
+> This tutorial includes a number of code examples from the associated sample. However, for readability, it does not include the complete sample code. For the complete sample code, see [Hosting WPF Content in a Win32 Window Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Migration%20and%20Interoperability/Win32HostingWPFPage).
+
 <a name="basic_procedure"></a>
 
-## The Basic Procedure  
+## The Basic Procedure
 
-This section outlines the basic procedure you use to host WPF content in a Win32 window. The remaining sections explain the details of each step.  
-  
-The key to hosting WPF content on a Win32 window is the <xref:System.Windows.Interop.HwndSource> class. This class wraps the WPF content in a Win32 window, allowing it to be incorporated into your user interface (UI) as a child window. The following approach combines the Win32 and WPF in a single application.  
-  
-1. Implement your WPF content as a managed class.  
-  
-2. Implement a Windows application with C++/CLI. If you are starting with an existing application and unmanaged C++ code, you can usually enable it to call managed code by changing your project settings to include the `/clr` compiler flag.  
-  
-3. Set the threading model to single-threaded apartment (STA).  
-  
-4. Handle the [WM_CREATE](/windows/desktop/winmsg/wm-create)notification in your window procedure and do the following:  
-  
-    1. Create a new <xref:System.Windows.Interop.HwndSource> object with the parent window as its `parent` parameter.  
-  
-    2. Create an instance of your WPF content class.  
-  
-    3. Assign a reference to the WPF content object to the <xref:System.Windows.Interop.HwndSource.RootVisual%2A> property of the <xref:System.Windows.Interop.HwndSource>.  
-  
-    4. Get the HWND for the content. The <xref:System.Windows.Interop.HwndSource.Handle%2A> property of the <xref:System.Windows.Interop.HwndSource> object contains the window handle (HWND). To get an HWND that you can use in the unmanaged part of your application, cast `Handle.ToPointer()` to an HWND.  
-  
-5. Implement a managed class that contains a static field to hold a reference to your WPF content. This class allows you to get a reference to the WPF content from your Win32 code.  
-  
-6. Assign the WPF content to the static field.  
-  
-7. Receive notifications from the WPF content by attaching a handler to one or more of the WPF events.  
-  
-8. Communicate with the WPF content by using the reference that you stored in the static field to set properties, and so on.  
-  
+This section outlines the basic procedure you use to host WPF content in a Win32 window. The remaining sections explain the details of each step.
+
+The key to hosting WPF content on a Win32 window is the <xref:System.Windows.Interop.HwndSource> class. This class wraps the WPF content in a Win32 window, allowing it to be incorporated into your user interface (UI) as a child window. The following approach combines the Win32 and WPF in a single application.
+
+1. Implement your WPF content as a managed class.
+
+2. Implement a Windows application with C++/CLI. If you are starting with an existing application and unmanaged C++ code, you can usually enable it to call managed code by changing your project settings to include the `/clr` compiler flag.
+
+3. Set the threading model to single-threaded apartment (STA).
+
+4. Handle the [WM_CREATE](/windows/desktop/winmsg/wm-create)notification in your window procedure and do the following:
+
+    1. Create a new <xref:System.Windows.Interop.HwndSource> object with the parent window as its `parent` parameter.
+
+    2. Create an instance of your WPF content class.
+
+    3. Assign a reference to the WPF content object to the <xref:System.Windows.Interop.HwndSource.RootVisual%2A> property of the <xref:System.Windows.Interop.HwndSource>.
+
+    4. Get the HWND for the content. The <xref:System.Windows.Interop.HwndSource.Handle%2A> property of the <xref:System.Windows.Interop.HwndSource> object contains the window handle (HWND). To get an HWND that you can use in the unmanaged part of your application, cast `Handle.ToPointer()` to an HWND.
+
+5. Implement a managed class that contains a static field to hold a reference to your WPF content. This class allows you to get a reference to the WPF content from your Win32 code.
+
+6. Assign the WPF content to the static field.
+
+7. Receive notifications from the WPF content by attaching a handler to one or more of the WPF events.
+
+8. Communicate with the WPF content by using the reference that you stored in the static field to set properties, and so on.
+
 > [!NOTE]
 > You can also use WPF content. However, you will have to compile it separately as a dynamic-link library (DLL) and reference that DLL from your Win32 application. The remainder of the procedure is similar to that outlined above.
 

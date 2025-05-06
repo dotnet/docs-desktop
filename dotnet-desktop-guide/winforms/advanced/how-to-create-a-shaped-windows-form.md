@@ -23,22 +23,22 @@ description: Learn how to create a Shaped Windows Form, with an example that giv
 ---
 # How to: Create a Shaped Windows Form
 
-This example gives a form an elliptical shape that resizes with the form.  
-  
-## Example  
+This example gives a form an elliptical shape that resizes with the form.
+
+## Example
 
 [!code-cpp[System.Drawing.ConceptualHowTos#10](~/samples/snippets/cpp/VS_Snippets_Winforms/System.Drawing.ConceptualHowTos/cpp/form1.cpp#10)]
 [!code-csharp[System.Drawing.ConceptualHowTos#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.ConceptualHowTos/CS/form1.cs#10)]
-[!code-vb[System.Drawing.ConceptualHowTos#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ConceptualHowTos/VB/form1.vb#10)]  
-  
-## Compiling the Code  
+[!code-vb[System.Drawing.ConceptualHowTos#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.ConceptualHowTos/VB/form1.vb#10)]
 
-This example requires:  
-  
-- References to the <xref:System.Windows.Forms> and <xref:System.Drawing> namespaces.  
-  
-This example overrides the <xref:System.Windows.Forms.Control.OnPaint%2A> method to change the shape of the form. To use this code, copy the method declaration as well as the drawing code inside the method.  
-  
+## Compiling the Code
+
+This example requires:
+
+- References to the <xref:System.Windows.Forms> and <xref:System.Drawing> namespaces.
+
+This example overrides the <xref:System.Windows.Forms.Control.OnPaint%2A> method to change the shape of the form. To use this code, copy the method declaration as well as the drawing code inside the method.
+
 ## See also
 
 - <xref:System.Windows.Forms.Control.OnPaint%2A>

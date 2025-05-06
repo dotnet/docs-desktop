@@ -12,35 +12,35 @@ ms.assetid: 9a7ccd30-095b-4f34-b284-8fb7e8f95a9b
 ---
 # Input (WPF)
 
-Windows Presentation Foundation (WPF) includes support for several types of input. This input includes text, touch, mouse, commands, focus, touch, drag-and-drop, and digital ink. This section describes topics related to input in WPF.  
-  
-## In This Section  
+Windows Presentation Foundation (WPF) includes support for several types of input. This input includes text, touch, mouse, commands, focus, touch, drag-and-drop, and digital ink. This section describes topics related to input in WPF.
 
-[Input Overview](input-overview.md)  
-[Commanding Overview](commanding-overview.md)  
-[Focus Overview](focus-overview.md)  
-[Styling for Focus in Controls, and FocusVisualStyle](styling-for-focus-in-controls-and-focusvisualstyle.md)  
-[Walkthrough: Creating Your First Touch Application](walkthrough-creating-your-first-touch-application.md)  
-[How-to Topics](input-and-commands-how-to-topics.md)  
-[Digital Ink](digital-ink.md)  
-  
-## Reference  
+## In This Section
 
-<xref:System.Windows.UIElement>  
-  
-<xref:System.Windows.FrameworkElement>  
-  
-<xref:System.Windows.ContentElement>  
-  
-<xref:System.Windows.FrameworkContentElement>  
-  
-<xref:System.Windows.Input.Keyboard>  
-  
-<xref:System.Windows.Input.Mouse>  
-  
-<xref:System.Windows.Input.FocusManager>  
-  
-## Related Sections  
+[Input Overview](input-overview.md)
+[Commanding Overview](commanding-overview.md)
+[Focus Overview](focus-overview.md)
+[Styling for Focus in Controls, and FocusVisualStyle](styling-for-focus-in-controls-and-focusvisualstyle.md)
+[Walkthrough: Creating Your First Touch Application](walkthrough-creating-your-first-touch-application.md)
+[How-to Topics](input-and-commands-how-to-topics.md)
+[Digital Ink](digital-ink.md)
 
-[Controls](../controls/index.md)  
+## Reference
+
+<xref:System.Windows.UIElement>
+
+<xref:System.Windows.FrameworkElement>
+
+<xref:System.Windows.ContentElement>
+
+<xref:System.Windows.FrameworkContentElement>
+
+<xref:System.Windows.Input.Keyboard>
+
+<xref:System.Windows.Input.Mouse>
+
+<xref:System.Windows.Input.FocusManager>
+
+## Related Sections
+
+[Controls](../controls/index.md)
   [Events](events-wpf.md)

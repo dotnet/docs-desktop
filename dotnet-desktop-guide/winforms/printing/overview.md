@@ -96,5 +96,5 @@ The following procedure requires that you've created a Windows-based application
     In the following code example, a message box is displayed, indicating that the document finished printing.
 
     :::code language="vb" source="snippets/overview/vb/Form1.vb" id="message_box_indicating_document_has_finished_printing":::
-  
+
     :::code language="csharp" source="snippets/overview/csharp/Form1.cs" id="message_box_indicating_document_has_finished_printing":::

@@ -11,13 +11,13 @@ ms.assetid: b4a97c97-7f88-4a89-b1d1-cf2c0d087955
 ---
 # Fonts How-to Topics
 
-The topics in this section demonstrate how to use the font features included with Windows Presentation Foundation (WPF).  
-  
-## In This Section  
+The topics in this section demonstrate how to use the font features included with Windows Presentation Foundation (WPF).
 
-[Enumerate System Fonts](how-to-enumerate-system-fonts.md)  
-[Use the FontSizeConverter Class](how-to-use-the-fontsizeconverter-class.md)  
-  
+## In This Section
+
+[Enumerate System Fonts](how-to-enumerate-system-fonts.md)
+[Use the FontSizeConverter Class](how-to-use-the-fontsizeconverter-class.md)
+
 ## See also
 
 - <xref:System.Windows.FontStyle>

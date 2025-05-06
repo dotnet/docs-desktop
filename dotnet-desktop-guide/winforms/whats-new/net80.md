@@ -52,9 +52,9 @@ High DPI rendering with <xref:System.Windows.Forms.HighDpiMode.PerMonitorV2> has
 - Scale <xref:System.Windows.Forms.Form.MaximumSize?displayProperty=nameWithType> and <xref:System.Windows.Forms.Form.MinimumSize?displayProperty=nameWithType> properties based on the current monitor DPI settings.
 
   Starting with .NET 8, this feature is enabled by default and you need to opt out of it to revert to the previous behavior.
-  
+
   To disable the feature, add `System.Windows.Forms.ScaleTopLevelFormMinMaxSizeForDpi` to the `configProperties` setting in [_runtimeconfig.json_](/dotnet/core/runtime-config/#runtimeconfigjson), and set the value to false:
-  
+
   ```json
   {
     "runtimeOptions": {

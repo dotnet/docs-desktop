@@ -28,7 +28,7 @@ There are a few breaking changes you should be aware of when migrating from .NET
 The following controls have been added since Windows Forms was ported to .NET Framework:
 
 - <xref:System.Windows.Forms.TaskDialog?displayProperty=fullName>
-  
+
   A task dialog is a dialog box that can be used to display information and receive simple input from the user. Like a message box, it's formatted by the operating system according to parameters you set. Task dialog has more features than a message box. For more information, see the [Task dialog sample](https://github.com/dotnet/samples/tree/master/windowsforms/TaskDialogDemo).
 
 - <xref:Microsoft.Web.WebView2.WinForms.WebView2?displayProperty=fullName>

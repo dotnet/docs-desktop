@@ -15,23 +15,23 @@ ms.assetid: 7d148bb6-8a1e-47d7-a08d-35828d2e688f
 ---
 # How to: Play a Sound Embedded in a Resource from a Windows Form
 
-You can use the <xref:System.Media.SoundPlayer> class to play a sound from an embedded resource.  
-  
-## Example  
+You can use the <xref:System.Media.SoundPlayer> class to play a sound from an embedded resource.
+
+## Example
 
 [!code-csharp[System.Windows.Forms.Sound#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Sound/CS/soundtestform.cs#10)]
-[!code-vb[System.Windows.Forms.Sound#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Sound/VB/soundtestform.vb#10)]  
-  
-## Compiling the Code  
+[!code-vb[System.Windows.Forms.Sound#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Sound/VB/soundtestform.vb#10)]
 
-This example requires:  
-  
-Importing the <xref:System.Media?displayProperty=nameWithType> namespace.  
-  
-Including the sound file as an embedded resource in your project.  
-  
-Replacing "\<AssemblyName>" with the name of the assembly in which the sound file is embedded. Do not include the ".dll" suffix.  
-  
+## Compiling the Code
+
+This example requires:
+
+Importing the <xref:System.Media?displayProperty=nameWithType> namespace.
+
+Including the sound file as an embedded resource in your project.
+
+Replacing "\<AssemblyName>" with the name of the assembly in which the sound file is embedded. Do not include the ".dll" suffix.
+
 ## See also
 
 - <xref:System.Media.SoundPlayer>

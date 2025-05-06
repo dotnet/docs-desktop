@@ -15,11 +15,11 @@ description: Learn how to enumerate the fonts in the system font collection and 
 ---
 # How to: Enumerate System Fonts
 
-## Example  
+## Example
 
-The following example shows how to enumerate the fonts in the system font collection. The font family name of each <xref:System.Windows.Media.FontFamily> within <xref:System.Windows.Media.Fonts.SystemFontFamilies%2A> is added as an item to a combo box.  
-  
+The following example shows how to enumerate the fonts in the system font collection. The font family name of each <xref:System.Windows.Media.FontFamily> within <xref:System.Windows.Media.Fonts.SystemFontFamilies%2A> is added as an item to a combo box.
+
 [!code-csharp[TextOverview#100](~/samples/snippets/csharp/VS_Snippets_Wpf/TextOverview/CSharp/Window1.xaml.cs#100)]
-[!code-vb[TextOverview#100](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextOverview/visualbasic/window1.xaml.vb#100)]  
-  
+[!code-vb[TextOverview#100](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextOverview/visualbasic/window1.xaml.vb#100)]
+
 If multiple versions of the same font family reside in the same directory, the Windows Presentation Foundation (WPF) font enumeration returns the most recent version of the font. If the version information does not provide resolution, the font with latest timestamp is returned. If the timestamp information is equivalent, the font file that is first in alphabetical order is returned.
