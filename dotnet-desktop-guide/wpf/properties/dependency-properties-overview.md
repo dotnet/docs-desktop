@@ -166,7 +166,7 @@ The following example animates the <xref:System.Windows.Controls.Control.Backgro
 
 :::code language="xaml" source="./snippets/dependency-properties-overview/csharp/MainWindow.xaml" id="Animate":::
 
-For more about animating properties, see [Animation overview](../graphics-multimedia/animation-overview?view=netframeworkdesktop-4.8&preserve-view=true) and [Storyboards overview](/dotnet/desktop/wpf/graphics-multimedia/storyboards-overview.md)
+For more about animating properties, see [Animation overview](../graphics-multimedia/animation-overview) and [Storyboards overview](../graphics-multimedia/storyboards-overview.md)
 
 ### Metadata overrides
 

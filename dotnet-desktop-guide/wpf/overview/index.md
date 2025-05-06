@@ -27,7 +27,7 @@ There are two implementations of WPF:
 
     The .NET Framework implementation of WPF that's supported by Visual Studio 2019 and Visual Studio 2017.
 
-    .NET Framework 4 is a Windows-only version of .NET and is considered a Windows Operating System component. This version of WPF is distributed with .NET Framework. For more information about the .NET Framework version of WPF, see [Introduction to WPF for .NET Framework](../introduction-to-wpf.md?view=netframeworkdesktop-4.8&preserve-view=true).
+    .NET Framework 4 is a Windows-only version of .NET and is considered a Windows Operating System component. This version of WPF is distributed with .NET Framework.
 
 This overview is intended for newcomers and covers the key capabilities and concepts of WPF. To learn how to create a WPF app, see [Tutorial: Create a new WPF app](../get-started/create-app-visual-studio.md).
 
