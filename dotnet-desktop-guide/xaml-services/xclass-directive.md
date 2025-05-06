@@ -52,7 +52,7 @@ At a certain level of architecture, the meaning of `x:Class` is undefined in .NE
 
 ## x:Class in the WPF Programming Model
 
-In WPF applications and the WPF application model, `x:Class` can be declared as an attribute for any element that is the root of a XAML file and is being compiled (where the XAML is included in a WPF application project with `Page` build action), or for the <xref:System.Windows.Application> root in the application definition of a compiled WPF application. Declaring `x:Class` on an element other than a page root or application root, or on a WPF XAML file that is not compiled, causes a compile-time error under the .NET Framework 3.0 and .NET Framework 3.5 WPF XAML compiler. For information about other aspects of `x:Class` handling in WPF, see [Code-Behind and XAML in WPF](../framework/wpf/advanced/code-behind-and-xaml-in-wpf.md).
+In WPF applications and the WPF application model, `x:Class` can be declared as an attribute for any element that is the root of a XAML file and is being compiled (where the XAML is included in a WPF application project with `Page` build action), or for the <xref:System.Windows.Application> root in the application definition of a compiled WPF application. Declaring `x:Class` on an element other than a page root or application root, or on a WPF XAML file that is not compiled, causes a compile-time error under the .NET Framework 3.0 and .NET Framework 3.5 WPF XAML compiler. For information about other aspects of `x:Class` handling in WPF, see [Code-Behind and XAML in WPF](../wpf/advanced/code-behind-and-xaml-in-wpf.md).
 
 ## x:Class for Windows Workflow Foundation
 
@@ -65,6 +65,6 @@ For Windows Workflow Foundation, `x:Class` names the class of a custom activity 
 ## See also
 
 - [x:Subclass Directive](xsubclass-directive.md)
-- [XAML and Custom Classes for WPF](../framework/wpf/advanced/xaml-and-custom-classes-for-wpf.md)
+- [XAML and Custom Classes for WPF](../wpf/advanced/xaml-and-custom-classes-for-wpf.md)
 - [x:ClassModifier Directive](xclassmodifier-directive.md)
-- [Types Migrated from WPF to System.Xaml](../framework/wpf/advanced/types-migrated-from-wpf-to-system.md)
+- [Types Migrated from WPF to System.Xaml](../wpf/advanced/types-migrated-from-wpf-to-system.md)

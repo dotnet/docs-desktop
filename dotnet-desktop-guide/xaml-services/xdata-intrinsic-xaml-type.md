@@ -52,4 +52,4 @@ Technically, `x:XData` can be used as the content of any property of type <xref:
 
 - <xref:System.Windows.Data.XmlDataProvider>
 - [Data Binding Overview](../net/wpf/data/index.md?view=netdesktop-5.0&preserve-view=true)
-- [Binding Markup Extension](../framework/wpf/advanced/binding-markup-extension.md)
+- [Binding Markup Extension](../wpf/advanced/binding-markup-extension.md)
