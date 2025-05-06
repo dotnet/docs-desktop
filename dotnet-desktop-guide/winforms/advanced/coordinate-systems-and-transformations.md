@@ -15,13 +15,13 @@ GDI+ provides a world transformation and a page transformation so that you can t
   
 ## In This Section  
 
-[Types of Coordinate Systems](types-of-coordinate-systems.md)  
+[Types of Coordinate Systems](types-of-coordinate-systems.md)\
 Introduces coordinates systems and transformations.  
   
-[Matrix Representation of Transformations](matrix-representation-of-transformations.md)  
+[Matrix Representation of Transformations](matrix-representation-of-transformations.md)\
 Discusses using matrices for coordinate transformations.  
   
-[Global and Local Transformations](global-and-local-transformations.md)  
+[Global and Local Transformations](global-and-local-transformations.md)\
 Discusses global and local transformations.  
   
 ## Reference  
@@ -31,8 +31,8 @@ Encapsulates a 3-by-3 affine matrix that represents a geometric transform.
   
 ## Related Sections  
 
-[Using Transformations in Managed GDI+](using-transformations-in-managed-gdi.md)  
+[Using Transformations in Managed GDI+](using-transformations-in-managed-gdi.md)\
 Provides a list of topics that provide more information about how to use matrix transformations.  
   
-[About GDI+ Managed Code](about-gdi-managed-code.md)  
+[About GDI+ Managed Code](about-gdi-managed-code.md)\
 Contains a list of topics describing the graphics constructs you can use in the .NET Framework.

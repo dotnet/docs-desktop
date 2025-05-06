@@ -78,7 +78,7 @@ You can also convert formatted text to a <xref:System.Windows.Media.PathGeometry
   
 The following example shows formatted text that has been converted to a <xref:System.Windows.Media.PathGeometry> object. An animated ellipse follows the path of the strokes of the rendered text.  
   
-![Sphere following the path geometry of text](./media/drawing-formatted-text/sphere-following-geometry-path.gif)  
+![Sphere following the path geometry of text](./media/drawing-formatted-text/sphere-following-geometry-path.gif)\
 Sphere following the path geometry of text  
   
 For more information, see [How to: Create a PathGeometry Animation for Text](/previous-versions/dotnet/netframework-4.0/ms743610(v=vs.100)).  

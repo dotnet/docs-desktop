@@ -80,7 +80,7 @@ A <xref:System.Windows.Media.Visual> describes its content as one or more <xref:
   
 The following illustration shows the order in which <xref:System.Windows.Media.DrawingGroup> operations are applied during the rendering sequence.  
   
-![DrawingGroup order of operations](./media/graphcismm-drawinggroup-order.png "graphcismm_drawinggroup_order")  
+![DrawingGroup order of operations](./media/graphcismm-drawinggroup-order.png "graphcismm_drawinggroup_order")\
 Order of DrawingGroup operations  
   
 For more information, see [Drawing Objects Overview](drawing-objects-overview.md).  
@@ -175,7 +175,7 @@ The logical tree in WPF represents the elements of an application at run time. A
   
 If you were to enumerate the logical objects that comprise the <xref:System.Windows.Controls.DockPanel> element in the markup example, you would find the hierarchy of logical objects illustrated below:  
   
-![Tree diagram](./media/tree1-wcp.gif "Tree1_wcp")  
+![Tree diagram](./media/tree1-wcp.gif "Tree1_wcp")\
 Diagram of logical tree  
   
 Both the visual tree and logical tree are synchronized with the current set of application elements, reflecting any addition, deletion, or modification of elements. However, the trees present different views of the application. Unlike the visual tree, the logical tree does not expand a control's <xref:System.Windows.Controls.ContentPresenter> element. This means there is not a direct one-to-one correspondence between a logical tree and a visual tree for the same set of objects. In fact, invoking the **LogicalTreeHelper** object's <xref:System.Windows.LogicalTreeHelper.GetChildren%2A> method and the **VisualTreeHelper** object's <xref:System.Windows.Media.VisualTreeHelper.GetChild%2A> method using the same element as a parameter yields differing results.  
@@ -194,7 +194,7 @@ Notice how the <xref:System.Windows.Controls.Label>, <xref:System.Windows.Contro
 
 WPF provides a suite of performance profiling tools that allow you to analyze the run-time behavior of your application and determine the types of performance optimizations you can apply. The Visual Profiler tool provides a rich, graphical view of performance data by mapping directly to the application's visual tree. In this screenshot, the **CPU Usage** section of the Visual Profiler gives you a precise breakdown of an object's use of WPF services, such as rendering and layout.  
   
-![Visual Profiler display output](./media/wpfperf-visualprofiler-04.png "WPFPerf_VisualProfiler_04")  
+![Visual Profiler display output](./media/wpfperf-visualprofiler-04.png "WPFPerf_VisualProfiler_04")\
 Visual Profiler display output  
   
 <a name="visual_rendering_behavior"></a>
@@ -241,7 +241,7 @@ Not all applications are DPI-aware: some use hardware pixels as the primary unit
   
 WPF supports automatic scaling by using the device independent pixel as its primary unit of measurement, instead of hardware pixels; graphics and text scale properly without any extra work from the application developer. The following illustration shows an example of how WPF text and graphics are appear at different DPI settings.  
   
-![Graphics and text at different DPI settings](./media/graphicsmm-dpi-setting-examples.png "graphicsmm_dpi_setting_examples")  
+![Graphics and text at different DPI settings](./media/graphicsmm-dpi-setting-examples.png "graphicsmm_dpi_setting_examples")\
 Graphics and text at different DPI settings  
   
 <a name="visualtreehelper_class"></a>

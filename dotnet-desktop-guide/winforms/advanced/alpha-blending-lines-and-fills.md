@@ -28,14 +28,14 @@ For example, suppose the red component of the source color is 150 and the red co
   
 ## In This Section  
 
-[How to: Draw Opaque and Semitransparent Lines](how-to-draw-opaque-and-semitransparent-lines.md)  
+[How to: Draw Opaque and Semitransparent Lines](how-to-draw-opaque-and-semitransparent-lines.md)\
 Shows how to draw alpha-blended lines.  
   
-[How to: Draw with Opaque and Semitransparent Brushes](how-to-draw-with-opaque-and-semitransparent-brushes.md)  
+[How to: Draw with Opaque and Semitransparent Brushes](how-to-draw-with-opaque-and-semitransparent-brushes.md)\
 Explains how to alpha-blend with brushes.  
   
-[How to: Use Compositing Mode to Control Alpha Blending](how-to-use-compositing-mode-to-control-alpha-blending.md)  
+[How to: Use Compositing Mode to Control Alpha Blending](how-to-use-compositing-mode-to-control-alpha-blending.md)\
 Describes how to control alpha blending using <xref:System.Drawing.Drawing2D.CompositingMode>.  
   
-[How to: Use a Color Matrix to Set Alpha Values in Images](how-to-use-a-color-matrix-to-set-alpha-values-in-images.md)  
+[How to: Use a Color Matrix to Set Alpha Values in Images](how-to-use-a-color-matrix-to-set-alpha-values-in-images.md)\
 Explains how to use a <xref:System.Drawing.Imaging.ColorMatrix> object to control alpha blending.

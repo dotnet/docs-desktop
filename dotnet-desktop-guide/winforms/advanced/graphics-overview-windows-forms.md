@@ -17,13 +17,13 @@ GDI+ is a Graphics Device Interface that enables programmers to write device-ind
   
 ## In This Section  
 
-[Overview of Graphics](overview-of-graphics.md)  
+[Overview of Graphics](overview-of-graphics.md)\
 Provides a general introduction to GDI+.  
   
-[Three Categories of Graphics Services](three-categories-of-graphics-services.md)  
+[Three Categories of Graphics Services](three-categories-of-graphics-services.md)\
 Describes the three categories that make up programming with GDI+.  
   
-[Structure of the Graphics Interface](structure-of-the-graphics-interface.md)  
+[Structure of the Graphics Interface](structure-of-the-graphics-interface.md)\
 Describes the managed class interface of GDI+.  
   
 ## Reference  

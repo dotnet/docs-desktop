@@ -17,7 +17,7 @@ This example shows how to use a <xref:System.Windows.Media.DrawingGroup> to crea
 
 The following example uses a <xref:System.Windows.Media.DrawingGroup> to create a composite drawing from the <xref:System.Windows.Media.GeometryDrawing> and <xref:System.Windows.Media.ImageDrawing> objects. The following illustration shows the output that this example produces.  
   
-![Illustration of a composite drawing showing a square filled with kiwi slices overlapping a black rimmed, green circle on the upper left with a black rimmed, green circle overlapping on the bottom right.](./media/graphicsmm-simple.jpg "graphicsmm_simple")  
+![Illustration of a composite drawing showing a square filled with kiwi slices overlapping a black rimmed, green circle on the upper left with a black rimmed, green circle overlapping on the bottom right.](./media/graphicsmm-simple.jpg "graphicsmm_simple")\
 A composite drawing that is created by using DrawingGroup  
   
 Note the gray border, which shows the bounds of the drawing.  
@@ -29,7 +29,7 @@ You can use a <xref:System.Windows.Media.DrawingGroup> to apply a <xref:System.W
   
 The following example is similar to the preceding example, except that it uses additional <xref:System.Windows.Media.DrawingGroup> objects to apply bitmap effects and an opacity mask to some of its drawings. The following illustration shows the output that this example produces.  
   
-![Illustration of a composite drawing showing a square filled with kiwi slices overlapping a black rimmed, green circle on the upper left with a black rimmed, green circle overlapping on the bottom right. Bitmap effects and an opacity mask have been applied distorting the original drawing.](./media/graphicsmm-multiple.jpg "graphicsmm_multiple")  
+![Illustration of a composite drawing showing a square filled with kiwi slices overlapping a black rimmed, green circle on the upper left with a black rimmed, green circle overlapping on the bottom right. Bitmap effects and an opacity mask have been applied distorting the original drawing.](./media/graphicsmm-multiple.jpg "graphicsmm_multiple")\
 Composite drawing that has multiple DrawingGroup objects  
   
 Note the gray border, which shows the bounds of the drawing.  

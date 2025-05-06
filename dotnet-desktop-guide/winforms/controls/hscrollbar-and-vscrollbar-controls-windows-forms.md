@@ -17,7 +17,7 @@ Windows Forms scroll bar controls are used to provide easy navigation through a 
   
 ## In This Section  
 
-[HScrollBar and VScrollBar Controls Overview](hscrollbar-and-vscrollbar-controls-overview-windows-forms.md)  
+[HScrollBar and VScrollBar Controls Overview](hscrollbar-and-vscrollbar-controls-overview-windows-forms.md)\
 Introduces the general concepts of the <xref:System.Windows.Forms.HScrollBar> and <xref:System.Windows.Forms.VScrollBar> controls, which allow users to scroll horizontally and vertically through large amounts of information.  
   
 ## Reference  
@@ -30,5 +30,5 @@ Describes this class and has links to all its members.
   
 ## Related Sections  
 
-[Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)  
+[Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)\
 Provides a complete list of Windows Forms controls, with links to information on their use.

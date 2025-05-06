@@ -30,7 +30,7 @@ The following example shows another <xref:System.Windows.Shapes.Rectangle> that 
   
 The following illustration shows the difference between the two <xref:System.Windows.Media.ScaleTransform> operations. The dotted line shows the size and position of the rectangle before scaling.  
   
-![2x scales with different center points](./media/wcpsdk-graphicsmm-scalecenter.gif "wcpsdk_graphicsmm_scalecenter")  
+![2x scales with different center points](./media/wcpsdk-graphicsmm-scalecenter.gif "wcpsdk_graphicsmm_scalecenter")\
 Two ScaleTransform operations with identical ScaleX and ScaleY values but different centers  
   
 For the complete sample, see [2D Transforms Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Graphics/2DTransforms).  

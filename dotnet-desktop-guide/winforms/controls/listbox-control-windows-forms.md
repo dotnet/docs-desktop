@@ -18,7 +18,7 @@ A Windows Forms `ListBox` control displays a list of items from which the user c
   
 ## In This Section  
 
-[ListBox Control Overview](listbox-control-overview-windows-forms.md)  
+[ListBox Control Overview](listbox-control-overview-windows-forms.md)\
 Explains what this control is and its key features and properties.  
   
 ## Reference  
@@ -28,5 +28,5 @@ Describes this class and has links to all its members.
   
 ## Related Sections  
 
-[Windows Forms Controls Used to List Options](windows-forms-controls-used-to-list-options.md)  
+[Windows Forms Controls Used to List Options](windows-forms-controls-used-to-list-options.md)\
 Provides a list of things you can do with list boxes, combo boxes, and checked list boxes.

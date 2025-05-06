@@ -19,8 +19,8 @@ A <xref:System.Drawing.Graphics> object can be thought of as a container because
   
 ## In This Section  
 
-[Managing the State of a Graphics Object](managing-the-state-of-a-graphics-object.md)  
+[Managing the State of a Graphics Object](managing-the-state-of-a-graphics-object.md)\
 Describes how manage the quality settings, clipping area and transformations of a <xref:System.Drawing.Graphics> object.  
   
-[Using Nested Graphics Containers](using-nested-graphics-containers.md)  
+[Using Nested Graphics Containers](using-nested-graphics-containers.md)\
 Shows how to use containers to control the state of the <xref:System.Drawing.Graphics> object.

@@ -16,7 +16,7 @@ The Windows Forms `PrintPreviewControl` is used to display a document as it will
   
 ## In This Section  
 
-[PrintPreviewControl Control Overview](printpreviewcontrol-control-overview-windows-forms.md)  
+[PrintPreviewControl Control Overview](printpreviewcontrol-control-overview-windows-forms.md)\
 Introduces the general concepts of the `PrintPreviewControl`, which you can use to design your own print preview dialog or component.  
   
 ## Reference  
@@ -26,8 +26,8 @@ Provides reference information on the class and its members.
   
 ## Related Sections  
 
-[PrintPreviewDialog Control](printpreviewdialog-control-windows-forms.md)  
+[PrintPreviewDialog Control](printpreviewdialog-control-windows-forms.md)\
 Describes an alternate way to create print preview functionality.  
   
-[Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)  
+[Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)\
 Provides a complete list of Windows Forms controls, with links to information on their use.

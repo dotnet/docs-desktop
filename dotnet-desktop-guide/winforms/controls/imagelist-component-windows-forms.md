@@ -14,10 +14,10 @@ The Windows Forms `ImageList` component is used to store images, which can then 
   
 ## In This Section  
 
-[ImageList Component Overview](imagelist-component-overview-windows-forms.md)  
+[ImageList Component Overview](imagelist-component-overview-windows-forms.md)\
 Explains what this component is and its key features and properties  
   
-[How to: Add or Remove Images with the Windows Forms ImageList Component](how-to-add-or-remove-images-with-the-windows-forms-imagelist-component.md)  
+[How to: Add or Remove Images with the Windows Forms ImageList Component](how-to-add-or-remove-images-with-the-windows-forms-imagelist-component.md)\
 Gives directions for adding and removing images from an image list.  
   
 Also see [How to: Add or Remove ImageList Images with the Designer](how-to-add-or-remove-imagelist-images-with-the-designer.md).  
@@ -29,5 +29,5 @@ Describes this class and has links to all its members.
   
 ## Related Sections  
 
-[Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)  
+[Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)\
 Provides a complete list of Windows Forms controls, with links to information on their use.

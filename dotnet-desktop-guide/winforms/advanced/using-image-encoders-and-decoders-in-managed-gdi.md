@@ -36,19 +36,19 @@ The following topics discuss encoders and decoders in more detail:
   
 ## In This Section  
 
-[How to: List Installed Encoders](how-to-list-installed-encoders.md)  
+[How to: List Installed Encoders](how-to-list-installed-encoders.md)\
 Describes how to list the encoders available on a computer.  
   
-[How to: List Installed Decoders](how-to-list-installed-decoders.md)  
+[How to: List Installed Decoders](how-to-list-installed-decoders.md)\
 Describes how to list the decoders available on a computer.  
   
-[How to: Determine the Parameters Supported by an Encoder](how-to-determine-the-parameters-supported-by-an-encoder.md)  
+[How to: Determine the Parameters Supported by an Encoder](how-to-determine-the-parameters-supported-by-an-encoder.md)\
 Describes how to list the <xref:System.Drawing.Imaging.EncoderParameters> supported by an encoder.  
   
-[How to: Convert a BMP image to a PNG image](how-to-convert-a-bmp-image-to-a-png-image.md)  
+[How to: Convert a BMP image to a PNG image](how-to-convert-a-bmp-image-to-a-png-image.md)\
 Describes how to save a image in a different image format.  
   
-[How to: Set JPEG Compression Level](how-to-set-jpeg-compression-level.md)  
+[How to: Set JPEG Compression Level](how-to-set-jpeg-compression-level.md)\
 Describes how to change the quality level of an image.  
   
 ## Reference  

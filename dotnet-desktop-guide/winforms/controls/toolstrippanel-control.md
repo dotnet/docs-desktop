@@ -19,13 +19,13 @@ The topics in this section describe the concepts and techniques that you can use
   
 ## In This Section  
 
-[ToolStripPanel Control Overview](toolstrippanel-control-overview.md)  
+[ToolStripPanel Control Overview](toolstrippanel-control-overview.md)\
 Provides topics that describe the purpose and main concepts of the Windows Forms <xref:System.Windows.Forms.ToolStripContainer> control.  
   
-[How to: Join ToolStripPanels](how-to-join-toolstrippanels.md)  
+[How to: Join ToolStripPanels](how-to-join-toolstrippanels.md)\
 Demonstrates adding <xref:System.Windows.Forms.ToolStrip> controls to a `ToolStripPanel`.  
   
-[How to: Use ToolStripPanels for MDI](how-to-use-toolstrippanels-for-mdi.md)  
+[How to: Use ToolStripPanels for MDI](how-to-use-toolstrippanels-for-mdi.md)\
 Demonstrates the flexibility afforded by `ToolStripPanel` controls in a Multiple Document Interface application.  
   
 ## Reference  

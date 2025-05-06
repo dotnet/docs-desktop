@@ -51,30 +51,30 @@ The <xref:System.Windows.Forms.DataGridView> control is highly configurable and 
   
 ## In This Section  
 
-[DataGridView Control Technology Summary](datagridview-control-technology-summary-windows-forms.md)  
+[DataGridView Control Technology Summary](datagridview-control-technology-summary-windows-forms.md)\
 Summarizes <xref:System.Windows.Forms.DataGridView> control concepts and the use of related classes.  
   
-[DataGridView Control Architecture](datagridview-control-architecture-windows-forms.md)  
+[DataGridView Control Architecture](datagridview-control-architecture-windows-forms.md)\
 Describes the architecture of the <xref:System.Windows.Forms.DataGridView> control, explaining its type hierarchy and inheritance structure.  
   
-[DataGridView Control Scenarios](datagridview-control-scenarios-windows-forms.md)  
+[DataGridView Control Scenarios](datagridview-control-scenarios-windows-forms.md)\
 Describes the most common scenarios in which <xref:System.Windows.Forms.DataGridView> controls are used.  
   
-[DataGridView Control Code Directory](datagridview-control-code-directory-windows-forms.md)  
+[DataGridView Control Code Directory](datagridview-control-code-directory-windows-forms.md)\
 Provides links to code examples in the documentation for various <xref:System.Windows.Forms.DataGridView> tasks. These examples are categorized by task type.  
   
 ## Related Sections  
 
-[Column Types in the Windows Forms DataGridView Control](column-types-in-the-windows-forms-datagridview-control.md)  
+[Column Types in the Windows Forms DataGridView Control](column-types-in-the-windows-forms-datagridview-control.md)\
 Discusses the column types in the Windows Forms <xref:System.Windows.Forms.DataGridView> control used to display information and allow users to modify or add information.  
   
-[Displaying Data in the Windows Forms DataGridView Control](displaying-data-in-the-windows-forms-datagridview-control.md)  
+[Displaying Data in the Windows Forms DataGridView Control](displaying-data-in-the-windows-forms-datagridview-control.md)\
 Provides topics that describe how to populate the control with data either manually, or from an external data source.  
   
-[Customizing the Windows Forms DataGridView Control](customizing-the-windows-forms-datagridview-control.md)  
+[Customizing the Windows Forms DataGridView Control](customizing-the-windows-forms-datagridview-control.md)\
 Provides topics that describe custom painting <xref:System.Windows.Forms.DataGridView> cells and rows, and creating derived cell, column, and row types.  
   
-[Performance Tuning in the Windows Forms DataGridView Control](performance-tuning-in-the-windows-forms-datagridview-control.md)  
+[Performance Tuning in the Windows Forms DataGridView Control](performance-tuning-in-the-windows-forms-datagridview-control.md)\
 Provides topics that describe how to use the control efficiently to avoid performance problems when working with large amounts of data.  
   
 ## See also

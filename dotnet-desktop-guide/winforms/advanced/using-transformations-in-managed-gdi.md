@@ -14,10 +14,10 @@ Affine transformations include rotating, scaling, reflecting, shearing, and tran
   
 ## In This Section  
 
-[Using the World Transformation](using-the-world-transformation.md)  
+[Using the World Transformation](using-the-world-transformation.md)\
 Describes how to scale and rotate graphics using a world transformation matrix.  
   
-[Why Transformation Order Is Significant](why-transformation-order-is-significant.md)  
+[Why Transformation Order Is Significant](why-transformation-order-is-significant.md)\
 Demonstrates why the order of transform operations is important.  
   
 ## Reference  

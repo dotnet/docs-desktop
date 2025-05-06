@@ -14,10 +14,10 @@ The Windows Forms `StatusStrip` control is used on forms as an area, usually dis
   
 ## In This Section  
 
-[StatusStrip Control Overview](statusstrip-control-overview.md)  
+[StatusStrip Control Overview](statusstrip-control-overview.md)\
 Explains what this control is and its key features and properties.  
   
-[How to: Use the Spring Property Interactively in a StatusStrip](how-to-use-the-spring-property-interactively-in-a-statusstrip.md)  
+[How to: Use the Spring Property Interactively in a StatusStrip](how-to-use-the-spring-property-interactively-in-a-statusstrip.md)\
 Demonstrates using the `Spring` property to interactively center a `ToolStripStatusLabel` in a `StatusStrip`.  
   
 Also see [StatusStrip Items Collection Editor](/previous-versions/visualstudio/visual-studio-2010/ms233631(v=vs.100)) and [StatusStrip Tasks Dialog Box](/previous-versions/visualstudio/visual-studio-2010/ms233642(v=vs.100)).  

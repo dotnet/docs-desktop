@@ -131,7 +131,7 @@ The DirectX Diagnostic Tool, Dxdiag.exe, is designed to help you troubleshoot Di
   
 When you run the DirectX Diagnostic Tool, the main window contains a set of tabs that allow you to display and diagnose DirectX-related information. For example, the **System** tab provides system information about your computer and specifies the version of DirectX that is installed on your computer.  
   
-![Screenshot: DirectX Diagnostic Tool](./media/directxdiagnostictool-01.png "DirectXDiagnosticTool_01")  
+![Screenshot: DirectX Diagnostic Tool](./media/directxdiagnostictool-01.png "DirectXDiagnosticTool_01")\
 DirectX Diagnostic Tool main window  
   
 ## See also

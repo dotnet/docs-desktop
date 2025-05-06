@@ -19,17 +19,17 @@ Multiple-document interface (MDI) applications enable you to display multiple do
   
 ## In This Section  
 
-[How to: Create MDI Parent Forms](how-to-create-mdi-parent-forms.md)  
+[How to: Create MDI Parent Forms](how-to-create-mdi-parent-forms.md)\
 Gives directions for creating the container for the multiple documents within an MDI application.  
   
-[How to: Create MDI Child Forms](how-to-create-mdi-child-forms.md)  
+[How to: Create MDI Child Forms](how-to-create-mdi-child-forms.md)\
 Gives directions for creating one or more windows that operate within an MDI parent form.  
   
-[How to: Determine the Active MDI Child](how-to-determine-the-active-mdi-child.md)  
+[How to: Determine the Active MDI Child](how-to-determine-the-active-mdi-child.md)\
 Gives directions for verifying the child window that has focus (and sending its contents to the Clipboard).  
   
-[How to: Send Data to the Active MDI Child](how-to-send-data-to-the-active-mdi-child.md)  
+[How to: Send Data to the Active MDI Child](how-to-send-data-to-the-active-mdi-child.md)\
 Gives directions for transporting information to the active child window.  
   
-[How to: Arrange MDI Child Forms](how-to-arrange-mdi-child-forms.md)  
+[How to: Arrange MDI Child Forms](how-to-arrange-mdi-child-forms.md)\
 Gives directions for tiling, cascading, or arranging the child windows of an MDI application.

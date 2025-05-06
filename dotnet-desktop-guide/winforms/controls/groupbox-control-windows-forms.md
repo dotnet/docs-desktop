@@ -15,10 +15,10 @@ Windows Forms <xref:System.Windows.Forms.GroupBox> controls are used to provide 
   
 ## In This Section  
 
-[GroupBox Control Overview](groupbox-control-overview-windows-forms.md)  
+[GroupBox Control Overview](groupbox-control-overview-windows-forms.md)\
 Explains what this control is and its key features and properties.  
   
-[How to: Group Controls with the Windows Forms GroupBox Control](how-to-group-controls-with-the-windows-forms-groupbox-control.md)  
+[How to: Group Controls with the Windows Forms GroupBox Control](how-to-group-controls-with-the-windows-forms-groupbox-control.md)\
 Describes how to use this control to group controls.  
   
 ## Reference  
@@ -31,5 +31,5 @@ Describes this class and has links to all its members.
   
 ## Related Sections  
 
-[Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)  
+[Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)\
 Provides a complete list of Windows Forms controls, with links to information on their use.

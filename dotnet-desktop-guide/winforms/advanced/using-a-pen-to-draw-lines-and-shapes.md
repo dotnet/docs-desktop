@@ -16,25 +16,25 @@ Use GDI+ `Pen` objects to draw line segments, curves, and the outlines of shapes
   
 ## In This Section  
 
-[How to: Use a Pen to Draw Lines](how-to-use-a-pen-to-draw-lines.md)  
+[How to: Use a Pen to Draw Lines](how-to-use-a-pen-to-draw-lines.md)\
 Explains how to draw lines.  
   
-[How to: Use a Pen to Draw Rectangles](how-to-use-a-pen-to-draw-rectangles.md)  
+[How to: Use a Pen to Draw Rectangles](how-to-use-a-pen-to-draw-rectangles.md)\
 Describes how to draw rectangles.  
   
-[How to: Set Pen Width and Alignment](how-to-set-pen-width-and-alignment.md)  
+[How to: Set Pen Width and Alignment](how-to-set-pen-width-and-alignment.md)\
 Explains how to change the width and alignment of a `Pen` object.  
   
-[How to: Draw a Line with Line Caps](how-to-draw-a-line-with-line-caps.md)  
+[How to: Draw a Line with Line Caps](how-to-draw-a-line-with-line-caps.md)\
 Describes how to add end caps when drawing a line.  
   
-[How to: Join Lines](how-to-join-lines.md)  
+[How to: Join Lines](how-to-join-lines.md)\
 Shows how to join two lines.  
   
-[How to: Draw a Custom Dashed Line](how-to-draw-a-custom-dashed-line.md)  
+[How to: Draw a Custom Dashed Line](how-to-draw-a-custom-dashed-line.md)\
 Describes how to draw a dashed line.  
   
-[How to: Draw a Line Filled with a Texture](how-to-draw-a-line-filled-with-a-texture.md)  
+[How to: Draw a Line Filled with a Texture](how-to-draw-a-line-filled-with-a-texture.md)\
 Explains how to draw a texture-filled line.  
   
 ## Reference  

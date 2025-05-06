@@ -20,13 +20,13 @@ If you'd like to jump in and get started right away, see [Getting Started with G
   
 ## In This Section  
 
-[Graphics Overview](graphics-overview-windows-forms.md)  
+[Graphics Overview](graphics-overview-windows-forms.md)\
 Provides an introduction to the graphics-related managed classes.  
   
-[About GDI+ Managed Code](about-gdi-managed-code.md)  
+[About GDI+ Managed Code](about-gdi-managed-code.md)\
 Provides information about the managed GDI+ classes.  
   
-[Using Managed Graphics Classes](using-managed-graphics-classes.md)  
+[Using Managed Graphics Classes](using-managed-graphics-classes.md)\
 Demonstrates how to complete a variety of tasks using the GDI+ managed classes.  
   
 ## Reference  
@@ -48,5 +48,5 @@ Provides printing functionality.
   
 ## Related Sections  
 
-[Custom Control Painting and Rendering](../controls/custom-painting-drawing.md)  
+[Custom Control Painting and Rendering](../controls/custom-painting-drawing.md)\
 Details how to provide code for painting controls.

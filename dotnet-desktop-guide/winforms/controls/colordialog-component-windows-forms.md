@@ -15,22 +15,22 @@ The Windows Forms <xref:System.Windows.Forms.ColorDialog> component is a pre-con
   
 ## In This Section  
 
-[ColorDialog Component Overview](colordialog-component-overview-windows-forms.md)  
+[ColorDialog Component Overview](colordialog-component-overview-windows-forms.md)\
 Introduces the general concepts of the <xref:System.Windows.Forms.ColorDialog> component, which allows you to display a pre-configured dialog box that users can use to select colors from a palette.  
   
-[How to: Change the Appearance of the Windows Forms ColorDialog Component](how-to-change-the-appearance-of-the-windows-forms-colordialog-component.md)  
+[How to: Change the Appearance of the Windows Forms ColorDialog Component](how-to-change-the-appearance-of-the-windows-forms-colordialog-component.md)\
 Describes how to change the colors available to users and other properties.  
   
-[How to: Show a Color Palette with the ColorDialog Component](how-to-show-a-color-palette-with-the-colordialog-component.md)  
+[How to: Show a Color Palette with the ColorDialog Component](how-to-show-a-color-palette-with-the-colordialog-component.md)\
 Explains how to select a color at run time by means of an instance of the <xref:System.Windows.Forms.ColorDialog> component.  
   
 ## Related Sections  
 
-[Controls You Can Use On Windows Forms](controls-to-use-on-windows-forms.md)  
+[Controls You Can Use On Windows Forms](controls-to-use-on-windows-forms.md)\
 Provides a complete list of Windows Forms controls, with links to information on their use.  
   
 <xref:System.Windows.Forms.ColorDialog>  
 Provides reference information on the <xref:System.Windows.Forms.ColorDialog> class and its members.  
 
-[Dialog-Box Controls and Components](dialog-box-controls-and-components-windows-forms.md)  
+[Dialog-Box Controls and Components](dialog-box-controls-and-components-windows-forms.md)\
 Lists a set of controls that allow users to perform standard interactions with the application or system.

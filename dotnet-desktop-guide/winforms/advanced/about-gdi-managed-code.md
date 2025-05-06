@@ -19,13 +19,13 @@ This section provides information about the GDI+ API for programmers using manag
 
 ## In this section
 
-- [Lines, Curves, and Shapes](lines-curves-and-shapes.md)  
+- [Lines, Curves, and Shapes](lines-curves-and-shapes.md)\
 Discusses vector graphics.
 
-- [Images, Bitmaps, and Metafiles](images-bitmaps-and-metafiles.md)  
+- [Images, Bitmaps, and Metafiles](images-bitmaps-and-metafiles.md)\
 Discusses the type of images available and how to work with them.
 
-- [Coordinate Systems and Transformations](coordinate-systems-and-transformations.md)  
+- [Coordinate Systems and Transformations](coordinate-systems-and-transformations.md)\
 Discusses how to transform graphics with GDI+.
 
 ## Reference

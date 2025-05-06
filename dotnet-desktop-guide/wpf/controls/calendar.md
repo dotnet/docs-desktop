@@ -16,7 +16,7 @@ A <xref:System.Windows.Controls.Calendar> control can be used on its own, or as 
   
 The following illustration shows two <xref:System.Windows.Controls.Calendar> controls, one with selections and blackout dates and one without.  
   
-![Calendar controls](./media/ndp-calendarcontrols.png "NDP_CalendarControls")  
+![Calendar controls](./media/ndp-calendarcontrols.png "NDP_CalendarControls")\
 Calendar controls  
   
 The following table provides information about tasks that are typically associated with the <xref:System.Windows.Controls.Calendar>.  

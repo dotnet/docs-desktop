@@ -17,13 +17,13 @@ The topics in this section provide an overview of the `BindingNavigator` control
   
 ## In This Section  
 
-[BindingNavigator Control Overview](bindingnavigator-control-overview-windows-forms.md)  
+[BindingNavigator Control Overview](bindingnavigator-control-overview-windows-forms.md)\
 Introduces the general concepts of the `BindingNavigator` control, which enables users to move through the items of a data source.  
   
-[How to: Navigate Data with the Windows Forms BindingNavigator Control](how-to-navigate-data-with-the-windows-forms-bindingnavigator-control.md)  
+[How to: Navigate Data with the Windows Forms BindingNavigator Control](how-to-navigate-data-with-the-windows-forms-bindingnavigator-control.md)\
 Provides steps to bind a `BindingNavigator` control to a data source.  
   
-[How to: Move Through a DataSet with the Windows Forms BindingNavigator Control](move-through-a-dataset-with-wf-bindingnavigator-control.md)  
+[How to: Move Through a DataSet with the Windows Forms BindingNavigator Control](move-through-a-dataset-with-wf-bindingnavigator-control.md)\
 Demonstrates using a `BindingNavigator` control to move through records in a <xref:System.Data.DataSet>.  
   
 Also see [How to: Add Load, Save, and Cancel Buttons to the Windows Forms BindingNavigator Control](load-save-and-cancel-bindingnavigator.md).  

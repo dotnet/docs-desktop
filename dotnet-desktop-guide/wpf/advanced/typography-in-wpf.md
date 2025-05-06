@@ -18,7 +18,7 @@ This topic introduces the major typographic features of WPF. These features incl
 
 Text in WPF is rendered using Microsoft ClearType, which enhances the clarity and readability of text. ClearType is a software technology developed by Microsoft that improves the readability of text on existing LCDs (Liquid Crystal Displays), such as laptop screens, Pocket PC screens and flat panel monitors. ClearType uses sub-pixel rendering which allows text to be displayed with a greater fidelity to its true shape by aligning characters on a fractional part of a pixel. The extra resolution increases the sharpness of the tiny details in text display, making it much easier to read over long durations. Another improvement of ClearType in WPF is y-direction anti-aliasing, which smoothes the tops and bottoms of shallow curves in text characters. For more details on ClearType features, see [ClearType Overview](cleartype-overview.md).  
   
-![Text with ClearType y-direction anti-aliasing](./media/typography-in-wpf/text-y-direction-antialiasing.gif)  
+![Text with ClearType y-direction anti-aliasing](./media/typography-in-wpf/text-y-direction-antialiasing.gif)\
 Text with ClearType y-direction antialiasing  
   
 The entire text rendering pipeline can be hardware-accelerated in WPF provided your machine meets the minimum level of hardware required. Rendering that cannot be performed using hardware falls back to software rendering. Hardware-acceleration affects all phases of the text rendering pipeline—from storing individual glyphs, compositing glyphs into glyph runs, applying effects, to applying the ClearType blending algorithm to the final displayed output. For more information on hardware acceleration, see [Graphics Rendering Tiers](graphics-rendering-tiers.md).  

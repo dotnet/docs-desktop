@@ -22,46 +22,46 @@ When the `DataGrid` control is set to a valid data source, the control is automa
   
 ## In This Section  
 
-[DataGrid Control Overview](datagrid-control-overview-windows-forms.md)  
+[DataGrid Control Overview](datagrid-control-overview-windows-forms.md)\
 Describes the basic features of the `DataGrid` control.  
   
-[How to: Add Tables and Columns to the Windows Forms DataGrid Control Using the Designer](add-tables-and-columns-to-wf-datagrid-control-using-the-designer.md)  
+[How to: Add Tables and Columns to the Windows Forms DataGrid Control Using the Designer](add-tables-and-columns-to-wf-datagrid-control-using-the-designer.md)\
 Describes how to add tables and columns to the `DataGrid` control using the designer.  
   
-[How to: Add Tables and Columns to the Windows Forms DataGrid Control](how-to-add-tables-and-columns-to-the-windows-forms-datagrid-control.md)  
+[How to: Add Tables and Columns to the Windows Forms DataGrid Control](how-to-add-tables-and-columns-to-the-windows-forms-datagrid-control.md)\
 Describes how to add tables and columns to the `DataGrid` control programmatically.  
   
-[How to: Bind the Windows Forms DataGrid Control to a Data Source Using the Designer](bind-wf-datagrid-control-to-a-data-source-using-the-designer.md)  
+[How to: Bind the Windows Forms DataGrid Control to a Data Source Using the Designer](bind-wf-datagrid-control-to-a-data-source-using-the-designer.md)\
 Describes how to bind an ADO.NET dataset to the `DataGrid` control using the designer.  
   
-[How to: Bind the Windows Forms DataGrid Control to a Data Source](how-to-bind-the-windows-forms-datagrid-control-to-a-data-source.md)  
+[How to: Bind the Windows Forms DataGrid Control to a Data Source](how-to-bind-the-windows-forms-datagrid-control-to-a-data-source.md)\
 Describes how to bind an ADO.NET dataset to the `DataGrid` control.  
   
-[How to: Change Displayed Data at Run Time in the Windows Forms DataGrid Control](change-displayed-data-at-run-time-wf-datagrid-control.md)  
+[How to: Change Displayed Data at Run Time in the Windows Forms DataGrid Control](change-displayed-data-at-run-time-wf-datagrid-control.md)\
 Describes how to change data programmatically in the `DataGrid` control.  
   
-[How to: Create Master-Details Lists with the Windows Forms DataGrid Control Using the Designer](create-master-details-lists-with-wf-datagrid-control-using-the-designer.md)  
+[How to: Create Master-Details Lists with the Windows Forms DataGrid Control Using the Designer](create-master-details-lists-with-wf-datagrid-control-using-the-designer.md)\
 Describes how to display two tables, tied together with a parent/child relationship, in two separate `DataGrid` controls using the designer.  
   
 How to: Create Master-Details Lists with the Windows Forms DataGrid Control  
 Describes how to display two tables, tied together with a parent/child relationship, in two separate `DataGrid` controls.  
   
-[How to: Delete or Hide Columns in the Windows Forms DataGrid Control](how-to-delete-or-hide-columns-in-the-windows-forms-datagrid-control.md)  
+[How to: Delete or Hide Columns in the Windows Forms DataGrid Control](how-to-delete-or-hide-columns-in-the-windows-forms-datagrid-control.md)\
 Describes how to remove columns in the `DataGrid` control.  
   
-[How to: Format the Windows Forms DataGrid Control Using the Designer](how-to-format-the-windows-forms-datagrid-control-using-the-designer.md)  
+[How to: Format the Windows Forms DataGrid Control Using the Designer](how-to-format-the-windows-forms-datagrid-control-using-the-designer.md)\
 Describes how to change the appearance-related properties of the `DataGrid` control using the designer.  
   
-[How to: Format the Windows Forms DataGrid Control](how-to-format-the-windows-forms-datagrid-control.md)  
+[How to: Format the Windows Forms DataGrid Control](how-to-format-the-windows-forms-datagrid-control.md)\
 Describes how to change the appearance-related properties of the `DataGrid` control.  
   
-[Keyboard Shortcuts for the Windows Forms DataGrid Control](keyboard-shortcuts-for-the-windows-forms-datagrid-control.md)  
+[Keyboard Shortcuts for the Windows Forms DataGrid Control](keyboard-shortcuts-for-the-windows-forms-datagrid-control.md)\
 Lists shortcuts for navigating through the `DataGrid` control.  
   
-[How to: Respond to Clicks in the Windows Forms DataGrid Control](how-to-respond-to-clicks-in-the-windows-forms-datagrid-control.md)  
+[How to: Respond to Clicks in the Windows Forms DataGrid Control](how-to-respond-to-clicks-in-the-windows-forms-datagrid-control.md)\
 Describes how to determine which cell a user has clicked in the `DataGrid` control.  
   
-[How to: Validate Input with the Windows Forms DataGrid Control](how-to-validate-input-with-the-windows-forms-datagrid-control.md)  
+[How to: Validate Input with the Windows Forms DataGrid Control](how-to-validate-input-with-the-windows-forms-datagrid-control.md)\
 Describes how to validate input in the dataset bound to the `DataGrid` control.  
   
 ## Reference  
@@ -74,7 +74,7 @@ Provides details about using this property to bind the <xref:System.Windows.Form
   
 ## Related Sections  
 
-[Windows Forms Data Binding](../data/overview.md)  
+[Windows Forms Data Binding](../data/overview.md)\
 Provides links to topics on data binding in Windows Forms.  
   
 ## See also

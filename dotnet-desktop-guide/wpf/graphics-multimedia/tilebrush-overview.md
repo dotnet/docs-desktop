@@ -29,10 +29,10 @@ To understand this topic, it's helpful to understand how to use the basic featur
   
 Painting an area with a tile brush involves three components: content, the base tile, and the output area.  
   
-![TileBrush components](./media/wcpsdk-mmgraphics-defaultcontentprojection2.png "wcpsdk_mmgraphics_defaultcontentprojection2")  
+![TileBrush components](./media/wcpsdk-mmgraphics-defaultcontentprojection2.png "wcpsdk_mmgraphics_defaultcontentprojection2")\
 Components of a TileBrush with a single tile  
   
-![Components of a tiled TileBrush](./media/graphicsmm-tiledprojection.png "graphicsmm_tiledprojection")  
+![Components of a tiled TileBrush](./media/graphicsmm-tiledprojection.png "graphicsmm_tiledprojection")\
 Components of a TileBrush with a TileMode of Tile  
   
 The output area is the area being painted, such as the <xref:System.Windows.Shapes.Shape.Fill%2A> of an <xref:System.Windows.Shapes.Ellipse> or the <xref:System.Windows.Controls.Control.Background%2A> of a <xref:System.Windows.Controls.Button>. The next sections describe the other two components of a <xref:System.Windows.Media.TileBrush>.  

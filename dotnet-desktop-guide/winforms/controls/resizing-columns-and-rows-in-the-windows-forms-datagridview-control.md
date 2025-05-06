@@ -19,19 +19,19 @@ The `DataGridView` control provides properties, methods, and events that enable 
   
 ## In This Section  
 
-[Sizing Options in the Windows Forms DataGridView Control](sizing-options-in-the-windows-forms-datagridview-control.md)  
+[Sizing Options in the Windows Forms DataGridView Control](sizing-options-in-the-windows-forms-datagridview-control.md)\
 Describes the options for sizing rows, columns, and headers. Also provides details on sizing-related properties and methods, and describes common usage scenarios.  
   
-[Column Fill Mode in the Windows Forms DataGridView Control](column-fill-mode-in-the-windows-forms-datagridview-control.md)  
+[Column Fill Mode in the Windows Forms DataGridView Control](column-fill-mode-in-the-windows-forms-datagridview-control.md)\
 Describes column fill mode in detail, and provides demonstration code that you can use to experiment with column fill mode and other modes.  
   
-[How to: Set the Sizing Modes of the Windows Forms DataGridView Control](how-to-set-the-sizing-modes-of-the-windows-forms-datagridview-control.md)  
+[How to: Set the Sizing Modes of the Windows Forms DataGridView Control](how-to-set-the-sizing-modes-of-the-windows-forms-datagridview-control.md)\
 Describes how to configure the sizing modes for common purposes.  
   
-[How to: Programmatically Resize Cells to Fit Content in the Windows Forms DataGridView Control](programmatically-resize-cells-to-fit-content-in-the-datagrid.md)  
+[How to: Programmatically Resize Cells to Fit Content in the Windows Forms DataGridView Control](programmatically-resize-cells-to-fit-content-in-the-datagrid.md)\
 Provides demonstration code that you can use to experiment with programmatic resizing.  
   
-[How to: Automatically Resize Cells When Content Changes in the Windows Forms DataGridView Control](automatically-resize-cells-when-content-changes-in-the-datagrid.md)  
+[How to: Automatically Resize Cells When Content Changes in the Windows Forms DataGridView Control](automatically-resize-cells-when-content-changes-in-the-datagrid.md)\
 Provides demonstration code that you can use to experiment with automatic sizing modes.  
   
 ## Reference  

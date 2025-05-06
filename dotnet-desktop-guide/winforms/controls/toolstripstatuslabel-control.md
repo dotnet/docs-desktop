@@ -15,7 +15,7 @@ The <xref:System.Windows.Forms.ToolStripStatusLabel> provides a display area in 
   
 ## In This Section  
 
-[ToolStripStatusLabel Control Overview](toolstripstatuslabel-control-overview.md)  
+[ToolStripStatusLabel Control Overview](toolstripstatuslabel-control-overview.md)\
 Provides topics that describe the purpose and main concepts of the Windows Forms <xref:System.Windows.Forms.ToolStripStatusLabel> control.  
   
 ## Reference  

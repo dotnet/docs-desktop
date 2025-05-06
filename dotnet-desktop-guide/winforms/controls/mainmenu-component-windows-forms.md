@@ -16,7 +16,7 @@ The Windows Forms `MainMenu` component displays a menu at run time.
   
 ## In This Section  
 
-[MainMenu Component Overview](mainmenu-component-overview-windows-forms.md)  
+[MainMenu Component Overview](mainmenu-component-overview-windows-forms.md)\
 Explains what this component is and its key features and properties.  
   
 ## Reference  

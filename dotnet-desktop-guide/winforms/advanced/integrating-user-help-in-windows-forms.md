@@ -20,25 +20,25 @@ Additionally, the [ToolTip Component](../controls/tooltip-component-windows-form
   
 ## In This Section  
 
-[How to: Provide Help in a Windows Application](how-to-provide-help-in-a-windows-application.md)  
+[How to: Provide Help in a Windows Application](how-to-provide-help-in-a-windows-application.md)\
 Explains how to use the `HelpProvider` component to link controls to files in a Help system.  
   
-[How to: Display Pop-up Help](how-to-display-pop-up-help.md)  
+[How to: Display Pop-up Help](how-to-display-pop-up-help.md)\
 Explains how to use the `HelpProvider` component to show pop-up Help on Windows Forms.  
   
-[Control Help Using ToolTips](control-help-using-tooltips.md)  
+[Control Help Using ToolTips](control-help-using-tooltips.md)\
 Describes using the `ToolTip` component to show control-specific Help.  
   
 ## Related Sections  
 
-[HelpProvider Component](../controls/helpprovider-component-windows-forms.md)  
+[HelpProvider Component](../controls/helpprovider-component-windows-forms.md)\
 Explains the basics of the `HelpProvider` component.  
   
-[ToolTip Component](../controls/tooltip-component-windows-forms.md)  
+[ToolTip Component](../controls/tooltip-component-windows-forms.md)\
 Explains the basics of the `ToolTip` component.  
   
 [Windows Forms Overview](../overview/index.md)
 Explains the basics of Windows Forms.  
   
-[Windows Forms](../index.yml)  
+[Windows Forms](../index.yml)\
 Provides an overview of Windows Forms.

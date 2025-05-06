@@ -16,10 +16,10 @@ Two common uses for regions are hit testing and clipping. Hit testing is determi
   
 ## In This Section  
 
-[How to: Use Hit Testing with a Region](how-to-use-hit-testing-with-a-region.md)  
+[How to: Use Hit Testing with a Region](how-to-use-hit-testing-with-a-region.md)\
 Shows how to use a <xref:System.Drawing.Region> to perform a hit test.  
   
-[How to: Use Clipping with a Region](how-to-use-clipping-with-a-region.md)  
+[How to: Use Clipping with a Region](how-to-use-clipping-with-a-region.md)\
 Explains how to set the clipping region for a <xref:System.Drawing.Graphics> object.  
   
 ## Reference  

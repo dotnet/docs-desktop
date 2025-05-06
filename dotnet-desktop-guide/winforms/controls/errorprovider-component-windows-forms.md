@@ -15,13 +15,13 @@ The Windows Forms `ErrorProvider` component is used to show the user in a non-in
   
 ## In This Section  
 
-[ErrorProvider Component Overview](errorprovider-component-overview-windows-forms.md)  
+[ErrorProvider Component Overview](errorprovider-component-overview-windows-forms.md)\
 Explains what this component is and its key features and properties.  
   
-[How to: Display Error Icons for Form Validation with the Windows Forms ErrorProvider Component](display-error-icons-for-form-validation-with-wf-errorprovider.md)  
+[How to: Display Error Icons for Form Validation with the Windows Forms ErrorProvider Component](display-error-icons-for-form-validation-with-wf-errorprovider.md)\
 Gives directions for validating user input with an error provider component.  
   
-[How to: View Errors Within a DataSet with the Windows Forms ErrorProvider Component](view-errors-within-a-dataset-with-wf-errorprovider-component.md)  
+[How to: View Errors Within a DataSet with the Windows Forms ErrorProvider Component](view-errors-within-a-dataset-with-wf-errorprovider-component.md)\
 Gives directions for using an error provider component to display data errors.  
   
 ## Reference  
@@ -31,5 +31,5 @@ Describes this class and has links to all its members.
   
 ## Related Sections  
 
-[Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)  
+[Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)\
 Provides a complete list of Windows Forms controls, with links to information on their use.

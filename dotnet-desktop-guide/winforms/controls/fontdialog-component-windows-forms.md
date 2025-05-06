@@ -15,10 +15,10 @@ The Windows Forms <xref:System.Windows.Forms.FontDialog> component is a pre-conf
   
 ## In This Section  
 
-[FontDialog Component Overview](fontdialog-component-overview-windows-forms.md)  
+[FontDialog Component Overview](fontdialog-component-overview-windows-forms.md)\
 Introduces the general concepts of the <xref:System.Windows.Forms.FontDialog> component, which you use to display a pre-configured dialog box. Users can use the dialog box to manipulate fonts and their settings.  
   
-[How to: Show a Font List with the FontDialog Component](how-to-show-a-font-list-with-the-fontdialog-component.md)  
+[How to: Show a Font List with the FontDialog Component](how-to-show-a-font-list-with-the-fontdialog-component.md)\
 Explains how to choose a font at run time through an instance of the <xref:System.Windows.Forms.FontDialog> component.  
   
 ## Reference  
@@ -28,8 +28,8 @@ Provides reference information about the <xref:System.Windows.Forms.FontDialog> 
   
 ## Related Sections  
 
-[Dialog-Box Controls and Components](dialog-box-controls-and-components-windows-forms.md)  
+[Dialog-Box Controls and Components](dialog-box-controls-and-components-windows-forms.md)\
 Describes a set of controls and components that enable users to perform standard interactions with the application or system.  
   
-[Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)  
+[Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)\
 Provides a complete list of Windows Forms controls, with links to information about their use.

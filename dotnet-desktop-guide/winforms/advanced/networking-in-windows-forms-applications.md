@@ -28,8 +28,8 @@ A managed wrapper class for the `WebBrowser` control that is included with Windo
   
 ## Related Sections  
 
-[Network Programming in the .NET Framework](/dotnet/framework/network-programming/index)  
+[Network Programming in the .NET Framework](/dotnet/framework/network-programming/index)\
 An introduction to networking in the .NET Framework.  
   
-[Windows Forms Data Binding](../data/overview.md)  
+[Windows Forms Data Binding](../data/overview.md)\
 Describes how to display database content in your application, either from a local data store or a database located on a network.

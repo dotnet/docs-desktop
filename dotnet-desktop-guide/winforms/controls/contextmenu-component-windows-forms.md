@@ -22,10 +22,10 @@ The Windows Forms `ContextMenu` component is used to provide users with an easil
   
 ## In This Section  
 
-[ContextMenu Component Overview](contextmenu-component-overview-windows-forms.md)  
+[ContextMenu Component Overview](contextmenu-component-overview-windows-forms.md)\
 Introduces the general concepts of the `ContextMenu` component, which allows users to create menus of frequently used commands associated with a selected object.  
   
-[How to: Add and Remove Menu Items with the Windows Forms ContextMenu Component](add-and-remove-menu-items-with-wf-contextmenu-component.md)  
+[How to: Add and Remove Menu Items with the Windows Forms ContextMenu Component](add-and-remove-menu-items-with-wf-contextmenu-component.md)\
 Explains how to add and remove shortcut menu items in Windows Forms.  
   
 ## Reference  
@@ -35,7 +35,7 @@ Provides reference information on the <xref:System.Windows.Forms.ContextMenu> cl
   
 ## Related Sections  
 
-[Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)  
+[Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)\
 Provides a complete list of Windows Forms controls, with links to information on their use.  
   
 ## See also

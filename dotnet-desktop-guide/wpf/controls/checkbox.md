@@ -16,7 +16,7 @@ You can use a <xref:System.Windows.Controls.CheckBox> in the user interface (UI)
   
 The following graphic shows the different states of a <xref:System.Windows.Controls.CheckBox>.  
   
-![CheckBox states](./media/ss-ctl-checkbox.png "SS_CTL_checkbox")  
+![CheckBox states](./media/ss-ctl-checkbox.png "SS_CTL_checkbox")\
 CheckBox controls in different states  
   
 ## Reference  

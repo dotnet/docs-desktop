@@ -17,19 +17,19 @@ The Windows Forms <xref:System.Windows.Forms.StatusBar> control is used on forms
   
 ## In This Section  
 
-[StatusBar Control Overview](statusbar-control-overview-windows-forms.md)  
+[StatusBar Control Overview](statusbar-control-overview-windows-forms.md)\
 Introduces the general concepts of the <xref:System.Windows.Forms.StatusBar> control, which enables users to see relevant information for the control that has focus.  
   
-[How to: Add Panels to a StatusBar Control](how-to-add-panels-to-a-statusbar-control.md)  
+[How to: Add Panels to a StatusBar Control](how-to-add-panels-to-a-statusbar-control.md)\
 Explains how to add programmable panels to the <xref:System.Windows.Forms.StatusBar> control.  
   
-[How to: Determine Which Panel in the Windows Forms StatusBar Control Was Clicked](determine-which-panel-wf-statusbar-control-was-clicked.md)  
+[How to: Determine Which Panel in the Windows Forms StatusBar Control Was Clicked](determine-which-panel-wf-statusbar-control-was-clicked.md)\
 Explains how to handle <xref:System.Windows.Forms.Control.Click> events raised from the <xref:System.Windows.Forms.StatusBar> control.  
   
-[How to: Set the Size of Status-Bar Panels](how-to-set-the-size-of-status-bar-panels.md)  
+[How to: Set the Size of Status-Bar Panels](how-to-set-the-size-of-status-bar-panels.md)\
 Gives details on the properties that control the width and resize behavior of status-bar panels at run time.  
   
-[Walkthrough: Updating Status Bar Information at Run Time](walkthrough-updating-status-bar-information-at-run-time.md)  
+[Walkthrough: Updating Status Bar Information at Run Time](walkthrough-updating-status-bar-information-at-run-time.md)\
 Explains how to programmatically control the data within status-bar panels.  
   
 ## Reference  
@@ -42,5 +42,5 @@ Replaces and adds functionality to the <xref:System.Windows.Forms.StatusBar> con
   
 ## Related Sections  
 
-[Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)  
+[Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)\
 Provides a complete list of Windows Forms controls, with links to information on their use.

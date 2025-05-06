@@ -89,7 +89,7 @@ When you transform an object, you do not just transform the object, you transfor
   
 The following example uses a <xref:System.Windows.Media.RotateTransform> to rotate a <xref:System.Windows.Shapes.Rectangle> element, a type of <xref:System.Windows.FrameworkElement>, by 45 degrees about its default center, (0, 0). The following illustration shows the effect of the rotation.  
   
-![A FrameworkElement rotated 45 degrees about &#40;0,0&#41;](./media/graphicsmm-fe-rotated-about-upperleft-corner.png "graphicsmm_FE_rotated_about_upperleft_corner")  
+![A FrameworkElement rotated 45 degrees about &#40;0,0&#41;](./media/graphicsmm-fe-rotated-about-upperleft-corner.png "graphicsmm_FE_rotated_about_upperleft_corner")\
 A Rectangle element rotated 45 degrees about the point (0,0)  
   
 [!code-xaml[Transforms_snip#TransformsFERotatedAboutTopLeft](~/samples/snippets/csharp/VS_Snippets_Wpf/Transforms_snip/CS/CoordinateSystemExample.xaml#transformsferotatedabouttopleft)]  
@@ -98,7 +98,7 @@ By default, the element rotates about its upper-left corner, (0, 0). The <xref:S
   
 The next example also uses a <xref:System.Windows.Media.RotateTransform> to rotate a <xref:System.Windows.Shapes.Rectangle> element by 45 degrees; however, this time the <xref:System.Windows.Media.RotateTransform.CenterX%2A> and <xref:System.Windows.Media.RotateTransform.CenterY%2A> properties are set so that the <xref:System.Windows.Media.RotateTransform> has a center of (25, 25). The following illustration shows the effect of the rotation.  
   
-![A Geometry rotated 45 degrees about &#40;25, 25&#41;](./media/graphicsmm-fe-rotated-about-center.png "graphicsmm_FE_rotated_about_center")  
+![A Geometry rotated 45 degrees about &#40;25, 25&#41;](./media/graphicsmm-fe-rotated-about-center.png "graphicsmm_FE_rotated_about_center")\
 A Rectangle element rotated 45 degrees about the point (25, 25)  
   
 [!code-xaml[Transforms_snip#TransformsFERotatedAboutCenter](~/samples/snippets/csharp/VS_Snippets_Wpf/Transforms_snip/CS/CoordinateSystemExample.xaml#transformsferotatedaboutcenter)]  
@@ -125,21 +125,21 @@ The following example uses a <xref:System.Windows.Media.RotateTransform> to rota
   
 By default, a <xref:System.Windows.Media.RotateTransform> rotates about the point (0, 0). Because the example does not specify a center value, the button rotates about the point (0, 0), which is its upper-left corner. The <xref:System.Windows.Media.RotateTransform> is applied to the <xref:System.Windows.UIElement.RenderTransform%2A> property. The following illustration shows the result of the transformation.  
   
-![A button transformed using RenderTransform](./media/graphicsmm-rendertransformwithdefaultcenter.png "graphicsmm_RenderTransformWithDefaultCenter")  
+![A button transformed using RenderTransform](./media/graphicsmm-rendertransformwithdefaultcenter.png "graphicsmm_RenderTransformWithDefaultCenter")\
 Clockwise rotation 45 degrees from upper-left corner  
   
 [!code-xaml[Transforms_snip#GraphicsMMRotateButtonExample1](~/samples/snippets/csharp/VS_Snippets_Wpf/Transforms_snip/CS/ButtonRotateTransformExample.xaml#graphicsmmrotatebuttonexample1)]  
   
 The next example also uses a <xref:System.Windows.Media.RotateTransform> to rotate a button 45 degrees clockwise, but it also sets the <xref:System.Windows.UIElement.RenderTransformOrigin%2A> of the button to (0.5, 0.5). The value of the <xref:System.Windows.UIElement.RenderTransformOrigin%2A> property is relative to the size of the button. As a result, the rotation is applied to the center of the button, instead of its upper-left corner. The following illustration shows the result of the transformation.  
   
-![A button transformed about its center](./media/graphicsmm-rendertransformrelativecenter.png "graphicsmm_RenderTransformRelativeCenter")  
+![A button transformed about its center](./media/graphicsmm-rendertransformrelativecenter.png "graphicsmm_RenderTransformRelativeCenter")\
 Clockwise rotation 45 degrees around center  
   
 [!code-xaml[Transforms_snip#GraphicsMMRotateButtonExample2](~/samples/snippets/csharp/VS_Snippets_Wpf/Transforms_snip/CS/ButtonRotateTransformExample.xaml#graphicsmmrotatebuttonexample2)]  
   
 The following example uses the <xref:System.Windows.FrameworkElement.LayoutTransform%2A> property instead of the <xref:System.Windows.UIElement.RenderTransform%2A> property to rotate the button.  This causes the transformation to affect the layout of the button, which triggers a full pass by the layout system. As a result, the button is rotated and then repositioned because its size has changed. The following illustration shows the result of the transformation.  
   
-![A button transformed using LayoutTransform](./media/graphicsmm-layouttransform.png "graphicsmm_LayoutTransform")  
+![A button transformed using LayoutTransform](./media/graphicsmm-layouttransform.png "graphicsmm_LayoutTransform")\
 LayoutTransform used to rotate the button  
   
 [!code-xaml[Transforms_snip#GraphicsMMRotateButtonExample3](~/samples/snippets/csharp/VS_Snippets_Wpf/Transforms_snip/CS/ButtonRotateTransformExample.xaml#graphicsmmrotatebuttonexample3)]  

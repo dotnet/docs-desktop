@@ -15,13 +15,13 @@ Dialog boxes are used to interact with the user and retrieve information. In sim
   
 ## In This Section  
 
-[How to: Display Dialog Boxes for Windows Forms](how-to-display-dialog-boxes-for-windows-forms.md)  
+[How to: Display Dialog Boxes for Windows Forms](how-to-display-dialog-boxes-for-windows-forms.md)\
 Gives directions for showing dialog boxes.  
   
 ## Related Sections  
 
-[Dialog-Box Controls and Components](./controls/dialog-box-controls-and-components-windows-forms.md)  
+[Dialog-Box Controls and Components](./controls/dialog-box-controls-and-components-windows-forms.md)\
 Lists the predefined dialog box controls.  
   
-[TabControl Control Overview](./controls/tabcontrol-control-overview-windows-forms.md)  
+[TabControl Control Overview](./controls/tabcontrol-control-overview-windows-forms.md)\
 Explains how you incorporate the tab control into a dialog box.

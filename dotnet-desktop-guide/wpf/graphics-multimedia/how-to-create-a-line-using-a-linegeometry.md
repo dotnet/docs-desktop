@@ -23,7 +23,7 @@ The following example shows how to create and render a <xref:System.Windows.Medi
 [!code-csharp[GeometryOverviewSamples_procedural_snip#GraphicsMMLineGeometryExample](~/samples/snippets/csharp/VS_Snippets_Wpf/GeometryOverviewSamples_procedural_snip/CSharp/GeometryExamples.cs#graphicsmmlinegeometryexample)]
 [!code-vb[GeometryOverviewSamples_procedural_snip#GraphicsMMLineGeometryExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GeometryOverviewSamples_procedural_snip/visualbasic/geometryexamples.vb#graphicsmmlinegeometryexample)]  
   
-![A LineGeometry](./media/graphicsmm-line.gif "graphicsmm_line")  
+![A LineGeometry](./media/graphicsmm-line.gif "graphicsmm_line")\
 A LineGeometry drawn from (10,20) to (100,130)  
   
 Other simple geometry classes include <xref:System.Windows.Media.LineGeometry> and <xref:System.Windows.Media.EllipseGeometry>. These geometries, as well as more complex ones, can also be created using a <xref:System.Windows.Media.PathGeometry> or <xref:System.Windows.Media.StreamGeometry>. For more information, see the [Geometry Overview](geometry-overview.md).  

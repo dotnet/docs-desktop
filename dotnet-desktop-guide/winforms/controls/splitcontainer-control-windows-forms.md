@@ -19,16 +19,16 @@ The `SplitContainer` control lets you create complex user interfaces; often, a s
   
 ## In This Section  
 
-[SplitContainer Control Overview](splitcontainer-control-overview-windows-forms.md)  
+[SplitContainer Control Overview](splitcontainer-control-overview-windows-forms.md)\
 Introduces the `SplitContainer` control and describes the commonly used properties, methods, and events.  
   
-[How to: Define Resize and Positioning Behavior in a Split Window](how-to-define-resize-and-positioning-behavior-in-a-split-window.md)  
+[How to: Define Resize and Positioning Behavior in a Split Window](how-to-define-resize-and-positioning-behavior-in-a-split-window.md)\
 Describes how to control the splitter within the `SplitContainer` control.  
   
-[How to: Split a Window Horizontally](how-to-split-a-window-horizontally.md)  
+[How to: Split a Window Horizontally](how-to-split-a-window-horizontally.md)\
 Describes how to control the orientation of the splitter within the `SplitContainer` control.  
   
-[How to: Create a Multipane User Interface with Windows Forms](how-to-create-a-multipane-user-interface-with-windows-forms.md)  
+[How to: Create a Multipane User Interface with Windows Forms](how-to-create-a-multipane-user-interface-with-windows-forms.md)\
 Creates a multi-pane user interface that is similar to the one used in Microsoft Outlook.  
   
 Also see [How to: Split a Window Horizontally Using the Designer](how-to-split-a-window-horizontally-using-the-designer.md), [How to: Create a Windows Explorer–Style Interface on a Windows Form](how-to-create-a-windows-explorer-style-interface-on-a-windows-form.md), [How to: Create a Multipane User Interface with Windows Forms Using the Designer](create-a-multipane-user-interface-with-wf-using-the-designer.md).  
@@ -40,8 +40,8 @@ Describes this class and has links to all its members.
   
 ## Related Sections  
 
-[Windows Forms Controls](overview.md)  
+[Windows Forms Controls](overview.md)\
 Provides links to topics about the controls designed specifically to work with Windows Forms.  
   
-[Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)  
+[Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)\
 Provides a complete list of Windows Forms controls, with links to information on their use.

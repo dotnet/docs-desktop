@@ -17,10 +17,10 @@ The Windows Forms <xref:System.Windows.Forms.ProgressBar> control indicates the 
   
 ## In This Section  
 
-[ProgressBar Control Overview](progressbar-control-overview-windows-forms.md)  
+[ProgressBar Control Overview](progressbar-control-overview-windows-forms.md)\
 Introduces the general concepts of the <xref:System.Windows.Forms.ProgressBar> control, which enables you to graphically display the progress of an operation.  
   
-[How to: Set the Value Displayed by the Windows Forms ProgressBar Control](how-to-set-the-value-displayed-by-the-windows-forms-progressbar-control.md)  
+[How to: Set the Value Displayed by the Windows Forms ProgressBar Control](how-to-set-the-value-displayed-by-the-windows-forms-progressbar-control.md)\
 Discusses a number of different ways to increase the value displayed by the <xref:System.Windows.Forms.ProgressBar> control.  
   
 ## Reference  
@@ -30,5 +30,5 @@ Provides reference information on the class and its members.
   
 ## Related Sections  
 
-[Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)  
+[Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)\
 Provides a complete list of Windows Forms controls, with links to information on their use.

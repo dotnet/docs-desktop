@@ -40,7 +40,7 @@ The following markup example shows a <xref:System.Windows.Controls.TextBlock> th
   
 The following illustration shows the results of the markup.  
   
-![Offset values of objects](./media/visualoffset-01.png "VisualOffset_01")  
+![Offset values of objects](./media/visualoffset-01.png "VisualOffset_01")\
 TextBlock nested within two StackPanels  
   
 The following code example shows how to use the <xref:System.Windows.Media.Visual.TransformToAncestor%2A> method to retrieve the offset of the <xref:System.Windows.Controls.TextBlock> relative to the containing <xref:System.Windows.Window>. The offset values are contained within the returned <xref:System.Windows.Media.GeneralTransform> value.  

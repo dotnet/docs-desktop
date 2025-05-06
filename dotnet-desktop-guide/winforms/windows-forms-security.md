@@ -20,43 +20,43 @@ Windows Forms features a security model that is code-based (security levels are 
   
 ## In This Section  
 
-[Security in Windows Forms Overview](security-in-windows-forms-overview.md)  
+[Security in Windows Forms Overview](security-in-windows-forms-overview.md)\
 Briefly explains the .NET Framework security model and the basic steps necessary to ensure the Windows Forms in your application are secure.  
   
-[More Secure File and Data Access in Windows Forms](more-secure-file-and-data-access-in-windows-forms.md)  
+[More Secure File and Data Access in Windows Forms](more-secure-file-and-data-access-in-windows-forms.md)\
 Describes how to access files and data in a semi-trusted environment.  
   
-[More Secure Printing in Windows Forms](more-secure-printing-in-windows-forms.md)  
+[More Secure Printing in Windows Forms](more-secure-printing-in-windows-forms.md)\
 Describes how to access printing features in a semi-trusted environment.  
   
-[Additional Security Considerations in Windows Forms](additional-security-considerations-in-windows-forms.md)  
+[Additional Security Considerations in Windows Forms](additional-security-considerations-in-windows-forms.md)\
 Describes performing window manipulation, using the Clipboard, and making calls to unmanaged code in a semi-trusted environment.  
   
 ## Related Sections  
 
-[Default Security Policy](/previous-versions/dotnet/netframework-4.0/03kwzyfc(v=vs.100))  
+[Default Security Policy](/previous-versions/dotnet/netframework-4.0/03kwzyfc(v=vs.100))\
 Lists the default permissions granted in the Full Trust, Local Intranet, and Internet permission sets.  
   
-[General Security Policy Administration](/previous-versions/dotnet/netframework-4.0/ed5htz45(v=vs.100))  
+[General Security Policy Administration](/previous-versions/dotnet/netframework-4.0/ed5htz45(v=vs.100))\
 Gives information about the administering the .NET Framework security policy and elevating permissions.  
   
-[Dangerous Permissions and Policy Administration](/dotnet/framework/misc/dangerous-permissions-and-policy-administration)  
+[Dangerous Permissions and Policy Administration](/dotnet/framework/misc/dangerous-permissions-and-policy-administration)\
 Discusses some of the.NET Framework permissions that can potentially allow the security system to be circumvented.  
   
-[Secure Coding Guidelines](/dotnet/standard/security/secure-coding-guidelines)  
+[Secure Coding Guidelines](/dotnet/standard/security/secure-coding-guidelines)\
 Links to topics that explain the best practices for securely writing code against the .NET Framework.  
   
-[Requesting Permissions](/previous-versions/dotnet/netframework-4.0/yd267cce(v=vs.100))  
+[Requesting Permissions](/previous-versions/dotnet/netframework-4.0/yd267cce(v=vs.100))\
 Discusses the use of attributes to let the runtime know what permissions your code needs to run.  
   
-[Key Security Concepts](/dotnet/standard/security/key-security-concepts)  
+[Key Security Concepts](/dotnet/standard/security/key-security-concepts)\
 Links to topics that cover the basic aspects of code security.  
   
-[Code Access Security Basics](/dotnet/framework/misc/code-access-security-basics)  
+[Code Access Security Basics](/dotnet/framework/misc/code-access-security-basics)\
 Discusses the basics of working with the .NET Framework run time security policy.  
   
-[Determining When to Modify Security Policy](/previous-versions/dotnet/netframework-4.0/xky659fc(v=vs.100))  
+[Determining When to Modify Security Policy](/previous-versions/dotnet/netframework-4.0/xky659fc(v=vs.100))\
 Explains how to determine when your applications need to diverge from the default security policy.  
   
-[Deploying Security Policy](/previous-versions/dotnet/netframework-4.0/13wcxx6y(v=vs.100))  
+[Deploying Security Policy](/previous-versions/dotnet/netframework-4.0/13wcxx6y(v=vs.100))\
 Discusses the best manner for deploying security policy changes.

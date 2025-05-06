@@ -17,37 +17,37 @@ There are several classes offered by GDI+ and GDI for drawing text on Windows Fo
   
 ## In This Section  
 
-[How to: Construct Font Families and Fonts](how-to-construct-font-families-and-fonts.md)  
+[How to: Construct Font Families and Fonts](how-to-construct-font-families-and-fonts.md)\
 Shows how to create `Font` and `FontFamily` objects.  
   
-[How to: Draw Text at a Specified Location](how-to-draw-text-at-a-specified-location.md)  
+[How to: Draw Text at a Specified Location](how-to-draw-text-at-a-specified-location.md)\
 Describes how to draw text in a certain location using GDI+ and GDI.  
   
-[How to: Draw Wrapped Text in a Rectangle](how-to-draw-wrapped-text-in-a-rectangle.md)  
+[How to: Draw Wrapped Text in a Rectangle](how-to-draw-wrapped-text-in-a-rectangle.md)\
 Explains how to draw text in a rectangle using GDI+ and GDI.  
   
-[How to: Draw Text with GDI](how-to-draw-text-with-gdi.md)  
+[How to: Draw Text with GDI](how-to-draw-text-with-gdi.md)\
 Demonstrates how to use GDI for drawing text.  
   
-[How to: Align Drawn Text](how-to-align-drawn-text.md)  
+[How to: Align Drawn Text](how-to-align-drawn-text.md)\
 Shows how to format GDI+ and GDI text.  
   
-[How to: Create Vertical Text](how-to-create-vertical-text.md)  
+[How to: Create Vertical Text](how-to-create-vertical-text.md)\
 Describes how to draw vertically aligned text with GDI+.  
   
-[How to: Set Tab Stops in Drawn Text](how-to-set-tab-stops-in-drawn-text.md)  
+[How to: Set Tab Stops in Drawn Text](how-to-set-tab-stops-in-drawn-text.md)\
 Shows how draw text with tab stops with GDI+.  
   
-[How to: Enumerate Installed Fonts](how-to-enumerate-installed-fonts.md)  
+[How to: Enumerate Installed Fonts](how-to-enumerate-installed-fonts.md)\
 Explains how to list the names of installed fonts.  
   
-[How to: Create a Private Font Collection](how-to-create-a-private-font-collection.md)  
+[How to: Create a Private Font Collection](how-to-create-a-private-font-collection.md)\
 Describes how to create a <xref:System.Drawing.Text.PrivateFontCollection> object.  
   
-[How to: Obtain Font Metrics](how-to-obtain-font-metrics.md)  
+[How to: Obtain Font Metrics](how-to-obtain-font-metrics.md)\
 Shows how to obtain font metrics such as cell ascent and descent.  
   
-[How to: Use Antialiasing with Text](how-to-use-antialiasing-with-text.md)  
+[How to: Use Antialiasing with Text](how-to-use-antialiasing-with-text.md)\
 Explains how to use antialiasing when drawing text.  
   
 ## Reference  

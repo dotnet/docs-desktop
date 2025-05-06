@@ -20,13 +20,13 @@ The Windows Forms `NotifyIcon` component displays icons in the status notificati
   
 ## In This Section  
 
-[NotifyIcon Component Overview](notifyicon-component-overview-windows-forms.md)  
+[NotifyIcon Component Overview](notifyicon-component-overview-windows-forms.md)\
 Introduces the general concepts of the `NotifyIcon` component, which allows users to see icons for processes running in the background that do not have a user interface.  
   
-[How to: Add Application Icons to the TaskBar with the Windows Forms NotifyIcon Component](app-icons-to-the-taskbar-with-wf-notifyicon.md)  
+[How to: Add Application Icons to the TaskBar with the Windows Forms NotifyIcon Component](app-icons-to-the-taskbar-with-wf-notifyicon.md)\
 Provides steps for setting the icon displayed by the `NotifyIcon` component.  
   
-[How to: Associate a Shortcut Menu with a Windows Forms NotifyIcon Component](how-to-associate-a-shortcut-menu-with-a-windows-forms-notifyicon-component.md)  
+[How to: Associate a Shortcut Menu with a Windows Forms NotifyIcon Component](how-to-associate-a-shortcut-menu-with-a-windows-forms-notifyicon-component.md)\
 Provides steps for adding a shortcut menu to a `NotifyIcon` component.  
   
 ## Reference  
@@ -36,5 +36,5 @@ Provides reference information on the class and its members.
   
 ## Related Sections  
 
-[Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)  
+[Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)\
 Provides a complete list of Windows Forms controls, with links to information on their use.

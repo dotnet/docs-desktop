@@ -57,7 +57,7 @@ The following example uses a <xref:System.Windows.Media.GeometryDrawing> to draw
   
 This example creates the following <xref:System.Windows.Media.GeometryDrawing>.  
   
-![A GeometryDrawing of two ellipses](./media/graphicsmm-geodraw.jpg "graphicsmm_geodraw")  
+![A GeometryDrawing of two ellipses](./media/graphicsmm-geodraw.jpg "graphicsmm_geodraw")\
 A GeometryDrawing  
   
 [!code-csharp[DrawingMiscSnippets_snip#GeometryDrawingExampleInline](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingMiscSnippets_snip/CSharp/GeometryDrawingExample.cs#geometrydrawingexampleinline)]
@@ -77,7 +77,7 @@ To draw an image, you use an <xref:System.Windows.Media.ImageDrawing>. An <xref:
   
 The following example draws an image into a rectangle located at (75,75) that is 100 by 100 pixel. The following illustration shows the <xref:System.Windows.Media.ImageDrawing> created by the example. A gray border was added to show the bounds of the <xref:System.Windows.Media.ImageDrawing>.  
   
-![A 100 by 100 ImageDrawing drawn at &#40;75,75&#41;](./media/graphicsmm-simple-imagedrawing-offset.png "graphicsmm_simple_imagedrawing_offset")  
+![A 100 by 100 ImageDrawing drawn at &#40;75,75&#41;](./media/graphicsmm-simple-imagedrawing-offset.png "graphicsmm_simple_imagedrawing_offset")\
 A 100 by 100 ImageDrawing  
   
 [!code-csharp[DrawingMiscSnippets_snip#ImageDrawing100by100Inline](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingMiscSnippets_snip/CSharp/ImageDrawingExample.cs#imagedrawing100by100inline)]
@@ -170,7 +170,7 @@ A <xref:System.Windows.Media.DrawingGroup> enables you to combine multiple drawi
   
 The following example uses a <xref:System.Windows.Media.DrawingGroup> to combine two <xref:System.Windows.Media.GeometryDrawing> objects and an <xref:System.Windows.Media.ImageDrawing> object. This example produces the following output.  
   
-![A DrawingGroup with multiple drawings](./media/graphicsmm-simple.jpg "graphicsmm_simple")  
+![A DrawingGroup with multiple drawings](./media/graphicsmm-simple.jpg "graphicsmm_simple")\
 A composite drawing  
   
 [!code-csharp[DrawingMiscSnippets_snip#GraphicsMMSimpleDrawingGroupExample](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingMiscSnippets_snip/CSharp/DrawingGroupExample.cs#graphicsmmsimpledrawinggroupexample)]
@@ -180,7 +180,7 @@ A <xref:System.Windows.Media.DrawingGroup> also enables you to apply opacity mas
   
 The following illustration shows the order in which <xref:System.Windows.Media.DrawingGroup> operations are applied.  
   
-![DrawingGroup order of operations](./media/graphcismm-drawinggroup-order.png "graphcismm_drawinggroup_order")  
+![DrawingGroup order of operations](./media/graphcismm-drawinggroup-order.png "graphcismm_drawinggroup_order")\
 Order of DrawingGroup operations  
   
 The following table describes the properties you can use to manipulate a <xref:System.Windows.Media.DrawingGroup> object's contents.  
@@ -202,7 +202,7 @@ To display a <xref:System.Windows.Media.Drawing> with an <xref:System.Windows.Co
   
 The following example uses a <xref:System.Windows.Media.DrawingImage> and an <xref:System.Windows.Controls.Image> control to display a <xref:System.Windows.Media.GeometryDrawing>. This example produces the following output.  
   
-![A GeometryDrawing of two ellipses](./media/graphicsmm-geodraw.jpg "graphicsmm_geodraw")  
+![A GeometryDrawing of two ellipses](./media/graphicsmm-geodraw.jpg "graphicsmm_geodraw")\
 A DrawingImage  
   
 [!code-csharp[DrawingMiscSnippets_snip#DrawingImageExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingMiscSnippets_snip/CSharp/DrawingImageExample.cs#drawingimageexamplewholepage)]
@@ -216,7 +216,7 @@ A <xref:System.Windows.Media.DrawingBrush> is a type of brush that paints an are
   
 The following examples uses a <xref:System.Windows.Media.DrawingBrush> to paint the <xref:System.Windows.Shapes.Shape.Fill%2A> of a <xref:System.Windows.Shapes.Rectangle> with a pattern created from a <xref:System.Windows.Media.GeometryDrawing>. This example produces the following output.  
   
-![A tiled DrawingBrush](./media/graphicsmm-drawingbrush-geometrydrawing.png "graphicsmm_drawingbrush_geometrydrawing")  
+![A tiled DrawingBrush](./media/graphicsmm-drawingbrush-geometrydrawing.png "graphicsmm_drawingbrush_geometrydrawing")\
 A GeometryDrawing used with a DrawingBrush  
   
 [!code-csharp[DrawingMiscSnippets_snip#DrawingBrushExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingMiscSnippets_snip/CSharp/DrawingBrushExample.cs#drawingbrushexamplewholepage)]

@@ -16,10 +16,10 @@ The Windows Forms `FolderBrowserDialog` component displays an interface with whi
   
 ## In This Section  
 
-[FolderBrowserDialog Component Overview (Windows Forms)](folderbrowserdialog-component-overview-windows-forms.md)  
+[FolderBrowserDialog Component Overview (Windows Forms)](folderbrowserdialog-component-overview-windows-forms.md)\
 Explains what this control is and its key features and properties.  
   
-[How to: Choose Folders with the Windows Forms FolderBrowserDialog Component](how-to-choose-folders-with-the-windows-forms-folderbrowserdialog-component.md)  
+[How to: Choose Folders with the Windows Forms FolderBrowserDialog Component](how-to-choose-folders-with-the-windows-forms-folderbrowserdialog-component.md)\
 Explains how to programmatically extract the selected folder from the dialog box, as well as work with some of the other, optional properties of the component.  
   
 ## Reference  
@@ -29,8 +29,8 @@ Describes this class and has links to all its members.
   
 ## Related Sections  
 
-[Dialog Boxes in Windows Forms](../dialog-boxes-in-windows-forms.md)  
+[Dialog Boxes in Windows Forms](../dialog-boxes-in-windows-forms.md)\
 Provides a list of tasks for dialog boxes, which often display tabs.  
   
-[Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)  
+[Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)\
 Provides a complete list of Windows Forms controls, with links to information on their use.

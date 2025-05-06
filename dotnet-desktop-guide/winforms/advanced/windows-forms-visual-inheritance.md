@@ -21,28 +21,28 @@ You can create derived-class forms programmatically or by using the Visual Inher
   
 ## In This Section  
 
-[How to: Inherit Windows Forms](how-to-inherit-windows-forms.md)  
+[How to: Inherit Windows Forms](how-to-inherit-windows-forms.md)\
 Gives directions for creating inherited forms in code.  
   
-[How to: Inherit Forms Using the Inheritance Picker Dialog Box](how-to-inherit-forms-using-the-inheritance-picker-dialog-box.md)  
+[How to: Inherit Forms Using the Inheritance Picker Dialog Box](how-to-inherit-forms-using-the-inheritance-picker-dialog-box.md)\
 Gives directions for creating inherited forms with the Inheritance Picker.  
   
-[Effects of Modifying a Base Form's Appearance](effects-of-modifying-base-form-appearance.md)  
+[Effects of Modifying a Base Form's Appearance](effects-of-modifying-base-form-appearance.md)\
 Gives directions for changing a base form's controls and their properties.  
   
-[Walkthrough: Demonstrating Visual Inheritance](walkthrough-demonstrating-visual-inheritance.md)  
+[Walkthrough: Demonstrating Visual Inheritance](walkthrough-demonstrating-visual-inheritance.md)\
 Describes how to create a base Windows Form and compile it into a class library. You will import this class library into another project, and create a new form that inherits from the base form.  
   
-[How to: Use the Modifiers and GenerateMember Properties](how-to-use-the-modifiers-and-generatemember-properties.md)  
+[How to: Use the Modifiers and GenerateMember Properties](how-to-use-the-modifiers-and-generatemember-properties.md)\
 Gives directions for using the `GenerateMember` and `Modifiers` properties, which are relevant when the Windows Forms Designer generates a member variable for a component.  
   
 ## Related Sections  
 
-[Inheritance basics (Visual Basic)](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics)  
+[Inheritance basics (Visual Basic)](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics)\
 Describes how to define Visual Basic classes that serve as the basis for other classes.  
   
-[class](/dotnet/csharp/language-reference/keywords/class)  
+[class](/dotnet/csharp/language-reference/keywords/class)\
 Describes the C# approach of classes, in which single inheritance is allowed.  
   
-[Troubleshooting Inherited Event Handlers in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/events/troubleshooting-inherited-event-handlers)  
+[Troubleshooting Inherited Event Handlers in Visual Basic](/dotnet/visual-basic/programming-guide/language-features/events/troubleshooting-inherited-event-handlers)\
 Lists common issues that arise with event handlers in inherited components

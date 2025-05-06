@@ -13,13 +13,13 @@ The Windows Forms <xref:System.Windows.Forms.FileDialog> class is the common bas
   
 ## In This Section  
 
-[How To: Opt Out of File Dialog Box Automatic Upgrade](how-to-opt-out-of-file-dialog-box-automatic-upgrade.md)  
+[How To: Opt Out of File Dialog Box Automatic Upgrade](how-to-opt-out-of-file-dialog-box-automatic-upgrade.md)\
 Describes how to opt out of a style automatic upgrade to a file dialog box.  
   
-[How To: Add a Custom Place to a File Dialog Box](how-to-add-a-custom-place-to-a-file-dialog-box.md)  
+[How To: Add a Custom Place to a File Dialog Box](how-to-add-a-custom-place-to-a-file-dialog-box.md)\
 Describes how to add a custom file location to a file dialog box.  
   
-[Known Folder GUIDs for File Dialog Custom Places](known-folder-guids-for-file-dialog-custom-places.md)  
+[Known Folder GUIDs for File Dialog Custom Places](known-folder-guids-for-file-dialog-custom-places.md)\
 List the folder names and their associated GUIDs.  
   
 ## Reference  

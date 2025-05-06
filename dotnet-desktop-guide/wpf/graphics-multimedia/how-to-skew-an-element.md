@@ -35,7 +35,7 @@ The following example applies a vertical skew of 45 degrees to a <xref:System.Wi
   
 The following illustration shows the different skews that are used in this example.  
   
-![SkewTransform examples](./media/img-wcpsdk-graphicsmm-skewtransformexample.gif "img_wcpsdk_graphicsmm_skewtransformexample")  
+![SkewTransform examples](./media/img-wcpsdk-graphicsmm-skewtransformexample.gif "img_wcpsdk_graphicsmm_skewtransformexample")\
 The three SkewTransform examples illustrated  
   
 For the complete sample, see [2D Transforms Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Graphics/2DTransforms).  

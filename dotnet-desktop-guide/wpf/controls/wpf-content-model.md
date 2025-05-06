@@ -217,7 +217,7 @@ The <xref:System.Windows.Controls.Decorator> class applies visual effects onto o
   
 The following illustration shows a <xref:System.Windows.Controls.TextBox> that has (is decorated with) a <xref:System.Windows.Controls.Border> around it.  
   
-![TextBox with black border](./media/layout-border-around-textbox.png "Layout_Border_around_TextBox")  
+![TextBox with black border](./media/layout-border-around-textbox.png "Layout_Border_around_TextBox")\
 TextBlock that has a Border  
   
 <a name="classes_that_provides_visual_feedback_about_a_uielement"></a>

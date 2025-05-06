@@ -17,10 +17,10 @@ In many applications, you can make your user interface (UI) more responsive by p
   
 ## In This Section  
 
-[How to: Make Thread-Safe Calls to Windows Forms Controls](how-to-make-thread-safe-calls.md)  
+[How to: Make Thread-Safe Calls to Windows Forms Controls](how-to-make-thread-safe-calls.md)\
 Shows how to make thread-safe calls to Windows Forms controls.  
   
-[How to: Use a Background Thread to Search for Files](how-to-use-a-background-thread-to-search-for-files.md)  
+[How to: Use a Background Thread to Search for Files](how-to-use-a-background-thread-to-search-for-files.md)\
 Shows how to use the <xref:System.Threading> namespace and the <xref:System.Windows.Forms.Control.BeginInvoke%2A> method to search for files asynchronously.  
   
 ## Reference  
@@ -36,8 +36,8 @@ Documents how to load an image asynchronously.
   
 ## Related Sections  
 
-[How to: Run an Operation in the Background](how-to-run-an-operation-in-the-background.md)  
+[How to: Run an Operation in the Background](how-to-run-an-operation-in-the-background.md)\
 Shows how to perform a time-consuming operation with the <xref:System.ComponentModel.BackgroundWorker> component.  
   
-[BackgroundWorker Component Overview](backgroundworker-component-overview.md)  
+[BackgroundWorker Component Overview](backgroundworker-component-overview.md)\
 Provides topics that describe how to use the <xref:System.ComponentModel.BackgroundWorker> component for asynchronous operations.
