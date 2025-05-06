@@ -81,6 +81,6 @@ You can create a tunneling event the same way as a bubbling event, except you'll
 ## See also
 
 - [Routed events overview](routed-events-overview.md)
-- [Input overview](/dotnet/desktop/wpf/advanced/input-overview?view=netframeworkdesktop-4.8&preserve-view=true)
-- [Control authoring overview](/dotnet/desktop/wpf/controls/control-authoring-overview?view=netframeworkdesktop-4.8&preserve-view=true)
-- [Handle a routed event](/dotnet/desktop/wpf/advanced/how-to-handle-a-routed-event?view=netframeworkdesktop-4.8&preserve-view=true).
+- [Input overview](../advanced/input-overview.md)
+- [Control authoring overview](../controls/control-authoring-overview.md)
+- [Handle a routed event](../advanced/how-to-handle-a-routed-event.md)

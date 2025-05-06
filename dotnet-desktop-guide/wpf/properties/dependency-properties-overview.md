@@ -78,7 +78,7 @@ The following XAML example sets the background color of a button to red. The str
 
 :::code language="xaml" source="./snippets/dependency-properties-overview/csharp/MainWindow.xaml" id="BasicPropertySyntax":::
 
-XAML supports several syntax forms for setting properties. Which syntax to use for a particular property depends on the value type that a property uses, and other factors, such as the presence of a type converter. For more information on XAML syntax for setting properties, see [XAML in WPF](../xaml/index.md) and [XAML syntax In detail](/dotnet/desktop/wpf/advanced/xaml-syntax-in-detail?view=netframeworkdesktop-4.8&preserve-view=true).
+XAML supports several syntax forms for setting properties. Which syntax to use for a particular property depends on the value type that a property uses, and other factors, such as the presence of a type converter. For more information on XAML syntax for setting properties, see [XAML in WPF](../xaml/index.md) and [XAML syntax In detail](../advanced/xaml-syntax-in-detail.md)
 
 The following XAML example shows another button background that uses property element syntax instead of attribute syntax. Rather than setting a simple solid color, the XAML sets the button `Background` property to an image. An element represents that image, and an attribute of the nested element specifies the source of the image.
 
@@ -98,7 +98,7 @@ Getting a property value is essentially a call to the `get` "wrapper" implementa
 
 You can also call the property system APIs <xref:System.Windows.DependencyObject.GetValue%2A> and <xref:System.Windows.DependencyObject.SetValue%2A> directly. Calling the APIs directly is appropriate for some scenarios, but usually not when you're using existing properties. Typically, wrappers are more convenient, and provide better exposure of the property for developer tools.
 
-Properties can be also set in XAML and then accessed later in code, through code-behind. For details, see [Code-behind and XAML in WPF](/dotnet/desktop/wpf/advanced/code-behind-and-xaml-in-wpf?view=netframeworkdesktop-4.8&preserve-view=true).
+Properties can be also set in XAML and then accessed later in code, through code-behind. For details, see [Code-behind and XAML in WPF](../advanced/code-behind-and-xaml-in-wpf.md)
 
 ## Property functionality provided by a dependency property
 
@@ -128,7 +128,7 @@ Now that the resource is defined, we can reference the resource to provide a val
 
 :::code language="xaml" source="./snippets/dependency-properties-overview/csharp/MainWindow.xaml" id="ResourceReference":::
 
-In WPF XAML, you can use either a static or dynamic resource reference. This particular resource is referenced as a [DynamicResource](/dotnet/desktop/wpf/advanced/dynamicresource-markup-extension?view=netframeworkdesktop-4.8&preserve-view=true). A dynamic resource reference can only be used to set a dependency property, so it's specifically the dynamic resource reference usage that's enabled by the WPF property system. For more information, see [XAML resources](../systems/xaml-resources-overview.md).
+In WPF XAML, you can use either a static or dynamic resource reference. This particular resource is referenced as a [DynamicResource](../advanced/dynamicresource-markup-extension.md)
 
 > [!NOTE]
 > Resources are treated as a local value, which means that if you set another local value, you'll eliminate the resource reference. For more information, see [Dependency property value precedence](dependency-property-value-precedence.md).
@@ -144,7 +144,7 @@ The following example sets the <xref:System.Windows.Controls.ContentControl.Cont
 > [!NOTE]
 > Bindings are treated as a local value, which means that if you set another local value, you'll eliminate the binding. For details, see [Dependency property value precedence](dependency-property-value-precedence.md).
 
-Dependency properties, or the <xref:System.Windows.DependencyObject> class, don't natively support <xref:System.ComponentModel.INotifyPropertyChanged> for notification of changes in `DependencyObject` source property value for data binding operations. For more about how to create properties for use in data binding that can report changes to a data binding target, see [Data binding overview](/dotnet/desktop/wpf/data/data-binding-overview?view=netframeworkdesktop-4.8&preserve-view=true).
+Dependency properties, or the <xref:System.Windows.DependencyObject> class, don't natively support <xref:System.ComponentModel.INotifyPropertyChanged> for notification of changes in `DependencyObject` source property value for data binding operations. For more about how to create properties for use in data binding that can report changes to a data binding target, see [Data binding overview](../data/data-binding-overview.md)
 
 ### Styles
 
@@ -166,7 +166,7 @@ The following example animates the <xref:System.Windows.Controls.Control.Backgro
 
 :::code language="xaml" source="./snippets/dependency-properties-overview/csharp/MainWindow.xaml" id="Animate":::
 
-For more about animating properties, see [Animation overview](/dotnet/desktop/wpf/graphics-multimedia/animation-overview?view=netframeworkdesktop-4.8&preserve-view=true) and [Storyboards overview](/dotnet/desktop/wpf/graphics-multimedia/storyboards-overview?view=netframeworkdesktop-4.8&preserve-view=true).
+For more about animating properties, see [Animation overview](../graphics-multimedia/animation-overview?view=netframeworkdesktop-4.8&preserve-view=true) and [Storyboards overview](/dotnet/desktop/wpf/graphics-multimedia/storyboards-overview.md)
 
 ### Metadata overrides
 
@@ -194,7 +194,7 @@ For more information, see [Property value inheritance](property-value-inheritanc
 
 ### WPF designer integration
 
-Custom controls with properties implemented as dependency properties integrate well with WPF Designer for Visual Studio. One example is the ability to edit direct and attached dependency properties in the **Properties** window. For more information, see [Control authoring overview](/dotnet/desktop/wpf/controls/control-authoring-overview?view=netframeworkdesktop-4.8&preserve-view=true).
+Custom controls with properties implemented as dependency properties integrate well with WPF Designer for Visual Studio. One example is the ability to edit direct and attached dependency properties in the **Properties** window. For more information, see [Control authoring overview](../controls/control-authoring-overview.md)
 
 ## Dependency property value precedence
 
@@ -227,4 +227,4 @@ Locally set values have precedence over style setter values, which supports loca
 - [Custom dependency properties](custom-dependency-properties.md)
 - [Read-only dependency properties](read-only-dependency-properties.md)
 - [XAML in WPF](../xaml/index.md)
-- [WPF architecture](/dotnet/desktop/wpf/advanced/wpf-architecture?view=netframeworkdesktop-4.8&preserve-view=true)
+- [WPF architecture](../advanced/wpf-architecture.md)

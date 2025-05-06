@@ -54,6 +54,6 @@ If the queue isn't paused and the printer is working, then a print job will auto
 ## See also
 
 - <xref:System.Printing.PrintQueue.AddJob%2A?displayProperty=nameWithType>
-- [Documents in WPF](/dotnet/desktop/wpf/advanced/documents-in-wpf?view=netframeworkdesktop-4.8&preserve-view=true)
+- [Documents in WPF](../advanced/documents-in-wpf.md)
 - [How to display a print dialog box](how-to-display-print-dialog.md)
 - [Printing documents overview](printing-overview.md)

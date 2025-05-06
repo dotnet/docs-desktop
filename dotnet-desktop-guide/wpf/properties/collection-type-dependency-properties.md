@@ -64,7 +64,7 @@ The following example declares an `Aquarium` class that contains a `FreezableCol
 ## See also
 
 - <xref:System.Windows.FreezableCollection%601>
-- [XAML and Custom Classes for WPF](/dotnet/desktop/wpf/advanced/xaml-and-custom-classes-for-wpf?view=netframeworkdesktop-4.8&preserve-view=true)
+- [XAML and Custom Classes for WPF](../advanced/xaml-and-custom-classes-for-wpf.md)
 - [Data Binding Overview](../data/index.md)
 - [Dependency Properties Overview](dependency-properties-overview.md)
 - [Custom Dependency Properties](custom-dependency-properties.md)

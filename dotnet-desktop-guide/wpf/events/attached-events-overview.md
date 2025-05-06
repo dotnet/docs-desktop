@@ -93,5 +93,5 @@ In the preceding example, `aquarium1` is the event source.
 ## See also
 
 - [Routed events overview](routed-events-overview.md)
-- [XAML syntax in detail](/dotnet/desktop/wpf/advanced/xaml-syntax-in-detail?view=netframeworkdesktop-4.8&preserve-view=true)
-- [XAML and custom classes for WPF](/dotnet/desktop/wpf/advanced/xaml-and-custom-classes-for-wpf?view=netframeworkdesktop-4.8&preserve-view=true)
+- [XAML syntax in detail](../advanced/xaml-syntax-in-detail.md)
+- [XAML and custom classes for WPF](../advanced/xaml-and-custom-classes-for-wpf.md)

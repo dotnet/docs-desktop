@@ -92,7 +92,7 @@ To "inherit" a dependency property that's registered in a different class hierar
 
 - A CLR wrapper that implements `get` and `set` accessors. By using a property wrapper, consumers of dependency properties can get or set dependency property values, just as they would any other CLR property. The `get` and `set` accessors interact with the underlying property system through <xref:System.Windows.DependencyObject.GetValue%2A?displayProperty=nameWithType> and <xref:System.Windows.DependencyObject.SetValue%2A?displayProperty=nameWithType> calls, passing in the dependency property identifier as a parameter. Implement the wrapper the same way you would when registering a custom dependency property. For more information, see [Custom dependency properties](custom-dependency-properties.md)
 
-A class that calls `AddOwner` has the same requirements for exposing the object model of the inherited dependency property as a class that defines a new custom dependency property. For more information, see [Add an owner type for a dependency property](/dotnet/desktop/wpf/advanced/how-to-add-an-owner-type-for-a-dependency-property?view=netframeworkdesktop-4.8&preserve-view=true).
+A class that calls `AddOwner` has the same requirements for exposing the object model of the inherited dependency property as a class that defines a new custom dependency property. For more information, see [Add an owner type for a dependency property](../advanced/how-to-add-an-owner-type-for-a-dependency-property.md)
 
 ## Attached property metadata
 

@@ -81,7 +81,7 @@ Creating an attached property is useful when:
 - You need a property setting mechanism available to classes other than the defining class. A common scenario is for UI layout, for instance <xref:System.Windows.Controls.DockPanel.Dock%2A?displayProperty=nameWithType>, <xref:System.Windows.Controls.Panel.ZIndex%2A?displayProperty=nameWithType>, and <xref:System.Windows.Controls.Canvas.Top%2A?displayProperty=nameWithType> are all examples of existing layout properties. In the layout scenario, child elements of a layout-controlling element are able to express layout requirements to their layout parent and to set a value for an attached property defined by the parent.
 
 - One of your classes represents a service, and you want other classes to integrate the service more transparently.
-- You want Visual Studio WPF Designer support, such as the ability to edit a property through the **Properties** window. For more information, see [Control authoring overview](/dotnet/desktop/wpf/controls/control-authoring-overview?view=netframeworkdesktop-4.8&preserve-view=true).
+- You want Visual Studio WPF Designer support, such as the ability to edit a property through the **Properties** window. For more information, see [Control authoring overview](../controls/control-authoring-overview.md)
 - You want to use property value inheritance.
 
 ### How to create an attached property

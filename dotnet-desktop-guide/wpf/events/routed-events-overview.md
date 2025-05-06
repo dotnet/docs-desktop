@@ -123,7 +123,7 @@ The signature of the event handler method in code-behind must match the delegate
 
 Although <xref:System.Windows.RoutedEventHandler> is the basic routed event handler delegate, some controls or implementation scenarios require different delegates that support more specialized event data. As an example, for the <xref:System.Windows.UIElement.DragEnter> routed event, your handler should implement the <xref:System.Windows.DragEventHandler> delegate. By doing so, your handler code can access the <xref:System.Windows.DragEventArgs.Data?displayProperty=nameWithType> property in event data, which contains the clipboard payload from the drag operation.
 
-The XAML syntax for adding routed event handlers is the same as for standard CLR event handlers. For more information about adding event handlers in XAML, see [XAML in WPF](../xaml/index.md). For a complete example of how to attach an event handler to an element using XAML, see [How to handle a routed event](/dotnet/desktop/wpf/advanced/how-to-handle-a-routed-event?view=netframeworkdesktop-4.8&preserve-view=true).
+The XAML syntax for adding routed event handlers is the same as for standard CLR event handlers. For more information about adding event handlers in XAML, see [XAML in WPF](../xaml/index.md). For a complete example of how to attach an event handler to an element using XAML, see [How to handle a routed event](../advanced/how-to-handle-a-routed-event.md)
 
 To attach an event handler for a routed event to an element using code, you generally have two options:
 
@@ -195,11 +195,11 @@ The `<owner type>.<event name>` syntax qualifies an event name with the name of 
 
 :::code language="xaml" source="./snippets/routed-events-overview/csharp/MainWindow.xaml" id="AddHandler_QualifiedEventName":::
 
-In the example, the parent element listener to which the event handler is added is a <xref:System.Windows.Controls.StackPanel>. However, the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> routed event is implemented and raised on the <xref:System.Windows.Controls.Primitives.ButtonBase> class, and available to the <xref:System.Windows.Controls.Button> class through inheritance. Although the <xref:System.Windows.Controls.Button> class "owns" the `Click` event, the routed event system permits handlers for any routed event to be attached to any <xref:System.Windows.UIElement> or <xref:System.Windows.ContentElement> instance listener that could otherwise have handlers for a CLR event. The default `xmlns` namespace for these qualified event attribute names is typically the default WPF `xmlns` namespace, but you can also specify prefixed namespaces for custom routed events. For more information about `xmlns`, see [XAML namespaces and namespace mapping for WPF XAML](/dotnet/desktop/wpf/advanced/xaml-namespaces-and-namespace-mapping-for-wpf-xaml?view=netframeworkdesktop-4.8&preserve-view=true).
+In the example, the parent element listener to which the event handler is added is a <xref:System.Windows.Controls.StackPanel>. However, the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> routed event is implemented and raised on the <xref:System.Windows.Controls.Primitives.ButtonBase> class, and available to the <xref:System.Windows.Controls.Button> class through inheritance. Although the <xref:System.Windows.Controls.Button> class "owns" the `Click` event, the routed event system permits handlers for any routed event to be attached to any <xref:System.Windows.UIElement> or <xref:System.Windows.ContentElement> instance listener that could otherwise have handlers for a CLR event. The default `xmlns` namespace for these qualified event attribute names is typically the default WPF `xmlns` namespace, but you can also specify prefixed namespaces for custom routed events. For more information about `xmlns`, see [XAML namespaces and namespace mapping for WPF XAML](../advanced/xaml-namespaces-and-namespace-mapping-for-wpf-xaml.md)
 
 ## WPF input events
 
-One frequent application of routed events within the WPF platform is for [input events](/dotnet/desktop/wpf/advanced/input-overview?view=netframeworkdesktop-4.8&preserve-view=true). By convention, WPF routed events that follow a tunneling route have a name that's prefixed with "Preview". The Preview prefix signifies that the preview event completes before the paired bubbling event starts. Input events often come in pairs, with one being a preview event and the other a bubbling routed event. For example, <xref:System.Windows.ContentElement.PreviewKeyDown> and <xref:System.Windows.ContentElement.KeyDown>. The event pairs share the same instance of event data, which for `PreviewKeyDown` and `KeyDown` is of type <xref:System.Windows.Input.KeyEventArgs>. Occasionally, input events only have a bubbling version, or only a direct routed version. In the API documentation, routed event topics cross-reference routed event pairs and clarify the routing strategy for each routed event.
+One frequent application of routed events within the WPF platform is for [input events](../advanced/input-overview.md)
 
 WPF input events that come in pairs are implemented so that a single user action from an input device, such as a mouse button press, will raise the preview and bubbling routed events in sequence. First, the preview event is raised and completes its route. On completion of the preview event, the bubbling event is raised and completes its route. The <xref:System.Windows.UIElement.RaiseEvent%2A> method call in the implementing class that raises the bubbling event reuses the event data from the preview event for the bubbling event.
 
@@ -226,7 +226,7 @@ The concept of preview and bubbling event pairs, with shared event data and sequ
 
 If you're implementing your own composite control that responds to input events, consider using preview events to suppress and replace input events raised on subcomponents with a top-level event that represents the complete control. For more information, see [Marking routed events as handled, and class handling](marking-routed-events-as-handled-and-class-handling.md).
 
-For more information about the WPF input system and how inputs and events interact in typical application scenarios, see [Input overview](/dotnet/desktop/wpf/advanced/input-overview?view=netframeworkdesktop-4.8&preserve-view=true).
+For more information about the WPF input system and how inputs and events interact in typical application scenarios, see [Input overview](../advanced/input-overview.md)
 
 ## EventSetters and EventTriggers
 
@@ -236,7 +236,7 @@ In markup styles, you can include pre-declared XAML event handling syntax by usi
 
 It's likely that the `Style` node already contains other style information that pertains to controls of the specified type, and having the <xref:System.Windows.EventSetter> be part of those styles promotes code reuse even at the markup level. Also, an `EventSetter` abstracts method names for handlers away from the general application and page markup.
 
-Another specialized syntax that combines the routed event and animation features of WPF is an <xref:System.Windows.EventTrigger>. As with the `EventSetter`, you can only declare an `EventTrigger` for a routed event. Typically, an `EventTrigger` is declared as part of a style, but an `EventTrigger` can be declared on page-level elements as part of the <xref:System.Windows.FrameworkElement.Triggers%2A> collection, or in a <xref:System.Windows.Controls.ControlTemplate>. An `EventTrigger` enables you to specify a <xref:System.Windows.Media.Animation.Storyboard> that runs whenever a routed event reaches an element in its route that declares an `EventTrigger` for that event. The advantage of an `EventTrigger` over just handling the event and causing it to start an existing storyboard is that an `EventTrigger` provides better control over the storyboard and its run-time behavior. For more information, see [Use event triggers to control a storyboard after it starts](/dotnet/desktop/wpf/graphics-multimedia/how-to-use-event-triggers-to-control-a-storyboard-after-it-starts?view=netframeworkdesktop-4.8&preserve-view=true).
+Another specialized syntax that combines the routed event and animation features of WPF is an <xref:System.Windows.EventTrigger>. As with the `EventSetter`, you can only declare an `EventTrigger` for a routed event. Typically, an `EventTrigger` is declared as part of a style, but an `EventTrigger` can be declared on page-level elements as part of the <xref:System.Windows.FrameworkElement.Triggers%2A> collection, or in a <xref:System.Windows.Controls.ControlTemplate>. An `EventTrigger` enables you to specify a <xref:System.Windows.Media.Animation.Storyboard> that runs whenever a routed event reaches an element in its route that declares an `EventTrigger` for that event. The advantage of an `EventTrigger` over just handling the event and causing it to start an existing storyboard is that an `EventTrigger` provides better control over the storyboard and its run-time behavior. For more information, see [Use event triggers to control a storyboard after it starts](../graphics-multimedia/how-to-use-event-triggers-to-control-a-storyboard-after-it-starts.md)
 
 ## More about routed events
 
@@ -248,8 +248,8 @@ You can use the concepts and guidance in this article as a starting point when c
 - <xref:System.Windows.RoutedEvent>
 - <xref:System.Windows.RoutedEventArgs>
 - [Marking routed events as handled, and class handling](marking-routed-events-as-handled-and-class-handling.md)
-- [Input overview](/dotnet/desktop/wpf/advanced/input-overview?view=netframeworkdesktop-4.8&preserve-view=true)
-- [Commanding overview](/dotnet/desktop/wpf/advanced/commanding-overview?view=netframeworkdesktop-4.8&preserve-view=true)
+- [Input overview](../advanced/input-overview.md)
+- [Commanding overview](../advanced/commanding-overview.md)
 - [Custom dependency properties](../properties/custom-dependency-properties.md)
-- [Trees in WPF](/dotnet/desktop/wpf/advanced/trees-in-wpf?view=netframeworkdesktop-4.8&preserve-view=true)
+- [Trees in WPF](../advanced/trees-in-wpf.md)
 - [Weak event patterns](weak-event-patterns.md)

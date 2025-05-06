@@ -32,4 +32,4 @@ The provider class for an attached property must provide static get/set accessor
 - [Attached properties overview](attached-properties-overview.md)
 - [Dependency properties overview](dependency-properties-overview.md)
 - [Custom dependency properties](custom-dependency-properties.md)
-- [How-to topics](/dotnet/desktop/wpf/advanced/properties-how-to-topics?view=netframeworkdesktop-4.8&preserve-view=true)
+- [How-to topics](../advanced/properties-how-to-topics.md)

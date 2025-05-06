@@ -35,4 +35,4 @@ For more information about how and why to implement a dependency property, rathe
 ## See also
 
 - [Dependency properties overview](dependency-properties-overview.md)
-- [How-to topics](/dotnet/desktop/wpf/advanced/properties-how-to-topics?view=netframeworkdesktop-4.8&preserve-view=true)
+- [How-to topics](../advanced/properties-how-to-topics.md)

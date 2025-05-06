@@ -70,7 +70,7 @@ When the "if" condition of a property trigger has a wide variety of possible val
 
 Property triggers are useful for scenarios where one or more appearance properties should change based on the state of another property on the same element.
 
-To learn more about property triggers, see [Styling and Templating](/dotnet/desktop/wpf/controls/styles-templates-overview?view=netframeworkdesktop-4.8&preserve-view=true).
+To learn more about property triggers, see [Styling and Templating](../controls/styles-templates-overview.md)
 
 ## See also
 

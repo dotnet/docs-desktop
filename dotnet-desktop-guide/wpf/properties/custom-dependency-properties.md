@@ -46,13 +46,13 @@ When you implement a property on a class that derives from <xref:System.Windows.
 
 - Properties that are settable within a style. For more information, see [Styles and templates](../controls/styles-templates-overview.md).
 
-- Properties that support data binding. For more information about data binding dependency properties, see [Bind the properties of two controls](/dotnet/desktop/wpf/data/how-to-bind-the-properties-of-two-controls?view=netframeworkdesktop-4.8&preserve-view=true).
+- Properties that support data binding. For more information about data binding dependency properties, see [Bind the properties of two controls](../data/how-to-bind-the-properties-of-two-controls.md)
 
 - Properties that are settable through dynamic resource references. For more information, see [XAML resources](../systems/xaml-resources-overview.md).
 
 - Properties that automatically inherit their value from a parent element in the element tree. For this, you'll need to register using <xref:System.Windows.DependencyProperty.RegisterAttached%2A>, even if you also create a property wrapper for CLR access. For more information, see [Property value inheritance](property-value-inheritance.md).
 
-- Properties that are animatable. For more information, see [Animation overview](/dotnet/desktop/wpf/graphics-multimedia/animation-overview?view=netframeworkdesktop-4.8&preserve-view=true).
+- Properties that are animatable. For more information, see [Animation overview](../graphics-multimedia/animation-overview.md)
 
 - Notification by the WPF property system when a property value changes. Changes might be due to actions by the property system, environment, user, or styles. Your property can specify a callback method in property metadata that will get invoked each time the property system determines that your property value changed. A related concept is property value coercion. For more information, see [Dependency property callbacks and validation](dependency-property-callbacks-and-validation.md).
 
@@ -62,7 +62,7 @@ When you implement a property on a class that derives from <xref:System.Windows.
 
   - Set the default value of a dependency property, by overriding metadata on derived classes.
 
-- Visual Studio WPF designer support, such as editing the properties of a custom control in the **Properties** window. For more information, see [Control authoring overview](/dotnet/desktop/wpf/controls/control-authoring-overview?view=netframeworkdesktop-4.8&preserve-view=true).
+- Visual Studio WPF designer support, such as editing the properties of a custom control in the **Properties** window. For more information, see [Control authoring overview](../controls/control-authoring-overview.md)
 
 For some scenarios, overriding the metadata of an existing dependency property is a better option than implementing a new dependency property. Whether a metadata override is practical depends on your scenario, and how closely that scenario resembles the implementation of existing WPF dependency properties and classes. For more information about overriding metadata on existing dependency properties, see [Dependency property metadata](dependency-property-metadata.md).
 
@@ -139,7 +139,7 @@ Consider the following when setting metadata flags:
 
 - Although the default data binding [mode](<xref:System.Windows.Data.Binding.Mode%2A>) for dependency properties is <xref:System.Windows.Data.BindingMode.OneWay>, you can change the binding mode of a specific binding to <xref:System.Windows.Data.BindingMode.TwoWay>. For more information, see [Binding direction](../data/binding-declarations-overview.md#binding-direction). As a dependency property author, you can even choose to make two-way binding the default mode. An example of an existing dependency property that uses two-way data binding is <xref:System.Windows.Controls.MenuItem.IsSubmenuOpen%2A?displayProperty=nameWithType>, which has a state that's based on other properties and method calls. The scenario for `IsSubmenuOpen` is that its setting logic, and the compositing of <xref:System.Windows.Controls.MenuItem>, interact with the default theme style. <xref:System.Windows.Controls.TextBox.Text%2A?displayProperty=nameWithType> is another WPF dependency property that uses two-way binding by default.
 
-- You can enable property inheritance for your dependency property by setting the <xref:System.Windows.FrameworkPropertyMetadataOptions.Inherits> flag. Property inheritance is useful for scenarios in which parent and child elements have a property in common and it makes sense for the child element to inherit the parent value for the common property. An example of an inheritable property is <xref:System.Windows.FrameworkElement.DataContext%2A>, which supports binding operations that use the [master-detail scenario](/dotnet/desktop/wpf/data/how-to-use-the-master-detail-pattern-with-hierarchical-data?view=netframeworkdesktop-4.8&preserve-view=true) for data presentation. Property value inheritance lets you specify a data context at the page or application root, which saves having to specify it for child element bindings. Although an inherited property value overrides the default value, property values can be set locally on any child element. Use property value inheritance sparingly because it has a performance cost. For more information, see [Property value inheritance](property-value-inheritance.md).
+- You can enable property inheritance for your dependency property by setting the <xref:System.Windows.FrameworkPropertyMetadataOptions.Inherits> flag. Property inheritance is useful for scenarios in which parent and child elements have a property in common and it makes sense for the child element to inherit the parent value for the common property. An example of an inheritable property is <xref:System.Windows.FrameworkElement.DataContext%2A>, which supports binding operations that use the [master-detail scenario](../data/how-to-use-the-master-detail-pattern-with-hierarchical-data.md)
 
 - Set the <xref:System.Windows.FrameworkPropertyMetadataOptions.Journal> flag to indicate that your dependency property should be detected or used by navigation journaling services. For example, the <xref:System.Windows.Controls.Primitives.Selector.SelectedIndex%2A> property sets the `Journal` flag to recommend that applications keep a journaling history of items selected.
 
@@ -165,7 +165,7 @@ There's a general principle in managed code programming, often enforced by code 
 
 - [Dependency properties overview](dependency-properties-overview.md)
 - [Dependency property metadata](dependency-property-metadata.md)
-- [Control authoring overview](/dotnet/desktop/wpf/controls/control-authoring-overview?view=netframeworkdesktop-4.8&preserve-view=true)
+- [Control authoring overview](../controls/control-authoring-overview.md)
 - [Collection-type dependency properties](collection-type-dependency-properties.md)
 - [Dependency property security](dependency-property-security.md)
 - [XAML loading and dependency properties](xaml-loading-and-dependency-properties.md)

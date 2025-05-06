@@ -131,8 +131,8 @@ The XPS spool file size might not be reduced if a vector graphic is highly compl
 - <xref:System.Printing.PrintCapabilities>
 - <xref:System.Printing.PrintServer>
 - <xref:System.Printing.PrintQueue>
-- [How-to topics](/dotnet/desktop/wpf/advanced/printing-how-to-topics?view=netframeworkdesktop-4.8&preserve-view=true)
-- [Documents in WPF](/dotnet/desktop/wpf/advanced/documents-in-wpf?view=netframeworkdesktop-4.8&preserve-view=true)
+- [How-to topics](../advanced/printing-how-to-topics.md)
+- [Documents in WPF](../advanced/documents-in-wpf.md)
 - [XPS documents](/windows/desktop/printdocs/documents)
-- [Document serialization and storage](/dotnet/desktop/wpf/advanced/document-serialization-and-storage?view=netframeworkdesktop-4.8&preserve-view=true)
+- [Document serialization and storage](../advanced/document-serialization-and-storage.md)
 - [Microsoft XPS document converter (MXDC)](/windows/win32/printdocs/microsoft-xps-document-converter--mxdc-)
