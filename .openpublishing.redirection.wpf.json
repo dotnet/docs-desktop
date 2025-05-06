@@ -199,6 +199,32 @@
         {
             "source_path": "dotnet-desktop-guide/wpf/advanced/xaml-overview.md",
             "redirect_url": "/dotnet/desktop/wpf/xaml/index"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/getting-started/whats-new.md",
+            "redirect_url": "/dotnet/desktop/wpf/whats-new/framework45"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/getting-started/index.md",
+            "redirect_url": "/dotnet/desktop/wpf/get-started/create-app-visual-studio"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/getting-started/introduction-to-wpf-in-vs.md",
+            "redirect_url": "/dotnet/desktop/wpf/get-started/create-app-visual-studio"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/getting-started/walkthrough-my-first-wpf-desktop-application.md",
+            "redirect_url": "/dotnet/desktop/wpf/get-started/walkthrough-my-first-wpf-desktop-application"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/getting-started/community-feedback.md",
+            "redirect_url": "/dotnet/desktop/wpf/"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/getting-started/wpf-walkthroughs.md",
+            "redirect_url": "/dotnet/desktop/wpf/get-started/wpf-walkthroughs"
         }
+
+        
     ]
 }

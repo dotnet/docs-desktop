@@ -8,6 +8,10 @@ items:
     href: overview/index.md
   - name: Create a WPF application
     href: get-started/create-app-visual-studio.md
+  - name: "Walkthrough: My first WPF desktop application (.NET Framework)"
+    href: get-started/walkthrough-my-first-wpf-desktop-application.md
+  - name: WPF Walkthroughs
+    href: get-started/wpf-walkthroughs.md
 - name: What's new
   items:
   - name: Overview
@@ -26,155 +30,30 @@ items:
     href: migration/index.md
   - name: Differences from .NET Framework
     href: migration/differences-from-net-framework.md
-- name: Fundamentals
-  expanded: true
+- name: Application development
+  href: app-development/
+- name: Advanced
+  href: advanced/
+- name: Controls
+  href: controls/
+- name: Data
+  href: data/
+- name: Graphics and multimedia
+  href: graphics-multimedia/
+- name: Security
+  href: security-wpf.md
   items:
-  - name: Windows
-    items:
-    - name: Overview
-      href: windows/index.md
-    - name: Dialogs boxes
-      href: windows/dialog-boxes-overview.md
-    - name: Common tasks
-      items:
-      - name: Display a message box
-        href: windows/how-to-open-message-box.md
-      - name: Open a window
-        href: windows/how-to-open-window-dialog-box.md
-      - name: Close a window
-        href: windows/how-to-close-window-dialog-box.md
-      - name: Display a system dialog box
-        href: windows/how-to-open-common-system-dialog-box.md
-      - name: Get or set the main window
-        href: windows/how-to-get-set-main-application-window.md
-  - name: Controls
-    items:
-    - name: Overview
-      href: controls/index.md
-      displayName: controls
-    - name: Styles and templates
-      expanded: true
-      items:
-      - name: Overview
-        href: controls/styles-templates-overview.md
-      - name: Common tasks
-        items:
-        - name: Create and apply a style
-          href: controls/how-to-create-apply-style.md
-        - name: Create and apply a template
-          href: controls/how-to-create-apply-template.md
-  - name: Documents & Printing
-    items:
-    - name: Printing
-      expanded: true
-      items:
-      - name: Overview
-        href: documents/printing-overview.md
-      - name: Common tasks
-        items:
-        - name: Display the print dialog
-          href: documents/how-to-display-print-dialog.md
-        - name: Programmatically print XPS files
-          href: documents/how-to-print-xps-files.md
-
-  - name: Data binding
-    items:
-    - name: Overview
-      href: data/index.md
-    - name: Declare a binding
-      href: data/binding-declarations-overview.md
-    - name: Binding sources
-      href: data/binding-sources-overview.md
-      items:
-      - name: Common tasks
-        items:
-        - name: Create a binding
-          href: data/how-to-create-a-simple-binding.md
-        - name: Bind to an enumeration
-          href: data/how-to-bind-to-an-enumeration.md
-- name: Systems
-  expanded: true
-  items:
-  - name: Events
-    items:
-    - name: Routed events overview
-      href: events/routed-events-overview.md
-    - name: Attached events overview
-      href: events/attached-events-overview.md
-    - name: Object lifetime events
-      href: events/object-lifetime-events.md
-    - name: Marking routed events as handled, and class handling
-      href: events/marking-routed-events-as-handled-and-class-handling.md
-    - name: Preview events
-      href: events/preview-events.md
-    - name: Property change events
-      href: events/property-change-events.md
-    - name: Visual Basic and WPF event handling
-      href: events/visual-basic-and-wpf-event-handling.md
-    - name: Weak event patterns
-      href: events/weak-event-patterns.md
-    - name: Common tasks
-      items:
-      - name: Add an event handler using code
-        href: events/how-to-add-an-event-handler-using-code.md
-      - name: Create a custom routed event
-        href: events/how-to-create-a-custom-routed-event.md
-  - name: Properties
-    items:
-    - name: Dependency properties
-      href: properties/dependency-properties-overview.md
-    - name: Dependency property value precedence
-      href: properties/dependency-property-value-precedence.md
-    - name: Attached properties
-      href: properties/attached-properties-overview.md
-    - name: Collection-type dependency properties
-      href: properties/collection-type-dependency-properties.md
-    - name: Custom dependency properties
-      href: properties/custom-dependency-properties.md
-    - name: Dependency property metadata
-      href: properties/dependency-property-metadata.md
-    - name: Dependency property callbacks and validation
-      href: properties/dependency-property-callbacks-and-validation.md
-    - name: Read-only dependency properties
-      href: properties/read-only-dependency-properties.md
-    - name: Framework-property-metadata
-      href: properties/framework-property-metadata.md
-    - name: Dependency property security
-      href: properties/dependency-property-security.md
-    - name: Safe constructor patterns for DependencyObjects
-      href: properties/safe-constructor-patterns-for-dependencyobjects.md
-    - name: Property value inheritance
-      href: properties/property-value-inheritance.md
-    - name: XAML loading and dependency properties
-      href: properties/xaml-loading-and-dependency-properties.md
-    - name: Common tasks
-      items:
-      - name: Implement a dependency property
-        href: properties/how-to-implement-a-dependency-property.md
-      - name: Register an attached property
-        href: properties/how-to-register-an-attached-property.md
-      - name: Override dependency property metadata
-        href: properties/how-to-override-metadata-for-a-dependency-property.md
-  - name: Resources
-    items:
-    - name: Overview
-      href: systems/xaml-resources-overview.md
-    - name: Merged dictionaries
-      href: systems/xaml-resources-merged-dictionaries.md
-    - name: Resources in code
-      href: systems/xaml-resources-and-code.md
-    - name: Common tasks
-      items:
-      - name: Define and reference resources
-        href: systems/xaml-resources-how-to-define-and-reference.md
-      - name: Use application resources
-        href: systems/xaml-resources-how-to-use-application.md
-      - name: Use system resources
-        href: systems/xaml-resources-how-to-use-system.md
-
+  - name: WPF partial trust security (.NET Framework)
+    href: wpf-partial-trust-security.md
+  - name: Platform security (.NET Framework)
+    href: wpf-security-strategy-platform-security.md
+  - name: Security engineering
+    href: wpf-security-strategy-security-engineering.md
+- name: WPF samples
+  href: wpf-samples.md
+- name: Class library
+  href: class-library-wpf.md
 - name: XAML with WPF
-  items:
-  - name: Overview
-    href: xaml/index.md
+  href: xaml/index.md
 - name: XAML Language Reference
   href: ../../xaml-services/
