@@ -44,7 +44,7 @@ Defers a property value to be a data-bound value, creating an intermediate expre
   
 ## Unqualified {Binding}  
 
- The `{Binding}` usage shown in "Binding Expression Usage" creates a <xref:System.Windows.Data.Binding> object with default values, which includes an initial <xref:System.Windows.Data.Binding.Path%2A?displayProperty=nameWithType> of `null`. This is still useful in many scenarios, because the created <xref:System.Windows.Data.Binding> might be relying on key data binding properties such as <xref:System.Windows.Data.Binding.Path%2A?displayProperty=nameWithType> and <xref:System.Windows.Data.Binding.Source%2A?displayProperty=nameWithType> being set in the run-time data context. For more information on the concept of data context, see [Data Binding](/dotnet/desktop/wpf/data/index).  
+ The `{Binding}` usage shown in "Binding Expression Usage" creates a <xref:System.Windows.Data.Binding> object with default values, which includes an initial <xref:System.Windows.Data.Binding.Path%2A?displayProperty=nameWithType> of `null`. This is still useful in many scenarios, because the created <xref:System.Windows.Data.Binding> might be relying on key data binding properties such as <xref:System.Windows.Data.Binding.Path%2A?displayProperty=nameWithType> and <xref:System.Windows.Data.Binding.Source%2A?displayProperty=nameWithType> being set in the run-time data context. For more information on the concept of data context, see [Data Binding](../data/index.md).  
   
 ## Implicit Path  
 
@@ -66,7 +66,7 @@ Defers a property value to be a data-bound value, creating an intermediate expre
   
 - <xref:System.Windows.Data.Binding.ConverterParameter%2A>: can be set as a `bindProp`=`value` string in the expression, but this is dependent on the type of the parameter being passed. If passing a reference type for the value, this usage requires an object reference such as a nested [StaticResource Markup Extension](staticresource-markup-extension.md).  
   
-- <xref:System.Windows.Data.Binding.ElementName%2A>: mutually exclusive versus <xref:System.Windows.Data.Binding.RelativeSource%2A> and <xref:System.Windows.Data.Binding.Source%2A>; each of these binding properties represents a particular binding methodology. See [Data Binding Overview](/dotnet/desktop/wpf/data/index).  
+- <xref:System.Windows.Data.Binding.ElementName%2A>: mutually exclusive versus <xref:System.Windows.Data.Binding.RelativeSource%2A> and <xref:System.Windows.Data.Binding.Source%2A>; each of these binding properties represents a particular binding methodology. See [Data Binding Overview](../data/index.md).  
   
 - <xref:System.Windows.Data.BindingBase.FallbackValue%2A>: can be set as a `bindProp`=`value` string in the expression, but this is dependent on the type of the value being passed. If passing a reference type, requires an object reference such as a nested [StaticResource Markup Extension](staticresource-markup-extension.md).  
   
@@ -82,9 +82,9 @@ Defers a property value to be a data-bound value, creating an intermediate expre
   
 - <xref:System.Windows.Data.Binding.Path%2A>: a string that describes a path into a data object or a general object model. The format provides several different conventions for traversing an object model that cannot be adequately described in this topic. See [PropertyPath XAML Syntax](propertypath-xaml-syntax.md).  
   
-- <xref:System.Windows.Data.Binding.RelativeSource%2A>: mutually exclusive versus with <xref:System.Windows.Data.Binding.ElementName%2A> and <xref:System.Windows.Data.Binding.Source%2A>; each of these binding properties represents a particular binding methodology. See [Data Binding Overview](/dotnet/desktop/wpf/data/index). Requires a nested [RelativeSource MarkupExtension](relativesource-markupextension.md) usage to specify the value.  
+- <xref:System.Windows.Data.Binding.RelativeSource%2A>: mutually exclusive versus with <xref:System.Windows.Data.Binding.ElementName%2A> and <xref:System.Windows.Data.Binding.Source%2A>; each of these binding properties represents a particular binding methodology. See [Data Binding Overview](../data/index.md). Requires a nested [RelativeSource MarkupExtension](relativesource-markupextension.md) usage to specify the value.  
   
-- <xref:System.Windows.Data.Binding.Source%2A>: mutually exclusive versus <xref:System.Windows.Data.Binding.RelativeSource%2A> and <xref:System.Windows.Data.Binding.ElementName%2A>; each of these binding properties represents a particular binding methodology. See [Data Binding Overview](/dotnet/desktop/wpf/data/index). Requires a nested extension usage, typically a [StaticResource Markup Extension](staticresource-markup-extension.md) that refers to an object data source from a keyed resource dictionary.  
+- <xref:System.Windows.Data.Binding.Source%2A>: mutually exclusive versus <xref:System.Windows.Data.Binding.RelativeSource%2A> and <xref:System.Windows.Data.Binding.ElementName%2A>; each of these binding properties represents a particular binding methodology. See [Data Binding Overview](../data/index.md). Requires a nested extension usage, typically a [StaticResource Markup Extension](staticresource-markup-extension.md) that refers to an object data source from a keyed resource dictionary.  
   
 - <xref:System.Windows.Data.BindingBase.StringFormat%2A>: a string that describes a string format convention for the bound data. This is a relatively advanced binding concept; see reference page for <xref:System.Windows.Data.BindingBase.StringFormat%2A>.  
   
@@ -109,9 +109,9 @@ Defers a property value to be a data-bound value, creating an intermediate expre
 ## Remarks  
   
 > [!IMPORTANT]
-> In terms of dependency property precedence, a `Binding` expression is equivalent to a locally set value. If you set a local value for a property that previously had a `Binding` expression, the `Binding` is completely removed. For details, see [Dependency Property Value Precedence](/dotnet/desktop/wpf/properties/dependency-property-value-precedence).  
+> In terms of dependency property precedence, a `Binding` expression is equivalent to a locally set value. If you set a local value for a property that previously had a `Binding` expression, the `Binding` is completely removed. For details, see [Dependency Property Value Precedence](../properties/dependency-property-value-precedence.md).  
   
- Describing data binding at a basic level is not covered in this topic. See [Data Binding Overview](/dotnet/desktop/wpf/data/index).  
+ Describing data binding at a basic level is not covered in this topic. See [Data Binding Overview](../data/index.md).  
   
 > [!NOTE]
 > <xref:System.Windows.Data.MultiBinding> and <xref:System.Windows.Data.PriorityBinding> do not support a XAML extension syntax. You would instead use property elements. See reference topics for <xref:System.Windows.Data.MultiBinding> and <xref:System.Windows.Data.PriorityBinding>.  
@@ -127,6 +127,6 @@ Defers a property value to be a data-bound value, creating an intermediate expre
 ## See also
 
 - <xref:System.Windows.Data.Binding>
-- [Data Binding Overview](/dotnet/desktop/wpf/data/index)
-- [XAML in WPF](/dotnet/desktop/wpf/xaml/index)
+- [Data Binding Overview](../data/index.md)
+- [XAML in WPF](../xaml/index.md)
 - [Markup Extensions and WPF XAML](markup-extensions-and-wpf-xaml.md)

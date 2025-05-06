@@ -56,7 +56,7 @@ ms.assetid: f73644af-9941-4611-8754-6d4cef03fc44
 
  Derived panel elements make extensive use of attached properties. An attached property is a specialized form of dependency property that does not have the conventional common language runtime (CLR) property "wrapper". Attached properties have a specialized syntax in Extensible Application Markup Language (XAML), which can be seen in several of the examples that follow.  
   
- One purpose of an attached property is to allow child elements to store unique values of a property that is actually defined by a parent element. An application of this functionality is having child elements inform the parent how they wish to be presented in the user interface (UI), which is extremely useful for application layout. For more information, see [Attached Properties Overview](/dotnet/desktop/wpf/properties/attached-properties-overview).  
+ One purpose of an attached property is to allow child elements to store unique values of a property that is actually defined by a parent element. An application of this functionality is having child elements inform the parent how they wish to be presented in the user interface (UI), which is extremely useful for application layout. For more information, see [Attached Properties Overview](../properties/attached-properties-overview.md).  
   
 <a name="Panels_derived_elements"></a>
 
@@ -288,12 +288,12 @@ ms.assetid: f73644af-9941-4611-8754-6d4cef03fc44
   
 ## See also
 
-- [Walkthrough: My first WPF desktop application](/dotnet/desktop/wpf/get-started/walkthrough-my-first-wpf-desktop-application)
+- [Walkthrough: My first WPF desktop application](../get-started/walkthrough-my-first-wpf-desktop-application.md)
 - [WPF Layout Gallery Sample](/samples/browse/)
 - [Layout](../advanced/layout.md)
 - [WPF Controls Gallery Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Getting%20Started/ControlsAndLayout)
 - [Alignment, Margins, and Padding Overview](../advanced/alignment-margins-and-padding-overview.md)
 - [Create a Custom Content-Wrapping Panel Sample](/samples/browse/)
-- [Attached Properties Overview](/dotnet/desktop/wpf/properties/attached-properties-overview)
+- [Attached Properties Overview](../properties/attached-properties-overview.md)
 - [Use Automatic Layout Overview](../advanced/use-automatic-layout-overview.md)
 - [Layout and Design](../advanced/optimizing-performance-layout-and-design.md)

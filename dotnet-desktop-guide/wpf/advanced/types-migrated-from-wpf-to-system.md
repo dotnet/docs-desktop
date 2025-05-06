@@ -64,7 +64,7 @@ The following table contains a list of the XAML feature-support classes that are
 |<xref:System.Windows.Markup.StaticExtension>|`{x:Static ...}`|
 |<xref:System.Windows.Markup.TypeExtension>|`{x:Type ...}`|
 
-Although System.Xaml may not have specific support classes, the general logic for processing language features for the XAML language now resides in System.Xaml and its implemented XAML readers and XAML writers. For example, `x:TypeArguments` is an attribute that is processed by XAML readers and XAML writers from System.Xaml implementations; it can be noted in the XAML node stream, has handling in the default (CLR-based) XAML schema context, has a XAML type-system representation, and so on. For more information about the reference documentation for XAML, see [XAML Services](/dotnet/desktop/xaml-services/index).
+Although System.Xaml may not have specific support classes, the general logic for processing language features for the XAML language now resides in System.Xaml and its implemented XAML readers and XAML writers. For example, `x:TypeArguments` is an attribute that is processed by XAML readers and XAML writers from System.Xaml implementations; it can be noted in the XAML node stream, has handling in the default (CLR-based) XAML schema context, has a XAML type-system representation, and so on. For more information about the reference documentation for XAML, see [XAML Services](../../xaml-services/index.md).
 
 ## ValueSerializer and Supporting Classes
 

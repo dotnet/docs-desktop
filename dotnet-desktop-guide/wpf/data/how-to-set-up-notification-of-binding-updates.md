@@ -49,5 +49,5 @@ End Sub
   
 ## See also
 
-- [Data Binding Overview](/dotnet/desktop/wpf/data/index)
+- [Data Binding Overview](index.md)
 - [How-to Topics](data-binding-how-to-topics.md)

@@ -70,7 +70,7 @@ Windows Presentation Foundation (WPF) provides two parallel mechanisms for chang
 
  For situations where using a focus visual style is not appropriate, either because you are only styling single controls or because you want greater control over the control template, there are many other accessible properties and techniques that can create visual behavior in response to changes in focus.  
   
- Triggers, setters, and event setters are all discussed in detail in [Styling and Templating](../controls/styles-templates-overview.md). Routed event handling is discussed in [Routed Events Overview](/dotnet/desktop/wpf/events/routed-events-overview).  
+ Triggers, setters, and event setters are all discussed in detail in [Styling and Templating](../controls/styles-templates-overview.md). Routed event handling is discussed in [Routed Events Overview](../events/routed-events-overview.md).  
   
 ### IsKeyboardFocused  
 

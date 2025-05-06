@@ -45,7 +45,7 @@ Defines and references keys for resources that are loaded from external assembli
 | Value | Description |  
 |-------|-------------|  
 |`targetTypeName`|The name of the public common language runtime (CLR) type that is defined in the resource assembly.|  
-|`targetID`|The key for the resource. When resources are looked up, `targetID` will be analogous to the [x:Key Directive](/dotnet/desktop/xaml-services/xkey-directive) of the resource.|  
+|`targetID`|The key for the resource. When resources are looked up, `targetID` will be analogous to the [x:Key Directive](../../xaml-services/xkey-directive.md) of the resource.|  
   
 ## Remarks  
 
@@ -65,7 +65,7 @@ Defines and references keys for resources that are loaded from external assembli
   
  The compact syntax shown relies on the <xref:System.Windows.ComponentResourceKey.%23ctor%2A> constructor signature and positional parameter usage of a markup extension. The order in which the `targetTypeName` and `targetID` are given is important. The verbose syntax relies on the <xref:System.Windows.ComponentResourceKey.%23ctor%2A> parameterless constructor, and then sets the <xref:System.Windows.ComponentResourceKey.TypeInTargetAssembly%2A> and <xref:System.Windows.ComponentResourceKey.ResourceId%2A> in a way that is analogous to a true attribute syntax on an object element. In the verbose syntax, the order in which the properties are set is not important. The relationship and mechanisms of these two alternatives (compact and verbose) is described in more detail in the topic [Markup Extensions and WPF XAML](markup-extensions-and-wpf-xaml.md).  
   
- Technically, the value for `targetID` can be any object, it does not have to be a string. However, the most common usage in WPF is to align the `targetID` value with forms that are strings, and where such strings are valid in the [XamlName Grammar](/dotnet/desktop/xaml-services/xamlname-grammar).  
+ Technically, the value for `targetID` can be any object, it does not have to be a string. However, the most common usage in WPF is to align the `targetID` value with forms that are strings, and where such strings are valid in the [XamlName Grammar](../../xaml-services/xamlname-grammar.md).  
   
  `ComponentResourceKey` can be used in object element syntax. In this case, specifying the value of both the <xref:System.Windows.ComponentResourceKey.TypeInTargetAssembly%2A> and <xref:System.Windows.ComponentResourceKey.ResourceId%2A> properties is required to properly initialize the extension.  
   
@@ -78,5 +78,5 @@ Defines and references keys for resources that are loaded from external assembli
 - <xref:System.Windows.ComponentResourceKey>
 - <xref:System.Windows.Controls.ControlTemplate>
 - [Control Authoring Overview](../controls/control-authoring-overview.md)
-- [XAML in WPF](/dotnet/desktop/wpf/xaml/index)
+- [XAML in WPF](../xaml/index.md)
 - [Markup Extensions and WPF XAML](markup-extensions-and-wpf-xaml.md)

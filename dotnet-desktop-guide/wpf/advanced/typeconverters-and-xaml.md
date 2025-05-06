@@ -120,6 +120,6 @@ This topic introduces the purpose of type conversion from string as a general XA
 ## See also
 
 - <xref:System.ComponentModel.TypeConverter>
-- [XAML in WPF](/dotnet/desktop/wpf/xaml/index)
+- [XAML in WPF](../xaml/index.md)
 - [Markup Extensions and WPF XAML](markup-extensions-and-wpf-xaml.md)
 - [XAML Syntax In Detail](xaml-syntax-in-detail.md)

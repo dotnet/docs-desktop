@@ -25,7 +25,7 @@ In this article you learn how to:
 
 ## Create an attached property
 
-With attached properties, you can append values to a control. You use this feature a lot in WPF, such as when you set `Grid.Row` or `Panel.ZIndex` properties on a control. For more information, see [Attached Properties Overview](/dotnet/desktop/wpf/properties/attached-properties-overview). This example uses attached properties to add placeholder text to a <xref:System.Windows.Controls.TextBox>.
+With attached properties, you can append values to a control. You use this feature a lot in WPF, such as when you set `Grid.Row` or `Panel.ZIndex` properties on a control. For more information, see [Attached Properties Overview](../properties/attached-properties-overview.md). This example uses attached properties to add placeholder text to a <xref:System.Windows.Controls.TextBox>.
 
 01. Add a new class to your project named `TextBoxHelper` and open it.
 01. Add the following namespaces:
@@ -106,4 +106,4 @@ The following code is the complete `TextBoxHelper` class.
 
 - [TextBox Overview](textbox-overview.md)
 - [Adorners Overview](adorners-overview.md)
-- [Attached Properties Overview](/dotnet/desktop/wpf/properties/attached-properties-overview)
+- [Attached Properties Overview](../properties/attached-properties-overview.md)

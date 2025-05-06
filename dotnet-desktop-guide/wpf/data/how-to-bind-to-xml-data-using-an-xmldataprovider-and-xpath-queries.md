@@ -24,7 +24,7 @@ This example shows how to bind to XML data using an <xref:System.Windows.Data.Xm
   
  [!code-xaml[XMLDataSource#1](~/samples/snippets/csharp/VS_Snippets_Wpf/XmlDataSource/CS/Window1.xaml#1)]  
   
- As shown in this example, to create the same binding declaration in attribute syntax you must escape the special characters properly. For more information, see [XML Character Entities and XAML](/dotnet/desktop/xaml-services/xml-character-entities).  
+ As shown in this example, to create the same binding declaration in attribute syntax you must escape the special characters properly. For more information, see [XML Character Entities and XAML](../../xaml-services/xml-character-entities.md).  
   
  The <xref:System.Windows.Controls.ListBox> will show the following items when this example is run. These are the *Title*s of all of the elements under *Books* with either a *Stock* value of "*out*" or a *Number* value of 3 or greater than or equals to 8. Notice that no *CD* items are returned because the <xref:System.Windows.Data.XmlDataProvider.XPath%2A> value set on the <xref:System.Windows.Data.XmlDataProvider> indicates that only the *Books* elements should be exposed (essentially setting a filter).  
   
@@ -62,5 +62,5 @@ This example shows how to bind to XML data using an <xref:System.Windows.Data.Xm
 - [Bind to XDocument, XElement, or LINQ for XML Query Results](how-to-bind-to-xdocument-xelement-or-linq-for-xml-query-results.md)
 - [Use the Master-Detail Pattern with Hierarchical XML Data](how-to-use-the-master-detail-pattern-with-hierarchical-xml-data.md)
 - [Binding Sources Overview](binding-sources-overview.md)
-- [Data Binding Overview](/dotnet/desktop/wpf/data/index)
+- [Data Binding Overview](index.md)
 - [How-to Topics](data-binding-how-to-topics.md)

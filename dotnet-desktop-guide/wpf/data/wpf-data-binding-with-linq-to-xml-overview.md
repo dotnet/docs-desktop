@@ -32,7 +32,7 @@ WPF data binding enables a UI element to associate one of its properties with a 
 |Binding source|The source object for one or more values that are supplied to the UI element for presentation. WPF automatically supports the following types as binding sources: CLR objects, ADO.NET data objects, XML data (from XPath or LINQ to XML queries), or another <xref:System.Windows.DependencyObject>.|
 |Source path|The property of the binding source that resolves to the value or set of values that is to be bound.|
 
-A dependency property is a concept specific to WPF that represent a dynamically computed property of a UI element. For example, dependency properties often have default values or values that are provided by a parent element. These special properties are backed by instances of the <xref:System.Windows.DependencyProperty> class (and not fields as with standard properties). For more information, see [Dependency Properties Overview](/dotnet/desktop/wpf/properties/dependency-properties-overview).
+A dependency property is a concept specific to WPF that represent a dynamically computed property of a UI element. For example, dependency properties often have default values or values that are provided by a parent element. These special properties are backed by instances of the <xref:System.Windows.DependencyProperty> class (and not fields as with standard properties). For more information, see [Dependency Properties Overview](../properties/dependency-properties-overview.md).
 
 ### Dynamic data binding in WPF
 
@@ -85,6 +85,6 @@ To implement WPF dynamic binding, dynamic properties will be used with facilitie
 
 - [WPF Data Binding with LINQ to XML](wpf-data-binding-with-linq-to-xml-overview.md)
 - [LINQ to XML Dynamic Properties](linq-to-xml-dynamic-properties.md)
-- [XAML in WPF](/dotnet/desktop/wpf/xaml/index)
+- [XAML in WPF](../xaml/index.md)
 - [Data Binding (WPF)](/dotnet/framework/wpf/data/data-binding-wpf)
 - [Using Workflow Markup](/previous-versions/dotnet/netframework-3.5/ms735921(v=vs.90))

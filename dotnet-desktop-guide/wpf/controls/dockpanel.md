@@ -38,6 +38,6 @@ The <xref:System.Windows.Controls.DockPanel> element is used to position child c
 
  [Layout](../advanced/layout.md)  
   
- [Walkthrough: My first WPF desktop application](/dotnet/desktop/wpf/get-started/walkthrough-my-first-wpf-desktop-application)  
+ [Walkthrough: My first WPF desktop application](../get-started/walkthrough-my-first-wpf-desktop-application.md)  
   
  [ScrollViewer Overview](scrollviewer-overview.md)

@@ -22,7 +22,7 @@ The [Windows Presentation Foundation](../index.md) platform collects digital ink
 
 ## Prerequisites
 
-To use the following examples, you must first install Visual Studio and the Windows SDK. You should also understand how to write applications for the WPF. For more information about getting started with WPF, see [Walkthrough: My first WPF desktop application](/dotnet/desktop/wpf/get-started/walkthrough-my-first-wpf-desktop-application).
+To use the following examples, you must first install Visual Studio and the Windows SDK. You should also understand how to write applications for the WPF. For more information about getting started with WPF, see [Walkthrough: My first WPF desktop application](../get-started/walkthrough-my-first-wpf-desktop-application.md).
 
 ## Use the InkCanvas Element
 

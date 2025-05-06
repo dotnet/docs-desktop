@@ -30,5 +30,5 @@ ms.assetid: a47c832f-dc84-48f2-96d5-cde18fc4284b
 ## See also
 
 - [Bind to XML Data Using an XMLDataProvider and XPath Queries](how-to-bind-to-xml-data-using-an-xmldataprovider-and-xpath-queries.md)
-- [Data Binding Overview](/dotnet/desktop/wpf/data/index)
+- [Data Binding Overview](index.md)
 - [How-to Topics](data-binding-how-to-topics.md)

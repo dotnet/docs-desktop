@@ -15,9 +15,9 @@ The topics in this section describe how to use events in WPF.
   
 ## In This Section  
 
- [Add an Event Handler Using Code](/dotnet/desktop/wpf/events/how-to-add-an-event-handler-using-code)  
+ [Add an Event Handler Using Code](../events/how-to-add-an-event-handler-using-code.md)  
  [Handle a Routed Event](how-to-handle-a-routed-event.md)  
- [Create a Custom Routed Event](/dotnet/desktop/wpf/events/how-to-create-a-custom-routed-event)  
+ [Create a Custom Routed Event](../events/how-to-create-a-custom-routed-event.md)  
  [Find the Source Element in an Event Handler](how-to-find-the-source-element-in-an-event-handler.md)  
  [Add Class Handling for a Routed Event](how-to-add-class-handling-for-a-routed-event.md)  
   

@@ -35,4 +35,4 @@ This example shows how to use the attached properties of <xref:System.Windows.Co
 - <xref:System.Windows.Controls.Button>
 - [Panels Overview](panels-overview.md)
 - [How-to Topics](canvas-how-to-topics.md)
-- [Attached Properties Overview](/dotnet/desktop/wpf/properties/attached-properties-overview)
+- [Attached Properties Overview](../properties/attached-properties-overview.md)

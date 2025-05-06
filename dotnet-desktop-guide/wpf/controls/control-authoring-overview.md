@@ -121,7 +121,7 @@ If you want a property of your control to support any of this functionality, you
 
   - The metadata for the property. The metadata contains the property's default value, a <xref:System.Windows.CoerceValueCallback> and a <xref:System.Windows.PropertyChangedCallback>.
 
-- Define a CLR wrapper property named `Value`, which is the same name that is used to register the dependency property, by implementing the property's `get` and `set` accessors. Note that the `get` and `set` accessors only call <xref:System.Windows.DependencyObject.GetValue%2A> and <xref:System.Windows.DependencyObject.SetValue%2A> respectively. It is recommended that the accessors of dependency properties not contain additional logic because clients and WPF can bypass the accessors and call <xref:System.Windows.DependencyObject.GetValue%2A> and <xref:System.Windows.DependencyObject.SetValue%2A> directly. For example, when a property is bound to a data source, the property's `set` accessor is not called.  Instead of adding additional logic to the get and set accessors, use the <xref:System.Windows.ValidateValueCallback>, <xref:System.Windows.CoerceValueCallback>, and <xref:System.Windows.PropertyChangedCallback> delegates to respond to or check the value when it changes.  For more information on these callbacks, see [Dependency Property Callbacks and Validation](/dotnet/desktop/wpf/properties/dependency-property-callbacks-and-validation).
+- Define a CLR wrapper property named `Value`, which is the same name that is used to register the dependency property, by implementing the property's `get` and `set` accessors. Note that the `get` and `set` accessors only call <xref:System.Windows.DependencyObject.GetValue%2A> and <xref:System.Windows.DependencyObject.SetValue%2A> respectively. It is recommended that the accessors of dependency properties not contain additional logic because clients and WPF can bypass the accessors and call <xref:System.Windows.DependencyObject.GetValue%2A> and <xref:System.Windows.DependencyObject.SetValue%2A> directly. For example, when a property is bound to a data source, the property's `set` accessor is not called.  Instead of adding additional logic to the get and set accessors, use the <xref:System.Windows.ValidateValueCallback>, <xref:System.Windows.CoerceValueCallback>, and <xref:System.Windows.PropertyChangedCallback> delegates to respond to or check the value when it changes.  For more information on these callbacks, see [Dependency Property Callbacks and Validation](../properties/dependency-property-callbacks-and-validation.md).
 
 - Define a method for the <xref:System.Windows.CoerceValueCallback> named `CoerceValue`. `CoerceValue` ensures that `Value` is greater or equal to `MinValue` and less than or equal to `MaxValue`.
 
@@ -130,7 +130,7 @@ If you want a property of your control to support any of this functionality, you
 [!code-csharp[UserControlNumericUpDown#DependencyProperty](~/samples/snippets/csharp/VS_Snippets_Wpf/UserControlNumericUpDown/CSharp/NumericUpDown.xaml.cs#dependencyproperty)]
 [!code-vb[UserControlNumericUpDown#DependencyProperty](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UserControlNumericUpDown/visualbasic/numericupdown.xaml.vb#dependencyproperty)]
 
-For more information, see [Custom Dependency Properties](/dotnet/desktop/wpf/properties/custom-dependency-properties).
+For more information, see [Custom Dependency Properties](../properties/custom-dependency-properties.md).
 
 ### Use Routed Events
 
@@ -163,7 +163,7 @@ The following example defines a routed event by doing the following:
 [!code-csharp[UserControlNumericUpDown#RoutedEvent](~/samples/snippets/csharp/VS_Snippets_Wpf/UserControlNumericUpDown/CSharp/NumericUpDown.xaml.cs#routedevent)]
 [!code-vb[UserControlNumericUpDown#RoutedEvent](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UserControlNumericUpDown/visualbasic/numericupdown.xaml.vb#routedevent)]
 
-For more information, see [Routed Events Overview](/dotnet/desktop/wpf/events/routed-events-overview) and [Create a Custom Routed Event](/dotnet/desktop/wpf/events/how-to-create-a-custom-routed-event).
+For more information, see [Routed Events Overview](../events/routed-events-overview.md) and [Create a Custom Routed Event](../events/how-to-create-a-custom-routed-event.md).
 
 ### Use Binding
 
@@ -180,7 +180,7 @@ The following example uses binding to accomplish the same thing.
 
 [!code-xaml[UserControlNumericUpDown#Binding](~/samples/snippets/csharp/VS_Snippets_Wpf/UserControlNumericUpDown/CSharp/NumericUpDown.xaml#binding)]
 
-For more information about data binding, see [Data Binding Overview](/dotnet/desktop/wpf/data/index).
+For more information about data binding, see [Data Binding Overview](../data/index.md).
 
 ### Design for Designers
 
@@ -200,7 +200,7 @@ You should implement attached properties on custom controls using the following 
 
 - `Set` *PropertyName* and `Get`*PropertyName* must route directly to the <xref:System.Windows.DependencyObject.GetValue%2A> and <xref:System.Windows.DependencyObject.SetValue%2A> methods on the target dependency object, respectively. Designers may access the attached property by calling through the method wrapper or making a direct call to the target dependency object.
 
-For more information on attached properties, see [Attached Properties Overview](/dotnet/desktop/wpf/properties/attached-properties-overview).
+For more information on attached properties, see [Attached Properties Overview](../properties/attached-properties-overview.md).
 
 ### Define and Use Shared Resources
 

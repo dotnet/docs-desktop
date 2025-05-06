@@ -40,5 +40,5 @@ This example shows how to create a view of a data collection in Extensible Appli
 
 - <xref:System.Windows.Data.CollectionViewSource>
 - [Get the Default View of a Data Collection](how-to-get-the-default-view-of-a-data-collection.md)
-- [Data Binding Overview](/dotnet/desktop/wpf/data/index)
+- [Data Binding Overview](index.md)
 - [How-to Topics](data-binding-how-to-topics.md)

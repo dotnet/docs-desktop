@@ -19,7 +19,7 @@ This section describes some of the advanced areas in WPF.
 ## In This Section
 
 [WPF Architecture](wpf-architecture.md)\
-[XAML in WPF](/dotnet/desktop/wpf/xaml/index)\
+[XAML in WPF](../xaml/index.md)\
 [Base Element Classes](base-elements.md)\
 [Element Tree and Serialization](element-tree-and-serialization.md)\
 [WPF Property System](properties-wpf.md)\

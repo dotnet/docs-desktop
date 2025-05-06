@@ -33,7 +33,7 @@ WPF programming elements often exist in some form of tree relationship to each o
 ## Related Sections  
 
  [WPF Architecture](wpf-architecture.md)  
-  [XAML in WPF](/dotnet/desktop/wpf/xaml/index)  
+  [XAML in WPF](../xaml/index.md)  
   [Base Elements](base-elements.md)  
   [Properties](properties-wpf.md)  
   [Events](events-wpf.md)  

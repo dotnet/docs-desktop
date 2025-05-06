@@ -35,4 +35,4 @@ Windows Presentation Foundation (WPF) provides extensive support for the develop
   
  <xref:System.Resources.NeutralResourcesLanguageAttribute>  
   
- [xml:lang Handling in XAML](/dotnet/desktop/xaml-services/xml-language-handling)  
+ [xml:lang Handling in XAML](../../xaml-services/xml-language-handling.md)  

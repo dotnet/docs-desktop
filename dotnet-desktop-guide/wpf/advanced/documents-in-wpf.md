@@ -171,5 +171,5 @@ Windows Presentation Foundation (WPF) offers a wide range of document features t
 - <xref:System.Windows.Controls.DocumentViewer>
 - [Text](optimizing-performance-text.md)
 - [Flow Document Overview](flow-document-overview.md)
-- [Printing Overview](/dotnet/desktop/wpf/documents/printing-overview)
+- [Printing Overview](../documents/printing-overview.md)
 - [Document Serialization and Storage](document-serialization-and-storage.md)

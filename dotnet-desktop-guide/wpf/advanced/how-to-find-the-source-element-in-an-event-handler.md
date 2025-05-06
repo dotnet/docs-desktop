@@ -27,5 +27,5 @@ This example shows how to find the source element in an event handler.
 ## See also
 
 - <xref:System.Windows.RoutedEventArgs>
-- [Routed Events Overview](/dotnet/desktop/wpf/events/routed-events-overview)
+- [Routed Events Overview](../events/routed-events-overview.md)
 - [How-to Topics](events-how-to-topics.md)

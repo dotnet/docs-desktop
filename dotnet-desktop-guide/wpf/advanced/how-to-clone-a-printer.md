@@ -61,4 +61,4 @@ Most businesses will, at some point, buy multiple printers of the same model. Ty
 - <xref:System.Printing.PrintQueue>
 - <xref:System.Collections.DictionaryEntry>
 - [Documents in WPF](documents-in-wpf.md)
-- [Printing Overview](/dotnet/desktop/wpf/documents/printing-overview)
+- [Printing Overview](../documents/printing-overview.md)

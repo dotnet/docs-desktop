@@ -31,5 +31,5 @@ The <xref:System.Windows.Controls.ListView> control provides the infrastructure 
   
 ## Related Sections  
 
- [Data Binding Overview](/dotnet/desktop/wpf/data/index)  
+ [Data Binding Overview](../data/index.md)  
   [Data Templating Overview](../data/data-templating-overview.md)

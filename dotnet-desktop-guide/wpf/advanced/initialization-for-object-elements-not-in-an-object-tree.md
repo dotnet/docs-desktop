@@ -44,4 +44,4 @@ Some aspects of Windows Presentation Foundation (WPF) initialization are deferre
 
 - [Trees in WPF](trees-in-wpf.md)
 - [WPF Graphics Rendering Overview](../graphics-multimedia/wpf-graphics-rendering-overview.md)
-- [XAML in WPF](/dotnet/desktop/wpf/xaml/index)
+- [XAML in WPF](../xaml/index.md)

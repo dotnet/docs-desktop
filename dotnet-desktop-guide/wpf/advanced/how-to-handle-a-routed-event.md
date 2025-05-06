@@ -36,6 +36,6 @@ This example shows how bubbling events work and how to write a handler that can 
 
 - <xref:System.Windows.RoutedEvent>
 - [Input Overview](input-overview.md)
-- [Routed Events Overview](/dotnet/desktop/wpf/events/routed-events-overview)
+- [Routed Events Overview](../events/routed-events-overview.md)
 - [How-to Topics](events-how-to-topics.md)
 - [XAML Syntax In Detail](xaml-syntax-in-detail.md)

@@ -29,8 +29,8 @@ A resource is an object that can be reused in different places in your applicati
   
  [DynamicResource Markup Extension](dynamicresource-markup-extension.md)  
   
- [x:Key Directive](/dotnet/desktop/xaml-services/xkey-directive)  
+ [x:Key Directive](../../xaml-services/xkey-directive.md)  
   
 ## Related Sections  
 
- [XAML in WPF](/dotnet/desktop/wpf/xaml/index)
+ [XAML in WPF](../xaml/index.md)

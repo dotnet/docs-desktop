@@ -28,13 +28,13 @@ ms.assetid: 9df6d3c9-aed3-471c-af36-6859b19d999f
 
 ## Prerequisites  
 
- This topic assumes that you have read the [XAML in WPF](/dotnet/desktop/wpf/xaml/index) and have some basic knowledge of the CLR and object-oriented programming.  
+ This topic assumes that you have read the [XAML in WPF](../xaml/index.md) and have some basic knowledge of the CLR and object-oriented programming.  
   
 <a name="codebehind_and_the_xaml_language"></a>
 
 ## Code-Behind and the XAML Language  
 
- The XAML language includes language-level features that make it possible to associate code files with markup files, from the markup file side. Specifically, the XAML language defines the language features [x:Class Directive](/dotnet/desktop/xaml-services/xclass-directive), [x:Subclass Directive](/dotnet/desktop/xaml-services/xsubclass-directive), and [x:ClassModifier Directive](/dotnet/desktop/xaml-services/xclassmodifier-directive). Exactly how the code should be produced, and how to integrate markup and code, is not part of what the XAML language specifies. It is left up to frameworks such as WPF to determine how to integrate the code, how to use XAML in the application and programming models, and the build actions or other support that all this requires.  
+ The XAML language includes language-level features that make it possible to associate code files with markup files, from the markup file side. Specifically, the XAML language defines the language features [x:Class Directive](../../xaml-services/xclass-directive.md), [x:Subclass Directive](../../xaml-services/xsubclass-directive.md), and [x:ClassModifier Directive](../../xaml-services/xclassmodifier-directive.md). Exactly how the code should be produced, and how to integrate markup and code, is not part of what the XAML language specifies. It is left up to frameworks such as WPF to determine how to integrate the code, how to use XAML in the application and programming models, and the build actions or other support that all this requires.  
   
 <a name="Code_behind__Event_Handler__and_Partial_Class"></a>
 
@@ -48,13 +48,13 @@ ms.assetid: 9df6d3c9-aed3-471c-af36-6859b19d999f
   
 - The handler must match the delegate for the appropriate event in the backing type system.  
   
-- For the Microsoft Visual Basic language specifically, you can use the language-specific `Handles` keyword to associate handlers with instances and events in the handler declaration, instead of attaching handlers with attributes in XAML. However, this technique does have some limitations because the `Handles` keyword cannot support all of the specific features of the WPF event system, such as certain routed event scenarios or attached events. For details, see [Visual Basic and WPF Event Handling](/dotnet/desktop/wpf/events/visual-basic-and-wpf-event-handling).  
+- For the Microsoft Visual Basic language specifically, you can use the language-specific `Handles` keyword to associate handlers with instances and events in the handler declaration, instead of attaching handlers with attributes in XAML. However, this technique does have some limitations because the `Handles` keyword cannot support all of the specific features of the WPF event system, such as certain routed event scenarios or attached events. For details, see [Visual Basic and WPF Event Handling](../events/visual-basic-and-wpf-event-handling.md).  
   
 <a name="x_Code"></a>
 
 ## x:Code  
 
- [x:Code](/dotnet/desktop/xaml-services/xcode-intrinsic-xaml-type) is a directive element defined in XAML. An `x:Code` directive element can contain inline programming code. The code that is defined inline can interact with the XAML on the same page. The following example illustrates inline C# code. Notice that the code is inside the `x:Code` element and that the code must be surrounded by `<CDATA[`...`]]>` to escape the contents for XML, so that a XAML processor (interpreting either the XAML schema or the WPF schema) will not try to interpret the contents literally as XML.  
+ [x:Code](../../xaml-services/xcode-intrinsic-xaml-type.md) is a directive element defined in XAML. An `x:Code` directive element can contain inline programming code. The code that is defined inline can interact with the XAML on the same page. The following example illustrates inline C# code. Notice that the code is inside the `x:Code` element and that the code must be surrounded by `<CDATA[`...`]]>` to escape the contents for XML, so that a XAML processor (interpreting either the XAML schema or the WPF schema) will not try to interpret the contents literally as XML.  
   
  [!code-xaml[XAMLOvwSupport#ButtonWithInlineCode](~/samples/snippets/csharp/VS_Snippets_Wpf/XAMLOvwSupport/CSharp/page4.xaml#buttonwithinlinecode)]  
   
@@ -62,11 +62,11 @@ ms.assetid: 9df6d3c9-aed3-471c-af36-6859b19d999f
 
 ## Inline Code Limitations  
 
- You should consider avoiding or limiting the use of inline code. In terms of architecture and coding philosophy, maintaining a separation between markup and code-behind keeps the designer and developer roles much more distinct. On a more technical level, the code that you write for inline code can be awkward to write, because you are always writing into the XAML generated partial class, and can only use the default XML namespace mappings. Because you cannot add `using` statements, you must fully qualify many of the API calls that you make. The default WPF mappings include most but not all CLR namespaces that are present in the WPF assemblies; you will have to fully qualify calls to types and members contained within the other CLR namespaces. You also cannot define anything beyond the partial class in the inline code, and all user code entities you reference must exist as a member or variable within the generated partial class. Other language specific programming features, such as macros or `#ifdef` against global variables or build variables, are also not available. For more information, see [x:Code Intrinsic XAML Type](/dotnet/desktop/xaml-services/xcode-intrinsic-xaml-type).  
+ You should consider avoiding or limiting the use of inline code. In terms of architecture and coding philosophy, maintaining a separation between markup and code-behind keeps the designer and developer roles much more distinct. On a more technical level, the code that you write for inline code can be awkward to write, because you are always writing into the XAML generated partial class, and can only use the default XML namespace mappings. Because you cannot add `using` statements, you must fully qualify many of the API calls that you make. The default WPF mappings include most but not all CLR namespaces that are present in the WPF assemblies; you will have to fully qualify calls to types and members contained within the other CLR namespaces. You also cannot define anything beyond the partial class in the inline code, and all user code entities you reference must exist as a member or variable within the generated partial class. Other language specific programming features, such as macros or `#ifdef` against global variables or build variables, are also not available. For more information, see [x:Code Intrinsic XAML Type](../../xaml-services/xcode-intrinsic-xaml-type.md).  
   
 ## See also
 
-- [XAML in WPF](/dotnet/desktop/wpf/xaml/index)
-- [x:Code Intrinsic XAML Type](/dotnet/desktop/xaml-services/xcode-intrinsic-xaml-type)
+- [XAML in WPF](../xaml/index.md)
+- [x:Code Intrinsic XAML Type](../../xaml-services/xcode-intrinsic-xaml-type.md)
 - [Building a WPF Application](../app-development/building-a-wpf-application-wpf.md)
 - [XAML Syntax In Detail](xaml-syntax-in-detail.md)

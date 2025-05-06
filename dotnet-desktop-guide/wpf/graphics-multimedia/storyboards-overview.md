@@ -19,7 +19,7 @@ This topic shows how to use <xref:System.Windows.Media.Animation.Storyboard> obj
 
 ## Prerequisites
 
-To understand this topic, you should be familiar with the different animation types and their basic features. For an introduction to animation, see the [Animation Overview](animation-overview.md). You should also know how to use attached properties. For more information about attached properties, see the [Attached Properties Overview](/dotnet/desktop/wpf/properties/attached-properties-overview).
+To understand this topic, you should be familiar with the different animation types and their basic features. For an introduction to animation, see the [Animation Overview](animation-overview.md). You should also know how to use attached properties. For more information about attached properties, see the [Attached Properties Overview](../properties/attached-properties-overview.md).
 
 <a name="whatisatimeline"></a>
 
@@ -109,7 +109,7 @@ After it has a name, you can animate a property of that element.
 
 <xref:System.Windows.Freezable> types are those classes that inherit from the <xref:System.Windows.Freezable> class. Examples of <xref:System.Windows.Freezable> include <xref:System.Windows.Media.SolidColorBrush>, <xref:System.Windows.Media.RotateTransform>, and <xref:System.Windows.Media.GradientStop>.
 
-To enable the targeting of a <xref:System.Windows.Freezable> by an animation in  XAML, you use the [x:Name Directive](/dotnet/desktop/xaml-services/xname-directive) to assign it a name. In code, you use the  <xref:System.Windows.NameScope.RegisterName%2A> method to register its name with the element for which you've created a <xref:System.Windows.NameScope>.
+To enable the targeting of a <xref:System.Windows.Freezable> by an animation in  XAML, you use the [x:Name Directive](../../xaml-services/xname-directive.md) to assign it a name. In code, you use the  <xref:System.Windows.NameScope.RegisterName%2A> method to register its name with the element for which you've created a <xref:System.Windows.NameScope>.
 
 The following example assigns a name to a <xref:System.Windows.Freezable> object.
 

@@ -51,7 +51,7 @@ If you are not interested in all of the details of the <xref:System.Windows.Appl
 |Get and set application-scoped properties|Use the <xref:System.Windows.Application.Properties%2A?displayProperty=nameWithType> property.|
 |Get and save an application's state|See [Persist and Restore Application-Scope Properties Across Application Sessions](persist-and-restore-application-scope-properties.md).|
 |Manage non-code data files, including resource files, content files, and site-of-origin files.|See [WPF Application Resource, Content, and Data Files](wpf-application-resource-content-and-data-files.md).|
-|Manage windows in standalone applications|See [WPF Windows Overview](/dotnet/desktop/wpf/windows/index).|
+|Manage windows in standalone applications|See [WPF Windows Overview](../windows/index.md).|
 |Track and manage navigation|See [Navigation Overview](navigation-overview.md).|
 
 <a name="The_Application_Definition"></a>
@@ -388,7 +388,7 @@ Likewise, the following figure illustrates the key events in the lifetime of an 
 ## See also
 
 - <xref:System.Windows.Application>
-- [WPF Windows Overview](/dotnet/desktop/wpf/windows/index)
+- [WPF Windows Overview](../windows/index.md)
 - [Navigation Overview](navigation-overview.md)
 - [WPF Application Resource, Content, and Data Files](wpf-application-resource-content-and-data-files.md)
 - [Pack URIs in WPF](pack-uris-in-wpf.md)

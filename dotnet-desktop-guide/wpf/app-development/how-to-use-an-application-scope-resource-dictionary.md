@@ -39,11 +39,11 @@ This example shows how to define and use an application-scope custom resource di
   
  There are two considerations to make when using <xref:System.Windows.Application.Resources%2A>. First, the dictionary *key* is an object, so you must use exactly the same object instance when both setting and getting a property value. (Note that the key is case-sensitive when using a string.) Second, the dictionary *value* is an object, so you will have to convert the value to the desired type when getting a property value.  
 
-Some resource types may automatically use a property defined by the type as an explicit key, such as the <xref:System.Windows.Style> and <xref:System.Windows.DataTemplate> types. This may override your `x:Key` value. To guarantee that your `x:Key` key is respected, declare it before the explicit key property. For more information, see [Styles, DataTemplates, and implicit keys](/dotnet/desktop/wpf/systems/xaml-resources-overview#styles-datatemplates-and-implicit-keys).
+Some resource types may automatically use a property defined by the type as an explicit key, such as the <xref:System.Windows.Style> and <xref:System.Windows.DataTemplate> types. This may override your `x:Key` value. To guarantee that your `x:Key` key is respected, declare it before the explicit key property. For more information, see [Styles, DataTemplates, and implicit keys](../systems/xaml-resources-overview.md#styles-datatemplates-and-implicit-keys).
 
 ## See also
 
 - <xref:System.Windows.ResourceDictionary>
 - <xref:System.Windows.Application.Resources%2A>
 - [XAML Resources](/dotnet/desktop-wpf/fundamentals/xaml-resources-define)
-- [Merged Resource Dictionaries](/dotnet/desktop/wpf/systems/xaml-resources-merged-dictionaries)
+- [Merged Resource Dictionaries](../systems/xaml-resources-merged-dictionaries.md)

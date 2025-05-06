@@ -24,4 +24,4 @@ The <xref:System.Windows.Controls.DocumentViewer> control is used to view <xref:
 
 - [Documents](../advanced/documents.md)
 - [Document Serialization and Storage](../advanced/document-serialization-and-storage.md)
-- [Printing Overview](/dotnet/desktop/wpf/documents/printing-overview)
+- [Printing Overview](../documents/printing-overview.md)

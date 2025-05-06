@@ -25,5 +25,5 @@ There might be times when you want to bind a <xref:System.Windows.Controls.TreeV
   
 ## See also
 
-- [Data Binding Overview](/dotnet/desktop/wpf/data/index)
+- [Data Binding Overview](../data/index.md)
 - [Data Templating Overview](../data/data-templating-overview.md)

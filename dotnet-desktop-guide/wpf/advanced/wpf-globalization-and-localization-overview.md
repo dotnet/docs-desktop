@@ -42,7 +42,7 @@ When you design a WPF–based UI, consider implementing these best practices:
 
 - Enable <xref:System.Windows.Controls.TextBlock.TextWrapping%2A> on <xref:System.Windows.Controls.TextBlock> to avoid clipping.
 
-- Set the `xml:lang` attribute. This attribute describes the culture of a specific element and its child elements. The value of this property changes the behavior of several features in WPF. For example, it changes the behavior of hyphenation, spell checking, number substitution, complex script shaping, and font fallback. See [Globalization for WPF](globalization-for-wpf.md) for more information about setting the [xml:lang Handling in XAML](/dotnet/desktop/xaml-services/xml-language-handling).
+- Set the `xml:lang` attribute. This attribute describes the culture of a specific element and its child elements. The value of this property changes the behavior of several features in WPF. For example, it changes the behavior of hyphenation, spell checking, number substitution, complex script shaping, and font fallback. See [Globalization for WPF](globalization-for-wpf.md) for more information about setting the [xml:lang Handling in XAML](../../xaml-services/xml-language-handling.md).
 
 - Create a customized composite font to obtain better control of fonts that are used for different languages. By default, WPF uses the GlobalUserInterface.composite font in your Windows\Fonts directory.
 
@@ -148,7 +148,7 @@ Note that of the example uses the shared-sizing feature of <xref:System.Windows.
 
 `xml:lang="en-US"`
 
-Notice the [xml:lang Handling in XAML](/dotnet/desktop/xaml-services/xml-language-handling) placed at the root element of the UI. This property describes the culture of a given element and its children. This value is used by several features in WPF and should be changed appropriately during localization. This value changes what language dictionary is use to hyphenate and spell check words. It also affects the display of digits and how the font fallback system selects which font to use. Finally, the property affects the way numbers are displayed and the way texts written in complex scripts are shaped. The default value is "en-US".
+Notice the [xml:lang Handling in XAML](../../xaml-services/xml-language-handling.md) placed at the root element of the UI. This property describes the culture of a given element and its children. This value is used by several features in WPF and should be changed appropriately during localization. This value changes what language dictionary is use to hyphenate and spell check words. It also affects the display of digits and how the font fallback system selects which font to use. Finally, the property affects the way numbers are displayed and the way texts written in complex scripts are shaped. The default value is "en-US".
 
 **Building a Satellite Resource Assembly**
 

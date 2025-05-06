@@ -36,4 +36,4 @@ The following code behind creates the <xref:System.Windows.UIElement.KeyDown> ev
 ## See also
 
 - [Input Overview](input-overview.md)
-- [Routed Events Overview](/dotnet/desktop/wpf/events/routed-events-overview)
+- [Routed Events Overview](../events/routed-events-overview.md)

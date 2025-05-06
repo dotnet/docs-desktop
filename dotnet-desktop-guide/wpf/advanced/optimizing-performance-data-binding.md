@@ -90,5 +90,5 @@ Windows Presentation Foundation (WPF) data binding provides a simple and consist
 - [Application Resources](optimizing-performance-application-resources.md)
 - [Text](optimizing-performance-text.md)
 - [Other Performance Recommendations](optimizing-performance-other-recommendations.md)
-- [Data Binding Overview](/dotnet/desktop/wpf/data/index)
+- [Data Binding Overview](../data/index.md)
 - [Walkthrough: Caching Application Data in a WPF Application](walkthrough-caching-application-data-in-a-wpf-application.md)

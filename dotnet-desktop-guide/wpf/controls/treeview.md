@@ -31,5 +31,5 @@ The <xref:System.Windows.Controls.TreeView> control displays information in a hi
   
 ## Related Sections  
 
- [Data Binding Overview](/dotnet/desktop/wpf/data/index)  
+ [Data Binding Overview](../data/index.md)  
   [Data Templating Overview](../data/data-templating-overview.md)

@@ -157,7 +157,7 @@ The easiest way to apply and start a <xref:System.Windows.Media.Animation.Storyb
 
     [!code-xaml[animation_ovws_snippet#RectangleOpacityFadeExampleInline_3](~/samples/snippets/csharp/VS_Snippets_Wpf/animation_ovws_snippet/CS/RectangleOpacityFadeExample.xaml#rectangleopacityfadeexampleinline_3)]
 
-2. Create an <xref:System.Windows.EventTrigger> and add the <xref:System.Windows.Media.Animation.BeginStoryboard> to its <xref:System.Windows.EventTrigger.Actions%2A> collection. Set the <xref:System.Windows.EventTrigger.RoutedEvent%2A> property of the <xref:System.Windows.EventTrigger> to the routed event that you want to start the <xref:System.Windows.Media.Animation.Storyboard>. (For more information about routed events, see the [Routed Events Overview](/dotnet/desktop/wpf/events/routed-events-overview).)
+2. Create an <xref:System.Windows.EventTrigger> and add the <xref:System.Windows.Media.Animation.BeginStoryboard> to its <xref:System.Windows.EventTrigger.Actions%2A> collection. Set the <xref:System.Windows.EventTrigger.RoutedEvent%2A> property of the <xref:System.Windows.EventTrigger> to the routed event that you want to start the <xref:System.Windows.Media.Animation.Storyboard>. (For more information about routed events, see the [Routed Events Overview](../events/routed-events-overview.md).)
 
     [!code-xaml[animation_ovws_snippet#RectangleOpacityFadeExampleInline_2](~/samples/snippets/csharp/VS_Snippets_Wpf/animation_ovws_snippet/CS/RectangleOpacityFadeExample.xaml#rectangleopacityfadeexampleinline_2)]
 
@@ -289,7 +289,7 @@ Assigning a name to a <xref:System.Windows.FrameworkElement> differs from assign
 
 - To make a <xref:System.Windows.FrameworkElement> an animation target, you give it a name by setting its <xref:System.Windows.FrameworkElement.Name%2A> property. In code, you must also use the <xref:System.Windows.FrameworkElement.RegisterName%2A> method to register the element name with the page to which it belongs.
 
-- To make a <xref:System.Windows.Freezable> object an animation target in XAML, you use the [x:Name Directive](/dotnet/desktop/xaml-services/xname-directive) to assign it a name. In code, you just use the <xref:System.Windows.FrameworkElement.RegisterName%2A> method to register the object with the page to which it belongs.
+- To make a <xref:System.Windows.Freezable> object an animation target in XAML, you use the [x:Name Directive](../../xaml-services/xname-directive.md) to assign it a name. In code, you just use the <xref:System.Windows.FrameworkElement.RegisterName%2A> method to register the object with the page to which it belongs.
 
 The sections that follow provide an example of naming an element in XAML and code. For more detailed information about naming and targeting, see the [Storyboards Overview](storyboards-overview.md).
 

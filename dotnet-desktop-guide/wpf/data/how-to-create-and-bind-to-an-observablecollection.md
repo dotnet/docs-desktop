@@ -136,12 +136,12 @@ End Class
 > [!NOTE]
 > The objects in your collection must satisfy the requirements described in the [Binding Sources Overview](binding-sources-overview.md). In particular, if you are using <xref:System.Windows.Data.BindingMode.OneWay> or <xref:System.Windows.Data.BindingMode.TwoWay> (for example, you want your UI to update when the source properties change dynamically), you must implement a suitable property changed notification mechanism such as the <xref:System.ComponentModel.INotifyPropertyChanged> interface.  
   
- For more information, see the Binding to Collections section in the [Data Binding Overview](/dotnet/desktop/wpf/data/index).  
+ For more information, see the Binding to Collections section in the [Data Binding Overview](index.md).  
   
 ## See also
 
 - [Sort Data in a View](how-to-sort-data-in-a-view.md)
 - [Filter Data in a View](how-to-filter-data-in-a-view.md)
 - [Sort and Group Data Using a View in XAML](how-to-sort-and-group-data-using-a-view-in-xaml.md)
-- [Data Binding Overview](/dotnet/desktop/wpf/data/index)
+- [Data Binding Overview](index.md)
 - [How-to Topics](data-binding-how-to-topics.md)

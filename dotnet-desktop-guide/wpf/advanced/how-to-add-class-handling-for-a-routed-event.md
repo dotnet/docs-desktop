@@ -33,6 +33,6 @@ Routed events can be handled either by class handlers or instance handlers on an
 ## See also
 
 - <xref:System.Windows.EventManager>
-- [Marking Routed Events as Handled, and Class Handling](/dotnet/desktop/wpf/events/marking-routed-events-as-handled-and-class-handling)
+- [Marking Routed Events as Handled, and Class Handling](../events/marking-routed-events-as-handled-and-class-handling.md)
 - [Handle a Routed Event](how-to-handle-a-routed-event.md)
-- [Routed Events Overview](/dotnet/desktop/wpf/events/routed-events-overview)
+- [Routed Events Overview](../events/routed-events-overview.md)

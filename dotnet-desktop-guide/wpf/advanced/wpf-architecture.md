@@ -163,6 +163,6 @@ This topic provides a guided tour of the Windows Presentation Foundation (WPF) c
 - <xref:System.Windows.Threading.DispatcherObject>
 - <xref:System.Windows.Input.CommandBinding>
 - <xref:System.Windows.Controls.Control>
-- [Data Binding Overview](/dotnet/desktop/wpf/data/index)
+- [Data Binding Overview](../data/index.md)
 - [Layout](layout.md)
 - [Animation Overview](../graphics-multimedia/animation-overview.md)

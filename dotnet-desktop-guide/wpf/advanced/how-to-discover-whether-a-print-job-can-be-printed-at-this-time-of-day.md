@@ -78,4 +78,4 @@ Print queues are not always available for 24 hours a day. They have start and en
 - <xref:System.Printing.PrintSystemJobInfo>
 - <xref:System.Printing.PrintQueue>
 - [Documents in WPF](documents-in-wpf.md)
-- [Printing Overview](/dotnet/desktop/wpf/documents/printing-overview)
+- [Printing Overview](../documents/printing-overview.md)

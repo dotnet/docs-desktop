@@ -16,12 +16,12 @@ The topics in this section describe how to use Windows Presentation Foundation (
   
 ## In This Section  
 
- [Define and Reference a Resource](/dotnet/desktop/wpf/systems/xaml-resources-how-to-define-and-reference)  
- [Use Application Resources](/dotnet/desktop/wpf/systems/xaml-resources-how-to-use-application)  
- [Use SystemFonts](/dotnet/desktop/wpf/systems/xaml-resources-how-to-use-system)  
- [Use System Fonts Keys](/dotnet/desktop/wpf/systems/xaml-resources-how-to-use-system)  
- [Use SystemParameters](/dotnet/desktop/wpf/systems/xaml-resources-how-to-use-system)  
- [Use System Parameters Keys](/dotnet/desktop/wpf/systems/xaml-resources-how-to-use-system)  
+ [Define and Reference a Resource](../systems/xaml-resources-how-to-define-and-reference.md)  
+ [Use Application Resources](../systems/xaml-resources-how-to-use-application.md)  
+ [Use SystemFonts](../systems/xaml-resources-how-to-use-system.md)  
+ [Use System Fonts Keys](../systems/xaml-resources-how-to-use-system.md)  
+ [Use SystemParameters](../systems/xaml-resources-how-to-use-system.md)  
+ [Use System Parameters Keys](../systems/xaml-resources-how-to-use-system.md)  
   
 ## Reference  
 

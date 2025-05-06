@@ -33,7 +33,7 @@ Four key classes--<xref:System.Windows.UIElement>, <xref:System.Windows.ContentE
 ## Related Sections  
 
  [WPF Architecture](wpf-architecture.md)  
-  [XAML in WPF](/dotnet/desktop/wpf/xaml/index)  
+  [XAML in WPF](../xaml/index.md)  
   [Element Tree and Serialization](element-tree-and-serialization.md)  
   [Properties](properties-wpf.md)  
   [Events](events-wpf.md)  

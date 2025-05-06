@@ -30,5 +30,5 @@ This example shows how to clear bindings from an object.
 ## See also
 
 - <xref:System.Windows.Data.BindingOperations>
-- [Data Binding Overview](/dotnet/desktop/wpf/data/index)
+- [Data Binding Overview](index.md)
 - [How-to Topics](data-binding-how-to-topics.md)

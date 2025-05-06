@@ -36,20 +36,20 @@ Provides a value for any XAML property attribute by deferring that value to be a
   
 | Value | Description |  
 |-------|-------------|  
-|`key`|The key for the requested resource. This key was initially assigned by the [x:Key Directive](/dotnet/desktop/xaml-services/xkey-directive) if a resource was created in markup, or was provided as the `key` parameter when calling <xref:System.Windows.ResourceDictionary.Add%2A?displayProperty=nameWithType> if the resource was created in code.|  
+|`key`|The key for the requested resource. This key was initially assigned by the [x:Key Directive](../../xaml-services/xkey-directive.md) if a resource was created in markup, or was provided as the `key` parameter when calling <xref:System.Windows.ResourceDictionary.Add%2A?displayProperty=nameWithType> if the resource was created in code.|  
   
 ## Remarks  
 
  A `DynamicResource` will create a temporary expression during the initial compilation and thus defer lookup for resources until the requested resource value is actually required in order to construct an object. This may potentially be after the XAML page is loaded. The resource value will be found based on key search against all active resource dictionaries starting from the current page scope, and is substituted for the placeholder expression from compilation.  
   
 > [!IMPORTANT]
-> In terms of dependency property precedence, a `DynamicResource` expression is equivalent to the position where the dynamic resource reference is applied. If you set a local value for a property that previously had a `DynamicResource` expression as the local value, the `DynamicResource` is completely removed. For details, see [Dependency Property Value Precedence](/dotnet/desktop/wpf/properties/dependency-property-value-precedence).  
+> In terms of dependency property precedence, a `DynamicResource` expression is equivalent to the position where the dynamic resource reference is applied. If you set a local value for a property that previously had a `DynamicResource` expression as the local value, the `DynamicResource` is completely removed. For details, see [Dependency Property Value Precedence](../properties/dependency-property-value-precedence.md).  
   
  Certain resource access scenarios are particularly appropriate for `DynamicResource` as opposed to a [StaticResource Markup Extension](staticresource-markup-extension.md). See [XAML Resources](/dotnet/desktop-wpf/fundamentals/xaml-resources-define) for a discussion about the relative merits and performance implications of `DynamicResource` and `StaticResource`.  
   
- The specified <xref:System.Windows.DynamicResourceExtension.ResourceKey%2A> should correspond to an existing resource determined by [x:Key Directive](/dotnet/desktop/xaml-services/xkey-directive) at some level in your page, application, the available control themes and external resources, or system resources, and the resource lookup will happen in that order. For more information about resource lookup for static and dynamic resources, see [XAML Resources](/dotnet/desktop-wpf/fundamentals/xaml-resources-define).  
+ The specified <xref:System.Windows.DynamicResourceExtension.ResourceKey%2A> should correspond to an existing resource determined by [x:Key Directive](../../xaml-services/xkey-directive.md) at some level in your page, application, the available control themes and external resources, or system resources, and the resource lookup will happen in that order. For more information about resource lookup for static and dynamic resources, see [XAML Resources](/dotnet/desktop-wpf/fundamentals/xaml-resources-define).  
   
- A resource key may be any string defined in the [XamlName Grammar](/dotnet/desktop/xaml-services/xamlname-grammar). A resource key may also be other object types, such as a <xref:System.Type>. A <xref:System.Type> key is fundamental to how controls can be styled by themes. For more information, see [Control Authoring Overview](../controls/control-authoring-overview.md).  
+ A resource key may be any string defined in the [XamlName Grammar](../../xaml-services/xamlname-grammar.md). A resource key may also be other object types, such as a <xref:System.Type>. A <xref:System.Type> key is fundamental to how controls can be styled by themes. For more information, see [Control Authoring Overview](../controls/control-authoring-overview.md).  
   
  APIs for lookup of resource values, such as <xref:System.Windows.FrameworkElement.FindResource%2A>, follow the same resource lookup logic as used by `DynamicResource`.  
   
@@ -74,9 +74,9 @@ Provides a value for any XAML property attribute by deferring that value to be a
 ## See also
 
 - [XAML Resources](/dotnet/desktop-wpf/fundamentals/xaml-resources-define)
-- [Resources and Code](/dotnet/desktop/wpf/systems/xaml-resources-and-code)
-- [x:Key Directive](/dotnet/desktop/xaml-services/xkey-directive)
-- [XAML in WPF](/dotnet/desktop/wpf/xaml/index)
+- [Resources and Code](../systems/xaml-resources-and-code.md)
+- [x:Key Directive](../../xaml-services/xkey-directive.md)
+- [XAML in WPF](../xaml/index.md)
 - [Markup Extensions and WPF XAML](markup-extensions-and-wpf-xaml.md)
 - [StaticResource Markup Extension](staticresource-markup-extension.md)
 - [Markup Extensions and WPF XAML](markup-extensions-and-wpf-xaml.md)

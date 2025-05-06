@@ -25,5 +25,5 @@ The <xref:System.Windows.Controls.PrintDialog> control is used to instantiate a 
   
 ## See also
 
-- [Printing Overview](/dotnet/desktop/wpf/documents/printing-overview)
+- [Printing Overview](../documents/printing-overview.md)
 - [Documents in WPF](../advanced/documents-in-wpf.md)

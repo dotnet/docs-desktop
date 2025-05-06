@@ -39,7 +39,7 @@ Applications often provide multiple serialization options which allow the user t
 
 ### XPS Print Path
 
-The Microsoft .NET Framework XPS print path also provides an extensible mechanism for writing documents through print output.  XPS serves as both a document file format and is the native print spool format for Windows Vista.  XPS documents can be sent directly to XPS-compatible printers without the need for conversion to an intermediate format.  See the [Printing Overview](/dotnet/desktop/wpf/documents/printing-overview) for additional information on print path output options and capabilities.
+The Microsoft .NET Framework XPS print path also provides an extensible mechanism for writing documents through print output.  XPS serves as both a document file format and is the native print spool format for Windows Vista.  XPS documents can be sent directly to XPS-compatible printers without the need for conversion to an intermediate format.  See the [Printing Overview](../documents/printing-overview.md) for additional information on print path output options and capabilities.
 
 <a name="PluginSerializers"></a>
 
@@ -83,5 +83,5 @@ Both plug-in serializers and linked serializers use the same exposed public meth
 - <xref:System.Windows.Xps.XpsDocumentWriter>
 - <xref:System.Windows.Xps.Packaging.XpsDocument>
 - [Documents in WPF](documents-in-wpf.md)
-- [Printing Overview](/dotnet/desktop/wpf/documents/printing-overview)
+- [Printing Overview](../documents/printing-overview.md)
 - [XML Paper Specification](https://www.ecma-international.org/publications-and-standards/standards/ecma-388/)

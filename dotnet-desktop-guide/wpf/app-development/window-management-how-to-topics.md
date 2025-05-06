@@ -17,10 +17,10 @@ The following topics show how to manage Windows Presentation Foundation (WPF) wi
 
  [Automatically Size a Window to Fit Its Content](how-to-automatically-size-a-window-to-fit-its-content.md)  
   [Get all Windows in an Application](how-to-get-all-windows-in-an-application.md)  
-  [Get and Set the Main Application Window](/dotnet/desktop/wpf/windows/how-to-get-set-main-application-window)  
-  [Open a Dialog Box](/dotnet/desktop/wpf/windows/how-to-open-window-dialog-box)  
-  [Open a Message Box](/dotnet/desktop/wpf/windows/how-to-open-message-box)  
-  [Open a Window](/dotnet/desktop/wpf/windows/how-to-open-window-dialog-box)  
+  [Get and Set the Main Application Window](../windows/how-to-get-set-main-application-window.md)  
+  [Open a Dialog Box](../windows/how-to-open-window-dialog-box.md)  
+  [Open a Message Box](../windows/how-to-open-message-box.md)  
+  [Open a Window](../windows/how-to-open-window-dialog-box.md)  
   [Return a Dialog Box Result](how-to-return-a-dialog-box-result.md)  
   
 ## Related Sections  

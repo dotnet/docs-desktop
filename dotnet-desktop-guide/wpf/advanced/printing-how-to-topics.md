@@ -14,7 +14,7 @@ The topics in this section demonstrate how to use the printing and print system 
   
 ## In This Section  
 
- [Invoke a Print Dialog](/dotnet/desktop/wpf/documents/how-to-display-print-dialog)  
+ [Invoke a Print Dialog](../documents/how-to-display-print-dialog.md)  
  Instructions for XAML markup to declare a Microsoft Windows print dialog object and using code to invoke the dialog from within a Windows Presentation Foundation (WPF) application.  
   
  [Clone a Printer](how-to-clone-a-printer.md)  
@@ -32,7 +32,7 @@ The topics in this section demonstrate how to use the printing and print system 
  [Get Print System Object Properties Without Reflection](how-to-get-print-system-object-properties-without-reflection.md)  
  Instructions for how to discover at runtime print system object's properties and their types.  
   
- [Programmatically Print XPS Files](/dotnet/desktop/wpf/documents/how-to-print-xps-files)  
+ [Programmatically Print XPS Files](../documents/how-to-print-xps-files.md)  
  Instructions for rapid printing of XML Paper Specification (XPS) files without the need for a user interface (UI).  
   
  [Remotely Survey the Status of Printers](how-to-remotely-survey-the-status-of-printers.md)  
@@ -46,6 +46,6 @@ The topics in this section demonstrate how to use the printing and print system 
 - <xref:System.Printing>
 - <xref:System.Printing.IndexedProperties>
 - <xref:System.Printing.Interop>
-- [Printing Overview](/dotnet/desktop/wpf/documents/printing-overview)
+- [Printing Overview](../documents/printing-overview.md)
 - [Documents in WPF](documents-in-wpf.md)
 - [XPS Documents](/windows/desktop/printdocs/documents)

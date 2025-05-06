@@ -273,7 +273,7 @@ To create this UI, you'll add the following elements to *`ExpenseItHome.xaml`*:
 - A <xref:System.Windows.Controls.Label> (for the list header).
 - A <xref:System.Windows.Controls.Button> (to click to view the expense report for the person that is selected in the list).
 
-Each control is placed in a row of the <xref:System.Windows.Controls.Grid> by setting the <xref:System.Windows.Controls.Grid.Row%2A?displayProperty=nameWithType> attached property. For more information about attached properties, see [Attached Properties Overview](/dotnet/desktop/wpf/properties/attached-properties-overview).
+Each control is placed in a row of the <xref:System.Windows.Controls.Grid> by setting the <xref:System.Windows.Controls.Grid.Row%2A?displayProperty=nameWithType> attached property. For more information about attached properties, see [Attached Properties Overview](../properties/attached-properties-overview.md).
 
 1. In *`ExpenseItHome.xaml`*, add the following XAML somewhere between the <xref:System.Windows.Controls.Grid> tags:
 
@@ -381,7 +381,7 @@ The appearance of various elements is often the same for all elements of the sam
 
     - `buttonStyle`: To format the <xref:System.Windows.Controls.Button> on `ExpenseItHome.xaml`.
 
-    Notice that the styles are resources and children of the <xref:System.Windows.Application.Resources%2A?displayProperty=nameWithType> property element. In this location, the styles are applied to all the elements in an application. For an example of using resources in a .NET app, see [Use Application Resources](/dotnet/desktop/wpf/systems/xaml-resources-how-to-use-application).
+    Notice that the styles are resources and children of the <xref:System.Windows.Application.Resources%2A?displayProperty=nameWithType> property element. In this location, the styles are applied to all the elements in an application. For an example of using resources in a .NET app, see [Use Application Resources](../systems/xaml-resources-how-to-use-application.md).
 
 3. In *`ExpenseItHome.xaml`*, replace everything between the <xref:System.Windows.Controls.Grid> elements with the following XAML:
 
@@ -449,7 +449,7 @@ In this section, you'll update the UI for each item in the data-bound lists by u
 
 1. Open *ExpenseReportPage.xaml*.
 
-2. Bind the content of the "Name" and "Department" <xref:System.Windows.Controls.Label> elements to the appropriate data source property. For more information about data binding, see [Data binding overview](/dotnet/desktop/wpf/data/index).
+2. Bind the content of the "Name" and "Department" <xref:System.Windows.Controls.Label> elements to the appropriate data source property. For more information about data binding, see [Data binding overview](../data/index.md).
 
     [!code-xaml[ExpenseIt#31](~/samples/snippets/csharp/VS_Snippets_Wpf/ExpenseIt/CSharp/ExpenseIt9/ExpenseReportPage.xaml#31)]
 
@@ -482,15 +482,15 @@ The following illustration shows both pages of the `ExpenseIt` application with 
 In this walkthrough you learned a number of techniques for creating a UI using Windows Presentation Foundation (WPF). You should now have a basic understanding of the building blocks of a data-bound .NET app. For more information about the WPF architecture and programming models, see the following topics:
 
 - [WPF architecture](../advanced/wpf-architecture.md)
-- [XAML in WPF](/dotnet/desktop/wpf/xaml/index)
-- [Dependency properties overview](/dotnet/desktop/wpf/properties/dependency-properties-overview)
+- [XAML in WPF](../xaml/index.md)
+- [Dependency properties overview](../properties/dependency-properties-overview.md)
 - [Layout](../advanced/layout.md)
 
 For more information about creating applications, see the following topics:
 
 - [Application development](../app-development/index.md)
 - [Controls](../controls/index.md)
-- [Data binding overview](/dotnet/desktop/wpf/data/index)
+- [Data binding overview](../data/index.md)
 - [Graphics and multimedia](../graphics-multimedia/index.md)
 - [Documents in WPF](../advanced/documents-in-wpf.md)
 

@@ -81,4 +81,4 @@ Some controls, such as <xref:System.Windows.Controls.Calendar> and <xref:System.
   
 ## See also
 
-- [XAML in WPF](/dotnet/desktop/wpf/xaml/index)
+- [XAML in WPF](../xaml/index.md)

@@ -67,7 +67,7 @@ This topic provides an overview of drag-and-drop support in Windows Presentation
 
 ## Drag-and-Drop Events  
 
- Drag-and-drop operations support an event driven model.  Both the drag source and the drop target use a standard set of events to handle drag-and-drop operations.  The following tables summarize the standard drag-and-drop events. These are attached events on the <xref:System.Windows.DragDrop> class. For more information about attached events, see [Attached Events Overview](/dotnet/desktop/wpf/events/attached-events-overview).  
+ Drag-and-drop operations support an event driven model.  Both the drag source and the drop target use a standard set of events to handle drag-and-drop operations.  The following tables summarize the standard drag-and-drop events. These are attached events on the <xref:System.Windows.DragDrop> class. For more information about attached events, see [Attached Events Overview](../events/attached-events-overview.md).  
   
 ### Drag Source Events  
   
@@ -91,7 +91,7 @@ This topic provides an overview of drag-and-drop support in Windows Presentation
 |<xref:System.Windows.DragDrop.PreviewDragOver>|Tunneling version of <xref:System.Windows.DragDrop.DragOver>.|  
 |<xref:System.Windows.DragDrop.PreviewDrop>|Tunneling version of <xref:System.Windows.DragDrop.Drop>.|  
   
- To handle drag-and-drop events for instances of an object, add handlers for the events listed in the preceding tables. To handle drag-and-drop events at the class level, override the corresponding virtual On*Event and On\*PreviewEvent methods. For more information, see [Class Handling of Routed Events by Control Base Classes](/dotnet/desktop/wpf/events/marking-routed-events-as-handled-and-class-handling#Class_Handling_of_Routed_Events).  
+ To handle drag-and-drop events for instances of an object, add handlers for the events listed in the preceding tables. To handle drag-and-drop events at the class level, override the corresponding virtual On*Event and On\*PreviewEvent methods. For more information, see [Class Handling of Routed Events by Control Base Classes](../events/marking-routed-events-as-handled-and-class-handling.md#Class_Handling_of_Routed_Events).  
   
 <a name="Implementing_Drag_And_Drop"></a>
 

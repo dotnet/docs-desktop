@@ -17,8 +17,8 @@ Users interact with applications through windows. The fundamental purpose of a w
   
 ## In This Section  
 
- [WPF Windows Overview](/dotnet/desktop/wpf/windows/index)  
- [Dialog Boxes Overview](/dotnet/desktop/wpf/windows/dialog-boxes-overview)  
+ [WPF Windows Overview](../windows/index.md)  
+ [Dialog Boxes Overview](../windows/dialog-boxes-overview.md)  
  [How-to Topics](window-management-how-to-topics.md)  
   
 ## Reference  

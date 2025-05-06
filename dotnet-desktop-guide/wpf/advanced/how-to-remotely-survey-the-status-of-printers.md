@@ -85,4 +85,4 @@ At any given time at medium and large companies there may be multiple printers t
 - <xref:System.Printing.PrintQueue>
 - [& Operator (C# Reference)](/dotnet/csharp/language-reference/operators/bitwise-and-shift-operators#logical-and-operator-)
 - [Documents in WPF](documents-in-wpf.md)
-- [Printing Overview](/dotnet/desktop/wpf/documents/printing-overview)
+- [Printing Overview](../documents/printing-overview.md)

@@ -45,7 +45,7 @@ In data binding, the binding source object refers to the object you obtain your 
 
 - <xref:System.Windows.FrameworkElement.DataContext%2A?displayProperty=nameWithType>
 - <xref:System.Windows.FrameworkContentElement.DataContext%2A?displayProperty=nameWithType>
-- [Property Value Inheritance](/dotnet/desktop/wpf/properties/property-value-inheritance)
-- [Data Binding Overview](/dotnet/desktop/wpf/data/index)
+- [Property Value Inheritance](../properties/property-value-inheritance.md)
+- [Data Binding Overview](index.md)
 - [Binding Declarations Overview](binding-declarations-overview.md)
 - [How-to Topics](data-binding-how-to-topics.md)

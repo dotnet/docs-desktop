@@ -39,4 +39,4 @@ This example shows how to apply a <xref:System.Windows.Media.ScaleTransform> whe
 - <xref:System.Windows.Media.ScaleTransform>
 - [Transforms Overview](transforms-overview.md)
 - [How-to Topics](transformations-how-to-topics.md)
-- [Routed Events Overview](/dotnet/desktop/wpf/events/routed-events-overview)
+- [Routed Events Overview](../events/routed-events-overview.md)

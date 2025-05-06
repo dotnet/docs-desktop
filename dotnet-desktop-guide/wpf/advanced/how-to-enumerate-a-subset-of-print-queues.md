@@ -41,5 +41,5 @@ A common situation faced by information technology (IT) professionals managing a
 - <xref:System.Printing.PrintQueue>
 - <xref:System.Printing.PrintQueue.GetPrintCapabilities%2A>
 - [Documents in WPF](documents-in-wpf.md)
-- [Printing Overview](/dotnet/desktop/wpf/documents/printing-overview)
+- [Printing Overview](../documents/printing-overview.md)
 - [Microsoft XPS Document Writer](/windows/win32/printdocs/microsoft-xps-document-writer)

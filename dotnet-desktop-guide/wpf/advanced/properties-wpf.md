@@ -18,19 +18,19 @@ Windows Presentation Foundation (WPF) provides a set of services that can be use
   
 ## In This Section  
 
-- [Dependency Properties Overview](/dotnet/desktop/wpf/properties/dependency-properties-overview)
-- [Attached Properties Overview](/dotnet/desktop/wpf/properties/attached-properties-overview)
-- [Custom Dependency Properties](/dotnet/desktop/wpf/properties/custom-dependency-properties)
-- [Dependency Property Metadata](/dotnet/desktop/wpf/properties/dependency-property-metadata)
-- [Dependency Property Callbacks and Validation](/dotnet/desktop/wpf/properties/dependency-property-callbacks-and-validation)
-- [Framework Property Metadata](/dotnet/desktop/wpf/properties/framework-property-metadata)
-- [Dependency Property Value Precedence](/dotnet/desktop/wpf/properties/dependency-property-value-precedence)
-- [Read-Only Dependency Properties](/dotnet/desktop/wpf/properties/read-only-dependency-properties)
-- [Property Value Inheritance](/dotnet/desktop/wpf/properties/property-value-inheritance)
-- [Dependency Property Security](/dotnet/desktop/wpf/properties/dependency-property-security)
-- [Safe Constructor Patterns for DependencyObjects](/dotnet/desktop/wpf/properties/safe-constructor-patterns-for-dependencyobjects)
-- [Collection-Type Dependency Properties](/dotnet/desktop/wpf/properties/collection-type-dependency-properties)
-- [XAML Loading and Dependency Properties](/dotnet/desktop/wpf/properties/xaml-loading-and-dependency-properties)
+- [Dependency Properties Overview](../properties/dependency-properties-overview.md)
+- [Attached Properties Overview](../properties/attached-properties-overview.md)
+- [Custom Dependency Properties](../properties/custom-dependency-properties.md)
+- [Dependency Property Metadata](../properties/dependency-property-metadata.md)
+- [Dependency Property Callbacks and Validation](../properties/dependency-property-callbacks-and-validation.md)
+- [Framework Property Metadata](../properties/framework-property-metadata.md)
+- [Dependency Property Value Precedence](../properties/dependency-property-value-precedence.md)
+- [Read-Only Dependency Properties](../properties/read-only-dependency-properties.md)
+- [Property Value Inheritance](../properties/property-value-inheritance.md)
+- [Dependency Property Security](../properties/dependency-property-security.md)
+- [Safe Constructor Patterns for DependencyObjects](../properties/safe-constructor-patterns-for-dependencyobjects.md)
+- [Collection-Type Dependency Properties](../properties/collection-type-dependency-properties.md)
+- [XAML Loading and Dependency Properties](../properties/xaml-loading-and-dependency-properties.md)
 - [How-to Topics](properties-how-to-topics.md)
   
 ## Reference  
@@ -46,7 +46,7 @@ Windows Presentation Foundation (WPF) provides a set of services that can be use
 ## Related Sections  
 
  [WPF Architecture](wpf-architecture.md)  
-  [XAML in WPF](/dotnet/desktop/wpf/xaml/index)  
+  [XAML in WPF](../xaml/index.md)  
   [Base Elements](base-elements.md)  
   [Element Tree and Serialization](element-tree-and-serialization.md)  
   [Events](events-wpf.md)  

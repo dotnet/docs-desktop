@@ -50,7 +50,7 @@ The following example shows a hexadecimal character reference. Notice that it ha
 
 ### Language Attribute
 
- XAML uses [xml:lang](/dotnet/desktop/xaml-services/xml-language-handling) to represent the language attribute of an element.  To take advantage of the <xref:System.Globalization.CultureInfo> class, the language attribute value needs to be one of the culture names predefined by <xref:System.Globalization.CultureInfo>. [xml:lang](/dotnet/desktop/xaml-services/xml-language-handling) is inheritable in the element tree (by XML rules, not necessarily because of dependency property inheritance) and its default value is an empty string if it is not assigned explicitly.
+ XAML uses [xml:lang](../../xaml-services/xml-language-handling.md) to represent the language attribute of an element.  To take advantage of the <xref:System.Globalization.CultureInfo> class, the language attribute value needs to be one of the culture names predefined by <xref:System.Globalization.CultureInfo>. [xml:lang](../../xaml-services/xml-language-handling.md) is inheritable in the element tree (by XML rules, not necessarily because of dependency property inheritance) and its default value is an empty string if it is not assigned explicitly.
 
  The language attribute is very useful for specifying regional languages. For example, French has different spelling, vocabulary, and pronunciation in France, Quebec, Belgium, and Switzerland. Also Chinese, Japanese, and Korean share code points in Unicode, but the ideographic shapes are different and they use totally different fonts.
 
@@ -168,7 +168,7 @@ The following example shows a hexadecimal character reference. Notice that it ha
 
  WPF applications use XAML to define their UI. XAML allows developers to specify a hierarchy of objects with a set of properties and logic. The primary use of XAML is to develop WPF applications but it can be used to specify a hierarchy of any common language runtime (CLR) objects. Most developers use XAML to specify their application's UI and use a programming language such as C# to react to user interaction.
 
- From a resource point of view, a UI is a resource element and therefore its final distribution format must be localizable to support international languages. Because XAML cannot handle events many XAML applications contain blocks of code to do this. For more information, see [XAML in WPF](/dotnet/desktop/wpf/xaml/index). Code is stripped out and compiled into different binaries when a XAML file is tokenized into the BAML form of XAML. The BAML form of XAML files, images, and other types of managed resource objects are embedded in the satellite resource assembly, which can be localized into other languages, or the main assembly when localization is not required.
+ From a resource point of view, a UI is a resource element and therefore its final distribution format must be localizable to support international languages. Because XAML cannot handle events many XAML applications contain blocks of code to do this. For more information, see [XAML in WPF](../xaml/index.md). Code is stripped out and compiled into different binaries when a XAML file is tokenized into the BAML form of XAML. The BAML form of XAML files, images, and other types of managed resource objects are embedded in the satellite resource assembly, which can be localized into other languages, or the main assembly when localization is not required.
 
 > [!NOTE]
 > WPF applications support all the FrameworkCLR resources including string tables, images, and so forth.
