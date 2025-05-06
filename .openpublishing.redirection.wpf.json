@@ -223,8 +223,10 @@
         {
             "source_path": "dotnet-desktop-guide/wpf/getting-started/wpf-walkthroughs.md",
             "redirect_url": "/dotnet/desktop/wpf/get-started/wpf-walkthroughs"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/app-development/how-to-return-a-dialog-box-result.md",
+            "redirect_url": "/dotnet/desktop/wpf/windows/dialog-boxes-overview"
         }
-
-        
     ]
 }

@@ -363,6 +363,50 @@
         {
             "source_path": "dotnet-desktop-guide/winforms/controls/how-to-inherit-from-the-control-class.md",
             "redirect_url": "/dotnet/desktop/winforms/controls-design/custom-controls-overview"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/winforms/adjusting-the-size-and-scale-of-windows-forms.md",
+            "redirect_url": "/dotnet/desktop/winforms/forms/autoscale"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/winforms/controls/developing-a-composite-windows-forms-control.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls-design/custom-controls-overview"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/winforms/controls/developing-custom-windows-forms-controls.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls-design/custom-controls-overview"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/winforms/controls/events-in-windows-forms-controls.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls/events"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/winforms/controls/how-to-author-controls-for-windows-forms.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls-design/overview"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/winforms/controls/properties-in-windows-forms-controls.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls-design/designer-properties-overview"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/winforms/controls/property-changed-events.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls-design/designer-properties-overview"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/winforms/how-to-access-keyed-collections-in-windows-forms.md",
+            "redirect_url": "/dotnet/desktop/winforms/controls/how-to-access-keyed-collections-in-windows-forms"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/winforms/how-to-handle-user-input-events-in-windows-forms-controls.md",
+            "redirect_url": "/dotnet/desktop/winforms/input-keyboard/overview"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/winforms/user-input-in-a-windows-forms-application.md",
+            "redirect_url": "/dotnet/desktop/winforms/input-mouse/overview"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/winforms/user-input-in-windows-forms.md",
+            "redirect_url": "/dotnet/desktop/winforms/input-mouse/overview"
         }
     ]
 }
