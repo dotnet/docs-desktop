@@ -1,0 +1,84 @@
+### YamlMime:Landing
+
+title: Windows Presentation Foundation documentation
+summary: Learn about using Windows Presentation Foundation (WPF), an open-source, graphical user interface for Windows, on .NET.
+
+metadata:
+  title: Windows Presentation Foundation for .NET documentation
+  description: Learn about using Windows Presentation Foundation (WPF), an open-source, graphical user interface for Windows, on .NET.
+  ms.topic: landing-page
+  ms.date: 11/11/2024
+  ms.service: dotnet-desktop
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview
+#               quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+
+  # Card
+  - title: Learn about WPF
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: WPF overview
+            url: overview/index.md
+      - linkListType: whats-new
+        links:
+          - text: Differences from .NET Framework
+            url: migration/differences-from-net-framework.md
+      - linkListType: tutorial
+        links:
+          - text: Create a new app
+            url: get-started/create-app-visual-studio.md
+          - text: Migrate from .NET Framework
+            url: /dotnet/core/porting/upgrade-assistant-wpf-framework
+      - linkListType: download
+        links:
+          - text: Visual Studio 2022
+            url: https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+desktopguide+wpf
+
+  - title: WPF windows
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: About WPF windows
+            url: windows/index.md
+          - text: About dialog boxes
+            url: windows/dialog-boxes-overview.md
+      - linkListType: how-to-guide
+        links:
+          - text: Open a message box
+            url: windows/how-to-open-message-box.md
+          - text: Open a common dialog box
+            url: windows/how-to-open-common-system-dialog-box.md
+          - text: Get or set the main app window
+            url: windows/how-to-get-set-main-application-window.md
+
+  - title: Control styles and templates
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: About styles and templates
+            url: controls/styles-templates-overview.md
+      - linkListType: how-to-guide
+        links:
+          - text: Create a style
+            url: controls/how-to-create-apply-style.md
+          - text: Create a template
+            url: controls/how-to-create-apply-template.md
+
+  - title: Data binding
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: About data binding
+            url: data/index.md
+          - text: Declare bindings
+            url: data/binding-declarations-overview.md
+
+  - title: XAML in WPF
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: About XAML
+            url: xaml/index.md

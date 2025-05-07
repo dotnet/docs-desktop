@@ -3,10 +3,10 @@ title: "x:Array Markup Extension"
 description: Learn about the x:Array Markup Extension.
 ms.date: "03/30/2017"
 ms.custom: devdivchpfy22
-f1_keywords: 
+f1_keywords:
   - "x:Array"
   - "xArray"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "x:Array [XAML Services]"
   - "XAML [XAML Services], x:Array markup extension"
 ms.assetid: c5358e14-d24c-44c7-b5eb-6062a4fd981c
@@ -63,9 +63,9 @@ For example, the following is a simple array of two strings, with the `sys` pref
 </x:Array>
 ```
 
-For custom types that are used as array elements, the class must also support the requirements for being instantiated in XAML as object elements. For more information, see [XAML and Custom Classes for WPF](../framework/wpf/advanced/xaml-and-custom-classes-for-wpf.md).
+For custom types that are used as array elements, the class must also support the requirements for being instantiated in XAML as object elements. For more information, see [XAML and Custom Classes for WPF](../wpf/advanced/xaml-and-custom-classes-for-wpf.md).
 
 ## See also
 
-- [Markup Extensions and WPF XAML](../framework/wpf/advanced/markup-extensions-and-wpf-xaml.md)
-- [Types Migrated from WPF to System.Xaml](../framework/wpf/advanced/types-migrated-from-wpf-to-system.md)
+- [Markup Extensions and WPF XAML](../wpf/advanced/markup-extensions-and-wpf-xaml.md)
+- [Types Migrated from WPF to System.Xaml](../wpf/advanced/types-migrated-from-wpf-to-system.md)

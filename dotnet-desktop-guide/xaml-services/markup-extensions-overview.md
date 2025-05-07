@@ -2,7 +2,7 @@
 title: "Markup Extensions for XAML Overview"
 description: Overview of how to use Markup extensions as a technique for obtaining a value that is not a primitive or a specific XAML type.
 ms.date: "03/30/2017"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "markup extensions [XAML Services], custom"
   - "XAML [XAML Services], markup extensions"
 ms.assetid: 261b2b11-2dc0-462f-8c66-55b8c9c6e436
@@ -124,7 +124,7 @@ To support property element usage of your markup extension, define a public para
 
 To support both design environments and certain XAML object writer scenarios, you should attribute a markup extension support type with several CLR attributes. These attributes report the intended markup extension usage.
 
- <xref:System.Windows.Markup.MarkupExtensionReturnTypeAttribute> reports the <xref:System.Type> information for the object type that <xref:System.Windows.Markup.ArrayExtension.ProvideValue%2A> returns. By its pure signature, <xref:System.Windows.Markup.ArrayExtension.ProvideValue%2A> returns <xref:System.Object>. But various consumers might want more precise return type information. This includes:
+<xref:System.Windows.Markup.MarkupExtensionReturnTypeAttribute> reports the <xref:System.Type> information for the object type that <xref:System.Windows.Markup.ArrayExtension.ProvideValue%2A> returns. By its pure signature, <xref:System.Windows.Markup.ArrayExtension.ProvideValue%2A> returns <xref:System.Object>. But various consumers might want more precise return type information. This includes:
 
 - Designers and IDEs, who might be able to provide type-aware support for markup extension usages.
 - Advanced implementations of `SetMarkupExtension` handlers on target classes, which might rely on reflection to determine a markup extension's return type instead of branching on specific known <xref:System.Windows.Markup.MarkupExtension> implementations by name.
@@ -159,4 +159,4 @@ If you are working with a XAML node stream on the save path, there generally is 
 
 - <xref:System.Windows.Markup.MarkupExtension>
 - [Type Converters and Markup Extensions for XAML](type-converters-and-markup-extensions.md)
-- [Markup Extensions and WPF XAML](../framework/wpf/advanced/markup-extensions-and-wpf-xaml.md)
+- [Markup Extensions and WPF XAML](../wpf/advanced/markup-extensions-and-wpf-xaml.md)

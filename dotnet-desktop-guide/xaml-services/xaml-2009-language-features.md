@@ -2,7 +2,7 @@
 title: "XAML 2009 Language Features"
 description: "Describes the language features specific to the XAML 2009 specification."
 ms.date: "03/30/2017"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "XAML 2009 [XAML Services]"
   - "XAML [XAML Services], XAML 2009"
 ms.assetid: f6bb18d8-c86a-4549-8862-323e6b32a8dd
@@ -15,7 +15,7 @@ XAML 2009 is the shorthand term for new XAML language features that extend the e
 
 In WPF, you can use XAML 2009 features, but only for XAML that is not WPF markup-compiled. Markup-compiled XAML and the BAML form of XAML do not currently support the XAML 2009 language keywords and features.
 
-Note that existing techniques for loading loose XAML in WPF also have possible security and access restrictions to CLR types and the type system that are more restrictive than for markup-compiled XAML. For more information, see [Security (WPF)](../framework/wpf/security-wpf.md) or [WPF Security Strategy - Platform Security](../framework/wpf/wpf-security-strategy-platform-security.md).
+Note that existing techniques for loading loose XAML in WPF also have possible security and access restrictions to CLR types and the type system that are more restrictive than for markup-compiled XAML. For more information, see [Security (WPF)](../wpf/security-wpf.md) or [WPF Security Strategy - Platform Security](../wpf/wpf-security-strategy-platform-security.md).
 
 XAML 2009 also introduces additional features that either modify the previous XAML 2006 constructs or that modify the basic markup forms.
 
@@ -33,4 +33,4 @@ For attributes that are backed by events, XAML 2006 presumes that markup compila
 
 ## See also
 
-- [XAML overview (WPF .NET)](../net/wpf/xaml/index.md)
+- [XAML overview (WPF .NET)](../wpf/xaml/index.md)

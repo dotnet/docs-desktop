@@ -3,7 +3,7 @@ title: "x:FieldModifier Directive"
 description: Learn about the x:FieldModifier Directive.
 ms.date: "03/30/2017"
 ms.custom: devdivchpfy22
-helpviewer_keywords: 
+helpviewer_keywords:
   - "FieldModifier attribute in XAML [XAML Services]"
   - "x:FieldModifier attribute [XAML Services]"
   - "XAML [XAML Services], x:FieldModifier attribute"
@@ -27,7 +27,7 @@ Modifies XAML compilation behavior so that fields for named object references ar
 
 ## Dependencies
 
- If a XAML production uses `x:FieldModifier` anywhere, the root element of that XAML production must declare an [x:Class Directive](xclass-directive.md).
+If a XAML production uses `x:FieldModifier` anywhere, the root element of that XAML production must declare an [x:Class Directive](xclass-directive.md).
 
 ## Remarks
 
@@ -51,8 +51,8 @@ By default, the partial class for the root element is public; however, you can m
 
 ## See also
 
-- [XAML and Custom Classes for WPF](../framework/wpf/advanced/xaml-and-custom-classes-for-wpf.md)
-- [Code-Behind and XAML in WPF](../framework/wpf/advanced/code-behind-and-xaml-in-wpf.md)
+- [XAML and Custom Classes for WPF](../wpf/advanced/xaml-and-custom-classes-for-wpf.md)
+- [Code-Behind and XAML in WPF](../wpf/advanced/code-behind-and-xaml-in-wpf.md)
 - [x:Name Directive](xname-directive.md)
-- [Building a WPF Application (WPF)](../framework/wpf/app-development/building-a-wpf-application-wpf.md)
+- [Building a WPF Application (WPF)](../wpf/app-development/building-a-wpf-application-wpf.md)
 - [x:ClassModifier Directive](xclassmodifier-directive.md)
