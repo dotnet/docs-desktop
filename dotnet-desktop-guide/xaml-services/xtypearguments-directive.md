@@ -3,11 +3,11 @@ title: "x:TypeArguments Directive"
 description: Learn about the x:TypeArguments Directive.
 ms.date: "03/30/2017"
 ms.custom: devdivchpfy22
-f1_keywords: 
+f1_keywords:
   - "x:TypeArguments"
   - "xTypeArguments"
   - "TypeArguments"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "x:TypeArguments attribute [XAML Services]"
   - "TypeArguments attribute in XAML [XAML Services]"
   - "XAML [XAML Services], x:TypeArguments attribute"

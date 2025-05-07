@@ -3,11 +3,11 @@ title: "x:Subclass Directive"
 description: Learn about the x:Subclass Directive.
 ms.date: "03/30/2017"
 ms.custom: devdivchpfy22
-f1_keywords: 
+f1_keywords:
   - "Subclass"
   - "xSubclass"
   - "x:Subclass"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "x:Subclass attribute [XAML Services]"
   - "XAML [XAML Services], x:Subclass attribute"
   - "Subclass attribute in XAML [XAML Services]"
@@ -59,4 +59,4 @@ When you define both `x:Class` and `x:Subclass`, you do not need to provide any 
 ## See also
 
 - [x:Class Directive](xclass-directive.md)
-- [XAML and Custom Classes for WPF](../framework/wpf/advanced/xaml-and-custom-classes-for-wpf.md)
+- [XAML and Custom Classes for WPF](../wpf/advanced/xaml-and-custom-classes-for-wpf.md)

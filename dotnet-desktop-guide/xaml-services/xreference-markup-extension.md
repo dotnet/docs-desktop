@@ -3,7 +3,7 @@ title: "x:Reference Markup Extension"
 description: Learn about the x:Reference Markup Extension.
 ms.date: "03/30/2017"
 ms.custom: devdivchpfy22
-helpviewer_keywords: 
+helpviewer_keywords:
   - "x:Reference markup extension [XAML Services]"
   - "XAML [XAML Services], x:Reference Markup Extension"
   - "Reference markup extension [XAML Services]"

@@ -3,11 +3,11 @@ title: "x:ClassModifier Directive"
 description: Learn about the x:ClassModifier Directive.
 ms.date: "03/30/2017"
 ms.custom: devdivchpfy22
-f1_keywords: 
+f1_keywords:
   - "xClassModifier"
   - "x:ClassModifier"
   - "ClassModifier"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "XAML [XAML Services], x:ClassModifier attribute"
   - "x:ClassModifier attribute [XAML Services]"
   - "ClassModifier attribute in XAML [XAML Services]"
@@ -56,7 +56,7 @@ The access level as declared in `x:ClassModifier` is still subject to interpreta
 ## See also
 
 - [x:Class Directive](xclass-directive.md)
-- [Code-Behind and XAML in WPF](../framework/wpf/advanced/code-behind-and-xaml-in-wpf.md)
+- [Code-Behind and XAML in WPF](../wpf/advanced/code-behind-and-xaml-in-wpf.md)
 - [x:FieldModifier Directive](xfieldmodifier-directive.md)
-- [Security (WPF)](../framework/wpf/security-wpf.md)
-- [Types Migrated from WPF to System.Xaml](../framework/wpf/advanced/types-migrated-from-wpf-to-system.md)
+- [Security (WPF)](../wpf/security-wpf.md)
+- [Types Migrated from WPF to System.Xaml](../wpf/advanced/types-migrated-from-wpf-to-system.md)

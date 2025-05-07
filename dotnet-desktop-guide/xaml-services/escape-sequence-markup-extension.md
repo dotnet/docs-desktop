@@ -3,9 +3,9 @@ title: "{} Escape Sequence - Markup Extension"
 description: Learn about the Escape Sequence.
 ms.date: "03/30/2017"
 ms.custom: devdivchpfy22
-f1_keywords: 
+f1_keywords:
   - "{}"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "XAML [XAML Services], quotation mark (\")"
   - "{} escape sequence [XAML Services]"
   - "XAML [XAML Services], {} escape sequence"

@@ -7,38 +7,23 @@ metadata:
   title: Desktop Guide for WPF and Windows Forms on .NET
   description: Introduction to the Desktop Guide for WPF and Windows Forms for both .NET and .NET Framework.
   ms.topic: landing-page
-  ms.product: dotnet
   author: adegeo
-  ms.author: adegeo 
-  ms.date: 04/02/2025
+  ms.author: adegeo
+  ms.date: 05/05/2025
+  ms.service: dotnet-desktop
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
 
 landingContent:
 
-- title: .NET
+- title: Windows Desktop with .NET
   linkLists:
   - linkListType: overview
     links:
-    - text: Windows Presentation Foundation (WPF)
-      url: net/wpf/index.yml?view=netdesktop-9.0&preserve-view=true
     - text: Windows Forms (WinForms)
-      url: net/winforms/index.yml?view=netdesktop-9.0&preserve-view=true
-
-- title: .NET Framework
-  linkLists:
-  - linkListType: overview
-    links:
+      url: winforms/index.yml
     - text: Windows Presentation Foundation (WPF)
-      url: framework/wpf/index.md?view=netframeworkdesktop-4.8&preserve-view=true
-    - text: Windows Forms (WinForms)
-      url: framework/winforms/index.yml?view=netframeworkdesktop-4.8&preserve-view=true
-  - linkListType: concept
-    links:
-    - text: Introduction to WPF
-      url: framework/wpf/introduction-to-wpf.md?view=netframeworkdesktop-4.8&preserve-view=true
-    - text: Introduction to WinForms
-      url: framework/winforms/windows-forms-overview.md?view=netframeworkdesktop-4.8&preserve-view=true
+      url: wpf/index.yml
 
 - title: Other desktop technologies
   linkLists:

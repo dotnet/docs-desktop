@@ -2,7 +2,7 @@
 title: "xml:space Handling in XAML"
 description: "Describes the xml:space attribute and how it affects white-space processing behavior within an object element."
 ms.date: "03/30/2017"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "XAML [XAML Services], xml:space attribute"
   - "XAML [XAML Services], white-space processing"
   - "xml:space attribute [XAML Services]"
@@ -19,7 +19,7 @@ The `xml:space` attribute is an XML-defined attribute that declares the signific
 <object xml:space="preserve" />
 ```
 
- \- or -
+\- or -
 
 ```xaml
 <object xml:space="default" />
@@ -40,4 +40,4 @@ For a complete discussion of white-space processing in XAML, see [White-space pr
 ## See also
 
 - [White-space processing in XAML](white-space-processing.md)
-- [XAML overview (WPF .NET)](../net/wpf/xaml/index.md)
+- [XAML overview (WPF .NET)](../wpf/xaml/index.md)

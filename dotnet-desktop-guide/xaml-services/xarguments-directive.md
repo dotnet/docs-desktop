@@ -2,7 +2,7 @@
 title: "x:Arguments Directive"
 description: "The x:Arguments directive packages construction arguments for non-parameterless constructor object elements in XAML."
 ms.date: "03/30/2017"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "x:Arguments directive [XAML Services]"
   - "Arguments directive in XAML [XAML Services]"
   - "XAML [XAML Services], x:Arguments directive"
@@ -108,4 +108,4 @@ switch (name) {
 ## See also
 
 - [Defining Custom Types for Use with .NET XAML Services](define-custom-types.md)
-- [XAML overview (WPF .NET)](../net/wpf/xaml/index.md)
+- [XAML overview (WPF .NET)](../wpf/xaml/index.md)
