@@ -46,7 +46,7 @@ The following XAML demonstrates using the `Employee` class as a data object. The
 1.  Replace the XAML with the following snippet:
 
     > [!IMPORTANT]
-    > The following snippet is taken from a C# project. If you're using Visual Basic, the `x:Class` should be declared without the `ArticleSample` namespace. You can see what the Visual Basic version looks like [here](https://github.com/dotnet/docs-desktop/blob/main/dotnet-desktop-guide/net/wpf/data/snippets/how-to-create-a-simple-binding/vb/EmployeeView.xaml).
+    > The following snippet is taken from a C# project. If you're using Visual Basic, the `x:Class` should be declared without the `ArticleSample` namespace. You can see what the Visual Basic version looks like at [EmployeeView.xaml](https://github.com/dotnet/docs-desktop/blob/main/dotnet-desktop-guide/wpf/data/snippets/how-to-create-a-simple-binding/vb/EmployeeView.xaml).
 
     :::code language="xaml" source="./snippets/how-to-create-a-simple-binding/csharp/EmployeeView.xaml" highlight="7-9,33-37,43":::
 
