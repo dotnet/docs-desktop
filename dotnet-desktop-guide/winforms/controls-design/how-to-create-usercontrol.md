@@ -29,9 +29,9 @@ This article teaches you how to add a user control to your project and then add 
 
 Throughout this article, the term **consumer** refers to any code that uses your user control. This includes:
 
-- **Forms** that contain your user control
-- **Other controls** that host your user control  
-- **Applications** that reference your user control library
+- **Forms** that contain your user control.
+- **Other controls** that host your user control.
+- **Applications** that reference your user control library.
 
 When you create a user control, you're building a reusable component. The consumer is whoever uses that component by placing it on a form, setting its properties, or responding to its events. The consumer doesn't need to know about the internal controls (like the TextBox and Button) that make up your user control—they only interact with the properties and events you choose to expose.
 
@@ -39,9 +39,9 @@ When you create a user control, you're building a reusable component. The consum
 
 Before adding the detailed implementation, it's helpful to understand the minimum viable code pattern for a user control. At its core, a user control needs:
 
-- **Event forwarding** - Pass events from internal controls to the consumer
-- **Property exposure** - Allow the consumer to access internal control properties
-- **Logical behavior** - Handle interactions between internal controls
+- **Event forwarding** - Pass events from internal controls to the consumer.
+- **Property exposure** - Allow the consumer to access internal control properties.
+- **Logical behavior** - Handle interactions between internal controls.
 
 The following code demonstrates these patterns. You don't need all of this code for a basic user control, but these patterns help create a professional, reusable component that integrates well with the designer and consumer applications.
 
