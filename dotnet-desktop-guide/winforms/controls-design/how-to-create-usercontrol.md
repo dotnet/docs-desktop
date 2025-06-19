@@ -35,6 +35,16 @@ Throughout this article, the term **consumer** refers to any code that uses your
 
 When you create a user control, you're building a reusable component. The consumer is whoever uses that component by placing it on a form, setting its properties, or responding to its events. The consumer doesn't need to know about the internal controls (like the TextBox and Button) that make up your user control—they only interact with the properties and events you choose to expose.
 
+## Essential code pattern for user controls
+
+Before adding the detailed implementation, it's helpful to understand the minimum viable code pattern for a user control. At its core, a user control needs:
+
+- **Event forwarding** - Pass events from internal controls to the consumer
+- **Property exposure** - Allow the consumer to access internal control properties
+- **Logical behavior** - Handle interactions between internal controls
+
+The following code demonstrates these patterns. You don't need all of this code for a basic user control, but these patterns help create a professional, reusable component that integrates well with the designer and consumer applications.
+
 ## Add a new user control
 
 After opening your Windows Forms project in Visual Studio, use the Visual Studio templates to create a user control:
@@ -101,16 +111,6 @@ The user control is made up of _constituent controls_, which are the controls yo
     :::image type="content" source="./media/how-to-create-usercontrol/example-initial-design.png" alt-text="Visual Studio with Windows Forms, showing the user control that was just designed.":::
 
 01. Press <kbd>F7</kbd> to open the code editor for the `ClearableTextBox` class.
-
-## Essential code pattern for user controls
-
-Before adding the detailed implementation, it's helpful to understand the minimum viable code pattern for a user control. At its core, a user control needs:
-
-1. **Event forwarding** - Pass events from internal controls to the consumer
-2. **Property exposure** - Allow the consumer to access internal control properties
-3. **Logical behavior** - Handle interactions between internal controls
-
-The following code demonstrates these patterns. You don't need all of this code for a basic user control, but these patterns help create a professional, reusable component that integrates well with the designer and consumer applications.
 
 01. Make the following code changes:
 
