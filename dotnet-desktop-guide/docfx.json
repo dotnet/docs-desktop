@@ -28,6 +28,11 @@
         "wpf/**/**.md": "WPF",
         "xaml-services/**/*.md": "XAML"
       },
+      "local.updatecadence": {
+        "winforms/**/**.md": "updateachrelease",
+        "wpf/**/**.md": "updateachrelease",
+        "xaml-services/**/*.md": "updateachrelease"
+      },
       "ms.subservice": {
         "winforms/**/**.md": "winforms",
         "wpf/**/**.md": "wpf",
