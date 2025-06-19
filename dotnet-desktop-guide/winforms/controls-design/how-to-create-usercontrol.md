@@ -33,7 +33,7 @@ Throughout this article, the term **consumer** refers to any code that uses your
 - **Other controls** that host your user control.
 - **Applications** that reference your user control library.
 
-When you create a user control, you're building a reusable component. The consumer is whoever uses that component by placing it on a form, setting its properties, or responding to its events. The consumer doesn't need to know about the internal controls (like the TextBox and Button) that make up your user control—they only interact with the properties and events you choose to expose.
+When you create a user control, you're building a reusable component. The consumer is whoever uses that component by placing it on a form, setting its properties, or responding to its events. The consumer doesn't need to know about the internal controls (like the `TextBox` and `Button`) that make up your user control—they only interact with the properties and events you choose to expose.
 
 ## Essential code pattern for user controls
 
