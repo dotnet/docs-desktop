@@ -35,15 +35,15 @@ Another approach is to prevent columns from being auto-generated in the first pl
 
 - Set the <xref:System.Data.DataColumn.ColumnMapping%2A> property of the data source's <xref:System.Data.DataColumn> to <xref:System.Data.MappingType.Hidden>.
 
-     ```csharp
-     // Assuming you have a DataTable with a column you want to exclude
-     dataTable.Columns["SensitiveData"].ColumnMapping = MappingType.Hidden;
-     ```
+  ```csharp
+  // Assuming you have a DataTable with a column you want to exclude
+  dataTable.Columns["SensitiveData"].ColumnMapping = MappingType.Hidden;
+  ```
 
-     ```vb
-     ' Assuming you have a DataTable with a column you want to exclude
-     dataTable.Columns("SensitiveData").ColumnMapping = MappingType.Hidden
-     ```
+  ```vb
+  ' Assuming you have a DataTable with a column you want to exclude
+  dataTable.Columns("SensitiveData").ColumnMapping = MappingType.Hidden
+  ```
 
 ## Example
 
