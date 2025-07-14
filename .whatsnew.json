@@ -15,20 +15,12 @@
       "heading": "Home"
     },
     {
-      "name": "framework/winforms",
-      "heading": "Windows Forms - .NET Framework"
+      "name": "winforms",
+      "heading": "Windows Forms"
     },
     {
-      "name": "framework/wpf",
-      "heading": "Windows Presentation Foundation - .NET Framework"
-    },
-    {
-      "name": "net/winforms",
-      "heading": "Windows Forms - .NET 5/Core"
-    },
-    {
-      "name": "net/wpf",
-      "heading": "Windows Presentation Foundation - .NET 5/Core"
+      "name": "wpf",
+      "heading": "Windows Presentation Foundation"
     }
   ]
 }
