@@ -1,254 +1,143 @@
 ---
-title: "How to: Add controls to the Toolbox"
-description: "Learn how to add controls to the Visual Studio Toolbox in Windows Forms applications for both .NET Framework and .NET, including new explicit assembly references support."
-ms.date: 04/17/2025
+title: Add controls to the Windows Forms Toolbox in Visual Studio
+description: Learn how to add custom controls to the Visual Studio Toolbox for Windows Forms projects in .NET and .NET Framework.
+author: adegeo
+ms.author: adegeo
 ms.service: dotnet-desktop
 ms.topic: how-to
-dev_langs: 
-  - "csharp"
-  - "vb"
-helpviewer_keywords:
-  - "Windows Forms, adding controls"
-  - "Toolbox [Windows Forms], adding controls"
-  - "controls [Windows Forms], adding to Toolbox"
-  - ".NET Framework, Toolbox population"
-  - ".NET, Toolbox population"
+ms.date: 08/13/2025
+ai-usage: ai-assisted
+
+#customer intent: As a Windows Forms developer, I want to add custom controls to the Visual Studio Toolbox so that I can drag and drop them onto my forms during design time.
+
 ---
 
-# How to: Add controls to the Toolbox
+# Add controls to the Windows Forms Toolbox in Visual Studio
 
-The Visual Studio **Toolbox** automatically displays controls from assemblies in your current solution. However, the way you add controls from external assemblies differs between .NET Framework and .NET projects. This article describes the different methods for populating the **Toolbox** and explains the key differences between .NET Framework and .NET approaches.
+The Windows Forms **Toolbox** in Visual Studio displays controls that you can drag and drop onto your forms during design time. The method for adding custom controls to the **Toolbox** differs between .NET Framework and modern .NET projects, and has evolved with recent Visual Studio updates.
 
-## Key differences: .NET Framework vs .NET
+This article explains the various approaches to populate the **Toolbox** with custom controls for different project types and scenarios.
 
-The approach for populating the **Toolbox** changed significantly from .NET Framework to .NET:
+## Prerequisites
 
-### .NET Framework approach
+- Visual Studio 2022 (version 17.14 or later recommended for the latest features).
+- A Windows Forms project (.NET Framework or .NET).
 
-- Direct assembly references automatically populate the **Toolbox**
-- Manual **Choose Items** dialog works with most assemblies
-- 32-bit assemblies work in Visual Studio 2019 and earlier (32-bit IDE)
-- COM and ActiveX controls are directly supported
+## Add controls from NuGet packages
 
-### .NET approach
+The recommended approach for both .NET Framework and .NET projects is to use NuGet packages that contain the custom controls. This method ensures proper design-time support, metadata, and automatically manages dependencies. NuGet packages provide the most reliable way to distribute and consume Windows Forms controls, as they follow established conventions for separating design-time and runtime assemblies.
 
-- **Toolbox** population primarily through NuGet packages
-- Project references within the same solution
-- Out-of-process designer handles cross-platform scenarios
-- Enhanced support for explicit assembly references (Visual Studio 17.14+)
+# [.NET](#tab/dotnet)
 
-## Migrating from .NET Framework to .NET
+1. Right-click your project in **Solution Explorer**.
+1. Select **Manage NuGet Packages**.
+1. Search for and install the package containing your custom controls.
+1. Build your project.
+1. Open the Windows Forms designer.
 
-When migrating from .NET Framework to .NET, you need to adjust how you populate the **Toolbox**:
+The controls from the NuGet package automatically appear in the **Toolbox** under a category named after the package or assembly.
 
-### Convert assembly references to NuGet packages
+# [.NET Framework](#tab/dotnetframework)
 
-01. **Identify external assemblies**: Review your project references for third-party controls.
-01. **Find NuGet equivalents**: Search for NuGet packages that provide the same controls.
-01. **Update project file**: Replace assembly references with NuGet package references.
-01. **Verify Toolbox population**: Rebuild the project and confirm controls appear in the **Toolbox**.
+1. Right-click your project in **Solution Explorer**.
+1. Select **Manage NuGet Packages**.
+1. Search for and install the package containing your custom controls.
+1. Build your project.
+1. Open the Windows Forms designer.
 
-### Handle legacy assemblies
+The controls from the NuGet package automatically appear in the **Toolbox** under a category named after the package or assembly.
 
-For assemblies that don't have NuGet packages:
+---
 
-01. **Check for .NET compatibility**: Verify if the assembly works with .NET.
-01. **Use explicit assembly references**: Add the assembly as a direct file reference.
-01. **Enable out-of-process designer**: For .NET Framework projects, enable the out-of-process designer if needed.
-01. **Consider alternatives**: Look for modern replacements or create wrapper NuGet packages.
+## Add controls from project references
 
-### Migration checklist
+When you have custom controls in another project within your solution, you can reference that project directly to make its controls available in the **Toolbox**. This approach is ideal for development scenarios where you're building custom controls as part of your solution and want immediate access to them during form design. Project references automatically handle build dependencies and provide full IntelliSense support.
 
-- [ ] Catalog all external control libraries in your .NET Framework project
-- [ ] Search NuGet.org for equivalent packages
-- [ ] Test controls in a new .NET project
-- [ ] Update documentation and build processes
-- [ ] Verify all design-time functionality works correctly
+1. Right-click your Windows Forms project in **Solution Explorer**.
+1. Select **Add** > **Project Reference**.
+1. Select the project containing your custom controls.
+1. Select **OK**.
+1. Build your solution.
+1. Open the Windows Forms designer.
 
-## Automatic Toolbox population
+The custom controls from the referenced project appear in the **Toolbox**.
 
-The **Toolbox** automatically populates with controls from:
+## Add controls from explicit assembly references
 
-### For all project types:
+Starting with Visual Studio 17.14, you can add controls from explicit assembly references (standalone DLL files) to the **Toolbox**, which is useful for legacy controls and migration scenarios. This feature addresses a common challenge when working with older .NET Framework controls that aren't available as NuGet packages or when migrating existing applications that rely on standalone assembly files. The out-of-process designer automatically scans these references and extracts control metadata without loading the assemblies into Visual Studio itself.
 
-- Current project references
-- Other projects in your solution
+# [.NET](#tab/dotnet)
 
-### For .NET Framework projects:
+Future Visual Studio releases will support explicit assembly references in .NET projects. Currently, use NuGet packages or project references for .NET projects.
 
-- Direct assembly references
-- COM and ActiveX components
-- Global Assembly Cache (GAC) assemblies
+# [.NET Framework](#tab/dotnetframework)
 
-### For .NET projects:
-
-- NuGet packages installed in your solution
-- Explicit assembly references (Visual Studio 17.14+)
-
-## Adding controls: .NET Framework projects
-
-### Method 1: Direct assembly references
-
-The traditional approach for .NET Framework projects:
+Visual Studio 17.14 introduced automatic **Toolbox** support for explicit assembly references in .NET Framework projects using the out-of-process designer:
 
 01. Right-click your project in **Solution Explorer**.
 01. Select **Add** > **Reference**.
-01. Browse to and select the assembly file.
-01. Controls from the assembly automatically appear in the **Toolbox**.
+01. Select **Browse** and select your assembly (DLL file).
+01. Select **OK**.
+01. Build your project.
+01. Enable the out-of-process designer if not already enabled:
+    01. Go to **Tools** > **Options** > **Windows Forms Designer**.
+    01. Set **Use the out-of-process designer** to **True**.
+01. Open the Windows Forms designer.
 
-### Method 2: Choose Items dialog
+The controls from the explicit assembly reference automatically appear in the **Toolbox**.
 
-01. Right-click the **Toolbox** and select **Choose Items**.
-01. In the **Choose Toolbox Items** dialog, browse for the assembly containing your controls.
-01. Select the controls you want to add and click **OK**.
+> [!NOTE]
+> This feature is enabled by default in Visual Studio 17.14 and later. You can toggle it via **Tools** > **Options** > **Preview Features** if needed.
 
-### Method 3: COM/ActiveX controls
+---
 
-01. Right-click the **Toolbox** and select **Choose Items**.
-01. Switch to the **COM Components** tab.
-01. Select the COM components you want to add.
-01. Controls become available in the **Toolbox**.
+### Important considerations for explicit assembly references
 
-## Adding controls: .NET projects
+- The out-of-process designer treats explicit assembly references as runtime-only.
+- Advanced design-time features (custom CodeDomSerializer, UITypeEditor, TypeConverter) might not work as expected.
+- For the best design-time experience, use NuGet packages that follow the [design-time/runtime separation model](https://github.com/microsoft/winforms-designer-extensibility/blob/main/docs/sdk/control-library-nuget-package-spec.md).
 
-### Method 1: NuGet packages (recommended)
+## Add controls manually using Choose Items
 
-The preferred approach for .NET projects:
+> [!IMPORTANT]
+> This method only works with .NET Framework projects using the in-process designer and can't load 32-bit assemblies in 64-bit Visual Studio. It isn't supported for .NET projects.
 
-01. Right-click your project in **Solution Explorer**.
-01. Select **Manage NuGet Packages**.
-01. Search for and install packages containing controls.
-01. Controls automatically appear in the **Toolbox** after installation.
+For scenarios where automatic detection doesn't work, you can manually add controls to the **Toolbox** using the Choose Items dialog. This approach gives you explicit control over which controls are added and is useful when working with assemblies that don't automatically populate the **Toolbox**. This method only works with .NET Framework projects using the in-process designer and has limitations with 32-bit assemblies.
 
-### Method 2: Project references
+1. Right-click in the **Toolbox**.
+1. Select **Choose Items**.
+1. In the **Choose Toolbox Items** dialog, select **Browse**.
+1. Navigate to and select your assembly (DLL file).
+1. Select the controls you want to add.
+1. Select **OK**.
 
-Adding a project reference automatically makes controls available:
-
-01. Right-click your project in **Solution Explorer**.
-01. Select **Add** > **Project Reference**.
-01. Choose the project containing the controls.
-01. The controls appear automatically in the **Toolbox**.
-
-### Method 3: Assembly references (limited support)
-
-01. Right-click your project in **Solution Explorer**.
-01. Select **Add** > **Reference**.
-01. Browse to and select the assembly file.
-01. Note: Controls might not appear in the **Toolbox** without additional configuration.
-
-## Why the approach changed
-
-The shift from .NET Framework to .NET introduced architectural changes that affect **Toolbox** population:
-
-### .NET Framework (in-process designer)
-
-- Visual Studio and your app run in the same process
-- Direct assembly loading is straightforward
-- All referenced assemblies are immediately available to the designer
-- 32-bit assemblies work in 32-bit Visual Studio versions
-
-### .NET (out-of-process designer)
-
-- Visual Studio (64-bit .NET Framework) runs separately from your app (.NET)
-- Cross-process communication required for designer functionality
-- NuGet packages provide structured metadata for designer integration
-- Enhanced separation between runtime and design-time assemblies
-
-This architectural change improves cross-platform support and enables .NET applications to work with the .NET Framework-based Visual Studio designer, but requires different approaches for **Toolbox** population.
-
-## Explicit assembly references (out-of-process designer)
-
-Visual Studio 17.14 Preview 3 introduces enhanced **Toolbox** support for explicit assembly references in the Windows Forms out-of-process designer. This feature addresses challenges when working with legacy .NET Framework projects.
-
-### What are explicit assembly references?
-
-Explicit assembly references are stand-alone assemblies directly referenced in your project that are not:
-
-- Pulled in through NuGet packages
-- Project references  
-- Part of the Global Assembly Cache (GAC)
-
-These assemblies often represent legacy .NET Framework components, especially 32-bit assemblies that cannot be easily upgraded to modern .NET.
-
-### Benefits of the new feature
-
-Previously, the **Toolbox** only displayed controls from NuGet packages or project references. Explicit assembly references were invisible to the **Toolbox**, creating limitations for developers working with legacy codebases.
-
-The enhanced feature provides:
-
-- Automatic detection of controls in explicit assembly references
-- Support for 32-bit assemblies in the out-of-process designer
-- Improved integration for legacy Windows Forms controls
-- Simplified migration and maintenance workflows
-
-### How it works
-
-When you launch the Windows Forms out-of-process designer for a .NET Framework project:
-
-01. The designer automatically scans all references in the solution.
-01. It identifies explicit assembly references without loading them into Visual Studio.
-01. Using Roslyn APIs, the designer analyzes metadata to extract **Toolbox** item information.
-01. Eligible controls appear in the **Toolbox** ready for drag-and-drop.
-
-### Important limitations
-
-Explicit assembly references have some limitations due to the out-of-process designer architecture:
-
-- **Runtime-only treatment**: All explicit assembly references are treated as runtime-only assemblies.
-- **Limited design-time functionality**: Advanced design-time features might not work as expected.
-- **No design-time separation**: Unlike NuGet packages that can separate runtime and design-time assemblies, explicit references cannot provide this separation.
-
-For the best experience with custom design-time features, use NuGet packages that follow the [specified layout](https://github.com/microsoft/winforms-designer-extensibility/blob/main/docs/sdk/control-library-nuget-package-spec.md) for proper runtime and design-time separation.
-
-### Configuration
-
-This feature is enabled by default starting with Visual Studio 17.14 Preview 3 for .NET Framework projects. To toggle this functionality:
-
-01. Go to **Tools** > **Options** > **Preview Features**.
-01. Find the explicit assembly references option.
-01. Enable or disable as needed.
-
-The feature is currently available for .NET Framework projects, with plans to extend support to .NET projects in future Visual Studio releases.
-
-### Requirements
-
-- Visual Studio 17.14 Preview 3 or later
-- .NET Framework projects
-- [Out-of-process designer enabled](troubleshoot-32bit.md#out-of-process-designer)
+The selected controls appear in the **Toolbox** and remain available for future use.
 
 ## Troubleshooting
 
-### Controls don't appear in Toolbox
+If controls don't appear in the **Toolbox** or don't function correctly at design time, several common issues might be the cause. The following sections help you diagnose and resolve the most frequent problems encountered when adding custom controls to the **Toolbox**.
 
-If controls don't appear in the **Toolbox**:
+### Controls don't appear in the **Toolbox**
 
-01. Verify the assembly contains public controls that inherit from <xref:System.Windows.Forms.Control> or <xref:System.ComponentModel.Component>.
-01. Rebuild your solution.
-01. Check that the assembly targets a compatible .NET Framework version.
-01. For 32-bit assemblies, ensure the [out-of-process designer](troubleshoot-32bit.md) is enabled.
+- Ensure your project builds successfully.
+- Verify the assembly contains public controls that inherit from `System.Windows.Forms.Control`.
+- Check that you're using the correct designer (in-process vs. out-of-process).
+- For .NET Framework projects with 32-bit assemblies, ensure you're using the out-of-process designer.
 
-### 32-bit assembly issues
+### Controls appear but don't work at design time
 
-For 32-bit assemblies or COM components:
+- For explicit assembly references, verify the controls don't require advanced design-time features.
+- Consider migrating to NuGet packages with proper design-time/runtime separation.
+- Check the Visual Studio Error List for any designer-related errors.
 
-01. Enable the [out-of-process designer](troubleshoot-32bit.md#use-the-out-of-process-designer).
-01. Ensure you're using Visual Studio 17.9 or later.
-01. Consider upgrading to 64-bit versions of your components if available.
+### Out-of-process designer issues
 
-### Design-time issues
+- Ensure you're using Visual Studio 17.14 or later for explicit assembly reference support.
+- Check **Tools** > **Options** > **Windows Forms Designer** settings.
+- Restart Visual Studio after changing designer settings.
 
-If controls appear in the **Toolbox** but don't work properly at design time:
+## Related content
 
-01. Check if the control library supports the out-of-process designer.
-01. Verify that any custom designers or type converters are compatible.
-01. Consider using NuGet packages with proper design-time support instead of explicit assembly references.
-
-## See also
-
-- [Windows Forms controls](../controls/index.md)
-- [The designer changes since .NET Framework](../controls-design/designer-differences-framework.md)
-- [Migrate a Windows Forms app to .NET](../migration/index.md)
-- [Choose Toolbox Items Dialog Box (Visual Studio)](/previous-versions/visualstudio/visual-studio-2010/dyca0t6t(v=vs.100))
-- [Troubleshoot 32-bit problems](troubleshoot-32bit.md)
+- [Troubleshoot designer issues with 32-bit assemblies](troubleshoot-32bit.md)
 - [Windows Forms out-of-process designer extensibility](https://github.com/microsoft/winforms-designer-extensibility)
-- [Visual Studio Toolbox support for explicit assembly references](https://devblogs.microsoft.com/visualstudio/toolbox-support-for-explicit-assembly-references-in-windows-forms-out-of-process-designer/)
+- [Create custom Windows Forms controls](/dotnet/desktop/winforms/controls/custom-control-painting-and-rendering)
