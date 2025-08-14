@@ -14,9 +14,9 @@ ai-usage: ai-assisted
 
 # Add controls to the Windows Forms Toolbox in Visual Studio
 
-The Windows Forms **Toolbox** in Visual Studio displays controls that you can drag and drop onto your forms during design time. The method for adding custom controls to the **Toolbox** differs between .NET Framework and modern .NET projects, and has evolved with recent Visual Studio updates.
+The Windows Forms **Toolbox** in Visual Studio displays controls that you can drag and drop onto your forms during design time. The method for adding custom controls to the Toolbox differs between .NET Framework and modern .NET projects, and has evolved with recent Visual Studio updates.
 
-This article explains the various approaches to populate the **Toolbox** with custom controls for different project types and scenarios.
+This article explains the various approaches to populate the Toolbox with custom controls for different project types and scenarios.
 
 ## Prerequisites
 
@@ -51,7 +51,7 @@ The controls from the NuGet package automatically appear in the **Toolbox** unde
 
 ## Add controls from project references
 
-When you have custom controls in another project within your solution, you can reference that project directly to make its controls available in the **Toolbox**. This approach is ideal for development scenarios where you're building custom controls as part of your solution and want immediate access to them during form design. Project references automatically handle build dependencies and provide full IntelliSense support.
+When you have custom controls in another project within your solution, you can reference that project directly to make its controls available in the Toolbox. This approach is ideal for development scenarios where you're building custom controls as part of your solution and want immediate access to them during form design. Project references automatically handle build dependencies and provide full IntelliSense support.
 
 1. Right-click your Windows Forms project in **Solution Explorer**.
 1. Select **Add** > **Project Reference**.
@@ -72,7 +72,7 @@ Future Visual Studio releases will support explicit assembly references in .NET 
 
 # [.NET Framework](#tab/dotnetframework)
 
-Visual Studio 17.14 introduced automatic **Toolbox** support for explicit assembly references in .NET Framework projects using the out-of-process designer:
+Visual Studio 17.14 introduced automatic Toolbox support for explicit assembly references in .NET Framework projects using the out-of-process designer:
 
 01. Right-click your project in **Solution Explorer**.
 01. Select **Add** > **Reference**.
@@ -102,7 +102,7 @@ The controls from the explicit assembly reference automatically appear in the **
 > [!IMPORTANT]
 > This method only works with .NET Framework projects using the in-process designer and can't load 32-bit assemblies in 64-bit Visual Studio. It isn't supported for .NET projects.
 
-For scenarios where automatic detection doesn't work, you can manually add controls to the **Toolbox** using the Choose Items dialog. This approach gives you explicit control over which controls are added and is useful when working with assemblies that don't automatically populate the **Toolbox**. This method only works with .NET Framework projects using the in-process designer and has limitations with 32-bit assemblies.
+For scenarios where automatic detection doesn't work, you can manually add controls to the Toolbox using the Choose Items dialog. This approach gives you explicit control over which controls are added and is useful when working with assemblies that don't automatically populate the Toolbox. This method only works with .NET Framework projects using the in-process designer and has limitations with 32-bit assemblies.
 
 1. Right-click in the **Toolbox**.
 1. Select **Choose Items**.
@@ -115,9 +115,9 @@ The selected controls appear in the **Toolbox** and remain available for future 
 
 ## Troubleshooting
 
-If controls don't appear in the **Toolbox** or don't function correctly at design time, several common issues might be the cause. The following sections help you diagnose and resolve the most frequent problems encountered when adding custom controls to the **Toolbox**.
+If controls don't appear in the Toolbox or don't function correctly at design time, several common issues might be the cause. The following sections help you diagnose and resolve the most frequent problems encountered when adding custom controls to the Toolbox.
 
-### Controls don't appear in the **Toolbox**
+### Controls don't appear in the Toolbox
 
 - Ensure your project builds successfully.
 - Verify the assembly contains public controls that inherit from `System.Windows.Forms.Control`.
