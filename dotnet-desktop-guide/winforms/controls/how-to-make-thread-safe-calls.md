@@ -3,6 +3,7 @@ title: How to make thread-safe calls to controls
 description: Learn how to implement multithreading in your app by calling cross-thread controls in a thread-safe way. If you encounter the 'cross-thread operation not valid' error, use the InvokeRequired property to detect this error. The BackgroundWorker component is also an alternative to creating new threads.
 ms.date: 06/20/2021
 ms.service: dotnet-desktop
+ai-usage: ai-assisted
 dev_langs:
   - "csharp"
   - "vb"
@@ -61,3 +62,58 @@ The example counts from 0 to 10 in the `DoWork` event, pausing for one second be
 
 :::code language="csharp" source="snippets/how-to-make-thread-safe-calls/cs/FormBackgroundWorker.cs" id="Background":::
 :::code language="vb" source="snippets/how-to-make-thread-safe-calls/vb/FormBackgroundWorker.vb" id="Background":::
+
+## Example: Use Control.InvokeAsync (.NET 9 and later)
+
+Starting with .NET 9, Windows Forms includes the <xref:System.Windows.Forms.Control.InvokeAsync%2A> method, which provides async-friendly marshaling to the UI thread. This method is particularly useful for async event handlers and eliminates many common deadlock scenarios.
+
+> [!NOTE]
+> `Control.InvokeAsync` is only available in .NET 9 and later. It is not supported in .NET Framework.
+
+### Understanding the difference: Invoke vs InvokeAsync
+
+**Control.Invoke (Sending - Blocking):**
+
+- Synchronously sends the delegate to the UI thread's message queue
+- The calling thread waits until the UI thread processes the delegate
+- Can lead to UI freezes if overused during long-running operations
+- Useful when immediate results are needed from the UI thread
+
+**Control.InvokeAsync (Posting - Non-blocking):**
+
+- Asynchronously posts the delegate to the UI thread's message queue  
+- The calling thread doesn't wait and continues its work immediately
+- Returns a `Task` that can be awaited for completion
+- Ideal for async scenarios and prevents UI thread bottlenecks
+
+### Choosing the right InvokeAsync overload
+
+`Control.InvokeAsync` provides four overloads for different scenarios:
+
+| Overload | Use Case | Example |
+|----------|----------|---------|
+| `InvokeAsync(Action)` | Sync operation, no return value | Update control properties |
+| `InvokeAsync<T>(Func<T>)` | Sync operation, with return value | Get control state |
+| `InvokeAsync(Func<CancellationToken, ValueTask>)` | Async operation, no return value | Long-running UI updates |
+| `InvokeAsync<T>(Func<CancellationToken, ValueTask<T>>)` | Async operation, with return value | Async data fetching with result |
+
+The following example demonstrates using `InvokeAsync` to safely update controls from a background thread:
+
+:::code language="csharp" source="snippets/how-to-make-thread-safe-calls/cs/InvokeAsyncExamples.cs" id="snippet_InvokeAsyncBasic":::
+:::code language="vb" source="snippets/how-to-make-thread-safe-calls/vb/InvokeAsyncExamples.vb" id="snippet_InvokeAsyncBasic":::
+
+For async operations that need to run on the UI thread, use the async overload:
+
+:::code language="csharp" source="snippets/how-to-make-thread-safe-calls/cs/InvokeAsyncExamples.cs" id="snippet_InvokeAsyncAdvanced":::
+:::code language="vb" source="snippets/how-to-make-thread-safe-calls/vb/InvokeAsyncExamples.vb" id="snippet_InvokeAsyncAdvanced":::
+
+### Advantages of InvokeAsync
+
+- **Async-friendly**: Returns a `Task` that can be awaited
+- **Deadlock prevention**: Eliminates common deadlock scenarios found with synchronous invoke patterns  
+- **Non-blocking**: Doesn't block the calling thread, improving overall application responsiveness
+- **Cancellation support**: Supports `CancellationToken` for operation cancellation
+- **Exception propagation**: Properly propagates exceptions back to the calling code
+- **Analyzer support**: .NET 9 includes analyzer warnings (WFO2001) to detect potential misuse
+
+For comprehensive guidance on async event handlers and best practices, see [Events overview](../forms/events.md#async-event-handlers).
