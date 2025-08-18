@@ -9,40 +9,39 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace project
+namespace project;
+
+public partial class Form1 : Form
 {
-    public partial class Form1 : Form
+    public Form1()
     {
-        public Form1()
-        {
-            InitializeComponent();
-        }
+        InitializeComponent();
+    }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
+    private void Form1_Load(object sender, EventArgs e)
+    {
 
-        }
+    }
 
-        private async void button1_Click(object sender, EventArgs e)
-        {
-            //var thread2 = new Thread(new ThreadStart(WriteTextUnsafe));
-            //thread2.Start();
-            await Task.Factory.StartNew(WriteTextUnsafe, new CancellationToken(false), TaskCreationOptions.None, TaskScheduler.FromCurrentSynchronizationContext());
-            await Task.Delay(6000);
-            Action de = delegate { WriteTextSafe(); };
-            textBox1.Invoke(de);
-        }
+    private async void button1_Click(object sender, EventArgs e)
+    {
+        //var thread2 = new Thread(new ThreadStart(WriteTextUnsafe));
+        //thread2.Start();
+        await Task.Factory.StartNew(WriteTextUnsafe, new CancellationToken(false), TaskCreationOptions.None, TaskScheduler.FromCurrentSynchronizationContext());
+        await Task.Delay(6000);
+        Action de = delegate { WriteTextSafe(); };
+        textBox1.Invoke(de);
+    }
 
-        private async void WriteTextUnsafe()
-        {
-            textBox1.Text = "This text was set unsafely.";
-            await Task.Delay(4000);
-            textBox1.Text = "This text was set unsafely twice!";
-        }
+    private async void WriteTextUnsafe()
+    {
+        textBox1.Text = "This text was set unsafely.";
+        await Task.Delay(4000);
+        textBox1.Text = "This text was set unsafely twice!";
+    }
 
-        private void WriteTextSafe()
-        {
-            textBox1.Text = "This text was set safely.";
-        }
+    private void WriteTextSafe()
+    {
+        textBox1.Text = "This text was set safely.";
     }
 }

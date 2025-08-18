@@ -8,10 +8,11 @@ Namespace AsyncEventHandlersExample
     Public Partial Class ExampleForm
         Inherits Form
 
-        Private downloadButton As Button
-        Private processButton As Button
-        Private complexButton As Button
-        Private badButton As Button
+        Private WithEvents downloadButton As Button
+        Private WithEvents processButton As Button
+        Private WithEvents complexButton As Button
+        Private WithEvents badButton As Button
+        Private WithEvents legacyButton As Button
         Private resultTextBox As TextBox
         Private statusLabel As Label
         Private progressBar As ProgressBar
@@ -62,10 +63,13 @@ Namespace AsyncEventHandlersExample
                     ' Simulate work
                     Await Task.Delay(200)
                     
+                    ' Create local variable to avoid closure issues
+                    Dim currentProgress As Integer = i
+                    
                     ' Update UI safely from background thread
                     Await progressBar.InvokeAsync(Sub()
-                        progressBar.Value = i
-                        statusLabel.Text = $"Progress: {i}%"
+                        progressBar.Value = currentProgress
+                        statusLabel.Text = $"Progress: {currentProgress}%"
                     End Sub)
                 Next
             End Function)
@@ -76,18 +80,20 @@ Namespace AsyncEventHandlersExample
 
         ' <snippet_InvokeAsyncUIThread>
         Private Async Sub complexButton_Click(sender As Object, e As EventArgs) Handles complexButton.Click
-            Await Me.InvokeAsync(Async Function(cancellationToken)
-                ' This runs on UI thread but doesn't block it
+            ' For VB.NET, we use a simpler approach since async lambdas with CancellationToken are more complex
+            Await Me.InvokeAsync(Sub()
+                ' This runs on UI thread
                 statusLabel.Text = "Starting complex operation..."
-                
-                Dim result As String = Await SomeAsyncApiCall()
-                
-                ' Update UI directly since we're already on UI thread
+            End Sub)
+            
+            ' Perform the async operation
+            Dim result As String = Await SomeAsyncApiCall()
+            
+            ' Update UI after completion
+            Await Me.InvokeAsync(Sub()
                 resultTextBox.Text = result
                 statusLabel.Text = "Operation completed"
-                
-                Return Nothing
-            End Function)
+            End Sub)
         End Sub
 
         Private Async Function SomeAsyncApiCall() As Task(Of String)

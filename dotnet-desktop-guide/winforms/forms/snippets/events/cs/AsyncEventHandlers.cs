@@ -73,11 +73,14 @@ namespace AsyncEventHandlersExample
                     // Simulate work
                     await Task.Delay(200);
                     
+                    // Create local variable to avoid closure issues
+                    int currentProgress = i;
+                    
                     // Update UI safely from background thread
                     await progressBar.InvokeAsync(() =>
                     {
-                        progressBar.Value = i;
-                        statusLabel.Text = $"Progress: {i}%";
+                        progressBar.Value = currentProgress;
+                        statusLabel.Text = $"Progress: {currentProgress}%";
                     });
                 }
             });

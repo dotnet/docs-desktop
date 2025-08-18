@@ -8,24 +8,23 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace project
+namespace project;
+
+public partial class FormBad : Form
 {
-    public partial class FormBad : Form
+    public FormBad()
     {
-        public FormBad()
-        {
-            InitializeComponent();
-        }
-
-        //<Bad>
-        private void button1_Click(object sender, EventArgs e)
-        {
-            var thread2 = new System.Threading.Thread(WriteTextUnsafe);
-            thread2.Start();
-        }
-
-        private void WriteTextUnsafe() =>
-            textBox1.Text = "This text was set unsafely.";
-        //</Bad>
+        InitializeComponent();
     }
+
+    //<Bad>
+    private void button1_Click(object sender, EventArgs e)
+    {
+        System.Threading.Thread thread2 = new(WriteTextUnsafe);
+        thread2.Start();
+    }
+
+    private void WriteTextUnsafe() =>
+        textBox1.Text = "This text was set unsafely.";
+    //</Bad>
 }
