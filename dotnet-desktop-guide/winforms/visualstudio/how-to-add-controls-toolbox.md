@@ -27,8 +27,6 @@ This article explains the various approaches to populate the Toolbox with custom
 
 The recommended approach for both .NET Framework and .NET projects is to use NuGet packages that contain the custom controls. This method ensures proper design-time support, metadata, and automatically manages dependencies. NuGet packages provide the most reliable way to distribute and consume Windows Forms controls, as they follow established conventions for separating design-time and runtime assemblies.
 
-# [.NET](#tab/dotnet)
-
 1. Right-click your project in **Solution Explorer**.
 1. Select **Manage NuGet Packages**.
 1. Search for and install the package containing your custom controls.
@@ -36,18 +34,6 @@ The recommended approach for both .NET Framework and .NET projects is to use NuG
 1. Open the Windows Forms designer.
 
 The controls from the NuGet package automatically appear in the **Toolbox** under a category named after the package or assembly.
-
-# [.NET Framework](#tab/dotnetframework)
-
-1. Right-click your project in **Solution Explorer**.
-1. Select **Manage NuGet Packages**.
-1. Search for and install the package containing your custom controls.
-1. Build your project.
-1. Open the Windows Forms designer.
-
-The controls from the NuGet package automatically appear in the **Toolbox** under a category named after the package or assembly.
-
----
 
 ## Add controls from project references
 
@@ -68,7 +54,7 @@ Starting with Visual Studio 17.14, you can add controls from explicit assembly r
 
 # [.NET](#tab/dotnet)
 
-Future Visual Studio releases will support explicit assembly references in .NET projects. Currently, use NuGet packages or project references for .NET projects.
+Visual Studio doesn't support explicit assembly references in .NET projects. Alternatively, use [NuGet packages](#add-controls-from-nuget-packages) or [project references](#add-controls-from-project-references).
 
 # [.NET Framework](#tab/dotnetframework)
 
@@ -120,7 +106,7 @@ If controls don't appear in the Toolbox or don't function correctly at design ti
 ### Controls don't appear in the Toolbox
 
 - Ensure your project builds successfully.
-- Verify the assembly contains public controls that inherit from `System.Windows.Forms.Control`.
+- Verify the assembly contains public controls that inherit from <xref:System.Windows.Forms.Control>.
 - Check that you're using the correct designer (in-process vs. out-of-process).
 - For .NET Framework projects with 32-bit assemblies, ensure you're using the out-of-process designer.
 
