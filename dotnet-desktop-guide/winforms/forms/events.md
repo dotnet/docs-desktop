@@ -1,7 +1,7 @@
 ---
 title: "Events Overview"
 description: "A brief overview about events with .NET Windows Forms."
-ms.date: 04/02/2025
+ms.date: 08/18/2025
 ms.service: dotnet-desktop
 ms.topic: overview
 ai-usage: ai-assisted
@@ -73,7 +73,7 @@ Modern applications often need to perform asynchronous operations in response to
 
 ### Basic async event handler pattern
 
-Event handlers can be declared with the `async` modifier and use `await` for asynchronous operations. Since event handlers must return `void`, they are one of the rare acceptable uses of `async void`:
+Event handlers can be declared with the `async` (`Async` in Visual Basic) modifier and use `await` (`Await` in Visual Basic) for asynchronous operations. Since event handlers must return `void` (or be declared as a `Sub` in Visual Basic), they are one of the rare acceptable uses of `async void` (or `Async Sub` in Visual Basic):
 
 :::code language="csharp" source="snippets/events/cs/AsyncEventHandlers.cs" id="snippet_BasicAsyncEventHandler":::
 :::code language="vb" source="snippets/events/vb/AsyncEventHandlers.vb" id="snippet_BasicAsyncEventHandler":::
@@ -91,13 +91,13 @@ The following code demonstrates a common anti-pattern that causes deadlocks:
 :::code language="csharp" source="snippets/events/cs/AsyncEventHandlers.cs" id="snippet_DeadlockAntiPattern":::
 :::code language="vb" source="snippets/events/vb/AsyncEventHandlers.vb" id="snippet_DeadlockAntiPattern":::
 
-**Why this causes deadlocks:**
+This causes a deadlock for the following reasons:
 
-1. The UI thread calls the async method and blocks waiting for the result
-2. The async method captures the UI thread's `SynchronizationContext`
-3. When the async operation completes, it tries to continue on the captured UI thread
-4. The UI thread is blocked waiting for the operation to complete
-5. Deadlock occurs because neither operation can proceed
+- The UI thread calls the async method and blocks waiting for the result.
+- The async method captures the UI thread's `SynchronizationContext`.
+- When the async operation completes, it tries to continue on the captured UI thread.
+- The UI thread is blocked waiting for the operation to complete.
+- Deadlock occurs because neither operation can proceed.
 
 ### Cross-thread operations
 
@@ -105,23 +105,14 @@ When you need to update UI controls from background threads within async operati
 
 # [.NET](#tab/dotnet)
 
-.NET 9 introduced <xref:System.Windows.Forms.Control.InvokeAsync%2A>, which provides async-friendly marshaling to the UI thread. Unlike `Control.Invoke` which **sends** (blocks the calling thread), `InvokeAsync` **posts** (non-blocking) to the UI thread's message queue.
+.NET 9 introduced <xref:System.Windows.Forms.Control.InvokeAsync%2A?displayProperty=nameWithType>, which provides async-friendly marshaling to the UI thread. Unlike `Control.Invoke` which **sends** (blocks the calling thread), `Control.InvokeAsync` **posts** (non-blocking) to the UI thread's message queue. For more information about `Control.InvokeAsync`, see [How to make thread-safe calls to controls](../controls/how-to-make-thread-safe-calls.md#).
 
 **Key advantages of InvokeAsync:**
 
-- **Non-blocking**: Returns immediately, allowing the calling thread to continue
-- **Async-friendly**: Returns a `Task` that can be awaited
-- **Exception propagation**: Properly propagates exceptions back to the calling code
-- **Cancellation support**: Supports `CancellationToken` for operation cancellation
-
-**Choosing the right overload:**
-
-| Scenario | Overload | Example |
-|----------|----------|---------|
-| Sync operation, no return value | `InvokeAsync(Action)` | `await control.InvokeAsync(() => label.Text = "Done")` |
-| Sync operation, with return value | `InvokeAsync<T>(Func<T>)` | `int count = await control.InvokeAsync(() => listBox.Items.Count)` |
-| Async operation, no return value | `InvokeAsync(Func<CancellationToken, ValueTask>)` | `await control.InvokeAsync(async ct => await UpdateUIAsync())` |
-| Async operation, with return value | `InvokeAsync<T>(Func<CancellationToken, ValueTask<T>>)` | `var result = await control.InvokeAsync(async ct => await ComputeAsync())` |
+- **Non-blocking**: Returns immediately, allowing the calling thread to continue.
+- **Async-friendly**: Returns a `Task` that can be awaited.
+- **Exception propagation**: Properly propagates exceptions back to the calling code.
+- **Cancellation support**: Supports `CancellationToken` for operation cancellation.
 
 :::code language="csharp" source="snippets/events/cs/AsyncEventHandlers.cs" id="snippet_InvokeAsyncNet9":::
 :::code language="vb" source="snippets/events/vb/AsyncEventHandlers.vb" id="snippet_InvokeAsyncNet9":::
@@ -145,24 +136,12 @@ For applications targeting .NET Framework, use traditional patterns with proper 
 
 ### Best practices
 
-- **Use async/await consistently**: Don't mix async patterns with blocking calls
-- **Handle exceptions**: Always wrap async operations in try-catch blocks in `async void` event handlers
-- **Provide user feedback**: Update the UI to show operation progress or status
-- **Disable controls during operations**: Prevent users from starting multiple operations
-- **Use CancellationToken**: Support operation cancellation for long-running tasks
-- **Consider ConfigureAwait(false)**: Use in library code to avoid capturing the UI context when not needed
-
-### Additional async APIs (.NET 9)
-
-.NET 9 also introduces experimental async APIs for forms and dialogs:
-
-- **Form.ShowAsync()** and **Form.ShowDialogAsync()**: Show forms asynchronously
-- **TaskDialog.ShowDialogAsync()**: Display task dialogs asynchronously
-
-> [!NOTE]
-> These APIs are experimental and require suppressing compiler warning WFO5002. Add `<NoWarn>$(NoWarn);WFO5002</NoWarn>` to your project file to use them.
-
-For more detailed information about thread-safe operations in Windows Forms, see [How to make thread-safe calls to controls](../controls/how-to-make-thread-safe-calls.md).
+- **Use async/await consistently**: Don't mix async patterns with blocking calls.
+- **Handle exceptions**: Always wrap async operations in try-catch blocks in `async void` event handlers.
+- **Provide user feedback**: Update the UI to show operation progress or status.
+- **Disable controls during operations**: Prevent users from starting multiple operations.
+- **Use CancellationToken**: Support operation cancellation for long-running tasks.
+- **Consider ConfigureAwait(false)**: Use in library code to avoid capturing the UI context when not needed.
 
 ## Related content
 
