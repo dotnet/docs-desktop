@@ -85,13 +85,13 @@ Starting with .NET 9, Windows Forms includes the <xref:System.Windows.Forms.Cont
 
 - Synchronously sends the delegate to the UI thread's message queue.
 - The calling thread waits until the UI thread processes the delegate.
-- Can lead to UI freezes, when the delegate, which was marshalled to the message queue, is itself waiting for a certain message to arrive (dead lock).
-- Useful when already provided results are just needed to be picked-up from the UI thread (e.g. reading a control's property), or when a control does quickly need to be updated (updating just the Text properties of a handful of controls).
+- Can lead to UI freezes when the delegate marshalled to the message queue is itself waiting for a message to arrive (deadlock).
+- Useful when you have results ready to display on the UI thread, for example: disabling a button or setting the text of a control.
 
 **Control.InvokeAsync (Posting - Non-blocking):**
 
-- Asynchronously posts the delegate to the UI thread's message queue.
-- Rather than waiting for the Invoke to return in a blocking way, the calling thread schedules just a call-back, but returns immediately. Although the code flow seems to be waiting at the `await` - the calling thread remains responsive at all times, and the code flow continues automatically through that internally scheduled callback mechanism.
+- Asynchronously posts the delegate to the UI thread's message queue instead of waiting on the invoke to finish.
+- Returns immediately without blocking the calling thread.
 - Returns a `Task` that can be awaited for completion.
 - Ideal for async scenarios and prevents UI thread bottlenecks.
 
