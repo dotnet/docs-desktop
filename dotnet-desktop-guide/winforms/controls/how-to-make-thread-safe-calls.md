@@ -106,6 +106,8 @@ Starting with .NET 9, Windows Forms includes the <xref:System.Windows.Forms.Cont
 | [`InvokeAsync(Func<CancellationToken, ValueTask>)`][invoke_func_value]               | Async operation, no return value.*   | Long-running UI updates.         |
 | [`InvokeAsync<T>(Func<CancellationToken, ValueTask<T>>)`][invoke1_func_value_return] | Async operation, with return value.* | Async data fetching with result. |
 
+*Visual Basic doesn't support using awaiting a <xref:System.Threading.Tasks.ValueTask>.
+
 The following example demonstrates using `InvokeAsync` to safely update controls from a background thread:
 
 :::code language="csharp" source="snippets/how-to-make-thread-safe-calls/cs/InvokeAsyncExamples.cs" id="snippet_InvokeAsyncBasic":::
