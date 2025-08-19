@@ -99,12 +99,12 @@ Starting with .NET 9, Windows Forms includes the <xref:System.Windows.Forms.Cont
 
 `Control.InvokeAsync` provides four overloads for different scenarios:
 
-| Overload                                                | Use Case                           | Example                         |
-|---------------------------------------------------------|------------------------------------|---------------------------------|
-| [`InvokeAsync(Action)`][invoke1]                                   | Sync operation, no return value.    | Update control properties.       |
-| [`InvokeAsync<T>(Func<T>)`](xref:System.Windows.Forms.Control.InvokeAsync``1(System.Func{``0},System.Threading.CancellationToken))                               | Sync operation, with return value.  | Get control state.               |
-| [`InvokeAsync(Func<CancellationToken, ValueTask>)`](xref:System.Windows.Forms.Control.InvokeAsync(System.Func{System.Threading.CancellationToken,System.Threading.Tasks.ValueTask},System.Threading.CancellationToken))       | Async operation, no return value.*   | Long-running UI updates.         |
-| [`InvokeAsync<T>(Func<CancellationToken, ValueTask<T>>)`](xref:System.Windows.Forms.Control.InvokeAsync``1(System.Func{System.Threading.CancellationToken,System.Threading.Tasks.ValueTask{``0}},System.Threading.CancellationToken)) | Async operation, with return value.* | Async data fetching with result. |
+| Overload                                                                             | Use Case                             | Example                          |
+|--------------------------------------------------------------------------------------|--------------------------------------|----------------------------------|
+| [`InvokeAsync(Action)`][invoke_action]                                               | Sync operation, no return value.     | Update control properties.       |
+| [`InvokeAsync<T>(Func<T>)`][invoke_func]                                             | Sync operation, with return value.   | Get control state.               |
+| [`InvokeAsync(Func<CancellationToken, ValueTask>)`][invoke_func_value]               | Async operation, no return value.*   | Long-running UI updates.         |
+| [`InvokeAsync<T>(Func<CancellationToken, ValueTask<T>>)`][invoke1_func_value_return] | Async operation, with return value.* | Async data fetching with result. |
 
 The following example demonstrates using `InvokeAsync` to safely update controls from a background thread:
 
@@ -124,4 +124,7 @@ The method supports cancellation through `CancellationToken`, so you can cancel 
 
 For comprehensive guidance on async event handlers and best practices, see [Events overview](../forms/events.md#async-event-handlers).
 
-[invoke1]: xref:System.Windows.Forms.Control.InvokeAsync(System.Action,System.Threading.CancellationToken)
+[invoke_action]: xref:System.Windows.Forms.Control.InvokeAsync(System.Action,System.Threading.CancellationToken)
+[invoke_func]: xref:System.Windows.Forms.Control.InvokeAsync``1(System.Func{``0},System.Threading.CancellationToken)
+[invoke_func_value]: xref:System.Windows.Forms.Control.InvokeAsync(System.Func{System.Threading.CancellationToken,System.Threading.Tasks.ValueTask},System.Threading.CancellationToken)
+[invoke1_func_value_return]: xref:System.Windows.Forms.Control.InvokeAsync``1(System.Func{System.Threading.CancellationToken,System.Threading.Tasks.ValueTask{``0}},System.Threading.CancellationToken)
