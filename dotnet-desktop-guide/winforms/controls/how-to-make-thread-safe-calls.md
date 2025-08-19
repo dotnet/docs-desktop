@@ -91,7 +91,7 @@ Starting with .NET 9, Windows Forms includes the <xref:System.Windows.Forms.Cont
 **Control.InvokeAsync (Posting - Non-blocking):**
 
 - Asynchronously posts the delegate to the UI thread's message queue.
-- The calling thread doesn't wait and continues its work immediately.
+- Rather than waiting for the Invoke to return in a blocking way, the calling thread schedules just a call-back, but returns immediately. Although the code flow seems to be waiting at the `await` - the calling thread remains responsive at all times, and the code flow continues automatically through that internally scheduled callback mechanism.
 - Returns a `Task` that can be awaited for completion.
 - Ideal for async scenarios and prevents UI thread bottlenecks.
 
