@@ -120,7 +120,7 @@ For async operations that need to run on the UI thread, use the async overload:
 
 ### Advantages of InvokeAsync
 
-`Control.InvokeAsync` has several advantages over the older `Control.Invoke` method. It returns a `Task` that you can await, making it work well with async and await code. It also prevents common deadlock problems that can happen when mixing async code with synchronous invoke calls. Unlike `Control.Invoke`, the `InvokeAsync` method doesn't block your background thread, so your app stays more responsive.
+`Control.InvokeAsync` has several advantages over the older `Control.Invoke` method. It returns a `Task` that you can await, making it work well with async and await code. It also prevents common deadlock problems that can happen when mixing async code with synchronous invoke calls. Unlike `Control.Invoke`, the `InvokeAsync` method doesn't block the calling thread, which keeps your apps responsive and avoids hangs.
 
 The method supports cancellation through `CancellationToken`, so you can cancel operations when needed. It also handles exceptions properly, passing them back to your code so you can deal with errors appropriately. .NET 9 includes compiler warnings ([WFO2001](/dotnet/desktop/winforms/compiler-messages/wfo2001)) that help you use the method correctly.
 
