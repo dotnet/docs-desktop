@@ -36,7 +36,11 @@ The Visual Studio debugger detects these unsafe thread calls by raising an <xref
 
 ## Safe cross-thread calls
 
-The following code examples demonstrate three ways to safely call a Windows Forms control from a thread that didn't create it:
+The following code examples demonstrate three ways to ensure that handling a WinForms control although initiates from a thread/task which did not create the control, is safely executed.
+
+**Note:** WinForms applications follow a strict contract like almost all other Win32 and even WPF Applications: all controls must be created and accessed only from the same thread. Why is this important? Because Windows itself needs a single, dedicated thread to deliver input and system messages to your application, or in other words: everything which is related to the _User Interface_. Whenever the Windows Window Manager detects something relevant to your app —such as a key press, a mouse click on one of your windows, or a resize request — it routes that information to the thread that created and therefore owns your controls.
+
+Your application’s most central responsibility is to keep that thread running a continuous loop. This loop retrieves messages from the message queue which Windows associated with that thread when yourn app started, and translates them into actionable events like `Button.Click`. That's why we call that loop the _Message Loop_. And that's why we call the thread, which runs the loop and which Windows knows to send the messages to, the _UI-Thread_.
 
 - [Example: Use the Control.Invoke method](#example-use-the-controlinvoke-method):
 
@@ -63,7 +67,9 @@ For more information on how `Invoke` differs from `InvokeAsync`, see [Understand
 
 ## Example: Use a BackgroundWorker
 
-An easy way to implement multithreading is with the <xref:System.ComponentModel.BackgroundWorker?displayProperty=nameWithType> component, which uses an event-driven model. The background thread raises the <xref:System.ComponentModel.BackgroundWorker.DoWork?displayProperty=nameWithType> event, which doesn't interact with the main thread. The main thread runs the <xref:System.ComponentModel.BackgroundWorker.ProgressChanged?displayProperty=nameWithType> and <xref:System.ComponentModel.BackgroundWorker.RunWorkerCompleted?displayProperty=nameWithType> event handlers, which can call the main thread's controls.
+An easy way to implement multi-threading scenarios while guarateeng the access to the control form only the UI-Thread is with the <xref:System.ComponentModel.BackgroundWorker?displayProperty=nameWithType> component, which uses an event-driven model. The background thread raises the <xref:System.ComponentModel.BackgroundWorker.DoWork?displayProperty=nameWithType> event, which doesn't interact with the main thread. The main thread runs the <xref:System.ComponentModel.BackgroundWorker.ProgressChanged?displayProperty=nameWithType> and <xref:System.ComponentModel.BackgroundWorker.RunWorkerCompleted?displayProperty=nameWithType> event handlers, which can call the main thread's controls.
+
+**Note:** Using this component is no longer the recommended way to address asynchronous scenarios in WinForms application, but we keep supporting this approach for backwards compatibility reasons and have no plans to phase out this component. The reason is that the background worker takes _just_ care of offloading processor workload of the UI-Thread to another thread, but does not address other asynchronous scenarios, like writing a long file to an SSD or retrieving a stream of data over the network. In both cases there is a good chance that the processor is not even doing the actual job. Using async methods with `await` makes sure that you are applying the preferred way to invoke a method asynchronously - and that is something that the background worker component just cannot do. If you need to explicitly offload processor workload, simply use `Task.Run` to create and start a new Task, which you then can await like any other asynchronous operation.
 
 To make a thread-safe call by using <xref:System.ComponentModel.BackgroundWorker>, handle the <xref:System.ComponentModel.BackgroundWorker.DoWork> event. There are two events the background worker uses to report status: <xref:System.ComponentModel.BackgroundWorker.ProgressChanged> and <xref:System.ComponentModel.BackgroundWorker.RunWorkerCompleted>. The `ProgressChanged` event is used to communicate status updates to the main thread, and the `RunWorkerCompleted` event is used to signal that the background worker has completed its work. To start the background thread, call <xref:System.ComponentModel.BackgroundWorker.RunWorkerAsync%2A?displayProperty=nameWithType>.
 
