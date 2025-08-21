@@ -36,9 +36,9 @@ This event model uses *delegates* to bind events to the methods that are used to
 
 Delegates can be bound to a single method or to multiple methods, referred to as multicasting. When creating a delegate for an event, you typically create a multicast event. A rare exception might be an event that results in a specific procedure (such as displaying a dialog box) that wouldn't logically repeat multiple times per event. For information about how to create a multicast delegate, see [How to combine delegates (Multicast Delegates)](/dotnet/csharp/programming-guide/delegates/how-to-combine-delegates-multicast-delegates).
 
-A multicast delegate maintains an invocation list of the methods it's bound to. The multicast delegate supports a <xref:System.Delegate.Combine%2A> method to add a method to the invocation list and a <xref:System.Delegate.Remove%2A> method to remove it.
+A multicast delegate maintains an invocation list of the methods bound to it. The multicast delegate supports a <xref:System.Delegate.Combine%2A> method to add a method to the invocation list and a <xref:System.Delegate.Remove%2A> method to remove it.
 
-When an event is recorded by the application, the control raises the event by invoking the delegate for that event. The delegate in turn calls the bound method. In the most common case (a multicast delegate), the delegate calls each bound method in the invocation list in turn, which provides a one-to-many notification. This strategy means that the control doesn't need to maintain a list of target objects for event notification—the delegate handles all registration and notification.
+When an application records an event, the control raises the event by invoking the delegate for that event. The delegate in turn calls the bound method. In the most common case (a multicast delegate), the delegate calls each bound method in the invocation list in turn, which provides a one-to-many notification. This strategy means that the control doesn't need to maintain a list of target objects for event notification—the delegate handles all registration and notification.
 
 Delegates also enable multiple events to be bound to the same method, allowing a many-to-one notification. For example, a button-click event and a menu-command–click event can both invoke the same delegate, which then calls a single method to handle these separate events the same way.
 
@@ -73,13 +73,13 @@ Modern applications often need to perform asynchronous operations in response to
 
 ### Basic async event handler pattern
 
-Event handlers can be declared with the `async` (`Async` in Visual Basic) modifier and use `await` (`Await` in Visual Basic) for asynchronous operations. Since event handlers must return `void` (or be declared as a `Sub` in Visual Basic), they are one of the rare acceptable uses of `async void` (or `Async Sub` in Visual Basic):
+Event handlers can be declared with the `async` (`Async` in Visual Basic) modifier and use `await` (`Await` in Visual Basic) for asynchronous operations. Since event handlers must return `void` (or be declared as a `Sub` in Visual Basic), they're one of the rare acceptable uses of `async void` (or `Async Sub` in Visual Basic):
 
 :::code language="csharp" source="snippets/events/cs/FormAsyncEventHandlers.cs" id="snippet_BasicAsyncEventHandler":::
 :::code language="vb" source="snippets/events/vb/FormAsyncEventHandlers.vb" id="snippet_BasicAsyncEventHandler":::
 
 > [!IMPORTANT]
-> While `async void` is generally discouraged, it's necessary for event handlers (and event handler-like code, such as `Control.OnClick`) since they cannot return `Task`. Always wrap awaited operations in `try-catch` blocks to handle exceptions properly, as shown in the previous example.
+> While `async void` is discouraged, it's necessary for event handlers (and event handler-like code, such as `Control.OnClick`) since they can't return `Task`. Always wrap awaited operations in `try-catch` blocks to handle exceptions properly, as shown in the previous example.
 
 ### Common pitfalls and deadlocks
 
