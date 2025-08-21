@@ -4,7 +4,9 @@ Imports System.Threading
 Imports System.Threading.Tasks
 Imports System.Windows.Forms
 
-Partial Public Class ExampleForm
+Imports System.Runtime.CompilerServices
+
+Partial Public Class FormAsyncEventHandlers
     Inherits Form
 
     Private WithEvents downloadButton As Button
@@ -12,7 +14,7 @@ Partial Public Class ExampleForm
     Private WithEvents complexButton As Button
     Private WithEvents badButton As Button
     Private WithEvents legacyButton As Button
-    Private resultTextBox As TextBox
+    Private loggingTextBox As TextBox
     Private statusLabel As Label
     Private progressBar As ProgressBar
 
@@ -22,7 +24,7 @@ Partial Public Class ExampleForm
         processButton = New Button With {.Text = "Process Data"}
         complexButton = New Button With {.Text = "Complex Operation"}
         badButton = New Button With {.Text = "Bad Example (Deadlock)"}
-        resultTextBox = New TextBox With {.Multiline = True, .Width = 300, .Height = 200}
+        loggingTextBox = New TextBox With {.Multiline = True, .Width = 300, .Height = 200}
         statusLabel = New Label With {.Text = "Status: Ready"}
         progressBar = New ProgressBar With {.Width = 300}
 
@@ -51,13 +53,13 @@ Partial Public Class ExampleForm
         progressBar.Width = downloadButton.Width
 
         'Result text box below progress bar.
-        resultTextBox.Location = New System.Drawing.Point(Margin, progressBar.Bottom + spacing)
+        loggingTextBox.Location = New System.Drawing.Point(Margin, progressBar.Bottom + spacing)
 
         Controls.Add(downloadButton)
         Controls.Add(processButton)
         Controls.Add(complexButton)
         Controls.Add(badButton)
-        Controls.Add(resultTextBox)
+        Controls.Add(loggingTextBox)
         Controls.Add(statusLabel)
         Controls.Add(progressBar)
     End Sub
@@ -72,7 +74,7 @@ Partial Public Class ExampleForm
                 Dim content As String = Await httpClient.GetStringAsync("https://github.com/dotnet/docs/raw/refs/heads/main/README.md")
 
                 ' Update UI with the result
-                resultTextBox.Text = content
+                loggingTextBox.Text = content
                 statusLabel.Text = "Download complete"
             End Using
         Catch ex As Exception
@@ -89,7 +91,7 @@ Partial Public Class ExampleForm
         Try
             ' This blocks the UI thread and causes a deadlock
             Dim content As String = DownloadPageContentAsync().GetAwaiter().GetResult()
-            resultTextBox.Text = content
+            loggingTextBox.Text = content
         Catch ex As Exception
             MessageBox.Show($"Error: {ex.Message}")
         End Try
@@ -129,25 +131,46 @@ Partial Public Class ExampleForm
 
     ' <snippet_InvokeAsyncUIThread>
     Private Async Sub complexButton_Click(sender As Object, e As EventArgs) Handles complexButton.Click
-        ' For VB.NET, we use a simpler approach since async lambdas with CancellationToken are more complex
-        Await Me.InvokeAsync(Sub()
-                                 ' This runs on UI thread
-                                 statusLabel.Text = "Starting complex operation..."
-                             End Sub)
+        'Convert the method to enable the extension method on the type
+        Dim method = DirectCast(AddressOf ComplexButtonClickLogic,
+                                Func(Of CancellationToken, Task))
 
-        ' Perform the async operation
-        Dim result As String = Await SomeAsyncApiCall()
-
-        ' Update UI after completion
-        Await Me.InvokeAsync(Sub()
-                                 resultTextBox.Text = result
-                                 statusLabel.Text = "Operation completed"
-                             End Sub)
+        'Invoke the method asynchronously on the UI thread
+        Await Me.InvokeAsync(method.AsValueTask())
     End Sub
 
-    Private Async Function SomeAsyncApiCall() As Task(Of String)
-        Using httpClient As New HttpClient()
-            Return Await httpClient.GetStringAsync("https://github.com/dotnet/docs/raw/refs/heads/main/README.md")
+    Private Async Function ComplexButtonClickLogic(token As CancellationToken) As Task
+        ' This runs on UI thread but doesn't block it
+        statusLabel.Text = "Starting complex operation..."
+
+        ' Dispatch and run on a new thread
+        Await Task.WhenAll(Task.Run(AddressOf SomeApiCallAsync),
+                           Task.Run(AddressOf SomeApiCallAsync),
+                           Task.Run(AddressOf SomeApiCallAsync))
+
+        ' Update UI directly since we're already on UI thread
+        statusLabel.Text = "Operation completed"
+    End Function
+
+    Private Async Function SomeApiCallAsync() As Task
+        Using client As New HttpClient()
+
+            ' Simulate random network delay
+            Await Task.Delay(Random.Shared.Next(500, 2500))
+
+            ' Do I/O asynchronously
+            Dim result As String = Await client.GetStringAsync("https://github.com/dotnet/docs/raw/refs/heads/main/README.md")
+
+            ' Marshal back to UI thread
+            ' Extra work here in VB to handle ValueTask conversion
+            Await Me.InvokeAsync(DirectCast(
+                    Async Function(cancelToken As CancellationToken) As Task
+                        loggingTextBox.Text &= $"{Environment.NewLine}Operation finished at: {DateTime.Now:HH:mm:ss.fff}"
+                    End Function,
+                Func(Of CancellationToken, Task)).AsValueTask() 'Extension method to convert Task
+            )
+
+            ' Do more Async I/O ...
         End Using
     End Function
     ' </snippet_InvokeAsyncUIThread>
@@ -164,7 +187,7 @@ Partial Public Class ExampleForm
 
                                ' Marshal back to UI thread
                                Me.Invoke(New Action(Sub()
-                                                        resultTextBox.Text = result
+                                                        loggingTextBox.Text = result
                                                         statusLabel.Text = "Complete"
                                                     End Sub))
                            End Function)

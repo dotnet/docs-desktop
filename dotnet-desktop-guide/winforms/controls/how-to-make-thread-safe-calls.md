@@ -36,11 +36,13 @@ The Visual Studio debugger detects these unsafe thread calls by raising an <xref
 
 ## Safe cross-thread calls
 
-The following code examples demonstrate three ways to ensure that handling a WinForms control although initiates from a thread/task which did not create the control, is safely executed.
+Windows Forms applications follow a strict contract-like framework, similar all other Windows UI frameworks: all controls must be created and accessed from the same thread. Why is this important? Because Windows requires that an application provide a single dedicated thread to deliver system messages to. Whenever the Windows Window Manager detects an interaction to an application window, such as a key press, a mouse click, or resizing the window, it routes that information to the thread that created and manages the UI, and turns it into actionable events. This thread is known as the _UI thread_.
 
-**Note:** WinForms applications follow a strict contract like almost all other Win32 and even WPF Applications: all controls must be created and accessed only from the same thread. Why is this important? Because Windows itself needs a single, dedicated thread to deliver input and system messages to your application, or in other words: everything which is related to the _User Interface_. Whenever the Windows Window Manager detects something relevant to your app —such as a key press, a mouse click on one of your windows, or a resize request — it routes that information to the thread that created and therefore owns your controls.
+Because code running on another thread can't access controls created and managed by the UI thread, Windows Forms provides ways to safely work with these controls from another thread, as demonstrated in the following code examples:
 
-Your application’s most central responsibility is to keep that thread running a continuous loop. This loop retrieves messages from the message queue which Windows associated with that thread when yourn app started, and translates them into actionable events like `Button.Click`. That's why we call that loop the _Message Loop_. And that's why we call the thread, which runs the loop and which Windows knows to send the messages to, the _UI-Thread_.
+- [Example: Use Control.InvokeAsync (.NET 9 and later)](#example-use-controlinvokeasync-net-9-and-later)
+
+  The <xref:System.Windows.Forms.Control.InvokeAsync%2A?displayProperty=nameWithType> method (.NET 9+), which provides async-friendly marshaling to the UI thread.
 
 - [Example: Use the Control.Invoke method](#example-use-the-controlinvoke-method):
 
@@ -49,34 +51,6 @@ Your application’s most central responsibility is to keep that thread running 
 - [Example: Use a BackgroundWorker](#example-use-a-backgroundworker)
 
   A <xref:System.ComponentModel.BackgroundWorker> component, which offers an event-driven model.
-
-- [Example: Use Control.InvokeAsync (.NET 9 and later)](#example-use-controlinvokeasync-net-9-and-later)
-
-  The <xref:System.Windows.Forms.Control.InvokeAsync%2A?displayProperty=nameWithType> method (.NET 9+), which provides async-friendly marshaling to the UI thread.
-
-## Example: Use the Control.Invoke method
-
-The following example demonstrates a pattern for ensuring thread-safe calls to a Windows Forms control. It queries the <xref:System.Windows.Forms.Control.InvokeRequired%2A?displayProperty=fullName> property, which compares the control's creating thread ID to the calling thread ID. If they're different, you should call the <xref:System.Windows.Forms.Control.Invoke%2A?displayProperty=nameWithType> method.
-
-The `WriteTextSafe` enables setting the <xref:System.Windows.Forms.TextBox> control's <xref:System.Windows.Forms.TextBox.Text%2A> property to a new value. The method queries <xref:System.Windows.Forms.Control.InvokeRequired%2A>. If <xref:System.Windows.Forms.Control.InvokeRequired%2A> returns `true`, `WriteTextSafe` recursively calls itself, passing the method as a delegate to the <xref:System.Windows.Forms.Control.Invoke%2A> method. If <xref:System.Windows.Forms.Control.InvokeRequired%2A> returns `false`, `WriteTextSafe` sets the <xref:System.Windows.Forms.TextBox.Text%2A?displayProperty=nameWithType> directly. The `Button1_Click` event handler creates the new thread and runs the `WriteTextSafe` method.
-
-:::code language="csharp" source="snippets/how-to-make-thread-safe-calls/cs/FormThread.cs" id="Good":::
-:::code language="vb" source="snippets/how-to-make-thread-safe-calls/vb/FormThread.vb" id="Good":::
-
-For more information on how `Invoke` differs from `InvokeAsync`, see [Understanding the difference: Invoke vs InvokeAsync](#understanding-the-difference-invoke-vs-invokeasync).
-
-## Example: Use a BackgroundWorker
-
-An easy way to implement multi-threading scenarios while guarateeng the access to the control form only the UI-Thread is with the <xref:System.ComponentModel.BackgroundWorker?displayProperty=nameWithType> component, which uses an event-driven model. The background thread raises the <xref:System.ComponentModel.BackgroundWorker.DoWork?displayProperty=nameWithType> event, which doesn't interact with the main thread. The main thread runs the <xref:System.ComponentModel.BackgroundWorker.ProgressChanged?displayProperty=nameWithType> and <xref:System.ComponentModel.BackgroundWorker.RunWorkerCompleted?displayProperty=nameWithType> event handlers, which can call the main thread's controls.
-
-**Note:** Using this component is no longer the recommended way to address asynchronous scenarios in WinForms application, but we keep supporting this approach for backwards compatibility reasons and have no plans to phase out this component. The reason is that the background worker takes _just_ care of offloading processor workload of the UI-Thread to another thread, but does not address other asynchronous scenarios, like writing a long file to an SSD or retrieving a stream of data over the network. In both cases there is a good chance that the processor is not even doing the actual job. Using async methods with `await` makes sure that you are applying the preferred way to invoke a method asynchronously - and that is something that the background worker component just cannot do. If you need to explicitly offload processor workload, simply use `Task.Run` to create and start a new Task, which you then can await like any other asynchronous operation.
-
-To make a thread-safe call by using <xref:System.ComponentModel.BackgroundWorker>, handle the <xref:System.ComponentModel.BackgroundWorker.DoWork> event. There are two events the background worker uses to report status: <xref:System.ComponentModel.BackgroundWorker.ProgressChanged> and <xref:System.ComponentModel.BackgroundWorker.RunWorkerCompleted>. The `ProgressChanged` event is used to communicate status updates to the main thread, and the `RunWorkerCompleted` event is used to signal that the background worker has completed its work. To start the background thread, call <xref:System.ComponentModel.BackgroundWorker.RunWorkerAsync%2A?displayProperty=nameWithType>.
-
-The example counts from 0 to 10 in the `DoWork` event, pausing for one second between counts. It uses the <xref:System.ComponentModel.BackgroundWorker.ProgressChanged> event handler to report the number back to the main thread and set the <xref:System.Windows.Forms.TextBox> control's <xref:System.Windows.Forms.TextBox.Text%2A> property. For the <xref:System.ComponentModel.BackgroundWorker.ProgressChanged> event to work, the <xref:System.ComponentModel.BackgroundWorker.WorkerReportsProgress%2A?displayProperty=nameWithType> property must be set to `true`.
-
-:::code language="csharp" source="snippets/how-to-make-thread-safe-calls/cs/FormBackgroundWorker.cs" id="Background":::
-:::code language="vb" source="snippets/how-to-make-thread-safe-calls/vb/FormBackgroundWorker.vb" id="Background":::
 
 ## Example: Use Control.InvokeAsync (.NET 9 and later)
 
@@ -112,7 +86,7 @@ Starting with .NET 9, Windows Forms includes the <xref:System.Windows.Forms.Cont
 | [`InvokeAsync(Func<CancellationToken, ValueTask>)`][invoke_func_value]               | Async operation, no return value.*   | Long-running UI updates.         |
 | [`InvokeAsync<T>(Func<CancellationToken, ValueTask<T>>)`][invoke1_func_value_return] | Async operation, with return value.* | Async data fetching with result. |
 
-*Visual Basic doesn't support using awaiting a <xref:System.Threading.Tasks.ValueTask>.
+*Visual Basic doesn't support awaiting a <xref:System.Threading.Tasks.ValueTask>.
 
 The following example demonstrates using `InvokeAsync` to safely update controls from a background thread:
 
@@ -124,6 +98,9 @@ For async operations that need to run on the UI thread, use the async overload:
 :::code language="csharp" source="snippets/how-to-make-thread-safe-calls/cs/InvokeAsyncExamples.cs" id="snippet_InvokeAsyncAdvanced":::
 :::code language="vb" source="snippets/how-to-make-thread-safe-calls/vb/InvokeAsyncExamples.vb" id="snippet_InvokeAsyncAdvanced":::
 
+> [!NOTE]
+> If you're using Visual Basic, the previous code snippet used an extension method to convert a <xref:System.Threading.Tasks.ValueTask> to a <xref:System.Threading.Tasks.Task>. The extension method code is available on [GitHub](https://github.com/dotnet/docs-desktop/blob/main/dotnet-desktop-guide/winforms/forms/snippets/how-to-make-thread-safe-calls/vb/Extensions.vb).
+
 ### Advantages of InvokeAsync
 
 `Control.InvokeAsync` has several advantages over the older `Control.Invoke` method. It returns a `Task` that you can await, making it work well with async and await code. It also prevents common deadlock problems that can happen when mixing async code with synchronous invoke calls. Unlike `Control.Invoke`, the `InvokeAsync` method doesn't block the calling thread, which keeps your apps responsive and avoids hangs.
@@ -131,6 +108,33 @@ For async operations that need to run on the UI thread, use the async overload:
 The method supports cancellation through `CancellationToken`, so you can cancel operations when needed. It also handles exceptions properly, passing them back to your code so you can deal with errors appropriately. .NET 9 includes compiler warnings ([WFO2001](/dotnet/desktop/winforms/compiler-messages/wfo2001)) that help you use the method correctly.
 
 For comprehensive guidance on async event handlers and best practices, see [Events overview](../forms/events.md#async-event-handlers).
+
+## Example: Use the Control.Invoke method
+
+The following example demonstrates a pattern for ensuring thread-safe calls to a Windows Forms control. It queries the <xref:System.Windows.Forms.Control.InvokeRequired%2A?displayProperty=fullName> property, which compares the control's creating thread ID to the calling thread ID. If they're different, you should call the <xref:System.Windows.Forms.Control.Invoke%2A?displayProperty=nameWithType> method.
+
+The `WriteTextSafe` enables setting the <xref:System.Windows.Forms.TextBox> control's <xref:System.Windows.Forms.TextBox.Text%2A> property to a new value. The method queries <xref:System.Windows.Forms.Control.InvokeRequired%2A>. If <xref:System.Windows.Forms.Control.InvokeRequired%2A> returns `true`, `WriteTextSafe` recursively calls itself, passing the method as a delegate to the <xref:System.Windows.Forms.Control.Invoke%2A> method. If <xref:System.Windows.Forms.Control.InvokeRequired%2A> returns `false`, `WriteTextSafe` sets the <xref:System.Windows.Forms.TextBox.Text%2A?displayProperty=nameWithType> directly. The `Button1_Click` event handler creates the new thread and runs the `WriteTextSafe` method.
+
+:::code language="csharp" source="snippets/how-to-make-thread-safe-calls/cs/FormThread.cs" id="Good":::
+:::code language="vb" source="snippets/how-to-make-thread-safe-calls/vb/FormThread.vb" id="Good":::
+
+For more information on how `Invoke` differs from `InvokeAsync`, see [Understanding the difference: Invoke vs InvokeAsync](#understanding-the-difference-invoke-vs-invokeasync).
+
+## Example: Use a BackgroundWorker
+
+An easy way to implement multi-threading scenarios while guaranteeing that the access to a control or form is performed only on the main thread (UI thread), is with the <xref:System.ComponentModel.BackgroundWorker?displayProperty=nameWithType> component, which uses an event-driven model. The background thread raises the <xref:System.ComponentModel.BackgroundWorker.DoWork?displayProperty=nameWithType> event, which doesn't interact with the main thread. The main thread runs the <xref:System.ComponentModel.BackgroundWorker.ProgressChanged?displayProperty=nameWithType> and <xref:System.ComponentModel.BackgroundWorker.RunWorkerCompleted?displayProperty=nameWithType> event handlers, which can call the main thread's controls.
+
+> [!IMPORTANT]
+> The `BackgroundWorker` component is no longer the recommended approach for asynchronous scenarios in Windows Forms applications. While we continue supporting this component for backwards compatibility, it only addresses offloading processor workload from the UI thread to another thread. It doesn't handle other asynchronous scenarios like file I/O or network operations where the processor might not be actively working.
+>
+> For modern asynchronous programming, use `async` methods with `await` instead. If you need to explicitly offload processor-intensive work, use `Task.Run` to create and start a new task, which you can then await like any other asynchronous operation. For more information, see [Example: Use Control.InvokeAsync (.NET 9 and later)](#example-use-controlinvokeasync-net-9-and-later) and [Cross-thread operations and events](../forms/events.md#cross-thread-operations).
+
+To make a thread-safe call by using <xref:System.ComponentModel.BackgroundWorker>, handle the <xref:System.ComponentModel.BackgroundWorker.DoWork> event. There are two events the background worker uses to report status: <xref:System.ComponentModel.BackgroundWorker.ProgressChanged> and <xref:System.ComponentModel.BackgroundWorker.RunWorkerCompleted>. The `ProgressChanged` event is used to communicate status updates to the main thread, and the `RunWorkerCompleted` event is used to signal that the background worker has completed its work. To start the background thread, call <xref:System.ComponentModel.BackgroundWorker.RunWorkerAsync%2A?displayProperty=nameWithType>.
+
+The example counts from 0 to 10 in the `DoWork` event, pausing for one second between counts. It uses the <xref:System.ComponentModel.BackgroundWorker.ProgressChanged> event handler to report the number back to the main thread and set the <xref:System.Windows.Forms.TextBox> control's <xref:System.Windows.Forms.TextBox.Text%2A> property. For the <xref:System.ComponentModel.BackgroundWorker.ProgressChanged> event to work, the <xref:System.ComponentModel.BackgroundWorker.WorkerReportsProgress%2A?displayProperty=nameWithType> property must be set to `true`.
+
+:::code language="csharp" source="snippets/how-to-make-thread-safe-calls/cs/FormBackgroundWorker.cs" id="Background":::
+:::code language="vb" source="snippets/how-to-make-thread-safe-calls/vb/FormBackgroundWorker.vb" id="Background":::
 
 [invoke_action]: xref:System.Windows.Forms.Control.InvokeAsync(System.Action,System.Threading.CancellationToken)
 [invoke_func]: xref:System.Windows.Forms.Control.InvokeAsync``1(System.Func{``0},System.Threading.CancellationToken)

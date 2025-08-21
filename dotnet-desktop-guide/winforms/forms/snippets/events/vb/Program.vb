@@ -5,7 +5,7 @@
         Application.SetHighDpiMode(HighDpiMode.SystemAware)
         Application.EnableVisualStyles()
         Application.SetCompatibleTextRenderingDefault(False)
-        Application.Run(New ExampleForm)
+        Application.Run(New FormAsyncEventHandlers)
     End Sub
 
 End Module

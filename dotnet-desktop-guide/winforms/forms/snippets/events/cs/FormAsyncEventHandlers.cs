@@ -6,24 +6,24 @@ using System.Windows.Forms;
 
 namespace AsyncEventHandlers;
 
-public partial class ExampleForm : Form
+public partial class FormAsyncEventHandlers : Form
 {
     private Button downloadButton;
     private Button processButton;
     private Button complexButton;
     private Button badButton;
-    private TextBox resultTextBox;
+    private TextBox loggingTextBox;
     private Label statusLabel;
     private ProgressBar progressBar;
 
-    public ExampleForm()
+    public FormAsyncEventHandlers()
     {
         Size = new System.Drawing.Size(400, 600);
         downloadButton = new Button { Text = "Download Data" };
         processButton = new Button { Text = "Process Data" };
         complexButton = new Button { Text = "Complex Operation" };
         badButton = new Button { Text = "Bad Example (Deadlock)" };
-        resultTextBox = new TextBox { Multiline = true, Width = 300, Height = 200 };
+        loggingTextBox = new TextBox { Multiline = true, Width = 400, Height = 200 };
         statusLabel = new Label { Text = "Status: Ready" };
         progressBar = new ProgressBar { Width = 300 };
         downloadButton.Click += downloadButton_Click;
@@ -56,14 +56,14 @@ public partial class ExampleForm : Form
         progressBar.Width = downloadButton.Width;
 
         // Result text box below progress bar.
-        resultTextBox.Location = new System.Drawing.Point(margin, progressBar.Bottom + spacing);
+        loggingTextBox.Location = new System.Drawing.Point(margin, progressBar.Bottom + spacing);
 
 
         Controls.Add(downloadButton);
         Controls.Add(processButton);
         Controls.Add(complexButton);
         Controls.Add(badButton);
-        Controls.Add(resultTextBox);
+        Controls.Add(loggingTextBox);
         Controls.Add(statusLabel);
         Controls.Add(progressBar);
     }
@@ -80,7 +80,7 @@ public partial class ExampleForm : Form
             string content = await httpClient.GetStringAsync("https://github.com/dotnet/docs/raw/refs/heads/main/README.md");
             
             // Update UI with the result
-            resultTextBox.Text = content;
+            loggingTextBox.Text = content;
             statusLabel.Text = "Download complete";
         }
         catch (Exception ex)
@@ -102,7 +102,7 @@ public partial class ExampleForm : Form
         {
             // This blocks the UI thread and causes a deadlock
             string content = DownloadPageContentAsync().GetAwaiter().GetResult();
-            resultTextBox.Text = content;
+            loggingTextBox.Text = content;
         }
         catch (Exception ex)
         {
@@ -150,23 +150,35 @@ public partial class ExampleForm : Form
     // <snippet_InvokeAsyncUIThread>
     private async void complexButton_Click(object sender, EventArgs e)
     {
-        await this.InvokeAsync(async (cancellationToken) =>
-        {
-            // This runs on UI thread but doesn't block it
-            statusLabel.Text = "Starting complex operation...";
-            
-            var result = await SomeAsyncApiCall();
-            
-            // Update UI directly since we're already on UI thread
-            resultTextBox.Text = result;
-            statusLabel.Text = "Operation completed";
-        });
+        // This runs on UI thread but doesn't block it
+        statusLabel.Text = "Starting complex operation...";
+
+        // Dispatch and run on a new thread
+        await Task.WhenAll(Task.Run(SomeApiCallAsync),
+                           Task.Run(SomeApiCallAsync),
+                           Task.Run(SomeApiCallAsync));
+
+        // Update UI directly since we're already on UI thread
+        statusLabel.Text = "Operation completed";
     }
 
-    private async Task<string> SomeAsyncApiCall()
+    private async Task SomeApiCallAsync()
     {
-        using var httpClient = new HttpClient();
-        return await httpClient.GetStringAsync("https://github.com/dotnet/docs/raw/refs/heads/main/README.md");
+        using var client = new HttpClient();
+
+        // Simulate random network delay
+        await Task.Delay(Random.Shared.Next(500, 2500));
+
+        // Do I/O asynchronously
+        string result = await client.GetStringAsync("https://github.com/dotnet/docs/raw/refs/heads/main/README.md");
+
+        // Marshal back to UI thread
+        await this.InvokeAsync(async (cancelToken) =>
+        {
+            loggingTextBox.Text += $"{Environment.NewLine}Operation finished at: {DateTime.Now:HH:mm:ss.fff}";
+        });
+
+        // Do more async I/O ...
     }
     // </snippet_InvokeAsyncUIThread>
 
@@ -186,7 +198,7 @@ public partial class ExampleForm : Form
                 // Marshal back to UI thread
                 this.Invoke(new Action(() =>
                 {
-                    resultTextBox.Text = result;
+                    loggingTextBox.Text = result;
                     statusLabel.Text = "Complete";
                 }));
             });

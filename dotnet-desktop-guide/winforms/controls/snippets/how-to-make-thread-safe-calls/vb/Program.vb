@@ -9,7 +9,7 @@ Module Program
         Application.SetHighDpiMode(HighDpiMode.SystemAware)
         Application.EnableVisualStyles()
         Application.SetCompatibleTextRenderingDefault(False)
-        Application.Run(New FormBackgroundWorker())
+        Application.Run(New FormInvokeSync())
     End Sub
 
 End Module

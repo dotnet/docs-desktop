@@ -79,7 +79,7 @@ Event handlers can be declared with the `async` (`Async` in Visual Basic) modifi
 :::code language="vb" source="snippets/events/vb/AsyncEventHandlers.vb" id="snippet_BasicAsyncEventHandler":::
 
 > [!IMPORTANT]
-> While `async void` is generally discouraged, it's necessary for event handlers since they cannot return `Task`. Always wrap awaited operations in `try-catch` blocks to handle exceptions properly, as shown in the example above.
+> While `async void` is generally discouraged, it's necessary for event handlers (and event handler-like code, such as `Control.OnClick`) since they cannot return `Task`. Always wrap awaited operations in `try-catch` blocks to handle exceptions properly, as shown in the previous example.
 
 ### Common pitfalls and deadlocks
 
@@ -124,6 +124,9 @@ For truly async operations that need to run on the UI thread:
 
 > [!TIP]
 > .NET 9 includes analyzer warnings ([WFO2001](/dotnet/desktop/winforms/compiler-messages/wfo2001)) to help detect when async methods are incorrectly passed to synchronous overloads of `InvokeAsync`. This helps prevent "fire-and-forget" behavior.
+
+> [!NOTE]
+> If you're using Visual Basic, the previous code snippet used an extension method to convert a <xref:System.Threading.Tasks.ValueTask> to a <xref:System.Threading.Tasks.Task>. The extension method code is available on [GitHub](https://github.com/dotnet/docs-desktop/blob/main/dotnet-desktop-guide/winforms/forms/snippets/events/vb/Extensions.vb).
 
 # [.NET Framework](#tab/dotnetframework)
 
