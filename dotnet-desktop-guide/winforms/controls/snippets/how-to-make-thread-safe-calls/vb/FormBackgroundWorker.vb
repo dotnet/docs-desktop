@@ -3,7 +3,7 @@
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
 
         If (Not BackgroundWorker1.IsBusy) Then
-            BackgroundWorker1.RunWorkerAsync()
+            BackgroundWorker1.RunWorkerAsync() ' Not awaitable
         End If
 
     End Sub

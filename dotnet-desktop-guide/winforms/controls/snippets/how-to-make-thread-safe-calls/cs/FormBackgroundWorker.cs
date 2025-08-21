@@ -21,7 +21,7 @@ public partial class FormBackgroundWorker : Form
     private void button1_Click(object sender, EventArgs e)
     {
         if (!backgroundWorker1.IsBusy)
-            backgroundWorker1.RunWorkerAsync();
+            backgroundWorker1.RunWorkerAsync(); // Not awaitable
     }
 
     private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
