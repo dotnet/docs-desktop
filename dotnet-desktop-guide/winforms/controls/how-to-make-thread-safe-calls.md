@@ -29,8 +29,8 @@ There are two ways to safely call a Windows Forms control from a thread that did
 
 It's unsafe to call a control directly from a thread that didn't create it. The following code snippet illustrates an unsafe call to the <xref:System.Windows.Forms.TextBox?displayProperty=nameWithType> control. The `Button1_Click` event handler creates a new `WriteTextUnsafe` thread, which sets the main thread's <xref:System.Windows.Forms.TextBox.Text%2A?displayProperty=nameWithType> property directly.
 
-:::code language="csharp" source="snippets/how-to-make-thread-safe-calls/cs/FormBad.cs" id="Bad":::
-:::code language="vb" source="snippets/how-to-make-thread-safe-calls/vb/FormBad.vb" id="Bad":::
+:::code language="csharp" source="snippets/how-to-make-thread-safe-calls/cs/FormInvokeSync.cs" id="Bad":::
+:::code language="vb" source="snippets/how-to-make-thread-safe-calls/vb/FormInvokeSync.vb" id="Bad":::
 
 The Visual Studio debugger detects these unsafe thread calls by raising an <xref:System.InvalidOperationException> with the message, **Cross-thread operation not valid. Control accessed from a thread other than the thread it was created on.** The <xref:System.InvalidOperationException> always occurs for unsafe cross-thread calls during Visual Studio debugging, and may occur at app runtime. You should fix the issue, but you can disable the exception by setting the <xref:System.Windows.Forms.Control.CheckForIllegalCrossThreadCalls%2A?displayProperty=nameWithType> property to `false`.
 
@@ -90,13 +90,13 @@ Starting with .NET 9, Windows Forms includes the <xref:System.Windows.Forms.Cont
 
 The following example demonstrates using `InvokeAsync` to safely update controls from a background thread:
 
-:::code language="csharp" source="snippets/how-to-make-thread-safe-calls/cs/InvokeAsyncExamples.cs" id="snippet_InvokeAsyncBasic":::
-:::code language="vb" source="snippets/how-to-make-thread-safe-calls/vb/InvokeAsyncExamples.vb" id="snippet_InvokeAsyncBasic":::
+:::code language="csharp" source="snippets/how-to-make-thread-safe-calls/cs/FormInvokeAsync.cs" id="snippet_InvokeAsyncBasic":::
+:::code language="vb" source="snippets/how-to-make-thread-safe-calls/vb/FormInvokeAsync.vb" id="snippet_InvokeAsyncBasic":::
 
 For async operations that need to run on the UI thread, use the async overload:
 
-:::code language="csharp" source="snippets/how-to-make-thread-safe-calls/cs/InvokeAsyncExamples.cs" id="snippet_InvokeAsyncAdvanced":::
-:::code language="vb" source="snippets/how-to-make-thread-safe-calls/vb/InvokeAsyncExamples.vb" id="snippet_InvokeAsyncAdvanced":::
+:::code language="csharp" source="snippets/how-to-make-thread-safe-calls/cs/FormInvokeAsync.cs" id="snippet_InvokeAsyncAdvanced":::
+:::code language="vb" source="snippets/how-to-make-thread-safe-calls/vb/FormInvokeAsync.vb" id="snippet_InvokeAsyncAdvanced":::
 
 > [!NOTE]
 > If you're using Visual Basic, the previous code snippet used an extension method to convert a <xref:System.Threading.Tasks.ValueTask> to a <xref:System.Threading.Tasks.Task>. The extension method code is available on [GitHub](https://github.com/dotnet/docs-desktop/blob/main/dotnet-desktop-guide/winforms/forms/snippets/how-to-make-thread-safe-calls/vb/Extensions.vb).
@@ -115,8 +115,8 @@ The following example demonstrates a pattern for ensuring thread-safe calls to a
 
 The `WriteTextSafe` enables setting the <xref:System.Windows.Forms.TextBox> control's <xref:System.Windows.Forms.TextBox.Text%2A> property to a new value. The method queries <xref:System.Windows.Forms.Control.InvokeRequired%2A>. If <xref:System.Windows.Forms.Control.InvokeRequired%2A> returns `true`, `WriteTextSafe` recursively calls itself, passing the method as a delegate to the <xref:System.Windows.Forms.Control.Invoke%2A> method. If <xref:System.Windows.Forms.Control.InvokeRequired%2A> returns `false`, `WriteTextSafe` sets the <xref:System.Windows.Forms.TextBox.Text%2A?displayProperty=nameWithType> directly. The `Button1_Click` event handler creates the new thread and runs the `WriteTextSafe` method.
 
-:::code language="csharp" source="snippets/how-to-make-thread-safe-calls/cs/FormThread.cs" id="Good":::
-:::code language="vb" source="snippets/how-to-make-thread-safe-calls/vb/FormThread.vb" id="Good":::
+:::code language="csharp" source="snippets/how-to-make-thread-safe-calls/cs/FormInvokeSync.cs" id="Good":::
+:::code language="vb" source="snippets/how-to-make-thread-safe-calls/vb/FormInvokeSync.vb" id="Good":::
 
 For more information on how `Invoke` differs from `InvokeAsync`, see [Understanding the difference: Invoke vs InvokeAsync](#understanding-the-difference-invoke-vs-invokeasync).
 

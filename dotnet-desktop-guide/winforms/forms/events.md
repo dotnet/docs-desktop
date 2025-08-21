@@ -75,8 +75,8 @@ Modern applications often need to perform asynchronous operations in response to
 
 Event handlers can be declared with the `async` (`Async` in Visual Basic) modifier and use `await` (`Await` in Visual Basic) for asynchronous operations. Since event handlers must return `void` (or be declared as a `Sub` in Visual Basic), they are one of the rare acceptable uses of `async void` (or `Async Sub` in Visual Basic):
 
-:::code language="csharp" source="snippets/events/cs/AsyncEventHandlers.cs" id="snippet_BasicAsyncEventHandler":::
-:::code language="vb" source="snippets/events/vb/AsyncEventHandlers.vb" id="snippet_BasicAsyncEventHandler":::
+:::code language="csharp" source="snippets/events/cs/FormAsyncEventHandlers.cs" id="snippet_BasicAsyncEventHandler":::
+:::code language="vb" source="snippets/events/vb/FormAsyncEventHandlers.vb" id="snippet_BasicAsyncEventHandler":::
 
 > [!IMPORTANT]
 > While `async void` is generally discouraged, it's necessary for event handlers (and event handler-like code, such as `Control.OnClick`) since they cannot return `Task`. Always wrap awaited operations in `try-catch` blocks to handle exceptions properly, as shown in the previous example.
@@ -88,8 +88,8 @@ Event handlers can be declared with the `async` (`Async` in Visual Basic) modifi
 
 The following code demonstrates a common anti-pattern that causes deadlocks:
 
-:::code language="csharp" source="snippets/events/cs/AsyncEventHandlers.cs" id="snippet_DeadlockAntiPattern":::
-:::code language="vb" source="snippets/events/vb/AsyncEventHandlers.vb" id="snippet_DeadlockAntiPattern":::
+:::code language="csharp" source="snippets/events/cs/FormAsyncEventHandlers.cs" id="snippet_DeadlockAntiPattern":::
+:::code language="vb" source="snippets/events/vb/FormAsyncEventHandlers.vb" id="snippet_DeadlockAntiPattern":::
 
 This causes a deadlock for the following reasons:
 
@@ -114,16 +114,16 @@ When you need to update UI controls from background threads within async operati
 - **Exception propagation**: Properly propagates exceptions back to the calling code.
 - **Cancellation support**: Supports `CancellationToken` for operation cancellation.
 
-:::code language="csharp" source="snippets/events/cs/AsyncEventHandlers.cs" id="snippet_InvokeAsyncNet9":::
-:::code language="vb" source="snippets/events/vb/AsyncEventHandlers.vb" id="snippet_InvokeAsyncNet9":::
+:::code language="csharp" source="snippets/events/cs/FormAsyncEventHandlers.cs" id="snippet_InvokeAsyncNet9":::
+:::code language="vb" source="snippets/events/vb/FormAsyncEventHandlers.vb" id="snippet_InvokeAsyncNet9":::
 
 For truly async operations that need to run on the UI thread:
 
-:::code language="csharp" source="snippets/events/cs/AsyncEventHandlers.cs" id="snippet_InvokeAsyncUIThread":::
-:::code language="vb" source="snippets/events/vb/AsyncEventHandlers.vb" id="snippet_InvokeAsyncUIThread":::
+:::code language="csharp" source="snippets/events/cs/FormAsyncEventHandlers.cs" id="snippet_InvokeAsyncUIThread":::
+:::code language="vb" source="snippets/events/vb/FormAsyncEventHandlers.vb" id="snippet_InvokeAsyncUIThread":::
 
 > [!TIP]
-> .NET 9 includes analyzer warnings ([WFO2001](/dotnet/desktop/winforms/compiler-messages/wfo2001)) to help detect when async methods are incorrectly passed to synchronous overloads of `InvokeAsync`. This helps prevent "fire-and-forget" behavior.
+> .NET 9 includes analyzer warnings ([WFO2001](../compiler-messages/wfo2001.md)) to help detect when async methods are incorrectly passed to synchronous overloads of `InvokeAsync`. This helps prevent "fire-and-forget" behavior.
 
 > [!NOTE]
 > If you're using Visual Basic, the previous code snippet used an extension method to convert a <xref:System.Threading.Tasks.ValueTask> to a <xref:System.Threading.Tasks.Task>. The extension method code is available on [GitHub](https://github.com/dotnet/docs-desktop/blob/main/dotnet-desktop-guide/winforms/forms/snippets/events/vb/Extensions.vb).
@@ -132,8 +132,8 @@ For truly async operations that need to run on the UI thread:
 
 For applications targeting .NET Framework, use traditional patterns with proper async handling:
 
-:::code language="csharp" source="snippets/events/cs/AsyncEventHandlers.cs" id="snippet_LegacyNetFramework":::
-:::code language="vb" source="snippets/events/vb/AsyncEventHandlers.vb" id="snippet_LegacyNetFramework":::
+:::code language="csharp" source="snippets/events/cs/FormAsyncEventHandlers.cs" id="snippet_LegacyNetFramework":::
+:::code language="vb" source="snippets/events/vb/FormAsyncEventHandlers.vb" id="snippet_LegacyNetFramework":::
 
 ---
 
