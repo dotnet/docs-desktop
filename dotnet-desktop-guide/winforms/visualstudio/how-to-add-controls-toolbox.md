@@ -54,9 +54,11 @@ Starting with Visual Studio 17.14, you can add controls from explicit assembly r
 
 # [.NET](#tab/dotnet)
 
-Visual Studio doesn't support explicit assembly references in .NET projects. Alternatively, use [NuGet packages](#add-controls-from-nuget-packages) or [project references](#add-controls-from-project-references).
+Visual Studio doesn't support explicit assembly references in .NET projects; support is coming soon. Alternatively, use [NuGet packages](#add-controls-from-nuget-packages) or [project references](#add-controls-from-project-references).
 
 # [.NET Framework](#tab/dotnetframework)
+
+TODO: This isn't actually working yet. Hold off on this article and then fix these (and other) instructions once VS is working. 
 
 Visual Studio 17.14 introduced automatic Toolbox support for explicit assembly references in .NET Framework projects using the out-of-process designer:
 
@@ -108,7 +110,7 @@ If controls don't appear in the Toolbox or don't function correctly at design ti
 - Ensure your project builds successfully.
 - Verify the assembly contains public controls that inherit from <xref:System.Windows.Forms.Control>.
 - Check that you're using the correct designer (in-process vs. out-of-process).
-- For .NET Framework projects with 32-bit assemblies, ensure you're using the out-of-process designer.
+- For .NET Framework projects with 32-bit assemblies, ensure you're using the out-of-process designer. For more information, see [Out-of-process designer](troubleshoot-32bit.md#out-of-process-designer).
 
 ### Controls appear but don't work at design time
 
