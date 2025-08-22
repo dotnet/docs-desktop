@@ -1,9 +1,10 @@
 ---
 title: "Events Overview"
 description: "A brief overview about events with .NET Windows Forms."
-ms.date: 04/02/2025
+ms.date: 08/18/2025
 ms.service: dotnet-desktop
 ms.topic: overview
+ai-usage: ai-assisted
 dev_langs: ["csharp", "vb"]
 helpviewer_keywords:
   - "Windows Forms, event handling"
@@ -35,9 +36,9 @@ This event model uses *delegates* to bind events to the methods that are used to
 
 Delegates can be bound to a single method or to multiple methods, referred to as multicasting. When creating a delegate for an event, you typically create a multicast event. A rare exception might be an event that results in a specific procedure (such as displaying a dialog box) that wouldn't logically repeat multiple times per event. For information about how to create a multicast delegate, see [How to combine delegates (Multicast Delegates)](/dotnet/csharp/programming-guide/delegates/how-to-combine-delegates-multicast-delegates).
 
-A multicast delegate maintains an invocation list of the methods it's bound to. The multicast delegate supports a <xref:System.Delegate.Combine%2A> method to add a method to the invocation list and a <xref:System.Delegate.Remove%2A> method to remove it.
+A multicast delegate maintains an invocation list of the methods bound to it. The multicast delegate supports a <xref:System.Delegate.Combine%2A> method to add a method to the invocation list and a <xref:System.Delegate.Remove%2A> method to remove it.
 
-When an event is recorded by the application, the control raises the event by invoking the delegate for that event. The delegate in turn calls the bound method. In the most common case (a multicast delegate), the delegate calls each bound method in the invocation list in turn, which provides a one-to-many notification. This strategy means that the control doesn't need to maintain a list of target objects for event notification—the delegate handles all registration and notification.
+When an application records an event, the control raises the event by invoking the delegate for that event. The delegate in turn calls the bound method. In the most common case (a multicast delegate), the delegate calls each bound method in the invocation list in turn, which provides a one-to-many notification. This strategy means that the control doesn't need to maintain a list of target objects for event notification—the delegate handles all registration and notification.
 
 Delegates also enable multiple events to be bound to the same method, allowing a many-to-one notification. For example, a button-click event and a menu-command–click event can both invoke the same delegate, which then calls a single method to handle these separate events the same way.
 
@@ -65,6 +66,85 @@ The first parameter,`sender`, provides a reference to the object that raised the
 Typically each event produces an event handler with a different event-object type for the second parameter. Some event handlers, such as those for the <xref:System.Windows.Forms.Control.MouseDown> and <xref:System.Windows.Forms.Control.MouseUp> events, have the same object type for their second parameter. For these types of events, you can use the same event handler to handle both events.
 
 You can also use the same event handler to handle the same event for different controls. For example, if you have a group of <xref:System.Windows.Forms.RadioButton> controls on a form, you could create a single event handler for the <xref:System.Windows.Forms.Control.Click> event of every `RadioButton`. For more information, see [How to handle a control event](../controls/how-to-add-an-event-handler.md#how-to-use-multiple-events-with-the-same-handler).
+
+## Async event handlers
+
+Modern applications often need to perform asynchronous operations in response to user actions, such as downloading data from a web service or accessing files. Windows Forms event handlers can be declared as `async` methods to support these scenarios, but there are important considerations to avoid common pitfalls.
+
+### Basic async event handler pattern
+
+Event handlers can be declared with the `async` (`Async` in Visual Basic) modifier and use `await` (`Await` in Visual Basic) for asynchronous operations. Since event handlers must return `void` (or be declared as a `Sub` in Visual Basic), they're one of the rare acceptable uses of `async void` (or `Async Sub` in Visual Basic):
+
+:::code language="csharp" source="snippets/events/cs/FormAsyncEventHandlers.cs" id="snippet_BasicAsyncEventHandler":::
+:::code language="vb" source="snippets/events/vb/FormAsyncEventHandlers.vb" id="snippet_BasicAsyncEventHandler":::
+
+> [!IMPORTANT]
+> While `async void` is discouraged, it's necessary for event handlers (and event handler-like code, such as `Control.OnClick`) since they can't return `Task`. Always wrap awaited operations in `try-catch` blocks to handle exceptions properly, as shown in the previous example.
+
+### Common pitfalls and deadlocks
+
+> [!WARNING]
+> Never use blocking calls like `.Wait()`, `.Result`, or `.GetAwaiter().GetResult()` in event handlers or any UI code. These patterns can cause deadlocks.
+
+The following code demonstrates a common anti-pattern that causes deadlocks:
+
+:::code language="csharp" source="snippets/events/cs/FormAsyncEventHandlers.cs" id="snippet_DeadlockAntiPattern":::
+:::code language="vb" source="snippets/events/vb/FormAsyncEventHandlers.vb" id="snippet_DeadlockAntiPattern":::
+
+This causes a deadlock for the following reasons:
+
+- The UI thread calls the async method and blocks waiting for the result.
+- The async method captures the UI thread's `SynchronizationContext`.
+- When the async operation completes, it tries to continue on the captured UI thread.
+- The UI thread is blocked waiting for the operation to complete.
+- Deadlock occurs because neither operation can proceed.
+
+### Cross-thread operations
+
+When you need to update UI controls from background threads within async operations, use the appropriate marshaling techniques. Understanding the difference between blocking and non-blocking approaches is crucial for responsive applications.
+
+# [.NET](#tab/dotnet)
+
+.NET 9 introduced <xref:System.Windows.Forms.Control.InvokeAsync%2A?displayProperty=nameWithType>, which provides async-friendly marshaling to the UI thread. Unlike `Control.Invoke` which **sends** (blocks the calling thread), `Control.InvokeAsync` **posts** (non-blocking) to the UI thread's message queue. For more information about `Control.InvokeAsync`, see [How to make thread-safe calls to controls](../controls/how-to-make-thread-safe-calls.md#).
+
+**Key advantages of InvokeAsync:**
+
+- **Non-blocking**: Returns immediately, allowing the calling thread to continue.
+- **Async-friendly**: Returns a `Task` that can be awaited.
+- **Exception propagation**: Properly propagates exceptions back to the calling code.
+- **Cancellation support**: Supports `CancellationToken` for operation cancellation.
+
+:::code language="csharp" source="snippets/events/cs/FormAsyncEventHandlers.cs" id="snippet_InvokeAsyncNet9":::
+:::code language="vb" source="snippets/events/vb/FormAsyncEventHandlers.vb" id="snippet_InvokeAsyncNet9":::
+
+For truly async operations that need to run on the UI thread:
+
+:::code language="csharp" source="snippets/events/cs/FormAsyncEventHandlers.cs" id="snippet_InvokeAsyncUIThread":::
+:::code language="vb" source="snippets/events/vb/FormAsyncEventHandlers.vb" id="snippet_InvokeAsyncUIThread":::
+
+> [!TIP]
+> .NET 9 includes analyzer warnings ([WFO2001](../compiler-messages/wfo2001.md)) to help detect when async methods are incorrectly passed to synchronous overloads of `InvokeAsync`. This helps prevent "fire-and-forget" behavior.
+
+> [!NOTE]
+> If you're using Visual Basic, the previous code snippet used an extension method to convert a <xref:System.Threading.Tasks.ValueTask> to a <xref:System.Threading.Tasks.Task>. The extension method code is available on [GitHub](https://github.com/dotnet/docs-desktop/blob/main/dotnet-desktop-guide/winforms/forms/snippets/events/vb/Extensions.vb).
+
+# [.NET Framework](#tab/dotnetframework)
+
+For applications targeting .NET Framework, use traditional patterns with proper async handling:
+
+:::code language="csharp" source="snippets/events/cs/FormAsyncEventHandlers.cs" id="snippet_LegacyNetFramework":::
+:::code language="vb" source="snippets/events/vb/FormAsyncEventHandlers.vb" id="snippet_LegacyNetFramework":::
+
+---
+
+### Best practices
+
+- **Use async/await consistently**: Don't mix async patterns with blocking calls.
+- **Handle exceptions**: Always wrap async operations in try-catch blocks in `async void` event handlers.
+- **Provide user feedback**: Update the UI to show operation progress or status.
+- **Disable controls during operations**: Prevent users from starting multiple operations.
+- **Use CancellationToken**: Support operation cancellation for long-running tasks.
+- **Consider ConfigureAwait(false)**: Use in library code to avoid capturing the UI context when not needed.
 
 ## Related content
 
