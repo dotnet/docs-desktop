@@ -3,6 +3,7 @@ title: Design-time error troubleshooting
 description: Learn about some of the common errors that occur when the Windows Forms Designer fails to load. This article might help you troubleshoot those errors.
 ms.date: 04/01/2025
 ms.service: dotnet-desktop
+ms.update-cycle: 365-days
 ms.topic: troubleshooting
 f1_keywords:
   - "DTELErrorList"

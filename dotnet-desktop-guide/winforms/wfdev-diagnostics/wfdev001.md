@@ -3,6 +3,7 @@ title: WFDEV001 warning
 description: Learn about Windows Forms compile-time warning WFDEV001. 'WParam', 'LParam', 'Result' are obsolete internally to Windows Forms.
 ms.date: 03/03/2025
 ms.service: dotnet-desktop
+ms.update-cycle: 365-days
 f1_keywords:
   - "WFDEV001"
 helpviewer_keywords:

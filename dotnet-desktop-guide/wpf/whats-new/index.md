@@ -3,6 +3,7 @@ title: What's new in Windows Presentation Foundation
 description: Learn about what's new in Windows Presentation Foundation (WPF). This article covers changes to WPF since .NET 7 was released.
 ms.date: 03/17/2025
 ms.service: dotnet-desktop
+ms.update-cycle: 365-days
 ms.topic: conceptual
 ---
 

@@ -3,6 +3,7 @@ title: "PrintDialog component overview"
 description: "Learn about print related settings in with Windows Forms in .NET, like displaying the PrintDialog and working with print jobs."
 ms.date: 04/02/2025
 ms.service: dotnet-desktop
+ms.update-cycle: 365-days
 f1_keywords:
   - "PrintDialog"
 helpviewer_keywords:

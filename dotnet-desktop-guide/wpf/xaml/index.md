@@ -4,6 +4,7 @@ description: Learn how the XAML language is structured and implemented by Window
 author: adegeo
 ms.date: 10/24/2024
 ms.service: dotnet-desktop
+ms.update-cycle: 365-days
 ms.author: adegeo
 ms.topic: overview
 ms.custom: update-template

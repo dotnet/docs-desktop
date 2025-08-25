@@ -3,6 +3,7 @@ title: "Dependency properties overview"
 description: Learn about the WPF property system and the capabilities of a dependency property, which is a property that's backed by the WPF property system.
 ms.date: 10/24/2024
 ms.service: dotnet-desktop
+ms.update-cycle: 365-days
 ms.topic: overview
 ms.custom: update-template
 dev_langs:

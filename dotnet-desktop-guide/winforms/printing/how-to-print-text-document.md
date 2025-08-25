@@ -3,6 +3,7 @@ title: "How to print multi-page text file"
 description: Learn how to print multiple page text file (Windows Forms .NET).
 ms.date: 04/02/2025
 ms.service: dotnet-desktop
+ms.update-cycle: 365-days
 dev_langs:
   - "csharp"
   - "vb"
