@@ -3,6 +3,6 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net9.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
-    <StartupObject>project.Program</StartupObject>
+    <StartupObject>ThreadSafeCalls.Program</StartupObject>
   </PropertyGroup>
 </Project>
