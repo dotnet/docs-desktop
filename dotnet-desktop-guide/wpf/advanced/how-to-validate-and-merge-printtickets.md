@@ -3,6 +3,7 @@ title: "How to: Validate and Merge PrintTickets"
 description: Learn how to validate and merge PrintTickets using Microsoft Windows Print Schema, which includes PrintCapabilities and PrintTickets classes.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

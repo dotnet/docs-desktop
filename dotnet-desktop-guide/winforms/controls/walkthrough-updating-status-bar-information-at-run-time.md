@@ -3,6 +3,7 @@ title: "Walkthrough: Updating Status Bar Information at Run Time"
 description: Learn how to walk through the process of updating status bar information at run time based on application state or another user interaction.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

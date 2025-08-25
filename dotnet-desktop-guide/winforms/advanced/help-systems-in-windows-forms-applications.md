@@ -2,6 +2,7 @@
 title: Help Systems
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "Help [Windows Forms], adding to Windows applications"
   - "Windows applications [Windows Forms], providing Help systems"

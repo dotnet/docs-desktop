@@ -3,6 +3,7 @@ title: "How to: Set the Height of a Window from a Page"
 description: Learn how to set the height of a window from a page in this article, by means of an included code example in XAML.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "windows [WPF], setting height from a page"
   - "pages [WPF], setting window height from"

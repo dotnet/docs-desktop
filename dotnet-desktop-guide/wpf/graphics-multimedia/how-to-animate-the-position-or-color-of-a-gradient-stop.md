@@ -3,6 +3,7 @@ title: "How to: Animate the Position or Color of a Gradient Stop"
 description: Learn how to animate the Color and Offset of GradientStop objects when painting an area with a linear gradient.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

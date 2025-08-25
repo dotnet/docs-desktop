@@ -3,6 +3,7 @@ title: "How to: Animate Camera Position and Direction in a 3D Scene"
 description: Learn how to animate the position of a camera and animate the direction it is pointing in a 3D scene using Point3DAnimation and Vector3DAnimation.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "animation [WPF], camera position in 3D scenes"
   - "camera direction [WPF], animating in 3D scenes"

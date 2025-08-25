@@ -3,6 +3,7 @@ title: "Menu Overview"
 description: Learn how the Menu class enables you to organize elements associated with commands and event handlers in a hierarchical order.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "Menu control [WPF]"
   - "controls [WPF], Menu"

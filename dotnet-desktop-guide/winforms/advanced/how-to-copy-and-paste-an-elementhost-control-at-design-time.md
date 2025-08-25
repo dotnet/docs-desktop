@@ -2,6 +2,7 @@
 title: "How to: Copy and Paste an ElementHost Control at Design Time"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "Windows Forms, content copying and pasting"
   - "interoperability [WPF]"

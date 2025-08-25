@@ -3,6 +3,7 @@ title: Column Sort Modes in DataGridView Control
 description: Learn about column sort modes in the Windows Forms DataGridView Control, which have three sort modes.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "data grids [Windows Forms], sort modes"
   - "DataGridView control [Windows Forms], sort mode"

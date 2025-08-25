@@ -3,6 +3,7 @@ title: "DynamicResource Markup Extension"
 description: Learn about the DynamicResource markup Extensible Application Markup Language (XAML) extension of Windows Presentation Foundation (WPF).
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 ms.custom: devdivchpfy22
 f1_keywords:
   - "DynamicResource"

@@ -3,6 +3,7 @@ title: Access Specific Items in ComboBox, ListBox, or CheckedListBox Control
 description: Learn more about how to access specific items in ComboBox, ListBox, or CheckedListBox control in Windows Forms.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

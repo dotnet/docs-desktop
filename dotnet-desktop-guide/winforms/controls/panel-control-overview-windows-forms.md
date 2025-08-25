@@ -3,6 +3,7 @@ title: "Panel Control Overview"
 description: This article provides an overview of panel control in Windows Forms, which can be used to provide an identifiable grouping for other controls.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 f1_keywords:
   - "Panel"
 helpviewer_keywords:

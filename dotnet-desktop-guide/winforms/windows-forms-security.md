@@ -3,6 +3,7 @@ title: Security
 description: Learn about Windows Forms Security, which is code-based and specifies that security levels are set for code, regardless of the user running the code.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "designer access security [Windows Forms]"
   - "permissions [Windows Forms], Windows Forms"

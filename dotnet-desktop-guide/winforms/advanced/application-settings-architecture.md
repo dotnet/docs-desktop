@@ -3,6 +3,7 @@ title: "Application Settings Architecture"
 description: Learn about the Application Settings architecture and the architecture's advanced features, such as grouped settings and settings keys.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

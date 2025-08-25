@@ -3,6 +3,7 @@ title: "Expander Styles and Templates"
 description: Learn about the styles and templates for the Expander control. You can modify the default ControlTemplate to give the control a unique appearance.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "styles [WPF], Expander"
   - "ControlTemplate [WPF], Expander"

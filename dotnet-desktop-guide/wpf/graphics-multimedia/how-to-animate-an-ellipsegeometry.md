@@ -3,6 +3,7 @@ title: "How to: Animate an EllipseGeometry"
 description: Learn about how to animate a Geometry using PointAnimation to animate the Center of an EllipseGeometry.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

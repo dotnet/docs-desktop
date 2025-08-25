@@ -3,6 +3,7 @@ title: Get the Selected Cells, Rows, and Columns in DataGridView Control
 description: "Learn how to get the selected cells, rows, or columns from a DataGridView control by using corresponding properties."
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

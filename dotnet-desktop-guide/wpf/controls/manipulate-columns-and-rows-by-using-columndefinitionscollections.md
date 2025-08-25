@@ -3,6 +3,7 @@ title: "How to: Manipulate Columns and Rows by Using ColumnDefinitionsCollection
 description: Learn how to use methods in the ColumnDefinitionCollection and RowDefinitionCollection classes to perform actions like adding, clearing, or counting contents.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

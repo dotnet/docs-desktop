@@ -3,6 +3,7 @@ title: "How to: Read Metadata from a Bitmap"
 description: Learn how to read bitmap metadata using the metadata query language in Windows Presentation Foundation (WPF).
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

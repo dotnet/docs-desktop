@@ -3,6 +3,7 @@ title: "Using Image Encoders and Decoders in Managed GDI+"
 description: Learn how to use image encoders and decoders in managed GDI+ for Windows Forms applications using a selection of topics and tutorials.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "image encoders [Windows Forms], using"
   - "image decoders [Windows Forms], using"

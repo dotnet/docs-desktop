@@ -3,6 +3,7 @@ title: "How to: Split a Window Horizontally"
 description: Learn how to split a window horizontally in Windows Forms, by means of code examples in Visual Basic and C#.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

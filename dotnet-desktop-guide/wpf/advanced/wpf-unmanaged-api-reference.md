@@ -2,6 +2,7 @@
 title: "Unmanaged API Reference"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 ms.assetid: 2a2e8274-6556-46a2-80d3-a1812903cbcf
 description: Learn how Windows Presentation Foundation (WPF) libraries expose a number of unmanaged functions that are intended for internal use only.
 ---

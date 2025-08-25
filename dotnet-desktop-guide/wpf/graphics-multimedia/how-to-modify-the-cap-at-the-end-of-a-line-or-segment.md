@@ -3,6 +3,7 @@ title: "How to: Modify the Cap at the End of a Line or Segment"
 description: Learn how to modify the shape at the start or end cap of a line or segment using StrokeStartLineCap or StrokeEndLineCap.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "Shape elements [WPF], ends"
   - "Shape elements [WPF], caps"

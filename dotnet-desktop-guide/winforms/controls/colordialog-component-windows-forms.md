@@ -3,6 +3,7 @@ title: "ColorDialog Component"
 description: Learn about which articles will help you understand more about the ColorDialog component.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "ColorDialog component"
   - "colors [Windows Forms], dialog box"

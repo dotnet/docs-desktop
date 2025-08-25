@@ -3,6 +3,7 @@ title: "How to: Produce a Value Based on a List of Bound Items"
 description: Learn how to use MultiBinding to apply logic and produce a value based on a list of bound items with given inputs.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

@@ -3,6 +3,7 @@ title: "How to: Expose Properties of Constituent Controls"
 description: Learn how to expose the properties of Constituent Controls, controls that are usually private, can be made available for public access.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

@@ -3,6 +3,7 @@ title: "Walkthrough: Create a Button by Using XAML"
 description: Use this walkthrough to learn how to create an animated button for use in a Windows Presentation Foundation application using XAML.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "buttons [WPF]"
 ms.assetid: 138c41c4-1759-4bbf-8d77-77031a06a8a0

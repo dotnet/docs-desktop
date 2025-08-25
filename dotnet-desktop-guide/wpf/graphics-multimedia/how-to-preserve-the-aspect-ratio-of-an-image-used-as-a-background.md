@@ -3,6 +3,7 @@ title: "How to: Preserve the Aspect Ratio of an Image Used as a Background"
 description: Learn how to preserve the aspect ratio of an image by setting the Stretch property of an ImageBrush to Uniform or UniformToFill.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "aspect ratios of background images [WPF], preserving"
   - "brushes [WPF], preserving aspect ratios of background images"

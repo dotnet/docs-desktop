@@ -3,6 +3,7 @@ title: "More Secure Printing"
 description: Learn about secure printing provided by the .NET Framework, which uses the PrintingPermission class to control access to printing capabilities.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "Windows Forms, printing"
   - "PrintingPermission class [Windows Forms], Windows Forms security"

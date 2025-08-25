@@ -3,6 +3,7 @@ title: "How to: Seek a Clock Synchronously"
 description: Learn how to use the the Seek and SeekAlignedToLastTick methods of a ClockController to seek a clock to a specific point synchronously.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

@@ -2,6 +2,7 @@
 title: "How to: Inherit Forms Using the Inheritance Picker Dialog Box"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "inheritance [Windows Forms], forms"
   - "Inheritance Picker dialog box"

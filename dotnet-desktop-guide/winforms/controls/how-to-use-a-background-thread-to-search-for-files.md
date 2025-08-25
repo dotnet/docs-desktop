@@ -3,6 +3,7 @@ title: "How to: Use a Background Thread to Search for Files"
 description: Learn how to use a background thread to search for files in Windows Forms, by means of Visual Basic and C# code samples.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

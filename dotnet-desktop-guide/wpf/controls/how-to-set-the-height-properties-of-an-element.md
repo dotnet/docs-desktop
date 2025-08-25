@@ -3,6 +3,7 @@ title: "How to: Set the Height Properties of an Element"
 description: Learn how to set the height properties of an element in a Windows Presentation Foundation (WPF) application.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

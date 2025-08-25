@@ -3,6 +3,7 @@ title: "Graphics Rendering Tiers"
 description: Learn about graphics rendering tiers for devices running a Windows Presentation Foundation (WPF) application.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "graphics [WPF], performance"
   - "rendering graphics [WPF]"

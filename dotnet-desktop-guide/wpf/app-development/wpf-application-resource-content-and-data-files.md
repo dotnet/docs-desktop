@@ -3,6 +3,7 @@ title: Application Resource, Content, and Data Files
 description: Find out about the special support for configuring, identifying, and using application data files in Windows Presentation Foundation (WPF).
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

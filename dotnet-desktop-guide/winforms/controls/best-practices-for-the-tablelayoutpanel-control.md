@@ -3,6 +3,7 @@ title: "Best Practices for the TableLayoutPanel Control"
 description: Learn more about the best practices for TableLayoutPanel control in Windows Forms, which provides powerful layout features that you should consider carefully.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "layout [Windows Forms]"
   - "TableLayoutPanel control [Windows Forms], best practices"

@@ -4,6 +4,7 @@ description: Learn about the Activate function of the Windows Presentation Found
 titleSuffix: ""
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "cpp"
 api_name:

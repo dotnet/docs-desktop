@@ -2,6 +2,7 @@
 title: "How to: Determine if a Data Format is Present in a Data Object"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 ms.custom: devdivchpfy22
 description: Learn how to determine if a Data Format is present in a Data Object.
 dev_langs:

@@ -3,6 +3,7 @@ title: "How to: Support COM Interop by Displaying Each Windows Form on Its Own T
 description: Learn how to resolve COM interoperability problems by displaying a form on a .NET Framework message loop.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "vb"
 helpviewer_keywords:

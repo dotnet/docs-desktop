@@ -2,6 +2,7 @@
 title: "ToolStrip Technology Summary"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "ToolStrip control [Windows Forms], technology summary"
   - "status bars [Windows Forms], technology summary"

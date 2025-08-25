@@ -3,6 +3,7 @@ title: "ClearType Overview"
 description: Learn about Microsoft ClearType technology in Windows Presentation Foundation (WPF).
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "typography [WPF], ClearType technology"
   - "ClearType [WPF], technology"

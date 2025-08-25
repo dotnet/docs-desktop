@@ -3,6 +3,7 @@ title: "How to: Detect When the Enter Key Pressed"
 description: Detect when the Enter key is selected on the keyboard in Windows Presentation Foundation. This example consists of XAML and a code-behind file.
 ms.date: 07/16/2024
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

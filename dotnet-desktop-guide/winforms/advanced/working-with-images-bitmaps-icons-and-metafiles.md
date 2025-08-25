@@ -3,6 +3,7 @@ title: "Working with Images, Bitmaps, Icons, and Metafiles"
 description: Learn about which articles you can read to learn more about working with images, bitmaps, icons, and metafiles.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "metafiles [Windows Forms], working with"
   - "examples [Windows Forms], bitmaps"

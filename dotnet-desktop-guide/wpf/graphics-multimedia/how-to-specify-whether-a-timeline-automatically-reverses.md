@@ -3,6 +3,7 @@ title: "How to: Specify Whether a Timeline Automatically Reverses"
 description: Learn how to specify whether a timeline automatically reverses after it completes a forward iteration.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "AutoReverse property of timelines [WPF]"
   - "Timelines [WPF], AutoReverse property"

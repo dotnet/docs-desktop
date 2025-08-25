@@ -3,6 +3,7 @@ title: "How to: Rotate an Object by Using a Geometric Path (Matrix Animation)"
 description: Learn how to use a MatrixAnimationUsingPath and a MatrixTransform to rotate an object along a geometric path defined by a PathGeometry object.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

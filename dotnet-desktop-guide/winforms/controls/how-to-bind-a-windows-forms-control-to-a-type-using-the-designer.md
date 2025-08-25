@@ -2,6 +2,7 @@
 title: Bind Control to a Type Using the Designer
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "controls [Windows Forms], binding to a type"
   - "BindingSource component [Windows Forms], binding to a type"

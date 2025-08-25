@@ -3,6 +3,7 @@ title: "How to: Change the Speed of a Clock Without Changing the Speed of Its Ti
 description: Learn how to use a ClockController object's SpeedRatio property to change the speed of a Clock without altering the SpeedRatio of the clock's Timeline.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

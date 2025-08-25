@@ -3,6 +3,7 @@ title: "How to: Play Media using a VideoDrawing"
 description: Learn how to play Media using a VideoDrawing.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 ms.custom: devdivchpfy22
 helpviewer_keywords:
   - "playback of media [WPF]"

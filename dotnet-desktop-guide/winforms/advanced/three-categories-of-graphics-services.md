@@ -3,6 +3,7 @@ title: "Three Categories of Graphics Services"
 description: "Learn about the three categories of graphics services: two-dimensional (2-D) vector graphics, imaging, and typography."
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "imaging"
   - "graphics [Windows Forms], categories"

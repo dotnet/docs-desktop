@@ -3,6 +3,7 @@ title: Security strategy and engineering
 description: Learn about the Microsoft Security Development Lifecycle (SDL) which is a key element of the Trustworthy computing initiative.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "security [WPF], testing techniques"
   - "Security Development Lifecycle (SDL), security analysis [WPF]"

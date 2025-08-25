@@ -3,6 +3,7 @@ title: "How to: Reassign Existing Controls to a Different Parent"
 description: Learn about how to reassign existing controls to a different parent in Windows Forms by means of this 7-step process.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "container controls [Windows Forms], Windows Forms"
   - "layout [Windows Forms], resizing"

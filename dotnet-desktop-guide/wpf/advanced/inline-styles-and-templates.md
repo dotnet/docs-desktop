@@ -3,6 +3,7 @@ title: "Inline Styles and Templates"
 description: Learn about inline styles and templates and how to make resource references to existing styles and templates rather than define new ones inline.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "inline templates [WPF]"
   - "styles [WPF], inline"

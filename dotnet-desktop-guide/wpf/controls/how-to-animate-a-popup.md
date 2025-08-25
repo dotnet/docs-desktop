@@ -3,6 +3,7 @@ title: "How to: Animate a Popup"
 description: Learn how to animate a Popup control in two ways via the included XAML code examples in this article.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "Popup control [WPF], animating"
   - "animation [WPF], Popup controls"

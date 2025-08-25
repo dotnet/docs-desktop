@@ -3,6 +3,7 @@ title: "How to: Animate Material Properties in a 3D Scene"
 description: Learn how to animate the Opacity property of the Material applied to a 3D model in Windows Presentation Foundation (WPF).
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "Material properties [WPF], animating in 3D scenes"
   - "animation [WPF], Material properties in 3D scenes"

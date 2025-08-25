@@ -2,6 +2,7 @@
 title: "How to: Implement ICommandSource"
 ms.date: "12/05/2019"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

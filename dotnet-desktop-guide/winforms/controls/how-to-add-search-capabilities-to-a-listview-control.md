@@ -3,6 +3,7 @@ title: "How to: Add Search Capabilities to a ListView Control"
 description: Learn how to offer a user search capabilities with a ListView control for use with a large list of items.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

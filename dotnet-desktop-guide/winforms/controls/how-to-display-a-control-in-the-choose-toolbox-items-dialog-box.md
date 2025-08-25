@@ -3,6 +3,7 @@ title: "How to: Display a Control in the Choose Toolbox Items Dialog Box"
 description: Learn how to display controls in the Choose Toolbox Items Dialog box as you develop and distribute them.
 ms.date: "08/23/2019"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "global assembly cache [Windows Forms], Choose Toolbox Items dialog box"
   - "AssemblyFoldersEx [Windows Forms], Choose Toolbox Items dialog box"

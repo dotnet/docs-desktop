@@ -3,6 +3,7 @@ title: "Walkthrough: Style WPF content"
 description: Learn how to apply styling to a Windows Presentation Foundation (WPF) control hosted on a Windows Form application.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "WPF Designer [Windows Forms], styling WPF content"
   - "interoperability [WDF]"

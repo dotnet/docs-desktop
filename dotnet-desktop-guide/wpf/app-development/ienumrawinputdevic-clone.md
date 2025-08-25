@@ -3,6 +3,7 @@ title: "IEnumRAWINPUTDEVIC:Clone"
 description: Learn about IEnumRAWINPUTDEVIC:Clone, which creates a raw input device enumerator with the same state as the current enumerator to iterate over the same list.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "Clone method [WPF]"
 ms.assetid: 2a6a1900-aa55-45fa-9382-241d569a2dc4

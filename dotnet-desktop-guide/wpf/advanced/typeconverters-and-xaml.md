@@ -2,6 +2,7 @@
 title: "TypeConverters and XAML"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "XAML [WPF], TypeConverter class"
 ms.assetid: f6313e4d-e89d-497d-ac87-b43511a1ae4b

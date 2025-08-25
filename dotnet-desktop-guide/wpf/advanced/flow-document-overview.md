@@ -3,6 +3,7 @@ title: "Flow Document Overview"
 description: Learn about flow documents in Windows Presentation Foundation, which dynamically adjust content based on window size, device resolution, and user preferences.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 ms.topic: overview
 dev_langs:
   - "csharp"

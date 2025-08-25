@@ -3,6 +3,7 @@ title: Disable the RealTimeStylus
 description: Learn how to disable the built-in stylus support in a Windows Presentation Foundation (WPF) application.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 ms.assetid: e0525309-5ede-4782-837d-dbf6e5554859
 ---
 # Disable the RealTimeStylus for WPF Applications

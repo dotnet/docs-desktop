@@ -2,6 +2,7 @@
 title: "SplitContainer Control Overview"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 f1_keywords:
   - "SplitContainer"
 helpviewer_keywords:

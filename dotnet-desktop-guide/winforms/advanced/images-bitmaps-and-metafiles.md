@@ -3,6 +3,7 @@ title: "Images, Bitmaps, and Metafiles"
 description: Learn about the Image class, as well as the Bitmap class and the System.Drawing.Imaging.Metafile class, which both inherit from the Image class.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "metafiles [Windows Forms], about metafiles"
   - "bitmaps [Windows Forms], about bitmaps"

@@ -2,6 +2,7 @@
 title: "How to: List the Data Formats in a Data Object"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 ms.custom: devdivchpfy22
 description: Learn how to list the Data Formats in a Data Object.
 dev_langs:

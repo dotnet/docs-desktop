@@ -3,6 +3,7 @@ title: "Integrating User Help"
 description: Learn more about integrating Help for user assistance in Windows Forms applications with a selection of topics and tutorials.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "Help [Windows Forms], Windows Forms (using designer)"
   - "Windows Forms, Help (using designer)"

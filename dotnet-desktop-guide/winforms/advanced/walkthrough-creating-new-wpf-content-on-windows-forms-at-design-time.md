@@ -4,6 +4,7 @@ description: Learn how to create a Windows Presentation Foundation (WPF) control
 titleSuffix: ""
 ms.date: 08/18/2018
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "interoperability [Windows Forms], WPF and Windows Forms"
   - "WPF content [Windows Forms], hosting in Windows Forms"

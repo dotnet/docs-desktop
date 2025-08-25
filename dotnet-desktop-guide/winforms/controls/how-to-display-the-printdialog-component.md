@@ -3,6 +3,7 @@ title: "How to display the PrintDialog component"
 description: Learn how to display the PrintDialog component which is the standard print dialog box many Windows users recognize.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "Print dialog box [Windows Forms], displaying"
   - "PrintDialog component [Windows Forms], displaying"

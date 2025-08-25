@@ -3,6 +3,7 @@ title: "How to: Sort Data in a View"
 description: Learn about various techniques to sort data in a view including related tutorials and several provided code examples.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

@@ -3,6 +3,7 @@ title: "How to: Move ToolStripMenuItems"
 description: Learn about how to move ToolStripMenuItems in Windows Forms, such as changing the position of menu items within a menu.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "ToolStripMenuItems [Windows Forms], moving"
   - "menus [Windows Forms], arranging items"

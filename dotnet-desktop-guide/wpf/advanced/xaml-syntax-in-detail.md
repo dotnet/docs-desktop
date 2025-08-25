@@ -3,6 +3,7 @@ title: "XAML Syntax In Detail"
 description: Learn about terms that are used to describe the elements of XAML syntax for Windows Presentation Foundation and other frameworks that use XAML.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 ms.custom: devdivchpfy22
 ms.topic: overview
 helpviewer_keywords:

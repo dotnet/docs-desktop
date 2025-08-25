@@ -3,6 +3,7 @@ title: "Property Animation Techniques Overview"
 description: Learn about the different approaches used to animate properties in Windows Presentation Foundation (WPF).
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

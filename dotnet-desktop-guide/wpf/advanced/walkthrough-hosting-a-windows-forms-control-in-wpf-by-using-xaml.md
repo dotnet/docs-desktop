@@ -3,6 +3,7 @@ title: Host a Windows Forms control in WPF using XAML
 titleSuffix: ""
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "hosting Windows Forms control in WPF [WPF]"
 ms.assetid: 1aef42cb-4cfb-44b4-9a7a-c02632d3d9c7

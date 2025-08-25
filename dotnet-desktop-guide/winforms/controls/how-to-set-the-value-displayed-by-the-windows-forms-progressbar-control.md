@@ -3,6 +3,7 @@ title: Set the Value Displayed by ProgressBar Control
 description: Learn how to set the value displayed by the Windows Forms ProgressBar control. There are multiple approaches you can choose to use.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

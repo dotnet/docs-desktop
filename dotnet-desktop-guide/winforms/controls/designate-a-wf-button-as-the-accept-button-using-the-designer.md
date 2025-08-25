@@ -3,6 +3,7 @@ title: Designate a Button as the Accept Button Using the Designer
 description: Learn about how to designate a Windows Forms button as the accept button using the designer.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "buttons [Windows Forms], default on Windows Forms"
   - "Accept button on Windows Forms"

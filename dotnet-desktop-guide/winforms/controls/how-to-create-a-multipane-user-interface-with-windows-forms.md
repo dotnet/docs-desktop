@@ -3,6 +3,7 @@ title: Create a Multipane User Interface
 description: Describes how to layout Windows Forms controls to mimic a Microsoft Outlook email application.
 ms.date: 01/21/2022
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

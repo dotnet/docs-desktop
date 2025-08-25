@@ -3,6 +3,7 @@ title: "ErrorProvider Component Overview"
 description: Learn more about an overview of the ErrorProvider component in Windows Forms, which is used to validate user input on a form or control.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 f1_keywords:
   - "ErrorProvider"
 helpviewer_keywords:

@@ -3,6 +3,7 @@ title: "How to: Create a Composite Drawing"
 description: Learn how to use a DrawingGroup to create complex drawings by combining multiple Drawing objects into a single composite drawing.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "drawings [WPF], composite"
   - "composite drawings [WPF]"

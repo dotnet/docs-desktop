@@ -3,6 +3,7 @@ title: "How to: Download a File in the Background"
 description: Learn how to download files in the background so that users can fulfil other tasks and potentially save time.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

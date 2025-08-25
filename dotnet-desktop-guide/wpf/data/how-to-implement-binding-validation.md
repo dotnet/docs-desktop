@@ -3,6 +3,7 @@ title: "How to: Implement Binding Validation"
 description: Learn how to using binding validation to provide visual feedback to the user when an invalid value is entered in Windows Presentation Foundation (WPF).
 ms.date: 03/30/2017
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
 - csharp
 - vb
