@@ -3,6 +3,7 @@ title: L2DBForm.xaml source code
 description: Learn about the L2DBForm.xaml source code file for Windows Presentation Foundation (WPF) data binding using a LINQ to XML example.
 ms.date: 10/22/2019
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 ms.topic: sample
 ---
 # L2DBForm.xaml source code

@@ -3,6 +3,7 @@ title: "DataGridView Control"
 description: Learn how to use the `DataGridView` control to show read-only views of a small amount of data, or scale it to show editable views of very large sets of data.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "tables [Windows Forms]"
   - "data grids [Windows Forms"

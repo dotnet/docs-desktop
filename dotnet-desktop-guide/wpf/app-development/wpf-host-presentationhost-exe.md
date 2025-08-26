@@ -4,6 +4,7 @@ description: Learn about Windows Presentation Foundation (WPF) Host (Presentatio
 titleSuffix: ""
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "WPF Host application [WPF]"
   - "PresentationHost.exe"

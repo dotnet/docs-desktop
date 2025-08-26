@@ -3,6 +3,7 @@ title: Determine Which Panel in StatusBar Control Was Clicked
 description: Learn more about how to determine which panel in the Windows Forms StatusBar Control was clicked.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

@@ -3,6 +3,7 @@ title: "How to: Control a MediaElement (Play, Pause, Stop, Volume, and Speed)"
 description: Control playback of media in Windows Presentation foundation (WPF). Start, stop, pause, skip back and forth, and adjust volume and speed.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 ms.custom: devdivchpfy22
 dev_langs:
   - "csharp"

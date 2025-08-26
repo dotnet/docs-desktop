@@ -3,6 +3,7 @@ title: "How to: Animate the Opacity of an Element or Brush"
 description: Learn how to make a framework element fade in and out of view by animating the Opacity property of the Brush used to paint it.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "opacity [WPF], animating"
   - "animation [WPF], Opacity property"

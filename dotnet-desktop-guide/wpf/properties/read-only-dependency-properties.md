@@ -3,6 +3,7 @@ title: "Read-only dependency properties"
 description: Learn about dependency properties in Windows Presentation Foundation (WPF) and how to create a read-only dependency property.
 ms.date: 10/24/2024
 ms.service: dotnet-desktop
+ms.update-cycle: 365-days
 ms.custom: update-template
 dev_langs:
   - "csharp"

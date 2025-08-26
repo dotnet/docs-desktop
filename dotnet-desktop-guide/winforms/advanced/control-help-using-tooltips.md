@@ -3,6 +3,7 @@ title: "Control Help Using ToolTips"
 description: Learn how to use the ToolTip component to display a brief, specialized Help message for individual controls on Windows Forms.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "Help [Windows Forms], tooltips for controls"
   - "controls [Windows Forms], tooltips"

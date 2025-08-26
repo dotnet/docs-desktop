@@ -3,6 +3,7 @@ title: Data Display Modes in DataGridView Control
 description: Learn about data display modes in the Windows Forms DataGridView control, which displays data in three distinct modes.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "data [Windows Forms], display modes"
   - "data grids [Windows Forms], display modes"

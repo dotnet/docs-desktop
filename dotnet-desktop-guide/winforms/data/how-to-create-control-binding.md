@@ -3,6 +3,7 @@ title: "How to create a simple-bound control on a Form"
 description: "Learn about how to create a simple-bound control on a Form in Windows Forms .NET."
 ms.date: "06/06/2022"
 ms.service: dotnet-desktop
+ms.update-cycle: 365-days
 helpviewer_keywords:
   - "data binding [Windows Forms], simple data binding"
   - "Windows Forms controls, data binding"

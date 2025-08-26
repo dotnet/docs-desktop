@@ -4,6 +4,7 @@ description: "Learn how to create a custom control that displays a string with a
 ms.topic: how-to
 ms.date: 01/15/2025
 ms.service: dotnet-desktop
+ms.update-cycle: 365-days
 dev_langs:
   - "csharp"
   - "vb"

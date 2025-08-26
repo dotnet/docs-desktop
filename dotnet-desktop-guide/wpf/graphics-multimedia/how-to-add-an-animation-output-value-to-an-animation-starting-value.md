@@ -3,6 +3,7 @@ title: "How to: Add an Animation Output Value to an Animation Starting Value"
 description: Learn how to add an animation output value to an animation starting value using the IsAdditive property.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "animation [WPF]"
 ms.assetid: b89a82be-b03d-481e-a8d3-cc513d09ca00

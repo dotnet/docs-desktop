@@ -3,6 +3,7 @@ title: "How to: Animate a Property Without Using a Storyboard"
 description: Learn how to use the BeginAnimation method to animate a property without using a Storyboard with several provided code examples.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

@@ -3,6 +3,7 @@ title: "How to: Draw an Image Using ImageDrawing"
 description: Learn how to use an ImageDrawing to draw an image enabling you to display an ImageSource with a DrawingBrush, DrawingImage, or Visual.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "drawing [WPF], images"
   - "graphics [WPF], drawing images"

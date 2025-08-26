@@ -3,6 +3,7 @@ title: "PasswordBox Styles and Templates"
 description: Learn about the styles and templates for the PasswordBox control in Windows Presentation Foundation (WPF) applications.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "styles [WPF], PasswordBox"
   - "templates [WPF], PasswordBox"

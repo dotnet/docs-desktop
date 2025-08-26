@@ -2,6 +2,7 @@
 title: "Styling for Focus in Controls, and FocusVisualStyle"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "keyboard focus [WPF]"
   - "focus [WPF], visual styling"

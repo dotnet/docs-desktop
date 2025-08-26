@@ -3,6 +3,7 @@ title: Set the Background of a Panel
 description: Learn how to set the background color and background image of a Windows Forms panel using the Designer.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

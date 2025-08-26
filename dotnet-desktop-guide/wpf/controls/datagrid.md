@@ -3,6 +3,7 @@ title: "DataGrid"
 description: Learn how the DataGrid control lets you display and edit data from different sources, such as a database, LINQ query, or any other bindable data source.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "DataGrid column types [WPF]"
   - "DataGrid scenarios [WPF]"

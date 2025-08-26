@@ -2,6 +2,7 @@
 title: "The Ink Threading Model"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "application user interface thread [WPF]"
   - "stylus plug-in"

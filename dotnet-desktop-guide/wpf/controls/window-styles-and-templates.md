@@ -3,6 +3,7 @@ title: "Window Styles and Templates"
 description: Learn about the styles and templates for the Window control allowing you to modify the default ControlTemplate to give the control a unique appearance.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "parts [WPF], Window"
   - "templates [WPF], Window"

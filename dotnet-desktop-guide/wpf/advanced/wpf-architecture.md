@@ -3,6 +3,7 @@ title: Architecture
 description: Learn about the Windows Presentation Foundation class hierarchy, including most of the major subsystems and how they interact.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 ms.topic: overview
 helpviewer_keywords:
   - "properties [WPF], attached"

@@ -3,6 +3,7 @@ title: Upgrade a .NET Framework WinForms app to .NET
 description: Learn how to upgrade a .NET Framework (or previous .NET) Windows Forms application to .NET with the .NET Upgrade Assistant and Visual Studio.
 ms.date: 04/02/2025
 ms.service: dotnet-desktop
+ms.update-cycle: 365-days
 ms.topic: upgrade-and-migration-article  #Don't change.
 #customer intent: As a developer, I want to use the .NET Upgrade Assistant to automatically upgrade my projects to the latest version of .NET.
 ---

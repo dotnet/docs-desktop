@@ -3,6 +3,7 @@ title: WFAC002 error
 description: Learn about the Windows Forms code that generate compile-time error WFAC002.
 ms.date: 03/05/2025
 ms.service: dotnet-desktop
+ms.update-cycle: 365-days
 f1_keywords:
   - "WFAC002"
 helpviewer_keywords:

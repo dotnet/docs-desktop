@@ -3,6 +3,7 @@ title: "How to: Provide Help in a Windows Application"
 description: Learn how to use the System.Windows.Forms.HelpProvider component to attach Help topics within a Help file to specific controls on Windows Forms.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "Help [Windows Forms], Windows applications"
   - "HTML Help [Windows Forms], Windows Forms"

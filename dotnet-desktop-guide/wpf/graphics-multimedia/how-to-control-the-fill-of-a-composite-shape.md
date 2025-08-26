@@ -3,6 +3,7 @@ title: "How to: Control the Fill of a Composite Shape"
 description: Learn how to use the FillRule property of a GeometryGroup or a PathGeometry to determine whether a given point is part of the geometry.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "shapes [WPF], composite [WPF], controlling fill"
   - "composite shapes [WPF], controlling fill"

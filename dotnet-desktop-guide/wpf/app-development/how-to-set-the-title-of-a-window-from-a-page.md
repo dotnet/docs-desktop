@@ -3,6 +3,7 @@ title: "How to: Set the Title of a Window from a Page"
 description: Learn how to set the title of a window from a page in this article, by means of an included code example in XAML.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "windows [WPF], setting title from a page"
   - "title of window [WPF], setting from a page"

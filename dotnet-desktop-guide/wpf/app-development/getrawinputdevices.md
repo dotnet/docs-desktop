@@ -2,6 +2,7 @@
 title: "GetRawInputDevices"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "raw input [WPF]"
 ms.assetid: c4d37ecd-065a-4d1c-9e6c-26804ae968ca

@@ -3,6 +3,7 @@ title: "How to: Animate in a ControlTemplate"
 description: Learn about how to use Storyboard, EventTrigger, and Trigger objects to animate within a ControlTemplate.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "animation [WPF], ControlTemplates"
   - "ControlTemplates [WPF], animating within"

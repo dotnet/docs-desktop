@@ -3,6 +3,7 @@ title: "Custom dependency properties"
 description: Learn how to implement a dependency property in Windows Presentation Foundation (WPF), and how to improve its performance, usability, or versatility.
 ms.date: 10/24/2024
 ms.service: dotnet-desktop
+ms.update-cycle: 365-days
 ms.topic: overview
 ms.custom: update-template
 dev_langs:

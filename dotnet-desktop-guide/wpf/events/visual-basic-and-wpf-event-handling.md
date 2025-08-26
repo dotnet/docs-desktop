@@ -3,6 +3,7 @@ title: Visual Basic and WPF event handling
 description: Learn how to attach handlers to Windows Presentation Foundation (WPF) routed events in Visual Basic.
 ms.date: 10/24/2024
 ms.service: dotnet-desktop
+ms.update-cycle: 365-days
 ms.custom: update-template
 helpviewer_keywords:
   - "Visual Basic [WPF], event handlers"

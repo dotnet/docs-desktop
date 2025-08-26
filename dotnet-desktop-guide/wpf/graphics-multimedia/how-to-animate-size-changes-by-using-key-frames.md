@@ -3,6 +3,7 @@ title: "How to: Animate Size Changes by Using Key Frames"
 description: Learn how to use the the SizeAnimationUsingKeyFrames class to animate size changes by using key frames.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "key frames [WPF], animating size changes with"
   - "animation [WPF], size changes with key frames"

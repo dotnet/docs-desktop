@@ -3,6 +3,7 @@ title: "How to alter the typography of text"
 description: To alter the telegraphy of text, set the telegraphy attribute. You can set the typographic property of text programmatically. You can see how altered and default telegraphy properties of text render on screen each with an example.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 ms.custom: devdivchpfy22
 dev_langs:
   - "csharp"

@@ -3,6 +3,7 @@ title: "How to: Apply a Drawing to a 3D Model"
 description: Learn how to use a DrawingBrush as the Material applied to a 3D model in Windows Presentation Foundation (WPF).
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "drawings [WPF], applying to 3D models"
   - "3D models [WPF], applying drawings to"

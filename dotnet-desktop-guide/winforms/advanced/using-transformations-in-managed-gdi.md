@@ -3,6 +3,7 @@ title: "Using Transformations in Managed GDI+"
 description: Learn how to use transformations in managed GDI+ for Windows Forms with a selection of topics and tutorials.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "transformations"
   - "examples [Windows Forms], transformations"

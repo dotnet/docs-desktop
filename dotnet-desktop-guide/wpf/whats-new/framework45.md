@@ -4,6 +4,7 @@ description: Learn about the many new and enhanced features in Windows Presentat
 titleSuffix: ""
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "Windows Presentation Foundation [WPF], what's new"
   - "WPF [WPF], what's new"

@@ -3,6 +3,7 @@ title: "Painting with Images, Drawings, and Visuals"
 description: Learn about painting with images, drawings, and visuals in Windows Presentation Foundation (WPF).
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

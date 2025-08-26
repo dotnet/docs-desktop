@@ -3,6 +3,7 @@ title: Upgrade a WPF app to .NET 8
 description: Learn how to upgrade a .NET Framework (or previous .NET) Windows Presentation Foundation (WPF) application to .NET 8.
 ms.date: 02/07/2024
 ms.service: dotnet-desktop
+ms.update-cycle: 365-days
 ms.topic: how-to
 ---
 

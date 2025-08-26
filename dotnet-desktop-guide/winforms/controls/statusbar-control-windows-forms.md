@@ -2,6 +2,7 @@
 title: "StatusBar Control"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "StatusBar control [Windows Forms]"
   - "status bars [Windows Forms], creating"

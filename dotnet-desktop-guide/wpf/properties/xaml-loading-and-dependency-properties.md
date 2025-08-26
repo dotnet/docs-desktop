@@ -3,6 +3,7 @@ title: "XAML loading and dependency properties"
 description: "Learn about Extensible Application Markup Language (XAML) loading of dependency property in Windows Presentation Foundation (WPF)."
 ms.date: 10/24/2024
 ms.service: dotnet-desktop
+ms.update-cycle: 365-days
 ms.custom: update-template
 dev_langs:
   - "csharp"

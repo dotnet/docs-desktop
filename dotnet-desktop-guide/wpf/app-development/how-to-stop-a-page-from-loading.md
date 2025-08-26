@@ -3,6 +3,7 @@ title: "How to: Stop a Page from Loading"
 description: Learn how to stop a page from loading in this article, by means of included code examples in C# and Visual Basic.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

@@ -3,6 +3,7 @@ title: "High DPI support"
 description: Learn about support in Windows Forms for common high DPI and dynamic DPI scenarios. Also learn how to configure Windows Forms applications for high DPI support.
 ms.date: "05/16/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "High DPI in Windows Forms"
   - "Dynamic rescaling in Windows Forms"

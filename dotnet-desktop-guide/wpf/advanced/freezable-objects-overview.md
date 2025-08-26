@@ -3,6 +3,7 @@ title: "Freezable Objects Overview"
 description: Learn how to use and create freezable objects in Windows Presentation Foundation (WPF) applications.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 ms.topic: overview
 dev_langs:
   - "csharp"

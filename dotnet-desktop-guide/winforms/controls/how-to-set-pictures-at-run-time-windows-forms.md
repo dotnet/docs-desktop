@@ -3,6 +3,7 @@ title: "How to: Set Pictures at Run Time"
 description: Learn how to set pictures at run time in Windows Forms, by means of code samples in Visual Basic, C#, and CPP.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

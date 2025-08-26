@@ -5,6 +5,7 @@ author: adegeo
 ms.topic: overview #Don't change
 ms.date: 01/15/2025
 ms.service: dotnet-desktop
+ms.update-cycle: 365-days
 dev_langs:
   - "csharp"
   - "vb"

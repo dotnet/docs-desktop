@@ -3,6 +3,7 @@ title: "How to: Create Multiple Subpaths Within a PathGeometry"
 description: Learn how to create multiple subpaths in a PathGeometry, you must create a PathFigure for each subpath.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "multiple subpaths [WPF]"
   - "graphics [WPF], subpaths"

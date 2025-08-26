@@ -3,6 +3,7 @@ title: WFAC010 warning
 description: Learn about the Windows Forms DPI settings that generate compile-time warning WFAC010.
 ms.date: 03/05/2025
 ms.service: dotnet-desktop
+ms.update-cycle: 365-days
 f1_keywords:
   - "WFAC010"
 helpviewer_keywords:

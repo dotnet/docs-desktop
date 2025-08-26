@@ -5,6 +5,7 @@ author: adegeo
 ms.author: adegeo
 ms.date: 10/22/2024
 ms.service: dotnet-desktop
+ms.update-cycle: 365-days
 no-loc: ["<Window>", "<ControlTemplate>", "<Ellipse>", "<ContentPresenter>", "<Trigger>", "<Setter>", "<PropertyTrigger>", "<Grid>", "<VisualStateManager.VisualStateGroups>", "<VisualStateGroup>", "<VisualState>", "<Storyboard>", "SizeToContent", "MinWidth", "TargetType", "Title"]
 ms.topic: how-to
 ms.custom: update-template

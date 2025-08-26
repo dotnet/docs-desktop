@@ -3,6 +3,7 @@ title: WFDEV005 warning
 description: Learn about Windows Forms compile-time warning WFDEV005. 'Clipboard.GetData(string)' is obsolete. Use 'Clipboard.TryGetData<T>' methods instead.
 ms.date: 03/04/2025
 ms.service: dotnet-desktop
+ms.update-cycle: 365-days
 f1_keywords:
   - "WFDEV005"
 helpviewer_keywords:

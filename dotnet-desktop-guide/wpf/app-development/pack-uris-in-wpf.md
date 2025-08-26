@@ -3,6 +3,7 @@ title: Pack URIs
 description: Learn about the many ways to use uniform resource identifiers (URIs) to identify and load files in Windows Presentation Foundation (WPF).
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "pack URI scheme [WPF]"
   - "loading embedded resources [WPF]"

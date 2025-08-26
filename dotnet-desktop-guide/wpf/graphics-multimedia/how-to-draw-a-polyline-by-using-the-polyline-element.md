@@ -3,6 +3,7 @@ title: "How to: Draw a Polyline by Using the Polyline Element"
 description: Learn how to draw a polyline by creating a Polyline element and using its Points property to specify the shape vertices.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "connected lines [WPF]"
   - "polylines [WPF], drawing"

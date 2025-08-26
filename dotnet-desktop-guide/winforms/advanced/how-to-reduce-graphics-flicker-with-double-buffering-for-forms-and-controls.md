@@ -3,6 +3,7 @@ title: "How to: Reduce Graphics Flicker with Double Buffering for Forms and Cont
 description: Learn how to reduce graphics flicker with double buffering for Windows Forms and use controls to address the flicker problems associated with paint operations.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

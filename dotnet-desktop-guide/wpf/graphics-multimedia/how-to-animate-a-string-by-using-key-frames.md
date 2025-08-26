@@ -3,6 +3,7 @@ title: "How to: Animate a String by Using Key Frames"
 description: Learn about how to use the StringAnimationUsingKeyFrames class to animate a string by using key frames.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "animation [WPF], strings with key frames"
   - "strings [WPF], animating with key frames"

@@ -3,6 +3,7 @@ title: "Vector Graphics Overview"
 description: Learn about vector graphics in GDI+ for Windows Forms applications and the methods for drawing vector graphics.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 ms.topic: overview
 dev_langs:
   - "csharp"

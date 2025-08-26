@@ -3,6 +3,7 @@ title: Unmanaged apps
 description: This article provides an overview of Windows Forms and unmanaged applications, which can interoperate with some caveats.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "ActiveX controls [Windows Forms]"
   - "COM interop [Windows Forms], Windows Forms"

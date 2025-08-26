@@ -3,6 +3,7 @@ title: "Data Templating Overview"
 description: Explore the data templating model flexibility that define the presentation of your data in Windows Presentation Foundation (WPF).
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

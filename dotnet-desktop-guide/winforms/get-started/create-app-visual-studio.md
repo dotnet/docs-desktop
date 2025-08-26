@@ -3,6 +3,7 @@ title: "Create a new app with Visual Studio tutorial"
 description: Follow this tutorial to learn how to create a new Windows Forms app for .NET with Visual Studio 2022.
 ms.date: 04/02/2025
 ms.service: dotnet-desktop
+ms.update-cycle: 365-days
 ms.topic: tutorial
 dev_langs:
   - "csharp"

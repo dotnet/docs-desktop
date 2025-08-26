@@ -3,6 +3,7 @@ title: "Annotations"
 description: Learn about the document viewing controls that support annotating document content, which are available in Windows Presentation Foundation (WPF).
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "highlights [WPF]"
   - "documents [WPF], annotations"

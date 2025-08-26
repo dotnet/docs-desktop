@@ -3,6 +3,7 @@ title: Best Practices for Scaling DataGridView Control
 description: Learn more about the best practices for scaling the WIndows Forms DataGridView Control, which is designed to provide maximum scalability.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "DataGridView control [Windows Forms], row sharing"
   - "data grids [Windows Forms], best practices"

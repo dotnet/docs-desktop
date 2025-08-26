@@ -3,6 +3,7 @@ title: "How to: Get the Default View of a Data Collection"
 description: Learn how to use the DataContext of a data object to retrieve the default view of a data collection.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

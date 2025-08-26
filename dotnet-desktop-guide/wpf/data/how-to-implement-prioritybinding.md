@@ -3,6 +3,7 @@ title: "How to: Implement PriorityBinding"
 description: Learn how to use PriorityBinding to define a list of bindings ordered from highest to lowest priority.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

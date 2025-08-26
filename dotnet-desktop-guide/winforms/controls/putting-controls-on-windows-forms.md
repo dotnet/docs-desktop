@@ -2,6 +2,7 @@
 title: Put controls on forms
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 f1_keywords:
   - "ENV.Window.Toolbox"
 helpviewer_keywords:

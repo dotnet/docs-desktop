@@ -3,6 +3,7 @@ title: "Additional Security Considerations"
 description: Learn about the additional security measures that the .NET Framework offers in Windows Forms to restrict access to critical local resources.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "Windows Forms, secure calls to Windows API"
   - "security [Windows Forms]"

@@ -3,6 +3,7 @@ title: Specify the Edit Mode for DataGridView Control
 description: Learn how to specify the edit mode for the Windows Forms DataGridView control, which users can edit by typing in it or pressing F2.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

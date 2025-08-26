@@ -3,6 +3,7 @@ title: "How to: Find a TreeViewItem in a TreeView"
 description: Learn how to find a TreeViewItem in a TreeView, by means of the included code examples in C#, Visual Basic, and XAML.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

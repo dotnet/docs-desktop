@@ -3,6 +3,7 @@ title: "How to: Create an Elliptical Arc"
 description: Learn how to draw an elliptical arc using the PathGeometry, PathFigure, and ArcSegment classes.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "graphics [WPF], elliptical arcs"
   - "elliptical arcs [WPF], creating"

@@ -3,6 +3,7 @@ title: Brushes overview
 description: Discover how to illustrate concepts by painting with simple, solid colors through gradients and patterns in Windows Presentation Foundation (WPF).
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

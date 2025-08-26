@@ -3,6 +3,7 @@ title: Display Images in Cells of DataGridView Control
 description: Learn how to display images in the cells of DataGrid Control to display values such as pictures or graphics.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

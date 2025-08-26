@@ -3,6 +3,7 @@ title: Create a Multipane User Interface Using the Designer
 description: Learn about how to create a multipane user interface (UI) with Windows Forms using the designer.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "user interface [Windows Forms], multipane"
   - "SplitContainer control [Windows Forms], using the designer"

@@ -3,6 +3,7 @@ title: "How to: Enable Check Margins and Image Margins in ContextMenuStrip Contr
 description: Learn how to enable check margins and image margins in ContextMenuStrip Controls to customize objects in your MenuStrip.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

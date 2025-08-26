@@ -3,6 +3,7 @@ title: "ListView Control"
 description: Learn about the ListView control in Windows Forms, which displays a list of items with icons, via the list of links in this article.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "lists"
   - "checked list items [Windows Forms], Windows Forms controls"

@@ -3,6 +3,7 @@ title: Display a Date in a Custom Format with DateTimePicker Control
 description: Learn how to use the Windows Forms DateTimePicker control to format the display of dates and times in the control.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

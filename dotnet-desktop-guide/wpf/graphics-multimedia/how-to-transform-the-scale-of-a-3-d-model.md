@@ -3,6 +3,7 @@ title: "How to: Transform the Scale of a 3D Model"
 description: Learn how to use ScaleTransform3D to transform the Scale of a 3D model.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "scaling [WPF], 3D objects"
   - "3D objects [WPF], scaling"

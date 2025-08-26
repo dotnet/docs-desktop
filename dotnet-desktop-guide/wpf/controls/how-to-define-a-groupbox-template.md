@@ -3,6 +3,7 @@ title: "How to: Define a GroupBox Template"
 description: Learn how to define a GroupBox Template, by means of the included example in XAML. See also how to create a GroupBox.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "controls [WPF], GroupBox"
   - "GroupBox control [WPF], creating templates"

@@ -3,6 +3,7 @@ title: "How to: Print with a WebBrowser Control"
 description: Learn about how to print with a WebBrowser Control by means of C# and Visual Basic code examples.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

@@ -3,6 +3,7 @@ title: "How to: Provide Standard Menu Items to a Form"
 description: Learn about how to provide standard menu items to a form by using the MenuStrip control via C# and Visual Basic code examples.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

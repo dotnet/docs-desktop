@@ -3,6 +3,7 @@ title: "Optimizing Performance: Application Resources"
 description: Learn how to optimize the performance of application resources in Windows Presentation Foundation (WPF) applications.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "application resources [WPF], performance"
   - "resources [WPF], performance"

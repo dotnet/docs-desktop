@@ -3,6 +3,7 @@ title: "How to: Convert Bound Data"
 description: Learn how to use the IValueConverter interface and the Convert and ConvertBack methods to convert bound data.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

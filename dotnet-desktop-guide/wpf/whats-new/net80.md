@@ -3,6 +3,7 @@ title: What's new in WPF for .NET 8
 description: Learn about what's new in Windows Presentation Foundation (WPF) for .NET 8. .NET 8 was released November 2023.
 ms.date: 10/24/2024
 ms.service: dotnet-desktop
+ms.update-cycle: 365-days
 ms.topic: conceptual
 ---
 

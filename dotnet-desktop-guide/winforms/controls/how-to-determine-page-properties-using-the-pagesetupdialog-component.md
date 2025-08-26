@@ -3,6 +3,7 @@ title: "How to: Determine Page Properties Using the PageSetupDialog Component"
 description: Learn how to determine page properties, like page layout, paper size and other layout choices by using the PageSetupDialog component
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

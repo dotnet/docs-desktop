@@ -3,6 +3,7 @@ title: Format DataGrid Control
 description: Learn how to format the DataGrid Control, which replaces and adds functionality to the DataGrid control.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

@@ -3,6 +3,7 @@ title: Size a Label Control to Fit Its Contents
 description: Learn how to size a Windows Forms label control, which can be single-line or multi-line, to fit its content.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "captions [Windows Forms], sizing"
   - "sizing controls"

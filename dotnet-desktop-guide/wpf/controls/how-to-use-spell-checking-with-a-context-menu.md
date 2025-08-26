@@ -3,6 +3,7 @@ title: "How to: Use Spell Checking with a Context Menu"
 description: Learn how to use Spell Checking with a Context Menu.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 ms.custom: devdivchpfy22
 dev_langs:
   - "csharp"

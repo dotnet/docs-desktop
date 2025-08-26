@@ -2,6 +2,7 @@
 title: "How to: Data Bind to an InkCanvas"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "InkCanvas [WPF], binding data to"
   - "binding data [WPF], to InkCanvas"

@@ -3,6 +3,7 @@ title: Basic Column, Row, and Cell Features in DataGridView Control
 description: Learn more about basic column, row, and cell features in the Windows Forms DataGridView Control.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "DataGridView control [Windows Forms], basic features"
   - "columns [Windows Forms], DataGridView control"

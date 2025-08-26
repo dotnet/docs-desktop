@@ -2,6 +2,7 @@
 title: "GridView Column Header Styles and Templates Overview"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 ms.custom: devdivchpfy22
 description: Learn about the GridView column header styles and templates.
 helpviewer_keywords:

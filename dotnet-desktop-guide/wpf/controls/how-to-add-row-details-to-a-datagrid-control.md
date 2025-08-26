@@ -3,6 +3,7 @@ title: "How to: Add Row Details to a DataGrid Control"
 description: Learn how to customize the data presentation when using the Windows Presentation Foundation DataGrid control by adding a row details section.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

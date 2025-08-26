@@ -3,6 +3,7 @@ title: Group RadioButton Controls to Function as a Set
 description: Learn how to how to group Windows Forms RadioButton controls to function independently of other sets.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "radio buttons [Windows Forms], grouping"
   - "controls [Windows Forms], grouping"

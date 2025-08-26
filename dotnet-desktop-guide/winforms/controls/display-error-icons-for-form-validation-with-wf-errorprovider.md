@@ -3,6 +3,7 @@ title: Display Error Icons for Form Validation with ErrorProvider Component
 description: Learn more about how to display error icons for form validation with the Windows Forms ErrorProvider component.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

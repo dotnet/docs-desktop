@@ -3,6 +3,7 @@ title: Binding declarations overview
 description: Learn how to declare a data binding in XAML or code for your application development in Windows Presentation Foundation (WPF).
 ms.date: 10/22/2024
 ms.service: dotnet-desktop
+ms.update-cycle: 365-days
 author: adegeo
 ms.author: adegeo
 ms.custom: update-template

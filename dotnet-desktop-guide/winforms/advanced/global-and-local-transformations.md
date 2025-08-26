@@ -3,6 +3,7 @@ title: "Global and Local Transformations"
 description: Learn how global transformations apply to every item drawn by a Graphics object and local transformations apply to a specific item.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

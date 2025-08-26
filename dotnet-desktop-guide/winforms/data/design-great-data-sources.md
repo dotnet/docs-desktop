@@ -3,6 +3,7 @@ title: "Design great data sources"
 description: Learn how to design great data sources in Windows Forms .NET.
 ms.date: "05/31/2022"
 ms.service: dotnet-desktop
+ms.update-cycle: 365-days
 dev_langs:
   - "csharp"
   - "vb"

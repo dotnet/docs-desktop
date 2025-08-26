@@ -3,6 +3,7 @@ title: WPF and Win32 interop
 titleSuffix: ""
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "hosting WPF content in Win32 window [WPF]"
   - "HWND interop [WPF]"

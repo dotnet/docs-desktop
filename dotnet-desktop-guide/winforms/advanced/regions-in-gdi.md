@@ -3,6 +3,7 @@ title: "Regions in GDI+"
 description: A region is a portion of the display area of an output device. Learn more about regions in GDI+ and how they are used.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

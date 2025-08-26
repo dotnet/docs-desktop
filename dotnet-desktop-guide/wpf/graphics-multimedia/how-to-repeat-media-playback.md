@@ -3,6 +3,7 @@ title: "How to: Repeat Media Playback"
 description: Learn how to use MediaElement and MediaTimeline in a Storyboard to play a media clip in an infinite loop.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "media [WPF], repeating playback"
   - "repeating media playback [WPF]"

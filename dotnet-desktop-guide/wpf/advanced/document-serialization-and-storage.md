@@ -3,6 +3,7 @@ title: "Document Serialization and Storage"
 description: Learn how documents are serialized, deserialized, and stored in Windows Presentation Foundation (WPF).
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "serialization of documents [WPF]"
   - "documents [WPF], storage"

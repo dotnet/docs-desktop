@@ -4,6 +4,7 @@ titleSuffix: ""
 description: Develop a Windows Presentation Foundation (WPF) desktop application that includes elements common to most WPF applications.
 ms.date: 09/06/2019
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 ms.topic: tutorial
 dev_langs:
   - "csharp"

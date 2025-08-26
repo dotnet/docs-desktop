@@ -3,6 +3,7 @@ title: "Application Development"
 description: Learn how to build a variety of applications using the framework of Windows Presentation Foundation (WPF).
 ms.date: "01/26/2018"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "WPF [WPF], about application development"
   - "application development [WPF], about"

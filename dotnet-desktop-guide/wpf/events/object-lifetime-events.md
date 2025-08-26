@@ -3,6 +3,7 @@ title: "Object lifetime events"
 description: Learn about the object lifetime events for framework-level elements in Windows Presentation Foundation (WPF).
 ms.date: 10/24/2024
 ms.service: dotnet-desktop
+ms.update-cycle: 365-days
 ms.custom: update-template
 dev_langs:
   - "csharp"

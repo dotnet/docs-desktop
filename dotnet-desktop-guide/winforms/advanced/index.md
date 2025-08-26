@@ -3,6 +3,7 @@ title: Enhance apps
 description: Learn more about enhancing Windows Form applications to meet specific user needs with a selection of topics and tutorials.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "Windows Forms, enhancing"
   - "Windows Forms, adding features"

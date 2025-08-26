@@ -3,6 +3,7 @@ title: "Using mouse events"
 description: Overview of using mouse events to handle mouse input. Each event may provide associated data. This article provides a list of mouse-related events.
 ms.date: 04/02/2025
 ms.service: dotnet-desktop
+ms.update-cycle: 365-days
 ms.topic: conceptual
 dev_langs:
   - "csharp"

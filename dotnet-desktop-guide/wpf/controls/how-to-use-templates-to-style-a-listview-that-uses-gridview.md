@@ -3,6 +3,7 @@ title: "How to: Use Templates to Style a ListView That Uses GridView"
 description: Learn how to use templates to specify the style of a ListView control that uses a GridView view mode in a Windows Presentation Foundation (WPF) application.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "ListView controls [WPF], styling"
 ms.assetid: 94bf964b-96c8-4bdf-a0c3-f5271b7cb565

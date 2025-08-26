@@ -2,6 +2,7 @@
 title: "How to: Create Text with a Shadow"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "typography [WPF], shadow effects"
   - "shadow effects in text [WPF]"

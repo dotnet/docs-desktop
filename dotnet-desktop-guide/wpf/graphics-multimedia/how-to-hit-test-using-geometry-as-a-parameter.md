@@ -3,6 +3,7 @@ title: "How to: Hit Test Using Geometry as a Parameter"
 description: Learn about how to perform a hit test on a visual object using a Geometry object as a hit test parameter.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

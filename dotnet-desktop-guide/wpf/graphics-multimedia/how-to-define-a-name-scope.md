@@ -3,6 +3,7 @@ title: "How to: Define a Name Scope"
 description: Learn how to create a NameScope and define it by registering the target objects' names with the element that owns that name scope.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

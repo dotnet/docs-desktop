@@ -3,6 +3,7 @@ title: "How to: Use a Control Rendering Class"
 description: Learn how to use a control rendering class in Windows Forms, by means of code examples in CPP, C#, and Visual Basic.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

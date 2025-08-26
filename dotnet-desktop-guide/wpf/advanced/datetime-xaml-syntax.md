@@ -3,6 +3,7 @@ title: "DateTime XAML Syntax"
 description: Learn about DateTime Extensible Application Markup Language (XAML) syntax and when to use this syntax in Windows Presentation Foundation (WPF).
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "DateTime XAML syntax [WPF], strings for"
   - "DateTime XAML syntax [WPF], where used"

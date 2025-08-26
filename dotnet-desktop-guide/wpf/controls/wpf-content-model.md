@@ -3,6 +3,7 @@ title: "Content Model"
 description: Review a summary of the content model for WPF control and control-like types describing what content can be used in a control.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "UIElement class [WPF], displaying content"
   - "content model [WPF], controls"

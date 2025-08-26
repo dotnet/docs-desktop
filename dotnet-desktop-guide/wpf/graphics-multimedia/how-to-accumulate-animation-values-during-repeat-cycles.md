@@ -3,6 +3,7 @@ title: "How to: Accumulate Animation Values During Repeat Cycles"
 description: Learn how to use the IsCumulative property to accumulate base values of an animation across repeating cycles.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "accumulating animation values across repeating cycles [WPF]"
   - "animation [WPF], accumulating values across repeating cycles"

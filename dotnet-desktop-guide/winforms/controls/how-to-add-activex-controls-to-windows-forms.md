@@ -3,6 +3,7 @@ title: Add ActiveX Controls to forms
 description: Learn how to put ActiveX controls on Windows forms. The Windows Forms Designer is optimized for Windows Forms controls, but you can use ActiveX controls.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "Windows Forms controls, ActiveX controls"
   - "forms [Windows Forms], adding ActiveX controls"

@@ -2,6 +2,7 @@
 title: Set Indents, Hanging Indents, and Bulleted Paragraphs with RichTextBox Control
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

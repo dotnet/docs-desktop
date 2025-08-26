@@ -46,6 +46,9 @@
         "**/*how-to*.md": "how-to",
         "**/*overview*.md": "overview"
       },
+      "ms.update-cycle": {
+        "xaml-services/**/**.{md,yml}": "1825-days"
+      },
       "feedback_system": {
         "**.*": "OpenSource"
       },

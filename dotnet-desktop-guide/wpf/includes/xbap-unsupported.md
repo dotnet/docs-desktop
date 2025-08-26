@@ -3,6 +3,7 @@ author: adegeo
 ms.author: adegeo
 ms.date: 05/08/2024
 ms.service: dotnet-desktop
+ms.update-cycle: 365-days
 ms.topic: include
 ---
 

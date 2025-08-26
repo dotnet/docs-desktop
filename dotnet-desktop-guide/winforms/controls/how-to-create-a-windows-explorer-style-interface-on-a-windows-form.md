@@ -2,6 +2,7 @@
 title: "How to: Create a Windows Explorer–Style Interface on a Windows Form"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "Windows Explorer [Windows Forms], creating with Windows Forms"
   - "SplitContainer control [Windows Forms], Explorer-style interface"

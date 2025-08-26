@@ -2,6 +2,7 @@
 title: "RichTextBox Control"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "text boxes"
   - "RichTextBox control [Windows Forms]"

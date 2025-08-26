@@ -3,6 +3,7 @@ title: Displaying Data in DataGridView Control
 description: Learn how to use the Windows Forms DataGridView control to display data from a variety of external data sources.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "data [Windows Forms], displaying in tabular format"
   - "data grids [Windows Forms], displaying data"

@@ -3,6 +3,7 @@ title: "How to: Handle the ScrollChanged Event"
 description: Learn how to handle the ScrollChanged event, by means of the included code examples in XAML, C#, and Visual Basic.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

@@ -3,6 +3,7 @@ title: "How to: Perform Drag-and-Drop Operations Between Applications"
 description: Learn how to perform drag-and-drop operations between applications by using an established "contract" between two properties.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "drag and drop [Windows Forms], between applications"
 ms.assetid: fa347436-2b12-4dd6-8507-59d7241f6a06

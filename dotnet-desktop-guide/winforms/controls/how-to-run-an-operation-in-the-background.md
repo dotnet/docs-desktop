@@ -3,6 +3,7 @@ title: "How to: Run an Operation in the Background"
 description: Learn how to use the BackgroundWorker class to run a time-consuming Windows Forms operation in the background.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

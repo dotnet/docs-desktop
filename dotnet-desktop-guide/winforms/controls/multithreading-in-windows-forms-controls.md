@@ -3,6 +3,7 @@ title: Multithreading in Controls
 description: Learn about multithreading in Windows Forms Controls, such as making your UI more responsive by performing time-consuming operations on another thread.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "BackgroundWorker component"
   - "threading [Windows Forms], controls"

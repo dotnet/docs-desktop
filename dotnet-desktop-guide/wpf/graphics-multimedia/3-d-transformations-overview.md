@@ -3,6 +3,7 @@ title: "3D Transformations Overview"
 description: Learn how to apply transformations to 3D models in the Windows Presentation Foundation (WPF) graphics system.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 ms.topic: overview
 dev_langs:
   - "csharp"

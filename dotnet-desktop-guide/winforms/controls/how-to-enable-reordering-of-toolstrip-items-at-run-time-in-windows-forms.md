@@ -3,6 +3,7 @@ title: "How to: Enable Reordering of ToolStrip Items at Run Time"
 description: Learn how to enable reordering of ToolStrip items at run time so that users can drag the tool strip to a new location.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"
