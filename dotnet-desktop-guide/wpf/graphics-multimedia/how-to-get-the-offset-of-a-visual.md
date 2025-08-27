@@ -3,6 +3,7 @@ title: "How to: Get the Offset of a Visual"
 description: Learn how to how to retrieve the offset value of a visual object that is relative to its parent, or any ancestor or descendant.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

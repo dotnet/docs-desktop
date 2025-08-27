@@ -3,6 +3,7 @@ title: How to use the Reset and ShouldSerialize methods
 description: Learn how to implement the Reset and ShouldSerialize methods to control a property during design-time in Windows Forms.
 ms.date: 04/02/2025
 ms.service: dotnet-desktop
+ms.update-cycle: 365-days
 ms.topic: how-to
 dev_langs:
   - "csharp"

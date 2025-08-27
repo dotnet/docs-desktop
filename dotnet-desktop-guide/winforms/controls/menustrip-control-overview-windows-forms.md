@@ -3,6 +3,7 @@ title: "MenuStrip Control Overview"
 description: This article provides an overview of the MenuStrip control in Windows Forms, which allows you to easily create menus like those found in Microsoft Office.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 f1_keywords:
   - "MenuStrip"
 helpviewer_keywords:

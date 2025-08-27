@@ -3,6 +3,7 @@ title: "Expander Overview"
 description: This article provides an overview of the Expander control, which provides a way to provide content in an expandable area that resembles a window.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

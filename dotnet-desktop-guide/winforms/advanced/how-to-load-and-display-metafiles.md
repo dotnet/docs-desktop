@@ -3,6 +3,7 @@ title: "How to: Load and Display Metafiles"
 description: Learn how to load and display metafiles using the System.Drawing.Imaging.Metafile class's methods for recording, displaying, and examining vector images.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

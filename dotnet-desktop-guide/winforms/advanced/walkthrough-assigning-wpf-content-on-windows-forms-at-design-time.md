@@ -4,6 +4,7 @@ description: Learn how to assign Windows Presentation Foundation (WPF) controls 
 titleSuffix: ""
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "WPF content [Windows Forms], assigning at design time"
   - "ElementHost control [Windows Forms], assigning WPF content at design time"

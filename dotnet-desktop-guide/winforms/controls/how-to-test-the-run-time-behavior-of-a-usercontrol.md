@@ -3,6 +3,7 @@ title: "How to: Test the Run-Time Behavior of a UserControl"
 description: Learn how to test the run-time behavior of a user control in Windows Forms via this 10-step procedure.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "UserControl class [Windows Forms], testing"
   - "user controls [Windows Forms], testing"

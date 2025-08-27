@@ -3,6 +3,7 @@ title: "How to: Render Images with GDI+"
 description: Learn how to use GDI+ to render images that exist as files in applications using objects and the System.Drawing.Graphics.DrawImage method.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

@@ -3,6 +3,7 @@ title: "Routed events overview"
 description: Learn about routed events in Windows Presentation Foundation (WPF), including how they're routed through an element tree and how to create custom routed events.
 ms.date: 10/24/2024
 ms.service: dotnet-desktop
+ms.update-cycle: 365-days
 ms.topic: overview
 ms.custom: update-template
 dev_langs:

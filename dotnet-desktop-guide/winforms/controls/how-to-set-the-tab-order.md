@@ -3,6 +3,7 @@ title: Set tab order of controls
 description: Learn how to set the tab order of controls on your Windows Forms for .NET. Set the tab order with Visual Studio or using the TabIndex property in the Properties window.
 ms.date: 03/31/2025
 ms.service: dotnet-desktop
+ms.update-cycle: 365-days
 dev_langs:
   - "csharp"
   - "vb"

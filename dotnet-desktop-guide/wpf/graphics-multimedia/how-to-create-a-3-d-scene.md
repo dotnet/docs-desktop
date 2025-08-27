@@ -3,6 +3,7 @@ title: "How to: Create a 3D Scene"
 description: Learn how to create a 3D scene.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 ms.custom: devdivchpfy22
 dev_langs:
   - "csharp"

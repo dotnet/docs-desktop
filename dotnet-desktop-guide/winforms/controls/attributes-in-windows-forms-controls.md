@@ -3,6 +3,7 @@ title: Attributes in Controls
 description: Learn about attributes in Windows Forms controls. The .NET Framework provides a variety of attributes.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 ms.topic: overview
 helpviewer_keywords:
   - "attributes [Windows Forms]"

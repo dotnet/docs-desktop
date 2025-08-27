@@ -2,6 +2,7 @@
 title: "How to: Attach a Shortcut Menu to a TreeNode Using the Designer"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "shortcut menus [Windows Forms], attaching to TreeNodes"
   - "TreeNode [Windows Forms], attaching a shortcut menu using Designer"

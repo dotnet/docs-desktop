@@ -3,6 +3,7 @@ title: "How to: Set the ToolStrip Renderer at Run Time"
 description: Learn how to set the ToolStrip renderer at run time in Windows Forms, by means of code samples in C# and Visual Basic.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

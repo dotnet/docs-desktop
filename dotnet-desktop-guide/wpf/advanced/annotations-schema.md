@@ -3,6 +3,7 @@ title: "Annotations Schema"
 description: Learn about the XML schema definition used by the Microsoft Annotations Framework to save and retrieve user annotation data in Windows Presentation Foundation (WPF).
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "XML schema definition (XSD)"
   - "Microsoft Annotations Framework [WPF]"

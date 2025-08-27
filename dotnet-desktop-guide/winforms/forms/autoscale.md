@@ -3,6 +3,7 @@ title: "Automatic form scaling"
 description: "A look into how Windows Forms for .NET handles scaling the UI."
 ms.date: 10/26/2020
 ms.service: dotnet-desktop
+ms.update-cycle: 365-days
 ms.topic: overview
 helpviewer_keywords:
   - "scalability [Windows Forms], automatic in Windows Forms"

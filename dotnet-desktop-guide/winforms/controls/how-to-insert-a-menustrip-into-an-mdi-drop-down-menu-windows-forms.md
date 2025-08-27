@@ -3,6 +3,7 @@ title: "How to: Insert a MenuStrip into an MDI Drop-Down Menu"
 description: Learn how to insert a MenuStrip into an MDI drop-down menu when there is a difference between the MDI parent and the MDI child.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

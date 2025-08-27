@@ -3,6 +3,7 @@ title: "How to: Control Key-Frame Animation Timing"
 description: Learn to control the timing of key frames within a key-frame animation using a Duration property and specifying a KeyTime for each key frame in the animation.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

@@ -3,6 +3,7 @@ title: Designers changes from .NET Framework
 description: Learn about the Windows Forms designer changes from .NET Framework to .NET.
 ms.date: 04/02/2025
 ms.service: dotnet-desktop
+ms.update-cycle: 365-days
 ms.topic: overview
 no-loc: ["UserControl", "UserControl1", "UserControlProject", "Label", "Button", "Form", "TextBox"]
 dev_langs:

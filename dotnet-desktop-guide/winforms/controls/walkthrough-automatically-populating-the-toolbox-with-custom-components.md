@@ -2,6 +2,7 @@
 title: "Walkthrough: Automatically Populating the Toolbox with Custom Components"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "IToolboxService interface"
   - "Toolbox [Windows Forms], populating"

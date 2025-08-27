@@ -3,6 +3,7 @@ title: "How to: Test Point4D structures for equality and inequality"
 description: Learn how to test Point4D structures for equality and inequality.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "inequality [WPF], testing Point4D structures for"
   - "equality [WPF], testing Point4D structures for"

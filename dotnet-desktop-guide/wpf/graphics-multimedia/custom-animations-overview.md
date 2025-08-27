@@ -3,6 +3,7 @@ title: "Custom Animations Overview"
 description: Learn how and when to extend the WPF animation system by creating custom key frames, animation classes, or by using per-frame callback to bypass it.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 ms.topic: overview
 helpviewer_keywords:
   - "custom classes [WPF], animation"

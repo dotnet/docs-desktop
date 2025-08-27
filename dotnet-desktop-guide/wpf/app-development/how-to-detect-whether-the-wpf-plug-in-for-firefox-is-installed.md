@@ -4,6 +4,7 @@ description: Learn how to detect whether the WPF plug-in for Firefox is installe
 titleSuffix: ""
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "plug-in for Firefox [WPF]"
   - "detecting Firefox installation [WPF]"

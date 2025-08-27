@@ -3,6 +3,7 @@ title: Freeze Columns in DataGridView Control
 description: Learn how to freeze columns in DataGridView Control this enables you to display the customer name or other data at all times while other columns scroll.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

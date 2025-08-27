@@ -3,6 +3,7 @@ title: "Popup Placement Behavior"
 description: Learn how to specify the position of a Windows Presentation Foundation Popup relative to a control, the mouse, or the screen by using properties.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "popups [WPF]"
   - "Popup control [WPF], placing"

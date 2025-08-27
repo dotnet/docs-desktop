@@ -3,6 +3,7 @@ title: "How to: Apply a Transform to a BitmapImage"
 description: Learn how to apply a Transform to a BitmapImage using Extensible Application Markup Language (XAML) in Windows Presentation Foundation (WPF).
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

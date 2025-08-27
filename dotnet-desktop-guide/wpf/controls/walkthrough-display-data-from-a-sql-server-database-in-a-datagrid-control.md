@@ -3,6 +3,7 @@ title: "Walkthrough: Display Data from a SQL Server Database in a DataGrid Contr
 description: Learn how to get data from a SQL Server database and display it in a Windows Presentation Foundation DataGrid control by using this walkthrough.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

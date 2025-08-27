@@ -3,6 +3,7 @@ title: Design-time properties overview
 description: Learn about how the Windows Forms Designer interacts with control and form properties during design-time.
 ms.date: 04/02/2025
 ms.service: dotnet-desktop
+ms.update-cycle: 365-days
 ms.topic: overview
 no-loc: ["UserControl"]
 dev_langs:

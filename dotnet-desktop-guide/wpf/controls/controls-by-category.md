@@ -3,6 +3,7 @@ title: "Controls by Category"
 description: Review Windows Presentation Foundation controls grouped into categories, which can help you select the appropriate control by comparing similar controls.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "controls [WPF], listed by category"
 ms.assetid: f8a1f78e-d9fa-4367-9ec6-f084577e83bb

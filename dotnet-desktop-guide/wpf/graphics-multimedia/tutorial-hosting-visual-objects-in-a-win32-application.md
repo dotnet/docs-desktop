@@ -3,6 +3,7 @@ title: "Tutorial: Hosting Visual Objects in a Win32 Application"
 description: Learn to write a sample application that hosts Windows Presentation Foundation (WPF) visual objects in a Win32 window.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

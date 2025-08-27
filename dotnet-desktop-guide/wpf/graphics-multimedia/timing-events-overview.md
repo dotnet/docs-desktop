@@ -3,6 +3,7 @@ title: "Timing Events Overview"
 description: Learn how to use the timing events available for Timeline and Clock objects.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

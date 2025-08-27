@@ -3,6 +3,7 @@ title: "How to: Put Quotation Marks in a String"
 description: Learn how to place quotation marks in a string of text. Also, learn to use the Quote field as a constant.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

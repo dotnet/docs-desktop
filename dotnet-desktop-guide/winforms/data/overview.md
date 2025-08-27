@@ -3,6 +3,7 @@ title: "Overview of Data Binding and Windows Forms"
 description: "Learn about interfaces related to Data Binding, data sources supported by Windows Forms, and types of Data Binding."
 ms.date: "05/05/2022"
 ms.service: dotnet-desktop
+ms.update-cycle: 365-days
 ms.topic: overview
 helpviewer_keywords:
   - "data [Windows Forms], data-binding interfaces"

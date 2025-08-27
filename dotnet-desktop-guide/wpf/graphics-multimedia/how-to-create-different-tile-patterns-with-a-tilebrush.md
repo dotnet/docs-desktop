@@ -3,6 +3,7 @@ title: "How to: Create Different Tile Patterns with a TileBrush"
 description: Learn about the TileMode property enabling you to specify how the content of a TileBrush is repeated to fill an output area.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

@@ -3,6 +3,7 @@ title: "Types of Bitmaps"
 description: Learn about bitmap types and the supported GDI+ graphics file formats, including BMP, JPG, GIF, PNG, and TIFF.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 ms.topic: overview
 helpviewer_keywords:
   - "jpeg files"

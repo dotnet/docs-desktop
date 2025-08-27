@@ -3,6 +3,7 @@ title: Link to an Object or Web Page with LinkLabel Control
 description: Learn how to create Web-style links to an object or web page with the Windows Forms LinkLabel control.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

@@ -3,6 +3,7 @@ title: "How to: Animate a Double by Using Key Frames"
 description: Learn how to use the DoubleAnimationUsingKeyFrames class to animate the value of a property that takes a Double by using key frames.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

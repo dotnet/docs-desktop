@@ -2,6 +2,7 @@
 title: "How To: Change the Value of an Existing Setting at Design Time"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "application settings [Windows Forms], design time"
   - "application settings [Windows Forms], changing"

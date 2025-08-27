@@ -3,6 +3,7 @@ title: "How to: Use a Pen to Draw Lines"
 description: Learn how to use a pen to draw lines by using a a System.Drawing.Graphics object and a System.Drawing.Pen object.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

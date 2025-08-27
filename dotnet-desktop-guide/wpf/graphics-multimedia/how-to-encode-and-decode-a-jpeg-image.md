@@ -3,6 +3,7 @@ title: "How to: Encode and decode a JPEG image"
 description: Learn how to decode and encode a JPEG image using the specific JpegBitmapDecoder and JpegBitmapEncoder objects.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

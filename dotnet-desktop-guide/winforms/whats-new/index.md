@@ -3,6 +3,7 @@ title: What's new in Windows Forms
 description: Learn about what's new in Windows Forms. This article covers changes to Windows Forms since .NET 5 was released.
 ms.date: 03/17/2025
 ms.service: dotnet-desktop
+ms.update-cycle: 365-days
 ms.topic: conceptual
 ai-usage: ai-assisted
 ---

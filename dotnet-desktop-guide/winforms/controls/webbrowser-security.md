@@ -3,6 +3,7 @@ title: "WebBrowser Security"
 description: Learn about WebBrowser Security, which is designed to work in full trust only. HTML in the control can come from external Web servers.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "WebBrowser control [Windows Forms], security"
   - "security [Windows Forms], WebBrowser control"

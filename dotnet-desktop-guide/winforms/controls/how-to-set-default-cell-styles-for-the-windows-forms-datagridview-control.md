@@ -3,6 +3,7 @@ title: Set Default Cell Styles for DataGridView Control
 description: Learn about how to set default cell styles for the Windows Forms DataGridView control, which can specify default cell styles for the entire control and for specific columns and rows.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

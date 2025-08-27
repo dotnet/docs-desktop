@@ -3,6 +3,7 @@ title: "How to: Improve Rendering Performance by Caching an Element"
 description: Learn about how to use the BitmapCache class to improve rendering performance of a complex UIElement.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "rendering performance [WPF], caching an element"
   - "BitmapCache [WPF], improving rendering performance"

@@ -3,6 +3,7 @@ title: "OpenFileDialog Component Overview"
 description: This article presents an overview of the OpenFileDialog component in Windows Forms, which is a pre-configured dialog box.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 f1_keywords:
   - "OpenFileDialog"
 helpviewer_keywords:

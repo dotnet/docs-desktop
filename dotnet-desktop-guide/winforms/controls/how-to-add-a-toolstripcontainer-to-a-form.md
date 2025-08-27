@@ -3,6 +3,7 @@ title: "How to: Add a ToolStripContainer to a Form"
 description: Learn how you can programmatically add a ToolStripContainer to a Windows Form and populate it with controls.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

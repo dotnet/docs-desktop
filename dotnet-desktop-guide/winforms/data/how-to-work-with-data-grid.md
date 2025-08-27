@@ -3,6 +3,7 @@ title: "How to navigate data"
 description: Learn how to navigate data in a Windows Forms application with a BindingSource component.
 ms.date: "05/20/2022"
 ms.service: dotnet-desktop
+ms.update-cycle: 365-days
 dev_langs:
   - "csharp"
   - "vb"

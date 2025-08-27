@@ -3,6 +3,7 @@ title: "How to: Get the Binding Object from a Bound Target Property"
 description: Learn how to retrieve the binding object from a data-bound target property with several provided code examples.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "data binding [WPF], getting binding objects from bound target properties"
   - "properties [WPF], getting binding objects from"

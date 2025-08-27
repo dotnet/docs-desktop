@@ -3,6 +3,7 @@ title: "How to: Set a Property After Animating It with a Storyboard"
 description: Learn how to set a Property after animating it with a Storyboard.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 ms.custom: devdivchpfy22
 dev_langs:
   - "csharp"

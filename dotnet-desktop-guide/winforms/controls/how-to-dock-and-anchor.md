@@ -3,6 +3,7 @@ title: How to dock and anchor controls
 description: Learn how to s
 ms.date: 03/31/2025
 ms.service: dotnet-desktop
+ms.update-cycle: 365-days
 dev_langs:
   - "csharp"
   - "vb"

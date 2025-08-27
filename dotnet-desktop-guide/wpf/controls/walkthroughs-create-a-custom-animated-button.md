@@ -3,6 +3,7 @@ title: "Walkthroughs: Create a Custom Animated Button"
 description: A walkthrough about how to create a custom animated button using a style and template so you can apply this custom button easily to any buttons in your application.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "custom animated buttons [WPF]"
   - "buttons [WPF]"

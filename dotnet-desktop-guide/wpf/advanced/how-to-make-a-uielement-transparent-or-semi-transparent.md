@@ -2,6 +2,7 @@
 title: "How to: Make a UIElement Transparent or Semi-Transparent"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "UIElements [WPF], transparency"
   - "opacity [WPF], of UIElements"

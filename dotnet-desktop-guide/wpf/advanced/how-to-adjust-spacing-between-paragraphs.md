@@ -2,6 +2,7 @@
 title: "How to: Adjust Spacing Between Paragraphs"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "spacing between paragraphs [WPF]"
   - "paragraphs [WPF], spacing between"

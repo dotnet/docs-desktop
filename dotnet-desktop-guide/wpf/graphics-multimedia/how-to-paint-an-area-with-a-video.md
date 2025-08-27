@@ -3,6 +3,7 @@ title: "How to: Paint an Area with a Video"
 description: Learn how to Paint an Area with a Video.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 ms.custom: devdivchpfy22
 dev_langs:
   - "csharp"

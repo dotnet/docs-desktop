@@ -3,6 +3,7 @@ title: "How to: Animate a Matrix by Using Key Frames"
 description: Learn how to use the MatrixAnimationUsingKeyFrames class to animate the Matrix property of a MatrixTransform by using key frames.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "animation [WPF], Matrix properties with key frames"
   - "Matrix properties [WPF], animating with key frames"

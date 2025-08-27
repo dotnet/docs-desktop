@@ -3,6 +3,7 @@ title: "ProgressBar Styles and Templates"
 description: Learn about the styles and templates for the ProgressBar control allowing you to modify the default ControlTemplate and give it a unique appearance.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "parts [WPF], ProgressBar"
   - "ProgressBar [WPF], styles and templates"

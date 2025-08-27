@@ -3,6 +3,7 @@ title: "Optimizing Performance: Taking Advantage of Hardware"
 description: Learn how to optimize the performance of hardware and to take advantage of Windows Presentation Foundation (WPF) performance optimization features.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "graphics [WPF], performance"
   - "hardware rendering pipeline [WPF]"

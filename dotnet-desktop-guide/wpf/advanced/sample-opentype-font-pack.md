@@ -3,6 +3,7 @@ title: "Sample OpenType Font Pack"
 description: Learn about sample OpenType fonts and get an overview of how they are distributed with the Windows SDK.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "OpenType font pack [WPF]"
   - "fonts [WPF], OpenType font pack"

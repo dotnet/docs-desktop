@@ -4,6 +4,7 @@ description: Learn how to arrange Windows Presentation Foundation (WPF) content 
 titleSuffix: ""
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "WPF user control [Windows Forms], hosting in a layout panel"
   - "WPF content [Windows Forms], arranging at design time"

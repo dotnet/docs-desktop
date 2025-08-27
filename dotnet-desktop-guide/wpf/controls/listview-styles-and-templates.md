@@ -3,6 +3,7 @@ title: "ListView Styles and Templates"
 description: Review a list of topics describing the styles and templates available for use with ListView control.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "parts [WPF], ListView"
   - "states [WPF], ListView"

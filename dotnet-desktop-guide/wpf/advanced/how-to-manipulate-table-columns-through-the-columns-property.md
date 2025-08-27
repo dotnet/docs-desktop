@@ -2,6 +2,7 @@
 title: "How to: Manipulate a Table's Columns through the Columns Property"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 ms.custom: devdivchpfy22
 description: Learn how to manipulate a Table's Columns through the Columns property.
 dev_langs:

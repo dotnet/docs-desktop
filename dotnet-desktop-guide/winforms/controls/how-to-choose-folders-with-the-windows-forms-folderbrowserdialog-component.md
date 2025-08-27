@@ -3,6 +3,7 @@ title: Choose Folders with FolderBrowserDialog Component
 description: Learn how to use the Windows Forms FolderBrowserDialog component within Windows applications you create to prompt users to select a folder.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

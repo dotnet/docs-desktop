@@ -3,6 +3,7 @@ title: "How to: Create a Read-Only Text Box"
 description: Learn about transforming an editable Windows Forms text box into a read-only Windows Forms text box.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "TextBox control [Windows Forms], read-only"
   - "read-only text boxes"

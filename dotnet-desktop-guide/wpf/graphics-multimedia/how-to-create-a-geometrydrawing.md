@@ -3,6 +3,7 @@ title: "How to: Create a GeometryDrawing"
 description: Learn how to create and display a GeometryDrawing by associating a Pen and a Brush with a Geometry to create a shape with a fill and an outline.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "shapes [WPF], renderable"
   - "renderable shapes [WPF]"

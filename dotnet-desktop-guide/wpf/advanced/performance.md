@@ -3,6 +3,7 @@ title: "Performance"
 description: Learn how to achieve optimal application performance in application design as well as get an understanding of best practices for WPF applications.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "Windows Presentation Foundation [WPF], performance"
   - "performance [WPF]"

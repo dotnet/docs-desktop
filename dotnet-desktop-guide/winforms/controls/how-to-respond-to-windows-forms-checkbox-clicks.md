@@ -3,6 +3,7 @@ title: Respond to CheckBox Clicks
 description: Learn how to program your Windows Forms application to perform some action depending upon the state of the check box.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

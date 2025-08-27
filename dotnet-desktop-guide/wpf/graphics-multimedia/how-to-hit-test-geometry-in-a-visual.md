@@ -3,6 +3,7 @@ title: "How to: Hit Test Geometry in a Visual"
 description: Learn how to perform a hit test on a visual object that is composed of one or more Geometry objects.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

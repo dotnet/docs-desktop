@@ -3,6 +3,7 @@ title: "Order of Events"
 description: Learn details regarding the order of events in Windows Forms during several important stages in the lifetime of applications and controls.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "events [Windows Forms], order of"
   - "focus event order"

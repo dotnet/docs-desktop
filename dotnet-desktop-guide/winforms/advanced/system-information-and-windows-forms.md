@@ -3,6 +3,7 @@ title: System Information
 description: Learn how to incorporate computer system information into Windows Forms applications using the System.Windows.Forms.SystemInformation class.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

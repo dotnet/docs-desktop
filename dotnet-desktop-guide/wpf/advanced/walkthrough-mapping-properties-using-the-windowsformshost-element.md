@@ -2,6 +2,7 @@
 title: "Walkthrough: Mapping Properties Using the WindowsFormsHost Element"
 ms.date: 08/18/2018
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

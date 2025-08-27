@@ -3,6 +3,7 @@ title: "How to: Use a Color Matrix to Transform a Single Color"
 description: Learn how to use a color matrix to transform a single color using the System.Drawing.Image and System.Drawing.Bitmap objects.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

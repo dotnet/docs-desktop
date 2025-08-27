@@ -3,6 +3,7 @@ title: Bind ComboBox or ListBox Control to Data
 description: Learn how to bind the Windows Forms ComboBox and ListBox to data to perform tasks like browsing data in a database, entering new data, or editing existing data.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

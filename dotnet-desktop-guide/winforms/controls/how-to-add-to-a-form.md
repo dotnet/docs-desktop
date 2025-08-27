@@ -3,6 +3,7 @@ title: Add Controls to a Form
 description: Learn how to add a control a form in Windows Forms for .NET
 ms.date: 03/31/2025
 ms.service: dotnet-desktop
+ms.update-cycle: 365-days
 dev_langs:
   - "csharp"
   - "vb"

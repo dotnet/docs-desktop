@@ -2,6 +2,7 @@
 title: "Walkthrough: Authoring a Composite Control with Visual C#"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - CSharp
 helpviewer_keywords:

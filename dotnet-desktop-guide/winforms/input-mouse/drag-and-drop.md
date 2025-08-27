@@ -3,6 +3,7 @@ title: "Drag-and-drop mouse behaviors"
 description: Learn about how drag-and-drop works on Windows Forms, including how to perform drag-and-drop with the mouse.
 ms.date: 04/02/2025
 ms.service: dotnet-desktop
+ms.update-cycle: 365-days
 ms.topic: conceptual
 dev_langs:
   - "csharp"

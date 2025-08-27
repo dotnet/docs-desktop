@@ -3,6 +3,7 @@ title: "How to: Anchor and Dock Child Controls in a FlowLayoutPanel Control"
 description: Learn how to programmatically anchor and dock child controls in a Windows Forms FlowLayoutPanel control.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "layout [Windows Forms], child controls"
   - "FlowLayoutPanel control [Windows Forms], child controls"

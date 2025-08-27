@@ -3,6 +3,7 @@ title: "How to: Animate the Position of an Object by Using PointAnimation"
 description: Learn how to use the the PointAnimation class to animate an object along a Path from one point on the screen to another.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

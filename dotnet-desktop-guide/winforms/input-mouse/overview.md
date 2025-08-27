@@ -3,6 +3,7 @@ title: "Overview of mouse input"
 description: Learn about how mouse input works in Windows Forms for .NET. Mouse events are raised by forms and controls and represent the position and button state of the mouse.
 ms.date: 04/02/2025
 ms.service: dotnet-desktop
+ms.update-cycle: 365-days
 ms.topic: overview
 helpviewer_keywords:
   - "Windows Forms, mouse input"

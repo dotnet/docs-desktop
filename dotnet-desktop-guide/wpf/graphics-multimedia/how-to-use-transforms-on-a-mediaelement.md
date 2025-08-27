@@ -3,6 +3,7 @@ title: "How to: Use Transforms on a MediaElement"
 description: Learn how to how to use a RotateTransform on a MediaElement.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "Transforms [WPF], using on MediaElements"
   - "multimedia [WPF], using Transforms on MediaElements"

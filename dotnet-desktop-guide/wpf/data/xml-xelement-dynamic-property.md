@@ -3,6 +3,7 @@ title: Xml (XElement dynamic property)
 description: Learn about how the XElement.Xml property retrieves the unformatted XML content of the element.
 ms.date: 10/22/2019
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 ms.topic: reference
 apiname:
   - "XElement.Xml"

@@ -3,6 +3,7 @@ title: "How to: Read Image Metadata"
 description: Learn how to read the Windows Forms PropertyItems property of an Image object to retrieve all the metadata from a file.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

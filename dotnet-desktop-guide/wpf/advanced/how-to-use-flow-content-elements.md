@@ -3,6 +3,7 @@ title: "How to: Use Flow Content Elements"
 description: Learn how to use flow content elements to apply declarative usage for various flow content elements and their associated attributes.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "flow content elements [WPF]"
   - "documents [WPF], flow content elements"

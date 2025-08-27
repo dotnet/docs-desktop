@@ -4,6 +4,7 @@ description: Learn about data binding in Windows Presentation Foundation for .NE
 author: adegeo
 ms.date: 10/22/2024
 ms.service: dotnet-desktop
+ms.update-cycle: 365-days
 ms.author: adegeo
 ms.custom: update-template
 dev_langs:

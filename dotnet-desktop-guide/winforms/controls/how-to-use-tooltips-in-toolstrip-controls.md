@@ -3,6 +3,7 @@ title: "How to: Use ToolTips in ToolStrip Controls"
 description: Learn how to use ToolTips in ToolStrip controls in Windows Forms by means of the procedures outlined in this article.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "ToolStrip control [Windows Forms], adding tooltips"
   - "toolbars [Windows Forms], adding tooltips"

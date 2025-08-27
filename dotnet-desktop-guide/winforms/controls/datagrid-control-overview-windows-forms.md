@@ -3,6 +3,7 @@ title: "DataGrid Control Overview"
 description: This article provides an overview of the DataGrid control in Windows forms, displays data in a series of rows and columns.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 f1_keywords:
   - "DataGrid"
 helpviewer_keywords:

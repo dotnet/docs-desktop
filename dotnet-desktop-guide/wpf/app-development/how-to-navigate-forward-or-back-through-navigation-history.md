@@ -3,6 +3,7 @@ title: "How to: Navigate Forward or Back Through Navigation History"
 description: Learn how to navigate forward or back through navigation history, by means of the included code examples in C# and Visual Basic.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

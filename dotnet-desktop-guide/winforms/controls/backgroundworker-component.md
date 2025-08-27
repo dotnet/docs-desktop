@@ -3,6 +3,7 @@ title: "BackgroundWorker Component"
 description: Learn more about the BackgroundWorker component in Windows Forms, which enables your form or control to run an operation asynchronously.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "BackgroundWorker component"
   - "background tasks"

@@ -3,6 +3,7 @@ title: "How to: Receive Notification When a Clock's State Changes"
 description: Learn how to receive notification when a Clock's state changes.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 ms.custom: devdivchpfy22
 dev_langs:
   - "csharp"

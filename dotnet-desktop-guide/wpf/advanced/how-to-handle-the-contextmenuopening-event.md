@@ -2,6 +2,7 @@
 title: "How to: Handle the ContextMenuOpening Event"
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "ContextMenuOpening properties [WPF]"
 ms.assetid: 789652fb-1951-4217-934a-7843e355adf4

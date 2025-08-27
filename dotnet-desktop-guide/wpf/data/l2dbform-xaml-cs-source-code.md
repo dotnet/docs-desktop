@@ -3,6 +3,7 @@ title: L2DBForm.xaml.cs source code
 description: Learn about the contents and description of the C# source code in the file L2DBForm.xaml.cs including tutorials and code examples.
 ms.date: 10/22/2019
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 ms.topic: sample
 ---
 # L2DBForm.xaml.cs source code

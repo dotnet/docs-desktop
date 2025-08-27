@@ -3,6 +3,7 @@ title: Respond to Button Clicks
 description: Learn how to respond to Windows Forms button clicks. The most basic use of a Windows Forms Button control is to run some code when the button is clicked.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

@@ -3,6 +3,7 @@ title: "UI Automation of a Custom Control"
 description: Learn how to implement a server-side UI Automation provider for a custom control that runs in a WPF application.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 ms.topic: overview
 dev_langs:
   - "csharp"

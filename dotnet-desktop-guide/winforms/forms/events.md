@@ -3,6 +3,7 @@ title: "Events Overview"
 description: "A brief overview about events with .NET Windows Forms."
 ms.date: 08/18/2025
 ms.service: dotnet-desktop
+ms.update-cycle: 365-days
 ms.topic: overview
 ai-usage: ai-assisted
 dev_langs: ["csharp", "vb"]

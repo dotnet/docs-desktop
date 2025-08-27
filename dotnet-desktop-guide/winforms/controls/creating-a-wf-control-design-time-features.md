@@ -3,6 +3,7 @@ title: Create a Control That Takes Advantage of Visual Studio Design-Time Featur
 description: Learn how to create a custom designer for a custom control in Windows Forms that takes advantage of design-time features.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

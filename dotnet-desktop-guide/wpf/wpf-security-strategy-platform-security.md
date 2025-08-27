@@ -3,6 +3,7 @@ title: Platform security strategy
 description: Learn about the Windows Presentation Foundation (WPF) security services and how they integrate with the security features of the underlying platform.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 dev_langs:
   - "csharp"
   - "vb"

@@ -3,6 +3,7 @@ title: "How to: Customize the Ticks on a Slider"
 description: Learn how to customize ticks on a Slider, or how to create a Slider control that has tick marks, via the included code example in XAML.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
+ms.update-cycle: 1825-days
 helpviewer_keywords:
   - "TickBar [WPF]"
   - "Slider control [WPF], creating with TickBar"

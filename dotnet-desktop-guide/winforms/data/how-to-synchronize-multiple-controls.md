@@ -3,6 +3,7 @@ title: "How to synchronize multiple controls bound to the same data source"
 description: Learn how to ensure multiple controls bound to the same data source remain synchronized.
 ms.date: "06/06/2022"
 ms.service: dotnet-desktop
+ms.update-cycle: 365-days
 dev_langs:
   - "csharp"
   - "vb"
