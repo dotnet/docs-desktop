@@ -1,7 +1,7 @@
 ---
 title: What's new in Windows Forms
 description: Learn about what's new in Windows Forms. This article covers changes to Windows Forms since .NET 5 was released.
-ms.date: 03/17/2025
+ms.date: 09/09/2025
 ms.service: dotnet-desktop
 ms.update-cycle: 365-days
 ms.topic: conceptual
@@ -12,12 +12,18 @@ ai-usage: ai-assisted
 
 Each .NET release introduces a new version of Windows Forms (WinForms). This article gives you a summery of what's new in each release.
 
-## .NET 10 Preview
+## .NET 10 Release Candidate
 
-This section describes the main changes to WinForms for .NET 10 Preview.
+This section describes the main changes to WinForms for .NET 10 Release Candidate.
 
+- [Overview of Windows Forms on .NET 10](net100.md)
 - [Clipboard changes](net100.md#clipboard-changes)
+- [Async forms](net100.md#async-forms)
 - [Custom designer improvements](net100.md#custom-designer-improvements)
+- [Dark mode](net100.md#dark-mode)
+- [Accessibility](net100.md#accessibility)
+- [ScreenCaptureMode API](net100.md#screencapturemode-api)
+- [Analyzer improvements](net100.md#analyzer-improvements)
 
 ## .NET 9
 
