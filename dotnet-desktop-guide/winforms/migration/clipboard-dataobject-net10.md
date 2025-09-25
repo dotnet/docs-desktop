@@ -8,37 +8,29 @@ ms.topic: concept-article
 ms.date: 09/25/2025
 ai-usage: ai-generated
 
-#customer intent: As a Windows Forms developer, I want to understand the clipboard and DataObject changes in .NET 10 so that I can migrate my applications and use the new type-safe APIs.
+#customer intent: As a Windows Forms developer, I want to understand the clipboard and DataObject changes in .NET 10 so that I can upgrade my applications and use the new type-safe APIs.
 
 ---
 
 # Windows Forms clipboard and DataObject changes in .NET 10
 
-<!-- 
-EXPAND THIS INTRODUCTION: Write a compelling introduction that:
-- Explains why .NET 10 made these clipboard changes (BinaryFormatter security issues)
-- Describes the impact on Windows Forms developers
-- Summarizes the key benefits of the new approach (type safety, security, JSON)
-- Sets expectations for what developers need to know and do
-- Mentions this is part of broader .NET security improvements
-- Keep it concise but informative (2-3 paragraphs)
--->
+.NET 10 introduces significant changes to Windows Forms clipboard and drag-and-drop functionality, driven by the removal of `BinaryFormatter` from the .NET runtime. The `BinaryFormatter` component, which previously handled serialization of custom objects for clipboard operations and data transfer scenarios, has been removed due to serious security vulnerabilities that made it unsuitable for modern applications. This change affects how Windows Forms applications store and retrieve custom data types through clipboard operations and drag-and-drop interactions.
 
-[Introduce and explain the purpose of the article - overview of .NET 10 clipboard changes and why they matter to developers.]
+The new clipboard APIs provide a more secure and type-safe approach to data transfer. Instead of relying on binary serialization, .NET 10 introduces JSON-based serialization through the `SetDataAsJson<T>()` method and type-safe retrieval through the `TryGetData<T>()` family of methods. These changes eliminate the security risks associated with `BinaryFormatter` while providing better error handling, improved performance for common scenarios, and explicit type safety that helps prevent runtime errors.
+
+This modernization is part of broader .NET security improvements and requires Windows Forms developers to update their applications. While the changes are breaking, they offer significant benefits including enhanced security, better cross-process compatibility, and more predictable behavior. This article guides you through understanding these changes, upgrading existing code, and adopting the new recommended patterns for clipboard and drag-and-drop operations in your Windows Forms applications.
 
 ## Prerequisites
 
-<!-- 
-EXPAND PREREQUISITES: List the knowledge and experience needed to understand this article:
-- Basic Windows Forms development experience
-- Understanding of clipboard and drag-drop operations
-- Familiarity with C# or VB.NET
-- Knowledge of .NET serialization concepts (helpful but not required)
-- Experience with JSON serialization (System.Text.Json) is beneficial
-Use an unordered list format as per style guidelines.
--->
+To effectively understand and apply the clipboard changes in .NET 10, you should have:
 
-[Prerequisites for understanding and applying these changes - .NET knowledge, Windows Forms experience, etc.]
+- Experience developing Windows Forms applications in .NET.
+- Basic understanding of clipboard operations and drag-and-drop functionality in Windows Forms.
+- Familiarity with C# or Visual Basic .NET programming.
+- Knowledge of object serialization concepts, particularly JSON serialization using `System.Text.Json`.
+- Understanding of type safety and generic methods in .NET.
+- Experience with error handling patterns and boolean return methods.
+- Basic familiarity with .NET security concepts and the risks associated with deserialization.
 
 ## Breaking changes from BinaryFormatter removal
 
