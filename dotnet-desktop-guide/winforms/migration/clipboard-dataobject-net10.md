@@ -14,13 +14,43 @@ ai-usage: ai-generated
 
 # Windows Forms clipboard and DataObject changes in .NET 10
 
+<!-- 
+EXPAND THIS INTRODUCTION: Write a compelling introduction that:
+- Explains why .NET 10 made these clipboard changes (BinaryFormatter security issues)
+- Describes the impact on Windows Forms developers
+- Summarizes the key benefits of the new approach (type safety, security, JSON)
+- Sets expectations for what developers need to know and do
+- Mentions this is part of broader .NET security improvements
+- Keep it concise but informative (2-3 paragraphs)
+-->
+
 [Introduce and explain the purpose of the article - overview of .NET 10 clipboard changes and why they matter to developers.]
 
 ## Prerequisites
 
+<!-- 
+EXPAND PREREQUISITES: List the knowledge and experience needed to understand this article:
+- Basic Windows Forms development experience
+- Understanding of clipboard and drag-drop operations
+- Familiarity with C# or VB.NET
+- Knowledge of .NET serialization concepts (helpful but not required)
+- Experience with JSON serialization (System.Text.Json) is beneficial
+Use an unordered list format as per style guidelines.
+-->
+
 [Prerequisites for understanding and applying these changes - .NET knowledge, Windows Forms experience, etc.]
 
 ## Breaking changes from BinaryFormatter removal
+
+<!-- 
+EXPAND THIS OUTLINE: Transform these bullet points into comprehensive documentation that:
+- Explains each breaking change with detailed context
+- Provides before/after code examples showing what breaks
+- Shows specific error messages or behaviors developers will encounter
+- Includes guidance on identifying affected code in existing applications
+- Links to migration strategies and solutions in later sections
+- Uses clear, actionable language with second person voice
+-->
 
 - **Custom types no longer serialize automatically** - Objects that previously worked with `SetData()` now require explicit handling
 - **`GetData()` behavior changes** - Legacy method may not retrieve data as expected
@@ -31,6 +61,17 @@ ai-usage: ai-generated
   - Cross-process data sharing with complex types
 
 ## New type-safe APIs
+
+<!-- 
+EXPAND THIS OUTLINE: Create comprehensive documentation for the new APIs that:
+- Explains each API family with detailed method signatures and overloads
+- Provides practical code examples for each method showing real-world usage
+- Demonstrates the benefits of type safety and error handling
+- Shows how these APIs replace legacy methods
+- Includes both C# and VB.NET examples where appropriate
+- Covers performance and security advantages
+- Uses proper xref links to API documentation
+-->
 
 - **`TryGetData<T>()` family of methods**:
   - Multiple overloads for different scenarios
@@ -51,6 +92,17 @@ ai-usage: ai-generated
   - Provides compile-time type safety guarantees
 
 ## Recommended built-in types
+
+<!-- 
+EXPAND THIS OUTLINE: Create detailed documentation that:
+- Explains why these types work without BinaryFormatter (built-in NRBF serialization)
+- Provides comprehensive examples of using each type category
+- Shows practical scenarios where each type is useful
+- Explains the limitations and considerations for each type
+- Includes performance and compatibility notes
+- Demonstrates array and collection usage patterns
+- Covers null handling and edge cases
+-->
 
 - **Primitive types** that work without BinaryFormatter:
   - `bool`, `byte`, `char`, `decimal`, `double`, `short`, `int`, `long`
@@ -73,6 +125,17 @@ ai-usage: ai-generated
 
 ## Working with custom types
 
+<!-- 
+EXPAND THIS OUTLINE: Provide comprehensive guidance that:
+- Shows step-by-step examples of designing clipboard-friendly custom types
+- Demonstrates SetDataAsJson<T> usage with real-world scenarios
+- Covers System.Text.Json attributes and configuration options
+- Explains serialization performance considerations and optimization
+- Provides alternative approaches for complex scenarios (manual serialization)
+- Shows cross-process compatibility testing strategies
+- Includes troubleshooting common serialization issues
+-->
+
 - **JSON serialization best practices**:
   - Design simple, serializable types for clipboard use
   - Use System.Text.Json compatible attributes
@@ -92,6 +155,17 @@ ai-usage: ai-generated
 
 ## Legacy data support
 
+<!-- 
+EXPAND THIS OUTLINE: Create detailed documentation that:
+- Explains the NrbfDecoder and SerializationRecord approach with code examples
+- Shows how to safely extract data from legacy binary formats
+- Provides patterns for handling mixed-version environments
+- Demonstrates fallback strategies when legacy data can't be read
+- Includes security considerations for processing legacy data
+- Shows validation and error handling best practices
+- Covers performance implications of legacy data processing
+-->
+
 - **Reading legacy NRBF data** without BinaryFormatter:
   - Use `NrbfDecoder` for safe binary data access
   - Work with `SerializationRecord` objects instead of direct deserialization
@@ -108,6 +182,17 @@ ai-usage: ai-generated
   - Use allow-lists for acceptable data types and values
 
 ## Migration strategies
+
+<!-- 
+EXPAND THIS OUTLINE: Provide actionable migration guidance that:
+- Creates a step-by-step assessment checklist for existing applications
+- Shows concrete before/after code examples for common migration patterns
+- Provides a phased migration approach with clear priorities
+- Demonstrates testing strategies for validating migrations
+- Includes performance impact analysis and optimization tips
+- Covers rollback strategies and risk mitigation
+- Shows integration with existing development workflows
+-->
 
 - **Assessment and planning**:
   - Inventory existing clipboard and drag-drop functionality
@@ -131,6 +216,17 @@ ai-usage: ai-generated
   - Performance test with realistic data sizes
 
 ## Enabling BinaryFormatter support (not recommended)
+
+<!-- 
+EXPAND THIS OUTLINE: Create comprehensive documentation with strong security warnings that:
+- Leads with prominent security warnings and explains the risks clearly
+- Provides complete, step-by-step configuration instructions
+- Shows detailed type resolver implementation examples with security focus
+- Explains the temporary nature of this approach and migration timeline
+- Demonstrates monitoring and logging for security auditing
+- Includes troubleshooting for configuration issues
+- Emphasizes this is only for legacy bridge scenarios
+-->
 
 - **Security warnings and risks**:
   - BinaryFormatter is inherently insecure and deprecated
@@ -157,6 +253,17 @@ ai-usage: ai-generated
   - Monitor and log all binary deserialization operations
 
 ## Use Copilot to update types
+
+<!-- 
+EXPAND THIS SECTION: Create practical guidance for using AI assistance that:
+- Shows how GitHub Copilot can help identify clipboard-related code patterns
+- Demonstrates prompting strategies for converting legacy code to new APIs
+- Provides examples of AI-assisted refactoring for SetData/GetData migrations
+- Shows how to use Copilot for generating type-safe wrapper methods
+- Includes tips for validating AI-generated migration code
+- Covers using Copilot for creating JSON-serializable data models
+- Demonstrates AI-assisted testing scenarios for clipboard functionality
+-->
 
 [Explain and give some example of using copilot to data objects.]
 
