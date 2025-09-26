@@ -20,13 +20,16 @@ This article explains how to upgrade Windows Forms clipboard and drag-and-drop o
 
 ## Prerequisites
 
-To understand the context and implications of these changes:
+To understand the context and implications of these changes you shuold understand the folowing:
 
 - Familiarity with how `BinaryFormatter` was used in clipboard and drag-and-drop scenarios before .NET 9.
-- Understanding of the security vulnerabilities that led to `BinaryFormatter` removal (see [BinaryFormatter security guide](/dotnet/standard/serialization/binaryformatter-security-guide)).
+- The security vulnerabilities that led to `BinaryFormatter` removal.
 - Knowledge of `System.Text.Json` serialization patterns and limitations.
 
-For background on the breaking changes, see [BinaryFormatter migration guide](/dotnet/standard/serialization/binaryformatter-migration-guide/).
+For more information, see:
+
+- [BinaryFormatter security guide](/dotnet/standard/serialization/binaryformatter-security-guide).
+- [BinaryFormatter migration guide](/dotnet/standard/serialization/binaryformatter-migration-guide/).
 
 ## Summary of the changes
 
