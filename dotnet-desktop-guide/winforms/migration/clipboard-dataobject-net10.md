@@ -455,42 +455,115 @@ EXPAND THIS OUTLINE: Provide comprehensive guidance that:
   - Consider version compatibility when designing types
   - Test data exchange between different application versions
 
-## Enabling BinaryFormatter support (not recommended)
+## Enable BinaryFormatter support (not recommended)
 
-<!-- 
-EXPAND THIS OUTLINE: Create comprehensive documentation with strong security warnings that:
-- Leads with prominent security warnings and explains the risks clearly
-- Provides complete, step-by-step configuration instructions
-- Shows detailed type resolver implementation examples with security focus
-- Explains the temporary nature of this approach and migration timeline
-- Demonstrates monitoring and logging for security auditing
-- Includes troubleshooting for configuration issues
-- Emphasizes this is only for legacy bridge scenarios
--->
+> [!CAUTION]
+> `BinaryFormatter` support is **not recommended** and should only be used as a temporary migration bridge. This section is provided for legacy applications that cannot immediately migrate to the new type-safe APIs.
 
-- **Security warnings and risks**:
-  - BinaryFormatter is inherently insecure and deprecated
-  - Enables arbitrary code execution through deserialization attacks
-  - Should only be used as temporary migration bridge
-  - Requires explicit opt-in through multiple configuration steps
+If your application absolutely must continue using `BinaryFormatter` for clipboard operations during migration to .NET 10, you can enable limited support through explicit configuration. However, this approach carries significant security risks and requires multiple configuration steps.
 
-- **Complete configuration requirements**:
-  - Reference `System.Runtime.Serialization.Formatters` package
-  - Set `EnableUnsafeBinaryFormatterSerialization` project property to `true`
-  - Configure `Windows.ClipboardDragDrop.EnableUnsafeBinaryFormatterSerialization` runtime switch
-  - Implement security-focused type resolvers for safe operation
+For comprehensive guidance on migrating _away_ from `BinaryFormatter`, see the [BinaryFormatter migration guide](/dotnet/standard/serialization/binaryformatter-migration-guide/).
 
-- **Type resolver implementation patterns**:
-  - Use explicit allow-lists of permitted types
-  - Verify assembly names and versions
-  - Throw exceptions for any unauthorized types
-  - Never allow implicit type loading or resolution
+### Security warnings and risks
 
-- **Gradual migration approach**:
-  - Enable BinaryFormatter support only during transition period
-  - Migrate high-risk operations to new APIs first
-  - Plan complete removal of BinaryFormatter dependency
-  - Monitor and log all binary deserialization operations
+`BinaryFormatter` is inherently insecure and has been deprecated across the entire .NET ecosystem for the following critical security reasons:
+
+**Arbitrary code execution vulnerabilities**: `BinaryFormatter` can execute arbitrary code during deserialization, making applications vulnerable to remote code execution attacks when processing untrusted data from the clipboard.
+
+**Denial of service attacks**: Malicious clipboard data can cause applications to consume excessive memory or CPU resources, leading to application crashes or system instability.
+
+**Information disclosure risks**: Attackers can potentially extract sensitive information from application memory through carefully crafted serialized payloads.
+
+**No security boundaries**: `BinaryFormatter` cannot be made secure through configuration alone - the format itself is fundamentally unsafe for untrusted data.
+
+`BinaryFormatter` support should only be enabled as a temporary migration bridge while you update your application to use the new type-safe APIs. Plan to remove this dependency as quickly as possible.
+
+### Complete configuration requirements
+
+Enabling `BinaryFormatter` support for clipboard operations requires multiple configuration steps. All steps must be completed for the functionality to work. Follow these instructions in order:
+
+1. Install the compatibility package.
+
+   Add the unsupported `BinaryFormatter` compatibility package to your project:
+
+   ```xml
+   <ItemGroup>
+     <PackageReference Include="System.Runtime.Serialization.Formatters" Version="9.0.0" />
+   </ItemGroup>
+   ```
+
+1. Enable unsafe serialization in the project.
+
+   Set the `EnableUnsafeBinaryFormatterSerialization` property to `true` in your project file:
+
+   ```xml
+   <PropertyGroup>
+     <TargetFramework>net10.0</TargetFramework>
+     <EnableUnsafeBinaryFormatterSerialization>true</EnableUnsafeBinaryFormatterSerialization>
+   </PropertyGroup>
+   ```
+
+1. Configure the Windows Forms runtime switch.
+
+   Create or update your application's `runtimeconfig.json` file to enable the Windows Forms-specific clipboard switch:
+
+   ```json
+   {
+     "runtimeOptions": {
+       "configProperties": {
+         "Windows.ClipboardDragDrop.EnableUnsafeBinaryFormatterSerialization": true
+       }
+     }
+   }
+   ```
+
+   Without this Windows Forms-specific switch, clipboard operations will not fall back to `BinaryFormatter` even if the general serialization support is enabled.
+
+### Implement security-focused type resolvers
+
+Even with `BinaryFormatter` enabled, you must implement type resolvers to control which types can be deserialized. This provides a crucial security boundary by allowing only explicitly permitted types.
+
+When implementing type resolvers, follow these critical security guidelines to protect your application from malicious clipboard data:
+
+- **Use explicit allow-lists**: Never allow dynamic type resolution or accept any type not explicitly approved.
+- **Validate type names**: Ensure type names exactly match expected values without wildcards or partial matches.
+- **Limit to essential types**: Only include types that are absolutely necessary for your application's clipboard functionality.
+- **Throw exceptions for unknown types**: Always reject unauthorized types with clear error messages.
+- **Review regularly**: Audit and update the allowed types list as part of your security review process.
+
+The following example demonstrates a secure type resolver implementation that follows all these guidelines. Notice how it uses an explicit dictionary of allowed types, validates exact matches, and throws exceptions for any unauthorized types:
+
+```csharp
+// Create a security-focused type resolver
+private static Type SecureTypeResolver(TypeName typeName)
+{
+    // Explicit allow-list of permitted types - only add types you specifically need
+    var allowedTypes = new Dictionary<string, Type>
+    {
+        ["MyApp.Person"] = typeof(Person),
+        ["MyApp.Settings"] = typeof(AppSettings),
+        ["System.String"] = typeof(string),
+        ["System.Int32"] = typeof(int),
+        // Add only the specific types your application requires
+    };
+
+    // Only allow explicitly listed types - exact string match required
+    if (allowedTypes.TryGetValue(typeName.FullName, out Type allowedType))
+    {
+        return allowedType;
+    }
+
+    // Reject any type not in the allow-list with clear error message
+    throw new InvalidOperationException(
+        $"Type '{typeName.FullName}' is not permitted for clipboard deserialization");
+}
+
+// Use the resolver with clipboard operations
+if (Clipboard.TryGetData("LegacyData", SecureTypeResolver, out MyCustomType data))
+{
+    ProcessLegacyData(data);
+}
+```
 
 ## Use Copilot to update types
 
