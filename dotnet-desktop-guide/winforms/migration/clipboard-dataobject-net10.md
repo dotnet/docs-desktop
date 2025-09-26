@@ -427,33 +427,81 @@ Clipboard.SetData("Icon", smallIcon);
 
 ## Working with custom types
 
-<!-- 
-EXPAND THIS OUTLINE: Provide comprehensive guidance that:
-- Shows step-by-step examples of designing clipboard-friendly custom types
-- Demonstrates SetDataAsJson<T> usage with real-world scenarios
-- Covers System.Text.Json attributes and configuration options
-- Explains serialization performance considerations and optimization
-- Provides alternative approaches for complex scenarios (manual serialization)
-- Shows cross-process compatibility testing strategies
-- Includes troubleshooting common serialization issues
--->
+When using `SetDataAsJson<T>()` and `TryGetData<T>()` with custom types, `System.Text.Json` handles serialization automatically. Many types work perfectly without any special configuration - records, simple classes, and structs with public properties serialize seamlessly.
 
-- **JSON serialization best practices**:
-  - Design simple, serializable types for clipboard use
-  - Use System.Text.Json compatible attributes
-  - Avoid complex object hierarchies and circular references
-  - Consider serialization size and performance impact
+### Simple types that work without attributes
 
-- **Alternative serialization strategies**:
-  - Manual string serialization for simple data
-  - Custom byte array handling for binary data
-  - Format-specific serialization (XML, custom protocols)
-  - Direct conversion to supported built-in types when possible
+Most straightforward custom types require no special configuration:
 
-- **Cross-process compatibility considerations**:
-  - JSON provides better cross-framework compatibility
-  - Consider version compatibility when designing types
-  - Test data exchange between different application versions
+```csharp
+// Records work perfectly without any attributes
+public record PersonInfo(string Name, int Age, string Email);
+
+// Simple classes serialize all public properties automatically
+public class DocumentMetadata
+{
+    public string Title { get; set; }
+    public DateTime Created { get; set; }
+    public string Author { get; set; }
+}
+
+// Structs with public properties work seamlessly
+public struct Point3D
+{
+    public double X { get; set; }
+    public double Y { get; set; }
+    public double Z { get; set; }
+}
+```
+
+### JSON attributes for advanced control
+
+Use `System.Text.Json` attributes only when you need to customize serialization behavior. For comprehensive guidance on `System.Text.Json` serialization, attributes, and advanced configuration options, see [JSON serialization and deserialization in .NET](/dotnet/standard/serialization/system-text-json/).
+
+The following snippet demonstrates using JSON attributes to control serialization:
+
+```csharp
+public class ClipboardFriendlyType
+{
+    // Include a field that normally isn't serialized
+    [JsonInclude]
+    private int _privateData;
+
+    // Public properties are always serialized
+    public string Name { get; set; }
+    
+    // Exclude sensitive or non-essential data
+    [JsonIgnore]
+    public string InternalId { get; set; }
+    
+    // Handle property name differences for compatibility
+    [JsonPropertyName("display_text")]
+    public string DisplayText { get; set; }
+    
+    // Control null value handling
+    [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+    public string OptionalField { get; set; }
+}
+```
+
+### Usage with clipboard operations
+
+```csharp
+var data = new ClipboardFriendlyType 
+{ 
+    Name = "Sample", 
+    DisplayText = "Sample Display Text",
+    InternalId = "internal-123" // This won't be serialized due to [JsonIgnore]
+};
+
+Clipboard.SetDataAsJson("MyAppData", data);
+
+if (Clipboard.TryGetData("MyAppData", out ClipboardFriendlyType retrieved))
+{
+    Console.WriteLine($"Retrieved: {retrieved.Name}");
+    // retrieved.InternalId will be null due to [JsonIgnore]
+}
+```
 
 ## Enable BinaryFormatter support (not recommended)
 
