@@ -28,6 +28,10 @@ To understand the context and implications of these changes:
 
 For background on the breaking changes, see [BinaryFormatter migration guide](/dotnet/standard/serialization/binaryformatter-migration-guide/).
 
+## Summary of the changes
+
+<!-- Write a quick summary of the changes. Be conscise. Tell the reader that SetData on custom types no longer works, that GetData is obsolete, and that the TrySetData and TryGetData are the modern replacements that roundtrips custom objects to JSON. Then end with a paragraph about how the following sections describe all of this in more detail. -->
+
 ## Breaking changes from BinaryFormatter removal
 
 The removal of `BinaryFormatter` from .NET 9 fundamentally changes how Windows Forms handles clipboard and drag-and-drop operations with custom types. These changes affect existing code patterns and require careful migration to maintain functionality.
