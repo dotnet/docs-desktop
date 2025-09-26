@@ -6,7 +6,9 @@ ms.author: [your Microsoft alias or a team alias]
 ms.service: dotnet-desktop
 ms.topic: concept-article
 ms.date: 09/25/2025
-ai-usage: ai-generated
+ms.custom:
+- copilot-scenario-highlight
+ai-usage: ai-assisted
 
 #customer intent: As a Windows Forms developer, I want to understand the clipboard and DataObject changes in .NET 10 so that I can upgrade my applications and use the new type-safe APIs.
 
@@ -613,20 +615,105 @@ if (Clipboard.TryGetData("LegacyData", SecureTypeResolver, out MyCustomType data
 }
 ```
 
-## Use Copilot to update types
+## Use AI to migrate clipboard code
 
-<!-- 
-EXPAND THIS SECTION: Create practical guidance for using AI assistance that:
-- Shows how GitHub Copilot can help identify clipboard-related code patterns
-- Demonstrates prompting strategies for converting legacy code to new APIs
-- Provides examples of AI-assisted refactoring for SetData/GetData migrations
-- Shows how to use Copilot for generating type-safe wrapper methods
-- Includes tips for validating AI-generated migration code
-- Covers using Copilot for creating JSON-serializable data models
-- Demonstrates AI-assisted testing scenarios for clipboard functionality
--->
+Migrating clipboard operations from .NET 8 to .NET 10 involves systematic code changes across multiple files and classes. AI tools like Copilot can significantly accelerate this migration process by identifying legacy patterns, generating modern replacements, and creating comprehensive test scenarios. Rather than manually searching through your codebase and converting each clipboard operation individually, you can leverage Copilot to handle the repetitive aspects while you focus on validating the results and handling edge cases.
 
-[Explain and give some example of using copilot to data objects.]
+The following sections demonstrate specific prompt strategies for different aspects of clipboard migration, from identifying problematic code patterns to creating robust JSON-serializable types and comprehensive test suites.
+
+### Use AI to identify legacy clipboard patterns
+
+Use Copilot to scan your codebase and locate clipboard operations that need migration. This helps you understand the scope of changes required before starting the actual migration work.
+
+```copilot-prompt
+Find all clipboard operations in my codebase that use GetData(), SetData() with custom objects, DataObject.GetData(), or IDataObject.GetData(). Show me the file paths and line numbers where these patterns occur.
+```
+
+[!INCLUDE [copilot-disclaimer](../../includes/copilot-disclaimer.md)]
+
+### Use AI to convert GetData() to TryGetData\<T>()
+
+Use Copilot to convert obsolete `GetData()` calls to the new type-safe `TryGetData<T>()` pattern. This conversion includes proper error handling and eliminates unsafe casting.
+
+```copilot-prompt
+Convert this GetData() clipboard code to use the new TryGetData<T>() method with proper error handling:
+
+[paste your existing GetData() code here]
+
+Make sure to eliminate casting and add appropriate error handling for when the data isn't available.
+```
+
+[!INCLUDE [copilot-disclaimer](../../includes/copilot-disclaimer.md)]
+
+### Use AI to migrate SetData() to SetDataAsJson\<T>()
+
+Use Copilot to convert custom object storage from the obsolete `SetData()` method to the new `SetDataAsJson<T>()` approach. This ensures your custom objects are properly serialized to the clipboard.
+
+```copilot-prompt
+Take this SetData() clipboard code that stores custom objects:
+
+[paste your existing SetData() code here]
+
+Convert it to use SetDataAsJson<T>() and make the custom types JSON-serializable. Add any necessary System.Text.Json attributes if the types have complex properties.
+```
+
+[!INCLUDE [copilot-disclaimer](../../includes/copilot-disclaimer.md)]
+
+### Use AI to create JSON-serializable data models
+
+Use Copilot to design custom types that work seamlessly with `SetDataAsJson<T>()` and `TryGetData<T>()`. This includes adding appropriate attributes for properties that need special handling.
+
+```copilot-prompt
+Create a JSON-serializable version of this class for clipboard operations:
+
+[paste your existing class definition here]
+
+Make it work with System.Text.Json, add JsonIgnore for sensitive properties, JsonInclude for private fields that should serialize, and JsonPropertyName for any properties that need different names in JSON.
+```
+
+[!INCLUDE [copilot-disclaimer](../../includes/copilot-disclaimer.md)]
+
+### Use AI to generate type-safe wrapper methods
+
+Use Copilot to create wrapper methods that encapsulate the new clipboard APIs and provide clean interfaces for your application's specific data types.
+
+```copilot-prompt
+Create a type-safe clipboard wrapper class that provides methods for storing and retrieving these custom types:
+
+[list your custom types here]
+
+Use SetDataAsJson<T>() and TryGetData<T>() internally, include proper error handling, and add methods like SavePersonToClipboard() and TryGetPersonFromClipboard().
+```
+
+[!INCLUDE [copilot-disclaimer](../../includes/copilot-disclaimer.md)]
+
+### Use AI to create comprehensive tests
+
+Use Copilot to generate test suites that verify your clipboard migration works correctly, including round-trip serialization tests and error handling scenarios.
+
+```copilot-prompt
+Generate comprehensive unit tests for this clipboard code:
+
+[paste your migrated clipboard code here]
+
+Include tests for successful round-trip serialization, handling of null values, error cases when data isn't available, and verification that the migrated code produces the same results as the original for valid scenarios.
+```
+
+[!INCLUDE [copilot-disclaimer](../../includes/copilot-disclaimer.md)]
+
+### Use AI to validate migration results
+
+Use Copilot to review your migrated code and identify potential issues or areas where the migration might not be complete.
+
+```copilot-prompt
+Review this migrated clipboard code for potential issues:
+
+[paste your migrated code here]
+
+Check for: missing error handling, types that might not serialize properly to JSON, performance concerns with large objects, security issues, and any remaining uses of obsolete methods.
+```
+
+[!INCLUDE [copilot-disclaimer](../../includes/copilot-disclaimer.md)]
 
 ## Related content
 
