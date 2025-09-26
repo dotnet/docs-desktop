@@ -18,9 +18,13 @@ This article explains how to upgrade Windows Forms clipboard and drag-and-drop o
 
 `BinaryFormatter` was removed from the .NET runtime in .NET 9 due to security vulnerabilities, breaking existing clipboard and drag-and-drop operations with custom objects. .NET 10 introduces new APIs that use JSON serialization and provide type-safe methods to restore this functionality while maintaining security and improving error handling and cross-process compatibility.
 
+One signifigant change is that `SetData()` no longer works with custom types, and it silently fails without storing data on the clipboard. `GetData()` is obsolete in .NET 10 and should no longer be used, even for built-in types. The modern replacements are `TryGetData<T>()` and `SetDataAsJson<T>()`, which provide type-safe operations and use JSON serialization to round-trip custom objects.
+
+The following sections provide detailed migration guidance, explain which types work without modification, and show how to handle both new development and legacy data scenarios.
+
 ## Prerequisites
 
-To understand the context and implications of these changes you shuold understand the folowing:
+To understand the context and implications of these changes you should understand the following:
 
 - Familiarity with how `BinaryFormatter` was used in clipboard and drag-and-drop scenarios before .NET 9.
 - The security vulnerabilities that led to `BinaryFormatter` removal.
@@ -30,10 +34,6 @@ For more information, see:
 
 - [BinaryFormatter security guide](/dotnet/standard/serialization/binaryformatter-security-guide).
 - [BinaryFormatter migration guide](/dotnet/standard/serialization/binaryformatter-migration-guide/).
-
-## Summary of the changes
-
-<!-- Write a quick summary of the changes. Be conscise. Tell the reader that SetData on custom types no longer works, that GetData is obsolete, and that the TrySetData and TryGetData are the modern replacements that roundtrips custom objects to JSON. Then end with a paragraph about how the following sections describe all of this in more detail. -->
 
 ## Breaking changes from BinaryFormatter removal
 
