@@ -9,8 +9,8 @@ If you're creating article files, use the [templates](/.github/projects/article-
 
 IMPORTANT! Add the following files as context:
 - [Engineer's overview on the changes in .NET 10 for Clipboard](/.github/projects/clipboard/clipboard-dataobject-net10-changes.md)
+- [BinaryFormatter migration guide](https://learn.microsoft.com/en-us/dotnet/standard/serialization/binaryformatter-migration-guide/)
 - [Summary of existing articles](/.github/projects/clipboard/temp-clipboard-articles.md)
-- [BinaryFormatter migration guide](/dotnet/standard/serialization/binaryformatter-migration-guide/)
 
 ## Executive Summary
 
