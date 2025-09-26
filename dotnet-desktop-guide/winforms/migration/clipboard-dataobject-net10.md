@@ -1,5 +1,5 @@
 ---
-title: "Windows Forms clipboard and DataObject changes in .NET 10"
+title: "Clipboard and DataObject changes in .NET 10"
 description: "Learn about the major clipboard and drag-and-drop changes in .NET 10, including new type-safe APIs, JSON serialization, and migration from BinaryFormatter."
 author: adegeo
 ms.author: adegeo
