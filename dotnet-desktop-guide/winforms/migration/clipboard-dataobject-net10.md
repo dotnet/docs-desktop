@@ -20,7 +20,7 @@ This article shows you how to upgrade your Windows Forms clipboard and drag-and-
 
 `BinaryFormatter` was removed from the runtime in .NET 9 because of security vulnerabilities. This change broke clipboard and drag-and-drop operations with custom objects. .NET 10 introduces new APIs that use JSON serialization and type-safe methods to restore this functionality, improve security, and provide better error handling and cross-process compatibility.
 
-One significant change is that `SetData()` no longer works with custom types. It silently fails without storing data on the clipboard. `GetData()` is obsolete in .NET 10 and shouldn't be used, even for built-in types. Use the new `TryGetData<T>()` and `SetDataAsJson<T>()` methods for type-safe operations and JSON serialization of custom objects.
+One significant change is that `SetData()` no longer works with custom types. It silently fails without storing data on the clipboard. `GetData()` is obsolete in .NET&nbsp;10 and shouldn't be used, even for built-in types. Use the new `TryGetData<T>()` and `SetDataAsJson<T>()` methods for type-safe operations and JSON serialization of custom objects.
 
 The following sections provide detailed migration guidance, explain which types work without changes, and show how to handle both new development and legacy data scenarios.
 
@@ -28,7 +28,7 @@ The following sections provide detailed migration guidance, explain which types 
 
 Before you continue, review these concepts:
 
-- How applications used `BinaryFormatter` in clipboard and drag-and-drop scenarios before .NET 9.
+- How applications used `BinaryFormatter` in clipboard and drag-and-drop scenarios before .NET&nbsp;9.
 - The security vulnerabilities that led to the removal of `BinaryFormatter`.
 - How to work with `System.Text.Json` serialization patterns and their limitations.
 
@@ -71,7 +71,7 @@ object data = Clipboard.GetData("MyApp.Person");
 
 #### Migration guidance
 
-Use the new `SetDataAsJson<T>()` method or manually serialize to a `string` or `byte[]`. For details, see the [Working with custom types](#working-with-custom-types) section.
+Use the new `SetDataAsJson<T>()` method or manually serialize to a `string` or `byte[]`. For details, see the [Work with custom types](#work-with-custom-types) section.
 
 ### GetData() is obsolete - use TryGetData\<T>() instead
 
@@ -328,7 +328,7 @@ These types use NRBF, the same efficient binary format used by the legacy `Binar
 - **Cross-process compatibility**: Works between different .NET applications.
 - **Automatic serialization**: Types serialize without custom code.
 
-For technical details, see the [.NET Remoting Binary Format specification](https://learn.microsoft.com/openspecs/windows_protocols/ms-nrbf/75b9fe09-be15-475f-85b8-ae7b7558cfe5).
+For technical details, see the [.NET Remoting Binary Format specification](/openspecs/windows_protocols/ms-nrbf/75b9fe09-be15-475f-85b8-ae7b7558cfe5).
 
 Classes that support NRBF-encoded data are implemented in the <xref:System.Formats.Nrbf?displayProperty=fullName> namespace.
 
@@ -463,7 +463,7 @@ public struct Point3D
 
 ### Use JSON attributes for advanced control
 
-Use `System.Text.Json` attributes only when you need to customize serialization behavior. For comprehensive guidance on `System.Text.Json` serialization, attributes, and advanced configuration options, see [JSON serialization and deserialization in .NET](/dotnet/standard/serialization/system-text-json/).
+Use `System.Text.Json` attributes only when you need to customize serialization behavior. For comprehensive guidance on `System.Text.Json` serialization, attributes, and advanced configuration options, see [JSON serialization and deserialization in .NET](/dotnet/standard/serialization/system-text-json/overview).
 
 The following example shows how you can use JSON attributes to control serialization:
 
@@ -717,6 +717,6 @@ Check for: missing error handling, types that might not serialize properly to JS
 
 ## Related content
 
-- [How to: Add Data to the Clipboard](how-to-add-data-to-the-clipboard.md)
-- [How to: Retrieve Data from the Clipboard](how-to-retrieve-data-from-the-clipboard.md)
-- [Drag-and-Drop Operations and Clipboard Support](drag-and-drop-operations-and-clipboard-support.md)
+- [How to: Add Data to the Clipboard](../advanced/how-to-add-data-to-the-clipboard.md)
+- [How to: Retrieve Data from the Clipboard](../advanced/how-to-retrieve-data-from-the-clipboard.md)
+- [Drag-and-Drop Operations and Clipboard Support](../advanced/drag-and-drop-operations-and-clipboard-support.md)
