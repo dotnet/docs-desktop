@@ -120,66 +120,307 @@ Replace all `GetData()` usage with type-safe `TryGetData<T>()` methods. See [New
 
 ## New type-safe APIs
 
-<!-- 
-EXPAND THIS OUTLINE: Create comprehensive documentation for the new APIs that:
-- Explains each API family with detailed method signatures and overloads
-- Provides practical code examples for each method showing real-world usage
-- Demonstrates the benefits of type safety and error handling
-- Shows how these APIs replace legacy methods
-- Includes both C# and VB.NET examples where appropriate
-- Covers performance and security advantages
-- Uses proper xref links to API documentation
--->
+.NET 10 introduces three new API families that provide type safety, better error handling, and JSON serialization support for clipboard and drag-and-drop operations.
 
-- **`TryGetData<T>()` family of methods**:
-  - Multiple overloads for different scenarios
-  - Returns boolean success indicator instead of throwing exceptions
-  - Type-safe retrieval with explicit type specification
-  - Optional resolver parameter for legacy data handling
-  - `autoConvert` parameter for OLE data conversion control
+### TryGetData\<T>() methods
 
-- **`SetDataAsJson<T>()` methods**:
-  - JSON serialization using System.Text.Json
-  - Automatic format inference from type name
-  - Custom format specification support
-  - Cross-process and cross-framework compatibility
+The `TryGetData<T>()` family replaces the obsolete `GetData()` method with type-safe retrieval and clear success/failure indication.
 
-- **`ITypedDataObject` interface**:
-  - Enables typed data retrieval for drag-and-drop scenarios
-  - Must be implemented by custom data objects
-  - Provides compile-time type safety guarantees
+#### Basic type-safe retrieval
 
-## Recommended built-in types
+```csharp
+// Simple retrieval with standard formats
+if (Clipboard.TryGetData(DataFormats.Text, out string textData))
+{
+    ProcessTextData(textData);
+}
 
-<!-- 
-EXPAND THIS OUTLINE: Create detailed documentation that:
-- Explains why these types work without BinaryFormatter (built-in NRBF serialization)
-- Provides comprehensive examples of using each type category
-- Shows practical scenarios where each type is useful
-- Explains the limitations and considerations for each type
-- Includes performance and compatibility notes
-- Demonstrates array and collection usage patterns
-- Covers null handling and edge cases
--->
+// Works with any supported type using custom formats
+if (Clipboard.TryGetData("NumberData", out int numberData))
+{
+    ProcessNumber(numberData);
+}
 
-- **Primitive types** that work without BinaryFormatter:
-  - `bool`, `byte`, `char`, `decimal`, `double`, `short`, `int`, `long`
-  - `sbyte`, `ushort`, `uint`, `ulong`, `float`, `string`
-  - `TimeSpan` and `DateTime`
+// Using standard formats for common data types
+if (Clipboard.TryGetData(DataFormats.UnicodeText, out string unicodeText))
+{
+    ProcessUnicodeText(unicodeText);
+}
 
-- **Collections** of primitive types:
-  - Arrays of any supported primitive type
-  - `List<T>` where T is a supported primitive type
-  - Avoid `string[]` and `List<string>` due to null handling complexity
+// Control OLE data conversion
+if (Clipboard.TryGetData(DataFormats.Text, autoConvert: false, out string rawText))
+{
+    ProcessRawText(rawText);
+}
 
-- **System.Drawing types**:
-  - `Bitmap`, `Point`, `PointF`, `Rectangle`, `RectangleF`
-  - `Size`, `SizeF`, `Color`
+// Working with file drops using standard format
+if (Clipboard.TryGetData(DataFormats.FileDrop, out string[] files))
+{
+    ProcessFiles(files);
+}
+```
 
-- **Type safety guarantees**:
-  - WinForms ensures only requested types are created
-  - Data content validation remains developer responsibility
-  - No size constraints on deserialized data
+#### Custom JSON types
+
+```csharp
+// Retrieve custom types stored with SetDataAsJson<T>()
+if (Clipboard.TryGetData("Person", out Person person))
+{
+    ProcessPerson(person);
+}
+
+// Handle application-specific data formats
+if (Clipboard.TryGetData("MyApp.Settings", out AppSettings settings))
+{
+    ApplySettings(settings);
+}
+
+// Work with complex custom objects
+if (Clipboard.TryGetData("DocumentData", out DocumentInfo doc))
+{
+    LoadDocument(doc);
+}
+```
+
+#### Type resolver for legacy binary data (requires BinaryFormatter - not recommended)
+
+> [!WARNING]
+> Type resolvers only work when BinaryFormatter support is enabled, which is **not recommended** due to security risks. See [Enabling BinaryFormatter support](#enabling-binaryformatter-support-not-recommended) for more information.
+
+Type resolvers allow you to handle legacy binary data by mapping type names to actual types during deserialization:
+
+```csharp
+// Create a type resolver that maps old type names to current types
+Func<TypeName, Type> resolver = typeName =>
+{
+    // Only allow specific known safe types
+    return typeName.FullName switch
+    {
+        "MyApp.Person" => typeof(Person),
+        "MyApp.Settings" => typeof(AppSettings),
+        "System.String" => typeof(string),
+        "System.Int32" => typeof(int),
+        _ => throw new InvalidOperationException($"Type not allowed: {typeName.FullName}")
+    };
+};
+
+// Use resolver with legacy binary data
+if (Clipboard.TryGetData("LegacyFormat", resolver, out Person person))
+{
+    ProcessPerson(person);
+}
+
+// Combined resolver with conversion control
+if (Clipboard.TryGetData("OldCustomData", resolver, autoConvert: true, out MyType data))
+{
+    ProcessCustomData(data);
+}
+```
+
+**Important security considerations for type resolvers:**
+
+- Always use an explicit allow-list of permitted types
+- Never allow dynamic type loading or assembly resolution
+- Validate type names before mapping to actual types
+- Throw exceptions for any unauthorized or unknown types
+- Consider this a temporary bridge during migration only
+
+### SetDataAsJson\<T>() methods
+
+These methods provide automatic JSON serialization using `System.Text.Json` with type-safe storage.
+
+#### Automatic format inference
+
+```csharp
+var person = new Person { Name = "Alice", Age = 25 };
+
+// Format automatically inferred from type name
+Clipboard.SetDataAsJson(person);  // Uses "Person" as format
+
+// Later retrieval
+if (Clipboard.TryGetData("Person", out Person retrievedPerson))
+{
+    Console.WriteLine($"Retrieved: {retrievedPerson.Name}");
+}
+```
+
+#### Custom format specification
+
+```csharp
+var settings = new AppSettings { Theme = "Dark", AutoSave = true };
+
+// Custom format for better organization
+Clipboard.SetDataAsJson("MyApp.Settings", settings);
+
+// Multiple formats for the same data
+Clipboard.SetDataAsJson("Config.V1", settings);
+Clipboard.SetDataAsJson("AppConfig", settings);
+```
+
+### ITypedDataObject interface
+
+This interface enables type-safe drag-and-drop operations by extending `IDataObject` with typed methods.
+
+#### Implementation in custom DataObject
+
+```csharp
+public class TypedDataObject : DataObject, ITypedDataObject
+{
+    public bool TryGetData<T>(string format, out T data)
+    {
+        // Implementation uses new type-safe logic
+        return base.TryGetData(format, out data);
+    }
+
+    // This overload requires BinaryFormatter support (not recommended)
+    public bool TryGetData<T>(string format, Func<TypeName, Type> resolver, out T data)
+    {
+        return base.TryGetData(format, resolver, out data);
+    }
+}
+
+#### Usage in drag-and-drop scenarios
+
+```csharp
+private void OnDragDrop(object sender, DragEventArgs e)
+{
+    if (e.Data is ITypedDataObject typedData)
+    {
+        // Type-safe retrieval from drag data using standard formats
+        if (typedData.TryGetData(DataFormats.FileDrop, out string[] files))
+        {
+            ProcessDroppedFiles(files);
+        }
+        
+        // Using standard text formats
+        if (typedData.TryGetData(DataFormats.Text, out string text))
+        {
+            ProcessDroppedText(text);
+        }
+        
+        // Custom formats for application-specific data
+        if (typedData.TryGetData("CustomItem", out MyItem item))
+        {
+            ProcessCustomItem(item);
+        }
+    }
+}
+```
+
+## Types that don't require JSON serialization
+
+Many built-in .NET types continue to work with clipboard operations without requiring JSON serialization or `BinaryFormatter` support. These types are automatically serialized into the .NET Remoting Binary Format (NRBF), which provides efficient storage while maintaining type safety.
+
+These types use the .NET Remoting Binary Format (NRBF) for serialization, the same efficient binary format used by the legacy `BinaryFormatter`. Key characteristics of NRBF serialization:
+
+- **Compact binary representation** for efficient storage and transfer.
+- **Built-in type information** preserves exact .NET types during round-trip operations.
+- **Cross-process compatibility** works between different .NET applications.
+- **No custom serialization required** - types serialize automatically.
+
+For detailed technical information about NRBF, see the [.NET Remoting Binary Format specification](https://learn.microsoft.com/openspecs/windows_protocols/ms-nrbf/75b9fe09-be15-475f-85b8-ae7b7558cfe5).
+
+Classes that support working with NRBF-encoded data are implemented in the <xref:System.Formats.Nrbf?displayProperty=fullName> namespace.
+
+### Type safety guarantees
+
+Windows Forms provides several safety mechanisms for these built-in types:
+
+- **Exact type matching**: `TryGetData<T>()` ensures only the requested type is returned.
+- **Automatic validation**: WinForms validates type compatibility during deserialization.
+- **No arbitrary code execution**: Unlike custom types with BinaryFormatter, these types can't execute malicious code.
+- **Content validation required**: Developers must still validate data content and ranges for their application logic.
+- **No size constraints**: Large arrays or bitmaps are not automatically limited (monitor memory usage).
+
+### Supported primitive types
+
+The following primitive types work seamlessly with clipboard and `DataObject` operations without requiring any custom serialization or configuration. These built-in .NET types are automatically handled by the clipboard system:
+
+- `bool`, `byte`, `char`, `decimal`, `double`, `short`, `int`, `long`
+- `sbyte`, `ushort`, `uint`, `ulong`, `float`, `string`
+- `TimeSpan` and `DateTime`
+
+The following examples show how these primitive types work directly with `SetData()` and `TryGetData<T>()` methods:
+
+```csharp
+// Numeric types
+Clipboard.SetData("MyInt", 42);
+Clipboard.SetData("MyDouble", 3.14159);
+Clipboard.SetData("MyDecimal", 123.45m);
+
+// Text and character types
+Clipboard.SetData("MyString", "Hello World");
+Clipboard.SetData("MyChar", 'A');
+
+// Boolean and date/time types
+Clipboard.SetData("MyBool", true);
+Clipboard.SetData("MyDateTime", DateTime.Now);
+Clipboard.SetData("MyTimeSpan", TimeSpan.FromMinutes(30));
+
+// Later retrieval with type safety
+if (Clipboard.TryGetData("MyInt", out int value))
+{
+    ProcessInteger(value);
+}
+```
+
+### Collections of primitive types
+
+Arrays and generic lists of supported primitive types work without additional configuration, but there are some important limitations to be aware of:
+
+- All array and list elements must be of supported primitive types.
+- Avoid `string[]` and `List<string>` due to null value handling complexity in NRBF format.
+- Use individual string storage or JSON serialization for string collections instead.
+
+The following exmaples show how arrays and lists can be set on the clipboard:
+
+```csharp
+// Arrays of primitive types
+int[] numbers = { 1, 2, 3, 4, 5 };
+Clipboard.SetData("NumberArray", numbers);
+
+double[] coordinates = { 1.0, 2.5, 3.7 };
+Clipboard.SetData("Coordinates", coordinates);
+
+// Generic lists
+List<int> intList = new List<int> { 10, 20, 30 };
+Clipboard.SetData("IntList", intList);
+
+// Retrieval maintains type safety
+if (Clipboard.TryGetData("NumberArray", out int[] retrievedNumbers))
+{
+    ProcessNumbers(retrievedNumbers);
+}
+```
+
+### System.Drawing types
+
+Common graphics types from the `System.Drawing` namespace work seamlessly with clipboard and `DataObject` operations. These types are particularly useful for applications that work with visual elements and need to transfer drawing-related data between components or applications. However, when using `Bitmap` objects, be mindful of memory usage for large images. The following types are supported:
+
+- `Point`, `PointF`, `Rectangle`, `RectangleF`
+- `Size`, `SizeF`, `Color`
+- `Bitmap` (consider memory usage for large images)
+
+The following examples show how these graphics types can be used with clipboard operations:
+
+```csharp
+// Geometric types
+Point location = new Point(100, 200);
+Rectangle bounds = new Rectangle(0, 0, 500, 300);
+Size dimensions = new Size(800, 600);
+
+Clipboard.SetData("Location", location);
+Clipboard.SetData("Bounds", bounds);
+Clipboard.SetData("Size", dimensions);
+
+// Color information
+Color backgroundColor = Color.FromArgb(255, 128, 64, 192);
+Clipboard.SetData("BackColor", backgroundColor);
+
+// Bitmap data (use with caution for large images)
+Bitmap smallIcon = new Bitmap(16, 16);
+Clipboard.SetData("Icon", smallIcon);
+```
 
 ## Working with custom types
 
