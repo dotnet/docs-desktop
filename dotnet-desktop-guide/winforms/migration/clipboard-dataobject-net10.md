@@ -30,23 +30,89 @@ For background on the breaking changes, see [BinaryFormatter migration guide](/d
 
 ## Breaking changes from BinaryFormatter removal
 
-<!-- 
-EXPAND THIS OUTLINE: Transform these bullet points into comprehensive documentation that:
-- Explains each breaking change with detailed context
-- Provides before/after code examples showing what breaks
-- Shows specific error messages or behaviors developers will encounter
-- Includes guidance on identifying affected code in existing applications
-- Links to migration strategies and solutions in later sections
-- Uses clear, actionable language with second person voice
--->
+The removal of `BinaryFormatter` from .NET 9 fundamentally changes how Windows Forms handles clipboard and drag-and-drop operations with custom types. These changes affect existing code patterns and require careful migration to maintain functionality.
 
-- **Custom types no longer serialize automatically** - Objects that previously worked with `SetData()` now require explicit handling
-- **`GetData()` behavior changes** - Legacy method may not retrieve data as expected
-- **Legacy binary data handling** - Existing clipboard data may not be accessible without special handling
-- **Common patterns that need updating**:
-  - Direct `SetData()` calls with custom objects
-  - `GetData()` retrieval without type checking
-  - Cross-process data sharing with complex types
+### Custom types no longer serialize automatically
+
+Previously, you could place any serializable custom object on the clipboard using `SetData()`, and `BinaryFormatter` would handle serialization automatically. This pattern no longer works stating with .NET 9, but importantly, it fails silently without throwing exceptions.
+
+The following code doesn't work:
+
+```csharp
+[Serializable]
+public class Person
+{
+    public string Name { get; set; }
+    public int Age { get; set; }
+}
+
+// This worked in .NET 8 and earlier but silently fails starting with .NET 9
+Person person = new Person { Name = "John", Age = 30 };
+Clipboard.SetData("MyApp.Person", person);  // No data is stored
+
+// Later attempts to retrieve the data returns null
+object data = Clipboard.GetData("MyApp.Person");
+```
+
+#### Behavior you encounter
+
+- `SetData()` completes without throwing an exception but doesn't actually store the data.
+- The clipboard operation appears to succeed from your application's perspective.
+- Later attempts to retrieve the data with `GetData()` return `null`.
+
+#### Migration strategy
+
+Use the new `SetDataAsJson<T>()` method or serialize manually to `string` or `byte[]`. See [Working with custom types](#working-with-custom-types) section for detailed guidance.
+
+### GetData() is obsolete - use TryGetData\<T>() instead
+
+The legacy `GetData()` method is obsolete in .NET 10. Even for scenarios where it might still return data, migrate to the new type-safe `TryGetData<T>()` methods that provide better error handling and type safety.
+
+**Obsolete code that should be avoided:**
+
+```csharp
+// DON'T USE - GetData() is obsolete in .NET 10
+object data = Clipboard.GetData("MyApp.Person");  // Obsolete method
+
+// Always returns null on a custom object type
+if (data != null)
+{
+    Person person = (Person)data;  // Unsafe casting
+    ProcessPerson(person);
+}
+```
+
+**Modern approach using TryGetData\<T>():**
+
+```csharp
+// USE THIS - Type-safe approach with TryGetData<T>()
+if (Clipboard.TryGetData("MyApp.Person", out Person person))
+{
+    ProcessPerson(person);  // person is guaranteed to be the correct type
+}
+else
+{
+    // Handle the case where data isn't available or is wrong type
+    ShowError("Unable to retrieve person data from clipboard");
+}
+```
+
+#### Benefits of TryGetData\<T>():
+
+- **Type safety**: No need for casting - the method returns the exact type you request.
+- **Clear error handling**: Returns boolean success indicator instead of null/exception patterns.
+- **Future-proof**: Designed to work with new serialization methods and legacy data support.
+
+#### How to identify affected code
+
+Look for:
+
+- Any `GetData()` calls - the entire method is obsolete regardless of data type.
+- `DataObject.GetData()` and `IDataObject.GetData()` usage in drag-and-drop operations.
+
+#### Migration strategy
+
+Replace all `GetData()` usage with type-safe `TryGetData<T>()` methods. See [New type-safe APIs](#new-type-safe-apis) section for comprehensive examples of all overloads.
 
 ## New type-safe APIs
 
