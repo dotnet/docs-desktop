@@ -16,11 +16,11 @@ ai-usage: ai-assisted
 
 # Windows Forms clipboard and DataObject changes in .NET 10
 
-This article shows you how to upgrade your Windows Forms clipboard and drag-and-drop operations to the new type-safe APIs in .NET 10. You'll learn how to use the new `TryGetData<T>()` and `SetDataAsJson<T>()` methods, understand which built-in types work without changes, and discover strategies for handling custom types and legacy data after the removal of `BinaryFormatter`.
+This article shows you how to upgrade your Windows Forms clipboard and drag-and-drop operations to the new type-safe APIs in .NET 10. You'll learn how to use the new <xref:System.Windows.Forms.Clipboard.TryGetData*?displayProperty=nameWithType> and <xref:System.Windows.Forms.Clipboard.SetDataAsJson``1(System.String,``0)?displayProperty=nameWithType> methods, understand which built-in types work without changes, and discover strategies for handling custom types and legacy data after the removal of `BinaryFormatter`.
 
 `BinaryFormatter` was removed from the runtime in .NET 9 because of security vulnerabilities. This change broke clipboard and drag-and-drop operations with custom objects. .NET 10 introduces new APIs that use JSON serialization and type-safe methods to restore this functionality, improve security, and provide better error handling and cross-process compatibility.
 
-One significant change is that `SetData()` no longer works with custom types. It silently fails without storing data on the clipboard. `GetData()` is obsolete in .NET&nbsp;10 and shouldn't be used, even for built-in types. Use the new `TryGetData<T>()` and `SetDataAsJson<T>()` methods for type-safe operations and JSON serialization of custom objects.
+One significant change is that <xref:System.Windows.Clipboard.SetData(System.String,System.Object)?displayProperty=nameWithType> no longer works with custom types. It silently fails without storing data on the clipboard. <xref:System.Windows.Forms.Clipboard.GetData(System.String)?displayProperty=nameWithType> is obsolete in .NET&nbsp;10 and shouldn't be used, even for built-in types. Use the new <xref:System.Windows.Forms.Clipboard.TryGetData*?displayProperty=nameWithType> and <xref:System.Windows.Forms.Clipboard.SetDataAsJson``1(System.String,``0)?displayProperty=nameWithType> methods for type-safe operations and JSON serialization of custom objects.
 
 The following sections provide detailed migration guidance, explain which types work without changes, and show how to handle both new development and legacy data scenarios.
 
@@ -71,11 +71,11 @@ object data = Clipboard.GetData("MyApp.Person");
 
 #### Migration guidance
 
-Use the new `SetDataAsJson<T>()` method or manually serialize to a `string` or `byte[]`. For details, see the [Work with custom types](#work-with-custom-types) section.
+Use the new [`SetDataAsJson<T>()`](xref:System.Windows.Forms.Clipboard.SetDataAsJson``1(System.String,``0)) method or manually serialize to a `string` or `byte[]`. For details, see the [Work with custom types](#work-with-custom-types) section.
 
 ### GetData() is obsolete - use TryGetData\<T>() instead
 
-The legacy `GetData()` method is obsolete in .NET 10. Even if it sometimes returns data, you should migrate to the new type-safe `TryGetData<T>()` methods for better error handling and type safety.
+The legacy `GetData()` method is obsolete in .NET 10. Even if it sometimes returns data, you should migrate to the new type-safe [`TryGetData<T>()`](xref:System.Windows.Forms.Clipboard.TryGetData*) methods for better error handling and type safety.
 
 **Obsolete code to avoid:**
 
@@ -121,15 +121,15 @@ Look for:
 
 #### Migration guidance
 
-Replace all `GetData()` usage with type-safe `TryGetData<T>()` methods. For comprehensive examples of all overloads, see the [New type-safe APIs](#new-type-safe-apis) section.
+Replace all `GetData()` usage with type-safe [`TryGetData<T>()`](xref:System.Windows.Forms.Clipboard.TryGetData*) methods. For comprehensive examples of all overloads, see the [New type-safe APIs](#new-type-safe-apis) section.
 
 ## New type-safe APIs
 
 .NET 10 introduces three new API families that provide type safety, better error handling, and JSON serialization support for clipboard and drag-and-drop operations:
 
-- `TryGetData<T>()` methods for retrieving data
-- `SetDataAsJson<T>()` methods for storing data
-- `ITypedDataObject` interface for drag-and-drop operations
+- <xref:System.Windows.Forms.Clipboard.TryGetData*> methods for retrieving data
+- <xref:System.Windows.Forms.Clipboard.SetDataAsJson``1(System.String,``0)> methods for storing data
+- <xref:System.Windows.Forms.ITypedDataObject> interface for drag-and-drop operations
 
 ### TryGetData\<T>() methods
 
@@ -268,7 +268,7 @@ Clipboard.SetDataAsJson("AppConfig", settings)
 
 ### ITypedDataObject interface
 
-The `ITypedDataObject` interface enables type-safe drag-and-drop operations by extending `IDataObject` with typed methods.
+The <xref:System.Windows.Forms.ITypedDataObject> interface enables type-safe drag-and-drop operations by extending <xref:System.Windows.Forms.IDataObject> with typed methods.
 
 #### Implement ITypedDataObject in a custom DataObject
 
@@ -336,7 +336,7 @@ Classes that support NRBF-encoded data are implemented in the <xref:System.Forma
 
 Windows Forms provides several safety mechanisms for these built-in types:
 
-- **Exact type matching**. `TryGetData<T>()` returns only the requested type.
+- **Exact type matching**. <xref:System.Windows.Forms.Clipboard.TryGetData*> returns only the requested type.
 - **Automatic validation**. Windows Forms validates type compatibility during deserialization.
 - **No arbitrary code execution**. Unlike custom types with BinaryFormatter, these types can't execute malicious code.
 - **Content validation required**. You must still validate data content and ranges for your application logic.
@@ -434,7 +434,7 @@ Clipboard.SetData("Icon", smallIcon);
 
 ## Work with custom types
 
-When you use `SetDataAsJson<T>()` and `TryGetData<T>()` with custom types, `System.Text.Json` handles serialization automatically. Many types work without any special configuration—records, simple classes, and structs with public properties serialize seamlessly.
+When you use <xref:System.Windows.Forms.Clipboard.SetDataAsJson``1(System.String,``0)> and <xref:System.Windows.Forms.Clipboard.TryGetData*> with custom types, `System.Text.Json` handles serialization automatically. Many types work without any special configuration—records, simple classes, and structs with public properties serialize seamlessly.
 
 ### Simple types that work without attributes
 
@@ -720,3 +720,5 @@ Check for: missing error handling, types that might not serialize properly to JS
 - [How to: Add Data to the Clipboard](../advanced/how-to-add-data-to-the-clipboard.md)
 - [How to: Retrieve Data from the Clipboard](../advanced/how-to-retrieve-data-from-the-clipboard.md)
 - [Drag-and-Drop Operations and Clipboard Support](../advanced/drag-and-drop-operations-and-clipboard-support.md)
+- <xref:System.Windows.Forms.Clipboard.SetDataAsJson``1(System.String,``0)?displayProperty=fullName>
+- <xref:System.Windows.Forms.Clipboard.TryGetData*?displayProperty=fullName>
