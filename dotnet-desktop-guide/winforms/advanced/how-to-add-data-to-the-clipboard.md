@@ -35,8 +35,8 @@ To add data to the Clipboard in a single, common format, use the specific method
 
 1. Use the <xref:System.Windows.Forms.Clipboard.SetAudio%2A>, <xref:System.Windows.Forms.Clipboard.SetFileDropList%2A>, <xref:System.Windows.Forms.Clipboard.SetImage%2A>, or <xref:System.Windows.Forms.Clipboard.SetText%2A> method.
 
-    [!code-csharp[System.Windows.Forms.Clipboard#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/CS/form1.cs#2)]
-    [!code-vb[System.Windows.Forms.Clipboard#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/vb/form1.vb#2)]
+    :::code language="csharp" source="./snippets/how-to-add-data-to-the-clipboard/framework/csharp/form1.cs" id="2":::
+    :::code language="vb" source="./snippets/how-to-add-data-to-the-clipboard/framework/vb/form1.vb" id="2":::
 
 ### To add data to the Clipboard in a custom format
 
@@ -44,19 +44,19 @@ To add data to the Clipboard in a single, common format, use the specific method
 
     You can also use predefined format names with the <xref:System.Windows.Forms.Clipboard.SetData%2A> method. For more information, see <xref:System.Windows.Forms.DataFormats>.
 
-    [!code-csharp[System.Windows.Forms.Clipboard#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/CS/form1.cs#3)]
-    [!code-vb[System.Windows.Forms.Clipboard#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/vb/form1.vb#3)]
-    [!code-csharp[System.Windows.Forms.Clipboard#100](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/CS/form1.cs#100)]
-    [!code-vb[System.Windows.Forms.Clipboard#100](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/vb/form1.vb#100)]
+    :::code language="csharp" source="./snippets/how-to-add-data-to-the-clipboard/framework/csharp/form1.cs" id="3":::
+    :::code language="vb" source="./snippets/how-to-add-data-to-the-clipboard/framework/vb/form1.vb" id="3":::
+    :::code language="csharp" source="./snippets/how-to-add-data-to-the-clipboard/framework/csharp/form1.cs" id="100":::
+    :::code language="vb" source="./snippets/how-to-add-data-to-the-clipboard/framework/vb/form1.vb" id="100":::
 
 ### To add data to the Clipboard in multiple formats
 
 1. Use the <xref:System.Windows.Forms.Clipboard.SetDataObject%2A?displayProperty=nameWithType> method and pass in a <xref:System.Windows.Forms.DataObject> that contains your data.
 
-    [!code-csharp[System.Windows.Forms.Clipboard#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/CS/form1.cs#4)]
-    [!code-vb[System.Windows.Forms.Clipboard#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/vb/form1.vb#4)]
-    [!code-csharp[System.Windows.Forms.Clipboard#100](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/CS/form1.cs#100)]
-    [!code-vb[System.Windows.Forms.Clipboard#100](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/vb/form1.vb#100)]
+    :::code language="csharp" source="./snippets/how-to-add-data-to-the-clipboard/framework/csharp/form1.cs" id="4":::
+    :::code language="vb" source="./snippets/how-to-add-data-to-the-clipboard/framework/vb/form1.vb" id="4":::
+    :::code language="csharp" source="./snippets/how-to-add-data-to-the-clipboard/framework/csharp/form1.cs" id="100":::
+    :::code language="vb" source="./snippets/how-to-add-data-to-the-clipboard/framework/vb/form1.vb" id="100":::
 
 ## See also
 
