@@ -32,8 +32,8 @@ To access data from the Clipboard using versions earlier than .NET Framework 2.0
 
 1. Use the <xref:System.Windows.Forms.Clipboard.GetAudioStream%2A>, <xref:System.Windows.Forms.Clipboard.GetFileDropList%2A>, <xref:System.Windows.Forms.Clipboard.GetImage%2A>, or <xref:System.Windows.Forms.Clipboard.GetText%2A> method. Optionally, use the corresponding `Contains`*Format* methods first to determine whether data is available in a particular format. These methods are available only in .NET Framework 2.0.
 
-    [!code-csharp[System.Windows.Forms.Clipboard#2](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/CS/form1.cs#2)]
-    [!code-vb[System.Windows.Forms.Clipboard#2](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/vb/form1.vb#2)]
+    :::code language="csharp" source="./snippets/how-to-retrieve-data-from-the-clipboard/framework/csharp/form1.cs" id="retrieve-common-format":::
+    :::code language="vb" source="./snippets/how-to-retrieve-data-from-the-clipboard/framework/vb/form1.vb" id="retrieve-common-format":::
 
 ### To retrieve data from the Clipboard in a custom format
 
@@ -41,19 +41,19 @@ To access data from the Clipboard using versions earlier than .NET Framework 2.0
 
     You can also use predefined format names with the <xref:System.Windows.Forms.Clipboard.SetData%2A> method. For more information, see <xref:System.Windows.Forms.DataFormats>.
 
-    [!code-csharp[System.Windows.Forms.Clipboard#3](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/CS/form1.cs#3)]
-    [!code-vb[System.Windows.Forms.Clipboard#3](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/vb/form1.vb#3)]
-    [!code-csharp[System.Windows.Forms.Clipboard#100](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/CS/form1.cs#100)]
-    [!code-vb[System.Windows.Forms.Clipboard#100](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/vb/form1.vb#100)]
+    :::code language="csharp" source="./snippets/how-to-retrieve-data-from-the-clipboard/framework/csharp/form1.cs" id="retrieve-custom-format":::
+    :::code language="vb" source="./snippets/how-to-retrieve-data-from-the-clipboard/framework/vb/form1.vb" id="retrieve-custom-format":::
+    :::code language="csharp" source="./snippets/how-to-retrieve-data-from-the-clipboard/framework/csharp/form1.cs" id="helper-methods":::
+    :::code language="vb" source="./snippets/how-to-retrieve-data-from-the-clipboard/framework/vb/form1.vb" id="helper-methods":::
 
 ### To retrieve data from the Clipboard in multiple formats
 
 1. Use the <xref:System.Windows.Forms.Clipboard.GetDataObject%2A> method. You must use this method to retrieve data from the Clipboard on versions earlier than .NET Framework 2.0.
 
-    [!code-csharp[System.Windows.Forms.Clipboard#4](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/CS/form1.cs#4)]
-    [!code-vb[System.Windows.Forms.Clipboard#4](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/vb/form1.vb#4)]
-    [!code-csharp[System.Windows.Forms.Clipboard#100](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/CS/form1.cs#100)]
-    [!code-vb[System.Windows.Forms.Clipboard#100](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/vb/form1.vb#100)]
+    :::code language="csharp" source="./snippets/how-to-retrieve-data-from-the-clipboard/framework/csharp/form1.cs" id="retrieve-multiple-formats":::
+    :::code language="vb" source="./snippets/how-to-retrieve-data-from-the-clipboard/framework/vb/form1.vb" id="retrieve-multiple-formats":::
+    :::code language="csharp" source="./snippets/how-to-retrieve-data-from-the-clipboard/framework/csharp/form1.cs" id="helper-methods":::
+    :::code language="vb" source="./snippets/how-to-retrieve-data-from-the-clipboard/framework/vb/form1.vb" id="helper-methods":::
 
 ## See also
 
