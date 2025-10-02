@@ -121,7 +121,10 @@ description: Migrate code from the old ~/samples/snippets/ location to the relat
 - **Clean**: Remove unused legacy files (if no other articles reference them)
 
 ### 7. Delete
-- **Identify**: Check if the old snippet file is used by any other articles
+- **Identify**:
+  - Check if the old snippet file is used by any other articles
+  - Some articles may use a relative path to the `samples` folder, so simply search for `samples/snippets/...`
+  - Be confident that all legacy snippets use a `samples/snippets` folder structure
 - **Delete**: If old snippet is no longer used by any article, delete it.
 
 ## Common mistakes to avoid
