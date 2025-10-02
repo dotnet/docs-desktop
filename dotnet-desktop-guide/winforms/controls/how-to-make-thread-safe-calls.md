@@ -108,7 +108,7 @@ For async operations that need to run on the UI thread, use the async overload:
 :::code language="vb" source="snippets/how-to-make-thread-safe-calls/vb/FormInvokeAsync.vb" id="snippet_InvokeAsyncAdvanced":::
 
 > [!NOTE]
-> If you're using Visual Basic, the previous code snippet used an extension method to convert a <xref:System.Threading.Tasks.ValueTask> to a <xref:System.Threading.Tasks.Task>. The extension method code is available on [GitHub](https://github.com/dotnet/docs-desktop/blob/main/dotnet-desktop-guide/winforms/forms/snippets/how-to-make-thread-safe-calls/vb/Extensions.vb).
+> If you're using Visual Basic, the previous code snippet used an extension method to convert a <xref:System.Threading.Tasks.ValueTask> to a <xref:System.Threading.Tasks.Task>. The extension method code is available on [GitHub](https://github.com/dotnet/docs-desktop/blob/main/dotnet-desktop-guide/winforms/controls/snippets/how-to-make-thread-safe-calls/vb/Extensions.vb).
 
 ## Example: Use the Control.Invoke method
 
