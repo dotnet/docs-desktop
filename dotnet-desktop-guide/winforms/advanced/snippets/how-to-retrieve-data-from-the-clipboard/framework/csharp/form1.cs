@@ -3,7 +3,7 @@ using System.Windows.Forms;
 
 public class Form1 : Form
 {
-    //<helper-methods>
+    //<HelperMethods>
     [Serializable]
     public class Customer
     {
@@ -18,14 +18,14 @@ public class Form1 : Form
             set { nameValue = value; }
         }
     }
-    //</helper-methods>
+    //</HelperMethods>
 
     public Form1()
     {
         Clipboard.Clear();
     }
 
-    //<retrieve-custom-format>
+    //<RetrieveCustomFormat>
     // Demonstrates SetData, ContainsData, and GetData
     // using a custom format name and a business object.
     public Customer TestCustomFormat
@@ -40,9 +40,9 @@ public class Form1 : Form
             return null;
         }
     }
-    //</retrieve-custom-format>
+    //</RetrieveCustomFormat>
 
-    //<retrieve-multiple-formats>
+    //<RetrieveMultipleFormats>
     // Demonstrates how to use a DataObject to add
     // data to the Clipboard in multiple formats.
     public void TestClipboardMultipleFormats()
@@ -79,7 +79,7 @@ public class Form1 : Form
             }
         }
     }
-    //</retrieve-multiple-formats>
+    //</RetrieveMultipleFormats>
 
     // Demonstrates SetData, ContainsData, and GetData.
     public Object SwapClipboardFormattedData(String format, Object data)
@@ -93,7 +93,7 @@ public class Form1 : Form
         return returnObject;
     }
 
-    //<retrieve-common-format>
+    //<RetrieveCommonFormat>
     // Demonstrates SetAudio, ContainsAudio, and GetAudioStream.
     public System.IO.Stream SwapClipboardAudio(
         System.IO.Stream replacementAudioStream)
@@ -145,5 +145,5 @@ public class Form1 : Form
         }
         return returnHtmlText;
     }
-    //</retrieve-common-format>
+    //</RetrieveCommonFormat>
 }

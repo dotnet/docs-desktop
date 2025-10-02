@@ -56,8 +56,8 @@ You can also use the <xref:System.Windows.Forms.Clipboard.GetDataObject%2A?displ
 > [!NOTE]
 > In .NET Framework, these same `Get`*Format* methods are available, but you use `GetData` instead of `TryGetData` for custom formats.
 
-:::code language="csharp" source="./snippets/how-to-retrieve-data-from-the-clipboard/net/csharp/MainForm.cs" id="retrieve-common-format":::
-:::code language="vb" source="./snippets/how-to-retrieve-data-from-the-clipboard/net/vb/MainForm.vb" id="retrieve-common-format":::
+:::code language="csharp" source="./snippets/how-to-retrieve-data-from-the-clipboard/net/csharp/MainForm.cs" id="RetrieveCommonFormat":::
+:::code language="vb" source="./snippets/how-to-retrieve-data-from-the-clipboard/net/vb/MainForm.vb" id="RetrieveCommonFormat":::
 
 ::: zone-end
 
@@ -68,8 +68,8 @@ You can also use the <xref:System.Windows.Forms.Clipboard.GetDataObject%2A?displ
 > [!NOTE]
 > In .NET (non-Framework), the `GetData` method is obsoleted in favor of `TryGetData` for custom data formats, and object serialization is no longer supported.
 
-:::code language="csharp" source="./snippets/how-to-retrieve-data-from-the-clipboard/framework/csharp/form1.cs" id="retrieve-common-format":::
-:::code language="vb" source="./snippets/how-to-retrieve-data-from-the-clipboard/framework/vb/form1.vb" id="retrieve-common-format":::
+:::code language="csharp" source="./snippets/how-to-retrieve-data-from-the-clipboard/framework/csharp/form1.cs" id="RetrieveCommonFormat":::
+:::code language="vb" source="./snippets/how-to-retrieve-data-from-the-clipboard/framework/vb/form1.vb" id="RetrieveCommonFormat":::
 
 ::: zone-end
 
@@ -87,13 +87,13 @@ You can also use the <xref:System.Windows.Forms.Clipboard.GetDataObject%2A?displ
 > [!NOTE]
 > In .NET Framework, you use the <xref:System.Windows.Forms.Clipboard.GetData%2A> method instead of `TryGetData`, and object serialization through `SetData` is fully supported.
 
-:::code language="csharp" source="./snippets/how-to-retrieve-data-from-the-clipboard/net/csharp/MainForm.cs" id="retrieve-custom-format":::
-:::code language="vb" source="./snippets/how-to-retrieve-data-from-the-clipboard/net/vb/MainForm.vb" id="retrieve-custom-format":::
+:::code language="csharp" source="./snippets/how-to-retrieve-data-from-the-clipboard/net/csharp/MainForm.cs" id="RetrieveCustomFormat":::
+:::code language="vb" source="./snippets/how-to-retrieve-data-from-the-clipboard/net/vb/MainForm.vb" id="RetrieveCustomFormat":::
 
 The `Customer` class used in the previous snippet:
 
-:::code language="csharp" source="./snippets/how-to-retrieve-data-from-the-clipboard/net/csharp/MainForm.cs" id="helper-methods":::
-:::code language="vb" source="./snippets/how-to-retrieve-data-from-the-clipboard/net/vb/MainForm.vb" id="helper-methods":::
+:::code language="csharp" source="./snippets/how-to-retrieve-data-from-the-clipboard/net/csharp/MainForm.cs" id="HelperMethods":::
+:::code language="vb" source="./snippets/how-to-retrieve-data-from-the-clipboard/net/vb/MainForm.vb" id="HelperMethods":::
 
 ::: zone-end
 
@@ -106,10 +106,10 @@ The `Customer` class used in the previous snippet:
 > [!NOTE]
 > In .NET (non-Framework), the `GetData` method is obsoleted in favor of `TryGetData`, and object serialization through `SetData` is no longer supported for security reasons.
 
-:::code language="csharp" source="./snippets/how-to-retrieve-data-from-the-clipboard/framework/csharp/form1.cs" id="retrieve-custom-format":::
-:::code language="vb" source="./snippets/how-to-retrieve-data-from-the-clipboard/framework/vb/form1.vb" id="retrieve-custom-format":::
-:::code language="csharp" source="./snippets/how-to-retrieve-data-from-the-clipboard/framework/csharp/form1.cs" id="helper-methods":::
-:::code language="vb" source="./snippets/how-to-retrieve-data-from-the-clipboard/framework/vb/form1.vb" id="helper-methods":::
+:::code language="csharp" source="./snippets/how-to-retrieve-data-from-the-clipboard/framework/csharp/form1.cs" id="RetrieveCustomFormat":::
+:::code language="vb" source="./snippets/how-to-retrieve-data-from-the-clipboard/framework/vb/form1.vb" id="RetrieveCustomFormat":::
+:::code language="csharp" source="./snippets/how-to-retrieve-data-from-the-clipboard/framework/csharp/form1.cs" id="HelperMethods":::
+:::code language="vb" source="./snippets/how-to-retrieve-data-from-the-clipboard/framework/vb/form1.vb" id="HelperMethods":::
 
 ::: zone-end
 
@@ -124,10 +124,10 @@ The `Customer` class used in the previous snippet:
 > [!NOTE]
 > In .NET Framework, you typically use the <xref:System.Windows.Forms.Clipboard.GetDataObject%2A> method and work directly with the returned <xref:System.Windows.Forms.IDataObject>, using its methods like <xref:System.Windows.Forms.IDataObject.GetData%2A> instead of the newer `TryGetData` approach.
 
-:::code language="csharp" source="./snippets/how-to-retrieve-data-from-the-clipboard/net/csharp/MainForm.cs" id="retrieve-multiple-formats":::
-:::code language="vb" source="./snippets/how-to-retrieve-data-from-the-clipboard/net/vb/MainForm.vb" id="retrieve-multiple-formats":::
-:::code language="csharp" source="./snippets/how-to-retrieve-data-from-the-clipboard/net/csharp/MainForm.cs" id="helper-methods":::
-:::code language="vb" source="./snippets/how-to-retrieve-data-from-the-clipboard/net/vb/MainForm.vb" id="helper-methods":::
+:::code language="csharp" source="./snippets/how-to-retrieve-data-from-the-clipboard/net/csharp/MainForm.cs" id="RetrieveMultipleFormats":::
+:::code language="vb" source="./snippets/how-to-retrieve-data-from-the-clipboard/net/vb/MainForm.vb" id="RetrieveMultipleFormats":::
+:::code language="csharp" source="./snippets/how-to-retrieve-data-from-the-clipboard/net/csharp/MainForm.cs" id="HelperMethods":::
+:::code language="vb" source="./snippets/how-to-retrieve-data-from-the-clipboard/net/vb/MainForm.vb" id="HelperMethods":::
 
 ::: zone-end
 
@@ -138,10 +138,10 @@ The `Customer` class used in the previous snippet:
 > [!NOTE]
 > In .NET (non-Framework), you typically combine `GetDataObject` with the newer `TryGetData` method rather than working directly with the <xref:System.Windows.Forms.IDataObject> methods.
 
-:::code language="csharp" source="./snippets/how-to-retrieve-data-from-the-clipboard/framework/csharp/form1.cs" id="retrieve-multiple-formats":::
-:::code language="vb" source="./snippets/how-to-retrieve-data-from-the-clipboard/framework/vb/form1.vb" id="retrieve-multiple-formats":::
-:::code language="csharp" source="./snippets/how-to-retrieve-data-from-the-clipboard/framework/csharp/form1.cs" id="helper-methods":::
-:::code language="vb" source="./snippets/how-to-retrieve-data-from-the-clipboard/framework/vb/form1.vb" id="helper-methods":::
+:::code language="csharp" source="./snippets/how-to-retrieve-data-from-the-clipboard/framework/csharp/form1.cs" id="RetrieveMultipleFormats":::
+:::code language="vb" source="./snippets/how-to-retrieve-data-from-the-clipboard/framework/vb/form1.vb" id="RetrieveMultipleFormats":::
+:::code language="csharp" source="./snippets/how-to-retrieve-data-from-the-clipboard/framework/csharp/form1.cs" id="HelperMethods":::
+:::code language="vb" source="./snippets/how-to-retrieve-data-from-the-clipboard/framework/vb/form1.vb" id="HelperMethods":::
 
 ::: zone-end
 

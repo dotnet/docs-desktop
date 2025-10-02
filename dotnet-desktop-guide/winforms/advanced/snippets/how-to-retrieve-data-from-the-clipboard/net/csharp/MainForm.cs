@@ -6,7 +6,7 @@ namespace RetrieveClipboardData;
 
 public class MainForm : Form
 {
-    //<helper-methods>
+    //<HelperMethods>
     [Serializable]
     public class Customer
     {
@@ -21,14 +21,14 @@ public class MainForm : Form
             set { nameValue = value; }
         }
     }
-    //</helper-methods>
+    //</HelperMethods>
 
     public MainForm()
     {
         Clipboard.Clear();
     }
 
-    //<retrieve-custom-format>
+    //<RetrieveCustomFormat>
     // Demonstrates TryGetData using a custom format name and a business object.
     // Note: In .NET 10, SetData for objects is no longer supported,
     // so this example shows how to retrieve data that might have been
@@ -46,9 +46,9 @@ public class MainForm : Form
             return null;
         }
     }
-    //</retrieve-custom-format>
+    //</RetrieveCustomFormat>
 
-    //<retrieve-multiple-formats>
+    //<RetrieveMultipleFormats>
     // Demonstrates how to retrieve data from the Clipboard in multiple formats
     // using TryGetData instead of the obsoleted GetData method.
     public void TestClipboardMultipleFormats()
@@ -94,9 +94,9 @@ public class MainForm : Form
             }
         }
     }
-    //</retrieve-multiple-formats>
+    //</RetrieveMultipleFormats>
 
-    //<retrieve-common-format>
+    //<RetrieveCommonFormat>
     // Demonstrates TryGetData methods for common formats.
     // These methods are preferred over the older Get* methods.
     public Stream? SwapClipboardAudio(Stream replacementAudioStream)
@@ -155,5 +155,5 @@ public class MainForm : Form
         }
         return null;
     }
-    //</retrieve-common-format>
+    //</RetrieveCommonFormat>
 }

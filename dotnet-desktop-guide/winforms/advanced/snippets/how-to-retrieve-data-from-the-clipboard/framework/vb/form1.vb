@@ -3,7 +3,7 @@ Imports System.Windows.Forms
 Public Class Form1
     Inherits Form
 
-    '<helper-methods>
+    '<HelperMethods>
     <Serializable()> Public Class Customer
 
         Private nameValue As String = String.Empty
@@ -22,13 +22,13 @@ Public Class Form1
         End Property
 
     End Class
-    '</helper-methods>
+    '</HelperMethods>
 
     Public Sub New()
         Clipboard.Clear()
     End Sub
 
-    '<retrieve-custom-format>
+    '<RetrieveCustomFormat>
     ' Demonstrates SetData, ContainsData, and GetData
     ' using a custom format name and a business object.
     Public ReadOnly Property TestCustomFormat() As Customer
@@ -42,9 +42,9 @@ Public Class Form1
             Return Nothing
         End Get
     End Property
-    '</retrieve-custom-format>
+    '</RetrieveCustomFormat>
 
-    '<retrieve-multiple-formats>
+    '<RetrieveMultipleFormats>
     ' Demonstrates how to use a DataObject to add
     ' data to the Clipboard in multiple formats.
     Public Sub TestClipboardMultipleFormats()
@@ -86,7 +86,7 @@ Public Class Form1
         End If
 
     End Sub
-    '</retrieve-multiple-formats>
+    '</RetrieveMultipleFormats>
 
     ' Demonstrates SetData, ContainsData, and GetData.
     Public Function SwapClipboardFormattedData( _
@@ -103,7 +103,7 @@ Public Class Form1
 
     End Function
 
-    '<retrieve-common-format>
+    '<RetrieveCommonFormat>
     ' Demonstrates SetAudio, ContainsAudio, and GetAudioStream.
     Public Function SwapClipboardAudio( _
         ByVal replacementAudioStream As System.IO.Stream) _
@@ -168,6 +168,6 @@ Public Class Form1
         Return returnHtmlText
 
     End Function
-    '</retrieve-common-format>
+    '</RetrieveCommonFormat>
 
 End Class
