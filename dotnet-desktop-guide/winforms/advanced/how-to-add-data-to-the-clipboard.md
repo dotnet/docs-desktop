@@ -1,8 +1,8 @@
 ---
 title: "How to: Add Data to the Clipboard"
 ms.date: 10/02/2025
-ms.service: dotnet-framework
-ms.update-cycle: 1825-days
+ms.service: dotnet-desktop
+ms.update-cycle: 365-days
 zone_pivot_groups: dotnet-version
 dev_langs:
   - "csharp"
@@ -12,21 +12,22 @@ helpviewer_keywords:
   - "data [Windows Forms], copying to Clipboard"
 ms.assetid: 25152454-0e78-40a9-8a9e-a2a5a274e517
 description: Learn how to add data to the clipboard within many applications and transfer that data from one application to another.
+ai-usage: ai-assisted
 ---
-# How to: Add Data to the Clipboard
+# How to add data to the Clipboard
 
-The <xref:System.Windows.Forms.Clipboard> class provides methods that you can use to interact with the Windows operating system Clipboard feature. Many applications use the Clipboard as a temporary repository for data. For example, word processors use the Clipboard during cut-and-paste operations. The Clipboard is also useful for transferring data from one application to another.
+The <xref:System.Windows.Forms.Clipboard> class provides methods that interact with the Windows operating system Clipboard feature. Many applications use the Clipboard as a temporary repository for data. For example, word processors use the Clipboard during cut-and-paste operations. The Clipboard also transfers data from one application to another.
 
-When you add data to the Clipboard, you can indicate the data format so that other applications can recognize the data if they can use that format. You can also add data to the Clipboard in multiple different formats to increase the number of other applications that can potentially use the data.
+When you add data to the Clipboard, indicate the data format so that other applications can recognize the data if they can use that format. Add data to the Clipboard in multiple different formats to increase the number of other applications that can potentially use the data.
 
-A Clipboard format is a string that identifies the format so that an application that uses that format can retrieve the associated data. The <xref:System.Windows.Forms.DataFormats> class provides predefined format names for your use. You can also use your own format names or use the type of an object as its format.
+A Clipboard format is a string that identifies the format so that an application using that format can retrieve the associated data. The <xref:System.Windows.Forms.DataFormats> class provides predefined format names for your use. You can also use your own format names or use an object's type as its format.
 
 > [!NOTE]
 > All Windows-based applications share the Clipboard. Therefore, the contents are subject to change when you switch to another application.
 >
 > The <xref:System.Windows.Forms.Clipboard> class can only be used in threads set to single thread apartment (STA) mode. To use this class, ensure that your `Main` method is marked with the <xref:System.STAThreadAttribute> attribute.
 
-To add data to the Clipboard in one or multiple formats, use the <xref:System.Windows.Forms.Clipboard.SetDataObject%2A> method. You can pass any object to this method, but to add data in multiple formats, you must first add the data to a separate object designed to work with multiple formats. Typically, you will add your data to a <xref:System.Windows.Forms.DataObject>, but you can use any type that implements the <xref:System.Windows.Forms.IDataObject> interface.
+To add data to the Clipboard in one or multiple formats, use the <xref:System.Windows.Forms.Clipboard.SetDataObject%2A> method. Pass any object to this method. To add data in multiple formats, first add the data to a separate object designed to work with multiple formats. Typically, add your data to a <xref:System.Windows.Forms.DataObject>, but you can use any type that implements the <xref:System.Windows.Forms.IDataObject> interface.
 
 To add data to the Clipboard in a single, common format, use the specific method for that format, such as <xref:System.Windows.Forms.Clipboard.SetText%2A> for text.
 
@@ -40,7 +41,7 @@ To add data to the Clipboard in a single, common format, use the specific method
 ::: zone pivot="dotnetframework"
 
 > [!IMPORTANT]
-> An object must be serializable for it to be put on the Clipboard. To make a type serializable, mark it with the <xref:System.SerializableAttribute> attribute. If you pass a non-serializable object to a Clipboard method, the method will fail without throwing an exception. For more information about serialization, see <xref:System.Runtime.Serialization>.
+> An object must be serializable for it to be put on the Clipboard. To make a type serializable, mark it with the <xref:System.SerializableAttribute> attribute. If you pass a non-serializable object to a Clipboard method, the method fails without throwing an exception. For more information about serialization, see <xref:System.Runtime.Serialization>.
 
 ::: zone-end
 

@@ -2,8 +2,8 @@
 title: "Drag-and-Drop Operations and Clipboard Support"
 description: Learn how to enable user drag-and-drop operations and clipboard support within Windows Forms applications, including the new type-safe APIs introduced in .NET 10.
 ms.date: "09/26/2025"
-ms.service: dotnet-framework
-ms.update-cycle: 1825-days
+ms.service: dotnet-desktop
+ms.update-cycle: 365-days
 helpviewer_keywords:
   - "drag and drop [Windows Forms]"
   - "drag and drop [Windows Forms], Windows Forms"
