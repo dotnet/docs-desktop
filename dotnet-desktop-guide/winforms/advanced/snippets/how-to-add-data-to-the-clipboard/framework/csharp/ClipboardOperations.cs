@@ -11,7 +11,7 @@ public class Form1 : Form
         Application.Run(new Form1());
     }
 
-    //<snippet100>
+    //<CustomerClass>
     [Serializable]
     public class Customer
     {
@@ -26,16 +26,16 @@ public class Form1 : Form
             set { nameValue = value; }
         }
     }
-    //</snippet100>
+    //</CustomerClass>
 
     public Form1()
     {
-        //<snippet1>
+        //<ClipboardClear>
         Clipboard.Clear();
-        //</snippet1>
+        //</ClipboardClear>
     }
 
-    //<snippet3>
+    //<CustomFormatExample>
     // Demonstrates SetData, ContainsData, and GetData
     // using a custom format name and a business object.
     public Customer TestCustomFormat
@@ -50,9 +50,9 @@ public class Form1 : Form
             return null;
         }
     }
-    //</snippet3>
+    //</CustomFormatExample>
 
-    //<snippet4>
+    //<MultipleFormatsExample>
     // Demonstrates how to use a DataObject to add
     // data to the Clipboard in multiple formats.
     public void TestClipboardMultipleFormats()
@@ -89,9 +89,9 @@ public class Form1 : Form
             }
         }
     }
-    //</snippet4>
+    //</MultipleFormatsExample>
 
-    //<snippet10>
+    //<GenericSetDataExample>
     // Demonstrates SetData, ContainsData, and GetData.
     public Object SwapClipboardFormattedData(String format, Object data)
     {
@@ -103,10 +103,10 @@ public class Form1 : Form
         }
         return returnObject;
     }
-    //</snippet10>
+    //</GenericSetDataExample>
 
-    //<snippet2>
-    //<snippet20>
+    //<SetTextExample>
+    //<SetAudioExample>
     // Demonstrates SetAudio, ContainsAudio, and GetAudioStream.
     public System.IO.Stream SwapClipboardAudio(
         System.IO.Stream replacementAudioStream)
@@ -119,9 +119,9 @@ public class Form1 : Form
         }
         return returnAudioStream;
     }
-    //</snippet20>
+    //</SetAudioExample>
 
-    //<snippet30>
+    //<SetFileDropListExample>
     // Demonstrates SetFileDropList, ContainsFileDroList, and GetFileDropList
     public System.Collections.Specialized.StringCollection
         SwapClipboardFileDropList(
@@ -135,9 +135,9 @@ public class Form1 : Form
         }
         return returnList;
     }
-    //</snippet30>
+    //</SetFileDropListExample>
 
-    //<snippet40>
+    //<SetImageExample>
     // Demonstrates SetImage, ContainsImage, and GetImage.
     public System.Drawing.Image SwapClipboardImage(
         System.Drawing.Image replacementImage)
@@ -150,9 +150,9 @@ public class Form1 : Form
         }
         return returnImage;
     }
-    //</snippet40>
+    //</SetImageExample>
 
-    //<snippet50>
+    //<SetHtmlTextExample>
     // Demonstrates SetText, ContainsText, and GetText.
     public String SwapClipboardHtmlText(String replacementHtmlText)
     {
@@ -164,6 +164,6 @@ public class Form1 : Form
         }
         return returnHtmlText;
     }
-    //</snippet50>
-    //</snippet2>
+    //</SetHtmlTextExample>
+    //</SetTextExample>
 }

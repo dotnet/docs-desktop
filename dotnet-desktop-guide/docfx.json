@@ -20,7 +20,8 @@
       "feedback_product_url": "https://developercommunity.visualstudio.com/VisualStudio",
       "author": "adegeo",
       "uhfHeaderId": "MSDocsHeader-DotNet",
-      "ms.author": "adegeo"
+      "ms.author": "adegeo",
+      "_zonePivotGroups": "zone-pivot-groups.yml"
     },
     "fileMetadata": {
       "titleSuffix": {

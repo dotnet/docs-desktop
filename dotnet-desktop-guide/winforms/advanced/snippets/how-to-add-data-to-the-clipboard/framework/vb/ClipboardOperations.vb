@@ -12,7 +12,7 @@ End Module
 Public Class Form1
     Inherits Form
 
-    '<snippet100>
+    '<CustomerClass>
     <Serializable()> Public Class Customer
 
         Private nameValue As String = String.Empty
@@ -31,15 +31,15 @@ Public Class Form1
         End Property
 
     End Class
-    '</snippet100>
+    '</CustomerClass>
 
     Public Sub New()
-        '<snippet1>
+        '<ClipboardClear>
         Clipboard.Clear()
-        '</snippet1>
+        '</ClipboardClear>
     End Sub
 
-    '<snippet3>
+    '<CustomFormatExample>
     ' Demonstrates SetData, ContainsData, and GetData
     ' using a custom format name and a business object.
     Public ReadOnly Property TestCustomFormat() As Customer
@@ -53,9 +53,9 @@ Public Class Form1
             Return Nothing
         End Get
     End Property
-    '</snippet3>
+    '</CustomFormatExample>
 
-    '<snippet4>
+    '<MultipleFormatsExample>
     ' Demonstrates how to use a DataObject to add
     ' data to the Clipboard in multiple formats.
     Public Sub TestClipboardMultipleFormats()
@@ -97,9 +97,9 @@ Public Class Form1
         End If
 
     End Sub
-    '</snippet4>
+    '</MultipleFormatsExample>
 
-    '<snippet10>
+    '<GenericSetDataExample>
     ' Demonstrates SetData, ContainsData, and GetData.
     Public Function SwapClipboardFormattedData( _
         ByVal format As String, ByVal data As Object) As Object
@@ -114,10 +114,10 @@ Public Class Form1
         Return returnObject
 
     End Function
-    '</snippet10>
+    '</GenericSetDataExample>
 
-    '<snippet2>
-    '<snippet20>
+    '<SetTextExample>
+    '<SetAudioExample>
     ' Demonstrates SetAudio, ContainsAudio, and GetAudioStream.
     Public Function SwapClipboardAudio( _
         ByVal replacementAudioStream As System.IO.Stream) _
@@ -133,9 +133,9 @@ Public Class Form1
         Return returnAudioStream
 
     End Function
-    '</snippet20>
+    '</SetAudioExample>
 
-    '<snippet30>
+    '<SetFileDropListExample>
     ' Demonstrates SetFileDropList, ContainsFileDroList, and GetFileDropList
     Public Function SwapClipboardFileDropList(ByVal replacementList _
         As System.Collections.Specialized.StringCollection) _
@@ -153,9 +153,9 @@ Public Class Form1
         Return returnList
 
     End Function
-    '</snippet30>
+    '</SetFileDropListExample>
 
-    '<snippet40>
+    '<SetImageExample>
     ' Demonstrates SetImage, ContainsImage, and GetImage.
     Public Function SwapClipboardImage( _
         ByVal replacementImage As System.Drawing.Image) _
@@ -170,9 +170,9 @@ Public Class Form1
 
         Return returnImage
     End Function
-    '</snippet40>
+    '</SetImageExample>
 
-    '<snippet50>
+    '<SetHtmlTextExample>
     ' Demonstrates SetText, ContainsText, and GetText.
     Public Function SwapClipboardHtmlText( _
         ByVal replacementHtmlText As String) As String
@@ -187,7 +187,7 @@ Public Class Form1
         Return returnHtmlText
 
     End Function
-    '</snippet50>
-    '</snippet2>
+    '</SetHtmlTextExample>
+    '</SetTextExample>
 
 End Class
