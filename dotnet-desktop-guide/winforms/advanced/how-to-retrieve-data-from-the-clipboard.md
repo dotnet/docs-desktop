@@ -11,8 +11,9 @@ helpviewer_keywords:
   - "pasting Clipboard data"
   - "Clipboard [Windows Forms], retrieving data"
 ms.assetid: 99612537-2c8a-449f-aab5-2b3b28d656e7
+ai-usage: ai-assisted
 ---
-# How to: Retrieve Data from the Clipboard
+# How to retrieve data from the Clipboard
 
 The <xref:System.Windows.Forms.Clipboard> class provides methods that you can use to interact with the Windows operating system Clipboard feature. Many applications use the Clipboard as a temporary repository for data. For example, word processors use the Clipboard during cut-and-paste operations. The Clipboard is also useful for transferring information from one application to another.
 
@@ -20,7 +21,7 @@ Some applications store data on the Clipboard in multiple formats to increase th
 
 To determine whether the Clipboard contains data in a particular format, use one of the `Contains`*Format* methods or the <xref:System.Windows.Forms.Clipboard.GetData%2A> method. To retrieve data from the Clipboard, use one of the `Get`*Format* methods or the <xref:System.Windows.Forms.Clipboard.GetData%2A> method. These methods are new in .NET Framework 2.0.
 
-To access data from the Clipboard by using versions earlier than .NET Framework 2.0, use the <xref:System.Windows.Forms.Clipboard.GetDataObject%2A?displayProperty=nameWithType> method and call the methods of the returned <xref:System.Windows.Forms.IDataObject>. To determine whether a particular format is available in the returned object, for example, call the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A> method.
+To access data from the Clipboard using versions earlier than .NET Framework 2.0, use the <xref:System.Windows.Forms.Clipboard.GetDataObject%2A?displayProperty=nameWithType> method and call the methods of the returned <xref:System.Windows.Forms.IDataObject>. To determine whether a particular format is available in the returned object, for example, call the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A> method.
 
 > [!NOTE]
 > All Windows-based applications share the system Clipboard. Therefore, the contents are subject to change when you switch to another application.
