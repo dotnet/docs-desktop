@@ -25,9 +25,7 @@ Public Class Form1
     '</helper-methods>
 
     Public Sub New()
-        '<snippet1>
         Clipboard.Clear()
-        '</snippet1>
     End Sub
 
     '<retrieve-custom-format>
@@ -90,7 +88,6 @@ Public Class Form1
     End Sub
     '</retrieve-multiple-formats>
 
-    '<snippet10>
     ' Demonstrates SetData, ContainsData, and GetData.
     Public Function SwapClipboardFormattedData( _
         ByVal format As String, ByVal data As Object) As Object
@@ -105,10 +102,8 @@ Public Class Form1
         Return returnObject
 
     End Function
-    '</snippet10>
 
     '<retrieve-common-format>
-    '<snippet20>
     ' Demonstrates SetAudio, ContainsAudio, and GetAudioStream.
     Public Function SwapClipboardAudio( _
         ByVal replacementAudioStream As System.IO.Stream) _
@@ -124,9 +119,7 @@ Public Class Form1
         Return returnAudioStream
 
     End Function
-    '</snippet20>
 
-    '<snippet30>
     ' Demonstrates SetFileDropList, ContainsFileDroList, and GetFileDropList
     Public Function SwapClipboardFileDropList(ByVal replacementList _
         As System.Collections.Specialized.StringCollection) _
@@ -144,9 +137,7 @@ Public Class Form1
         Return returnList
 
     End Function
-    '</snippet30>
 
-    '<snippet40>
     ' Demonstrates SetImage, ContainsImage, and GetImage.
     Public Function SwapClipboardImage( _
         ByVal replacementImage As System.Drawing.Image) _
@@ -162,9 +153,7 @@ Public Class Form1
         Return returnImage
 
     End Function
-    '</snippet40>
 
-    '<snippet50>
     ' Demonstrates SetText, ContainsText, and GetText.
     Public Function SwapClipboardHtmlText( _
         ByVal replacementHtmlText As String) As String
@@ -179,7 +168,6 @@ Public Class Form1
         Return returnHtmlText
 
     End Function
-    '</snippet50>
     '</retrieve-common-format>
 
 End Class

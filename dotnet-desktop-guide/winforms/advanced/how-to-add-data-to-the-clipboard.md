@@ -131,5 +131,5 @@ The `Customer` class used in the previous snippet:
 ## See also
 
 - [Drag-and-Drop Operations and Clipboard Support](drag-and-drop-operations-and-clipboard-support.md)
-- [How to: Retrieve Data from the Clipboard](how-to-retrieve-data-from-the-clipboard.md)
-- [Windows Forms clipboard and DataObject changes in .NET 10](../../migration/clipboard-dataobject-net10.md)
+- [How to retrieve data from the Clipboard](how-to-retrieve-data-from-the-clipboard.md)
+- [Windows Forms clipboard and DataObject changes in .NET 10](../migration/clipboard-dataobject-net10.md)
