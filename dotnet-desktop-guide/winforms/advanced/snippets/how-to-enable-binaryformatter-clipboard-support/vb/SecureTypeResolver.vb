@@ -25,8 +25,7 @@ Namespace ClipboardExamples
                 {"MyApp.AppSettings", GetType(AppSettings)},
                 {"System.String", GetType(String)},
                 {"System.Int32", GetType(Integer)}
-                ' Add only the specific types your application requires
-            }
+            } ' Add only the specific types your application requires
 
             ' Only allow explicitly listed types - exact string match required
             Dim allowedType As Type = Nothing

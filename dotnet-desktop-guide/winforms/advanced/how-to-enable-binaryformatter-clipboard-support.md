@@ -55,7 +55,7 @@ Enable this support only as a temporary bridge while you update your application
 
 Add the unsupported `BinaryFormatter` compatibility package to your project. This package provides the necessary runtime support for `BinaryFormatter` operations:
 
-:::code language="xml" source="./snippets/how-to-enable-binaryformatter-clipboard-support/net/csharp/how-to-enable-binaryformatter-clipboard-support.csproj" id="PackageReference":::
+:::code language="xml" source="./snippets/how-to-enable-binaryformatter-clipboard-support/csharp/ProjectCS.csproj" id="PackageReference":::
 
 > [!NOTE]
 > This package is marked as unsupported and deprecated. Use it only for temporary compatibility during migration.
@@ -77,7 +77,7 @@ Without this setting, your application generates compilation errors when it atte
 
 Create or update your application's `runtimeconfig.json` file to enable the Windows Forms-specific clipboard switch. This configuration allows clipboard operations to fall back to `BinaryFormatter` when necessary:
 
-:::code language="json" source="./snippets/how-to-enable-binaryformatter-clipboard-support/net/csharp/runtimeconfig.json":::
+:::code language="json" source="./snippets/how-to-enable-binaryformatter-clipboard-support/csharp/runtimeconfig.json":::
 
 > [!IMPORTANT]
 > Without this specific runtime switch, clipboard operations won't fall back to `BinaryFormatter` even if general serialization support is enabled. This switch is required specifically for Windows Forms clipboard functionality.
@@ -88,13 +88,13 @@ Even with `BinaryFormatter` enabled, implement type resolvers to restrict deseri
 
 ### Create a secure type resolver
 
-:::code language="csharp" source="./snippets/how-to-enable-binaryformatter-clipboard-support/net/csharp/SecureTypeResolver.cs" id="SecureTypeResolver":::
-:::code language="vb" source="./snippets/how-to-enable-binaryformatter-clipboard-support/net/vb/SecureTypeResolver.vb" id="SecureTypeResolver":::
+:::code language="csharp" source="./snippets/how-to-enable-binaryformatter-clipboard-support/csharp/SecureTypeResolver.cs" id="SecureTypeResolver":::
+:::code language="vb" source="./snippets/how-to-enable-binaryformatter-clipboard-support/vb/SecureTypeResolver.vb" id="SecureTypeResolver":::
 
 ### Use the type resolver with clipboard operations
 
-:::code language="csharp" source="./snippets/how-to-enable-binaryformatter-clipboard-support/net/csharp/ClipboardUsage.cs" id="ClipboardUsage":::
-:::code language="vb" source="./snippets/how-to-enable-binaryformatter-clipboard-support/net/vb/ClipboardUsage.vb" id="ClipboardUsage":::
+:::code language="csharp" source="./snippets/how-to-enable-binaryformatter-clipboard-support/csharp/ClipboardUsage.cs" id="ClipboardUsage":::
+:::code language="vb" source="./snippets/how-to-enable-binaryformatter-clipboard-support/vb/ClipboardUsage.vb" id="ClipboardUsage":::
 
 ## Security guidelines for type resolvers
 
@@ -133,8 +133,8 @@ After configuring `BinaryFormatter` support, test your application to ensure it 
 1. **Monitor security**: Watch for any unexpected type resolution attempts.
 1. **Performance testing**: Ensure the type resolver doesn't significantly impact performance.
 
-:::code language="csharp" source="./snippets/how-to-enable-binaryformatter-clipboard-support/net/csharp/TestConfiguration.cs" id="TestConfiguration":::
-:::code language="vb" source="./snippets/how-to-enable-binaryformatter-clipboard-support/net/vb/TestConfiguration.vb" id="TestConfiguration":::
+:::code language="csharp" source="./snippets/how-to-enable-binaryformatter-clipboard-support/csharp/TestConfiguration.cs" id="TestConfiguration":::
+:::code language="vb" source="./snippets/how-to-enable-binaryformatter-clipboard-support/vb/TestConfiguration.vb" id="TestConfiguration":::
 
 ## Plan your migration strategy
 
