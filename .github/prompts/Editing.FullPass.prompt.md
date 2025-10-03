@@ -1,5 +1,7 @@
 ---
-description: Edit the content according to the Microsoft Style Guide
+model: Claude Sonnet 4 (copilot)
+mode: agent
+description: "Performs comprehensive editing pass following Microsoft Style Guide"
 ---
 
 # Article Editing Instructions for LLMs
@@ -67,6 +69,13 @@ When editing, focus on these areas in order of priority:
 - ❌ "The application would start" → ✅ "The application starts"
 - ❌ "You would see the result" → ✅ "You see the result"
 - Look for ANY pattern with: "will/would/shall + verb" in descriptions
+
+**SCAN FOR AND CONVERT ALL present perfect tense with simple present tense (these are examples - find ALL similar patterns):**
+- ❌ "The system has processed the data" → ✅ "The system processes the data"
+- ❌ "You have configured the settings" → ✅ "Configure the settings"
+- ❌ "The service has been running" → ✅ "The service runs"
+- ❌ "Once you have completed the setup" → ✅ "Once you complete the setup"
+- Look for ANY pattern with: "have/has + past participle", "have/has been + verb-ing"
 
 **SCAN FOR AND ELIMINATE ALL weak constructions (these are examples - find ALL similar patterns):**
 - ❌ "There are three ways to..." → ✅ "Use these three methods..."
