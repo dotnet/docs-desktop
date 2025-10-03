@@ -1,5 +1,5 @@
 ---
-model: GPT-4o (copilot)
+model: GPT-4.1 (copilot)
 mode: agent
 description: "Updates link text to match target content headings"
 ---
@@ -7,6 +7,18 @@ description: "Updates link text to match target content headings"
 # Refresh Links Prompt
 
 You are tasked with checking and updating all links in the current file to ensure their link text accurately reflects the target content's H1 heading or title.
+
+## ⚠️ CRITICAL CONSTRAINT ⚠️
+
+**NO OTHER EDITS OR ALTERATIONS** should be made to the file beyond updating link text. This means:
+- Do NOT modify any other content in the file
+- Do NOT change formatting, structure, or layout
+- Do NOT add, remove, or alter any text outside of link text updates
+- Do NOT modify code blocks, headings, or any other markdown elements
+- Do NOT use the **title** specified in front matter as the H1 heading for local markdown articles - only use explicitly defined H1 headings in the markdown content (`# Heading Text`)
+- ONLY update the display text portion of markdown links `[THIS PART](url)`
+
+The file content must remain completely unchanged except for link text updates.
 
 ## Link Types and Processing Rules
 
