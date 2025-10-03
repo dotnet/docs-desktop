@@ -6,6 +6,9 @@ ms.author: adegeo
 ms.service: dotnet-desktop
 ms.topic: concept-article
 ms.date: 09/26/2025
+dev_langs:
+  - "csharp"
+  - "vb"
 ms.custom:
   - copilot-scenario-highlight
 ai-usage: ai-assisted
@@ -47,21 +50,8 @@ In .NET 8 and earlier, you could place any serializable custom object on the cli
 
 The following code no longer works:
 
-```csharp
-[Serializable]
-public class Person
-{
-    public string Name { get; set; }
-    public int Age { get; set; }
-}
-
-// This worked in .NET 8 and earlier but silently fails starting with .NET 9
-Person person = new Person { Name = "John", Age = 30 };
-Clipboard.SetData("MyApp.Person", person);  // No data is stored
-
-// Later attempts to retrieve the data return null
-object data = Clipboard.GetData("MyApp.Person");
-```
+:::code language="csharp" source="./snippets/clipboard-dataobject-net10/net/csharp/ObsoletePatterns.cs" id="ObsoleteCustomType":::
+:::code language="vb" source="./snippets/clipboard-dataobject-net10/net/vb/ObsoletePatterns.vb" id="ObsoleteCustomType":::
 
 #### What you might see
 
@@ -79,32 +69,13 @@ The legacy `GetData()` method is obsolete in .NET 10. Even if it sometimes retur
 
 **Obsolete code to avoid:**
 
-```csharp
-// Don't use - GetData() is obsolete in .NET 10
-object data = Clipboard.GetData("MyApp.Person");  // Obsolete method
-
-// Always returns null on a custom object type
-if (data != null)
-{
-    Person person = (Person)data;  // Unsafe casting
-    ProcessPerson(person);
-}
-```
+:::code language="csharp" source="./snippets/clipboard-dataobject-net10/net/csharp/ObsoletePatterns.cs" id="ObsoleteGetData":::
+:::code language="vb" source="./snippets/clipboard-dataobject-net10/net/vb/ObsoletePatterns.vb" id="ObsoleteGetData":::
 
 **Modern approach using TryGetData\<T>():**
 
-```csharp
-// Use this - type-safe approach with TryGetData<T>()
-if (Clipboard.TryGetData("MyApp.Person", out Person person))
-{
-    ProcessPerson(person);  // person is guaranteed to be the correct type
-}
-else
-{
-    // Handle the case where data isn't available or is the wrong type
-    ShowError("Unable to retrieve person data from clipboard");
-}
-```
+:::code language="csharp" source="./snippets/clipboard-dataobject-net10/net/csharp/ModernApproach.cs" id="ModernTryGetData":::
+:::code language="vb" source="./snippets/clipboard-dataobject-net10/net/vb/ModernApproach.vb" id="ModernTryGetData":::
 
 #### Benefits of TryGetData\<T>()
 
@@ -137,59 +108,13 @@ The `TryGetData<T>()` family replaces the obsolete `GetData()` method. It provid
 
 #### Basic type-safe retrieval
 
-```csharp
-// Retrieve text data using a standard format
-if (Clipboard.TryGetData(DataFormats.Text, out string textData))
-{
-    ProcessTextData(textData);
-}
-
-// Retrieve an integer using a custom format
-if (Clipboard.TryGetData("NumberData", out int numberData))
-{
-    ProcessNumber(numberData);
-}
-
-// Retrieve Unicode text using a standard format
-if (Clipboard.TryGetData(DataFormats.UnicodeText, out string unicodeText))
-{
-    ProcessUnicodeText(unicodeText);
-}
-
-// Retrieve raw text data with OLE conversion control
-if (Clipboard.TryGetData(DataFormats.Text, autoConvert: false, out string rawText))
-{
-    ProcessRawText(rawText);
-}
-
-// Retrieve file drops using a standard format
-if (Clipboard.TryGetData(DataFormats.FileDrop, out string[] files))
-{
-    ProcessFiles(files);
-}
-```
+:::code language="csharp" source="./snippets/clipboard-dataobject-net10/net/csharp/TypeSafeRetrieval.cs" id="BasicTypeSafeRetrieval":::
+:::code language="vb" source="./snippets/clipboard-dataobject-net10/net/vb/TypeSafeRetrieval.vb" id="BasicTypeSafeRetrieval":::
 
 #### Custom JSON types
 
-```csharp
-// Retrieve a custom type stored with SetDataAsJson<T>()
-if (Clipboard.TryGetData("Person", out Person person))
-{
-    ProcessPerson(person);
-}
-
-// Retrieve application-specific data formats
-if (Clipboard.TryGetData("MyApp.Settings", out AppSettings settings))
-{
-    ApplySettings(settings);
-}
-
-// Retrieve complex custom objects
-if (Clipboard.TryGetData("DocumentData", out DocumentInfo doc))
-{
-    LoadDocument(doc);
-}
-```
+:::code language="csharp" source="./snippets/clipboard-dataobject-net10/net/csharp/TypeSafeRetrieval.cs" id="CustomJsonTypes":::
+:::code language="vb" source="./snippets/clipboard-dataobject-net10/net/vb/TypeSafeRetrieval.vb" id="CustomJsonTypes":::
 
 #### Use a type resolver for legacy binary data (requires BinaryFormatter; not recommended)
 
@@ -198,33 +123,8 @@ if (Clipboard.TryGetData("DocumentData", out DocumentInfo doc))
 
 Type resolvers let you handle legacy binary data by mapping type names to actual types during deserialization.
 
-```csharp
-// Create a type resolver that maps old type names to current types
-Func<TypeName, Type> resolver = typeName =>
-{
-    // Only allow specific, known, safe types
-    return typeName.FullName switch
-    {
-        "MyApp.Person" => typeof(Person),
-        "MyApp.Settings" => typeof(AppSettings),
-        "System.String" => typeof(string),
-        "System.Int32" => typeof(int),
-        _ => throw new InvalidOperationException($"Type not allowed: {typeName.FullName}")
-    };
-};
-
-// Use the resolver with legacy binary data
-if (Clipboard.TryGetData("LegacyFormat", resolver, out Person person))
-{
-    ProcessPerson(person);
-}
-
-// Use a resolver with conversion control
-if (Clipboard.TryGetData("OldCustomData", resolver, autoConvert: true, out MyType data))
-{
-    ProcessCustomData(data);
-}
-```
+:::code language="csharp" source="./snippets/clipboard-dataobject-net10/net/csharp/TypeResolver.cs" id="TypeResolverExample":::
+:::code language="vb" source="./snippets/clipboard-dataobject-net10/net/vb/TypeResolver.vb" id="TypeResolverExample":::
 
 **Important security considerations for type resolvers:**
 
@@ -240,31 +140,13 @@ These methods provide automatic JSON serialization using `System.Text.Json` with
 
 #### Automatic format inference
 
-```csharp
-var person = new Person { Name = "Alice", Age = 25 };
-
-// The format is automatically inferred from the type name
-Clipboard.SetDataAsJson(person)  // Uses "Person" as the format
-
-// Retrieve the data later
-if (Clipboard.TryGetData("Person", out Person retrievedPerson))
-{
-    Console.WriteLine($"Retrieved: {retrievedPerson.Name}");
-}
-```
+:::code language="csharp" source="./snippets/clipboard-dataobject-net10/net/csharp/SetDataAsJsonExamples.cs" id="AutomaticFormatInference":::
+:::code language="vb" source="./snippets/clipboard-dataobject-net10/net/vb/SetDataAsJsonExamples.vb" id="AutomaticFormatInference":::
 
 #### Specify a custom format
 
-```csharp
-var settings = new AppSettings { Theme = "Dark", AutoSave = true };
-
-// Use a custom format for better organization
-Clipboard.SetDataAsJson("MyApp.Settings", settings)
-
-// Store the same data in multiple formats
-Clipboard.SetDataAsJson("Config.V1", settings)
-Clipboard.SetDataAsJson("AppConfig", settings)
-```
+:::code language="csharp" source="./snippets/clipboard-dataobject-net10/net/csharp/SetDataAsJsonExamples.cs" id="CustomFormat":::
+:::code language="vb" source="./snippets/clipboard-dataobject-net10/net/vb/SetDataAsJsonExamples.vb" id="CustomFormat":::
 
 ### ITypedDataObject interface
 
@@ -272,50 +154,13 @@ The <xref:System.Windows.Forms.ITypedDataObject> interface enables type-safe dra
 
 #### Implement ITypedDataObject in a custom DataObject
 
-```csharp
-public class TypedDataObject : DataObject, ITypedDataObject
-{
-    public bool TryGetData<T>(string format, out T data)
-    {
-        // Use new type-safe logic
-        return base.TryGetData(format, out data);
-    }
-
-    // This overload requires BinaryFormatter support (not recommended)
-    public bool TryGetData<T>(string format, Func<TypeName, Type> resolver, out T data)
-    {
-        return base.TryGetData(format, resolver, out data);
-    }
-}
-```
+:::code language="csharp" source="./snippets/clipboard-dataobject-net10/net/csharp/ITypedDataObjectExamples.cs" id="ITypedDataObjectImplementation":::
+:::code language="vb" source="./snippets/clipboard-dataobject-net10/net/vb/ITypedDataObjectExamples.vb" id="ITypedDataObjectImplementation":::
 
 #### Use ITypedDataObject in drag-and-drop scenarios
 
-```csharp
-private void OnDragDrop(object sender, DragEventArgs e)
-{
-    if (e.Data is ITypedDataObject typedData)
-    {
-        // Retrieve files from drag data using a standard format
-        if (typedData.TryGetData(DataFormats.FileDrop, out string[] files))
-        {
-            ProcessDroppedFiles(files);
-        }
-
-        // Retrieve text using a standard format
-        if (typedData.TryGetData(DataFormats.Text, out string text))
-        {
-            ProcessDroppedText(text);
-        }
-
-        // Retrieve custom items using an application-specific format
-        if (typedData.TryGetData("CustomItem", out MyItem item))
-        {
-            ProcessCustomItem(item);
-        }
-    }
-}
-```
+:::code language="csharp" source="./snippets/clipboard-dataobject-net10/net/csharp/ITypedDataObjectExamples.cs" id="DragDropUsage":::
+:::code language="vb" source="./snippets/clipboard-dataobject-net10/net/vb/ITypedDataObjectExamples.vb" id="DragDropUsage":::
 
 ## Types that don't require JSON serialization
 
@@ -352,27 +197,8 @@ The following primitive types work seamlessly with clipboard and `DataObject` op
 
 The following examples show how these primitive types work directly with `SetData()` and `TryGetData<T>()` methods:
 
-```csharp
-// Numeric types
-Clipboard.SetData("MyInt", 42);
-Clipboard.SetData("MyDouble", 3.14159);
-Clipboard.SetData("MyDecimal", 123.45m);
-
-// Text and character types
-Clipboard.SetData("MyString", "Hello World");
-Clipboard.SetData("MyChar", 'A');
-
-// Boolean and date/time types
-Clipboard.SetData("MyBool", true);
-Clipboard.SetData("MyDateTime", DateTime.Now);
-Clipboard.SetData("MyTimeSpan", TimeSpan.FromMinutes(30));
-
-// Later retrieval with type safety
-if (Clipboard.TryGetData("MyInt", out int value))
-{
-    ProcessInteger(value);
-}
-```
+:::code language="csharp" source="./snippets/clipboard-dataobject-net10/net/csharp/PrimitiveTypesExamples.cs" id="PrimitiveTypesExample":::
+:::code language="vb" source="./snippets/clipboard-dataobject-net10/net/vb/PrimitiveTypesExamples.vb" id="PrimitiveTypesExample":::
 
 ### Collections of primitive types
 
@@ -384,24 +210,8 @@ Arrays and generic lists of supported primitive types work without extra configu
 
 The following examples show how arrays and lists can be set on the clipboard:
 
-```csharp
-// Arrays of primitive types
-int[] numbers = { 1, 2, 3, 4, 5 };
-Clipboard.SetData("NumberArray", numbers);
-
-double[] coordinates = { 1.0, 2.5, 3.7 };
-Clipboard.SetData("Coordinates", coordinates);
-
-// Generic lists
-List<int> intList = new List<int> { 10, 20, 30 };
-Clipboard.SetData("IntList", intList);
-
-// Retrieval maintains type safety
-if (Clipboard.TryGetData("NumberArray", out int[] retrievedNumbers))
-{
-    ProcessNumbers(retrievedNumbers);
-}
-```
+:::code language="csharp" source="./snippets/clipboard-dataobject-net10/net/csharp/PrimitiveTypesExamples.cs" id="CollectionsExample":::
+:::code language="vb" source="./snippets/clipboard-dataobject-net10/net/vb/PrimitiveTypesExamples.vb" id="CollectionsExample":::
 
 ### System.Drawing types
 
@@ -413,24 +223,8 @@ Common graphics types from the `System.Drawing` namespace work seamlessly with c
 
 The following examples show how these graphics types can be used with clipboard operations:
 
-```csharp
-// Geometric types
-Point location = new Point(100, 200);
-Rectangle bounds = new Rectangle(0, 0, 500, 300);
-Size dimensions = new Size(800, 600);
-
-Clipboard.SetData("Location", location);
-Clipboard.SetData("Bounds", bounds);
-Clipboard.SetData("Size", dimensions);
-
-// Color information
-Color backgroundColor = Color.FromArgb(255, 128, 64, 192);
-Clipboard.SetData("BackColor", backgroundColor);
-
-// Bitmap data (use with caution for large images)
-Bitmap smallIcon = new Bitmap(16, 16);
-Clipboard.SetData("Icon", smallIcon);
-```
+:::code language="csharp" source="./snippets/clipboard-dataobject-net10/net/csharp/SystemDrawingTypesExamples.cs" id="SystemDrawingTypes":::
+:::code language="vb" source="./snippets/clipboard-dataobject-net10/net/vb/SystemDrawingTypesExamples.vb" id="SystemDrawingTypes":::
 
 ## Work with custom types
 
@@ -440,26 +234,8 @@ When you use <xref:System.Windows.Forms.Clipboard.SetDataAsJson``1(System.String
 
 Most straightforward custom types don't require special configuration:
 
-```csharp
-// Records work without any attributes.
-public record PersonInfo(string Name, int Age, string Email);
-
-// Simple classes serialize all public properties automatically.
-public class DocumentMetadata
-{
-    public string Title { get; set; }
-    public DateTime Created { get; set; }
-    public string Author { get; set; }
-}
-
-// Structs with public properties work seamlessly.
-public struct Point3D
-{
-    public double X { get; set; }
-    public double Y { get; set; }
-    public double Z { get; set; }
-}
-```
+:::code language="csharp" source="./snippets/clipboard-dataobject-net10/net/csharp/CustomTypesExamples.cs" id="SimpleCustomTypes":::
+:::code language="vb" source="./snippets/clipboard-dataobject-net10/net/vb/CustomTypesExamples.vb" id="SimpleCustomTypes":::
 
 ### Use JSON attributes for advanced control
 
@@ -467,48 +243,13 @@ Use `System.Text.Json` attributes only when you need to customize serialization 
 
 The following example shows how you can use JSON attributes to control serialization:
 
-```csharp
-public class ClipboardFriendlyType
-{
-    // Include a field that normally isn't serialized
-    [JsonInclude]
-    private int _privateData;
-
-    // Public properties are always serialized
-    public string Name { get; set; }
-    
-    // Exclude sensitive or non-essential data
-    [JsonIgnore]
-    public string InternalId { get; set; }
-    
-    // Handle property name differences for compatibility
-    [JsonPropertyName("display_text")]
-    public string DisplayText { get; set; }
-    
-    // Control null value handling
-    [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
-    public string OptionalField { get; set; }
-}
-```
+:::code language="csharp" source="./snippets/clipboard-dataobject-net10/net/csharp/CustomTypesExamples.cs" id="JsonAttributesExample":::
+:::code language="vb" source="./snippets/clipboard-dataobject-net10/net/vb/CustomTypesExamples.vb" id="JsonAttributesExample":::
 
 ### Example: Clipboard operations with custom types
 
-```csharp
-var data = new ClipboardFriendlyType 
-{ 
-    Name = "Sample", 
-    DisplayText = "Sample Display Text",
-    InternalId = "internal-123" // This property isn't serialized due to [JsonIgnore]
-};
-
-Clipboard.SetDataAsJson("MyAppData", data);
-
-if (Clipboard.TryGetData("MyAppData", out ClipboardFriendlyType retrieved))
-{
-    Console.WriteLine($"Retrieved: {retrieved.Name}");
-    // retrieved.InternalId is null because of [JsonIgnore]
-}
-```
+:::code language="csharp" source="./snippets/clipboard-dataobject-net10/net/csharp/CustomTypesExamples.cs" id="CustomTypesClipboardOperations":::
+:::code language="vb" source="./snippets/clipboard-dataobject-net10/net/vb/CustomTypesExamples.vb" id="CustomTypesClipboardOperations":::
 
 ## Enable BinaryFormatter support (not recommended)
 
@@ -583,37 +324,8 @@ Even with `BinaryFormatter` enabled, you must implement type resolvers to restri
 
 The following example shows a secure type resolver implementation:
 
-```csharp
-// Create a security-focused type resolver
-private static Type SecureTypeResolver(TypeName typeName)
-{
-    // Explicit allow-list of permitted types—add only what you need
-    var allowedTypes = new Dictionary<string, Type>
-    {
-        ["MyApp.Person"] = typeof(Person),
-        ["MyApp.Settings"] = typeof(AppSettings),
-        ["System.String"] = typeof(string),
-        ["System.Int32"] = typeof(int),
-        // Add only the specific types your application requires
-    };
-
-    // Only allow explicitly listed types - exact string match required
-    if (allowedTypes.TryGetValue(typeName.FullName, out Type allowedType))
-    {
-        return allowedType;
-    }
-
-    // Reject any type not in the allow-list with clear error message
-    throw new InvalidOperationException(
-        $"Type '{typeName.FullName}' is not permitted for clipboard deserialization");
-}
-
-// Use the resolver with clipboard operations
-if (Clipboard.TryGetData("LegacyData", SecureTypeResolver, out MyCustomType data))
-{
-    ProcessLegacyData(data);
-}
-```
+:::code language="csharp" source="./snippets/clipboard-dataobject-net10/net/csharp/BinaryFormatterSupport.cs" id="SecureTypeResolver":::
+:::code language="vb" source="./snippets/clipboard-dataobject-net10/net/vb/BinaryFormatterSupport.vb" id="SecureTypeResolver":::
 
 ## Use AI to migrate clipboard code
 
