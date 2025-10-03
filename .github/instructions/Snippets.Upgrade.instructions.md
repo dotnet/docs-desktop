@@ -30,8 +30,14 @@ All snippets must follow this folder structure relative to the referencing artic
 - **USE** PascalCase for class names and file names (e.g., `MainForm.cs`, `DataProcessor.cs`)
 - **ORGANIZE** files logically within the language folder
 
-### 2. Snippet naming
+### 2. Snippet Identifiers and Naming
+- **USE** meaningful, descriptive snippet identifiers in CamelCase format
 - **REPLACE** simplistic identifiers (like single numbers) with descriptive snippet names
+- **EXAMPLES** of good snippet identifiers:
+  - `BasicClipboardData` instead of `1`
+  - `CustomDataFormat` instead of `2`
+  - `ClipboardImageHandling` instead of `code1`
+- **ENSURE** snippet identifiers clearly describe the code's purpose or functionality
 
 ### 3. .NET Version and Syntax Modernization
 - **TARGET** the latest stable .NET version for `/net/` folders

@@ -54,6 +54,9 @@ description: Migrate code from the old ~/samples/snippets/ location to the relat
 - ✅ MUST target appropriate .NET version (see targeting rules below)
 - ✅ MUST provide BOTH C# and Visual Basic versions
 - ✅ MUST use appropriate syntax for the target framework
+- ✅ MUST use meaningful, descriptive snippet identifiers in CamelCase format
+  - **Examples** of good snippet identifiers: `BasicClipboardData`, `CustomDataFormat`, `ClipboardImageHandling`
+  - **Avoid** simplistic identifiers like `1`, `2`, `code1`, or `snippet1`
 
 **Current article references look like this:**
 ```markdown
@@ -113,7 +116,8 @@ description: Migrate code from the old ~/samples/snippets/ location to the relat
 ### 5. Update article references
 - **Replace**: Change from legacy `[!code-...]` format to modern `:::code...:::` format
 - **Before**: `[!code-csharp[description](~/samples/snippets/path/file.cs#snippet1)]`
-- **After**: `:::code language="csharp" source="./snippets/doc-name/net/csharp/file.cs" id="snippet1":::`
+- **After**: `:::code language="csharp" source="./snippets/doc-name/net/csharp/file.cs" id="BasicClipboardData":::`
+- **Note**: Use meaningful CamelCase identifiers instead of simple numbers
 
 ### 6. Validate
 - **Build**: Ensure all code compiles successfully

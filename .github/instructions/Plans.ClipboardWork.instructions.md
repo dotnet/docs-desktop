@@ -8,9 +8,9 @@ description: The plan for updating the Clipboard content
 If you're creating article files, use the [templates](/.github/projects/article-templates/) folder to find a suitable article template.
 
 IMPORTANT! Add the following files as context:
+- [Migration guide for Clipboard in .NET 10](/dotnet-desktop-guide/winforms/migration/clipboard-dataobject-net10.md)
 - [Engineer's overview on the changes in .NET 10 for Clipboard](/.github/projects/clipboard/clipboard-dataobject-net10-changes.md)
 - [BinaryFormatter migration guide](https://learn.microsoft.com/en-us/dotnet/standard/serialization/binaryformatter-migration-guide/)
-- [Summary of existing articles](/.github/projects/clipboard/temp-clipboard-articles.md)
 
 ## Executive Summary
 
@@ -23,12 +23,6 @@ The .NET 10 release introduces significant changes to the Windows Forms clipboar
 1. **`drag-and-drop-operations-and-clipboard-support.md`** - Main overview article
 2. **`how-to-add-data-to-the-clipboard.md`** - Adding data guide
 3. **`how-to-retrieve-data-from-the-clipboard.md`** - Retrieving data guide  
-4. **`additional-security-considerations-in-windows-forms.md`** - Security section needs updates
-
-### Existing Code Snippets:
-
-- **`dotnet-desktop-guide/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/`**
-- **`dotnet-desktop-guide/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.Clipboard/`**
 
 ## Detailed Update Plan
 
@@ -48,9 +42,9 @@ The .NET 10 release introduces significant changes to the Windows Forms clipboar
 - **Estimated Length**: 2,000-2,500 words
 - **Status**: Completed 
 
-### Phase 2: Update Existing Core Articles
+### Phase 2: Update Existing Core Articles ✅
 
-#### 2.1 Update Main Overview (`drag-and-drop-operations-and-clipboard-support.md`)
+#### 2.1 Update Main Overview (`drag-and-drop-operations-and-clipboard-support.md`) ✅
 
 - **Changes Needed**:
   - Add .NET 10 compatibility section
@@ -58,8 +52,9 @@ The .NET 10 release introduces significant changes to the Windows Forms clipboar
   - Add links to new migration guide
   - Update "In This Section" with new articles
 - **Priority**: High
+- **Status**: Completed
 
-#### 2.2 Comprehensive Rewrite (`how-to-add-data-to-the-clipboard.md`)
+#### 2.2 Comprehensive Rewrite (`how-to-add-data-to-the-clipboard.md`) ✅
 
 - **Major Changes**:
   - Add new section on `SetDataAsJson<T>()` method
@@ -72,8 +67,9 @@ The .NET 10 release introduces significant changes to the Windows Forms clipboar
   - "Working with Recommended Built-in Types"
   - "Migrating from Legacy SetData Methods"
 - **Priority**: High
+- **Status**: Completed
 
-#### 2.3 Comprehensive Rewrite (`how-to-retrieve-data-from-the-clipboard.md`)  
+#### 2.3 Comprehensive Rewrite (`how-to-retrieve-data-from-the-clipboard.md`) ✅
 
 - **Major Changes**:
   - Replace `GetData()` examples with `TryGetData<T>()` methods
@@ -85,20 +81,13 @@ The .NET 10 release introduces significant changes to the Windows Forms clipboar
   - "Handling Legacy Binary Data"
   - "Working with Custom JSON Types"
 - **Priority**: High
-
-#### 2.4 Update Security Article (`additional-security-considerations-in-windows-forms.md`)
-
-- **Changes Needed**:
-  - Update clipboard security section for .NET 10
-  - Add information about BinaryFormatter security implications
-  - Document new runtime configuration switches
-  - Add guidance on type resolvers for legacy support
-- **Priority**: Medium
+- **Status**: Completed
 
 ### Phase 3: Create New Specialized Articles
 
 #### 3.1 New Article: `how-to-use-typed-clipboard-apis.md`
 
+- **Template**: How-to article
 - **Content Focus**:
   - Detailed guide on `TryGetData<T>()` methods
   - Examples of all overloads
@@ -115,8 +104,9 @@ The .NET 10 release introduces significant changes to the Windows Forms clipboar
   - Cross-process/cross-framework compatibility
 - **Priority**: Medium
 
-#### 3.3 New Article: `enabling-binaryformatter-clipboard-support.md`
+#### 3.3 New Article: `how-to-enable-binaryformatter-clipboard-support.md`
 
+- **Template**: How-to article
 - **Content Focus**:
   - Complete guide for legacy application migration
   - Runtime configuration steps
@@ -124,34 +114,15 @@ The .NET 10 release introduces significant changes to the Windows Forms clipboar
   - Type resolver implementation examples
 - **Priority**: Medium (for legacy support)
 
-### Phase 4: Update Code Snippets and Examples
+### Phase 4: Navigation and Discoverability Updates
 
-#### 4.1 Create New Snippet Collections
-
-- **Location**: `dotnet-desktop-guide/samples/snippets/winforms/clipboard-net10/`
-- **Contents**:
-  - `basic-json-serialization/` - SetDataAsJson examples
-  - `typed-retrieval/` - TryGetData examples  
-  - `legacy-migration/` - Before/after migration examples
-  - `custom-resolver/` - Type resolver implementations
-- **Languages**: C# and VB.NET for each example
-
-#### 4.2 Update Existing Snippets
-
-- **`VS_Snippets_Winforms/System.Windows.Forms.Clipboard/`**:
-  - Add new .NET 10 examples alongside existing ones
-  - Mark legacy examples with version compatibility notes
-  - Add migration guidance in comments
-
-### Phase 5: Navigation and Discoverability Updates
-
-#### 5.1 Update Table of Contents (`toc.yml`)
+#### 4.1 Update Table of Contents (`toc.yml`)
 
 - Add new articles to the drag-and-drop section
 - Reorganize clipboard articles for better flow
 - Add migration guide as featured content
 
-#### 5.2 Update Cross-References
+#### 4.2 Update Cross-References
 
 - Add xref links between related articles
 - Update "See also" sections across all clipboard articles
@@ -159,17 +130,17 @@ The .NET 10 release introduces significant changes to the Windows Forms clipboar
 
 ## Implementation Timeline
 
-### Week 1-2: Foundation
+### Week 1-2: Foundation ✅
 
-- [ ] Create comprehensive migration overview article
-- [ ] Update main overview article with .NET 10 references
-- [ ] Set up new code snippet structure
+- [x] Create comprehensive migration overview article
+- [x] Update main overview article with .NET 10 references
+- [x] Set up new code snippet structure
 
-### Week 3-4: Core Rewrites  
+### Week 3-4: Core Rewrites ✅
 
-- [ ] Rewrite "How to: Add Data" article
-- [ ] Rewrite "How to: Retrieve Data" article
-- [ ] Create new typed APIs guide
+- [x] Rewrite "How to: Add Data" article
+- [x] Rewrite "How to: Retrieve Data" article
+- [x] Create new typed APIs guide
 
 ### Week 5-6: Specialized Content
 
