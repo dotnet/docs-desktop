@@ -1,0 +1,7 @@
+{
+  "runtimeOptions": {
+    "configProperties": {
+      "Windows.ClipboardDragDrop.EnableUnsafeBinaryFormatterSerialization": true
+    }
+  }
+}

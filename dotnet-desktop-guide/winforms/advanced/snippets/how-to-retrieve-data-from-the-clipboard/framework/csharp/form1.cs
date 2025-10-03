@@ -1,9 +1,9 @@
-﻿using System;
+using System;
 using System.Windows.Forms;
 
 public class Form1 : Form
 {
-    //<snippet100>
+    //<HelperMethods>
     [Serializable]
     public class Customer
     {
@@ -18,16 +18,14 @@ public class Form1 : Form
             set { nameValue = value; }
         }
     }
-    //</snippet100>
+    //</HelperMethods>
 
     public Form1()
     {
-        //<snippet1>
         Clipboard.Clear();
-        //</snippet1>
     }
 
-    //<snippet3>
+    //<RetrieveCustomFormat>
     // Demonstrates SetData, ContainsData, and GetData
     // using a custom format name and a business object.
     public Customer TestCustomFormat
@@ -42,9 +40,9 @@ public class Form1 : Form
             return null;
         }
     }
-    //</snippet3>
+    //</RetrieveCustomFormat>
 
-    //<snippet4>
+    //<RetrieveMultipleFormats>
     // Demonstrates how to use a DataObject to add
     // data to the Clipboard in multiple formats.
     public void TestClipboardMultipleFormats()
@@ -81,9 +79,8 @@ public class Form1 : Form
             }
         }
     }
-    //</snippet4>
+    //</RetrieveMultipleFormats>
 
-    //<snippet10>
     // Demonstrates SetData, ContainsData, and GetData.
     public Object SwapClipboardFormattedData(String format, Object data)
     {
@@ -95,10 +92,8 @@ public class Form1 : Form
         }
         return returnObject;
     }
-    //</snippet10>
 
-    //<snippet2>
-    //<snippet20>
+    //<RetrieveCommonFormat>
     // Demonstrates SetAudio, ContainsAudio, and GetAudioStream.
     public System.IO.Stream SwapClipboardAudio(
         System.IO.Stream replacementAudioStream)
@@ -111,9 +106,7 @@ public class Form1 : Form
         }
         return returnAudioStream;
     }
-    //</snippet20>
 
-    //<snippet30>
     // Demonstrates SetFileDropList, ContainsFileDroList, and GetFileDropList
     public System.Collections.Specialized.StringCollection
         SwapClipboardFileDropList(
@@ -127,9 +120,7 @@ public class Form1 : Form
         }
         return returnList;
     }
-    //</snippet30>
 
-    //<snippet40>
     // Demonstrates SetImage, ContainsImage, and GetImage.
     public System.Drawing.Image SwapClipboardImage(
         System.Drawing.Image replacementImage)
@@ -142,9 +133,7 @@ public class Form1 : Form
         }
         return returnImage;
     }
-    //</snippet40>
 
-    //<snippet50>
     // Demonstrates SetText, ContainsText, and GetText.
     public String SwapClipboardHtmlText(String replacementHtmlText)
     {
@@ -156,6 +145,5 @@ public class Form1 : Form
         }
         return returnHtmlText;
     }
-    //</snippet50>
-    //</snippet2>
+    //</RetrieveCommonFormat>
 }
