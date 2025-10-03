@@ -6,6 +6,13 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+    <EnableUnsafeBinaryFormatterSerialization>true</EnableUnsafeBinaryFormatterSerialization>
   </PropertyGroup>
+
+  <!-- <PackageReference> -->
+  <ItemGroup>
+    <PackageReference Include="System.Runtime.Serialization.Formatters" Version="10.0.0"/>
+  </ItemGroup>
+  <!-- </PackageReference> -->
 
 </Project>

@@ -37,7 +37,7 @@ Before you continue, review these concepts:
 
 For more information, see these articles:
 
-- [BinaryFormatter security guide](/dotnet/standard/serialization/binaryformatter-security-guide).
+- [Deserialization risks in use of BinaryFormatter and related types](/dotnet/standard/serialization/binaryformatter-security-guide).
 - [BinaryFormatter migration guide](/dotnet/standard/serialization/binaryformatter-migration-guide/).
 
 ## Breaking changes from BinaryFormatter removal
@@ -119,7 +119,7 @@ The `TryGetData<T>()` family replaces the obsolete `GetData()` method. It provid
 #### Use a type resolver for legacy binary data (requires BinaryFormatter; not recommended)
 
 > [!WARNING]
-> Type resolvers only work when BinaryFormatter support is enabled, which isn't recommended due to security risks. For more information, see [Enable BinaryFormatter support (not recommended)](#enable-binaryformatter-support-not-recommended).
+> Type resolvers only work when BinaryFormatter support is enabled, which isn't recommended due to security risks. For more information, see [Enable BinaryFormatter clipboard support (not recommended)](#enable-binaryformatter-clipboard-support-not-recommended).
 
 Type resolvers let you handle legacy binary data by mapping type names to actual types during deserialization.
 
@@ -258,7 +258,7 @@ The following example shows how you can use JSON attributes to control serializa
 
 If you must continue using `BinaryFormatter` for clipboard operations in .NET 10, enable limited support through explicit configuration. This approach carries significant security risks and requires several steps.
 
-For complete step-by-step instructions, see [How to: Enable BinaryFormatter clipboard support (not recommended)](../advanced/how-to-enable-binaryformatter-clipboard-support.md). For general migration guidance, see the [BinaryFormatter migration guide](/dotnet/standard/serialization/binaryformatter-migration-guide/).
+For complete step-by-step instructions, see [Enable BinaryFormatter clipboard support (not recommended)](../advanced/how-to-enable-binaryformatter-clipboard-support.md). For general migration guidance, see the [BinaryFormatter migration guide](/dotnet/standard/serialization/binaryformatter-migration-guide/).
 
 ### Security warnings and risks
 
@@ -387,8 +387,8 @@ Check for: missing error handling, types that might not serialize properly to JS
 
 ## Related content
 
-- [How to: Add Data to the Clipboard](../advanced/how-to-add-data-to-the-clipboard.md)
-- [How to: Retrieve Data from the Clipboard](../advanced/how-to-retrieve-data-from-the-clipboard.md)
+- [How to add data to the Clipboard](../advanced/how-to-add-data-to-the-clipboard.md)
+- [How to retrieve data from the Clipboard](../advanced/how-to-retrieve-data-from-the-clipboard.md)
 - [Drag-and-Drop Operations and Clipboard Support](../advanced/drag-and-drop-operations-and-clipboard-support.md)
 - <xref:System.Windows.Forms.Clipboard.SetDataAsJson``1(System.String,``0)?displayProperty=fullName>
 - <xref:System.Windows.Forms.Clipboard.TryGetData*?displayProperty=fullName>
