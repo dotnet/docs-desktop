@@ -119,7 +119,7 @@ The `TryGetData<T>()` family replaces the obsolete `GetData()` method. It provid
 #### Use a type resolver for legacy binary data (requires BinaryFormatter; not recommended)
 
 > [!WARNING]
-> Type resolvers only work when BinaryFormatter support is enabled, which isn't recommended due to security risks. For more information, see [Enable BinaryFormatter clipboard support (not recommended)](#enable-binaryformatter-clipboard-support-not-recommended).
+> Type resolvers only work when BinaryFormatter support is enabled, which isn't recommended due to security risks. For more information, see [Enable BinaryFormatter clipboard support (not recommended)](../advanced/how-to-enable-binaryformatter-clipboard-support.md).
 
 Type resolvers let you handle legacy binary data by mapping type names to actual types during deserialization.
 
