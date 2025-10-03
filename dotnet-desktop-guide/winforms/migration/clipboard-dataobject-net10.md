@@ -258,7 +258,7 @@ The following example shows how you can use JSON attributes to control serializa
 
 If you must continue using `BinaryFormatter` for clipboard operations in .NET 10, enable limited support through explicit configuration. This approach carries significant security risks and requires several steps.
 
-For complete migration guidance, see the [BinaryFormatter migration guide](/dotnet/standard/serialization/binaryformatter-migration-guide/).
+For complete step-by-step instructions, see [How to: Enable BinaryFormatter clipboard support (not recommended)](../advanced/how-to-enable-binaryformatter-clipboard-support.md). For general migration guidance, see the [BinaryFormatter migration guide](/dotnet/standard/serialization/binaryformatter-migration-guide/).
 
 ### Security warnings and risks
 
@@ -271,46 +271,7 @@ For complete migration guidance, see the [BinaryFormatter migration guide](/dotn
 
 Only enable this support as a temporary bridge while you update your application to use the new type-safe APIs.
 
-### Complete configuration requirements
-
-Follow these steps to enable `BinaryFormatter` support for clipboard operations:
-
-1. Install the compatibility package.
-
-   Add the unsupported `BinaryFormatter` compatibility package to your project:
-
-   ```xml
-   <ItemGroup>
-     <PackageReference Include="System.Runtime.Serialization.Formatters" Version="9.0.0" />
-   </ItemGroup>
-   ```
-
-1. Enable unsafe serialization in your project file.
-
-   Set the `EnableUnsafeBinaryFormatterSerialization` property to `true` in your project file:
-
-   ```xml
-   <PropertyGroup>
-     <TargetFramework>net10.0</TargetFramework>
-     <EnableUnsafeBinaryFormatterSerialization>true</EnableUnsafeBinaryFormatterSerialization>
-   </PropertyGroup>
-   ```
-
-1. Configure the Windows Forms runtime switch.
-
-   Create or update your application's `runtimeconfig.json` file to enable the Windows Forms-specific clipboard switch:
-
-   ```json
-   {
-     "runtimeOptions": {
-       "configProperties": {
-         "Windows.ClipboardDragDrop.EnableUnsafeBinaryFormatterSerialization": true
-       }
-     }
-   }
-   ```
-
-   Without this switch, clipboard operations won't fall back to `BinaryFormatter` even if general serialization support is enabled.
+For detailed security guidelines and configuration steps, see [Security warnings and risks](../advanced/how-to-enable-binaryformatter-clipboard-support.md#security-warnings-and-risks) in the how-to guide.
 
 ### Implement security-focused type resolvers
 
@@ -322,10 +283,7 @@ Even with `BinaryFormatter` enabled, you must implement type resolvers to restri
 - **Throw exceptions for unknown types.** Clearly reject unauthorized types.
 - **Review regularly.** Audit and update the allowed list as needed.
 
-The following example shows a secure type resolver implementation:
-
-:::code language="csharp" source="./snippets/clipboard-dataobject-net10/net/csharp/BinaryFormatterSupport.cs" id="SecureTypeResolver":::
-:::code language="vb" source="./snippets/clipboard-dataobject-net10/net/vb/BinaryFormatterSupport.vb" id="SecureTypeResolver":::
+For complete implementation examples and code samples, see [Implement security-focused type resolvers](../advanced/how-to-enable-binaryformatter-clipboard-support.md#implement-security-focused-type-resolvers) in the how-to guide.
 
 ## Use AI to migrate clipboard code
 
