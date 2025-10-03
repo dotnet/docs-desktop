@@ -11,7 +11,7 @@
 
   <!-- <PackageReference> -->
   <ItemGroup>
-    <PackageReference Include="System.Runtime.Serialization.Formatters" Version="10.0.0"/>
+    <PackageReference Include="System.Runtime.Serialization.Formatters" Version="10.0.0*-*"/>
   </ItemGroup>
   <!-- </PackageReference> -->
 
