@@ -152,10 +152,7 @@ These methods provide automatic JSON serialization using `System.Text.Json` with
 
 The <xref:System.Windows.Forms.ITypedDataObject> interface enables type-safe drag-and-drop operations by extending <xref:System.Windows.Forms.IDataObject> with typed methods.
 
-#### Implement ITypedDataObject in a custom DataObject
-
-:::code language="csharp" source="./snippets/clipboard-dataobject-net10/net/csharp/ITypedDataObjectExamples.cs" id="ITypedDataObjectImplementation":::
-:::code language="vb" source="./snippets/clipboard-dataobject-net10/net/vb/ITypedDataObjectExamples.vb" id="ITypedDataObjectImplementation":::
+Starting with .NET 10, <xref:System.Windows.Forms.DataObject> (a common type in drag-and-drop scenarios) implements `ITypedDataObject`.
 
 #### Use ITypedDataObject in drag-and-drop scenarios
 
