@@ -100,7 +100,7 @@ description: Migrate code from the old ~/samples/snippets/ location to the relat
   - Article shows BOTH .NET and .NET Framework → create both `./snippets/{doc-file}/net/{code-language}/` and `./snippets/{doc-file}/framework/{code-language}/`
 
 ### 3. Migrate and update code
-- **Copy**: Move the code file to the new location
+- **Copy**: Copy only the snippet code (and any supporting code to compile the snippet) to the new location
 - **Update approach**:
   - **For .NET Framework articles**: Migrate with minimal changes, keep .NET Framework targeting
   - **For dual-framework articles**: Create both versions with appropriate targeting and update frontmatter to `ms.service: dotnet-desktop`
@@ -127,7 +127,7 @@ description: Migrate code from the old ~/samples/snippets/ location to the relat
 ### 7. Delete
 - **Identify**:
   - Check if the old snippet file is used by any other articles
-  - Some articles may use a relative path to the `samples` folder, so simply search for `samples/snippets/...`
+  - Some articles may use a relative path to the `samples` folder, so simply search for links to `samples/snippets/...`
   - Be confident that all legacy snippets use a `samples/snippets` folder structure
 - **Delete**: If old snippet is no longer used by any article, delete it.
 

@@ -1,5 +1,5 @@
 ---
-model: GPT-4o (copilot)
+model: GPT-4.1 (copilot)
 mode: agent
 description: "Validates article structure against appropriate templates"
 ---
@@ -22,7 +22,7 @@ Analyze the current article to determine its type:
 ### Step 2: Select and Read Template
 - Map the article type to the corresponding template file:
   - `how-to` → `template-how-to-guide.md`
-  - `quickstart` → `template-quickstart.md` 
+  - `quickstart` → `template-quickstart.md`
   - `tutorial` → `template-tutorial.md`
   - `concept` → `template-concept.md`
   - `overview` → `template-overview.md`

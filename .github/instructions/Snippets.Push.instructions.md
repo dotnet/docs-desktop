@@ -8,11 +8,11 @@ description: Push inline code block snippets out of articles into standalone fil
 
 ## Quick Reference
 
-**WHEN TO PUSH:** Code >6 lines, complete/compilable examples, or when specifically requested  
-**FOLDER PATTERN:** `./snippets/{doc-file}/[net-or-framework]/{csharp|vb}/`  
-**PROJECT CREATION:** Always use `dotnet new {winforms|wpf|console|classlib}` commands  
-**LANGUAGES:** Create both C# and VB versions  
-**SNIPPET IDs:** Use CamelCase region markers like `<ButtonClick>`  
+**WHEN TO PUSH:** Code >6 lines, complete/compilable examples, or when specifically requested
+**FOLDER PATTERN:** `./snippets/{doc-file}/[net-or-framework]/{csharp|vb}/`
+**PROJECT CREATION:** Always use `dotnet new {winforms|wpf|console|classlib}` commands to create a new project for the code language
+**LANGUAGES:** Create both C# and VB versions
+**SNIPPET IDs:** Use CamelCase region markers like `<ButtonClick>`
 **ARTICLE REFS:** Replace with `:::code language="csharp" source="./path" id="SnippetId":::`
 
 ## When to push snippets out of articles
@@ -32,7 +32,7 @@ description: Push inline code block snippets out of articles into standalone fil
 
 ## Target folder structure
 
-**IMPORTANT**: Follow the same structure as the migration guidelines:
+**IMPORTANT**: Follow a folder structure based on the article and code language:
 
 ### New snippet location (standard)
 - Path pattern: `./snippets/{doc-file}/[net-or-framework]/{code-language}/`
@@ -75,7 +75,7 @@ description: Push inline code block snippets out of articles into standalone fil
 - Create folder structure: `./snippets/{doc-file}/[net-or-framework]/{csharp|vb}/`
 
 ### 2. Create projects and extract code
-- Run appropriate `dotnet new` command in each language folder
+- Run appropriate `dotnet new` command in each language folder, **don't** specify an output folder with `-o`. Specify a meaningful project name with `-n` if possible
 - Copy and complete code to make it compilable
 - Add missing using statements, namespaces, class declarations
 - Modernize code patterns if targeting current .NET
@@ -105,7 +105,7 @@ dev_langs:
 ## Common mistakes to avoid
 
 - ❌ Extracting short snippets (≤6 lines) without request
-- ❌ Skipping `dotnet new` commands or creating incomplete projects  
+- ❌ Skipping `dotnet new` commands or creating incomplete projects
 - ❌ Missing C# or VB versions
 - ❌ Using language tabs
 - ❌ Wrong project type (winforms vs wpf vs console)
@@ -116,6 +116,6 @@ dev_langs:
 ## Quality checklist
 
 - ✅ Correct folder structure and project type
-- ✅ Both C# and VB versions compile successfully  
+- ✅ Both C# and VB versions compile successfully
 - ✅ Snippet regions use CamelCase identifiers
 - ✅ Article uses correct `:::code...:::` syntax with valid paths
