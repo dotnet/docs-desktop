@@ -1,4 +1,4 @@
-Imports System
+﻿Imports System
 Imports System.Windows.Forms
 
 Namespace ClipboardExamples
@@ -28,14 +28,10 @@ Namespace ClipboardExamples
 
             ' Always returns null on a custom object type
             If data IsNot Nothing Then
-                Dim person As Person = CType(data, Person)  ' Unsafe casting
-                ProcessPerson(person)
+                Dim person As Person = CType(data, Person)
+                Console.WriteLine($"Processing person: {person.Name}, Age: {person.Age}")
             End If
         End Sub
         ' </ObsoleteGetData>
-
-        Private Shared Sub ProcessPerson(person As Person)
-            Console.WriteLine($"Processing person: {person.Name}, Age: {person.Age}")
-        End Sub
     End Class
 End Namespace

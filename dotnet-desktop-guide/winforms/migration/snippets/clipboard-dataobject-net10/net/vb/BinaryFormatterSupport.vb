@@ -49,13 +49,9 @@ Namespace ClipboardExamples
         Public Shared Sub UseSecureTypeResolver()
             Dim data As MyCustomType = Nothing
             If Clipboard.TryGetData("LegacyData", AddressOf SecureTypeResolver, data) Then
-                ProcessLegacyData(data)
+                Console.WriteLine($"Processing legacy data: {data.Data}")
             End If
         End Sub
         ' </SecureTypeResolver>
-
-        Private Shared Sub ProcessLegacyData(data As MyCustomType)
-            Console.WriteLine($"Processing legacy data: {data.Data}")
-        End Sub
     End Class
 End Namespace

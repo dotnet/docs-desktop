@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Reflection.Metadata;
 using System.Windows.Forms;
 
@@ -43,25 +43,15 @@ namespace ClipboardExamples
             // Use the resolver with legacy binary data
             if (Clipboard.TryGetData("LegacyFormat", resolver, out Person person))
             {
-                ProcessPerson(person);
+                Console.WriteLine($"Processing person: {person.Name}, Age: {person.Age}");
             }
 
             // Use a resolver with conversion control
             if (Clipboard.TryGetData("OldCustomData", resolver, out MyType data))
             {
-                ProcessCustomData(data);
+                Console.WriteLine($"Processing custom data: {data.Data}");
             }
         }
         // </TypeResolverExample>
-
-        private static void ProcessPerson(Person person)
-        {
-            Console.WriteLine($"Processing person: {person.Name}, Age: {person.Age}");
-        }
-
-        private static void ProcessCustomData(MyType data)
-        {
-            Console.WriteLine($"Processing custom data: {data.Data}");
-        }
     }
 }

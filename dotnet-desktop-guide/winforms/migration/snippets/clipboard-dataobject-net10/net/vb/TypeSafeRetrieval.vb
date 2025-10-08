@@ -1,4 +1,4 @@
-Imports System
+﻿Imports System
 Imports System.Windows.Forms
 
 Namespace ClipboardExamples
@@ -8,31 +8,31 @@ Namespace ClipboardExamples
             ' Retrieve text data using a standard format
             Dim textData As String = Nothing
             If Clipboard.TryGetData(DataFormats.Text, textData) Then
-                ProcessTextData(textData)
+                Console.WriteLine($"Text: {textData}")
             End If
 
             ' Retrieve an integer using a custom format
             Dim numberData As Integer
             If Clipboard.TryGetData("NumberData", numberData) Then
-                ProcessNumber(numberData)
+                Console.WriteLine($"Number: {numberData}")
             End If
 
             ' Retrieve Unicode text using a standard format
             Dim unicodeText As String = Nothing
             If Clipboard.TryGetData(DataFormats.UnicodeText, unicodeText) Then
-                ProcessUnicodeText(unicodeText)
+                Console.WriteLine($"Unicode: {unicodeText}")
             End If
 
             ' Retrieve raw text data with OLE conversion control
             Dim rawText As String = Nothing
             If Clipboard.TryGetData(DataFormats.Text, rawText) Then
-                ProcessRawText(rawText)
+                Console.WriteLine($"Raw: {rawText}")
             End If
 
             ' Retrieve file drops using a standard format
             Dim files As String() = Nothing
             If Clipboard.TryGetData(DataFormats.FileDrop, files) Then
-                ProcessFiles(files)
+                Console.WriteLine($"Files: {String.Join(", ", files)}")
             End If
         End Sub
         ' </BasicTypeSafeRetrieval>
@@ -42,19 +42,19 @@ Namespace ClipboardExamples
             ' Retrieve a custom type stored with SetDataAsJson(Of T)()
             Dim person As Person = Nothing
             If Clipboard.TryGetData("Person", person) Then
-                ProcessPerson(person)
+                Console.WriteLine($"Person: {person.Name}")
             End If
 
             ' Retrieve application-specific data formats
             Dim settings As AppSettings = Nothing
             If Clipboard.TryGetData("MyApp.Settings", settings) Then
-                ApplySettings(settings)
+                Console.WriteLine($"Settings: {settings.Theme}")
             End If
 
             ' Retrieve complex custom objects
             Dim doc As DocumentInfo = Nothing
             If Clipboard.TryGetData("DocumentData", doc) Then
-                LoadDocument(doc)
+                Console.WriteLine($"Document: {doc.Title}")
             End If
         End Sub
         ' </CustomJsonTypes>
@@ -74,37 +74,5 @@ Namespace ClipboardExamples
             Public Property Author As String
             Public Property Created As DateTime
         End Class
-
-        Private Shared Sub ProcessTextData(text As String)
-            Console.WriteLine($"Text: {text}")
-        End Sub
-
-        Private Shared Sub ProcessNumber(number As Integer)
-            Console.WriteLine($"Number: {number}")
-        End Sub
-
-        Private Shared Sub ProcessUnicodeText(text As String)
-            Console.WriteLine($"Unicode: {text}")
-        End Sub
-
-        Private Shared Sub ProcessRawText(text As String)
-            Console.WriteLine($"Raw: {text}")
-        End Sub
-
-        Private Shared Sub ProcessFiles(files As String())
-            Console.WriteLine($"Files: {String.Join(", ", files)}")
-        End Sub
-
-        Private Shared Sub ProcessPerson(person As Person)
-            Console.WriteLine($"Person: {person.Name}")
-        End Sub
-
-        Private Shared Sub ApplySettings(settings As AppSettings)
-            Console.WriteLine($"Settings: {settings.Theme}")
-        End Sub
-
-        Private Shared Sub LoadDocument(doc As DocumentInfo)
-            Console.WriteLine($"Document: {doc.Title}")
-        End Sub
     End Class
 End Namespace

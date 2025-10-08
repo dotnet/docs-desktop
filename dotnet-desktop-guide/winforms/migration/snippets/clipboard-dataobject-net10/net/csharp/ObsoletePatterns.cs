@@ -34,15 +34,10 @@ namespace ClipboardExamples
             // Always returns null on a custom object type
             if (data != null)
             {
-                Person person = (Person)data;  // Unsafe casting
-                ProcessPerson(person);
+                Person person = (Person)data;
+                Console.WriteLine($"Processing person: {person.Name}, Age: {person.Age}");
             }
         }
         // </ObsoleteGetData>
-
-        private static void ProcessPerson(Person person)
-        {
-            Console.WriteLine($"Processing person: {person.Name}, Age: {person.Age}");
-        }
     }
 }

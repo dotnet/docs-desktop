@@ -19,38 +19,17 @@ namespace ClipboardExamples
             {
                 // Retrieve files from drag data using a standard format
                 if (typedData.TryGetData(DataFormats.FileDrop, out string[] files))
-                {
-                    ProcessDroppedFiles(files);
-                }
+                    Console.WriteLine($"Dropped files: {string.Join(", ", files)}");
 
                 // Retrieve text using a standard format
                 if (typedData.TryGetData(DataFormats.Text, out string text))
-                {
-                    ProcessDroppedText(text);
-                }
+                    Console.WriteLine($"Dropped text: {text}");
 
                 // Retrieve custom items using an application-specific format
                 if (typedData.TryGetData("CustomItem", out MyItem item))
-                {
-                    ProcessCustomItem(item);
-                }
+                    Console.WriteLine($"Dropped custom item: {item.Name} = {item.Value}");
             }
         }
         // </DragDropUsage>
-
-        private void ProcessDroppedFiles(string[] files)
-        {
-            Console.WriteLine($"Dropped files: {string.Join(", ", files)}");
-        }
-
-        private void ProcessDroppedText(string text)
-        {
-            Console.WriteLine($"Dropped text: {text}");
-        }
-
-        private void ProcessCustomItem(MyItem item)
-        {
-            Console.WriteLine($"Dropped custom item: {item.Name} = {item.Value}");
-        }
     }
 }

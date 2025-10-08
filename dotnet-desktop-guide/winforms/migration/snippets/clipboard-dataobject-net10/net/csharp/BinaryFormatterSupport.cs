@@ -57,14 +57,9 @@ namespace ClipboardExamples
         {
             if (Clipboard.TryGetData("LegacyData", SecureTypeResolver, out MyCustomType data))
             {
-                ProcessLegacyData(data);
+                Console.WriteLine($"Processing legacy data: {data.Data}");
             }
         }
         // </SecureTypeResolver>
-
-        private static void ProcessLegacyData(MyCustomType data)
-        {
-            Console.WriteLine($"Processing legacy data: {data.Data}");
-        }
     }
 }

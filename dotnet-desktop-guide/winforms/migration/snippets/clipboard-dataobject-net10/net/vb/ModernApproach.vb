@@ -1,4 +1,4 @@
-Imports System
+﻿Imports System
 Imports System.Windows.Forms
 
 Namespace ClipboardExamples
@@ -10,23 +10,19 @@ Namespace ClipboardExamples
 
         ' <ModernTryGetData>
         Public Shared Sub ModernTryGetDataExample()
+            Dim data As New Person With {.Name = "Alice", .Age = 30}
+            Clipboard.SetDataAsJson("MyAppData", data)
+
             ' Use this - type-safe approach with TryGetData(Of T)()
             Dim person As Person = Nothing
             If Clipboard.TryGetData("MyApp.Person", person) Then
-                ProcessPerson(person)  ' person is guaranteed to be the correct type
+                ' person is guaranteed to be the correct type
+                Console.WriteLine($"Processing person: {person.Name}, Age: {person.Age}")
             Else
                 ' Handle the case where data isn't available or is the wrong type
-                ShowError("Unable to retrieve person data from clipboard")
+                MessageBox.Show("Unable to retrieve person data from clipboard")
             End If
         End Sub
         ' </ModernTryGetData>
-
-        Private Shared Sub ProcessPerson(person As Person)
-            Console.WriteLine($"Processing person: {person.Name}, Age: {person.Age}")
-        End Sub
-
-        Private Shared Sub ShowError(message As String)
-            MessageBox.Show(message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-        End Sub
     End Class
 End Namespace
