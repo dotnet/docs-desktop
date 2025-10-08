@@ -1,20 +1,23 @@
-Imports System
+﻿Imports System
 Imports System.Collections.Generic
 Imports System.Reflection.Metadata
 Imports System.Windows.Forms
 
 Namespace ClipboardExamples
     Public Class BinaryFormatterSupport
+        <Serializable>
         Public Class Person
             Public Property Name As String
             Public Property Age As Integer
         End Class
 
+        <Serializable>
         Public Class AppSettings
             Public Property Theme As String
             Public Property AutoSave As Boolean
         End Class
 
+        <Serializable>
         Public Class MyCustomType
             Public Property Data As String
         End Class
@@ -24,10 +27,10 @@ Namespace ClipboardExamples
         Private Shared Function SecureTypeResolver(typeName As TypeName) As Type
             ' Explicit allow-list of permitted types—add only what you need
             Dim allowedTypes As New Dictionary(Of String, Type) From {
-                {"MyApp.Person", GetType(Person)},
-                {"MyApp.Settings", GetType(AppSettings)},
-                {"System.String", GetType(String)},
-                {"System.Int32", GetType(Integer)}
+                {GetType(Person).FullName, GetType(Person)},
+                {GetType(AppSettings).FullName, GetType(AppSettings)},
+                {GetType(String).FullName, GetType(String)},
+                {GetType(Integer).FullName, GetType(Integer)}
             }
             ' Add only the specific types your application requires
 

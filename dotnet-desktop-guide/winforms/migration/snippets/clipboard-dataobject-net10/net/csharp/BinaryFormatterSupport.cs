@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Reflection.Metadata;
 using System.Windows.Forms;
@@ -7,18 +7,21 @@ namespace ClipboardExamples
 {
     public class BinaryFormatterSupport
     {
+        [Serializable]
         public class Person
         {
             public string Name { get; set; }
             public int Age { get; set; }
         }
 
+        [Serializable]
         public class AppSettings
         {
             public string Theme { get; set; }
             public bool AutoSave { get; set; }
         }
 
+        [Serializable]
         public class MyCustomType
         {
             public string Data { get; set; }
@@ -31,10 +34,10 @@ namespace ClipboardExamples
             // Explicit allow-list of permitted types—add only what you need
             var allowedTypes = new Dictionary<string, Type>
             {
-                ["MyApp.Person"] = typeof(Person),
-                ["MyApp.Settings"] = typeof(AppSettings),
-                ["System.String"] = typeof(string),
-                ["System.Int32"] = typeof(int),
+                [typeof(Person).FullName!]      = typeof(Person),
+                [typeof(AppSettings).FullName!] = typeof(AppSettings),
+                [typeof(string).FullName!]      = typeof(string),
+                [typeof(int).FullName!]         = typeof(int),
                 // Add only the specific types your application requires
             };
 

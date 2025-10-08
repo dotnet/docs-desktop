@@ -1,23 +1,10 @@
-Imports System
+﻿Imports System
 Imports System.Text.Json.Serialization
 Imports System.Windows.Forms
 
 Namespace ClipboardExamples
     Public Class CustomTypesExamples
         ' <SimpleCustomTypes>
-        ' Records work without any attributes.
-        Public Structure PersonInfo
-            Public Sub New(name As String, age As Integer, email As String)
-                Me.Name = name
-                Me.Age = age
-                Me.Email = email
-            End Sub
-
-            Public Property Name As String
-            Public Property Age As Integer
-            Public Property Email As String
-        End Structure
-
         ' Simple classes serialize all public properties automatically.
         Public Class DocumentMetadata
             Public Property Title As String
@@ -41,15 +28,15 @@ Namespace ClipboardExamples
 
             ' Public properties are always serialized
             Public Property Name As String
-            
+
             ' Exclude sensitive or non-essential data
             <JsonIgnore>
             Public Property InternalId As String
-            
+
             ' Handle property name differences for compatibility
             <JsonPropertyName("display_text")>
             Public Property DisplayText As String
-            
+
             ' Control null value handling
             <JsonIgnore(Condition:=JsonIgnoreCondition.WhenWritingNull)>
             Public Property OptionalField As String

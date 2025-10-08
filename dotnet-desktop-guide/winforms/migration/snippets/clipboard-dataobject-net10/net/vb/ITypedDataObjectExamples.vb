@@ -1,25 +1,8 @@
-Imports System
+﻿Imports System
 Imports System.Reflection.Metadata
 Imports System.Windows.Forms
 
 Namespace ClipboardExamples
-    ' <ITypedDataObjectImplementation>
-    Public Class TypedDataObject
-        Inherits DataObject
-        Implements ITypedDataObject
-
-        Public Overloads Function TryGetData(Of T)(format As String, ByRef data As T) As Boolean Implements ITypedDataObject.TryGetData
-            ' Use new type-safe logic
-            Return MyBase.TryGetData(format, data)
-        End Function
-
-        ' This overload requires BinaryFormatter support (not recommended)
-        Public Overloads Function TryGetData(Of T)(format As String, resolver As Func(Of TypeName, Type), ByRef data As T) As Boolean
-            data = Nothing
-            Return False ' Simplified implementation for example
-        End Function
-    End Class
-    ' </ITypedDataObjectImplementation>
 
     Public Class DragDropExamples
         Public Class MyItem

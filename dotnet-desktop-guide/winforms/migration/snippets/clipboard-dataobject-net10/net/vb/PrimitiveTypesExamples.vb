@@ -1,4 +1,4 @@
-Imports System
+﻿Imports System
 Imports System.Collections.Generic
 Imports System.Windows.Forms
 
@@ -21,9 +21,10 @@ Namespace ClipboardExamples
             Clipboard.SetData("MyTimeSpan", TimeSpan.FromMinutes(30))
 
             ' Later retrieval with type safety
-            Dim value As Integer
-            If Clipboard.TryGetData("MyInt", value) Then
-                ProcessInteger(value)
+            Dim value As TimeSpan
+
+            If Clipboard.TryGetData("MyTimeSpan", value) Then
+                Console.WriteLine($"Clipboard value is: {value}")
             End If
         End Sub
         ' </PrimitiveTypesExample>
@@ -43,18 +44,11 @@ Namespace ClipboardExamples
 
             ' Retrieval maintains type safety
             Dim retrievedNumbers As Integer() = Nothing
+
             If Clipboard.TryGetData("NumberArray", retrievedNumbers) Then
-                ProcessNumbers(retrievedNumbers)
+                Console.WriteLine($"Numbers: {String.Join(", ", retrievedNumbers)}")
             End If
         End Sub
         ' </CollectionsExample>
-
-        Private Shared Sub ProcessInteger(value As Integer)
-            Console.WriteLine($"Integer value: {value}")
-        End Sub
-
-        Private Shared Sub ProcessNumbers(numbers As Integer())
-            Console.WriteLine($"Numbers: {String.Join(", ", numbers)}")
-        End Sub
     End Class
 End Namespace

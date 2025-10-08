@@ -84,7 +84,7 @@ Public Class Form1
     '</SetTextExample>
 
     '<CustomFormatExample>
-    ' Demonstrates SetDataAsJson, ContainsData, and GetData
+    ' Demonstrates SetData, ContainsData, and GetData
     ' using a custom format name and a business object.
     Public ReadOnly Property TestCustomFormat() As Customer
         Get
@@ -127,20 +127,41 @@ Public Class Form1
 
         If retrievedData.GetDataPresent("ListViewItemFormat") Then
             Dim item As String = Nothing
+
             If retrievedData.TryGetData("ListViewItemFormat", item) Then
                 Dim recreatedListViewItem As New ListViewItem(item)
                 MessageBox.Show($"Data contains ListViewItem with text of {recreatedListViewItem.Text}")
             End If
+
         End If
 
         If retrievedData.GetDataPresent(GetType(Customer)) Then
             Dim newCustomer As Customer = Nothing
+
             If retrievedData.TryGetData(newCustomer) Then
                 MessageBox.Show($"Data contains Customer with name of {newCustomer.Name}")
             End If
+
         End If
 
     End Sub
     '</MultipleFormatsExample>
+
+    '<GenericSetDataExample>
+    ' Demonstrates SetData, ContainsData, and GetData.
+    Public Function SwapClipboardFormattedData(
+        ByVal format As String, ByVal data As Object) As Object
+
+        Dim returnObject As Object = Nothing
+
+        If Clipboard.ContainsData(format) Then
+            returnObject = Clipboard.GetData(format)
+            Clipboard.SetData(format, data)
+        End If
+
+        Return returnObject
+
+    End Function
+    '</GenericSetDataExample>
 
 End Class

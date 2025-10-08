@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
 
@@ -24,9 +24,9 @@ namespace ClipboardExamples
             Clipboard.SetData("MyTimeSpan", TimeSpan.FromMinutes(30));
 
             // Later retrieval with type safety
-            if (Clipboard.TryGetData("MyInt", out int value))
+            if (Clipboard.TryGetData("MyTimeSpan", out TimeSpan value))
             {
-                ProcessInteger(value);
+                Console.WriteLine($"Clipboard value is: {value}");
             }
         }
         // </PrimitiveTypesExample>
@@ -48,19 +48,9 @@ namespace ClipboardExamples
             // Retrieval maintains type safety
             if (Clipboard.TryGetData("NumberArray", out int[] retrievedNumbers))
             {
-                ProcessNumbers(retrievedNumbers);
+                Console.WriteLine($"Numbers: {string.Join(", ", retrievedNumbers)}");
             }
         }
         // </CollectionsExample>
-
-        private static void ProcessInteger(int value)
-        {
-            Console.WriteLine($"Integer value: {value}");
-        }
-
-        private static void ProcessNumbers(int[] numbers)
-        {
-            Console.WriteLine($"Numbers: {string.Join(", ", numbers)}");
-        }
     }
 }

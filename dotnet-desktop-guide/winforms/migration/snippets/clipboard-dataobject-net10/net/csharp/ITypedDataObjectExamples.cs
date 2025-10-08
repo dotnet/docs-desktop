@@ -1,27 +1,9 @@
-using System;
+﻿using System;
 using System.Reflection.Metadata;
 using System.Windows.Forms;
 
 namespace ClipboardExamples
 {
-    // <ITypedDataObjectImplementation>
-    public class TypedDataObject : DataObject, ITypedDataObject
-    {
-        public new bool TryGetData<T>(string format, out T data)
-        {
-            // Use new type-safe logic
-            return base.TryGetData(format, out data);
-        }
-
-        // This overload requires BinaryFormatter support (not recommended)
-        public new bool TryGetData<T>(string format, Func<TypeName, Type> resolver, out T data)
-        {
-            data = default(T)!;
-            return false; // Simplified implementation for example
-        }
-    }
-    // </ITypedDataObjectImplementation>
-
     public class DragDropExamples
     {
         public class MyItem
