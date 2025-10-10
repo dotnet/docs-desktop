@@ -6,10 +6,6 @@
     <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data.DataSetExtensions" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="winter1.jpg" />
   </ItemGroup>
 </Project>
