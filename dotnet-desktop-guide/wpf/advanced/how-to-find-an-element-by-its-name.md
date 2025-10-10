@@ -21,3 +21,6 @@ In this example, the method to find a particular element by its name is written 
 
 [!code-csharp[FEFindName#Find](~/samples/snippets/csharp/VS_Snippets_Wpf/FEFindName/CSharp/default.xaml.cs#find)]
 [!code-vb[FEFindName#Find](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FEFindName/VisualBasic/default.xaml.vb#find)]
+
+> [!NOTE]
+> The <xref:System.Windows.FrameworkElement.FindName%2A> method only finds elements that are part of the XAML namescope. If you add an element to the object tree programmatically after XAML is loaded, the element's `Name` or `x:Name` value doesn't automatically register in the XAML namescope. To make a dynamically added element findable by name, call <xref:System.Windows.FrameworkElement.RegisterName%2A> on the XAML namescope (typically the page or window root) before adding the element to the parent container. For more information, see [XAML Namescopes](wpf-xaml-namescopes.md).
