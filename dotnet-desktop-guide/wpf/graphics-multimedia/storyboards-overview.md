@@ -66,12 +66,12 @@ The following table shows the different places where each  <xref:System.Windows.
 
 |Storyboard is begun using…|Per-instance|Style|Control template|Data template|Example|
 |--------------------------------|-------------------|-----------|----------------------|-------------------|-------------|
-|<xref:System.Windows.Media.Animation.BeginStoryboard> and an <xref:System.Windows.EventTrigger>|Yes|Yes|Yes|Yes|[Animate a Property by Using a Storyboard](how-to-animate-a-property-by-using-a-storyboard.md)|
+|<xref:System.Windows.Media.Animation.BeginStoryboard> and an <xref:System.Windows.EventTrigger>|[Yes](xref:System.Windows.FrameworkElement.Triggers%2A)|Yes|Yes|Yes|[Animate a Property by Using a Storyboard](how-to-animate-a-property-by-using-a-storyboard.md)|
 |<xref:System.Windows.Media.Animation.BeginStoryboard> and a property <xref:System.Windows.Trigger>|No|Yes|Yes|Yes|[Trigger an Animation When a Property Value Changes](how-to-trigger-an-animation-when-a-property-value-changes.md)|
 |<xref:System.Windows.Media.Animation.BeginStoryboard> and a property <xref:System.Windows.MultiTrigger>|No|Yes|Yes|Yes|[MultiTrigger class example](/dotnet/api/system.windows.multitrigger#examples)|
 |<xref:System.Windows.Media.Animation.BeginStoryboard> and a <xref:System.Windows.DataTrigger>|No|Yes|Yes|Yes|[How to: Trigger an Animation When Data Changes](/previous-versions/dotnet/netframework-3.5/aa970679(v=vs.90))|
 |<xref:System.Windows.Media.Animation.BeginStoryboard> and a <xref:System.Windows.MultiDataTrigger>|No|Yes|Yes|Yes|[MultiDataTrigger class example](/dotnet/api/system.windows.multidatatrigger#examples)|
-|<xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method|Yes|No|No|No|[Animate a Property by Using a Storyboard](how-to-animate-a-property-by-using-a-storyboard.md)|
+|<xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method|[Yes](xref:System.Windows.FrameworkElement.Triggers%2A)|No|No|No|[Animate a Property by Using a Storyboard](how-to-animate-a-property-by-using-a-storyboard.md)|
 
 The following example uses a <xref:System.Windows.Media.Animation.Storyboard> to animate the <xref:System.Windows.FrameworkElement.Width%2A> of a <xref:System.Windows.Shapes.Rectangle> element and the <xref:System.Windows.Media.SolidColorBrush.Color%2A> of a <xref:System.Windows.Media.SolidColorBrush> used to paint that <xref:System.Windows.Shapes.Rectangle>.
 
