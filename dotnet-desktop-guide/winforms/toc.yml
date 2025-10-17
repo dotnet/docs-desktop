@@ -23,10 +23,12 @@ items:
   items:
   - name: Create an app
     href: get-started/create-app-visual-studio.md
-- name: Migration
+- name: Upgrade
   items:
   - name: How to upgrade to the latest .NET
     href: migration/index.md
+  - name: Clipboard and DataObject changes in .NET 10
+    href: migration/clipboard-dataobject-net10.md
   - name: Accessibility improvements with .NET
     href: windows-forms-accessibility-improvements.md
 - name: Advanced topics

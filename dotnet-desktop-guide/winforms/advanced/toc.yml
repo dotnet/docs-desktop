@@ -330,6 +330,8 @@ items:
       href: how-to-add-data-to-the-clipboard.md
     - name: "How to: Retrieve Data from the Clipboard"
       href: how-to-retrieve-data-from-the-clipboard.md
+    - name: "How to: Enable BinaryFormatter clipboard support (not recommended)"
+      href: how-to-enable-binaryformatter-clipboard-support.md
   - name: Networking in Windows Forms Applications
     href: networking-in-windows-forms-applications.md
   - name: Globalizing Windows Forms

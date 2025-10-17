@@ -1,0 +1,172 @@
+---
+title: "How [product or service] [solves a problem]"
+description: "[Article description]."
+author: [your GitHub alias]
+ms.author: [your Microsoft alias or a team alias]
+ms.service: [the approved service name]
+ms.topic: get-started  #Don't change
+ms.date: [mm/dd/yyyy]
+
+#customer intent: As a <role>, I want <what> so that <why>.
+
+---
+
+<!-- --------------------------------------
+
+- Use this template with pattern instructions for:
+
+Demonstration
+
+- Use the Demonstration pattern to illustrate what a 
+product or service can do rather than how to use it. 
+A Demonstration helps the user determine if the product 
+or service meets their needs.
+
+- Before you sign off or merge:
+
+Remove all comments except the customer intent.
+
+- Feedback:
+
+https://aka.ms/patterns-feedback
+
+-->
+
+# Demonstration: [verb] * [capability] * [product or service] * [scenario]
+
+<!-- Required: Article headline - H1
+
+Identify the product or service, the capability, and the 
+problem solution that the demonstration illustrates.
+
+-->
+
+[Introduce and explain the purpose of the article.]
+
+<!-- Required: Introductory paragraphs (no heading)
+
+Write a brief introduction that can help the user determine 
+whether the article is relevant for them. In the opening
+sentence, focus on the product capability that will
+be demonstrated.
+
+-->
+
+If you don't have a service subscription, create a free
+trial account . . .
+
+<!-- Required: Free account links (no heading)
+
+Because demonstrations are intended to help new customers
+evaluate a product or service, include a link to a 
+free trial before the first H2.
+
+-->
+
+## Prerequisites
+
+<!-- Required: Prerequisites - H2
+
+"Prerequisites" must be the first H2 in the article.
+
+List any items that are needed for the demonstration,
+such as permissions or software.
+
+If the user needs to sign in to a portal to complete
+the demonstration, provide instructions and a link.
+
+If there aren't any prerequisites, in a new paragraph
+under the "Prerequisites" H2, enter "None" in plain text
+(not as a bulleted list item).
+
+-->
+
+## Open [Cloud Shell, Azure CLI, or PowerShell]
+
+<!-- Optional: Open a demo environment - H2
+
+If you want to refer to using Azure Cloud Shell,
+the Azure CLI, or Azure PowerShell, place the
+instructions after the "Prerequisites" section.
+
+Include Cloud Shell only if all commands can 
+run in Cloud Shell.
+
+Use include file if they are available.
+
+--->
+
+## [Demonstrate a solution to a problem]
+
+<!-- Required: Demonstration steps - H2
+
+Use multiple H2 sections to guide the customer 
+through an end-to-end demonstration.
+
+-->
+
+## What problem will we solve?
+
+<!-- Required: Problem definition - H2
+
+Clearly define the problem that the demonstration 
+that follows will address and solve.
+
+-->
+
+## [Demonstration]
+
+[Introduce the demonstration.]
+
+<!-- Required: Demonstration that shows how to solve the problem - H2
+
+In one or more H2 sections, show how the product or 
+service solves a user's problem. For example, you
+can run an app that implements the solution, you can 
+embed a video that describes the solution, or you 
+can add a series of images that demonstrate the key 
+steps.
+
+-->
+
+## Clean up resources
+
+<!-- Required: Steps to clean up resources - H2
+
+Provide steps the user takes to clean up resources that
+were created to complete the article.
+
+-->
+
+## Next step -or- Related content
+
+> [!div class="nextstepaction"]
+> [Next sequential article title](link.md)
+
+-or-
+
+- [Related article title](link.md)
+- [Related article title](link.md)
+- [Related article title](link.md)
+
+<!-- Optional: Next step or Related content - H2
+
+Consider adding one of these H2 sections (not both):
+
+A "Next step" section that uses 1 link in a blue box 
+to point to a next, consecutive article in a sequence.
+
+-or- 
+
+If the demonstration isn't part of a sequence, use a 
+"Related content" section that lists links to 
+1 to 3 articles the user might find helpful.
+
+-->
+
+<!--
+
+Remove all comments except the customer intent
+before you sign off or merge to the main branch.
+
+-->
