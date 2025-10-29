@@ -1,9 +1,10 @@
 ---
 title: "Calendar"
 description: Learn about the Calendar control in this article, which enables a user to select a date by using a visual calendar display.
-ms.date: "03/30/2017"
-ms.service: dotnet-framework
-ms.update-cycle: 1825-days
+ms.date: 10/29/2025
+ms.service: dotnet-desktop
+ms.update-cycle: 365-days
+ai-usage: ai-assisted
 helpviewer_keywords:
   - "controls [WPF], Calendar"
   - "Calendar control [WPF]"
@@ -15,10 +16,9 @@ A calendar enables a user to select a date by using a visual calendar display.
 
 A <xref:System.Windows.Controls.Calendar> control can be used on its own, or as a drop-down part of a <xref:System.Windows.Controls.DatePicker> control. For more information, see <xref:System.Windows.Controls.DatePicker>.
 
-The following illustration shows two <xref:System.Windows.Controls.Calendar> controls, one with selections and blackout dates and one without.
+:::image type="content" source="./media/ndp-calendarcontrols.png" alt-text="Screenshot showing two Calendar controls, one with selections and blackout dates and one without.":::
 
-![Calendar controls](./media/ndp-calendarcontrols.png "NDP_CalendarControls")\
-Calendar controls
+## Common tasks
 
 The following table provides information about tasks that are typically associated with the <xref:System.Windows.Controls.Calendar>.
 
@@ -30,6 +30,8 @@ The following table provides information about tasks that are typically associat
 |Specify the range of dates that the <xref:System.Windows.Controls.Calendar> displays.|Use the <xref:System.Windows.Controls.Calendar.DisplayDateStart%2A> and <xref:System.Windows.Controls.Calendar.DisplayDateEnd%2A> properties.|
 |Specify whether the current date is highlighted.|Use the <xref:System.Windows.Controls.Calendar.IsTodayHighlighted%2A> property. By default, <xref:System.Windows.Controls.Calendar.IsTodayHighlighted%2A> is `true`.|
 |Change the size of the <xref:System.Windows.Controls.Calendar>.|Use a <xref:System.Windows.Controls.Viewbox> or set the <xref:System.Windows.FrameworkElement.LayoutTransform%2A> property to a <xref:System.Windows.Media.ScaleTransform>. Note that if you set the <xref:System.Windows.FrameworkElement.Width%2A> and <xref:System.Windows.FrameworkElement.Height%2A> properties of a <xref:System.Windows.Controls.Calendar>, the actual calendar does not change its size.|
+
+## Keyboard navigation
 
 The <xref:System.Windows.Controls.Calendar> control provides basic navigation using either the mouse or keyboard. The following table summarizes keyboard navigation.
 
@@ -53,7 +55,11 @@ The <xref:System.Windows.Controls.Calendar> control provides basic navigation us
 
 This topic describes the styles and templates for the <xref:System.Windows.Controls.Calendar> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [What are styles and templates?](styles-templates-overview.md) and [How to create a template for a control](how-to-create-apply-template.md).
 
-### Parts
+### Content property
+
+This control does not define a content property.
+
+### Parts  
 
 The following table lists the named parts for the <xref:System.Windows.Controls.Calendar> control.
 
@@ -67,108 +73,85 @@ The following table lists the named parts for the <xref:System.Windows.Controls.
 The following table lists the visual states for the <xref:System.Windows.Controls.Calendar> control.
 
 |VisualState Name|VisualStateGroup Name|Description|
-|----------------------|---------------------------|-----------------|
+|---|---|---|
 |Valid|ValidationStates|The control uses the <xref:System.Windows.Controls.Validation> class and the <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `false`.|
-|InvalidFocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` has the control has focus.|
-|InvalidUnfocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` has the control does not have focus.|
+|InvalidFocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` and the control has focus.|
+|InvalidUnfocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` and the control does not have focus.|
 
-#### CalendarItem Parts
+### CalendarItem parts and states
 
 The following table lists the named parts for the <xref:System.Windows.Controls.Primitives.CalendarItem> control.
 
 |Part|Type|Description|
 |-|-|-|
-|PART_Root|<xref:System.Windows.FrameworkElement>|The root of the control.|
-|PART_PreviousButton|<xref:System.Windows.Controls.Button>|The button that displays the previous page of the calendar when it is clicked.|
-|PART_NextButton|<xref:System.Windows.Controls.Button>|The button that displays the next page of the calendar when it is clicked.|
-|PART_HeaderButton|<xref:System.Windows.Controls.Button>|The button that allows switching between month mode, year mode, and decade mode.|
-|PART_MonthView|<xref:System.Windows.Controls.Grid>|Hosts the content when in month mode.|
-|PART_YearView|<xref:System.Windows.Controls.Grid>|Hosts the content when in year or decade mode.|
-|PART_DisabledVisual|<xref:System.Windows.FrameworkElement>|The overlay for the disabled state.|
-|DayTitleTemplate|<xref:System.Windows.DataTemplate>|The <xref:System.Windows.DataTemplate> that describes the visual structure.|
-
-#### CalendarItem States
+|DayTitleTemplate|<xref:System.Windows.DataTemplate>|The data template used for day title headers.|
+|PART_DisabledVisual|<xref:System.Windows.FrameworkElement>|The element that provides visual feedback when the control is disabled.|
+|PART_HeaderButton|<xref:System.Windows.Controls.Button>|The header button used to navigate between calendar views.|
+|PART_MonthView|<xref:System.Windows.Controls.Grid>|The grid that contains the month view layout.|
+|PART_NextButton|<xref:System.Windows.Controls.Button>|The button used to navigate to the next time period.|
+|PART_PreviousButton|<xref:System.Windows.Controls.Button>|The button used to navigate to the previous time period.|
+|PART_Root|<xref:System.Windows.FrameworkElement>|The root element that contains the calendar item layout.|
+|PART_YearView|<xref:System.Windows.Controls.Grid>|The grid that contains the year view layout.|
 
 The following table lists the visual states for the <xref:System.Windows.Controls.Primitives.CalendarItem> control.
 
 |VisualState Name|VisualStateGroup Name|Description|
 |-|-|-|
-|Normal State|CommonStates|The default state.|
-|Disabled State|CommonStates|The state of the calendar when the <xref:System.Windows.UIElement.IsEnabled%2A> property is `false`.|
-|Valid|ValidationStates|The control uses the <xref:System.Windows.Controls.Validation> class and the <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `false`.|
-|InvalidFocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` has the control has focus.|
-|InvalidUnfocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` has the control does not have focus.|
-|Valid|ValidationStates|The control uses the <xref:System.Windows.Controls.Validation> class and the <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `false`.|
-|InvalidFocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` has the control has focus.|
-|InvalidUnfocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` has the control does not have focus.|
+|Normal|CommonStates|The control is in its normal state.|
+|Disabled|CommonStates|The control is disabled.|
+|Valid|ValidationStates|The control is valid and has no validation errors.|
+|InvalidFocused|ValidationStates|The control has a validation error and has keyboard focus.|
+|InvalidUnfocused|ValidationStates|The control has a validation error but does not have keyboard focus.|
 
-#### CalendarDayButton Parts
+### CalendarDayButton parts and states
 
 The <xref:System.Windows.Controls.Primitives.CalendarDayButton> control does not have any named parts.
-
-#### CalendarDayButton States
 
 The following table lists the visual states for the <xref:System.Windows.Controls.Primitives.CalendarDayButton> control.
 
 |VisualState Name|VisualStateGroup Name|Description|
 |-|-|-|
-|Normal|CommonStates|The default state.|
-|Disabled|CommonStates|The <xref:System.Windows.Controls.Primitives.CalendarDayButton> is disabled.|
-|MouseOver|CommonStates|The mouse pointer is positioned over the <xref:System.Windows.Controls.Primitives.CalendarDayButton>.|
-|Pressed|CommonStates|The <xref:System.Windows.Controls.Primitives.CalendarDayButton> is pressed.|
-|Selected|SelectionStates|The button is selected.|
-|Unselected|SelectionStates|The button is not selected.|
-|CalendarButtonFocused|CalendarButtonFocusStates|The button has focus.|
-|CalendarButtonUnfocused|CalendarButtonFocusStates|The button does not have focus.|
-|Focused|FocusStates|The button has focus.|
-|Unfocused|FocusStates|The button does not have focus.|
-|Active|ActiveStates|The button is active.|
-|Inactive|ActiveStates|The button is inactive.|
-|RegularDay|DayStates|The button does not represent <xref:System.DateTime.Today%2A?displayProperty=nameWithType>.|
-|Today|DayStates|The button represents <xref:System.DateTime.Today%2A?displayProperty=nameWithType>.|
-|NormalDay|BlackoutDayStates|The button represents a day that can be selected.|
-|BlackoutDay|BlackoutDayStates|The button represents a day that cannot be selected.|
-|Valid|ValidationStates|The control uses the <xref:System.Windows.Controls.Validation> class and the <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `false`.|
-|InvalidFocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` has the control has focus.|
-|InvalidUnfocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` has the control does not have focus.|
+|Normal|CommonStates|The control is in its normal state.|
+|MouseOver|CommonStates|The mouse is over the control.|
+|Pressed|CommonStates|The control is pressed.|
+|Disabled|CommonStates|The control is disabled.|
+|Focused|FocusStates|The control has keyboard focus.|
+|Unfocused|FocusStates|The control doesn't have keyboard focus.|
+|Active|ActiveStates|The day is within the currently displayed month.|
+|Inactive|ActiveStates|The day is outside the currently displayed month.|
+|Today|DayStates|The day represents today's date.|
+|RegularDay|DayStates|The day represents a regular date.|
+|Selected|SelectionStates|The day is selected.|
+|Unselected|SelectionStates|The day is not selected.|
+|BlackoutDay|BlackoutDayStates|The day is blacked out and cannot be selected.|
+|NormalDay|BlackoutDayStates|The day is available for selection.|
+|CalendarButtonFocused|CalendarButtonFocusStates|The calendar button has keyboard focus.|
+|CalendarButtonUnfocused|CalendarButtonFocusStates|The calendar button doesn't have keyboard focus.|
+|Valid|ValidationStates|The control is valid and has no validation errors.|
+|InvalidFocused|ValidationStates|The control has a validation error and has keyboard focus.|
+|InvalidUnfocused|ValidationStates|The control has a validation error but doesn't have keyboard focus.|
 
-#### CalendarButton Parts
+### CalendarButton parts and states
 
 The <xref:System.Windows.Controls.Primitives.CalendarButton> control does not have any named parts.
-
-#### CalendarButton States
 
 The following table lists the visual states for the <xref:System.Windows.Controls.Primitives.CalendarButton> control.
 
 |VisualState Name|VisualStateGroup Name|Description|
 |-|-|-|
-|Normal|CommonStates|The default state.|
-|Disabled|CommonStates|The <xref:System.Windows.Controls.Primitives.CalendarButton> is disabled.|
-|MouseOver|CommonStates|The mouse pointer is positioned over the <xref:System.Windows.Controls.Primitives.CalendarButton>.|
-|Pressed|CommonStates|The <xref:System.Windows.Controls.Primitives.CalendarButton> is pressed.|
-|Selected|SelectionStates|The button is selected.|
-|Unselected|SelectionStates|The button is not selected.|
-|CalendarButtonFocused|CalendarButtonFocusStates|The button has focus.|
-|CalendarButtonUnfocused|CalendarButtonFocusStates|The button does not have focus.|
-|Focused|FocusStates|The button has focus.|
-|Unfocused|FocusStates|The button does not have focus.|
-|Active|ActiveStates|The button is active.|
-|Inactive|ActiveStates|The button is inactive.|
-|Valid|ValidationStates|The control uses the <xref:System.Windows.Controls.Validation> class and the <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `false`.|
-|InvalidFocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` has the control has focus.|
-|InvalidUnfocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` has the control does not have focus.|
-
-### Calendar ControlTemplate Example
-
-The following example shows how to define a <xref:System.Windows.Controls.ControlTemplate> for the <xref:System.Windows.Controls.Calendar> control and associated types.
-
-[!code-xaml[ControlTemplateExamples#Calendar](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/calendar.xaml#calendar)]
-
-The preceding example uses one or more of the following resources.
-
-[!code-xaml[ControlTemplateExamples#Resources](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/shared.xaml#resources)]
-
-For the complete sample, see [Styling with ControlTemplates Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Styles%20&%20Templates/IntroToStylingAndTemplating).
+|Normal|CommonStates|The control is in its normal state.|
+|MouseOver|CommonStates|The mouse is over the control.|
+|Pressed|CommonStates|The control is pressed.|
+|Disabled|CommonStates|The control is disabled.|
+|Selected|SelectionStates|The calendar button represents a date range with selected dates.|
+|Unselected|SelectionStates|The calendar button doesn't represent a date range with selected dates.|
+|Active|ActiveStates|The calendar button represents a month in the current year or a year in the current decade.|
+|Inactive|ActiveStates|The calendar button represents a month outside the current year or a year outside the current decade.|
+|CalendarButtonFocused|CalendarButtonFocusStates|The calendar button has keyboard focus.|
+|CalendarButtonUnfocused|CalendarButtonFocusStates|The calendar button doesn't have keyboard focus.|
+|Valid|ValidationStates|The control is valid and has no validation errors.|
+|InvalidFocused|ValidationStates|The control has a validation error and has keyboard focus.|
+|InvalidUnfocused|ValidationStates|The control has a validation error but doesn't have keyboard focus.|
 
 ## See also
 
