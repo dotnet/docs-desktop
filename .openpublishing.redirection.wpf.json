@@ -355,6 +355,10 @@
         {
             "source_path": "dotnet-desktop-guide/wpf/controls/adorners-how-to-topics.md",
             "redirect_url": "/dotnet/desktop/wpf/controls/adorners"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/canvas-how-to-topics.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/canvas"
         }
     ]
 }
