@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page x:Class="AllTemplatesCS.Pages.ScrollBarPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AllTemplatesCS.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="400"
+      Title="ScrollBarPage">
+    <StackPanel Margin="20" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <TextBlock Text="Horizontal ScrollBar:" FontWeight="Bold" Margin="5"/>
+        <ScrollBar Orientation="Horizontal" Width="200" Height="20" 
+                   Minimum="0" Maximum="100" Value="30" 
+                   ValueChanged="HorizontalScrollBar_ValueChanged" Margin="5"/>
+        <TextBlock x:Name="HorizontalValue" Text="Value: 30" Margin="5"/>
+        
+        <Grid Margin="20">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            
+            <StackPanel Grid.Column="0">
+                <TextBlock Text="Vertical ScrollBar:" FontWeight="Bold" Margin="5"/>
+                <ScrollBar Orientation="Vertical" Width="20" Height="120" 
+                           Minimum="0" Maximum="100" Value="65" 
+                           ValueChanged="VerticalScrollBar_ValueChanged" Margin="5"/>
+            </StackPanel>
+            
+            <StackPanel Grid.Column="1" Margin="20,0,0,0">
+                <TextBlock x:Name="VerticalValue" Text="Value: 65" Margin="5"/>
+                <TextBlock Text="Large Change:" Margin="5,15,5,2"/>
+                <ScrollBar Orientation="Horizontal" Width="150" Height="20" 
+                           Minimum="0" Maximum="1000" Value="200" LargeChange="100" SmallChange="10"
+                           ValueChanged="LargeChangeScrollBar_ValueChanged" Margin="5"/>
+                <TextBlock x:Name="LargeChangeValue" Text="Value: 200" Margin="5"/>
+            </StackPanel>
+        </Grid>
+    </StackPanel>
+</Page>

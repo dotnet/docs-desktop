@@ -1,0 +1,6 @@
+<Solution>
+  <Folder Name="/Other Files/">
+    <File Path=".github/INFO.md" />
+  </Folder>
+  <Project Path="AllTemplatesCS.csproj" />
+</Solution>

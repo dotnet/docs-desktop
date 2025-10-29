@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page x:Class="AllTemplatesCS.Pages.ScrollViewerPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AllTemplatesCS.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="400"
+      Title="ScrollViewerPage">
+    <StackPanel Margin="20">
+        <TextBlock Text="ScrollViewer Examples:" FontWeight="Bold" Margin="5"/>
+        
+        <Border BorderBrush="Gray" BorderThickness="1" Margin="5">
+            <ScrollViewer Height="100" Width="250" 
+                         VerticalScrollBarVisibility="Auto" 
+                         HorizontalScrollBarVisibility="Auto">
+                <StackPanel>
+                    <TextBlock Text="This content is larger than the ScrollViewer area." Margin="5"/>
+                    <TextBlock Text="Scroll vertically to see more content below." Margin="5"/>
+                    <Rectangle Fill="LightBlue" Width="300" Height="40" Margin="5"/>
+                    <TextBlock Text="This rectangle is wider than the viewer." Margin="5"/>
+                    <TextBlock Text="Notice both horizontal and vertical scrollbars appear." Margin="5"/>
+                    <Rectangle Fill="LightGreen" Width="200" Height="30" Margin="5"/>
+                    <TextBlock Text="More content here..." Margin="5"/>
+                    <TextBlock Text="Keep scrolling..." Margin="5"/>
+                    <Rectangle Fill="LightCoral" Width="350" Height="25" Margin="5"/>
+                    <TextBlock Text="End of scrollable content." Margin="5"/>
+                </StackPanel>
+            </ScrollViewer>
+        </Border>
+        
+        <Border BorderBrush="Gray" BorderThickness="1" Margin="5">
+            <ScrollViewer Height="80" Width="200" 
+                         VerticalScrollBarVisibility="Disabled" 
+                         HorizontalScrollBarVisibility="Auto">
+                <TextBlock Text="This is a long line of text that demonstrates horizontal scrolling only. The vertical scrollbar is disabled." 
+                          Margin="5" TextWrapping="NoWrap"/>
+            </ScrollViewer>
+        </Border>
+    </StackPanel>
+</Page>

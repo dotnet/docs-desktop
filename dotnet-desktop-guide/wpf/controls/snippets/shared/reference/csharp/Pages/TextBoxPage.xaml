@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page x:Class="AllTemplatesCS.Pages.TextBoxPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AllTemplatesCS.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="400"
+      Title="TextBoxPage">
+    <StackPanel Margin="20" HorizontalAlignment="Center" VerticalAlignment="Center" Width="300">
+        <TextBox Text="Default TextBox" Margin="5" Padding="5"/>
+        <TextBox Text="Placeholder text..." FontStyle="Italic" Foreground="Gray" Margin="5" Padding="5"/>
+        <TextBox Text="Read-only TextBox" IsReadOnly="True" Background="LightGray" Margin="5" Padding="5"/>
+        <TextBox AcceptsReturn="True" TextWrapping="Wrap" Height="60" Text="Multi-line TextBox&#x0d;&#x0a;Line 2" Margin="5" Padding="5"/>
+    </StackPanel>
+</Page>

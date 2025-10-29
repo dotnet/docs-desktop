@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page x:Class="AllTemplatesCS.Pages.ListBoxPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AllTemplatesCS.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="400"
+      Title="ListBoxPage">
+    <StackPanel Margin="20" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <ListBox Width="200" Height="150" Margin="5" SelectedIndex="1">
+            <ListBoxItem Content="First Item"/>
+            <ListBoxItem Content="Second Item"/>
+            <ListBoxItem Content="Third Item"/>
+            <ListBoxItem Content="Fourth Item"/>
+            <ListBoxItem Content="Fifth Item"/>
+        </ListBox>
+    </StackPanel>
+</Page>
