@@ -15,6 +15,45 @@ ms.assetid: 4dbf0320-30c2-4015-b9bc-4f6502f78e32
 
 The <xref:System.Windows.Controls.PasswordBox> control is used to input sensitive or private information.
 
+## Styles and templates
+
+You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the <xref:System.Windows.Controls.PasswordBox> control a unique appearance. For more information, see [What are styles and templates?](styles-templates-overview.md) and [How to create a template for a control](how-to-create-apply-template.md).
+
+### Parts
+
+The following table lists the named parts for the <xref:System.Windows.Controls.PasswordBox> control.
+
+|Part|Type|Description|
+|-|-|-|
+|PART_ContentHost|<xref:System.Windows.FrameworkElement>|A visual element that can contain a <xref:System.Windows.FrameworkElement>. The text of the <xref:System.Windows.Controls.PasswordBox> is displayed in this element.|
+
+### Visual states
+
+The following table lists the visual states for the <xref:System.Windows.Controls.PasswordBox> control.
+
+|VisualState Name|VisualStateGroup Name|Description|
+|-|-|-|
+|Normal|CommonStates|The default state.|
+|MouseOver|CommonStates|The mouse pointer is positioned over the control.|
+|Disabled|CommonStates|The control is disabled.|
+|Focused|FocusStates|The control has focus.|
+|Unfocused|FocusStates|The control does not have focus.|
+|Valid|ValidationStates|The control uses the <xref:System.Windows.Controls.Validation> class and the <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `false`.|
+|InvalidFocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` has the control has focus.|
+|InvalidUnfocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` has the control does not have focus.|
+
+### PasswordBox ControlTemplate Example
+
+The following example shows how to define a <xref:System.Windows.Controls.ControlTemplate> for the <xref:System.Windows.Controls.PasswordBox> control.
+
+[!code-xaml[ControlTemplateExamples#PasswordBox](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/textbox.xaml#passwordbox)]
+
+The preceding example uses one or more of the following resources.
+
+[!code-xaml[ControlTemplateExamples#Resources](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/shared.xaml#resources)]
+
+For the complete sample, see [Styling with ControlTemplates Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Styles%20&%20Templates/IntroToStylingAndTemplating).
+
 ## See also
 
 - <xref:System.Windows.Controls.TextBox>

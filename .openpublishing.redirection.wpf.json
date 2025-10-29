@@ -33,6 +33,122 @@
             "redirect_url": "/dotnet/desktop/wpf/windows/how-to-get-set-main-application-window"
         },
         {
+            "source_path": "dotnet-desktop-guide/wpf/controls/button-styles-and-templates.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/button"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/calendar-styles-and-templates.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/calendar"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/checkbox-styles-and-templates.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/checkbox"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/combobox-styles-and-templates.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/combobox"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/control-styles-and-templates.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/styles-templates-overview"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/contextmenu-styles-and-templates.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/contextmenu-overview"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/datagrid-styles-and-templates.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/datagrid"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/datepicker-styles-and-templates.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/datepicker"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/documentviewer-styles-and-templates.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/documentviewer"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/expander-styles-and-templates.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/expander"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/frame-styles-and-templates.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/frame"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/gridview-column-header-styles-and-templates-overview.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/gridview-overview"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/groupbox-styles-and-templates.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/groupbox"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/label-styles-and-templates.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/label"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/listbox-styles-and-templates.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/listbox"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/listview-styles-and-templates.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/listview"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/menu-styles-and-templates.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/menu"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/navigationwindow-styles-and-templates.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/navigationwindow"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/passwordbox-styles-and-templates.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/passwordbox"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/progressbar-styles-and-templates.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/progressbar"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/radiobutton-styles-and-templates.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/radiobutton"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/repeatbutton-styles-and-templates.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/repeatbutton"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/scrollbar-styles-and-templates.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/scrollbar"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/thumb-styles-and-templates.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/thumb"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/togglebutton-styles-and-templates.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/togglebutton"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/toolbar-styles-and-templates.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/toolbar"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/tooltip-styles-and-templates.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/tooltip"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/treeview-styles-and-templates.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/treeview"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/window-styles-and-templates.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/window"
+        },
+        {
             "source_path": "dotnet-desktop-guide/wpf/data/data-binding-overview.md",
             "redirect_url": "/dotnet/desktop/wpf/data/index"
         },
