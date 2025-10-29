@@ -41,7 +41,6 @@ The following XAML is a generated copy of the <xref:System.Windows.Window> contr
 
 - <xref:System.Windows.FrameworkElement.Style%2A>
 - <xref:System.Windows.Controls.ControlTemplate>
-- [Control Styles and Templates](control-styles-and-templates.md)
 - [Control Customization](control-customization.md)
 - [Styling and Templating](styles-templates-overview.md)
 - [Create a template for a control](how-to-create-apply-template.md)

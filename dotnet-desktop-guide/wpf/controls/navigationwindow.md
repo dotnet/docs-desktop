@@ -52,7 +52,6 @@ For the complete sample, see [Styling with ControlTemplates Sample](https://gith
 
 - <xref:System.Windows.FrameworkElement.Style%2A>
 - <xref:System.Windows.Controls.ControlTemplate>
-- [Control Styles and Templates](control-styles-and-templates.md)
 - [Control Customization](control-customization.md)
 - [Styling and Templating](styles-templates-overview.md)
 - [Create a template for a control](how-to-create-apply-template.md)

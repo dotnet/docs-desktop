@@ -1,30 +1,30 @@
 ---
-title: "RepeatButton Styles and Templates"
-description: Learn how the the styles and templates for the RepeatButton control allow you to modify the default ControlTemplate to give the control a unique appearance.
+title: "Thumb Styles and Templates"
+description: Learn about the styles and templates for the Thumb control allowing you to modify the default ControlTemplate to give the control a unique appearance.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
 ms.update-cycle: 1825-days
 helpviewer_keywords:
-  - "RepeatButton [WPF], styles and templates"
-  - "styles [WPF], RepeatButton"
-  - "templates [WPF], RepeatButton"
-  - "parts [WPF], RepeatButton"
-  - "ControlTemplate [WPF], RepeatButton"
-  - "states [WPF], RepeatButton"
-ms.assetid: fd340743-f44f-4990-9077-085301469670
+  - "states [WPF], Thumb"
+  - "styles [WPF], Thumb"
+  - "templates [WPF], Thumb"
+  - "Thumb [WPF], styles and templates"
+  - "ControlTemplate [WPF], Thumb"
+  - "parts [WPF], Thumb"
+ms.assetid: 86a49235-62d9-414e-923e-53126e3f930a
 ---
 
-# RepeatButton Styles and Templates
+# Thumb Styles and Templates
 
-This topic describes the styles and templates for the <xref:System.Windows.Controls.Primitives.RepeatButton> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [Create a template for a control](how-to-create-apply-template.md).
+This topic describes the styles and templates for the <xref:System.Windows.Controls.Primitives.Thumb> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [Create a template for a control](how-to-create-apply-template.md).
 
-## RepeatButton Parts
+## Thumb Parts
 
-The <xref:System.Windows.Controls.Primitives.RepeatButton> control does not have any named parts.
+The <xref:System.Windows.Controls.Primitives.Thumb> control does not have any named parts.
 
-## RepeatButton States
+## Thumb States
 
-The following table lists the visual states for the <xref:System.Windows.Controls.Primitives.RepeatButton> control.
+The following table lists the visual states for the <xref:System.Windows.Controls.Primitives.Thumb> control.
 
 |VisualState Name|VisualStateGroup Name|Description|
 |-|-|-|
@@ -38,11 +38,11 @@ The following table lists the visual states for the <xref:System.Windows.Control
 |InvalidFocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` has the control has focus.|
 |InvalidUnfocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` has the control does not have focus.|
 
-## RepeatButton ControlTemplate Example
+## Thumb ControlTemplate Example
 
-The following example shows how to define a <xref:System.Windows.Controls.ControlTemplate> for the <xref:System.Windows.Controls.Primitives.RepeatButton> control.
+The following example shows how to define a <xref:System.Windows.Controls.ControlTemplate> for the <xref:System.Windows.Controls.Primitives.Thumb> control.
 
-[!code-xaml[ControlTemplateExamples#RepeatButton](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/scrollbar.xaml#repeatbutton)]
+[!code-xaml[ControlTemplateExamples#Thumb](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/slider.xaml#thumb)]
 
 The preceding example uses one or more of the following resources.
 
@@ -54,7 +54,6 @@ For the complete sample, see [Styling with ControlTemplates Sample](https://gith
 
 - <xref:System.Windows.FrameworkElement.Style%2A>
 - <xref:System.Windows.Controls.ControlTemplate>
-- [Control Styles and Templates](control-styles-and-templates.md)
 - [Control Customization](control-customization.md)
 - [Styling and Templating](styles-templates-overview.md)
 - [Create a template for a control](how-to-create-apply-template.md)

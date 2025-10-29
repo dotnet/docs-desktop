@@ -64,6 +64,38 @@ The following example uses the <xref:System.Windows.Trigger> element to change t
 </Style>
 ```
 
+## Styles and templates
+
+This section describes the styles and templates for the <xref:System.Windows.Controls.ContextMenu> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [What are styles and templates?](styles-templates-overview.md) and [How to create a template for a control](how-to-create-apply-template.md).
+
+### Parts
+
+The <xref:System.Windows.Controls.ContextMenu> control does not have any named parts.
+
+When you create a <xref:System.Windows.Controls.ControlTemplate> for a <xref:System.Windows.Controls.ContextMenu>, your template might contain an <xref:System.Windows.Controls.ItemsPresenter> within a <xref:System.Windows.Controls.ScrollViewer>. (The <xref:System.Windows.Controls.ItemsPresenter> displays each item in the <xref:System.Windows.Controls.ContextMenu>; the <xref:System.Windows.Controls.ScrollViewer> enables scrolling within the control).  If the <xref:System.Windows.Controls.ItemsPresenter> is not the direct child of the <xref:System.Windows.Controls.ScrollViewer>, you must give the <xref:System.Windows.Controls.ItemsPresenter> the name, `ItemsPresenter`.
+
+### Visual states
+
+The following table lists the visual states for the <xref:System.Windows.Controls.ContextMenu> control.
+
+|VisualState Name|VisualStateGroup Name|Description|
+|-|-|-|
+|Valid|ValidationStates|The control uses the <xref:System.Windows.Controls.Validation> class and the <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `false`.|
+|InvalidFocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` has the control has focus.|
+|InvalidUnfocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` has the control does not have focus.|
+
+### ContextMenu ControlTemplate Example
+
+The following example shows how to define a <xref:System.Windows.Controls.ControlTemplate> for the <xref:System.Windows.Controls.ContextMenu> control.
+
+[!code-xaml[ControlTemplateExamples#ContextMenu](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/menu.xaml#contextmenu)]
+
+The <xref:System.Windows.Controls.ControlTemplate> uses the following resources.
+
+[!code-xaml[ControlTemplateExamples#Resources](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/shared.xaml#resources)]
+
+For the complete sample, see [Styling with ControlTemplates Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Styles%20&%20Templates/IntroToStylingAndTemplating).
+
 ## See also
 
 - <xref:System.Windows.Controls.ContextMenu>
@@ -71,5 +103,4 @@ The following example uses the <xref:System.Windows.Trigger> element to change t
 - <xref:System.Windows.Controls.Menu>
 - <xref:System.Windows.Controls.MenuItem>
 - [ContextMenu](contextmenu.md)
-- [ContextMenu Styles and Templates](contextmenu-styles-and-templates.md)
 - [WPF Controls Gallery Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Getting%20Started/ControlsAndLayout)

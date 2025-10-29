@@ -19,6 +19,43 @@ A <xref:System.Windows.Controls.Primitives.ScrollBar> allows you to view content
 
 [Customize the Thumb Size on a ScrollBar](how-to-customize-the-thumb-size-on-a-scrollbar.md)
 
+## Styles and templates
+
+This section describes the styles and templates for the <xref:System.Windows.Controls.Primitives.ScrollBar> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [What are styles and templates?](styles-templates-overview.md) and [How to create a template for a control](how-to-create-apply-template.md).
+
+### Parts
+
+The following table lists the named parts for the <xref:System.Windows.Controls.Primitives.ScrollBar> control.
+
+|Part|Type|Description|
+|-|-|-|
+|PART_Track|<xref:System.Windows.Controls.Primitives.Track>|The container for the element that indicates the position of the <xref:System.Windows.Controls.Primitives.ScrollBar>.|
+
+### Visual states
+
+The following table lists the visual states for the <xref:System.Windows.Controls.Primitives.ScrollBar> control.
+
+|VisualState Name|VisualStateGroup Name|Description|
+|----------------------|---------------------------|-----------------|
+|Normal|CommonStates|The default state.|
+|MouseOver|CommonStates|The mouse pointer is positioned over the control.|
+|Disabled|CommonStates|The control is disabled.|
+|Valid|ValidationStates|The control uses the <xref:System.Windows.Controls.Validation> class and the <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `false`.|
+|InvalidFocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` and the control has focus.|
+|InvalidUnfocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` and the control does not have focus.|
+
+### ControlTemplate example
+
+The following example shows how to define a <xref:System.Windows.Controls.ControlTemplate> for the <xref:System.Windows.Controls.Primitives.ScrollBar> control.
+
+[!code-xaml[ControlTemplateExamples#ScrollBar](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/scrollbar.xaml#scrollbar)]
+
+The preceding example uses one or more of the following resources.
+
+[!code-xaml[ControlTemplateExamples#Resources](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/shared.xaml#resources)]
+
+For the complete sample, see [Styling with ControlTemplates Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Styles%20&%20Templates/IntroToStylingAndTemplating).
+
 ## Reference
 
 <xref:System.Windows.Controls.Primitives.ScrollBar>
