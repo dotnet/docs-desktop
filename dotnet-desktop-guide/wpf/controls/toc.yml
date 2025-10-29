@@ -26,19 +26,16 @@ items:
     - name: Canvas
       href: canvas.md
       items:
-      - name: How-to Topics
-        href: canvas-how-to-topics.md
-        items:
-        - name: Wrap a Border Around the Content of a Canvas
-          href: how-to-wrap-a-border-around-the-content-of-a-canvas.md
-        - name: Get or Set Canvas Positioning Properties
-          href: how-to-get-or-set-canvas-positioning-properties.md
-        - name: Create and Use a Canvas
-          href: how-to-create-and-use-a-canvas.md
-        - name: Use the Attached Properties of Canvas to Position Child Elements
-          href: how-to-use-the-attached-properties-of-canvas-to-position-child-elements.md
-        - name: Resize a Canvas by Using a Thumb
-          href: how-to-resize-a-canvas-by-using-a-thumb.md
+      - name: Wrap a Border Around the Content of a Canvas
+        href: how-to-wrap-a-border-around-the-content-of-a-canvas.md
+      - name: Get or Set Canvas Positioning Properties
+        href: how-to-get-or-set-canvas-positioning-properties.md
+      - name: Create and Use a Canvas
+        href: how-to-create-and-use-a-canvas.md
+      - name: Use the Attached Properties of Canvas to Position Child Elements
+        href: how-to-use-the-attached-properties-of-canvas-to-position-child-elements.md
+      - name: Resize a Canvas by Using a Thumb
+        href: how-to-resize-a-canvas-by-using-a-thumb.md
     - name: CheckBox
       href: checkbox.md
     - name: ComboBox
