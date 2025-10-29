@@ -347,6 +347,14 @@
         {
             "source_path": "dotnet-desktop-guide/wpf/advanced/sample-opentype-font-pack.md",
             "redirect_url": "/dotnet/desktop/wpf/advanced/opentype-font-features"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/adorners-overview.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/adorners"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/adorners-how-to-topics.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/adorners"
         }
     ]
 }

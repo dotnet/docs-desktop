@@ -413,10 +413,7 @@ items:
     - name: Adorners
       href: adorners.md
       items:
-      - name: Adorners Overview
-        href: adorners-overview.md
       - name: How-to Topics
-        href: adorners-how-to-topics.md
         items:
         - name: Implement an Adorner
           href: how-to-implement-an-adorner.md

@@ -32,4 +32,4 @@ This condensed code example is functionally equivalent to the verbose example sh
 
 ## See also
 
-- [Adorners Overview](adorners-overview.md)
+- [Adorners](adorners.md)
