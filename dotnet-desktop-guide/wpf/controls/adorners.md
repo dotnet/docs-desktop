@@ -2,8 +2,8 @@
 title: "Adorners"
 description: Learn about Windows Presentation Foundation Adorners, a special type of FrameworkElement that provides cues to a user, such as functional handles for elements.
 ms.date: 10/29/2025
-ms.service: dotnet-framework
-ms.update-cycle: 1825-days
+ms.service: dotnet-desktop
+ms.update-cycle: 365-days
 ms.custom: devdivchpfy22
 ms.topic: overview
 dev_langs:
@@ -11,7 +11,6 @@ dev_langs:
   - "vb"
 helpviewer_keywords:
   - "adorners [WPF], about adorners"
-ms.assetid: 5d5f656b-8e05-4839-9d53-b0324d902aa9
 ai-usage: ai-assisted
 ---
 # Adorners
