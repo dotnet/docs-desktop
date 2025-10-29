@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page x:Class="AllTemplatesCS.Pages.SliderPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AllTemplatesCS.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="400"
+      Title="SliderPage">
+    <StackPanel Margin="20" HorizontalAlignment="Center" VerticalAlignment="Center" Width="250">
+        <TextBlock Text="Horizontal Slider:" Margin="5"/>
+        <Slider Value="50" Minimum="0" Maximum="100" Margin="5"/>
+        
+        <TextBlock Text="Slider with Ticks:" Margin="5,15,5,5"/>
+        <Slider Value="25" Minimum="0" Maximum="100" TickPlacement="BottomRight" TickFrequency="10" Margin="5"/>
+        
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="20">
+            <TextBlock Text="Vertical Slider:" VerticalAlignment="Center" Margin="5"/>
+            <Slider Value="75" Minimum="0" Maximum="100" Orientation="Vertical" Height="100" Margin="15,5"/>
+        </StackPanel>
+    </StackPanel>
+</Page>

@@ -1,0 +1,96 @@
+﻿<Window x:Class="AllTemplatesCS.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AllTemplatesCS"
+        mc:Ignorable="d"
+        Title="WPF Control Screenshot App" Height="600" Width="1000">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        
+        <!-- Left Panel - Control List -->
+        <Border Grid.Column="0" BorderBrush="Gray" BorderThickness="0,0,1,0" Padding="10">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <TextBlock Text="WPF Controls" FontSize="16" FontWeight="Bold" Margin="0,0,0,10"/>
+                <ListBox x:Name="ControlsListBox" SelectionChanged="ControlsListBox_SelectionChanged" Grid.Row="1">
+                    <ListBoxItem Content="Border"/>
+                    <ListBoxItem Content="BulletDecorator"/>
+                    <ListBoxItem Content="Button"/>
+                    <ListBoxItem Content="Calendar"/>
+                    <ListBoxItem Content="Canvas"/>
+                    <ListBoxItem Content="CheckBox"/>
+                    <ListBoxItem Content="ComboBox"/>
+                    <ListBoxItem Content="ContextMenu"/>
+                    <ListBoxItem Content="DataGrid"/>
+                    <ListBoxItem Content="DatePicker"/>
+                    <ListBoxItem Content="DockPanel"/>
+                    <ListBoxItem Content="DocumentViewer"/>
+                    <ListBoxItem Content="Expander"/>
+                    <ListBoxItem Content="FlowDocumentPageViewer"/>
+                    <ListBoxItem Content="FlowDocumentReader"/>
+                    <ListBoxItem Content="FlowDocumentScrollViewer"/>
+                    <ListBoxItem Content="Frame"/>
+                    <ListBoxItem Content="Grid"/>
+                    <ListBoxItem Content="GridSplitter"/>
+                    <ListBoxItem Content="GroupBox"/>
+                    <ListBoxItem Content="Image"/>
+                    <ListBoxItem Content="Label"/>
+                    <ListBoxItem Content="ListBox"/>
+                    <ListBoxItem Content="ListView"/>
+                    <ListBoxItem Content="Menu"/>
+                    <ListBoxItem Content="Panel"/>
+                    <ListBoxItem Content="PasswordBox"/>
+                    <ListBoxItem Content="Popup"/>
+                    <ListBoxItem Content="ProgressBar"/>
+                    <ListBoxItem Content="PrintDialog"/>
+                    <ListBoxItem Content="RadioButton"/>
+                    <ListBoxItem Content="RepeatButton"/>
+                    <ListBoxItem Content="RichTextBox"/>
+                    <ListBoxItem Content="ScrollBar"/>
+                    <ListBoxItem Content="ScrollViewer"/>
+                    <ListBoxItem Content="Separator"/>
+                    <ListBoxItem Content="Slider"/>
+                    <ListBoxItem Content="StackPanel"/>
+                    <ListBoxItem Content="StatusBar"/>
+                    <ListBoxItem Content="TabControl"/>
+                    <ListBoxItem Content="TextBlock"/>
+                    <ListBoxItem Content="TextBox"/>
+                    <ListBoxItem Content="ToolBar"/>
+                    <ListBoxItem Content="ToolTip"/>
+                    <ListBoxItem Content="TreeView"/>
+                    <ListBoxItem Content="WrapPanel"/>
+                    <ListBoxItem Content="Viewbox"/>
+                </ListBox>
+            </Grid>
+        </Border>
+        
+        <!-- Right Panel - Preview Area -->
+        <Grid Grid.Column="1" Background="White">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            
+            <!-- Header with Screenshot Button -->
+            <Border Grid.Row="0" Background="LightGray" Padding="10">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock x:Name="SelectedControlTitle" Text="Select a control to preview" FontSize="14" FontWeight="Bold" VerticalAlignment="Center"/>
+                    <Button x:Name="ScreenshotButton" Content="Take Screenshot" Margin="20,0,0,0" Padding="10,5" Click="ScreenshotButton_Click" IsEnabled="False"/>
+                </StackPanel>
+            </Border>
+            
+            <!-- Preview Area with Border for Screenshots -->
+            <Border Grid.Row="1" Margin="50" BorderBrush="LightGray" BorderThickness="2" Background="White">
+                <Frame x:Name="PreviewFrame" NavigationUIVisibility="Hidden"/>
+            </Border>
+        </Grid>
+    </Grid>
+</Window>

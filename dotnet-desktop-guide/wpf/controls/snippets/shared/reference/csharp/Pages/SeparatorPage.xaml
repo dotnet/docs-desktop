@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page x:Class="AllTemplatesCS.Pages.SeparatorPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AllTemplatesCS.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="400"
+      Title="SeparatorPage">
+    <StackPanel Margin="20" HorizontalAlignment="Center" VerticalAlignment="Center" Width="250">
+        <TextBlock Text="Menu with Separators:" FontWeight="Bold" Margin="5"/>
+        <Menu Background="LightGray" Margin="5">
+            <MenuItem Header="File">
+                <MenuItem Header="New"/>
+                <MenuItem Header="Open"/>
+                <Separator/>
+                <MenuItem Header="Save"/>
+                <MenuItem Header="Save As"/>
+                <Separator/>
+                <MenuItem Header="Exit"/>
+            </MenuItem>
+        </Menu>
+        
+        <TextBlock Text="ToolBar with Separators:" FontWeight="Bold" Margin="15,20,5,5"/>
+        <ToolBar Margin="5">
+            <Button Content="New" Padding="5"/>
+            <Button Content="Open" Padding="5"/>
+            <Separator/>
+            <Button Content="Save" Padding="5"/>
+            <Separator/>
+            <Button Content="Cut" Padding="5"/>
+            <Button Content="Copy" Padding="5"/>
+            <Button Content="Paste" Padding="5"/>
+        </ToolBar>
+        
+        <TextBlock Text="Vertical Separators:" FontWeight="Bold" Margin="15,20,5,5"/>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="5">
+            <Button Content="Button 1" Padding="10,5" Margin="2"/>
+            <Separator Style="{DynamicResource {x:Static ToolBar.SeparatorStyleKey}}" Margin="5,0"/>
+            <Button Content="Button 2" Padding="10,5" Margin="2"/>
+            <Separator Style="{DynamicResource {x:Static ToolBar.SeparatorStyleKey}}" Margin="5,0"/>
+            <Button Content="Button 3" Padding="10,5" Margin="2"/>
+        </StackPanel>
+        
+        <TextBlock Text="Custom Styled Separator:" FontWeight="Bold" Margin="15,20,5,5"/>
+        <Separator Background="DarkBlue" Height="3" Margin="10"/>
+        
+        <TextBlock Text="Separators help organize and group related items" 
+                   FontStyle="Italic" FontSize="10" Margin="10"/>
+    </StackPanel>
+</Page>

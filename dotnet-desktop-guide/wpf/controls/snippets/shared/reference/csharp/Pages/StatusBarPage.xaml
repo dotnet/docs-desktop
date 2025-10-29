@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page x:Class="AllTemplatesCS.Pages.StatusBarPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AllTemplatesCS.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="400"
+      Title="StatusBarPage">
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        
+        <StackPanel Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock Text="StatusBar Control Example" FontSize="16" FontWeight="Bold" Margin="0,0,0,20"/>
+            <TextBlock Text="The StatusBar is typically placed at the bottom of windows." TextWrapping="Wrap" MaxWidth="350"/>
+            <Button Content="Update Status" Padding="10,5" Margin="0,20,0,0" Click="UpdateStatusButton_Click"/>
+        </StackPanel>
+        
+        <StatusBar Grid.Row="1" Background="LightGray">
+            <StatusBarItem>
+                <TextBlock x:Name="StatusText" Text="Ready"/>
+            </StatusBarItem>
+            <Separator/>
+            <StatusBarItem>
+                <TextBlock Text="Line: 1, Col: 1"/>
+            </StatusBarItem>
+            <StatusBarItem HorizontalAlignment="Right">
+                <ProgressBar x:Name="StatusProgressBar" Width="100" Height="16" Minimum="0" Maximum="100" Value="0"/>
+            </StatusBarItem>
+        </StatusBar>
+    </Grid>
+</Page>

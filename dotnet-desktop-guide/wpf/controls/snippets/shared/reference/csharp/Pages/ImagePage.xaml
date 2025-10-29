@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page x:Class="AllTemplatesCS.Pages.ImagePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AllTemplatesCS.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="400"
+      Title="ImagePage">
+    <StackPanel Margin="20" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <!-- Placeholder images using geometric shapes -->
+        <Border BorderBrush="Gray" BorderThickness="1" Width="150" Height="100" Margin="5">
+            <Grid Background="LightGray">
+                <Rectangle Fill="DodgerBlue" Width="80" Height="60"/>
+                <TextBlock Text="Image Placeholder" HorizontalAlignment="Center" VerticalAlignment="Bottom" 
+                          FontSize="10" Foreground="White" Margin="2"/>
+            </Grid>
+        </Border>
+        
+        <Border BorderBrush="Gray" BorderThickness="1" Width="100" Height="100" Margin="5">
+            <Grid Background="LightGreen">
+                <Ellipse Fill="Orange" Width="60" Height="60"/>
+                <TextBlock Text="Square" HorizontalAlignment="Center" VerticalAlignment="Bottom" 
+                          FontSize="10" Foreground="White" Margin="2"/>
+            </Grid>
+        </Border>
+        
+        <Border BorderBrush="Gray" BorderThickness="1" Width="200" Height="50" Margin="5">
+            <Grid Background="LightPink">
+                <Rectangle Fill="Purple" Width="120" Height="30"/>
+                <TextBlock Text="Banner Image" HorizontalAlignment="Center" VerticalAlignment="Center" 
+                          FontSize="10" Foreground="White"/>
+            </Grid>
+        </Border>
+        
+        <TextBlock Text="Note: Image control examples with placeholder graphics" 
+                   FontStyle="Italic" FontSize="10" Margin="10" HorizontalAlignment="Center"/>
+    </StackPanel>
+</Page>
