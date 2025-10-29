@@ -225,7 +225,7 @@ TextBlock that has a Border
 
 ## Classes That Provide Visual Feedback About a UIElement
 
-The <xref:System.Windows.Documents.Adorner> class provides visual cues to a user. For example, use an <xref:System.Windows.Documents.Adorner> to add functional handles to elements or provide state information about a control. The <xref:System.Windows.Documents.Adorner> class provides a framework so that you can create your own adorners. WPF does not provide any implemented adorners. For more information, see [Adorners Overview](adorners-overview.md).
+The <xref:System.Windows.Documents.Adorner> class provides visual cues to a user. For example, use an <xref:System.Windows.Documents.Adorner> to add functional handles to elements or provide state information about a control. The <xref:System.Windows.Documents.Adorner> class provides a framework so that you can create your own adorners. WPF does not provide any implemented adorners. For more information, see [Adorners](adorners.md).
 
 <a name="classes_that_enable_users_to_enter_text"></a>
 

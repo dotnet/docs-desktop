@@ -343,6 +343,14 @@
         {
             "source_path": "dotnet-desktop-guide/wpf/app-development/how-to-return-a-dialog-box-result.md",
             "redirect_url": "/dotnet/desktop/wpf/windows/dialog-boxes-overview"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/adorners-overview.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/adorners"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/adorners-how-to-topics.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/adorners"
         }
     ]
 }

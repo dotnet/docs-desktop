@@ -64,7 +64,7 @@ With attached properties, you can append values to a control. You use this featu
 
 ## Create an adorner
 
-The <xref:System.Windows.Documents.Adorner> is a visual that's bound to a control and rendered in an <xref:System.Windows.Documents.AdornerLayer>. For more information, see [Adorners Overview](adorners-overview.md).
+The <xref:System.Windows.Documents.Adorner> is a visual that's bound to a control and rendered in an <xref:System.Windows.Documents.AdornerLayer>. For more information, see [Adorners](adorners.md).
 
 01. Open the `TextBoxHelper` class.
 01. Add the following code to create the `GetOrCreateAdorner` method.
@@ -106,5 +106,5 @@ The following code is the complete `TextBoxHelper` class.
 ## See also
 
 - [TextBox Overview](textbox-overview.md)
-- [Adorners Overview](adorners-overview.md)
+- [Adorners](adorners.md)
 - [Attached Properties Overview](../properties/attached-properties-overview.md)
