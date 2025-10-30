@@ -1,0 +1,25 @@
+<Window x:Class="ContextMenuExample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ContextMenu Example" Height="350" Width="525">
+    <Grid>
+        <StackPanel Margin="20">
+            <!--<BasicContextMenu>-->
+            <Button Name="cmButton" Height="30" Width="200">
+                Button with Context Menu
+                <Button.ContextMenu>
+                    <ContextMenu Name="cm" Opened="Menu_OnOpened" Closed="Menu_OnClosed" StaysOpen="true">
+                        <MenuItem Header="File"/>
+                        <MenuItem Header="Save"/>
+                        <MenuItem Header="SaveAs"/>
+                        <MenuItem Header="Recent Files">
+                            <MenuItem Header="ReadMe.txt"/>
+                            <MenuItem Header="Schedule.xls"/>
+                        </MenuItem>
+                    </ContextMenu>
+                </Button.ContextMenu>
+            </Button>
+            <!--</BasicContextMenu>-->
+        </StackPanel>
+    </Grid>
+</Window>
