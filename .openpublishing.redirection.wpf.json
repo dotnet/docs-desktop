@@ -73,6 +73,14 @@
             "redirect_url": "/dotnet/desktop/wpf/controls/documentviewer"
         },
         {
+            "source_path": "dotnet-desktop-guide/wpf/controls/expander-overview.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/expander"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/expander-how-to-topics.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/expander"
+        },
+        {
             "source_path": "dotnet-desktop-guide/wpf/controls/expander-styles-and-templates.md",
             "redirect_url": "/dotnet/desktop/wpf/controls/expander"
         },
@@ -363,6 +371,10 @@
         {
             "source_path": "dotnet-desktop-guide/wpf/controls/canvas-how-to-topics.md",
             "redirect_url": "/dotnet/desktop/wpf/controls/canvas"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/dockpanel-how-to-topics.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/dockpanel"
         }
     ]
 }
