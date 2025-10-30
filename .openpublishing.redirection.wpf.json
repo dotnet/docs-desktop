@@ -57,6 +57,10 @@
             "redirect_url": "/dotnet/desktop/wpf/controls/contextmenu-overview"
         },
         {
+            "source_path": "dotnet-desktop-guide/wpf/controls/contextmenu-overview.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/contextmenu"
+        },
+        {
             "source_path": "dotnet-desktop-guide/wpf/controls/datagrid-styles-and-templates.md",
             "redirect_url": "/dotnet/desktop/wpf/controls/datagrid"
         },
