@@ -375,6 +375,18 @@
         {
             "source_path": "dotnet-desktop-guide/wpf/controls/dockpanel-how-to-topics.md",
             "redirect_url": "/dotnet/desktop/wpf/controls/dockpanel"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/flowdocumentscrollviewer.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/flowdocument"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/flowdocumentpageviewer.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/flowdocument"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/flowdocumentreader.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/flowdocument"
         }
     ]
 }
