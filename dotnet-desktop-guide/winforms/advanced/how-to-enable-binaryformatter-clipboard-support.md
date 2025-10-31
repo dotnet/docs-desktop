@@ -77,7 +77,7 @@ Create or update your application's `runtimeconfig.json` file to enable the Wind
 :::code language="json" source="./snippets/how-to-enable-binaryformatter-clipboard-support/csharp/runtimeconfig.json":::
 
 > [!IMPORTANT]
-> Without this specific runtime switch, clipboard operations won't fall back to `BinaryFormatter` even if general serialization support is enabled. This switch is required specifically for Windows Forms clipboard functionality.
+> Without this specific runtime switch, clipboard operations won't fall back to `BinaryFormatter` even if general serialization support is enabled. This switch is required specifically for Windows Forms and WPF clipboard functionality.
 
 ## Implement security-focused type resolvers
 
