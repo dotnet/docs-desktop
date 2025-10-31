@@ -3,7 +3,7 @@ title: "How to: Add Data to the Clipboard"
 ms.date: 10/02/2025
 ms.service: dotnet-desktop
 ms.update-cycle: 365-days
-zone_pivot_groups: dotnet-version
+zome_pivot_groups: desktop-version
 dev_langs:
   - "csharp"
   - "vb"

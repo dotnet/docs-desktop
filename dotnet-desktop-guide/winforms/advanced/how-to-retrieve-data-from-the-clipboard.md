@@ -12,7 +12,7 @@ helpviewer_keywords:
   - "Clipboard [Windows Forms], retrieving data"
 ms.assetid: 99612537-2c8a-449f-aab5-2b3b28d656e7
 ai-usage: ai-assisted
-zone_pivot_groups: dotnet-version
+zome_pivot_groups: desktop-version
 ---
 # How to retrieve data from the Clipboard
 

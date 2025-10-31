@@ -1,7 +1,7 @@
 ### YamlMime:ZonePivotGroups
 
 groups:
-  - id: dotnet-version
+  - id: desktop-version
     title: .NET Version
     prompt: Choose your .NET version
     pivots:
