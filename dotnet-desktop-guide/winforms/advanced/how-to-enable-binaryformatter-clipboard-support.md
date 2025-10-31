@@ -24,9 +24,6 @@ This article shows how to configure limited `BinaryFormatter` support for Window
 
 For complete migration guidance to the new type-safe APIs, see [Windows Forms clipboard and DataObject changes in .NET 10](../migration/clipboard-dataobject-net10.md).
 
-> [!WARNING]
-> Use this approach only as a temporary bridge while updating your application to use the new type-safe clipboard APIs introduced in .NET 10.
-
 ## Prerequisites
 
 Before continuing, review these concepts:
