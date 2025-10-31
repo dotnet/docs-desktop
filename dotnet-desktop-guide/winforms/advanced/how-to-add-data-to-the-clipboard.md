@@ -1,6 +1,6 @@
 ---
-title: "How to: Add Data to the Clipboard"
-ms.date: 10/02/2025
+title: "How to add Data to the Clipboard"
+ms.date: 10/31/2025
 ms.service: dotnet-desktop
 ms.update-cycle: 365-days
 zone_pivot_groups: desktop-version
