@@ -40,9 +40,7 @@ This file serves as a comprehensive reference mapping each WPF control to its ca
 | GroupBox | Content Controls | `dotnet-desktop-guide/wpf/controls/groupbox.md` | Minimal content, no overview, no screenshots, missing examples | Medium |
 | Label | Content Controls | `dotnet-desktop-guide/wpf/controls/label.md` | Minimal content, no overview, no screenshots, missing examples | High |
 | DocumentViewer | Document Controls | `dotnet-desktop-guide/wpf/controls/documentviewer.md` | Minimal content, no overview, no screenshots, missing examples | Low |
-| FlowDocumentPageViewer | Document Controls | `dotnet-desktop-guide/wpf/controls/flowdocumentpageviewer.md` | Minimal content, no overview, no screenshots, missing examples | Low |
-| FlowDocumentReader | Document Controls | `dotnet-desktop-guide/wpf/controls/flowdocumentreader.md` | Minimal content, no overview, no screenshots, missing examples | Low |
-| FlowDocumentScrollViewer | Document Controls | `dotnet-desktop-guide/wpf/controls/flowdocumentscrollviewer.md` | Minimal content, no overview, no screenshots, missing examples | Low |
+| FlowDocument controls | Document Controls | `dotnet-desktop-guide/wpf/controls/flowdocument.md` | Merged article covering FlowDocumentPageViewer, FlowDocumentReader, and FlowDocumentScrollViewer | Low |
 | RichTextBox | Document Controls | `dotnet-desktop-guide/wpf/controls/richtextbox.md` | Minimal content, no overview, no screenshots, missing examples | Medium |
 | TextBlock | Document Controls | `dotnet-desktop-guide/wpf/controls/textblock.md` | Minimal content, no overview, no screenshots, missing examples | High |
 | Image | Media Controls | `dotnet-desktop-guide/wpf/controls/image.md` | Minimal content, no overview, no screenshots, missing examples | Medium |
