@@ -21,7 +21,7 @@
       "author": "adegeo",
       "uhfHeaderId": "MSDocsHeader-DotNet",
       "ms.author": "adegeo",
-      "_zonePivotGroups": "zone-pivot-groups.yml"
+      "zone_pivot_group_filename": "desktop/zone-pivot-groups.json"
     },
     "fileMetadata": {
       "titleSuffix": {
