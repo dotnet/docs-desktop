@@ -76,7 +76,7 @@ Use zone pivots when there are conceptual differences that can't easily be expla
 
 To use zone pivots:
 
-1. Add `zome_pivot_groups: desktop-version` to the article's frontmatter
+1. Add `zone_pivot_groups: desktop-version` to the article's frontmatter
 2. Use zone pivot syntax in content:
 
 ```markdown
