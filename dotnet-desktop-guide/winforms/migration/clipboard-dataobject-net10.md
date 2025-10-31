@@ -23,7 +23,7 @@ This article shows you how to upgrade your Windows Forms clipboard and drag-and-
 
 `BinaryFormatter` was removed from the runtime in .NET 9 because of security vulnerabilities. This change broke clipboard and drag-and-drop operations with custom objects. .NET 10 introduces new APIs that use JSON serialization and type-safe methods to restore this functionality, improve security, and provide better error handling and cross-process compatibility.
 
-One significant change is that <xref:System.Windows.Clipboard.SetData(System.String,System.Object)?displayProperty=nameWithType> no longer works with custom types. It silently fails without storing data on the clipboard. <xref:System.Windows.Forms.Clipboard.GetData(System.String)?displayProperty=nameWithType> is obsolete in .NET&nbsp;10 and shouldn't be used, even for built-in types. Use the new <xref:System.Windows.Forms.Clipboard.TryGetData*?displayProperty=nameWithType> and <xref:System.Windows.Forms.Clipboard.SetDataAsJson``1(System.String,``0)?displayProperty=nameWithType> methods for type-safe operations and JSON serialization of custom objects.
+<xref:System.Windows.Clipboard.SetData(System.String,System.Object)?displayProperty=nameWithType> no longer works with custom types. While this method has always performed a copy operation that serializes data (by default), that serialization now fails for custom types because `BinaryFormatter` has been removed. <xref:System.Windows.Forms.Clipboard.GetData(System.String)?displayProperty=nameWithType> is obsolete in .NET&nbsp;10. When data requires serialization but the format isn't supported, `GetData()` returns a <xref:System.NotSupportedException> instance rather than the actual data. Use the new <xref:System.Windows.Forms.Clipboard.TryGetData*?displayProperty=nameWithType> and <xref:System.Windows.Forms.Clipboard.SetDataAsJson``1(System.String,``0)?displayProperty=nameWithType> methods for type-safe operations and JSON serialization of custom objects.
 
 The following sections provide detailed migration guidance, explain which types work without changes, and show how to handle both new development and legacy data scenarios.
 
@@ -46,7 +46,7 @@ Removing `BinaryFormatter` in .NET 9 fundamentally changes how Windows Forms han
 
 ### Custom types no longer serialize automatically
 
-In .NET 8 and earlier, you could place any serializable custom object on the clipboard by calling `SetData()`. The `BinaryFormatter` handled serialization automatically. Starting with .NET 9, this pattern no longer works. The `SetData()` method silently fails for custom types and doesn't store data on the clipboard.
+In .NET 8 and earlier, you could place any serializable custom object on the clipboard by calling `SetData()`. The `BinaryFormatter` handled serialization automatically. Starting with .NET 9, `SetData()` still performs a copy operation that attempts to serialize the data, but this serialization fails for custom types because `BinaryFormatter` has been removed.
 
 The following code no longer works:
 
@@ -55,9 +55,9 @@ The following code no longer works:
 
 #### What you might see
 
-- The `SetData()` method completes without throwing an exception but doesn't store the data.
-- The clipboard operation appears to succeed from your application's perspective.
-- Later attempts to retrieve the data with `GetData()` return `null`.
+- The `SetData()` method completes without throwing an exception.
+- The data is placed on the clipboard, but can't be properly serialized for cross-process use.
+- Later attempts to retrieve the data with `GetData()` return a <xref:System.NotSupportedException> instance instead of the actual data, indicating the serialization format isn't supported.
 
 #### Migration guidance
 
@@ -65,7 +65,7 @@ Use the new [`SetDataAsJson<T>()`](xref:System.Windows.Forms.Clipboard.SetDataAs
 
 ### GetData() is obsolete - use TryGetData\<T>() instead
 
-The legacy `GetData()` method is obsolete in .NET 10. Even if it sometimes returns data, you should migrate to the new type-safe [`TryGetData<T>()`](xref:System.Windows.Forms.Clipboard.TryGetData*) methods for better error handling and type safety.
+The legacy `GetData()` method is obsolete in .NET 10. When data requires serialization but the format isn't supported, `GetData()` returns a <xref:System.NotSupportedException> instance instead of the actual data. When data doesn't require serialization (set with `copy: false`), `GetData()` returns the data, but only within the same process. You should migrate to the new type-safe [`TryGetData<T>()`](xref:System.Windows.Forms.Clipboard.TryGetData*) methods for better error handling and type safety.
 
 **Obsolete code to avoid:**
 
@@ -167,8 +167,11 @@ These types use NRBF, the same efficient binary format used by the legacy `Binar
 
 - **Compact binary representation**: Enables efficient storage and transfer.
 - **Built-in type information**: Preserves exact .NET types during round-trip operations.
-- **Cross-process compatibility**: Works between different .NET applications.
+- **Cross-process compatibility**: Works between different .NET applications when data is serialized during the copy operation.
 - **Automatic serialization**: Types serialize without custom code.
+
+> [!NOTE]
+> Methods like `SetData()` perform a copy operation that serializes data for cross-process clipboard use. If you use the <xref:System.Windows.Forms.DataObject> type directly with `SetDataObject(dataObject, copy)`, you can control serialization by setting the `copy` parameter to `false`, which skips serialization and limits clipboard access to the current process only.
 
 For technical details, see the [.NET Remoting Binary Format specification](/openspecs/windows_protocols/ms-nrbf/75b9fe09-be15-475f-85b8-ae7b7558cfe5).
 

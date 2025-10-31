@@ -35,9 +35,6 @@ To determine whether the Clipboard contains data in a particular format, use one
 
 You can also use the <xref:System.Windows.Forms.Clipboard.GetDataObject%2A?displayProperty=nameWithType> method and call the methods of the returned <xref:System.Windows.Forms.IDataObject>. To determine whether a particular format is available in the returned object, for example, call the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A> method.
 
-> [!NOTE]
-> Starting with .NET 10, the `GetData` method is obsoleted in favor of `TryGetData`, and object serialization through `SetData` is no longer supported for security reasons.
-
 ::: zone-end
 
 > [!NOTE]
@@ -51,7 +48,7 @@ You can also use the <xref:System.Windows.Forms.Clipboard.GetDataObject%2A?displ
 
 1. Use the <xref:System.Windows.Forms.Clipboard.GetAudioStream%2A>, <xref:System.Windows.Forms.Clipboard.GetFileDropList%2A>, <xref:System.Windows.Forms.Clipboard.GetImage%2A>, or <xref:System.Windows.Forms.Clipboard.GetText%2A> method. Optionally, use the corresponding `Contains`*Format* methods first to determine whether data is available in a particular format.
 
-   For custom data formats, use the `TryGetData` method instead of the obsoleted `GetData` method.
+   For custom data formats, use the `TryGetData` method instead of the obsoleted `GetData` method. The `GetData` method may return a <xref:System.NotSupportedException> instance when serialization is required but not supported. When data doesn't require serialization (using `SetDataObject` with the `copy` parameter set to `false`), `GetData` can return the data but only within the same process. However, for custom data formats, it's recommended to use the JSON-based methods (`SetDataAsJson<T>()` and `TryGetData<T>()`) for better type safety and cross-process compatibility.
 
 > [!NOTE]
 > In .NET Framework, these same `Get`*Format* methods are available, but you use `GetData` instead of `TryGetData` for custom formats.
@@ -66,7 +63,7 @@ You can also use the <xref:System.Windows.Forms.Clipboard.GetDataObject%2A?displ
 1. Use the <xref:System.Windows.Forms.Clipboard.GetAudioStream%2A>, <xref:System.Windows.Forms.Clipboard.GetFileDropList%2A>, <xref:System.Windows.Forms.Clipboard.GetImage%2A>, or <xref:System.Windows.Forms.Clipboard.GetText%2A> method. Optionally, use the corresponding `Contains`*Format* methods first to determine whether data is available in a particular format.
 
 > [!NOTE]
-> In .NET (non-Framework), the `GetData` method is obsoleted in favor of `TryGetData` for custom data formats, and object serialization is no longer supported.
+> In .NET (non-Framework), the `GetData` method is obsoleted in favor of `TryGetData` for custom data formats. `GetData` may return a <xref:System.NotSupportedException> instance instead of the actual data when serialization is required but not supported.
 
 :::code language="csharp" source="./snippets/how-to-retrieve-data-from-the-clipboard/framework/csharp/form1.cs" id="RetrieveCommonFormat":::
 :::code language="vb" source="./snippets/how-to-retrieve-data-from-the-clipboard/framework/vb/form1.vb" id="RetrieveCommonFormat":::
@@ -82,7 +79,7 @@ You can also use the <xref:System.Windows.Forms.Clipboard.GetDataObject%2A?displ
    You can also use predefined format names with this method. For more information, see <xref:System.Windows.Forms.DataFormats>.
 
 > [!IMPORTANT]
-> In .NET 10 and later, `SetData` for object serialization is no longer supported due to security concerns. The examples below show how to retrieve data that may have been set by other applications or earlier .NET versions.
+> In .NET 10 and later, `SetData` for object serialization is no longer supported due to security concerns. The `GetData` method may return a <xref:System.NotSupportedException> instance instead of the actual data when serialization is required but not supported. The examples below show how to retrieve data that may have been set by other applications or earlier .NET versions.
 
 > [!NOTE]
 > In .NET Framework, you use the <xref:System.Windows.Forms.Clipboard.GetData%2A> method instead of `TryGetData`, and object serialization through `SetData` is fully supported.
@@ -104,7 +101,7 @@ The `Customer` class used in the previous snippet:
    You can also use predefined format names with the <xref:System.Windows.Forms.Clipboard.SetData%2A> method. For more information, see <xref:System.Windows.Forms.DataFormats>.
 
 > [!NOTE]
-> In .NET (non-Framework), the `GetData` method is obsoleted in favor of `TryGetData`, and object serialization through `SetData` is no longer supported for security reasons.
+> In .NET (non-Framework), the `GetData` method is obsoleted in favor of `TryGetData`. `GetData` may return a <xref:System.NotSupportedException> instance instead of the actual data when serialization is required but not supported.
 
 :::code language="csharp" source="./snippets/how-to-retrieve-data-from-the-clipboard/framework/csharp/form1.cs" id="RetrieveCustomFormat":::
 :::code language="vb" source="./snippets/how-to-retrieve-data-from-the-clipboard/framework/vb/form1.vb" id="RetrieveCustomFormat":::
