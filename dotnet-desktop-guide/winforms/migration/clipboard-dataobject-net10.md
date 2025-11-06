@@ -131,7 +131,7 @@ These methods provide automatic JSON serialization using `System.Text.Json` with
 By specifying the type name as the data format, `TryGetData<T>` can infer the format automatically:
 
 :::code language="csharp" source="./snippets/clipboard-dataobject-net10/net/csharp/SetDataAsJsonExamples.cs" id="AutomaticFormatInference" highlight="5,8":::
-:::code language="vb" source="./snippets/clipboard-dataobject-net10/net/vb/SetDataAsJsonExamples.vb" id="AutomaticFormatInference" highlight=5,9:::
+:::code language="vb" source="./snippets/clipboard-dataobject-net10/net/vb/SetDataAsJsonExamples.vb" id="AutomaticFormatInference" highlight="5,9":::
 
 ### ITypedDataObject interface
 
