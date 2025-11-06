@@ -18,7 +18,7 @@ Namespace ClipboardExamples
             Dim person As New Person With {.Name = "Alice", .Age = 25}
 
             ' Use the type name as the format
-            Clipboard.SetDataAsJson(GetType(Person).FullName, person)  ' Uses "Person" as the format
+            Clipboard.SetDataAsJson(GetType(Person).FullName, person)
 
             ' Retrieve the data and infer the format automatically
             Dim retrievedPerson As Person = Nothing
