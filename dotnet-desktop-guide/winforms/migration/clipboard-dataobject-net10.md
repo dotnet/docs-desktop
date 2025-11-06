@@ -54,13 +54,13 @@ The following code no longer works:
 :::code language="csharp" source="./snippets/clipboard-dataobject-net10/net/csharp/ObsoletePatterns.cs" id="ObsoleteCustomType":::
 :::code language="vb" source="./snippets/clipboard-dataobject-net10/net/vb/ObsoletePatterns.vb" id="ObsoleteCustomType":::
 
-#### What you might see
+**What you might see**
 
 - The `SetData()` method completes without throwing an exception.
 - The data is placed on the clipboard, but serialization fails for types that require `BinaryFormatter`.
 - Later attempts to retrieve the data with `GetData()` return a <xref:System.NotSupportedException> instance that indicates `BinaryFormatter` is required but not enabled.
 
-#### Migration guidance
+**Migration guidance**
 
 Use the new [`SetDataAsJson<T>()`](xref:System.Windows.Forms.Clipboard.SetDataAsJson``1(System.String,``0)) method or manually serialize to a `string` or `byte[]`. For details, see the [Work with custom types](#work-with-custom-types) section.
 
@@ -68,30 +68,30 @@ Use the new [`SetDataAsJson<T>()`](xref:System.Windows.Forms.Clipboard.SetDataAs
 
 The legacy `GetData()` method is obsolete in .NET 10. This method returns data successfully in most cases, but when `BinaryFormatter` is required for deserialization and isn't enabled, `GetData()` returns a <xref:System.NotSupportedException> instance that indicates `BinaryFormatter` is needed. You should migrate to the new type-safe [`TryGetData<T>()`](xref:System.Windows.Forms.Clipboard.TryGetData*) methods for better error handling and type safety.
 
-**Obsolete code to avoid:**
+The following example shows the obsolete pattern you should avoid:
 
 :::code language="csharp" source="./snippets/clipboard-dataobject-net10/net/csharp/ObsoletePatterns.cs" id="ObsoleteGetData":::
 :::code language="vb" source="./snippets/clipboard-dataobject-net10/net/vb/ObsoletePatterns.vb" id="ObsoleteGetData":::
 
-**Modern approach using TryGetData\<T>():**
+Instead, use the modern type-safe approach with `TryGetData<T>()`:
 
 :::code language="csharp" source="./snippets/clipboard-dataobject-net10/net/csharp/ModernApproach.cs" id="ModernTryGetData":::
 :::code language="vb" source="./snippets/clipboard-dataobject-net10/net/vb/ModernApproach.vb" id="ModernTryGetData":::
 
-#### Benefits of TryGetData\<T>()
+**Benefits of TryGetData\<T>()**
 
 - Type safety: No need for casting—the method returns the exact type you request.
 - Clear error handling: Returns a Boolean success indicator instead of using null or exception patterns.
 - Future-proof: Designed to work with new serialization methods and legacy data support.
 
-#### How to identify affected code
+**How to identify affected code**
 
 Look for:
 
 - Any `GetData()` calls, as the entire method is obsolete regardless of data type.
 - `DataObject.GetData()` and `IDataObject.GetData()` usage in drag-and-drop operations.
 
-#### Migration guidance
+**Migration guidance**
 
 Replace all `GetData()` usage with type-safe [`TryGetData<T>()`](xref:System.Windows.Forms.Clipboard.TryGetData*) methods. For comprehensive examples of all overloads, see the [New type-safe APIs](#new-type-safe-apis) section.
 
@@ -107,12 +107,12 @@ Replace all `GetData()` usage with type-safe [`TryGetData<T>()`](xref:System.Win
 
 The `TryGetData<T>()` family replaces the obsolete `GetData()` method. It provides type-safe retrieval and clear success or failure indication for your clipboard operations.
 
-#### Basic type-safe retrieval
+**Basic type-safe retrieval**
 
 :::code language="csharp" source="./snippets/clipboard-dataobject-net10/net/csharp/TypeSafeRetrieval.cs" id="BasicTypeSafeRetrieval":::
 :::code language="vb" source="./snippets/clipboard-dataobject-net10/net/vb/TypeSafeRetrieval.vb" id="BasicTypeSafeRetrieval":::
 
-#### Custom JSON types
+**Custom JSON types**
 
 :::code language="csharp" source="./snippets/clipboard-dataobject-net10/net/csharp/TypeSafeRetrieval.cs" id="CustomJsonTypes":::
 :::code language="vb" source="./snippets/clipboard-dataobject-net10/net/vb/TypeSafeRetrieval.vb" id="CustomJsonTypes":::
@@ -121,12 +121,12 @@ The `TryGetData<T>()` family replaces the obsolete `GetData()` method. It provid
 
 These methods provide automatic JSON serialization using `System.Text.Json` with type-safe storage.
 
-#### Specify a custom format
+**Specify a custom format**
 
 :::code language="csharp" source="./snippets/clipboard-dataobject-net10/net/csharp/SetDataAsJsonExamples.cs" id="CustomFormat":::
 :::code language="vb" source="./snippets/clipboard-dataobject-net10/net/vb/SetDataAsJsonExamples.vb" id="CustomFormat":::
 
-#### Automatic format inference
+**Automatic format inference**
 
 By specifying the type name as the data format, `TryGetData<T>` can infer the format automatically:
 
@@ -139,7 +139,7 @@ The <xref:System.Windows.Forms.ITypedDataObject> interface enables type-safe dra
 
 Starting with .NET 10, <xref:System.Windows.Forms.DataObject> (a common type in drag-and-drop scenarios) implements `ITypedDataObject`.
 
-#### Use ITypedDataObject in drag-and-drop scenarios
+**Use ITypedDataObject in drag-and-drop scenarios**
 
 :::code language="csharp" source="./snippets/clipboard-dataobject-net10/net/csharp/ITypedDataObjectExamples.cs" id="DragDropUsage":::
 :::code language="vb" source="./snippets/clipboard-dataobject-net10/net/vb/ITypedDataObjectExamples.vb" id="DragDropUsage":::
