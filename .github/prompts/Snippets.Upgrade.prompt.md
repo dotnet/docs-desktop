@@ -1,4 +1,5 @@
 ---
+mode: agent
 description: Upgrade snippets to the latest .NET and possibly migrate from .NET Framework
 ---
 

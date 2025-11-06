@@ -1,4 +1,5 @@
 ---
+mode: agent
 description: Push inline code block snippets out of articles into standalone files with proper project structure.
 ---
 
