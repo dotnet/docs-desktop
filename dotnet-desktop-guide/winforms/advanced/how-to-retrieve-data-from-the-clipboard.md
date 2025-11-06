@@ -17,6 +17,11 @@ ai-usage: ai-assisted
 
 The <xref:System.Windows.Forms.Clipboard> class provides methods that you can use to interact with the Windows operating system Clipboard feature. Many applications use the Clipboard as a temporary repository for data. For example, word processors use the Clipboard during cut-and-paste operations. The Clipboard is also useful for transferring information from one application to another.
 
+> [!NOTE]
+> All Windows-based applications share the system Clipboard. Therefore, the contents are subject to change when you switch to another application.
+>
+> The <xref:System.Windows.Forms.Clipboard> class can only be used in threads set to single thread apartment (STA) mode. To use this class, ensure that your `Main` method is marked with the <xref:System.STAThreadAttribute> attribute.
+
 Some applications store data on the Clipboard in multiple formats to increase the number of other applications that can potentially use the data. A Clipboard format is a string that identifies the format. An application that uses the identified format can retrieve the associated data on the Clipboard. The <xref:System.Windows.Forms.DataFormats> class provides predefined format names for your use. You can also use your own format names or use an object's type as its format. For information about adding data to the Clipboard, see [How to add data to the Clipboard](how-to-add-data-to-the-clipboard.md).
 
 # [.NET](#tab/dotnet)
@@ -33,11 +38,6 @@ To determine whether the Clipboard contains data in a particular format, use one
 You can also use the <xref:System.Windows.Forms.Clipboard.GetDataObject%2A?displayProperty=nameWithType> method and call the methods of the returned <xref:System.Windows.Forms.IDataObject>. To determine whether a particular format is available in the returned object, for example, call the <xref:System.Windows.Forms.IDataObject.GetDataPresent%2A> method.
 
 ---
-
-> [!NOTE]
-> All Windows-based applications share the system Clipboard. Therefore, the contents are subject to change when you switch to another application.
->
-> The <xref:System.Windows.Forms.Clipboard> class can only be used in threads set to single thread apartment (STA) mode. To use this class, ensure that your `Main` method is marked with the <xref:System.STAThreadAttribute> attribute.
 
 ## Retrieve in single format
 
