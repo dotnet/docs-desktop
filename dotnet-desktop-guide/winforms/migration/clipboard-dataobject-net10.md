@@ -117,37 +117,21 @@ The `TryGetData<T>()` family replaces the obsolete `GetData()` method. It provid
 :::code language="csharp" source="./snippets/clipboard-dataobject-net10/net/csharp/TypeSafeRetrieval.cs" id="CustomJsonTypes":::
 :::code language="vb" source="./snippets/clipboard-dataobject-net10/net/vb/TypeSafeRetrieval.vb" id="CustomJsonTypes":::
 
-#### Use a type resolver for legacy binary data (requires BinaryFormatter; not recommended)
-
-> [!WARNING]
-> Type resolvers only work when BinaryFormatter support is enabled, which isn't recommended due to security risks. For more information, see [Enable BinaryFormatter clipboard support (not recommended)](../advanced/how-to-enable-binaryformatter-clipboard-support.md).
-
-Type resolvers let you handle legacy binary data by mapping type names to actual types during deserialization.
-
-:::code language="csharp" source="./snippets/clipboard-dataobject-net10/net/csharp/TypeResolver.cs" id="TypeResolverExample":::
-:::code language="vb" source="./snippets/clipboard-dataobject-net10/net/vb/TypeResolver.vb" id="TypeResolverExample":::
-
-**Important security considerations for type resolvers:**
-
-- Always use an explicit allowlist of permitted types.
-- Never allow dynamic type loading or assembly resolution.
-- Validate type names before mapping to actual types.
-- Throw exceptions for any unauthorized or unknown types.
-- Use this approach only as a temporary bridge during migration.
-
 ### SetDataAsJson\<T>() methods
 
 These methods provide automatic JSON serialization using `System.Text.Json` with type-safe storage.
-
-#### Automatic format inference
-
-:::code language="csharp" source="./snippets/clipboard-dataobject-net10/net/csharp/SetDataAsJsonExamples.cs" id="AutomaticFormatInference":::
-:::code language="vb" source="./snippets/clipboard-dataobject-net10/net/vb/SetDataAsJsonExamples.vb" id="AutomaticFormatInference":::
 
 #### Specify a custom format
 
 :::code language="csharp" source="./snippets/clipboard-dataobject-net10/net/csharp/SetDataAsJsonExamples.cs" id="CustomFormat":::
 :::code language="vb" source="./snippets/clipboard-dataobject-net10/net/vb/SetDataAsJsonExamples.vb" id="CustomFormat":::
+
+#### Automatic format inference
+
+By specifying the type name as the data format, `TryGetData<T>` can infer the format automatically:
+
+:::code language="csharp" source="./snippets/clipboard-dataobject-net10/net/csharp/SetDataAsJsonExamples.cs" id="AutomaticFormatInference" highlight="5,8":::
+:::code language="vb" source="./snippets/clipboard-dataobject-net10/net/vb/SetDataAsJsonExamples.vb" id="AutomaticFormatInference" highlight=5,9:::
 
 ### ITypedDataObject interface
 
