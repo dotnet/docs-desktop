@@ -1,4 +1,4 @@
-Imports System
+﻿Imports System
 Imports System.Windows.Forms
 
 Namespace ClipboardExamples
@@ -17,12 +17,12 @@ Namespace ClipboardExamples
         Public Shared Sub AutomaticFormatInferenceExample()
             Dim person As New Person With {.Name = "Alice", .Age = 25}
 
-            ' The format is automatically inferred from the type name
-            Clipboard.SetDataAsJson("Person", person)  ' Uses "Person" as the format
+            ' Use the type name as the format
+            Clipboard.SetDataAsJson(GetType(Person).FullName, person)  ' Uses "Person" as the format
 
-            ' Retrieve the data later
+            ' Retrieve the data and infer the format automatically
             Dim retrievedPerson As Person = Nothing
-            If Clipboard.TryGetData("Person", retrievedPerson) Then
+            If Clipboard.TryGetData(retrievedPerson) Then
                 Console.WriteLine($"Retrieved: {retrievedPerson.Name}")
             End If
         End Sub
@@ -34,10 +34,6 @@ Namespace ClipboardExamples
 
             ' Use a custom format for better organization
             Clipboard.SetDataAsJson("MyApp.Settings", settings)
-
-            ' Store the same data in multiple formats
-            Clipboard.SetDataAsJson("Config.V1", settings)
-            Clipboard.SetDataAsJson("AppConfig", settings)
         End Sub
         ' </CustomFormat>
     End Class

@@ -3,7 +3,6 @@ title: "How to add Data to the Clipboard"
 ms.date: 10/31/2025
 ms.service: dotnet-desktop
 ms.update-cycle: 365-days
-zone_pivot_groups: desktop-version
 dev_langs:
   - "csharp"
   - "vb"
@@ -31,48 +30,44 @@ To add data to the Clipboard in one or multiple formats, use the <xref:System.Wi
 
 To add data to the Clipboard in a single, common format, use the specific method for that format, such as <xref:System.Windows.Forms.Clipboard.SetText%2A> for text.
 
-::: zone pivot="dotnet"
+# [.NET](#tab/dotnet)
 
 > [!IMPORTANT]
 > Custom objects must be serializable to JSON for them to be put on the Clipboard. Use the new type-safe methods like <xref:System.Windows.Forms.Clipboard.SetDataAsJson%2A> which automatically handle JSON serialization. The legacy `SetData()` method no longer works with custom objects starting with .NET 9 due to the removal of `BinaryFormatter`.
 
-::: zone-end
-
-::: zone pivot="dotnetframework"
+# [.NET Framework](#tab/dotnetframework)
 
 > [!IMPORTANT]
 > An object must be serializable for it to be put on the Clipboard. To make a type serializable, mark it with the <xref:System.SerializableAttribute> attribute. If you pass a non-serializable object to a Clipboard method, the method fails without throwing an exception. For more information about serialization, see <xref:System.Runtime.Serialization>.
 
-::: zone-end
+---
 
-### To add data to the Clipboard in a single, common format
+## Add data in a single format
 
-1. Use the <xref:System.Windows.Forms.Clipboard.SetAudio%2A>, <xref:System.Windows.Forms.Clipboard.SetFileDropList%2A>, <xref:System.Windows.Forms.Clipboard.SetImage%2A>, or <xref:System.Windows.Forms.Clipboard.SetText%2A> method.
+Use the <xref:System.Windows.Forms.Clipboard.SetAudio%2A>, <xref:System.Windows.Forms.Clipboard.SetFileDropList%2A>, <xref:System.Windows.Forms.Clipboard.SetImage%2A>, or <xref:System.Windows.Forms.Clipboard.SetText%2A> method.
 
-::: zone pivot="dotnet"
+# [.NET](#tab/dotnet)
 
 :::code language="csharp" source="./snippets/how-to-add-data-to-the-clipboard/net/csharp/Form1.cs" id="SetTextExample":::
 :::code language="vb" source="./snippets/how-to-add-data-to-the-clipboard/net/vb/Form1.vb" id="SetTextExample":::
 
-::: zone-end
-
-::: zone pivot="dotnetframework"
+# [.NET Framework](#tab/dotnetframework)
 
 :::code language="csharp" source="./snippets/how-to-add-data-to-the-clipboard/framework/csharp/ClipboardOperations.cs" id="SetTextExample":::
 :::code language="vb" source="./snippets/how-to-add-data-to-the-clipboard/framework/vb/ClipboardOperations.vb" id="SetTextExample":::
 
-::: zone-end
+---
 
-### To add data to the Clipboard in a custom format
+## Add data in a custom format
 
-::: zone pivot="dotnet"
+# [.NET](#tab/dotnet)
 
-1. Use the <xref:System.Windows.Forms.Clipboard.SetDataAsJson``1(System.String,``0)?displayProperty=nameWithType> method with a custom format name and your object.
+Use the <xref:System.Windows.Forms.Clipboard.SetDataAsJson``1(System.String,``0)?displayProperty=nameWithType> method with a custom format name and your object.
 
-    The `SetDataAsJson<T>()` method automatically serializes your custom objects using `System.Text.Json`. This is the recommended approach in .NET 10 and later for storing custom types on the clipboard, as it provides type safety and security advantages over the legacy `SetData()` method.
+The `SetDataAsJson<T>()` method automatically serializes your custom objects using `System.Text.Json`. This is the recommended approach in .NET 10 and later for storing custom types on the clipboard, as it provides type safety and security advantages over the legacy `SetData()` method.
 
-    > [!IMPORTANT]
-    > The legacy <xref:System.Windows.Forms.Clipboard.SetData%2A> method no longer works with custom objects in .NET 9 and later due to the removal of `BinaryFormatter`. Use `SetDataAsJson<T>()` instead for custom types.
+> [!IMPORTANT]
+> The legacy <xref:System.Windows.Forms.Clipboard.SetData%2A> method no longer works with custom objects in .NET 9 and later due to the removal of `BinaryFormatter`. Use `SetDataAsJson<T>()` instead for custom types.
 
 :::code language="csharp" source="./snippets/how-to-add-data-to-the-clipboard/net/csharp/Form1.cs" id="CustomFormatExample":::
 :::code language="vb" source="./snippets/how-to-add-data-to-the-clipboard/net/vb/Form1.vb" id="CustomFormatExample":::
@@ -82,13 +77,11 @@ The `Customer` class used in the previous snippet:
 :::code language="csharp" source="./snippets/how-to-add-data-to-the-clipboard/net/csharp/Form1.cs" id="CustomerClass":::
 :::code language="vb" source="./snippets/how-to-add-data-to-the-clipboard/net/vb/Form1.vb" id="CustomerClass":::
 
-::: zone-end
+# [.NET Framework](#tab/dotnetframework)
 
-::: zone pivot="dotnetframework"
+Use the <xref:System.Windows.Forms.Clipboard.SetData%2A> method with a custom format name.
 
-1. Use the <xref:System.Windows.Forms.Clipboard.SetData%2A> method with a custom format name.
-
-    You can also use predefined format names with the <xref:System.Windows.Forms.Clipboard.SetData%2A> method. For more information, see <xref:System.Windows.Forms.DataFormats>.
+You can also use predefined format names with the <xref:System.Windows.Forms.Clipboard.SetData%2A> method. For more information, see <xref:System.Windows.Forms.DataFormats>.
 
 :::code language="csharp" source="./snippets/how-to-add-data-to-the-clipboard/framework/csharp/ClipboardOperations.cs" id="CustomFormatExample":::
 :::code language="vb" source="./snippets/how-to-add-data-to-the-clipboard/framework/vb/ClipboardOperations.vb" id="CustomFormatExample":::
@@ -98,13 +91,13 @@ The `Customer` class used in the previous snippet:
 :::code language="csharp" source="./snippets/how-to-add-data-to-the-clipboard/framework/csharp/ClipboardOperations.cs" id="CustomerClass":::
 :::code language="vb" source="./snippets/how-to-add-data-to-the-clipboard/framework/vb/ClipboardOperations.vb" id="CustomerClass":::
 
-::: zone-end
+---
 
-### To add data to the Clipboard in multiple formats
+## Add data in multiple formats
 
-1. Use the <xref:System.Windows.Forms.Clipboard.SetDataObject%2A?displayProperty=nameWithType> method and pass in a <xref:System.Windows.Forms.DataObject> that contains your data.
+Use the <xref:System.Windows.Forms.Clipboard.SetDataObject%2A?displayProperty=nameWithType> method and pass in a <xref:System.Windows.Forms.DataObject> that contains your data.
 
-::: zone pivot="dotnet"
+# [.NET](#tab/dotnet)
 
 :::code language="csharp" source="./snippets/how-to-add-data-to-the-clipboard/net/csharp/Form1.cs" id="MultipleFormatsExample":::
 :::code language="vb" source="./snippets/how-to-add-data-to-the-clipboard/net/vb/Form1.vb" id="MultipleFormatsExample":::
@@ -114,9 +107,7 @@ The `Customer` class used in the previous snippet:
 :::code language="csharp" source="./snippets/how-to-add-data-to-the-clipboard/net/csharp/Form1.cs" id="CustomerClass":::
 :::code language="vb" source="./snippets/how-to-add-data-to-the-clipboard/net/vb/Form1.vb" id="CustomerClass":::
 
-::: zone-end
-
-::: zone pivot="dotnetframework"
+# [.NET Framework](#tab/dotnetframework)
 
 :::code language="csharp" source="./snippets/how-to-add-data-to-the-clipboard/framework/csharp/ClipboardOperations.cs" id="MultipleFormatsExample":::
 :::code language="vb" source="./snippets/how-to-add-data-to-the-clipboard/framework/vb/ClipboardOperations.vb" id="MultipleFormatsExample":::
@@ -126,7 +117,7 @@ The `Customer` class used in the previous snippet:
 :::code language="csharp" source="./snippets/how-to-add-data-to-the-clipboard/framework/csharp/ClipboardOperations.cs" id="CustomerClass":::
 :::code language="vb" source="./snippets/how-to-add-data-to-the-clipboard/framework/vb/ClipboardOperations.vb" id="CustomerClass":::
 
-::: zone-end
+---
 
 ## See also
 

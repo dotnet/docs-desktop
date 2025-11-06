@@ -5,7 +5,7 @@ author: adegeo
 ms.author: adegeo
 ms.service: dotnet-desktop
 ms.topic: how-to
-ms.date: 10/02/2025
+ms.date: 11/05/2025
 dev_langs:
   - "csharp"
   - "vb"
@@ -23,6 +23,8 @@ ai-usage: ai-assisted
 This article shows how to configure limited `BinaryFormatter` support for Windows Forms clipboard operations in .NET 10. While `BinaryFormatter` was removed from the runtime in .NET 9 due to security vulnerabilities, restore limited functionality through explicit configuration for legacy applications that need time to migrate.
 
 For complete migration guidance to the new type-safe APIs, see [Windows Forms clipboard and DataObject changes in .NET 10](../migration/clipboard-dataobject-net10.md).
+
+[!INCLUDE [net-only](../includes/net-only.md)]
 
 ## Prerequisites
 

@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Windows.Forms;
 
 namespace ClipboardExamples
@@ -22,11 +22,11 @@ namespace ClipboardExamples
         {
             var person = new Person { Name = "Alice", Age = 25 };
 
-            // The format is automatically inferred from the type name
-            Clipboard.SetDataAsJson("Person", person);  // Uses "Person" as the format
+            // Use the type name as the format
+            Clipboard.SetDataAsJson(typeof(Person).FullName, person);
 
-            // Retrieve the data later
-            if (Clipboard.TryGetData("Person", out Person retrievedPerson))
+            // Retrieve the data and infer the format automatically
+            if (Clipboard.TryGetData(out Person retrievedPerson))
             {
                 Console.WriteLine($"Retrieved: {retrievedPerson.Name}");
             }
@@ -40,10 +40,6 @@ namespace ClipboardExamples
 
             // Use a custom format for better organization
             Clipboard.SetDataAsJson("MyApp.Settings", settings);
-
-            // Store the same data in multiple formats
-            Clipboard.SetDataAsJson("Config.V1", settings);
-            Clipboard.SetDataAsJson("AppConfig", settings);
         }
         // </CustomFormat>
     }
