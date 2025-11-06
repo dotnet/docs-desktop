@@ -1,0 +1,11 @@
+### YamlMime:ZonePivotGroups
+
+groups:
+  - id: desktop-version
+    title: .NET Version
+    prompt: Choose your .NET version
+    pivots:
+      - id: dotnet
+        title: .NET
+      - id: dotnetframework
+        title: .NET Framework
