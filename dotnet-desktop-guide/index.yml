@@ -9,7 +9,7 @@ metadata:
   ms.topic: landing-page
   author: adegeo
   ms.author: adegeo
-  ms.date: 05/05/2025
+  ms.date: 11/07/2025
   ms.service: dotnet-desktop
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
@@ -29,7 +29,7 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: Universal Windows Apps
-      url: /uwp
+    - text: WinUI
+      url: /windows/apps/winui
     - text: .NET Multi-platform App UI (.NET MAUI)
       url: /dotnet/maui
