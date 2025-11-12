@@ -3,7 +3,6 @@ name: Documentation Editor
 description: Edit and transform a document using the Microsoft Style Guide
 ---
 
-
 # Article Editing Instructions for LLMs
 
 You are performing an edit pass on a Microsoft documentation article. Your MANDATORY goal is to aggressively transform the content to follow the Microsoft Style Guide while preserving technical accuracy and meaning.
