@@ -16,7 +16,7 @@ Namespace ClipboardExamples
             Dim person As New Person With {.Name = "John", .Age = 30}
             Clipboard.SetData("MyApp.Person", person)  ' No data is stored
 
-            ' Later attempts to retrieve the data return null
+            ' Later attempts to retrieve the data return a NotSupportedException instance
             Dim data As Object = Clipboard.GetData("MyApp.Person")
         End Sub
         ' </ObsoleteCustomType>
@@ -26,7 +26,7 @@ Namespace ClipboardExamples
             ' Don't use - GetData() is obsolete in .NET 10
             Dim data As Object = Clipboard.GetData("MyApp.Person")  ' Obsolete method
 
-            ' Always returns null on a custom object type
+            ' Returns a NotSupportedException instance for a custom object type
             If data IsNot Nothing Then
                 Dim person As Person = CType(data, Person)
                 Console.WriteLine($"Processing person: {person.Name}, Age: {person.Age}")
