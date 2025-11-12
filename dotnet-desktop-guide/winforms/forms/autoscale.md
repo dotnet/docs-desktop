@@ -25,7 +25,7 @@ Windows Forms handles DPI scaling automatically when you configure DPI awareness
 
 ## Configure DPI awareness
 
-For modern .NET applications (. NET 6 and later), configure DPI awareness in your project file using the `ApplicationHighDpiMode` property. This is the recommended approach because Visual Studio's designer uses these settings when you design forms.
+For modern .NET applications (.NET 6 and later), configure DPI awareness in your project file using the `ApplicationHighDpiMode` property. This is the recommended approach because Visual Studio's designer uses these settings when you design forms.
 
 Add the following property to your project file:
 
