@@ -20,7 +20,7 @@ namespace ClipboardExamples
             Person person = new Person { Name = "John", Age = 30 };
             Clipboard.SetData("MyApp.Person", person);  // No data is stored
 
-            // Later attempts to retrieve the data return null
+            // Later attempts to retrieve the data return a NotSupportedException instance
             object data = Clipboard.GetData("MyApp.Person");
         }
         // </ObsoleteCustomType>
@@ -31,7 +31,7 @@ namespace ClipboardExamples
             // Don't use - GetData() is obsolete in .NET 10
             object data = Clipboard.GetData("MyApp.Person");  // Obsolete method
 
-            // Always returns null on a custom object type
+            // Returns a NotSupportedException instance for a custom object type
             if (data != null)
             {
                 Person person = (Person)data;
