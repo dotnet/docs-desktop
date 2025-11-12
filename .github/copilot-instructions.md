@@ -72,7 +72,7 @@ Use tabbed content when the differences are code-based:
 ```
 
 ### Use Pivots
-Use zone pivots when there are conceptual differences that can't easily be explained with tabs and a note. Pivots allow for more comprehensive explanations of different approaches or methodologies.
+Use zone pivots when there are many conceptual differences that can't easily be explained with tabs and a note. Pivots allow for more comprehensive explanations of different approaches or methodologies.
 
 To use zone pivots:
 

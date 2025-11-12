@@ -1,7 +1,6 @@
 ---
-model: Claude Sonnet 4 (copilot)
-mode: agent
-description: "Performs comprehensive editing pass following Microsoft Style Guide"
+name: Documentation Editor
+description: Edit and transform a document using the Microsoft Style Guide
 ---
 
 # Article Editing Instructions for LLMs
