@@ -66,7 +66,7 @@ You need the following components to complete this walkthrough:
 
 3. In the XAML editor, add the following <xref:System.Windows.Controls.DataGrid> tag between the `<Grid>` and `</Grid>` tags to add a <xref:System.Windows.Controls.DataGrid> named `dataGrid1`.
 
-     [!code-xaml[DataGrid_SQL_EF_Walkthrough#3](~/samples/snippets/csharp/VS_Snippets_Wpf/DataGrid_SQL_EF_Walkthrough/CS/MainWindow.xaml#3)]
+     :::code language="xaml" source="./snippets/walkthrough-display-data-from-a-sql-server-database-in-a-datagrid-control/framework/csharp/MainWindow.xaml" id="DataGridControl":::
 
      ![Window with DataGrid](./media/datagrid-sql-ef-step6.png "DataGrid_SQL_EF_Step6")
 
@@ -79,14 +79,14 @@ You need the following components to complete this walkthrough:
     > [!NOTE]
     > If you are using Visual Basic, in the first line of MainWindow.xaml, replace `x:Class="DataGridSQLExample.MainWindow"` with `x:Class="MainWindow"`.
 
-     [!code-xaml[DataGrid_SQL_EF_Walkthrough#1](~/samples/snippets/csharp/VS_Snippets_Wpf/DataGrid_SQL_EF_Walkthrough/CS/MainWindow.xaml#1)]
+     :::code language="xaml" source="./snippets/walkthrough-display-data-from-a-sql-server-database-in-a-datagrid-control/framework/csharp/MainWindow.xaml" id="MainWindowXaml":::
 
 6. Open the code-behind file (MainWindow.xaml.vb or MainWindow.xaml.cs) for the <xref:System.Windows.Window>.
 
 7. Add the following code to retrieve only specific values from the joined tables and set the <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> property of the <xref:System.Windows.Controls.DataGrid> to the results of the query.
 
-     [!code-csharp[DataGrid_SQL_EF_Walkthrough#2](~/samples/snippets/csharp/VS_Snippets_Wpf/DataGrid_SQL_EF_Walkthrough/CS/MainWindow.xaml.cs#2)]
-     [!code-vb[DataGrid_SQL_EF_Walkthrough#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DataGrid_SQL_EF_Walkthrough/VB/MainWindow.xaml.vb#2)]
+     :::code language="csharp" source="./snippets/walkthrough-display-data-from-a-sql-server-database-in-a-datagrid-control/framework/csharp/MainWindow.xaml.cs" id="LoadDataFromDatabase":::
+     :::code language="vb" source="./snippets/walkthrough-display-data-from-a-sql-server-database-in-a-datagrid-control/framework/vb/MainWindow.xaml.vb" id="LoadDataFromDatabase":::
 
 8. Run the example.
 
