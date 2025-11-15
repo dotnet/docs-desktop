@@ -1,14 +1,12 @@
-﻿' <snippet2>
-Imports System.Data.Objects
+' <LoadDataFromDatabase>
+Imports System.Linq
 
 Class MainWindow
     Dim dataEntities As AdventureWorksLT2008Entities = New AdventureWorksLT2008Entities
 
     Private Sub Window_Loaded(ByVal sender As System.Object, ByVal e As System.Windows.RoutedEventArgs) Handles MyBase.Loaded
-        Dim products As ObjectQuery(Of Product) = dataEntities.Products
-
         Dim query = _
-            From product In products _
+            From product In dataEntities.Products _
             Where product.Color = "Red" _
             Order By product.ListPrice _
             Select product.Name, product.Color, CategoryName = product.ProductCategory.Name, product.ListPrice
@@ -16,4 +14,4 @@ Class MainWindow
         dataGrid1.ItemsSource = query.ToList()
     End Sub
 End Class
-' </snippet2>
+' </LoadDataFromDatabase>

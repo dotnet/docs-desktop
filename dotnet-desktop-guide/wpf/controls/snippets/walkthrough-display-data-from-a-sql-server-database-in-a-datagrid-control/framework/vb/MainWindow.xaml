@@ -1,0 +1,13 @@
+<!-- <MainWindowXaml> -->
+<Window x:Class="MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="MainWindow" Height="350" Width="450"
+    Loaded="Window_Loaded">
+    <Grid>
+        <!-- <DataGridControl> -->
+        <DataGrid Name="dataGrid1" />
+        <!-- </DataGridControl> -->
+    </Grid>
+</Window>
+<!-- </MainWindowXaml> -->
