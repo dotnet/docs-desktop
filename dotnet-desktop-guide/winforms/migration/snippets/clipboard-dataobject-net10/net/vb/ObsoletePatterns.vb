@@ -27,7 +27,7 @@ Namespace ClipboardExamples
             Dim data As Object = Clipboard.GetData("MyApp.Person")  ' Obsolete method
 
             ' Returns a NotSupportedException instance for a custom object type
-            If data IsNot Nothing Then
+            If TypeOf data Is Person Then
                 Dim person As Person = CType(data, Person)
                 Console.WriteLine($"Processing person: {person.Name}, Age: {person.Age}")
             End If

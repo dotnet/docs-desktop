@@ -32,9 +32,8 @@ namespace ClipboardExamples
             object data = Clipboard.GetData("MyApp.Person");  // Obsolete method
 
             // Returns a NotSupportedException instance for a custom object type
-            if (data != null)
+            if (data is Person person)
             {
-                Person person = (Person)data;
                 Console.WriteLine($"Processing person: {person.Name}, Age: {person.Age}");
             }
         }
