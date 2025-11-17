@@ -1,5 +1,5 @@
 ---
-name: Documentation Editor
+name: DocsEditor
 description: Edit and transform a document using the Microsoft Style Guide
 ---
 
