@@ -28,7 +28,7 @@ Namespace ClipboardExamples
 
             ' Returns a NotSupportedException instance for a custom object type
             If TypeOf data Is Person Then
-                Dim person As Person = CType(data, Person)
+                Dim person As Person = DirectCast(data, Person)
                 Console.WriteLine($"Processing person: {person.Name}, Age: {person.Age}")
             End If
         End Sub
