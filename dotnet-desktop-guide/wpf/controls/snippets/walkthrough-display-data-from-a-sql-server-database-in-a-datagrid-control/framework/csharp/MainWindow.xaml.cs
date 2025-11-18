@@ -1,5 +1,4 @@
-// <LoadDataFromDatabase>
-using System.Data.Entity.Core.Objects;
+﻿// <LoadDataFromDatabase>
 using System.Linq;
 using System.Windows;
 
