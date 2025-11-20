@@ -1,5 +1,4 @@
-﻿// <snippet2>
-using System.Data.Entity.Core.Objects;
+﻿// <LoadDataFromDatabase>
 using System.Linq;
 using System.Windows;
 
@@ -20,13 +19,13 @@ namespace DataGridSQLExample
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             var query =
-            from product in dataEntities.Products
-            where product.Color == "Red"
-            orderby product.ListPrice
-            select new { product.Name, product.Color, CategoryName = product.ProductCategory.Name, product.ListPrice };
+                from product in dataEntities.Products
+                where product.Color == "Red"
+                orderby product.ListPrice
+                select new { product.Name, product.Color, CategoryName = product.ProductCategory.Name, product.ListPrice };
 
             dataGrid1.ItemsSource = query.ToList();
         }
     }
 }
-// </snippet2>
+// </LoadDataFromDatabase>
