@@ -1,7 +1,7 @@
 ---
 title: "Create a new app with Visual Studio tutorial"
-description: Follow this tutorial to learn how to create a new Windows Forms app for .NET with Visual Studio 2022.
-ms.date: 04/02/2025
+description: Learn how to create a Windows Forms app with Visual Studio 2026 in this step-by-step tutorial. Start building your first app today!
+ms.date: 12/03/2025
 ms.service: dotnet-desktop
 ms.update-cycle: 365-days
 ms.topic: tutorial
@@ -26,9 +26,9 @@ In this tutorial, you:
 
 ## Prerequisites
 
-- [Visual Studio 2022 version 17.12 or later versions](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link&0utm_content=download+vs2022+desktopguide+winforms)
-  - Select the [.NET desktop development workload](/visualstudio/install/modify-visual-studio?view=vs-2022&preserve-view=true#modify-workloads)
-  - Select the [.NET 9 individual component](/visualstudio/install/modify-visual-studio?view=vs-2022&preserve-view=true#modify-individual-components)
+- [Visual Studio 2026](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link&0utm_content=download+vs2026+desktopguide+winforms)
+  - Select the [.NET desktop development workload](/visualstudio/install/modify-visual-studio?view=visualstudio&preserve-view=true#change-workloads-or-individual-components)
+  - Select the [.NET 10 individual component](/visualstudio/install/modify-visual-studio?view=visualstudio&preserve-view=true#change-workloads-or-individual-components)
 
 ## Create a Windows Forms app
 
@@ -37,7 +37,7 @@ The first step to creating a new app is opening Visual Studio and generating the
 01. Open Visual Studio.
 01. Select **Create a new project**.
 
-    :::image type="content" source="media/create-app-visual-studio/vs-start-1-intro.png" alt-text="A screenshot of the start dialog from Visual Studio 2022. The 'create a new project' button is highlighted with a red box.":::
+    :::image type="content" source="media/create-app-visual-studio/vs-start-1-intro.png" alt-text="A screenshot of the start dialog from Visual Studio 2026. The 'create a new project' button is highlighted with a red box.":::
 
 01. In the **Search for templates** box, type **winforms**, and wait for the search results to appear.
 01. In the **code language** dropdown, choose **C#** or **Visual Basic**.
@@ -48,25 +48,36 @@ The first step to creating a new app is opening Visual Studio and generating the
 
     The following image shows both C# and Visual Basic .NET project templates. If you applied the **code language** filter, the corresponding template is listed.
 
-    :::image type="content" source="media/create-app-visual-studio/vs-start-2-templates.png" alt-text="The term 'winforms' is in a search box and is highlighted with a red box. Arrows from the red box point to two templates, C# and Visual Basic. The templates are also highlighted with a red box. From those red boxes, arrows point down to the 'Next' button which is highlighted with a red box.":::
+    :::image type="content" source="media/create-app-visual-studio/vs-start-2-templates.png" alt-text="Screenshot of Visual Studio's 'Create a new project' dialog with 'winforms' in the search box and Windows Forms App templates highlighted.":::
 
 01. In the **Configure your new project** window, set the **Project name** to _Names_ and select **Next**.
 
     You can also save your project to a different folder by adjusting the **Location** path.
 
-    :::image type="content" source="media/create-app-visual-studio/vs-start-3-name.png" alt-text="A screenshot of the 'configure your new project' dialog from Visual Studio 2022. The 'Project name' textbox has the word 'Names' in it and is highlighted with a red box. The 'Next' button is also highlighted with a red box.":::
+    :::image type="content" source="media/create-app-visual-studio/vs-start-3-name.png" alt-text="A screenshot of the 'configure your new project' dialog from Visual Studio 2026. The 'Project name' textbox has the word 'Names' in it and is highlighted with a red box. The 'Next' button is also highlighted with a red box.":::
 
 01. Finally, in the **Additional information** window, select **.NET 9.0 (Standard Term Support)** for the **Framework** setting, and then select **Create**.
 
-    :::image type="content" source="media/create-app-visual-studio/netdesktop-9.0/vs-start-4-framework.png" alt-text="A screenshot of the 'Additional information' dialog from Visual Studio 2022. The 'Framework' dropdown box has '.NET 9.0 (Standard Term Support)' selected and highlighted with a red box. The 'Create' button is also highlighted with a red box.":::
+    :::image type="content" source="media/create-app-visual-studio/vs-start-4-framework.png" alt-text="A screenshot of the 'Additional information' dialog from Visual Studio 2026. The 'Framework' dropdown box has '.NET 10 (Long Term Support)' selected and highlighted with a red box. The 'Create' button is also highlighted with a red box.":::
 
 Once the app is generated, Visual Studio should open the designer window for the default form, _Form1_. If the form designer isn't visible, double-click on the form in the **Solution Explorer** window to open the designer window.
+
+### Enable the Toolbox and Properties windows
+
+By default, Visual Studio doesn't open the Toolbox and Properties windows. Visual Studio does remember that you opened these windows and will keep them open in the future.
+
+To open the windows:
+
+01. Select the **View** > **Toolbox** menu item.
+01. Select the **View** > **Properties Window** menu item.
+
+:::image type="content" source="media/create-app-visual-studio/menu-toolbox.png" alt-text="The view menu with both the toolbox item and properties window item highlighted in a Visual Studio 2026 Windows Forms project.":::
 
 ### Important parts of Visual Studio
 
 Support for Windows Forms in Visual Studio has four important components that you interact with as you create an app:
 
-:::image type="content" source="media/create-app-visual-studio/vs-main-window.png" alt-text="The important components of Visual Studio 2022 you should know when creating a Windows Forms project for .NET.":::
+:::image type="content" source="media/create-app-visual-studio/vs-main-window.png" alt-text="The important components of Visual Studio 2026 you should know when creating a Windows Forms project for .NET.":::
 
 01. Solution Explorer
 
@@ -84,11 +95,6 @@ Support for Windows Forms in Visual Studio has four important components that yo
 
     The toolbox contains all of the controls you can add to a form. To add a control to the current form, double-click a control or drag-and-drop the control.
 
-> [!TIP]
-> If the toolbox isn't visible, you can display it through the **View** > **Toolbox** menu item.
->
-> :::image type="content" source="media/create-app-visual-studio/menu-toolbox.png" alt-text="The view menu with the toolbox item highlighted in a Visual Studio 2022 Windows Forms project.":::
-
 ## Add controls to the form
 
 With the _Form1_ form designer open, use the **Toolbox** window to add the following controls to the form by dragging them from the toolbox and dropping them on the form:
@@ -100,7 +106,7 @@ With the _Form1_ form designer open, use the **Toolbox** window to add the follo
 
 Position and size the controls according to the following image:
 
-:::image type="content" source="media/create-app-visual-studio/vs-form-preview.png" alt-text="Visual Studio 2022 designer with the form open for Windows Forms for .NET. There's a listbox to for storing names, a textbox to contain a name, and a button add the name.":::
+:::image type="content" source="media/create-app-visual-studio/vs-form-preview.png" alt-text="Visual Studio 2026 designer with the form open for Windows Forms for .NET. There's a listbox to for storing names, a textbox to contain a name, and a button add the name.":::
 
 You can either move and resize the controls with the mouse to match the previous image, or use the following table to configure each control. To configure a control, select it in the designer, then set the appropriate setting in the **Properties** window. When configuring the form, select the form's title bar.
 
@@ -128,7 +134,7 @@ You can either move and resize the controls with the mouse to match the previous
 Now that the form has all of its controls laid out, the next step is to add event handlers to respond to user input. Go to the form designer and perform the following steps:
 
 01. Select the **Add Name** button control on the form.
-01. In the **Properties** window, select the the events icon :::image type="icon" source="media/create-app-visual-studio/icon-events.png" border="false"::: to list the events of the button.
+01. In the **Properties** window, select the events icon :::image type="icon" source="media/create-app-visual-studio/icon-events.png" alt-text="Events icon from Visual Studio." border="false"::: to list the events of the button.
 01. Find the **Click** event and double-click it to generate an event handler.
 
     This action adds the following code to the form:
@@ -158,7 +164,7 @@ Now that the form has all of its controls laid out, the next step is to add even
 
 Now that the event is handled, run the app by pressing the <kbd>F5</kbd> key or by selecting **Debug** > **Start Debugging** from the menu. When the app starts, the form is displayed and you can enter a name in the textbox and select the button.
 
-:::image type="content" source="media/create-app-visual-studio/app-running.png" alt-text="Running a Windows Forms for .NET app in Visual Studio 2022.":::
+:::image type="content" source="media/create-app-visual-studio/app-running.png" alt-text="Running a Windows Forms for .NET app in Visual Studio 2026.":::
 
 ## Related content
 
