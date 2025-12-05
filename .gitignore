@@ -43,6 +43,7 @@ ehthumbs_vista.db
 [Bb]in/
 [Oo]bj/
 *.sln
+*.slnx
 *.user
 
 # C++
