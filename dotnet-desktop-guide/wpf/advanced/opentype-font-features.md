@@ -35,8 +35,6 @@ The OpenType font format addresses the following developer challenges:
 
 - Broader support for advanced typographic control.
 
-
-
 For details of the OpenType font format, see the [OpenType specification](/typography/opentype/spec/).
 
 ### Advanced Typographic Extensions
