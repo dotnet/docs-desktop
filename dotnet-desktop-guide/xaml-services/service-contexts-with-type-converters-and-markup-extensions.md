@@ -1,7 +1,7 @@
 ---
 title: "Service Contexts Available to Type Converters and Markup Extensions"
 description: Learn about the service contexts available to type converters and markup extensions when using .NET XAML Services.
-ms.date: "03/30/2017"
+ms.date: 12/16/2025
 helpviewer_keywords:
   - "XAML [XAML Services], type converter services how-to"
 ms.assetid: b4dad00f-03da-4579-a4e9-d8d72d2ccbce

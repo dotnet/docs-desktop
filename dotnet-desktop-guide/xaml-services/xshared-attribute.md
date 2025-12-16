@@ -1,7 +1,7 @@
 ---
 title: "x:Shared Attribute"
 description: "Describes the x:Shared attribute and how it modifies the WPF resource-retrieval behavior."
-ms.date: "03/30/2017"
+ms.date: 12/16/2025
 helpviewer_keywords:
   - "XAML [XAML Services], x:Shared attribute"
   - "x:Shared attribute [XAML Services]"

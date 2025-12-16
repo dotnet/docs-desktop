@@ -1,7 +1,7 @@
 ---
 title: "Type Converters for XAML Overview"
 description: "Type converters provide logic for an object writer that converts a string value in XAML markup into particular objects in an object graph."
-ms.date: "03/30/2017"
+ms.date: 12/16/2025
 helpviewer_keywords:
   - "XAML [XAML Services], type converters"
   - "XAML [XAML Services], TypeConverter"

@@ -1,7 +1,7 @@
 ---
 title: "Understanding XAML Node Stream Structures and Concepts"
 description: Learn about how the XAML readers and XAML writers as implemented in .NET XAML Services are based on the design concept of a XAML node stream.
-ms.date: "03/30/2017"
+ms.date: 12/16/2025
 helpviewer_keywords:
   - "XAML node streams [XAML Services]"
   - "nodes [XAML Services], XAML node stream"
