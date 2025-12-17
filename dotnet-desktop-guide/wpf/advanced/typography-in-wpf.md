@@ -34,7 +34,7 @@ In addition, animated text, whether by character or glyph, takes full advantage 
 
 The OpenType font format is an extension of the TrueType® font format. The OpenType font format was developed jointly by Microsoft and Adobe, and provides a rich assortment of advanced typographic features. The <xref:System.Windows.Documents.Typography> object exposes many of the advanced features of OpenType fonts, such as stylistic alternates and swashes. For more information, see [OpenType Font Features](opentype-font-features.md).
 
-The Pericles OpenType font contains additional glyphs that provide stylistic alternates to the standard set of glyphs. The following text displays stylistic alternate glyphs.
+Many OpenType fonts, such as Gabriola or Segoe Script, contain additional glyphs that provide stylistic alternates to the standard set of glyphs. The following text displays stylistic alternate glyphs.
 
 ![Text using OpenType stylistic alternate glyphs](./media/typography-in-wpf/opentype-stylistic-alternate-glyphs.gif "Text using OpenType stylistic alternate glyphs")
 
