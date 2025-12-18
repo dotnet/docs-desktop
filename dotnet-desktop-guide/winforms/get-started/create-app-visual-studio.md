@@ -1,7 +1,7 @@
 ---
 title: "Create a new app with Visual Studio tutorial"
 description: Learn how to create a Windows Forms app with Visual Studio 2026 in this step-by-step tutorial. Start building your first app today!
-ms.date: 12/03/2025
+ms.date: 12/18/2025
 ms.service: dotnet-desktop
 ms.update-cycle: 365-days
 ms.topic: tutorial
@@ -11,18 +11,18 @@ dev_langs:
 #customer intent: As a new developer, I want to create a new Windows Forms app.
 ---
 
-# Tutorial: Create a Windows Forms app with .NET
+# Tutorial: Create a Windows Forms app by using .NET
 
-In this tutorial, you learn how to use Visual Studio to create a Windows Forms app. With Visual Studio, you add controls to a form and handle events. By the end of this tutorial, you have a simple app that adds names to a list box.
+In this tutorial, you learn how to use Visual Studio to create a Windows Forms app. By using Visual Studio, you add controls to a form and handle events. By the end of this tutorial, you have a simple app that adds names to a list box.
 
 In this tutorial, you:
 
 > [!div class="checklist"]
 >
-> - Create a new Windows Forms app
-> - Add controls to a form
-> - Handle control events to provide app functionality
-> - Run the app
+> - Create a new Windows Forms app.
+> - Add controls to a form.
+> - Handle control events to provide app functionality.
+> - Run the app.
 
 ## Prerequisites
 
@@ -56,15 +56,15 @@ The first step to creating a new app is opening Visual Studio and generating the
 
     :::image type="content" source="media/create-app-visual-studio/vs-start-3-name.png" alt-text="A screenshot of the 'configure your new project' dialog from Visual Studio 2026. The 'Project name' textbox has the word 'Names' in it and is highlighted with a red box. The 'Next' button is also highlighted with a red box.":::
 
-01. Finally, in the **Additional information** window, select **.NET 9.0 (Standard Term Support)** for the **Framework** setting, and then select **Create**.
+01. Finally, in the **Additional information** window, select **.NET 10.0 (Long Term Support)** for the **Framework** setting, and then select **Create**.
 
     :::image type="content" source="media/create-app-visual-studio/vs-start-4-framework.png" alt-text="A screenshot of the 'Additional information' dialog from Visual Studio 2026. The 'Framework' dropdown box has '.NET 10 (Long Term Support)' selected and highlighted with a red box. The 'Create' button is also highlighted with a red box.":::
 
-Once the app is generated, Visual Studio should open the designer window for the default form, _Form1_. If the form designer isn't visible, double-click on the form in the **Solution Explorer** window to open the designer window.
+After Visual Studio generates the app, it opens the designer window for the default form, _Form1_. If the form designer isn't visible, double-click on the form in the **Solution Explorer** window to open the designer window.
 
 ### Enable the Toolbox and Properties windows
 
-By default, Visual Studio doesn't open the Toolbox and Properties windows. Visual Studio does remember that you opened these windows and will keep them open in the future.
+By default, Visual Studio doesn't open the Toolbox and Properties windows. Visual Studio does remember that you opened these windows and keeps them open in the future.
 
 To open the windows:
 
@@ -81,19 +81,19 @@ Support for Windows Forms in Visual Studio has four important components that yo
 
 01. Solution Explorer
 
-    All of your project files, code, forms, resources, appear in this window.
+    All of your project files, code, forms, and resources appear in this window.
 
 02. Properties
 
-    This window shows property settings you can configure based on the context of the item selected. For example, if you select an item from **Solution Explorer**, settings related to the file are displayed. If object in the **Designer** is selected, the properties of the control or form are displayed.
+    This window shows property settings you can configure based on the context of the item selected. For example, if you select an item from **Solution Explorer**, you see settings related to the file. If you select an object in the **Designer**, you see the properties of the control or form.
 
 03. Form Designer
 
-    This is the designer for the form. It's interactive and you can drag-and-drop objects from the **Toolbox**. By selecting and moving items in the designer, you can visually compose the user interface (UI) for your app.
+    This is the designer for the form. It's interactive and you can drag and drop objects from the **Toolbox**. By selecting and moving items in the designer, you can visually compose the user interface (UI) for your app.
 
 04. Toolbox
 
-    The toolbox contains all of the controls you can add to a form. To add a control to the current form, double-click a control or drag-and-drop the control.
+    The toolbox contains all of the controls you can add to a form. To add a control to the current form, double-click a control or drag and drop the control to the form.
 
 ## Add controls to the form
 
@@ -101,8 +101,8 @@ With the _Form1_ form designer open, use the **Toolbox** window to add the follo
 
 - Button
 - Label
-- Listbox
-- Textbox
+- ListBox
+- TextBox
 
 Position and size the controls according to the following image:
 
@@ -116,10 +116,10 @@ You can either move and resize the controls with the mouse to match the previous
 > |-------------|----------|------------|
 > | **Label**   | Location | `12, 9`    |
 > |             | Text     | `Names`    |
-> | **Listbox** | Name     | `lstNames` |
+> | **ListBox** | Name     | `lstNames` |
 > |             | Location | `12, 27`   |
 > |             | Size     | `120, 94`  |
-> | **Textbox** | Name     | `txtName`  |
+> | **TextBox** | Name     | `txtName`  |
 > |             | Location | `138, 26`  |
 > |             | Size     | `100, 23`  |
 > | **Button**  | Name     | `btnAdd`   |
@@ -131,7 +131,7 @@ You can either move and resize the controls with the mouse to match the previous
 
 ## Handle events
 
-Now that the form has all of its controls laid out, the next step is to add event handlers to respond to user input. Go to the form designer and perform the following steps:
+After you lay out all the controls on the form, add event handlers to respond to user input. Go to the form designer and perform the following steps:
 
 01. Select the **Add Name** button control on the form.
 01. In the **Properties** window, select the events icon :::image type="icon" source="media/create-app-visual-studio/icon-events.png" alt-text="Events icon from Visual Studio." border="false"::: to list the events of the button.
@@ -152,7 +152,7 @@ Now that the form has all of its controls laid out, the next step is to add even
     End Sub
     ```
 
-    The code for this handler is going to add the name specified by the `txtName` textbox to the `lstNames` listbox. However, we want there to be two conditions to adding the name: the name provided must not be blank, and the name must not already exist.
+    The code for this handler adds the name specified by the `txtName` textbox to the `lstNames` listbox. However, you want to add two conditions for adding the name: the name can't be blank, and the name can't already exist.
 
 01. The following code demonstrates adding a name to the `lstNames` control:
 
@@ -162,7 +162,7 @@ Now that the form has all of its controls laid out, the next step is to add even
 
 ## Run the app
 
-Now that the event is handled, run the app by pressing the <kbd>F5</kbd> key or by selecting **Debug** > **Start Debugging** from the menu. When the app starts, the form is displayed and you can enter a name in the textbox and select the button.
+After you handle the event, run the app by pressing the <kbd>F5</kbd> key or by selecting **Debug** > **Start Debugging** from the menu. When the app starts, the form is displayed. Enter a name in the textbox and select the button.
 
 :::image type="content" source="media/create-app-visual-studio/app-running.png" alt-text="Running a Windows Forms for .NET app in Visual Studio 2026.":::
 
