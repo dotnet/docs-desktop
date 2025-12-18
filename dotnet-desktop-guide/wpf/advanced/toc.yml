@@ -385,8 +385,6 @@ items:
           href: opentype-font-features.md
         - name: Packaging Fonts with Applications
           href: packaging-fonts-with-applications.md
-        - name: Sample OpenType Font Pack
-          href: sample-opentype-font-pack.md
         - name: How-to Topics
           href: fonts-how-to-topics.md
           items:

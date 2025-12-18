@@ -35,9 +35,6 @@ The OpenType font format addresses the following developer challenges:
 
 - Broader support for advanced typographic control.
 
-> [!NOTE]
-> The Windows SDK contains a set of sample OpenType fonts that you can use with Windows Presentation Foundation (WPF) applications. These fonts provide most of the features illustrated in the rest of this topic. For more information, see [Sample OpenType Font Pack](sample-opentype-font-pack.md).
-
 For details of the OpenType font format, see the [OpenType specification](/typography/opentype/spec/).
 
 ### Advanced Typographic Extensions
@@ -366,5 +363,4 @@ The following table lists the properties, values, and default settings of the <x
 - <xref:System.Windows.Documents.Typography>
 - [OpenType specification](/typography/opentype/spec/)
 - [Typography in WPF](typography-in-wpf.md)
-- [Sample OpenType Font Pack](sample-opentype-font-pack.md)
 - [Packaging Fonts with Applications](packaging-fonts-with-applications.md)
