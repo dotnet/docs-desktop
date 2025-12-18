@@ -1,7 +1,7 @@
 ---
 title: "XAML Services"
 description: "Describes the capabilities of a .NET XAML Services. Services include readers and writers, schema classes and schema support factories, attributing of classes, XAML language support, and other XAML language features."
-ms.date: "03/30/2017"
+ms.date: 12/16/2025
 helpviewer_keywords:
   - "XAML [XAML Services], System.Xaml concepts"
   - "XAML Services in WPF [XAML Services]"

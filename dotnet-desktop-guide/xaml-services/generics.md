@@ -1,7 +1,7 @@
 ---
 title: "Generics in XAML"
 description: Learn about the aspects of using and referencing generic CLR types in .NET XAML Services as implemented in System.Xaml.
-ms.date: "03/30/2017"
+ms.date: 12/16/2025
 helpviewer_keywords:
   - "generics [XAML Services]"
 ms.assetid: 835bfed7-585c-4216-ae67-b674edab8b92

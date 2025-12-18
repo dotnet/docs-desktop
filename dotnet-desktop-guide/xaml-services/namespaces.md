@@ -1,7 +1,7 @@
 ---
 title: "XAML Namespaces for .NET XAML Services"
 description: Learn about using XAML Namespaces for .NET XAML Services, including the components and distinction between a XAML namespace versus an XML namespace.
-ms.date: "03/30/2017"
+ms.date: 12/16/2025
 ms.assetid: e4f15f13-c420-4c1e-aeab-9b6f50212047
 ---
 # XAML Namespaces for .NET XAML Services

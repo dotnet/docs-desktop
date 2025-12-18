@@ -1,7 +1,7 @@
 ---
 title: "xml:lang Handling in XAML"
 description: Learn about the xml:lang Handling in XAML.
-ms.date: "03/30/2017"
+ms.date: 12/16/2025
 ms.custom: devdivchpfy22
 helpviewer_keywords:
   - "XAML [XAML Services], xml:lang attribute"

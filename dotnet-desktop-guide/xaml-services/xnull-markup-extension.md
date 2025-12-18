@@ -1,7 +1,7 @@
 ---
 title: "x:Null Markup Extension"
 description: "Describes how the x:Null markup extension is handled by XAML."
-ms.date: "03/30/2017"
+ms.date: 12/16/2025
 f1_keywords:
   - "NullExtension"
   - "x:NullExtension"

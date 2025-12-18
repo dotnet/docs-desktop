@@ -1,7 +1,7 @@
 ---
 title: "x:Class Directive"
 description: Learn about the x:Class Directive.
-ms.date: "03/30/2017"
+ms.date: 12/16/2025
 ms.custom: devdivchpfy22
 f1_keywords:
   - "x:Class"

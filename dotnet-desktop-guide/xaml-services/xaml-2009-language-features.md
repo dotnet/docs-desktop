@@ -1,7 +1,7 @@
 ---
 title: "XAML 2009 Language Features"
 description: "Describes the language features specific to the XAML 2009 specification."
-ms.date: "03/30/2017"
+ms.date: 12/16/2025
 helpviewer_keywords:
   - "XAML 2009 [XAML Services]"
   - "XAML [XAML Services], XAML 2009"

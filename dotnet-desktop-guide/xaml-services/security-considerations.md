@@ -1,7 +1,7 @@
 ---
 title: "XAML Security Considerations"
 description: Learn about the best practices for security in applications when you use XAML and .NET XAML Services API.
-ms.date: "03/30/2017"
+ms.date: 12/16/2025
 helpviewer_keywords:
   - "security [XAML Services], .NET XAML services"
   - "XAML security [XAML Services]"

@@ -1,7 +1,7 @@
 ---
 title: "XML Character Entities and XAML"
 description: "Describes how special characters are handled in XAML and general considerations for other XML concepts in XAML."
-ms.date: "03/30/2017"
+ms.date: 12/16/2025
 f1_keywords:
   - "&"
   - "&amp"

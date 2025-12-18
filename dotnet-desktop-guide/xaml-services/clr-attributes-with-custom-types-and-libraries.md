@@ -2,7 +2,7 @@
 title: "XAML-Related CLR Attributes for Custom Types and Libraries"
 description: Learn about the common language runtime (CLR) attributes that are defined by .NET XAML Services.
 
-ms.date: "03/30/2017"
+ms.date: 12/16/2025
 helpviewer_keywords:
   - "CLR attributes for custom types [XAML Services]"
 ms.assetid: 5dfb299a-b6e2-41b8-8694-e6ac987547f1
