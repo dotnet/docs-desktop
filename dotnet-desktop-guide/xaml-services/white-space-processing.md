@@ -1,7 +1,7 @@
 ---
 title: "White-space processing in XAML"
 description: "This article describes the XAML language rules regarding how white space is handled."
-ms.date: "03/30/2017"
+ms.date: 12/16/2025
 helpviewer_keywords:
   - "East Asian characters [XAML Services]"
   - "XAML [XAML Services], white-space processing"

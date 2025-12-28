@@ -1,7 +1,7 @@
 ---
 title: "x:Property Directive"
 description: Learn about the x:Property Directive.
-ms.date: "03/30/2017"
+ms.date: 12/16/2025
 ms.custom: devdivchpfy22
 ms.assetid: 618555a8-c893-455c-810f-ac54cd24ef10
 ---

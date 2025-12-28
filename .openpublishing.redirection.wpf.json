@@ -227,6 +227,10 @@
         {
             "source_path": "dotnet-desktop-guide/wpf/app-development/how-to-return-a-dialog-box-result.md",
             "redirect_url": "/dotnet/desktop/wpf/windows/dialog-boxes-overview"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/advanced/sample-opentype-font-pack.md",
+            "redirect_url": "/dotnet/desktop/wpf/advanced/opentype-font-features"
         }
     ]
 }

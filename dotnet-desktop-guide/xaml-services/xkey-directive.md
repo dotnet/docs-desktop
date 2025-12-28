@@ -1,6 +1,6 @@
 ---
 title: "x:Key Directive"
-ms.date: "03/30/2017"
+ms.date: 12/16/2025
 description: "The x:Key directive identifies elements that are created and referenced in a XAML-defined dictionary."
 f1_keywords:
   - "xKey"

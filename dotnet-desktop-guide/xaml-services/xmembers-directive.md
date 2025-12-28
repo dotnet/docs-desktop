@@ -1,7 +1,7 @@
 ---
 title: "x:Members Directive"
 description: Learn about the x:Members Directive.
-ms.date: "03/30/2017"
+ms.date: 12/16/2025
 ms.custom: devdivchpfy22
 ms.assetid: 155b393d-3b49-4c5a-8c9e-b3d9893af4e4
 ---

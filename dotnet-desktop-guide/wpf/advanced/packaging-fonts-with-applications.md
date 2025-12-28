@@ -161,9 +161,6 @@ To reference a font in a resource library from your application, you must prefix
 
 [!code-xaml[OpenTypeFontsSample#OpenTypeFontsSample1](~/samples/snippets/csharp/VS_Snippets_Wpf/OpenTypeFontsSample/CS/Kootenay.xaml#opentypefontssample1)]
 
-> [!NOTE]
-> This SDK contains a set of sample OpenType fonts that you can use with WPF applications. The fonts are defined in a resource-only library. For more information, see [Sample OpenType Font Pack](sample-opentype-font-pack.md).
-
 <a name="limitations_on_font_usage"></a>
 
 ## Limitations on Font Usage
@@ -189,4 +186,3 @@ The following list describes several limitations on the packaging and use of fon
 - [Microsoft Typography: Links, News, and Contacts](/typography/)
 - [OpenType Specification](https://www.microsoft.com/typography/otspec/)
 - [OpenType Font Features](opentype-font-features.md)
-- [Sample OpenType Font Pack](sample-opentype-font-pack.md)

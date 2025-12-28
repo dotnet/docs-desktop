@@ -1,7 +1,7 @@
 ---
 title: "x:FactoryMethod Directive"
 description: Learn about the x:FactoryMethod Directive.
-ms.date: "03/30/2017"
+ms.date: 12/16/2025
 ms.custom: devdivchpfy22
 helpviewer_keywords:
   - "XAML. x:FactoryMethod directive [XAML Services]"

@@ -1,7 +1,7 @@
 ---
 title: "x:Code Intrinsic XAML Type"
 description: "Describes how the x:Code XML type allows code to be compiled by the XAML processor."
-ms.date: "03/30/2017"
+ms.date: 12/16/2025
 f1_keywords:
   - "Code"
   - "x:Code"
