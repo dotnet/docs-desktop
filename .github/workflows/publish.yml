@@ -36,4 +36,4 @@ jobs:
 
       - name: Push changes
         run: |
-          git push origin live:abc3
+          git push origin live
