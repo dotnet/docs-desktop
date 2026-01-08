@@ -17,6 +17,7 @@ jobs:
         with:
           app-id: ${{ secrets.SEQUESTER_APPID }}
           private-key: ${{ secrets.SEQUESTER_PRIVATEKEY }}
+          permission-contents: write
 
       - name: Checkout repository
         uses: actions/checkout@eef61447b9ff4aafe5dcd4e0bbf5d482be7e7871 #@v4.2.1
