@@ -7,7 +7,7 @@ permissions:
   contents: write
 
 jobs:
-  rebase:
+  publish-to-live:
     runs-on: ubuntu-latest
 
     steps:
@@ -24,12 +24,23 @@ jobs:
           fetch-depth: 0
           token: ${{ steps.generate-token.outputs.token }}
 
+      - name: Configure git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
       - name: Rebase live with main
         run: |
+          set -e
           git fetch origin main:main
           git fetch origin live:live
           git checkout live
-          git rebase main
+          git rebase main || {
+            echo "::error::Rebase of 'live' onto 'main' failed due to merge conflicts."
+            echo "::error::Resolve the conflicts locally on branch 'live', complete the rebase, and push the updated branch to 'origin/live'."
+            git rebase --abort || true
+            exit 1
+          }
 
       - name: Push changes
         run: |
