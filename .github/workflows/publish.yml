@@ -32,10 +32,8 @@ jobs:
       - name: Rebase live with main
         run: |
           set -e
-          git fetch origin main:main
-          git fetch origin live:live
           git checkout live
-          git rebase main || {
+          git rebase origin/main || {
             echo "::error::Rebase of 'live' onto 'main' failed due to merge conflicts."
             echo "::error::Resolve the conflicts locally on branch 'live', complete the rebase, and push the updated branch to 'origin/live'."
             git rebase --abort || true
