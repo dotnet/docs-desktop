@@ -1,0 +1,47 @@
+name: Publish to Live
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish-to-live:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Generate token from GitHub App
+        id: generate-token
+        uses: actions/create-github-app-token@29824e69f54612133e76f7eaac726eef6c875baf #2.2.1
+        with:
+          app-id: ${{ secrets.SEQUESTER_APPID }}
+          private-key: ${{ secrets.SEQUESTER_PRIVATEKEY }}
+
+      - name: Checkout repository
+        uses: actions/checkout@eef61447b9ff4aafe5dcd4e0bbf5d482be7e7871 #@v4.2.1
+        with:
+          fetch-depth: 0
+          token: ${{ steps.generate-token.outputs.token }}
+
+      - name: Configure git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Rebase live with main
+        run: |
+          set -e
+          git fetch origin main:main
+          git fetch origin live:live
+          git checkout live
+          git rebase main || {
+            echo "::error::Rebase of 'live' onto 'main' failed due to merge conflicts."
+            echo "::error::Resolve the conflicts locally on branch 'live', complete the rebase, and push the updated branch to 'origin/live'."
+            git rebase --abort || true
+            exit 1
+          }
+
+      - name: Push changes
+        run: |
+          git push origin live
