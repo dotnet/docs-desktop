@@ -38,6 +38,20 @@ Configure DPI mode in your project file:
 > [!NOTE]
 > While the recommended approach is to configure DPI through the project file, you can still use an application manifest file (*app.manifest*) to override these settings. However, using the manifest is discouraged because it can cause conflicts with the application configuration. For more information, see [Compiler Warning WFO0003](../compiler-messages/wfo0003.md).
 
+### Visual Studio designer considerations
+
+When designing forms in Visual Studio, you might need to configure the designer's DPI awareness separately from your application. Starting with Visual Studio 2022 version 17.8, you can set the `ForceDesignerDPIUnaware` property in your project file to make the Windows Forms designer run in DPI-unaware mode. This setting helps avoid rendering issues when designing forms on high-DPI monitors:
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <ForceDesignerDPIUnaware>true</ForceDesignerDPIUnaware>
+  </PropertyGroup>
+</Project>
+```
+
+This property only affects the Visual Studio designer and doesn't change how your application runs. For more information, see [Disable DPI-awareness to address scaling issues](/visualstudio/designers/disable-dpi-awareness).
+
 Available DPI modes include:
 
 - `SystemAware`—The application queries for the DPI once at startup and uses this value for the lifetime of the app.
