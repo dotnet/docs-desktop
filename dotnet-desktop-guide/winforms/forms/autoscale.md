@@ -35,6 +35,9 @@ Configure DPI mode in your project file:
 </Project>
 ```
 
+> [!NOTE]
+> While the recommended approach is to configure DPI through the project file, you can still use an application manifest file (*app.manifest*) to override these settings. However, using the manifest is discouraged because it can cause conflicts with the application configuration. For more information, see [Compiler Warning WFO0003](../compiler-messages/wfo0003.md).
+
 Available DPI modes include:
 
 - `SystemAware`—The application queries for the DPI once at startup and uses this value for the lifetime of the app.
