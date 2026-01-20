@@ -36,7 +36,7 @@ configuration:
             user: dotnet-policy-service[bot]
       then:
         - enableAutoMerge:
-            mergeMethod: Merge
+            mergeMethod: Rebase
 
     - description: Don't auto-merge PRs with 'auto-merge' label removed
       if:
