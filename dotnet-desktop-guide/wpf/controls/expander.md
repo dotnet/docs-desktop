@@ -89,7 +89,9 @@ The following example is a copy of the default template for a <xref:System.Windo
 
 > [!div aria-expanded="true"]
 >
-> :::code language="xaml" source="./snippets/shared/templates/ExpanderTemplate.xaml":::
+> > [!div aria-expanded="false"]
+> >
+> > :::code language="xaml" source="./snippets/shared/templates/ExpanderTemplate.xaml":::
 
 ## See also
 
