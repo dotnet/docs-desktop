@@ -1,7 +1,7 @@
 ---
 title: "GridView Overview"
 description: Learn about styles and templates for the Windows Presentation Foundation ListView control. Modify the ControlTemplate to give the control a unique appearance.
-ms.date: "03/30/2017"
+ms.date: 01/22/2026
 ms.service: dotnet-framework
 ms.update-cycle: 1825-days
 helpviewer_keywords:
@@ -25,7 +25,7 @@ The <xref:System.Windows.Controls.GridView> view mode displays a list of data it
 
 The following illustration shows a <xref:System.Windows.Controls.GridView> view of <xref:System.Windows.Controls.ListView> content.
 
-![Screenshot that shows GridView view of ListView content.](./media/gridview-overview/styled-listview-content.png)
+:::image type="content" source="./media/gridview-overview/styled-listview-content.png" alt-text="Screenshot that shows GridView view of ListView content.":::
 
 <xref:System.Windows.Controls.GridView> columns are represented by <xref:System.Windows.Controls.GridViewColumn> objects, which can automatically size to their content. Optionally, you can explicitly set a <xref:System.Windows.Controls.GridViewColumn> to a specific width. You can resize columns by dragging the gripper between column headers. You can also dynamically add, remove, replace, and reorder columns because this functionality is built into <xref:System.Windows.Controls.GridView>. However, <xref:System.Windows.Controls.GridView> cannot directly update the data that it displays.
 

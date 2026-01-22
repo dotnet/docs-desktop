@@ -93,7 +93,19 @@
             "redirect_url": "/dotnet/desktop/wpf/controls/gridview-overview"
         },
         {
+            "source_path": "dotnet-desktop-guide/wpf/controls/grid-how-to-topics.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/grid"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/gridsplitter-how-to-topics.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/gridsplitter"
+        },
+        {
             "source_path": "dotnet-desktop-guide/wpf/controls/groupbox-styles-and-templates.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/groupbox"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/how-to-define-a-groupbox-template.md",
             "redirect_url": "/dotnet/desktop/wpf/controls/groupbox"
         },
         {
@@ -387,6 +399,10 @@
         {
             "source_path": "dotnet-desktop-guide/wpf/controls/flowdocumentreader.md",
             "redirect_url": "/dotnet/desktop/wpf/controls/flowdocument"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/image-how-to-topics.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/image"
         }
     ]
 }
