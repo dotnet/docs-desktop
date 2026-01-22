@@ -83,16 +83,6 @@ The following table lists the visual states for the <xref:System.Windows.Control
 |InvalidFocused|ValidationStates|The control has a validation error and has keyboard focus.|
 |InvalidUnfocused|ValidationStates|The control has a validation error but doesn't have keyboard focus.|
 
-### Expander ControlTemplate
-
-The following example is a copy of the default template for a <xref:System.Windows.Controls.Expander> control:
-
-> [!div aria-expanded="true"]
->
-> > [!button]
-> >
-> > :::code language="xaml" source="./snippets/shared/templates/ExpanderTemplate.xaml":::
-
 ## See also
 
 - <xref:System.Windows.Controls.Expander>
