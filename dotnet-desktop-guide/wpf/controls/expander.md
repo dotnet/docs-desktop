@@ -87,7 +87,7 @@ The following table lists the visual states for the <xref:System.Windows.Control
 
 The following example is a copy of the default template for a <xref:System.Windows.Controls.Expander> control:
 
-> [!div class="visually-hidden"]
+> [!div aria-expanded="true"]
 >
 > :::code language="xaml" source="./snippets/shared/templates/ExpanderTemplate.xaml":::
 
