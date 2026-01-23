@@ -21,6 +21,7 @@
                 </Grid.RowDefinitions>
                 <TextBlock Text="WPF Controls" FontSize="16" FontWeight="Bold" Margin="0,0,0,10"/>
                 <ListBox x:Name="ControlsListBox" SelectionChanged="ControlsListBox_SelectionChanged" Grid.Row="1">
+                    <ListBoxItem Content="Adorner"/>
                     <ListBoxItem Content="Border"/>
                     <ListBoxItem Content="BulletDecorator"/>
                     <ListBoxItem Content="Button"/>

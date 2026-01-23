@@ -9,18 +9,19 @@
       d:DesignHeight="300" d:DesignWidth="400"
       Title="ComboBoxPage">
     <StackPanel Margin="20" HorizontalAlignment="Center" VerticalAlignment="Center" Width="200">
-        <ComboBox Margin="5" Padding="5" SelectedIndex="0">
-            <ComboBoxItem Content="Option 1"/>
-            <ComboBoxItem Content="Option 2"/>
-            <ComboBoxItem Content="Option 3"/>
+        <ComboBox IsEnabled="False" Margin="5" Padding="5">
+            <ComboBoxItem Content="Disabled Option" IsSelected="True"/>
         </ComboBox>
         <ComboBox IsEditable="True" Text="Editable ComboBox" Margin="5" Padding="5">
             <ComboBoxItem Content="Item A"/>
             <ComboBoxItem Content="Item B"/>
             <ComboBoxItem Content="Item C"/>
         </ComboBox>
-        <ComboBox IsEnabled="False" Margin="5" Padding="5">
-            <ComboBoxItem Content="Disabled Option" IsSelected="True"/>
+        <ComboBox Margin="5" Padding="5" SelectedIndex="0" IsDropDownOpen="True">
+            <ComboBoxItem Content="Option 1"/>
+            <ComboBoxItem Content="Option 2"/>
+            <ComboBoxItem Content="Option 3"/>
         </ComboBox>
+        
     </StackPanel>
 </Page>

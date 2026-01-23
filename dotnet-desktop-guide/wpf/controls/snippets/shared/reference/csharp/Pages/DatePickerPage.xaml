@@ -12,13 +12,10 @@
         <TextBlock Text="Default DatePicker:" Margin="5"/>
         <DatePicker x:Name="DefaultDatePicker" Margin="5" Width="200"/>
         
-        <TextBlock Text="DatePicker with Text:" Margin="5,15,5,5"/>
-        <DatePicker Text="Select a date..." Margin="5" Width="200"/>
-        
         <TextBlock Text="DatePicker with Selected Date:" Margin="5,15,5,5"/>
-        <DatePicker x:Name="PreselectedDatePicker" Margin="5" Width="200"/>
+        <DatePicker x:Name="PreselectedDatePicker" Margin="5" Width="200" SelectedDate="2026-03-14"/>
         
         <TextBlock Text="Disabled DatePicker:" Margin="5,15,5,5"/>
-        <DatePicker IsEnabled="False" Margin="5" Width="200"/>
+        <DatePicker IsEnabled="False" Margin="5" Width="200" SelectedDate="2026-03-14"/>
     </StackPanel>
 </Page>

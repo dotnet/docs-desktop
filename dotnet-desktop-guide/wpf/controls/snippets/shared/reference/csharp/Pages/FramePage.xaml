@@ -14,7 +14,7 @@
             <Frame.Content>
                 <StackPanel Margin="10">
                     <TextBlock Text="This is content inside a Frame" FontWeight="Bold"/>
-                    <TextBlock Text="Frames are used for navigation and can host pages or user controls."/>
+                    <TextBlock Text="Frames are used for navigation and can host pages or user controls." TextWrapping="Wrap"/>
                     <Button Content="Sample Button" Margin="0,10,0,0" Padding="10,5"/>
                 </StackPanel>
             </Frame.Content>

@@ -6,35 +6,32 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:AllTemplatesCS.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="300" d:DesignWidth="400"
+      d:DesignHeight="400" d:DesignWidth="400"
       Title="ImagePage">
     <StackPanel Margin="20" HorizontalAlignment="Center" VerticalAlignment="Center">
         <!-- Placeholder images using geometric shapes -->
         <Border BorderBrush="Gray" BorderThickness="1" Width="150" Height="100" Margin="5">
             <Grid Background="LightGray">
-                <Rectangle Fill="DodgerBlue" Width="80" Height="60"/>
-                <TextBlock Text="Image Placeholder" HorizontalAlignment="Center" VerticalAlignment="Bottom" 
-                          FontSize="10" Foreground="White" Margin="2"/>
+                <Image Source="/winter1.jpg" />
+                <TextBlock Text="Stretched Image" HorizontalAlignment="Center" VerticalAlignment="Bottom" 
+                          FontSize="10" Foreground="Black" Margin="2"/>
             </Grid>
         </Border>
-        
+
         <Border BorderBrush="Gray" BorderThickness="1" Width="100" Height="100" Margin="5">
-            <Grid Background="LightGreen">
-                <Ellipse Fill="Orange" Width="60" Height="60"/>
-                <TextBlock Text="Square" HorizontalAlignment="Center" VerticalAlignment="Bottom" 
-                          FontSize="10" Foreground="White" Margin="2"/>
+
+            <Grid Background="LightGray" RowDefinitions="Auto, Auto">
+                <Border HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="75">
+                    <Ellipse Width="Auto" Height="Auto">
+                        <Ellipse.Fill>
+                            <ImageBrush ImageSource="/winter1.jpg" Stretch="UniformToFill"/>
+                        </Ellipse.Fill>
+                    </Ellipse>
+                </Border>
+                <TextBlock Text="Clipped Image" HorizontalAlignment="Center" VerticalAlignment="Bottom"
+                          FontSize="10" Foreground="Black" Margin="2" Grid.Row="1"/>
             </Grid>
         </Border>
         
-        <Border BorderBrush="Gray" BorderThickness="1" Width="200" Height="50" Margin="5">
-            <Grid Background="LightPink">
-                <Rectangle Fill="Purple" Width="120" Height="30"/>
-                <TextBlock Text="Banner Image" HorizontalAlignment="Center" VerticalAlignment="Center" 
-                          FontSize="10" Foreground="White"/>
-            </Grid>
-        </Border>
-        
-        <TextBlock Text="Note: Image control examples with placeholder graphics" 
-                   FontStyle="Italic" FontSize="10" Margin="10" HorizontalAlignment="Center"/>
     </StackPanel>
 </Page>

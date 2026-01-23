@@ -6,27 +6,28 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:AllTemplatesCS.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="300" d:DesignWidth="400"
+      d:DesignHeight="400" d:DesignWidth="400"
       Title="LabelPage">
     <StackPanel Margin="20" HorizontalAlignment="Center" VerticalAlignment="Center" Width="300">
         <Label Content="Simple Label" Margin="5"/>
-        
-        <Label Content="Label with Target:" Target="{Binding ElementName=TargetTextBox}" Margin="5"/>
-        <TextBox x:Name="TargetTextBox" Text="Focus target" Margin="5,0,5,10"/>
-        
-        <Label Content="_Label with Mnemonic (Alt+L)" Target="{Binding ElementName=MnemonicTextBox}" Margin="5"/>
-        <TextBox x:Name="MnemonicTextBox" Text="Alt+L to focus" Margin="5,0,5,10"/>
-        
-        <Label Margin="5" Padding="10" Background="LightBlue">
+
+        <StackPanel Orientation="Horizontal" Margin="5">
+            <Label Content="_Label with Mnemonic (Alt+L)" Target="{Binding ElementName=MnemonicTextBox}" VerticalAlignment="Center"/>
+            <TextBox x:Name="MnemonicTextBox" Text="Alt+L to focus" VerticalAlignment="Center" />
+        </StackPanel>
+        <Label Margin="5" Padding="10" Background="LightBlue" BorderThickness="1">
             <Label.Content>
-                <StackPanel Orientation="Horizontal">
-                    <TextBlock Text="???" FontSize="16" Margin="0,0,5,0"/>
-                    <TextBlock Text="Label with Custom Content"/>
+                <StackPanel>
+                    <TextBlock Text="Entire box is a label with StackPanel controls" TextWrapping="Wrap" Margin="0,5,0,0"/>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Label with Custom Content"  VerticalAlignment="Center" Padding="0,0,5,0"/>
+                        <Button Content="Button inside label" />
+                    </StackPanel>
                 </StackPanel>
             </Label.Content>
         </Label>
         
         <Label Content="Styled Label" FontWeight="Bold" FontSize="14" 
-               Foreground="DarkBlue" Background="LightYellow" Margin="5" Padding="10"/>
+               Foreground="DarkBlue" Background="LightYellow" Margin="5"/>
     </StackPanel>
 </Page>

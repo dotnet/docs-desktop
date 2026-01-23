@@ -23,7 +23,7 @@
             </Button.ContextMenu>
         </Button>
         
-        <TextBox Text="Text with context menu" Padding="10" Margin="10" Width="200">
+        <TextBox Text="Text with context menu" Padding="10" Margin="10">
             <TextBox.ContextMenu>
                 <ContextMenu>
                     <MenuItem Header="Undo"/>
@@ -35,8 +35,9 @@
             </TextBox.ContextMenu>
         </TextBox>
         
-        <Rectangle Fill="LightBlue" Width="150" Height="50" Margin="10">
-            <Rectangle.ContextMenu>
+        <TextBlock Background="LightBlue" Height="50" Margin="10" Text="TextBlock with context menu">
+            
+            <TextBlock.ContextMenu>
                 <ContextMenu>
                     <MenuItem Header="Change Color">
                         <MenuItem Header="Red"/>
@@ -46,7 +47,7 @@
                     <MenuItem Header="Resize"/>
                     <MenuItem Header="Delete"/>
                 </ContextMenu>
-            </Rectangle.ContextMenu>
-        </Rectangle>
+            </TextBlock.ContextMenu>
+        </TextBlock>
     </StackPanel>
 </Page>

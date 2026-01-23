@@ -13,28 +13,28 @@
             <BulletDecorator.Bullet>
                 <Ellipse Fill="Red" Width="8" Height="8"/>
             </BulletDecorator.Bullet>
-            <TextBlock Text="Red bullet point"/>
+            <TextBlock Margin="5,0,0,0" Text="Red bullet point"/>
         </BulletDecorator>
         
         <BulletDecorator Margin="5">
             <BulletDecorator.Bullet>
                 <Rectangle Fill="Blue" Width="6" Height="6"/>
             </BulletDecorator.Bullet>
-            <TextBlock Text="Blue square bullet"/>
+            <TextBlock Margin="5,0,0,0" Text="Blue square bullet"/>
         </BulletDecorator>
         
         <BulletDecorator Margin="5">
             <BulletDecorator.Bullet>
-                <TextBlock Text="?" FontSize="12" Foreground="Green"/>
+                <TextBlock Text="1)" FontSize="12" Foreground="Green"/>
             </BulletDecorator.Bullet>
-            <TextBlock Text="Custom text bullet"/>
+            <TextBlock Margin="5,0,0,0" Text="Custom text bullet"/>
         </BulletDecorator>
         
         <BulletDecorator Margin="5">
             <BulletDecorator.Bullet>
                 <CheckBox IsChecked="True"/>
             </BulletDecorator.Bullet>
-            <TextBlock Text="Checkbox as bullet"/>
+            <TextBlock Margin="5,0,0,0" Text="Checkbox as bullet"/>
         </BulletDecorator>
     </StackPanel>
 </Page>
