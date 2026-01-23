@@ -153,15 +153,12 @@ items:
     - name: ListBox
       href: listbox.md
       items:
-      - name: How-to Topics
-        href: listbox-how-to-topics.md
-        items:
-        - name: Bind a ListBox to Data
-          href: how-to-bind-a-listbox-to-data.md
-        - name: Get a ListBoxItem
-          href: how-to-get-a-listboxitem.md
-        - name: Improve the Scrolling Performance of a ListBox
-          href: how-to-improve-the-scrolling-performance-of-a-listbox.md
+      - name: Bind a ListBox to Data
+        href: how-to-bind-a-listbox-to-data.md
+      - name: Get a ListBoxItem
+        href: how-to-get-a-listboxitem.md
+      - name: Improve the Scrolling Performance of a ListBox
+        href: how-to-improve-the-scrolling-performance-of-a-listbox.md
     - name: ListView
       href: listview.md
       items:
