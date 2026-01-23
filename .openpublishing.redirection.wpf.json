@@ -117,6 +117,10 @@
             "redirect_url": "/dotnet/desktop/wpf/controls/listbox"
         },
         {
+            "source_path": "dotnet-desktop-guide/wpf/controls/listbox-how-to-topics.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/listbox"
+        },
+        {
             "source_path": "dotnet-desktop-guide/wpf/controls/listview-styles-and-templates.md",
             "redirect_url": "/dotnet/desktop/wpf/controls/listview"
         },
