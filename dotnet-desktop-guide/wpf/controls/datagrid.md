@@ -247,4 +247,3 @@ The preceding example uses one or more of the following resources.
 - [Data Templating Overview](../data/data-templating-overview.md)
 - [Styling and Templating](styles-templates-overview.md)
 - [WPF Content Model](wpf-content-model.md)
-- [ScrollViewer Styles and Templates](scrollviewer-styles-and-templates.md)

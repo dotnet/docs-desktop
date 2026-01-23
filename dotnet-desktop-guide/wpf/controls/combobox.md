@@ -23,7 +23,7 @@ This section describes the styles and templates for the <xref:System.Windows.Con
 
 ### Content property
 
-The <xref:System.Windows.Controls.ComboBox.Items%2A> property is the content property for the <xref:System.Windows.Controls.ComboBox> control. This property contains the list of items that the ComboBox displays.
+The <xref:System.Windows.Controls.ItemsControl.Items%2A> property is the content property for the <xref:System.Windows.Controls.ComboBox> control. This property contains the list of items that the ComboBox displays.
 
 ### Parts
 

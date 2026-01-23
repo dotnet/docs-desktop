@@ -216,10 +216,9 @@ The <xref:System.Windows.Controls.Decorator> class applies visual effects onto o
 
 - <xref:System.Windows.Controls.Viewbox>
 
-The following illustration shows a <xref:System.Windows.Controls.TextBox> that has (is decorated with) a <xref:System.Windows.Controls.Border> around it.
+The following illustration shows different <xref:System.Windows.Controls.TextBlock> controls surrounded by a <xref:System.Windows.Controls.Border>.
 
-![TextBox with black border](./media/layout-border-around-textbox.png "Layout_Border_around_TextBox")\
-TextBlock that has a Border
+:::image type="content" source="./media/shared/border.png" alt-text="Screenshot showing multiple border controls.":::
 
 <a name="classes_that_provides_visual_feedback_about_a_uielement"></a>
 

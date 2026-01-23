@@ -21,7 +21,7 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 
 ### Content property
 
-The <xref:System.Windows.Controls.DocumentViewer> control uses the <xref:System.Windows.Controls.DocumentViewer.Document> property as its content property, which specifies the <xref:System.Windows.Documents.FixedDocument> content to display.
+The <xref:System.Windows.Controls.DocumentViewer> control uses the <xref:System.Windows.Controls.DocumentViewerBase.Document> property as its content property, which specifies the <xref:System.Windows.Documents.FixedDocument> content to display.
 
 ### Parts
 
