@@ -16,7 +16,7 @@ helpviewer_keywords:
 
 An <xref:System.Windows.Controls.Expander> allows a user to view a header and expand that header to see further details, or collapse a section up to a header. The <xref:System.Windows.Controls.Expander> control provides a way to present content in an expandable area that resembles a window and includes a header.
 
-:::image type="content" source="./media/expander/expander-control-example.jpg" alt-text="Expander control in its expanded position with header and content area visible":::
+:::image type="content" source="./media/shared/expander.png" alt-text="A screenshot of different types of expander controls.":::
 
 | Title | Description |
 |-------|-------------|
@@ -37,8 +37,6 @@ When an <xref:System.Windows.Controls.Expander> control is the last element in a
 ## Creating scrollable content
 
 If the content is too large for the size of the content area, you can wrap the content of an <xref:System.Windows.Controls.Expander> in a <xref:System.Windows.Controls.ScrollViewer> to provide scrollable content. The <xref:System.Windows.Controls.Expander> control doesn't automatically provide scrolling capability.
-
-:::image type="content" source="./media/expander-overview/expander-scrollbar-control.jpg" alt-text="Expander control containing a ScrollViewer with a scroll bar":::
 
 When you place an <xref:System.Windows.Controls.Expander> control in a <xref:System.Windows.Controls.ScrollViewer>, set the <xref:System.Windows.Controls.ScrollViewer> dimension property that corresponds to the direction in which the <xref:System.Windows.Controls.Expander> content opens to the size of the <xref:System.Windows.Controls.Expander> content area. For example, if you set the <xref:System.Windows.Controls.Expander.ExpandDirection%2A> property on the <xref:System.Windows.Controls.Expander> to <xref:System.Windows.Controls.ExpandDirection.Down> (the content area opens down), set the <xref:System.Windows.FrameworkElement.Height%2A> property on the <xref:System.Windows.Controls.ScrollViewer> control to the required height for the content area. If you instead set the height dimension on the content itself, <xref:System.Windows.Controls.ScrollViewer> doesn't recognize this setting and therefore doesn't provide scrollable content.
 

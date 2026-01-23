@@ -17,6 +17,8 @@ ai-usage: ai-assisted
 
 WPF provides three specialized controls for viewing <xref:System.Windows.Documents.FlowDocument> content, each optimized for different presentation scenarios. These controls enable you to display rich, reflowable content in your applications while offering users different ways to interact with that content.
 
+:::image type="content" source="./media/shared/flowdocument.png" alt-text="Screenshot of the FlowDocumentReader control with a sample document open.":::
+
 The three FlowDocument controls are:
 
 - <xref:System.Windows.Controls.FlowDocumentScrollViewer>: Displays content in a continuous scrolling view, ideal for reading long documents without pagination.

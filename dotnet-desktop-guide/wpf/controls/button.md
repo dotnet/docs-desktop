@@ -13,7 +13,7 @@ helpviewer_keywords:
 
 A <xref:System.Windows.Controls.Button> control reacts to user input from a mouse, keyboard, stylus, or other input device and raises a <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event. A <xref:System.Windows.Controls.Button> is a basic UI component that can contain simple content such as text, and can also contain complex content such as images and <xref:System.Windows.Controls.Panel> controls.
 
-:::image type="content" source="./media/ss-ctl-buttons.png" alt-text="Button control showing different states default, focused, and pressed":::
+:::image type="content" source="./media/shared/button.png" alt-text="Screenshot showing buttons styled in different ways.":::
 
 | Title | Description |
 |-------|-------------|

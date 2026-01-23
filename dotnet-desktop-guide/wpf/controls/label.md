@@ -13,11 +13,11 @@ ai-usage: ai-assisted
 
 <xref:System.Windows.Controls.Label> controls usually provide information in the user interface (UI). Historically, a <xref:System.Windows.Controls.Label> has contained only text, but because the <xref:System.Windows.Controls.Label> that ships with Windows Presentation Foundation (WPF) is a <xref:System.Windows.Controls.ContentControl>, it can contain either text or a <xref:System.Windows.UIElement>.
 
+:::image type="content" source="./media/shared/label.png" alt-text="Screenshot of Label controls displayed in different ways.":::
+
 A <xref:System.Windows.Controls.Label> provides both functional and visual support for access keys. It's frequently used to enable quick keyboard access to controls such as a <xref:System.Windows.Controls.TextBox>. To assign a <xref:System.Windows.Controls.Label> to a <xref:System.Windows.Controls.Control>, set the <xref:System.Windows.Controls.Label.Target%2A?displayProperty=nameWithType> property to the control that should get focus when the user presses the access key.
 
 The following image shows a <xref:System.Windows.Controls.Label> "Theme" that targets a <xref:System.Windows.Controls.ComboBox>. When the user presses <kbd>T</kbd>, the <xref:System.Windows.Controls.ComboBox> receives focus.
-
-:::image type="content" source="./media/label/display-properties-labeled-by.png" alt-text="Screenshot of Display Properties dialog showing labeled by usage":::
 
 | Title | Description |
 |-------|-------------|

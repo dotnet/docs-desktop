@@ -14,6 +14,8 @@ helpviewer_keywords:
 
 The <xref:System.Windows.Controls.GridSplitter> redistributes space between columns or rows of a <xref:System.Windows.Controls.Grid> control.
 
+:::image type="content" source="./media/shared/gridsplitter.png" alt-text="Screenshot of a vertical GridSplitter control separating two grid columns.":::
+
 | Title | Description |
 |-------|-------------|
 | [Resize Rows with a GridSplitter](how-to-resize-rows-with-a-gridsplitter.md) | Shows how to resize rows in a grid using a GridSplitter control. |

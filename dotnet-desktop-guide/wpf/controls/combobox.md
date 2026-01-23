@@ -15,7 +15,7 @@ The <xref:System.Windows.Controls.ComboBox> control presents users with a list o
 
 The following illustration shows a <xref:System.Windows.Controls.ComboBox> in different states.
 
-:::image type="content" source="./media/ss-ctl-combobox.gif" alt-text="A ComboBox control shown in collapsed and expanded states.":::
+:::image type="content" source="./media/shared/combobox.png" alt-text="A ComboBox control shown in disabled, collapsed, and expanded states.":::
 
 ## Styles and templates
 

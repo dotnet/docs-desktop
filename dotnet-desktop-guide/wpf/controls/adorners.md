@@ -17,7 +17,7 @@ ai-usage: ai-assisted
 
 Adorners are a special type of <xref:System.Windows.FrameworkElement>, used to provide visual cues to a user. Among other uses, Adorners can be used to add functional handles to elements or provide state information about a control.
 
-:::image type="content" source="./media/adorners-overview/simplecircleadorner-textbox.png" alt-text="Screenshot showing an adorned text box with circles at the corners.":::
+:::image type="content" source="./media/shared/adorner.png" alt-text="Screenshot showing an adorned text box with boxes at the corners.":::
 
 | Title | Description |
 |-------|-------------|

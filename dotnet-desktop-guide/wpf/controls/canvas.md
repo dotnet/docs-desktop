@@ -14,6 +14,8 @@ ai-usage: ai-assisted
 
 <xref:System.Windows.Controls.Canvas> is a layout control that enables absolute positioning of child elements.
 
+:::image type="content" source="./media/shared/canvas.png" alt-text="A canvas with arbitrarily placed child controls.":::
+
 ## Common tasks
 
 The following table shows common tasks you can accomplish with the Canvas control.

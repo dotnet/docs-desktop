@@ -14,7 +14,7 @@ ai-usage: ai-assisted
 
 The <xref:System.Windows.Controls.Primitives.BulletDecorator> control provides a way to align a bullet with content. It's a decorator control that arranges a bullet element alongside child content, creating a layout commonly used in lists, checkboxes, and radio buttons.
 
-:::image type="content" source="./media/bulletdecorator/three-bullet-decorators.png" alt-text="Examples of CheckBox, RadioButton, and TextBox controls that use BulletDecorator for bullet alignment":::
+:::image type="content" source="./media/shared/bulletdecorator.png" alt-text="Examples of textblocks using bullet decorators.":::
 
 ## Styles and templates
 

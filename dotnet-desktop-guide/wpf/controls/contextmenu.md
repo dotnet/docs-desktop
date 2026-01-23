@@ -16,7 +16,7 @@ The <xref:System.Windows.Controls.ContextMenu> class represents the element that
 
 Typically, users expose the <xref:System.Windows.Controls.ContextMenu> in the user interface (UI) through the right mouse button. When users right-click the control, the menu appears. Clicking a <xref:System.Windows.Controls.MenuItem> typically opens a submenu or causes an application to execute a command.
 
-:::image type="content" source="./media/ss-ctl-contextmenu.png" alt-text="Screenshot showing a ContextMenu in default and open states":::
+:::image type="content" source="./media/shared/contextmenu.png" alt-text="Screenshot showing a ContextMenu in default and open states.":::
 
 ## Creating a ContextMenu
 

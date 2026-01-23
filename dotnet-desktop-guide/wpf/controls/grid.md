@@ -14,6 +14,8 @@ ai-usage: ai-assisted
 
 <xref:System.Windows.Controls.Grid> is a layout control that enables flexible positioning of child elements in rows and columns.
 
+:::image type="content" source="./media/shared/grid.png" alt-text="Screenshot of the Grid control demonstrating different layout alignments along rows and columns.":::
+
 ## Common tasks
 
 The following table shows common tasks you can accomplish with the Grid control.

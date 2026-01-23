@@ -15,6 +15,8 @@ helpviewer_keywords:
 
 The <xref:System.Windows.Controls.Frame> control supports content navigation within content. You can host a <xref:System.Windows.Controls.Frame> in root elements like <xref:System.Windows.Window>, <xref:System.Windows.Navigation.NavigationWindow>, <xref:System.Windows.Controls.Page>, <xref:System.Windows.Controls.UserControl>, or <xref:System.Windows.Documents.FlowDocument>. You can also place it as an island within a content tree that belongs to a root element.
 
+:::image type="content" source="./media/shared/frame.png" alt-text="Screenshot of the Frame control with child content.":::
+
 ## Styles and templates
 
 This section describes the styles and templates for the <xref:System.Windows.Controls.Frame> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [What are styles and templates?](styles-templates-overview.md) and [How to create a template for a control](how-to-create-apply-template.md).

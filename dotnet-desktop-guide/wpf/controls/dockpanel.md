@@ -13,6 +13,8 @@ helpviewer_keywords:
 
 The <xref:System.Windows.Controls.DockPanel> element is used to position child content along the edge of a layout container.
 
+:::image type="content" source="./media/shared/dockpanel.png" alt-text="DockPanel control with different controls docked along each edge of the panel.":::
+
 | Title | Description |
 |-------|-------------|
 | [Create a DockPanel](how-to-create-a-dockpanel.md) | Learn how to create and configure a DockPanel layout container. |

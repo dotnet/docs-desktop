@@ -13,6 +13,8 @@ helpviewer_keywords:
 
 The <xref:System.Windows.Controls.Image> element displays bitmap images in Windows Presentation Foundation (WPF) applications. Use this control to show various image formats and manipulate their appearance through transforms like cropping, rotating, and converting to greyscale.
 
+:::image type="content" source="./media/shared/image.png" alt-text="Screenshot of an image control displayed in two different ways.":::
+
 | Title | Description |
 |-------|-------------|
 | [Use the Image Element](how-to-use-the-image-element.md) | Learn how to use the Image element in your applications. |

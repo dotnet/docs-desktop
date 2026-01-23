@@ -13,6 +13,8 @@ ai-usage: ai-assisted
 
 The <xref:System.Windows.Controls.DocumentViewer> control is used to view <xref:System.Windows.Documents.FixedDocument> content (such as XML Paper Specification (XPS) documents) in a paginated format.
 
+:::image type="content" source="./media/shared/documentviewer.png" alt-text="Screenshot of the DocumentViewer control with a sample document open.":::
+
 ## Styles and templates
 
 This topic describes the styles and templates for the <xref:System.Windows.Controls.DocumentViewer> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [What are styles and templates?](styles-templates-overview.md) and [How to create a template for a control](how-to-create-apply-template.md).

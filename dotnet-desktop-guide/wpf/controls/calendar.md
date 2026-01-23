@@ -15,7 +15,7 @@ A calendar enables a user to select a date by using a visual calendar display.
 
 A <xref:System.Windows.Controls.Calendar> control can be used on its own, or as a drop-down part of a <xref:System.Windows.Controls.DatePicker> control. For more information, see <xref:System.Windows.Controls.DatePicker>.
 
-:::image type="content" source="./media/ndp-calendarcontrols.png" alt-text="Screenshot showing two Calendar controls, one with selections and blackout dates and one without.":::
+:::image type="content" source="./media/shared/calendar.png" alt-text="Screenshot showing three Calendar controls, one showing a month, another showing the year, and another showing a year range.":::
 
 ## Common tasks
 

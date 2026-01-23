@@ -14,7 +14,7 @@ ai-usage: ai-assisted
 
 The <xref:System.Windows.Controls.Border> control draws a border, background, or both around another element. Use `Border` to create a visual frame around content or to add spacing between UI elements.
 
-:::image type="content" source="./media/layout-border-around-textbox.png" alt-text="Screenshot showing a TextBox surrounded by a decorative border.":::
+:::image type="content" source="./media/shared/border.png" alt-text="Screenshot showing multiple border controls.":::
 
 | Title | Description |
 |-------|-------------|
