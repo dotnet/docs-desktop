@@ -4,7 +4,7 @@ description: Learn about how drag-and-drop works on Windows Forms, including how
 ms.date: 04/02/2025
 ms.service: dotnet-desktop
 ms.update-cycle: 365-days
-ms.topic: conceptual
+ms.topic: concept-article
 dev_langs:
   - "csharp"
   - "vb"
