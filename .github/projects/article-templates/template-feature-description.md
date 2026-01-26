@@ -5,7 +5,7 @@ description: "[Article description]."
 author: [your GitHub alias]
 ms.author: [your Microsoft alias or a team alias]
 ms.service: [the approved service name]
-ms.topic: concept-article #Don't change
+ms.topic: conceptual #Don't change
 ms.date: [mm/dd/yyyy]
 
 #customer intent: As a <role>, I want <what> so that <why>.
