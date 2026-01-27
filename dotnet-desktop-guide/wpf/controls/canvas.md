@@ -47,4 +47,4 @@ The Canvas control does not define a content property. It's a panel control that
 - <xref:System.Windows.Controls.WrapPanel>
 - [Layout](../advanced/layout.md)
 - [Walkthrough: My first WPF desktop application](../get-started/walkthrough-my-first-wpf-desktop-application.md)
-- [ScrollViewer Overview](scrollviewer-overview.md)
+- [ScrollViewer](scrollviewer.md)

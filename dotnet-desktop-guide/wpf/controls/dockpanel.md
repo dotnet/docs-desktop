@@ -36,5 +36,5 @@ DockPanel is a layout panel and doesn't have a visual representation. It doesn't
 - <xref:System.Windows.Controls.VirtualizingStackPanel>
 - <xref:System.Windows.Controls.WrapPanel>
 - [Layout](../advanced/layout.md)
-- [ScrollViewer Overview](scrollviewer-overview.md)
+- [ScrollViewer](scrollviewer.md)
 - [Walkthrough: My first WPF desktop application](../get-started/walkthrough-my-first-wpf-desktop-application.md)

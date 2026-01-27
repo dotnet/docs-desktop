@@ -63,7 +63,7 @@ The <xref:System.Windows.Controls.FlowDocumentPageViewer> control displays <xref
 
 ### Content property
 
-The <xref:System.Windows.Controls.DocumentViewerBase.Document> property is the content property of the <xref:System.Windows.Controls.FlowDocumentPageViewer> control and contains the flow document displayed in the viewer.
+The <xref:System.Windows.Controls.Primitives.DocumentViewerBase.Document> property is the content property of the <xref:System.Windows.Controls.FlowDocumentPageViewer> control and contains the flow document displayed in the viewer.
 
 ### Parts
 
@@ -89,7 +89,7 @@ The <xref:System.Windows.Controls.FlowDocumentReader> control displays <xref:Sys
 
 ### Content property
 
-The <xref:System.Windows.Controls.DocumentViewerBase.Document> property is the content property and defines the <xref:System.Windows.Documents.FlowDocument> content that the reader displays.
+The <xref:System.Windows.Controls.Primitives.DocumentViewerBase.Document> property is the content property and defines the <xref:System.Windows.Documents.FlowDocument> content that the reader displays.
 
 ### Parts
 

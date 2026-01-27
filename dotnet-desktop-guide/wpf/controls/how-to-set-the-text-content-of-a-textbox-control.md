@@ -32,4 +32,4 @@ This example shows how to use the <xref:System.Windows.Controls.TextBox.Text%2A>
 ## See also
 
 - [TextBox Overview](textbox-overview.md)
-- [RichTextBox Overview](richtextbox-overview.md)
+- [RichTextBox Overview](richtextbox.md)

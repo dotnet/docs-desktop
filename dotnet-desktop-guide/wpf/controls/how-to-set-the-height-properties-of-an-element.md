@@ -41,5 +41,5 @@ For the complete sample, see [Height Properties Sample](https://github.com/micro
 - <xref:System.Windows.FrameworkElement.MinHeight%2A>
 - <xref:System.Windows.FrameworkElement.Height%2A>
 - [Set the Width Properties of an Element](how-to-set-the-width-properties-of-an-element.md)
-- [Panels Overview](panels-overview.md)
+- [Panel](panel.md)
 - [Height Properties Sample](https://github.com/microsoft/WPF-Samples/tree/master/Elements/HeightProperties)

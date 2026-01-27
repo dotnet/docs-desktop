@@ -86,4 +86,4 @@ Since Border can only contain one child, use a panel to group multiple elements:
 - <xref:System.Windows.Controls.Border>
 - <xref:System.Windows.Controls.Decorator>
 - [Alignment, Margins, and Padding Overview](../advanced/alignment-margins-and-padding-overview.md)
-- [Panels Overview](panels-overview.md)
+- [Panel](panel.md)

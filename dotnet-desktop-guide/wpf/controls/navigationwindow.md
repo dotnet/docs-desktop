@@ -1,7 +1,7 @@
 ---
-title: "NavigationWindow Styles and Templates"
-description: Learn about styles and templates for the NavigationWindow control including tutorials and code examples.
-ms.date: "03/30/2017"
+title: "NavigationWindow"
+description: Learn about the NavigationWindow control in WPF, including its parts, visual states, and control template.
+ms.date: "01/23/2025"
 ms.service: dotnet-framework
 ms.update-cycle: 1825-days
 helpviewer_keywords:
@@ -11,42 +11,31 @@ helpviewer_keywords:
   - "parts [WPF], NavigationWindow"
   - "styles [WPF], NavigationWindow"
   - "templates [WPF], NavigationWindow"
-ms.assetid: 3656055e-3222-43c8-b868-fd0c90cc31a3
+ai-usage: ai-assisted
 ---
-# NavigationWindow Styles and Templates
+# NavigationWindow
 
-This topic describes the styles and templates for the <xref:System.Windows.Navigation.NavigationWindow> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [Create a template for a control](how-to-create-apply-template.md).
+The <xref:System.Windows.Navigation.NavigationWindow> control provides a specialized window that supports navigation and hosting of pages. It's designed for applications that need browser-like navigation capabilities, allowing users to navigate between different pages or content within a window.
 
-## NavigationWindow Parts
+## Styles and templates
+
+You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [Create a template for a control](how-to-create-apply-template.md).
+
+### Content property
+
+The NavigationWindow control uses the `Content` property to display the navigated content.
+
+### Parts
 
 The following table lists the named parts for the <xref:System.Windows.Navigation.NavigationWindow> control.
 
 |Part|Type|Description|
 |-|-|-|
-|PART_NavWinCP|<xref:System.Windows.Controls.ContentPresenter>|The area for the content.|
+|PART_NavWinCP|<xref:System.Windows.Controls.ContentPresenter>|The content presenter that displays the navigated content.|
 
-## NavigationWindow States
+### Visual states
 
-The following table lists the visual states for the <xref:System.Windows.Navigation.NavigationWindow> control.
-
-|VisualState Name|VisualStateGroup Name|Description|
-|-|-|-|
-|Valid|ValidationStates|The control uses the <xref:System.Windows.Controls.Validation> class and the <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `false`.|
-|InvalidFocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` has the control has focus.|
-|InvalidUnfocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` has the control does not have focus.|
-
-## NavigationWindow ControlTemplate Example
-
-Although this example contains all of the elements that are defined in the <xref:System.Windows.Controls.ControlTemplate> of a <xref:System.Windows.Navigation.NavigationWindow> by default, the specific values should be thought of as examples.
-
-[!code-xaml[ControlTemplateExamples#NavigationWindow](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/navigationwindow.xaml#navigationwindow)]
-
-The preceding example uses one or more of the following resources.
-
-[!code-xaml[ControlTemplateExamples#ResizeGrip](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/resizegrip.xaml#resizegrip)]
-[!code-xaml[ControlTemplateExamples#Resources](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/shared.xaml#resources)]
-
-For the complete sample, see [Styling with ControlTemplates Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Styles%20&%20Templates/IntroToStylingAndTemplating).
+The NavigationWindow control doesn't define any visual states.
 
 ## See also
 

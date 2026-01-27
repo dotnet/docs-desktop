@@ -22,4 +22,4 @@ The following example shows a simple method that takes a <xref:System.Windows.Co
 ## See also
 
 - [TextBox Overview](textbox-overview.md)
-- [RichTextBox Overview](richtextbox-overview.md)
+- [RichTextBox Overview](richtextbox.md)

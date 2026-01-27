@@ -200,9 +200,6 @@ items:
           href: how-to-handle-the-mousedoubleclick-event-for-each-item-in-a-listview.md
     - name: Menu
       href: menu.md
-      items:
-      - name: Menu Overview
-        href: menu-overview.md
     - name: Panel
       href: panel.md
       items:
@@ -247,18 +244,15 @@ items:
       href: richtextbox.md
       items:
       - name: RichTextBox Overview
-        href: richtextbox-overview.md
-      - name: How-to Topics
-        href: richtextbox-how-to-topics.md
-        items:
-        - name: Extract the Text Content from a RichTextBox
-          href: how-to-extract-the-text-content-from-a-richtextbox.md
-        - name: Change Selection in a RichTextBox Programmatically
-          href: change-selection-in-a-richtextbox-programmatically.md
-        - name: Save, Load, and Print RichTextBox Content
-          href: how-to-save-load-and-print-richtextbox-content.md
-        - name: Position a Custom Context Menu in a RichTextBox
-          href: how-to-position-a-custom-context-menu-in-a-richtextbox.md
+        href: richtextbox.md
+      - name: Extract the Text Content from a RichTextBox
+        href: how-to-extract-the-text-content-from-a-richtextbox.md
+      - name: Change Selection in a RichTextBox Programmatically
+        href: change-selection-in-a-richtextbox-programmatically.md
+      - name: Save, Load, and Print RichTextBox Content
+        href: how-to-save-load-and-print-richtextbox-content.md
+      - name: Position a Custom Context Menu in a RichTextBox
+        href: how-to-position-a-custom-context-menu-in-a-richtextbox.md
     - name: ScrollBar
       href: scrollbar.md
       items:
@@ -267,17 +261,12 @@ items:
     - name: ScrollViewer
       href: scrollviewer.md
       items:
-      - name: ScrollViewer Overview
-        href: scrollviewer-overview.md
-      - name: How-to Topics
-        href: scrollviewer-how-to-topics.md
-        items:
-        - name: Handle the ScrollChanged Event
-          href: how-to-handle-the-scrollchanged-event.md
-        - name: Scroll Content by Using the IScrollInfo Interface
-          href: how-to-scroll-content-by-using-the-iscrollinfo-interface.md
-        - name: Use the Content-Scrolling Methods of ScrollViewer
-          href: how-to-use-the-content-scrolling-methods-of-scrollviewer.md
+      - name: Handle the ScrollChanged Event
+        href: how-to-handle-the-scrollchanged-event.md
+      - name: Scroll Content by Using the IScrollInfo Interface
+        href: how-to-scroll-content-by-using-the-iscrollinfo-interface.md
+      - name: Use the Content-Scrolling Methods of ScrollViewer
+        href: how-to-use-the-content-scrolling-methods-of-scrollviewer.md
     - name: Separator
       href: separator.md
     - name: Slider

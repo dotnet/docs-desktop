@@ -36,5 +36,5 @@ The method creates a new <xref:System.Windows.Documents.TextRange> from the cont
 
 ## See also
 
-- [RichTextBox Overview](richtextbox-overview.md)
+- [RichTextBox Overview](richtextbox.md)
 - [TextBox Overview](textbox-overview.md)

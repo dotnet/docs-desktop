@@ -41,4 +41,4 @@ To position the cursor at the end of the contents of a <xref:System.Windows.Cont
 ## See also
 
 - [TextBox Overview](textbox-overview.md)
-- [RichTextBox Overview](richtextbox-overview.md)
+- [RichTextBox Overview](richtextbox.md)

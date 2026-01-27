@@ -42,4 +42,4 @@ The <xref:System.Windows.Controls.StackPanel> element is used to stack child ele
 
 [Walkthrough: My first WPF desktop application](../get-started/walkthrough-my-first-wpf-desktop-application.md)
 
-[ScrollViewer Overview](scrollviewer-overview.md)
+[ScrollViewer](scrollviewer.md)

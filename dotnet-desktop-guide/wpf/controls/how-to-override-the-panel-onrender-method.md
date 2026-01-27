@@ -33,4 +33,4 @@ Use the <xref:System.Windows.Controls.Panel.OnRender%2A> method in order to add 
 
 - <xref:System.Windows.Controls.Panel>
 - [Panels Overview](panels-overview.md)
-- [How-to Topics](panel-how-to-topics.md)
+- [Panel](panel.md)

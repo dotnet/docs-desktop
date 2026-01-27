@@ -153,6 +153,14 @@
             "redirect_url": "/dotnet/desktop/wpf/controls/scrollbar"
         },
         {
+            "source_path": "dotnet-desktop-guide/wpf/controls/scrollviewer-how-to-topics.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/scrollviewer"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/scrollviewer-overview.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/scrollviewer"
+        },
+        {
             "source_path": "dotnet-desktop-guide/wpf/controls/thumb-styles-and-templates.md",
             "redirect_url": "/dotnet/desktop/wpf/controls/thumb"
         },
@@ -407,6 +415,26 @@
         {
             "source_path": "dotnet-desktop-guide/wpf/controls/image-how-to-topics.md",
             "redirect_url": "/dotnet/desktop/wpf/controls/image"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/menu-overview.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/menu"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/panel-how-to-topics.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/panel"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/panels-overview.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/panel"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/richtextbox-how-to-topics.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/richtextbox"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/richtextbox-overview.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/richtextbox"
         }
     ]
 }

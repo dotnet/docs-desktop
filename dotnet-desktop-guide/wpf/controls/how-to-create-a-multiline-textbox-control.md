@@ -26,4 +26,4 @@ The <xref:System.Windows.Controls.Primitives.TextBoxBase.VerticalScrollBarVisibi
 
 - <xref:System.Windows.TextWrapping>
 - [TextBox Overview](textbox-overview.md)
-- [RichTextBox Overview](richtextbox-overview.md)
+- [RichTextBox Overview](richtextbox.md)

@@ -74,7 +74,7 @@ By default, a vertical scrollbar is always shown, and a horizontal scrollbar bec
 
 ### RichTextBox
 
-You use a <xref:System.Windows.Controls.RichTextBox> when you want to allow the user to edit flow content. For example, if you wanted to create an editor that allowed a user to manipulate things like tables, italic and bold formatting, etc, you would use a <xref:System.Windows.Controls.RichTextBox>. See [RichTextBox Overview](../controls/richtextbox-overview.md) for more information.
+You use a <xref:System.Windows.Controls.RichTextBox> when you want to allow the user to edit flow content. For example, if you wanted to create an editor that allowed a user to manipulate things like tables, italic and bold formatting, etc, you would use a <xref:System.Windows.Controls.RichTextBox>. See [RichTextBox Overview](../controls/richtextbox.md) for more information.
 
 > [!NOTE]
 > Flow content inside a <xref:System.Windows.Controls.RichTextBox> does not behave exactly like flow content contained in other controls. For example, there are no columns in a <xref:System.Windows.Controls.RichTextBox> and hence no automatic resizing behavior. Also, the typically built in features of flow content like search, viewing mode, page navigation, and zoom are not available within a <xref:System.Windows.Controls.RichTextBox>.
@@ -371,7 +371,7 @@ See [Typography in WPF](typography-in-wpf.md) for more information on typography
 - [Typography in WPF](typography-in-wpf.md)
 - [How-to Topics](flow-content-elements-how-to-topics.md)
 - [TextElement Content Model Overview](textelement-content-model-overview.md)
-- [RichTextBox Overview](../controls/richtextbox-overview.md)
+- [RichTextBox Overview](../controls/richtextbox.md)
 - [Documents in WPF](documents-in-wpf.md)
 - [Table Overview](table-overview.md)
 - [Annotations Overview](annotations-overview.md)
