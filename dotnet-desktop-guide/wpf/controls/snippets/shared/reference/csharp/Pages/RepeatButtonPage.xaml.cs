@@ -39,16 +39,5 @@ namespace AllTemplatesCS.Pages
             VolumeBar.Value = volumeValue;
         }
 
-        private void ScrollRight_Click(object sender, RoutedEventArgs e)
-        {
-            scrollValue = Math.Min(scrollValue + 1, 200);
-            ScrollPosition.Text = $"Position: {scrollValue}";
-        }
-
-        private void ScrollLeft_Click(object sender, RoutedEventArgs e)
-        {
-            scrollValue = Math.Max(scrollValue - 1, 0);
-            ScrollPosition.Text = $"Position: {scrollValue}";
-        }
     }
 }

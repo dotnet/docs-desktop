@@ -12,7 +12,7 @@
         <TextBlock Text="Counter Examples:" FontWeight="Bold" Margin="10"/>
         
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
-            <RepeatButton Content="?" Click="DecrementButton_Click" Width="30" Height="30" 
+            <RepeatButton Content="-" Click="DecrementButton_Click" Width="30" Height="30" 
                          Interval="100" Delay="500" FontSize="16"/>
             <TextBox x:Name="CounterValue" Text="50" Width="60" Height="30" 
                      TextAlignment="Center" VerticalContentAlignment="Center" Margin="5,0"/>
@@ -23,26 +23,13 @@
         <TextBlock Text="Volume Control:" FontWeight="Bold" Margin="10,20,10,10"/>
         
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
-            <RepeatButton Content="??" Click="VolumeDown_Click" Width="40" Height="30" 
+            <RepeatButton Content="&lt;&lt;" Click="VolumeDown_Click" Width="40" Height="30" 
                          Interval="150" Delay="300" FontSize="14"/>
             <ProgressBar x:Name="VolumeBar" Value="75" Minimum="0" Maximum="100" 
                         Width="120" Height="20" Margin="10,0"/>
-            <RepeatButton Content="??" Click="VolumeUp_Click" Width="40" Height="30" 
+            <RepeatButton Content="&gt;&gt;" Click="VolumeUp_Click" Width="40" Height="30" 
                          Interval="150" Delay="300" FontSize="14"/>
         </StackPanel>
         
-        <TextBlock Text="Scroll Simulation:" FontWeight="Bold" Margin="10,20,10,10"/>
-        
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
-            <RepeatButton Content="?" Click="ScrollLeft_Click" Width="30" Height="25" 
-                         Interval="50" Delay="200"/>
-            <TextBox x:Name="ScrollPosition" Text="Position: 0" Width="100" Height="25" 
-                     TextAlignment="Center" VerticalContentAlignment="Center" Margin="5,0" IsReadOnly="True"/>
-            <RepeatButton Content="?" Click="ScrollRight_Click" Width="30" Height="25" 
-                         Interval="50" Delay="200"/>
-        </StackPanel>
-        
-        <TextBlock Text="Hold buttons down to see continuous repetition" 
-                   FontStyle="Italic" FontSize="10" Margin="20" HorizontalAlignment="Center"/>
     </StackPanel>
 </Page>

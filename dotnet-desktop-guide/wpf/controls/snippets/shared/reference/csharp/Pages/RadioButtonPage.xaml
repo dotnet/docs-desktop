@@ -8,15 +8,19 @@
       mc:Ignorable="d" 
       d:DesignHeight="300" d:DesignWidth="400"
       Title="RadioButtonPage">
-    <StackPanel Margin="20" HorizontalAlignment="Center" VerticalAlignment="Center">
-        <TextBlock Text="Group 1:" FontWeight="Bold" Margin="5"/>
-        <RadioButton Content="Option A" GroupName="Group1" IsChecked="True" Margin="5"/>
-        <RadioButton Content="Option B" GroupName="Group1" Margin="5"/>
-        <RadioButton Content="Option C" GroupName="Group1" Margin="5"/>
-        
-        <TextBlock Text="Group 2:" FontWeight="Bold" Margin="5,15,5,5"/>
-        <RadioButton Content="Choice X" GroupName="Group2" Margin="5"/>
-        <RadioButton Content="Choice Y" GroupName="Group2" IsChecked="True" Margin="5"/>
-        <RadioButton Content="Choice Z" GroupName="Group2" IsEnabled="False" Margin="5"/>
+    <StackPanel Margin="20" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal">
+        <StackPanel>
+            <TextBlock Text="Group 1:" FontWeight="Bold" Margin="10,0"/>
+            <RadioButton Content="Option A" GroupName="Group1" IsChecked="True" Margin="5"/>
+            <RadioButton Content="Option B" GroupName="Group1" Margin="5"/>
+            <RadioButton Content="Option C" GroupName="Group1" Margin="5"/>
+        </StackPanel>
+
+        <StackPanel>
+            <TextBlock Text="Group 2:" FontWeight="Bold" Margin="10,0"/>
+            <RadioButton Content="Choice X" GroupName="Group2" Margin="5"/>
+            <RadioButton Content="Choice Y" GroupName="Group2" IsChecked="True" Margin="5"/>
+            <RadioButton Content="Choice Z" GroupName="Group2" IsEnabled="False" Margin="5"/>
+        </StackPanel>
     </StackPanel>
 </Page>

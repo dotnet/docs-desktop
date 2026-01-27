@@ -9,10 +9,8 @@
       d:DesignHeight="300" d:DesignWidth="400"
       Title="ScrollViewerPage">
     <StackPanel Margin="20">
-        <TextBlock Text="ScrollViewer Examples:" FontWeight="Bold" Margin="5"/>
-        
         <Border BorderBrush="Gray" BorderThickness="1" Margin="5">
-            <ScrollViewer Height="100" Width="250" 
+            <ScrollViewer Height="100" Width="300" 
                          VerticalScrollBarVisibility="Auto" 
                          HorizontalScrollBarVisibility="Auto">
                 <StackPanel>
@@ -30,13 +28,5 @@
             </ScrollViewer>
         </Border>
         
-        <Border BorderBrush="Gray" BorderThickness="1" Margin="5">
-            <ScrollViewer Height="80" Width="200" 
-                         VerticalScrollBarVisibility="Disabled" 
-                         HorizontalScrollBarVisibility="Auto">
-                <TextBlock Text="This is a long line of text that demonstrates horizontal scrolling only. The vertical scrollbar is disabled." 
-                          Margin="5" TextWrapping="NoWrap"/>
-            </ScrollViewer>
-        </Border>
     </StackPanel>
 </Page>

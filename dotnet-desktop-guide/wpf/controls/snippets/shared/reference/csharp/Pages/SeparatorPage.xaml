@@ -9,6 +9,7 @@
       d:DesignHeight="300" d:DesignWidth="400"
       Title="SeparatorPage">
     <StackPanel Margin="20" HorizontalAlignment="Center" VerticalAlignment="Center" Width="250">
+        <!--
         <TextBlock Text="Menu with Separators:" FontWeight="Bold" Margin="5"/>
         <Menu Background="LightGray" Margin="5">
             <MenuItem Header="File">
@@ -21,6 +22,7 @@
                 <MenuItem Header="Exit"/>
             </MenuItem>
         </Menu>
+        -->
         
         <TextBlock Text="ToolBar with Separators:" FontWeight="Bold" Margin="15,20,5,5"/>
         <ToolBar Margin="5">
@@ -43,10 +45,5 @@
             <Button Content="Button 3" Padding="10,5" Margin="2"/>
         </StackPanel>
         
-        <TextBlock Text="Custom Styled Separator:" FontWeight="Bold" Margin="15,20,5,5"/>
-        <Separator Background="DarkBlue" Height="3" Margin="10"/>
-        
-        <TextBlock Text="Separators help organize and group related items" 
-                   FontStyle="Italic" FontSize="10" Margin="10"/>
     </StackPanel>
 </Page>
