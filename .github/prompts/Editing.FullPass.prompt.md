@@ -1,6 +1,6 @@
 ---
 model: Claude Sonnet 4 (copilot)
-mode: agent
+agent: agent
 description: "Performs comprehensive editing pass following Microsoft Style Guide"
 ---
 

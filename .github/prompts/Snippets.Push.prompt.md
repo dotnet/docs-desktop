@@ -1,5 +1,5 @@
 ---
-mode: agent
+agent: agent
 model: Claude Sonnet 4 (copilot)
 description: Push inline code block snippets out of articles into standalone files with proper project structure.
 ---

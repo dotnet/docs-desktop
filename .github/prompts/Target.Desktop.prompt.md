@@ -1,6 +1,6 @@
 ---
 model: Claude Haiku 4.5 (copilot)
-mode: agent
+agent: agent
 description: "Migrate metadata service from dotnet-framework to dotnet-desktop for article."
 ---
 

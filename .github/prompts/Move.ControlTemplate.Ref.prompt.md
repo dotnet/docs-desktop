@@ -1,5 +1,6 @@
 ---
-mode: agent
+name: Move Control Template Reference
+agent: agent
 description: "Move control template information from type-styles-and-templates.md files into the main control markdown file."
 ---
 

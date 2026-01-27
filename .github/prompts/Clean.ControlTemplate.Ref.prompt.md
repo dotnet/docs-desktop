@@ -1,6 +1,6 @@
 ---
-mode: agent
-model: Claude Haiku 4.5 (copilot)
+name: Clean WPF Control Reference Articles
+agent: agent
 description: "Clean up and reorganize WPF control reference articles for consistent structure and improved readability."
 ---
 
@@ -68,6 +68,7 @@ Arrange article content in this specific order:
 ### 8. Edit metadata
 
 - Remove `f1_keywords` and `ms.assetid` metadata from the front matter
+- Keep `helpviewer_keywords` if it exists
 - Ensure `ai-usage: ai-assisted` is present in the front matter
 - Update `ms.date` to the current date in `MM/DD/YYYY` format, with the year 2025.
 

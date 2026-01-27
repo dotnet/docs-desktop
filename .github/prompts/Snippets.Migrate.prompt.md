@@ -1,5 +1,5 @@
 ---
-mode: agent
+agent: agent
 model: Claude Sonnet 4 (copilot)
 description: Migrate code from the old ~/samples/snippets/ location to the relative ./snippets location.
 ---
