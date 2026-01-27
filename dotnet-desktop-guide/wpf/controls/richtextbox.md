@@ -34,7 +34,7 @@ The features from the table above are covered in more detail later.
 
 ## Styles and templates
 
-You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information about modifying a control's template, see [Create a template for a control](../../../framework/wpf/controls/how-to-create-apply-template.md).
+You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information about modifying a control's template, see [Create a template for a control](how-to-create-apply-template.md).
 
 ### Content property
 
