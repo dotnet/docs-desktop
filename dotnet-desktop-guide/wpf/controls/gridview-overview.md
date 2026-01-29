@@ -25,17 +25,13 @@ The <xref:System.Windows.Controls.GridView> view mode displays a list of data it
 
 The following illustration shows a <xref:System.Windows.Controls.GridView> view of <xref:System.Windows.Controls.ListView> content.
 
-:::image type="content" source="./media/gridview-overview/styled-listview-content.png" alt-text="Screenshot that shows GridView view of ListView content.":::
+:::image type="content" source="./media/shared/listview.png" alt-text="Screenshot showing a ListView with GridView output displaying file information.":::
 
 <xref:System.Windows.Controls.GridView> columns are represented by <xref:System.Windows.Controls.GridViewColumn> objects, which can automatically size to their content. Optionally, you can explicitly set a <xref:System.Windows.Controls.GridViewColumn> to a specific width. You can resize columns by dragging the gripper between column headers. You can also dynamically add, remove, replace, and reorder columns because this functionality is built into <xref:System.Windows.Controls.GridView>. However, <xref:System.Windows.Controls.GridView> cannot directly update the data that it displays.
 
 The following example shows how to define a <xref:System.Windows.Controls.GridView> that displays employee data. In this example, <xref:System.Windows.Controls.ListView> defines the `EmployeeInfoDataSource` as the <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A>. The property definitions of <xref:System.Windows.Controls.GridViewColumn.DisplayMemberBinding%2A> bind <xref:System.Windows.Controls.GridViewColumn> content to `EmployeeInfoDataSource` data categories.
 
 [!code-xaml[ListViewCode#ListViewEmployee](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewCode/CSharp/Window1.xaml#listviewemployee)]
-
-The following illustration shows the table that the previous example creates. The GridView control displays data from an ItemsSource object:
-
-![Screenshot that shows a ListView with GridView output.](./media/gridview-overview/listview-gridview-output.jpg)
 
 <a name="GridViewLayoutandStyle"></a>
 

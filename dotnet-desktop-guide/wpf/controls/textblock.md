@@ -17,7 +17,7 @@ ms.assetid: ea5f7826-7a92-4de9-9eee-10ef700ce7b6
 
 The <xref:System.Windows.Controls.TextBlock> control provides flexible text support for WPF applications. Target this element primarily for basic UI scenarios that don't require more than one paragraph of text. It supports properties that enable precise control of presentation, such as <xref:System.Windows.Controls.TextBlock.FontFamily%2A>, <xref:System.Windows.Controls.TextBlock.FontSize%2A>, <xref:System.Windows.Controls.TextBlock.FontWeight%2A>, <xref:System.Windows.Controls.TextBlock.TextEffects%2A>, and <xref:System.Windows.Controls.TextBlock.TextWrapping%2A>. Add text content using the <xref:System.Windows.Controls.TextBlock.Text%2A> property. When you use it in XAML, content between the open and closing tag becomes the text of the element.
 
-:::image type="content" source="./media/shared/textblox.png" alt-text="Screenshot of a WPF app demonstrating differnece TextBlock styles.":::
+:::image type="content" source="./media/shared/textblock.png" alt-text="Screenshot of a WPF app demonstrating differnece TextBlock styles.":::
 
 ## Set text content
 

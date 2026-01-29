@@ -23,7 +23,7 @@ You can customize the appearance of the <xref:System.Windows.Window> control by 
 
 ### Content property
 
-The <xref:System.Windows.Window> control uses the <xref:System.Windows.Window.Content%2A> property to define the main content displayed within the window.
+The <xref:System.Windows.Window> control uses the `Content` property to define the main content displayed within the window.
 
 ### Parts
 
