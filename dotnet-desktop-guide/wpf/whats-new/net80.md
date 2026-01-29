@@ -4,7 +4,7 @@ description: Learn about what's new in Windows Presentation Foundation (WPF) for
 ms.date: 10/24/2024
 ms.service: dotnet-desktop
 ms.update-cycle: 365-days
-ms.topic: conceptual
+ms.topic: whats-new
 ---
 
 # What's new in WPF for .NET 8

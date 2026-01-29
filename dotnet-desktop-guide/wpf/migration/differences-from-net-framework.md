@@ -6,7 +6,7 @@ ms.date: 02/15/2023
 ms.service: dotnet-desktop
 ms.update-cycle: 365-days
 ms.author: adegeo
-ms.topic: conceptual
+ms.topic: concept-article
 ---
 
 # Differences with WPF .NET

@@ -4,7 +4,7 @@ description: Learn about what's new in Windows Forms. This article covers change
 ms.date: 09/09/2025
 ms.service: dotnet-desktop
 ms.update-cycle: 365-days
-ms.topic: conceptual
+ms.topic: whats-new
 ai-usage: ai-assisted
 ---
 
