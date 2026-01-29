@@ -292,9 +292,6 @@ items:
       href: tabcontrol.md
     - name: TextBlock
       href: textblock.md
-      items:
-      - name: TextBlock Overview
-        href: textblock-overview.md
     - name: TextBox
       href: textbox.md
       items:

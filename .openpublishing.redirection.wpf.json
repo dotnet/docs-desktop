@@ -437,6 +437,10 @@
             "redirect_url": "/dotnet/desktop/wpf/controls/richtextbox"
         },
         {
+            "source_path": "dotnet-desktop-guide/wpf/controls/textblock-overview.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/textblock"
+        },
+        {
             "source_path": "dotnet-desktop-guide/wpf/controls/textbox-how-to-topics.md",
             "redirect_url": "/dotnet/desktop/wpf/controls/textbox"
         },
