@@ -61,6 +61,7 @@
             "style": "asterisk"
         },
         "MD051": false,
+        "MD060": false,
         "DOCSMD010": false
     },
     "ignores": [

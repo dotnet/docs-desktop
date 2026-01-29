@@ -35,5 +35,5 @@ The following C# example shows an <xref:System.Windows.Controls.Button.OnClick%2
 
 ## See also
 
-- [TextBox Overview](textbox-overview.md)
-- [RichTextBox Overview](richtextbox-overview.md)
+- [TextBox](textbox.md)
+- [RichTextBox Overview](richtextbox.md)

@@ -30,5 +30,4 @@ In either of the following scenarios, the <xref:System.Windows.Controls.ToolTipS
 
 - <xref:System.Windows.Controls.ToolTip>
 - <xref:System.Windows.Controls.ToolTipService>
-- [How-to Topics](tooltip-how-to-topics.md)
-- [ToolTip Overview](tooltip-overview.md)
+- [ToolTip](tooltip.md)

@@ -65,7 +65,7 @@ By default, a vertical scrollbar is always shown, and a horizontal scrollbar bec
 
 ### Text in the User Interface
 
-Besides adding text to documents, text can obviously be used in application UI such as forms. WPF includes multiple controls for drawing text to the screen. Each control is targeted to a different scenario and has its own list of features and limitations. In general, the <xref:System.Windows.Controls.TextBlock> element should be used when limited text support is required, such as a brief sentence in a user interface (UI). <xref:System.Windows.Controls.Label> can be used when minimal text support is required. For more information, see [TextBlock Overview](../controls/textblock-overview.md).
+Besides adding text to documents, text can obviously be used in application UI such as forms. WPF includes multiple controls for drawing text to the screen. Each control is targeted to a different scenario and has its own list of features and limitations. In general, the <xref:System.Windows.Controls.TextBlock> element should be used when limited text support is required, such as a brief sentence in a user interface (UI). <xref:System.Windows.Controls.Label> can be used when minimal text support is required. For more information, see [TextBlock](../controls/textblock.md).
 
 <a name="packaging"></a>
 

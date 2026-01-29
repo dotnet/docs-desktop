@@ -25,4 +25,4 @@ The following example creates and uses an instance of <xref:System.Windows.Contr
 
 - <xref:System.Windows.Controls.DockPanel>
 - <xref:System.Windows.Controls.Dock>
-- [Panels Overview](panels-overview.md)
+- [Panel](panel.md)

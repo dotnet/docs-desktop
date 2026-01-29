@@ -43,4 +43,4 @@ The topics in this section describe how to use the <xref:System.Windows.Controls
 
 [Walkthrough: My first WPF desktop application](../get-started/walkthrough-my-first-wpf-desktop-application.md)
 
-[ScrollViewer Overview](scrollviewer-overview.md)
+[ScrollViewer](scrollviewer.md)

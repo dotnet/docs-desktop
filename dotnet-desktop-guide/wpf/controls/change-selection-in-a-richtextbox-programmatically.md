@@ -32,5 +32,5 @@ The following code programmatically selects some arbitrary text when the user cl
 
 ## See also
 
-- [RichTextBox Overview](richtextbox-overview.md)
-- [TextBox Overview](textbox-overview.md)
+- [RichTextBox Overview](richtextbox.md)
+- [TextBox](textbox.md)

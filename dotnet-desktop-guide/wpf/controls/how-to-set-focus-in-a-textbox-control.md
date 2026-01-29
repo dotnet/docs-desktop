@@ -34,5 +34,5 @@ The following example calls the <xref:System.Windows.UIElement.Focus%2A> method 
 
 - <xref:System.Windows.UIElement.Focusable%2A>
 - <xref:System.Windows.UIElement.IsFocused%2A>
-- [TextBox Overview](textbox-overview.md)
-- [RichTextBox Overview](richtextbox-overview.md)
+- [TextBox](textbox.md)
+- [RichTextBox Overview](richtextbox.md)

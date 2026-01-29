@@ -30,4 +30,4 @@ To implement custom <xref:System.Windows.Controls.Panel> behaviors, the example 
 ## See also
 
 - <xref:System.Windows.Controls.Panel>
-- [Panels Overview](panels-overview.md)
+- [Panel](panel.md)

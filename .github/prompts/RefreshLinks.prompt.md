@@ -1,6 +1,6 @@
 ---
 model: GPT-4.1 (copilot)
-mode: agent
+agent: agent
 description: "Updates link text to match target content headings"
 ---
 

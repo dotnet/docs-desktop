@@ -1,0 +1,18 @@
+<UserControl x:Class="BorderExamples.StyledBorder"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <!-- <StyledBorder> -->
+    <Border BorderThickness="3" CornerRadius="10" Padding="10">
+        <Border.BorderBrush>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="Blue" Offset="0" />
+                <GradientStop Color="LightBlue" Offset="1" />
+            </LinearGradientBrush>
+        </Border.BorderBrush>
+        <Border.Background>
+            <SolidColorBrush Color="LightGray" />
+        </Border.Background>
+        <TextBlock Text="Styled content" />
+    </Border>
+    <!-- </StyledBorder> -->
+</UserControl>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page x:Class="AllTemplatesCS.Pages.MenuPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AllTemplatesCS.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="400"
+      Title="MenuPage">
+    <StackPanel Margin="20">
+        <Menu Background="LightGray" Margin="5">
+            <MenuItem Header="_File">
+                <MenuItem Header="_New" InputGestureText="Ctrl+N"/>
+                <MenuItem Header="_Open" InputGestureText="Ctrl+O"/>
+                <MenuItem Header="_Save" InputGestureText="Ctrl+S"/>
+                <Separator/>
+                <MenuItem Header="Recent Files">
+                    <MenuItem Header="Document1.txt"/>
+                    <MenuItem Header="Document2.txt"/>
+                    <MenuItem Header="Document3.txt"/>
+                </MenuItem>
+                <Separator/>
+                <MenuItem Header="E_xit" InputGestureText="Alt+F4"/>
+            </MenuItem>
+            
+            <MenuItem Header="_Edit">
+                <MenuItem Header="_Undo" InputGestureText="Ctrl+Z"/>
+                <MenuItem Header="_Redo" InputGestureText="Ctrl+Y"/>
+                <Separator/>
+                <MenuItem Header="Cu_t" InputGestureText="Ctrl+X"/>
+                <MenuItem Header="_Copy" InputGestureText="Ctrl+C"/>
+                <MenuItem Header="_Paste" InputGestureText="Ctrl+V"/>
+                <Separator/>
+                <MenuItem Header="Select _All" InputGestureText="Ctrl+A"/>
+            </MenuItem>
+            
+            <MenuItem Header="_View">
+                <MenuItem Header="Zoom">
+                    <MenuItem Header="Zoom In" InputGestureText="Ctrl++"/>
+                    <MenuItem Header="Zoom Out" InputGestureText="Ctrl+-"/>
+                    <MenuItem Header="Reset Zoom" InputGestureText="Ctrl+0"/>
+                </MenuItem>
+                <Separator/>
+                <MenuItem Header="Show Toolbar" IsCheckable="True" IsChecked="True"/>
+                <MenuItem Header="Show Status Bar" IsCheckable="True"/>
+            </MenuItem>
+            
+            <MenuItem Header="_Help">
+                <MenuItem Header="User Manual"/>
+                <MenuItem Header="Keyboard Shortcuts"/>
+                <Separator/>
+                <MenuItem Header="About"/>
+            </MenuItem>
+        </Menu>
+        
+        <TextBlock Text="Sample application menu with File, Edit, View, and Help menus" 
+                   Margin="10" FontStyle="Italic"/>
+    </StackPanel>
+</Page>

@@ -38,4 +38,4 @@ The <xref:System.Windows.Controls.WrapPanel> element positions child elements in
 
 [Walkthrough: My first WPF desktop application](../get-started/walkthrough-my-first-wpf-desktop-application.md)
 
-[ScrollViewer Overview](scrollviewer-overview.md)
+[ScrollViewer](scrollviewer.md)
