@@ -1,7 +1,7 @@
 ---
 title: "Expander"
 description: Learn about an Expander, which allows a user to view a header and expand that header to see further details, or to collapse a section up to a header.
-ms.date: "10/30/2025"
+ms.date: 01/28/2026
 ms.service: dotnet-desktop
 ms.update-cycle: 365-days
 ai-usage: ai-assisted

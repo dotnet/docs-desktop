@@ -1,7 +1,7 @@
 ---
 title: "Slider"
 description: Learn how the Slider allows you select from a range of values by moving a Thumb along a Track.
-ms.date: "01/27/2025"
+ms.date: 01/28/2026
 ms.service: dotnet-framework
 ms.update-cycle: 1825-days
 helpviewer_keywords:

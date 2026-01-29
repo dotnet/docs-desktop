@@ -1,7 +1,7 @@
 ---
 title: "TabItem"
 description: Learn how to use TabItem elements to represent individual tabs within a TabControl, containing both the tab header and its associated content.
-ms.date: "01/26/2025"
+ms.date: 01/28/2026
 ms.service: dotnet-framework
 ms.update-cycle: 1825-days
 helpviewer_keywords:

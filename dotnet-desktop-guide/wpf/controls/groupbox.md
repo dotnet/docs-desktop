@@ -1,7 +1,7 @@
 ---
 title: "GroupBox"
 description: Learn about the GroupBox control, which is a HeaderedContentControl that provides a titled container for graphical user interface (GUI) content.
-ms.date: "01/22/2025"
+ms.date: 01/28/2026
 ms.service: dotnet-framework
 ms.update-cycle: 1825-days
 helpviewer_keywords:

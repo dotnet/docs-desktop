@@ -1,7 +1,7 @@
 ---
 title: "Calendar"
 description: Learn about the Calendar control in this article, which enables a user to select a date by using a visual calendar display.
-ms.date: 10/29/2025
+ms.date: 01/28/2026
 ms.service: dotnet-desktop
 ms.update-cycle: 365-days
 ai-usage: ai-assisted

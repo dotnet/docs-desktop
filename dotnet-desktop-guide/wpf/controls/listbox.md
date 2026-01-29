@@ -1,7 +1,7 @@
 ---
 title: "ListBox"
 description: Learn about the ListBox control in Windows Presentation Foundation (WPF), which provides users with a selectable list of items.
-ms.date: "01/23/2025"
+ms.date: 01/28/2026
 ms.service: dotnet-framework
 ms.update-cycle: 1825-days
 helpviewer_keywords:

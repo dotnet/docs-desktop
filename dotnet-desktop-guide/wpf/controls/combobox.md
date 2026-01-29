@@ -1,7 +1,7 @@
 ---
 title: "ComboBox"
 description: Learn about the ComboBox control, which presents users with a list of options. The list is shown and hidden as the control expands and collapses.
-ms.date: "10/29/2025"
+ms.date: 01/28/2026
 ms.service: dotnet-desktop
 ms.update-cycle: 365-days
 helpviewer_keywords:

@@ -1,7 +1,7 @@
 ---
 title: "DockPanel"
 description: Learn about the DockPanel element, which is used to position child content along the edge of a layout container.
-ms.date: "10/30/2025"
+ms.date: 01/28/2026
 ms.service: dotnet-desktop
 ms.update-cycle: 365-days
 ai-usage: ai-assisted

@@ -1,7 +1,7 @@
 ---
 title: "BulletDecorator"
 description: Learn about BulletDecorator in this article, including BulletDecorator's two content properties, Bullet and Child.
-ms.date: 10/29/2025
+ms.date: 01/28/2026
 ms.service: dotnet-desktop
 ms.update-cycle: 365-days
 helpviewer_keywords:

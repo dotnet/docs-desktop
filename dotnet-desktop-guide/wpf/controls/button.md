@@ -1,7 +1,7 @@
 ---
 title: "Button"
 description: Learn about the Button control in this article, which reacts to user input from a mouse, keyboard, stylus, or other input device.
-ms.date: 10/29/2025
+ms.date: 01/28/2026
 ms.service: dotnet-desktop
 ms.update-cycle: 365-days
 ai-usage: ai-assisted

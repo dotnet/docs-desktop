@@ -1,7 +1,7 @@
 ---
 title: "DatePicker"
 description: Learn about the DatePicker control, which allows the user to select a date by either typing it into a text field or by using a drop-down Calendar control.
-ms.date: "10/30/2025"
+ms.date: 01/28/2026
 ms.service: dotnet-desktop
 ms.update-cycle: 365-days
 helpviewer_keywords:

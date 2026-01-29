@@ -1,7 +1,7 @@
 ---
 title: "StatusBar"
 description: Learn how to use a StatusBar to display status information in a horizontal bar in an application window.
-ms.date: "01/26/2025"
+ms.date: 01/28/2026
 ms.service: dotnet-framework
 ms.update-cycle: 1825-days
 helpviewer_keywords:

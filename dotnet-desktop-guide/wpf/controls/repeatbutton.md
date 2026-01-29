@@ -2,7 +2,7 @@
 title: "RepeatButton"
 description: Learn about how the RepeatButton elements give you control over when and how the Click event occurs.
 ai-usage: ai-assisted
-ms.date: "01/26/2025"
+ms.date: 01/28/2026
 ms.service: dotnet-framework
 ms.update-cycle: 1825-days
 helpviewer_keywords:

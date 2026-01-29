@@ -1,7 +1,7 @@
 ---
 title: "ScrollViewer"
 description: Learn how the ScrollViewer control creates a scrollable region at which point content can be scrolled horizontally or vertically.
-ms.date: "01/26/2025"
+ms.date: 01/28/2026
 ms.service: dotnet-framework
 ms.update-cycle: 1825-days
 helpviewer_keywords:

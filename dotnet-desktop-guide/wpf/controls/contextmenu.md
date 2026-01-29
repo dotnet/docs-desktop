@@ -1,7 +1,7 @@
 ---
 title: "ContextMenu"
 description: Learn about the ContextMenu, which allows a control to display a Menu that is specific to the context of the control.
-ms.date: "10/29/2025"
+ms.date: 01/28/2026
 ms.service: dotnet-desktop
 ms.update-cycle: 365-days
 helpviewer_keywords:

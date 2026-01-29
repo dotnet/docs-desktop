@@ -1,7 +1,7 @@
 ---
 title: "DocumentViewer"
 description: Learn about the DocumentViewer control, which is used to view FixedDocument content in a paginated format.
-ms.date: "10/30/2025"
+ms.date: 01/28/2026
 ms.service: dotnet-desktop
 ms.update-cycle: 365-days
 helpviewer_keywords:

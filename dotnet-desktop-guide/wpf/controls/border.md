@@ -1,7 +1,7 @@
 ---
 title: "Border"
 description: Learn about the Border element in this article, including how to dynamically change the properties of the Border element.
-ms.date: 10/29/2025
+ms.date: 01/28/2026
 ms.service: dotnet-desktop
 ms.update-cycle: 365-days
 helpviewer_keywords:

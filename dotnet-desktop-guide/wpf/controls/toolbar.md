@@ -1,7 +1,7 @@
 ---
 title: "ToolBar"
 description: Learn about how the ToolBar control is a container for a group of commands or controls that are typically related in their function.
-ms.date: "01/28/2025"
+ms.date: 01/28/2026
 ms.service: dotnet-framework
 ms.update-cycle: 1825-days
 helpviewer_keywords:

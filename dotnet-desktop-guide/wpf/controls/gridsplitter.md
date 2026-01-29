@@ -1,7 +1,7 @@
 ---
 title: "GridSplitter"
 description: Learn about the GridSplitter, which redistributes space between columns or rows of a Grid control, via helpful links.
-ms.date: "01/22/2025"
+ms.date: 01/28/2026
 ms.service: dotnet-framework
 ms.update-cycle: 1825-days
 ai-usage: ai-assisted

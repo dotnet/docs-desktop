@@ -1,7 +1,7 @@
 ---
 title: "CheckBox"
 description: Learn how to use a CheckBox in the user interface (UI) of your application to represent options that a user can select or clear.
-ms.date: "10/29/2025"
+ms.date: 01/28/2026
 ms.service: dotnet-desktop
 ms.update-cycle: 365-days
 helpviewer_keywords:

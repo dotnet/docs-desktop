@@ -1,7 +1,7 @@
 ---
 title: "Grid"
 description: Learn about the Grid control, which is a layout control that enables flexible positioning of child elements in rows and columns.
-ms.date: 01/22/2025
+ms.date: 01/28/2026
 ms.service: dotnet-desktop
 ms.update-cycle: 365-days
 helpviewer_keywords:

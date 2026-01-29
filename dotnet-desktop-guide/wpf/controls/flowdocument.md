@@ -1,7 +1,7 @@
 ---
 title: "FlowDocument controls"
 description: Learn about the FlowDocument controls in WPF, which display FlowDocument content in different viewing modes including scrolling, paged, and multi-mode readers.
-ms.date: "10/30/2025"
+ms.date: 01/28/2026
 ms.service: dotnet-desktop
 ms.update-cycle: 365-days
 helpviewer_keywords:
