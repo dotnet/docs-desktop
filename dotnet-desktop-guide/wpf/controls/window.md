@@ -1,7 +1,8 @@
 ---
-title: "Window Styles and Templates"
-description: Learn about the styles and templates for the Window control allowing you to modify the default ControlTemplate to give the control a unique appearance.
-ms.date: "03/30/2017"
+title: "Window"
+description: Learn about the Window control, which represents a window in WPF applications and provides the foundation for creating standalone desktop applications.
+ai-usage: ai-assisted
+ms.date: "01/28/2025"
 ms.service: dotnet-framework
 ms.update-cycle: 1825-days
 helpviewer_keywords:
@@ -11,29 +12,30 @@ helpviewer_keywords:
   - "ControlTemplate [WPF], Window"
   - "Window [WPF], styles and templates"
   - "states [WPF], Window"
-ms.assetid: 2dfdf025-347b-4342-bf28-95206c273f35
 ---
-# Window Styles and Templates
+# Window
 
-This topic describes the styles and templates for the <xref:System.Windows.Window> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [Create a template for a control](how-to-create-apply-template.md).
+The <xref:System.Windows.Window> control represents a window in Windows Presentation Foundation (WPF) applications. It provides the foundation for creating standalone desktop applications with a title bar, borders, and standard window controls like minimize, maximize, and close buttons. Windows can host any WPF content and support features like dialog boxes, modeless windows, and application main windows.
 
-## Window Parts
+## Styles and templates
 
-The <xref:System.Windows.Window> control does not have any named parts.
+You can customize the appearance of the <xref:System.Windows.Window> control by modifying its default <xref:System.Windows.Controls.ControlTemplate>. For more information about customizing templates, see [Create a template for a control](how-to-create-apply-template.md).
 
-## Window States
+### Content property
 
-The following table lists the visual states for the <xref:System.Windows.Window> control.
+The <xref:System.Windows.Window> control uses the <xref:System.Windows.Window.Content%2A> property to define the main content displayed within the window.
 
-|VisualState Name|VisualStateGroup Name|Description|
-|-|-|-|
-|Valid|ValidationStates|The control uses the <xref:System.Windows.Controls.Validation> class and the <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `false`.|
-|InvalidFocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` has the control has focus.|
-|InvalidUnfocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` has the control does not have focus.|
+### Parts
 
-## Window ControlTemplate
+The <xref:System.Windows.Window> control doesn't define any named template parts.
 
-The following XAML is a generated copy of the <xref:System.Windows.Window> control template:
+### Visual states
+
+The <xref:System.Windows.Window> control doesn't define any visual states.
+
+### ControlTemplate
+
+The following XAML shows the default template for the <xref:System.Windows.Window> control:
 
 :::code language="xaml" source="./snippets/shared/templates/WindowTemplate.xaml":::
 

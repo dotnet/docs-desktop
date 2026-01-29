@@ -169,6 +169,10 @@
             "redirect_url": "/dotnet/desktop/wpf/controls/togglebutton"
         },
         {
+            "source_path": "dotnet-desktop-guide/wpf/controls/toolbar-overview.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/toolbar"
+        },
+        {
             "source_path": "dotnet-desktop-guide/wpf/controls/toolbar-styles-and-templates.md",
             "redirect_url": "/dotnet/desktop/wpf/controls/toolbar"
         },
@@ -178,6 +182,14 @@
         },
         {
             "source_path": "dotnet-desktop-guide/wpf/controls/treeview-styles-and-templates.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/treeview"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/treeview-how-to-topics.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/treeview"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/treeview-overview.md",
             "redirect_url": "/dotnet/desktop/wpf/controls/treeview"
         },
         {
@@ -451,6 +463,14 @@
         {
             "source_path": "dotnet-desktop-guide/wpf/controls/textbox-styles-and-templates.md",
             "redirect_url": "/dotnet/desktop/wpf/controls/textbox"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/tooltip-how-to-topics.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/tooltip"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/tooltip-overview.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/tooltip"
         }
     ]
 }

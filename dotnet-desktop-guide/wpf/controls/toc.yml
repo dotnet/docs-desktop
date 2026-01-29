@@ -326,40 +326,30 @@ items:
     - name: ToolBar
       href: toolbar.md
       items:
-      - name: ToolBar Overview
-        href: toolbar-overview.md
       - name: Style Controls on a ToolBar
         href: how-to-style-controls-on-a-toolbar.md
     - name: ToolTip
       href: tooltip.md
       items:
-      - name: ToolTip Overview
-        href: tooltip-overview.md
-      - name: How-to Topics
-        href: tooltip-how-to-topics.md
-        items:
-        - name: Position a ToolTip
-          href: how-to-position-a-tooltip.md
-        - name: Use the BetweenShowDelay Property
-          href: how-to-use-the-betweenshowdelay-property.md
+      - name: ToolTip
+        href: tooltip.md
+      - name: Position a ToolTip
+        href: how-to-position-a-tooltip.md
+      - name: Use the BetweenShowDelay Property
+        href: how-to-use-the-betweenshowdelay-property.md
     - name: TreeView
       href: treeview.md
       items:
-      - name: TreeView Overview
-        href: treeview-overview.md
-      - name: How-to Topics
-        href: treeview-how-to-topics.md
-        items:
-        - name: Create Simple or Complex TreeViews
-          href: how-to-create-simple-or-complex-treeviews.md
-        - name: Use SelectedValue, SelectedValuePath, and SelectedItem
-          href: how-to-use-selectedvalue-selectedvaluepath-and-selecteditem.md
-        - name: Bind a TreeView to Data That Has an Indeterminable Depth
-          href: how-to-bind-a-treeview-to-data-that-has-an-indeterminable-depth.md
-        - name: Improve the Performance of a TreeView
-          href: how-to-improve-the-performance-of-a-treeview.md
-        - name: Find a TreeViewItem in a TreeView
-          href: how-to-find-a-treeviewitem-in-a-treeview.md
+      - name: Create Simple or Complex TreeViews
+        href: how-to-create-simple-or-complex-treeviews.md
+      - name: Use SelectedValue, SelectedValuePath, and SelectedItem
+        href: how-to-use-selectedvalue-selectedvaluepath-and-selecteditem.md
+      - name: Bind a TreeView to Data That Has an Indeterminable Depth
+        href: how-to-bind-a-treeview-to-data-that-has-an-indeterminable-depth.md
+      - name: Improve the Performance of a TreeView
+        href: how-to-improve-the-performance-of-a-treeview.md
+      - name: Find a TreeViewItem in a TreeView
+        href: how-to-find-a-treeviewitem-in-a-treeview.md
     - name: WrapPanel
       href: wrappanel.md
     - name: Viewbox

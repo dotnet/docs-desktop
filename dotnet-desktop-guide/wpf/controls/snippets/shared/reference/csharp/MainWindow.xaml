@@ -64,6 +64,7 @@
                     <ListBoxItem Content="TabControl"/>
                     <ListBoxItem Content="TextBlock"/>
                     <ListBoxItem Content="TextBox"/>
+                    <ListBoxItem Content="Thumb"/>
                     <ListBoxItem Content="ToolBar"/>
                     <ListBoxItem Content="ToolTip"/>
                     <ListBoxItem Content="TreeView"/>

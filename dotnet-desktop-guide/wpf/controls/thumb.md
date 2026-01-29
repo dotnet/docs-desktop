@@ -1,7 +1,7 @@
 ---
-title: "Thumb Styles and Templates"
-description: Learn about the styles and templates for the Thumb control allowing you to modify the default ControlTemplate to give the control a unique appearance.
-ms.date: "03/30/2017"
+title: "Thumb"
+description: Learn about the Thumb control, which provides a dragging functionality for scroll bars, sliders, and other controls.
+ms.date: "01/28/2025"
 ms.service: dotnet-framework
 ms.update-cycle: 1825-days
 helpviewer_keywords:
@@ -11,49 +11,47 @@ helpviewer_keywords:
   - "Thumb [WPF], styles and templates"
   - "ControlTemplate [WPF], Thumb"
   - "parts [WPF], Thumb"
-ms.assetid: 86a49235-62d9-414e-923e-53126e3f930a
+ai-usage: ai-assisted
 ---
 
-# Thumb Styles and Templates
+# Thumb
 
-This topic describes the styles and templates for the <xref:System.Windows.Controls.Primitives.Thumb> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [Create a template for a control](how-to-create-apply-template.md).
+The <xref:System.Windows.Controls.Primitives.Thumb> control is a small control that can be dragged by the user. It's typically used as part of other controls such as scroll bars and sliders to provide dragging functionality. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance.
 
-## Thumb Parts
+:::image type="content" source="./media/shared/thumb.png" alt-text="A screenshot of vertical and horizontal scroll bars in WPF.":::
 
-The <xref:System.Windows.Controls.Primitives.Thumb> control does not have any named parts.
+## Styles and templates
 
-## Thumb States
+This section describes the styles and templates for the <xref:System.Windows.Controls.Primitives.Thumb> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [Styles and templates overview](styles-templates-overview.md) and [Create a template for a control](how-to-create-apply-template.md).
+
+### Content property
+
+This control doesn't define a content property.
+
+### Parts
+
+This control doesn't define any template parts.
+
+### Visual states
 
 The following table lists the visual states for the <xref:System.Windows.Controls.Primitives.Thumb> control.
 
 |VisualState Name|VisualStateGroup Name|Description|
 |-|-|-|
-|Normal|CommonStates|The default state.|
-|MouseOver|CommonStates|The mouse pointer is positioned over the control.|
-|Pressed|CommonStates|The control is pressed.|
+|Normal|CommonStates|The control is in its normal state.|
+|MouseOver|CommonStates|The mouse is over the control.|
+|Pressed|CommonStates|The control is pressed (IsDragging is true).|
 |Disabled|CommonStates|The control is disabled.|
-|Focused|FocusStates|The control has focus.|
-|Unfocused|FocusStates|The control does not have focus.|
-|Valid|ValidationStates|The control uses the <xref:System.Windows.Controls.Validation> class and the <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `false`.|
-|InvalidFocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` has the control has focus.|
-|InvalidUnfocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` has the control does not have focus.|
-
-## Thumb ControlTemplate Example
-
-The following example shows how to define a <xref:System.Windows.Controls.ControlTemplate> for the <xref:System.Windows.Controls.Primitives.Thumb> control.
-
-[!code-xaml[ControlTemplateExamples#Thumb](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/slider.xaml#thumb)]
-
-The preceding example uses one or more of the following resources.
-
-[!code-xaml[ControlTemplateExamples#Resources](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/shared.xaml#resources)]
-
-For the complete sample, see [Styling with ControlTemplates Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Styles%20&%20Templates/IntroToStylingAndTemplating).
+|Focused|FocusStates|The control has keyboard focus.|
+|Unfocused|FocusStates|The control doesn't have keyboard focus.|
+|Valid|ValidationStates|The control is valid and has no validation errors.|
+|InvalidFocused|ValidationStates|The control has a validation error and has keyboard focus.|
+|InvalidUnfocused|ValidationStates|The control has a validation error but doesn't have keyboard focus.|
 
 ## See also
 
-- <xref:System.Windows.FrameworkElement.Style%2A>
-- <xref:System.Windows.Controls.ControlTemplate>
 - [Control Customization](control-customization.md)
-- [Styling and Templating](styles-templates-overview.md)
 - [Create a template for a control](how-to-create-apply-template.md)
+- [Styling and Templating](styles-templates-overview.md)
+- <xref:System.Windows.Controls.ControlTemplate>
+- <xref:System.Windows.FrameworkElement.Style%2A>

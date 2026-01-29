@@ -6,7 +6,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:AllTemplatesCS.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="300" d:DesignWidth="400"
+      d:DesignHeight="300" d:DesignWidth="600"
       Title="ToolBarPage">
     <Grid Margin="20">
         <Grid.RowDefinitions>
@@ -16,15 +16,39 @@
         
         <ToolBarTray Grid.Row="0">
             <ToolBar>
-                <Button Content="New" ToolTip="Create new file"/>
-                <Button Content="Open" ToolTip="Open file"/>
-                <Button Content="Save" ToolTip="Save file"/>
+                <Button ToolTip="Create new file">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="📄" FontSize="16" Margin="0,0,4,0"/>
+                    </StackPanel>
+                </Button>
+                <Button ToolTip="Open file">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="📁" FontSize="16" Margin="0,0,4,0"/>
+                    </StackPanel>
+                </Button>
+                <Button ToolTip="Save file">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="💾" FontSize="16" Margin="0,0,4,0"/>
+                    </StackPanel>
+                </Button>
                 <Separator/>
-                <Button Content="Cut" ToolTip="Cut"/>
-                <Button Content="Copy" ToolTip="Copy"/>
-                <Button Content="Paste" ToolTip="Paste"/>
+                <Button ToolTip="Cut">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="✂️" FontSize="16" Margin="0,0,4,0"/>
+                    </StackPanel>
+                </Button>
+                <Button ToolTip="Copy">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="📋" FontSize="16" Margin="0,0,4,0"/>
+                    </StackPanel>
+                </Button>
+                <Button ToolTip="Paste">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="📄" FontSize="16" Margin="0,0,4,0"/>
+                    </StackPanel>
+                </Button>
                 <Separator/>
-                <ComboBox Width="80" SelectedIndex="0" ToolTip="Font size">
+                <ComboBox Width="100" SelectedIndex="0" ToolTip="Font size">
                     <ComboBoxItem Content="10"/>
                     <ComboBoxItem Content="12"/>
                     <ComboBoxItem Content="14"/>
@@ -32,17 +56,44 @@
                 </ComboBox>
             </ToolBar>
             <ToolBar>
-                <ToggleButton Content="Bold" ToolTip="Bold"/>
-                <ToggleButton Content="Italic" ToolTip="Italic"/>
-                <ToggleButton Content="Underline" ToolTip="Underline"/>
+                <ToggleButton ToolTip="Bold">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="B" FontWeight="Bold" FontSize="16" Margin="0,0,4,0"/>
+                    </StackPanel>
+                </ToggleButton>
+                <ToggleButton ToolTip="Italic">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="I" FontStyle="Italic" FontSize="16" Margin="0,0,4,0"/>
+                    </StackPanel>
+                </ToggleButton>
+                <ToggleButton ToolTip="Underline">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="U" TextDecorations="Underline" FontSize="16" Margin="0,0,4,0"/>
+                    </StackPanel>
+                </ToggleButton>
                 <Separator/>
-                <Button Content="Left" ToolTip="Align left"/>
-                <Button Content="Center" ToolTip="Align center"/>
-                <Button Content="Right" ToolTip="Align right"/>
+                <Button ToolTip="Align left" ToolBar.OverflowMode="Always">
+                    <Canvas Width="16" Height="16">
+                        <Line X1="0" Y1="2" X2="16" Y2="2" Stroke="Black" StrokeThickness="2"/>
+                        <Line X1="0" Y1="7" X2="12" Y2="7" Stroke="Black" StrokeThickness="2"/>
+                        <Line X1="0" Y1="12" X2="14" Y2="12" Stroke="Black" StrokeThickness="2"/>
+                    </Canvas>
+                </Button>
+                <Button ToolTip="Align center" ToolBar.OverflowMode="Always">
+                    <Canvas Width="16" Height="16">
+                        <Line X1="0" Y1="2" X2="16" Y2="2" Stroke="Black" StrokeThickness="2"/>
+                        <Line X1="2" Y1="7" X2="14" Y2="7" Stroke="Black" StrokeThickness="2"/>
+                        <Line X1="1" Y1="12" X2="15" Y2="12" Stroke="Black" StrokeThickness="2"/>
+                    </Canvas>
+                </Button>
+                <Button ToolTip="Align right" ToolBar.OverflowMode="Always">
+                    <Canvas Width="16" Height="16">
+                        <Line X1="0" Y1="2" X2="16" Y2="2" Stroke="Black" StrokeThickness="2"/>
+                        <Line X1="4" Y1="7" X2="16" Y2="7" Stroke="Black" StrokeThickness="2"/>
+                        <Line X1="2" Y1="12" X2="16" Y2="12" Stroke="Black" StrokeThickness="2"/>
+                    </Canvas>
+                </Button>
             </ToolBar>
         </ToolBarTray>
-        
-        <TextBlock Grid.Row="1" Text="ToolBar controls provide quick access to commonly used commands and settings." 
-                   TextWrapping="Wrap" VerticalAlignment="Center" HorizontalAlignment="Center" MaxWidth="300"/>
     </Grid>
 </Page>

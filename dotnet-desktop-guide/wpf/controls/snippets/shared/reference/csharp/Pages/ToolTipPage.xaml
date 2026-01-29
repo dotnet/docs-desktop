@@ -10,10 +10,10 @@
       Title="ToolTipPage">
     <StackPanel Margin="20" HorizontalAlignment="Center" VerticalAlignment="Center">
         <TextBlock Text="ToolTip Examples" FontSize="16" FontWeight="Bold" Margin="0,0,0,20"/>
-        
-        <Button Content="Simple ToolTip" Padding="10,5" ToolTip="This is a simple tooltip"/>
-        
-        <Button Content="Rich ToolTip" Padding="10,5">
+
+        <Button Content="Simple ToolTip" Padding="10,5" ToolTip="This is a simple tooltip" Margin="0,10"/>
+
+        <Button Content="Rich ToolTip" Padding="10,5" Margin="0,10">
             <Button.ToolTip>
                 <ToolTip>
                     <StackPanel>
@@ -27,11 +27,11 @@
             </Button.ToolTip>
         </Button>
         
-        <TextBlock Text="Hover over the buttons to see their tooltips" FontStyle="Italic"/>
+        <TextBlock Text="Hover over the buttons to see their tooltips" FontStyle="Italic" Margin="0,10"/>
         
         <Rectangle Width="100" Height="50" Fill="LightBlue" 
-                   ToolTip="This rectangle also has a tooltip"/>
-        
-        <CheckBox Content="CheckBox with tooltip" ToolTip="Check or uncheck this option"/>
+                   ToolTip="This rectangle also has a tooltip" Margin="0,10"/>
+
+        <CheckBox Content="CheckBox with tooltip" ToolTip="Check or uncheck this option" Margin="0,10"/>
     </StackPanel>
 </Page>
