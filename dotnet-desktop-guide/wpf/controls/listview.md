@@ -17,7 +17,7 @@ dev_langs:
 
 The <xref:System.Windows.Controls.ListView> control provides the infrastructure to display a set of data items using a different layout or view. For example, you might want to display data items in a table and also sort its columns.
 
-:::image type="content" source="./media/gridview-overview/listview-gridview-output.jpg" alt-text="Screenshot showing a ListView with GridView output displaying employee information.":::
+:::image type="content" source="./media/shared/listview.png" alt-text="Screenshot showing a ListView with GridView output displaying file information.":::
 
 > [!NOTE]
 > The types referenced in this article are available in the [Code reference](#code-reference) section.
