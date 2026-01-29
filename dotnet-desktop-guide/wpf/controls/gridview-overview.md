@@ -168,6 +168,6 @@ The rows in the following table show groups of properties that perform the same 
 - <xref:System.Windows.Controls.GridViewRowPresenter>
 - <xref:System.Windows.Controls.GridViewHeaderRowPresenter>
 - <xref:System.Windows.Controls.ViewBase>
-- [ListView Overview](listview-overview.md)
+- [ListView](listview.md)
 - [Sort a GridView Column When a Header Is Clicked](how-to-sort-a-gridview-column-when-a-header-is-clicked.md)
-- [How-to Topics](listview-how-to-topics.md)
+- [ListView](listview.md)

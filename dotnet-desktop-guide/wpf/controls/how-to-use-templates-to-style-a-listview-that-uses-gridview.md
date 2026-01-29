@@ -39,5 +39,5 @@ The following example shows how to use this <xref:System.Windows.DataTemplate> t
 - <xref:System.Windows.Controls.ListView>
 - <xref:System.Windows.Controls.GridView>
 - [GridView Overview](gridview-overview.md)
-- [How-to Topics](listview-how-to-topics.md)
-- [ListView Overview](listview-overview.md)
+- [ListView](listview.md)
+- [ListView](listview.md)

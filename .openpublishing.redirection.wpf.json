@@ -125,6 +125,18 @@
             "redirect_url": "/dotnet/desktop/wpf/controls/listview"
         },
         {
+            "source_path": "dotnet-desktop-guide/wpf/controls/listview-overview.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/listview"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/listview-overviews.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/listview"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/listview-how-to-topics.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/listview"
+        },
+        {
             "source_path": "dotnet-desktop-guide/wpf/controls/menu-styles-and-templates.md",
             "redirect_url": "/dotnet/desktop/wpf/controls/menu"
         },

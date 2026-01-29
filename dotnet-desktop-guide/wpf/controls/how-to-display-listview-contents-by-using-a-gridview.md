@@ -27,6 +27,6 @@ The following illustration shows how this example appears.
 
 - <xref:System.Windows.Controls.ListView>
 - <xref:System.Windows.Controls.GridView>
-- [ListView Overview](listview-overview.md)
+- [ListView](listview.md)
 - [GridView Overview](gridview-overview.md)
-- [How-to Topics](listview-how-to-topics.md)
+- [ListView](listview.md)

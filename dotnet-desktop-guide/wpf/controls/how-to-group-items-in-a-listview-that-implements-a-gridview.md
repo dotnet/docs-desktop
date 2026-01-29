@@ -29,6 +29,6 @@ The following example sets the <xref:System.Windows.Controls.ItemsControl.ItemsS
 
 - <xref:System.Windows.Controls.ListView>
 - <xref:System.Windows.Controls.GridView>
-- [How-to Topics](listview-how-to-topics.md)
-- [ListView Overview](listview-overview.md)
+- [ListView](listview.md)
+- [ListView](listview.md)
 - [GridView Overview](gridview-overview.md)

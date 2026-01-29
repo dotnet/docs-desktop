@@ -160,19 +160,14 @@ items:
       - name: Improve the Scrolling Performance of a ListBox
         href: how-to-improve-the-scrolling-performance-of-a-listbox.md
     - name: ListView
-      href: listview.md
       items:
-      - name: Overviews
-        href: listview-overviews.md
-        items:
-        - name: ListView Overview
-          href: listview-overview.md
-        - name: GridView Overview
-          href: gridview-overview.md
-        - name: GridView Column Header Styles and Templates Overview
-          href: gridview-column-header-styles-and-templates-overview.md
+      - name: ListView Overview
+        href: listview.md
+      - name: GridView Overview
+        href: gridview-overview.md
+      - name: GridView Column Header Styles and Templates Overview
+        href: gridview-column-header-styles-and-templates-overview.md
       - name: How-to Topics
-        href: listview-how-to-topics.md
         items:
         - name: Sort a GridView Column When a Header Is Clicked
           href: how-to-sort-a-gridview-column-when-a-header-is-clicked.md
