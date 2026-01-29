@@ -435,6 +435,18 @@
         {
             "source_path": "dotnet-desktop-guide/wpf/controls/richtextbox-overview.md",
             "redirect_url": "/dotnet/desktop/wpf/controls/richtextbox"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/textbox-how-to-topics.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/textbox"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/textbox-overview.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/textbox"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/textbox-styles-and-templates.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/textbox"
         }
     ]
 }

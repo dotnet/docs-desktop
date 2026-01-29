@@ -31,5 +31,5 @@ This example shows how to use the <xref:System.Windows.Controls.TextBox.Text%2A>
 
 ## See also
 
-- [TextBox Overview](textbox-overview.md)
+- [TextBox](textbox.md)
 - [RichTextBox Overview](richtextbox.md)

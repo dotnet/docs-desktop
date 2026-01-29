@@ -29,5 +29,5 @@ The following example shows how to enable real-time spell checking in a <xref:Sy
 ## See also
 
 - [Use Spell Checking with a Context Menu](how-to-use-spell-checking-with-a-context-menu.md)
-- [TextBox Overview](textbox-overview.md)
+- [TextBox](textbox.md)
 - [RichTextBox Overview](richtextbox.md)

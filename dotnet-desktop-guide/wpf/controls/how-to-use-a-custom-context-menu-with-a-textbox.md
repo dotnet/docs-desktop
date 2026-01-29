@@ -39,5 +39,5 @@ To restore the default context menu, use the <xref:System.Windows.DependencyObje
 ## See also
 
 - [Use Spell Checking with a Context Menu](how-to-use-spell-checking-with-a-context-menu.md)
-- [TextBox Overview](textbox-overview.md)
+- [TextBox](textbox.md)
 - [RichTextBox Overview](richtextbox.md)

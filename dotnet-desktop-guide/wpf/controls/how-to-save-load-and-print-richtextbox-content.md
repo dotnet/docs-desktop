@@ -37,4 +37,4 @@ Below is the code behind for the example.
 ## See also
 
 - [RichTextBox Overview](richtextbox.md)
-- [TextBox Overview](textbox-overview.md)
+- [TextBox](textbox.md)

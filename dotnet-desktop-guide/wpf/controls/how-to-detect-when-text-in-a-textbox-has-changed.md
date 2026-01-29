@@ -48,5 +48,5 @@ Comments
 ## See also
 
 - <xref:System.Windows.Controls.TextChangedEventArgs>
-- [TextBox Overview](textbox-overview.md)
+- [TextBox](textbox.md)
 - [RichTextBox Overview](richtextbox.md)

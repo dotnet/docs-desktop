@@ -298,10 +298,7 @@ items:
     - name: TextBox
       href: textbox.md
       items:
-      - name: TextBox Overview
-        href: textbox-overview.md
       - name: How-to Topics
-        href: textbox-how-to-topics.md
         items:
         - name: Create a Multiline TextBox Control
           href: how-to-create-a-multiline-textbox-control.md

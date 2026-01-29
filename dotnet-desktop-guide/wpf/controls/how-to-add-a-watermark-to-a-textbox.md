@@ -105,6 +105,6 @@ The following code is the complete `TextBoxHelper` class.
 
 ## See also
 
-- [TextBox Overview](textbox-overview.md)
+- [TextBox](textbox.md)
 - [Adorners](adorners.md)
 - [Attached Properties Overview](../properties/attached-properties-overview.md)

@@ -13,12 +13,79 @@ ms.assetid: 2512a277-e9d8-4de8-a12f-2bd95e8e7b60
 ---
 # TextBox
 
-The <xref:System.Windows.Controls.TextBox> control provides support for basic text input in WPF applications.
+The <xref:System.Windows.Controls.TextBox> class enables you to display or edit unformatted text. A common use of a <xref:System.Windows.Controls.TextBox> is editing unformatted text in a form. For example, a form asking for the user's name, phone number, and other information would use <xref:System.Windows.Controls.TextBox> controls for text input. This article introduces the <xref:System.Windows.Controls.TextBox> class and provides examples of how to use it in both Extensible Application Markup Language (XAML) and C#.
 
-## In This Section
+## TextBox or RichTextBox?
 
-[TextBox Overview](textbox-overview.md)
-[How-to Topics](textbox-how-to-topics.md)
+Both <xref:System.Windows.Controls.TextBox> and <xref:System.Windows.Controls.RichTextBox> allow users to input text, but the two controls are used for different scenarios. A <xref:System.Windows.Controls.TextBox> requires less system resources than a <xref:System.Windows.Controls.RichTextBox>, so it's ideal when only plain text needs to be edited (that is, usage in a form). A <xref:System.Windows.Controls.RichTextBox> is a better choice when it's necessary for the user to edit formatted text, images, tables, or other supported content. For example, editing a document, article, or blog that requires formatting, images, and other content is best accomplished using a <xref:System.Windows.Controls.RichTextBox>. The following table summarizes the primary features of <xref:System.Windows.Controls.TextBox> and <xref:System.Windows.Controls.RichTextBox>.
+
+|Control|Real-time Spellchecking|Context Menu|Formatting commands like <xref:System.Windows.Documents.EditingCommands.ToggleBold%2A> (Ctr+B)|<xref:System.Windows.Documents.FlowDocument> content like images, paragraphs, tables, and others|
+|-------------|------------------------------|------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|<xref:System.Windows.Controls.TextBox>|Yes|Yes|No|No.|
+|<xref:System.Windows.Controls.RichTextBox>|Yes|Yes|Yes (see [RichTextBox Overview](richtextbox.md))|Yes (see [RichTextBox Overview](richtextbox.md))|
+
+> [!NOTE]
+> Although <xref:System.Windows.Controls.TextBox> doesn't support formatting related editing commands like <xref:System.Windows.Documents.EditingCommands.ToggleBold%2A> (Ctr+B), many basic commands are supported by both controls such as <xref:System.Windows.Documents.EditingCommands.MoveToLineEnd%2A>. For more information, see <xref:System.Windows.Documents.EditingCommands>.
+
+Features supported by <xref:System.Windows.Controls.TextBox> are covered in the sections below. For more information about <xref:System.Windows.Controls.RichTextBox>, see [RichTextBox Overview](richtextbox.md).
+
+### Real-time spellchecking
+
+You can enable real-time spellchecking in a <xref:System.Windows.Controls.TextBox> or <xref:System.Windows.Controls.RichTextBox>. When spellchecking is turned on, a red line appears underneath any misspelled words (see the following picture).
+
+![Textbox with spell&#45;checking](./media/editing-textbox-with-spellchecking.png "Editing_TextBox_with_Spellchecking")
+
+To learn how to enable spellchecking, see [Enable Spell Checking in a Text Editing Control](how-to-enable-spell-checking-in-a-text-editing-control.md).
+
+### Context menu
+
+By default, both <xref:System.Windows.Controls.TextBox> and <xref:System.Windows.Controls.RichTextBox> have a context menu that appears when a user right-clicks inside the control. The context menu allows the user to cut, copy, or paste (see the following picture).
+
+![TextBox with context menu](./media/editing-textbox-with-context-menu.png "Editing_TextBox_with_Context_Menu")
+
+You can create your own custom context menu to override the default behavior. For more information, see [Use a Custom Context Menu with a TextBox](how-to-use-a-custom-context-menu-with-a-textbox.md).
+
+## Creating TextBoxes
+
+A <xref:System.Windows.Controls.TextBox> can be a single line in height or comprise multiple lines. A single line <xref:System.Windows.Controls.TextBox> is best for inputting small amounts of plain text (for example, "Name", "Phone Number", and other information in a form). The following example shows how to create a single line <xref:System.Windows.Controls.TextBox>.
+
+[!code-xaml[TextBoxMiscSnippets_snip#BasicTextBoxExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBoxMiscSnippets_snip/csharp/basictextboxexample.xaml#basictextboxexamplewholepage)]
+
+You can also create a <xref:System.Windows.Controls.TextBox> that allows the user to enter multiple lines of text. For example, if your form asked for a biographical sketch of the user, you would want to use a <xref:System.Windows.Controls.TextBox> that supports multiple lines of text. The following example shows how to use Extensible Application Markup Language (XAML) to define a <xref:System.Windows.Controls.TextBox> control that automatically expands to accommodate multiple lines of text.
+
+[!code-xaml[TextBox_MiscCode#_MultilineTextBoxXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/TextBox_MiscCode/CSharp/Window1.xaml#_multilinetextboxxaml)]
+
+Setting the <xref:System.Windows.Controls.TextBox.TextWrapping%2A> attribute to `Wrap` causes text to wrap to a new line when the edge of the <xref:System.Windows.Controls.TextBox> control is reached, automatically expanding the <xref:System.Windows.Controls.TextBox> control to include room for a new line, if necessary.
+
+Setting the <xref:System.Windows.Controls.Primitives.TextBoxBase.AcceptsReturn%2A> attribute to `true` causes a new line to be inserted when the RETURN key is pressed, once again automatically expanding the <xref:System.Windows.Controls.TextBox> to include room for a new line, if necessary.
+
+The <xref:System.Windows.Controls.Primitives.TextBoxBase.VerticalScrollBarVisibility%2A> attribute adds a scroll bar to the <xref:System.Windows.Controls.TextBox>, so that the contents of the <xref:System.Windows.Controls.TextBox> can be scrolled through if the <xref:System.Windows.Controls.TextBox> expands beyond the size of the frame or window that encloses it.
+
+For more information on different tasks associated with using a <xref:System.Windows.Controls.TextBox>, see the how-to topics listed below.
+
+## Detect when content changes
+
+Usually the <xref:System.Windows.Controls.Primitives.TextBoxBase.TextChanged> event should be used to detect whenever the text in a <xref:System.Windows.Controls.TextBox> or <xref:System.Windows.Controls.RichTextBox> changes, rather than <xref:System.Windows.UIElement.KeyDown> as you might expect. For an example, see [Detect When Text in a TextBox Has Changed](how-to-detect-when-text-in-a-textbox-has-changed.md).
+
+## How-to topics
+
+The following table lists common tasks for the TextBox control.
+
+| Task | Article |
+|------|---------|
+| Create a multiline TextBox control | [Create a Multiline TextBox Control](how-to-create-a-multiline-textbox-control.md) |
+| Detect when text in a TextBox has changed | [Detect When Text in a TextBox Has Changed](how-to-detect-when-text-in-a-textbox-has-changed.md) |
+| Enable tab characters in a TextBox control | [Enable Tab Characters in a TextBox Control](how-to-enable-tab-characters-in-a-textbox-control.md) |
+| Get a collection of lines from a TextBox | [Get a Collection of Lines from a TextBox](how-to-get-a-collection-of-lines-from-a-textbox.md) |
+| Make a TextBox control read-only | [Make a TextBox Control Read-Only](how-to-make-a-textbox-control-read-only.md) |
+| Position the cursor at the beginning or end of text in a TextBox control | [Position the Cursor at the Beginning or End of Text in a TextBox Control](position-the-cursor-at-the-beginning-or-end-of-text.md) |
+| Retrieve a text selection | [Retrieve a Text Selection](how-to-retrieve-a-text-selection.md) |
+| Set focus in a TextBox control | [Set Focus in a TextBox Control](how-to-set-focus-in-a-textbox-control.md) |
+| Set the text content of a TextBox control | [Set the Text Content of a TextBox Control](how-to-set-the-text-content-of-a-textbox-control.md) |
+| Enable spell checking in a text editing control | [Enable Spell Checking in a Text Editing Control](how-to-enable-spell-checking-in-a-text-editing-control.md) |
+| Use a custom context menu with a TextBox | [Use a Custom Context Menu with a TextBox](how-to-use-a-custom-context-menu-with-a-textbox.md) |
+| Use spell checking with a context menu | [Use Spell Checking with a Context Menu](how-to-use-spell-checking-with-a-context-menu.md) |
+| Add a watermark to a TextBox | [Add a Watermark to a TextBox](how-to-add-a-watermark-to-a-textbox.md) |
 
 ## Reference
 
