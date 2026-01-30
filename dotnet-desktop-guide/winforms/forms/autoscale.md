@@ -1,7 +1,7 @@
 ---
 title: "Automatic form scaling"
 description: "Learn how Windows Forms for .NET handles scaling the UI with DPI awareness and automatic scaling modes."
-ms.date: 10/26/2020
+ms.date: 01/21/2026
 ms.service: dotnet-desktop
 ms.update-cycle: 365-days
 ms.topic: overview
