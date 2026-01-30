@@ -23,14 +23,14 @@ For the most part, automatic scaling works as expected in Windows Forms. However
 
 Modern .NET (6.0+) handles DPI scaling differently than .NET Framework. In .NET 6 and later versions, DPI awareness is configured through the project file using the `ApplicationHighDpiMode` property, which is set to `SystemAware` by default. This configuration works with the application bootstrap system to automatically configure DPI handling when your application starts.
 
-The recommended DPI mode for modern Windows Forms applications is `PerMonitorV2`, which provides the best scaling experience across multiple monitors with different DPI settings. With `PerMonitorV2`, your application dynamically adjusts when moved between monitors with different scaling settings.
+The default and recommended DPI mode for modern Windows Forms applications is `SystemAware`. This mode queries for the DPI setting once at application startup and uses that value throughout the application's lifetime, providing consistent scaling behavior.
 
 Configure DPI mode in your project file:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <ApplicationHighDpiMode>PerMonitorV2</ApplicationHighDpiMode>
+    <ApplicationHighDpiMode>SystemAware</ApplicationHighDpiMode>
   </PropertyGroup>
 </Project>
 ```
