@@ -4,7 +4,7 @@ description: Learn about the Windows Presentation Foundation (WPF) dynamic data 
 ms.date: 10/22/2019
 ms.service: dotnet-framework
 ms.update-cycle: 1825-days
-ms.topic: conceptual
+ms.topic: concept-article
 ---
 # Overview of WPF data binding with LINQ to XML
 

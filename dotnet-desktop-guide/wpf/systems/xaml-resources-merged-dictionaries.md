@@ -6,7 +6,7 @@ ms.author: adegeo
 ms.date: 10/24/2024
 ms.service: dotnet-desktop
 ms.update-cycle: 365-days
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: update-template
 helpviewer_keywords:
   - "merged resource dictionaries [WPF]"
