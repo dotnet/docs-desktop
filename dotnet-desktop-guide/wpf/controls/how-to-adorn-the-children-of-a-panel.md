@@ -34,4 +34,4 @@ The following example binds a SimpleCircleAdorner (shown above) to the children 
 
 ## See also
 
-- [Adorners Overview](adorners-overview.md)
+- [Adorners](adorners.md)

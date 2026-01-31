@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page x:Class="AllTemplatesCS.Pages.PrintDialogPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AllTemplatesCS.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="400"
+      Title="PrintDialogPage">
+    <StackPanel Margin="20" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <TextBlock Text="PrintDialog Control" FontSize="16" FontWeight="Bold" Margin="0,0,0,20"/>
+        
+        <TextBlock Text="PrintDialog is typically used programmatically to show print options." 
+                   TextWrapping="Wrap" MaxWidth="350" Margin="0,0,0,10"/>
+        
+        <Button x:Name="ShowPrintDialogButton" Content="Show Print Dialog" 
+                Padding="10,5" Margin="0,10,0,0" Click="ShowPrintDialogButton_Click"/>
+        
+        <TextBlock x:Name="PrintStatusText" Text="Click the button to open print dialog" 
+                   Margin="0,10,0,0" FontStyle="Italic"/>
+    </StackPanel>
+</Page>

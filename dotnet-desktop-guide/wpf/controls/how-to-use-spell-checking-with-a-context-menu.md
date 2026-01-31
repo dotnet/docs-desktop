@@ -41,7 +41,7 @@ For a <xref:System.Windows.Controls.RichTextBox>, pass the <xref:System.Windows.
 
 ## See also
 
-- [TextBox Overview](textbox-overview.md)
-- [RichTextBox Overview](richtextbox-overview.md)
+- [TextBox](textbox.md)
+- [RichTextBox Overview](richtextbox.md)
 - [Enable Spell Checking in a Text Editing Control](how-to-enable-spell-checking-in-a-text-editing-control.md)
 - [Use a Custom Context Menu with a TextBox](how-to-use-a-custom-context-menu-with-a-textbox.md)

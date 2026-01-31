@@ -1,7 +1,7 @@
 ---
 title: "GridView Overview"
 description: Learn about styles and templates for the Windows Presentation Foundation ListView control. Modify the ControlTemplate to give the control a unique appearance.
-ms.date: "03/30/2017"
+ms.date: 01/22/2026
 ms.service: dotnet-framework
 ms.update-cycle: 1825-days
 helpviewer_keywords:
@@ -25,17 +25,13 @@ The <xref:System.Windows.Controls.GridView> view mode displays a list of data it
 
 The following illustration shows a <xref:System.Windows.Controls.GridView> view of <xref:System.Windows.Controls.ListView> content.
 
-![Screenshot that shows GridView view of ListView content.](./media/gridview-overview/styled-listview-content.png)
+:::image type="content" source="./media/shared/listview.png" alt-text="Screenshot showing a ListView with GridView output displaying file information.":::
 
 <xref:System.Windows.Controls.GridView> columns are represented by <xref:System.Windows.Controls.GridViewColumn> objects, which can automatically size to their content. Optionally, you can explicitly set a <xref:System.Windows.Controls.GridViewColumn> to a specific width. You can resize columns by dragging the gripper between column headers. You can also dynamically add, remove, replace, and reorder columns because this functionality is built into <xref:System.Windows.Controls.GridView>. However, <xref:System.Windows.Controls.GridView> cannot directly update the data that it displays.
 
 The following example shows how to define a <xref:System.Windows.Controls.GridView> that displays employee data. In this example, <xref:System.Windows.Controls.ListView> defines the `EmployeeInfoDataSource` as the <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A>. The property definitions of <xref:System.Windows.Controls.GridViewColumn.DisplayMemberBinding%2A> bind <xref:System.Windows.Controls.GridViewColumn> content to `EmployeeInfoDataSource` data categories.
 
 [!code-xaml[ListViewCode#ListViewEmployee](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewCode/CSharp/Window1.xaml#listviewemployee)]
-
-The following illustration shows the table that the previous example creates. The GridView control displays data from an ItemsSource object:
-
-![Screenshot that shows a ListView with GridView output.](./media/gridview-overview/listview-gridview-output.jpg)
 
 <a name="GridViewLayoutandStyle"></a>
 
@@ -138,6 +134,27 @@ The following classes support the <xref:System.Windows.Controls.GridView> view m
 
 - <xref:System.Windows.Controls.GridViewColumnHeaderRole>
 
+## Styles and templates
+
+You can customize the appearance of <xref:System.Windows.Controls.GridView> column headers by modifying their styles and templates. This section discusses the order of precedence for properties that you use to customize a column header in the <xref:System.Windows.Controls.GridView> view mode of a <xref:System.Windows.Controls.ListView> control. For more information, see [What are styles and templates?](styles-templates-overview.md) and [How to create a template for a control](how-to-create-apply-template.md).
+
+### Customizing a Column Header in a GridView
+
+The properties that define the content, layout, and style of a column header in a <xref:System.Windows.Controls.GridView> are found on many related classes. Some of these properties have functionality that is similar or the same.
+
+The rows in the following table show groups of properties that perform the same function. You can use these properties to customize the column headers in a <xref:System.Windows.Controls.GridView>. The order of precedence for related properties is from right to left where the property in the farthest right column has the highest precedence. For example, if a <xref:System.Windows.Controls.ContentControl.ContentTemplate%2A> is set on the <xref:System.Windows.Controls.GridViewColumnHeader> object and the <xref:System.Windows.Controls.GridViewColumn.HeaderTemplateSelector%2A> is set on the associated <xref:System.Windows.Controls.GridViewColumn>, the <xref:System.Windows.Controls.ContentControl.ContentTemplate%2A> takes precedence. In this scenario, the <xref:System.Windows.Controls.GridViewColumn.HeaderTemplateSelector%2A> has no effect.
+
+**Related properties for column headers in a GridView**
+
+|  | <xref:System.Windows.Controls.GridView> | <xref:System.Windows.Controls.GridViewColumn> |<xref:System.Windows.Controls.GridViewColumnHeader>|
+|-|-|-|-|
+|**Context Menu Properties**|<xref:System.Windows.Controls.GridView.ColumnHeaderContextMenu%2A>|Not applicable|<xref:System.Windows.FrameworkElement.ContextMenu%2A>|
+|**ToolTip**<br /><br /> **Properties**|<xref:System.Windows.Controls.GridView.ColumnHeaderToolTip%2A>|Not applicable|<xref:System.Windows.FrameworkElement.ToolTip%2A>|
+|**Header Template**<br /><br /> **Properties**|<xref:System.Windows.Controls.GridView.ColumnHeaderTemplate%2A> <sup>1</sup>/<br /><br /> <xref:System.Windows.Controls.GridView.ColumnHeaderTemplateSelector%2A>|<xref:System.Windows.Controls.GridViewColumn.HeaderTemplate%2A> <sup>1</sup>/<br /><br /> <xref:System.Windows.Controls.GridViewColumn.HeaderTemplateSelector%2A>|<xref:System.Windows.Controls.ContentControl.ContentTemplate%2A> <sup>1</sup>/<br /><br /> <xref:System.Windows.Controls.ContentControl.ContentTemplateSelector%2A>|
+|**Style Properties**|<xref:System.Windows.Controls.GridView.ColumnHeaderContainerStyle%2A>|<xref:System.Windows.Controls.GridViewColumn.HeaderContainerStyle%2A>|<xref:System.Windows.FrameworkElement.Style%2A>|
+
+<sup>1</sup>For **Header Template Properties**, if you set both the template and template selector properties, the template property takes precedence. For example, if you set both the <xref:System.Windows.Controls.ContentControl.ContentTemplate%2A> and <xref:System.Windows.Controls.ContentControl.ContentTemplateSelector%2A> properties, the <xref:System.Windows.Controls.ContentControl.ContentTemplate%2A> property takes precedence.
+
 ## See also
 
 - <xref:System.Windows.Controls.ListView>
@@ -147,6 +164,6 @@ The following classes support the <xref:System.Windows.Controls.GridView> view m
 - <xref:System.Windows.Controls.GridViewRowPresenter>
 - <xref:System.Windows.Controls.GridViewHeaderRowPresenter>
 - <xref:System.Windows.Controls.ViewBase>
-- [ListView Overview](listview-overview.md)
+- [ListView](listview.md)
 - [Sort a GridView Column When a Header Is Clicked](how-to-sort-a-gridview-column-when-a-header-is-clicked.md)
-- [How-to Topics](listview-how-to-topics.md)
+- [ListView](listview.md)

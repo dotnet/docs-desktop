@@ -34,4 +34,4 @@ The following example binds a SimpleCircleAdorner (shown above) to a <xref:Syste
 
 ## See also
 
-- [Adorners Overview](adorners-overview.md)
+- [Adorners](adorners.md)

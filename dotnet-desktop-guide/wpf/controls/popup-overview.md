@@ -20,7 +20,7 @@ The <xref:System.Windows.Controls.Primitives.Popup> control provides a way to di
 A <xref:System.Windows.Controls.Primitives.Popup> control displays content in a separate window relative to an element or point on the screen. When the <xref:System.Windows.Controls.Primitives.Popup> is visible, the <xref:System.Windows.Controls.Primitives.Popup.IsOpen%2A> property is set to `true`.
 
 > [!NOTE]
-> A <xref:System.Windows.Controls.Primitives.Popup> does not automatically open when the mouse pointer moves over its parent object. If you want a <xref:System.Windows.Controls.Primitives.Popup> to automatically open, use the <xref:System.Windows.Controls.ToolTip> or <xref:System.Windows.Controls.ToolTipService> class. For more information, see [ToolTip Overview](tooltip-overview.md).
+> A <xref:System.Windows.Controls.Primitives.Popup> does not automatically open when the mouse pointer moves over its parent object. If you want a <xref:System.Windows.Controls.Primitives.Popup> to automatically open, use the <xref:System.Windows.Controls.ToolTip> or <xref:System.Windows.Controls.ToolTipService> class. For more information, see [ToolTip](tooltip.md).
 
 <a name="APopupExample"></a>
 
@@ -36,7 +36,7 @@ The following example shows how to define a <xref:System.Windows.Controls.Primit
 
 You can build <xref:System.Windows.Controls.Primitives.Popup> controls into other controls. The following controls implement the <xref:System.Windows.Controls.Primitives.Popup> control for specific uses:
 
-- <xref:System.Windows.Controls.ToolTip>. If you want to create a tooltip for an element, use the <xref:System.Windows.Controls.ToolTip> and <xref:System.Windows.Controls.ToolTipService> classes. For more information, see [ToolTip Overview](tooltip-overview.md).
+- <xref:System.Windows.Controls.ToolTip>. If you want to create a tooltip for an element, use the <xref:System.Windows.Controls.ToolTip> and <xref:System.Windows.Controls.ToolTipService> classes. For more information, see [ToolTip](tooltip.md).
 
 - <xref:System.Windows.Controls.ContextMenu>. If you want to create a context menu for an element, use the <xref:System.Windows.Controls.ContextMenu> control. For more information, see [ContextMenu Overview](contextmenu-overview.md).
 
@@ -114,4 +114,4 @@ The <xref:System.Windows.Controls.Primitives.Popup> control maintains a referenc
 - <xref:System.Windows.Controls.ToolTip>
 - <xref:System.Windows.Controls.ToolTipService>
 - [How-to Topics](popup-how-to-topics.md)
-- [How-to Topics](tooltip-how-to-topics.md)
+- [ToolTip](tooltip.md)

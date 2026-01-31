@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page x:Class="AllTemplatesCS.Pages.ViewboxPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AllTemplatesCS.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="400"
+      Title="ViewboxPage">
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <TextBlock Grid.Row="0" Text="Viewbox Examples" FontSize="16" FontWeight="Bold" 
+                   HorizontalAlignment="Center" Margin="0,0,0,20"/>
+        
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            
+            <Border Grid.Column="0" BorderBrush="Gray" BorderThickness="1" Margin="5">
+                <Viewbox Stretch="Uniform">
+                    <StackPanel>
+                        <TextBlock Text="Scaled Content" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center"/>
+                        <Button Content="Button" Padding="10,5" Margin="0,5"/>
+                        <TextBox Text="Text Input" Margin="0,5"/>
+                        <Slider Value="50" Margin="0,5"/>
+                    </StackPanel>
+                </Viewbox>
+            </Border>
+            
+            <Border Grid.Column="1" BorderBrush="Gray" BorderThickness="1" Margin="5">
+                <Viewbox Stretch="Fill">
+                    <Grid Width="100" Height="100">
+                        <Ellipse Fill="LightBlue" Stroke="DarkBlue" StrokeThickness="2"/>
+                        <TextBlock Text="Circle" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold"/>
+                    </Grid>
+                </Viewbox>
+            </Border>
+        </Grid>
+    </Grid>
+</Page>

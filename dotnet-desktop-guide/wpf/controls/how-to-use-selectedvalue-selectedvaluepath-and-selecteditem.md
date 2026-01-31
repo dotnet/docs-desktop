@@ -40,5 +40,4 @@ The following example shows a <xref:System.Windows.Controls.TreeView> that uses 
 
 - <xref:System.Windows.Controls.TreeView>
 - <xref:System.Windows.Controls.TreeViewItem>
-- [TreeView Overview](treeview-overview.md)
-- [How-to Topics](treeview-how-to-topics.md)
+- [TreeView](treeview.md)

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page x:Class="AllTemplatesCS.Pages.LabelPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AllTemplatesCS.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="400" d:DesignWidth="400"
+      Title="LabelPage">
+    <StackPanel Margin="20" HorizontalAlignment="Center" VerticalAlignment="Center" Width="300">
+        <Label Content="Simple Label" Margin="5"/>
+
+        <StackPanel Orientation="Horizontal" Margin="5">
+            <Label Content="_Label with Mnemonic (Alt+L)" Target="{Binding ElementName=MnemonicTextBox}" VerticalAlignment="Center"/>
+            <TextBox x:Name="MnemonicTextBox" Text="Alt+L to focus" VerticalAlignment="Center" />
+        </StackPanel>
+        <Label Margin="5" Padding="10" Background="LightBlue" BorderThickness="1">
+            <Label.Content>
+                <StackPanel>
+                    <TextBlock Text="Entire box is a label with StackPanel controls" TextWrapping="Wrap" Margin="0,5,0,0"/>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Label with Custom Content"  VerticalAlignment="Center" Padding="0,0,5,0"/>
+                        <Button Content="Button inside label" />
+                    </StackPanel>
+                </StackPanel>
+            </Label.Content>
+        </Label>
+        
+        <Label Content="Styled Label" FontWeight="Bold" FontSize="14" 
+               Foreground="DarkBlue" Background="LightYellow" Margin="5"/>
+    </StackPanel>
+</Page>

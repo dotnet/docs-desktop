@@ -1,9 +1,10 @@
 ---
 title: "DataGrid"
 description: Learn how the DataGrid control lets you display and edit data from different sources, such as a database, LINQ query, or any other bindable data source.
-ms.date: "03/30/2017"
-ms.service: dotnet-framework
-ms.update-cycle: 1825-days
+ms.date: 01/28/2026
+ms.service: dotnet-desktop
+ms.update-cycle: 365-days
+ai-usage: ai-assisted
 helpviewer_keywords:
   - "DataGrid column types [WPF]"
   - "DataGrid scenarios [WPF]"
@@ -12,11 +13,13 @@ helpviewer_keywords:
   - "DataGrid [WPF], common tasks for"
   - "DataGrid [WPF], customizing the appearance of"
   - "DataGrid columns [WPF], using"
-ms.assetid: bf89ea63-79b6-422b-bc9f-0485ad803216
 ---
+
 # DataGrid
 
 The <xref:System.Windows.Controls.DataGrid> control enables you to display and edit data from many different sources, such as from a SQL database, LINQ query, or any other bindable data source. For more information, see [Binding Sources Overview](../data/binding-sources-overview.md).
+
+:::image type="content" source="./media/shared/datagrid.png" alt-text="Screenshot showing a DataGrid control with rows of data.":::
 
 Columns can display text, controls, such as a <xref:System.Windows.Controls.ComboBox>, or any other WPF content, such as images, buttons, or any content contained in a template. You can use a <xref:System.Windows.Controls.DataGridTemplateColumn> to display data defined in a template. The following table lists the column types that are provided by default.
 
@@ -43,7 +46,7 @@ The following table lists some of the common tasks for <xref:System.Windows.Cont
 |Freeze a column|Set the <xref:System.Windows.Controls.DataGrid.FrozenColumnCount%2A> property to 1 and move the column to the left-most position by setting the <xref:System.Windows.Controls.DataGridColumn.DisplayIndex%2A> property to 0.|
 |Use XML data as the data source|Bind the <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> on the <xref:System.Windows.Controls.DataGrid> to the XPath query that represents the collection of items. Create each column in the <xref:System.Windows.Controls.DataGrid>. Bind each column by setting the XPath on the binding to the query that gets the property on the item source. For an example, see <xref:System.Windows.Controls.DataGridTextColumn>.|
 
-## Related Topics
+## Related articles
 
 |Title|Description|
 |-----------|-----------------|
@@ -54,11 +57,193 @@ The following table lists some of the common tasks for <xref:System.Windows.Cont
 |[How to: Group, Sort, and Filter Data in the DataGrid Control](how-to-group-sort-and-filter-data-in-the-datagrid-control.md)|Describes how to view data in a <xref:System.Windows.Controls.DataGrid> in different ways by grouping, sorting, and filtering the data.|
 |[Sizing Options in the DataGrid Control](sizing-options-in-the-datagrid-control.md)|Describes how to control absolute and automatic sizing in the <xref:System.Windows.Controls.DataGrid>.|
 
+## Styles and templates
+
+This section describes the styles and templates for the <xref:System.Windows.Controls.DataGrid> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [Styling and Templating](styles-templates-overview.md) and [Creating a template for a control](how-to-create-apply-template.md).
+
+### Content property
+
+The <xref:System.Windows.Controls.DataGrid> control uses the <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> property to define the data source. The data source can be any bindable collection, such as a database, LINQ query, or other bindable data source.
+
+### Parts
+
+This control doesn't define any template parts.
+
+### Visual states
+
+The following table lists the visual states for the <xref:System.Windows.Controls.DataGrid> control.
+
+|VisualState Name|VisualStateGroup Name|Description|
+|-|-|-|
+|Normal|CommonStates|The control is in its normal state.|
+|Disabled|CommonStates|The control is disabled.|
+|Valid|ValidationStates|The control is valid and has no validation errors.|
+|InvalidFocused|ValidationStates|The control has a validation error and has keyboard focus.|
+|InvalidUnfocused|ValidationStates|The control has a validation error but does not have keyboard focus.|
+
+### DataGridCell
+
+#### Parts
+
+The <xref:System.Windows.Controls.DataGridCell> element does not define any named template parts.
+
+#### States
+
+The following table lists the visual states for the <xref:System.Windows.Controls.DataGridCell> element.
+
+|VisualState Name|VisualStateGroup Name|Description|
+|-|-|-|
+|Normal|CommonStates|The default state.|
+|MouseOver|CommonStates|The mouse pointer is positioned over the cell.|
+|Focused|FocusStates|The cell has focus.|
+|Unfocused|FocusStates|The cell does not have focus.|
+|Current|CurrentStates|The cell is the current cell.|
+|Regular|CurrentStates|The cell is not the current cell.|
+|Display|InteractionStates|The cell is in display mode.|
+|Editing|InteractionStates|The cell is in edit mode.|
+|Selected|SelectionStates|The cell is selected.|
+|Unselected|SelectionStates|The cell is not selected.|
+|InvalidFocused|ValidationStates|The cell is not valid and has focus.|
+|InvalidUnfocused|ValidationStates|The cell is not valid and does not have focus.|
+|Valid|ValidationStates|The cell is valid.|
+
+### DataGridRow
+
+#### Parts
+
+The <xref:System.Windows.Controls.DataGridRow> element does not define any named template parts.
+
+#### States
+
+The following table lists the visual states for the <xref:System.Windows.Controls.DataGridRow> element.
+
+|VisualState Name|VisualStateGroup Name|Description|
+|-|-|-|
+|Normal|CommonStates|The default state.|
+|MouseOver|CommonStates|The mouse pointer is positioned over the row.|
+|MouseOver_Editing|CommonStates|The mouse pointer is positioned over the row and the row is in edit mode.|
+|MouseOver_Selected|CommonStates|The mouse pointer is positioned over the row and the row is selected.|
+|MouseOver_Unfocused_Editing|CommonStates|The mouse pointer is positioned over the row, the row is in edit mode, and does not have focus.|
+|MouseOver_Unfocused_Selected|CommonStates|The mouse pointer is positioned over the row, the row is selected, and does not have focus.|
+|Normal_AlternatingRow|CommonStates|The row is an alternating row.|
+|Normal_Editing|CommonStates|The row is in edit mode.|
+|Normal_Selected|CommonStates|The row is selected.|
+|Unfocused_Editing|CommonStates|The row is in edit mode and does not have focus.|
+|Unfocused_Selected|CommonStates|The row is selected and does not have focus.|
+|InvalidFocused|ValidationStates|The control is not valid and has focus.|
+|InvalidUnfocused|ValidationStates|The control is not valid and does not have focus.|
+|Valid|ValidationStates|The control is valid.|
+
+### DataGridRowHeader
+
+#### Parts
+
+The following table lists the named parts for the <xref:System.Windows.Controls.Primitives.DataGridRowHeader> element.
+
+|Part|Type|Description|
+|-|-|-|
+|PART_TopHeaderGripper|<xref:System.Windows.Controls.Primitives.Thumb>|The element that is used to resize the row header from the top.|
+|PART_BottomHeaderGripper|<xref:System.Windows.Controls.Primitives.Thumb>|The element that is used to resize the row header from the bottom.|
+
+#### States
+
+The following table lists the visual states for the <xref:System.Windows.Controls.Primitives.DataGridRowHeader> element.
+
+|VisualState Name|VisualStateGroup Name|Description|
+|-|-|-|
+|Normal|CommonStates|The default state.|
+|MouseOver|CommonStates|The mouse pointer is positioned over the row.|
+|MouseOver_CurrentRow|CommonStates|The mouse pointer is positioned over the row and the row is the current row.|
+|MouseOver_CurrentRow_Selected|CommonStates|The mouse pointer is positioned over the row, and the row is current and selected.|
+|MouseOver_EditingRow|CommonStates|The mouse pointer is positioned over the row and the row is in edit mode.|
+|MouseOver_Selected|CommonStates|The mouse pointer is positioned over the row and the row is selected.|
+|MouseOver_Unfocused_CurrentRow_Selected|CommonStates|The mouse pointer is positioned over the row, the row is current and selected, and does not have focus.|
+|MouseOver_Unfocused_EditingRow|CommonStates|The mouse pointer is positioned over the row, the row is in edit mode, and does not have focus.|
+|MouseOver_Unfocused_Selected|CommonStates|The mouse pointer is positioned over the row, the row is selected, and does not have focus.|
+|Normal_CurrentRow|CommonStates|The row is the current row.|
+|Normal_CurrentRow_Selected|CommonStates|The row is the current row and is selected.|
+|Normal_EditingRow|CommonStates|The row is in edit mode.|
+|Normal_Selected|CommonStates|The row is selected.|
+|Unfocused_CurrentRow_Selected|CommonStates|The row is the current row, is selected, and does not have focus.|
+|Unfocused_EditingRow|CommonStates|The row is in edit mode and does not have focus.|
+|Unfocused_Selected|CommonStates|The row is selected and does not have focus.|
+|InvalidFocused|ValidationStates|The control is not valid and has focus.|
+|InvalidUnfocused|ValidationStates|The control is not valid and does not have focus.|
+|Valid|ValidationStates|The control is valid.|
+
+### DataGridColumnHeadersPresenter
+
+#### Parts
+
+The following table lists the named parts for the <xref:System.Windows.Controls.Primitives.DataGridColumnHeadersPresenter> element.
+
+|Part|Type|Description|
+|-|-|-|
+|PART_FillerColumnHeader|<xref:System.Windows.Controls.Primitives.DataGridColumnHeader>|The placeholder for column headers.|
+
+#### States
+
+The following table lists the visual states for the <xref:System.Windows.Controls.Primitives.DataGridColumnHeadersPresenter> element.
+
+|VisualState Name|VisualStateGroup Name|Description|
+|-|-|-|
+|InvalidFocused|ValidationStates|The cell is not valid and has focus.|
+|InvalidUnfocused|ValidationStates|The cell is not valid and does not have focus.|
+|Valid|ValidationStates|The cell is valid.|
+
+### DataGridColumnHeader
+
+#### Parts
+
+The following table lists the named parts for the <xref:System.Windows.Controls.Primitives.DataGridColumnHeader> element.
+
+|Part|Type|Description|
+|-|-|-|
+|PART_LeftHeaderGripper|<xref:System.Windows.Controls.Primitives.Thumb>|The element that is used to resize the column header from the left.|
+|PART_RightHeaderGripper|<xref:System.Windows.Controls.Primitives.Thumb>|The element that is used to resize the column header from the right.|
+
+#### States
+
+The following table lists the visual states for the <xref:System.Windows.Controls.Primitives.DataGridColumnHeader> element.
+
+|VisualState Name|VisualStateGroup Name|Description|
+|-|-|-|
+|Normal|CommonStates|The default state.|
+|MouseOver|CommonStates|The mouse pointer is positioned over the control.|
+|Pressed|CommonStates|The control is pressed.|
+|SortAscending|SortStates|The column is sorted in ascending order.|
+|SortDescending|SortStates|The column is sorted in descending order.|
+|Unsorted|SortStates|The column is not sorted.|
+|InvalidFocused|ValidationStates|The control is not valid and has focus.|
+|InvalidUnfocused|ValidationStates|The control is not valid and does not have focus.|
+|Valid|ValidationStates|The control is valid.|
+
+#### DataGrid ControlTemplate example
+
+The following example shows how to define a <xref:System.Windows.Controls.ControlTemplate> for the <xref:System.Windows.Controls.DataGrid> control and its associated types.
+
+[!code-xaml[ControlTemplateExamples#DataGrid](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/datagrid.xaml#datagrid)]
+
+The preceding example uses one or more of the following resources.
+
+[!code-xaml[ControlTemplateExamples#Resources](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/shared.xaml#resources)]
+
 ## See also
 
 - <xref:System.Windows.Controls.DataGrid>
-- [Styling and Templating](styles-templates-overview.md)
+- <xref:System.Windows.Controls.Primitives.DataGridColumnHeadersPresenter>
+- <xref:System.Windows.Controls.DataGridCell>
+- <xref:System.Windows.Controls.DataGridRow>
+- <xref:System.Windows.Controls.Primitives.DataGridRowHeader>
+- <xref:System.Windows.Controls.Primitives.DataGridColumnHeader>
+- <xref:System.Windows.Controls.DataGridTextColumn>
+- <xref:System.Windows.Controls.DataGridCheckBoxColumn>
+- <xref:System.Windows.Controls.DataGridComboBoxColumn>
+- <xref:System.Windows.Controls.DataGridHyperlinkColumn>
+- <xref:System.Windows.Controls.DataGridTemplateColumn>
+- [Binding Sources Overview](../data/binding-sources-overview.md)
+- [Controls](index.md)
 - [Data Binding Overview](../data/index.md)
 - [Data Templating Overview](../data/data-templating-overview.md)
-- [Controls](index.md)
+- [Styling and Templating](styles-templates-overview.md)
 - [WPF Content Model](wpf-content-model.md)

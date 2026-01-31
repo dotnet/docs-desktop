@@ -43,5 +43,4 @@ The following example shows how to create a <xref:System.Windows.Controls.TreeVi
 
 - <xref:System.Windows.Controls.TreeView>
 - <xref:System.Windows.Controls.TreeViewItem>
-- [TreeView Overview](treeview-overview.md)
-- [How-to Topics](treeview-how-to-topics.md)
+- [TreeView](treeview.md)

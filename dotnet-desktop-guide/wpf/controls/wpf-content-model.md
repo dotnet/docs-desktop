@@ -216,16 +216,15 @@ The <xref:System.Windows.Controls.Decorator> class applies visual effects onto o
 
 - <xref:System.Windows.Controls.Viewbox>
 
-The following illustration shows a <xref:System.Windows.Controls.TextBox> that has (is decorated with) a <xref:System.Windows.Controls.Border> around it.
+The following illustration shows different <xref:System.Windows.Controls.TextBlock> controls surrounded by a <xref:System.Windows.Controls.Border>.
 
-![TextBox with black border](./media/layout-border-around-textbox.png "Layout_Border_around_TextBox")\
-TextBlock that has a Border
+:::image type="content" source="./media/shared/border.png" alt-text="Screenshot showing multiple border controls.":::
 
 <a name="classes_that_provides_visual_feedback_about_a_uielement"></a>
 
 ## Classes That Provide Visual Feedback About a UIElement
 
-The <xref:System.Windows.Documents.Adorner> class provides visual cues to a user. For example, use an <xref:System.Windows.Documents.Adorner> to add functional handles to elements or provide state information about a control. The <xref:System.Windows.Documents.Adorner> class provides a framework so that you can create your own adorners. WPF does not provide any implemented adorners. For more information, see [Adorners Overview](adorners-overview.md).
+The <xref:System.Windows.Documents.Adorner> class provides visual cues to a user. For example, use an <xref:System.Windows.Documents.Adorner> to add functional handles to elements or provide state information about a control. The <xref:System.Windows.Documents.Adorner> class provides a framework so that you can create your own adorners. WPF does not provide any implemented adorners. For more information, see [Adorners](adorners.md).
 
 <a name="classes_that_enable_users_to_enter_text"></a>
 

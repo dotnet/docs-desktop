@@ -33,4 +33,4 @@ When a user changes the <xref:System.Windows.Controls.ListBox> selection, it inv
 - <xref:System.Windows.Controls.Canvas>
 - <xref:System.Windows.Controls.ListBoxItem>
 - <xref:System.Windows.LengthConverter>
-- [Panels Overview](panels-overview.md)
+- [Panel](panel.md)

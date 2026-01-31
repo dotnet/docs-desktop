@@ -31,4 +31,4 @@ The following example defines the style and <xref:System.Windows.DataTemplate> n
 - [Data Binding Overview](../data/index.md)
 - [Data Templating Overview](../data/data-templating-overview.md)
 - [Bind to XML Data Using an XMLDataProvider and XPath Queries](../data/how-to-bind-to-xml-data-using-an-xmldataprovider-and-xpath-queries.md)
-- [ListView Overview](listview-overview.md)
+- [ListView](listview.md)

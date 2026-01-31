@@ -39,4 +39,4 @@ The following example demonstrates the key difference between <xref:System.Windo
 
 - <xref:System.Windows.Controls.StackPanel>
 - <xref:System.Windows.Controls.DockPanel>
-- [Panels Overview](panels-overview.md)
+- [Panel](panel.md)

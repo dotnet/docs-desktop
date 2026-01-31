@@ -33,6 +33,182 @@
             "redirect_url": "/dotnet/desktop/wpf/windows/how-to-get-set-main-application-window"
         },
         {
+            "source_path": "dotnet-desktop-guide/wpf/controls/button-styles-and-templates.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/button"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/calendar-styles-and-templates.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/calendar"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/checkbox-styles-and-templates.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/checkbox"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/combobox-styles-and-templates.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/combobox"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/control-styles-and-templates.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/styles-templates-overview"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/contextmenu-styles-and-templates.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/contextmenu-overview"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/contextmenu-overview.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/contextmenu"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/datagrid-styles-and-templates.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/datagrid"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/datepicker-styles-and-templates.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/datepicker"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/documentviewer-styles-and-templates.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/documentviewer"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/expander-overview.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/expander"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/expander-how-to-topics.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/expander"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/expander-styles-and-templates.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/expander"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/frame-styles-and-templates.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/frame"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/gridview-column-header-styles-and-templates-overview.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/gridview-overview"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/grid-how-to-topics.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/grid"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/gridsplitter-how-to-topics.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/gridsplitter"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/groupbox-styles-and-templates.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/groupbox"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/how-to-define-a-groupbox-template.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/groupbox"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/label-styles-and-templates.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/label"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/listbox-styles-and-templates.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/listbox"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/listbox-how-to-topics.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/listbox"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/listview-styles-and-templates.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/listview"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/listview-overview.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/listview"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/listview-overviews.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/listview"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/listview-how-to-topics.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/listview"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/menu-styles-and-templates.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/menu"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/navigationwindow-styles-and-templates.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/navigationwindow"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/passwordbox-styles-and-templates.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/passwordbox"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/progressbar-styles-and-templates.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/progressbar"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/radiobutton-styles-and-templates.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/radiobutton"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/repeatbutton-styles-and-templates.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/repeatbutton"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/scrollbar-styles-and-templates.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/scrollbar"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/scrollviewer-how-to-topics.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/scrollviewer"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/scrollviewer-overview.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/scrollviewer"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/thumb-styles-and-templates.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/thumb"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/togglebutton-styles-and-templates.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/togglebutton"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/toolbar-overview.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/toolbar"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/toolbar-styles-and-templates.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/toolbar"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/tooltip-styles-and-templates.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/tooltip"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/treeview-styles-and-templates.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/treeview"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/treeview-how-to-topics.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/treeview"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/treeview-overview.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/treeview"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/window-styles-and-templates.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/window"
+        },
+        {
             "source_path": "dotnet-desktop-guide/wpf/data/data-binding-overview.md",
             "redirect_url": "/dotnet/desktop/wpf/data/index"
         },
@@ -231,6 +407,82 @@
         {
             "source_path": "dotnet-desktop-guide/wpf/advanced/sample-opentype-font-pack.md",
             "redirect_url": "/dotnet/desktop/wpf/advanced/opentype-font-features"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/adorners-overview.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/adorners"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/adorners-how-to-topics.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/adorners"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/canvas-how-to-topics.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/canvas"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/dockpanel-how-to-topics.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/dockpanel"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/flowdocumentscrollviewer.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/flowdocument"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/flowdocumentpageviewer.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/flowdocument"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/flowdocumentreader.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/flowdocument"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/image-how-to-topics.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/image"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/menu-overview.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/menu"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/panel-how-to-topics.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/panel"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/panels-overview.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/panel"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/richtextbox-how-to-topics.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/richtextbox"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/richtextbox-overview.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/richtextbox"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/textblock-overview.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/textblock"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/textbox-how-to-topics.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/textbox"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/textbox-overview.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/textbox"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/textbox-styles-and-templates.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/textbox"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/tooltip-how-to-topics.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/tooltip"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/tooltip-overview.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/tooltip"
         }
     ]
 }
