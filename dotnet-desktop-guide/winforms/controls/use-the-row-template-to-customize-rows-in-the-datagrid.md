@@ -24,7 +24,7 @@ There are some situations where you must use the row template to achieve a parti
 > [!NOTE]
 > The row template is used only when rows are added. You cannot change existing rows by changing the row template.
 
-### To use the row template
+## To use the row template
 
 - Set properties on the object retrieved from the <xref:System.Windows.Forms.DataGridView.RowTemplate%2A?displayProperty=nameWithType> property.
 

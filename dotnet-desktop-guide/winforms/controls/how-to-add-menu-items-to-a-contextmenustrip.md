@@ -17,7 +17,7 @@ ms.assetid: 1ec14776-3ea2-4752-bd22-4fae0fd19e1a
 
 You can add just one menu item or several items at a time to a <xref:System.Windows.Forms.ContextMenuStrip>.
 
-### To add a single menu item to a ContextMenuStrip
+## To add a single menu item to a ContextMenuStrip
 
 - Use the <xref:System.Windows.Forms.ToolStripItemCollection.Add%2A> method to add one menu item to a <xref:System.Windows.Forms.ContextMenuStrip>.
 

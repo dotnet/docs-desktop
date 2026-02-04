@@ -20,7 +20,7 @@ ms.assetid: d105d6b9-3d50-44cd-80d8-2c0e2f486727
 
 A password box is a Windows Forms text box that displays placeholder characters while a user types a string.
 
-### To create a password text box
+## To create a password text box
 
 1. Set the <xref:System.Windows.Forms.TextBox.PasswordChar%2A> property of the <xref:System.Windows.Forms.TextBox> control to a specific character.
 

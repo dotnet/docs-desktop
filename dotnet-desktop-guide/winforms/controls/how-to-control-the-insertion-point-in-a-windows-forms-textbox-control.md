@@ -20,7 +20,7 @@ When a Windows Forms <xref:System.Windows.Forms.TextBox> control first receives 
 
 In some cases, this behavior can be disconcerting to the user. In a word processing application, the user might expect new characters to appear after any existing text. In a data entry application, the user might expect new characters to replace any existing entry. The <xref:System.Windows.Forms.TextBoxBase.SelectionStart%2A> and <xref:System.Windows.Forms.TextBoxBase.SelectionLength%2A> properties enable you to modify the behavior to suit your purpose.
 
-### To control the insertion point in a TextBox control
+## To control the insertion point in a TextBox control
 
 1. Set the <xref:System.Windows.Forms.TextBoxBase.SelectionStart%2A> property to an appropriate value. Zero places the insertion point immediately to the left of the first character.
 
@@ -56,7 +56,7 @@ In some cases, this behavior can be disconcerting to the user. In a word process
 
 The <xref:System.Windows.Forms.TextBox> insertion point is visible by default in a new form only if the <xref:System.Windows.Forms.TextBox> control is first in the tab order. Otherwise, the insertion point appears only if you give the <xref:System.Windows.Forms.TextBox> the focus with either the keyboard or the mouse.
 
-#### To make the text box insertion point visible by default on a new form
+### To make the text box insertion point visible by default on a new form
 
 - Set the <xref:System.Windows.Forms.TextBox> control's <xref:System.Windows.Forms.Control.TabIndex%2A> property to `0`.
 

@@ -24,7 +24,7 @@ The <xref:System.Windows.Forms.DateTimePicker.Value%2A> property returns a <xref
 
 - For time values, the <xref:System.DateTime.Hour%2A>, <xref:System.DateTime.Minute%2A>, <xref:System.DateTime.Second%2A>, and <xref:System.DateTime.Millisecond%2A> properties return integer values for those time units. To configure the control to display times, see [How to: Display Time with the DateTimePicker Control](how-to-display-time-with-the-datetimepicker-control.md).
 
-### To set the date and time value of the control
+## To set the date and time value of the control
 
 - Set the <xref:System.Windows.Forms.DateTimePicker.Value%2A> property to a date or time value.
 

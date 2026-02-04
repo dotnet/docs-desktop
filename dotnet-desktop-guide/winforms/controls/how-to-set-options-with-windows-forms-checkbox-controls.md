@@ -20,7 +20,7 @@ ms.assetid: 2ac70498-7e3e-4e07-8901-ccabaeb5fd3e
 
 A Windows Forms <xref:System.Windows.Forms.CheckBox> control is used to give users True/False or Yes/No options. The control displays a check mark when it is selected.
 
-### To set options with CheckBox controls
+## To set options with CheckBox controls
 
 1. Examine the value of the <xref:System.Windows.Forms.CheckBox.Checked%2A> property to determine its state, and use that value to set an option.
 

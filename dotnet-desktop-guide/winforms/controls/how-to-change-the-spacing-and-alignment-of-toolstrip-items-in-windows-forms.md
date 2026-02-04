@@ -19,7 +19,7 @@ The <xref:System.Windows.Forms.ToolStrip> control fully supports layout features
 
 Because the default value of the <xref:System.Windows.Forms.ToolStripItem.AutoSize%2A> property is `true`, controls are sized automatically unless you set the <xref:System.Windows.Forms.ToolStripItem.AutoSize%2A> property to `false`.
 
-### To manually size a ToolStripItem
+## To manually size a ToolStripItem
 
 1. Set the <xref:System.Windows.Forms.ToolStripItem.AutoSize%2A> property to `false` for the associated control.
 

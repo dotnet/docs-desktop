@@ -21,7 +21,7 @@ With the <xref:System.Windows.Forms.DataGridView> control, you can specify compl
 
 There is support for this task in Visual Studio.  Also see [How to: Set Alternating Row Styles for the Windows Forms DataGridView Control Using the Designer](set-alternating-row-styles-for-the-datagrid-using-the-designer.md).
 
-### To set alternating row styles programmatically
+## To set alternating row styles programmatically
 
 - Set the properties of the <xref:System.Windows.Forms.DataGridViewCellStyle> objects returned by the <xref:System.Windows.Forms.DataGridView.RowsDefaultCellStyle%2A> and <xref:System.Windows.Forms.DataGridView.AlternatingRowsDefaultCellStyle%2A> properties of the <xref:System.Windows.Forms.DataGridView>.
 

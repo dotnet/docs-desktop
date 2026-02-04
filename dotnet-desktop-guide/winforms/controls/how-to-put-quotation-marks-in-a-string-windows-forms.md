@@ -22,7 +22,7 @@ She said, "You deserve a treat!"
 
 As an alternative, you can also use the <xref:Microsoft.VisualBasic.ControlChars.Quote> field as a constant.
 
-### To place quotation marks in a string in your code
+## To place quotation marks in a string in your code
 
 1. In Visual Basic, insert two quotation marks in a row as an embedded quotation mark. In Visual C# and Visual C++, insert the escape sequence \\" as an embedded quotation mark. For example, to create the preceding string, use the following code.
 

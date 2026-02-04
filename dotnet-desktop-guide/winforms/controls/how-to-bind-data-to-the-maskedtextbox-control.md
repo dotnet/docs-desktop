@@ -20,7 +20,7 @@ You can bind data to a <xref:System.Windows.Forms.MaskedTextBox> control just as
 
 The following procedure requires that you have access to a SQL Server database with the Northwind sample database installed.
 
-### To bind data to a MaskedTextBox control
+## To bind data to a MaskedTextBox control
 
 1. Create a new Windows Forms project.
 

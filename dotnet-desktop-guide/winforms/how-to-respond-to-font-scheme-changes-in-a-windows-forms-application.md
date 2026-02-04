@@ -18,7 +18,7 @@ In the Windows operating systems, a user can change the system-wide font setting
 
 Typically, the default font used by Windows Forms is the font returned by the <xref:Microsoft.Win32> namespace call to `GetStockObject(DEFAULT_GUI_FONT)`. The font returned by this call only changes when the screen resolution changes. As shown in the following procedure, your code must change the default font to <xref:System.Drawing.SystemFonts.IconTitleFont%2A> to respond to changes in font size.
 
-### To use the desktop font and respond to font scheme changes
+## To use the desktop font and respond to font scheme changes
 
 1. Create your form, and add the controls you want to it. For more information, see [How to: Create a Windows Forms Application from the Command Line](get-started/create-app-visual-studio.md) and [Controls to Use on Windows Forms](./controls/controls-to-use-on-windows-forms.md).
 

@@ -48,7 +48,7 @@ When you are finished, you will have an understanding of the role played by thes
 
 The first step is to create the project and set up the form.
 
-#### To create the project
+### To create the project
 
 1. Create a Windows Application project called "TableLayoutPanelExample". For more information, see [How to: Create a Windows Forms application project](/visualstudio/ide/step-1-create-a-windows-forms-application-project) .
 
@@ -58,7 +58,7 @@ The first step is to create the project and set up the form.
 
 The <xref:System.Windows.Forms.TableLayoutPanel> control allows you to easily arrange controls into rows and columns.
 
-#### To arrange controls in rows and columns using a TableLayoutPanel
+### To arrange controls in rows and columns using a TableLayoutPanel
 
 1. Drag a <xref:System.Windows.Forms.TableLayoutPanel> control from the **Toolbox** onto your form. Note that, by default, the <xref:System.Windows.Forms.TableLayoutPanel> control has four cells.
 
@@ -76,7 +76,7 @@ The <xref:System.Windows.Forms.TableLayoutPanel> control allows you to easily ar
 
 The anchoring behavior of child controls in a <xref:System.Windows.Forms.TableLayoutPanel> differs from the behavior in other container controls. The docking behavior of child controls is the same as other container controls.
 
-#### Positioning controls within cells
+### Positioning controls within cells
 
 1. Select the first <xref:System.Windows.Forms.Button> control. Change the value of its <xref:System.Windows.Forms.Control.Dock%2A> property to <xref:System.Windows.Forms.DockStyle.Fill>. Note that the <xref:System.Windows.Forms.Button> control expands to fill its cell.
 
@@ -90,7 +90,7 @@ The anchoring behavior of child controls in a <xref:System.Windows.Forms.TableLa
 
 You can set individual properties of rows and columns by using the <xref:System.Windows.Forms.TableLayoutPanel.RowStyles%2A> and <xref:System.Windows.Forms.TableLayoutPanel.ColumnStyles%2A> collections.
 
-#### To set row and column properties
+### To set row and column properties
 
 1. Select the <xref:System.Windows.Forms.TableLayoutPanel> control in the **Windows Forms Designer**.
 
@@ -108,7 +108,7 @@ You can set individual properties of rows and columns by using the <xref:System.
 
 The <xref:System.Windows.Forms.TableLayoutPanel> control adds several new properties to controls at design time. Two of these properties are `RowSpan` and `ColumnSpan`. You can use these properties to make a control span more than one row or column.
 
-#### To span rows and columns with a control
+### To span rows and columns with a control
 
 1. Select the <xref:System.Windows.Forms.Button> control in the first row and first column.
 
@@ -120,7 +120,7 @@ The <xref:System.Windows.Forms.TableLayoutPanel> control adds several new proper
 
 You can populate your <xref:System.Windows.Forms.TableLayoutPanel> control by double-clicking controls in the **Toolbox**.
 
-#### To insert controls by double-clicking in the Toolbox
+### To insert controls by double-clicking in the Toolbox
 
 1. Drag a <xref:System.Windows.Forms.TableLayoutPanel> control from the **Toolbox** onto your form.
 
@@ -132,7 +132,7 @@ You can populate your <xref:System.Windows.Forms.TableLayoutPanel> control by do
 
 When you are inserting controls into the <xref:System.Windows.Forms.TableLayoutPanel> control, you may run out of empty cells for your new controls. The <xref:System.Windows.Forms.TableLayoutPanel> control handles this situation automatically by increasing the number of cells.
 
-#### To observe automatic handling of overflows
+### To observe automatic handling of overflows
 
 1. If there are still empty cells in the <xref:System.Windows.Forms.TableLayoutPanel> control, continue inserting new <xref:System.Windows.Forms.Button> controls until the <xref:System.Windows.Forms.TableLayoutPanel> control is full.
 
@@ -144,7 +144,7 @@ When you are inserting controls into the <xref:System.Windows.Forms.TableLayoutP
 
 You can insert a control into a <xref:System.Windows.Forms.TableLayoutPanel> control and specify its size by drawing its outline in a cell.
 
-#### To insert a Control by drawing its outline
+### To insert a Control by drawing its outline
 
 1. Drag a <xref:System.Windows.Forms.TableLayoutPanel> control from the **Toolbox** onto your form.
 
@@ -160,7 +160,7 @@ You can insert a control into a <xref:System.Windows.Forms.TableLayoutPanel> con
 
 The <xref:System.Windows.Forms.TableLayoutPanel> control can contain only one child control per cell.
 
-#### To demonstrate that multiple controls within cells are not permitted
+### To demonstrate that multiple controls within cells are not permitted
 
 - Drag a <xref:System.Windows.Forms.Button> control from the **Toolbox** into the <xref:System.Windows.Forms.TableLayoutPanel> control and drop it into one of the occupied cells. Note that the <xref:System.Windows.Forms.TableLayoutPanel> control does not allow you to drop the <xref:System.Windows.Forms.Button> control into the occupied cell.
 
@@ -168,7 +168,7 @@ The <xref:System.Windows.Forms.TableLayoutPanel> control can contain only one ch
 
 The <xref:System.Windows.Forms.TableLayoutPanel> control enables you to swap the controls occupying two different cells.
 
-#### To swap controls
+### To swap controls
 
 - Drag one of the <xref:System.Windows.Forms.Button> controls from an occupied cell and drop into onto another occupied cell. Note that the two controls are moved from one cell into the other.
 

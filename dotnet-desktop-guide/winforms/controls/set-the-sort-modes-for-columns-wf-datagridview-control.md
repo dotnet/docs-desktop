@@ -21,7 +21,7 @@ In the <xref:System.Windows.Forms.DataGridView> control, the <xref:System.Window
 
 The following procedure shows the `Priority` column from [How to: Customize Data Formatting in the Windows Forms DataGridView Control](how-to-customize-data-formatting-in-the-windows-forms-datagridview-control.md). This column is an image column and is not sortable by default. It contains actual cell values that are strings, however, so it can be sorted automatically.
 
-### To set the sort mode for a column
+## To set the sort mode for a column
 
 - Set the <xref:System.Windows.Forms.DataGridViewColumn.SortMode%2A?displayProperty=nameWithType> property.
 

@@ -23,7 +23,7 @@ You need Visual Studio to complete this walkthrough.
 
 ## Hosting the Windows Forms Control
 
-#### To host the MaskedTextBox control
+### To host the MaskedTextBox control
 
 1. Create a WPF Application project named `HostingWfInWpfWithXaml`.
 

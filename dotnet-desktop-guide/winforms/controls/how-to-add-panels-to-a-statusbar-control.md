@@ -21,7 +21,7 @@ ms.assetid: 835e3902-288c-4c38-9d69-0696d8695009
 
 The programmable area within a [StatusBar Control](statusbar-control-windows-forms.md) control consists of instances of the <xref:System.Windows.Forms.StatusBarPanel> class. These are added through additions to the <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection> class.
 
-### To add panels to a status bar
+## To add panels to a status bar
 
 1. In a procedure, create status-bar panels by adding them to the <xref:System.Windows.Forms.StatusBar.StatusBarPanelCollection>. Specify property settings for individual panels by using its index passed through the <xref:System.Windows.Forms.StatusBar.Panels%2A> property.
 

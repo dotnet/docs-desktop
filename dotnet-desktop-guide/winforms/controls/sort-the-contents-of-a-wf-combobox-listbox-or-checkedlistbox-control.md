@@ -18,7 +18,7 @@ Windows Forms controls do not sort when they are data-bound. To display sorted d
 
 If the control is not data-bound, you can sort it.
 
-### To sort the list
+## To sort the list
 
 1. Set the `Sorted` property to `true`.
 

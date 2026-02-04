@@ -24,7 +24,7 @@ You can expose the sorting and filtering capability of <xref:System.Windows.Form
 > [!NOTE]
 > Storing sensitive information, such as a password, within the connection string can affect the security of your application. Using Windows Authentication (also known as integrated security) is a more secure way to control access to a database. For more information, see [Protecting Connection Information](/dotnet/framework/data/adonet/protecting-connection-information).
 
-### To filter data with the BindingSource
+## To filter data with the BindingSource
 
 - Set the <xref:System.Windows.Forms.BindingSource.Filter%2A> property to expression that you want.
 

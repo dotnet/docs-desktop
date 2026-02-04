@@ -41,7 +41,7 @@ The user enters the customer's name, the size of the pizza, and the toppings des
 
 The emphasis of this walkthrough is not the code for a retail order system, but the accessibility of the user interface. The walkthrough demonstrates the accessibility features of several frequently used controls, including buttons, radio buttons, text boxes, and labels.
 
-#### To begin making the application
+### To begin making the application
 
 - Create a new Windows Application in Visual Basic or Visual C#. Name the project **PizzaOrder**. For details, see [Creating New Solutions and Projects](/visualstudio/ide/creating-solutions-and-projects).
 
@@ -64,7 +64,7 @@ When adding the controls to a form, keep in mind the following guidelines to mak
 
 - Add access keys to all menu items.
 
-#### To make your Windows Application accessible
+### To make your Windows Application accessible
 
 - Add the controls to the form and set the properties as described below. See the picture at the end of the table for a model of how to arrange the controls on the form.
 
@@ -160,7 +160,7 @@ The application should check the setting of <xref:System.Windows.Forms.SystemInf
 
 In our application, the only element that is not using the system settings for color is `lblCompanyName`. The <xref:System.Drawing.SystemColors> class is used to change the color settings of the label to the user-selected system colors.
 
-#### To enable High Contrast mode in an effective way
+### To enable High Contrast mode in an effective way
 
 1. Create a method to set the colors of the label to the system colors.
 
@@ -286,7 +286,7 @@ In our application, the only element that is not using the system settings for c
 
 In this application, no information is conveyed by sound alone. If you use sound in your application, then you should supply the information by some other means as well.
 
-#### To supply information by some other means than sound
+### To supply information by some other means than sound
 
 1. Make the title bar flash by using the Windows API function FlashWindow. For an example of how to call Windows API functions, see [Walkthrough: Calling Windows APIs](/dotnet/visual-basic/programming-guide/com-interop/walkthrough-calling-windows-apis).
 
@@ -303,7 +303,7 @@ In this application, no information is conveyed by sound alone. If you use sound
 
 Before deploying the application, you should test the accessibility features that you have implemented.
 
-#### To test accessibility features
+### To test accessibility features
 
 1. To test keyboard access, unplug the mouse and navigate the user interface for each feature using only the keyboard. Ensure that all tasks may be performed using the keyboard only.
 

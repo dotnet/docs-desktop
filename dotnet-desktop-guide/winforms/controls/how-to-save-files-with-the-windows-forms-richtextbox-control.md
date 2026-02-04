@@ -35,7 +35,7 @@ The Windows Forms <xref:System.Windows.Forms.RichTextBox> control can write the 
 
 To save a file, call the <xref:System.Windows.Forms.RichTextBox.SaveFile%2A> method. You can also use the **SaveFile** method to save data to a stream. For more information, see <xref:System.Windows.Forms.RichTextBox.SaveFile%28System.IO.Stream%2CSystem.Windows.Forms.RichTextBoxStreamType%29>.
 
-### To save the contents of the control to a file
+## To save the contents of the control to a file
 
 1. Determine the path of the file to be saved.
 

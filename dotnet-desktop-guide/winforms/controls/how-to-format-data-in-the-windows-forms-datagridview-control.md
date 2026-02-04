@@ -23,7 +23,7 @@ ms.assetid: 8c33543c-9c08-4636-a65a-fdf714a529b7
 
 The following procedures demonstrate basic formatting of cell values using the <xref:System.Windows.Forms.DataGridView.DefaultCellStyle%2A> property of a <xref:System.Windows.Forms.DataGridView> control and of specific columns in a control. For information about advanced data formatting, see [How to: Customize Data Formatting in the Windows Forms DataGridView Control](how-to-customize-data-formatting-in-the-windows-forms-datagridview-control.md).
 
-### To format currency and date values
+## To format currency and date values
 
 - Set the <xref:System.Windows.Forms.DataGridViewCellStyle.Format%2A> property of a <xref:System.Windows.Forms.DataGridViewCellStyle>. The following code example sets the format for specific columns using the <xref:System.Windows.Forms.DataGridViewColumn.DefaultCellStyle%2A> property of the columns. Values in the `UnitPrice` column appear in the current culture-specific currency format, with negative values surrounded by parentheses. Values in the `ShipDate` column appear in the current culture-specific short date format. For more information about <xref:System.Windows.Forms.DataGridViewCellStyle.Format%2A> values, see [Formatting Types](/dotnet/standard/base-types/formatting-types).
 

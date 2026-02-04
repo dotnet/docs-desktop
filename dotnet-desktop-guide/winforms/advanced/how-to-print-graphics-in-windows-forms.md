@@ -17,7 +17,7 @@ ms.assetid: 32b891e6-52ff-4fea-a9ff-2ce5db20a4c6
 
 Frequently, you will want to print graphics in your Windows-based application. The <xref:System.Drawing.Graphics> class provides methods for drawing objects to a device, such as a screen or printer.
 
-### To print graphics
+## To print graphics
 
 1. Add a <xref:System.Drawing.Printing.PrintDocument> component to your form.
 

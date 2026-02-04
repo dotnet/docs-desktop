@@ -18,7 +18,7 @@ ms.assetid: e2ce4990-661d-4882-a116-8a9eb575dc84
 
 <xref:System.Windows.Forms.ToolStripControlHost> is designed to enable hosting of arbitrary Windows Forms controls by using the <xref:System.Windows.Forms.ToolStripControlHost> constructor or by extending <xref:System.Windows.Forms.ToolStripControlHost> itself. It is easier to wrap the control by extending <xref:System.Windows.Forms.ToolStripControlHost> and implementing properties and methods that expose frequently used properties and methods of the control. You can also expose events for the control at the <xref:System.Windows.Forms.ToolStripControlHost> level.
 
-### To host a control in a ToolStripControlHost by derivation
+## To host a control in a ToolStripControlHost by derivation
 
 1. Extend <xref:System.Windows.Forms.ToolStripControlHost>. Implement a parameterless constructor that calls the base class constructor passing in the desired control.
 

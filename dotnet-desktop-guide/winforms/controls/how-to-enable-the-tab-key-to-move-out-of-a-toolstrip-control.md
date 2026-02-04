@@ -16,7 +16,7 @@ Use the following procedure to enable the user to press the TAB key to move out 
 
 The <xref:System.Windows.Forms.ToolStrip> accepts the first press of the TAB key, and the arrow keys select items within the <xref:System.Windows.Forms.ToolStrip>. When the user presses the TAB key a second time, it takes the user to the next control in the tab order.
 
-### To enable the user to press the TAB key to move out of a ToolStrip to the next control
+## To enable the user to press the TAB key to move out of a ToolStrip to the next control
 
 - Set the <xref:System.Windows.Forms.ToolStrip.TabStop%2A> property of the <xref:System.Windows.Forms.ToolStrip> to `true`.
 

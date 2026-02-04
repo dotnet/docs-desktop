@@ -21,7 +21,7 @@ In the <xref:System.Windows.Forms.DataGridView> control, the <xref:System.Window
 
 There is support for this task in Visual Studio.  Also see [How to: Hide Columns in the Windows Forms DataGridView Control Using the Designer](hide-columns-in-the-datagrid-using-the-designer.md).
 
-### To hide a column programmatically
+## To hide a column programmatically
 
 - Set the <xref:System.Windows.Forms.DataGridViewColumn.Visible%2A?displayProperty=nameWithType> property to `false`. To hide a `CustomerID` column that is automatically generated during data binding, place the following code example in a <xref:System.Windows.Forms.DataGridView.DataBindingComplete> event handler.
 

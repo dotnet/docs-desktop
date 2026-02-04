@@ -73,7 +73,7 @@ Attachable members are exposed to XAML through an accessor method pattern on a d
 
 Be cautious of name collisions between these patterns and other methods of a type. If a member exists that matches one of the patterns, it can be interpreted as an attachable member usage pathway by a XAML processor even if that was not your intention.
 
-#### The GetPropertyName Accessor
+### The GetPropertyName Accessor
 
 The signature for the `GetPropertyName` accessor must be:
 

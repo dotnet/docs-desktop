@@ -30,7 +30,7 @@ In order to complete this walkthrough, you will need:
 
 ## Creating the form
 
-#### To create a master/detail form
+### To create a master/detail form
 
 1. Create a class that derives from <xref:System.Windows.Forms.Form> and contains two <xref:System.Windows.Forms.DataGridView> controls and two <xref:System.Windows.Forms.BindingSource> components. The following code provides basic form initialization and includes a `Main` method. If you use the Visual Studio designer to create your form, you can use the designer generated code instead of this code, but be sure to use the names shown in the variable declarations here.
 
@@ -56,7 +56,7 @@ In order to complete this walkthrough, you will need:
 
 You can now test the form to make sure it behaves as expected.
 
-#### To test the form
+### To test the form
 
 - Compile and run the application.
 

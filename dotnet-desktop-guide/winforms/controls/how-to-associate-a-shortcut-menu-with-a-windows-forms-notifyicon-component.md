@@ -24,7 +24,7 @@ The <xref:System.Windows.Forms.NotifyIcon> component displays an icon in the sta
 > [!NOTE]
 > If you want your application to be minimized at startup while displaying an instance of the <xref:System.Windows.Forms.NotifyIcon> component in the taskbar, set the main form's <xref:System.Windows.Forms.Form.WindowState%2A> property to <xref:System.Windows.Forms.FormWindowState.Minimized> and be sure the <xref:System.Windows.Forms.NotifyIcon> component's <xref:System.Windows.Forms.NotifyIcon.Visible%2A> property is set to `true`.
 
-### To associate a shortcut menu with the NotifyIcon component at design time
+## To associate a shortcut menu with the NotifyIcon component at design time
 
 1. Add a <xref:System.Windows.Forms.NotifyIcon> component to your form, and set the important properties, such as the <xref:System.Windows.Forms.NotifyIcon.Icon%2A> and <xref:System.Windows.Forms.NotifyIcon.Visible%2A> properties.
 

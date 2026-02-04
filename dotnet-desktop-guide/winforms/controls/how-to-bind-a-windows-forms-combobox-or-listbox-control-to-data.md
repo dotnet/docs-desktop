@@ -23,7 +23,7 @@ ms.assetid: dfd7f081-8bea-4a41-86a3-86a1934828ef
 
 You can bind the <xref:System.Windows.Forms.ComboBox> and <xref:System.Windows.Forms.ListBox> to data to perform tasks such as browsing data in a database, entering new data, or editing existing data.
 
-### To bind a ComboBox or ListBox control
+## To bind a ComboBox or ListBox control
 
 1. Set the `DataSource` property to a data source object. Possible data sources include a <xref:System.Windows.Forms.BindingSource> bound to data, a data table, a data view, a dataset, a data view manager, an array, or any class that implements the <xref:System.Collections.IList> interface. For more information, see [Data Sources Supported by Windows Forms](../data/overview.md).
 

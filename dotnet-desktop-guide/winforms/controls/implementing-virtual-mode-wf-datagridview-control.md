@@ -26,7 +26,7 @@ To copy the code in this topic as a single listing, see [How to: Implement Virtu
 
 ## Creating the Form
 
-#### To implement virtual mode
+### To implement virtual mode
 
 1. Create a class that derives from <xref:System.Windows.Forms.Form> and contains a <xref:System.Windows.Forms.DataGridView> control.
 
@@ -109,7 +109,7 @@ To copy the code in this topic as a single listing, see [How to: Implement Virtu
 
 You can now test the form to make sure it behaves as expected.
 
-#### To test the form
+### To test the form
 
 - Compile and run the application.
 

@@ -19,7 +19,7 @@ You can display data in the Windows Forms <xref:System.Windows.Forms.DataGrid> c
 
 The following procedures require a **Windows Application** project with a form that contains a <xref:System.Windows.Forms.DataGrid> control. For information about how to set up such a project, see [How to: Create a Windows Forms application project](/visualstudio/ide/step-1-create-a-windows-forms-application-project) and [How to: Add Controls to Windows Forms](how-to-add-to-a-form.md). By default in Visual Studio 2005, the <xref:System.Windows.Forms.DataGrid> control is not in the **Toolbox**. For information about adding it, see [How to: Add Items to the Toolbox](/previous-versions/visualstudio/visual-studio-2010/ms165355(v=vs.100)).
 
-### To add a table to the DataGrid control in the designer
+## To add a table to the DataGrid control in the designer
 
 1. In order to display data in the table, you must first bind the <xref:System.Windows.Forms.DataGrid> control to a dataset. For more information, see [How to: Bind the Windows Forms DataGrid Control to a Data Source Using the Designer](bind-wf-datagrid-control-to-a-data-source-using-the-designer.md).
 

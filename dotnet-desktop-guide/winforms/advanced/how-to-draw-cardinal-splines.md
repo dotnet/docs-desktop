@@ -17,7 +17,7 @@ description: Learn how to draw cardinal splines by creating a Graphics object an
 
 A cardinal spline is a curve that passes smoothly through a given set of points. To draw a cardinal spline, create a <xref:System.Drawing.Graphics> object and pass the address of an array of points to the <xref:System.Drawing.Graphics.DrawCurve%2A> method.
 
-### Drawing a Bell-Shaped Cardinal Spline
+## Drawing a Bell-Shaped Cardinal Spline
 
 - The following example draws a bell-shaped cardinal spline that passes through five designated points. The following illustration shows the curve and five points.
 

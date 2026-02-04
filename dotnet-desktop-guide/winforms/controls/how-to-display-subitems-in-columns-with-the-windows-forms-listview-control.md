@@ -18,7 +18,7 @@ ms.assetid: e465f044-cde7-4fd9-a687-788a73a0f554
 
 The Windows Forms <xref:System.Windows.Forms.ListView> control can display additional text, or subitems, for each item in the Details view. The first column displays the item text, for example an employee number. The second, third, and subsequent columns display the first, second, and subsequent associated subitems.
 
-### To add subitems to a list item
+## To add subitems to a list item
 
 1. Add any columns needed. Because the first column will display the item's <xref:System.Windows.Forms.ListView.Text%2A> property, you need one more column than there are subitems. For more information on adding columns, see [How to: Add Columns to the Windows Forms ListView Control](how-to-add-columns-to-the-windows-forms-listview-control.md).
 

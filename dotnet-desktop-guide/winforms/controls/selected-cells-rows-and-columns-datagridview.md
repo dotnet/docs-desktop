@@ -17,7 +17,7 @@ ms.assetid: d93c4b5b-498e-49bc-982a-2229d61778e4
 
 You can get the selected cells, rows, or columns from a <xref:System.Windows.Forms.DataGridView> control by using the corresponding properties: <xref:System.Windows.Forms.DataGridView.SelectedCells%2A>, <xref:System.Windows.Forms.DataGridView.SelectedRows%2A>, and <xref:System.Windows.Forms.DataGridView.SelectedColumns%2A>. In the following procedures, you will get the selected cells and display their row and column indexes in a <xref:System.Windows.Forms.MessageBox>.
 
-### To get the selected cells in a DataGridView control
+## To get the selected cells in a DataGridView control
 
 - Use the <xref:System.Windows.Forms.DataGridView.SelectedCells%2A> property.
 

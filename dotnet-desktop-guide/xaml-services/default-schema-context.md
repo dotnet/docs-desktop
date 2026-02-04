@@ -44,7 +44,7 @@ Assembly loading for XAML and .NET XAML Services integrates with the CLR-defined
 
 The XAML schema context for WPF integrates with the WPF application model, which in turn uses <xref:System.AppDomain> as well as other factors that are WPF implementation details.
 
-#### XAML reader input (loose XAML)
+### XAML reader input (loose XAML)
 
 01. The XAML schema context iterates through the <xref:System.AppDomain> of the application, looking for an already-loaded assembly that matches all aspects of the name, starting from the most recently loaded assembly. If a match is found, that assembly is used for resolution.
 

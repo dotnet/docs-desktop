@@ -21,7 +21,7 @@ ms.assetid: 1216742f-bcf9-4ff8-8a62-d7c9053c2b96
 
 Accessing specific items in a Windows Forms combo box, list box, or checked list box is an essential task. It enables you to programmatically determine what is in a list, at any given position.
 
-### To access a specific item
+## To access a specific item
 
 1. Query the `Items` collection using the index of the specific item:
 

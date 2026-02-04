@@ -33,7 +33,7 @@ A <xref:System.Windows.Controls.ScrollViewer> can only have one child, typically
 
 Physical scrolling is used to scroll content by a predetermined physical increment, typically by a value that is declared in pixels. Logical scrolling is used to scroll to the next item in the logical tree. Physical scrolling is the default scroll behavior for most <xref:System.Windows.Controls.Panel> elements. WPF supports both types of scrolling.
 
-#### The IScrollInfo Interface
+### The IScrollInfo Interface
 
 The <xref:System.Windows.Controls.Primitives.IScrollInfo> interface represents the main scrolling region within a <xref:System.Windows.Controls.ScrollViewer> or derived control. The interface defines scrolling properties and methods that can be implemented by <xref:System.Windows.Controls.Panel> elements that require scrolling by logical unit, rather than by a physical increment. Casting an instance of <xref:System.Windows.Controls.Primitives.IScrollInfo> to a derived <xref:System.Windows.Controls.Panel> and then using its scrolling methods provides a useful way to scroll to the next logical unit in a child collection, rather than by pixel increment. By default, the <xref:System.Windows.Controls.ScrollViewer> control supports scrolling by physical units.
 

@@ -13,7 +13,7 @@ description: Learn how to change the value of a setting between application sess
 
 At times, you might want to change the value of a setting between application sessions after the application has been compiled and deployed. For example, you might want to change a connection string to point to the correct database location. Since design-time tools are not available after the application has been compiled and deployed, you must change the setting value manually in the file.
 
-### To Change the Value of a Setting Between Application Sessions
+## To Change the Value of a Setting Between Application Sessions
 
 1. Using Microsoft Notepad or some other text or XML editor, open the .config file associated with your application.
 

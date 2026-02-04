@@ -26,7 +26,7 @@ The <xref:System.Windows.Forms.DataGridViewColumn.Frozen%2A> property of a colum
 
 There is support for this task in Visual Studio.  Also see [How to: Freeze Columns in the Windows Forms DataGridView Control Using the Designer](freeze-columns-in-the-datagrid-using-the-designer.md).
 
-### To freeze a column programmatically
+## To freeze a column programmatically
 
 - Set the <xref:System.Windows.Forms.DataGridViewColumn.Frozen%2A?displayProperty=nameWithType> property to `true`.
 

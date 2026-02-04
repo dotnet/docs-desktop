@@ -19,7 +19,7 @@ ms.assetid: d197caa2-38a5-4cb4-acc3-562130c2ace3
 
 The Windows Forms <xref:System.Windows.Forms.MonthCalendar> control can display up to 12 months at a time. By default, the control displays only one month, but you can specify how many months are displayed and how they are arranged within the control. When you change the calendar dimensions, the control is resized, so be sure there is enough room on the form for the new dimensions.
 
-### To display multiple months
+## To display multiple months
 
 - Set the <xref:System.Windows.Forms.MonthCalendar.CalendarDimensions%2A> property to the number of months to display horizontally and vertically.
 

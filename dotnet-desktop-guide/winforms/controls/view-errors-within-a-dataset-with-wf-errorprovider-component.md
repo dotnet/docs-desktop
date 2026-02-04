@@ -20,7 +20,7 @@ You can use the Windows Forms <xref:System.Windows.Forms.ErrorProvider> componen
 > [!NOTE]
 > If you change the error provider's <xref:System.Windows.Forms.ErrorProvider.DataSource%2A> and <xref:System.Windows.Forms.ErrorProvider.DataMember%2A> properties at run time, you should use the <xref:System.Windows.Forms.ErrorProvider.BindToDataAndErrors%2A> method to avoid conflicts.
 
-### To display data errors
+## To display data errors
 
 1. Bind the component to a specific column within a data table.
 

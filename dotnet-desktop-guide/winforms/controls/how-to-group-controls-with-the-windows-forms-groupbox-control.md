@@ -20,7 +20,7 @@ Windows Forms <xref:System.Windows.Forms.GroupBox> controls are used to group ot
 
 - For moving the controls as a unit at design time.
 
-### To create a group of controls
+## To create a group of controls
 
 1. Draw a <xref:System.Windows.Forms.GroupBox> control on a form.
 

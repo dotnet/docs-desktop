@@ -23,7 +23,7 @@ Also see [StatusStrip Items Collection Editor](/previous-versions/visualstudio/v
 
 Although <xref:System.Windows.Forms.StatusStrip> replaces and extends the <xref:System.Windows.Forms.StatusBar> control of previous versions, <xref:System.Windows.Forms.StatusBar> is retained for both backward compatibility and future use if you choose.
 
-### Important StatusStrip Members
+## Important StatusStrip Members
 
 |Name|Description|
 |----------|-----------------|

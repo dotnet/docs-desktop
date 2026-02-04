@@ -54,7 +54,7 @@ In order to complete this walkthrough, you will need:
 
 You will start by creating a WPF application project.
 
-#### To create a WPF application
+### To create a WPF application
 
 1. Start Visual Studio.
 
@@ -86,7 +86,7 @@ Therefore, the next step is to change the .NET Framework target and add a refere
 > [!NOTE]
 > The procedure for changing the .NET Framework target is different in a Visual Basic project and in a Visual C# project.
 
-#### To change the target .NET Framework in Visual Basic
+### To change the target .NET Framework in Visual Basic
 
 1. In **Solutions Explorer**, right-click the project name, and then click **Properties**.
 
@@ -134,7 +134,7 @@ Therefore, the next step is to change the .NET Framework target and add a refere
 
 Next, you will add a button control and create an event handler for the button's `Click` event. Later you will add code to so when you click the button, the contents of the text file are cached and displayed.
 
-#### To add a button control
+### To add a button control
 
 1. In **Solution Explorer**, double-click the MainWindow.xaml file to open it.
 
@@ -154,7 +154,7 @@ Next, you will add the code to perform the following tasks:
 
 - Display the contents of the cached text file.
 
-#### To create the cache object
+### To create the cache object
 
 1. Double-click the button you just added in order to create an event handler in the MainWindow.xaml.cs or MainWindow.Xaml.vb file.
 
@@ -290,7 +290,7 @@ Next, you will add the code to perform the following tasks:
 
 You can now test the application.
 
-#### To test caching in the WPF application
+### To test caching in the WPF application
 
 1. Press CTRL+F5 to run the application.
 

@@ -23,7 +23,7 @@ ms.assetid: a0aa204b-8351-4d82-9933-ee21a5c9e409
 
 After the Windows Forms <xref:System.Windows.Forms.DataGrid> is connected to a database, you can monitor which cell the user clicked.
 
-### To detect when the user of the DataGrid selects a different cell
+## To detect when the user of the DataGrid selects a different cell
 
 - In the <xref:System.Windows.Forms.DataGrid.CurrentCellChanged> event handler, write code to respond appropriately.
 

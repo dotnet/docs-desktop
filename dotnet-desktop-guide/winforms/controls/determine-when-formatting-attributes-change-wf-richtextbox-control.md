@@ -19,7 +19,7 @@ ms.assetid: bdfed015-f77a-41e5-b38f-f8629b2fa166
 
 A common use of the Windows Forms <xref:System.Windows.Forms.RichTextBox> control is formatting text with attributes such as font options or paragraph styles. Your application may need to keep track of any changes in text formatting for the purpose of displaying a toolbar, as in many word-processing applications.
 
-### To respond to changes in formatting attributes
+## To respond to changes in formatting attributes
 
 1. Write code in the <xref:System.Windows.Forms.RichTextBox.SelectionChanged> event handler to perform an appropriate action depending on the value of the attribute. The following example changes the appearance of a toolbar button depending on the value of the <xref:System.Windows.Forms.RichTextBox.SelectionBullet%2A> property. The toolbar button will only be updated when the insertion point is moved in the control.
 

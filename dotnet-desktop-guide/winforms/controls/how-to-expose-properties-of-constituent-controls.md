@@ -47,7 +47,7 @@ public Color ButtonColor
 }
 ```
 
-### To expose a property of a constituent control
+## To expose a property of a constituent control
 
 1. Create a public property for your user control.
 

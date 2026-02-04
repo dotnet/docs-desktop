@@ -14,7 +14,7 @@ description: Learn how to create a new BindingSource that is bound to a type, an
 
 When you are building controls that interact with data, you sometimes need to bind a control to a type, rather than an object. You typically need to bind a control to a type at design time, when data may not be available, but you still want your data-bound controls to display data from a type's public interface. The following procedures demonstrate how to create a new <xref:System.Windows.Forms.BindingSource> that is bound to a type, and then how to bind one of the type's properties to the <xref:System.Windows.Forms.TextBox.Text%2A> property of a <xref:System.Windows.Forms.TextBox>.
 
-### To bind the BindingSource to a type
+## To bind the BindingSource to a type
 
 1. Create a Windows Forms project (**File** > **New** > **Project** > **Visual C#** or **Visual Basic** > **Classic Desktop** > **Windows Forms Application**).
 

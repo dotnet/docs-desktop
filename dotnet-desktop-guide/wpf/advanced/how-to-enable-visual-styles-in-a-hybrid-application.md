@@ -22,7 +22,7 @@ For a complete code listing of the tasks illustrated in this topic, see [Enablin
 
 ## Enabling Windows Forms Visual Styles
 
-#### To enable Windows Forms visual styles
+### To enable Windows Forms visual styles
 
 1. Create a WPF Application project named `HostingWfWithVisualStyles`.
 
@@ -55,7 +55,7 @@ For a complete code listing of the tasks illustrated in this topic, see [Enablin
 
 To disable visual styles, simply remove the call to the <xref:System.Windows.Forms.Application.EnableVisualStyles%2A> method.
 
-#### To disable Windows Forms visual styles
+### To disable Windows Forms visual styles
 
 1. Open MainWindow.xaml.vb or MainWindow.xaml.cs in the Code Editor.
 

@@ -138,7 +138,7 @@ For applications targeting .NET Framework, use traditional patterns with proper 
 
 ---
 
-### Best practices
+## Best practices
 
 - **Use async/await consistently**: Don't mix async patterns with blocking calls.
 - **Handle exceptions**: Always wrap async operations in try-catch blocks in `async void` event handlers.

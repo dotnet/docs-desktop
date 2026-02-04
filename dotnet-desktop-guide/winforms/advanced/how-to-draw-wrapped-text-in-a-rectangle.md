@@ -23,7 +23,7 @@ The following illustration shows the output of text drawn in the rectangle when 
 
 ![Screenshot that shows the output when using DrawString method.](./media/how-to-draw-wrapped-text-in-a-rectangle/drawstring-method-font-text.png)
 
-### To draw wrapped text in a rectangle with GDI+
+## To draw wrapped text in a rectangle with GDI+
 
 1. Use the <xref:System.Drawing.Graphics.DrawString%2A> overloaded method, passing the text you want, <xref:System.Drawing.Rectangle> or <xref:System.Drawing.RectangleF>, <xref:System.Drawing.Font> and <xref:System.Drawing.Brush>.
 

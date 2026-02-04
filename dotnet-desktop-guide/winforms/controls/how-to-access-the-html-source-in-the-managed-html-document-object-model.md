@@ -18,7 +18,7 @@ The <xref:System.Windows.Forms.WebBrowser.DocumentStream%2A> and <xref:System.Wi
 
 The following procedure shows how to retrieve the dynamic source and display it in a separate shortcut menu.
 
-### Retrieving the dynamic source with the OuterHtml property
+## Retrieving the dynamic source with the OuterHtml property
 
 1. Create a new Windows Forms application. Start with a single <xref:System.Windows.Forms.Form>, and call it `Form1`.
 

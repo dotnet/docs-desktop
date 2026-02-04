@@ -30,7 +30,7 @@ Additionally, you should have a basic understanding of how to create an applicat
 
 ## Creating the Application
 
-#### To create the application
+### To create the application
 
 1. Create a new WPF Application project in Visual Basic or Visual C# named `BasicManipulation`. For more information, see [Walkthrough: My first WPF desktop application](../get-started/walkthrough-my-first-wpf-desktop-application.md).
 

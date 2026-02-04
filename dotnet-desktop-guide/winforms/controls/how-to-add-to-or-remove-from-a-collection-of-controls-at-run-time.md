@@ -23,7 +23,7 @@ Common tasks in application development are adding controls to and removing cont
 > [!NOTE]
 > The following code example applies to any control that maintains a collection of controls within it.
 
-### To add a control to a collection programmatically
+## To add a control to a collection programmatically
 
 1. Create an instance of the control to be added.
 

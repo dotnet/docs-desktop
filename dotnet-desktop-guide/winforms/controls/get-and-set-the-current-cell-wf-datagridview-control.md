@@ -22,7 +22,7 @@ Interaction with the <xref:System.Windows.Forms.DataGridView> often requires tha
 
 Depending on the <xref:System.Windows.Forms.DataGridView> control's selection mode, changing the current cell can change the selection. For more information, see [Selection Modes in the Windows Forms DataGridView Control](selection-modes-in-the-windows-forms-datagridview-control.md).
 
-### To get the current cell programmatically
+## To get the current cell programmatically
 
 - Use the <xref:System.Windows.Forms.DataGridView> control's <xref:System.Windows.Forms.DataGridView.CurrentCell%2A> property.
 

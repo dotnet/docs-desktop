@@ -24,7 +24,7 @@ Often, a program will call for you to update the contents of status bar panels d
 
 In the following example, you will use an instance of the <xref:System.Windows.Forms.StatusBarPanel> class to host a clock.
 
-### To get the status bar ready for updating
+## To get the status bar ready for updating
 
 1. Create a new Windows form.
 

@@ -28,7 +28,7 @@ In edit mode, the user can change the cell value and press ENTER to commit the c
 
 You can configure a <xref:System.Windows.Forms.DataGridView> control so that a cell enters edit mode as soon as it becomes the current cell. The behavior of the ENTER and ESC keys is unchanged in this case, but the cell remains in edit mode after the value is committed or reverted. You can also configure the control so that cells enter edit mode only when users type in the cell or only when users press F2. Finally, you can prevent cells from entering edit mode except when you call the <xref:System.Windows.Forms.DataGridView.BeginEdit%2A> method.
 
-### To change the edit mode of a DataGridView control
+## To change the edit mode of a DataGridView control
 
 - Set the <xref:System.Windows.Forms.DataGridView.EditMode%2A?displayProperty=nameWithType> property to the appropriate <xref:System.Windows.Forms.DataGridViewEditMode> enumeration.
 

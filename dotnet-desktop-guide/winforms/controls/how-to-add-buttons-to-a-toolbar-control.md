@@ -25,7 +25,7 @@ An integral part of the <xref:System.Windows.Forms.ToolBar> control is the butto
 
 The examples below assume that a <xref:System.Windows.Forms.ToolBar> control has been added to a Windows Form (`Form1`).
 
-### To add buttons programmatically
+## To add buttons programmatically
 
 1. In a procedure, create toolbar buttons by adding them to the <xref:System.Windows.Forms.ToolBar.Buttons%2A?displayProperty=nameWithType> collection.
 

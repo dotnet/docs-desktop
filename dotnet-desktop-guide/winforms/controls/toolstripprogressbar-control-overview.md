@@ -18,7 +18,7 @@ The <xref:System.Windows.Forms.ToolStripProgressBar> combines the rafting and re
 
 Although <xref:System.Windows.Forms.ToolStripProgressBar> replaces and adds functionality to the control in previous versions, <xref:System.Windows.Forms.ToolStripProgressBar> is retained for both backward compatibility and future use if desired.
 
-### Important ToolStripProgressBar Members
+## Important ToolStripProgressBar Members
 
 |Name|Description|
 |----------|-----------------|

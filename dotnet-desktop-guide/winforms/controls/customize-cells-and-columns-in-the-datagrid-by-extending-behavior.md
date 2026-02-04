@@ -31,7 +31,7 @@ Because this type of cell customization requires unshared rows, it is not approp
 > [!NOTE]
 > When you derive from <xref:System.Windows.Forms.DataGridViewCell> or <xref:System.Windows.Forms.DataGridViewColumn> and add new properties to the derived class, be sure to override the `Clone` method to copy the new properties during cloning operations. You should also call the base class's `Clone` method so that the properties of the base class are copied to the new cell or column.
 
-### To customize cells and columns in the DataGridView control
+## To customize cells and columns in the DataGridView control
 
 1. Derive a new cell class, called `DataGridViewRolloverCell`, from the <xref:System.Windows.Forms.DataGridViewTextBoxCell> type.
 

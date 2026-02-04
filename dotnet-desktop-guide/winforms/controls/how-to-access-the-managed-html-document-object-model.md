@@ -20,7 +20,7 @@ You can access the managed HTML Document Object Model (DOM) from two types of ap
 
 - A Windows Forms <xref:System.Windows.Forms.UserControl> hosted within Internet Explorer. You can access the HTML DOM representing the page on which your <xref:System.Windows.Forms.UserControl> is hosted in order to change the document's structure or open modal dialog boxes, among many other possibilities.
 
-### To access DOM from a Windows Forms application
+## To access DOM from a Windows Forms application
 
 1. Host a <xref:System.Windows.Forms.WebBrowser> control within your Windows Forms application and monitor for the <xref:System.Windows.Forms.WebBrowser.DocumentCompleted> event. For details on hosting controls and monitoring for events, see [Events](/dotnet/standard/events/index).
 

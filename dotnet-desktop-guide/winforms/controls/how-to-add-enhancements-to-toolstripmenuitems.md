@@ -42,7 +42,7 @@ You can enhance the usability of <xref:System.Windows.Forms.MenuStrip> and <xref
 
 - Show separator bars to group related commands and make menus more readable.
 
-### To display a check mark on a menu command
+## To display a check mark on a menu command
 
 - Set its <xref:System.Windows.Forms.ToolStripMenuItem.Checked%2A> property to `true`.
 

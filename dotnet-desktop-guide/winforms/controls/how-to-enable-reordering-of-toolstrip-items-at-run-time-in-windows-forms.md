@@ -18,7 +18,7 @@ ms.assetid: 8480b69a-379f-4dc2-8dcf-365ed93692b2
 
 You can enable the user to rearrange <xref:System.Windows.Forms.ToolStripItem> controls on the <xref:System.Windows.Forms.ToolStrip>.
 
-### To enable ToolStripItem rearrangement at run time
+## To enable ToolStripItem rearrangement at run time
 
 - Set the <xref:System.Windows.Forms.ToolStrip.AllowItemReorder%2A> property to `true`. By default, <xref:System.Windows.Forms.ToolStrip.AllowItemReorder%2A> is `false`.
 

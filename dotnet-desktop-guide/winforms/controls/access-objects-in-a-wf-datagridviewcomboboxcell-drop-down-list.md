@@ -23,7 +23,7 @@ To retrieve the business object through the cell value, the `ValueMember` proper
 
 The following procedures demonstrate how to populate a drop-down list with business objects and retrieve the objects through the cell <xref:System.Windows.Forms.DataGridViewCell.Value%2A> property.
 
-### To add business objects to the drop-down list
+## To add business objects to the drop-down list
 
 1. Create a new <xref:System.Windows.Forms.DataGridViewComboBoxColumn> and populate its <xref:System.Windows.Forms.DataGridViewComboBoxColumn.Items%2A> collection. Alternatively, you can set the column <xref:System.Windows.Forms.DataGridViewComboBoxColumn.DataSource%2A> property to the collection of business objects. In that case, however, you cannot add "unassigned" to the drop-down list without creating a corresponding business object in your collection.
 

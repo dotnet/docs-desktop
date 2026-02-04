@@ -24,7 +24,7 @@ The Windows Forms <xref:System.Windows.Forms.ImageList> component is typically p
 > [!NOTE]
 > When you remove images, verify that the <xref:System.Windows.Forms.ButtonBase.ImageIndex%2A> property of any associated controls is still valid.
 
-### To add images programmatically
+## To add images programmatically
 
 - Use the <xref:System.Windows.Forms.ImageList.ImageCollection.Add%2A> method of the image list's <xref:System.Windows.Forms.ImageList.Images%2A> property.
 

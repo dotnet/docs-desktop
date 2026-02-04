@@ -18,7 +18,7 @@ ms.assetid: b092532e-7346-469f-b9a1-897f9bea4fb7
 
 You can use the Windows Forms <xref:System.Windows.Forms.TabControl> to display other controls in an organized fashion. The following procedure shows how to add a button to the first tab. For information about adding an icon to the label part of a tab page, see [How to: Change the Appearance of the Windows Forms TabControl](how-to-change-the-appearance-of-the-windows-forms-tabcontrol.md).
 
-### To add a control programmatically
+## To add a control programmatically
 
 1. Use the <xref:System.Windows.Forms.Control.ControlCollection.Add%2A> method of the collection returned by the <xref:System.Windows.Forms.Control.Controls%2A> property of <xref:System.Windows.Forms.TabPage>:
 

@@ -15,7 +15,7 @@ description: Learn how the ToolStripStatusLabel is a label for a StatusStrip and
 
 The <xref:System.Windows.Forms.ToolStripStatusLabel> is a label for a <xref:System.Windows.Forms.StatusStrip>. Like the <xref:System.Windows.Forms.Label> or <xref:System.Windows.Forms.ToolStripLabel>, the <xref:System.Windows.Forms.ToolStripStatusLabel> provides a non-clickable display area for text, images, or both. The <xref:System.Windows.Forms.ToolStripStatusLabel> is hosted by a <xref:System.Windows.Forms.StatusStrip>.
 
-### Important ToolStripStatusLabel Members
+## Important ToolStripStatusLabel Members
 
 |Name|Description|
 |----------|-----------------|

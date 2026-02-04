@@ -30,7 +30,7 @@ The problem with manipulating styles using the <xref:System.Windows.Forms.HtmlEl
 
 The following procedure contains code that you can use to easily manipulate styles on HTML documents and elements. The procedure requires that you know how to perform basic tasks in Windows Forms, such as creating a new project and adding a control to a form.
 
-### To process style changes in a Windows Forms application
+## To process style changes in a Windows Forms application
 
 1. Create a new Windows Forms project.
 

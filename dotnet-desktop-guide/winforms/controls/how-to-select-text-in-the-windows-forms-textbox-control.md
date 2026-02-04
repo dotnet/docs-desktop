@@ -18,7 +18,7 @@ ms.assetid: 8c591546-6a01-45c7-8e03-f78431f903b1
 
 You can select text programmatically in the Windows Forms <xref:System.Windows.Forms.TextBox> control. For example, if you create a function that searches text for a particular string, you can select the text to visually alert the reader of the found string's position.
 
-### To select text programmatically
+## To select text programmatically
 
 1. Set the <xref:System.Windows.Forms.TextBoxBase.SelectionStart%2A> property to the beginning of the text you want to select.
 

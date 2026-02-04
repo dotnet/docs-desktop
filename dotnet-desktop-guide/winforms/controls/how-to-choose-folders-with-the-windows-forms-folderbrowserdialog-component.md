@@ -20,7 +20,7 @@ ms.assetid: 4593670e-7c7d-4661-b46b-4ffb63258adb
 
 Often, within Windows applications you create, you will have to prompt users to select a folder, most frequently to save a set of files. The Windows Forms <xref:System.Windows.Forms.FolderBrowserDialog> component allows you to easily accomplish this task.
 
-### To choose folders with the FolderBrowserDialog component
+## To choose folders with the FolderBrowserDialog component
 
 1. In a procedure, check the <xref:System.Windows.Forms.FolderBrowserDialog> component's <xref:System.Windows.Forms.Form.DialogResult%2A> property to see how the dialog box was closed and get the value of the <xref:System.Windows.Forms.FolderBrowserDialog> component's <xref:System.Windows.Forms.FolderBrowserDialog.SelectedPath%2A> property.
 
