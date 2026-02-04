@@ -17,7 +17,7 @@ ms.assetid: e4ad5f68-50d2-4b9e-93ee-9d622423a8ab
 
 Sometimes you will want to display a <xref:System.Windows.Forms.DataGridView> without column headers. In the <xref:System.Windows.Forms.DataGridView> control, the <xref:System.Windows.Forms.DataGridView.ColumnHeadersVisible%2A> property value determines whether the column headers are displayed.
 
-### To hide the column headers
+## To hide the column headers
 
 - Set the <xref:System.Windows.Forms.DataGridView.ColumnHeadersVisible%2A?displayProperty=nameWithType> property to `false`.
 

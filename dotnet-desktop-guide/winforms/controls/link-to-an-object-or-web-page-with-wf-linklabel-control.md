@@ -25,7 +25,7 @@ The Windows Forms <xref:System.Windows.Forms.LinkLabel> control allows you to cr
 
 ## Linking to Another Form
 
-#### To link to another form with a LinkLabel control
+### To link to another form with a LinkLabel control
 
 1. Set the <xref:System.Windows.Forms.LinkLabel.Text%2A> property to an appropriate caption.
 
@@ -94,7 +94,7 @@ The Windows Forms <xref:System.Windows.Forms.LinkLabel> control allows you to cr
 
 The <xref:System.Windows.Forms.LinkLabel> control can also be used to display a Web page with the default browser.
 
-#### To start Internet Explorer and link to a Web page with a LinkLabel control
+### To start Internet Explorer and link to a Web page with a LinkLabel control
 
 1. Set the <xref:System.Windows.Forms.LinkLabel.Text%2A> property to an appropriate caption.
 

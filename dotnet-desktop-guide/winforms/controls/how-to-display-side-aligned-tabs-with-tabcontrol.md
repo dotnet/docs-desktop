@@ -19,7 +19,7 @@ The <xref:System.Windows.Forms.TabControl.Alignment%2A> property of <xref:System
 
 The following procedure shows how to render right-aligned tabs, with the tab text running from left to right, by using the "owner draw" feature.
 
-### To display right-aligned tabs
+## To display right-aligned tabs
 
 1. Add a <xref:System.Windows.Forms.TabControl> to your form.
 

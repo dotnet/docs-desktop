@@ -23,7 +23,7 @@ The [FontDialog](fontdialog-component-windows-forms.md) component allows users t
 
 The font selected in the dialog box is returned in the <xref:System.Windows.Forms.FontDialog.Font%2A> property. Thus, taking advantage of the font selected by the user is as easy as reading a property.
 
-### To select font properties using the FontDialog Component
+## To select font properties using the FontDialog Component
 
 1. Display the dialog box using the <xref:System.Windows.Forms.CommonDialog.ShowDialog%2A> method.
 

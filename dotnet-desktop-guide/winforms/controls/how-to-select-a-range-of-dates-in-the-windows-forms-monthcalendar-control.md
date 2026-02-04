@@ -19,7 +19,7 @@ ms.assetid: 95d9ab95-b0f8-4c19-9f63-b5cd4593a5d0
 
 An important feature of the Windows Forms <xref:System.Windows.Forms.MonthCalendar> control is that the user can select a range of dates. This feature is an improvement over the date-selection feature of the <xref:System.Windows.Forms.DateTimePicker> control, which only enables the user to select a single date/time value. You can set a range of dates or get a selection range set by the user by using properties of the <xref:System.Windows.Forms.MonthCalendar> control. The following code example demonstrates how to set a selection range.
 
-### To select a range of dates
+## To select a range of dates
 
 1. Create <xref:System.DateTime> objects that represent the first and last dates in a range.
 

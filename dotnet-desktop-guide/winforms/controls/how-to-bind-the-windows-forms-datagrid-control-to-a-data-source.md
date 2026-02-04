@@ -25,7 +25,7 @@ description: Learn how to bind the Windows Forms DataGrid control to a Data sour
 
 The Windows Forms <xref:System.Windows.Forms.DataGrid> control is specifically designed to display information from a data source. You bind the control at run time by calling the <xref:System.Windows.Forms.DataGrid.SetDataBinding%2A> method. Although you can display data from a variety of data sources, the most typical sources are datasets and data views.
 
-### To data-bind the DataGrid control programmatically
+## To data-bind the DataGrid control programmatically
 
 1. Write code to fill the dataset.
 

@@ -15,7 +15,7 @@ ms.assetid: d38b5082-aba7-4f6c-841b-bd9714e307fd
 
 Use the following procedure to detect when the mouse pointer is over a <xref:System.Windows.Forms.ToolStripItem>.
 
-### To detect when the pointer is over a ToolStripItem
+## To detect when the pointer is over a ToolStripItem
 
 - Use the <xref:System.Windows.Forms.ToolStripItem.Selected%2A> property for items in which <xref:System.Windows.Forms.ToolStripItem.CanSelect%2A> is `true`.
 

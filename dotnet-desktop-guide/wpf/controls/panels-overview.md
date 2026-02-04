@@ -53,7 +53,7 @@ Panel also exposes a <xref:System.Windows.Controls.Panel.ZIndex%2A?displayProper
 
 <xref:System.Windows.Controls.Panel> also defines the <xref:System.Windows.Controls.Panel.OnRender%2A> method, which can be used to override the default presentation behavior of a <xref:System.Windows.Controls.Panel>.
 
-#### Attached Properties
+### Attached Properties
 
 Derived panel elements make extensive use of attached properties. An attached property is a specialized form of dependency property that does not have the conventional common language runtime (CLR) property "wrapper". Attached properties have a specialized syntax in Extensible Application Markup Language (XAML), which can be seen in several of the examples that follow.
 

@@ -24,7 +24,7 @@ With the grouping feature of the <xref:System.Windows.Forms.ListView> control, y
 
 To enable grouping, you must first create one or more groups either in the designer or programmatically. After a group has been defined, you can assign <xref:System.Windows.Forms.ListView> items to groups. You can also move items from one group to another programmatically.
 
-### To add groups
+## To add groups
 
 1. Use the <xref:System.Windows.Forms.ListViewGroupCollection.Add%2A> method of the <xref:System.Windows.Forms.ListView.Groups%2A> collection.
 

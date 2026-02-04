@@ -20,7 +20,7 @@ There is extensive support for this task in Visual Studio.
 
 See also [How to: Change the Borders of Windows Forms Using the Designer](/previous-versions/visualstudio/visual-studio-2010/yettzh3e(v=vs.100)).
 
-### To set the border style of Windows Forms programmatically
+## To set the border style of Windows Forms programmatically
 
 - Set the <xref:System.Windows.Forms.Form.FormBorderStyle%2A> property to the style you want. The following code example sets the border style of form `DlgBx1` to <xref:System.Windows.Forms.FormBorderStyle.FixedDialog>.
 

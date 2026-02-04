@@ -19,7 +19,7 @@ Sometimes it is useful to display a table of information stored in a collection 
 
 If these objects contain additional information and code that you want to access, you can reach it through row objects. In the following code example, users can select multiple rows and click a button to send an invoice to each of the corresponding customers.
 
-### To access row-bound objects
+## To access row-bound objects
 
 - Use the <xref:System.Windows.Forms.DataGridViewRow.DataBoundItem%2A?displayProperty=nameWithType> property.
 

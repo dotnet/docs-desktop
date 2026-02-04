@@ -28,7 +28,7 @@ There are two steps in working with graphics:
 
 A graphics object can be created in a variety of ways.
 
-#### To create a graphics object
+### To create a graphics object
 
 - Receive a reference to a graphics object as part of the <xref:System.Windows.Forms.PaintEventArgs> in the <xref:System.Windows.Forms.Control.Paint> event of a form or control. This is usually how you obtain a reference to a graphics object when creating painting code for a control. Similarly, you can also obtain a graphics object as a property of the <xref:System.Drawing.Printing.PrintPageEventArgs> when handling the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event for a <xref:System.Drawing.Printing.PrintDocument>.
 
@@ -46,7 +46,7 @@ A graphics object can be created in a variety of ways.
 
 When programming the <xref:System.Windows.Forms.PaintEventHandler> for controls or the <xref:System.Drawing.Printing.PrintDocument.PrintPage> for a <xref:System.Drawing.Printing.PrintDocument>, a graphics object is provided as one of the properties of <xref:System.Windows.Forms.PaintEventArgs> or <xref:System.Drawing.Printing.PrintPageEventArgs>.
 
-#### To obtain a reference to a Graphics object from the PaintEventArgs in the Paint event
+### To obtain a reference to a Graphics object from the PaintEventArgs in the Paint event
 
 1. Declare the <xref:System.Drawing.Graphics> object.
 
@@ -93,7 +93,7 @@ When programming the <xref:System.Windows.Forms.PaintEventHandler> for controls 
 
 You can also use the <xref:System.Windows.Forms.Control.CreateGraphics%2A> method of a control or form to obtain a reference to a <xref:System.Drawing.Graphics> object that represents the drawing surface of that control or form.
 
-#### To create a Graphics object with the CreateGraphics method
+### To create a Graphics object with the CreateGraphics method
 
 - Call the <xref:System.Windows.Forms.Control.CreateGraphics%2A> method of the form or control upon which you want to render graphics.
 
@@ -122,7 +122,7 @@ You can also use the <xref:System.Windows.Forms.Control.CreateGraphics%2A> metho
 
 Additionally, you can create a graphics object from any object that derives from the <xref:System.Drawing.Image> class.
 
-#### To create a Graphics object from an Image
+### To create a Graphics object from an Image
 
 - Call the <xref:System.Drawing.Graphics.FromImage%2A?displayProperty=nameWithType> method, supplying the name of the Image variable from which you want to create a <xref:System.Drawing.Graphics> object.
 
@@ -160,7 +160,7 @@ After it is created, a <xref:System.Drawing.Graphics> object may be used to draw
 
 - The <xref:System.Drawing.Color> structure—Represents the different colors to display.
 
-#### To use the Graphics object you have created
+### To use the Graphics object you have created
 
 - Work with the appropriate object listed above to draw what you need.
 

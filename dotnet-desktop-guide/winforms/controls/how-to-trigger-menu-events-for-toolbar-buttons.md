@@ -26,7 +26,7 @@ On the <xref:System.Windows.Forms.ToolBar.ButtonClick> event of the <xref:System
 
 The example below assumes a <xref:System.Windows.Forms.ToolBar> control has been added to a Windows Form.
 
-### To handle the Click event on a toolbar
+## To handle the Click event on a toolbar
 
 1. In a procedure, add toolbar buttons to the <xref:System.Windows.Forms.ToolBar> control.
 

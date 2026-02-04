@@ -19,7 +19,7 @@ When you enable column reordering in the <xref:System.Windows.Forms.DataGridView
 
 There is support for this task in Visual Studio.  Also see [How to: Enable Column Reordering in the Windows Forms DataGridView Control Using the Designer](enable-column-reordering-in-the-datagrid-using-the-designer.md).
 
-### To enable column reordering programmatically
+## To enable column reordering programmatically
 
 - Set the <xref:System.Windows.Forms.DataGridView.AllowUserToOrderColumns%2A?displayProperty=nameWithType> property to `true`.
 

@@ -22,7 +22,7 @@ On any Windows Form, you can designate a <xref:System.Windows.Forms.Button> cont
 > [!NOTE]
 > The exceptions to this are when the control with focus is another button — in that case, the button with the focus will be clicked — or a multiline text box, or a custom control that traps the ENTER key.
 
-### To designate the accept button
+## To designate the accept button
 
 1. Set the form's <xref:System.Windows.Forms.Form.AcceptButton%2A> property to the appropriate <xref:System.Windows.Forms.Button> control.
 

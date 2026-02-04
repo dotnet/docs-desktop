@@ -28,7 +28,7 @@ The deleted or hidden columns still exist in the data source the grid is bound t
 > [!NOTE]
 > If your application does not access certain columns of data, and you do not want them displayed in the datagrid, then it is probably not necessary to include them in the data source in the first place.
 
-### To delete a column from the DataGrid programmatically
+## To delete a column from the DataGrid programmatically
 
 1. In the declarations area of your form, declare a new instance of the <xref:System.Windows.Forms.DataGridTableStyle> class.
 

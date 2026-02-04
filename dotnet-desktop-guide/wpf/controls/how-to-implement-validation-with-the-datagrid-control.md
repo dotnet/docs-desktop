@@ -18,7 +18,7 @@ The <xref:System.Windows.Controls.DataGrid> control enables you to perform valid
 
 The following procedures describe how to apply validation rules to <xref:System.Windows.Controls.DataGrid> bindings and customize the visual feedback.
 
-### To validate individual cell values
+## To validate individual cell values
 
 - Specify one or more validation rules on the binding used with a column. This is similar to validating data in simple controls, as described in [Data Binding Overview](../data/index.md).
 

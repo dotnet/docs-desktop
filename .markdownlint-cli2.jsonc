@@ -1,8 +1,8 @@
 {
     "config": {
         "default": true,
-        // Rule is fixable, but corrections may have impacts on headings showing up in sidebars
-        "MD001": false,
+        // Heading levels should only increment by one level at a time (accessibility)
+        "MD001": true,
         // Rule is auto-fixable, and should pick single style
         "MD004": false,
         // Disabled as word wraping can cause many diffs

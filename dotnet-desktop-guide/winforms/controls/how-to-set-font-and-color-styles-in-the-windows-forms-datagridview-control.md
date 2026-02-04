@@ -22,7 +22,7 @@ The following procedures demonstrate basic customization of cell appearance usin
 
 There is extensive support for this task in Visual Studio.  Also see [How to: Set Default Cell Styles and Data Formats for the Windows Forms DataGridView Control Using the Designer](default-cell-styles-datagridview.md).
 
-### To specify the font used by DataGridView cells
+## To specify the font used by DataGridView cells
 
 - Set the <xref:System.Windows.Forms.DataGridViewCellStyle.Font%2A> property of a <xref:System.Windows.Forms.DataGridViewCellStyle>. The following code example uses the <xref:System.Windows.Forms.DataGridView.DefaultCellStyle%2A?displayProperty=nameWithType> property to set the font for the entire control.
 

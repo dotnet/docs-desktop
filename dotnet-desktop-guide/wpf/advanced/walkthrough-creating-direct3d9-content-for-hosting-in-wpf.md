@@ -35,7 +35,7 @@ You need the following components to complete this walkthrough:
 
 The first step is to create and configure the Direct3D9 project.
 
-#### To create the Direct3D9 project
+### To create the Direct3D9 project
 
 1. Create a new Win32 Project in C++ named `D3DContent`.
 
@@ -73,7 +73,7 @@ The first step is to create and configure the Direct3D9 project.
 
 To get the best performance, your Direct3D9 content must use particular settings. The following code shows how to create a Direct3D9 surface that has the best performance characteristics. For more information, see [Performance Considerations for Direct3D9 and WPF Interoperability](performance-considerations-for-direct3d9-and-wpf-interoperability.md).
 
-#### To create the Direct3D9 content
+### To create the Direct3D9 content
 
 1. Using Solution Explorer, add three C++ classes to the project named the following.
 

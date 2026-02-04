@@ -22,7 +22,7 @@ You need to specify an instance of the <xref:System.Drawing.Printing.PrintDocume
 
 An important aspect of working with the <xref:System.Windows.Forms.PageSetupDialog> component is how it interacts with the <xref:System.Drawing.Printing.PageSettings> class. The <xref:System.Drawing.Printing.PageSettings> class is used to specify settings that modify the way a page will be printed, such as paper orientation, the size of the page, and the margins. Each of these settings is represented as a property of the <xref:System.Drawing.Printing.PageSettings> class. The <xref:System.Windows.Forms.PageSetupDialog> class modifies these property values for a given instance of the <xref:System.Drawing.Printing.PageSettings> class that is associated with the document (and is represented as a <xref:System.Drawing.Printing.PrintDocument.DefaultPageSettings%2A> property).
 
-### To set page properties using the PageSetupDialog component
+## To set page properties using the PageSetupDialog component
 
 1. Use the <xref:System.Windows.Forms.CommonDialog.ShowDialog%2A> method to display the dialog box, specifying the <xref:System.Drawing.Printing.PrintDocument> to use.
 

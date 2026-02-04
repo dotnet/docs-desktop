@@ -15,7 +15,7 @@ description: Learn how the ToolStripPanel control provides a single area for pos
 
 A <xref:System.Windows.Forms.ToolStripPanel> provides a single area for positioning and rafting <xref:System.Windows.Forms.ToolStrip>, <xref:System.Windows.Forms.MenuStrip>, and <xref:System.Windows.Forms.StatusStrip> controls. Multiple <xref:System.Windows.Forms.ToolStrip> controls stack vertically or horizontally depending on the <xref:System.Windows.Forms.ToolStripPanelRow.Orientation%2A> of the <xref:System.Windows.Forms.ToolStripPanel>.
 
-### Important ToolStripPanel Members
+## Important ToolStripPanel Members
 
 |Name|Description|
 |----------|-----------------|

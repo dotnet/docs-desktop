@@ -21,7 +21,7 @@ ms.assetid: 18ca41d0-68a5-4660-985e-a6c1fbc01d76
 
 You can programmatically set the image displayed by a Windows Forms <xref:System.Windows.Forms.PictureBox> control.
 
-### To set a picture programmatically
+## To set a picture programmatically
 
 - Set the <xref:System.Windows.Forms.PictureBox.Image%2A> property using the <xref:System.Drawing.Image.FromFile%2A> method of the <xref:System.Drawing.Image> class.
 

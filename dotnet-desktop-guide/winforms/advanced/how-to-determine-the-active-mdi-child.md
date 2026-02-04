@@ -23,7 +23,7 @@ Because an MDI application can have many instances of the same child form, the p
 
 When you have several controls on a form, you also need to specify which control is active. Like the <xref:System.Windows.Forms.Form.ActiveMdiChild%2A> property, the <xref:System.Windows.Forms.ContainerControl.ActiveControl%2A> property returns the control with the focus on the active child form. The procedure below illustrates a copy procedure that can be called from a child form menu, a menu on the MDI form, or a toolbar button.
 
-### To determine the active MDI child (to copy its text to the Clipboard)
+## To determine the active MDI child (to copy its text to the Clipboard)
 
 1. Within a method, copy the text of the active control of the active child form to the Clipboard.
 

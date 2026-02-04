@@ -21,7 +21,7 @@ Often, within the context of [Multiple-Document Interface (MDI) Applications](mu
 > [!NOTE]
 > For information about verifying which child window has focus and sending its contents to the Clipboard, see [Determining the Active MDI Child](how-to-determine-the-active-mdi-child.md).
 
-### To send data to the active MDI child window from the Clipboard
+## To send data to the active MDI child window from the Clipboard
 
 1. Within a method, copy the text on the Clipboard to the active control of the active child form.
 

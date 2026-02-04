@@ -20,7 +20,7 @@ In some applications, the kind of a multiple-document interface (MDI) child wind
 
 The following procedure uses the <xref:System.Windows.Forms.Form.IsMdiContainer%2A>, <xref:System.Windows.Forms.ToolStrip.AllowMerge%2A>, <xref:System.Windows.Forms.MergeAction>, and <xref:System.Windows.Forms.ToolStripItem.MergeIndex%2A> properties to remove a menu item from the drop-down part of the MDI parent menu. Closing the MDI child window restores the removed menu items to the MDI parent menu.
 
-### To remove a MenuStrip from an MDI drop-down menu
+## To remove a MenuStrip from an MDI drop-down menu
 
 1. Create a form and set its <xref:System.Windows.Forms.Form.IsMdiContainer%2A> property to `true`.
 

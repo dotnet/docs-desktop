@@ -42,7 +42,7 @@ For more information about event handling, see [Event Handlers Overview](../form
 
 The following procedures show how to test for a valid birth date using either the <xref:System.Configuration.ApplicationSettingsBase.SettingChanging> or the <xref:System.Configuration.ApplicationSettingsBase.SettingsSaving> event. The procedures were written under the assumption that you have already created your application settings; in this example, we will perform bounds checking on a setting named `DateOfBirth`. For more information about creating settings, see [How to: Create Application Settings](how-to-create-application-settings.md).
 
-### To obtain the application settings object
+## To obtain the application settings object
 
 - Obtain a reference to the application settings object (the wrapper instance) by completing one of the following bulleted items:
 

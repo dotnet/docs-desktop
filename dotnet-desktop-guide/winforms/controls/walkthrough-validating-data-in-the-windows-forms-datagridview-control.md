@@ -32,7 +32,7 @@ In order to complete this walkthrough, you will need:
 
 ## Creating the Form
 
-#### To validate data entered in a DataGridView
+### To validate data entered in a DataGridView
 
 1. Create a class that derives from <xref:System.Windows.Forms.Form> and contains a <xref:System.Windows.Forms.DataGridView> control and a <xref:System.Windows.Forms.BindingSource> component.
 
@@ -69,7 +69,7 @@ In order to complete this walkthrough, you will need:
 
 You can now test the form to make sure it behaves as expected.
 
-#### To test the form
+### To test the form
 
 - Compile and run the application.
 

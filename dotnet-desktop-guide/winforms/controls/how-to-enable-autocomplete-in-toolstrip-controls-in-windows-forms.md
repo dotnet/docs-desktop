@@ -23,7 +23,7 @@ The following procedure combines a <xref:System.Windows.Forms.ToolStripLabel> wi
 > [!NOTE]
 > Automatic completion works with `ToolStrip` controls in the same way that it works with traditional controls such as <xref:System.Windows.Forms.ComboBox> and <xref:System.Windows.Forms.TextBox>.
 
-### To enable AutoComplete in a ToolStrip control
+## To enable AutoComplete in a ToolStrip control
 
 1. Create a <xref:System.Windows.Forms.ToolStrip> control and add items to it.
 

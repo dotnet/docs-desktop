@@ -19,7 +19,7 @@ With the <xref:System.Windows.Forms.DataGridView> control, you can specify defau
 
 There is extensive support for this task in Visual Studio.  Also see [How to: Set Default Cell Styles and Data Formats for the Windows Forms DataGridView Control Using the Designer](default-cell-styles-datagridview.md).
 
-### To set the default cell styles programmatically
+## To set the default cell styles programmatically
 
 1. Set the properties of the <xref:System.Windows.Forms.DataGridViewCellStyle> retrieved through the <xref:System.Windows.Forms.DataGridView.DefaultCellStyle%2A?displayProperty=nameWithType> property.
 

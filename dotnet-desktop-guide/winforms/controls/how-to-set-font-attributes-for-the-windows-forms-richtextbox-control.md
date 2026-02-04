@@ -22,7 +22,7 @@ ms.assetid: 2bc23ddb-0529-4489-a1a2-ad253cb43f9a
 
 The Windows Forms <xref:System.Windows.Forms.RichTextBox> control has numerous options for formatting the text it displays. You can make the selected characters bold, underlined, or italic, using the <xref:System.Windows.Forms.RichTextBox.SelectionFont%2A> property. You can also use this property to change the size and typeface of the selected characters. The <xref:System.Windows.Forms.RichTextBox.SelectionColor%2A> property enables you to change the selected characters' color.
 
-### To change the appearance of characters
+## To change the appearance of characters
 
 1. Set the <xref:System.Windows.Forms.RichTextBox.SelectionFont%2A> property to an appropriate font.
 

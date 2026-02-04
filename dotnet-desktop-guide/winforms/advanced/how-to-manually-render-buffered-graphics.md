@@ -19,7 +19,7 @@ If you are managing your own buffered graphics, you will need to be able to crea
 > [!NOTE]
 > If you perform your own rendering, memory consumption will increase, though the increase may only be slight.
 
-### To manually display buffered graphics
+## To manually display buffered graphics
 
 1. Obtain a reference to an instance of the <xref:System.Drawing.BufferedGraphicsContext> class. For more information, see [How to: Manually Manage Buffered Graphics](how-to-manually-manage-buffered-graphics.md).
 

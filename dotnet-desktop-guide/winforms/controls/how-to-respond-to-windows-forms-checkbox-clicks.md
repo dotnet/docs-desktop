@@ -20,7 +20,7 @@ ms.assetid: c39f901e-8899-43b6-aa31-939cbf7089fb
 
 Whenever a user clicks a Windows Forms <xref:System.Windows.Forms.CheckBox> control, the <xref:System.Windows.Forms.Control.Click> event occurs. You can program your application to perform some action depending upon the state of the check box.
 
-### To respond to CheckBox clicks
+## To respond to CheckBox clicks
 
 1. In the <xref:System.Windows.Forms.Control.Click> event handler, use the <xref:System.Windows.Forms.CheckBox.Checked%2A> property to determine the control's state, and perform any necessary action.
 

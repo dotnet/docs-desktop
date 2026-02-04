@@ -24,7 +24,7 @@ The following illustration shows the output of text drawn at a specified point w
 
 ![Screenshot that shows the output of text at a specified point.](./media/how-to-draw-text-at-a-specified-location/font-text-specified-point.png)
 
-### To draw a line of text with GDI+
+## To draw a line of text with GDI+
 
 1. Use the <xref:System.Drawing.Graphics.DrawString%2A> method, passing the text you want, <xref:System.Drawing.Point> or <xref:System.Drawing.PointF>, <xref:System.Drawing.Font>, and <xref:System.Drawing.Brush>.
 
