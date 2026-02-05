@@ -1,500 +1,500 @@
 {
-    "redirections": [
-        {
-            "source_path": "dotnet-desktop-guide/wpf/introduction-to-wpf.md",
-            "redirect_url": "/dotnet/desktop/wpf/overview/"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/app-development/wpf-windows-overview.md",
-            "redirect_url": "/dotnet/desktop/wpf/windows/index"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/app-development/dialog-boxes-overview.md",
-            "redirect_url": "/dotnet/desktop/wpf/windows/dialog-boxes-overview"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/app-development/how-to-open-a-window.md",
-            "redirect_url": "/dotnet/desktop/wpf/windows/how-to-open-window-dialog-box"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/app-development/how-to-open-a-dialog-box.md",
-            "redirect_url": "/dotnet/desktop/wpf/windows/how-to-open-window-dialog-box"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/how-to-return-a-dialog-box-result.md",
-            "redirect_url": "/dotnet/desktop/wpf/windows/how-to-open-window-dialog-box"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/app-development/how-to-open-a-message-box.md",
-            "redirect_url": "/dotnet/desktop/wpf/windows/how-to-open-message-box"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/app-development/how-to-get-and-set-the-main-application-window.md",
-            "redirect_url": "/dotnet/desktop/wpf/windows/how-to-get-set-main-application-window"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/controls/button-styles-and-templates.md",
-            "redirect_url": "/dotnet/desktop/wpf/controls/button"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/controls/calendar-styles-and-templates.md",
-            "redirect_url": "/dotnet/desktop/wpf/controls/calendar"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/controls/checkbox-styles-and-templates.md",
-            "redirect_url": "/dotnet/desktop/wpf/controls/checkbox"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/controls/combobox-styles-and-templates.md",
-            "redirect_url": "/dotnet/desktop/wpf/controls/combobox"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/controls/control-styles-and-templates.md",
-            "redirect_url": "/dotnet/desktop/wpf/controls/styles-templates-overview"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/controls/contextmenu-styles-and-templates.md",
-            "redirect_url": "/dotnet/desktop/wpf/controls/contextmenu-overview"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/controls/contextmenu-overview.md",
-            "redirect_url": "/dotnet/desktop/wpf/controls/contextmenu"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/controls/datagrid-styles-and-templates.md",
-            "redirect_url": "/dotnet/desktop/wpf/controls/datagrid"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/controls/datepicker-styles-and-templates.md",
-            "redirect_url": "/dotnet/desktop/wpf/controls/datepicker"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/controls/documentviewer-styles-and-templates.md",
-            "redirect_url": "/dotnet/desktop/wpf/controls/documentviewer"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/controls/expander-overview.md",
-            "redirect_url": "/dotnet/desktop/wpf/controls/expander"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/controls/expander-how-to-topics.md",
-            "redirect_url": "/dotnet/desktop/wpf/controls/expander"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/controls/expander-styles-and-templates.md",
-            "redirect_url": "/dotnet/desktop/wpf/controls/expander"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/controls/frame-styles-and-templates.md",
-            "redirect_url": "/dotnet/desktop/wpf/controls/frame"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/controls/gridview-column-header-styles-and-templates-overview.md",
-            "redirect_url": "/dotnet/desktop/wpf/controls/gridview-overview"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/controls/gridview-overview.md",
-            "redirect_url": "/dotnet/desktop/wpf/controls/gridview"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/controls/grid-how-to-topics.md",
-            "redirect_url": "/dotnet/desktop/wpf/controls/grid"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/controls/gridsplitter-how-to-topics.md",
-            "redirect_url": "/dotnet/desktop/wpf/controls/gridsplitter"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/controls/groupbox-styles-and-templates.md",
-            "redirect_url": "/dotnet/desktop/wpf/controls/groupbox"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/controls/how-to-define-a-groupbox-template.md",
-            "redirect_url": "/dotnet/desktop/wpf/controls/groupbox"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/controls/label-styles-and-templates.md",
-            "redirect_url": "/dotnet/desktop/wpf/controls/label"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/controls/listbox-styles-and-templates.md",
-            "redirect_url": "/dotnet/desktop/wpf/controls/listbox"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/controls/listbox-how-to-topics.md",
-            "redirect_url": "/dotnet/desktop/wpf/controls/listbox"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/controls/listview-styles-and-templates.md",
-            "redirect_url": "/dotnet/desktop/wpf/controls/listview"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/controls/listview-overview.md",
-            "redirect_url": "/dotnet/desktop/wpf/controls/listview"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/controls/listview-overviews.md",
-            "redirect_url": "/dotnet/desktop/wpf/controls/listview"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/controls/listview-how-to-topics.md",
-            "redirect_url": "/dotnet/desktop/wpf/controls/listview"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/controls/menu-styles-and-templates.md",
-            "redirect_url": "/dotnet/desktop/wpf/controls/menu"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/controls/navigationwindow-styles-and-templates.md",
-            "redirect_url": "/dotnet/desktop/wpf/controls/navigationwindow"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/controls/passwordbox-styles-and-templates.md",
-            "redirect_url": "/dotnet/desktop/wpf/controls/passwordbox"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/controls/progressbar-styles-and-templates.md",
-            "redirect_url": "/dotnet/desktop/wpf/controls/progressbar"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/controls/radiobutton-styles-and-templates.md",
-            "redirect_url": "/dotnet/desktop/wpf/controls/radiobutton"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/controls/repeatbutton-styles-and-templates.md",
-            "redirect_url": "/dotnet/desktop/wpf/controls/repeatbutton"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/controls/scrollbar-styles-and-templates.md",
-            "redirect_url": "/dotnet/desktop/wpf/controls/scrollbar"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/controls/scrollviewer-how-to-topics.md",
-            "redirect_url": "/dotnet/desktop/wpf/controls/scrollviewer"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/controls/scrollviewer-overview.md",
-            "redirect_url": "/dotnet/desktop/wpf/controls/scrollviewer"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/controls/thumb-styles-and-templates.md",
-            "redirect_url": "/dotnet/desktop/wpf/controls/thumb"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/controls/togglebutton-styles-and-templates.md",
-            "redirect_url": "/dotnet/desktop/wpf/controls/togglebutton"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/controls/toolbar-overview.md",
-            "redirect_url": "/dotnet/desktop/wpf/controls/toolbar"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/controls/toolbar-styles-and-templates.md",
-            "redirect_url": "/dotnet/desktop/wpf/controls/toolbar"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/controls/tooltip-styles-and-templates.md",
-            "redirect_url": "/dotnet/desktop/wpf/controls/tooltip"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/controls/treeview-styles-and-templates.md",
-            "redirect_url": "/dotnet/desktop/wpf/controls/treeview"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/controls/treeview-how-to-topics.md",
-            "redirect_url": "/dotnet/desktop/wpf/controls/treeview"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/controls/treeview-overview.md",
-            "redirect_url": "/dotnet/desktop/wpf/controls/treeview"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/controls/window-styles-and-templates.md",
-            "redirect_url": "/dotnet/desktop/wpf/controls/window"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/data/data-binding-overview.md",
-            "redirect_url": "/dotnet/desktop/wpf/data/index"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/data/how-to-specify-the-direction-of-the-binding.md",
-            "redirect_url": "/dotnet/desktop/wpf/data/binding-declarations-overview#binding-direction"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/advanced/printing-overview.md",
-            "redirect_url": "/dotnet/desktop/wpf/documents/printing-overview"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/advanced/how-to-invoke-a-print-dialog.md",
-            "redirect_url": "/dotnet/desktop/wpf/documents/how-to-display-print-dialog"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/advanced/how-to-programmatically-print-xps-files.md",
-            "redirect_url": "/dotnet/desktop/wpf/documents/how-to-print-xps-files"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/advanced/how-to-add-an-event-handler-using-code.md",
-            "redirect_url": "/dotnet/desktop/wpf/events/how-to-add-an-event-handler-using-code"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/advanced/how-to-create-a-custom-routed-event.md",
-            "redirect_url": "/dotnet/desktop/wpf/events/how-to-create-a-custom-routed-event"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/advanced/visual-basic-and-wpf-event-handling.md",
-            "redirect_url": "/dotnet/desktop/wpf/events/visual-basic-and-wpf-event-handling"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/advanced/preview-events.md",
-            "redirect_url": "/dotnet/desktop/wpf/events/preview-events"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/advanced/marking-routed-events-as-handled-and-class-handling.md",
-            "redirect_url": "/dotnet/desktop/wpf/events/marking-routed-events-as-handled-and-class-handling"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/advanced/object-lifetime-events.md",
-            "redirect_url": "/dotnet/desktop/wpf/events/object-lifetime-events"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/advanced/weak-event-patterns.md",
-            "redirect_url": "/dotnet/desktop/wpf/events/weak-event-patterns"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/advanced/property-change-events.md",
-            "redirect_url": "/dotnet/desktop/wpf/events/property-change-events"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/advanced/attached-events-overview.md",
-            "redirect_url": "/dotnet/desktop/wpf/events/attached-events-overview"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/advanced/routed-events-overview.md",
-            "redirect_url": "/dotnet/desktop/wpf/events/routed-events-overview"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/advanced/dependency-properties-overview.md",
-            "redirect_url": "/dotnet/desktop/wpf/properties/dependency-properties-overview"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/advanced/dependency-property-value-precedence.md",
-            "redirect_url": "/dotnet/desktop/wpf/properties/dependency-property-value-precedence"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/advanced/attached-properties-overview.md",
-            "redirect_url": "/dotnet/desktop/wpf/properties/attached-properties-overview"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/advanced/collection-type-dependency-properties.md",
-            "redirect_url": "/dotnet/desktop/wpf/properties/collection-type-dependency-properties"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/advanced/how-to-register-an-attached-property.md",
-            "redirect_url": "/dotnet/desktop/wpf/properties/how-to-register-an-attached-property"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/advanced/how-to-implement-a-dependency-property.md",
-            "redirect_url": "/dotnet/desktop/wpf/properties/how-to-implement-a-dependency-property"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/advanced/custom-dependency-properties.md",
-            "redirect_url": "/dotnet/desktop/wpf/properties/custom-dependency-properties"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/advanced/dependency-property-metadata.md",
-            "redirect_url": "/dotnet/desktop/wpf/properties/dependency-property-metadata"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/advanced/how-to-override-metadata-for-a-dependency-property.md",
-            "redirect_url": "/dotnet/desktop/wpf/properties/how-to-override-metadata-for-a-dependency-property"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/advanced/dependency-property-callbacks-and-validation.md",
-            "redirect_url": "/dotnet/desktop/wpf/properties/dependency-property-callbacks-and-validation"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/advanced/read-only-dependency-properties.md",
-            "redirect_url": "/dotnet/desktop/wpf/properties/read-only-dependency-properties"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/advanced/framework-property-metadata.md",
-            "redirect_url": "/dotnet/desktop/wpf/properties/framework-property-metadata"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/advanced/dependency-property-security.md",
-            "redirect_url": "/dotnet/desktop/wpf/properties/dependency-property-security"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/advanced/safe-constructor-patterns-for-dependencyobjects.md",
-            "redirect_url": "/dotnet/desktop/wpf/properties/safe-constructor-patterns-for-dependencyobjects"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/advanced/property-value-inheritance.md",
-            "redirect_url": "/dotnet/desktop/wpf/properties/property-value-inheritance"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/advanced/xaml-loading-and-dependency-properties.md",
-            "redirect_url": "/dotnet/desktop/wpf/properties/xaml-loading-and-dependency-properties"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/advanced/xaml-resources-define.md",
-            "redirect_url": "/dotnet/desktop/wpf/systems/xaml-resources-overview"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/advanced/resources-and-code.md",
-            "redirect_url": "/dotnet/desktop/wpf/systems/xaml-resources-and-code"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/advanced/merged-resource-dictionaries.md",
-            "redirect_url": "/dotnet/desktop/wpf/systems/xaml-resources-merged-dictionaries"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/advanced/how-to-define-and-reference-a-resource.md",
-            "redirect_url": "/dotnet/desktop/wpf/systems/xaml-resources-how-to-define-and-reference"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/advanced/how-to-use-application-resources.md",
-            "redirect_url": "/dotnet/desktop/wpf/systems/xaml-resources-how-to-use-application"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/advanced/how-to-use-systemfonts.md",
-            "redirect_url": "/dotnet/desktop/wpf/systems/xaml-resources-how-to-use-system"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/advanced/how-to-use-system-fonts-keys.md",
-            "redirect_url": "/dotnet/desktop/wpf/systems/xaml-resources-how-to-use-system"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/advanced/how-to-use-systemparameters.md",
-            "redirect_url": "/dotnet/desktop/wpf/systems/xaml-resources-how-to-use-system"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/advanced/how-to-use-system-parameters-keys.md",
-            "redirect_url": "/dotnet/desktop/wpf/systems/xaml-resources-how-to-use-system"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/advanced/xaml-in-wpf.md",
-            "redirect_url": "/dotnet/desktop/wpf/xaml/index"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/advanced/xaml-overview.md",
-            "redirect_url": "/dotnet/desktop/wpf/xaml/index"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/getting-started/whats-new.md",
-            "redirect_url": "/dotnet/desktop/wpf/whats-new/framework45"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/getting-started/index.md",
-            "redirect_url": "/dotnet/desktop/wpf/get-started/create-app-visual-studio"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/getting-started/introduction-to-wpf-in-vs.md",
-            "redirect_url": "/dotnet/desktop/wpf/get-started/create-app-visual-studio"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/getting-started/walkthrough-my-first-wpf-desktop-application.md",
-            "redirect_url": "/dotnet/desktop/wpf/get-started/walkthrough-my-first-wpf-desktop-application"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/getting-started/community-feedback.md",
-            "redirect_url": "/dotnet/desktop/wpf/"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/getting-started/wpf-walkthroughs.md",
-            "redirect_url": "/dotnet/desktop/wpf/get-started/wpf-walkthroughs"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/app-development/how-to-return-a-dialog-box-result.md",
-            "redirect_url": "/dotnet/desktop/wpf/windows/dialog-boxes-overview"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/advanced/sample-opentype-font-pack.md",
-            "redirect_url": "/dotnet/desktop/wpf/advanced/opentype-font-features"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/controls/adorners-overview.md",
-            "redirect_url": "/dotnet/desktop/wpf/controls/adorners"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/controls/adorners-how-to-topics.md",
-            "redirect_url": "/dotnet/desktop/wpf/controls/adorners"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/controls/canvas-how-to-topics.md",
-            "redirect_url": "/dotnet/desktop/wpf/controls/canvas"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/controls/dockpanel-how-to-topics.md",
-            "redirect_url": "/dotnet/desktop/wpf/controls/dockpanel"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/controls/flowdocumentscrollviewer.md",
-            "redirect_url": "/dotnet/desktop/wpf/controls/flowdocument"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/controls/flowdocumentpageviewer.md",
-            "redirect_url": "/dotnet/desktop/wpf/controls/flowdocument"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/controls/flowdocumentreader.md",
-            "redirect_url": "/dotnet/desktop/wpf/controls/flowdocument"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/controls/image-how-to-topics.md",
-            "redirect_url": "/dotnet/desktop/wpf/controls/image"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/controls/menu-overview.md",
-            "redirect_url": "/dotnet/desktop/wpf/controls/menu"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/controls/panel-how-to-topics.md",
-            "redirect_url": "/dotnet/desktop/wpf/controls/panel"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/controls/panels-overview.md",
-            "redirect_url": "/dotnet/desktop/wpf/controls/panel"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/controls/richtextbox-how-to-topics.md",
-            "redirect_url": "/dotnet/desktop/wpf/controls/richtextbox"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/controls/richtextbox-overview.md",
-            "redirect_url": "/dotnet/desktop/wpf/controls/richtextbox"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/controls/textblock-overview.md",
-            "redirect_url": "/dotnet/desktop/wpf/controls/textblock"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/controls/textbox-how-to-topics.md",
-            "redirect_url": "/dotnet/desktop/wpf/controls/textbox"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/controls/textbox-overview.md",
-            "redirect_url": "/dotnet/desktop/wpf/controls/textbox"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/controls/textbox-styles-and-templates.md",
-            "redirect_url": "/dotnet/desktop/wpf/controls/textbox"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/controls/tooltip-how-to-topics.md",
-            "redirect_url": "/dotnet/desktop/wpf/controls/tooltip"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/controls/tooltip-overview.md",
-            "redirect_url": "/dotnet/desktop/wpf/controls/tooltip"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/controls/popup-how-to-topics.md",
-            "redirect_url": "/dotnet/desktop/wpf/controls/popup"
-        },
-        {
-            "source_path": "dotnet-desktop-guide/wpf/controls/popup-overview.md",
-            "redirect_url": "/dotnet/desktop/wpf/controls/popup"
-        }
-    ]
+  "redirections": [
+    {
+      "source_path": "dotnet-desktop-guide/wpf/advanced/attached-events-overview.md",
+      "redirect_url": "/dotnet/desktop/wpf/events/attached-events-overview"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/advanced/attached-properties-overview.md",
+      "redirect_url": "/dotnet/desktop/wpf/properties/attached-properties-overview"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/advanced/collection-type-dependency-properties.md",
+      "redirect_url": "/dotnet/desktop/wpf/properties/collection-type-dependency-properties"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/advanced/custom-dependency-properties.md",
+      "redirect_url": "/dotnet/desktop/wpf/properties/custom-dependency-properties"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/advanced/dependency-properties-overview.md",
+      "redirect_url": "/dotnet/desktop/wpf/properties/dependency-properties-overview"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/advanced/dependency-property-callbacks-and-validation.md",
+      "redirect_url": "/dotnet/desktop/wpf/properties/dependency-property-callbacks-and-validation"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/advanced/dependency-property-metadata.md",
+      "redirect_url": "/dotnet/desktop/wpf/properties/dependency-property-metadata"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/advanced/dependency-property-security.md",
+      "redirect_url": "/dotnet/desktop/wpf/properties/dependency-property-security"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/advanced/dependency-property-value-precedence.md",
+      "redirect_url": "/dotnet/desktop/wpf/properties/dependency-property-value-precedence"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/advanced/framework-property-metadata.md",
+      "redirect_url": "/dotnet/desktop/wpf/properties/framework-property-metadata"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/advanced/how-to-add-an-event-handler-using-code.md",
+      "redirect_url": "/dotnet/desktop/wpf/events/how-to-add-an-event-handler-using-code"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/advanced/how-to-create-a-custom-routed-event.md",
+      "redirect_url": "/dotnet/desktop/wpf/events/how-to-create-a-custom-routed-event"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/advanced/how-to-define-and-reference-a-resource.md",
+      "redirect_url": "/dotnet/desktop/wpf/systems/xaml-resources-how-to-define-and-reference"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/advanced/how-to-implement-a-dependency-property.md",
+      "redirect_url": "/dotnet/desktop/wpf/properties/how-to-implement-a-dependency-property"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/advanced/how-to-invoke-a-print-dialog.md",
+      "redirect_url": "/dotnet/desktop/wpf/documents/how-to-display-print-dialog"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/advanced/how-to-override-metadata-for-a-dependency-property.md",
+      "redirect_url": "/dotnet/desktop/wpf/properties/how-to-override-metadata-for-a-dependency-property"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/advanced/how-to-programmatically-print-xps-files.md",
+      "redirect_url": "/dotnet/desktop/wpf/documents/how-to-print-xps-files"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/advanced/how-to-register-an-attached-property.md",
+      "redirect_url": "/dotnet/desktop/wpf/properties/how-to-register-an-attached-property"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/advanced/how-to-use-application-resources.md",
+      "redirect_url": "/dotnet/desktop/wpf/systems/xaml-resources-how-to-use-application"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/advanced/how-to-use-system-fonts-keys.md",
+      "redirect_url": "/dotnet/desktop/wpf/systems/xaml-resources-how-to-use-system"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/advanced/how-to-use-system-parameters-keys.md",
+      "redirect_url": "/dotnet/desktop/wpf/systems/xaml-resources-how-to-use-system"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/advanced/how-to-use-systemfonts.md",
+      "redirect_url": "/dotnet/desktop/wpf/systems/xaml-resources-how-to-use-system"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/advanced/how-to-use-systemparameters.md",
+      "redirect_url": "/dotnet/desktop/wpf/systems/xaml-resources-how-to-use-system"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/advanced/marking-routed-events-as-handled-and-class-handling.md",
+      "redirect_url": "/dotnet/desktop/wpf/events/marking-routed-events-as-handled-and-class-handling"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/advanced/merged-resource-dictionaries.md",
+      "redirect_url": "/dotnet/desktop/wpf/systems/xaml-resources-merged-dictionaries"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/advanced/object-lifetime-events.md",
+      "redirect_url": "/dotnet/desktop/wpf/events/object-lifetime-events"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/advanced/preview-events.md",
+      "redirect_url": "/dotnet/desktop/wpf/events/preview-events"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/advanced/printing-overview.md",
+      "redirect_url": "/dotnet/desktop/wpf/documents/printing-overview"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/advanced/property-change-events.md",
+      "redirect_url": "/dotnet/desktop/wpf/events/property-change-events"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/advanced/property-value-inheritance.md",
+      "redirect_url": "/dotnet/desktop/wpf/properties/property-value-inheritance"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/advanced/read-only-dependency-properties.md",
+      "redirect_url": "/dotnet/desktop/wpf/properties/read-only-dependency-properties"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/advanced/resources-and-code.md",
+      "redirect_url": "/dotnet/desktop/wpf/systems/xaml-resources-and-code"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/advanced/routed-events-overview.md",
+      "redirect_url": "/dotnet/desktop/wpf/events/routed-events-overview"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/advanced/safe-constructor-patterns-for-dependencyobjects.md",
+      "redirect_url": "/dotnet/desktop/wpf/properties/safe-constructor-patterns-for-dependencyobjects"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/advanced/sample-opentype-font-pack.md",
+      "redirect_url": "/dotnet/desktop/wpf/advanced/opentype-font-features"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/advanced/visual-basic-and-wpf-event-handling.md",
+      "redirect_url": "/dotnet/desktop/wpf/events/visual-basic-and-wpf-event-handling"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/advanced/weak-event-patterns.md",
+      "redirect_url": "/dotnet/desktop/wpf/events/weak-event-patterns"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/advanced/xaml-in-wpf.md",
+      "redirect_url": "/dotnet/desktop/wpf/xaml/index"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/advanced/xaml-loading-and-dependency-properties.md",
+      "redirect_url": "/dotnet/desktop/wpf/properties/xaml-loading-and-dependency-properties"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/advanced/xaml-overview.md",
+      "redirect_url": "/dotnet/desktop/wpf/xaml/index"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/advanced/xaml-resources-define.md",
+      "redirect_url": "/dotnet/desktop/wpf/systems/xaml-resources-overview"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/app-development/dialog-boxes-overview.md",
+      "redirect_url": "/dotnet/desktop/wpf/windows/dialog-boxes-overview"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/app-development/how-to-get-and-set-the-main-application-window.md",
+      "redirect_url": "/dotnet/desktop/wpf/windows/how-to-get-set-main-application-window"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/app-development/how-to-open-a-dialog-box.md",
+      "redirect_url": "/dotnet/desktop/wpf/windows/how-to-open-window-dialog-box"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/app-development/how-to-open-a-message-box.md",
+      "redirect_url": "/dotnet/desktop/wpf/windows/how-to-open-message-box"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/app-development/how-to-open-a-window.md",
+      "redirect_url": "/dotnet/desktop/wpf/windows/how-to-open-window-dialog-box"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/app-development/how-to-return-a-dialog-box-result.md",
+      "redirect_url": "/dotnet/desktop/wpf/windows/dialog-boxes-overview"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/app-development/wpf-windows-overview.md",
+      "redirect_url": "/dotnet/desktop/wpf/windows/index"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/controls/adorners-how-to-topics.md",
+      "redirect_url": "/dotnet/desktop/wpf/controls/adorners"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/controls/adorners-overview.md",
+      "redirect_url": "/dotnet/desktop/wpf/controls/adorners"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/controls/button-styles-and-templates.md",
+      "redirect_url": "/dotnet/desktop/wpf/controls/button"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/controls/calendar-styles-and-templates.md",
+      "redirect_url": "/dotnet/desktop/wpf/controls/calendar"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/controls/canvas-how-to-topics.md",
+      "redirect_url": "/dotnet/desktop/wpf/controls/canvas"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/controls/checkbox-styles-and-templates.md",
+      "redirect_url": "/dotnet/desktop/wpf/controls/checkbox"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/controls/combobox-styles-and-templates.md",
+      "redirect_url": "/dotnet/desktop/wpf/controls/combobox"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/controls/contextmenu-overview.md",
+      "redirect_url": "/dotnet/desktop/wpf/controls/contextmenu"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/controls/contextmenu-styles-and-templates.md",
+      "redirect_url": "/dotnet/desktop/wpf/controls/contextmenu-overview"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/controls/control-styles-and-templates.md",
+      "redirect_url": "/dotnet/desktop/wpf/controls/styles-templates-overview"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/controls/datagrid-styles-and-templates.md",
+      "redirect_url": "/dotnet/desktop/wpf/controls/datagrid"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/controls/datepicker-styles-and-templates.md",
+      "redirect_url": "/dotnet/desktop/wpf/controls/datepicker"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/controls/dockpanel-how-to-topics.md",
+      "redirect_url": "/dotnet/desktop/wpf/controls/dockpanel"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/controls/documentviewer-styles-and-templates.md",
+      "redirect_url": "/dotnet/desktop/wpf/controls/documentviewer"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/controls/expander-how-to-topics.md",
+      "redirect_url": "/dotnet/desktop/wpf/controls/expander"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/controls/expander-overview.md",
+      "redirect_url": "/dotnet/desktop/wpf/controls/expander"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/controls/expander-styles-and-templates.md",
+      "redirect_url": "/dotnet/desktop/wpf/controls/expander"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/controls/flowdocumentpageviewer.md",
+      "redirect_url": "/dotnet/desktop/wpf/controls/flowdocument"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/controls/flowdocumentreader.md",
+      "redirect_url": "/dotnet/desktop/wpf/controls/flowdocument"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/controls/flowdocumentscrollviewer.md",
+      "redirect_url": "/dotnet/desktop/wpf/controls/flowdocument"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/controls/frame-styles-and-templates.md",
+      "redirect_url": "/dotnet/desktop/wpf/controls/frame"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/controls/grid-how-to-topics.md",
+      "redirect_url": "/dotnet/desktop/wpf/controls/grid"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/controls/gridsplitter-how-to-topics.md",
+      "redirect_url": "/dotnet/desktop/wpf/controls/gridsplitter"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/controls/gridview-column-header-styles-and-templates-overview.md",
+      "redirect_url": "/dotnet/desktop/wpf/controls/gridview-overview"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/controls/gridview-overview.md",
+      "redirect_url": "/dotnet/desktop/wpf/controls/gridview"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/controls/groupbox-styles-and-templates.md",
+      "redirect_url": "/dotnet/desktop/wpf/controls/groupbox"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/controls/how-to-define-a-groupbox-template.md",
+      "redirect_url": "/dotnet/desktop/wpf/controls/groupbox"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/controls/image-how-to-topics.md",
+      "redirect_url": "/dotnet/desktop/wpf/controls/image"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/controls/label-styles-and-templates.md",
+      "redirect_url": "/dotnet/desktop/wpf/controls/label"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/controls/listbox-how-to-topics.md",
+      "redirect_url": "/dotnet/desktop/wpf/controls/listbox"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/controls/listbox-styles-and-templates.md",
+      "redirect_url": "/dotnet/desktop/wpf/controls/listbox"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/controls/listview-how-to-topics.md",
+      "redirect_url": "/dotnet/desktop/wpf/controls/listview"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/controls/listview-overview.md",
+      "redirect_url": "/dotnet/desktop/wpf/controls/listview"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/controls/listview-overviews.md",
+      "redirect_url": "/dotnet/desktop/wpf/controls/listview"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/controls/listview-styles-and-templates.md",
+      "redirect_url": "/dotnet/desktop/wpf/controls/listview"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/controls/menu-overview.md",
+      "redirect_url": "/dotnet/desktop/wpf/controls/menu"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/controls/menu-styles-and-templates.md",
+      "redirect_url": "/dotnet/desktop/wpf/controls/menu"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/controls/navigationwindow-styles-and-templates.md",
+      "redirect_url": "/dotnet/desktop/wpf/controls/navigationwindow"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/controls/panel-how-to-topics.md",
+      "redirect_url": "/dotnet/desktop/wpf/controls/panel"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/controls/panels-overview.md",
+      "redirect_url": "/dotnet/desktop/wpf/controls/panel"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/controls/passwordbox-styles-and-templates.md",
+      "redirect_url": "/dotnet/desktop/wpf/controls/passwordbox"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/controls/popup-how-to-topics.md",
+      "redirect_url": "/dotnet/desktop/wpf/controls/popup"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/controls/popup-overview.md",
+      "redirect_url": "/dotnet/desktop/wpf/controls/popup"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/controls/progressbar-styles-and-templates.md",
+      "redirect_url": "/dotnet/desktop/wpf/controls/progressbar"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/controls/radiobutton-styles-and-templates.md",
+      "redirect_url": "/dotnet/desktop/wpf/controls/radiobutton"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/controls/repeatbutton-styles-and-templates.md",
+      "redirect_url": "/dotnet/desktop/wpf/controls/repeatbutton"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/controls/richtextbox-how-to-topics.md",
+      "redirect_url": "/dotnet/desktop/wpf/controls/richtextbox"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/controls/richtextbox-overview.md",
+      "redirect_url": "/dotnet/desktop/wpf/controls/richtextbox"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/controls/scrollbar-styles-and-templates.md",
+      "redirect_url": "/dotnet/desktop/wpf/controls/scrollbar"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/controls/scrollviewer-how-to-topics.md",
+      "redirect_url": "/dotnet/desktop/wpf/controls/scrollviewer"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/controls/scrollviewer-overview.md",
+      "redirect_url": "/dotnet/desktop/wpf/controls/scrollviewer"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/controls/textblock-overview.md",
+      "redirect_url": "/dotnet/desktop/wpf/controls/textblock"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/controls/textbox-how-to-topics.md",
+      "redirect_url": "/dotnet/desktop/wpf/controls/textbox"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/controls/textbox-overview.md",
+      "redirect_url": "/dotnet/desktop/wpf/controls/textbox"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/controls/textbox-styles-and-templates.md",
+      "redirect_url": "/dotnet/desktop/wpf/controls/textbox"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/controls/thumb-styles-and-templates.md",
+      "redirect_url": "/dotnet/desktop/wpf/controls/thumb"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/controls/togglebutton-styles-and-templates.md",
+      "redirect_url": "/dotnet/desktop/wpf/controls/togglebutton"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/controls/toolbar-overview.md",
+      "redirect_url": "/dotnet/desktop/wpf/controls/toolbar"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/controls/toolbar-styles-and-templates.md",
+      "redirect_url": "/dotnet/desktop/wpf/controls/toolbar"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/controls/tooltip-how-to-topics.md",
+      "redirect_url": "/dotnet/desktop/wpf/controls/tooltip"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/controls/tooltip-overview.md",
+      "redirect_url": "/dotnet/desktop/wpf/controls/tooltip"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/controls/tooltip-styles-and-templates.md",
+      "redirect_url": "/dotnet/desktop/wpf/controls/tooltip"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/controls/treeview-how-to-topics.md",
+      "redirect_url": "/dotnet/desktop/wpf/controls/treeview"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/controls/treeview-overview.md",
+      "redirect_url": "/dotnet/desktop/wpf/controls/treeview"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/controls/treeview-styles-and-templates.md",
+      "redirect_url": "/dotnet/desktop/wpf/controls/treeview"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/controls/window-styles-and-templates.md",
+      "redirect_url": "/dotnet/desktop/wpf/controls/window"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/data/data-binding-overview.md",
+      "redirect_url": "/dotnet/desktop/wpf/data/index"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/data/how-to-specify-the-direction-of-the-binding.md",
+      "redirect_url": "/dotnet/desktop/wpf/data/binding-declarations-overview#binding-direction"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/getting-started/community-feedback.md",
+      "redirect_url": "/dotnet/desktop/wpf/"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/getting-started/index.md",
+      "redirect_url": "/dotnet/desktop/wpf/get-started/create-app-visual-studio"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/getting-started/introduction-to-wpf-in-vs.md",
+      "redirect_url": "/dotnet/desktop/wpf/get-started/create-app-visual-studio"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/getting-started/walkthrough-my-first-wpf-desktop-application.md",
+      "redirect_url": "/dotnet/desktop/wpf/get-started/walkthrough-my-first-wpf-desktop-application"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/getting-started/whats-new.md",
+      "redirect_url": "/dotnet/desktop/wpf/whats-new/framework45"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/getting-started/wpf-walkthroughs.md",
+      "redirect_url": "/dotnet/desktop/wpf/get-started/wpf-walkthroughs"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/how-to-return-a-dialog-box-result.md",
+      "redirect_url": "/dotnet/desktop/wpf/windows/how-to-open-window-dialog-box"
+    },
+    {
+      "source_path": "dotnet-desktop-guide/wpf/introduction-to-wpf.md",
+      "redirect_url": "/dotnet/desktop/wpf/overview/"
+    }
+  ]
 }
