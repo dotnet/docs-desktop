@@ -228,5 +228,5 @@ End Sub
 - <xref:System.Windows.Controls.ListView>
 - <xref:System.Windows.Controls.GridView>
 - [ListView](listview.md)
-- [GridView Overview](gridview-overview.md)
+- [GridView Overview](gridview.md)
 - [ListView](listview.md)

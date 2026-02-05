@@ -34,5 +34,4 @@ The following example shows how a <xref:System.Windows.Controls.Primitives.Butto
 - <xref:System.Windows.Media.RotateTransform>
 - <xref:System.Windows.Media.Animation.Storyboard>
 - <xref:System.Windows.Controls.Primitives.Popup>
-- [How-to Topics](popup-how-to-topics.md)
-- [Popup Overview](popup-overview.md)
+- [Popup](popup.md)

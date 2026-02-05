@@ -35,4 +35,4 @@ The following example defines a <xref:System.Windows.MultiTrigger> that sets the
 - <xref:System.Windows.Controls.GridView>
 - [ListView](listview.md)
 - [ListView](listview.md)
-- [GridView Overview](gridview-overview.md)
+- [GridView Overview](gridview.md)

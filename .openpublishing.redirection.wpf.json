@@ -93,6 +93,10 @@
             "redirect_url": "/dotnet/desktop/wpf/controls/gridview-overview"
         },
         {
+            "source_path": "dotnet-desktop-guide/wpf/controls/gridview-overview.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/gridview"
+        },
+        {
             "source_path": "dotnet-desktop-guide/wpf/controls/grid-how-to-topics.md",
             "redirect_url": "/dotnet/desktop/wpf/controls/grid"
         },
@@ -483,6 +487,14 @@
         {
             "source_path": "dotnet-desktop-guide/wpf/controls/tooltip-overview.md",
             "redirect_url": "/dotnet/desktop/wpf/controls/tooltip"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/popup-how-to-topics.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/popup"
+        },
+        {
+            "source_path": "dotnet-desktop-guide/wpf/controls/popup-overview.md",
+            "redirect_url": "/dotnet/desktop/wpf/controls/popup"
         }
     ]
 }

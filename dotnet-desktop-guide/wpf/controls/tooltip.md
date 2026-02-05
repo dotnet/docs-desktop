@@ -104,5 +104,4 @@ The following table lists the visual states for the <xref:System.Windows.Control
 - <xref:System.Windows.Controls.ToolTipEventArgs>
 - <xref:System.Windows.Controls.ToolTipEventHandler>
 - <xref:System.Windows.Controls.ToolTipService>
-- [How-to Topics](popup-how-to-topics.md)
-- [Popup Overview](popup-overview.md)
+- [Popup](popup.md)

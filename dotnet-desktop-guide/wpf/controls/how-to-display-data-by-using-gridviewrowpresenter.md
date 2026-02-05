@@ -24,4 +24,4 @@ The following example shows how to specify a <xref:System.Windows.Controls.GridV
 - <xref:System.Windows.Controls.GridViewHeaderRowPresenter>
 - <xref:System.Windows.Controls.GridViewRowPresenter>
 - <xref:System.Windows.Controls.GridViewColumnCollection>
-- [GridView Overview](gridview-overview.md)
+- [GridView Overview](gridview.md)

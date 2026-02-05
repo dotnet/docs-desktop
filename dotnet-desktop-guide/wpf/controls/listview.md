@@ -17,6 +17,8 @@ dev_langs:
 
 The <xref:System.Windows.Controls.ListView> control provides the infrastructure to display a set of data items using a different layout or view. For example, you might want to display data items in a table and also sort its columns.
 
+The <xref:System.Windows.Controls.ListView> derives from <xref:System.Windows.Controls.ListBox>. Typically, its items are members of a data collection and are represented as <xref:System.Windows.Controls.ListViewItem> objects. A <xref:System.Windows.Controls.ListViewItem> is a <xref:System.Windows.Controls.ContentControl> and can contain only a single child element. However, that child element can be any visual element.
+
 :::image type="content" source="./media/shared/listview.png" alt-text="Screenshot showing a ListView with GridView output displaying file information.":::
 
 > [!NOTE]
@@ -38,10 +40,6 @@ The following table lists common tasks for working with the ListView control:
 | [Style a Row in a ListView That Implements a GridView](how-to-style-a-row-in-a-listview-that-implements-a-gridview.md) | Learn how to style a row in a ListView that implements a GridView. |
 | [Change the Horizontal Alignment of a Column in a ListView](how-to-change-the-horizontal-alignment-of-a-column-in-a-listview.md) | Learn how to change the horizontal alignment of a column in a ListView. |
 | [Handle the MouseDoubleClick Event for Each Item in a ListView](how-to-handle-the-mousedoubleclick-event-for-each-item-in-a-listview.md) | Learn how to handle the MouseDoubleClick event for each item in a ListView. |
-
-## What is a ListView?
-
-The <xref:System.Windows.Controls.ListView> derives from <xref:System.Windows.Controls.ListBox>. Typically, its items are members of a data collection and are represented as <xref:System.Windows.Controls.ListViewItem> objects. A <xref:System.Windows.Controls.ListViewItem> is a <xref:System.Windows.Controls.ContentControl> and can contain only a single child element. However, that child element can be any visual element.
 
 ## Styles and templates
 
@@ -122,7 +120,7 @@ The <xref:System.Windows.Controls.ListView> control contains <xref:System.Window
 - On the <xref:System.Windows.Controls.ListView> control, use the <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A>, <xref:System.Windows.Controls.ItemsControl.ItemTemplateSelector%2A>, and <xref:System.Windows.Controls.ItemsControl.ItemContainerStyle%2A> properties.
 - On the <xref:System.Windows.Controls.ListViewItem> control, use the <xref:System.Windows.Controls.ContentControl.ContentTemplate%2A> and <xref:System.Windows.Controls.ContentControl.ContentTemplateSelector%2A> properties.
 
-To avoid alignment issues between cells in a <xref:System.Windows.Controls.GridView>, don't use the <xref:System.Windows.Controls.ItemsControl.ItemContainerStyle%2A> to set properties or add content that affects the width of an item in a <xref:System.Windows.Controls.ListView>. For example, an alignment issue can occur when you set the <xref:System.Windows.FrameworkElement.Margin%2A> property in the <xref:System.Windows.Controls.ItemsControl.ItemContainerStyle%2A>. To specify properties or define content that affects the width of items in a <xref:System.Windows.Controls.GridView>, use the properties of the <xref:System.Windows.Controls.GridView> class and its related classes, such as <xref:System.Windows.Controls.GridViewColumn>. For more information about how to use <xref:System.Windows.Controls.GridView> and its supporting classes, see [GridView Overview](gridview-overview.md).
+To avoid alignment issues between cells in a <xref:System.Windows.Controls.GridView>, don't use the <xref:System.Windows.Controls.ItemsControl.ItemContainerStyle%2A> to set properties or add content that affects the width of an item in a <xref:System.Windows.Controls.ListView>. For example, an alignment issue can occur when you set the <xref:System.Windows.FrameworkElement.Margin%2A> property in the <xref:System.Windows.Controls.ItemsControl.ItemContainerStyle%2A>. To specify properties or define content that affects the width of items in a <xref:System.Windows.Controls.GridView>, use the properties of the <xref:System.Windows.Controls.GridView> class and its related classes, such as <xref:System.Windows.Controls.GridViewColumn>. For more information about how to use <xref:System.Windows.Controls.GridView> and its supporting classes, see [GridView Overview](gridview.md).
 
 If you define an <xref:System.Windows.Controls.ItemsControl.ItemContainerStyle%2A> for a <xref:System.Windows.Controls.ListView> control and also define an <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A>, you must include a <xref:System.Windows.Controls.ContentPresenter> in the style in order for the <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A> to work correctly.
 
@@ -157,4 +155,4 @@ The following objects are referenced in this article:
 - [Create a Custom View Mode for a ListView](how-to-create-a-custom-view-mode-for-a-listview.md)
 - [Data Binding Overview](../data/index.md)
 - [Data Templating Overview](../data/data-templating-overview.md)
-- [GridView Overview](gridview-overview.md)
+- [GridView Overview](gridview.md)

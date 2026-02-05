@@ -37,4 +37,4 @@ The following example shows how to set <xref:System.Windows.Controls.ControlTemp
 - <xref:System.Windows.Controls.GridView>
 - [ListView](listview.md)
 - [ListView](listview.md)
-- [GridView Overview](gridview-overview.md)
+- [GridView Overview](gridview.md)

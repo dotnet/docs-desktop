@@ -168,12 +168,12 @@ items:
         href: how-to-get-a-listboxitem.md
       - name: Improve the Scrolling Performance of a ListBox
         href: how-to-improve-the-scrolling-performance-of-a-listbox.md
-    - name: ListView
+    - name: ListView and GridView
       items:
       - name: ListView overview
         href: listview.md
       - name: GridView overview
-        href: gridview-overview.md
+        href: gridview.md
       - name: How-to Topics
         items:
         - name: Sort a GridView Column When a Header Is Clicked
@@ -207,7 +207,6 @@ items:
       - name: Panel overview
         href: panel.md
       - name: How-to Topics
-        href: panel-how-to-topics.md
         items:
         - name: Create a Custom Panel Element
           href: how-to-create-a-custom-panel-element.md
@@ -220,15 +219,13 @@ items:
     - name: PasswordBox
       href: passwordbox.md
     - name: Popup
-      href: popup.md
       items:
-      - name: Popup Overview
-        href: popup-overview.md
-      - name: Popup Placement Behavior
-        href: popup-placement-behavior.md
+      - name: Popup overview
+        href: popup.md
       - name: How-to Topics
-        href: popup-how-to-topics.md
         items:
+        - name: Popup Placement Behavior
+          href: popup-placement-behavior.md
         - name: Animate a Popup
           href: how-to-animate-a-popup.md
         - name: Specify a Custom Popup Position
@@ -242,42 +239,49 @@ items:
     - name: RepeatButton
       href: repeatbutton.md
     - name: RichTextBox
-      href: richtextbox.md
       items:
-      - name: RichTextBox Overview
+      - name: RichTextBox overview
         href: richtextbox.md
-      - name: Extract the Text Content from a RichTextBox
-        href: how-to-extract-the-text-content-from-a-richtextbox.md
-      - name: Change Selection in a RichTextBox Programmatically
-        href: change-selection-in-a-richtextbox-programmatically.md
-      - name: Save, Load, and Print RichTextBox Content
-        href: how-to-save-load-and-print-richtextbox-content.md
-      - name: Position a Custom Context Menu in a RichTextBox
-        href: how-to-position-a-custom-context-menu-in-a-richtextbox.md
+      - name: How-to Topics
+        items:
+        - name: Extract the Text Content from a RichTextBox
+          href: how-to-extract-the-text-content-from-a-richtextbox.md
+        - name: Change Selection in a RichTextBox Programmatically
+          href: change-selection-in-a-richtextbox-programmatically.md
+        - name: Save, Load, and Print RichTextBox Content
+          href: how-to-save-load-and-print-richtextbox-content.md
+        - name: Position a Custom Context Menu in a RichTextBox
+          href: how-to-position-a-custom-context-menu-in-a-richtextbox.md
     - name: ScrollBar
-      href: scrollbar.md
       items:
+      - name: ScrollBar overview
+        href: scrollbar.md
       - name: Customize the Thumb Size on a ScrollBar
         href: how-to-customize-the-thumb-size-on-a-scrollbar.md
     - name: ScrollViewer
-      href: scrollviewer.md
       items:
-      - name: Handle the ScrollChanged Event
-        href: how-to-handle-the-scrollchanged-event.md
-      - name: Scroll Content by Using the IScrollInfo Interface
-        href: how-to-scroll-content-by-using-the-iscrollinfo-interface.md
-      - name: Use the Content-Scrolling Methods of ScrollViewer
-        href: how-to-use-the-content-scrolling-methods-of-scrollviewer.md
+      - name: ScrollViewer overview
+        href: scrollviewer.md
+      - name: How-to Topics
+        items:
+        - name: Handle the ScrollChanged Event
+          href: how-to-handle-the-scrollchanged-event.md
+        - name: Scroll Content by Using the IScrollInfo Interface
+          href: how-to-scroll-content-by-using-the-iscrollinfo-interface.md
+        - name: Use the Content-Scrolling Methods of ScrollViewer
+          href: how-to-use-the-content-scrolling-methods-of-scrollviewer.md
     - name: Separator
       href: separator.md
     - name: Slider
-      href: slider.md
       items:
+      - name: Slider overview
+        href: slider.md
       - name: Customize the Ticks on a Slider
         href: how-to-customize-the-ticks-on-a-slider.md
     - name: StackPanel
-      href: stackpanel.md
       items:
+      - name: StackPanel overview
+        href: stackpanel.md
       - name: How-to Topics
         href: stackpanel-how-to-topics.md
         items:
@@ -294,8 +298,9 @@ items:
     - name: TextBlock
       href: textblock.md
     - name: TextBox
-      href: textbox.md
       items:
+      - name: TextBox overview
+        href: textbox.md
       - name: How-to Topics
         items:
         - name: Create a Multiline TextBox Control
@@ -325,41 +330,44 @@ items:
         - name: Add a Watermark to a TextBox
           href: how-to-add-a-watermark-to-a-textbox.md
     - name: ToolBar
-      href: toolbar.md
       items:
+      - name: ToolBar overview
+        href: toolbar.md
       - name: Style Controls on a ToolBar
         href: how-to-style-controls-on-a-toolbar.md
     - name: ToolTip
-      href: tooltip.md
       items:
-      - name: ToolTip
+      - name: ToolTip overview
         href: tooltip.md
       - name: Position a ToolTip
         href: how-to-position-a-tooltip.md
       - name: Use the BetweenShowDelay Property
         href: how-to-use-the-betweenshowdelay-property.md
     - name: TreeView
-      href: treeview.md
       items:
-      - name: Create Simple or Complex TreeViews
-        href: how-to-create-simple-or-complex-treeviews.md
-      - name: Use SelectedValue, SelectedValuePath, and SelectedItem
-        href: how-to-use-selectedvalue-selectedvaluepath-and-selecteditem.md
-      - name: Bind a TreeView to Data That Has an Indeterminable Depth
-        href: how-to-bind-a-treeview-to-data-that-has-an-indeterminable-depth.md
-      - name: Improve the Performance of a TreeView
-        href: how-to-improve-the-performance-of-a-treeview.md
-      - name: Find a TreeViewItem in a TreeView
-        href: how-to-find-a-treeviewitem-in-a-treeview.md
+      - name: TreeView overview
+        href: treeview.md
+      - name: How-to Topics
+        items:
+        - name: Create Simple or Complex TreeViews
+          href: how-to-create-simple-or-complex-treeviews.md
+        - name: Use SelectedValue, SelectedValuePath, and SelectedItem
+          href: how-to-use-selectedvalue-selectedvaluepath-and-selecteditem.md
+        - name: Bind a TreeView to Data That Has an Indeterminable Depth
+          href: how-to-bind-a-treeview-to-data-that-has-an-indeterminable-depth.md
+        - name: Improve the Performance of a TreeView
+          href: how-to-improve-the-performance-of-a-treeview.md
+        - name: Find a TreeViewItem in a TreeView
+          href: how-to-find-a-treeviewitem-in-a-treeview.md
     - name: WrapPanel
       href: wrappanel.md
     - name: Viewbox
-      href: viewbox.md
       items:
+      - name: Viewbox overview
+        href: viewbox.md
       - name: Apply Stretch Properties to the Contents of a Viewbox
         href: how-to-apply-stretch-properties-to-the-contents-of-a-viewbox.md
   - name: Styles and Templates
-    href: styles-and-templates.md
     items:
     - name: Styling and Templating
       href: styles-templates-overview.md

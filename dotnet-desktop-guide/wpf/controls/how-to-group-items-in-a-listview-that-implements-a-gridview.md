@@ -31,4 +31,4 @@ The following example sets the <xref:System.Windows.Controls.ItemsControl.ItemsS
 - <xref:System.Windows.Controls.GridView>
 - [ListView](listview.md)
 - [ListView](listview.md)
-- [GridView Overview](gridview-overview.md)
+- [GridView Overview](gridview.md)

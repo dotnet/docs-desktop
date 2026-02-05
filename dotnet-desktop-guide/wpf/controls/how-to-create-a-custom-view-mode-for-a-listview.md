@@ -47,4 +47,4 @@ For the complete sample, see [ListView with Multiple Views (C#)](https://github.
 - <xref:System.Windows.Controls.GridView>
 - [ListView](listview.md)
 - [ListView](listview.md)
-- [GridView Overview](gridview-overview.md)
+- [GridView Overview](gridview.md)

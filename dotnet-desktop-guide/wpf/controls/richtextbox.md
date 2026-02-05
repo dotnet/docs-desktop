@@ -18,7 +18,7 @@ The <xref:System.Windows.Controls.RichTextBox> control enables you to display or
 
 :::image type="content" source="./media/shared/richtextbox.png" alt-text="A RichTextBox control showing styled content with different fonts and colors.":::
 
-## TextBox or RichTextBox?
+## TextBox or RichTextBox
 
 Both <xref:System.Windows.Controls.RichTextBox> and <xref:System.Windows.Controls.TextBox> allow users to edit text, however, the two controls are used in different scenarios. A <xref:System.Windows.Controls.RichTextBox> is a better choice when it's necessary for the user to edit formatted text, images, tables, or other rich content. For example, editing a document, article, or blog that requires formatting, images, etc is best accomplished using a <xref:System.Windows.Controls.RichTextBox>. A <xref:System.Windows.Controls.TextBox> requires less system resources than a <xref:System.Windows.Controls.RichTextBox> and it's ideal when only plain text needs to be edited (i.e. usage in forms). See [TextBox](textbox.md) for more information on <xref:System.Windows.Controls.TextBox>. The table below summarizes the main features of <xref:System.Windows.Controls.TextBox> and <xref:System.Windows.Controls.RichTextBox>.
 

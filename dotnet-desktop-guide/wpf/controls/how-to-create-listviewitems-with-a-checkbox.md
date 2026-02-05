@@ -34,4 +34,4 @@ The following example shows how to create a column of <xref:System.Windows.Contr
 - <xref:System.Windows.Controls.GridView>
 - [ListView](listview.md)
 - [ListView](listview.md)
-- [GridView Overview](gridview-overview.md)
+- [GridView Overview](gridview.md)

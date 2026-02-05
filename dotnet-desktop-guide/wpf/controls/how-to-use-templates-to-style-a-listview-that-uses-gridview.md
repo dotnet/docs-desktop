@@ -38,6 +38,6 @@ The following example shows how to use this <xref:System.Windows.DataTemplate> t
 
 - <xref:System.Windows.Controls.ListView>
 - <xref:System.Windows.Controls.GridView>
-- [GridView Overview](gridview-overview.md)
+- [GridView Overview](gridview.md)
 - [ListView](listview.md)
 - [ListView](listview.md)
