@@ -52,11 +52,11 @@ The following table lists the visual states for the <xref:System.Windows.Control
 |InvalidUnfocused|ValidationStates|The control has a validation error but doesn't have keyboard focus.|
 |Valid|ValidationStates|The control is valid and has no validation errors.|
 
-### DatePickerTextBox
+## DatePickerTextBox
 
 <xref:System.Windows.Controls.Primitives.DatePickerTextBox> is the text box control used within the <xref:System.Windows.Controls.DatePicker>.
 
-#### Parts
+### Parts
 
 The following table lists the named parts for the <xref:System.Windows.Controls.Primitives.DatePickerTextBox> control.
 
@@ -65,7 +65,7 @@ The following table lists the named parts for the <xref:System.Windows.Controls.
 |PART_ContentElement|<xref:System.Windows.FrameworkElement>|A visual element that can contain a <xref:System.Windows.FrameworkElement>. The text of the <xref:System.Windows.Controls.TextBox> is displayed in this element.|
 |PART_Watermark|<xref:System.Windows.Controls.ContentControl>|The element that contains the initial text in the <xref:System.Windows.Controls.DatePicker>.|
 
-#### Visual states
+### Visual states
 
 The following table lists the visual states for the <xref:System.Windows.Controls.Primitives.DatePickerTextBox> control.
 

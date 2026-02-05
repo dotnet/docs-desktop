@@ -10,15 +10,17 @@ items:
     href: control-library.md
     items:
     - name: Border
-      href: border.md
       items:
+      - name: Border overview
+        href: border.md
       - name: Animate a BorderThickness Value
         href: how-to-animate-a-borderthickness-value.md
     - name: BulletDecorator
       href: bulletdecorator.md
     - name: Button
-      href: button.md
       items:
+      - name: Button overview
+        href: button.md
       - name: Create a Button That Has an Image
         href: how-to-create-a-button-that-has-an-image.md
     - name: Calendar
@@ -42,12 +44,12 @@ items:
       href: combobox.md
     - name: ContextMenu
       href: contextmenu.md
-      items:
-      - name: ContextMenu Overview
-        href: contextmenu-overview.md
     - name: DataGrid
-      href: datagrid.md
       items:
+      - name: DataGrid overview
+        href: datagrid.md
+      - name: DataGrid elements
+        href: datagrid-elements.md
       - name: Default Keyboard and Mouse Behavior in the DataGrid Control
         href: default-keyboard-and-mouse-behavior-in-the-datagrid-control.md
       - name: "How to: Add Row Details to a DataGrid Control"
@@ -63,8 +65,9 @@ items:
     - name: DatePicker
       href: datepicker.md
     - name: DockPanel
-      href: dockpanel.md
       items:
+      - name: DockPanel overview
+        href: dockpanel.md
       - name: How-to Topics
         href: dockpanel-how-to-topics.md
         items:
@@ -79,7 +82,7 @@ items:
     - name: Expander
       href: expander.md
       items:
-      - name: Expander Overview
+      - name: Expander overview
         href: expander-overview.md
       - name: How-to Topics
         href: expander-how-to-topics.md
@@ -95,8 +98,9 @@ items:
     - name: Frame
       href: frame.md
     - name: Grid
-      href: grid.md
       items:
+      - name: Grid overview
+        href: grid.md
       - name: How-to Topics
         href: grid-how-to-topics.md
         items:
@@ -115,8 +119,9 @@ items:
         - name: Share Sizing Properties Between Grids
           href: how-to-share-sizing-properties-between-grids.md
     - name: GridSplitter
-      href: gridsplitter.md
       items:
+      - name: GridSplitter overview
+        href: gridsplitter.md
       - name: How-to Topics
         href: gridsplitter-how-to-topics.md
         items:
@@ -127,13 +132,15 @@ items:
         - name: Make Sure That a GridSplitter Is Visible
           href: how-to-make-sure-that-a-gridsplitter-is-visible.md
     - name: GroupBox
-      href: groupbox.md
       items:
+      - name: GroupBox overview
+        href: groupbox.md
       - name: Define a GroupBox Template
         href: how-to-define-a-groupbox-template.md
     - name: Image
-      href: image.md
       items:
+      - name: Image overview
+        href: image.md
       - name: How-to Topics
         href: image-how-to-topics.md
         items:
@@ -146,13 +153,15 @@ items:
         - name: Rotate an Image
           href: how-to-rotate-an-image.md
     - name: Label
-      href: label.md
       items:
+      - name: Label overview
+        href: label.md
       - name: Create a Control That Has an Access Key and Text Wrapping
         href: how-to-create-a-control-that-has-an-access-key-and-text-wrapping.md
     - name: ListBox
-      href: listbox.md
       items:
+      - name: ListBox overview
+        href: listbox.md
       - name: Bind a ListBox to Data
         href: how-to-bind-a-listbox-to-data.md
       - name: Get a ListBoxItem
@@ -161,12 +170,10 @@ items:
         href: how-to-improve-the-scrolling-performance-of-a-listbox.md
     - name: ListView
       items:
-      - name: ListView Overview
+      - name: ListView overview
         href: listview.md
-      - name: GridView Overview
+      - name: GridView overview
         href: gridview-overview.md
-      - name: GridView Column Header Styles and Templates Overview
-        href: gridview-column-header-styles-and-templates-overview.md
       - name: How-to Topics
         items:
         - name: Sort a GridView Column When a Header Is Clicked
@@ -196,10 +203,9 @@ items:
     - name: Menu
       href: menu.md
     - name: Panel
-      href: panel.md
       items:
-      - name: Panels Overview
-        href: panels-overview.md
+      - name: Panel overview
+        href: panel.md
       - name: How-to Topics
         href: panel-how-to-topics.md
         items:
