@@ -500,4 +500,4 @@ For more information about creating applications, see the following topics:
 - [Panel](../controls/panel.md)
 - [Data templating overview](../data/data-templating-overview.md)
 - [Build a WPF application](../app-development/building-a-wpf-application-wpf.md)
-- [Styles and templates](../controls/styles-and-templates.md)
+- [Styles and templates](../controls/styles-templates-overview.md)

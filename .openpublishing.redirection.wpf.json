@@ -397,6 +397,10 @@
       "redirect_url": "/dotnet/desktop/wpf/controls/scrollviewer"
     },
     {
+      "source_path": "dotnet-desktop-guide/wpf/controls/styles-and-templates.md",
+      "redirect_url": "/dotnet/desktop/wpf/controls/styles-templates-overview"
+    },
+    {
       "source_path": "dotnet-desktop-guide/wpf/controls/textblock-overview.md",
       "redirect_url": "/dotnet/desktop/wpf/controls/textblock"
     },
