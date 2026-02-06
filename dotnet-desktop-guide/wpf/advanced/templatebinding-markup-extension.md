@@ -43,7 +43,7 @@ A `TemplateBinding` is an optimized form of a [`Binding`](binding-markup-extensi
 
 [RelativeSource](relativesource-markupextension.md) is another markup extension that is sometimes used in conjunction with or instead of `TemplateBinding` in order to perform relative property binding within a template.
 
-Describing control templates as a concept is not covered here; for more information, see [Control Styles and Templates](../controls/control-styles-and-templates.md).
+Describing control templates as a concept is not covered here; for more information, see [Styles and templates](../controls/styles-templates-overview.md).
 
 Attribute syntax is the most common syntax used with this markup extension. The string token provided after the `TemplateBinding` identifier string is assigned as the <xref:System.Windows.TemplateBindingExtension.Property%2A> value of the underlying <xref:System.Windows.TemplateBindingExtension> extension class.
 

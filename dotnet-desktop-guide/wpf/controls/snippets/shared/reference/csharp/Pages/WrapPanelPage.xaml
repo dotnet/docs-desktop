@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page x:Class="AllTemplatesCS.Pages.WrapPanelPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AllTemplatesCS.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="400"
+      Title="WrapPanelPage">
+    <ScrollViewer>
+        <StackPanel Margin="20">
+            <TextBlock Text="WrapPanel Examples" FontSize="16" FontWeight="Bold" Margin="0,0,0,20"/>
+            
+            <TextBlock Text="Horizontal WrapPanel:" FontWeight="Bold" Margin="0,0,0,10"/>
+            <Border BorderBrush="Gray" BorderThickness="1" Padding="10">
+                <WrapPanel Orientation="Horizontal">
+                    <Button Content="Button 1" Margin="2" Padding="5"/>
+                    <Button Content="Button 2" Margin="2" Padding="5"/>
+                    <Button Content="Button 3" Margin="2" Padding="5"/>
+                    <Button Content="Button 4" Margin="2" Padding="5"/>
+                    <Button Content="Button 5" Margin="2" Padding="5"/>
+                    <Button Content="Button 6" Margin="2" Padding="5"/>
+                    <Button Content="Button 7" Margin="2" Padding="5"/>
+                    <Button Content="Button 8" Margin="2" Padding="5"/>
+                </WrapPanel>
+            </Border>
+            
+            <TextBlock Text="Vertical WrapPanel:" FontWeight="Bold" Margin="0,20,0,10"/>
+            <Border BorderBrush="Gray" BorderThickness="1" Padding="10" Height="150">
+                <WrapPanel Orientation="Vertical">
+                    <Rectangle Width="40" Height="20" Fill="Red" Margin="2"/>
+                    <Rectangle Width="40" Height="20" Fill="Green" Margin="2"/>
+                    <Rectangle Width="40" Height="20" Fill="Blue" Margin="2"/>
+                    <Rectangle Width="40" Height="20" Fill="Yellow" Margin="2"/>
+                    <Rectangle Width="40" Height="20" Fill="Orange" Margin="2"/>
+                    <Rectangle Width="40" Height="20" Fill="Purple" Margin="2"/>
+                    <Rectangle Width="40" Height="20" Fill="Pink" Margin="2"/>
+                    <Rectangle Width="40" Height="20" Fill="Cyan" Margin="2"/>
+                </WrapPanel>
+            </Border>
+        </StackPanel>
+    </ScrollViewer>
+</Page>

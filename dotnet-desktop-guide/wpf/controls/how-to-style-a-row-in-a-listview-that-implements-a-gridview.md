@@ -36,6 +36,6 @@ The following example defines <xref:System.Windows.Controls.GridView>.
 
 - <xref:System.Windows.Controls.ListView>
 - <xref:System.Windows.Controls.GridView>
-- [How-to Topics](listview-how-to-topics.md)
-- [ListView Overview](listview-overview.md)
+- [ListView](listview.md)
+- [ListView](listview.md)
 - [Styling and Templating](styles-templates-overview.md)

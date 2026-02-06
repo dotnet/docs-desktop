@@ -32,6 +32,6 @@ The following example shows how to create a column of <xref:System.Windows.Contr
 - <xref:System.Windows.Controls.Control>
 - <xref:System.Windows.Controls.ListView>
 - <xref:System.Windows.Controls.GridView>
-- [ListView Overview](listview-overview.md)
-- [How-to Topics](listview-how-to-topics.md)
-- [GridView Overview](gridview-overview.md)
+- [ListView](listview.md)
+- [ListView](listview.md)
+- [GridView Overview](gridview.md)

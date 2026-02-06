@@ -28,4 +28,4 @@ The following example shows how to create and use an instance of <xref:System.Wi
 ## See also
 
 - <xref:System.Windows.Controls.Grid>
-- [Panels Overview](panels-overview.md)
+- [Panel](panel.md)

@@ -29,4 +29,4 @@ This example creates <xref:System.Windows.Controls.Button> controls by using mar
 ## See also
 
 - [Controls](index.md)
-- [Control Library](control-library.md)
+- [Control Library](index.md)

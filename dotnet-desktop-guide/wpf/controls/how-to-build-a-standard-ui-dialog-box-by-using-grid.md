@@ -35,5 +35,5 @@ Finally, the example adds three <xref:System.Windows.Controls.Button> elements t
 
 - <xref:System.Windows.Controls.Grid>
 - <xref:System.Windows.GridUnitType>
-- [Panels Overview](panels-overview.md)
+- [Panel](panel.md)
 - [How-to Topics](grid-how-to-topics.md)

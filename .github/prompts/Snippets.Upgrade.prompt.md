@@ -1,5 +1,6 @@
 ---
-mode: agent
+agent: agent
+model: Claude Sonnet 4 (copilot)
 description: Upgrade snippets to the latest .NET and possibly migrate from .NET Framework
 ---
 

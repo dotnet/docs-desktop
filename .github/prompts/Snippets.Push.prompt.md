@@ -1,5 +1,6 @@
 ---
-mode: agent
+agent: agent
+model: Claude Sonnet 4 (copilot)
 description: Push inline code block snippets out of articles into standalone files with proper project structure.
 ---
 
@@ -8,6 +9,8 @@ description: Push inline code block snippets out of articles into standalone fil
 **IMPORTANT**: Unless otherwise asked to, **only** edit the article file in context. At the end of your operations you may ask for permission to edit other articles that might benefit from the same snippet extraction.
 
 **IMPORTANT**: Don't share code across multiple articles. Each article should have its own copy of the snippet in its own folder structure.
+
+**IMPORTANT**: If only XAML snippets are present, only create C# projects to hold the XAML. Do not create VB projects for XAML-only snippets.
 
 ## Quick Reference
 
@@ -29,7 +32,7 @@ description: Push inline code block snippets out of articles into standalone fil
 **KEEP INLINE WHEN:**
 - Code blocks are 6 lines or shorter
 - Code shows configuration snippets (XAML, JSON, XML)
-- Code demonstrates simple one-liner examples
+- XAML snippets that are more than 3 lines
 - Code is pseudo-code or conceptual examples
 
 ## Target folder structure
@@ -46,9 +49,9 @@ description: Push inline code block snippets out of articles into standalone fil
 - `[net-or-framework]`: Choose based on target framework:
   - `net`: For .NET (.NET 6 and newer)
   - `framework`: For .NET Framework (4.8 and older)
-  - **Rule**: Only include this subfolder when the article demonstrates BOTH .NET and .NET Framework approaches
+  - **Rule**: Only include this subfolder when the article demonstrates BOTH .NET and .NET Framework approaches. Otherwise, omit this folder. When in doubt, ask.
 - `{code-language}`: 
-  - `csharp`: For C# code
+  - `csharp`: For C# code or when demonstrating XAML
   - `vb`: For Visual Basic code
 
 ## Framework targeting and project types
@@ -71,7 +74,7 @@ description: Push inline code block snippets out of articles into standalone fil
 ## Push process
 
 ### 1. Analyze and prepare
-- Locate code blocks >6 lines or complete examples
+- Locate code blocks >6 lines or complete examples (unless overridden by user request)
 - Determine project type from code patterns and article location
 - Check framework targeting from frontmatter
 - Create folder structure: `./snippets/{doc-file}/[net-or-framework]/{csharp|vb}/`
@@ -82,12 +85,14 @@ description: Push inline code block snippets out of articles into standalone fil
 - Add missing using statements, namespaces, class declarations
 - Modernize code patterns if targeting current .NET
 - Test compilation with `dotnet build`
+- If snippets are XAML-based, store them in a C# project
 
 ### 3. Add snippet references and update article
 - Add CamelCase region markers: `// <ButtonClick>` and `// </ButtonClick>`
 - Use same identifiers across C# and VB versions
 - Replace inline code with snippet references:
   ```markdown
+  :::code language="xaml" source="./snippets/doc-name/net/csharp/File.xaml" id="ButtonClick":::
   :::code language="csharp" source="./snippets/doc-name/net/csharp/File.cs" id="ButtonClick":::
   :::code language="vb" source="./snippets/doc-name/net/vb/File.vb" id="ButtonClick":::
   ```
@@ -95,7 +100,6 @@ description: Push inline code block snippets out of articles into standalone fil
 - Verify all paths and references are correct
 
 ### 4. Make sure frontmatter specifies a language when required
-
 If both CSharp and VB examples are provided make sure the following frontmatter is at the top of the article:
 
 ```yml
@@ -103,6 +107,8 @@ dev_langs:
   - "csharp"
   - "vb"
 ```
+
+If just XAML is provided, don't use a `dev_langs` section.
 
 ## Common mistakes to avoid
 
