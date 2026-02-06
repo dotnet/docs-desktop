@@ -2,8 +2,8 @@
 title: "GridView Overview"
 description: Learn about styles and templates for the Windows Presentation Foundation ListView control. Modify the ControlTemplate to give the control a unique appearance.
 ms.date: 01/22/2026
-ms.service: dotnet-framework
-ms.update-cycle: 1825-days
+ms.service: dotnet-desktop
+ms.update-cycle: 365-days
 helpviewer_keywords:
   - "GridView view mode [WPF]"
   - "ListView controls [WPF], GridView view mode"

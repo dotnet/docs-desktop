@@ -2,8 +2,8 @@
 title: "TextBlock"
 description: Learn how to use the TextBlock control to provide flexible text support for UI scenarios that don't require more than one paragraph of text.
 ms.date: 01/28/2026
-ms.service: dotnet-framework
-ms.update-cycle: 1825-days
+ms.service: dotnet-desktop
+ms.update-cycle: 365-days
 ai-usage: ai-assisted
 dev_langs:
   - "csharp"

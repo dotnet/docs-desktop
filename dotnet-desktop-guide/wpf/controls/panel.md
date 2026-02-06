@@ -2,8 +2,8 @@
 title: "Panel"
 description: Learn about Panel, it is the base class for all elements that support application layout in Windows Presentation Foundation (WPF).
 ms.date: "01/23/2025"
-ms.service: dotnet-framework
-ms.update-cycle: 1825-days
+ms.service: dotnet-desktop
+ms.update-cycle: 365-days
 ai-usage: ai-assisted
 helpviewer_keywords:
   - "controls [WPF], Panel"
