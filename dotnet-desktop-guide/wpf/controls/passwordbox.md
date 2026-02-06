@@ -50,4 +50,4 @@ The following table lists the visual states for the <xref:System.Windows.Control
 
 - <xref:System.Windows.Controls.TextBox>
 - <xref:System.Windows.Controls.RichTextBox>
-- [Control Library](control-library.md)
+- [Control Library](index.md)

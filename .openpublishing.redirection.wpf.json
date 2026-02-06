@@ -229,6 +229,10 @@
       "redirect_url": "/dotnet/desktop/wpf/controls/contextmenu-overview"
     },
     {
+      "source_path": "dotnet-desktop-guide/wpf/controls/control-library.md",
+      "redirect_url": "/dotnet/desktop/wpf/controls/"
+    },
+    {
       "source_path": "dotnet-desktop-guide/wpf/controls/control-styles-and-templates.md",
       "redirect_url": "/dotnet/desktop/wpf/controls/styles-templates-overview"
     },

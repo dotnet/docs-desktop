@@ -7,7 +7,7 @@ items:
   - name: WPF Content Model
     href: wpf-content-model.md
   - name: Control Library
-    href: control-library.md
+    href: index.md
     items:
     - name: Border
       items:
