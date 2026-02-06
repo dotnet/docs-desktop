@@ -2,8 +2,8 @@
 title: "MenuItem"
 description: Learn about the MenuItem control in Windows Presentation Foundation (WPF), which represents individual selectable items within Menu and ContextMenu controls.
 ms.date: 01/28/2026
-ms.service: dotnet-framework
-ms.update-cycle: 1825-days
+ms.service: dotnet-desktop
+ms.update-cycle: 365-days
 helpviewer_keywords:
   - "MenuItem control [WPF]"
   - "controls [WPF], MenuItem"

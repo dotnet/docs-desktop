@@ -2,8 +2,8 @@
 title: "ListView"
 description: Learn about the ListView control in Windows Presentation Foundation (WPF), which provides the infrastructure to display data items in different layouts or views.
 ms.date: "01/28/2026"
-ms.service: dotnet-framework
-ms.update-cycle: 1825-days
+ms.service: dotnet-desktop
+ms.update-cycle: 365-days
 helpviewer_keywords:
   - "controls [WPF], ListView"
   - "ListView control [WPF]"

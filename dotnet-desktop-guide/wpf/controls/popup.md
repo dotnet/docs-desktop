@@ -2,8 +2,8 @@
 title: "Popup"
 description: Learn how to use the Popup control to display content in a separate window that floats over the current application window.
 ms.date: "02/05/2025"
-ms.service: dotnet-framework
-ms.update-cycle: 1825-days
+ms.service: dotnet-desktop
+ms.update-cycle: 365-days
 helpviewer_keywords:
   - "Popup control [WPF]"
   - "content [WPF], Popup control"

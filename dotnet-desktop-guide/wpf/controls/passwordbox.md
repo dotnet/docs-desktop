@@ -3,8 +3,8 @@ title: "PasswordBox"
 description: Learn how to use PasswordBox to input sensitive or private information in Windows Presentation Foundation (WPF) applications.
 ai-usage: ai-assisted
 ms.date: 01/28/2026
-ms.service: dotnet-framework
-ms.update-cycle: 1825-days
+ms.service: dotnet-desktop
+ms.update-cycle: 365-days
 helpviewer_keywords:
   - "PasswordBox control [WPF]"
   - "controls [WPF], PasswordBox"

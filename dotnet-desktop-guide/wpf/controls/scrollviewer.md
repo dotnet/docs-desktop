@@ -2,8 +2,8 @@
 title: "ScrollViewer"
 description: Learn how the ScrollViewer control creates a scrollable region at which point content can be scrolled horizontally or vertically.
 ms.date: 01/28/2026
-ms.service: dotnet-framework
-ms.update-cycle: 1825-days
+ms.service: dotnet-desktop
+ms.update-cycle: 365-days
 helpviewer_keywords:
   - "scrolling content [WPF]"
   - "ScrollViewer control [WPF]"
@@ -82,18 +82,6 @@ The following table lists the visual states for the <xref:System.Windows.Control
 | InvalidFocused | ValidationStates | The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` and the control has focus. |
 | InvalidUnfocused | ValidationStates | The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` and the control doesn't have focus. |
 | Valid | ValidationStates | The control uses the <xref:System.Windows.Controls.Validation> class and the <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `false`. |
-
-### ScrollViewer ControlTemplate Example
-
-The following example shows how to define a <xref:System.Windows.Controls.ControlTemplate> for the <xref:System.Windows.Controls.ScrollViewer> control.
-
-[!code-xaml[ControlTemplateExamples#ScrollViewer](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/scrollviewer.xaml#scrollviewer)]
-
-The preceding example uses one or more of the following resources.
-
-[!code-xaml[ControlTemplateExamples#Resources](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/shared.xaml#resources)]
-
-For the complete sample, see [Styling with ControlTemplates Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Styles%20&%20Templates/IntroToStylingAndTemplating).
 
 ## Paginating documents
 

@@ -2,8 +2,8 @@
 title: "Thumb"
 description: Learn about the Thumb control, which provides a dragging functionality for scroll bars, sliders, and other controls.
 ms.date: "01/28/2025"
-ms.service: dotnet-framework
-ms.update-cycle: 1825-days
+ms.service: dotnet-desktop
+ms.update-cycle: 365-days
 helpviewer_keywords:
   - "states [WPF], Thumb"
   - "styles [WPF], Thumb"

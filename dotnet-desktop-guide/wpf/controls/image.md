@@ -2,8 +2,8 @@
 title: "Image"
 description: Learn how to use the Image element to display and manipulate bitmap images in a Windows Presentation Foundation (WPF) application.
 ms.date: 01/28/2026
-ms.service: dotnet-framework
-ms.update-cycle: 1825-days
+ms.service: dotnet-desktop
+ms.update-cycle: 365-days
 ai-usage: ai-assisted
 helpviewer_keywords:
   - "controls [WPF], Image"

@@ -2,8 +2,8 @@
 title: "TabControl"
 description: Learn how to use TabControl elements to display content on distinct pages accessed by selecting the appropriate tab.
 ms.date: 01/28/2026
-ms.service: dotnet-framework
-ms.update-cycle: 1825-days
+ms.service: dotnet-desktop
+ms.update-cycle: 365-days
 helpviewer_keywords:
   - "TabControl control [WPF]"
   - "controls [WPF], TabControl"

@@ -2,8 +2,8 @@
 title: "ToggleButton control"
 description: Learn about the ToggleButton control in WPF, a button that can be toggled between two or three states, including its styles and templates.
 ms.date: 01/28/2026
-ms.service: dotnet-framework
-ms.update-cycle: 1825-days
+ms.service: dotnet-desktop
+ms.update-cycle: 365-days
 helpviewer_keywords:
   - "states [WPF], ToggleButton"
   - "ToggleButton [WPF], styles and templates"

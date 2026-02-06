@@ -2,8 +2,8 @@
 title: "Menu"
 description: Learn about the Menu control in Windows Presentation Foundation (WPF), which allows hierarchical organization of elements associated with commands and event handlers.
 ms.date: 01/28/2026
-ms.service: dotnet-framework
-ms.update-cycle: 1825-days
+ms.service: dotnet-desktop
+ms.update-cycle: 365-days
 helpviewer_keywords:
   - "Menu control [WPF]"
   - "controls [WPF], Menu"

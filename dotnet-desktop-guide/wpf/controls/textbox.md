@@ -2,8 +2,8 @@
 title: "TextBox"
 description: Learn how to use the TextBox control to provide support for basic text input in Windows Presentation Foundation (WPF) applications.
 ms.date: 01/28/2026
-ms.service: dotnet-framework
-ms.update-cycle: 1825-days
+ms.service: dotnet-desktop
+ms.update-cycle: 365-days
 helpviewer_keywords:
   - "controls [WPF], TextBox"
   - "TextBox control [WPF]"

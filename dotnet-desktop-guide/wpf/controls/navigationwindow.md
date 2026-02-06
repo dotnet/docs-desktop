@@ -2,8 +2,8 @@
 title: "NavigationWindow"
 description: Learn about the NavigationWindow control in WPF, including its parts, visual states, and control template.
 ms.date: "01/23/2025"
-ms.service: dotnet-framework
-ms.update-cycle: 1825-days
+ms.service: dotnet-desktop
+ms.update-cycle: 365-days
 helpviewer_keywords:
   - "states [WPF], NavigationWindow"
   - "NavigationWindow [WPF], styles and templates"

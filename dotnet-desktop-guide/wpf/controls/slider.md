@@ -2,8 +2,8 @@
 title: "Slider"
 description: Learn how the Slider allows you select from a range of values by moving a Thumb along a Track.
 ms.date: 01/28/2026
-ms.service: dotnet-framework
-ms.update-cycle: 1825-days
+ms.service: dotnet-desktop
+ms.update-cycle: 365-days
 helpviewer_keywords:
   - "controls [WPF], Slider"
   - "Slider control [WPF]"

@@ -3,6 +3,7 @@ title: "ToolTip"
 description: Learn about ToolTip, a small pop-up window that appears when a user pauses the mouse pointer over an element, including how to create and customize tooltip content.
 ms.date: "01/28/2026"
 ms.service: dotnet-desktop
+update-cycle: 365-days
 dev_langs:
   - "csharp"
   - "vb"

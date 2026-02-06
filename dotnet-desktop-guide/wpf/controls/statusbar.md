@@ -2,8 +2,8 @@
 title: "StatusBar"
 description: Learn how to use a StatusBar to display status information in a horizontal bar in an application window.
 ms.date: 01/28/2026
-ms.service: dotnet-framework
-ms.update-cycle: 1825-days
+ms.service: dotnet-desktop
+ms.update-cycle: 365-days
 helpviewer_keywords:
   - "controls [WPF], StatusBar"
   - "StatusBar control [WPF]"

@@ -2,8 +2,8 @@
 title: "Viewbox"
 description: Learn how the Viewbox control is used to stretch or scale a child element in Windows Presentation Foundation (WPF) applications.
 ms.date: 01/28/2026
-ms.service: dotnet-framework
-ms.update-cycle: 1825-days
+ms.service: dotnet-desktop
+ms.update-cycle: 365-days
 helpviewer_keywords:
   - "controls [WPF], Viewbox"
   - "stretching elements [WPF], Viewbox control"

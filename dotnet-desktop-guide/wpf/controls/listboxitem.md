@@ -2,8 +2,8 @@
 title: "ListBoxItem"
 description: Learn about the ListBoxItem control in Windows Presentation Foundation (WPF), which represents individual selectable items within a ListBox control.
 ms.date: 01/28/2026
-ms.service: dotnet-framework
-ms.update-cycle: 1825-days
+ms.service: dotnet-desktop
+ms.update-cycle: 365-days
 ai-usage: ai-assisted
 ---
 # ListBoxItem

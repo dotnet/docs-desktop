@@ -2,8 +2,8 @@
 title: "GroupBox"
 description: Learn about the GroupBox control, which is a HeaderedContentControl that provides a titled container for graphical user interface (GUI) content.
 ms.date: 01/28/2026
-ms.service: dotnet-framework
-ms.update-cycle: 1825-days
+ms.service: dotnet-desktop
+ms.update-cycle: 365-days
 helpviewer_keywords:
   - "controls [WPF], GroupBox"
   - "GroupBox control [WPF]"
@@ -38,18 +38,6 @@ The following table lists the visual states for the <xref:System.Windows.Control
 |Valid|ValidationStates|The control is valid and has no validation errors.|
 |InvalidFocused|ValidationStates|The control has a validation error and has keyboard focus.|
 |InvalidUnfocused|ValidationStates|The control has a validation error but doesn't have keyboard focus.|
-
-### GroupBox ControlTemplate Example
-
-The following example shows how to define a <xref:System.Windows.Controls.ControlTemplate> for the <xref:System.Windows.Controls.GroupBox> control.
-
-[!code-xaml[ControlTemplateExamples#GroupBox](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/groupbox.xaml#groupbox)]
-
-The <xref:System.Windows.Controls.ControlTemplate> uses one or more of the following resources.
-
-[!code-xaml[ControlTemplateExamples#Resources](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlTemplateExamples/CS/resources/shared.xaml#resources)]
-
-For the complete sample, see [Styling with ControlTemplates Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Styles%20&%20Templates/IntroToStylingAndTemplating).
 
 ## See also
 

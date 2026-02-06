@@ -2,8 +2,8 @@
 title: "ToolBar"
 description: Learn about how the ToolBar control is a container for a group of commands or controls that are typically related in their function.
 ms.date: 01/28/2026
-ms.service: dotnet-framework
-ms.update-cycle: 1825-days
+ms.service: dotnet-desktop
+ms.update-cycle: 365-days
 helpviewer_keywords:
   - "controls [WPF], ToolBar"
   - "ToolBar control [WPF]"
