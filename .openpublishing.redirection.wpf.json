@@ -401,6 +401,10 @@
       "redirect_url": "/dotnet/desktop/wpf/controls/scrollviewer"
     },
     {
+      "source_path": "dotnet-desktop-guide/wpf/controls/stackpanel-how-to-topics.md",
+      "redirect_url": "/dotnet/desktop/wpf/controls/stackpanel"
+    },
+    {
       "source_path": "dotnet-desktop-guide/wpf/controls/styles-and-templates.md",
       "redirect_url": "/dotnet/desktop/wpf/controls/styles-templates-overview"
     },
