@@ -70,7 +70,7 @@ You put the current cell into edit mode by clicking it or pressing F2. A cell-le
 Set the <xref:System.Windows.Controls.DataGrid.CanUserAddRows%2A> and <xref:System.Windows.Controls.DataGrid.CanUserDeleteRows%2A> properties to specify whether a user can add or delete rows. A user can delete selected rows by pressing the DELETE key. If the <xref:System.Windows.Controls.DataGrid.CanUserAddRows%2A> property is set to `true`, a new item row is added as the last row in the <xref:System.Windows.Controls.DataGrid>. You can set default values for new items by handling the <xref:System.Windows.Controls.DataGrid.InitializingNewItem> event.
 
 > [!NOTE]
-> Whether editing actions are allowed is influenced by many factors, including the <xref:System.Windows.Controls.DataGrid.IsReadOnly%2A> and <xref:System.Windows.Controls.UIElement.IsEnabled%2A> state of the <xref:System.Windows.Controls.DataGrid>, and whether the underlying data collection allows the action.
+> Whether editing actions are allowed is influenced by many factors, including the <xref:System.Windows.Controls.DataGrid.IsReadOnly%2A> and <xref:System.Windows.UIElement.IsEnabled> state of the <xref:System.Windows.Controls.DataGrid>, and whether the underlying data collection allows the action.
 
 ## Selection
 
