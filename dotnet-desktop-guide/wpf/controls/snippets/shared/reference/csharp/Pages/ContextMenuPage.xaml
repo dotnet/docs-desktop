@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page x:Class="AllTemplatesCS.Pages.ContextMenuPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AllTemplatesCS.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="400"
+      Title="ContextMenuPage">
+    <StackPanel Margin="20" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <TextBlock Text="Right-click on the elements below to see context menus:" FontWeight="Bold" Margin="10"/>
+        
+        <Button Content="Button with Context Menu" Padding="20,10" Margin="10">
+            <Button.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Header="Cut" InputGestureText="Ctrl+X"/>
+                    <MenuItem Header="Copy" InputGestureText="Ctrl+C"/>
+                    <MenuItem Header="Paste" InputGestureText="Ctrl+V"/>
+                    <Separator/>
+                    <MenuItem Header="Properties"/>
+                </ContextMenu>
+            </Button.ContextMenu>
+        </Button>
+        
+        <TextBox Text="Text with context menu" Padding="10" Margin="10">
+            <TextBox.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Header="Undo"/>
+                    <MenuItem Header="Redo"/>
+                    <Separator/>
+                    <MenuItem Header="Select All"/>
+                    <MenuItem Header="Find"/>
+                </ContextMenu>
+            </TextBox.ContextMenu>
+        </TextBox>
+        
+        <TextBlock Background="LightBlue" Height="50" Margin="10" Text="TextBlock with context menu">
+            
+            <TextBlock.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Header="Change Color">
+                        <MenuItem Header="Red"/>
+                        <MenuItem Header="Green"/>
+                        <MenuItem Header="Blue"/>
+                    </MenuItem>
+                    <MenuItem Header="Resize"/>
+                    <MenuItem Header="Delete"/>
+                </ContextMenu>
+            </TextBlock.ContextMenu>
+        </TextBlock>
+    </StackPanel>
+</Page>

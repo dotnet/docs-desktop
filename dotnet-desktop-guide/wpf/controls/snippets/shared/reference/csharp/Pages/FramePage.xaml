@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page x:Class="AllTemplatesCS.Pages.FramePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AllTemplatesCS.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="400"
+      Title="FramePage">
+    <StackPanel Margin="20" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <TextBlock Text="Frame Control Example" FontSize="16" FontWeight="Bold" Margin="0,0,0,10"/>
+        <Frame x:Name="sampleFrame" Width="300" Height="150" BorderBrush="Gray" BorderThickness="1">
+            <Frame.Content>
+                <StackPanel Margin="10">
+                    <TextBlock Text="This is content inside a Frame" FontWeight="Bold"/>
+                    <TextBlock Text="Frames are used for navigation and can host pages or user controls." TextWrapping="Wrap"/>
+                    <Button Content="Sample Button" Margin="0,10,0,0" Padding="10,5"/>
+                </StackPanel>
+            </Frame.Content>
+        </Frame>
+    </StackPanel>
+</Page>

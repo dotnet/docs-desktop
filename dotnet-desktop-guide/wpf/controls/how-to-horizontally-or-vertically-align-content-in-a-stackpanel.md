@@ -34,4 +34,4 @@ The following code-behind file defines the changes to the events that are associ
 - <xref:System.Windows.Controls.ListBox>
 - <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A>
 - <xref:System.Windows.FrameworkElement.VerticalAlignment%2A>
-- [Panels Overview](panels-overview.md)
+- [Panel](panel.md)

@@ -190,4 +190,4 @@ Digital ink controls provide integrated support for Tablet PC features, such as 
 
 ## See also
 
-- [Control Library](control-library.md)
+- [Control Library](index.md)

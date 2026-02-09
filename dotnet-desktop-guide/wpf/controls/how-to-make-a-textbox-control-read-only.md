@@ -25,5 +25,5 @@ The default value of <xref:System.Windows.Controls.Primitives.TextBoxBase.IsRead
 
 ## See also
 
-- [TextBox Overview](textbox-overview.md)
-- [RichTextBox Overview](richtextbox-overview.md)
+- [TextBox](textbox.md)
+- [RichTextBox Overview](richtextbox.md)

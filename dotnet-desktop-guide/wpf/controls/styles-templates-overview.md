@@ -58,6 +58,9 @@ In WPF, the <xref:System.Windows.Controls.ControlTemplate> of a control defines 
 
 Each control has a default template assigned to the [Control.Template](xref:System.Windows.Controls.Control.Template) property. The template connects the visual presentation of the control with the control's capabilities. Because you define a template in XAML, you can change the control's appearance without writing any code. Each template is designed for a specific control, such as a <xref:System.Windows.Controls.Button>.
 
+> [!IMPORTANT]
+> When you change the visual tree of a control, you must replace the entire <xref:System.Windows.Controls.ControlTemplate>. There is no way to replace only part of the visual tree of a control. To change the visual tree of a control, you must set the <xref:System.Windows.Controls.Control.Template%2A> property of the control to its new and complete <xref:System.Windows.Controls.ControlTemplate>.
+
 Commonly you declare a template as a resource on the `Resources` section of a XAML file. As with all resources, scoping rules apply.
 
 Control templates are a lot more involved than a style. This is because the control template rewrites the visual appearance of the entire control, while a style simply applies property changes to the existing control. However, since the template of a control is applied by setting the [Control.Template](xref:System.Windows.Controls.Control.Template) property, you can use a style to define or set a template.
@@ -218,7 +221,7 @@ A typical WPF app might have multiple UI resources that are applied throughout t
 
 WPF themes are defined by using the styling and templating mechanism that WPF exposes for customizing the visuals of any element.
 
-WPF theme resources are stored in embedded resource dictionaries. These resource dictionaries must be embedded within a signed assembly, and can either be embedded in the same assembly as the code itself or in a side-by-side assembly. For PresentationFramework.dll, the assembly that contains WPF controls, theme resources are in a series of side-by-side assemblies.
+WPF theme resources are stored in embedded resource dictionaries. These resource dictionaries must be embedded within a signed assembly, and can either be embedded in the same assembly as the code itself or in a side-by-side assembly. For PresentationFramework.dll, the assembly that contains WPF controls, theme resources are embedded in a series of side-by-side assemblies. The operating system determines which theme resource dictionary is used at runtime.
 
 The theme becomes the last place to look when searching for the style of an element. Typically, the search will begin by walking up the element tree searching for an appropriate resource, then look in the app resource collection and finally query the system. This gives app developers a chance to redefine the style for any object at the tree or app level before reaching the theme.
 
@@ -237,6 +240,74 @@ It is the sharing of `shared.xaml`, which itself defines a <xref:System.Windows.
 For more information, see [Merged resource dictionaries](../systems/xaml-resources-merged-dictionaries.md).
 
 If you are creating a theme for your custom control, see the **Defining resources at the theme level** section of the [Control authoring overview](../controls/control-authoring-overview.md#defining-resources-at-the-theme-level).
+
+### Using built-in themes
+
+WPF includes several built-in themes that you can explicitly apply to your application. These themes are embedded within PresentationFramework assemblies and can be referenced using pack URIs in your application's resource dictionaries.
+
+To apply a built-in theme, merge the theme's resource dictionary into your application resources in `App.xaml`:
+
+```xaml
+<Application x:Class="MyApp.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/PresentationFramework.Aero2;component/themes/Aero2.NormalColor.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
+```
+
+#### Available built-in themes
+
+The following table lists the built-in themes available through pack URIs:
+
+|Theme|Pack URI|Description|
+|-----|--------|-----------|
+|**Aero2**|`/PresentationFramework.Aero2;component/themes/Aero2.NormalColor.xaml`|Default theme for Windows 8 and later applications.|
+|**AeroLite**|`/PresentationFramework.AeroLite;component/themes/AeroLite.NormalColor.xaml`|Simplified version of Aero2 with reduced visual effects.|
+|**Aero**|`/PresentationFramework.Aero;component/themes/Aero.NormalColor.xaml`|Windows 7-era theme with glass effects and gradients.|
+|**Fluent**|`/PresentationFramework.Fluent;component/Themes/Fluent.xaml`|Windows 11-style theme with light/dark mode support (.NET 9+).|
+|**Luna (Blue)**|`/PresentationFramework.Luna;component/themes/Luna.NormalColor.xaml`|Windows XP default blue color scheme.|
+|**Luna (Silver)**|`/PresentationFramework.Luna;component/themes/Luna.Metallic.xaml`|Windows XP metallic silver color scheme.|
+|**Luna (Olive)**|`/PresentationFramework.Luna;component/themes/Luna.Homestead.xaml`|Windows XP olive green color scheme.|
+|**Royale**|`/PresentationFramework.Royale;component/themes/Royale.NormalColor.xaml`|Windows XP Media Center Edition theme.|
+|**Classic**|`/PresentationFramework.Classic;component/themes/Classic.xaml`|Traditional Windows 95/98/2000 appearance.|
+
+> [!NOTE]
+> For .NET Framework applications, you may need to add references to the theme assemblies (such as PresentationFramework.Aero2) in your project. For .NET Core/.NET 5+ applications, the theme assemblies are typically included automatically.
+
+> [!TIP]
+> For developer reference, Visual Studio includes XAML files for these themes in your installation directory, typically located at _C:\\Program Files\\Microsoft Visual Studio\\2022\\\<edition>\\DesignTools\\SystemThemes\\wpf_. These files are helpful for understanding theme structure but are not used at runtime.
+
+#### Using the modern Fluent theme (.NET 9+)
+
+For .NET 9 and later, you can use the new Fluent theme which supports light and dark modes:
+
+```xaml
+<Application.Resources>
+    <ResourceDictionary>
+        <ResourceDictionary.MergedDictionaries>
+            <ResourceDictionary Source="pack://application:,,,/PresentationFramework.Fluent;component/Themes/Fluent.xaml"/>
+        </ResourceDictionary.MergedDictionaries>
+    </ResourceDictionary>
+</Application.Resources>
+```
+
+Alternatively, you can use the `ThemeMode` property for even simpler theme application:
+
+```xaml
+<Application x:Class="MyApp.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             StartupUri="MainWindow.xaml"
+             ThemeMode="System">
+</Application>
+```
 
 ## See also
 

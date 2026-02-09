@@ -38,4 +38,4 @@ The following code-behind example handles the methods that the button <xref:Syst
 
 - <xref:System.Windows.Controls.Grid>
 - <xref:System.Windows.Controls.Grid.IsSharedSizeScope%2A>
-- [Panels Overview](panels-overview.md)
+- [Panel](panel.md)

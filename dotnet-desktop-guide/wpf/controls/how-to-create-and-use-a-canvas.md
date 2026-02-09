@@ -35,5 +35,5 @@ The following example explicitly positions two <xref:System.Windows.Controls.Tex
 - <xref:System.Windows.Controls.Canvas.SetLeft%2A>
 - <xref:System.Windows.Controls.Canvas.Top%2A>
 - <xref:System.Windows.Controls.Canvas.Left%2A>
-- [Panels Overview](panels-overview.md)
-- [How-to Topics](canvas-how-to-topics.md)
+- [Panel](panel.md)
+- [Canvas](canvas.md)

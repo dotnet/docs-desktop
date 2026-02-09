@@ -35,5 +35,5 @@ Each <xref:System.Windows.Controls.Button> is positioned relative to the parent 
 - <xref:System.Windows.Controls.Canvas.Top%2A>
 - <xref:System.Windows.Controls.Button>
 - [Panels Overview](panels-overview.md)
-- [How-to Topics](canvas-how-to-topics.md)
+- [Canvas](canvas.md)
 - [Attached Properties Overview](../properties/attached-properties-overview.md)
