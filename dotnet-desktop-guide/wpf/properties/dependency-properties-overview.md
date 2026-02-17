@@ -145,7 +145,7 @@ The following example sets the <xref:System.Windows.Controls.ContentControl.Cont
 > [!NOTE]
 > Bindings are treated as a local value, which means that if you set another local value, you'll eliminate the binding. For details, see [Dependency property value precedence](dependency-property-value-precedence.md).
 
-Dependency properties, or the <xref:System.Windows.DependencyObject> class, don't natively support <xref:System.ComponentModel.INotifyPropertyChanged> for notification of changes in `DependencyObject` source property value for data binding operations. For more about how to create properties for use in data binding that can report changes to a data binding target, see [Data binding overview](../data/data-binding-overview.md)
+Dependency properties, or the <xref:System.Windows.DependencyObject> class, don't natively support <xref:System.ComponentModel.INotifyPropertyChanged> for notification of changes in `DependencyObject` source property value for data binding operations. For more about how to create properties for use in data binding that can report changes to a data binding target, see [Data binding overview](../data/index.md)
 
 ### Styles
 

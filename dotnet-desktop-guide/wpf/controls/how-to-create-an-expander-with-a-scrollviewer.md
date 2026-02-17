@@ -28,5 +28,4 @@ Note that the example sets the <xref:System.Windows.FrameworkElement.Height%2A> 
 ## See also
 
 - <xref:System.Windows.Controls.Expander>
-- [Expander Overview](expander-overview.md)
-- [How-to Topics](expander-how-to-topics.md)
+- [Expander Overview](expander.md)

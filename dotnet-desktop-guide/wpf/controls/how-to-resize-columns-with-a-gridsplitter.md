@@ -36,4 +36,4 @@ The following example shows how to define a vertical <xref:System.Windows.Contro
 ## See also
 
 - <xref:System.Windows.Controls.GridSplitter>
-- [How-to Topics](gridsplitter-how-to-topics.md)
+- [How-to Topics](gridsplitter.md)

@@ -29,4 +29,4 @@ The following example creates a <xref:System.Windows.Controls.Primitives.ScrollB
 
 ## See also
 
-- [ScrollBar Styles and Templates](scrollbar-styles-and-templates.md)
+- [ScrollBar Styles and Templates](scrollbar.md)

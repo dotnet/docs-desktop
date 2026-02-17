@@ -159,12 +159,12 @@ Layout rounding is disabled by default. To enable layout rounding, set the <xref
 
 ## What's Next
 
-Understanding how elements are measured and arranged is the first step in understanding layout. For more information about the available <xref:System.Windows.Controls.Panel> elements, see [Panels Overview](../controls/panels-overview.md). To better understand the various positioning properties that can affect layout, see [Alignment, Margins, and Padding Overview](alignment-margins-and-padding-overview.md). When you are ready to put it all together in a lightweight application, see [Walkthrough: My first WPF desktop application](../get-started/walkthrough-my-first-wpf-desktop-application.md).
+Understanding how elements are measured and arranged is the first step in understanding layout. For more information about the available <xref:System.Windows.Controls.Panel> elements, see [Panels Overview](../controls/panel.md). To better understand the various positioning properties that can affect layout, see [Alignment, Margins, and Padding Overview](alignment-margins-and-padding-overview.md). When you are ready to put it all together in a lightweight application, see [Walkthrough: My first WPF desktop application](../get-started/walkthrough-my-first-wpf-desktop-application.md).
 
 ## See also
 
 - <xref:System.Windows.FrameworkElement>
 - <xref:System.Windows.UIElement>
-- [Panels Overview](../controls/panels-overview.md)
+- [Panels Overview](../controls/panel.md)
 - [Alignment, Margins, and Padding Overview](alignment-margins-and-padding-overview.md)
 - [Layout and Design](optimizing-performance-layout-and-design.md)

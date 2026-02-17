@@ -93,4 +93,4 @@ The following table lists the visual states for the <xref:System.Windows.Control
 - <xref:System.Windows.Controls.VirtualizingStackPanel>
 - [Documents in WPF](../advanced/documents-in-wpf.md)
 - [How to: Create a Scroll Viewer](/previous-versions/dotnet/netframework-3.5/ms752352(v=vs.90))
-- [ScrollBar Styles and Templates](scrollbar-styles-and-templates.md)
+- [ScrollBar Styles and Templates](scrollbar.md)
