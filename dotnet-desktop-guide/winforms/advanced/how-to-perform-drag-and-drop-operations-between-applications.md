@@ -14,7 +14,7 @@ Performing drag-and-drop operations between applications is no different from en
 
 In the following procedure, you will use a Windows-based application you create and the WordPad word processor that is included with the Windows operating system to perform drag-and-drop operations between applications. WordPad has a certain set of allowed effects for text being dragged and dropped; the Windows-based application you will write code for will work with these effects so that drag-and-drop operations may be completed successfully.
 
-### To perform a drag-and-drop procedure between applications
+## To perform a drag-and-drop procedure between applications
 
 1. Create a new Windows Forms application.
 
