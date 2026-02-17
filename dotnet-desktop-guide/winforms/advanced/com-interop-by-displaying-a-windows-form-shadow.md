@@ -32,7 +32,7 @@ The disadvantage of using the <xref:System.Windows.Forms.Form.ShowDialog%2A?disp
 
 You can create a class library in Windows Forms which has a method to show the form, and then build the class library for COM interop. You can use this DLL file from Visual Basic 6.0 or Microsoft Foundation Classes (MFC), and from either of these environments you can call the <xref:System.Windows.Forms.Form.ShowDialog%2A?displayProperty=nameWithType> method to display the form.
 
-#### To support COM interop by displaying a windows form with the ShowDialog method
+### To support COM interop by displaying a windows form with the ShowDialog method
 
 - Replace all calls to the <xref:System.Windows.Forms.Form.Show%2A?displayProperty=nameWithType> method with calls to the <xref:System.Windows.Forms.Form.ShowDialog%2A?displayProperty=nameWithType> method in your .NET Framework component.
 

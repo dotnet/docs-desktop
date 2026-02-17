@@ -22,7 +22,7 @@ The <xref:System.Drawing.Drawing2D.PathGradientBrush> class allows you to custom
 
 The examples in this article are methods that are called from a control's <xref:System.Windows.Forms.Control.Paint> event handler.
 
-### To fill an ellipse with a path gradient
+## To fill an ellipse with a path gradient
 
 - The following example fills an ellipse with a path gradient brush. The center color is set to blue and the boundary color is set to aqua. The following illustration shows the filled ellipse.
 

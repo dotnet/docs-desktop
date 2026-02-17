@@ -19,7 +19,7 @@ Often, users want to choose a printer other than the default printer to print to
 
 In the following procedure, a text file is selected to be printed to the default printer. The <xref:System.Windows.Forms.PrintDialog> class is then instantiated.
 
-### To choose a printer and then print a file
+## To choose a printer and then print a file
 
 1. Select the printer to be used using the <xref:System.Windows.Forms.PrintDialog> component.
 

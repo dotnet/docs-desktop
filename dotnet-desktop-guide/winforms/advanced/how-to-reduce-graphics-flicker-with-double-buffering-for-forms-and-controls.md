@@ -18,7 +18,7 @@ Double buffering uses a memory buffer to address the flicker problems associated
 
 For more advanced double buffering scenarios, such as animation or advanced memory management, you can implement your own double buffering logic. For more information, see [How to: Manually Manage Buffered Graphics](how-to-manually-manage-buffered-graphics.md).
 
-### To reduce flicker
+## To reduce flicker
 
 - Set the <xref:System.Windows.Forms.Control.DoubleBuffered%2A> property to `true`.
 

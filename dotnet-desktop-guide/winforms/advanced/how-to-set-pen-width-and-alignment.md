@@ -22,7 +22,7 @@ The values <xref:System.Drawing.Drawing2D.PenAlignment.Center>, <xref:System.Dra
 
 The following code example draws a line twice: once with a black pen of width 1 and once with a green pen of width 10.
 
-### To vary the width of a pen
+## To vary the width of a pen
 
 - Set the value of the <xref:System.Drawing.Pen.Alignment%2A> property to <xref:System.Drawing.Drawing2D.PenAlignment.Center> (the default) to specify that pixels drawn with the green pen will be centered on the theoretical line. The following illustration shows the resulting line.
 

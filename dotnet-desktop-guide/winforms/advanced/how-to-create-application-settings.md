@@ -20,7 +20,7 @@ In the following procedure, you manually create a wrapper class that derives fro
 
 You can also perform this procedure using minimal code in the Visual Studio designer.  Also see [How to: Create Application Settings Using the Designer](/previous-versions/visualstudio/visual-studio-2010/wabtadw6(v=vs.100)).
 
-### To create new Application Settings programmatically
+## To create new Application Settings programmatically
 
 1. Add a new class to your project, and rename it. For this procedure, we will call this class `MyUserSettings`. Change the class definition so that the class derives from <xref:System.Configuration.ApplicationSettingsBase>.
 
