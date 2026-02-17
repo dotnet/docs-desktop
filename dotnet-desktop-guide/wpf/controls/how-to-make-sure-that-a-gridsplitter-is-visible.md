@@ -33,4 +33,4 @@ To prevent hidden <xref:System.Windows.Controls.GridSplitter> controls, do one o
 ## See also
 
 - <xref:System.Windows.Controls.GridSplitter>
-- [How-to Topics](gridsplitter-how-to-topics.md)
+- [How-to Topics](gridsplitter.md)

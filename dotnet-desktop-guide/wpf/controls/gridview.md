@@ -49,7 +49,7 @@ When defining the data field to display in a <xref:System.Windows.Controls.GridV
 
 To specify the alignment of content in a column of a <xref:System.Windows.Controls.GridView>, define a <xref:System.Windows.Controls.GridViewColumn.CellTemplate%2A>. Do not use the <xref:System.Windows.Controls.Control.HorizontalContentAlignment%2A> and <xref:System.Windows.Controls.Control.VerticalContentAlignment%2A> properties for <xref:System.Windows.Controls.ListView> content that is displayed by using a <xref:System.Windows.Controls.GridView>.
 
-To specify template and style properties for column headers, use the <xref:System.Windows.Controls.GridView>, <xref:System.Windows.Controls.GridViewColumn>, and <xref:System.Windows.Controls.GridViewColumnHeader> classes. For more information, see [GridView Column Header Styles and Templates Overview](gridview-column-header-styles-and-templates-overview.md).
+To specify template and style properties for column headers, use the <xref:System.Windows.Controls.GridView>, <xref:System.Windows.Controls.GridViewColumn>, and <xref:System.Windows.Controls.GridViewColumnHeader> classes. For more information, see [GridView Column Header Styles and Templates Overview](gridview.md).
 
 <a name="AddingVisualElementstoaGridViewView"></a>
 

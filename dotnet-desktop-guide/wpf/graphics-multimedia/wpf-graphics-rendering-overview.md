@@ -122,7 +122,7 @@ The <xref:System.Windows.Controls.Button> control contains a <xref:Microsoft.Win
 
 ### Control Templates
 
-The key to the expansion of a control into a hierarchy of controls is the <xref:System.Windows.Controls.ControlTemplate>. A control template specifies the default visual hierarchy for a control. When you explicitly reference a control, you implicitly reference its visual hierarchy. You can override the default values for a control template to create a customized visual appearance for a control. For example, you could modify the background color value of the <xref:System.Windows.Controls.Button> control so that it uses a linear gradient color value instead of a solid color value. For more information, see [Button Styles and Templates](../controls/button-styles-and-templates.md).
+The key to the expansion of a control into a hierarchy of controls is the <xref:System.Windows.Controls.ControlTemplate>. A control template specifies the default visual hierarchy for a control. When you explicitly reference a control, you implicitly reference its visual hierarchy. You can override the default values for a control template to create a customized visual appearance for a control. For example, you could modify the background color value of the <xref:System.Windows.Controls.Button> control so that it uses a linear gradient color value instead of a solid color value. For more information, see [Button Styles and Templates](../controls/button.md).
 
 A user interface element, such as a <xref:System.Windows.Controls.Button> control, contains several vector graphics instruction lists that describe the entire rendering definition of a control. The following code shows a <xref:System.Windows.Controls.Button> control defined in markup.
 

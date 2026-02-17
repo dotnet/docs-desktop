@@ -32,4 +32,4 @@ This example does not run.
 - <xref:System.Windows.Controls.Border>
 - [How to: Change the Margin Property](/previous-versions/dotnet/netframework-3.5/ms750561(v=vs.90))
 - [How to: Convert a ListBoxItem to a new Data Type](/previous-versions/dotnet/netframework-3.5/ms749147(v=vs.90))
-- [Panels Overview](../controls/panels-overview.md)
+- [Panels Overview](../controls/panel.md)

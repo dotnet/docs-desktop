@@ -37,4 +37,4 @@ The compiled application yields a new UI that looks like this.
 ## See also
 
 - <xref:System.Windows.Controls.DockPanel>
-- [Panels Overview](panels-overview.md)
+- [Panels Overview](panel.md)
