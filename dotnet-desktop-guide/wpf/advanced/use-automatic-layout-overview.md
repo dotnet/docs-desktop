@@ -57,7 +57,7 @@ Using the automatic layout approach requires a set of coding and design standard
 
 - Use <xref:System.Windows.Controls.DockPanel>, <xref:System.Windows.Controls.StackPanel>, and <xref:System.Windows.Controls.Grid> to position controls.
 
-For a discussion about various types of panels, see [Panels Overview](../controls/panels-overview.md).
+For a discussion about various types of panels, see [Panels Overview](../controls/panel.md).
 
 **Do not set a fixed size for a window**
 

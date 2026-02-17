@@ -25,4 +25,4 @@ The following example shows how to display `Hello World!` inside a <xref:System.
 
 - <xref:System.Windows.Controls.Canvas>
 - <xref:System.Windows.Controls.Border>
-- [Panels Overview](panels-overview.md)
+- [Panels Overview](panel.md)

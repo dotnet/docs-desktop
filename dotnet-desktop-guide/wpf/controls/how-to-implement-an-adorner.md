@@ -32,4 +32,4 @@ A custom adorner is created by implementing a class that inherits from the abstr
 
 ## See also
 
-- [Adorners Overview](adorners-overview.md)
+- [Adorners](adorners.md)

@@ -239,7 +239,7 @@ Layout provides an ordered way to place UI elements, and also manages the size a
 Each of these layout controls supports a particular type of layout for its child elements. `ExpenseIt` pages can be resized, and each page has elements that are arranged horizontally and vertically alongside other elements. In this example, the <xref:System.Windows.Controls.Grid> is used as  layout element for the application.
 
 > [!TIP]
-> For more information about <xref:System.Windows.Controls.Panel> elements, see [Panels overview](../controls/panels-overview.md). For more information about layout, see [Layout](../advanced/layout.md).
+> For more information about <xref:System.Windows.Controls.Panel> elements, see [Panel](../controls/panel.md). For more information about layout, see [Layout](../advanced/layout.md).
 
 In this section, you create a single-column table with three rows and a 10-pixel margin by adding column and row definitions to the <xref:System.Windows.Controls.Grid> in *`ExpenseItHome.xaml`*.
 
@@ -497,7 +497,7 @@ For more information about creating applications, see the following topics:
 
 ## See also
 
-- [Panels overview](../controls/panels-overview.md)
+- [Panel](../controls/panel.md)
 - [Data templating overview](../data/data-templating-overview.md)
 - [Build a WPF application](../app-development/building-a-wpf-application-wpf.md)
-- [Styles and templates](../controls/styles-and-templates.md)
+- [Styles and templates](../controls/styles-templates-overview.md)

@@ -35,6 +35,6 @@ The following example shows how to set <xref:System.Windows.Controls.ControlTemp
 - <xref:System.Windows.Controls.GridViewColumnHeaderRole>
 - <xref:System.Windows.Controls.ListView>
 - <xref:System.Windows.Controls.GridView>
-- [How-to Topics](listview-how-to-topics.md)
-- [ListView Overview](listview-overview.md)
-- [GridView Overview](gridview-overview.md)
+- [ListView](listview.md)
+- [ListView](listview.md)
+- [GridView Overview](gridview.md)

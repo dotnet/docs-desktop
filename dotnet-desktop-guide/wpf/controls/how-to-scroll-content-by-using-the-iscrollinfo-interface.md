@@ -33,6 +33,5 @@ Each <xref:System.Windows.Controls.Button> in the XAML file triggers an associat
 - <xref:System.Windows.Controls.ScrollViewer>
 - <xref:System.Windows.Controls.Primitives.IScrollInfo>
 - <xref:System.Windows.Controls.StackPanel>
-- [ScrollViewer Overview](scrollviewer-overview.md)
-- [How-to Topics](scrollviewer-how-to-topics.md)
-- [Panels Overview](panels-overview.md)
+- [ScrollViewer](scrollviewer.md)
+- [Panel](panel.md)

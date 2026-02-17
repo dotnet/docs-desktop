@@ -37,4 +37,4 @@ The following example handles the <xref:System.Windows.Controls.Control.MouseDou
 - [Data Binding Overview](../data/index.md)
 - [Styling and Templating](styles-templates-overview.md)
 - [Bind to XML Data Using an XMLDataProvider and XPath Queries](../data/how-to-bind-to-xml-data-using-an-xmldataprovider-and-xpath-queries.md)
-- [ListView Overview](listview-overview.md)
+- [ListView](listview.md)

@@ -49,7 +49,7 @@ The layout pass process is invoked again if any of the following actions occur:
 
 The complexity of the layout process is directly based on the layout behavior of the <xref:System.Windows.Controls.Panel>-derived elements you use. For example, a <xref:System.Windows.Controls.Grid> or <xref:System.Windows.Controls.StackPanel> control provides much more functionality than a <xref:System.Windows.Controls.Canvas> control. The price for this greater increase in functionality is a greater increase in performance costs. However, if you do not require the functionality that a <xref:System.Windows.Controls.Grid> control provides, you should use the less costly alternatives, such as a <xref:System.Windows.Controls.Canvas> or a custom panel.
 
-For more information, see [Panels Overview](../controls/panels-overview.md).
+For more information, see [Panels Overview](../controls/panel.md).
 
 ### Update Rather than Replace a RenderTransform
 

@@ -31,5 +31,5 @@ The following image shows the resulting control, a customizable calendar:
 - <xref:System.Windows.Controls.Grid?displayProperty=nameWithType>
 - <xref:System.Windows.Documents.TableCell?displayProperty=nameWithType>
 - [Painting with Solid Colors and Gradients Overview](../graphics-multimedia/painting-with-solid-colors-and-gradients-overview.md)
-- [Panels Overview](panels-overview.md)
+- [Panel](panel.md)
 - [Table Overview](../advanced/table-overview.md)

@@ -64,5 +64,4 @@ The following example shows how to use the <xref:System.Windows.Controls.ToolTip
 
 - <xref:System.Windows.Controls.ToolTip>
 - <xref:System.Windows.Controls.ToolTipService>
-- [How-to Topics](tooltip-how-to-topics.md)
-- [ToolTip Overview](tooltip-overview.md)
+- [ToolTip](tooltip.md)

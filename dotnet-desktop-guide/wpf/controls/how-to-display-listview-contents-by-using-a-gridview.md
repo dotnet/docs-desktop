@@ -19,14 +19,10 @@ You can define the view mode of a <xref:System.Windows.Controls.GridView> by spe
 
 [!code-xaml[ListViewCode#ListViewEmployee](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewCode/CSharp/Window1.xaml#listviewemployee)]
 
-The following illustration shows how this example appears.
-
-![Screenshot that shows a ListView with GridView output.](./media/gridview-overview/listview-gridview-output.jpg)
-
 ## See also
 
 - <xref:System.Windows.Controls.ListView>
 - <xref:System.Windows.Controls.GridView>
-- [ListView Overview](listview-overview.md)
-- [GridView Overview](gridview-overview.md)
-- [How-to Topics](listview-how-to-topics.md)
+- [ListView](listview.md)
+- [GridView Overview](gridview.md)
+- [ListView](listview.md)

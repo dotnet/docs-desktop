@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page x:Class="AllTemplatesCS.Pages.TreeViewPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AllTemplatesCS.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="400"
+      Width="250"
+      Height="250"
+      Title="TreeViewPage">
+    <Grid Margin="20">
+        <TreeView>
+            <TreeViewItem Header="Documents" IsExpanded="True">
+                <TreeViewItem Header="Work">
+                    <TreeViewItem Header="Project1.docx"/>
+                    <TreeViewItem Header="Project2.docx"/>
+                    <TreeViewItem Header="Presentation.pptx"/>
+                </TreeViewItem>
+                <TreeViewItem Header="Personal">
+                    <TreeViewItem Header="Resume.pdf"/>
+                    <TreeViewItem Header="Photos" IsExpanded="True">
+                        <TreeViewItem Header="Vacation2023.jpg"/>
+                        <TreeViewItem Header="Family.jpg"/>
+                    </TreeViewItem>
+                </TreeViewItem>
+            </TreeViewItem>
+            <TreeViewItem Header="Applications" IsExpanded="True">
+                <TreeViewItem Header="Development">
+                    <TreeViewItem Header="Visual Studio"/>
+                    <TreeViewItem Header="Git"/>
+                    <TreeViewItem Header="Notepad++"/>
+                </TreeViewItem>
+                <TreeViewItem Header="Office">
+                    <TreeViewItem Header="Microsoft Word"/>
+                    <TreeViewItem Header="Microsoft Excel"/>
+                    <TreeViewItem Header="Microsoft PowerPoint"/>
+                </TreeViewItem>
+            </TreeViewItem>
+            <TreeViewItem Header="System Files">
+                <TreeViewItem Header="Windows"/>
+                <TreeViewItem Header="Program Files"/>
+                <TreeViewItem Header="Users"/>
+            </TreeViewItem>
+        </TreeView>
+    </Grid>
+</Page>

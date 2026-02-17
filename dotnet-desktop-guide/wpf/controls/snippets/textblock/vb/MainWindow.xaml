@@ -1,0 +1,80 @@
+<Window x:Class="MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="TextBlock Examples" Height="450" Width="600">
+    <StackPanel Margin="10">
+        
+        <!-- Simple Text Example -->
+        <TextBlock Text="Simple Text Example" FontWeight="Bold" Margin="0,0,0,10"/>
+        <!-- <SimpleText> -->
+        <TextBlock Text="This is simple text." Margin="0,0,0,20"/>
+        <!-- </SimpleText> -->
+        
+        <!-- Inline Formatting Example -->
+        <TextBlock Text="Inline Formatting Example" FontWeight="Bold" Margin="0,0,0,10"/>
+        <!-- <InlineFormatting> -->
+        <TextBlock Margin="0,0,0,20">
+            This text contains <Bold>bold</Bold> and <Italic>italic</Italic> formatting.
+        </TextBlock>
+        <!-- </InlineFormatting> -->
+        
+        <!-- Complex Inline Example -->
+        <TextBlock Text="Complex Inline Example" FontWeight="Bold" Margin="0,0,0,10"/>
+        <!-- <ComplexInline> -->
+        <TextBlock Margin="0,0,0,20">
+            <Run FontWeight="Bold" Foreground="Blue">Welcome</Run>
+            <Run> to </Run>
+            <Span FontFamily="Courier New">
+                <Run>formatted</Run>
+                <Run Foreground="Red"> text</Run>
+            </Span>
+            <Run>!</Run>
+        </TextBlock>
+        <!-- </ComplexInline> -->
+        
+        <!-- Text Wrapping Example -->
+        <TextBlock Text="Text Wrapping Example" FontWeight="Bold" Margin="0,0,0,10"/>
+        <!-- <TextWrapping> -->
+        <TextBlock TextWrapping="Wrap" Width="200" Margin="0,0,0,20">
+            This text will wrap to multiple lines when it reaches the width of 200 pixels.
+        </TextBlock>
+        <!-- </TextWrapping> -->
+        
+        <!-- Typography Example -->
+        <TextBlock Text="Typography Example" FontWeight="Bold" Margin="0,0,0,10"/>
+        <!-- <Typography> -->
+        <TextBlock Typography.Kerning="True" 
+                   Typography.Capitals="SmallCaps"
+                   Margin="0,0,0,20">
+            Typography Features
+        </TextBlock>
+        <!-- </Typography> -->
+        
+        <!-- Hyperlink Example -->
+        <TextBlock Text="Hyperlink Example" FontWeight="Bold" Margin="0,0,0,10"/>
+        <!-- <Hyperlink> -->
+        <TextBlock Margin="0,0,0,20">
+            For more information, visit 
+            <Hyperlink NavigateUri="https://learn.microsoft.com">
+                Microsoft Learn
+            </Hyperlink>.
+        </TextBlock>
+        <!-- </Hyperlink> -->
+        
+        <!-- Hyperlink with Event Example -->
+        <TextBlock Text="Hyperlink with Event Example" FontWeight="Bold" Margin="0,0,0,10"/>
+        <!-- <HyperlinkEvent> -->
+        <TextBlock>
+            <Hyperlink NavigateUri="https://example.com" 
+                       RequestNavigate="Hyperlink_RequestNavigate">
+                Click here
+            </Hyperlink>
+        </TextBlock>
+        <!-- </HyperlinkEvent> -->
+        
+        <!-- Code Examples (not visible in UI) -->
+        <StackPanel x:Name="InlineExamplePanel" Visibility="Collapsed"/>
+        <StackPanel x:Name="TypographyExamplePanel" Visibility="Collapsed"/>
+        
+    </StackPanel>
+</Window>

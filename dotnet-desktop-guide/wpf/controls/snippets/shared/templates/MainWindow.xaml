@@ -6,7 +6,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Window.Resources>
-        
+
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="ExpanderTemplate.xaml" />
@@ -26,24 +26,11 @@
             <MenuItem Style="{DynamicResource MenuItemStyle1}" Header="File" />
         </Menu>
         <Grid Grid.Row="1">
-            <Expander Margin="10"
-                  ExpandDirection="Right"
-                  HorizontalAlignment="Left">
-                <ScrollViewer>
-                    <StackPanel Orientation="Vertical">
-                        <!--My Content is different than this but this shows the problem.-->
-                        <Image Source="winter1.jpg" Height="100" />
-                        <Image Source="winter1.jpg" Height="100" />
-                        <Image Source="winter1.jpg" Height="100" />
-                        <Image Source="winter1.jpg" Height="100" />
-                        <Image Source="winter1.jpg" Height="100" />
-                        <Image Source="winter1.jpg" Height="100" />
-                        <Image Source="winter1.jpg" Height="100" />
-                        <Image Source="winter1.jpg" Height="100" />
-                        <Image Source="winter1.jpg" Height="100" />
-                    </StackPanel>
-                </ScrollViewer>
-            </Expander>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="7*"/>
+                <ColumnDefinition Width="193*"/>
+            </Grid.ColumnDefinitions>
+            <Image Source="/winter1.jpg" Grid.ColumnSpan="2" />
         </Grid>
     </Grid>
 </Window>

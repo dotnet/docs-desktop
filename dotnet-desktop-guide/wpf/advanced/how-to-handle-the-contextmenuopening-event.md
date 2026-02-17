@@ -61,4 +61,4 @@ The final scenario, writing a handler that suppresses a menu totally, is uncommo
 - <xref:System.Windows.Controls.ContextMenu>
 - <xref:System.Windows.FrameworkElement.ContextMenu%2A?displayProperty=nameWithType>
 - [Base Elements Overview](base-elements-overview.md)
-- [ContextMenu Overview](../controls/contextmenu-overview.md)
+- [ContextMenu Overview](../controls/contextmenu.md)

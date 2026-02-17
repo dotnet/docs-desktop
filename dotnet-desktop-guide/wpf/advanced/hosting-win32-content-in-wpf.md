@@ -365,7 +365,7 @@ public partial class Window1 : Window {
 
 Which gives you:
 
-![Screenshot of the WPF app running.](./media/hosting-win32-content-in-wpf/windows-presentation-foundation-application.png)
+![Screenshot of the WPF app running.](./media/hosting-win32-content-in-wpf/windows-presentation-foundation-application.PNG)
 
 ## See also
 

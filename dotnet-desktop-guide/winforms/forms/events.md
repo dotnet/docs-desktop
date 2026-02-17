@@ -106,7 +106,7 @@ When you need to update UI controls from background threads within async operati
 
 # [.NET](#tab/dotnet)
 
-.NET 9 introduced <xref:System.Windows.Forms.Control.InvokeAsync%2A?displayProperty=nameWithType>, which provides async-friendly marshaling to the UI thread. Unlike `Control.Invoke` which **sends** (blocks the calling thread), `Control.InvokeAsync` **posts** (non-blocking) to the UI thread's message queue. For more information about `Control.InvokeAsync`, see [How to make thread-safe calls to controls](../controls/how-to-make-thread-safe-calls.md#).
+.NET 9 introduced <xref:System.Windows.Forms.Control.InvokeAsync%2A?displayProperty=nameWithType>, which provides async-friendly marshaling to the UI thread. Unlike `Control.Invoke` which **sends** (blocks the calling thread), `Control.InvokeAsync` **posts** (non-blocking) to the UI thread's message queue. For more information about `Control.InvokeAsync`, see [How to make thread-safe calls to controls](../controls/how-to-make-thread-safe-calls.md).
 
 **Key advantages of InvokeAsync:**
 

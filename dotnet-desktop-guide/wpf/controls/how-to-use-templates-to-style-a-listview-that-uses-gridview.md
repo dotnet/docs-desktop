@@ -24,7 +24,7 @@ The following example shows how to use these <xref:System.Windows.Style> and <xr
 
 [!code-xaml[ListViewTemplate#GridViewColumnTemplate](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewTemplate/CS/window1.xaml#gridviewcolumntemplate)]
 
-The <xref:System.Windows.Controls.GridViewColumn.HeaderContainerStyle%2A> and <xref:System.Windows.Controls.GridViewColumn.HeaderTemplate%2A> are only two of several properties that you can use to customize column header appearance for a <xref:System.Windows.Controls.GridView> control. For more information, see [GridView Column Header Styles and Templates Overview](gridview-column-header-styles-and-templates-overview.md).
+The <xref:System.Windows.Controls.GridViewColumn.HeaderContainerStyle%2A> and <xref:System.Windows.Controls.GridViewColumn.HeaderTemplate%2A> are only two of several properties that you can use to customize column header appearance for a <xref:System.Windows.Controls.GridView> control. For more information, see [GridView Column Header Styles and Templates Overview](gridview.md).
 
 The following example shows how to define a <xref:System.Windows.DataTemplate> that customizes the appearance of the cells in a <xref:System.Windows.Controls.GridViewColumn>.
 
@@ -38,6 +38,6 @@ The following example shows how to use this <xref:System.Windows.DataTemplate> t
 
 - <xref:System.Windows.Controls.ListView>
 - <xref:System.Windows.Controls.GridView>
-- [GridView Overview](gridview-overview.md)
-- [How-to Topics](listview-how-to-topics.md)
-- [ListView Overview](listview-overview.md)
+- [GridView Overview](gridview.md)
+- [ListView](listview.md)
+- [ListView](listview.md)

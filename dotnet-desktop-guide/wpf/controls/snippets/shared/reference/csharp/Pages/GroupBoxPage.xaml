@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page x:Class="AllTemplatesCS.Pages.GroupBoxPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AllTemplatesCS.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="400"
+      Title="GroupBoxPage">
+    <StackPanel Margin="20" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <GroupBox Header="User Settings" Margin="10" Padding="10" Width="250">
+            <StackPanel>
+                <CheckBox Content="Enable notifications" Margin="5"/>
+                <CheckBox Content="Auto-save documents" IsChecked="True" Margin="5"/>
+                <CheckBox Content="Dark mode" Margin="5"/>
+            </StackPanel>
+        </GroupBox>
+        
+        <GroupBox Header="Connection Options" Margin="10" Padding="10" Width="250">
+            <StackPanel>
+                <RadioButton Content="HTTP" GroupName="Protocol" Margin="5"/>
+                <RadioButton Content="HTTPS" GroupName="Protocol" IsChecked="True" Margin="5"/>
+                <RadioButton Content="FTP" GroupName="Protocol" Margin="5"/>
+            </StackPanel>
+        </GroupBox>
+        
+        <GroupBox Margin="10" Padding="10" Width="250">
+            <GroupBox.Header>
+                <CheckBox Content="Advanced Settings" FontWeight="Bold"/>
+            </GroupBox.Header>
+            <StackPanel>
+                <TextBlock Text="Timeout (seconds):" Margin="5,5,5,0"/>
+                <TextBox Text="30" Margin="5,0,5,5"/>
+                <TextBlock Text="Max connections:" Margin="5,5,5,0"/>
+                <Slider Value="10" Minimum="1" Maximum="20" Margin="5,0,5,5"/>
+            </StackPanel>
+        </GroupBox>
+    </StackPanel>
+</Page>

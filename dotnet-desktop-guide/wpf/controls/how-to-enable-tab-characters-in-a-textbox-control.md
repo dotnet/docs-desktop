@@ -21,5 +21,5 @@ To enable the acceptance of tab characters as input in a <xref:System.Windows.Co
 
 ## See also
 
-- [TextBox Overview](textbox-overview.md)
-- [RichTextBox Overview](richtextbox-overview.md)
+- [TextBox](textbox.md)
+- [RichTextBox Overview](richtextbox.md)
