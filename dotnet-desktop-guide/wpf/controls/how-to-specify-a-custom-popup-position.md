@@ -34,5 +34,4 @@ For the complete sample, see [Popup Placement Sample](https://github.com/dotnet/
 ## See also
 
 - <xref:System.Windows.Controls.Primitives.Popup>
-- [Popup overview](popup-overview.md)
-- [How-to articles](popup-how-to-topics.md)
+- [Popup](popup.md)

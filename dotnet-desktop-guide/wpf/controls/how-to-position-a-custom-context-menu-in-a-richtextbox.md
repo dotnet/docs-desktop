@@ -37,5 +37,5 @@ The following example shows an implementation the corresponding <xref:System.Win
 
 ## See also
 
-- [RichTextBox Overview](richtextbox-overview.md)
-- [TextBox Overview](textbox-overview.md)
+- [RichTextBox Overview](richtextbox.md)
+- [TextBox](textbox.md)

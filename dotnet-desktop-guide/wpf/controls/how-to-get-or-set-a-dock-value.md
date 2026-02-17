@@ -28,4 +28,4 @@ The example creates an instance of the <xref:System.Windows.Controls.TextBlock> 
 - <xref:System.Windows.Controls.DockPanel>
 - <xref:System.Windows.Controls.DockPanel.GetDock%2A>
 - <xref:System.Windows.Controls.DockPanel.SetDock%2A>
-- [Panels Overview](panels-overview.md)
+- [Panel](panel.md)

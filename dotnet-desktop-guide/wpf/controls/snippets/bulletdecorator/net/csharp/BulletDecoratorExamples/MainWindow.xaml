@@ -1,0 +1,28 @@
+﻿<Window x:Class="BulletDecoratorExamples.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="BulletDecorator Examples" Height="300" Width="500">
+    <StackPanel Margin="20">
+        
+        <!-- <CheckBoxBullet> -->
+        <BulletDecorator>
+          <BulletDecorator.Bullet>
+            <CheckBox/>
+          </BulletDecorator.Bullet>
+          <TextBlock Text="This is the content aligned with the bullet"/>
+        </BulletDecorator>
+        <!-- </CheckBoxBullet> -->
+        
+        <Separator Margin="10"/>
+        
+        <!-- <CustomBullet> -->
+        <BulletDecorator>
+          <BulletDecorator.Bullet>
+            <Ellipse Fill="Blue" Width="10" Height="10"/>
+          </BulletDecorator.Bullet>
+          <TextBlock Text="Custom bullet example"/>
+        </BulletDecorator>
+        <!-- </CustomBullet> -->
+        
+    </StackPanel>
+</Window>

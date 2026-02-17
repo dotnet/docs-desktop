@@ -32,4 +32,4 @@ Here is the finished result!
 ## See also
 
 - <xref:System.Windows.Controls.Grid>
-- [Panels Overview](panels-overview.md)
+- [Panel](panel.md)

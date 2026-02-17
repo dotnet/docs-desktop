@@ -40,6 +40,6 @@ For the complete sample, see [Width Properties Comparison Sample](https://github
 - <xref:System.Windows.FrameworkElement.MaxWidth%2A>
 - <xref:System.Windows.FrameworkElement.MinWidth%2A>
 - <xref:System.Windows.FrameworkElement.Width%2A>
-- [Panels Overview](panels-overview.md)
+- [Panel](panel.md)
 - [Set the Height Properties of an Element](how-to-set-the-height-properties-of-an-element.md)
 - [Width Properties Comparison Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Elements/WidthProperties)

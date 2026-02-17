@@ -45,5 +45,5 @@ The default stack direction in a <xref:System.Windows.Controls.StackPanel> is ve
 ## See also
 
 - <xref:System.Windows.Controls.StackPanel>
-- [Panels Overview](panels-overview.md)
-- [How-to Topics](stackpanel-how-to-topics.md)
+- [Panel](panel.md)
+- [StackPanel](stackpanel.md)

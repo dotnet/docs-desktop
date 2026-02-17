@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Page x:Class="AllTemplatesCS.Pages.ExpanderPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AllTemplatesCS.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="400"
+      Title="ExpanderPage">
+    <StackPanel Margin="20" HorizontalAlignment="Center" VerticalAlignment="Center" Width="300">
+        <Expander Header="Expanded by Default" IsExpanded="True" Margin="5">
+            <StackPanel>
+                <TextBlock Text="This is the content inside the expander." Margin="5"/>
+                <Button Content="Sample Button" Margin="5"/>
+                <TextBox Text="Sample TextBox" Margin="5"/>
+            </StackPanel>
+        </Expander>
+        
+        <Expander Header="Collapsed by Default" Margin="5">
+            <TextBlock Text="Click the header to expand this content." Margin="10"/>
+        </Expander>
+        
+        <Expander Margin="5" Background="LightBlue">
+            <Expander.Header>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="📁" FontSize="16" Margin="0,0,5,0"/>
+                    <TextBlock Text="Folder with Icon" FontWeight="Bold"/>
+                </StackPanel>
+            </Expander.Header>
+            <ListBox Margin="10" Height="80">
+                <ListBoxItem Content="File 1.txt"/>
+                <ListBoxItem Content="File 2.doc"/>
+                <ListBoxItem Content="File 3.pdf"/>
+            </ListBox>
+        </Expander>
+    </StackPanel>
+</Page>
