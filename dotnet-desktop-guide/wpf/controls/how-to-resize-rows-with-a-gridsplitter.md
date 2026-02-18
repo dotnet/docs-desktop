@@ -38,4 +38,4 @@ The following example shows how to define a horizontal <xref:System.Windows.Cont
 ## See also
 
 - <xref:System.Windows.Controls.GridSplitter>
-- [How-to Topics](gridsplitter-how-to-topics.md)
+- [How-to Topics](gridsplitter.md)

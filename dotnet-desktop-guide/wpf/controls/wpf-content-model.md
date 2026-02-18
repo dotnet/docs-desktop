@@ -190,7 +190,7 @@ The following classes inherit from the <xref:System.Windows.Controls.Panel> clas
 
 - <xref:System.Windows.Controls.WrapPanel>
 
-For more information, see [Panels Overview](panels-overview.md).
+For more information, see [Panels Overview](panel.md).
 
 <a name="classes_that_affects_the_appearance_of_a_uielement"></a>
 

@@ -101,4 +101,4 @@ For additional information about document formats and presentation options, see 
 - [Documents in WPF](../advanced/documents-in-wpf.md)
 - [How to: Create a Scroll Viewer](/previous-versions/dotnet/netframework-3.5/ms752352(v=vs.90))
 - [Layout](../advanced/layout.md)
-- [Panels Overview](panels-overview.md)
+- [Panels Overview](panel.md)

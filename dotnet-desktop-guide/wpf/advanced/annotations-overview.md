@@ -79,7 +79,7 @@ Another example scenario involves applications that enable the exchange of annot
 - <xref:System.Windows.Controls.FlowDocumentReader>
 - <xref:System.Windows.Annotations.IAnchorInfo>
 - [Annotations Schema](annotations-schema.md)
-- [ContextMenu Overview](../controls/contextmenu-overview.md)
+- [ContextMenu Overview](../controls/contextmenu.md)
 - [Commanding Overview](commanding-overview.md)
 - [Flow Document Overview](flow-document-overview.md)
 - [How to: Add a Command to a MenuItem](/previous-versions/dotnet/netframework-3.5/ms741839(v=vs.90))

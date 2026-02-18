@@ -219,4 +219,4 @@ The example shows that with the use of <xref:System.Windows.HierarchicalDataTemp
 - [Find DataTemplate-Generated Elements](how-to-find-datatemplate-generated-elements.md)
 - [Styling and Templating](../controls/styles-templates-overview.md)
 - [Data Binding Overview](index.md)
-- [GridView Column Header Styles and Templates Overview](../controls/gridview-column-header-styles-and-templates-overview.md)
+- [GridView Column Header Styles and Templates Overview](../controls/gridview.md)
