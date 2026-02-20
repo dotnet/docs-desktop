@@ -17,7 +17,7 @@ ms.assetid: 1b35a80a-edd8-495f-a807-a28c4aae52c6
 
 The process of adding an item to a Windows Forms <xref:System.Windows.Forms.ListView> control consists primarily of specifying the item and assigning properties to it. Adding or removing list items can be done at any time.
 
-### To add items programmatically
+## To add items programmatically
 
 1. Use the <xref:System.Windows.Forms.ListView.ListViewItemCollection.Add%2A> method of the <xref:System.Windows.Forms.ListView.Items%2A> property.
 

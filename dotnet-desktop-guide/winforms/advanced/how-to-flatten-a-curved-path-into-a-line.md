@@ -18,7 +18,7 @@ A <xref:System.Drawing.Drawing2D.GraphicsPath> object stores a sequence of lines
 
 ![Straight Lines and Curves](./media/aboutgdip02-art32a.gif "AboutGdip02_Art32A")
 
-### To Flatten a Path
+## To Flatten a Path
 
 - call the <xref:System.Drawing.Drawing2D.GraphicsPath.Flatten%2A> method of a <xref:System.Drawing.Drawing2D.GraphicsPath> object. The <xref:System.Drawing.Drawing2D.GraphicsPath.Flatten%2A> method receives a flatness argument that specifies the maximum distance between the flattened path and the original path.
 

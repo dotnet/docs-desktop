@@ -29,7 +29,7 @@ There are three basic aspects of formatting the <xref:System.Windows.Forms.DataG
 
 As an initial step in formatting a data grid, you can set the properties of the <xref:System.Windows.Forms.DataGrid> itself. These color and format choices form a base from which you can then make changes depending on the data tables and columns displayed.
 
-### To establish a default style for the DataGrid control
+## To establish a default style for the DataGrid control
 
 1. Set the following properties as appropriate:
 

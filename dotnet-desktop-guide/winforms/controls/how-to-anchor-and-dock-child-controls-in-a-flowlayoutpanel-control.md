@@ -15,7 +15,7 @@ ms.assetid: a2bcdfca-9b63-45e6-9c0e-3411015cba98
 
 The <xref:System.Windows.Forms.FlowLayoutPanel> control supports the <xref:System.Windows.Forms.Control.Anchor%2A> and <xref:System.Windows.Forms.Control.Dock%2A> properties in its child controls.
 
-### To anchor and dock child controls in a FlowLayoutPanel control
+## To anchor and dock child controls in a FlowLayoutPanel control
 
 1. Create a <xref:System.Windows.Forms.FlowLayoutPanel> control on your form.
 

@@ -23,7 +23,7 @@ You can assign renderers to each individual <xref:System.Windows.Forms.ToolStrip
 > [!NOTE]
 > <xref:System.Windows.Forms.ToolStrip.RenderMode%2A> returns <xref:System.Windows.Forms.ToolStripRenderMode.Custom> only if the value of <xref:System.Windows.Forms.ToolStrip.Renderer%2A?displayProperty=nameWithType> is not `null`.
 
-### To create a custom renderer
+## To create a custom renderer
 
 1. Extend the <xref:System.Windows.Forms.ToolStripRenderer> class.
 

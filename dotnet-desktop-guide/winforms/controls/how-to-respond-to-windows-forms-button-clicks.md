@@ -27,7 +27,7 @@ Clicking a <xref:System.Windows.Forms.Button> control also generates a number of
 
 If the user attempts to double-click the <xref:System.Windows.Forms.Button> control, each click will be processed separately; that is, the control does not support the double-click event.
 
-### To respond to a button click
+## To respond to a button click
 
 - In the button's `Click` <xref:System.EventHandler> write the code to run. `Button1_Click` must be bound to the control. For more information, see [How to: Create Event Handlers at Run Time for Windows Forms](how-to-add-an-event-handler.md#handle-an-event-at-runtime).
 

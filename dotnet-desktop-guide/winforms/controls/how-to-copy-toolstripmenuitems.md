@@ -14,7 +14,7 @@ description: Learn how to copy ToolStripMenuItems to top-level and drop-down loc
 
 At design time, you can copy entire top-level menus and their submenu items to a different place on the <xref:System.Windows.Forms.MenuStrip>. You can also copy individual menu items between top-level menus or change the position of menu items within a menu.
 
-### To copy a top-level menu and its submenu items to another top-level location
+## To copy a top-level menu and its submenu items to another top-level location
 
 1. Left-click the menu that you want to copy and press CTRL+C, or right-click the menu and select **Copy** from the shortcut menu.
 

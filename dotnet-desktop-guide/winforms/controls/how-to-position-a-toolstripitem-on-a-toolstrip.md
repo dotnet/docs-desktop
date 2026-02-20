@@ -13,7 +13,7 @@ ms.assetid: 11fd7c5b-ee5c-4993-9a11-89127ff0aa7a
 
 You can move or add a <xref:System.Windows.Forms.ToolStripItem> to the left or right side of a <xref:System.Windows.Forms.ToolStrip>.
 
-### To move or add a ToolStripItem to the left side of a ToolStrip
+## To move or add a ToolStripItem to the left side of a ToolStrip
 
 1. Set the <xref:System.Windows.Forms.ToolStripItemAlignment> property of the <xref:System.Windows.Forms.ToolStripItem> to <xref:System.Windows.Forms.ToolStripItemAlignment.Left>.
 

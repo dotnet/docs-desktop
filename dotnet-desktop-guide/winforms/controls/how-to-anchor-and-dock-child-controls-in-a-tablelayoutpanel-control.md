@@ -20,7 +20,7 @@ description: Learn how to anchor, dock, align, and stretch child controls in a T
 
 The <xref:System.Windows.Forms.TableLayoutPanel> control supports the <xref:System.Windows.Forms.Control.Anchor%2A> and <xref:System.Windows.Forms.Control.Dock%2A> properties in its child controls.
 
-### To align a child control in a TableLayoutPanel cell
+## To align a child control in a TableLayoutPanel cell
 
 1. Create a <xref:System.Windows.Forms.TableLayoutPanel> control on your form.
 

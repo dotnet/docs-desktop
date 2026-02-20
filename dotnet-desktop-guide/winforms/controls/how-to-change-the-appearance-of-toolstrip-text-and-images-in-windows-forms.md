@@ -21,7 +21,7 @@ description: Learn how to change the appearance of ToolStrip text and images, as
 
 You can control whether text and images are displayed on a <xref:System.Windows.Forms.ToolStripItem> and how they are aligned relative to each other and the <xref:System.Windows.Forms.ToolStrip>.
 
-### To define what is displayed on a ToolStripItem
+## To define what is displayed on a ToolStripItem
 
 - Set the <xref:System.Windows.Forms.ToolStripItem.DisplayStyle%2A> property to the desired value. The possibilities are `Image`, `ImageAndText`, `None`, and `Text`. The default is `ImageAndText`.
 

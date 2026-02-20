@@ -20,7 +20,7 @@ ms.assetid: 06a4a191-d918-42af-9f49-956c93eff261
 
 When working with the Windows Forms <xref:System.Windows.Forms.TreeView> control, a common task is to determine which node was clicked, and respond appropriately.
 
-### To determine which TreeView node was clicked
+## To determine which TreeView node was clicked
 
 1. Use the <xref:System.EventArgs> object to return a reference to the clicked node object.
 

@@ -19,7 +19,7 @@ In some applications, the kind of a multiple-document interface (MDI) child wind
 
 The following procedure uses the <xref:System.Windows.Forms.Form.IsMdiContainer%2A>, <xref:System.Windows.Forms.ToolStrip.AllowMerge%2A>, <xref:System.Windows.Forms.MergeAction>, and <xref:System.Windows.Forms.ToolStripItem.MergeIndex%2A> properties to insert a group of menu items from the MDI child menu into the drop-down part of the MDI parent menu. Closing the MDI child window removes the inserted menu items from the MDI parent.
 
-### To insert a MenuStrip into an MDI drop-down menu
+## To insert a MenuStrip into an MDI drop-down menu
 
 1. Create a form and set its <xref:System.Windows.Forms.Form.IsMdiContainer%2A> property to `true`.
 

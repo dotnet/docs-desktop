@@ -20,7 +20,7 @@ By default, ToolTips are used to display the values of <xref:System.Windows.Form
 
 You can also disable the display of cell-level ToolTips by setting the <xref:System.Windows.Forms.DataGridView.ShowCellToolTips%2A?displayProperty=nameWithType> property to `false`.
 
-### To add a ToolTip to a cell
+## To add a ToolTip to a cell
 
 - Set the <xref:System.Windows.Forms.DataGridViewCell.ToolTipText%2A?displayProperty=nameWithType> property.
 

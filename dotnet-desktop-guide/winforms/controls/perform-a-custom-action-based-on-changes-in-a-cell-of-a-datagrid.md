@@ -17,7 +17,7 @@ ms.assetid: 7fa44d01-97f4-4ccb-a149-bc72628d2c36
 
 The <xref:System.Windows.Forms.DataGridView> control has a number of events you can use to detect changes in the state of <xref:System.Windows.Forms.DataGridView> cells. Two of the most commonly used are the <xref:System.Windows.Forms.DataGridView.CellValueChanged> and <xref:System.Windows.Forms.DataGridView.CellStateChanged> events.
 
-### To detect changes in the values of DataGridView cells
+## To detect changes in the values of DataGridView cells
 
 - Write a handler for the <xref:System.Windows.Forms.DataGridView.CellValueChanged> event.
 

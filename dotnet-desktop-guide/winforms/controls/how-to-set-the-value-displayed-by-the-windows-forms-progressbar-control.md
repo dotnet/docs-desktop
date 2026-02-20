@@ -27,7 +27,7 @@ The .NET Framework gives you several different ways to display a given value wit
 
 The most direct way to set the value displayed by a progress bar is by setting the <xref:System.Windows.Forms.ProgressBar.Value%2A> property. This can be done either at design time or at run time.
 
-### To set the ProgressBar value directly
+## To set the ProgressBar value directly
 
 1. Set the <xref:System.Windows.Forms.ProgressBar> control's <xref:System.Windows.Forms.ProgressBar.Minimum%2A> and <xref:System.Windows.Forms.ProgressBar.Maximum%2A> values.
 

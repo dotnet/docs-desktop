@@ -13,7 +13,7 @@ ms.assetid: 55e32cad-1141-4a56-aa33-d9543ca3d393
 
 The following procedure gives the basic steps for setting up automatic merging in a multiple-document interface (MDI) application with <xref:System.Windows.Forms.MenuStrip>.
 
-### To set up automatic menu merging
+## To set up automatic menu merging
 
 1. Create the MDI parent form by setting its <xref:System.Windows.Forms.Form.IsMdiContainer%2A> property to `true`.
 

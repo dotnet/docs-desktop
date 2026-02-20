@@ -25,7 +25,7 @@ In the following example, the <xref:System.Windows.Forms.Control.MouseDown> even
 > [!NOTE]
 > Certain controls have custom drag-specific events. The <xref:System.Windows.Forms.ListView> and <xref:System.Windows.Forms.TreeView> controls, for example, have an <xref:System.Windows.Forms.TreeView.ItemDrag> event.
 
-#### To start a drag operation
+### To start a drag operation
 
 1. In the <xref:System.Windows.Forms.Control.MouseDown> event for the control where the drag will begin, use the `DoDragDrop` method to set the data to be dragged and the allowed effect dragging will have. For more information, see <xref:System.Windows.Forms.DragEventArgs.Data%2A> and <xref:System.Windows.Forms.DragEventArgs.AllowedEffect%2A>.
 
@@ -55,7 +55,7 @@ While a drag operation is in effect, you can handle the <xref:System.Windows.For
 
 Once you have begun dragging data from a location on a Windows Form or control, you will naturally want to drop it somewhere. The cursor will change when it crosses an area of a form or control that is correctly configured for dropping data. Any area within a Windows Form or control can be made to accept dropped data by setting the <xref:System.Windows.Forms.Control.AllowDrop%2A> property and handling the <xref:System.Windows.Forms.Control.DragEnter> and <xref:System.Windows.Forms.Control.DragDrop> events.
 
-#### To perform a drop
+### To perform a drop
 
 1. Set the <xref:System.Windows.Forms.Control.AllowDrop%2A> property to true.
 

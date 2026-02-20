@@ -24,7 +24,7 @@ description: Learn how to define an icon for a ToolBar button by adding images t
 
 <xref:System.Windows.Forms.ToolBar> buttons are able to display icons within them for easy identification by users. This is achieved through adding images to the [ImageList Component](imagelist-component-windows-forms.md) component and then associating the <xref:System.Windows.Forms.ImageList> component with the <xref:System.Windows.Forms.ToolBar> control.
 
-### To set an icon for a toolbar button programmatically
+## To set an icon for a toolbar button programmatically
 
 1. In a procedure, instantiate an <xref:System.Windows.Forms.ImageList> component and a <xref:System.Windows.Forms.ToolBar> control.
 

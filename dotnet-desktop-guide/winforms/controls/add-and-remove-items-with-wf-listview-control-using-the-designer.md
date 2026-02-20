@@ -15,7 +15,7 @@ The process of adding an item to a Windows Forms <xref:System.Windows.Forms.List
 
 The following procedure requires a **Windows Application** project with a form containing a <xref:System.Windows.Forms.ListView> control. For information about setting up such a project, see [How to: Create a Windows Forms application project](/visualstudio/ide/step-1-create-a-windows-forms-application-project) and [How to: Add Controls to Windows Forms](how-to-add-to-a-form.md).
 
-### To add or remove items using the designer
+## To add or remove items using the designer
 
 1. Select the <xref:System.Windows.Forms.ListView> control.
 

@@ -17,7 +17,7 @@ ms.assetid: 0c1c8b40-1b50-4301-a90c-39516775ccb1
 
 If you want your application to enable users to select a date and time, and to display that date and time in the specified format, use the <xref:System.Windows.Forms.DateTimePicker> control. The following procedure shows how to use the <xref:System.Windows.Forms.DateTimePicker> control to display the time.
 
-### To display the time with the DateTimePicker control
+## To display the time with the DateTimePicker control
 
 1. Set the <xref:System.Windows.Forms.DateTimePicker.Format%2A> property to <xref:System.Windows.Forms.DateTimePickerFormat.Time>
 

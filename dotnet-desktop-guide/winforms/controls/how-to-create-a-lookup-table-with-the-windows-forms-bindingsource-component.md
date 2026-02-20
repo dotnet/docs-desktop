@@ -45,7 +45,7 @@ Four important properties are set on the [ComboBox Control](combobox-control-win
 
 The procedures below show you how to lay out your form as a lookup table and bind data to the controls on it. To successfully complete the procedures, you must have a data source with parent and child tables that have a foreign-key relationship, as mentioned previously.
 
-### To create the user interface
+## To create the user interface
 
 1. From the **ToolBox**, drag a <xref:System.Windows.Forms.ComboBox> control onto the form.
 
