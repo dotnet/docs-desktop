@@ -17,7 +17,7 @@ A <xref:System.Windows.Forms.ToolStripContainer> has panels on its left, right, 
 
 Any or all <xref:System.Windows.Forms.ToolStripContainer> controls are directly selectable at design time and can be deleted. Each panel of a <xref:System.Windows.Forms.ToolStripContainer> is expandable and collapsible, and resizes with the controls that it contains.
 
-### Important ToolStripContainer Members
+## Important ToolStripContainer Members
 
 |Name|Description|
 |----------|-----------------|

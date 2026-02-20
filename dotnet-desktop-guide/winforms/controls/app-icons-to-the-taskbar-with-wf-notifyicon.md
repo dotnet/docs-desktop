@@ -24,7 +24,7 @@ The Windows Forms <xref:System.Windows.Forms.NotifyIcon> component displays a si
 > [!NOTE]
 > The <xref:System.Windows.Forms.NotifyIcon> component is used for notification purposes only, to alert users that an action or event has occurred or there has been a change in status of some sort. You should use menus, toolbars, and other user-interface elements for standard interaction with applications.
 
-### To set the icon
+## To set the icon
 
 1. Assign a value to the <xref:System.Windows.Forms.NotifyIcon.Icon%2A> property. The value must be of type `System.Drawing.Icon` and can be loaded from an .ico file. You can specify the icon file in code or by clicking the ellipsis button (![The Ellipsis button (...) in the Properties window of Visual Studio.](./media/visual-studio-ellipsis-button.png)) next to the <xref:System.Windows.Forms.NotifyIcon.Icon%2A> property in the **Properties** window, and then selecting the file in the **Open** dialog box that appears.
 

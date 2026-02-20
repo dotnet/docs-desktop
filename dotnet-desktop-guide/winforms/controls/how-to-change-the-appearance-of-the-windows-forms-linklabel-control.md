@@ -20,7 +20,7 @@ description: Learn how to change the appearance of the Windows Forms LinkLabel c
 
 You can change the text displayed by the <xref:System.Windows.Forms.LinkLabel> control to suit a variety of purposes. For example, it is common practice to indicate to the user that text can be clicked by setting the text to appear in a specific color with an underline. After the user clicks the text, the color changes to a different color. To control this behavior, you can set five different properties: the <xref:System.Windows.Forms.LinkLabel.LinkBehavior%2A>, <xref:System.Windows.Forms.LinkLabel.LinkArea%2A>, <xref:System.Windows.Forms.LinkLabel.LinkColor%2A>, <xref:System.Windows.Forms.LinkLabel.VisitedLinkColor%2A>, and <xref:System.Windows.Forms.LinkLabel.LinkVisited%2A> properties.
 
-### To change the appearance of a LinkLabel control
+## To change the appearance of a LinkLabel control
 
 1. Set the <xref:System.Windows.Forms.LinkLabel.LinkColor%2A> and <xref:System.Windows.Forms.LinkLabel.VisitedLinkColor%2A> properties to the colors you want.
 

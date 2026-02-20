@@ -19,7 +19,7 @@ ms.assetid: aaac1b38-c651-495a-8d3d-5a9bfb32fee3
 
 You display a dialog box in the same way you display any other form in an application. The startup form loads automatically when the application is run. To make a second form or dialog box appear in the application, write code to load and display it. Similarly, to make the form or dialog box disappear, write code to unload or hide it.
 
-### To display a dialog box
+## To display a dialog box
 
 1. Navigate to the event handler with which you want to open the dialog box. This can happen when a menu command is selected, when a button is clicked, or when any other event occurs.
 

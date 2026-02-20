@@ -21,7 +21,7 @@ description: Learn how to create master/detail lists with the Windows Forms Data
 
 If your <xref:System.Data.DataSet> contains a series of related tables, you can use two <xref:System.Windows.Forms.DataGrid> controls to display the data in a master/detail format. One <xref:System.Windows.Forms.DataGrid> is designated to be the master grid, and the second is designated to be the details grid. When you select an entry in the master list, all of the related child entries are shown in the details list. For example, if your <xref:System.Data.DataSet> contains a Customers table and a related Orders table, you would specify the Customers table to be the master grid and the Orders table to be the details grid. When a customer is selected from the master grid, all of the orders associated with that customer in the Orders table would be displayed in the details grid.
 
-### To set a master/detail relationship programmatically
+## To set a master/detail relationship programmatically
 
 1. Create two new <xref:System.Windows.Forms.DataGrid> controls and set their properties.
 

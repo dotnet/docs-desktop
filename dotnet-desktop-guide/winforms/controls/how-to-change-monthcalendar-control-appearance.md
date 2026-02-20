@@ -17,7 +17,7 @@ description: Learn how to change the Windows Forms MonthCalendar control's appea
 
 The Windows Forms <xref:System.Windows.Forms.MonthCalendar> control allows you to customize the calendar's appearance in many ways. For example, you can set the color scheme and choose to display or hide week numbers and the current date.
 
-### To change the month calendar's color scheme
+## To change the month calendar's color scheme
 
 - Set properties such as <xref:System.Windows.Forms.MonthCalendar.TitleBackColor%2A>, <xref:System.Windows.Forms.MonthCalendar.TitleForeColor%2A> and <xref:System.Windows.Forms.MonthCalendar.TrailingForeColor%2A>. The <xref:System.Windows.Forms.MonthCalendar.TitleBackColor%2A> property also determines the font color for the days of the week. The <xref:System.Windows.Forms.MonthCalendar.TrailingForeColor%2A> property determines the color of the dates that precede and follow the displayed month or months.
 

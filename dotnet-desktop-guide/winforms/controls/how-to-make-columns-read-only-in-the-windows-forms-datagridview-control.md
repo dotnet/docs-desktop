@@ -18,7 +18,7 @@ Not all data is meant for editing. In the <xref:System.Windows.Forms.DataGridVie
 
 There is support for this task in Visual Studio.  Also see [How to: Make Columns Read-Only in the Windows Forms DataGridView Control Using the Designer](make-columns-read-only-in-the-datagrid-using-the-designer.md).
 
-### To make a column read-only programmatically
+## To make a column read-only programmatically
 
 - Set the <xref:System.Windows.Forms.DataGridViewColumn.ReadOnly%2A?displayProperty=nameWithType> property to `true`.
 

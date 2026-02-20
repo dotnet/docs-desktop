@@ -13,7 +13,7 @@ description: Learn how to change the value of an existing setting at design time
 
 You can use Visual Studio to edit the values of existing settings in your project.
 
-### To Change the Value of an Existing Setting at Design Time in C\#
+## To Change the Value of an Existing Setting at Design Time in C\#
 
 1. In **Solution Explorer**, expand the **Properties** node of your project.
 

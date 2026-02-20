@@ -21,7 +21,7 @@ When using the <xref:System.Windows.Controls.DataGrid> control, you can customiz
 
 You define the row details template as either inline XAML or as a resource. Both approaches are shown in the following procedures. A data template that is added as a resource can be used throughout the project without re-creating the template. A data template that is added as inline XAML is only accessible from the control where it is defined.
 
-### To display row details by using inline XAML
+## To display row details by using inline XAML
 
 1. Create a <xref:System.Windows.Controls.DataGrid> that displays data from a data source.
 

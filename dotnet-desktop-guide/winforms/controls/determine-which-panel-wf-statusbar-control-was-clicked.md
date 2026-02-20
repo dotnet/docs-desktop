@@ -27,7 +27,7 @@ To program the [StatusBar Control](statusbar-control-windows-forms.md) control t
 > [!NOTE]
 > Ensure that the <xref:System.Windows.Forms.StatusBar> control's <xref:System.Windows.Forms.StatusBar.ShowPanels%2A> property is set to `true`.
 
-### To determine which panel was clicked
+## To determine which panel was clicked
 
 1. In the <xref:System.Windows.Forms.StatusBar.PanelClick> event handler, use a `Select Case` (in Visual Basic) or `switch case` (Visual C# or Visual C++) statement to determine which panel was clicked by examining the index of the clicked panel in the event arguments.
 

@@ -22,7 +22,7 @@ With the <xref:System.Windows.Forms.DataGridView> control, you can customize the
 > [!NOTE]
 > The gridline color is used only with the <xref:System.Windows.Forms.DataGridViewCellBorderStyle.Single>, <xref:System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal>, and <xref:System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical> values of the <xref:System.Windows.Forms.DataGridViewCellBorderStyle> enumeration and the <xref:System.Windows.Forms.DataGridViewHeaderBorderStyle.Single> value of the <xref:System.Windows.Forms.DataGridViewHeaderBorderStyle> enumeration. The other values of these enumerations use colors specified by the operating system. Additionally, when visual styles are enabled on Windows XP and the Windows Server 2003 family through the <xref:System.Windows.Forms.Application.EnableVisualStyles%2A?displayProperty=nameWithType> method, the <xref:System.Windows.Forms.DataGridView.GridColor%2A> property value is not used.
 
-### To change the gridline color programmatically
+## To change the gridline color programmatically
 
 - Set the <xref:System.Windows.Forms.DataGridView.GridColor%2A> property.
 

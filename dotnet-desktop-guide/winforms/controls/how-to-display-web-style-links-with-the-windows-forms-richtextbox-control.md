@@ -18,7 +18,7 @@ ms.assetid: 95089a37-a202-4f7a-94ee-6ee312908851
 
 The Windows Forms <xref:System.Windows.Forms.RichTextBox> control can display Web links as colored and underlined. You can write code that opens a browser window showing the Web site specified in the link text when the link is clicked.
 
-### To link to a Web page with the RichTextBox control
+## To link to a Web page with the RichTextBox control
 
 1. Set the <xref:System.Windows.Forms.RichTextBox.Text%2A> property to a string that includes a valid URL (for example, `https://www.microsoft.com/`).
 

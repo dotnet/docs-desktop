@@ -27,7 +27,7 @@ Tasks illustrated in this walkthrough include:
 
 ## Creating the Project and Adding a Control
 
-#### To add a MaskedTextBox control to your form
+### To add a MaskedTextBox control to your form
 
 1. Open the form on which you want to place the <xref:System.Windows.Forms.MaskedTextBox> control.
 
@@ -43,7 +43,7 @@ For a summary of the characters that the Mask property supports, see the Remarks
 
 ## Alert the User to Input Errors
 
-#### Add a balloon tip for rejected mask input
+### Add a balloon tip for rejected mask input
 
 1. Return to the **Toolbox** and add a <xref:System.Windows.Forms.ToolTip> to your form.
 
@@ -78,7 +78,7 @@ For a summary of the characters that the Mask property supports, see the Remarks
 
 ## Alert the User to a Type that Is Not Valid
 
-#### Add a balloon tip for invalid data types
+### Add a balloon tip for invalid data types
 
 1. In your form's <xref:System.Windows.Forms.Form.Load> event handler, assign a <xref:System.Type> object representing the <xref:System.DateTime> type to the <xref:System.Windows.Forms.MaskedTextBox> control's <xref:System.Windows.Forms.MaskedTextBox.ValidatingType%2A> property:
 

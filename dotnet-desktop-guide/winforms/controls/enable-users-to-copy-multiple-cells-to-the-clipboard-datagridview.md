@@ -22,7 +22,7 @@ You can configure cell copying to copy cell values only, to include row and colu
 
 Depending on the selection mode, users can select multiple disconnected groups of cells. When a user copies cells to the Clipboard, rows and columns with no selected cells are not copied. All other rows or columns become rows and columns in the table of data copied to the Clipboard. Unselected cells in these rows or columns are copied as blank placeholders to the Clipboard.
 
-### To enable cell copying
+## To enable cell copying
 
 - Set the <xref:System.Windows.Forms.DataGridView.ClipboardCopyMode%2A?displayProperty=nameWithType> property.
 

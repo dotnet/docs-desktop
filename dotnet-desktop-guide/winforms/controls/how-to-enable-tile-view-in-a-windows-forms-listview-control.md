@@ -25,7 +25,7 @@ The tile view uses a 32 x 32 pixel icon and several lines of text, as shown in t
 
 To enable tile view, set the <xref:System.Windows.Forms.ListView.View%2A> property to <xref:System.Windows.Forms.View.Tile>. You can adjust the size of the tiles by setting the <xref:System.Windows.Forms.ListView.TileSize%2A> property, and the number of text lines displayed in the tile by adjusting the <xref:System.Windows.Forms.ListView.Columns%2A> collection.
 
-### To set tile view programmatically
+## To set tile view programmatically
 
 1. Use the <xref:System.Windows.Forms.View> enumeration of the <xref:System.Windows.Forms.ListView> control.
 

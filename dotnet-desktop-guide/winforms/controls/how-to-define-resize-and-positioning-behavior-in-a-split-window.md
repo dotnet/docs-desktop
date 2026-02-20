@@ -27,7 +27,7 @@ The <xref:System.Windows.Forms.SplitContainer.SplitterIncrement%2A> property and
 
 The example below modifies the <xref:System.Windows.Forms.SplitContainer.SplitterIncrement%2A> property to create a "snapping splitter" effect; when the user drags the splitter, it increments in units of 10 pixels rather than the default 1.
 
-### To define SplitContainer resize behavior
+## To define SplitContainer resize behavior
 
 1. In a procedure, set the <xref:System.Windows.Forms.SplitContainer.SplitterIncrement%2A> property to the desired size, so that the 'snapping' behavior of the splitter is achieved.
 

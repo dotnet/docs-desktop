@@ -21,7 +21,7 @@ ms.assetid: 2fe661b9-aa06-49b9-a314-a0d3cbfdcb4d
 
 You can display data in the Windows Forms <xref:System.Windows.Forms.DataGrid> control in tables and columns by creating **DataGridTableStyle** objects and adding them to the **GridTableStylesCollection** object, which is accessed through the <xref:System.Windows.Forms.DataGrid> control's **TableStyles** property. Each table style displays the contents of whatever data table is specified in the **DataGridTableStyle** object's **MappingName** property. By default, a table style with no column styles specified will display all the columns within that data table. You can restrict which columns from the table appear by adding **DataGridColumnStyle** objects to the **GridColumnStylesCollection** object, which is accessed through the **GridColumnStyles** property of each **DataGridTableStyle** object.
 
-### To add a table and column to a DataGrid programmatically
+## To add a table and column to a DataGrid programmatically
 
 1. In order to display data in the table, you must first bind the <xref:System.Windows.Forms.DataGrid> control to a dataset. For more information, see [How to: Bind the Windows Forms DataGrid Control to a Data Source](how-to-bind-the-windows-forms-datagrid-control-to-a-data-source.md).
 

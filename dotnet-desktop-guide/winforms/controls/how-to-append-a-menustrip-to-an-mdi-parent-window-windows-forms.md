@@ -21,7 +21,7 @@ The following procedure uses the <xref:System.Windows.Forms.Form.IsMdiContainer%
 
 Also see [Multiple-Document Interface (MDI) Applications](../advanced/multiple-document-interface-mdi-applications.md).
 
-### To append a menu item to an MDI parent
+## To append a menu item to an MDI parent
 
 1. Create a form and set its <xref:System.Windows.Forms.Form.IsMdiContainer%2A> property to `true`.
 

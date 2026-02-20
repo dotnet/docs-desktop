@@ -18,7 +18,7 @@ Use the multiple-document interface (MDI) to create applications that can open s
 
 This procedure shows you how to create a list of all the active child forms on the parent's Window menu.
 
-### To create an MDI Window list on a MenuStrip
+## To create an MDI Window list on a MenuStrip
 
 1. Create a form and set its <xref:System.Windows.Forms.Form.IsMdiContainer%2A> property to `true`.
 

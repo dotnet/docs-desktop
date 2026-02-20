@@ -14,7 +14,7 @@ ms.assetid: cdeb42e1-86e8-410c-ba46-18aec264ef5f
 
 By default, the Windows Forms <xref:System.Windows.Forms.RichTextBox> control displays horizontal and vertical scroll bars as necessary. There are seven possible values for the <xref:System.Windows.Forms.RichTextBox.ScrollBars%2A> property of the <xref:System.Windows.Forms.RichTextBox> control, which are described in the table below.
 
-### To display scroll bars in a RichTextBox control
+## To display scroll bars in a RichTextBox control
 
 1. Set the <xref:System.Windows.Forms.RichTextBox.Multiline%2A> property to `true`. No type of scroll bar, including horizontal, will display if the <xref:System.Windows.Forms.RichTextBox.Multiline%2A> property is set to `false`.
 

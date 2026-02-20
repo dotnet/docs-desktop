@@ -20,7 +20,7 @@ Just as tiles can be placed next to each other to cover a floor, rectangular ima
 
 The wrap mode property of the <xref:System.Drawing.TextureBrush> object determines how the image is oriented as it is repeated in a rectangular grid. You can make all the tiles in the grid have the same orientation, or you can make the image flip from one grid position to the next. The flipping can be horizontal, vertical, or both. The following examples demonstrate tiling with different types of flipping.
 
-### To tile an image
+## To tile an image
 
 - This example uses the following 75×75 image to tile a 200×200 rectangle.
 
