@@ -1,6 +1,6 @@
 ---
 title: "Create a Windows Forms app tutorial"
-description: Learn how to create a Windows Forms (winforms) app with Visual Studio 2026 in this step-by-step tutorial. Start building your first app today!
+description: Learn how to create a Windows Forms (WinForms) app with Visual Studio 2026 in this step-by-step tutorial. Start building your first app today!
 ms.date: 02/26/2026
 ms.service: dotnet-desktop
 ms.update-cycle: 365-days
