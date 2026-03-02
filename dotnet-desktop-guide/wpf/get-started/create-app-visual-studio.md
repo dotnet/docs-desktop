@@ -1,5 +1,5 @@
 ---
-title: "Create a new app with Visual Studio tutorial"
+title: "Create a WPF app with Visual Studio tutorial"
 description: Learn how to create a WPF app with Visual Studio 2026 in this step-by-step tutorial. Start building your first app today!
 ms.date: 12/18/2025
 ms.service: dotnet-desktop

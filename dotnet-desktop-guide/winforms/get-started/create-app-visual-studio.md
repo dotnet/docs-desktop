@@ -1,7 +1,7 @@
 ---
-title: "Create a new app with Visual Studio tutorial"
-description: Learn how to create a Windows Forms app with Visual Studio 2026 in this step-by-step tutorial. Start building your first app today!
-ms.date: 12/18/2025
+title: "Create a Windows Forms app tutorial"
+description: Learn how to create a Windows Forms (WinForms) app with Visual Studio 2026 in this step-by-step tutorial. Start building your first app today!
+ms.date: 02/26/2026
 ms.service: dotnet-desktop
 ms.update-cycle: 365-days
 ms.topic: tutorial
@@ -13,7 +13,7 @@ dev_langs:
 
 # Tutorial: Create a Windows Forms app by using .NET
 
-In this tutorial, you learn how to use Visual Studio to create a Windows Forms app. By using Visual Studio, you add controls to a form and handle events. By the end of this tutorial, you have a simple app that adds names to a list box.
+In this tutorial, you learn how to use Visual Studio to create a Windows Forms app. Visual Studio provides a visual designer for you to add controls and handle events. By the end of this tutorial, you have a simple app that adds names to a list box.
 
 In this tutorial, you:
 
@@ -64,7 +64,7 @@ After Visual Studio generates the app, it opens the designer window for the defa
 
 ### Enable the Toolbox and Properties windows
 
-By default, Visual Studio doesn't open the Toolbox and Properties windows. Visual Studio does remember that you opened these windows and keeps them open in the future.
+By default, Visual Studio doesn't open the Toolbox and Properties windows. Visual Studio remembers when you open these windows and keeps them open in the future.
 
 To open the windows:
 
