@@ -21,7 +21,7 @@ For the most part, automatic scaling works as expected in Windows Forms. However
 
 ## DPI awareness in .NET
 
-Unlike .NET Framework, in .NET (6.0+) DPI scaling is handled differently. In .NET 6 and later versions, DPI awareness is configured through the project file using the `ApplicationHighDpiMode` property, which is set to `SystemAware` by default. This configuration works with the application bootstrap system to automatically configure DPI handling when your application starts.
+DPI awareness is configured through the project file using the `ApplicationHighDpiMode` property, which is set to `SystemAware` by default. This configuration works with the application bootstrap system to automatically configure DPI handling when your application starts.
 
 The default and recommended DPI mode for Windows Forms applications is `SystemAware`. This mode queries for the DPI setting once at application startup and uses that value throughout the application's lifetime, providing consistent scaling behavior.
 
@@ -115,7 +115,7 @@ For more information about high DPI improvements, see [What's new in Windows For
 
 ## .NET Framework differences
 
-Unlike .NET Framework, .NET handles DPI awareness differently:
+.NET Framework and .NET handle DPI awareness differently:
 
 - In .NET Framework, configure DPI awareness through an *app.config* file with the `<System.Windows.Forms.ApplicationConfigurationSection>` element.
 - In .NET, configure DPI awareness through the project file with the `ApplicationHighDpiMode` property.
