@@ -19,11 +19,11 @@ Automatic scaling lets a form and its controls, designed on one machine with a c
 
 For the most part, automatic scaling works as expected in Windows Forms. However, font scheme changes can be problematic. For an example of how to resolve this issue, see [How to: Respond to Font Scheme Changes in a Windows Forms Application](../how-to-respond-to-font-scheme-changes-in-a-windows-forms-application.md).
 
-## DPI awareness in modern .NET
+## DPI awareness in .NET
 
-Modern .NET (6.0+) handles DPI scaling differently than .NET Framework. In .NET 6 and later versions, DPI awareness is configured through the project file using the `ApplicationHighDpiMode` property, which is set to `SystemAware` by default. This configuration works with the application bootstrap system to automatically configure DPI handling when your application starts.
+Unlike .NET Framework, in .NET (6.0+) DPI scaling is handled differently. In .NET 6 and later versions, DPI awareness is configured through the project file using the `ApplicationHighDpiMode` property, which is set to `SystemAware` by default. This configuration works with the application bootstrap system to automatically configure DPI handling when your application starts.
 
-The default and recommended DPI mode for modern Windows Forms applications is `SystemAware`. This mode queries for the DPI setting once at application startup and uses that value throughout the application's lifetime, providing consistent scaling behavior.
+The default and recommended DPI mode for Windows Forms applications is `SystemAware`. This mode queries for the DPI setting once at application startup and uses that value throughout the application's lifetime, providing consistent scaling behavior.
 
 Configure DPI mode in your project file:
 
@@ -101,7 +101,7 @@ Windows Forms uses the following logic to automatically scale forms and their co
 
 ## High DPI improvements
 
-Modern .NET includes significant improvements to high DPI rendering, especially with `PerMonitorV2` mode:
+.NET includes significant improvements to high DPI rendering, especially with `PerMonitorV2` mode:
 
 - **Per-monitor DPI awareness**—Applications dynamically adjust when moved between monitors with different DPI settings.
 - **Improved scaling behavior**—Controls scale correctly when DPI changes, including nested controls and container controls (.NET 6+).
@@ -115,12 +115,12 @@ For more information about high DPI improvements, see [What's new in Windows For
 
 ## .NET Framework differences
 
-.NET Framework handles DPI awareness differently than modern .NET:
+Unlike .NET Framework, .NET handles DPI awareness differently:
 
 - In .NET Framework, configure DPI awareness through an *app.config* file with the `<System.Windows.Forms.ApplicationConfigurationSection>` element.
-- In modern .NET, configure DPI awareness through the project file with the `ApplicationHighDpiMode` property.
+- In .NET, configure DPI awareness through the project file with the `ApplicationHighDpiMode` property.
 - .NET Framework uses manifest files for DPI configuration, which is no longer recommended.
-- Modern .NET provides better scaling behavior and more reliable DPI change handling.
+- .NET provides better scaling behavior and more reliable DPI change handling.
 
 For information about .NET Framework DPI configuration, see [High DPI support in Windows Forms](../high-dpi-support-in-windows-forms.md).
 
