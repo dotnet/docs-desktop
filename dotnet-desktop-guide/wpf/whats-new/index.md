@@ -15,7 +15,7 @@ Each .NET release introduces a new version of Windows Presentation Foundation (W
 
 This section describes the main changes to WPF for .NET 11 Preview 2.
 
-- [Overview of WPF on .NET 11](net110.md)
+- [Overview of WPF on .NET 11 Preview 2](net110.md)
 - [Bug fixes](net110.md#bug-fixes)
 
 ## .NET 10
