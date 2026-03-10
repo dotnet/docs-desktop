@@ -1,7 +1,7 @@
 ---
 title: What's new in Windows Forms
-description: Learn about what's new in Windows Forms. This article covers changes to Windows Forms from .NET 5 to .NET 11 Preview 1.
-ms.date: 02/10/2026
+description: Learn about what's new in Windows Forms. This article covers changes to Windows Forms from .NET 5 to .NET 11 Preview 2.
+ms.date: 03/10/2026
 ms.service: dotnet-desktop
 ms.update-cycle: 365-days
 ms.topic: whats-new
@@ -12,11 +12,11 @@ ai-usage: ai-assisted
 
 Each .NET release introduces a new version of Windows Forms (WinForms). This article gives you a summery of what's new in each release.
 
-## .NET 11 Preview 1
+## .NET 11 Preview 2
 
-This section describes the main changes to WinForms for .NET 11 Preview 1.
+This section describes the main changes to WinForms for .NET 11 Preview 2.
 
-- Windows Forms didn't have any notable updates in .NET 11 Preview 1.
+- [Overview of Windows Forms on .NET 11 Preview 2](net110.md)
 
 ## .NET 10
 
