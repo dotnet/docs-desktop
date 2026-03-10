@@ -10,7 +10,7 @@ ai-usage: ai-assisted
 
 # What's new in Windows Forms
 
-Each .NET release introduces a new version of Windows Forms (WinForms). This article gives you a summery of what's new in each release.
+Each .NET release introduces a new version of Windows Forms (WinForms). This article gives you a summary of what's new in each release.
 
 ## .NET 11 Preview 2
 
