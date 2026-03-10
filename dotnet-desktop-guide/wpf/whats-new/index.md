@@ -5,6 +5,7 @@ ms.date: 03/03/2026
 ms.service: dotnet-desktop
 ms.update-cycle: 365-days
 ms.topic: whats-new
+ai-usage: ai-assisted
 ---
 
 # What's new in Windows Presentation Foundation
