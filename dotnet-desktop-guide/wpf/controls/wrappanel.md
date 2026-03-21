@@ -1,7 +1,7 @@
 ---
 title: "WrapPanel"
 description: The WrapPanel element positions child elements in sequential position from left to right, breaking content to the next line at the edge of its containing box.
-ms.date: "03/30/2017"
+ms.date: 03/20/2026
 ms.service: dotnet-desktop
 ms.update-cycle: 365-days
 f1_keywords:

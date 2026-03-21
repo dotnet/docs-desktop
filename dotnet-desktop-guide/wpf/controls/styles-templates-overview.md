@@ -3,7 +3,7 @@ title: Styles and templates
 description: Learn about XAML resources in Windows Presentation Foundation (WPF) for .NET. Understand the types of XAML resources related to styles and themes.
 author: adegeo
 ms.author: adegeo
-ms.date: 10/22/2024
+ms.date: 03/20/2026
 ms.service: dotnet-desktop
 ms.update-cycle: 365-days
 ms.topic: overview
@@ -16,7 +16,7 @@ dev_langs:
 
 # What are styles and templates?
 
-Windows Presentation Foundation (WPF) styling and templating refer to a suite of features that let developers and designers create visually compelling effects and a consistent appearance for their product. When customizing the appearance of an app, you want a strong styling and templating model that enables maintenance and sharing of appearance within and among apps. WPF provides that model.
+Windows Presentation Foundation (WPF) styling and templating refer to a suite of features that you use to create visually compelling effects and a consistent appearance for your product. When you customize the appearance of an app, you want a strong styling and templating model that enables you to maintain and share appearance within and among apps. WPF provides that model.
 
 Another feature of the WPF styling model is the separation of presentation and logic. Designers can work on the appearance of an app by using only XAML at the same time that developers work on the programming logic by using C# or Visual Basic.
 
@@ -38,13 +38,13 @@ For the complete sample, see [Introduction to Styling and Templating Sample](htt
 
 You can think of a <xref:System.Windows.Style> as a convenient way to apply a set of property values to multiple elements. You can use a style on any element that derives from <xref:System.Windows.FrameworkElement> or <xref:System.Windows.FrameworkContentElement> such as a <xref:System.Windows.Window> or a <xref:System.Windows.Controls.Button>.
 
-The most common way to declare a style is as a resource in the `Resources` section in a XAML file. Because styles are resources, they obey the same scoping rules that apply to all resources. Put simply, where you declare a style affects where the style can be applied. For example, if you declare the style in the root element of your app definition XAML file, the style can be used anywhere in your app.
+The most common way to declare a style is as a resource in the `Resources` section in a XAML file. Because styles are resources, they follow the same scoping rules as all resources. Where you declare a style affects where you can apply it. For example, if you declare the style in the root element of your app definition XAML file, you can use the style anywhere in your app.
 
-For example, the following XAML code declares two styles for a `TextBlock`, one automatically applied to all `TextBlock` elements, and another that must be explicitly referenced.
+The following XAML code declares two styles for a `TextBlock`: one automatically applied to all `TextBlock` elements, and another that must be explicitly referenced.
 
 :::code language="xaml" source="./snippets/styles-templates-overview/csharp/Window2.xaml" id="SnippetDefaultTextBlockStyleBasedOn":::
 
-Here is an example of the styles declared above being used.
+The following example shows how to use the preceding styles.
 
 :::code language="xaml" source="./snippets/styles-templates-overview/csharp/Window2.xaml" id="SnippetTextBlocksExplicit":::
 
@@ -54,16 +54,16 @@ For more information, see [Create a style for a control](how-to-create-apply-sty
 
 ## ControlTemplates
 
-In WPF, the <xref:System.Windows.Controls.ControlTemplate> of a control defines the appearance of the control. You can change the structure and appearance of a control by defining a new <xref:System.Windows.Controls.ControlTemplate> and assigning it to a control. In many cases, templates give you enough flexibility so that you do not have to write your own custom controls.
+In WPF, the <xref:System.Windows.Controls.ControlTemplate> of a control defines the appearance of the control. You can change the structure and appearance of a control by defining a new <xref:System.Windows.Controls.ControlTemplate> and assigning it to a control. In many cases, templates give you enough flexibility so that you don't have to write your own custom controls.
 
 Each control has a default template assigned to the [Control.Template](xref:System.Windows.Controls.Control.Template) property. The template connects the visual presentation of the control with the control's capabilities. Because you define a template in XAML, you can change the control's appearance without writing any code. Each template is designed for a specific control, such as a <xref:System.Windows.Controls.Button>.
 
 > [!IMPORTANT]
-> When you change the visual tree of a control, you must replace the entire <xref:System.Windows.Controls.ControlTemplate>. There is no way to replace only part of the visual tree of a control. To change the visual tree of a control, you must set the <xref:System.Windows.Controls.Control.Template%2A> property of the control to its new and complete <xref:System.Windows.Controls.ControlTemplate>.
+> When you change the visual tree of a control, you must replace the entire <xref:System.Windows.Controls.ControlTemplate>. There's no way to replace only part of the visual tree of a control. To change the visual tree of a control, you must set the <xref:System.Windows.Controls.Control.Template%2A> property of the control to its new and complete <xref:System.Windows.Controls.ControlTemplate>.
 
-Commonly you declare a template as a resource on the `Resources` section of a XAML file. As with all resources, scoping rules apply.
+Commonly you declare a template as a resource in the `Resources` section of a XAML file. As with all resources, scoping rules apply.
 
-Control templates are a lot more involved than a style. This is because the control template rewrites the visual appearance of the entire control, while a style simply applies property changes to the existing control. However, since the template of a control is applied by setting the [Control.Template](xref:System.Windows.Controls.Control.Template) property, you can use a style to define or set a template.
+Control templates are a lot more involved than a style. This complexity exists because the control template rewrites the visual appearance of the entire control, while a style simply applies property changes to the existing control. However, since the template of a control is applied by setting the [Control.Template](xref:System.Windows.Controls.Control.Template) property, you can use a style to define or set a template.
 
 Designers generally allow you to create a copy of an existing template and modify it. For example, in the Visual Studio WPF designer, select a `CheckBox` control, and then right-click and select **Edit template** > **Create a copy**. This command generates a *style that defines a template*.
 
@@ -104,25 +104,25 @@ For an example, see [Create a template for a control](how-to-create-apply-templa
 
 ### TemplateBinding
 
-You may have noticed that the template resource defined in the previous section uses the [TemplateBinding Markup Extension](../advanced/templatebinding-markup-extension.md). A `TemplateBinding` is an optimized form of a binding for template scenarios, analogous to a binding constructed with `{Binding RelativeSource={RelativeSource TemplatedParent}}`. `TemplateBinding` is useful for binding parts of the template to properties of the control. For example, each control has a <xref:System.Windows.Controls.Control.BorderThickness> property. Use a `TemplateBinding` to manage which element in the template is affected by this control setting.
+You might notice that the template resource defined in the previous section uses the [TemplateBinding Markup Extension](../advanced/templatebinding-markup-extension.md). A `TemplateBinding` is an optimized form of a binding for template scenarios, analogous to a binding constructed with `{Binding RelativeSource={RelativeSource TemplatedParent}}`. `TemplateBinding` is useful for binding parts of the template to properties of the control. For example, each control has a <xref:System.Windows.Controls.Control.BorderThickness> property. Use a `TemplateBinding` to manage which element in the template is affected by this control setting.
 
 ### ContentControl and ItemsControl
 
-If a <xref:System.Windows.Controls.ContentPresenter> is declared in the <xref:System.Windows.Controls.ControlTemplate> of a <xref:System.Windows.Controls.ContentControl>, the <xref:System.Windows.Controls.ContentPresenter> will automatically bind to the <xref:System.Windows.Controls.ContentControl.ContentTemplate%2A> and <xref:System.Windows.Controls.ContentControl.Content%2A> properties. Likewise, an <xref:System.Windows.Controls.ItemsPresenter> that is in the <xref:System.Windows.Controls.ControlTemplate> of an <xref:System.Windows.Controls.ItemsControl> will automatically bind to the <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A> and <xref:System.Windows.Controls.ItemsControl.Items%2A> properties.
+If a <xref:System.Windows.Controls.ContentPresenter> is declared in the <xref:System.Windows.Controls.ControlTemplate> of a <xref:System.Windows.Controls.ContentControl>, the <xref:System.Windows.Controls.ContentPresenter> automatically binds to the <xref:System.Windows.Controls.ContentControl.ContentTemplate%2A> and <xref:System.Windows.Controls.ContentControl.Content%2A> properties. Likewise, an <xref:System.Windows.Controls.ItemsPresenter> that is in the <xref:System.Windows.Controls.ControlTemplate> of an <xref:System.Windows.Controls.ItemsControl> automatically binds to the <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A> and <xref:System.Windows.Controls.ItemsControl.Items%2A> properties.
 
 ## DataTemplates
 
-In this sample app, there is a <xref:System.Windows.Controls.ListBox> control that is bound to a list of photos.
+In this sample app, a <xref:System.Windows.Controls.ListBox> control binds to a list of photos.
 
 :::code language="xaml" source="./snippets/styles-templates-overview/csharp/Window3.xaml" id="SnippetListBox":::
 
-This <xref:System.Windows.Controls.ListBox> currently looks like the following.
+This <xref:System.Windows.Controls.ListBox> currently looks like the following image.
 
 :::image type="content" source="./media/styles-and-templates-overview/stylingintro-listboxbefore.png" alt-text="ListBox before applying template":::
 
-Most controls have some type of content, and that content often comes from data that you are binding to. In this sample, the data is the list of photos. In WPF, you use a <xref:System.Windows.DataTemplate> to define the visual representation of data. Basically, what you put into a <xref:System.Windows.DataTemplate> determines what the data looks like in the rendered app.
+Most controls have some type of content, and that content often comes from data that you bind to. In this sample, the data is the list of photos. In WPF, you use a <xref:System.Windows.DataTemplate> to define the visual representation of data. Basically, what you put into a <xref:System.Windows.DataTemplate> determines what the data looks like in the rendered app.
 
-In our sample app, each custom `Photo` object has a `Source` property of type string that specifies the file path of the image. Currently, the photo objects appear as file paths.
+In this sample app, each custom `Photo` object has a `Source` property of type string that specifies the file path of the image. Currently, the photo objects appear as file paths.
 
 :::code language="csharp" source="./snippets/styles-templates-overview/csharp/Photo.cs" id="PhotoClass":::
 :::code language="vb" source="./snippets/styles-templates-overview/vb/Photo.vb" id="PhotoClass":::
@@ -131,19 +131,19 @@ For the photos to appear as images, you create a <xref:System.Windows.DataTempla
 
 :::code language="xaml" source="./snippets/styles-templates-overview/csharp/Window4.xaml" id="SnippetDataTemplate":::
 
-Notice that the <xref:System.Windows.DataTemplate.DataType%2A> property is similar to the <xref:System.Windows.Style.TargetType%2A> property of the <xref:System.Windows.Style>. If your <xref:System.Windows.DataTemplate> is in the resources section, when you specify the <xref:System.Windows.DataTemplate.DataType%2A> property to a type and omit an `x:Key`, the <xref:System.Windows.DataTemplate> is applied whenever that type appears. You always have the option to assign the <xref:System.Windows.DataTemplate> with an `x:Key` and then set it as a `StaticResource` for properties that take <xref:System.Windows.DataTemplate> types, such as the <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A> property or the <xref:System.Windows.Controls.ContentControl.ContentTemplate%2A> property.
+Notice that the <xref:System.Windows.DataTemplate.DataType%2A> property is similar to the <xref:System.Windows.Style.TargetType%2A> property of the <xref:System.Windows.Style>. If you add a <xref:System.Windows.DataTemplate> to the resources section and set the <xref:System.Windows.DataTemplate.DataType%2A> property to a type and omit an `x:Key`, the <xref:System.Windows.DataTemplate> applies whenever that type appears. You can also assign the <xref:System.Windows.DataTemplate> an `x:Key` and then set it as a `StaticResource` for properties that take <xref:System.Windows.DataTemplate> types, such as the <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A> property or the <xref:System.Windows.Controls.ContentControl.ContentTemplate%2A> property.
 
-Essentially, the <xref:System.Windows.DataTemplate> in the above example defines that whenever there is a `Photo` object, it should appear as an <xref:System.Windows.Controls.Image> within a <xref:System.Windows.Controls.Border>. With this <xref:System.Windows.DataTemplate>, our app now looks like this.
+Essentially, the <xref:System.Windows.DataTemplate> in the preceding example defines that whenever there is a `Photo` object, it should appear as an <xref:System.Windows.Controls.Image> within a <xref:System.Windows.Controls.Border>. By using this <xref:System.Windows.DataTemplate>, the app now looks like this image.
 
 :::image type="content" source="./media/styles-and-templates-overview/stylingintro-photosasimages.png" alt-text="Photo image":::
 
-The data templating model provides other features. For example, if you are displaying collection data that contains other collections using a <xref:System.Windows.Controls.HeaderedItemsControl> type such as a <xref:System.Windows.Controls.Menu> or a <xref:System.Windows.Controls.TreeView>, there is the <xref:System.Windows.HierarchicalDataTemplate>. Another data templating feature is the <xref:System.Windows.Controls.DataTemplateSelector>, which allows you to choose a <xref:System.Windows.DataTemplate> to use based on custom logic. For more information, see [Data Templating Overview](../data/data-templating-overview.md), which provides a more in-depth discussion of the different data templating features.
+The data templating model provides other features. For example, if you're displaying collection data that contains other collections by using a <xref:System.Windows.Controls.HeaderedItemsControl> type such as a <xref:System.Windows.Controls.Menu> or a <xref:System.Windows.Controls.TreeView>, use the <xref:System.Windows.HierarchicalDataTemplate>. Another data templating feature is the <xref:System.Windows.Controls.DataTemplateSelector>, which you can use to choose a <xref:System.Windows.DataTemplate> based on custom logic. For more information, see [Data Templating Overview](../data/data-templating-overview.md), which provides a more in-depth discussion of the different data templating features.
 
 ## Triggers
 
 A trigger sets properties or starts actions, such as an animation, when a property value changes or when an event is raised. <xref:System.Windows.Style>, <xref:System.Windows.Controls.ControlTemplate>, and <xref:System.Windows.DataTemplate> all have a `Triggers` property that can contain a set of triggers. There are several types of triggers.
 
-### PropertyTriggers
+### Property triggers
 
 A <xref:System.Windows.Trigger> that sets property values or starts actions based on the value of a property is called a property trigger.
 
@@ -157,9 +157,9 @@ Notice that the <xref:System.Windows.FrameworkElement.MaxHeight%2A> property of 
 
 :::image type="content" source="./media/styles-and-templates-overview/stylingintro-triggers.png" alt-text="Styled ListView":::
 
-### EventTriggers and Storyboards
+### Event triggers and storyboards
 
-Another type of trigger is the <xref:System.Windows.EventTrigger>, which starts a set of actions based on the occurrence of an event. For example, the following <xref:System.Windows.EventTrigger> objects specify that when the mouse pointer enters the <xref:System.Windows.Controls.ListBoxItem>, the <xref:System.Windows.FrameworkElement.MaxHeight%2A> property animates to a value of `90` over a `0.2` second period. When the mouse moves away from the item, the property returns to the original value over a period of `1` second. Note how it is not necessary to specify a <xref:System.Windows.Media.Animation.DoubleAnimation.To%2A> value for the <xref:System.Windows.ContentElement.MouseLeave> animation. This is because the animation is able to keep track of the original value.
+Another type of trigger is the <xref:System.Windows.EventTrigger>, which starts a set of actions based on the occurrence of an event. For example, the following <xref:System.Windows.EventTrigger> objects specify that when the mouse pointer enters the <xref:System.Windows.Controls.ListBoxItem>, the <xref:System.Windows.FrameworkElement.MaxHeight%2A> property animates to a value of `90` over a `0.2` second period. When the mouse moves away from the item, the property returns to the original value over a period of `1` second. Note how you don't need to specify a <xref:System.Windows.Media.Animation.DoubleAnimation.To%2A> value for the <xref:System.Windows.ContentElement.MouseLeave> animation. This behavior happens because the animation keeps track of the original value.
 
 :::code language="xaml" source="./snippets/styles-templates-overview/csharp/Window6.xaml" id="SnippetStyleEventTriggers":::
 
@@ -171,11 +171,11 @@ In the following illustration, the mouse is pointing to the third item.
 
 ### MultiTriggers, DataTriggers, and MultiDataTriggers
 
-In addition to <xref:System.Windows.Trigger> and <xref:System.Windows.EventTrigger>, there are other types of triggers. <xref:System.Windows.MultiTrigger> allows you to set property values based on multiple conditions. You use <xref:System.Windows.DataTrigger> and <xref:System.Windows.MultiDataTrigger> when the property of your condition is data-bound.
+In addition to <xref:System.Windows.Trigger> and <xref:System.Windows.EventTrigger>, there are other types of triggers. By using <xref:System.Windows.MultiTrigger>, you can set property values based on multiple conditions. Use <xref:System.Windows.DataTrigger> and <xref:System.Windows.MultiDataTrigger> when the property of your condition is data-bound.
 
 ## Visual States
 
-Controls are always in a specific **state**. For example, when the mouse moves over the surface of a control, the control is considered to be in a common state of `MouseOver`. A control without a specific state is considered to be in the common `Normal` state. States are broken into groups, and the previously mentioned states are part of the state group `CommonStates`. Most controls have two state groups: `CommonStates` and `FocusStates`. Of each state group applied to a control, a control is always in one state of each group, such as `CommonStates.MouseOver` and `FocusStates.Unfocused`. However, a control can't be in two different states within the same group, such as `CommonStates.Normal` and `CommonStates.Disabled`. Here is a table of states most controls recognize and use.
+Controls are always in a specific **state**. For example, when the mouse moves over the surface of a control, the control is in the common state `MouseOver`. A control without a specific state is in the common `Normal` state. States are broken into groups, and the previously mentioned states are part of the state group `CommonStates`. Most controls have two state groups: `CommonStates` and `FocusStates`. Of each state group applied to a control, a control is always in one state of each group, such as `CommonStates.MouseOver` and `FocusStates.Unfocused`. However, a control can't be in two different states within the same group, such as `CommonStates.Normal` and `CommonStates.Disabled`. The following table shows states most controls recognize and use.
 
 | VisualState Name | VisualStateGroup Name | Description |
 | ---------------- | --------------------- | ----------- |
@@ -184,11 +184,11 @@ Controls are always in a specific **state**. For example, when the mouse moves o
 | `Pressed`        | `CommonStates`        | The control is pressed. |
 | `Disabled`       | `CommonStates`        | The control is disabled. |
 | `Focused`        | `FocusStates`         | The control has focus. |
-| `Unfocused`      | `FocusStates`         | The control does not have focus. |
+| `Unfocused`      | `FocusStates`         | The control doesn't have focus. |
 
-By defining a <xref:System.Windows.VisualStateManager?displayProperty=fullName> on the root element of a control template, you can trigger animations when a control enters a specific state. The `VisualStateManager` declares which combinations of <xref:System.Windows.VisualStateGroup> and <xref:System.Windows.VisualState> to watch. When the control enters a watched state, the animation defined by the `VisualStateManager` is started.
+By defining a <xref:System.Windows.VisualStateManager?displayProperty=fullName> on the root element of a control template, you can trigger animations when a control enters a specific state. The `VisualStateManager` declares which combinations of <xref:System.Windows.VisualStateGroup> and <xref:System.Windows.VisualState> to watch. When the control enters a watched state, the animation defined by the `VisualStateManager` starts.
 
-For example, the following XAML code watches the `CommonStates.MouseOver` state to animate the fill color of the element named `backgroundElement`. When the control returns to the `CommonStates.Normal` state, the fill color of the element named `backgroundElement` is restored.
+For example, the following XAML code watches the `CommonStates.MouseOver` state to animate the fill color of the element named `backgroundElement`. When the control returns to the `CommonStates.Normal` state, the animation restores the fill color of the element named `backgroundElement`.
 
 ```xaml
 <ControlTemplate x:Key="roundbutton" TargetType="Button">
@@ -217,17 +217,17 @@ For more information about storyboards, see [Storyboards Overview](../graphics-m
 
 ## Shared resources and themes
 
-A typical WPF app might have multiple UI resources that are applied throughout the app. Collectively, this set of resources can be considered the theme for the app. WPF provides support for packaging UI resources as a theme by using a resource dictionary that is encapsulated as the <xref:System.Windows.ResourceDictionary> class.
+A typical WPF app might have multiple UI resources that you apply throughout the app. You can consider this set of resources the theme for the app. WPF supports packaging UI resources as a theme by using a resource dictionary that the <xref:System.Windows.ResourceDictionary> class encapsulates.
 
-WPF themes are defined by using the styling and templating mechanism that WPF exposes for customizing the visuals of any element.
+Define WPF themes by using the styling and templating mechanism that WPF exposes for customizing the visuals of any element.
 
-WPF theme resources are stored in embedded resource dictionaries. These resource dictionaries must be embedded within a signed assembly, and can either be embedded in the same assembly as the code itself or in a side-by-side assembly. For PresentationFramework.dll, the assembly that contains WPF controls, theme resources are embedded in a series of side-by-side assemblies. The operating system determines which theme resource dictionary is used at runtime.
+Store WPF theme resources in embedded resource dictionaries. You must embed these resource dictionaries within a signed assembly. You can either embed them in the same assembly as the code itself or in a side-by-side assembly. For PresentationFramework.dll, the assembly that contains WPF controls, developers embed theme resources in a series of side-by-side assemblies. The operating system determines which theme resource dictionary to use at runtime.
 
-The theme becomes the last place to look when searching for the style of an element. Typically, the search will begin by walking up the element tree searching for an appropriate resource, then look in the app resource collection and finally query the system. This gives app developers a chance to redefine the style for any object at the tree or app level before reaching the theme.
+The theme is the last place to look when searching for the style of an element. Typically, the search begins by walking up the element tree searching for an appropriate resource, then looks in the app resource collection and finally queries the system. This search pattern gives app developers a chance to redefine the style for any object at the tree or app level before reaching the theme.
 
 You can define resource dictionaries as individual files that enable you to reuse a theme across multiple apps. You can also create swappable themes by defining multiple resource dictionaries that provide the same types of resources but with different values. Redefining these styles or other resources at the app level is the recommended approach for skinning an app.
 
-To share a set of resources, including styles and templates, across apps, you can create a XAML file and define a <xref:System.Windows.ResourceDictionary> that includes reference to a `shared.xaml` file.
+To share a set of resources, including styles and templates, across apps, create a XAML file and define a <xref:System.Windows.ResourceDictionary> that includes reference to a `shared.xaml` file.
 
 ```xaml
 <ResourceDictionary.MergedDictionaries>
@@ -235,15 +235,15 @@ To share a set of resources, including styles and templates, across apps, you ca
 </ResourceDictionary.MergedDictionaries>
 ```
 
-It is the sharing of `shared.xaml`, which itself defines a <xref:System.Windows.ResourceDictionary> that contains a set of style and brush resources, that enables the controls in an app to have a consistent look.
+By sharing `shared.xaml`, which itself defines a <xref:System.Windows.ResourceDictionary> that contains a set of style and brush resources, you enable the controls in an app to have a consistent look.
 
 For more information, see [Merged resource dictionaries](../systems/xaml-resources-merged-dictionaries.md).
 
-If you are creating a theme for your custom control, see the **Defining resources at the theme level** section of the [Control authoring overview](../controls/control-authoring-overview.md#defining-resources-at-the-theme-level).
+To create a theme for your custom control, see the **Defining resources at the theme level** section of the [Control authoring overview](../controls/control-authoring-overview.md#defining-resources-at-the-theme-level).
 
 ### Using built-in themes
 
-WPF includes several built-in themes that you can explicitly apply to your application. These themes are embedded within PresentationFramework assemblies and can be referenced using pack URIs in your application's resource dictionaries.
+WPF includes several built-in themes that you can explicitly apply to your application. These themes are embedded within PresentationFramework assemblies and you can reference them by using pack URIs in your application's resource dictionaries.
 
 To apply a built-in theme, merge the theme's resource dictionary into your application resources in `App.xaml`:
 
@@ -279,7 +279,7 @@ The following table lists the built-in themes available through pack URIs:
 |**Classic**|`/PresentationFramework.Classic;component/themes/Classic.xaml`|Traditional Windows 95/98/2000 appearance.|
 
 > [!NOTE]
-> For .NET Framework applications, you may need to add references to the theme assemblies (such as PresentationFramework.Aero2) in your project. For .NET Core/.NET 5+ applications, the theme assemblies are typically included automatically.
+> For .NET Framework applications, you might need to add references to the theme assemblies (such as PresentationFramework.Aero2) in your project. For .NET applications, the theme assemblies are typically included automatically.
 
 > [!TIP]
 > For developer reference, Visual Studio includes XAML files for these themes in your installation directory, typically located at _C:\\Program Files\\Microsoft Visual Studio\\2022\\\<edition>\\DesignTools\\SystemThemes\\wpf_. These files are helpful for understanding theme structure but are not used at runtime.
@@ -298,7 +298,7 @@ For .NET 9 and later, you can use the new Fluent theme which supports light and 
 </Application.Resources>
 ```
 
-Alternatively, you can use the `ThemeMode` property for even simpler theme application:
+Alternatively, you can use the `ThemeMode` property for an even simpler theme application:
 
 ```xaml
 <Application x:Class="MyApp.App"

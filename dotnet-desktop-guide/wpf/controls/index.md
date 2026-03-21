@@ -1,7 +1,7 @@
 ---
 title: Controls
 description: This article introduces WPF controls, detailing their creation, styling, templating, events, and rich content support via XAML or code.
-ms.date: 02/19/2025
+ms.date: 03/20/2026
 ms.service: dotnet-desktop
 ms.update-cycle: 365-days
 ms.topic: overview
@@ -15,7 +15,7 @@ helpviewer_keywords:
 ---
 # What are controls?
 
-Windows Presentation Foundation (WPF) ships with many of the common UI components that are used in almost every Windows app, such as <xref:System.Windows.Controls.Button>, <xref:System.Windows.Controls.Label>, <xref:System.Windows.Controls.TextBox>, <xref:System.Windows.Controls.Menu>, and <xref:System.Windows.Controls.ListBox>. Historically, these objects are referred to as controls. The term "control" is used loosely to mean any class that represents a visible object in an app. It's important to note that a class doesn't need to inherit from the <xref:System.Windows.Controls.Control> class to have a visible presence. Classes that inherit from the `Control` class contain a <xref:System.Windows.Controls.ControlTemplate>, which allows the consumer of a control to radically change the control's appearance without having to create a new subclass. This article discusses how controls (both those that do inherit from the `Control` class and those that don't) are commonly used in WPF.
+Windows Presentation Foundation (WPF) includes many common UI components that you use in almost every Windows app, such as <xref:System.Windows.Controls.Button>, <xref:System.Windows.Controls.Label>, <xref:System.Windows.Controls.TextBox>, <xref:System.Windows.Controls.Menu>, and <xref:System.Windows.Controls.ListBox>. Historically, developers refer to these objects as controls. Developers use the term "control" loosely to mean any class that represents a visible object in an app. A class doesn't need to inherit from the <xref:System.Windows.Controls.Control> class to have a visible presence. Classes that inherit from the `Control` class contain a <xref:System.Windows.Controls.ControlTemplate>, which allows the consumer of a control to radically change the control's appearance without having to create a new subclass. This article discusses how to use controls (both those that do inherit from the `Control` class and those that don't) in WPF.
 
 ## Create an instance of a control
 
@@ -23,11 +23,11 @@ You can add a control to an app by using either Extensible Application Markup La
 
 :::image type="content" source="./media/index/xaml-example.png" alt-text="A screenshot of a WPF app with two text boxes labeled name and address. Two buttons are visible. One button is named 'Reset' and the other 'Submit.'":::
 
-This window has six controls: two labels, two text boxes, and two buttons. XAML is used to create these controls, as demonstrated in the following snippet:
+This window has six controls: two labels, two text boxes, and two buttons. The app uses XAML to create these controls, as demonstrated in the following snippet:
 
 :::code language="xaml" source="./snippets/index/csharp/ExampleApp.xaml":::
 
-All controls can be created similarly in XAML. The same window can be created in code:
+You can create all controls similarly in XAML. You can also create the same window in code:
 
 :::code language="csharp" source="./snippets/index/csharp/MainWindow.xaml.cs" id="ExampleAppCode":::
 :::code language="vb" source="./snippets/index/vb/MainWindow.xaml.vb" id="ExampleAppCode":::
@@ -36,11 +36,11 @@ All controls can be created similarly in XAML. The same window can be created in
 
 You can subscribe to a control's event by using either XAML or code, but you can only handle an event in code.
 
-In XAML, the event is set as an attribute on the element. You can't use the `<Element.Event>handler<Element.Event>` notation for events. The following snippet shows how to subscribe to the `Click` event of a <xref:System.Windows.Controls.Button>:
+In XAML, set the event as an attribute on the element. You can't use the `<Element.Event>handler<Element.Event>` notation for events. The following snippet shows how to subscribe to the `Click` event of a <xref:System.Windows.Controls.Button>:
 
 :::code language="xaml" source="./snippets/index/csharp/ButtonClickEventExample.xaml" id="Event":::
 
-And here's how to do the same in code:
+Here's how to do the same thing in code:
 
 :::code language="csharp" source="./snippets/index/csharp/MainWindow.xaml.cs" id="Event":::
 :::code language="vb" source="./snippets/index/vb/MainWindow.xaml.vb" id="Event":::
@@ -60,28 +60,28 @@ It's common to change the appearance of a control to fit the look and feel of yo
 
 ### Change a control's property
 
-Many controls have properties that allow you to change how the control appears, such as a button's background. You can set the value properties in both XAML and code. The following example sets the <xref:System.Windows.Controls.Control.Background%2A>, <xref:System.Windows.Controls.Control.FontSize%2A>, and <xref:System.Windows.Controls.Control.FontWeight%2A> properties on a `Button` in XAML:
+Many controls have properties that you can use to change how the control appears, such as a button's background. Set the value properties in both XAML and code. The following example sets the <xref:System.Windows.Controls.Control.Background%2A>, <xref:System.Windows.Controls.Control.FontSize%2A>, and <xref:System.Windows.Controls.Control.FontWeight%2A> properties on a `Button` in XAML:
 
 :::code language="xaml" source="./snippets/index/csharp/ButtonPropertyWindow.xaml" id="Properties":::
 
-And here's how to do the same in code:
+Here's how to do the same thing in code:
 
 :::code language="csharp" source="./snippets/index/csharp/MainWindow.xaml.cs" id="Properties":::
 :::code language="vb" source="./snippets/index/vb/MainWindow.xaml.vb" id="Properties":::
 
-The example window now looks like the following image:
+The following image shows the example window:
 
-:::image type="content" source="./media/index/xaml-example-property.png" alt-text="A screenshot of a WPF app with two text boxes labeled name and address. Two buttons are visible. One button is named 'Reset' and the other 'Submit.' The 'Submit' button has a gradient background that transitions from a blue to a lighter blue.":::
+:::image type="content" source="./media/index/xaml-example-property.png" alt-text="A screenshot of a WPF app with two text boxes labeled name and address. Two buttons are visible. One button is named Reset and the other Submit. The Submit button has a gradient background that transitions from a blue to a lighter blue.":::
 
 ### Create a style for a control
 
-WPF gives you extensive ability to specify the appearance of controls by creating a <xref:System.Windows.Style>, instead of setting properties on each control. `Style` definitions are typically defined in XAML in a <xref:System.Windows.ResourceDictionary>, such as the <xref:System.Windows.FrameworkElement.Resources%2A> property of a control or Window. Resources are applied to the scope in which they're declared. For more information, see [Overview of XAML resources](../systems/xaml-resources-overview.md).
+WPF gives you extensive ability to specify the appearance of controls by creating a <xref:System.Windows.Style>, instead of setting properties on each control. Typically, you define `Style` definitions in XAML within a <xref:System.Windows.ResourceDictionary>, such as the <xref:System.Windows.FrameworkElement.Resources%2A> property of a control or Window. Resources apply to the scope where you declare them. For more information, see [Overview of XAML resources](../systems/xaml-resources-overview.md).
 
 The following example applies a `Style` to every <xref:System.Windows.Controls.Button> contained in the same `Grid` that defines the style:
 
 :::code language="xaml" source="./snippets/index/csharp/ButtonStyleWindow.xaml" id="Style":::
 
-And here's how to do the same in code:
+Here's how to do the same thing in code:
 
 :::code language="csharp" source="./snippets/index/csharp/MainWindow.xaml.cs" id="Style":::
 :::code language="vb" source="./snippets/index/vb/MainWindow.xaml.vb" id="Style":::
@@ -90,11 +90,11 @@ The following image shows the style applied to the grid of the window, which cha
 
 :::image type="content" source="./media/index/xaml-example-style.png" alt-text="A screenshot of a WPF app with two text boxes labeled name and address. Two buttons are visible. One button is named 'Reset' and the other 'Submit.' Both buttons feature a gradient background that transitions from a blue to a lighter blue.":::
 
-Instead of applying the style to all controls of a specific type, they can also be assigned to specific controls by adding a key to the style in the resource dictionary, and referencing that key in the `Style` property of the control. For more information about styles, see [Styling and Templating](styles-templates-overview.md).
+Instead of applying the style to all controls of a specific type, you can assign it to specific controls by adding a key to the style in the resource dictionary and referencing that key in the `Style` property of the control. For more information about styles, see [Styling and Templating](styles-templates-overview.md).
 
 ### Create a ControlTemplate
 
-A `Style` allows you to set properties on multiple controls at a time, but sometimes you might want to customize the appearance of a control beyond what you can do with a <xref:System.Windows.Style>. Classes that inherit from the <xref:System.Windows.Controls.Control> class have a <xref:System.Windows.Controls.ControlTemplate>, which defines the structure and appearance of a control.
+A `Style` sets properties on multiple controls at a time, but sometimes you need to customize the appearance of a control beyond what you can do with a <xref:System.Windows.Style>. Classes that inherit from the <xref:System.Windows.Controls.Control> class have a <xref:System.Windows.Controls.ControlTemplate>, which defines the structure and appearance of a control.
 
 Consider the <xref:System.Windows.Controls.Button> control, a common control used by almost every app. The primary behavior of a button is to enable an app to take some action when the user selects the button. By default, the button in WPF appears as a raised rectangle. While developing an app, you might want to take advantage of the behavior of a button&mdash;that is, how the user interacts with the button, which raises a `Click` event&mdash;but you might change the button's appearance beyond what you can do by changing the button's properties. In this case, you can create a new <xref:System.Windows.Controls.ControlTemplate>.
 
@@ -103,24 +103,24 @@ The following example creates a <xref:System.Windows.Controls.ControlTemplate> f
 :::code language="xaml" source="./snippets/index/csharp/ButtonTemplateWindow.xaml" id="Template":::
 
 > [!NOTE]
-> The <xref:System.Windows.Controls.Control.Background%2A> property of the <xref:System.Windows.Controls.Button> must be set to a <xref:System.Windows.Media.SolidColorBrush> for the example to work properly.
+> Set the <xref:System.Windows.Controls.Control.Background%2A> property of the <xref:System.Windows.Controls.Button> to a <xref:System.Windows.Media.SolidColorBrush> for the example to work properly.
 
-And here's how to do the same in code. The following code creates a XAML string and parses it to generate a template that can be applied, which is the supported way to generate a template at run-time.
+Here's how to do the same thing in code. The following code creates a XAML string and parses it to generate a template that you can apply. This approach is the supported way to generate a template at run-time.
 
 :::code language="csharp" source="./snippets/index/csharp/MainWindow.xaml.cs" id="Template":::
 :::code language="vb" source="./snippets/index/vb/MainWindow.xaml.vb" id="Template":::
 
 The following image shows what the template looks like when applied:
 
-:::image type="content" source="./media/index/xaml-example-template.png" alt-text="A screenshot of a WPF app with two text boxes labeled name and address. Two buttons are visible. One button is named 'Reset' and the other 'Submit.' The 'Submit' button has rounded corners and a peach color applied to it.":::
+:::image type="content" source="./media/index/xaml-example-template.png" alt-text="A screenshot of a WPF app with two text boxes labeled name and address. Two buttons are visible. One button is named Reset and the other Submit. The Submit button has rounded corners and a peach color applied to it.":::
 
-In the previous example, the `ControlTemplate` is applied to a single button. However, a `ControlTemplate` can be assigned to a `Style` and applied to all buttons, like what was demonstrated in the [Create a style for a control](#create-a-style-for-a-control) section.
+In the previous example, you apply the `ControlTemplate` to a single button. However, you can assign a `ControlTemplate` to a `Style` and apply it to all buttons, like what was demonstrated in the [Create a style for a control](#create-a-style-for-a-control) section.
 
 For more information about how to take advantage of the unique features a template provides, see [Styling and Templating](styles-templates-overview.md).
 
 ## Rich content in controls
 
-Most classes that inherit from the <xref:System.Windows.Controls.Control> class have the capacity to contain rich content. For example, a <xref:System.Windows.Controls.Label> can contain any object, such as a string, an <xref:System.Windows.Controls.Image>, or a <xref:System.Windows.Controls.Panel>. The following classes provide support for rich content and act as base classes for most of the controls in WPF:
+Most classes that inherit from the <xref:System.Windows.Controls.Control> class can contain rich content. For example, a <xref:System.Windows.Controls.Label> can contain any object, such as a string, an <xref:System.Windows.Controls.Image>, or a <xref:System.Windows.Controls.Panel>. The following classes provide support for rich content and act as base classes for most of the controls in WPF:
 
 - <xref:System.Windows.Controls.ContentControl>&mdash;Some examples of classes that inherit from this class are <xref:System.Windows.Controls.Label>, <xref:System.Windows.Controls.Button>, and <xref:System.Windows.Controls.ToolTip>.
 
