@@ -26,18 +26,18 @@ After creating a new project, use the Visual Studio templates to create a user c
 
 01. In Visual Studio, find the **Project Explorer** pane. Right-click on the project and choose **Add** > **User Control**.
 
-   :::image type="content" source="media/extend-existing/right-click.png" alt-text="Right-click the Visual Studio solution explorer to add a user control to a Windows Forms project":::
+    :::image type="content" source="media/extend-existing/right-click.png" alt-text="Right-click the Visual Studio solution explorer to add a user control to a Windows Forms project":::
 
 01. Select the **Custom Control (Windows Forms)** item.
 
 01. In the **Name** box, type a name for your user control. Visual Studio provides a default and unique name that you can use. Next, select **Add**.
 
-   :::image type="content" source="media/extend-existing/new-customcontrol-dialog.png" alt-text="Add item dialog in Visual Studio for Windows Forms":::
+    :::image type="content" source="media/extend-existing/new-customcontrol-dialog.png" alt-text="Add item dialog in Visual Studio for Windows Forms":::
 
 01. In **Design** mode of the control, press <kbd>F7</kbd> or select the **switch to code view** link.
 
-   > [!TIP]
-   > You can also right-click the file in the **Solution Explorer** window and select **View Code**.
+    > [!TIP]
+    > You can also right-click the file in the **Solution Explorer** window and select **View Code**.
 
 ## Change the custom control to a button
 
@@ -78,6 +78,6 @@ After [you add a custom control to your project](#add-a-custom-control-to-a-proj
     :::code language="csharp" source="./snippets/extend-existing/csharp/CustomControl1.cs" id="control":::
     :::code language="vb" source="./snippets/extend-existing/vb/CustomControl1.vb" id="control":::
 
-Now that you create the control, compile the project to populate the **Toolbox** window with the new control. Open a form designer and drag the control to the form. Run the project and press the button. Each press increases the number of clicks by one. The total clicks are printed as text on top of the button.
+Now that you've created the control, compile the project to populate the **Toolbox** window with the new control. Open a form designer and drag the control to the form. Run the project and press the button. Each press increases the number of clicks by one. The total clicks are printed as text on top of the button.
 
 :::image type="content" source="media/extend-existing/toolbox.png" alt-text="Visual Studio Toolbox window for Windows Forms showing a custom control.":::

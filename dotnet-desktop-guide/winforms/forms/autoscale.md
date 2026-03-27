@@ -48,7 +48,7 @@ Windows Forms uses the following logic to automatically scale forms and their co
 
 01. Child controls can modify their scaling behavior through several means:
 
-    - Override the <xref:System.Windows.Forms.Control.ScaleChildren%2A> property to determine if their child controls should be scaled or not.
+    - Override the <xref:System.Windows.Forms.Control.ScaleChildren%2A> property to determine whether its child controls should be scaled.
 
     - Override the <xref:System.Windows.Forms.Control.GetScaledBounds%2A> method to adjust the bounds that the control is scaled to, but not the scaling logic.
 
