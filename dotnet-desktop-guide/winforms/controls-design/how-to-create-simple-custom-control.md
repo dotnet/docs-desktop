@@ -108,7 +108,7 @@ The last part of the custom control is painting. In the `FirstControl` class, pe
     :::code language="vb" source="./snippets/how-to-create-simple-custom-control/vb/FirstControl.vb" id="drawstring":::
 
     > [!IMPORTANT]
-    > The `Graphics.DrawString` method uses a `Brush` for the color of the text. You must dispose of `Brushes` after use.
+    > The `Graphics.DrawString` method uses a `Brush` for the color of the text. Dispose brush instances that you create, such as `SolidBrush`, but don't dispose shared brushes that you access through <xref:System.Drawing.Brushes?displayProperty=fullName>.
 
     The <xref:System.Drawing.Graphics.DrawString*?displayProperty=nameWithType> method uses text, a font, color, and formatting options to draw a string.
 

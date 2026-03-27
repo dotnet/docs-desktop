@@ -13,7 +13,7 @@ ms.assetid: 792943c5-335d-49dd-aa5b-ec1582a10088
 ---
 # Panel
 
-<xref:System.Windows.Controls.Panel> elements are components that control the rendering of elements - their size and dimensions, their position, and the arrangement of their child content. Windows Presentation Foundation (WPF) provides a number of predefined <xref:System.Windows.Controls.Panel> elements as well as the ability to construct custom <xref:System.Windows.Controls.Panel> elements.
+<xref:System.Windows.Controls.Panel> elements are components that control the rendering of elements—their size and dimensions, their position, and the arrangement of their child content. Windows Presentation Foundation (WPF) provides a number of predefined <xref:System.Windows.Controls.Panel> elements as well as the ability to construct custom <xref:System.Windows.Controls.Panel> elements.
 
 | Title | Description |
 |-------|-------------|
