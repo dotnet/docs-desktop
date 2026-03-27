@@ -1,11 +1,12 @@
 ---
 title: What is Windows Presentation Foundation
 description: This article gives an overview of Windows Presentation Foundation (WPF) with .NET. WPF is a Windows-only user interface (UI) framework.
-ms.date: 02/15/2023
+ms.date: 03/23/2026
 ms.service: dotnet-desktop
 ms.update-cycle: 365-days
 ms.topic: overview
 ms.custom: update-template, updateeachrelease
+ai-usage: ai-assisted
 dev_langs:
   - "csharp"
   - "vb"
@@ -14,9 +15,9 @@ dev_langs:
 
 # Windows Presentation Foundation Overview
 
-Welcome to the Desktop Guide for Windows Presentation Foundation (WPF), a UI framework that is resolution-independent and uses a vector-based rendering engine, built to take advantage of modern graphics hardware. WPF provides a comprehensive set of application-development features that include Extensible Application Markup Language (XAML), controls, data binding, layout, 2D and 3D graphics, animation, styles, templates, documents, media, text, and typography. WPF is part of .NET, so you can build applications that incorporate other elements of the .NET API.
+Welcome to the Desktop Guide for Windows Presentation Foundation (WPF), a UI framework that's resolution-independent and uses a vector-based rendering engine, built to take advantage of modern graphics hardware. WPF provides a comprehensive set of application-development features that include Extensible Application Markup Language (XAML), controls, data binding, layout, 2D and 3D graphics, animation, styles, templates, documents, media, text, and typography. WPF is part of .NET, so you can build applications that incorporate other elements of the .NET API.
 
-There are two implementations of WPF:
+WPF has two implementations:
 
 01. **.NET** version (this guide):
 
@@ -26,7 +27,7 @@ There are two implementations of WPF:
 
 01. **.NET Framework 4** version:
 
-    The .NET Framework implementation of WPF that's supported by Visual Studio 2019 and Visual Studio 2017.
+    .NET Framework implementation of WPF that's supported by Visual Studio 2019 and Visual Studio 2017.
 
     .NET Framework 4 is a Windows-only version of .NET and is considered a Windows Operating System component. This version of WPF is distributed with .NET Framework.
 
@@ -34,7 +35,7 @@ This overview is intended for newcomers and covers the key capabilities and conc
 
 ## Why upgrade from .NET Framework
 
-When you are upgrading your application from .NET Framework to .NET, you will benefit from:
+When you upgrade your application from .NET Framework to .NET, you benefit from:
 
 - Better performance
 - New .NET APIs
@@ -42,11 +43,11 @@ When you are upgrading your application from .NET Framework to .NET, you will be
 - Improved accessibility and reliability
 - Updated tooling and more
 
-To learn how to upgrade your application, see [How to upgrade a WPF desktop app to .NET](../migration/index.md).
+To upgrade your application, see [How to upgrade a WPF desktop app to .NET](../migration/index.md).
 
 ## Program with WPF
 
-WPF exists as a subset of .NET types that are, mostly located in the <xref:System.Windows> namespace. If you have previously built applications with .NET with frameworks like ASP.NET and Windows Forms, the fundamental WPF programming experience should be familiar, you:
+WPF exists as a subset of .NET types that are mostly located in the <xref:System.Windows> namespace. If you've previously built applications with .NET using frameworks like ASP.NET and Windows Forms, the fundamental WPF programming experience should be familiar. You:
 
 - Instantiate classes
 - Set properties
@@ -89,11 +90,11 @@ The following figure shows the user interface (UI) that is defined by the XAML i
 
 :::image type="content" source="media/index/markup-window-button.png" alt-text="A window that contains a button":::
 
-Since XAML is XML-based, the UI that you compose with it is assembled in a hierarchy of nested elements that is known as an [element tree](../advanced/trees-in-wpf.md). The element tree provides a logical and intuitive way to create and manage UIs.
+Since XAML is XML-based, the UI that you compose with it is assembled in a hierarchy of nested elements that's known as an [element tree](../advanced/trees-in-wpf.md). The element tree provides a logical and intuitive way to create and manage UIs.
 
 ### Code-behind
 
-The main behavior of an application is to implement the functionality that responds to user interactions. For example clicking a menu or button, and calling business logic and data access logic in response. In WPF, this behavior is implemented in code that is associated with markup. This type of code is known as code-behind. The following example shows the updated markup from the previous example and the code-behind:
+The main behavior of an application is to implement the functionality that responds to user interactions. For example, clicking a menu or button and calling business logic and data access logic in response. In WPF, this behavior is implemented in code that's associated with markup. This type of code is known as code-behind. The following example shows the updated markup from the previous example and the code-behind:
 
 ```xaml
 <Window
@@ -109,7 +110,7 @@ The main behavior of an application is to implement the functionality that respo
 </Window>
 ```
 
-The updated markup defines the `xmlns:x` namespace and maps it to the schema that adds support for the code-behind types. The `x:Class` attribute is used to associate a code-behind class to this specific XAML markup. Considering this attribute is declared on the `<Window>` element, the code-behind class must inherit from the `Window` class.
+The updated markup defines the `xmlns:x` namespace and maps it to the schema that adds support for the code-behind types. The `x:Class` attribute associates a code-behind class to this specific XAML markup. Considering this attribute is declared on the `<Window>` element, the code-behind class must inherit from the `Window` class.
 
 ```csharp
 using System.Windows;
@@ -162,9 +163,9 @@ Namespace SDKSample
 End Namespace
 ```
 
-`InitializeComponent` is called from the code-behind class's constructor to merge the UI that is defined in markup with the code-behind class. (`InitializeComponent` is generated for you when your application is built, which is why you don't need to implement it manually.) The combination of `x:Class` and `InitializeComponent` ensure that your implementation is correctly initialized whenever it's created.
+`InitializeComponent` is called from the code-behind class's constructor to merge the UI that's defined in markup with the code-behind class. (`InitializeComponent` is generated for you when your application is built, which is why you don't need to implement it manually.) The combination of `x:Class` and `InitializeComponent` ensure that your implementation is correctly initialized whenever it's created.
 
-Notice that in the markup the `<Button>` element defined a value of `button_Click` for the `Click` attribute. With the markup and code-behind initialized and working together, the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event for the button is automatically mapped to the `button_Click` method. When the button is clicked, the event handler is invoked and a message box is displayed by calling the <xref:System.Windows.MessageBox.Show%2A?displayProperty=fullName> method.
+Notice that in the markup the `<Button>` element defined a value of `button_Click` for the `Click` attribute. With the markup and code-behind initialized and working together, the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event for the button is automatically mapped to the `button_Click` method. When the button is clicked, the event handler is invoked and displays a message box by calling the <xref:System.Windows.MessageBox.Show%2A?displayProperty=fullName> method.
 
 The following figure shows the result when the button is clicked:
 
@@ -174,11 +175,11 @@ The following figure shows the result when the button is clicked:
 
 Controls most often detect and respond to user input. The WPF input system uses both direct and routed events to support text input, focus management, and mouse positioning.
 
-Applications often have complex input requirements. WPF provides a command system that separates user-input actions from the code that responds to those actions. The command system allows for multiple sources to invoke the same command logic. For example, take the common editing operations used by different applications: **Copy**, **Cut**, and **Paste**. These operations can be invoked by using different user actions if they're implemented by using commands.
+Applications often have complex input requirements. WPF provides a command system that separates user-input actions from the code that responds to those actions. The command system allows for multiple sources to invoke the same command logic. For example, take the common editing operations used by different applications: **Copy**, **Cut**, and **Paste**. These operations can be invoked using different user actions if they're implemented using commands.
 
 ## Controls
 
-The user experiences that are delivered by the application model are constructed controls. In WPF, *control* is an umbrella term that applies to a category of WPF classes that have the following characteristics:
+The application model delivers user experiences through constructed controls. In WPF, *control* is an umbrella term that applies to a category of WPF classes that have the following characteristics:
 
 - Hosted in either a window or a page.
 - Have a user interface.
@@ -218,11 +219,11 @@ The built-in WPF controls are listed here:
 
 ## Layout
 
-When you create a user interface, you arrange your controls by location and size to form a layout. A key requirement of any layout is to adapt to changes in window size and display settings. Rather than forcing you to write the code to adapt a layout in these circumstances, WPF provides a first-class, extensible layout system for you.
+When you create a user interface, you arrange your controls by location and size to form a layout. A key requirement of any layout is to adapt to changes in window size and display settings. Rather than forcing you to write code to adapt a layout in these circumstances, WPF provides a first-class, extensible layout system.
 
 The cornerstone of the layout system is relative positioning, which increases the ability to adapt to changing window and display conditions. The layout system also manages the negotiation between controls to determine the layout. The negotiation is a two-step process: first, a control tells its parent what location and size it requires. Second, the parent tells the control what space it can have.
 
-The layout system is exposed to child controls through base WPF classes. For common layouts such as grids, stacking, and docking, WPF includes several layout controls:
+The layout system exposes itself to child controls through base WPF classes. For common layouts such as grids, stacking, and docking, WPF includes several layout controls:
 
 - <xref:System.Windows.Controls.Canvas>: Child controls provide their own layout.
 
@@ -267,11 +268,11 @@ The following figure shows the result of the XAML markup in the preceding exampl
 
 ## Data binding
 
-Most applications are created to provide users with the means to view and edit data. For WPF applications, the work of storing and accessing data is already provided for by many different .NET data access libraries such as SQL and Entity Framework Core. After the data is accessed and loaded into an application's managed objects, the hard work for WPF applications begins. Essentially, this involves two things:
+Most applications provide users with the means to view and edit data. For WPF applications, many different .NET data access libraries such as SQL and Entity Framework Core already provide the work of storing and accessing data. After the data is accessed and loaded into an application's managed objects, the hard work for WPF applications begins. Essentially, this involves two things:
 
-01. Copying the data from the managed objects into controls, where the data can be displayed and edited.
+01. Copying the data from the managed objects into controls, where users can display and edit the data.
 
-01. Ensuring that changes made to data by using controls are copied back to the managed objects.
+01. Ensuring that changes made to data using controls are copied back to the managed objects.
 
 To simplify application development, WPF provides a powerful data binding engine to automatically handle these steps. The core unit of the data binding engine is the <xref:System.Windows.Data.Binding> class, whose job is to bind a control (the binding target) to a data object (the binding source). This relationship is illustrated by the following figure:
 
@@ -291,7 +292,7 @@ WPF supports declaring bindings in the XAML markup directly. For example, the fo
 </Window>
 ```
 
-The WPF data binding engine provides more than just binding, it provides validation, sorting, filtering, and grouping. Furthermore, data binding supports the use of data templates to create custom user interface for bound data.
+The WPF data binding engine provides more than just binding; it provides validation, sorting, filtering, and grouping. Furthermore, data binding supports the use of data templates to create custom user interface for bound data.
 
 For more information, see [Data binding overview](../data/index.md).
 
@@ -311,11 +312,11 @@ WPF provides an extensive and flexible set of graphics features that have the fo
 
 WPF provides a library of common vector-drawn 2D shapes, such as the rectangles and ellipses. The shapes aren't just for display; shapes implement many of the features that you expect from controls, including keyboard and mouse input.
 
-The 2D shapes provided by WPF cover the standard set of basic shapes. However, you may need to create custom shapes to help the design of a customized user interface. WPF provides geometries to create a custom shape that can be drawn directly, used as a brush, or used to clip other shapes and controls.
+The 2D shapes provided by WPF cover the standard set of basic shapes. However, you might need to create custom shapes to help the design of a customized user interface. WPF provides geometries to create a custom shape that can be drawn directly, used as a brush, or used to clip other shapes and controls.
 
 For more information, see [Geometry overview](../graphics-multimedia/geometry-overview.md).
 
-A subset of WPF 2D capabilities includes visual effects, such as gradients, bitmaps, drawings, painting with videos, rotation, scaling, and skewing. These effects are all achieved with brushes. The following figure shows some examples:
+A subset of WPF 2D capabilities includes visual effects, such as gradients, bitmaps, drawings, painting with videos, rotation, scaling, and skewing. Brushes achieve all these effects. The following figure shows some examples:
 
 :::image type="content" source="media/index/graphics-brushes.png" alt-text="Illustration of different brushes":::
 
@@ -331,7 +332,7 @@ For more information, see [3D graphics overview](../graphics-multimedia/3-d-grap
 
 ### Animation
 
-WPF animation support lets you make controls grow, shake, spin, and fade, to create interesting page transitions, and more. You can animate most WPF classes, even custom classes. The following figure shows a simple animation in action:
+WPF animation support lets you make controls grow, shake, spin, and fade to create interesting page transitions and more. You can animate most WPF classes, even custom classes. The following figure shows a simple animation in action:
 
 :::image type="content" source="media/index/animation-cube.gif" alt-text="Images of an animated cube":::
 
@@ -362,17 +363,17 @@ Up to this point, you've seen the core WPF building blocks for developing applic
 - You use data binding to reduce the work of integrating your user interface with data.
 - To enhance the visual appearance of your application, you use the comprehensive range of graphics, animation, and media support provided by WPF.
 
-Often, though, the basics aren't enough for creating and managing a truly distinct and visually stunning user experience. The standard WPF controls might not integrate with the desired appearance of your application. Data might not be displayed in the most effective way. Your application's overall user experience may not be suited to the default look and feel of Windows themes.
+Often, though, the basics aren't enough for creating and managing a truly distinct and visually stunning user experience. The standard WPF controls might not integrate with the desired appearance of your application. Data might not display in the most effective way. Your application's overall user experience might not suit the default look and feel of Windows themes.
 
 For this reason, WPF provides various mechanisms for creating unique user experiences.
 
 ### Content Model
 
-The main purpose of most of the WPF controls is to display content. In WPF, the type and number of items that can constitute the content of a control is referred to as the control's *content model*. Some controls can contain a single item and type of content. For example, the content of a <xref:System.Windows.Controls.TextBox> is a string value that is assigned to the <xref:System.Windows.Controls.TextBox.Text%2A> property.
+The main purpose of most of the WPF controls is to display content. In WPF, the type and number of items that can constitute the content of a control is referred to as the control's *content model*. Some controls can contain a single item and type of content. For example, the content of a <xref:System.Windows.Controls.TextBox> is a string value that's assigned to the <xref:System.Windows.Controls.TextBox.Text%2A> property.
 
 Other controls, however, can contain multiple items of different types of content; the content of a <xref:System.Windows.Controls.Button>, specified by the <xref:System.Windows.Controls.ContentControl.Content%2A> property, can contain various items including layout controls, text, images, and shapes.
 
-For more information on the kinds of content that is supported by various controls, see [WPF content model](../controls/wpf-content-model.md).
+For more information on the kinds of content that's supported by various controls, see [WPF content model](../controls/wpf-content-model.md).
 
 ### Triggers
 
@@ -380,21 +381,21 @@ Although the main purpose of XAML markup is to implement an application's appear
 
 ### Templates
 
-The default user interfaces for WPF controls are typically constructed from other controls and shapes. For example, a <xref:System.Windows.Controls.Button> is composed of both <xref:Microsoft.Windows.Themes.ButtonChrome> and <xref:System.Windows.Controls.ContentPresenter> controls. The <xref:Microsoft.Windows.Themes.ButtonChrome> provides the standard button appearance, while the <xref:System.Windows.Controls.ContentPresenter> displays the button's content, as specified by the <xref:System.Windows.Controls.ContentControl.Content%2A> property.
+Other controls and shapes typically construct the default user interfaces for WPF controls. For example, a <xref:System.Windows.Controls.Button> is composed of both <xref:Microsoft.Windows.Themes.ButtonChrome> and <xref:System.Windows.Controls.ContentPresenter> controls. The <xref:Microsoft.Windows.Themes.ButtonChrome> provides the standard button appearance, while the <xref:System.Windows.Controls.ContentPresenter> displays the button's content, as specified by the <xref:System.Windows.Controls.ContentControl.Content%2A> property.
 
-Sometimes the default appearance of a control may conflict with the overall appearance of an application. In this case, you can use a <xref:System.Windows.Controls.ControlTemplate> to change the appearance of the control's user interface without changing its content and behavior.
+Sometimes the default appearance of a control might conflict with the overall appearance of an application. In this case, use a <xref:System.Windows.Controls.ControlTemplate> to change the appearance of the control's user interface without changing its content and behavior.
 
-For example, a <xref:System.Windows.Controls.Button> raises the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event when it's clicked. By changing the template of a button to display an <xref:System.Windows.Shapes.Ellipse> shape, the visual of the aspect of the control has changed, but the functionality hasn't. You can still click on the visual aspect of the control and the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event is raised as expected.
+For example, a <xref:System.Windows.Controls.Button> raises the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event when it's clicked. By changing the template of a button to display an <xref:System.Windows.Shapes.Ellipse> shape, the visual aspect of the control changes, but the functionality doesn't. You can still click on the visual aspect of the control and the <xref:System.Windows.Controls.Primitives.ButtonBase.Click> event is raised as expected.
 
 :::image type="content" source="media/index/template-button.png" alt-text="An elliptical button and a second window":::
 
 ### Data templates
 
-Whereas a control template lets you specify the appearance of a control, a data template lets you specify the appearance of a control's content. Data templates are frequently used to enhance how bound data is displayed. The following figure shows the default appearance for a <xref:System.Windows.Controls.ListBox> that is bound to a collection of `Task` objects, where each task has a name, description, and priority:
+Whereas a control template lets you specify the appearance of a control, a data template lets you specify the appearance of a control's content. Data templates are frequently used to enhance how bound data is displayed. The following figure shows the default appearance for a <xref:System.Windows.Controls.ListBox> that's bound to a collection of `Task` objects, where each task has a name, description, and priority:
 
 :::image type="content" source="media/index/data-template-listbox-normal.png" alt-text="A list box with the default appearance":::
 
-The default appearance is what you would expect from a <xref:System.Windows.Controls.ListBox>. However, the default appearance of each task contains only the task name. To show the task name, description, and priority, the default appearance of the <xref:System.Windows.Controls.ListBox> control's bound list items must be changed by using a <xref:System.Windows.DataTemplate>. Here is an example of applying a data template that was created for the `Task` object.
+The default appearance is what you'd expect from a <xref:System.Windows.Controls.ListBox>. However, the default appearance of each task contains only the task name. To show the task name, description, and priority, change the default appearance of the <xref:System.Windows.Controls.ListBox> control's bound list items using a <xref:System.Windows.DataTemplate>. Here's an example of applying a data template that was created for the `Task` object.
 
 :::image type="content" source="media/index/data-template-listbox-applied.png" alt-text="List box that uses a data template":::
 
