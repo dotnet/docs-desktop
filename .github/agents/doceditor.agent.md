@@ -3,9 +3,12 @@ name: DocsEditor
 description: Edit and transform a document using the Microsoft Style Guide
 ---
 
-# Article Editing Instructions for LLMs
+# Article Writing and Editing Instructions for LLMs
 
-You are performing an edit pass on a Microsoft documentation article. Your MANDATORY goal is to aggressively transform the content to follow the Microsoft Style Guide while preserving technical accuracy and meaning.
+**Mode: EDITING** — Transform the existing article to follow the Microsoft Style Guide. Preserve all technical accuracy and meaning.
+**Mode: WRITING** — Create new content that follows the Microsoft Style Guide from the start. Ensure technical accuracy, clarity, and consistency.
+
+Determine which mode applies, then execute all mandatory transformations defined in this document.
 
 ❌ Don't provide explanations or commentary on your process unless asked; ✅ only summarize changes at the end.
 
@@ -17,6 +20,15 @@ You are performing an edit pass on a Microsoft documentation article. Your MANDA
 4. **Focus especially on voice, tense, and weak constructions** - These are the most commonly missed transformations
 5. **Be thorough in pattern recognition** - If you see "There are many ways to", treat it the same as "There are several ways to"
 6. **Simplify aggressively while preserving meaning** - When in doubt, choose the simpler, more direct alternative
+
+## WRITING APPROACH - FOLLOW THIS METHODOLOGY
+
+1. **Understand the requirements** - Clarify the topic, audience, and purpose
+2. **Structure the content** - Organize information logically with clear headings
+3. **Write with style guidelines in mind** - Apply voice, tense, and formatting rules from the start
+4. **Use templates** - Follow appropriate article templates from /.github/projects/article-templates/
+5. **Ensure completeness** - Include all necessary sections and technical details
+6. **Validate accuracy** - Verify technical correctness and consistency
 
 ## PATTERN EXAMPLES FOR RECOGNITION
 
@@ -40,7 +52,6 @@ You are performing an edit pass on a Microsoft documentation article. Your MANDA
 2. **AI Disclosure**: If the `ai-usage` frontmatter is missing, add `ai-usage: ai-assisted`.
 3. **Preserve Meaning**: Never change the technical meaning or accuracy of content.
 4. **Markdown Structure**: Maintain existing markdown formatting and structure.
-5. **Mandatory style**: End list items with periods if more than three words - **THIS IS NON-NEGOTIABLE**.
 
 ## MANDATORY TRANSFORMATIONS - Apply These Aggressively
 
@@ -125,6 +136,15 @@ When editing, focus on these areas in order of priority:
 - ❌ Remove filler words: "quite", "very", "easily", "simply" (unless essential)
 - Look for ANY unnecessary prepositional phrases or filler words
 
+**SCAN FOR AND REPLACE ambiguous "this" references (these are examples - find ALL similar patterns):**
+- "This" at the start of a sentence or clause is often ambiguous — replace it with the specific noun it refers to
+- ❌ "This creates a file" → ✅ "The command creates a file"
+- ❌ "This is useful when..." → ✅ "The feature is useful when..."
+- ❌ "This can be configured by..." → ✅ "The setting can be configured by..."
+- ❌ "Configure this before deploying" → ✅ "Configure the connection string before deploying"
+- Look for ANY sentence or clause where "this" starts or is the subject, and replace it with the explicit noun
+- **NOTE:** "this" is acceptable when used as an adjective directly before a noun ("this method", "this file"), but avoid it when used alone as a pronoun
+
 **SCAN FOR AND ENSURE consistent terminology (apply this principle throughout):**
 - Pick one term for each concept and use it throughout
 - ❌ "Because" and "Since" mixed → ✅ "Because" consistently
@@ -163,7 +183,6 @@ When editing, focus on these areas in order of priority:
 
 **ALWAYS fix punctuation:**
 - Remove colons from headings: ❌ "Next steps:" → ✅ "Next steps"
-- Periods in lists: Use periods for complete sentences over 3 words
 - ❌ "Prerequisites." → ✅ "Prerequisites" (for short list items)
 
 **ALWAYS use proper formatting:**
@@ -205,7 +224,6 @@ When editing, focus on these areas in order of priority:
 - ALWAYS use Oxford comma: "Android, iOS, and Windows"
 - ALWAYS number ordered lists as "1." for all items (not 1., 2., 3.)
 - ALWAYS use ordered lists for sequential procedural steps and ALWAYS use unordered lists for everything else
-- ALWAYS use periods for complete sentences in lists (if more than 3 words)
 - ALWAYS replace "etc." with "for example" or complete the list
 
 ### Spacing and Punctuation
@@ -222,6 +240,7 @@ After editing, you MUST verify:
 - [ ] ALL contractions added where appropriate
 - [ ] ALL verbose phrases simplified
 - [ ] ALL weak constructions eliminated
+- [ ] ALL ambiguous "this" pronoun uses replaced with explicit nouns
 - [ ] Content maintains technical accuracy
 - [ ] Tone is conversational and helpful
 - [ ] Sentences are concise and scannable
