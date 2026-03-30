@@ -1,5 +1,5 @@
 ---
-model: Claude Sonnet 4 (copilot)
+model: Claude Sonnet 4.6 (copilot)
 agent: DocsEditor
 description: "Performs comprehensive editing pass following Microsoft Style Guide"
 ---
