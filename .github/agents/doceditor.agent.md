@@ -231,19 +231,39 @@ When editing, focus on these areas in order of priority:
 - ALWAYS use no spaces around dashes: "Use pipelines—logical groups—to consolidate"
 - ALWAYS add blank lines around markdown elements (don't add extra if they exist)
 
-## FINAL VALIDATION - MANDATORY CHECKS
+## .NET VS .NET FRAMEWORK - REPO-SPECIFIC RULES
 
-After editing, you MUST verify:
-- [ ] ALL passive voice converted to active voice
-- [ ] ALL "you can/should" converted to imperative mood
-- [ ] ALL future tense converted to present tense for descriptions
-- [ ] ALL contractions added where appropriate
-- [ ] ALL verbose phrases simplified
-- [ ] ALL weak constructions eliminated
-- [ ] ALL ambiguous "this" pronoun uses replaced with explicit nouns
-- [ ] Content maintains technical accuracy
-- [ ] Tone is conversational and helpful
-- [ ] Sentences are concise and scannable
-- [ ] Formatting follows conventions
-- [ ] No consecutive headings without content
-- [ ] Code blocks are unchanged (except comments if needed)
+When documenting differences between .NET Framework and .NET (like .NET 6 and newer), choose the appropriate structure based on the type of difference.
+
+**Use Tabs** when differences are code-based:
+
+```markdown
+# [.NET](#tab/dotnet)
+
+<how it works in .NET>
+
+# [.NET Framework](#tab/dotnetframework)
+
+<how it works in .NET Framework>
+
+---
+```
+
+**Use Pivots** for extensive conceptual differences that can't easily be explained with tabs and a note:
+
+1. Add `zone_pivot_groups: desktop-version` to the article's frontmatter.
+1. Use zone pivot syntax in content:
+
+```markdown
+::: zone pivot="dotnet"
+
+Your .NET content here
+
+::: zone-end
+
+::: zone pivot="dotnetframework"
+
+Your .NET Framework content here
+
+::: zone-end
+```
