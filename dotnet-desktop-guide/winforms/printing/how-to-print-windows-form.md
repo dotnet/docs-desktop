@@ -1,7 +1,7 @@
 ---
 title: "How to print a Windows Form"
 description: Learn how to programmatically print a copy of the current Windows Form by using the CopyFromScreen method.
-ms.date: "05/04/2022"
+ms.date: 03/20/2026
 ms.service: dotnet-desktop
 ms.update-cycle: 365-days
 dev_langs:
@@ -17,7 +17,7 @@ ms.custom: devdivchpfy22
 
 # How to print a Form
 
-In the course of designing an app, you might design a form in such a way that it represents a printed page. The following code example shows how to print a copy of the current form by using the <xref:System.Drawing.Graphics.CopyFromScreen%2A> method.
+When you design an app, you might design a form that represents a printed page. The following code example shows how to print a copy of the current form by using the <xref:System.Drawing.Graphics.CopyFromScreen%2A> method.
 
 ## Example
 
@@ -32,7 +32,7 @@ To run the example code, add two components to a form with the following setting
 > | **PrintDocument** | `Name`         | `PrintDocument1` |
 > |                   | `PrintPage`    | `PrintDocument1_PrintPage` |
 
-The following code is run when the `Button1` is clicked. The code creates a `Graphics` object from the form and saves its contents to a `Bitmap` variable named `memoryImage`. The <xref:System.Drawing.Printing.PrintDocument.Print%2A?displayProperty=nameWithType> method is called, which invokes the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event. The print event handler draws the `memoryImage` bitmap on the printer page's `Graphics` object. When the print event handler code returns, the page is printed.
+The following code runs when you select `Button1`. The code creates a `Graphics` object from the form and saves its contents to a `Bitmap` variable named `memoryImage`. The code calls the <xref:System.Drawing.Printing.PrintDocument.Print%2A?displayProperty=nameWithType> method, which invokes the <xref:System.Drawing.Printing.PrintDocument.PrintPage> event. The print event handler draws the `memoryImage` bitmap on the printer page's `Graphics` object. When the print event handler code returns, the page is printed.
 
 :::code language="csharp" source="snippets/how-to-print-windows-form/csharp/Form1.cs":::
 

@@ -1,7 +1,7 @@
 ---
 title: "StackPanel"
 description: Learn how to use the StackPanel element to stack child elements horizontally or vertically in Windows Presentation Foundation (WPF) applications.
-ms.date: 02/05/2025
+ms.date: 03/20/2026
 ms.service: dotnet-desktop
 ms.update-cycle: 365-days
 helpviewer_keywords:
@@ -12,7 +12,7 @@ ai-usage: ai-assisted
 ---
 # StackPanel
 
-The <xref:System.Windows.Controls.StackPanel> element is used to stack child elements horizontally or vertically.
+Use the <xref:System.Windows.Controls.StackPanel> element to stack child elements horizontally or vertically.
 
 The following table lists common tasks for working with the StackPanel control:
 
@@ -28,7 +28,7 @@ The StackPanel control is a panel that arranges child elements in a single line,
 
 ### Content property
 
-The StackPanel uses the <xref:System.Windows.Controls.Panel.Children%2A> property as its content property. This property contains the collection of child elements that are arranged by the panel.
+The StackPanel uses the <xref:System.Windows.Controls.Panel.Children%2A> property as its content property. This property contains the collection of child elements that the panel arranges.
 
 ## See also
 

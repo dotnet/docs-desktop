@@ -39,8 +39,8 @@
         "xaml-services/**/*.yml": "dotnet-desktop"
       },
       "ms.topic": {
-        "winforms/**/**.md": "conceptual",
-        "wpf/**/**.md": "conceptual",
+        "winforms/**/**.md": "concept-article",
+        "wpf/**/**.md": "concept-article",
         "winforms/compiler-messages/**.md": "error-reference",
         "winforms/wfdev-diagnostics/**.md": "error-reference",
         "xaml-services/**/*.md": "reference",

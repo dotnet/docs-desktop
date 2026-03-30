@@ -1,7 +1,7 @@
 ---
 title: "Thumb"
 description: Learn about the Thumb control, which provides a dragging functionality for scroll bars, sliders, and other controls.
-ms.date: "01/28/2025"
+ms.date: 03/20/2026
 ms.service: dotnet-desktop
 ms.update-cycle: 365-days
 helpviewer_keywords:
@@ -16,7 +16,7 @@ ai-usage: ai-assisted
 
 # Thumb
 
-The <xref:System.Windows.Controls.Primitives.Thumb> control is a small control that can be dragged by the user. It's typically used as part of other controls such as scroll bars and sliders to provide dragging functionality. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance.
+The <xref:System.Windows.Controls.Primitives.Thumb> control is a small control that users can drag. It's typically used as part of other controls such as scroll bars and sliders to provide dragging functionality. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance.
 
 :::image type="content" source="./media/shared/thumb.png" alt-text="A screenshot of vertical and horizontal scroll bars in WPF.":::
 
@@ -40,7 +40,7 @@ The following table lists the visual states for the <xref:System.Windows.Control
 |-|-|-|
 |Normal|CommonStates|The control is in its normal state.|
 |MouseOver|CommonStates|The mouse is over the control.|
-|Pressed|CommonStates|The control is pressed (IsDragging is true).|
+|Pressed|CommonStates|The control is pressed (`IsDragging` is true).|
 |Disabled|CommonStates|The control is disabled.|
 |Focused|FocusStates|The control has keyboard focus.|
 |Unfocused|FocusStates|The control doesn't have keyboard focus.|
