@@ -15,20 +15,20 @@ Determine which mode applies, then execute all mandatory transformations defined
 ## EDITING APPROACH - FOLLOW THIS METHODOLOGY
 
 1. **Read the entire document first**
-2. **Systematically scan for PATTERNS, not just exact matches** - The examples below represent common patterns; look for similar constructions throughout
-3. **Apply ALL transformations aggressively** - Don't skip patterns just because they're not exactly like the examples
-4. **Focus especially on voice, tense, and weak constructions** - These are the most commonly missed transformations
-5. **Be thorough in pattern recognition** - If you see "There are many ways to", treat it the same as "There are several ways to"
-6. **Simplify aggressively while preserving meaning** - When in doubt, choose the simpler, more direct alternative
+2. **Verify document structure** - Check that the article has a logical heading hierarchy, an introduction, and appropriate sections (such as prerequisites, steps, and next steps). Flag any missing structural elements.
+3. **Systematically scan for PATTERNS, not just exact matches** - The examples below represent common patterns; look for similar constructions throughout
+4. **Apply ALL transformations aggressively** - Don't skip patterns just because they're not exactly like the examples
+5. **Focus especially on voice, tense, and weak constructions** - These are the most commonly missed transformations
+6. **Be thorough in pattern recognition** - If you see "There are many ways to", treat it the same as "There are several ways to"
+7. **Simplify aggressively while preserving meaning** - When in doubt, choose the simpler, more direct alternative
 
 ## WRITING APPROACH - FOLLOW THIS METHODOLOGY
 
 1. **Understand the requirements** - Clarify the topic, audience, and purpose
-2. **Structure the content** - Organize information logically with clear headings
+2. **Ask for structure** - Before writing, ask the user for a template or an existing article to follow for structure
 3. **Write with style guidelines in mind** - Apply voice, tense, and formatting rules from the start
-4. **Use templates** - Follow appropriate article templates from /.github/projects/article-templates/
-5. **Ensure completeness** - Include all necessary sections and technical details
-6. **Validate accuracy** - Verify technical correctness and consistency
+4. **Ensure completeness** - Include all necessary sections and technical details
+5. **Validate accuracy** - Verify technical correctness and consistency
 
 ## PATTERN EXAMPLES FOR RECOGNITION
 
@@ -230,6 +230,16 @@ When editing, focus on these areas in order of priority:
 - ALWAYS use one space after periods, colons, question marks
 - ALWAYS use no spaces around dashes: "Use pipelines—logical groups—to consolidate"
 - ALWAYS add blank lines around markdown elements (don't add extra if they exist)
+
+## API REFERENCES
+
+Use cross-references instead of plain text or raw URLs when referring to .NET APIs:
+
+- Format: `<xref:api-doc-ID>`
+- Find API doc IDs in XML files at https://github.com/dotnet/dotnet-api-docs
+  - For types: use the `Value` attribute of `<TypeSignature>` where `Language="DocId"` (omit the first 2 characters)
+  - For members: use the `Value` attribute of `<MemberSignature>` where `Language="DocId"` (omit the first 2 characters)
+- If unsure of the doc ID, use the API browser: `https://learn.microsoft.com/api/apibrowser/dotnet/search?api-version=0.2&locale=en-us&search={API_NAME}&$skip=0&$top=5` and use the `url` value from the results as a manual link.
 
 ## .NET VS .NET FRAMEWORK - REPO-SPECIFIC RULES
 
