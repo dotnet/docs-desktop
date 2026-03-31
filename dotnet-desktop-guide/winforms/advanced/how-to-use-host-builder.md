@@ -34,7 +34,7 @@ In C#, configure the host in `Program.cs` alongside <xref:System.Windows.Forms.A
 
 The following code shows the complete `Program.cs`:
 
-:::code source="snippets/how-to-use-host-builder/csharp/Program.cs":::
+:::code language="csharp" source="snippets/how-to-use-host-builder/csharp/Program.cs":::
 
 ### Visual Basic setup
 
@@ -46,7 +46,7 @@ In Visual Basic, configure the host through the VB Application Framework's `Star
 
 The following code shows the complete `ApplicationEvents.vb`:
 
-:::code source="snippets/how-to-use-host-builder/vb/ApplicationEvents.vb":::
+:::code language="vb" source="snippets/how-to-use-host-builder/vb/ApplicationEvents.vb":::
 
 > [!NOTE]
 > The VB Application Framework creates and manages the startup form automatically through project properties. Forms retrieve services from `My.MyApplication.HostInstance.Services` instead of using constructor injection.
@@ -61,13 +61,13 @@ Once the host runs, you can register custom services and inject them into your f
 
 The following code defines an `IGreetingService` interface:
 
-:::code source="snippets/how-to-use-host-builder/csharp/IGreetingService.cs" id="IGreetingService":::
-:::code source="snippets/how-to-use-host-builder/vb/IGreetingService.vb" id="IGreetingService":::
+:::code language="csharp" source="snippets/how-to-use-host-builder/csharp/IGreetingService.cs" id="IGreetingService":::
+:::code language="vb" source="snippets/how-to-use-host-builder/vb/IGreetingService.vb" id="IGreetingService":::
 
 Next, create a class that implements the interface. The `GreetingService` class injects <xref:Microsoft.Extensions.Configuration.IConfiguration> to read the greeting message from `appsettings.json`:
 
-:::code source="snippets/how-to-use-host-builder/csharp/GreetingService.cs" id="GreetingService":::
-:::code source="snippets/how-to-use-host-builder/vb/GreetingService.vb" id="GreetingService":::
+:::code language="csharp" source="snippets/how-to-use-host-builder/csharp/GreetingService.cs" id="GreetingService":::
+:::code language="vb" source="snippets/how-to-use-host-builder/vb/GreetingService.vb" id="GreetingService":::
 
 ## Run a hosted service
 
@@ -79,8 +79,8 @@ The Generic Host can also run background services that participate in the applic
 
 The following class writes to the debug output when the host starts and stops:
 
-:::code source="snippets/how-to-use-host-builder/csharp/SampleLifecycleService.cs" id="SampleLifecycleService":::
-:::code source="snippets/how-to-use-host-builder/vb/SampleLifecycleService.vb" id="SampleLifecycleService":::
+:::code language="csharp" source="snippets/how-to-use-host-builder/csharp/SampleLifecycleService.cs" id="SampleLifecycleService":::
+:::code language="vb" source="snippets/how-to-use-host-builder/vb/SampleLifecycleService.vb" id="SampleLifecycleService":::
 
 The host calls `StartAsync` during <xref:Microsoft.Extensions.Hosting.IHost.StartAsync%2A> and `StopAsync` during <xref:Microsoft.Extensions.Hosting.IHost.StopAsync%2A>, so the debug output appears in the **Output** window in Visual Studio.
 
@@ -94,7 +94,7 @@ In C#, `Form1` is resolved from the DI container, so constructor injection works
 1. Store the injected services in private fields.
 1. Use the services in event handlers or other methods.
 
-:::code source="snippets/how-to-use-host-builder/csharp/Form1.cs" id="Form1":::
+:::code language="csharp" source="snippets/how-to-use-host-builder/csharp/Form1.cs" id="Form1":::
 
 In Visual Basic, the Application Framework creates the startup form automatically, so constructor injection isn't available. Resolve services from the host in the `Load` event instead:
 
@@ -102,7 +102,7 @@ In Visual Basic, the Application Framework creates the startup form automaticall
 1. Call `GetRequiredService(Of T)()` for each service the form needs.
 1. Store the resolved services in fields.
 
-:::code source="snippets/how-to-use-host-builder/vb/Form1.vb" id="Form1":::
+:::code language="vb" source="snippets/how-to-use-host-builder/vb/Form1.vb" id="Form1":::
 
 ## Add configuration
 
@@ -113,11 +113,11 @@ In Visual Basic, the Application Framework creates the startup form automaticall
 
 The following example provides a `GreetingMessage` value that `GreetingService` reads:
 
-:::code source="snippets/how-to-use-host-builder/csharp/appsettings.json":::
+:::code language="json" source="snippets/how-to-use-host-builder/csharp/appsettings.json":::
 
 Update the project file to copy the configuration file to the output directory:
 
-:::code source="snippets/how-to-use-host-builder/csharp/HostBuilderApp.csproj":::
+:::code language="xml" source="snippets/how-to-use-host-builder/csharp/HostBuilderApp.csproj":::
 
 ## Related content
 
