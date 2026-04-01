@@ -22,9 +22,11 @@ The .NET Generic Host provides a standardized way to configure and run applicati
 
 ## Set up the Generic Host
 
+The setup differs slightly between C# and Visual Basic. In C#, you configure the host directly in `Program.cs`. In Visual Basic, you use the Application Framework's startup and shutdown events in `ApplicationEvents.vb`.
+
 ### C# setup
 
-In C#, configure the host in `Program.cs` alongside <xref:System.Windows.Forms.ApplicationConfiguration.Initialize>. The setup follows these steps:
+In C#, configure the host in `Program.cs` alongside `ApplicationConfiguration.Initialize()`. The setup follows these steps:
 
 1. Call `ApplicationConfiguration.Initialize()` to configure WinForms defaults, including visual styles, high DPI mode, and default fonts.
 1. Build the host with <xref:Microsoft.Extensions.Hosting.Host.CreateDefaultBuilder%2A> and register services.
@@ -40,16 +42,27 @@ The following code shows the complete `Program.cs`:
 
 In Visual Basic, configure the host through the VB Application Framework's `Startup` and `Shutdown` events in `ApplicationEvents.vb`:
 
+1. Remove the **Startup form** setting from the Application Framework project properties.
+
+   This is the `<MainForm>` setting in the `Application.myapp` file.
+
+   > [!NOTE]
+   > This prevents the designer from generating an `OnCreateMainForm` override that bypasses DI.
+
 1. Handle the `Startup` event to build and start the host.
 1. Handle the `Shutdown` event to stop and dispose of the host.
+1. Override `OnCreateMainForm` to resolve the main form from the DI container.
 1. Expose the host through a shared property so that forms can resolve services.
 
 The following code shows the complete `ApplicationEvents.vb`:
 
 :::code language="vb" source="snippets/how-to-use-host-builder/vb/ApplicationEvents.vb":::
 
-> [!NOTE]
-> The VB Application Framework creates and manages the startup form automatically through project properties. Forms retrieve services from `My.MyApplication.HostInstance.Services` instead of using constructor injection.
+#### Visual Basic without the Application Framework
+
+If you're not using the Visual Basic Application Framework, you can configure the host directly in the `Main` method of your startup class:
+
+:::code language="vb" source="snippets/how-to-use-host-builder/vb/AlternativeProgram.vb" id="ProgramVersion":::
 
 ## Register and consume services
 
