@@ -18,7 +18,7 @@ The .NET Generic Host provides a standardized way to configure and run applicati
 ## Prerequisites
 
 - .NET 10 SDK
-- The `Microsoft.Extensions.Hosting` NuGet package
+- The `Microsoft.Extensions.Hosting` NuGet package.
 
 ## Set up the Generic Host
 
