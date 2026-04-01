@@ -68,32 +68,28 @@ If you're not using the Visual Basic Application Framework, you can configure th
 
 Once the host runs, you can register custom services and inject them into your forms. To create and register a service:
 
-1. Define a service interface.
-1. Create a class that implements the interface.
-1. Register the interface and implementation on the `Services` property.
+1. Define a service interface:
 
-The following code defines an `IGreetingService` interface:
+   :::code language="csharp" source="snippets/how-to-use-host-builder/csharp/IGreetingService.cs" id="IGreetingService":::
+   :::code language="vb" source="snippets/how-to-use-host-builder/vb/IGreetingService.vb" id="IGreetingService":::
 
-:::code language="csharp" source="snippets/how-to-use-host-builder/csharp/IGreetingService.cs" id="IGreetingService":::
-:::code language="vb" source="snippets/how-to-use-host-builder/vb/IGreetingService.vb" id="IGreetingService":::
+1. Create a class that implements the interface. The `GreetingService` class injects <xref:Microsoft.Extensions.Configuration.IConfiguration> to read the greeting message from `appsettings.json`:
 
-Next, create a class that implements the interface. The `GreetingService` class injects <xref:Microsoft.Extensions.Configuration.IConfiguration> to read the greeting message from `appsettings.json`:
+   :::code language="csharp" source="snippets/how-to-use-host-builder/csharp/GreetingService.cs" id="GreetingService":::
+   :::code language="vb" source="snippets/how-to-use-host-builder/vb/GreetingService.vb" id="GreetingService":::
 
-:::code language="csharp" source="snippets/how-to-use-host-builder/csharp/GreetingService.cs" id="GreetingService":::
-:::code language="vb" source="snippets/how-to-use-host-builder/vb/GreetingService.vb" id="GreetingService":::
+1. Register the interface and implementation on the builder's `Services` property, as shown in the [Set up the Generic Host](#set-up-the-generic-host) section.
 
 ## Run a hosted service
 
 The Generic Host can also run background services that participate in the application's lifecycle. An <xref:Microsoft.Extensions.Hosting.IHostedService> implementation receives callbacks when the host starts and stops. To add a hosted service:
 
-1. Create a class that implements <xref:Microsoft.Extensions.Hosting.IHostedService>.
-1. Write startup logic in `StartAsync` and cleanup logic in `StopAsync`.
-1. Register the service with `AddHostedService` on the builder's `Services` property.
+1. Create a class that implements <xref:Microsoft.Extensions.Hosting.IHostedService>. The following class writes to the debug output when the host starts and stops:
 
-The following class writes to the debug output when the host starts and stops:
+   :::code language="csharp" source="snippets/how-to-use-host-builder/csharp/SampleLifecycleService.cs" id="SampleLifecycleService":::
+   :::code language="vb" source="snippets/how-to-use-host-builder/vb/SampleLifecycleService.vb" id="SampleLifecycleService":::
 
-:::code language="csharp" source="snippets/how-to-use-host-builder/csharp/SampleLifecycleService.cs" id="SampleLifecycleService":::
-:::code language="vb" source="snippets/how-to-use-host-builder/vb/SampleLifecycleService.vb" id="SampleLifecycleService":::
+1. Register the service with `AddHostedService` on the builder's `Services` property, as shown in the [Set up the Generic Host](#set-up-the-generic-host) section.
 
 The host calls `StartAsync` during <xref:Microsoft.Extensions.Hosting.IHost.StartAsync%2A> and `StopAsync` during <xref:Microsoft.Extensions.Hosting.IHost.StopAsync%2A>, so the debug output appears in the **Output** window in Visual Studio.
 
@@ -101,7 +97,7 @@ The host calls `StartAsync` during <xref:Microsoft.Extensions.Hosting.IHost.Star
 
 How a form consumes services depends on how it's created.
 
-In C#, `Form1` is resolved from the DI container, so constructor injection works directly. To consume services:
+In C#, `Form1` is resolved from the DI container, so constructor injection works directly:
 
 1. Add constructor parameters for each service the form needs.
 1. Store the injected services in private fields.
@@ -121,16 +117,13 @@ In Visual Basic, the Application Framework creates the startup form automaticall
 
 <xref:Microsoft.Extensions.Hosting.Host.CreateApplicationBuilder%2A> automatically loads `appsettings.json` when the file is in the output directory. To add a configuration file to your project:
 
-1. Create an `appsettings.json` file in the project root.
-1. Set `CopyToOutputDirectory` to `PreserveNewest` in the project file so the file copies to the output directory.
+1. Create an `appsettings.json` file in the project root with your configuration values:
 
-The following example provides a `GreetingMessage` value that `GreetingService` reads:
+   :::code language="json" source="snippets/how-to-use-host-builder/csharp/appsettings.json":::
 
-:::code language="json" source="snippets/how-to-use-host-builder/csharp/appsettings.json":::
+1. Set `CopyToOutputDirectory` to `PreserveNewest` in the project file so the file copies to the output directory:
 
-Update the project file to copy the configuration file to the output directory:
-
-:::code language="xml" source="snippets/how-to-use-host-builder/csharp/HostBuilderApp.csproj":::
+   :::code language="xml" source="snippets/how-to-use-host-builder/csharp/HostBuilderApp.csproj":::
 
 ## Related content
 

@@ -24,65 +24,48 @@ The .NET Generic Host provides a standardized way to configure and run applicati
 
 To integrate the Generic Host with your WPF app:
 
-1. Remove `StartupUri` from `App.xaml` and use the `Startup` event instead.
-1. Build the host in the startup handler.
-1. Register services in the DI container.
-1. Stop the host when the application exits.
+1. Remove `StartupUri` from the application XAML file and wire up the `Startup` and `Exit` event handlers:
 
-First, update the application XAML file to remove `StartupUri` and wire up the `Startup` and `Exit` event handlers:
+   :::code language="xaml" source="snippets/how-to-use-host-builder/csharp/App.xaml":::
+   :::code language="xaml" source="snippets/how-to-use-host-builder/vb/Application.xaml":::
 
-:::code language="xaml" source="snippets/how-to-use-host-builder/csharp/App.xaml":::
+   > [!NOTE]
+   > In Visual Basic, this file is named `Application.xaml` instead of `App.xaml`.
 
-> [!NOTE]
-> In Visual Basic, this file is named `Application.xaml` instead of `App.xaml`.
+1. Build the host in the code-behind. The `Application_Startup` method creates the host with <xref:Microsoft.Extensions.Hosting.Host.CreateApplicationBuilder%2A>, registers services on the <xref:Microsoft.Extensions.Hosting.HostApplicationBuilder.Services%2A> property, starts the host, and shows the main window:
 
-:::code language="xaml" source="snippets/how-to-use-host-builder/vb/Application.xaml":::
+   :::code language="csharp" source="snippets/how-to-use-host-builder/csharp/App.xaml.cs" id="CreateHost":::
+   :::code language="vb" source="snippets/how-to-use-host-builder/vb/Application.xaml.vb" id="CreateHost":::
 
-Next, configure the host in the code-behind. The `Application_Startup` method builds the host, registers services, starts the host, and shows the main window:
+1. Stop and dispose of the host when the application exits to clean up resources:
 
-:::code language="csharp" source="snippets/how-to-use-host-builder/csharp/App.xaml.cs" id="CreateHost":::
-:::code language="vb" source="snippets/how-to-use-host-builder/vb/Application.xaml.vb" id="CreateHost":::
-
-The key parts of the host setup are:
-
-- <xref:Microsoft.Extensions.Hosting.Host.CreateApplicationBuilder%2A> sets up configuration (including `appsettings.json`), logging, and the DI container.
-- The <xref:Microsoft.Extensions.Hosting.HostApplicationBuilder.Services%2A> property provides access to the DI container for registering your services and windows.
-- The host starts asynchronously, then resolves and shows `MainWindow`.
-
-When the application exits, stop and dispose of the host to clean up resources:
-
-:::code language="csharp" source="snippets/how-to-use-host-builder/csharp/App.xaml.cs" id="StopHost":::
-:::code language="vb" source="snippets/how-to-use-host-builder/vb/Application.xaml.vb" id="StopHost":::
+   :::code language="csharp" source="snippets/how-to-use-host-builder/csharp/App.xaml.cs" id="StopHost":::
+   :::code language="vb" source="snippets/how-to-use-host-builder/vb/Application.xaml.vb" id="StopHost":::
 
 ## Create a service
 
 The `Services` property in the previous section registers services with the DI container. To create a custom service:
 
-1. Define a service interface.
-1. Create a class that implements the interface.
+1. Define a service interface:
 
-The following code defines an `IGreetingService` interface:
+   :::code language="csharp" source="snippets/how-to-use-host-builder/csharp/IGreetingService.cs" id="IGreetingService":::
+   :::code language="vb" source="snippets/how-to-use-host-builder/vb/IGreetingService.vb" id="IGreetingService":::
 
-:::code language="csharp" source="snippets/how-to-use-host-builder/csharp/IGreetingService.cs" id="IGreetingService":::
-:::code language="vb" source="snippets/how-to-use-host-builder/vb/IGreetingService.vb" id="IGreetingService":::
+1. Create a class that implements the interface. The `GreetingService` class injects <xref:Microsoft.Extensions.Configuration.IConfiguration> to read values from `appsettings.json`:
 
-Next, create a class that implements the interface. The `GreetingService` class injects <xref:Microsoft.Extensions.Configuration.IConfiguration> to read values from `appsettings.json`:
-
-:::code language="csharp" source="snippets/how-to-use-host-builder/csharp/GreetingService.cs" id="GreetingService":::
-:::code language="vb" source="snippets/how-to-use-host-builder/vb/GreetingService.vb" id="GreetingService":::
+   :::code language="csharp" source="snippets/how-to-use-host-builder/csharp/GreetingService.cs" id="GreetingService":::
+   :::code language="vb" source="snippets/how-to-use-host-builder/vb/GreetingService.vb" id="GreetingService":::
 
 ## Run a hosted service
 
 The Generic Host can also run background services that participate in the application's lifecycle. An <xref:Microsoft.Extensions.Hosting.IHostedService> implementation receives callbacks when the host starts and stops. To add a hosted service:
 
-1. Create a class that implements <xref:Microsoft.Extensions.Hosting.IHostedService>.
-1. Write startup logic in `StartAsync` and cleanup logic in `StopAsync`.
-1. Register the service with `AddHostedService` on the builder's `Services` property.
+1. Create a class that implements <xref:Microsoft.Extensions.Hosting.IHostedService>. The following class writes to the debug output when the host starts and stops:
 
-The following class writes to the debug output when the host starts and stops:
+   :::code language="csharp" source="snippets/how-to-use-host-builder/csharp/SampleLifecycleService.cs" id="SampleLifecycleService":::
+   :::code language="vb" source="snippets/how-to-use-host-builder/vb/SampleLifecycleService.vb" id="SampleLifecycleService":::
 
-:::code language="csharp" source="snippets/how-to-use-host-builder/csharp/SampleLifecycleService.cs" id="SampleLifecycleService":::
-:::code language="vb" source="snippets/how-to-use-host-builder/vb/SampleLifecycleService.vb" id="SampleLifecycleService":::
+1. Register the service with `AddHostedService` on the builder's `Services` property, as shown in the `Application_Startup` method in the [Set up the Generic Host](#set-up-the-generic-host) section.
 
 The host calls `StartAsync` during <xref:Microsoft.Extensions.Hosting.IHost.StartAsync%2A> and `StopAsync` during <xref:Microsoft.Extensions.Hosting.IHost.StopAsync%2A>, so the debug output appears in the **Output** window in Visual Studio.
 
@@ -103,16 +86,13 @@ The following code shows `MainWindow` accepting `ILogger<MainWindow>` and `IGree
 
 <xref:Microsoft.Extensions.Hosting.Host.CreateApplicationBuilder%2A> automatically loads `appsettings.json` when the file is in the output directory. To add a configuration file to your project:
 
-1. Create an `appsettings.json` file in the project root.
-1. Set `CopyToOutputDirectory` to `PreserveNewest` in the project file so the file copies to the output directory.
+1. Create an `appsettings.json` file in the project root with your configuration values:
 
-The following example provides a `GreetingMessage` value that `GreetingService` reads:
+   :::code language="json" source="snippets/how-to-use-host-builder/csharp/appsettings.json":::
 
-:::code language="json" source="snippets/how-to-use-host-builder/csharp/appsettings.json":::
+1. Set `CopyToOutputDirectory` to `PreserveNewest` in the project file so the file copies to the output directory:
 
-Update the project file to copy the configuration file to the output directory:
-
-:::code language="xml" source="snippets/how-to-use-host-builder/csharp/HostBuilderApp.csproj":::
+   :::code language="xml" source="snippets/how-to-use-host-builder/csharp/HostBuilderApp.csproj":::
 
 ## Related content
 
