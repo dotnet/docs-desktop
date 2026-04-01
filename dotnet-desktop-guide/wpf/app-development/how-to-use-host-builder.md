@@ -54,13 +54,12 @@ When the application exits, stop and dispose of the host to clean up resources:
 :::code language="csharp" source="snippets/how-to-use-host-builder/csharp/App.xaml.cs" id="StopHost":::
 :::code language="vb" source="snippets/how-to-use-host-builder/vb/Application.xaml.vb" id="StopHost":::
 
-## Register and consume services
+## Create a service
 
-Once the host runs, you can register custom services and inject them into your windows. To create and register a service:
+The `ConfigureServices` callback in the previous section registers services with the DI container. To create a custom service:
 
 1. Define a service interface.
 1. Create a class that implements the interface.
-1. Register the interface and implementation in the `ConfigureServices` callback.
 
 The following code defines an `IGreetingService` interface:
 
@@ -71,11 +70,6 @@ Next, create a class that implements the interface. The `GreetingService` class 
 
 :::code language="csharp" source="snippets/how-to-use-host-builder/csharp/GreetingService.cs" id="GreetingService":::
 :::code language="vb" source="snippets/how-to-use-host-builder/vb/GreetingService.vb" id="GreetingService":::
-
-Register the service and the main window in the `ConfigureServices` callback:
-
-:::code language="csharp" source="snippets/how-to-use-host-builder/csharp/App.xaml.cs" id="RegisterServices":::
-:::code language="vb" source="snippets/how-to-use-host-builder/vb/Application.xaml.vb" id="RegisterServices":::
 
 ## Run a hosted service
 

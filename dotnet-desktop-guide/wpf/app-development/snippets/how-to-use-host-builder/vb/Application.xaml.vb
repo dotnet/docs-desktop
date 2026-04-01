@@ -9,7 +9,11 @@ Class Application
     ' <CreateHost>
     Private Async Sub Application_Startup(sender As Object, e As StartupEventArgs)
         _host = Host.CreateDefaultBuilder() _
-            .ConfigureServices(AddressOf ConfigureServices) _
+            .ConfigureServices(Sub(context, services)
+                                   services.AddHostedService(Of SampleLifecycleService)()
+                                   services.AddSingleton(Of IGreetingService, GreetingService)()
+                                   services.AddSingleton(Of MainWindow)()
+                               End Sub) _
             .Build()
 
         Await _host.StartAsync()
@@ -18,14 +22,6 @@ Class Application
         mainWindow.Show()
     End Sub
     ' </CreateHost>
-
-    ' <RegisterServices>
-    Private Shared Sub ConfigureServices(context As HostBuilderContext, services As IServiceCollection)
-        services.AddHostedService(Of SampleLifecycleService)()
-        services.AddSingleton(Of IGreetingService, GreetingService)()
-        services.AddSingleton(Of MainWindow)()
-    End Sub
-    ' </RegisterServices>
 
     ' <StopHost>
     Private Async Sub Application_Exit(sender As Object, e As ExitEventArgs)
