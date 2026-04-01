@@ -29,7 +29,7 @@ The setup differs slightly between C# and Visual Basic. In C#, you configure the
 In C#, configure the host in `Program.cs` alongside `ApplicationConfiguration.Initialize()`. The setup follows these steps:
 
 1. Call `ApplicationConfiguration.Initialize()` to configure WinForms defaults, including visual styles, high DPI mode, and default fonts.
-1. Build the host with <xref:Microsoft.Extensions.Hosting.Host.CreateDefaultBuilder%2A> and register services.
+1. Build the host with <xref:Microsoft.Extensions.Hosting.Host.CreateApplicationBuilder%2A> and register services.
 1. Start the host and resolve the main form from DI.
 1. Pass the form to <xref:System.Windows.Forms.Application.Run%2A>.
 1. Stop and dispose of the host after the form closes.
@@ -70,7 +70,7 @@ Once the host runs, you can register custom services and inject them into your f
 
 1. Define a service interface.
 1. Create a class that implements the interface.
-1. Register the interface and implementation in the `ConfigureServices` callback.
+1. Register the interface and implementation on the `Services` property.
 
 The following code defines an `IGreetingService` interface:
 
@@ -88,7 +88,7 @@ The Generic Host can also run background services that participate in the applic
 
 1. Create a class that implements <xref:Microsoft.Extensions.Hosting.IHostedService>.
 1. Write startup logic in `StartAsync` and cleanup logic in `StopAsync`.
-1. Register the service with `AddHostedService` in the `ConfigureServices` callback.
+1. Register the service with `AddHostedService` on the builder's `Services` property.
 
 The following class writes to the debug output when the host starts and stops:
 
@@ -119,7 +119,7 @@ In Visual Basic, the Application Framework creates the startup form automaticall
 
 ## Add configuration
 
-<xref:Microsoft.Extensions.Hosting.Host.CreateDefaultBuilder%2A> automatically loads `appsettings.json` when the file is in the output directory. To add a configuration file to your project:
+<xref:Microsoft.Extensions.Hosting.Host.CreateApplicationBuilder%2A> automatically loads `appsettings.json` when the file is in the output directory. To add a configuration file to your project:
 
 1. Create an `appsettings.json` file in the project root.
 1. Set `CopyToOutputDirectory` to `PreserveNewest` in the project file so the file copies to the output directory.

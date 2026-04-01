@@ -10,13 +10,13 @@ Namespace My
 
         ' Build and start the host when the application starts.
         Private Sub MyApplication_Startup(sender As Object, e As Microsoft.VisualBasic.ApplicationServices.StartupEventArgs) Handles Me.Startup
-            _host = Host.CreateDefaultBuilder() _
-                .ConfigureServices(Sub(context, services)
-                                       services.AddHostedService(Of SampleLifecycleService)()
-                                       services.AddTransient(Of Form1)()
-                                       services.AddSingleton(Of IGreetingService, GreetingService)()
-                                   End Sub) _
-                .Build()
+            Dim builder = Host.CreateApplicationBuilder()
+
+            builder.Services.AddHostedService(Of SampleLifecycleService)()
+            builder.Services.AddTransient(Of Form1)()
+            builder.Services.AddSingleton(Of IGreetingService, GreetingService)()
+
+            _host = builder.Build()
 
             _host.Start()
         End Sub

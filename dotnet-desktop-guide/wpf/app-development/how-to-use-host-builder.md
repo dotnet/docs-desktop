@@ -45,8 +45,8 @@ Next, configure the host in the code-behind. The `Application_Startup` method bu
 
 The key parts of the host setup are:
 
-- <xref:Microsoft.Extensions.Hosting.Host.CreateDefaultBuilder%2A> sets up configuration (including `appsettings.json`), logging, and the DI container.
-- <xref:Microsoft.Extensions.Hosting.IHostBuilder.ConfigureServices%2A> registers your services and windows with the DI container.
+- <xref:Microsoft.Extensions.Hosting.Host.CreateApplicationBuilder%2A> sets up configuration (including `appsettings.json`), logging, and the DI container.
+- The <xref:Microsoft.Extensions.Hosting.HostApplicationBuilder.Services%2A> property provides access to the DI container for registering your services and windows.
 - The host starts asynchronously, then resolves and shows `MainWindow`.
 
 When the application exits, stop and dispose of the host to clean up resources:
@@ -56,7 +56,7 @@ When the application exits, stop and dispose of the host to clean up resources:
 
 ## Create a service
 
-The `ConfigureServices` callback in the previous section registers services with the DI container. To create a custom service:
+The `Services` property in the previous section registers services with the DI container. To create a custom service:
 
 1. Define a service interface.
 1. Create a class that implements the interface.
@@ -77,7 +77,7 @@ The Generic Host can also run background services that participate in the applic
 
 1. Create a class that implements <xref:Microsoft.Extensions.Hosting.IHostedService>.
 1. Write startup logic in `StartAsync` and cleanup logic in `StopAsync`.
-1. Register the service with `AddHostedService` in the `ConfigureServices` callback.
+1. Register the service with `AddHostedService` on the builder's `Services` property.
 
 The following class writes to the debug output when the host starts and stops:
 
@@ -101,7 +101,7 @@ The following code shows `MainWindow` accepting `ILogger<MainWindow>` and `IGree
 
 ## Add configuration
 
-<xref:Microsoft.Extensions.Hosting.Host.CreateDefaultBuilder%2A> automatically loads `appsettings.json` when the file is in the output directory. To add a configuration file to your project:
+<xref:Microsoft.Extensions.Hosting.Host.CreateApplicationBuilder%2A> automatically loads `appsettings.json` when the file is in the output directory. To add a configuration file to your project:
 
 1. Create an `appsettings.json` file in the project root.
 1. Set `CopyToOutputDirectory` to `PreserveNewest` in the project file so the file copies to the output directory.

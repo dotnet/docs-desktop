@@ -8,13 +8,13 @@ Class Application
 
     ' <CreateHost>
     Private Async Sub Application_Startup(sender As Object, e As StartupEventArgs)
-        _host = Host.CreateDefaultBuilder() _
-            .ConfigureServices(Sub(context, services)
-                                   services.AddHostedService(Of SampleLifecycleService)()
-                                   services.AddSingleton(Of IGreetingService, GreetingService)()
-                                   services.AddSingleton(Of MainWindow)()
-                               End Sub) _
-            .Build()
+        Dim builder = Host.CreateApplicationBuilder()
+
+        builder.Services.AddHostedService(Of SampleLifecycleService)()
+        builder.Services.AddSingleton(Of IGreetingService, GreetingService)()
+        builder.Services.AddSingleton(Of MainWindow)()
+
+        _host = builder.Build()
 
         Await _host.StartAsync()
 

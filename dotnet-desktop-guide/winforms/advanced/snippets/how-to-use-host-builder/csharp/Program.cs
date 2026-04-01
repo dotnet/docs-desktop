@@ -11,14 +11,13 @@ static class Program
         ApplicationConfiguration.Initialize();
 
         // <CreateHost>
-        IHost host = Host.CreateDefaultBuilder()
-            .ConfigureServices((context, services) =>
-            {
-                services.AddHostedService<SampleLifecycleService>();
-                services.AddTransient<Form1>();
-                services.AddSingleton<IGreetingService, GreetingService>();
-            })
-            .Build();
+        var builder = Host.CreateApplicationBuilder();
+
+        builder.Services.AddHostedService<SampleLifecycleService>();
+        builder.Services.AddTransient<Form1>();
+        builder.Services.AddSingleton<IGreetingService, GreetingService>();
+
+        IHost host = builder.Build();
 
         host.Start();
         // </CreateHost>

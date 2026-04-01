@@ -11,16 +11,15 @@ public partial class App : Application
     // <CreateHost>
     private async void Application_Startup(object sender, StartupEventArgs e)
     {
-        _host = Host.CreateDefaultBuilder()
-            // <RegisterServices>
-            .ConfigureServices((context, services) =>
-            {
-                services.AddHostedService<SampleLifecycleService>();
-                services.AddSingleton<IGreetingService, GreetingService>();
-                services.AddSingleton<MainWindow>();
-            })
-            // </RegisterServices>
-            .Build();
+        var builder = Host.CreateApplicationBuilder();
+
+        // <RegisterServices>
+        builder.Services.AddHostedService<SampleLifecycleService>();
+        builder.Services.AddSingleton<IGreetingService, GreetingService>();
+        builder.Services.AddSingleton<MainWindow>();
+        // </RegisterServices>
+
+        _host = builder.Build();
 
         await _host.StartAsync();
 
