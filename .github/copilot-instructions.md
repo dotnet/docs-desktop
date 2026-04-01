@@ -42,6 +42,13 @@ To find API doc IDs:
 
 If unsure, use API browser: `https://learn.microsoft.com/api/apibrowser/dotnet/search?api-version=0.2&locale=en-us&search={API_NAME}&$skip=0&$top=5` and then use the `url` value from the results as a manual link.
 
+### Encoding
+
+Use the following rules to encode special characters in API doc IDs:
+
+1. Encode `#` as `%23` in API doc IDs. For example, `System.String.#ctor` becomes `System.String.%23ctor`.
+2. **DO NOT** encode `*` or \` (backtick) characters as `%2A` or `%60` respectively.
+
 ## Code Snippets
 
 For snippets >6 lines:
@@ -51,6 +58,11 @@ For snippets >6 lines:
 1. All code should use the latest stable versions/features.
 1. Create examples in both C# and Visual Basic unless the article referencing the snippet resides in the in the `csharp`, `fsharp`, and `visual-basic` language folders.
 1. When you add code, use code comments sparingly because they don't get localized. You can use them to briefly clarify code-specific details (such as logic, parameters, or edge cases). Put any critical information and context in the markdown text of the referencing article.
+1. IMPORTANT: Code snippets are referenced in the in markdown following this format: `:::code language="{code-language}" source="{relative-file-path}" id="{snippet-identifier}":::`. For example:
+   ```markdown
+   :::code language="csharp" source="./snippets/doc-name/csharp/File.cs" id="ButtonClick":::
+   :::code language="vb" source="./snippets/doc-name/vb/File.vb" id="ButtonClick":::
+   ```
 
 ## .NET Framework vs .NET differences
 
