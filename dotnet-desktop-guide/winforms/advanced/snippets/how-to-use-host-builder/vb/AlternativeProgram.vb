@@ -11,14 +11,13 @@ Namespace OtherNamespace
         <STAThread()>
         Friend Sub Main(args As String())
             ' Configure the host with services
-            _host = Host.CreateDefaultBuilder(args) _
-            .ConfigureServices(Sub(context, services)
-                                   services.AddHostedService(Of SampleLifecycleService)()
-                                   services.AddTransient(Of Form1)()
-                                   services.AddSingleton(Of IGreetingService, GreetingService)()
-                               End Sub) _
-            .Build()
+            Dim builder = Host.CreateApplicationBuilder(args)
 
+            builder.Services.AddHostedService(Of SampleLifecycleService)()
+            builder.Services.AddTransient(Of Form1)()
+            builder.Services.AddSingleton(Of IGreetingService, GreetingService)()
+
+            _host = builder.Build()
             _host.Start()
 
             ' Run the application with the main form resolved from the host
