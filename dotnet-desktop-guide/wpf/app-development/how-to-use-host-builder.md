@@ -17,7 +17,6 @@ The .NET Generic Host provides a standardized way to configure and run applicati
 
 ## Prerequisites
 
-- .NET 10 SDK
 - The `Microsoft.Extensions.Hosting` NuGet package.
 
 ## Set up the Generic Host
@@ -26,13 +25,11 @@ To integrate the Generic Host with your WPF app:
 
 1. Remove `StartupUri` from the application XAML file and wire up the `Startup` and `Exit` event handlers:
 
-   :::code language="xaml" source="snippets/how-to-use-host-builder/csharp/App.xaml":::
-   :::code language="xaml" source="snippets/how-to-use-host-builder/vb/Application.xaml":::
+   :::code language="xaml" source="snippets/how-to-use-host-builder/csharp/App.xaml" highlight="4,5":::
 
-   > [!NOTE]
-   > In Visual Basic, this file is named `Application.xaml` instead of `App.xaml`.
+1. Build the host in the code-behind.
 
-1. Build the host in the code-behind. The `Application_Startup` method creates the host with <xref:Microsoft.Extensions.Hosting.Host.CreateApplicationBuilder%2A>, registers services on the <xref:Microsoft.Extensions.Hosting.HostApplicationBuilder.Services%2A> property, starts the host, and shows the main window:
+   The `Application_Startup` method creates the host with <xref:Microsoft.Extensions.Hosting.Host.CreateApplicationBuilder%2A>, registers services on the <xref:Microsoft.Extensions.Hosting.HostApplicationBuilder.Services%2A> property, starts the host, and shows the main window:
 
    :::code language="csharp" source="snippets/how-to-use-host-builder/csharp/App.xaml.cs" id="CreateHost":::
    :::code language="vb" source="snippets/how-to-use-host-builder/vb/Application.xaml.vb" id="CreateHost":::
@@ -92,7 +89,7 @@ The following code shows `MainWindow` accepting `ILogger<MainWindow>` and `IGree
 
 1. Set `CopyToOutputDirectory` to `PreserveNewest` in the project file so the file copies to the output directory:
 
-   :::code language="xml" source="snippets/how-to-use-host-builder/csharp/HostBuilderApp.csproj":::
+   :::code language="xml" source="snippets/how-to-use-host-builder/csharp/HostBuilderApp.csproj" highlight="17-19":::
 
 ## Related content
 

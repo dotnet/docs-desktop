@@ -3,7 +3,6 @@ Imports Microsoft.Extensions.Hosting
 
 Namespace My
 
-    ' <CreateHost>
     Partial Friend Class MyApplication
 
         Private Shared _host As IHost
@@ -40,6 +39,5 @@ Namespace My
         End Property
 
     End Class
-    ' </CreateHost>
 
 End Namespace

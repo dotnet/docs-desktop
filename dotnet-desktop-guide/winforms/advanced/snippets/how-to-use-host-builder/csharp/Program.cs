@@ -10,7 +10,6 @@ static class Program
     {
         ApplicationConfiguration.Initialize();
 
-        // <CreateHost>
         var builder = Host.CreateApplicationBuilder();
 
         builder.Services.AddHostedService<SampleLifecycleService>();
@@ -20,12 +19,9 @@ static class Program
         IHost host = builder.Build();
 
         host.Start();
-        // </CreateHost>
 
-        // <ResolveAndRun>
         Form1 mainForm = host.Services.GetRequiredService<Form1>();
         Application.Run(mainForm);
-        // </ResolveAndRun>
 
         host.StopAsync().GetAwaiter().GetResult();
         host.Dispose();

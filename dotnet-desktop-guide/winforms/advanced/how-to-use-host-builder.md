@@ -17,7 +17,6 @@ The .NET Generic Host provides a standardized way to configure and run applicati
 
 ## Prerequisites
 
-- .NET 10 SDK or later.
 - The `Microsoft.Extensions.Hosting` NuGet package.
 
 ## Set up the Generic Host
@@ -95,22 +94,13 @@ The host calls `StartAsync` during <xref:Microsoft.Extensions.Hosting.IHost.Star
 
 ## Consume services in a form
 
-How a form consumes services depends on how it's created.
-
-In C#, `Form1` is resolved from the DI container, so constructor injection works directly:
+Because `Form1` is resolved from the DI container, constructor injection works directly:
 
 1. Add constructor parameters for each service the form needs.
 1. Store the injected services in private fields.
 1. Use the services in event handlers or other methods.
 
 :::code language="csharp" source="snippets/how-to-use-host-builder/csharp/Form1.cs" id="Form1":::
-
-In Visual Basic, the Application Framework creates the startup form automatically, so constructor injection isn't available. Resolve services from the host in the `Load` event instead:
-
-1. Access `My.MyApplication.HostInstance.Services` in the `Load` event handler.
-1. Call `GetRequiredService(Of T)()` for each service the form needs.
-1. Store the resolved services in fields.
-
 :::code language="vb" source="snippets/how-to-use-host-builder/vb/Form1.vb" id="Form1":::
 
 ## Add configuration
@@ -121,7 +111,7 @@ In Visual Basic, the Application Framework creates the startup form automaticall
 
    :::code language="json" source="snippets/how-to-use-host-builder/csharp/appsettings.json":::
 
-1. Set `CopyToOutputDirectory` to `PreserveNewest` in the project file so the file copies to the output directory:
+1. Set `CopyToOutputDirectory` to `PreserveNewest` in the project file so `appsettings.json` is copied to the output directory:
 
    :::code language="xml" source="snippets/how-to-use-host-builder/csharp/HostBuilderApp.csproj":::
 
@@ -131,4 +121,3 @@ In Visual Basic, the Application Framework creates the startup form automaticall
 - [.NET Generic Host](/dotnet/core/extensions/generic-host)
 - [Logging in .NET](/dotnet/core/extensions/logging)
 - [Configuration in .NET](/dotnet/core/extensions/configuration)
-- [New application bootstrap (WinForms .NET 6)](../whats-new/net60.md#new-application-bootstrap)

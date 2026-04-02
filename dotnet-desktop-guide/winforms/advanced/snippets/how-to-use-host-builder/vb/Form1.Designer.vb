@@ -1,4 +1,4 @@
-Imports System.Drawing
+﻿Imports System.Drawing
 Imports System.Windows.Forms
 
 <Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
@@ -20,24 +20,28 @@ Partial Class Form1
 
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        lblGreeting = New System.Windows.Forms.Label()
-        btnGreet = New System.Windows.Forms.Button()
+        lblGreeting = New Label()
+        btnGreet = New Button()
         SuspendLayout()
-
+        ' 
         ' lblGreeting
+        ' 
         lblGreeting.AutoSize = True
         lblGreeting.Location = New Point(20, 20)
         lblGreeting.Name = "lblGreeting"
-        lblGreeting.Size = New Size(200, 15)
-        lblGreeting.Text = ""
-
+        lblGreeting.Size = New Size(0, 20)
+        lblGreeting.TabIndex = 0
+        ' 
         ' btnGreet
+        ' 
         btnGreet.Location = New Point(20, 50)
         btnGreet.Name = "btnGreet"
         btnGreet.Size = New Size(100, 30)
+        btnGreet.TabIndex = 1
         btnGreet.Text = "Greet"
-
+        ' 
         ' Form1
+        ' 
         ClientSize = New Size(300, 120)
         Controls.Add(lblGreeting)
         Controls.Add(btnGreet)
