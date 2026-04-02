@@ -1,5 +1,5 @@
 ---
-model: GPT-4.1 (copilot)
+model: Claude Haiku 4.5 (copilot)
 agent: agent
 description: "Validates article structure against appropriate templates"
 ---
