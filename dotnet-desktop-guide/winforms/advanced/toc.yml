@@ -2,6 +2,8 @@ items:
 - name: Enhancing Windows Forms Applications
   href: index.md
   items:
+  - name: Use the .NET Generic Host
+    href: how-to-use-host-builder.md
   - name: Graphics and Drawing in Windows Forms
     href: graphics-and-drawing-in-windows-forms.md
     items:
