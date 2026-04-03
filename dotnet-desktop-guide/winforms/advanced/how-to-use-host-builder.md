@@ -13,7 +13,7 @@ dev_langs:
 
 # Use the .NET Generic Host in a Windows Forms app
 
-The .NET Generic Host provides a standardized way to configure and run applications with built-in support for dependency injection (DI), configuration, and logging. Windows Forms apps don't include Host Builder integration by default, but you can add it. This article shows you how to set up the Generic Host in a Windows Forms app so that you can inject services into your forms.
+The .NET Generic Host provides a standardized way to configure and run applications with built-in support for dependency injection (DI), configuration, and logging. Windows Forms apps don't include Generic Host integration by default, but you can add it. This article shows how to set up the Generic Host in a Windows Forms app to inject services into your forms.
 
 ## Prerequisites
 
@@ -21,11 +21,11 @@ The .NET Generic Host provides a standardized way to configure and run applicati
 
 ## Set up the Generic Host
 
-The setup differs slightly between C# and Visual Basic. In C#, you configure the host directly in `Program.cs`. In Visual Basic, you use the Application Framework's startup and shutdown events in `ApplicationEvents.vb`.
+The setup differs slightly between C# and Visual Basic. In C#, configure the host directly in `Program.cs`. In Visual Basic, use the Application Framework's startup and shutdown events in `ApplicationEvents.vb`.
 
 ### C# setup
 
-In C#, configure the host in `Program.cs` alongside `ApplicationConfiguration.Initialize()`. The setup follows these steps:
+Configure the host in `Program.cs` alongside `ApplicationConfiguration.Initialize()`:
 
 1. Call `ApplicationConfiguration.Initialize()` to configure WinForms defaults, including visual styles, high DPI mode, and default fonts.
 1. Build the host with <xref:Microsoft.Extensions.Hosting.Host.CreateApplicationBuilder%2A> and register services.
@@ -39,14 +39,14 @@ The following code shows the complete `Program.cs`:
 
 ### Visual Basic setup
 
-In Visual Basic, configure the host through the VB Application Framework's `Startup` and `Shutdown` events in `ApplicationEvents.vb`:
+Configure the host through the Application Framework's `Startup` and `Shutdown` events in `ApplicationEvents.vb`:
 
 1. Remove the **Startup form** setting from the Application Framework project properties.
 
-   This is the `<MainForm>` setting in the `Application.myapp` file.
+   The `<MainForm>` setting is in the `Application.myapp` file.
 
    > [!NOTE]
-   > This prevents the designer from generating an `OnCreateMainForm` override that bypasses DI.
+   > Removing this setting prevents the designer from generating an `OnCreateMainForm` override that bypasses DI.
 
 1. Handle the `Startup` event to build and start the host.
 1. Handle the `Shutdown` event to stop and dispose of the host.
@@ -59,13 +59,13 @@ The following code shows the complete `ApplicationEvents.vb`:
 
 #### Visual Basic without the Application Framework
 
-If you're not using the Visual Basic Application Framework, you can configure the host directly in the `Main` method of your startup class:
+If you're not using the Application Framework, configure the host directly in the `Main` method of your startup class:
 
 :::code language="vb" source="snippets/how-to-use-host-builder/vb/AlternativeProgram.vb" id="ProgramVersion":::
 
 ## Register and consume services
 
-Once the host runs, you can register custom services and inject them into your forms. To create and register a service:
+With the host configured, register custom services and inject them into your forms. To create and register a service:
 
 1. Define a service interface:
 
@@ -81,7 +81,7 @@ Once the host runs, you can register custom services and inject them into your f
 
 ## Run a hosted service
 
-The Generic Host can also run background services that participate in the application's lifecycle. An <xref:Microsoft.Extensions.Hosting.IHostedService> implementation receives callbacks when the host starts and stops. To add a hosted service:
+The Generic Host can also run background services that participate in the application lifecycle. Implement <xref:Microsoft.Extensions.Hosting.IHostedService> to receive callbacks when the host starts and stops. To add a hosted service:
 
 1. Create a class that implements <xref:Microsoft.Extensions.Hosting.IHostedService>. The following class writes to the debug output when the host starts and stops:
 
@@ -90,7 +90,7 @@ The Generic Host can also run background services that participate in the applic
 
 1. Register the service with `AddHostedService` on the builder's `Services` property, as shown in the [Set up the Generic Host](#set-up-the-generic-host) section.
 
-The host calls `StartAsync` during <xref:Microsoft.Extensions.Hosting.IHost.StartAsync%2A> and `StopAsync` during <xref:Microsoft.Extensions.Hosting.IHost.StopAsync%2A>, so the debug output appears in the **Output** window in Visual Studio.
+The host calls `StartAsync` on startup and `StopAsync` on shutdown, so the debug output appears in the **Output** window in Visual Studio.
 
 ## Consume services in a form
 
@@ -105,7 +105,7 @@ Because `Form1` is resolved from the DI container, constructor injection works d
 
 ## Add configuration
 
-<xref:Microsoft.Extensions.Hosting.Host.CreateApplicationBuilder%2A> automatically loads `appsettings.json` when the file is in the output directory. To add a configuration file to your project:
+<xref:Microsoft.Extensions.Hosting.Host.CreateApplicationBuilder%2A> automatically loads `appsettings.json` from the output directory. To add a configuration file:
 
 1. Create an `appsettings.json` file in the project root with your configuration values:
 

@@ -8,12 +8,12 @@ ai-usage: ai-assisted
 dev_langs:
   - "csharp"
   - "vb"
-#customer intent: As a WPF developer, I want to use the .NET Generic Host in my WPF application so that I can leverage dependency injection, configuration, and logging.
+#customer intent: As a WPF developer, I want to use the .NET Generic Host in my WPF application so that I can use dependency injection, configuration, and logging.
 ---
 
 # Use the .NET Generic Host in a WPF app
 
-The .NET Generic Host provides a standardized way to configure and run applications with built-in support for dependency injection (DI), configuration, and logging. WPF applications don't include Host Builder integration by default, but you can add it. This article shows how to set up the Generic Host in a WPF app so you can inject services into your windows and use the full .NET hosting infrastructure.
+The .NET Generic Host provides a standardized way to configure and run applications with built-in support for dependency injection (DI), configuration, and logging. WPF applications don't include Host Builder integration by default, but you can add it. This article shows how to set up the Generic Host in a WPF app to inject services into your windows and use the full .NET hosting infrastructure.
 
 ## Prerequisites
 
@@ -48,14 +48,14 @@ The `Services` property in the previous section registers services with the DI c
    :::code language="csharp" source="snippets/how-to-use-host-builder/csharp/IGreetingService.cs" id="IGreetingService":::
    :::code language="vb" source="snippets/how-to-use-host-builder/vb/IGreetingService.vb" id="IGreetingService":::
 
-1. Create a class that implements the interface. The `GreetingService` class injects <xref:Microsoft.Extensions.Configuration.IConfiguration> to read values from `appsettings.json`:
+1. Create a class that implements the interface. The `GreetingService` class accepts <xref:Microsoft.Extensions.Configuration.IConfiguration> through constructor injection to read values from `appsettings.json`:
 
    :::code language="csharp" source="snippets/how-to-use-host-builder/csharp/GreetingService.cs" id="GreetingService":::
    :::code language="vb" source="snippets/how-to-use-host-builder/vb/GreetingService.vb" id="GreetingService":::
 
 ## Run a hosted service
 
-The Generic Host can also run background services that participate in the application's lifecycle. An <xref:Microsoft.Extensions.Hosting.IHostedService> implementation receives callbacks when the host starts and stops. To add a hosted service:
+The Generic Host can also run background services that participate in the application's lifecycle. The host calls an <xref:Microsoft.Extensions.Hosting.IHostedService> implementation when it starts and stops. To add a hosted service:
 
 1. Create a class that implements <xref:Microsoft.Extensions.Hosting.IHostedService>. The following class writes to the debug output when the host starts and stops:
 
@@ -64,11 +64,11 @@ The Generic Host can also run background services that participate in the applic
 
 1. Register the service with `AddHostedService` on the builder's `Services` property, as shown in the `Application_Startup` method in the [Set up the Generic Host](#set-up-the-generic-host) section.
 
-The host calls `StartAsync` during <xref:Microsoft.Extensions.Hosting.IHost.StartAsync%2A> and `StopAsync` during <xref:Microsoft.Extensions.Hosting.IHost.StopAsync%2A>, so the debug output appears in the **Output** window in Visual Studio.
+The host calls `StartAsync` when starting and `StopAsync` when stopping, so the debug output appears in the **Output** window in Visual Studio.
 
 ## Inject services into a window
 
-Windows registered in the DI container receive their dependencies through constructor injection. To consume services in a window:
+The DI container injects dependencies into registered windows through constructor injection. To consume services in a window:
 
 1. Add constructor parameters for each service the window needs.
 1. Store the injected services in private fields.
