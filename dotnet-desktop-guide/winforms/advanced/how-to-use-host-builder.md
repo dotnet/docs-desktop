@@ -17,27 +17,27 @@ The .NET Generic Host provides a standardized way to configure and run applicati
 
 ## Prerequisites
 
-- The `Microsoft.Extensions.Hosting` NuGet package.
+- The [`Microsoft.Extensions.Hosting`](https://www.nuget.org/packages/Microsoft.Extensions.Hosting/) NuGet package.
 
 ## Set up the Generic Host
 
 The setup differs slightly between C# and Visual Basic. In C#, configure the host directly in `Program.cs`. In Visual Basic, use the Application Framework's startup and shutdown events in `ApplicationEvents.vb`.
 
-### C# setup
+# [C#](#tab/csharp)
 
 Configure the host in `Program.cs` alongside `ApplicationConfiguration.Initialize()`:
 
 1. Call `ApplicationConfiguration.Initialize()` to configure WinForms defaults, including visual styles, high DPI mode, and default fonts.
-1. Build the host with <xref:Microsoft.Extensions.Hosting.Host.CreateApplicationBuilder%2A> and register services.
+1. Build the host with <xref:Microsoft.Extensions.Hosting.Host.CreateApplicationBuilder*> and register services.
 1. Start the host and resolve the main form from DI.
-1. Pass the form to <xref:System.Windows.Forms.Application.Run%2A>.
+1. Pass the form to <xref:System.Windows.Forms.Application.Run*>.
 1. Stop and dispose of the host after the form closes.
 
 The following code shows the complete `Program.cs`:
 
 :::code language="csharp" source="snippets/how-to-use-host-builder/csharp/Program.cs":::
 
-### Visual Basic setup
+# [Visual Basic](#tab/vb)
 
 Configure the host through the Application Framework's `Startup` and `Shutdown` events in `ApplicationEvents.vb`:
 
@@ -57,11 +57,15 @@ The following code shows the complete `ApplicationEvents.vb`:
 
 :::code language="vb" source="snippets/how-to-use-host-builder/vb/ApplicationEvents.vb":::
 
-#### Visual Basic without the Application Framework
+<!-- markdownlint-disable MD001 -->
+### Visual Basic without the Application Framework
+<!-- markdownlint-enable MD001 -->
 
 If you're not using the Application Framework, configure the host directly in the `Main` method of your startup class:
 
 :::code language="vb" source="snippets/how-to-use-host-builder/vb/AlternativeProgram.vb" id="ProgramVersion":::
+
+---
 
 ## Register and consume services
 
@@ -105,7 +109,7 @@ Because `Form1` is resolved from the DI container, constructor injection works d
 
 ## Add configuration
 
-<xref:Microsoft.Extensions.Hosting.Host.CreateApplicationBuilder%2A> automatically loads `appsettings.json` from the output directory. To add a configuration file:
+<xref:Microsoft.Extensions.Hosting.Host.CreateApplicationBuilder*> automatically loads `appsettings.json` from the output directory. To add a configuration file:
 
 1. Create an `appsettings.json` file in the project root with your configuration values:
 
@@ -113,7 +117,7 @@ Because `Form1` is resolved from the DI container, constructor injection works d
 
 1. Set `CopyToOutputDirectory` to `PreserveNewest` in the project file so `appsettings.json` is copied to the output directory:
 
-   :::code language="xml" source="snippets/how-to-use-host-builder/csharp/HostBuilderApp.csproj":::
+   :::code language="xml" source="snippets/how-to-use-host-builder/csharp/HostBuilderApp.csproj" highlight="11-15":::
 
 ## Related content
 

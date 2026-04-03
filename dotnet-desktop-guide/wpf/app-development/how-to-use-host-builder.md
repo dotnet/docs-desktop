@@ -17,7 +17,7 @@ The .NET Generic Host provides a standardized way to configure and run applicati
 
 ## Prerequisites
 
-- The `Microsoft.Extensions.Hosting` NuGet package.
+- The [`Microsoft.Extensions.Hosting`](https://www.nuget.org/packages/Microsoft.Extensions.Hosting/) NuGet package.
 
 ## Set up the Generic Host
 
@@ -29,7 +29,7 @@ To integrate the Generic Host with your WPF app:
 
 1. Build the host in the code-behind.
 
-   The `Application_Startup` method creates the host with <xref:Microsoft.Extensions.Hosting.Host.CreateApplicationBuilder%2A>, registers services on the <xref:Microsoft.Extensions.Hosting.HostApplicationBuilder.Services%2A> property, starts the host, and shows the main window:
+   The `Application_Startup` method creates the host with <xref:Microsoft.Extensions.Hosting.Host.CreateApplicationBuilder*>, registers services on the <xref:Microsoft.Extensions.Hosting.HostApplicationBuilder.Services*> property, starts the host, and shows the main window:
 
    :::code language="csharp" source="snippets/how-to-use-host-builder/csharp/App.xaml.cs" id="CreateHost":::
    :::code language="vb" source="snippets/how-to-use-host-builder/vb/Application.xaml.vb" id="CreateHost":::
@@ -81,7 +81,7 @@ The following code shows `MainWindow` accepting `ILogger<MainWindow>` and `IGree
 
 ## Add configuration
 
-<xref:Microsoft.Extensions.Hosting.Host.CreateApplicationBuilder%2A> automatically loads `appsettings.json` when the file is in the output directory. To add a configuration file to your project:
+<xref:Microsoft.Extensions.Hosting.Host.CreateApplicationBuilder*> automatically loads `appsettings.json` when the file is in the output directory. To add a configuration file to your project:
 
 1. Create an `appsettings.json` file in the project root with your configuration values:
 
@@ -89,7 +89,7 @@ The following code shows `MainWindow` accepting `ILogger<MainWindow>` and `IGree
 
 1. Set `CopyToOutputDirectory` to `PreserveNewest` in the project file so the file copies to the output directory:
 
-   :::code language="xml" source="snippets/how-to-use-host-builder/csharp/HostBuilderApp.csproj" highlight="17-19":::
+   :::code language="xml" source="snippets/how-to-use-host-builder/csharp/HostBuilderApp.csproj" highlight="11-15":::
 
 ## Related content
 
