@@ -28,6 +28,8 @@ items:
     href: whats-new/net70.md
 - name: Migration
   items:
+  - name: Choose your migration path
+    href: migration/migration-overview.md
   - name: Upgrade to .NET 8
     href: migration/index.md
   - name: Differences from .NET Framework
