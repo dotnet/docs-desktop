@@ -1,7 +1,7 @@
 ---
 title: User control guidelines
 description: This article offers practical advice on how to design your user control for Windows Forms.
-ms.date: 04/02/2025
+ms.date: 04/10/2026
 ms.service: dotnet-desktop
 ms.update-cycle: 365-days
 ms.topic: overview

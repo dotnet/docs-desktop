@@ -1,7 +1,7 @@
 ---
 title: Create custom controls overview
 description: Learn about the different types of custom controls you can create in Windows Forms for .NET.
-ms.date: 04/02/2025
+ms.date: 04/10/2026
 ms.service: dotnet-desktop
 ms.update-cycle: 365-days
 ms.topic: overview

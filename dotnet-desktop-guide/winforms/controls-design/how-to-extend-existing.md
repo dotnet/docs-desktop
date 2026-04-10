@@ -1,7 +1,7 @@
 ---
 title: Customize an existing control
 description: Learn how to inherit from existing controls so that another control has all of its functionality and visual properties.
-ms.date: 03/20/2026
+ms.date: 04/10/2026
 ms.service: dotnet-desktop
 ms.update-cycle: 365-days
 ms.topic: how-to
