@@ -1,7 +1,7 @@
 ---
 title: What's new in Windows Presentation Foundation
-description: Learn about what's new in Windows Presentation Foundation (WPF). This article covers changes to WPF from .NET 7 to .NET 11 Preview 2.
-ms.date: 03/10/2026
+description: Learn about what's new in Windows Presentation Foundation (WPF). This article covers changes to WPF from .NET 7 to .NET 11 Preview 3.
+ms.date: 04/10/2026
 ms.service: dotnet-desktop
 ms.update-cycle: 365-days
 ms.topic: whats-new
@@ -12,11 +12,11 @@ ai-usage: ai-assisted
 
 Each .NET release introduces a new version of Windows Presentation Foundation (WPF). This article gives you a summary of what's new in each release.
 
-## .NET 11 Preview 2
+## .NET 11 Preview 3
 
-This section describes the main changes to WPF for .NET 11 Preview 2.
+This section describes the main changes to WPF for .NET 11 Preview 3.
 
-- [Overview of WPF on .NET 11 Preview 2](net110.md)
+- [Overview of WPF on .NET 11 Preview 3](net110.md)
 - [Bug fixes](net110.md#bug-fixes)
 
 ## .NET 10
