@@ -14,7 +14,7 @@ Each .NET release introduces a new version of Windows Forms (WinForms). This art
 
 ## .NET 11 Preview 3
 
-Windows Forms didn't have any notable updates in .NET 11 previews.
+Windows Forms doesn't have any notable updates in .NET 11 previews.
 
 ## .NET 10
 
