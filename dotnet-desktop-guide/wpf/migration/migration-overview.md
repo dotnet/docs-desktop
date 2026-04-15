@@ -5,12 +5,13 @@ ms.date: 04/06/2026
 ms.service: dotnet-desktop
 ms.update-cycle: 365-days
 ms.topic: overview
+ai-usage: ai-assisted
 #customer intent: As a developer, I want to understand my options before migrating my WPF app from .NET Framework to modern .NET.
 ---
 
 # Choose your WPF migration path from .NET Framework
 
-Before you start migrating a WPF app from .NET Framework to modern .NET, take a few minutes to choose the right path for your situation. The right choice depends on the complexity of your app, its dependencies, and how much time you can invest.
+Before you start migrating a Windows Presentation Foundation (WPF) app from .NET Framework to modern .NET, take a few minutes to choose the right path for your situation. The right choice depends on the complexity of your app, its dependencies, and how much time you can invest.
 
 This article defines the terms used consistently across the migration documentation and provides a decision guide to help you pick the right approach.
 
@@ -34,8 +35,8 @@ Use the following table to identify the right approach for your app:
 
 | If your app looks like this... | Recommended path |
 |-------------------------------|-----------------|
-| 1\u20133 projects, no WCF or COM dependencies, all NuGet packages have .NET support | [Upgrade with .NET Upgrade Assistant](index.md) |
-| 4\u2013+ projects with a clear dependency hierarchy, no WCF | [Upgrade with .NET Upgrade Assistant](index.md), upgrading leaf projects first |
+| 1–3 projects, no WCF or COM dependencies, all NuGet packages have .NET support | [Upgrade with .NET Upgrade Assistant](index.md) |
+| 4+ projects with a clear dependency hierarchy, no WCF | [Upgrade with .NET Upgrade Assistant](index.md), upgrading leaf projects first |
 | Projects with WCF service dependencies | Migrate WCF to [CoreWCF](https://github.com/CoreWCF/CoreWCF) before or alongside the project upgrade |
 | Projects with COM interop or P/Invoke | Upgrade the project first, then verify COM interop; most scenarios work as-is |
 | Third-party UI controls (Telerik, DevExpress, Syncfusion) | Check your vendor's .NET compatibility matrix before upgrading |
