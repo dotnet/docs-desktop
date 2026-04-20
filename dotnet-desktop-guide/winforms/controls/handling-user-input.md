@@ -26,7 +26,7 @@ The common keyboard events that your control can handle are <xref:System.Windows
 
 |Event Name|Method to Override|Description of Event|
 |----------------|------------------------|--------------------------|
-|`KeyDown`|`void OnKeyDown(KeyEventArgs)`|Raised only when a key is initially pressed.|
+|`KeyDown`|`void OnKeyDown(KeyEventArgs)`|Raised when a key is pressed. Duplicate `KeyDown` events are raised at the repeat rate defined by the operating system if a key is held down.|
 |`KeyPress`|`void OnKeyPress`<br /><br /> `(KeyPressEventArgs)`|Raised every time a key is pressed. If a key is held down, a <xref:System.Windows.Forms.Control.KeyPress> event is raised at the repeat rate defined by the operating system.|
 |`KeyUp`|`void OnKeyUp(KeyEventArgs)`|Raised when a key is released.|
 

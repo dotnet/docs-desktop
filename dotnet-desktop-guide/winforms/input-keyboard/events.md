@@ -24,7 +24,7 @@ Most Windows Forms programs process keyboard input by handling the keyboard even
 
 Windows Forms provides two events that occur when a user presses a keyboard key and one event when a user releases a keyboard key:
 
-- The <xref:System.Windows.Forms.Control.KeyDown> event occurs once.
+- The <xref:System.Windows.Forms.Control.KeyDown> event, which occurs when a key is first pressed. Duplicate <xref:System.Windows.Forms.Control.KeyDown> events occur each time the key repeats if a key is held down.
 - The <xref:System.Windows.Forms.Control.KeyPress> event, which can occur multiple times when a user holds down the same key.
 - The <xref:System.Windows.Forms.Control.KeyUp> event occurs once when a user releases a key.
 
