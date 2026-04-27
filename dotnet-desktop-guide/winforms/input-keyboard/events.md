@@ -23,7 +23,7 @@ Most Windows Forms programs process keyboard input by handling the keyboard even
 
 ## Keyboard events
 
-Windows Forms provides two events that are raised when a user presses a keyboard key, and one event when a user releases a keyboard key:
+Windows Forms raises two or three events when a user presses and releases a keyboard key:
 
 - <xref:System.Windows.Forms.Control.KeyDown>
 - <xref:System.Windows.Forms.Control.KeyPress>
@@ -31,7 +31,7 @@ Windows Forms provides two events that are raised when a user presses a keyboard
 
 When a user presses a key, Windows Forms determines which event to raise based on whether the keyboard message specifies a character key or a physical key. For more information about character and physical keys, see [Keyboard overview, keyboard events](overview.md#keyboard-events).
 
-### KeyDown event
+## KeyDown event
 
 The <xref:System.Windows.Forms.Control.KeyDown> event is raised when a user presses a physical key. If the key is held down, this event repeats at the OS keyboard repeat rate.
 
@@ -43,7 +43,7 @@ The handler for <xref:System.Windows.Forms.Control.KeyDown> receives a <xref:Sys
 - The <xref:System.Windows.Forms.KeyEventArgs.Handled%2A> property, which prevents the underlying control from receiving the key when set.
 - The <xref:System.Windows.Forms.KeyEventArgs.SuppressKeyPress%2A> property, which suppresses the <xref:System.Windows.Forms.Control.KeyPress> and <xref:System.Windows.Forms.Control.KeyUp> events for that keystroke.
 
-### KeyPress event
+## KeyPress event
 
 The <xref:System.Windows.Forms.Control.KeyPress> event is raised when the key or keys pressed result in a character. For example, pressing SHIFT and the lowercase "a" key produces a capital letter "A" character. <xref:System.Windows.Forms.Control.KeyPress> is raised after <xref:System.Windows.Forms.Control.KeyDown> and repeats at the OS keyboard repeat rate while the key is held.
 
@@ -56,7 +56,7 @@ For example, the "A" key generates:
 - The character code 97, if it's pressed by itself.
 - The character code 1, if it's pressed with the <kbd>Ctrl</kbd> key.
 
-### KeyUp event
+## KeyUp event
 
 The <xref:System.Windows.Forms.Control.KeyUp> event is raised once when a user releases a physical key.
 
