@@ -51,7 +51,7 @@ The following XAML demonstrates using the `Employee` class as a data object. The
 
     :::code language="xaml" source="./snippets/how-to-create-a-simple-binding/csharp/EmployeeView.xaml" highlight="7-9,33-37,43":::
 
-The namespace of the code won't match your project's namespace, unless you created a project named **ArticleSample**. You can copy and paste the `Window.Resources` and root element (`StackPanel`) into you're **MainWindow** if you created a new project.
+The namespace of the code won't match your project's namespace, unless you created a project named **ArticleSample**. You can copy and paste the `Window.Resources` and root element (`StackPanel`) into your **MainWindow** if you created a new project.
 
 To better understand how the previous XAML is using data binding, consider the following points:
 
