@@ -43,10 +43,9 @@ Windows Forms identifies keyboard input as virtual-key codes that are represente
 
 As listed previously, there are three keyboard related events that can occur on a control. The following sequence shows the general order of the events:
 
-01. The user pushes the <kbd>A</kbd> key, the key is preprocessed, dispatched, and a <xref:System.Windows.Forms.Control.KeyDown> event occurs.
-01. The user holds the <kbd>A</kbd> key, the key is preprocessed, dispatched, and a <xref:System.Windows.Forms.Control.KeyPress> event occurs.
-    This event occurs multiple times as the user holds a key.
-01. The user releases the <kbd>A</kbd> key, the key is preprocessed, dispatched and a <xref:System.Windows.Forms.Control.KeyUp> event occurs.
+01. The user pushes the <kbd>A</kbd> key, the key is preprocessed, dispatched, and a <xref:System.Windows.Forms.Control.KeyDown> event occurs. If the key produces a character, a <xref:System.Windows.Forms.Control.KeyPress> event also occurs.
+01. The user holds the <kbd>A</kbd> key—both <xref:System.Windows.Forms.Control.KeyDown> and <xref:System.Windows.Forms.Control.KeyPress> events occur repeatedly at the repeat rate defined by the operating system.
+01. The user releases the <kbd>A</kbd> key, the key is preprocessed, dispatched, and a <xref:System.Windows.Forms.Control.KeyUp> event occurs.
 
 ## Preprocessing keys
 
