@@ -23,7 +23,7 @@ Most Windows Forms programs process keyboard input by handling the keyboard even
 
 ## Keyboard events
 
-Windows Forms raises the following events when a user presses and releases a keyboard key:
+Windows Forms raises the following events when a user presses and releases a keyboard key:
 
 - <xref:System.Windows.Forms.Control.KeyDown>
 - <xref:System.Windows.Forms.Control.KeyPress>
