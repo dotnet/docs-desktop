@@ -37,15 +37,15 @@ The <xref:System.Windows.Forms.Control.KeyDown> event is raised when a user pres
 
 The handler for <xref:System.Windows.Forms.Control.KeyDown> receives a <xref:System.Windows.Forms.KeyEventArgs> parameter that provides:
 
-- The <xref:System.Windows.Forms.KeyEventArgs.KeyCode%2A> property, which specifies a physical keyboard button.
-- The <xref:System.Windows.Forms.KeyEventArgs.Modifiers%2A> property (SHIFT, CTRL, or ALT).
-- The <xref:System.Windows.Forms.KeyEventArgs.KeyData%2A> property, which combines the key code and modifier.
-- The <xref:System.Windows.Forms.KeyEventArgs.Handled%2A> property, which prevents the underlying control from receiving the key when set.
-- The <xref:System.Windows.Forms.KeyEventArgs.SuppressKeyPress%2A> property, which suppresses the <xref:System.Windows.Forms.Control.KeyPress> and <xref:System.Windows.Forms.Control.KeyUp> events for that keystroke.
+- The <xref:System.Windows.Forms.KeyEventArgs.KeyCode> property, which specifies a physical keyboard button.
+- The <xref:System.Windows.Forms.KeyEventArgs.Modifiers> property (`Shift`, `Ctrl`, or `Alt`).
+- The <xref:System.Windows.Forms.KeyEventArgs.KeyData> property, which combines the key code and modifier.
+- The <xref:System.Windows.Forms.KeyEventArgs.Handled> property, which prevents the underlying control from receiving the key when set.
+- The <xref:System.Windows.Forms.KeyEventArgs.SuppressKeyPress> property, which suppresses the <xref:System.Windows.Forms.Control.KeyPress> and <xref:System.Windows.Forms.Control.KeyUp> events for that keystroke.
 
 ## KeyPress event
 
-The <xref:System.Windows.Forms.Control.KeyPress> event is raised when the key or keys pressed result in a character. For example, pressing SHIFT and the lowercase "a" key produces a capital letter "A" character. <xref:System.Windows.Forms.Control.KeyPress> is raised after <xref:System.Windows.Forms.Control.KeyDown> and repeats at the OS keyboard repeat rate while the key is held.
+The <xref:System.Windows.Forms.Control.KeyPress> event is raised when the key or keys pressed result in a character. For example, pressing <kbd>Shift</kbd> and the lowercase "a" key produces a capital letter "A" character. <xref:System.Windows.Forms.Control.KeyPress> is raised after <xref:System.Windows.Forms.Control.KeyDown> and repeats at the OS keyboard repeat rate while the key is held.
 
 The handler for <xref:System.Windows.Forms.Control.KeyPress> receives a <xref:System.Windows.Forms.KeyPressEventArgs> parameter that contains the character code of the key pressed. This character code is unique for every combination of a character key and a modifier key.
 
@@ -62,9 +62,9 @@ The <xref:System.Windows.Forms.Control.KeyUp> event is raised once when a user r
 
 The handler for <xref:System.Windows.Forms.Control.KeyUp> receives a <xref:System.Windows.Forms.KeyEventArgs> parameter that provides:
 
-- The <xref:System.Windows.Forms.KeyEventArgs.KeyCode%2A> property, which specifies a physical keyboard button.
-- The <xref:System.Windows.Forms.KeyEventArgs.Modifiers%2A> property (SHIFT, CTRL, or ALT).
-- The <xref:System.Windows.Forms.KeyEventArgs.KeyData%2A> property, which combines the key code and modifier.
+- The <xref:System.Windows.Forms.KeyEventArgs.KeyCode> property, which specifies a physical keyboard button.
+- The <xref:System.Windows.Forms.KeyEventArgs.Modifiers> property (`Shift`, `Ctrl`, or `Alt`).
+- The <xref:System.Windows.Forms.KeyEventArgs.KeyData> property, which combines the key code and modifier.
 
 ## See also
 
