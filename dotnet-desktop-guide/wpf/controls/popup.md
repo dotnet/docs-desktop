@@ -44,11 +44,11 @@ The following example defines a <xref:System.Windows.Controls.Primitives.Popup> 
 
 You can build <xref:System.Windows.Controls.Primitives.Popup> controls into other controls. The following controls implement a popup for specific uses:
 
-- **<xref:System.Windows.Controls.ToolTip>**. Uses a popup to show contextual help when users hover over or focus an element; for more information, see [ToolTip](tooltip.md).
+- **<xref:System.Windows.Controls.ToolTip>**. Uses a popup to show contextual help when users hover over or focus an element. For more information, see [ToolTip](tooltip.md).
 
-- **<xref:System.Windows.Controls.ContextMenu>**. Uses a popup to show command options for an element, usually when users right-click; for more information, see [ContextMenu](contextmenu.md).
+- **<xref:System.Windows.Controls.ContextMenu>**. Uses a popup to show command options for an element, usually when users right-click. For more information, see [ContextMenu](contextmenu.md).
 
-- **<xref:System.Windows.Controls.ComboBox>**. Uses a popup to show or hide the drop-down list of selectable items; for more information, see [ComboBox](combobox.md).
+- **<xref:System.Windows.Controls.ComboBox>**. Uses a popup to show or hide the drop-down list of selectable items. For more information, see [ComboBox](combobox.md).
 
 ## Styles and templates
 
