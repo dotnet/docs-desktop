@@ -17,7 +17,7 @@ The <xref:System.Windows.Controls.Primitives.Popup> control provides a way to di
 
 The following illustration shows a <xref:System.Windows.Controls.Primitives.Popup> control that is positioned with respect to a <xref:System.Windows.Controls.Button> that is its parent:
 
-:::image type="content" source="./media/popup/popup-picture-button.jpg" alt-text="A Popup control positioned relative to a Button control.":::
+:::image type="content" source="./media/popup/button-popup.png" alt-text="A Popup control positioned relative to a Button control.":::
 
 The following table lists common tasks for working with the Popup control:
 
