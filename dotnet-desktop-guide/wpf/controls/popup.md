@@ -17,7 +17,7 @@ The <xref:System.Windows.Controls.Primitives.Popup> control provides a way to di
 
 The following illustration shows a <xref:System.Windows.Controls.Primitives.Popup> control that is positioned with respect to a <xref:System.Windows.Controls.Button> that is its parent:
 
-:::image type="content" source="./media/popup/popup-picture-button.jpg" alt-text="A Popup control positioned relative to a Button control.":::
+:::image type="content" source="./media/popup/button-popup.png" alt-text="A Popup control positioned relative to a Button control.":::
 
 The following table lists common tasks for working with the Popup control:
 
@@ -42,15 +42,13 @@ The following example defines a <xref:System.Windows.Controls.Primitives.Popup> 
 
 ## Controls that implement a Popup
 
-You can build <xref:System.Windows.Controls.Primitives.Popup> controls into other controls. The following controls implement the <xref:System.Windows.Controls.Primitives.Popup> control for specific uses:
+You can build <xref:System.Windows.Controls.Primitives.Popup> controls into other controls. The following controls implement a popup for specific uses:
 
-- <xref:System.Windows.Controls.ToolTip>. To create a tooltip for an element, use the <xref:System.Windows.Controls.ToolTip> and <xref:System.Windows.Controls.ToolTipService> classes. For more information, see [ToolTip](tooltip.md).
+- **<xref:System.Windows.Controls.ToolTip>**. Uses a popup to show contextual help when users hover over or focus an element. For more information, see [ToolTip](tooltip.md).
 
-- <xref:System.Windows.Controls.ContextMenu>. To create a context menu for an element, use the <xref:System.Windows.Controls.ContextMenu> control. For more information, see [ContextMenu](contextmenu.md).
+- **<xref:System.Windows.Controls.ContextMenu>**. Uses a popup to show command options for an element, usually when users right-click. For more information, see [ContextMenu](contextmenu.md).
 
-- <xref:System.Windows.Controls.ComboBox>. To create a selection control that has a drop-down list box that you can show or hide, use the <xref:System.Windows.Controls.ComboBox> control.
-
-- <xref:System.Windows.Controls.Expander>. To create a control that displays a header with a collapsible area that displays content, use the <xref:System.Windows.Controls.Expander> control. For more information, see [Expander](expander.md).
+- **<xref:System.Windows.Controls.ComboBox>**. Uses a popup to show or hide the drop-down list of selectable items. For more information, see [ComboBox](combobox.md).
 
 ## Styles and templates
 
