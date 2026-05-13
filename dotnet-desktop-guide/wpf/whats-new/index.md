@@ -14,9 +14,10 @@ Each .NET release introduces a new version of Windows Presentation Foundation (W
 
 ## .NET 11 Preview 4
 
-WPF doesn't have notable updates in .NET 11 Preview 4.
+.NET 11 Previews have fixed various bugs related to the Desktop Window Manager and Fluent theme.
 
 - [Overview of WPF on .NET 11 Preview 4](net110.md)
+- [Bug fixes](net110.md#bug-fixes)
 
 ## .NET 10
 
