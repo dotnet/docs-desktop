@@ -1,7 +1,7 @@
 ---
 title: What is Windows Forms
 description: This article gives an overview of Windows Forms with .NET
-ms.date: 04/02/2025
+ms.date: 06/02/2026
 ms.service: dotnet-desktop
 ms.update-cycle: 365-days
 ms.topic: overview
@@ -18,7 +18,7 @@ There are two implementations of Windows Forms:
 
     This version [runs on .NET](https://dotnet.microsoft.com/learn/dotnet/what-is-dotnet).
 
-    The latest version is Windows Forms for .NET 9 using [Visual Studio 2022 version 17.12](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2022+desktopguide+winforms).
+    The latest version is Windows Forms for .NET 10 using the latest [Visual Studio](https://aka.ms/vs/download/?cid=learn-onpage-download-install-visual-studio-page-cta).
 
 01. The .NET Framework 4 implementation that's supported by Visual Studio 2022, Visual Studio 2019, and Visual Studio 2017.
 
