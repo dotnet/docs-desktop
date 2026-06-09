@@ -1,7 +1,7 @@
 ---
 title: What's new in Windows Forms
-description: Learn about what's new in Windows Forms. This article covers changes to Windows Forms from .NET 5 to .NET 11 Preview 4.
-ms.date: 05/08/2026
+description: Learn about what's new in Windows Forms. This article covers changes to Windows Forms from .NET 5 to .NET 11 Preview 5.
+ms.date: 06/09/2026
 ms.service: dotnet-desktop
 ms.update-cycle: 365-days
 ms.topic: whats-new
@@ -12,12 +12,17 @@ ai-usage: ai-assisted
 
 Each .NET release introduces a new version of Windows Forms (WinForms). This article gives you a summary of what's new in each release.
 
-## .NET 11 Preview 4
+## .NET 11 Preview 5
 
-This preview includes a bug fix for clipboard bitmap image retrieval.
+This preview includes regression fixes for clipboard, ToolStrip, layout, designer, PropertyGrid, and dark mode scenarios.
 
-- [Overview of Windows Forms on .NET 11 Preview 4](net110.md)
-- [Bug fixes](net110.md#bug-fixes)
+- [Overview of Windows Forms on .NET 11 Preview 5](net110.md)
+- [Clipboard](net110.md#clipboard)
+- [ToolStrip](net110.md#toolstrip)
+- [Layout](net110.md#layout)
+- [Designer](net110.md#designer)
+- [PropertyGrid](net110.md#propertygrid)
+- [Dark mode](net110.md#dark-mode)
 
 ## .NET 10
 
