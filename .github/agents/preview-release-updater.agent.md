@@ -9,6 +9,7 @@ You are a documentation specialist that produces the monthly .NET Preview releas
 
 ## Scope
 
+- Previews also include release candidates (RCs). The workflow is the same regardless of whether it's a "Preview" or "RC" release.
 - Current preview line: **.NET 11**.
 - Files you maintain:
   - WinForms preview article: `dotnet-desktop-guide/winforms/whats-new/net110.md`
@@ -35,7 +36,7 @@ You are a documentation specialist that produces the monthly .NET Preview releas
 - DO NOT touch the top-level `winforms/index.yml` or `wpf/index.yml` landing pages. The "index.md" referenced in this workflow is the what's-new index (`whats-new/index.md`).
 - DO NOT guess the source URL or the new preview number. Always ask.
 - DO NOT remove, move, or reorganize existing content from prior previews. The article body is cumulative. Leave all existing bullets and sections in place.
-- DO NOT create "Previous preview" or "Preview N" subsections within the body. All items across all previews live together under category headings like `## Controls` or `## Accessibility`.
+- DO NOT create "Previous preview" or "Preview N" subsections within the body. All items across all previews live together under category headings like `## Controls` or `## Accessibility`, unless the current preview changed behavior of a previous preview.
 - DO NOT replace existing content with new content. New items are ADDED to existing sections.
 - Preserve `ai-usage: ai-assisted` in frontmatter (this content is AI-assisted per repo policy).
 
@@ -72,13 +73,13 @@ Ask the user: "Anything else to highlight or any custom guidance for this previe
 Edit the chosen product's preview article with these exact changes:
 
 1. **Frontmatter**
-   - `title`: bump preview number — `What's new in {WinForms|WPF} for .NET 11 Preview {N}`.
+   - `title`: bump preview number — `What's new in {WinForms|WPF} for .NET 11 Preview|RC {N}`.
    - `description`: bump preview number to match.
    - `ms.date`: today's date in `MM/DD/YYYY`.
 2. **H1**: bump preview number to match the title.
-3. **Released-in sentence**: update to `.NET 11 Preview {N} was released in {Month} {Year}.`
+3. **Released-in sentence**: update to `.NET 11 Preview|RC {N} was released in {Month} {Year}.`
 4. **Release announcements list**: add the new aka.ms link as the **first** bullet:
-   - `- [.NET 11 Preview {N}](https://aka.ms/dotnet/11/preview{N})`
+   - `- [.NET 11 Preview|RC {N}](https://aka.ms/dotnet/11/preview{N})`
    - Leave existing preview links beneath it in descending order.
 5. **Body sections** (CUMULATIVE — preserve all existing content):
    - The existing body already contains items from all prior .NET 11 previews. DO NOT move, remove, or reorganize existing bullets.
@@ -97,25 +98,16 @@ In the same product's `whats-new/index.md`:
 1. **Frontmatter**
    - `description`: if it mentions the preview, correct the preview number.
    - `ms.date`: today's date.
-2. **`## .NET 11 Preview {N}` section** (rename the existing preview heading if the number changed):
+2. **`## .NET 11 Preview|RC {N}` section** (rename the existing preview heading if the number changed):
    - Note that this section contains information about every release, even though the heading only mentions the latest preview.
    - The intro paragraph contains a few sentences summarizing the areas the corresponding `net110.md` article covers. Update this if new sections have been added to `net110.md` that aren't reflected in the intro. If the intro is very out of date, rewrite it to reflect the new content.
    - If the latest preview doesn't contain any user-facing changes, put a `> [!NOTE]` below the intro paragraph with that info, like ".NET Preview {N} doesn't contain any user-facing changes."
    - Replace the link list so it contains:
-     - `- [Overview of {Windows Forms|WPF} on .NET 11 Preview {N}](net110.md)`
+     - `- [Overview of {Windows Forms|WPF} on .NET 11 Preview|RC {N}](net110.md)`
      - One bullet per `##` section in the updated `net110.md`, formatted as `- [{Section title}](net110.md#{section-anchor})`.
    - Anchors are GitHub-style: lowercase, spaces → `-`, punctuation removed.
 
-### Step 8 Check TOC
-
-The TOC files for both WinForms and WPF may use a preview number that's out of date. If so, update the preview number in the TOC as well. The TOC files are:
-
-- WinForms: `docs-desktop\dotnet-desktop-guide\winforms\toc.yml`
-- WPF: `docs-desktop\dotnet-desktop-guide\wpf\toc.yml`
-
-What's new entries are under a `What's new` YAML node.
-
-### Step 9 — Validate
+### Step 8 — Validate
 
 After editing, re-read each modified file and confirm:
 
@@ -125,7 +117,7 @@ After editing, re-read each modified file and confirm:
 - Every `##` section in `net110.md` has a matching bullet in `whats-new/index.md`.
 - `ai-usage: ai-assisted` is still present in both files' frontmatter.
 
-### Step 10 — Summarize
+### Step 9 — Summarize
 
 Report:
 
