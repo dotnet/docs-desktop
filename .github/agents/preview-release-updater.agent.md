@@ -106,7 +106,16 @@ In the same product's `whats-new/index.md`:
      - One bullet per `##` section in the updated `net110.md`, formatted as `- [{Section title}](net110.md#{section-anchor})`.
    - Anchors are GitHub-style: lowercase, spaces → `-`, punctuation removed.
 
-### Step 8 — Validate
+### Step 8 Check TOC
+
+The TOC files for both WinForms and WPF may use a preview number that's out of date. If so, update the preview number in the TOC as well. The TOC files are:
+
+- WinForms: `docs-desktop\dotnet-desktop-guide\winforms\toc.yml`
+- WPF: `docs-desktop\dotnet-desktop-guide\wpf\toc.yml`
+
+What's new entries are under a `What's new` YAML node.
+
+### Step 9 — Validate
 
 After editing, re-read each modified file and confirm:
 
@@ -116,7 +125,7 @@ After editing, re-read each modified file and confirm:
 - Every `##` section in `net110.md` has a matching bullet in `whats-new/index.md`.
 - `ai-usage: ai-assisted` is still present in both files' frontmatter.
 
-### Step 9 — Summarize
+### Step 10 — Summarize
 
 Report:
 
