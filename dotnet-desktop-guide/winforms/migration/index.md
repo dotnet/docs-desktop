@@ -70,7 +70,7 @@ This article helps you understand what's involved in upgrading a Windows Forms a
 
 Windows Forms is supported on .NET and receives active investment—including newer controls, high-DPI improvements, and accessibility updates. If you maintain an existing Windows Forms app and want to take advantage of those improvements, move to a supported .NET version, or keep your app on a runtime that still receives security patches, this article is for you.
 
-The article covers the reasons to upgrade, the available upgrade paths, and the preparation work that makes the migration go smoothly. It also explains which .NET Framework technologies have no equivalent in .NET, how to fill API gaps using the Windows Compatibility Pack, and how breaking changes can affect your app. Finally, it introduces the GitHub Copilot modernization agent—the recommended tool for handling the upgrade process end to end.
+The article covers the reasons to upgrade, the available upgrade paths, and the preparation work that makes the migration go smoothly. It also explains which .NET Framework technologies have no equivalent in .NET, how to fill API gaps using the Windows Compatibility Pack, and how breaking changes can affect your app.
 
 ## Why upgrade
 
@@ -133,6 +133,9 @@ Most upgrades fall into one of two categories. Identify which path applies to yo
 
 Upgrading from .NET Framework to .NET is the most significant migration path and the primary focus of this section. Windows Forms is supported on .NET and receives active investment, but the migration involves several categories of change to plan for before you start.
 
+> [!IMPORTANT]
+> Even though .NET is a cross-platform technology, Windows Froms for .NET is a Windows-only technology.
+
 The first change is the project file format. .NET uses the SDK-style project format, which is more concise than the legacy format and replaces `<TargetFrameworkVersion>` with `<TargetFramework>`. You can convert your project file to SDK-style while it still targets .NET Framework, which reduces the scope of change during the actual port and gives you a better baseline to work from.
 
 Not all .NET Framework APIs are available in .NET. Some APIs exist on the surface but throw `PlatformNotSupportedException` at runtime. The Windows Compatibility Pack (`Microsoft.Windows.Compatibility` NuGet package) fills many of these gaps by providing access to Windows-specific APIs such as the Windows Registry, Windows Event Log, and more. For details, see [Use the Windows Compatibility Pack to port code to .NET](/dotnet/core/porting/windows-compat-pack).
@@ -188,7 +191,7 @@ The agent supports these upgrade paths for Windows Forms projects:
 - .NET 5 or later to .NET 8 or later
 - Migration to Azure services
 
-It's available in Visual Studio 2026, Visual Studio 2022 17.14+, Visual Studio Code, and GitHub CLI. To start an upgrade in Visual Studio, right-click your solution or project in Solution Explorer and select **Modernize**, or open the GitHub Copilot Chat window and type `@Modernize`. In Visual Studio Code, open the GitHub Copilot Chat panel and type `@modernize-dotnet`.
+It's available in Visual Studio 2026, Visual Studio 2022 17.14.16+, Visual Studio Code, and GitHub CLI. To start an upgrade in Visual Studio, right-click your solution or project in Solution Explorer and select **Modernize**, or open the GitHub Copilot Chat window and type `@Modernize`. In Visual Studio Code, open the GitHub Copilot Chat panel and type `@modernize-dotnet`.
 
 For setup and usage details, see [What is GitHub Copilot modernization?](/dotnet/core/porting/github-copilot-app-modernization/overview).
 
@@ -221,7 +224,7 @@ Several .NET Framework technologies have no equivalent in .NET and require alter
 
 - **Code Access Security (CAS)**
 
-  — CAS isn't supported and is no longer a security boundary. Use OS-level security boundaries such as virtualization, containers, or user accounts instead.
+  CAS isn't supported and is no longer a security boundary. Use OS-level security boundaries such as virtualization, containers, or user accounts instead.
 
 - **Security transparency**
 
@@ -318,7 +321,6 @@ For full details, see [Use the Windows Compatibility Pack to port code to .NET](
 - Types of breaking changes: behavioral, binary compatibility, source compatibility, design-time.
 - Breaking changes in Windows Forms are documented in the breaking changes reference.
 - Developers should review the breaking changes list for the version range they're crossing before upgrading.
-- Use the Platform Compatibility Analyzer to identify APIs that may throw PlatformNotSupportedException.
 - Reference: https://learn.microsoft.com/dotnet/core/porting/breaking-changes
 -->
 
