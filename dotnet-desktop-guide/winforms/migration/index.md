@@ -3,7 +3,7 @@ title: Overview of upgrading Windows Forms apps
 description: "Learn about the upgrade paths available for Windows Forms apps, including migrating from .NET Framework to modern .NET and upgrading between .NET versions."
 author: adegeo
 ms.author: adegeo
-ms.topic: overview #Don't change
+ms.topic: overview
 ms.date: 06/11/2026
 ai-usage: ai-assisted
 
@@ -141,8 +141,6 @@ Some .NET Framework technologies have no equivalent in .NET and require alternat
 
 Finally, audit your third-party dependencies. Controls and libraries that target only .NET Framework might not work on .NET. Prefer NuGet packages that target .NET Standard 2.0 or .NET directly. For packages that haven't been ported, look for community alternatives or check whether the Windows Compatibility Pack covers the needed APIs.
 
-For a step-by-step guide, see [How to upgrade a Windows Forms app to .NET](how-to-upgrade-winforms.md).
-
 ### Upgrade between .NET versions
 
 <!--
@@ -159,48 +157,44 @@ Before you update the target, review the breaking changes documentation for ever
 
 After updating the target framework, update your NuGet dependencies. Packages that target older .NET versions might have newer releases that take advantage of the current runtime. Check for updates and prefer packages that target the version you're moving to. Some packages might also have deprecated APIs or changed behavior in newer versions, so review release notes when updating.
 
-## Before you start
+## GitHub Copilot app modernization
 
 <!--
-- Describe the prerequisite steps needed before beginning a migration from .NET Framework to modern .NET.
-- These can often be done while still targeting .NET Framework, making the actual migration step simpler.
-- Step 1: Upgrade to Visual Studio / MSBuild tooling that supports the target .NET version.
-- Step 2: Retarget the .NET Framework project to at least .NET Framework 4.7.2 to ensure the best API compatibility surface.
-- Step 3: Convert packages.config references to PackageReference format in the project file.
-- Step 4: Convert to SDK-style project format.
-- Step 5: Update NuGet dependencies to the latest versions and prefer .NET Standard targets where available.
-- Reference: https://learn.microsoft.com/dotnet/core/porting/premigration-needed-changes
+- The GitHub Copilot app modernization agent is the recommended tool for upgrading Windows Forms apps.
+- It provides an AI-assisted, end-to-end experience: assesses the project, writes an upgrade plan, applies automated code fixes, and validates the result.
+- Supports upgrading from .NET Framework to latest .NET, upgrading between .NET versions, and migration to Azure.
+- Supports Windows Forms projects.
+- Included with Visual Studio 2022 17.14.16 or later and Visual Studio 2026.
+- Best for projects with many dependencies or Windows-specific APIs.
+- Reference: https://learn.microsoft.com/dotnet/core/porting/framework-overview (GitHub Copilot modernization agent section)
 -->
 
-Before you begin porting your app to .NET, complete a set of preparatory steps while your project still targets .NET Framework. Doing this groundwork first reduces the scope of change during the actual migration and gives you a cleaner, validated baseline to start from. For a complete reference, see [Prerequisites to porting code from .NET Framework](/dotnet/core/porting/premigration-needed-changes).
+The [GitHub Copilot modernization agent](/dotnet/core/porting/github-copilot-app-modernization/overview) is the recommended tool for upgrading Windows Forms apps. It's an AI-powered, end-to-end experience built into GitHub Copilot that handles the entire upgrade process.
 
-- **Upgrade your tooling.**
+The agent follows a three-stage workflow:
 
-  Ensure you're running a version of Visual Studio that supports the version of .NET you intend to target. Newer SDK versions include improved migration support, better analyzers, and updated project templates. For the relationship between the .NET SDK, MSBuild, and Visual Studio versions, see [Versioning relationship between the .NET SDK, MSBuild, and Visual Studio](/dotnet/core/porting/versioning-sdk-msbuild-vs).
+- **Assessment.** Copilot examines your project structure, dependencies, and code patterns. It identifies breaking changes, API compatibility problems, deprecated patterns, and the overall upgrade scope. It then presents strategy decisions—such as upgrade order and compatibility handling—for you to review before proceeding.
 
-- **Target .NET Framework 4.7.2 or later.**
+- **Planning.** Copilot converts the assessment and your confirmed choices into a detailed upgrade plan, documenting upgrade strategies, refactoring approaches, dependency paths, and risk mitigations.
 
-  Retarget your project to .NET Framework 4.7.2 or higher before porting. This version provides the broadest API compatibility surface with .NET Standard 2.0, which reduces the number of API gaps you'll encounter during migration.
+- **Execution.** Copilot breaks the plan into sequential tasks with validation criteria, applies code fixes, and commits changes incrementally. If it encounters a problem it can't resolve automatically, it asks for your help and learns from the correction.
 
-  In Visual Studio, right-click the project, select **Properties**, and then change the **Target Framework** dropdown to **.NET Framework 4.7.2**. Recompile and fix any issues before proceeding.
+All upgrade state is stored in `.github/upgrades/` in your repository, so you can pause and resume across sessions or switch between development environments without losing progress.
 
-- **Convert to PackageReference format.**
+The agent supports these upgrade paths for Windows Forms projects:
 
-  If your project uses a `packages.config` file to manage NuGet references, migrate to `PackageReference` format. PackageReference is the modern approach and integrates directly into the SDK-style project format you'll adopt in the next step.
+- .NET Framework (any version) to .NET 8 or later
+- .NET Core 1.x–3.x to .NET 8 or later
+- .NET 5 or later to .NET 8 or later
+- Migration to Azure services
 
-  In Visual Studio, right-click `packages.config` in Solution Explorer and select **Migrate packages.config to PackageReference**. Review the migration output and resolve any warnings before continuing.
+It's available in Visual Studio 2026, Visual Studio 2022 17.14+, Visual Studio Code, and GitHub CLI. To start an upgrade in Visual Studio, right-click your solution or project in Solution Explorer and select **Modernize**, or open the GitHub Copilot Chat window and type `@Modernize`. In Visual Studio Code, open the GitHub Copilot Chat panel and type `@modernize-dotnet`.
 
-- **Convert to SDK-style project format.**
+For setup and usage details, see [What is GitHub Copilot modernization?](/dotnet/core/porting/github-copilot-app-modernization/overview).
 
-  Switch your project file to the [SDK-style format](/dotnet/core/project-sdk/overview). SDK-style projects are more concise, support multi-targeting, and are required for .NET. This conversion can be done while still targeting .NET Framework, so it's a safe preparatory step. Many conversion tools handle this automatically, or you can convert manually by replacing the project file content with the SDK-style equivalent and re-adding necessary properties.
+For an example upgrade, see [Upgrade from Windows Forms .NET Framework to .NET](how-to-upgrade-winforms.md).
 
-- **Update NuGet dependencies.**
-
-  Update all NuGet packages to their latest versions and prefer packages that target .NET Standard 2.0, rather than packages that target .NET Framework only. This reduces the risk of dependency blockers when you change the target framework. Review package release notes for any breaking changes introduced in newer versions.
-
-All of the previous suggestions ensure that your projects are in a good state before you upgrade to .NET.
-
-## Unavailable technologies
+## Unavailable .NET Framework technologies
 
 <!--
 - Some .NET Framework technologies don't exist in modern .NET and require code changes or alternative approaches.
@@ -242,6 +236,47 @@ Several .NET Framework technologies have no equivalent in .NET and require alter
   <xref:System.EnterpriseServices> isn't supported. Apps that use COM+ services such as object pooling, transactions, or role-based security through `System.EnterpriseServices` need to be redesigned to use alternatives. For distributed transactions, consider `System.Transactions`. For service hosting scenarios, consider ASP.NET Core or worker services.
 
 Be aware that some APIs in these areas are present in .NET but throw <xref:System.PlatformNotSupportedException> at runtime rather than failing at compile time. Test your app on .NET early in the migration to surface these issues before you invest in a full port.
+
+## Before you start upgrading from .NET Framework
+
+<!--
+- Describe the prerequisite steps needed before beginning a migration from .NET Framework to modern .NET.
+- These can often be done while still targeting .NET Framework, making the actual migration step simpler.
+- Step 1: Upgrade to Visual Studio / MSBuild tooling that supports the target .NET version.
+- Step 2: Retarget the .NET Framework project to at least .NET Framework 4.7.2 to ensure the best API compatibility surface.
+- Step 3: Convert packages.config references to PackageReference format in the project file.
+- Step 4: Convert to SDK-style project format.
+- Step 5: Update NuGet dependencies to the latest versions and prefer .NET Standard targets where available.
+- Reference: https://learn.microsoft.com/dotnet/core/porting/premigration-needed-changes
+-->
+
+Before you begin porting your app to .NET, complete a set of preparatory steps while your project still targets .NET Framework. Doing this groundwork first reduces the scope of change during the actual migration and gives you a cleaner, validated baseline to start from. For a complete reference, see [Prerequisites to porting code from .NET Framework](/dotnet/core/porting/premigration-needed-changes).
+
+- **Upgrade your tooling.**
+
+  Ensure you're running a version of Visual Studio that supports the version of .NET you intend to target. Newer SDK versions include improved migration support, better analyzers, and updated project templates. For the relationship between the .NET SDK, MSBuild, and Visual Studio versions, see [Versioning relationship between the .NET SDK, MSBuild, and Visual Studio](/dotnet/core/porting/versioning-sdk-msbuild-vs).
+
+- **Target .NET Framework 4.7.2 or later.**
+
+  Retarget your project to .NET Framework 4.7.2 or higher before porting. This version provides the broadest API compatibility surface with .NET Standard 2.0, which reduces the number of API gaps you'll encounter during migration.
+
+  In Visual Studio, right-click the project, select **Properties**, and then change the **Target Framework** dropdown to **.NET Framework 4.7.2**. Recompile and fix any issues before proceeding.
+
+- **Convert to PackageReference format.**
+
+  If your project uses a `packages.config` file to manage NuGet references, migrate to `PackageReference` format. PackageReference is the modern approach and integrates directly into the SDK-style project format you'll adopt in the next step.
+
+  In Visual Studio, right-click `packages.config` in Solution Explorer and select **Migrate packages.config to PackageReference**. Review the migration output and resolve any warnings before continuing.
+
+- **Convert to SDK-style project format.**
+
+  Switch your project file to the [SDK-style format](/dotnet/core/project-sdk/overview). SDK-style projects are more concise, support multi-targeting, and are required for .NET. This conversion can be done while still targeting .NET Framework, so it's a safe preparatory step. Many conversion tools handle this automatically, or you can convert manually by replacing the project file content with the SDK-style equivalent and re-adding necessary properties.
+
+- **Update NuGet dependencies.**
+
+  Update all NuGet packages to their latest versions and prefer packages that target .NET Standard 2.0, rather than packages that target .NET Framework only. This reduces the risk of dependency blockers when you change the target framework. Review package release notes for any breaking changes introduced in newer versions.
+
+All of the previous suggestions ensure that your projects are in a good state before you upgrade to .NET.
 
 ## Windows Compatibility Pack
 
@@ -299,41 +334,6 @@ Breaking changes fall into several categories, and not all of them cause compile
 When porting from .NET Framework, you're crossing a large version gap, so the list of potential changes is longer. When upgrading between .NET versions—for example, from .NET 6 to .NET 9—the scope is narrower, but every version in between can introduce changes that affect your app. Review breaking changes for each version you skip, not just the target version.
 
 Breaking changes specific to Windows Forms are documented in [Breaking changes in Windows Forms](/dotnet/core/compatibility/winforms). Filter the breaking changes reference to the version range you're upgrading across, and review entries that apply to APIs your app uses.
-
-## GitHub Copilot app modernization
-
-<!--
-- The GitHub Copilot app modernization agent is the recommended tool for upgrading Windows Forms apps.
-- It provides an AI-assisted, end-to-end experience: assesses the project, writes an upgrade plan, applies automated code fixes, and validates the result.
-- Supports upgrading from .NET Framework to latest .NET, upgrading between .NET versions, and migration to Azure.
-- Supports Windows Forms projects.
-- Included with Visual Studio 2022 17.14.16 or later and Visual Studio 2026.
-- Best for projects with many dependencies or Windows-specific APIs.
-- Reference: https://learn.microsoft.com/dotnet/core/porting/framework-overview (GitHub Copilot modernization agent section)
--->
-
-The [GitHub Copilot modernization agent](/dotnet/core/porting/github-copilot-app-modernization/overview) is the recommended tool for upgrading Windows Forms apps. It's an AI-powered, end-to-end experience built into GitHub Copilot that handles the entire upgrade process—from initial assessment through code fixes and validation—with minimal manual intervention.
-
-The agent follows a three-stage workflow:
-
-- **Assessment.** Copilot examines your project structure, dependencies, and code patterns. It identifies breaking changes, API compatibility problems, deprecated patterns, and the overall upgrade scope. It then presents strategy decisions—such as upgrade order and compatibility handling—for you to review before proceeding.
-
-- **Planning.** Copilot converts the assessment and your confirmed choices into a detailed upgrade plan, documenting upgrade strategies, refactoring approaches, dependency paths, and risk mitigations.
-
-- **Execution.** Copilot breaks the plan into sequential tasks with validation criteria, applies code fixes, and commits changes incrementally. If it encounters a problem it can't resolve automatically, it asks for your help and learns from the correction.
-
-All upgrade state is stored in `.github/upgrades/` in your repository, so you can pause and resume across sessions or switch between development environments without losing progress.
-
-The agent supports these upgrade paths for Windows Forms projects:
-
-- .NET Framework (any version) to .NET 8 or later
-- .NET Core 1.x–3.x to .NET 8 or later
-- .NET 5 or later to .NET 8 or later
-- Migration to Azure services
-
-It's available in Visual Studio 2022 17.14 or later, Visual Studio Code (via the GitHub Copilot Chat panel), and GitHub.com. In Visual Studio, right-click your solution or project in Solution Explorer and select **Modernize**, or open the GitHub Copilot Chat window and type `@Modernize`. In Visual Studio Code, open the GitHub Copilot Chat panel and type `@modernize-dotnet`.
-
-For setup and usage details, see [What is GitHub Copilot modernization?](/dotnet/core/porting/github-copilot-app-modernization/overview).
 
 ## Related content
 
