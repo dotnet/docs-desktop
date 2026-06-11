@@ -303,7 +303,7 @@ Attached properties use a syntax that superficially resembles property element s
 
 ## Attached Events
 
-Attached events are another programming concept introduced in XAML where events can be defined by a specific type, but handlers may be attached on any object element. In the WPF implementation, often the type that defines an attached event is a static type that defines a service, and sometimes those attached events are exposed by a routed event alias in types that expose the service. Handlers for attached events are specified through attribute syntax. As with attached events, the attribute syntax is expanded for attached events to allow a *typeName*.*eventName* usage, where *typeName* is the class that provides `Add` and `Remove` event handler accessors for the attached event infrastructure, and *eventName* is the event name.
+Attached events are another programming concept introduced in XAML where events can be defined by a specific type, but handlers may be attached on any object element. In the WPF implementation, often the type that defines an attached event is a static type that defines a service, and sometimes those attached events are exposed by a routed event alias in types that expose the service. Handlers for attached events are specified through attribute syntax. As with attached properties, the attribute syntax is expanded for attached events to allow a *typeName*.*eventName* usage, where *typeName* is the class that provides `Add` and `Remove` event handler accessors for the attached event infrastructure, and *eventName* is the event name.
 
 <a name="anatomy_of_a_xaml_page_root_element"></a>
 
