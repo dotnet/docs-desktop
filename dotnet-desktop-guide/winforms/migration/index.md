@@ -1,131 +1,189 @@
 ---
-title: Upgrade a .NET Framework WinForms app to .NET
-description: Learn how to upgrade a .NET Framework (or previous .NET) Windows Forms application to .NET with the .NET Upgrade Assistant and Visual Studio.
-ms.date: 04/02/2025
-ms.service: dotnet-desktop
-ms.update-cycle: 365-days
-ms.topic: upgrade-and-migration-article  #Don't change.
-#customer intent: As a developer, I want to use the .NET Upgrade Assistant to automatically upgrade my projects to the latest version of .NET.
+title: Overview of upgrading Windows Forms apps
+description: "Learn about the upgrade paths available for Windows Forms apps, including migrating from .NET Framework to modern .NET and upgrading between .NET versions."
+author: adegeo
+ms.author: adegeo
+ms.topic: overview #Don't change
+ms.date: 06/11/2026
+ai-usage: ai-assisted
+
+#customer intent: As a developer who maintains an existing Windows Forms app, I want to understand my upgrade options so that I can plan and execute a migration to modern .NET.
+
 ---
 
-# Migrate from Windows Forms .NET Framework to .NET
+<!-- REFERENCE MATERIAL AND RULES
 
-This article describes how to upgrade a Windows Forms desktop app to .NET using .NET Upgrade Assistant. Windows Forms remains a Windows-only framework, even though .NET is a cross-platform technology.
+## Key Content Requirements
 
-## Prerequisites
+### Audience Focus
 
-- Windows Operating System.
-- [Download and extract the demo app used with this article.][winforms-sample]
-- [Visual Studio 2022 version 17.12 or later to target .NET 9.](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2022+desktopguide+winforms+migration)
-- [.NET Upgrade Assistant extension for Visual Studio.](/dotnet/core/porting/upgrade-assistant-install#install-the-visual-studio-extension)
+- Primary audience: Windows Forms developers on .NET Framework
+- Secondary audience: Windows Forms developers on older .NET versions
+- Remember: Windows Forms is Windows-only; don't reference cross-platform features
 
-## Assessment
+### Terminology
 
-You should analyze your projects before performing an upgrade. Performing code analysis on your projects with .NET Upgrade Assistant generates a report that you can refer to, to identify potential migration blockers.
+- Use ".NET" not "modern .NET"
+- Windows Forms remains Windows-only (not cross-platform)
 
-To analyze your projects and generate a report, right-click on the solution file in **Solution Explorer** and select **Upgrade**. For more information about performing an analysis, see [Analyze projects with .NET Upgrade Assistant](/dotnet/core/porting/upgrade-assistant-how-to-analyze).
+### Tool Promotion
 
-## Migrate dependencies
+**IMPORTANT**: We **promote** the **GitHub Copilot Modernization Agent**, not the .NET Upgrade Assistant.
 
-If you're upgrading multiple projects, start with projects that have no dependencies. In the Matching Game sample, the **MatchingGame** project depends on the **MatchingGame.Logic** library, so **MatchingGame.Logic** should be upgraded first.
+- ✅ **Recommended**: GitHub Copilot Modernization Agent
+- ❌ **Deprecated**: .NET Upgrade Assistant (mention only as deprecated/historical)
 
-> [!TIP]
-> Be sure to have a backup of your code, such as in source control or a copy.
+### Upgrade Scenarios to Cover
 
-Use the following steps to upgrade a project in Visual Studio:
+The article must address multiple upgrade scenarios:
 
-01. Right-click on the **MatchingGame.Logic** project in the **Solution Explorer** window and select **Upgrade**:
+1. **.NET Framework to .NET** - The traditional "port" scenario
+2. **.NET version-to-version upgrades** - Moving from older .NET to newer .NET (e.g., .NET 6 to .NET 9)
+3. **Dependency upgrades** - Updating NuGet packages, libraries, and third-party components
+4. **Service upgrades** - Modernizing authentication, data access, cloud services
 
-    :::image type="content" source="media/index/vs-upgrade.png" alt-text="A screenshot of the .NET Upgrade Assistant's Upgrade menu item in Visual Studio.":::
+## Reference Material
 
-    A new tab is opened that prompts you to choose which upgrade you want to perform.
+Use these articles as source material for ideas and content:
 
-01. Select **In-place project upgrade**.
+- Generic overview about upgrades: https://learn.microsoft.com/dotnet/core/porting/index
+- .NET Framework upgrade specific overview: https://learn.microsoft.com/dotnet/core/porting/framework-overview
+- Windows Compatibility Pack to port code: https://learn.microsoft.com/dotnet/core/porting/windows-compat-pack
+- .NET Framework technologies unavailable: https://learn.microsoft.com/dotnet/core/porting/net-framework-tech-unavailable
+- Breaking changes can affect porting your app: https://learn.microsoft.com/dotnet/core/porting/breaking-changes
+- Prerequisites to port from .NET Framework: https://learn.microsoft.com/dotnet/core/porting/premigration-needed-changes
 
-    :::image type="content" source="media/index/step-1-inplace.png" alt-text="A screenshot of the .NET Upgrade Assistant tab. The 'In-place project upgrade' option is highlighted.":::
+When linking to this content, use the `/dotnet/...` URL path since the article will be published on learn.microsoft.com.
 
-01. Next, select the target framework.
+-->
 
-    Based on the type of project you're upgrading, you're presented with different options. **.NET Standard 2.0** can be used by both .NET Framework and .NET. This is a good choice if the library doesn't rely on a desktop technology like Windows Forms, which this project does.
+# Overview of upgrading Windows Forms apps
 
-    Select **.NET 9.0** and then select **Next**.
+<!--
+- Briefly introduce the purpose of this article: helping developers understand what it means to upgrade a Windows Forms app.
+- State that the primary focus is migrating from .NET Framework to modern .NET, but version-to-version .NET upgrades are also covered.
+- Mention that Windows Forms is supported on modern .NET and receives ongoing improvements.
+- Help the reader determine if this article is for them: they maintain an existing Windows Forms app and want to move to a newer version of .NET.
+-->
 
-    :::image type="content" source="media/index/step-2-framework.png" alt-text="A screenshot of the .NET Upgrade Assistant. The target framework prompt is open and .NET 8 is highlighted along with the 'Next' button.":::
+## Why upgrade
 
-01. A tree is shown with all of the artifacts related to the project, such as code files and libraries. You can upgrade individual artifacts or the entire project, which is the default. Select **Upgrade selection** to start the upgrade.
+<!--
+- Explain the key reasons a developer should upgrade their Windows Forms app.
+- .NET Framework is a Windows-only, closed-source runtime that no longer receives feature updates.
+- Modern .NET offers performance improvements, new language and runtime features, open-source development, and active feature investment in Windows Forms.
+- Security: older versions of .NET (and .NET Framework) eventually reach end-of-support and stop receiving security patches.
+- .NET release cadence: explain the LTS vs STS release model briefly and why staying current matters.
+- Reference: https://learn.microsoft.com/dotnet/core/porting/index (when to upgrade)
+-->
 
-    :::image type="content" source="media/index/step-3-components.png" alt-text="A screenshot of the .NET Upgrade Assistant. The 'Select Components' page is open with the 'Upgrade selection' button highlighted.":::
+## Upgrade paths
 
-01. When the upgrade is finished, the results are displayed:
+<!--
+- Describe the two main upgrade scenarios for Windows Forms developers.
+- Path 1: .NET Framework to modern .NET — the most significant change; project format, APIs, and some technologies change.
+- Path 2: .NET version to a newer .NET version — smaller in scope; mainly target framework updates, dependency updates, and reviewing breaking changes.
+- Mention that modernization (e.g., adopting new patterns, cloud migration) is a separate optional step after upgrading.
+- Reference: https://learn.microsoft.com/dotnet/core/porting/index (choose an upgrade path)
+-->
 
-    :::image type="content" source="media/index/step-4-results1.png" alt-text="A screenshot of the .NET Upgrade Assistant's upgrade results tab, showing the migrated items from the project.":::
+### Upgrade from .NET Framework to modern .NET
 
-    Artifacts with a solid green circle were upgraded while empty green circles were skipped. Skipped artifacts mean that the upgrade assistant didn't find anything to upgrade.
+<!--
+- This is the most complex upgrade path and is the primary focus of this section.
+- Both Windows Forms and WPF are available on modern .NET, but they remain Windows-only.
+- Key changes when upgrading from .NET Framework:
+  - Project file format changes to SDK-style.
+  - Some APIs available in .NET Framework aren't available in modern .NET.
+  - Some technologies are completely unavailable (see the "Unavailable technologies" section).
+  - Third-party controls and libraries may not have been ported to .NET.
+- Reference: https://learn.microsoft.com/dotnet/core/porting/framework-overview
+-->
 
-Now that the app's supporting library is upgraded, upgrade the main app.
+### Upgrade between .NET versions
 
-### Notes for Visual Basic projects
+<!--
+- Upgrading from an older .NET version (e.g., .NET 6) to a newer one (e.g., .NET 8 or .NET 9) is typically a smaller effort.
+- Primarily involves updating the target framework moniker in the project file.
+- Review breaking changes documentation for the versions being crossed.
+- Check for dependency updates that may be required.
+- Reference: https://learn.microsoft.com/dotnet/core/porting/breaking-changes
+-->
 
-Currently, the .NET Upgrade Assistant doesn't recognize the use of `System.Configuration` in the settings file created by the Visual Basic templates on .NET Framework. It also doesn't respect the use of the `My` extensions used in .NET Framework projects, such as `My.Computer` and `My.User`. These extensions were removed in .NET. Because of these two problems, a Visual Basic library won't compile after being migrated with .NET Upgrade Assistant.
+## Before you start
 
-To fix this problem, the project must target Windows and reference Windows Forms.
+<!--
+- Describe the prerequisite steps needed before beginning a migration from .NET Framework to modern .NET.
+- These can often be done while still targeting .NET Framework, making the actual migration step simpler.
+- Step 1: Upgrade to Visual Studio / MSBuild tooling that supports the target .NET version.
+- Step 2: Retarget the .NET Framework project to at least .NET Framework 4.7.2 to ensure the best API compatibility surface.
+- Step 3: Convert packages.config references to PackageReference format in the project file.
+- Step 4: Convert to SDK-style project format.
+- Step 5: Update NuGet dependencies to the latest versions and prefer .NET Standard targets where available.
+- Reference: https://learn.microsoft.com/dotnet/core/porting/premigration-needed-changes
+-->
 
-01. After the migration is complete, double-click the **MatchingGame.Logic** project in the **Solution Explorer** window.
-01. Locate the `<Project>/<PropertyGroup>` element.
-01. In the XML editor, change the value of `<TargetFramework>` from `net9.0` to `net9.0-windows`.
-01. Add `<UseWindowsForms>true</UseWindowsForms>` to the line after `<TargetFramework>`.
+## Unavailable technologies
 
-The project settings should look like the following snippet:
+<!--
+- Some .NET Framework technologies don't exist in modern .NET and require code changes or alternative approaches.
+- List the major unavailable technologies relevant to Windows Forms developers:
+  - Application domains (AppDomain): no longer supported; use separate processes or AssemblyLoadContext instead.
+  - .NET Remoting: not supported; use IPC mechanisms or gRPC/ASP.NET Core for cross-process scenarios.
+  - Code Access Security (CAS): deprecated; use OS-level security boundaries (containers, user accounts).
+  - Security Transparency: no longer a supported security boundary.
+  - Windows Workflow Foundation (WF): not supported; consider CoreWF as an alternative.
+  - System.EnterpriseServices (COM+): not supported.
+- Note that some APIs may exist on the surface but throw PlatformNotSupportedException at runtime.
+- Reference: https://learn.microsoft.com/dotnet/core/porting/net-framework-tech-unavailable
+-->
 
-```xml
-<Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <TargetFramework>net9.0-windows</TargetFramework>
-    <UseWindowsForms>true</UseWindowsForms>
-    <OutputType>Library</OutputType>
-    <MyType>Windows</MyType>
+## Windows Compatibility Pack
 
-    ... other settings removed for brevity ...
-```
+<!--
+- When porting from .NET Framework, many APIs that were present in .NET Framework are missing in modern .NET.
+- The Windows Compatibility Pack (Microsoft.Windows.Compatibility NuGet package) fills that gap.
+- It provides approximately 20,000 APIs covering areas such as: Windows Registry, Windows Event Log, WMI, Performance Counters, Directory Services, Windows ACLs, Windows Services, and more.
+- It's especially useful for apps that must stay on Windows and want to migrate incrementally.
+- Note that many APIs in the pack are Windows-only; use the Platform Compatibility Analyzer to detect cross-platform issues if needed.
+- Reference: https://learn.microsoft.com/dotnet/core/porting/windows-compat-pack
+-->
 
-## Migrate the main project
+## Breaking changes
 
-Once all of the supporting libraries are upgraded, the main app project can be upgraded. With the example app, there's only one library project to upgrade, which was upgraded in the previous section.
+<!--
+- When porting from .NET Framework to .NET, or upgrading between .NET versions, breaking changes can affect the app.
+- Types of breaking changes: behavioral, binary compatibility, source compatibility, design-time.
+- Breaking changes in Windows Forms are documented in the breaking changes reference.
+- Developers should review the breaking changes list for the version range they're crossing before upgrading.
+- Use the Platform Compatibility Analyzer to identify APIs that may throw PlatformNotSupportedException.
+- Reference: https://learn.microsoft.com/dotnet/core/porting/breaking-changes
+-->
 
-01. Right-click on the **MatchingGame** project in the **Solution Explorer** window and select **Upgrade**:
-01. Select **In-place project upgrade**.
-01. Select **.NET 9.0** for the target framework and select **Next**.
-01. Leave all of the artifacts selected and select **Upgrade selection**.
+## Tools for upgrading
 
-After the upgrade is complete, the results are shown. Notice how the Windows Forms project has a warning symbol. Expand that item and more information is shown about that step:
+<!--
+- Several tools are available to assist with upgrading Windows Forms apps; this section introduces them.
+- Emphasize that even when using tools, the developer must review and validate the results.
+-->
 
-:::image type="content" source="media/index/step-4-results2.png" alt-text="A screenshot of the .NET Upgrade Assistant's upgrade results tab, showing some of the result items have warning symbols.":::
+### GitHub Copilot app modernization (recommended)
 
-Notice that the project upgrade component mentions that the default font changed. Because the font might affect control layout, you need to check every form and custom control in your project to ensure the UI is arranged correctly.
-
-## Generate a clean build
-
-After your main project is upgraded, clean and compile it.
-
-01. Right-click on the **MatchingGame** project in the **Solution Explorer** window and select **Clean**.
-01. Right-click on the **MatchingGame** project in the **Solution Explorer** window and select **Build**.
-
-If your application encountered any errors, you can find them in the **Error List** window with a recommendation how to fix them.
-
-The **Windows Forms Matching Game Sample** project is now upgraded to .NET 9.
-
-## Post-upgrade experience
-
-If you're porting an app from .NET Framework to .NET, review the [Modernize after upgrading to .NET from .NET Framework](/dotnet/core/porting/modernize) article.
+<!--
+- The GitHub Copilot app modernization agent is the recommended tool for upgrading Windows Forms apps.
+- It provides an AI-assisted, end-to-end experience: assesses the project, writes an upgrade plan, applies automated code fixes, and validates the result.
+- Supports upgrading from .NET Framework to latest .NET, upgrading between .NET versions, and migration to Azure.
+- Supports Windows Forms projects.
+- Included with Visual Studio 2022 17.14.16 or later and Visual Studio 2026.
+- Best for projects with many dependencies or Windows-specific APIs.
+- Reference: https://learn.microsoft.com/dotnet/core/porting/framework-overview (GitHub Copilot modernization agent section)
+-->
 
 ## Related content
 
-- [Porting from .NET Framework to .NET.](/dotnet/core/porting/)
-
-  The porting guide provides an overview of what you should consider when porting your code from .NET Framework to .NET. The complexity of your projects dictates how much work you'll do after the initial migration of the project files.
-
-- [Modernize after upgrading to .NET from .NET Framework.](/dotnet/core/porting/modernize)
-
-  The world of .NET has changed a lot since .NET Framework. This link provides some information about how to modernize your app after you upgrade.
-
-[winforms-sample]: https://github.com/dotnet/samples/tree/main/windowsforms/matching-game
+- [How to upgrade a Windows Forms app to .NET](how-to-upgrade-winforms.md)
+- [Overview of porting from .NET Framework to .NET](https://learn.microsoft.com/dotnet/core/porting/framework-overview)
+- [.NET Framework technologies unavailable on .NET](https://learn.microsoft.com/dotnet/core/porting/net-framework-tech-unavailable)
+- [Prerequisites to porting code from .NET Framework](https://learn.microsoft.com/dotnet/core/porting/premigration-needed-changes)
+- [Breaking changes when porting code](https://learn.microsoft.com/dotnet/core/porting/breaking-changes)
+- [Use the Windows Compatibility Pack to port code to .NET](https://learn.microsoft.com/dotnet/core/porting/windows-compat-pack)
