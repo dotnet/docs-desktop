@@ -15,7 +15,7 @@ ai-usage: ai-assisted
 
 This article helps you understand what's involved in upgrading a Windows Forms app. The primary focus is modernizing from .NET Framework to .NET, but upgrading between .NET versions is also covered.
 
-Windows Forms is supported on .NET and receives active investment—including newer controls, high-DPI improvements, and accessibility updates. If you maintain an existing Windows Forms app and want to take advantage of those improvements or move to a supported .NET version, this article is for you.
+Windows Forms is supported on .NET and receives active investment, including newer controls, high-DPI improvements, and accessibility updates. If you maintain an existing Windows Forms app and want to take advantage of those improvements or move to a supported .NET version, this article is for you.
 
 The article covers the reasons to upgrade, the available upgrade paths, and the preparation work that makes the upgrade go smoothly. It also explains which .NET Framework technologies have no equivalent in .NET, how to fill API gaps using the Windows Compatibility Pack, and how breaking changes can affect your app.
 
@@ -42,7 +42,7 @@ Most upgrades fall into one of two categories. Identify which path applies to yo
 
   The project file format, some APIs, and certain technologies are different. Review the prerequisites, assess your dependencies, and plan for API gaps before you start.
 
-  After your app builds and runs on .NET, you can optionally adopt newer patterns—such as `appsettings.json` configuration, dependency injection, or cloud services. Adopting these patterns is separate from the modernization to .NET and isn't required to complete the upgrade. For ideas and guidance, see [Modernize after upgrading to .NET from .NET Framework](/dotnet/core/porting/modernize).
+  After your app builds and runs on .NET, you can optionally adopt newer patterns, such as `appsettings.json` configuration, dependency injection, or cloud services. Adopting these patterns is separate from the modernization to .NET and isn't required to complete the upgrade. For ideas and guidance, see [Modernize after upgrading to .NET from .NET Framework](/dotnet/core/porting/modernize).
 
 - **From an older .NET version to a newer one:** A smaller-scope upgrade.
 
@@ -77,7 +77,7 @@ The [GitHub Copilot modernization agent](/dotnet/core/porting/github-copilot-app
 
 The agent follows a three-stage workflow:
 
-- **Assessment.** Copilot examines your project structure, dependencies, and code patterns. It identifies breaking changes, API compatibility problems, deprecated patterns, and the overall upgrade scope. It then presents strategy decisions—such as upgrade order and compatibility handling—for you to review before proceeding.
+- **Assessment.** Copilot examines your project structure, dependencies, and code patterns. It identifies breaking changes, API compatibility problems, deprecated patterns, and the overall upgrade scope. It then presents strategy decisions, such as upgrade order and compatibility handling, for you to review before proceeding.
 
 - **Planning.** Copilot converts the assessment and your confirmed choices into a detailed upgrade plan, documenting upgrade strategies, refactoring approaches, dependency paths, and risk mitigations.
 
@@ -185,7 +185,7 @@ For full details, see [Use the Windows Compatibility Pack to port code to .NET](
 
 ## Breaking changes
 
-Breaking changes are an expected part of any upgrade—whether you're porting from .NET Framework or moving between .NET versions. Reviewing them before you start prevents surprises late in the migration. For the full reference, see [Breaking changes when porting code](/dotnet/core/porting/breaking-changes).
+Breaking changes are an expected part of any upgrade, whether you're porting from .NET Framework or moving between .NET versions. Reviewing them before you start prevents surprises late in the migration. For the full reference, see [Breaking changes when porting code](/dotnet/core/porting/breaking-changes).
 
 Breaking changes fall into several categories, and not all of them cause compile-time errors:
 
