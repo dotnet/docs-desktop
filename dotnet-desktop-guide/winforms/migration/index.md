@@ -15,7 +15,7 @@ ai-usage: ai-assisted
 
 This article helps you understand what's involved in upgrading a Windows Forms app. The primary focus is modernizing from .NET Framework to .NET, but upgrading between .NET versions is also covered.
 
-Windows Forms is supported on .NET and receives active investment—including newer controls, high-DPI improvements, and accessibility updates. If you maintain an existing Windows Forms app and want to take advantage of those improvements, move to a supported .NET version, or keep your app on a runtime that still receives security patches, this article is for you.
+Windows Forms is supported on .NET and receives active investment—including newer controls, high-DPI improvements, and accessibility updates. If you maintain an existing Windows Forms app and want to take advantage of those improvements or move to a supported .NET version, this article is for you.
 
 The article covers the reasons to upgrade, the available upgrade paths, and the preparation work that makes the upgrade go smoothly. It also explains which .NET Framework technologies have no equivalent in .NET, how to fill API gaps using the Windows Compatibility Pack, and how breaking changes can affect your app.
 
@@ -23,9 +23,9 @@ The article covers the reasons to upgrade, the available upgrade paths, and the 
 
 .NET Framework is a Windows-only, closed-source runtime that no longer receives feature updates. While it continues to receive security patches for supported versions, it doesn't benefit from the performance work, language improvements, or active Windows Forms investment that .NET does. If you're maintaining a Windows Forms app on .NET Framework, upgrading to .NET gives you access to a faster, more capable platform that's actively developed in the open.
 
-Security is a primary driver for staying current. Older .NET Framework and .NET versions eventually reach end-of-support and stop receiving security patches. Running an app on an unsupported runtime exposes it to unpatched vulnerabilities, which can create compliance and operational risk. The same applies to older .NET versions—each release has a defined support window, and apps running on an out-of-support version don't receive fixes. Upgrade before end-of-support to stay protected.
+Staying current on .NET versions matters too. Each .NET release has a defined support window, and apps running on an out-of-support version stop receiving security patches and fixes. Upgrade before end-of-support to stay protected.
 
-Beyond security, .NET offers meaningful performance improvements across runtime startup, throughput, and memory usage. Windows Forms on .NET also benefits from ongoing feature investment—newer controls, accessibility improvements, and high-DPI enhancements are shipped in .NET only. You also gain access to newer C# and Visual Basic language features, improved tooling, and a rich ecosystem of NuGet packages that target .NET.
+.NET offers meaningful performance improvements across runtime startup, throughput, and memory usage. Windows Forms on .NET also benefits from ongoing feature investment—newer controls, accessibility improvements, high-DPI enhancements, and better integration with Windows such as Dark Mode on Windows 11 are shipped in .NET only. You also gain access to newer C# and Visual Basic language features, improved tooling, and a rich ecosystem of NuGet packages that target .NET.
 
 .NET releases a new major version every year, alternating between long-term support (LTS) and standard-term support (STS) releases:
 
@@ -38,15 +38,15 @@ Plan your upgrade cadence around these dates so your app is always on a supporte
 
 Most upgrades fall into one of two categories. Identify which path applies to your app, then use the guidance and tooling in this article to complete the work.
 
-- **From .NET Framework to .NET.**
+- **From .NET Framework to .NET:** The most significant change.
 
-  The most significant change. The project file format, some APIs, and certain technologies are different. Review the prerequisites, assess your dependencies, and plan for API gaps before you start.
+  The project file format, some APIs, and certain technologies are different. Review the prerequisites, assess your dependencies, and plan for API gaps before you start.
 
   After your app builds and runs on .NET, you can optionally adopt newer patterns—such as `appsettings.json` configuration, dependency injection, or cloud services. Adopting these patterns is separate from the modernization to .NET and isn't required to complete the upgrade. For ideas and guidance, see [Modernize after upgrading to .NET from .NET Framework](/dotnet/core/porting/modernize).
 
-- **From an older .NET version to a newer one.**
+- **From an older .NET version to a newer one:** A smaller-scope upgrade.
 
-  A smaller-scope upgrade. The main tasks are updating the target framework moniker, reviewing breaking changes for the versions you're crossing, and updating NuGet dependencies.
+  The main tasks are updating the target framework moniker, reviewing breaking changes for the versions you're crossing, and updating NuGet dependencies.
 
 ### Upgrade from .NET Framework to .NET
 
@@ -55,17 +55,17 @@ Upgrading from .NET Framework to .NET is the most significant upgrade path and t
 > [!IMPORTANT]
 > Even though .NET is a cross-platform technology, Windows Forms for .NET is a Windows-only technology.
 
-The first change is the project file format. .NET uses the SDK-style project format, which is more concise than the legacy format and replaces `<TargetFrameworkVersion>` with `<TargetFramework>`. You can convert your project file to SDK-style while it still targets .NET Framework, which reduces the scope of change during the actual port and gives you a better baseline to work from.
+One change is the project file format. .NET uses the SDK-style project format, which is more concise than the legacy format. You can convert your project file to SDK-style while it still targets .NET Framework, which reduces the scope of change during the actual port and gives you a better baseline to work from.
 
 Not all .NET Framework APIs are available in .NET. Some APIs exist on the surface but throw `PlatformNotSupportedException` at runtime. The Windows Compatibility Pack (`Microsoft.Windows.Compatibility` NuGet package) fills many of these gaps by providing access to Windows-specific APIs such as the Windows Registry, Windows Event Log, and more. For details, see [Use the Windows Compatibility Pack to port code to .NET](/dotnet/core/porting/windows-compat-pack).
 
-Some .NET Framework technologies have no equivalent in .NET and require alternative approaches. Application domains, .NET Remoting, Code Access Security (CAS), Security Transparency, Windows Workflow Foundation, and `System.EnterpriseServices` (COM+) aren't supported. For the full list and recommended alternatives, see the [Unavailable technologies](#unavailable-technologies) section.
+Some .NET Framework technologies have no equivalent in .NET and require alternative approaches, such as Application Domains, Code Access Security (CAS), and Windows Workflow Foundation. For the full list and recommended alternatives, see the [Unavailable technologies](#unavailable-technologies) section.
 
-Finally, audit your third-party dependencies. Controls and libraries that target only .NET Framework might not work on .NET. Prefer NuGet packages that target .NET Standard 2.0 or .NET directly. For packages that haven't been ported, look for community alternatives or check whether the Windows Compatibility Pack covers the needed APIs.
+Audit your third-party dependencies. Controls and libraries that target only .NET Framework might not work on .NET. Prefer NuGet packages that target .NET Standard 2.0 or .NET directly. For packages that haven't been ported, look for community alternatives or check whether the Windows Compatibility Pack covers the needed APIs.
 
 ### Upgrade between .NET versions
 
-Moving from one .NET version to another—for example, from .NET 6 to .NET 8 or .NET 9—is typically a smaller effort than modernizing from .NET Framework. The core task is updating the `<TargetFramework>` property in your project file to the new target framework moniker. For example, changing `net6.0-windows` to `net9.0-windows`.
+Moving from one .NET version to another—for example, from .NET 9 to .NET 10—is typically a smaller effort than modernizing from .NET Framework. The core task is updating the `<TargetFramework>` property in your project file to the new target framework moniker. For example, changing `net9.0-windows` to `net10.0-windows`.
 
 Before you update the target, review the breaking changes documentation for every version you're crossing. Breaking changes can be behavioral, affect binary or source compatibility, or change design-time behavior. Even minor version gaps can introduce changes that affect your app. Review [Breaking changes in .NET](/dotnet/core/compatibility/breaking-changes) and filter to the version range you're upgrading across.
 
