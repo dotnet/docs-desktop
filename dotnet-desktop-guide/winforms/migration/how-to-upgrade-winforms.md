@@ -8,7 +8,7 @@ ms.topic: upgrade-and-migration-article  #Don't change.
 #customer intent: As a developer, I want to use the .NET Upgrade Assistant to automatically upgrade my projects to the latest version of .NET.
 ---
 
-# Migrate from Windows Forms .NET Framework to .NET
+# Upgrade from Windows Forms .NET Framework to .NET
 
 This article describes how to upgrade a Windows Forms desktop app to .NET using .NET Upgrade Assistant. Windows Forms remains a Windows-only framework, even though .NET is a cross-platform technology.
 
