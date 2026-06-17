@@ -16,7 +16,7 @@ body:
                  └─────────────────────────────┘
         ```
 
-        If your question is related to documentation, **STOP**. Go back to the docs site page and scroll to the bottom of the page where there is a GitHub section. Use the link there to open this issue.
+        If your question is related to documentation, **STOP**. Go back to the docs page and scroll to the bottom where the GitHub section is. Use the link there to open this issue.
 
   - type: input
     id: url
