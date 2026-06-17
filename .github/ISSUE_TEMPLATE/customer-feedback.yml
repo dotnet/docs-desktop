@@ -20,7 +20,7 @@ body:
         
         If your question is related to documentation, please fill out the following information. Select the issue type, and describe the issue in the text box below. Add as much detail as needed to help us resolve the issue.
 
- - type: dropdown
+  - type: dropdown
     id: technology-type
     attributes:
       label: .NET or .NET Framework?
