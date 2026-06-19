@@ -1,131 +1,204 @@
 ---
-title: Upgrade a .NET Framework WinForms app to .NET
-description: Learn how to upgrade a .NET Framework (or previous .NET) Windows Forms application to .NET with the .NET Upgrade Assistant and Visual Studio.
-ms.date: 04/02/2025
+title: Upgrade a Windows Forms app to .NET with GitHub Copilot modernization
+description: Walk through upgrading a Windows Forms app to .NET by using the GitHub Copilot modernization agent in Visual Studio.
+author: adegeo
+ms.author: adegeo
+ms.date: 06/12/2026
 ms.service: dotnet-desktop
 ms.update-cycle: 365-days
 ms.topic: upgrade-and-migration-article  #Don't change.
-#customer intent: As a developer, I want to use the .NET Upgrade Assistant to automatically upgrade my projects to the latest version of .NET.
+ai-usage: ai-assisted
+#customer intent: As a developer, I want to use GitHub Copilot modernization to upgrade my Windows Forms project to the latest version of .NET.
 ---
 
-# Upgrade from Windows Forms .NET Framework to .NET
+# Upgrade a Windows Forms app to .NET with GitHub Copilot modernization
 
-This article describes how to upgrade a Windows Forms desktop app to .NET using .NET Upgrade Assistant. Windows Forms remains a Windows-only framework, even though .NET is a cross-platform technology.
+This article walks through upgrading a Windows Forms desktop app to .NET by using the GitHub Copilot modernization agent. The agent runs in your editor, analyzes the project, and drives a three-stage workflow: assessment, planning, and execution.
+
+The example uses the [Matching Game sample][winforms-sample], a small .NET Framework Windows Forms app made up of a main project and a class library.
 
 ## Prerequisites
 
-- Windows Operating System.
+- Windows operating system.
 - [Download and extract the demo app used with this article.][winforms-sample]
-- [Visual Studio 2022 version 17.12 or later to target .NET 9.](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=learn.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2022+desktopguide+winforms+migration)
-- [.NET Upgrade Assistant extension for Visual Studio.](/dotnet/core/porting/upgrade-assistant-install#install-the-visual-studio-extension)
-
-## Assessment
-
-You should analyze your projects before performing an upgrade. Performing code analysis on your projects with .NET Upgrade Assistant generates a report that you can refer to, to identify potential migration blockers.
-
-To analyze your projects and generate a report, right-click on the solution file in **Solution Explorer** and select **Upgrade**. For more information about performing an analysis, see [Analyze projects with .NET Upgrade Assistant](/dotnet/core/porting/upgrade-assistant-how-to-analyze).
-
-## Migrate dependencies
-
-If you're upgrading multiple projects, start with projects that have no dependencies. In the Matching Game sample, the **MatchingGame** project depends on the **MatchingGame.Logic** library, so **MatchingGame.Logic** should be upgraded first.
+- Visual Studio 2026, or Visual Studio 2022 17.14.16 or later.
+- The .NET SDK for the version you're targeting. This article targets .NET 10.
+- A Git repository for the solution. The agent commits its progress, so the project must be under source control.
+- GitHub Copilot modernization enabled for Visual Studio. For more information, see [Install GitHub Copilot modernization](/dotnet/core/porting/github-copilot-app-modernization/install).
 
 > [!TIP]
-> Be sure to have a backup of your code, such as in source control or a copy.
+> Be sure to have a backup of your code, such as in source control or a copy, before you start.
 
-Use the following steps to upgrade a project in Visual Studio:
+## Open the solution
 
-01. Right-click on the **MatchingGame.Logic** project in the **Solution Explorer** window and select **Upgrade**:
+The Matching Game solution targets .NET Framework 4.5. Visual Studio prompts you to retarget the projects to a supported version of .NET Framework when you open the solution.
 
-    :::image type="content" source="media/index/vs-upgrade.png" alt-text="A screenshot of the .NET Upgrade Assistant's Upgrade menu item in Visual Studio.":::
+1. Open the **MatchingGame** solution in Visual Studio.
+1. Visual Studio displays the **Target Framework Not Installed** dialog.
+1. Select **Update the target to .NET Framework 4.8 (Recommended)**, and then select **Continue**.
+1. Open the **Git Changes** window and commit the retargeting changes.
 
-    A new tab is opened that prompts you to choose which upgrade you want to perform.
+## Initiate the upgrade
 
-01. Select **In-place project upgrade**.
+The Matching Game solution contains the **MatchingGame** app and the **MatchingGame.Logic** class library. The agent figures out the project graph on its own, so start the upgrade at the solution level.
 
-    :::image type="content" source="media/index/step-1-inplace.png" alt-text="A screenshot of the .NET Upgrade Assistant tab. The 'In-place project upgrade' option is highlighted.":::
+1. In **Solution Explorer**, right-click the solution and select **Modernize**.
 
-01. Next, select the target framework.
+   The **GitHub Copilot Chat** window opens and starts a conversation with the modernization agent.
 
-    Based on the type of project you're upgrading, you're presented with different options. **.NET Standard 2.0** can be used by both .NET Framework and .NET. This is a good choice if the library doesn't rely on a desktop technology like Windows Forms, which this project does.
+1. Select a model with strong reasoning and coding capabilities.
+1. Tell the agent what you want to do. For example:
 
-    Select **.NET 9.0** and then select **Next**.
+   > Upgrade everything to .NET 10.
 
-    :::image type="content" source="media/index/step-2-framework.png" alt-text="A screenshot of the .NET Upgrade Assistant. The target framework prompt is open and .NET 8 is highlighted along with the 'Next' button.":::
+   The agent reports the current state of the codebase and what it plans to do:
 
-01. A tree is shown with all of the artifacts related to the project, such as code files and libraries. You can upgrade individual artifacts or the entire project, which is the default. Select **Upgrade selection** to start the upgrade.
+   - **Target Framework**: Indicates that the agent upgrades the projects to .NET 10.
+   - **Flow Mode**: Defaults to **Automatic**. For complex apps, ask the agent to switch to **Guided** mode.
+   - **Source Control**: Indicates that the agent creates a new working branch.
 
-    :::image type="content" source="media/index/step-3-components.png" alt-text="A screenshot of the .NET Upgrade Assistant. The 'Select Components' page is open with the 'Upgrade selection' button highlighted.":::
+   The agent writes its work to `.github/upgrades/dotnet-version-upgrade/` in your repository. If that folder already exists from a prior attempt, the agent asks whether to continue or start fresh.
 
-01. When the upgrade is finished, the results are displayed:
+1. Tell the agent `start` to begin the upgrade process.
 
-    :::image type="content" source="media/index/step-4-results1.png" alt-text="A screenshot of the .NET Upgrade Assistant's upgrade results tab, showing the migrated items from the project.":::
+## Review the assessment
 
-    Artifacts with a solid green circle were upgraded while empty green circles were skipped. Skipped artifacts mean that the upgrade assistant didn't find anything to upgrade.
+In the assessment stage, the agent examines the project structure, dependencies, and code patterns to identify what needs to change. It writes the results to `assessment.md` in `.github/upgrades/dotnet-version-upgrade/`.
 
-Now that the app's supporting library is upgraded, upgrade the main app.
+When Copilot finishes the assessment, review the output. It generally starts with something similar to the following:
+
+```
+Assessment Complete
+
+I've analyzed the solution and created a full assessment — see .github/upgrades/scenarios/dotnet-version-upgrade/assessment.md.
+
+Solution summary:
+• Target: net48 → net10.0
+• Projects: 2
+• MatchingGame.Logic (Class Library)
+• MatchingGame (Windows Forms)
+• Issues: 883 (673 mandatory, 210 potential)
+• Affected Technologies: Windows Forms (666), GDI+ / System.Drawing (208), Legacy Configuration System (2)
+
+Key concerns:
+• Both projects are legacy-format .csproj files — need conversion to SDK-style
+• MatchingGame.csproj has API incompatibilities (binary + source) and an incompatible NuGet package
+• WinForms remains supported on .NET 10 (Windows-only TFM)
+• No reported security vulnerabilities
+```
+
+### Breakdown of the assessment
+
+Copilot opens the `.github/upgrades/dotnet-version-upgrade/assessment.md` file in the Visual Studio editor. Scroll down to the `MatchingGame\MatchingGame.csproj` section to see a table of issues:
+
+> | Technology | Issues | Percentage | Migration Path |
+> | :--- | :---: | :---: | :--- |
+> | Legacy Configuration System | 2 | 0.2% | Legacy XML-based configuration system (app.config/web.config) that has been replaced by a more flexible configuration model in .NET Core. The old system was rigid and XML-based. Migrate to Microsoft.Extensions.Configuration with JSON/environment variables; use System.Configuration.ConfigurationManager NuGet package as interim bridge if needed. |
+> | GDI+ / System.Drawing | 208 | 23.7% | System.Drawing APIs for 2D graphics, imaging, and printing that are available via NuGet package System.Drawing.Common. Note: Not recommended for server scenarios due to Windows dependencies; consider cross-platform alternatives like SkiaSharp or ImageSharp for new code. |
+> | Windows Forms | 621 | 76.0% | Windows Forms APIs for building Windows desktop applications with traditional Forms-based UI that are available in .NET on Windows. Enable Windows Desktop support: Option 1 (Recommended): Target net9.0-windows; Option 2: Add `<UseWindowsDesktop>true</UseWindowsDesktop>`; Option 3 (Legacy): Use Microsoft.NET.Sdk.WindowsDesktop SDK. |
+
+Most of these issues aren't real problems. Look at the "Migration Path" column for the _GDI+_ row that lists 208 issues. The assessment flags these APIs because they're available in .NET Framework but not in .NET. The column explains the fix: add the `System.Drawing.Common` NuGet package to restore the APIs. The _Windows Forms_ row lists 621 API issues for the same reason. Windows Forms APIs aren't available in .NET by default, but you restore them through the project option `<UseWindowsDesktop>` and by targeting a Windows-specific framework like `net10.0-windows`.
+
+## Review the upgrade options
+
+After the assessment, the agent presents upgrade strategy decisions and saves them to `upgrade-options.md` in `.github/upgrades/dotnet-version-upgrade/`. For the Matching Game sample, the agent selects the following options:
+
+- **Upgrade strategy**: Bottom-up. The agent upgrades **MatchingGame.Logic** first because **MatchingGame** depends on it, then validates each tier before moving on.
+- **Project approach**: In-place. Both projects migrate together because no other .NET Framework projects consume them.
+- **Unsupported packages**: Resolve inline. The assessment found only a few incompatible packages, so the agent researches replacements as it works.
+- **Unsupported API handling**: Fix inline. Most Windows Forms and GDI+ API changes for .NET are mechanical and don't require a separate planning pass.
+- **Windows native APIs**: Windows Compatibility Pack. The app uses Windows Forms and GDI+ heavily and is inherently Windows-only.
+- **Nullable reference types**: Leave disabled. The agent treats enabling nullable as a separate effort after migration.
+
+The agent also calls out risks that need your attention. For the Matching Game sample, the agent flags the `MetroFramework` packages because they have no port to modern .NET. The likely outcome is removing `MetroFramework` and falling back to standard Windows Forms controls, which changes the visual style of the app.
+
+Review the proposed options and tell the agent what you want to change. For example, tell the agent to enable nullable reference types or to pause and discuss `MetroFramework` replacements first. When you're done, reply `confirm` to lock in the selections and move to planning.
+
+## Review the plan
+
+In the planning stage, the agent converts the assessment and your confirmed options into a detailed specification. It writes the result to `plan.md` and creates a `scenario-instructions.md` file that stores preferences, decisions, and custom instructions for the upgrade.
+
+> [!IMPORTANT]
+> If **Flow Mode** is **Automatic**, the agent starts executing the plan without time to review.
+
+The plan covers items such as the upgrade order across projects, the target framework moniker for each project (`net10.0-windows` for the Windows Forms projects), package update paths, and risk mitigations for the breaking changes the assessment found.
+
+To review and customize the plan:
+
+1. Open `plan.md` in `.github/upgrades/dotnet-version-upgrade/`.
+1. Review the upgrade strategies and dependency updates.
+1. Edit the plan to adjust steps or add context as needed.
+1. Tell the agent to move to the execution stage.
+
+> [!CAUTION]
+> The plan depends on project interdependencies. The upgrade doesn't succeed if you modify the plan in a way that prevents the upgrade path from completing. For example, if **MatchingGame** depends on **MatchingGame.Logic** and you remove **MatchingGame.Logic** from the plan, upgrading **MatchingGame** might fail.
+
+## Run the upgrade
+
+In the execution stage, the agent breaks the plan into sequential, concrete tasks with validation criteria. The agent writes the task list to `.github/upgrades/scenarios/dotnet-version-upgrade/tasks.md` and tracks overall progress in that file. For each task, the agent creates a folder under `.github/upgrades/scenarios/dotnet-version-upgrade/tasks/` that contains a markdown file describing the task and a markdown file that reports the task's progress.
+
+For the Matching Game sample, the task list typically includes upgrading **MatchingGame.Logic** first, then **MatchingGame**, restoring packages, building the solution, and committing the changes.
+
+To run the upgrade:
+
+1. Tell the agent to start the upgrade.
+1. Monitor progress by reviewing `tasks.md` as the agent updates task statuses. Open the per-task folders under `tasks/` for the task description and a detailed progress report.
+1. If the agent encounters a problem it can't resolve, provide the requested help. For example, the agent might ask you to choose between two replacement APIs or confirm whether to keep a deprecated package.
+1. Based on your responses, the agent adapts its strategy to the remaining tasks and continues.
+
+The agent commits changes according to the Git strategy you configured during pre-initialization: per task, per group of tasks, or at the end.
 
 ### Notes for Visual Basic projects
 
-Currently, the .NET Upgrade Assistant doesn't recognize the use of `System.Configuration` in the settings file created by the Visual Basic templates on .NET Framework. It also doesn't respect the use of the `My` extensions used in .NET Framework projects, such as `My.Computer` and `My.User`. These extensions were removed in .NET. Because of these two problems, a Visual Basic library won't compile after being migrated with .NET Upgrade Assistant.
+Visual Basic Windows Forms projects on .NET Framework often use `System.Configuration` settings files and `My` extensions, such as `My.Computer` and `My.User`. The `My` extensions were removed in .NET. The agent flags these patterns during assessment and proposes fixes during execution, but you might need to confirm individual changes during a guided run.
 
-To fix this problem, the project must target Windows and reference Windows Forms.
-
-01. After the migration is complete, double-click the **MatchingGame.Logic** project in the **Solution Explorer** window.
-01. Locate the `<Project>/<PropertyGroup>` element.
-01. In the XML editor, change the value of `<TargetFramework>` from `net9.0` to `net9.0-windows`.
-01. Add `<UseWindowsForms>true</UseWindowsForms>` to the line after `<TargetFramework>`.
-
-The project settings should look like the following snippet:
+If the agent migrates the project but it doesn't compile, verify that the project file targets Windows and references Windows Forms. The `<PropertyGroup>` element should look like the following snippet:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net9.0-windows</TargetFramework>
+    <TargetFramework>net10.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
     <OutputType>Library</OutputType>
     <MyType>Windows</MyType>
 
-    ... other settings removed for brevity ...
+    <!-- Other settings removed for brevity. -->
+  </PropertyGroup>
+</Project>
 ```
 
-## Migrate the main project
+## Verify the upgrade
 
-Once all of the supporting libraries are upgraded, the main app project can be upgraded. With the example app, there's only one library project to upgrade, which was upgraded in the previous section.
+When the upgrade finishes, the agent recommends next steps in the chat response. Prompt the agent to generate a comprehensive change report with "Generate a change report."
 
-01. Right-click on the **MatchingGame** project in the **Solution Explorer** window and select **Upgrade**:
-01. Select **In-place project upgrade**.
-01. Select **.NET 9.0** for the target framework and select **Next**.
-01. Leave all of the artifacts selected and select **Upgrade selection**.
+Review the final task status in `tasks.md` and confirm that every step is complete.
 
-After the upgrade is complete, the results are shown. Notice how the Windows Forms project has a warning symbol. Expand that item and more information is shown about that step:
+To verify the upgrade:
 
-:::image type="content" source="media/index/step-4-results2.png" alt-text="A screenshot of the .NET Upgrade Assistant's upgrade results tab, showing some of the result items have warning symbols.":::
+1. Build the solution and address any compilation errors.
+1. Run the app and confirm that forms load and behave as expected. The default font in Windows Forms changed between .NET Framework and .NET, so check forms and custom controls for layout differences.
+1. Run any unit tests in the solution and fix failures.
+1. Confirm that updated NuGet packages are compatible with your app.
+1. Test the app thoroughly to verify the upgrade succeeded.
 
-Notice that the project upgrade component mentions that the default font changed. Because the font might affect control layout, you need to check every form and custom control in your project to ensure the UI is arranged correctly.
+> [!TIP]
+> Try restarting Visual Studio if the project won't run and a debugger can't be attached. Migrating project files from .NET Framework to .NET might confuse the Windows Forms designer without a restart.
 
-## Generate a clean build
-
-After your main project is upgraded, clean and compile it.
-
-01. Right-click on the **MatchingGame** project in the **Solution Explorer** window and select **Clean**.
-01. Right-click on the **MatchingGame** project in the **Solution Explorer** window and select **Build**.
-
-If your application encountered any errors, you can find them in the **Error List** window with a recommendation how to fix them.
-
-The **Windows Forms Matching Game Sample** project is now upgraded to .NET 9.
+The **Windows Forms Matching Game Sample** is now upgraded to .NET 10.
 
 ## Post-upgrade experience
 
-If you're porting an app from .NET Framework to .NET, review the [Modernize after upgrading to .NET from .NET Framework](/dotnet/core/porting/modernize) article.
+If you ported the app from .NET Framework to .NET, review [Modernize after upgrading to .NET from .NET Framework](/dotnet/core/porting/modernize) for ideas on adopting newer patterns, such as `appsettings.json` configuration, dependency injection, or cloud services. Adopting these patterns is separate from the modernization to .NET and isn't required to complete the upgrade.
 
 ## Related content
 
-- [Porting from .NET Framework to .NET.](/dotnet/core/porting/)
-
-  The porting guide provides an overview of what you should consider when porting your code from .NET Framework to .NET. The complexity of your projects dictates how much work you'll do after the initial migration of the project files.
-
-- [Modernize after upgrading to .NET from .NET Framework.](/dotnet/core/porting/modernize)
-
-  The world of .NET has changed a lot since .NET Framework. This link provides some information about how to modernize your app after you upgrade.
+- [What is GitHub Copilot modernization?](/dotnet/core/porting/github-copilot-app-modernization/overview)
+- [Upgrade a .NET app with GitHub Copilot modernization](/dotnet/core/porting/github-copilot-app-modernization/how-to-upgrade-with-github-copilot)
+- [Best practices for GitHub Copilot modernization](/dotnet/core/porting/github-copilot-app-modernization/best-practices)
+- [Troubleshoot GitHub Copilot modernization](/dotnet/core/porting/github-copilot-app-modernization/troubleshooting)
+- [Overview of upgrading Windows Forms apps](index.md)
+- [Porting from .NET Framework to .NET](/dotnet/core/porting/)
+- [Modernize after upgrading to .NET from .NET Framework](/dotnet/core/porting/modernize)
+- [Breaking changes in Windows Forms](/dotnet/core/compatibility/winforms)
 
 [winforms-sample]: https://github.com/dotnet/samples/tree/main/windowsforms/matching-game
