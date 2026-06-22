@@ -38,6 +38,33 @@ The Matching Game solution targets .NET Framework 4.5. Visual Studio prompts you
 1. Select **Update the target to .NET Framework 4.8 (Recommended)**, and then select **Continue**.
 1. Open the **Git Changes** window and commit the retargeting changes.
 
+## Important notes for Visual Basic
+
+The GitHub Copilot modernization agent doesn't fully support Visual Basic .NET projects. The agent includes guardrails specifically designed to ensure C# projects upgrade reliably, and those guardrails interfere with VB project analysis and execution. If your solution contains VB projects, use one of these alternatives instead:
+
+- **GitHub Copilot (standard agent)**: Use the regular Copilot agent—without the modernization agent—to guide the upgrade interactively.
+- **[Upgrade Assistant](/dotnet/core/porting/upgrade-assistant-install)**: A dedicated migration tool with VB support.
+
+> [!TIP]
+> If your solution contains both C# and VB projects, you can still use the modernization agent for the C# projects. Upgrade the VB projects separately using one of the alternatives listed above.
+
+If you use the standard Copilot agent or upgrade manually, follow these steps:
+
+1. If the project targets an unsupported version of .NET Framework, retarget it to .NET Framework 4.8 first. Visual Studio prompts you to do this when you open the solution, or you can change it in the project properties.
+1. Update any outdated NuGet packages to their latest compatible versions.
+1. Create a new VB Windows Forms project using a Visual Studio template or `dotnet new winforms -lang vb`. The template produces an SDK-style project file and settings, which have changed from .NET Framework.
+1. Copy your `.vb` source files from the old project folder to the new project folder.
+1. Copy any non-code files the project depends on, such as `app.config`, `.settings` files, images, icons, and other embedded resources.
+1. Open the old project file (or `packages.config`) and note every NuGet package reference. Add those same packages to the new project using the NuGet Package Manager or `dotnet add package <name>`.
+1. If the project references other projects in the solution, re-add those references in the new project.
+1. Attempt to build the solution. Don't fix errors yet — the build output gives Copilot a concrete list of issues to work from.
+1. Commit the current state to source control so you have a clean baseline before Copilot makes changes.
+1. Open GitHub Copilot Chat, and ask it to resolve the remaining issues. For example:
+
+   > This Visual Basic Windows Forms project was migrated from .NET Framework 4.8 to .NET 10. The project file and source files are in place, but the solution doesn't compile. Review the build errors and fix API incompatibilities, missing references, and any configuration migration issues.
+
+1. Review the changes Copilot proposes, then rebuild and test the project.
+
 ## Initiate the upgrade
 
 The Matching Game solution contains the **MatchingGame** app and the **MatchingGame.Logic** class library. The agent figures out the project graph on its own, so start the upgrade at the solution level.
