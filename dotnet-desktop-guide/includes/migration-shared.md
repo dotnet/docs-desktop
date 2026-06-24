@@ -182,3 +182,35 @@ Breaking changes fall into several categories, and not all of them cause compile
 When porting from .NET Framework, you're crossing a large version gap, so the list of potential changes is longer. When upgrading between .NET versions—for example, from .NET 6 to .NET 9—the scope is narrower, but every version in between can introduce changes that affect your app. Review breaking changes for each version you skip, not just the target version.
 
 Breaking changes specific to Windows Forms are documented in [Breaking changes for migration from .NET Framework to .NET](/dotnet/core/compatibility/breaking-changes). Filter the breaking changes reference to the version range you're upgrading across, and review entries that apply to APIs your app uses.
+
+## Post-upgrade tasks
+
+After your app builds and runs on .NET, complete a few cleanup tasks to remove artifacts left over from the upgrade.
+
+**Review NuGet packages.**
+
+The upgrade process might have updated packages to newer versions. Some of those newer versions remove dependencies that older versions required. After the upgrade, check each updated package and remove any transitive dependencies that are no longer needed. Review the release notes for updated packages to catch behavioral changes that don't cause build errors.
+
+**Clean up old NuGet artifacts.**
+
+If your project used a `packages.config` file to manage NuGet references, it's no longer needed after migrating to `PackageReference` format. Delete it from your project. You can also delete the local `packages` folder in your project or solution directory—NuGet now stores packages in a global cache folder at `.nuget\packages` in your user profile.
+
+**Update `System.Configuration` references.**
+
+Most .NET Framework apps reference `System.Configuration` directly. After upgrading, your project might still carry that reference. The `System.Configuration` library reads from the _app.config_ file for run-time configuration. In .NET, replace it with the [`System.Configuration.ConfigurationManager`](https://www.nuget.org/packages/System.Configuration.ConfigurationManager) NuGet package, which provides the same API surface without the direct framework assembly reference.
+
+## Modernize after upgrading
+
+Once your app runs on .NET, you can adopt modern patterns that aren't available in .NET Framework. These changes aren't required to complete the upgrade, but they improve maintainability and take advantage of active investment in .NET. For a broader set of ideas, see [Modernize after upgrading to .NET from .NET Framework](/dotnet/core/porting/modernize).
+
+**Migrate from App.config to appsettings.json.**
+
+.NET Framework uses _App.config_ for run-time settings such as connection strings and logging configuration. .NET apps typically use _appsettings.json_ instead, provided by the `Microsoft.Extensions.Configuration` NuGet package. Many libraries—including logging providers—have dropped _App.config_ support in favor of _appsettings.json_. Migrating aligns your app with the ecosystem and simplifies configuration as you add new dependencies.
+
+_App.config_ files continue to work in .NET through the `System.Configuration.ConfigurationManager` NuGet package, so you can migrate incrementally. For guidance, see [Configuration in .NET](/dotnet/core/extensions/configuration).
+
+**Replace the WebBrowser control with WebView2 (WPF).**
+
+The <xref:System.Windows.Controls.WebBrowser> control is based on Internet Explorer, which is no longer supported. WPF for .NET can use the `WebView2` control based on Microsoft Edge instead. `WebView2` provides a modern, actively maintained browser control with improved performance, security, and web standards support.
+
+Add the [`Microsoft.Web.WebView2`](https://www.nuget.org/packages/Microsoft.Web.WebView2/) NuGet package to your project. Depending on which version of Windows a user runs, they might need to install the WebView2 runtime separately. For more information, see [Introduction to Microsoft Edge WebView2](/microsoft-edge/webview2/).
