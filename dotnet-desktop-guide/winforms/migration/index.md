@@ -4,7 +4,7 @@ description: "Learn about the upgrade paths available for Windows Forms apps, in
 author: adegeo
 ms.author: adegeo
 ms.topic: overview
-ms.date: 06/11/2026
+ms.date: 06/24/2026
 ms.service: dotnet-desktop
 ms.update-cycle: 365-days
 ai-usage: ai-assisted

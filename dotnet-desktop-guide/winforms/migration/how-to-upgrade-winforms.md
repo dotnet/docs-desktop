@@ -3,7 +3,7 @@ title: Upgrade a Windows Forms app to .NET with GitHub Copilot modernization
 description: Walk through upgrading a Windows Forms app to .NET by using the GitHub Copilot modernization agent in Visual Studio.
 author: adegeo
 ms.author: adegeo
-ms.date: 06/12/2026
+ms.date: 06/24/2026
 ms.service: dotnet-desktop
 ms.update-cycle: 365-days
 ms.topic: upgrade-and-migration-article  #Don't change.
@@ -20,8 +20,8 @@ The example uses the [Matching Game sample][winforms-sample], a small .NET Frame
 ## Prerequisites
 
 - Windows operating system.
+- Visual Studio 2026
 - [Download and extract the demo app used with this article.][winforms-sample]
-- Visual Studio 2026, or Visual Studio 2022 17.14.16 or later.
 - The .NET SDK for the version you're targeting. This article targets .NET 10.
 - A Git repository for the solution. The agent commits its progress, so the project must be under source control.
 - GitHub Copilot modernization enabled for Visual Studio. For more information, see [Install GitHub Copilot modernization](/dotnet/core/porting/github-copilot-app-modernization/install).

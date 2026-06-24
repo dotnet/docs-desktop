@@ -3,7 +3,7 @@ title: Upgrade a WPF app to .NET with GitHub Copilot modernization
 description: Walk through upgrading a WPF app to .NET by using the GitHub Copilot modernization agent in Visual Studio.
 author: adegeo
 ms.author: adegeo
-ms.date: 06/12/2026
+ms.date: 06/24/2026
 ms.service: dotnet-desktop
 ms.update-cycle: 365-days
 ms.topic: upgrade-and-migration-article  #Don't change.
@@ -20,8 +20,8 @@ The example uses the [Matching Game sample][wpf-sample], a small .NET Framework 
 ## Prerequisites
 
 - Windows operating system.
+- Visual Studio 2026
 - [Download and extract the demo app used with this article.][wpf-sample]
-- Visual Studio 2026, or Visual Studio 2022 17.14.16 or later.
 - The .NET SDK for the version you're targeting. This article targets .NET 10.
 - A Git repository for the solution. The agent commits its progress, so the project must be under source control.
 - GitHub Copilot modernization enabled for Visual Studio. For more information, see [Install GitHub Copilot modernization](/dotnet/core/porting/github-copilot-app-modernization/install).
@@ -43,7 +43,7 @@ The Matching Game projects target .NET Framework 4.5. Visual Studio prompts you 
 The GitHub Copilot modernization agent doesn't fully support Visual Basic .NET projects. The agent includes guardrails specifically designed to ensure C# projects upgrade reliably, and those guardrails interfere with VB project analysis and execution. If your solution contains VB projects, use one of these alternatives instead:
 
 - **GitHub Copilot (standard agent)**: Use the regular Copilot agent—without the modernization agent—to guide the upgrade interactively.
-- **[Upgrade Assistant](/dotnet/core/porting/upgrade-assistant-install)**: A dedicated migration tool with VB support.
+- **[Install .NET Upgrade Assistant](/dotnet/core/porting/upgrade-assistant-install)**: A dedicated migration tool with VB support.
 
 > [!TIP]
 > If your solution contains both C# and VB projects, you can still use the modernization agent for the C# projects. Upgrade the VB projects separately using one of the alternatives listed above.
@@ -214,14 +214,14 @@ The **WPF Matching Game Sample** is now upgraded to .NET 10.
 
 ## Post-upgrade experience
 
-If you ported the app from .NET Framework to .NET, review [Modernize after upgrading to .NET from .NET Framework](/dotnet/core/porting/modernize) for ideas on adopting newer patterns, such as `appsettings.json` configuration, dependency injection, or cloud services. Adopting these patterns is separate from upgrading to .NET and isn't required to complete the upgrade.
+If you ported the app from .NET Framework to .NET, review [Modernize your upgraded .NET Framework apps](/dotnet/core/porting/modernize) for ideas on adopting newer patterns, such as `appsettings.json` configuration, dependency injection, or cloud services. Adopting these patterns is separate from upgrading to .NET and isn't required to complete the upgrade.
 
 ## Related content
 
 - [Overview of upgrading WPF apps](index.md)
 - [Best practices for GitHub Copilot modernization](/dotnet/core/porting/github-copilot-app-modernization/best-practices)
-- [Porting from .NET Framework to .NET](/dotnet/core/porting/)
-- [Modernize after upgrading to .NET from .NET Framework](/dotnet/core/porting/modernize)
-- [Breaking changes when porting code](/dotnet/core/porting/breaking-changes)
+- [Upgrade .NET apps overview](/dotnet/core/porting/)
+- [Modernize your upgraded .NET Framework apps](/dotnet/core/porting/modernize)
+- [Breaking changes can affect porting your app](/dotnet/core/porting/breaking-changes)
 
 [wpf-sample]: https://github.com/dotnet/samples/tree/main/wpf/matching-game
