@@ -7,7 +7,6 @@ ms.topic: overview
 ms.date: 06/11/2026
 ms.service: dotnet-desktop
 ms.update-cycle: 365-days
-ms.topic: overview
 ai-usage: ai-assisted
 
 #customer intent: As a developer who maintains an existing WPF app, I want to understand my upgrade options so that I can plan and execute an upgrade to .NET.
