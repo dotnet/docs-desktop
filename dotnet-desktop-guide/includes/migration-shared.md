@@ -12,7 +12,7 @@ ms.topic: include
 
 Staying current on .NET versions matters too. Each .NET release has a defined support window, and apps running on an out-of-support version stop receiving security patches and fixes. Upgrade before end-of-support to stay protected.
 
-.NET offers meaningful performance improvements across runtime startup, throughput, and memory usage. Desktop apps on .NET also benefits from ongoing feature investment—newer controls, accessibility improvements, high-DPI enhancements, and better integration with Windows such as Dark Mode on Windows 11 are shipped in .NET only. You also gain access to newer C# and Visual Basic language features, improved tooling, and a rich ecosystem of NuGet packages that target .NET.
+.NET offers meaningful performance improvements across runtime startup, throughput, and memory usage. Desktop apps on .NET also benefit from ongoing feature investment, including newer controls, accessibility improvements, high-DPI enhancements, and better integration with Windows. Some features, such as Dark Mode on Windows 11, are available only on .NET. You also gain access to newer C# and Visual Basic language features, improved tooling, and a rich ecosystem of NuGet packages that target .NET.
 
 .NET releases a new major version every year, alternating between long-term support (LTS) and standard-term support (STS) releases:
 

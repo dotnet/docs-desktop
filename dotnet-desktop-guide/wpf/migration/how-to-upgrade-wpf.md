@@ -84,7 +84,7 @@ The Matching Game solution contains the **MatchingGame** app and the **MatchingG
    - **Flow Mode**: Defaults to **Automatic**. For complex apps, ask the agent to switch to **Guided** mode.
    - **Source Control**: Indicates that the agent creates a new working branch.
 
-   The agent writes its work to `.github/upgrades/dotnet-version-upgrade/` in your repository. If that folder already exists from a prior attempt, the agent asks whether to continue or start fresh.
+   The agent writes its work to `.github/upgrades/scenarios/dotnet-version-upgrade/` in your repository. If that folder already exists from a prior attempt, the agent asks whether to continue or start fresh.
 
 1. Tell the agent `start` to begin the upgrade process.
 
@@ -183,7 +183,7 @@ If the agent migrates the project but it doesn't compile, verify that the projec
   <PropertyGroup>
     <TargetFramework>net10.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
-    <OutputType>Library</OutputType>
+    <OutputType>WinExe</OutputType> <!-- For apps; use Library for class libraries. -->
 
     <!-- Other settings removed for brevity. -->
   </PropertyGroup>

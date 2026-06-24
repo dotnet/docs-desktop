@@ -84,7 +84,7 @@ The Matching Game solution contains the **MatchingGame** app and the **MatchingG
    - **Flow Mode**: Defaults to **Automatic**. For complex apps, ask the agent to switch to **Guided** mode.
    - **Source Control**: Indicates that the agent creates a new working branch.
 
-   The agent writes its work to `.github/upgrades/dotnet-version-upgrade/` in your repository. If that folder already exists from a prior attempt, the agent asks whether to continue or start fresh.
+   The agent writes its work to `.github/upgrades/scenarios/dotnet-version-upgrade/` in your repository. If that folder already exists from a prior attempt, the agent asks whether to continue or start fresh.
 
 1. Tell the agent `start` to begin the upgrade process.
 
@@ -122,9 +122,9 @@ Copilot opens the `.github/upgrades/dotnet-version-upgrade/assessment.md` file i
 > | :--- | :---: | :---: | :--- |
 > | Legacy Configuration System | 2 | 0.2% | Legacy XML-based configuration system (app.config/web.config) that has been replaced by a more flexible configuration model in .NET Core. The old system was rigid and XML-based. Migrate to Microsoft.Extensions.Configuration with JSON/environment variables; use System.Configuration.ConfigurationManager NuGet package as interim bridge if needed. |
 > | GDI+ / System.Drawing | 208 | 23.7% | System.Drawing APIs for 2D graphics, imaging, and printing that are available via NuGet package System.Drawing.Common. Note: Not recommended for server scenarios due to Windows dependencies; consider cross-platform alternatives like SkiaSharp or ImageSharp for new code. |
-> | Windows Forms | 621 | 76.0% | Windows Forms APIs for building Windows desktop applications with traditional Forms-based UI that are available in .NET on Windows. Enable Windows Desktop support: Option 1 (Recommended): Target net9.0-windows; Option 2: Add `<UseWindowsDesktop>true</UseWindowsDesktop>`; Option 3 (Legacy): Use Microsoft.NET.Sdk.WindowsDesktop SDK. |
+> | Windows Forms | 621 | 76.0% | Windows Forms APIs for building Windows desktop applications with traditional Forms-based UI that are available in .NET on Windows. Enable Windows Forms support: Option 1 (Recommended): Target net10.0-windows; Option 2: Add `<UseWindowsForms>true</UseWindowsForms>`; Option 3 (Legacy): Use Microsoft.NET.Sdk.WindowsDesktop SDK. |
 
-Most of these issues aren't real problems. Look at the "Migration Path" column for the _GDI+_ row that lists 208 issues. The assessment flags these APIs because they're available in .NET Framework but not in .NET. The column explains the fix: add the `System.Drawing.Common` NuGet package to restore the APIs. The _Windows Forms_ row lists 621 API issues for the same reason. Windows Forms APIs aren't available in .NET by default, but you restore them through the project option `<UseWindowsDesktop>` and by targeting a Windows-specific framework like `net10.0-windows`.
+Most of these issues aren't real problems. Look at the "Migration Path" column for the _GDI+_ row that lists 208 issues. The assessment flags these APIs because they're available in .NET Framework but not in .NET. The column explains the fix: add the `System.Drawing.Common` NuGet package to restore the APIs. The _Windows Forms_ row lists 621 API issues for the same reason. Windows Forms APIs aren't available in .NET by default, but you restore them by targeting a Windows-specific framework like `net10.0-windows` and setting `<UseWindowsForms>true</UseWindowsForms>` in the project file.
 
 ## Review the upgrade options
 
