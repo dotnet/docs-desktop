@@ -16,16 +16,8 @@ body:
                  └─────────────────────────────┘
         ```
 
-        If your question is related to documentation, **STOP**. Go back to the docs page and scroll to the bottom where the GitHub section is. Use the link there to open this issue.
+        If your question is related to a specific article, **STOP**. Go back to the article page and scroll to the bottom where the GitHub section is. Use the link there to open the issue.
 
-  - type: input
-    id: url
-    attributes:
-      label: Article URL
-      description: "Which article has the problem?"
-    validations:
-      required: true
-      
   - type: dropdown
     id: technology
     attributes:
