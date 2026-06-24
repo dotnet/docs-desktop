@@ -1,5 +1,6 @@
 ---
 title: Controls by Function
+description: Learn about Windows Forms controls and components organized by function, including recommended controls and their superseded replacements.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
 ms.update-cycle: 1825-days
