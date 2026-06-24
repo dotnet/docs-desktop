@@ -26,8 +26,8 @@ For an example on how to upgrade, see [Upgrade from Windows Forms .NET Framework
 ## Related content
 
 - [How to upgrade a Windows Forms app to .NET](how-to-upgrade-winforms.md)
-- [Overview of porting from .NET Framework to .NET](https://learn.microsoft.com/dotnet/core/porting/framework-overview)
-- [.NET Framework technologies unavailable on .NET](https://learn.microsoft.com/dotnet/core/porting/net-framework-tech-unavailable)
-- [Prerequisites to porting code from .NET Framework](https://learn.microsoft.com/dotnet/core/porting/premigration-needed-changes)
-- [Breaking changes when porting code](https://learn.microsoft.com/dotnet/core/porting/breaking-changes)
-- [Use the Windows Compatibility Pack to port code to .NET](https://learn.microsoft.com/dotnet/core/porting/windows-compat-pack)
+- [Overview of porting from .NET Framework to .NET](/dotnet/core/porting/framework-overview)
+- [.NET Framework technologies unavailable on .NET](/dotnet/core/porting/net-framework-tech-unavailable)
+- [Prerequisites to porting code from .NET Framework](/dotnet/core/porting/premigration-needed-changes)
+- [Breaking changes for migration from .NET Framework to .NET](/dotnet/core/compatibility/breaking-changes)
+- [Use the Windows Compatibility Pack to port code to .NET](/dotnet/core/porting/windows-compat-pack)

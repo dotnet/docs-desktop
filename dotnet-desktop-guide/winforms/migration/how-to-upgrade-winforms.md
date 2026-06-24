@@ -219,13 +219,10 @@ If you ported the app from .NET Framework to .NET, review [Modernize after upgra
 
 ## Related content
 
-- [What is GitHub Copilot modernization?](/dotnet/core/porting/github-copilot-app-modernization/overview)
-- [Upgrade a .NET app with GitHub Copilot modernization](/dotnet/core/porting/github-copilot-app-modernization/how-to-upgrade-with-github-copilot)
-- [Best practices for GitHub Copilot modernization](/dotnet/core/porting/github-copilot-app-modernization/best-practices)
-- [Troubleshoot GitHub Copilot modernization](/dotnet/core/porting/github-copilot-app-modernization/troubleshooting)
 - [Overview of upgrading Windows Forms apps](index.md)
+- [Best practices for GitHub Copilot modernization](/dotnet/core/porting/github-copilot-app-modernization/best-practices)
 - [Porting from .NET Framework to .NET](/dotnet/core/porting/)
 - [Modernize after upgrading to .NET from .NET Framework](/dotnet/core/porting/modernize)
-- [Breaking changes in Windows Forms](/dotnet/core/compatibility/winforms)
+- [Breaking changes when porting code](/dotnet/core/porting/breaking-changes)
 
 [winforms-sample]: https://github.com/dotnet/samples/tree/main/windowsforms/matching-game
