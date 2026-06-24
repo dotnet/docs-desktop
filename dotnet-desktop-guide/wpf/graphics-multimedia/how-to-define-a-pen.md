@@ -1,5 +1,6 @@
 ---
 title: "How to: Define a Pen"
+description: Learn how to define a Pen in WPF by specifying its Thickness and Brush properties, and optionally setting DashStyle, LineJoin, and line cap properties.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
 ms.update-cycle: 1825-days

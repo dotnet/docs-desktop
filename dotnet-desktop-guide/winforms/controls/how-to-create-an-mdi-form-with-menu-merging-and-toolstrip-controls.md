@@ -1,5 +1,6 @@
 ---
 title: "How to: Create an MDI Form with Menu Merging and ToolStrip Controls"
+description: Learn how to create an MDI form with menu merging and ToolStrip controls with the required references to System.Drawing and System.Windows.Forms assemblies.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
 ms.update-cycle: 1825-days
@@ -12,7 +13,6 @@ helpviewer_keywords:
   - "ToolStrip control [Windows Forms]"
   - "MenuStrip control [Windows Forms]"
 ms.assetid: 64992ed9-44af-4baf-b45f-863e6ab35711
-documents: Learn how to create an MDI form with menu merging and ToolStrip controls with the required references to System.Drawing and System.Windows.Forms assemblies.
 ---
 # How to: Create an MDI Form with Menu Merging and ToolStrip Controls
 
