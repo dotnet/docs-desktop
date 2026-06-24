@@ -15,21 +15,19 @@ ai-usage: ai-assisted
 
 # Overview of upgrading Windows Forms apps
 
-This article helps you understand what's involved in upgrading a Windows Forms app. The primary focus is modernizing from .NET Framework to .NET, but upgrading between .NET versions is also covered.
-
-Windows Forms is supported on .NET and receives active investment, including newer controls, high-DPI improvements, and accessibility updates. If you maintain an existing Windows Forms app and want to take advantage of those improvements or move to a supported .NET version, this article is for you.
+This article helps you understand what's involved in upgrading a Windows Forms app from .NET Framework to .NET. Windows Forms is supported on .NET and receives active investment, including newer controls, high-DPI improvements, and accessibility updates. If you maintain an existing Windows Forms app and want to take advantage of those improvements or move to a supported .NET version, this article is for you.
 
 The article covers the reasons to upgrade, the available upgrade paths, and the preparation work that makes the upgrade go smoothly. It also explains which .NET Framework technologies have no equivalent in .NET, how to fill API gaps using the Windows Compatibility Pack, and how breaking changes can affect your app.
 
-For an example on how to upgrade, see [Upgrade from Windows Forms .NET Framework to .NET](how-to-upgrade-winforms.md).
+For an example on how to upgrade, see [Upgrade a Windows Forms app to .NET with GitHub Copilot modernization](how-to-upgrade-winforms.md).
 
 [!INCLUDE [migration-shared](../../includes/migration-shared.md)]
 
 ## Related content
 
-- [How to upgrade a Windows Forms app to .NET](how-to-upgrade-winforms.md)
-- [Overview of porting from .NET Framework to .NET](/dotnet/core/porting/framework-overview)
-- [.NET Framework technologies unavailable on .NET](/dotnet/core/porting/net-framework-tech-unavailable)
-- [Prerequisites to porting code from .NET Framework](/dotnet/core/porting/premigration-needed-changes)
-- [Breaking changes for migration from .NET Framework to .NET](/dotnet/core/compatibility/breaking-changes)
-- [Use the Windows Compatibility Pack to port code to .NET](/dotnet/core/porting/windows-compat-pack)
+- [Upgrade a Windows Forms app to .NET with GitHub Copilot](how-to-upgrade-winforms.md)
+- [Port from .NET Framework to .NET](/dotnet/core/porting/framework-overview)
+- [.NET Framework technologies unavailable on .NET 6+](/dotnet/core/porting/net-framework-tech-unavailable)
+- [Prerequisites to port from .NET Framework](/dotnet/core/porting/premigration-needed-changes)
+- [.NET breaking changes reference](/dotnet/core/compatibility/breaking-changes)
+- [Use the Windows Compatibility Pack to port code](/dotnet/core/porting/windows-compat-pack)

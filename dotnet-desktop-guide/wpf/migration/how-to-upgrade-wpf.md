@@ -31,7 +31,7 @@ The example uses the [Matching Game sample][wpf-sample], a small .NET Framework 
 
 ## Open the solution
 
-The Matching Game solution targets .NET Framework 4.5. Visual Studio prompts you to retarget the projects to a supported version of .NET Framework when you open the solution.
+The Matching Game projects target .NET Framework 4.5. Visual Studio prompts you to retarget the projects to a supported version of .NET Framework when you open the solution.
 
 1. Open the **MatchingGame** solution in Visual Studio.
 1. Visual Studio displays the **Target Framework Not Installed** dialog.
@@ -90,9 +90,9 @@ The Matching Game solution contains the **MatchingGame** app and the **MatchingG
 
 ## Review the assessment
 
-In the assessment stage, the agent examines the project structure, dependencies, and code patterns to identify what needs to change. It writes the results to `assessment.md` in `.github/upgrades/dotnet-version-upgrade/`.
+In the assessment stage, the agent examines the project structure, dependencies, and code patterns to identify what needs to change. It writes the results to `assessment.md` in `.github/upgrades/scenarios/dotnet-version-upgrade/`.
 
-When Copilot finishes the assessment, review the output. It generally starts with something similar to the following:
+When Copilot finishes the assessment, review the conversation output. It generally starts with something similar to the following:
 
 ```
 Assessment Complete
@@ -128,13 +128,15 @@ Proceeding to planning now. You can ask me to pause and switch to Guided mode at
 
 ## Review the upgrade options
 
-After the assessment, the agent presents upgrade strategy decisions and saves them to `upgrade-options.md` in `.github/upgrades/dotnet-version-upgrade/`. For the Matching Game sample, the agent selects the following options:
+After the assessment, the agent presents upgrade strategy decisions and saves them to `upgrade-options.md` in `.github/upgrades/scenarios/dotnet-version-upgrade/`. For the Matching Game sample, the agent selects the following options:
 
-- **Upgrade strategy**: Bottom-up. The agent upgrades **MatchingGame.Logic** first because **MatchingGame** depends on it, then validates each tier before moving on.
-- **Project approach**: In-place. Both projects migrate together because no other .NET Framework projects consume them.
-- **Unsupported API handling**: Fix inline. Most WPF API changes for .NET are mechanical and don't require a separate planning pass.
-- **Windows native APIs**: Windows Compatibility Pack. The app uses the registry and is inherently Windows-only.
-- **Nullable reference types**: Leave disabled. The agent treats enabling nullable as a separate effort after migration.
+| Decision | Reason |
+| --- | --- |
+| **Upgrade strategy** | Bottom-up. The agent upgrades **MatchingGame.Logic** first because **MatchingGame** depends on it, then validates each tier before moving on.|
+| **Project approach** | In-place. Both projects migrate together because no other .NET Framework projects consume them.|
+| **Unsupported API handling** | Fix inline. Most WPF API changes for .NET are mechanical and don't require a separate planning pass.|
+| **Windows native APIs** | Windows Compatibility Pack. The app uses the registry and is inherently Windows-only.|
+| **Nullable reference types** | Leave disabled. The agent treats enabling nullable as a separate effort after migration.|
 
 The agent also calls out risks that need your attention. Review the proposed options and tell the agent what you want to change. For example, tell the agent to enable nullable reference types or to change how incompatible packages are handled. When you're done, reply `confirm` to lock in the selections and move to planning.
 
@@ -145,11 +147,11 @@ In the planning stage, the agent converts the assessment and your confirmed opti
 > [!IMPORTANT]
 > If **Flow Mode** is **Automatic**, the agent starts executing the plan without time to review.
 
-The plan covers items such as the upgrade order across projects, the target framework moniker for each project (`net10.0-windows` for the WPF projects), package update paths, and risk mitigations for the breaking changes the assessment found.
+The plan covers items such as the upgrade order across projects, the target framework moniker for each project (`net10.0-windows` for WPF projects), package update paths, and risk mitigations for the breaking changes the assessment found.
 
 To review and customize the plan:
 
-1. Open `plan.md` in `.github/upgrades/dotnet-version-upgrade/`.
+1. Open `plan.md` in `.github/upgrades/scenarios/dotnet-version-upgrade/`.
 1. Review the upgrade strategies and dependency updates.
 1. Edit the plan to adjust steps or add context as needed.
 1. Tell the agent to move to the execution stage.
@@ -212,7 +214,7 @@ The **WPF Matching Game Sample** is now upgraded to .NET 10.
 
 ## Post-upgrade experience
 
-If you ported the app from .NET Framework to .NET, review [Modernize after upgrading to .NET from .NET Framework](/dotnet/core/porting/modernize) for ideas on adopting newer patterns, such as `appsettings.json` configuration, dependency injection, or cloud services. Adopting these patterns is separate from the modernization to .NET and isn't required to complete the upgrade.
+If you ported the app from .NET Framework to .NET, review [Modernize after upgrading to .NET from .NET Framework](/dotnet/core/porting/modernize) for ideas on adopting newer patterns, such as `appsettings.json` configuration, dependency injection, or cloud services. Adopting these patterns is separate from upgrading to .NET and isn't required to complete the upgrade.
 
 ## Related content
 

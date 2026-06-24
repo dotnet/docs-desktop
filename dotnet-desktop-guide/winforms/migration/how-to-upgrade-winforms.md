@@ -31,7 +31,7 @@ The example uses the [Matching Game sample][winforms-sample], a small .NET Frame
 
 ## Open the solution
 
-The Matching Game solution targets .NET Framework 4.5. Visual Studio prompts you to retarget the projects to a supported version of .NET Framework when you open the solution.
+The Matching Game projects target .NET Framework 4.5. Visual Studio prompts you to retarget the projects to a supported version of .NET Framework when you open the solution.
 
 1. Open the **MatchingGame** solution in Visual Studio.
 1. Visual Studio displays the **Target Framework Not Installed** dialog.
@@ -90,9 +90,9 @@ The Matching Game solution contains the **MatchingGame** app and the **MatchingG
 
 ## Review the assessment
 
-In the assessment stage, the agent examines the project structure, dependencies, and code patterns to identify what needs to change. It writes the results to `assessment.md` in `.github/upgrades/dotnet-version-upgrade/`.
+In the assessment stage, the agent examines the project structure, dependencies, and code patterns to identify what needs to change. It writes the results to `assessment.md` in `.github/upgrades/scenarios/dotnet-version-upgrade/`.
 
-When Copilot finishes the assessment, review the output. It generally starts with something similar to the following:
+When Copilot finishes the assessment, review the conversation output. It generally starts with something similar to the following:
 
 ```
 Assessment Complete
@@ -116,7 +116,7 @@ Key concerns:
 
 ### Breakdown of the assessment
 
-Copilot opens the `.github/upgrades/dotnet-version-upgrade/assessment.md` file in the Visual Studio editor. Scroll down to the `MatchingGame\MatchingGame.csproj` section to see a table of issues:
+Copilot opens the `.github/upgrades/scenarios/dotnet-version-upgrade/assessment.md` file in the Visual Studio editor. Scroll down to the `MatchingGame\MatchingGame.csproj` section to see a table of issues:
 
 > | Technology | Issues | Percentage | Migration Path |
 > | :--- | :---: | :---: | :--- |
@@ -124,20 +124,27 @@ Copilot opens the `.github/upgrades/dotnet-version-upgrade/assessment.md` file i
 > | GDI+ / System.Drawing | 208 | 23.7% | System.Drawing APIs for 2D graphics, imaging, and printing that are available via NuGet package System.Drawing.Common. Note: Not recommended for server scenarios due to Windows dependencies; consider cross-platform alternatives like SkiaSharp or ImageSharp for new code. |
 > | Windows Forms | 621 | 76.0% | Windows Forms APIs for building Windows desktop applications with traditional Forms-based UI that are available in .NET on Windows. Enable Windows Forms support: Option 1 (Recommended): Target net10.0-windows; Option 2: Add `<UseWindowsForms>true</UseWindowsForms>`; Option 3 (Legacy): Use Microsoft.NET.Sdk.WindowsDesktop SDK. |
 
-Most of these issues aren't real problems. Look at the "Migration Path" column for the _GDI+_ row that lists 208 issues. The assessment flags these APIs because they're available in .NET Framework but not in .NET. The column explains the fix: add the `System.Drawing.Common` NuGet package to restore the APIs. The _Windows Forms_ row lists 621 API issues for the same reason. Windows Forms APIs aren't available in .NET by default, but you restore them by targeting a Windows-specific framework like `net10.0-windows` and setting `<UseWindowsForms>true</UseWindowsForms>` in the project file.
+Most of these issues aren't real problems. Look at the "Migration Path" column for the _GDI+_ row that lists 208 issues. The assessment flags these APIs because they're available in .NET Framework but not in .NET. The column explains the fix: add the `System.Drawing.Common` NuGet package to restore the APIs.
+
+The _Windows Forms_ row lists 621 API issues for the same reason. Windows Forms APIs aren't available in .NET by default, but you restore them by targeting a Windows-specific framework like `net10.0-windows` and setting `<UseWindowsForms>true</UseWindowsForms>` in the project file. The **Option 3** suggests an incorrect option. Older versions of .NET required a Windows Forms project to specifically target the `Microsoft.NET.Sdk.WindowsDesktop` SDK, but now it's automatically referenced when `<UseWindowsForms>true</UseWindowsForms>` is set.
+
+> [!TIP]
+> To learn more about an option, ask Copilot for more information and context.
 
 ## Review the upgrade options
 
-After the assessment, the agent presents upgrade strategy decisions and saves them to `upgrade-options.md` in `.github/upgrades/dotnet-version-upgrade/`. For the Matching Game sample, the agent selects the following options:
+After the assessment, the agent presents upgrade strategy decisions and saves them to `upgrade-options.md` in `.github/upgrades/scenarios/dotnet-version-upgrade/`. For the Matching Game sample, the agent selects the following options:
 
-- **Upgrade strategy**: Bottom-up. The agent upgrades **MatchingGame.Logic** first because **MatchingGame** depends on it, then validates each tier before moving on.
-- **Project approach**: In-place. Both projects migrate together because no other .NET Framework projects consume them.
-- **Unsupported packages**: Resolve inline. The assessment found only a few incompatible packages, so the agent researches replacements as it works.
-- **Unsupported API handling**: Fix inline. Most Windows Forms and GDI+ API changes for .NET are mechanical and don't require a separate planning pass.
-- **Windows native APIs**: Windows Compatibility Pack. The app uses Windows Forms and GDI+ heavily and is inherently Windows-only.
-- **Nullable reference types**: Leave disabled. The agent treats enabling nullable as a separate effort after migration.
+| Decision | Reason |
+| --- | --- |
+| **Upgrade strategy** | Bottom-up. The agent upgrades **MatchingGame.Logic** first because **MatchingGame** depends on it, then validates each tier before moving on. |
+| **Project approach** | In-place. Both projects migrate together because no other .NET Framework projects consume them. |
+| **Unsupported packages** | Resolve inline. The assessment found only a few incompatible packages, so the agent researches replacements as it works. |
+| **Unsupported API handling** | Fix inline. Most Windows Forms and GDI+ API changes for .NET are mechanical and don't require a separate planning pass. |
+| **Windows native APIs** | Windows Compatibility Pack. The app uses Windows Forms and GDI+ heavily and is inherently Windows-only. |
+| **Nullable reference types** | Leave disabled. The agent treats enabling nullable as a separate effort after migration. |
 
-The agent also calls out risks that need your attention. For the Matching Game sample, the agent flags the `MetroFramework` packages because they have no port to modern .NET. The likely outcome is removing `MetroFramework` and falling back to standard Windows Forms controls, which changes the visual style of the app.
+The agent also calls out risks that need your attention. For the Matching Game sample, the agent flags the `MetroFramework` packages because they're only available for .NET Framework. The likely outcome is removing `MetroFramework` and falling back to standard Windows Forms controls, which changes the visual style of the app.
 
 Review the proposed options and tell the agent what you want to change. For example, tell the agent to enable nullable reference types or to pause and discuss `MetroFramework` replacements first. When you're done, reply `confirm` to lock in the selections and move to planning.
 
@@ -148,11 +155,11 @@ In the planning stage, the agent converts the assessment and your confirmed opti
 > [!IMPORTANT]
 > If **Flow Mode** is **Automatic**, the agent starts executing the plan without time to review.
 
-The plan covers items such as the upgrade order across projects, the target framework moniker for each project (`net10.0-windows` for the Windows Forms projects), package update paths, and risk mitigations for the breaking changes the assessment found.
+The plan covers items such as the upgrade order across projects, the target framework moniker for each project (`net10.0-windows` for Windows Forms projects), package update paths, and risk mitigations for the breaking changes the assessment found.
 
 To review and customize the plan:
 
-1. Open `plan.md` in `.github/upgrades/dotnet-version-upgrade/`.
+1. Open `plan.md` in `.github/upgrades/scenarios/dotnet-version-upgrade/`.
 1. Review the upgrade strategies and dependency updates.
 1. Edit the plan to adjust steps or add context as needed.
 1. Tell the agent to move to the execution stage.
@@ -203,7 +210,10 @@ Review the final task status in `tasks.md` and confirm that every step is comple
 To verify the upgrade:
 
 1. Build the solution and address any compilation errors.
-1. Run the app and confirm that forms load and behave as expected. The default font in Windows Forms changed between .NET Framework and .NET, so check forms and custom controls for layout differences.
+1. Run the app and confirm that forms load and behave as expected.
+
+   The default font in Windows Forms changed between .NET Framework and .NET, so check forms and custom controls for layout differences.
+
 1. Run any unit tests in the solution and fix failures.
 1. Confirm that updated NuGet packages are compatible with your app.
 1. Test the app thoroughly to verify the upgrade succeeded.
@@ -215,7 +225,7 @@ The **Windows Forms Matching Game Sample** is now upgraded to .NET 10.
 
 ## Post-upgrade experience
 
-If you ported the app from .NET Framework to .NET, review [Modernize after upgrading to .NET from .NET Framework](/dotnet/core/porting/modernize) for ideas on adopting newer patterns, such as `appsettings.json` configuration, dependency injection, or cloud services. Adopting these patterns is separate from the modernization to .NET and isn't required to complete the upgrade.
+If you ported the app from .NET Framework to .NET, review [Modernize after upgrading to .NET from .NET Framework](/dotnet/core/porting/modernize) for ideas on adopting newer patterns, such as `appsettings.json` configuration, dependency injection, or cloud services. Adopting these patterns is separate from upgrading to .NET and isn't required to complete the upgrade.
 
 ## Related content
 

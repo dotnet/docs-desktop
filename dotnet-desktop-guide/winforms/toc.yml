@@ -29,7 +29,7 @@ items:
   items:
   - name: Overview
     href: migration/index.md
-  - name: Upgrade a .NET Framework app to .NET 10
+  - name: Upgrade from .NET Framework with GitHub Copilot
     href: migration/how-to-upgrade-winforms.md
   - name: Clipboard and DataObject changes in .NET 10
     href: migration/clipboard-dataobject-net10.md

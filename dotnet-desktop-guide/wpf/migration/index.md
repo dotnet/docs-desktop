@@ -15,9 +15,7 @@ ai-usage: ai-assisted
 
 # Overview of upgrading WPF apps
 
-This article helps you understand what's involved in upgrading a Windows Presentation Foundation (WPF) app. The primary focus is modernizing from .NET Framework to .NET, but upgrading between .NET versions is also covered.
-
-WPF is supported on .NET and receives active investment, including performance improvements, accessibility updates, and new features. If you maintain an existing WPF app and want to take advantage of those improvements or move to a supported .NET version, this article is for you.
+This article helps you understand what's involved in upgrading a Windows Presentation Foundation (WPF) app from .NET Framework to .NET. WPF is supported on .NET and receives active investment, including performance improvements, accessibility updates, and new features. If you maintain an existing WPF app and want to take advantage of those improvements or move to a supported .NET version, this article is for you.
 
 The article covers the reasons to upgrade, the available upgrade paths, and the preparation work that makes the upgrade go smoothly. It also explains which .NET Framework technologies have no equivalent in .NET, how to fill API gaps using the Windows Compatibility Pack, and how breaking changes can affect your app.
 
