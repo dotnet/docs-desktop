@@ -183,7 +183,8 @@ If the agent migrates the project but it doesn't compile, verify that the projec
   <PropertyGroup>
     <TargetFramework>net10.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
-    <OutputType>WinExe</OutputType> <!-- For apps; use Library for class libraries. -->
+    <OutputType>WinExe</OutputType>
+    <MyType>Windows</MyType>
 
     <!-- Other settings removed for brevity. -->
   </PropertyGroup>

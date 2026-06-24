@@ -186,8 +186,8 @@ If the agent migrates the project but it doesn't compile, verify that the projec
   <PropertyGroup>
     <TargetFramework>net10.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
-    <OutputType>Library</OutputType>
-    <MyType>Windows</MyType>
+    <OutputType>WinExe</OutputType>
+    <MyType>WindowsForms</MyType>
 
     <!-- Other settings removed for brevity. -->
   </PropertyGroup>
