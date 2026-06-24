@@ -46,7 +46,7 @@ One change is the project file format. .NET uses the SDK-style project format, w
 
 Not all .NET Framework APIs are available in .NET. Some APIs exist on the surface but throw `PlatformNotSupportedException` at runtime. The Windows Compatibility Pack (`Microsoft.Windows.Compatibility` NuGet package) fills many of these gaps by providing access to Windows-specific APIs such as the Windows Registry, Windows Event Log, and more. For details, see [Use the Windows Compatibility Pack to port code to .NET](/dotnet/core/porting/windows-compat-pack).
 
-Some .NET Framework technologies have no equivalent in .NET and require alternative approaches, such as Application Domains, Code Access Security (CAS), and Windows Workflow Foundation. For the full list and recommended alternatives, see the [Unavailable technologies](#unavailable-technologies) section.
+Some .NET Framework technologies have no equivalent in .NET and require alternative approaches, such as Application Domains, Code Access Security (CAS), and Windows Workflow Foundation. For more information, see the [Unavailable .NET Framework technologies](#unavailable-net-framework-technologies) section.
 
 Audit your third-party dependencies. Controls and libraries that target only .NET Framework might not work on .NET. Prefer NuGet packages that target .NET Standard 2.0 or .NET directly. For packages that haven't been ported, look for community alternatives or check whether the Windows Compatibility Pack covers the needed APIs.
 
