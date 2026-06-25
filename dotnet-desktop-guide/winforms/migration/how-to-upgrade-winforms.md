@@ -135,14 +135,14 @@ The _Windows Forms_ row lists 621 API issues for the same reason. Windows Forms 
 
 After the assessment, the agent presents upgrade strategy decisions and saves them to `upgrade-options.md` in `.github/upgrades/scenarios/dotnet-version-upgrade/`. For the Matching Game sample, the agent selects the following options:
 
-| Decision | Reason |
-| --- | --- |
-| **Upgrade strategy** | Bottom-up. The agent upgrades **MatchingGame.Logic** first because **MatchingGame** depends on it, then validates each tier before moving on. |
-| **Project approach** | In-place. Both projects migrate together because no other .NET Framework projects consume them. |
-| **Unsupported packages** | Resolve inline. The assessment found only a few incompatible packages, so the agent researches replacements as it works. |
-| **Unsupported API handling** | Fix inline. Most Windows Forms and GDI+ API changes for .NET are mechanical and don't require a separate planning pass. |
-| **Windows native APIs** | Windows Compatibility Pack. The app uses Windows Forms and GDI+ heavily and is inherently Windows-only. |
-| **Nullable reference types** | Leave disabled. The agent treats enabling nullable as a separate effort after migration. |
+| Aspect | Decision | Reason |
+| --- | --- | --- |
+| **Upgrade strategy** | Bottom-up. | The agent upgrades **MatchingGame.Logic** first because **MatchingGame** depends on it, then validates each tier before moving on. |
+| **Project approach** | In-place. | Both projects migrate together because no other .NET Framework projects consume them. |
+| **Unsupported packages** | Resolve inline. | The assessment found only a few incompatible packages, so the agent researches replacements as it works. |
+| **Unsupported API handling** | Fix inline. | Most Windows Forms and GDI+ API changes for .NET are mechanical and don't require a separate planning pass. |
+| **Windows native APIs** | Windows Compatibility Pack. | The app uses Windows Forms and GDI+ heavily and is inherently Windows-only. |
+| **Nullable reference types** | Leave disabled. | The agent treats enabling nullable as a separate effort after migration. |
 
 The agent also calls out risks that need your attention. For the Matching Game sample, the agent flags the `MetroFramework` packages because they're only available for .NET Framework. The likely outcome is removing `MetroFramework` and falling back to standard Windows Forms controls, which changes the visual style of the app.
 

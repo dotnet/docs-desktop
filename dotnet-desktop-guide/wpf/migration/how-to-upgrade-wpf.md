@@ -130,13 +130,13 @@ Proceeding to planning now. You can ask me to pause and switch to Guided mode at
 
 After the assessment, the agent presents upgrade strategy decisions and saves them to `upgrade-options.md` in `.github/upgrades/scenarios/dotnet-version-upgrade/`. For the Matching Game sample, the agent selects the following options:
 
-| Decision | Reason |
-| --- | --- |
-| **Upgrade strategy** | Bottom-up. The agent upgrades **MatchingGame.Logic** first because **MatchingGame** depends on it, then validates each tier before moving on.|
-| **Project approach** | In-place. Both projects migrate together because no other .NET Framework projects consume them.|
-| **Unsupported API handling** | Fix inline. Most WPF API changes for .NET are mechanical and don't require a separate planning pass.|
-| **Windows native APIs** | Windows Compatibility Pack. The app uses the registry and is inherently Windows-only.|
-| **Nullable reference types** | Leave disabled. The agent treats enabling nullable as a separate effort after migration.|
+| Aspect | Decision | Reason |
+| --- | --- | --- |
+| **Upgrade strategy** | Bottom-up. | The agent upgrades **MatchingGame.Logic** first because **MatchingGame** depends on it, then validates each tier before moving on.|
+| **Project approach** | In-place. | Both projects migrate together because no other .NET Framework projects consume them.|
+| **Unsupported API handling** | Fix inline. | Most WPF API changes for .NET are mechanical and don't require a separate planning pass.|
+| **Windows native APIs** | Windows Compatibility Pack. | The app uses the registry and is inherently Windows-only.|
+| **Nullable reference types** | Leave disabled. | The agent treats enabling nullable as a separate effort after migration.|
 
 The agent also calls out risks that need your attention. Review the proposed options and tell the agent what you want to change. For example, tell the agent to enable nullable reference types or to change how incompatible packages are handled. When you're done, reply `confirm` to lock in the selections and move to planning.
 
