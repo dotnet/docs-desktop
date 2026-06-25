@@ -76,7 +76,7 @@ The agent supports these upgrade paths:
 
 - .NET Framework (any version) to .NET 8 or later
 - .NET Core 1.x–3.x to .NET 8 or later
-- .NET 5 or later to .NET 8 or later
+- .NET 5-7 to .NET 8 or later
 - Migration to Azure services
 
 It's available in Visual Studio 2026, Visual Studio 2022 17.14.16+, Visual Studio Code, and GitHub CLI. To start an upgrade in Visual Studio, right-click your solution or project in Solution Explorer and select **Modernize**, or open the GitHub Copilot Chat window and type `@Modernize`. In Visual Studio Code, open the GitHub Copilot Chat panel and type `@modernize-dotnet`.

@@ -19,7 +19,7 @@ This article helps you understand what's involved in upgrading a Windows Present
 
 The article covers the reasons to upgrade, the available upgrade paths, and the preparation work that makes the upgrade go smoothly. It also explains which .NET Framework technologies have no equivalent in .NET, how to fill API gaps using the Windows Compatibility Pack, and how breaking changes can affect your app.
 
-For more information on differences between WPF on .NET Framework and .NET, see [Differences with WPF .NET](differences-from-net-framework.md).
+For more information on differences between WPF on .NET Framework and .NET, see [Differences with WPF in .NET](differences-from-net-framework.md).
 
 [!INCLUDE [migration-shared](../../includes/migration-shared.md)]
 

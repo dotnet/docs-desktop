@@ -20,7 +20,7 @@ The example uses the [Matching Game sample][wpf-sample], a small .NET Framework 
 ## Prerequisites
 
 - Windows operating system.
-- Visual Studio 2026
+- Visual Studio 2026.
 - [Download and extract the demo app used with this article.][wpf-sample]
 - The .NET SDK for the version you're targeting. This article targets .NET 10.
 - A Git repository for the solution. The agent commits its progress, so the project must be under source control.
@@ -161,7 +161,7 @@ To review and customize the plan:
 
 ## Run the upgrade
 
-In the execution stage, the agent breaks the plan into sequential, concrete tasks with validation criteria. The agent writes the task list to `.github/upgrades/scenarios/dotnet-version-upgrade/tasks.md` and tracks overall progress in that file. For each task, the agent creates a folder under `.github/upgrades/scenarios/dotnet-version-upgrade/tasks/` that contains a markdown file describing the task and a markdown file that reports the task's progress.
+In the execution stage, the agent breaks the plan into sequential, concrete tasks with validation criteria. The agent writes the task list to `.github/upgrades/scenarios/dotnet-version-upgrade/tasks.md` and tracks overall progress in that file. For each task, the agent creates a folder under `.github/upgrades/scenarios/dotnet-version-upgrade/tasks/` that contains a Markdown file describing the task and a markdown file that reports the task's progress.
 
 For the Matching Game sample, the task list typically includes upgrading **MatchingGame.Logic** first, then **MatchingGame**, restoring packages, building the solution, and committing the changes.
 
@@ -208,7 +208,7 @@ To verify the upgrade:
 1. Test the app thoroughly to verify the upgrade succeeded.
 
 > [!TIP]
-> Try restarting Visual Studio if the project won't run and a debugger can't be attached. Migrating project files from .NET Framework to .NET might confuse the WPF designer without a restart.
+> If the project won't run and a debugger can't be attached, try restarting Visual Studio. Migrating project files from .NET Framework to .NET might confuse the WPF designer without a restart.
 
 The **WPF Matching Game Sample** is now upgraded to .NET 10.
 
