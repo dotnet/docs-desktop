@@ -25,7 +25,7 @@ For more information on differences between WPF on .NET Framework and .NET, see 
 
 ## Related content
 
-- [Differences with WPF .NET](differences-from-net-framework.md)
+- [Differences between WPF on .NET Framework and .NET](differences-from-net-framework.md)
 - [Upgrade a WPF app to .NET with GitHub Copilot modernization](how-to-upgrade-wpf.md)
 - [Overview of porting from .NET Framework to .NET](/dotnet/core/porting/framework-overview)
 - [.NET Framework technologies unavailable on .NET](/dotnet/core/porting/net-framework-tech-unavailable)
