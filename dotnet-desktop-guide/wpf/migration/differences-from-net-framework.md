@@ -1,5 +1,5 @@
 ---
-title: Differences between .NET Framework and .NET
+title: WPF differences between .NET and .NET Framework
 description: Describes the differences between the .NET Framework implementation of Windows Presentation Foundation (WPF) and .NET WPF.
 author: adegeo
 ms.date: 02/15/2023
@@ -9,7 +9,7 @@ ms.author: adegeo
 ms.topic: concept-article
 ---
 
-# Differences with WPF .NET
+# WPF differences between .NET and .NET Framework
 
 This article describes the differences between Windows Presentation Foundation (WPF) on .NET and .NET Framework. WPF for .NET is an [open-source framework](https://github.com/dotnet/wpf) forked from the original WPF for .NET Framework source code.
 
