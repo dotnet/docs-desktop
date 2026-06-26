@@ -235,4 +235,4 @@ If you ported the app from .NET Framework to .NET, review [Modernize after upgra
 - [Modernize after upgrading to .NET from .NET Framework](/dotnet/core/porting/modernize)
 - [Breaking changes when porting code](/dotnet/core/porting/breaking-changes)
 
-[winforms-sample]: https://github.com/dotnet/samples/tree/main/windowsforms/matching-game
+[winforms-sample]: https://github.com/dotnet/samples/tree/main/upgrades/matching-game-netframework/winforms

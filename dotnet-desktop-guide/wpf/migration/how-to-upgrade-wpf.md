@@ -224,4 +224,4 @@ If you ported the app from .NET Framework to .NET, review [Modernize your upgrad
 - [Modernize your upgraded .NET Framework apps](/dotnet/core/porting/modernize)
 - [Breaking changes can affect porting your app](/dotnet/core/porting/breaking-changes)
 
-[wpf-sample]: https://github.com/dotnet/samples/tree/main/wpf/matching-game
+[wpf-sample]: https://github.com/dotnet/samples/tree/main/upgrades/matching-game-netframework/wpf

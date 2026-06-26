@@ -19,16 +19,15 @@ This article helps you understand what's involved in upgrading a Windows Present
 
 The article covers the reasons to upgrade, the available upgrade paths, and the preparation work that makes the upgrade go smoothly. It also explains which .NET Framework technologies have no equivalent in .NET, how to fill API gaps using the Windows Compatibility Pack, and how breaking changes can affect your app.
 
-For more information on differences between WPF on .NET Framework and .NET, see [Differences with WPF on .NET](differences-from-net-framework.md).
+For more information on changes from .NET Framework, see [WPF differences between .NET and .NET Framework](differences-from-net-framework.md) and [.NET Framework technologies unavailable on .NET](/dotnet/core/porting/net-framework-tech-unavailable).
 
 [!INCLUDE [migration-shared](../../includes/migration-shared.md)]
 
 ## Related content
 
-- [Differences between WPF on .NET Framework and .NET](differences-from-net-framework.md)
+- [WPF differences between .NET and .NET Framework](differences-from-net-framework.md)
 - [Upgrade a WPF app to .NET with GitHub Copilot modernization](how-to-upgrade-wpf.md)
 - [Overview of porting from .NET Framework to .NET](/dotnet/core/porting/framework-overview)
 - [.NET Framework technologies unavailable on .NET](/dotnet/core/porting/net-framework-tech-unavailable)
 - [Prerequisites to porting code from .NET Framework](/dotnet/core/porting/premigration-needed-changes)
 - [Breaking changes when porting code](/dotnet/core/porting/breaking-changes)
-- [Use the Windows Compatibility Pack to port code to .NET](/dotnet/core/porting/windows-compat-pack)
