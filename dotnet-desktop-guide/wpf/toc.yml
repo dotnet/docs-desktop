@@ -26,10 +26,12 @@ items:
     href: whats-new/net80.md
   - name: What's new in .NET 7
     href: whats-new/net70.md
-- name: Migration
+- name: Upgrade
   items:
-  - name: Upgrade to .NET 8
+  - name: Overview
     href: migration/index.md
+  - name: Upgrade from .NET Framework with GitHub Copilot
+    href: migration/how-to-upgrade-wpf.md
   - name: Differences from .NET Framework
     href: migration/differences-from-net-framework.md
 - name: Application development

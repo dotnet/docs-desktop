@@ -1,5 +1,6 @@
 ---
 title: "How to: Define a Rectangle Using a RectangleGeometry"
+description: Learn how to use the RectangleGeometry class to describe a rectangle in WPF by setting a Rect structure to define its position and dimensions.
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
 ms.update-cycle: 1825-days
