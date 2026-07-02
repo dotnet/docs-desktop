@@ -115,4 +115,3 @@ When handling keyboard input at the form level, be aware of preprocessing except
 - [How to simulate keyboard events](how-to-simulate-events.md)
 - [How to handle keyboard input messages in the form](how-to-handle-forms.md)
 - [Add a control](../controls/how-to-add-to-a-form.md)
-
