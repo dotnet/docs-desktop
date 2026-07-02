@@ -1,7 +1,7 @@
 ---
 title: "User input validation"
 description: Learn about several ways that you can use Windows Forms to validate user input in your applications.
-ms.date: 04/02/2025
+ms.date: 07/01/2026
 ms.service: dotnet-desktop
 ms.update-cycle: 365-days
 ms.topic: overview
@@ -36,7 +36,7 @@ If you want full programmatic control over validation, or need complex validatio
 
 The <xref:System.Windows.Forms.Control.Validating> event is supplied an object of type <xref:System.ComponentModel.CancelEventArgs>. If you determine that the control's data isn't valid, cancel the <xref:System.Windows.Forms.Control.Validating> event by setting this object's <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property to `true`. If you don't set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property, Windows Forms assumes that validation succeeded for that control and raises the <xref:System.Windows.Forms.Control.Validated> event.
 
-For a code example that validates an email address in a <xref:System.Windows.Controls.TextBox>, see the <xref:System.Windows.Forms.Control.Validating> event reference.
+For a code example that validates an email address in a <xref:System.Windows.Forms.TextBox>, see the <xref:System.Windows.Forms.Control.Validating> event reference.
 
 ### Event-driven validation data-bound controls
 

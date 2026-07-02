@@ -30,19 +30,19 @@ namespace project
         }
 
         //<HandleKey>
-        // Detect all numeric characters at the form level and consume 1,4, and 7.
+        // Detect all numeric characters at the form level and consume 1, 4, and 7.
         // Form.KeyPreview must be set to true for this event handler to be called.
         void Form1_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (e.KeyChar >= 48 && e.KeyChar <= 57)
+            if (char.IsDigit(e.KeyChar))
             {
                 MessageBox.Show($"Form.KeyPress: '{e.KeyChar}' pressed.");
 
                 switch (e.KeyChar)
                 {
-                    case (char)49:
-                    case (char)52:
-                    case (char)55:
+                    case '1':
+                    case '4':
+                    case '7':
                         MessageBox.Show($"Form.KeyPress: '{e.KeyChar}' consumed.");
                         e.Handled = true;
                         break;
@@ -50,5 +50,20 @@ namespace project
             }
         }
         //</HandleKey>
+
+        // <ProcessCmdKey>
+        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        {
+            // Intercept Ctrl+A for custom handling
+            if (keyData == (Keys.Control | Keys.A))
+            {
+                MessageBox.Show("Ctrl+A intercepted at form level");
+                return true; // Mark as handled
+            }
+
+            // Pass other keys to the base handler
+            return base.ProcessCmdKey(ref msg, keyData);
+        }
+        // </ProcessCmdKey>
     }
 }

@@ -54,6 +54,9 @@ The following code example uses `Send` to simulate pressing keys into the Window
 :::code language="csharp" source="snippets/how-to-simulate-events/csharp/Form2.cs" id="Calculator":::
 :::code language="vb" source="snippets/how-to-simulate-events/vb/Form2.vb" id="Calculator":::
 
+> [!CAUTION]
+> Window title lookup by name is locale-sensitive and can be brittle. Application windows may have localized or renamed titles depending on the system language and user configuration. This sample demonstrates a basic approach only and isn't recommended for production scenarios that need reliability across varied environments. For robust cross-application automation, consider using more reliable methods like window class identification or handle-based lookups, or prefer using UI automation frameworks designed for this purpose.
+
 ## Use OnEventName methods
 
 The easiest way to simulate keyboard events is to call a method on the object that raises the event. Most events have a corresponding method that invokes them, named in the pattern of `On` followed by `EventName`, such as `OnKeyPress`. This option is only possible within custom controls or forms, because these methods are protected and can't be accessed from outside the context of the control or form.
