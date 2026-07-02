@@ -33,17 +33,21 @@ Namespace SDKSample
         End Sub
 
         Private Sub findNextButton_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
+            Dim textToFind As String = Me.findWhatTextBox.Text
+
+            ' Short-circuit: Did the user not provide any text at all?
+            If String.IsNullOrEmpty(textToFind) Then Return
+
             If (Me.matches Is Nothing) Then
                 Dim matchOptions As RegexOptions = RegexOptions.None
-                Dim literalToFind As String = Me.findWhatTextBox.Text
 
                 ' Escape the user-typed text in case it contains regex special characters.
-                Dim pattern As String = Regex.Escape(literalToFind)
+                Dim pattern As String = Regex.Escape(textToFind)
 
                 ' Match whole word?
                 If Me.matchWholeWordCheckBox.IsChecked.Value Then
-                    If BeginsWithRegexWordChar(literalToFind) Then pattern = "\b" & pattern
-                    If EndsWithRegexWordChar(literalToFind) Then pattern = pattern & "\b"
+                    If BeginsWithRegexWordChar(textToFind) Then pattern = "\b" & pattern
+                    If EndsWithRegexWordChar(textToFind) Then pattern = pattern & "\b"
                 End If
 
                 ' Case sensitive

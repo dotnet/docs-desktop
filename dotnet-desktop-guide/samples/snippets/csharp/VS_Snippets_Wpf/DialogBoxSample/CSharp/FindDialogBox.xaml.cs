@@ -50,20 +50,24 @@ namespace SDKSample
 
         void findNextButton_Click(object sender, RoutedEventArgs e)
         {
+            string textToFind = this.findWhatTextBox.Text;
+
+            // Short-circuit: Did the user not provide any text at all?
+            if (string.IsNullOrEmpty(textToFind)) return;
+
             // Find matches
             if (this.matches == null)
             {
                 RegexOptions regexOptions = RegexOptions.None;
-                string literalToFind = this.findWhatTextBox.Text;
 
                 // Escape the user-typed text in case it contains regex special characters.
-                string pattern = Regex.Escape(literalToFind);
+                string pattern = Regex.Escape(textToFind);
 
                 // Match whole word?
                 if ((bool)this.matchWholeWordCheckBox.IsChecked)
                 {
-                    if (BeginsWithRegexWordChar(literalToFind)) pattern = @"\b" + pattern;
-                    if (EndsWithRegexWordChar(literalToFind)) pattern = pattern + @"\b";
+                    if (BeginsWithRegexWordChar(textToFind)) pattern = @"\b" + pattern;
+                    if (EndsWithRegexWordChar(textToFind)) pattern = pattern + @"\b";
                 }
 
                 // Case sensitive
