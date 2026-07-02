@@ -19,7 +19,7 @@ Partial Public Class Form1
             MessageBox.Show($"Form.KeyPress: '{e.KeyChar}' pressed.")
 
             Select Case e.KeyChar
-                Case "1", "4", "7"
+                Case "1"c, "4"c, "7"c
                     MessageBox.Show($"Form.KeyPress: '{e.KeyChar}' consumed.")
                     e.Handled = True
             End Select
