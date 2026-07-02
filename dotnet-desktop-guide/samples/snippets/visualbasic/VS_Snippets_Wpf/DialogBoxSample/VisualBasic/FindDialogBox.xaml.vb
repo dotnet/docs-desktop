@@ -33,15 +33,28 @@ Namespace SDKSample
         End Sub
 
         Private Sub findNextButton_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
+            Dim textToFind As String = Me.findWhatTextBox.Text
+
+            ' Short-circuit: Did the user not provide any text at all?
+            If String.IsNullOrEmpty(textToFind) Then Return
+
             If (Me.matches Is Nothing) Then
-                Dim pattern As String = Me.findWhatTextBox.Text
+                Dim matchOptions As RegexOptions = RegexOptions.None
+
+                ' Escape the user-typed text in case it contains regex special characters.
+                Dim pattern As String = Regex.Escape(textToFind)
+
+                ' Match whole word?
                 If Me.matchWholeWordCheckBox.IsChecked.Value Then
-                    pattern = ("(?<=\W{0,1})" & pattern & "(?=\W)")
+                    If BeginsWithRegexWordChar(textToFind) Then pattern = "\b" & pattern
+                    If EndsWithRegexWordChar(textToFind) Then pattern = pattern & "\b"
                 End If
-                If Not Me.caseSensitiveCheckBox.IsChecked.Value Then
-                    pattern = ("(?i)" & pattern)
-                End If
-                Me.matches = Regex.Matches(Me.textBoxToSearch.Text, pattern)
+
+                ' Case sensitive
+                If Not Me.caseSensitiveCheckBox.IsChecked.Value Then matchOptions = matchOptions Or RegexOptions.IgnoreCase
+
+                ' Find matches
+                Me.matches = Regex.Matches(Me.textBoxToSearch.Text, pattern, matchOptions)
                 Me.matchIndex = 0
                 If (Me.matches.Count = 0) Then
                     MessageBox.Show(("'" & Me.findWhatTextBox.Text & "' not found."), "Find")
@@ -50,7 +63,7 @@ Namespace SDKSample
                 End If
             End If
             If (Me.matchIndex = Me.matches.Count) Then
-                Dim result As MessageBoxResult = MessageBox.Show("Nmore matches found. Start at beginning?", "Find", MessageBoxButton.YesNo)
+                Dim result As MessageBoxResult = MessageBox.Show("No more matches found. Start at beginning?", "Find", MessageBoxButton.YesNo)
                 If (result = MessageBoxResult.No) Then
                     Return
                 End If
@@ -64,6 +77,16 @@ Namespace SDKSample
 
             Me.matchIndex += 1
         End Sub
+
+        Private Shared Function BeginsWithRegexWordChar(ByVal literal As String) As Boolean
+            If String.IsNullOrEmpty(literal) Then Return False
+            Return Regex.IsMatch(literal(0).ToString(), "\w")
+        End Function
+
+        Private Shared Function EndsWithRegexWordChar(ByVal literal As String) As Boolean
+            If String.IsNullOrEmpty(literal) Then Return False
+            Return Regex.IsMatch(literal(literal.Length - 1).ToString(), "\w")
+        End Function
 
         Private Sub findWhatTextBox_TextChanged(ByVal sender As Object, ByVal e As TextChangedEventArgs)
             Me.ResetFind()

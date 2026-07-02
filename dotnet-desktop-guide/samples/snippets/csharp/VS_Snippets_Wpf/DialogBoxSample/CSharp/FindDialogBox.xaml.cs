@@ -50,19 +50,31 @@ namespace SDKSample
 
         void findNextButton_Click(object sender, RoutedEventArgs e)
         {
+            string textToFind = this.findWhatTextBox.Text;
+
+            // Short-circuit: Did the user not provide any text at all?
+            if (string.IsNullOrEmpty(textToFind)) return;
+
             // Find matches
             if (this.matches == null)
             {
-                string pattern = this.findWhatTextBox.Text;
+                RegexOptions regexOptions = RegexOptions.None;
+
+                // Escape the user-typed text in case it contains regex special characters.
+                string pattern = Regex.Escape(textToFind);
 
                 // Match whole word?
-                if ((bool)this.matchWholeWordCheckBox.IsChecked) pattern = @"(?<=\W{0,1})" + pattern + @"(?=\W)";
+                if ((bool)this.matchWholeWordCheckBox.IsChecked)
+                {
+                    if (BeginsWithRegexWordChar(textToFind)) pattern = @"\b" + pattern;
+                    if (EndsWithRegexWordChar(textToFind)) pattern = pattern + @"\b";
+                }
 
                 // Case sensitive
-                if (!(bool)this.caseSensitiveCheckBox.IsChecked) pattern = "(?i)" + pattern;
+                if (!(bool)this.caseSensitiveCheckBox.IsChecked) regexOptions |= RegexOptions.IgnoreCase;
 
                 // Find matches
-                this.matches = Regex.Matches(this.textBoxToSearch.Text, pattern);
+                this.matches = Regex.Matches(this.textBoxToSearch.Text, pattern, regexOptions);
                 this.matchIndex = 0;
 
                 // Word not found?
@@ -77,7 +89,7 @@ namespace SDKSample
             // Start at beginning of matches if the last find selected the last match
             if (this.matchIndex == this.matches.Count)
             {
-                MessageBoxResult result = MessageBox.Show("Nmore matches found. Start at beginning?", "Find", MessageBoxButton.YesNo);
+                MessageBoxResult result = MessageBox.Show("No more matches found. Start at beginning?", "Find", MessageBoxButton.YesNo);
                 if (result == MessageBoxResult.No) return;
 
                 // Reset
@@ -94,6 +106,18 @@ namespace SDKSample
                 OnTextFound();
             }
             this.matchIndex++;
+        }
+
+        static bool BeginsWithRegexWordChar(string literal)
+        {
+            if (string.IsNullOrEmpty(literal)) return false;
+            return Regex.IsMatch(literal[0].ToString(), @"\w");
+        }
+
+        static bool EndsWithRegexWordChar(string literal)
+        {
+            if (string.IsNullOrEmpty(literal)) return false;
+            return Regex.IsMatch(literal[literal.Length - 1].ToString(), @"\w");
         }
 
         void textBoxToSearch_TextChanged(object sender, TextChangedEventArgs e)
