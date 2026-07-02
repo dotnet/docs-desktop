@@ -19,7 +19,7 @@ Windows Forms provides the ability to handle keyboard messages at the form level
 
 ## Handle a keyboard message
 
-Handle the <xref:System.Windows.Forms.Control.KeyPress> or <xref:System.Windows.Forms.Control.KeyDown> event of the active form and set the <xref:System.Windows.Forms.Form.KeyPreview%2A> property of the form to `true`. This property causes keyboard input to reach the form before it reaches any controls on the form. The following code example handles the <xref:System.Windows.Forms.Control.KeyPress> event by detecting all of the number keys and consuming <kbd>1</kbd>, <kbd>4</kbd>, and <kbd>7</kbd>.
+Handle the <xref:System.Windows.Forms.Control.KeyPress> or <xref:System.Windows.Forms.Control.KeyDown> event of the active form and set the <xref:System.Windows.Forms.Form.KeyPreview*> property of the form to `true`. This property causes keyboard input to reach the form before it reaches any controls on the form. The following code example handles the <xref:System.Windows.Forms.Control.KeyPress> event by detecting all of the number keys and consuming <kbd>1</kbd>, <kbd>4</kbd>, and <kbd>7</kbd>.
 
 :::code language="csharp" source="snippets/how-to-handle-forms/csharp/Form1.cs" id="HandleKey":::
 :::code language="vb" source="snippets/how-to-handle-forms/vb/Form1.vb" id="HandleKey":::
@@ -32,27 +32,27 @@ Setting `Form.KeyPreview = true` doesn't guarantee that every key reaches form-l
 
 Before form-level keyboard events fire, Windows preprocesses certain keys through these methods (in order):
 
-1. <xref:System.Windows.Forms.Control.ProcessCmdKey%2A>: Intercepts command keys such as menu shortcuts and accelerators. If this method returns `true`, the key is consumed and no event fires.
-1. <xref:System.Windows.Forms.Control.IsInputKey%2A>: Determines whether a key should raise a <xref:System.Windows.Forms.Control.KeyDown> event or go to <xref:System.Windows.Forms.Control.ProcessDialogKey%2A>.
-1. <xref:System.Windows.Forms.Control.ProcessDialogKey%2A>: Handles navigation keys (Escape, Tab, Return, and arrow keys). If processed, no event fires.
+1. <xref:System.Windows.Forms.Control.ProcessCmdKey*>: Intercepts command keys such as menu shortcuts and accelerators. If this method returns `true`, the key is consumed and no event fires.
+1. <xref:System.Windows.Forms.Control.IsInputKey*>: Determines whether a key should raise a <xref:System.Windows.Forms.Control.KeyDown> event or go to <xref:System.Windows.Forms.Control.ProcessDialogKey*>.
+1. <xref:System.Windows.Forms.Control.ProcessDialogKey*>: Handles navigation keys (Escape, Tab, Return, and arrow keys). If processed, no event fires.
 
 If a focused control consumes a key during preprocessing, the form never receives it, regardless of `KeyPreview`.
 
 ### Special cases that bypass form-level handlers
 
-- **<kbd>Enter</kbd> and <kbd>Escape</kbd>**: These keys might be handled by <xref:System.Windows.Forms.Form.AcceptButton%2A> and <xref:System.Windows.Forms.Form.CancelButton%2A> before reaching form events.
+- **<kbd>Enter</kbd> and <kbd>Escape</kbd>**: These keys might be handled by <xref:System.Windows.Forms.Form.AcceptButton*> and <xref:System.Windows.Forms.Form.CancelButton*> before reaching form events.
 - **<kbd>Tab</kbd>**: Often consumed by control focus management and won't reach form handlers.
 - **Menu shortcuts**: Alt key combinations are handled by menu preprocessing.
 
 ### Intercepting command keys at the form level
 
-To handle command keys (including menu shortcuts and dialog keys) at the form level, override <xref:System.Windows.Forms.Control.ProcessCmdKey%2A> on your form. This runs during preprocessing, before standard form events.
+To handle command keys (including menu shortcuts and dialog keys) at the form level, override <xref:System.Windows.Forms.Control.ProcessCmdKey*> on your form. This runs during preprocessing, before standard form events.
 
 :::code language="csharp" source="snippets/how-to-handle-forms/csharp/Form1.cs" id="ProcessCmdKey":::
 
 :::code language="vb" source="snippets/how-to-handle-forms/vb/Form1.vb" id="ProcessCmdKey":::
 
-For keys that should raise standard events in a specific control, use <xref:System.Windows.Forms.Control.PreviewKeyDown> with <xref:System.Windows.Forms.PreviewKeyDownEventArgs.IsInputKey%2A> set to `true` on that control.
+For keys that should raise standard events in a specific control, use <xref:System.Windows.Forms.Control.PreviewKeyDown> with <xref:System.Windows.Forms.PreviewKeyDownEventArgs.IsInputKey*> set to `true` on that control.
 
 ## See also
 
