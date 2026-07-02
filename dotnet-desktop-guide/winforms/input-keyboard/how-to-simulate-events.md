@@ -55,7 +55,7 @@ The following code example uses `Send` to simulate pressing keys into the Window
 :::code language="vb" source="snippets/how-to-simulate-events/vb/Form2.vb" id="Calculator":::
 
 > [!CAUTION]
-> Window title lookup by name is locale-sensitive and can be brittle. Application windows may have localized or renamed titles depending on the system language and user configuration. This sample demonstrates a basic approach only and isn't recommended for production scenarios that need reliability across varied environments. For robust cross-application automation, consider using more reliable methods like window class identification or handle-based lookups, or prefer using UI automation frameworks designed for this purpose.
+> Window title lookup by name is locale-sensitive and can be brittle. Application windows might have localized or renamed titles depending on the system language and user configuration. This sample demonstrates a basic approach only and isn't recommended for production scenarios that need reliability across varied environments. For robust cross-application automation, consider using more reliable methods like window class identification or handle-based lookups, or prefer using UI automation frameworks designed for this purpose.
 
 ## Use OnEventName methods
 

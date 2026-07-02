@@ -44,7 +44,7 @@ If a focused control consumes a key during preprocessing, the form never receive
 - **<kbd>Tab</kbd>**: Often consumed by control focus management and won't reach form handlers.
 - **Menu shortcuts**: Alt key combinations are handled by menu preprocessing.
 
-### Intercepting command keys at the form level
+### Intercept command keys at the form level
 
 To handle command keys (including menu shortcuts and dialog keys) at the form level, override <xref:System.Windows.Forms.Control.ProcessCmdKey*> on your form. This runs during preprocessing, before standard form events.
 
