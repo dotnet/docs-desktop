@@ -46,7 +46,8 @@ body:
     validations:
       required: true
   - type: textarea
-    id: feedback
+    id: userfeedback
+    placeholder: '[Enter feedback here]'
     validations:
       required: true
     attributes:
