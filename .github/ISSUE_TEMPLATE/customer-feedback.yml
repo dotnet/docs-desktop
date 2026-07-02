@@ -47,11 +47,11 @@ body:
       required: true
   - type: textarea
     id: userfeedback
-    placeholder: Describe your problem or suggestion
     validations:
       required: true
     attributes:
       label: Description
+      placeholder: Describe your problem or suggestion
   - type: markdown
     attributes:
       value: "## 🚧 Article information 🚧"
