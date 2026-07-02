@@ -33,8 +33,8 @@ Setting `Form.KeyPreview = true` doesn't guarantee that every key reaches form-l
 Before form-level keyboard events fire, Windows preprocesses certain keys through these methods (in order):
 
 1. <xref:System.Windows.Forms.Control.ProcessCmdKey%2A>: Intercepts command keys such as menu shortcuts and accelerators. If this method returns `true`, the key is consumed and no event fires.
-2. <xref:System.Windows.Forms.Control.IsInputKey%2A>: Determines whether a key should raise a <xref:System.Windows.Forms.Control.KeyDown> event or go to <xref:System.Windows.Forms.Control.ProcessDialogKey%2A>.
-3. <xref:System.Windows.Forms.Control.ProcessDialogKey%2A>: Handles navigation keys (Escape, Tab, Return, and arrow keys). If processed, no event fires.
+1. <xref:System.Windows.Forms.Control.IsInputKey%2A>: Determines whether a key should raise a <xref:System.Windows.Forms.Control.KeyDown> event or go to <xref:System.Windows.Forms.Control.ProcessDialogKey%2A>.
+1. <xref:System.Windows.Forms.Control.ProcessDialogKey%2A>: Handles navigation keys (Escape, Tab, Return, and arrow keys). If processed, no event fires.
 
 If a focused control consumes a key during preprocessing, the form never receives it, regardless of `KeyPreview`.
 
