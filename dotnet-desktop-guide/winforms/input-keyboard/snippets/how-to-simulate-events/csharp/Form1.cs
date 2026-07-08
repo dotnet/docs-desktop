@@ -21,7 +21,7 @@ namespace project
         private void button1_Click(object sender, EventArgs e)
         {
             comboBox1.Focus();
-            SendKeys.Send("%+{DOWN}");
+            SendKeys.Send("%{DOWN}");
         }
         //</ShowDropDown>
 

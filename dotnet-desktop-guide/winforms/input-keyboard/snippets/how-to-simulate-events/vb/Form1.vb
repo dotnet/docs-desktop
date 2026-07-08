@@ -13,7 +13,7 @@ Partial Public Class Form1
     '<ShowDropDown>
     Private Sub Button1_Click(sender As Object, e As EventArgs)
         ComboBox1.Focus()
-        SendKeys.Send("%+{DOWN}")
+        SendKeys.Send("%{DOWN}")
     End Sub
     '</ShowDropDown>
 End Class

@@ -24,7 +24,7 @@ The example uses the [Matching Game sample][winforms-sample], a small .NET Frame
 - [Download and extract the demo app used with this article.][winforms-sample]
 - The .NET SDK for the version you're targeting. This article targets .NET 10.
 - A Git repository for the solution. The agent commits its progress, so the project must be under source control.
-- GitHub Copilot modernization enabled for Visual Studio. For more information, see [Install GitHub Copilot modernization](/dotnet/core/porting/github-copilot-app-modernization/install).
+- GitHub Copilot modernization enabled for Visual Studio. For more information, see [Install GitHub Copilot modernization](/dotnet/core/porting/github-copilot-app-modernization/install?pivots=visualstudio).
 
 > [!TIP]
 > Be sure to have a backup of your code, such as in source control or a copy, before you start.

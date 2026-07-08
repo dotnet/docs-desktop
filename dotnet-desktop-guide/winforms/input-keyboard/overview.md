@@ -1,7 +1,7 @@
 ---
 title: "Overview of keyboard input"
 description: Learn about how keyboard input works in Windows Forms for .NET. Keyboard events are raised by forms and controls and represent keys that are down, pressed, or up.
-ms.date: 04/02/2025
+ms.date: 07/01/2026
 ms.service: dotnet-desktop
 ms.update-cycle: 365-days
 ms.topic: overview
@@ -27,11 +27,11 @@ Forms and controls have access to the <xref:System.Windows.Forms.IMessageFilter>
 
 | Method     | Notes |
 |------------|-----------|
-| <xref:System.Windows.Forms.IMessageFilter.PreFilterMessage%2A> | This method intercepts queued (also known as posted) Windows messages at the application level.|
-| <xref:System.Windows.Forms.Control.PreProcessMessage%2A>       | This method intercepts Windows messages at the form and control level before they have been processed.|
-| <xref:System.Windows.Forms.Control.WndProc%2A>                 | This method processes Windows messages at the form and control level.|
-| <xref:System.Windows.Forms.Control.DefWndProc%2A>              | This method performs the default processing of Windows messages at the form and control level. This provides the minimal functionality of a window.|
-| <xref:System.Windows.Forms.Control.OnNotifyMessage%2A>         | This method intercepts messages at the form and control level, after they have been processed. The <xref:System.Windows.Forms.ControlStyles.EnableNotifyMessage> style bit must be set for this method to be called.|
+| <xref:System.Windows.Forms.IMessageFilter.PreFilterMessage*> | This method intercepts queued (also known as posted) Windows messages at the application level.|
+| <xref:System.Windows.Forms.Control.PreProcessMessage*>       | This method intercepts Windows messages at the form and control level before they have been processed.|
+| <xref:System.Windows.Forms.Control.WndProc*>                 | This method processes Windows messages at the form and control level.|
+| <xref:System.Windows.Forms.Control.DefWndProc*>              | This method performs the default processing of Windows messages at the form and control level. This provides the minimal functionality of a window.|
+| <xref:System.Windows.Forms.Control.OnNotifyMessage*>         | This method intercepts messages at the form and control level, after they have been processed. The <xref:System.Windows.Forms.ControlStyles.EnableNotifyMessage> style bit must be set for this method to be called.|
 
 Keyboard and mouse messages are processed by an extra set of overridable methods that are specific to those types of messages. For more information, see the [Preprocessing keys](#preprocessing-keys) section.
 
@@ -49,32 +49,44 @@ As listed previously, there are three keyboard related events that can occur on 
 
 ## Preprocessing keys
 
-Like other messages, keyboard messages are processed in the <xref:System.Windows.Forms.Control.WndProc%2A> method of a form or control. However, before keyboard messages are processed, the <xref:System.Windows.Forms.Control.PreProcessMessage%2A> method calls one or more methods that can be overridden to handle special character keys and physical keys. You can override these methods to detect and filter certain keys before the control processes the messages. The following table shows the action that is being performed and the related method that occurs, in the order that the method occurs.
+Like other messages, keyboard messages are processed in the <xref:System.Windows.Forms.Control.WndProc*> method of a form or control. However, before keyboard messages are processed, the <xref:System.Windows.Forms.Control.PreProcessMessage*> method calls one or more methods that can be overridden to handle special character keys and physical keys. You can override these methods to detect and filter certain keys before the control processes the messages. The following table shows the action that is being performed and the related method that occurs, in the order that the method occurs.
+
+## Quick decision guide for keyboard interception
+
+Choose the right interception method based on what you're trying to handle:
+
+| What you need | Use this approach |
+|---|---|
+| Filter character input (for example, numbers only, no spaces) | Handle <xref:System.Windows.Forms.Control.KeyPress> event or override <xref:System.Windows.Forms.Control.IsInputChar*> |
+| Detect physical keys (for example, Shift, Alt, specific key presses) | Handle <xref:System.Windows.Forms.Control.KeyDown> or <xref:System.Windows.Forms.Control.KeyUp> events |
+| Handle Enter or Tab within a control when normally used for navigation | Handle <xref:System.Windows.Forms.Control.PreviewKeyDown> event and set <xref:System.Windows.Forms.PreviewKeyDownEventArgs.IsInputKey*> to `true`, or override <xref:System.Windows.Forms.Control.IsInputKey*> |
+| Intercept menu shortcuts or command keys (for example, Ctrl+S) at the form level | Override <xref:System.Windows.Forms.Control.ProcessCmdKey*> on the form |
+| Handle application-wide shortcuts before controls get them | Implement <xref:System.Windows.Forms.IMessageFilter> and use <xref:System.Windows.Forms.Application.AddMessageFilter*> |
 
 ### Preprocessing for a KeyDown event
 
 |Action|Related method|Notes|
 |------------|--------------------|-----------|
-|Check for a command key such as an accelerator or menu shortcut.|<xref:System.Windows.Forms.Control.ProcessCmdKey%2A>|This method processes a command key, which takes precedence over regular keys. If this method returns `true`, the key message isn't dispatched and a key event doesn't occur. If it returns `false`, <xref:System.Windows.Forms.Control.IsInputKey%2A> is called`.`|
-|Check for a special key that requires preprocessing or a normal character key that should raise a <xref:System.Windows.Forms.Control.KeyDown> event and be dispatched to a control.|<xref:System.Windows.Forms.Control.IsInputKey%2A>|If the method returns `true`, it means the control is a regular character and a <xref:System.Windows.Forms.Control.KeyDown> event is raised. If `false`, <xref:System.Windows.Forms.Control.ProcessDialogKey%2A> is called. **Note:**  To ensure a control gets a key or combination of keys, you can handle the <xref:System.Windows.Forms.Control.PreviewKeyDown> event and set <xref:System.Windows.Forms.PreviewKeyDownEventArgs.IsInputKey%2A> of the <xref:System.Windows.Forms.PreviewKeyDownEventArgs> to `true` for the key or keys you want.|
-|Check for a navigation key (ESC, TAB, Return, or arrow keys).|<xref:System.Windows.Forms.Control.ProcessDialogKey%2A>|This method processes a physical key that employs special functionality within the control, such as switching focus between the control and its parent. If the immediate control doesn't handle the key, the <xref:System.Windows.Forms.Control.ProcessDialogKey%2A> is called on the parent control, and so on, to the topmost control in the hierarchy. If this method returns `true`, preprocessing is complete and a key event isn't generated. If it returns `false`, a <xref:System.Windows.Forms.Control.KeyDown> event occurs.|
+|Check for a command key such as an accelerator or menu shortcut.|<xref:System.Windows.Forms.Control.ProcessCmdKey*>|This method processes a command key, which takes precedence over regular keys. If this method returns `true`, the key message isn't dispatched and a key event doesn't occur. If it returns `false`, <xref:System.Windows.Forms.Control.IsInputKey*> is called.|
+|Check for a special key that requires preprocessing or a normal character key that should raise a <xref:System.Windows.Forms.Control.KeyDown> event and be dispatched to a control.|<xref:System.Windows.Forms.Control.IsInputKey*>|If the method returns `true`, it means the control is a regular character and a <xref:System.Windows.Forms.Control.KeyDown> event is raised. If `false`, <xref:System.Windows.Forms.Control.ProcessDialogKey*> is called. **Note:**  To ensure a control gets a key or combination of keys, you can handle the <xref:System.Windows.Forms.Control.PreviewKeyDown> event and set <xref:System.Windows.Forms.PreviewKeyDownEventArgs.IsInputKey*> of the <xref:System.Windows.Forms.PreviewKeyDownEventArgs> to `true` for the key or keys you want.|
+|Check for a navigation key (ESC, TAB, Return, or arrow keys).|<xref:System.Windows.Forms.Control.ProcessDialogKey*>|This method processes a physical key that employs special functionality within the control, such as switching focus between the control and its parent. If the immediate control doesn't handle the key, the <xref:System.Windows.Forms.Control.ProcessDialogKey*> is called on the parent control, and so on, to the topmost control in the hierarchy. If this method returns `true`, preprocessing is complete and a key event isn't generated. If it returns `false`, a <xref:System.Windows.Forms.Control.KeyDown> event occurs.|
 
 ### Preprocessing for a KeyPress event
 
 |Action|Related method|Notes|
 |------------|--------------------|-----------|
-|Check to see the key is a normal character that should be processed by the control|<xref:System.Windows.Forms.Control.IsInputChar%2A>|If the character is a normal character, this method returns `true`, the <xref:System.Windows.Forms.Control.KeyPress> event is raised and no further preprocessing occurs. Otherwise <xref:System.Windows.Forms.Control.ProcessDialogChar%2A> is called.|
-|Check to see if the character is a mnemonic (such as &OK on a button)|<xref:System.Windows.Forms.Control.ProcessDialogChar%2A>|This method, similar to <xref:System.Windows.Forms.Control.ProcessDialogKey%2A>, is called up the control hierarchy. If the control is a container control, it checks for mnemonics by calling <xref:System.Windows.Forms.Control.ProcessMnemonic%2A> on itself and its child controls. If <xref:System.Windows.Forms.Control.ProcessDialogChar%2A> returns `true`, a <xref:System.Windows.Forms.Control.KeyPress> event doesn't occur.|
+|Check to see the key is a normal character that should be processed by the control|<xref:System.Windows.Forms.Control.IsInputChar*>|If the character is a normal character, this method returns `true`, the <xref:System.Windows.Forms.Control.KeyPress> event is raised and no further preprocessing occurs. Otherwise <xref:System.Windows.Forms.Control.ProcessDialogChar*> is called.|
+|Check to see if the character is a mnemonic (such as &OK on a button)|<xref:System.Windows.Forms.Control.ProcessDialogChar*>|This method, similar to <xref:System.Windows.Forms.Control.ProcessDialogKey*>, is called up the control hierarchy. If the control is a container control, it checks for mnemonics by calling <xref:System.Windows.Forms.Control.ProcessMnemonic*> on itself and its child controls. If <xref:System.Windows.Forms.Control.ProcessDialogChar*> returns `true`, a <xref:System.Windows.Forms.Control.KeyPress> event doesn't occur.|
 
 ## Processing keyboard messages
 
-After keyboard messages reach the <xref:System.Windows.Forms.Control.WndProc%2A> method of a form or control, they're processed by a set of methods that can be overridden. Each of these methods returns a <xref:System.Boolean> value specifying whether the keyboard message has been processed and consumed by the control. If one of the methods returns `true`, then the message is considered handled, and it isn't passed to the control's base or parent for further processing. Otherwise, the message stays in the message queue and might be processed in another method in the control's base or parent. The following table presents the methods that process keyboard messages.
+After keyboard messages reach the <xref:System.Windows.Forms.Control.WndProc*> method of a form or control, they're processed by a set of methods that can be overridden. Each of these methods returns a <xref:System.Boolean> value specifying whether the keyboard message has been processed and consumed by the control. If one of the methods returns `true`, then the message is considered handled, and it isn't passed to the control's base or parent for further processing. Otherwise, the message stays in the message queue and might be processed in another method in the control's base or parent. The following table presents the methods that process keyboard messages.
 
 |Method|Notes|
 |------------|-----------|
-|<xref:System.Windows.Forms.Control.ProcessKeyMessage%2A>|This method processes all keyboard messages that are received by the <xref:System.Windows.Forms.Control.WndProc%2A> method of the control.|
-|<xref:System.Windows.Forms.Control.ProcessKeyPreview%2A>|This method sends the keyboard message to the control's parent. If <xref:System.Windows.Forms.Control.ProcessKeyPreview%2A> returns `true`, no key event is generated, otherwise <xref:System.Windows.Forms.Control.ProcessKeyEventArgs%2A> is called.|
-|<xref:System.Windows.Forms.Control.ProcessKeyEventArgs%2A>|This method raises the <xref:System.Windows.Forms.Control.KeyDown>, <xref:System.Windows.Forms.Control.KeyPress>, and <xref:System.Windows.Forms.Control.KeyUp> events, as appropriate.|
+|<xref:System.Windows.Forms.Control.ProcessKeyMessage*>|This method processes all keyboard messages that are received by the <xref:System.Windows.Forms.Control.WndProc*> method of the control.|
+|<xref:System.Windows.Forms.Control.ProcessKeyPreview*>|This method sends the keyboard message to the control's parent. If <xref:System.Windows.Forms.Control.ProcessKeyPreview*> returns `true`, no key event is generated, otherwise <xref:System.Windows.Forms.Control.ProcessKeyEventArgs*> is called.|
+|<xref:System.Windows.Forms.Control.ProcessKeyEventArgs*>|This method raises the <xref:System.Windows.Forms.Control.KeyDown>, <xref:System.Windows.Forms.Control.KeyPress>, and <xref:System.Windows.Forms.Control.KeyUp> events, as appropriate.|
 
 ## Overriding keyboard methods
 
@@ -82,17 +94,21 @@ There are many methods available for overriding when a keyboard message is prepr
 
 |Task|Method|
 |----------|------------|
-|Intercept a navigation key and raise a <xref:System.Windows.Forms.Control.KeyDown> event. For example, you want <kbd>Tab</kbd> and <kbd>Enter</kbd> to be handled in a text box.|Override <xref:System.Windows.Forms.Control.IsInputKey%2A>. Alternatively, you can handle the <xref:System.Windows.Forms.Control.PreviewKeyDown> event and set <xref:System.Windows.Forms.PreviewKeyDownEventArgs.IsInputKey%2A> of the <xref:System.Windows.Forms.PreviewKeyDownEventArgs> to `true` for the key or keys you want.|
-|Perform special input or navigation handling on a control. For example, you want the use of arrow keys in your list control to change the selected item.|Override <xref:System.Windows.Forms.Control.ProcessDialogKey%2A>|
-|Intercept a navigation key and raise a <xref:System.Windows.Forms.Control.KeyPress> event. For example in a spin-box control you want multiple arrow key presses to accelerate progression through the items.|Override <xref:System.Windows.Forms.Control.IsInputChar%2A>.|
-|Perform special input or navigation handling during a <xref:System.Windows.Forms.Control.KeyPress> event. For example, in a list control holding down the <kbd>R</kbd> key skips between items that begin with the letter **r**.|Override <xref:System.Windows.Forms.Control.ProcessDialogChar%2A>|
-|Perform custom mnemonic handling; for example, you want to handle mnemonics on owner-drawn buttons contained in a toolbar.|Override <xref:System.Windows.Forms.Control.ProcessMnemonic%2A>.|
+|Intercept a navigation key and raise a <xref:System.Windows.Forms.Control.KeyDown> event. For example, you want <kbd>Tab</kbd> and <kbd>Enter</kbd> to be handled in a text box.|Override <xref:System.Windows.Forms.Control.IsInputKey*>. Alternatively, you can handle the <xref:System.Windows.Forms.Control.PreviewKeyDown> event and set <xref:System.Windows.Forms.PreviewKeyDownEventArgs.IsInputKey*> of the <xref:System.Windows.Forms.PreviewKeyDownEventArgs> to `true` for the key or keys you want.|
+|Perform special input or navigation handling on a control. For example, you want the use of arrow keys in your list control to change the selected item.|Override <xref:System.Windows.Forms.Control.ProcessDialogKey*>|
+|Intercept a navigation key and raise a <xref:System.Windows.Forms.Control.KeyPress> event. For example in a spin-box control you want multiple arrow key presses to accelerate progression through the items.|Override <xref:System.Windows.Forms.Control.IsInputChar*>.|
+|Perform special input or navigation handling during a <xref:System.Windows.Forms.Control.KeyPress> event. For example, in a list control holding down the <kbd>R</kbd> key skips between items that begin with the letter **r**.|Override <xref:System.Windows.Forms.Control.ProcessDialogChar*>|
+|Perform custom mnemonic handling; for example, you want to handle mnemonics on owner-drawn buttons contained in a toolbar.|Override <xref:System.Windows.Forms.Control.ProcessMnemonic*>.|
+
+## Form-level keyboard input limitations
+
+When handling keyboard input at the form level, be aware of preprocessing exceptions. Not all keys reach form-level handlers when `KeyPreview` is set to `true`. Command keys, dialog keys, and keys consumed by focused controls might bypass form event handlers entirely. For details on these exceptions and how to intercept keys at the preprocessing stage, see [When `KeyPreview` is not enough](how-to-handle-forms.md#when-keypreview-is-not-enough).
 
 ## See also
 
 - <xref:System.Windows.Forms.Keys>
-- <xref:System.Windows.Forms.Control.WndProc%2A>
-- <xref:System.Windows.Forms.Control.PreProcessMessage%2A>
+- <xref:System.Windows.Forms.Control.WndProc*>
+- <xref:System.Windows.Forms.Control.PreProcessMessage*>
 - [Using keyboard events](events.md)
 - [How to modify keyboard key events](how-to-change-key-press.md)
 - [How to Check for modifier key presses](how-to-check-modifier-key.md)

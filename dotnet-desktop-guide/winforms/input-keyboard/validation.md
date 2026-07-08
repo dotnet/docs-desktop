@@ -1,7 +1,7 @@
 ---
 title: "User input validation"
 description: Learn about several ways that you can use Windows Forms to validate user input in your applications.
-ms.date: 04/02/2025
+ms.date: 07/02/2026
 ms.service: dotnet-desktop
 ms.update-cycle: 365-days
 ms.topic: overview
@@ -34,9 +34,9 @@ If you want full programmatic control over validation, or need complex validatio
 
 - If the postal code must be a valid United States Zip code, you could call a Zip code Web service to validate the data entered by the user.
 
-The <xref:System.Windows.Forms.Control.Validating> event is supplied an object of type <xref:System.ComponentModel.CancelEventArgs>. If you determine that the control's data isn't valid, cancel the <xref:System.Windows.Forms.Control.Validating> event by setting this object's <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property to `true`. If you don't set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property, Windows Forms assumes that validation succeeded for that control and raises the <xref:System.Windows.Forms.Control.Validated> event.
+The <xref:System.Windows.Forms.Control.Validating> event is supplied an object of type <xref:System.ComponentModel.CancelEventArgs>. If you determine that the control's data isn't valid, cancel the <xref:System.Windows.Forms.Control.Validating> event by setting this object's <xref:System.ComponentModel.CancelEventArgs.Cancel*> property to `true`. If you don't set the <xref:System.ComponentModel.CancelEventArgs.Cancel*> property, Windows Forms assumes that validation succeeded for that control and raises the <xref:System.Windows.Forms.Control.Validated> event.
 
-For a code example that validates an email address in a <xref:System.Windows.Controls.TextBox>, see the <xref:System.Windows.Forms.Control.Validating> event reference.
+For a code example that validates an email address in a <xref:System.Windows.Forms.TextBox>, see the <xref:System.Windows.Forms.Control.Validating> event reference.
 
 ### Event-driven validation data-bound controls
 
@@ -55,21 +55,21 @@ So when does a control's data get validated? This is up to you, the developer. Y
 
 The implicit validation approach validates data as the user enters it. Validate the data by reading the keys as they're pressed, or more commonly whenever the user takes the input focus away from the control. This approach is useful when you want to give the user immediate feedback about the data as they're working.
 
-If you want to use implicit validation for a control, you must set that control's <xref:System.Windows.Forms.ContainerControl.AutoValidate%2A> property to <xref:System.Windows.Forms.AutoValidate.EnablePreventFocusChange> or <xref:System.Windows.Forms.AutoValidate.EnableAllowFocusChange>. If you cancel the <xref:System.Windows.Forms.Control.Validating> event, the behavior of the control will be determined by what value you assigned to <xref:System.Windows.Forms.ContainerControl.AutoValidate%2A>. If you assigned <xref:System.Windows.Forms.AutoValidate.EnablePreventFocusChange>, canceling the event prevents the <xref:System.Windows.Forms.Control.Validated> event from occurring. Input focus remains on the current control until the user changes the data to a valid format. If you assigned <xref:System.Windows.Forms.AutoValidate.EnableAllowFocusChange>, the <xref:System.Windows.Forms.Control.Validated> event won't occur when you cancel the event, but focus will still change to the next control.
+If you want to use implicit validation for a control, you must set that control's <xref:System.Windows.Forms.ContainerControl.AutoValidate*> property to <xref:System.Windows.Forms.AutoValidate.EnablePreventFocusChange> or <xref:System.Windows.Forms.AutoValidate.EnableAllowFocusChange>. If you cancel the <xref:System.Windows.Forms.Control.Validating> event, the behavior of the control will be determined by what value you assigned to <xref:System.Windows.Forms.ContainerControl.AutoValidate*>. If you assigned <xref:System.Windows.Forms.AutoValidate.EnablePreventFocusChange>, canceling the event prevents the <xref:System.Windows.Forms.Control.Validated> event from occurring. Input focus remains on the current control until the user changes the data to a valid format. If you assigned <xref:System.Windows.Forms.AutoValidate.EnableAllowFocusChange>, the <xref:System.Windows.Forms.Control.Validated> event won't occur when you cancel the event, but focus will still change to the next control.
 
-Assigning <xref:System.Windows.Forms.AutoValidate.Disable> to the <xref:System.Windows.Forms.ContainerControl.AutoValidate%2A> property prevents implicit validation altogether. To validate your controls, use explicit validation.
+Assigning <xref:System.Windows.Forms.AutoValidate.Disable> to the <xref:System.Windows.Forms.ContainerControl.AutoValidate*> property prevents implicit validation altogether. To validate your controls, use explicit validation.
 
 ### Explicit validation
 
 The explicit validation approach validates data at one time. You can validate the data in response to a user action, such as clicking a **Save** button or a **Next** link. When the user action occurs, you can trigger explicit validation in one of the following ways:
 
-- Call <xref:System.Windows.Forms.ContainerControl.Validate%2A> to validate the last control to have lost focus.
-- Call <xref:System.Windows.Forms.ContainerControl.ValidateChildren%2A> to validate all child controls in a form or container control.
+- Call <xref:System.Windows.Forms.ContainerControl.Validate*> to validate the last control to have lost focus.
+- Call <xref:System.Windows.Forms.ContainerControl.ValidateChildren*> to validate all child controls in a form or container control.
 - Call a custom method to validate the data in the controls manually.
 
 ### Default implicit validation behavior for controls
 
-Different Windows Forms controls have different defaults for their <xref:System.Windows.Forms.ContainerControl.AutoValidate%2A> property. The following table shows the most common controls and their defaults.
+Different Windows Forms controls have different defaults for their <xref:System.Windows.Forms.ContainerControl.AutoValidate*> property. The following table shows the most common controls and their defaults.
 
 | Control                                        | Default Validation Behavior                                     |
 |------------------------------------------------|-----------------------------------------------------------------|
@@ -86,9 +86,9 @@ When a control maintains focus because the data it contains is invalid, it's imp
 
 - By clicking the **Close** button.
 - By selecting the **System** > **Close** menu.
-- By calling the <xref:System.Windows.Forms.Form.Close%2A> method programmatically.
+- By calling the <xref:System.Windows.Forms.Form.Close*> method programmatically.
 
-However, in some cases, you might want to let the user close the form regardless of whether the values in the controls are valid. You can override validation and close a form that still contains invalid data by creating a handler for the form's <xref:System.Windows.Forms.Form.FormClosing> event. In the event, set the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property to `false`. This forces the form to close. For more information and an example, see <xref:System.Windows.Forms.Form.FormClosing?displayProperty=nameWithType>.
+However, in some cases, you might want to let the user close the form regardless of whether the values in the controls are valid. You can override validation and close a form that still contains invalid data by creating a handler for the form's <xref:System.Windows.Forms.Form.FormClosing> event. In the event, set the <xref:System.ComponentModel.CancelEventArgs.Cancel*> property to `false`. This forces the form to close. For more information and an example, see <xref:System.Windows.Forms.Form.FormClosing?displayProperty=nameWithType>.
 
 > [!NOTE]
 > If you force the form to close in this manner, unsaved data is lost. In addition, modal forms don't validate the contents of controls when they're closed. You can still use control validation to lock focus to a control, but you don't have to be concerned about the behavior associated with closing the form.

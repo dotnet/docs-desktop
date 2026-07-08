@@ -12,14 +12,14 @@ Partial Public Class Form1
     End Sub
 
     '<HandleKey>
-    ' Detect all numeric characters at the form level and consume 1,4, and 7.
+    ' Detect all numeric characters at the form level and consume 1, 4, and 7.
     ' Form.KeyPreview must be set to true for this event handler to be called.
     Private Sub Form1_KeyPress(sender As Object, e As KeyPressEventArgs)
-        If e.KeyChar >= Chr(48) And e.KeyChar <= Chr(57) Then
+        If Char.IsDigit(e.KeyChar) Then
             MessageBox.Show($"Form.KeyPress: '{e.KeyChar}' pressed.")
 
             Select Case e.KeyChar
-                Case Chr(49), Chr(52), Chr(55)
+                Case "1"c, "4"c, "7"c
                     MessageBox.Show($"Form.KeyPress: '{e.KeyChar}' consumed.")
                     e.Handled = True
             End Select
@@ -27,5 +27,18 @@ Partial Public Class Form1
 
     End Sub
     '</HandleKey>
+
+    ' <ProcessCmdKey>
+    Protected Overrides Function ProcessCmdKey(ByRef msg As Message, keyData As Keys) As Boolean
+        ' Intercept Ctrl+A for custom handling
+        If keyData = (Keys.Control Or Keys.A) Then
+            MessageBox.Show("Ctrl+A intercepted at form level")
+            Return True ' Mark as handled
+        End If
+
+        ' Pass other keys to the base handler
+        Return MyBase.ProcessCmdKey(msg, keyData)
+    End Function
+    ' </ProcessCmdKey>
 
 End Class
