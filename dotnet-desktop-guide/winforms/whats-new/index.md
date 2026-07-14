@@ -1,7 +1,7 @@
 ---
 title: What's new in Windows Forms
-description: Learn about what's new in Windows Forms. This article covers changes to Windows Forms from .NET 5 to .NET 11 Preview 5.
-ms.date: 06/09/2026
+description: Learn about what's new in Windows Forms. This article covers changes to Windows Forms from .NET 5 to .NET 11 Preview 6.
+ms.date: 07/14/2026
 ms.service: dotnet-desktop
 ms.update-cycle: 365-days
 ms.topic: whats-new
@@ -12,11 +12,11 @@ ai-usage: ai-assisted
 
 Each .NET release introduces a new version of Windows Forms (WinForms). This article gives you a summary of what's new in each release.
 
-## .NET 11 Preview 5
+## .NET 11 Preview
 
-This preview includes regression fixes for clipboard, ToolStrip, layout, designer, PropertyGrid, and dark mode scenarios.
+This preview includes a regression fix for ToolStripDropDown focus handling in SmartTag and dropdown scenarios, along with previous improvements for clipboard, ToolStrip, layout, designer, PropertyGrid, and dark mode.
 
-- [Overview of Windows Forms on .NET 11 Preview 5](net110.md)
+- [Overview of Windows Forms on .NET 11 Preview](net110.md)
 - [Clipboard](net110.md#clipboard)
 - [ToolStrip](net110.md#toolstrip)
 - [Layout](net110.md#layout)
