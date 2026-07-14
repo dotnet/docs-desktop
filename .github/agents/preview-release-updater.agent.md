@@ -77,7 +77,7 @@ Edit the chosen product's preview article with these exact changes:
    - `description`: keep generic to match — `Learn about what's new in {Windows Forms|Windows Presentation Foundation (WPF)} for .NET 11 {Preview|RC}.` (no specific preview/RC number).
    - `ms.date`: today's date in `MM/DD/YYYY`.
 2. **H1**: keep generic to match the title — `What's new in {Windows Forms|WPF} for .NET 11 {Preview|RC}` (no specific preview/RC number).
-3. **Released-in sentence**: update with the specific preview/RC number — `.NET 11 {Preview|RC} {N} was released in {Month} {Year}.` This is the ONLY place in the article body where the specific preview/RC number appears.
+3. **Released-in sentence**: update with the specific preview/RC number — `.NET 11 {Preview|RC} {N} was released in {Month} {Year}.`
 4. **Release announcements list**: add the new aka.ms link as the **first** bullet:
    - `- [.NET 11 Preview|RC {N}](https://aka.ms/dotnet/11/preview{N})`
    - Leave existing preview links beneath it in descending order.
