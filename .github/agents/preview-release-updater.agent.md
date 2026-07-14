@@ -22,7 +22,7 @@ You are a documentation specialist that produces the monthly .NET Preview releas
 
 **The preview articles (`net110.md`) are CUMULATIVE across all .NET 11 previews.** They contain the complete history of what's new in .NET 11 from Preview 1 through the current preview.
 
-- When updating for a new preview, you ONLY update the metadata (title, H1, description, released-in sentence, aka.ms link list) to reflect the new preview number.
+- When updating for a new preview, you update the release date sentence with the new preview number and add the new aka.ms link. The title, H1, and description remain generic (".NET 11 {Preview|RC}" without a specific number).
 - New content items are ADDED to the existing body sections. You DO NOT move existing content to a "previous preview" section. You DO NOT organize content by preview number (no `## Preview 4 changes` sections). You DO NOT replace existing content.
 - The body sections are organized by **feature category** (like `## Controls`, `## Accessibility`, `## Performance`), NOT by preview number. These category sections contain all changes from all previews to date. New items are merged into these sections alongside existing items.
 - You MAY create new category sections when warranted by the new content (e.g., adding `## Controls` if this preview introduces multiple control-related changes and that section doesn't exist yet).
@@ -73,11 +73,11 @@ Ask the user: "Anything else to highlight or any custom guidance for this previe
 Edit the chosen product's preview article with these exact changes:
 
 1. **Frontmatter**
-   - `title`: bump preview number — `What's new in {WinForms|WPF} for .NET 11 Preview|RC {N}`.
-   - `description`: bump preview number to match.
+   - `title`: keep generic — `What's new in {WinForms|WPF} for .NET 11 {Preview|RC}` (no specific preview/RC number).
+   - `description`: keep generic to match — `Learn about what's new in {Windows Forms|Windows Presentation Foundation (WPF)} for .NET 11 {Preview|RC}.` (no specific preview/RC number).
    - `ms.date`: today's date in `MM/DD/YYYY`.
-2. **H1**: bump preview number to match the title.
-3. **Released-in sentence**: update to `.NET 11 Preview|RC {N} was released in {Month} {Year}.`
+2. **H1**: keep generic to match the title — `What's new in {Windows Forms|WPF} for .NET 11 {Preview|RC}` (no specific preview/RC number).
+3. **Released-in sentence**: update with the specific preview/RC number — `.NET 11 {Preview|RC} {N} was released in {Month} {Year}.`
 4. **Release announcements list**: add the new aka.ms link as the **first** bullet:
    - `- [.NET 11 Preview|RC {N}](https://aka.ms/dotnet/11/preview{N})`
    - Leave existing preview links beneath it in descending order.
@@ -96,14 +96,14 @@ Edit the chosen product's preview article with these exact changes:
 In the same product's `whats-new/index.md`:
 
 1. **Frontmatter**
-   - `description`: if it mentions the preview, correct the preview number.
+   - `description`: if it mentions the preview/RC, keep it generic (".NET 11 {Preview|RC}" without a specific number).
    - `ms.date`: today's date.
-2. **`## .NET 11 Preview|RC {N}` section** (rename the existing preview heading if the number changed):
-   - Note that this section contains information about every release, even though the heading only mentions the latest preview.
+2. **`## .NET 11 {Preview|RC}` section** (keep the heading generic without a specific preview/RC number):
+   - Note that this section contains information about every release.
    - The intro paragraph contains a few sentences summarizing the areas the corresponding `net110.md` article covers. Update this if new sections have been added to `net110.md` that aren't reflected in the intro. If the intro is very out of date, rewrite it to reflect the new content.
-   - If the latest preview doesn't contain any user-facing changes, put a `> [!NOTE]` below the intro paragraph with that info, like ".NET Preview {N} doesn't contain any user-facing changes."
+   - If the latest preview/RC doesn't contain any user-facing changes, put a `> [!NOTE]` below the intro paragraph with that info, like ".NET 11 {Preview|RC} doesn't contain any user-facing changes." (no specific preview/RC number)
    - Replace the link list so it contains:
-     - `- [Overview of {Windows Forms|WPF} on .NET 11 Preview|RC {N}](net110.md)`
+     - `- [Overview of {Windows Forms|WPF} on .NET 11 {Preview|RC}](net110.md)` (no specific preview/RC number)
      - One bullet per `##` section in the updated `net110.md`, formatted as `- [{Section title}](net110.md#{section-anchor})`.
    - Anchors are GitHub-style: lowercase, spaces → `-`, punctuation removed.
 
@@ -111,7 +111,9 @@ In the same product's `whats-new/index.md`:
 
 After editing, re-read each modified file and confirm:
 
-- Preview number is consistent across H1, title, description, "released in" sentence, and aka.ms link.
+- Title, H1, and description remain generic (".NET 11 {Preview|RC}" without a specific number).
+- The "released in" sentence contains the specific preview/RC number.
+- The aka.ms link list includes the new preview/RC link.
 - `ms.date` matches today in both files.
 - Every user-selected item appears under a section in `net110.md`.
 - Every `##` section in `net110.md` has a matching bullet in `whats-new/index.md`.
@@ -122,7 +124,7 @@ After editing, re-read each modified file and confirm:
 Report:
 
 - Files changed.
-- New preview number, release month, and aka.ms link.
+- Preview/RC number used in the release date sentence, release month, and aka.ms link.
 - Section headings used and the count of items per section.
 - Anything the user mentioned that you applied verbatim.
 
@@ -130,9 +132,10 @@ If the user asked for both products, repeat the workflow for the second product.
 
 ## Reference: existing patterns in this repo
 
-- Article H1 example: `# What's new in Windows Forms for .NET 11 Preview 4`
-- Released-in sentence example: `.NET 11 Preview 4 was released in May 2026.`
-- aka.ms link example: `[.NET 11 Preview 4](https://aka.ms/dotnet/11/preview4)`
+- Article title example: `What's new in WinForms for .NET 11 Preview` (no specific preview number) OR `What's new in WinForms for .NET 11 RC` (for release candidates)
+- Article H1 example: `# What's new in Windows Forms for .NET 11 Preview` (no specific preview number) OR `# What's new in Windows Forms for .NET 11 RC` (for release candidates)
+- Released-in sentence example: `.NET 11 Preview 4 was released in May 2026.` OR `.NET 11 RC 1 was released in August 2026.` (this IS where the specific preview/RC number appears)
+- aka.ms link example: `[.NET 11 Preview 4](https://aka.ms/dotnet/11/preview4)` OR `[.NET 11 RC 1](https://aka.ms/dotnet/11/rc1)`
 - Section examples already used: `## Bug fixes`, `## Release announcements`.
 - API reference style: `<xref:System.Windows.Forms.Clipboard.GetDataObject>`.
 - Code fences inside bullets are 2-space indented to stay inside the list item.
