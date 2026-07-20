@@ -107,8 +107,6 @@ In some situations, it is possible for shared code in library assemblies to be u
 
 :::code language="csharp" source="./snippets/wpf-partial-trust-security/csharp/FileHandling.cs" id="DetectPermissions":::
 :::code language="vb" source="./snippets/wpf-partial-trust-security/vb/FileHandling.vb" id="DetectPermissions":::
-:::code language="csharp" source="./snippets/wpf-partial-trust-security/csharp/FileHandling.cs" id="DetectPermissionsEnd":::
-:::code language="vb" source="./snippets/wpf-partial-trust-security/vb/FileHandling.vb" id="DetectPermissionsEnd":::
 
 If an application does not have the desired permission, the call to <xref:System.Security.CodeAccessPermission.Demand%2A> will throw a security exception. Otherwise, the permission has been granted. `IsPermissionGranted` encapsulates this behavior and returns `true` or `false` as appropriate.
 
@@ -120,8 +118,6 @@ Being able to detect whether code has the permission to do what it needs to do i
 
 :::code language="csharp" source="./snippets/wpf-partial-trust-security/csharp/FileHandlingGraceful.cs" id="GracefulDegradation":::
 :::code language="vb" source="./snippets/wpf-partial-trust-security/vb/FileHandlingGraceful.vb" id="GracefulDegradation":::
-:::code language="csharp" source="./snippets/wpf-partial-trust-security/csharp/FileHandlingGraceful.cs" id="GracefulDegradationEnd":::
-:::code language="vb" source="./snippets/wpf-partial-trust-security/vb/FileHandlingGraceful.vb" id="GracefulDegradationEnd":::
 
 In many cases, you should be able to find a partial trust alternative.
 

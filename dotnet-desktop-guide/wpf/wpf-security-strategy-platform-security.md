@@ -141,8 +141,7 @@ The restrictions of the Internet zone security sandbox apply equally to any code
 
 Consider an XBAP application that includes the following page:
 
-:::code language="csharp" source="./snippets/wpf-security-strategy-platform-security/csharp/Page1.xaml.cs" id="PermissionAssert":::
-:::code language="vb" source="./snippets/wpf-security-strategy-platform-security/vb/Page1.xaml.vb" id="PermissionAssert":::
+:::code language="csharp" source="./snippets/wpf-security-strategy-platform-security/csharp/Page1.xaml":::
 
 To execute this XBAP, the underlying WPF code must execute more functionality than is available to the calling XBAP, including:
 

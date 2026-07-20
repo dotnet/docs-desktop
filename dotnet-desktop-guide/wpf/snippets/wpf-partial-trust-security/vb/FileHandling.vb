@@ -1,5 +1,4 @@
 ' <DetectPermissions>
-
 Imports System.IO
 Imports System.IO.IsolatedStorage
 Imports System.Security
@@ -31,9 +30,6 @@ Namespace SDKSample
 				Return False
 			End Try
 		End Function
-
-		' </DetectPermissions>
-		' <DetectPermissionsEnd>
 	End Class
 End Namespace
-' </DetectPermissionsEnd>
+' </DetectPermissions>

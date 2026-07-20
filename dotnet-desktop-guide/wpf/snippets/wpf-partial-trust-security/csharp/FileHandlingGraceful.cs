@@ -48,9 +48,6 @@ namespace SDKSample
                 return false;
             }
         }
-
-        // </GracefulDegradation>
-        // <GracefulDegradationEnd>
     }
 }
-// </GracefulDegradationEnd>
+// </GracefulDegradation>

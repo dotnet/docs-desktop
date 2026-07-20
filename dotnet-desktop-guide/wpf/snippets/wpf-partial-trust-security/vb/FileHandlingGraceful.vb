@@ -1,5 +1,4 @@
 ' <GracefulDegradation>
-
 Imports System.IO
 Imports System.IO.IsolatedStorage
 Imports System.Security
@@ -38,9 +37,6 @@ Namespace SDKSample
 				Return False
 			End Try
 		End Function
-
-		' </GracefulDegradation>
-		' <GracefulDegradationEnd>
 	End Class
 End Namespace
-' </GracefulDegradationEnd>
+' </GracefulDegradation>

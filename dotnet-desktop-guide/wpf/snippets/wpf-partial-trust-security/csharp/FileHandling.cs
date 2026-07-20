@@ -40,9 +40,6 @@ namespace SDKSample
                 return false;
             }
         }
-
-        // </DetectPermissions>
-        // <DetectPermissionsEnd>
     }
 }
-// </DetectPermissionsEnd>
+// </DetectPermissions>
