@@ -39,6 +39,8 @@ This topic contains the following sections:
 
 - [Disabling APTCA Assemblies for Partially Trusted Client Applications](#APTCA)
 
+- [Loading Untrusted XAML, BAML, and XPS Content](#LoadingUntrustedMarkup)
+
 - [Sandbox Behavior for Loose XAML Files](#LooseContentSandboxing)
 
 - [Resources for Developing WPF Applications that Promote Security](#BestPractices)
@@ -257,6 +259,23 @@ If an assembly has to be disabled for partially trusted client applications, you
 > [!NOTE]
 > Core .NET Framework assemblies are not affected by disabling them in this way because they are required for managed applications to run. Support for disabling APTCA assemblies is primarily targeted to third-party applications.
 
+<a name="LoadingUntrustedMarkup"></a>
+
+## Loading Untrusted XAML, BAML, and XPS Content
+
+WPF exposes several APIs that turn markup into live objects. Because XAML directly represents object instantiation and code execution, loading markup from a source you don't control is equivalent to running untrusted code. The application, not the parser, owns the trust decision about the markup it loads. For the general principles, see [XAML security considerations](../xaml-services/security-considerations.md).
+
+The following guidance applies to WPF:
+
+- **Text XAML.** <xref:System.Windows.Markup.XamlReader.Load%2A> and <xref:System.Windows.Markup.XamlReader.Parse%2A> instantiate arbitrary types and set their properties. Don't load XAML from an untrusted stream, string, file, or network location in your application's process. If you must process untrusted markup, isolate the load in a low-privilege boundary, such as a separate process, and treat the result as untrusted.
+
+- **Binary XAML (BAML).** BAML is a compiled, tokenized form of XAML that has the same object-construction capabilities as text XAML. BAML is designed to be loaded only from your application's own compiled resources (for example, through <xref:System.Windows.Baml2006.Baml2006Reader>). Treat BAML as trusted only when it originates from a compiled, signed assembly that you produced. Don't load BAML from untrusted streams, files, or documents.
+
+- **XPS and fixed documents.** Document types such as <xref:System.Windows.Xps.Packaging.XpsDocument>, <xref:System.Windows.Documents.DocumentReference>, and <xref:System.Windows.Documents.PageContent> can reference parts that are loaded as XAML or BAML. Treat an XPS package or fixed document from an untrusted source as untrusted input, and load it in an isolated boundary.
+
+> [!IMPORTANT]
+> A restrictive or allow-list loading mode is a defense-in-depth hardening measure, not a security sandbox. It blocks a set of known-dangerous types, but it still allows many built-in types, some of which can have side effects such as loading external resources or initiating network requests. Don't treat a restrictive parse of untrusted markup as safe. Continue to isolate untrusted markup in a low-privilege boundary.
+
 <a name="LooseContentSandboxing"></a>
 
 ## Sandbox Behavior for Loose XAML Files
@@ -298,3 +317,4 @@ The following are some additional resources to help develop WPF applications tha
 - [Code Access Security](/dotnet/framework/misc/code-access-security)
 - [ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment)
 - [XAML in WPF](xaml/index.md)
+- [XAML security considerations](../xaml-services/security-considerations.md)

@@ -23,6 +23,20 @@ The nature of XAML capabilities gives the XAML the right to construct objects an
 
 In addition to its language-level capabilities, XAML is used for UI definition in many technologies. Loading untrusted XAML might mean loading a malicious spoofing UI.
 
+> [!IMPORTANT]
+> There's no supported way to safely load fully untrusted XAML in-process. XAML loading APIs, such as <xref:System.Xaml.XamlServices.Load%2A> and <xref:System.Xaml.XamlServices.Parse%2A>, instantiate arbitrary types and set their properties, which is equivalent to running arbitrary code. The application, not the parser, owns the trust decision about the markup it loads. If the markup can be influenced by an attacker, isolate the load in a low-privilege boundary, such as a separate process or sandbox, and don't rely on the parser to make it safe.
+
+### Compiled and binary forms of XAML
+
+Some technologies compile XAML into a binary or tokenized form that's loaded at run time. A binary form of XAML has the same object-construction capabilities as the equivalent text XAML, so it carries the same trust considerations. Treat a binary XAML source as trusted only when it originates from a compiled, signed assembly or resource that you produced. Don't load a binary XAML source that comes from an untrusted stream, file, or document, and be aware that a container format might embed such content as one of its parts.
+
+### Restrictive readers are a hardening measure, not a sandbox
+
+A loading path might offer a restrictive or allow-list reader that blocks a set of known-dangerous types. This kind of reader is a useful defense-in-depth hardening step, but it isn't a security sandbox. A restrictive reader can still allow many built-in types, including types that have side effects such as reaching out to network resources. Don't treat a restrictive parse of untrusted markup as safe. Continue to isolate untrusted markup in a low-privilege boundary.
+
+> [!NOTE]
+> Individual frameworks build on .NET XAML Services and add their own loaders, binary XAML formats, and document containers. For framework-specific guidance about loading untrusted markup in Windows Presentation Foundation (WPF), see [Security (WPF)](../wpf/security-wpf.md).
+
 ## Sharing Context Between Readers and Writers
 
 .NET XAML Services architecture for XAML readers and XAML writers often requires sharing a XAML reader to a XAML writer, or a shared XAML schema context. Sharing objects or contexts might be required if you are writing XAML node loop logic, or providing a custom save path. Don't share XAML reader instances, nondefault XAML schema context, or settings for XAML reader/writer classes between trusted and untrusted code.
