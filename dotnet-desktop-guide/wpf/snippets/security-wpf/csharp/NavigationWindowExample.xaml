@@ -1,0 +1,7 @@
+<!-- <SandboxNavigationWindow> -->
+<NavigationWindow
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    Source="ExternalContentPage.xaml"
+    SandboxExternalContent="True">
+</NavigationWindow>
+<!-- </SandboxNavigationWindow> -->

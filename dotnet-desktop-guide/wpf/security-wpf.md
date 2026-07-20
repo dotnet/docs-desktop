@@ -284,11 +284,13 @@ Loose XAML files are markup-only XAML files that do not depend on any code-behin
 
 However, the security behavior is different when loose XAML files are navigated to from either a <xref:System.Windows.Navigation.NavigationWindow> or <xref:System.Windows.Controls.Frame> in a standalone application.
 
-In both cases, the loose XAML file that is navigated to inherits the permissions of its host application. However, this behavior may be undesirable from a security perspective, particularly if a loose XAML file was produced by an entity that is either not trusted or unknown. This type of content is known as *external content*, and both <xref:System.Windows.Controls.Frame> and <xref:System.Windows.Navigation.NavigationWindow> can be configured to isolate it when navigated to. Isolation is achieved by setting the **SandboxExternalContent** property to true, as shown in the following examples for <xref:System.Windows.Controls.Frame> and <xref:System.Windows.Navigation.NavigationWindow>:
+In both cases, the loose XAML file that is navigated to inherits the permissions of its host application. However, this behavior may be undesirable from a security perspective, particularly if a loose XAML file was produced by an entity that is either not trusted or unknown. This type of content is known as *external content*, and both <xref:System.Windows.Controls.Frame> and <xref:System.Windows.Navigation.NavigationWindow> can be configured to isolate it when navigated to. Isolation is achieved by setting the **SandboxExternalContent** property to `true`. The following example shows how to configure a <xref:System.Windows.Controls.Frame>:
 
-[!code-xaml[SecurityOverviewSnippets#FrameMARKUP](~/samples/snippets/csharp/VS_Snippets_Wpf/SecurityOverviewSnippets/CS/Window2.xaml#framemarkup)]
+:::code language="xaml" source="./snippets/security-wpf/csharp/MainWindow.xaml" id="SandboxFrame":::
 
-[!code-xaml[SecurityOverviewSnippets#NavigationWindowMARKUP](~/samples/snippets/csharp/VS_Snippets_Wpf/SecurityOverviewSnippets/CS/Window1.xaml#navigationwindowmarkup)]
+The same isolation applies when using <xref:System.Windows.Navigation.NavigationWindow>:
+
+:::code language="xaml" source="./snippets/security-wpf/csharp/NavigationWindowExample.xaml" id="SandboxNavigationWindow":::
 
 With this setting, external content will be loaded into a process that is separate from the process that is hosting the application. This process is restricted to the default Internet zone permission set, effectively isolating it from the hosting application and the client computer.
 

@@ -141,8 +141,8 @@ The restrictions of the Internet zone security sandbox apply equally to any code
 
 Consider an XBAP application that includes the following page:
 
-[!code-csharp[WPFPlatformSecuritySnippets#Permission](~/samples/snippets/csharp/VS_Snippets_Wpf/WPFPlatformSecuritySnippets/CSharp/Page1.xaml.cs#permission)]
-[!code-vb[WPFPlatformSecuritySnippets#Permission](~/samples/snippets/visualbasic/VS_Snippets_Wpf/WPFPlatformSecuritySnippets/VisualBasic/Page1.xaml.vb#permission)]
+:::code language="csharp" source="./snippets/wpf-security-strategy-platform-security/csharp/Page1.xaml.cs" id="PermissionAssert":::
+:::code language="vb" source="./snippets/wpf-security-strategy-platform-security/vb/Page1.xaml.vb" id="PermissionAssert":::
 
 To execute this XBAP, the underlying WPF code must execute more functionality than is available to the calling XBAP, including:
 
@@ -160,8 +160,8 @@ This requires that WPF receives elevated privileges while preventing those privi
 
 WPF does this by using the **Assert** method of a permission. The following code shows how this happens.
 
-[!code-csharp[WPFPlatformSecuritySnippets#Permission](~/samples/snippets/csharp/VS_Snippets_Wpf/WPFPlatformSecuritySnippets/CSharp/Page1.xaml.cs#permission)]
-[!code-vb[WPFPlatformSecuritySnippets#Permission](~/samples/snippets/visualbasic/VS_Snippets_Wpf/WPFPlatformSecuritySnippets/VisualBasic/Page1.xaml.vb#permission)]
+:::code language="csharp" source="./snippets/wpf-security-strategy-platform-security/csharp/Page1.xaml.cs" id="PermissionAssert":::
+:::code language="vb" source="./snippets/wpf-security-strategy-platform-security/vb/Page1.xaml.vb" id="PermissionAssert":::
 
 The **Assert** essentially prevents the unlimited permissions required by WPF from being restricted by the Internet zone permissions of the XBAP.
 
