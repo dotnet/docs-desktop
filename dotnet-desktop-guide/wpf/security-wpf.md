@@ -271,7 +271,7 @@ The following guidance applies to WPF:
 
 - **Binary XAML (BAML).** BAML is a compiled, tokenized form of XAML that has the same object-construction capabilities as text XAML. BAML is designed to be loaded only from your application's own compiled resources (for example, through <xref:System.Windows.Baml2006.Baml2006Reader>). Treat BAML as trusted only when it originates from a compiled, signed assembly that you produced. Don't load BAML from untrusted streams, files, or documents.
 
-- **XPS and fixed documents.** Document containers such as <xref:System.Windows.Xps.Packaging.XpsDocument>, <xref:System.Windows.Documents.DocumentReference>, and <xref:System.Windows.Documents.PageContent> can reference parts that are loaded as XAML or BAML. Treat an XPS package or fixed document from an untrusted source as untrusted input, and load it in an isolated boundary.
+- **XPS and fixed documents.** Document types such as <xref:System.Windows.Xps.Packaging.XpsDocument>, <xref:System.Windows.Documents.DocumentReference>, and <xref:System.Windows.Documents.PageContent> can reference parts that are loaded as XAML or BAML. Treat an XPS package or fixed document from an untrusted source as untrusted input, and load it in an isolated boundary.
 
 > [!IMPORTANT]
 > A restrictive or allow-list loading mode is a defense-in-depth hardening measure, not a security sandbox. It blocks a set of known-dangerous types, but it still allows many built-in types, some of which can have side effects such as loading external resources or initiating network requests. Don't treat a restrictive parse of untrusted markup as safe. Continue to isolate untrusted markup in a low-privilege boundary.
