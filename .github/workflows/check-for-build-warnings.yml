@@ -1,6 +1,6 @@
 name: 'OPS status checker'
 
-on: 
+on:
   pull_request_target:
     types: [opened, synchronize, reopened]
 
@@ -20,9 +20,6 @@ jobs:
       with:
         egress-policy: audit
 
-    - uses: dotnet/docs-tools/actions/status-checker@5e8bcc78465d45a7544bba56509a1a69922b6a5a # main
+    - uses: dotnet/docs-tools/actions/status-checker@455480c2e1c2fa90ecb711963250f000d66d3251 # main
       with:
         repo_token: ${{ secrets.GITHUB_TOKEN }}
-        docs_path: "dotnet-desktop-guide"
-        url_base_path: "dotnet/desktop"
-        opaque_leading_url_segments: "framework:view=netframeworkdesktop-4.8,net:view=netdesktop-7.0,net:view=netdesktop-8.0,net:view=netdesktop-9.0"
