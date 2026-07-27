@@ -12,14 +12,14 @@ jobs:
     name: Look for build warnings
     runs-on: ubuntu-latest
     permissions:
-        statuses: read
-        pull-requests: write
+      statuses: read
+      pull-requests: write
     steps:
-    - name: Harden Runner
-      uses: step-security/harden-runner@91182cccc01eb5e619899d80e4e971d6181294a7 # v2.10.1
-      with:
-        egress-policy: audit
+      - name: Harden Runner
+        uses: step-security/harden-runner@91182cccc01eb5e619899d80e4e971d6181294a7 # v2.10.1
+        with:
+          egress-policy: audit
 
-    - uses: dotnet/docs-tools/actions/status-checker@455480c2e1c2fa90ecb711963250f000d66d3251 # main
-      with:
-        repo_token: ${{ secrets.GITHUB_TOKEN }}
+      - uses: dotnet/docs-tools/actions/status-checker@455480c2e1c2fa90ecb711963250f000d66d3251 # main
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
