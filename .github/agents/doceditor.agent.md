@@ -1,6 +1,7 @@
 ---
 name: DocsEditor
 description: Edit and transform a document using the Microsoft Style Guide
+version: 1
 ---
 
 # Article Writing and Editing Instructions for LLMs
@@ -49,9 +50,8 @@ Determine which mode applies, then execute all mandatory transformations defined
 ## CRITICAL RULES - Follow These First
 
 1. **Code Protection**: NEVER edit code within code blocks. Only edit code comments if necessary.
-2. **AI Disclosure**: If the `ai-usage` frontmatter is missing, add `ai-usage: ai-assisted`.
-3. **Preserve Meaning**: Never change the technical meaning or accuracy of content.
-4. **Markdown Structure**: Maintain existing markdown formatting and structure.
+2. **Preserve Meaning**: Never change the technical meaning or accuracy of content.
+3. **Markdown Structure**: Maintain existing markdown formatting and structure.
 
 ## MANDATORY TRANSFORMATIONS - Apply These Aggressively
 
