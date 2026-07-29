@@ -14,16 +14,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Harden Runner
-        uses: step-security/harden-runner@e3f713f2d8f53843e71c69a996d56f51aa9adfb9 # v2.14.1
+        uses: step-security/harden-runner@bf7454d06d71f1098171f2acdf0cd4708d7b5920 # v2.20.0
         with:
           egress-policy: audit
 
       - name: Checkout the repository
-        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
-
-      - name: Hide .github folder from validate
-        run: |
-          rm -rf "${{ github.workspace }}/.github"
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
 
       - name: Validate
-        uses: dotnet/docs-actions/actions/docs-verifier@5e8bcc78465d45a7544bba56509a1a69922b6a5a # main
+        uses: dotnet/docs-tools/actions/docs-verifier@1397e452fa0b49e9e52bc2443cd9ec6182a05294 # main
