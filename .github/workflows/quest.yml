@@ -50,7 +50,7 @@ jobs:
           tenant-id: ${{ secrets.TENANT_ID }}
           audience: ${{ secrets.OSMP_API_AUDIENCE }}
 
-      - name: Azure DevOps OpenID Connect for manual test runs
+      - name: Azure DevOps OpenID Connect
         id: azure-devops-oidc-auth
         uses: dotnet/docs-tools/.github/actions/oidc-auth-flow@main
         with:
