@@ -1,7 +1,7 @@
 ---
 title: What's new in Windows Forms
-description: Learn about what's new in Windows Forms. This article covers changes to Windows Forms from .NET 5 to .NET 11 Preview 6.
-ms.date: 07/14/2026
+description: Learn about what's new in Windows Forms. This article covers changes to Windows Forms from .NET 5 to .NET 11 Preview 7.
+ms.date: 08/11/2026
 ms.service: dotnet-desktop
 ms.update-cycle: 365-days
 ms.topic: whats-new
@@ -14,15 +14,21 @@ Each .NET release introduces a new version of Windows Forms (WinForms). This art
 
 ## .NET 11 Preview
 
-This preview includes a regression fix for ToolStripDropDown focus handling in SmartTag and dropdown scenarios, along with previous improvements for clipboard, ToolStrip, layout, designer, PropertyGrid, and dark mode.
+WinForms in .NET 11 Preview includes visual styles updates, system settings integration, performance improvements for bulk operations, and numerous bug fixes.
 
 - [Overview of Windows Forms on .NET 11 Preview](net110.md)
+- [Visual styles and appearance](net110.md#visual-styles-and-appearance)
+- [React to system visual settings](net110.md#react-to-system-visual-settings)
+- [Deferred form reveal](net110.md#deferred-form-reveal)
+- [Suspend painting during bulk mutations](net110.md#suspend-painting-during-bulk-mutations)
+- [Toggle-switch appearance for CheckBox and RadioButton](net110.md#toggle-switch-appearance-for-checkbox-and-radiobutton)
 - [Clipboard](net110.md#clipboard)
 - [ToolStrip](net110.md#toolstrip)
 - [Layout](net110.md#layout)
 - [Designer](net110.md#designer)
 - [PropertyGrid](net110.md#propertygrid)
 - [Dark mode](net110.md#dark-mode)
+- [Bug fixes](net110.md#bug-fixes)
 
 ## .NET 10
 

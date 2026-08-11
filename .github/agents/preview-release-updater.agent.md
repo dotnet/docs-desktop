@@ -2,7 +2,7 @@
 name: PreviewReleaseUpdater
 description: "Use when updating the monthly .NET Preview release notes for Windows Forms or WPF. Triggers: monthly preview update, .NET 11 preview, what's new preview, net110.md, preview release notes, bump preview number, new preview release."
 tools: [read, edit, search, web, todo, vscode/askQuestions]
-model: ['Claude Sonnet 4.5 (copilot)']
+model: ['Claude Haiku 4.5 (copilot)']
 version: 1
 ---
 
@@ -100,9 +100,10 @@ In the same product's `whats-new/index.md`:
    - `description`: if it mentions the preview/RC, keep it generic (".NET 11 {Preview|RC}" without a specific number).
    - `ms.date`: today's date.
 2. **`## .NET 11 {Preview|RC}` section** (keep the heading generic without a specific preview/RC number):
-   - Note that this section contains information about every release.
+   - This section contains information about every release.
    - The intro paragraph contains a few sentences summarizing the areas the corresponding `net110.md` article covers. Update this if new sections have been added to `net110.md` that aren't reflected in the intro. If the intro is very out of date, rewrite it to reflect the new content.
-   - If the latest preview/RC doesn't contain any user-facing changes, put a `> [!NOTE]` below the intro paragraph with that info, like ".NET 11 {Preview|RC} doesn't contain any user-facing changes." (no specific preview/RC number)
+   - The intro paragraph shouldn't be updated to only list what's new in the current preview. It should summarize all cumulative content in `net110.md` to date.
+   - The intro paragraph should be short and high-level.
    - Replace the link list so it contains:
      - `- [Overview of {Windows Forms|WPF} on .NET 11 {Preview|RC}](net110.md)` (no specific preview/RC number)
      - One bullet per `##` section in the updated `net110.md`, formatted as `- [{Section title}](net110.md#{section-anchor})`.
