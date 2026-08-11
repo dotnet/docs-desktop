@@ -14,7 +14,7 @@ Each .NET release introduces a new version of Windows Forms (WinForms). This art
 
 ## .NET 11 Preview
 
-This preview introduces a refreshed visual styles rendering pipeline with application- and control-level opt-in, system visual settings integration, deferred form reveal to avoid unstyled flashes, suspend painting for efficient bulk mutations, and toggle-switch appearance for modern checkbox controls. It also includes bug fixes across controls, ToolStrip, PropertyGrid, and dark mode areas.
+WinForms in .NET 11 Preview includes visual styles updates, system settings integration, performance improvements for bulk operations, and numerous bug fixes.
 
 - [Overview of Windows Forms on .NET 11 Preview](net110.md)
 - [Visual styles and appearance](net110.md#visual-styles-and-appearance)
