@@ -281,7 +281,7 @@ With this setting, external content will be loaded into a process that is separa
 
 ### Restrictive XAML reader mode
 
-WPF uses the `useRestrictiveXamlReader` mode in some infrastructure loading paths to restrict the instantiation of potentially dangerous types. This mode runs in the caller's process. However, unlike `SandboxExternalContent`, it doesn't create a low-privilege security boundary.
+You might encounter the `useRestrictiveXamlReader` mode in some WPF infrastructure loading paths. It restricts the instantiation of potentially dangerous types, but it still runs in your process and doesn't create a low-privilege security boundary like **SandboxExternalContent** does.
 
 > [!IMPORTANT]
 > A restrictive or allow-list loading mode is a defense-in-depth hardening measure, not a security sandbox. It blocks a set of known-dangerous types, but it still allows many built-in types, some of which can have side effects such as loading external resources or initiating network requests. Don't treat a restrictive parse of untrusted markup as safe. Continue to isolate untrusted markup in a low-privilege boundary.
