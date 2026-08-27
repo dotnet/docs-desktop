@@ -31,18 +31,19 @@ This topic discusses the security model for Windows Presentation Foundation (WPF
 
 This topic contains the following sections:
 
-- [Security (WPF)](#security-wpf)
-  - [Safe Navigation](#safe-navigation)
-    - [Application Navigation Security](#application-navigation-security)
-    - [Browser Navigation Security](#browser-navigation-security)
-  - [Web Browsing Software Security Settings](#web-browsing-software-security-settings)
-    - [Security-related WPF Registry Settings](#security-related-wpf-registry-settings)
-  - [WebBrowser Control and Feature Controls](#webbrowser-control-and-feature-controls)
-  - [Disabling APTCA Assemblies for Partially Trusted Client Applications](#disabling-aptca-assemblies-for-partially-trusted-client-applications)
-  - [Sandbox Behavior for Loose XAML Files](#sandbox-behavior-for-loose-xaml-files)
-    - [Restrictive XAML reader mode](#restrictive-xaml-reader-mode)
-  - [Resources for Developing WPF Applications that Promote Security](#resources-for-developing-wpf-applications-that-promote-security)
-  - [See also](#see-also)
+- [Safe Navigation](#SafeTopLevelNavigation)
+
+- [Web Browsing Software Security Settings](#InternetExplorerSecuritySettings)
+
+- [WebBrowser Control and Feature Controls](#webbrowser_control_and_feature_controls)
+
+- [Disabling APTCA Assemblies for Partially Trusted Client Applications](#APTCA)
+
+- [Loading Untrusted XAML, BAML, and XPS Content](#LoadingUntrustedMarkup)
+
+- [Sandbox Behavior for Loose XAML Files](#LooseContentSandboxing)
+
+- [Resources for Developing WPF Applications that Promote Security](#BestPractices)
 
 <a name="SafeTopLevelNavigation"></a>
 
