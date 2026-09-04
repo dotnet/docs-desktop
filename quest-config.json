@@ -11,6 +11,18 @@
         {
             "Label": "okr-curation",
             "Tag": "content-curation"
+        },
+        {
+            "Label": ":sparkler: Highlight :sparkler:",
+            "Tag": "Highlight-$FullMonthText$"
+        },
+        {
+            "Label": ":mag_right: AISDLC :mag:",
+            "Tag": "SP-AISDLC"
+        },
+        {
+            "Label": ":mag_right: AIPlatform :mag:",
+            "Tag": "SP-AIPlatform"
         }
     ]
 }
