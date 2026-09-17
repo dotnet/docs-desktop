@@ -1,7 +1,7 @@
 ---
 title: What's new in Windows Forms
-description: Learn about what's new in Windows Forms. This article covers changes to Windows Forms from .NET 5 to .NET 11 Preview 7.
-ms.date: 08/11/2026
+description: Learn about what's new in Windows Forms. This article covers changes to Windows Forms from .NET 5 to .NET 11 RC 1.
+ms.date: 09/17/2026
 ms.service: dotnet-desktop
 ms.update-cycle: 365-days
 ms.topic: whats-new
@@ -12,12 +12,13 @@ ai-usage: ai-assisted
 
 Each .NET release introduces a new version of Windows Forms (WinForms). This article gives you a summary of what's new in each release.
 
-## .NET 11 Preview
+## .NET 11 RC 1
 
-WinForms in .NET 11 Preview includes visual styles updates, system settings integration, performance improvements for bulk operations, and numerous bug fixes.
+WinForms in .NET 11 includes visual styles updates, system settings integration, bulk-operation performance improvements, kiosk-mode support, and a broad set of dark-mode, rendering, and input fixes.
 
-- [Overview of Windows Forms on .NET 11 Preview](net110.md)
+- [Overview of Windows Forms on .NET 11 RC 1](net110.md)
 - [Visual styles and appearance](net110.md#visual-styles-and-appearance)
+- [Kiosk mode](net110.md#kiosk-mode)
 - [React to system visual settings](net110.md#react-to-system-visual-settings)
 - [Deferred form reveal](net110.md#deferred-form-reveal)
 - [Suspend painting during bulk mutations](net110.md#suspend-painting-during-bulk-mutations)
@@ -28,6 +29,7 @@ WinForms in .NET 11 Preview includes visual styles updates, system settings inte
 - [Designer](net110.md#designer)
 - [PropertyGrid](net110.md#propertygrid)
 - [Dark mode](net110.md#dark-mode)
+- [Breaking changes](net110.md#breaking-changes)
 - [Bug fixes](net110.md#bug-fixes)
 
 ## .NET 10
