@@ -1,4 +1,4 @@
-name: 'OPS status checker'
+name: 'OPS build reporter'
 
 on:
   pull_request_target:
@@ -8,11 +8,12 @@ permissions:
   contents: read
 
 jobs:
-  status_checker_job:
-    name: Look for build warnings
+  ops_build_reporter_job:
+    name: Add preview links and annotate files
     runs-on: ubuntu-latest
     permissions:
       statuses: read
+      checks: write
       pull-requests: write
     steps:
       - name: Harden Runner
@@ -20,6 +21,7 @@ jobs:
         with:
           egress-policy: audit
 
-      - uses: dotnet/docs-actions/status-checker@cdb3719bab6025f7621b04044094048f597b1ae0 # main
+      - uses: dotnet/docs-actions/ops-build-reporter@cdb3719bab6025f7621b04044094048f597b1ae0 # main
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
+          annotate_file_warnings: true
