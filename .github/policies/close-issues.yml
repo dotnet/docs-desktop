@@ -34,6 +34,7 @@ configuration:
             then:
               - removeLabel:
                   label: needs-more-info
+            triggerOnOwnActions: true
               
           - description: Close issues labeled 'code-of-conduct'
             if:
@@ -42,4 +43,5 @@ configuration:
                   label: code-of-conduct
             then:
               - closeIssue
-              - removeLabel: ':watch: Not Triaged'
+              - removeLabel:
+                  label: ':watch: Not Triaged'

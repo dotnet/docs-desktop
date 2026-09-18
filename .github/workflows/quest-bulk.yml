@@ -3,6 +3,7 @@ on:
   schedule:
     - cron: '0 9 1-5,7-31 * *' # UTC time, that's 4:00 am EST, 1:00 am PST.
     - cron: '0 9 6 * *'  # This is the morning of the 6th.
+
   workflow_dispatch:
     inputs:
       reason:
@@ -27,7 +28,7 @@ jobs:
     if: ${{ github.repository_owner == 'dotnet' }}
     steps:
       - name: Harden Runner
-        uses: step-security/harden-runner@91182cccc01eb5e619899d80e4e971d6181294a7 # v2.10.1
+        uses: step-security/harden-runner@e14015d583714f6e62063499dc959a02595150a1 # v2.21.1
         with:
           egress-policy: audit
 
@@ -45,7 +46,6 @@ jobs:
           client-id: ${{ secrets.CLIENT_ID }}
           tenant-id: ${{ secrets.TENANT_ID }}
           audience: ${{ secrets.OSMP_API_AUDIENCE }}
-
 
       - name: Azure DevOps OpenID Connect
         id: azure-devops-oidc-auth
