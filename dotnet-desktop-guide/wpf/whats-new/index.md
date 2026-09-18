@@ -1,7 +1,7 @@
 ---
 title: What's new in Windows Presentation Foundation
-description: Learn about what's new in Windows Presentation Foundation (WPF). This article covers changes to WPF from .NET 7 to .NET 11 Preview 7.
-ms.date: 08/11/2026
+description: Learn about what's new in Windows Presentation Foundation (WPF). This article covers changes to WPF from .NET 7 to .NET 11 RC 1.
+ms.date: 09/17/2026
 ms.service: dotnet-desktop
 ms.update-cycle: 365-days
 ms.topic: whats-new
@@ -12,11 +12,12 @@ ai-usage: ai-assisted
 
 Each .NET release introduces a new version of Windows Presentation Foundation (WPF). This article gives you a summary of what's new in each release.
 
-## .NET 11 Preview
+## .NET 11 RC 1
 
-.NET 11 Previews have fixed various bugs related to the Desktop Window Manager and Fluent theme.
+.NET 11 fixes various bugs related to mixed-mode assemblies, the Desktop Window Manager, the Fluent theme, and weak events.
 
-- [Overview of WPF on .NET 11 Preview](net110.md)
+- [Overview of WPF on .NET 11 RC 1](net110.md)
+- [Release announcements](net110.md#release-announcements)
 - [Bug fixes](net110.md#bug-fixes)
 
 ## .NET 10
