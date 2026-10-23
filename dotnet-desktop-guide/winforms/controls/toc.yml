@@ -47,6 +47,8 @@ items:
       href: how-to-add-to-or-remove-from-a-collection-of-controls-at-run-time.md
     - name: "Walkthrough: Automatically Populating the Toolbox with Custom Components"
       href: walkthrough-automatically-populating-the-toolbox-with-custom-components.md
+    - name: "Add controls to the Toolbox in Visual Studio"
+      href: ../visualstudio/how-to-add-controls-toolbox.md
     - name: "How to add activex controls"
       href: how-to-add-activex-controls-to-windows-forms.md
     - name: Considerations When Hosting an ActiveX Control on a Windows Form
