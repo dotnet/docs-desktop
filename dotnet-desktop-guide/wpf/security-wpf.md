@@ -4,6 +4,7 @@ description: Learn about the security model followed when developing Windows Pre
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
 ms.update-cycle: 1825-days
+ai-usage: ai-assisted
 helpviewer_keywords:
   - "XAML files [WPF], sandbox behavior"
   - "browser-hosted application security [WPF]"
@@ -40,6 +41,8 @@ This topic contains the following sections:
 - [Disabling APTCA Assemblies for Partially Trusted Client Applications](#APTCA)
 
 - [Sandbox Behavior for Loose XAML Files](#LooseContentSandboxing)
+
+- [Loading untrusted XPS content](#loading-untrusted-xps-content)
 
 - [Resources for Developing WPF Applications that Promote Security](#BestPractices)
 
@@ -277,6 +280,10 @@ With this setting, external content will be loaded into a process that is separa
 
 > [!NOTE]
 > Even though navigation to loose XAML files from either a <xref:System.Windows.Navigation.NavigationWindow> or <xref:System.Windows.Controls.Frame> in a standalone application is implemented based on the WPF browser hosting infrastructure, involving the PresentationHost process, the security level is slightly less than when the content is loaded directly in Internet Explorer on Windows Vista and Windows 7 (which would still be through PresentationHost). This is because a standalone WPF application using a Web browser does not provide the additional Protected Mode security feature of Internet Explorer.
+
+## Loading untrusted XPS content
+
+Denial-of-service issues resulting from processing XPS documents from untrusted sources are not supported. This restriction applies specifically to denial-of-service issues involving untrusted XPS content. Other types of issues involving XPS documents remain supported.
 
 <a name="BestPractices"></a>
 
