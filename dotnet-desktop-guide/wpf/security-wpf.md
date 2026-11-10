@@ -4,6 +4,7 @@ description: Learn about the security model followed when developing Windows Pre
 ms.date: "03/30/2017"
 ms.service: dotnet-framework
 ms.update-cycle: 1825-days
+ai-usage: ai-assisted
 helpviewer_keywords:
   - "XAML files [WPF], sandbox behavior"
   - "browser-hosted application security [WPF]"
