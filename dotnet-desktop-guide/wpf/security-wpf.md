@@ -283,7 +283,9 @@ With this setting, external content will be loaded into a process that is separa
 
 ## Loading untrusted XPS content
 
-Denial-of-service issues resulting from processing XPS documents from untrusted sources are not supported. This restriction applies specifically to denial-of-service issues involving untrusted XPS content. Other types of issues involving XPS documents remain supported.
+Specially crafted XPS documents can make the processing code unresponsive or even terminate the process. If you must process untrusted XPS documents, do so in a separate failure domain to avoid impacting processes which require high availability.
+
+.NET considers this denial-of-service (DoS) risk to be by-design and will not issue patches for reported DoS issues in XPS processing logic. .NET will continue to secure XPS processing code paths against other risk types, such as elevation of privilege.
 
 <a name="BestPractices"></a>
 
