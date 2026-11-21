@@ -1,8 +1,8 @@
 ---
 title: How to create a style for a control
 description: Learn how to create and reference a control style in Windows Presentation Foundation and .NET. Control styles can be implemented through resource dictionaries.
-author: adegeo
-ms.author: adegeo
+author: billwagner
+ms.author: wiwagn
 ms.date: 03/20/2026
 ms.service: dotnet-desktop
 ms.update-cycle: 365-days

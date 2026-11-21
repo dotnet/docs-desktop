@@ -1,8 +1,8 @@
 ---
 title: How to create a template
 description: Learn how to create and reference a control template in Windows Presentation Foundation and .NET. Templates can be implemented in a resource dictionary.
-author: adegeo
-ms.author: adegeo
+author: billwagner
+ms.author: wiwagn
 ms.date: 03/20/2026
 ms.service: dotnet-desktop
 ms.update-cycle: 365-days
