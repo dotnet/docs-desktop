@@ -1,11 +1,11 @@
 ---
 title: WPF differences between .NET and .NET Framework
 description: Describes the differences between the .NET Framework implementation of Windows Presentation Foundation (WPF) and .NET WPF.
-author: adegeo
+author: billwagner
 ms.date: 02/15/2023
 ms.service: dotnet-desktop
 ms.update-cycle: 365-days
-ms.author: adegeo
+ms.author: wiwagn
 ms.topic: concept-article
 ---
 
