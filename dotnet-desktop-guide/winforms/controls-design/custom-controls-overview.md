@@ -1,7 +1,7 @@
 ---
 title: Custom owner-drawn controls
 description: "Learn about how custom controls differ from user controls by not providing a visual design surface and relying on user-supplied code for drawing."
-author: adegeo
+author: billwagner
 ms.topic: overview #Don't change
 ms.date: 03/20/2026
 ms.service: dotnet-desktop
