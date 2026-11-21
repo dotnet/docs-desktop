@@ -2,8 +2,8 @@
 metadata:
   title: "FAQ about XBAP supportability"
   description: "Provides answers to questions related to the level of support XBAPs still have in the modern browser world of today."
-  author: adegeo
-  ms.author: adegeo
+  author: billwagner
+  ms.author: wiwagn
   ms.service: dotnet-framework
   ms.topic: faq
   ms.date: 04/15/2024
