@@ -1,11 +1,11 @@
 ---
 title: Data binding overview
 description: Learn about data binding in Windows Presentation Foundation for .NET. You can bind data to UI elements to create dynamic apps.
-author: adegeo
+author: billwagner
 ms.date: 10/22/2024
 ms.service: dotnet-desktop
 ms.update-cycle: 365-days
-ms.author: adegeo
+ms.author: wiwagn
 ms.custom: update-template
 dev_langs:
   - "csharp"

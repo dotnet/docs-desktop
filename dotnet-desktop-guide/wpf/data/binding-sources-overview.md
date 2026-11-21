@@ -4,8 +4,8 @@ description: Discover the types of objects you can use as the binding source for
 ms.date: 10/22/2024
 ms.service: dotnet-desktop
 ms.update-cycle: 365-days
-author: adegeo
-ms.author: adegeo
+author: billwagner
+ms.author: wiwagn
 ms.custom: update-template
 helpviewer_keywords:
   - "binding data [WPF], binding sources"

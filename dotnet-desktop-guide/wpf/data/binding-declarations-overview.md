@@ -4,8 +4,8 @@ description: Learn how to declare a data binding in XAML or code for your applic
 ms.date: 10/22/2024
 ms.service: dotnet-desktop
 ms.update-cycle: 365-days
-author: adegeo
-ms.author: adegeo
+author: billwagner
+ms.author: wiwagn
 ms.custom: update-template
 dev_langs:
   - "csharp"

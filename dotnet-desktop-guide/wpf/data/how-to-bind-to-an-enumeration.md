@@ -1,8 +1,8 @@
 ---
 title: How to bind to an enumeration
 description: Learn how to use data binding to bind an enumeration to a collection object in XAML and in code for Windows Presentation Foundation.
-author: adegeo
-ms.author: adegeo
+author: billwagner
+ms.author: wiwagn
 ms.date: 10/22/2024
 ms.service: dotnet-desktop
 ms.update-cycle: 365-days
