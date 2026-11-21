@@ -1,8 +1,8 @@
 ---
 title: Overview of upgrading Windows Forms apps
 description: "Learn about the upgrade paths available for Windows Forms apps, including modernizing from .NET Framework to .NET and upgrading between .NET versions."
-author: adegeo
-ms.author: adegeo
+author: billwagner
+ms.author: wiwagn
 ms.topic: overview
 ms.date: 06/24/2026
 ms.service: dotnet-desktop
