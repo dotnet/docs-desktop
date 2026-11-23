@@ -18,9 +18,9 @@
       "feedback_system": "GitHub",
       "feedback_github_repo": "dotnet/docs-desktop",
       "feedback_product_url": "https://developercommunity.visualstudio.com/VisualStudio",
-      "author": "billwagner",
+      "author": "adegeo",
       "uhfHeaderId": "MSDocsHeader-DotNet",
-      "ms.author": "wiwagn",
+      "ms.author": "adegeo",
       "zone_pivot_group_filename": "desktop/zone-pivot-groups.json"
     },
     "fileMetadata": {
