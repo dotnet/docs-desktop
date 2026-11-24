@@ -1,6 +1,4 @@
 ---
-author: adegeo
-ms.author: adegeo
 ms.date: 11/05/2025
 ms.service: dotnet-desktop
 ms.topic: include

@@ -1,8 +1,6 @@
 ---
 title: "How to define and reference a resource"
 description: Learn how to define and reference Windows Presentation Foundation (WPF) resources through XAML and code.
-author: adegeo
-ms.author: adegeo
 ms.date: 10/24/2024
 ms.service: dotnet-desktop
 ms.update-cycle: 365-days

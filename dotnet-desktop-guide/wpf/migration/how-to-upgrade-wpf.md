@@ -1,8 +1,6 @@
 ---
 title: Upgrade a WPF app to .NET with GitHub Copilot modernization
 description: Walk through upgrading a WPF app to .NET by using the GitHub Copilot modernization agent in Visual Studio.
-author: adegeo
-ms.author: adegeo
 ms.date: 06/24/2026
 ms.service: dotnet-desktop
 ms.update-cycle: 365-days
