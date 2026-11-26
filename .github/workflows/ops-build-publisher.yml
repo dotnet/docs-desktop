@@ -10,6 +10,10 @@ permissions:
   pull-requests: write
   checks: write
 
+concurrency:
+ group: ${{ github.workflow }}-${{ github.event.workflow_run.head_repository.id }}-${{ github.event.workflow_run.head_branch }}
+ cancel-in-progress: true
+
 jobs:
   publish:
     name: Publish OPS diagnostics and previews
