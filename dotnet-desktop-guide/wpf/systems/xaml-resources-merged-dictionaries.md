@@ -1,8 +1,6 @@
 ---
 title: Merged resource dictionaries
 description: Learn about Windows Presentation Foundation (WPF) for .NET merged resource dictionaries. Define and reference XAML resources outside of a WPF application.
-author: adegeo
-ms.author: adegeo
 ms.date: 10/24/2024
 ms.service: dotnet-desktop
 ms.update-cycle: 365-days

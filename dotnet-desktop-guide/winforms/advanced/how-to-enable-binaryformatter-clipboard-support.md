@@ -1,8 +1,6 @@
 ---
 title: "Enable BinaryFormatter clipboard support (not recommended)"
 description: "Learn how to configure legacy BinaryFormatter support for Windows Forms clipboard operations in .NET 10, including security considerations and type resolver implementation."
-author: adegeo
-ms.author: adegeo
 ms.service: dotnet-desktop
 ms.topic: how-to
 ms.date: 11/05/2025
